@@ -3,7 +3,7 @@ uid: learn.wwl.implement-open-source-software-azure
 metadata:
   title: Implement open-source software
   description: "Implement open-source software"
-  ms.date: 03/18/2022
+  ms.date: 05/27/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Describe open-source licenses
   - Understand the license implications and ratings
 prerequisites: ""
-iconUrl: /learn/achievements/2-implement-open-source-software.svg
+iconUrl: /training/achievements/2-implement-open-source-software.svg
 levels:
 - advanced
 roles:
@@ -39,6 +39,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- development-tools
 units:
 - learn.wwl.implement-open-source-software-azure.introduction
 - learn.wwl.implement-open-source-software-azure.explore-how-software-built

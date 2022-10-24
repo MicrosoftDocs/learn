@@ -22,8 +22,8 @@ prerequisites: |
   - Installation of the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
   - Experience with using the command line.  
   - Familiarity with the concepts of accessibility, disability, and inclusion.
-  - Basic familiarity with web accessibility tools and design techniques. For an introduction, see [Learn the basics of web accessibility](/learn/modules/web-development-101/accessibility/).
-iconUrl: /learn/achievements/aspnetcore-accessibility.svg
+  - Basic familiarity with web accessibility tools and design techniques. For an introduction, see [Learn the basics of web accessibility](/training/modules/web-development-101/accessibility/).
+iconUrl: /training/achievements/aspnetcore-accessibility.svg
 levels:
 - intermediate
 roles:
@@ -32,6 +32,9 @@ products:
 - aspnet-core
 - dotnet
 - vs
+subjects:
+- accessibility
+- development-tools
 units:
 - learn.languages.aspnetcore-accessibility.1-introduction
 - learn.languages.aspnetcore-accessibility.2-web-accessibility-fundamentals

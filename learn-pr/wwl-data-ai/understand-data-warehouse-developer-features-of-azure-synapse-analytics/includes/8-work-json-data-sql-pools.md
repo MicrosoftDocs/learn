@@ -74,7 +74,7 @@ from
 
 ```
 
-The JSON document in the preceding sample query includes an array of objects. The query returns each object as a separate row in the result set. Make sure that you can access this file. If your file is protected with SAS key or custom identity, you would need to set up [server level credential for sql login](/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature)
+The JSON document in the preceding sample query includes an array of objects. The query returns each object as a separate row in the result set. Make sure that you can access this file. If your file is protected with SAS key or custom identity, you would need to set up [server level credential for sql login](/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature#server-scoped-credential)
 
 ## Define a data source
 
@@ -106,7 +106,7 @@ from
     ) with (doc nvarchar(max)) as rows
 ```
 
-If a data source is protected with SAS key or custom identity, you can configure [data source with database scoped credential](/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature)
+If a data source is protected with SAS key or custom identity, you can configure [data source with database scoped credential](/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature#database-scoped-credential)
 
 In the following sections, you can see how to query various types of JSON files.
 

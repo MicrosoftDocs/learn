@@ -168,7 +168,7 @@ Identify the subtasks of *Encrypt network traffic end-to-end with Azure Applicat
 
 ## Notes
 
-End-to-end encryption in AppGW - https://docs.microsoft.com/azure/application-gateway/application-gateway-end-to-end-ssl-powershell
+End-to-end encryption in AppGW - https://learn.microsoft.com/azure/application-gateway/application-gateway-end-to-end-ssl-powershell
 
 AppGW takes a while to spin up, so for the exercise we may want to kick that off early, go over some concepts, then come back when it's running. We'll also need a server with a basic web site that we can use to test. Don't use VMSS like the example as they are not available in the sandbox environment, just use a single VM.
 

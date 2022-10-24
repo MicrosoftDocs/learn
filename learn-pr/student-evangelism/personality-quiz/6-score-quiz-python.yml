@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Choose a super sleuth character based on personality quiz score
   description: This unit walks you through scoring a quiz and assigning characters based on personality questions in Python.
   ms.date: 04/14/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

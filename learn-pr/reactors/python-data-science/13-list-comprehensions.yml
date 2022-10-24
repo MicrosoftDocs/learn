@@ -5,8 +5,8 @@ metadata:
   title: List comprehensions in Python for data science
   description: Understand how to economically and programmatically create lists in Python for data science.
   ms.date: 04/22/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen

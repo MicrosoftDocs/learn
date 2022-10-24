@@ -22,7 +22,7 @@ abstract:  |
 
 prerequisites: |
   - [Visual Studio Code, with the Python extension](https://aka.ms/LearnOnVSCode?azure-portal=true)
-iconUrl: /learn/achievements/student-evangelism/predict-meteor-showers-using-python.svg 
+iconUrl: /training/achievements/student-evangelism/predict-meteor-showers-using-python.svg 
 levels:
 - beginner
 roles:
@@ -31,6 +31,9 @@ roles:
 - student 
 products:
 - vs-code
+subjects:
+- development-tools
+- data-analytics
 units:
 - learn.student-evangelism.predict-meteor-showers-using-python.1-introduction
 - learn.student-evangelism.predict-meteor-showers-using-python.2-story-setup

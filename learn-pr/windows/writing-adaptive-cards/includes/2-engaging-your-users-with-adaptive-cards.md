@@ -398,14 +398,14 @@ Three actions are available to Adaptive Cards: an action that opens a URL, a sub
             AddInputColumn("Adaptive inputs");
 
             // Add the first image, with an Open URL action.
-            AddImageColumn(mainColumnSet, "https://docs.microsoft.com/learn/media/tanager.jpg", "Open URL action");
+            AddImageColumn(mainColumnSet, "https://learn.microsoft.com/training/media/tanager.jpg", "Open URL action");
             mainColumnSet.Columns[1].SelectAction = new AdaptiveOpenUrlAction
             {
                 Url = new Uri("https://www.bing.com")
             };
 
             // Add the second image, with a Submit action.
-            AddImageColumn(mainColumnSet, "https://docs.microsoft.com/learn/media/songbird-pair.jpg", "Submit action");
+            AddImageColumn(mainColumnSet, "https://learn.microsoft.com/training/media/songbird-pair.jpg", "Submit action");
             mainColumnSet.Columns[2].SelectAction = new AdaptiveSubmitAction
             {
                 Id = "SubmitAction1",
@@ -413,7 +413,7 @@ Three actions are available to Adaptive Cards: an action that opens a URL, a sub
             };
 
             // Add the third image, with a Show Card action.
-            AddImageColumn(mainColumnSet, "https://docs.microsoft.com/learn/media/eagle-in-tree.jpg", "Show Card action");
+            AddImageColumn(mainColumnSet, "https://learn.microsoft.com/training/media/eagle-in-tree.jpg", "Show Card action");
             mainColumnSet.Columns[3].SelectAction = new AdaptiveShowCardAction
             {
                 Card = showCard
@@ -886,7 +886,7 @@ Three actions are available to Adaptive Cards: an action that opens a URL, a sub
             AddInputColumn("Adaptive inputs");
 
             // Add the first image, with an Open URL action.
-            AddImageColumn(mainColumnSet, "https://docs.microsoft.com/learn/media/tanager.jpg", "Open URL action");
+            AddImageColumn(mainColumnSet, "https://learn.microsoft.com/training/media/tanager.jpg", "Open URL action");
             mainColumnSet.Columns[1].SelectAction = new AdaptiveOpenUrlAction
             { 
                 Id = "OpenURLAction",
@@ -894,14 +894,14 @@ Three actions are available to Adaptive Cards: an action that opens a URL, a sub
             };
 
             // Add the second image, with a Submit action.
-            AddImageColumn(mainColumnSet, "https://docs.microsoft.com/learn/media/hawk.jpg", "Submit action");
+            AddImageColumn(mainColumnSet, "https://learn.microsoft.com/training/media/hawk.jpg", "Submit action");
             mainColumnSet.Columns[2].SelectAction = new AdaptiveSubmitAction
             {
                 Id = "SubmitAction1",
             };
 
             // Add the third image, with a Show Card action.
-            AddImageColumn(mainColumnSet, "https://docs.microsoft.com/learn/media/visitor.jpg", "Show Card action");
+            AddImageColumn(mainColumnSet, "https://learn.microsoft.com/training/media/visitor.jpg", "Show Card action");
             mainColumnSet.Columns[3].SelectAction = new AdaptiveShowCardAction
             {
                 Id = "ShowCardAction",

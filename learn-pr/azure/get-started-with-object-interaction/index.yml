@@ -19,7 +19,7 @@ abstract: |
   - Learn how to interact with holograms using UI menus and buttons
   - Learn how to add text elements
   - Learn how to spawn tooltips on objects dynamically
-iconUrl: /learn/achievements/get-started-with-object-interaction-tutorials-mrtk.svg
+iconUrl: /training/achievements/get-started-with-object-interaction-tutorials-mrtk.svg
 levels:
 - beginner
 roles:
@@ -36,12 +36,14 @@ prerequisites: |
   - Windows 10 SDK 10.0.18362.0 or later
   - (Optional) A HoloLens 2 device configured for development
   - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
-  - [Set up a mixed reality project in Unity module](/learn/modules/mixed-reality-toolkit-project-unity)
+  - [Set up a mixed reality project in Unity module](/training/modules/mixed-reality-toolkit-project-unity)
   - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
   - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
 
 
-units: 
+subjects:
+- mixed-reality
+units:
 - learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-1-introduction
 - learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-2-panel-of-buttons-dynamic-menus
 - learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-3-exercise-panel-of-buttons-menus

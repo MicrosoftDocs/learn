@@ -10,10 +10,9 @@ To start this exercise:
 2. Copy the following contract contents, and paste them into the new file.
 
     ```solidity
-    pragma solidity >=0.5.12<=0.8.0;
+    pragma solidity >=0.4.25 <0.9.0;
     
-    contract Shipping
-    {
+    contract Shipping {
         // Our predefined values for shipping listed as enums
         enum ShippingStatus { Pending, Shipped, Delivered }
     
@@ -52,7 +51,6 @@ To start this exercise:
              ShippingStatus _status = status;
              return getStatus(_status);
         }
-    
     }
     ```
 
@@ -63,11 +61,12 @@ To start this exercise:
 
 Now let's add a migration file so that we can deploy the contract to the Ethereum network.
 
-1. In the Explorer pane, hover over the **migrations** folder and choose **New File**. Name the file *3_deploy_contracts.js*.
+1. In the Explorer pane, hover over the **migrations** folder and choose **New File**. Name the file *2_Shipping.js*.
 2. Add this code to the file:
 
     ```javascript
     const Shipping = artifacts.require("Shipping");
+
     module.exports = function (deployer) {
       deployer.deploy(Shipping);
     };
@@ -77,6 +76,6 @@ Now let's add a migration file so that we can deploy the contract to the Ethereu
 
 Next, make sure that you can deploy the contract successfully before you move on. Right-click the contract name and then select **Deploy Contracts**. In the window that appears, select **development** and then wait for the deployment to finish.
 
-Watch the information in the output window. Look for a deployment of **3_deploy_contracts.js**.
+Watch the information in the output window. Look for a deployment of **2_Shipping.js**.
 
-:::image type="content" source="../media/shipping-migration.png" alt-text="Screenshot showing the output window for the shipping contract migration.":::
+:::image type="content" source="../media/truffle-deploy-shipping.png" alt-text="Screenshot showing the output window for the shipping contract migration.":::

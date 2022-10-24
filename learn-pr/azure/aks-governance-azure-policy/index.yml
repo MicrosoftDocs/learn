@@ -21,7 +21,7 @@ prerequisites: |
   - A basic understanding of Azure Kubernetes Service concepts such as Kubernetes API, clusters and pods
   - Access to an Azure subscription 
   - Knowledge of how to deploy a running instance of an AKS cluster
-iconUrl: /learn/achievements/align-requirements-in-azure.svg
+iconUrl: /training/achievements/align-requirements-in-azure.svg
 ratingEnabled: true
 levels:
 - intermediate
@@ -33,6 +33,8 @@ roles:
 products:
 - azure-kubernetes-service
 - azure-policy
+subjects:
+- information-protection-governance
 units:
 - learn.aks-governance-azure-policy.introduction
 - learn.aks-governance-azure-policy.azure-policy-integration-with-aks

@@ -203,12 +203,12 @@ Option 1 is preferred. We've checked with Learn, and we can use video. This woul
 
 ### Useful links
 
-- https://docs.microsoft.com/en-us/azure/lighthouse/overview
-- https://docs.microsoft.com/en-us/azure/lighthouse/concepts/azure-delegated-resource-management
-- https://docs.microsoft.com/en-us/azure/lighthouse/how-to/view-manage-service-providers
-- https://docs.microsoft.com/en-us/azure/lighthouse/how-to/view-manage-customers
-- https://docs.microsoft.com/en-us/azure/lighthouse/concepts/cross-tenant-management-experience
-- https://docs.microsoft.com/en-us/azure/lighthouse/how-to/onboard-customer
-- https://docs.microsoft.com/en-us/azure/lighthouse/concepts/managed-services-offers
-- https://docs.microsoft.com/en-us/azure/lighthouse/concepts/cross-tenant-management-experience#enhanced-services-and-scenarios
+- https://learn.microsoft.com/azure/lighthouse/overview
+- https://learn.microsoft.com/azure/lighthouse/concepts/azure-delegated-resource-management
+- https://learn.microsoft.com/azure/lighthouse/how-to/view-manage-service-providers
+- https://learn.microsoft.com/azure/lighthouse/how-to/view-manage-customers
+- https://learn.microsoft.com/azure/lighthouse/concepts/cross-tenant-management-experience
+- https://learn.microsoft.com/azure/lighthouse/how-to/onboard-customer
+- https://learn.microsoft.com/azure/lighthouse/concepts/managed-services-offers
+- https://learn.microsoft.com/azure/lighthouse/concepts/cross-tenant-management-experience#enhanced-services-and-scenarios
 - https://azure.microsoft.com/en-us/resources/videos/azure-lighthouse-demo-recording/?cdn=disable

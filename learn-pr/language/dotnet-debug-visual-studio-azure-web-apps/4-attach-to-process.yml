@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-debug-visual-studio-app-service.attach-to-process
+sandbox: true
+title: Exercise - Attach the Visual Studio debugger to an App Service web app
+metadata:
+  title: Exercise - Attach the Visual Studio debugger to an App Service web app
+  description: Learn how to use Visual Studio's attach to process features to debug web applications hosted in Azure App Service.
+  ms.date: 5/15/2022
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-attach-to-process.md)]

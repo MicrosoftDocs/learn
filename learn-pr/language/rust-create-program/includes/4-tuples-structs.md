@@ -76,7 +76,7 @@ struct Unit;
 
 ## Define a struct
 
-To define a struct, we enter the keyword `struct` followed by the struct name. Choose a name for the struct type that describes the significant characteristic of the grouped data. Unlike the naming convention that we've used so far, the name of a struct type is capitalized.
+To define a struct, enter the `struct` keyword followed by a name for the struct. Choose a name for the struct type that describes the significant characteristic of the grouped data. Unlike the naming convention that we've used so far, the name of a struct type is capitalized.
 
 Struct types are often defined outside of the `main` function and other functions in the Rust program. For this reason, the start of the struct definition isn't indented from the left margin. Only the inside portion of the definition is indented to show how the data is organized.
 

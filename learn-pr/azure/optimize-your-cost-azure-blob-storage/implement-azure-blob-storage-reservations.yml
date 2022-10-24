@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-your-cost-azure-blob-storage.implement-azure-blob-storage-reservations
+title: Implement Azure Blob Storage reservations
+metadata:
+  title: Implement Azure Blob Storage reservations
+  description: Implement Azure Blob Storage reservations.
+  ms.date: 03/30/2022
+  author: mpolicht
+  ms.author: nedelgad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/implement-azure-blob-storage-reservations.md)]

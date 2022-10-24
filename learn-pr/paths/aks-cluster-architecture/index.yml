@@ -19,7 +19,7 @@ prerequisites: |
   - Basic knowledge of Kubernetes and its concepts 
   - Basic knowledge of Azure Networking fundamentals 
   - Basic knowledge of Azure Policy 
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - advanced
 roles:
@@ -30,6 +30,8 @@ roles:
 - auditor
 products:
 - azure
+subjects:
+- architecture
 modules:
 - learn.choose-best-networking-plugin-for-aks
 - learn.aks-network-design-azure-container-network-interface

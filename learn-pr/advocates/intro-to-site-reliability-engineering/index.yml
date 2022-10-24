@@ -16,7 +16,7 @@ abstract: |
   In this module you will:
   - Gain a basic understanding of Site Reliability Engineering (SRE)
   - Learn how to get started with this valuable operations practice
-iconUrl: /learn/achievements/intro-to-site-reliability-engineering-sre.svg
+iconUrl: /training/achievements/intro-to-site-reliability-engineering-sre.svg
 levels:
 - beginner
 roles:
@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 prerequisites: None
+subjects:
+- site-reliability-engineering
 units:
 - learn.intro-to-site-reliability-engineering.1-introduction
 - learn.intro-to-site-reliability-engineering.2-what-is-sre-and-why-does-it-matter

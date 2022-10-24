@@ -18,7 +18,7 @@ abstract: |
     - Learn about processing events with Azure Stream Analytics.
 prerequisites: |
   Before taking this module, it is recommended that you complete Data Fundamentals.
-iconUrl: /learn/achievements/data-ai/introduction-to-data-streaming-badge.svg
+iconUrl: /training/achievements/data-ai/introduction-to-data-streaming-badge.svg
 levels:
 - beginner
 roles:
@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-stream-analytics
+subjects:
+- serverless-compute
 units:
 - learn.data-ai.introduction-to-data-streaming.introduction
 - learn.data-ai.introduction-to-data-streaming.data-streams

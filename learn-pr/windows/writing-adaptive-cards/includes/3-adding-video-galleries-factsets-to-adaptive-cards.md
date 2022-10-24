@@ -222,7 +222,7 @@ In this unit, we'll write code and learn about these features of the Adaptive Ca
             {
                 new AdaptiveImage
                 {
-                   Url = new Uri("https://docs.microsoft.com/learn/media/heron.jpg"),
+                   Url = new Uri("https://learn.microsoft.com/training/media/heron.jpg"),
                    PixelHeight = 100,
                    SelectAction = new AdaptiveSubmitAction
                    {
@@ -232,7 +232,7 @@ In this unit, we'll write code and learn about these features of the Adaptive Ca
                 },
                 new AdaptiveImage
                 {
-                   Url = new Uri("https://docs.microsoft.com/learn/media/grouse-pair.jpg"),
+                   Url = new Uri("https://learn.microsoft.com/training/media/grouse-pair.jpg"),
                    PixelHeight = 100,
                    SelectAction = new AdaptiveSubmitAction
                    {
@@ -472,7 +472,7 @@ You've completed the WPF version of this module and should now have a good under
             // Add one or more images to the image set.
             imageSet.Images.Add(new AdaptiveImage
             {
-                Url = "https://docs.microsoft.com/learn/media/back-arrow.png",
+                Url = "https://learn.microsoft.com/training/media/back-arrow.png",
                 SelectAction = new AdaptiveSubmitAction
                 {
                     Id = "SubmitAction2",
@@ -490,4 +490,3 @@ You've completed the WPF version of this module and should now have a good under
 You've completed the Universal Windows Platform (UWP) version of this module and should now have a good understanding of the range of options that Adaptive Cards offer.
 
 ::: zone-end
-

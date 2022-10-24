@@ -15,11 +15,11 @@ During the process, you'll:
 
 1. In the `env:` section, change the `AZURE_RESOURCEGROUP_NAME` variable's value to `ToyWebsiteTest`:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="9-11" highlight="2" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="13-15" highlight="2" :::
 
 1. Below the `jobs:` line, above the `deploy` job, add a new lint job:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="13-19" highlight="2-7" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="17-23" highlight="2-7" :::
 
    This job defines a step to check out the code and a step that runs the `az bicep build` command to lint the Bicep file.
 
@@ -28,7 +28,7 @@ During the process, you'll:
 
 1. Below the lines that you just added, and above the deploy job, add a validation job:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="21-36" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="25-42" :::
 
    This job defines steps to check out the code, sign in to your Azure environment, and use the `azure/arm-deploy` action with the `Validate` deployment mode.
 
@@ -36,9 +36,9 @@ During the process, you'll:
 
 1. Below the `runs-on` line in the `deploy` job, add a `needs` statement: 
 
-   :::code language="yaml" source="code/5-workflow.yml" range="38-42" highlight="3" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="44-48" highlight="3" :::
 
-   The `needs` statements indicates that the deploy job depends on the lint and validate jobs completing successfully before it can run.
+   The `needs` statement indicates that the deploy job depends on the lint and validate jobs completing successfully before it can run.
 
    Also notice that both the validate and deploy jobs sign into Azure, and all of the jobs check out the code from the repository. This is because each job uses a new GitHub runner.
 
@@ -64,9 +64,9 @@ When you use custom linter configuration, Bicep writes log data that GitHub Acti
 
 1. Open the *workflow.yml* file.
 
-1. In the `deploy` job's *Deploy website* test step, set the `failWithStdError` property to `false`:
+1. In the `deploy` job's *Deploy website* test step, set the `failOnStdErr` property to `false`:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="38-54" highlight="13" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="44-62" highlight="15" :::
 
 1. Save the file.
 
@@ -74,7 +74,7 @@ When you use custom linter configuration, Bicep writes log data that GitHub Acti
 
 1. Verify that your *workflow.yml* file looks like the following:
 
-   :::code language="yaml" source="code/5-workflow.yml" highlight="10, 14-36, 40, 50" :::
+   :::code language="yaml" source="code/5-workflow.yml" highlight="14, 18-42, 46, 58" :::
 
    If it doesn't, update it to match this example, and then save it.
 
@@ -108,7 +108,7 @@ When you use custom linter configuration, Bicep writes log data that GitHub Acti
 
    Notice that the workflow run now shows the three jobs that you defined in the YAML file. The **lint** and **validate** jobs run in parallel before the **deploy** job starts.
 
-1. If the workflow is still running, wait until it's finished. Although workflows automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+1. If the workflow is still running, wait until it's finished. Although workflows automatically update the page with the latest status, it's a good idea to refresh your page occasionally.
 
    Notice that the **lint** and **validate** jobs have failed.
 

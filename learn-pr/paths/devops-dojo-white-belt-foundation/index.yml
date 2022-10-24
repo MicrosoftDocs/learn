@@ -13,7 +13,7 @@ prerequisites: |
   none
 summary: |
   Start your DevOps Dojo journey.  Learn how to create multidisciplinary DevOps teams by using shared tools and processes designed to make your organization’s software development and implementation projects more efficient.
-iconUrl: /learn/achievements/devops-dojo-white-belt-foundation.svg
+iconUrl: /training/achievements/devops-dojo-white-belt-foundation.svg
 levels:
 - beginner
 roles:
@@ -30,6 +30,8 @@ roles:
 - technology-manager
 products:
 - azure
+subjects:
+- devops
 modules:
 - learn.wwl.introduce-foundation-pillars-devops
 - learn.wwl.define-foundation-pillars

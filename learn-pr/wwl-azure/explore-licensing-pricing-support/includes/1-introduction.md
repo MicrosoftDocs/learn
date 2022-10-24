@@ -6,5 +6,5 @@ You are responsible for the overall SAP on Azure migrations and new deployments.
 
 You will:
 
- -  Learn how to price Azure virtual machine-based solutions.
- -  Explore licensing, pricing, and support of Azure for SAP workloads.
+- Learn how to price Azure virtual machine-based solutions.
+- Explore licensing, pricing, and support of Azure for SAP workloads.

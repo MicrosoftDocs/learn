@@ -8,4 +8,5 @@ In this module, you'll learn how to:
 
 - Describe key features and capabilities of Azure Cosmos DB
 - Identify the APIs supported in Azure Cosmos DB
-- Provision and use an Azure Cosmos DB instance
+- Provision and use an Azure Cosmos DB instance 
+

@@ -19,18 +19,20 @@ prerequisites: |
   To get the best learning experience from this module, you should have:
     - Working experience of the Azure portal.
     - Fundamental knowledge about bot concepts.
-iconUrl: /learn/achievements/choose-bot-building-tool.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level
+iconUrl: /training/achievements/choose-bot-building-tool.svg
+levels: # see level taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - beginner
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role
+roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
   - ai-engineer
   - developer
   - solution-architect
   - student
   - technology-manager
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
+products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
   - azure
   - azure-bot-service
+subjects:
+- development-tools
 units:
 - learn.azure.choose-bot-building-tool.1-introduction
 - learn.azure.choose-bot-building-tool.2-identify-product-options

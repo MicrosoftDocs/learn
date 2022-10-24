@@ -10,7 +10,7 @@ In many cases, organizations separate their local network from the public Intern
 
 When a router receives traffic destined for an endpoint outside of the local network, it:
 
-1. Checks to determine whether it has a route to the destination network. Then:
+- Checks to determine whether it has a route to the destination network. Then:
 
    1. If the route exists, the router forwards the packet to the destination network router address.
 
@@ -54,14 +54,15 @@ For example, to view the IPv4 routing table, run the following command at the Wi
 
 `Get-NetRoute –AddressFamily IPv4`
 
-To create a new route in the routing table, use the `New-NetRoute` cmdlet. For example, the following command adds a new route on the network adapter with the interface index of 10 for the 10.0.0.0/8 network, and direct it to the gateway at 192.168.0.1:
+To create a new route in the routing table, use the `New-NetRoute` cmdlet. For example, the following command adds a new route on the network adapter with the interface index of 10 for the 10.0.0.0/8 network, and directs it to the gateway at 192.168.0.1:
 
 `New-NetRoute –InterfaceIndex 10 –DestinationPrefix 10.0.0.0/8 –NextHop 192.168.0.1`
 
 You also can change route settings with the `Set-NetRoute` cmdlet. Typically, you use `Set-NetRoute` to adjust metric values for existing routes.
 
 > [!WARNING]
-> You cannot modify the DestinationPrefix or NextHop properties of an existing route by using `Set-NetRoute`.
+> You cannot modify the DestinationPrefix or NextHop properties of an existing route by using `Set-NetRoute`.
+
 ### Use the route command
 
 You can also use the Route command-lint tool. To view the routing table, run the following command in a Command Prompt window:

@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-anomaly-detector
 metadata:
   title: Introduction to Anomaly Detector
   description: "Discover the Anomaly Detector service that is part of the Azure Decision services offerings."
-  ms.date: 03/29/2022
+  ms.date: 09/05/2022
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   - Basic familiarity with Azure
   - Ability to navigate the Azure portal
   - Basic familiarity with Azure Cognitive Services
-iconUrl: /learn/achievements/anomaly-detector.svg
+iconUrl: /training/achievements/anomaly-detector.svg
 levels:
 - beginner
 roles:
@@ -31,6 +31,8 @@ products:
 - azure
 - azure-cloud-services
 - azure-cognitive-services
+subjects:
+- data-analytics
 units:
 - learn.azure.intro-to-anomaly-detector.1-introduction
 - learn.azure.intro-to-anomaly-detector.2-what-is-anomaly-detector

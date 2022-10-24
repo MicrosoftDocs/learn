@@ -17,7 +17,7 @@ abstract: |
   *   Describe hashing and digital signing
   *   Describe the concept and use of digital certificates
 prerequisites: ""
-iconUrl: /learn/achievements/cryptography-describe-concepts.svg
+iconUrl: /training/achievements/cryptography-describe-concepts.svg
 levels:
 - beginner
 roles:
@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - m365
+subjects:
+- blockchain
 units:
 - learn.wwl.describe-concepts-of-cryptography.introduction
 - learn.wwl.describe-concepts-of-cryptography.describe-cryptography

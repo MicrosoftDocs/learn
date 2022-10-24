@@ -11,8 +11,8 @@ Admins can get a breakdown of the compliance score in the Compliance Manager ove
 
 The overall compliance score is calculated using scores that are assigned to actions. Actions come in two types:
 
--  **Your improved actions**: actions that the organization is expected to manage.
--  **Microsoft actions**: actions that Microsoft manages for the organization.
+- **Your improved actions**: actions that the organization is expected to manage.
+- **Microsoft actions**: actions that Microsoft manages for the organization.
 
 Actions are categorized as mandatory, discretionary, preventative, detective, or corrective:
 

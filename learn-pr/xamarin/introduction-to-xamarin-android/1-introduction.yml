@@ -4,10 +4,11 @@ metadata:
   title: Introduction
   description: "Introduction to Xamarin.Android"
   ms.date: 04/17/2019
-  author: davidbritch
-  ms.author: dabritch
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
+  
 title: Introduction
 durationInMinutes: 1
 content: |

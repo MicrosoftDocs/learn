@@ -24,11 +24,11 @@ When done right, this approach leads to reduced integration problems by catching
 
 The **goals** of Continuous Integration are to:
 
-- Harness [collaboration](https://docs.microsoft.com/learn/modules/characterize-devops-continous-collaboration-improvement/2-explore-continuous-collaboration)
+- Harness [collaboration](/training/modules/characterize-devops-continous-collaboration-improvement/2-explore-continuous-collaboration)
 - Enable parallel development
 - Minimize integration debt
-- Act as a [quality gate](https://docs.microsoft.com/learn/modules/explain-devops-continous-delivery-quality/3-explore-continuous-quality)
-- [Automate everything!](https://docs.microsoft.com/learn/modules/explain-devops-continous-delivery-quality/2-use-continuous-delivery-release-faster)
+- Act as a [quality gate](/training/modules/explain-devops-continous-delivery-quality/3-explore-continuous-quality)
+- [Automate everything!](/training/modules/explain-devops-continous-delivery-quality/2-use-continuous-delivery-release-faster)
 
 > [!NOTE]
 > Note how the goals of Continuous Integration include Continuous Collaboration, Continuous Delivery and Continuous Quality!

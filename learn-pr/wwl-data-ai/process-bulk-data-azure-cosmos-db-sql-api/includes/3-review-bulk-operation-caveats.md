@@ -1,4 +1,4 @@
-There are some caveats to consider when developing for bulk operations that you are different than designing for typical Azure Cosmos DB SQL API applications.
+There are some caveats to consider when developing for bulk operations that you are different than designing for typical Azure Cosmos DB for NoSQL applications.
 
 ## Throughput consumption
 
@@ -6,7 +6,7 @@ The provisioned throughput in request units per second (RU/s) is higher than if 
 
 ## Latency impact
 
-When the SDK is attempting to fill a batch and doesn’t quite have enough items, it will wait 100 milliseconds for more items. This wait can effect overall latency.
+When the SDK is attempting to fill a batch and doesn’t quite have enough items, it will wait 100 milliseconds for more items. This wait can affect overall latency.
 
 ## Document size
 

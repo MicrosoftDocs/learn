@@ -10,6 +10,6 @@ We're now ready to begin working with our newly created Azure Machine Learning D
 
     :::image type="content" source="../media/3-select-label-data.png" alt-text="A screenshot showing where to begin labeling the image data." lightbox="../media/3-select-label-data.png"::: 
 
-1. The previous step will open a labeling utility, which will allow you to draw bounding boxes and tag objects/defects present in your images. There are multiple keyboard shortcuts available, which can be reviewed under the **Shortcut Keys** panel. As you label images, select the **Submit** button to save the labeled image.  Repeat this process to label a minimum of 50 images (50 is the minimum amount of data required by Anaconda to successfully train an object detection model).
+1. The previous step will open a labeling utility, which will allow you to draw bounding boxes and tag objects/defects present in your images. There are multiple keyboard shortcuts available, which can be reviewed under the **Shortcut Keys** panel. As you label images, select the **Submit** button to save the labeled image.  Repeat this process to label a minimum of 10 images (10 is the minimum amount of labeled samples required by aAzure Machine Learning Studio to successfully train an object detection model in an experiment task).
 
     :::image type="content" source="../media/3-label-images.png" alt-text="A screenshot showing images being labeled." lightbox="../media/3-label-images.png"::: 

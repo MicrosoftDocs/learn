@@ -1,22 +1,24 @@
-Azure Policy is a service in Azure that you use to create, assign, and manage policies. These policies enforce different rules over your resources, so those resources stay compliant with your corporate standards and service level agreements. Azure Policy runs evaluations and scans for resources that are not compliant.
+Azure Policy is a service in Azure that you can use to create, assign, and manage policies. You can use policies to enforce rules on your resources to meet corporate compliance standards and service level agreements. Azure Policy runs evaluations and scans on your resources to make sure they're compliant.
 
-The main advantages of Azure policy are in the areas of enforcement and compliance, scaling, and remediation.
+### Things to know about Azure Policy
 
- -  **Enforcement and compliance**. Turn on built-in policies or build custom ones for all resource types. Real-time policy evaluation and enforcement. Periodic and on-demand compliance evaluation.
- -  **Apply policies at scale**. Apply policies to a Management Group with control across your entire organization. Apply multiple policies and aggregate policy states with policy initiative. Define an exclusion scope.
- -  **Remediation**. Real-time remediation, and remediation on existing resources.
+The main advantages of Azure Policy are in the areas of enforcement and compliance, scaling, and remediation. Azure Policy is also important for teams that run an environment that requires different forms of governance.
 
-Azure Policy will be important to you if your team runs an environment where you need to govern:
+| Advantage | Description |
+| --- | --- |
+| **Enforce rules and compliance** | Enable built-in policies, or build custom policies for all resource types. Support real-time policy evaluation and enforcement, and periodic or on-demand compliance evaluation. |
+| **Apply policies at scale** | Apply policies to a management group with control across your entire organization. Apply multiple policies and aggregate policy states with policy initiative. Define an exclusion scope. |
+| **Perform remediation** | Conduct real-time remediation, and remediation on your existing resources. |
+| **Exercise governance** | Implement governance tasks for your environment: <br> - Support multiple engineering teams (deploying to and operating in the environment) <br> - Manage multiple subscriptions <br> - Standardize and enforce how cloud resources are configured <br> - Manage regulatory compliance, cost control, security, and design consistency |
 
- -  Multiple engineering teams (deploying to and operating in the environment)
- -  Multiple subscriptions
- -  Need to standardize/enforce how cloud resources are configured
- -  Manage regulatory compliance, cost control, security, or design consistency
+### Things to consider when using Azure Policy
 
-## Use cases
+Review the following scenarios for using Azure Policy. Consider how you can implement the service in your organization.
 
- -  Specify the resource types that your organization can deploy.
- -  Specify a set of virtual machine SKUs that your organization can deploy.
- -  Restrict the locations your organization can specify when deploying resources.
- -  Enforce a required tag and its value.
- -  Audit if Azure Backup service is enabled for all Virtual machines.
+- **Consider deployable resources**. Specify the resource types that your organization can deploy by using Azure Policy. You can specify the set of virtual machine SKUs that your organization can deploy.
+
+- **Consider location restrictions**. Restrict the locations your users can specify when deploying resources. You can choose the geographic locations or regions that are available to your organization.
+
+- **Consider rules enforcement**. Enforce compliance rules and configuration options to help manage your resources and user options. You can enforce a required tag on resources and define the allowed values.
+
+- **Consider inventory audits**. Use Azure Policy with Azure Backup service on your VMs and run inventory audits. 

@@ -7,8 +7,8 @@ If a gateway already exists, check whether it's an ExpressRoute gateway or not. 
 
 Use either the Azure portal or PowerShell to create an ExpressRoute VPN gateway connected to your virtual network.
 
- -  If you use the Azure portal, add a new Virtual Network Gateway, and then select **ExpressRoute** as the gateway type.
- -  If you use PowerShell, first download and use the latest Az PowerShell.
+- If you use the Azure portal, add a new Virtual Network Gateway, and then select **ExpressRoute** as the gateway type.
+- If you use PowerShell, first download and use the latest Az PowerShell.
 
 SAP HANA on Azure (Large Instances) supports only HighPerformance or UltraPerformance gateway SKUs. For HANA Large Instances of the Type II class SKU, you must use the UltraPerformance Gateway SKU.
 
@@ -28,24 +28,24 @@ So far we have explored how to connect a new ExpressRoute circuit that got creat
 
 If you want to enable Global Reach in one or both of the following two scenarios:
 
- -  HANA System Replication without any additional proxies or firewalls
- -  Copying backups between HANA Large Instance units in two different regions to perform system copies or system refreshes
+- HANA System Replication without any additional proxies or firewalls
+- Copying backups between HANA Large Instance units in two different regions to perform system copies or system refreshes
 
 You need to consider that:
 
- -  You need to provide an address space range of a /29 address space. That address range may not overlap with any of the other address space ranges that you used so far connecting HANA Large Instances to Azure and may not overlap with any of your IP address ranges you used somewhere else in Azure or on-premise.
- -  There is a limitation on the ASNs (Autonomous System Number) that can be used to advertise your on-premises routes to HANA Large Instances. Your on-premises must not advertise any routes with private ASNs in the range of 65000 – 65020 or 65515.
- -  For scenarios involving direct access from on-premises to HANA Large Instances, account for the cost of the circuit that connects on-premises networks to Azure.
+- You need to provide an address space range of a /29 address space. That address range may not overlap with any of the other address space ranges that you used so far connecting HANA Large Instances to Azure and may not overlap with any of your IP address ranges you used somewhere else in Azure or on-premise.
+- There is a limitation on the ASNs (Autonomous System Number) that can be used to advertise your on-premises routes to HANA Large Instances. Your on-premises must not advertise any routes with private ASNs in the range of 65000 – 65020 or 65515.
+- For scenarios involving direct access from on-premises to HANA Large Instances, account for the cost of the circuit that connects on-premises networks to Azure.
 
 To have one or both of the scenarios implemented in your deployment, raise a request with Azure support. You will need to include the following information in order for Microsoft to be able to route and execute your request:
 
- -  **Service**: SAP HANA Large Instance
- -  **Problem type**: Configuration and Setup
- -  **Problem subtype**: My problem is not listed above
- -  **Subject**: 'Modify my Network - add Global Reach'
- -  **Details**: 'Add Global Reach to HANA Large Instance to HANA Large Instance tenant'' or 'Add Global Reach to on-premise to HANA Large Instance tenant.'
- -  **Additional details for the HANA Large Instance to HANA Large Instance tenant case**: You need to define the two Azure regions where the two tenants to connect are located AND you need to submit the /29 IP address range
- -  **Additional details for the on-premise to HANA Large Instance tenant case**: You need to define the Azure Region where the HANA Large Instance tenant is deployed you want to connect to directly. Additionally, you need to provide the Auth GUID and Circuit Peer ID that you received when you established your ExpressRoute circuit between on-premise and Azure. Additionally, you need to name your ASN. The last deliverable is a /29 IP address range for ExpressRoute Global Reach.
+- **Service**: SAP HANA Large Instance
+- **Problem type**: Configuration and Setup
+- **Problem subtype**: My problem is not listed above
+- **Subject**: 'Modify my Network - add Global Reach'
+- **Details**: 'Add Global Reach to HANA Large Instance to HANA Large Instance tenant'' or 'Add Global Reach to on-premise to HANA Large Instance tenant.'
+- **Additional details for the HANA Large Instance to HANA Large Instance tenant case**: You need to define the two Azure regions where the two tenants to connect are located AND you need to submit the /29 IP address range
+- **Additional details for the on-premise to HANA Large Instance tenant case**: You need to define the Azure Region where the HANA Large Instance tenant is deployed you want to connect to directly. Additionally, you need to provide the Auth GUID and Circuit Peer ID that you received when you established your ExpressRoute circuit between on-premise and Azure. Additionally, you need to name your ASN. The last deliverable is a /29 IP address range for ExpressRoute Global Reach.
 
 > [!NOTE]
 > If you want to have both cases handled, you need to supply two different /29 IP address ranges that do not overlap with any other IP address range used so far.

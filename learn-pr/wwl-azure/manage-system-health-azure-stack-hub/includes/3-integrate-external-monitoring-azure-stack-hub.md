@@ -10,7 +10,7 @@ The external monitoring solution you use must be agentless. You can't install th
 
 The following diagram shows traffic flow between an Azure Stack Hub integrated system, the hardware lifecycle host, an external monitoring solution, and an external ticketing/data collection system.
 
-:::image type="content" source="../media/external-monitoring-1-6e57554f.png" alt-text="Diagram shows traffic flow between an Azure Stack Hub integrated system.":::
+:::image type="content" source="../media/external-monitoring-1-6e57554f.png" alt-text="Diagram showing the traffic flow between an Azure Stack Hub integrated system.":::
 
 
 External monitoring integration directly with physical servers isn't allowed and actively blocked by Access Control Lists (ACLs). External monitoring integration directly with physical network devices is supported. Check with your OEM provider on how to enable this feature.
@@ -34,4 +34,4 @@ For a ticketing solution, you can integrate Operations Manager with System Cente
 
 The following diagram shows integration of Azure Stack Hub with an existing System Center deployment. You can automate Service Manager further with System Center Orchestrator or Service Management Automation (SMA) to run operations in Azure Stack Hub.
 
-:::image type="content" source="../media/external-monitoring-2-d45f0f32.png" alt-text="Image showing normalized relational tables.":::
+:::image type="content" source="../media/external-monitoring-2-d45f0f32.png" alt-text="Diagram showing normalized relational tables.":::

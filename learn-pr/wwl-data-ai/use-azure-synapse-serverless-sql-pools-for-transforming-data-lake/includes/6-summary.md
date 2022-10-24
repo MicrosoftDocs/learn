@@ -1,7 +1,10 @@
-Azure Synapse serverless SQL pool can be used for data transformations. In this lesson, you learned how to write CETAS (CREATE EXTERNAL TABLE AS SELECT) statements to perform the transformation and materialize the results to a data lake in a desired file format. Further, you created stored procedure to encapsulate the transformation logic and Synapse Pipeline that will operationalize the transformation.
+By using the CREATE EXTERNAL TABLE AS statement, you can use Azure Synapse serverless SQL pool to transform data as part of a data ingestion pipeline or an extract, transform, and load (ETL) process. The transformed data is persisted in files in the data lake with a relational table based on the file location; enabling you to work with the transformed data using SQL in the serverless SQL database, or directly in the file data lake.
 
-In this lesson, you have learned how to:
+In this lesson, you learned how to:
 
-- Transform data with Azure Synapse serverless SQL pools using CREATE EXTERNAL TABLE AS SELECT statement
-- Operationalize data transformation with Azure Synapse serverless SQL pools using stored procedures
-- Use Azure Synapse serverless SQL pool stored procedures from Synapse Pipelines
+- Use a CREATE EXTERNAL TABLE AS SELECT (CETAS) statement to transform data.
+- Encapsulate a CETAS statement in a stored procedure.
+- Include a data transformation stored procedure in a pipeline.
+
+> [!TIP]
+> For more information about using the CETAS statement, see [CETAS with Synapse SQL](/azure/synapse-analytics/sql/develop-tables-cetas) in the Azure Synapse Analytics documentation.

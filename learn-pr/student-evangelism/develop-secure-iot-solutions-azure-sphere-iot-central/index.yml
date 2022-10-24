@@ -31,7 +31,7 @@ prerequisites: |
   - Ability to use Git/GitHub
   - Basic knowledge of Azure Sphere
   - Basic knowledge of Azure IoT
-iconUrl: /learn/achievements/student-evangelism/develop-secure-iot-solutions-with-azure-sphere.svg
+iconUrl: /training/achievements/student-evangelism/develop-secure-iot-solutions-with-azure-sphere.svg
 badge:
   uid: learn.develop-secure-iot-solutions-with-azure-sphere.badge
 levels:
@@ -40,6 +40,10 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-central
+subjects:
+- iot
+- cloud-computing
+- threat-protection
 units:
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.introduction
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.design-secure-iot-solution
@@ -62,4 +66,3 @@ units:
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-partnering-with-rtos-environment
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.knowledge-check
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.summary
-

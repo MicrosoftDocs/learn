@@ -9,8 +9,5 @@ Now that you have completed this module, you can:
 
 For more information about the topics discussed in this module, see:
 
-- [Joins in Azure Cosmos DB][docs.microsoft.com/azure/cosmos-db/sql/sql-query-join]
-- [SQL subquery examples for Azure Cosmos DB][docs.microsoft.com/azure/cosmos-db/sql/sql-query-subquery]
-
-[docs.microsoft.com/azure/cosmos-db/sql/sql-query-join]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-query-join
-[docs.microsoft.com/azure/cosmos-db/sql/sql-query-subquery]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-query-subquery
+- [Joins in Azure Cosmos DB](/azure/cosmos-db/sql/sql-query-join)
+- [SQL subquery examples for Azure Cosmos DB](/azure/cosmos-db/sql/sql-query-subquery)

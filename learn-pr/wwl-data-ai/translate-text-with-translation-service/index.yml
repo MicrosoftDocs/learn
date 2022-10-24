@@ -3,7 +3,7 @@ uid: learn.wwl.translate-text-with-translation-service
 metadata:
   title: Translate text and speech
   description: "Translate text and speech"
-  ms.date: 04/06/2022
+  ms.date: 09/02/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ abstract: |
   After completing this module, you will be able to perform text and speech translation using Azure Cognitive Services.
 prerequisites: |
   Ability to navigate the Azure portal
-iconUrl: /learn/achievements/translate-text-with-translation-service.svg
+iconUrl: /training/achievements/translate-text-with-translation-service.svg
 levels:
 - beginner
 roles:
@@ -25,6 +25,8 @@ roles:
 - student
 products:
 - azure-cognitive-services
+subjects:
+- artificial-intelligence
 units:
 - learn.wwl.translate-text-with-translation-service.introduction
 - learn.wwl.translate-text-with-translation-service.get-started-azure

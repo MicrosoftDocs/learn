@@ -6,7 +6,7 @@ metadata:
   description: Build a highly available architecture
   ms.date: 05/19/2020
   author: robbyatmicrosoft
-  ms.author: robbymillsap
+  ms.author: martinek
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 20

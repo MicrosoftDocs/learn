@@ -23,7 +23,7 @@ prerequisites: |
   - Familiarity with ASP.NET Core Blazor web apps.
   - .NET SDK 5 or later.
     - Intermediate knowledge of .NET.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - intermediate
 roles:
@@ -32,6 +32,8 @@ products:
   - aspnet-core
   - blazor
   - dotnet
+subjects:
+- development-tools
 units:
 - learn.aspnet-core-signalr-polling-fix.introduction
 - learn.aspnet-core-signalr-polling-fix.clone-familiarize

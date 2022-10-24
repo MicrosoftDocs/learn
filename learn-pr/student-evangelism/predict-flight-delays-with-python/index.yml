@@ -18,7 +18,7 @@ abstract:  |
   - Use Scikit-learn to build a machine-learning model
   - Use Matplotlib to visualize the output
 prerequisites: Basic Python knowledge
-iconUrl: /learn/achievements/student-evangelism/predict-flight-delays-with-python-badge.svg
+iconUrl: /training/achievements/student-evangelism/predict-flight-delays-with-python-badge.svg
 hidden: true
 levels:
 - beginner
@@ -28,6 +28,9 @@ roles:
 - student
 products:
 - azure
+subjects:
+- data-analytics
+- data-visualization
 units:
 - learn.student-evangelism.predict-flight-delays-with-python.introduction
 - learn.student-evangelism.predict-flight-delays-with-python.create-notebook-and-import-data

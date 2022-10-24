@@ -13,8 +13,11 @@ prerequisites: |
   None
 summary: |
   Relational data is at the heart of most business applications, and is the foundation on which many enterprise data solutions are built. Microsoft Azure provides services for managing relational databases, enabling you to build new applications or migrate existing ones to the cloud.
-  This learning path helps you prepare for the [Azure Data Fundamentals](/learn/certifications/azure-data-fundamentals?azure-portal=true)
-iconUrl: /learn/achievements/azure-data-fundamentals-explore-relational-data.svg
+  This learning path helps you prepare for the [Azure Data Fundamentals](/certifications/azure-data-fundamentals?azure-portal=true)
+video:
+  title: "Microsoft Azure Data Fundamentals: Explore relational data in Azure"
+  url: https://www.microsoft.com/videoplayer/embed/RE57xXb
+iconUrl: /training/achievements/azure-data-fundamentals-explore-relational-data.svg
 levels:
 - beginner
 roles:
@@ -26,6 +29,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- data-analytics
 modules:
 - learn.wwl.explore-relational-data-offerings
 - learn.wwl.explore-provision-deploy-relational-database-offerings-azure

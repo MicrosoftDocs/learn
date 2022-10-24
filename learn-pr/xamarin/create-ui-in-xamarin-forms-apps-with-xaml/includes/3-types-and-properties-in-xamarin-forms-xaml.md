@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Recall that XAML is a declarative markup language. It's designed with the idea to simplify the process of creating your UI. The elements in XAML directly represent the instantiation of objects that you access in code-behind files.
 
 Xamarin.Forms implements a Xamarin.Forms specific XAML parser that parses your declared XAML elements and instantiates each element as a CLR type. The parser will use additional namespace information to locate the assemblies that provide the type definition for each XAML element. It will be your responsibility to include these namespaces. The option to introduce types in this way highlights the extensibility of XAML. XAML allows you to create your app's UI with the freedom to include Xamarin.Forms elements, CLR types, and custom types.

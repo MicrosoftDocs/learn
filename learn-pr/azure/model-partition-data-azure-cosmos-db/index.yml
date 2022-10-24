@@ -5,8 +5,9 @@ metadata:
   title: Model and partition your data in Azure Cosmos DB
   description: Learn how to identify access patterns. By using those patterns, you can learn to apply modeling and partition strategies to ensure an efficient and scalable deployment of your Azure Cosmos DB instance.
   ms.date: 6/14/2021 
-  author: markjbrown  
-  ms.author: mjbrown  
+  author: seesharprun  
+  ms.author: sidandrews
+  manager: jroth  
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Model and partition your data in Azure Cosmos DB  
@@ -18,7 +19,7 @@ abstract: |
 prerequisites: | 
   - Familiarity with Azure Cosmos DB concepts, like databases, containers, documents, and throughput in Request Units per second (RU/s)
   - Familiarity with using Azure Cosmos DB resources and data in the Azure portal, like using Data Explorer, running queries, and viewing query stats
-iconUrl: /learn/achievements/model-partition-data-azure-cosmos-db.svg
+iconUrl: /training/achievements/model-partition-data-azure-cosmos-db.svg
 levels: 
   - intermediate
 roles:
@@ -26,7 +27,9 @@ roles:
   - solution-architect
 products:  
   - azure-cosmos-db
-units:  
+subjects:
+- identity-access
+units:
 - learn.azure.model-partition-data-azure-cosmos-db.introduction
 - learn.azure.model-partition-data-azure-cosmos-db.nosql-versus-relational
 - learn.azure.model-partition-data-azure-cosmos-db.identify-access-patterns

@@ -1,8 +1,8 @@
-To prevent any unauthorized network traffic in your Azure Virtual Desktop environment, limit network traffic by using Azure Firewall. In this unit, you'll learn how Azure Firewall filters this traffic.
+To prevent any unauthorized network traffic in your Azure Virtual Desktop environment, you can limit network traffic by using Azure Firewall. In this unit, you'll learn how Azure Firewall filters this traffic.
 
 ## What is Azure Firewall?
 
-Recall that Azure Firewall is a cloud-based security service that protects your Azure virtual network resources from incoming and outgoing threats. Azure Firewall is provisioned inside a hub virtual network. Traffic to and from the spoke virtual networks and the on-premises network traverses the firewall with the hub network.
+Recall that Azure Firewall is a cloud-based security service that protects your Azure virtual network resources from incoming and outgoing threats. Azure Firewall is provisioned inside a hub virtual network. Traffic to and from the spoke virtual networks and the on-premises network traverses the firewall within the hub network.
 
 All traffic to and from the internet is denied by default. Traffic is only allowed if it passes various tests, such as the configured firewall rules.
 
@@ -12,7 +12,7 @@ Azure Firewall works not only for traffic to and from the internet, but also int
 
 ## What is Azure Virtual Desktop?
 
-Azure Virtual Desktop is a desktop and app virtualization service that runs in the cloud. Azure Virtual Desktop works across devices, like Windows, Mac, iOS, Android, and Linux, with apps that you can use to access remote desktops and apps. You can also use most modern browsers to access Azure Virtual Desktop-hosted experiences.
+Azure Virtual Desktop is a desktop and app virtualization service that runs in the cloud. Azure Virtual Desktop works across devices like Windows, Mac, iOS, Android, and Linux, with apps that you can use to access remote desktops and apps. You can also use most modern browsers to access Azure Virtual Desktop-hosted experiences.
 
 ## How does Azure Firewall filter traffic for Azure Virtual Desktop?
 

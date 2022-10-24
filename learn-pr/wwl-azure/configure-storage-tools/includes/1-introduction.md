@@ -4,7 +4,7 @@ Azure Administrators have many tools available for managing storage. You need to
 
 ## Skills measured
 
-Storage management tools are part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Storage management tools are part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Implement and manage storage (15–20%)
 

@@ -1,4 +1,4 @@
-The module twins for the **IoT Edge hub** and **IoT Edge agent** modules (the two IoT Edge Runtime modules) provide properties that can be used manage module communication and lifecycle.
+The module twins for the **IoT Edge hub** and **IoT Edge agent** modules (the two IoT Edge Runtime modules) provide properties that can be used to manage module communication and lifecycle.
 
 Each module twin includes:
 

@@ -1,4 +1,4 @@
-[!include[](../../includes/dotnet-maui-note.md)]
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Xamarin.Forms layout panels help you create consistent user interfaces for your application across a wide range of devices.
 

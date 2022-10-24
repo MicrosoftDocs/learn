@@ -15,7 +15,7 @@ prerequisites: |
   - Beginner-level knowledge of networking, including IP addresses, public versus private IP addresses, hub and spoke network topology, subnets, and network packets.  
 summary: |
   Introduction to key Azure network security services for secure application delivery
-iconUrl: /learn/achievements/secure-application-delivery.svg
+iconUrl: /training/achievements/secure-application-delivery.svg
 levels:
 - beginner
 roles:
@@ -25,6 +25,8 @@ products:
 - azure-web-application-firewall
 - azure-private-link
 - azure-bastion
+subjects:
+- cloud-security
 modules:
 - learn.intro-to-azure-front-door
 - introduction-azure-web-application-firewall

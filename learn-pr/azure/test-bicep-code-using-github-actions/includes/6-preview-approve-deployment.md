@@ -14,15 +14,11 @@ Resource Manager provides the what-if operation, which you can run on your Bicep
 
 :::image type="content" source="../media/6-jobs-preview.png" alt-text="Diagram of a workflow that includes Lint, Validate, and Preview jobs. The Preview job executes a what-if operation against Azure." border="false":::
 
-The `arm-deploy` action does not currently support the what-if operation, so instead you can use the Azure CLI. Run the `az deployment group what-if` command from within your workflow definition:
+The `arm-deploy` action supports triggering what-if operation by using the `additionalArguments` property:
 
-:::code language="yaml" source="code/6-what-if.yml" highlight="10-17" :::
+:::code language="yaml" source="code/6-what-if.yml" highlight="12-20" :::
 
-::: zone pivot="powershell"
-
-If you build your own PowerShell-based workflow, you can use the `New-AzResourceGroupDeployment` cmdlet with the `-Whatif` switch, or you can use the `Get-AzResourceGroupDeploymentWhatIfResult` cmdlet.
-
-::: zone-end
+The code above is equivalent to running the deployment by using Azure CLI, with the `--what-if` argument included.
 
 The what-if operation doesn't make any changes to your environment. Instead, it describes the resources that will be created, the resource properties that will be updated, and the resources that will be deleted.
 
@@ -30,7 +26,7 @@ What-if sometimes shows that a resource will change when actually no change will
 
 After you see the output of the what-if operation, you can determine whether to continue on to the deployment. This step typically involves a human reviewing the output from the what-if command, and then making a decision about whether the identified changes are reasonable. If a human reviewer decides that the changes are reasonable, they can manually approve the workflow run.
 
-To learn more about the what-if command, see the Microsoft Learn module [Preview Azure deployment changes by using what-if](/learn/modules/arm-template-whatif/).
+To learn more about the what-if command, see the Microsoft Learn module [Preview Azure deployment changes by using what-if](/training/modules/arm-template-whatif/).
 
 ## Environments
 
@@ -40,7 +36,10 @@ You create an environment by using the GitHub web interface. You can create envi
 
 After you create an environment you can reference it in any jobs in your workflow:
 
-:::code language="yaml" source="code/6-environment.yml" range="15-52" highlight="26" :::
+:::code language="yaml" source="code/6-environment.yml" range="19-60" highlight="28" :::
+
+> [!NOTE]
+> When your deployment workflow's workload identity interacts with Azure Resource Manager within an environment, it needs a federated credential that's configured with the name of the environment. You'll learn more about this in future modules. When you run the exercises for this module, you'll create the necessary federated credentials.
 
 ## Environment protection rules
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.introduction-regression-models.what-is-regression
+title: What is regression?
+metadata:
+  title: What is regression?
+  description: What is regression?
+  ms.date: 03/10/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-what-is-regression.md)]

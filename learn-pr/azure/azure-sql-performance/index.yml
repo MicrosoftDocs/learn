@@ -19,7 +19,7 @@ abstract: |
 prerequisites: | 
  - Experience working with, maintaining, and developing with SQL Server
  - Experience with Azure, such as deploying and managing resources
-iconUrl: /learn/achievements/azure-sql-performance.svg
+iconUrl: /training/achievements/azure-sql-performance.svg
 levels:
 - beginner
 - intermediate
@@ -32,6 +32,8 @@ products:
 - azure
 - azure-sql-database
 - azure-sql-managed-instance
+subjects:
+- database
 units:
 - learn.azure-sql-performance.1-introduction
 - learn.azure-sql-performance.2-performance-capabilities

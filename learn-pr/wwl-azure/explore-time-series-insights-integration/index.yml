@@ -21,7 +21,7 @@ prerequisites: |
   - Explain the features and capabilities of IoT Hub.
   - Describe the Azure IoT SDKs for devices and services, and how Visual Studio Code, Azure CLI, and the Azure Cloud Shell can be used to configure and develop components of an IoT solution.
   - Describe how an IoT solution uses message routing and other message processing options to process message and event data.
-iconUrl: /learn/achievements/time-series-insights-integration.svg
+iconUrl: /training/achievements/time-series-insights-integration.svg
 levels:
 - intermediate
 roles:
@@ -32,6 +32,8 @@ products:
 - azure-iot-sdk
 - azure-portal
 - azure-time-series-insights
+subjects:
+- iot
 units:
 - learn.wwl.explore-time-series-insights-integration.introduction
 - learn.wwl.explore-time-series-insights-integration.analyze-time-stamped-data

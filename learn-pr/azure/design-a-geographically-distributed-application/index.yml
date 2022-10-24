@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Intermediate familiarity with Azure PaaS services
   - Intermediate familiarity with architecture principles
-iconUrl: /learn/achievements/design-geographically-distributed-application-social.png
+iconUrl: /training/achievements/design-geographically-distributed-application-social.png
 levels:
 - advanced
 roles:
@@ -30,6 +30,8 @@ products:
 - azure-cache-redis
 - azure-sql-database
 - azure-cosmos-db
+subjects:
+- cloud-computing
 units:
 - learn.design-a-geographically-distributed-application.1-introduction
 - learn.design-a-geographically-distributed-application.2-geo-distributed-architecture

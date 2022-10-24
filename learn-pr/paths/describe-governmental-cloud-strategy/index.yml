@@ -14,13 +14,15 @@ prerequisites: |
   - You should have a general understanding of why government exists and the purpose it serves.
 summary: |
   Understand the US Government's cloud computing approach.
-iconUrl: /learn/achievements/governmental-cloud-strategy.svg
+iconUrl: /training/achievements/governmental-cloud-strategy.svg
 levels:
 - beginner
 roles:
 - business-owner
 products:
 - azure-sovereign-us
+subjects:
+- cloud-computing
 modules:
 - learn.wwl.describe-government-its-structure
 - learn.wwl.describe-significant-government-strategy-actions

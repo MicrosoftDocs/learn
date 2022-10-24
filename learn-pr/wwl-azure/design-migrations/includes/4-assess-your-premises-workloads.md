@@ -7,12 +7,12 @@ There are a range of tools and services that can help you plan and complete the 
 | **Service or tool**| **Stage**| **Description** |
 | - | - | - |
 | Service Map| Assess| Maps communication between app components on Windows or Linux. Can help you to identify dependencies when determining what to migrate. Service map requires an additional agent to be installed on the source environment VMs. |
-| Azure TCO Calculator| Assess| Provides an estimate of your monthly running costs in Azure, which enables a comparison with on-premises costs. |
+| Azure TCO Calculator| Assess| Estimate the cost savings you can realize by migrating your workloads to Azure. |
 | Azure Migrate| Assess and migrate| Performs assessment and migration to Azure of VMs (Hyper-V and VMware), cloud based VMs, physical servers, databases, data, virtual desktop infrastructure, and web applications. |
 | Data Migration Assistant (DMA)| Assess and Migrate| Performs assessment and migration specifically for Azure SQL database. |
 | Azure Database Migration Service| Assess and Migrate| Performs assessment and migration for several different databases, not just Azure SQL database. |
 | Data Migration Tool| Migrate| Migrates your existing databases to Azure Cosmos DB. |
-| Azure Cost Management| Optimize| Helps you monitor, optimize, and control your ongoing Azure costs. |
+| Microsoft Cost Management| Optimize| Helps you monitor, optimize, and control your ongoing Azure costs. |
 | Azure Advisor| Optimize| Helps optimize your Azure resources for reliability, performance, cost, security, and operational excellence. |
 | Azure Monitor| Monitor| Collects monitoring telemetry from both on-premises and Azure resources. Enables you to analyze data, setup alerts, and identify problems. |
 | Microsoft Sentinel| Monitor| Provides intelligent security analytics for your applications enabling you to collect, detect, investigate, and respond to incidents. |
@@ -100,7 +100,7 @@ The following screenshot displays an example workload for servers:
 
  
 
-:::image type="content" source="../media/calculator-estimate.png" alt-text="TCO calculator with cost estimates.":::
+:::image type="content" source="../media/calculator-estimate.png" alt-text="Diagram of T C O calculator with cost estimates.":::
 
 
 
@@ -122,7 +122,7 @@ Next, you can adjust assumptions, including:
 
 Making these adjustments enables you to fine tune your workloads to reflect their actual cost to Tailwind Traders as closely as possible. Finally, on the View report page, you can review information about possible cost savings, as displayed in the following screenshot.
 
-:::image type="content" source="../media/estimated-savings.png" alt-text="Example estimated cost savings.":::
+:::image type="content" source="../media/estimated-savings.png" alt-text="Screenshot of estimated cost savings.":::
 
 
 
@@ -160,7 +160,7 @@ The process can be visualized as follows:
 
 4. Review the assessment
 
-:::image type="content" source="../media/migrate-discovery.png" alt-text="Flowchart as described in the text.":::
+:::image type="content" source="../media/migrate-discovery.png" alt-text="Flowchart as described in the student content.":::
 
  
 

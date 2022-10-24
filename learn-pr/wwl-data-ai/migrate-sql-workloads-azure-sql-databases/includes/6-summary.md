@@ -5,4 +5,4 @@ You created and executed a plan to migrate your servers to Azure SQL Database us
 ### Learn more
 
 - [Azure Database Migration Guide](https://datamigration.microsoft.com/scenario/sql-to-azuresqldb?step=1)
-- [Transactional Replication with Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transactional-replication)
+- [Transactional Replication with Azure SQL Database](/azure/sql-database/sql-database-managed-instance-transactional-replication)

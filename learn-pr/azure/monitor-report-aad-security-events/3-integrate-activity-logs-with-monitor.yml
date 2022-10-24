@@ -1,39 +1,39 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-report-aad-security-events.3-integrate-activity-logs-with-monitor
 metadata:
-  title: Integrate activity logs with Azure Monitor logs
-  description: Integrate activity logs with Azure Monitor logs.
-  ms.date: 03/27/2020
+  title: Integrate logs with a Log Analytics workspace
+  description: Integrate Azure Active Directory logs with a Log Analytics workspace.
+  ms.date: 04/22/2022
   author: MarkusVi
   ms.author: markvi
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Integrate activity logs with Azure Monitor logs
+title: Integrate logs with a Log Analytics workspace
 durationInMinutes: 7
 content: |
   [!include[](includes/3-integrate-activity-logs-with-monitor.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'What are the two types of queries you can write in Azure Monitor?'
+  - content: 'What are the two types of queries you can write to view your Azure Active Directory logs?'
     choices:
     - content: Kusto and search-based
       isCorrect: false
-      explanation: Kusto is the query language used by Azure Monitor to build queries.
+      explanation: Kusto is the *query language* you use to build queries.
     - content: Table-based and Kusto
       isCorrect: false
-      explanation:  Kusto is the query language used by Azure Monitor to build queries.
+      explanation: Kusto is the *query language* you use to build queries.
     - content: Table-based and search-based
       isCorrect: true
-      explanation: You can run both table-based and search-based queries in Azure Monitor.
-  - content: 'What query filter command would you use to get n rows in no particular order?'
+      explanation: You can run both table-based and search-based queries in your Log Analytics workspace.
+  - content: 'What query filter command would you use to get *n* rows in no specific order?'
     choices:
-    - content: sort by
+    - content: The `sort by` query command
       isCorrect: false
-      explanation: Sort by is used to order the result set.
-    - content: take
+      explanation: Use `sort by` to order the result set.
+    - content: The `take` query command
       isCorrect: true
-      explanation: Take is used on small datasets. It returns n rows from the result set in no particular order.
-    - content: top
+      explanation: Use `take` on small datasets. It returns *n* rows from the result set in no specific order.
+    - content: The `top` query command
       isCorrect: false
-      explanation: Top returns the top n rows of the result set.
+      explanation: The `top` query command returns the top *n* rows of the result set.

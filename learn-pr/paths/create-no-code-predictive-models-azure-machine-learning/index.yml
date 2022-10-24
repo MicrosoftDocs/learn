@@ -16,7 +16,7 @@ prerequisites: |
   Ability to navigate the Azure portal
 summary: |
   Machine learning is at the core of artificial intelligence, and many modern applications and services depend on predictive machine learning models. Learn how to use Azure Machine Learning to create and publish models without writing code.
-iconUrl: /learn/achievements/create-no-code-predictive-models-with-azure-machine-learning.svg
+iconUrl: /training/achievements/create-no-code-predictive-models-with-azure-machine-learning.svg
 levels:
 - beginner
 roles:
@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-machine-learning
+subjects:
+- machine-learning
 modules:
 - learn.wwl.use-automated-machine-learning
 - learn.wwl.create-regression-model-azure-machine-learning-designer

@@ -19,7 +19,7 @@ abstract: |
   - Try working with code in the Rust playground.
 prerequisites: | 
   - Knowledge of programming languages, such as Python or C++
-iconUrl: /learn/achievements/rust-get-started.svg 
+iconUrl: /training/achievements/rust-get-started.svg 
 levels:
 - beginner
 roles:
@@ -28,6 +28,8 @@ roles:
 products:
 - vs-code
 - azure
+subjects:
+- development-tools
 units:
 - learn.language.rust-introduction.1-introduction
 - learn.language.rust-introduction.2-rust-overview

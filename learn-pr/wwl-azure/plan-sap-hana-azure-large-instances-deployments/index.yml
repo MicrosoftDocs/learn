@@ -19,7 +19,7 @@ prerequisites: |
   Before taking this training, you should complete:
   - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
   - SAP HANA or NetWeaver training.
-iconUrl: /learn/achievements/sap-hana-deployment.svg
+iconUrl: /training/achievements/sap-hana-deployment.svg
 levels:
 - advanced
 roles:
@@ -27,6 +27,10 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
+- data-engineering
+- data-warehousing
 units:
 - learn.wwl.plan-sap-hana-azure-large-instances-deployments.introduction
 - learn.wwl.plan-sap-hana-azure-large-instances-deployments.explore-compute-considerations

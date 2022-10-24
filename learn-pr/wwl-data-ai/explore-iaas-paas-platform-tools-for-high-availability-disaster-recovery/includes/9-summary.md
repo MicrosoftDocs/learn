@@ -1,6 +1,6 @@
 Deploying the right HADR solution in Azure is more than just picking a feature. A solution must meet your requirements, including the RTO and RPO expected by the business. Depending on the platform (IaaS or PaaS), there could be multiple options to choose from.
 
-Depending on the PaaS option chosen for your deployment, there will be different options that you can configure to meet your availability needs, even if you do not have as many options as with an IaaS solution.
+Depending on the PaaS option chosen for your deployment, there will be different options that you can configure to meet your availability needs, even if you don't have as many options as with an IaaS solution.
 
 Now that you've reviewed this module, you should be able to:
 

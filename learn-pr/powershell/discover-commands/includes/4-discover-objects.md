@@ -4,11 +4,14 @@ When a cmdlet runs, it returns an object. When you invoke a cmdlet, the response
 
 The `Get-Member` cmdlet is meant to be _piped_ on top of the command you run so that you can filter the output. A typical command-line invocation of `Get-Member` might look like the following example:
 
-```bash
+```powershell
 Get-Process -Name 'name-of-process' | Get-Member
 ```
 
 This command first produces an object result by calling `Get-Process`. That result is passed as an input to `Get-Member` by using the pipe (`|`). In return, you get a table result that includes the `Name`, `MemberType`, and `Definition` columns. You also get the type of the returned object.
+
+> [!TIP]
+> To get a list of the processes running on your machine, run `Get-Process`.
 
 ### Search by type
 
@@ -41,9 +44,15 @@ When you run `Get-Member`, the result is _verbose_. That is, many rows are retur
 
 Take a look at a `Get-Member` response that includes many columns. By introducing the `Select-Object` cmdlet, you can choose which columns appear in the response. The command expects either a comma-separated list of column names or a wildcard character, such as an asterisk (`*`), which indicates all columns.
 
-When you use the `Select-Object` command in the context of `Select-Object Name, MemberType`, you specify only the columns you want. In this case, the columns are `Name` and `MemberType`. This filtering pattern returns an output that includes fewer columns. Here's an example of the result:
+When you use the `Select-Object` command in the context of `Select-Object Name, MemberType`, you specify only the columns you want. In this case, the columns are `Name` and `MemberType`. The command line would look like this:
 
 ```powershell
+Get-Process -Name 'name-of-process' | Get-Member | Select-Object Name, MemberType
+```
+
+This filtering pattern returns an output that includes fewer columns. Here's an example of the result:
+
+```output
 Name                           MemberType
 ----                           ----------
 Handles                     AliasProperty

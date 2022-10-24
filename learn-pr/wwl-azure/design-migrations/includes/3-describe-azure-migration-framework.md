@@ -78,7 +78,7 @@ To analyze costs, you can use Cost Management in the Azure portal. Select the Az
 
  
 
-:::image type="content" source="../media/cost-analysis.png" alt-text="Cost analysis example with estimated costs.":::
+:::image type="content" source="../media/cost-analysis.png" alt-text="Diagram of cost analysis example with estimated costs.":::
 
 
 

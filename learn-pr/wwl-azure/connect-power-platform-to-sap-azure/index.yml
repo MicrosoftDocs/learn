@@ -17,7 +17,7 @@ abstract: |
   - Describe and implement Microsoft Power Platform security and management policies, and monitor users and developers
 prerequisites: |
   Basic understanding of the Microsoft Power Platform. AZ-104 certification or equivalent knowledge. Knowledge of SAP products such as SAP HANA or SAP NetWeaver.
-iconUrl: /learn/achievements/azure-sap-connect-power-platform.svg
+iconUrl: /training/achievements/azure-sap-connect-power-platform.svg
 levels:
 - advanced
 roles:
@@ -27,6 +27,8 @@ products:
 - azure
 - power-bi
 - power-platform
+subjects:
+- data-engineering
 units:
 - learn.wwl.connect-power-platform-to-sap-azure.introduction
 - learn.wwl.connect-power-platform-to-sap-azure.concepts

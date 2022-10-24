@@ -19,7 +19,7 @@ abstract: |
 prerequisites: | 
   - A Windows, Mac, or Linux computer
   - Knowledge of how to download programs from the internet
-iconUrl: /learn/achievements/rust-set-up-environment.svg 
+iconUrl: /training/achievements/rust-set-up-environment.svg 
 levels:
 - beginner
 roles:
@@ -28,6 +28,9 @@ roles:
 products:
 - vs-code
 - azure
+subjects:
+- devops
+- development-tools
 units:
 - learn.language.rust-set-up-environment.1-introduction
 - learn.language.rust-set-up-environment.2-install-vs-code

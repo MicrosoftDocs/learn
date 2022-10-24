@@ -4,9 +4,9 @@ title: Exercise - Call the function from the mobile app
 metadata:
   title: Call the function from the mobile app
   description: Call the function from the mobile app, passing the user's location and a list of phone numbers
-  ms.date: 09/24/2018
+  ms.date: 05/06/2022
   #TODO: Update with real author name.
-  author: adrianstevens
+  author: acomfort248
   ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

@@ -16,7 +16,7 @@ abstract: |
   - Understand when to use custom handlers.
   - Build serverless apps by using Go.
   - Handle different triggers like HTTP and queue.
-iconUrl: /learn/achievements/serverless-go.svg
+iconUrl: /training/achievements/serverless-go.svg
 levels:
   - beginner
 roles:
@@ -25,6 +25,8 @@ products:
   - vs
 prerequisites: |
   - Visual Studio Code is recommended, but it's perfectly fine to use any text editor or IDE.
+subjects:
+- serverless-compute
 units:
   - learn.student-evangelism.serverless-go.introduction
   - learn.student-evangelism.serverless-go.custom-handlers

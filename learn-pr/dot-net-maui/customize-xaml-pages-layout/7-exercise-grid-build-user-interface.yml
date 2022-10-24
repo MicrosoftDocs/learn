@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.customize-xaml-pages-layout.exercise-grid-build-user-interface
+title: Exercise - Use Grid to build a user interface
+metadata:
+  title: Exercise - Use Grid to build a user interface
+  description: Create a Grid layout and position its elements in a .NET MAUI app.
+  ms.date: 04/29/2022
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+azureSandbox: false
+content: |
+  [!include[](includes/7-exercise-grid-build-user-interface.md)]

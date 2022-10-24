@@ -1,4 +1,4 @@
-Your project came with a release pipeline that builds the projects in the solution and deploys the web app to Azure App Service. Now it's time to extend that pipeline to also deploy the new Azure Functions project.
+Your project came with a pipeline that builds the projects in the solution and deploys the web app to Azure App Service. Now it's time to extend that pipeline to also deploy the new Azure Functions project.
 
 In this part, you'll:
 
@@ -28,7 +28,7 @@ Here you review the existing CI/CD pipeline defined in *azure-pipelines.yml*.
 
 **Andy:** I think we can also reuse the App Service deployment task as-is. Hopefully there's something similar we can use for deploying a function app.
 
-**Mara:** I have good news. After a little research, it looks like there's a task that's conceptually similar to the App Service deployment task, but for Azure Functions deployments. Let's add it now.
+**Mara:** I have good news. After a little research, it looks like there's a task that's conceptually similar to the App Service deployment task, but for Azure Functions deployments. Let's review it now.
 
 ## Azure Function App Task
 

@@ -18,7 +18,7 @@ prerequisites: |
   - Working knowledge of Azure and the Azure portal
   - Familiarity with Azure Batch accounts
   - An Azure account with an active subscription
-iconUrl: /learn/achievements/create-batch-account-using-azure-portal.svg
+iconUrl: /training/achievements/create-batch-account-using-azure-portal.svg
 levels:
 - intermediate
 roles:
@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-batch
+subjects:
+- cloud-computing
 units:
 - learn.azure.create-batch-account-using-azure-portal.introduction
 - learn.azure.create-batch-account-using-azure-portal.create-azure-batch-account

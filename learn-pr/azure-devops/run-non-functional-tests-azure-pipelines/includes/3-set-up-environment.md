@@ -47,7 +47,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template.
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/learn/modules/run-non-functional-tests-azure-pipelines/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
+> The [Clean up your Azure DevOps environment](/training/modules/run-non-functional-tests-azure-pipelines/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
 
 [!include[](../../shared/includes/project-visibility.md)]
 
@@ -164,19 +164,19 @@ Here you create the App Service instances for the three stages that you'll deplo
       --name tailspin-space-game-web-dev-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp \
-      --runtime "DOTNET|5.0"
+      --runtime "DOTNET|6.0"
 
     az webapp create \
       --name tailspin-space-game-web-test-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp \
-      --runtime "DOTNET|5.0"
+      --runtime "DOTNET|6.0"
 
     az webapp create \
       --name tailspin-space-game-web-staging-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp \
-      --runtime "DOTNET|5.0"
+      --runtime "DOTNET|6.0"
     ```
 
     For learning purposes, here you apply the same App Service plan, **B1 Basic**, to each App Service instance. In practice, you would assign a plan that matches your expected workload.
@@ -207,11 +207,11 @@ Here you create the App Service instances for the three stages that you'll deplo
     :::image type="content" source="../../shared/media/app-service-default.png" alt-text="The default home page on Azure App Service.":::
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/learn/modules/run-non-functional-tests-azure-pipelines/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to follow the cleanup steps even if you don't complete this module.
+> The [Clean up your Azure DevOps environment](/training/modules/run-non-functional-tests-azure-pipelines/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to follow the cleanup steps even if you don't complete this module.
 
 ## Create pipeline variables in Azure Pipelines
 
-In [Run functional tests in Azure Pipelines](/learn/modules/run-functional-tests-azure-pipelines?azure-portal=true), you added one variable for each of the App Service instances. The instances correspond to the _Dev_, _Test_, and _Staging_ stages in your pipeline. Here you follow the same pattern.
+In [Run functional tests in Azure Pipelines](/training/modules/run-functional-tests-azure-pipelines?azure-portal=true), you added one variable for each of the App Service instances. The instances correspond to the _Dev_, _Test_, and _Staging_ stages in your pipeline. Here you follow the same pattern.
 
 Each stage in your pipeline configuration uses the variables to identify which App Service instance to deploy to.
 
@@ -245,7 +245,7 @@ To add the variables:
 
 ## Create the dev, test, and staging environments
 
-In [Run functional tests in Azure Pipelines](/learn/modules/run-functional-tests-azure-pipelines?azure-portal=true), you created environments for the **dev**, **test**, and **staging** environments. Here, you repeat the process.
+In [Run functional tests in Azure Pipelines](/training/modules/run-functional-tests-azure-pipelines?azure-portal=true), you created environments for the **dev**, **test**, and **staging** environments. Here, you repeat the process.
 
 To create the **dev**, **test**, and **staging** environments:
 

@@ -10,7 +10,7 @@ Using IoT Edge devices in your stores delivers a robust solution that can handle
 
 [IoT 101](https://channel9.msdn.com/Series/IoT-101/?&WT.mc_id=EducationalIoT-c9-niner&azure-portal=true)
 
-## Learn more on Microsoft docs
+## Learn more via Microsoft Learn documentation
 
 - [IoT Central](/azure/iot-central/core/overview-iot-central)
 - [IoT Edge](/azure/iot-edge/about-iot-edge)

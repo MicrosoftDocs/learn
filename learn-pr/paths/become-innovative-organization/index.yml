@@ -12,7 +12,7 @@ metadata:
 title: Become an innovative organization
 summary: In this learning path, you'll discover why innovation is critical to achieving a competitive advantage. You’ll be able to use the frameworks and guidance provided to help organize your business for adaptability, establish an innovative mindset, and coinnovate with external partners. Achieving these three milestones will help foster the knowledge, skills, and cultural mindset needed to infuse innovation into the core of your business. You’ll learn how the speed at which an organization can influence technology and its people to experiment, reinvent, and grow is what will set them apart in a competitive landscape.
 prerequisites: None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
@@ -22,6 +22,9 @@ products:
 - azure
 - dynamics-365
 - m365
+subjects:
+- artificial-intelligence
+- business-applications
 modules:
 - learn-wwl.organize-for-adaptability
 - learn-wwl.cultivate-innovative-mindset

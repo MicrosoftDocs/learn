@@ -16,7 +16,7 @@ prerequisites: |
   - Familiarity with purpose and management of SQL Server transaction log
 summary: |
   Data must be available when needed. Configure, test and manage a solution for high availability and disaster recovery using Azure tools and SQL Server tools.
-iconUrl: /learn/achievements/plan-and-implement-a-ha-dr-environment.svg
+iconUrl: /training/achievements/plan-and-implement-a-ha-dr-environment.svg
 levels:
 - intermediate
 roles:
@@ -27,6 +27,8 @@ products:
 - azure
 - azure-sql-database
 - sql-server
+subjects:
+- business-continuity
 modules:
 - learn.wwl.describe-high-availability-disaster-recovery-strategies
 - learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr

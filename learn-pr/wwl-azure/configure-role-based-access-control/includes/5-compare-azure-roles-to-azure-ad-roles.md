@@ -1,48 +1,25 @@
-When you are new to Azure, you may find it a little challenging to understand all the different roles in Azure. This article helps explain the following roles and when you would use each:
+Three types of roles are available for access management in Azure:
 
- -  Classic subscription administrator roles
- -  Azure role-based access control (RBAC) roles
- -  Azure Active Directory (Azure AD) administrator roles
+- Classic subscription administrator roles
 
-To better understand roles in Azure, it helps to know some of the history. When Azure was initially released, access to resources was managed with just three administrator roles: Account Administrator, Service Administrator, and Co-Administrator. Later, role-based access control (RBAC) for Azure resources was added. Azure RBAC is a newer authorization system that provides fine-grained access management to Azure resources. RBAC includes many built-in roles, can be assigned at different scopes, and allows you to create your own custom roles. To manage resources in Azure AD, such as users, groups, and domains, there are several Azure AD administrator roles.
+- Azure role-based access control (RBAC) roles
 
-## Differences between Azure roles and Azure Active Directory roles
+- Azure Active Directory (Azure AD) administrator roles
 
-At a high level, Azure RBAC roles control permissions to manage Azure resources, while Azure AD administrator roles control permissions to manage Azure Active Directory resources. The following table compares some of the differences.
+To better understand how these different roles are defined and implemented in Azure, it helps to know some of the history.
 
-:::row:::
-  :::column:::
-    **Azure RBAC roles**
-  :::column-end:::
-  :::column:::
-    **Azure AD roles**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Manage access to Azure resources.
-  :::column-end:::
-  :::column:::
-    Manage access to Azure Active Directory resources.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Scope can be specified at multiple levels (management group, subscription, resource group, resource).
-  :::column-end:::
-  :::column:::
-    Scope is at the tenant level.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Role information can be accessed in Azure portal, Azure CLI, Azure PowerShell, Azure Resource Manager templates, REST API.
-  :::column-end:::
-  :::column:::
-    Role information can be accessed in Azure admin portal, Microsoft 365 admin portal, Microsoft Graph AzureAD PowerShell.
-  :::column-end:::
-:::row-end:::
+When Azure was initially released, access to resources was managed with just three administrator roles: _Account Administrator_, _Service Administrator_, and _Co-Administrator_. Access was controlled by assigning admin roles to subscriptions.
 
+Later, role-based access control (RBAC) for Azure resources was added. Azure RBAC is a newer authorization system that provides fine-grained access management to Azure resources. RBAC includes many built-in roles that can be assigned at different scopes. The Azure RBAC model also lets you create your own custom roles.
 
-> [!NOTE]
-> Azure Resource Manager roles should be used instead of Classic administrator roles.
+In addition to Classic subscription admin roles and Azure RBAC roles, Azure AD provides built-in administrator roles to manage Azure AD resources like users, groups, and domains.
+
+> [!Tip]
+> If you're considering using Classic administrator roles, use Azure Resource Manager roles instead.
+The following table highlights differences between Azure RBAC roles and Azure AD administrator roles.
+
+| <!-- Blank --> | Azure&nbsp;RBAC&nbsp;roles | Azure&nbsp;AD&nbsp;admin&nbsp;roles |
+| --- | --- | --- |
+| **Access&nbsp;management** | Manages access to Azure resources | Manages access to Azure AD resources |
+| **Scope&nbsp;assignment**  | Scope can be specified at multiple levels, including management groups, subscriptions, resource groups, and resources | Scope is specified at the tenant level |
+| **Role&nbsp;definitions** | Roles can be defined via the Azure portal, the Azure CLI, Azure PowerShell, Azure Resource Manager templates, and the REST API | Roles can be defined via the Azure admin portal, Microsoft 365 admin portal, and Microsoft Graph Azure AD PowerShell |
