@@ -31,6 +31,5 @@ subjects:
 - data-analytics
 units:
 - learn.data-ai.transform-data-with-azure-stream-analytics.write-transformation-query
-- learn.data-ai.transform-data-with-azure-stream-analytics.view-job-result
 badge:
   uid: learn.data-ai.transform-data-with-azure-stream-analytics.badge
