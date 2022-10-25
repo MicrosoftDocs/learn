@@ -1297,3 +1297,8 @@ achievements:
   title: 'Microsoft Azure Fundamentals: Describe identity, governance, privacy, and compliance features'
   summary: 'Microsoft Azure Fundamentals: Describe identity, governance, privacy, and compliance features'
   iconUrl: /training/achievements/az-900-describe-identity-governance-privacy-compliance-features.svg
+- uid: learn.data-ai.transform-data-with-azure-stream-analytics.badge
+  type: badge
+  title: Transform data by using Azure Stream Analytics
+  summary: Transform data by using Azure Stream Analytics
+  iconUrl: /training/achievements/data-ai/transform-data-with-azure-stream-analytics-badge.svg
