@@ -81,7 +81,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
 
 ```azurecli
-az group create --name ToyWebsiteTest --location westus3
+az group create --name ToyWebsiteTest --location eastus
 ```
 
 ::: zone-end
@@ -91,7 +91,7 @@ az group create --name ToyWebsiteTest --location westus3
 To create a resource group, run this Azure PowerShell command in the Visual Studio Code terminal:
 
 ```azurepowershell
-New-AzResourceGroup -Name ToyWebsiteTest -Location westus3
+New-AzResourceGroup -Name ToyWebsiteTest -Location eastus
 ```
 
 ::: zone-end
