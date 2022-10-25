@@ -1,6 +1,6 @@
 ## Lab scenario
 
-You are the Azure Administrator for your organization. You decide to automate some common adminstration tasks by using Azure Command Line Interface (CLI).
+You're the Azure Administrator for your organization. You decide to automate some common administration tasks by using Azure Command Line Interface (CLI).
 
 + Create resources groups.
 + Create managed disks.
@@ -23,7 +23,7 @@ You are the Azure Administrator for your organization. You decide to automate so
 > [!NOTE]
 > Click on the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
 
-[![Screenshot of the simulation page.](../media/simulation-command-line-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-104%20Exam%20Guide%20-%20Microsoft%20Azure%20Administrator%20Exercise%203?azure-portal=true)
+[![Screenshot of the simulation page.](../media/simulation-command-line-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-104%20Exam%20Guide%20-%20Microsoft%20Azure%20Administrator%20Exercise%207?azure-portal=true)
 
 
 

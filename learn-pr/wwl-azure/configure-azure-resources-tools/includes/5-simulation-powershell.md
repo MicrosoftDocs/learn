@@ -1,6 +1,6 @@
 ## Lab scenario
 
-You are the Azure Administrator for your organization. You decide to automate some common adminstration tasks by using Azure PowerShell.
+You're the Azure Administrator for your organization. You decide to automate some common administration tasks by using Azure PowerShell.
 
 + Create resources groups.
 + Create managed disks.
