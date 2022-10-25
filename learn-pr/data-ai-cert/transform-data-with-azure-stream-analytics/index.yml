@@ -34,7 +34,6 @@ units:
 - learn.data-ai.transform-data-with-azure-stream-analytics.write-transformation-query
 - learn.data-ai.transform-data-with-azure-stream-analytics.start-job
 - learn.data-ai.transform-data-with-azure-stream-analytics.view-job-result
-- learn.data-ai.transform-data-with-azure-stream-analytics.monitor-and-troubleshoot
 - learn.data-ai.transform-data-with-azure-stream-analytics.summary
 badge:
   uid: learn.data-ai.transform-data-with-azure-stream-analytics.badge
