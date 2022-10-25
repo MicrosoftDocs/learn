@@ -33,7 +33,6 @@ units:
 - learn.data-ai.transform-data-with-azure-stream-analytics.introduction
 - learn.data-ai.transform-data-with-azure-stream-analytics.stream-analytics-workflow
 - learn.data-ai.transform-data-with-azure-stream-analytics.create-stream-analytics-job
-- learn.data-ai.transform-data-with-azure-stream-analytics.configure-job-output
 - learn.data-ai.transform-data-with-azure-stream-analytics.write-transformation-query
 - learn.data-ai.transform-data-with-azure-stream-analytics.start-job
 - learn.data-ai.transform-data-with-azure-stream-analytics.view-job-result
