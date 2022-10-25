@@ -27,7 +27,7 @@ levels:
 roles:
   - service-adoption-specialist
   - solution-architect
-  - network-engineer
+  - technology-manager
 products:
   - azure
 subjects:
