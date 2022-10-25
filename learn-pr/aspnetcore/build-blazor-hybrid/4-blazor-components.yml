@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.build-blazor-hybrid.bh-blazor-components
+title: Razor components in Blazor Hybrid
+metadata:
+  title: Razor components in Blazor Hybrid
+  description: What are Razor components and how do they work with Blazor Hybrid?
+  ms.date: 07/22/2022
+  author: jamesmontemagno
+  ms.author: jamont
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-blazor-components.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Blazor Hybrid apps use which .NET runtime?"
+    choices:
+    - content: "The runtime provided by the browser"
+      isCorrect: false
+      explanation: "Blazor Hybrid apps run on the .NET runtime deployed with the app framework"
+    - content: "The .NET runtime deployed natively with your app"
+      isCorrect: true
+      explanation: "Blazor Hybrid apps run on the .NET runtime deployed with the app framework"
+    - content: "The JavaScript runtime deployed with your app"
+      isCorrect: false
+      explanation: "Blazor Hybrid apps run on the .NET runtime deployed with the app framework"
+    - content: "The WebAssembly runtime deployed with your app"
+      isCorrect: false
+      explanation: "Blazor Hybrid apps run on the .NET runtime deployed with the app framework"
+  - content: "How is Blazor UI typically defined?"
+    choices:
+    - content: "As Razor components with a mix of HTML and C#"
+      isCorrect: true
+      explanation: "A Razor file defines components that make up portions of UI for the app" 
+    - content: "As XAML pages using XML"
+      isCorrect: false
+      explanation: "A Razor file defines components that make up portions of UI for the app"
+    - content: "In C# defined in .NET Standard libraries"
+      isCorrect: false
+      explanation: "A Razor file defines components that make up portions of UI for the app"

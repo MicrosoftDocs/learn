@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   Explore how applications can and should be added to your identity and access solution with application registration in Azure AD.  Aligned to SC-300 Exam.
-iconUrl: /learn/achievements/implement-access-management-for-apps.svg
+iconUrl: /training/achievements/implement-access-management-for-apps.svg
 levels:
 - intermediate
 roles:
@@ -23,6 +23,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 modules:
 - learn.wwl.plan-design-integration-of-enterprise-apps-for-sso
 - learn.wwl.implement-monitor-integration-of-enterprise-apps-for-sso

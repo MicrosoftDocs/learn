@@ -9,7 +9,9 @@
 7.  Under **Dynamic user members**, select **Add dynamic query**.
 8.  On the right above the **Rule syntax** box, select **Edit**.
 9.  In the Edit rule syntax pane, enter the following expression in the **Rule syntax** box: user.objectId -ne null
-10. Select **OK**. The rule appears in the Rule syntax box.:::image type="content" source="../media/dynamic-group-membership-rule-76803094.png" alt-text="Screen image displaying the dynamic group membership rules blade with rule syntax highlighted.":::
+10. Select **OK**. The rule appears in the Rule syntax box.
+
+     :::image type="content" source="../media/dynamic-group-membership-rule.png" alt-text="Screenshot of the dynamic group membership rules screen with rule syntax highlighted. Exist in Azure A D.":::
     
 11. Select **Save**. The new dynamic group will now include B2B guest users as well as member users.
 12. On the New group page, select **Create** to create the group.

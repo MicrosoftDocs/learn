@@ -1,6 +1,7 @@
-Azure doesn't include any process to move blobs. To perform a move, you'll first copy the data and then delete the source data. Azure does provide several tools you can use to copy blobs to a destination.
+Azure doesn't include any process to move blobs. To perform a move, you'll first copy the data, and then delete the source data. Azure does provide several tools you can use to copy blobs to a destination.
 
 In this unit, you'll learn about three common cross-platform tools you can use to perform these tasks:
+
 - Azure CLI
 - AzCopy utility
 - .NET Storage Client library
@@ -11,7 +12,7 @@ The Azure CLI provides access to Azure Storage through the `az storage` series o
 
 The basic commands to upload and download blobs between blob storage and the local file system are synchronous. Transferring a large blob could potentially take several hours, depending on the network bandwidth available. Additionally, if a transfer fails partway through, there's no simple way of restarting the operation from the point of failure; you must repeat the entire operation.
 
-You can transfer blobs between containers and storage accounts using the `az storage blob copy` command. Unlike the upload and download operations, this command runs asynchronously and uses the Azure Storage service to manage the copy process. This means you don't have to download and upload blobs via local storage to migrate them between accounts. You can track the progress and cancel the operation if necessary. This command also supports a batch mode that lets you copy multiple blobs.
+You can transfer blobs between containers and storage accounts using the `az storage blob copy` command. Unlike the upload and download operations, this command runs asynchronously and uses the Azure Storage service to manage the copy process. This means you don't have to download and upload blobs via local storage to migrate them between accounts. You can track the progress and cancel the operation if necessary. The command also supports a batch mode that lets you copy multiple blobs.
 
 ## AzCopy utility
 
@@ -31,4 +32,4 @@ The .NET Storage Client library provides full access to the metadata for a blob,
 
 The .NET Storage Client library implements asynchronous operations, letting you take full programmatic advantage of the multitasking capabilities of the .NET Framework.
 
-The .NET Storage Client library requires a development investment, and may not be suitable for quick, one-off jobs. However, if you have a complex task that is frequently repeated, this investment could be worthwhile.
+The .NET Storage Client library requires a development investment, and may not be suitable for quick, one-off jobs. However, if you have a complex task that is frequently repeated, the investment could be worthwhile.

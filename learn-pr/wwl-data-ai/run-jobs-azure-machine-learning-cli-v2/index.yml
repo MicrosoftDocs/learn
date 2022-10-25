@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Some familiarity with the Azure Machine Learning service.
   - Some experience in training machine learning models using frameworks such as scikit-learn.
-iconUrl: /learn/achievements/2-run-jobs-in-azure-machine-learning-with-cli-v2.svg
+iconUrl: /training/achievements/2-run-jobs-in-azure-machine-learning-with-cli-v2.svg
 levels:
 - intermediate
 roles:
@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-machine-learning
+subjects:
+- process-workflow
 units:
 - learn.wwl.run-jobs-azure-machine-learning-cli-v2.introduction
 - learn.wwl.run-jobs-azure-machine-learning-cli-v2.run-python-script-as-training-job

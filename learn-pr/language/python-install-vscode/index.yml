@@ -22,7 +22,7 @@ prerequisites: |
   - Ability to install programs locally.
   - Basic familiarity with programming concepts.
 ratingEnabled: true
-iconUrl: /learn/achievements/python-install-vscode.svg
+iconUrl: /training/achievements/python-install-vscode.svg
 levels:
   - beginner
 roles:
@@ -30,6 +30,8 @@ roles:
   - student
 products:
   - vs-code
+subjects:
+- development-tools
 units:
   - learn.languages.python-install-vscode.introduction
   - learn.languages.python-install-vscode.python-programming-language

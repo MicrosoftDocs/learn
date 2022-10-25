@@ -121,7 +121,7 @@ No other action needed.
 |-----|--------|
 |No information security policy|Create an information security policy by using the [Azure governance](/azure/cloud-adoption-framework/govern/guides/standard/prescriptive-guidance) guidelines.|
 |No risk management program|Create risk management program by using the [Azure governance](/azure/cloud-adoption-framework/govern/guides/standard/prescriptive-guidance) guidelines.|
-|No security training|Consider using [Microsoft end-user security awareness](https://www.microsoft.com/security/blog/2020/05/13/empowering-remote-workforce-security-training/) training as the starting point for your training program. The IT security team should also consider certifications available from [Azure Learn](/learn/certifications/browse/), like the [Security administrator associate](/learn/certifications/m365-security-administrator/).|
+|No security training|Consider using [Microsoft end-user security awareness](https://www.microsoft.com/security/blog/2020/05/13/empowering-remote-workforce-security-training/) training as the starting point for your training program. The IT security team should also consider [certifications available from Microsoft Learn](/certifications/browse/), like the [Security administrator associate](/certifications/m365-security-administrator/).|
 
 ## Security architecture
 

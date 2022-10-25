@@ -35,7 +35,7 @@ The composite index that will support this query must exactly match the sequence
 
 - ``(price ASC, name ASC)``
 
-- ``(price DESC, name ASC)``
+- ``(price DESC, name DESC)``
 
 > [!TIP]
 > You can also use composite indexes with queries that have different permutations of filters and order by clauses.

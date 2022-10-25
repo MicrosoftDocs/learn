@@ -1,4 +1,4 @@
-With **Azure Synapse Analytics** and **Azure Synapse Link** for **Azure Cosmos DB**, you can create a cloud-native hybrid transactional and analytical processing (HTAP) to run analytics over your data in Azure Cosmos DB SQL API. This connection makes integration over your data pipeline on both ends of your data world, Azure Cosmos DB and Azure Synapse Analytics.
+With **Azure Synapse Analytics** and **Azure Synapse Link** for **Azure Cosmos DB**, you can create a cloud-native hybrid transactional and analytical processing (HTAP) to run analytics over your data in Azure Cosmos DB for NoSQL. This connection enables integration over your data pipeline on both ends of your data world, Azure Cosmos DB and Azure Synapse Analytics.
 
 ## Setup
 
@@ -37,7 +37,7 @@ New-AzCosmosDBSqlContainer -ResourceGroupName <resource-group> -AccountName <acc
 > [!NOTE]
 > The next couple of Python examples should be performed within your Azure Synapse Analytics workspace.
 
-There are two options to query data from Azure Cosmos DB SQL API. First, you can choose to load to a Spark DataFrame where the metadata is cached. This example uses Python to load a Spark DataFrame that points to an Azure Cosmos DB SQL API account.
+There are two options to query data from Azure Cosmos DB for NoSQL. First, you can choose to load to a Spark DataFrame where the metadata is cached. This example uses Python to load a Spark DataFrame that points to an Azure Cosmos DB for NoSQL account.
 
 ```python
 productsDataFrame = spark.read.format("cosmos.olap")\
@@ -46,7 +46,7 @@ productsDataFrame = spark.read.format("cosmos.olap")\
     .load()
 ```
 
-Alternatively, you can create a Spark table that points to the Azure Cosmos DB SQL API directly. You can then run SparkSQL queries against the Spark table without impacting the underlying store. This example uses Python to create a Spark table.
+Alternatively, you can create a Spark table that points to the Azure Cosmos DB for NoSQL directly. You can then run SparkSQL queries against the Spark table without impacting the underlying store. This example uses Python to create a Spark table.
 
 ```python
 create table products_qry using cosmos.olap options (
@@ -71,7 +71,7 @@ productsDataFrame.write.format("cosmos.oltp")\
 ```
 
 > [!NOTE]
-> This operation will impact our existing transaction workloads and will consume request units on the Azure Cosmos DB SQL API container\[s\].
+> This operation will impact our existing transaction workloads and will consume request units on the Azure Cosmos DB for NoSQL container\[s\].
 
 We can even take it further and stream data from a DataFrame, starting from a checkpoint. We can also append this streaming data to an existing container using this example Python script.
 

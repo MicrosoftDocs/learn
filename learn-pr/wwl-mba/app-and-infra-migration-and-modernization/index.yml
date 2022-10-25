@@ -17,13 +17,16 @@ abstract: |
   - Evaluate your application portfolio to determine a migration and modernization strategy.
   - Identify the advantages of different migration and modernization strategies.
 prerequisites: None
-iconUrl: /learn/achievements/apps-and-infra-migration-modernization.svg
+iconUrl: /training/achievements/apps-and-infra-migration-modernization.svg
 levels:
 - beginner
 roles:
 - business-user
 products:
 - azure
+subjects:
+- migration
+- development-tools
 units:
 - learn-wwl.app-and-infra-migration-and-modernization.1-introduction
 - learn-wwl.app-and-infra-migration-and-modernization.2-triggers-for-migration-and-modernization

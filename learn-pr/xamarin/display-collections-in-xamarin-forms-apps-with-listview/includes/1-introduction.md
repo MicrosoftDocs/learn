@@ -1,4 +1,4 @@
-[!include[](../../includes/dotnet-maui-note.md)]
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Mobile applications often display lists of data in a scrollable panel. They use this style because mobile devices are small and screen space is limited.
 

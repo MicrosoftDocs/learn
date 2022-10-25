@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Create a machine learning model based on player data
   description: Create a machine learning model based on player data
   ms.date: 03/10/2021
-  author: drguthals 
-  ms.author: sguthals 
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

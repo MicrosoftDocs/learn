@@ -6,8 +6,8 @@ metadata:
   title: Address modern database requirements with Azure SQL Database
   description: Dive deeper into some of the requirements of databases to support modern applications. Give an overview of Azure SQL Database and how it addresses those requirements. Revisit the scenario and discuss the elements that will be used from Azure SQL Database.
   ms.date: 3/17/2021 
-  author: amthomas46
-  ms.author: antho
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
   ms.topic: interactive-tutorial
   ms.prod: learning-azure  
 durationInMinutes: 5

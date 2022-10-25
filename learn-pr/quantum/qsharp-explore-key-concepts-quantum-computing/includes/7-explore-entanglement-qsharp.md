@@ -1,8 +1,8 @@
-Now you'll create quantum entanglement in Q#. This time, instead of writting and running your program locally, you'll write a Q# program using an online Jupyter notebook in your Azure Quantum workspace. 
+Now you'll create quantum entanglement in Q#. This time, instead of writing and running your program locally, you'll write a Q# program using an online Jupyter notebook in your Azure Quantum workspace. 
 
 A [Jupyter](https://jupyter.org/) notebook is a document that contains both rich text and code and can run in your browser, and can run Q# and Python code in Azure Quantum.  Notebooks can be created directly in the Azure Quantum portal and offer features such as preloaded connection information and standard Q# libraries. 
 
-If you don´t have an Azure Quantum workspace yet, check the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) module.
+If you don´t have an Azure Quantum workspace yet, check the [Get started with Azure Quantum](/training/modules/get-started-azure-quantum/?azure-portal=true) module.
 
 ## Create a new Notebook in your workspace
 
@@ -290,7 +290,7 @@ Q# is a versatile language. You can choose various ways to achieve the
 same result. Now you're going to replicate the code by using `Controlled X` instead of
 `CNOT`.
 
-1. Add a new cell and replace the `CNOT(q1, q2)` operation with the `Controlled X(q1, q2)` operation. Your program should look like this:
+1. Add a new cell and replace the `CNOT(q1, q2)` operation with the `Controlled X([q1], q2)` operation. Your program should look like this:
 
    ```qsharp
    operation TestBellState(count : Int, initial : Result) : (Int, Int, Int, Int) {
@@ -304,7 +304,7 @@ same result. Now you're going to replicate the code by using `Controlled X` inst
            SetQubitState(Zero, q2);
 
            H(q1);
-           Controlled X(q1, q2);                   // added CONTROLLED-X operation
+           Controlled X([q1], q2);                   // added CONTROLLED-X operation
 
            // measure each qubit
            let resultQ1 = M(q1);            
@@ -354,8 +354,7 @@ Your program should behave exactly like the program you created in the previous 
 > - `Adjoint`, which creates the adjoint version of the operations 
 >
 > For more information
-> about these functors and many other Q# features, see the [Q# user
-> guide](/quantum/user-guide/).
+> about these functors and many other Q# features, see the [Q# user guide](/quantum/user-guide/).
 
 
 

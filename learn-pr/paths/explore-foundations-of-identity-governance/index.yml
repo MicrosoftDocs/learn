@@ -12,7 +12,7 @@ title: Explore the foundations of identity and governance for SAP on Azure
 prerequisites: ""
 summary: |
   SAP professionals need to evaluate SAP solutions on Azure for identity services, remote management, and governance and manageability. These modules explore the identity and management for SAP workloads on Azure.
-iconUrl: /learn/achievements/explore-the-foundations-of-identity-and-governance.svg
+iconUrl: /training/achievements/explore-the-foundations-of-identity-and-governance.svg
 levels:
 - advanced
 roles:
@@ -20,6 +20,10 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- identity-access
+- compliance
+- cloud-computing
 modules:
 - learn.wwl.explore-identity-services
 - learn.wwl.explore-azure-remote-management

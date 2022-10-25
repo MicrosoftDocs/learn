@@ -41,13 +41,13 @@ Azure Database for PostgreSQL automatically provides up to 100% of your provisio
 
 During payment app database deployment, we'll set a 35-day retention period. We don’t have to worry about running out of storage with the **auto-grow** feature enabled - Azure will automatically increase the size of the storage, if needed.
 
-### Geo vs Local:  Backup redundancy options
+### Geo vs Local: Backup redundancy options
 
 Azure Database for PostgreSQL provides the flexibility to choose either locally redundant or geo-redundant backup storage.
 
 **Locally redundant backups** are stored within the region in which your server is hosted. The Basic pricing tier only offers locally redundant backup storage.
 
-**Geo-redundant backups** are stored in the same region that hosts your server and a separate data center. This provides better protection, and allows you to restore your server from a different region if there is a disaster.
+**Geo-redundant backups** are stored in a separate data center in a geo-paired region. This provides better protection and allows you to restore your server from a different region if there is a disaster.
 
 > [!IMPORTANT]
 > Choosing between local or geo-redundant storage for backup is only permitted during the creation of the server. After the server has been provisioned, the backup storage redundancy option cannot be changed.

@@ -17,7 +17,7 @@ summary: |
   You'll create multiple services, processing both large scale of messages from devices and streaming data from IoT devices.
 
 prerequisites: None
-iconUrl: /learn/achievements/create-cloud-native-apps-with-azure-open-source.svg
+iconUrl: /training/achievements/create-cloud-native-apps-with-azure-open-source.svg
 levels:
 - intermediate
 roles:
@@ -38,6 +38,8 @@ products:
 - azure-monitor
 - azure-application-insights
 - azure-active-directory
+subjects:
+- cloud-computing
 modules:
 - learn.azure.intro-to-cloud-native-apps
 - learn.azure.cna-orchestrate-containers

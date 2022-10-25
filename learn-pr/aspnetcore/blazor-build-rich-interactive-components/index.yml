@@ -22,7 +22,7 @@ prerequisites: |
   - Ability to write C# code at a novice level.
   - Ability to create a Blazor web application.
   - Ability to create Blazor components, forms, and layouts.
-iconUrl: /learn/achievements/build-interactive-components-blazor-web-apps.svg
+iconUrl: /training/achievements/build-interactive-components-blazor-web-apps.svg
 levels: 
   - intermediate
 roles: 
@@ -32,6 +32,8 @@ products:
   - blazor
   - dotnet-core
   - aspnet
+subjects:
+- cloud-computing
 units:
 - learn.build-interactive-components-blazor-web-apps.introduction
 - learn.build-interactive-components-blazor-web-apps.use-javascript-libraries-blazor-apps

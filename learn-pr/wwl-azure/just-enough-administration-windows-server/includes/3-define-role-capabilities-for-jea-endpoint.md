@@ -14,7 +14,7 @@ When you create a role capability file, you can define the following limitations
 
 - VisibleProviders. This setting lists Windows PowerShell providers that are visible to the session.
 
-You can also configure other settings such as which modules to import, which assemblies are loaded, and data types that are available. For a list of all the options when creating a role capabilities file, refer to the [New-PSRoleCapabilityFile](/powershell/module/microsoft.powershell.core/new-psrolecapabilityfile?view=powershell-7.1&preserve-view=true) documentation page on docs.microsoft.com.
+You can also configure other settings such as which modules to import, which assemblies are loaded, and data types that are available. For a list of all the options when creating a role capabilities file, see [New-PSRoleCapabilityFile](/powershell/module/microsoft.powershell.core/new-psrolecapabilityfile).
 
 ## Which commands should you allow?
 

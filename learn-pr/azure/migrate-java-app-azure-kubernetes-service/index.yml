@@ -17,7 +17,7 @@ abstract: |
   - Deploy your containerized application to AKS using Azure Migrate App Containerization. 
 prerequisites: | 
   - An active [Azure subscription](https://azure.microsoft.com/free/services/kubernetes-service/?azure-portal=true&WT.mc_id=akspipeline_intro-learn-ludossan)
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
@@ -27,6 +27,8 @@ products:
 - azure
 - azure-migrate
 - azure-kubernetes-service
+subjects:
+- container
 units:
 - learn.azure.migrate-java-app-azure-kubernetes-service.introduction
 - learn.azure.migrate-java-app-azure-kubernetes-service.containerization-overview

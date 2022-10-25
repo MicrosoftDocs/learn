@@ -23,7 +23,7 @@ prerequisites: |
   - Knowledge of HTML, CSS, JavaScript, and Git
   - Knowledge of package management with Node.js and npm
   - A code editor, such as Visual Studio Code
-iconUrl: /learn/achievements/react/react-get-started.svg
+iconUrl: /training/achievements/react/react-get-started.svg
 ratingEnabled: true
 levels:
 - beginner
@@ -33,6 +33,8 @@ roles:
 products:
 - azure-app-service-static
 - vs-code
+subjects:
+- data-analytics
 units:
 - learn.language.react-get-started.1-introduction
 - learn.language.react-get-started.2-javascript-xml

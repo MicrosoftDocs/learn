@@ -19,7 +19,7 @@ prerequisites: |
   - Basic security best practices.
 summary: |
   Learn to implement and manage networking services in Windows Server 2019. Learn to deploy and manage DHCP, secure DNS, and implement IP Address Management (IPAM) and Web Application Proxy.
-iconUrl: /learn/achievements/windows-server-network-infrastructure.svg
+iconUrl: /training/achievements/windows-server-network-infrastructure.svg
 levels:
 - intermediate
 roles:
@@ -28,6 +28,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- infrastructure
 modules:
 - learn.wwl.deploy-manage-dhcp
 - learn.wwl.implement-windows-server-dns

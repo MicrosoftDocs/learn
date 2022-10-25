@@ -1,7 +1,7 @@
 ## Introduction
 
 > [!TIP]
-> Refer to [Set up your environment](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) before getting started on the exercises in this module.
+> Refer to [Set up your environment](/training/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) before getting started on the exercises in this module.
 
 The following image contains an illustration of the ProjectAnalyze activities:
 

@@ -33,7 +33,7 @@ public static getNumberOfCars(): number {
 }
 ```
 
-Instantiate the `Car` class as usual and then use the syntax `Car.getCars()` to return the number of instances.
+Instantiate the `Car` class as usual and then use the syntax `Car.getNumberOfCars()` to return the number of instances.
 
 ```typescript
 // Instantiate the Car object with all parameters

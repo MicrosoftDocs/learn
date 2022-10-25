@@ -18,13 +18,15 @@ abstract:  |
   - Learn about the basic elements of a program.
   - Learn about the software and tools used by professional developers.
 prerequisites: None
-iconUrl: /learn/achievements/student-evangelism/web-development-101-introduction.svg
+iconUrl: /training/achievements/student-evangelism/web-development-101-introduction.svg
 levels:
 - beginner
 roles:
 - student
 products:
 - vs
+subjects:
+- development-tools
 units:
 - learn.student-evangelism.web-development-101.introduction-to-programming.introduction
 - learn.student-evangelism.web-development-101.introduction-to-programming.what-is-programming

@@ -1,6 +1,6 @@
 Azure Logic Apps is a low-code/no-code development platform hosted as a serverless cloud service, which makes orchestrating connections between services and organizations simple.
 
-Recall in the bus-catching scenario, once the Azure Function detects that there is a bus entering or exiting the geofence, it would be ideal for the final solution to push a notification to the application user. One option in Azure to accomplish this is to use Azure Logic Apps. Azure Logic Apps has a large number of connectors so you can integrate with other services. For example, you can use Azure Logic Apps to send an SMS message or send an email from your Outlook or Gmail account. Before implementing the bus-catching solution, you need to learn about Azure Logic Apps.
+Recall in the bus-catching scenario, once the Azure Function detects that there's a bus entering or exiting the geofence, it would be ideal for the final solution to push a notification to the application user. One option in Azure to accomplish this is to use Azure Logic Apps. Azure Logic Apps has a large number of connectors so you can integrate with other services. For example, you can use Azure Logic Apps to send an SMS message or send an email from your Outlook or Gmail account. Before implementing the bus-catching solution, you need to learn about Azure Logic Apps.
 
 ## Automate tasks and workflows with no coding using Azure Logic Apps
 
@@ -8,7 +8,7 @@ Azure Logic Apps allows you to automate and orchestrate tasks and workflows when
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qhug]
 
-When comparing Azure Logic Apps and Azure Functions, besides Azure Logic Apps being low-code/no-code and Azure Functions being code-based, the primary difference is intent. Azure Functions is a serverless compute service, and Azure Logic Apps is intended to be a serverless orchestration service. You can call Azure Functions from Azure Logic Apps, and vice versa.
+When we compare Azure Logic Apps and Azure Functions, besides Azure Logic Apps being low-code/no-code and Azure Functions being code-based, the primary difference is intent. Azure Functions is a serverless compute service, and Azure Logic Apps is intended to be a serverless orchestration service. You can call Azure Functions from Azure Logic Apps, and vice versa.
 
 ## Connect to other services with Azure Logic Apps
 
@@ -38,4 +38,4 @@ Azure Logic Apps also has connectors for **Actions**, which means that once a Lo
 
 ### Send emails using the Outlook connector for Azure Logic Apps
 
-Azure Logic Apps also supports various connectors for Outlook around sending and receiving as well as tasks. In the bus-catching scenario, the Outlook connector will be used to create a connection to an email account and be able to send email notifications when a bus enters or exits a geofence. In the exercise, you will get to see how this connection is created, configured, and triggered.
+Azure Logic Apps also supports various connectors for Outlook around sending and receiving as well as tasks. In the bus-catching scenario, the Outlook connector will be used to create a connection to an email account and be able to send email notifications when a bus enters or exits a geofence. In the exercise, you'll get to see how this connection is created, configured, and triggered.

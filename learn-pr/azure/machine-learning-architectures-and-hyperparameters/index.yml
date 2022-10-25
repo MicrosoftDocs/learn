@@ -16,7 +16,7 @@ abstract: |
   - Learn how model architecture can affect performance
   -	Practice working with hyperparameters to improve training effectiveness
 prerequisites: Familiarity with machine learning models
-iconUrl: /learn/achievements/machine-learning/machine-learning-architectures-and-hyperparameters.svg
+iconUrl: /training/achievements/machine-learning/machine-learning-architectures-and-hyperparameters.svg
 levels: 
 - beginner
 roles: 
@@ -25,7 +25,9 @@ roles:
 - student
 products: 
 - azure
-units: 
+subjects:
+- architecture
+units:
 - learn.machinelearning.machine-learning-architectures-and-hyperparameters.introduction
 - learn.machinelearning.machine-learning-architectures-and-hyperparameters.decision-trees
 - learn.machinelearning.machine-learning-architectures-and-hyperparameters.exercise-decision-trees

@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   * Working experience with monitoring and logging cloud environments.
   * Conceptual knowledge of monitoring and logging.
-iconUrl: /learn/achievements/2-azure-monitor-on-azure-stack-hub.svg
+iconUrl: /training/achievements/2-azure-monitor-on-azure-stack-hub.svg
 levels:
 - advanced
 roles:
@@ -29,6 +29,8 @@ products:
 - azure
 - azure-stack
 - azure-stack-hub
+subjects:
+- infrastructure
 units:
 - learn.wwl.azure-monitor-azure-stack-hub.introduction
 - learn.wwl.azure-monitor-azure-stack-hub.azure-monitor

@@ -4,7 +4,7 @@ This section describes networking services in Azure that help protect your netwo
 
 [Azure DDoS Protection](/azure/ddos-protection/manage-ddos-protection) provides countermeasures against the most sophisticated DDoS threats. The service provides enhanced DDoS mitigation capabilities for your application and resources deployed in your virtual networks. Additionally, customers using Azure DDoS Protection have access to DDoS Rapid Response support to engage DDoS experts during an active attack.
 
-:::image type="content" source="../media/denial-protection.png" alt-text="Diagram of Azure DDoS.":::
+:::image type="content" source="../media/denial-protection.png" alt-text="Diagram of denial of service attacks.":::
 
 
 Use DDoS protection Standard when you need:
@@ -50,7 +50,7 @@ A WAF solution can react to a security threat faster by centrally patching a kno
 WAF can be deployed with Azure Application Gateway, Azure Front Door, and Azure Content Delivery Network (CDN) service from Microsoft. WAF on Azure CDN is currently under public preview. WAF has features that are customized for each specific service. 
 
 
-:::image type="content" source="../media/web-application-firewall-overview.png" alt-text="Diagram of Azure WAF.":::
+:::image type="content" source="../media/web-application-firewall-overview.png" alt-text="Diagram of Azure Web Application Firewall.":::
 
 
 ## Network security groups
@@ -86,7 +86,7 @@ Recommend Azure Bastion when you need to:
 
 - Eliminate exposing RDP ports, SSH ports, or public IP addresses for your internal VMs
 
-:::image type="content" source="../media/azure-bastion.png" alt-text="Diagram of Azure bastion deployed within an Azure Virtual Network.":::
+:::image type="content" source="../media/azure-bastion.png" alt-text="Diagram of Azure Bastion deployed within an Azure Virtual Network.":::
 
  
 ### Key security features

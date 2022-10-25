@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.consume-rest-services.exercise-consume-rest-web-service
+title: Exercise - Consume a REST service with HttpClient
+metadata:
+  unitType: exercise
+  title: "Exercise - Consume a REST service with HttpClient"
+  description: "Exercise - Consume a REST service with HttpClient"
+  ms.date: 04/29/2022
+  author: codemillmatt 
+  ms.author: masoucou 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+interactive: bash
+azureSandbox: true
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-exercise-consume-rest-web-service.md)]

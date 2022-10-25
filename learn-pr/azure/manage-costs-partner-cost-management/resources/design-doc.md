@@ -2,7 +2,7 @@
 
 ## Title
 
-Configure and manage costs as a Microsoft Partner by using Azure Cost Management 
+Configure and manage costs as a Microsoft Partner by using Microsoft Cost Management 
 
 ## Role(s)
 
@@ -14,20 +14,20 @@ Configure and manage costs as a Microsoft Partner by using Azure Cost Management
 
 ## Product(s)
 
-- Azure Cost Management + Billing
+- Microsoft Cost Management
 
 ## Prerequisites
 
-- A basic understanding of the Microsoft Customer Agreement, Azure Plan, and Azure Cost Management configuration.
+- A basic understanding of the Microsoft Customer Agreement, Azure Plan, and Microsoft Cost Management configuration.
 - You have confirmed your customers’ acceptance of the Microsoft Customer Agreement 
 - You have transitioned your customers to Azure plan 
-- You have enabled Azure Cost Management for your customers 
+- You have enabled Cost Management for your customers 
 - Familiarity with Azure billing and invoicing 
 - Familiarity with partner earned credits 
 
 ## Summary
 
-Reconcile your bill and analyze costs across your customers and resources by using Azure Cost Management as a partner. Determine which of your resources do not receive discounted pricing and manage costs through budgets to ensure your spending stays within defined limits. Enable your customers to use Azure Cost Management as well with Pay As You Go rates.
+Reconcile your bill and analyze costs across your customers and resources by using Cost Management as a partner. Determine which of your resources do not receive discounted pricing and manage costs through budgets to ensure your spending stays within defined limits. Enable your customers to use Cost Management as well with Pay As You Go rates.
 
 ## Learning objectives
 
@@ -55,7 +55,7 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-    You are a global admin or an admin agent for Fabrikam, a CSP partner who consults with law firms to provide solutions for them to move their infrastructure presence to the cloud. You have begun receiving bills and want to use Azure Cost Management to better understand, manage, and optimize your costs to ensure that they are kept in line. Your CEO expressed concern about the bill last month, which was $15 K larger than the previous month. He has asked you to analyze your company’s customers and resources to determine the primary cost drivers on your bill.  You also are interested in maximizing the Partner Earned Credits (PEC) that Fabrikam receives by identifying the resources across your customers that do not have the credit applied.
+    You are a global admin or an admin agent for Fabrikam, a CSP partner who consults with law firms to provide solutions for them to move their infrastructure presence to the cloud. You have begun receiving bills and want to use Cost Management to better understand, manage, and optimize your costs to ensure that they are kept in line. Your CEO expressed concern about the bill last month, which was $15 K larger than the previous month. He has asked you to analyze your company’s customers and resources to determine the primary cost drivers on your bill.  You also are interested in maximizing the Partner Earned Credits (PEC) that Fabrikam receives by identifying the resources across your customers that do not have the credit applied.
 
     One of your firms, Contoso, also reached out to you this week and wants to set budgets and thresholds that can turn down and automate actions on VMs when certain cost thresholds are exceeded. You decide to enable cost management for them to enable them to set budgets and manage costs at pay as you go retail rates. 
 

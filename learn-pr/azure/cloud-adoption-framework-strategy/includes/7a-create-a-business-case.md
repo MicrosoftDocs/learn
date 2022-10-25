@@ -51,18 +51,18 @@ The Calculator creates a match from Azure Services to create a high-level initia
 
 **Partner toolsets**: Microsoft Partners have access to tools in the [Azure Marketplace](https://azuremarketplace.microsoft.com/home?azure-portal=true) that can help create a migration cost analysis.
 
-**Solution assessments**: Get assistance from a Microsoft Solution Assessment expert or qualified partner as part of a [Solution Assessment engagement](https://www.microsoft.com/solutionassessments/solutionassessments.aspx?rtc=1?azure-portal=true).
+**Solution assessments**: Get assistance from a Microsoft Solution Assessment expert or qualified partner as part of a [Solution Assessment engagement](https://www.microsoft.com/solutionassessments/).
 
 **Azure Migration Program**: Join the [Azure Migration Program](https://azure.microsoft.com/migration/migration-program?azure-portal=true) to get the guidance and expert help you need at every stage of the cloud migration journey. Migrate infrastructure, databases, and apps, and move forward with confidence.
 
-## Learn about Azure with Microsoft Learn
+## Learn about Azure
 
-Many other Azure Learning paths on [Microsoft Learn](/learn?azure-portal=true) can help you to build your business case:
+Many other learning paths in [Microsoft Learn training](/training?azure-portal=true) can help you to build your business case:
 
-* [Control Azure spending and manage bills with Azure Cost Management + Billing](/learn/paths/control-spending-manage-bills?azure-portal=true)
-* [Microsoft Azure Well-Architected Framework—Cost Optimization](/learn/modules/azure-well-architected-cost-optimization?azure-portal=true)
-* [Plan and manage your Azure costs](/learn/modules/plan-manage-azure-costs?azure-portal=true).
-* [Analyze costs and create budgets with Azure Cost Management](/learn/modules/analyze-costs-create-budgets-azure-cost-management?azure-portal=true)
-* [Save money with Azure Reserved Instances](/learn/modules/save-money-with-azure-reserved-instances?azure-portal=true)
-* [Optimize Azure costs with data analysis in Power BI](/learn/modules/optimize-costs-data-analysis-powerbi?azure-portal=true)
-* [Configure and manage costs as a Microsoft partner by using Azure Cost Management](/learn/modules/manage-costs-partner-cost-management?azure-portal=true)
+* [Control Azure spending and manage bills with Microsoft Cost Management](/training/paths/control-spending-manage-bills?azure-portal=true)
+* [Microsoft Azure Well-Architected Framework—Cost Optimization](/training/modules/azure-well-architected-cost-optimization?azure-portal=true)
+* [Plan and manage your Azure costs](/training/modules/plan-manage-azure-costs?azure-portal=true).
+* [Analyze costs and create budgets with Microsoft Cost Management](/training/modules/analyze-costs-create-budgets-azure-cost-management?azure-portal=true)
+* [Save money with Azure Reserved Instances](/training/modules/save-money-with-azure-reserved-instances?azure-portal=true)
+* [Optimize Azure costs with data analysis in Power BI](/training/modules/optimize-costs-data-analysis-powerbi?azure-portal=true)
+* [Configure and manage costs as a Microsoft partner by using Microsoft Cost Management](/training/modules/manage-costs-partner-cost-management?azure-portal=true)

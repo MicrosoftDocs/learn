@@ -17,7 +17,7 @@ abstract: |
   -	Evaluate and prioritize AI investments. 
   -	Establish AI-related roles and responsibilities.
 prerequisites: None
-iconUrl: /learn/achievements/implement-ai-organization.svg
+iconUrl: /training/achievements/implement-ai-organization.svg
 levels: 
 - intermediate
 roles: 
@@ -27,7 +27,9 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- artificial-intelligence
+units:
 - learn-wwl.implement-ai-organization.introduction
 - learn-wwl.implement-ai-organization.manage-innovation
 - learn-wwl.implement-ai-organization.manage-innovation-video

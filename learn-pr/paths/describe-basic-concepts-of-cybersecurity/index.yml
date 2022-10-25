@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   Knowing the fundamentals of cybersecurity is a first step toward protecting against cyberthreats. In this learning path you will learn about cybersecurity concepts and ways to protect yourself and your business from cyberattacks.
-iconUrl: /learn/achievements/cybersecurity-basic-concepts.svg
+iconUrl: /training/achievements/cybersecurity-basic-concepts.svg
 levels:
 - beginner
 roles:
@@ -23,6 +23,8 @@ roles:
 products:
 - azure
 - m365
+subjects:
+- security
 modules:
 - learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations
 - learn.wwl.describe-concepts-of-cryptography

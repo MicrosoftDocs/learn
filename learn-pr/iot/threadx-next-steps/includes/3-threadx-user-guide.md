@@ -35,7 +35,7 @@ For example, the service that would cause a thread to sleep 20 timer ticks is `t
 
 ## Example of a ThreadX service description
 
-All ThreadX service descriptions are organized using the same format. For this example, we'll restrict our attention to the `tx_thread_sleep` service. For reference, you should access the [ThreadX user guide](https://docs.microsoft.com/azure/rtos/threadx/about-this-guide), go to Chapter 4, and then go to the `tx_thread_sleep` service. Following are the components of the `tx_thread_sleep` service.
+All ThreadX service descriptions are organized using the same format. For this example, we'll restrict our attention to the `tx_thread_sleep` service. For reference, you should access the [ThreadX user guide](/azure/rtos/threadx/about-this-guide), go to Chapter 4, and then go to the `tx_thread_sleep` service. Following are the components of the `tx_thread_sleep` service.
 
 |Component|Description|
 |-------------|-----|

@@ -4,10 +4,11 @@ metadata:
   title: Introduction
   description: "Introduction to planning your app navigation."
   ms.date: 05/01/2019
-  author: davidbritch
-  ms.author: dabritch
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
+  
 title: Introduction
 durationInMinutes: 2
 content: |

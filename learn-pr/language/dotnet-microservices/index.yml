@@ -27,13 +27,15 @@ prerequisites: |
   - Docker Desktop installed
   - Visual Studio Code installed
 ratingEnabled: true
-iconUrl: /learn/achievements/dotnet-microservices.svg
+iconUrl: /training/achievements/dotnet-microservices.svg
 levels:
 - beginner
 roles:
 - developer
 products:
 - dotnet
+subjects:
+- custom-app-development
 units:
 - learn.languages.dotnet-microservices.introduction
 - learn.languages.dotnet-microservices.what-are-microservices

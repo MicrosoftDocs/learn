@@ -17,13 +17,16 @@ abstract: |
   Methodologies for deployment using Microsoft Azure CLI commands, Azure PowerShell cmdlets, and Azure Resource Manager(ARM) templates.
 prerequisites: |
   Prior to taking this course, it is recommended that you have taken the Azure Administrator (AZ-103) or Azure Solutions Architect (AZ-300) exam, as well as SAP HANA or NetWeaver training.
-iconUrl: /learn/achievements/implementing-azure-vm-based-sap-solutions.svg
+iconUrl: /training/achievements/implementing-azure-vm-based-sap-solutions.svg
 levels:
 - advanced
 roles:
 - administrator
 products:
 - azure
+subjects:
+- data-engineering
+- virtual-machine
 units:
 - learn.wwl.implement-azure-vm-based-sap-solutions.introduction
 - learn.wwl.implement-azure-vm-based-sap-solutions.define-azure-vm-deployment-methodologies-sap-workloads

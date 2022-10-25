@@ -28,7 +28,7 @@ prerequisites:  |
      - [Package management](https://docs.python.org/3/installing/index.html)
      - [Virtual environments](https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments)
      - [Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
-iconUrl: /learn/achievements/django-generic-views.svg
+iconUrl: /training/achievements/django-generic-views.svg
 levels:
 - intermediate
 roles:
@@ -38,6 +38,8 @@ products:
 - azure
 - vs-code
 - azure-app-service
+subjects:
+- development-tools
 units:
 - learn.django.generic-views.introduction
 - learn.django.generic-views.exercise-setup

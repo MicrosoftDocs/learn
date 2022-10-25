@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.
-iconUrl: /learn/achievements/azure-architecture-fundamentals.svg
+iconUrl: /training/achievements/azure-architecture-fundamentals.svg
 levels:
 - beginner
 roles:
@@ -29,6 +29,8 @@ roles:
 products:
 - azure
 - azure-resource-manager
+subjects:
+- architecture
 units:
 - learn.azure.azure-architecture-fundamentals.introduction
 - learn.azure.azure-architecture-fundamentals.overview

@@ -76,31 +76,31 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
    For example, if your registry's login server is *yourregistryname.azurecr.io*, line 14 will look like this:
 
-   :::code language="yaml" source="code/6-workflow.yml" range="12-16" highlight="3" :::
+   :::code language="yaml" source="code/6-workflow.yml" range="16-20" highlight="3" :::
 
 1. At the bottom of the file, for the **To be added** comment, add the following lint job definition:
 
-   :::code language="yaml" source="code/6-workflow.yml" range="18-24" :::
+   :::code language="yaml" source="code/6-workflow.yml" range="22-28" :::
 
 ## Add a publish job to your workflow
 
 Now, you can add a second job to publish the module to your container registry.
 
-1. At the bottom of the *storage-account.yml* file, add the first part of the publish job's definition.
+1. At the bottom of the *module-storage-account.yml* file, add the first part of the publish job's definition.
 
-   :::code language="yaml" source="code/6-workflow.yml" range="26-34" :::
+   :::code language="yaml" source="code/6-workflow.yml" range="30-40" :::
 
    The steps check out the code from your repository and sign in to Azure.
 
 1. Below the code that you just added, add a step to read the version number from your module's *metadata.json* file and set it as an environment variable.
 
-   :::code language="yaml" source="code/6-workflow.yml" range="35-39" :::
+   :::code language="yaml" source="code/6-workflow.yml" range="41-45" :::
 
    The step runs a script that uses the jq command-line application to parse the JSON file.
 
 1. Below the step that you just created, add a step to publish the module to the registry.
 
-   :::code language="yaml" source="code/6-workflow.yml" range="40-47" :::
+   :::code language="yaml" source="code/6-workflow.yml" range="46-52" :::
 
    Notice that this step constructs the value of the `--target` argument dynamically. It combines the value of the registry server, the module name, and the version number.
 
@@ -108,9 +108,9 @@ Now, you can add a second job to publish the module to your container registry.
 
 ## Verify and commit your workflow definition
 
-1. Verify that your *storage_account_module.yml* file looks like the following example:
+1. Verify that your *module-storage-account.yml* file looks like the following example:
 
-   :::code language="yaml" source="code/6-workflow.yml" highlight="14, 19-47" :::
+   :::code language="yaml" source="code/6-workflow.yml" highlight="18, 23-52" :::
 
    If it doesn't, update it to match this example, and then save it.
 

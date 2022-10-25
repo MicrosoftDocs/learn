@@ -18,13 +18,13 @@ If you deal with large workloads whose demand varies and is unpredictable, scale
 
 ## Scaling options for scale sets
 
-Scale sets are designed for cost-effectiveness. New VM instances are created only when needed. A scale set can scale VMs either horizontally or vertically.
+Scale sets are designed for cost effectiveness. New VM instances are created only when needed. A scale set can scale VMs either horizontally or vertically.
 
 ### What is horizontal scaling?
 
 *Horizontal scaling* is the process of adding or removing several VMs in a scale set.
 
-Sometimes you might need to add or remove machines in a scale set, depending on demand. For example, you might not need to run some machines during periods of the week or day when demand is low. You could manually adjust the number of VMs in a scale set by increasing or decreasing the instance count. But in many cases, it's better to automatically add or remove VMs by using rules. The rules are based on metrics. They ensure that the right number of VMs are added, depending on the demand or schedule. 
+Sometimes you might need to add or remove machines in a scale set, depending on demand. For example, you might not need to run some machines during periods of the week or day when demand is low. You could manually adjust the number of VMs in a scale set by increasing or decreasing the instance count, but in many cases, it's better to automatically add or remove VMs by using rules. The rules are based on metrics. They ensure that the right number of VMs are added, depending on the demand or schedule.
 
 ### What is vertical scaling?
 
@@ -32,7 +32,7 @@ Sometimes you might need to add or remove machines in a scale set, depending on 
 
 In contrast to horizontal scaling, where new, identically sized VMs are added to or removed from a scale set, vertical scaling focuses on increasing the size of the VMs in the scale set.  
 
-For example, you might want to reduce the CPU performance of a group of VMs in a scale set.  In this case, you might not necessarily need to remove an entire group of machines. In scale sets, you create rules based on metrics. These rules automatically trigger an increase in the sizes of the VMs.  
+For example, you might want to reduce the CPU performance of a group of VMs in a scale set. In this case, you might not necessarily need to remove an entire group of machines. In scale sets, you create rules based on metrics. These rules automatically trigger an increase in the sizes of the VMs.  
 
 Vertical scaling typically requires rebooting the affected VMs in the scale set. This process can lead to temporary degraded performance across the scale set while the VMs restart.
 
@@ -48,27 +48,27 @@ Both of these options address the requirement to scale while managing associated
 
 ### Scheduled scaling
 
-Suppose you're part of the DevOps team for a large food delivery company. Friday night is typically your busiest time. Conversely, 7 AM on Wednesday is generally your quietest time. 
+Suppose you're part of the DevOps team for a large food delivery company. Friday night is typically your busiest time. Conversely, 7 AM on Wednesday is generally your quietest time.
 
 Azure charges based on the consumption of resources, so don't run services you don't need. If you need 100 web servers to meet your demand on a Friday night, you're happy to pay for them. But if you need only two servers on a Wednesday morning, you don't want to pay for the 98 idle servers. To manage your costs while fulfilling operational requirements, consider using scheduled scaling.
 
 ### Autoscaling
 
-Suppose you're on the DevOps team for a popular footwear company. As a product launch approaches, you think you'll see significant demand for your service. However, the demand spike might be unpredictable and hard to quantify. You want your service to meet demand by scaling horizontally as current resources are used. 
+Suppose you're on the DevOps team for a popular footwear company. As a product launch approaches, you think you'll see significant demand for your service. However, the demand spike might be unpredictable and hard to quantify. You want your service to meet demand by scaling horizontally as current resources are used.
 
-For this scenario, use metrics-based autoscaling. This type of autoscaling scales out your infrastructure as demand rises. It scales back in when demand declines.
+For this scenario, you can use metrics-based autoscaling. This type of autoscaling scales out your infrastructure as demand rises. It scales back in when demand declines.
 
 ## Reducing costs by using Spot virtual machines
 
 Azure Spot Virtual Machines allows you to take advantage of our unused capacity at a significant cost savings. At any point in time when Azure needs the capacity back, the Azure infrastructure will evict Azure Spot Virtual Machines. Therefore, Azure Spot Virtual Machines are great for workloads that can handle interruptions like batch processing jobs, dev/test environments, large compute workloads, and more.
 
-The amount of available capacity can vary based on size, region, time of day, and more. When deploying Azure Spot Virtual Machines, Azure will allocate the VMs if there is capacity available, but there is no SLA for these VMs. An Azure Spot Virtual Machine offers no high availability guarantees. At any point in time when Azure needs the capacity back, the Azure infrastructure will evict Azure Spot Virtual Machines with 30 seconds notice.
+The amount of available capacity can vary based on size, region, time of day, and more. When deploying Azure Spot Virtual Machines, Azure will allocate the VMs if there is capacity available, but there's no SLA for these VMs. An Azure Spot Virtual Machine offers no high-availability guarantees. At any point in time when Azure needs the capacity back, the Azure infrastructure will evict Azure Spot Virtual Machines with 30 seconds notice.
 
 When Azure needs the computing power again, you'll receive a notification about the VM that will be removed from your scale set. If you need to clean up or gracefully exit code on your VM, you can use Azure Scheduled Events to react to the notification within the VM. You can also make the scale set try to create another VM to replace the one that's being removed. The creation of the new VM is, however, not guaranteed.
 
 With Azure Spot Virtual Machines, you can specify two kinds of removal through setting an eviction policy:
 
 - **Deallocate** policy (default): The VM is stopped. The processing and memory resources are deallocated. Disks are left intact and data is kept. You're charged for the disk space while the VM isn't running.  
-- **Delete** policy: The entire VM is removed, including all of the underlying disks,so you will not continue to be charged for storage. 
+- **Delete** policy: The entire VM is removed, including all of the underlying disks, so you won't continue to be charged for storage.
 
 Azure Spot Virtual Machines are useful for workloads that run with interruptions or when you need larger VMs at a much-reduced cost. Just keep in mind that you can't control when a VM might be removed.

@@ -17,7 +17,7 @@ abstract: |
  - Learn about the user impact of inaccessible products such as websites and apps.
  - Explore the concept of inclusive design and how it applies in planning and delivering accessible products.
 prerequisites: None
-iconUrl: /learn/achievements/digital-accessibility.svg
+iconUrl: /training/achievements/digital-accessibility.svg
 levels:
 - beginner
 roles:
@@ -25,6 +25,8 @@ roles:
 - student
 products:
 - m365
+subjects:
+- accessibility
 units:
 - learn.digital-accessibility.web-development
 - learn.digital-accessibility.app-development

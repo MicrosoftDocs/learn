@@ -28,10 +28,10 @@ To measure temperature and humidity, you'll use a commonly available low-cost en
 
 :::image type="content" source="../media/bme280-examples.png" alt-text="Two examples of available BME280 breakouts." lightbox="../media/bme280-examples.png":::
 
-Your BME280 sensor chip is already installed on a breakout board. All you need to do is connect the breakout board to the Inter-Integrated Circuit (I2C) bus on the Raspberry Pi. The I2C bus is accessible on the GPIO header.
+Your BME280 sensor chip is already installed on a breakout board. All you need to do is connect the breakout board to the Inter-Integrated Circuit (I<sup>2</sup>C) bus on the Raspberry Pi. The I<sup>2</sup>C bus is accessible on the GPIO header.
 
 > [!NOTE]
-> There are many manufacturers of BME280 breakouts. Most designs are similar, and the manufacturer shouldn't make any difference to the functionality. This module was built with the Adafruit example in the prerequisites. Ensure your BME280 breakout includes an Inter-Integrated Circuit (I2C) interface.
+> There are many manufacturers of BME280 breakouts. Most designs are similar, and the manufacturer shouldn't make any difference to the functionality. This module was built with the Adafruit example in the prerequisites. Ensure your BME280 breakout includes an Inter-Integrated Circuit (I<sup>2</sup>C) interface.
 
 > [!TIP]
 > Most BME280 breakouts are sold with the pin header unattached. As a consequence, most require soldering to assemble. If you don't know how to solder, don't be discouraged! Soldering isn't as hard as you might think! There's a plethora of [tutorials and videos](https://www.bing.com/search?q=Soldering+Tutorial) to get you started.

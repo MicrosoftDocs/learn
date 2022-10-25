@@ -1,4 +1,7 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 You'll be working on the planetarium **Astronomy** app. There's some starter code to get you going. Your job is to add stack navigation by using a `NavigationPage` to let the user take a linear path through several pages, and then back again.
+
 
 ## Open the starter solution
 

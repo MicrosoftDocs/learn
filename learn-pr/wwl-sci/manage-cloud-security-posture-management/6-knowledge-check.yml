@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-cloud-security-posture-management.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/20/2022
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "To automatically remediate a recommendation, select which option?"
+    choices:
+    - content: "Respond"
+      isCorrect: false
+      explanation: "Incorrect. The fix option will start the process to automatically remediate."
+    - content: "Remediate"
+      isCorrect: false
+      explanation: "Incorrect. The fix option will start the process to automatically remediate."
+    - content: "Fix"
+      isCorrect: true
+      explanation: "Correct. The fix option will start the process to automatically remediate."
+  - content: "By default, which security policy is assigned to each subscription?"
+    choices:
+    - content: "SOC TSP"
+      isCorrect: false
+      explanation: "Incorrect.  Azure Security Benchmark is the default."
+    - content: "Azure Security Benchmark"
+      isCorrect: true
+      explanation: "Correct.  Azure Security Benchmark is the default."
+    - content: "ISO 27001:2013"
+      isCorrect: false
+      explanation: "Incorrect.  Azure Security Benchmark is the default."
+  - content: "Defender for Cloud initiatives are defined in?"
+    choices:
+    - content: "Azure Policy"
+      isCorrect: true
+      explanation: "Correct.  Azure Policy is used to define initiatives."
+    - content: "Secure Score"
+      isCorrect: false
+      explanation: "Incorrect.  Azure Policy is used to define initiatives."
+    - content: "Workbooks"
+      isCorrect: false
+      explanation: "Incorrect.  Azure Policy is used to define initiatives."

@@ -3,9 +3,9 @@ uid: learn.github.upload-project-github
 metadata:
   title: "Upload your project by using GitHub best practices"
   description: Learn to upload your existing project to GitHub.
-  ms.date: 06/26/2020
-  author: tpetchel
-  ms.author: thpetche
+  ms.date: 10/19/2022
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Upload your project by using GitHub best practices"
@@ -18,7 +18,7 @@ abstract: |
   - Identify important next steps to manage your repository and add community involvement
 prerequisites: |
   - A GitHub account
-iconUrl: /learn/achievements/github/upload-project-github.svg
+iconUrl: /training/achievements/github/upload-project-github.svg
 ratingEnabled: true
 levels:
 - beginner
@@ -30,6 +30,9 @@ roles:
 products:
 - github
 - azure
+subjects:
+- development-tools
+- collaboration
 units:
 - learn.github.upload-project-github.1-introduction
 - learn.github.upload-project-github.2-how-to-upload-to-github

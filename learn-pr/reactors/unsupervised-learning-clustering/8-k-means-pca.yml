@@ -5,8 +5,8 @@ metadata:
   title: k-means and PCA
   description: Learn how k-means and PCA are different.
   ms.date: 05/15/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen

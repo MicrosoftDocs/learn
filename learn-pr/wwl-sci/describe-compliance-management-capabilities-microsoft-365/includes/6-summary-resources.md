@@ -1,6 +1,4 @@
-You've learned about the various tools provided by Microsoft 365 to manage compliance for your organization. You explored the compliance portal, which enables organizations to manage their compliance needs.  You learned how Compliance Manager and compliance score can help organizations manage, simplify, and improve compliance across their organization.
-
-Without these tools, organizations couldn't manage compliance, and they would be at risk of not meeting required legal and regulatory standards. With these tools, they can stay in line with compliance requirements.
+You've learned about the various tools provided by Microsoft Purview to manage compliance for your organization. You explored the compliance portal, which enables organizations to manage their compliance needs.  You learned how Compliance Manager and compliance score can help organizations manage, simplify, and improve compliance across their organization.
 
 Now that you’ve completed this module, you should be able to:
 

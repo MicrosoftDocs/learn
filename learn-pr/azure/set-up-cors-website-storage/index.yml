@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Knowledge of the Azure Storage Services
   - Familiarity with REST APIs, the Azure CLI, and PowerShell
-iconUrl: /learn/achievements/setup-cors-for-your-website-and-storage-assets.svg
+iconUrl: /training/achievements/setup-cors-for-your-website-and-storage-assets.svg
 levels:
 - beginner
 roles:
@@ -29,6 +29,8 @@ products:
 - azure-clis
 - azure-cloud-shell
 - azure-storage
+subjects:
+- storage
 units:
 - learn.azure.set-up-cors-website-storage.1-introduction
 - learn.azure.set-up-cors-website-storage.2-determine-whether-you-need-cors-on-your-azure-storage-services

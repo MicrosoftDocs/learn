@@ -1,10 +1,13 @@
-Soon after launching the setup script, the [Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor) opens the starter solution. The editor opens to the *:::no-loc text="~/clouddrive/aspnet-learn/src/":::* directory. You can investigate the solution while the script continues to deploy the Docker containers to Azure Kubernetes Service (AKS). While doing so, the script will continue to run.
-
-[!INCLUDE[reconnect to Azure Cloud Shell](../../includes/microservices/reconnect-to-cloud-shell-note.md)]
+You can investigate the solution while the script continues to deploy the Docker containers to Azure Kubernetes Service (AKS). While doing so, the script will continue to run.
 
 ## Review code
 
-The following *:::no-loc text="src":::* subdirectories contain .NET Core projects, each of which is containerized and deployed to AKS:
+Review the directories in the explorer pane in the IDE. Relative to the workspace root, the files for this module are located in *modules/microservices-resiliency-aspnet-core*.
+
+> [!IMPORTANT]
+> For brevity, all directory paths described in this module are relative to the *modules/microservices-resiliency-aspnet-core* directory.
+
+The following subdirectories located in *src* contain .NET projects, each of which is containerized and deployed to AKS:
 
 | Project directory | Description |
 |-------------------|-------------|
@@ -15,7 +18,7 @@ The following *:::no-loc text="src":::* subdirectories contain .NET Core project
 
 ## Verify deployment to AKS
 
-After the app has deployed to AKS, you'll see a variation of the following message in the command shell:
+After the app has deployed to AKS, you'll see a variation of the following message in the terminal:
 
 ```console
 The eShop-Learn application has been deployed to "http://203.0.113.55" (IP: 203.0.113.55).
@@ -27,30 +30,29 @@ You can begin exploring these services (when ready):
 ```
 
 > [!TIP]
-> To display these URLs again, run the following command:
->
-> ```bash
-> cat ~/clouddrive/aspnet-learn/deployment-urls.txt
-> ```
+> This output can be found in *modules/microservices-resiliency-aspnet-core/deployment-urls.txt*.
 
 Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
 
-1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. A green checkmark icon denotes a healthy service. The page refreshes automatically, every 10 seconds.
+1. Select the **General application status** link in the terminal to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page is designed to refresh automatically, every 10 seconds.
+
+    > [!IMPORTANT]
+    > If the WebStatus isn't automatically refreshing, it's due to an issue with the container image used for WebStatus. To work around the issue, manually refresh the WebStatus page periodically.
 
     :::image type="content" source="../media/4-verify-deployment/health-checks-status-page.png" alt-text="health checks status dashboard." border="true" lightbox="../media/4-verify-deployment/health-checks-status-page.png":::
 
     > [!NOTE]
-    > While the app is starting up, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
+    > While the app is starting up, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **Centralized logging** URL, are available before the other endpoints.
 
-1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
+1. After all the services are healthy, select the **Web SPA application** link in the terminal to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
     :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app." border="true" lightbox="../../media/microservices/eshop-spa.png":::
 
 1. Complete a purchase as follows:
-    1. Select the **:::no-loc text="LOGIN":::** link in the upper right to sign into the app. The credentials are provided on the page. Select the **:::no-loc text="Remember me?":::** check box to avoid signing in again.
-    1. Add the **:::no-loc text=".NET BLUE HOODIE":::** to the shopping bag by selecting the image.
+    1. Select the **LOGIN** link in the upper right to sign into the app. The credentials are provided on the page. Select the **:::no-loc text="Remember me?":::** check box to avoid signing in again.
+    1. Add the **.NET BLUE HOODIE** to the shopping bag by selecting the image.
     1. Select the shopping bag icon in the upper right.
-    1. Select **:::no-loc text="CHECKOUT":::**, and then select **:::no-loc text="PLACE ORDER":::** to complete the purchase.
+    1. Select **CHECKOUT**, and then select **PLACE ORDER** to complete the purchase.
 
     :::image type="content" source="../../media/microservices/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie." border="true" lightbox="../../media/microservices/eshop-spa-shopping-bag.png":::
 
@@ -85,7 +87,7 @@ This configuration causes the next two requests for the *:::no-loc text="DISC-10
 1. Select the **:::no-loc text="APPLY":::** button. You'll receive the message **:::no-loc text="ERROR: 500 - Internal Server Error!":::**.
 1. Select the **:::no-loc text="APPLY":::** button again. You'll receive the same message once more.
 1. Select the **:::no-loc text="APPLY":::** button for a third time. This time, the code validation succeeds and the 10 US dollar (USD) discount is applied to the order.
-1. Select the **:::no-loc text="Centralized logging":::** link in the command shell to view the Seq logs.
+1. Select the **:::no-loc text="Centralized logging":::** link in the terminal (or find the URL in *deployment-urls.txt*) to view the Seq logs.
 
 In the two failed attempts to apply the *:::no-loc text="DISC-10":::* code, notice that you received the error message immediately. Check the log traces. You'll see a variation of the following output:
 

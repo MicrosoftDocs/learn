@@ -16,13 +16,16 @@ abstract: |
   - Outline data-engineering practices.
   - Explore the high-level process for designing a data-engineering project.
 prerequisites: None
-iconUrl: /learn/achievements/data-ai/data-engineering-processes-badge.svg
+iconUrl: /training/achievements/data-ai/data-engineering-processes-badge.svg
 levels:
 - beginner
 roles:
 - data-engineer
 products:
 - azure
+subjects:
+- architecture
+- cloud-computing
 units:
 - learn.data-ai.data-engineering-processes.introduction
 - learn.data-ai.data-engineering-processes.roles-and-responsibilities

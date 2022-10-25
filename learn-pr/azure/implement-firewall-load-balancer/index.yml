@@ -20,7 +20,7 @@ prerequisites: |
   - General familiarity with software defined networking concepts
   - General familiarity with Software Defined Networking (SDN) on Azure Stack HCI 
   - Experience in implementing Azure Stack HCI
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - advanced
 roles:
@@ -31,6 +31,8 @@ roles:
 products:
   - azure
   - azure-stack-hci
+subjects:
+- storage
 units:
 - learn.azure.implement-firewall-load-balancer.1-introduction
 - learn.azure.implement-firewall-load-balancer.2-describe-datacenter-firewall-azure-stack-hci

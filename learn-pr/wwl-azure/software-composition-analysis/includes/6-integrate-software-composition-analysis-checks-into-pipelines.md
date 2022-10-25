@@ -10,21 +10,21 @@ DevOps teams can submit proposed changes to an application's (main) codebase usi
 
 Azure Marketplace extensions that help integrate scans during PRs include:
 
- -  [WhiteSource](https://www.whitesourcesoftware.com/). Helps validate dependencies with its binary fingerprinting.
+ -  [Mend](https://www.mend.io/). Helps validate dependencies with its binary fingerprinting.
  -  [Checkmarx](https://www.checkmarx.com/). Provides an incremental scan of changes.
  -  [Veracode](https://www.veracode.com/). Implements the concept of a developer sandbox.
  -  [Black Duck by Synopsis](https://www.blackducksoftware.com/). An auditing tool for open-source code to help identify, fix, and manage compliance.
 
-These extensions allow developers to experiment with changes before submitting them as part of a PR.
+These extensions allow developers to experiment with changes before submitting them as a PR.
 
 ## Build and release definition code scan, analysis, and integration
 
 Developers need to optimize CI for speed to get immediate feedback about build issues. Code scanning can be performed quickly enough to integrate the CI build definition, preventing a broken build. It enables developers to restore a build's status to ready/ green by fixing potential issues immediately.
 
-At the same time, CD needs to be thorough. In Azure DevOps, the CD is typically managed through release definitions (which progress the build output across environments) or other build definitions.
+At the same time, the CD needs to be thorough. In Azure DevOps, the CD is typically managed through release definitions (which progress the build output across environments) or other build definitions.
 
 Build definitions can be scheduled (daily) or triggered with each commit. In either case, the build definition can do a longer static analysis scan (as illustrated in the following image).
 
 You can scan the complete code project and review any errors or warnings offline without blocking the CI flow.
 
-:::image type="content" source="../media/workflow-diagram-build-definition-7149d684.png" alt-text="Workflow diagram outlining how a build definition can trigger a static analysis scan of source code.":::
+:::image type="content" source="../media/workflow-diagram-build-definition-7149d684.png" alt-text="Diagram showing a workflow outlining how a build definition can trigger a static analysis scan of source code.":::

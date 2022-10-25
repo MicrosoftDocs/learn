@@ -1,4 +1,4 @@
-To configure an Azure Function to use an Azure Cosmos DB SQL API binding, you should first create an app setting in the function instance with the connection string of the Azure Cosmos DB account. If you are using the Azure portal, this can be done automatically on your behalf. Once you have the app setting with the connection string, you can
+To configure an Azure Function to use an Azure Cosmos DB for NoSQL binding, you should first create an app setting in the function instance with the connection string of the Azure Cosmos DB account. If you are using the Azure portal, this can be done automatically on your behalf. Once you have the app setting with the connection string, you can leverage the setting in bindings for your Azure Function.
 
 > [!NOTE]
 > The following examples assume that an app setting named **cosmosdbsqlconnstr** is already configured in the function instance with the connection string of the Azure Cosmos DB account.
@@ -13,7 +13,7 @@ The function.json file is the configuration file for all bindings within a funct
 
 ## Trigger function on changes in the change feed
 
-Configuring the Azure Cosmos DB SQL API trigger requires a JSON object within the bindings array. This object contains various properties that you can configure to change the behavior of the trigger. These properties include, but are not limited to:
+Configuring the Azure Cosmos DB for NoSQL trigger requires a JSON object within the bindings array. This object contains various properties that you can configure to change the behavior of the trigger. These properties include, but are not limited to:
 
 | **Property** | **Description** |
 | ---: | :--- |
@@ -49,7 +49,7 @@ The bindings array can optionally have multiple input bindings within the bindin
 
 ### Point read input binding
 
-A point read input bindings uses an item's unique identifier and partition key value to perform a quick read operation. This configuration object only differs from the trigger with a few changes to the properties:
+A point read input binding uses an item's unique identifier and partition key value to perform a quick read operation. This configuration object only differs from the trigger with a few changes to the properties:
 
 | **Property** | **Description** |
 | ---: | :--- |
@@ -86,7 +86,7 @@ A SQL query input binding uses a SQL query to look up multiple items and provide
 | ---: | :--- |
 | **sqlQuery** | SQL query used to look up multiple items |
 
-Included here is an example of this type of input bindings that performs a SQL query to return a subset of items from the container with only a few fields included in the results.
+Included here is an example of this type of input binding that performs a SQL query to return a subset of items from the container with only a few fields included in the results.
 
 ```json
 {

@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 The design for the app you'll create is a form that's used to collect project information. It includes an image for the company, an entry for the project name, and a button to submit the project to the database.
 
 ## Screen reader narration

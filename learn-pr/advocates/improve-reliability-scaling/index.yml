@@ -26,7 +26,7 @@ abstract: |
       decoupling, queues, in-memory caching and database sharding
   -   Learn about the Azure tools that make it possible to take your
       application or service global
-iconUrl: /learn/achievements/improve-reliability-scaling.svg
+iconUrl: /training/achievements/improve-reliability-scaling.svg
 levels:
 - beginner
 roles:
@@ -37,6 +37,8 @@ roles:
 products:
 - azure
 prerequisites: None
+subjects:
+- site-reliability-engineering
 units:
 - learn.improve-reliability-scaling.1-introduction
 - learn.improve-reliability-scaling.2-definition

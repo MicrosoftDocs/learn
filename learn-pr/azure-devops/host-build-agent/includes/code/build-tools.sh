@@ -3,7 +3,7 @@ set -e
 
 # Select a default .NET version if one is not specified
 if [ -z "$DOTNET_VERSION" ]; then
-  DOTNET_VERSION=5.0.203
+  DOTNET_VERSION=6.0.300
 fi
 
 # Add the Node.js PPA so that we can install the latest version

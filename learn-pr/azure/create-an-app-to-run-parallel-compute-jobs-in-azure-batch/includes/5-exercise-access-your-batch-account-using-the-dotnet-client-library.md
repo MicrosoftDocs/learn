@@ -24,7 +24,7 @@ You'll complete the remaining exercises in this module in the Cloud Shell.
     dotnet run
     ```
 
-    If you've successfully create the console app, you should see the following printed to the console:
+    If you've successfully created the console app, you should see the following printed to the console:
 
     ```bash
     Hello World!
@@ -112,9 +112,7 @@ You'll complete the remaining exercises in this module in the Cloud Shell.
 
     Read through the above code and comments. The console app imports the Microsoft.Azure.Batch client library to add Azure Batch features. Using the environment variables you stored in the previous steps, the app opens a connection to the Batch account you created in the Azure portal. The batch client can then query properties of the services in the batch. The example code iterates through the application packages, showing the details of the ffmpeg app you uploaded.
 
-1. Select the ellipses in the top-right corner of the code editor.
-
-1. Select **Close Editor**, and in the dialog select **Save**.
+1. In the code editor, right-click and select **Save**, and then select **Quit**.
 
 1. In the Cloud Shell, compile and run the app with the following command.
 

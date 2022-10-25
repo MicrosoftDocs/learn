@@ -4,20 +4,19 @@ To make sure that the snapshot script runs successfully, make sure that Perl is 
 
 ```bash
 perl –v
-
 ```
 
 ## Set up storage snapshots
 
 To set up storage snapshots with HANA Large Instances, follow these steps:
 
-1.  Install the SAP HANA HDB client.
-2.  Modify the **/etc/ssh/ssh\_config** to add the line `MACs hmac-sha1`
-3.  Create an SAP HANA backup user account on the leading node for each SAP HANA instance you run, if applicable.
-4.  Install the SAP HANA HDB client on all the SAP HANA Large Instances servers.
-5.  On the first SAP HANA Large Instances server of each region, create a public key to access the underlying storage infrastructure that controls snapshot creation.
-6.  Copy the scripts and configuration file from GitHub to the location of hdbsql in the SAP HANA installation.
-7.  Modify the HANABackupDetails.txt file as necessary for the appropriate customer specifications.
+1. Install the SAP HANA HDB client.
+2. Modify the **/etc/ssh/ssh\_config** to add the line `MACs hmac-sha1`
+3. Create an SAP HANA backup user account on the leading node for each SAP HANA instance you run, if applicable.
+4. Install the SAP HANA HDB client on all the SAP HANA Large Instances servers.
+5. On the first SAP HANA Large Instances server of each region, create a public key to access the underlying storage infrastructure that controls snapshot creation.
+6. Copy the scripts and configuration file from GitHub to the location of hdbsql in the SAP HANA installation.
+7. Modify the HANABackupDetails.txt file as necessary for the appropriate customer specifications.
 
 If you run an MCOD scenario with multiple SAP HANA instances on one HANA Large Instance unit, you have separate storage volumes provisioned for each of the SAP HANA instances.
 
@@ -62,9 +61,9 @@ For details, refer to the **Perform snapshot backup - azure\_hana\_backup** sect
 
 When the script azure\_hana\_backup runs, it creates the storage snapshot in the following three phases:
 
-1.  It runs an SAP HANA snapshot.
-2.  It runs a storage snapshot.
-3.  It removes the SAP HANA snapshot that was created before the storage snapshot ran.
+1. It runs an SAP HANA snapshot.
+2. It runs a storage snapshot.
+3. It removes the SAP HANA snapshot that was created before the storage snapshot ran.
 
 To run the script, call it from the HDB executable folder to which it was copied.
 

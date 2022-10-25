@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.custom-name-entity-recognition.tag-your-data
+title: Label your data
+metadata:
+  title: 3-tag-your-data
+  description: "Label your data"
+  ms.date: 09/01/2022
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-tag-your-data.md)]

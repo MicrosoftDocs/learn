@@ -6,7 +6,7 @@ In this module, you'll write a program that searches through folders for sales f
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+By the end of this module, you'll be able to:
 
 - Work with directories
 - Create and delete files

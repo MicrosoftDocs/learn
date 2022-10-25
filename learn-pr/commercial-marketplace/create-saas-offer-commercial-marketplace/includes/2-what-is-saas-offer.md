@@ -1,10 +1,10 @@
 ## SaaS offers in the commercial marketplace
 
-When you publish your SaaS application to the Microsoft commercial marketplace, it’s called a SaaS offer. Customers can find SaaS offers in both of the commercial marketplace online stores—[**Azure Marketplace**](https://azuremarketplace.microsoft.com/) and [**Microsoft AppSource**](https://appsource.microsoft.com/). Your application’s placement in one or both online stores depends on the kind of service the application provides and the industries it was built to serve.
+When you publish your SaaS application to the Microsoft commercial marketplace, it’s called a SaaS offer. Customers can find SaaS offers in both of the commercial marketplace online stores, [**Azure Marketplace**](https://azuremarketplace.microsoft.com/) and [**Microsoft AppSource**](https://appsource.microsoft.com/). Your application’s placement in one or both online stores depends on the kind of service the application provides and the industries it was built to serve.
 
 IT-focused SaaS solutions are placed in Azure Marketplace, including the Azure Marketplace experience in the Azure portal. These applications help customers build, run, analyze, and manage their workloads in the cloud.
 
-Business-oriented SaaS applications are typically found in Microsoft AppSource. These applications help customers run their businesses and include software built to serve specific industries such as financial services, healthcare, and manufacturing.
+Business-oriented SaaS applications are typically found in Microsoft AppSource. These applications help customers run their businesses, and include software built to serve specific industries such as financial services, healthcare, and manufacturing.
 
 ### Publishing options for your SaaS offer
 
@@ -23,7 +23,7 @@ When asked if you'd like to sell through Microsoft, you’ll have the following 
 
 #### Listing through the commercial marketplace
 
-If you decide not to sell through Microsoft, you’ll have three options to list your application in the online stores—[**Azure Marketplace**](https://azuremarketplace.microsoft.com/) and [**Microsoft AppSource**](https://appsource.microsoft.com/). Your choice will determine how customers can learn more about your offer and engage with you to purchase a subscription. The option you choose will be indicated to customers with a call-to-action (CTA), which is the blue button that customers will click on your product’s page in the online stores.
+If you decide not to sell through Microsoft, you’ll have three options to list your application in the online stores, [**Azure Marketplace**](https://azuremarketplace.microsoft.com/) and [**Microsoft AppSource**](https://appsource.microsoft.com/). Your choice will determine how customers can learn more about your offer and engage with you to purchase a subscription. The option you choose will be indicated to customers with a call-to-action (CTA), which is the blue button that customers will click on your product’s page in the online stores.
 
 :::image type="content" source="../media/3-marketplace-cta.png" alt-text="Screenshot of a product listing from Azure Marketplace with emphasis on the free trial button.":::
 
@@ -40,13 +40,13 @@ You'll have a few options to choose from for your listing type:
 
 #### Sell through Microsoft
 
-When you choose to sell your offer through Microsoft, it’s called a **transact offer**. Customers acquire these offers directly from the commercial marketplace and Microsoft facilitates payments on your behalf. As the software provider, you set the price for your SaaS application, Microsoft bills your customers, and we automatically pay you after withholding the marketplace service fee.
+When you choose to sell your offer through Microsoft, it’s called a **transact offer**. Customers acquire these offers directly from the commercial marketplace, and Microsoft facilitates payments on your behalf. As the software provider, you set the price for your SaaS application, Microsoft bills your customers, and we automatically pay you after withholding the marketplace service fee.
 
 Choosing to sell your offer through Microsoft is an important decision that has a significant impact on the following:
 
 - **Technical configuration of your offer**: When you sell through Microsoft, you will be required to complete the technical configuration step of the publishing process in Partner Center. The technical information you provide integrates your offer with the commercial marketplace to provide a better experience for you and your customers. We’ll cover SaaS offer technical components in more detail later in this module.
 
-- **Customer experience**: When you sell through Microsoft, it’s easier for your customers to try, buy, and deploy your application from the commercial marketplace. Customers can activate a free software trial and purchase your solution directly from Microsoft AppSource or Azure Marketplace, without having to get in touch with anyone from your organization. Because many customers use the commercial marketplace to streamline their software purchases, we recommend that software vendors sell through Microsoft to provide a better experience for your customers.
+- **Customer experience**: When you sell through Microsoft, it’s easier for your customers to try, buy, and deploy your application from the commercial marketplace. Customers can activate a free software trial and purchase your solution directly from Microsoft AppSource or Azure Marketplace without having to get in touch with anyone from your organization. Because many customers use the commercial marketplace to streamline their software purchases, we recommend that software vendors sell through Microsoft to provide a better experience for your customers.
 
 - **Other commercial marketplace benefits**: When you sell through Microsoft, you get access to other commercial marketplace benefits for publishers. You’ll get to take advantage of benefits including:
 
@@ -58,4 +58,4 @@ Choosing to sell your offer through Microsoft is an important decision that has 
 
 ### Summary
 
-Now that you understand where customers can find your SaaS offer and the different ways that you can publish it to the commercial marketplace, we’ll turn our attention to some of the considerations you should take before you publish. We’ll discuss some important SaaS offer concepts that will help you determine how you want to use the commercial marketplace to sell your application.
+Now that you understand where customers can find your SaaS offer and the different ways that you can publish it to the commercial marketplace, we’ll turn our attention to some of the considerations you should take before you publish. We’ll discuss some important SaaS-offer concepts that will help you determine how you want to use the commercial marketplace to sell your application.

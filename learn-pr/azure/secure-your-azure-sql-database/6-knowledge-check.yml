@@ -4,8 +4,9 @@ metadata:
   title: Knowledge check
   description: Test your knowledge 
   ms.date: 11/09/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: VanMSFT
+  ms.author: vanto
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Knowledge check

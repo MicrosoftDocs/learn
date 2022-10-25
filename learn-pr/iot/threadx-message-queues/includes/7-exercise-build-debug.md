@@ -3,7 +3,7 @@
 *ProjectMessageQueues.c* contains three threads and two queues, where one of the threads sends messages to the queues. The other two threads are waiting for messages from the queues, and they receive them as they're sent. You get to observe the behavior of the queues and the threads, and then modify the project by adding one thread and one queue.
 
 > [!TIP]
-> Refer to [Set up your environment](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) before getting started on the exercises in this module.
+> Refer to [Set up your environment](/training/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) before getting started on the exercises in this module.
 
 ## Use GitHub Codespaces
 
@@ -43,12 +43,13 @@ The following diagram contains a description of the thread activities with the q
 
 > [!NOTE]
 > The building blocks described in a previous unit contain tips about the modifications you need, summarized below:
-> - [Building block 1, part 2](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-1-part-2) - Add two counters, one thread, one queue, and one prototype
-> - [Building block 3, part 1](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-3-part-1) - Add one stack pointer and one queue pointer
-> - [Building block 3, part 2](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-3-part-2) - Allocate stack space, create another thread, queue space create another queue
-> - [Building block 4 `dispatcher thread entry`](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-4-dispatcher-thread-entry) - Increment message counter, and send messages to the new queue with a sleep time of 5
-> - [Building block 4 `routine thread entry`](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-4-routine-thread-entry) - Use the Routine entry function as a guide to create the new Important entry function with a sleep time of 21
-> - [Building block 4 `print_stats`](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-4-print-stats) - Get contents for queue Important, and add `printf` statements to include the new thread counter, message number, and queue contents
+
+> - [Building block 1, part 2](/training/modules/threadx-message-queues/6-building-blocks#building-block-1-part-2) - Add two counters, one thread, one queue, and one prototype
+> - [Building block 3, part 1](/training/modules/threadx-message-queues/6-building-blocks#building-block-3-part-1) - Add one stack pointer and one queue pointer
+> - [Building block 3, part 2](/training/modules/threadx-message-queues/6-building-blocks#building-block-3-part-2) - Allocate stack space, create another thread, queue space create another queue
+> - [Building block 4 `dispatcher thread entry`](/training/modules/threadx-message-queues/6-building-blocks#building-block-4-dispatcher-thread-entry) - Increment message counter, and send messages to the new queue with a sleep time of 5
+> - [Building block 4 `routine thread entry`](/training/modules/threadx-message-queues/6-building-blocks#building-block-4-routine-thread-entry) - Use the Routine entry function as a guide to create the new Important entry function with a sleep time of 21
+> - [Building block 4 `print_stats`](/training/modules/threadx-message-queues/6-building-blocks#building-block-4-print-stats) - Get contents for queue Important, and add `printf` statements to include the new thread counter, message number, and queue contents
 
 When you finish your modifications, then build and debug *ProjectMessageQueues.c* to produce output similar to the image shown below:
 

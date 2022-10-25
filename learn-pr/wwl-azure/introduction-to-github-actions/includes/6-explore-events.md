@@ -81,6 +81,6 @@ This event would fire when someone updates (or first creates) a Wiki page.
 
 ## External events
 
-Events can be on **repository\_despatch**. That allows events to fire from external systems.
+Events can be on **repository\_dispatch**. That allows events to fire from external systems.
 
 For more information on events, see [Events that trigger workflows](https://docs.github.com/actions/learn-github-actions/events-that-trigger-workflows).

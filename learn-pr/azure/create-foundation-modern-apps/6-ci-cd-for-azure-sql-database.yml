@@ -6,8 +6,8 @@ metadata:
   title: Implement CI/CD for Azure SQL Database
   description: Understand how CI/CD applies to databases. Get an overview of GitHub Actions and Azure DevOps and how it relates to Azure SQL Database.
   ms.date: 3/17/2021 
-  author: amthomas46
-  ms.author: antho
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
   ms.topic: interactive-tutorial
   ms.prod: learning-azure  
 durationInMinutes: 5

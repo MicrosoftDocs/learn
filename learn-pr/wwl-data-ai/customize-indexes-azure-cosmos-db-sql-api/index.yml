@@ -1,28 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.customize-indexes-azure-cosmos-db-sql-api
 metadata:
-  title: Customize indexes in Azure Cosmos DB SQL API
-  description: "Customize indexes in Azure Cosmos DB SQL API"
-  ms.date: 03/09/2022
+  title: Customize indexes in Azure Cosmos DB for NoSQL
+  description: "Customize indexes in Azure Cosmos DB for NoSQL"
+  ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Customize indexes in Azure Cosmos DB SQL API
-summary: Customize indexing policies for a container in Azure Cosmos DB SQL API.
+title: Customize indexes in Azure Cosmos DB for NoSQL
+summary: Customize indexing policies for a container in Azure Cosmos DB for NoSQL.
 abstract: |
   After completing this module, you'll be able to:
   - Implement a correlated subquery
   - Create a cross-product query
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-sql-api-customize-indexes.svg
+iconUrl: /training/achievements/azure-cosmos-db-sql-api-customize-indexes.svg
 levels:
 - intermediate
 roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- database
 units:
 - learn.wwl.customize-indexes-azure-cosmos-db-sql-api.introduction
 - learn.wwl.customize-indexes-azure-cosmos-db-sql-api.customize-indexing-policy

@@ -6,7 +6,7 @@ Azure Resource Manager templates are written in JSON, which allows you to expres
  -  A list of values
  -  An object (which is a collection of other key-value pairs)
 
-A Resource Manager template can contain sections that are expressed using JSON notation, but are not related to the JSON language itself:
+A Resource Manager template can contain sections that are expressed using JSON notation, but aren't related to the JSON language itself:
 
 ```json
 {
@@ -51,7 +51,7 @@ A Resource Manager template can contain sections that are expressed using JSON n
     Yes
   :::column-end:::
   :::column:::
-    Version of the template (such as 1.0.0.0). You can provide any value for this element. Use this value to document significant changes in your template. When deploying resources using the template, this value can be used to make sure that the right template is being used.
+    Version of the template (such as 1.0.0.0). You can provide any value for this element. Use this value to document significant changes in your template. This value can be used to make sure that the right template is being used.
   :::column-end:::
 :::row-end:::
 :::row:::

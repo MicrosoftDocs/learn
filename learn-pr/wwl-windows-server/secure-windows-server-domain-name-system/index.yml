@@ -24,7 +24,7 @@ prerequisites: |
   - Core networking technologies.
   - Basic security best practices.
   - Windows PowerShell basics.
-iconUrl: /learn/achievements/secure-windows-server-dns.svg
+iconUrl: /training/achievements/secure-windows-server-dns.svg
 levels:
 - intermediate
 roles:
@@ -33,6 +33,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- security
 units:
 - learn.wwl.secure-windows-server-dns.introduction
 - learn.wwl.secure-windows-server-dns.implement-split-horizon-dns

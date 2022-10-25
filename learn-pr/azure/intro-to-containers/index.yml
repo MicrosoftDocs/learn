@@ -22,7 +22,7 @@ prerequisites: |
   - A Docker subscription 
   - Docker installed on your desktop computer
   - Git installed on your desktop computer
-iconUrl: /learn/achievements/intro-to-containers.svg
+iconUrl: /training/achievements/intro-to-containers.svg
 levels:
 - beginner
 roles:
@@ -30,6 +30,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- custom-app-development
 units:
 - learn.intro-to-containers.1-introduction
 - learn.intro-to-containers.2-deploy-docker-image-locally

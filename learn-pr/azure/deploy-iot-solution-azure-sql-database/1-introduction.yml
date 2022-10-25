@@ -5,10 +5,10 @@ metadata:
   title: Introduction
   description: An introduction to IoT solutions on Azure and using Azure SQL Database as the backend data store.
   ms.date: 07/19/2021
-  author: amthomas46
-  ms.author: antho
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 2
+durationInMinutes: 5
 content: |
   [!include[](includes/1-introduction.md)]

@@ -1,12 +1,12 @@
 In this part, you'll learn some of the ways Azure and Azure DevOps support Node.js applications.
 
-**Node.js** is an open-source JavaScript runtime environment. Designed for server-side execution, it runs outside the context of a web browser. You can learn more at [nodejs.org](https://nodejs.org?azure-portal=true).
+**Node.js** is an open-source JavaScript runtime environment, designed for server-side execution. It runs outside the context of a web browser. You can learn more at [nodejs.org](https://nodejs.org?azure-portal=true).
 
 ## Node.js and Azure
 
-Azure provides first-class support for Node.js. This means that you can take your existing codebase and, in most cases, deploy it directly to Azure without making modifications. On Azure, hosting a Node.js application is similar to hosting a .NET application, assuming that the proper dependencies are configured. Azure also enables you to configure environment variables for application settings, which means you can continue to load settings and secrets using standard methods for Node.js.
+Azure provides first-class support for Node.js. This means that you can take your existing codebase and, in most cases, deploy it directly to Azure without making modifications. On Azure, hosting a Node.js application is similar to hosting a .NET application, assuming that the proper dependencies are configured. Azure also enables you to configure environment variables for application settings, which mean you can continue to load settings and secrets using standard methods for Node.js.
 
-Once deployed to Azure, a Node.js application can connect to resources within Azure, across VPN connections, and anywhere else accessible from the internet. This includes access to databases, document stores, and all the other resources and services Node.js developers rely on.
+After deploying the Node.js application to Azure, you can connect to resources within Azure, across VPN connections, and anywhere else accessible from the internet. This includes access to databases, document stores, and all the other resources and services Node.js developers rely on.
 
 ## Node.js and Azure DevOps
 

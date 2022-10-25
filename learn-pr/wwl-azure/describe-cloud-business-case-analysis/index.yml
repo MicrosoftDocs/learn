@@ -20,13 +20,16 @@ abstract: |
 prerequisites: |
   - You should have an understanding of why business case analysis is necessary.
   - You should understand several of the factors that go into making major decisions on cloud computing workloads.
-iconUrl: /learn/achievements/cloud-business-describe-case-analysis.svg
+iconUrl: /training/achievements/cloud-business-describe-case-analysis.svg
 levels:
 - beginner
 roles:
 - business-user
 products:
 - azure-sovereign-us
+subjects:
+- cloud-computing
+- data-analytics
 units:
 - learn.wwl.describe-cloud-business-case-analysis.introduction
 - learn.wwl.describe-cloud-business-case-analysis.perform-bca

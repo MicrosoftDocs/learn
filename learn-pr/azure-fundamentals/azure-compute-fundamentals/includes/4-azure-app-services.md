@@ -2,7 +2,7 @@ In your research for Tailwind Traders, you've looked at different ways that you 
 
 :::row:::
   :::column span="3":::
-    
+
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -26,17 +26,17 @@ You pay for the Azure compute resources your app uses while it processes request
 
 With App Service, you can host most common app service styles like:
 
- -  Web apps
- -  API apps
- -  WebJobs
- -  Mobile apps
+- Web apps
+- API apps
+- WebJobs
+- Mobile apps
 
 App Service handles most of the infrastructure decisions you deal with in hosting web-accessible apps:
 
- -  Deployment and management are integrated into the platform.
- -  Endpoints can be secured.
- -  Sites can be scaled quickly to handle high traffic loads.
- -  The built-in load balancing and traffic manager provide high availability.
+- Deployment and management are integrated into the platform.
+- Endpoints can be secured.
+- Sites can be scaled quickly to handle high traffic loads.
+- The built-in load balancing and traffic manager provide high availability.
 
 All of these app styles are hosted in the same infrastructure and share these benefits. This flexibility makes App Service the ideal choice to host web-oriented applications.
 
@@ -46,7 +46,7 @@ App Service includes full support for hosting web apps by using ASP.NET, ASP.NET
 
 ### API apps
 
-Much like hosting a website, you can build REST-based web APIs by using your choice of language and framework. You get full Swagger support and the ability to package and publish your API in Azure Marketplace. The produced apps can be consumed from any HTTP- or HTTPS-based client.
+Much like hosting a website, you can build REST-based web APIs by using your choice of language and framework. You get full Swagger support and the ability to package and publish your API in Azure Marketplace. The produced apps can be consumed from any HTTP or HTTPS based client.
 
 ### WebJobs
 
@@ -56,9 +56,9 @@ You can use the WebJobs feature to run a program (.exe, Java, PHP, Python, or No
 
 Use the Mobile Apps feature of App Service to quickly build a back end for iOS and Android apps. With just a few clicks in the Azure portal, you can:
 
- -  Store mobile app data in a cloud-based SQL database.
- -  Authenticate customers against common social providers, such as MSA, Google, Twitter, and Facebook.
- -  Send push notifications.
- -  Execute custom back-end logic in C\# or Node.js.
+- Store mobile app data in a cloud-based SQL database.
+- Authenticate customers against common social providers, such as MSA, Google, Twitter, and Facebook.
+- Send push notifications.
+- Execute custom back-end logic in C\# or Node.js.
 
 On the mobile app side, there's SDK support for native iOS and Android, Xamarin, and React native apps.

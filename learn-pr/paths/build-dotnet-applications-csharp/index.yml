@@ -18,13 +18,15 @@ prerequisites: |
 video:
   title: "Build .NET applications with C#"
   url: https://www.microsoft.com/videoplayer/embed/RWVEF1
-iconUrl: /learn/achievements/build-dotnet-applications-csharp.svg
+iconUrl: /training/achievements/build-dotnet-applications-csharp.svg
 levels:
 - beginner
 roles:
 - developer
 products:
 - dotnet
+subjects:
+- custom-app-development
 modules:
 - learn.languages.csharp-write-first
 - learn.languages.dotnet-introduction

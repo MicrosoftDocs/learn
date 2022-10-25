@@ -17,7 +17,7 @@ prerequisites: |
   *   Basic knowledge of PowerShell scripting.
 summary: |
   Learn to secure your on-premises Windows Server resources and your Azure IaaS workloads. Determine if those resources have any security vulnerabilities, and remediate those potential security vulnerabilities.
-iconUrl: /learn/achievements/secure-windows-server-on-premises-and-hybrid-infrastructures.svg
+iconUrl: /training/achievements/secure-windows-server-on-premises-and-hybrid-infrastructures.svg
 levels:
 - intermediate
 roles:
@@ -28,6 +28,8 @@ products:
 - azure
 - azure-active-directory
 - windows-server
+subjects:
+- infrastructure
 modules:
 - learn.wwl.implement-windows-server-iaas-vm-network-security
 - learn.wwl.audit-security-of-windows-server-iaas-vms

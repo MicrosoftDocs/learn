@@ -4,8 +4,9 @@ metadata:
   title: Deploy highly available solutions by using Azure SQL
   description: In this module, you'll learn how to deploy highly available solutions by using Azure SQL. You'll also look at architectures and how they affect availability.
   ms.date: 08/05/2020
-  author: amthomas46
-  ms.author: bobward
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy highly available solutions by using Azure SQL
@@ -20,7 +21,7 @@ abstract: |
 prerequisites: | 
   - Experience working with, maintaining, and developing with SQL Server
   - Experience with Azure, such as deploying and managing resources
-iconUrl: /learn/achievements/azure-sql-high-availability.svg
+iconUrl: /training/achievements/azure-sql-high-availability.svg
 levels:
 - beginner
 - intermediate
@@ -32,6 +33,8 @@ products:
 - azure
 - azure-sql-database
 - azure-sql-managed-instance
+subjects:
+- business-continuity
 units:
 - learn.azure-sql-high-availability.1-introduction
 - learn.azure-sql-high-availability.2-backup-restore

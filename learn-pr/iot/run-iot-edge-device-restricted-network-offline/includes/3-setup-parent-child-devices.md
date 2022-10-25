@@ -73,7 +73,7 @@ If you have more than one Azure account, be sure that you are logged in with the
     >[!NOTE]
     >Be sure to replace the AZ-220-HUB-_{YOUR-ID}_ IoT Hub name with the name of your Azure IoT Hub.
 
-    Notice the az iot hub device-identity show-connection-string command is called by passing in several parameters:
+    Notice the [az iot hub device-identity connection-string show](/cli/azure/iot/hub/device-identity/connection-string#az-iot-hub-device-identity-connection-string-show) command is called by passing in several parameters:
 
       * hub-name: This required parameter is used to specify the name of the **Azure IoT Hub** to add the new device to.
 

@@ -2,12 +2,12 @@
 uid: learn.azure.deploy-azure-resources-bicep.add-flexibility-parameters-variables
 title: Add flexibility by using parameters and variables
 metadata:
-  unitType: learning-content  
+  unitType: learning-content
   title: Add flexibility by using parameters and variables
   description: Learn how to build reusable templates by using parameters to accept input, and variables to store and reuse values within the template.
-  ms.date: 11/25/2021  
-  author: johndowns
-  ms.author: jodowns
+  ms.date: 10/10/2022
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
 durationInMinutes: 10

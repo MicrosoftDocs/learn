@@ -19,7 +19,7 @@ prerequisites: |
   - Demonstrate basic developer skills.
   - Describe the features of IoT Hub and create an IoT Hub service instance in the Azure portal.
   - Describe the Azure IoT SDK for devices and associated coding environments.
-iconUrl: /learn/achievements/device-configuration-communication.svg
+iconUrl: /training/achievements/device-configuration-communication.svg
 levels:
 - intermediate
 roles:
@@ -29,6 +29,8 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
+subjects:
+- device-management
 units:
 - learn.wwl.explore-device-configuration-communication.introduction
 - learn.wwl.explore-device-configuration-communication.review-device-communication-types

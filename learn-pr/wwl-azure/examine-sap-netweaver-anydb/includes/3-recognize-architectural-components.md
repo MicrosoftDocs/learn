@@ -12,10 +12,10 @@ Each virtual network is typically divided into separate subnets hosting applicat
 
 Azure VMs host the application tier and database tier components, grouped as follows:
 
- -  **SAP NetWeaver**. The application tier runs SAP Central Services and SAP application servers.
- -  **AnyDB**. The database tier runs AnyDB as the source database, such as Microsoft SQL Server, Oracle, or IBM DB2.
- -  **Jumpbox**. Also called a *bastion host*. This Azure VM runs a hardened operating system instance that administrators use to connect to the other virtual machines. It can run Windows or Linux. Use a Windows jumpbox to run tools such as HANA Cockpit or HANA Studio.
- -  **Active Directory domain controllers**. Active Directory domain controllers provide authentication and authorization services for Windows and Linux operating system.
+- **SAP NetWeaver**. The application tier runs SAP Central Services and SAP application servers.
+- **AnyDB**. The database tier runs AnyDB as the source database, such as Microsoft SQL Server, Oracle, or IBM DB2.
+- **Jumpbox**. Also called a *bastion host*. This Azure VM runs a hardened operating system instance that administrators use to connect to the other virtual machines. It can run Windows or Linux. Use a Windows jumpbox to run tools such as HANA Cockpit or HANA Studio.
+- **Active Directory domain controllers**. Active Directory domain controllers provide authentication and authorization services for Windows and Linux operating system.
 
 ## Load balancers
 
