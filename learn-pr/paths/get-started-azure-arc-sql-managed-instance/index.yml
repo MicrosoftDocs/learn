@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.get-started-azure-arc-enabled-sql-managed-instance
+metadata:
+  title: Implement Azure Arc-enabled SQL Managed Instance in your hybrid environment
+  description: Learn to deploy and manage Azure Arc-enabled SQL Managed Instance.
+  ms.date: 10/25/2022
+  author: MikeRayMSFT
+  ms.author: mikeray
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.manager: jroth
+  ms.custom: 
+title: Implement Azure Arc-enabled SQL Managed Instance in your hybrid environment
+summary:  |
+  Learn how to work with Azure Arc enabled servers, data services and Kubernetes.
+prerequisites: | 
+  - Knowledge of personal computer operating systems.
+  - Fundamentals of cloud computing.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-scientist
+- data-engineer
+- database-administrator
+- solution-architect
+products:
+- azure
+- azure-arc
+subjects:
+- infrastructure
+modules:
+- learn.azure.intro-to-arc-enabled-data-services
+- learn.deploy-configure-explore-azure-arc-enabled-data-services
+- learn.deploy-configure-azure-arc-enabled-sql-managed-instance
+- learn.monitor-azure-arc-enabled-sql-managed-instance-security-performance
+- learn.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance
+trophy:
+  uid: learn.get-started-azure-arc-sql-managed-instance.trophy
