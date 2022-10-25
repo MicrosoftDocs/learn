@@ -21,7 +21,7 @@ When you use Automanage best practices profiles, a number of Azure services are 
 - **Update Management** manages operating system updates for your Linux machines. 
 - **Change Tracking and Inventory** combines change tracking and inventory functions to allow you to track Linux machine changes.
 
-See [Azure Automanage for Machines Best Practices](https://learn.microsoft.com/en-us/azure/automanage/automanage-linux) for a complete list and explanation of these services.
+See [Azure Automanage for Machines Best Practices](/azure/automanage/automanage-linux) for a complete list and explanation of these services.
 
 ### Azure Automanage Machine Configuration
 
