@@ -1,4 +1,4 @@
-Azure Arc lets you manage physical and virtual Linux machines hosted outside of Azure, on your corporate network, or other cloud provider. Organizations like Contoso can manage their Linux resources with Azure just as they do their Arc-enabled Windows machines. Linux machines onboarded to Azure Arc enjoy the same capabilties as native Azure machines, including standard Azure constructs such as Asure policy and applying tags.
+Azure Arc lets you manage physical and virtual Linux machines hosted outside of Azure, on your corporate network, or other cloud provider. Organizations like Contoso can manage their Linux resources with Azure just as they do their Arc-enabled Windows machines. Linux machines onboarded to Azure Arc enjoy the same capabilties as native Azure machines, including standard Azure constructs such as Azure policy and applying tags.
 
 Once your Linux machines are onboarded to Azure Arc, you can:
 
@@ -22,7 +22,6 @@ The following Linux distributions are officially supported for the Azure Connect
 ## Azure Automation
 
 Linux machines onboarded to Azure Arc can use Azure Automation for frequent, time-consuming tasks.
-<!--> using PowerShell and runbooks. You can assess configuration changes for installed software, Microsoft services, and Linux daemons using Change Tracking and Inventory.-->
 
 ### Change tracking and inventory
 
@@ -35,10 +34,6 @@ You can track changes in your Azure Arc Linux machines to help you pinpoint oper
 ### Update Management
 
 Your onboarded Linux machines can use Update Management to manage operating system updates. You can quickly assess the status of available updates and manage the process of installing required updates for your Linux machines. Update Management integrates with Azure Monitor Logs to store update assessments and update deployment results as log data.
-
-### Automation runbooks
-
-
 
 ## Security
 
