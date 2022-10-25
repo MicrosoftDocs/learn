@@ -11,6 +11,6 @@ There are two terms that you should understand when working with Azure Site Reco
 - **Failover**: a failover occurs when operations are transferred from your primary location to your secondary location, which often happens after a service outage at the primary location; for example: scheduled downtime or a catastrophic failure.
 - **Failback**: a failback occurs when operations are restored from your secondary location to your primary location, which often happens when the cause of the service outage has been alleviated.
 
-Azure Site Recovery allows you to perform a failback after performing a failover. For example, if the primary location has a scheduled outage, you can failover to the secondary location during the outage, and then fail back the workload to the primary location once the scheduled outage is completed.
+Azure Site Recovery allows you to perform a failback after performing a failover. For example, if the primary location has a scheduled outage, you can fail over to the secondary location during the outage, and then fail back the workload to the primary location once the scheduled outage is completed.
 
 [![Diagram showing before and after a failover.](../media/before-and-after-failover-smaller.png)](../media/before-and-after-failover.png#lightbox)
