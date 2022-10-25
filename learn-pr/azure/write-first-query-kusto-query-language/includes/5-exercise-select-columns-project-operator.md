@@ -61,7 +61,7 @@ For example, there are other countries with states. It might be helpful to renam
 
 ## Use the `project-away` operator
 
-What if you want to remove a few select columns? For this exploration, you don't have any use for the IDs assigned to each episode and event. You can remove specific columns by using the `project-away` operator, which indicates which columns to remove, while leaving all remaining columns. You can also use a wildcard, such as `| project-away *ID`, to remove all columns that end in **Id**.
+What if you want to remove a few select columns? For this exploration, you don't have any use for the IDs assigned to each episode and event. You can remove specific columns by using the `project-away` operator, which indicates which columns to remove, while leaving all remaining columns. You can also use a wildcard, such as `| project-away *Id`, to remove all columns that end in **Id**.
 
 1. Run the following query:
 
