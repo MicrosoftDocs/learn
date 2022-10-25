@@ -18144,6 +18144,16 @@
       "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/6-write-transformation-query.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/8-configure-session-persistence.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-azure-load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/9-create-health-probes.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-azure-load-balancer/8-create-health-probes",
+      "redirect_document_id": false
     }
   ]
 }
