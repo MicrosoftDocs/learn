@@ -20,15 +20,15 @@ For this course, we provide a UWP C# template app for your use. The template alr
 
     On the **Application** tab, check that the **Target version** and **Min version** are set to match your Windows 10 OS and SDK. Both should be set to **Windows 10, version 1809 (10.0; Build 17763)**. Using an earlier version of Windows won't work. The required Windows ML API wasn't supported yet. To change these properties, close and reopen the project solution.
 
-    ![Screen shot of the Visual Studio Properties window showing target and min version.](../media/target_version.png)
+    ![Screenshot of the Visual Studio Properties window showing target and min version.](../media/target_version.png)
 
 3. In the Visual Studio toolbar, make sure the Solution Platform is set to x64 or x86. Those platforms run the project on your local machine. Packages won't run under the ARM platform.
 
-    ![Screen shot of Visual Studio toolbar depicting the platform drop down options.](../media/platform.png)
+    ![Screenshot of Visual Studio toolbar depicting the platform drop down options.](../media/platform.png)
 
 4. Now let's run the sample app project. Select the **Start Debugging** button on the toolbar, or select **F5**.
 
-    ![Screen shot showing the Build button on the Visual Studio toolbar.](../media/build_button.png)
+    ![Screenshot showing the Build button on the Visual Studio toolbar.](../media/build_button.png)
 
     The application should build and open. It shows these things:
 
@@ -37,12 +37,12 @@ For this course, we provide a UWP C# template app for your use. The template alr
     - An empty label field where the interpreted digit displays as text.
     - A **Clear Digit** button to clear the InkCanvas. The **Recognize** button isn't hooked up to anything yet. So selecting it won't have any effect.
 
-> [!WARNING]
-> We've experienced an issue with error messages that appear the first time this sample app opens. If you receive these errors, close Visual Studio and reopen the **MNIST_Demo.sln** solution. When the solution opens, select the **Local Machine** button on the top menu bar. Or select F5 to try opening the app again.
->
-> This time, you should receive a pop-up message: **The app is already installed on this machine... if you continue... the current state will be deleted**. Select **Yes** to continue. The app should now open as expected. We're working with the VM to resolve this issue.
+    ![Screen shot showing the application user interface.](../media/MNIST_app_screenshot.png)
 
-    ![Screen shot showing the application user interface.](../media/MNIST_app_screenshot.png) 
+    > [!WARNING]
+    > We've experienced an issue with error messages that appear the first time this sample app opens. If you receive these errors, close Visual Studio and reopen the **MNIST_Demo.sln** solution. When the solution opens, select the **Local Machine** button on the top menu bar. Or select F5 to try opening the app again.
+    >
+    > This time, you should receive a pop-up message: **The app is already installed on this machine... if you continue... the current state will be deleted**. Select **Yes** to continue. The app should now open as expected. We're working with the VM to resolve this issue.
 
 ### Explore the UWP app files
 
