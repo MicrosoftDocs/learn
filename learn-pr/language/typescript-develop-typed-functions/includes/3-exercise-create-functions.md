@@ -34,7 +34,7 @@ In this exercise, you'll create two named functions with strongly typed paramete
     ```
 
 1. Try calling the function with a single number as a parameter, for example, `sum(5)`. It accepts the value but doesn't return the correct result because the parameter isn't passed as an array.
-1. Now, set the type of the `input` parameter to an array of `number` values, set the return type of the function to `number`, and set the type of the `total` variable to `number`.
+1. Set the type of the `input` parameter to an array of `number` values, set the return type of the function to `number`, and set the type of the `total` variable to `number`.
 
     ```typescript
     function sum(input: number[]): number {        
@@ -49,5 +49,5 @@ In this exercise, you'll create two named functions with strongly typed paramete
     }
     ```
 
-1. Now if you call the function with `sum(5)`, TypeScript flags the type issue with the parameter. 
+1. Now, if you call the function with `sum(5)`, TypeScript flags the type issue with the parameter. 
 1. Try calling the function with an array of values that have mixed types, for example, `sum([1, 'two', 3]`). The values inside the array are type checked, and TypeScript returns the error: `Type 'string' is not assignable to type 'number'.`
