@@ -18134,6 +18134,11 @@
       "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/10-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/8-view-job-result.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
     }
   ]
 }
