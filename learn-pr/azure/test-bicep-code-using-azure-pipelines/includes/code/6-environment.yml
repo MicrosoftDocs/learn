@@ -1,6 +1,6 @@
 variables:
   - name: deploymentDefaultLocation
-    value: westus3
+    value: eastus
 
 stages:
 
