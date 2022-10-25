@@ -18089,6 +18089,11 @@
       "source_path": "learn-pr/wwl-azure/configure-storage-tools/3-use-import-export-service.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/configure-storage-tools/3a-use-import-export-service",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
     }
   ]
 }
