@@ -30,6 +30,5 @@ products:
 subjects:
 - data-analytics
 units:
-- learn.data-ai.transform-data-with-azure-stream-analytics.write-transformation-query
 badge:
   uid: learn.data-ai.transform-data-with-azure-stream-analytics.badge
