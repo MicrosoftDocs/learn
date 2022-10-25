@@ -21,7 +21,7 @@ When you plan for new instances of Azure services and new workloads, consider th
 
 #### Migrations
 
-An important consideration for your compute service involves analysing the migration capabilities.
+An important consideration for your compute service involves analyzing the migration capabilities.
 
 - **Cloud optimized**: To migrate to the cloud and refactor applications to access cloud-native features, consider compute services that are cloud-optimized.
 
