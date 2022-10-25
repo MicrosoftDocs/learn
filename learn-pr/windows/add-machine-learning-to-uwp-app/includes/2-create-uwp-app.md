@@ -14,7 +14,7 @@ For this course, we provide a UWP C# template app for your use. The template alr
 ### Open the UWP app template with Visual Studio
 1. The UWP app template is located in the **Windows Learn** folder on the desktop of your sandboxed Windows 10 environment. 
 
-    Inside the **Windows Learn** folder, open the **Machine-Learning** folder. Then open the **Add_Machine_Learning_to_your_UWP_App** folder. You'll find the **MNIST_Demo.sln** project solution file. Double-click to open it with Visual Studio inside the sandbox. 
+    Inside the **Windows Learn** folder, open the **Machine-Learning** folder. Then open the **Add_Machine_Learning_to_your_UWP_App** folder. You'll find the **MNIST_Demo.sln** project solution file. Double-click to open it with Visual Studio inside the sandbox.
 
 2. After the Visual Studio project solution opens, select Alt+Enter to open the **Properties** window.
 
@@ -26,23 +26,23 @@ For this course, we provide a UWP C# template app for your use. The template alr
 
     ![Screen shot of Visual Studio toolbar depicting the platform drop down options.](../media/platform.png)
 
-4. Now let's run the sample app project. Select the **Start Debugging** button on the toolbar, or select **F5**. 
+4. Now let's run the sample app project. Select the **Start Debugging** button on the toolbar, or select **F5**.
 
     ![Screen shot showing the Build button on the Visual Studio toolbar.](../media/build_button.png)
 
     The application should build and open. It shows these things:
 
-    * An InkCanvas where you can write a digit with your finger on a touch screen, a mouse, or a Surface Pen.
-    * A **Recognize** button to interpret the number.
-    * An empty label field where the interpreted digit displays as text.
-    * A **Clear Digit** button to clear the InkCanvas. The **Recognize** button isn't hooked up to anything yet. So selecting it won't have any effect.
-
-    ![Screen shot showing the application user interface.](../media/MNIST_app_screenshot.png)
+    - An InkCanvas where you can write a digit with your finger on a touch screen, a mouse, or a Surface Pen.
+    - A **Recognize** button to interpret the number.
+    - An empty label field where the interpreted digit displays as text.
+    - A **Clear Digit** button to clear the InkCanvas. The **Recognize** button isn't hooked up to anything yet. So selecting it won't have any effect.
 
 > [!WARNING]
-> We've experienced an issue with error messages that appear the first time this sample app opens. If you receive these errors, close Visual Studio and reopen the **MNIST_Demo.sln** solution. When the solution opens, select the **Local Machine** button on the top menu bar. Or select F5 to try opening the app again. 
+> We've experienced an issue with error messages that appear the first time this sample app opens. If you receive these errors, close Visual Studio and reopen the **MNIST_Demo.sln** solution. When the solution opens, select the **Local Machine** button on the top menu bar. Or select F5 to try opening the app again.
 >
-> This time, you should receive a pop-up message: **The app is already installed on this machine... if you continue... the current state will be deleted**. Select **Yes** to continue. The app should now open as expected. We're working with the VM to resolve this issue.  
+> This time, you should receive a pop-up message: **The app is already installed on this machine... if you continue... the current state will be deleted**. Select **Yes** to continue. The app should now open as expected. We're working with the VM to resolve this issue.
+
+    ![Screen shot showing the application user interface.](../media/MNIST_app_screenshot.png) 
 
 ### Explore the UWP app files
 
