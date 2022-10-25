@@ -1,4 +1,4 @@
-With th steps completed to onboard the directory, you can direct Fabrikam users to sign in. Fabrikam users (users with the `fabrikam.onmicrosoft.com` suffix) sign in by visiting `https://portal.local.azurestack.external`.
+With the steps completed to onboard the directory, you can direct Fabrikam users to sign in. Fabrikam users (users with the `fabrikam.onmicrosoft.com` suffix) sign in by visiting `https://portal.local.azurestack.external`.
 
 You will direct foreign principals in the Fabrikam directory (without suffix `fabrikam.onmicrosoft.com`) to sign in using `https://portal.local.azurestack.external/fabrikam.onmicrosoft.com`.
 
