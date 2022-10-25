@@ -296,7 +296,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
     :::image type="content" source="../media/test-connection-succeeded-7c2cc7f6.png" alt-text="Screenshot of test connection succeeded":::
     
 
-Congratulations! You have successful configured connectivity between VNets by adding peerings.
+Congratulations! You have successfully configured connectivity between VNets by adding peerings.
 
 ## Task 6: Clean up resources
 
