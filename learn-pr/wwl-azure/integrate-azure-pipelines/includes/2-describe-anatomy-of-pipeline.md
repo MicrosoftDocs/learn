@@ -137,7 +137,7 @@ A job has the following attributes besides its name:
 
 ## Dependencies
 
-You can define dependencies between jobs using the `dependensOn` property. It lets you specify sequences and fan-out and fan-in scenarios.
+You can define dependencies between jobs using the `dependsOn` property. It lets you specify sequences and fan-out and fan-in scenarios.
 
 A sequential dependency is implied if you don't explicitly define a dependency.
 
@@ -271,13 +271,13 @@ steps:
 
 Steps are the actual "things" that execute in the order specified in the job.
 
-Each step is a task: out-of-the-box (OOB) tasks come with Azure DevOps. Many of these have aliases and tasks installed on your Azure DevOps organization via the marketplace.
+Each step is a task: out-of-the-box (OOB) tasks come with Azure DevOps. Many have aliases and tasks installed on your Azure DevOps organization via the marketplace.
 
 Creating custom tasks is beyond the scope of this chapter, but you can see how to make your custom tasks [here](/azure/devops/extend/develop/add-build-task).
 
 ## Variables
 
-It would be tough to achieve any sophistication in your pipelines without variables. Though this classification is partly mine, several types of variables exist, and pipelines don't distinguish between these types. However, I've found it helpful to categorize pipeline variables to help teams understand some nuances when dealing with them.
+It would be tough to achieve any sophistication in your pipelines without variables. Though this classification is partly mine, several types of variables exist, and pipelines don't distinguish between these types. However, I've found it helpful to categorize pipeline variables to help teams understand nuances when dealing with them.
 
 Every variable is a key: value pair. The key is the variable's name, and it has a value.
 
