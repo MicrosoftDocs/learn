@@ -20,7 +20,7 @@ Let's look at each of these Azure connected scenarios in more detail.
 
 The Link feature for Azure SQL Managed Instance provides a new managed disaster recovery solution for SQL Server 2022.
 
-### Challenges for disaster recovery
+### Challenges with disaster recovery
 
 Having a diaster recovery site and plan are critical to ensuring your business and application are available at any time. While SQL Server has all the features and capabilities to support various disaster recovery options, a user or admin must do all the configuration, setup, and maintenance.
 
@@ -42,11 +42,11 @@ You can learn more about the Link feature for Azure SQL Managed Instance in the 
 
 Azure Synapse Link for SQL Server allows you to offload read workloads in Azure Synapse for near real-time analytics.
 
-### Challenges with real-time analytics
+### Challenges with analytics
 
 Azure Synapse has become a popular service for analytics for data of all types. In addition, many customers are looking to offload their read intensive applications from their primary SQL Server to ensure the primary application has plenty of resources. In order to use Azure Synapse for this purpose, you typically have to build Extract Transform Load (ETL) applications, or use scripts to copy data out of SQL Server to synchronize into Azure Synapse. This method can introduce challenges because the data is often out of date in Azure Synapse and it can be costly to build and maintain ETL applications.
 
-### Solution for real-time analytics in SQL Server 2022
+### Solution for near real-time analytics in SQL Server 2022
 
 Azure Synapse Link for SQL Server provides a seamless and tight integration between SQL Server 2022 and Azure Synapse. You can now define a **linked service** for SQL Server in Azure Synapse to set up a connection to SQL Server 2022, including the setup of the self-hosted integration runtime on the network to discover and connect to SQL Server 2022. In addition, you can set up a linked service with an Azure Storage account called the **Landing Zone**.
 
@@ -64,7 +64,7 @@ You can learn more about Azure Synapse Link for SQL Server in the article, [What
 
 Microsoft Purview provides services for central governance by allowing you to create policies for authentication and authorization to SQL Server 2022.
 
-### Challenges with central governance
+### Challenges with governance
 
 SQL Server provides a rich system to create logins and users for authentication to connect, and roles and permissions for authorization for specific tasks or access to data. One challenge is to integrate the SQL Server security system with other aspects for an organization's security policies, and also to establish SQL Server security policies across multiple SQL Server instances.
 
@@ -86,11 +86,11 @@ You can learn more about Microsoft Purview access policies for SQL Server 2022 i
 
 Azure AD provides a cloud-based central authentication authority for any organization using advanced authentication methods. SQL Server 2022 supports logins or users based on Azure AD accounts.
 
-### Challenges with centralized authentication
+### Challenges with authentication
 
 SQL Server supports authentication for SQL Server or Windows accounts. Many users are looking to centralize their authentication systems using the cloud, and to support advanced authentication methods, like multi-factor authentication (MFA).
 
-### Solution to centralized authentication
+### Solution with centralized authentication
 
 SQL Server 2022 now supports Azure AD account based logins and users. SQL Server 2022 must be configured as an Azure Arc-enabled SQL Server to use Azure AD. The Azure extension for SQL Server stores information on SQL Server that allows the database engine to authenticate an Azure AD account.
 
@@ -113,7 +113,7 @@ Microsoft Defender for SQL is a Defender plan in Microsoft Defender for Cloud, a
 
 Ensuring your SQL Server and data is protected is critical to any business. Security professionals are always looking to find ways to stay ahead of security threats to SQL Server in a robust and reliable fashion.
 
-### Solutions to protecting SQL Server 2022
+### Solutions to protect SQL Server 2022
 
 Microsoft Defender for SQL provides a reliable and industry-proven method to detect security vulnerabilities, and provide advanced threat protection for SQL Server. You can enable Microsoft Defender for SQL by registering SQL Server 2022 using the Azure extension for SQL Server to make the instance an Azure Arc-enabled SQL Server.
 

@@ -1,4 +1,4 @@
-SQL Server 2022 provides built-in capabilities to reduce time for query tuning with the Query Store and Intelligent Query Processing features to help you gain performance with no code changes.
+SQL Server 2022 provides built-in capabilities to reduce time for query tuning with the Query Store and next generation Intelligent Query Processing features to help you gain consistent performance with no code changes.
 
 ## H2 heading
 Strong lead sentence; remainder of paragraph.
