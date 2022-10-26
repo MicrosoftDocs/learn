@@ -4,12 +4,12 @@ trigger:
     include:
     - main
 
+pool:
+  vmImage: ubuntu-latest
+
 variables:
   - name: deploymentDefaultLocation
     value: westus3
-
-pool:
-  vmImage: ubuntu-latest
 
 stages:
 
