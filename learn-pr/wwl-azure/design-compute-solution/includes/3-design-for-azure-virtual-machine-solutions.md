@@ -2,13 +2,13 @@
 
 ### Things to know about Azure Virtual Machines
 
-There are two main scenarios where Azure Virtual Machines can be an ideal compute solution for an infrastructure. 
+There are two main scenarios where Azure Virtual Machines can be an ideal compute solution for an infrastructure. Virtual Machines can be used to build new workloads and migrate data by using the lift and shift pattern. 
+
+:::image type="content" source="../media/select-virtual-machines.png" alt-text="Flowchart that shows the decision tree for selecting Azure Virtual Machines to build new workloads and to support lift and shift migration." border="false":::
 
 - **Build new workloads**: Azure Virtual Machines is ideal when you're building new workloads and demand for your applications can fluctuate. It's economical to run your applications on a virtual machine in Azure. 
 
 - **Lift and shift migration**: If you're using lift and shift (rehosting) migration to move data and applications from an on-premises location, targeting Azure Virtual Machines in the cloud is an effective strategy. 
-
-:::image type="content" source="../media/select-virtual-machines.png" alt-text="Flowchart that shows the decision tree for selecting Azure Virtual Machines to build new workloads and to support lift and shift migration." border="false":::
 
 ### Things to consider when using Azure Virtual Machines
 
@@ -56,7 +56,7 @@ The best way to determine the appropriate machine size is to consider the type o
 | **High performance computes** | High performance compute offers the fastest and most powerful CPU virtual machines with optional high-throughput network interfaces. | - Workloads that require fast performance <br> - High traffic networks |
 
 > [!TIP]
-> Try the [Azure Virtual Machines selector tool](https://azure.microsoft.com/pricing/virtual machine-selector/) to find other sizes that best fit your workload.
+> Try the [Azure Virtual Machines selector tool](https://azure.microsoft.com/pricing/vm-selector/) to find other sizes that best fit your workload.
 
 #### Virtual machine pricing
 
