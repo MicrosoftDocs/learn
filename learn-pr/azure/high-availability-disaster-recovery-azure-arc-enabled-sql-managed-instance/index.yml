@@ -4,8 +4,9 @@ metadata:
   title: High Availability and Disaster Recovery for Azure Arc-enabled SQL Managed Instance
   description: "Learn how to manage availability and recover from disasters with Azure Arc-enabled SQL Managed Instance."
   ms.date: 8/24/2022
-  author: tchristiani
-  ms.author: terrychr
+  author: MikeRayMSFT
+  ms.author: mikeray
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 title: High Availability and Disaster Recovery for Azure Arc-enabled SQL Managed Instance
