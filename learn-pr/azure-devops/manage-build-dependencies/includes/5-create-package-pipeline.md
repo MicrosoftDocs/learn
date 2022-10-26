@@ -124,7 +124,7 @@ Here's how to set up a second pipeline to build the package, and upload that pac
 
 1. From Azure DevOps, go to the **Space Game - web - Dependencies** project.
 1. From the menu on the left, select **Pipelines**.
-1. Select **+ New Pipeline**.
+1. Select **New Pipeline**.
 1. From the **Connect** tab, select **GitHub**.
 1. From the **Select** tab, select **mslearn-tailspin-spacegame-web-models**.
 
