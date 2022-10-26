@@ -31,6 +31,5 @@ modules:
 - learn.wwl.choose-power-bi-model-framework
 - learn.wwl.understand-scalability-power-bi
 - learn.wwl.create-manage-scalable-power-bi-dataflows
-- learn.wwl.use-power-bi-datamarts
 trophy:
   uid: learn.wwl.prepare-data-for-tabular-models-power-bi.trophy
