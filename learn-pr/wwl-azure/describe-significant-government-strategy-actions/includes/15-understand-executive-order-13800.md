@@ -23,7 +23,7 @@
 
 The EO candidly states that "the executive branch has for too long accepted antiquated and difficult-to-defend IT," citing a lack of planning to maintain, improve, and modernize IT. Again, it notes that agency heads will be accountable to the President for not proactively addressing IT and the risk management mechanisms they must put into place must be commensurate with the risk and magnitude of the potential harm that could be caused.
 
-It tasks each agency head with utilizing [*The Framework for Improving Critical Infrastructure Cybersecurity*](https://nvlpubs.nist.gov/nistpubs/cswp/nist.cswp.04162018.pdf) developed by NIST, and then sets a 90 day time frame for each agency head to deliver a risk management report to both the Secretary of Homeland Security and the Director of OMB. The reports are to be used to plan for assessing the cyber risk, asking for more budget, and putting into place mechanisms to address any cyber risks.
+It tasks each agency head with using [*The Framework for Improving Critical Infrastructure Cybersecurity*](https://nvlpubs.nist.gov/nistpubs/cswp/nist.cswp.04162018.pdf) developed by NIST, and then sets a 90 day time frame for each agency head to deliver a risk management report to both the Secretary of Homeland Security and the Director of OMB. The reports are to be used to plan for assessing the cyber risk, asking for more budget, and putting into place mechanisms to address any cyber risks.
 
 ### Declaration of modernization as policy, and report on modernization
 
@@ -31,7 +31,7 @@ The EO notes that "effective immediately, it is the the policy of the executive 
 
 To implement this approach, agency heads are to favor shared IT services in procurement, specifically toward email, cloud, and cybersecurity.
 
-The Director of hte American Technology Council is also tasked with creating a report within 90 days on consolidating all federal agencies (except national security ones) to consolidated network architectures and shared IT services.
+The Director of hte American Technology Council is also tasked with creating a report within 90 days on consolidating all federal agencies, except national security ones, to consolidated network architectures and shared IT services.
 
 ## Cybersecurity of critical infrastructure
 
