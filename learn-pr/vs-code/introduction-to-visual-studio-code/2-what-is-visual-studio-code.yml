@@ -2,7 +2,7 @@
 uid: learn.introduction-to-visual-studio-code.what-is-visual-studio-code
 title: What is Visual Studio Code?
 metadata:
-  title: what-is-visual-studio-code
+  title: What is Visual Studio Code
   description: "The main features of Visual Studio Code are the editor, search, file explorer, debugger, and source control."
   ms.date: 10/20/2022
   author: kjo-msft
