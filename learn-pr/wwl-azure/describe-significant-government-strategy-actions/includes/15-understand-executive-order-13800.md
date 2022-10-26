@@ -49,7 +49,7 @@ The EO recognizes the importance of the Internet as it was in 2017 as well as wh
 
 The EO tasks several parties with creation of another report within 90 days on deterring adversaries and better protecting the American people from cyber threats.
 
-The EO tasks several parties with creation of a report on *International Cooperation*, specifically on how the United States should best work together with other countries to support investigation, attribution, cyber threat information sharing, response, capacity building, and cooperation.
+The EO tasks several parties with creation of a report on *International Cooperation*, specifically on how the United States should best work together with other countries/regions to support investigation, attribution, cyber threat information sharing, response, capacity building, and cooperation.
 
 The EO tasks the Secretaries of Commerce and Homeland Security with providing a report within 120 days on how to upskill Federal workforce employees and ensure their skills are kept up to date. The Department of National Intelligence, in collaboration with several other parties, must assess the findings of the report and provide recommendations and a plan on how best to implement the workforce development efforts.
 
