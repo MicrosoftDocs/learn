@@ -16,7 +16,7 @@ abstract: |
   - Articulate how Microsoft AI technology can solve business problems. 
   - Describe the Microsoft AI products, services, and solutions. 
 prerequisites: None
-iconUrl: /learn/achievements/microsoft-approach-to-ai.svg
+iconUrl: /training/achievements/microsoft-approach-to-ai.svg
 levels: 
 - beginner
 roles: 
@@ -26,7 +26,9 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- artificial-intelligence
+units:
 - learn-wwl.microsoft-approach-to-ai.introduction
 - learn-wwl.microsoft-approach-to-ai.autonomous-systems
 - learn-wwl.microsoft-approach-to-ai.intelligent-bot-demo

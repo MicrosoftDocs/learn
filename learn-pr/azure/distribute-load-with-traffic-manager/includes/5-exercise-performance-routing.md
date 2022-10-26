@@ -2,7 +2,7 @@ Your network architect would like to ensure customers have the best performance.
 
 ## Create a Traffic Manager profile using performance routing
 
-1. Create a new Traffic Manager profile that is set up with performance routing. Run these commands.
+1. Create a new Traffic Manager profile that is set up with performance routing. Run these commands:
 
     ```azurecli
         az network traffic-manager profile create \
@@ -13,7 +13,7 @@ Your network architect would like to ensure customers have the best performance.
         --output table
     ```
 
-1. Create two new endpoints that point to the public IP addresses of the virtual machines. Run these commands.
+1. Create two new endpoints that point to the public IP addresses of the virtual machines. Run these commands:
 
     ```azurecli
     WestId=$(az network public-ip show \
@@ -56,11 +56,11 @@ Your network architect would like to ensure customers have the best performance.
         --output tsv)
     ```
 
-1. Depending on where you're located, you'll be directed to the best performing endpoint.
+1. Depending on where you're located, you'll be directed to the best-performing endpoint.
 
     :::image type="content" source="../media/5-performance-testing.png" alt-text="Screenshot of a webpage running the web app closest to you." loc-scope="other":::
 
-1. Run the following `nslookup` command to resolve the Traffic Manager profile domain name.
+1. Run the following `nslookup` command to resolve the Traffic Manager profile domain name:
 
     ```azurecli
     nslookup $(az network traffic-manager profile show \
@@ -70,7 +70,7 @@ Your network architect would like to ensure customers have the best performance.
             --output tsv)
     ```
 
-    The `nslookup` command returns where the domain name resolves. For example, if you're closest to Europe, it returns the following.
+    The `nslookup` command returns where the domain name resolves. For example, if you're closest to Europe, it returns the following:
 
     ```output
     Non-authoritative answer:

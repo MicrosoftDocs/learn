@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Familiarity with basic computing concepts and terminology.
   - Familiarity with cloud computing. 
-iconUrl: /learn/achievements/discover-azure-government.svg
+iconUrl: /training/achievements/discover-azure-government.svg
 levels: 
 - beginner
 roles: 
@@ -29,7 +29,10 @@ products:
 - azure-iot-hub
 - azure-stack-hub
 - azure-farmbeats
-units: 
+subjects:
+- cloud-computing
+- migration
+units:
 - learn.azure.discover-azure-government.1-introduction
 - learn.azure.discover-azure-government.2-cloud-solutions-azure
 - learn.azure.discover-azure-government.3-transparency-public-sector

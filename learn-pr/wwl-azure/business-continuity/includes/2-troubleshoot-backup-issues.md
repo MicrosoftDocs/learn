@@ -139,7 +139,7 @@ Check that:
 
 - You have network connectivity between the MARS backup agent and Azure.
 
-- The MARS agent is running. You might need restart it and ensure the MARS agent is ready.
+- The MARS agent is running. You might need to restart it and ensure the MARS agent is ready.
 
 - There is 5%-10% free space in the scratch folder.
 
@@ -183,7 +183,7 @@ C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.RecoveryServices.VMSnapshot
 
 - Is the Azure VM Guest Agent service installed and started? Go to services.msc to check it is running then try rebooting the VM.
 
-- Is the Windows Azure VM Guest Agent the latest version?
+- Is the Microsoft Azure VM Guest Agent the latest version?
 
 ### Step 3: Check Azure VM extension health
 

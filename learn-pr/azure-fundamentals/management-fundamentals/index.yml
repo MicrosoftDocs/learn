@@ -17,7 +17,7 @@ prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.
 ratingEnabled: true
-iconUrl: /learn/achievements/management-fundamentals.svg
+iconUrl: /training/achievements/management-fundamentals.svg
 levels:
 - beginner
 roles:
@@ -31,6 +31,8 @@ products:
 - azure-portal
 - azure-clis
 - azure-resource-manager
+subjects:
+- device-management
 units:
 - learn.azure.management-fundamentals.introduction
 - learn.azure.management-fundamentals.identify-product-options

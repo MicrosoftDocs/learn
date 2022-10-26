@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-data-stores-use-powershell-providers.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which command would you use to get help information for the Registry provider?"
+    choices:
+    - content: "`Get-Help about_Registry_Provider`"
+      isCorrect: true
+      explanation: "Correct. The `Get-Help about_Registry_Provider` command gets the help information for the Registry provider. Help topics for providers have names in the format of about_ProviderName_Provider."
+    - content: "`Get-Command Registry_Provider`"
+      isCorrect: false
+      explanation: "Incorrect. You will use the `Get-Help about_Registry_Provider` command to get help information for the Registry provider. Help topics for providers have names in the format of about_ProviderName_Provider."
+    - content: "`Get-Help Registry_Provider`"
+      isCorrect: false
+      explanation: "Incorrect. You will use the `Get-Help about_Registry_Provider` command to get help information for the Registry provider. Help topics for providers have names in the format of about_ProviderName_Provider."
+  - content: "Which of the following options is a PowerShell provider that loads automatically when you open a Windows PowerShell prompt?"
+    choices:
+    - content: "HKCU"
+      isCorrect: false
+      explanation: "Incorrect. The Alias provider loads automatically when you open a Windows PowerShell prompt. HKCU is a PowerShell drive, not a provider. The ActiveDirectory provider is loaded only after you load the ActiveDirectory module."
+    - content: "Alias"
+      isCorrect: true
+      explanation: "Correct. The Alias provider loads automatically when you open a Windows PowerShell prompt. HKCU is a PowerShell drive, not a provider. The ActiveDirectory provider is loaded only after you load the ActiveDirectory module."
+    - content: "ActiveDirectory"
+      isCorrect: false
+      explanation: "Incorrect. The Alias provider loads automatically when you open a Windows PowerShell prompt. HKCU is a PowerShell drive, not a provider. The ActiveDirectory provider is loaded only after you load the ActiveDirectory module."

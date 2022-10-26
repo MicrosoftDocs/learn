@@ -3,9 +3,9 @@ uid: learn.github.create-host-web-sites-github-pages
 metadata:
   title: "Create and host web sites by using GitHub Pages"
   description: Learn how to host your personal, organization, and project sites for free with GitHub Pages.
-  ms.date: 06/26/2020
-  author: tpetchel
-  ms.author: thpetche
+  ms.date: 07/08/2022
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Create and host web sites by using GitHub Pages"
@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub
-iconUrl: /learn/achievements/github/create-host-web-sites-github-pages.svg
+iconUrl: /training/achievements/github/create-host-web-sites-github-pages.svg
 ratingEnabled: true
 levels:
 - beginner
@@ -33,6 +33,8 @@ roles:
 products:
 - github
 - azure
+subjects:
+- development-tools
 units:
 - learn.github.create-host-web-sites-github-pages.1-introduction
 - learn.github.create-host-web-sites-github-pages.2-what-is-github-pages

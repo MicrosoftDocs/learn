@@ -46,14 +46,20 @@ To use the JavaScript interop, you inject the `IJSRuntime` abstraction.
     @inject IJSRuntime JsRuntime
     ```
 
-1. Currently, the `OnClick` event for the **X** calls the `OrderState.RemoveConfiguredPizza(configuredPizza))` method directly.
+1. Currently, the `OnClick` event for the **X** calls the `OrderState.RemoveConfiguredPizza(configuredPizza))` method directly. Replace the entire `a` element with the following:
+
+   ```razor
+   <a @onclick="@(async () => await ShowConfirm(configuredPizza))" class="delete-item">x</a>
+   ```
+
 1. Add a new method to call the JavaScript `confirm` function. If the customer selects **OK** call the `RemoveConfiguredPizza`.
 
     ```razor
     private async Task ShowConfirm(Pizza removePizza)
     {
-      if (await JsRuntime.InvokeAsync<bool>("confirm",$"Do you want to remove the {removePizza.Special.Name} from your order?")) {
-        OrderState.RemoveConfiguredPizza(removePizza);
+      if (await JsRuntime.InvokeAsync<bool>(
+          "confirm", $"Do you want to remove the {removePizza.Special.Name} from your order?")) {
+          OrderState.RemoveConfiguredPizza(removePizza);
       }
     }
     ```

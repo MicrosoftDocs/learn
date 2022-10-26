@@ -20,7 +20,7 @@ prerequisites: |
   - Basic experience with using a web browser
   - Basic experience with using email
   - Basic experience with using any kind of online account, such as banking or online shopping services
-iconUrl: /learn/achievements/security/securing-you-basics-beyond.svg
+iconUrl: /training/achievements/security/securing-you-basics-beyond.svg
 levels:
 - beginner
 roles:
@@ -32,6 +32,8 @@ roles:
 - business-user
 products:
 - azure
+subjects:
+- threat-protection
 units:
 - learn.securing-you-basics-beyond.1-introduction
 - learn.securing-you-basics-beyond.2-phishing

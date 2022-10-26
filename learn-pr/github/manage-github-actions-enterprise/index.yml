@@ -28,6 +28,9 @@ products:
 prerequisites: |
   - A GitHub Enterprise Cloud or Enterprise Server account
   - Working knowledge of GitHub Actions and workflows
+subjects:
+- development-tools
+- devops
 units:
   - learn.github.manage-github-actions-enterprise.introduction
   - learn.github.manage-github-actions-enterprise.manage-actions-workflows
@@ -36,6 +39,6 @@ units:
   - learn.github.manage-github-actions-enterprise.exercise
   - learn.github.manage-github-actions-enterprise.knowledge-check
   - learn.github.manage-github-actions-enterprise.summary
-iconUrl: /learn/achievements/github/manage-github-actions-enterprise.svg
+iconUrl: /training/achievements/github/manage-github-actions-enterprise.svg
 badge:
   uid: learn.github.manage-github-actions-enterprise.badge

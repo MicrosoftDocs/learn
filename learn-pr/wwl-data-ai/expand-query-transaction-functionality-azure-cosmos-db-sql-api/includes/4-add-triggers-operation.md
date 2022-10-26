@@ -1,4 +1,4 @@
-Triggers are the core way that Azure Cosmos DB SQL API can inject business logic both before and after operations. Triggers are resources stored within a container, and their code is written in JavaScript, much like stored procedures and user-defined functions.
+Triggers are the core way that Azure Cosmos DB for NoSQL can inject business logic both before and after operations. Triggers are resources stored within a container, and their code is written in JavaScript, much like stored procedures and user-defined functions.
 
 Triggers are defined as JavaScript functions. The function is then executed when the trigger is invoked.
 
@@ -13,13 +13,13 @@ Within the function, the ``getContext()`` method retrieves a context object, whi
 
 - Access the HTTP response object (the source of a post-trigger)
 
-- Access the corresponding Azure Cosmos DB SQL API container
+- Access the corresponding Azure Cosmos DB for NoSQL container
 
 Using the context object, you can invoke the ``getRequest()`` or ``getResponse()`` methods to access the HTTP request and response objects. You can also invoke the `getCollection()` method to access the container using the JavaScript query API.
 
 ### Pre-trigger
 
-Pre-triggers are ran before an operation and cannot have any input parameters. They can perform actions such as validate the properties of an item, or inject missing properties.
+Pre-triggers are run before an operation and cannot have any input parameters. They can perform actions such as validate the properties of an item, or inject missing properties.
 
 Let's walk through a simple example where a JSON item is ready to be created in a container.
 
@@ -84,9 +84,9 @@ If you invoke the create operation using this pre-trigger, you should expect you
 
 ### Post-trigger
 
-Post-triggers run after an operation has completed and can have input parameters even though they are not required. They have action to the HTTP response message right before it is sent to the client. They can perform actions such as updating or creating secondary items based on changes to your original item.
+Post-triggers run after an operation has completed and can have input parameters even though they are not required. They perform actions on the HTTP response message right before it is sent to the client. They can perform actions such as updating or creating secondary items based on changes to your original item.
 
-Let's walk through a slightly different example with the same JSON file. Now, a post-trigger will be used to create a second item with a different materialized view of our data. Our goal, is to create a second item with three JSON properties; **sourceId**, **categoryId**, and **displayName**.
+Let's walk through a slightly different example with the same JSON file. Now, a post-trigger will be used to create a second item with a different materialized view of our data. Our goal is to create a second item with three JSON properties; **sourceId**, **categoryId**, and **displayName**.
 
 ```json
 {

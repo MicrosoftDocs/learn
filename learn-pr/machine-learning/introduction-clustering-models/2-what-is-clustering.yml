@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.introduction-clustering-models.what-is-clustering
+title: What is clustering?
+metadata:
+  title: What is clustering?
+  description: What is clustering?
+  ms.date: 02/14/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-what-is-clustering.md)]

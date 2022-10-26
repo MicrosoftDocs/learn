@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.javascript-on-azure.deploy-expressjs-app-service.exercise-use-app-review-logs
-title: "Exercise - Use app and review logs"
+title: "Exercise - Use logs to find failures"
 metadata:
   unitType: exercise
-  title: "Exercise - Use app and review logs"
-  description: "Use the Express.js sample web app to generate log files. Review the logs for startup and actions in Visual Studio Code. Review app failures such as 404 in the Azure portal."
-  ms.date: 03/30/2022
+  title: "Exercise - Use logs to find failures"
+  description: "Use the Node.js (Express.js) sample web app to generate log files. Review the logs for startup and actions in Visual Studio Code. Review app failures such as 404 in the Azure portal."
+  ms.date: 10/18/2022
   author: diberry
   ms.author: diberry
   ms.topic: interactive-tutorial

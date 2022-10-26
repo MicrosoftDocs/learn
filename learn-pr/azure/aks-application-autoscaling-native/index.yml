@@ -21,7 +21,7 @@ prerequisites: |
   - Ability to create a Docker container
   - Ability to navigate the Azure portal
   - Basic knowledge of Kubernetes and its concepts
-iconUrl: /learn/achievements/aks-application-autoscaling-native.svg
+iconUrl: /training/achievements/aks-application-autoscaling-native.svg
 levels:
   - beginner
 roles:
@@ -31,6 +31,9 @@ roles:
 products:
   - azure
   - azure-kubernetes-service
+subjects:
+- cloud-computing
+- architecture
 units:
   - learn.aks-application-autoscaling-native.1-introduction
   - learn.aks-application-autoscaling-native.2-concepts-scaling

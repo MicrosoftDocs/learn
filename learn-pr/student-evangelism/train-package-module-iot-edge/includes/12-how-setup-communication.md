@@ -34,7 +34,7 @@ Azure IoT Hub enables communication between the virtual device and the cloud. Cr
 
 ## Register the IoT Edge device to IoT Hub
 
-The process of registration of an IoT device involves retrieving the connection string for your device. The device identity lives in the cloud, and you use a unique device connection string to associate a physical device to a device identity. Use the **az iot hub device-identity show-connection-string** command to retrieve the connection string. Copy the value of the connectionString key from the JSON output and save it. You'll use this connection string to configure the IoT Edge runtime.
+The process of registration of an IoT device involves retrieving the connection string for your device. The device identity lives in the cloud, and you use a unique device connection string to associate a physical device to a device identity. Use the [az iot hub device-identity connection-string show](/cli/azure/iot/hub/device-identity/connection-string#az-iot-hub-device-identity-connection-string-show) command to retrieve the connection string. Copy the value of the connectionString key from the JSON output and save it. You'll use this connection string to configure the IoT Edge runtime.
 
 ## How to configure your IoT Edge device
 

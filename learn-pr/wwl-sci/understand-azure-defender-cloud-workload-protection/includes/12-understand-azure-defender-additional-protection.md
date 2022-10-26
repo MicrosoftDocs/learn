@@ -18,7 +18,7 @@ Azure Application Gateway offers a web application firewall (WAF) that provides 
 
 If you have a license for Azure WAF, your WAF alerts are streamed to Defender for Cloud with no extra configuration needed.
 
-## Microsoft Defender for Cloud
+## Display Azure DDoS Protection alerts in Microsoft Defender for Cloud
 
 Distributed denial of service (DDoS) attacks are known to be easy to execute. They've become a great security concern, particularly if you're moving your applications to the cloud.  A DDoS attack attempts to exhaust an application's resources, making the application unavailable to legitimate users. DDoS attacks can target any endpoint that can be reached through the internet.  To defend against DDoS attacks, purchase a license for Azure DDoS Protection and ensure you're following application design best practices. DDoS Protection provides different service tiers.
 

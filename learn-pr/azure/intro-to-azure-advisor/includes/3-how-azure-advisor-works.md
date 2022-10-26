@@ -90,7 +90,7 @@ Azure Advisor helps you ensure and improve the continuity of your business-criti
 * Protection from accidental VM deletion.
 * Create Azure Service Health alerts.
 * Configure Traffic Manager endpoints for resiliency.
-* See the full list on the [Reliability Guide](https://docs.microsoft.com/azure/advisor/advisor-high-availability-recommendations)
+* See the full list on the [Reliability Guide](/azure/advisor/advisor-high-availability-recommendations)
 
 ### Operational excellence Recommendations
 
@@ -109,4 +109,4 @@ Recommendations to ensure operational excellence on my subscriptions:
 
 The performance recommendations in Azure Advisor can help improve the speed and responsiveness of your business-critical applications. You can get performance recommendations from Advisor on the Performance tab of the Advisor dashboard.
 
-Many of these recommendations are concerned with Traffic Manager performance, database performance for SQL Database, app service performance reliability, and managed disk I/O throttling, among many others. The entire list is available on the [Performance efficiency recommendation page](https://docs.microsoft.com/azure/advisor/advisor-performance-recommendations).
+Many of these recommendations are concerned with Traffic Manager performance, database performance for SQL Database, app service performance reliability, and managed disk I/O throttling, among many others. The entire list is available on the [Performance efficiency recommendation page](/azure/advisor/advisor-performance-recommendations).

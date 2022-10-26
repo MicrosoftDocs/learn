@@ -25,7 +25,7 @@ Figure 2 shows the typical end-to-end steps for a customer provisioning a virtua
 _Figure 2: Typical end-to-end IaaS provisioning steps_
 
 The steps illustrated in Figure 2 are explained as follows: 
-1. The customer logs on to the portal and is authenticated by the identity management system. 
+1. The customer signs in to the portal and is authenticated by the identity management system. 
 1. Based on the customer's entitlement, the portal extracts a subset of services that the user can order from the service catalog and constructs a "request catalog." 
 1. The customer selects a service, for example, a virtual server of a particular size. Each service has a set of technical requirements (for example, the amount of vRAM or vCPU) and business requirements (for example, high availability or SLA requirements) associated with it. 
 1. The orchestration tool extracts the technical service information from the service catalog and decomposes the service into individual parts, such as compute resource configuration, network configuration, and so on. 

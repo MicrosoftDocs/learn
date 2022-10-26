@@ -1,6 +1,6 @@
 Let's say you underestimated how large some of the uploaded files would be and that your upload disk is running out of space. You decide to double the space from 64 GB to 128 GB.
 
-Here you'll practice the process you learned about in the previous units.
+Here, you'll practice the process you learned about in the previous units.
 
 ## Resize the data disk
 
@@ -41,11 +41,11 @@ To resize a disk, you need the ID or name of the disk. In this case, you already
     az vm start --name support-web-vm01
     ```
 
-    But we aren't finished yet. The operating system on the VM cannot use the extra space yet. This is done in the next section.
+    But we aren't finished yet. The operating system on the VM cannot use the extra space yet. We'll do this in the next section.
 
 ## Expand the disk partition
 
-The final step is to tell the OS about the available space. Just like the partitioning and format steps you did earlier, this process is identical to the one you'd follow to expand a physical, on-premises, disk.
+The final step is to tell the OS about the available space. Just like the partitioning and format steps you did earlier, this process is identical to the one you'd follow to expand a physical on-premises disk.
 
 1. Although you can reserve a fixed public IP address for your VM, by default your VM receives a new public IP address when it is de-allocated and restarted. Run the following `az vm show` command to update your Bash variable with your VM's new public IP address.
 

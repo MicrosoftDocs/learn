@@ -1,4 +1,4 @@
-Azure Defender for IoT continuously analyzes your IoT solution using advanced analytics and threat intelligence to alert you to malicious activity. In addition, you can create custom alerts based on your knowledge of expected device behavior. An alert acts as an indicator of potential compromise, and should be investigated and remediated.
+Microsoft Defender for IoT continuously analyzes your IoT solution using advanced analytics and threat intelligence to alert you to malicious activity. In addition, you can create custom alerts based on your knowledge of expected device behavior. An alert acts as an indicator of potential compromise, and should be investigated and remediated.
 
 Installing and configuring a Security Agent onto your IoT devices adds a large number of alerts to your security solution.
 
@@ -50,7 +50,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     LA Linux binary being called/executed from the command line was detected. This process may be legitimate activity, or an indication that your device is compromised.
   :::column-end:::
   :::column:::
-    Review the command with the user that ran it and check if this command is something legitimately expected to run on the device. If not, escalate the alert to your information security team.
+    Review the command with the user that ran it. Verify that this command is intended to run on the device. If not, escalate the alert to your information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -67,7 +67,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Possible manipulation of on-host firewall detected. Malicious actors often disable the on-host firewall in an attempt to exfiltrate data.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command to confirm if this was legitimate expected activity on the device. If not, escalate the alert to your information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to your information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -84,7 +84,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Initiation of port forwarding to an external IP address detected.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command if this was legitimate activity that you expect to see on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -101,7 +101,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Linux Audited system provides a way to track security-relevant information on the system. The system records as much information about the events that are happening on your system as possible. This information is crucial for mission-critical environments to determine who violated the security policy and the actions they performed. Disabling Audited logging may prevent your ability to discover violations of security policies used on the system.
   :::column-end:::
   :::column:::
-    Check with the device owner if this was legitimate activity with business reasons. If not, this event may be hiding activity by malicious actors. Immediately escalated the incident to your information security team.
+    Check with the device owner to ensure that this was an expected activity with business reasons. If not, this event may be hiding activity by malicious actors. Immediately escalated the incident to your information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -118,7 +118,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Analysis of host data on a device detected a potential reverse shell. Reverse shells are often used to get a compromised machine to call back into a machine controlled by a malicious actor.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command if this was legitimate activity that you expect to see on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -152,7 +152,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Successful local sign-in to the device detected.
   :::column-end:::
   :::column:::
-    Make sure the signed in user is an authorized party.
+    Make sure the signed-in user is an authorized party.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -169,7 +169,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Possible web shell detected. Malicious actors commonly upload a web shell to a compromised machine to gain persistence or for further exploitation.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command if this was legitimate activity that you expect to see on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -203,7 +203,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Execution of a process normally associated with common Linux botnets detected.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command if this was legitimate activity that you expect to see on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -220,7 +220,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Execution of rm -rf commands applied to suspicious locations detected using analysis of host data. Because rm -rf recursively deletes files, it is normally only used on discrete folders. In this case, it is being used in a location that could remove a large amount of data. Fairware ransomware is known to execute rm -rf commands in this folder.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command this was legitimate activity that you expect to see on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -237,7 +237,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Execution of files similar to known ransomware that may prevent users from accessing their system, or personal files, and may demand ransom payment to regain access.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command if this was legitimate activity that you expect to see on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -271,7 +271,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Execution of a process normally associated with digital currency mining detected.
   :::column-end:::
   :::column:::
-    Verify with the user that ran the command if this was legitimate activity on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -288,7 +288,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Suspicious use of the nohup command on host detected. Malicious actors commonly run the nohup command from a temporary directory, effectively allowing their executables to run in the background. Seeing this command run on files located in a temporary directory is not expected or usual behavior.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command if this was legitimate activity that you expect to see on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -305,7 +305,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Suspicious use of the useradd command detected on the device.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command if this was legitimate activity that you expect to see on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -322,7 +322,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Machine logs indicate that your Docker daemon (dockerd) exposes a TCP socket. By default, Docker configuration, does not use encryption or authentication when a TCP socket is enabled. Default Docker configuration enables full access to the Docker daemon, by anyone with access to the relevant port.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command if this was legitimate activity that you expect to see on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -356,7 +356,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Download of a file from a known malware source detected.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command if this was legitimate activity that you expect to see on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -370,10 +370,10 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Agent
   :::column-end:::
   :::column:::
-    Analysis of host data detected possible manipulation of an htaccess file. Htaccess is a powerful configuration file that allows you to make multiple changes to a web server running Apache Web software, including basic redirect functionality, and more advanced functions, such as basic password protection. Malicious actors often modify htaccess files on compromised machines to gain persistence.
+    Analysis of host data detected possible manipulation of a htaccess file. Htaccess is a powerful configuration file that allows you to make multiple changes to a web server running Apache Web software, including basic redirect functionality, and more advanced functions, such as basic password protection. Malicious actors often modify htaccess files on compromised machines to gain persistence.
   :::column-end:::
   :::column:::
-    Confirm this is legitimate expected activity on the host. If not, escalate the alert to your information security team.
+    Confirm that this is an expected activity on the host. If not, escalate the alert to your information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -390,7 +390,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     A tool often associated with malicious users attacking other machines in some way was detected.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command if this was legitimate activity that you expect to see on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -404,7 +404,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Agent
   :::column-end:::
   :::column:::
-    The Azure Defender for IoT security agent failed to parse the module twin configuration due to type mismatches in the configuration object.
+    The Microsoft Defender for IoT security agent failed to parse the module twin configuration due to type mismatches in the configuration object.
   :::column-end:::
   :::column:::
     Validate your module twin configuration against the IoT agent configuration schema, fix all mismatches.
@@ -441,7 +441,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Mismatch between the script interpreter and the extension of the script file provided as input detected. This type of mismatch is commonly associated with attacker script executions.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command if this was legitimate activity that you expect to see on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -458,7 +458,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     A suspicious file was downloaded and then run on a host in your subscription. This type of activity is commonly associated with the installation of a backdoor.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command if this was legitimate activity that you expect to see on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -475,7 +475,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Possible data egress condition detected using analysis of host data. Malicious actors often egress data from compromised machines.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command if this was legitimate activity that you expect to see on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -492,7 +492,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Common executable overwritten on the device. Malicious actors are known to overwrite common files as a way to hide their actions or as a way to gain persistence.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command if this was legitimate activity that you expect to see on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -526,7 +526,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Suspicious removal of log files on the host detected.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command if this was legitimate activity that you expect to see on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -543,7 +543,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Execution of a process with a suspicious extension detected using analysis of host data. Suspicious extensions may trick users into thinking files are safe to be opened and can indicate the presence of malware on the system.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command if this was legitimate activity that you expect to see on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -560,7 +560,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Detection usage of a tool commonly associated with malicious attempts to access credentials.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command if this was legitimate activity that you expect to see on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -577,7 +577,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Suspicious compilation detected. Malicious actors often compile exploits on a compromised machine to escalate privileges.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command if this was legitimate activity that you expect to see on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -594,7 +594,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Analysis of host data detected a file that was downloaded and run in the same command. This technique is commonly used by malicious actors to get infected files onto victim machines.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command if this was legitimate activity that you expect to see on the device. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -645,7 +645,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Bash history log cleared. Malicious actors commonly erase bash history to hide their own commands from appearing in the logs.
   :::column-end:::
   :::column:::
-    Review with the user that ran the command that the activity in this alert to see if you recognize this as legitimate administrative activity. If not, escalate the alert to the information security team.
+    Review with the user that ran the command. Verify that this was an expected administrative activity on the device. If not, escalate the alert to the information security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -696,7 +696,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     New local user added to a group on this device. Changes to user groups are uncommon, and can indicate a malicious actor may be collecting access permissions.
   :::column-end:::
   :::column:::
-    Verify if the change is consistent with the permissions required by the affected user. If the change is inconsistent, escalate to your Information Security team.
+    Verify that the change is consistent with the permissions required by the affected user. If the change is inconsistent, escalate to your Information Security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -713,7 +713,7 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     A local user was deleted from one or more groups. Malicious actors are known to use this method in an attempt to deny access to legitimate users or to delete the history of their actions.
   :::column-end:::
   :::column:::
-    Verify if the change is consistent with the permissions required by the affected user. If the change is inconsistent, escalate to your Information Security team.
+    Verify that the change is consistent with the permissions required by the affected user. If the change is inconsistent, escalate to your Information Security team.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -730,6 +730,6 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
     Deletion of a local user detected. Local user deletion is uncommon, a malicious actor may be trying to deny access to legitimate users or to delete the history of their actions.
   :::column-end:::
   :::column:::
-    Verify if the change is consistent with the permissions required by the affected user. If the change is inconsistent, escalate to your Information Security team.
+    Verify that the change is consistent with the permissions required by the affected user. If the change is inconsistent, escalate to your Information Security team.
   :::column-end:::
 :::row-end:::

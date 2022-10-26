@@ -18,7 +18,7 @@ abstract: |
   - Classify available blockchain options on Azure
 prerequisites: |
   - Basic knowledge of programming concepts such as variables and conditional logic
-iconUrl: /learn/achievements/intro-to-blockchain.svg
+iconUrl: /training/achievements/intro-to-blockchain.svg
 levels:
 - beginner
 roles:
@@ -29,6 +29,8 @@ products:
 - azure
 - azure-blockchain-service
 - azure-blockchain-workbench
+subjects:
+- blockchain
 units:
 - learn.azure-intro-to-blockchain.introduction
 - learn.azure-intro-to-blockchain.what-is-blockchain

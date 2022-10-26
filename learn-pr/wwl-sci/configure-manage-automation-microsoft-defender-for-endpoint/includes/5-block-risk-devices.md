@@ -15,7 +15,7 @@ The required roles to access these portals and implement Conditional access:
 
 - Azure AD portal - You'll need to sign in as a global administrator, security administrator, or Conditional Access administrator.
 
-:::image type="content" source="../media/mde-architecture.png" alt-text="architecture for MDE":::
+:::image type="content" source="../media/mde-architecture.png" alt-text="Diagram of architecture for M D E conditional access.":::
 
 Take the following steps to enable Conditional Access:
 
@@ -59,8 +59,8 @@ Take the following steps to enable Conditional Access:
 
 1. In the Device Health settings, set **Require the device to be at or under the Device Threat Level** to your preferred level:
 
-    - Secured: This level is the most secure. The device cannot have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant.
-    - Low: The device is compliant if only low-level threats exist. Devices with medium or high threat levels are not compliant.
+    - Secured: This level is the most secure. The device can't have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant.
+    - Low: The device is compliant if only low-level threats exist. Devices with medium or high threat levels aren't compliant.
     - Medium: The device is compliant if the threats found on the device are low or medium. If high-level threats are detected, the device is determined as noncompliant.
     - High: This level is the least secure and allows all threat levels. So devices with high, medium, or low threat levels are considered compliant.
 

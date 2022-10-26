@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Python functions
   description: Functions are a foundational knowledge for writing modular code. Understanding inputs and outputs in functions will help you write better software that's reusable and readable.
-  ms.date: 12/07/2021
+  ms.date: 09/15/2022
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Basic programming knowledge, like using and assigning variables
   - Some experience with using Jupyter notebooks, including adding and modifying code
-iconUrl: /learn/achievements/functions-python.svg
+iconUrl: /training/achievements/functions-python.svg
 levels: 
   - beginner
 roles: 
@@ -27,6 +27,8 @@ roles:
   - student
 products: 
   - vs-code
+subjects:
+- development-tools
 units:
 - learn.beginner-python.functions-python.introduction
 - learn.beginner-python.functions-python.function-basics

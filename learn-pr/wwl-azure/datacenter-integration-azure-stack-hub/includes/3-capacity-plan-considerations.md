@@ -5,7 +5,7 @@ Options include choosing CPU, memory density, storage configuration, and overall
  -  Azure Stack Hub is architected to host the infrastructure or management components within the solution itself.
  -  Some of the solution's capacity is reserved in support of resiliency by updating the software to minimize disruption of tenant workloads.
 
-The [Azure Stack Hub capacity planner spreadsheet](https://docs.microsoft.com/azure-stack/operator/azure-stack-capacity-planner?&amp;preserve-view=true) helps you make informed decisions for planning capacity in two ways.
+The [Azure Stack Hub capacity planner spreadsheet](/azure-stack/operator/azure-stack-capacity-planner?&amp;preserve-view=true) helps you make informed decisions for planning capacity in two ways.
 
  -  Selecting a hardware offering and attempting to fit a combination of resources.
  -  Defining the workload that Azure Stack Hub is intended to run to view the available hardware SKUs that can support it.

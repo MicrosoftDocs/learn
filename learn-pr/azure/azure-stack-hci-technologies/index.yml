@@ -21,7 +21,7 @@ prerequisites: |
   - Basic knowledge of Hyper-V
   - Basic knowledge of Azure Stack HCI
   - Basic knowledge of Windows Server operating system management
-iconUrl: /learn/achievements/azure-stack-hci-technologies.svg
+iconUrl: /training/achievements/azure-stack-hci-technologies.svg
 levels:
 - beginner
 roles:
@@ -33,6 +33,8 @@ products:
 - azure
 - azure-stack-hci
 - windows-server
+subjects:
+- data-warehousing
 units:
 - learn.azure.azure-stack-hci-technologies.1-introduction
 - learn.azure.azure-stack-hci-technologies.2-hyper-v

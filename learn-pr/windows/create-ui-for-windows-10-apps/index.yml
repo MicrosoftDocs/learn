@@ -5,6 +5,7 @@ metadata:
   description: Learn the fundamentals of creating UI for Windows 10 apps, combining elements to create the UI that you want on either UWP or WPF platforms.
   author: LanceMcCarthy
   ms.author: quradic
+  ms.date: 05/17/2022
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
 title: Create a user interface (UI) for Windows 10 apps
@@ -19,13 +20,15 @@ prerequisites: |
  - A computer that runs the current release of Windows 10. To verify that you're running the latest version, go to **Settings** > **Windows Update**.
  - [Visual Studio 2017](/visualstudio/productinfo/vs2017-system-requirements-vs) installed.
  - Basic knowledge of Windows 10 app development.
-iconUrl: /learn/achievements/creating-ui-windows10-apps.svg
+iconUrl: /training/achievements/creating-ui-windows10-apps.svg
 levels:
 - beginner
 roles:
 - developer
 products:
 - windows
+subjects:
+- cloud-computing
 units:
 - learn-windows.creating-ui-windows-10-apps.1-creating-a-ui-layout
 - learn-windows.creating-ui-windows-10-apps.2-adding-elements-to-your-ui

@@ -2,11 +2,11 @@ Applying a label to a file, an email, a SharePoint Site, or a Microsoft Team is 
 
 ## Pulling a report
 
-The sensitivity labels are a part of the Reporting system in the Security and the Compliance center.  For sensitivity labeling, we will focus on the Microsoft 365 compliance center reports.
+The sensitivity labels are a part of the Reporting system in the Security center and Microsoft Purview compliance portal.  For sensitivity labeling, we'll focus on the Microsoft Purview compliance portal reports.
 
 An existing sensitivity label report may be accessed with these steps:
 
-1. Navigate to the **Microsoft 365 compliance center** at [https://compliance.microsoft.com](https://compliance.microsoft.com/?azure-portal=true).
+1. Navigate to the **Microsoft Purview compliance portal** at [https://compliance.microsoft.com](https://compliance.microsoft.com/?azure-portal=true).
 
 1. Navigate to **Reports**.
 
@@ -65,11 +65,11 @@ A Sensitivity Label monitoring and analyzing is also possible with Microsoft Sen
 
 ## Learn more
 
-[Microsoft Sentinel documentation | Microsoft Docs](/azure/sentinel/?azure-portal=true)
+[Microsoft Sentinel documentation](/azure/sentinel/?azure-portal=true)
 
-[Quickstart: Onboard in Microsoft Sentinel | Microsoft Docs](/azure/sentinel/quickstart-onboard?azure-portal=true)
+[Quickstart: Onboard in Microsoft Sentinel](/azure/sentinel/quickstart-onboard?azure-portal=true)
 
-[Manage usage and costs with Azure Monitor Logs](/azure/azure-monitor/platform/manage-cost-storage?azure-portal=true)
+[Azure Monitor Logs pricing details](/azure/azure-monitor/platform/manage-cost-storage?azure-portal=true)
 
-[Central reporting for Azure Information Protection | Microsoft Docs](/azure/information-protection/reports-aip?azure-portal=true)
+[Analytics and central reporting for Azure Information Protection](/azure/information-protection/reports-aip?azure-portal=true)
 

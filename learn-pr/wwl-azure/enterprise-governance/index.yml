@@ -17,7 +17,7 @@ abstract: |
   - Configure and deploy access to services using RBAC
 prerequisites: |
   - None
-iconUrl: /learn/achievements/enterprise-governance.svg
+iconUrl: /training/achievements/enterprise-governance.svg
 levels:
 - intermediate
 roles:
@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- cloud-security
 units:
 - learn.wwl.enterprise-governance.introduction
 - learn.wwl.enterprise-governance.shared-responsibility-model

@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   *   Azure Data Fundamentals.
   *   Knowledge of SAP products such as SAP HANA or SAP NetWeaver.
-iconUrl: /learn/achievements/turn-insight-into-action-combine-sap-other-data.svg
+iconUrl: /training/achievements/turn-insight-into-action-combine-sap-other-data.svg
 levels:
 - beginner
 roles:
@@ -34,6 +34,9 @@ products:
 - azure
 - azure-synapse-analytics
 - power-platform
+subjects:
+- cloud-computing
+- data-analytics
 units:
 - learn.wwl.turn-insight-into-action-combine-sap-other-data.introduction
 - learn.wwl.turn-insight-into-action-combine-sap-other-data.explore-azure-synapse-analytics

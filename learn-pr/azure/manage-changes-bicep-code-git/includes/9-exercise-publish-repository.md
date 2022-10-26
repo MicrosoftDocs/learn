@@ -14,7 +14,7 @@ During the process, you'll:
 
 1. In a browser, go to [GitHub](https://www.github.com?azure-portal=true). Sign in by using your GitHub account, or create a new account if you don't have one.
 
-1. Select the **+** icon in the upper right of the window, and then select **New repository**.
+1. Select the plus (**+**) icon in the upper right of the window, and then select **New repository**.
 
    :::image type="content" source="../media/9-github-new-repository-menu.png" alt-text="Screenshot of the GitHub interface that shows the menu for creating a new repository." border="true":::
 
@@ -190,7 +190,7 @@ Now that your colleagues will use your repository, it's important to create a _R
 
    ## How to use
    
-   The Azure infrastructure is defined using [Bicep](https://docs.microsoft.com/azure/azure-resource-manager/bicep/).
+   The Azure infrastructure is defined using [Bicep](/azure/azure-resource-manager/bicep/).
 
    To deploy the website's Azure resources, use the *deploy/main.bicep* file.
    ```

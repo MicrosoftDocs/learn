@@ -130,5 +130,5 @@ Outline the content that will enable the learner to achieve the task:
 
 Note any additional information that may be beneficial to this content such as links, reference material, etc.
 
-https://docs.microsoft.com/azure/azure-vmware/introduction
+https://learn.microsoft.com/azure/azure-vmware/introduction
 --placeholder for AVS learning path

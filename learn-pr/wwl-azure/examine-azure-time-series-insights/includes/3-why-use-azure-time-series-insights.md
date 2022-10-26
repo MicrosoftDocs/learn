@@ -23,7 +23,6 @@ Azure Time Series Insights addresses this market need by providing a turnkey, en
 A rich operational analytics platform combined with our interactive data exploration capabilities, you can use Time Series Insights to derive more value out of data collected from IoT assets. The preview offering supports:
 
  -  Multi-layered storage solution with warm and cold analytics support providing customers the option to route data between warm and cold for interactive analytics over warm data as well as operational intelligence over decades of historical data.
-    
      -  A highly interactive warm analytics solution to perform frequent, and large number of queries over shorter time span data.
      -  A scalable, performant, and cost optimized time series data lake based on Azure Storage allowing customers to trend years’ worth of time series data in seconds.
  -  Semantic model support that describes the domain and metadata associated with the derived and raw signals from assets and devices.

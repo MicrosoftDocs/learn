@@ -13,7 +13,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "You want to compare two strings ignoring their case.  Which string helper method do you use?"
+  - content: "You want to compare two strings, ignoring their cases.  Which string helper method do you use?"
     choices:
     - content: "`Trim()`"
       isCorrect: false

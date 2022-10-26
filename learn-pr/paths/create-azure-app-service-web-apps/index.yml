@@ -12,10 +12,10 @@ title: 'AZ-204: Create Azure App Service web apps'
 prerequisites: |
   * At least one year of experience developing scalable solutions through all phases of software development.
   * Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
-  * If you are new to Azure or cloud computing it is recommended you complete the [AZ-900: Azure Fundamentals](/learn/paths/az-900-describe-cloud-concepts/) course.
+  * If you are new to Azure or cloud computing it is recommended you complete the [AZ-900: Azure Fundamentals](/training/paths/az-900-describe-cloud-concepts/) course.
 summary: |
   Learn how Azure App Service functions and how to create and update an app. Explore App Service authentication and authorization, configuring app settings, scale apps, and how to use deployment slots.
-iconUrl: /learn/achievements/azure-app-service-create-web-apps.svg
+iconUrl: /training/achievements/azure-app-service-create-web-apps.svg
 levels:
 - intermediate
 roles:
@@ -23,6 +23,8 @@ roles:
 products:
 - azure
 - azure-app-service
+subjects:
+- cloud-computing
 modules:
 - learn.wwl.introduction-to-azure-app-service
 - learn.wwl.configure-web-app-settings

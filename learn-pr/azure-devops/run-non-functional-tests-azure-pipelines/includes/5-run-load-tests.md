@@ -52,7 +52,7 @@ The corresponding test plan file, *LoadTest.jmx*, specifies this variable and us
 When you run JMeter from the command line, you use the `-J` argument to set the `hostname` property. Here's an example:
 
 ```bash
-apache-jmeter-5.4.1/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=tailspin-space-game-web-staging-1234.azurewebsites.net
+apache-jmeter-5.4.3/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=tailspin-space-game-web-staging-1234.azurewebsites.net
 ```
 
 Here you set the `STAGING_HOSTNAME` variable in Azure Pipelines. This variable points to your site's host name that runs on App Service in your **staging** environment. You also set the `jmeterVersion` to specify the version of JMeter to install.
@@ -60,7 +60,7 @@ Here you set the `STAGING_HOSTNAME` variable in Azure Pipelines. This variable p
 When the agent runs, these variables are automatically exported to the agent as environment variables. So your pipeline configuration can run JMeter this way:
 
 ```bash
-apache-jmeter-5.4.1/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=$(STAGING_HOSTNAME)
+apache-jmeter-5.4.3/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=$(STAGING_HOSTNAME)
 ```
 
 Let's add the pipeline variables now, before you update your pipeline configuration. To do so:
@@ -74,7 +74,7 @@ Let's add the pipeline variables now, before you update your pipeline configurat
     > [!IMPORTANT]
     > Don't include the `http://` or `https://` protocol prefix in your value. JMeter provides the protocol when the tests run.
 
-1. Add a second variable named *jmeterVersion*. For its value, specify *5.4.1*.
+1. Add a second variable named *jmeterVersion*. For its value, specify *5.4.3*.
 
     > [!NOTE]
     > This is the version of JMeter that we last used to test this module. To get the latest version, see [Download Apache JMeter](https://jmeter.apache.org/download_jmeter.cgi?azure-portal=true).

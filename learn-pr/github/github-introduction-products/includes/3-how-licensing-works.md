@@ -4,9 +4,9 @@ In this unit, we'll look at a few different ways that GitHub licenses and prices
 
 ## Licensing for metered products
 
-GitHub Actions is free for public repositories and self-hosted runners. For private repositories, each GitHub account receives a certain number of free minutes, depending on the product used with the account. 
+GitHub Actions is free for public repositories and self-hosted runners. For private repositories, each GitHub account receives a certain number of free minutes, depending on the product used with the account.
 
-By default, your account will have a spending limit of $0, which prevents additional usage of minutes after you reach your limit. If you increase your spending limit above the default of $0, you will be billed for any minutes beyond the limits, also called overages. GitHub charges usage to the account that owns the repository where the workflow is run.
+By default, your account will have a spending limit of `$0`, which prevents additional usage of minutes after you reach your limit. If you increase your spending limit above the default of `$0`, you will be billed for any minutes beyond the limits, also called overages. GitHub charges usage to the account that owns the repository where the workflow is run.
 
 Jobs that run on GitHub hosted Windows and macOS runners consume minutes at 2 and 10 times the rate that jobs on Linux runners consume. For example, using 1,000 Windows minutes would consume 2,000 of the minutes included in your account. Using 1,000 macOS minutes, would consume 10,000 minutes included in your account.
 
@@ -20,7 +20,7 @@ The following table compares the minute multiplier for the different operating s
 
 Finally, the free minutes reset each month.  You cannot "roll over" unused minutes from previous months.
 
-If your account's usage surpasses these limits and you have set a spending limit above $0, you will pay per-minute usage based on the operating system used by the GitHub-hosted runner. GitHub rounds the minutes each job uses up to the nearest minute.
+If your account's usage surpasses these limits and you have set a spending limit above `$0`, you will pay per-minute usage based on the operating system used by the GitHub-hosted runner. GitHub rounds the minutes each job uses up to the nearest minute.
 
 > [!NOTE]
 > For current prices, please refer to [GitHub's pricing page](https://github.com/pricing?azure-portal=true).
@@ -61,16 +61,11 @@ If your account has outstanding unpaid charges:
 
 ## Codespaces billing
 
-As of this writing, Codespaces is beta and during this period it is free to use. When Codespaces becomes generally available, you will be billed for storage and compute usage.
+GitHub Codespaces usage is billed for all organization and enterprise accounts on GitHub Team and GitHub Enterprise, which do not include any free minutes or storage. Personal accounts are not currently billed for Codespaces usage.
 
 Compute costs are incurred only when a codespace is active. When you're using a codespace, the codespace is active. After 30 minutes of inactivity, a codespace becomes suspended automatically.
 
-Compute usage is billed per hour, at a rate that depends on your codespace's instance type. During the beta, Codespaces offers a single, Linux instance type. At general availability, GitHub will support three Linux instance types.
-
-- Basic (2 cores, 4-GB RAM, 32 GB SSD)
-- Standard (4 cores, 8-GB RAM, 32 GB SSD)
-- Premium (8 cores, 16-GB RAM, 32 GB SSD)
-
+Compute usage is billed per hour, at a rate that depends on your codespace's instance type. 
 Compute pricing may vary for additional instance types and operating systems supported in the future.
 
 Each codespace also incurs monthly storage costs until you delete the codespace. Storage costs for all instance types incur a small additional fee per month per gigabyte of storage used.

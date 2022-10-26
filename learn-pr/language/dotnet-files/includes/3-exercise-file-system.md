@@ -1,6 +1,6 @@
 You can use .NET to find and return information about files and folders.
 
-Tailwind Traders has many physical stores all over the world. Each night, each store creates a file named *sales.json* that contains the total for all sales for that day. These files are organized in folders by store ID.
+Tailwind Traders has many physical stores all over the world. Every night, each store creates a file named *sales.json* that contains the total for all sales for that day. These files are organized in folders by store ID.
 
 > [!NOTE]
 > This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools) and [Visual Studio Code](https://code.visualstudio.com/) for local development. After completing this module, you can apply the concepts you've learned by using a development environment like Visual Studio (Windows) or Visual Studio for Mac (macOS), or continue development in Visual Studio Code (Windows, Linux, & macOS).
@@ -25,15 +25,15 @@ A starter project has already been created for you. You'll clone it using the in
     git clone https://github.com/MicrosoftDocs/mslearn-dotnet-files && cd mslearn-dotnet-files
     ```
 
-1. Run the following command to Create a new .NET Console project:
+1. Run the following command to create a new .NET Console project:
 
-    ```cmd
+    ```bash
     dotnet new console -f net6.0 -n mslearn-dotnet-files -o .
     ```
 
 1. Run the following command to open the new .NET project in the same instance of Visual Studio Code:
 
-    ```cmd
+    ```bash
     code -a .
     ```
 
@@ -118,7 +118,7 @@ Create a new function called `FindFiles` that takes a `folderName` parameter.
 
 1. The program should show the following output:
 
-    ```bash
+    ```output
     stores/sales.json
     stores/201/sales.json
     stores/202/sales.json
@@ -128,7 +128,7 @@ Create a new function called `FindFiles` that takes a `folderName` parameter.
 
 Excellent! You've successfully written a command-line program that traverses all folders in the `stores` directory and lists all the *sales.json* files that were found.
 
-In this example, the path to the *stores* directory was rather simple and in the working directory of the program. In the next unit, you'll learn how to construct complex structures that work across operating systems by using the `Path` class.
+In this example, the path to the *stores* directory was rather simple, and in the working directory of the program. In the next unit, you'll learn how to construct complex structures that work across operating systems by using the `Path` class.
 
 ### Got stuck?
 

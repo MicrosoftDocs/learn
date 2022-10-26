@@ -1,17 +1,13 @@
-Organizations naturally need to collaborate with external users. These external users might be required to provide vital services and work. As a result, applications and resources must often be shared. External users might be individuals without an IT department, or part of another organization with its own IT infrastructure.
+Organizations often need to collaborate with external partners, distributors, suppliers, and vendors. They want to do so in a secure way that lets external users access their apps, but that doesn't require the organization to manage external accounts and passwords.
 
-Organizations must ensure that any sharing process is secure. You should give access to the permission levels necessary, for the right amount of time. Azure Active Directory B2B (Azure AD B2B) collaboration allows organizations to work with external users by ensuring that applications and resources are shared securely.
+## Example scenario
 
-Let's say that you're the solution architect for a healthcare organization. Your company is publishing an application that allows clinicians from partnering health providers to access health records for patients at your facilities. You'll make sure these organizations collaborate in a secure way.
+Suppose you're an IT admin for a healthcare organization. Your company is publishing an application that allows clinicians from partnering health providers to access health records for patients at your facilities. To safeguard this sensitive health data, you want only authorized clinicians to have access to the app. You don't want to create credentials in your directory that the clinician has to remember and that you have to maintain. However, you do want to make sure the external user is properly authenticated through their identity provider and through your multi-factor authentication policies.
 
-In this module, you'll use Azure AD B2B to collaborate securely with external users. You use the Azure portal to invite guest users to a directory, group, or application. You also learn how to use multi-factor authentication with Azure AD B2B to add extra protection to shared applications.
+## What will we be doing?
 
-## Learning objectives
+This module shows you how to share applications with external users so they can sign in using their own work, school, or social identities. You'll invite a user to access an application using Azure AD B2B collaboration. You'll also apply multi-factor authentication to external user sign-ins for added security.
 
-- Identify the methods to enable secure external collaboration for your applications using Azure AD B2B.
-- Identify the configuration required to enable B2B collaboration for an application.
-- Identify the configuration required to enforce multi-factor authentication for B2B collaboration.
+## What is the main goal?
 
-## Prerequisites
-
-- Basic understanding of Azure AD
+By the end of this module, you'll be able to use the portal to send an invitation to a B2B collaboration user and apply multi-factor authentication policies to external users.

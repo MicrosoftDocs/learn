@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/05/2022
+  ms.date: 05/13/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -14,36 +14,36 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "Which metadata object do you create that contains a query that reads data from a data lake?"
+  - content: "Which if the following statements is true of a lake database?"
     choices:
-    - content: "VIEW."
+    - content: "Data is stored in a relational database store and cannot be directly accessed in the data lake files."
+      isCorrect: false
+      explanation: "Incorrect. File storage is decoupled from the relational database schema and query processing."
+    - content: "Data is stored in files that cannot be queried using SQL."
+      isCorrect: false
+      explanation: "Incorrect. You can use SQL to query data in a lake database."
+    - content: "A relational schema is overlaid on the underlying files, and can be queried using a serverless SQL pool or a Spark pool."
       isCorrect: true
-      explanation: "Correct. A VIEW is a metadata object that contains a query that reads data from a data lake."
-    - content: "EXTERNAL TABLE."
-      isCorrect: false
-      explanation: "Incorrect. An EXTERNAL TABLE creates the table object without selecting data into it."
-    - content: "CREDENTIAL."
-      isCorrect: false
-      explanation: "Incorrect. A CREDENTIAL is an object that contains a user, managed identity or shared access signature to access a data source."
-  - content: "Which metadata object provides the connection information to the files in a data lake store?"
+      explanation: "Correct. A lake database abstracts files with a relational schema that can be queried using SQL in a serverless SQL pool or a Spark pool."
+  - content: "You need to create a new lake database for a retail solution. What's the most efficient way to do this?"
     choices:
-    - content: "DATABASE."
+    - content: "Create a sample database in Azure SQL Database and export the SQL scripts to create the schema for the lake database."
       isCorrect: false
-      explanation: "Incorrect. A DATABASE is an object held within a serverless SQL pool to hold data and metadata objects."
-    - content: "DATA SOURCE."
+      explanation: "Incorrect. A sample Azure SQL database may not meet your needs, and the scripts would not be suitable for a lake database."
+    - content: "Start with the Retail database template in Azure Synapse Studio, and adapt it as necessary."
       isCorrect: true
-      explanation: "Correct. a DATA SOURCE provides the connection information to the files in a data lake store."
-    - content: "EXTERNAL TABLE."
+      explanation: "Correct. The Gallery in Azure Synapse Studio includes industry-proven database schema templates, including one for retail."
+    - content: "Start with an empty database and create a normalized schema."
       isCorrect: false
-      explanation: "Incorrect. An EXTERNAL TABLE creates the table object without selecting data into it."
-  - content: "Which CREDENTIAL identity type can be time limited?"
+      explanation: "Incorrect. While this approach would work, it's generally more efficient to start from a template."
+  - content: "You have Parquet files in an existing data lake folder for which you want to create a table in a lake database. What should you do?"
     choices:
-    - content: "Azure Active Directory user."
+    - content: "Use a CREATE EXTERNAL TABLE AS SELECT (CETAS) query to create the table."
       isCorrect: false
-      explanation: "Incorrect. An Azure Active Directory user cannot be set to a time limit."
-    - content: "Managed identity."
+      explanation: "Incorrect. A CETAS statement will move the data and create a table based on the new location."
+    - content: "Convert the files in the folder to CSV format."
       isCorrect: false
-      explanation: "Incorrect. A Managed identity cannot be set to a time limit."
-    - content: "Shared access signature."
+      explanation: "Incorrect. You can create lake database tables from Parquet files."
+    - content: "Use the database designer to create a table based on the existing folder."
       isCorrect: true
-      explanation: "Correct. A Shared access signature can be set to a time limit."
+      explanation: "Correct. You can add a table to a database from existing files."

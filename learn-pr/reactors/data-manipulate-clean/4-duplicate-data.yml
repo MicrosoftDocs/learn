@@ -5,8 +5,8 @@ metadata:
   title: Remove duplicate data
   description: Remove duplicate data in a pandas `DataFrame`.
   ms.date: 04/22/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
   ms.custom: team=nextgen

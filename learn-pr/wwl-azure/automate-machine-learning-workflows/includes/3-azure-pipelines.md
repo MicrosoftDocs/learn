@@ -3,7 +3,7 @@ One option to automate workflows is to use **Azure Pipelines**, which is part of
 Within a machine learning project, you can use Azure Pipelines to create any Azure Machine learning workspace assets like the workspace itself, data assets, compute clusters, or jobs to run Azure Machine Learning pipelines.
 
 > [!Note]
-> To use Azure Pipelines with Azure Machine Learning pipelines, you need to [connect Azure DevOps to your Azure Machine Learning workspace through a **service connection**](/learn/modules/introduction-development-operations-principles-for-machine-learn/4-integrate-azure-development-operations-tools).
+> To use Azure Pipelines with Azure Machine Learning pipelines, you need to [connect Azure DevOps to your Azure Machine Learning workspace through a **service connection**](/training/modules/introduction-development-operations-principles-for-machine-learn/4-integrate-azure-development-operations-tools).
 
 You'll learn how to use Azure Pipelines to run an Azure Machine Learning pipeline.
 

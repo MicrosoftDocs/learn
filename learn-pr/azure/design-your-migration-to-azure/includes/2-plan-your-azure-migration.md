@@ -1,4 +1,4 @@
-Your first task is to plan your company's migration to Azure. You need to put together a plan to present to your leadership team, to get their support and approval.
+Your first task is to plan your company's migration to Azure. You need to put together a plan to present to your leadership team to get their support and approval.
 
 In this unit, you'll cover some considerations and methods that you can use to plan your migration to Azure. Every situation is different, but by following some principles, you can achieve your goals in the best possible way and in the shortest amount of time.
 
@@ -42,21 +42,21 @@ Several tools and services are available to help you plan and complete the four 
 
 | Service or tool | Stage | Use |
 |------|-------|-------|
-| [Azure Migrate](/azure/migrate/migrate-overview)                   | Assess and migrate   | Perform assessment and migration of VMware VMs, Hyper-V VMs, cloud VMs, and physical servers, as well as databases, data, virtual desktop infrastructure, and web applications, to Azure. |
+| [Azure Migrate](/azure/migrate/migrate-overview)                   | Assess and migrate   | Performs assessment and migration of VMware VMs, Hyper-V VMs, cloud VMs, and physical servers, as well as databases, data, virtual desktop infrastructure, and web applications, to Azure. |
 | [Service Map](/azure/azure-monitor/insights/service-map)           | Assess   | Maps communication between application components on Windows or Linux. Helps you identify dependencies when scoping what to migrate. |
 | [Azure TCO Calculator](https://azure.microsoft.com/pricing/tco/calculator)                   | Assess   | Estimates your monthly running costs in Azure versus on-premises. |
 | [Azure Database Migration Service](/azure/dms/dms-overview)        | Migrate  | Uses the Data Migration Assistant and the Azure portal to migrate database workloads to Azure. |
 | [Data Migration Tool](/azure/cosmos-db/import-data)                | Migrate  | Migrates existing databases to Azure Cosmos DB. |
-| [Azure Cost Management](/azure/cost-management/)                   | Optimize | Helps you monitor, control, and optimize ongoing Azure costs. |
+| [Microsoft Cost Management](/azure/cost-management/)                   | Optimize | Helps you monitor, control, and optimize ongoing Azure costs. |
 | [Azure Advisor](https://azure.microsoft.com/services/advisor/)                               | Optimize | Helps optimize your Azure resources for high availability, performance, and cost. |
-| [Azure Monitor](/azure/azure-monitor/)                             | Monitor  | Enables you to monitor your entire estate's performance. Includes application-health monitoring via enhanced telemetry, and setting up notifications. |
+| [Azure Monitor](/azure/azure-monitor/)                             | Monitor  | Allows you to monitor your entire estate's performance. Includes application-health monitoring via enhanced telemetry, and setting up notifications. |
 | [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/)                       | Monitor  | Provides intelligent security analytics for your applications. |
 
 ![Migrate stage.](../media/2-migrate.png)
 
 ### Deploy cloud infrastructure targets
 
-You'll need destination systems and services on Azure to migrate to. The scope of your migration has been defined as your company's current VMware machines and existing relational databases. In this scenario, you don't need to create the resources in Azure beforehand. The two tools you'll use to do the migration, Azure Migrate and the Azure Database Migration Service, will create the required Azure resources for you.
+You'll need destination systems and services on Azure to which you can migrate. The scope of your migration has been defined as your company's current VMware machines and existing relational databases. In this scenario, you don't need to create the resources in Azure beforehand. The two tools you'll use to do the migration, Azure Migrate and the Azure Database Migration Service, will create the required Azure resources for you.
 
 In other situations, you may need to set up resources in Azure to have them available as a migration destination.
 
@@ -80,7 +80,7 @@ For the database migrations, the high-level steps are:
 
 ### Decommission on-premises infrastructure
 
-After all migrated workloads have been tested and verified as successfully migrated to Azure, you can decommission all your on-premises systems. Even after you decommission them, it can be useful to keep backups and archive data from the migrated systems. This practice gives you a historical archive of data in case it's needed. This data could be stored on-premises, or in a cloud-storage service such as Azure Blob storage.
+After all migrated workloads have been tested and verified as successfully migrated to Azure, you can decommission all your on-premises systems. Even after you decommission them, it can be useful to keep backups and archive data from the migrated systems. This practice gives you a historical archive of data in case it's needed. This data could be stored on-premises or in a cloud-storage service such as Azure Blob storage.
 
 ![Optimize stage.](../media/2-optimize.png)
 
@@ -88,13 +88,13 @@ After your services are migrated, it's important to optimize them to ensure that
 
 ### Analyze running costs
 
-Use Azure Cost Management to start analyzing your Azure costs at different management scopes. For example, by choosing a subscription in the portal, you can see a breakdown of all the resources for that subscription. Or, you could view a resource group to see all the costs associated with all the resources in just the selected group:
+Use Microsoft Cost Management to start analyzing your Azure costs at different management scopes. For example, by choosing a subscription in the portal, you can see a breakdown of all the resources for that subscription. Or, you could view a resource group to see all the costs associated with all the resources in just the selected group:
 
 ![Screenshot of the cost analysis section of the Azure portal, showing a resource group.](../media/2-cost-analysis.png)
 
 ### Review opportunities to improve
 
-Azure Cost Management shows you cost-reduction advice from Azure Advisor. The advice includes suggestions like reducing the performance of underused VMs, making use of additional discounts, or reserving resources instead of paying as you go. Azure Advisor also shows you recommendations for network security, high availability, and performance. Review the recommendations that Advisor presents to further optimize your environment.
+Microsoft Cost Management shows you cost-reduction advice from Azure Advisor. The advice includes suggestions like reducing the performance of underused VMs, making use of additional discounts, or reserving resources instead of paying as you go. Azure Advisor also shows you recommendations for network security, high availability, and performance. Review the recommendations that Advisor presents to further optimize your environment.
 
 ![Monitor stage.](../media/2-monitor.png)
 
@@ -104,10 +104,10 @@ Azure Monitor can capture health and performance information from Azure VMs if y
 
 You can set up alerts based on a range of data sources, such as:
 
-- Specific metric values like CPU usage.
-- Specific text in log files.
-- Health metrics.
-- An Autoscale metric.
+- Specific metric values like CPU usage
+- Specific text in log files
+- Health metrics
+- An Autoscale metric
 
 It's also important to have event logging and visibility into security events across your enterprise. Microsoft Sentinel provides security information and event-management (SIEM) capabilities, along with artificial intelligence to help you protect against, detect, and respond to security events. This information helps security operations (SecOps) teams triage critical alerts and prioritize work effectively.
 

@@ -1,9 +1,9 @@
 ---
-author: johndowns
+author: davidsmatlak
 ms.prod: learning-azure
 ms.topic: include
 ms.date: 08/08/2021
-ms.author: jodowns
+ms.author: davidsmatlak
 ---
 > [!TIP]
 > When you rename identifiers, be sure to rename them consistently in all parts of your template. This is especially important for parameters, variables, and resources that you refer to throughout your template.

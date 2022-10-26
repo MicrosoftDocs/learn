@@ -2,7 +2,7 @@
 
 ## Title
 
-Analyze costs and create budgets with Azure Cost Management
+Analyze costs and create budgets with Microsoft Cost Management
 
 ## Role(s)
 
@@ -18,7 +18,7 @@ Analyze costs and create budgets with Azure Cost Management
 
 ## Product(s)
 
-- Azure Cost Management
+- Microsoft Cost Management
 
 ## Prerequisites
 
@@ -38,7 +38,7 @@ Learn how to use Cost Analysis to understand how your costs accrue each month. U
 
 ## Chunk your content into subtasks
 
-Identify the subtasks of "Analyze costs and create budgets with Azure Cost Management"
+Identify the subtasks of "Analyze costs and create budgets with Microsoft Cost Management"
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
@@ -63,7 +63,7 @@ Identify the subtasks of "Analyze costs and create budgets with Azure Cost Manag
     - Define where to use cost management
         - Subscription / Resource Group blades
         - Cost Management + Billing blade
-    - Define tools in Azure Cost Management and then identify that Cost Analysis / Exports and Budgets are the only tools that will be covered in detail.
+    - Define tools in Microsoft Cost Management and then identify that Cost Analysis / Exports and Budgets are the only tools that will be covered in detail.
 
      **Knowledge Check**
 

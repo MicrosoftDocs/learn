@@ -10,7 +10,7 @@ In the healthcare portal scenario, a web tier handles requests from users. The w
 
 You can configure an internal load balancer in almost the same way as an external load balancer, but with these differences:
 
-- When you create the load balancer, for the **Type** value, select **Internal**. When you select this setting, the front-end IP address of the load balancer isn't exposed to the internet.
+- When you create the load balancer, select **Internal** for the **Type** value. When you select this setting, the front-end IP address of the load balancer isn't exposed to the internet.
 - Assign a private IP address instead of a public IP address for the front end of the load balancer.
 - Place the load balancer in the protected virtual network that contains the virtual machines you want to handle the requests.
 

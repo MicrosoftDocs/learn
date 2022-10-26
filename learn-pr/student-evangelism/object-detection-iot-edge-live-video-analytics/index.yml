@@ -28,7 +28,7 @@ prerequisites: |
     - Basic knowledge of Live Video Analytics
     - Basic knowledge of containers
     - Ability to use Docker
-iconUrl: /learn/achievements/student-evangelism/object-detection-iot-edge-live-video-analytics.svg
+iconUrl: /training/achievements/student-evangelism/object-detection-iot-edge-live-video-analytics.svg
 badge:
   uid: learn.oxford.azure-edge-zones-5g.badge
 levels:
@@ -37,6 +37,8 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-hub
+subjects:
+- iot
 units:
 - learn.oxford.object-detection-lva-edge-device.introduction
 - learn.oxford.object-detection-lva-edge-device.build-video-analytics-solution

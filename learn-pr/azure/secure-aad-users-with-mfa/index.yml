@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of the Azure portal
   - Basic knowledge of Azure Active Directory
-iconUrl: /learn/achievements/secure-aad-users-with-mfa.svg
+iconUrl: /training/achievements/secure-aad-users-with-mfa.svg
 badge:
   uid: learn.azure-security.secure-aad-users-with-mfa.badge
 levels: 
@@ -30,6 +30,8 @@ products:
 - azure
 - azure-portal
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.azure-security.secure-aad-users-with-mfa.introduction
 - learn.azure-security.secure-aad-users-with-mfa.azure-multi-factor-authentication

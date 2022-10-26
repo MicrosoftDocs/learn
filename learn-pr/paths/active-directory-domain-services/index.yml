@@ -15,7 +15,7 @@ prerequisites: |
   - Core networking technologies.
 summary: |
   Learn about Active Directory Domain Services fundamentals, and then learn to configure and manage AD DS, Active Directory Certificate Services, and how to manage Group Policy Objects.
-iconUrl: /learn/achievements/active-directory-domain-services.svg
+iconUrl: /training/achievements/active-directory-domain-services.svg
 levels:
 - intermediate
 roles:
@@ -25,6 +25,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- identity-access
 modules:
 - learn.wwl.introduction-to-ad-ds
 - learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles

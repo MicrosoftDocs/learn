@@ -25,7 +25,7 @@ summary: |
 
   Learn how to develop custom DeepStream applications backed by services in Microsoft Azure and securely deploy NVIDIA DeepStream-based AI workloads to NVIDIA-powered IoT Edge devices.
 
-iconUrl: /learn/achievements/nvidia-deepstream-development-with-microsoft-azure.svg
+iconUrl: /training/achievements/nvidia-deepstream-development-with-microsoft-azure.svg
 levels:
 - beginner
 roles:
@@ -37,6 +37,8 @@ products:
 - azure-container-registry
 - azure-iot-edge
 - azure-iot-hub
+subjects:
+- cross-development
 modules:
 - learn.nvidia.setup-configure-nvidia-deepstream-development
 - learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure

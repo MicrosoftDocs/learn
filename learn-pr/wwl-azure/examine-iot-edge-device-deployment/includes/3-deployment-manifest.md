@@ -3,7 +3,6 @@ The deployment manifest tells your device which modules to install and how to co
 The deployment manifest is a JSON document that describes:
 
  -  The IoT Edge agent module twin, which includes three components.
-    
      -  The container image for each module that runs on the device.
      -  The credentials to access private container registries that contain module images.
      -  Instructions for how each module should be created and managed.
@@ -59,7 +58,7 @@ Deployment manifests follow this structure:
 
 Define how the IoT Edge runtime installs the modules in your deployment. The IoT Edge agent is the runtime component that manages installation, updates, and status reporting for an IoT Edge device. Therefore, the `$edgeAgent` module twin requires the configuration and management information for all modules. This information includes the configuration parameters for the IoT Edge agent itself.
 
-For a complete list of properties that can or must be included, see Properties of the IoT Edge agent and IoT Edge hub - [https://docs.microsoft.com/azure/iot-edge/module-edgeagent-edgehub](/azure/iot-edge/module-edgeagent-edgehub).
+For a complete list of properties that can or must be included, see [Properties of the IoT Edge agent and IoT Edge hub module twins](/azure/iot-edge/module-edgeagent-edgehub).
 
 The `$edgeAgent` properties follow this structure:
 

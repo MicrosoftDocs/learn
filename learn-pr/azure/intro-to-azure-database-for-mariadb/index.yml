@@ -5,8 +5,9 @@ metadata:
   title: Introduction to Azure Database for MariaDB
   description: Describe how Azure Database for MariaDB supports mission-critical workloads with predictable performance and dynamic scalability. Evaluate whether you can implement Azure Database for MariaDB to address your relational database needs.
   ms.date: 03/29/2021  
-  author: tchristiani
-  ms.author: terrychr  
+  author: markingmyname
+  ms.author: maghan  
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure  
 title: Introduction to Azure Database for MariaDB
@@ -18,7 +19,7 @@ abstract: |
 prerequisites: |
   - Experience administering MariaDB
   - Experience administering Azure
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
@@ -28,7 +29,9 @@ roles:
 products:
   - azure
   - azure-database-mariadb
-units:  
+subjects:
+- data-warehousing
+units:
 - learn.intro-to-azure-database-for-mariadb.1-introduction
 - learn.intro-to-azure-database-for-mariadb.2-what-is-azure-database-for-mariadb
 - learn.intro-to-azure-database-for-mariadb.3-how-azure-database-for-mariadb-works

@@ -9,7 +9,7 @@ In this part, you move the work item that you assigned to yourself earlier in th
 
 In practice, the definition of "Done" often means that working software is in the hands of your users. In this unit, for learning purposes, you mark this work as complete because you have working unit tests and code coverage tests set up in your build pipeline.
 
-At the end of each sprint, or work iteration, you and your team might hold a retrospective meeting, where you share the work you completed, what went well in the sprint, and what could be improved.
+At the end of each sprint, or work iteration, you and your team might hold a retrospective meeting. Here, you share the work you completed, what went well in the sprint, and what could be improved.
 
 To complete the work item:
 
@@ -47,8 +47,8 @@ This option deletes your Azure DevOps project, including what's on Azure Boards 
 To delete the project:
 
 1. In Azure DevOps, go to your project. Earlier, we recommended that you name this project **Space Game - web - Tests**.
-1. Select **Project settings** in the lower corner.
-1. In the **Project details** area, scroll to the bottom, and then select **Delete**.
+1. Select **Project settings** in the lower left corner of the Azure Devops page.
+1. In the **Project details** area, scroll down, and then select **Delete**.
 
     :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="A screenshot of Azure Pipelines showing the location of the Delete button.":::
 1. In the window that appears, enter the project name, and then select **Delete** a second time.

@@ -17,7 +17,7 @@ prerequisites: |
   - Describe the concept of device twins and how devices twins are used.
 summary: |
   You will learn about device management patterns and the capabilities for device management, including bulk device management, that can be implemented using features of IoT Hub and by developing code.
-iconUrl: /learn/achievements/iot-hub-devices-apps.svg
+iconUrl: /training/achievements/iot-hub-devices-apps.svg
 levels:
 - intermediate
 roles:
@@ -28,6 +28,8 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
+subjects:
+- iot
 modules:
 - learn.wwl.examine-device-management-concepts-methods
 - learn.wwl.examine-device-management-tools

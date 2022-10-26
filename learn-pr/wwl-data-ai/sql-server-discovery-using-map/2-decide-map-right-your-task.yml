@@ -5,8 +5,9 @@ metadata:
   title: Decide if MAP is right for your task
   description: Explore the two options you can use to investigate SQL Server instances
   ms.date: 01/31/2019
-  author: markohot
-  ms.author: markohot
+  author: rwestmsft
+  ms.author: randolphwest
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 azureSandbox: true

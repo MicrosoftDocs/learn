@@ -17,7 +17,7 @@ abstract: |
   - Articulate the components of an AI strategy. 
   - Apply the value creation framework.
 prerequisites: None
-iconUrl: /learn/achievements/ai-strategy-in-retail.svg
+iconUrl: /training/achievements/ai-strategy-in-retail.svg
 levels: 
 - intermediate
 roles: 
@@ -27,7 +27,9 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- artificial-intelligence
+units:
 - learn-wwl.ai-strategy-in-retail.introduction
 - learn-wwl.ai-strategy-in-retail.ai-value-in-retail-insead
 - learn-wwl.ai-strategy-in-retail.retail-case-study-introduction

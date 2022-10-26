@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - AZ-104 certification or equivalent knowledge.
   - Knowledge of SAP products such as SAP HANA or SAP NetWeaver.
-iconUrl: /learn/achievements/sap-network-security-service.svg
+iconUrl: /training/achievements/sap-network-security-service.svg
 levels:
 - intermediate
 roles:
@@ -28,6 +28,10 @@ roles:
 products:
 - azure
 - power-platform
+subjects:
+- cloud-computing
+- networking
+- identity-access
 units:
 - learn.wwl.protect-azure-for-sap-workloads.introduction
 - learn.wwl.protect-azure-for-sap-workloads.explore-scenario

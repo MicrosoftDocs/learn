@@ -29,7 +29,7 @@ Before you begin to build and deploy solutions with Azure services, make sure yo
 ![Icon of lightbulb](../media/lightbulb.png)
 
 :::column:::
-*Each landing zone is part of a broader solution for organizing resources across a cloud environment. These resources include management groups, resource groups, and subscriptions. Azure offers many services that help you organize resources, control costs, and secure and manage your organization's Azure subscription. Azure Cost Management + Billing also provides a few ways to help you predict, analyze, and manage costs.*
+*Each landing zone is part of a broader solution for organizing resources across a cloud environment. These resources include management groups, resource groups, and subscriptions. Azure offers many services that help you organize resources, control costs, and secure and manage your organization's Azure subscription. Microsoft Cost Management + Billing also provides a few ways to help you predict, analyze, and manage costs.*
 
 :::column-end:::
 :::row-end:::

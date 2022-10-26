@@ -49,7 +49,7 @@ Analytic functions calculate a value based on a group of rows. Analytic function
 
 - CUME_DIST
 - FIRST_VALUE
-- RECENT_RANK
+- PERCENT_RANK
 - PERCENTILE_CONT
 - PERCENTIL_DISC
 

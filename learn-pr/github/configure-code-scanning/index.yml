@@ -22,7 +22,7 @@ prerequisites: |
   - A GitHub enterprise account with a GitHub Advanced Security license
   - Familiarity with managing GitHub administrative settings
   - Basic knowledge of GitHub Actions
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 ratingEnabled: true
 levels:
 - intermediate
@@ -33,6 +33,8 @@ roles:
 - student
 products:
 - github
+subjects:
+- devops
 units:
 - learn.github.configure-code-scanning.1-introduction
 - learn.github.configure-code-scanning.2-what-code-scanning

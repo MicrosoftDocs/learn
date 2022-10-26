@@ -12,10 +12,10 @@ title: 'AZ-204: Integrate caching and content delivery within solutions'
 prerequisites: |
   *   At least one year of experience developing scalable solutions through all phases of software development.
   *   Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
-  *   If you are new to Azure or cloud computing it is recommended you complete the [AZ-900: Azure Fundamentals](/learn/paths/az-900-describe-cloud-concepts/) course.
+  *   If you are new to Azure or cloud computing it is recommended you complete the [AZ-900: Azure Fundamentals](/training/paths/az-900-describe-cloud-concepts/) course.
 summary: |
   Learn how to improve the performance and scalability of your applications by integrating Azure Cache for Redis and Azure Content Delivery Network in to your solution.
-iconUrl: /learn/achievements/integrate-content-delivery.svg
+iconUrl: /training/achievements/integrate-content-delivery.svg
 levels:
 - intermediate
 roles:
@@ -23,6 +23,8 @@ roles:
 products:
 - azure-cache-redis
 - azure-queue-storage
+subjects:
+- cache
 modules:
 - learn.wwl.develop-for-azure-cache-for-redis
 - learn.wwl.develop-for-storage-cdns

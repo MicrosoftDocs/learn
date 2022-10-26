@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.prepare-for-course-delivery.prepare-course-delivery
+title: Prepare for course delivery
+metadata:
+  title: Prepare for course delivery
+  description: "Prepare for course delivery"
+  ms.date: 07/08/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-prepare-course-delivery.md)]

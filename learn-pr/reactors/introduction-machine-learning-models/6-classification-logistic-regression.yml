@@ -5,8 +5,8 @@ metadata:
   title: 'Classification: Logistic regression'
   description: Learn how to use logistic regression for classification with machine learning models for data science.
   ms.date: 05/19/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen

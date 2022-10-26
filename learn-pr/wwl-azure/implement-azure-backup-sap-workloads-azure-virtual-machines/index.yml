@@ -14,7 +14,7 @@ abstract: |
   In this module, you will identify the scenarios for which Azure Backup provides backup and restore capabilities for SAP workloads running on Azure virtual machines and walk through the backup and restore process and considerations for an SAP HANA database running on Azure virtual machines.
 prerequisites: |
   Basic knowledge of Azure virtual machines, disk storage for virtual machines, and SAP HANA and SAP HANA backup.
-iconUrl: /learn/achievements/sap-hana-backup.svg
+iconUrl: /training/achievements/sap-hana-backup.svg
 levels:
 - intermediate
 roles:
@@ -22,6 +22,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- virtual-machine
 units:
 - learn.wwl.implement-azure-backup-for-sap-workloads-azure-vms.introduction
 - learn.wwl.implement-azure-backup-for-sap-workloads-azure-vms.options-for

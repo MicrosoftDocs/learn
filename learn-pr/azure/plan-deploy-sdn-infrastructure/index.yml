@@ -20,7 +20,7 @@ prerequisites: |
   - Good understanding of networking technologies and their implementation on the Windows operating system platform
   - General familiarity of SDN concepts
   - Experience in implementing Azure Stack HCI 
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
   - advanced
 roles:
@@ -30,6 +30,9 @@ roles:
 products:
   - azure
   - azure-stack-hci
+subjects:
+- infrastructure
+- architecture
 units:
 - learn.azure.plan-deploy-sdn-infrastructure.1-introduction
 - learn.azure.plan-deploy-sdn-infrastructure.2-describe-sdn-on-azure-stack-hci

@@ -67,10 +67,9 @@ To explore Microsoft Secure Score, select the interactive guide below and follow
 
 There's a secure score for both Microsoft 365 Defender and Microsoft Defender for Cloud, but they're subtly different. Secure score in Microsoft Defender for Cloud is a measure of the security posture of your Azure subscriptions. Secure score in the Microsoft 365 Defender portal is a measure of the security posture of the organization across your apps, devices, and identities.
 
-
 ### Learning hub
 
-The Microsoft 365 Defender portal includes a learning hub that bubbles up official guidance from resources such as the Microsoft security blog, the Microsoft security community on YouTube, and the official documentation at docs.microsoft.com.
+The Microsoft 365 Defender portal includes a learning hub that bubbles up official guidance from resources such as the Microsoft security blog, the Microsoft security community on YouTube, and the official documentation on Microsoft Learn.
 
 :::image type="content" source="../media/learning-hub-inline.png" lightbox="../media/learning-hub-expanded.png" alt-text="Screenshot showing the learning hub page.":::
 

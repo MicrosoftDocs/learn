@@ -3,7 +3,7 @@ uid: learn.wwl.implement-pipeline-strategy
 metadata:
   title: Implement a pipeline strategy
   description: "Implement a pipeline strategy"
-  ms.date: 02/15/2022
+  ms.date: 05/17/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Implement multi-agent builds
   - Use different source control types available in Azure Pipelines
 prerequisites: ""
-iconUrl: /learn/achievements/5-implement-a-pipeline-strategy.svg
+iconUrl: /training/achievements/5-implement-a-pipeline-strategy.svg
 levels:
 - advanced
 roles:

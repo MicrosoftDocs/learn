@@ -17,13 +17,16 @@ abstract: |
 prerequisites: | 
  - Basic knowledge of Azure virtual machines
  - Basic knowledge of PowerShell
-iconUrl: /learn/achievements/choose-compute-provisioning.svg
+iconUrl: /training/achievements/choose-compute-provisioning.svg
 levels:
 - beginner
 roles:
 - solution-architect
 products:
 - azure
+subjects:
+- it-management-monitoring
+- cloud-computing
 units:
 - learn.choose-compute-provisioning.1-introduction
 - learn.choose-compute-provisioning.2-provisioning-solutions

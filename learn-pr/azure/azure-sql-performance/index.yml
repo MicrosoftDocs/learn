@@ -4,8 +4,9 @@ metadata:
   title: Deliver consistent performance with Azure SQL
   description: Deliver consistent performance with Azure SQL
   ms.date: 08/05/2020
-  author: rgward
-  ms.author: bobward
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deliver consistent performance with Azure SQL
@@ -19,7 +20,7 @@ abstract: |
 prerequisites: | 
  - Experience working with, maintaining, and developing with SQL Server
  - Experience with Azure, such as deploying and managing resources
-iconUrl: /learn/achievements/azure-sql-performance.svg
+iconUrl: /training/achievements/azure-sql-performance.svg
 levels:
 - beginner
 - intermediate
@@ -32,6 +33,8 @@ products:
 - azure
 - azure-sql-database
 - azure-sql-managed-instance
+subjects:
+- database
 units:
 - learn.azure-sql-performance.1-introduction
 - learn.azure-sql-performance.2-performance-capabilities

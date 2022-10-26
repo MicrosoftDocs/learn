@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-hololens.what-hololens-can-do
+title: What HoloLens can do
+metadata:
+  unitType: learning-content
+  title: What Hololens can do
+  description: "This unit provides information about how HoloLens 2 transforms industries. It provides success stories, information on digital imagery, and usage examples."
+  ms.date: 4/7/2022
+  author: qianw211
+  ms.author: qianwen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-hololens
+durationInMinutes: 10
+content: |
+  [!include [](includes/3-what-hololens-can-do.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.use-shared-resources.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: "Summary"
+  description: "Summary"
+  ms.date: 04/29/2022
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-languages
+durationInMinutes: 1 
+content: |
+  [!include[](includes/11-summary.md)]

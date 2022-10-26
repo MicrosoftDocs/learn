@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-advanced-windows-powershell-remoting-techniques.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/29/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which protocol does constrained delegation in multi-hop PowerShell Remoting use?"
+    choices:
+    - content: "LDAP"
+      isCorrect: false
+      explanation: "Incorrect. LDAP is a directory access protocol that includes limited authentication support, but it does not play any role in multi-hop PowerShell Remoting and it does not support for constrained delegation."
+    - content: "NTLM"
+      isCorrect: false
+      explanation: "Incorrect. NTLM is a legacy Windows operating system authentication protocol, which does not support for constrained delegation."
+    - content: "Kerberos"
+      isCorrect: true
+      explanation: "Correct. Kerberos allows for multi-hop PowerShell Remoting and it supports constrained delegation."
+  - content: "What is the correct way to implement the scope modifier of a local variable in a remote command?"
+    choices:
+    - content: "$Using:"
+      isCorrect: true
+      explanation: "Correct. Starting with Windows PowerShell 3.0, you can implement the $Using: scope modifier to identify a local variable in a remote command."
+    - content: "&Using:"
+      isCorrect: false
+      explanation: "Incorrect. Starting with Windows PowerShell 3.0, you can implement the $Using: scope modifier to identify a local variable in a remote command."
+    - content: "%Using:"
+      isCorrect: false
+      explanation: "Incorrect. Starting with Windows PowerShell 3.0, you can implement the $Using: scope modifier to identify a local variable in a remote command."

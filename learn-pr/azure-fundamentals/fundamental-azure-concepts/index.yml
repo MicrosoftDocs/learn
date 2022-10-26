@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.
-iconUrl: /learn/achievements/fundamental-azure-concepts.svg
+iconUrl: /training/achievements/fundamental-azure-concepts.svg
 levels:
 - beginner
 roles:
@@ -29,6 +29,8 @@ roles:
 products:
 - azure
 - azure-functions
+subjects:
+- cloud-computing
 units:
 - learn.azure.fundamental-azure-concepts.introduction
 - learn.azure.fundamental-azure-concepts.types-of-cloud-computing

@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In this module, you learned the final steps that you should take before distributing or publishing your app.
 
 You learned how to prepare your app from the perspective of Xamarin tooling (for example, by using the Xamarin Linker). There are additional platform-specific requirements that you also need to consider. These requirements, like creating an iOS provision profile or signing your Android application package, are typically addressed as part of your app's setup.

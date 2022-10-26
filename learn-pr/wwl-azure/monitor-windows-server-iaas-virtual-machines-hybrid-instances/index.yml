@@ -28,7 +28,7 @@ prerequisites: |
   - Security-related technologies such as firewalls, encryption, and multi-factor authentication.
   - Windows PowerShell scripting.
   - Automation and monitoring.
-iconUrl: /learn/achievements/monitor-windows-server-iaas-vms-and-hybrid-instances.svg
+iconUrl: /training/achievements/monitor-windows-server-iaas-vms-and-hybrid-instances.svg
 levels:
 - intermediate
 roles:
@@ -41,6 +41,8 @@ products:
 - azure-monitor
 - azure-portal
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances.introduction
 - learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances.enable-azure-monitor-for-vms

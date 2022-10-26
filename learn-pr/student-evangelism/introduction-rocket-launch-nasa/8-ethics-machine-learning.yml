@@ -4,8 +4,8 @@ metadata:
   title: Ethics in data science and machine learning
   description: Learn how to ethically create machine learning programs
   ms.date: 04/08/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

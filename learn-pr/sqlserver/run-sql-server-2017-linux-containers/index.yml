@@ -4,8 +4,9 @@ metadata:
   title: Run SQL Server 2019 on Linux containers 
   description: In this module, you will learn how to use Docker containers on Linux operating systems to host SQL Server installations.
   ms.date: 06/11/2019
-  author: markohot
-  ms.author: markohot
+  author: rwestmsft
+  ms.author: randolphwest
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 title: Run SQL Server 2019 on Linux containers
@@ -28,13 +29,16 @@ prerequisites: |
   - Execute Transact-SQL commands against a SQL Server database.
   - Use SQL Server Management Studio or Azure Data Studio to connect to a SQL Server.
   - Understand basic networking concepts, such as IP addresses and port numbers.
-iconUrl: /learn/achievements/sqlserver/run-sql-server-2017-on-linux-containers.svg
+iconUrl: /training/achievements/sqlserver/run-sql-server-2017-on-linux-containers.svg
 levels:
 - beginner
 roles:
 - administrator
 products: 
 - sql-server
+subjects:
+- container
+- database
 units:
 - learn-sqlserver.run-sql-server-2017-linux-containers.1-introduction
 - learn-sqlserver.run-sql-server-2017-linux-containers.2-choose-run-sql-server-2017-linux-containers

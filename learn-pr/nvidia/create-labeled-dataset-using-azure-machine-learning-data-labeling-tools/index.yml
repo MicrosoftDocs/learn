@@ -19,7 +19,7 @@ abstract: |
   - Review labeled data and export as an Azure Machine Learning Dataset
 prerequisites: |
   - [Azure Free Trial Account](https://azure.microsoft.com/free/)
-iconUrl: /learn/achievements/setup-configure-nvidia-deepstream-development.svg
+iconUrl: /training/achievements/setup-configure-nvidia-deepstream-development.svg
 levels:
 - intermediate
 roles:
@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-machine-learning
+subjects:
+- machine-learning
 units:
 - learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.introduction
 - learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.create-azure-machine-learning-data-labeling-project

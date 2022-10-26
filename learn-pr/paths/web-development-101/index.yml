@@ -12,13 +12,16 @@ title: Web Development for Beginners
 prerequisites: none
 summary: |
   Learn the basics of web development, including programming languages and tools, and web accessibility.
-iconUrl: /learn/achievements/student-evangelism/web-development-101.svg #TODO change
+iconUrl: /training/achievements/student-evangelism/web-development-101.svg #TODO change
 levels:
 - beginner
 roles:
 - student
 products:
 - azure
+subjects:
+- development-tools
+- accessibility
 modules:
 - learn.student-evangelism.web-development-101.introduction-to-programming
 - learn.student-evangelism.web-development-101.accessibility

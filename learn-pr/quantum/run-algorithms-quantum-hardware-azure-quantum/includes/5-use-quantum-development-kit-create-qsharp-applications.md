@@ -1,6 +1,6 @@
 Now let's see how you can use Azure Quantum to test quantum algorithms, first on a simulator and then on real hardware.
 
-If you took a [previous module](/learn/modules/solve-graph-coloring-problems-grovers-search/6-implement-grovers-algorithm/?azure-portal=true) of this learning path, you created a version of Grover's algorithm in Q# and ran it on a local simulator. Now let's run the same algorithm in a trapped ion quantum computer.
+If you took a [previous module](/training/modules/solve-graph-coloring-problems-grovers-search/6-implement-grovers-algorithm/?azure-portal=true) of this learning path, you created a version of Grover's algorithm in Q# and ran it on a local simulator. Now let's run the same algorithm in a trapped ion quantum computer.
 
 ## Copy a sample notebook
 

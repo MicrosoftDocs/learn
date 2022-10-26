@@ -3,10 +3,10 @@ uid: learn.microservices-configuration-aspnet-core
 metadata:
   title: Implement feature flags in a cloud-native ASP.NET Core microservices app
   description: This module guides you through implementing a feature flag in an ASP.NET Core microservices app using Azure App Configuration.
-  author: scottaddie
-  ms.author: scaddie
-  ms.date: 11/23/2020
-  ms.prod: learning-aspnetcore
+  author: camsoper
+  ms.author: casoper
+  ms.date: 07/14/2022
+  ms.prod: aspnet-core
   ms.topic: interactive-tutorial
 title: Implement feature flags in a cloud-native ASP.NET Core microservices app
 summary: Implement a feature flag in your cloud-native ASP.NET Core microservices app to enable or disable a feature in real time.
@@ -20,6 +20,7 @@ prerequisites: |
   - Familiarity with RESTful service concepts at the beginner level
   - Conceptual knowledge of containers and AKS at the intermediate level
   - Access to an Azure subscription with **Owner** privilege
+  - Ability to run development containers in Visual Studio Code or GitHub Codespaces
 levels:
   - intermediate
 roles:
@@ -33,6 +34,8 @@ products:
   - azure-app-configuration
   - azure-container-registry
   - azure-kubernetes-service
+subjects:
+- serverless-compute
 units:
   - learn.microservices-configuration-aspnet-core.1-introduction
   - learn.microservices-configuration-aspnet-core.2-environment-setup
@@ -41,6 +44,6 @@ units:
   - learn.microservices-configuration-aspnet-core.5-implement-app-configuration
   - learn.microservices-configuration-aspnet-core.6-knowledge-check
   - learn.microservices-configuration-aspnet-core.7-summary
-iconUrl: /learn/achievements/aspnetcore/microservices-configuration-aspnet-core.svg
+iconUrl: /training/achievements/aspnetcore/microservices-configuration-aspnet-core.svg
 badge:
   uid: learn.microservices-configuration-aspnet-core.badge

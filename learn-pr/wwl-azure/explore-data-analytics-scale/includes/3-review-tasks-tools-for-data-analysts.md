@@ -21,7 +21,7 @@ Analyst tasks throughout the analytics process include:
 - Gather and incorporate feedback and additional requirements
 
 > [!Note]
-> See [Understand concepts of data analytics](/learn/modules/understand-concepts-of-data-analytics/) for more information on the analytics process.
+> See [Understand concepts of data analytics](/training/modules/understand-concepts-of-data-analytics/) for more information on the analytics process.
 
 ## Data analyst tools
 
@@ -39,7 +39,7 @@ For example, it isn't uncommon for companies today to have petabytes of data acr
 In addition to technical knowledge of analytics tools, it's critical that analysts have foundational knowledge of relational databases, basic statistics, and data visualization.
 
 >[!Note]
-> Learn more about foundational knowledge at [Explore core data concepts](/learn/modules/explore-core-data-concepts/).
+> Learn more about foundational knowledge at [Explore core data concepts](/training/modules/explore-core-data-concepts/).
 
 The final skill set that makes for a great analyst are soft skills that enable decision making including: 
 - Communication

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-variables-windows-powershell-scripts.assign-values-types-variables
+title: Assign values and types to variables in Windows PowerShell scripts
+metadata:
+  title: Assign values and types to variables in Windows PowerShell scripts
+  description: "Assign values and types to variables in Windows PowerShell scripts"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-assign-values-types-variables.md)]

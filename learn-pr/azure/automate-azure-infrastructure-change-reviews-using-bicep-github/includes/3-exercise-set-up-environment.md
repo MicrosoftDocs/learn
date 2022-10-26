@@ -1,3 +1,5 @@
+[!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 Before you set up your toy company's pull request workflows, you need to configure your environment. 
 
 In this unit, you make sure that your Azure and GitHub environments are set up so that you can complete the rest of this module successfully.
@@ -7,7 +9,7 @@ To meet these objectives, you'll:
 > [!div class="checklist"]
 > * Set up a GitHub repository for this module.
 > * Clone the repository to your computer.
-> * Create a service principal in Azure Active Directory.
+> * Create a workload identity in Azure Active Directory.
 > * Create a secret in GitHub.
 
 ## Get the GitHub repository
@@ -31,6 +33,8 @@ On the GitHub site, create a repository from the template by doing the following
 1. Select **Use this template**. 
 
    :::image type="content" source="../media/3-template.png" alt-text="Screenshot of the GitHub interface showing the template repo, with the 'Use this template' button highlighted.":::
+
+1. Note the name of your GitHub username or organization. In the example above, the GitHub user name is *mygithubuser*. You'll need this name soon.
 
 1. Enter a name for your new project, such as *toy-website-auto-review*.
 
@@ -74,7 +78,7 @@ You now have a copy of the template repository in your own account. Clone this r
 
 ## Sign in to Azure
 
-Now that you've cloned the repository locally to your computer, you will sign in to your Azure environment. You'll use your Azure account to create a service principal for your GitHub Actions workflows to use.
+Now that you've cloned the repository locally to your computer, you will sign in to your Azure environment. You'll use your Azure account to create a workload identity for your GitHub Actions workflows to use.
 
 ::: zone pivot="cli"
 
@@ -100,110 +104,138 @@ Now that you've cloned the repository locally to your computer, you will sign in
 
 ::: zone-end
 
-## Create a service principal
+## Create a workload identity
 
-Later in this Microsoft Learn module, your pull request workflow will create resource groups and resources in your subscription. To do this, you need to create a service principal and grant it the Contributor role on your subscription.
+Later in this Microsoft Learn module, your pull request workflow will create resource groups and resources in your subscription. To do this, you need to create a workload identity and grant it the Contributor role on your subscription.
 
 > [!WARNING]
-> The service principal that you create here has a high level of access to your Azure subscription. To avoid any accidental issues, use a non-production subscription. Don't execute these steps in an environment that holds any of your production workloads.
+> The workload identity that you create here has a high level of access to your Azure subscription. To avoid any accidental issues, use a non-production subscription. Don't execute these steps in an environment that holds any of your production workloads.
 >
 > In your own pull request validation workflows, we recommend that you use a dedicated Azure subscription.
 
 ::: zone pivot="cli"
 
-1. Find your Azure subscription ID by running the following Azure CLI command.
+1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 
-   ```azurecli
-   az account show --query id --output tsv
+   ```bash
+   githubOrganizationName='mygithubuser'
+   githubRepositoryName='toy-website-auto-review'
    ```
 
-1. Copy your Azure subscription ID to the clipboard.
+1. Create a workload identity for your deployments workflow.
 
-1. To create a service principal and assign it the Contributor role for your subscription, run the following Azure CLI command in the Visual Studio Code terminal. Replace the `SUBSCRIPTION_ID` placeholder with the subscription ID you copied in the preceding step.
+   ```bash
+   applicationRegistrationDetails=$(az ad app create --display-name 'toy-website-auto-review')
+   applicationRegistrationObjectId=$(echo $applicationRegistrationDetails | jq -r '.id')
+   applicationRegistrationAppId=$(echo $applicationRegistrationDetails | jq -r '.appId')
 
-   ```azurecli
-   az ad sp create-for-rbac \
-     --name ToyWebsiteAutoReview \
-     --role Contributor \
-     --scopes '/subscriptions/SUBSCRIPTION_ID' \
-     --sdk-auth
+   az ad app federated-credential create \
+      --id $applicationRegistrationObjectId \
+      --parameters "{\"name\":\"toy-website-auto-review\",\"issuer\":\"https://token.actions.githubusercontent.com\",\"subject\":\"repo:${githubOrganizationName}/${githubRepositoryName}:pull_request\",\"audiences\":[\"api://AzureADTokenExchange\"]}"
    ```
-
-   [!INCLUDE [](../../includes/azure-template-bicep-exercise-cli-unique-display-name.md)]
-
-1. Select the JSON output from the preceding command. It looks like this:
-
-   ```json
-   {
-     "clientId": "c6bf233f-d1b8-480a-9cf7-27e2186345d2",
-     "clientSecret": "<secret value>",
-     "subscriptionId": "f0750bbe-ea75-4ae5-b24d-a92ca601da2c",
-     "tenantId": "dbd3173d-a96b-4c2f-b8e9-babeefa21304",
-     "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
-     "resourceManagerEndpointUrl": "https://management.azure.com/",
-     "activeDirectoryGraphResourceId": "https://graph.windows.net/",
-     "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
-     "galleryEndpointUrl": "https://gallery.azure.com/",
-     "managementEndpointUrl": "https://management.core.windows.net/"
-   }
-   ```
-
-1. Copy the entire output, including the opening and closing braces ({}), and store it somewhere safe. You'll use it soon. 
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. To create a service principal and assign it the Contributor role for your subscription, run the following Azure PowerShell command in the Visual Studio Code terminal.
+1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 
    ```azurepowershell
-   $azureContext = Get-AzContext
-   $subscriptionId = "/subscriptions/$($azureContext.Subscription.Id)"
-   $servicePrincipal = New-AzADServicePrincipal `
-     -DisplayName ToyWebsiteAutoReview `
-     -Role Contributor `
-     -Scope $subscriptionId
-
-   $output = @{
-      clientId = $($servicePrincipal.ApplicationId)
-      clientSecret = $([System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password)
-      subscriptionId = $($azureContext.Subscription.Id)
-      tenantId = $($azureContext.Tenant.Id)
-   }
-   $output | ConvertTo-Json
+   $githubOrganizationName = 'mygithubuser'
+   $githubRepositoryName = 'toy-website-auto-review'
    ```
 
-1. Select the JSON output from the preceding command. It looks like this:
+1. Create a workload identity for your deployments workflow.
 
-   ```json
-   {
-     "clientId": "c6bf233f-d1b8-480a-9cf7-27e2186345d2",
-     "clientSecret": "<secret value>",
-     "subscriptionId": "f0750bbe-ea75-4ae5-b24d-a92ca601da2c",
-     "tenantId": "dbd3173d-a96b-4c2f-b8e9-babeefa21304"
-   }
+   ```azurepowershell
+   $applicationRegistration = New-AzADApplication -DisplayName 'toy-website-auto-review'
+   New-AzADAppFederatedIdentityCredential `
+      -Name 'toy-website-auto-review' `
+      -ApplicationObjectId $applicationRegistration.Id `
+      -Issuer 'https://token.actions.githubusercontent.com' `
+      -Audience 'api://AzureADTokenExchange' `
+      -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):pull_request"
    ```
-
-1. Copy the entire output, including the opening and closing braces ({}), and store it somewhere safe. You'll use it soon.
 
 ::: zone-end
 
-## Create a GitHub secret
+## Grant the workload identity access to your subscription
 
-You've created a service principal. Next, create a secret in GitHub Actions.
+Next, create a resource group for your website. This process also grants the workload identity the Contributor role on the resource group, which allows your workflow to deploy to the resource group.
 
-1. In your browser, go to your GitHub repository.
+::: zone pivot="cli"
+
+1. Run the following Azure CLI commands in the Visual Studio Code terminal:
+
+   ```bash
+   az ad sp create --id $applicationRegistrationObjectId
+   az role assignment create \
+      --assignee $applicationRegistrationAppId \
+      --role Contributor
+   ```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. Run the following Azure PowerShell commands in the Visual Studio Code terminal:
+
+   ```azurepowershell
+   New-AzADServicePrincipal -AppId $applicationRegistration.AppId
+   New-AzRoleAssignment `
+      -ApplicationId $applicationRegistration.AppId `
+      -RoleDefinitionName Contributor
+   ```
+
+::: zone-end
+
+## Prepare GitHub secrets
+
+Run the following code to show you the values you need to create as GitHub secrets:
+
+::: zone pivot="cli"
+
+```bash
+echo "AZURE_CLIENT_ID: $applicationRegistrationAppId"
+echo "AZURE_TENANT_ID: $(az account show --query tenantId --output tsv)"
+echo "AZURE_SUBSCRIPTION_ID: $(az account show --query id --output tsv)"
+```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+```azurepowershell
+$azureContext = Get-AzContext
+Write-Host "AZURE_CLIENT_ID: $($applicationRegistration.AppId)"
+Write-Host "AZURE_TENANT_ID: $($azureContext.Tenant.Id)"
+Write-Host "AZURE_SUBSCRIPTION_ID: $($azureContext.Subscription.Id)"
+```
+
+::: zone-end
+
+## Create GitHub secrets
+
+You've created a workload identity, and granted it permission to deploy to the subscription. Next, create secrets in GitHub Actions.
+
+1. In your browser, navigate to your GitHub repository.
 
 1. Select **Settings** > **Secrets** > **Actions**.
 
 1. Select **New repository secret**.
 
-   :::image type="content" source="../../includes/media/github-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Actions secrets' page, with the 'New repository secret' button highlighted." border="true":::
+   :::image type="content" source="../../includes/media/github-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
 
-1. Name the secret *AZURE_CREDENTIALS*.
+1. Name the secret *AZURE_CLIENT_ID*.
 
-1. In the **Value** box, paste the JSON object that you copied in the earlier section.
+1. In the **Value** field, paste the GUID from the first line of the terminal output. Don't include `AZURE_CLIENT_ID`, the colon, or any spaces in the value.
 
 1. Select **Add secret**. 
 
-   :::image type="content" source="../../includes/media/github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
+   :::image type="content" source="../../includes/media/github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
+
+1. Repeat the process to create the secrets for *AZURE_TENANT_ID* and *AZURE_SUBSCRIPTION_ID*, copying the values from the corresponding fields in the terminal output.
+
+1. Verify that your list of secrets now shows all three secrets.
+
+   :::image type="content" source="../../includes/media/github-create-repository-secrets.png" alt-text="Screenshot of the GitHub interface showing the list of secrets." border="true":::
