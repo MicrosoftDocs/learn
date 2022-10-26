@@ -6,7 +6,7 @@ trigger:
 
 variables:
   - name: deploymentDefaultLocation
-    value: eastus
+    value: westus3
 
 pool:
   vmImage: ubuntu-latest
@@ -14,7 +14,7 @@ pool:
 stages:
 
 - stage: Lint
-  jobs: 
+  jobs:
   - job: LintCode
     displayName: Lint code
     steps:
@@ -41,7 +41,7 @@ stages:
             -environmentType $(EnvironmentType)
 
 - stage: Preview
-  jobs: 
+  jobs:
   - job: PreviewAzureChanges
     displayName: Preview Azure changes
     steps:
