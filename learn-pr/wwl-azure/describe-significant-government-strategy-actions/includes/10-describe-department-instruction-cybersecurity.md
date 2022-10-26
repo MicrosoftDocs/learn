@@ -6,7 +6,7 @@
     :::column-end:::
     :::column span="":::
 
-        Before March 2014, the Department of Defense largely focused its policies and processes on foreign enemies and foreign countries. In 2013, a National Security Agency contractor published large amounts of top secret government information. The Department of Defense and intelligence communities began to witness the effects these actions had caused.
+        Before March 2014, the Department of Defense largely focused its policies and processes on foreign enemies and foreign countries/regions. In 2013, a National Security Agency contractor published large amounts of top secret government information. The Department of Defense and intelligence communities began to witness the effects these actions had caused.
 
         On March 14 2014, the DoD issued [Instruction 8500.01](https://www.esd.whs.mil/portals/54/documents/dd/issuances/dodi/850001_2014.pdf), which focuses on cybersecurity.
 
