@@ -8,7 +8,7 @@ You're the Azure Administrator for your organization. You decide to automate som
 
 ## Architecture diagram
 
-:::image type="content" source="../media/lab03d.png" alt-text="Architecture diagram as explained in the text.":::
+:::image type="content" source="../media/lab-03d.png" alt-text="Architecture diagram as explained in the text.":::
 
 ## Objectives
 
