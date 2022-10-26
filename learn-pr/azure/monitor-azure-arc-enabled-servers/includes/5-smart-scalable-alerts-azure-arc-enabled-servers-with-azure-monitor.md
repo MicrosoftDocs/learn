@@ -39,7 +39,7 @@ Follow these steps to define a new alert rule for Azure Arc-enabled servers. We 
 1. For Basics, enter the Subscription, Resource Group, and Action Group Name.
 1. For Notifications, select **Email Azure Resource Manager Role** and choose **Owner** from the dropdown options. 
 
-   ![Screensbot of creating an action group](../media/image-11.png)
+   ![Screensbot of creating an action group.](../media/image-11.png)
 
 1. Enter a **Notification Name** and select **Review + Create** for the Action Group.
 1. Select **Review + Create** for the alert rule.
