@@ -22,9 +22,9 @@ To set up everything for you in your Azure DevOps organization, run a template.
 
 From the Azure DevOps demo generator site, to run the template, perform these steps.
 
-1. Select **Sign In**, and accept the usage terms.
+1. Select **Sign In** and accept the usage terms.
 1. From the **Create New Project** page, select your Azure DevOps organization, and enter a project name. For example, enter *Space Game - web - Dependencies*.
-1. Select **Fork repository on GitHub**, and then select **Authorize**. If a window appears, authorize access to your GitHub account.
+1. Select **Yes, I want to fork this repository**, then select **Authorize**. If a window appears, authorize access to your GitHub account.
 
     > [!IMPORTANT]
     > You need to select this option for the template to connect to your GitHub repository. Select this option even if you've already forked the _Space Game_ website project. The template uses your existing fork.
@@ -45,7 +45,7 @@ From the Azure DevOps demo generator site, to run the template, perform these st
 
 In this part, you'll assign a work item to yourself that relates to this module on Azure Boards. You'll also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each sprint, or work iteration.
 
-Assigning work in this way gives you a checklist to work from. It gives others on your team visibility into what you're working on and how much work is left. It also helps the team enforce work-in-progress limits, so that the team doesn't take on too much work at one time.
+Assigning work in this way gives you a checklist from which to work. It gives others on your team visibility into what you're working on and how much work is left. It also helps the team enforce work-in-progress limits, so that the team doesn't take on too much work at one time.
 
 Recall that the team settled on these seven top issues:
 
@@ -54,7 +54,7 @@ Recall that the team settled on these seven top issues:
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
 
-Here, you move the sixth item, **Move model data to its own package** to the **Doing** column, and assign yourself to the work item.
+Here, you'll move the sixth item, **Move model data to its own package** to the **Doing** column, and assign yourself to the work item.
 
 Recall that **Move model data to its own package** relates to moving reusable code to its own NuGet package, so that package can be shared among multiple apps.
 

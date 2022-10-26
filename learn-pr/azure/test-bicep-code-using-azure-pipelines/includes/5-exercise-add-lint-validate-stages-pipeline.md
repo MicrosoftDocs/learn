@@ -1,8 +1,8 @@
-You've spoken to your team and have decided to further automate your deployments by using a pipeline. You want to build more confidence in what you deploy. 
+You've spoken to your team and have decided to further automate your deployments by using a pipeline. You want to build more confidence in what you deploy.
 
 In this exercise, you'll add validation stages to your pipeline. You'll then run the linter and preflight validation before each deployment.
 
-During the process, you'll: 
+During the process, you'll:
 
 > [!div class="checklist"]
 > * Update your existing pipeline to add two new stages to lint and validate your Bicep code.
@@ -47,10 +47,10 @@ First, you need to update your pipeline file to define a stage. Azure Pipelines 
 By default, the Bicep linter provides a warning when it detects a problem with your file. Azure Pipelines doesn't treat linter warnings as problems that should stop your pipeline. To customize this behavior, you create a *bicepconfig.json* file that reconfigures the linter.
 
 1. Add a new file in the *deploy* folder and name it *bicepconfig.json*.
-   
+
    :::image type="content" source="../media/5-visual-studio-code-bicep-config-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the new file shown in the deploy folder.":::
 
-1. Copy the following code into the file:    
+1. Copy the following code into the file:
 
    :::code language="json" source="code/5-bicepconfig.json" :::
 
@@ -158,13 +158,13 @@ You've found another problem in the Bicep file. Here, you fix the problem.
 
 1. Look at the definition of the `storageAccountName` variable:
 
-   :::code language="bicep" source="code/5-template-2.bicep" range="16-19" highlight="4" :::
+   :::code language="bicep" source="code/5-template-2.bicep" range="16-20" highlight="5" :::
 
    There seems to be a typo, and the string interpolation hasn't been configured correctly.
 
 1. Update the `storageAccountName` variable to use string interpolation correctly:
 
-   :::code language="bicep" source="code/5-template-3.bicep" range="19" :::
+   :::code language="bicep" source="code/5-template-3.bicep" range="20" :::
 
 1. Save the file.
 
