@@ -14,7 +14,7 @@ Generally speaking, autoscaling services scale in and out rather than up and dow
 
 ## Time-based autoscaling
 
-Time-based autoscaling is appropriate when loads fluctuate in a predictable manner. For example, many organizations' IT systems experience the highest load during working hours and may experience little to no load in the wee hours of the morning. Domino's Pizza's web site may experience loads at all hours of the day since it operates more than 16,000 stores in nearly 100 countries. But it predictably experiences higher-than-normal loads during certain times of year.
+Time-based autoscaling is appropriate when loads fluctuate in a predictable manner. For example, many organizations' IT systems experience the highest load during working hours and may experience little to no load in the wee hours of the morning. Domino's Pizza's web site may experience loads at all hours of the day since it operates more than 16,000 stores in nearly 100 countries/regions. But it predictably experiences higher-than-normal loads during certain times of year.
 
 Either scenario is a candidate for time-based autoscaling. Figure 7 shows how scheduled autoscaling is enacted in Azure. In this example, a cloud administrator configures an Azure App Service that hosts the organization's web site to run two instances by default, but scale up to four instances between 6:00 a.m. and 6:00 p.m. six days a week excluding Sunday. By selecting the "Specify start/end dates" option instead, the administrator could just as easily configure the App Service to scale out to 10 instances on Super Bowl Sunday. And she could define multiple scale conditions to scale out on other dates, too.
 
