@@ -1307,3 +1307,18 @@ achievements:
   title: Create a Language Understanding solution
   summary: Create a Language Understanding solution
   iconUrl: /training/achievements/natural-language-processing-language-understanding.svg
+- uid: learn.wwl.create-language-understanding-app.badge
+  type: badge
+  title: Create a Language Understanding app
+  summary: The Language Understanding service enables you to train a language model that apps can use to extract semantic meaning from natural language.
+  iconUrl: /training/achievements/language-understanding-create-app.svg
+- uid: learn.wwl.publish-use-language-understanding-app.badge
+  type: badge
+  title: Publish and use a Language Understanding app
+  summary: After creating a Language Understanding app, you can publish it and consume it from client applications.
+  iconUrl: /training/achievements/language-understanding-publish.svg
+- uid: learn.wwl.use-language-understanding-speech.badge
+  type: badge
+  title: Use Language Understanding with Speech
+  summary: While many applications work with text-based natural language input, it's also for applications to support speech. You can integrate the Language Understanding and Speech services to accomplish this.
+  iconUrl: /training/achievements/language-understanding-speech.svg

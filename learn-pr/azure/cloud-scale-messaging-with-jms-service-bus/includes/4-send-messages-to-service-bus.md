@@ -5,7 +5,7 @@ You'll now create a Spring Boot application that will send messages to an Azure 
 To create our Spring Boot project, we'll use [Spring Initializr](https://start.spring.io/) with the following command line:
 
 ```bash
-curl https://start.spring.io/starter.tgz -d dependencies=web -d baseDir=spring-sender-application -d bootVersion=2.4.1.RELEASE -d javaVersion=1.8 | tar -xzvf -
+curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=web -d baseDir=spring-sender-application -d bootVersion=2.4.1.RELEASE -d javaVersion=1.8 | tar -xzvf -
 ```
 
 ## Send messages to a Service Bus queue
