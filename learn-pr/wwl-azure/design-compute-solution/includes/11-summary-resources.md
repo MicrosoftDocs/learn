@@ -20,6 +20,8 @@ In this module, you learned how to choose and recommend an Azure compute solutio
 
 - Read about the [Azure Kubernetes Service](/azure/aks/intro-kubernetes).
 
+- Review [security considerations for Azure Container Instances](/azure/container-instances/container-instances-image-security).
+
 ### Learn more with self-paced training
 
 - Choose the [best Azure service to automate your business processes](/training/modules/choose-azure-service-to-integrate-and-automate-business-processes/).
