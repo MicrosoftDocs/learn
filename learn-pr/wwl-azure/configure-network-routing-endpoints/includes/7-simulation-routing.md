@@ -11,7 +11,7 @@ Your organization is exploring Azure virtual networking capabilities. As the Azu
 
 ## Architecture diagram
 
-:::image type="content" source="../media/lab08.png" alt-text="Architecture diagram as explained in the text.":::
+:::image type="content" source="../media/lab-08.png" alt-text="Architecture diagram as explained in the text.":::
 
 > [!NOTE]
 > Tasks 1 - 4 focus on IP addresses and access. 
