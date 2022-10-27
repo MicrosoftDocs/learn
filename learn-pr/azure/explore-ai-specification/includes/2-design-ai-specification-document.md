@@ -93,7 +93,7 @@ Note, this section refers to the first column (Configuration Variable) of the th
 
 Our Moab use case consists of only one scenario:
 
-- From a given set of initial conditions* where the ball is already on the plate, we seek to drive the ball to the center**.
+- From a given set of initial conditions where the ball is already on the plate, we seek to drive the ball to the center.
 
 For balancing a ball, you want to randomize the starting ball position (initial_x and initial_y) and velocity (initial_vel_x, initial_vel_x) values for each scenario. You also want to randomize the starting plate pitch and roll as well. This will assist the Brain in learning from a wide range of starting positions, making it more effective in each scenario. Finally, you must define these six variables' variability range [min, max].
 
