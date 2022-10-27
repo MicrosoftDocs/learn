@@ -6,7 +6,7 @@ Virtual machines are an excellent way to reduce costs versus the investments tha
 
 Azure Container Instances offers many benefits, including fast startup, per second billing, and persistent storage. These benefits make Azure Container Instances a great compute solution to support new workloads and migrate data by using the lift and shift pattern.  
 
-:::image type="content" source="../media/select-azure-container-instances.png" alt-text="Flowchart that shows the decision tree for selecting Azure Container Instances to build new workloads." border="false":::
+:::image type="content" source="../media/select-azure-container-instances.png" alt-text="Flowchart that shows the decision tree for selecting Azure Container Instances to build new workloads and to support lift and shift migrations." border="false":::
 
 - Azure Container Instances enables fast startup. You can launch containers in seconds for immediate access to applications.
 
