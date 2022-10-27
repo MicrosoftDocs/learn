@@ -2,7 +2,7 @@
  
 ### Things to know about Azure Batch
 
-There are many scenarios where Azure Batch can be an ideal compute solution for your infrastructure. Azure Batch is similar to Azure Virtual Machines and  can be used to build new workloads and migrate data.  
+There are many scenarios where Azure Batch can be an ideal compute solution for your infrastructure. Azure Batch is similar to Azure Virtual Machines and can be used to build new workloads and migrate data.  
 
 :::image type="content" source="../media/select-azure-batch.png" alt-text="Flowchart that shows the decision tree for selecting Azure Batch to build new workloads, and to support lift and shift or cloud-optimized migrations." border="false":::
 
