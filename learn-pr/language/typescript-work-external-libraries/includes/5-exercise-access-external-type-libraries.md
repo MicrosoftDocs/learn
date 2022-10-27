@@ -10,7 +10,7 @@ Static typing is a primary reason to use TypeScript. External type libraries are
 
 While some JavaScript libraries will have type definitions, you will discover many do not. The open-source project [DefinitelyTyped](https://definitelytyped.org/?azure-portal=true) is a repository of TypeScript type definitions for many popular JavaScript libraries. You install type definitions by using the **@types** prefix.
 
-Because the type definitions are only used by TypeScript during design-time, they are **not** required to be part of the published project. As a result, you can install them as [devDependencies](https://nodejs.dev/learn/npm-dependencies-and-devdependencies?azure-portal=true).
+Because the type definitions are only used by TypeScript during design-time, they are **not** required to be part of the published project. As a result, you can install them as [devDependencies](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file).
 
 ```bash
 npm install --save-dev @types/<library-name>
