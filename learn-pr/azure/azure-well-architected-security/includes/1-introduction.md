@@ -12,9 +12,9 @@ The concepts discussed in this module are not all-inclusive, but represent some 
 
 By the end of this module, you'll be able to:
 
-- Develop a defense-in-depth approach to securing your architecture
-- Choose the technologies to secure your Azure infrastructure
-- Develop a strategy for secure identity management
+- Develop a defense-in-depth approach to securing your architecture.
+- Choose the technologies to secure your Azure infrastructure.
+- Develop a strategy for secure identity management.
 
 ## Prerequisites
 
