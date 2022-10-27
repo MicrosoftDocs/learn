@@ -38,7 +38,7 @@ After Node.js is started with inspect mode enabled, you can use any compatible d
 
 ### Timeout error from node inspect 
 
-If the `node inspect` or `node --inspect` command returns a timeout error, you can try to install the inspect mode globally for your system to resolve the issue. For installation options, see [How to install Node.js](https://nodejs.dev/learn/how-to-install-nodejs?azure-portal=true).
+If the `node inspect` or `node --inspect` command returns a timeout error, you can try to install the inspect mode globally for your system to resolve the issue. For installation options, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
 
 
 ## Built-in debugger
