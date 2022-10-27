@@ -65,7 +65,7 @@ Successful startup founders understand objectively that most startups fail, yet 
 Founders who have this attribute:
 
 - Have a default mental state of *this could work* as opposed to *here are all the reasons this probably won't work*.
-- Are willing to explore new, untested, and crazy-sounding ideas.
+- Are willing to explore new, untested, and absurd-sounding ideas.
 - Recognize that unfettered optimism isn't helpful and are able to balance their optimism with open-mindedness.
 
 ### Open-mindedness

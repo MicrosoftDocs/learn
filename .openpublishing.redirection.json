@@ -16049,7 +16049,7 @@
       "source_path": "learn-pr/azure/intro-to-hyperscale/index.md",
       "redirect_url": "/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path": "learn-pr/azure/intro-to-hyperscale/1-introduction.md",
       "redirect_url": "/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
@@ -17810,12 +17810,12 @@
       "redirect_url": "https://learn.microsoft.com/training/modules/secure-mysql/",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "learn-pr/wwl-azure/secure-azure-database-for-postgresql/6-configure-azure-active-directory-authentication.md",
       "redirect_url": "/training/modules/secure-azure-database-for-postgresql/",
       "redirect_document_id": false
     },
-      {
+    {
       "source_path": "learn-pr/wwl-azure/secure-azure-database-for-postgresql/7-exercise-configure-azure-active-directory-authentication.md",
       "redirect_url": "/training/modules/secure-azure-database-for-postgresql/",
       "redirect_document_id": false
@@ -18173,6 +18173,136 @@
     {
       "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/8-summary-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/configure-network-routing-endpoints/9-summary-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-understanding-app/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-understanding-app/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-understanding-app/2-provision-azure-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-understanding-app/3-define-intents-utterances.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-understanding-app/4-define-entities.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-understanding-app/5-use-patterns-to-differentiate-similar-utterances.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-understanding-app/6-use-pre-built-models.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-understanding-app/7-train-test-publish-review.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-understanding-app/8-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-understanding-app/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-understanding-app/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understanding-app/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/publish-use-language-understand-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understanding-app/2-set-publish-configuration-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/publish-use-language-understand-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understanding-app/3-process-predictions.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/publish-use-language-understand-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understanding-app/4-use-container.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/publish-use-language-understand-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understanding-app/5-exercise-create-client-app.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/publish-use-language-understand-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understanding-app/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/publish-use-language-understand-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understanding-app/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/publish-use-language-understand-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understanding-app/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/publish-use-language-understand-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-language-understanding-speech/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-language-solution-azure-cognitive-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-language-understanding-speech/2-understand-service-integration.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-language-solution-azure-cognitive-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-language-understanding-speech/3-perform-intent-recognition-speech-sdk.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-language-solution-azure-cognitive-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-language-understanding-speech/4-exercise-use-speech-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-language-solution-azure-cognitive-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-language-understanding-speech/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-language-solution-azure-cognitive-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-language-understanding-speech/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-language-solution-azure-cognitive-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-language-understanding-speech/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-language-solution-azure-cognitive-services/",
       "redirect_document_id": false
     }
   ]
