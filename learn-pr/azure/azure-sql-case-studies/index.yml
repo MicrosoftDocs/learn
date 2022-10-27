@@ -4,8 +4,9 @@ metadata:
   title: Putting it all together with Azure SQL
   description: Putting it all together with Azure SQL
   ms.date: 08/05/2020
-  author: amthomas46
-  ms.author: bobward
+  author: MashaMSFT
+  ms.author: mathoma
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Putting it all together with Azure SQL

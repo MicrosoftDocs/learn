@@ -14,7 +14,7 @@ With the App Center SDK collecting data in your app, you will start to see what 
 
 App Center presents this data in the Analytics **Overview** page. You can also view active user numbers and trends, session durations, popular devices, and geographic distribution of your app. You can see the distribution of users across versions of your app as well.
 
-![Screenshot of the App Center Analytics showing example charts for an existing app with sections for active users, daily sessions per user, session duration, top devices, countries, and languages.](../media/7-app-center-analytics-chart-example.png)
+![Screenshot of the App Center Analytics showing example charts for an existing app with sections for active users, daily sessions per user, session duration, top devices, countries/regions, and languages.](../media/7-app-center-analytics-chart-example.png)
 
 ## Collect custom event data
 

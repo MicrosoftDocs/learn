@@ -1,6 +1,6 @@
 Your toy company's security team has asked you to verify that your website is accessible only through HTTPS. In this exercise, you configure your pipeline to run a smoke test that checks the security team's requirement.
 
-During the process, you'll: 
+During the process, you'll:
 
 > [!div class="checklist"]
 > * Add a test script to your repository.
@@ -93,7 +93,7 @@ Now, you can add a smoke test stage that runs your tests.
 
 ## Run the pipeline and review the test result
 
-1. In your browser, go to your pipeline. 
+1. In your browser, go to your pipeline.
 
 1. Select the most recent run of your pipeline.
 
@@ -125,7 +125,7 @@ Now that you've identified that your Bicep definition doesn't meet your security
 
 1. Find the definition for the Azure App Service app, and update it to include the `httpsOnly` property in its `properties` area:
 
-   :::code language="bicep" source="code/9-fixed.bicep" range="56-75" highlight="6" :::
+   :::code language="bicep" source="code/9-fixed.bicep" range="57-76" highlight="6" :::
 
 1. Save the file.
 
