@@ -49,7 +49,7 @@ Your organization has made the decision to move forward with the following confi
   
   This can be a backup if pass-through authentication is unavailable.
 - Configure pass-through authentication by using an on-premises authentication agent installed on Windows Server.
-- Use the seamless SSO feature of Azure AD to automatically sign in users from on-premises domain-joined computers.
+- Use the seamless SSO feature of Azure AD to automatically sign users in from on-premises domain-joined computers.
   
   SSO reduces user friction by suppressing multiple authentication requests.
 
