@@ -8,7 +8,7 @@ To obtain a digital certificate, the individual or entity submits a certificatio
 
 The lifespan of a digital certificate tends to be one year, after which the certificate expires. When that happens, you'll see a warning message about expired certificates. The warning indicates that the subject’s identity can't be confirmed.
 
-A common of application of digital certificates, that is transparent to the user, is in web-based communication.  Digital certificates are employed by websites that use secure *HTTPS* communication, and is denoted by a padlock icon in the browser's address bar.  Selecting the padlock on the address bar provides several options that can be selected and provide additional information.
+A common application of digital certificates, that is visible to the user, is in web-based communication.  Digital certificates are employed by websites that use secure *HTTPS* communication, and is denoted by a padlock icon in the browser's address bar.  Selecting the padlock on the address bar provides several options that can be selected and provide additional information.
 
 :::image type="content" source="../media/digital-certificates-step-1-inline.png" lightbox="../media/digital-certificates-step-1-expanded.png" alt-text="Diagram showing padlock icon on website address bar.":::
 
