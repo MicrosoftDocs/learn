@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-azure-private-5g-core-service.learning-content
+title: Azure Log Analytics
+metadata:
+  title: Azure Log Analytics
+  description: "Azure Private 5G Core allows you to use Azure Log Analytics to remotely monitor all the sites in your private mobile network."
+  ms.date: 27/10/2022
+  author: michael-weizhong-shan
+  ms.author: michaelshan
+  ms.topic: interactive-tutorial
+  ms.service: learning-private-5g-core
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-azure-log-analytics.md)]
