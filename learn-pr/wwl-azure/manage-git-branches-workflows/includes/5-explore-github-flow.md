@@ -10,7 +10,7 @@ The first step is to create a branch in your repository to work without affectin
 
 For more information, see "[Creating and deleting branches within your repository](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-and-deleting-branches-within-your-repository)."
 
-:::image type="content" source="../media/create-branch.png" alt-text="Screenshot of a branching model representing the branch creation.":::
+:::image type="content" source="../media/create-branch-8f64a7d3.png" alt-text="Screenshot of a branching model representing the branch creation.":::
 
 
 Make any desired changes to the repository. If you make a mistake, you can revert or push extra changes to fix it.
@@ -26,17 +26,17 @@ Once you're ready, you can create a pull request to ask collaborators for feedba
 
 Pull request review is one of the most valuable features of collaboration. You can require approval from your peers and team before merging changes. Also, you can mark it as a draft in case you want early feedback or advice before you complete your changes.
 
-:::image type="content" source="../media/open-pull-request.png" alt-text="Screenshot of a branching model representing an open a pull request.":::
+:::image type="content" source="../media/open-pull-request-5c5ad0c7.png" alt-text="Screenshot of a branching model representing an open a pull request.":::
 
 
 Describe the pull request as much as possible with the suggested changes and what problem you're resolving. You can add images, links, related issues, or any information to document your change and help reviewers understand the PR without opening each file. See "[Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)" and "[Linking a pull request to an issue](https://docs.github.com/en/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue)."
 
-:::image type="content" source="../media/github-pull-request.png" alt-text="Screenshot of open a pull request representation with description field, related issue and a checklist template.":::
+:::image type="content" source="../media/github-pull-request-162b47c0.png" alt-text="Screenshot of open a pull request representation with description field, related issue and a checklist template.":::
 
 
 Another way to improve PR quality and documentation and explicitly point something out to the reviewers is to use the comment session area. Also, you can @mention or request a review from specific people or teams.
 
-:::image type="content" source="../media/github-pull-request-comment.png" alt-text="Screenshot of pull request comment field.":::
+:::image type="content" source="../media/github-pull-request-comment-bd7b9038.png" alt-text="Screenshot of pull request comment field.":::
 
 
 There are other Pull Requests configurations, such as automatically requesting a review from specific teams or users when a pull request is created or checks to run on pull requests. For more information, see "[About status checks](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-status-checks)" and "[About protected branches](https://docs.github.com/en/github/administering-a-repository/about-protected-branches)."
@@ -45,7 +45,7 @@ After the reviewers' comments and checks validation, the changes should be ready
 
 If you have any conflicts, GitHub will inform you to resolve them. "[Addressing merge conflicts](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/addressing-merge-conflicts)."
 
-:::image type="content" source="../media/merge-branch.png" alt-text="Screenshot of a branching model representing the branch merge.":::
+:::image type="content" source="../media/merge-branch-640aa393.png" alt-text="Screenshot of a branching model representing the branch merge.":::
 
 
 After a successful pull request merges, there's no need for the remote branch to stay there. You can delete your branch to prevent others from accidentally using old branches. For more information, see "[Deleting and restoring branches in a pull request](https://docs.github.com/en/github/administering-a-repository/deleting-and-restoring-branches-in-a-pull-request)."
