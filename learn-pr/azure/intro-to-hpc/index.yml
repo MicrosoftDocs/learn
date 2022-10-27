@@ -30,7 +30,7 @@ subjects:
 units:
 - learn.intro-to-hpc.1-introduction
 - learn.intro-to-hpc.2-azure-batch
-- learn.intro-to-hpc.3-azure-vm-hpc-instances
+- learn.intro-to-hpc.3-how-azure-hpc-works
 - learn.intro-to-hpc.4-microsoft-hpc-pack
 - learn.intro-to-hpc.5-scenarios-for-hpc-and-batch
 - learn.intro-to-hpc.6-summary
