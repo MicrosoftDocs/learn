@@ -16,6 +16,8 @@ The first phase of creating an AI brain is to chunk a task into modular skills t
 
 Let’s explain how you define skills with the example of teaching a hammer-head robot how to walk. If you want to teach a robot how to walk, you follow three phase gait patterns: lift the left, plant the leg, swing the leg.
 
+![The screenshot shows how a hammer-head robot walks in three steps.](../media/hammer-head-robot.png)
+
 Next, you set a goal for each of the three skills. Each gait phase has distinct goals that facilitate walking.
 
 | Gait Phase (Skills) | Goals                                                        |
@@ -49,6 +51,8 @@ For the hammer-head walking robot example, we decomposed the task of walking int
 
 Here's how the brain design for the walking cycles looks like:
 
+![The screenshot shows brain design for the walking cycles.](../media/brain-design.png)
+
 The oval yellow shapes represent input and output to the brain. The leftmost oval in a brain design diagram is the input which contains the state environment captured by sensors placed in the environment. The rightmost oval in the brain design diagram is the output that contains the control actions or decisions that the autonomous AI is making to modify the environment.
 
 During the learning/training phase, the actions take place in a simulator and generate feedback that is observed by the sensors as the environment state at the input node. When the brain is deployed into production, the actions take place in the real environment.
@@ -79,9 +83,9 @@ And those technologies included in the module of Autonomous Intelligence:
 
 Review the table of strengths and weaknesses of these technologies to determine which is best suited to solve each skill.
 
-#### Visual Language of brain Design
+#### Visual language of brain design
 
-In the visual language of brain design, you'll color each module of your brain according to the technology used (Figure 2):
+In the visual language of brain design, you'll color each module of your brain according to the technology used:
 
 - Blue: Learned concept using Reinforcement Learning or Deep Reinforcement Learning
 - Green: Machine Learning for Advance Perception
@@ -90,7 +94,11 @@ In the visual language of brain design, you'll color each module of your brain a
 - Purple: Menus or optimization algorithms
 - Red: Manuals or expert systems and expert rules
 
+![The screenshot shows color of the each module in brain design.](../media/module-brain-design.png)
+
 The brain design for the example of the hammer-head walking robot looks like this:
+
+![The screenshot show the brain design after coloring.](../media/brain-design-colored.png)
 
 The action modules are Deep Reinforcement Learning modules as each one of the skills are difficult to learn. The selector is also a Deep Reinforcement Learning selector as it's fuzzy or difficult to decide when the robot is in each one of the gate phases.
 

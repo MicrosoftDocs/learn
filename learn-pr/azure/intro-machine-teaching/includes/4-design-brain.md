@@ -1,4 +1,4 @@
-Let's practice the three –step approach to brain design by sketching out a brain design for the soap extruder scenario.
+Let's practice the three step approach to brain design by sketching out a brain design for the soap extruder scenario.
 
 ## Step 1: Decompose your task into skills/modules
 
@@ -38,8 +38,12 @@ After you decompose the task into the skills, next you'll orchestrate how the le
 
 The following brain diagram designed by the team lists and orchestrates the skills needed to perform a soap extruder. The brain design will include two strategies (Oily Soap and Dry Soap) and a selector to determine when each strategy is appropriate. After that, an independent strategy will focus on aligning for optimal extrusion the die position.
 
+![The screenshot shows the brain design of soap extruder.](../media/brain-design-soap-extruder.png)
+
 ## Step3: Select the best technology to implement each skill/module
 
 Now it's time to color the brain design based on the technology to be used by each one of the modules.
+
+![The screenshot shows the brain design of soap extruder after coloring.](../media/brain-design-colored-soap-extruder.png)
 
 After training, the brain can be exported and integrated into the soap extruder control process. Like their old control system, their new brain knows how to apply optimal operational strategies. And unlike their old control system, the AI brain also knows how to combine those strategies in new ways and automatically respond to changes in the extruder and characteristics of the raw ingredients.
