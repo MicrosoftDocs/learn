@@ -8,4 +8,5 @@ Perception and action are different skills in separate modules because:
 
 - Learning perception and decision-making simultaneously (although possible) is hard. We’re forcing the AI to learn what it’s looking at, and what it should do at the same time.
 - Separating perception and action provides explainability. You get visibility into what the AI perceives and what decisions it makes, separately.
+
 Separating perception and action facilitates troubleshooting. An ML black box is hard to troubleshoot, but separate perception and decision modules make it easier to tell whether the problem lies with bad perception or bad decisions.
