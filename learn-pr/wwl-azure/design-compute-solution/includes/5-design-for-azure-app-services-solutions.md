@@ -1,4 +1,4 @@
-[Azure App Service](/azure/app-service/overview)is an HTTP-based service that lets you build and host web apps, background jobs, mobile backends, and RESTful APIs. You can use the programming language of your choice and build automated deployments from GitHub, Azure DevOps, or any Git repo. App Service offers automatic scaling and high availability.
+[Azure App Service](/azure/app-service/overview) is an HTTP-based service that lets you build and host web apps, background jobs, mobile backends, and RESTful APIs. You can use the programming language of your choice and build automated deployments from GitHub, Azure DevOps, or any Git repo. App Service offers automatic scaling and high availability.
 
 ### Things to know about Azure App Service
 
