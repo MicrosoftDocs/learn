@@ -24,7 +24,7 @@ The above image (Figure 2) shows the challenge of gradient-based method of falli
 
 Now, imagine that you would employ multiple explorers to start at different places in the landscape and search for the highest point. After each step, the explorers compare notes on their current altitude and elevation and use their combined knowledge to better map the earth. That might lead to a quicker search and avoid all explorers getting stuck in a high spot that isn't the peak of Mt. Everest (Figure 3). Yet, convergence to global maximum is still not guaranteed.
 
-![Example of multi-faceted optimization.](../media/example-multi-faceted-optimization.png)
+![Illustration of multi-faceted optimization.](../media/example-multi-faceted-optimization.png)
 
 The image above (Figure 3) is an example of multi-faceted optimization.
 
