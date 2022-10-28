@@ -27,7 +27,7 @@ For example, the first rule tells us that we should recycle air when the energy 
 
 That depends on the carbon dioxide levels in the rooms and on the outdoor temperature. It's fuzzy—and the right answer depends on the surface of the landscape defined by the relationships between energy prices, outdoor air temperatures, and number of people in the building.
 
-## Expert Systems & Expert Rules Strengths & Weaknesses
+## Expert systems & Expert rules strengths & weaknesses
 
 We should use expert systems or rules when we have a lot of expert knowledge available or when there are constraints to the system that must be complied with. They're reliable and explainable.
 

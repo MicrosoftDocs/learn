@@ -37,7 +37,7 @@ Many of these algorithms are inspired by processes in nature. Nature has many ef
 - **Tree methods** treat potential solutions as branches on trees. Imagine a choose-your-own-adventure novel (and other interactive fiction) that asks you to decide which direction to take at a certain point in the story. The decisions proliferate with the number of options at each decision point. Tree-based methods use various techniques to search the tree efficiently (not having to visit each branch) for solutions. Some of the more well-known tree methods are branch and bound and Monte Carlo tree search (MCTS).
 - **Simulated annealing** is inspired by the way metal cools down after being heat up. All metals have a crystalline structure that cools in a common way. That structure changes more when the metal is hotter and less when it is cooler. Annealing is a process by which a material like metal is heated above its recrystallization temperature and then slowly cooled to render it more malleable for the next steps in various industrial processes. This algorithm imitates that process. Simulated annealing searches the space using different search behavior over time. Simulated annealing casts a wide search net at first (exploring more), then when it knows more, it zeroes in on the most promising areas found, exploring less over time.
 
-### Optimization algorithms Strengths & Weaknesses
+### Optimization algorithms strengths & weaknesses
 
 Optimization algorithms don't assume any knowledge of the problem, therefore are best used when we don’t know anything about the state space, and we want to explore.
 

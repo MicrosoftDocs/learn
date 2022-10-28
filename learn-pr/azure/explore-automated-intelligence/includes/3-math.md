@@ -23,7 +23,7 @@ The challenge with the example above is that the Ideal Gas Law doesn't model hig
 
 Now we'll look at several types of closed loop control systems: Proportional-Integral-Derivative (PID) Control, Feed Forward Control, and Model Predictive Control (MPC).
 
-### a. Proportional-Integral-Derivative (PID) Control
+### a. Proportional-Integral-Derivative (PID) control
 
 PID control is a closed loop control system that employs feedback.
 
@@ -39,17 +39,17 @@ There are three numbers that determine how the controller will behave: the “P�
 
 Above image (Figure 1) shows the effect of the “P”, the “I” and the “D” of the PID controller when turning the ship rudder.
 
-#### PID Strengths & Weaknesses
+#### PID strengths & weaknesses
 
 The PID controllers are highly effective, and you can find it in almost every modern factory and machine, but it can confuse disturbances and noise for events that it needs to respond to. For example, if a PID controller controls the gas pedal on your car, it might confuse a speed bump (which is a minor and temporary disturbance) for a hill that requires significant acceleration. In this case, the controller might over accelerate and exceed the commanded speed, and then needs to slow down. 
 
-### b. Feedforward Control
+### b. Feedforward control
 
 Feedback control systems process the feedback and apply math in several ways to calculate the next best control action. Even when we control responding to feedback, limitations of the mathematical model sometimes lead to good decisions but might also lead to bad decisions.
 
 Feed forward adds the ability to better identify noise and disturbances in the feedback and ignore them when calculating the next control action. This works well for controlling machines and machine components but can fail for more complex systems and processes.
 
-#### Feedforward Control Strengths & Weaknesses 
+#### Feedforward control strengths & weaknesses
 
 The feed forward controllers are also widely used in the industry and are unexpensive. Regarding the limitations, both PID and feedforward controllers can only control one variable at a time, for one goal, per feedback loop. You would need two feedback/feed forward loops if you needed to control both the gas pedal and the steering wheel of the car. And neither of those loops can maximize gas mileage and maintain constant speed at the same time. Like in this example, what happens if you need to control more than one variable or pursue more than one goal? There are ways to solve this, but in real life we often see people create separate feedback loops that can't talk to each other or coordinate actions. In the same way that humans duplicate work and miscalculate what to do when they don't coordinate with each other, separate control loops don't manage multiple goals well and often waste energy.
 
@@ -57,7 +57,7 @@ The feed forward controllers are also widely used in the industry and are unexpe
 
 Model Predictive Control, or MPC, extends the capability of PID and Feedforward to control multiple inputs and multiple outputs. It uses an accurate model to try various control actions in advance and then choose the best action. It senses and acts as an optimization algorithm.
 
-#### MPC Strengths & Weaknesses
+#### MPC strengths & weaknesses
 
 MPC is the most advanced control method used in the industry currently. It's accurate and stable, right after it's developed.
 
