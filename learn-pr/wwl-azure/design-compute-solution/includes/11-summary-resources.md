@@ -1,6 +1,6 @@
 In this module, you learned how to choose and recommend an Azure compute solution. You reviewed scenarios for Azure Virtual Machines, Azure Logic Apps, Azure Functions, and Azure Container Instances. Azure Logic Apps and Azure Functions offer serverless compute options. You also looked at scenarios for supporting applications with Azure Batch, Azure App Service, and Azure Kubernetes Service. App Service lets you use the programming language of your choice. Azure Kubernetes Service makes it simple to deploy and manage containerized applications. You explored how to host applications in the cloud with Azure compute services to improve performance, scalability, and flexibility.
 
-### Learn more with Azure documentation
+## Learn more with Azure documentation
 
 - Choose an [Azure compute service](/azure/architecture/guide/technology-choices/compute-decision-tree).
 
@@ -22,7 +22,7 @@ In this module, you learned how to choose and recommend an Azure compute solutio
 
 - Review [security considerations for Azure Container Instances](/azure/container-instances/container-instances-image-security).
 
-### Learn more with self-paced training
+## Learn more with self-paced training
 
 - Choose the [best Azure service to automate your business processes](/training/modules/choose-azure-service-to-integrate-and-automate-business-processes/).
 
