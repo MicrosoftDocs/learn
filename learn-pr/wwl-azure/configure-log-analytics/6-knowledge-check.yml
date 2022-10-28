@@ -28,7 +28,7 @@ quiz:
     - content: "Text files"
       isCorrect: false
       explanation: "Incorrect. Text files wouldn't be an efficient way to organize log data."
-  - content: "An online retailer has a very large web farm with more than 100 virtual machines. They would like to use Log Analytics to ensure these machines are responding to requests. To automate the process, the team will create a search query. Which source table should be used?"
+  - content: "An online retailer has a large web farm with more than 100 virtual machines. They would like to use Log Analytics to ensure these machines are responding to requests. To automate the process, the team will create a search query. Which source table should be used?"
     choices:
     - content: "Event"
       isCorrect: false
