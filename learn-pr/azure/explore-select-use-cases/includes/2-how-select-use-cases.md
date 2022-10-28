@@ -10,7 +10,7 @@ To select a winning use case for Autonomous AI, we'll consider the following fac
 
 When one or more of these factors are applicable, we’ll have a winning use case for Autonomous AI, and Machine Teaching will help you unlock the business value.
 
-## Solving a High-value Problem
+## Solving a high-value problem
 
 Selecting a high-value problem is key to identifying a good use case for Autonomous AI. The rule of thumb is that a single digit percentage improvement of a key performance indicator (KPI) per year leads to over $1 million USD in savings or increased revenue per facility.
 
@@ -20,7 +20,7 @@ Financial return on investment is the most obvious way to identify a high-value 
 
 The reason why we recommend a single digit percentage improvement of a KPI leading to $1 million USD return of investment is because designing and building an AI brain requires resources. Developing the simulator is especially costly and time consuming. Executives and business owners need to see the value for the project to succeed.
 
-## Sub-optimized Automated methods
+## Sub-optimized automated methods
 
 The second factor to consider when selecting use cases is the level of sub-optimization of the existing automated methods. Here we’ll consider the limitations of the current methods and how much Autonomous AI can help improve the process.
 
