@@ -30,7 +30,7 @@ So, the team defines the skills as three control strategies that should be taugh
 
 - Strategy 1 will be for oily soap
 - Strategy 2 will be for dry soap
-- Strategy 3 will be to adjust die no matter the soap type
+- Strategy 3 will be to adjust the die no matter the soap type
 
 ## Step 2: Orchestrate how your skills/modules work together
 

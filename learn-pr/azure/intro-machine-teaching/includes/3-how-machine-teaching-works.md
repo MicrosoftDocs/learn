@@ -43,7 +43,7 @@ After identifying the skills to teach, we need to put them together in the brain
 When you orchestrate the skills, you should ask a few questions to guide your thinking:
 
 - Are there any skills that should be performed in a sequence?
-- For skills that should be used in sequence, are the sequence fixed or variable?
+- For skills that should be used in sequence, is the sequence fixed or variable?
 - Are there any skills that can or should be performed in parallel?
 - Are there strategies that should be arranged in a hierarchy?
 
