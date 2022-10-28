@@ -7,7 +7,7 @@ The strengths of Automated methods will complement Autonomous Intelligence techn
 > [!NOTE]
 > To learn about Autonomous Intelligence technologies, their strengths and weaknesses, review Module 2 – Introduction to Autonomous Intelligence.
 
-The table image summarizes the limitations of automated intelligence methods and explain when to use them.
+The table image summarizes the limitations of automated intelligence methods and explains when to use them.
 
 |                                       | **What is it?**                                              | **When should you use it?**                                  | **What are the limitations?**                                |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
