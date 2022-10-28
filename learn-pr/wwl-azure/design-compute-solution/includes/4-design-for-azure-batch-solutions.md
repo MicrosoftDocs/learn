@@ -38,5 +38,6 @@ Let's look at some best practices for using Azure Batch. As you review the sugge
 
 - **Consider jobs**. Uniquely name your jobs so you can accurately monitor and log the activity. Consider grouping your tasks into efficiently sized jobs. It's more efficient to use a single job that contains 1,000 tasks rather than creating 100 jobs that have 10 tasks each. 
 
-> [!TIP]
-> We reviewed just a few best practices for the compute service. Take a few minutes to read more about [Azure Batch best practices](/azure/batch/best-practices).
+#### Business application
+
+Take a few minutes to read about other [Azure Batch best practices](/azure/batch/best-practices).

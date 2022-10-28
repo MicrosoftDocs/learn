@@ -34,5 +34,6 @@ There are several factors to consider when deciding whether Azure Kubernetes Ser
 | **Docker image support** | _Do you already use Docker images for your containers?_ | By default, AKS supports the Docker file image format. |
 | **Private container registry** | _Do you need a private container registry?_ | AKS integrates with Azure Container Registry (ACR). You aren't limited to ACR though, you can use other container repositories, public, or private. |
 
-> [!TIP]
-> Take a few minutes to read about how [Mercedes-Benz R&D is using Azure Kubernetes Service](https://customers.microsoft.com/story/784791-mercedes-benz-r-and-d-creates-container-driven-cars-powered-by-microsoft-azure).
+#### Business application
+
+Take a few minutes to read about how [Mercedes-Benz R&D is using Azure Kubernetes Service](https://customers.microsoft.com/story/784791-mercedes-benz-r-and-d-creates-container-driven-cars-powered-by-microsoft-azure).

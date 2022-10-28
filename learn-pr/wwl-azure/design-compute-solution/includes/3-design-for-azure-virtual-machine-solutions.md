@@ -55,9 +55,6 @@ The best way to determine the appropriate machine size is to consider the type o
 | **GPU** | GPU virtual machines are specialized virtual machines targeted for heavy graphics rendering and video editing. | - Model training and inferencing with deep learning |
 | **High performance computes** | High performance compute offers the fastest and most powerful CPU virtual machines with optional high-throughput network interfaces. | - Workloads that require fast performance <br> - High traffic networks |
 
-> [!TIP]
-> Try the [Azure Virtual Machines selector tool](https://azure.microsoft.com/pricing/vm-selector/) to find other sizes that best fit your workload.
-
 #### Virtual machine pricing
 
 A subscription is billed two separate costs for every virtual machine: _compute_ and _storage_. By separating these costs, you can scale them independently and only pay for what you need.
@@ -77,3 +74,7 @@ Azure provides various operating system images that you can install into the vir
 - If you're looking for more than just base operating system images, you can search [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/compute). There are various install images that include not only the operating system but popular software tools, such as WordPress. The image stack consists of a Linux server, Apache web server, a MySQL database, and PHP. Instead of setting up and configuring each component, you can install an Azure Marketplace image and get the entire stack all at once.
 
 - If you don't find a suitable operating system image, you can create your own disk image. Your disk image can be uploaded to Azure Storage and used to create an Azure virtual machine. Keep in mind that Azure only supports 64-bit operating systems.
+
+#### Business application
+
+Try the [Azure Virtual Machines selector tool](https://azure.microsoft.com/pricing/vm-selector/) to find other sizes that best fit your workload.

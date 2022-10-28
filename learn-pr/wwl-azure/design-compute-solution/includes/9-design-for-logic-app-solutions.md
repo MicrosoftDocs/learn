@@ -45,10 +45,10 @@ There are several points to consider when deciding whether Azure Logic Apps is t
 
 - **Consider other options**. Know when _not_ to use Azure Logic Apps. There are cases where Logic Apps might not be the best option. Logic Apps isn't an ideal solution for real-time requirements, complex business rules, or if you're using non-standard services.
 
-The following flowchart has suggestions for other questions to ask as you plan for using Azure Logic Apps.
-
-:::image type="content" source="../media/investigate-logic-apps-thumbnail.png" alt-text="Flowchart that shows a detailed decision tree for when to use Azure Logic Apps." border="false" lightbox="../media/investigate-logic-apps.png":::
-
-#### Business scenario
+#### Business application
 
 Take a few minutes to learn how a construction rental company is automating workflows and providing an innovative customer experience with [Azure Logic Apps](https://customers.microsoft.com/story/cramo-professional-services-azure). 
+
+You can use the following flowchart for other questions to ask as you plan for using Azure Logic Apps.
+
+:::image type="content" source="../media/investigate-logic-apps-thumbnail.png" alt-text="Flowchart that shows a detailed decision tree for when to use Azure Logic Apps." border="false" lightbox="../media/investigate-logic-apps.png":::

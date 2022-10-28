@@ -20,9 +20,6 @@ Let's review some benefits and scenarios of Azure Functions that make it a great
 
    :::image type="content" source="../media/azure-functions-events.png" alt-text="Diagram that shows how Azure Functions responds to API calls and outputs data to Azure Notification Hubs." border="false":::
 
-> [!TIP]
-> You can get some other ideas on how to use Azure Functions by checking out the [code samples](/samples/browse/?expanded=azure&languages=csharp&products=azure-functions) page. 
-
 ### Things to consider when using Azure Functions
 
 Let's look at some best practices for using Azure Functions. As you consider these suggestions, think about the advantages to using Azure Functions in the Tailwind Traders infrastructure.
@@ -37,4 +34,8 @@ Let's look at some best practices for using Azure Functions. As you consider the
 
 - **Consider not sharing storage accounts**. Maximize performance by using a separate storage account for each function application. When you create a function app, associate it with a unique storage account. Using a unique storage account is important if your function generates a high volume of storage transactions.
 
+#### Business application
+
 Take a few minutes to read about other [Azure Functions best practices](/azure/azure-functions/functions-best-practices).
+
+You can get more ideas on how to use Azure Functions by checking out the [code samples](/samples/browse/?expanded=azure&languages=csharp&products=azure-functions) page.
