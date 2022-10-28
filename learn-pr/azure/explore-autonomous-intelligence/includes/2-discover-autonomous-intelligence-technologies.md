@@ -16,7 +16,7 @@ In Reinforcement Learning, an agent is controlled by the machine learning algori
 
 ![The screenshot shows the diagram of reinforcement learning.](../media/deep-reinforcement-learning.png)
 
-The DRL agent observes the environment, decides on an action that is executed in the environment, and gets positively rewarded if the action favors a goal, otherwise it gets negatively rewarded.
+In the above image, the DRL agent observes the environment, decides on an action that is executed in the environment, and gets positively rewarded if the action favors a goal, otherwise it gets negatively rewarded.
 
 Deep Reinforcement Learning has some unique qualities that we describe below.
 
