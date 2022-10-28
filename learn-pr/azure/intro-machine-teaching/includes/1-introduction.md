@@ -18,6 +18,8 @@ The control system can set the following control actions:
 
 Each control parameter must be tightly controlled to produce soap that meets quality specifications.
 
+![The screenshot shows schematic of the soap manufacturing extruder.](../media/soap-manufacturing-extruder.png )
+
 The current automated methods have reached their maximum capability. However, the engineering team can improve product yield up to 15% by taking over manually, especially during the line changeovers. The company wants to know if Autonomous AI will be able to replicate or improve upon that (currently manual) 15% increase in productivity.
 
 The company wants to build an Autonomous AI brain solution that:
