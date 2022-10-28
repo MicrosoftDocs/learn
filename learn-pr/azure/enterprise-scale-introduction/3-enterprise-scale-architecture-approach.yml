@@ -3,7 +3,7 @@ uid: learn.azure.enterprise-scale-introduction.3-enterprise-scale-architecture-a
 metadata:
   title: Enterprise-scale architecture approach
   description: Enterprise-scale architecture approach
-  ms.date: 09/21/2020
+  ms.date: 10/17/2022
   author: JefferyMitchell
   ms.author: jemitche
   ms.topic: interactive-tutorial
@@ -31,17 +31,17 @@ quiz:
       isCorrect: false
       explanation: Enterprise scale is an architectural approach and reference implementation for any organization.
 
-  - content: Which one of the following is a critical design area?
+  - content: Which one of the following concepts is a critical design area?
     choices:
     - content: Subscription planning
       isCorrect: false
-      explanation: Subscription planning is not a critical design area.
+      explanation: Subscription planning isn't a critical design area.
     - content: Workload assessments
       isCorrect: false
-      explanation: Workload assessments are not a critical design area.
+      explanation: Workload assessments aren't a critical design area.
     - content: Agile platform development
       isCorrect: false
-      explanation: Enterprise scale uses a DevOps approach for both application and central teams. This is a critical design area.
+      explanation: Enterprise scale uses a DevOps approach for both application and central teams. This concept is a critical design area.
     - content: Management group and subscription organization
       isCorrect: true
-      explanation: Management group structures must be considered thoroughly when an organization plans Azure adoption at scale. This is a critical design area.
+      explanation: Management group structures must be considered thoroughly when an organization plans Azure adoption at scale. This concept is a critical design area.
