@@ -1,6 +1,6 @@
-Now, let’s review an example of an AI spec document for Project Moab.
+Now, let's review an example of an AI spec document for Project Moab.
 
-We will be explaining the different sections that are included in any AI specification document, using the Moab specification document as an example.
+We'll be explaining the different sections that are included in any AI specification document, using the Moab specification document as an example.
 
 For this initial review of an AI Spec document, assume that you're the head of the funding team at your company. The adoption team is trying to bring a new technology to the company: Bonsai. The team has put together a deck for you to understand the problem that they're trying to solve and the benefits it brings to the company. At this stage, your only objective is to learn about the problem and make a preliminary decision about the value this project could bring to your company.
 
@@ -8,13 +8,15 @@ For this initial review of an AI Spec document, assume that you're the head of t
 
 ***What task or process are you looking to improve using Machine Teaching?***
 
-The task is balancing a ball on the plate of the Moab device.
+The task is balancing a ball on the plate of the Moab device in Figure 1.
+
+![The screenshot shows the Moab device.](../media/moab-device.png)
 
 Device Overview:
 
 - The device has three arms powered by servo motors and runs off a Raspberry Pi 4.
 - These arms work in tandem to control the angle of the transparent plate to keep the ball balanced.  
-- Using computer vision, the Moab device tracks and maps the ball movement onto a standard 2D coordinate system (Figure 2). 
+- Using computer vision, the Moab device tracks and maps the ball movement onto a standard 2D coordinate system (Figure 2).
 - Looking at the front of the device, the x-axis runs left-to-right, and the y-axis runs front-to-back, with the plate center at location (0, 0) and a radius of r.
 - The trained AI must learn how to adjust the angle of the plate to balance a ball.
 
@@ -48,28 +50,47 @@ There are three limitations:
 
 ## Section 6 - Machine Teaching Strategy
 
-***In this section, you’ll include the brain design.***
+***In this section, you'll include the brain design.***
 
 To find the strategies, we'll conduct interviews with subject matter experts filling up the three-column exercise as it's shown below.
+
+**Heuristic**
+
+| When the [environment variable list] trend in this direction or interact in this way | This is what we think it means                               | This is what you should do (to manipulate control actions)   |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| When the ball is moving towards the plate edge               | The pitch and roll are not oriented to bring the ball to the center | Modify the pitch and roll to be oriented in the opposite direction than the ball’s velocity |
+
+**Concept Decomposition: Monolithic**
+
+The Moab sample is a monolithic brain (only one learning module called "Move to the center"– the blue rectangle). It also includes an advanced perception module which is a computer vision preprocessor to track the ball position (the green pentagon).
+
+![The screenshot shows the diagram of monolithic concept.](../media/monolithic-concept.png)
+
+**Concept 1**: Move to the center
+
+The trained AI must learn how to adjust the plate pitch and roll to balance a ball using the following objectives:
+
+- The ball position (x, y) will reach the plate center at (0, 0) and stay there
+- The ball position will not get near the plate edge at (| (x, y) - (0, 0) | << r)
 
 ## Section 7 – Control Actions
 
 ***What actions will the Brain need to output to control or optimize your system?***
 
-There are two control actions or actuators at a low level for the Moab device: the pitch and the roll. The data type (decimal), units (radians), control frequency (30 Hz, i.e., 30 times per second), and servo operating range (between -1 and 1) are the parameters that you’ll include in the AI spec.
+There are two control actions or actuators at a low level for the Moab device: the pitch and the roll. The data type (decimal), units (radians), control frequency (30 Hz, i.e., 30 times per second), and servo operating range (between -1 and 1) are the parameters that you'll include in the AI spec.
 
 ## Section 8 - Constraints
 
 ***What constraints are placed on the control actions by the system or the process?***
 
-The Moab device doesn’t have any constraints.
+The Moab device doesn't have any constraints.
 Note, the ranges for pitch and roll have already been identified and limited on the brain side to prevent the need for the brain to learn these known constraints.
 
 ### Section 9 – Environment States
 
 ***What information do you need to pass to the Brain about the system and its environment for the Brain to learn to control or optimize the system?***
 
-Note, this section refers to sensors that collect information from the environment, corresponding to the input in the brain design. Additionally, you'll surely want to include: the data type (decimal), the source where you’ll find the data (simulator), units (meters & meters/second), measurement frequency, and operating range are the parameters that you’ll find in this section of the AI spec.
+Note, this section refers to sensors that collect information from the environment, corresponding to the input in the brain design. Additionally, you'll surely want to include: the data type (decimal), the source where you'll find the data (simulator), units (meters & meters/second), measurement frequency, and operating range are the parameters that you'll find in this section of the AI spec.
 
 For the Moab, there are four environment states:
 
@@ -84,6 +105,10 @@ For the Moab, there are four environment states:
 - How does the environment change?  
 - What is the reward signal to train that concept?  
 - What configuration variables are used to describe the scenario? (these are the lessons you're going to give the Brain to learn the task)
+
+| Concept        | Action (*What actions does this concept apply to?*) | State (*Which states apply to this concept?*)                | Goal Objectives                                              | Configuration  (*What do* *you* *need to vary in the training to ensure that the Brain works well across scenarios?*) |
+| -------------- | --------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Move To Center | -  Plate pitch<br> - Plate roll                     | - x position<br>- y position<br>- x velocity<br>- y velocity | - Avoid Fall Off Plate - *Ball's distance from the center must not reach values above 80% of the plate radius*<br> - Drive Center Of Plate - *The ball's X and Y coordinates (state.ball_x and state.ball_y) must stay within CloseEnough radial distance from the plate center* | - Initial ball conditions (initial_x, initial_y) <br>- Initial ball velocity conditions (initial_vel_x, initial_vel_y) <br>- Initial plate conditions (initial_pitch, initial_roll) <br>- Optional for Robustness: Ball properties (shell color and radius |
 
 ## Section 11 – Configuration Scenarios
 
@@ -122,7 +147,7 @@ The Brain will be benchmarked against the PID controller included in the Moab de
 Many questions need to be answered for the simulation:
 
 - Who's building it?  
-What’s the validation plan?  
+What's the validation plan?  
 - When is the simulator going to be ready?  
 - What is the simulation written in? In the case of the Moab example, it's a custom simulator written in python.  
 - How fast is it? For Moab, it's 30 Hz.
@@ -164,4 +189,4 @@ This section answers how the brain will be deployed to control the production sy
 We've arrived at the last section of the AI specification document.
 In this module, we've seen an example of all the sections included in the AI specification document of Project Moab. The Moab brain is monolithic, i.e. it only has a learned module, move to center.
 
-In industrial processes, you’ll find more complex scenarios and a modular brain design will be necessary.
+In industrial processes, you'll find more complex scenarios and a modular brain design will be necessary.
