@@ -15,7 +15,7 @@ Introduction to high performance computing (HPC) on Azure
 ## Product(s)
 
 - Azure Batch
-- Azure virtual machine HPC instances
+- How Azure HPC works
 - Microsoft HPC Pack
 
 ## Prerequisites
@@ -69,14 +69,14 @@ Identify the subtasks of *Introduction to high performance computing (HPC) on Az
     - What are the benefits of using Azure Batch?
     - What high-level component acts as a container for tasks in Azure Batch?
 
-1. **Azure VM HPC Instances**
+1. **How Azure HPC works**
 
     List the content that will enable the learner to *Identify the HPC and batch solutions available on Azure*:
 
-    - Describe Azure virtual machine HPC instances and their benefits
-        - H-Series VMs and their unique performance and scalability advantages
-        - Ultra-low latency and high-bandwidth networking capabilities
-        - Large memory and HPC-class CPU SKUs
+    - Describe components of Azure HPC system and orchestration of components of HPC system for HPC applications
+        - Basic components HPC system
+        - Mapping Azure VM and storage products to components in HPC system
+        - Orchestration of components 
         - The ways in which these features are particularly well-suited for HPC workloads  
 
    **Knowledge check**
@@ -107,13 +107,11 @@ Identify the subtasks of *Introduction to high performance computing (HPC) on Az
 
     - Learn about sample use cases for HPC and Batch technologies:
         - Explicit and implicit finite element analysis
-        - Weather modeling
         - 3D Rendering
-        - Financial risk modeling
-        - Engineering design and simulation
-        - Genomics research
+        - DNA analysis
         - CAD engineering
         - Computational fluid dynamics
+        - Decision criteria
     - Azure Batch (which if any of the above use cases are particularly suitable, and also in relation to the intro scenario)- Azure HPC Instances (which if any of the above use cases are particularly suitable, and also in relation to the intro scenario)
     - Microsoft HPC Pack
 
