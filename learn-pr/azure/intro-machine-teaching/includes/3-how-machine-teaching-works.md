@@ -43,7 +43,7 @@ After identifying the skills to teach, we need to put them together in the brain
 When you orchestrate the skills, you should ask a few questions to guide your thinking:
 
 - Are there any skills that should be performed in a sequence?
-- For skills that should be used in sequence, is the sequence fixed or variable?
+- For skills that should be used in sequence, are the sequence fixed or variable?
 - Are there any skills that can or should be performed in parallel?
 - Are there strategies that should be arranged in a hierarchy?
 
@@ -100,7 +100,7 @@ The brain design for the example of the hammer-head walking robot looks like thi
 
 ![The screenshot show the brain design after coloring.](../media/brain-design-colored.png)
 
-The action modules are Deep Reinforcement Learning modules as each one of the skills are difficult to learn. The selector is also a Deep Reinforcement Learning selector as it's fuzzy or difficult to decide when the robot is in each one of the gate phases.
+The action modules are Deep Reinforcement Learning modules as each one of the skills is difficult to learn. The selector is also a Deep Reinforcement Learning selector as it's fuzzy or difficult to decide when the robot is in each one of the gate phases.
 
 Remember to always use the shape and colors as depicted above as it's a convention among the Autonomous AI Architects, and it's easy to understand once you learn it.
 
