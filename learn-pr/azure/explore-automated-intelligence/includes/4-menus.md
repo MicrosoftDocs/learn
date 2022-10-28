@@ -6,11 +6,11 @@ Optimization algorithms search a list of options and select a control action usi
 
 Optimization algorithms are like explorers searching the surface of the earth for the highest mountain. One way to ensure that you find the highest peak is to set foot on every square meter of the earth, take measurements at each point and then, when you're done, sort your measurements by altitude. The highest point on earth will now be at the top of your list.
 
-Since there are 510 million square kilometers of land mass on earth, this would take many lifetimes to get your answers. This method is called brute force search and is only feasible when the geographical search area of potential decisions is small. For more complex geographies or state spaces, we need other methods as are introduced in the following sections.
+Since there are 510 million square kilometers of land mass on earth, this would take many lifetimes to get your answers. This method is called **brute force search** and is only feasible when the geographical search area of potential decisions is small. For more complex geographies or state spaces, we need other methods as are introduced in the following sections.
 
 ## Gradient-based optimization
 
-A more efficient way to search the earth for the highest peak is to walk the earth and only take steps in the direction that slopes upward the most. Using this method, you can avoid exploring much of the geography by only traveling uphill. In optimization, this class of methods is called gradient-based methods because the slope of a hill is called a grade or a gradient.
+A more efficient way to search the earth for the highest peak is to walk the earth and only take steps in the direction that slopes upward the most. Using this method, you can avoid exploring much of the geography by only traveling uphill. In optimization, this class of methods is called **gradient-based methods** because the slope of a hill is called a grade or a gradient.
 
 There are two challenges with this method. The first is that, depending on where you start your search exploration, you could end up on a tall mountain that isn't the highest point on earth (also called local maximum) (see Figure 2).
 
@@ -24,7 +24,7 @@ The above image (Figure 2) shows the challenge of gradient-based method of falli
 
 Now, imagine that you would employ multiple explorers to start at different places in the landscape and search for the highest point. After each step, the explorers compare notes on their current altitude and elevation and use their combined knowledge to better map the earth. That might lead to a quicker search and avoid all explorers getting stuck in a high spot that isn't the peak of Mt. Everest (Figure 3). Yet, convergence to global maximum is still not guaranteed.
 
-![Example of multi-faceted optimization.](../media/example-multi-faceted%20optimization.png)
+![Example of multi-faceted optimization.](../media/example-multi-faceted-optimization.png)
 
 The image above (Figure 3) is an example of multi-faceted optimization.
 
