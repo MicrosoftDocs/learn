@@ -46,16 +46,21 @@ Azure Service Bus message queues are intended for enterprise applications, such 
 
 :::image type="content" source="../media/service-bus-topic.png" alt-text="Illustration that shows a sender and multiple receivers communicating through subscriptions." border="false":::
 
+#### Business scenario
+
 Consider the scenario where a customer is watching to a video by with the product demo app. You can support the actions by using publish-subscribe topic attributes:
+
 - The mobile app sends a message to the *Watched* topic.
+
 - The topic has two subscriptions. The first subscription completes the *UpdateUserWatchHistory* action. A second subscription completes the *UpdateProductFanList* action.
+
 - Each subscription for the *Watched* topic receives its own copy of the message.
 
 ### Things to consider when choosing messaging services
 
-Each Azure messaging solution has a slightly different set of features and capabilities. You can choose one solution or use both to fulfill your design requirements. Review the following scenarios, and think about which solutions can benefit the Tailwind Traders application architecture.
+Each Azure messaging solution has a slightly different set of features and capabilities. You can choose one solution or use both to fulfill your design requirements. Review the following scenarios, and think about which messaging solutions can benefit the Tailwind Traders application architecture.
 
-| Messaging solution | Sample scenarios |
+| Messaging solution | Example scenarios |
 | --- | --- |
  **Azure Queue Storage** | _You want a simple queue to organize messages_.<br><br> _You need an audit trail of all messages that pass through the queue_.<br><br>  _You expect the queue storage to exceed 80 GB_.<br><br> _You'd like to track progress for processing a message inside of the queue_. |
 |  **Azure Service Bus** <br> _message queues_ |_You require an at-most-once delivery guarantee_.<br><br> _You require at-least-once message processing (PeekLock receive mode)_.<br><br> _You require at-most-once message processing (ReceiveAndDelete receive mode)_.<br><br> _You want to group messages into transactions_.<br><br> _You want to receive messages without polling the queue_.<br><br> _You need to handle messages larger than 64 KB but less than 256 KB_.<br><br> _You expect the queue storage won't exceed 80 GB_.<br><br> _You'd like to publish and consume batches of messages_. |
