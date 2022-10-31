@@ -1,3 +1,12 @@
+
+Why do I need this? - background
+What is it? - capability overview
+What does it do for me? - benefits & scenario - monitoring benefits & warehouse operation manager
+What can I learn from the module? - key content - monitoring tools and methods; metric types & key metrics
+What are required? - prerequisites
+What can I do after the learning? - objectives
+
+
 <!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
 
     Goal: orient the learner to the area covered in this module

@@ -4,7 +4,7 @@ hidden: true
 metadata:
   title: Monitor the Azure Private 5G Core service
   description: "Describes the monitoring capabilities of Azure Private 5G Core, the Azure Log Analytics tool and the packet core dashboards for monitoring the service, and the distributed tracing tool for diagnosing network issues."
-  ms.date: 27/10/2022
+  ms.date: 10/27/2022
   author: michael-weizhong-shan
   ms.author: michaelshan
   ms.topic: interactive-tutorial
