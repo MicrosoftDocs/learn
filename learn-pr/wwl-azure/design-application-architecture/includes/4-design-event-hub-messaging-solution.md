@@ -6,7 +6,7 @@ For this architecture, you might choose a messaging solution that uses _event hu
 
 ### Things to know about Azure Event Hubs
 
-[Azure Event Hubs](/azure/event-hubs/event-hubs-about) is a fully managed, real-time data ingestion service. Let's review the characteristics of the service:
+[Azure Event Hubs](/azure/event-hubs/event-hubs-about) is a fully managed, big data streaming platform and event ingestion service. Let's review the characteristics of the service:
 
 - Azure Event Hubs supports real time data ingestion and microservices batching on the same stream. 
 
@@ -50,7 +50,7 @@ As you plan for how Azure Event Hubs can be a part of your messaging solution, c
    - **Ingress**: Up to 1 MB per second or 1,000 events per second (whichever comes first)
    - **Egress**: Up to 2 MB per second or 4,096 events per second
 
-- **Cosider pull model benefits**. Investigate how the pull model implemented by Event Hubs can benefit your application communication. Event Hubs holds a message in its cache and allows it to be read. When a message is read, it isn't deleted. The message remains for other consumers.
+- **Consider pull model benefits**. Investigate how the pull model implemented by Event Hubs can benefit your application communication. Event Hubs holds a message in its cache and allows it to be read. When a message is read, it isn't deleted. The message remains for other consumers.
 
 - **Consider message failures**. Remember Azure Event Hubs doesn't handle messages that aren't processed as expected. Suppose a message consumer malfunctions because of data format. Event Hubs won't detect this issue. The message remains until its `time-to-live` setting has expired.
 

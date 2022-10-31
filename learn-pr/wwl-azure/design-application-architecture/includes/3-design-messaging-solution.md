@@ -22,7 +22,7 @@ For these app requirements, the ideal solution is a message-based system. Azure 
 
 ### Things to know about Azure Service Bus
 
-Azure Service Bus is a fully managed enterprise message broker. Service Bus is used to decouple applications and services from each other. Review the following benefits characteristics of the service.
+[Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview) is a fully managed enterprise message broker. Service Bus is used to decouple applications and services from each other. Review the following benefits characteristics of the service.
 
 - Azure Service Bus supports _message queues_ and _publish-subscribe topics_.
 
@@ -34,7 +34,7 @@ Azure Service Bus is a fully managed enterprise message broker. Service Bus is u
 
 #### Message queues
 
-[Azure Service Bus message queues](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions) is a message broker system built on top of a dedicated messaging infrastructure. Like Azure queues, Service Bus holds messages until the target is ready to receive them. 
+[Azure Service Bus message queues](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions#queues) is a message broker system built on top of a dedicated messaging infrastructure. Like Azure queues, Service Bus holds messages until the target is ready to receive them. 
 
 :::image type="content" source="../media/service-bus-queue.png" alt-text="Illustration that shows a sender and receiver communicating through a message queue." border="false":::
 
@@ -42,7 +42,7 @@ Azure Service Bus message queues are intended for enterprise applications, such 
 
 #### Publish-subscribe topics
 
-[Azure Service Bus publish-subscribe topics](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions) are like queues but can have multiple subscribers. When a message is sent to a topic, multiple components can be triggered to perform a task. 
+[Azure Service Bus publish-subscribe topics](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions#topics-and-subscriptions) are like queues but can have multiple subscribers. When a message is sent to a topic, multiple components can be triggered to perform a task. 
 
 :::image type="content" source="../media/service-bus-topic.png" alt-text="Illustration that shows a sender and multiple receivers communicating through subscriptions." border="false":::
 
@@ -50,11 +50,11 @@ Azure Service Bus message queues are intended for enterprise applications, such 
 
 Consider the scenario where a customer is watching to a video by with the product demo app. You can support the actions by using publish-subscribe topic attributes:
 
-- The mobile app sends a message to the *Watched* topic.
+- The mobile app sends a message to the `Watched` topic.
 
-- The topic has two subscriptions. The first subscription completes the *UpdateUserWatchHistory* action. A second subscription completes the *UpdateProductFanList* action.
+- The topic has two subscriptions. The first subscription completes the `UpdateUserWatchHistory` action. A second subscription completes the `UpdateProductFanList` action.
 
-- Each subscription for the *Watched* topic receives its own copy of the message.
+- Each subscription for the `Watched` topic receives its own copy of the message.
 
 ### Things to consider when choosing messaging services
 
