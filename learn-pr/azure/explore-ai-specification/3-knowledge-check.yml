@@ -61,7 +61,7 @@ quiz:
     choices:
     - content: "Environment states are the sensors or input to the brain and configurable scenarios are the lessons given to the brain to practice controlling the device."
       isCorrect: true
-      explanation: "Environment states are the sensors or input to the brain – how the environment looks after each control action has been executed. Configurable scenarios include the range of initial values of sensor variables and control variables, i.e. all the lessons the brain has to practice on to learn controlling the Moab device."
+      explanation: "Environment states are the sensors or input to the brain – how the environment looks after each control action has been executed. Configurable scenarios include the range of initial values of sensor variables and control variables, i.e. all the lessons the brain has to practice on to learning controlling the Moab device."
     - content: "Environment states are the control actions performed by the brain at each iteration."
       isCorrect: false
       explanation: "Environment states are the sensors or input to the brain. Control actions are the output of the brain."
