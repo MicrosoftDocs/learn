@@ -1,10 +1,35 @@
 
-Why do I need this? - background
-What is it? - capability overview
-What does it do for me? - benefits & scenario - monitoring benefits & warehouse operation manager
-What can I learn from the module? - key content - monitoring tools and methods; metric types & key metrics
-What are required? - prerequisites
-What can I do after the learning? - objectives
+In the private mobile networks powered with Azure Private 5G Core, enterprises usually run mission-critical applications that support their user equipment (UE). For example, robots on a factory floor rely on the network to communicate with each other, and IoT devices in a smart farm rely on the network to report status and adjust to environmental changes. If these UEs malfunctions or even stops functioning due to network connectivity or performance issues, the bussiness of the enterprise will be severely impacted. Therefore, monitoring the health of the network continuously and making sure everything runs smoothly are of critical importance to the business continuity of enterprises. In addition, to minimize business impact, enterprises need to quickly diagnose and fix an issue once it is reported.
+
+## Monitoring and troubleshooting capabilities
+
+Azure Private 5G Core provides flexible monitoring options, which allow you to either monitor multiple network sites centrally from the cloud, or locally monitor each individual site from within the site.
+
+- Remote monitoring with Azure Log Analytics: Log Analytics is a standard Azure tool that you can use through the Azure portal. Once you enable the Log Analytics tool for a private mobile network is enabled, each packet core instance in the network starts to stream relevant logs to the tool. You can create queries to retrieve the log data, and use Log Analytics dashboards to visualize your saved log queries.
+  [!NOTE]
+  Currently you can only use Log Analytics to monitor private mobile networks that support 5G UEs. For 4G UEs, use the packet core dashboards.
+- Local monitoring with packet core dashboards: The packet core instance that powers each site in a private mobile network provides the packet core dashboards by default. With these boards, you can monitor key network statistics in real time. These boards also allow you to view information on firing alerts, based on which you can quickly react to emerging issues.
+
+For diagnosing issues that are reported during network monitoring, Azure Private 5G Core provides a distributed tracing tool on each packet core instance. This tool allows you to analyze the communication between network functions and identify the root cause of a certain issue. Once the root cause is identified, you can take relevant measures to fix the issue.
+
+With these monitoring and troubleshooting tools, you can monitor the health of your private mobile network on a continuous basis and diagnose issues once they are reported. The monitoring and troubleshooting capabilities of Azure Private 5G Core help ensure the business continuity of enterprises and minimize possible business impact.
+
+## Monitoring example
+
+warehouse operation manager
+How is it used in real life
+
+## Key metrics to monitor
+
+metric types & key metrics & summary
+
+## How your will learn
+
+Waht you will do
+What you will get
+What can I learn from the module? - key content
+
+
 
 
 <!-- 1. Topic sentence(s) --------------------------------------------------------------------------------

@@ -3,25 +3,25 @@ uid: learn.monitor-azure-private-5g-core-service
 hidden: true
 metadata:
   title: Monitor the Azure Private 5G Core service
-  description: "Describes the monitoring capabilities of Azure Private 5G Core, the Azure Log Analytics tool and the packet core dashboards for monitoring the service, and the distributed tracing tool for diagnosing network issues."
+  description: Describes the monitoring capabilities of Azure Private 5G Core, the Azure Log Analytics tool and the packet core dashboards for monitoring the service, and the distributed tracing tool for diagnosing network issues.
   ms.date: 10/27/2022
   author: michael-weizhong-shan
   ms.author: michaelshan
   ms.topic: interactive-tutorial
   ms.service: learning-private-5g-core
 title: Monitor the Azure Private 5G Core service
-summary: "Learn about the network monitoring capabilities of Azure Private 5G Core, the use of relevant monitoring tools, and the techniques to troubleshoot and resolve network issues."
+summary: Learn about the network monitoring capabilities of Azure Private 5G Core, the use of relevant monitoring tools, and the techniques to troubleshoot and resolve network issues.
 abstract: |
   By the end of this module, you'll be able to:
-    - "Describes the monitoring capabilities of Azure Private 5G Core."
-    - "Describe the cloud and on-premises monitoring tools that Azure Private 5G Core provides."
-    - "Describe the tool that you can use to diagnose network issues."
-    - "Give examples of key metrics to monitor."
-    - "Give examples of typical issues in a private mobile network."
+    - Describes the monitoring capabilities of Azure Private 5G Core.
+    - Describe the cloud and on-premises monitoring tools that Azure Private 5G Core provides.
+    - Describe the tool that you can use to diagnose network issues.
+    - Give examples of key metrics to monitor.
+    - Give examples of typical issues in a private mobile network.
 prerequisites: |
-  - "Fundamental knowledge about Azure. If you don't have the knowledge, consider taking relevant Azure Fundamental (AZ-900) training programs."
-  - "Fundamental knowledge of 5G and 4G technologies."
-  - "Fundamental knowledge about Azure Private 5G Core. If you don't have the knowledge, consider taking the *Introduction to Azure Private 5G Core* training module first." 
+  - Fundamental knowledge about Azure. If you don't have the knowledge, consider taking relevant Azure Fundamental (AZ-900) training programs.
+  - Fundamental knowledge of 5G and 4G technologies.
+  - Fundamental knowledge about Azure Private 5G Core. If you don't have the knowledge, consider taking the *Introduction to Azure Private 5G Core* training module first.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate
