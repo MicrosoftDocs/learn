@@ -16,25 +16,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "xxxxx"
+  - content: "What capability do query store hints provide?"
     choices: 
-    - content: "xxxx"
-      isCorrect: false
-      explanation: "xxxx"
-    - content: "xxxx"
-      isCorrect: false
-      explanation: "xxxxx"
-    - content: "xxxxx"
+    - content: "An easy-to-use method for shaping query plans without changing application code"
       isCorrect: true
-      explanation: "xxxx"
-  - content: "xxxxx"
+      explanation: "Query store hints allow you to persist a query hint in the Query Store without changing the query text"
+    - content: "Change query plans by reverting back to a previous plan found in the Query Store."
+      isCorrect: false
+      explanation: "Reverting back to a previous plan found in the Query Store is known as Auto Plan Correction."
+    - content: "Change query text when persisting a query in the Query Store"
+      isCorrect: false
+      explanation: "Query store hints do not change the original query text"
+  - content: "Parameter Sensitive Plan optimization can help which scenario?"
     choices: 
-    - content: "xxxxx"
+    - content: "Data is skewed and you use ad-hoc queries with your application."
       isCorrect: false
-      explanation: "xxxxx"
-    - content: "xxxxx"
+      explanation: "This feature is not designed for ad-hoc queries but for queries in stored procedures or parameterized statements."
+    - content: "Scenarios where more than one plan in cache would help with stored procedure performance."
       isCorrect: true
-      explanation: "xxxxx"
-    - content: "xxxxx"
+      explanation: "Parameter Sensitive plan optimization is designed to allow more than one plan to be in cache for scenarios where parameter values are used in stored procedures or for parameterized queries."
+    - content: "Scenarios for queries that use parallelism"
       isCorrect: false
-      explanation: "xxxxx"
+      explanation: "This feature might help queries that use parallelism but doesn't require it. Degree of Parallelism Feedback is designed to help with queries that use parallelism"
