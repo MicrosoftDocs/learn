@@ -1,38 +1,30 @@
-The cloud is changing how applications are designed and secured. Instead of monoliths, applications are divided into smaller, decentralized services. 
-
-These services communicate through APIs or by using asynchronous messaging or events. The services scale horizontally, adding new instances as demand requires.
+The cloud is changing how applications are designed and secured. Instead of monoliths, applications are divided into smaller, decentralized services. These services communicate through APIs or by using asynchronous messaging or events. The services scale horizontally, adding new instances as demand requires.
 
 These design changes bring new challenges. Application states are distributed, and operations are done in parallel and asynchronously. Applications must:
-
 - Communicate with each other effectively.
-
 - Be able to be deployed rapidly.
-
 - Be resilient when failures occur.
-
 - Be able to integrate with other systems seamlessly.
 
-Azure lets you create applications composed of various components: 
+In this module, we explore how Azure lets you create applications composed of various components, including website front ends, back-end services, and triggered functions. We investigate how Azure includes various communication strategies to enable the components to pass data to each other.
 
-- Website front ends
+## Meet Tailwind Traders
 
-- Back-end services
+:::image type="icon" source="../media/tailwind-traders.png" border="false":::
 
-- Triggered functions 
+Tailwind Traders is a fictitious home improvement retailer. The company operates retail hardware stores across the globe and online.
 
-Azure includes various communication strategies to let these various components pass data to each other.
-
-After completing this module, you’ll be able to evaluate and design an effective application architecture. This architecture provides the best Azure solutions for exchanging messages. It also helps automate deployment solutions for your applications and manage configurations. Azure also enables integration with APIs and provides appropriate caching. 
+As you work through this lesson, suppose you work for Tailwind Traders. You're tasked with evaluating and designing an effective application architecture for the company. The architecture should provide the best Azure solutions for exchanging messages. The strategy must help automate deployment solutions for the company applications, respond appropriately to events, and manage configurations. You're researching how Azure enables integration with APIs and provides appropriate caching. 
 
 ## Learning objectives
 
-After completing this module, you’ll be able to:
+In this module, you learn how to:
 
 - Describe message and event scenarios.
 
 - Design a messaging solution.
 
-- Design an event hubs messaging solution. 
+- Design an Azure Event Hubs messaging solution. 
 
 - Design an event-driven solution.
 
@@ -46,14 +38,14 @@ After completing this module, you’ll be able to:
 
 ## Skills measured 
 
-The content in the module will help you prepare for Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions. The module concepts are covered in:
+The content in the module helps you prepare for Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions. The module concepts are covered in:
 
-Design Infrastructure solutions
+Design infrastructure solutions
 
-- Design an Application Architecture.
+- Design an application architecture
 
 ## Prerequisites
 
-- Working experience with developing cloud applications.
+- Working experience with developing cloud applications
 
-- Conceptual knowledge of messaging, events, code deployments, configurations, API management, and app caching. 
+- Conceptual knowledge of messaging, events, code deployments, configurations, API management, and app caching
