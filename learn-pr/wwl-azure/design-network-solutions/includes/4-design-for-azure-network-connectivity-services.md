@@ -161,7 +161,7 @@ Common reasons for overriding Azure's default routing are:
 
 - You want to enable filtering of Internet traffic via Azure Firewall or forced tunneling.
 
-- You want traffic between subnets to flow though an NVA.
+- You want traffic between subnets to flow through an NVA.
 
 - You need to create routes to specify how packets should be routed in a virtual network.
 
