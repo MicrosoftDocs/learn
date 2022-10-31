@@ -1,80 +1,62 @@
-In this unit, you’ll learn how to choose the best architecture for a message-based delivery system. Let’s imagine you’re planning the music-sharing application. You want to: 
+One of your design tasks for Tailwind Traders is to recommend a solution for their product demo application. Customers use the app to get the latest tips, reviews, and instructions for featured home improvement products. You have two requirements for the app design:
 
-- Ensure that music files are uploaded to the web API reliably from the mobile app. 
+- Ensure all content files are uploaded to the web API reliably from the mobile app. Files include text, images, and video.
 
-- Deliver the details about new songs directly to the app. For example, when an artist adds new music to their collection. 
+- Deliver details about new files directly to the app, such as when a customer posts a new product review or a video is added. 
 
-This scenario is a perfect use of a message-based system. Azure offers two message-based solutions Queue Storage and Azure Service Bus (queues and topics).
+For these app requirements, the ideal solution is a message-based system. Azure offers two message-based solutions: Azure Queue Storage and Azure Service Bus (queues and topics).
 
-## What is Azure Queue Storage?
+### Things to know about Azure Queue Storage
 
-[Azure Queue storage](/azure/storage/queues/storage-queues-introduction) is a service that uses Azure Storage to store large numbers of messages. These messages can be securely accessed from anywhere in the world using a simple REST-based interface. Queues can contain millions of messages. Azure Queue storage is limited only by the capacity of the storage account that owns it. Queues generally provide increased reliability, guaranteed message delivery, and transactional support.
+[Azure Queue Storage](/azure/storage/queues/storage-queues-introduction) is a service that uses Azure Storage to store large numbers of messages.  Examine the following characteristics of the service.
 
-:::image type="content" source="../media/queue-storage.png" alt-text="Diagram of a storage account with two message queues.":::
+:::image type="content" source="../media/queue-storage.png" alt-text="Illustration of a storage account with two message queues in Azure Queue Storage." border="false":::
 
+- Queues in Azure Queue Storage can contain millions of messages.
 
-## What is Azure Service Bus?
+- The number and size of queues is limited only by the capacity of the Azure storage account that owns the Queue Storage.
 
-Microsoft Azure Service Bus is a fully managed enterprise message broker with message queues and publish-subscribe topics. Service Bus is used to decouple applications and services from each other, providing the following benefits:
+- Messages in Queue Storage can be securely accessed from anywhere in the world by using a simple REST-based interface.
 
-- Load-balancing work across competing workers.
+- Queues generally provide increased reliability, guaranteed message delivery, and transactional support.
 
-- Safely routing and transferring data and control across service and application boundaries.
+### Things to know about Azure Service Bus
 
-- Coordinating transactional work that requires a high degree of reliability.
+Azure Service Bus is a fully managed enterprise message broker. Service Bus is used to decouple applications and services from each other. Review the following benefits characteristics of the service.
 
-### What are Azure Service Bus Queues?
+- Azure Service Bus supports _message queues_ and _publish-subscribe topics_.
 
-[Azure Service Bus queues](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions) is a message broker system built on top of a dedicated messaging infrastructure. Like Azure queues, Service Bus holds messages until the target is ready to receive them. 
+- Azure Service Bus lets you load-balance work across competing workers.
 
-:::image type="content" source="../media/service-bus-queue.png" alt-text="A graphic depicts a sender and receiver communicating through a Message Queue.":::
+- You can use Service Bus to safely route and transfer data and control across service and application boundaries.
 
+- Service Bus helps you coordinate transactional work that requires a high degree of reliability.
 
-Azure Service Bus is intended for enterprise applications. For example, an application that uses communication protocols and different data contracts. 
+#### Message queues
 
-### What is an Azure Service Bus publish-subscribe topic?
+[Azure Service Bus message queues](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions) is a message broker system built on top of a dedicated messaging infrastructure. Like Azure queues, Service Bus holds messages until the target is ready to receive them. 
 
-[Azure Service Bus topics](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions) are like queues but can have multiple subscribers. When a message is sent to a topic, multiple components can be triggered to perform a task. 
+:::image type="content" source="../media/service-bus-queue.png" alt-text="Illustration that shows a sender and receiver communicating through a message queue." border="false":::
 
-:::image type="content" source="../media/service-bus-topic.png" alt-text="A graphic depicts a sender and multiple receivers communicating through subscriptions.":::
+Azure Service Bus message queues are intended for enterprise applications, such as an app that uses communication protocols and different data contracts. 
 
+#### Publish-subscribe topics
 
-For example, suppose a user is listening to a song using a music-sharing application. The mobile app might send a message to the *Listened* topic. That topic could have a subscription for *UpdateUserListenHistory*, and a different subscription for *UpdateArtistsFanList*. Each subscription receives its own copy of the message.
+[Azure Service Bus publish-subscribe topics](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions) are like queues but can have multiple subscribers. When a message is sent to a topic, multiple components can be triggered to perform a task. 
 
-## Which messaging service should I choose?
+:::image type="content" source="../media/service-bus-topic.png" alt-text="Illustration that shows a sender and multiple receivers communicating through subscriptions." border="false":::
 
-Each messaging product has a slightly different feature set. This means you can choose one or the other or use both. It depends on the problem you’re solving.
+Consider the scenario where a customer is watching to a video by with the product demo app. You can support the actions by using publish-subscribe topic attributes:
+- The mobile app sends a message to the *Watched* topic.
+- The topic has two subscriptions. The first subscription completes the *UpdateUserWatchHistory* action. A second subscription completes the *UpdateProductFanList* action.
+- Each subscription for the *Watched* topic receives its own copy of the message.
 
-Use Azure Queue storage if you need/have:
+### Things to consider when choosing messaging services
 
-- A simple queue to organize messages.
+Each Azure messaging solution has a slightly different set of features and capabilities. You can choose one solution or use both to fulfill your design requirements. Review the following scenarios, and think about which solutions can benefit the Tailwind Traders application architecture.
 
-- An audit trail of all messages that pass through the queue.
-
-- Queue to exceed 80 GB in size.
-
-- To track progress for processing a message inside of the queue.
-
-Use Azure Service Bus queues if you need/have:
-
-- An At-Most-Once delivery guarantee.
-
-- At-Least-Once message processing  (PeekLock receive mode)
-
-- At-Most-Once message processing (ReceiveAndDelete receive mode)
-
-- To group messages into transactions.
-
-- To receive messages without polling the queue.
-
-- To handle messages larger than 64 KB but less than 256 KB.
-
-- Queue size will not grow larger than 80 GB.
-
-- To publish and consume batches of messages.
-
-Use Azure Service Bus topics if you need/have:
-
-- Multiple receivers to handle each message.
-
-- Multiple destinations for a single message but need queue-like behavior.
+| Scenarios | Messaging solution |
+| --- | --- |
+| - _You want a simple queue to organize messages_.<br><br> - _You need an audit trail of all messages that pass through the queue_.<br><br>  - _You expect the queue storage to exceed 80 GB_.<br><br> - _You'd like to track progress for processing a message inside of the queue_. | **Azure Queue Storage** |
+| - _You require an at-most-once delivery guarantee_.<br><br> - _You require at-least-once message processing (PeekLock receive mode)_.<br><br> - _You require at-most-once message processing (ReceiveAndDelete receive mode)_.<br><br> - _You want to group messages into transactions_.<br><br> - _You want to receive messages without polling the queue_.<br><br> - _You need to handle messages larger than 64 KB but less than 256 KB_.<br><br> - _You expect the queue storage won't exceed 80 GB_.<br><br> - _You'd like to publish and consume batches of messages_. | **Azure Service Bus** <br> _**message queues**_ |
+| - _You need multiple receivers to handle each message_.<br><br> - _You expect multiple destinations for a single message but need queue-like behavior_. | **Azure Service Bus** <br> _**publish-subscribe topics**_ |
