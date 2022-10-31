@@ -36,10 +36,9 @@ subjects:
   - networking
 units:
 - learn.monitor-azure-private-5g-core-service.introduction
-- learn.monitor-azure-private-5g-core-service.learning-content
-- learn.monitor-azure-private-5g-core-service.exercise
-- learn.monitor-azure-private-5g-core-service.learning-content
-- learn.monitor-azure-private-5g-core-service.exercise
+- learn.monitor-azure-private-5g-core-service.azure-log-analytics
+- learn.monitor-azure-private-5g-core-service.packet-core-dashboards
+- learn.monitor-azure-private-5g-core-service.issue-diagnosis
 - learn.monitor-azure-private-5g-core-service.knowledge-check
 - learn.monitor-azure-private-5g-core-service.summary
 badge:
