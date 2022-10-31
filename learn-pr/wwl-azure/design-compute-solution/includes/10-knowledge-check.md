@@ -1,10 +1,13 @@
-Tailwind Traders has several development projects. It is important you select the right compute technology for each project. Ideally, you would like to create compute resources, configure them to do the work that's needed, and pay for only what you use. Here are the specific requirements.
+Tailwind Traders has several active development projects. As the solution Architect for the company, you're responsible for selecting the right compute technology for each project. Ideally, you'd like to create compute resources and configure them to do the work that's needed, and pay only for the services used.
 
-- **Real-time inventory tracking.** The company website updates product availability only once a night. The company would like the inventory updated as products are ordered. This means updating the database and if necessary, sending reorder notifications. The current program is a Windows service that's written in C#.
+Here are the specific project requirements:
 
-- **Migrate the data center virtual machines**. The company’s data center virtual machines host relational database servers. These machines are used for online orders. The company would like to move this capability to the cloud. 
+- **Real-time inventory tracking.** Each evening, product availability is updated on the company website. The management team wants the stock inventory updated as soon as products are ordered. To fulfill this requirement, the product database needs to be updated, and stock reorder notifications need to be sent, as needed. The current program is a Windows service written in C#.
 
-- **Host the data processing app.** The company has a small data processing app. The app ingests new product photos and writes the content to Azure blob storage. The app takes only a few seconds to run. The company would like to reduce costs and use the cloud. 
+- **Migrate datacenter virtual machines**. The datacenter virtual machines host relational database servers. These machines are used for online orders. The company has requested a solution to move this capability to the cloud. 
 
- 
+- **Host data processing application in the cloud.** The company has a small data processing application. The app ingests new product photos and writes the content to Azure Blob Storage. The app takes only a few seconds to run. The sales team has requested a solution that hosts the app in the cloud and reduces costs. 
+
+### Answer the following questions
+
 Choose the best response for each of the questions below. Then select **Check your answers**.
