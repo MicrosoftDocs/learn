@@ -4,6 +4,9 @@ Before you can start synchronizing files with Azure File Sync, there are several
 
 ### Step 1: Deploy the Storage Sync Service
 
+> [!Note]
+> These are high-level steps. A more detailed [Tutorial: Extend Windows file servers with Azure File Sync](/azure/storage/file-sync/file-sync-extend-servers) is available. 
+
 You can deploy the Storage Sync Service from the Azure portal. You configure the following settings:
 - The deployment name for the Storage Sync Service
 - The Azure subscription ID to use for the deployment
