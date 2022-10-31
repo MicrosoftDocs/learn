@@ -24,7 +24,7 @@ There are different encryption methods for each of data state. The following tab
 Large organizations, governments, and military entities use data classification to manage their data's integrity. The data classification process has yielded common metadata attributes that enable us to label data as _Public_, _Confidential_, or _Restricted_. After data is classified, you can implement data protection measures for highly classified data.
 
 > [!NOTE]
-> You might be familiar with another state called **Defense in depth**. This state is a cybersecurity strategy that employs a layered approach to slow the advance of an attack aimed at acquiring unauthorized access to information. To learn more, watch the video, [Defense in depth security in Azure](https://learn.microsoft.com/shows/azure-videos/defense-in-depth-security-in-azure).
+> You might be familiar with another state called **Defense in depth**. This state is a cybersecurity strategy that employs a layered approach to slow the advance of an attack aimed at acquiring unauthorized access to information. To learn more, watch the video, [Defense in depth security in Azure](/shows/azure-videos/defense-in-depth-security-in-azure).
 
 ### Things to know about data at rest and TDE
 
@@ -73,7 +73,7 @@ Encryption for data-in-use is about protecting data and sensitive information wh
 
 Consider a scenario where customer assistants access the Tailwind Traders database that has customer phone numbers and email addresses. The assistants require access to only a portion of the sensitive data. They need to verify the user who is calling by checking the last four digits of the customer's phone number. The assistant doesn't need access to the remaining sensitive data. You can encrypt the remaining customer data and not reveal it to the assistants. 
 
-Data-in-use employs a policy-based security feature called _dynamic data masking_. This feature hides the sensitive data in the result set of a query over designated database fields, while the data in the database remains changed. Dynamic data masking helps prevent unauthorized access to sensitive data by enabling customers to designate how much of the sensitive data to reveal with minimal consequence on the application layer.
+Data-in-use employs a policy-based security feature called _dynamic data masking_. This feature hides the sensitive data in the result set of a query over designated database fields, while the data in the database remains unchanged. Dynamic data masking helps prevent unauthorized access to sensitive data by enabling customers to designate how much of the sensitive data to reveal with minimal consequence on the application layer.
 
 ### Things to consider when protecting data-in-use
 
