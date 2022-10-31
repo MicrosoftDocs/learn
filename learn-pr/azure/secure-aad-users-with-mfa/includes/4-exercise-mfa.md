@@ -22,7 +22,7 @@ Let's walk through the basic steps necessary to configure and enable Azure AD Mu
 
     You can also enable or disable *app passwords* here, which allow users to create unique account passwords for apps that don't support multi-factor authentication. This feature lets the user authenticate with their Azure AD identity, using a different password specific to that app.
 
-## Setup Conditional Access rules for MFA
+## Set up Conditional Access rules for MFA
 
 Next let's examine how to set up Conditional Access policy rules that would enforce MFA for guest users accessing specific apps on your network.
 
