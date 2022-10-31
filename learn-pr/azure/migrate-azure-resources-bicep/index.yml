@@ -30,7 +30,7 @@ prerequisites: |
   - Either:
     - The latest [Azure CLI](/cli/azure/install-azure-cli/?azure-portal=true) tools, installed locally.  
     - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps/?azure-portal=true), installed locally.
-iconUrl: /learn/achievements/bicep/migrate-azure-resources-and-json-templates-bicep.svg
+iconUrl: /training/achievements/bicep/migrate-azure-resources-and-json-templates-bicep.svg
 levels:
 - intermediate
 roles:

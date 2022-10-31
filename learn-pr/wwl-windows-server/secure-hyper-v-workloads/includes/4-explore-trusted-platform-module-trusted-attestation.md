@@ -41,7 +41,7 @@ To run shielded VMs in TPM mode, a guarded host must have a CI policy applied. Y
 1. On the reference host, in an elevated Windows PowerShell session, generate a new CI policy by using the `New-CIPolicy` cmdlet. The cmdlet creates an XML file for your CI policy.
 1. Apply the policy to your reference host for testing. If there are any CI integrity violations, update your CI policy as necessary.
 
-1. Convert your finalized CI policy to an **enforced mode** CI policy by running the cmdlet `ConvertFrom-CIPolicy` against the CI policy XML file. The cmdlet `ConvertFrom-CIPolicy` uses the XML file to generate a binary file for your CI policy (enforced mode).
+1. Convert your finalized CI policy to an **enforced mode** CI policy by running the cmdlet `ConvertFrom-CIPolicy` against the CI policy XML file. The cmdlet `ConvertFrom-CIPolicy` uses the XML file to generate a binary file for your CI policy (enforced mode)
 
 1. Use the binary file to apply the CI policy to all your hosts that have the same hardware and software configuration as your reference host.
 

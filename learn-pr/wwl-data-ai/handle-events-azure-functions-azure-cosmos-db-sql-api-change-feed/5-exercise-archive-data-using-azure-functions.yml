@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.exercise-archive-data-using-azure-functions
-title: 'Exercise: Process Azure Cosmos DB SQL API data using Azure Functions'
+title: 'Exercise: Process Azure Cosmos DB for NoSQL data using Azure Functions'
 metadata:
-  title: 'Exercise: Process Azure Cosmos DB SQL API data using Azure Functions'
-  description: "Exercise: Process Azure Cosmos DB SQL API data using Azure Functions"
-  ms.date: 06/03/2022
+  title: 'Exercise: Process Azure Cosmos DB for NoSQL data using Azure Functions'
+  description: "Exercise: Process Azure Cosmos DB for NoSQL data using Azure Functions"
+  ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

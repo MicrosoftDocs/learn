@@ -178,8 +178,8 @@ Identify the subtasks of Monitor and troubleshoot your end-to-end Azure network 
 
 Supporting resources
 
-Troubleshoot outbound connections: https://docs.microsoft.com/azure/network-watcher/network-watcher-connectivity-portal
+Troubleshoot outbound connections: https://learn.microsoft.com/azure/network-watcher/network-watcher-connectivity-portal
 
-Packet capture: https://docs.microsoft.com/azure/network-watcher/network-watcher-packet-capture-manage-portal
+Packet capture: https://learn.microsoft.com/azure/network-watcher/network-watcher-packet-capture-manage-portal
 
-NSG flow logs: https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-overview 
+NSG flow logs: https://learn.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-overview 

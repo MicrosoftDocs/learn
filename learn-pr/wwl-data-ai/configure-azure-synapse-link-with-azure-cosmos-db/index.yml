@@ -3,18 +3,18 @@ uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db
 metadata:
   title: Implement Azure Synapse Link with Azure Cosmos DB
   description: "Implement Azure Synapse Link with Azure Cosmos DB"
-  ms.date: 06/22/2022
+  ms.date: 10/17/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Implement Azure Synapse Link with Azure Cosmos DB
-summary: Azure Synapse Link for Cosmos DB enables HTAP integration between operational data in Cosmos DB and Azure Synapse Analytics runtimes for Spark and SQL.
+summary: Azure Synapse Link for Azure Cosmos DB enables HTAP integration between operational data in Azure Cosmos DB and Azure Synapse Analytics runtimes for Spark and SQL.
 abstract: |
   After completing this module, you'll be able to:
-  - Configure a Cosmos DB Account to use Azure Synapse Link.
+  - Configure an Azure Cosmos DB Account to use Azure Synapse Link.
   - Create an analytical store enabled container.
-  - Create a linked service for Cosmos DB.
+  - Create a linked service for Azure Cosmos DB.
   - Analyze linked data using Spark.
   - Analyze linked data using Synapse SQL.
 prerequisites: |

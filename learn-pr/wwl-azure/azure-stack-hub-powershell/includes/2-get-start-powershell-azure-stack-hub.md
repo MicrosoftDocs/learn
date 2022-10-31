@@ -18,7 +18,7 @@ This unit helps you orient yourself to the variety of PowerShell modules that ar
     Global Azure Resource Manager
   :::column-end:::
   :::column:::
-    [Azure PowerShell modules](https://docs.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-7.0.0&amp;preserve-view=true).
+    [Azure PowerShell modules](/powershell/azure/new-azureps-module-az?view=azps-7.0.0&amp;preserve-view=true).
   :::column-end:::
   :::column:::
     REST API browser.
@@ -32,7 +32,7 @@ This unit helps you orient yourself to the variety of PowerShell modules that ar
     Manage API version profiles in Azure Stack Hub.
   :::column-end:::
   :::column:::
-    [Manage API version profiles in Azure Stack Hub](https://docs.microsoft.com/azure-stack/user/azure-stack-version-profiles?view=azs-2008&amp;preserve-view=true).
+    [Manage API version profiles in Azure Stack Hub](/azure-stack/user/azure-stack-version-profiles?view=azs-2008&amp;preserve-view=true).
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -51,7 +51,7 @@ This unit helps you orient yourself to the variety of PowerShell modules that ar
     Azure Stack Hub privileged endpoint
   :::column-end:::
   :::column:::
-    [Use the privileged endpoint in Azure Stack Hub](https://docs.microsoft.com/azure-stack/operator/azure-stack-privileged-endpoint?view=azs-2008&amp;preserve-view=true).
+    [Use the privileged endpoint in Azure Stack Hub](/azure-stack/operator/azure-stack-privileged-endpoint?view=azs-2008&amp;preserve-view=true).
   :::column-end:::
   :::column:::
     

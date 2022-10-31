@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-cosmos-db-sql-api-sdk
 metadata:
-  title: Configure the Azure Cosmos DB SQL API SDK
-  description: "Learn how to configure the Azure Cosmos DB SQL API SDK in various ways including how to integrate with the emulator, implement parallelism, and create a custom logger."
-  ms.date: 06/17/2022
+  title: Configure the Azure Cosmos DB for NoSQL SDK
+  description: "Learn how to configure the Azure Cosmos DB for NoSQL SDK in various ways including how to integrate with the emulator, implement parallelism, and create a custom logger."
+  ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Configure the Azure Cosmos DB SQL API SDK
-summary: Learn how to configure the Azure Cosmos DB SQL API SDK in various ways including how to integrate with the emulator, implement parallelism, and create a custom logger.
+title: Configure the Azure Cosmos DB for NoSQL SDK
+summary: Learn how to configure the Azure Cosmos DB for NoSQL SDK in various ways including how to integrate with the emulator, implement parallelism, and create a custom logger.
 abstract: |
   After completing this module, you'll be able to:
   - Configure the SDK for offline development
@@ -18,7 +18,7 @@ abstract: |
   - Configure logging using the SDK
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-configure.svg
+iconUrl: /training/achievements/azure-cosmos-db-configure.svg
 levels:
 - intermediate
 roles:

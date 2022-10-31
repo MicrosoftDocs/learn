@@ -16,7 +16,7 @@ abstract: |
   - Understand tools for scaling analytics solutions
 prerequisites: |
   - You should be familiar with basic data concepts and terminology.
-iconUrl: /learn/achievements/explore-data-analytics-at-scale.svg
+iconUrl: /training/achievements/explore-data-analytics-at-scale.svg
 levels:
 - intermediate
 roles:

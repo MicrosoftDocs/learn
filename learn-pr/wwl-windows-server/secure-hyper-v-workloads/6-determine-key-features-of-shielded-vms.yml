@@ -4,12 +4,12 @@ title: Determine key features of shielded VMs
 metadata:
   title: Determine key features of shielded VMs
   description: "Determine key features of shielded VMs"
-  ms.date: 03/01/2021
+  ms.date: 09/16/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
 azureSandbox: false
+labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/6-determine-key-features-of-shielded-vms.md)]

@@ -25,6 +25,8 @@ Azure AD features pre-integrated support for many popular SaaS apps and human re
 
 * **Pre-integrated applications (gallery SaaS apps)**: You can find all applications for which Azure AD supports a pre-integrated provisioning connector in Tutorials for integrating SaaS applications with Azure Active Directory. The pre-integrated applications listed in the gallery generally use SCIM 2.0-based user management APIs for provisioning.
 
+* **Applications that support SCIM 2.0.**: You can use automatic user provisioning with applications that support SCIM 2.0.
+
 
 ## How do I set up automatic provisioning to an application?
 

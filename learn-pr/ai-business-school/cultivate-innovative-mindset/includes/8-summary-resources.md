@@ -12,7 +12,7 @@ Now that you’ve reviewed this module, you should be able to:
 
 * To learn more about WPP, Mondelez and other businesses leading their industries with AI, visit [Best of Business AI](https://businessai.microsoft.com/).
 * To learn more about the six dimensions of resilience, visit [The Digital Path to Business Resilience](https://www.bcg.com/publications/2020/digital-path-to-business-resilience).
-* Learn how to build a more inclusive future for the tech industry and check out the [Build your tech resilience](/learn/paths/tech-resilience/) learning path.
+* Learn how to build a more inclusive future for the tech industry and check out the [Build your tech resilience](/training/paths/tech-resilience/) learning path.
 * Discover the people and ideas that are helping us overcome the pandemic and emerge more resilient than ever, visit [Societal Resilience](https://www.microsoft.com/societal-resilience#coreui-feature-sl9cfe9).
 * Download [PDF of the case study introduction](https://aka.ms/AIBSBIOWPPINT) to share with others.
 * Download [PDF of the case study resolution](https://aka.ms/AIBSBIOWPPRES) to share with others.

@@ -13,4 +13,4 @@ You can learn more by reviewing the following documents:
 - [Support matrix for disaster recovery of on-premises Hyper-V VMs to Azure - Azure VM requirements](/azure/site-recovery/hyper-v-azure-support-matrix#azure-vm-requirements?azure-portal=true)
 - [About the Azure Site Recovery Deployment Planner for Hyper-V disaster recovery to Azure](/azure/site-recovery/hyper-v-deployment-planner-overview?azure-portal=true)
 - [Plan capacity for Hyper-V VM disaster recovery](/azure/site-recovery/site-recovery-capacity-planner?azure-portal=true)
-- [Course WS-011T00-A: Windows Server 2019 Administration](/learn/certifications/courses/ws-011t00?azure-portal=true)
+- [Course WS-011T00-A: Windows Server 2019 Administration](/certifications/courses/ws-011t00?azure-portal=true)

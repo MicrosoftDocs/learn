@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-sql-warehouses-azure-databricks.create-queries-dashboards
+title: Create queries and dashboards
+metadata:
+  title: Create queries and dashboards
+  description: "Create queries and dashboards"
+  ms.date: 08/26/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/04-queries-dashboards.md)]

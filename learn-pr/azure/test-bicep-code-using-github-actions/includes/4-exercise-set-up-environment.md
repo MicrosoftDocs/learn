@@ -158,14 +158,14 @@ Next, create a workload identity in Azure AD for your deployment workflow.
 
    ```azurepowershell
    $applicationRegistration = New-AzADApplication -DisplayName 'toy-website-test'
-   New-AzADAppFederatedIdentityCredential `
+   New-AzADAppFederatedCredential `
       -Name 'toy-website-test' `
       -ApplicationObjectId $applicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
       -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):environment:Website"
 
-   New-AzADAppFederatedIdentityCredential `
+   New-AzADAppFederatedCredential `
       -Name 'toy-website-test-branch' `
       -ApplicationObjectId $applicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
@@ -184,7 +184,7 @@ Next, create a resource group for your website. This process also grants the wor
 1. Run the following Azure CLI commands in the Visual Studio Code terminal:
 
    ```bash
-   resourceGroupResourceId=$(az group create --name ToyWebsiteTest --location westus3 --query id --output tsv)
+   resourceGroupResourceId=$(az group create --name ToyWebsiteTest --location eastus --query id --output tsv)
 
    az ad sp create --id $applicationRegistrationObjectId
    az role assignment create \
@@ -200,7 +200,7 @@ Next, create a resource group for your website. This process also grants the wor
 1. Run the following Azure PowerShell commands in the Visual Studio Code terminal:
 
    ```azurepowershell
-   $resourceGroup = New-AzResourceGroup -Name ToyWebsiteTest -Location westus3
+   $resourceGroup = New-AzResourceGroup -Name ToyWebsiteTest -Location eastus
 
    New-AzADServicePrincipal -AppId $($applicationRegistration.AppId)
    New-AzRoleAssignment `

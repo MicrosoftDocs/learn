@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Experience administering Azure resources using the Azure portal
   - (Optional) Access to an Azure subscription
-iconUrl: /learn/achievements/keep-your-virtual-machines-updated.svg
+iconUrl: /training/achievements/keep-your-virtual-machines-updated.svg
 levels:
 - beginner
 roles:

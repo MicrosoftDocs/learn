@@ -81,7 +81,7 @@ Now you use the service you defined by calling it in a Blazor component and obta
 Before you can call the service from the component, you must use dependency injection to add the service. This is done by adding the following code after the `@page` directive:
 
 ```razor
-@using Blazor.Data
+@using BlazingPizza.Data
 @inject PizzaService PizzaSvc
 ```
 

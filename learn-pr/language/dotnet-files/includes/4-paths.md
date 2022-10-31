@@ -6,7 +6,7 @@ Here, you'll learn about some of the constants and utility functions in the `Sys
 
 ## Determine the current directory
 
-Sometimes, you don't know in which directory or path your program should run. Let's say you want your program to use the current directory, but you don't know the path. 
+Sometimes, you don't know in which directory or path your program should run. Let's say you want your program to use the current directory, but you don't know the path.
 
 .NET exposes the full path to the current directory via the `Directory.GetCurrentDirectory` method.
 
@@ -29,7 +29,7 @@ Those types of special directories differ for each operating system. It would be
 
 The `System.Environment.SpecialFolder` enumeration specifies constants to retrieve paths to special system folders.
 
-The following code returns the path to the equivalent of the Windows *My Documents* folder, or the user's *HOME* directory for any operating system, even if the code is running on Linux.
+The following code returns the path to the equivalent of the Windows *My Documents* folder, or the user's *HOME* directory for any operating system, even if the code is running on Linux:
 
 ```csharp
 string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -70,7 +70,7 @@ For instance, if you want to get the path to the *stores/201* folder, you can us
 Console.WriteLine(Path.Combine("stores","201")); // outputs: stores/201
 ```
 
-Remember, you would use the `Path.Combine` or `Path.DirectorySeparatorChar` class instead of hard-coding strings, because your program might be running on many different operating systems. The `Path` class will always format the paths correctly for whatever operating system it's running on.
+Remember, you'd use the `Path.Combine` or `Path.DirectorySeparatorChar` class instead of hard-coding strings, because your program might be running on many different operating systems. The `Path` class will always format the paths correctly for whatever operating system it's running on.
 
 > [!TIP]
 > The `Path` class doesn't care whether things actually exist. Paths are conceptual, not physical, and the class is building and parsing strings for you.

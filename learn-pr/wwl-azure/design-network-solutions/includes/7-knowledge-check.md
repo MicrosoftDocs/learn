@@ -4,7 +4,7 @@ Tailwind Traders has several requirements to meet for their production network e
 
 - Network security. Filter HTTP(S) traffic from Azure to on premises. They also need to filter traffic outbound to the internet. 
 
-- Network architecture. The Network team interns to deploy resources across several Azure regions, requires global connectivity between VNets in these Azure regions and multiple on-premises locations, and wishes to centrally manage the networks and connections
+- Network architecture. The Network team intends to deploy resources across several Azure regions, requires global connectivity between VNets in these Azure regions and multiple on-premises locations, and wishes to centrally manage the networks and connections
 
  
 Choose the best response for each of the questions below. Then select **Check your answers**.

@@ -45,7 +45,7 @@ CosmosClient client = new (endpoint, key);
 ## Read properties of the account
 
 > [!TIP]
-> At this point, you only have a logical client-side representation of the Azure Cosmos DB SQL API account. The SDK won't initially connect to the account until you perform an operation.
+> At this point, you only have a logical client-side representation of the Azure Cosmos DB for NoSQL account. The SDK won't initially connect to the account until you perform an operation.
 
 Once the client instance is instantiated, you can use various methods directly. For example, you can asynchronously invoke the **ReadAccountAsync** method to get an object of type **AccountProperties** with various properties.
 

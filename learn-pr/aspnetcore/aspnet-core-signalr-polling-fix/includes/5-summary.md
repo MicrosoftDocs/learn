@@ -2,7 +2,7 @@ In this module, you learned about refactoring out client-side polling and replac
 
 ## References
 
-- [Introduction to ASP.NET Core SignalR](/learn/modules/aspnet-core-signalr)
+- [Introduction to ASP.NET Core SignalR](/training/modules/aspnet-core-signalr)
 - [Use hubs in SignalR for ASP.NET Core](/aspnet/core/signalr/hubs)
 - [Send messages from outside hub](/aspnet/core/signalr/hubcontext)
 - [Manage users and groups in SignalR](/aspnet/core/signalr/groups)

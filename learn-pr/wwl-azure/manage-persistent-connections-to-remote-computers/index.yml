@@ -26,7 +26,7 @@ prerequisites: |
   *   Familiarity with Windows PowerShell pipeline, PowerShell providers and PowerShell drives
   *   Familiarity with CIM and WMI technologies
   *   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:

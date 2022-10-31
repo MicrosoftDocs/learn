@@ -28,7 +28,7 @@ The match conditions identify the specific type of requests the action should ta
 
 The following type of match conditions can be found in a rule set:
 
-* Filter requests based on a specific IP address, port, country, or region.
+* Filter requests based on a specific IP address, port, or country/region.
 * Filter requests by header information.
 * Filter requests from mobile devices or desktop devices.
 * Filter requests from request file name and file extension.

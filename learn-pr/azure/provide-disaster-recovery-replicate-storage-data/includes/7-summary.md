@@ -1,4 +1,4 @@
-You investigated the different replication types for Azure Storage to help identify the right Azure Storage redundancy option for your organization. Your organization is currently using zone-redundant storage (ZRS) to replicate its music data across multiple availability zones in a single region. But you want to protect your data, and thereby your customer base, from a region-wide outage by using geo-zone-redundant storage (GZRS).
+You investigated the different replication types for Azure Storage to help identify the right Azure Storage redundancy option for your organization. Your organization is currently using zone-redundant storage (ZRS) to replicate its music data across multiple availability zones in a single region. However, you want to protect your data, and thereby your customer base, from a region-wide outage by using geo-zone-redundant storage (GZRS).
 
 You also learned how the failover process works and how to do a failover in the Azure portal.
 

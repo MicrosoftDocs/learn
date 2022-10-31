@@ -12,6 +12,6 @@ In this module, you learned:
 
 ## Resources
 
-* [Introduction to Azure Sphere](/learn/modules/intro-azure-sphere?azure-portal=true)
+* [Introduction to Azure Sphere](/training/modules/intro-azure-sphere?azure-portal=true)
 * [Azure Sphere documentation](/azure-sphere?azure-portal=true)
 * [Altair 8800 on Wikipedia](https://en.wikipedia.org/wiki/Altair_8800?azure-portal=true)

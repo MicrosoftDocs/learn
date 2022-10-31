@@ -18,7 +18,7 @@ abstract: |
   *   Create and run a workflow runbook and PowerShell workflows
 prerequisites: |
   None
-iconUrl: /learn/achievements/4-explore-azure-automation-with-devops.svg
+iconUrl: /training/achievements/4-explore-azure-automation-with-devops.svg
 levels:
 - advanced
 roles:

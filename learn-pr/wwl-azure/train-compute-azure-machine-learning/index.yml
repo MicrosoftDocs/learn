@@ -17,7 +17,7 @@ abstract: |
   - How to distribute model training.
 prerequisites: |
   Before starting this module, you should be familiar with the Azure Machine Learning service and training machine learning and deep learning models.
-iconUrl: /learn/achievements/2-train-compute-intensive-models-with-azure-machine-learning.svg
+iconUrl: /training/achievements/2-train-compute-intensive-models-with-azure-machine-learning.svg
 levels:
 - advanced
 roles:

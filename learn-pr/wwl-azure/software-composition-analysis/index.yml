@@ -18,7 +18,7 @@ abstract: |
   - Interpret alerts from scanning tools
   - Configure GitHub Dependabot alerts and security
 prerequisites: ""
-iconUrl: /learn/achievements/5-integrate-license-and-vulnerability-scans.svg
+iconUrl: /training/achievements/5-integrate-license-and-vulnerability-scans.svg
 levels:
 - advanced
 roles:

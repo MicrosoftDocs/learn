@@ -4,7 +4,7 @@ In this unit, we'll explore how to use network authentication to authenticate us
 
 ## Network authentication
 
-Configure network authentication to verify that users are who they claim to be. Authentication is how the network separates legitimate from suspicious access. Use different methods to implement network-level authentication. Let's have a look at some of these authentication types.
+You should configure network authentication to verify that users are who they claim to be. Authentication is how the network separates legitimate from suspicious access. You can use different methods to implement network-level authentication. Let's have a look at some of these authentication types.
 
 ### Password authentication
 
@@ -18,7 +18,7 @@ Two-factor authentication is a mechanism that allows users to verify an authenti
 
 ### Token authentication
 
-Token-based authentication is similar to two-factor authentication. However, instead of using a cell phone, which may become compromised, a company may choose to use a device purpose-built for authentication. The device can be a USB enabled device or a smart card the user uses for successful authentication. When using token-based authentication, the company should make sure the user returns the device if they no longer require access.
+Token-based authentication is similar to two-factor authentication. However, instead of using a cell phone, which may become compromised, a company may choose to use a device purpose-built for authentication. This token can be a USB-enabled device or a smart card the user uses for successful authentication. When using token-based authentication, the company should make sure the user returns the device if they no longer require access.
 
 ### Biometric authentication
 
@@ -36,13 +36,13 @@ Computer recognition authentication looks at the device being used to access the
 
 ### CAPTCHA
 
-:::image type="icon" source="../media/3-captcha.png":::
+:::image type="content" source="../media/3-captcha.png" alt-text="Image depicting a CAPTCHA test.":::
 
 The Completely Automated Public Turing test to tell Computers and Humans Apart (CAPTCHA) is used to verify whether the entity attempting access to a system is a human.
 
 Attackers can create applications that are capable of automating the steps to log into accounts. A CAPTCHA presents an obfuscated image of a scenario, letters, or numbers, and the user is asked to explain what they see. Compared to humans, applications have difficulty identifying distorted photos, letters, and numbers. Humans can typically make out what is shown in a distorted image.
 
-However, keep in mind that this method might present difficulties for users with a vision-impairment.
+However, keep in mind that this method might present difficulties for users with vision impairments.
 
 ### Single sign-on
 
@@ -60,9 +60,9 @@ Kerberos is an authentication protocol used across different operating systems. 
 
 Kerberos authentication protocol relies on a trusted server called a Key Distribution Center (KDC). A KDC consists of a few components:
 
-- An authentication server that authenticates and issues tickets to principals, like a user or service.
-- A database that holds information about the principals and their secret keys.
-- Another server that grants service tickets based on the initial tickets that the principals present.
+- An authentication server that authenticates and issues tickets to principals, like a user or service
+- A database that holds information about the principals and their secret keys
+- Another server that grants service tickets based on the initial tickets that the principals present
 
 In Kerberos, principals get tickets that grant them service tickets from the KDC. They use those service tickets to access resources, services, or applications. This process remains invisible to the user.
 
@@ -70,13 +70,13 @@ In Kerberos, principals get tickets that grant them service tickets from the KDC
 
 TLS and the older SSL are both protocols for encrypting information sent over the internet. Because the data is encrypted, attackers can't view what is sent through TLS/SSL.
 
-You'll often see a padlock on the browser when a site makes use of a secure connection. This symbol means the site is using a secure TLS/SSL session with the browser. TLS/SSL is also used for file transfers, voice-over-IP, and email.
+You'll often see a padlock icon on the browser when a site makes use of a secure connection. This symbol means the site is using a secure TLS/SSL session with the browser. TLS/SSL is also used for file transfers, voice-over-IP, and email.
 
 SSL is the predecessor of TLS and is deprecated. We'll often find the two terms used interchangeably.  The protocols work as follows:
 
 :::image type="content" source="../media/3-tls-ssl.svg" alt-text="Diagram that shows the process flow of SSL/TLS process authentication.":::
 
-1. The client sends a "ClientHello" message to the server. This message includes information like the SSL/TLS version, and the cryptographic algorithms that the client supports.
+1. The client sends a "ClientHello" message to the server. This message includes information like the SSL/TLS version and the cryptographic algorithms that the client supports.
 
 1. The server sends a "ServerHello" message back that includes the algorithm it has chosen from the list of algorithms supported by the client. The message also includes a session ID, the server's digital certificate, and its public key.
 
@@ -90,9 +90,9 @@ SSL is the predecessor of TLS and is deprecated. We'll often find the two terms 
 
 ## Network authorization
 
-When authentication is completed successfully, we'll need to ensure the authenticated user or client is authorized to access the resources or services they're requesting. Authorization can be granular. For example, a particular database user might have permission to access and make changes to a single database. But the user couldn't access any other database because they don't have the permissions.
+When authentication is completed successfully, we'll need to ensure the authenticated user or client is authorized to access the resources or services they're requesting. Authorization can be granular. For example, a particular database user might have permission to access and make changes to a single database. However, the user can't access any other database, because they don't have the permissions.
 
-Permissions can include read, write, delete, and more. Use the right permissions for the right user or client. If a user or client switches roles, you can change their permissions to match the new level of access. Give each user or client the least number of permissions needed to get the job done. Never give a user or client any permissions they don't need.
+Permissions can include read, write, delete, and more. Use the right permissions for the right user or client. If a user or client switches roles, you can change their permissions to match the new level of access. You should give each user or client the least number of permissions needed to get the job done. Never give a user or client any permissions they don't need.
 
 ### Differences between authentication and authorization
 

@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   This learning path examines the key Git features that organizations must plan for when designing their enterprise DevOps.
-iconUrl: /learn/achievements/az-400-work-with-git-for-enterprise-devops.svg
+iconUrl: /training/achievements/az-400-work-with-git-for-enterprise-devops.svg
 levels:
 - advanced
 roles:

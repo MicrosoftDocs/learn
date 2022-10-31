@@ -3,7 +3,7 @@ uid: learn.wwl.procedures-functions-postgesql
 metadata:
   title: Procedures and functions in PostgreSQL
   description: "PostgreSQL supports stored procedures and functions to make SQL queries reusable. In this module you will learn how to create and run stored procedures and functions."
-  ms.date: 06/23/2022
+  ms.date: 10/10/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Demonstrate an understanding of relational databases.
   - Demonstrate an understanding of basic SQL.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/procedures-functions-postgresql.svg
 levels:
 - intermediate
 roles:

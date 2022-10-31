@@ -8,9 +8,9 @@ In this module, you learned how Microsoft Teams and Power Automate can help you 
 
 ## Resources
 
-- [Email with Power Automate - Learn | Microsoft Docs](/learn/modules/email-power-automate/)
-- [Build approval flows with Power Automate - Learn | Microsoft Docs](/learn/modules/build-approval-flows/)
-- [Automate a business process using Power Automate - Learn | Microsoft Docs](/learn/paths/automate-process-power-automate/)
-- [Creating Adaptive Cards - Learn | Microsoft Docs](/learn/modules/writing-adaptive-cards/)
-- [Create engaging messages with Adaptive Cards - Learn | Microsoft Docs](/learn/modules/adaptive-cards-create-engaging-messages/)
-- [Create flows that post adaptive cards to Microsoft Teams - Power Automate | Microsoft Docs](/power-automate/create-adaptive-cards)
+- [Email with Power Automate](/training/modules/email-power-automate/)
+- [Build approval flows with Power Automate](/training/modules/build-approval-flows/)
+- [Automate a business process using Power Automate](/training/paths/automate-process-power-automate/)
+- [Creating Adaptive Cards](/training/modules/writing-adaptive-cards/)
+- [Create engaging messages with Adaptive Cards](/training/modules/adaptive-cards-create-engaging-messages/)
+- [Create your first adaptive card](/power-automate/create-adaptive-cards)

@@ -17,6 +17,7 @@ Once you have a quantum program that you'd like to run on a quantum computer, yo
 
 - [Quantinuum](https://www.quantinuum.com): Trapped-ion system with high-fidelity, fully connected qubits, and the ability to perform mid-circuit measurements.
 - [IONQ](https://ionq.com/): Dynamically reconfigurable trapped-ion quantum computer for up to 11 fully connected qubits, that lets you run a two-qubit gate between any pair.
+- [Rigetti](https://www.rigetti.com/): Gate-based superconducting processors will be available in Azure Quantum soon and utilize [Quantum Intermediate Representation (QIR)](/azure/quantum/concepts-qir) to enable low latency and parallel execution.
 - [Quantum Circuits, Inc](https://quantumcircuits.com/): Fast and high-fidelity system with powerful real-time feedback to enable error correction.
 
 ### Optimization providers
@@ -24,14 +25,14 @@ Once you have a quantum program that you'd like to run on a quantum computer, yo
 For optimization solutions, these are the available providers you can choose from:
 
 - [1QBit](https://1qbit.com/): Iterative heuristic algorithms that use search techniques to solve QUBO problems.
-- [Microsoft QIO](https://docs.microsoft.com/azure/quantum/provider-microsoft-qio): A set of multiple targets that rephrase the optimization problem inspired by decades of quantum research.
+- [Microsoft QIO](/azure/quantum/provider-microsoft-qio): A set of multiple targets that rephrase the optimization problem inspired by decades of quantum research.
 - [Toshiba SBM](https://www.toshiba-sol.co.jp/en/pro/sbm/index.htm): Toshiba Simulated Bifurcation Machine is a GPU-powered ISING machine that solves large-scale combinatorial optimization problems at high speed.
 
 ## Azure subscription
 
-The cloud is a powerful place that hosts many moving parts. To use the Microsoft cloud platform, Azure, your crew needs to first have an account to access and manage Azure resources.
+The cloud is a powerful place that hosts many moving parts. To use the Microsoft cloud platform, Azure, your crew needs to first have an account with an active subscription to access and manage Azure resources.
 
-A *subscription* represents a grouping of Azure resources. An invoice is generated at the subscription scope. A subscription has its own payment methods that are used to pay its invoice. [Learn how to create an Azure account.](/learn/modules/create-an-azure-account/?azure-portal=true)
+A *subscription* represents a grouping of Azure resources. An invoice is generated at the subscription scope. A subscription has its own payment methods that are used to pay its invoice. [Learn how to create an Azure account.](/training/modules/create-an-azure-account/?azure-portal=true)
 
 ## Workspace
 

@@ -78,11 +78,11 @@ Git is an open-source distributed control system. Basically a tool for storing f
     block content
       h1 #{title}
       p I'm over the moon!
-      img(src="https://docs.microsoft.com/learn/media/crescent-timeline.png", alt="Moon Photo", srcset="")
+      img(src="https://learn.microsoft.com/training/media/crescent-timeline.png", alt="Moon Photo", srcset="")
     ```
 
    > [!NOTE]
-   > *Optional:* Try adding another image by starting to type **img**. The Visual Studio Code *IntelliSense* feature will provide autocomplete options, including **img:srcset**. Select that option and enter **https://docs.microsoft.com/learn/media/Moon-full-minus1.png** as the source.
+   > *Optional:* Try adding another image by starting to type **img**. The Visual Studio Code *IntelliSense* feature will provide autocomplete options, including **img:srcset**. Select that option and enter **https://learn.microsoft.com/training/windows/media/Moon-full-minus1.png** as the source.
 
 10) Save your changes, and then refresh your browser (F5). Your changes, including the image you added, should now appear. Any time you make additional changes to the file, save the file and refresh the browser. The changes will be reflected while your server is running.
 

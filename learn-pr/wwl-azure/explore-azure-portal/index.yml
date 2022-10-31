@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   Ability to:
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
-iconUrl: /learn/achievements/azure-portal-explore.svg
+iconUrl: /training/achievements/azure-portal-explore.svg
 levels:
 - intermediate
 roles:

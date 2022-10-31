@@ -23,8 +23,8 @@ Now that you have completed this module, you can:
 - [Partitioning and horizontal scaling in Azure Cosmos DB][/azure/cosmos-db/partitioning-overview]
 - [Partitioning strategy and provisioned throughput costs][/azure/cosmos-db/optimize-cost-throughput#partitioning-strategy-and-provisioned-throughput-costs]
 
-[/azure/cosmos-db/relational-nosql]: https://docs.microsoft.com/azure/cosmos-db/relational-nosql
-[/azure/cosmos-db/modeling-data]: https://docs.microsoft.com/azure/cosmos-db/modeling-data
-[/azure/cosmos-db/how-to-model-partition-example]: https://docs.microsoft.com/azure/cosmos-db/how-to-model-partition-example
-[/azure/cosmos-db/partitioning-overview]: https://docs.microsoft.com/azure/cosmos-db/partitioning-overview
-[/azure/cosmos-db/optimize-cost-throughput#partitioning-strategy-and-provisioned-throughput-costs]: https://docs.microsoft.com/azure/cosmos-db/optimize-cost-throughput#partitioning-strategy-and-provisioned-throughput-costs
+[/azure/cosmos-db/relational-nosql]: /azure/cosmos-db/relational-nosql
+[/azure/cosmos-db/modeling-data]: /azure/cosmos-db/modeling-data
+[/azure/cosmos-db/how-to-model-partition-example]: /azure/cosmos-db/how-to-model-partition-example
+[/azure/cosmos-db/partitioning-overview]: /azure/cosmos-db/partitioning-overview
+[/azure/cosmos-db/optimize-cost-throughput#partitioning-strategy-and-provisioned-throughput-costs]: /azure/cosmos-db/optimize-cost-throughput#partitioning-strategy-and-provisioned-throughput-costs

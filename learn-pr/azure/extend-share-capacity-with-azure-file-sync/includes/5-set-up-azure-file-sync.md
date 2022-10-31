@@ -1,12 +1,12 @@
-You've successfully evaluated the target server and found it suitable. Now you'll prepare your Azure environment to deploy Azure File Sync and investigate what steps are required.
+You've successfully evaluated the target server and found it suitable. Now, you'll prepare your Azure environment to deploy Azure File Sync and investigate what steps are required.
 
-In this unit, you'll see the components and services that Azure File Sync relies on.
+In this unit, you'll learn about the components and services that Azure File Sync relies on.
 
 To support Azure File Sync, there are a number of resources that you need to create in your Azure subscription. Create these resources in the following order:
 
 ## 1. Storage account
 
-The storage account is used to store the file share. In Azure, a storage account is where all Azure Storage data objects, like blobs, files, queues, and disks, are stored. There are some limitations on the kind of storage account that can be used to store file shares. There are also multiple access tiers that you can select from based on your workload. When using Azure File Sync, we recommend selecting standard access tiers (transaction optimized, hot, cool). Select StorageV2 with a transaction optimized access tier.
+The storage account is used to store the file share. In Azure, a storage account is where all Azure Storage data objects like blobs, files, queues, and disks are stored. There are some limitations on the kind of storage account that you can use to store file shares. There are also multiple access tiers that you can select from based on your workload. When using Azure File Sync, we recommend selecting standard access tiers (transaction optimized, hot, cool). Select **StorageV2** with a transaction optimized access tier.
 
 ## 2. File share
 

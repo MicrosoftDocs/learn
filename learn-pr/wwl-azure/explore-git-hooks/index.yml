@@ -17,7 +17,7 @@ abstract: |
   - Implement Git hooks for automation
   - Explain Git hooks' behavior
 prerequisites: ""
-iconUrl: /learn/achievements/4-explore-git-hooks.svg
+iconUrl: /training/achievements/4-explore-git-hooks.svg
 levels:
 - advanced
 roles:

@@ -12,11 +12,11 @@ Having completed this module, you can use this environment as a starting point f
 
 ## References
 
-* [Active Directory Domain Services Overview](https://docs.microsoft.com/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
+* [Active Directory Domain Services Overview](/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
 
-* [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+* [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)
 
-* [Hyper-V on Windows 10](https://docs.microsoft.com/virtualization/hyper-v-on-windows/)
+* [Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/)
 
-* [Basic Active Directory environment](https://docs.microsoft.com/azure/active-directory/cloud-sync/tutorial-basic-ad-azure)
+* [Basic Active Directory environment](/azure/active-directory/cloud-sync/tutorial-basic-ad-azure)
 

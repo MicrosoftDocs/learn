@@ -3,7 +3,7 @@ uid: learn.wwl.implement-non-relational-data-model
 metadata:
   title: Implement a non-relational data model
   description: "Implement a non-relational data model"
-  ms.date: 06/08/2022
+  ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   * Familiarity with Azure Cosmos DB concepts, like databases, containers, documents, and throughput in Request Units per second (RU/s)
   * Familiarity with using Azure Cosmos DB resources and data in the Azure portal, like using Data Explorer, running queries, and viewing query stats
-iconUrl: /learn/achievements/data-model-implement-non-relational.svg
+iconUrl: /training/achievements/data-model-implement-non-relational.svg
 levels:
 - intermediate
 roles:

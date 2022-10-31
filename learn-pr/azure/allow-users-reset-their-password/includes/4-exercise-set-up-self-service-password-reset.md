@@ -54,7 +54,7 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
 
 ## Create a user account
 
-To test your configuration, create an account that's not associated with an administrator role.
+To test your configuration, create an account that's not associated with an administrator role. You'll also assign the account to the group you created.
 
 1. In your Azure AD organization, under **Manage**, select **Users**.
 1. Select **+ New user**, and use the following values:
@@ -64,7 +64,7 @@ To test your configuration, create an account that's not associated with an admi
     | User name | balas |
     | Name | Bala Sandhu |
     | Password | Select **Show Password**, and make a note of the password. |
-    | Groups | Select SSPRTesters. |
+    | Groups | Select the **0 groups selected** link, then select **SSPRTesters** and click **Select**. |
 
 1. Select **Create**.
 

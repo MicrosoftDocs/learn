@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   *   You should be familiar with container concepts and terminology.
   *   An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /learn/achievements/azure-container-instances-images.svg
+iconUrl: /training/achievements/azure-container-instances-images.svg
 levels:
 - intermediate
 roles:

@@ -7,7 +7,7 @@ metadata:
   author: aahill
   ms.author: aahi
   ms.topic: interactive-tutorial
-  ms.prod: learning-reactors
+  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Test Azure Cognitive Services  
 summary: Learn how to test Azure Cognitive Services for data science operations.
@@ -27,7 +27,7 @@ prerequisites: |
   - Understand machine learning models for data science.
   - Know simple cloud-based machine learning models for data science.
 # placeholder icon
-iconUrl: /learn/achievements/reactors/test-azure-cognitive-services.svg
+iconUrl: /training/achievements/reactors/test-azure-cognitive-services.svg
 hidden: true
 levels:
 - beginner
@@ -37,7 +37,7 @@ roles:
 - data-scientist
 products:
 - azure
-- vs-code
+- azure-cognitive-services
 subjects:
 - artificial-intelligence
 units:

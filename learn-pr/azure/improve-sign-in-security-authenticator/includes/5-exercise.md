@@ -6,7 +6,7 @@
 
     Example: "A storage account represents a collection of settings that implement a business policy."
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
+    [Exercise introduction guidance](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
 -->
 Validate the user experience by signing in as a test user
 

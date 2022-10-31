@@ -28,7 +28,7 @@ The image shows the Stream Analytics pipeline, and how data is ingested, analyze
 
 ### Key features of Azure Stream Analytics
 
-Stream Analytics ingests data from Azure Event Hubs (including Azure Event Hubs from Apache Kafka), Azure IoT Hub, or Azure Blob Storage. The query, which is based on SQL query language, can be used to easily filter, sort, aggregate, and join streaming data over a period. You can also extend this SQL language with JavaScript and C# user-defined functions (UDFs). You can [understand stream processing](/learn/modules/ingest-data-streams-with-azure-stream-analytics/2-understand-stream-processing) by reading more about it.
+Stream Analytics ingests data from Azure Event Hubs (including Azure Event Hubs from Apache Kafka), Azure IoT Hub, or Azure Blob Storage. The query, which is based on SQL query language, can be used to easily filter, sort, aggregate, and join streaming data over a period. You can also extend this SQL language with JavaScript and C# user-defined functions (UDFs). You can [understand stream processing](/training/modules/ingest-data-streams-with-azure-stream-analytics/2-understand-stream-processing) by reading more about it.
 
 An Azure Stream Analytics job consists of an input, query, and an output. You can do the following with the job output:
 

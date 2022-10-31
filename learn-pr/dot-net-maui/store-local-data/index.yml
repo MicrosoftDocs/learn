@@ -20,7 +20,7 @@ prerequisites: |
   - Visual Studio 2022 with the MAUI workload installed
   - Familiarity with C# and .NET
   - Basic knowledge of SQL and relational databases
-iconUrl: /learn/achievements/store-local-data.svg
+iconUrl: /training/achievements/store-local-data.svg
 levels: 
   - beginner
 roles: 

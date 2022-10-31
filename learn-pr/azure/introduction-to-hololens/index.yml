@@ -17,14 +17,14 @@ abstract: |
   - Learn what HoloLens can do for your organization
   - Learn how HoloLens empowers businesses
   - Get started with HoloLens
-iconUrl: /learn/achievements/introduction-to-hololens-badge.svg
+iconUrl: /training/achievements/introduction-to-hololens-badge.svg
 levels: 
 - beginner
 roles: 
 - business-analyst
 products: 
 - hololens
-prerequisites: "[Introduction to Mixed Reality (optional)](/learn/modules/intro-to-mixed-reality/)"
+prerequisites: "[Introduction to Mixed Reality (optional)](/training/modules/intro-to-mixed-reality/)"
 units:
 - learn.introduction-to-hololens.introduction
 - learn.introduction-to-hololens.how-hololens-works

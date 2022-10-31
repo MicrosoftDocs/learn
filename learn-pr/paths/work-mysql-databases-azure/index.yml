@@ -3,7 +3,7 @@ uid: learn.wwl.work-mysql-databases-azure
 metadata:
   title: Work with MySQL Databases on Azure
   description: Work with MySQL Databases on Azure
-  ms.date: 06/24/2022
+  ms.date: 10/10/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ summary: |
   - Work with MySQL storage engines
   - Secure your Azure Database for MySQL server
   - Understand concurrency in MySQL
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/work-mysql-databases-azure.svg
 levels:
 - intermediate
 roles:

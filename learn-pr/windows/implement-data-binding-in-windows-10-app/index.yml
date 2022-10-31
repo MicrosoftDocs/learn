@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn-windows.windows-10-ui-and-data
 metadata:
-  title: Implement data binding in your Windows 10 application
-  description: Learn about the relation between UI and data in Windows 10 apps, and implement data binding in your applications.
-  ms.date: 3/1/2019
+  title: Implement data binding in your Windows application
+  description: Learn about the relation between UI and data in Windows apps, and implement data binding in your applications.
+  ms.date: 10/18/2022
   author: QuinnRadich
   ms.author: quradic
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
-title: Implement data binding in your Windows 10 application
-summary: Learn about the relation between UI and data in Windows 10 apps, and implement data binding in your applications.
+title: Implement data binding in your Windows application
+summary: Learn about the relation between UI and data in Windows apps, and implement data binding in your applications.
 abstract: |
   In this module you will:
   - Display and automatically update simple text data.
@@ -17,14 +17,13 @@ abstract: |
   - Automatically reflect data changes on the UI.
   - Show and edit a list of more complex data structures.
 prerequisites: |
-  - A computer running the current release of Windows 10. To verify that you are running the latest version, go to **Settings** > **Windows Update**.
-  - [The latest version of Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs) installed.
-  - Understanding of basic concepts of Windows app layout, including `StackPanel` and `Grid`.
-  - Creating new UWP projects in Visual Studio.
+  - A computer running the supported release of Windows 10 or Windows 11. To verify that you are running the latest version, go to **Settings** > **Windows Update**.
+  - [The latest version of Visual Studio](/visualstudio/install/install-visual-studio) installed.
+  - Familiarity with creating new UWP projects in Visual Studio.
   - Familiarity with C#.
-  - Basic understanding of XAML.
-  - Basic understanding of UWP layout, including `StackPanel` and `Grid`.
-iconUrl: /learn/achievements/windows-10-ui-and-data.svg
+  - Basic understanding of XAML syntax and concepts.
+  - Basic understanding of XAML layout, including `StackPanel` and `Grid`.
+iconUrl: /training/achievements/windows-10-ui-and-data.svg
 levels:
 - beginner
 roles:

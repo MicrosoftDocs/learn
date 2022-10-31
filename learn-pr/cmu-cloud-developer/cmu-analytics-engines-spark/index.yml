@@ -43,7 +43,7 @@ prerequisites: |
   - Be familiar with NoSQL databases and object storage, and how they work
   - Know what distributed programming is and why it's useful for the cloud
   - Understand MapReduce and how it enables big data computing
-iconUrl: /learn/achievements/cmu-cloud-developer/distributed-programming-spark.svg
+iconUrl: /training/achievements/cmu-cloud-developer/distributed-programming-spark.svg
 hidden: true
 levels:
 - beginner

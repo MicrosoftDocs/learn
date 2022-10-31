@@ -17,7 +17,7 @@ abstract: |
   - Configure Microsoft Defender for Endpoint environment settings
 prerequisites: |
   Basic understanding of Microsoft 365.
-iconUrl: /learn/achievements/deploy-the-microsoft-defender-for-endpoints-environment.svg
+iconUrl: /training/achievements/deploy-the-microsoft-defender-for-endpoints-environment.svg
 levels:
 - intermediate
 roles:

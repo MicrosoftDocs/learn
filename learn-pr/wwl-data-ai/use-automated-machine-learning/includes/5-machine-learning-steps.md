@@ -22,7 +22,7 @@ The automated machine learning capability in Azure Machine Learning supports *su
 - **Regression** (predicting numeric values)
 - **Time series forecasting** (predicting numeric values at a future point in time)
 
-In Automated Machine Learning you can select from several types fo tasks: 
+In Automated Machine Learning you can select from several types of tasks: 
 ![Screenshot of portal choices in automated machine learning.](../media/choose-task-settings.png)
 
 In Automated Machine Learning, you can select configurations for the primary metric, type of model used for training, exit criteria, and concurrency limits.  
@@ -41,7 +41,7 @@ The best model is identified based on the evaluation metric you specified, *Norm
 
 A technique called *cross-validation* is used to calculate the  evaluation metric. After the model is trained using a portion of the data, the remaining portion is used to iteratively test, or cross-validate, the trained model. The metric is calculated by comparing the predicted value from the test with the actual known value, or label. 
     
-The difference between the predicted and actual value, known as the *residuals*, indicates the amount of *error* in the model.  The particular performance metric you used, normalized root mean squared error, is calculated by squaring the errors across all of the test cases, finding the mean of these squares, and then taking the square root. What all of this means is that smaller this value is, the more accurate the model's predictions.
+The difference between the predicted and actual value, known as the *residuals*, indicates the amount of *error* in the model.  The performance metric *root mean squared error* (RMSE), is calculated by squaring the errors across all of the test cases, finding the mean of these squares, and then taking the square root. What all of this means is that smaller this value is, the more accurate the model's predictions. The *normalized root mean squared error* (NRMSE) standardizes the RMSE metric so it can be used for comparison between models which have variables on different scales. 
 
 The **Residual Histogram** shows the frequency of residual value ranges. Residuals represent variance between predicted and true values that can't be explained by the model, in other words, errors. You should hope to see the most frequently occurring residual values clustered around zero. You want small errors with fewer errors at the extreme ends of the scale.
 

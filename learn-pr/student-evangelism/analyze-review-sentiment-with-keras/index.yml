@@ -17,7 +17,7 @@ abstract:  |
   - Use Keras to build and train a neural network to perform sentiment analysis
   - Use the neural network to analyze text for sentiment 
 prerequisites: None
-iconUrl: /learn/achievements/student-evangelism/analyze-review-sentiment-with-keras-badge.svg
+iconUrl: /training/achievements/student-evangelism/analyze-review-sentiment-with-keras-badge.svg
 hidden: true
 levels:
 - beginner

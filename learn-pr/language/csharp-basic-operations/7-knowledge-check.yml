@@ -13,11 +13,11 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What will be the result of the following line of code?  `Console.WriteLine(5 / 10);`"
+  - content: "What will be the result of the following line of code? `Console.WriteLine(5 / 10);`"
     choices:
     - content: "0.5"
       isCorrect: false
-      explanation: "While 5 / 10 does equal 0.5, since we're using `int` literals C# will represent them differently."
+      explanation: "While 5 / 10 does equal 0.5, since we're using `int` literals, C# will represent them differently."
     - content: "2"
       isCorrect: false
       explanation: "You may have mistakenly swapped the dividend and divisor."
@@ -34,7 +34,7 @@ quiz:
       explanation: "Correct!"
     - content: "`value++;`"
       isCorrect: false
-      explanation: "This line of code doesn't use the addition assignment operator."
+      explanation: "This line of code doesn't use the *addition assignment* operator."
     - content: "value = value + 5;"
       isCorrect: false
       explanation: "This line of code doesn't use the *addition assignment* operator."

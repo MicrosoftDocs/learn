@@ -33,7 +33,7 @@ Review The Agile Manifesto from the perspective of Continuous Collaboration and 
 
 According to *Accelerate*: "The organizational culture predicts the way information flows through an organization. Good informational flow is critical to the safe and effective operation of high-tempo and high-consequence environments, including technology organizations."
 
-[Culture](https://docs.microsoft.com/learn/modules/introduce-foundation-pillars-devops/3-explore-first-foundation) and cross-functional collaboration have many beneficial impacts on performance, including:
+[Culture](/training/modules/introduce-foundation-pillars-devops/3-explore-first-foundation) and cross-functional collaboration have many beneficial impacts on performance, including:
 
 - Different perspectives, which can spur innovation
 - Buy-in and trust, which can help increase the momentum of change
@@ -44,7 +44,7 @@ According to *Accelerate*: "The organizational culture predicts the way informat
 Collaboration relies on communication, and how you communicate is how you build your software. Looking at communications through the lens of Conway’s Law shows us that:
 
 - Siloed functional teams create specialized, siloed solutions.
-- [Cross-functional teams create solutions that provide capabilities](https://docs.microsoft.com/learn/modules/introduce-foundation-pillars-devops/4-explore-second-foundation).
+- [Cross-functional teams create solutions that provide capabilities](/training/modules/introduce-foundation-pillars-devops/4-explore-second-foundation).
 
 Therefore, designing teams and architecture around micro-services is an effective way to focus teams on capabilities.
 

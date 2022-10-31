@@ -7,6 +7,8 @@ metadata:
   ms.date: 5/10/2022
   author: shreyaaithal
   ms.author: shaithal
+  ms.reviewer: maghan
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure 
 title: Develop applications with Azure Database for MySQL - Flexible Server
@@ -22,7 +24,7 @@ prerequisites: |
   - An understanding of cloud computing and some experience with the Azure portal and CLI.
   - Basic familiarity with relational databases, the Azure Database for MySQL offering, and its features and concepts.
   - Basic knowledge of the PHP server scripting language.
-iconUrl: /learn/achievements/mysql/build-apps-with-azure-database-for-mysql.svg
+iconUrl: /training/achievements/mysql/build-apps-with-azure-database-for-mysql.svg
 levels:
   - intermediate
 roles: 
