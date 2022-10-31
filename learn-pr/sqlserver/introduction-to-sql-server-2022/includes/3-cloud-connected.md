@@ -26,7 +26,7 @@ Having a diaster recovery site and plan are critical to ensuring your business a
 
 ### Solution using managed disaster recovery in SQL Server 2022
 
-The link feature for SQL Managed Instance allows you to link a SQL Server 2022 database to SQL Managed Instance using built-in Availability Group (AG) technology in SQL Server.
+The link feature for Azure SQL Managed Instance allows you to link a SQL Server 2022 database to SQL Managed Instance using built-in Availability Group (AG) technology in SQL Server.
 
 Using documented scripts or graphical wizards with SQL Server Management Studio (SSMS), you can connect an existing AG in SQL Server 2022, or create a new one (no replica required) to create a Distributed Availability Group between SQL Server 2022 and Azure SQL Managed Instance.
 
