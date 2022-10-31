@@ -10,7 +10,7 @@ The SQL Server 2022 engine has been enhanced to integrate with all of these Azur
 
 - Distributed Availability Group - Managed disaster recovery using the Link feature for Azure SQL Managed instance requires setting up a Distributed Availability Group. SQL Server Management Studio (SSMS) provides graphical interfaces to assist in this configuration.
 
-- Self-hosted integration runtime - The self-hosted integration runtime is a Windows program that must be installed on your network to connect to SQL Server for Azure Synapse Link for SQL Server.
+- Self-hosted integration runtime - The self-hosted integration runtime is a Windows program that must be installed on your network, separate from the SQL Server 2022 setup experience, to connect to SQL Server for Azure Synapse Link for SQL Server.
 
 - Azure extension for SQL Server - The Azure extension for SQL Server is used to set up the Azure Arc agents and extensions to enable SQL Server 2022 as an Azure Arc-enabled SQL Server. This extension is required to set up Microsoft Purview, Azure Active Directory (Azure AD) authentication, and Microsoft Defender integration with SQL Server 2022.
 

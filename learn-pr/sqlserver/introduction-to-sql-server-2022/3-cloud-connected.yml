@@ -16,25 +16,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "xxxxx"
+  - content: "Which Azure service is used to provide managed disaster recovery with SQL Server 2022?"
     choices: 
-    - content: "xxxx"
+    - content: "Azure Synapse Analytics"
       isCorrect: false
-      explanation: "xxxx"
-    - content: "xxxx"
-      isCorrect: false
-      explanation: "xxxxx"
-    - content: "xxxxx"
+      explanation: "Synapse Link for SQL works with Azure Synapse Analytics for near real-time analytics"
+    - content: "Azure SQL Managed Instance"
       isCorrect: true
-      explanation: "xxxx"
-  - content: "xxxxx"
+      explanation: "The link feature for Azure SQL Managed Instances uses a Distributed Availability Group (DAG) to provide a managed disaster recovery solution"
+    - content: "Azure Blob Storage"
+      isCorrect: false
+      explanation: "While you can backup a database to Azure Blob Storage it does not provide managed disaster recovery solution like Azure SQL Managed Instance"
+  - content: "What is the software installed with SQL Server 2022 that provides connectivity from on-premises to Azure?"
     choices: 
-    - content: "xxxxx"
+    - content: "The SQL Server IaaS Agent extension"
       isCorrect: false
-      explanation: "xxxxx"
-    - content: "xxxxx"
+      explanation: "The SQL Server IaaS Agent extension is used with SQL Server on Azure Virtual Machine"
+    - content: "Self-hosted Integrated Runtime"
+      isCorrect: false
+      explanation: "The Self-hosted Integrated Runtime connects SQL Server to Azure for Synapse Link but is not part of SQL Server setup"
+    - content: "Azure extension for SQL Server"
       isCorrect: true
-      explanation: "xxxxx"
-    - content: "xxxxx"
-      isCorrect: false
-      explanation: "xxxxx"
+      explanation: "The Azure extension for SQL Server can be configured a part of SQL Server 2022 setup and connects SQL Server to Azure for Purview, AAD, Microsoft Defender, and PAYG licensing"
