@@ -1,40 +1,41 @@
-:::image type="content" source="../media/select-azure-functions.png" alt-text="Flowchart for selecting Azure function solutions. Alternatives include virtual machines, Azure Batch, and Azure App Service.":::
+[Azure Functions](/azure/azure-functions/functions-overview) is a serverless application platform. Functions are used when you want to run a small piece of code in the cloud, without worrying about the infrastructure.
 
+### Things to know about Azure Functions
 
+Let's review some benefits and scenarios of Azure Functions that make it a great compute solution for building new workloads.
 
-### What are Azure Functions?
+:::image type="content" source="../media/select-azure-functions.png" alt-text="Flowchart for selecting Azure Functions solutions to build new workloads." border="false":::
 
-[Azure Functions](/azure/azure-functions/functions-overview) is a serverless application platform. Functions are used when you want to run a small piece of code in the cloud, without worrying about the infrastructure. Functions provide intrinsic scalability, and you’re charged only for the resources used. You can write your function code in the language of your choice. Functions provide “compute on demand” in two significant ways. 
+- Azure Functions provides intrinsic scalability. You're charged only for the resources you use.
 
-- First, Azure Functions allows you to implement your system's logic into readily available blocks of code. These code blocks (functions) can run anytime you need to respond to critical events.
+- With Azure Functions, you can write your function code in the language of your choice.
 
-- Second, as requests increase, Azure Functions meets the demand with as many resources and function instances as necessary. As requests complete, any extra resources and application instances drop off automatically.
+- Azure Functions supports _compute on demand_ in two significant ways:
 
-### Scenarios for Azure Functions
+   - Azure Functions lets you implement your system's logic into readily available blocks of code. These code blocks (functions) can run anytime you need to respond to critical events.
 
-Azure Functions are best when handling specific definable actions triggered by an event. For example, a function could process an API call and then store the processed data in Cosmos DB. Once the data transfer happens, another function could trigger a notification. 
+   - As requests increase, Azure Functions meets the demand with as many resources and function instances as necessary. As requests complete, any extra resources and application instances drop off automatically.
 
-:::image type="content" source="../media/azure-functions-events.png" alt-text="Diagram of Azure functions with A P I calls and output data to notifications hubs. ":::
+- Azure Functions is an ideal solution for handling specific definable actions triggered by an event. A function can process an API call and store the processed data in Azure Cosmos DB. After the data transfer happens, another function can trigger a notification. 
 
+   :::image type="content" source="../media/azure-functions-events.png" alt-text="Diagram that shows how Azure Functions responds to API calls and outputs data to Azure Notification Hubs." border="false":::
 
+### Things to consider when using Azure Functions
 
-> [!TIP]
-> You can get some other ideas on how to use Azure Functions by visiting the [code samples](/samples/browse/?expanded=azure&languages=csharp&products=azure-functions) page. 
+Let's look at some best practices for using Azure Functions. As you consider these suggestions, think about the advantages to using Azure Functions in the Tailwind Traders infrastructure.
 
-### Best practices and tips for using Azure Functions
+- **Consider long running functions**. Avoid large, long-running functions that can cause unexpected timeout issues. Whenever possible, refactor large functions into smaller function sets that work together and return responses faster. The default timeout is 300 seconds for Consumption Plan functions, and 30 minutes for any other plan.
 
-- **Avoid long running functions.** Large, long-running functions can cause unexpected timeout issues. Whenever possible, refactor large functions into smaller function sets that work together and return responses faster. The default timeout is 300 seconds for Consumption Plan functions, 30 minutes for any other plan.
+- **Consider durable functions**. Overcome timeout issues in your configuration with durable functions and smaller function sets. [Durable functions](/azure/azure-functions/durable/durable-functions-overview?tabs=csharp) let you write stateful functions. Behind the scenes, the function manages the application state, checkpoints, and restarts. An example application pattern for durable functions is _function chaining_. Function chaining executes a sequence of functions in a specific order. The output of one function is applied to the input of another function. 
 
-- **Know when to use durable functions**. [Durable functions](/azure/azure-functions/durable/durable-functions-overview?tabs=csharp) let you write stateful functions. So, behind the scenes, the function manages app state, checkpoints, and restarts. An example application pattern for durable functions is function chaining. Function chaining executes a sequence of functions in a specific order. The output of one function is applied to the input of another function. Do you understand how timeout issues can be overcome with durable functions and smaller function sets?
+- **Consider performance and scaling**. Plan how to group functions with different load profiles. Consider a scenario where you have two functions. One function processes many thousands of queued messages and has low memory requirements. The other function is called only occasionally but has high memory requirements. In this scenario, you might want to deploy separate function applications, where each function has its own set of resources. Separate resources means you can independently scale the functions.
 
-:::image type="content" source="../media/durable-functions.png" alt-text="Diagram of durable functions passing information. There is an API call, the data is stored in Cosmos D B, and the data is processed.":::
+- **Consider defensive functions**. Design your functions to handle exceptions. Downstream services, network outages, or memory limits can cause a function to fail. Write your functions so they can continue if a failure occurs. 
 
- - **Organize functions for performance and scaling.** Consider how you want to group functions with different load profiles. For example, let’s say you have two functions. One function processes many thousands of queued messages and has low memory requirements. The other function is only called occasionally but has high memory requirements. You might want to deploy separate function apps, so each function gets its own set of resources. Separate resources mean you can independently scale the functions.
+- **Consider not sharing storage accounts**. Maximize performance by using a separate storage account for each function application. When you create a function app, associate it with a unique storage account. Using a unique storage account is important if your function generates a high volume of storage transactions.
 
-- **Write defensive functions.** Design your functions assuming an exception could occur at any time. Downstream services, network outages, or memory limits could cause the function to fail. Plan out how you continue from a failure point. 
+#### Business application
 
-- **Avoid sharing storage accounts.** When you create a function app, you must associate it with a storage account. To maximize performance, use a separate storage account for each function app. This is important if your function generates a high volume of storage transactions.
+Take a few minutes to read about other [Azure Functions best practices](/azure/azure-functions/functions-best-practices).
 
-> [!TIP]
-> Take a few minutes to read about other [Azure Function best practices](/azure/azure-functions/functions-best-practices).
-
+You can get more ideas on how to use Azure Functions by checking out the [code samples](/samples/browse/?expanded=azure&languages=csharp&products=azure-functions) page.
