@@ -43,7 +43,7 @@ bicep build main.bicep
 > [!NOTE]
 > When you run the `build` command, Bicep also transpiles your Bicep code to a JSON ARM template. You generally don't need the file that it outputs, so you can ignore it.
 
-Because you want your Bicep templates to be linted each time anyone checks in code to your repository, you can add a lint stage and job to your pipeline:
+Because you want the linter to check your Bicep templates each time anyone checks in code to your repository, you can add a lint stage and job to your pipeline:
 
 :::image type="content" source="../media/3-stages-lint.png" alt-text="Diagram that shows a pipeline with a lint stage containing a single job that runs the linter on the file." border="false":::
 
