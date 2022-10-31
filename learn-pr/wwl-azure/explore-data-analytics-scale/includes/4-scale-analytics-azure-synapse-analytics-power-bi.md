@@ -11,4 +11,4 @@ All Azure Synapse Analytics services can be managed through a single, interactiv
 Looking beyond data exploration and into reporting and data use, Power BI and Azure Synapse are natively integrated. Using Power BI with Synapse enables analysts to process large-scale data quickly.
 
 > [!Note]
-> Azure Synapse Analytics and Power BI are not Microsoft's only tools for scaling analytics. They are however the main tools used by data analysts in scalable modern analytics solutions. Learn more about large-scale data analytics solutions in [Explore fundamentals of modern data warehousing](/learn/modules/examine-components-of-modern-data-warehouse/).
+> Azure Synapse Analytics and Power BI are not Microsoft's only tools for scaling analytics. They are however the main tools used by data analysts in scalable modern analytics solutions. Learn more about large-scale data analytics solutions in [Explore fundamentals of modern data warehousing](/training/modules/examine-components-of-modern-data-warehouse/).

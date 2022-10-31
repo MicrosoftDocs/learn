@@ -7,7 +7,7 @@ Now we'll discuss some scenarios that illustrate when it's appropriate to migrat
 
 ## Decision criteria
 
-Azure NetApp Files can manage enterprise-scale, file-based workloads that need little or no reconfiguration and require some deployment flexibility. The use cases where Azure API Management might not be the correct choice typically involve small, static, workloads that require block-based or object-based storage. Let's review these decision criteria in more detail.
+Azure NetApp Files can manage enterprise-scale, file-based workloads that need little or no reconfiguration and require some deployment flexibility. The use cases where Azure NetApp Files might not be the correct choice typically involve small, static, workloads that require block-based or object-based storage. Let's review these decision criteria in more detail.
 
 | **Criteria** | **Analysis**|
 | --- | --- |

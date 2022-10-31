@@ -4,8 +4,8 @@ metadata:
   title: Summary
   description: This unit is the summary for the module.
   ms.date: 06/28/2021
-  author: bobward
-  ms.author: bobward
+  author: MikeRayMSFT
+  ms.author: mikeray
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid

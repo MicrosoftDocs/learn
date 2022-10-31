@@ -31,7 +31,7 @@ prerequisites: |
     - Arduino IDE installed on your computer
     - .NET SDK installed on your computer
 
-iconUrl: /learn/achievements/student-evangelism/connecting-iot-devices-to-cognitive-services-using-azure-functions.svg
+iconUrl: /training/achievements/student-evangelism/connecting-iot-devices-to-cognitive-services-using-azure-functions.svg
 badge:
   uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.badge
 levels:
@@ -40,6 +40,10 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-hub
+subjects:
+- iot
+- machine-learning
+- serverless-compute
 units:
 - learn.oxford.connect-iot-devices-cognitive-services-azure-func.introduction
 - learn.oxford.connect-iot-devices-cognitive-services-azure-func.design-cognitive-service
@@ -54,4 +58,3 @@ units:
 - learn.oxford.connect-iot-devices-cognitive-services-azure-func.exercise-customizing-cognitive-services
 - learn.oxford.connect-iot-devices-cognitive-services-azure-func.knowledge-check-3
 - learn.oxford.connect-iot-devices-cognitive-services-azure-func.summary
-

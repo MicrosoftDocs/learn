@@ -17,7 +17,7 @@ abstract: |
     - Use an Azure Machine Learning workspace with Azure Virtual Network
 prerequisites: |
   A basic familiarity with Azure
-iconUrl: /learn/achievements/15-explore-security-concepts-in-azure-machine-learning.svg
+iconUrl: /training/achievements/15-explore-security-concepts-in-azure-machine-learning.svg
 levels:
 - beginner
 roles:
@@ -30,6 +30,9 @@ products:
 - azure
 - azure-machine-learning
 - azure-portal
+subjects:
+- cloud-security
+- machine-learning
 units:
 - learn.azure.azure-machine-learning-security.introduction
 - learn.azure.azure-machine-learning-security.what-is-role-based-access-control

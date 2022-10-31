@@ -47,7 +47,7 @@ summary: |
   ***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***
 
 prerequisites: None
-iconUrl: /learn/achievements/deploy-5g-services-with-azure.svg
+iconUrl: /training/achievements/deploy-5g-services-with-azure.svg
 levels:
 - beginner
 roles:
@@ -61,6 +61,10 @@ products:
 - azure-iot-hub
 - azure-resource-manager
 - azure-virtual-machines
+subjects:
+- iot
+- networking
+- cloud-computing
 modules:
 - learn.oxford.intro-5g-azure
 - learn.oxford.5g-business-models

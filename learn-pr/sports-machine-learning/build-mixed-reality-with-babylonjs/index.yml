@@ -22,7 +22,7 @@ abstract: |
 prerequisites: | 
   - [Node.js](https://nodejs.org/?azure-portal=true)
   - [Visual Studio Code](https://aka.ms/LearnOnVSCode?azure-portal=true)
-iconUrl: /learn/achievements/build-mixed-reality-with-babylonjs.svg
+iconUrl: /training/achievements/build-mixed-reality-with-babylonjs.svg
 levels:
 - beginner
 roles:
@@ -31,7 +31,11 @@ roles:
 products:
 - vs-code
 - windows-mixed-reality
-units: 
+subjects:
+- mixed-reality
+- development-tools
+- cross-development
+units:
 - learn.sports-machine-learning.build-mixed-reality-with-babylonjs.introduction
 - learn.sports-machine-learning.build-mixed-reality-with-babylonjs.webxr-babylonjs
 - learn.sports-machine-learning.build-mixed-reality-with-babylonjs.environment-setup

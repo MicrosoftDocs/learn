@@ -28,7 +28,7 @@ prerequisites: |
   - Security-related technologies such as firewalls, encryption, and multi-factor authentication
   - Windows PowerShell scripting
   - Automation and monitoring
-iconUrl: /learn/achievements/automate-the-configuration-of-windows-server-iaaa-vms.svg
+iconUrl: /training/achievements/automate-the-configuration-of-windows-server-iaaa-vms.svg
 levels:
 - intermediate
 roles:
@@ -41,6 +41,8 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.wwl.automate-configuration-of-windows-server-iaas-vms.introduction
 - learn.wwl.automate-configuration-of-windows-server-iaas-vms.describe-azure-automation

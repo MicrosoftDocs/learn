@@ -5,7 +5,7 @@ By using the built-in help system in PowerShell, you can find out more about a s
 You can use the `Get-Help` core cmdlet to learn more about a command. Typically, you invoke `Get-Help` by specifying it by name and adding the `-Name` flag that contains the name of the cmdlet you want to learn about. Here's an example:
 
 ```powershell
-Get-Help -Name 'name-of-command'
+Get-Help -Name Get-Help
 ```
 
 ### Update help
@@ -50,4 +50,4 @@ Get-Help Get-FileHash -Examples
 
 ### Improve the reading experience
 
-Running `Get-Help` returns the entire help page. The page might not provide the best reading experience. You might have to scroll to find the section you want to read. A better approach is to use the `help` alias. The `help` alias pipes `Get-Help` into a function that ensures that your output is readable line by line. It also makes the response readable page by page.
+Running `Get-Help` returns the entire help page. The page might not provide the best reading experience. You might have to scroll to find the section you want to read. A better approach is to use the `help` alias. The `help` alias pipes `Get-Help` into a function that ensures that your output is readable line by line. It also makes the response readable page by page, by paginating the output. You'll use the `help` alias in the next unit.

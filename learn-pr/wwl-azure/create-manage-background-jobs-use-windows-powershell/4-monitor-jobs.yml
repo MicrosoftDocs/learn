@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-background-jobs-use-windows-powershell.monitor-jobs
+title: Monitor jobs in Windows PowerShell
+metadata:
+  title: Monitor jobs in Windows PowerShell
+  description: "Monitor jobs in Windows PowerShell"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-monitor-jobs.md)]

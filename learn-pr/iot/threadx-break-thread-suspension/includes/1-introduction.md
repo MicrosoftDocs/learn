@@ -16,6 +16,6 @@ After you complete this module, you'll be well on your way to develop more sophi
 
 ## Prerequisites
 
-- [Set up your environment](/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true)
+- [Set up your environment](/training/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true)
 - Working knowledge of C or C++, GitHub, and Visual Studio
-- Previous modules in this [learning path](/learn/paths/azure-rtos-threadx/?azure-portal=true)
+- Previous modules in this [learning path](/training/paths/azure-rtos-threadx/?azure-portal=true)

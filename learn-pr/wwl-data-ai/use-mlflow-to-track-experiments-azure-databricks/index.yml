@@ -17,13 +17,15 @@ abstract: |
   - Run experiments
 prerequisites: |
   Before starting this module, you should be familiar with using Python to train machine learning models in Azure Databricks.
-iconUrl: /learn/achievements/use-mlflow-to-track-experiments-in-azure-databricks.svg
+iconUrl: /training/achievements/use-mlflow-to-track-experiments-in-azure-databricks.svg
 levels:
 - intermediate
 roles:
 - data-scientist
 products:
 - azure-databricks
+subjects:
+- data-analytics
 units:
 - learn.wwl.use-mlflow-to-track-experiments-azure-databricks.introduction
 - learn.wwl.use-mlflow-to-track-experiments-azure-databricks.understand-capabilities-of-mlflow

@@ -14,7 +14,7 @@ Azure CDN offers the following features:
 - **HTTPS custom domain support**. Enable encrypted connections to custom domains, such as `https://www.adatum.com`.
 - **Azure diagnostics logs**. View core analytic information and send the data to an Azure Storage account, Azure Event Hubs, or a Log Analytics Workspace.
 - **File compression**. Increase performance by reducing the number of bytes in transit.
-- **Geo-filtering**. Create rules on your CDN endpoint that use specific paths to allow or block content in select countries.
+- **Geo-filtering**. Create rules on your CDN endpoint that use specific paths to allow or block content in select countries/regions.
 
 The benefits of using Azure CDN include:
 

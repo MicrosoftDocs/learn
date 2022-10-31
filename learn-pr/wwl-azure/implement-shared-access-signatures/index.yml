@@ -3,7 +3,7 @@ uid: learn.wwl.implement-shared-access-signatures
 metadata:
   title: Implement shared access signatures
   description: "Learn how to use shared access signatures to authorize access to storage resources."
-  ms.date: 12/09/2021
+  ms.date: 06/14/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -18,13 +18,15 @@ abstract: |
 prerequisites: |
   *   You should be familiar with developer concepts and terminology.
   *   An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /learn/achievements/signatures-shared-access.svg
+iconUrl: /training/achievements/signatures-shared-access.svg
 levels:
 - intermediate
 roles:
 - developer
 products:
 - azure
+subjects:
+- identity-access
 units:
 - learn.wwl.implement-shared-access-signatures.introduction
 - learn.wwl.implement-shared-access-signatures.discover

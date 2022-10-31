@@ -19,7 +19,7 @@ Once you've declared a variable, you must initialize it, or assign it a value. Y
 
 - In SQL Server 2008 or later, you may initialize a variable using the DECLARE statement.
 - In any version of SQL Server, you may assign a single (scalar) value using the SET statement.
-- In any version of SQL Server, you can assign a value to a variable using a SELECT statement. Be sure that the SELECT statement returns exactly one row. An empty result will leave the variable with its original value; more than one result will cause an error.
+- In any version of SQL Server, you can assign a value to a variable using a SELECT statement. Be sure that the SELECT statement returns exactly one row. An empty result will leave the variable with its original value; more than one result will return the last result. 
 
 The following example shows the three ways of declaring and assigning values to variables:
 
@@ -38,6 +38,9 @@ This generates the following results.
 |var1 |var2 | var3|
 |---- |------ |----|
 |99  |string |Davis|
+
+> [!TIP]
+> For full guidance on local variables, refer to the [T-SQL reference documentation](/sql/t-sql/language-elements/variables-transact-sql).
 
 ## Working with synonyms
 

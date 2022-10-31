@@ -1,4 +1,4 @@
-﻿In the previous unit, you defined the operation `IsbnOracle`. That operation takes as an argument the qubit register for our search space. It ultimately applies a phase factor of -1 to the number state $|x \rangle$, which satisfies the condition $(9 + 6 \cdot x) \bmod 11$. 
+In the previous unit, you defined the operation `IsbnOracle`. That operation takes as an argument the qubit register for our search space. It ultimately applies a phase factor of -1 to the number state $|x \rangle$, which satisfies the condition $(9 + 6 \cdot x) \bmod 11$. 
 
 You also defined the operation `ComputeIsbnCheck`, which is used inside `IsbnOracle` and performs the necessary arithmetic mapping to a second qubit register. In addition, you wrote the function `GetIsbnCheckConstants` to determine the check condition constants $a$ and $b$ for $(b + a \cdot x) \bmod 11$ from any arbitrary ISBN with a single digit missing. 
 
@@ -14,7 +14,7 @@ The second step is sometimes called *reflection about the mean* or *diffusion*. 
 
 ## Step 1. Reflect about uniform superposition
 
-In the [previous module that used Grover's algorithm](/learn/modules/solve-graph-coloring-problems-grovers-search?azure-portal=true), the uniform superposition was created over all the $2^n$ number states spanned by the $n$ qubits. In that case, the creation of the superposition is straightforwardly handled by applying the `H` operation to each individual qubit.
+In the [previous module that used Grover's algorithm](/training/modules/solve-graph-coloring-problems-grovers-search?azure-portal=true), the uniform superposition was created over all the $2^n$ number states spanned by the $n$ qubits. In that case, the creation of the superposition is straightforwardly handled by applying the `H` operation to each individual qubit.
 
 Because we're interested in only the number states $0-9$ here, we have no use for the remaining states ($10-15$) that our four qubits can represent. Therefore, we'll only use and reflect about the uniform superposition $\sum_{i=0}^9 |i \rangle$.
 

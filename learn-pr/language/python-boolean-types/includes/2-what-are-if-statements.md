@@ -9,7 +9,7 @@ To express conditional logic in Python, you use `if` statements. When you're wri
 
 ## Test expressions
 
-You need to use an `if` statement to run code only if a certain condition is satisfied. The first thing you do when you write an `if` statement is check the condition by using a *test expression*. You then determine whether the statement evaluates to `True` or `False`. If it's `True`, the next indented code block is run:
+You need to use an `if` statement to run code only if a certain condition is satisfied. The first thing you do when you write an `if` statement is to check the condition by using a *test expression*. You then determine whether the statement evaluates to `True` or `False`. If it's `True`, the next indented code block is run:
 
 ```python
 a = 97

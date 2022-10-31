@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   Learn to create and manage your initial Azure Active Directory (Azure AD) implementation and configure the users, groups, and external identities you will use to run your solution. Aligned to SC-300 Exam.
-iconUrl: /learn/achievements/implement-an-identity-management-solution.svg
+iconUrl: /training/achievements/implement-an-identity-management-solution.svg
 levels:
 - intermediate
 roles:
@@ -23,6 +23,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 modules:
 - learn.wwl.implement-initial-configuration-of-azure-active-directory
 - learn.wwl.create-configure-manage-identities

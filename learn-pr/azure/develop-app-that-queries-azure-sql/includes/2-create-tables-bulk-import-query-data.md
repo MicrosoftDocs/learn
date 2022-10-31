@@ -20,7 +20,7 @@ You can create a single database through the Azure portal or by using Azure Powe
 
 When you create a single database, you're prompted to specify the server to manage it. You can create a new server or use an existing server.
 
-When you create a new server, you're prompted to specify a server admin user name and password. You'll use these credentials to connect to the server to do administrative tasks and to access the databases that the server controls. SQL Database also supports Azure Active Directory (Azure AD) authentication. But you must always create an admin account when you create a new server and then grant access to accounts that are stored in Azure AD.
+When you create a new server and choose to use SQL authentication, you're prompted to specify a server admin user name and password. You'll use these credentials to connect to the server to do administrative tasks and to access the databases that the server controls. SQL Database also supports Azure Active Directory (Azure AD) authentication. You can also choose to use both SQL and Azure AD authentication, but you must always set an admin or create an admin account when you create a new server, then grant access to accounts that are stored in Azure AD.
 
 Each database server is protected by a firewall to block potentially malicious processes. You can open the firewall to other Azure services. And you can selectively enable access to other computers based on their IP address or address range. SQL Database also provides advanced data security that enables you to:
 

@@ -25,7 +25,7 @@ GO
 
 Sp_executesql allows you to execute a T-SQL statement with parameters. Sp_executesql can be used instead of stored procedures when you want to pass a different value to the statement. The T-SQL statement stays the same, and only the parameter values change. Like stored procedures, it's likely that the SQL Server query optimizer will reuse the execution plan.
 
-Sp_executesql takes a T-SQL statement as an argument, which can be either a Unicode constant or a Unicode valuable. For example, both these code examples are valid:
+Sp_executesql takes a T-SQL statement as an argument, which can be either a Unicode constant or a Unicode variable. For example, both these code examples are valid:
 
 ```sql
 DECLARE @sqlstring1 NVARCHAR(1000);

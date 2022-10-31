@@ -36,3 +36,5 @@ Label policies enable admins to:
 - **Link users to custom help pages**. It helps users to understand what the different labels mean and how they should be used.
 
 Once a sensitivity label is applied to an email or document, any configured protection settings for that label are enforced on the content.
+
+To learn more, explore the interactive guides available in the Learn more section of the Summary and resources unit of this module.

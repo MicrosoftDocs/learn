@@ -6,16 +6,16 @@ High availability of SAP workloads on Azure VMs can be analyzed in two different
 
 In the case of NetWeaver-based deployments, this includes:
 
- -  SAP application servers
- -  SAP ASCS/SCS instance
- -  DBMS server
+- SAP application servers
+- SAP ASCS/SCS instance
+- DBMS server
 
 ## High availability capabilities of Azure infrastructure
 
 This includes:
 
- -  Azure VM restart capability (playing an important role in single-VM scenarios)
- -  High availability of compute (VMs), network, and storage, based on:
-    
-     -  Availability Sets
-     -  Availability Zones
+- Azure VM restart capability (playing an important role in single-VM scenarios)
+- High availability of compute (VMs), network, and storage, based on:
+
+  - Availability Sets
+  - Availability Zones

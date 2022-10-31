@@ -6,10 +6,10 @@ As the migration of the SAP workloads in your company to Azure approaches, you n
 
 You will:
 
- -  Examine the SAP workload planning and deployment checklist.
- -  Explore the project preparation and planning phase.
- -  Explore the pilot phase.
- -  Explore the non-production phase.
- -  Explore the production preparation phase.
- -  Explore the Go Live phase.
- -  Explore the post production phase.
+- Examine the SAP workload planning and deployment checklist.
+- Explore the project preparation and planning phase.
+- Explore the pilot phase.
+- Explore the non-production phase.
+- Explore the production preparation phase.
+- Explore the Go Live phase.
+- Explore the post production phase.

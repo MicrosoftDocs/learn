@@ -19,13 +19,15 @@ prerequisites: |
  - A computer running the current release of Windows 10.
  - [Visual Studio 2017](/visualstudio/productinfo/vs2017-system-requirements-vs) installed.
  - Ability to program in C#.
-iconUrl: /learn/achievements/writing-adaptive-cards.svg
+iconUrl: /training/achievements/writing-adaptive-cards.svg
 levels:
 - beginner
 roles:
 - developer
 products:
 - windows
+subjects:
+- data-modeling
 units:
 - learn-windows.writing-adaptive-cards.1-introducing-adaptive-cards
 - learn-windows.writing-adaptive-cards.2-engaging-your-users-with-adaptive-cards

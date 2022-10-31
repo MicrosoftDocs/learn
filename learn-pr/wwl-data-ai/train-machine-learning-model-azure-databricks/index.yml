@@ -17,13 +17,17 @@ abstract: |
   - Use other machine learning frameworks
 prerequisites: |
   Before starting this module, you should have some experience of using Python to train machine learning models using a framework such a Scikit-Learn.
-iconUrl: /learn/achievements/train-a-machine-learning-model-with-azure-databricks.svg
+iconUrl: /training/achievements/train-a-machine-learning-model-with-azure-databricks.svg
 levels:
 - intermediate
 roles:
 - data-scientist
 products:
 - azure-databricks
+subjects:
+- data-lake
+- data-modeling
+- machine-learning
 units:
 - learn.wwl.train-machine-learning-model-azure-databricks.introduction
 - learn.wwl.train-machine-learning-model-azure-databricks.understand-spark-ml

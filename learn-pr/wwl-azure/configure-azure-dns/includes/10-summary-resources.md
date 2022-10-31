@@ -11,5 +11,5 @@ You should now be able to:
 You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
 
  -  [Azure DNS documentation](/azure/dns/)
- -  [Learn - Host your domain on Azure DNS (Sandbox)](/learn/modules/host-domain-azure-dns/)
- -  [Learn - Implement DNS for Windows Server IaaS VMs](/learn/modules/implement-dns-for-windows-server-iaas-virtual-machines/)
+ -  [Learn - Host your domain on Azure DNS (Sandbox)](/training/modules/host-domain-azure-dns/)
+ -  [Learn - Implement DNS for Windows Server IaaS VMs](/training/modules/implement-dns-for-windows-server-iaas-virtual-machines/)

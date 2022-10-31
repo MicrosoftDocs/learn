@@ -27,7 +27,7 @@ prerequisites: |
   - Security-related technologies (firewalls, encryption, multi-factor authentication).
   - Windows PowerShell scripting.
   - Automation and monitoring.
-iconUrl: /learn/achievements/deploy-and-manage-azure-iaas-active-directory-domain-controllers-in-azure.svg
+iconUrl: /training/achievements/deploy-and-manage-azure-iaas-active-directory-domain-controllers-in-azure.svg
 levels:
 - intermediate
 roles:
@@ -40,6 +40,8 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- data-engineering
 units:
 - learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure.introduction
 - learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure.select-option-implement-directory-identity-services

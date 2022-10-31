@@ -2,7 +2,7 @@ When you create the virtual network gateway, you must specify a VPN type. The VP
 
 A VPN type can also depend on the hardware that you are using. Site-to-Site (S2S) configurations require a VPN device. Some VPN devices only support a certain VPN type.
 
-:::image type="content" source="../media/gateway-types-528160ca.png" alt-text="Screenshot of the VPN type selection radio buttons.":::
+:::image type="content" source="../media/gateway-types-528160ca.png" alt-text="Screenshot of the V P N type selection radio buttons.":::
 
 
  -  **Route-based VPNs**. Route-based VPNs use *routes* in the IP forwarding or routing table to direct packets into their corresponding tunnel interfaces. The tunnel interfaces then encrypt or decrypt the packets in and out of the tunnels. The policy (or traffic selector) for Route-based VPNs are configured as any-to-any (or wild cards).

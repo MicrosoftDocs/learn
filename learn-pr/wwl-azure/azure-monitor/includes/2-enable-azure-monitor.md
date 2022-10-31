@@ -35,7 +35,6 @@ Azure Event Hubs is a streaming platform and event ingestion service that can tr
 Within your Azure environment, there are several 'tiers' of monitoring data, and the method of accessing data from each tier varies slightly. Typically, these tiers can be described as:
 
  -  **Application monitoring data** \- Data about the performance and functionality of the code you have written and are running on Azure. Examples of application monitoring data include performance traces, application logs, and user telemetry. Application monitoring data is usually collected in one of the following ways:
-    
      -  By instrumenting your code with an SDK such as the **Application Insights SDK**.
      -  By running a monitoring agent that listens for new application logs on the machine running your application, such as the **Windows Azure Diagnostic Agent** or **Linux Azure Diagnostic Agent**.
  -  **Guest OS monitoring data** \- Data about the operating system on which your application is running. Examples of guest OS monitoring data would be Linux syslog or Windows system events. To collect this type of data, you need to install an agent such as the **Windows Azure Diagnostic Agent** or **Linux Azure Diagnostic Agent**.
@@ -52,7 +51,6 @@ Microsoft Sentinel is now generally available. With Microsoft Sentinel, enterpri
 Some of the features of Microsoft Sentinel are:
 
  -  **More than 100 built-in alert rules**
-    
      -  Sentinel's alert rule wizard to create your own.
      -  Alerts can be triggered by a single event or based on a threshold, or by correlating different datasets or by using built-in machine learning algorithms.
  -  **Jupyter Notebooks** that use a growing collection of hunting queries, exploratory queries, and python libraries.

@@ -22,7 +22,7 @@ prerequisites: |
   - Local installations of [.NET SDK](https://dotnet.microsoft.com/download)
   - [Visual Studio Code](https://code.visualstudio.com)
   - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
-iconUrl: /learn/achievements/improve-developer-experience-of-an-api-with-swagger-documentation.svg
+iconUrl: /training/achievements/improve-developer-experience-of-an-api-with-swagger-documentation.svg
 levels:
 - beginner
 roles:
@@ -33,6 +33,8 @@ products:
 - aspnet-core
 - dotnet
 - dotnet-core
+subjects:
+- development-tools
 units:
 - learn.azure.improve-developer-experience-of-an-api-with-swagger-documentation.introduction
 - learn.azure.improve-developer-experience-of-an-api-with-swagger-documentation.publish-openapi-documentation

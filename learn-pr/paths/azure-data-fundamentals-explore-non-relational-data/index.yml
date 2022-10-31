@@ -13,8 +13,11 @@ prerequisites: |
   None
 summary: |
   Non-relational data is a common way for applications to store and query data without the overhead of a relational schema. In Microsoft Azure, you can use Azure Storage and Azure Cosmos DB to build highly scalable, secure data stores for non-relational data.
-  This learning path helps you prepare for the [Azure Data Fundamentals](/learn/certifications/azure-data-fundamentals?azure-portal=true)
-iconUrl: /learn/achievements/azure-data-fundamentals-explore-non-relational-data.svg
+  This learning path helps you prepare for the [Azure Data Fundamentals](/certifications/azure-data-fundamentals?azure-portal=true)
+video:
+  title: "Microsoft Azure Data Fundamentals: Explore non-relational data in Azure"
+  url: https://www.microsoft.com/videoplayer/embed/RE57fRR
+iconUrl: /training/achievements/azure-data-fundamentals-explore-non-relational-data.svg
 levels:
 - beginner
 roles:
@@ -26,6 +29,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- data-management
 modules:
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure
 - learn.wwl.explore-non-relational-data-stores-azure

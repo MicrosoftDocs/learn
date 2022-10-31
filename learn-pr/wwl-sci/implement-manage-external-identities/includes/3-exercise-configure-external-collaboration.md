@@ -3,10 +3,12 @@
 1.  Sign in to the [Azure portal](https://portal.azure.com/) as a tenant administrator.
 2.  Select **Azure Active Directory**.
 3.  Select **External Identities - External collaboration settings**.
-4.  Under **Guest user access**, review access levels that are available and then select **Guest user access is restricted to properties and memberships of their own directory objects (most restrictive)**.<br>
+4.  Under **Guest user access**, review access levels that are available and then select **Guest user access is restricted to properties and memberships of their own directory objects (most restrictive)**.
 
     > [!NOTE]
-    > Guest users have the same access as members (most inclusive): This option gives guests the same access to Azure AD resources and directory data as member users.<br>\- Guest users have limited access to properties and memberships of directory objects: (Default) This setting blocks guests from certain directory tasks, like enumerating users, groups, or other directory resources. Guests can see membership of all non-hidden groups.<br>\- Guest user access is restricted to properties and memberships of their own directory objects (most restrictive): With this setting, guests can access only their own profiles. Guests are not allowed to see other users' profiles, groups, or group memberships.
+    > Guest users have the same access as members (most inclusive): This option gives guests the same access to Azure AD resources and directory data as member users.
+    > - Guest users have limited access to properties and memberships of directory objects: (Default) This setting blocks guests from certain directory tasks, like enumerating users, groups, or other directory resources. Guests can see membership of all non-hidden groups.
+    > - Guest user access is restricted to properties and memberships of their own directory objects (most restrictive): With this setting, guests can access only their own profiles. Guests are not allowed to see other users' profiles, groups, or group memberships.
 
 5.  Under **Guest invite settings**, mark **Only user assigned to specific admin roles can invite guest users**.
 6.  Inviting guests to collaborate moves the least restrictive option, where anyone can invite guests, to the most restrictive where no one can invite guests.
@@ -14,7 +16,9 @@
 8.  Member users and users assigned to specific admin roles: Set to allow only full members of the organization or members of admin groups to invite guests.
 9.  Only users assigned specific admin roles: Set to allow only those people included in specific admin roles to invite guests.
 10. No one in organization can invite guests: Set to restrict all guest user invites by members.
-11. Enable guest self-service sign up via user flows: Enables or disables self-service sign up for guests via user flows associated with applications in your directory. When disabled, guests are required to be invited to your directory. If Members can invite is set to No and Admins and users in the guest inviter role can invite is set to Yes, users in the Guest Inviter role will still be able to invite guests.:::image type="content" source="../media/guest-invite-settings-5e3ce768.png" alt-text="Screen image displaying guest invite settings with Guests can invite set to No and highlighted.":::
+11. Enable guest self-service sign-up via user flows: Enables or disables self-service sign-up for guests via user flows associated with applications in your directory. When disabled, guests are required to be invited to your directory. If Members can invite is set to No and Admins and users in the guest inviter role can invite is set to Yes, users in the Guest Inviter role will still be able to invite guests.
+
+    :::image type="content" source="../media/guest-invite-settings.png" alt-text="Screenshot of the guest invite settings with the Guests can invite set to No and highlighted.":::
     
 12. Under **Collaboration restrictions**, review the available options and accept the default settings.
 

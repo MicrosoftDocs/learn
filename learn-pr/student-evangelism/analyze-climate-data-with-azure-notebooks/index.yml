@@ -17,7 +17,7 @@ abstract: |
   - Upload, manipulate, and visualize data in a notebook
   - Share notebooks online
 prerequisites: None
-iconUrl: /learn/achievements/student-evangelism/analyze-climate-data-with-azure-notebooks-badge.svg
+iconUrl: /training/achievements/student-evangelism/analyze-climate-data-with-azure-notebooks-badge.svg
 hidden: true
 levels:
 - beginner
@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- development-tools
 units:
 - learn.student-evangelism.analyze-climate-data-with-azure-notebooks.introduction
 - learn.student-evangelism.analyze-climate-data-with-azure-notebooks.create-an-azure-notebook

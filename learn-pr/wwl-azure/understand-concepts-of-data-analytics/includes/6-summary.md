@@ -8,5 +8,5 @@ In this module you've learned how to:
 
 ## Learn more
 
-- [Explore Azure database and analytics services](/learn/modules/azure-database-fundamentals/)
-- [Explore fundamentals of modern data warehousing](/learn/modules/explore-azure-synapse-analytics/)
+- [Explore Azure database and analytics services](/training/modules/azure-database-fundamentals/)
+- [Explore fundamentals of modern data warehousing](/training/modules/explore-azure-synapse-analytics/)

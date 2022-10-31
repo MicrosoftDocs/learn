@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1?azure-portal=true)
   - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
-iconUrl: /learn/achievements/quantum/qsharp-create-first-quantum-development-kit.svg
+iconUrl: /training/achievements/quantum/qsharp-create-first-quantum-development-kit.svg
 levels:
 - beginner
 roles:
@@ -26,6 +26,9 @@ roles:
 products:
 - qdk
 - azure-quantum
+subjects:
+- development-tools
+- cloud-computing
 units:
 - learn.quantum.qsharp-create-first-quantum-development-kit.1-introduction
 - learn.quantum.qsharp-create-first-quantum-development-kit.2-install-quantum-development-kit-code

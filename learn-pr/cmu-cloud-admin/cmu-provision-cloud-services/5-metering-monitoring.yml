@@ -32,17 +32,17 @@ quiz:
         isCorrect: false
         explanation: "Incorrect."
     
-    - content: "Azure Cost Management can be used to monitor costs for which cloud service provider(s)?"
+    - content: "Microsoft Cost Management can be used to monitor costs for which cloud service provider(s)?"
       choices:
       - content: "Microsoft Azure"
         isCorrect: false
-        explanation: "Incorrect. Azure Cost Management can also be used to track costs in AWS."
+        explanation: "Incorrect. Microsoft Cost Management can also be used to track costs in AWS."
       - content: "Amazon AWS"
         isCorrect: false
-        explanation: "Incorrect. Azure Cost Management can also be used to track costs in Azure."
+        explanation: "Incorrect. Microsoft Cost Management can also be used to track costs in Azure."
       - content: "Microsoft Azure and Amazon AWS"
         isCorrect: true
-        explanation: "Correct! Azure Cost Management can track costs in Azure and can be integrated with AWS to track costs there, too."
+        explanation: "Correct! Microsoft Cost Management can track costs in Azure and can be integrated with AWS to track costs there, too."
       - content: "None of the above"
         isCorrect: false
         explanation: "Incorrect."

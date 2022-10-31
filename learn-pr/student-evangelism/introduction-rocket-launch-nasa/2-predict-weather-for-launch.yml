@@ -4,8 +4,8 @@ metadata:
   title: Data to predict weather years in advance
   description: Learn how NASA gets weather data to schedule a rocket launch to work toward.
   ms.date: 04/08/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

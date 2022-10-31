@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/23/2022
+  ms.date: 06/08/2022
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
@@ -32,10 +32,10 @@ quiz:
     choices:
     - content: "Azure Machine Learning and Azure Cosmos DB."
       isCorrect: false
-      explanation: "Incorrect. Azure Machine Learning and Azure Cosmos DB are not used by data analysts."
+      explanation: "Incorrect. Azure Machine Learning and Azure Cosmos DB aren't used by data analysts."
     - content: "Microsoft Excel."
       isCorrect: false
-      explanation: "Incorrect. Microsoft Excel is not used for enterprise-scale analytics solutions."
+      explanation: "Incorrect. Microsoft Excel isn't used for enterprise-scale analytics solutions."
     - content: "Azure Synapse Analytics and Microsoft Power BI"
       isCorrect: true
       explanation: "Correct. Azure Synapse Analytics and Microsoft Power BI are enterprise-scale analytics tools used by data analysts."

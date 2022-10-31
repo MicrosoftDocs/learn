@@ -13,7 +13,7 @@ summary: Learn how to create apps in the most popular Windows development framew
 abstract: |
   In this module, you will:
   - Learn how to write the same app on multiple Windows platforms.
-iconUrl: /learn/achievements/write-your-first-windows10-app.svg
+iconUrl: /training/achievements/write-your-first-windows10-app.svg
 prerequisites: |
  - A computer running the current release of Windows 10. To verify that you're running the latest version, go to Settings > Windows Update.
  - [Visual Studio 2017](/visualstudio/productinfo/vs2017-system-requirements-vs) installed on that computer.
@@ -24,6 +24,8 @@ roles:
 - developer
 products:
 - windows
+subjects:
+- cloud-computing
 units:
 - learn-windows.writing-windows-10-apps.0-intro-to-writing-apps
 - learn-windows.writing-windows-10-apps.1-writing-uwp-app

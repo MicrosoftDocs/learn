@@ -10,7 +10,7 @@ Before you can encrypt your VM disks, you need to:
 
 ### Azure Key Vault
 
-The encryption keys used by ADE can be stored in Azure Key Vault. Azure Key Vault is a tool for securely storing and accessing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, or certificates. This provides highly available and scalable secure storage, as defined in Federal Information Processing Standards (FIPS) 140-2 Level 2 validated Hardware Security Modules (HSMs). Using Key Vault, you keep full control of the keys used to encrypt your data, and you can manage and audit your key usage. 
+The encryption keys ADE uses can be stored in Azure Key Vault. Azure Key Vault is a tool for securely storing and accessing secrets. A secret is anything that to which you want to tightly control access, such as API keys, passwords, or certificates. This provides highly available and scalable secure storage, as defined in Federal Information Processing Standards (FIPS) 140-2 Level 2 validated Hardware Security Modules (HSMs). Using Key Vault, you keep full control of the keys used to encrypt your data, and you can manage and audit your key usage.
 
 > [!NOTE]
 > Azure Disk Encryption requires that your key vault and your VMs are in the same Azure region; this ensures that encryption secrets do not cross regional boundaries.
@@ -38,7 +38,7 @@ az keyvault create \
 
 ### Azure portal
 
-An Azure Key Vault is a resource that can be created in the [Azure portal](https://aka.ms/portal) using the normal resource creation process.
+An Azure Key Vault is a resource that you can create in the [Azure portal](https://aka.ms/portal) using the normal resource creation process.
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
@@ -55,18 +55,18 @@ An Azure Key Vault is a resource that can be created in the [Azure portal](https
     | Resource group | Select a *Resource Group*, or create a new resource group to own the key vault |
     | **Instance details** |
     | Key vault name | Enter a name for your key vault |
-    | Region | Ensure to select the region that the VM resides |
-    | Pricing tier | Standard. You can select either Standard or Premium for the pricing tier. The main difference is that the premium tier allows for hardware encryption-backed keys |
+    | Region | Select the region in which your VM resides |
+    | Pricing tier | **Standard**. You can select either Standard or Premium for the pricing tier. The main difference is that the premium tier allows for hardware encryption-backed keys |
 
     ![Screenshot showing Key vault pane.](../media/3-create-keyvault.png)
 
-1. Select **Next : Access policy**. You must change the Access policies to support Disk Encryption. By default it adds _your_ account to the policy.
+1. Select **Next : Access policy**. You must change the Access policies to support Disk Encryption. By default, it adds *your* account to the policy.
 
 1. On the **Access policy** tab, enter the following value for the setting.
 
     | Setting | Value |
     |---------|---------|
-    | **Enable Access to:**  | Azure Disk Encryption for volume encryption (check). You can remove your account if you like, as it's not necessary if you only intend to use the key vault for disk encryption  |
+    | **Resource access**  | Check the box for **Azure Disk Encryption for volume encryption**. You can remove your account if you like, as it's not necessary if you only intend to use the key vault for disk encryption.  |
 
 1. Select **Review + create**.
 
@@ -79,7 +79,7 @@ Azure needs access to the encryption keys or secrets in your key vault to make t
 There are three policies you can enable:
 
 - **Disk encryption** - Required for Azure Disk encryption.
-- **Deployment** - (Optional) Enables the Microsoft.Compute resource provider to retrieve secrets from this key vault when this key vault is referenced in resource creation, for example, when creating a VM.
+- **Deployment** - (Optional) Enables the Microsoft.Compute resource provider to retrieve secrets from this key vault when this key vault is referenced in resource creation; for example, when creating a VM.
 - **Template deployment** - (Optional) Enables Azure Resource Manager to get secrets from this key vault when this key vault is referenced in a template deployment.
 
 Here's how to enable the disk encryption policy. The other two are similar but use different flags.
@@ -104,15 +104,15 @@ With PowerShell, to enable encryption, run the `Set-AzVmDiskEncryptionExtension`
 ```powershell
 
 Set-AzVmDiskEncryptionExtension `
-	-ResourceGroupName <resource-group> `
+    -ResourceGroupName <resource-group> `
     -VMName <vm-name> `
     -VolumeType [All | OS | Data]
-	-DiskEncryptionKeyVaultId <keyVault.ResourceId> `
-	-DiskEncryptionKeyVaultUrl <keyVault.VaultUri> `
+    -DiskEncryptionKeyVaultId <keyVault.ResourceId> `
+    -DiskEncryptionKeyVaultUrl <keyVault.VaultUri> `
      -SkipVmBackup
 ```
 
-For the Azure CLI, to enable encryption, run the `az vm encryption enable` command and specify the volume you want to encrypt using the `--volume-type [all | os | data]` parameter. Here is an example of encrypting all volumes for a virtual machine.
+For the Azure CLI, to enable encryption, run the `az vm encryption enable` command and specify the volume you want to encrypt using the `--volume-type [all | os | data]` parameter. Here's an example of encrypting all volumes for a virtual machine.
 
 ```azurecli
 az vm encryption enable \
@@ -138,7 +138,7 @@ Both of these commands will return the status of each disk attached to the speci
 
 ## Decrypt drives
 
-To reverse the encryption through PowerShell, run the  `Disable-AzVMDiskEncryption` cmdlet.
+To reverse the encryption through PowerShell, run the `Disable-AzVMDiskEncryption` cmdlet.
 
 ```powershell
 Disable-AzVMDiskEncryption -ResourceGroupName <resource-group> -VMName <vm-name>
@@ -150,7 +150,7 @@ For the Azure CLI, run the `vm encryption disable` command.
 az vm encryption disable --resource-group <resource-group> --name <vm-name>
 ```
 
-These commands disable encryption for volumes of type *all* for the specified VM. Just like the encrypt version, to decide what disks to decrypt, you can specify a `-VolumeType` parameter `[All | OS | Data]`. It defaults to `All`, if not supplied.
+These commands disable encryption for volumes of type *all* for the specified VM. Just like the encrypt version, to decide what disks to decrypt, you can specify a `-VolumeType` parameter `[All | OS | Data]`. It defaults to `All` if not supplied.
 
 > [!WARNING]
 > Disabling data disk encryption on Windows VM when both OS and data disks have been encrypted doesn't work as expected. You must disable encryption on all disks instead.

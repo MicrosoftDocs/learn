@@ -21,7 +21,7 @@ abstract: |
  > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
 prerequisites: |
  - [Visual Studio Code with Python installed](https://aka.ms/LearnOnVSCode?azure-portal=true)
-iconUrl: /learn/achievements/student-evangelism/collect-manipulate-data-python-nasa.svg
+iconUrl: /training/achievements/student-evangelism/collect-manipulate-data-python-nasa.svg
 levels:
 - beginner
 roles:
@@ -29,6 +29,8 @@ roles:
 - data-scientist
 products:
 - vs-code
+subjects:
+- development-tools
 units:
 - learn.student-evangelism.collect-manipulate-data-python-nasa.1-introduction
 - learn.student-evangelism.collect-manipulate-data-python-nasa.2-choose-questions
@@ -39,4 +41,4 @@ units:
 - learn.student-evangelism.collect-manipulate-data-python-nasa.6a-knowledge-check
 - learn.student-evangelism.collect-manipulate-data-python-nasa.7-summary
 badge:
-  uid: learn.student-evangelism.collect-manipulate-data-python-nasa.badge 
+  uid: learn.student-evangelism.collect-manipulate-data-python-nasa.badge

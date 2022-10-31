@@ -21,7 +21,7 @@ abstract:  |
 
 prerequisites: | 
   - [Visual Studio Code, with the Python extension installed](https://aka.ms/LearnOnVSCode)
-iconUrl: /learn/achievements/mixed-reality-for-sports-fans.svg
+iconUrl: /training/achievements/mixed-reality-for-sports-fans.svg
 levels:
 - beginner
 roles:
@@ -29,6 +29,9 @@ roles:
 - student
 products:
 - vs-code
+subjects:
+- mixed-reality
+- machine-learning
 units:
 - learn.sports-machine-learning.mixed-reality-for-sports-fans.introduction
 - learn.sports-machine-learning.mixed-reality-for-sports-fans.mixed-reality-for-sports

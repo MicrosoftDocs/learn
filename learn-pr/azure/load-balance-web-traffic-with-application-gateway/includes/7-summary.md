@@ -2,6 +2,15 @@ You've learned about the load balancing and application routing capabilities of 
 
 You can now take advantage of the advanced routing and load-balancing capabilities that Application Gateway provides in your own environment.
 
+## Clean up resources
+
+The Azure resources that you created in this module can incur ongoing costs. To avoid such costs, delete the resource group that contains all those resources.
+
+1. In the Azure portal, select **Resource groups** on the left menu.
+1. Enter the resource group name in the *Filter for any field* search box.
+1. Select the resource group name.
+1. Select **Delete resource group** in the top menu. Enter the resource group name to confirm, then select **Delete**.
+
 ## Learn more
 
 Visit the following documentation to learn more about Application Gateway.

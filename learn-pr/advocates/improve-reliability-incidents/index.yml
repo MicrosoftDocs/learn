@@ -21,7 +21,7 @@ abstract: |
   - Explore ways to automate your incident tracking for a speedy and consistent response
   - Understand the guidelines around communication that allow incident response to be more efficient
   - Visit some Azure tools that can significantly speed up your remediation times during an incident
-iconUrl: /learn/achievements/improve-reliability-incidents.svg
+iconUrl: /training/achievements/improve-reliability-incidents.svg
 levels:
 - beginner
 roles:
@@ -32,6 +32,9 @@ roles:
 products:
 - azure
 prerequisites: None
+subjects:
+- compliance
+- threat-protection
 units:
 - learn.improve-reliability-incidents.1-introduction
 - learn.improve-reliability-incidents.2-importance

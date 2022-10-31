@@ -21,7 +21,7 @@ abstract:  |
 prerequisites: |
   - An open mind and a willingness to learn about the expectations and responsibilities of managing, mentoring, or collaborating with others in a technology workspace or educational environment.
 
-iconUrl: /learn/achievements/tech-resilience/practice-active-listening.svg
+iconUrl: /training/achievements/tech-resilience/practice-active-listening.svg
 levels:
 - beginner
 roles:
@@ -29,6 +29,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- collaboration
 units:
 - learn.student-evangelism.practice-active-listening.introduction
 - learn.student-evangelism.practice-active-listening.what-is-effective-communication

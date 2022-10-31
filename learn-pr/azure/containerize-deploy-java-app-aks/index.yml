@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - An Azure subscription with access to create, update & remove resources.
   - Local installations of Docker CLI, Git CLI, and the Azure CLI (2.12 or later).
-iconUrl: /learn/achievements/containerize-deploy-java-app-aks.svg
+iconUrl: /training/achievements/containerize-deploy-java-app-aks.svg
 levels:
   - intermediate
 roles:
@@ -31,6 +31,9 @@ products:
 - azure-container-registry
 - azure-kubernetes-service
 
+subjects:
+- development-tools
+- container
 units:
 - learn.containerize-deploy-java-app-aks.introduction
 - learn.containerize-deploy-java-app-aks.setup

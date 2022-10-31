@@ -7,10 +7,14 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+variables:
+  - name: deploymentDefaultLocation
+    value: westus3
+
 stages:
 
 - stage: Lint
-  jobs: 
+  jobs:
   - job: LintCode
     displayName: Lint code
     steps:
@@ -20,25 +24,24 @@ stages:
         displayName: Run Bicep linter
 
 - stage: Validate
-  jobs: 
+  jobs:
   - job: ValidateBicepCode
     displayName: Validate Bicep code
     steps:
-      - task: AzureCLI@2
+      - task: AzureResourceManagerTemplateDeployment@3
         name: RunPreflightValidation
         displayName: Run preflight validation
         inputs:
-          azureSubscription: $(ServiceConnectionName)
-          scriptType: 'bash'
-          scriptLocation: 'inlineScript'
-          inlineScript: |
-            az deployment group validate \
-              --resource-group $(ResourceGroupName) \
-              --template-file deploy/main.bicep \
-              --parameters environmentType=$(EnvironmentType)
+          connectedServiceName: $(ServiceConnectionName)
+          location: $(deploymentDefaultLocation)
+          deploymentMode: Validation
+          resourceGroupName: $(ResourceGroupName)
+          csmFile: deploy/main.bicep
+          overrideParameters: >
+            -environmentType $(EnvironmentType)
 
 - stage: Preview
-  jobs: 
+  jobs:
   - job: PreviewAzureChanges
     displayName: Preview Azure changes
     steps:
@@ -65,16 +68,15 @@ stages:
         deploy:
           steps:
             - checkout: self
-            - task: AzureCLI@2
+
+            - task: AzureResourceManagerTemplateDeployment@3
               name: DeployBicepFile
               displayName: Deploy Bicep file
               inputs:
-                azureSubscription: $(ServiceConnectionName)
-                scriptType: 'bash'
-                scriptLocation: 'inlineScript'
-                inlineScript: |
-                  az deployment group create \
-                    --name $(Build.BuildNumber) \
-                    --resource-group $(ResourceGroupName) \
-                    --template-file deploy/main.bicep \
-                    --parameters environmentType=$(EnvironmentType)
+                connectedServiceName: $(ServiceConnectionName)
+                deploymentName: $(Build.BuildNumber)
+                location: $(deploymentDefaultLocation)
+                resourceGroupName: $(ResourceGroupName)
+                csmFile: deploy/main.bicep
+                overrideParameters: >
+                  -environmentType $(EnvironmentType)

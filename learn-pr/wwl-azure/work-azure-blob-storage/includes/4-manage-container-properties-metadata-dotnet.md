@@ -42,7 +42,7 @@ You can specify metadata as one or more name-value pairs on a blob or container 
 * `SetMetadata`
 * `SetMetadataAsync`
 
-The name of your metadata must conform to the naming conventions for C# identifiers. Metadata names preserve the case with which they were created, but are case-insensitive when set or read. If two or more metadata headers with the same name are submitted for a resource, Blob storage comma-separates and concatenates the two values and return HTTP response code `200 (OK)`.
+The name of your metadata must conform to the naming conventions for C# identifiers. Metadata names preserve the case with which they were created, but are case-insensitive when set or read. If two or more metadata headers with the same name are submitted for a resource, Blob storage comma-separates and concatenates the two values and returns HTTP response code `200 (OK)`.
 
 The following code example sets metadata on a container.
 

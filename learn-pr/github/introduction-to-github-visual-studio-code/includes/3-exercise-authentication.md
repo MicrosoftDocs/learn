@@ -6,7 +6,7 @@ In this exercise, you'll learn how to authenticate to GitHub using Visual Studio
 
    :::image type="content" source="../media/github-pull-requests-and-issues.png" alt-text="Screenshot of the extensions view in Visual Studio Code, showing search results.":::
 
-3. After you install the extension, you can select the gear icon at the bottom of the activity bar and select **Sign in to use GitHub Pull Requests and Issues**.
+3. After you install the extension, you can select the **Account** icon at the bottom of the activity bar and select **Sign in to use GitHub Pull Requests and Issues**.
 
    :::image type="content" source="../media/2-sign-in.png" alt-text="Screenshot of the settings menu in Visual Studio Code, with the option to sign in.":::
 

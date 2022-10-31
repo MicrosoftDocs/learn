@@ -5,8 +5,8 @@ metadata:
   title: 'Manipulate data in pandas: Index objects'
   description: Learn how to manipulate data in pandas by using the Index object.
   ms.date: 04/22/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen

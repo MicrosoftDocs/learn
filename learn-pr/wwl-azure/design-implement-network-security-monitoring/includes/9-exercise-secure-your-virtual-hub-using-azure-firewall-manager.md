@@ -81,7 +81,7 @@ In this task you will create your secured virtual hub using Firewall Manager.
 17. On the **Firewall Manager** page, select **Virtual hubs**.
 18. Select **Hub-01**.
 19. Select **Public IP configuration**.
-20. Note down the public IP address (e.g., **51.143.226.18**), which you will use later.
+20. Note down the public IP address (for example, **51.143.226.18**), which you will use later.
 
 ## Task 3: Connect the hub and spoke virtual networks
 
@@ -108,7 +108,7 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, select the Upload/Download files icon, in the drop-down menu, select Upload and upload the following files **FirewallManager.json** and **FirewallManager.parameters.json** into the Cloud Shell home directory from the source folder **F:\Allfiles\Exercises\M06**.
+2. In the toolbar of the Cloud Shell pane, select the Upload/Download files icon, in the drop-down menu, select Upload and upload the following files **FirewallManager.json** and **FirewallManager.parameters.json** into the Cloud Shell home directory from the source folder **F:\Allfiles\Exercises\M06**. [Azure Resource Manager Templates for creating VMs](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M06)
 
 3. Deploy the following ARM templates to create the VM needed for this exercise:
 
@@ -120,9 +120,9 @@ In this task you will connect the hub and spoke virtual networks. This is common
   
 4. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
 
-5. On the **Overview** page of **Srv-workload-01**, in the right-hand pane, under the **Networking** section, note down the **Private IP address** (e.g., **10.0.1.4**).
+5. On the **Overview** page of **Srv-workload-01**, in the right-hand pane, under the **Networking** section, note down the **Private IP address** (for example, **10.0.1.4**).
 
-6. On the **Overview** page of **Srv-workload-02**, in the right-hand pane, under the **Networking** section, note down the **Private IP address** (e.g., **10.1.1.4**).
+6. On the **Overview** page of **Srv-workload-02**, in the right-hand pane, under the **Networking** section, note down the **Private IP address** (for example, **10.1.1.4**).
 
 
 ## Task 5: Create a firewall policy and secure your hub
@@ -166,8 +166,8 @@ In this task you will first create your firewall policy, then secure your hub. T
 29. For **Protocol**, select **TCP**.
 30. For **Destination Ports**, enter **3389**.
 31. For **Destination Type**, select **IP Address**.
-32. For **Destination**, enter the firewall virtual hub public IP address that you noted down earlier (e.g., **51.143.226.18**).
-33. For **Translated address**, enter the private IP address for **Srv-workload-01** that you noted down earlier (e.g., **10.0.1.4**).
+32. For **Destination**, enter the firewall virtual hub public IP address that you noted down earlier (for example, **51.143.226.18**).
+33. For **Translated address**, enter the private IP address for **Srv-workload-01** that you noted down earlier (for example, **10.0.1.4**).
 34. For **Translated port**, enter **3389**.
 35. Select **Add**.
 36. To add a Network rule so you can connect a remote desktop from Srv-workload-01 to Srv-workload-02 VM, select **Add a rule collection**.
@@ -181,13 +181,13 @@ In this task you will first create your firewall policy, then secure your hub. T
 44. For **Protocol**, select **TCP**.
 45. For **Destination Ports**, enter **3389**.
 46. For **Destination Type**, select **IP Address**.
-47. For **Destination**, enter the private IP address for **Srv-workload-02** that you noted down earlier (e.g., **10.1.1.4**).
+47. For **Destination**, enter the private IP address for **Srv-workload-02** that you noted down earlier (for example, **10.1.1.4**).
 48. Select **Add**.
 
     :::image type="content" source="../media/list-rule-collections-firewall-policy-c926fb02.png" alt-text="List rule collections in the firewall policy":::
 
 
-49. You should now have 3 rule collections listed.
+49. You should now have three rule collections listed.
 50. Select **Review + create**.
 51. Select **Create**.
 
@@ -228,9 +228,9 @@ In this part of the exercise, you will connect a remote desktop to the firewall 
 In this task you will test the application rule to confirm that it works as expected.
 
 1.  Open **Remote Desktop Connection** on your PC.
-2.  In the **Computer** box, enter the **firewall's public IP address** (e.g., **51.143.226.18**).
+2.  In the **Computer** box, enter the **firewall's public IP address** (for example, **51.143.226.18**).
 3.  Select **Show Options**.
-4.  In the **Username** box, enter **MyAdmin**.
+4.  In the **Username** box, enter **TestUser**.
 5.  Select **Connect**. :::image type="content" source="../media/rdp-srv-workload-01-e1ef89db.png" alt-text="RDP connection to srv-workload-01":::
     
 6.  In the **Enter your credentials** dialog box, log into the **Srv-workload-01** server virtual machine, by using the password, **TestPa$$w0rd!**.
@@ -239,7 +239,7 @@ In this task you will test the application rule to confirm that it works as expe
 9.  Open Internet Explorer and select **OK** in the **Set up Internet Explorer 11** dialog box.
 10. Browse to **https://www.microsoft.com**.
 11. In the **Security Alert** dialog box, select **OK**.
-12. Select **Close** on the Internet Explorer security alerts that may pop-up.
+12. Select **Close** on the Internet Explorer security alerts that may pop up.
 13. You should see the Microsoft home page. :::image type="content" source="../media/microsoft-home-page-e7403ee6.png" alt-text="RDP session browsing microsoft.com":::
     
 14. Browse to **https://www.google.com**.
@@ -252,8 +252,8 @@ In this task you will test the application rule to confirm that it works as expe
 In this task you will test the network rule to confirm that it works as expected.
 
 1.  While still logged in to the **Srv-workload-01** RDP session, from this remote computer, open **Remote Desktop Connection**.
-2.  In the **Computer** box, enter the **private IP address** of **Srv-workload-02** (e.g., **10.1.1.4**).
-3.  In the **Enter your credentials** dialog box, log in to the **Srv-workload-02** server by using the username **MyAdmin**, and a password of **TestPa$$w0rd!**.
+2.  In the **Computer** box, enter the **private IP address** of **Srv-workload-02** (for example, **10.1.1.4**).
+3.  In the **Enter your credentials** dialog box, log in to the **Srv-workload-02** server by using the username **TestUser**, and a password of **TestPa$$w0rd!**.
 4.  Select **OK**.
 5.  Select **Yes** on the certificate message. :::image type="content" source="../media/rdp-srv-workload-02-from-srv-workload-01-21239e19.png" alt-text="RDP session from srv-workload-01 to another RDP session on srv-workload-02":::
     

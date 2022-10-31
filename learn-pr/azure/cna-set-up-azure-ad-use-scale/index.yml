@@ -20,7 +20,7 @@ prerequisites: |
   - Basic familiarity with Azure
   - Basic familiarity with Azure AD
   - Basic familiarity with programming concepts
-iconUrl: /learn/achievements/cna-set-up-azure-ad-use-scale.svg
+iconUrl: /training/achievements/cna-set-up-azure-ad-use-scale.svg
 levels:
 - intermediate
 roles:
@@ -31,6 +31,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- cloud-computing
 units:
 - learn.azure.cna-set-up-apps-use-scale.1-introduction
 - learn.azure.cna-set-up-apps-use-scale.2-define-azure-ad

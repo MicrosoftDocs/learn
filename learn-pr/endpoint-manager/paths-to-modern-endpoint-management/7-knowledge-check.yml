@@ -13,15 +13,15 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What are the benefits of protecting and monitoring your organization's endpoints using a modern endpoint management solution?"
+  - content: "What are the benefits of protecting and monitoring your organization's endpoints using a modern endpoint-management solution?"
     choices:
-    - content: "A modern endpoint management solution ensures devices are used for organization access only."
+    - content: "A modern endpoint-management solution ensures devices are used for organization access only."
       isCorrect: false
-      explanation: "A modern endpoint management solution must ensure proper credentials are used, and provide data protection, safeguard the devices and apps, and confirm security rules are in place based on your organizations requirements."
-    - content: "A modern endpoint management solution safeguards your organization, except for device security."
+      explanation: "A modern endpoint-management solution must ensure proper credentials are used, as well as provide data protection, safeguard the devices and apps, and confirm security rules are in place based on your organizations requirements."
+    - content: "A modern endpoint-management solution safeguards your organization, except for device security."
       isCorrect: false
-      explanation: "A modern endpoint management solution must safeguard devices and apps, as well as provide data protection, ensure proper credentials are used, and confirm security rules are in place based on your organizations requirements."
-    - content: "A modern endpoint management solution must provide data protection, ensure proper credentials are used, safeguard the devices and apps, and confirm security rules are in place based on your organizations requirements."
+      explanation: "A modern endpoint-management solution must safeguard devices and apps, as well as provide data protection, ensure proper credentials are used, and confirm security rules are in place based on your organizations requirements."
+    - content: "A modern endpoint-management solution must provide data protection, ensure proper credentials are used, safeguard the devices and apps, and confirm security rules are in place based on your organizations requirements."
       isCorrect: true
       explanation: ""
   - content: "What are the four Mobile Device Management (MDM) migration paths mentioned in this module?"
@@ -34,8 +34,8 @@ quiz:
       explanation: "Devices are only a part of what needs to be managed when determining your organization's future MDM direction."
     - content: "Migration paths: No current end users, existing end users using third-party devices, and existing end users using on-premises devices."
       isCorrect: false
-      explanation: "End users devices, apps, access, and security are part of what needs to be managed when determining your organization's future MDM direction."
-  - content: "If your organization has little to no modern endpoint management tools in use, what is the recommended path to endpoint management as mentioned in this module?"
+      explanation: "End users' devices, apps, access, and security are part of what needs to be managed when determining your organization's future MDM direction."
+  - content: "If your organization has little to no modern endpoint-management tools in use, what is the recommended path to endpoint management as mentioned in this module?"
     choices:
     - content: "Consider moving directly to the Azure cloud."
       isCorrect: false

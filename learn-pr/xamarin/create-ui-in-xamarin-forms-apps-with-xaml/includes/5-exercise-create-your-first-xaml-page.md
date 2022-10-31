@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 This exercise converts the UI definition of an existing Xamarin.Forms app from C# to XAML.
 
 In this exercise, you start with an app that displays an alpha numeric telephone number. The app does a simple translation and dials the number. In the starter solution, the UI is defined entirely in C#, as you've done up to this point. Our goal is to convert this UI to XAML. You'll create a standard Xamarin.Forms app that has a .NET Standard library for the shared UI and logic. The app has platform-specific projects for iOS and Android.

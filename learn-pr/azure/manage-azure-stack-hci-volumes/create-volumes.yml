@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.azure.manage-azure-stack-hci-volumes.create-volumes
+title: Create volumes
+metadata:
+  title: Create volumes
+  description: Create volumes in your Azure Stack HCI proof-of-concept environment.
+  ms.date: 03/30/2022
+  author: mpolicht
+  ms.author: nedelgad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/create-volumes.md)]

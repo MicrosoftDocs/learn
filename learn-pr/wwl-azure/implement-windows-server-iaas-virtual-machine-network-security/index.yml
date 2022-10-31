@@ -29,7 +29,7 @@ prerequisites: |
   - Security-related technologies (firewalls, encryption, multi-factor authentication)
   - Windows PowerShell scripting
   - Automation and monitoring
-iconUrl: /learn/achievements/implement-windows-server-iaas-vm-network-security.svg
+iconUrl: /training/achievements/implement-windows-server-iaas-vm-network-security.svg
 levels:
 - intermediate
 roles:
@@ -41,6 +41,9 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- cloud-security
+- virtual-machine
 units:
 - learn.wwl.implement-windows-server-iaas-vm-network-security.introduction
 - learn.wwl.implement-windows-server-iaas-vm-network-security.groups-windows-iaas-vms

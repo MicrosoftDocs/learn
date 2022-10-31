@@ -5,8 +5,8 @@ metadata:
   title: Index alignment with DataFrames objects
   description: Index alignment with DataFrames objects.
   ms.date: 04/22/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen

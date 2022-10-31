@@ -24,7 +24,7 @@ prerequisites: |
   - Core networking technologies.
   - Windows client operating systems such as Windows 10.
   - Windows PowerShell basics.
-iconUrl: /learn/achievements/implement-group-policy-objects.svg
+iconUrl: /training/achievements/implement-group-policy-objects.svg
 levels:
 - intermediate
 roles:
@@ -33,6 +33,9 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- cloud-computing
+- data-management
 units:
 - learn.wwl.implement-group-policy-objects.introduction
 - learn.wwl.implement-group-policy-objects.define-gpos

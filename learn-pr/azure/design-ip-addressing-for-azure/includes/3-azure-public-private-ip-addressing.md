@@ -1,6 +1,6 @@
 You work for a manufacturing company and are moving resources into Azure. The database server must be accessible for clients in your on-premises network. Public resources, like web servers, must be accessible from the internet. You want to ensure that you plan IP addresses that support both these requirements.
 
-In this unit, you'll explore the constraints and limitations for public and private IP addresses in Azure. You also will look at the capabilities that are available in Azure to reassign IP addresses in your network.
+In this unit, you'll explore the constraints and limitations for public and private IP addresses in Azure. You'll also look at the capabilities that are available in Azure to reassign IP addresses in your network.
 
 ## IP address types
 
@@ -29,28 +29,30 @@ Use a public IP address for public-facing services. A public address can be eith
 For public IP addresses, there are two SKUs to choose from: **Basic** and **Standard**. All public IP addresses created before the introduction of SKUs are Basic SKU public IP addresses. With the introduction of SKUs, you can choose the scale, features, and pricing for load balancing internet traffic. 
 
 Both Basic and Standard SKUs:
-- Have a default inbound originated flow idle timeout of 4 minutes, which is adjustable to up to 30 minutes
-- Have a fixed outbound originated flow idle timeout of 4 minutes
 
+- Have a default inbound originated flow idle timeout of 4 minutes, which is adjustable to up to 30 minutes.
+- Have a fixed outbound originated flow idle timeout of 4 minutes.
 
 #### Basic SKU
 
 Basic public IPs can be assigned by using static or dynamic allocation methods. Basic public IPs can be assigned to any Azure resource that can be assigned a public IP address, including network interfaces, VPN gateways, application gateways, and internet-facing load balancers. 
 
  By default, Basic SKU IP addresses:
- - Are open. Network security groups are recommended but optional for restricting inbound or outbound traffic.
- - Are available for inbound only traffic.
- - Are available when using instance meta data service (IMDS).
- - Don't support Availability Zones.
- - Don't support routing preferences.
+
+- Are open. Network security groups are recommended but optional for restricting inbound or outbound traffic.
+- Are available for inbound only traffic.
+- Are available when using instance meta data service (IMDS).
+- Don't support Availability Zones.
+- Don't support routing preferences.
 
 #### Standard SKU
 
 By default, Standard SKU IP addresses:
+
 - Always use static allocation.
 - Are secure, and thus closed to inbound traffic. You must enable inbound traffic by using a network security group.
-- Are zone-redundant; and optionally zonal (they can be created zonal and guaranteed in a specific availability zone).
-- Can be assigned to network interfaces, Standard public load balancers, application gateways, or VPN gateways. 
+- Are zone-redundant; and optionally zonal (they can be created as zonal and guaranteed in a specific availability zone).
+- Can be assigned to network interfaces, Standard public load balancers, application gateways, or VPN gateways.
 - Can be utilized with the routing preference to enable more granular control of how traffic is routed between Azure and the Internet.
 - Can be used as anycast frontend IPs for cross-region load balancers.
 
@@ -60,15 +62,16 @@ For more information, see [SKU comparison](/azure/load-balancer/skus), Load Bala
 
 In Azure, a *public IP address prefix* is a reserved, static range of public IP addresses. Azure assigns an IP address from a pool of available addresses that's unique to each region in each Azure cloud. When you define a Public IP address prefix, associated public IP addresses are assigned from a pool for an Azure region.  
 
-In a region with Availability Zones, Public IP address prefixes can be created as zone-redundant or associated with a specific availability zone. 
+In a region with Availability Zones, Public IP address prefixes can be created as zone-redundant or associated with a specific availability zone.
 
 The benefit of a public IP address prefix is that you can specify firewall rules for a known range of IP addresses. If your business needs to have datacenters in different regions, you need a different public IP address range for each region. You can assign the addresses from a public IP address prefix to any Azure resource that supports public IP addresses.
 
-You create a public IP address prefix by specifying a name and prefix size. The prefix size is the number of reserved addresses available for use. 
+You can create a public IP address prefix by specifying a name and prefix size. The prefix size is the number of reserved addresses available for use.
+
 - Public IP address prefixes consist of IPv4 or IPv6 addresses. 
 - You can use technology like Azure Traffic Manager to balance region-specific instances. 
 - You can't bring your own public IP addresses from on-premises networks into Azure. 
-- You can't specify addresses when you create a prefix, they're assigned by Azure. After a prefix is created, the IP addresses are fixed in a contiguous range. 
+- You can't specify addresses when you create a prefix; they're assigned by Azure. After a prefix is created, the IP addresses are fixed in a contiguous range. 
 - Public IP addresses can't be moved between regions; all IP addresses are region-specific. 
 
 ## Private IP addresses
@@ -91,9 +94,10 @@ A subnet is a range of IP address within the virtual network. You can divide a v
 
 Consider, for example, CIDR 192.168.10.0/24. "192.168.10.0" is the network address, and "24" indicates that the first 24 bits are part of the network address, leaving the last 8 bits for specific host addresses. The address range of a subnet can't overlap with other subnets in the virtual network or with the on-premises network.
 
-For all subnets in Azure, the first three IP addresses are reserved by default. For protocol conformance, the first and last IP addresses of all subnets also are reserved. In Azure, an internal DHCP service assigns and maintains the lease of IP addresses. The `.1`, `.2`, `.3`, and last IP addresses are not visible or configurable by the Azure customer. These addresses are reserved and used by internal Azure services. 
+For all subnets in Azure, the first three IP addresses are reserved by default. For protocol conformance, the first and last IP addresses of all subnets also are reserved. In Azure, an internal DHCP service assigns and maintains the lease of IP addresses. The `.1`, `.2`, `.3`, and last IP addresses are not visible or configurable by the Azure customer. These addresses are reserved and used by internal Azure services.
 
 In Azure virtual networks, IP addresses can be allocated to the following types of resources:
+
 - Virtual machine network interfaces
 - Load balancers
 - Application gateways

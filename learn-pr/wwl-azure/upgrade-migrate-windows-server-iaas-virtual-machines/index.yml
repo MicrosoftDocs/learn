@@ -27,7 +27,7 @@ prerequisites: |
   - Security-related technologies such as firewalls, encryption, and multi-factor authentication.
   - Windows PowerShell scripting.
   - Automation and monitoring.
-iconUrl: /learn/achievements/upgrade-and-migrate-windows-server-iaas-virtual-machines.svg
+iconUrl: /training/achievements/upgrade-and-migrate-windows-server-iaas-virtual-machines.svg
 levels:
 - intermediate
 roles:
@@ -40,6 +40,8 @@ products:
 - azure-portal
 - azure-storage
 - azure-virtual-machines
+subjects:
+- migration
 units:
 - learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines.introduction
 - learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines.describe-azure-migrate

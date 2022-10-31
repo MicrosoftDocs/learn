@@ -4,7 +4,7 @@ For example, if a virtual machine has a 1,000 Mbps limit, that limit applies whe
 
 Expected outbound throughput and the maximum number of network interfaces depend on the VM size. The throughput limit applies to the virtual machine. Throughput is unaffected by the following factors:
 
- -  **Number of network interfaces**: The bandwidth limit is cumulative of all outbound traffic from the virtual machine.
- -  **Accelerated networking**: Though the feature can help in achieving the published limit, it doesn't change the limit.
- -  **Traffic destination**: All destinations count toward the outbound limit.
- -  **Protocol**: All outbound traffic over all protocols counts towards the limit.
+- **Number of network interfaces**: The bandwidth limit is cumulative of all outbound traffic from the virtual machine.
+- **Accelerated networking**: Though the feature can help in achieving the published limit, it doesn't change the limit.
+- **Traffic destination**: All destinations count toward the outbound limit.
+- **Protocol**: All outbound traffic over all protocols counts towards the limit.

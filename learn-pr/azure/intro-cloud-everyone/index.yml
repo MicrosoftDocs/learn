@@ -18,13 +18,15 @@ abstract: |
   - Learn about Cloud for Everyone
 prerequisites: | 
   - None
-iconUrl: /learn/achievements/intro-cloud-everyone.svg
+iconUrl: /training/achievements/intro-cloud-everyone.svg
 levels:
 - beginner
 roles:
 - developer
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.azure.intro-cloud-everyone.introduction
 - learn.azure.intro-cloud-everyone.diversity-inclusion

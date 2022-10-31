@@ -15,7 +15,7 @@ To accomplish these goals, you:
 
 To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You can get started with Azure for free.
 
-You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
+You don't need an Azure subscription to use Azure DevOps, but here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
 
 If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, select the **Basic** access level.
 
@@ -55,15 +55,15 @@ From the Azure DevOps Demo Generator site, to run the template, follow these ste
 1. To go to your project in Azure DevOps, select **Navigate to project**.
 
 > [!IMPORTANT]
-> In this module, the [Clean up your Azure DevOps environment](/learn/modules/create-multi-stage-pipeline/7-clean-up-environment?azure-portal=true) page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Even if you don't complete this module, be sure to follow the cleanup steps.
+> In this module, the [Clean up your Azure DevOps environment](/training/modules/create-multi-stage-pipeline/7-clean-up-environment?azure-portal=true) page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Even if you don't complete this module, be sure to follow the cleanup steps.
 
 [!include[](../../shared/includes/project-visibility.md)]
 
 ## Move the work item to Doing
 
-Here, you assign a work item to yourself on Azure Boards. You also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each *sprint*, or work iteration.
+Here, you assign a work item to yourself on Azure Boards. You also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each *sprint* or work iteration.
 
-This work assignment gives you a checklist to work from. It gives other team members visibility into what you're working on and how much work is left. The work item also helps enforce work-in-progress (WIP) limits, so that the team doesn't take on too much work at one time.
+This work assignment gives you a checklist to work from. It gives other team members visibility into what you're working on and how much work is left. The work item also helps enforce work-in-progress (WIP) limits so that the team doesn't take on too much work at one time.
 
 Recall that the team settled on the following top issues for the current sprint.
 
@@ -76,13 +76,13 @@ Here you move the first item, **Create a multistage pipeline**, to the **Doing**
 
 To set up the work item:
 
-1. From Azure DevOps, navigate to **Boards**. Then, from the menu, select **Boards**.
+1. From Azure DevOps, go to **Boards**. Then, from the menu, select **Boards**.
 
     :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
-1. In the **Create a multistage pipeline** work item, at the bottom of the card, select the down arrow. Then, assign the work item to yourself.
+1. In the **Create a multistage pipeline** card, select the down arrow. Then, assign the work item to yourself.
 
-    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="Azure Boards showing the location of the down arrow.":::
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="Screenshot of Azure Boards showing the location of the down arrow.":::
 
 1. Move the work item from the **To Do** column to the **Doing** column.
 
@@ -96,7 +96,7 @@ At the end of this module, you'll move the card to the **Done** column, after yo
 
 Here, you create the environments that define the pipeline stages. You create one App Service instance for each stage: _Dev_, _Test_, and _Staging_.
 
-In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you brought up App Service through the Azure portal. Although the portal is a great way to explore what's available on Azure or to do basic tasks, bringing up components such as App Service can be tedious.
+In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you brought up App Service through the Azure portal. Although the portal is a great way to explore what's available on Azure or to do basic tasks, bringing up components such as App Service can be tedious.
 
 In this module, you use the Azure CLI to bring up three App Service instances. You can access the Azure CLI from a terminal or through Visual Studio Code. Here, you access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
 
@@ -199,19 +199,19 @@ To create your App Service instances, follow these steps:
       --name tailspin-space-game-web-dev-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp \
-      --runtime "DOTNET|5.0"
+      --runtime "DOTNET|6.0"
 
     az webapp create \
       --name tailspin-space-game-web-test-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp \
-      --runtime "DOTNET|5.0"
+      --runtime "DOTNET|6.0"
 
     az webapp create \
       --name tailspin-space-game-web-staging-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp \
-      --runtime "DOTNET|5.0"
+      --runtime "DOTNET|6.0"
     ```
 
     For learning purposes, here, you apply the same App Service plan, B1 Basic, to each App Service instance. In practice, you would assign a plan that matches your expected workload.
@@ -246,11 +246,11 @@ To create your App Service instances, follow these steps:
     :::image type="content" source="../../shared/media/app-service-default.png" alt-text="A screenshot of a web browser showing the default home page on Azure App Service.":::
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/learn/modules/create-multi-stage-pipeline/7-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
+> The [Clean up your Azure DevOps environment](/training/modules/create-multi-stage-pipeline/7-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
 
 ## Create pipeline variables in Azure Pipelines
 
-In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you added a variable to your pipeline that stores the name of your web app in App Service. Here you do the same. But this time, you add one variable for each App Service instance that corresponds to a _Dev_, _Test_, or _Staging_ stage in your pipeline.
+In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you added a variable to your pipeline that stores the name of your web app in App Service. Here you do the same. But this time, you add one variable for each App Service instance that corresponds to a _Dev_, _Test_, or _Staging_ stage in your pipeline.
 
 You could hard-code these names in your pipeline configuration, but if you define them as variables, your configuration will be more reusable. Additionally, if the names of your App Service instances change, you can update the variables and trigger your pipeline without modifying your configuration.
 
@@ -276,7 +276,7 @@ To add the variables:
     > [!IMPORTANT]
     > Set the name of the App Service instance, not its host name. In this example, you would enter *tailspin-space-game-web-dev-1234* and not *tailspin-space-game-web-dev-1234.azurewebsites.net*.
 
-1. Near the top of the page, to save your variable to the pipeline, select **Save**.
+1. Near the beginning of the page, select **Save** to save your variable in the pipeline.
 
     Your variable group resembles this one:
 
@@ -284,7 +284,7 @@ To add the variables:
 
 ## Create the dev and test environments
 
-In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you created an environment for the **dev** environment. Here, you'll repeat the process for both the **dev** and **test** environments. Later, you'll set up the **staging** environment, which includes additional criteria.
+In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you created an environment for the **dev** environment. Here, you'll repeat the process for both the **dev** and **test** environments. Later, you'll set up the **staging** environment, which includes additional criteria.
 
 To create the **dev** and **test** environments:
 
@@ -311,10 +311,10 @@ Here, you create a service connection that enables Azure Pipelines to access you
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
 
 1. In Azure DevOps, go to your **Space Game - web - Multistage** project.
-1. From the bottom corner of the page, select **Project settings**.
+1. From the lower-left corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
 1. Select **New service connection**, then select **Azure Resource Manager**, and then select **Next**.
-1. Near the top of the page, **Service principal (automatic)**. Then, select **Next**.
+1. At the beginning of the page, select **Service principal (automatic)**. Then, select **Next**.
 1. Fill in these fields:
 
     | Field                   | Value                                      |

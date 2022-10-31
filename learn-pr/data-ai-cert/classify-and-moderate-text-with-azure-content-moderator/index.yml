@@ -16,7 +16,7 @@ abstract: |
 title: Classify and moderate text with Azure Content Moderator
 summary: In this module, we'll introduce you to Azure Content Moderator and show how to use it for text moderation.
 prerequisites: None
-iconUrl: /learn/achievements/data-ai/classify-and-moderate-text-with-azure-content-moderator.svg
+iconUrl: /training/achievements/data-ai/classify-and-moderate-text-with-azure-content-moderator.svg
 levels: 
 - intermediate
 roles:
@@ -27,6 +27,8 @@ products:
 - azure
 - azure-sdks
 - azure-cognitive-services
+subjects:
+- classification-analysis
 units:
 - learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.introduction
 - learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.overview-of-text-moderation

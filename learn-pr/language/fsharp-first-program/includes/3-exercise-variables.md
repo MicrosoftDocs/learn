@@ -44,7 +44,6 @@ Let's start by creating a project. You create a project from the command line by
 
    You should see the following output:
 
-
    ```output
    Welcome to the calculator program
    The sum is 0
@@ -61,7 +60,7 @@ Part of learning to program in any language is learning how to recognize compila
    ```bash
    dotnet new console --language F# -o Errors
    cd Errors
-   ``` 
+   ```
 
 1. Make sure the `main` method has the following code:
 
@@ -71,7 +70,7 @@ Part of learning to program in any language is learning how to recognize compila
        let aNumber = 0
        printfn "Here's a number %s" aNumber
        0 // return an integer exit code
-   ``` 
+   ```
 
    > [!TIP]
    > Pause for a second, and read the preceding code. Do you think the code will compile? Why or why not?

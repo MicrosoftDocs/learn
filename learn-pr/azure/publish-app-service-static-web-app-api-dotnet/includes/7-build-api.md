@@ -6,7 +6,7 @@ One of the greatest benefits of Azure Static Web Apps is that it hosts your web 
 
 What you don't get is also important.
 
-You don't need a full server for your front-end or back-end to configure and maintain. This is the sweet spot for Azure Static Web Apps: you get the ease of publishing your app and API with minimal configuration and maintenance.
+You don't need to configure and maintain a full server for your front-end or back-end. This is the sweet spot for Azure Static Web Apps: you get the ease of publishing your app and API with minimal configuration and maintenance.
 
 Azure Functions serves your route endpoints, doesn't require a full back-end server to configure or maintain, and provides automatic scaling out and scaling in based on demand. This makes Azure Functions a great API partner for your shopping list web app that serves static assets.
 
@@ -40,7 +40,7 @@ After you make the changes, you'll want to see them running before deciding to m
 
 ### Configure communication between your web app and API
 
-When you run your API locally, it runs on port 7071 by default. Your web app runs on a different local port. When your web app tries to make an HTTP request from its port to your API's port 7071, this is known as a Cross-Origin Resource Sharing (CORS). Your browser will prevent the HTTP request from completing unless the API server allows the request to proceed.
+When you run your API locally, it runs on port 7071 by default. Your web app runs on a different local port. When your web app tries to make an HTTP request from its port to your API's port 7071, this is known as Cross-Origin Resource Sharing (CORS). Your browser will prevent the HTTP request from completing unless the API server allows the request to proceed.
 
 You won't have to worry about CORS when you publish to Azure Static Web Apps. That's because Azure Static Web Apps automatically configures your app so it can communicate with your API on Azure using a reverse proxy. A reverse proxy is what allows your web app and API to appear to come from the same web domain. So you only have to set up CORS when you run locally.
 

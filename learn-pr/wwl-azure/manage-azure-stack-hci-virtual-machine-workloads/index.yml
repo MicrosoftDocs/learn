@@ -22,7 +22,7 @@ prerequisites: |
   - Familiarity with the key features of Windows Server
   - Familiarity with the concept of virtualization
   - Familiarity with the architecture, core capabilities, and primary use cases of Azure Stack HCI
-iconUrl: /learn/achievements/manage-azure-stack-hci-virtual-machine-workloads.svg
+iconUrl: /training/achievements/manage-azure-stack-hci-virtual-machine-workloads.svg
 levels:
 - intermediate
 roles:
@@ -33,6 +33,8 @@ roles:
 - technology-manager
 products:
 - azure
+subjects:
+- virtual-machine
 units:
 - learn.wwl.manage-azure-stack-hci-virtual-machine-workloads.introduction
 - learn.wwl.manage-azure-stack-hci-virtual-machine-workloads.vms

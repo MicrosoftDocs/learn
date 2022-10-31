@@ -20,7 +20,7 @@ Common kinds of step in an Azure Machine Learning pipeline include:
 
 > **Note**: For a full list of supported step types, see [azure.pipeline.steps package documentation](https://aka.ms/AA70rrh).
 
-To create a pipeline, you must first define each step and then create a pipeline that includes the steps. The specific configuration of each step depends on the step type. For example the following code defines two **PythonScriptStep** steps to prepare data, and then train a model.
+To create a pipeline, you must first define each step, and then create a pipeline that includes the steps. The specific configuration of each step depends on the step type. For example, the following code defines two **PythonScriptStep** steps to prepare data, and then train a model.
 
 ```python
 from azureml.pipeline.steps import PythonScriptStep

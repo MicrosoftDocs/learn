@@ -1,8 +1,8 @@
 After you create data loss prevention policies, administrators need to verify and monitor the performance of their DLP policies in production. This is an important recurring task for an organization to ensure they stay compliant with policies while minimizing impact on user productivity. 
 
-## Data loss prevention reports in the Microsoft 365 compliance center
+## Data loss prevention reports in the Microsoft Purview compliance portal
 
-The Microsoft 365 compliance center provides the following DLP reports that can be accessed in reports under organization data:
+The Microsoft Purview compliance portal provides the following DLP reports that can be accessed in reports under organization data:
 
 - DLP Policy Matches
 
@@ -25,7 +25,7 @@ The following table provides an overview for each DLP report.
 
 Reports provide a quick overview of DLP events and can inform about an organization's trends.  DLP policies can be configured to trigger an alert when the conditions are met. Use the incident report to investigate events.
 
-The DLP alert management dashboard in the Microsoft 365 Compliance center can be used to show alerts of the following workloads:
+The DLP alert management dashboard in the Microsoft Purview compliance portal can be used to show alerts of the following workloads:
 
 - Exchange
 
@@ -55,5 +55,5 @@ You can also view a report for DLP alerts in the Defender for Cloud Apps Dashboa
 
 [ ![Alerts screen example.](../media/alerts-report-microsoft-cloud-app-security.png) ](../media/alerts-report-microsoft-cloud-app-security.png#lightbox)
 
-Use the Defender for Cloud Apps DLP alerts report to view an overview of Defender for Cloud Apps policy alerts. Since policies created on the Defender for Cloud Apps side have different options and scopes compared to Defender for Cloud Apps policies created in the Compliance center, it's prudent to be aware of alerts in both dashboards.
+Use the Defender for Cloud Apps DLP alerts report to view an overview of Defender for Cloud Apps policy alerts. Since policies created on the Defender for Cloud Apps side have different options and scopes compared to Defender for Cloud Apps policies created in the Microsoft Purview compliance portal, it's prudent to be aware of alerts in both dashboards.
 

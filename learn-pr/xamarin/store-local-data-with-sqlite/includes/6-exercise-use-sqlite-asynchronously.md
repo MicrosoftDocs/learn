@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In this unit, you're going to convert your person repository application from the synchronous SQLite.NET API to the asynchronous version. This way, your application will always be responsive no matter how many queries you make to your database.
 
 ## Create an Async connection

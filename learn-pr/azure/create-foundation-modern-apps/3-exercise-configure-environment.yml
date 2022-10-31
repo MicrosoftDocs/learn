@@ -6,8 +6,8 @@ metadata:
   title: Configure your development environment with Visual Studio Code
   description: Step-by-step description of the development environment needed to complete the module.
   ms.date: 3/17/2021  
-  author: amthomas46
-  ms.author: antho
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
   ms.topic: interactive-tutorial
   ms.prod: learning-azure  
 durationInMinutes: 10

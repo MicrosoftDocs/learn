@@ -10,8 +10,7 @@ Onboarding your GCP account into Microsoft Defender for Cloud, integrates GCP Se
 
 In the screenshot below, you can see GCP projects displayed in Defender for Cloud's overview dashboard.
 
->[!div class="mx-imgBorder"]
->![gcp account in overview.](../media/gcp-account-overview.png)
+:::image type="content" source="../media/gcp-account-overview.png" alt-text="Screenshot of the G C P project overview settings.":::
 
 ## Follow the steps below to create your GCP cloud connector.
 
@@ -23,7 +22,7 @@ For all the GCP projects in your organization, you must also:
 
 - Enable Security Health Analytics using these instructions from the GCP documentation.
 
-- Verify that there is data flowing to the Security Command Center.
+- Verify that there's data flowing to the Security Command Center.
 
 The instructions for connecting your GCP environment for security configuration follow Google's recommendations for consuming security configuration recommendations. The integration uses Google Security Command Center and will consume more resources that might impact your billing.
 
@@ -101,6 +100,4 @@ When the connector is successfully created and GCP Security Command Center has b
 
 - Security recommendations for your GCP resources will appear in the Security Center portal and the regulatory compliance dashboard 5-10 minutes after onboard completes:
 
->[!div class="mx-imgBorder"]
->![gcp resources in recommendations.](../media/gcp-resources-recommendations.png)
-
+:::image type="content" source="../media/gcp-resources-recommendations.png" alt-text="Screenshot of the G C P resources in recommendations":::

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.use-shared-resources.exercise-create-and-apply-a-style
+title: "Exercise: Create and apply a style"
+metadata:
+  unitType: exercise
+  title: "Exercise: Create and apply a style"
+  description: "Create and use styles, and apply them"
+  ms.date: 04/29/2022
+  author: codemillmatt  
+  ms.author: masoucou 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-exercise-create-and-apply-a-style.md)]

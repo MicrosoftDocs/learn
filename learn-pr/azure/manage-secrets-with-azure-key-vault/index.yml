@@ -17,7 +17,7 @@ abstract:  |
   - Enable secure access to the vault from an Azure App Service web app with managed identities for Azure resources
   - Implement a web application that retrieves secrets from the vault
 prerequisites: None
-iconUrl: /learn/achievements/manage-secrets-with-azure-key-vault.svg
+iconUrl: /training/achievements/manage-secrets-with-azure-key-vault.svg
 levels:
 - beginner
 roles:
@@ -27,6 +27,8 @@ products:
 - azure
 - azure-key-vault
 - azure-app-service
+subjects:
+- cloud-computing
 units:
 - learn.manage-secrets-with-azure-key-vault.1-introduction
 - learn.manage-secrets-with-azure-key-vault.2-what-is-key-vault
