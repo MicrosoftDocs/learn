@@ -34,8 +34,8 @@ In this module, you learned how to evaluate and design an effective application 
 
 - Implement [message-based communication workflows with Azure Service Bus (sandbox)](/training/modules/implement-message-workflows-with-service-bus/).
 
-- Practice [creating an Azure Service Bus queue and topic](/training/modules/implement-message-workflows-with-service-bus/3-exercise-implement-a-service-bus-topic-and-queue).
+- Practice [creating an Azure Service Bus queue and topic (sandbox)](/training/modules/implement-message-workflows-with-service-bus/3-exercise-implement-a-service-bus-topic-and-queue).
 
-- Deploy [Azure infrastructure by using JSON ARM templates](/training/modules/create-azure-resource-manager-template-vs-code/).
+- Deploy [Azure infrastructure by using JSON ARM templates (sandbox)](/training/modules/create-azure-resource-manager-template-vs-code/).
 
 - Communicate [between applications with Azure Queue Storage (sandbox)](/training/modules/communicate-between-apps-with-azure-queue-storage/).
