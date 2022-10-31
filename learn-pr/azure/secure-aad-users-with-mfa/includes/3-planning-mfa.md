@@ -24,7 +24,7 @@ When you turn on Azure AD MFA, you can choose the authentication methods you wan
 | **Call to a phone** | Azure can call a supplied phone number. The user then approves the authentication using the keypad. This is a preferred backup method. |
 | **Text message to a phone** | A text message with a verification code can be sent to a mobile phone. The user then enters the verification code into the sign-in interface to complete the authentication. |
 
-Administrators can enable one or more of the options above, then users can opt-in to each support authentication method they want to use.
+Administrators can enable one or more of the options above, then users can opt in to each support authentication method they want to use.
 
 ## Selecting an authentication method
 
