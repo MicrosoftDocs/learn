@@ -22,7 +22,7 @@ DNS service IP address | Must be in the Kubernetes service subnet, but can't be 
 
 For this exercise, we'll create a virtual network and subnet. In a real world environment, you may have a team in your IT department responsible for managing networks and they may create these resources for you.
 
-First, run the following command in Azure Cloud Shell to log in to your Azure account:
+First, run the following command in Azure Cloud Shell to sign in to your Azure account:
 
 ```bash
 az login
