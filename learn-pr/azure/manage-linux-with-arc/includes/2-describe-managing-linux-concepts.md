@@ -19,11 +19,7 @@ The following Linux distributions are officially supported for the Azure Connect
 - Amazon Linux 2
 - Oracle Linux 7 and 8
 
-## Azure Automation
-
-Linux machines onboarded to Azure Arc can use Azure Automation for frequent, time-consuming tasks.
-
-### Change tracking and inventory
+## Change tracking and inventory
 
 You can track changes in your Azure Arc Linux machines to help you pinpoint operational and environmental issues. Items that are tracked by the Change Tracking and Inventory feature include:
 
@@ -31,13 +27,13 @@ You can track changes in your Azure Arc Linux machines to help you pinpoint oper
 - Linux files
 - Linux daemons
 
-### Update Management
+## Update Management
 
 Your onboarded Linux machines can use Update Management to manage operating system updates. You can quickly assess the status of available updates and manage the process of installing required updates for your Linux machines. Update Management integrates with Azure Monitor Logs to store update assessments and update deployment results as log data.
 
 ## Security
 
-Arc-enabled Linux machines enjoy the same security features as all Azure resources, including Microsoft Defender for Cloud and Azure Monitor agent.
+Arc-enabled Linux machines enjoy the same security features as all Azure resources, including Microsoft Defender for Cloud and Microsoft Sentinel.
 
 ### Microsoft Defender for Cloud
 
@@ -47,7 +43,21 @@ Microsoft Defender for Cloud is a Cloud Security Posture Management (CSPM) and C
 - Secures your workloads with step-by-step actions that protect your workloads from known security risks.
 - Provides alerts to defend your workloads in real-time so you can react immediately and prevent security events from developing.
 
-### Azure Monitor Agent (AMA)
+### Microsoft Sentinel
+
+Microsoft Sentinel is an integrated SIEM (scalable, cloud-native, security information, and event management) and a SOAR (security orchestration, automation, and response) solution. Microsoft Sentinel delivers threat intelligence, providing a single solution for attack detection, proactive hunting, and threat response. It provides a birds-eye view across the enterprise, alleviating the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
+
+The benefits of Microsoft Sentinel include:
+
+- Collect data at cloud scale across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds.
+- Detect previously undetected threats and minimize false positives using Microsoft's analytics and unparalleled threat intelligence.
+- Investigate threats with artificial intelligence and hunt for suspicious activities at scale, tapping into years of cyber security work at Microsoft.
+- Respond to incidents rapidly with built-in orchestration and automation of common tasks.
+
+Microsoft Sentinel comes with a number of connectors for Microsoft solutions, available out of the box and providing real-time integration. For physical and virtual Linux machines, you can install the Log Analytics agent that collects the logs and forwards them to Microsoft Sentinel.
+
+
+## Monitoring
 
 Azure Monitor Agent (AMA) collects monitoring data from the guest operating system of Azure and hybrid virtual machines and delivers it to Azure Monitor for use by features, insights, and other services, such as Microsoft Defender for Cloud. AMA uses data collection rules that let you define the types of data you want each agent you install to collect. This allows you to create unique, scoped configurations for subsets of your Linux machines. These rules are independent of the workspace and the virtual machine, which means you can define a rule once and reuse it across machines and environments.
 
