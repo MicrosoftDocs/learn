@@ -10,41 +10,6 @@ Azure Database for PostgreSQL is available in two deployment modes, with each de
 
 **Single Server** deployments are suitable for most applications that don’t require high levels of customization or low latency performance across multiple regions. Single server deployments can be scaled down to only cost a few dollars per month. Workloads could include servers used for development and enterprise applications.
 
-:::row:::
-:::column span="3":::
-
-**Azure Cosmos DB for PostgreSQL (formerly Azure Database for PostgreSQL - Hyperscale)** delivers scale across multiple machines. It serves applications that require greater scale and performance, generally workloads that are approaching--or already exceed--100 GB of data.
-
-The Azure layer gives each deployment option four noticeable benefits:
-
-* High availability, with an SLA of up to 99.99% uptime
-* AI-powered performance optimization
-* Automated hardware and software maintenance
-* Advanced data and server security
-
-They're constantly working behind the scenes, automated actions that can help your business reduce administration costs, and complexity.
-
-:::column-end:::
-:::column span="2":::
-
-> [!NOTE]
-> **Added benefits:**
->
-> * High availability
-> * Data protection
-> * Automated maintenance
-> * Predictable performance and pricing
-> * Elastic scaling within seconds
-> * Enterprise grade security
-> * Best-in-class compliance
-> * Monitoring and automation
-> * Industry-leading support experience
->
-> Visit [Azure Cosmos DB for PostgreSQL](../../../paths/azure-cosmos-db-for-postgresql/index.yml), to follow the learning path for Azure Cosmos DB for PostgreSQL.
-
-:::column-end:::
-:::row-end:::
-
 ### Data protection and security benefits
 
 Data is automatically encrypted and backed up. Options such as Advanced Threat Protection make it simple to address potential threats without the need to be a security expert or manage advanced security monitoring systems.
