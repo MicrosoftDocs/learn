@@ -10,9 +10,9 @@ metadata:
   ms.prod: learning-azure
 title: Extract data from forms by using Form Recognizer
 prerequisites: |
-  - None
+  *   None
 summary: ""
-iconUrl: /learn/achievements/extract-data-from-forms-use-form-recognizer.svg
+iconUrl: /training/achievements/extract-data-from-forms-use-form-recognizer.svg
 levels:
 - intermediate
 roles:
