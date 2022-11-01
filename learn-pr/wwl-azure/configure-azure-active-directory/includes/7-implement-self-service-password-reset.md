@@ -4,8 +4,6 @@ Many helpdesk calls are requests to reset passwords for users. The Azure Active 
 
 Examine the following characteristics and requirements of the SSPR feature:
 
-- All Azure AD editions support SSPR.
-
 - SSPR requires an Azure AD account with Global Administrator privileges to manage SSPR options. This account can always reset their own passwords, no matter what options are configured.
 
 - SSPR uses a security group to limit the users who have SSPR privileges.
