@@ -1,12 +1,6 @@
 Now we'll discuss some scenarios that illustrate when it's appropriate to use Azure API Management. Using the food delivery service as an example, we'll investigate API lifecycle management with respect to standardizing APIs, centralizing API management and exposure, and enhancing API security. Here are the criteria we'll use to help you decide whether Azure API Management is a suitable choice for managing and publishing your organization's inventory of APIs:
 
-- Number of APIs
-- Rate of API changes
-- API administration load
-
 ## Decision criteria
-
-Let's review the decision criteria in more detail.
 
 | **Criteria** | **Analysis**|
 | --- | --- |
@@ -17,7 +11,7 @@ Let's review the decision criteria in more detail.
 ## Apply the criteria
 
 Azure API Management is the correct choice for managing APIs through their lifecycles when you have a large API deployment that changes frequently and requires significant policy overhead. However, these criteria don't apply equally to all use cases. Let's consider how these criteria apply to our scenario's use cases.
-f
+
 ### Should you use Azure API Management to standardize APIs?
 
 By enabling  management of multiple APIs from a single administrative interface, Azure API Management makes it easier to create consistency across multiple APIs. You can standardize many API features, including:

@@ -82,11 +82,11 @@ One of the biggest problems with having multiple published APIs is that each API
 
 Azure API Management solves the API policy problem by enabling you to set policies for all your APIs in a single place, which is the Azure API Management administration interface. With Azure API Management, you can set policies in many categories. A partial list includes:
 
-- **Access restriction**. These policies determine when an API request is allowed through the gateway. For example, there are policies that enforce rate limits and usage quotas, filter caller IPs, and check for a valid JSON Web Token (JWT).
-- **Authentication**. These policies authenticate API calls. For example, authenticate an API call by using Basic authentication, a client certificate, or a managed identity.
-- **Caching**. These policies enable you to improve API performance by storing and retrieving responses in the cache.
-- **Validation**. These policies validate API calls by comparing certain parameters to what's in your API specification. For example, validate the request or response body, the request header parameters, and the response headers.
+- **Access restriction**. These policies determine when an API request is allowed through the gateway. For example, enforce rate limits and usage quotas, filter caller IPs, and check for a valid JSON Web Token (JWT).
+- **Authentication**. Authenticate API calls, for example, by using Basic authentication, a client certificate, or a managed identity.
+- **Caching**. mprove API performance by storIing and retrieving responses in the cache.
+- **Validation**. Validate API calls by comparing certain parameters to what's in your API specification. For example, validate the request or response body, the request header parameters, and the response headers.
 
-Flexibly combine your policies in *policy definitions*, which are XML documents that consist of a series of statements, each of which represents a policy and its parameters.Policy definitions let you configure separate policies at different stages of the API request-response pipeline:
+Flexibly combine your policies in *policy definitions*, which are XML documents that consist of a series of statements, each of which represents a policy and its parameters. Policy definitions let you configure separate policies at different stages of the API request-response pipeline:
 
-:::image type="content" source="../media/2-what-is-azure-api-management-policies.png" alt-text="A consumer's API request enters the Azure API Management gateway where it passes through inbound policies before being sent to the backend server. The API response then passes though the gateway's outbound policies before being sent to the originating API consumer." lightbox="../media/2-what-is-azure-api-management-policies.png":::
+:::image type="content" source="../media/2-what-is-azure-api-management-policies.png" alt-text="A consumer's API request enters the Azure API Management gateway where it passes through inbound policies before being sent to the backend server. The API response then passes through the gateway's outbound policies before being sent to the originating API consumer." lightbox="../media/2-what-is-azure-api-management-policies.png":::

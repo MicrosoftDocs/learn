@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
   ms.custom: engagement-fy23
 title: Introduction to Azure API Management
-summary: "Describe how API Management's gateway, administration  interface, and developer portal enable developers to use your APIs. Determine the types of deployments for which Azure API Management is a good API lifecycle management solution. "
+summary: "Learn how Azure API Management's gateway, administration  interface, and developer portal enable developers to use your APIs. Determine the types of deployments for which Azure API Management is a good API lifecycle management solution. "
 abstract: |
   By the end of this module, you'll be able to:
     - Evaluate whether Azure API Management is appropriate for managing and exposing your organization's APIs.
