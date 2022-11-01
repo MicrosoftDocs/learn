@@ -14,10 +14,14 @@ Azure Database for PostgreSQL is available in two deployment modes, with each de
 
 Data is automatically encrypted and backed up. Options such as Advanced Threat Protection make it simple to address potential threats without the need to be a security expert or manage advanced security monitoring systems.
 
-Using our example of a contactless payment app, having a simple and reliable way to back up your database means you can focus on developing your app. Also, Advanced Threat Protection means it will be easier for you to mitigate threats if they arise during a trial, without having to rely on expert security personnel.
+The example of a contactless payment app having a simple and reliable way to back up your database means you can focus on developing your app. Also, Advanced Threat Protection means it will be easier for you to mitigate threats if they arise during a trial, without having to rely on expert security personnel.
 
 ### Lower administrative complexity and cost
 
-For many businesses, the decision to transition to a cloud service is as much about offloading the complexity of administration as it is about cost. Azure helps to lower administrative costs in three key ways. First, Azure automates maintenance and updates for the underlying hardware, operating system, and the database engine (minor versions). Second, Azure provides automated management and analytics for monitoring of large-scale deployments. Together, these capabilities can allow for significant cost savings, especially when many databases need to be supported.
+For many businesses, the decision to transition to a cloud service is as much about offloading the complexity of administration as it is about cost. Azure helps to lower administrative costs in three key ways.
+
+- Azure automates maintenance and updates for the underlying hardware, operating system, and the database engine (minor versions).
+- Azure provides automated management and analytics for monitoring of large-scale deployments.
+- Together these capabilities can allow for significant cost savings, especially when many databases need to be supported.
 
 Using PostgreSQL on Azure for your Woodgrove Bank app would help you to structure your mobile app to accommodate its future growth. Once your app has proven its success, you can focus on building new features, and less on day-to-day operations.
