@@ -37,7 +37,7 @@ If you're an API provider, you still have a great deal of work to do after your 
 
 Perform all these tasks and more by using the Azure API Management administration interface in the form of Azure portal pages or tools such as Azure CLI or Azure PowerShell. Besides enabling you to set API policies (as you learned in the previous unit), the administration interface enables you to perform the following tasks:
 
-- **Define and import API specs**. You can import an OpenAPI specification, a REST API, a Simple Object Access Protocol (SOAP) API (which you can optionally convert to REST), a WebSocket API, or a GraphQL API. You can also create an API by importing instances of the following Azure services: Web App, Function App, Logic App, and Service Fabric. You can also create a blank API and define it manually.
+- **Define and import API specs**. You can import an OpenAPI specification, a REST API, a Simple Object Access Protocol (SOAP) API (which you can optionally convert to REST), a WebSocket API, or a GraphQL API. You can also create an API by importing instances of the following Azure services: Web App, Container App, Function App, Logic App, and Service Fabric. You can also create a blank API and define it manually.
 - **Manage users and groups**. In Azure API Management:
   - A *user* is a developer account; that is, it's an account for an API consumer. You can add users manually or invite users to create an account, but most users create their own accounts by using the developer portal.
   - A *group* is a collection of related users. You can associate a group with a particular API product, and then each user in that group will have access to the product in the developer portal.
