@@ -27,7 +27,7 @@ Activity logging is an incredibly important source of information about what's h
 - Who attached a disk to this virtual machine?
 - When was this machine shut down?
 - Who changed the load balancer configuration?
-- Why did the autoscale operation on my virtual machine scale set fail?
+- Why did the autoscale operation on my Virtual Machine Scale Set fail?
 
 Using Activity Log to answer these types of questions will help you troubleshoot issues, track changes, and provide auditing of what's happening in your Azure environment. Activity Log data is only retained for 90 days, although you can archive your data to a storage account, or you can send your data to Azure Log Analytics for longer retention and further analysis.
 
