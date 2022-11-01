@@ -6,7 +6,7 @@ In this unit, you'll learn how to customize an image, and then generalize this i
 
 ## Generalize a Windows virtual machine
 
-If you're building a Windows image, you use the **Sysprep** tool to prepare a virtual machine for generalization. Sysprep removes server-specific information from the image, such as the host name, user sign-in information, and logs. Sysprep also removes any machine-specific identifiers that Windows uses internally.
+If you're building a Windows image, you'll use the **Sysprep** tool to prepare a virtual machine for generalization. Sysprep removes server-specific information from the image, such as the host name, user sign-in information, and logs. Sysprep also removes any machine-specific identifiers that Windows uses internally.
 
 > [!IMPORTANT]
 > Running Sysprep is a destructive process, and you can't easily reverse its effects. Back up your virtual machine first.
@@ -43,7 +43,7 @@ az vm deallocate \
     --name <virtual machine name>
 ```
 
-You can then use the following command for PowerShell or the Azure CLI to generalize the VM.
+You can then use the following commands for PowerShell or the Azure CLI to generalize the VM:
 
 ```powershell
 Set-AzVM -ResourceGroupName <resource group> `
@@ -59,7 +59,7 @@ az vm generalize \
 
 ## Generalize a Linux virtual machine
 
-If you're building a Linux image, you use the **waagent** tool to prepare a virtual machine for generalization. The waagent tool performs tasks like deleting the most recently created user account, removing public SSH keys, resetting the host name and other machine-specific details, and cleaning log files.
+If you're building a Linux image, you'll use the **waagent** tool to prepare a virtual machine for generalization. The waagent tool performs tasks like deleting the most recently created user account, removing public SSH keys, resetting the host name and other machine-specific details, and cleaning log files.
 
 To generalize a Linux virtual machine, sign in to the machine, and run the following command:
 

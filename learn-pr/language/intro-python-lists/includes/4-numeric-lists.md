@@ -2,7 +2,7 @@ So far, you've been using planet names in a list. You might wonder about working
 
 Did you know that gravity on other planets is stronger or weaker depending on the planet's mass or size? Gravity is often measured in *G*, where the gravity on earth is 1 and other planets are measured [relative to Earth](https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_ratio.html). 
 
-The gravity on the moon is 0.166 G, which is why astronauts can jump so high on the moon. The gravity on Neptune is 1.12 G, so jumping is harder. Even Olympic athletes would struggle to jump over 2 meters on Neptune.
+The gravity on the moon is 0.166 G, which is why astronauts can jump so high on the moon. The gravity on Neptune is 1.12 G, so jumping is harder. Even great athletes would struggle to jump over 2 meters on Neptune.
 
 ![Neptune as seen from Voyager 2 from 4.4 million miles, image credit NASA.](../media/neptune-nasa.jpg)
 

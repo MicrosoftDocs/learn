@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/22/2022
+  ms.date: 10/17/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "You have an Azure Cosmos DB core (SQL) account and an Azure Synapse Analytics workspace. What must you do first to enable HTAP integration with Azure Synapse Analytics?"
+  - content: "You have an Azure Cosmos DB for NoSQL account and an Azure Synapse Analytics workspace. What must you do first to enable HTAP integration with Azure Synapse Analytics?"
     choices:
     - content: "Configure global replication in Azure Cosmos DB."
       isCorrect: false
@@ -36,18 +36,18 @@ quiz:
     - content: "Add an item to the container."
       isCorrect: false
       explanation: "Incorrect. Adding an item to a container does not enable Synapse Link integration."
-  - content: "You plan to use a Spark pool in Azure Synapse Analytics to query an existing analytical store in Cosmos DB. What must you do?"
+  - content: "You plan to use a Spark pool in Azure Synapse Analytics to query an existing analytical store in Azure Cosmos DB. What must you do?"
     choices:
-    - content: "Create a linked service for the Cosmos DB database where the analytical store enabled container is defined."
+    - content: "Create a linked service for the Azure Cosmos DB database where the analytical store enabled container is defined."
       isCorrect: true
-      explanation: "Correct. A linked service that connects to the Cosmos DB containing the analytical store enabled container is required."
+      explanation: "Correct. A linked service that connects to the Azure Cosmos DB account containing the analytical store enabled container is required."
     - content: "Disable automatic pausing for the Spark pool in Azure Synapse Analytics."
       isCorrect: false
-      explanation: "Incorrect. You do not need to disable automatic pausing for a Spark pool to be used with Synapse Link for Cosmos DB."
+      explanation: "Incorrect. You do not need to disable automatic pausing for a Spark pool to be used with Synapse Link for Azure Cosmos DB."
     - content: "Install the Azure Cosmos DB SDK for Python package in the Spark pool."
       isCorrect: false
       explanation: "Incorrect. The Azure Cosmos DB SDK for Python is not required for Synapse Link integration."
-  - content: "You're writing PySpark code to load data from a Cosmos DB analytical store into a dataframe. What `format` should you specify?"
+  - content: "You're writing PySpark code to load data from an Azure Cosmos DB analytical store into a dataframe. What `format` should you specify?"
     choices:
     - content: "`cosmos.json`"
       isCorrect: false
@@ -58,7 +58,7 @@ quiz:
     - content: "`cosmos.sql`"
       isCorrect: false
       explanation: "Incorrect. `cosmos.sql` isn't a valid format."
-  - content: "You're writing a SQL code in a serverless SQL pool to query an analytical store in Cosmos DB. What function should you use?"
+  - content: "You're writing a SQL code in a serverless SQL pool to query an analytical store in Azure Cosmos DB. What function should you use?"
     choices:
     - content: "`OPENDATASET`"
       isCorrect: false

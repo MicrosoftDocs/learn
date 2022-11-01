@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.explore-automated-intelligence.math
+title: Math - Making the predictable decisions with control theory
+metadata:
+  title: Math - Making the predictable decisions with control theory
+  description: We explain math when introducing Automated decision methods.
+  ms.date: 10/14/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-math.md)]

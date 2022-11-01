@@ -1,8 +1,8 @@
-In addition to using a Spark pool, you can also query a Cosmos DB analytical container by using a built-in *serverless* SQL pool in Azure Synapse Analytics. To do this, you can use the `OPENROWSET` SQL function to connect to the linked service for your Cosmos DB database.
+In addition to using a Spark pool, you can also query an Azure Cosmos DB analytical container by using a built-in *serverless* SQL pool in Azure Synapse Analytics. To do this, you can use the `OPENROWSET` SQL function to connect to the linked service for your Azure Cosmos DB database.
 
 ## Using OPENROWSET with an authentication key
 
-By default, access to a Cosmos DB account is authenticated by an authentication key. You can use this key as part of a connection string in an `OPENROWSET` statement to connect through a linked service from a SQL pool, as shown in the following example:
+By default, access to an Azure Cosmos DB account is authenticated by an authentication key. You can use this key as part of a connection string in an `OPENROWSET` statement to connect through a linked service from a SQL pool, as shown in the following example:
 
 ```sql
 SELECT *
@@ -15,7 +15,7 @@ FROM OPENROWSET(​
 > [!TIP]
 > You can find a primary and secondary key for your Cosmos DB account on its **Keys** page in the Azure portal.
 
-The results of this query might look something like the following, including metadata and application-defined fields from the items in the Cosmos DB container:
+The results of this query might look something like the following, including metadata and application-defined fields from the items in the Azure Cosmos DB container:
 
 |_rid|_ts|productID|productName|id|_etag |
 |--|--|--|--|--|--|
@@ -159,12 +159,12 @@ After the view has been created, users and client applications can query it like
 SELECT * FROM products;
 ```
 
-## Considerations for Serverless SQL pools and Cosmos DB
+## Considerations for Serverless SQL pools and Azure Cosmos DB
 
-When planning to use a serverless SQL pool to query data in a Cosmos DB analytical store, consider the following best practices:
+When planning to use a serverless SQL pool to query data in an Azure Cosmos DB analytical store, consider the following best practices:
 
-- Provision your Cosmos DB analytical storage and any client applications (for example Microsoft Power BI) in the same region as serverless SQL pool.
+- Provision your Azure Cosmos DB analytical storage and any client applications (for example Microsoft Power BI) in the same region as serverless SQL pool.
 
-    *Cosmos DB containers can be replicated to multiple regions. If you have a multi-region container, you can specify a `region` parameter in the OPENROWSET connection string to ensure queries are sent to a specific regional replica of the container.*
+    *Azure Cosmos DB containers can be replicated to multiple regions. If you have a multi-region container, you can specify a `region` parameter in the OPENROWSET connection string to ensure queries are sent to a specific regional replica of the container.*
 
 - When working with string columns, use the OPENROWSET function with the explicit WITH clause and specify an appropriate data length for the string data.

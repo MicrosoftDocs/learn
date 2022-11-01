@@ -5,8 +5,9 @@ metadata:
   title: Choose a partition key
   description: A partition key provides a way to route data for a logical partition. It's a property that exists within every document in your container that routes your data.
   ms.date: 6/14/2021
-  author: markjbrown 
-  ms.author: mjbrown 
+  author: seesharprun 
+  ms.author: sidandrews 
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 07

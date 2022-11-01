@@ -2,7 +2,11 @@ In this module, you learned how to enable and configure Application Insights so 
 
 ## Clean up
 
-Use the Azure portal to delete the **mslearn-appinsights** resource group from your subscription.
+Use the Azure portal to delete the **mslearn-appinsights** resource group from your subscription:
+
+1. Go to the **mslearn-appinsights** resource group in the Azure portal.
+1. Select **Delete resource group** at the top of the page.
+1. Type the name of the resource group to confirm, then select **Delete**.
 
 ## Learn more
 

@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Geo-distributed auto-failover groups with read-scale
   description: Exercise - Geo-distributed auto-failover groups with read-scale
   ms.date: 08/05/2020
-  author: amthomas46
-  ms.author: antho
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Geo-distributed auto-failover groups with read-scale

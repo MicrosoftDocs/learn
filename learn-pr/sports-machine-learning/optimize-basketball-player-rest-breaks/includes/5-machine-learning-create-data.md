@@ -45,7 +45,7 @@ Here's the output:
 |  | Penelope | 0.613901 | 25.007772 | 14.394944 | 28.324923 | 7.564207 | 23.184055 | 9.919301 | 16.124275 |
 |  | Daffy Duck | 0.634848 | 31.911011 | 14.694308 | 33.226023 | 6.308140 | 18.023737 | 16.305183 | 33.155391 |
 
-60 rows × 8 columns
+60 rows × eight columns
 
 The final DataFrame looks complete. We can save it as a CSV file, so we can use it in our web app. When saving this DataFrame as a CSV file, we'll want to keep the indices, because we made them the player's names.
 

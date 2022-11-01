@@ -4,53 +4,43 @@ Having explored how Azure Database for PostgreSQL supports and scales PostgreSQL
 
 In this unit, you'll see how to create an instance of the Azure Database for PostgreSQL service using the Azure portal. If you need to create many instances of this service, you can script the process by using the Azure CLI.
 
-### Create an Azure Database for PostgreSQL, single server instance using the portal
+### Create an Azure Database for PostgreSQL flexible servers
 
-In the Azure portal, select the **Create a resource** command in the left menu bar, and search for **Azure Database for PostgreSQL** in the Azure Marketplace.
+In the Azure portal, type **Azure Database for PostgreSQL flexible servers** in the search box, and select **Azure Database for PostgreSQL flexible servers**.
 
-[![Image showing the Azure Database for PostgreSQL item in the Azure Marketplace](../media/3-azure-marketplace.png)](../media/3-azure-marketplace.png#lightbox)
+[![Screenshot showing the Azure Database for PostgreSQL flexible servers item in the Azure portal.](../media/3-azure-marketplace.png)](../media/3-azure-marketplace.png#lightbox)
 
-Click **Create**, and select the version you require—either **Single server** or **Hyperscale (Citus)**. The following steps assume you selected **Single server**. We'll cover **Hyperscale (Citus)** later.
+Select **Create** on the **Flexible server** main blade, enter the details for the service. These details include:
 
-![Image showing the Azure Database for PostgreSQL options. The Single Server option is highlighted](../media/3-create-single-server.png)
-
-On the **Single server** page, enter the details for the service. These details include:
-
+- **Resource group**. Resource group for the server.
 - **Server name**. Must be a unique name between 3 and 63 characters, containing only lowercase letters, numbers, and hyphens.
-- **Data source**. If you're creating a new server for migration purposes, select **None**. The **Backup** option enables you to restore a backup taken from another instance of Azure Database for PostgreSQL into this service.
+- **Region**. Region for the server.
+- **PostgreSQL version**: Select the version that corresponds to the on-premises database that you're migrating.
+- **Workload type**. Select the option based on your workload.
+- - **Compute + storage**. Select **Configure server** to set the pricing tier and specify the resources that you require for the service. The options were covered in Lesson 1. Remember that, if you select the **General purpose** or **Memory optimized** pricing tiers, you can scale up and down the number of virtual processor cores later. However, you can't reduce the amount of storage—it can only increase after the server has been created.
+
 - **Admin username**. The name of a user account that you'll create with administrative privileges. Azure creates some accounts for its own use. You can't use **azure_superuser**, **azure_pg_admin**, **admin**, **administrator**, **root**, **guest**, **public**, or any name that starts with **pg_**.
 - **Password**. Must be between 8 and 128 characters. It must contain a mixture of uppercase and lowercase letters, numbers, and non-alphanumeric characters.
-- **Version**: Select the version that corresponds to the on-premises database that you're migrating.
-- **Compute + storage**. Select **Configure server** to set the pricing tier and specify the resources that you require for the service. The options were covered in Lesson 1. Remember that, if you select the **General purpose** or **Memory optimized** pricing tiers, you can scale up and down the number of virtual processor cores later. However, you can't reduce the amount of storage—it can only increase after the server has been created.
 
-[![Image showing a sample configuration for Azure Database for PostgreSQL, Single Server, in the Azure portal](../media/3-single-server-configuration.png)](../media/3-single-server-configuration.png#lightbox)
+[![Screenshot showing a sample configuration for Azure Database for PostgreSQL flexible server in the Azure portal.](../media/3-single-server-configuration.png)](../media/3-single-server-configuration.png#lightbox)
 
 Click **Review + Create** to deploy the service. Deployment will take several minutes.
 
 After the service has been deployed, select the **Connection security** option and add the appropriate firewall rules to enable clients to connect, as described in the topic *Client Connectivity* in Lesson 1. You must also select the **Allow access to Azure services** option.
 
-### Create an Azure Database for PostgreSQL, Hyperscale (Citus) instance using the portal
-
-If you need to create a HyperScale (Citus) instance of Azure Database for PostgreSQL, the process is similar to creating a Single Server instance, except you will be presented with some additional options when you specify the **Compute + storage** resources. Specifically, you must provide the following information:
-
-- The number of worker nodes. Azure Database for PostgreSQL currently supports from 2 to 20 nodes.
-- The configuration for the worker nodes. Each worker node has the same resources. You select the number of processor cores (up to 32 per node) and storage (up to 2 TiB per node).
-- The size of the coordinator node (up to 32 processor cores, and 2 TiB storage).
-
 ### Create an Azure Database for PostgreSQL instance using the Azure CLI
 
-You can create an instance of Azure Database for PostgreSQL using the `az postgres server create` command. The statement below shows an example that creates a single server instance. Most of the parameters are self-explanatory, except for the following:
+You can create an instance of Azure Database for PostgreSQL using the `az postgres flexible-server create` command. The statement below shows an example that creates a flexible server instance. Most of the parameters are self-explanatory, except for the following:
 
 - **sku-name**. You construct this from a combination of the pricing tier (*B* for Basic, *GP* for General Purpose, and *MO* for Memory Optimized), the compute generation (Gen4 or Gen5), and the number of virtual CPU cores. In the example below, the server is created using the General Purpose pricing tier, with 4 CPU cores of the Gen5 generation.
 - **storage-size**. This is the amount of disk storage required, specified in megabytes. The following example allocates 10 gigabytes:
     ```azurecli
-    az postgres server create \
-    --name contoso-postgresql-server \
-    --resource-group postgresqlrg \
-    --admin-user contosoadmin \
-    --admin-password 7Hh7*ku5k$$£jhk \
-    --sku-name GP_Gen5_4 \
-    --storage-size 10240
+    az postgres flexible-server create \
+    --location northeurope --resource-group testGroup \
+    --name testserver --admin-user username --admin-password password \
+    --sku-name Standard_B1ms --tier Burstable --public-access 153.24.26.117 --storage-size 128 \
+    --tags "key=value" --version 13 --high-availability Enabled --zone 1 \
+    --standby-zone 3
     ```
 
 ## Perform online migration

@@ -4,9 +4,10 @@ title: Exercise - Add JavaScript code to work with Cosmos DB
 metadata:
   title: Exercise - Add JavaScript code to work with Cosmos DB
   description: Write JavaScript code to insert, update, delete, and query documents in Cosmos DB
-  ms.date: 11/18/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  ms.date: 09/30/2022
+  author: seesharprun
+  ms.author: sidandrews
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: true

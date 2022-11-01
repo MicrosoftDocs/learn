@@ -18,7 +18,7 @@ Things are about to change. Amita is stressed and frustrated. She's stressed bec
 
 Mara has already taken on the first two issues and has started thinking about the third issue, creating unit tests. And it couldn't come at a better time. Amita has already pinged Andy and Mara about the problem. She wants to know if they'll work with her to improve the code quality and eliminate those bugs.
 
-**Amita:** Thanks for meeting with me. I wanted to see if we can stop breaking the filtering feature on the leaderboard. Is there any way we can get more stability? I'm pulled in all kinds of directions right now. Reporting the same broken functionality over and over on something that should work is driving me crazy!
+**Amita:** Thanks for meeting with me. I wanted to see if we can stop breaking the filtering feature on the leaderboard. Is there any way we can get more stability? I'm pulled in all kinds of directions right now. Reporting the same broken functionality over and over on something that should work is maddening!
 
 **Mara:** I have an idea. You've seen the automated pipeline. I think we can add unit tests to the automated build. Unit testing is about testing a single piece of functionality, like the filtering feature, in isolation. We'd catch regression errors before they ever get to you.
 

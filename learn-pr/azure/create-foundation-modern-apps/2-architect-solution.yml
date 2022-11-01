@@ -6,8 +6,8 @@ metadata:
   title: Architect a solution using Azure
   description: Break down a scenario for an application and build a multi-service architecture using Azure.
   ms.date: 3/17/2021  
-  author:   amthomas46
-  ms.author: antho 
+  author:   WilliamDAssafMSFT
+  ms.author: wiassaf 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure  
 durationInMinutes: 5

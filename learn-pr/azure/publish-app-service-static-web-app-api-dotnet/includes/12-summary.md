@@ -25,6 +25,6 @@ Here are several resources where you can learn more about Azure Static Web Apps,
 - Learn how to [Publish an API to Azure Static Web Apps](/training/modules/publish-static-web-app-api-preview-url/)
 - Learn how to [Authenticate users with Azure Static Web Apps](/training/modules/publish-static-web-app-authentication/)
 - [Azure Static Web Apps](/azure/static-web-apps)
-- Learn how to [Deploy to Azure Using Azure Functions](https://code.visualstudio.com/tutorials/functions-extension/getting-started)
+- Learn how to [Deploy to Azure Using Azure Functions](/azure/developer/javascript/how-to/with-web-app/azure-function-resource-group-management/deploy-azure-function-with-visual-studio-code)
 - [Overview of Blazor](/aspnet/core/blazor/?view=aspnetcore-3.1)
 - Use [Angular](https://code.visualstudio.com/docs/nodejs/angular-tutorial), [React](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial), and [Vue](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial) in Visual Studio Code

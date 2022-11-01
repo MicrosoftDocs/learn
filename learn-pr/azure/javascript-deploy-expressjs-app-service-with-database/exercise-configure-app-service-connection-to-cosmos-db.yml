@@ -4,8 +4,8 @@ title: "Exercise - Configure App Service to connect to Cosmos DB"
 metadata:
   unitType: exercise
   title: "Exercise - Configure App Service to connect to Cosmos DB"
-  description: "In Visual Studio Code, configure an App Service app setting to connect to Cosmos DB."
-  ms.date: 05/06/2022
+  description: "In Visual Studio Code, configure an App Service app setting to connect to Cosmos DB with a connection string."
+  ms.date: 10/19/2022
   author: diberry
   ms.author: diberry
   ms.topic: interactive-tutorial

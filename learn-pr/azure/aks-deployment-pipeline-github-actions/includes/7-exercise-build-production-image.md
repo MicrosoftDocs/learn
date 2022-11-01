@@ -19,7 +19,7 @@ In this exercise, you'll:
 
     :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Screenshot that shows the Get started with GitHub Actions page and the Set-up a workflow yourself link on the GitHub website.":::
 
-    The following file is shown in the GitHub editor:
+    Copy and paste this basic workflow into the **Edit new file** pane:
 
     ```yaml
     # This is a basic workflow to help you get started with Actions
@@ -138,7 +138,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
       run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
     ```
 
-    Your YAML file should be looking like this:
+    Your YAML file should now look like this:
 
     ```yaml
     name: Build and push the tagged build to production
@@ -173,6 +173,10 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
 
+    Paste the copied YAML below the `Fetch latest version` action.
+
+    Your YAML file should look like this example:
+
     ```yml
     name: Build and push the tagged build to production
 
@@ -194,8 +198,8 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
           - name: Docker Login
             # You may pin to the exact commit or the version.
-            # uses: docker/login-action@f3364599c6aa293cdc2b8391b1b56d0c30e45c8a
-            uses: docker/login-action@v1
+            # uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
+            uses: docker/login-action@v2.1.0
             with:
               # Server address of Docker registry. If not set then will default to Docker Hub
               registry: # optional
@@ -203,11 +207,13 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
               username: # optional
               # Password or personal access token used to log against the Docker registry
               password: # optional
+              # Specifies whether the given registry is ECR (auto, true or false)
+              ecr: # optional, default is auto
               # Log out from the Docker registry at the end of a job
               logout: # optional, default is true
     ```
 
-1. Again, in the right panel, search for **Build and push Docker images**. Select the first result published by **Docker**.
+1. Again, in the right panel, search for **Build and push Docker images** in the **Marketplace**. Select the first result published by **Docker**.
 
     :::image type="content" source="../media/6-3-docker-action.png" alt-text="Screenshot that shows the search results that list Build and push Docker images.":::
 
@@ -254,8 +260,8 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
           - name: Build and push Docker images
             # You may pin to the exact commit or the version.
-            # uses: docker/build-push-action@e1b7f96249f2e4c8e4ac1519b9608c0d48944a1f
-            uses: docker/build-push-action@v2
+            # uses: docker/build-push-action@c56af957549030174b10d6867f20e78cfd7debc5
+            uses: docker/build-push-action@v3.2.0
             with:
               # Here you can set the parameters
     ```
@@ -265,7 +271,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     You can adjust usage for this action. For more information, see the [GitHub build-push-action documentation](https://github.com/docker/build-push-action/tree/v2.4.0?azure-portal=true).
 
-1. Rename the `name` key `Build and push production image`.
+1. Rename the `name` key `Build and push production images`.
 
 1. You'll use only a handful of the parameters that are available for these actions.
 
@@ -273,13 +279,13 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     |Key name     | Used on action |Value                                           |
     |-------------|--------|------------------------------------------------|
+    |registry     |`docker/login`|`${{ secrets.ACR_NAME }}`                       |
     |username     |`docker/login`|`${{ secrets.ACR_LOGIN }}`                      |
     |password     |`docker/login`|`${{ secrets.ACR_PASSWORD }}`                   |
-    |registry     |`docker/login`|`${{ secrets.ACR_NAME }}`                       |
     |repository   |`docker/build-and-push`|contoso-website                                 |
-    |tags         |`docker/build-and-push`|the version number obtained by the `fetch_version` step |
-    |context      |`docker/build-and-push`|`.`                                             |
-    |push      |`docker/build-and-push`|`true`                                             |
+    |context      |`docker/build-and-push`|`.`                                    |
+    |push         |`docker/build-and-push`|`true`                                 |
+    |tags         |`docker/build-and-push`|The version number obtained by the `fetch_version` step (as shown in following example). |
 
     You can delete all the other keys because we won't use them in this exercise.
 
@@ -315,15 +321,15 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
             uses: docker/build-push-action@v2
             with:
               context: .
-              tags: ${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${{ steps.fetch_version.outputs.TAG }}
               push: true
+              tags: ${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${{ steps.fetch_version.outputs.TAG }}
     ```
 
     Using `steps.` in the YAML is a common practice to refer to previous steps in the pipeline. When we used `set-output` in the `fetch_version` step, we set the output of the step to the value of the `GITHUB_REF` variable. This output is now available in the pipeline inside the `steps` object.
 
-1. Before you save the file, we'll also add another action between the checkout action and the login action to set up the build engine for Docker to use. This action is called `docker/setup-buildx-action` and you'll use `v1`.
+1. Before you save the file, we'll also add another action between the checkout action and the login action, to set up the build engine for Docker to use. This action is called `docker/setup-buildx-action` and you'll use `v1`.
 
-    To set this action, copy the below snippet and paste it between the checkout and the login actions.
+    To set this action, copy the snippet from this example and paste it between the `Fetch latest version` and the `Docker Login` actions.
 
     ```yml
     - name: Set up Buildx
@@ -375,9 +381,9 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
 ## Create a personal access token (PAT)
 
-1. Go to the fork of the sample repository in the GitHub website. On the top right hand corner, select your profile photo, then click **Settings**.
+1. Go to the fork of the sample repository in the GitHub website. On the top right hand corner, select your profile photo, then select **Settings**.
 
-1. Select **Developer settings**.
+1. Select **Developer settings** at the bottom of the left menu.
 
 1. Select **Personal access tokens**.
 
@@ -409,4 +415,4 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
 1. Select the **Actions** tab and check the running process.
 
-1. In Azure Cloud Shell, run `az acr repository show-tags --repository contoso-website --name <ACR_NAME> -o table` to confirm that two tags are listed in the results.
+1. When the process is completed, in Azure Cloud Shell, run `az acr repository show-tags --repository contoso-website --name <ACR_NAME> -o table` to confirm that two tags are listed in the results.
