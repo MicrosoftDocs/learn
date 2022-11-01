@@ -1,40 +1,53 @@
-Event driven architecture enables you to connect to the core application without needing to modify the existing code. When an event occurs, you can react with your own code to these events. Event-driven applications use the send and forget principle. The event gets sent toward the next system, which can be another service, an event hub, a stream, or a message broker.
+An event-driven architecture enables you to connect to the core application without needing to modify the existing code. When an event occurs, you can react with specific code to respond to the event. An event-driven application uses the _send and forget_ principle. An event is sent toward the next system, which can be another service, an event hub, a stream, or a message broker.
 
-Let’s consider that music-sharing application again, this time with a Web API that runs in Azure. When a user uploads a new song, you must notify all the mobile apps installed on user devices around the world that are interested in that genre of music. In this requirement. Azure Event Grid is a perfect solution for this sort of requirement.
+Let's reconsider our design for the Tailwind Traders product demo application, and examine how to use a Web API that runs in Azure. When a new product review or demo video is uploaded, we need to notify all mobile apps on user devices around the world that are interested in the products. Azure Event Grid is an ideal solution for this requirement.
 
-- The publisher of the sound file doesn't need to know about any of the subscribers interested in the shared music. 
+- The publisher of the review or video doesn't need to know about any subscribers who are interested in the affected products. 
 
-- We want to have a one-to-many relationship where we can have multiple subscribers. Subscribers who can optionally decide whether they’re interested in this new song.
+- We want to have a one-to-many relationship where we can have multiple subscribers. Subscribers can optionally decide whether they're interested in the affected products.
 
-## What is Azure Event Grid?
+### Things to know about Azure Event Grid
 
-[Azure Event Grid](/azure/event-grid/overview) is a fully managed event routing service running on top of Azure Service Fabric. Event Grid distributes events from sources such as Azure blob storage accounts and Azure media services. These events are distributed to handlers such as Azure Functions and Webhooks. Event Grid exists to make it easier to build event-based and serverless applications on Azure.
+[Azure Event Grid](/azure/event-grid/overview) is a fully managed event routing service that runs on [Azure Service Fabric](/azure/service-fabric/service-fabric-overview). Event Grid exists to make it easier to build event-based and serverless applications on Azure. Examine the following characteristics of the service.
 
-- Aggregates all your events and provides routing from any source to any destination. 
+- Azure Event Grid aggregates all your events and provides routing from any source to any destination. 
 
-- Is a service that manages the routing and delivery of events from many sources and subscribers. This process eliminates the need for polling and results in minimized cost and latency.
+- Event Grid distributes events from sources like Azure Blob Storage accounts and Azure Media Services.
 
-The following illustration displays an Azure Event Grid positioned between multiple event sources and multiple event handlers. The event sources send events to the Event Grid and the Event Grid forwards relevant events to the subscribers. Event Grid use topics to decide which events to send to which handlers. Events sources tag each event with one or more topics, and event handlers subscribe to the topics they’re interested in.
+- Events are distributed to handlers like Azure Functions and Azure DevOps Webhooks.
 
-:::image type="content" source="../media/event-grid.png" alt-text="A graphic displays Event Sources linked to Event Handlers by topics, and Event Grid, and event subscriptions.":::
+- The service manages the routing and delivery of events from many sources and subscribers eliminates, which helps to minimize cost and latency by eliminating the need for polling. 
 
-Event Grid sends an event to indicate something has happened or changed. However, the actual object that was changed isn’t part of the event data. Instead, a URL or identifier is often passed to reference the changed object.
+#### How Azure Event Grid works
 
-## Comparison of services
+The following illustration shows how Azure Event Grid manages the event process from multiple event sources to multiple event handlers.
 
-Let’s take a few minutes to review the message and event solutions we have covered.
+:::image type="content" source="../media/event-grid.png" alt-text="Ilustrationg shows how Azure Event Grid manages the event process from multiple event sources to multiple event handlers." border="false":::
 
-| Service| Purpose| Type| When to use |
-| - | - | - | - |
-| **Event Grid**| Reactive programming| Event distribution (discrete)| React to status changes |
-| **Event Hubs**| Big data pipeline| Event streaming (series)| Telemetry and distributed data streaming |
-| **Service Bus**| High-value enterprise messaging| Message| Order processing and financial transactions |
+- An event source such as Azure Blob Storage tags events with one or more topics, and sends events to Azure Event Grid.
 
+- An event handler such as Azure Functions subscribes to topics they're interested in.
 
- 
+- Event Grid examines topic tags to decide which events to send to which handlers.
 
-## Use the services together
+- Event Grid forwards relevant events to subscribers.
 
-In some cases, you use the services side by side to fulfill distinct roles. For example, an e-commerce site can use Service Bus to process the order, Event Hubs to capture site telemetry, and Event Grid to respond to events like an item was shipped. In other cases, you link them together to form an event and data pipeline. You use Event Grid to respond to events in the other services. The following image shows the workflow for streaming the data.
+- Event Grid sends an event to indicate something has happened or changed. However, the actual object that was changed (text file, video, audio, and so on) isn't part of the event data. Instead, Event Grid passes a URL or identifier to reference the changed object.
 
-:::image type="content" source="../media/services-integration.png" alt-text="Diagram of Event Hubs, Event Grid, Functions working together.":::
+### Things to consider when using Azure Event Grid
+
+Azure Event Grid can be an ideal solution for an event-driven application architecture. As you review the following considerations, think about how Event Grid can benefit the Tailwind Traders application architecture.
+
+- **Consider multiple services**. Choose one or multiple Azure services to fulfill your design requirements.
+
+   | Azure service | Purpose | Message or Event | Usage scenario |
+   | --- | --- | --- | --- |
+   | **Azure Event Grid**| Reactive programming | Event distribution (discrete)| React to status changes |
+   | **Azure Event Hubs**| Big data pipeline | Event streaming (series) | Conduct telemetry and distributed data streaming |
+   | **Azure Service Bus**| High-value enterprise messaging | Message | Fulfill order processing and financial transactions |
+
+- **Consider distinct roles for services**. Investigate using Azure services side by side to fulfill distinct roles. An e-commerce site can use Azure Service Bus to process an order, Azure Event Hubs to capture site telemetry, and Azure Event Grid to respond to events like an item being shipped.
+
+- **Consider linking services**. Link Azure services together to form an event and data pipeline stream. In this scenario, Azure Event Grid responds to events in other services. The following illustration demonstrates how several Azure services can be linked together as an event and data pipeline to stream data.
+   
+   :::image type="content" source="../media/services-integration.png" alt-text="Illustration that shows how Azure Event Hubs, Event Grid, and Functions link together to respond to events and stream data." border="false":::

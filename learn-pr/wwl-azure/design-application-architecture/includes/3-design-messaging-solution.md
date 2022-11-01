@@ -1,4 +1,4 @@
-One of your design tasks for Tailwind Traders is to recommend a solution for their product demo application. Customers use the app to get the latest tips, reviews, and instructions for featured home improvement products. You have two requirements for the app design:
+One of your design tasks for Tailwind Traders is to recommend a design for their product demo application. Customers use the app to get the latest tips, reviews, and instructions for featured home improvement products. You have two requirements for the app design:
 
 - Ensure all content files are uploaded to the web API reliably from the mobile app. Files include text, images, and video.
 
