@@ -132,7 +132,7 @@ Each of these approaches has a few specific and some shared considerations to ke
 
 - When using images, you'll need to ensure there's a process to handle image updates, security patches, and inventory management of the images themselves.
 
-- With post-deployment scripting, build times can be extended since the VM can't be added to live workloads until the build is complete. This may not be a significant issue for standalone systems, but when using services that autoscale (such as virtual machine scale sets), this extended build time can impact how quickly you can scale.
+- With post-deployment scripting, build times can be extended since the VM can't be added to live workloads until the build is complete. This may not be a significant issue for standalone systems, but when using services that autoscale (such as Virtual Machine Scale Sets), this extended build time can impact how quickly you can scale.
 
 - With both approaches, you'll want to ensure that you address configuration drift; as new configurations are rolled out, you'll need to ensure that existing systems are updated accordingly.
 
