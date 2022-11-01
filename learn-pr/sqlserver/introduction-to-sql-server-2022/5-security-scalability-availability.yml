@@ -16,25 +16,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "xxxxx"
+  - content: "Ledger for SQL Server provide tamper evident proof for data integrity using what capability?"
     choices: 
-    - content: "xxxx"
+    - content: "Auditing of any T-SQL statement executed against SQL Server"
       isCorrect: false
-      explanation: "xxxx"
-    - content: "xxxx"
+      explanation: "Ledger for SQL Server doesn't audit all T-SQL statements. You would need to use SQL Server Audit for this requirement."
+    - content: "End-to-end encryption of data associated with a database set with the LEDGER option"
       isCorrect: false
-      explanation: "xxxxx"
-    - content: "xxxxx"
+      explanation: "Ledger for SQL Server does not encrypt data in user tables and there is not a database option called LEDGER. Always Encrypted is a feature to encrypt data end-to-end."
+    - content: "Built-in auditing and cryptographic hashes of transactions against a ledger table"
       isCorrect: true
-      explanation: "xxxx"
-  - content: "xxxxx"
+      explanation: "Ledger for SQL Server uses auditing and crypto hashes to provide tamper evidence proof for tables declared as ledger tables."
+  - content: "Contained Availability Groups replicate what new types of data in SQL Server 2022 for a normal Availability Group"
     choices: 
-    - content: "xxxxx"
-      isCorrect: false
-      explanation: "xxxxx"
-    - content: "xxxxx"
+    - content: "SQL Server Agent Jobs"
       isCorrect: true
-      explanation: "xxxxx"
-    - content: "xxxxx"
+      explanation: "Contained Availability Groups use contained system databases to support replicating of data for instance objects like SQL Server Agent Jobs."
+    - content: "Windows registry keys for SQL Server"
       isCorrect: false
-      explanation: "xxxxx"
+      explanation: "Contained Availability Groups do not replicate information in Windows registry keys associated with SQL Server."
+    - content: "Changes to rows in user tables"
+      isCorrect: false
+      explanation: "While changes to user tables are replicated in Availability Groups this is not new data for SQL Server 2022 such as instance level objects for Contained Availability Groups."
