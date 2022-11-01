@@ -1,96 +1,60 @@
 
-In the private mobile networks powered with Azure Private 5G Core, enterprises usually run mission-critical applications that support their user equipment (UE). For example, robots on a factory floor rely on the network to communicate with each other, and IoT devices in a smart farm rely on the network to report status and adjust to environmental changes. If these UEs malfunctions or even stops functioning due to network connectivity or performance issues, the bussiness of the enterprise will be severely impacted. Therefore, monitoring the health of the network continuously and making sure everything runs smoothly are of critical importance to the business continuity of enterprises. In addition, to minimize business impact, enterprises need to quickly diagnose and fix an issue once it is reported.
+In the private mobile networks powered with Azure Private 5G Core, enterprises usually run mission-critical applications that support their user equipment (UE). For example, robots on a factory floor rely on the network to communicate with each other, and IoT devices in a smart farm rely on the network to report status and adjust to environmental changes. If these UEs malfunctions or even stops functioning due to network connectivity or performance issues, the business of the enterprise will be severely impacted. Therefore, monitoring the health of the network continuously and making sure everything runs smoothly are of critical importance to the business continuity of enterprises. In addition, to minimize business impact, enterprises need to quickly diagnose and fix an issue once it's reported.
 
 ## Monitoring and troubleshooting capabilities
 
 Azure Private 5G Core provides flexible monitoring options, which allow you to either monitor multiple network sites centrally from the cloud, or locally monitor each individual site from within the site.
 
 - Remote monitoring with Azure Log Analytics: Log Analytics is a standard Azure tool that you can use through the Azure portal. Once you enable the Log Analytics tool for a private mobile network is enabled, each packet core instance in the network starts to stream relevant logs to the tool. You can create queries to retrieve the log data, and use Log Analytics dashboards to visualize your saved log queries.
+
   [!NOTE]
   Currently you can only use Log Analytics to monitor private mobile networks that support 5G UEs. For 4G UEs, use the packet core dashboards.
+
 - Local monitoring with packet core dashboards: The packet core instance that powers each site in a private mobile network provides the packet core dashboards by default. With these boards, you can monitor key network statistics in real time. These boards also allow you to view information on firing alerts, based on which you can quickly react to emerging issues.
 
 For diagnosing issues that are reported during network monitoring, Azure Private 5G Core provides a distributed tracing tool on each packet core instance. This tool allows you to analyze the communication between network functions and identify the root cause of a certain issue. Once the root cause is identified, you can take relevant measures to fix the issue.
 
-With these monitoring and troubleshooting tools, you can monitor the health of your private mobile network on a continuous basis and diagnose issues once they are reported. The monitoring and troubleshooting capabilities of Azure Private 5G Core help ensure the business continuity of enterprises and minimize possible business impact.
+With these monitoring and troubleshooting tools, you can monitor the health of your private mobile network on a continuous basis and diagnose issues once they're reported. The monitoring and troubleshooting capabilities of Azure Private 5G Core help ensure the business continuity of enterprises and minimize possible business impact.
 
 ## Monitoring example
 
-warehouse operation manager
-How is it used in real life
+Suppose you're a network operation manager in logistic company, which has three sites deployed with Azure Private 5G Core in its private mobile network. You have a team member working at each site. One of the major responsibilities of your team is to monitor the entire mobile network and make sure everything runs smoothly. If an issue is reported during the monitoring, your team will need to diagnose the issue and take measure to fix it.
+
+In this case, you can enable Log Analytics for each site and then create dashboards to monitor the sites remotely through the Azure portal. This way, you can monitor the health of the network no matter where you work. For the team member at each site, you can ask them to use the packet core dashboards to monitor the site locally in real time. If the monitoring tool reports an issue for a site, the team member at the site can use the distributed tracing tool to diagnose.
+
+[!NOTE] 
+Log Analytics is part of Azure Monitor and is chargeable. Don't enable it if you don't want to incur any costs.
+
+The following diagram illustrates this monitoring structure:
+
+:::image type="content" source="../media/ap5gc-monitoring-structure.png" alt-text="A diagram that illustrates the monitoring structure of the warehouse private mobile network" border="true":::
 
 ## Key metrics to monitor
 
-metric types & key metrics & summary
+Based on the tool that you use, the types of the alerts may be divided into different levels. For example, in the packet core dashboards, you may see critical, major, or minor alerts. Among these alerts, the critical alerts have the highest priority and should be handled first.
 
-## How your will learn
+In addition to the alert levels, you should also define the key metrics to monitor based on the business needs of the enterprise.
 
-Waht you will do
-What you will get
-What can I learn from the module? - key content
+In general, pay special attention to the following metrics:
 
+- Data plane metrics
+  - Numbers of packets sent/received on the N3/N6 interfaces
+  - Number of bytes sent/received on the N3/N6 interfaces
+  - The distribution of packet sizes on the N3/N6 interfaces
+  - The traffic type statistics, such as TCP vs. UDP or HTTP vs. HTTPs
+- Subscriber metrics
+  - Registration status
+  - Connection status
+  - Data throughput
 
+## How you'll learn
 
+In this module, we'll introduce the use of the following monitoring and troubleshooting tools to you:
 
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+- Azure Log Analytics,
+- The packet core dashboards
+- The distributed tracing tool
 
-    Goal: orient the learner to the area covered in this module
+After the learning, you'll need to answer questions in the knowledge check unit to make sure that you've grasped these tools.
 
-    Heading: none
-
-    Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
-
-    Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
-
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
--->
-TODO: add your topic sentences(s)
-TODO: add a visual element
-
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
-
-    Goal: describe the real-world scenario this module will use to illustrate the concepts
-
-    Heading: "## Example scenario"
-
-    Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
-
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=main#images)
-
-    Optional: a "scenario video" that visualizes the scenario
-
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-    [Scenario video guidance](TBD)
- -->
-## Example scenario
-TODO: add your scenario
-TODO: add a visual element
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
-
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
-
-    Heading: "## What will we be doing?"
-
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
-
- -->
-## What will we be doing?
-TODO: add your activities
-
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
-
-    Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
-
-    Heading: "## What is the main goal?"
-
-    Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
-
- -->
-## What is the main goal?
-By the end of this session, you'll be able to (TODO)
-
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+By the end of the session, you'll be able to use the tools to monitor the private mobile network in an enterprise and diagnose any issues that they detect during the monitoring.
