@@ -27,7 +27,7 @@ quiz:
     - content: "Built-in auditing and cryptographic hashes of transactions against a ledger table"
       isCorrect: true
       explanation: "Ledger for SQL Server uses auditing and crypto hashes to provide tamper evidence proof for tables declared as ledger tables."
-  - content: "Contained Availability Groups replicate what new types of data in SQL Server 2022 for a normal Availability Group"
+  - content: "Contained Availability Groups replicate what new types of data in SQL Server 2022 for a normal Availability Group?"
     choices: 
     - content: "SQL Server Agent Jobs"
       isCorrect: true
