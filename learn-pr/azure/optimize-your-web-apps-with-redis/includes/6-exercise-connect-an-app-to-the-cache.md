@@ -31,7 +31,7 @@ Let's add the connection string we got from the Azure portal into the code. Neve
     touch appsettings.json
     ```
 
-1. Open the code editor by entering `code .` in the project folder. If you are working locally, we recommend using **Visual Studio Code**. The steps here will mostly align with its usage.
+1. Open the code editor by entering `code .` in the project folder. If you're working locally, we recommend using **Visual Studio Code**. The steps here will mostly align with its usage.
 
 1. Select the **appsettings.json** file in the editor, and add the following text. Paste your connection string into the **value** of the setting.
 
@@ -61,7 +61,7 @@ Let's add the connection string we got from the Azure portal into the code. Neve
     </Project>
     ```
 
-1. Save the file. (Make sure you do this or you will lose the change when you add the package later.)
+1. Save the file. (Make sure you do this or you'll lose the change when you add the package later.)
 
 ## Add support to read a JSON configuration file
 
@@ -75,7 +75,7 @@ In the command prompt section of the window, add a reference to the  **Microsoft
 
 ## Add code to read the configuration file
 
-Now that we have added the required libraries to enable reading configuration, we need to enable that functionality within our console application.
+Now that we've added the required libraries to enable reading configuration, we need to enable that functionality within our console application.
 
 1. Select **Program.cs** in the editor.
 
@@ -246,17 +246,17 @@ The return value from `StringSet` is a `bool` indicating whether the key was add
 
 ## Use the async versions of the methods
 
-We have been able to get and set values from the cache, but we are using the older synchronous versions. In server-side applications, these are not an efficient use of our threads. Instead, we want to use the _asynchronous_ versions of the methods. You can easily spot them - they all end in **Async**.
+We have been able to get and set values from the cache, but we're using the older synchronous versions. In server-side applications, these aren't an efficient use of our threads. Instead, we want to use the _asynchronous_ versions of the methods. You can easily spot them - they all end in **Async**.
 
-To make these methods easy to work with, we can use the C# `async` and `await` keywords. However, we will need to be using _at least_ C# 7.1 to be able to apply these keywords to our **Main** method.
+To make these methods easy to work with, we can use the C# `async` and `await` keywords. However, we'll need to be using _at least_ C# 7.1 to be able to apply these keywords to our **Main** method.
 
 ### Switch to C# 7.1
 
-C#'s `async` and `await` keywords were not valid keywords in **Main** methods until C# 7.1. We can switch to that compiler through a flag in the **.csproj** file.
+C#'s `async` and `await` keywords weren't valid keywords in **Main** methods until C# 7.1. We can switch to that compiler through a flag in the **.csproj** file.
 
 1. Open the **SportsStatsTracker.csproj** file in the editor.
 
-1. Add `<LangVersion>7.1</LangVersion>` into the first `PropertyGroup` in the build file. It should look like the following when you are finished.
+1. Add `<LangVersion>7.1</LangVersion>` into the first `PropertyGroup` in the build file. It should look like the following when you're finished.
 
    ```xml
     <Project Sdk="Microsoft.NET.Sdk">
@@ -271,7 +271,7 @@ C#'s `async` and `await` keywords were not valid keywords in **Main** methods un
 
 ### Apply the async keyword
 
-Next, apply the `async` keyword to the **Main** method. We will have to do three things.
+Next, apply the `async` keyword to the **Main** method. We'll have to do three things.
 
 1. Add the `async` keyword onto the **Main** method signature.
 
@@ -333,7 +333,7 @@ We can leave the synchronous methods in place. Let's add a call to the `StringSe
 
 ## Other operations
 
-Finally, let's try executing a few additional methods with the `ExecuteAsync` support.
+Finally, let's try executing a few more methods with the `ExecuteAsync` support.
 
 1. Execute "PING" to test the server connection. It should respond with "PONG".
 
@@ -456,7 +456,7 @@ Let's add the connection information we got from the Azure portal into a `.env` 
     touch .env
    ```
 
-1. Open the code editor by entering `code .` in the project folder. If you are working locally, we recommend using **Visual Studio Code**. The steps here will mostly align with its usage.
+1. Open the code editor by entering `code .` in the project folder. If you're working locally, we recommend using **Visual Studio Code**. The steps here will mostly align with its usage.
 
 1. Select the **.env** file in the editor, and paste in the following text.
 

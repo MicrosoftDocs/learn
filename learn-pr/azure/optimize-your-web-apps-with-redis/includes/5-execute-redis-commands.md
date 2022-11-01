@@ -1,8 +1,8 @@
 ::: zone pivot="csharp"
 
-As mentioned earlier, Redis is an in-memory NoSQL database which can be replicated across multiple servers. It's often used as a cache, but can be used as a formal database or even message-broker.
+As mentioned earlier, Redis is an in-memory NoSQL database, which can be replicated across multiple servers. It's often used as a cache, but can be used as a formal database or even as a message-broker.
 
-It can store a variety of data types and structures, and supports a variety of commands you can issue to retrieve cached data or query information about the cache itself. The data you work with is always stored as key/value pairs.
+Redis can store a variety of data types and structures. It supports various commands you can issue to retrieve cached data or to query information about the cache itself. The data you work with is always stored as key/value pairs.
 
 ## Execute commands on the Redis cache
 
@@ -25,7 +25,7 @@ A connection string is a single line of text that includes all the required piec
 
 You can pass this string to **StackExchange.Redis** to create a connection the server. 
 
-Notice that there are two additional parameters at the end: 
+Notice that there are two more parameters at the end: 
 
 - **ssl** - ensures that communication is encrypted
 - **abortConnection** - allows a connection to be created even if the server is unavailable at that moment
@@ -65,7 +65,7 @@ IDatabase db = redisConnection.GetDatabase();
 > [!TIP]
 > The object returned from `GetDatabase` is a lightweight object and does not need to be stored. Only the `ConnectionMultiplexer` needs to be kept alive.
 
-Once you have a `IDatabase` object, you can execute methods to interact with the cache. All methods have synchronous and asynchronous versions which return `Task` objects to make them compatible with the `async` and `await` keywords.
+Once you have a `IDatabase` object, you can execute methods to interact with the cache. All methods have synchronous and asynchronous versions, which return `Task` objects to make them compatible with the `async` and `await` keywords.
 
 Here's an example of storing a key/value in the cache:
 
@@ -118,14 +118,14 @@ Here are some of the more common operations that work with single keys; you can 
        
 ### Execute other commands
 
-The `IDatabase` object has an `Execute` and `ExecuteAsync` method which can be used to pass textual commands to the Redis server. For example:
+The `IDatabase` object has an `Execute` and `ExecuteAsync` method, which can be used to pass textual commands to the Redis server. For example:
 
 ```csharp
 var result = db.Execute("ping");
 Console.WriteLine(result.ToString()); // displays: "PONG"
 ```
 
-The `Execute` and `ExecuteAsync` methods return a `RedisResult` object which is a data holder that includes two properties:
+The `Execute` and `ExecuteAsync` methods return a `RedisResult` object, which is a data holder that includes two properties:
 
 - `Type`, which returns a `string` indicating the type of the result - "STRING", "INTEGER", etc.
 - `IsNull`, a true/false value to detect when the result is `null`.
@@ -149,7 +149,7 @@ id=9470 addr=16.183.122.155:54967 fd=13 name=DESKTOP-BBBBBB age=0 idle=0 flags=N
 
 ### Store more complex values
 
-Redis is oriented around binary safe strings, but you can cache off object graphs by serializing them to a textual format; typically XML or JSON. For example, perhaps for our statistics, we have a `GameStats` object which looks like:
+Redis is oriented around binary safe strings, but you can cache off object graphs by serializing them to a textual format; typically XML or JSON. For example, perhaps for our statistics, we have a `GameStat` object which looks like:
 
 ```csharp
 public class GameStat
@@ -214,9 +214,9 @@ Let's create an application and do some work with our Redis cache.
 
 ::: zone pivot="javascript"
 
-As mentioned earlier, Redis is an in-memory NoSQL database which can be replicated across multiple servers. It's often used as a cache, but can be used as a formal database or even message-broker.
+As mentioned earlier, Redis is an in-memory NoSQL database, which can be replicated across multiple servers. It's often used as a cache, but can be used as a formal database or even message-broker.
 
-It can store a variety of data types and structures, and supports a variety of commands you can issue to retrieve cached data or query information about the cache itself. The data you work with is always stored as key/value pairs.
+Redis can store a variety of data types and structures. It supports various commands you can issue to retrieve cached data or query information about the cache itself. The data you work with is always stored as key/value pairs.
 
 ## Execute commands on the Redis cache
 

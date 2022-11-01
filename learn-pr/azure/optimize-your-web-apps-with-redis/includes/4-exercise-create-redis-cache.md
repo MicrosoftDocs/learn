@@ -41,7 +41,7 @@ You can use the **Console** feature in the Azure portal to issue commands to you
 
 1. Check the value of the *Status* field. The cache isn't ready until the status is *Running*. You might have to wait for a few minutes before proceeding.
 
-1. Once the cache is running, Click the **>_ Console** button in the toolbar on the **Overview** pane for your Redis Cache. This will open a Redis console, which allows you to enter low-level Redis commands. Try some of the following commands:
+1. Once the cache is running, select the **>_ Console** button in the toolbar on the **Overview** pane for your Redis Cache. This will open a Redis console, which allows you to enter low-level Redis commands. Try some of the following commands:
 
     ```console
     ping
