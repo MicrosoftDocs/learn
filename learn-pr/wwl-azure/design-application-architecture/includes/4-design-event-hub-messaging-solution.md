@@ -1,6 +1,8 @@
 Certain applications produce a massive number of events from almost as many sources. These application scenarios are often referred to as _Big Data_. Big Data can require extensive infrastructure.
 
-Suppose you're designing the architecture for an airplane engine manufacturing application. Each manufactured engine has hundreds of sensors. Before an airplane can be flown, the engines are connected to a test harness and put through their paces. Additionally, cached in-flight data is streamed when the airplane is connected to ground equipment.
+### Tailwind Traders scenario 
+
+Suppose you're designing the architecture for a Tailwind Traders home security monitoring application. Each security system has a dozen or more cameras sensors. Before the house can be deemed secure, the sensors and cameras are connected to a test harness and put through their paces. Additionally, cached video camera footage data is streamed when the security system is connected to the datacenter monitoring headquarters.
 
 For this architecture, you might choose a messaging solution that uses _event hubs_. Event hubs can receive and process millions of events per second. Data sent to an event hub can be transformed in real time and stored for later analysis. 
 
@@ -26,17 +28,17 @@ For this architecture, you might choose a messaging solution that uses _event hu
 
 #### Business scenario
 
-Let's examine how Azure Event Hubs and other Azure services can contribute to the architecture for the airplane engine manufacturing application.
+Let's examine how Azure Event Hubs and other Azure services can contribute to the architecture for the home security monitoring application.
 
-:::image type="content" source="../media/event-hubs-integration.png" alt-text="Diagram that shows how Azure Event Hubs and other Azure services contribute to the architecture for an airplane engine manufacturing application." border="false":::
+:::image type="content" source="../media/event-hubs-integration.png" alt-text="Diagram that shows how Azure Event Hubs and other Azure services contribute to the architecture for a data streaming application." border="false":::
 
-- Azure Event Hubs captures streaming data from the airplane engine testing equipment.
+- Azure Event Hubs captures streaming video camera footage data from the camera and sensor testing equipment.
 
-- Azure Blob Storage stores the engine test data.
+- Azure Blob Storage stores the video and sensor test data.
 
-- Azure Stream Analytics identifies patterns in the sensor engine test data. 
+- Azure Stream Analytics identifies patterns in the video and sensor test data. 
 
-- Power BI makes decisions for engine manufacturing improvements based on the test data patterns. 
+- Power BI makes decisions for monitoring alerts and improving security based on the test data patterns. 
 
 ### Things to consider when using Azure Event Hubs 
 

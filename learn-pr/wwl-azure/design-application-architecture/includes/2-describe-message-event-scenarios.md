@@ -1,8 +1,12 @@
-Consider a scenario where you're designing the architecture for a distributed music-sharing application. You want your application to be as reliable and scalable as possible. You're planning to use Azure technologies to build a robust communication infrastructure. Before you can choose the appropriate Azure services, you need to design how each application component will communicate with the other components. For each type of communication, you might choose a different Azure technology.
+Your first decision in your application architecture design is to plan how the application components will communicate. Defining your component strategy helps you choose the appropriate Azure service.
+
+### Tailwind Traders scenario 
+
+Suppose you're designing the architecture for a home improvement video-sharing application for Tailwind Traders. You want your application to be as reliable and scalable as possible. You're planning to use Azure technologies to build a robust communication infrastructure. Before you can choose the appropriate Azure services, you need to design how each application component will communicate with the other components. For each type of communication, you might choose a different Azure technology.
 
 ### Things to know about messages and events
 
-As you design your application architecture, your first decision is to plan for how the components will communicate, either by sending messages or events. Defining your component strategy helps you choose the appropriate Azure service.
+Most application components communicate by sending messages or events. Azure offers various services to support the different communication strategies.
 
 #### Messages
 
@@ -14,7 +18,7 @@ Let's examine the characteristics of [messages](/azure/event-grid/compare-messag
 
 In a message communication, the sending component expects the message data to be processed in a certain way by the destination component. The integrity of the overall system might depend on both the sender and receiver doing a specific job.
 
-Suppose a user uploads a new song by using your mobile music-sharing app. Your mobile app must send the song to the web API that runs in Azure. The song file must be sent, not just an alert that indicates a new song has been added. The mobile app expects that the web API stores the new song in the database and makes the song available to other users.
+Suppose a user uploads a new video by using your mobile video-sharing app. Your mobile app must send the video to the web API that runs in Azure. The video file must be sent, not just an alert that indicates a new video has been added. The mobile app expects that the web API stores the new video in the database and makes the video available to other users.
 
 #### Events
 
