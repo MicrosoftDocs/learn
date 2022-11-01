@@ -2,7 +2,7 @@ Let's start with a quick overview of Azure API Management and its core features.
 
 ## What is API lifecycle management?
 
-*API lifecycle management* is the process of administering an API through its entire lifespan&mdash;from its design and creation to its obsolescence and retirement. For the purposes of this module, we'll pick up after your APIs have already been designed, coded, and deployed. This way, we can concentrate on the rest of the API lifecycle management tasks, which include:
+*API lifecycle management* is the process of administering an API through its entire lifespan&mdash;from its design and creation to its obsolescence and retirement. For the purposes of this module, we'll pick up after your APIs have already been designed, coded, and deployed. We'll concentrate on the rest of the API lifecycle management tasks, which include:
 
 - Providing API documentation, testing, and code samples.
 - Onboarding and off-boarding users.
@@ -30,7 +30,7 @@ Let's start with a quick overview of Azure API Management and its core features.
 
 The *Azure API Management gateway* is an Azure endpoint that accepts all calls from all your APIs. The gateway:
 
-- Verifies API subscription keys or other credentials.
+- Verifies API subscription keys and other credentials.
 - Enforces your usage quotas and rate limits.
 - Transforms the API as needed for backend compatibility.
 - Routes each call to its appropriate backend server.
@@ -39,7 +39,7 @@ The *Azure API Management gateway* is an Azure endpoint that accepts all calls f
 
 ## Administration interface
 
-The *Azure API Management administration interface* is a set of Azure portal pages and tools that enable you to administer your service and your APIs. In addition to provisioning, scaling, and monitoring the service, use the administrative interface for the following activities:
+The *Azure API Management administration interface* is a set of Azure portal pages and tools that enable you to administer your service and your APIs. In addition to provisioning, scaling, and monitoring the service, you use the administrative interface for:
 
 - Defining or importing API specifications
 - Implementing usage policies such as quotas and rate limits
@@ -62,7 +62,7 @@ The *Azure API Management developer portal* is a fully customizable website that
 
 ## Azure API Management tiers
 
-Azure API Management provides several service tiers, each of which offers a distinct set of features, capacities, and pricing. The following table lists the tiers in order from lowest to highest price and compares some key capabilties.
+Azure API Management provides several service tiers, each offering a distinct set of features, capacities, and pricing. The following table lists the tiers in order from lowest to highest price and compares some key capabilties.
 
 |**Criteria**  |**Consumption**  |**Developer**  |**Basic**  |**Standard**  |**Premium**  |
 | --- | --- | --- | --- | --- | --- |
@@ -74,19 +74,19 @@ Azure API Management provides several service tiers, each of which offers a dist
 |**Throughput (estimated requests/sec)**     | N/A        | 500        | 1,000        | 2,500        | 4,000        |
 
 > [!NOTE]
-> The pricing for the Consumption tier is per API call, where the first million calls are free, and the remainder then billed a fixed rate per 10,000 calls. The pricing for all the other tiers is per hour.
+> The pricing for the Consumption tier is per API call, where the first million calls are free, and the remainder then billed a fixed rate per 10,000 calls. Pricing for all the other tiers is per hour.
 
 ## How to apply policies to API requests and responses
 
-One of the biggest problems with having multiple published APIs is that each API requires a separate set of policies. Here, a *policy* is a setting or action that controls access to an API or the behavior of the API. For example, if you want to enforce a *rate limit* (the maximum number of API calls allowed from a single source in a given time period) you'd include that limit as part of the policies for an API. This is just one example, but there are numerous policies you can apply. Multiply that by several different APIs and you have a management nightmare.
+One of the biggest problems with having multiple published APIs is that each API requires a separate set of policies. Here, a *policy* is a setting or action that controls the behavior of the API. For example, if you want to enforce a *rate limit* (the maximum number of API calls allowed from a single source in a given time period) you'd include that limit as part of the policies for an API. This is just one example, but there are numerous policies you can apply. Multiply that by several different APIs and you have a management nightmare.
 
-Azure API Management solves the API policy problem by enabling you to set policies for all your APIs in a single place, which is the Azure API Management administration interface. With Azure API Management, you can set policies in many categories. A partial list includes :
+Azure API Management solves the API policy problem by enabling you to set policies for all your APIs in a single place, which is the Azure API Management administration interface. With Azure API Management, you can set policies in many categories. A partial list includes:
 
 - **Access restriction**. These policies determine when an API request is allowed through the gateway. For example, there are policies that enforce rate limits and usage quotas, filter caller IPs, and check for a valid JSON Web Token (JWT).
-- **Authentication**. These policies authenticate API calls. For example, you can authenticate an API call by using Basic authentication, a client certificate, or a managed identity.
+- **Authentication**. These policies authenticate API calls. For example, authenticate an API call by using Basic authentication, a client certificate, or a managed identity.
 - **Caching**. These policies enable you to improve API performance by storing and retrieving responses in the cache.
-- **Validation**. These policies validate API calls by comparing certain parameters to what's in your API specification. For example, you can validate the request or response body, the request header parameters, and the response headers.
+- **Validation**. These policies validate API calls by comparing certain parameters to what's in your API specification. For example, validate the request or response body, the request header parameters, and the response headers.
 
-Flexibly combine your policies in *policy definitions*, which are XML documents that consist of a series of statements, each of which represents a policy and its parameters.Policy definitions let you configure separate policies at different stages of the API request/response pipeline:
+Flexibly combine your policies in *policy definitions*, which are XML documents that consist of a series of statements, each of which represents a policy and its parameters.Policy definitions let you configure separate policies at different stages of the API request-response pipeline:
 
 :::image type="content" source="../media/2-what-is-azure-api-management-policies.png" alt-text="A consumer's API request enters the Azure API Management gateway where it passes through inbound policies before being sent to the backend server. The API response then passes though the gateway's outbound policies before being sent to the originating API consumer." lightbox="../media/2-what-is-azure-api-management-policies.png":::

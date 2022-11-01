@@ -10,6 +10,7 @@ metadata:
   ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: engagement-fy23
 durationInMinutes: 6
 content: |
   [!include[](includes/3-how-azure-api-management-works.md)]
