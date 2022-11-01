@@ -13,28 +13,3 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/7-sql-language-enhancements.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-  - content: "xxxxx"
-    choices: 
-    - content: "xxxx"
-      isCorrect: false
-      explanation: "xxxx"
-    - content: "xxxx"
-      isCorrect: false
-      explanation: "xxxxx"
-    - content: "xxxxx"
-      isCorrect: true
-      explanation: "xxxx"
-  - content: "xxxxx"
-    choices: 
-    - content: "xxxxx"
-      isCorrect: false
-      explanation: "xxxxx"
-    - content: "xxxxx"
-      isCorrect: true
-      explanation: "xxxxx"
-    - content: "xxxxx"
-      isCorrect: false
-      explanation: "xxxxx"
