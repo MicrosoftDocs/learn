@@ -1,78 +1,20 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Log Analytics is a tool in the Azure portal for retrieving or visualizing the log data in the Azure Monitor Logs store. Azure Private 5G Core allows you to use Log Analytics to remotely monitor sites in a private mobile network. To do the monitoring, configure the packet core instance at each site to stream its log data to the Azure Monitor Logs store, and then use queries to retrieve the log data. You can also create dashboards that visualize the query data.
 
-    Goal: briefly summarize the key skill this unit will teach
+> [!NOTE]
+> Log Analytics is part of Azure Monitor and is chargeable. In addition, currently you can only use Log Analytics to monitor private mobile networks that support 5G UEs. If you don't want to incur any costs or if you want to use 4G UEs, use the packet core dashboards to do the monitoring.
 
-    Heading: none
+Log Analytics is particularly helpful for enterprises with multiple sites in their private mobile networks. For example, the network operation manager can monitor geographically dispersed sites from the headquarter of an enterprise.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+In this unit, we'll go through basics tasks in using Log Analytics to monitor Azure Private 5G Core. After the learning, you should be able to set up Log Analytics for a private mobile network and use it to monitor the network.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+## Enable Log Analytics for a packet core instance
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+## Configure Log Analytics for a packet core instance
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+## Use queries to retrieve log data
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+## Use dashboards to visualize log data
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+## Monitor your private mobile network with Log Analytics
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
-
-    Goal: State concisely what's covered in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+1) label individual sites 2) Define critical alerts and alert levels 3) Can't replace realtime on-site monitoring

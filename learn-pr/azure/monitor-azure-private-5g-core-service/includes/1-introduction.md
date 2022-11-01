@@ -7,23 +7,21 @@ Azure Private 5G Core provides flexible monitoring options, which allow you to e
 
 - Remote monitoring with Azure Log Analytics: Log Analytics is a standard Azure tool that you can use through the Azure portal. Once you enable the Log Analytics tool for a private mobile network is enabled, each packet core instance in the network starts to stream relevant logs to the tool. You can create queries to retrieve the log data, and use Log Analytics dashboards to visualize your saved log queries.
 
-  > [!NOTE]
-  > Currently you can only use Log Analytics to monitor private mobile networks that support 5G UEs. For 4G UEs, use the packet core dashboards.
-
 - Local monitoring with packet core dashboards: The packet core instance that powers each site in a private mobile network provides the packet core dashboards by default. With these boards, you can monitor key network statistics in real time. These boards also allow you to view information on firing alerts, based on which you can quickly react to emerging issues.
 
 For diagnosing issues that are reported during network monitoring, Azure Private 5G Core provides a distributed tracing tool on each packet core instance. This tool allows you to analyze the communication between network functions and identify the root cause of a certain issue. Once the root cause is identified, you can take relevant measures to fix the issue.
 
 With these monitoring and troubleshooting tools, you can monitor the health of your private mobile network on a continuous basis and diagnose issues once they're reported. The monitoring and troubleshooting capabilities of Azure Private 5G Core help ensure the business continuity of enterprises and minimize possible business impact.
 
+The following video introduces the monitoring and capabilities of Azure Private 5G Core. It also discusses the use of relevant tools and techniques.
+
+TBD: Insert the monitoring introduction video here.
+
 ## Monitoring example
 
 Suppose you're a network operation manager in logistic company, which has three sites deployed with Azure Private 5G Core in its private mobile network. You have a team member working at each site. One of the major responsibilities of your team is to monitor the entire mobile network and make sure everything runs smoothly. If an issue is reported during the monitoring, your team will need to diagnose the issue and take measure to fix it.
 
 In this case, you can enable Log Analytics for each site and then create dashboards to monitor the sites remotely through the Azure portal. This way, you can monitor the health of the network no matter where you work. For the team member at each site, you can ask them to use the packet core dashboards to monitor the site locally in real time. If the monitoring tool reports an issue for a site, the team member at the site can use the distributed tracing tool to diagnose.
-
-> [!NOTE] 
-> Log Analytics is part of Azure Monitor and is chargeable. Don't enable it if you don't want to incur any costs.
 
 The following diagram illustrates this monitoring structure:
 
