@@ -16,25 +16,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "xxxxx"
+  - content: "SQL Server 2022 uses REST API to provide data virtualization to which type of data sources?"
     choices: 
-    - content: "xxxx"
-      isCorrect: false
-      explanation: "xxxx"
-    - content: "xxxx"
-      isCorrect: false
-      explanation: "xxxxx"
-    - content: "xxxxx"
+    - content: "S3 compatible object storage providers"
       isCorrect: true
-      explanation: "xxxx"
-  - content: "xxxxx"
+      explanation: "SQL Server 2022 provides built-in REST API support for S3 compatible object storage providers"
+    - content: "Oracle data sources using ODBC"
+      isCorrect: false
+      explanation: "SQL Server 2022 does support Oracle data sources but uses ODBC with Polybase services and not REST API."
+    - content: "Hadoop data sources using Java"
+      isCorrect: false
+      explanation: "Polybase support for Hadoop using Java has been removed in SQL Server 2022."
+  - content: "SQL Server 2022 data virtualization now supports which file format popular for data lakes?"
     choices: 
-    - content: "xxxxx"
+    - content: "JSON"
       isCorrect: false
-      explanation: "xxxxx"
-    - content: "xxxxx"
+      explanation: "JSON is not natively supported for data virtualization in SQL Server 2022. You can create a file format to define the structure of a JSON file."
+    - content: "Parquet"
       isCorrect: true
-      explanation: "xxxxx"
-    - content: "xxxxx"
+      explanation: "Parquet files are natively supported in SQL Server 2022 without the need to create a file format definition."
+    - content: "HDFS"
       isCorrect: false
-      explanation: "xxxxx"
+      explanation: "HDFS is a file system and not a file or data format."

@@ -46,7 +46,7 @@ A new capability in SQL Server 2022 is to create an external table based on a qu
 
 ### New native file format support
 
-SQL Server allows you to create a file format to define the structure of a file in a remote data source. SQL Server 2022 now recognizes natively file formats **parquet** and **delta tables**.
+SQL Server allows you to create a file format to define the structure of a file in a remote data source. You would use file formats to define the structure of a JSON file since it JSON is not a native supported file format. SQL Server 2022 now recognizes natively file formats **parquet** and **delta tables**.
 
 - **Parquet**
 
