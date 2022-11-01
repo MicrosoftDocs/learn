@@ -44,7 +44,7 @@ There are many different ways of confirming that the application is doing what i
 
 An important aspect to consider is how to measure the effectiveness of new features in an application. One way to measure that is through the Application Insights User Behavior Analytic, which you can use to determine how people are using your application. By analyzing the results, you can decide whether a new feature has increased or decreased your application's usability.
 
-Certain services in Azure offer functionality that can help you implement these kind of tests. For example: the deployment slot functionality in the Azure App Service allows you to have two different versions of the same application running at the same time, and you can redirect your users to one version or the other.
+Certain services in Azure offer functionality that can help you implement these kinds of tests. For example: the deployment slot functionality in the Azure App Service allows you to have two different versions of the same application running at the same time, and you can redirect your users to one version or the other.
 
 ### Stress tests
 
