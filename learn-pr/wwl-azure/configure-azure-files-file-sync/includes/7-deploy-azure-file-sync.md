@@ -4,9 +4,6 @@ Before you can start synchronizing files with Azure File Sync, there are several
 
 ### Step 1: Deploy the Storage Sync Service
 
-> [!Note]
-> These are high-level steps. A more detailed [Tutorial: Extend Windows file servers with Azure File Sync](/azure/storage/file-sync/file-sync-extend-servers) is available. 
-
 You can deploy the Storage Sync Service from the Azure portal. You configure the following settings:
 - The deployment name for the Storage Sync Service
 - The Azure subscription ID to use for the deployment
@@ -15,7 +12,7 @@ You can deploy the Storage Sync Service from the Azure portal. You configure the
 
 ### Step 2: Prepare each Windows Server to use Azure File Sync
 
-After you deploy the Storage Sync Service, you can configure each Windows Server or cloud virtual machine that you intend to use with Azure File Sync, including server nodes in a Failover Cluster. 
+After you deploy the Storage Sync Service, you configure each Windows Server or cloud virtual machine that you intend to use with Azure File Sync, including server nodes in a Failover Cluster. 
 
 ### Step 3: Install the Azure File Sync agent
 
