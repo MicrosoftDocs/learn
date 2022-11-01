@@ -31,8 +31,8 @@ Each published API resides on a different server, has its own process for onboar
 We'll examine Azure API Management to help you decide if it's the correct solution to help reduce your company's API complexity. We'll study the following three main components:
 
 - Gateway. A single endpoint for all your API calls, which eases the implementation of security, rate limits, caching, and transformations.
-- Administration interface. A single interface for all your APIs where you can manage users, set policies, create API products, and run analytics.
-- Developer portal. A web page that brings all your APIs into a single location for developers to read documentation, test APIs, review code samples, get API keys, and run analytics.
+- Administration interface. A single interface where you import APIs, set policies, create API products, manage users and groups, and run analytics.
+- Developer portal. A website that brings all your APIs into a single location for developers to read documentation, test APIs, review code samples, get API keys, and run analytics.
 
 We'll also study Azure API Management from the following three user angles:
 
