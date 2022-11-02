@@ -3,7 +3,7 @@ uid: learn.wwl.detect-analyze-faces
 metadata:
   title: Detect and analyze faces with the Face service
   description: "Detect and analyze faces with the Face service"
-  ms.date: 09/05/2022
+  ms.date: 10/31/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ abstract: |
   Learn how to use the Face cognitive service to detect and analyze faces in images.
 prerequisites: |
   Ability to navigate the Azure portal
-iconUrl: /training/achievements/detect-analyze-faces.svg
+iconUrl: /learn/achievements/detect-analyze-faces.svg
 levels:
 - beginner
 roles:

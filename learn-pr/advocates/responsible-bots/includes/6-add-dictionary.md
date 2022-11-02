@@ -150,5 +150,5 @@ We've now programmed our bot to inform users about countries' capital/major citi
 
 <!-- Links -->
 
-[List of national capitals]: https://en.wikipedia.org/wiki/List_of_national_capitals
+[List of national capitals/major cities]: https://en.wikipedia.org/wiki/List_of_national_capitals
 [SimpleMaps]: https://simplemaps.com/data/world-cities?azure-portal=true

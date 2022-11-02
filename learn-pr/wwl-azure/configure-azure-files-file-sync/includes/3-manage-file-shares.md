@@ -19,3 +19,5 @@ You can connect your Azure Files share with Windows or Windows Server in the Azu
 ## Mount Azure Files share on Linux
 
 You can also connect Azure Files shares with Linux machines. From your virtual machine page, select **Connect**. Azure Files shares can be mounted in Linux distributions by using the CIFS kernel client. File mounting can be done on-demand with the `mount` command or on-boot (persistent) by creating an entry in /etc/fstab.
+
+:::image type="content" source="../media/map-file-shares-linux-1639a49a.png" alt-text="Screenshot that shows how to connect to an Azure Files share with Linux in the Azure portal.":::

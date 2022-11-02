@@ -28,7 +28,7 @@ In the following diagram, the WAF feature of the application gateway protects th
 
 ![Illustration that shows a single application gateway filtering all external requests made to the virtual machines located at two different sites.](../media/6-app-gateway-waf.png)
 
-For non-HTTP-based services protection or for increased customization, you can use Azure Firewall to secure your network resources. Azure Firewall is a fully stateful, firewall as a service with built-in high availability and unrestricted cloud scalability. It provides both east-west and north-south traffic inspection. It can provide greater security customization for those applications that require it. This can increase complexity, so you should carefully consider your requirements.
+For non-HTTP-based services protection or for increased customization, you can use Azure Firewall to secure your network resources. Azure Firewall is a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability. It provides both east-west and north-south traffic inspection. It can provide greater security customization for those applications that require it. This can increase complexity, so you should carefully consider your requirements.
 
 Any resource exposed to the internet is at risk for a denial-of-service attack. These types of attacks try to overwhelm a network resource by sending so many requests that the resource becomes slow or unresponsive.
 
@@ -46,13 +46,13 @@ The following diagram shows how a network security group restricts the back end 
 
 ![An illustration showing usage of network security group to restrict back-end and middle-tier machines from communicating directly with the internet.](../media/6-azure-network-security.png)
 
-To isolate Azure services to allow communication only from virtual networks, use virtual network service endpoints. With service endpoints, you can secure Azure service resources to your virtual network.
+To isolate Azure services to allow communication only from virtual networks, you can use virtual network service endpoints. With service endpoints, you can secure Azure service resources to your virtual network.
 
 Securing service resources to a virtual network provides improved security by fully removing public internet access to resources and allowing traffic only from your virtual network. This technique:
 
-- Reduces the attack surface for your environment
-- Reduces the administration required to limit communication between your virtual network and Azure services
-- Provides optimal routing for this communication
+- Reduces the attack surface for your environment.
+- Reduces the administration required to limit communication between your virtual network and Azure services.
+- Provides optimal routing for this communication.
 
 ### Network integration
 
@@ -66,4 +66,4 @@ With ExpressRoute, you can establish connections to Microsoft cloud services, su
 
 ![An architectural diagram that shows an ExpressRoute circuit connecting the customer network with Azure resources.](../media/6-expressroute-connection-overview.png)
 
-To easily integrate multiple virtual networks in Azure, virtual network peering establishes a direct connection between designated virtual networks. After a connection is established, you can use network security groups to provide isolation between resources in the same way that you secure resources within a virtual network. This integration gives you the ability to provide the same fundamental layer of security across any peered virtual networks. Communication is allowed only between directly connected virtual networks.
+To easily integrate multiple virtual networks in Azure, virtual network peering establishes a direct connection between designated virtual networks. After a connection is established, you can use network security groups to provide isolation between resources in the same way that you secure resources within a virtual network. This integration lets you provide the same fundamental layer of security across any peered virtual networks. Communication is allowed only between directly connected virtual networks.
