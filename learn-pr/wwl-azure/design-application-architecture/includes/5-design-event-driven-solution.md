@@ -40,9 +40,9 @@ Azure Event Grid can be an ideal solution for an event-driven application archit
 
    | Azure service | Purpose | Message or Event | Usage scenario |
    | --- | --- | --- | --- |
-   | **Azure Event Grid**| Reactive programming | Event distribution (discrete)| React to status changes |
-   | **Azure Event Hubs**| Big data pipeline | Event streaming (series) | Conduct telemetry and distributed data streaming |
-   | **Azure Service Bus**| High-value enterprise messaging | Message | Fulfill order processing and financial transactions |
+   | **Azure Event Grid**| Reactive programming | Event distribution (discrete)| _React to status changes_ |
+   | **Azure Event Hubs**| Big data pipeline | Event streaming (series) | _Conduct telemetry and distributed data streaming_ |
+   | **Azure Service Bus**| High-value enterprise messaging | Message | _Fulfill order processing and financial transactions_ |
 
 - **Consider distinct roles for services**. Investigate using Azure services side by side to fulfill distinct roles. An e-commerce site can use Azure Service Bus to process an order, Azure Event Hubs to capture site telemetry, and Azure Event Grid to respond to events like an item being shipped.
 
