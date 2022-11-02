@@ -76,7 +76,7 @@ Azure API Management provides several service tiers, each offering a distinct se
 > [!NOTE]
 > The pricing for the Consumption tier is per API call, where the first million calls are free, and the remainder then billed a fixed rate per 10,000 calls. Pricing for all the other tiers is per hour.
 
-## How to apply policies to API requests and responses
+## Apply policies to API requests and responses
 
 One of the biggest problems with having multiple published APIs is that each API requires a separate set of policies. Here, a *policy* is a setting or action that controls the behavior of the API. For example, if you want to enforce a *rate limit* (the maximum number of API calls allowed from a single source in a given time period) you'd include that limit as part of the policies for an API. This is just one example, but there are numerous policies you can apply. Multiply that by several different APIs and you have a management nightmare.
 
