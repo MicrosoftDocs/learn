@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/19/2022
+  ms.date: 11/02/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -16,34 +16,37 @@ content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
   title: ""
+
   questions:
-  - content: "Which the following solutions should be used for the transaction processing requirement?"
+  - content: "Which Azure solution can supply transaction processing for the game?"
     choices:
-    - content: "Azure Queue storage"
+    - content: "Azure Queue Storage queues"
       isCorrect: false
-      explanation: "Incorrect. Azure queues are for simple queues to organize messages. It would not be able to group messages into a transaction."
+      explanation: "Incorrect. Azure Queue Storage stores simple queues for organizing messages. This service can't group messages into a transaction."
     - content: "Azure Service Bus queues"
       isCorrect: true
-      explanation: "Correct. Azure Service Bus queues provide advanced message handing. For example, the ability to group messages into a transaction."
+      explanation: "Correct. Azure Service Bus queues provide advanced message handing, and can group messages into a transaction."
     - content: "Azure Service Bus topics"
       isCorrect: false
       explanation: "Incorrect. Azure Service Bus topics is better for multiple receivers with multiple destinations."
-  - content: "Which of the following solutions should be used for the update management requirement?"
+  
+  - content: "What option do you recommend for the software requirements?"
     choices:
-    - content: "Azure Resource Manager templates"
+    - content: "Azure Resource Manager (ARM) templates"
       isCorrect: false
-      explanation: "Incorrect. Azure Resource Manager templates define the infrastructure and configuration for your deployment."
-    - content: "Azure Bicep templates"
+      explanation: "Incorrect. ARM templates define the infrastructure and configuration for your deployment."
+    - content: "Azure Bicep"
       isCorrect: false
       explanation: "Incorrect. Azure Bicep is a template language that's used to declaratively deploy Azure resources."
     - content: "Azure Automation"
       isCorrect: true
       explanation: "Correct. Azure Automation gives you complete control of update management."
-  - content: "Which of the following solutions should be used for the event handling requirement?"
+  
+  - content: "How should the events be handled in the game?"
     choices:
     - content: "Azure Event Hubs"
       isCorrect: true
-      explanation: "Correct. Azure Event Hubs can handle millions of events with low latency. Azure Event Hubs can stream events to blob storage."
+      explanation: "Correct. Azure Event Hubs can handle millions of events with low latency. Azure Event Hubs can stream events to Azure Blob Storage."
     - content: "Azure Event Grid"
       isCorrect: false
       explanation: "Incorrect. Azure Event Grid distributes events from different sources to different handlers."
