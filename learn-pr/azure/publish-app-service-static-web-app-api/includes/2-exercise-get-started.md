@@ -6,7 +6,7 @@ This module makes it easy for you to create a new repository by using a GitHub t
 
 1. Navigate to the [create from template page](https://github.com/login?return_to=/MicrosoftDocs/mslearn-staticwebapp/generate?azure-portal=true) for the template repository. If you get a *404: Page Not Found* error, sign in to GitHub and try again.
 
-1. Choose one of your Github accounts in the **Owner** drop-down.
+1. Choose one of your GitHub accounts in the **Owner** drop-down.
 
 1. Name your repository **my-static-web-app**.
 
