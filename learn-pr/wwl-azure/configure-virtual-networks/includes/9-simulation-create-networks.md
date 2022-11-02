@@ -19,7 +19,7 @@ Your organization is migrating network infrastructure and virtual machines to Az
     + Create a virtual machine, **vm1**, in **vnet1** and allow inbound RDP.
     + Create a second virtual machine, **vm2**, in **vnet1** and allow inbound RDP. 
     + Ensure both virtual machines are deployed and running before continuing.
-+ **Task 3**: Test the virtual machine connnections.
++ **Task 3**: Test the virtual machine connections.
     + Using RDP connect to **vm1**.
     + Using RDP connect to **vm2**.
     + Disable the public and private Windows Defender firewall on both virtual machines.
