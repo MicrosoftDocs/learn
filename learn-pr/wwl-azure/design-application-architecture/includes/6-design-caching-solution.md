@@ -6,8 +6,6 @@ Caching is most effective when a client instance repeatedly reads the same data,
 - It's subject to a high level of contention.
 - It's far away, and network latency can result in slow access to the store.
 
-### Tailwind Traders scenario 
-
 Suppose Tailwind Traders is adding a new feature to the product demo application to increase customer traffic to their retail website. The event feature adds a banner to the top of the mobile app to announce special offers and limited product discounts. New offers are posted on the hour, and the remaining product availability for each offer is updated after every order is processed. The first customer to respond to a new offer receives a double discount! Customers are encouraged to check their mobile app frequently for updates to the offers and product availability. To implement this new feature, you need to design a caching solution that can support in-memory fast read and writes.
 
 ### Things to know about Azure Cache for Redis
