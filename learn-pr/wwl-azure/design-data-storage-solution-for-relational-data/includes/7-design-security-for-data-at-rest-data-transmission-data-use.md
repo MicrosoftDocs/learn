@@ -28,7 +28,7 @@ Large organizations, governments, and military entities use data classification 
 
 ### Things to know about data at rest and TDE
 
-Data encryption at rest is a mandatory step toward data privacy, compliance, and data sovereignty. Encryption helps mitigate risks related to unauthorized data access. data at rest needs to be protected from unauthorized or offline access to raw files or backups to an unsecured server. data at rest needs to be protected by preventing copying of the database and transaction log files to an unsecured server.
+Data encryption at rest is a mandatory step toward data privacy, compliance, and data sovereignty. Encryption helps mitigate risks related to unauthorized data access. data at rest needs to be protected from unauthorized or offline access to raw files or backups to an unsecured server. Data at rest needs to be protected by preventing copying of the database and transaction log files to an unsecured server.
 
 Transparent data encryption (TDE) protects Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics against the threat of malicious offline activity by encrypting data at rest. TDE performs real-time encryption and decryption of the database, associated backups, and transaction log files at rest without requiring changes to the application. TDE is enabled by default to all newly deployed Azure SQL Databases. For Azure SQL Managed Instance, databases created after February 2019 have TDE enabled.
 
