@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check.
-  ms.date: 09/15/2021
+  ms.date: 10/31/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ quiz:
     - content: Add a rollback stage to your pipeline.
       isCorrect: false
       explanation: Incorrect. You can add a rollback stage to reverse the effects of a stage that's failed, but it doesn't validate the Bicep file that you submit.
-  - content: Which of these is an example of negative testing?
+  - content: Which of these scenarios is an example of negative testing?
     choices:
     - content: Manually approving a pipeline run.
       isCorrect: false
@@ -45,7 +45,7 @@ quiz:
       explanation: Incorrect. The Bicep linter is part of the Bicep tooling. It runs automatically when you build or deploy a Bicep file.
     - content: A template with no linting warnings or errors is guaranteed to deploy successfully.
       isCorrect: false
-      explanation: Incorrect. The linter runs some basic checks on code style. Your template might lint successfully but not deploy.
+      explanation: Incorrect. The linter runs some basic checks on code style. Your template might successfully pass the linter's checks, but not deploy.
     - content: Linting ensures that your Bicep file meets a minimum quality level for code style.
       isCorrect: true
       explanation: Correct. The linter doesn't verify that your file will deploy successfully, but it checks that your Bicep file follows some basic rules for code style.

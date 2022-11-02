@@ -10,6 +10,7 @@ You can [automate regression testing](/azure/load-testing/overview-what-is-azure
 
 :::image type="content" source="../media/azure-load-testing-preview-70bf5b4d.png" alt-text="Azure Load Testing Preview flow.":::
 
+
 > [!NOTE]
 > The overview image shows how Azure Load Testing uses Azure Monitor to capture metrics for app components. Learn more about the [supported Azure resource types](/azure/load-testing/resource-supported-azure-resource-types).
 
@@ -21,10 +22,10 @@ Get started with [adding load testing to your Azure Pipelines CI/CD workflow](/a
 
 For more information about the Azure Load Testing preview, see:
 
-- [What is Azure Load Testing?](/azure/load-testing/overview-what-is-azure-load-testing)
-- [Tutorial: Use a load test to identify performance bottlenecks](/azure/load-testing/tutorial-identify-bottlenecks-azure-portal).
-- [Tutorial: Set up automated load testing](/azure/load-testing/tutorial-cicd-azure-pipelines).
-- Learn about the [key concepts for Azure Load Testing](/azure/load-testing/concept-load-testing-concepts).
-- [Quickstart: Create and run a load test with Azure Load Testing](/azure/load-testing/quickstart-create-and-run-load-test).
-- [Tutorial: Identify performance regressions with Azure Load Testing and GitHub Actions](/azure/load-testing/tutorial-cicd-github-actions).
-- [Configure Azure Load Testing for high-scale load tests](/azure/load-testing/how-to-high-scale-load).
+ -  [What is Azure Load Testing?](/azure/load-testing/overview-what-is-azure-load-testing)
+ -  [Tutorial: Use a load test to identify performance bottlenecks](/azure/load-testing/tutorial-identify-bottlenecks-azure-portal).
+ -  [Tutorial: Set up automated load testing](/azure/load-testing/tutorial-cicd-azure-pipelines).
+ -  Learn about the [key concepts for Azure Load Testing](/azure/load-testing/concept-load-testing-concepts).
+ -  [Quickstart: Create and run a load test with Azure Load Testing](/azure/load-testing/quickstart-create-and-run-load-test).
+ -  [Tutorial: Identify performance regressions with Azure Load Testing and GitHub Actions - Azure Load Testing](/azure/load-testing/tutorial-cicd-github-actions).
+ -  [Configure Azure Load Testing for high-scale load tests - Azure Load Testing](/azure/load-testing/how-to-high-scale-load).
