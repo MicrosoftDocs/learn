@@ -34,9 +34,6 @@ As discussed in the previous unit, C# defines several operators to express your 
 
 You were introduced to the null-forgiving operator (`!`) in the previous section. It tells the compiler to ignore the CS8600 warning. This is one way to tell the compiler that you know what you're doing, but it comes with the caveat that you should _actually know what you're doing_!
 
-> [!TIP]
-> The null-forgiving operator is colloquially referred to as the "dammit" operator. _I know what I'm doing, dammit!_
-
 When you initialize non-nullable types while a nullable context is enabled, you may need to explicitly ask the compiler for forgiveness. For example, consider the following code:
 
 ```csharp
