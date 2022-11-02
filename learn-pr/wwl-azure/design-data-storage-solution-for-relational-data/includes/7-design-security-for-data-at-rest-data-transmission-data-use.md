@@ -11,7 +11,7 @@ Data exists in three basic states: data at rest, data in motion, and data in pro
 
 - **Data in motion** (also called _data in transit_) is data that's being moved from one device to another within a private network or public network like the internet. data in motion can also be data that's being read (used) but not changed. Data in motion includes email messages in transit, browsing internet websites, or using company applications like an organization chart.
 
-- **Data in process** is data that's open and being changed. Data in motion includes writing an email message, saving your work files, or ordering from a website.
+- **Data in process** is data that's open and being changed. Data in process includes writing an email message, saving your work files, or ordering from a website.
 
 There are different encryption methods for each of data state. The following table summarizes the methods. 
 
