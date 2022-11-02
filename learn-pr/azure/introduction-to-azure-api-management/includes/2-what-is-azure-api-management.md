@@ -84,7 +84,7 @@ Azure API Management solves the API policy problem by enabling you to set polici
 
 - **Access restriction**. These policies determine when an API request is allowed through the gateway. For example, enforce rate limits and usage quotas, filter caller IPs, and check for a valid JSON Web Token (JWT).
 - **Authentication**. Authenticate API calls, for example, by using Basic authentication, a client certificate, or a managed identity.
-- **Caching**. mprove API performance by storIing and retrieving responses in the cache.
+- **Caching**. Improve API performance by storing and retrieving responses in the cache.
 - **Validation**. Validate API calls by comparing certain parameters to what's in your API specification. For example, validate the request or response body, the request header parameters, and the response headers.
 
 Flexibly combine your policies in *policy definitions*, which are XML documents that consist of a series of statements, each of which represents a policy and its parameters. Policy definitions let you configure separate policies at different stages of the API request-response pipeline:
