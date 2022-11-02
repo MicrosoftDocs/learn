@@ -4,7 +4,7 @@ This repository contains the modules and learning paths for Microsoft Cloud + AI
 
 ## Other Learn repos
 
-* **Content repos:** To view the list of all Learn content repos, see [Microsoft Learn GitHub repositories](https://review.docs.microsoft.com/learn-docs/docs/repos-msft-learn).
+* **Content repos:** To view the list of all Learn content repos, see [Microsoft Learn GitHub repositories](https://review.learn.microsoft.com/learn-docs/docs/repos-msft-learn).
 * **Code repos:** Code repos for individual modules follow the naming convention of `https://github.com/MicrosoftDocs/mslearn-module-name`. To find them all, search in GitHub for all repos in the MicrosoftDocs GitHub organization that start with `mslearn-`.
 
 ## Content author and learner experience
@@ -17,22 +17,22 @@ The content in Learn repos is developed, organized, and displayed differently th
 
 ### Home, landing, and browse pages
 
-* [Microsoft Learn home page](https://docs.microsoft.com/training/) (*Also available via `https://microsoft.com/learn` and `https://docs.com/learn`)
-* [Browse all training resources](https://docs.microsoft.com/training/browse/)
+* [Microsoft Learn training home page](/training/)
+* [Browse all training resources](https://learn.microsoft.com/training/browse/)
 
 To view all of the available landing pages, you can navigate to them from the header of the home page.
 
 ## Contributions and feedback
 
-We welcome contributions and feedback. How you contribute depends on who you are and the sort of changes you'd like to contribute. For more information about how to understand the content files, view our [create a module](https://review.docs.microsoft.com/learn-docs/docs/create-a-module#implementation) documentation.
+We welcome contributions and feedback. How you contribute depends on who you are and the sort of changes you'd like to contribute. For more information about how to understand the content files, view our [create a module](https://review.learn.microsoft.com/learn-docs/docs/create-a-module#implementation) documentation.
 
 ### Microsoft employees
 
-* **Minor updates**: See the [Docs contributor guide](https://review.docs.microsoft.com/help/contribute/) for more information.
+* **Minor updates**: See the [Docs contributor guide](https://review.learn.microsoft.com/help/contribute/) for more information.
 
 * **New content + major changes**: If you want to create a new module or submit major changes, please fill out the [new content request form](https://aka.ms/docs/welcome). Once you've agreed to a plan, you'll work with the right employees to help get training, bring in that content, or write new content.
 
-For more information about contributing to Microsoft Learn, see the [Microsoft Learn contributor guide](https://review.docs.microsoft.com/help/learn).
+For more information about contributing to Microsoft Learn, see the [Microsoft Learn contributor guide](https://review.learn.microsoft.com/help/learn).
 
 **Report an issue + provide feedback**: Email: [learn-en-us@microsoft.com](learn-en-us@microsoft.com)
 
@@ -46,6 +46,6 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 
 ## Questions
 
-View the [Microsoft Learn FAQ](https://docs.microsoft.com/training/support/faq).
+View the [Microsoft Learn FAQ](https://learn.microsoft.com/training/support/faq).
 
 For questions related to repo and build issues, contact: [learn-repo-managers@microsoft.com](mailto:learn-repo-managers@microsoft.com)

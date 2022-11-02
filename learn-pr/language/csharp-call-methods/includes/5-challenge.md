@@ -1,6 +1,6 @@
 Code challenges throughout these modules will reinforce what you've learned and help you gain some confidence before continuing on.
 
-In this exercise, you'll use either Intellisense or the documentation at Microsoft Docs to find and call a method that returns the larger of two numbers.
+In this exercise, you'll use either Intellisense or Microsoft Learn documentation to find and call a method that returns the larger of two numbers.
 
 ### Step 1: Delete all of the code in the .NET Editor from the earlier exercise.
 
@@ -26,6 +26,6 @@ When you run your code, you should get the following output:
 600
 ```
 
-To accomplish this, you'll use a method on the `System.Math` class. You can use either Intellisense or Microsoft Docs to find the method and figure out how to call it properly.
+To accomplish this, you'll use a method on the `System.Math` class. You can use either Intellisense or Microsoft Learn to find the method and figure out how to call it properly.
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.

@@ -3,7 +3,7 @@ uid: learn.azure.manage-subscription-access-azure-rbac
 metadata:
   title: Manage access to an Azure subscription by using Azure role-based access control (Azure RBAC)
   description: Learn how to assign management access to a subscription by using Azure role-based access control.
-  ms.date: 01/13/2020
+  ms.date: 09/21/2022
   author: rolyon
   ms.author: rolyon
   ms.topic: interactive-tutorial

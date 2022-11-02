@@ -68,5 +68,5 @@ We've covered what Microsoft Graph PowerShell is and its ability to manage users
 
 ## Notes
 
-Overview of Microsoft Graph PowerShell - (https://docs.microsoft.com/en-us/powershell/microsoftgraph/overview)
-Get started with Microsoft Graph PowerShell - (https://docs.microsoft.com/en-us/powershell/microsoftgraph/get-started)
+Overview of Microsoft Graph PowerShell - (https://learn.microsoft.com/powershell/microsoftgraph/overview)
+Get started with Microsoft Graph PowerShell - (https://learn.microsoft.com/powershell/microsoftgraph/get-started)

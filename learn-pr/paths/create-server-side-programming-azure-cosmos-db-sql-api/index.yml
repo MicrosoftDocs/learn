@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.create-server-side-programming-azure-cosmos-db-sql-api
 metadata:
-  title: Create server-side programming constructs in Azure Cosmos DB SQL API
-  description: Create server-side programming constructs in Azure Cosmos DB SQL API
-  ms.date: 12/21/2021
+  title: Create server-side programming constructs in Azure Cosmos DB for NoSQL
+  description: Create server-side programming constructs in Azure Cosmos DB for NoSQL
+  ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Create server-side programming constructs in Azure Cosmos DB SQL API
+title: Create server-side programming constructs in Azure Cosmos DB for NoSQL
 prerequisites: |
   Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
 summary: |

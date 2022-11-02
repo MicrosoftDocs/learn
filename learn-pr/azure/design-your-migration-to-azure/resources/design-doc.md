@@ -162,8 +162,8 @@ Discusses using Azure Migrate to assess your existing workloads, then using Azur
 
 Supporting documentation:
 
-Azure Migrate - https://docs.microsoft.com/azure/migrate/migrate-overview
+Azure Migrate - https://learn.microsoft.com/azure/migrate/migrate-overview
 
-Azure Site Recovery - https://docs.microsoft.com/azure/site-recovery/site-recovery-overview
+Azure Site Recovery - https://learn.microsoft.com/azure/site-recovery/site-recovery-overview
 
-Azure Database Migration Service - https://docs.microsoft.com/azure/dms/dms-overview
+Azure Database Migration Service - https://learn.microsoft.com/azure/dms/dms-overview

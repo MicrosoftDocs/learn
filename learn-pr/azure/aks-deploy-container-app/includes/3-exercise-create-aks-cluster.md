@@ -1,6 +1,6 @@
 In this exercise, you'll create an AKS cluster that uses several nodes to meet the demand of many customers using the service. You decide to use the *single control plane and multiple nodes* architecture because it provides the best way to create and manage workload resources.
 
-AKS supports both Linux and Windows node pools via the Portal or Azure CLI, however, if you're going to use windows node pools, the cluster must be created with additional **prerequisites** and commands. Please make a selection below, based on which type of node pools you want to add.
+AKS supports both Linux and Windows node pools via the Portal or Azure CLI, however, if you're going to use Windows node pools, the cluster must be created with extra **prerequisites** and commands. Make a selection below, based on which type of node pools you want to add.
 
 [!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -21,10 +21,10 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
     export CLUSTER_NAME=aks-contoso-video
     export LOCATION=<myLocation>
     ```
-    
-    Note that you should update the LOCATION variable with the region closest to you; for example: `eastus`.
 
-1. Run the `az group create` command to create a resource group. You'll deploy all resources into this new resources group.
+    Update the LOCATION variable with the region closest to you; for example: `eastus`.
+
+1. Run the `az group create` command to create a resource group. You'll deploy all resources into this new resource group.
 
     ```azurecli
     az group create --name=$RESOURCE_GROUP --location=$LOCATION
@@ -45,7 +45,7 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
 
     The above command creates a new AKS cluster named `aks-contoso-video` within the `rg-contoso-video` resource group. The cluster will have two nodes defined by the `--node-count` parameter. We're using only two nodes here for cost considerations in this exercise. The `--node-vm-size` parameter configures the cluster nodes as Standard_B2s-sized VMs. The HTTP application routing add-on is enabled via the `--enable-addons` flag. These nodes will be part of **System** mode.
 
-1. Run the `az aks nodepool add` command to add additional node pool of linux operating system.
+1. Run the `az aks nodepool add` command to add another node pool that uses the default Linux operating system.
 
     ```azurecli
     az aks nodepool add \
@@ -56,7 +56,7 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
         --node-vm-size Standard_B2s
     ```
 
-    The above command adds a new node pool (**User mode**) to an existing AKS cluster (created in previous command). This new node pool can be used to host applications and workloads, instead of using **System** node pool, which gets created during previous command `az aks create`.
+    The command adds a new node pool (**User mode**) to the existing AKS cluster (created in the previous command). This new node pool can be used to host applications and workloads, instead of using the **System** node pool that was created in the previous step using `az aks create`.
 
 #### [Windows](#tab/windows)
 
@@ -75,10 +75,10 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
     export CLUSTER_NAME=aks-contoso-video
     export LOCATION=<myLocation>
     ```
-    
-    Note that you should update the LOCATION variable with the region closest to you; for example: `eastus`.
 
-1. Run the `az group create` command to create a resource group. You'll deploy all resources into this new resources group.
+    Update the LOCATION variable with the region closest to you; for example: `eastus`.
+
+1. Run the `az group create` command to create a resource group. You'll deploy all resources into this new resource group.
 
     ```azurecli
     az group create --name=$RESOURCE_GROUP --location=$LOCATION
@@ -98,11 +98,11 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
         --windows-admin-username localadmin
     ```
 
-    The above command creates a new AKS cluster named `aks-contoso-video` within the `rg-contoso-video` resource group. The cluster will have two nodes defined by the `--node-count` parameter. We're using only two nodes in this exercise for cost considerations. The `--node-vm-size` parameter configures the cluster nodes as Standard_B2s-sized VMs. The HTTP application routing add-on is enabled via the `--enable-addons` flag. These nodes will be part of **System** mode.
+    The command creates a new AKS cluster named `aks-contoso-video` within the `rg-contoso-video` resource group. The cluster will have two nodes defined by the `--node-count` parameter. We're using only two nodes in this exercise for cost considerations. The `--node-vm-size` parameter configures the cluster nodes as Standard_B2s-sized VMs. The HTTP application routing add-on is enabled via the `--enable-addons` flag. These nodes will be part of **System** mode.
 
-    The `--windows-admin-username` parameter is used to setup administrator credentials for Windows containers, and prompts the user to set a password at the command line. The password has to meet [**Windows Server password requirements**](/windows/security/threat-protection/security-policy-settings/password-must-meet-complexity-requirements#reference).
+    The `--windows-admin-username` parameter is used to set up administrator credentials for Windows containers, and prompts the user to set a password at the command line. The password has to meet [**Windows Server password requirements**](/windows/security/threat-protection/security-policy-settings/password-must-meet-complexity-requirements#reference).
 
-1. Run the `az aks nodepool add` command to add additional node pool of Windows operating system.
+1. Run the `az aks nodepool add` command to add another node pool that uses the Windows operating system.
 
     ```azurecli
     az aks nodepool add \
@@ -114,7 +114,7 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
         --os-type Windows
     ```
 
-    The command adds a new node pool (**User mode**) to an existing AKS cluster (created in previous command). This new node pool can be used to host applications and workloads, instead of using **System** node pool, which was created in previous step using `az aks create`.
+    The command adds a new node pool (**User mode**) to an existing AKS cluster (created in the previous command). This new node pool can be used to host applications and workloads, instead of using the  **System** node pool, which was created in the previous step using `az aks create`.
 
     The `--os-type` parameter is used to specify operating system of the node pool. If not specified, the command will use Linux as operating system for the nodes.
 
@@ -142,20 +142,20 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
 
    ```output
    NAME                                STATUS   ROLES   AGE    VERSION
-   aks-nodepool1-21895026-vmss000000   Ready    agent   245s   v1.19.9
-   aks-nodepool1-21895026-vmss000001   Ready    agent   245s   v1.19.9
-   aks-userpool-21895026-vmss000000    Ready    agent   105s   v1.19.9
-   aks-userpool-21895026-vmss000001    Ready    agent   105s   v1.19.9
+   aks-nodepool1-21895026-vmss000000   Ready    agent   245s   v1.23.12
+   aks-nodepool1-21895026-vmss000001   Ready    agent   245s   v1.23.12
+   aks-userpool-21895026-vmss000000    Ready    agent   105s   v1.23.12
+   aks-userpool-21895026-vmss000001    Ready    agent   105s   v1.23.12
    ```
 
 #### [Windows](#tab/windows)
 
    ```output
    NAME                                STATUS   ROLES   AGE    VERSION
-   aks-nodepool1-40010859-vmss000000   Ready    agent   245s   v1.19.9
-   aks-nodepool1-40010859-vmss000001   Ready    agent   245s   v1.19.9
-   aksuspool000000                     Ready    agent   105s   v1.19.9
-   aksuspool000001                     Ready    agent   105s   v1.19.9
+   aks-nodepool1-40010859-vmss000000   Ready    agent   245s   v1.23.12
+   aks-nodepool1-40010859-vmss000001   Ready    agent   245s   v1.23.12
+   aksuspool000000                     Ready    agent   105s   v1.23.12
+   aksuspool000001                     Ready    agent   105s   v1.23.12
    ```
 
 ---

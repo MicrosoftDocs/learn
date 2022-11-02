@@ -1,4 +1,4 @@
-The Microsoft.Azure.Cosmos.Container class in the SDK has a series of built-in classes to create a query, issue the query to Azure Cosmos DB SQL API, set up an asynchronous stream in C#, and return items efficiently back to the client.
+The Microsoft.Azure.Cosmos.Container class in the SDK has a series of built-in classes to create a query, issue the query to Azure Cosmos DB for NoSQL, set up an asynchronous stream in C#, and return items efficiently back to the client.
 
 To start, let’s use a straightforward SQL command that returns all products:
 

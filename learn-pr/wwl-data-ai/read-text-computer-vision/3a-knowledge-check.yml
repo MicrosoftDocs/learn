@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/05/2022
+  ms.date: 10/18/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -14,25 +14,25 @@ labModal: false
 durationInMinutes: 2
 quiz:
   questions:
-  - content: "You want to extract text from images and then use the Text Analytics service to analyze the text. You want developers to require only one key and endpoint to access all of your services. What kind of resource should you create in your Azure subscription?"
+  - content: "You want to extract text from images and then use the Language service to analyze the text. You want developers to require only one key and endpoint to access all of your services. What kind of resource should you create in your Azure subscription?"
     choices:
     - content: "Computer Vision"
       isCorrect: false
-      explanation: "Incorrect. This resource type only supports image analysis. A separate resource (with its own key and endpoint) would be required for text analytics."
+      explanation: "Incorrect. This resource type only supports image analysis. A separate resource (with its own key and endpoint) would be required for text analytics with the Language service."
     - content: "Cognitive Services"
       isCorrect: true
-      explanation: "Correct. A Cognitive Services resource supports both Computer Vision for text extraction, and Text Analytics for text analysis."
-    - content: "Text Analytics"
+      explanation: "Correct. A Cognitive Services resource supports both Computer Vision for text extraction, and Language for text analytics."
+    - content: "Language"
       isCorrect: false
-      explanation: "Incorrect. The Text Analytics service provides text analysis capabilities, but cannot extract text from images. A separate resource (with its own key and endpoint) would be required for text extraction."
-  - content: "You plan to use the Computer Vision service to read text in a  large PDF document. Which API should you use?"
+      explanation: "Incorrect. The Language service provides text analytics capabilities, but cannot extract text from images. A separate resource (with its own key and endpoint) would be required for text extraction from images."
+  - content: "You plan to use the Computer Vision service's Read API. What results can the Read API provide?"
     choices:
-    - content: "The Read API"
+    - content: "Results arranged in pages, lines, and words"
       isCorrect: true
-      explanation: "Correct: Not only is the Read API better suited for larger images but it runs asynchronously so it will not block your application while it is running"
-    - content: "The OCR API"
+      explanation: "Correct: The Read API takes an image and extracts the words, organizing the results by page and line."
+    - content: "Only the bounding box coordinations"
       isCorrect: false
-      explanation: "Incorrect: The OCR API is not optimized for large documents and doesn't support PDF format."
-    - content: "The Recognize Text API"
+      explanation: "Incorrect: While the Read API does provide the bounding box coordinates of words, it also provides its most confident prediction of the text in the image."
+    - content: "Results arranged by pages that have photographs first, then pages that exclusively have text"
       isCorrect: false
-      explanation: "Incorrect: The Recognize Text API is deprecated."
+      explanation: "Incorrect: The Read API returns results in the order of the pages submitted regardless of their content."

@@ -5,8 +5,9 @@ metadata:
   title: Creating a database with Azure Database for PostgreSQL
   description: Review the different configuration options for Azure Database for PostgreSQL
   ms.date: 10/23/2020
-  author: tomreidnz
-  ms.author: jasdeb
+  author: markingmyname
+  ms.author: maghan
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

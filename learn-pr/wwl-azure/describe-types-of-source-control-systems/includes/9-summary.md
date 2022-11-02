@@ -9,7 +9,7 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [What is Team Foundation Version Control?](/azure/devops/repos/tfvc/what-is-tfvc).
- -  [Migrate from TFVC to Git](/devops/develop/git/migrate-from-tfvc-to-git).
- -  [Choosing the right version control for your project](/azure/devops/repos/tfvc/comparison-git-tfvc).
- -  [Get started with Git in Azure Repos](/azure/devops/repos/git/gitquickstart).
+ -  [What is Team Foundation Version Control - Azure Repos \| Microsoft Docs](/azure/devops/repos/tfvc/what-is-tfvc).
+ -  [Migrate from TFVC to Git - Azure DevOps \| Microsoft Docs](/devops/develop/git/migrate-from-tfvc-to-git).
+ -  [Git and TFVC version control - Azure Repos \| Microsoft Docs](/azure/devops/repos/tfvc/comparison-git-tfvc).
+ -  [Get started with Git and Visual Studio - Azure Repos \| Microsoft Docs](/azure/devops/repos/git/gitquickstart).

@@ -6,8 +6,11 @@ metadata:
   description: Define the coffee machine in a device template
   ms.date: 09/24/2018
   #TODO: Update with real author name.
-  author: adrianstevens
-  ms.author: adsteven
+  author: asergaz
+  ms.author: sergaz
+  ms.reviewer: adchukwu
+  manager: lizross
+  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12

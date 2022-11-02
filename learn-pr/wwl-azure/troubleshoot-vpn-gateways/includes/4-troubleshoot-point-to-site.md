@@ -4,7 +4,7 @@ If you've individuals working remotely, then a point-to-site connection is a sec
 
 :::image type="content" source="../media/4-point-to-site.png" alt-text="A diagram showing a sample point-to-site connection." border="false":::
 
-The key steps to deploy a site-to-site VPN gateway are:
+The key steps to deploy a point-to-site VPN gateway are:
 
 - Create the virtual network that will connect to the on-premises network.
 

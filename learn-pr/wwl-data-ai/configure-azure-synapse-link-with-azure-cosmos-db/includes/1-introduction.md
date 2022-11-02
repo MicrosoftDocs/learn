@@ -2,8 +2,8 @@ Azure Synapse Analytics Link for Cosmos DB enables *hybrid transactional/analyti
 
 In this module, you'll learn how to:
 
-- Configure a Cosmos DB Account to use Azure Synapse Link.
+- Configure an Azure Cosmos DB account to use Azure Synapse Link.
 - Create an analytical store enabled container.
-- Create a linked service for Cosmos DB.
+- Create a linked service for Azure Cosmos DB.
 - Analyze linked data using Spark.
-- Analyze linked data using Synapse SQL. 
+- Analyze linked data using Synapse SQL.

@@ -2,7 +2,7 @@ Before you can deploy Azure Firewall, you need to plan your network topology, id
 
 ## Recommended network topology
 
-Recall that Azure Firewall is best deployed by using a hub-and-spoke network topology, with the following characteristics:
+Recall that Azure Firewall is best deployed by using a hub-and-spoke network topology with the following characteristics:
 
 - A virtual network that acts as the central connectivity point. This network is the hub virtual network.
 - One or more virtual networks that are peered to the hub. These peers are the spoke virtual networks and are used to provision workload servers.
@@ -29,7 +29,7 @@ Recall that Azure Firewall offers many features designed to make it easier to cr
 
 |Feature  |Description  |
 |---------|---------|
-|FQDN     |A domain name of a host, or one or more IP addresses. Adding an FQDN to an application rule allows access to that domain. When you use an FQDN in an application rule, you can use wild cards, such as *.google.com.        |
+|FQDN     |A domain name of a host, or one or more IP addresses. Adding an FQDN to an application rule allows access to that domain. When you use an FQDN in an application rule, you can use wildcards, such as *.google.com.        |
 |FQDN tag     |A group of well-known Microsoft FQDNs. Adding an FQDN tag to an application rule allows outbound access to the tag's FQDNs. For example, there are FQDN tags for Windows Update, Azure Virtual Desktop, Windows diagnostics, and Azure Backup. FQDN tags are managed by Microsoft and can't be modified or created.       |
 |Service tag     |A group of IP address prefixes related to a specific Azure service. Adding a service tag to a network rule allows access to the service represented by the tag. There are service tags for dozens of Azure services, including Azure Backup, Azure Cosmos DB, and Azure Logic Apps. Service tags are managed by Microsoft and can't be modified or created.        |
 |IP groups     |A group of IP addresses, such as 10.2.0.0/16 or 10.1.0.0-10.1.0.31. You can use an IP group as the source address in a NAT or application rule, or as the source or destination address in a network rule.        |

@@ -1,8 +1,8 @@
-Indexes are data structures that allow queries faster access to your documents. Azure Cosmos DB API for MongoDB takes advantage of the core index-management capabilities of Azure Cosmos DB. In this unit, we'll introduce different types of indexes and how to to set them up from the Azure portal Data Explorer or programmatically using collection commands. Indexes are set at the collection level.
+Indexes are data structures that allow queries faster access to your documents. Azure Cosmos DB for MongoDB takes advantage of the core index-management capabilities of Azure Cosmos DB. In this unit, we'll introduce different types of indexes and how to to set them up from the Azure portal Data Explorer or programmatically using collection commands. Indexes are set at the collection level.
 
-By default, Azure Cosmos DB API for MongoDB automatically indexes the ***_id*** field. Uniqueness is automatically enforced by the ***_id*** field per shard key.
+By default, Azure Cosmos DB for MongoDB automatically indexes the ***_id*** field. Uniqueness is automatically enforced by the ***_id*** field per shard key.
 
-Let's review the different types of indexes supported by the Azure Cosmos DB API for MongoDB.
+Let's review the different types of indexes supported by the Azure Cosmos DB for MongoDB.
 
 ## Index types
 
@@ -14,7 +14,7 @@ Let's look at a couple of ways to create a single field index. Let's assume that
 
 #### Create a single field index using the Azure portal Index Policy tab
 
-Under your Azure Cosmos DB API for MongoDB database in the Azure portal, select Data Explorer.
+Under your Azure Cosmos DB for MongoDB database in the Azure portal, select Data Explorer.
 
 1. Expand *Inventory* then *products* and select **Settings**.
 1. Select the **Indexing Policy** tab. Notice that by default you should already have two indexes pre-created, the ***_id*** single field index discussed earlier and the ***`$**`*** wildcard index we'll discuss later. For now, ignore those indexes.
@@ -27,7 +27,7 @@ Under your Azure Cosmos DB API for MongoDB database in the Azure portal, select 
 
 #### Create a single field index using the MongoDB Shell
 
-Open Mongo Shell, make sure it's pointing to your Azure Cosmos DB API for MongoDB account using the account's connection string.
+Open Mongo Shell, make sure it's pointing to your Azure Cosmos DB for MongoDB account using the account's connection string.
 
 Run the following commands to add the two indexes.
 
@@ -161,7 +161,7 @@ Let's suppose we want to add a compound index by ***lastName*** descending and *
 
 #### Create a compound index using the MongoDB Shell
 
-Open Mongo Shell, make sure it's pointing to your Azure Cosmos DB API for MongoDB account using the account's connection string.
+Open Mongo Shell, make sure it's pointing to your Azure Cosmos DB for MongoDB account using the account's connection string.
 
 Run the following commands to add the two indexes.
 
@@ -313,7 +313,7 @@ We actually saw a wildcard index earlier, the index ***`$**`*** in the screensho
 
 ## Index properties
 
-Azure Cosmos DB API for MongoDB supports several index properties depending on the version. We'll look a couple of them here, to learn more, please review the [supported indexes and indexed properties](/azure/cosmos-db/mongodb/feature-support-40#indexes-and-index-properties) article.
+Azure Cosmos DB for MongoDB supports several index properties depending on the version. We'll look a couple of them here, to learn more, please review the [supported indexes and indexed properties](/azure/cosmos-db/mongodb/feature-support-40#indexes-and-index-properties) article.
 
 ### Unique indexes
 
@@ -334,7 +334,7 @@ db.IOT.createIndex( {"locationId": 1, "deviceId" : 1 }, {unique:true} )
 
 ### Unique partial indexes
 
-Azure Cosmos DB API for MongoDB gives us the ability to create unique indexes on a subset of the documents in our collection that meet a criteria defined by the ***partialFilterExpression*** property. This will enforce uniqueness on any document that meets the Filter criteria preventing any duplicates from being inserted. However, this filter won't prevent any document that doesn't meet the criteria from also being inserted.
+Azure Cosmos DB for MongoDB gives us the ability to create unique indexes on a subset of the documents in our collection that meet a criteria defined by the ***partialFilterExpression*** property. This will enforce uniqueness on any document that meets the Filter criteria preventing any duplicates from being inserted. However, this filter won't prevent any document that doesn't meet the criteria from also being inserted.
 
 To create a partial index, use the *db.collection.createIndex()* method with the *partialFilterExpression* option and *unique* constraint. The *partialFilterExpression* option accepts a document that specifies the filter condition using:
 
@@ -356,4 +356,4 @@ All index updates are always done in the background. Index updates consume Reque
 
 Adding a new index doesn't affect read availability. While the index is being created Azure Cosmos DB will use the existing indexes to support queries. No inconsistency of query results will happen when new indexes are being built or added.
 
-For more information on MongoDB indexes please review the [Manage indexing in Azure Cosmos DB API for MongoDB](/azure/cosmos-db/mongodb/mongodb-indexing) document.
+For more information on MongoDB indexes please review the [Manage indexing in Azure Cosmos DB for MongoDB](/azure/cosmos-db/mongodb/mongodb-indexing) document.

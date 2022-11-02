@@ -5,14 +5,14 @@ variables:
 stages:
 
 - stage: Lint
-  jobs: 
+  jobs:
   - job: Lint
     steps:
       - script: |
           az bicep build --file deploy/main.bicep
 
 - stage: Validate
-  jobs: 
+  jobs:
   - job: Validate
     steps:
       - task: AzureResourceManagerTemplateDeployment@3

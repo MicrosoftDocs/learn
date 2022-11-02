@@ -10,109 +10,13 @@ It's a more efficient way to drive activities when events happen in your project
 
 Azure DevOps includes built-in support for the following Service Hooks:
 
-:::row:::
-  :::column:::
-    **Build and release.**
-  :::column-end:::
-  :::column:::
-    **Collaborate**
-  :::column-end:::
-  :::column:::
-    **Customer support**
-  :::column-end:::
-  :::column:::
-    **Plan and track**
-  :::column-end:::
-  :::column:::
-    **Integrate**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    AppVeyor
-  :::column-end:::
-  :::column:::
-    Campfire
-  :::column-end:::
-  :::column:::
-    UserVoice
-  :::column-end:::
-  :::column:::
-    Trello
-  :::column-end:::
-  :::column:::
-    Azure Service Bus
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Bamboo
-  :::column-end:::
-  :::column:::
-    Flowdock
-  :::column-end:::
-  :::column:::
-    Zendesk
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    Azure Storage
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Jenkins
-  :::column-end:::
-  :::column:::
-    HipChat
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    Web Hooks
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    MyGet
-  :::column-end:::
-  :::column:::
-    Hubot
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    Zapier
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Slack
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-:::row-end:::
-
+| **Build and release.** | **Collaborate** | **Customer support** | **Plan and track** | **Integrate**     |
+| ---------------------- | --------------- | -------------------- | ------------------ | ----------------- |
+| AppVeyor               | Campfire        | UserVoice            | Trello             | Azure Service Bus |
+| Bamboo                 | Flowdock        | Zendesk              |                    | Azure Storage     |
+| Jenkins                | HipChat         |                      |                    | Web Hooks         |
+| MyGet                  | Hubot           |                      |                    | Zapier            |
+| Slack                  |                 |                      |                    |                   |
 
 This list will change over time.
 
