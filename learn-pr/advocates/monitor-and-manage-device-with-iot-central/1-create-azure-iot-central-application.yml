@@ -5,7 +5,6 @@ metadata:
   title: Create an Azure IoT Central application
   description: Create an Azure IoT Central application
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
   author: asergaz
   ms.author: sergaz
   ms.reviewer: adchukwu

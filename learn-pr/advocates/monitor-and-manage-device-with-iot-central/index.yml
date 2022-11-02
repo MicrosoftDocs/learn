@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.monitor-manage-device-with-iotcentral
+title: Monitor and manage your coffee machine with Azure IoT Central
 metadata:
   title: Monitor and manage your coffee machine with Azure IoT Central
   description: Learn how to create an Azure IoT Central application to control Internet of Things devices that communicate through unique connection strings.
@@ -11,7 +12,6 @@ metadata:
   ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Monitor and manage your coffee machine with Azure IoT Central
 summary: Learn how to create an Azure IoT Central application to monitor and manage an IoT device.
 abstract: |
   In this module, you will:
