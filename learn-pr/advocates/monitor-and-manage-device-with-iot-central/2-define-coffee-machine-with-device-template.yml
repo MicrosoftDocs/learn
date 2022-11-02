@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.monitor-manage-device-with-iotcentral.define-coffee-machine-with-device-template
+uid: learn.monitor-manage-device-with-iotcentral.2-define-coffee-machine-with-device-template
 title: Define the coffee machine in a device template
 metadata:
   title: Define the coffee machine in a device template
@@ -14,4 +14,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 12
 content: |
-  [!include[](includes/3-define-coffee-machine-with-device-template.md)]
+  [!include[](includes/2-define-coffee-machine-with-device-template.md)]

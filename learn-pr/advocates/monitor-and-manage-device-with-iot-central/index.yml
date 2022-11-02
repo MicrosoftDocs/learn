@@ -33,13 +33,11 @@ products:
 subjects:
 - iot
 units:
-- learn.monitor-manage-device-with-iotcentral.introduction
-- learn.monitor-manage-device-with-iotcentral.create-azure-iot-central-application
-- learn.monitor-manage-device-with-iotcentral.define-coffee-machine-with-device-template
-- learn.monitor-manage-device-with-iotcentral.connect-your-application-to-simulator
-- learn.monitor-manage-device-with-iotcentral.validate-your-connection
-- learn.monitor-manage-device-with-iotcentral.configure-rules-and-actions
-- learn.monitor-manage-device-with-iotcentral.knowledge-check
-- learn.monitor-manage-device-with-iotcentral.summary
+- learn.monitor-manage-device-with-iotcentral.1-create-azure-iot-central-application
+- learn.monitor-manage-device-with-iotcentral.2-define-coffee-machine-with-device-template
+- learn.monitor-manage-device-with-iotcentral.3-connect-your-application-to-simulator
+- learn.monitor-manage-device-with-iotcentral.4-validate-your-connection
+- learn.monitor-manage-device-with-iotcentral.5-configure-rules-and-actions 
+- learn.monitor-manage-device-with-iotcentral.6-knowledge-check
 badge:
   uid: learn.monitor-manage-device-with-iotcentral.badge
