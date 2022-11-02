@@ -8,11 +8,11 @@ You can manage devices, apps, and data by using a cloud-based mobile device mana
 
 ## On-premises endpoint management
 
-By using an on-premises endpoint management solution, you can manage your on-premise Windows 10/11 devices, apps, data, and optimize downloads and content. By restricting access and location, your environment is more secure. Your end users will not be able to access company apps and data using remote devices. If you only use an on-premises solution, those remote devices will not be protected as corporately recognized endpoints. If you use Configuration Manager, you should attach your Configuration Manager deployment to the Microsoft 365 cloud (cloud attach), which will provide integration with Intune, Azure AD, Microsoft Defender ATP, and other cloud services.
+By using an on-premises endpoint management solution, you can manage your on-premises Windows 10/11 devices, apps, data, and optimize downloads and content. By restricting access and location, your environment is more secure. Your end users won't be able to access company apps and data using remote devices. If you only use an on-premises solution, those remote devices won't be protected as corporately recognized endpoints. If you use Configuration Manager, you should attach your Configuration Manager deployment to the Microsoft 365 cloud (cloud attach), which will provide integration with Intune, Azure AD, Microsoft Defender ATP, and other cloud services.
 
 ## Cloud + on-premises endpoint management
 
-For Configuration Manager managed devices, data can also flow to Microsoft Endpoint Management through the ConfigMgr connector. This is called tenant attach, where the ConfigMgr connector is attached to the cloud. It  requires a connection to an Intune tenant, and doesn't require turning on co-management.
+For Configuration Manager managed devices, data can also flow to Microsoft Endpoint Management through the ConfigMgr connector. The ConfigMgr connector is attached to the cloud in a *tenant attach* that requires a connection to an Intune tenant, but doesn't require turning on co-management.
  
 ## Co-managed endpoint management
 
