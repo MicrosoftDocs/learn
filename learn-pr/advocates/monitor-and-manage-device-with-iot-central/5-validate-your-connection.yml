@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.monitor-manage-device-with-iotcentral.4-validate-your-connection
+uid: learn.monitor-manage-device-with-iotcentral.validate-your-connection
 title: Validate your connection and data flow
 metadata:
   title: Validate your connection and data flow
@@ -16,4 +16,4 @@ interactive: bash
 azureSandbox: true
 durationInMinutes: 12
 content: |
-  [!include[](includes/4-validate-your-connection.md)] 
+  [!include[](includes/5-validate-your-connection.md)] 
