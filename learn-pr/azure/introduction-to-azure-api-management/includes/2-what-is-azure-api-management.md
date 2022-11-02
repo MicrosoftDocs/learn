@@ -62,7 +62,7 @@ The *Azure API Management developer portal* is a fully customizable website that
 
 ## Azure API Management tiers
 
-Azure API Management provides several service tiers, each offering a distinct set of features, capacities, and pricing. The following table lists the tiers in order from lowest to highest price and compares some key capabilties.
+Azure API Management provides several service tiers, each offering a distinct set of features, capacities, and pricing. The following table lists the tiers in order from lowest to highest price and compares some key capabilities.
 
 |**Criteria**  |**Consumption**  |**Developer**  |**Basic**  |**Standard**  |**Premium**  |
 | --- | --- | --- | --- | --- | --- |
