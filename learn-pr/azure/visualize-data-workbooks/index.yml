@@ -7,7 +7,7 @@ metadata:
   author: AbbyMSFT
   ms.author: abbyweisberg
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: azure-monitor
 title: Visualize data combined from multiple data sources by using Azure Monitor Workbooks.
 summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
 abstract: |
@@ -20,24 +20,25 @@ prerequisites: |
   - "TODO prerequisite 2"
   - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
 iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+levels: 
   - beginner
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
-  - developer
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+roles: 
+  - Network Engineer
+  - Technology Manager
+products:
 - azure
-- azure
-- monitor
-subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+- azure monitor
+- azure portal
+- azure workbooks
+subjects:
   - cloud-computing
 units:
 - learn.visualize-data-workbooks.introduction
-- learn.visualize-data-workbooks.learning-content
+- learn.visualize-data-workbooks.azure-monitor-workbooks
 - learn.visualize-data-workbooks.exercise
 - learn.visualize-data-workbooks.learning-content
 - learn.visualize-data-workbooks.exercise
 - learn.visualize-data-workbooks.knowledge-check
 - learn.visualize-data-workbooks.summary
-- learn.visualize-data-workbooks.resources
 badge:
   uid: learn.visualize-data-workbooks.badge

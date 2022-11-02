@@ -1,31 +1,8 @@
-<!-- 1. Restate the scenario problem --------------------------------------------------------------------------------
+As an IT admin, you need a way to build a report that can be used interactively by all your teams, no matter what resources they use.
 
-    Goal: Summarize the challenge(s) posed in the introduction scenario; be brief (1-2 sentences)
+Azure Workbooks is a platform for building interactive reports that can query different data sources to monitor multiple components of your application. You can use the several types of visualizations supported by Azure Workbooks to compare the data from multiple data sources all in one report.
 
-    Heading: none
-
-    Example: "You are writing the instruction manual for a new model fire extinguisher. The instructions must be quickly read and understood by a wide variety of people."
-
-    [Summary unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit?branch=main)
--->
-TODO: restate the scenario problem
-
-<!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
-
-    Goal: Describe how you used the product to solve the problem(s) posed in the introduction scenario
-
-    Heading: none; depending on length, you can put this in a separate paragraph or combine this with the previous section into a single paragraph
-
-    Recommended: format this as lead-in sentence(s) followed by a list
-
-    Example: "You did some research and found that Plain English is a good writing style for safety-critical communications. You applied several Plain English techniques to your instructions:
-        * Removed unnecessary words, which made your sentences easier to read even in a stressful situation like a fire.
-        * Made sure all sentences used the active voice, which made your content more direct.
-        * Replaced fire-industry jargon with everyday words, which made the instructions accessible to a wider audience.
-        * Replaced a comma-delimited list with a bulleted list, which made the steps to activate the fire extinguisher easier to follow."
- -->
-TODO: add your lead-in sentence(s)
-TODO: add your list of techniques used to solve the scenario problem
+In this module, we were able to build interactive visualizations by querying information from multiple sources to display the distribution of resources across the team’s subscriptions and to assess the usage of individual resources.
 
 <!-- 3. Describe the experience without the product ---------------------------------------------------
 

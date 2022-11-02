@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.visualize-data-workbooks.learning-content
+uid: learn.visualize-data-workbooks.azure-monitor-workbooks
 title: Enter learning content title
 metadata:
   title: learning-content
@@ -8,7 +8,7 @@ metadata:
   author: AbbyMSFT
   ms.author: abbyweisberg
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: azure-monitor
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-learning-content.md)]
+  [!include[](includes/2-azure-monitor-workbooks.md)]
