@@ -18304,6 +18304,11 @@
       "source_path": "learn-pr/wwl-data-ai/use-language-understanding-speech/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/create-language-solution-azure-cognitive-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-hpc/3-azure-vm-hpc-instances.yml",
+      "redirect_url": "/training/modules/intro-to-hpc/3-how-azure-hpc-works",
+      "redirect_document_id": true
     }
   ]
 }
