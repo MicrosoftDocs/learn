@@ -1,6 +1,6 @@
 Let's say that you run an operations team that was responsible for resources running on Azure. What would you do to ensure you had visibility into the health of your systems? If something happens, who finds out first? Your team or your end users?
 
-Monitoring is the act of collecting and analyzing data to determine the performance, health, and availability of your business applications, and the resources on which they depend. An effective monitoring strategy helps you focus on the health of your application. It also helps you increase your uptime by proactively notifying you of critical issues so that you can resolve them before they become problems.
+Monitoring is the act of collecting and analyzing data to determine the performance, health, and availability of your business applications and the resources on which they depend. An effective monitoring strategy helps you focus on the health of your application. It also helps you increase your uptime by proactively notifying you of critical issues so that you can resolve them before they become problems.
 
 When it comes to monitoring and analytics on Azure, we can bundle services into three specific areas of focus:
 
@@ -14,7 +14,7 @@ In this unit, you'll take a look through each of these bundles, and you'll learn
 
 ## Core monitoring
 
-Core monitoring provides fundamental, required monitoring across Azure resources. When we talk about fundamental monitoring, you can think of it as monitoring what's happening with your resources at the Azure platform level. This area of focus gives you insight into things like the health of the Azure platform, changes being made to your resources, and performance metrics. Using services from this area gives you the ability to monitor the basic pieces you need to keep your application running.
+Core monitoring provides fundamental, required monitoring across Azure resources. When we talk about fundamental monitoring, you can think of it as monitoring what's happening with your resources at the Azure platform level. This area of focus gives you insight into things like the health of the Azure platform, changes being made to your resources, and performance metrics. Using services from this area lets you monitor the basic pieces you need to keep your application running.
 
 Azure provides services to give you visibility into four key core monitoring areas: activity logging, the health of services, metrics and diagnostics, and recommendations on best practices.
 
@@ -24,16 +24,16 @@ These services are built into Azure and take little to no configuration to enabl
 
 Activity logging is an incredibly important source of information about what's happening with your resources at the Azure platform level. Every change submitted to the Azure platform is tracked in the Azure Activity Log, which gives you the ability to trace any action taken on your resources. The Activity Log will contain detailed information on activities to help you answer questions like:
 
-- Who has attached a disk to this virtual machine?
+- Who attached a disk to this virtual machine?
 - When was this machine shut down?
 - Who changed the load balancer configuration?
-- Why did the autoscale operation on my virtual machine scale set fail?
+- Why did the autoscale operation on my Virtual Machine Scale Set fail?
 
 Using Activity Log to answer these types of questions will help you troubleshoot issues, track changes, and provide auditing of what's happening in your Azure environment. Activity Log data is only retained for 90 days, although you can archive your data to a storage account, or you can send your data to Azure Log Analytics for longer retention and further analysis.
 
 ### Health of cloud services
 
-At some point, any system can have issues, and that's true for Azure services as well. Staying informed of the health of Azure services will help you understand if and when an issue that is impacting an Azure service is impacting your environment. What may seem like a localized issue could be the result of a more widespread issue, and Azure Service Health provides this insight. Azure Service Health identifies any issues with Azure services that might affect your application. Service Health also helps you plan for scheduled maintenance.
+Any system can have issues at some point, and that's true for Azure services as well. Staying informed of the health of Azure services will help you understand if and when an issue that's impacting an Azure service is impacting your environment. What may seem like a localized issue could be the result of a more widespread issue, and Azure Service Health provides this insight. Azure Service Health identifies any issues with Azure services that might affect your application. Service Health also helps you plan for scheduled maintenance.
 
 ### Metrics and diagnostics
 
