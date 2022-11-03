@@ -51,7 +51,7 @@ Identify the subtasks of *Centralize your core services using hub and spoke Azur
 
 1. **Introduction**
 
-    *An organization with multiple locations across the country is planning their migration to Azure. Their VM infrastructure will have central dependencies (AD, DNS, tooling services) that they will need to isolate but still allow access to. They will also have internet-facing resources, as well as on-premises connectivity that they need to include in their design.*
+    *An organization with multiple locations across the country/region is planning their migration to Azure. Their VM infrastructure will have central dependencies (AD, DNS, tooling services) that they will need to isolate but still allow access to. They will also have internet-facing resources, as well as on-premises connectivity that they need to include in their design.*
 
 2. **Implementing a hub-spoke network topology on Azure**
 
