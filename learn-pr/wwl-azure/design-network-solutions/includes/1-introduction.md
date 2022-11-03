@@ -1,4 +1,4 @@
-Azure Architects need to design and recommend network solutions. Global organizations are seeking to cloud technologies that can improve their business operations. They want to support growth into new markets and enhance their user's experience.
+Azure Architects need to design and recommend network solutions. Global organizations are seeking cloud-based solutions to improve their business and foster growth into new markets. They need solutions that can offer robust and reliable user experiences in a global environment.
 
 ## Meet Tailwind Traders
 
@@ -26,19 +26,21 @@ In this module, you learn how to:
 
 The content in the module helps you prepare for Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions. The module concepts are covered in:
 
-Design network solutions
+Design infrastructure solutions
 
-- Recommend a network architecture solution based on workload requirements
+- Design network solutions
 
-- Recommend a connectivity solution that connects Azure resources to the internet
+   - Recommend a network architecture solution based on workload requirements
 
-- Recommend a connectivity solution that connects Azure resources to on-premises networks
+   - Recommend a connectivity solution that connects Azure resources to the internet
 
-- Optimize network performance for applications
+   - Recommend a connectivity solution that connects Azure resources to on-premises networks
 
-- Recommend a solution to optimize network security
+   - Optimize network performance for applications
 
-- Recommend a load balancing and routing solution
+   - Recommend a solution to optimize network security
+
+   - Recommend a load balancing and routing solution
 
 ## Prerequisites
 

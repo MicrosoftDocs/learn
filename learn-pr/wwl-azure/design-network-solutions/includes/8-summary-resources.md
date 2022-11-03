@@ -18,13 +18,13 @@ In this module, you learned how to evaluate and design an effective network arch
 
 ## Learn more with optional hands-on exercises
 
-- Complete an [introduction to Azure Virtual Networks](/training/modules/introduction-to-azure-virtual-networks/). _An Azure subscription is required for the exercises in this training module_.
+- Complete an [introduction to Azure Virtual Networks](/training/modules/introduction-to-azure-virtual-networks/). (_Azure subscription required_.)
 
-- Design and implement [Azure ExpressRoute](/training/modules/design-implement-azure-expressroute/). _An Azure subscription is required for the exercises in this training module_.
+- Design and implement [Azure ExpressRoute](/training/modules/design-implement-azure-expressroute/). (_Azure subscription required_.)
 
-- Design and implement [hybrid networking](/training/modules/design-implement-hybrid-networking/). _An Azure subscription is required for the exercises in this training module_.
+- Design and implement [hybrid networking](/training/modules/design-implement-hybrid-networking/). (_Azure subscription required_.)
 
-- Design and implement [private access to Azure Services](/training/modules/design-implement-private-access-to-azure-services/). _An Azure subscription is required for the exercises in this training module_.
+- Design and implement [private access to Azure Services](/training/modules/design-implement-private-access-to-azure-services/). (_Azure subscription required_.)
 
 - Enhance [your service availability and data locality with Azure Traffic Manager (sandbox)](/training/modules/distribute-load-with-traffic-manager/).
 
