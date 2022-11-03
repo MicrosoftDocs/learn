@@ -4,17 +4,17 @@ Your organization wants to ensure access to virtual machines is restricted.  As 
 
 + Create and configure network security groups.
 + Associate network security groups to virtual machines. 
-+ Deny and allow access to the virtul machines by using network security groups.
++ Deny and allow access to the virtual machines by using network security groups.
 
 ## Architecture diagram
 
-:::image type="content" source="../media/architecture-create-networks.png" alt-text="Diagram shouwing the architecture as explained in the text.":::
+:::image type="content" source="../media/architecture-create-networks.png" alt-text="Diagram showing the architecture as explained in the text.":::
 
 ## Objectives
 
 + **Task 1**: Create a virtual machine to test network security.
     + Create a Windows Server virtual machine. 
-    + Do not configure any inbound port rules or NIC network security groups.
+    + Don't configure any inbound port rules or NIC network security groups.
     + Verify the virtual machine was created.
     + Review the **Inbound port rules** tab, and note there are no network security groups associated with the virtual machine.
 + **Task 2**: Create a network security group and associate the group with the virtual machine.
@@ -25,7 +25,7 @@ Your organization wants to ensure access to virtual machines is restricted.  As 
     + Add an **inbound port rule** to allow RDP to the virtual machine on port 3389. 
     + Verify you can now connect to the virtual machine with RDP. 
 + **Task 4**: Configure an outbound security port rule to deny Internet access
-    + Verify you can access the internet form the virtual machine.
+    + Verify you can access the internet from the virtual machine.
     + Add an **outbound port rule** to deny internet access from the virtual machine. 
     + Verify you can no longer access the internet from the virtual machine. 
 
