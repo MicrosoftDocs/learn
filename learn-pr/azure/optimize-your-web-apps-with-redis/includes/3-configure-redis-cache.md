@@ -38,11 +38,11 @@ The Premium tier allows you to persist data in two ways to provide disaster reco
 
 1. RDB persistence takes a periodic snapshot and can rebuild the cache using the snapshot if there's a failure.
 
-    ![Screenshot of the Azure portal showing the RDB persistence options on a new Redis cache instance.](../media/3-redis-persistence-1.png)
+   :::image type="content" source="../media/3-redis-persistence-1.png" alt-text="Screenshot of the Azure portal showing the RDB persistence options on a new Redis cache instance.":::
 
 2. AOF persistence saves every write operation to a log that is saved at least once per second. AOF creates bigger files than RDB, but has less data loss.
 
-    ![Screenshot of the Azure portal showing the AOF persistence options on a new Redis cache instance.](../media/3-redis-persistence-2.png)
+   :::image type="content" source="../media/3-redis-persistence-2.png" alt-text="Screenshot of the Azure portal showing the AOF persistence options on a new Redis cache instance.":::
 
 There are several other settings that are only available to the **Premium** tier.
 

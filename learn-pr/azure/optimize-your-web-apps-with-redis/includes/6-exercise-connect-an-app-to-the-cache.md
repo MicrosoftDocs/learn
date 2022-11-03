@@ -48,11 +48,14 @@ Let's add the connection string we got from the Azure portal into the code. Neve
 
 1. Select the **SportsStatsTracker.csproj** file in the editor to open it.
 
-1. Add the following `<ItemGroup>` configuration block into the root `<Project>` element to include the new file in the project, and copy it to the output folder. This ensures that the app configuration file is placed in the output directory when the app is compiled/built.
+1. Add the following `<ItemGroup>` configuration block into the root `<Project>` element below the `<PropertyGroup>` element. This configuration will include the new file in the project and copy it to the output folder. This will ensure that the app configuration file is placed in the output directory when the app is compiled/built.
 
     ```xml
-    <Project Sdk="Microsoft.NET.Sdk">
-       ...
+    <Project Sdk="Microsoft.NET.Sdk">       
+        <PropertyGroup>
+            ...
+        </PropertyGroup>
+
         <ItemGroup>
             <None Update="appsettings.json">
               <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -67,55 +70,38 @@ Let's add the connection string we got from the Azure portal into the code. Neve
 
 A .NET Core application requires additional NuGet packages to read a JSON configuration file.
 
-In the command prompt section of the window, add a reference to the  **Microsoft.Extensions.Configuration.Json** NuGet package.
+In the command prompt section of the window, add a reference to the **Microsoft.Extensions.Configuration.Json** NuGet package.
 
-   ```bash
-    dotnet add package Microsoft.Extensions.Configuration.Json
-   ```
+```bash
+dotnet add package Microsoft.Extensions.Configuration.Json
+```
 
 ## Add code to read the configuration file
 
 Now that we've added the required libraries to enable reading configuration, we need to enable that functionality within our console application.
 
-1. Select **Program.cs** in the editor.
-
-1. At the top of the file, a `using System` line is present. Underneath that line, add the following lines of code.
-
-    ```csharp
-     using Microsoft.Extensions.Configuration;
-     using System.IO;
-    ```
-
-1. Replace the contents of the **Main** method with the following code. This code initializes the configuration system to read from the **appsettings.json** file.
-
-    ```csharp
-    var config = new ConfigurationBuilder()
-        .SetBasePath(Directory.GetCurrentDirectory())
-        .AddJsonFile("appsettings.json")
-        .Build();
-    ```
-
-Your **Program.cs** file should now look like the following example.
+1. Select **Program.cs** in the editor. Replace the contents of the file, with the following lines of code.
 
    ```csharp
-    using System;
-    using Microsoft.Extensions.Configuration;
-    using System.IO;
+   using Microsoft.Extensions.Configuration;
     
-    namespace SportsStatsTracker
-    {
-        class Program
-        {
-            static void Main(string[] args)
-            {
-                var config = new ConfigurationBuilder()
-                    .SetBasePath(Directory.GetCurrentDirectory())
-                    .AddJsonFile("appsettings.json")
-                    .Build();
-            }
-        }
-    }
+   namespace SportsStatsTracker
+   {
+       class Program
+       {
+           static void Main(string[] args)
+           {
+               var config = new ConfigurationBuilder()
+                   .SetBasePath(Directory.GetCurrentDirectory())
+                   .AddJsonFile("appsettings.json")
+                   .Build();
+           }
+       }
+   }
    ```
+
+   The `using` statement lets us access the libraries to read the configuration, and the code in the `Main` method initializes the configuration system to read from the **appsettings.json** file.
+
 
 ## Get the connection string from configuration
 
@@ -195,7 +181,7 @@ The return value from `StringSet` is a `bool` indicating whether the key was add
 1. Output the returned value.
 
    ```csharp
-    string getValue = db.StringGet("test:key");
+    string? getValue = db.StringGet("test:key");
     Console.WriteLine($"GET: {getValue}");
    ```
 
@@ -227,7 +213,7 @@ The return value from `StringSet` is a `bool` indicating whether the key was add
                     bool setValue = db.StringSet("test:key", "some value");
                     Console.WriteLine($"SET: {setValue}");
     
-                    string getValue = db.StringGet("test:key");
+                    string? getValue = db.StringGet("test:key");
                     Console.WriteLine($"GET: {getValue}");
                 }
             }
