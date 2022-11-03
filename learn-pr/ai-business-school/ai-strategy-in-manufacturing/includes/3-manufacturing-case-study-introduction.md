@@ -8,14 +8,14 @@ This case study shows how one of the world's largest manufacturing solutions pro
 
 :::row:::
 :::column span="2":::
-Established in 1966, Jabil is one of the world's largest manufacturing solution providers. With 170,000 employees in a global operation spanning 102 locations in 29 countries, Jabil works with leading companies in a diverse range of industries to create innovative and reliable products.
+Established in 1966, Jabil is one of the world's largest manufacturing solution providers. With 170,000 employees in a global operation spanning 102 locations in 29 countries/regions, Jabil works with leading companies in a diverse range of industries to create innovative and reliable products.
 
 The manufacturing industry forms the backbone of modern economies worldwide, with revolutionary developments in manufacturing processes enabling modern society as we currently know it. However, the global share of GDP from manufacturing has been declining for several decades. Manufacturing is now racing to keep up with the emergence of new digital technology, and the challenges of a changing global economy.
 
 Jabil operates a business-to-business (B2B) model that requires extremely complex manufacturing work for a wide variety of industries, including consumer products, defense & aerospace, healthcare, automotive, energy, industrial & building, networking and telecommunications.
 :::column-end:::
 :::column span="2":::
-![Jabil Context: Jabil is one of the world's largest manufacturing solution providers. 102 locations, 170,000 employees, 29 countries.](../media/1.5.2.B.Jabil-case-study-introduction.jpg)
+![Jabil Context: Jabil is one of the world's largest manufacturing solution providers. 102 locations, 170,000 employees, 29 countries/regions.](../media/1.5.2.B.Jabil-case-study-introduction.jpg)
 :::column-end:::
 :::row-end:::
 

@@ -1,6 +1,6 @@
 Often, you need to deploy multiple resources that are very similar. By adding loops to your Bicep files, you can avoid having to repeat resource definitions. Instead, you can dynamically set the number of instances of a resource you want to deploy. You can even customize the properties for each instance.
 
-For your toy company, you need to deploy back-end infrastructure, including some Azure SQL logical servers, to support the launch of the new smart teddy bear. You need to deploy a dedicated logical server to each country where the toy will be available, so that you're in compliance with each country's data protection laws. 
+For your toy company, you need to deploy back-end infrastructure, including some Azure SQL logical servers, to support the launch of the new smart teddy bear. You need to deploy a dedicated logical server to each country/region where the toy will be available, so that you're in compliance with each country/region's data protection laws. 
 
 Apart from their locations, all logical servers will be configured in the same way. You want to use Bicep code to deploy your logical servers, and a parameter should allow you to specify the regions into which the logical servers should be deployed.
 
