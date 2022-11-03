@@ -30,7 +30,7 @@ quiz:
     choices:
     - content: "Check that your subscription is allowed to deploy VMs of this type."
       isCorrect: false
-      explanation: "HB-series VMs are supported in all Azure subscription. However, they're not supported in all Azure regions.."
+      explanation: "HB-series VMs are supported in all Azure subscription. However, they're not supported in all Azure regions."
     - content: "Try again at a different time."
       isCorrect: false
       explanation: "The problem is that HB-series VMs aren't supported in all Azure regions. This problem will be the same at a different time."
