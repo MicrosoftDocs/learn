@@ -1,4 +1,4 @@
-When you are creating virtual machines in the portal, one of your first decisions is the image to use. Azure supports Windows and Linux operating systems. There are server and client platforms. Other images are available by searching the Marketplace.
+When you're creating virtual machines in the portal, one of your first decisions is the image to use. Azure supports Windows and Linux operating systems. There are server and client platforms. Other images are available by searching the Marketplace.
 
 :::image type="content" source="../media/server-versions-b93232ca.png" alt-text="Screenshot of the portal images.":::
 
@@ -14,4 +14,4 @@ For your image, the portal will guide you through other configuration informatio
 
 **Management** \- Monitoring, Auto-shutdown, Back up
 
-**Advanced** \- Configureation including agents, scripts, or virtual machine extensions.
+**Advanced** \- Configuration including agents, scripts, or virtual machine extensions.
