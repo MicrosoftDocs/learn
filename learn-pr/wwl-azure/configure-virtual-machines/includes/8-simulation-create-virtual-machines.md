@@ -8,8 +8,8 @@ Your organization is planning on using virtual machines in Azure. As the Azure A
 
 ## Objectives
 
-+ **Task 1**: Use the Azure QuickStart template gallery to deploy a virtual machine. 
-    + Browse to the [Azure QuickStart template gallery](https://azure.microsoft.com/resources/templates/?azure-portal=true).
++ **Task 1**: Use the Azure QuickStart Template gallery to deploy a virtual machine. 
+    + Browse to the [Azure QuickStart Template gallery](https://azure.microsoft.com/resources/templates/?azure-portal=true).
     + Search for a template that deploys a simple Windows Server virtual machine.
     + Edit the template and customize the parameters and variables.
     + Deploy the template to create the virtual machine.  
