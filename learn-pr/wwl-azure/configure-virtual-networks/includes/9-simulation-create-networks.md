@@ -20,8 +20,8 @@ Your organization is migrating network infrastructure and virtual machines to Az
     + Create a second virtual machine, **vm2**, in **vnet1** and allow inbound RDP. 
     + Ensure both virtual machines are deployed and running before continuing.
 + **Task 3**: Test the virtual machine connections.
-    + Using RDP connect to **vm1**.
-    + Using RDP connect to **vm2**.
+    + Use RDP connect to **vm1**.
+    + Use RDP connect to **vm2**.
     + Disable the public and private Windows Defender firewall on both virtual machines.
     + Use Azure PowerShell to confirm **vm1** can ping **vm2**. 
 
