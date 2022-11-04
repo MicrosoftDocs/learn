@@ -18,15 +18,15 @@ The following new connectors are supported using REST API:
 
 - Azure Blob Storage
 
-Using the data source connector **abs** you can access files stored in Azure Blob Storage containers. Azure Blob Storage is scalable, highly-available, redundant, cost effective with tiered storage, secured, and optimized for data lakes. You can learn more about data virtualization with Azure Blob Storage at https://learn.microsoft.com/sql/relational-databases/polybase/virtualize-csv.
+  Using the data source connector **abs** you can access files stored in Azure Blob Storage containers. Azure Blob Storage is scalable, highly-available, redundant, cost effective with tiered storage, secured, and optimized for data lakes. For more information, see [data virtualization with Azure Blob Storage](/sql/relational-databases/polybase/virtualize-csv).
 
 - Azure Data Lake Storage
 
-Using the data source connector **adls** you can access file stored in Azure Data Lake Storage (ADLS). ADLS is built on top of Azure Blob Storage and provides file system semantics, file-level security, and scale. All these capabilities are built on top of Azure Blob Storage providing low cost, tiered access, high security, high availability, and durability. You can learn more about data virtualization with Azure Data Lake Storage at https://learn.microsoft.com/sql/relational-databases/polybase/virtualize-delta.
+  Using the data source connector **adls** you can access file stored in Azure Data Lake Storage (ADLS). ADLS is built on top of Azure Blob Storage and provides file system semantics, file-level security, and scale. All these capabilities are built on top of Azure Blob Storage providing low cost, tiered access, high security, high availability, and durability. For more information, see [data virtualization with Azure Data Lake Storage](/sql/relational-databases/polybase/virtualize-delta).
 
 - S3 compatible object storage providers
 
-Using the data source connector **s3** you can access file stored in S3 compatible object storage. S3 has become a popular object storage protocol and is supported by many providers both in clouds and on-premises. S3 object storage offers scale, lower cost, geo-distribution, and a reliable data transport. You can read more about data virtualization with S3 compatible object storage providers at https://learn.microsoft.com/sql/relational-databases/polybase/polybase-configure-s3-compatible.
+  Using the data source connector **s3** you can access file stored in S3 compatible object storage. S3 has become a popular object storage protocol and is supported by many providers both in clouds and on-premises. S3 object storage offers scale, lower cost, geo-distribution, and a reliable data transport. For more information, see [data virtualization with S3 compatible object storage providers](/sql/relational-databases/polybase/polybase-configure-s3-compatible).
 
 ### Using T-SQL for data virtualization
 
@@ -34,15 +34,15 @@ T-SQL provides the following statements to support data virtualization with REST
 
 - **OPENROWSET**
 
-The T-SQL statement **OPENROWSET** allows you to access any REST API data connector "ad-hoc" where you supply information about how to connect to the specific data source and file or folder information.
+  The T-SQL statement **OPENROWSET** allows you to access any REST API data connector "ad-hoc" where you supply information about how to connect to the specific data source and file or folder information.
 
 - **CREATE EXTERNAL TABLE**
 
-You can use the T-SQL statement **CREATE EXTERNAL TABLE** to create a "virtual" table that is a mapping to files in any REST API data connector. You can then access the external table just like a SQL Server table except the data is stored in the remote data source. The metadata of the external table is stored in SQL Server system tables.
+  You can use the T-SQL statement **CREATE EXTERNAL TABLE** to create a "virtual" table that is a mapping to files in any REST API data connector. You can then access the external table just like a SQL Server table except the data is stored in the remote data source. The metadata of the external table is stored in SQL Server system tables.
 
 - **CREATE EXTERNAL TABLE AS SELECT**
 
-A new capability in SQL Server 2022 is to create an external table based on a query from an existing SQL Server table (or another external table) also known as **CREATE EXTERNAL TABLE AS SELECT (CETAS)**. The result of the query will be a new external table and files will be created to the remote data source based on the results of the SELECT statement. You can use this method to export SQL Server data to files in a remote data source.
+  A new capability in SQL Server 2022 is to create an external table based on a query from an existing SQL Server table (or another external table) also known as **CREATE EXTERNAL TABLE AS SELECT (CETAS)**. The result of the query will be a new external table and files will be created to the remote data source based on the results of the SELECT statement. You can use this method to export SQL Server data to files in a remote data source.
 
 ### New native file format support
 
@@ -50,14 +50,14 @@ SQL Server allows you to create a file format to define the structure of a file 
 
 - **Parquet**
 
-Parquet is an open-source binary file format with the schema built into the file. Parquet files use a columnar storage format making them efficient for compression and retrieval. You can see an example of how to use parquet files with an S3 compatible object storage provider at https://learn.microsoft.com/sql/relational-databases/polybase/polybase-virtualize-parquet-file.
+  Parquet is an open-source binary file format with the schema built into the file. Parquet files use a columnar storage format making them efficient for compression and retrieval. For more information and examples, see [Virtualize parquet file in a S3-compatible object storage with PolyBase](/sql/relational-databases/polybase/polybase-virtualize-parquet-file).
 
 - **Delta tables**
 
-Delta lake is an open-source storage architecture using delta tables. Delta tables are files based on parquet but also offer basic transaction and log support. You can see an example of how to use Delta tables with Azure Data Lake Storage at https://learn.microsoft.com/sql/relational-databases/polybase/virtualize-delta
+  Delta lake is an open-source storage architecture using delta tables. Delta tables are files based on parquet but also offer basic transaction and log support. For more information on how to use Delta tables with Azure Data Lake Storage, see [Virtualize delta table with PolyBase](/sql/relational-databases/polybase/virtualize-delta).
 
 ## Backup and Restore with S3 compatible object storage providers
 
-SQL Server 2022 extends the **BACKUP TO URL** and **RESTORE FROM URL** T-SQL statements to support S3 compatible object storage providers. Most backup and restore options are available using this new capability. You can learn more about how to use S3 compatible object storage providers for SQL Server backups at https://learn.microsoft.com/sql/relational-databases/backup-restore/sql-server-backup-to-url-s3-compatible-object-storage. 
+SQL Server 2022 extends the **BACKUP TO URL** and **RESTORE FROM URL** T-SQL statements to support S3 compatible object storage providers. Most backup and restore options are available using this new capability. For more information, see [SQL Server backup to URL for S3-compatible object storage](/sql/relational-databases/backup-restore/sql-server-backup-to-url-s3-compatible-object-storage). 
 
-You can see a list of common S3 compatible object storage providers at https://learn.microsoft.com/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-s3-compatible-object-storage#providers-of-s3-compatible-object-storage.
+For a list of common S3 compatible object storage providers, see [Providers of S3-compatible object storage](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-s3-compatible-object-storage#providers-of-s3-compatible-object-storage).

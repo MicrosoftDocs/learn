@@ -1,4 +1,4 @@
-SQL Server 2022 includes enhancements to the T-SQL language for JSON, core engine T-SQL scenarios, and processing of time series data. You can get more details with examples using the T-SQL reference at https://learn.microsoft.com/sql/t-sql/language-reference.
+SQL Server 2022 includes enhancements to the T-SQL language for JSON, core engine T-SQL scenarios, and processing of time series data. For more information with examples, see [Transact-SQL Reference](/sql/t-sql/language-reference).
 
 ## Using T-SQL with JSON
 

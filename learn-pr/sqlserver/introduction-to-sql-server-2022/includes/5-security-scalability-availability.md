@@ -28,7 +28,7 @@ SQL Server provides fixed server roles to ease the burden of providing permissio
 
 In SQL Server 2022, new fixed server roles have been added that provide more granular permissions for specific tasks. For example, the new fixed server role **##MS_ServerPerformanceStateReader##** allows any member to view key performance metrics through Dynamic Management Views (DMV) but not the same full rights as members of the sysadmin role. New fixed server roles provide the concept of *principle of least privilege*.
 
-You can see all the new fixed server roles at https://learn.microsoft.com/sql/relational-databases/security/authentication-access/server-level-roles#fixed-server-level-roles-introduced-in-sql-server-2022
+For more information, see [Fixed server-level roles introduced in SQL Server 2022](/sql/relational-databases/security/authentication-access/server-level-roles#fixed-server-level-roles-introduced-in-sql-server-2022).
 
 ### Strict connected encryption
 
@@ -40,7 +40,7 @@ TDS 8.0 provides the following benefits:
 - The latest TLS 1.3 version is now supported.
 - Applications must specify a certificate for encryption purposes instead of relying on the TrustServerCertificate option. This requirements can help prevent man-in-the-middle attacks.
 
-You can learn more about strict connected encryption at https://learn.microsoft.com/sql/relational-databases/security/networking/tds-8-and-tls-1-3.
+For more information, see [TDS 8.0 and TLS 1.3 support](/sql/relational-databases/security/networking/tds-8-and-tls-1-3).
 
 ## Scalability
 
@@ -77,7 +77,7 @@ Always On Availability Groups uses replicas to provide the highest level of avai
 
 SQL Server 2022 introduces the concept of a *Contained* Availability Group. Now instance level objects are replicated in *contained system databases* in the Availability Group along with user databases. Therefore, on a failover operation instance level objects will be available automatically with no user intervention required.
 
-You can learn more about Contained Availability Groups at https://learn.microsoft.com/sql/database-engine/availability-groups/windows/contained-availability-groups-overview.
+For more information, see [What is a contained availability group](/sql/database-engine/availability-groups/windows/contained-availability-groups-overview).
 
 ### Cross-platform snapshot backups
 
@@ -89,7 +89,7 @@ Snapshot backups can be restored with the T-SQL RESTORE statement specifying the
 
 This new method now allows snapshot backups to be performed across both Windows and Linux operating systems without relying on VSS, SQL Writer, or custom VDI applications.
 
-You can learn more about cross-platform snapshot backups at https://learn.microsoft.com/sql/relational-databases/backup-restore/create-a-transact-sql-snapshot-backup.
+For more information, see [Create a Transact-SQL snapshot backup](/sql/relational-databases/backup-restore/create-a-transact-sql-snapshot-backup).
 
 ### Intel QuickAssist backup compression
 
@@ -97,4 +97,4 @@ SQL Server supports options to compress a backup saving in some cases a large am
 
 SQL Server 2022 can use a new compression technique powered by Intel QuickAssist technology (QAT). When a backup is executed using Intel QuickAssist compression, the processing for compression is offloaded to Intel QuickAssist hardware vs core CPUs in the system. This provides more CPU cycles for queries and applications while the backup is being compressed.
 
-You can learn more about how to use Intel QuickAssist Technology (QAT) with SQL Server 2022 at https://learn.microsoft.com/sql/relational-databases/integrated-acceleration/overview.
+For more information, see [Integrated acceleration and offloading](/sql/relational-databases/integrated-acceleration/overview).

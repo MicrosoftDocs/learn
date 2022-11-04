@@ -54,7 +54,9 @@ SQL Server includes two T-SQL functions to help analytic workload calculate a pe
 
 Optimized plan forcing is a new capability in SQL Server 2022 intended to reduce the time it takes to compile certain queries if the query plan is forced in Query Store.
 
-Some queries by their nature can take a significant amount of time to compile. Optimized plan forcing provides a method to reduce the time it takes to compile a query by storing in the Query Store *compilation steps* for eligible queries that have query plans that are forced in the Query Store. Query plan forcing allows you to lock in a query plan for a specific query. The next time a query needs to be compiled that has optimized plan forcing enabled, compilation steps are used to significantly accelerate the compile phase to execute a query. You can learn more about Optimized Plan Forcing at https://learn.microsoft.com/sql/relational-databases/performance/optimized-plan-forcing-query-store. 
+Some queries by their nature can take a significant amount of time to compile. Optimized plan forcing provides a method to reduce the time it takes to compile a query by storing in the Query Store *compilation steps* for eligible queries that have query plans that are forced in the Query Store. Query plan forcing allows you to lock in a query plan for a specific query. The next time a query needs to be compiled that has optimized plan forcing enabled, compilation steps are used to significantly accelerate the compile phase to execute a query. 
+
+For more information, see [Optimized plan forcing with Query Store](/sql/relational-databases/performance/optimized-plan-forcing-query-store).
 
 ## SQL Server 2022 additional capabilities using dbcompat 140 or greater
 
@@ -68,7 +70,7 @@ Prior to SQL Server 2022, memory grant feedback was based on the most recent exe
 
 Prior to SQL Server 2022, memory grant feedback was only stored in a cached plan in memory. If the cache plan was evicted, memory grant feedback would have to be recalculated on new query executions. In SQL Server 2022, if the Query Store. is enabled memory grant feedback will be persisted in the Query Store. You can view memory grant feedback persistence from the **sys.query_store_plan_feedback** catalog view.
 
-You can learn more about memory grant feedback at https://learn.microsoft.com/sql/relational-databases/performance/intelligent-query-processing-feedback#memory-grant-feedback.
+For more information, see [Memory grant feedback](/sql/relational-databases/performance/intelligent-query-processing-feedback#memory-grant-feedback).
 
 ## SQL Server 2022 additional capabilities using dbcompat 160 or greater
 

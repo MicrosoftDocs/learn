@@ -4,7 +4,7 @@ SQL Server 2022 is designed to help organizations looking to modernize their dat
 
 Organizations can accelerate performance for their applications with no code changes, protect data integrity with blockchain capabilities, and achieve increased scalability and availability for critical data.
 
-SQL Server 2022 also allows developers to build new applications connecting relational data with data lakes containing parquet files and delta tables using Azure or Amazon Web Services (AWS) Simple Storage Service (S3) compatible storage providers.
+SQL Server 2022 also allows developers to build new applications connecting relational data with data lakes containing parquet files and delta tables using Azure or [Simple Storage Service (S3) compatible storage providers](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-s3-compatible-object-storage).
 
 The following diagram shows the major capabilities of SQL Server 2022:
 
