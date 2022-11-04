@@ -3,7 +3,7 @@ uid: learn.wwl.configure-virtual-machines
 metadata:
   title: Configure virtual machines
   description: "You will learn to configure virtual machines including sizing, storage, and connections."
-  ms.date: 11/03/2022
+  ms.date: 11/04/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -35,7 +35,7 @@ units:
 - learn.wwl.configure-virtual-machines.determine-virtual-machine-storage
 - learn.wwl.configure-virtual-machines.create-portal
 - learn.wwl.configure-virtual-machines.connect-to
-- learn.wwl.configure-virtual-machines.connect-to-linux
+- learn.wwl.configure-virtual-machines.simulation-create-virtual-machines
 - learn.wwl.configure-virtual-machines.knowledge-check
 - learn.wwl.configure-virtual-machines.summary-resources
 badge:
