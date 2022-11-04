@@ -41,7 +41,7 @@ az functionapp create \
     --storage-account $STORAGE_ACCOUNT"c" \
     --consumption-plan-location $LOCATION \
     --runtime java \
-    --functions-version 3
+    --functions-version 4
 ```
 
 ### Retrieve the connection strings
