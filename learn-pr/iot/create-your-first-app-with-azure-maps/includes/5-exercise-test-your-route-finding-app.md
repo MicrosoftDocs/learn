@@ -1,6 +1,6 @@
 Running a new app for the first time is always an exiting moment!
 
-## Test the cross country app
+## Test the app
 
 1. Locate the HTML file in your **Documents** folder. Double-click on it, or open it in a browser.
 
@@ -10,7 +10,7 @@ Running a new app for the first time is always an exiting moment!
 
 1. Wait a few seconds, and the green bicycle route appears.
 
-    [![Screenshot showing the cross country route app, going from Seattle to New York.](../media/azure-maps-test-1.png)](../media/azure-maps-test-1.png#lightbox)
+    [![Screenshot showing the route in the app, going from Seattle to New York.](../media/azure-maps-test-1.png)](../media/azure-maps-test-1.png#lightbox)
 
 1. If you get the image above, good work! It's all plain sailing from now on.
 
