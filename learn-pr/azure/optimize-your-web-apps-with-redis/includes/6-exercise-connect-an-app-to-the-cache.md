@@ -412,14 +412,14 @@ We'll use a console application so we can focus on the Redis implementation.
 
 1. Our app is going to use the following npm packages:
 
-    - **redis**: The most commonly used JavaScript package for connecting to redis.
-    - **bluebird**: Used to convert the callback-style methods in the `redis` package to an awaitable Promise.
-    - **dotenv**: Loads environment variables from a `.env` file, which is where we'll store our Redis connectivity information.
+   - **redis**: The most commonly used JavaScript package for connecting to Redis.
+   - **bluebird**: Used to convert the callback-style methods in the `redis` package to an awaitable Promise.
+   - **dotenv**: Loads environment variables from a `.env` file, which is where we'll store our Redis connectivity information.
 
-    Let's install them now. Run this command to add them to our app.
+   Let's install them now. Run this command to add them to our app.
 
    ```bash
-    npm install redis bluebird dotenv
+   npm install redis bluebird dotenv
    ```
     
 ## Add configuration
@@ -429,7 +429,7 @@ Let's add the connection information we got from the Azure portal into a `.env` 
 1. Create a new **.env** file to the project.
 
    ```bash
-    touch .env
+   touch .env
    ```
 
 1. Open the code editor by entering `code .` in the project folder. If you're working locally, we recommend using **Visual Studio Code**. The steps here will mostly align with its usage.
@@ -437,17 +437,17 @@ Let's add the connection information we got from the Azure portal into a `.env` 
 1. Select the **.env** file in the editor, and paste in the following text.
 
    ```
-    REDISHOSTNAME=
-    REDISKEY=
-    REDISPORT=
+   REDISHOSTNAME=
+   REDISKEY=
+   REDISPORT=
    ```
 
 1. Paste in the hostname, primary key, and port after the equals sign on each respective line. The complete file will look similar to the following example.
 
    ```
-    REDISHOSTNAME=myredishost.redis.cache.windows.net
-    REDISKEY=K21mLSMN++z8d1FvIeMGy3VOAgoOmqaNYCqeE44eMDc=
-    REDISPORT=6380
+   REDISHOSTNAME=myredishost.redis.cache.windows.net
+   REDISKEY=K21mLSMN++z8d1FvIeMGy3VOAgoOmqaNYCqeE44eMDc=
+   REDISPORT=6380
    ```
 
 1. Save the file with <kbd>Ctrl+S</kbd> on Windows and Linux or <kbd>Cmd+S</kbd> on macOS.
@@ -461,28 +461,28 @@ Now it's time to write the code for our application.
 1. First, we'll add our `require` statements. Paste in the following code at the top of the file.
 
    ```javascript
-    var Promise = require("bluebird");
-    var redis = require("redis");
+   var Promise = require("bluebird");
+   var redis = require("redis");
    ```
 
 1. Next, we'll load our `.env` configuration, and use bluebird's `promisifyAll` function to convert the `redis` package's functions and methods to an awaitable Promise. Paste in the following code.
 
    ```javascript
-    require("dotenv").config();
-    Promise.promisifyAll(redis);
+   require("dotenv").config();
+   Promise.promisifyAll(redis);
    ```
 
 1. Now, we'll initialize a Redis client. Paste in the boilerplate code from the previous unit (using `process.env` to access our host name, port and key) to create the client.
 
    ```javascript
-    const client = redis.createClient(
+   const client = redis.createClient(
       process.env.REDISPORT,
       process.env.REDISHOSTNAME,
       {
-        password: process.env.REDISKEY,
-        tls: { servername: process.env.REDISHOSTNAME }
+         password: process.env.REDISKEY,
+         tls: { servername: process.env.REDISHOSTNAME }
       }
-    );
+   );
    ```
 
 ## Use the client to work with the cache
@@ -492,87 +492,87 @@ We're ready to write code to interact with our Redis cache.
 1. First, add an `async` function wrapper at the bottom of the file to contain our main code. We need this wrapper to be able to `await` the asynchronous function calls we'll be using. All of the rest of the code you'll be adding in this unit will be in this wrapper.
 
    ```javascript
-    (async () => {
+   (async () => {
 
       // The rest of the code you'll paste in goes here.
 
-    })();
+   })();
    ```
 
 1. Add a value to the cache with the `setAsync` method, and read it back with `getAsync`.
 
    ```javascript
-    console.log("Adding value to the cache");
-    await client.setAsync("myKey", "myValue");
+   console.log("Adding value to the cache");
+   await client.setAsync("myKey", "myValue");
 
-    console.log("Reading value back:");
-    console.log(await client.getAsync("myKey"));
+   console.log("Reading value back:");
+   console.log(await client.getAsync("myKey"));
    ```
 
 1. Send a ping to the cache with `pingAsync`.
 
    ```javascript
-    console.log("Pinging the cache");
-    console.log(await client.pingAsync());
+   console.log("Pinging the cache");
+   console.log(await client.pingAsync());
    ```
 
 1. Delete all the keys in the cache with `flushdbAsync`.
 
    ```javascript
-    await client.flushdbAsync();
+   await client.flushdbAsync();
    ```
 
 1. Finally, close the connection with `quitAsync`.
 
    ```javascript
-    await client.quitAsync();
+   await client.quitAsync();
    ```
 
 1. Save the file. Your finished application should look like this.
 
    ```javascript
-    var Promise = require("bluebird");
-    var redis = require("redis");
+   var Promise = require("bluebird");
+   var redis = require("redis");
 
-    require("dotenv").config();
+   require("dotenv").config();
 
-    Promise.promisifyAll(redis);
+   Promise.promisifyAll(redis);
 
-    const client = redis.createClient(
-    process.env.REDISPORT,
-    process.env.REDISHOSTNAME,
-    {
+   const client = redis.createClient(
+   process.env.REDISPORT,
+   process.env.REDISHOSTNAME,
+   {
       password: process.env.REDISKEY,
       tls: { servername: process.env.REDISHOSTNAME }
-    }
-    );
+   }
+   );
 
-    (async () => {
-      console.log("Adding value to the cache");
-      await client.setAsync("myKey", "myValue");
-      console.log("Reading value back:");
-      console.log(await client.getAsync("myKey"));
-      console.log("Pinging the cache");
-      console.log(await client.pingAsync());
-      await client.flushdbAsync();
-      await client.quitAsync();
-    })();
+   (async () => {
+     console.log("Adding value to the cache");
+     await client.setAsync("myKey", "myValue");
+     console.log("Reading value back:");
+     console.log(await client.getAsync("myKey"));
+     console.log("Pinging the cache");
+     console.log(await client.pingAsync());
+     await client.flushdbAsync();
+     await client.quitAsync();
+   })();
    ```
 
 1. Run the application. In the Cloud Shell, execute the following command.
 
    ```bash
-    node app.js
+   node app.js
    ```
 
     You'll see the following results.
 
    ```output
-    Adding value to the cache
-    Reading value back:
-    myValue
-    Pinging the cache
-    PONG
+   Adding value to the cache
+   Reading value back:
+   myValue
+   Pinging the cache
+   PONG
    ```
 
 ::: zone-end
