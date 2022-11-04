@@ -39,11 +39,11 @@ Let's create an Azure Cache for Redis instance to store and return commonly used
 
 You can use the **Console** feature in the Azure portal to issue commands to your Redis cache instance after it has been deployed.
 
-1. Locate and select your Redis cache by selecting **Go to Resource** in the **Notification** popup when it finishes deployment. Alternatively, you can select **All Resources** in the left-hand sidebar and use the filter box on the left to select Redis Cache instances, or use the search box at the top of the page and type the name of the cache.
+1. Locate and select your Redis cache by selecting **Go to resource** in the **Notification** popup when it finishes deployment. Alternatively, you can select **All Resources** in the left-hand sidebar and use the filter box on the left to select Redis Cache instances, or use the search box at the top of the page and type the name of the cache.
 
 1. On the **Overview** pane for your Redis Cache, check the value of the **Status** field. The cache isn't ready until the status is *Running*. You might have to wait for a few minutes before proceeding.
 
-1. Once the cache is running, select the **>_ Console** button in the toolbar on the **Overview** pane for your Redis Cache. This will open a Redis console, which allows you to enter low-level Redis commands. Try some of the following commands:
+1. Once the cache is running, select the **>_ Console** button in the toolbar on the **Overview** pane for your Redis Cache. A Redis console will open, which allows you to enter low-level Redis commands. Try some of the following commands:
 
     ```console
     ping
@@ -63,7 +63,7 @@ Switch back to the **Overview** pane through the breadcrumb bar on the top, or b
 
 ::: zone pivot="csharp"
 
-1. Select **Settings** > **Access keys**.
+1. In the left menu under **Settings**, select **Access keys**.
 
 1. Copy the **Primary connection string (StackExchange.Redis)** to a safe place, you'll need it for the next exercise.
 
@@ -77,11 +77,11 @@ Next, let's learn about some of the commands we can use to interrogate the cache
 
 For the next exercise, you'll need the host name, port, and primary access key of the cache.
 
-1. Select **Settings** > **Access keys** in the resource navigation menu.
+1. In the left menu under **Settings**, select **Access keys**.
 
 1. Copy the **Primary** access key (not the Primary connection string) to a text editor.
 
-1. Select **Settings** > **Properties** in the resource navigation menu.
+1. In the left menu under **Settings**, select **Properties**.
 
 1. Copy the **Host name** and **SSL port** to a text editor.
 
