@@ -18306,6 +18306,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/intro-to-hpc/3-azure-vm-hpc-instances.yml",
+      "redirect_url": "/training/modules/intro-to-hpc/3-how-azure-hpc-works",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "learn-pr/wwl-azure/configure-blob-storage/9-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/configure-blob-storage/10-knowledge-check",
       "redirect_document_id": false
@@ -18313,6 +18318,46 @@
     {
       "source_path": "learn-pr/wwl-azure/configure-blob-storage/10-summary-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/configure-blob-storage/11-summary-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-networks/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-virtual-networks/10-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-networks/10-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-virtual-networks/11-summary-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-security/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-storage-security/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-storage-security/9-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-storage-security/10-summary-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machines/8-connect-to-windows.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machines/9-connect-to-linux.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machines/10-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-virtual-machines/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machines/11-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-virtual-machines/10-summary-resources",
       "redirect_document_id": false
     }
   ]
