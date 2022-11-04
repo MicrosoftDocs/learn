@@ -43,7 +43,7 @@ The Technical configuration step, which is only required for transact offers, is
 
 In the plan overview, you’ll create your SaaS offer’s plans. Remember, your SaaS offer’s plans define the pricing and availability of your solution to customers. All SaaS offers must have at least one plan.
 
-You’ll choose in which markets your SaaS offer will be available from a list of more than 140 countries. This page is also where you’ll choose a pricing model for your offer. As a reminder, you’ll be able to choose between the following pricing models:
+You’ll choose in which markets your SaaS offer will be available from a list of more than 140 countries/regions. This page is also where you’ll choose a pricing model for your offer. As a reminder, you’ll be able to choose between the following pricing models:
 
 - **Flat rate**: Customers are charged a certain amount to use your software across their entire organization.
 - **Per user**: Customers are charged a certain amount for each unique user that has access to log in and use your solution.

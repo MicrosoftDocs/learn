@@ -24,7 +24,7 @@ In practice, you may often get stronger consistency guarantees. Consistency guar
 
 * When the consistency level is set to **bounded staleness**, Cosmos DB guarantees that the clients always read the value of a previous write, with a lag bounded by the staleness window.
 
-* When the consistency level is set too **strong**, the staleness window is equivalent to zero, and the clients are guaranteed to read the latest committed value of the write operation.
+* When the consistency level is set to **strong**, the staleness window is equivalent to zero, and the clients are guaranteed to read the latest committed value of the write operation.
 
 * For the remaining three consistency levels, the staleness window is largely dependent on your workload. For example, if there are no write operations on the database, a read operation with **eventual**, **session**, or **consistent prefix** consistency levels is likely to yield the same results as a read operation with strong consistency level.
 

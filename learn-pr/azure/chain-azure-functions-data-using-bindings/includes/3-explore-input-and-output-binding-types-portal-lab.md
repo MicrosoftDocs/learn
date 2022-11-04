@@ -28,7 +28,9 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 1. On the resource menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the **Create a resource** menu, select **Compute**, and in the results list select **Function App**. The **Create Function App** pane appears.
+1. In the **Create a resource** menu, select **Compute**, and in the results list select **Function App**. You might need to search for **Function App** in the *Search services and marketplace* window.
+
+1. Select **Create.** The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -44,7 +46,7 @@ Let's create a function app that we'll use throughout this module. A function ap
     | Version | Accept *default* | The default value is sufficient for this exercise. |
     | Region | From the dropdown list, select a *location* | Select the region nearest to you. |
 
-1. Select **Review + create** to validate your settings, and then select **Create** to provision and deploy the function app.
+1. Accept the defaults for all other options. Select **Review + create** to validate your settings, and then select **Create** to provision and deploy the function app.
 
 1. Deployment can take some time. In the global controls next to your account name, select the **Notifications** icon, and watch for a **Deployment succeeded** message.
 
@@ -58,7 +60,9 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 1. On the resource menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the **Create a resource** menu, select **Compute**, and then search for and select **Function App**. The **Create Function App** pane appears.
+1. In the **Create a resource** menu, select **Compute**, and then search for and select **Function App**. You might need to search for **Function App** in the *Search services and marketplace* window.
+
+1. Select **Create.** The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -74,7 +78,7 @@ Let's create a function app that we'll use throughout this module. A function ap
     | Version | Accept *default* | The default value is sufficient for this exercise. |
     | Region | From the dropdown list, select a *location* | Select the region nearest to you. |
 
-1. Select **Review + create** to validate your input, and then select **Create** to provision and deploy the function app.
+1. Accept the defaults for all other options. Select **Review + create** to validate your input, and then select **Create** to provision and deploy the function app.
 
 1. Deployment can take some time. In the global controls next to your account name, select the **Notifications** icon, and watch for a **Deployment succeeded** message.
 

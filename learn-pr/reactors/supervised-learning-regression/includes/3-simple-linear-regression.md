@@ -70,9 +70,9 @@ The output is:
 
 This first model accounts for only 30 percent of the variability in `lifeExpF` and is not a good representation of the relationship between economic activity and female life expectancy.
 
-These results are not good because there is no linear relationship between per-capita GDP and female life expectancy. Instead, the relationship has an elbow-like curve. When countries are very poor, the data suggests that even modest increases to GDP per capita can dramatically increase female life expectancy, but only up to a point. After countries hit about USD 10,000 per capita, additional gains correlated to increases in wealth are much smaller. This suggests a logarithmic relationship between these factors: female life expectancy being not related to GDP, but to its logarithm.
+These results are not good because there is no linear relationship between per-capita GDP and female life expectancy. Instead, the relationship has an elbow-like curve. When countries/regions are very poor, the data suggests that even modest increases to GDP per capita can dramatically increase female life expectancy, but only up to a point. After countries/regions hit about USD 10,000 per capita, additional gains correlated to increases in wealth are much smaller. This suggests a logarithmic relationship between these factors: female life expectancy being not related to GDP, but to its logarithm.
 
-Let's create a new column that contains the logarithm of per-capita GDP by country. Note that because we're dealing with powers of 10 in the GDP column, we'll use the base-10 logarithm rather than the natural logarithm to make interpretation easier.
+Let's create a new column that contains the logarithm of per-capita GDP by country/region. Note that because we're dealing with powers of 10 in the GDP column, we'll use the base-10 logarithm rather than the natural logarithm to make interpretation easier.
 
 ```python
 df['log_ppgdp'] = np.log10(df['ppgdp'])
