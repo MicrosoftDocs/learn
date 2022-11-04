@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-hpc.3-azure-vm-hpc-instances
 metadata:
-  title: Azure VM HPC instances
-  description: In this unit, you'll learn about H-series Virtual Machines and the tasks you can use them for.
+  title: How Azure HPC works
+  description: In this unit, you'll learn about components of Azure HPC and the orchestration of components of Azure HPC.
   ms.date: 10/03/2022
   author: padmalathas
   ms.author: padmalathas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Azure VM HPC instances
+title: How Azure HPC works
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-azure-vm-hpc-instances.md)]
+  [!include[](includes/3-how-azure-hpc-works.md)]
 quiz:
   title: "Check your knowledge"
   questions:

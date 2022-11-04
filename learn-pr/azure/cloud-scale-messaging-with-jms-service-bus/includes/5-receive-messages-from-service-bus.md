@@ -34,14 +34,14 @@ In the `pom.xml` file in your `spring-receiver-application`, add the following c
     spring.jms.servicebus.connection-string=<xxxxx>
     spring.jms.servicebus.idle-timeout=20000
     ```
-2. Set the `spring.jms.servicebus.connection-string` property to the connection string to your Service Bus namespace, which you saved earlier.
 
+2. Set the `spring.jms.servicebus.connection-string` property to the connection string to your Service Bus namespace, which you saved earlier.
 
 ### Add code to receive messages from Service Bus
 
 Next, we'll add business logic to receive messages from a Service Bus queue.
 
-In the directory `src/main/java/com/example/demo`, create a `ReceiveController.java` file that has the following content:
+In the `src/main/java/com/example/demo` directory, create a `ReceiveController.java` file that has the following content:
 
 ```java
 package com.example.demo;
@@ -61,11 +61,12 @@ public class ReceiveController {
 
 ## Run the application locally
 
-1. Switch back to the root of the sample `spring-receiver-application` folder where the `pom.xml` file is located, and run the following command to start your Spring Boot application. This step assumes that you have `mvn` installed on your Windows computer, and it's in the `PATH`. 
+1. Switch back to the root of the sample `spring-receiver-application` folder where the `pom.xml` file is located, and run the following command to start your Spring Boot application. This step assumes that you have `mvn` installed on your Windows computer, and it's in the `PATH`.
 
     ```bash
     mvn spring-boot:run
     ```
+
 2. After the application startup completes, you'll see the following log statements in the console window.
 
     ```bash
@@ -84,7 +85,7 @@ If your sender application (from unit 4) is still running, you can select the fo
 http://localhost:8080/messages?message=HelloOnceAgainAndAgain
 ```
 
-which will in turn be received by your receiver application and will be displayed in your console.
+This message will in turn be received by your receiver application and will be displayed in your console.
 
 ```bash
 Received <HelloOnceAgainAndAgain>
