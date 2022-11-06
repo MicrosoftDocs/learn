@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.configure-virtual-machines.summary-resources
+uid: learn.wwl.configure-virtual-networks.summary-resources
 title: Summary and resources
 metadata:
   title: Summary and resources
   description: "Summary and resources"
-  ms.date: 09/08/2022
+  ms.date: 11/04/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

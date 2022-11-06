@@ -13,7 +13,7 @@ _Figure 3: Memory hierarchy_
 
 From here, there is a significant leap in terms of capacity and access time when going to main memory (DRAM). Current DRAM technology allows for access latencies of 50-70 nanoseconds, and consists of multiple gigabytes. DRAM costs about $10-30 per GB, allowing for a few gigabytes of storage in personal computers, and up to a terabyte in servers. Recall that all of the memories described thus far are all volatile memories. The data stored in these memories exists as long as they are powered on. When the memories are switched off, they lose all information.
 
-The next order of magnitude in difference is observed in disks, which can take anywhere between tens of nanoseconds to hundreds of milliseconds to fetch a given item, depending on the type of storage device used. Finally, there is the network, which can connect machines that are in the same rack or can go across countries. The access latencies here can vary significantly, depending on the technologies used and the distance. Disks are non-volatile and persist data even when switched off.
+The next order of magnitude in difference is observed in disks, which can take anywhere between tens of nanoseconds to hundreds of milliseconds to fetch a given item, depending on the type of storage device used. Finally, there is the network, which can connect machines that are in the same rack or can go across countries/regions. The access latencies here can vary significantly, depending on the technologies used and the distance. Disks are non-volatile and persist data even when switched off.
 
 ## Types of storage devices
 

@@ -129,11 +129,11 @@ Another feature that is useful in Cassandra is that it has out-of-the-box suppor
 ### References
 
 1. _Merkle, R. (1988). [A digital signature based on a conventional encryption function](https://people.eecs.berkeley.edu/~raluca/cs261-f15/readings/merkle.pdf) Proceedings of CRYPTO (pp. 369–378). Springer-Verlag_
-2. _Hayashibara, Naohiro, et al. (2004). [The φ accrual failure detector](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.80.7427&rep=rep1&type=pdf) Reliable Distributed Systems, Proceedings of the 23rd IEEE International Symposium on Reliable Distributed Systems_
+2. _Hayashibara, Naohiro, et al. (2004). [The φ accrual failure detector](https://citeseerx.ist.psu.edu/pdf/11ae4c0c0d0c36dc177c1fff5eb84fa49aa3e1a8) Reliable Distributed Systems, Proceedings of the 23rd IEEE International Symposium on Reliable Distributed Systems_
 3. _DeCandia, Giuseppe, et al. (2007). [Dynamo: Amazon's highly available key-value store](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf) ACM SIGOPS Operating Systems Review. Vol. 41. No. 6 ACM_
 
 ***
 
 [^1]: <https://people.eecs.berkeley.edu/~raluca/cs261-f15/readings/merkle.pdf> "Merkle, R. (1988). *A digital signature based on a conventional encryption function* Proceedings of CRYPTO (pp. 369–378). Springer-Verlag"
-[^2]: <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.80.7427&rep=rep1&type=pdf> "Hayashibara, Naohiro, et al. (2004). *The φ accrual failure detector* Reliable Distributed Systems, 2004. Proceedings of the 23rd IEEE International Symposium on Reliable Distributed Systems"
+[^2]: <https://citeseerx.ist.psu.edu/pdf/11ae4c0c0d0c36dc177c1fff5eb84fa49aa3e1a8> "Hayashibara, Naohiro, et al. (2004). *The φ accrual failure detector* Reliable Distributed Systems, 2004. Proceedings of the 23rd IEEE International Symposium on Reliable Distributed Systems"
 [^3]: <https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf> "DeCandia, Giuseppe, et al. (2007). *Dynamo: Amazon's highly available key-value store* ACM SIGOPS Operating Systems Review. Vol. 41. No. 6 ACM"
