@@ -23,13 +23,12 @@ iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - beginner
 roles: 
-  - Network Engineer
-  - Technology Manager
+  - network-engineer
+  - technology-manager
 products:
 - azure
-- azure monitor
-- azure portal
-- azure workbooks
+- azure-monitor
+- azure-portal
 subjects:
   - cloud-computing
 units:
