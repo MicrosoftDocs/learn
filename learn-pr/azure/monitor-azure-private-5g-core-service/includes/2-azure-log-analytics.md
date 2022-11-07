@@ -9,37 +9,78 @@ In this unit, we'll go through basics tasks in using Log Analytics to monitor Az
 
 ## Enable Log Analytics for a packet core instance
 
-To monitor a site in a private mobile network, you need to first enable Log Analytics for the packet core instance that powers the site.
+To monitor a site in a private mobile network, first enable Log Analytics for the packet core instance at the site. You'll need to enable Log Analytics from both the cloud and the Kubernetes cluster.
 
-You'll need to enable Log Analytics from both the cloud and the Kubernetes cluster. Get ready with the following items before starting the enablement process:
+Before starting the enablement process, get ready with the following items:
 
-- Azure resource: The Kubernetes-Azure Arc resource that represents the Azure Arc-enabled Kubernetes cluster on which your packet core instance is running.
-- Contributor role: You must have the Contributor role assignment on the Azure subscription that contains the Kubernetes-Azure Arc resource.
-- Admin access: Your local machine needs to have admin kubectl access to the Azure Arc-enabled Kubernetes cluster.
+- Cloud resource and access permission:
+  - The name of the Kubernetes-Azure Arc resource that represents the Azure Arc-enabled Kubernetes cluster on which your packet core instance is running.
+  - You must have the Contributor role assignment on the Azure subscription that contains the Kubernetes-Azure Arc resource.
+- Local access permission:
+  - Your local machine needs to have admin kubectl access to the Azure Arc-enabled Kubernetes cluster on which your packet core instance is running.
   > [!TIP]
   > For this access, your trials engineer can help you get an admin `kubeconfig` file.
 
 The enablement steps are as follows:
 
-- Create an Azure Monitor extension for the Azure Arc-enabled Kubernetes cluster. This allows Azure Monitor to connect to the specified cluster.
+- Create an Azure Monitor extension for the Azure Arc-enabled Kubernetes cluster and deploy it to the cluster. This step allows Azure Monitor to connect to the cluster.
   
-  Follow the detailed instructions in [Azure Monitor Container Insights for Azure Arc-enabled Kubernetes clusters](/azure/azure-monitor/containers/container-insights-enable-arc-enabled-clusters) to create the extension.
+  Follow the detailed instructions in [Azure Monitor Container Insights for Azure Arc-enabled Kubernetes clusters](/azure/azure-monitor/containers/container-insights-enable-arc-enabled-clusters) to create and deploy the extension.
 
   > [!NOTE]
   >
   > - Use Azure CLI for this step.
   > - In the "Create extension instance" step, make sure that you choose **Option 4 - On Azure Stack Edge**.
 
-- Configure and deploy a ConfigMap. This opens the Azure Arc-enabled Kubernetes cluster for metrics collection from Azure Monitor.
+- Configure and deploy a ConfigMap. This step allows the packet core instance to stream its log data to the Log Analytics workspace.
   
   For detailed instructions, see [Configure and deploy the ConfigMap](/azure/private-5g-core/enable-log-analytics-for-private-5g-core).
 
-## Configure Log Analytics for a packet core instance
+> [!TIP]
+>
+> - All the sites in a private mobile network share the same Log Analytics workspace.
+> - You need to enable Log Analytics for each site in a private mobile network separately.
 
 ## Use queries to retrieve log data
 
-## Use dashboards to visualize log data
+Once Log Analytics is enabled for a site, the packet core at the site starts to stream its log data to the Log Analytics workspace. You can use queries to retrieve relevant data from the workspace. For example, you might want to check the data of a particular traffic type or the data from a particular UE.
+
+<!-- Use the workspace of the Log option in the Mobile Network resource? If both, which is the preferred method? Need to describe both if necessary -->
+To create a query, open the Mobile Networks resource for your private mobile network through the Azure portal and then select **Log**. In the Log Analytics tool that is displayed, enter your query, as shown below:
+
+TBD: Need a screenshot with **Log** highlighted.
+
+You need to use the Kusto query language (KQL) to create queries in Log Analytics. For details about KQL, see [Get started with with log queries in Azure Monitor](/azure/azure-monitor/logs/get-started-queries).
+
+Each packet core instance streams [several logs](/azure/private-5g-core/monitor-private-5g-core-with-log-analytics) to the Log Analytics workspace. When you construct a query, you need to specify the relevant log name, such as `amf_registered_subscribers` or `amfcc_n1_auth_reject`.
+
+After creating queries, you can use Log Analytics dashboards to visualize query results. The [Use dashboards to visualize query results](#use-dashboards-to-visualize-query-results) section describes the process.
+
+> [!TIP]
+> If you have multiple sites in a private mobile network, you may want restrict query results to a specific site. To do that, select the cluster on which the relevant packet core instance is running when you specify the scope of the query.
+
+## Use dashboards to visualize query results
+
+Log Analytics dashboards can visualize all of your saved log queries, giving you the ability to find, correlate, and share data about your private mobile network. You can use the dashboards to monitor important Key Performance Indicators (KPIs) for your private mobile network's operation, including throughput and the number of connected devices.
+
+The following dashboard shows a dashboard with several charts providing information on important KPIs:
+
+:::image type="content" source="../media/ap5gc-overview-dashboard.png" alt-text="A screenshot showing a Log Analytics dashboard that displays several charts" border="true":::
+
+For instructions in creating Log Analytics dashboards, see [Creating and sharing dashboards of Log Analytics data](/azure/azure-monitor/visualize/tutorial-logs-dashboards).
+
+> [!TIP]
+> Log Analytics will ingest an average of 1.4 GB of data a day from each packet core instance. To estimate the cost of using Log Analytics, see [Azure Monitor cost and usage](/azure/azure-monitor/usage-estimated-costs).
 
 ## Monitor your private mobile network with Log Analytics
 
-1) label individual sites 2) Define critical alerts and alert levels 3) Can't replace real-time on-site monitoring
+After enabling Log Analytics for a site in your private mobile network, you can use it to monitor the site. Based your business needs, you can use different monitoring methods. For example, you can use queries to filter log data or use dashboards to visualize and share log data.
+
+Follow these best practices when you design or implement your monitoring solution with Log Analytics:
+
+- All the sites in a private mobile network share the same Log Analytics workspace. Restrict the scope of a query to a specific site unless you need cross-site results.
+- Analyze the business needs of your private mobile network solution and define key metrics that you want to monitor. For example, the number of bytes transmitted might be of critical importance to a drone control application.
+  
+  Log Analytics allows you to create alerts for monitoring metrics. Once an alert rule is triggered, Log Analytics takes the specified action, such as notifying an application or running an automated task. With alerts, you can proactively detect and address issues in your private mobile network before users notice them. For details about using alerts in Log Analytics, see [What are Azure Monitor Alerts](/azure/azure-monitor/alerts/alerts-overview).
+
+- Log Analytics a standard monitoring tool that you can use through the Azure portal. For monitoring sites in your private mobile network, it heavily relies on the connection between the cloud and the on-premises network. For real-time monitoring of a site, consider using the packet core dashboards that Azure Private 5G Core offers.
