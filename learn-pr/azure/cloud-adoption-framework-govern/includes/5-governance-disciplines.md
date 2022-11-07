@@ -10,8 +10,6 @@ The following table summarizes each discipline from the Govern methodology in th
 | <br> :::image type="content" source="../media/resource-consistency-icon.png" alt-text="Resource consistency icon." border="false"::: | <br> [Resource Consistency discipline](/azure/cloud-adoption-framework/govern/resource-consistency/?azure-portal=true): Cloud operations depend on consistent resource configuration. Through governance tooling, resources can be configured consistently to manage risks related to onboarding, drift, discoverability, and recovery. |
 | <br> :::image type="content" source="../media/deployment-acceleration-icon.png" alt-text="Deployment acceleration icon." border="false"::: | <br> [Deployment Acceleration discipline](/azure/cloud-adoption-framework/govern/deployment-acceleration/?azure-portal=true): Centralization, standardization, and consistency in approaches to deployment and configuration improve governance practices. When provided through cloud-based governance tooling, they create a cloud factor that can accelerate deployment activities. |
 
-## Resource Consistency discipline
-
 ### Cost Management discipline
 
 This discipline focuses on scaling the operational best practices for cost management across all workloads and assets in your portfolio.
