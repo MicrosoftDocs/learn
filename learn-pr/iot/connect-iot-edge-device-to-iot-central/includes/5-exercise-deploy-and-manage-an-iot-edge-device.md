@@ -4,7 +4,7 @@ In this unit, you'll deploy the IoT Edge runtime to a Linux Virtual Machine (VM)
 
 ## Configure and deploy the IoT Edge device
 
-In the previous module, you learnt that an IoT Edge device needs the connection information from the IoT Central application. Set the following environment variables in your Cloud Shell sandbox:
+In the previous module, you learned that an IoT Edge device needs the connection information from the IoT Central application. Set the following environment variables in your Cloud Shell sandbox:
 
 Replace `<AZURE_VM_USER_PASSWORD>` with a strong password of your choice for your virtual machine:
 

@@ -42,7 +42,7 @@ The following steps create an IoT Central application and generate an API token 
 
 1. In another browser tab or window, navigate to the URL shown in the output of the previous command. This page in the web UI is where you upload an IoT Edge deployment manifest:
 
-    :::image type="content" source="../media/3-deployment-manifests.png" alt-text="The deployment manifests page where you manage the IoT Edge deployment manifests in your IoT Central application.":::
+    :::image type="content" source="../media/3-deployment-manifests.png" alt-text="Screenshot showing the deployment manifests page where you manage the IoT Edge deployment manifests in your IoT Central application.":::
 
 1. Select **Create an edge manifest**, enter the name **Environmental Sensor**, select **Upload a file**, and then browse to select the *EnvironmentalSensorManifest.json* file you downloaded previously.
 
@@ -60,15 +60,15 @@ The following steps create an IoT Central application and generate an API token 
 
 The deployment manifest you uploaded has a module called **SimulatedTemperatureSensor** with an interface called **management**. The **management** interface includes the writable properties **SendData** and **SendInterval**. To add this information to your new device template:
 
-1. On the device template page select **Modules** in the **Model** section.
+1. On the device template page, select **Modules** in the **Model** section.
 
 1. Select **Import modules from manifest**:
 
-    :::image type="content" source="../media/3-import-modules.png" alt-text="The device templates page where you import the module definitions from the deployment manifest.":::
+    :::image type="content" source="../media/3-import-modules.png" alt-text="Screenshot showing the device templates page where you import the module definitions from the deployment manifest.":::
 
 1. Select the **Environmental Sensor** deployment manifest to import the modules.
 
-You device template now includes the **SimulatedTemperatureSensor** module with a **management** interface. The interface defines the **SendData** and **SendInterval** writable properties.
+Your device template now includes the **SimulatedTemperatureSensor** module with a **management** interface. The interface defines the **SendData** and **SendInterval** writable properties.
 
 The deployment manifest doesn't include information about the telemetry the device modules send. To enable IoT Central to create visualizations for the telemetry, add an interface with the required definitions:
 
