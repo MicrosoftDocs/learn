@@ -25,3 +25,7 @@ You'll deploy an Express.js app to Azure App Service and:
 ## What is the main goal?
 
 By the end of this module, you'll be able to deploy an Express.js app on your own App Service resource and know that it's running as expected.
+
+## Find additional information
+
+Additional resources are available in the summary unit.

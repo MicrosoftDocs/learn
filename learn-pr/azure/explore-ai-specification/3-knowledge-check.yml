@@ -1,0 +1,87 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.explore-ai-specification.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: A knowledge check for the discover AI Specification document.
+  ms.date: 10/21/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-knowledge-check.md)] 
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "In the Moab sample, what are pitch and roll?"
+    choices:
+    - content: "Environment states."
+      isCorrect: false
+      explanation: "Environment state corresponds to the position of the ball on the place, given by the camera placed in the center of the device looking upward."
+    - content: "Control actions."
+      isCorrect: true
+      explanation: "They're the actions that the brain will output to control the Moab device."
+    - content: "Goals."
+      isCorrect: false
+      explanation: "Goals are what we want to achieve when controlling the Moab, i.e. avoiding falling off the plate and moving to the center of the plate."
+    - content: "Strategies."
+      isCorrect: false
+      explanation: "As the Moab is a monolithic brain, there's only one module of strategy that contains two goals: avoiding falling off the plate and moving to the center of the plate."
+  - content: "What does it mean that the training episode length is 250 iterations?"
+    choices:
+    - content: "Is the maximum number of actions the brain will be allowed to take to succeed."
+      isCorrect: true
+      explanation: "If the brain fails to meet the goal within 250 interactions with the simulation, we’ll terminate the episode as a failure."
+    - content: "Every episode has exactly 250 iterations."
+      isCorrect: false
+      explanation: "The episode might last 250 or less depending on your goal definition. If the goal succeeds early, the episode could finish early."
+    - content: "Even if the brain fails before 250 iterations, the number of iterations per episode will be 250."
+      isCorrect: false
+      explanation: "If the brain fails before 250 hitting a terminal condition (such as ball is off the plate), that episode must be terminated, and another episode will start."
+    - content: "It means that the brain will never face more than 250 iterations during training nor deployment."
+      isCorrect: false
+      explanation: "The training length determines the length of the interaction with the simulation during MT (Machine Teaching) experimentation. Usually, the deployment length will be longer than that, certainly not necessarily the same."
+  - content: "(Select the most correct answer) The Moab brain design presented on the AI spec in this module is an example of:"
+    choices:
+    - content: "A modular brain design."
+      isCorrect: false
+      explanation: "Modular brains must contain more than one learned (DRL) module."
+    - content: "A monolithic brain design."
+      isCorrect: false
+      explanation: "Designs with only one brain are considered monolithic brains. Yet, the explanation is incomplete."
+    - content: "A monolithic brain design with an advanced perception preprocessor."
+      isCorrect: true
+      explanation: "There's only one DRL module, therefore the brain design is monolithic. The green hexagon is an ML advance perception preprocessor module to the brain."
+    - content: "A modular brain design with an advanced perception preprocessor."
+      isCorrect: false
+      explanation: "Modular brains must contain more than one learned (DRL) module."
+  - content: "What is the difference between environment states and configurable scenarios?"
+    choices:
+    - content: "Environment states are the sensors or input to the brain and configurable scenarios are the lessons given to the brain to practice controlling the device."
+      isCorrect: true
+      explanation: "Environment states are the sensors or input to the brain – how the environment looks after each control action has been executed. Configurable scenarios include the range of initial values of sensor variables and control variables, i.e. all the lessons the brain has to practice on to learn to control the Moab device."
+    - content: "Environment states are the control actions performed by the brain at each iteration."
+      isCorrect: false
+      explanation: "Environment states are the sensors or input to the brain. Control actions are the output of the brain."
+    - content: "Environment states are the input to the brain and configurable scenarios are the output of the brain."
+      isCorrect: false
+      explanation: "Environment states are the sensors or input to the brain. Configurable scenarios aren't the output or control actions of the brain."
+    - content: "Environment states and configurable scenarios are the same."
+      isCorrect: false
+      explanation: "They aren't the same. Environment states are the sensors or input to the brain. Configurable scenarios are all the lessons the brain has to train to learn how to control the device. Scenarios are defined by the target initial environment states, but not all states are scenarios."
+  - content: "What type of simulator is implemented in the Project Moab sample?"
+    choices:
+    - content: "A subrogate simulator."
+      isCorrect: false
+      explanation: "The Moab simulator isn't a subrogate simulator – it isn't necessary as the simulation is fast enough to permit short experimentation times."
+    - content: "A Data Driven Simulator (DDS)."
+      isCorrect: false
+      explanation: "The Moab simulator isn't a DDS – there isn't a Machine Learning algorithm that predicts the impact of the action on the environment. For Moab, we didn’t have to train based on data."
+    - content: "A first-principles simulator."
+      isCorrect: true
+      explanation: "The Moab simulator simulates the exact physics of the device. The dynamics are simple enough to permit equation-based simulation."
+    - content: "The Moab doesn’t have a simulator."
+      isCorrect: false
+      explanation: "Every control system developed with the Bonsai platform using Machine Teaching for Autonomous AI will have a simulator where the brain learns the best control strategy for each scenario. Without a simulator, there's no exploration process."

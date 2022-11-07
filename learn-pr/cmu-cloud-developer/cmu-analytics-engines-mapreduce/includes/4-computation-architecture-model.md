@@ -4,7 +4,7 @@ In this unit, we look at the computation model and architectural model for MapRe
 
 MapReduce jobs, like all distributed programs, can embody either a synchronous or an asynchronous computation model. During each phase and stage, MapReduce tasks execute numerous computations that depend on results from the previous phase or stage and can proceed only after that data arrives. For example, a reduce task cannot begin before all required partitions arrive from the shuffle and the merge and sort stages. Furthermore, in a phase, tasks do not communicate with each other, and interactions occur only at the end of a stage or phase. Any synchronous system must guarantee this interaction property,<sup>[2][^2]</sup> and MapReduce presents a good example of that computation model. 
 
-![A simplified example of the primary-subordinate, tree-style architecture employed by Hadoop MapReduce.](../media/master-slave-architecture.png)
+![A simplified example of the primary-subordinate, tree-style architecture employed by Hadoop MapReduce.](../media/primary-subordinate-architecture.png)
 
 _Figure 4: A simplified example of the primary-subordinate, tree-style architecture employed by Hadoop MapReduce._
 

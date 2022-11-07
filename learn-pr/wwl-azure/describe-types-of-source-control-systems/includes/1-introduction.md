@@ -1,4 +1,4 @@
-This module describes different source control systems such Git and Team Foundation Version Control (TFVC) and helps with the initial steps for Git utilization.<br>
+This module describes different source control systems, such as Git and Team Foundation Version Control (TFVC), and helps with the initial steps for Git utilization.<br>
 
 ## Learning objectives
 
@@ -12,5 +12,5 @@ After completing this module, students and professionals can:
 ## Prerequisites
 
  -  Understanding of what DevOps is and its concepts.
- -  Familiarity with version control principles is helpful but is not necessary.
+ -  Familiarity with version control principles is helpful but isn't necessary.
  -  Beneficial to have experience in an organization that delivers software.

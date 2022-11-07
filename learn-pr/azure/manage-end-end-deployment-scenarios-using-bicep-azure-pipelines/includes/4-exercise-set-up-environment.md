@@ -81,8 +81,8 @@ On the Azure DevOps Demo Generator site, do the following:
 To create the two new resource groups, run the following Azure CLI commands in the Visual Studio Code terminal:
 
 ```azurecli
-az group create --name ToyWebsiteTest --location westus3
-az group create --name ToyWebsiteProduction --location westus3
+az group create --name ToyWebsiteTest --location eastus
+az group create --name ToyWebsiteProduction --location eastus
 ```
 
 ::: zone-end
@@ -92,8 +92,8 @@ az group create --name ToyWebsiteProduction --location westus3
 To create the two new resource groups, run the following Azure PowerShell commands in the Visual Studio Code terminal:
 
 ```azurepowershell
-New-AzResourceGroup -Name ToyWebsiteTest -Location westus3
-New-AzResourceGroup -Name ToyWebsiteProduction -Location westus3
+New-AzResourceGroup -Name ToyWebsiteTest -Location eastus
+New-AzResourceGroup -Name ToyWebsiteProduction -Location eastus
 ```
 
 ::: zone-end

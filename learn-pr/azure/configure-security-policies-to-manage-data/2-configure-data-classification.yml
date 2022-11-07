@@ -5,8 +5,8 @@ metadata:
   title: Classify your data at rest, in process, and in transit
   description: Classify your data
   ms.date: 09/30/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: VanMSFT
+  ms.author: vanto
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

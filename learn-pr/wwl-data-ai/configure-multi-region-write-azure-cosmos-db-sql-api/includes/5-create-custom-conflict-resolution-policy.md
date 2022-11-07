@@ -54,7 +54,7 @@ function resolveConflicts(incomingItem, existingItem, isTombstone, conflictingIt
 }
 ```
 
-You can use the .NET SDK for Azure Cosmos DB SQL API to configure the custom conflict resolution policy. To start this example, a container named **products** will be created with a custom conflict resolution policy.
+You can use the .NET SDK for Azure Cosmos DB for NoSQL to configure the custom conflict resolution policy. To start this example, a container named **products** will be created with a custom conflict resolution policy.
 
 ```csharp
 string databaseName = "cosmicworks";

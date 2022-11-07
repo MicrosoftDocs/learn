@@ -9,5 +9,5 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Forks](/azure/devops/repos/git/forks).
- -  [Clone an existing Git repo](/azure/devops/repos/git/clone).
+ -  [Fork your repository - Azure Repos \| Microsoft Docs](/azure/devops/repos/git/forks).
+ -  [Clone an existing Git repo - Azure Repos \| Microsoft Docs](/azure/devops/repos/git/clone).

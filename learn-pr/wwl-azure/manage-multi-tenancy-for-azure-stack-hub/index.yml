@@ -3,7 +3,7 @@ uid: learn.wwl.manage-multi-tenancy-for-azure-stack-hub
 metadata:
   title: Manage multi-tenancy for Azure Stack Hub
   description: "Manage multi-tenancy for Azure Stack Hub"
-  ms.date: 03/15/2022
+  ms.date: 10/26/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial

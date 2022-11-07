@@ -1,6 +1,6 @@
-When you're designing a data model for a NoSQL database, the objective is to ensure that operations on data are done in the fewest requests. To do this, you need to understand the relationships between the data and how data will be accessed by the application. These access patterns are important because they, along with the relationships, will determine how the properties of the various entities are grouped together and stored in documents within containers in Azure Cosmos DB SQL API databases.
+When you're designing a data model for a NoSQL database, the objective is to ensure that operations on data are done in the fewest requests. To do this, you need to understand the relationships between the data and how data will be accessed by the application. These access patterns are important because they, along with the relationships, will determine how the properties of the various entities are grouped together and stored in documents within containers in Azure Cosmos DB for NoSQL databases.
 
-In Cosmos DB SQL API, documents are called Items and containers are often synonymously referred to as collections.
+In Azure Cosmos DB for NoSQL, documents are called Items and containers are often synonymously referred to as collections.
 
 ## Identify access patterns for customer entities
 

@@ -16,8 +16,7 @@ Azure HDInsight is a fully managed, cloud-based, open-source analytics service f
   - Apache Spark
   - Apache Hive
   - Apache Kafka
-  - Apache Storm
-
+  
    > [!NOTE]
    > With these frameworks, you can enable a broad range of scenarios such as extract, transform, and load (ETL), data warehousing, machine learning, and IoT.
 
@@ -98,7 +97,6 @@ As the following diagram depicts, HDInsight processes streaming data received in
 
 - Apache Spark
 - Apache Kafka
-- Apache Storm
 
 Azure gateway services and IoT hubs direct data from various sources to these frameworks. The frameworks then process the data, and it passes to:
 

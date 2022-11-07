@@ -1,12 +1,19 @@
-As the solution architect for the engineering organization, you need to understand the options available for batch processing and high-performance computing (HPC) on Azure. This knowledge helps to determine how you can efficiently render the 3D models of the facilities that the company designs, and how you store all of the related statistical data.
+High Performance Computing (HPC) is the practice of using significant computing power that provides high performance compared to what we can get when using our laptop and/or workstation. It solves large problems that need to run on multiple cores simultaneously.
 
-There are several HPC and batch processing choices available on Azure. You talk with an Azure expert who advises you to focus on three options: Azure Batch, Azure VM HPC Instances, and Microsoft HPC Pack. You'll look at each in the following units. It's important to note that these choices aren't mutually exclusive. They build upon one other and can be thought of as different tools in a toolbox.
+It's done by splitting up a problem into smaller computable units and distributing those units into a distributed
+system. It continuously communicates between them to reach the final solution way faster than running the same
+computation on fewer cores.
 
-Here, you'll learn about high-performance computing in general, and learn about Azure Batch.
+There are several HPC and batch processing choices available on Azure. You talk with an Azure expert who advises you to
+focus on three options: Azure Batch, Azure CycleCloud, and Microsoft HPC Pack. You'll look at each in the
+following units. It's important to note that these choices aren't mutually exclusive. They build upon one other and can
+be thought of as different tools in a toolbox.
 
-## What is HPC?
+Here, you'll learn about high-performance computing in general, and learn about Azure HPC.
 
-There are many different industries that require very powerful computing resources for specialized tasks. For example:
+## What is HPC at Azure?
+
+There are many different industries that require powerful computing resources for specialized tasks. For example:
 
 - In genetic sciences, gene sequencing.
 - In oil and gas exploration, reservoir simulations.
@@ -14,28 +21,76 @@ There are many different industries that require very powerful computing resourc
 - In engineering, physical system modeling.
 - In meteorology, weather modeling.
 
-These tasks require processors that can carry out instructions extremely fast. It's also helpful to run many processors in parallel, to obtain answers within a practical time duration. On-premises HPC systems have many powerful CPUs and, for graphics-intensive tasks, GPUs. They also require fast disks and high-speed memory.
+These tasks require processors that can carry out instructions fast. HPC applications on Azure can scale to thousands of compute cores, extend on-premises large compute, or run as a 100% cloud native solution. This HPC solution including the head node, compute nodes, and storage nodes, runs in Azure with no hardware infrastructure to maintain. This solution is built on the Azure-managed services: Virtual Machine Scale Sets, Virtual Network and Storage Accounts.
 
-Azure enables you to perform HPC tasks in the cloud, without building your own expensive HPC hardware. An Azure HPC system also has the advantage that you can dynamically add resources as they are needed, and remove them when demand falls. Azure makes it easy to coordinate an HPC task across many virtual machines, and it supports powerful VM sizes.
+These services run in a high-availability environment, patched and supported, allowing you to focus on your solution instead of the environment they run in. An Azure HPC system also has the advantage that you can dynamically add resources as they're needed, and remove them when demand falls.
 
-## Azure Batch
+![Diagram of the High Performance Computing.](../media/1-high-performance-computing.png)
 
-Azure Batch is a service for working with large-scale parallel and computationally intensive tasks on Azure. Unlike the other options you'll see in this module, Batch is a managed service. You provide data and applications, and you specify whether to run on Windows or Linux, how many machines to use, and what rules apply to autoscaling. Batch handles provisioning of the compute capacity and optimizes the way the work is done in parallel. You only pay for the underlying compute, networking, and storage you use. The Batch scheduling and management service is free.
+## What is Parallel Computing on Distributed Systems
 
-Batch is ideally suited to heavy workloads, such as financial risk modeling, 3D rendering, media transcoding, and genetic sequence analysis. Think of Batch as a flexible management and scheduling service layer on top of the huge scale of Azure. For example, you might spin up 100 or 1000 virtual machines to support heavy workloads without the aid of Batch. However, you'd then be responsible for all the scheduling of the VMs, and for distributing the work according to available capacity.
+Parallel Computing is the simultaneous use of multiple compute resources to solve a computational problem:
 
-## Components of Azure Batch
+* A problem is broken into discrete parts that can be solved concurrently
+* Each part is further broken down to a series of instructions
+* Instructions from each part execute simultaneously on different processors
+* An overall control/coordination mechanism is employed
 
-Batch has several components that act together. An *Azure Batch Account* forms a container for all of the main Batch elements. Within the Batch account, you typically create Batch *pools* of VMs, which are often called nodes, running either Windows or Linux. You set up Batch *jobs* that work like logical containers with configurable settings for the real unit of work in Batch, known as Batch *tasks*. This unit of work is highly flexible and can run either command-line instructions or entire applications. Optionally, you might associate an Azure Storage account with the Azure Batch account. You then upload and download data inputs and outputs. You also provide application installers for the Batch tasks that need them.
+![Diagram of the Parallel Computing on Distributed Systems.](../media/2-parallel-computing-on-distributed-systems.png)
 
-This diagram shows a client application or hosted service interacting with Batch to upload input, create jobs, monitor tasks, and download output.
+## Different Stages of Parallelism
 
-![Diagram of the components of Batch.](../media/2-components-of-azure-batch.svg)
+There are different ways to classify parallel computers and Flynn's Taxonomy is one of the most common ways to do so. It
+distinguishes multi-processor computer architectures according to how they can be classified along the two independent
+dimensions of Instruction Stream and Data Stream. Each of these dimensions can have only one of two possible states:
+**Single** or **Multiple**.
 
-## Azure Batch in action
+This diagram shows a client application or hosted service interacting with Batch to upload input, create jobs, monitor
+tasks, and download output.
 
-When you create Batch tasks, the scheduling and management engine determines the  optimal plan for allocating and scheduling tasks across the specified compute capacity. This plan happens during the initial creation of a Batch pool.
+![Diagram of the stages of parallelism.](../media/3-stages-of-parallelism.png)
 
-In a series of 100 tasks and 10 nodes, for example, Batch schedules the first 10 tasks onto those 10 nodes. Batch immediately allocates later tasks when nodes finish processing. For spiky workloads, you can configure scaling rules, which Batch also handles automatically. If you provision 100 VMs with no Batch context, you must code these scheduling and work allocation mechanisms by hand.
+We can take a look at the four different classifications in more detail.
 
-Because of how this managed scheduling engine works, Batch is well-suited to highly parallel workloads, which are sometimes called *embarrassingly parallel* workloads. For example, the engineering company needs to generate highly detailed 3D models of the facilities they design. These models can be extraordinarily compute-intensive and take hours or days to complete. Using Batch, you allocate the rendering of different sections of the structures to separate compute nodes. For example, if 100 nodes are provisioned, it should be possible to complete the rendering in approximately 1/100th of the time.
+|  **SISD**    |  **SIMD**   |**MISD**  | **MIMD** |
+| :------------------- | :-------------------  | :------------------- | :------------------- |
+| - Serial (non-parallel) computer <br> - Single Instruction: Only one instruction stream is being acted on by the CPU during any one clock cycle <br> - Single Data: Only one data stream is being used as input during any one clock cycle <br> - Oldest type of computer.<br> **Examples:** <br>1. Early generation mainframes <br> 2. Minicomputers, Workstations<br>  3. Single processor core PCs <br><br><br><br><br><br><br><br><br><br><br>| - Parallel computer <br> - Single Instruction: All processing units execute the same instruction at any given clock cycle <br> - Multiple Data: Each processing unit can operate on a different data element <br> - Best suited for specialized problems characterized by a high degree of regularity, such as graphics/image processing <br> - Most modern computers, with graphics processor units (GPUs) employ SIMD instructions and execution units<br> **Examples:** <br>1. Processor Arrays: Thinking Machines CM-2, MasPar MP-1 & MP-2, ILLIAC IV<br> 2. Vector Pipelines: IBM 9000, Cray X-MP, Y-MP & C90, Fujitsu VP, NEC SX-2, Hitachi S820, ETA10<br><br>| - Parallel computer <br> - Multiple Instructions: Each processing unit operates on the data independently via separate instruction streams <br> - Single Data: A single data stream is fed into multiple processing units <br> - Few (if any) actual examples of this class of parallel computer have ever existed<br> **Examples:** <br>1. Multiple frequency filters operating on a single signal stream <br> 2. Multiple cryptography algorithms attempting to crack a single coded message <br><br><br><br><br><br><br><br>   | - Parallel computer <br> - Multiple Instructions: Every processor may be executing a different instruction stream <br> - Multiple Data: Every processor may be working with a different data stream <br> - Currently, the most common type of parallel computer - most modern supercomputers fall into this category<br>**Examples:** <br>1. Most current supercomputers<br>2. Networked parallel computer clusters and "grids"<br>3. Multi-processor SMP computers<br>4. Multi-core PCs<br><br><br><br><br><br><br><br> |
+|  |  |  |  |
+
+![Diagram of the multiple instruction multiple data.](../media/4-multiple-instruction-multiple-data.png)
+
+## Different types of HPC Jobs: Massively Parallel vs Tightly Coupled
+
+Parallel jobs have computational problems divided into small, simple, and independent tasks that can be run at the same
+time, often with little or no communication between them.
+
+* Common use cases for parallel jobs include risk simulations, molecular modeling, contextual search, and logistics
+  simulations.
+
+  Tightly Coupled Jobs have a large shared workload are broken into smaller tasks that communicate continuously. The
+  different nodes in the cluster communicate with one another as they perform their processing.
+
+* Common use cases for tightly coupled jobs include:
+  - computational fluid dynamics
+  - weather forecast modeling
+  - material simulations
+  - automobile collision emulations
+  - geospatial simulations
+  - traffic management
+
+### What is Message Passing Interface (MPI)
+
+* MPI is a system that aims to provide a portable and efficient standard for message passing. It's high-performing,
+  portable and scalable, and was developed to work on networks of different parallel computers
+
+* MPI has helped in networking and parallel computing on an industrial and global scale, and helped improve the working
+  of large-scale parallel computer applications
+
+![Diagram of the message passing interface.](../media/5-message-passing-interface.png)
+
+### Microsoft MPI benefits:
+
+* Ease of porting existing code that uses MPICH
+* Security based on Active Directory Domain Services
+* High performance on the Windows operating system
+* Binary compatibility across different types of interconnectivity options

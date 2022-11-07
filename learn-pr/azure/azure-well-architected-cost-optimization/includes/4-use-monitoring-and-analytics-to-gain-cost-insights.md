@@ -1,10 +1,10 @@
-You've deployed your application by using infrastructure and services that are as cost-effective as possible. But what do you do when your business, customer demand, or application changes? How do you ensure that your costs aren't growing out of control relative to the resources that are required to run them? How do you detect areas to improve efficiency in your environment? Architectures aren't static, resource demands will shift over time, and cloud services will evolve to introduce new features and cost savings. 
+You've deployed your application by using infrastructure and services that are as cost-effective as possible. But what do you do when your business, customer demand, or application changes? How do you ensure that your costs aren't growing out of control relative to the resources that are required to run them? How do you detect areas to improve efficiency in your environment? Architectures aren't static, resource demands will shift over time, and cloud services will evolve to introduce new features and cost savings.
 
 ## Track your cloud spend
 
 To make intelligent decisions, you need data. By analyzing where your money is going, you can compare your costs to your utilization to discover where you might have waste within your environment.
 
-An export of your billing data is available at any time. By using your billing data, you can track where your costs are going and how they're allocated across your resources. One challenge for you is that the billing data shows your costs, but not your utilization. You'll have data that indicates you're paying for a large VM, but how much are you actually using it?
+You can export billing data at any time. By using your billing data, you can track where your costs are going and how they're allocated across your resources. One challenge for you is that the billing data shows your costs, but not your utilization. You'll have data that indicates you're paying for a large VM, but how much are you actually using it?
 
 Microsoft Cost Management gives you insights into where your spend is going, as well as underutilized resources. Microsoft Cost Management tracks your total spend, cost by service, and cost over time. You can drill down into resource types and instances. You can also break down your costs by organization or cost center by tagging resources with those categories.
 
@@ -12,9 +12,9 @@ Microsoft Cost Management gives you insights into where your spend is going, as 
 
 Azure Advisor also has a cost component that:
 
-- Recommends VM resizing when necessary
-- Identifies unused Azure ExpressRoute circuits and idle virtual network gateways
-- Advises when to consider buying reserved instances because that might be more cost-effective than using pay-as-you-go instances
+- Recommends VM resizing when necessary.
+- Identifies unused Azure ExpressRoute circuits and idle virtual network gateways.
+- Advises when to consider buying reserved instances because that might be more cost-effective than using pay-as-you-go instances.
 
 Azure Advisor makes additional recommendations in the areas of performance, high availability, and security.
 
@@ -22,7 +22,7 @@ The important part of optimization is to take time to review your spend and eval
 
 ## Conduct cost reviews
 
-After you have your Azure services running, you should regularly check your costs to track your Azure spending. You can use cost analysis to understand where the costs originated for your Azure usage.
+After your Azure services are running, you should regularly check your costs to track your Azure spending. You can use cost analysis to understand where the costs originated for your Azure usage.
 
 :::image type="content" source="../media/4-cost-analysis.png" alt-text="Screenshot of cost analysis in the Azure portal.":::
 

@@ -125,6 +125,6 @@ OSS offers a new-concept-called *Software Composition Analysis (SCA) to address 
 
 When consuming an OSS component, whether you're creating or consuming dependencies, you'll typically want to follow these high-level steps:
 
-1.  Start with the latest, correct version to avoid old vulnerabilities or license misuse.
-2.  Validate that the OSS components are the correct binaries for your version. In the release pipeline, validate binaries to ensure accuracy and keep a traceable bill of materials.
-3.  Get notifications of component vulnerabilities immediately, correct them, and redeploy the component automatically to resolve security vulnerabilities or license misuses from reused software.
+1. Start with the latest, correct version to avoid old vulnerabilities or license misuse.
+1. Validate that the OSS components are the correct binaries for your version. In the release pipeline, validate binaries to ensure accuracy and keep a traceable bill of materials.
+1. Get notifications of component vulnerabilities immediately, correct them, and redeploy the component automatically to resolve security vulnerabilities or license misuses from reused software.

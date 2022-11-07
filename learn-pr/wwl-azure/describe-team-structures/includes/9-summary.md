@@ -10,7 +10,7 @@ You learned how to describe the benefits and usage of:
 ## Learn more
 
  -  [DevOps vs. Agile \| Microsoft Azure](https://azure.microsoft.com/overview/devops-vs-agile/).
- -  [Best practices for &quot;light-weight&quot; Agile project management](/azure/devops/boards/best-practices-agile-project-management).
+ -  [Best practices for Agile project management - Azure Boards \| Microsoft Docs](/azure/devops/boards/best-practices-agile-project-management).
  -  [Agile Manifesto for Software Development \| Agile Alliance](https://www.agilealliance.org/agile101/the-agile-manifesto).
  -  [Agile Board \| Trello](https://trello.com/b/DnZvFigA/agile-board).
  -  [Agile Alliance](https://www.agilealliance.org/).

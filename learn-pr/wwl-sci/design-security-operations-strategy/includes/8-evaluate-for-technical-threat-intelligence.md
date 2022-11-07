@@ -1,5 +1,3 @@
-:::image type="content" source="../media/five-phases-threat-intelligence-lifecycle.png" alt-text="Diagram showing the five phases of the threat intelligence lifecycle." lightbox="../media/five-phases-threat-intelligence-lifecycle.png":::
-
 Threat Intelligence teams provide context and insights to support all other functions (using a threat intelligence platform (TIP) in larger organizations). These insights could include many different facets including:
 * Reactive technical research for active incidents
 * Proactive technical research into attacker groups, attack trends, high profile attacks, and emerging techniques.

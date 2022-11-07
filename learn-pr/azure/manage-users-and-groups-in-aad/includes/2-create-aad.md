@@ -53,7 +53,7 @@ An organization (tenant) has one associated default Azure AD directory. However,
 
     - **Initial domain name**: Enter a domain name associated with your organization. Azure will give a validation error unless the domain isn't known. The default domain name will always have the suffix `.onmicrosoft.com`. You can't change the default domain. If you choose to, you can add a custom domain owned by your organization so defined users can use a traditional company email, such as `john@contoso.com`.
 
-    - **Country or region**: Select the country in which the directory should reside. The country will identify the region and data center where the Azure AD instance will live;  you can't change it later.
+    - **Country or region**: Select the country/region in which the directory should reside. The country/region will identify the region and data center where the Azure AD instance will live;  you can't change it later.
 
     ![Screenshot showing the AD creation process.](../media/2-create-directory.png)
 

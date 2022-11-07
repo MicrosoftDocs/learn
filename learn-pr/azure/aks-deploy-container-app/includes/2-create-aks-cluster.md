@@ -26,7 +26,7 @@ There are two popular cluster architectures for Kubernetes-based deployments.
 
 :::image type="content" source="../media/2-1-diagram.png" alt-text="A diagram that shows a single control plane and multiple nodes in a cluster configuration.":::
 
-The single control plane and multiple node architecture is the most common architectural pattern, and is the easiest to deploy, but it doesn't provide high availability to your cluster's core management services.
+The *single control plane and multiple nodes* architecture is the most common architectural pattern, and is the easiest to deploy, but it doesn't provide high availability to your cluster's core management services.
 
 If the control plane node becomes unavailable for any reason, no other interaction can happen with the cluster. This is the case even by you as an operator, or by any workloads that use Kubernetes' APIs to communicate until, at least, the API server is back online.
 
@@ -38,7 +38,7 @@ If you're dealing with a production scenario, this architecture might not be the
 
 :::image type="content" source="../media/2-2-single-diagram.png" alt-text="A diagram that depicts a single control plane and single node in a cluster configuration.":::
 
-The single control plane and single node architecture is a variant of the previous architecture and is used in development environments. This architecture provides only one node that hosts both the control plane and a worker node. It's useful when testing or experimenting with different Kubernetes concepts. The single control plane and single node architecture limits cluster scaling and makes this architecture unsuitable for production and staging use.
+The *single control plane and single node* architecture is a variant of the previous architecture and is used in development environments. This architecture provides only one node that hosts both the control plane and a worker node. It's useful when testing or experimenting with different Kubernetes concepts. The single control plane and single node architecture limits cluster scaling and makes this architecture unsuitable for production and staging use.
 
 ## Configure an AKS cluster
 
@@ -56,7 +56,7 @@ You create *node pools* to group nodes in your AKS cluster. When you create a no
 
 By default, an AKS cluster will have a Linux node pool (**System Mode**) whether it's created through Azure portal or CLI. However, you'll always have an option to add Windows node pools along with default Linux node pools during the creation wizard in the portal, via CLI, or in ARM templates.
 
-Node pools use virtual machine scale sets as the underlying infrastructure to allow the cluster to scale the number of nodes in a node pool. New nodes created in the node pool will always be the same size as you specified when you created the node pool.
+Node pools use Virtual Machine Scale Sets as the underlying infrastructure to allow the cluster to scale the number of nodes in a node pool. New nodes created in the node pool will always be the same size as you specified when you created the node pool.
 
 :::image type="content" source="../media/2-3-node-pool-diagram.png" alt-text="A diagram that depicts a Kubernetes cluster with two node pools. The first node pool uses NC24s_v2 VMs, and the second node pool uses B2s standard VMs.":::
 
