@@ -10,7 +10,7 @@ The Microsoft 365 security portal provides a purpose-driven user interface to mi
 
 - Microsoft Defender for Cloud Apps
 
-- Microsoft 365 Defender for Cloud
+- Microsoft Defender for Cloud
 
 - Microsoft Purview Insider Risk Management (IRM) 
 
