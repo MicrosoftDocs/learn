@@ -2,7 +2,7 @@ SQL Server 2022 includes enhancements to the T-SQL language for JSON, core engin
 
 ## Using T-SQL with JSON
 
-SQL Server 2022 introduces new and enhanced T-SQL functions to work with JSON data including:
+SQL Server 2022 introduces new and enhanced T-SQL functions to work with JSON data, including:
 
 ISJSON<br>
 JSON_PATH_EXISTS<br>
