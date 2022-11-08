@@ -25,8 +25,8 @@ Interested readers can refer to this popular book on virtual machines<sup>2</sup
 
 ### References
 
-1. _Information Week (2016). *Virtualization Market Now \'Mature,\' Gartner Finds*. <https://www.informationweek.com/cloud/infrastructure-as-a-service/virtualization-market-now-mature-gartner-finds/d/d-id/1325529/>._
+1. _Information Week (2016). *Virtualization Market Now \'Mature,\' Gartner Finds*. <https://www.informationweek.com/infrastructure-as-a-service/virtualization-market-now-mature-gartner-finds/>._
 
 2. _JE Smith and Nair (2005). \"Virtual Machines: Versatile Platforms for Systems and Processes.\" Morgan Kaufmann._
 
-[^1]: <https://www.informationweek.com/cloud/infrastructure-as-a-service/virtualization-market-now-mature-gartner-finds/d/d-id/1325529>  "Information Week (2016). *Virtualization Market Now \'Mature,\' Gartner Finds*."
+[^1]: <https://www.informationweek.com/infrastructure-as-a-service/virtualization-market-now-mature-gartner-finds>  "Information Week (2016). *Virtualization Market Now \'Mature,\' Gartner Finds*."
