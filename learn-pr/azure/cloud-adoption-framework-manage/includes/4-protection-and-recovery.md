@@ -9,4 +9,4 @@ Another essential tool is Azure Site Recovery. Azure Site Recovery replicates vi
 
 This approach to recovery can significantly reduce recovery times. Most likely, the default management baseline includes Azure Site Recovery. For your most critical workloads, it can be suitable protection.
 
-An older IT environment often has one backup solution with one configuration. Azure makes it easy to deploy a backup vault for each workload if needed. With separate backup vaults, you can handle both permissions to backup data and showback for the backup cost.
+An older IT environment often has one backup solution with one configuration. Azure makes it easy to deploy a backup vault for each workload if needed. With separate backup vaults, you can handle both permissions to back up data and showback for the backup cost.
