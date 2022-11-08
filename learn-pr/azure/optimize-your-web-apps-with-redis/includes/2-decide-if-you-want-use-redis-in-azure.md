@@ -59,7 +59,7 @@ A basic cache provides you with a ***single node*** Redis cache. The complete da
 
 ### Standard cache
 
-The standard cache creates ***multiple node*** architectures. Redis replicates a cache in a two-node primary/secondary configuration. Azure manages the replication between the two nodes. This is a production-ready cache with primary/secondary replication.
+The standard cache creates ***multiple node*** architectures. Redis replicates a cache in a two-node primary/secondary configuration. Azure manages the replication between the two nodes and creates a production-ready cache with primary/secondary replication.
 
 ### Premium tier
 

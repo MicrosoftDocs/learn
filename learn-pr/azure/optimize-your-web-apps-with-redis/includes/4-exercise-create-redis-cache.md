@@ -12,7 +12,7 @@ Let's create an Azure Cache for Redis instance to store and return commonly used
 
    :::image type="content" source="../media/4-select-database-redis-cache.png" alt-text="Selecting the Azure portal database option to create an Azure Cache for Redis.":::
 
-1. On the **Azure Cache for Redis** page, select **Create**. 
+1. On the **Azure Cache for Redis** page, select **Create**.
 
    :::image type="content" source="../media/4-create-redis-cache.png" alt-text="Create an Azure Cache for Redis in the Azure portal.":::
 

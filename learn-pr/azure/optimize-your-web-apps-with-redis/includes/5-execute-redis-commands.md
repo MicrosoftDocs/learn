@@ -50,8 +50,8 @@ var redisConnection = ConnectionMultiplexer.Connect(connectionString);
 
 Once you have a `ConnectionMultiplexer`, there are three primary things you might want to do:
 
-1. Access a Redis Database. This is what we will focus on here.
-2. Make use of the publisher/subscript features of Redis. This is outside the scope of this module.
+1. Access a Redis Database. The focus of this module.
+2. Make use of the publisher/subscript features of Redis. Outside the scope of this module.
 3. Access an individual server for maintenance or monitoring purposes.
 
 ### Access a Redis database
@@ -139,7 +139,7 @@ var result = await db.ExecuteAsync("client", "list");
 Console.WriteLine($"Type = {result.Type}\r\nResult = {result}");
 ```
 
-This would output all the connected clients:
+The preceding commands output all the connected clients:
 
 ```output
 Type = BulkString
@@ -201,7 +201,7 @@ Console.WriteLine(stat.Sport); // displays "Soccer"
 
 ## Clean up the connection
 
-Once you're done with the Redis connection, you can **Dispose** the `ConnectionMultiplexer`. This will close all connections and shut down the communication to the server.
+Once you're done with the Redis connection, you can **Dispose** the `ConnectionMultiplexer`. This command will close all connections and shut down the communication to the server.
 
 ```csharp
 redisConnection.Dispose();
@@ -256,7 +256,7 @@ var Promise = require("bluebird");
 Promise.promsifyAll(redis);
 ```
 
-This will add `XXXAsync` versions of all commands methods to `RedisClient` instances, so you can do the following:
+The `promisifyAll` function will add `XXXAsync` versions of all command methods to `RedisClient` instances. Allowing you to use async methods, as in the following example:
 
 ```javascript
 var result = await client.setAsync("myKey", "myValue");
@@ -264,7 +264,7 @@ var result = await client.setAsync("myKey", "myValue");
 
 ### Execute commands dynamically
 
-You can use `sendCommand()` (or `sendCommandAsync()` with bluebird) to send any string as a command to the cache. This is useful when you want to send commands dynamically (for example, if your app presents a prompt to send commands directly to the cache), or if new Redis commands are introduced that the `redis` package doesn't support. Command arguments must be sent as an array.
+You can send commands dynamically by using `sendCommand()` (or `sendCommandAsync()` with bluebird) to send any string as a command to the cache. For example, your app could present a prompt to send commands directly to the cache, or Redis could introduce new commands that the `redis` package doesn't support. Command arguments must be sent as an array.
 
 ```javascript
 // Add a key/value pair
