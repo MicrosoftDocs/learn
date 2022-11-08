@@ -421,7 +421,7 @@ We'll use a console application so we can focus on the Redis implementation.
    ```bash
    npm install redis bluebird dotenv
    ```
-    
+
 ## Add configuration
 
 Let's add the connection information we got from the Azure portal into a `.env` configuration file.
@@ -436,7 +436,7 @@ Let's add the connection information we got from the Azure portal into a `.env` 
 
 1. Select the **.env** file in the editor, and paste in the following text.
 
-   ```
+   ```config
    REDISHOSTNAME=
    REDISKEY=
    REDISPORT=
@@ -444,7 +444,7 @@ Let's add the connection information we got from the Azure portal into a `.env` 
 
 1. Paste in the hostname, primary key, and port after the equals sign on each respective line. The complete file will look similar to the following example.
 
-   ```
+   ```config
    REDISHOSTNAME=myredishost.redis.cache.windows.net
    REDISKEY=K21mLSMN++z8d1FvIeMGy3VOAgoOmqaNYCqeE44eMDc=
    REDISPORT=6380
@@ -489,7 +489,7 @@ Now it's time to write the code for our application.
 
 We're ready to write code to interact with our Redis cache.
 
-1. First, add an `async` function wrapper at the bottom of the file to contain our main code. We need this wrapper to be able to `await` the asynchronous function calls we'll be using. All of the rest of the code you'll be adding in this unit will be in this wrapper.
+1. First, we'll add an `async` function wrapper at the bottom of the file to contain our main code. We need this wrapper to be able to `await` the asynchronous function calls we'll be using. All of the rest of the code we'll be adding in this unit will be in this wrapper.
 
    ```javascript
    (async () => {
