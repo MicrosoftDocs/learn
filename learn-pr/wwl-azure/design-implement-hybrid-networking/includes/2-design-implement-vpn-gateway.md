@@ -8,7 +8,8 @@ Here, we'll look at Azure VPN Gateway, which provides an endpoint for incoming c
 
 An Azure VPN gateway is a specific type of virtual network gateway that is used to send and receive encrypted traffic between an Azure virtual network and an on-premises location over the public Internet. Azure VPN gateways can also be used to connect separate Azure virtual networks using an encrypted tunnel across the Microsoft network backbone.
 
-> [!NOTE] A virtual network gateway is composed of two or more special VMs that are deployed to a specific subnet called the gateway subnet. Virtual network gateway VMs host routing tables and run specific gateway services. These VMs that constitute the gateway are created when you create the virtual network gateway and are managed automatically by Azure and do not require administrative attention.
+> [!NOTE] 
+> A virtual network gateway is composed of two or more special VMs that are deployed to a specific subnet called the gateway subnet. Virtual network gateway VMs host routing tables and run specific gateway services. These VMs that constitute the gateway are created when you create the virtual network gateway and are managed automatically by Azure and do not require administrative attention.
 
 Creating a virtual network gateway can take some time to complete, so it's vital that you plan appropriately. When you create a virtual network gateway, the provisioning process generates the gateway VMs and deploys them to the gateway subnet. These VMs will have the settings that you configure on the gateway.
 
