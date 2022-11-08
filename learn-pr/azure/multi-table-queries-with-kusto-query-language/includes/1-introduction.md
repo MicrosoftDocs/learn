@@ -11,11 +11,11 @@ You'll write queries in Kusto Query Language (KQL) to first enrich data by combi
 - Extend a fact table with dimension table data using the `join` or `lookup` operators
 - Merge or append rows from multiple tables or tabular expressions using the `union` operator
 - Optimize subqueries using the `materialize()` function and transient tables using the `as` operator
-- Analyze data using the aggregation functions `arg_min()` and `arg_max()`
+- Analyze data using the `summarize` operator aggregation functions `arg_min()` and `arg_max()`
 
 ## Prerequisites
 
-- Ability to write [novice](../../../learn-pr/azure/write-first-query-kusto-query-language/index.yml) and [intermediate](../../../learn-pr/azure/gain-insights-data-kusto-query-language/index.yml) level Kusto queries
+- Ability to write [novice](../../write-first-query-kusto-query-language/index.yml) and [intermediate](../../gain-insights-data-kusto-query-language/index.yml) level Kusto queries
 - Familiarity with the `let` statement, the `summarize` operator, and aggregation functions
 
 ## What is the main goal?
