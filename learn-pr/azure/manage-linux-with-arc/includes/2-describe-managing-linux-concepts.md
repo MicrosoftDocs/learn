@@ -33,11 +33,11 @@ Your onboarded Linux machines can use Update Management to manage operating syst
 
 ## Security
 
-Arc-enabled Linux machines enjoy the same security features as all Azure resources, including Microsoft Defender for Cloud and Microsoft Sentinel.
+Linux machines on Azure Arc enjoy the same security features as all Azure resources, including Microsoft Defender for Cloud and Microsoft Sentinel.
 
 ### Microsoft Defender for Cloud
 
-Microsoft Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection Platform (CWPP). Defender for cloud can monitor the security posture of your Arc-enabled Linux machines and fills three vital needs as you manage the security of your Linux resources and workloads:
+Microsoft Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection Platform (CWPP). Defender for cloud can monitor the security posture of your Linux machines on Azure Arc and fills three vital needs as you manage the security of your Linux resources and workloads:
 
 - Continuous assessment of your security posture so you can track new security opportunities and precisely report on the progress of your security efforts.
 - Secures your workloads with step-by-step actions that protect your workloads from known security risks.

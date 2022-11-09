@@ -2,11 +2,11 @@ Azure Arc provides a wide range of capabilities for managing a large number of L
 
 ## Azure Automanage best practices
 
-Azure Automanage offers a unified solution to simply the management of your Arc-enabled Linux resources. With point-and-click simplicity, you can automate operations and apply consistent best practices across the entire lifecycle of your Linux machines. 
+Azure Automanage offers a unified solution to simply the management of your Linux resources connect to Azure Arc. With point-and-click simplicity, you can automate operations and apply consistent best practices across the entire lifecycle of your Linux machines. 
 
 When you use Automanage best practices profiles, a number of Azure services are automatically downloaded to your Linux VMs, including:
 
-- **Machines Insights Monitoring** monitors the health of your Arc-enabled Linux VMs, including their running processes and dependencies on other resources.
+- **Machines Insights Monitoring** monitors the health of your Linux VMs, including their running processes and dependencies on other resources.
 - **Update Management** manages operating system updates for your Linux machines. 
 - **Change Tracking and Inventory** combines change tracking and inventory functions to allow you to track Linux machine changes.
 - **Azure Automation Account/Log Analytics workspace** work together to provide a unique environment for log data from Azure Monitor and other services such as Microsoft Defender for Cloud and Microsoft Sentinel.
@@ -15,7 +15,7 @@ See [Azure Automanage for Machines Best Practices](/azure/automanage/automanage-
 
 ### Azure Automanage Machine Configuration
 
-Azure Automanage Machine Configuration provides native capability to audit or configure operating system settings as code for your Arc-enabled Linux machines. It can be used directly per-machine, or at-scale orchestrated by Azure Policy.
+Azure Automanage Machine Configuration provides native capability to audit or configure operating system settings as code for your Linux machines on Azure Arc. It can be used directly per-machine, or at-scale orchestrated by Azure Policy.
 
 Configuration resources in Azure are designed as an extension resource. You can imagine each configuration as an additional set of properties for the machine. Configurations can include settings such as:
 
@@ -27,7 +27,7 @@ Configurations are distinct from policy definitions. Machine configuration utili
 
 ## Azure Policy
 
-Azure Policy can help you enforce organizational standards and access the compliance of all your Arc-enabled Linux machines. Through its compliance dashboard, Azure Policy provides an aggregated view of your Linux environment, allowing you to evaluate its overall state. Azure Policy also helps to bring your Linux resources to compliance through bulk remediation for existing resources and automatic remediation for new resources.
+Azure Policy can help you enforce organizational standards and access the compliance of all your Linux machines. Through its compliance dashboard, Azure Policy provides an aggregated view of your Linux environment, allowing you to evaluate its overall state. Azure Policy also helps to bring your Linux resources to compliance through bulk remediation for existing resources and automatic remediation for new resources.
 
 Common use cases for Azure Policy include implementing governance for resource consistency, regulatory compliance, security, cost, and management. Policy definitions for these common use cases are already available in your Azure environment as built-ins to help you get started.
 
