@@ -69,7 +69,7 @@ There's one configuration option that we need to change: occlusion. MRTK2 bases 
 2. Download and import the following Unity custom packages in this order:
 
     * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.7.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/tag/getting-started-v2.7.2)
-    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.12.0.unitypackage]
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.12.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/tag/azure-spatial-anchors-v2.12.0)
 
     > [!Note]
     > If you see any CS0618 warnings that say "WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)" is obsolete, you can ignore them.

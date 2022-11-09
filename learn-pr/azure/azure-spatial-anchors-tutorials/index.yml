@@ -3,7 +3,7 @@ uid: learn.azure.azure-spatial-anchors-tutorials-mrtk
 metadata:
   title: Use Azure Spatial Anchors to anchor objects in the real world
   description: This course explores the use of Azure Spatial Anchors by integrating it into a HoloLens 2 application. 
-  ms.date: 08/01/2022
+  ms.date: 11/09/2022
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
