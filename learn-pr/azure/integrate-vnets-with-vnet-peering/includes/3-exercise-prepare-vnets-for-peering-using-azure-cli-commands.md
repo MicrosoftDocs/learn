@@ -59,17 +59,17 @@ Let's take a quick look at what you created.
 1. In Cloud Shell, run the following command to view the virtual networks:
 
     ```azurecli
-    az network vnet list --output table
+    az network vnet list --query "[?contains(provisioningState, 'Succeeded')]" --output table
     ```
 
 1. You should get an output like this:
 
     ```output
-    Name           ResourceGroup                              Location    NumSubnets   Prefixes    DnsServers   DDOSProtection   VMProtection
-    -------------- ------------------------------------------ ----------- ------------ ----------- ------------ ---------------- --------------
-    MarketingVNet <rgn>[sandbox resource group name]</rgn> northeurope 1            10.2.0.0/16              False            False
-    SalesVNet     <rgn>[sandbox resource group name]</rgn> northeurope 1            10.1.0.0/16              False            False
-    ResearchVNet  <rgn>[sandbox resource group name]</rgn> westeurope  1            10.3.0.0/16              False            False
+    Location     Name           EnableDdosProtection    ProvisioningState    ResourceGuid                          ResourceGroup
+    -----------  -------------  ----------------------  -------------------  ------------------------------------  ------------------------------------------
+    westeurope   ResearchVNet   False                   Succeeded            9fe09fe0-d6cd-4043-aba8-b5e850a91251  learn-cb081b92-bc67-49cf-a965-1aeb40a2e25c
+    northeurope  SalesVNet      False                   Succeeded            8f030706-cce4-4a7b-8da2-a9f738887ffd  learn-cb081b92-bc67-49cf-a965-1aeb40a2e25c
+    northeurope  MarketingVNet  False                   Succeeded            ffbf8430-b0eb-4c3d-aa94-3b3156b90bed  learn-cb081b92-bc67-49cf-a965-1aeb40a2e25c
     ```
 
 ## Create virtual machines in each virtual network
@@ -126,7 +126,7 @@ Now, you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual net
 
     The VMs might take several minutes to reach a running state.
 
-1. To confirm that the VMs are running, run the following command. This uses the Linux `watch` command, which is configured to refresh every five seconds.
+1. To confirm that the VMs are running, run the following command. The Linux `watch` command is configured to refresh every five seconds.
 
     ```bash
     watch -d -n 5 "az vm list \
