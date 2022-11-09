@@ -14,7 +14,7 @@ These administrative tools aren't directly tested on [Exam AZ-104: Microsoft Azu
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
  -  Manage resources with the Azure portal.
  -  Manage resources with Azure Cloud Shell.

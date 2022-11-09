@@ -3,7 +3,7 @@ uid: learn.wwl.configure-azure-load-balancer
 metadata:
   title: Configure Azure Load Balancer
   description: "You will learn how to configure an internal or public load balancer."
-  ms.date: 05/06/2022
+  ms.date: 10/25/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -34,8 +34,8 @@ units:
 - learn.wwl.configure-azure-load-balancer.determine-skus
 - learn.wwl.configure-azure-load-balancer.create-backend-pools
 - learn.wwl.configure-azure-load-balancer.create-rules
-- learn.wwl.configure-azure-load-balancer.configure-session-persistence
 - learn.wwl.configure-azure-load-balancer.create-health-probes
+- learn.wwl.configure-azure-load-balancer.simulation-load-balancer
 - learn.wwl.configure-azure-load-balancer.knowledge-check
 - learn.wwl.configure-azure-load-balancer.summary-resources
 badge:

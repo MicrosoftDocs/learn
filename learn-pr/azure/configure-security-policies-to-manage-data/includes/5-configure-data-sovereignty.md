@@ -1,4 +1,4 @@
-Digital information is always subject to the laws of the country or region where it's stored. This concept is known as *data sovereignty*. Many of the concerns that surround data sovereignty relate to enforcing privacy regulations and preventing data stored in a foreign country from being subpoenaed by the host country or region's government.
+Digital information is always subject to the laws of the country/region where it's stored. This concept is known as *data sovereignty*. Many of the concerns that surround data sovereignty relate to enforcing privacy regulations and preventing data stored in a foreign country/region from being subpoenaed by the host country/region's government.
 
 In Azure, customer data can be replicated within a geographic area for enhanced data durability if there's a significant data center disaster.
 

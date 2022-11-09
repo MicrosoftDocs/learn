@@ -4,8 +4,9 @@ metadata:
   title: Exercise - Restrict network access
   description: Learn how to restrict network access to your Azure SQL Server database.
   ms.date: 11/09/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: VanMSFT
+  ms.author: vanto
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash

@@ -14,7 +14,7 @@ Microsoft shared our view of responsible AI in The Future Computed: Artificial I
 
 Internally, Microsoft has created the AI and Ethics in Engineering & Research (Aether) Committee. This committee is a cross-company group that advises our Senior Leadership Team on rising questions, challenges, and opportunities with the development and fielding of AI and related technologies.
 
-In September 2016, Microsoft cofounded the Partnership on AI (PAI) “to study and formulate best practices on AI technologies, to advance the public’s understanding of AI, and to serve as an open platform for discussion and engagement about AI and its influences on people and society.”<sup>6</sup> PAI now has more than 100 organizations (>50% are non-profits) from 13 countries and 4 continents.
+In September 2016, Microsoft cofounded the Partnership on AI (PAI) “to study and formulate best practices on AI technologies, to advance the public’s understanding of AI, and to serve as an open platform for discussion and engagement about AI and its influences on people and society.”<sup>6</sup> PAI now has more than 100 organizations (>50% are non-profits) from 13 countries/regions and 4 continents.
 
 To encourage development of AI solutions to address global challenges, the Microsoft [AI for Good](https://www.microsoft.com/ai/ai-for-good) initiative is a $125 million, five-year commitment to encourage and support development of innovative AI solutions by organizations around the world. These organizations are working to address global challenges in accessibility, sustainability for the earth, humanitarian action, and the preservation of cultural heritage.
 

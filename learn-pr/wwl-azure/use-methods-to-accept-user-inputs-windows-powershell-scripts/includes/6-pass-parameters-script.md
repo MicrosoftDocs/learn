@@ -4,7 +4,7 @@ To identify the variables that will store parameter values, you use a **Param()*
 
 ```powershell
 Param(
-   [string]$ComputerName
+   [string]$ComputerName ,
    [int]$EventID
 )
 ```

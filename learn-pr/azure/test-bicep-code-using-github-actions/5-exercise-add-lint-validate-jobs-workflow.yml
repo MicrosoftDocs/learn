@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Add lint and validate jobs to your workflow
   description: Add Bicep linting and preflight validation to your Bicep deployment workflow.
   ms.date: 10/19/2021
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

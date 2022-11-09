@@ -16,7 +16,7 @@ Your cached data is located in-memory on an Azure server running the Redis cache
 
 ## What type of data can be stored in the cache?
 
-Redis supports a variety of data types, all oriented around *binary safe* strings. This means that you can use any binary sequence for a value, from a string like "i-love-rocky-road" to the contents of an image file. An empty string is also a valid value.
+Redis supports various data types, all oriented around *binary safe* strings. You can use any binary sequence for a value, from a string like "i-love-rocky-road" to the contents of an image file. An empty string is also a valid value.
 
 - Binary-safe strings (most common)
 - Lists of strings
@@ -25,7 +25,7 @@ Redis supports a variety of data types, all oriented around *binary safe* string
 - Sorted sets of strings
 - Maps of strings
 
-Each data value is associated to a *key* that can be used to look up the value from the cache. Redis works best with smaller values (100k or less), so consider chopping up bigger data into multiple keys. Storing larger values is possible (up to 500 MB), but increases network latency and can cause caching and out-of-memory issues if the cache isn't configured to expire old values.
+Each data value is associated with a *key* that can be used to look up the value from the cache. Redis works best with smaller values (100k or less), so consider chopping up bigger data into multiple keys. Storing larger values is possible (up to 500 MB), but increases network latency and can cause caching and out-of-memory issues if the cache isn't configured to expire old values.
 
 ## What is a Redis key?
 
@@ -59,7 +59,7 @@ A basic cache provides you with a ***single node*** Redis cache. The complete da
 
 ### Standard cache
 
-The standard cache creates ***multiple node*** architectures. Redis replicates a cache in a two-node primary/secondary configuration. Azure manages the replication between the two nodes. This is a production-ready cache with primary/secondary replication.
+The standard cache creates ***multiple node*** architectures. Redis replicates a cache in a two-node primary/secondary configuration. Azure manages the replication between the two nodes and creates a production-ready cache with primary/secondary replication.
 
 ### Premium tier
 
@@ -67,4 +67,4 @@ The premium tier includes the features of the standard tier, but adds the abilit
 
 ## Summary
 
-A database is great for storing large amounts of data, but there is an inherent latency when looking up data. You send a query. The server interprets the query, looks up the data, and returns it. Servers also have capacity limits for handling requests. If too many requests are made, data retrieval will likely slow down. Caching will store frequently requested data in memory that can be returned faster than querying a database, which should lower latency and increase performance. Azure Cache for Redis gives you access to a secure, dedicated, and scalable Redis cache, hosted in Azure and managed by Microsoft.
+A database is great for storing large amounts of data, but there's an inherent latency when looking up data. You send a query. The server interprets the query, looks up the data, and returns it. Servers also have capacity limits for handling requests. If too many requests are made, data retrieval will likely slow down. Caching will store frequently requested data in memory that can be returned faster than querying a database, which should lower latency and increase performance. Azure Cache for Redis gives you access to a secure, dedicated, and scalable Redis cache, hosted in Azure and managed by Microsoft.

@@ -8,7 +8,7 @@ Suppose you're a weather enthusiast with a passion for data science. You've come
 
 Here you'll explore an unfamiliar dataset by characterizing the dataset structure and range, visualizing the data distribution, and sharing these insights with others.
 
-While this module uses some queries in Kusto Query Language to characterize the data, writing complex queries is outside the scope of this module. To learn more about Kusto Query Language itself, see [Write your first query with Kusto Query Language](/learn/modules/write-first-query-kusto-query-language/).
+While this module uses some queries in Kusto Query Language to characterize the data, writing complex queries is outside the scope of this module. To learn more about Kusto Query Language itself, see [Write your first query with Kusto Query Language](/training/modules/write-first-query-kusto-query-language/).
 
 ## What is the main goal?
 

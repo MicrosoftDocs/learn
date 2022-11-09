@@ -1,6 +1,6 @@
 Let's add code to upload an image to our Azure Storage account. In this example, we're going to upload the following image to our Azure Storage container.
 
-![An image of the Microsoft Docs and Azure mascots taking a selfie.](../media/docs-and-friends-selfie-stick.png)
+![An image of the Docs mascot and the Azure mascot taking a selfie.](../media/docs-and-friends-selfie-stick.png)
 
 If you're working on your local machine, right-click on this image, and save it to the same folder as where you have your application.
 
@@ -155,9 +155,10 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
 
     async function main() {
     // Create a container (folder) if it does not exist
-    const containerName = 'photos';    
+    const containerName = 'photos';
     const containerClient = blobServiceClient.getContainerClient(containerName);
-    if ( !containerClient.exists()) {
+    const containerExists = await containerClient.exists()
+    if ( !containerExists) {
         const createContainerResponse = await containerClient.createIfNotExists();
         console.log(`Create container ${containerName} successfully`, createContainerResponse.succeeded);
     }
@@ -189,7 +190,7 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
     > Make sure you're in the PhotoSharingApp directory.
 
     ```bash
-    node --harmony index.js
+    node index.js
     ```
 
     > [!TIP]

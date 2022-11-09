@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/24/2022
+  ms.date: 11/02/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -17,36 +17,36 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "A manufacturing company's finance department wants to control how the data is being transferred to Azure Files. They want a graphical tool to manage the process, but they don't want to use the Azure portal. What tool would be best in this situation?"
+  - content: "Which storage approach can help resolve the concerns of the finance team?"
+    choices:
+    - content: "The Azure CLI"
+      isCorrect: false
+      explanation: "Incorrect. Is there another tool that might be more appropriate?"
+    - content: "AzCopy"
+      isCorrect: true
+      explanation: "Correct. AzCopy is ideal for transferring large files because the tool can run in the background."
+    - content: "Azure Storage Explorer"
+      isCorrect: false
+      explanation: "Incorrect. Is there another tool that might be more appropriate?"
+  - content: "What storage tool satisfies the request of the manufacturing department?"
     choices:
     - content: "Azure Data Box"
       isCorrect: false
-      explanation: "Incorrect. Data Box would be better for importing and exporting very large data sets to Azure."
+      explanation: "Incorrect. Data Box is a good choice for importing and exporting large data sets to Azure."
     - content: "Robocopy"
       isCorrect: false
-      explanation: "Incorrect. Robocopy would be better for copying large datasets or lots of files across volumes."
+      explanation: "Incorrect. Robocopy is a good choice for copying large datasets or many files across volumes."
     - content: "Azure Storage Explorer"
       isCorrect: true
-      explanation: "Correct. Azure Storage Explorer is the best choice of the finance department doesn't want to use the Azure portal."
-  - content: "There is an existing storage account in Azure that stores unstructured data. The organization creates a new storage account. What is the best way to move the existing data to the new storage account?"
+      explanation: "Correct. Azure Storage Explorer is the best choice for the manufacturing department because they don't want to access the files through the Azure portal."
+  - content: "How can admins move the data in the existing storage account to the new storage account?"
     choices:
-    - content: "Use the Azure portal"
-      isCorrect: false
-      explanation: "Incorrect. Is there another Azure tool more focused on storage?"
-    - content: "Use the Robocopy command-line tool"
-      isCorrect: false
-      explanation: "Incorrect. It will be difficult to move data between cloud storage accounts."
     - content: "Use the AzCopy command-line tool"
       isCorrect: true
-      explanation: "Correct. The key in this scenario is to move data between storage accounts. The AzCopy tool can work with two different storage accounts. The other tools do not copy data between storage accounts. Alternatively, although not one of the answer choices, Storage Explorer can be used to copy data between storage accounts."
-  - content: "The finance team needs to transfer a series of large files to blob storage. It may take several hours to upload each file. Everyone is concerned if the transfer fails, it will have to be restarted. Which tool is the most appropriate for this task?"
-    choices:
-    - content: "Azure CLI"
+      explanation: "Correct. The key task for the admins is to move data between storage accounts. The AzCopy tool can work with two different storage accounts. The other tools don't copy data between storage accounts. Azure Storage Explorer is another tool that can be used to copy data between storage accounts."
+    - content: "Use the Azure portal"
       isCorrect: false
-      explanation: "Incorrect. Is there another tool that might more appropriate for this task?"
-    - content: "AzCopy"
-      isCorrect: true
-      explanation: "Correct. AzCopy is ideal for transferring large files as it can run in the background."
-    - content: "Azure Storage Explorer"
+      explanation: "Incorrect. The Azure portal doesn't copy data between storage accounts by default. Is there another Azure tool that's more focused on storage?"
+    - content: "Use the Robocopy command-line tool"
       isCorrect: false
-      explanation: "Incorrect. Is there another tool that might more appropriate for this task?"
+      explanation: "Incorrect. It can be a difficult process to use a command-line tool to move data between cloud storage accounts. Is there another Azure tool that's more focused on storage?"

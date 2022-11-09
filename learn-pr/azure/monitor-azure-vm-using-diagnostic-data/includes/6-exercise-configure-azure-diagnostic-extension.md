@@ -17,46 +17,42 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
    |Rule Name    |   MyPerformanceMetrics |
    |Subscription  |   Concierge Subscription  |
    |Resource group   |  <rgn>[sandbox resource group name]</rgn>     |
-   |Region  | Region VM is located     |
+   |Region  | Region where the VM is located     |
    |Platform Type  | Linux     |
 
     :::image type="content" source="../media/6-dcr-name-and-location.png" alt-text="Screenshot of the data collection rules basics":::
 
-
 1. On the **Resources** tab, select **Add resources**.
-1. Select the VM you created **monitored-linux-vm** and **Apply**.
-1. Review the result on the Resources tab.
+1. On the **Select a scope** pane, select the **monitored-linux-vm** VM you created, and select **Apply**.
+1. Review the result on the **Resources** tab.
 
-     :::image type="content" source="../media/6-dcr-add-resources.png" alt-text="Screenshot of the data collection rules resources" lightbox="../media/6-dcr-add-resources.png":::
+    :::image type="content" source="../media/6-dcr-add-resources.png" alt-text="Screenshot of the data collection rules resources" lightbox="../media/6-dcr-add-resources.png":::
 
-1.  On the **Collect and deliver** tab, select **Add data source** to configure the data to be collected and the destination where it will be sent.
-    You have different configuration options depending on the OS installed on the VM. At the basic level, these options are performance counters (CPU, Memory, Disk and Network) which can be sent to Azure Monitor Metrics and/or Azure Monitor Logs.
+1. On the **Collect and deliver** tab, select **Add data source** to configure the data to be collected and the destination where it will be sent.
 
-    However, you can also choose to collect custom metrics like percentage of free disk space on Windows, or the amount of swap available on Linux.
+    You have different configuration options depending on the OS installed on the VM. At the basic level, these options are performance counters (CPU, Memory, Disk and Network) which can be sent to Azure Monitor Metrics and/or Azure Monitor Logs. However, you can also choose to collect custom metrics like percentage of free disk space on Windows, or the amount of swap available on Linux.
 
 1. For **Data source type**, select **Performance Counters**.
 1. Leave the default for the **Basic** performance counters and Sample rate.
 
+    :::image type="content" source="../media/6-add-data-sources.png" alt-text="Screenshot of the data collection rules performance counters." lightbox="../media/6-add-data-sources.png":::
 
-     :::image type="content" source="../media/6-add-data-sources.png" alt-text="Screenshot of the data collection rules performance counters" lightbox="../media/6-add-data-sources.png":::
+1. Select the **Destination** tab to view the default destination for Performance Counters, Azure Monitor Metrics.
 
-1. Select the **Destination** tab to view the default destination for Performance Counters, Azure Monitor Metrics. 
-
-    :::image type="content" source="../media/6-add-dcr-destinations.png" alt-text="Screenshot of the data collection rules performance counters destination":::
+    :::image type="content" source="../media/6-add-dcr-destinations.png" alt-text="Screenshot of the data collection rules performance counters destination.":::
 
     Confirm your settings include a destination type of Azure Monitor metrics.
+
 1. On the bottom of the pane, select **Add data source**.
-1. Select **Review and create** > **Create**. This installs the Azure Monitor Agent on the selected VM, and start data collection with the parameters defined in the rule created above.
-
-
+1. Select **Review and create** > **Create**. This command installs the Azure Monitor Agent on the selected VM, and starts data collection with the parameters defined in the rule created above.
 
 ## Confirm that the agent is installed on the VM
 
 1. In the Azure portal, search for and select Virtual Machines.
 1. Select the virtual machine you created in the previous exercise.
-1. On the VM overview page, under **Extensions**, you should see **AzureMonitorLinuxAgent**.
+1. On the VM overview page, under **Extensions**, you should see **AzureMonitorLinuxAgent** listed.
 
-     :::image type="content" source="../media/6-agent-on-vm.png" alt-text="Screenshot of the virtual machine overview page with the agent Installed":::
+    :::image type="content" source="../media/6-agent-on-vm.png" alt-text="Screenshot of the virtual machine overview page with the agent Installed.":::
 
 ## Create a custom KPI dashboard
 
@@ -74,7 +70,7 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
 1. Select the **Finish editing metric** check mark.
 
-1. At the top right of the chart, select **Pin to dashboard**. The **Pin to dashboard** pane appears.
+1. At the top right of the chart, select **Save to dashboard** > **Pin to dashboard**. The **Pin to dashboard** pane appears.
 
 1. Select the **Create new** tab.
 
@@ -82,7 +78,7 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
 1. In the **Dashboard name** field, enter *KPI Dashboard*.
 
-    ![Screenshot that shows the "Pin to another dashboard" pane filled out](../media/6-create-dashboard.png)
+   :::image type="content" source="../media/6-create-dashboard.png" alt-text="Screenshot that shows the 'Pin to another dashboard' pane filled out.":::
 
 1. Select **Create and pin**. The **Metrics** pane reappears.
 
@@ -100,7 +96,7 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
 1. Select the **Finish editing metric** check mark.
 
-1. At the top right of the chart, select **Pin to dashboard**. The **Pin to dashboard** pane appears.
+1. At the top right of the chart, select **Save to dashboard** > **Pin to dashboard**. The **Pin to dashboard** pane appears.
 
 1. In the **Dashboard** dropdown field, select **KPI Dashboard**.
 
@@ -118,22 +114,20 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
    |Metric     |   cpu/usage_active  |
    |Aggregation    |    Max     |
 
-
 1. Select the **Finish editing metric** check mark.
 
-1. At the top right of the chart, select **Pin to dashboard**.
+1. At the top right of the chart, select **Save to dashboard** > **Pin to dashboard**.
 
 1. In the **Dashboard** dropdown field, select **KPI Dashboard**.
 
-1. Select **Pin**. The The **Metrics** pane for your VM reappears.
+1. Select **Pin**. The **Metrics** pane for your VM reappears.
 
 ### View the new dashboard
 
 1. At the top left of the portal, select the **&#9776;** icon, and then select **Dashboard**. The **KPI Dashboard** appears.
 
-    ![Screenshot that shows the dashboard selection dropdown list.](../media/6-view-dashboard.png)
+    :::image type="content" source="../media/6-view-dashboard.png" alt-text="Screenshot that shows the dashboard selection dropdown list.":::
 
 1. Explore the dashboard. Try changing the **UTC Time** range to **Past 30 minutes**, and select **Apply**.
 
     :::image type="content" source="../media/6-kpi-dashboard.png" alt-text="Screenshot that shows the new KPI dashboard with the three graphs created earlier." lightbox="../media/6-kpi-dashboard.png":::
-

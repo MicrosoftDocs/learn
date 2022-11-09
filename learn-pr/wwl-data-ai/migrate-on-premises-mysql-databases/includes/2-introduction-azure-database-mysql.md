@@ -1,4 +1,4 @@
-Azure Database for MySQL can be deployed as a single server or Flexible Server (Preview) to host your organizations MySQL database in Azure. It's a fully managed database as a service that can handle mission-critical workloads with predictable performance and dynamic scalability.
+Azure Database for MySQL can be deployed as a Flexible Server (Preview) to host your organizations MySQL database in Azure. It's a fully managed database as a service that can handle mission-critical workloads with predictable performance and dynamic scalability.
 
 As a database developer with many years experience of running and managing on-premises MySQL installations, you want to explore how Azure Database for MySQL supports and scales its features.
 

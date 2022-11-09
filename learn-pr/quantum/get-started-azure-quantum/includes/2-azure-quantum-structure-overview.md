@@ -17,6 +17,7 @@ Once you have a quantum program that you'd like to run on a quantum computer, yo
 
 - [Quantinuum](https://www.quantinuum.com): Trapped-ion system with high-fidelity, fully connected qubits, and the ability to perform mid-circuit measurements.
 - [IONQ](https://ionq.com/): Dynamically reconfigurable trapped-ion quantum computer for up to 11 fully connected qubits, that lets you run a two-qubit gate between any pair.
+- [Rigetti](https://www.rigetti.com/): Gate-based superconducting processors will be available in Azure Quantum soon and utilize [Quantum Intermediate Representation (QIR)](/azure/quantum/concepts-qir) to enable low latency and parallel execution.
 - [Quantum Circuits, Inc](https://quantumcircuits.com/): Fast and high-fidelity system with powerful real-time feedback to enable error correction.
 
 ### Optimization providers
@@ -29,7 +30,7 @@ For optimization solutions, these are the available providers you can choose fro
 
 ## Azure subscription
 
-The cloud is a powerful place that hosts many moving parts. To use the Microsoft cloud platform, Azure, your crew needs to first have an account to access and manage Azure resources.
+The cloud is a powerful place that hosts many moving parts. To use the Microsoft cloud platform, Azure, your crew needs to first have an account with an active subscription to access and manage Azure resources.
 
 A *subscription* represents a grouping of Azure resources. An invoice is generated at the subscription scope. A subscription has its own payment methods that are used to pay its invoice. [Learn how to create an Azure account.](/training/modules/create-an-azure-account/?azure-portal=true)
 

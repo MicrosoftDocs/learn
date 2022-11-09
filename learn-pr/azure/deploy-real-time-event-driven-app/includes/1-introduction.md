@@ -16,4 +16,4 @@ As a Java developer, you're already familiar with NoSQL databases and how to con
   
 - An Azure subscription
 - Local installations of Java JDK (1.8 or later), Maven (3.0 or later), and the Azure CLI (2.12 or later)
-- Azure Functions Core Tools (2.6.66 or later)
+- Azure Functions Core Tools (4x)

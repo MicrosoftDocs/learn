@@ -72,7 +72,7 @@ Now that we've provisioned the Azure Spring Cloud instance and configured the se
 To create our microservice, we'll use [https://start.spring.io/](https://start.spring.io/) with the command line:
 
 ```bash
-curl https://start.spring.io/starter.tgz -d dependencies=web,mysql,data-jpa,cloud-eureka,cloud-config-client -d baseDir=todo-service -d bootVersion=2.6.4.RELEASE -d javaVersion=11 | tar -xzvf -
+curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=web,mysql,data-jpa,cloud-eureka,cloud-config-client -d baseDir=todo-service -d bootVersion=2.6.4.RELEASE -d javaVersion=11 | tar -xzvf -
 ```
 
 > [!NOTE]
