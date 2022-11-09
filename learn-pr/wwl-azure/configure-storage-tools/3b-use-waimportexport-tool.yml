@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-storage-tools.use-waimportexport-tool
+title: Use the WAImportExport tool
+metadata:
+  title: Use the WAImportExport tool
+  description: "Use the WAImportExport tool with the Azure Import/Export service to import or export data in Azure."
+  ms.date: 11/02/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/3b-use-waimportexport-tool.md)]

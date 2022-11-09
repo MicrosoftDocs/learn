@@ -7,7 +7,7 @@ parameters:
   type: string
 - name: deploymentDefaultLocation
   type: string
-  default: westus3
+  default: eastus
 
 stages:
 

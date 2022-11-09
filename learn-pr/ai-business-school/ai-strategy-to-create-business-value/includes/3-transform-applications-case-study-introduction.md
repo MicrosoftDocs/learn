@@ -5,7 +5,7 @@ Telefónica is one of the world's largest telecommunications companies. Like all
 ## Industry context
 :::row:::
 :::column span="2":::
-Telefónica is one of the largest telecommunications companies in the world, operating world-class fixed, mobile, and broadband networks in several countries across Europe and Latin America under its three commercial brands: Movistar (Spain and Latin America), O2 (Germany and the UK), and Vivo (Brazil). Telefónica offers quality and reliability through simple products and services in regions where many competitors struggle.
+Telefónica is one of the largest telecommunications companies in the world, operating world-class fixed, mobile, and broadband networks in several countries/regions across Europe and Latin America under its three commercial brands: Movistar (Spain and Latin America), O2 (Germany and the UK), and Vivo (Brazil). Telefónica offers quality and reliability through simple products and services in regions where many competitors struggle.
 
 At the closing of 2018 Telefónica had over 356 million customers, including 271 million mobile customers, over 13 million fiber and cable customers, and almost 8 million pay-TV customers. In 2018 Telefónica earned 48,693 million euros in revenue, with a net profit of 3,331 million euros.
 :::column-end:::
@@ -20,7 +20,7 @@ At the closing of 2018 Telefónica had over 356 million customers, including 271
 :::column span="2":::
 The entire telco industry is undergoing a long-term fundamental transformation driven by over the top (OTT) providers, voice-over-IP, and the exponential growth of network data traffic. Like all telecommunications companies, Telefónica has been challenged by digital disruption and changing customer preferences.
 
-Telefónica has strong market share in its core markets. Being exposed to multiple countries in different regions, Telefónica is also exposed to economic vulnerabilities in the markets where it operates. In order to address these challenges, Telefónica needed a new strategy – one that would transform its applications and operations and make use of data to better serve customers and employees while providing a robust foundation for the future of their organization.
+Telefónica has strong market share in its core markets. Being exposed to multiple countries/regions, Telefónica is also exposed to economic vulnerabilities in the markets where it operates. In order to address these challenges, Telefónica needed a new strategy – one that would transform its applications and operations and make use of data to better serve customers and employees while providing a robust foundation for the future of their organization.
 
 Telefónica began its transformation in 2010, when it committed to a massive digitalization project to make its platforms intelligent and modernize the business. To make use of its treasure-trove of existing data, Telefónica created a cognitive platform that incorporates information about core connectivity assets, unified IT systems, and products and services offered to users. Over the last few years, the company has also branched out into added-value media and internet services.
 :::column-end:::

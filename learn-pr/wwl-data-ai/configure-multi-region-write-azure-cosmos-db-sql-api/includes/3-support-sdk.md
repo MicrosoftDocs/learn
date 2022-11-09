@@ -1,4 +1,4 @@
-In the .NET SDK for Azure Cosmos DB SQL API, configuring the preferred region to write to is a matter of selecting between two different properties in the **CosmosClientOptions** object.
+In the .NET SDK for Azure Cosmos DB for NoSQL, configuring the preferred region to write to is a matter of selecting between two different properties in the **CosmosClientOptions** object.
 
 > [!TIP]
 > If you do not specify a preferred region, the SDK will automatically default to the primary region for your account. The primary region is the first region in the region list, and is typically the region you selected first when you created the Azure Cosmos DB account.
@@ -23,7 +23,7 @@ using CosmosClient client = builder
     .Build();
 ```
 
-Once the client connects to Azure Cosmos DB, the client will pull a list of regions and prioritize them based on proximity from the region you chose. If the region you selected is not available, the client will try the alternative regions in the established order.
+Once the client connects to Azure Cosmos DB, the client will pull a list of regions and prioritize them based on proximity from the region you chose. If the region you selected isn't available, the client will try the alternative regions in the established order.
 
 ## Building a preferred write regions list
 

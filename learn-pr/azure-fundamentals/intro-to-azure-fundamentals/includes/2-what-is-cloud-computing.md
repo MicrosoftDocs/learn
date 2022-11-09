@@ -2,7 +2,7 @@ Have you ever wondered what cloud computing is? It's the delivery of computing s
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LyBB]
 
-## Why is cloud computing typically cheaper to use?<br>
+## Why is cloud computing typically cheaper to use?
 
 Cloud computing is the delivery of computing services over the internet by using a pay-as-you-go pricing model. You typically pay only for the cloud services you use, which helps you:
 

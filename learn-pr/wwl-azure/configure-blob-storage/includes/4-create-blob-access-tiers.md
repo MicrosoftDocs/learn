@@ -34,8 +34,4 @@ The access options for Azure Blob Storage offer a range of features and support 
 
 ### Configure the blob access tier
 
-In the Azure portal, you can select the blob access tier for your Azure storage account. You can also change the blob access tier for your account at any time.
-
-:::image type="content" source="../media/blob-performance-tiers-16ec0068.png" alt-text="Screenshot that shows access tier choices for an Azure storage account.":::
-
-By selecting the correct access tier for your needs, you can store your blob data in the most cost-effective manner.
+In the Azure portal, you can select the blob access tier for your Azure storage account. You can also change the blob access tier for your account at any time. By selecting the correct access tier for your needs, you can store your blob data in the most cost-effective manner.

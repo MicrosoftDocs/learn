@@ -18,7 +18,7 @@ Secure access to virtual networks
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
  -  Determine when to use network security groups.
  -  Implement network security group rules.

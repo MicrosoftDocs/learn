@@ -4,7 +4,7 @@ In this unit, you'll learn the importance of machine learning and AI technologie
 
 When you're evaluating which application features will enhance the user experience and increase business value, machine learning and AI are great assets to improve the interaction with your customers and partners.
 
-In addition to the transformation of its main e-commerce applications into a microservices architecture, Tailwind Traders is evaluating the introduction of new functionality that enhances the customer experience. Tailwind Traders has no data-science skills. New staff will be hired in the future, but in the meantime, the company should identify quick wins that can help in improving the competitiveness of its web shop.
+In addition to transforming its main e-commerce applications into a microservices architecture, Tailwind Traders is evaluating introducing new functionality that enhances the customer experience. Tailwind Traders has no data-science skills. New staff will be hired in the future, but in the meantime, the company should identify quick wins that can help in improving the competitiveness of its web shop.
 
 Tailwind Traders is evaluating four possibilities:
 
@@ -25,7 +25,7 @@ Azure offers tools and services that can help organizations build machine learni
 
 Tailwind Traders sees a high potential in Azure Cognitive Services, because its data-science department is not fully operational. The company will evaluate these features to innovate the e-commerce application:
 
-- **Personalizer**: Organizations can use this feature to learn which users prefer which products, and to make fine-tuned, individual recommendations. Some customers prefer products with quick delivery, whereas other customers prefer products on sale. Personalizer uses a type of machine learning algorithm called *reinforcement learning*, which doesn't require huge amounts of data to be trained. This is interesting for Tailwind Traders, because the data doesn't exist yet.
+- **Personalizer**: Organizations can use this feature to learn which users prefer which products, and to make fine-tuned, individual recommendations. Some customers prefer products with quick delivery, whereas other customers prefer products on sale. Personalizer uses a type of machine-learning algorithm called *reinforcement learning*, which doesn't require huge amounts of data to be trained. This is interesting for Tailwind Traders, because the data doesn't exist yet.
 - **Text Analytics**: Many users write product reviews. Organizations can analyze reviews to find customers who express negative sentiments. Focusing on these customers can reduce customer churn and increase loyalty.
 - **Translator**: Product reviews can be an effective sales tool, but they're useful only to customers who understand the language they're written in. Using real-time translation services would allow Tailwind Traders to show product reviews to any user regardless of their native language.
 

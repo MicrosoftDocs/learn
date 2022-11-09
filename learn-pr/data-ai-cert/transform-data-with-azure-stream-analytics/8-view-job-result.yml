@@ -4,9 +4,9 @@ title: Exercise - View the results from an Azure Stream Analytics job
 metadata:
   title: Exercise - View the results from an Azure Stream Analytics job
   description: Exercise - View the results from an Azure Stream Analytics job
-  ms.date: 01/31/2019
-  author: ctesta-oneillmsft
-  ms.author: chtestao
+  ms.date: 11/07/2022
+  author: wwlpublish
+  ms.author: smcdowell
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

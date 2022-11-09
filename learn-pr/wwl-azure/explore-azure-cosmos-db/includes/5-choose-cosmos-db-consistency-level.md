@@ -1,4 +1,4 @@
-Azure Cosmos DB allows developers to choose among the five consistency models: strong, bounded staleness, session, consistent prefix and eventual. Each of these consistency models can be used for specific real-world scenarios. Each provides precise availability and performance tradeoffs and are backed by comprehensive SLAs. The following simple considerations will help you make the right choice in many common scenarios.
+Azure Cosmos DB allows developers to choose among the five consistency models: strong, bounded staleness, session, consistent prefix and eventual. Each of these consistency models can be used for specific real-world scenarios. Each provides precise availability and performance tradeoffs and is backed by comprehensive SLAs. The following simple considerations will help you make the right choice in many common scenarios.
 
 ## SQL API and Table API
 
@@ -6,13 +6,9 @@ Consider the following points if your application is built using SQL API or Tabl
 
 * For many real-world scenarios, session consistency is optimal and it's the recommended option. 
 
-* If your application requires strong consistency, it is recommended that you use bounded staleness consistency level.
+* If you need stricter consistency guarantees than the ones provided by session consistency, it's recommended that you use bounded staleness consistency level.
 
-* If you need stricter consistency guarantees than the ones provided by session consistency and single-digit-millisecond latency for writes, it is recommended that you use bounded staleness consistency level.
-
-* If your application requires eventual consistency, it is recommended that you use consistent prefix consistency level.
-
-* If you need less strict consistency guarantees than the ones provided by session consistency, it is recommended that you use consistent prefix consistency level.
+* If you need less strict consistency guarantees than the ones provided by session consistency, it's recommended that you use consistent prefix consistency level.
 
 * If you need the highest throughput and the lowest latency, then use eventual consistency level.
 
@@ -34,4 +30,4 @@ In practice, you may often get stronger consistency guarantees. Consistency guar
 
 If your Azure Cosmos account is configured with a consistency level other than the strong consistency, you can find out the probability that your clients may get strong and consistent reads for your workloads by looking at the *Probabilistically Bounded Staleness* (PBS) metric. 
 
-Probabilistic bounded staleness shows how eventual your eventual consistency is. This metric provides an insight into how often you can get a stronger consistency than the consistency level that you have currently configured on your Azure Cosmos account. In other words, you can see the probability (measured in milliseconds) of getting strongly consistent reads for a combination of write and read regions.
+Probabilistically bounded staleness shows how eventual your eventual consistency is. This metric provides an insight into how often you can get a stronger consistency than the consistency level that you've currently configured on your Azure Cosmos account. In other words, you can see the probability (measured in milliseconds) of getting strongly consistent reads for a combination of write and read regions.

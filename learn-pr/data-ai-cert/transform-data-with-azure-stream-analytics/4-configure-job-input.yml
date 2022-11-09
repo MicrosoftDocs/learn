@@ -4,9 +4,9 @@ title: Exercise - Configure the Azure Stream Analytics job input
 metadata:
   title: Exercise - Configure the Azure Stream Analytics job input
   description: Exercise - Configure the Azure Stream Analytics job input
-  ms.date: 01/31/2019
-  author: ctesta-oneillmsft
-  ms.author: chtestao
+  ms.date: 11/07/2022
+  author: wwlpublish
+  ms.author: smcdowell
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

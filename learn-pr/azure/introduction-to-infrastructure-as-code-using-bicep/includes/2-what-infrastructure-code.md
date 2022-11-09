@@ -3,11 +3,13 @@ You've been asked to evaluate whether infrastructure as code might be a valuable
 - Azure portal
 - Azure CLI
 - Azure PowerShell
-- ARM templates (JSON and Bicep)
+- Azure Resource Manager templates (JSON and Bicep)
 
 You're looking for a repeatable option, and you need to decide which technology to use to deploy your Azure infrastructure.
 
 In this unit, you'll learn how and why infrastructure as code can help you deploy your Azure infrastructure in an automated and repeatable way.
+
+Azure CLI commands are used to illustrate concepts. You'll learn more about using commands to deploy resources in other modules of the Bicep learning path.
 
 ## Defining infrastructure as code
 
@@ -15,9 +17,9 @@ Your company designs new toys for release to the market, and most new toys requi
 
 You can think of infrastructure as code as being like the instruction manual for your infrastructure. The manual details the end configuration of your resources and how to reach that configuration state.
 
-Infrastructure as code is the process of automating your infrastructure provisioning. It uses a descriptive coding language and versioning system that is similar to what is used for source code. When you create an application, your source code generates the same result each time it's compiled. In a similar manner, infrastructure-as-code deployments are automated, consistent, and repeatable. Infrastructure as code can automate the deployments of your infrastructure resources, like virtual networks, virtual machines, applications, and storage.
+Infrastructure as code is the process of automating your infrastructure provisioning. It uses a descriptive coding language and versioning system that's similar to what is used for source code. When you create an application, your source code generates the same result each time it's compiled. In a similar manner, infrastructure-as-code deployments are automated, consistent, and repeatable. Infrastructure as code can automate the deployments of your infrastructure resources, like virtual networks, virtual machines, applications, and storage.
 
-![Infrastructure as code.](../media/iac.svg)
+:::image type="content" source="../media/iac.svg" alt-text="Diagram that shows the infrastructure as code process using a source code repository with a template that deploys Azure resources." border="false" :::
 
 If you recall the instruction manual for the new toy, there are multiple ways to write the instruction manual. One option is to detail each step of the build process. Another option is to show an exploded view of the pieces and parts needed to assemble the toy. Later in this unit, you'll learn about the differences between imperative and declarative code and how they relate to your company's instruction manuals.
 
@@ -39,18 +41,18 @@ One of the benefits of using infrastructure as code is the level of confidence y
 
 - **Automated scanning**: Infrastructure-as-code configurations can be scanned by automated tooling that can check for errors in the code. Automated tooling also can review proposed changes to ensure that security and performance practices are followed.
 
-- **Secret management**: Many solutions require secrets, like connection strings, encryption keys, client secrets, and certificates. In Azure, Azure Key Vault is the service that's used to securely store these secrets. Many infrastructure-as-code tools can integrate with Key Vault to access these secrets securely at deployment.
+- **Secret management**: Many solutions require secrets, like connection strings, encryption keys, client secrets, and certificates. In Azure, an Azure Key Vault is the service that's used to securely store these secrets. Many infrastructure-as-code tools can integrate with Key Vault to access these secrets securely at deployment.
 
 - **Access control**: With infrastructure-as-code deployments, you have the option of using managed identities or service accounts to automate resource provisioning. This process ensures that cloud resources are modified only by these identities. It also helps prevent incorrect configurations deployed to production. If necessary, you can override this process by using an emergency access account (often called a _break glass account_) or by using the Azure Active Directory Privileged Identity Management feature.
 
 - **Avoid configuration drift**: _Idempotence_ is a term that's frequently associated with infrastructure as code. When an operation is idempotent, it means that it provides the same result each time it's run. If you choose tooling that uses idempotent operations, you can avoid configuration drift.
 
-Consider the Azure CLI as an example. The following command creates an Azure resource group named `storage-resource-group` in the East US region:
+As an example of idempotence, consider the following Azure CLI command. The command creates an Azure resource group named `storage-resource-group` in the East US region.
 
 ```azurecli
 az group create \
-    --name storage-resource-group \
-    --location eastus
+  --name storage-resource-group \
+  --location eastus
 ```
 
 If you run this command a second time, you receive the exact same output. You don't receive an error or a duplicate resource group. The reason is because this Azure CLI command was designed to be idempotent.
@@ -59,7 +61,7 @@ When you use infrastructure as code, you can redeploy your environment at each r
 
 ### Manage multiple environments
 
-Many organizations maintain multiple application environments. The developers in your toy company may have multiple versions of application code staged in a repository for release to different environments. The environments might include development, testing, and production. Some organizations maintain multiple production environments for applications that are distributed globally. Other organizations, like independent software vendors (ISVs), maintain multi-tenanted environments for their customers.
+Many organizations maintain multiple application environments. The developers in your toy company may have multiple versions of application code staged in a repository for release to different environments. The environments might include development, testing, and production. Some organizations maintain multiple production environments for applications that are distributed globally. Other organizations, like independent software vendors (ISVs), maintain multiple tenant environments for their customers.
 
 Here are some of the key ways infrastructure as code can help you manage your environments:
 
@@ -73,11 +75,11 @@ Here are some of the key ways infrastructure as code can help you manage your en
 
 Infrastructure as code can help you better understand the state of your cloud resources:
 
-- **Audit trail**: Changes to your infrastructure-as-code configurations are version-controlled in the same way as your application source code. These changes are tracked in your tooling, like with Git's version history. This audit trail means that you can review the details of each change, who made the change, and when the change was made.
+- **Audit trail**: Changes to your infrastructure-as-code configurations are version controlled in the same way as your application source code. These changes are tracked in your tooling, like with Git's version history. This audit trail means that you can review the details of each change, who made the change, and when the change was made.
 
 - **Documentation**: You can use many infrastructure-as-code configurations to add metadata, like comments, which describe the purpose of the code in your configuration. If your organization already follows a code documentation process, consider adopting these same procedures with your infrastructure code.
 
-- **Unified system**: Many times, when a developer is working on a new feature, they must make changes to application code and infrastructure code. By using a common system, your organization can better understand the relationship between your applications and your infrastructure.
+- **Unified system**: Many times, when a developer is working on a new feature, they must make changes to application code and infrastructure code. When you use a common system, your organization can better understand the relationship between your applications and your infrastructure.
 
 - **Better understanding of cloud infrastructure**: When you use the Azure portal to provision resources, many of the processes are abstracted from view. Infrastructure as code can help provide a better understanding of how Azure works and how to troubleshoot issues that might arise. For example, when you create a virtual machine by using the Azure portal, some created resources are abstracted from view. Managed disks and network interface cards are deployed behind the scenes. When you deploy the same virtual machine by using infrastructure as code, you have complete control over all resources that are created.
 
@@ -95,23 +97,25 @@ When you choose between using an imperative approach and a declarative approach 
 
 In Azure, an imperative code approach is accomplished programmatically by using a scripting language like Bash or Azure PowerShell. The scripts execute a series of steps to create, modify, and even remove your resources.
 
-Take a look at the following example, which uses the Azure CLI to create a resource group and a storage account:
+This example shows two Azure CLI commands that create a resource group and a storage account.
 
 ```azurecli
 #!/usr/bin/env bash
 az group create \
-    --name storage-resource-group \
-    --location eastus
+  --name storage-resource-group \
+  --location eastus
 
 az storage account create \
-    --name mystorageaccount \
-    --resource-group storage-resource-group \
-    --kind StorageV2 \
-    --access-tier Hot \
-    --https-only true
+  --name mystorageaccount \
+  --resource-group storage-resource-group \
+  --location eastus \
+  --sku Standard_LRS \
+  --kind StorageV2 \
+  --access-tier Hot \
+  --https-only true
 ```
 
-The example executes two Azure CLI commands. The first command creates a resource group named `storage-resource-group` in the East US region. The second command creates a storage account named `mystorageaccount` in the `storage-resource-group` resource group, which was created in the first command. The second command also configures a couple properties for the storage account, including the kind of storage account and its access tier.
+The first command creates a resource group named `storage-resource-group` in the East US region. The second command creates a storage account named `mystorageaccount` in the `storage-resource-group` resource group that was created in the first command. The second command also configures some properties for the storage account, including the kind of storage account and its access tier.
 
 You can use an imperative approach to fully automate resource provisioning, but the approach has some disadvantages. As your architecture matures, scripts can become complex to manage. Commands may be updated or deprecated, which requires reviews of existing scripts.
 
@@ -127,10 +131,10 @@ In Azure, a declarative code approach is accomplished by using  _templates_. Man
 > [!NOTE]
 > This module focuses on using Bicep templates.
 
-Take a look at the following example of a Bicep template that configures a storage account. The configuration of the storage account matches the Azure CLI example:
+Take a look at the following example of a Bicep template that configures a storage account. The configuration of the storage account matches the Azure CLI example.
 
 ```bicep
-resource storageAccount 'Microsoft.Storage/storageAccounts@2021-09-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2022-05-01' = {
   name: 'mystorageaccount'
   location: 'eastus'
   sku: {
@@ -144,6 +148,6 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2021-09-01' = {
 }
 ```
 
-The resources section defines the storage account configuration. This section contains the name, location, and properties of the storage account, including its SKU and the kind of account it is.
+The resources section defines the storage account configuration. This section contains the name, location, and properties of the storage account, including its SKU and the kind of account.
 
 You might notice that the Bicep template doesn't specify how to deploy the storage account. It specifies only what the storage account needs to look like. The actual steps that are executed behind the scenes to create this storage account or to update it to match the specification are left for Azure to decide.

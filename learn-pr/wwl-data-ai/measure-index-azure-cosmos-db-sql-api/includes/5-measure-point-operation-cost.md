@@ -18,7 +18,7 @@ ItemResponse<Product> response = await container.CreateItemAsync<Product>(item);
 
 The **ItemResponse\<\>** variable is helpful for many things, but this example only focuses on two uses.
 
-First, the variable contains a **Resource** property that will output a deserialized instance of your item in the specified generic type. This resource is the item that was recently created server-side in Azure Cosmos DB SQL API.
+First, the variable contains a **Resource** property that will output a deserialized instance of your item in the specified generic type. This resource is the item that was recently created server-side in Azure Cosmos DB for NoSQL.
 
 Second, the variable contains a **RequestCharge** property that returns a value of type **double,** indicating the number of request units consumed by this operation.
 
