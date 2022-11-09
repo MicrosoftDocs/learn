@@ -31,17 +31,14 @@ The "Add Microsoft Sentinel to Workspace" screen will now appear after you've co
 
  1. Select the newly created Log Analytics workspace. And select the **Add** button.
 
-The new Microsoft Sentinel workspace will now be the active screen.  The Microsoft Sentinel left navigation has three areas:  
+The new Microsoft Sentinel workspace will now be the active screen.  The Microsoft Sentinel left navigation has four areas:  
 
- 1. General
- 1. Threat management
- 1. Content management
- 1. Configuration
+- General
+- Threat management
+- Content management
+- Configuration
 
 The Overview tab displays a standard dashboard of information about the ingested data, alerts, and incidents.
-
-
-
 
 ## Microsoft Sentinel sharing a Log Analytics Workspace
 
