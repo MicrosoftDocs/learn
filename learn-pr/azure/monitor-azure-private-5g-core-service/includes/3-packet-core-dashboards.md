@@ -1,104 +1,50 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+In addition to Log Analytics, which allows you to monitor your private mobile network from the cloud, Azure Private 5G Core provides packet core dashboards for you to monitor the network locally at each site.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+The packet core dashboards allow you to monitor key statistics relating to your deployment in real time. For example, you can check information on firing alerts and quickly react to emerging issues. The dashboards are powered by [*Grafana*](https://grafana.com/grafana/), an open-source, metric analytics and visualization suite.
 
-    Heading: none
+The packet core dashboards are available from the Azure Stack Edge (ASE) server on which the packet core instance is deployed. As they run locally on the ASE server, the impact of the network bandwidth and the cloud connectivity is minimized. With the packet core dashboards, you can monitor each site in your private mobile network continuously and in real time.
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+## Board user interface and default dashboards
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+Each dashboard contains the following user interface components:
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+- Panels: Panels are for displaying statistics. Each statistic is displayed in a panel.
 
-    Goal: Describe the part of the scenario covered in this exercise
+  The packet core dashboards provide *graph* panels and *single stat* panels. The *graph* panels display multiple statistics and/or recent changes in a statistic. The *single stat* panels display a single statistic.
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+- Rows: Rows are for organizing panels. Each dashboard has a minimum of one row.
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+The following example dashboard contains both *graph* and *single stat* panels that are arranged into three rows:
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+:::image type="content" source="../media/packet-core-uplink-downlink-stats-dashboard.png" alt-text="An example dashboard that shows the graph panels and single stat panels arranged into three rows" border="true":::
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+By default, Azure Private 5G Core provides the following packet core dashboards:
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+- The **Overview dashboard**: Displays important key performance indicators (KPIs), including the number of connected devices, throughput, and any alerts firing in the system.
+- The **Alert dashboard**: Provides information on the severity and effect of each currently firing alert.
+- The **Device and Session Statistics dashboard**: Provides information about the device and session procedures being processed by the packet core instance.
+- The **Uplink and Downlink Statistics dashboard**: Provides detailed statistics on the user plane traffic being handled by the packet core instance.
+- The **Debug** dashboards: Show detailed breakdowns of the request and response statistics for the packet core instance's interfaces. The **Debug** dashboards include the **System Statistics dashboard**, the **HTTP stats dashboard**, and the **4G Interfaces dashboard**.
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+For more information about the packet core dashboards, see [Dashboards](/azure/private-5g-core/packet-core-dashboards). Refer to the [Grafana documentation](https://grafana.com/docs/grafana/) if you want to add new dashboards or customize existing boards based on your business needs.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+> [!NOTE]
+> Some packet core dashboards display different panels depending on whether the packet core instance supports 5G or 4G user equipment (UEs).
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+## Access the dashboards
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+The URL for accessing the packet core dashboard is as follows:
 
-    Goal: List the steps they'll do to complete the exercise.
+`https://<LocalMonitoringIP>/grafana`
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+Here *\<LocalMonitoringIP\>* is the IP address for accessing the local monitoring tools that you set up when you configure the management network during Azure Private 5G Core deployment.
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+If this is the first time you access the packet core dashboards, use the default account to sign in. Change the password for the account after the initial sign-in. For more information, see [Access the packet core dashboards](/azure/private-5g-core/packet-core-dashboards).
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Adjust the time range
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+To check specific data, you may need to adjust the time range of the data displayed on a dashboard. For example, to retrieve diagnostics for historical problems, you may need to change the time range to a period in the past.
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+You can use the **Time picker**, which is in the top right-hand corner of each packet core dashboard, to adjust the time range for which the dashboard will display statistics. The following screenshot shows the time picker:
 
-<!-- 5. Validation -------------------------------------------------------------------------------------------
-
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. Feedback like this is critical for learning.
-
-    Structure:
-        1. A heading of "## Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
-
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+:::image type="content" source="../media/packet-core-dashboard-time-picker.png" alt-text="A screeshot that shows the time picker" border="true":::
