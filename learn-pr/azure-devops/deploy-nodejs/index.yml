@@ -36,9 +36,10 @@ subjects:
 units:
 - learn.azdo.deploy-nodejs.1-introduction
 - learn.azdo.deploy-nodejs.2-azure-support-nodejs
-- learn.azdo.deploy-nodejs.3-set-up-environment
-- learn.azdo.deploy-nodejs.4-deploy-nodejs
-- learn.azdo.deploy-nodejs.5-clean-up-environment
-- learn.azdo.deploy-nodejs.6-summary
+- learn.azdo.deploy-nodejs.3-get-sample-application
+- learn.azdo.deploy-nodejs.4-set-up-environment
+- learn.azdo.deploy-nodejs.5-deploy-nodejs
+- learn.azdo.deploy-nodejs.6-clean-up-environment
+- learn.azdo.deploy-nodejs.7-summary
 badge:
   uid: learn.azdo.deploy-nodejs.badge
