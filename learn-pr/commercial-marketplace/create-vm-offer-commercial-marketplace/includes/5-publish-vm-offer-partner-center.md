@@ -40,7 +40,7 @@ You’ll choose the Azure regions in which your plan should be available on the 
 
 - **Azure Government**: Makes your plan available in the [Azure Government](/azure/azure-government/documentation-government-welcome) region, which provides controlled access for customers from US federal, state, local, or tribal entities. If you want to make your plan available to these entities, you’ll need to ensure that your company and offer meet all required compliance controls, security measures, and other Azure Government criteria.
 
-On the pricing and availability tab, you’ll choose in which markets your VM offer will be available from a list of more than 140 countries. Most markets are selected by default. For additional information to help you select market availability, check out our [documentation on the topic](/azure/marketplace/azure-vm-plan-pricing-and-availability#markets).
+On the pricing and availability tab, you’ll choose in which markets your VM offer will be available from a list of more than 140 countries/regions. Most markets are selected by default. For additional information to help you select market availability, check out our [documentation on the topic](/azure/marketplace/azure-vm-plan-pricing-and-availability#markets).
 
 :::image type="content" source="../media/11-vm-offer-markets.png" alt-text="Screenshot of the market selection step of the publishing process in Partner Center. This step is part of the pricing and availability step of the plan creation process.":::
 
