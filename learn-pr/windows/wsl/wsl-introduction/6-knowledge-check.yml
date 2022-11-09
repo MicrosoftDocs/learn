@@ -4,12 +4,12 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 7/7/2022
+  description: "WSL knowledge check."
+  ms.date: 11/09/2022
   author: mattwojo
   ms.author: mattwoj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-windows
 durationInMinutes: 1
 ###########################################################################
 ###
@@ -28,58 +28,47 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "WSL question 1"
     choices:
-    - content: ""
+    - content: "WSL answer 1"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "WSL explanation"
+    - content: "WSL answer 2"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "WSL 2 explainer"
+    - content: "WSL answer 3"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "WSL 3 explainer"
+  - content: "WSL question 2"
     choices:
-    - content: ""
+    - content: "Q2 answer 1"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "q2 a1 explainer"
+    - content: "Q2 answer 2"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "q2 a2 explainer"
+    - content: "Q2 answer 3"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "q2 a3 explainer"
+  - content: "WSL question 3"
     choices:
-    - content: ""
+    - content: "Q3 answer 1"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "q3 a1 explainer"
+    - content: "Q3 a2"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "q3 a2 explainer"
+    - content: "q3 a3"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "q3 a3 explainer"
+  - content: "q4"
     choices:
-    - content: ""
+    - content: "q4 a1"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "explainer"
+    - content: "q4 a2"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "explainer"
+    - content: "q4 a3"
       isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "explainer"

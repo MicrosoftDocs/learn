@@ -4,12 +4,12 @@ title: Summary
 metadata:
   unitType: summary
   title: summary
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 7/7/2022
+  description: "Windows Subsystem for Linux (WSL) enables you to install Linux distributions on your Windows computer, but there are unique considerations when working between two file systems in a development environment. This offers a summary of those considerations."
+  ms.date: 11/09/2022
   author: mattwojo
   ms.author: mattwoj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-windows
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
