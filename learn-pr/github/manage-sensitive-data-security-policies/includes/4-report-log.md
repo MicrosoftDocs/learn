@@ -11,7 +11,7 @@ Your organization's log records actions taken by organization members. The log i
 - The repository in which the action was performed
 - The user that performed the action
 - The action that was performed
-- Which country in which the action took place
+- Which country/region in which the action took place
 - The date and time of the action
 
 Access the audit log through GitHub.com, GitHub Enterprise Server, or GitHub AE to review actions from the past 90 days. However, interacting with the audit log using either the GraphQL API or the Rest API can allow easy retrieval of specific information types, with additional limitations.

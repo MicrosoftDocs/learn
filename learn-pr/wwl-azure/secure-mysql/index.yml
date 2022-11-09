@@ -3,7 +3,7 @@ uid: learn.wwl.secure-mysql
 metadata:
   title: Secure MySQL
   description: "Learn about Azure Database for MySQL security, encryption in Azure Database for MySQL, and how to configure Azure AD authentication."
-  ms.date: 09/30/2022
+  ms.date: 11/08/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Understand encryption in MySQL
 prerequisites: |
   Demonstrate an understanding of relational databases. Demonstrate an understanding of basic SQL.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/secure-mysql.svg
 levels:
 - intermediate
 roles:

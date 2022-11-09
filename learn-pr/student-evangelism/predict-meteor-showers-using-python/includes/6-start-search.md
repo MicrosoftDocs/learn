@@ -42,11 +42,11 @@ cities.info()
 ```
 
 ```output
- #   Column    Non-Null Count  Dtype  
----  ------    --------------  -----  
- 0   city      256 non-null    object 
- 1   latitude  256 non-null    float64
- 2   country   256 non-null    object 
+ #   Column           Non-Null Count  Dtype  
+---  ------           --------------  -----  
+ 0   city             256 non-null    object 
+ 1   latitude         256 non-null    float64
+ 2   country/region   256 non-null    object 
  ```
 
 ```python
@@ -129,7 +129,7 @@ print(cities.loc[cities['city'] == 'Abu Dhabi'])
 
 Here's the output:
 
-|  | city | latitude | country |
+|  | city | latitude | country/region |
 |--|------|----------|---------|
 | **0** | Abu Dhabi | 24.47 | United Arab Emirates |
 

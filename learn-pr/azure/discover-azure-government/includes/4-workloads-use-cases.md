@@ -2,14 +2,14 @@ Azure supports a wide variety of public sector use cases. These use cases includ
 
 ## Processing highly sensitive or regulated data on Azure Stack Hub
 
-Microsoft provides Azure Stack Hub as an on-premises, cloud-consistent experience for customers who can't directly connect to the internet, or where certain workload types must be hosted in-country because of law, compliance, or sentiment. Azure Stack Hub offers IaaS and PaaS services and shares the same APIs as the global Azure cloud. Azure Stack Hub is available in scale units of 4, 8, and 16 servers in a single-server rack, as well as 4 servers in a military-specification, ruggedized set of transit cases, or multiple racks in a modular datacenter configuration.
+Microsoft provides Azure Stack Hub as an on-premises, cloud-consistent experience for customers who can't directly connect to the internet, or where certain workload types must be hosted in-country/region because of law, compliance, or sentiment. Azure Stack Hub offers IaaS and PaaS services and shares the same APIs as the global Azure cloud. Azure Stack Hub is available in scale units of 4, 8, and 16 servers in a single-server rack, as well as 4 servers in a military-specification, ruggedized set of transit cases, or multiple racks in a modular datacenter configuration.
 
 Azure Stack is a solution for customers who operate in scenarios where:
 
-* Microsoft doesn't have an in-country cloud presence and therefore can't meet data sovereignty requirements.
+* Microsoft doesn't have an in-country/region cloud presence and therefore can't meet data sovereignty requirements.
 * For compliance reasons, the customer can't connect their network to the public internet.
 * For geo-political or security reasons, Microsoft can't offer connectivity to other Microsoft clouds.
-* For geo-political or security reasons, the host organization may require cloud management by non-Microsoft entities, or in-country by security-cleared personnel.
+* For geo-political or security reasons, the host organization may require cloud management by non-Microsoft entities, or in-country/region by security-cleared personnel.
 * Cloud management would pose significant risk to the physical well-being of Microsoft resources operating the environment.
 
 For most of these customers, Microsoft and its partners offer a customer-managed, Azure Stack Hub-based private cloud appliance on field-deployable hardware from [major vendors](https://azure.microsoft.com/products/azure-stack/hub/#partners) such as Avanade, Cisco, Dell EMC, Hewlett Packard Enterprise, and Lenovo. Azure Stack Hub is manufactured, configured, and deployed by the hardware vendor, and can be ruggedized and security-hardened to meet many different environmental and compliance standards, including the ability to withstand transport by aircraft, ship, or truck, and deployment into colocation, mobile, or modular datacenters. Azure Stack Hub can be used in exploration, construction, agriculture, oil and gas, manufacturing, disaster response, government efforts, and military efforts in the most extreme conditions and remote locations. Azure Stack Hub allows customers the full autonomy to monitor, manage, and provision their own private cloud resources while meeting their connectivity, compliance, and ruggedization requirements.

@@ -2,7 +2,7 @@
 
 ## DataFrame as a dictionary of Series
 
-Let's return to our earlier example of countries' areas and populations, in order to examine `DataFrames` as a dictionary of `Series`.
+Let's return to our earlier example of countries'/regions' areas and populations, in order to examine `DataFrames` as a dictionary of `Series`.
 
 ```python
 area = pd.Series({'Albania': 28748,

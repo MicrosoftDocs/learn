@@ -44,11 +44,9 @@ When you plan for role-based access, use custom RBAC role definitions within the
     "Description": "Used for platform-wide global connectivity management of network resources.",
     "Actions": [
       "*/read",
-      "Microsoft.Authorization/*/write",
-      "Microsoft.Network/vpnGateways/*",
-      "Microsoft.Network/expressRouteCircuits/*",
-      "Microsoft.Network/routeTables/write",
-      "Microsoft.Network/vpnSites/*"
+      "Microsoft.Network/*",
+      "Microsoft.Resources/deployments/*",
+      "Microsoft.Support/*",
     ],
     "NotActions": [],
     "DataActions": [],
