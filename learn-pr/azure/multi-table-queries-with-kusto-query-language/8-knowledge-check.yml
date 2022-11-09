@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.multi-table-queries-with-kql.knowledge-check
+uid: learn.multi-table-queries-with-kusto-query-language.knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check

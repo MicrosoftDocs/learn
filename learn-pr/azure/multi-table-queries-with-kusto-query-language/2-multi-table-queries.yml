@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.multi-table-queries-with-kql.multi-table-queries
+uid: learn.multi-table-queries-with-kusto-query-language.multi-table-queries
 title: Combine and optimize data
 metadata:
   unitType: learning-content

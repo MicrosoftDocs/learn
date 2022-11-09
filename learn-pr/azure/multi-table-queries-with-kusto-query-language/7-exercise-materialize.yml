@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.multi-table-queries-with-kql.exercise-materialize
+uid: learn.multi-table-queries-with-kusto-query-language.exercise-materialize
 title: Exercise - Optimize queries by using the materialize function
 metadata:
   unitType: exercise

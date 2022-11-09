@@ -1,8 +1,8 @@
 ### YamlMime:Module
-uid: learn.multi-table-queries-with-kql
+uid: learn.multi-table-queries-with-kusto-query-language
 metadata:
   moduleType: standard
-  title: Multi-table queries with KQL
+  title: Multi-table queries with Kusto Query Language
   description: Learn how to write Kusto Query Language (KQL) queries to combine and retrieve data from two or more tables using the `lookup`, `join`, and `union` operators.
   ms.date: 10/04/2022
   author: shsagir
@@ -35,14 +35,14 @@ products:
 subjects:
 - data-analytics
 units:
-- learn.multi-table-queries-with-kql.introduction
-- learn.multi-table-queries-with-kql.multi-table-queries
-- learn.multi-table-queries-with-kql.exercise-connect-to-resources
-- learn.multi-table-queries-with-kql.exercise-join-types
-- learn.multi-table-queries-with-kql.exercise-lookup
-- learn.multi-table-queries-with-kql.exercise-union
-- learn.multi-table-queries-with-kql.exercise-materialize
-- learn.multi-table-queries-with-kql.knowledge-check
-- learn.multi-table-queries-with-kql.summary
+- learn.multi-table-queries-with-kusto-query-language.introduction
+- learn.multi-table-queries-with-kusto-query-language.multi-table-queries
+- learn.multi-table-queries-with-kusto-query-language.exercise-connect-to-resources
+- learn.multi-table-queries-with-kusto-query-language.exercise-join-types
+- learn.multi-table-queries-with-kusto-query-language.exercise-lookup
+- learn.multi-table-queries-with-kusto-query-language.exercise-union
+- learn.multi-table-queries-with-kusto-query-language.exercise-materialize
+- learn.multi-table-queries-with-kusto-query-language.knowledge-check
+- learn.multi-table-queries-with-kusto-query-language.summary
 badge:
-  uid: learn.multi-table-queries-with-kql.badge
+  uid: learn.multi-table-queries-with-kusto-query-language.badge

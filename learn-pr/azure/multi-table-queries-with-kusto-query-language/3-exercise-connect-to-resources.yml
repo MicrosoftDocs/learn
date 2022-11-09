@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.multi-table-queries-with-kql.exercise-connect-to-resources
+uid: learn.multi-table-queries-with-kusto-query-language.exercise-connect-to-resources
 title: Exercise - Connect to resources
 metadata:
   unitType: exercise

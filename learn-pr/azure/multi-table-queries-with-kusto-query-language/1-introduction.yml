@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.multi-table-queries-with-kql.introduction
+uid: learn.multi-table-queries-with-kusto-query-language.introduction
 title: Introduction
 metadata:
   unitType: introduction

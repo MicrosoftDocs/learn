@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.multi-table-queries-with-kql.exercise-join-types
+uid: learn.multi-table-queries-with-kusto-query-language.exercise-join-types
 title: Exercise - Combine table results using the join operator
 metadata:
   unitType: exercise
