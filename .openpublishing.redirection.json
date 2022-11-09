@@ -17909,6 +17909,29 @@
       "source_path": "learn-pr/wwl-data-ai/migrate-on-premises-postgresql-databases/6-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/migrate-on-premises-postgresql-databases/7-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-nodejs/3-set-up-environment.yml",
+      "redirect_url": "/training/modules/deploy-nodejs/4-set-up-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-nodejs/4-deploy-nodejs.yml",
+      "redirect_url": "/training/modules/deploy-nodejs/5-deploy-nodejs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-nodejs/5-clean-up-environment.yml",
+      "redirect_url": "/training/modules/migrate-sql-workloads-azure-sql-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-nodejs/6-summary.yml",
+      "redirect_url": "/training/modules/deploy-nodejs/7-summary",
+      "redirect_document_id": false
     }
+  ]
+  ]
+  ]
   ]
 }
