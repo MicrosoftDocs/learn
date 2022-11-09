@@ -10,8 +10,8 @@ You can use Site Recovery to protect the virtual machine that hosts the domain c
 
 The domain controller that is replicated by using Site Recovery is used for test failover. Ensure that it meets the following requirements:
 
-1.  The domain controller is a global catalog server.
-2.  The domain controller should be the FSMO role owner for roles that are needed during a test failover. Otherwise, these roles will need to be seized after the failover.
+1. The domain controller is a global catalog server.
+2. The domain controller should be the FSMO role owner for roles that are needed during a test failover. Otherwise, these roles will need to be seized after the failover.
 
 ### Configure VM network settings
 
@@ -31,9 +31,9 @@ First, create a domain controller in an Azure virtual network. When you promote 
 
 To avoid impact on production workloads, test failover occurs in a network that's isolated from the production network. Most applications require the presence of a domain controller or a DNS server. Therefore, before the application fails over, you must create a domain controller in the isolated network to be used for test failover. The easiest way to do this is to use Site Recovery to replicate a virtual machine that hosts a domain controller or DNS. Then, run a test failover of the domain controller virtual machine before you run a test failover of the recovery plan for the application. Here's how you do that:
 
-1.  Use Site Recovery to replicate the virtual machine that hosts the domain controller or DNS.
-2.  Create an isolated network. Any virtual network that you create in Azure is isolated from other networks by default. We recommend that you use the same IP address range for this network that you use in your production network. Don't enable site-to-site connectivity on this network.
-3.  Provide a DNS IP address in the isolated network. Use the IP address that you expect the DNS virtual machine to get. If you're replicating to Azure, provide the IP address for the virtual machine that's used on failover. To enter the IP address, in the replicated virtual machine, in the Compute and Network settings, select the Target IP settings.
+1. Use Site Recovery to replicate the virtual machine that hosts the domain controller or DNS.
+2. Create an isolated network. Any virtual network that you create in Azure is isolated from other networks by default. We recommend that you use the same IP address range for this network that you use in your production network. Don't enable site-to-site connectivity on this network.
+3. Provide a DNS IP address in the isolated network. Use the IP address that you expect the DNS virtual machine to get. If you're replicating to Azure, provide the IP address for the virtual machine that's used on failover. To enter the IP address, in the replicated virtual machine, in the Compute and Network settings, select the Target IP settings.
 
 Site Recovery attempts to create test virtual machines in a subnet of the same name and by using the same IP address that's provided in the Compute and Network settings of the virtual machine. If a subnet of the same name isn't available in the Azure virtual network that's provided for test failover, the test virtual machine is created in the alphabetically first subnet.
 
@@ -60,36 +60,35 @@ Because this domain controller is used only in a test failover, virtualization s
 
 ```bash
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\gencounter\Start
-
 ```
 
 ### Symptoms of virtualization safeguards
 
 If virtualization safeguards are triggered after a test failover, you might see one or more of following symptoms:
 
- -  The GenerationID value changes.
- -  The InvocationID value changes.
- -  Sysvol folder and NETLOGON shares aren't available.
- -  DFSR databases are deleted.
+- The GenerationID value changes.
+- The InvocationID value changes.
+- Sysvol folder and NETLOGON shares aren't available.
+- DFSR databases are deleted.
 
 ## DNS and domain controller on different machines
 
 If you're running the domain controller and DNs on the same VM, you can skip this procedure. If DNS isn't on the same VM as the domain controller, you need to create a DNS VM for the test failover. You can use a fresh DNS server, and create all the required zones. For example, if your Active Directory domain is contoso.com, you can create a DNS zone with the name contoso.com. The entries that correspond to Active Directory must be updated in DNS as follows:
 
-1.  Ensure that these settings are in place before any other virtual machine in the recovery plan starts:
-    
-     -  The zone must be named after the forest root name.
-     -  The zone must be file-backed.
-     -  The zone must be enabled for secure and nonsecure updates.
-     -  The resolver of the virtual machine that hosts the domain controller should point to the IP address of the DNS virtual machine.
-2.  Run the following command on the VM that hosts the domain controller:
-    
+1. Ensure that these settings are in place before any other virtual machine in the recovery plan starts:
+
+     - The zone must be named after the forest root name.
+     - The zone must be file-backed.
+     - The zone must be enabled for secure and nonsecure updates.
+     - The resolver of the virtual machine that hosts the domain controller should point to the IP address of the DNS virtual machine.
+2. Run the following command on the VM that hosts the domain controller:
+
     ```bash
     nltest /dsregdns
-    
     ```
-3.  Run the following commands to add a zone on the DNS server, allow nonsecure updates, and add an entry for the zone to DNS:
-    
+
+3. Run the following commands to add a zone on the DNS server, allow nonsecure updates, and add an entry for the zone to DNS:
+
     ```bash
     dnscmd /zoneadd contoso.com /Primary
     
@@ -98,5 +97,4 @@ If you're running the domain controller and DNs on the same VM, you can skip thi
     dnscmd /recordadd contoso.com %computername% A <IP_OF_DNS_VM>
     
     dnscmd /config contoso.com /allowupdate 1
-    
     ```

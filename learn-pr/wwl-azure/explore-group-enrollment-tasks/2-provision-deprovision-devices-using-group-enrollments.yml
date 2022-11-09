@@ -4,13 +4,12 @@ title: Provision and deprovision devices using group enrollments
 metadata:
   title: Provision and deprovision devices using group enrollments
   description: "Provision and deprovision devices using group enrollments"
-  ms.date: 12/15/2021
+  ms.date: 07/14/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labId: 110067
 labModal: true
 durationInMinutes: 60

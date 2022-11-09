@@ -1,6 +1,6 @@
 Some applications' workloads are read-centric, requiring SQL queries that filter on many different fields in each item. These read-centric workloads benefit from having an inverted index that includes as many fields as possible to maximize query performance and minimize request unit charges.
 
-By default, Azure Cosmos DB SQL API creates containers that include an indexing policy that includes the root path. This strategy effectively includes all possible JSON properties in the index. The default indexing policy also excludes the **eTag** property path by default. In the inverted index, the result will be an index that indexes all properties except eTag.
+By default, Azure Cosmos DB for NoSQL creates containers that include an indexing policy that includes the root path. This strategy effectively includes all possible JSON properties in the index. The default indexing policy also excludes the **eTag** property path by default. In the inverted index, the result will be an index that indexes all properties except eTag.
 
 This is the complete JSON object for the default indexing policy:
 

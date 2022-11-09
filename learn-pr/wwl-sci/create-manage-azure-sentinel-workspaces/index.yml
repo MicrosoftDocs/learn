@@ -17,7 +17,7 @@ abstract: |
   - Manage a Microsoft Sentinel workspace
 prerequisites: |
   Basic experience with Azure services
-iconUrl: /learn/achievements/create-and-manage-azure-sentinel-workspaces.svg
+iconUrl: /training/achievements/create-and-manage-azure-sentinel-workspaces.svg
 levels:
 - intermediate
 roles:

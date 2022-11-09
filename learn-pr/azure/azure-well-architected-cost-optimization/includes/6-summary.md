@@ -4,7 +4,7 @@ Optimizing your applications begins with proper planning and estimation of costs
 
 ## Learn more
 
-To learn more about cost optimization, see the following documentation:
+To learn more about cost optimization, review the following documentation:
 
 - [Azure Well-Architected Framework](/azure/architecture/framework?azure-portal=true)
 - [Cloud Adoption Framework](/azure/cloud-adoption-framework/?azure-portal=true)

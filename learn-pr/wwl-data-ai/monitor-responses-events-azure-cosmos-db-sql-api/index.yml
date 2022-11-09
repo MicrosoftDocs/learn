@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.monitor-responses-events-azure-cosmos-db-sql-api
 metadata:
-  title: Monitor responses and events in Azure Cosmos DB SQL API
+  title: Monitor responses and events in Azure Cosmos DB for NoSQL
   description: "We will learn to use a rich set of REST response codes returned by Azure Cosmos DB request to help you analyze potential issues."
-  ms.date: 12/21/2021
+  ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Monitor responses and events in Azure Cosmos DB SQL API
+title: Monitor responses and events in Azure Cosmos DB for NoSQL
 summary: We will learn to use a rich set of REST response codes returned by Azure Cosmos DB request to help you analyze potential issues.
 abstract: |
   - Review common response codes
@@ -18,7 +18,7 @@ abstract: |
   - Audit Security
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-monitor-responses.svg
+iconUrl: /training/achievements/azure-cosmos-db-monitor-responses.svg
 levels:
 - intermediate
 roles:

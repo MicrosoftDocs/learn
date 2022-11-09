@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-scheduled-jobs-use-windows-powershell.create-job-option-job-trigger-objects
+title: Create job option and job trigger objects in Windows PowerShell
+metadata:
+  title: Create job option and job trigger objects in Windows PowerShell
+  description: "Create job option and job trigger objects in Windows PowerShell"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-create-job-option-job-trigger-objects.md)]

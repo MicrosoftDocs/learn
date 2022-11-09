@@ -4,8 +4,8 @@ metadata:
   title: Plan, deploy, and verify Azure SQL
   description: Plan, deploy, and verify Azure SQL
   ms.date: 08/05/2020
-  author: amthomas46
-  ms.author: antho
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Plan, deploy, and verify Azure SQL

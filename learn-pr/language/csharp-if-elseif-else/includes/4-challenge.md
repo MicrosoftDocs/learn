@@ -51,6 +51,6 @@ Renew now and save 20%!
 Your subscription has expired.
 ```
 
-**Rule 5**. If the user's subscription doesn't expire in 10 days or less, display nothing.
+**Rule 5**. If the user's subscription will expire in more than 10 days, display nothing.
 
 Whether you get stuck and need to peek at the solution or you finish successfully, proceed to view a solution to this challenge.

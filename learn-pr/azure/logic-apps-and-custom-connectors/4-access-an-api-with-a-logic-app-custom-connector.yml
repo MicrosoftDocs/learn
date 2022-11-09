@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.logic-apps-and-custom-connectors.4-access-an-api-with-a-logic-apps-custom-connector
-title: Access an API with a Logic App custom connector
+title: Access an API with an Azure Logic Apps custom connector
 metadata:
-  title: Access an API with a Logic App custom connector
-  description: In this unit, you will learn how to create a custom connector.
+  title: Access an API with an Azure Logic Apps custom connector
+  description: In this unit, you'll learn how to create a custom connector for Azure Logic Apps.
   ms.date: 04/11/2019
   author: ecfan
   ms.author: estfan

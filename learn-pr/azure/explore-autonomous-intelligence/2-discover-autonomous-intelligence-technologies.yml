@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.explore-autonomous-intelligence.discover-autonomous-intelligence-technologies
+title: Discover Autonomous Intelligence technologies
+metadata:
+  title: Discover Autonomous Intelligence technologies
+  description: An introduction to the different types of Autonomous Intelligence technologies when designing Autonomous AI.
+  ms.date: 10/17/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-discover-autonomous-intelligence-technologies.md)] 

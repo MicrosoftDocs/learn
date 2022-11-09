@@ -1,6 +1,6 @@
 In the previous unit, you learned how you can use the Azure CLI to create all of the necessary components to create a virtual machine running in Azure. Your company uses a mixture of Linux and Windows virtual machines, and by using the Azure CLI commands, you can build your virtual machine infrastructure in Azure in an automated and easily repeatable way.
 
-After you have created your virtual machines, you'll need to log into those machines in order to check what's installed on the virtual machine image by default. On your Linux machines, you'll use SSH to connect to the machine. On your Windows machines, you'll use a Remote Desktop connection to connect to the machine.
+After you've created your virtual machines, you'll need to log into those machines in order to check what's installed on the virtual machine image by default. On your Linux machines, you'll use SSH to connect to the machine. On your Windows machines, you'll use a Remote Desktop connection to connect to the machine.
 
 In this exercise, you'll deploy all the components you need to have a publicly accessible virtual machine that will be used as a web server. Next, you'll connect to the virtual machine and check for installed components.
 
@@ -90,9 +90,9 @@ In this section of the exercise, you'll use the Azure CLI in the sandbox Cloud S
 
 ## Create a Linux virtual machine
 
-Not that you have created all of the necessary networking infrastructure, your next task is to use the Azure CLI to create your virtual machine.
+Now that you've created all of the necessary networking infrastructure, your next task is to use the Azure CLI to create your virtual machine.
 
-1. Enter the following command to create an additional NSG rule to allow SSH access to your Linux virtual machine after it has been created.
+1. Enter the following command to create another NSG rule to allow SSH access to your Linux virtual machine after it has been created.
 
     ```azurecli
     az network nsg rule create \
@@ -138,7 +138,7 @@ Not that you have created all of the necessary networking infrastructure, your n
 
 ## Connect the virtual machine using SSH
 
-After you have created your Linux virtual machine, you'll use the public IP address from the preceding section to connect to the machine.
+After you've created your Linux virtual machine, you'll use the public IP address from the preceding section to connect to the machine.
 
 1. Connect to your virtual machine with SSH.
 
@@ -182,9 +182,9 @@ After you have created your Linux virtual machine, you'll use the public IP addr
 
 ## Create a Windows virtual machine
 
-Not that you have created all of the necessary networking infrastructure, your next task is to use the Azure CLI to create your virtual machine.
+Now that you've created all of the necessary networking infrastructure, your next task is to use the Azure CLI to create your virtual machine.
 
-1. Enter the following command to create an additional NSG rule to allow Remote Desktop access to your Windows virtual machine after it has been created.
+1. Enter the following command to create another NSG rule to allow Remote Desktop access to your Windows virtual machine after it has been created.
 
     ```azurecli
     az network nsg rule create \
@@ -206,7 +206,7 @@ Not that you have created all of the necessary networking infrastructure, your n
 
     Copy the secure password value that is displayed, as you'll use that to connect to your virtual machine later.
 
-1. Enter the following command to create a Windows virtual machine that will your secure password for authentication.
+1. Enter the following command to create a Windows virtual machine that uses your secure password for authentication.
 
     ```azurecli
     az vm create \
@@ -244,13 +244,13 @@ Not that you have created all of the necessary networking infrastructure, your n
     ![Screenshot showing the Remote Desktop Connection window.](../media/3-remote-desktop.png)
 
     1. Enter the public IP address you copied above in the **Computer** field.
-    
+
     1. Click **Show Options** at the bottom of the window.
 
         ![Screenshot showing the Remote Desktop Connection with the options expanded.](../media/3-remote-desktop-expanded.png)
 
     1. Enter **azureuser** in the **User name** field.
-    
+
     1. Click **Connect**.
 
 1. In the Windows Security pop-up, enter the value of your `$SECUREPASSWORD` from earlier, and then click **OK**.
@@ -259,7 +259,7 @@ Not that you have created all of the necessary networking infrastructure, your n
 
 1. In the Remote Desktop Connection pop-up, select **Connect**.
 
-1. When you're connected over remote desktop, Windows Server will automatically open the **Server Manager**.
+1. When you're connected over remote desktop, Windows Server automatically opens the **Server Manager**.
 
     ![Screenshot of the Windows virtual machine Server Manager.](../media/3-server-manage.png)
 
@@ -269,11 +269,11 @@ Not that you have created all of the necessary networking infrastructure, your n
 
     1. On the **Installation Type** page, select **Role-based or feature-based installation**, and then click **Next**.
 
-    1. On the **Server Selection** page, verify that your virtual machine should is selected, and then click **Next**.
+    1. On the **Server Selection** page, verify that your virtual machine is selected, and then click **Next**.
 
-        ![Screenshot of the Windows virtual machine Server Manager showing additional configuration options.](../media/3-add-roles.png)
+        ![Screenshot of the Windows virtual machine Server Manager showing more configuration options.](../media/3-add-roles.png)
 
-    1. On the **Server Roles** page, scroll down and note that **Web Server (IIS)** isn't selected.
+    1. On the **Server Roles** page, scroll down and make sure that **Web Server (IIS)** isn't selected.
 
     1. Click **Cancel** to close the **Add Roles and Feature Wizard** window.
 
@@ -285,6 +285,6 @@ Check to see if a webpage is returned for the public IP address:
 
 1. In your browser, open a tab using the web address `http://eee.eee.eee.eee`. Replace the IP address in the URL with the `publicIpAddress` value that you copied earlier.
 
-1. Your browser will return an error page that the connection is refused. This is because you have not yet installed a web server in your virtual machine.
+1. Your browser will return an error page that the connection is refused. This error happens because you haven't installed a web server in your virtual machine.
 
 Congratulations! You have created an Azure virtual machine using the Azure CLI.

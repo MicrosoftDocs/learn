@@ -47,7 +47,7 @@ Many problems are naturally suited to be expressed in this form, such as whether
 
 The term *polynomial unconstrained binary optimization* (PUBO) refers to cost functions that are polynomials over the binary variables. The term *unconstrained* implies that we don't impose additional restrictions on which variable assignments are valid, which simplifies the solver's task. 
 
-In the next module, [Solve a job shop scheduling optimization problem by using Azure Quantum](/learn/modules/solve-job-shop-optimization-azure-quantum?azure-portal=true), you'll learn how to get around this restriction and express constraints in a PUBO setting. A special subset of PUBO problems is the *quadratic unconstrained binary optimization* (QUBO) problems, which employ polynomial cost functions of degree 2. The Azure Quantum solvers natively work on PUBOs of any degree, but other providers that are available on Azure might work only with QUBO problems.
+In the next module, [Solve a job shop scheduling optimization problem by using Azure Quantum](/training/modules/solve-job-shop-optimization-azure-quantum?azure-portal=true), you'll learn how to get around this restriction and express constraints in a PUBO setting. A special subset of PUBO problems is the *quadratic unconstrained binary optimization* (QUBO) problems, which employ polynomial cost functions of degree 2. The Azure Quantum solvers natively work on PUBOs of any degree, but other providers that are available on Azure might work only with QUBO problems.
 
 You might also have come across problems referred to as *Ising* problems. It's sometimes more convenient to give our binary variables the values $\\{-1, 1\\}$ instead of $\\{0, 1\\}$. Otherwise, these problems function identically to PUBO problems.
 

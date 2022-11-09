@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/09/2022
+  ms.date: 09/05/2022
   author: wwlpublish
   ms.author: v-arxia
   ms.topic: interactive-tutorial
@@ -33,7 +33,7 @@ quiz:
     - content: "Storing all your user and device identities in Active Directory on-premises and then using Azure AD Connect to apply them in the cloud."
       isCorrect: false
       explanation: "Incorrect. Hybrid Identity is sharing existing identities from on-premises."
-    - content: "An identity provider that provides verified identities provided in a blockchain sore."
+    - content: "An identity provider that provides verified identities provided in a blockchain store."
       isCorrect: true
       explanation: "Correct. There are external companies where users can configure verified credentials."
     - content: "Azure Active Directory (Azure AD)"

@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge 
   questions:
-  - content: Which area of focus does GitHub dependency management belong to?
+  - content: To which area of focus does GitHub dependency management belong?
     choices:
     - content: "Code scanning"
       isCorrect: false
@@ -26,7 +26,7 @@ quiz:
     - content: "Supply chain"
       isCorrect: true
       explanation: "Dependency management ensures safe contributions from third-party plugins."
-  - content: "What is the purpose of security advisories?"
+  - content: "What's the purpose of security advisories?"
     choices:
     - content: "To gather suggestions from the public on how to best repair a bug."
       isCorrect: false
@@ -45,7 +45,7 @@ quiz:
     - content: "Dependabot"
       isCorrect: false
       explanation: "Dependabot ensures the reliability of dependencies."
-    - content: "The GitHub Advisory Database "
+    - content: "The GitHub Advisory Database"
       isCorrect: false
       explanation: "The GitHub Advisory Database keeps track of vulnerabilities in dependencies."
   - content: "What does the term 'shifting left' mean?"
@@ -70,7 +70,7 @@ quiz:
     - content: "Environment variable"
       isCorrect: false
       explanation: "Environment variables aren't used for authentication."
-  - content: "What is a common cause of security breaches?"
+  - content: "What's a common cause of security breaches?"
     choices:
     - content: "Users remove packages from projects."
       isCorrect: false
@@ -78,6 +78,6 @@ quiz:
     - content: "Developers share their code with other developers outside their organization."
       isCorrect: false
       explanation: "Sharing code isn't a common cause of security breaches."
-    - content: "Administrators delay in patching a system after updates are available."
+    - content: "Administrators delay patching a system after updates are available."
       isCorrect: true
       explanation: "Failing to promptly patch a system leaves it vulnerable to attacks or exploits."

@@ -16,7 +16,7 @@ abstract: |
   - Describe what Text-to-speech is
   - Define scenarios where Text-to-speech can be applied
 prerequisites: A basic familiarity with Azure
-iconUrl: /learn/achievements/intro-to-text-to-speech.svg
+iconUrl: /training/achievements/intro-to-text-to-speech.svg
 levels:
 - beginner
 roles:

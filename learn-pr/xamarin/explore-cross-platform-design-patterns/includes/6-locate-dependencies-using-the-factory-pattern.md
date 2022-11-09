@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 The first pattern we'll look at is the *factory pattern*. The factory pattern routes the client through an intermediary, called a *factory*, to create its dependency.
 
 ![Diagram showing a factory pattern, where a client uses a factory to create a service.](../media/6-factory-pattern.png)
@@ -53,7 +55,7 @@ public class OutputProcess
 
 The delegate type is named `LoggerMethod`. An instance of that type named `loggerCall` is assigned the instance method `outputProcess.SendToLogger`. You can execute `loggerCall` like you would any other method.
 
-## What is Func\<TResult\>?
+## What is Func<TResult>?
 
 `Func<TResult>` represents a method that has no parameters and returns a value of the type specified by the `TResult` parameter.
 

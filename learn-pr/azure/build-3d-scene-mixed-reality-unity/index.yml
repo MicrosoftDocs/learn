@@ -29,8 +29,6 @@ products:
 - azure-iot
 - azure-iot-hub
 - azure-signalr-service
-- azure-event-grid
-- azure-event-hubs
 - azure-functions
 - hololens
 - windows
@@ -40,7 +38,7 @@ prerequisites: |
   - Fundamental understanding of raster data / imagery
   - Awareness of the Microsoft Maps SDK
   - Bing Maps Account and Dev Key
-iconUrl: /learn/achievements/build-3d-scene-mixed-reality-unity.svg
+iconUrl: /training/achievements/build-3d-scene-mixed-reality-unity.svg
 subjects:
 - mixed-reality
 units:

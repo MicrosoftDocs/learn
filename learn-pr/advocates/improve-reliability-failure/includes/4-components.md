@@ -47,7 +47,7 @@ Frame your questions to reflect this, for example:
 
 -   “What was the deficit in our monitoring that failed to give the person
     at the keyboard the necessary context to make the right decision?”
--   “Why was there a 'nuke the entire database' option in the tool at all?"
+-   “Why was there a 'destroy the entire database' option in the tool at all?"
 -   or better yet: "Why didn’t the tool ask for confirmation before
     performing this function?”
 

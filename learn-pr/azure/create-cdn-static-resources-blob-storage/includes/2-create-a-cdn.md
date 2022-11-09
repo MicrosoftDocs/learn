@@ -56,7 +56,7 @@ Features that Microsoft Azure CDNs offer are:
 - **HTTPS custom domain support** - enable encrypted connections to custom domains, such as `https://www.contoso.com`
 - **Azure diagnostics logs** - view core analytic information and send the data to an Azure Storage Account, Azure Event Hubs, or Log Analytics Workspace
 - **File compression** - increase performance by reducing the number of bytes in transit
-- **Geo-filtering** - create rules on your CDN endpoint that uses specific paths to allow or block content in selected countries
+- **Geo-filtering** - create rules on your CDN endpoint that uses specific paths to allow or block content in selected countries/regions
 
 For more information on these features, see the Further Reading section of the Summary unit.
 

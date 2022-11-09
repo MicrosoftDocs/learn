@@ -109,4 +109,4 @@ Many popular mocking frameworks are available, including [MOQ](https://github.co
     
    ```
 
-Writing good tests can take a while to learn, just like writing good code. If you want to learn more about testing schools of thought, see  [Introduction to software testing concepts](/learn/modules/visual-studio-test-concepts/).
+Writing good tests can take a while to learn, just like writing good code. If you want to learn more about testing schools of thought, see  [Introduction to software testing concepts](/training/modules/visual-studio-test-concepts/).

@@ -17,7 +17,7 @@ abstract: |
   - Understand how Convolutional Neural Networks (CNNs) work
   - Train a neural network to recognize handwritten digits and classify cats and dogs.
   - Learn how to use Transfer Learning to solve real-world classification problems with PyTorch
-iconUrl: /learn/achievements/pytorch-computer-vision.svg
+iconUrl: /training/achievements/pytorch-computer-vision.svg
 levels:
 - beginner
 roles:

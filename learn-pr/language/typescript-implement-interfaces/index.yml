@@ -26,7 +26,7 @@ prerequisites: |
     - [Visual Studio Code](https://code.visualstudio.com)
     - [Node.js](https://nodejs.org/)
     - TypeScript
-iconUrl: /learn/achievements/typescript/typescript-implement-interfaces.svg
+iconUrl: /training/achievements/typescript/typescript-implement-interfaces.svg
 levels:
 - intermediate
 roles:

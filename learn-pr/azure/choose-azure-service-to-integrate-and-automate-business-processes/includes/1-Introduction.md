@@ -4,7 +4,7 @@ Suppose you're a developer at a company that operates a bike rental system at a 
 
 The other university also has a rental system in place. You'll need to integrate with those existing systems too. The systems include bike tracking, inventory management, rental scheme registration, and more.
 
-It's June and the university would like to have the rental system in place before students arrive on campus in late August. Your business runs on Azure and a requirement of this integration is that you don't take on any infrastructure maintenance or heavy upfront costs. As you expand into other universities across the country, you need to be able to scale efficiently in order to keep costs down and your low margins viable.
+It's June and the university would like to have the rental system in place before students arrive on campus in late August. Your business runs on Azure and a requirement of this integration is that you don't take on any infrastructure maintenance or heavy upfront costs. As you expand into other universities, you need to be able to scale efficiently in order to keep costs down and your low margins viable.
 
 In this module, we’ll describe the Azure technologies that are available to you and teach you how to evaluate each one for your business needs.  
 

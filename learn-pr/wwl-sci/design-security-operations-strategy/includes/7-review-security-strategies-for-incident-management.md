@@ -99,8 +99,8 @@ Recording any findings as ticketed work items or bugs to be addressed by product
 
 Discussing the results of the completed post-mortem in monthly security incident review meetings conducted by senior management. 
 
-### Continuous Improvement 
+### Continuous Improvement
 
-Lessons learned from the security incident should be implemented with coordination from the Security Response team to help prevent future incidents and improve detection and response capabilities. Continuous improvement is paramount for effective and efficient incident response. Post-incident activities ensure that lessons learned from the security incident are successfully implemented across the enterprise to defend organizations and their customers against evolving threats. 
+:::image type="content" source="../media/security-operations-continuous-improvement.png" alt-text="Diagram showing continuous improvement for incident management." lightbox="../media/security-operations-continuous-improvement.png":::
 
- 
+Lessons learned from the security incident should be implemented with coordination from the Security Response team to help prevent future incidents and improve detection and response capabilities. Continuous improvement is paramount for effective and efficient incident response. Post-incident activities ensure that lessons learned from the security incident are successfully implemented across the enterprise to defend organizations and their customers against evolving threats.

@@ -22,7 +22,7 @@ The Invoice model can extract full line items and component parts – descriptio
 
 ### Prebuilt Receipt model
 
-This model is used to analyze English sales receipts from restaurants, retail, gas stations and more, from Australia, Canada, Great Britain, India, and the United States. The Prebuilt receipt model extracts the information you need, such as the time and date of the transaction, merchant information, and the tax and total amounts. The data can be extracted from different kinds of receipts, in both scanned copies or phone images.
+This model is used to analyze English sales receipts from restaurants, retail, gas stations and more, from Australia, Canada, United Kingdom, India, and the United States. The Prebuilt receipt model extracts the information you need, such as the time and date of the transaction, merchant information, and the tax and total amounts. The data can be extracted from different kinds of receipts, in both scanned copies or phone images.
 
 ![Prebuilt receipt example.](../media/overview-receipt.jpeg)
 

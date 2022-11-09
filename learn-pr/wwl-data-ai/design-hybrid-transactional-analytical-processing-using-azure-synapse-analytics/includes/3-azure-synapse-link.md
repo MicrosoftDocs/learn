@@ -2,7 +2,7 @@ HTAP solutions are supported in Azure Synapse Analytics through **Azure Synapse 
 
 ## Azure Synapse Link for Cosmos DB
 
-Azure Cosmos DB is a global-scale NoSQL data service in Microsoft Azure that enables applications to store and access operational data by using a choice of application programming interfaces (APIs). Two commonly used APIs in Cosmos DB are the core (SQL) API and the MongoDB API, both of which are used to store and query data efficiently as a set of JSON documents in a *container* (referred to as a *collection* when using the MongoDB API).
+Azure Cosmos DB is a global-scale NoSQL data service in Microsoft Azure that enables applications to store and access operational data by using a choice of application programming interfaces (APIs).
 
 Azure Synapse Link for Azure Cosmos DB is a cloud-native HTAP capability that enables you to run near-real-time analytics over operational data stored in a Cosmos DB container. Azure Synapse Link creates a tight seamless integration between Azure Cosmos DB and Azure Synapse Analytics.
 
@@ -12,8 +12,8 @@ In the diagram above, the following key features of the Azure Synapse Link for C
 
 1. An Azure Cosmos DB container provides a row-based transactional store that is optimized for read/write operations.
 2. The container also provides a column-based analytical store that is optimized for analytical workloads. A fully managed autosync process keeps the data stores in sync.
-3. Azure Synapse Link provides a linked service that connects the analytical store enabled container in Cosmos DB to an Azure Synapse Analytics workspace.
-4. Azure Synapse Analytics provides Synapse SQL and Apache Spark runtimes in which you can run code to retrieve, process, and analyze data from the Cosmos DB analytical store without impacting the transactional data store in Cosmos DB.
+3. Azure Synapse Link provides a linked service that connects the analytical store enabled container in Azure Cosmos DB to an Azure Synapse Analytics workspace.
+4. Azure Synapse Analytics provides Synapse SQL and Apache Spark runtimes in which you can run code to retrieve, process, and analyze data from the Azure Cosmos DB analytical store without impacting the transactional data store in Azure Cosmos DB.
 
 ## Azure Synapse Link for SQL
 

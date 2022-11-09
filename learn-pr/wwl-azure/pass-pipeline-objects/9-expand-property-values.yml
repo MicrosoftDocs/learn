@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.pass-pipeline-objects.expand-property-values
+title: Expand property values
+metadata:
+  title: Expand property values
+  description: "Expand property values"
+  ms.date: 08/01/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/9-expand-property-values.md)]

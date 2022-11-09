@@ -4,13 +4,13 @@ title: Specify security requirements for IoT workloads
 metadata:
   title: Specify security requirements for IoT workloads
   description: "Specify security requirements for IoT workloads"
-  ms.date: 06/08/2022
-  author: hrasheed-msft
+  ms.date: 07/06/2022
+  author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 10
+durationInMinutes: 3
 content: |
   [!include[](includes/5-specify-security-requirements-for-iot-workloads.md)]

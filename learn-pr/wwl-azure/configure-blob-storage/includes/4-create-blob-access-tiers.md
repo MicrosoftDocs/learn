@@ -1,11 +1,37 @@
-Azure Storage provides different options for accessing block blob data (as shown in the screenshot), based on usage patterns. Each access tier in Azure Storage is optimized for a particular pattern of data usage. By selecting the correct access tier for your needs, you can store your block blob data in the most cost-effective manner.
+Azure Storage supports several access tiers for blob data, including Hot, Cool, Archive, and Premium Blob Storage. Each access tier is optimized to support a particular pattern of data usage.
 
-:::image type="content" source="../media/blob-performance-tiers-16ec0068.png" alt-text="Screenshot of creating a storage account with choices for blob performance.":::
+### Things to know about blob access tiers
 
+Let's examine characteristics of the blob access tiers.
 
- -  **Hot**. The Hot tier is optimized for frequent access of objects in the storage account. New storage accounts are created in the Hot tier by default.
- -  **Cool**. The Cool tier is optimized for storing large amounts of data that is infrequently accessed and stored for at least 30 days. Storing data in the Cool tier is more cost-effective, but accessing that data may be more expensive than accessing data in the Hot tier.
- -  **Archive**. The Archive tier is optimized for data that can tolerate several hours of retrieval latency and will remain in the Archive tier for at least 180 days. The Archive tier is the most cost-effective option for storing data, but accessing that data is more expensive than accessing data in the Hot or Cool tiers.
+#### Hot tier
 
-> [!NOTE]
-> When data usage changes, you can switch access tiers at any time.
+The Hot tier is optimized for frequent reads and writes of objects in the Azure storage account. A good usage case is data that is actively being processed. By default, new storage accounts are created in the Hot tier. This tier has the lowest access costs, but higher storage costs than the Cool and Archive tiers. 
+
+#### Cool tier
+
+The Cool tier is optimized for storing large amounts of data that's infrequently accessed. This tier is intended for data that remains in the Cool tier for at least 30 days. A usage case for the Cool tier is short-term backup and disaster recovery datasets and older media content. This content shouldn't be viewed frequently, but it needs to be immediately available. Storing data in the Cool tier is more cost-effective. Accessing data in the Cool tier can be more expensive than accessing data in the Hot tier.
+
+#### Archive tier
+
+The Archive tier is an offline tier that's optimized for data that can tolerate several hours of retrieval latency. Data must remain in the Archive tier for at least 180 days or be subject to an early deletion charge. Data for the Archive tier includes secondary backups, original raw data, and legally required compliance information. This tier is the most cost-effective option for storing data. Accessing data is more expensive in the Archive tier than accessing data in the other tiers. 
+
+#### Premium Blob Storage
+
+Premium Blob Storage is best suited for I/O intensive workloads that require low and consistent storage latency. Premium Blob Storage uses solid-state drives (SSDs) for fast and consistent response times. This storage is best for workloads that perform many small transactions. An example would be a mapping application that requires frequent and fast updates.
+
+### Compare access tiers
+
+The access options for Azure Blob Storage offer a range of features and support levels to help you optimize your storage costs. As you compare the features and support, think about which access options can best support your application needs.
+
+| Compare | Premium Blob Storage | Hot tier | Cool tier | Archive tier |
+| --- | --- | --- | --- | ---|
+| **Availability** | 99.9% | 99.9% | 99% | Offline |
+| **Availability (RA-GRS reads)** | N/A | 99.99% | 99.9% | Offline |
+| **Latency (time to first byte)** | Single-digit milliseconds | milliseconds | milliseconds | hours |
+| **Minimum storage duration** | N/A | N/A | 30 days | 180 days |
+| **Usage costs** | Higher storage costs, Lower access & transaction costs | Higher storage costs, Lower access & transaction costs | Lower storage costs, Higher access & transaction costs | Lowest storage costs, Highest access & transaction costs |
+
+### Configure the blob access tier
+
+In the Azure portal, you can select the blob access tier for your Azure storage account. You can also change the blob access tier for your account at any time. By selecting the correct access tier for your needs, you can store your blob data in the most cost-effective manner.

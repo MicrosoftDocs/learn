@@ -274,7 +274,7 @@ When we're doing this, it's important to be strategic about where we put our bre
     for (int i = 2; i < n; i++)
     ```
 
-    Okay, wait a minute! That means that it will exit as soon as the top of the for loop sees `i` is less than `n`. That means that the loop code won't run for the case where `i` equals `n`. It seems like what we wanted was to run until `i <= n`, instead:
+    Okay, wait a minute! That means that it will exit as soon as the top of the for loop sees that `i` is no longer less than `n`. That means that the loop code won't run for the case where `i` equals `n`. It seems like what we wanted was to run until `i <= n`, instead:
 
     ```csharp
     for (int i = 2; i <= n; i++)

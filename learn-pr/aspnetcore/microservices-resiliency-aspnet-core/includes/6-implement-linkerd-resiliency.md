@@ -7,14 +7,12 @@ This unit focuses on replacing the code-based resiliency. An infrastructure-base
 * Configure the app to use Linkerd for resiliency.
 * Explore the app behavior with Linkerd.
 
-[!INCLUDE[reconnect to Azure Cloud Shell](../../includes/microservices/reconnect-to-cloud-shell-note.md)]
-
 ## Redeploy the app
 
 Before applying Linkerd, revert the app to a state before code-based resiliency was added. To revert, redeploy the unmodified `webshoppingagg` image using the following command:
 
 ```bash
-./deploy/k8s/deploy-application.sh --registry eshoplearn --charts webshoppingagg
+./deploy-application.sh --registry eshoplearn --charts webshoppingagg
 ```
 
 [!INCLUDE[Wait for healthy services](../../includes/microservices/wait-for-healthy-services.md)]
@@ -34,7 +32,7 @@ You may verify the app is again failing as expected using the same steps as befo
 
 ### Validate the AKS cluster
 
-The setup script installed the Linkerd CLI. Run the following command to confirm that Linkerd prerequisites have been satisfied:
+The dev container comes with the Linkerd CLI pre-installed. Run the following command to confirm that Linkerd prerequisites have been satisfied:
 
 ```bash
 linkerd check --pre
@@ -237,7 +235,7 @@ The preceding manifest is configured such that:
 Run the following command to use the service profile in the AKS cluster:
 
 ```bash
-kubectl apply -f ./deploy/k8s/linkerd/coupon-serviceprofile.yaml
+kubectl apply -f ./linkerd/coupon-serviceprofile.yaml
 ```
 
 The following output appears:
@@ -261,10 +259,10 @@ The preceding change instructs Nginx to add a Linkerd destination override reque
 
 ### Deploy the updated Helm charts
 
-Run the following command to redeploy the updated charts:
+Save all your changes and run the following command to redeploy the updated charts:
 
 ```bash
-./deploy/k8s/deploy-application.sh --registry eshoplearn --charts apigateway,coupon,webshoppingagg
+./deploy-application.sh --registry eshoplearn --charts apigateway,coupon,webshoppingagg
 ```
 
 The updated pods each have two containers now (`0/2`). One is the service container and the other is `linkerd-proxy`:

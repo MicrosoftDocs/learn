@@ -16,7 +16,7 @@ abstract: |
   - Create alert rules and action groups.
 prerequisites: |
   None
-iconUrl: /learn/achievements/azure-alerts-configure.svg
+iconUrl: /training/achievements/azure-alerts-configure.svg
 levels:
 - intermediate
 roles:

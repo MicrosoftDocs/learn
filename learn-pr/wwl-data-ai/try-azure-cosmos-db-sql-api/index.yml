@@ -16,7 +16,7 @@ abstract: |
   - Create database, container, and item resources for an Azure Cosmos DB SQL API account
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-try.svg
+iconUrl: /training/achievements/azure-cosmos-db-try.svg
 levels:
 - intermediate
 roles:

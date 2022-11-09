@@ -15,6 +15,6 @@ In this module, you'll:
 
 ## Prerequisites
 
-- [Set up your environment](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true)
+- [Set up your environment](/training/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true)
 - Working knowledge of C or C++, GitHub, and Visual Studio
-- Previous modules in this [learning path](https://docs.microsoft.com/learn/paths/azure-rtos-threadx/?azure-portal=true)
+- Previous modules in this [learning path](/training/paths/azure-rtos-threadx/?azure-portal=true)

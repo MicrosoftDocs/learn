@@ -22,7 +22,7 @@ prerequisites: |
   - Basic knowledge of programming concepts
   - Familiarity with the command line to create new directories
   - Visual Studio Code installed
-iconUrl: /learn/achievements/ethereum-blockchain-development.svg 
+iconUrl: /training/achievements/ethereum-blockchain-development.svg 
 levels:
 - beginner
 roles:

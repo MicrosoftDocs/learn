@@ -1,4 +1,4 @@
-Now that we've created a function app, let's look at how to build, configure, and execute a function.
+Now that we've created a function app, let's look at how to build, configure, and execute a function. We'll execute our function in the next exercise, so you don't need to complete any tasks in this unit.
 
 ### Triggers
 
@@ -27,9 +27,9 @@ Azure provides a [large number of bindings](/azure/azure-functions/functions-tri
 
 ### Define a sample binding
 
-Let's look at an example of configuring a function with an input binding (trigger) and an output binding. Let's say we want to write a new row to Azure Table storage whenever a new message appears in Azure Queue Storage. This scenario can be implemented using an Azure Queue Storage _trigger_ and an Azure Table storage _output binding_.
+Let's look at an example of configuring a function with an input binding (trigger) and an output binding. Let's say we want to write a new row to Azure Table storage whenever a new message appears in Azure Queue Storage. This scenario can be implemented using an Azure Queue Storage *trigger* and an Azure Table storage *output binding*.
 
-The following snippet is the _function.json_ file for this scenario.
+The following snippet is the *function.json* file for this scenario.
 
 ```json
 {
@@ -57,7 +57,7 @@ Our JSON configuration specifies that our function will be triggered when a mess
 This example is a simple illustration of how we configure bindings for a function. We could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture, or even have multiple output bindings to push data to various services.
 
 > [!TIP]
-> To view and edit the contents of _function.json_ in the Azure portal, from the Home page, select your function app, and in the right pane, select **JSON View**. The Resource JSON view displays the Resource ID and the editable JSON code. To close the JSON view, select the **X** in the top right corner of the pane.
+> To view and edit the contents of *function.json* in the Azure portal, from the Home page, select your function app, and in the right pane, select **JSON View**. The Resource JSON view displays the Resource ID and the editable JSON code. To close the JSON view, select the **X** in the top right corner of the pane.
 
 ## Create a function in the Azure portal
 

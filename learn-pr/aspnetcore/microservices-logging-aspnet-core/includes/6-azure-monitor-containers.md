@@ -11,7 +11,7 @@ In this unit, you will:
 
 Azure Monitor for Containers helps you understand the performance and health of your AKS cluster. For example, you can view the memory consumption of containers running on a specific node.
 
-Run the following command in the command shell:
+Run the following command in the terminal:
 
 ```azurecli
 az aks enable-addons \
@@ -42,14 +42,14 @@ Monitor the AKS cluster's health by following these steps:
 
     :::image type="content" source="../media/6-azure-monitor-containers/active-pod-count.png" alt-text="Active pod count chart for the AKS cluster." border="true" lightbox="../media/6-azure-monitor-containers/active-pod-count.png":::
 
-    In the preceding screenshot, notice there are 27 pods in a running state.
-1. Back in the command shell, run the following command to list all running pods:
+    In the preceding screenshot, notice there are 30 pods in a running state.
+1. Back in the terminal, run the following command to list all running pods:
 
     ```bash
     kubectl get pods -A
     ```
 
-    The preceding command's output displays all 27 running pods in the AKS cluster.
+    The preceding command's output displays all 30 running pods in the AKS cluster.
 
 ## Implement a Prometheus metric
 
@@ -57,12 +57,16 @@ Prometheus is an open-source systems monitoring and alerting toolkit. Azure Moni
 
 Complete the following steps to implement a counter metric for the request count on the catalog service:
 
+1. In the terminal, temporarily set your working directory to *src/Services/Catalog/Catalog.API*:
+
+    ```bash
+    pushd ../../src/Services/Catalog/Catalog.API/
+    ```
+
 1. Run the following command to install the Prometheus NuGet package in the catalog service project:
 
     ```dotnetcli
-    pushd src/Services/Catalog/Catalog.API/ && \
-      dotnet add package prometheus-net.AspNetCore && \
-      popd
+    dotnet add package prometheus-net.AspNetCore --version 6.0.0
     ```
 
 1. Apply the following changes in *:::no-loc text="src/Services/Catalog/Catalog.API/Startup.cs":::*:
@@ -98,20 +102,24 @@ Complete the following steps to implement a counter metric for the request count
 
         The preceding code resolves the calls to `Metrics.CreateCounter` and `UseMetricServer`.
 
-1. Run the following commands to build the catalog service and its dependencies:
+1. Ensure you've saved all your changes, then build the catalog service and its dependencies:
 
     ```dotnetcli
-    pushd src/Services/Catalog/Catalog.API && \
-        dotnet build --no-restore && \
-        popd
+    dotnet build
     ```
 
     The build process bypasses restoration of NuGet packages and succeeds with no warnings. If the build fails, check the output for troubleshooting information.
 
+1. Return to the *deploy/k8s* directory:
+
+    ```bash
+    popd
+    ```
+
 1. The updated catalog service must be built on ACR. Run this script to build the catalog image:
 
     ```bash
-    deploy/k8s/build-to-acr.sh --services catalog-api
+    ./build-to-acr.sh --services catalog-api
     ```
 
     The script starts an ACR quick task. A variation of the following line confirms that the catalog service's Docker image was pushed to ACR:
@@ -135,7 +143,7 @@ The Docker image in ACR has been updated. A configuration change to the Helm cha
 1. Deploy the updated catalog service from ACR by running the following script:
 
     ```bash
-    deploy/k8s/deploy-application.sh --charts catalog
+    ./deploy-application.sh --charts catalog
     ```
 
     The preceding script deploys the container image from ACR to AKS. The script also runs the `kubectl get pods` command, whose output indicates the catalog service's pod is being created:
@@ -151,7 +159,7 @@ Before Azure Monitor for Containers can scrape Prometheus metrics from the catal
 
 For your convenience, the ConfigMap YAML template has been provided in *:::no-loc text="deploy/k8s/azure-monitor/container-azm-ms-agentconfig.yaml":::*.
 
-1. Open the *ConfigMap* template in the Cloud Shell editor. Change the value of `monitor_kubernetes_pods` from `false` to `true`, as shown. Save your changes.
+1. Open the *ConfigMap* template in the editor. Change the value of `monitor_kubernetes_pods` from `false` to `true`, as shown. Save your changes.
 
     ```yaml
     monitor_kubernetes_pods = true
@@ -160,7 +168,7 @@ For your convenience, the ConfigMap YAML template has been provided in *:::no-lo
 1. Apply the ConfigMap to AKS with the following command:
 
     ```bash
-    kubectl apply -f deploy/k8s/azure-monitor/container-azm-ms-agentconfig.yaml
+    kubectl apply -f ./azure-monitor/container-azm-ms-agentconfig.yaml
     ```
   
     The preceding command applies the ConfigMap to your AKS cluster. The AKS cluster will now scrape Prometheus metrics from any service configured with the Prometheus annotations. Upon completion of the command, the following output appears:
@@ -173,12 +181,6 @@ For your convenience, the ConfigMap YAML template has been provided in *:::no-lo
 
 Use the app to generate some requests to the catalog service. Open another browser tab if needed to complete the following steps.
 
-1. If needed, run the following command to display the various app URLs:
-
-    ```bash
-    cat ~/clouddrive/aspnet-learn/deployment-urls.txt
-    ```
-
 1. Verify the deployment has finished and the app is healthy using the **:::no-loc text="General application status":::** page.
 1. When the app is healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app.
 1. Navigate to the products catalog page, and refresh the page a few times.
@@ -190,10 +192,7 @@ With the changes you made in the previous section, the catalog service will crea
 To troubleshoot a production issue, you've been asked to monitor requests for the full list of catalog items. The list of catalog items is retrieved from the catalog service via an HTTP GET request to the `/catalog-api/api/v1/catalog/items` endpoint. To view the current count of requests to that endpoint, complete the following steps:
 
 1. In the Azure portal, use the search box at the top to find and open the Kubernetes service resource named *:::no-loc text="eshop-learn-aks":::*.
-1. Select the **Logs** option in the **Monitoring** section on the left side panel.
-
-    > [!NOTE]
-    > If presented with a **Get Started** button, select it. If presented with an **Example queries** dialog, close it.
+1. Select the **Logs** option in the **Monitoring** section on the left side panel. Dismiss any overlays until you are left with a **New Query 1** tab.
 
 1. Paste the following Kusto query into the query area:
 

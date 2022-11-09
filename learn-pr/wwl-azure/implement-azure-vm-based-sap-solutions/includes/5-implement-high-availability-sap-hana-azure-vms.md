@@ -5,7 +5,7 @@ For on-premises development, you can use either HANA System Replication or use s
 
 This unit describes how to deploy and configure Azure VMs running SUSE Linux Enterprise Server, install the cluster framework, and install and configure SAP HANA System Replication. In the example configurations, installation commands, instance number 03, and HANA System ID HN1 are used.
 
-For instructions regarding the equivalent procedure for Azure VMs running Red Hat Enterprise Linux, refer to High availability of SAP HANA on Azure VMs on Red Hat Enterprise Linux at [https://docs.microsoft.com/azure/virtual-machines/workloads/sap/sap-hana-high-availability-rhel](https://docs.microsoft.com/azure/virtual-machines/workloads/sap/sap-hana-high-availability-rhel) 
+For instructions regarding the equivalent procedure for Azure VMs running Red Hat Enterprise Linux, refer to High availability of SAP HANA on Azure VMs on Red Hat Enterprise Linux at [High availability of SAP HANA on Azure VMs on Red Hat Enterprise Linux](/azure/virtual-machines/workloads/sap/sap-hana-high-availability-rhel) 
 
 To achieve high availability, SAP HANA is installed on two virtual machines. The data is replicated by using HANA System Replication.
 
@@ -165,7 +165,4 @@ For more information about the required ports for SAP HANA, refer to SAP Note #2
 
 ## Create a Pacemaker cluster
 
-Follow the steps in Setting up Pacemaker on Red Hat Enterprise Linux in Azure at [https://docs.microsoft.com/azure/virtual-machines/workloads/sap/high-availability-guide-rhel-pacemaker](https://docs.microsoft.com/azure/virtual-machines/workloads/sap/high-availability-guide-rhel-pacemaker) to create a basic Pacemaker cluster for this HANA server. You can use the same Pacemaker cluster for SAP HANA and SAP NetWeaver (A)SCS.
-
-
-
+Follow the steps in Setting up Pacemaker on Red Hat Enterprise Linux in Azure at [Setting up Pacemaker on Red Hat Enterprise Linux in Azure](/azure/virtual-machines/workloads/sap/high-availability-guide-rhel-pacemaker) to create a basic Pacemaker cluster for this HANA server. You can use the same Pacemaker cluster for SAP HANA and SAP NetWeaver (A)SCS.

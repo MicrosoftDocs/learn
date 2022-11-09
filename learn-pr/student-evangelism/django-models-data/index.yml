@@ -30,7 +30,7 @@ prerequisites:  |
       - Package management
       - Virtual environments
       - Inheritance
-iconUrl: /learn/achievements/django-models-data.svg
+iconUrl: /training/achievements/django-models-data.svg
 levels:
 - intermediate
 roles:

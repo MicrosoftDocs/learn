@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.2-full-stack-monitoring
 metadata:
-  title: Introduction to full stack monitoring in Azure
-  description: Introduction to full stack monitoring in Azure
+  title: Introduction to full-stack monitoring in Azure
+  description: Introduction to full-stack monitoring in Azure
   ms.date: 03/22/2021
   author: kayodeprinceMS
   ms.author: kaprince
@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: During development only 
       isCorrect: false
-      explanation: Incorrect. Monitoring only during development limits problematic code from being deployed but doesn’t provide visibility when the app is live in production.
+      explanation: Incorrect. Monitoring only during development limits problematic code from being deployed but doesn't provide visibility when the app is live in production.
     - content: In production only
       isCorrect: false
-      explanation: Incorrect. Monitoring only during production provides visibility in to live issues but doesn’t reveal problems and errors during development, QA, and test phases.
+      explanation: Incorrect. Monitoring only during production provides visibility in to live issues but doesn't reveal problems and errors during development, QA, and test phases.
     - content: During development and while in production
       isCorrect: true
       explanation: Correct! Monitoring applications in development prevent errors and exceptions later in production. By monitoring applications in production, you'll promptly identify problems and risks that affect users.

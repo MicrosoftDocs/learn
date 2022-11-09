@@ -42,7 +42,7 @@ Create a key vault and allow deploy time access. To do so:
 
 1. Select **Create**. This should take a minute or so. When the resource has been created, select **Go to resource**.
 
-1. Select **Access Policies**. Enable the option **Azure Resource Manager for template deployment**, and select **Save**.
+1. Select **Access Configuration** under **Settings**. Enable the option **Azure Resource Manager for template deployment** and select **Apply**.
 
 1. From your PowerShell session, run the `ConvertTo-SecureString` cmdlet and assign the result to the `secretSecureString` variable:
 

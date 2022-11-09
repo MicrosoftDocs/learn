@@ -21,7 +21,7 @@ prerequisites: |
   - Basic knowledge of operational concepts such as monitoring, logging, and alerting.
   - Basic Microsoft Sentinel functionality.
   - Access to a Microsoft Azure subscription for exercise tasks.
-iconUrl: /learn/achievements/hunt-threats-sentinel.svg
+iconUrl: /training/achievements/hunt-threats-sentinel.svg
 levels:
 - beginner
 roles:

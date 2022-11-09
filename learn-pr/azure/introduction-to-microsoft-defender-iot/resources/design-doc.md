@@ -10,7 +10,7 @@ security-engineer
 security-operations-analyst
 technology-manager
 
-https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role
+https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
 
 ## Level
 

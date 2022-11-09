@@ -1,6 +1,6 @@
 Azure Virtual Network (VNet) is basis for a private network in Azure. VNet enables many types of Azure resources, such as Azure Virtual Machines (VM), to securely communicate with each other, the internet, and on-premises networks.
 
-:::image type="content" source="../media/virtual-desktop-combined-971d0db0.png" alt-text="Diagram of Azure Virtual Desktop Connections.":::
+:::image type="content" source="../media/virtual-desktop-combined-971d0db0.png" alt-text="Diagram that shows Azure Virtual Desktop Connections.":::
 
 
 Azure virtual network enables Azure resources to securely communicate with each other, the internet, and on-premises networks.

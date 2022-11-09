@@ -22,13 +22,13 @@ We'll cover the specific steps to use Azure Data Box Disk later in this unit.
 
 ### Copy data using standard tools
 
-You can copy data by using standard tools. For example, use File Explorer to drag and drop files. Or, use any Server Message Block (SMB)-compatible file-copy tool like Robocopy.
+You can copy data by using standard tools. For example, use File Explorer to drag and drop files, or use any Server Message Block (SMB)-compatible file-copy tool like Robocopy.
 
 ### Use Azure Storage file-naming conventions and size limits
 
 When you copy data, all the standard Azure Storage naming conventions apply:
 
--  Subfolder names should be lowercase, from 3 to 63 characters, and consist only of letters, numbers, and hyphens. Consecutive hyphens aren't allowed.
+- Subfolder names should be lowercase, from 3 to 63 characters, and consist only of letters, numbers, and hyphens. Consecutive hyphens aren't allowed.
 - Directory and file names for Azure Files shouldn't exceed 255 characters.
 - File size must not exceed ~4.75 tebibytes (TiB) for block blobs, ~8 TiB for page blobs, and ~1 TiB for Azure Files.
 
@@ -38,34 +38,33 @@ Copy data into the appropriate folder for your storage type: PageBlob, BlockBlob
 - Any files copied directly to the PageBlob or BlockBlob folders are inserted in a default **$root** container. Subfolders are created as containers in Azure.
 - For Azure Files, files must be in subfolders under the AzureFile folder. Any files copied to the root of the AzureFile folder are uploaded as block blobs instead of Azure Files items.
 
-
-If you don't follow the file structure, size limit, and naming conventions, the data upload to Azure might fail. If you're using Windows, we recommend that you validate the files by using DataBoxDiskValidation.cmd, which is provided in the DataBoxDiskImport folder. If you have time, use the _generate checksums_ option to validate your data before sending it to Azure.
+If you don't follow the file-structure, size-limit, and naming conventions, the data upload to Azure might fail. If you're using Windows, we recommend that you validate the files by using DataBoxDiskValidation.cmd, which is provided in the DataBoxDiskImport folder. If you have time, use the *generate checksums* option to validate your data before sending it to Azure.
 
 ## Import data by using Azure Data Box Disk
 
 For your vehicle data, you'd follow these steps to order a Data Box Disk to import the data to Azure:
 
-
 1. **Create an order**
    - Start by making an assessment of how much data your vehicles generate during the time you plan to sample before shipping it to Azure.
-   - Create an order in the portal or by using Azure CLI or PowerShell. Specify the amount of data, source country, and destination region.
+   - Create an order in the portal or by using Azure CLI or PowerShell. Specify the amount of data, source country/region, and destination country/region.
 
 1. **Receive the device from Azure Datacenter**
    - The service assigns from one to five 8-TB BitLocker-encrypted SSDs (up to 35 TB of usable capacity) and ships them within 10 days. If you need more than 35 TB, you can create more orders.
    - When you receive the disks, sign in to the Azure portal and go to the **Device Details** page for Data Box Disk. Get the passkey. Download the right version of the Data Box Disk unlocker tool for your operating system.
 
 1. **Set up and copy data to the device**
-   - For the autonomous vehicle scenario, you connect the disks directly to the onboard Linux or Windows computer in the car. With Azure Data Box Disk, you can connect multiple disks simultaneously and run multiple copy jobs in parallel.
-   - Azure Data Box Disk supports Azure block blob, Azure page blob, Azure Files, and Azure Managed Disks storage types for upload to Azure. The disks come with a predefined folder structure, based on the storage type. Copy data into the appropriate folder for your storage type: PageBlob, BlockBlob, AzureFile, or ManagedDisk.
+   - For the autonomous-vehicle scenario, you'll connect the disks directly to the onboard Linux or Windows computer in the car. With Azure Data Box Disk, you can connect multiple disks simultaneously and run multiple copy jobs in parallel.
+   - Azure Data Box Disk supports Azure block blob, Azure page blob, Azure Files, and Azure Managed Disks storage types for upload to Azure. The disks come with a predefined folder structure based on the storage type. Copy data into the appropriate folder for your storage type: PageBlob, BlockBlob, AzureFile, or ManagedDisk.
    - Validate the files by running DataBoxDiskValidation.cmd, which is provided in the DataBoxDiskImport folder. Select option 1 to validate the files. If you have time, we recommend that you generate checksums by selecting option 2. Generating a checksum may take some time, depending on the data size.
-   - The first three days are billed as a single day, as a grace period, plus one-off shipping and order processing fees. After the first three days, there's a per-day cost for each SSD.
+   - The first three days are billed as a single day, as a grace period, plus one-off shipping and order-processing fees. After the first three days, there's a per-day cost for each SSD.
 
 1. **Ship device to Azure datacenter**
 
-   Ship the disks back to Azure, using the provided shipping label for your regional carrier. When the device is received by the Azure datacenter, the data is copied to your Azure storage account.
+   Ship the disks back to Azure using the provided shipping label for your regional carrier. When the the Azure datacenter receives the device, the data is copied to your Azure storage account.
+
 1. **View data in Azure Storage**
 
-   Check for any errors, and verify that the data has been copied to your storage account.
+   Check for any errors and verify that the data has been copied to your storage account.
 
 ## Clone a Data Box order
 
@@ -78,7 +77,9 @@ You can export data from Azure by using Data Box. Data Box Disk and Data Box Hea
 Though we won't need to export data from Azure for our scenario, you should be aware of the workflow. The steps to order and use Data Box to export data is similar to the import workflow. At a high level, the workflow typically includes the following steps:
 
 1. Create an order in the Azure portal.
-1. Receive the device from the Azure datacenter. Connect to and unlock the device. The device will have data that the Azure datacenter copied from your Azure storage account.
-1. Copy data from the device.
-1. Return the device to Azure. The Azure datacenter securely erases the device disks as per the National Institute of Standards and Technology (NIST) guidelines.
 
+1. Receive the device from the Azure datacenter. Connect to and unlock the device. The device will have data that the Azure datacenter copied from your Azure storage account.
+
+1. Copy data from the device.
+
+1. Return the device to Azure. The Azure datacenter securely erases the device disks as per the National Institute of Standards and Technology (NIST) guidelines.

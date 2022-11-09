@@ -28,7 +28,7 @@ In an edge deployment, Azure Stack Hub is deployed directly behind the edge rout
 
 Public routable IP addresses are specified for the public VIP pool from the external network at deployment time. In an edge scenario, it's not recommended to use public routable IPs on any other network for security purposes. This scenario enables a user to experience the full self-controlled cloud experience as in a public cloud like Azure.
 
-:::image type="content" source="../media/recommend-firewall-1-a028dc08.png" alt-text="Image showing normalized relational tables.":::
+:::image type="content" source="../media/recommend-firewall-1-a028dc08.png" alt-text="Diagram showing normalized relational tables.":::
 
 
 ## Enterprise intranet or perimeter network firewall scenario
@@ -39,5 +39,5 @@ In an enterprise intranet or perimeter deployment, Azure Stack Hub is deployed o
  -  **Perimeter zone**. The perimeter network is where external or internet-facing apps like Web servers are typically deployed. It's monitored by a firewall to avoid attacks like DDoS and intrusion (hacking) while still allowing specified inbound traffic from the internet. Only the external network public VIP pool of Azure Stack Hub should reside in the DMZ zone.
  -  **Unsecure zone**. This is the external network, the internet. It **is not** recommended to deploy Azure Stack Hub in the unsecure zone.
     
-    :::image type="content" source="../media/recommend-firewall-2-f62ad6a0.png" alt-text="Image showing datacenter and firewall protection.":::
+    :::image type="content" source="../media/recommend-firewall-2-f62ad6a0.png" alt-text="Diagram showing datacenter and firewall protection.":::
     

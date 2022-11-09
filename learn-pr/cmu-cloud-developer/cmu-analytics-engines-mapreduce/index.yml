@@ -40,7 +40,7 @@ prerequisites: |
   - Be familiar with distributed file systems and how they work
   - Be familiar with NoSQL databases and object storage, and how they work
   - Know what distributed programming is and why it's useful for the cloud
-iconUrl: /learn/achievements/cmu-cloud-developer/distributed-programming-mapreduce.svg
+iconUrl: /training/achievements/cmu-cloud-developer/distributed-programming-mapreduce.svg
 hidden: true
 levels:
 - beginner

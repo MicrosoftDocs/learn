@@ -156,7 +156,7 @@ In this section, you modify the pipeline configuration to run your Selenium UI t
         [!code-yml[](code/6-azure-pipelines-publish.yml?highlight=5)]
 
         This task generates two build artifacts: the _Space Game_ website package and the compiled UI tests. We build the UI tests during the _Build_ stage to ensure that they'll compile during the _Test_ stage. But we don't need to publish the compiled test code. We build it again during the _Test_ stage when the tests run.
-    * The _Test_ stage includes a second job that builds and runs the tests. This job resembles the one that you used in the [Run quality tests in your build pipeline by using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline/4-add-unit-tests?azure-portal=true) module. In that module, you ran NUnit tests that verified the leaderboard's filtering functionality.
+    * The _Test_ stage includes a second job that builds and runs the tests. This job resembles the one that you used in the [Run quality tests in your build pipeline by using Azure Pipelines](/training/modules/run-quality-tests-build-pipeline/4-add-unit-tests?azure-portal=true) module. In that module, you ran NUnit tests that verified the leaderboard's filtering functionality.
 
         Recall that a _deployment job_ is a special type of job that plays an important role in your deployment stages. The second job is a normal job that runs the Selenium tests on a Windows Server 2019 agent. Although we use a Linux agent to build the application, here we use a Windows agent to run the UI tests. We use a Windows agent because Amita runs manual tests on Windows, and that's what most customers use.
 

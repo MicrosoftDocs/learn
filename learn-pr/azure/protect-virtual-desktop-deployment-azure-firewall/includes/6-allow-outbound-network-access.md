@@ -12,7 +12,6 @@ To allow the appropriate network traffic for Azure Virtual Desktop, you'll need 
 
 To allow the host pool outbound network access to Azure Virtual Desktop, create an application rule collection with the following two rules:
 
-
 |Rule  |Description |
 |---------|---------|
 |Allow Azure Virtual Desktop    |  Use FQDN tag *WindowsVirtualDesktop* to allow traffic from the host pool virtual network. |
@@ -44,7 +43,8 @@ You'll walk through the specific steps to create the application rule collection
 ## Configure network rules
 
 To allow Azure Virtual Desktop to work, you need to add Azure Firewall rules for DNS and the Windows activation service.
-Create a network rule collection, and add the following rules:
+
+Create a network rule collection and add the following rules:
 
 |Rule  |Description  |
 |---------|---------|
@@ -64,4 +64,3 @@ You might need to create more Azure Firewall application and network rules when 
 If you have a well-defined list of allowed destinations, like Microsoft 365, use Azure Firewall application and network rules to route end-user traffic directly to the destinations. For information about the Office 365 IP address and URL web service, see the resources listed at the end of this module.
 
 You might want to filter outbound user internet traffic by using an existing, on-premises, secure web gateway. To do this, configure web browsers or other applications that run on the Azure Virtual Desktop host pool with an explicit proxy configuration. For example, use Microsoft Edge command-line options to configure proxy settings. These proxy settings only influence internet access for your users, and allow the Azure Virtual Desktop service outbound traffic directly through Azure Firewall. For more information, see the resources listed at the end of this module.
-

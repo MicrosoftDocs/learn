@@ -4,8 +4,9 @@ metadata:
   title: Introduction
   description: In this unit, you'll learn about a business scenario in which it's critical to protect against data loss.
   ms.date: 03/10/2022
-  author: jboeshart
-  ms.author: jaboes
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction

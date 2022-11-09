@@ -5,12 +5,18 @@ You now have everything in place to start using the identities from Key Vault an
     > [!NOTE]
     > The lines 83 and 84 should have the following content (where, the *`<your-server-name>`* and *`<myadmin-password>`* represent the name of the Azure Database for MySQL Single Server instance and the password you assigned to the **myadmin** account during its provisioning).
 
-2.  Save the changes and push the updates you made to the **application.yml**file to your private GitHub repo by running the following commands from the Git Bash prompt:
+2.  In the same file, append the following lines to it (where the *\<key-vault-name\>* placeholder represents the name of the Azure Key Vault you provisioned earlier in this exercise):
     
     ```Bash
-    git add .
-    git commit -m 'removed azure mysql credentials'
-    git push
+    cloud:
+        azure:
+            keyvault:
+                secret:
+                    property-source-enabled: true
+                    property-sources:
+                      - name: key-vault-property-souece-1
+                        endpoint: https://<key-vault-name>.vault.azure.net/
+                        credential.managed-identity-enabled: true
     ```
 
 3.  From the Git Bash window, in the config repository you cloned locally, using a text editor to open **application.yml** and append the following lines:
@@ -26,6 +32,7 @@ You now have everything in place to start using the identities from Key Vault an
 4.  Commit and push these changes to your remote config repository.
     
     ```Bash
+    cd ~/projects/spring-petclinic-microservices-configgit add .
     git add .
     git commit -m 'added key vault'
     git push
@@ -38,42 +45,42 @@ You now have everything in place to start using the identities from Key Vault an
     ```
     <dependency>
         <groupId>com.azure.spring</groupId>
-        <artifactId>azure-spring-boot-starter-keyvault-secrets</artifactId>
-        <version>3.14.0</version>
+        <artifactId>spring-cloud-azure-starter-keyvault-secrets</artifactId>
     </dependency>
     ```
 
-2.  Add a dependency to `com.azure.spring` to the parent **pom.xml** file between the **elements**.
+2.  Add a dependency to `com.azure.spring` to the parent **pom.xml** file between the **elements**. Enter the elements within the *\<dependencyManagement\>\<dependencies\>\</dependencies\>\</dependencyManagement\>* section.
     
     ```
-    <dependencymanagement>
+    
+    
+    <dependencyManagement>
         <dependencies>
             //... existing dependencies
     
-                <dependency>
-                    <groupId>com.azure.spring</groupId>
-                    <artifactId>azure-spring-boot-bom</artifactId>
-                    <version>${azure.version}</version>
-                    <type>pom</type>
-                    <scope>import</scope>
-                </dependency>
+            <dependency>
+                <groupId>com.azure.spring</groupId>
+                <artifactId>spring-cloud-azure-dependencies</artifactId>
+                <version>${version.spring.cloud.azure}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
     
         </dependencies>
     </dependencyManagement>
     ```
 
-3.  Add a property for the `azure.version` to the parent **pom.xml** file between the **elements**.
+3.  In the same file, add a property for `version.spring.cloud.azure`. Enter the elements within the *\<properties\>\</properties\>* section.
     
     ```
-    <azure.version>3.13.0</azure.version>
-    
+    <version.spring.cloud.azure>4.2.0</version.spring.cloud.azure>
     ```
 
 4.  Save the changes to the **pom.xml** file and close it.
 5.  Rebuild each of the services. Make sure you are in the root directory for the Spring Petclinic application.
     
     ```Bash
-    cd ~/spring-petclinic-microservices
+    cd ~/projects/spring-petclinic-microservices/
     mvn clean package -DskipTests
     ```
 
@@ -82,14 +89,14 @@ You now have everything in place to start using the identities from Key Vault an
     ```Bash
     [INFO] Reactor Summary for spring-petclinic-microservices 2.6.3:
     [INFO]
-    [INFO] spring-petclinic-microservices ..................... SUCCESS [  0.505 s]
-    [INFO] spring-petclinic-admin-server ...................... SUCCESS [  4.302 s]
-    [INFO] spring-petclinic-customers-service ................. SUCCESS [  5.900 s]
-    [INFO] spring-petclinic-vets-service ...................... SUCCESS [  3.650 s]
-    [INFO] spring-petclinic-visits-service .................... SUCCESS [  3.520 s]
-    [INFO] spring-petclinic-config-server ..................... SUCCESS [  1.122 s]
-    [INFO] spring-petclinic-discovery-server .................. SUCCESS [  1.416 s]
-    [INFO] spring-petclinic-api-gateway ....................... SUCCESS [  7.646 s]
+    [INFO] spring-petclinic-microservices ..................... SUCCESS [0.505 s]
+    [INFO] spring-petclinic-admin-server ...................... SUCCESS [4.302 s]
+    [INFO] spring-petclinic-customers-service ................. SUCCESS [5.900 s]
+    [INFO] spring-petclinic-vets-service ...................... SUCCESS [3.650 s]
+    [INFO] spring-petclinic-visits-service .................... SUCCESS [3.520 s]
+    [INFO] spring-petclinic-config-server ..................... SUCCESS [1.122 s]
+    [INFO] spring-petclinic-discovery-server .................. SUCCESS [1.416 s]
+    [INFO] spring-petclinic-api-gateway ....................... SUCCESS [7.646 s]
     [INFO] ------------------------------------------------------------------------
     [INFO] BUILD SUCCESS
     [INFO] ------------------------------------------------------------------------
@@ -98,11 +105,11 @@ You now have everything in place to start using the identities from Key Vault an
     
     ```
 
-7.  Redeploy the `customers`, `visits`and `vets`services to their respective apps in your Spring Cloud service.
+7.  Redeploy the `customers`, `visits`and `vets`services to their respective apps in your Spring Apps service.
     
     ```Bash
-    az spring-cloud app deploy \
-        --service $SPRING_CLOUD_SERVICE \
+    az spring app deploy \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name customers-service \
         --runtime-version Java_11 \
@@ -110,8 +117,8 @@ You now have everything in place to start using the identities from Key Vault an
         --artifact-path spring-petclinic-customers-service/target/spring-petclinic-customers-service-2.6.3.jar \
         --env SPRING_PROFILES_ACTIVE=mysql
     
-    az spring-cloud app deploy \
-        --service $SPRING_CLOUD_SERVICE \
+    az spring app deploy \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name visits-service \
         --runtime-version Java_11 \
@@ -119,8 +126,8 @@ You now have everything in place to start using the identities from Key Vault an
         --artifact-path spring-petclinic-visits-service/target/spring-petclinic-visits-service-2.6.3.jar \
         --env SPRING_PROFILES_ACTIVE=mysql
     
-    az spring-cloud app deploy \
-        --service $SPRING_CLOUD_SERVICE \
+    az spring app deploy \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name vets-service \
         --runtime-version Java_11 \

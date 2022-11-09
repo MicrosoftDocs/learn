@@ -1,4 +1,4 @@
-After configuring both sites with VMware SRM, you should proceed with installing the VMware vSphere Replication solution. vSphere Replication is an integrated component of VMware vSphere, and uses a VM replication engine on the hypervisor level.
+After configuring both sites with VMware SRM, you should proceed with installing the VMware vSphere Replication solution. VMware vSphere Replication is an integrated component of VMware vSphere, and uses a VM replication engine on the hypervisor level.
 
 ## vSphere Replication appliance components
 

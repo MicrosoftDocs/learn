@@ -35,7 +35,7 @@ into your Azure environment.
 
 ## Cost management
 
-As you purchase products from Azure Marketplace, you want to get insights that will help you manage costs. Microsoft Cost Management is a free tool that you can use can be used to view information on the products you've purchased. You can use Cost Management to see details of what services you're spending money on and how those costs track against the budgets that you’ve set. In addition to setting budgets on your subscription, you can schedule reports and analyze subscription costs. You can learn more about Microsoft Cost Management by completing the Microsoft Learn module on [Analyze costs and create budgets with Microsoft Cost Management.](/learn/modules/analyze-costs-create-budgets-azure-cost-management/)
+As you purchase products from Azure Marketplace, you want to get insights that will help you manage costs. Microsoft Cost Management is a free tool that you can use can be used to view information on the products you've purchased. You can use Cost Management to see details of what services you're spending money on and how those costs track against the budgets that you’ve set. In addition to setting budgets on your subscription, you can schedule reports and analyze subscription costs. You can learn more about Microsoft Cost Management by completing the Microsoft Learn module on [Analyze costs and create budgets with Microsoft Cost Management.](/training/modules/analyze-costs-create-budgets-azure-cost-management/)
 
 You can view your Azure Marketplace charges and invoices on the cost analysis tool under Cost Management.
 

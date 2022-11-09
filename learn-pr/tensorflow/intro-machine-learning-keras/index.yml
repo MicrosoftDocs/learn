@@ -18,7 +18,7 @@ abstract: |
   - Learn to specify the architecture of a deep learning neural network.
   - Learn to train a neural network.
   - Learn to make a prediction using a neural network.
-iconUrl: /learn/achievements/keras-intro.svg
+iconUrl: /training/achievements/keras-intro.svg
 levels:
 - beginner
 roles:

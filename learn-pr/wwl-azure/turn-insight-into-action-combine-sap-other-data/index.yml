@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   *   Azure Data Fundamentals.
   *   Knowledge of SAP products such as SAP HANA or SAP NetWeaver.
-iconUrl: /learn/achievements/turn-insight-into-action-combine-sap-other-data.svg
+iconUrl: /training/achievements/turn-insight-into-action-combine-sap-other-data.svg
 levels:
 - beginner
 roles:

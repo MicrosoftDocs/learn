@@ -15,7 +15,7 @@ abstract: |
   *   Describe the Azure data ecosystem for analytics
 prerequisites: |
   - You should be familiar with basic data concepts and terminology.
-iconUrl: /learn/achievements/explore-azure-data-services-for-modern-analytics.svg
+iconUrl: /training/achievements/explore-azure-data-services-for-modern-analytics.svg
 levels:
 - intermediate
 roles:

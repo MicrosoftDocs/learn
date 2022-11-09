@@ -14,7 +14,7 @@ Managed identities can be used without any extra cost.
 | System-assigned | Some Azure services allow you to enable a managed identity directly on a service instance. When you enable a system-assigned managed identity, an identity is created in Azure AD. The identity is tied to the lifecycle of that service instance. When the resource is deleted, Azure automatically deletes the identity for you. By design, only that Azure resource can use this identity to request tokens from Azure AD. |
 | User-assigned | You may also create a managed identity as a standalone Azure resource. You can create a user-assigned managed identity and assign it to one or more instances of an Azure service. For user-assigned managed identities, the identity is managed separately from the resources that use it. |
 
-Always remember that managed identities are assigned to an application.  So, you need to configure and manage the identity within the services they're being used. If you have an application running in a virtual machine (Linxus or Windows), then you add and configure the identity there.  If you're using a managed identity with a cloud-app, function, or app service.  Then you configure and manage it there.  Let's look at adding a managed identity to a cloud built using the App Service.
+Always remember that managed identities are assigned to an application.  So, you need to configure and manage the identity within the services they're being used. If you have an application running in a virtual machine (Linux or Windows), then you add and configure the identity there.  If you're using a managed identity with a cloud-app, function, or app service.  Then you configure and manage it there.  Let's look at adding a managed identity to a cloud built using the App Service.
 
 ### Managed identity in Azure portal for an App Service
 :::image type="content" source="../media/managed-identity-azure-portal.png" alt-text="Screenshot of the Azure portal in the App Services screen.  Add a user-assigned identity is highlighted.":::
@@ -48,4 +48,4 @@ Or within a **template**
 ```
 
 ### Value of managed identity
-As stated at the beginning of this page, when you build and app you need a method to grant it access to resources.  The take advantage of the concepts of **zero trust** you can use managed identities.  You only assign the minimum privileges that the managed identity needs.  Then only assign access the minimum resources needed.  Least-privilege will keep your applications and data protected.
+As stated at the beginning of this page, when you build an app, you need a method to grant it access to resources. To take advantage of the concepts of **zero trust** you can use managed identities. You only assign the minimum privileges that the managed identity needs.  Then only assign access the minimum resources needed.  Least-privilege will keep your applications and data protected.

@@ -24,7 +24,7 @@ prerequisites: |
   - Visual Studio Code
   - .NET SDK 6.0 or greater
   - Git command-line client
-iconUrl: /learn/achievements/aspnetcore/persist-data-ef-core.svg
+iconUrl: /training/achievements/aspnetcore/persist-data-ef-core.svg
 levels:
 - beginner
 roles:

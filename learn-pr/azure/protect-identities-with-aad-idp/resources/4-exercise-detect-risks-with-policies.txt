@@ -50,7 +50,7 @@ In the new directory, let's set up a policy to detect user risk:
 
 ## Test the user risk-based policy
 
-The AI-based approach to identifying risks makes it difficult to consistently trigger the policy. One way to simulate an attacker trying to sign in is to use an IP address based in a different country.
+The AI-based approach to identifying risks makes it difficult to consistently trigger the policy. One way to simulate an attacker trying to sign in is to use an IP address based in a different country/region.
 
 You'll create a VM and install the TOR browser to generate this kind of traffic.
 

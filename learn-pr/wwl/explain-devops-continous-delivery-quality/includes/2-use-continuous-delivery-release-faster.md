@@ -53,11 +53,11 @@ By automating the process and enabling the ability to release to production at a
 - Lower risk
 - Higher quality
 - Early feedback
-- [Better planning](https://docs.microsoft.com/learn/modules/analyze-devops-continuous-planning-intergration/2-explore-continuous-planning)
-- [Faster collaboration](https://docs.microsoft.com/learn/modules/characterize-devops-continous-collaboration-improvement/2-explore-continuous-collaboration)
+- [Better planning](/training/modules/analyze-devops-continuous-planning-intergration/2-explore-continuous-planning)
+- [Faster collaboration](/training/modules/characterize-devops-continous-collaboration-improvement/2-explore-continuous-collaboration)
 - Everyone is involved
-- [Fewer production issues](https://docs.microsoft.com/learn/modules/explain-devops-continous-delivery-quality/3-explore-continuous-quality)
-- [Ability to shift left on security](https://docs.microsoft.com/learn/modules/explore-devops-continuous-security-operations/2-explore-continuous-security)
+- [Fewer production issues](/training/modules/explain-devops-continous-delivery-quality/3-explore-continuous-quality)
+- [Ability to shift left on security](/training/modules/explore-devops-continuous-security-operations/2-explore-continuous-security)
 - Adapt and react a lot more quickly
 - Much more predictable releases
 - Deploy during any business hours

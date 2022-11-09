@@ -28,9 +28,9 @@ The criteria on which administrative units are created are guided by the unique 
 
 You can expect the creation of administrative units in the organization to go through the following stages:
 
-1.  **Initial adoption**: Your organization will start creating administrative units based on initial criteria, and the number of administrative units will increase as the criteria are refined.
-2.  **Pruning**: After the criteria are defined, administrative units that are no longer required will be deleted.
-3.  **Stabilization**: Your organizational structure is defined, and the number of administrative units isn't going to change significantly in the short term.
+1. **Initial adoption**: Your organization will start creating administrative units based on initial criteria, and the number of administrative units will increase as the criteria are refined.
+1. **Pruning**: After the criteria are defined, administrative units that are no longer required will be deleted.
+1. **Stabilization**: Your organizational structure is defined, and the number of administrative units isn't going to change significantly in the short term.
 
 ## Delegate administration in Azure Active Directory
 
@@ -103,4 +103,4 @@ To maintain access to your identity management store when issue arises, prepare 
 
 ## Secure your administrator roles
 
-Attackers who get control of privileged accounts can do tremendous damage. Always protect these accounts first. Use the Security Defaults feature, that is available to all Azure AD organizations. Security Defaults enforces multifactor authentication on privileged Azure AD accounts.
+Attackers who get control of privileged accounts can do tremendous damage. Always protect these accounts first. Use the Security Defaults feature that is available to all Azure AD organizations. Security Defaults enforces multifactor authentication on privileged Azure AD accounts.

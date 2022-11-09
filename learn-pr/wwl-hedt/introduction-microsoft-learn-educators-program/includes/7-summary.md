@@ -6,10 +6,10 @@ Supplemental Resources:
 
 - [Microsoft Learn](https://aka.ms/learn) 
 
-- [Microsoft Learn for Educators ](https://aka.ms/msle)
+- [Microsoft Learn for Educators](https://aka.ms/msle)
 
 - [University of Lincoln customer story](https://aka.ms/LincolnCS) 
 
-- [University of Lanarkshire customer story ](https://aka.ms/lanarkshireCS)
+- [University of Lanarkshire customer story](https://aka.ms/lanarkshireCS)
 
-- [Students in Hong Kong with Microsoft Azure certifications attract recruiters](https://aka.ms/MSLEBlogHK) 
+- [Students with Microsoft Azure certifications attract recruiters](https://aka.ms/MSLEBlogHK) 

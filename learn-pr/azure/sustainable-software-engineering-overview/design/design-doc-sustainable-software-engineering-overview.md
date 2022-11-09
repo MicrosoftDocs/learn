@@ -18,7 +18,7 @@ Sustainable Software Engineering Overview
 - AI Edge Engineer
 - Technology Manager
 
-NOTE: See https://docs.microsoft.com/api/learn/catalog/ for more.
+NOTE: See the [Microsoft Learn training catalog](/api/learn/catalog/) for more.
 
 ## Level
 
@@ -28,7 +28,7 @@ NOTE: See https://docs.microsoft.com/api/learn/catalog/ for more.
 
 - TBD
 
-NOTE: See https://docs.microsoft.com/api/learn/catalog/ for list.
+NOTE: See the [Microsoft Learn training catalog](/api/learn/catalog/) for a list.
 
 ## Prerequisites
 

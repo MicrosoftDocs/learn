@@ -1,63 +1,49 @@
-In this module, you have learned how to choose and recommend an Azure compute service. 
+In this module, you learned how to choose and recommend an Azure compute solution. You reviewed scenarios for Azure Virtual Machines, Azure Logic Apps, Azure Functions, and Azure Container Instances. Azure Logic Apps and Azure Functions offer serverless compute options. You also looked at scenarios for supporting applications with Azure Batch, Azure App Service, and Azure Kubernetes Service. App Service lets you use the programming language of your choice. Azure Kubernetes Service makes it simple to deploy and manage containerized applications. You explored how to host applications in the cloud with Azure compute services to improve performance, scalability, and flexibility.
 
-- Choose a compute service.
+## Learn more with Azure documentation
 
-- Design for Azure virtual machines solutions.
+- Choose an [Azure compute service](/azure/architecture/guide/technology-choices/compute-decision-tree).
 
-- Design for Azure Batch solutions.
+- Review [documentation for virtual machines in Azure](/azure/virtual-machines/).
 
-- Design for Azure Function solutions.
+- Read about [Azure App Service](/azure/app-service/overview).
 
-- Design for Azure Logic App solutions.
+- Read about [Azure Batch](/azure/batch/batch-technical-overview).
 
-- Design for Azure Container Instances solutions.
+- Read about [Azure Container Instances](/azure/container-instances/container-instances-overview).
 
-- Design for Azure App Services solutions.
+- Read about [Azure Functions](/azure/azure-functions/functions-overview).
 
-- Design for Azure Kubernetes Service solutions.
+- Read about [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/).
 
-### Learn more with Azure documentation
+- Discover [what is Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes/).
 
-- [Choosing an Azure compute service - Azure Architecture Center | Microsoft Docs](/azure/architecture/guide/technology-choices/compute-decision-tree)
+- Read about the [Azure Kubernetes Service](/azure/aks/intro-kubernetes).
 
-- [Virtual machines in Azure - Azure Virtual Machines | Microsoft Docs](/azure/virtual-machines/)
+- Review [security considerations for Azure Container Instances](/azure/container-instances/container-instances-image-security).
 
-- [Azure Batch runs large parallel jobs in the cloud - Azure Batch | Microsoft Docs](/azure/batch/batch-technical-overview)
+## Learn more with self-paced training
 
-- [Azure Functions Overview | Microsoft Docs](/azure/azure-functions/functions-overview)
+- Choose the [best Azure service to automate your business processes](/training/modules/choose-azure-service-to-integrate-and-automate-business-processes/).
 
-- [Logic App Service – IPaaS | Microsoft Azure](https://azure.microsoft.com/services/logic-apps/)
+- Align [requirements with cloud types and service models in Azure](/training/modules/align-requirements-in-azure/).
 
-- [Serverless containers in Azure - Azure Container Instances | Microsoft Docs](/azure/container-instances/container-instances-overview)
+- Complete an [introduction to Azure Logic Apps](/training/modules/intro-to-logic-apps/).
 
-- [Overview - Azure App Service | Microsoft Docs](/azure/app-service/overview)
-
-- [What is Kubernetes? | Microsoft Azure](https://azure.microsoft.com/topic/what-is-kubernetes/)
-
-- [Introduction to Azure Kubernetes Service - Azure Kubernetes Service | Microsoft Docs](/azure/aks/intro-kubernetes)
-
-### Learn more with self-paced training
-
-- [Choose the best Azure service to automate your business processes - Learn | Microsoft Docs](/learn/modules/choose-azure-service-to-integrate-and-automate-business-processes/)
-
-- [Align requirements with cloud types and service models in Azure - Learn | Microsoft Docs](/learn/modules/align-requirements-in-azure/)
-
-- [Introduction to Azure virtual machines - Learn | Microsoft Docs](/learn/modules/intro-to-azure-virtual-machines/)
-
-- [Create an Azure Batch account by using the Azure portal - Learn | Microsoft Docs](/learn/modules/create-batch-account-using-azure-portal/)
-
-- [Create serverless logic with Azure Functions - Learn | Microsoft Docs](/learn/modules/create-serverless-logic-with-azure-functions/)
-
-- [Introduction to Azure Logic Apps - Learn | Microsoft Docs](/learn/modules/intro-to-logic-apps/)
-
-- [Host a web application with Azure App Service - Learn | Microsoft Docs](/learn/modules/host-a-web-app-with-azure-app-service/)
-
-- [Introduction to Azure Kubernetes Service - Learn | Microsoft Docs](/learn/modules/intro-to-azure-kubernetes-service/)
+- Complete an [introduction to Azure Kubernetes Service](/training/modules/intro-to-azure-kubernetes-service/).
 
 ## Learn more with optional hands-on exercises
 
-- [Create a web app in the Azure portal](/learn/modules/host-a-web-app-with-azure-app-service/3-exercise-create-a-web-app-in-the-azure-portal?pivots=csharp)
+- Practice with an [Introduction to Azure Virtual Machines (sandbox)](/training/modules/intro-to-azure-virtual-machines/).
 
-- [Create a Windows virtual machine](/learn/modules/create-windows-virtual-machine-in-azure/3-exercise-create-a-vm)
+- Create an [Azure Batch account by using the Azure portal](/training/modules/create-batch-account-using-azure-portal/). _(Azure subscription required.)_
 
-- [Create the social media tracker Logic App](/learn/modules/route-and-process-data-logic-apps/4-ex-create-social-media-tracker)
+- Create [serverless logic with Azure Functions (sandbox)](/training/modules/create-serverless-logic-with-azure-functions/).
+
+- Create a [web app in the Azure portal (sandbox)](/training/modules/host-a-web-app-with-azure-app-service/3-exercise-create-a-web-app-in-the-azure-portal?pivots=csharp).
+
+- Create a [Windows virtual machine (sandbox)](/training/modules/create-windows-virtual-machine-in-azure/3-exercise-create-a-vm).
+
+- Create the [social media tracker Logic App (sandbox)](/training/modules/route-and-process-data-logic-apps/4-ex-create-social-media-tracker).
+
+- Host a [web application with Azure App Service (sandbox)](/training/modules/host-a-web-app-with-azure-app-service/).

@@ -47,8 +47,8 @@ You're gathering tools and building a foundation as a web developer. You can reu
 
 One way to deploy your website is to use Azure Static Web Apps.
 
-* [Azure Static Web Apps on Microsoft Learn](/learn/paths/azure-static-web-apps/)
-* [Azure Static Web Apps on Microsoft Docs](/azure/static-web-apps)
+* [Learning paths for Azure Static Web Apps](/training/paths/azure-static-web-apps/)
+* [Azure Static Web Apps documentation](/azure/static-web-apps)
 
 #### Visual Studio Code documentation
 

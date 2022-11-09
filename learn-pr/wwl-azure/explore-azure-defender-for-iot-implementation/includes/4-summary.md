@@ -1,1 +1,1 @@
-Your team needs to enhance the company's IoT solution to meet security requirements. The experience that you gained by implementing Azure Defender for IoT and custom security alerts will help the team to implement the required security enhancements in the production environment.
+Your team needs to enhance the company's IoT solution to meet security requirements. The experience that you gained by implementing Microsoft Defender for IoT and custom security alerts will help the team to implement the required security enhancements in the production environment.

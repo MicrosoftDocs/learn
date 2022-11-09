@@ -1,10 +1,10 @@
 So far in this module, we've talked about the three cloud-management disciplines, which we call a management baseline. This unit will look beyond the default management baseline. 
 
-There are most likely workloads in your environment that require more management services than what's described in the management baseline. An *enhanced* management baseline is often a low operations investment, compared to workload or platform specialization.
+There are most likely workloads in your environment that require more management services than those described in the management baseline. An *enhanced* management baseline is often a low-operations investment, compared to workload or platform specialization.
 
 :::image type="content" source="../media/overview-002.png" alt-text="Diagram of management baselines showing enhanced baseline, platform specialization, and workload specialization." border="false":::
 
-If most of your workloads require more than your default management baseline, reviewing the management baseline is a good idea. A management baseline review is also a good idea when new services are implemented or new features of Azure are released. For example, if your company implements an IT service management (ITSM) solution, a connection to automate incident creation adds to the enhanced operations baseline.
+If most of your workloads require more than your default management baseline, it's a good idea to review the management baseline. It's also a good idea to review your management baseline when new services are implemented or new Azure features are released. For example, if your company implements an IT service management (ITSM) solution, a connection to automate incident creation adds to the enhanced operations baseline.
 
 *Workload specialization* is for the most mission-critical workloads. This is about 20 percent of the workloads.
 

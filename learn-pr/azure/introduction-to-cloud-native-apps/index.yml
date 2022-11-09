@@ -18,7 +18,7 @@ prerequisites: |
   - A basic familiarity with Azure
   - You should be familiar with basic cloud concepts and terminology
   - An understanding of cloud computing is helpful, but isn't necessary
-iconUrl: /learn/achievements/intro-to-cloud-native-apps.svg
+iconUrl: /training/achievements/intro-to-cloud-native-apps.svg
 levels:
 - beginner
 roles:

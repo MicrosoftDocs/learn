@@ -42,9 +42,9 @@ Design for accidental activation should be balanced with removing accessibility 
 
 Another important aspect of hardware accessibility is the amount of force a player must exert to activate a button or generate input. To prevent accidental activation, developers might intentionally configure an item to require more force to perform an action. For example, items often carried in backpacks, like a headset, might be intentionally designed to require a higher activation force for buttons so they aren't activated accidentally in transit.
 
-Considerations around the force needed to operate controls should be factored into hardware design and development. The 2010 Americans with Disabilities Act Standards for Accessible Design suggests a maximum of 5 lb, or 22.N Newtons, for activation force of operable parts. For smaller parts like buttons and keys, lower activation forces should be considered. For example:
+Considerations around the force needed to operate controls should be factored into hardware design and development. The 2010 Americans with Disabilities Act Standards for Accessible Design suggests a maximum of 5 lb, or 22.N Newtons, for activation force of operable parts. For smaller parts like buttons and keys, lower activation forces should be considered. Activation force is commonly measured in units of gram-force, or just grams. For example:
 
-- The Xbox One console's touch-based power button can be activated with 0 g of force.
+- The Xbox One console's touch-based power button can be activated with 0 grams (g) of force.
 - Most keys on a standard keyboard can be activated with 45 g to 70 g of force.
 - Ultra-light assistive technology switches can be activated with as low as 20 g of force.
 

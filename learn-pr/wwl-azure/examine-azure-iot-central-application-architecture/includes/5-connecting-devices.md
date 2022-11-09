@@ -23,7 +23,7 @@ IoT devices can be connected to IoT Central using X.509 certificates as follows:
 2.  Add and verify an intermediate or root X.509 certificate in the enrollment group.
 3.  Generate a leaf certificate from the root or intermediate certificate in the enrollment group. Send the leaf certificate from the device when it connects to your application.
 
-For more detailed information, see: [https://docs.microsoft.com/azure/iot-central/core/how-to-connect-devices-x509](/azure/iot-central/core/how-to-connect-devices-x509)
+For more detailed information, see: [How to connect devices with X.509 certificates to IoT Central Application](/azure/iot-central/core/how-to-connect-devices-x509)
 
 ### SAS group enrollment
 

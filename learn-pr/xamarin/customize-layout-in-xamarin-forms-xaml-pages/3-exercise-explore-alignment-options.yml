@@ -5,10 +5,11 @@ metadata:
   title: Exercise - Explore alignment options
   description: Exercise - Explore alignment options
   ms.date: 2/10/2019
-  author: davidbritch
-  ms.author: dabritch
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
+  
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-explore-alignment-options.md)]

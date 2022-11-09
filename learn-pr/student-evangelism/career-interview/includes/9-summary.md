@@ -8,7 +8,7 @@ Finally, you learned interview guidelines and how to leave a lasting good impres
 
 ### Additional resources
 
-- [Preparing for the technical interview](https://elaintech.com/2021/01/03/how-to-prepare-for-a-technical-interview-and-live-coding-part-for-software-engineer-role/ ). A great read from a former Microsoft recruiter turned software engineer at Microsoft.
+- [Preparing for the technical interview](https://elaintech.com/2021/01/03/how-to-prepare-for-a-technical-interview-and-live-coding-part-for-software-engineer-role/). A great read from a former Microsoft recruiter turned software engineer at Microsoft.
 
 - [Microsoft interview tips](https://careers.microsoft.com/us/en/interviewtips). Hands-on tips that describe what to do before, during, and after the interview.
 
