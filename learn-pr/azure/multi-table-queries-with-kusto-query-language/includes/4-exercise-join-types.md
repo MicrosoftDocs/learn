@@ -104,4 +104,4 @@ Similarly, your sales team wants to know the number of products that don't sell 
 
     :::image type="content" source="../media/4-join-4.png" alt-text="Screenshot of the join operator query, showing the number of products that don't sell in each product category.":::
 
-1. Look at each row. The results show the number of unsold products per product category. Notice that the right anti join only selects products that have no sales facts, indicating that there where no sales for products returned by the join.
+1. Look at each row. The results show the number of unsold products per product category. Notice that the right anti join only selects products that have no sales facts, indicating that there were no sales for products returned by the join.
