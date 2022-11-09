@@ -24,4 +24,4 @@ In Azure Pipelines, pipeline code is expressed through YAML configuration files.
 
 :::image type="content" source="../media/2-starter-code-nodejs.png" alt-text="A screenshot of Azure Pipelines showing starter code for the Node.js project.":::
 
-If Azure Pipelines doesn't provide a specific task that you need, you can write scripts that fill in the gaps. The `script` task in the previous example uses `npm` to install dependencies, build the application, and run any associated tests.
+If Azure Pipelines doesn't provide a specific task that you need, you can write scripts that fill in the gaps. The `script` task in the previous example uses `npm` to install dependencies.
