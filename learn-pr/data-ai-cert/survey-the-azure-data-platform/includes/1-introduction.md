@@ -7,5 +7,5 @@ Imagine you're a data engineer working for an organization that's starting to ex
 In this module you will:
 
 - Contrast structured data with nonstructured data.
-- Explore common Azure data platform technologies and identify when to use them.
+- Explore common Microsoft Intelligent Data Platform technologies and identify when to use them.
 - List additional technologies that support the common data platform technologies.
