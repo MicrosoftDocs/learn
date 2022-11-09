@@ -24,7 +24,7 @@ You'll want to focus on these considerations:
 
 Users prefer apps in their native language. Some applications might not even be usable if they're not properly translated. Without translations, you could be excluding a large percentage of your potential users.
 
-Surveys show that language is so important in some countries and cultures that people will pay more for a localized app.
+Surveys show that language is so important in some countries/regions and cultures that people will pay more for a localized app.
 
 ## Test your app
 

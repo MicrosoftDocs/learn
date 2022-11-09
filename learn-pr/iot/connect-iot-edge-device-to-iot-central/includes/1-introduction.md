@@ -13,6 +13,7 @@ By the end of this module, you'll be able to implement an IoT application patter
 In this module, you'll:
 
 - Gain an understanding of the IoT application pattern with edge device
+- Learn how to import an IoT Edge deployment manifest into IoT Central
 - Learn how to create an IoT Edge device template in IoT Central
 - Learn how to deploy a virtual machine preconfigured with IoT Edge
 - Learn how to manage an IoT Edge device from IoT Central
