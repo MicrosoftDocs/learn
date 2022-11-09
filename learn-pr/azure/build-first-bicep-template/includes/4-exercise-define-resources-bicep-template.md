@@ -47,7 +47,7 @@ During the process, you'll:
 
 ### Deploy the template to Azure
 
-Run the following command from the terminal in Visual Studio Code to deploy the Bicep template to Azure. The command can take a minute or two to complete, and then you'll see a successful deployment. If you see a warning about the location being hard-coded, don't worry; it's safe to proceed, and the deployment will succeed.
+Run the following command from the terminal in Visual Studio Code to deploy the Bicep template to Azure. The command can take a minute or two to complete, and then you'll see a successful deployment. If you see a warning about the location being hard-coded, you can ignore it. You'll fix the location later in the module. It's safe to proceed and the deployment will succeed.
 
 ```azurecli
 az deployment group create --template-file main.bicep
@@ -63,7 +63,7 @@ You'll see `Running...` in the terminal.
 
 ### Deploy the template to Azure
 
-Deploy the template to Azure by using the following Azure PowerShell command in the terminal. The command can take a minute or two to complete, and you'll see a successful deployment. If you see a warning about the location being hard-coded, don't worry; it's safe to proceed, and the deployment will succeed.
+Deploy the template to Azure by using the following Azure PowerShell command in the terminal. The command can take a minute or two to complete, and you'll see a successful deployment. If you see a warning about the location being hard-coded, you can ignore it. You'll fix the location later in the module. It's safe to proceed and the deployment will succeed.
 
 ```azurepowershell
 New-AzResourceGroupDeployment -TemplateFile main.bicep
@@ -122,7 +122,7 @@ Get-AzResourceGroupDeployment -ResourceGroupName <rgn>[sandbox resource group na
 
 In the previous task, you learned how to create a template that contains a single resource and deploy it. Now you're ready to deploy more resources, including a dependency. In this task, you add an App Service plan and app to the Bicep template.
 
-1. In the *main.bicep* file in Visual Studio Code, add the following code to the bottom of the file:
+1. In the _main.bicep_ file in Visual Studio Code, add the following code to the bottom of the file:
 
    :::code language="bicep" source="code/4-template.bicep" range="13-29":::
 
