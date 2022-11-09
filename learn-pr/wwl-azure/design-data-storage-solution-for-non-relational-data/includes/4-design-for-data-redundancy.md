@@ -4,7 +4,7 @@ Azure Storage always stores multiple copies of your Tailwind Traders data. This 
 
 Review the following characteristics of data redundancy in Azure Storage.
 
-- Redundancy is achieved by replicating data to a secondary region.
+- Redundancy is achieved by replicating data to a primary region.
 
 - When you create a storage account, you select the primary region for the account. 
 
