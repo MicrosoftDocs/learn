@@ -17,9 +17,9 @@ Azure Active Directory Identity Protection includes three default policies that 
 :::image type="content" source="../media/az500-identity-protection-2455a26b.png" alt-text="Screenshot of the three policies described in the content.":::
 
 
-## Azure MFA registration policy
+## Azure Multi-Factor Authentication registration policy
 
-Identity Protection can help organizations roll out Azure Multi-Factor Authentication (MFA) using a Conditional Access policy requiring registration at sign-in. Enabling this policy is a great way to ensure new users in your organization have registered for MFA on their first day. Multi-factor authentication is one of the self-remediation methods for risk events within Identity Protection. Self-remediation allows your users to act on their own to reduce helpdesk call volume.
+Identity Protection can help organizations roll out Azure Multi-Factor Authentication using a Conditional Access policy requiring registration at sign-in. Enabling this policy is a great way to ensure new users in your organization have registered for MFA on their first day. Multi-factor authentication is one of the self-remediation methods for risk events within Identity Protection. Self-remediation allows your users to act on their own to reduce helpdesk call volume.
 
 ## Sign-in risk policy
 
@@ -29,4 +29,4 @@ If risk is detected, users can perform multi-factor authentication to self-remed
 
 ## Custom Conditional Access policy
 
-Administrators can also choose to create a custom Conditional Access policy including sign-in risk as an assignment condition.
+Administrators can also choose to create a custom Conditional Access policy, including sign-in risk as an assignment condition.

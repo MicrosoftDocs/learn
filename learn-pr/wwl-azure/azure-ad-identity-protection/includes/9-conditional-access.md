@@ -2,7 +2,7 @@ The old world of security behind a corporate firewall, having your secure networ
 
 For an interactive overview of how to Configure Conditional Access in Azure AD, click the start button in the image below.
 
-[:::image type="content" source="../media/configure-conditional-access-in-azure-ad-2022-9f7d8f24.png" alt-text="Cover for an interactive guide that reads Configure Conditional Access in Azure AD.":::
+[:::image type="content" source="../media/configure-conditional-access-in-azure-ad-2022-9f7d8f24.png" alt-text="Screenshot of the Interactive Guide for Configure Conditional Access in Azure Active Directory":::
 ](https://mslearn.cloudguides.com/en-us/guides/Configure%20Conditional%20Access%20in%20Azure%20AD)
 
 Conditional Access is the tool used by Azure Active Directory to bring signals together, to make decisions, and enforce organizational policies.
