@@ -19,7 +19,7 @@ When you evaluate existing corporate policies to apply them to the cloud or to a
 - How is this process enforced? How often should the policy be reviewed for applicability?
 - For technology-focused processes, does this policy add risk by creating a dependency on a specific technology solution or technology vendor?
 
-As you'll see in the next unit, the Tailwind Traders policy on protected data fails to answer these questions. Some of them might be addressed elsewhere, like in policy handbooks, but the final technology-focused question is an undeniable miss. Instead of mitigating risk, it actually introduces long-term risks by locking in a single solution.
+As you'll learn in the next unit, the Tailwind Traders policy on protected data fails to answer these questions. Some of them might be addressed elsewhere, like in policy handbooks, but the final technology-focused question is an undeniable miss. Instead of mitigating risk, it actually introduces long-term risks by locking in a single solution.
 
 ## Define corporate policy
 
@@ -37,10 +37,10 @@ During cloud adoption, you'll encounter various risks. Here are some examples of
 
 - During early experimentation, a few assets with little to no relevant data are deployed. The risk is small.
 - When the first workload is deployed, risk increases a little. This risk is easily remediated by choosing an inherently low-risk application that has a small user base.
-- As more workloads come online, risks change at each release. New applications go live and risks change.
+- As more workloads come online, risks change at each release. New applications go live, and risks change.
 - When a company brings the first 10 or 20 applications online, the risk profile is much different than when the thousandth application goes into production in the cloud.
 
-Risk is relative. A small company with a few IT assets in a building that's offline has little risk. Add users and an internet connection with access to those assets and the risk intensifies. When that small company grows to Fortune 500 status, the risks are exponentially greater. As revenue, business processes, employee counts, and IT assets accumulate, risks increase and coalesce. IT assets that help generate revenue are at tangible risk of stopping that revenue stream if an outage occurs. Every moment of downtime equates to loss. Likewise, as data accumulates, the risk of harm to customers grows.
+Risk is relative. A small company with a few IT assets in a building that's offline has little risk. Add users and an internet connection with access to those assets, and the risk intensifies. When that small company grows to Fortune 500 status, the risks are exponentially greater. As revenue, business processes, employee counts, and IT assets accumulate, risks increase and coalesce. IT assets that help generate revenue are at tangible risk of stopping that revenue stream if an outage occurs. Every moment of downtime equates to loss. Likewise, as data accumulates, the risk of harm to customers grows.
 
 According to the outline from the Tailwind Traders customer narrative unit, here are the risks the Tailwind CIO is most concerned about:
 
@@ -52,7 +52,7 @@ According to the outline from the Tailwind Traders customer narrative unit, here
 
 It's important to note that none of the concerns are related to "a specific network segment of the existing datacenters," as cited in Tailwind's current policy. To create sound governance policies that scale to the cloud, we need to dig a bit deeper and look at the tangible risks that are captured in the current policy versus the current-state solution.
 
-Deeper investigation of stakeholder concerns and the cloud-adoption plan likely will show more risks that the organization can't tolerate. But for now, we have enough to start shaping governance policies that address these tangible risks.
+Deeper investigation of stakeholder concerns and the cloud-adoption plan likely will show more risks that the organization can't tolerate, but for now, we have enough to start shaping governance policies that address these tangible risks.
 
 ## Policy and compliance
 
@@ -60,11 +60,11 @@ Corporate policies establish the requirements, standards, and goals that your IT
 
 - **Avoid overspending**: Cloud deployments involve a risk for overspending, especially for self-service deployments. Any deployment must be allocated to a billing unit, with an approved budget and with a mechanism for applying budgetary limits.
 
-  **Design consideration:** In Azure, budget can be controlled with [Microsoft](/azure/cost-management-billing/). [Azure Advisor](/azure/advisor/advisor-cost-recommendations?azure-portal=true) can provide optimization recommendations to reduce spending per asset.
+  *Design consideration:* In Azure, you can control budget with [Microsoft](/azure/cost-management-billing/). [Azure Advisor](/azure/advisor/advisor-cost-recommendations?azure-portal=true) can provide optimization recommendations to reduce spending per asset.
 
 - **Secure sensitive data**: Assets that interact with sensitive data might not receive sufficient protections, leading to potential data leaks or business disruptions. All assets that interact with sensitive data must be identified and reviewed by the security team to ensure that proper levels of protection are in place.
 
-  *Design consideration*: In Azure, all deployed assets must be tagged with proper data classification levels. Classifications must be reviewed by the cloud governance team and the application owner before deployment to the cloud.
+  *Design consideration*: In Azure, all deployed assets must be tagged with proper data-classification levels. Classifications must be reviewed by the cloud governance team and the application owner before deployment to the cloud.
 
 ## Process
 
