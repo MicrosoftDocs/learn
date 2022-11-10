@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "SECURITY.md"
       isCorrect: true
-      explanation: "The SECURITY.md file is the primary document for communicating security information , which is a Markdown file present in a repository's root, docs, or .github folder."
+      explanation: "The SECURITY.md file is the primary document for communicating security information, which is a Markdown file present in a repository's root, docs, or .github folder."
     - content: "CONTRIBUTING.md"
       isCorrect: false
       explanation: "GitHub supports other types of community health documentation that a user may add at the organization level or in their user account"
@@ -32,13 +32,13 @@ quiz:
       explanation: "Documentation and advisories require the most significant manual interaction, but applying Dependabot to your code base automates parts of the security process, up to and including updating dependencies."
     - content: "Add access restrictions to your enterprise"
       isCorrect: false
-      explanation: "Access restrictions, security documentation, advisories are available for all repositories, but do not automate your security process"
+      explanation: "Access restrictions, security documentation, advisories are available for all repositories, but don't automate your security process"
     - content: "Create security documentation"
       isCorrect: false
-      explanation: "Access restrictions, security documentation, advisories are available for all repositories, but do not automate your security process"
+      explanation: "Access restrictions, security documentation, advisories are available for all repositories, but don't automate your security process"
     - content: "Add advisories for your users"
       isCorrect: false
-      explanation: "Access restrictions, security documentation, advisories are available for all repositories, but do not automate your security process"
+      explanation: "Access restrictions, security documentation, advisories are available for all repositories, but don't automate your security process"
   - content: "Which two pieces of information should be included in a security advisory?"
     choices:
     - content: "Product affected and severity"
