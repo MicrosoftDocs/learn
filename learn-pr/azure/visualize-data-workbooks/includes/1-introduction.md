@@ -1,4 +1,4 @@
-Azure Monitor Workbooks help you combine data from multiple data sources to build interactive visual reports for data analysis and reporting.
+Azure Workbooks help you combine data from multiple data sources to build interactive visual reports for data analysis and reporting.
 
 :::image type="content" source="../media/1-intro-visualizations.png" alt-text="Screenshot showing an Azure Workbook with different visualizations such as honeycomb and bar charts.":::
 # Example scenario
