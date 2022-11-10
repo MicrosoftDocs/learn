@@ -77,7 +77,7 @@ quiz:
     - content: "None of the above"
       isCorrect: false
       explanation: "There is a right answer above."
-  - content: "What would happen if we change the goal “Move to center” by "Avoid the center":"
+  - content: "What would happen if we change the goal “Move to center” by “Avoid the center”:"
     choices:
     - content: "It is an impossible task to learn, the brain will not converge."
       isCorrect: false

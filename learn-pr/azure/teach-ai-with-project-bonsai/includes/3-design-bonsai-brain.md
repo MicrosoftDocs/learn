@@ -1,18 +1,18 @@
-In this module, you will train an AI brain to balance a ball in the center of a plate with Project Bonsai. You will teach AI to learn how to adjust the plate pitch and roll to balance a ball.
+In this module, you'll train an AI brain to balance a ball in the center of a plate with Project Bonsai. You'll teach AI to learn how to adjust the plate pitch and roll to balance a ball.
 
-You will use the following in creating the solution:
+You'll use the following in creating the solution:
 
 - **AI Spec document**: It includes the definition of the concept, environment states, control actions, goals, and simulator configurations for your machine teaching problem.
 
 - **Project Bonsai**: Low-code AI development platform for intelligent control systems.
 
-- **Bonsai workspace**: It is a resource group that is provisioned on Azure to store exported brains and upload the simulators. The workspace links to the Bonsai site where brain training and evaluation happens.
+- **Bonsai workspace**: It's a resource group that is provisioned on Azure to store exported brains and upload the simulators. The workspace links to the Bonsai site where brain training and evaluation happens.
 
-- **Moab sample**: It is a prepackaged sample code for the ball balancing problem provided by Project Bonsai.
+- **Moab sample**: It's a prepackaged sample code for the ball balancing problem provided by Project Bonsai.
 
-- **Visual Authoring**: Included in the Bonsai platform, it allows engineers who do not have developer skills to easily transfer the knowledge of the AI-Spec document into the Bonsai platform. A brain diagram is used to represent the inputs/outputs of the model, as well as any machine teaching strategies introduced as part of the training paradigm.
+- **Visual Authoring**: Included in the Bonsai platform, it allows engineers who don't have developer skills to easily transfer the knowledge of the AI-Spec document into the Bonsai platform. A brain diagram is used to represent the inputs/outputs of the model, as well as any machine teaching strategies introduced as part of the training paradigm.
 
-- **Inkling editor**: The inkling editor represents the code-only version of Visual Authoring. It also allows you to define the problem inputs/outputs and machine teaching strategies such as a lesson or problem decomposition. Inkling is a proprietary machine teaching language that let you focus on what you want to teach without worrying about the underlying RL training details. To define your training curriculum, you can switch between the Visual Authoring (brain diagram) and the Inkling Editor (brain specification).
+- **Inkling editor**: The inkling editor represents the code-only version of Visual Authoring. It also allows you to define the problem inputs/outputs and machine teaching strategies such as a lesson or problem decomposition. Inkling is a proprietary machine teaching language that lets you focus on what you want to teach without worrying about the underlying RL training details. To define your training curriculum, you can switch between the Visual Authoring (brain diagram) and the Inkling Editor (brain specification).
 
 - **Bonsai brain**: High-level AI model built by combining techniques in deep reinforcement learning (DRL), simulations, and machine teaching. It can easily be trained, assessed, and exported for industrial deployment.
 
