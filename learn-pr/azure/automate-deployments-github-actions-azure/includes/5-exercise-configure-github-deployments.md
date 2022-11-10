@@ -1,12 +1,12 @@
 GitHub Actions are useful for maintaining CI/CD with your applications.
 
-Here, you'll leverage GitHub Actions to configure and deploy the services you deployed in the previous exercise. You'll build out the entire solution for catching the bus and monitor it in action.
+Here, you'll use GitHub Actions to configure and deploy the services you deployed in the previous exercise. You'll build out the entire solution for catching the bus and monitor it in action.
 
 ## Deploy database schema using GitHub Actions
 
 1. In a text file, notepad, or on paper, determine the connection string for your Azure SQL Database. It will be something like `Server=<server-name>.database.windows.net,1433;Initial Catalog=bus-db;User Id=cloudadmin;Password=<your-password>;Connection Timeout=30;`
 
-1. Navigate to your repository for this module on GitHub (make sure you are signed in). It will be something like `https://github.com/<your-git-username>/serverless-full-stack-apps-azure-sql`.
+1. Navigate to your repository for this module on GitHub (make sure you're signed in). It will be something like `https://github.com/<your-git-username>/serverless-full-stack-apps-azure-sql`.
 
 1. Select **Settings** for the repository.
 
@@ -14,7 +14,7 @@ Here, you'll leverage GitHub Actions to configure and deploy the services you de
     1. *Name*: **AZURE_SQL_CONNECTION_STRING**
     1. *Value*: **Connection string from prior step**
 
-1. Next, you must configure the yaml file. In Visual Studio Code, select **Explorer** icon on the left-hand taskbar to view the repository files. If you do not see them, select **File** > **Open folder** and navigate to the location where you cloned the repository.
+1. Next, you must configure the yaml file. In Visual Studio Code, select **Explorer** icon on the left-hand taskbar to view the repository files. If you don't see them, select **File** > **Open folder** and navigate to the location where you cloned the repository.
 
 1. Under the folder `.github\workflows`, rename **`azuresqldatabase.yml.template`** to **`azuresqldatabase.yml`**.
 
@@ -91,7 +91,7 @@ Next, to publish the function to the Azure Function app you deployed in the prev
 
 3. In the **Overview** tab, select **Get publish profile** to download the publish profile for your function.
 
-4. Navigate to your GitHub repository for this sample and select **Settings** > **Secrets** > **New repository secret**.
+4. Navigate to your GitHub repository for this sample and select **Settings** > **Secrets** > **Actions** > **New repository secret**.
 
 5. Name the secret **AZURE_FUNCTIONAPP_PUBLISH_PROFILE** and for the *Value*, copy and paste the contents from the publish profile you downloaded.
 
@@ -178,7 +178,7 @@ Before you can configure the application settings for Azure Static Web Apps, you
 
 In order for your Azure Static Web App to access your Azure SQL Database, you must configure an application setting, which contains the Azure SQL Database connection string that works with the language you chose in and earlier exercise (.NET, Python, or Node.js).
 
-1. In a text file, determine the connection string that you will need to be able to connect to your Azure SQL Database. The format should be as follows:
+1. In a text file, determine the connection string that you'll need to be able to connect to your Azure SQL Database. The format should be as follows:
 
 ::: zone pivot="python"
 

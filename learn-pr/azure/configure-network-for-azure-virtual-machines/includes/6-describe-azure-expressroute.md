@@ -16,7 +16,7 @@ Advantages that ExpressRoute provides include:
 
 - Highly secure
 
-ExpressRoute brings a number of further benefits, such as:
+ExpressRoute brings more benefits, such as:
 
 - Connectivity to all supported Azure services
 
@@ -89,12 +89,12 @@ Microsoft peering supports connections to cloud-based SaaS offerings, such as Mi
 
 ### ExpressRoute health
 
-As with most features in Microsoft Azure, you can monitor ExpressRoute connections to ensure that they are performing satisfactorily. Monitoring includes coverage of the following areas:
+As with most features in Microsoft Azure, you can monitor ExpressRoute connections to ensure that they're performing satisfactorily. Monitoring includes coverage of the following areas:
 
 - Availability
 - Connectivity to virtual networks
 - Bandwidth utilization
 
-The key tool for this monitoring activity is Network Performance Monitor, particularly NPM for ExpressRoute.
+The key tool for this monitoring activity is Network Performance Monitor, particularly for ExpressRoute.
 
 Azure ExpressRoute is used to create private connections between Azure datacenters and infrastructure on your premises or in a colocation environment. ExpressRoute connections don't go over the public internet, and they offer more reliability, faster speeds, and lower latencies than typical internet connections.

@@ -4,8 +4,11 @@ metadata:
   title: Use an event flags group to sync threads in ThreadX
   description: Learn how to use an event flags group to sync threads in Azure RTOS ThreadX.
   ms.date: 01/27/2022
-  author: EdLamie
-  ms.author: liydu
+  author: timlt
+  ms.author: timlt
+  ms.reviewer: liydu
+  manager: lizross
+  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use an event flags group to sync threads in ThreadX
@@ -17,18 +20,16 @@ abstract:  |
   - Use the Get service to retrieve events from an event flags group.
   - Design and debug the ThreadX solution using a hands-on approach with GitHub Codespace or Visual Studio.
 prerequisites: |
-  - [Set up your environment](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true)
+  - [Set up your environment](/training/modules/introduction-azure-rtos/2-set-up-environment)
   - Working knowledge of C or C++, GitHub and Visual Studio
-  - Previous modules in this [learning path](https://docs.microsoft.com/learn/paths/azure-rtos-threadx/?azure-portal=true)
-iconUrl: /learn/achievements/iot/threadx-event-flags-group-sync-threads.svg
+  - Previous modules in this [learning path](/training/paths/azure-rtos-threadx)
+iconUrl: /training/achievements/iot/threadx-event-flags-group-sync-threads.svg
 levels:
 - beginner
 roles:
 - developer
 products:
-- azure
 - azure-iot
-- azure-iot-hub
 - azure-rtos
 subjects:
 - iot

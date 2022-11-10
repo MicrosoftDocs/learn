@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 When it comes to storing data locally on your device, there are multiple storage options you can choose from.
 
 In this unit, you'll look at three different storage options and learn when to use each.

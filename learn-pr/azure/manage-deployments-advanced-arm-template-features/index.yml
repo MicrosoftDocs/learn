@@ -17,7 +17,7 @@ abstract: |
   - Securely assign secrets like passwords to resources in your templates by using Azure Key Vault and your ARM template.
   - Conditionally deploy resources by using the `condition` construct and parameters at deployment time.
   - Deploy multiple resources of the same type by using the `copy` construct to reduce repetitive configuration. 
-iconUrl: /learn/achievements/manage-deployments-advanced-arm-template-features.svg
+iconUrl: /training/achievements/manage-deployments-advanced-arm-template-features.svg
 levels:
   - intermediate
 roles:

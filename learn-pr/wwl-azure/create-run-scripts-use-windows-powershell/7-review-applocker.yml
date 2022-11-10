@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-run-scripts-use-windows-powershell.review-applocker
+title: Review Windows PowerShell and AppLocker
+metadata:
+  title: Review Windows PowerShell and AppLocker
+  description: "Review Windows PowerShell and AppLocker"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-review-applocker.md)]

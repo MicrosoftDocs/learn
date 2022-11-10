@@ -9,7 +9,6 @@ Understanding device configuration best practices can be instrumental to the suc
 The following are best practices for hardware manufacturers and integrators dealing with embedded software development:
 
  -  Implement device twins: Device twins enable synchronizing desired configuration from the cloud and for reporting current configuration and device properties. The best way to implement device twins within embedded applications is through the Azure IoT SDKs. Device twins are best suited for configuration because they:
-    
      -  Support bi-directional communication.
      -  Allow for both connected and disconnected device states.
      -  Follow the principle of eventual consistency.

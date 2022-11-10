@@ -42,6 +42,6 @@ To restrict an application from running, a code integrity policy is applied that
 
 You’ll be able to reverse the restriction of applications from running at any time. The button on the device page will change to say Remove app restrictions, and then you take the same steps as restricting app execution.
 
-Once you have selected Restrict app execution on the device page, type a comment and select Confirm. The Action center will show the scan information, and the device timeline will include a new event.
+Once you've selected Restrict app execution on the device page, type a comment and select Confirm. The Action center will show the scan information, and the device timeline will include a new event.
 
 When an app is restricted, a notification is displayed to inform the user that an app is being restricted from running.

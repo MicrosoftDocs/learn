@@ -21,7 +21,7 @@ For the `sub` function, write the following documentation tests:
 /// assert_eq!(result, 2);
 /// ```
 ///
-/// # Example #2: 6 / 2 = 3
+/// # Example #2: 6 / 3 = 2
 ///
 /// ```
 /// TODO: Write this doctest!

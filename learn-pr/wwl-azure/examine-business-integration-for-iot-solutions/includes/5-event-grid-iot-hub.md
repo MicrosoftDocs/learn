@@ -2,7 +2,7 @@ Azure IoT Hub integrates with Azure Event Grid so that you can send event notifi
 
 ## Regional availability
 
-The Event Grid integration is available for IoT hubs located in the regions where Event Grid is supported. For the latest list of regions, see [https://docs.microsoft.com/azure/event-grid/overview](/azure/event-grid/overview).
+The Event Grid integration is available for IoT hubs located in the regions where Event Grid is supported. For the latest list of regions, see [What is Azure Event Grid?](/azure/event-grid/overview).
 
 ## Event types
 
@@ -58,7 +58,7 @@ IoT Hub publishes the following event types:
 :::row-end:::
 
 
-Use either the Azure portal or Azure CLI to configure which events to publish from each IoT hub. You can find an example of Event Grid integration in the tutorial located at [https://docs.microsoft.com/azure/event-grid/publish-iot-hub-events-to-logic-apps](/azure/event-grid/publish-iot-hub-events-to-logic-apps).
+Use either the Azure portal or Azure CLI to configure which events to publish from each IoT hub. You can find an example of Event Grid integration in the tutorial located at [Tutorial: Send email notifications about Azure IoT Hub events using Event Grid and Logic Apps](/azure/event-grid/publish-iot-hub-events-to-logic-apps).
 
 ## Event schema
 
@@ -94,7 +94,7 @@ The following example shows the schema of a device connected event:
 
 Device telemetry message must be in a valid JSON format with the `contentType` set to **application/json** and `contentEncoding` set to **UTF-8** in the message system properties. Both of these properties are case insensitive. If the content encoding is not set, then IoT Hub will write the messages in base 64 encoded format.
 
-You can enrich device telemetry events before they are published to Event Grid by selecting the endpoint as Event Grid. For more information on message enrichment, see [https://docs.microsoft.com/azure/iot-hub/iot-hub-message-enrichments-overview](/azure/iot-hub/iot-hub-message-enrichments-overview).
+You can enrich device telemetry events before they are published to Event Grid by selecting the endpoint as Event Grid. For more information on message enrichment, see [Message enrichments for device-to-cloud IoT Hub messages](/azure/iot-hub/iot-hub-message-enrichments-overview).
 
 The following example shows the schema of a device telemetry event:
 
@@ -182,7 +182,7 @@ The following example shows the schema of a device created event:
 
 ```
 
-For a detailed description of each property, see [https://docs.microsoft.com/azure/event-grid/event-schema-iot-hub](/azure/event-grid/event-schema-iot-hub).
+For a detailed description of each property, see [Azure IoT Hub as an Event Grid source](/azure/event-grid/event-schema-iot-hub).
 
 ## Filter events
 

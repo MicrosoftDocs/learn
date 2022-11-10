@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Apps often need to display a collection of homogenous data and let the user examine the details of each item. Ideally, the user can quickly switch between items in the collection. Contacts and email programs are great examples of this navigation pattern. In our astronomy app, we might want a list of the planets where the user can pick one and see that planet's detailed information.
 
 ## What is master-detail (or split) UI?
@@ -117,7 +119,7 @@ Several steps are required to assemble the master-detail navigation UI. Let's se
 
 1. Choose one of the split options for your master-detail display. For master-detail navigation, `Split` and `SplitOnLandscape` are the most common choices.
 
-    | Split options | Portrait | Landscape |
+    |   | Portrait | Landscape |
     |---|----------|-----------|
     | `Default` | pop-over | split |
     | `Popover` | pop-over | pop-over |

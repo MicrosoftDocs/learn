@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-mysql.exercise-configure-permissions
+title: 'Exercise: Configure permissions in MySQL'
+metadata:
+  title: 'Exercise: Configure permissions in MySQL'
+  description: "Exercise: Configure permissions in MySQL"
+  ms.date: 11/08/2022
+  author: wwlpublish
+  ms.author: caroline
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 20
+content: |
+  [!include[](includes/7-exercise-configure-permissions.md)]

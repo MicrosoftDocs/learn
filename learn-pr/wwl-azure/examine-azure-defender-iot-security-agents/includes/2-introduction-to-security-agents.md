@@ -1,14 +1,14 @@
-Azure Defender for IoT security agents offer enhanced security capabilities, such as monitoring remote connections, active applications, login events, and operating system configuration best practices. Security agents handle raw event collection from the device operating system, event aggregation to reduce cost, and configuration through a device module twin. Security messages are sent through your IoT Hub, into Azure Defender for IoT analytics services.
+Microsoft Defender for IoT uses security agents to offer enhanced security capabilities. For example, security agents can be used to evaluate remote connections, active applications, login events, and operating system configuration best practices. Security agents handle raw event collection from the device operating system, event aggregation to reduce cost, and configuration through a device module twin. Security messages are sent through your IoT Hub, into Microsoft Defender for IoT analytics services.
 
 A reference architecture for Linux and Windows security agents is provided with support for both C\# and C.
 
-You can use the following workflow to deploy and test your Azure Defender for IoT security agents:
+You can use the following workflow to deploy and test your Microsoft Defender for IoT security agents:
 
-1.  Enable Azure Defender for IoT service to your IoT Hub.
+1.  Enable Microsoft Defender for IoT service to your IoT Hub.
 2.  If your IoT Hub has no registered devices, Register a new device.
 3.  Create an azureiotsecurity security module for your devices. To install the agent on an Azure simulated device instead of installing on an actual device, spin up a new Azure Virtual Machine (VM) in an available zone.
-4.  Deploy an Azure Defender for IoT security agent on your IoT device, or new VM.
-5.  Follow the instructions for **trigger\_events** to run a harmless simulation of an attack. The simulated attack provides an opportunity to verify that Azure Defender for IoT alert are triggered as expected.
+4.  Deploy a Microsoft Defender for IoT security agent on your IoT device, or new VM.
+5.  Follow the instructions for **trigger\_events** to run a harmless simulation of an attack. The simulated attack provides an opportunity to verify that Microsoft Defender for IoT alerts are triggered as expected.
 
 ## Understand security agent options
 
@@ -180,7 +180,7 @@ The following list includes all currently supported platforms.
 
 :::row:::
   :::column:::
-    **Azure Defender for IoT agent**
+    **Microsoft Defender for IoT agent**
   :::column-end:::
   :::column:::
     **Operating System**

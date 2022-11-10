@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   * Learners should have an Azure account and be familiar with navigating the Azure portal.
   * Learners should also have experience with Docker and containers.
-iconUrl: /learn/achievements/investigate-container-for-use-with-cognitive-services.svg
+iconUrl: /training/achievements/investigate-container-for-use-with-cognitive-services.svg
 levels:
 - intermediate
 roles:

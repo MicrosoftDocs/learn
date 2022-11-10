@@ -12,7 +12,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 1. Go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps&azure-portal=true), and install the **Azure Static Web Apps** extension for Visual Studio Code.
 
-1. When the extension tab loads in Visual Studio Code, select **Install** on the gear icon in the bottom left-hand side.
+1. When the extension tab loads in Visual Studio Code, select  the **Install** button.
 
 1. After installation is complete, select **Restart to update**.
 
@@ -46,9 +46,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
    > [!NOTE]
    > Azure and GitHub sign-in are required. If you are not already signed in to Azure and GitHub from Visual Studio Code, the extension will prompt you to sign in to both during the creation process.
 
-1. Place your mouse over the _Static Web Apps_ label, and select the **+** (plus sign).
-
-   :::image type="content" source="../media/extension-create-button.png" alt-text="Application name.":::
+1. Place your mouse over the *Static Web Apps* heading, right click, and select **Create Static Web App**.
 
 1. When the command palette opens at the top of the editor, select **Concierge Subscription** and press <kbd>Enter</kbd>.
 

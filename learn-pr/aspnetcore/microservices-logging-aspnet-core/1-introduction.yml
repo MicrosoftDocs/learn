@@ -3,10 +3,10 @@ uid: learn.microservices-logging-aspnet-core.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  author: scottaddie
-  ms.author: scaddie
+  author: camsoper
+  ms.author: casoper
   ms.date: 10/14/2020
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
   ms.topic: interactive-tutorial
 title: Introduction
 durationInMinutes: 1

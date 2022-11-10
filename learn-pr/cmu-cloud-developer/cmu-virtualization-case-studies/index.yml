@@ -30,7 +30,7 @@ prerequisites: |
   - Understand CPU virtualization
   - Understand memory virtualization
   - Understand I/O virtualization
-iconUrl: /learn/achievements/cmu-cloud-developer/virtualization-case-studies.svg
+iconUrl: /training/achievements/cmu-cloud-developer/virtualization-case-studies.svg
 hidden: true
 levels:
 - beginner

@@ -1,19 +1,19 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.execute-queries-azure-cosmos-db-sql-api
 metadata:
-  title: Execute queries in Azure Cosmos DB SQL API
-  description: Execute queries in Azure Cosmos DB SQL API
-  ms.date: 06/03/2022
+  title: Execute queries in Azure Cosmos DB for NoSQL
+  description: Execute queries in Azure Cosmos DB for NoSQL
+  ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Execute queries in Azure Cosmos DB SQL API
+title: Execute queries in Azure Cosmos DB for NoSQL
 prerequisites: |
   Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
 summary: |
-  Create SQL queries for the Azure Cosmos DB SQL API using the Data Explorer and the .NET SDK
-iconUrl: /learn/achievements/azure-cosmos-db-execute-queries.svg
+  Create SQL queries for the Azure Cosmos DB for NoSQL using the Data Explorer and the .NET SDK
+iconUrl: /training/achievements/azure-cosmos-db-execute-queries.svg
 levels:
 - intermediate
 roles:

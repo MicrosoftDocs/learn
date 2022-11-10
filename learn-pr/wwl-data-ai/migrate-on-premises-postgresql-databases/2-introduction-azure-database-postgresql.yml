@@ -4,12 +4,13 @@ title: Introduction to Azure Database for PostgreSQL
 metadata:
   title: Introduction to Azure Database for PostgreSQL
   description: "Introduction to Azure Database for PostgreSQL"
-  ms.date: 01/18/2021
+  ms.date: 10/14/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 19
 content: |
   [!include[](includes/2-introduction-azure-database-postgresql.md)]

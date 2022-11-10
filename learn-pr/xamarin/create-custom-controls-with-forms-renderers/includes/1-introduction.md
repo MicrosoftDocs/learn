@@ -1,4 +1,4 @@
-[!include[](../../includes/dotnet-maui-note.md)]
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Renderers are a key part of how every control in Xamarin.Forms works, enabling Xamarin.Forms to display user-interface elements on all platforms. All the built-in controls already have renderers. We can customize these renderers if we need to change the out-of-the-box behavior. We can also create custom controls in Xamarin.Forms by creating new renderers.
 

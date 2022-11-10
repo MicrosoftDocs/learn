@@ -15,7 +15,7 @@ The VM size you choose when you create your VM determines how many resources it 
 
 As mentioned previously, some VM sizes support only Standard storage drives, which limits the I/O performance.
 
-If you find that you need more storage than what your VM size allows for, you can change the VM size. We'll cover that topic in the [Introduction to Azure Virtual Machines](/learn/modules/intro-to-azure-virtual-machines?azure-portal=true) module.
+If you find that you need more storage than what your VM size allows for, you can change the VM size. We'll cover that topic in the [Introduction to Azure Virtual Machines](/training/modules/intro-to-azure-virtual-machines?azure-portal=true) module.
 
 ## Expand a disk using the Azure CLI
 

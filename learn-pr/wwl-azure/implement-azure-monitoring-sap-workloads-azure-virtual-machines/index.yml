@@ -18,7 +18,7 @@ abstract: |
   - Navigate the Log Analytics interface in Azure Monitor.
 prerequisites: |
   Knowledge of Azure virtual machine creation, administration, and maintenance. Basic knowledge of operational concepts, such as monitoring, logging, and alerts. Familiarity with querying datasets to filter and extract information
-iconUrl: /learn/achievements/azure-monitoring-sap-workloads.svg
+iconUrl: /training/achievements/azure-monitoring-sap-workloads.svg
 levels:
 - intermediate
 roles:

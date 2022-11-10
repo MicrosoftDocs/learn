@@ -6,15 +6,15 @@ In this unit, you'll explore how to use domain names in Azure AD and how subdoma
 
 ## What are custom domain names in Azure?
 
-When you create an Azure subscription, you specify a default domain for your organization. The domain is in the format *something*.onmicrosoft.com. An example is contoso.onmicrosoft.com.
+When you create an Azure subscription, you'll specify a default domain for your organization. The domain is in the format *something*.onmicrosoft.com. An example is *contoso.onmicrosoft.com*.
 
 ![Screenshot of example domain name under Azure Active Directory > Custom domain names in the Azure portal.](../media/2-add-a-custom-domain.png)
 
 Azure provides the default domain name onmicrosoft.com to all Azure AD organizations. You're free to use it in your organization to create users and grant them access to resources. If your company chooses this approach, your users sign in with *username*@*something*.onmicrosoft.com.
 
-You can associate a domain name that your company owns with Azure AD to make the sign-in names more memorable and identifiable for your organization. In Azure AD, you add your domain name as a custom domain name. For our scenario, let's say your company owns proseware.com. If you add that domain name as a custom domain in Azure AD, your users sign in with names in the format *username*@proseware.com.
+You can associate a domain name that your company owns with Azure AD to make the sign-in names more memorable and identifiable for your organization. In Azure AD, you can add your domain name as a custom domain name. For our scenario, let's say your company owns proseware.com. If you add that domain name as a custom domain in Azure AD, your users will sign in with names in the format *username*@proseware.com.
 
-After users sign in, Azure AD's access management features control their access to external Microsoft services. Such services include Microsoft 365 and the Azure portal. With Azure AD, users can also access your company's internal resources like intranets and cloud apps developed in-house.
+After users sign in, Azure AD's access-management features control their access to external Microsoft services. Such services include Microsoft 365 and the Azure portal. With Azure AD, users can also access your company's internal resources, like intranets and cloud apps developed in-house.
 
 ## Buy a domain name
 
@@ -41,4 +41,4 @@ Your domain name would be useless without the Domain Name System (DNS). This dis
 - Name servers by using NS records.
 - Proof of ownership by using TXT records.
 
-You can manage DNS records with the company that sold you the domain name. Or you can switch the DNS provider by changing the name server associated with your domain. If you'd like to centralize DNS management with your other infrastructure, take a look at Azure DNS.
+You can manage DNS records with the company that sold you the domain name, or you can switch the DNS provider by changing the name server associated with your domain. If you'd like to centralize DNS management with your other infrastructure, take a look at Azure DNS.

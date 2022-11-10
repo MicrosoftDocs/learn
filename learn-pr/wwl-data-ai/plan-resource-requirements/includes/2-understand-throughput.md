@@ -1,6 +1,6 @@
-Referring to our basic hierarchy of resources, an Azure Cosmos DB SQL API database is a unit of management for a set of schema-agnostic containers. Each container is a unit of scalability for both **throughput** and **storage**.
+Referring to our basic hierarchy of resources, an Azure Cosmos DB for NoSQL database is a unit of management for a set of schema-agnostic containers. Each container is a unit of scalability for both **throughput** and **storage**.
 
-Containers are partitioned horizontally across compute within an Azure region and distributed across all Azure Regions you configure in your Azure Cosmos DB SQL API account.
+Containers are partitioned horizontally across compute within an Azure region and distributed across all Azure Regions you configure in your Azure Cosmos DB for NoSQL account.
 
 When configuring Azure Cosmos DB, you can provision throughput at either or both the database and container levels.
 

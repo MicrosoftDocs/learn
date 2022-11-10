@@ -14,14 +14,14 @@ The Content Moderator service can be accessed through REST or by using the appro
 
 You can call a single method in the API, **ModerateText**, to scan text in a file. You specify the input file and an output file in the method call. The service will scan the text in the file and return the results in the output file. The API will return a JSON formatted result back to the calling application. Using a sample text input of:
 
-"Is this a crap email abcdef@abcd.com, phone: 6657789887, IP: 255.255.255.255, 1 Microsoft Way, Redmond, WA 98052"
+"Is this a janky email abcdef@abcd.com, phone: 6657789887, IP: 255.255.255.255, 1 Microsoft Way, Redmond, WA 98052"
 
 The service will identify some personal data (email, phone, IP, and address). It will also classify the text with a review recommendation.
 
 ```json
 {
-  "OriginalText": "Is this a crap email abcdef@abcd.com, phone: 6657789887, IP: 255.255.255.255, 1 Microsoft Way, Redmond, WA 98052",
-  "NormalizedText": "   crap email abcdef@abcd.com, phone: 6657789887, IP: 255.255.255.255, 1 Microsoft Way, Redmond, WA 98052",
+  "OriginalText": "Is this a janky email abcdef@abcd.com, phone: 6657789887, IP: 255.255.255.255, 1 Microsoft Way, Redmond, WA 98052",
+  "NormalizedText": "   janky email abcdef@abcd.com, phone: 6657789887, IP: 255.255.255.255, 1 Microsoft Way, Redmond, WA 98052",
   "Misrepresentation": null,
   "PII": {
     "Email": [{
@@ -63,7 +63,7 @@ The service will identify some personal data (email, phone, IP, and address). It
     "Index": 3,
     "OriginalIndex": 10,
     "ListId": 0,
-    "Term": "crap"
+    "Term": "janky"
   }],
   "Status": {
     "Code": 3000,

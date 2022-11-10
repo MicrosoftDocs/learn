@@ -19,7 +19,7 @@ prerequisites: |
   - Familiarity with Azure Virtual Machines
   - Basic understanding of Azure Monitor
   - (Optional) Access to an Azure subscription
-iconUrl: /learn/achievements/troubleshoot-inbound-connectivity-azure-load-balancer.svg
+iconUrl: /training/achievements/troubleshoot-inbound-connectivity-azure-load-balancer.svg
 levels:
 - beginner
 roles:

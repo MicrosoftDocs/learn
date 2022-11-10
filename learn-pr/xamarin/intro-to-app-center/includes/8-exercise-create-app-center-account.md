@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 To get started using Visual Studio App Center, you'll need an App Center account. By following the steps in this exercise, you'll create an App Center account and explore some of the features offered by the App Center portal.
 
 ## Navigate to App Center

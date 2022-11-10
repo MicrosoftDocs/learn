@@ -9,16 +9,16 @@ When reviewing the assessments, you will see a dashboard view similar to the one
 :::image type="content" source="../media/azure-security-benchmark.png" alt-text="Screenshot of the Defender for Cloud dashboard.":::
 
 1. Select a tab for a compliance standard that is relevant to you.
-1. Then you'll see which subscriptions the standard is applied on.
-1. You will also see the list of all controls for that standard.
-1. For the applicable controls, you can view the details of passing and failing assessments associated with that control
-1. You also see the number resources of affected by that assessment.
+1. View which subscriptions the standard is applied on.
+1. See the list of all controls for that standard.
+1. For the applicable controls, you can view the details of passing and failing assessments associated with that control.
+1. You also see the number of resources affected by that assessment.
 
 Some controls are greyed out. These controls don't have any Defender for Cloud assessments associated with them. Check their requirements and assess them in your environment. Some of these might be process-related and not technical.
 
 Use the regulatory compliance dashboard to help focus your attention on the gaps in compliance with your chosen standards and regulations.
 
-Let's consider a scenario where Contoso security admin needs to ensure their SQL Databases workloads are compliant with PCI DSS 3.2.1. When reviewing the dashboard, he sees a recommendation not to store sensitive authentication information after authorization:
+Let's consider a scenario where a Contoso security admin needs to ensure their SQL Database workloads are compliant with PCI DSS 3.2.1. When reviewing the dashboard, he sees a recommendation not to store sensitive authentication information after authorization:
 
 :::image type="content" source="../media/azure-security-benchmark-1.png" alt-text="Screenshot showing non compliant items on the dashboard.":::
 

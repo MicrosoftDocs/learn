@@ -48,7 +48,7 @@ You're now ready to join session two! :-)
 
 ## Resources
 
-- Microsoft Learn Module: [Provision an Azure SQL Database](/learn/modules/provision-azure-sql-db/)
+- Learn module: [Provision an Azure SQL Database](/training/modules/provision-azure-sql-db/)
 - Data Migration Assistant app: [aka.ms/datamigrationassistant](https://aka.ms/datamigrationassistant)
 - Azure Data Studio app: [Azure Data Studio](/sql/azure-data-studio/what-is?view=sql-server-2017)
 - SQL Database features overview: [aka.ms/sql-database-features](/azure/azure-sql/database/features-comparison)

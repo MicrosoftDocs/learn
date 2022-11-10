@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/20/2022
+  ms.date: 08/04/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -49,13 +49,13 @@ quiz:
       explanation: "Incorrect. Replicate distribution will result in a copy of the table on each compute node, which is not optimal for a large table."
   - content: "You need to write a query to return the total of the `UnitsProduced` numeric measure in the `FactProduction` table aggregated by the `ProductName` attribute in the `FactProduct` table. Both tables include a `ProductKey` surrogate key field. What should you do?"
     choices:
-    - content: "Use two `SELECT` queries with a `UNION ALL` clause to combine the rows in the `FactProduction` table with those in the `DimProduct` table."
+    - content: "Use two `SELECT` queries with a `UNION ALL` clause to combine the rows in the `FactProduction` table with those in the `FactProduct` table."
       isCorrect: false
       explanation: "Incorrect. A `UNION ALL` query returns a result set containing rows from both tables."
-    - content: "Use a `SELECT` query against the `FactProduction` table with a `WHERE` clause to filter out rows with a `ProductKey` that doesn't exist in the `DimProduct` table."
+    - content: "Use a `SELECT` query against the `FactProduction` table with a `WHERE` clause to filter out rows with a `ProductKey` that doesn't exist in the `FactProduct` table."
       isCorrect: false
       explanation: "Incorrect. This query would return all rows in the `FactProduction` table (assuming all production measures are related to a product)."
-    - content: "Use a `SELECT` query with a `SUM` function to total the `UnitsProduced` metric, using a `JOIN` on the `ProductKey` surrogate key to match the `FactProduction` records to the `DimProduct` records and a `GROUP BY` clause to aggregate by `ProductName`."
+    - content: "Use a `SELECT` query with a `SUM` function to total the `UnitsProduced` metric, using a `JOIN` on the `ProductKey` surrogate key to match the `FactProduction` records to the `FactProduct` records and a `GROUP BY` clause to aggregate by `ProductName`."
       isCorrect: true
       explanation: "Correct. To aggregate measures in a fact table by attributes in a dimension table, include an aggregate function for the measure, join the tables on the surrogate key, and group the results by the appropriate attributes."
   - content: "You use the `RANK` function in a query to rank customers in order of the number of purchases they have made. Five customers have made the same number of purchases and are all ranked equally as 1. What rank will the customer with the next highest number of purchases be assigned?"

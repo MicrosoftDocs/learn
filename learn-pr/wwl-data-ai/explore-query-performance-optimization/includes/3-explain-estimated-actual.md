@@ -24,7 +24,7 @@ FROM [Warehouse].[StockItems] s
 ORDER BY CostPerOuterBox;
 ```
 
-This query is joining the *StockItems* table to the *StockItemHoldings* table where the values in the column *StockItemID* are equal. The database engine has to first identity those rows before it can process the rest of the query.
+This query is joining the *StockItems* table to the *StockItemHoldings* table where the values in the column *StockItemID* are equal. The database engine has to first identify those rows before it can process the rest of the query.
 
 :::image type="content" source="../media/module-55-optimize-queries-final-02.png" alt-text="Screenshot of a query execution plan.":::
 

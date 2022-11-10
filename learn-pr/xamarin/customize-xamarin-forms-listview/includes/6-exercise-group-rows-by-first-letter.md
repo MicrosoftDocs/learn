@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In this exercise, we'll group our smart home device list by the first letter of the `Name`. We could also group by device type if we preferred, or even create a toggle to control what we group by.
 
 We'll continue with the solution from the previous exercise. If you don't already have it, you can open the solution from the **exercise1** > **final** folder in your copy of the cloned or downloaded [!INCLUDE [module-exercise-repo](module-exercise-repo.md)] in Visual Studio.

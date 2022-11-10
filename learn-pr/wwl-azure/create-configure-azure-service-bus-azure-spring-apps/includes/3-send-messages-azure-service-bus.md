@@ -2,7 +2,7 @@ In the Spring Petclinic application, the **messaging-emulator** microservice is 
 
 In this unit, you'll do the following activities:
 
- -  Create and deploy separate application in your Spring Cloud service.
+ -  Create and deploy separate application in your Spring Apps service.
  -  Create a Managed Identity and allow it to access secrets in your Key Vault.
  -  Try another microservice and determine if messages are delivered to the Service Bus.
  -  Use the Service Bus Explorer for the `visits-requests` queue.
@@ -10,13 +10,39 @@ In this unit, you'll do the following activities:
 > [!NOTE]
 > Make sure you have the most recent compiled version of the microservices by running a separate build, by running **mvn clean package -DskipTests**
 
-Do the following procedure to send messages to an Azure Service Bus.
+In the [Lab repository Extra folder](https://github.com/MicrosoftLearning/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps/tree/master/Extra), the messaging-emulator microservice is already prepared to send messages to an Azure Service Bus namespace. You can add this microservice to your current Spring Petclinic project, deploy it as an extra microservice in your Azure Spring Apps service and use this microservice's public endpoint to send messages to your Service Bus namespace. Test this functionality and inspect whether messages end up in the Service Bus namespace you just created by using the Service Bus Explorer for the visits-requests queue.
 
-1.  Create a new application in your Spring Cloud Service for the `messaging-emulator`and assign it a public endpoint.
+Do the following procedure to test and send messages to an Azure Service Bus.
+
+1.  As a first step you will need to clone the [Lab repository](https://github.com/MicrosoftLearning/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps). From the Git Bash window, execute the following statement.
     
     ```azurecli
-    az spring-cloud app create \
-        --service $SPRING_CLOUD_SERVICE \
+    cd ~/projects git clone https://github.com/MicrosoftLearning/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps.git
+    ```
+2.  From the Git Bash window copy the `spring-petclinic-messaging-emulator` to the `spring-petclinic-microservices` directory.
+    
+    ```azurecli
+    cp -R Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps/Extra/spring-petclinic-messaging-emulator spring-petclinic-microservices
+    ```
+3.  In the main **pom.xml** file, add an extra module for the `spring-petclinic-messaging-emulator` in the **&lt;modules&gt;** element at line 26.
+    
+    ```azurecli
+    
+        
+         spring-petclinic-messaging-emulator
+        
+    ```
+4.  Update the compiled version of the microservices available by running an additional build.
+    
+    ```azurecli
+    cd ~/projects/spring-petclinic-microservices
+    mvn clean package -DskipTests
+    ```
+5.  Create a new application in your Spring Apps Service for the `messaging-emulator`and assign it a public endpoint.
+    
+    ```azurecli
+    az spring app create \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name messaging-emulator \
         --assign-endpoint true
@@ -25,13 +51,13 @@ Do the following procedure to send messages to an Azure Service Bus.
 2.  Assign an identity to the new application and store the identity in an environment variable.
     
     ```azurecli
-    az spring-cloud app identity assign \
-        --service $SPRING_CLOUD_SERVICE \
+    az spring app identity assign \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name messaging-emulator
     
-    messaging_emulator_id=$(az spring-cloud app identity show \
-        --service $SPRING_CLOUD_SERVICE \
+    messaging_emulator_id=$(az spring app identity show \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name messaging-emulator \
         --output tsv \
@@ -51,8 +77,8 @@ Do the following procedure to send messages to an Azure Service Bus.
 4.  Deploy the **messaging-emulator``**application.
     
     ```azurecli
-    az spring-cloud app deploy \
-        --service $SPRING_CLOUD_SERVICE \
+    az spring app deploy \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name messaging-emulator \
         --no-wait \

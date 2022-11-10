@@ -84,6 +84,8 @@ Securing Privileged Access has two simple goals:
 * Strictly limit the ability to perform privileged actions to a few authorized pathways
 * Protect and closely monitor those pathways
 
+:::image type="content" source="../media/two-paths-protected-known-entry-points.png" alt-text="Diagram showing two access paths: one for normal user activities and one for privileged activities." lightbox="../media/two-paths-protected-known-entry-points.png":::
+
 There are two types of pathways to accessing the systems, **user access** (to use the capability) and **privileged access** (to manage
 the capability or access a sensitive capability):
 

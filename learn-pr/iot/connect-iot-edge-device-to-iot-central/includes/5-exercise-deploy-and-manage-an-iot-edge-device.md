@@ -4,7 +4,7 @@ In this unit, you'll deploy the IoT Edge runtime to a Linux Virtual Machine (VM)
 
 ## Configure and deploy the IoT Edge device
 
-In the previous module, you learnt that an IoT Edge device needs the connection information from the IoT Central application.
+In the previous module, you learned that an IoT Edge device needs the connection information from the IoT Central application. Set the following environment variables in your Cloud Shell sandbox:
 
 Replace `<AZURE_VM_USER_PASSWORD>` with a strong password of your choice for your virtual machine:
 
@@ -30,7 +30,7 @@ The following command creates a Linux VM, installs the IoT Edge runtime, and edi
 az deployment group create \
   --name edgeModuleVM \
   --resource-group <rgn>[sandbox resource group name]</rgn> \
-  --template-uri https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/master/edge-vm-deploy/edgeModuleVMDeploy.json \
+  --template-uri https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/edge-vm-deploy/edgeModuleVMDeploy.json \
   --parameters dnsLabelPrefix="$APP_NAME" \
   --parameters adminUsername="AzureUser" \
   --parameters adminPassword="$VM_PASSWORD" \
@@ -39,7 +39,7 @@ az deployment group create \
   --parameters deviceKey="$DEVICE_KEY"
 ```
 
-Navigate to the **Devices** page in your IoT Central application. If you've forgotten the URL, run the following command:
+Navigate to the **Environmental Sensor Edge Device** devices on the **Devices** page in your IoT Central application. If you've forgotten the URL, run the following command:
 
 ```azurecli
 echo "You can now navigate to: https://$APP_NAME.azureiotcentral.com/devices"
@@ -52,7 +52,7 @@ The **Device status** changes from **Registered** to **Provisioned** when the Io
 > [!TIP]
 > Expect to wait for several minutes for the status to change to **Provisioned**.
 
-Wait until the **Device status** is **Provisioned**, then click on the device name **Environmental Sensor Edge Device - store-001**. You can see the available views for the device, including **Modules**. Select the **Modules** view. The status of the three modules changes to **Running** when the IoT Central application detects the modules are running. You may need to wait a couple of minutes for the status to update.
+Wait until the **Device status** is **Provisioned**, then click on the device name **store-001**. You can see the available views for the device, including **Modules**. Select the **Modules** view. The status of the three modules changes to **Running** when the IoT Central application detects the modules are running. You may need to wait a couple of minutes for the status to update.
 
 :::image type="content" source="../media/5-running-modules.png" alt-text="Screenshot that shows three running modules on the IoT Edge device.":::
 

@@ -21,21 +21,21 @@ As your organization evaluates the capabilities of its architecture around ident
 
 The more identities a user has to manage, the greater the risk of a credential-related security incident. More identities mean more passwords to remember and change. Password policies can vary between applications. As complexity requirements increase, it's more difficult for users to remember them.
 
-On the other side is the management required for all those identities. Additional strain is placed on help desks as they deal with account lockouts and password-reset requests. If a user leaves an organization, tracking down all those identities and ensuring that they're disabled can be challenging. An overlooked identity can allow access that should have been eliminated.
+On the other side is the management required for all those identities. Additional strain is placed on help desks as they deal with account lockouts and password-reset requests. If a user leaves an organization, tracking down all those identities and ensuring that they're disabled can be challenging. An overlooked identity can allow access that should've been eliminated.
 
 With single sign-on, users need to remember only one ID and one password. Access across applications is granted to a single identity tied to a user, simplifying the security model. As users change roles or leave an organization, access modifications are tied to the single identity, greatly reducing the effort needed to change or disable accounts.
 
-Using single sign-on for accounts will make it easier for users to manage their identities. It will also increase the security capabilities in your environment.
+Using single sign-on for accounts will make it easier for users to manage their identities. It'll also increase the security capabilities in your environment.
 
 ### SSO with Azure Active Directory
 
-Azure AD is a cloud-based identity service. It has built-in support for synchronizing with your on-premises Active Directory instance, or it can be used on its own. This means that all your applications, whether on-premises, in the cloud (including Microsoft 365), or even mobile, can share the same credentials. Administrators and developers can control access to data and applications by using centralized rules and policies configured in Azure AD.
+Azure AD is a cloud-based identity service. It has built-in support for synchronizing with your on-premises Active Directory instance, or it can be used on its own. This means that all your applications, whether on-premises, in the cloud (including Microsoft 365), or even on mobile can share the same credentials. Administrators and developers can control access to data and applications by using centralized rules and policies configured in Azure AD.
 
 By using Azure AD for SSO, you'll also have the ability to combine multiple data sources into an intelligent security graph. This security graph can help you provide threat analysis and real-time identity protection to all accounts in Azure AD, including accounts that are synchronized from on-premises Active Directory. By using a centralized identity provider, you'll have centralized the security controls, reporting, alerting, and administration of your identity infrastructure.
 
 ### Synchronize directories with Azure AD Connect
 
-Azure AD Connect can integrate your on-premises directories with Azure Active Directory. Azure AD Connect provides the newest capabilities, and replaces older versions of identity-integration tools such as DirSync and Azure AD Sync.
+Azure AD Connect can integrate your on-premises directories with Azure Active Directory. Azure AD Connect provides the newest capabilities and replaces older versions of identity-integration tools such as DirSync and Azure AD Sync.
 
 It's a single tool to provide an easy deployment experience for synchronization and sign-in.
 
@@ -49,7 +49,7 @@ Your organization has made the decision to move forward with the following confi
   
   This can be a backup if pass-through authentication is unavailable.
 - Configure pass-through authentication by using an on-premises authentication agent installed on Windows Server.
-- Use the seamless SSO feature of Azure AD to automatically sign in users from on-premises domain-joined computers.
+- Use the seamless SSO feature of Azure AD to automatically sign users in from on-premises domain-joined computers.
   
   SSO reduces user friction by suppressing multiple authentication requests.
 
@@ -67,7 +67,7 @@ Multifactor authentication provides additional security for your identities by r
 
 Using multifactor authentication increases the security of your identity by limiting the impact of credential exposure. An attacker who has a user's password would also need to have possession of their phone or their face in order to fully authenticate. Authentication with only a single factor verified is insufficient, and the attacker would be unable to use those credentials to authenticate. The benefits that this approach brings to security are huge, so organizations should enable multifactor authentication wherever possible.
 
-Azure AD has multifactor authentication capabilities built in and will integrate with other multifactor authentication providers. Basic multifactor authentication features are available to Microsoft 365 and Azure AD administrators for no extra cost. If you want to upgrade the features for your admins or extend multifactor authentication to the rest of your users, you can purchase more capabilities.
+Azure AD has multifactor authentication capabilities built in, and will integrate with other multifactor authentication providers. Basic multifactor authentication features are available to Microsoft 365 and Azure AD administrators for no extra cost. If you want to upgrade the features for your admins or extend multifactor authentication to the rest of your users, you can purchase more capabilities.
 
 ### Conditional Access policies
 
@@ -104,6 +104,6 @@ Azure AD Application Proxy has two components. The first is a connector agent th
 
 Since your organization integrated modern authentication with its existing application, it has quickly acknowledged the benefits of a managed-identity system such as Azure AD. The leadership team is now interested in exploring other ways that Microsoft identity services can add business value. The team is focusing its attention on external customers, and how modernization of existing customer interactions might provide tight integration with identity providers like Google, Facebook, and LinkedIn.
 
-Azure AD B2C is an identity management service that's built on the foundation of Azure Active Directory. It lets you customize and control how customers sign up, sign in, and manage their profiles when using your applications. This includes applications developed for iOS, Android, and .NET, among others. 
+Azure AD B2C is an identity management service that's built on the foundation of Azure Active Directory. It lets you customize and control how customers sign up, sign in, and manage their profiles when using your applications. This includes applications developed for iOS, Android, and .NET, among others.
 
-Azure AD B2C provides a social identity login experience, while at the same time protecting your customer identity profile information. Azure AD B2C directories are distinct from standard Azure AD directories and can be created in the Azure portal.
+Azure AD B2C provides a social identity login experience, while at the same time protecting your customer identity profile information. Azure AD B2C directories are distinct from standard Azure AD directories. You can create them in the Azure portal.

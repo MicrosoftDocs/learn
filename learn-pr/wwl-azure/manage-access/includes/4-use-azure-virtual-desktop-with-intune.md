@@ -6,7 +6,6 @@ Intune supports Azure Virtual Desktop virtual machines (VM)s that are:
  -  Hybrid Azure AD-joined
  -  Set up as personal remote desktops in Azure.
  -  Enrolled in Intune in one of the following methods:
-    
      -  Configure Active Directory group policy to automatically enroll devices that are hybrid Azure AD joined.
      -  Configuration Manager co-management.
      -  User self-enrollment via Azure AD Join.

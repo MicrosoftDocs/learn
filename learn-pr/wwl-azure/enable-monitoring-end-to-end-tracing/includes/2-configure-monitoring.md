@@ -5,10 +5,10 @@ In this unit, you'll live stream the logs of the **api-gateway** and the **visit
 To live stream the logs for the **api-gateway** service, use the following statements:
 
 ```azurecli
-az spring-cloud app logs \
+az spring app logs \
     --name api-gateway \
     --resource-group $RESOURCE_GROUP \
-    --service $SPRING_CLOUD_SERVICE
+    --service $SPRING_APPS_SERVICE
     --follow
 ```
 

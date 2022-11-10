@@ -1,6 +1,6 @@
 You're ready to connect to Earth's Azure Quantum services and start solving problems on a real quantum computer. 
 
-In this unit, you learn how to submit a job to Azure Quantum using a Jupyter notebook in the Azure Quantum portal. If you haven´t created an Azure Quantum workspace yet, see the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) module. 
+In this unit, you learn how to submit a job to Azure Quantum using a Jupyter notebook in the Azure Quantum portal. If you haven´t created an Azure Quantum workspace yet, see the [Get started with Azure Quantum](/training/modules/get-started-azure-quantum/?azure-portal=true) module. 
 
 ## Copy a sample notebook
 

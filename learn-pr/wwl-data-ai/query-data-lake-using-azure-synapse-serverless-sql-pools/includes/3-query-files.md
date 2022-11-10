@@ -115,7 +115,7 @@ This time, the file doesn't contain the column names in a header row; so while t
 | 123 | Widget | 12.9900 |
 | 124 | Gadget | 3.9900 |
 
-To specify explicit column names and data types, you can override th default column names and inferred data types by providing a schema definition in a **WITH** clause, like this:
+To specify explicit column names and data types, you can override the default column names and inferred data types by providing a schema definition in a **WITH** clause, like this:
 
 ```sql
 SELECT TOP 100 *

@@ -6,10 +6,10 @@ You need to prepare for your company's deployment of single-instance SAP on Azur
 
 You will:
 
- -  Explore deployment methodologies.
- -  Deploy via Azure Resource Manager templates.
- -  Manually install single-instance SAP HANA on Azure virtual machines.
- -  Prepare Azure virtual machines for a manual installation of SAP HANA.
- -  Discover key steps for SAP HANA installation when you use SAP SWPM.
- -  Discover key steps for SAP HANA installation using HDBLCM.
- -  Implement SAP HANA scale-out.
+- Explore deployment methodologies.
+- Deploy via Azure Resource Manager templates.
+- Manually install single-instance SAP HANA on Azure virtual machines.
+- Prepare Azure virtual machines for a manual installation of SAP HANA.
+- Discover key steps for SAP HANA installation when you use SAP SWPM.
+- Discover key steps for SAP HANA installation using HDBLCM.
+- Implement SAP HANA scale-out.

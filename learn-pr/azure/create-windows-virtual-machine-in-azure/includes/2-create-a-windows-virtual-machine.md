@@ -4,7 +4,7 @@ Your company has decided to manage the video data from their traffic cameras in 
 
 Azure VMs are an on-demand, scalable cloud computing resource. They're similar to virtual machines that are hosted in Windows Hyper-V. They include processor, memory, storage, and networking resources. You can start and stop virtual machines at will, just like with Hyper-V, and manage them from the Azure portal or with the Azure CLI. You can also use a Remote Desktop Protocol (RDP) client to connect directly to the Windows desktop user interface (UI) and use the VM as if you were signed in to a local Windows computer.
 
-## Creating an Azure VM
+## Create an Azure VM
 
 You can define and deploy VMs on Azure in several ways: the Azure portal, a script (using the Azure CLI or Azure PowerShell), or through an Azure Resource Manager template. In all cases, you'll need to supply several pieces of information, which we'll cover shortly.
 
@@ -34,7 +34,8 @@ Any application that the computer can support can be included in the VM image. Y
 > [!TIP]
 > You can also create and upload your own images. Check the documentation for more information.
 
-## Sizing your VM
+## Size your VM
+
 Just as a physical machine has a certain amount of memory and CPU power, so does a virtual machine. Azure offers a range of VMs of differing sizes at different price points. The size that you choose will determine the VMs processing power, memory, and max storage capacity.
 
 > [!WARNING]
@@ -42,25 +43,25 @@ Just as a physical machine has a certain amount of memory and CPU power, so does
 
 VM sizes are grouped into categories, starting with the B-series for basic testing, and running up to the H-series for massive computing tasks. You should select the size of the VM based on the workload you want to perform. It is possible to change the size of a VM after it's been created, but the VM must be stopped first, so it's best to size it appropriately from the start if possible.
 
-#### Here are some guidelines based on the scenario you are targeting.
+#### Here are some guidelines based on the scenario you're targeting:
 
-| What are you doing? | Consider these sizes
+| What are you doing? | Consider these sizes |
 |-------|------------------|
-| **General use computing / web** Testing and development, small to medium databases, or low to medium traffic web servers | B, Dsv3, Dv3, DSv2, Dv2 |
-| **Heavy computational tasks** Medium traffic web servers, network appliances, batch processes, and application servers | Fsv2, Fs, F |
-| **Large memory usage** Relational database servers, medium to large caches, and in-memory analytics. | Esv3, Ev3, M, GS, G, DSv2, Dv2 |
-| **Data storage and processing** Big Data, SQL, and NoSQL databases, which need high disk throughput and IO | Ls |
+| **General use computing / web**: Testing and development, small to medium databases, or low to medium traffic web servers | B, Dsv3, Dv3, DSv2, Dv2 |
+| **Heavy computational tasks**: Medium traffic web servers, network appliances, batch processes, and application servers | Fsv2, Fs, F |
+| **Large memory usage**: Relational database servers, medium to large caches, and in-memory analytics. | Esv3, Ev3, M, GS, G, DSv2, Dv2 |
+| **Data storage and processing**: Big Data, SQL, and NoSQL databases, which need high disk throughput and IO | Ls |
 | **Heavy graphics rendering** or video editing, as well as model training and inferencing (ND) with deep learning | NV, NC, NCv2, NCv3, ND |
-| **High-performance computing (HPC)** If you need the fastest and most powerful CPU virtual machines with optional high-throughput network interfaces | H |
+| **High-performance computing (HPC)**: If you need the fastest and most powerful CPU virtual machines with optional high-throughput network interfaces | H |
 
-## Choosing storage options
+## Choose storage options
 
 The next set of decisions revolves around storage. First, you can choose the disk technology. Options include a traditional platter-based hard disk drive (HDD) or a more modern solid-state drive (SSD). Just like the hardware you purchase, SSD storage costs more but provides better performance.
 
 > [!TIP]
 > There are two levels of SSD storage available: standard and premium. Choose Standard SSD disks if you have normal workloads but want better performance. Choose Premium SSD disks if you have I/O intensive workloads or mission-critical systems that need to process data very quickly.
 
-### Mapping storage to disks
+### Map storage to disks
 
 Azure uses virtual hard disks (VHDs) to represent physical disks for the VM. VHDs replicate the logical format and data of a disk drive, but are stored as page blobs in an Azure Storage account. You can choose on a per-disk basis what type of storage it should use (SSD or HDD). This allows you to control the performance of each disk, likely based on the I/O you plan to perform on it.
 
@@ -84,7 +85,7 @@ You can store data on the C: drive along with the OS, but a better approach is t
 
 The final storage choice you'll make is whether to use **unmanaged** or **managed** disks.
 
-With unmanaged disks, you are responsible for the storage accounts that are used to hold the VHDs corresponding to your VM disks. You pay the storage account rates for the amount of space you use. A single storage account has a fixed rate limit of 20,000 I/O operations/sec. This means that a single storage account is capable of supporting 40 standard virtual hard disks at full throttle. If you need to scale out, then you need more than one storage account, which can get complicated.
+With unmanaged disks, you're responsible for the storage accounts that are used to hold the VHDs corresponding to your VM disks. You pay the storage account rates for the amount of space you use. A single storage account has a fixed rate limit of 20,000 I/O operations/sec. This means that a single storage account is capable of supporting 40 standard virtual hard disks at full throttle. If you need to scale out, then you need more than one storage account, which can get complicated.
 
 Managed disks are the newer (and recommended) disk-storage model. They elegantly solve the complexity of unmanaged disks by putting the burden of managing the storage accounts onto Azure. You specify the disk type (Premium or Standard) and the size of the disk, and Azure creates and manages both the disk *and* the storage it uses. You don't have to worry about storage account limits, which makes them easier to scale out. They also offer several other benefits:
 
@@ -97,9 +98,9 @@ Managed disks are the newer (and recommended) disk-storage model. They elegantly
 
 Virtual machines communicate with external resources using a virtual network (VNet). The VNet represents a private network in a single region on which your resources communicate. A virtual network is just like the networks you manage on-premises. You can divide them up with subnets to isolate resources, connect them to other networks (including your on-premises networks), and apply traffic rules to govern inbound and outbound connections.
 
-### Planning your network
+### Plan your network
 
-When you create a new VM, you'll have the option of creating a new virtual network, or using an existing VNet in your region.
+When you create a new VM, you'll have the option of creating a new virtual network or using an existing VNet in your region.
 
 Having Azure create the network together with the VM is simple, but it's likely not ideal for most scenarios. It's better to plan your network requirements *up front* for all the components in your architecture and create the VNet structure you'll need separately, and then create the VMs and place them into the already-created VNets.
 

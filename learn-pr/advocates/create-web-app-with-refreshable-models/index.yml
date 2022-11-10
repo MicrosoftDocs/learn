@@ -23,7 +23,7 @@ abstract: |
 prerequisites: |
   - Vue.js
   - Progressive Web Apps
-iconUrl: /learn/achievements/advocates/create-web-app-with-refreshable-models.svg
+iconUrl: /training/achievements/advocates/create-web-app-with-refreshable-models.svg
 levels:
   - intermediate
 roles:

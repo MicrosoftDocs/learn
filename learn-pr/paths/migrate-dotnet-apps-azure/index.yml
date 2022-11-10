@@ -19,7 +19,7 @@ video:
   url: https://www.microsoft.com/videoplayer/embed/RE4X1sb
 summary: |
   Migrate ASP.NET web applications and their data to Azure App Service and Azure SQL Database to take advantage of the cloud.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
 roles:
@@ -38,7 +38,7 @@ modules:
 - learn.host-a-web-application-with-azure-web-apps
 - learn.provision-azure-sql-db
 - learn.azure.migrate-app-service-migration-assistant
-- learn.migrate-sql-server-relational-data
+- learn-wwl.migrate-sql-workloads-azure-sql-databases
 - learn.azure.deploy-aspnet-apps-azure-app-service-pipelines
 trophy:
   uid: learn.azure.migrate-dotnet-apps-azure.trophy

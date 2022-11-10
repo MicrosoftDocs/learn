@@ -5,6 +5,7 @@ In this module, you will:
  -  Learn about sign-in, audit, and diagnostic logs.
  -  Learn about managing sign-in through a third-party security information and event management (SIEM) tool.
  -  Learn about reporting.
+ -  Explore the identity secure score.
 
 ## Learning objectives
 
@@ -16,6 +17,7 @@ By the end of this module you should be able to:
  -  Export sign-in and audit logs to a third-party SIEM tool.
  -  Review Azure AD activity by using Log Analytics / Microsoft Sentinel, excluding KQL use.
  -  Analyze Azure AD workbooks/reporting.
+ -  Monitor security posture with identity secure score.
  -  Configure notifications.
 
 ## Prerequisites

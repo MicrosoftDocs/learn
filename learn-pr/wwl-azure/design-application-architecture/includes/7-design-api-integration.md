@@ -1,63 +1,44 @@
 Publishing an API is a great way to increase market share, generate revenue, and foster innovation. However, maintaining even one API brings significant challenges, such as onboarding users, managing revisions, and implementing security.
 
-How do you reduce the complexity inherent in having numerous APIs and their management? You need an API Management that acts as a front door for all your APIs. API Management provides tools for implementing security, managing revisions, and performing analytics.
+Developers need a way to reduce the complexity involved in supporting numerous APIs and their management. They require an API Management technology that can serve as a _front door_ for all their APIs. They need tools to implement security, manage revisions, and perform analytics.
 
-In this unit, you’ll learn about Azure API Management, and determine whether it's the correct solution to help reduce your API complexity.
+Suppose Tailwind Traders has started a new service for premier subscribers to request home delivery, product assembly, and in person assistance for promoted products. The service is available in the mobile app and the online retail website. Customers browse the list of promoted products, and place their order. Tailwind Traders connects with contracted specialists who deliver and assemble the product, and provide the customer with hands on instruction.
 
-## Select an API management solution
+The backbone of the new service is a large collection of published APIs, some of which are used by the following entities:
+- Tailwind Traders mobile app and online website
+- IoT devices on the delivery vehicles
+- Vendor product specialists
+- Tailwind Traders in-house development teams
+- Tailwind Traders employees, such as business analysts
 
-Suppose you work at a Tailwind Traders that has acquired a food-delivery platform. The customers use a mobile app or a website to browse the menus of multiple restaurants. Customers then place an order for the food they want. Your new company delivers the food. The backbone of your platform is a large collection of APIs. Some of the APIs that you publish are used by:
+Each published API resides on a different server. Each API has its own process for onboarding users, and its own policies for security, revisions, analytics, and more. You're looking for an Azure solution that can help reduce this complexity. 
 
-- Your mobile app
+### Things to know about Azure API Management
 
-- Your web app
+[Azure API Management](/azure/api-management/api-management-key-concepts) is a cloud service platform that lets you publish, secure, maintain, and analyze all your APIs. The following diagram shows how Azure API Management serves as a front door for an organization's APIs, and routes to the server where the APIs are deployed.
 
-- Your partner restaurants
-
-- The IoT devices on your delivery vehicles
-
-- Your in-house development teams
-
-- Your employees, such as business analysts
-
-Each published API resides on a different server, has its own process for onboarding users, and has its own policies for security, revisions, analytics, and more. You've been tasked to find a way to reduce this complexity. 
-
-Let's learn how Azure API Management can standardize, centralize, and help secure all the aspects of publishing and maintaining APIs across the full API lifecycle.
-
-## What is Azure API Management?
-
-[Azure API Management](/azure/api-management/api-management-key-concepts) is a cloud service platform that lets you publish, secure, maintain, and analyze all your company's APIs. The following diagram shows Azure API Management that acts as a 'front door' for all an organization's APIs, which are then routed to the server where the API is deployed.
-
-:::image type="content" source="../media/api-management.png" alt-text="A graphic that depicts the use of Azure API management as described in the following text.":::
+:::image type="content" source="../media/api-management.png" alt-text="Illustration that shows how Azure API management serves as a front door for an organization's APIs." border="false":::
 
 > [!IMPORTANT]
-> Azure API Management does not host your actual APIs; your APIs remain where they were originally deployed. Instead, Azure API Management acts as a kind of façade or "front door" for your APIs. In this way, Azure API Management is said to decouple your APIs. This lets you set API policies and other management options in Azure, while leaving your deployed backend APIs untouched.
+> Azure API Management doesn't host your actual APIs. Your APIs remain where they were originally deployed.
+>
+> Azure API Management serves as a front door for your APIs. In this way, Azure API Management is said to **decouple your APIs**.
+> You set API policies and other management options in Azure, while leaving your deployed back-end APIs untouched.
 
-## When to use Azure API Management?
+### Things to consider when using Azure API Management
 
-Here are the criteria we'll use to help you decide whether Azure API Management is a suitable choice for managing and publishing your organization's inventory of APIs.
+To determine whether Azure API Management is a suitable choice for managing and publishing your organization's inventory of APIs, there are three essential criteria to consider: number of APIs, rate of API changes, and API administration load. If you have a large number of deployed APIs that you revise frequently and require significant administrative overhead, Azure API Management is a strong solution. But for scenarios that involve small, static, or simple API deployments, Azure API Management might not be the correct choice.
 
-- Number of APIs
+Review the following criteria, and think about what APIs and API management are required to support the Tailwind Traders applications.
 
-- Rate of API changes
+- **Consider number of APIs**. Identify how many APIs you need to manage. The more APIs you deploy, the greater the need for deployment standardization, and centralization of API control.
 
-- API administration load
+- **Consider rate of API changes**. Determine the rate at which your organization plans to implement API revisions and versions. The faster you create API revisions and publish new API versions, the greater the need for a robust, and flexible versioning control system.
 
-When you have numerous deployed APIs that you revise frequently and that require significant administrative overhead. Azure API Management can help you administer and publish them. Azure API Management might not be the correct choice for use cases that typically involve small, static, or simple API deployments. Let's review the decision criteria in more detail.
+- **Consider API administration load**. Define how much policy overhead you need to apply to your APIs. Policies include usage quotas, call rate limits, request transformations, and request validation. The more configurations and options your APIs require, the greater the need for standardized, and centralized policy implementations.
 
-| **Criteria**| **Analysis** |
-| - | - |
-| Number of APIs| The key consideration when you're evaluating Azure API Management is the number of APIs that you manage. The more APIs you've deployed, the greater the need for deployment standardization, and centralization of API control. |
-| Rate of API changes| The next consideration is the rate at which your organization implements API revisions and versions. The faster you create API revisions and publish new API versions, the greater the need for a robust, and flexible versioning control system. |
-| API administration load| The last consideration is how much policy overhead you apply to your APIs. This includes usage quotas, call rate limits, request transformations, and request validation. The more configurations and options your APIs require, the greater the need for standardized, and centralized policy implementations. |
+- **Consider standardizing disparate APIs**. Use an API management solution to standardize API specs, generate documentation, and create a consistent base URL for ease of use. Azure API Management can provide consistent analytics across multiple APIs and ensure compliance across all APIs.
 
+- **Consider centralized API management**. Bring multiple APIs under a single administrative umbrella with Azure API Management and centralize all API operations. Without an API management service, each API is on its own in terms of administration, deployment, and developer access. A centralized model results in less duplicated effort and increases efficiency.
 
-## Consider Azure API Management 
-
-There are many reasons to choose Azure API Management. Using the food delivery scenario above as an example, let’s investigate API lifecycle management with respect to standardizing APIs, centralizing API management, and enhancing API security. The following table describes these features.
-
-| **Feature**| **Description** |
-| - | - |
-| Standardize all disparate APIs| Considering disparate APIs in the new company such as mobile, partner restaurants, and IoT devices. It’s imperative that you use an API management solution. This solution will standardize API specs, help in creating documentation, and standardize the base URL for ease of use. API Management can provide consistent analytics across multiple APIs and ensure compliance across all APIs. |
-| Centralize API operations| By bringing multiple APIs under a single administrative umbrella, Azure API Management enhances the centralization of all API operations. Without an API management service, each API is on its own in terms of administration, deployment, and developer access. A centralized model results in less duplicated effort and increases efficiency in the food delivery scenario. |
-| Secure APIs| Azure API Management was designed with API security in mind. It manages permissions, access, protects the API from malicious usage and helps in achieving all corporate and government-related compliance. |
+- **Consider enhanced API security**. Azure API Management was designed with API security in mind. Use the service to manage permissions and access, and protect your APIs from malicious usage.  Azure API Management helps to achieve all corporate and government-related compliance.

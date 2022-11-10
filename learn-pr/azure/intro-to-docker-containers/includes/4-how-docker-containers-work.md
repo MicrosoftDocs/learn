@@ -8,7 +8,7 @@ In your previous unit, you looked at how a Docker image is built. Here, you'll l
 
 A Docker container has a lifecycle that you can manage and track the state of the container.
 
-:::image type="content" source="../media/4-docker-container-lifecycle.svg" alt-text="Diagram that shows the lifecycle of a container and the transition between the lifecycle phases.":::
+:::image type="content" source="../media/4-docker-container-lifecycle-2.png" alt-text="Diagram that shows the lifecycle of a container and the transition between the lifecycle phases.":::
 
 To place a container in the run state, use the run command. You can also restart a container that is already running. When restarting a container, the container receives a termination signal to enable any running processes to shut down gracefully before the container's kernel is terminated.
 
@@ -26,13 +26,13 @@ Lastly, to remove containers that are in a stopped state, use the remove command
 
 To list running containers, run the `docker ps` command. To see all containers in all states, pass the `-a` argument.
 
-Here is an example.
+Here's an example.
 
 ```console
 docker ps -a
 ```
 
-Here is the output from that command.
+Here's the output from that command.
 
 ```output
 CONTAINER ID    IMAGE        COMMAND         CREATED       STATUS           PORTS        NAMES
@@ -68,17 +68,17 @@ After an image is specified to run, Docker finds the image, loads container from
 
 ## How to pause a container
 
-To pause a container, run the `docker pause` command. Here is an example.
+To pause a container, run the `docker pause` command. Here's an example.
 
 ```console
 docker pause happy_wilbur
 ```
 
-Pausing a container will suspend all processes. This command enables the container to continue processes at a later stage. The `docker unpause` command un-suspends all processes in the specified containers.
+Pausing a container will suspend all processes. This command enables the container to continue processes at a later stage. The `docker unpause` command unsuspends all processes in the specified containers.
 
 ### How to restart a container
 
-To restart containers, run the `docker restart` command. Here is an example.
+To restart containers, run the `docker restart` command. Here's an example.
 
 ```console
 docker restart happy_wilbur
@@ -88,7 +88,7 @@ The container receives a stop command, followed by a start command. If the conta
 
 ### How to stop a container
 
-To stop a running container, run the `docker stop` command. Here is an example.
+To stop a running container, run the `docker stop` command. Here's an example.
 
 ```console
 docker stop happy_wilbur
@@ -98,7 +98,7 @@ The stop command sends a termination signal to the container and the process run
 
 ### How to remove a container
 
-To remove a container, run the `docker rm` command. Here is an example.
+To remove a container, run the `docker rm` command. Here's an example.
 
 ```console
 docker rm happy_wilbur
@@ -162,7 +162,7 @@ You choose which of these network configurations to apply to your container depe
 
 ### What is the bridge network?
 
-The bridge network is the default configuration applied to containers when launched without specifying any additional network configuration. This network is an internal, private network used by the container, and isolates the container network from the Docker host network.
+The bridge network is the default configuration applied to containers when launched without specifying any other network configuration. This network is an internal, private network used by the container, and isolates the container network from the Docker host network.
 
 Each container in the bridge network is assigned an IP address and subnet mask with the hostname defaulting to the container name.  Containers connected to the default bridge network are allowed to access other bridge connected containers by IP address. The bridge network doesn't allow communication between containers using hostnames.
 

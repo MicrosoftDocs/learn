@@ -4,23 +4,23 @@ The Azure CLI lets you type commands and execute them immediately from the comma
 
 The Azure CLI lets you control nearly every aspect of every Azure resource. You can work with resource groups, storage, virtual machines, Azure Active Directory (Azure AD), containers, machine learning, and so on.
 
-Commands in the CLI are structured in _groups_ and _subgroups_. Each group represents a service provided by Azure, and the subgroups divide commands for these services into logical groupings. For example, the `storage` group contains subgroups including **account**, **blob**, and **queue**.
+Commands in the CLI are structured in *groups* and *subgroups*. Each group represents a service provided by Azure, and the subgroups divide commands for these services into logical groupings. For example, the `storage` group contains subgroups including **account**, **blob**, and **queue**.
 
 So, how do you find the particular commands you need? One way is to use `az find`, the AI robot that uses the Azure documentation to tell you more about commands, the CLI and more. 
 
-Example - find the most popular commands related to the word **blob**.
+**Example**: find the most popular commands related to the word **blob**.
 
 ```azurecli
 az find blob
 ```
 
-Example - Show me the most popular commands for an Azure CLI command group, such as `az vm`.
+**Example**: Show me the most popular commands for an Azure CLI command group, such as `az vm`.
 
 ```azurecli
 az find "az vm"
 ```
 
-Example - Show me the most popular parameters and subcommands for an Azure CLI command.
+**Example**: Show me the most popular parameters and subcommands for an Azure CLI command.
 
 ```azurecli
 az find "az vm create"
@@ -34,7 +34,7 @@ az storage blob --help
 
 ## How to create an Azure resource
 
-When creating a new Azure resource, there are typically three steps: connect to your Azure subscription, create the resource, and verify that creation was successful. The following illustration shows a high-level overview of the process.
+When you're creating a new Azure resource, there are typically three steps: connect to your Azure subscription, create the resource, and verify that creation was successful. The following illustration shows a high-level overview of the process.
 
 ![An illustration showing the steps to create an Azure resource using the command-line interface.](../media/4-create-resources-overview.png)
 
@@ -50,7 +50,7 @@ az login
 
 The Azure CLI will typically launch your default browser to open the Azure sign-in page. If this doesn't work, follow the command-line instructions and enter an authorization code at [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
 
-After a successful sign in, you'll be connected to your Azure subscription.
+After a successful sign-in, you'll be connected to your Azure subscription.
 
 ### Create
 
@@ -67,7 +67,7 @@ az group create --name <name> --location <location>
 
 ### Verify
 
-For many Azure resources, the Azure CLI provides a **list** subcommand to view resource details. For example, the Azure CLI **group list** command lists your Azure resource groups. This is useful here to verify whether creation of the resource group was successful:
+For many Azure resources, the Azure CLI provides a **list** subcommand to view resource details. For example, the Azure CLI **group list** command lists your Azure resource groups. This is useful to verify whether the resource group was successfully created:
 
 ```azurecli
 az group list

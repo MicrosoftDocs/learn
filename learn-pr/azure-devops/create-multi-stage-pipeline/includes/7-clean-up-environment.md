@@ -7,7 +7,7 @@ You're finished with the tasks for this module. Here, you'll clean up your Azure
 
 Here, you delete your Azure App Service instances. The easiest way to delete the instances is to delete their parent resource group. When you delete a resource group, you delete all resources in that group.
 
-In the [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true) module, you managed Azure resources through the Azure portal. Here you tear down your deployment by using the Azure CLI through Azure Cloud Shell. The steps are similar to the steps that you used when you created the resources.
+In the [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) module, you managed Azure resources through the Azure portal. Here you tear down your deployment by using the Azure CLI through Azure Cloud Shell. The steps are similar to the steps that you used when you created the resources.
 
 To clean up your resource group:
 
@@ -42,10 +42,10 @@ At the end of each *sprint*, or work iteration, you and your team can hold a ret
 
 To complete the work item:
 
-1. From Azure DevOps, navigate to **Boards**, and from the menu, select **Boards**.
-1. From the **Doing** column to the **Done** column, move the **Create a multistage pipeline** work item.
+1. From Azure DevOps, go to **Boards**, and from the menu, select **Boards**.
+1. Move the **Create a multistage pipeline** work item, from the **Doing** column to the **Done** column.
 
-    :::image type="content" source="../media/6-azure-boards-wi1-done.png" alt-text="Azure Boards, showing the card in the Done column.":::
+    :::image type="content" source="../media/6-azure-boards-wi1-done.png" alt-text="A screenshot of Azure Boards, showing the card in the Done column.":::
 
 ## Disable the pipeline or delete your project
 
@@ -61,7 +61,7 @@ Disable the pipeline so that it doesn't process build requests. You can re-enabl
 
 To disable the pipeline:
 
-1. In Azure Pipelines, navigate to your pipeline.
+1. In Azure Pipelines, go to your pipeline.
 1. From the dropdown, select **Settings**.
 
     :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="A screenshot of Azure Pipelines showing the location of the Settings menu.":::
@@ -75,9 +75,9 @@ Delete your Azure DevOps project, including the contents of Azure Boards and you
 
 To delete the project:
 
-1. In Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - Multistage**.
-1. Select **Project settings** in the lower corner.
-1. In the **Project details** area, go to the bottom, and select **Delete**.
+1. In Azure DevOps, go to your project. Earlier, we recommended that you name this project **Space Game - web - Multistage**.
+1. Select **Project settings** in the lower-left corner of your Azure DevOps page.
+1. In the **Project details** area, scroll down, and select **Delete**.
 
     :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="A screenshot of Azure Pipelines showing the location of the Delete button.":::
 1. In the window that appears, enter the project name. Select **Delete** again.

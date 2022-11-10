@@ -97,6 +97,5 @@ secret_value = run.get_secret(name=" ExamplePassword")
 For more information about using secrets to secure and access your data, we recommend these resources:
 
 - [Azure Key Vault](/azure/key-vault)
-- [The Keyvault class in the Python SDK](https://docs.microsoft.com/python/api/azureml-core/azureml.core.keyvault.keyvault?view=azure-ml-py&viewFallbackFrom=azure-ml-py"\&preserve-view=true)
+- [The Keyvault class in the Python SDK](/python/api/azureml-core/azureml.core.keyvault.keyvault?view=azure-ml-py&viewFallbackFrom=azure-ml-py"\&preserve-view=true)
 - [Using Secrets In Runs with Python](/azure/machine-learning/how-to-use-secrets-in-runs)
-

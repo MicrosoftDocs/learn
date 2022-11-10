@@ -76,7 +76,7 @@ Preflight validation requires communication with Azure, but it doesn't actually 
 
 To submit a Bicep file for preflight validation, you use the `arm-deploy` action, and set the `deploymentMode` to `Validate`:
 
-:::code language="yaml" source="code/3-preflight.yml" range="1, 9-21" highlight="14" :::
+:::code language="yaml" source="code/3-preflight.yml" range="1, 9-23" highlight="16" :::
 
 You can also use the Azure CLI's `az deployment group validate` command.
 

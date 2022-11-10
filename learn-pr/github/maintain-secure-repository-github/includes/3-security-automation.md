@@ -28,7 +28,7 @@ To learn more about Dependabot's flexibility, see [Configuring GitHub Dependabot
 
 Similar to how Dependabot scans your repository for dependency alerts, you can use code scanning to analyze and find security vulnerabilities and errors in the code in a GitHub repository. Code scanning has several benefits; you can use it to find, triage, and prioritize fixes for existing problems or potential security vulnerabilities. It's also useful to help prevent developers from introducing any new security problems into the code.
 
-Another advantage to code scanning is its ability to use CodeQL. CodeQL lets you query code as data, which lats you create custom queries or use queries maintained by the open-source community. Code scanning gives you the freedom to customize and maintain how the code within your repository is being scanned.
+Another advantage to code scanning is its ability to use CodeQL. CodeQL lets you query code as data, which lets you create custom queries or use queries maintained by the open-source community. Code scanning gives you the freedom to customize and maintain how the code within your repository is being scanned.
 
 You can enable code-scanning alerts and workflows in the security tab of a GitHub repository:
 

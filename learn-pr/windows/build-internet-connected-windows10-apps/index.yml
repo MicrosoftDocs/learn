@@ -14,7 +14,7 @@ abstract: |
   In this module, you will:
   - Use Microsoft Azure Cognitive Services to find images based on text descriptions. 
   - Write an app that connects to NASA's "Astronomy Picture of the Day" service to download a picture.
-iconUrl: /learn/achievements/build-internet-connected-windows-apps.svg
+iconUrl: /training/achievements/build-internet-connected-windows-apps.svg
 prerequisites: |
  - A computer running the current release of Windows 10.
  - [Visual Studio 2017](/visualstudio/productinfo/vs2017-system-requirements-vs) installed.

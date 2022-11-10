@@ -2,10 +2,9 @@ Imagine you're a software developer for an online retailer. Your company uses an
 
 This module guides you through implementing managed data services in a microservices app. You'll begin with a simplified, revamped version of [:::no-loc text="eShopOnContainers":::](https://github.com/dotnet-architecture/eShopOnContainers)&mdash;the companion reference app for the guide [.NET Microservices: Architecture for Containerized .NET Applications](/dotnet/architecture/microservices). After validating the app deployment using data services within the AKS cluster, you'll modify the app's basket service to use Azure Cache for Redis. Following that, you'll reconfigure the app's coupon service to use Azure Cosmos DB.
 
-You'll use your own Azure subscription to deploy the resources in this module. To estimate the expected resource costs, see the [preconfigured Azure Calculator estimate](https://aka.ms/microservices-configuration-aspnet-core-estimate?azure-portal=true). If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/dotnet/?azure-portal=true) before you begin.
+[!INCLUDE[Use your own Azure subscription](../../includes/microservices/your-own-az-subscription.md)]
 
-> [!IMPORTANT]
-> This module uses your own Azure subscription. To avoid unnecessary charges in your Azure subscription, remember to de-provision your Azure resources when you're done with this module.
+[!INCLUDE[Dev containers](../../includes/dev-containers/required.md)]
 
 In this module, you will:
 
@@ -26,3 +25,4 @@ In this module, you will:
 - Familiarity with C# and ASP.NET Core development at the beginner level
 - Familiarity with basic data management concepts
 - Access to an Azure subscription with **Owner** privilege
+- Ability to run development containers in Visual Studio Code or GitHub Codespaces
