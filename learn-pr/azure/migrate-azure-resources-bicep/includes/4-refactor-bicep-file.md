@@ -2,7 +2,7 @@ After the convert and migrate phases of converting your templates to Bicep, you 
 
 :::image type="content" source="../media/4-refactor-phase.png" alt-text="Diagram of the refactor phase of the recommended workflow for migrating Azure resources to Bicep." border="false":::
 
-The main focus of the *refactor* phase is to improve the quality of your Bicep code. Improvements can include changes, such as adding code comments, that bring the template in line with your template standards.
+The main focus of the _refactor_ phase is to improve the quality of your Bicep code. Improvements can include changes like adding code comments that align the template with your template standards.
 
 The refactor phase consists of eight steps, which you do in any order:
 
@@ -58,7 +58,7 @@ resource appServicePlanName 'Microsoft.Web/serverfarms@2020-12-01' = {
 output appServicePlanId string = appServicePlanName.id
 ```
 
-If you deploy this Bicep template as-is, the deployment will succeed, but you can improve the template to bring it line with your template standards.
+If you deploy this Bicep template as-is, the deployment will succeed, but you can improve the template to align it with your template standards.
 
 ### Review resource API versions
 
@@ -82,7 +82,7 @@ For example, in the converted template, the variable named `appServicePlanName_v
 
 For clarity, it's a good idea to remove `_var` from the variable name. But, when you rename the variable, its new name conflicts with the symbolic name of the App Service plan resource. So, it's a good idea to rename resources first, and then rename the variables that are used in their definitions.
 
-[!include[Tip - How to use Visual Studio Code to rename Bicep symbols.](../../includes/azure-template-bicep-tip-rename.md)]
+[!INCLUDE [Tip - How to use Visual Studio Code to rename Bicep symbols.](../../includes/azure-template-bicep-tip-rename.md)]
 
 ### Simplify expressions
 
@@ -103,7 +103,7 @@ If you're converting a template that has many resources, consider breaking the i
 
 ### Add comments and descriptions
 
-Good Bicep code is _self-documenting_. In Bicep, you can add comments and descriptions to your code to document your infrastructure. Comments and descriptions can help your teammates understand the code and increase confidence when changes are made. Both comments and descriptions are visible when you work with the file in Visual Studio Code, for example when you need to specify a parameter value for a module, but when you deploy the Bicep file to Azure, the comments are ignored.
+Good Bicep code is _self-documenting_. In Bicep, you can add comments and descriptions to your code to document your infrastructure. Comments and descriptions can help your teammates understand the code and increase confidence when changes are made. Comments and descriptions are visible when you work with a Bicep file in Visual Studio Code, like when you need to specify a parameter value for a module. But when you deploy a Bicep file to Azure, the comments are ignored.
 
 Bicep supports both single-line comments using a `//` character sequence and multi-line comments that start with a `/*` and end with a `*/`. You can add comments to apply to specific lines in your code or to sections of code.
 
@@ -120,7 +120,7 @@ Single-line comments can be added as headers for sections of code or on individu
 
 :::code language="bicep" source="code/4-app-service-plan-updated.bicep" range="34-46" highlight="1,6,9,12" :::
 
-Bicep provides the `@description` decorator that you can use to document the purpose of your parameters, variables, resources, modules, and outputs. You can add the description on the line above the item you are describing:
+Bicep provides the `@description` decorator that you can use to document the purpose of your parameters, variables, resources, modules, and outputs. You can add the description on the line above the item you're describing:
 
 ```bicep
 @description('The name of the App Service Plan.')
@@ -129,7 +129,7 @@ param appServicePlanName string
 
 ### Follow Bicep best practices
 
-Make sure that your Bicep file follows standard recommendations. Review [Bicep best practices](/azure/azure-resource-manager/bicep/best-practices) for anything you might have missed.
+Make sure that your Bicep file follows standard recommendations. Review [Bicep best practices](/azure/azure-resource-manager/bicep/best-practices?azure-portal=true) for anything you might have missed.
 
 ### The converted template
 
@@ -172,7 +172,7 @@ var appServicePlanName = 'plan-${environment}-001'
 
 // Resource - App Service Plan
 @description('The App Service plan resource name.')
-resource appServicePlan 'Microsoft.Web/serverfarms@2020-12-01' = {
+resource appServicePlan 'Microsoft.Web/serverfarms@2022-03-01' = {
   name: appServicePlanName
   location: location
   sku: {

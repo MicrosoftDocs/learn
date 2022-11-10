@@ -72,7 +72,7 @@ The output includes three important pieces of information. Let's review each one
 
 ### Resolve the vnetEncryptionSupported property issue by updating the API version
 
-1. In Visual Studio Code, open your *main.bicep* file.
+1. In Visual Studio Code, open your _main.bicep_ file.
 
 1. Update the API version of the `networkInterface` resource from `2020-11-01` to `2020-07-01`:
 
@@ -144,7 +144,7 @@ You know that your Bicep file is valid, and the what-if operation has indicated 
 
 1. In the Azure portal, open the resource group. Select the **2 Succeeded** link to view the list of deployments.
 
-   :::image type="content" source="../media/7-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the 2 successful deployment link highlighted.":::
+   :::image type="content" source="../media/7-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the two successful deployment link highlighted.":::
 
    The deployment succeeded:
 
@@ -167,7 +167,7 @@ You know that your Bicep file is valid, and the what-if operation has indicated 
 
 1. In the Azure portal, open the resource group. Select the **2 Succeeded** link to view the list of deployments.
 
-   :::image type="content" source="../media/7-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the 2 successful deployment link highlighted.":::
+   :::image type="content" source="../media/7-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the two successful deployment link highlighted.":::
 
    The deployment succeeded:
 

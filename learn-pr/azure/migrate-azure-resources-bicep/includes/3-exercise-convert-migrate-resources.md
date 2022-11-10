@@ -2,7 +2,7 @@
 
 Your toy company has acquired a competitor that created a popular toy truck. The toys connect to a virtual machine hosted in Azure to receive firmware updates. All the resources for the virtual machine were created manually by using the Azure portal. In this unit, you'll begin the process of migrating the resources to a Bicep file.
 
-During the process, you'll:
+During the process, you'll do the following tasks:
 
 > [!div class="checklist"]
 >
@@ -79,7 +79,7 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
    :::image type="content" source="../media/3-export-template.png" alt-text="Screenshot of the Azure portal that shows the exported resource group J S O N template, with the Download button highlighted.":::
 
-   The JSON template and parameters file are downloaded to your computer as a zip file.
+   The JSON template and parameters file are downloaded to your computer as a _.zip_ file.
 
 1. Unzip the file to a folder that you can access easily, like your desktop.
 
@@ -107,7 +107,7 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 ::: zone pivot="cli"
 
-- Create a Bicep file from the template:
+Create a Bicep file from the template:
 
    ```azurecli
    az bicep decompile --file template.json
@@ -121,7 +121,7 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 ::: zone pivot="powershell"
 
-- Create a Bicep file from the template:
+Create a Bicep file from the template:
 
    ```powershell
    bicep decompile template.json
@@ -135,7 +135,7 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 ## Inspect the decompiled Bicep file
 
-Open the *template.bicep* file and read through it. Notice that it's a valid Bicep file, but it has a few issues, including:
+Open the _template.bicep_ file and read through it. Notice that it's a valid Bicep file, but it has a few issues, including:
 
 - The symbolic names that are given to parameters and resources include underscores and aren't easy to understand.
 - The `location` property is hard-coded in all the resource definitions.
@@ -145,7 +145,7 @@ You'll fix these problems throughout the rest of this module.
 
 ## Create a new Bicep file
 
-1. Create a new file called *main.bicep*.
+1. Create a new file called _main.bicep_.
 
 1. Save the empty file so that Visual Studio Code loads the Bicep tooling.
 
@@ -159,7 +159,7 @@ You'll fix these problems throughout the rest of this module.
 
 ## Copy each element into your new Bicep file
 
-1. Copy the resource named `networkSecurityGroups_ToyTruckServer_nsg_name_resource` from the *template.bicep* file to the *main.bicep* file.
+1. Copy the resource named `networkSecurityGroups_ToyTruckServer_nsg_name_resource` from the _template.bicep_ file to the _main.bicep_ file.
 
    As you copy it, note that the `securityRules` property is empty. Later in this module, you'll refactor the file to remove redundant properties.
 
@@ -167,7 +167,7 @@ You'll fix these problems throughout the rest of this module.
 
    :::image type="content" source="../media/3-visual-studio-code-missing-parameter.png" alt-text="Screenshot of the Visual Studio Code editor that shows the migrated resource, with a tooltip displaying an error because of the missing parameter.":::
 
-   Copy the parameter to the *main.bicep* file.
+   Copy the parameter to the _main.bicep_ file.
 
 1. Repeat the process with the following resources and their associated parameters:
 
@@ -197,14 +197,14 @@ You'll fix these problems throughout the rest of this module.
 
 ## Verify your template
 
-1. At the end of the migrate phase, your *main.bicep* file should look similar to this example:
+1. At the end of the migrate phase, your _main.bicep_ file should look similar to this example:
 
    :::code language="bicep" source="code/3-main-migrated.bicep" :::
 
    > [!NOTE]
    > A few things might be different in your template, including some of the symbolic names and the IP addresses. That's OK. Some of this will be resolved later in the module.
 
-1. Close the *template.bicep* file.
+1. Close the _template.bicep_ file.
 
 1. Select **View** > **Problems** to show the problems pane.
 

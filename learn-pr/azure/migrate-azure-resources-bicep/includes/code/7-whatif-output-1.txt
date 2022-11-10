@@ -1,4 +1,4 @@
-Note: The result may contain false positive predictions (noise).
+Note: The result might contain false positive predictions (noise).
 You can help us improve the accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues.
 
 Resource and property changes are indicated with these symbols:

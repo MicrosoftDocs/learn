@@ -10,7 +10,7 @@ During the refactoring process, you'll:
 
 ## Update the resource symbolic names
 
-1. In Visual Studio Code, open the *main.bicep* file.
+1. In Visual Studio Code, open the _main.bicep_ file.
 
 1. Select the symbolic name for the network security group resource, which is `networkSecurityGroups_ToyTruckServer_nsg_name_resource` or a similar name.
 
@@ -93,28 +93,28 @@ All the resources currently use a hard-coded location. Here, you'll add a parame
 
 Your template has some hard-coded values where parameters or variables would be more appropriate. Here, you'll add parameters for properties that might change between deployments and variables for values that won't.
 
-1. At the top of the *main.bicep* file, below the `location` parameter, add the following parameters:
+1. At the top of the _main.bicep_ file, below the `location` parameter, add the following parameters:
 
    ```bicep
    @description('The name of the size of the virtual machine to deploy.')
    param virtualMachineSizeName string = 'Standard_D2s_v3'
-   
+
    @description('The name of the storage account SKU to use for the virtual machine\'s managed disk.')
    param virtualMachineManagedDiskStorageAccountType string = 'Premium_LRS'
-   
+
    @description('The administrator username for the virtual machine.')
    param virtualMachineAdminUsername string = 'toytruckadmin'
-   
+
    @description('The administrator password for the virtual machine.')
    @secure()
    param virtualMachineAdminPassword string
-   
+
    @description('The name of the SKU of the public IP address to deploy.')
    param publicIPAddressSkuName string = 'Basic'
-   
+
    @description('The virtual network address range.')
    param virtualNetworkAddressPrefix string
-   
+
    @description('The default subnet address range within the virtual network')
    param virtualNetworkDefaultSubnetAddressPrefix string
    ```
@@ -204,9 +204,9 @@ The export process adds redundant properties to many resources. Here, you remove
 
 Your parameters currently are defined as default values in your template. To make your template work well across environments, it's a good idea to create a parameter file, and to remove default values for parameters that need to change for each environment.
 
-1. Create a new file named *main.parameters.production.json*.
+1. Create a new file named _main.parameters.production.json_.
 
-1. Paste the following JSON into the *main.parameters.production.json* file.
+1. Paste the following JSON into the _main.parameters.production.json_ file.
 
    :::code language="json" source="code/5-parameters.json" :::
 
@@ -216,15 +216,15 @@ Your parameters currently are defined as default values in your template. To mak
 
    :::code language="bicep" source="code/3-main-migrated.bicep" range="31-54" highlight="7, 14":::
 
-1. Update your *main.bicep* file to remove the default values for the parameters you specified in the parameters file. Leave the default values for the `location` and `publicIPAddressSkuName` parameters because they likely are the same for all your environments.
+1. Update your _main.bicep_ file to remove the default values for the parameters you specified in the parameters file. Leave the default values for the `location` and `publicIPAddressSkuName` parameters because they likely are the same for all your environments.
 
 ## Verify your template
 
-1. At the end of the refactor phase, your *main.bicep* file should look similar to the following example:
+1. At the end of the refactor phase, your _main.bicep_ file should look similar to the following example:
 
    :::code language="bicep" source="code/5-main-refactored.bicep" :::
 
-   Your *main.parameters.production.json* file should look similar to the following file, although you might have different IP address ranges listed:
+   Your _main.parameters.production.json_ file should look similar to the following file, although you might have different IP address ranges listed:
 
    :::code language="json" source="code/5-parameters-completed.json" :::
 
