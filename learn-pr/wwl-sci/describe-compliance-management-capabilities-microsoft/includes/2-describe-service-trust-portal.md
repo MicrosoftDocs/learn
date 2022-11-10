@@ -38,7 +38,7 @@ This section includes general documents relating to the following categories:
 - Privacy and Data Protection - Privacy and Data Protection Resources
 - FAQ and Whitepapers - Whitepapers and answers to frequently asked questions
 
-:::image type="content" source="../media/stp-reports.png" alt-text="Tiles available in the reports, whitepapers, and artifacts section of the Service Trust Portal home page.":::
+:::image type="content" source="../media/stp-reports.png" alt-text="Screenshot that shows the tiles available in the reports, whitepapers, and artifacts section of the Service Trust Portal home page.":::
 
 ### Industry and Regional Resources
 
