@@ -2,7 +2,7 @@ Microsoft Defender for Cloud is a unified infrastructure security management sys
 
 For an interactive overview of how to Manage your cloud security posture with Microsoft Defender for Cloud, click in the image below.
 
-[:::image type="content" source="../media/manage-your-cloud-security-posture-with-microsoft-defender-for-cloud-landing-page-c30d6581.png" alt-text="Screenshot of the interactive guide landing page for Manage your cloud security posture with Microsoft Defender fro Cloud":::
+[:::image type="content" source="../media/manage-your-cloud-security-posture-with-microsoft-defender-for-cloud-landing-page-c30d6581.png" alt-text="Screenshot of the interactive guide landing page for Manage your cloud security posture with Microsoft Defender for Cloud.":::
 ](https://mslearn.cloudguides.com/guides/Manage%20your%20cloud%20security%20posture%20with%20Microsoft%20Defender%20for%20Cloud)
 
 Keeping your resources safe is a joint effort between your cloud provider, Azure, and you, the customer. You have to make sure your workloads are secure as you move to the cloud, and at the same time, when you move to IaaS (infrastructure as a service) there is more customer responsibility than there was in PaaS (platform as a service), and SaaS (software as a service). Microsoft Defender for Cloud provides you the tools needed to harden your network, secure your services and make sure you're on top of your security posture.<br>
