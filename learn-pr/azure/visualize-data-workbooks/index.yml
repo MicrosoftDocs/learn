@@ -33,8 +33,8 @@ subjects:
 units:
 - learn.visualize-data-workbooks.introduction
 - learn.visualize-data-workbooks.azure-workbooks-overview
-- learn.visualize-data-workbooks.create-a-new-azure-workbook
-- learn.visualize-data-workbooks.query-data-sources
+- learn.visualize-data-workbooks.create-new-azure-workbook
+- learn.visualize-data-workbooks.add-query-multiple-data-sources
 - learn.visualize-data-workbooks.display-data-from-data-sources
 - learn.visualize-data-workbooks.analyze-the-data
 - learn.visualize-data-workbooks.visually-show-the-data-analysis
