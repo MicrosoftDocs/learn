@@ -66,7 +66,7 @@ With all of these enhancements, users should be able to use the defaults from SQ
 
 ### Auto async update stats concurrency
 
-If asynchronous statistics update is enabled, you can now in SQL Server 2022 use the ASYNC_STATS_UPDATE_WAIT_AT_LOW_PRIORITY database configuration option to cause the background request updating statistics to wait for a Schema Modification (Sch-M) lock on a low priority queue, to avoid blocking other sessions in high concurrency scenarios.
+If asynchronous statistics update database option is enabled, you can now in SQL Server 2022 use the ASYNC_STATS_UPDATE_WAIT_AT_LOW_PRIORITY database configuration option to cause the background request updating statistics to wait for a Schema Modification (Sch-M) lock on a low priority queue, to avoid blocking other sessions in high concurrency scenarios.
 
 ## Availability
 
@@ -84,7 +84,7 @@ For more information, see [What is a contained availability group](/sql/database
 
 Snapshot backups provide a quick method to back up large SQL Server databases by avoiding the need to stream SQL Server files into backup file(s). Snapshots have been supported for SQL Server in previous versions, but has required a program that uses the Virtual Device Interface (VDI). Windows and SQL Server have provided methods to support snapshot backups using the Volume Snapshot Service (VSS) and the SQL Writer service (which use VDI).
 
-SQL Server 2022 provides built-in support for snapshot backups without VDI using the **ALTER DATABASE** T-SQL statement option `SUSPEND_FOR_SNAPSHOT_BACKUP`. When this statement is executed, SQL Server will suspend all I/O on database and transaction log files. Users can then use storage provider snapshot technologies to create a consistent snapshot backup from underlying SQL Server database and transaction log files. Then the backup process is completed by backing up small amount of metadata information into a file. This allows I/O to now continue for database and transaction log files.
+SQL Server 2022 provides built-in support for snapshot backups without VDI using the **ALTER DATABASE** T-SQL statement option `SUSPEND_FOR_SNAPSHOT_BACKUP`. When this statement is executed, SQL Server will suspend all I/O on database and transaction log files. Users can then use storage provider snapshot technologies to create a consistent snapshot backup from underlying SQL Server database and transaction log files. Then the backup process is completed by backing up a small amount of metadata information into a file. This allows I/O to now continue for database and transaction log files.
 
 Snapshot backups can be restored with the T-SQL **RESTORE** statement specifying the metadata backup file and all database and transaction log files from the snapshot backup.
 
