@@ -6,5 +6,4 @@ In this module, you learned how to:
 - Understand event processing.
 - Get started with Azure Stream Analytics.
 
-
 To learn more about the capabilities of Azure Stream Analytics, see the [Azure Stream Analytics documentation](/azure/stream-analytics/).

@@ -6,7 +6,7 @@ Common goals for stream analytics include
 - Understanding component or system behavior under various conditions to help plan future enhancements.
 - Triggering specific actions or alerts when certain events occur or thresholds are exceeded.
 
-## Characteristics of stream processing solutions
+### Characteristics of stream processing solutions
 
 Stream processing solutions typically exhibit the following characteristics:
 
