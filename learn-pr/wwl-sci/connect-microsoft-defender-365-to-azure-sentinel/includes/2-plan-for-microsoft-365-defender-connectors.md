@@ -29,5 +29,7 @@ Other relevant Microsoft Defender data connectors include:
 It's important to understand how data is ingested by each connector.  Does the connector support bi-directional syncing of Incidents?  Should you ingest the raw log data for hunting and entity analysis? Once you've decided the required data from each log source, then enable the connectors.
 Microsoft Defender for Cloud
 
->**Note** These connectors are now considered *Legacy* connectors:
-Microsoft Defender for Cloud Apps, Microsoft Defender for Endpoint, Microsoft Defender for Identity and Microsoft Defender for Office 365.
+> [!NOTE]
+> These connectors are now considered *Legacy* connectors:
+> 
+> Microsoft Defender for Cloud Apps, Microsoft Defender for Endpoint, Microsoft Defender for Identity and Microsoft Defender for Office 365.
