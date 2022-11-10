@@ -46,7 +46,7 @@ quiz:
       explanation: "Azure Data Factory is a cloud-integration service that orchestrates the movement of data between data stores."
     - content: "Azure Purview"
       isCorrect: true
-      explanation: "Azure Purview is a unified data governance service that helps you manage and govern your on-premises, multi-cloud and software-as-a-service (SaaS) data."
+      explanation: "Azure Purview is a unified data governance service that helps you manage and govern your on-premises, multicloud and software-as-a-service (SaaS) data."
     - content: "Azure Data Lake Storage"
       isCorrect: false
       explanation: "Azure Data Lake Storage is a Hadoop-compatible data repository that can store any size or type of data."
