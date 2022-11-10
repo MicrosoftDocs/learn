@@ -11,7 +11,7 @@ Immediately after you part ways with your mentor, take 30 seconds to send a quic
 If you met your mentor in person, try to ensure that the thank you message will be in their inbox before they return to their desk.
 
 > [!TIP]
-> *If you and your mentor have communicated via text, you can simply text your mentor a quick thank you, rather than emailing.*
+> If you and your mentor have communicated via text, you can simply text your mentor a quick thank you, rather than emailing.
 
 ## Provide a detailed follow up for your mentor
 
@@ -26,7 +26,7 @@ Consider whether they are tasks that can be completely quickly and easily, if th
 Mentors will often suggest other people you should meet. Next, list any introductions to be made, ideally by both and contact name company, if available. For names that are easily discernible, indicate that you will be sending your mentor an email that your mentor has permission to forward to the contact when making the introduction. For names that are not obvious, ask for clarification before providing an email for an introduction.
 
 > [!TIP]
-> *In the middle of a meeting, your mentor may only remember a company name or a partial name. Make sure to capture as much context as possible to help remind the mentor of the person. e.g., "When we were talking about LTV, you mentioned the founder of a company in a space similar to ours who went through Techstars. You mentioned that founder might have some guidance on how to estimate LTV for our product."*
+> In the middle of a meeting, your mentor may only remember a company name or a partial name. Make sure to capture as much context as possible to help remind the mentor of the person. e.g., "When we were talking about LTV, you mentioned the founder of a company in a space similar to ours who went through Techstars. You mentioned that founder might have some guidance on how to estimate LTV for our product."
 
 Often, your mentor may also offer to send you links to books, articles, podcasts, or other resources. Capture a list of any of those resources mentioned by the mentor. Try to find as many of those resources as you can on your own. Note the resources to which you already have access, like books or articles that you have been able to find and indicate which resources you are still seeking from your mentor. Like introductions, the more context you can provide, the better.
 
