@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.visualize-data-workbooks.display-data-from-data-sources
+uid: learn.visualize-data-workbooks.add-query-multiple-data-sources
 title: Enter exercise title
 metadata:
   title: exercise
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-display-data-from-data-sources.md)]
+  [!include[](includes/5-add-query-multiple-data-sources.md)]
