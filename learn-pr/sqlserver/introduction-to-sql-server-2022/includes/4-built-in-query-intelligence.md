@@ -2,7 +2,7 @@ SQL Server 2022 provides built-in capabilities to reduce time for query tuning w
 
 ## Challenges for query tuning
 
-Developers and SQL experts can all agree that while some queries just work, there's performance expectations situations that arise. Queries that require performance troubleshooting and query tuning exercises. Tuning query performance can be an expensive and often lengthy process.
+Developers and SQL experts can all agree that while some queries just work, some performance situations can arise for queries that require performance troubleshooting and query tuning exercises. Tuning query performance can be an expensive and often lengthy process.
 
 ## Solutions for query tuning using the Query Store
 
