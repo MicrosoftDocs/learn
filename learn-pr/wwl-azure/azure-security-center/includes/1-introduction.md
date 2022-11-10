@@ -10,12 +10,11 @@ A security engineer uses Microsoft Defender for Cloud to track, maintain and imp
 
 ## Skills measured
 
-Managing the secure operation of Azure is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/certifications/exams/az-500).
+Managing the secure operation of Azure is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
 
 Manage Security Operations (25-30%)
 
  -  Monitor security by using Microsoft Defender for Cloud
-    
      -  Evaluate vulnerability scans from Microsoft Defender for Cloud
      -  Configure Just in Time VM access by using Microsoft Defender for Cloud
      -  Configure centralized policy management by using Microsoft Defender for Cloud
