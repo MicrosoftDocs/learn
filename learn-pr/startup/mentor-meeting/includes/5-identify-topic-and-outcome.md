@@ -7,7 +7,7 @@ To refine the topic further, you choose to focus on: financial modeling. You've 
 Now that you have a topic, it is important that you clearly define exactly what you're hoping to get out of talking with this mentor. Is it basic advice? Is it insights on a particular topic? Is it validating or derailing a particular point of view? Is it helping you work through feedback you've received from others? Considering all of these aspects will help you define an appropriate scope and agenda for the first mentor meeting—and the meetings that are likely to follow.
 
 > [!TIP]
-> *Be thinking about “What does success look like at the end of this meeting?” If you're looking to achieve a specific outcome from this meeting, be explicit in defining that outcome. Make it tangible and clear.*
+> Be thinking about “What does success look like at the end of this meeting?” If you're looking to achieve a specific outcome from this meeting, be explicit in defining that outcome. Make it tangible and clear.
 
 If the work you're looking to do with the mentor is especially complex—like how to build an effective financial model for your startup—it may take several conversations to come to a definitive conclusion. That's absolutely fine. But it's better to understand the breadth of that scope at the beginning of the mentoring relationship so that you can create agendas that can be handled in a 30-minute meeting.
 
