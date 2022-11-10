@@ -17,7 +17,7 @@ If you met your mentor in person, try to ensure that the thank you message will 
 
 Now that you've had the opportunity to thank your mentor, you now have more time to review your notes and/or recording to capture details from the meeting. If you were able to block time on your calendar immediately following the meeting, take advantage of compiling your recap while the meeting is still fresh in your mind. If you were unable to block time, make sure to return to your notes and/or recording as quickly as you can.
 
-Let's create the second follow-up email that you're going to send
+Let's create the second follow-up email that you're going to send.
 
 First and foremost, make sure to capture any and all tasks that the mentor recommended for you. In this case, your mentor raised several questions about metrics that were not captured in your financial model. You both agreed that it was important to add those additional parameters to improve the effectiveness of your financial model. So that's one task you should capture.
 
