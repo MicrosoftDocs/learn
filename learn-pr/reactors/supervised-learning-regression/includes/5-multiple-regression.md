@@ -118,7 +118,7 @@ $$
 {\rm lifeExpF} = 30.7 + 11 \times {\rm log\_ppgdp} + 0.023 \times {\rm pctUrban}
 $$
 
-Multiple regression is a little trickier to interpret than simple regression. Our model says that if we were to hold all other factors equal, then increasing the per-capita GDP of a country tenfold will (on average) add 11 years to women's life expectancy. It also says that if we keep everything else the same, then increasing the urbanization of a country by 1 percent will increase women's life expectancy by 0.023 years. (Remember that we can't think of the intercept as representing a hypothetical baseline country with USD 0 GDP and no urbanization, because the logarithm of 0 is undefined.) 
+Multiple regression is a little trickier to interpret than simple regression. Our model says that if we were to hold all other factors equal, then increasing the per-capita GDP of a country/region tenfold will (on average) add 11 years to women's life expectancy. It also says that if we keep everything else the same, then increasing the urbanization of a country/region by 1 percent will increase women's life expectancy by 0.023 years. (Remember that we can't think of the intercept as representing a hypothetical baseline country/region with USD 0 GDP and no urbanization, because the logarithm of 0 is undefined.) 
 
 This is another way of showing that adding `pctUrban` to our model provides some additional predictive power to our simple model, but not much. Does it do anything if we add it to a polynomial model?
 
