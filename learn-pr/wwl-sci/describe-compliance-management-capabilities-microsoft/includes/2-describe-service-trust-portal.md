@@ -44,7 +44,7 @@ This section includes general documents relating to the following categories:
 
 This section includes documents the apply to the following industries and regions:
 
-- Financial Services - Resources elaborating regulatory compliance guidance for FSI (by country)
+- Financial Services - Resources elaborating regulatory compliance guidance for FSI (by country/region)
 - Healthcare and Life Sciences - Capabilities offered by Microsoft for Healthcare Industry
 - Media and Entertainment - Media and Entertainment Industry Resources
 - United States Government - Resources exclusively for US Government customers
