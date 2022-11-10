@@ -8,7 +8,7 @@ Azure Migrate performs concurrent replication for up to 500 virtual machines (VM
 
 During the replication setup phase, you can use the migration settings that your earlier Azure Migrate assessment suggested in terms of Azure Virtual Machines sizes, or you can specify the settings yourself. This step gives you the option to configure the VM size and storage-disk settings that you feel are appropriate to the workload being migrated.
 
-Also at this stage, you're asked to specify the subscription, resource group, and virtual network where your VMs will reside after migration. You can also configure availability options such as Availability Zones or availability sets, which helps to protect your applications and data from datacenter outages and maintenance events.
+Also at this stage, you're asked to specify the subscription, resource group, and virtual network where your VMs will reside after migration. You can also configure availability options such as Availability Zones or availability sets, which help to protect your applications and data from datacenter outages and maintenance events.
 
 After you start the replication, you can track and monitor the replication of each of your VMs.
 
