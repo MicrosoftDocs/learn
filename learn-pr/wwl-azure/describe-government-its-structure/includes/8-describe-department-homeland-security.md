@@ -21,7 +21,7 @@ A mix of more than 240,000 full-time government employees and contractors compri
 
 ## Structure
 
-DHS is headquartered in Washington, D.C., and has personnel stationed in more than 75 countries globally.
+DHS is headquartered in Washington, D.C., and has personnel stationed in more than 75 countries/regions globally.
 
 ### Organizational structure
 
