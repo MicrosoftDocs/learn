@@ -3,7 +3,7 @@ uid: learn.wwl.work-arrays-hash-tables-window-powershell-scripts
 metadata:
   title: Work with arrays and hash tables in Window PowerShell scripts
   description: "This module explains how to use arrays and hash tables in Windows PowerShell scripts."
-  ms.date: 08/04/2022
+  ms.date: 11/10/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -26,7 +26,7 @@ prerequisites: |
   *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
   *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
   *   Familiarity with CIM and WMI technologies
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/work-arrays-hash-tables-window-powershell-scripts.svg
 levels:
 - intermediate
 roles:
