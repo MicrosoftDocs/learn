@@ -23,7 +23,7 @@ Before starting the enablement process, get ready with the following items:
 
 The enablement steps are as follows:
 
-- Create an Azure Monitor extension for the Azure Arc-enabled Kubernetes cluster and deploy it to the cluster. This step allows Azure Monitor to connect to the cluster.
+1. Create an Azure Monitor extension for the Azure Arc-enabled Kubernetes cluster and deploy it to the cluster. This step allows Azure Monitor to connect to the cluster.
   
   Follow the detailed instructions in [Azure Monitor Container Insights for Azure Arc-enabled Kubernetes clusters](/azure/azure-monitor/containers/container-insights-enable-arc-enabled-clusters) to create and deploy the extension.
 
@@ -32,7 +32,7 @@ The enablement steps are as follows:
   > - Use Azure CLI for this step.
   > - In the "Create extension instance" step, make sure that you choose **Option 4 - On Azure Stack Edge**.
 
-- Configure and deploy a ConfigMap. This step allows the packet core instance to stream its log data to the Log Analytics workspace.
+1. Configure and deploy a ConfigMap. This step allows the packet core instance to stream its log data to the Log Analytics workspace.
   
   For detailed instructions, see [Configure and deploy the ConfigMap](/azure/private-5g-core/enable-log-analytics-for-private-5g-core).
 
@@ -45,10 +45,9 @@ The enablement steps are as follows:
 
 Once Log Analytics is enabled for a site, the packet core at the site starts to stream its log data to the Log Analytics workspace. You can use queries to retrieve relevant data from the workspace. For example, you might want to check the data of a particular traffic type or the data from a particular UE.
 
-<!-- Use the workspace of the Log option in the Mobile Network resource? If both, which is the preferred method? Need to describe both if necessary -->
-To create a query, open the Mobile Networks resource for your private mobile network through the Azure portal and then select **Log**. In the Log Analytics tool that is displayed, enter your query, as shown below:
+To create a query, open the Log Analytics workspace you assigned to the Kubernetes cluster on which a packet core instance is running. Select **Log** from the left hand menu. In the Log Analytics tool that is displayed, enter your query, as shown below:
 
-TBD: Need a screenshot with **Log** highlighted.
+:::image type="content" source="../media/log-analytics-tool.png" alt-text="A screenshot showing the query creation interface of Log Analytics" border="true":::
 
 You need to use the Kusto query language (KQL) to create queries in Log Analytics. For details about KQL, see [Get started with with log queries in Azure Monitor](/azure/azure-monitor/logs/get-started-queries).
 

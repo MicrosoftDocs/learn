@@ -26,7 +26,7 @@ By default, Azure Private 5G Core provides the following packet core dashboards:
 - The **Uplink and Downlink Statistics** dashboard: Provides detailed statistics on the user plane traffic being handled by the packet core instance.
 - The **Debug** dashboards: Show detailed breakdowns of the request and response statistics for the packet core instance's interfaces. The **Debug** dashboards include the **System Statistics** dashboard, the **HTTP stats** dashboard, and the **4G Interfaces** dashboard.
 
-For more information about the packet core dashboards, see [Dashboards](/azure/private-5g-core/packet-core-dashboards). If you want to add new dashboards or customize existing boards based on your business needs, refer to the [Grafana documentation](https://grafana.com/docs/grafana/).
+For more information about the packet core dashboards, see [Dashboards](/azure/private-5g-core/packet-core-dashboards). If you want to add new dashboards or customize existing dashboards based on your business needs, refer to the [Grafana documentation](https://grafana.com/docs/grafana/).
 
 > [!NOTE]
 > Some packet core dashboards display different panels depending on whether the packet core instance supports 5G or 4G user equipment (UEs).
