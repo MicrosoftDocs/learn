@@ -3,7 +3,7 @@ Now, let's put all of the pieces together and schedule a time to meet with your 
 ## Step 1: Introduce yourself
 
 &#9744; Revisit your research to ensure you understand the mentor's relevant experience.\
-&#9744; Compose an email that provides a quick description of your company—either as an introduction or as a reminder—and outlines the discussion you're hoping to have with the mentor\
+&#9744; Compose an email that provides a quick description of your company—either as an introduction or as a reminder—and outlines the discussion you're hoping to have with the mentor.\
 &#9744; Request windows of availability or ask for access to their preferred scheduling assistant
 
 ## Step 2: Establish a time and location
