@@ -60,7 +60,7 @@ There's one configuration option that we need to change: occlusion. MRTK2 bases 
 
 1. Verify that AR Foundation version 4.1.7 is installed.
 
-    :::image type="content" source="../../media/006-install-package.png" alt-text="Screenshot of selections for verifying the A R Foundation version for Package Manager." :::
+    :::image type="content" source="../media/006-install-package.png" alt-text="Screenshot of selections for verifying the A R Foundation version for Package Manager." :::
 
 ## Import the tutorial assets
 
@@ -130,7 +130,7 @@ In this section, you'll add scripts to the scene to create a series of button ev
 1. In the **Hierarchy**, click the the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
 1. Click the **No Function** drop-down and then select **AnchorModuleScript** > **RemoveLocalAnchor (GameObject)**.
 
-    :::image type="content" source="../media/011-remove-local-anchor.png" alt-text="Screenshot of Unity with the RemoveLocalAnchor button's OnClick event configured." lightbox="../media/012-remove-local-anchor.png":::
+    :::image type="content" source="../media/011-remove-local-anchor.png" alt-text="Screenshot of Unity with the RemoveLocalAnchor button's OnClick event configured." :::
 
 
 1. In the **Hierarchy** pane in the **ButtonParent** child list, select **FindAzureAnchor**.
@@ -157,7 +157,7 @@ In this section, you'll add scripts to the scene to create a series of button ev
    * In the **Spatial Anchors Account Key** field, paste the primary or secondary **Access Key** value from your Azure Spatial Anchors account.
    * In the **Spatial Anchors Account Domain** field, paste the **Account Domain** value from your Azure Spatial Anchors account.
 
-   :::image type="content" source="../media/015-spatial-anchor-manager.png" alt-text="Screenshot of Unity with Spatial Anchor Manager configured." lightbox="../015-media/spatial-anchor-manager.png":::
+   :::image type="content" source="../media/015-spatial-anchor-manager.png" alt-text="Screenshot of Unity with Spatial Anchor Manager configured." :::
 
 ## Try the basic behaviors of Azure Spatial Anchors
 
