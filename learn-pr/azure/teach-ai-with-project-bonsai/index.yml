@@ -1,25 +1,29 @@
 ### YamlMime:Module
-uid: learn.oxford.intro-machine-teaching
+uid: learn.oxford.teach-ai-with-project-bonsai
 metadata:
-  title: Introduction to Machine Teaching
-  description: Learn the concept of Machine Teaching and evaluate when to use it.
+  title: Teach AI like you would a human with Project Bonsai
+  description: Learn the concept of Machine Teaching and .
   ms.date: 11/8/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to Machine Teaching
+title: Teach AI like you would a human with Project Bonsai
 summary: In this module, you'll learn about capabilities and essential concepts of Machine Teaching, the steps to add intelligence into Autonomous Intelligence systems and the types of business problems that you can solve using Machine Teaching for Autonomous AI.
 abstract: | 
   In this module, you'll learn how to:
-  - Describe Machine Teaching 
-  - Explain how to use Machine Teaching to outperform current industrial control systems
-  - Decide when Machine Teaching is the right choice for your business problem
+  - List the critical innovation factors of Project Bonsai
+  - Describe how AI specification documents are used to build Bonsai brains
+  - Explain coding and training of monolithic brains with the Bonsai UI
+  - Describe the Project Bonsai workflow using the Moab as an example
 
   "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
 prerequisites: | 
   - Basic knowledge of Automated Intelligence
   - Basic knowledge of Autonomous Intelligence
+  - Basic knowledge of Machine Teaching
+  - Basic knowledge of AI Specification document
+  - Basic knowledge of brain design patterns
 iconUrl: /training/achievements/generic-badge.svg
 levels: 
 - beginner
