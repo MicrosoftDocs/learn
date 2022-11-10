@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/03/2022
+  ms.date: 11/10/2022
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -23,10 +23,10 @@ quiz:
       isCorrect: false
       explanation: "Federation is connecting two domains, but not specifically eliminate the need to sign-in to both systems."
     - content: "Pass-through authentication"
-      isCorrect: true
+      isCorrect: false
       explanation: "Pass-through authentication. Pass-through Authentication (PTA) allows your users to sign-in to both on-premises and cloud-based applications by using the same passwords. PTA signs users in by validating their passwords directly against on-premises Active Directory. PTA does not provide Azure AD Identity Protection leaked credential reports."
     - content: "Password hash synchronization"
-      isCorrect: false
+      isCorrect: true
       explanation: "This option just shares the password hash between two federated systems."
   - content: "Which tool can you use to synchronize Azure AD passwords with on-premises Active Directory?"
     choices:
