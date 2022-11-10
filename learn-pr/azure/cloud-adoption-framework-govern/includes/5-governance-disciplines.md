@@ -26,7 +26,7 @@ This discipline focuses on automating the application of security principles to 
 
 :::image type="content" source="../media/security-baseline.png" alt-text="Diagram of components in the security baseline." border="false":::
 
-*Figure 2: The Security Baseline discipline.*
+*Figure 1: The Security Baseline discipline.*
 
 This discipline would help Tailwind Traders address the following risks:
 
@@ -39,7 +39,7 @@ After you've established identity and access requirements for your cloud environ
 
 :::image type="content" source="../media/identity-baseline.png" alt-text="Diagram of components in the Identity Baseline discipline." border="false":::
 
-*Figure 3: The Identity Baseline discipline.*
+*Figure 2: The Identity Baseline discipline.*
 
 This discipline would help Tailwind Traders to address the following risk:
 
@@ -51,7 +51,7 @@ Resource consistency focuses on the initial organization of the resources that a
 
 :::image type="content" source="../media/resource-consistency.png" alt-text="Image that demonstrates the Resource Consistency baseline as a hierarchy of resources." border="false":::
 
-*Figure 1: The Resource Consistency discipline.*
+*Figure 3: The Resource Consistency discipline.*
 
 This discipline would help Tailwind Traders address the following risks:
 

@@ -8,12 +8,12 @@ This module demonstrates how to evaluate and respond to risks while implementing
 
 In this module, you'll:
 
-- Establish processes to properly govern cloud adoption
-- Classify tangible risks based on the reference cloud-adoption plan
-- Integrate corporate policies to mitigate tangible risks
-- List implementation strategies to mitigate risks
-- Demonstrate Azure Policy additions that implement risk-mitigation strategies
-- Prioritize future governance investments
+- Establish processes to properly govern cloud adoption.
+- Classify tangible risks based on the reference cloud-adoption plan.
+- Integrate corporate policies to mitigate tangible risks.
+- List implementation strategies to mitigate risks.
+- Demonstrate Azure Policy additions that implement risk-mitigation strategies.
+- Prioritize future governance investments.
 
 ## Prerequisites
 
