@@ -16,7 +16,7 @@ As with previous versions of SQL Server, SQL Server 2022 can be deployed using t
 
 - **SQL Server Developer** edition can be used to test all features for your SQL Server 2022 application. There's no time limit for this edition and no paid license is required, but it can't be used for production.
 
-- **SQL Server Express** edition doesn't require a paid license and can be used in production. This edition contains many of the core capabilities of SQL Server 2022, but has limits on specific features and resource, such as CPU, memory, and database size.
+- **SQL Server Express** edition doesn't require a paid license and can be used in production. This edition contains many of the core capabilities of SQL Server 2022, but has limits on specific features and resources, such as CPU, memory, and database size.
 
 - **SQL Server Web** edition is a low total-cost-of-ownership option for Web hosters and Web Value Added Providers (VAPs) to provide scalability, affordability, and manageability capabilities for small to large-scale Web properties.
 
@@ -51,7 +51,7 @@ The following features have been removed from SQL Server 2022 that were availabl
 
 - R, Python, and Java runtimes - R, Python, and Java runtimes are no longer included as part of the setup for SQL Server 2022. The Machine Learning Services feature is still supported, but you'll need to add your own packages that include runtimes you need.
 
-- Polybase Hadoop Connectivity with Java - The Polybase feature wit Hadoop connectivity is removed from SQL Server 2022. You can still use Polybase services with ODBC drivers or new REST API based connectors for Azure Blob storage, Azure Data Lake Storage, or S3 compatible object storage.
+- Polybase Hadoop Connectivity with Java - The Polybase feature with Hadoop connectivity is removed from SQL Server 2022. You can still use Polybase services with ODBC drivers or new REST API based connectors for Azure Blob storage, Azure Data Lake Storage, or S3 compatible object storage.
 
 - Polybase scale out groups - The Polybase scale out group feature has been removed from SQL Server 2022. Queries using external tables or OPENROWSET for data virtualization can take advantage of scale-up processing built into SQL Server.
 
