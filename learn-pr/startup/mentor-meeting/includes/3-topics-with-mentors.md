@@ -11,7 +11,7 @@ Given the variety of topics you've documented, there may be several possible pat
 Remember that mentors are individuals with startup experience who volunteer their time to provide advice to startup founders, based on their own experience in the startup world. Mentors share their opinions; they do not do work. Therefore, it's important that you come to mentors with topics that do not involve asking the mentor to perform tasks or projects. You're going to attempt to engage the mentor in ways that allow them an opportunity to share their opinion in a way that helps you make decisions about your startup.
 
 > [!TIP]
-> *If you're arguing with yourself about which direction to take on a particular topic, that is an excellent topic to discuss with a mentor.*
+> If you're arguing with yourself about which direction to take on a particular topic, that is an excellent topic to discuss with a mentor.
 
 ## Make sure the topic can be addressed in the time allotted
 
@@ -20,6 +20,6 @@ Attempting to cover too many topics—or to force fit a lengthy topic into a sin
 You carefully evaluate the topics you'd like to discuss with your mentor and determine that financial modeling is the most pressing. What's more, you recognize that a financial model can be something to which every founder is exposed, so your mentor is likely to have a beneficial opinion to share.
 
 > [!TIP]
-> *Try to break your needs into topics that can be discussed and covered in 30 minutes or 30-minute increments over the course of multiple meetings. This ensures that you're able to cover the issues at hand, even during the shortest meetings*
+> Try to break your needs into topics that can be discussed and covered in 30 minutes or 30-minute increments over the course of multiple meetings. This ensures that you're able to cover the issues at hand, even during the shortest meetings
 
 Next, we're going to learn more about your mentor so that we can best align the areas you need help with the mentor's experience and expertise.
