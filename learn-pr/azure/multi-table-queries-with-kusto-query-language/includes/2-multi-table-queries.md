@@ -56,7 +56,7 @@ You'll learn more about the various table merging operators and the `materialize
 
 ## Kinds of join
 
-:::image type="content" source="../media/2-join-kinds.png" alt-text="Illustration of query join kinds.":::
+:::image type="content" source="../media/2-join-kinds.png" alt-text="Diagram showing query join kinds.":::
 
 There are many different kinds of joins that can be performed that affect the schema and rows in the resultant table. The following table shows the kinds of joins supported by the Kusto Query Language and schema and rows they return:
 

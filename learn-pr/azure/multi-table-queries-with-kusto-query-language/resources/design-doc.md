@@ -1,6 +1,6 @@
 # Title
 
-Multi-table quries using the Kusto Query Language
+Multi-table queries using the Kusto Query Language
 join data across table to do gain insights in KQL
 Write advanced queries in Kusto Query Language
 
@@ -28,7 +28,7 @@ Familiarity with Kusto Query Language operators such as project, where, sort, su
 
 ## Summary
 
-Write advanced queries in Kusto Query Language to help you gain deeper insights by collating data from several tables. Learn how to use the table-level operators `lookup`, `join`, `union`, `materialize`, and new agregations functions `arg_min` and `arg_max`. Communicate these results visually in charts.
+Write advanced queries in Kusto Query Language to help you gain deeper insights by collating data from several tables. Learn how to use the table-level operators `lookup`, `join`, `union`, `materialize`, and new aggregation functions `arg_min` and `arg_max`. Communicate these results visually in charts.
 
 ## Learning objectives
 
