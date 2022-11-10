@@ -4,7 +4,7 @@ Azure Stream Analytics is a service for complex event processing and analysis of
 - Process the data by using a *query* to select, project, and aggregate data values.
 - Write the results to an *output*, such as Azure Data Lake Gen 2, Azure SQL Database, Azure Synapse Analytics, Azure Functions, Azure event hub, Microsoft Power BI, or others.
 
-![A Stream Analytics job with inputs, a query, and outputs](../media/stream-analytics.png)
+![Diagram that shows a Stream Analytics job with inputs, a query, and outputs](../media/stream-analytics.png)
 
 Once started, a Stream Analytics query will run perpetually, processing new data as it arrives in the input and storing results in the output.
 
