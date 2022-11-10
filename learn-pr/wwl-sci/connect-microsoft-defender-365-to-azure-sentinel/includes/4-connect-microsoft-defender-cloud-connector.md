@@ -4,7 +4,7 @@ To view the connector page, do the following steps:
 
 1. Select Data connectors page in Microsoft Sentinel.
 
-1. Select **Microsoft Defender for Cloud **
+1. Select **Microsoft Defender for Cloud**
 
 1. Then select the **Open connector** page on the preview pane.
 
