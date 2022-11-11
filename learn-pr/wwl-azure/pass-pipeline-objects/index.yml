@@ -3,7 +3,7 @@ uid: learn.wwl.pass-pipeline-objects
 metadata:
   title: Pass pipeline objects
   description: "This module explains how the Windows PowerShell command-line interface passes objects from one command to another in the pipeline."
-  ms.date: 08/01/2022
+  ms.date: 11/11/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -26,7 +26,7 @@ prerequisites: |
   *   Familiarity with Windows Server administration, maintenance, and troubleshooting.
   *   Familiarity with Windows PowerShell and its commands to perform specific tasks.
   - Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/pass-pipeline-objects.svg
 levels:
 - intermediate
 roles:
