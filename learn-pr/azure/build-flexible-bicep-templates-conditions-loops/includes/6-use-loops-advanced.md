@@ -51,7 +51,7 @@ In this example, notice that the `for` loop appears within the resource definiti
 
 Some scenarios require you to use a loop inside another loop, or a *nested loop*. You can create nested loops by using Bicep.
 
-For your teddy bear toy company, you need to deploy virtual networks in every country where the toy will be launched. Every virtual network needs a different address space and two subnets. Let's start by deploying the virtual networks in a loop:
+For your teddy bear toy company, you need to deploy virtual networks in every country/region where the toy will be launched. Every virtual network needs a different address space and two subnets. Let's start by deploying the virtual networks in a loop:
 
 ::: code language="bicep" source="code/6-loop-nested.bicep" range="1-17,24-25" highlight="9,10,15" :::
 

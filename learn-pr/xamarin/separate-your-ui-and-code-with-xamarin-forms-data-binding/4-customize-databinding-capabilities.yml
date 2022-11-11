@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Knowledge check"
   questions:
-  - content: "Suppose you have a page with an `Entry` and a `Label`. The label shows a list of countries. When the user types in the entry field, the label's list is filtered to only things that match. For example, if the user types \"Aus\", the list shows only \"Australia\" and \"Austria\". The Page's `BindingContext` is set to an instance of `CountrySearchData`. The `Entry.Text` has a binding to the `CountrySearchData.CountryFilter` string property. Which of these techniques is most likely required in order for that binding to work as described?"
+  - content: "Suppose you have a page with an `Entry` and a `Label`. The label shows a list of countries/regions. When the user types in the entry field, the label's list is filtered to only things that match. For example, if the user types \"Aus\", the list shows only \"Australia\" and \"Austria\". The Page's `BindingContext` is set to an instance of `CountrySearchData`. The `Entry.Text` has a binding to the `CountrySearchData.CountryFilter` string property. Which of these techniques is most likely required in order for that binding to work as described?"
     choices:
     - content: "A one-way binding is sufficient."
       isCorrect: false
