@@ -34,7 +34,7 @@ subjects:
   - database
 units:
 - learn.introduction-to-sql-server-2022.1-introduction
-- learn.introduction-to-sql-server-2022.deploy-and-feature-difference
+- learn.introduction-to-sql-server-2022.2-deploy-and-feature-difference
 - learn.introduction-to-sql-server-2022.3-cloud-connected
 - learn.introduction-to-sql-server-2022.4-built-in-query-intelligence
 - learn.introduction-to-sql-server-2022.5-security-scalability-availability
