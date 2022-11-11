@@ -70,4 +70,4 @@ quiz:
       explanation: "Incorrect. While important, public opinion should not dictate AI policy on its own as it can be manipulated, misinformed, and erratic."
     - content: "AI policies need to be flexible in order to match the policies of governments who are leading in AI."
       isCorrect: false
-      explanation: "Incorrect. While governments should absolutely learn from each other, AI policy should not be dictated by what other countries are doing."
+      explanation: "Incorrect. While governments should absolutely learn from each other, AI policy should not be dictated by what other countries/regions are doing."
