@@ -39,7 +39,12 @@ The URL for accessing the packet core dashboard is as follows:
 
 Here *\<LocalMonitoringIP\>* is the IP address for accessing the local monitoring tools that you set up when you configure the management network during Azure Private 5G Core deployment.
 
-If this is the first time you access the packet core dashboards, use the default account to sign in. Change the password for the account after the initial sign-in. For more information, see [Access the packet core dashboards](/azure/private-5g-core/packet-core-dashboards).
+If this is the first time you access the packet core dashboards, use the default account to sign in:
+
+- Username: *admin*
+- Password: *admin*
+
+Change the password for the account after the initial sign-in.
 
 ## Adjust the time range
 
