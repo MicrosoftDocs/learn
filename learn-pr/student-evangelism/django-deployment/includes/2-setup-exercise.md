@@ -1,4 +1,4 @@
-In this module, you'll work on a website for dog shelters. This project collects information about all dog shelters and their adoption-ready dogs across the country. The fictional goal of this app is to find suitable homes for the dogs quickly. The app reaches individuals who want to adopt, not just in the shelters' local areas but across the country.
+In this module, you'll work on a website for dog shelters. This project collects information about all dog shelters and their adoption-ready dogs across the country/region. The fictional goal of this app is to find suitable homes for the dogs quickly. The app reaches individuals who want to adopt, not just in the shelters' local areas but across the country/region.
 
 Django is the perfect framework for this project. It allows you to quickly develop a customer-facing app. It also provides an established database and admin function that shelter employees can easily update. 
 
