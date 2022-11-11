@@ -2,4 +2,4 @@ Summary guidance: https://review.learn.microsoft.com/en-us/help/learn/id-guidanc
 
 ## Related links
 
-- [Challenge project - Design a mission-critical web application - Training | Microsoft Learn](../azure-mission-critical/)
+- [Challenge project - Design a mission-critical web application - Training | Microsoft Learn](/training/modules/azure-mission-critical/)
