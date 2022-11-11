@@ -90,7 +90,7 @@ Azure AD provides a cloud-based central authentication authority for any organiz
 
 SQL Server supports authentication for SQL Server or Windows accounts. Many users are looking to centralize their authentication systems using the cloud, and to support advanced authentication methods, like multi-factor authentication (MFA).
 
-### Solution using Azure Active Directory (AAD) for authentication
+### Solution using Azure Active Directory (Azure AD) for authentication
 
 SQL Server 2022 now supports Azure AD account based logins and users. SQL Server 2022 must be configured as an Azure Arc-enabled SQL Server to use Azure AD. The Azure extension for SQL Server stores information on SQL Server that allows the database engine to authenticate an Azure AD account.
 
