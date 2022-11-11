@@ -1,6 +1,6 @@
 The old world of security behind a corporate firewall, having your secure network perimeter just doesn’t work anymore, not with people wanting to work from anywhere, being able to connect to all sorts of cloud applications.
 
-For an interactive overview of how to Configure Conditional Access in Azure Ative Diretory, click the start button in the image below.
+For an interactive overview of how to Configure Conditional Access in Azure AD, click the start button in the image below.
 
 [:::image type="content" source="../media/configure-conditional-access-in-azure-ad-2022-9f7d8f24.png" alt-text="Screenshot of the Interactive Guide for Configure Conditional Access in Azure Active Directory":::
 ](https://mslearn.cloudguides.com/en-us/guides/Configure%20Conditional%20Access%20in%20Azure%20AD)
@@ -15,7 +15,7 @@ Conditional access policy is really a next generation policy that’s built for 
 
 What is the basis for saying that identity management is the new control plane? First, what is the control plane? In a switch or router, the control plane is the part that controls where the traffic is to go, but it’s not responsible for the movement of the traffic. The control plane learns the routes, either static or dynamic. The part responsible for moving the traffic is the forwarding plane. The following figure depicts a simple switch diagram.
 
-[:::image type="content" source="../media/az500-control-plan-890d319d.png" alt-text="Flowchart. BGP, OSPR, and Learning connected to RIB. RIB connects to Forwarding decision. Forwarding decision connects to forwarding and data plane.":::
+[:::image type="content" source="../media/az500-control-plan-890d319d.png" alt-text="Diagram showing that Flowchart. BGP, OSPR, and Learning connected to RIB. RIB connects to Forwarding decision. Forwarding decision connects to forwarding and data plane.":::
 ](https://mslearn.cloudguides.com/en-us/guides/Configure%20Conditional%20Access%20in%20Azure%20AD)
 
 A user’s identity is like a control plane, because it controls which protocols the user will interact with, which organizational programs the user can access, and which devices the user can employ to access those programs. Identity is what helps protect user and corporate data. For example, should that data be encrypted, deleted, or ignored when an issue occurs?
@@ -31,7 +31,7 @@ Administrators are faced with two primary goals:
 
 By using Conditional Access policies, you can apply the right access controls when needed to keep your organization secure and stay out of your user’s way when not needed.
 
-[:::image type="content" source="../media/az500-conditional-access-process-8b2e3d10.png" alt-text="Signals are verified to determine access to apps.":::
+[:::image type="content" source="../media/az500-conditional-access-process-8b2e3d10.png" alt-text="Diagram show that Signals are verified to determine access to apps.":::
 ](https://mslearn.cloudguides.com/en-us/guides/Configure%20Conditional%20Access%20in%20Azure%20AD)
 
 Conditional Access policies are enforced after the first-factor authentication has been completed. Conditional Access is not intended as an organization's first line of defense for scenarios like denial-of-service (DoS) attacks but can use signals from these events to determine access.
