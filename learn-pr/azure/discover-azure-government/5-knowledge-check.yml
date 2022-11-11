@@ -39,11 +39,11 @@ quiz:
       explanation: "Incorrect. Azure uses logical isolation to segregate each customer's applications and data from those of others."
     - content: "Azure Stack Hub."
       isCorrect: false
-      explanation: "Incorrect. Azure Stack Hub is an on-premises, cloud-consistent experience for customers who can’t directly connect to the internet, or where certain workload types must be hosted in-country because of law, compliance, or sentiment."
+      explanation: "Incorrect. Azure Stack Hub is an on-premises, cloud-consistent experience for customers who can’t directly connect to the internet, or where certain workload types must be hosted in-country/region because of law, compliance, or sentiment."
     - content: "Azure Blueprints."
       isCorrect: true
       explanation: "Correct. Azure Blueprints is a service that helps automate compliance and cybersecurity risk management in cloud environments."
-  - content: "Which of the following may provide solution for customers when Microsoft doesn't have an in-country cloud presence and can't meet data sovereignty requirements?"
+  - content: "Which of the following may provide solution for customers when Microsoft doesn't have an in-country/region cloud presence and can't meet data sovereignty requirements?"
     choices:
     - content: "Machine learning."
       isCorrect: false
@@ -56,4 +56,4 @@ quiz:
       explanation: "Incorrect. Confidential computing protects data from threats as it's being processed."
     - content: "Azure Stack Hub."
       isCorrect: true
-      explanation: "Correct. Azure Stack Hub is an on-premises, cloud-consistent experience for customers who can't directly connect to the internet, or where certain workload types must be hosted in-country because of law, compliance, or sentiment."
+      explanation: "Correct. Azure Stack Hub is an on-premises, cloud-consistent experience for customers who can't directly connect to the internet, or where certain workload types must be hosted in-country/region because of law, compliance, or sentiment."
