@@ -44,10 +44,10 @@ This example defines the label for the button ("Click me"), and specifies that a
 
 ## Requirements for .NET MAUI development
 
-To create .NET MAUI apps, you currently require Visual Studio version 17.3 Preview (the latest preview build of Visual Studio 2022) with the following workload installed:
+To create .NET MAUI apps, it is required to install [Visual Studio version 17.3](https://visualstudio.microsoft.com/vs/preview/) or newer with the following workload installed:
 
 - .NET Multi-Platform App UI development
 
-Additionally, if you want to build .NET MAUI Blazor apps, you must install the ASP.NET and web development workload.
+Additionally, if you want to build .NET MAUI Blazor apps, you must install the ASP.NET and web development workload. If you are developing on macOS, you will need to install [Visual Studio for Mac Preview version 17.4](https://visualstudio.microsoft.com/vs/mac/preview).
 
 :::image type="content" source="../media/2-visual-studio-workloads.png" alt-text="Screenshot of the Visual Studio installer showing the workloads required to support .NET MAUI development.":::

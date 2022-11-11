@@ -19,4 +19,4 @@ Supplemental Resources:
 
 - [Microsoft Dynamics 365 Blog](https://cloudblogs.microsoft.com/dynamics365/bdm/2021/11/02/introducing-voice-channel-for-dynamics-365-customer-service/)
 
-- [Exam MB-910: Microsoft Dynamics 365 Fundamentals (CRM) - Learn | Microsoft Docs](/learn/certifications/exams/mb-910) 
+- [Exam MB-910: Microsoft Dynamics 365 Fundamentals (CRM)](/certifications/exams/mb-910) 

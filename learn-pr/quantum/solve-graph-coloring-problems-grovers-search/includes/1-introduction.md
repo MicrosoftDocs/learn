@@ -7,7 +7,7 @@ The problem it solves is often referred to as "searching a database", but it's m
 This formulation seems rather mathematical at first, but it's powerful enough to express a broad class of problems. 
 The core idea of Grover's algorithm also turns out to be an important building block of other, more complex quantum algorithms.
 
-Get ready! Your first real task is here! In this module, we'll introduce the necessary concepts and tools for implementing Grover's algorithm and applying it to solve a problem that has driven our interstellar communications division crazy - assign a bandwidth to each space station so communications don't interfere. Then you'll demonstrate the implementation in Q#.
+Get ready! Your first real task is here! In this module, we'll introduce the necessary concepts and tools for implementing Grover's algorithm and applying it to solve a problem that has challenged our interstellar communications division - assign a bandwidth to each space station so communications don't interfere. Then you'll demonstrate the implementation in Q#.
 
 Finally, we'll outline some practical aspects of using Grover's algorithm for solving problems.
 
@@ -24,8 +24,8 @@ After completing this module, you'll be able to:
 
 - [.NET SDK 6.0](https://dotnet.microsoft.com/download?azure-portal=true)
 - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
-- The [Quantum Development Kit](/quantum/quickstarts/install-command-line?tabs=tabid-vscode&azure-portal=true&view=qsharp-preview)
+- The [Quantum Development Kit](/quantum/quickstarts/install-command-line?tabs=tabid-vscode&azure-portal=true)
 
-You'll need basic knowledge of the principles of quantum computing: superposition, interference, entanglement, and measurement. For more information, see [Explore the key concepts of quantum computing by using Q#](/learn/modules/qsharp-explore-key-concepts-quantum-computing?azure-portal=true).
+You'll need basic knowledge of the principles of quantum computing: superposition, interference, entanglement, and measurement. For more information, see [Explore the key concepts of quantum computing by using Q#](/training/modules/qsharp-explore-key-concepts-quantum-computing?azure-portal=true).
 
-You'll also need some familiarity with Q# and the Quantum Development Kit. For more information, see [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true).
+You'll also need some familiarity with Q# and the Quantum Development Kit. For more information, see [Create your first Q# program by using the Quantum Development Kit](/training/modules/qsharp-create-first-quantum-development-kit?azure-portal=true).

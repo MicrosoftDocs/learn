@@ -25,7 +25,7 @@ summary: |
   * Add custom steps to your ARM templates by using deployment scripts.
   * Use advanced constructs such as deployment order, conditional deployments, and secrets to manage complex deployments.
 prerequisites: Familiarity with Azure Resource Manager and Azure resource groups is recommended, but not required
-iconUrl: /learn/achievements/deploy-manage-resource-manager-templates.svg
+iconUrl: /training/achievements/deploy-manage-resource-manager-templates.svg
 levels:
 - beginner
 roles:

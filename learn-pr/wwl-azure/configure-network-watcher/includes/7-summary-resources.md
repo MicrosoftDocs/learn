@@ -11,4 +11,4 @@ You can learn more by reviewing the following.
 
  -  [Azure Network Watcher documentation](/azure/network-watcher/)
  -  [Network Performance Monitor solution in Azure](/azure/azure-monitor/insights/network-performance-monitor)
- -  [Learn - Monitor and troubleshoot your end-to-end Azure network infrastructure by using network monitoring tools](/learn/modules/troubleshoot-azure-network-infrastructure/)
+ -  [Monitor and troubleshoot your end-to-end Azure network infrastructure by using network monitoring tools](/training/modules/troubleshoot-azure-network-infrastructure/)

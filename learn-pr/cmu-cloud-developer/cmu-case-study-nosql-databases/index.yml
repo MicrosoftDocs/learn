@@ -36,7 +36,7 @@ prerequisites: |
   - Understand I/O virtualization
   - Know about the different types of data and how they are stored
   - Be familiar with distributed file systems and how they work
-iconUrl: /learn/achievements/cmu-cloud-developer/case-studies-nosql-databases.svg
+iconUrl: /training/achievements/cmu-cloud-developer/case-studies-nosql-databases.svg
 hidden: true
 levels:
 - beginner

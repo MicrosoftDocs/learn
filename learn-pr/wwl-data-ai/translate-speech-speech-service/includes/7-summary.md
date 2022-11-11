@@ -4,4 +4,4 @@ In this module, you learned how to:
 - Generate text translation from speech.
 - Synthesize spoken translations.
 
-For more information about speech translation, refer to the [Speech service documentation](https://docs.microsoft.com/azure/cognitive-services/speech-service/index-speech-translation).
+For more information about speech translation, refer to the [Speech service documentation](/azure/cognitive-services/speech-service/index-speech-translation).

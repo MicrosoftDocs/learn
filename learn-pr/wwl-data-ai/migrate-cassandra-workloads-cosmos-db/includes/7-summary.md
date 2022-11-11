@@ -13,5 +13,5 @@ In this module you learned how to:
 
 ## Learn more
 
-- [Introduction to the Azure Cosmos DB Cassandra API](https://docs.microsoft.com/azure/cosmos-db/cassandra-introduction)
-- [Tutorial: Migrate your data to Cassandra API account in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/cassandra-import-data)
+- [Introduction to the Azure Cosmos DB Cassandra API](/azure/cosmos-db/cassandra-introduction)
+- [Tutorial: Migrate your data to Cassandra API account in Azure Cosmos DB](/azure/cosmos-db/cassandra-import-data)

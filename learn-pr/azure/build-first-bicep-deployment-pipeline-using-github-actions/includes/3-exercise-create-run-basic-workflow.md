@@ -28,6 +28,8 @@ In this exercise, you'll:
 
    :::image type="content" source="../media/3-github-new-project-details.png" alt-text="Screenshot of the GitHub interface showing the configuration for the repository to create." border="true":::
 
+1. Keep a note of the **Owner** of the repository. In the screenshot above, the owner is `mygithubuser`. This is your GitHub account name, and you'll use it later in this module.
+
 1. Select **Create repository**.
 
 ## Clone the repository

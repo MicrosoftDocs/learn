@@ -4,8 +4,9 @@ metadata:
   title: Exercise - Set up sandbox environment
   description: Create an Azure SQL Database and a Linux VM for use throughout this module.
   ms.date: 11/09/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: VanMSFT
+  ms.author: vanto
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash

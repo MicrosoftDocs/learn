@@ -11,7 +11,7 @@ You'll learn to:
 
 ## Create a workflow from a template
 
-To create a workflow, you'll start by using a template. A template has common jobs and steps pre-configured for the particular type of automation you're implementing. If you're not familiar with workflows, jobs, and steps, check out the [Automate development tasks by using GitHub Actions](/learn/modules/github-actions-automate-tasks/) module.
+To create a workflow, you'll start by using a template. A template has common jobs and steps pre-configured for the particular type of automation you're implementing. If you're not familiar with workflows, jobs, and steps, check out the [Automate development tasks by using GitHub Actions](/training/modules/github-actions-automate-tasks/) module.
 
 On the main page of your repository, select the **Actions** tab to create a new workflow. You'll see that you can choose from many different templates. Two examples are the *Node.js* template, which does a clean install of node dependencies, builds the source code and runs tests across different versions of Node; and the *Python package* template, which installs Python dependencies and runs tests, including lint, across different versions of Python.
 

@@ -12,4 +12,4 @@ To help you protect yourself against these challenges, Defender for Cloud provid
  -  Protect against threats: Defender for Cloud assesses your workloads and raises threat prevention recommendations and threat detection alerts.
  -  Get secure faster: In Defender for Cloud, everything is done in cloud speed. Because it is natively integrated, deployment of Defender for Cloud is easy, providing you with autoprovisioning and protection with Azure services.
 
-You can read more about Microsoft Defender for Cloud at: [https://docs.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction](/azure/defender-for-cloud/defender-for-cloud-introduction).
+You can read more about Microsoft Defender for Cloud at: [What is Microsoft Defender for Cloud?](/azure/defender-for-cloud/defender-for-cloud-introduction).

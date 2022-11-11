@@ -3,7 +3,7 @@ uid: learn.wwl.work-with-data-kql
 metadata:
   title: Work with data in Microsoft Sentinel using Kusto Query Language
   description: "Work with data in Microsoft Sentinel using Kusto Query Language"
-  ms.date: 06/20/2022
+  ms.date: 08/04/2022
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Extract data from structured string data using KQL
   - Create Functions using KQL
 prerequisites: ""
-iconUrl: /learn/achievements/work-with-data-in-kql.svg
+iconUrl: /training/achievements/work-with-data-in-kql.svg
 levels:
 - intermediate
 roles:

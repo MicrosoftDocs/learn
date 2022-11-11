@@ -6,8 +6,8 @@ metadata:
   title: Introduction
   description: Introduction to managing multiple environments by using Bicep and GitHub Actions.
   ms.date: 11/08/2021
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

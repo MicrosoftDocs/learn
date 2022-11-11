@@ -33,7 +33,7 @@ To use GitOps with an Azure Arc-enabled Kubernetes cluster, the following high-l
    - Read and write permissions on the `Microsoft.Kubernetes/connectedClusters` resource type.
    - Azure Command Line Interface (CLI) version 2.15 or newer installed on your management computer, along with the latest `k8s-configuration` and `k8s-extension` CLI extension packages.
    - Registration of the required service providers on the Azure subscription.
-   - Outbound connectivity for the GitOps agents. For details regarding target URLs and ports, refer to Microsoft Docs.
+   - Outbound connectivity for the GitOps agents. For details regarding target URLs and ports, refer to Microsoft Learn.
 
 1. Use the `k8s-configuration` Azure CLI extension to apply a Flux configuration and enable GitOps in your Arc-enabled Kubernetes cluster.
 1. Validate the configuration to confirm it was successfully created. The configuration resource will be updated with compliance status, messages, and debugging information.

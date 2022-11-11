@@ -18,7 +18,7 @@ You can manually install SAP HANA on Azure VMs in the following ways:
 
 * **SAP HANA database lifecycle manager (HDBLCM) tool** followed by the installation of NetWeaver.
 
-For details regarding this procedure, refer to **Quickstart: Manual installation of single-instance SAP HANA on Azure Virtual Machines** at [https://docs.microsoft.com/azure/virtual-machines/workloads/sap/hana-get-started](https://docs.microsoft.com/azure/virtual-machines/workloads/sap/hana-get-started) 
+For details regarding this procedure, refer to **Quickstart: Manual installation of single-instance SAP HANA on Azure Virtual Machines** at [Installation of SAP HANA on Azure virtual machines](/azure/virtual-machines/workloads/sap/hana-get-started) 
 
 > [!NOTE]
 > Regardless of the configuration and deployment methodology, it is essential that the final VM infrastructure is verified using SAP HANA H/W Configuration Check Tool (HWCCT). These results should be validated to ensure the VMs are capable of operating production workloads and thereby certified by SAP as well.

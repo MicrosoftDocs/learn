@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   Ability to:
   *   Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
-iconUrl: /learn/achievements/iot-architecture-solution.svg
+iconUrl: /training/achievements/iot-architecture-solution.svg
 levels:
 - intermediate
 roles:

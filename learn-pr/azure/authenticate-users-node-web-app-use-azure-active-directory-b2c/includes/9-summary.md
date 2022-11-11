@@ -6,7 +6,7 @@
 
     Example: "You are writing the instruction manual for a new model fire extinguisher. The instructions must be quickly read and understood by a wide variety of people."
 
-    [Summary unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit?branch=main)
+    [Summary unit guidance](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit?branch=main)
 -->
 Your organization was launching an online grocery store. Your organization needed customers to be authenticated in a web app before they could make an order. Instead of managing customer identities from within the web app, which is a challenge, and wouldn't scale well, your organization needed to use an identity management solution.
 
@@ -69,9 +69,9 @@ By using Azure AD B2C and with the help of msal-node library, you added an authe
 
     Example:
         "## References
-          * [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-          * [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-          * [Manage access to billing information for Azure](https://docs.microsoft.com/azure/billing/billing-manage-access)"
+          * [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+          * [What is Azure role-based access control (Azure RBAC)?](/azure/role-based-access-control/overview)
+          * [Manage access to billing information for Azure](/azure/billing/billing-manage-access)"
  -->
 
 <!-- Do not include any other content -->

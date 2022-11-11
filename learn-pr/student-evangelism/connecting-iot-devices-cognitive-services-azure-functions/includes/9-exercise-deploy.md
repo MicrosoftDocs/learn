@@ -131,7 +131,7 @@ Open **Functions\DevKitTranslatorFunction.cs** and update the following lines of
 // Subscription Key of Speech Service
 const string speechSubscriptionKey = "";
 
-// Region of the speech service, see https://docs.microsoft.com/azure/cognitive-services/speech-service/regions for more details.
+// Region of the speech service, see https://learn.microsoft.com/azure/cognitive-services/speech-service/regions for more details.
 const string speechServiceRegion = "";
 
 // Device ID

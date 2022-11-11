@@ -16,7 +16,7 @@ abstract: |
   - Describe a Digital Twins and summarize how they can be used in business settings
   - Summarize Digital Twins platforms and services such as Azure Digital Twins and Unity
   - Install and configure your development environment for building Mixed Reality solutions using Azure Digital Twins and Unity
-iconUrl: /learn/achievements/set-up-mixed-reality-azure-digital-twins-unity.svg
+iconUrl: /training/achievements/set-up-mixed-reality-azure-digital-twins-unity.svg
 levels:
 - beginner
 roles:
@@ -32,8 +32,6 @@ products:
 - azure-iot
 - azure-iot-hub
 - azure-signalr-service
-- azure-event-grid
-- azure-event-hubs
 - azure-functions
 - hololens
 - windows

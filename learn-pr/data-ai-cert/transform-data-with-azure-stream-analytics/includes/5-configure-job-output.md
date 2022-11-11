@@ -17,9 +17,9 @@ These steps are similar to the ones you followed to create the input. Start by c
     | Storage account name | Enter the prefix **streamsink**, and add a numeric suffix. You might need to try a few combinations to find a unique name in Azure. |
     | *remaining settings* | Leave *default*. |
 
-    ![Screenshot that shows how to add the storage account name "streamsink"](../media/5-add-storage-account.png)
+    :::image type="content" source="../media/5-add-storage-account-output.png" alt-text="Screenshot that shows how to add the storage account name streamsink.":::
 
-1. Select **Review + create**.
+1. Select **Review**.
 
 1. After the request is validated, select **Create** to run the deployment step.
 
@@ -37,23 +37,20 @@ Next, connect the storage account as the destination for the Stream Analytics jo
 
 1. In the left nav bar, under **Job topology**, select **Outputs**.
 
-1. Select **+ Add**, and from the list, select **Blob storage/ADLS Gen2**. The **Blob storage/ADLS Gen2** panel appears.
+1. Select **+ Add**, and from the list, select **Blob storage**. The **Blob storage/ADLS Gen2** panel displays.
 
     | Setting  | Value  |
     |---|---|
-    | Output alias | Your output alias name. |
-    | Select storage from your subscriptions | checked |
+    | Output alias | **streamoutput**. |
+    | Select Blob storage/ADLS Gen2 from your subscriptions | checked |
     | Subscription | Your subscription name. |
-    | Storage account | :awsastudxx:, where xx is your initials. |
-    | Container | Use existing (checked) |
-    | *Remaining settings* | Leave *default* |
-
-1. Select **Save**.
+    | Storage account | The output storage account, **streamsink**. |
+    | Authentication mode | Connection string |
 
     > [!NOTE]
     > If your account doesn't appear in the list, try refreshing it by closing the Azure portal, closing the browser, and then opening the Azure portal again.
 
-1. Under **Container**, select **Create new**. Give the container a unique name, such as **learn-container**.
+1. Under **Container**, select **Create new**. Give the container a unique name, such as **learn-container-output**.
 
 1. Under **Path pattern**, enter **output/**.
 

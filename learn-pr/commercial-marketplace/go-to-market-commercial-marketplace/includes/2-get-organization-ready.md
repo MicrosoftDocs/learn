@@ -7,11 +7,11 @@ A good strategy starts with consensus among the members of your company's leader
 Consider nominating someone from your company to act as your team’s lead point of contact for the Microsoft commercial marketplace. This person can help your leadership team understand the benefits of the commercial marketplace for your company and its customers, answering questions that get raised by members of your team.
 
 > [!TIP]
-> Start educating your team by encouraging them to complete the **[Introduction to the Microsoft commercial marketplace module on Microsoft Learn](/learn/modules/intro-commercial-marketplace/)**. This brief module provides an overview of the benefits of joining the commercial marketplace for you and your customers.
+> Start educating your team by encouraging them to complete the **[Introduction to the Microsoft commercial marketplace module on Microsoft Learn](/training/modules/intro-commercial-marketplace/)**. This brief module provides an overview of the benefits of joining the commercial marketplace for you and your customers.
 
 After learning what the commercial marketplace is, your leaders will need to come to an agreement on your organization's goals for selling your products and services through the commercial marketplace. Some common benefits include:
 
-- Growing your company’s reach and finding new customers by selling your products and services in more than 140 countries
+- Growing your company’s reach and finding new customers by selling your products and services in more than 140 countries/regions
 - Shortening sales cycles by simplifying discovery, evaluation, and purchasing for your customers
 - Lowering the cost of selling your solutions by leading new customers to purchase your solutions through the commercial marketplace, giving them the chance to leverage their existing purchasing agreements with Microsoft
 - Achieving cost savings and operational efficiencies as Microsoft takes on billing, collection, payment instruments, currency translations, and taxation for purchases from the commercial marketplace
@@ -78,10 +78,10 @@ To help your colleagues in sales, marketing, and engineering, your finance team 
 - Investments for new marketing campaigns that generate customer leads from the commercial marketplace and promote awareness of your offers
 - Funding to help your engineering team integrate your solution with the commercial marketplace so customers can purchase your software and services through Microsoft
 
-When you publish a transact offer to the commercial marketplace, invoicing, collections, and [tax activities](/partner-center/tax-details-marketplace?context=%2fazure%2fmarketplace%2fcontext%2fcontext) in many countries are all processed by Microsoft. This will lead to a different cost of sales for your marketplace products, and changes to product finance and accounting processes. Your finance & operations departments should plan accordingly, starting with the following activities:
+When you publish a transact offer to the commercial marketplace, invoicing, collections, and [tax activities](/partner-center/tax-details-marketplace?context=/azure/marketplace/context/context) in many countries/regions are all processed by Microsoft. This will lead to a different cost of sales for your marketplace products, and changes to product finance and accounting processes. Your finance & operations departments should plan accordingly, starting with the following activities:
 
 - Planning for commercial marketplace service fees charged when you sell your product through Microsoft
-- Reviewing the [billing and payout](/partner-center/payment-thresholds-methods-timeframes?context=%2fazure%2fmarketplace%2fcontext%2fcontext) processes to modify existing finance and accounting practices
+- Reviewing the [billing and payout](/partner-center/payment-thresholds-methods-timeframes?context=/azure/marketplace/context/context) processes to modify existing finance and accounting practices
 - Incorporating [commercial marketplace analytics](/azure/marketplace/partner-center-portal/analytics) and offer data into financial reports and analyses
 - Evaluating changes in your company's operational costs as you process sales through the commercial marketplace
 

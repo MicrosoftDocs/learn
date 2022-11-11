@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.oxford.explore-select-use-cases
+metadata:
+  title: Explore the art of selecting use cases for winning Autonomous AI
+  description: Learn to identify use cases for Autonomous AI.
+  ms.date: 10/19/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore the art of selecting use cases for winning Autonomous AI
+summary: In this module, you'll learn how to identify use cases that are a good fit to be solved using Machine Teaching for Autonomous AI.
+abstract: | 
+  After completing this module, you'll be able to:
+  - Select use cases for Autonomous AI
+  - Evaluate scenarios where you can use Autonomous AI
+
+  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+prerequisites: | 
+  - Basic knowledge of Automated Intelligence
+  - Basic knowledge of Autonomous Intelligence
+  - Basic knowledge of Machine Teaching
+  - Basic knowledge of brain design patterns
+iconUrl: /training/achievements/generic-badge.svg
+levels: 
+- beginner
+roles: 
+- business-user
+products: 
+- azure
+subjects:
+- artificial-intelligence
+units:
+- learn.oxford.explore-select-use-cases.introduction
+- learn.oxford.explore-select-use-cases.how-select-use-cases
+- learn.oxford.explore-select-use-cases.when-use-autonomous-ai
+- learn.oxford.explore-select-use-cases.knowledge-check
+- learn.oxford.explore-select-use-cases.summary
+
+badge: 
+  uid: learn.oxford.explore-select-use-cases.badge

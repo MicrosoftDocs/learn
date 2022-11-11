@@ -3,7 +3,7 @@ uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure
 metadata:
   title: Explore relational database services in Azure
   description: "Explore relational database services in Azure"
-  ms.date: 07/07/2022
+  ms.date: 09/21/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Provision a database service on Azure
 prerequisites: |
   Before starting this module, you should have a fundamental understanding of relational data concepts and some familiarity with Microsoft Azure and the Azure portal.
-iconUrl: /learn/achievements/explore-provision-deploy-relational-database-offerings-azure.svg
+iconUrl: /training/achievements/explore-provision-deploy-relational-database-offerings-azure.svg
 levels:
 - beginner
 roles:

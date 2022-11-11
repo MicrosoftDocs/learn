@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/08/2022
+  ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -14,11 +14,11 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "Which Azure CLI command will create a new Azure Cosmos DB account using the SQL API?"
+  - content: "Which Azure CLI command will create a new Azure Cosmos DB account using the NoSQL API?"
     choices:
     - content: "``az cosmosdb create``"
       isCorrect: true
-      explanation: "That's correct. The ``az cosmosdb create`` command will create a SQL API account by default."
+      explanation: "That's correct. The ``az cosmosdb create`` command will create a NoSQL API account by default."
     - content: "``az cosmosdb sql create``"
       isCorrect: false
       explanation: "That's incorrect. The ``az cosmosdb sql`` command group does not have a ``create`` command/verb."
@@ -36,7 +36,7 @@ quiz:
     - content: "``az cosmosdb sql container throughput update --max-throughput``"
       isCorrect: true
       explanation: "That's correct. The **update** command with the **--max-throughput** argument changes the maximum amount of throughput for a container."
-  - content: "How can you initiate a manual failover to another region in your Azure Cosmos DB SQL API account?"
+  - content: "How can you initiate a manual failover to another region in your Azure Cosmos DB for NoSQL account?"
     choices:
     - content: "Use the ``az cosmosdb failover-priority-change --failover-policies`` command to change the priority of any region."
       isCorrect: false

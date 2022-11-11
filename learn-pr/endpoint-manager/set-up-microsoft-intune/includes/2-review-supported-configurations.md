@@ -24,14 +24,13 @@ Different administrative tasks require that you use one of the following adminis
 The following browsers are supported for these portals:
 
 - Microsoft Edge (latest version)
-- Microsoft Internet Explorer 11
 - Safari (latest version, Mac only)
 - Chrome (latest version)
 - Firefox (latest version)
 
 ## Intune network configuration requirements
 
-It is important to understand that there are different bandwidth requirements for your Intune deployments. To ensure devices receive the updates and content from Intune, they must periodically connect to the Internet. The time required to receive updates or content can vary, but they should remain continuously connected to the Internet for at least one hour each day.
+It's important to understand that there are different bandwidth requirements for your Intune deployments. To ensure devices receive the updates and content from Intune, they must periodically connect to the Internet. The time required to receive updates or content can vary, but they should remain continuously connected to the Internet for at least one hour each day.
 
 **Content requiring a single installation:**
 

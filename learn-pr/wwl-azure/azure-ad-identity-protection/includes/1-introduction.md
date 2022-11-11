@@ -10,14 +10,13 @@ A security engineer uses Azure AD Identity Protection to configure Azure feature
 
 ## Skills measured
 
-Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
+Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/certifications/exams/az-500).
 
 Manage identity and access (30-35%)
 
  -  Configure secure access by using Azure and
-    
      -  Configure Access Reviews
-     -  Implement Conditional Access policies including multi-factor authentication (MFA)
+     -  Implement Conditional Access policies, including multi-factor authentication
      -  Configure Azure AD identity protection
 
 ## Learning objectives
@@ -25,7 +24,7 @@ Manage identity and access (30-35%)
 In this module, you will:
 
  -  Deploy and configure Identity Protection
- -  Configure MFA for users, groups, and applications
+ -  Configure multi-factor authentication for users, groups, and applications
  -  Create Conditional Access policies to ensure your security
  -  Create and follow an access review process
 

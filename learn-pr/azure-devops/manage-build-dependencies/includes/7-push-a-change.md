@@ -56,7 +56,7 @@ Now that you've added the new property to the `Score` class, and verified the pr
 
     For example, according to Semantic Versioning, bumping the minor version to 1 (1.1.0) tells others that the package is backward compatible with apps that use version 1.0.0 of that package. Those who use the package might then modify their app to make use of new features.
 
-    Popular open source projects provide documentation in the form of a _changelog_ that explains the changes made in each version, as well as how to migrate from one major version to the next.
+    Popular open source projects provide documentation in the form of a _changelog_ that explains the changes made in each version, and how to migrate from one major version to the next.
 
 1. Stage, commit, and push your changes.
 
@@ -80,7 +80,7 @@ Now, change the **Tailspin.SpaceGame.Web** project to use the new version of the
 
 Here, you'll work from the copy of Visual Studio Code for the _Space Game_ web app project, **Tailspin.SpaceGame.Web**.
 
-1. From Visual Studio Code, open **Tailspin.SpaceGame.Web.csproj**, and change `PackageReference` to the version number of the **Tailspin.SpaceGame.Web.Models** package you just created in Azure Artifacts. Then, save the file.
+1. From Visual Studio Code, open **Tailspin.SpaceGame.Web.csproj**, and change `PackageReference` to the version number of the **Tailspin.SpaceGame.Web.Models** package you created in Azure Artifacts. Then, save the file.
 
     Here's an example.
 

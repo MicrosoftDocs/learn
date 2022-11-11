@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enforce-power-bi-model-security.exercise-enforce-model-security
+title: 'Exercise: Enforce model security'
+metadata:
+  title: 'Exercise: Enforce model security'
+  description: "Exercise: Enforce model security"
+  ms.date: 09/07/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 124444
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/4a-exercise-enforce-model-security.md)]

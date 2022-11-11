@@ -3,7 +3,7 @@ uid: learn.wwl.extract-data-from-forms-use-form-recognizer
 metadata:
   title: Extract data from forms by using Form Recognizer
   description: Extract data from forms by using Form Recognizer
-  ms.date: 07/06/2022
+  ms.date: 11/01/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -11,8 +11,14 @@ metadata:
 title: Extract data from forms by using Form Recognizer
 prerequisites: |
   - None
-summary: ""
-iconUrl: /learn/achievements/generic-trophy.svg
+summary: |
+  In this learning path, you'll see how Azure Forms Analyzer solutions can enable you to capture data from typed or hand-written forms. You'll also learn how to build a solution for your custom form types and integrate that solution into an Azure Cognitive Search pipeline.
+  You will learn how to:
+  * Design a solution that analyzes your business forms by using Azure Forms Analyzer.
+  * Create a solution that analyzes common documents by using Azure Forms Analyzer.
+  * Create a solution that analyses different custom form types by using Azure Forms Analyzer.
+  * Include an Azure Form Recognizer service as a custom skill in an Azure Cognitive Search pipeline.
+iconUrl: /training/achievements/extract-data-from-forms-use-form-recognizer.svg
 levels:
 - intermediate
 roles:

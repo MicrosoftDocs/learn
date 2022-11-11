@@ -6,7 +6,7 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.date: 07/14/2022
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
   ms.topic: interactive-tutorial
 title: Implement feature flags in a cloud-native ASP.NET Core microservices app
 summary: Implement a feature flag in your cloud-native ASP.NET Core microservices app to enable or disable a feature in real time.
@@ -44,6 +44,6 @@ units:
   - learn.microservices-configuration-aspnet-core.5-implement-app-configuration
   - learn.microservices-configuration-aspnet-core.6-knowledge-check
   - learn.microservices-configuration-aspnet-core.7-summary
-iconUrl: /learn/achievements/aspnetcore/microservices-configuration-aspnet-core.svg
+iconUrl: /training/achievements/aspnetcore/microservices-configuration-aspnet-core.svg
 badge:
   uid: learn.microservices-configuration-aspnet-core.badge

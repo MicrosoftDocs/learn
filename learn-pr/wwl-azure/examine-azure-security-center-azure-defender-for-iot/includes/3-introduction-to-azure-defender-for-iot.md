@@ -67,4 +67,4 @@ Check your IoT Hub location to verify service availability before you begin.
 
 ### Supported platforms for agents
 
-Microsoft Defender for IoT agents supports a growing list of devices and platforms that includes Linux versions for C-based agents and both Linux and Windows versions for C\#-based agents. For the most current list, see: [https://docs.microsoft.com/azure/defender-for-iot/how-to-deploy-agent](/azure/defender-for-iot/how-to-deploy-agent)
+Microsoft Defender for IoT agents supports a growing list of devices and platforms that includes Linux versions for C-based agents and both Linux and Windows versions for C\#-based agents. For the most current list, see: [Select and deploy a security agent on your IoT device](/azure/defender-for-iot/how-to-deploy-agent)

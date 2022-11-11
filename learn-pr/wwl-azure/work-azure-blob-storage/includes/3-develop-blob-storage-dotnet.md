@@ -158,7 +158,6 @@ Console.WriteLine("Uploading to Blob storage as blob:\n\t {0}\n", blobClient.Uri
 // Open the file and upload its data
 using FileStream uploadFileStream = File.OpenRead(localFilePath);
 await blobClient.UploadAsync(uploadFileStream, true);
-uploadFileStream.Close();
 
 Console.WriteLine("\nThe file was uploaded. We'll verify by listing" + 
         " the blobs next.");
@@ -202,7 +201,6 @@ BlobDownloadInfo download = await blobClient.DownloadAsync();
 using (FileStream downloadFileStream = File.OpenWrite(downloadFilePath))
 {
     await download.Content.CopyToAsync(downloadFileStream);
-    downloadFileStream.Close();
 }
 Console.WriteLine("\nLocate the local file in the data directory created earlier to verify it was downloaded.");
 Console.WriteLine("The next step is to delete the container and local files.");

@@ -12,7 +12,7 @@ To delete the project:
 1. Select **Project settings** in the lower corner.
 1. At the bottom of the **Project details** area, select **Delete**.
 
-    :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="A screenshot of Azure Pipelines showing the location of the Delete button.":::
+    :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="Screenshot of Azure Pipelines showing the location of the Delete button.":::
 1. In the window that appears, enter the project name, and then select **Delete** again.
 
 Your project is now deleted.

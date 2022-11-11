@@ -20,7 +20,7 @@ prerequisites: |
   - Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based.
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
   - Experience creating and configuring resources using the Azure portal.
-iconUrl: /learn/achievements/configure-automatic-deployment-for-azure-sql-database.svg
+iconUrl: /training/achievements/configure-automatic-deployment-for-azure-sql-database.svg
 levels:
 - intermediate
 roles:

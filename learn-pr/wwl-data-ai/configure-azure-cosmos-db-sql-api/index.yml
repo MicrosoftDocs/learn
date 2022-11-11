@@ -1,22 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-cosmos-db-sql-api
 metadata:
-  title: Configure Azure Cosmos DB SQL API database and containers
-  description: "Select between the various throughput offerings in Azure Cosmos DB SQL API."
-  ms.date: 12/22/2021
+  title: Configure Azure Cosmos DB for NoSQL database and containers
+  description: "Select between the various throughput offerings in Azure Cosmos DB for NoSQL."
+  ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Configure Azure Cosmos DB SQL API database and containers
-summary: Select between the various throughput offerings in Azure Cosmos DB SQL API.
+title: Configure Azure Cosmos DB for NoSQL database and containers
+summary: Select between the various throughput offerings in Azure Cosmos DB for NoSQL.
 abstract: |
   After completing this module, you'll be able to:
   - Compare the various service and throughput offerings for Azure Cosmos DB
   - Migrate between standard and autoscale throughput
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-database-container.svg
+iconUrl: /training/achievements/azure-cosmos-database-container.svg
 levels:
 - intermediate
 roles:

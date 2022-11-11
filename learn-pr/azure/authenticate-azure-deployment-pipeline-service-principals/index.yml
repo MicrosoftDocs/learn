@@ -5,8 +5,8 @@ metadata:
   title: Authenticate your Azure deployment pipeline by using service principals
   description: Learn how to create, manage, and grant permissions to service principals, which enable your deployment pipelines to securely authenticate to Azure. 
   ms.date: 06/13/2022
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Authenticate your Azure deployment pipeline by using service principals
@@ -31,7 +31,7 @@ prerequisites: |
   - Either:
     - The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.  
     - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps), installed locally.
-iconUrl: /learn/achievements/bicep/authenticate-azure-deployment-pipeline-service-principals.svg
+iconUrl: /training/achievements/bicep/authenticate-azure-deployment-pipeline-service-principals.svg
 levels:
   - intermediate
 roles:
@@ -45,7 +45,6 @@ products:
   - azure-active-directory
   - azure-devops
   - azure-resource-manager
-  - github
 subjects:
   - devops
   - cloud-computing

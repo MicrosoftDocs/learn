@@ -1,4 +1,4 @@
-Data is a major part of sports for players, coaches, and fans. Whether you're choosing players for a fantasy league or providing why your favorite player is the greatest of all time (GOAT), you're likely using player stats, which are also known as data.
+Data is a major part of sports for players, coaches, and fans. Whether you're choosing players for a fantasy league or proving why your favorite player is the greatest of all time (GOAT), you're likely using player stats, which are also known as data.
 
 If you're following along the learning path inspired by *Space Jam: A New Legacy* or you're an avid basketball fan, you might be familiar with player efficiency rating (PER). This statistic kept for basketball players takes into account data points from across a player's career, such as minutes played and points scored. For example, at the time of writing this module, LeBron James has the highest PER of any current NBA player.
 

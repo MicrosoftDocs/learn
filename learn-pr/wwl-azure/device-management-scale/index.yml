@@ -20,7 +20,7 @@ prerequisites: |
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
   - Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
   - Describe the device management patterns and device configuration options using device twins and direct methods.
-iconUrl: /learn/achievements/device-management-at-scale.svg
+iconUrl: /training/achievements/device-management-at-scale.svg
 levels:
 - intermediate
 roles:

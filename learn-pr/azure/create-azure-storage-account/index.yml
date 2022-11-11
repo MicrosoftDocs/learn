@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Experience with the Azure portal
   - Familiarity with the Azure data services Blobs, Files, Queues, and Tables
-iconUrl: /learn/achievements/create-azure-storage-account.svg
+iconUrl: /training/achievements/create-azure-storage-account.svg
 levels: 
 - beginner
 roles: 

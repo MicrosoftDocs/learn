@@ -4,17 +4,17 @@ trigger:
     include:
     - main
 
-variables:
-  - name: deploymentDefaultLocation
-    value: westus
-
 pool:
   vmImage: ubuntu-latest
+
+variables:
+  - name: deploymentDefaultLocation
+    value: westus3
 
 stages:
 
 - stage: Lint
-  jobs: 
+  jobs:
   - job: LintCode
     displayName: Lint code
     steps:
@@ -41,7 +41,7 @@ stages:
             -environmentType $(EnvironmentType)
 
 - stage: Preview
-  jobs: 
+  jobs:
   - job: PreviewAzureChanges
     displayName: Preview Azure changes
     steps:

@@ -18,7 +18,7 @@ rainfall = {
 }
 ```
 
-Let's say you want to display the list of all rainfall. You can type out each month name, but this would become tedious.
+Let's say you want to display the list of all rainfall. You can type out the name of each month, but that would be tedious.
 
 ```python
 
@@ -49,7 +49,7 @@ else:
 
 ## Retrieve all values
 
-Similar to `keys()`, `values()` returns the list of all values in a dictionary *without* their respective keys. This can be helpful when you're using the key for labeling purposes, such as the preceding example, in which the keys are the name of the month. You can use `values()` to determine the total rainfall amount:
+Similar to `keys()`, `values()` returns the list of all values in a dictionary *without* their respective keys. `values()` can be helpful when you're using the key for labeling purposes, such as the preceding example, in which the keys are the name of the month. You can use `values()` to determine the total rainfall amount:
 
 ```python
 total_rainfall = 0

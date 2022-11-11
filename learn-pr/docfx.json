@@ -603,6 +603,19 @@
                     "**/resources/**"
                 ],
                 "dest": "modules"
+            },
+            {
+                "src": "vs-code",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
             },           
             {
                 "files": [

@@ -32,7 +32,7 @@ Azure hosts and serves your web app while Azure Functions powers back-end API fu
 
 In this module, you'll create, modify, and deploy a web app and API to Azure Static Web Apps.
 
-This module provides a sample Blazor application, as well as an API written in C#.
+This module provides a sample Blazor application, and an API written in C#.
 
 ### What you'll do
 

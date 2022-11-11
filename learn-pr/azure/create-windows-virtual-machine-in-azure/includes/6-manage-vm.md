@@ -10,7 +10,7 @@ By default, new VMs are locked down.
 
 Apps can make outgoing requests, but the only inbound traffic allowed is from the virtual network (for example, other resources on the same local network), and from Azure's Load Balancer (probe checks).
 
-There are two steps to adjusting the configuration to support FTP. When you create a new VM, you have an opportunity to open a few common ports (RDP, HTTP, HTTPS, and SSH). However, if you require other changes to the firewall, you will need to do them yourself.
+There are two steps to adjusting the configuration to support FTP. When you create a new VM, you have an opportunity to open a few common ports (RDP, HTTP, HTTPS, and SSH). However, if you require other changes to the firewall, you will need to make them yourself.
 
 The process for this involves two steps:
 
@@ -29,7 +29,7 @@ NSGs use *rules* to allow or deny traffic moving through the network. Each rule 
 
 ![An illustration showing the architecture of network security groups in two different subnets. In one subnet, there are two virtual machines, each with their own network interface rules. The subnet itself has a set of rules that applies to both the virtual machines.](../media/7-nsg-rules.png)
 
-Each security group has a set of default security rules to apply the default network rules described above. These default rules cannot be modified, but *can* be overridden.
+Each security group has a set of default security rules to apply the default network rules described above. These default rules can't be modified, but *can* be overridden.
 
 #### How Azure uses network rules
 
@@ -40,7 +40,7 @@ For inbound traffic, Azure processes the security group associated to the subnet
 
 The rules are evaluated in *priority order*, starting with the **lowest priority** rule. Deny rules always **stop** the evaluation. For example, if an outbound request is blocked by a network interface rule, any rules applied to the subnet will not be checked. In order for traffic to be allowed through the security group, it must pass through *all* applied groups.
 
-The last rule is always a **Deny All** rule. This is a default rule added to every security group for both inbound and outbound traffic with a priority of 65500. That means to have traffic pass through the security group, *you must have an allow rule* or it will be blocked by the default final rule.
+The last rule is always a **Deny All** rule. This is a default rule added to every security group for both inbound and outbound traffic with a priority of 65500. That means to have traffic pass through the security group, *you must have an allow rule* or it will be blocked by the default final rule. [Learn more about security rules](/azure/virtual-network/network-security-groups-overview#security-rules).
 
 > [!NOTE]
 > SMTP (port 25) is a special case. Depending on your subscription level and when your account was created, outbound SMTP traffic may be blocked. You can make a request to remove this restriction with business justification.

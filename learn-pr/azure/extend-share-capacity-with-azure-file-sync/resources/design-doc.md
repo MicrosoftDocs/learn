@@ -168,10 +168,10 @@ Identify the subtasks of *Extend your on-premises file share capacity by using A
 
 ## Resources
 Related links for Azure File Sync:
-- http://docs.microsoft.com/azure/storage/files/storage-sync-files-planning
-- https://docs.microsoft.com/en-us/azure/storage/files/storage-sync-files-deployment-guide?tabs=azure-portal
-- https://docs.microsoft.com/en-us/azure/storage/files/storage-sync-files-extend-servers
-- https://docs.microsoft.com/en-us/azure/storage/files/storage-sync-files-troubleshoot
+- http://learn.microsoft.com/azure/storage/files/storage-sync-files-planning
+- https://learn.microsoft.com/azure/storage/files/storage-sync-files-deployment-guide?tabs=azure-portal
+- https://learn.microsoft.com/azure/storage/files/storage-sync-files-extend-servers
+- https://learn.microsoft.com/azure/storage/files/storage-sync-files-troubleshoot
 
 NOTES from design phase
 - If we are going to provide a sandbox for the user to run this, it will need to have the following permissions: Create a VM, Create file storage, Create Azure File Sync

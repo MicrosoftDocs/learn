@@ -4,11 +4,11 @@ By using modules, you can reuse your Bicep code easily, and you can make your Bi
 
 ## The benefits of modules
 
-In your toy company, you've been provisioning cloud resources by using many individual Bicep files. Over time, these templates grow significantly. Eventually, you end up having monolithic code that's difficult to read and navigate, and even harder to maintain. 
+In your toy company, you've been provisioning cloud resources by using many individual Bicep files. Over time, these templates grow significantly. Eventually, you end up having monolithic code that's difficult to read and navigate, and even harder to maintain.
 
-This approach also forces you to duplicate parts of your code when you want to reuse it in other templates. When you change something, you need to search through multiple files and update them all.
+This approach also forces you to duplicate parts of your code when you want to reuse it in other templates. When you change something, you need to search through and update multiple files.
 
-Bicep modules help you address these challenges by splitting your code into smaller, more manageable files that can be referenced from multiple templates. Modules give you some key benefits.
+Bicep modules help you address these challenges by splitting your code into smaller, more manageable files that multiple templates can reference. Modules give you some key benefits.
 
 ### Reusability
 
@@ -20,9 +20,9 @@ You can even share modules within your team, within your organization, or with t
 
 ### Encapsulation
 
-Modules help you keep related resource definitions together. For example, when you define an Azure Functions app, you typically deploy the app, a hosting plan for the app, and a storage account for the app's metadata. These three components are defined separately, but they represent a logical grouping of resources. So it might make sense to define them as a module. 
+Modules help you keep related resource definitions together. For example, when you define an Azure Functions app, you typically deploy the app, a hosting plan for the app, and a storage account for the app's metadata. These three components are defined separately, but they represent a logical grouping of resources, so it might make sense to define them as a module.
 
-Then, your main template doesn't need to be aware of the details of how a function app is deployed. That's the responsibility of the module.
+That way, your main template doesn't need to be aware of the details of how a function app is deployed. That's the responsibility of the module.
 
 ### Composability
 
@@ -31,7 +31,7 @@ After you've created a set of modules, you can compose them together. For exampl
 :::image type="content" source="../media/2-compose.png" alt-text="Diagram that shows a template referencing two modules and passing the output from one to the parameter of another." border="false":::
 
 > [!TIP]
-> It's helpful to think of Bicep modules as building blocks that can be combined in different ways to support your deployments.
+> It's helpful to think of Bicep modules as building blocks that you can combine in different ways to support your deployments.
 
 ### Functionality
 
@@ -39,17 +39,17 @@ Occasionally, you might need to use modules to access certain functionality. For
 
 ## Create a module
 
-A module is a normal Bicep file. You create it just like you do any other Bicep file.
+A module is a normal Bicep file. You'll create it just like you do any other Bicep file.
 
 Generally, it's not a good practice to create a module for every resource that you deploy. A good Bicep module typically defines multiple related resources. However, if you have a particularly complex resource with a lot of configuration, it might make sense to create a single module to encapsulate the complexity. This approach keeps your main templates simple and uncluttered.
 
 ### Split an existing Bicep template into modules
 
-You might build up a large Bicep template and then decide that it should be split up into modules. Sometimes it's obvious how you should split a large Bicep file. You might have a set of resources that clearly belong together in a module. Other times, it's not as straightforward to determine the resources that should be grouped into a module.
+You might build up a large Bicep template and then decide that it should be split up into modules. Sometimes, it's obvious how you should split a large Bicep file. You might have a set of resources that clearly belong together in a module. Other times, it's not as straightforward to determine the resources that should be grouped into a module.
 
-The Bicep visualizer can help you put your whole Bicep file in perspective. The visualizer is included in the Bicep extension for Visual Studio Code. 
+The Bicep visualizer can help you put your whole Bicep file in perspective. The visualizer is included in the Bicep extension for Visual Studio Code.
 
-To view the visualizer, open Visual Studio Code Explorer, select and hold (or right-click) the Bicep file, and then select **Open Visualizer**. The visualizer shows a graphical representation of the resources in your Bicep file. It includes lines between resources to show the dependencies that Bicep detects. 
+To view the visualizer, open Visual Studio Code Explorer, select and hold (or right-click) the Bicep file, then select **Open Visualizer**. The visualizer shows a graphical representation of the resources in your Bicep file. It includes lines between resources to show the dependencies that Bicep detects.
 
 You can use the visualizer to help you to split up your files. Consider whether the visualization illustrates any clusters of resources. It might make sense to move these clusters into a module together.
 
@@ -67,7 +67,7 @@ For example, consider the following visualization for a Bicep file. Two distinct
 
 ### Nest modules
 
-Modules can include other modules. By using this nesting technique, you can create some modules that deploy small sets of resources, and then compose these into larger modules that define complex topologies of resources. A template combines these pieces into a deployable artifact.
+Modules can include other modules. By using this nesting technique, you can create some modules that deploy small sets of resources, then compose these into larger modules that define complex topologies of resources. A template combines these pieces into a deployable artifact.
 
 > [!TIP]
 > Although it's possible to nest multiple layers of modules, that can become complex. If you get an error or something else goes wrong, it's harder to work out what you need to fix when you have many layers of nesting.
@@ -76,11 +76,11 @@ Modules can include other modules. By using this nesting technique, you can crea
 
 ### Choose good file names
 
-Be sure to use a descriptive file name for each module. The file name effectively becomes the identifier for the module. It's important that your colleagues can understand what the purpose of the module is just by looking at the file name.
+Be sure to use a descriptive file name for each module. The file name effectively becomes the identifier for the module. It's important that your colleagues can understand the module's purpose just by looking at the file name.
 
 ## Use the module in a Bicep template
 
-You use a module in a Bicep template by using the `module` keyword, like this:
+You'll use a module in a Bicep template by using the `module` keyword, like this:
 
 ```bicep
 module appModule 'modules/app.bicep' = {
@@ -109,9 +109,9 @@ Understanding how modules work isn't necessary for using them, but it can help y
 
 ### Deployments
 
-In Azure, a *deployment* is a special resource that represents a deployment operation. Deployments are Azure resources that have the resource type `Microsoft.Resources/deployments`. When you submit a Bicep deployment, you create or update a deployment resource. Similarly, when you create resources in the Azure portal, the portal creates a deployment resource on your behalf. 
+In Azure, a *deployment* is a special resource that represents a deployment operation. Deployments are Azure resources that have the resource type `Microsoft.Resources/deployments`. When you submit a Bicep deployment, you create or update a deployment resource. Similarly, when you create resources in the Azure portal, the portal creates a deployment resource on your behalf.
 
-However, not all changes to Azure resources create or use deployments. For example, when you use the portal to modify an existing resource, it generally doesn't create a deployment to make the change. When you use third-party tools like Terraform to deploy or configure your resources, they might not create deployments.
+However, not all changes to Azure resources create or use deployments. For example, when you use the Azure portal to modify an existing resource, it generally doesn't create a deployment to make the change. When you use third-party tools like Terraform to deploy or configure your resources, they might not create deployments.
 
 When you deploy a Bicep file by using the Azure CLI or Azure PowerShell, you can optionally specify the name of the deployment. If you don't specify a name, the Azure CLI or Azure PowerShell automatically creates a deployment name for you from the file name of the template. For example, if you deploy a file named *main.bicep*, the default deployment name is `main`.
 
@@ -121,7 +121,7 @@ For example, suppose you create a Bicep file named *main.bicep*. It defines a mo
 
 :::image type="content" source="../media/2-deployments.png" alt-text="Diagram that shows two Bicep files, each of which has a separate deployment name." border="false":::
 
-You can list and view the details of deployment resources to monitor the status of your Bicep deployments, or to view history of deployments. However, when you reuse the same name for a deployment, Azure overwrites the last deployment with the same name. If you need to maintain the deployment history, ensure that you use a unique name for every deployment. You might include the date and time of the deployment in the name to help make it unique.
+You can list and view the details of deployment resources to monitor the status of your Bicep deployments or to view history of deployments. However, when you reuse the same name for a deployment, Azure overwrites the last deployment with the same name. If you need to maintain the deployment history, ensure that you use a unique name for every deployment. You might include the date and time of the deployment in the name to help make it unique.
 
 ### Generated JSON ARM templates
 

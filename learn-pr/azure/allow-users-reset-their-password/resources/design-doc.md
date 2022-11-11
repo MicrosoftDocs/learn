@@ -134,4 +134,4 @@ Identify the subtasks of *Allow users to reset their password with Azure Active 
 - [Quickstart on how to enable](/azure/active-directory/authentication/quickstart-sspr)
 - [Tutorial](/azure/active-directory/authentication/tutorial-sspr-pilot)
 - [Guidance on roll out](/azure/active-directory/authentication/howto-sspr-deployment) - shouldn't really cover this information other than to mention it briefly
-- Authentication methods. See notes in <https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods#mobile-phone> under phone call.
+- Authentication methods. See notes in <https://learn.microsoft.com/azure/active-directory/authentication/concept-authentication-methods#mobile-phone> under phone call.

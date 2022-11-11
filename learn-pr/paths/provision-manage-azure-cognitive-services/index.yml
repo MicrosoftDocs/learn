@@ -13,10 +13,10 @@ prerequisites: |
   Before starting this learning path, you should already have:
   - Familiarity with Azure and the Azure portal.
   - Experience programming with C# or Python.
-  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/learn/paths/csharp-first-steps/) or [Take your first steps with Python](/learn/paths/python-first-steps/) learning path before starting this one.
+  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
 summary: |
   Azure Cognitive Services are building blocks of AI functionality that you can integrate into your applications. In this learning path, you'll learn how to provision, secure. monitor, and deploy cognitive services resources and use them to build intelligent solutions.
-iconUrl: /learn/achievements/provision-and-manage-azure-cognitive-services.svg
+iconUrl: /training/achievements/provision-and-manage-azure-cognitive-services.svg
 levels:
 - intermediate
 roles:

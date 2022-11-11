@@ -30,7 +30,7 @@ The use of benchmarks to evaluate your current environment, understand
 the current gaps and provide guidance on how to improve, is a very common
 practice in the IT industry. When it comes to security posture
 enhancement, benchmarks can give you tangible actions based on industry
-standards, such as ISO 2701 or by using cloud provider's benchmark,
+standards, such as ISO 27001 or by using cloud provider's benchmark,
 such as Azure Security Benchmark for Azure workloads, or Center for
 Internet Security (CIS) AWS Foundations Benchmark which is crafted for
 AWS workloads. Benchmarks will also help you to accelerate the

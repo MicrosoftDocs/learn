@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-storage-accounts.implement-azure-storage
-title: Implement Azure storage
+title: Implement Azure Storage
 metadata:
-  title: Implement Azure storage
-  description: "Implement Azure storage"
-  ms.date: 06/24/2022
+  title: Implement Azure Storage
+  description: "Implement Azure Storage"
+  ms.date: 10/10/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

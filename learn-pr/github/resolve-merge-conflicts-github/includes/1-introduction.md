@@ -18,4 +18,4 @@ In this module, you'll:
 - The ability to navigate and edit files in GitHub
 - Familiarity with pull requests
 
-We recommend that you complete [Manage repository changes by using pull requests on GitHub](/learn/modules/manage-changes-pull-requests-github) before beginning this module.
+We recommend that you complete [Manage repository changes by using pull requests on GitHub](/training/modules/manage-changes-pull-requests-github) before beginning this module.

@@ -18,7 +18,7 @@ abstract: |
   - Configure identity providers (social and SAML/WS-fed)
 prerequisites: |
   None
-iconUrl: /learn/achievements/implement-and-manage-external-identities.svg
+iconUrl: /training/achievements/implement-and-manage-external-identities.svg
 levels:
 - advanced
 roles:

@@ -1,10 +1,10 @@
-In this unit, you'll use an Azure Resource Manager template to decrypt your Windows VM you created earlier. We encrypted the OS drive on our Windows VM. However, the OS drive won't have any confidential information on it, so we could leave it unencrypted. Let's use a template to decrypt the OS drive.
+In this unit, you'll use an Azure Resource Manager template to decrypt the Windows VM you created earlier. We encrypted the OS drive on our Windows VM. However, the OS drive won't have any confidential information on it, so we could leave it unencrypted. Let's use a template to decrypt the OS drive.
 
 ## Decrypt a VM using an Azure Resource Manager template
 
 You're going to use a template Microsoft has published on GitHub that is specifically designed to decrypt a running Windows VM.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the sandbox.
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 

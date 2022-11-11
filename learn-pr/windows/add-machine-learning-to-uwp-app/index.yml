@@ -3,7 +3,7 @@ uid: learn-windows.add-machine-learning-to-your-uwp-app
 metadata:
   title: Add machine learning to a Universal Windows Platform (UWP) app
   description: Learn how to add AI to a Windows UWP app, built in the cloud and run locally, using Windows Machine Learning and Azure Cognitive Services.
-  ms.date: 12/10/2018
+  ms.date: 10/25/2022
   author: mattwojo
   ms.author: mattwoj
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ abstract:  |
   - Test the model. Draw digits into a Windows InkCanvas to see whether the model recognizes what number we drew.
 prerequisites: |
  - A basic understanding of UWP app development with C#.
-iconUrl: /learn/achievements/machine-learning-using-windows.svg
+iconUrl: /training/achievements/machine-learning-using-windows.svg
 levels:
 - beginner
 roles:

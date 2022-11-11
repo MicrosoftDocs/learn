@@ -20,7 +20,7 @@ prerequisites: |
   - Familiarity with Azure virtual machines (VMs)
   - Established Ubuntu username 
 hidden: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:

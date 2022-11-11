@@ -4,95 +4,18 @@ When you use Azure Virtual Desktop, it’s important to understand that while so
 
 Listed below are the security needs you're responsible for in your Azure Virtual Desktop deployment:
 
-:::row:::
-  :::column:::
-    **Security need**
-  :::column-end:::
-  :::column:::
-    **Is the customer responsible for this?**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Identity
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    User devices (mobile and PC)
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    App security
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Session host OS
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Deployment configuration
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Network controls
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Virtualization control plane
-  :::column-end:::
-  :::column:::
-    No
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Physical hosts
-  :::column-end:::
-  :::column:::
-    No
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Physical network
-  :::column-end:::
-  :::column:::
-    No
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Physical datacenter
-  :::column-end:::
-  :::column:::
-    No
-  :::column-end:::
-:::row-end:::
-
+| **Security need**            | **Is the customer responsible for this?** |
+| ---------------------------- | ----------------------------------------- |
+| Identity                     | Yes                                       |
+| User devices (mobile and PC) | Yes                                       |
+| App security                 | Yes                                       |
+| Session host OS              | Yes                                       |
+| Deployment configuration     | Yes                                       |
+| Network controls             | Yes                                       |
+| Virtualization control plane | No                                        |
+| Physical hosts               | No                                        |
+| Physical network             | No                                        |
+| Physical datacenter          | No                                        |
 
 The security needs the customer isn't responsible for are handled by Microsoft.
 

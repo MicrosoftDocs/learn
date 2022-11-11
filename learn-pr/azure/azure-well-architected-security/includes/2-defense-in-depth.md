@@ -6,7 +6,7 @@ Here, we'll identify key concepts of defense in depth and identify key security 
 
 The analyst firm Forrester Research introduced the *Zero Trust model*, which states that you should never assume trust, but instead continually validate trust. When users, devices, and data all resided inside the organization's firewall, they were assumed to be trusted. This assumed trust allowed for easy lateral movement after a malicious hacker compromised an endpoint device.
 
-Most users now access applications and data from the internet, and many companies now allow users to use their own devices at work (*bring your own device*, or BYOD). Most components of the transactions &mdash; the users, network, and devices &mdash; are no longer completely under organizational control. The Zero Trust model relies on verifiable user and device trust claims to grant access to organizational resources. No longer is trust assumed based on the location inside an organization's perimeter.
+Most users now access applications and data from the internet, and many companies now allow users to use their own devices at work (*bring your own device*, or BYOD). Most components of the transactions (the users, network, and devices) are no longer completely under organizational control. The Zero Trust model relies on verifiable user and device trust claims to grant access to organizational resources. No longer is trust assumed based on the location inside an organization's perimeter.
 
 This model has forced security researchers, engineers, and architects to rethink the approach applied to security and use a layered strategy to protect their resources.
 
@@ -20,7 +20,7 @@ Microsoft applies a layered approach to security, both in its physical datacente
 
 - **Integrity**: The goal is to prevent unauthorized changes to information at rest or in transit. A common approach used in data transmission is for the sender to create a unique fingerprint of the data by using a one-way hashing algorithm. The hash is sent to the receiver along with the data. The receiver recalculates the data's hash and compares it to the original to ensure that the data wasn't lost or modified in transit.
 
-- **Availability**: Ensure that services are available to authorized users. Denial-of-service attacks are a common cause of loss of availability to users. Natural disasters also drive system design to prevent single points of failure and deploy multiple instances of an application to geo-dispersed locations.
+- **Availability**: Ensures that services are available to authorized users. Denial-of-service attacks are a common cause of loss of availability to users. Natural disasters also drive system design to prevent single points of failure and deploy multiple instances of an application to geo-dispersed locations.
 
 ## Security layers
 
@@ -66,7 +66,7 @@ Integrating security into the application development life cycle will help reduc
 - Secure access to virtual machines
 - Implement endpoint protection and keep systems patched and current
 
-Malware, unpatched systems, and improperly secured systems open your environment to attacks. The focus in this layer is on making sure that your compute resources are secure, and that you have the proper controls in place to minimize security issues.
+Malware, unpatched systems, and improperly secured systems open your environment to attacks. The focus in this layer is on making sure that your compute resources are secure and that you have the proper controls in place to minimize security issues.
 
 ### Networking
 

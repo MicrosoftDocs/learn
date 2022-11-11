@@ -7,7 +7,7 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
 title: Create and deploy a cloud-native ASP.NET Core microservice
 summary: Create and deploy an ASP.NET Core microservice to AKS. 
 abstract: | 
@@ -46,6 +46,6 @@ units:
 - learn.microservices-aspnet-core.7-update-aks-deployment
 - learn.microservices-aspnet-core.8-knowledge-check
 - learn.microservices-aspnet-core.9-summary
-iconUrl: /learn/achievements/aspnetcore/microservices-aspnet-core.svg
+iconUrl: /training/achievements/aspnetcore/microservices-aspnet-core.svg
 badge:
   uid: learn.microservices-aspnet-core.badge

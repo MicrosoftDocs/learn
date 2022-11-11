@@ -16,7 +16,7 @@ abstract: |
 prerequisites: |
   - Familiarity with Azure
   - Basic knowledge of REST and APIs
-iconUrl: /learn/achievements/choose-azure-service-to-integrate-and-automate-business-processes.svg
+iconUrl: /training/achievements/choose-azure-service-to-integrate-and-automate-business-processes.svg
 levels:
 - beginner
 roles:

@@ -4,8 +4,8 @@ metadata:
   title: Expand the capabilities for Java apps on Azure
   description: Start here and learn how you can get the full power of Azure with your Java apps - use idiomatic libraries to connect and interact with your preferred cloud services, including Azure SQL and NoSQL databases, messaging and eventing systems, Redis cache, storage and directory services. As always, use tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
   ms.date: 11/29/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: bmitchell287
+  ms.author: brendm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Expand the capabilities for Java apps on Azure
@@ -25,17 +25,17 @@ summary: |
 
   :::row:::
   :::column:::
-    <img src="/learn/achievements/get-started-java-azure.svg" width="101" alt="The trophy for the get started with Java on Azure learning path." role="presentation"></img>
+    <img src="/training/achievements/get-started-java-azure.svg" width="101" alt="The trophy for the get started with Java on Azure learning path." role="presentation"></img>
 
     [Get started with Java on Azure](../get-started-java-azure/index.yml)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/expand-capabilities-java-azure.svg" width="101" alt="The trophy for the expand the capabilities for Java apps on Azure learning path." role="presentation"></img>
+    <img src="/training/achievements/expand-capabilities-java-azure.svg" width="101" alt="The trophy for the expand the capabilities for Java apps on Azure learning path." role="presentation"></img>
 
     Expand the capabilities for Java apps on Azure
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/best-practices-java-azure.svg" width="101" alt="The trophy for the best practices for Java apps on Azure learning path." role="presentation"></img>
+    <img src="/training/achievements/best-practices-java-azure.svg" width="101" alt="The trophy for the best practices for Java apps on Azure learning path." role="presentation"></img>
 
     [Best practices for Java apps on Azure](../best-practices-java-azure/index.yml)
   :::column-end:::
@@ -43,7 +43,7 @@ summary: |
 prerequisites: |
   - An Azure subscription
   - Local installations of [Java JDK (8+)](https://www.azul.com/downloads/azure-only/zulu/), [Maven (3+)](https://maven.apache.org/download.cgi) and [Azure CLI (2.12+)](/cli/azure/install-azure-cli)
-iconUrl: /learn/achievements/expand-capabilities-java-azure.svg
+iconUrl: /training/achievements/expand-capabilities-java-azure.svg
 levels:
 - beginner
 - intermediate

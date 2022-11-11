@@ -17,7 +17,7 @@ abstract: |
   - Ensure your bot respects users privacy
   - Analyze situations where human supervision may be necessary 
 prerequisites: None
-iconUrl: /learn/achievements/secure-responsible-conversational-ai.svg
+iconUrl: /training/achievements/secure-responsible-conversational-ai.svg
 levels: 
 - beginner
 roles: 

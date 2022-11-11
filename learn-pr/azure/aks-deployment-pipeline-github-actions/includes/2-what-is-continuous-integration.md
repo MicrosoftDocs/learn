@@ -10,7 +10,7 @@ CI and CD are operating practices that can help make developer teams more produc
 
 CI dictates that teams frequently implement and integrate the smallest changes in the code. Implementing this technique means that you constantly test, compile, deploy, and then test again in production.
 
-One of the most critical CI principles is that you merge all the newest changes back into the main branch as often as possible. Continually merging changes helps you avoid "integration hell" and merge day, which often occur when many developers combine their changes all at once in a single day.
+One of the most critical CI principles is that you merge all the newest changes back into the main branch as often as possible. Continually merging changes helps you avoid "integration hell" and merge day, which often occurs when many developers combine their changes all at once in a single day.
 
 The goal of CI is to avoid production problems caused by code changes by detecting problems before they can cause real damage to you or your customers.
 

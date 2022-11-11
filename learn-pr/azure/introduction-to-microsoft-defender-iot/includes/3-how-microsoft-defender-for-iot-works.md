@@ -10,7 +10,7 @@ Defender for IoT supports multiple and flexible deployment solutions:
 
 ## Defender for IoT sensors
 
-Defender for IoT sensors are deployed on-premises, as a virtual or physical appliance. They discover and continuously monitor network devices and collect industrial control system (ICS) network traffic.
+Defender for IoT sensors are deployed on-premises as a virtual or physical appliance. They discover and continuously monitor network devices and collect industrial control system (ICS) network traffic.
 
 Sensors use passive, or *agentless*, monitoring for IoT/OT devices. The sensors connect to a SPAN port or network TAP to run deep-packet inspection on IoT/OT network traffic.
 

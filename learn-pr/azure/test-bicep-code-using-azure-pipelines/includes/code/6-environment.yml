@@ -1,11 +1,11 @@
 variables:
   - name: deploymentDefaultLocation
-    value: westus
+    value: westus3
 
 stages:
 
 - stage: Preview
-  jobs: 
+  jobs:
   - job: Preview
     steps:
     - task: AzureCLI@2

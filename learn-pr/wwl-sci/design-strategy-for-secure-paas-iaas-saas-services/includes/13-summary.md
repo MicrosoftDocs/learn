@@ -5,12 +5,12 @@ You also learned the security requirements for Azure App Service and how to use 
 
 Visit the links below for more information about the topics covered in this module:
 
-* [Best practices for secure PaaS deployments - Microsoft Azure](/azure/security/fundamentals/paas-deployments)
+* [Best practices for secure PaaS deployments](/azure/security/fundamentals/paas-deployments)
 * [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise - Deploy Office](/deployoffice/admincenter/overview-office-cloud-policy-service)
 * [Security recommendations for Azure IoT](/azure/iot-fundamentals/security-recommendations)
 * [Microsoft Defender for IoT for organizations documentation](/azure/defender-for-iot/organizations/)
 * [Data](/security/zero-trust/data-compliance-gov-data)
-* [Introduction to Azure Purview - Azure Purview](/azure/purview/overview)
-* [Security - Azure App Service](/azure/app-service/overview-security)
+* [Introduction to Azure Purview](/azure/purview/overview)
+* [Security in Azure App Service](/azure/app-service/overview-security)
 * [Microsoft Defender for Storage - the benefits and features](/azure/defender-for-cloud/defender-for-storage-introduction)
 * [Container security with Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-containers-introduction?tabs=defender-for-container-arch-aks)

@@ -4,7 +4,7 @@ During the application or project lifecycle, it's crucial to plan and prioritize
 
 Project boards are made up of issues, pull requests, and notes categorized as cards that you can drag and drop into your chosen columns. The cards contain relevant metadata for issues and pull requests, like labels, assignees, the status, and who opened it.
 
-:::image type="content" source="../media/github-project-boards-board-80633bf7.png" alt-text="Screenshot of GitHub project boards feature." lightbox="../media/github-project-boards-board-80633bf7.png":::
+:::image type="content" source="../media/github-project-boards-board-80633bf7.png" alt-text="Screenshot of GitHub project boards feature.":::
 
 
 There are different types of project boards:
