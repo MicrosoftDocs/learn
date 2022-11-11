@@ -12,7 +12,7 @@ Ledger for SQL Server provides built-in, tamper evidence proof for data protecti
 
 The following figure shows the flow and components of Ledger for SQL Server:
 
-:::image type="content" source="../media/ledger-for-sql-server-2022.png" alt-text="Image for flow of Ledger for SQL Server.":::
+:::image type="content" source="../media/ledger-for-sql-server-2022.png" alt-text="Diagram for flow of Ledger for SQL Server.":::
 
 Any table you create as an **updatable ledger table** using the Transact-SQL (T-SQL) **CREATE TABLE** statement will result in the automatic creation of a **history table** and **ledger view**. All modifications to the ledger table will be recorded in the history table. The ledger view allows you to see all data in the ledger table, along with a historical record of changes. Ledger history includes a timestamp of any change, the type of change, and a transaction identifier.
 

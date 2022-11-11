@@ -82,7 +82,7 @@ You can delete the access policy from Microsoft Purview to remove the authentica
 
 You can learn more about Microsoft Purview access policies for SQL Server 2022 in the article, [Provision access by data owner for SQL Server on Azure Arc-enabled servers](https://aka.ms/purviewsqlaccesspolicies).
 
-## Central authentication using Azure Active Directory (AAD)
+## Central authentication using Azure Active Directory (Azure AD)
 
 Azure AD provides a cloud-based central authentication authority for any organization using advanced authentication methods. SQL Server 2022 supports logins or users based on Azure AD accounts.
 

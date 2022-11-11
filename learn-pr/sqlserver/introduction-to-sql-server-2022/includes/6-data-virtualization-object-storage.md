@@ -6,7 +6,7 @@ Polybase, introduced with SQL Server 2016, supports accessing data outside of SQ
 
 The following figure shows the full extent of data virtualization support in SQL Server 2022.
 
-:::image type="content" source="../media/sql-server-2022-data-virtualization.png" alt-text="Data virtualization options in SQL Server 2022.":::
+:::image type="content" source="../media/sql-server-2022-data-virtualization.png" alt-text="Diagram of the data virtualization options in SQL Server 2022.":::
 
 ## Data virtualization with REST API connectors
 

@@ -4,33 +4,33 @@ SQL Server 2022 includes enhancements to the T-SQL language for JSON, core engin
 
 SQL Server 2022 introduces new and enhanced T-SQL functions to work with JSON data, including:
 
-ISJSON<br>
-JSON_PATH_EXISTS<br>
-JSON_OBJECT<br>
-JSON_ARRAY<br>
+- ISJSON
+- JSON_PATH_EXISTS
+- JSON_OBJECT
+- JSON_ARRAY
 
 ## Core surface area T-SQL enhancements
 
 SQL Server 2022 includes new and enhanced T-SQL functions and statements for core engine scenarios including:
 
-GREATEST<br>
-LEAST<br>
-STRING_SPLIT<br>
-TRIM functions<br>
-DATETRUNC<br>
-IS [NOT] DISTINCT FROM<br>
-WINDOW clause<br>
-LEFT_SHIFT<br>
-RIGHT_SHIFT<br>
-BIT_COUNT<br>
-GET_BIT<br>
-SET_BIT<br>
+- GREATEST
+- LEAST
+- STRING_SPLIT
+- TRIM functions
+- DATETRUNC
+- IS [NOT] DISTINCT FROM
+- WINDOW clause
+- LEFT_SHIFT
+- RIGHT_SHIFT
+- BIT_COUNT
+- GET_BIT
+- SET_BIT
 
 ## Using T-SQL with time series data
 
 SQL Server 2022 provides new T-SQL functions to process data time series types of data including:
 
-DATE_BUCKET<br>
-GENERATE_SERIES<br>
-FIRST_VALUE<br>
-LAST_VALUE<br>
+- DATE_BUCKET
+- GENERATE_SERIES
+- FIRST_VALUE
+- LAST_VALUE
