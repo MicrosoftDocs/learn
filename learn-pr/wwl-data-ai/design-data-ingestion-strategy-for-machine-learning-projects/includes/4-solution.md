@@ -48,6 +48,6 @@ For example, a common approach for a data ingestion solution is to:
 1. Store the prepared data in an Azure Blob Storage.
 1. Train the model with Azure Machine Learning.
 
-![Example of an architecture which extracts data, transforms it with Azure Synapse Analytics, and stores it in a Storage Account to serve Azure Machine Learning.](../media/04-01-pipeline.png)
+![Diagram that shows data extracted, transformed with Azure Synapse Analytics, stored in a Storage Account, and served to Azure Machine Learning.](../media/04-01-pipeline.png)
 
 It's a best practice to think about the architecture of a data ingestion solution before training your model. Thinking about how the data is automatically extracted and prepared for model training will help you to prepare for when your model is ready to go to production.

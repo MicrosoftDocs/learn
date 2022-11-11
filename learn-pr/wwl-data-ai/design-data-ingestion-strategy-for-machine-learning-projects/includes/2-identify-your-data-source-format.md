@@ -54,6 +54,6 @@ To create a dataset you can use to train the forecasting model, you may:
 1. Convert the JSON objects to a table.
 1. Transform the data to get the temperature per machine per minute.
 
-![Example of a JSON object converted to tabular data.](../media/02-01-json-table.png)
+![Diagram of a JSON object, converted to a table. Finally, the data is aggregated to create a smaller table of the temperature per minute.](../media/02-01-json-table.png)
 
 Once you’ve identified the data source, the original data format, and the desired data format, you can think about how you want to serve the data. Then, you can design a data ingestion pipeline to automatically extract and transform the data you need.

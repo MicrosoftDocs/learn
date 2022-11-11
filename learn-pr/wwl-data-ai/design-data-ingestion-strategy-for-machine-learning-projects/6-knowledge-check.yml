@@ -25,7 +25,7 @@ quiz:
     - content: "Unstructured"
       isCorrect: false
       explanation: "Incorrect. A JSON object has key-value pairs that can be queried, so it shouldn't be stored as unstructured data."
-  - content: "When extracting JSON objects from an IoT device, and combining all transformed data in a CSV file, which data store would be best to use?"
+  - content: "When a data scientist extracts JSON objects from an IoT device, and combines all transformed data in a CSV file, which data store would be best to use?"
     choices:
     - content: "Azure Blob Storage"
       isCorrect: false
