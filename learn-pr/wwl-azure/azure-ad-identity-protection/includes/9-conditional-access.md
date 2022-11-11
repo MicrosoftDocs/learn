@@ -31,7 +31,7 @@ Administrators are faced with two primary goals:
 
 By using Conditional Access policies, you can apply the right access controls when needed to keep your organization secure and stay out of your user’s way when not needed.
 
-[:::image type="content" source="../media/az500-conditional-access-process-8b2e3d10.png" alt-text="Diagram show that Signals are verified to determine access to apps.":::
+[:::image type="content" source="../media/az500-conditional-access-process-8b2e3d10.png" alt-text="Diagram showing that signals are verified to determine access to apps.":::
 ](https://mslearn.cloudguides.com/en-us/guides/Configure%20Conditional%20Access%20in%20Azure%20AD)
 
 Conditional Access policies are enforced after the first-factor authentication has been completed. Conditional Access is not intended as an organization's first line of defense for scenarios like denial-of-service (DoS) attacks but can use signals from these events to determine access.
