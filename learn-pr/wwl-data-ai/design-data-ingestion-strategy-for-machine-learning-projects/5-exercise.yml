@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.exercise
+title: 'Exercise: Design a data ingestion strategy'
+metadata:
+  title: 'Exercise: Design a data ingestion strategy'
+  description: "Exercise: Design a data ingestion strategy"
+  ms.date: 11/11/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise.md)]
