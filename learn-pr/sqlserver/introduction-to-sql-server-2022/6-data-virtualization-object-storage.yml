@@ -9,7 +9,7 @@ metadata:
   author: rgward
   ms.author: bobward
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-sqlserver
 durationInMinutes: 10
 content: |
   [!include[](includes/6-data-virtualization-object-storage.md)]
