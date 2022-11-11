@@ -6,7 +6,7 @@ Though finding which virtual machine size best fits your needs is an iterative p
 
 One important decision to make when configuring compute is whether you want to use a **central processing unit** (**CPU**) or a **graphics processing unit** (**GPU**). For smaller tabular datasets, CPU will be sufficient and cheaper to use. Whenever working with unstructured data like images or text, GPUs will be more powerful and effective.
 
-For larger amounts of tabular data, it may also be beneficial to use GPUs. When processing your data and training your model takes a long time, even with the largest CPU compute available, you may want to consider using GPU compute instead. There are libraries such as RAPIDs (developed by NVIDIA) which allow you to efficiently perform data preparation and model training with larger tabular datasets. As GPUs come at a higher cost than CPUs, it may require some experimentation to explore whether using GPU will be beneficial for your situation.
+For larger amounts of tabular data, it may also be beneficial to use GPUs. When processing your data and training your model takes a long time, even with the largest CPUs compute available, you may want to consider using GPUs compute instead. There are libraries such as RAPIDs (developed by NVIDIA) which allow you to efficiently perform data preparation and model training with larger tabular datasets. As GPUs come at a higher cost than CPUs, it may require some experimentation to explore whether using GPU will be beneficial for your situation.
 
 > [!Tip]
 > Learn how to [train compute-intensive models with Azure Machine Learning](/learn/paths/train-compute-intensive-models-azure-machine-learning?azure-portal=true)
@@ -27,7 +27,7 @@ The size of compute in Azure Machine Learning is shown as the **virtual machine 
 
 Services like Azure Synapse Analytics and Azure Databricks offer Spark compute. Spark compute or clusters use the same sizing as virtual machines in Azure but distribute the workloads.
   
-A Spark cluster consists of a driver node and worker nodes. Your code will initially communicate with the driver node. The work is then distributed across the worker nodes. By distributing the work, parts of the workload can be executed in parallel. Finally, the work is summarized and the driver node communicates the result back to you. 
+A Spark cluster consists of a driver node and worker nodes. Your code will initially communicate with the driver node. The work is then distributed across the worker nodes. When you use a service that distributes the work, parts of the workload can be executed in parallel, reducing the processing time. Finally, the work is summarized and the driver node communicates the result back to you. 
 
 > [!Important]
 > To make optimal use of a Spark cluster, your code needs to be written in a Spark-friendly language like Scala, SQL, RSpark, or PySpark in order to distribute the workload. If you write in Python, you’ll only use the driver node and leave the worker nodes unused.
