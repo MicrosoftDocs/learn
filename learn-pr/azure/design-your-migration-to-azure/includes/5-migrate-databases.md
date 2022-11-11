@@ -1,6 +1,6 @@
 Azure Database Migration Service enables online and offline migrations from multiple database sources to Azure data platforms, all with minimal downtime. The service uses the Microsoft Data Migration Assistant to generate assessment reports. The Database Migration Service then performs the identified tasks.
 
-During the early stages of the migration project, the IT Director requests that the current SQL Server cluster be included. The cluster hosts several line-of-business application databases.
+During the early stages of the migration project, the IT Director requests that the current SQL Server cluster is included. The cluster hosts several line-of-business application databases.
 
 In this unit, you'll see how to use the Data Migration Assistant and Database Migration Service together. They provide a way to move on-premises SQL Server databases efficiently to Azure.
 
