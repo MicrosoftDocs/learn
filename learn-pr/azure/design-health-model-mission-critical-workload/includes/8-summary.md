@@ -2,5 +2,5 @@ Summary guidance: https://review.learn.microsoft.com/help/learn/id-guidance-intr
 
 ## Related links
 
-- [Challenge Project - Design a mission-critical web application - Training | Microsoft Learn](training/modules/azure-mission-critical/)
+- [Challenge Project - Design a mission-critical web application - Training | Microsoft Learn](/training/modules/azure-mission-critical/)
 
