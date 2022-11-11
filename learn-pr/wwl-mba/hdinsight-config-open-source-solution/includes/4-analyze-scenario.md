@@ -4,7 +4,7 @@ Read the following case study and answer the questions to map a scenario to an H
 
 AdventureWorks sells bicycles and bicycle parts directly to customers and distributors. The company currently has a single office in the Netherlands. They have been selling bicycles in the United States, Germany, and Spain through a chain of distributors and through online sales on its website. The fulfillment of delivery is done by local distribution centers. 
 
-The company is planning to expand by establishing new offices because the sales growth in these countries has been increasing over the last three years. The locations are:
+The company is planning to expand by establishing new offices because the sales growth in these countries/regions has been increasing over the last three years. The locations are:
 
 - Tokyo, Japan 
 - Seattle, USA 

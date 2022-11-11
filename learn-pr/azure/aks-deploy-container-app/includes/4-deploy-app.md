@@ -3,6 +3,7 @@ Your company is looking at ways to deploy your cloud-based video rendering servi
 Before we discuss the Kubernetes way of deployment, let's review some of the steps you'd take to deploy a similar application to a non-Kubernetes environment.
 
 Assume you're using an Azure virtual machine (VM) as your target platform. The first step is to prepare the server software to host the application. You will:
+
 - Install the operating system.
 - Make sure to update the OS to the latest security and software patches.
 - Install and configure the web server software.

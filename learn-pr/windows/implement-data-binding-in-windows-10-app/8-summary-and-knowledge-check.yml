@@ -3,8 +3,8 @@ title: Summary and knowledge check
 uid: learn-windows.windows-10-ui-and-data.8-summary-and-knowledge-check
 metadata:
   title: Summary and knowledge check
-  description: Review and check your understanding of data binding in Windows 10 apps.
-  ms.date: 3/1/2019
+  description: Review and check your understanding of data binding in Windows apps.
+  ms.date: 10/18/2022
   displayType: one-Column
   author: QuinnRadich
   ms.author: quradic
@@ -54,7 +54,7 @@ quiz:
             explanation: TwoWay binding provides bi-directional binding to and from the binding target.
             isCorrect: true
           - content: Define the binding in XAML with Mode=TwoWay, and implement INotifyPropertyChanged in code.
-            explanation: Although this would work, you don't need to implement INotifyPropertyChanged if you only want to transer data from the UI to your code.
+            explanation: Although this would work, you don't need to implement INotifyPropertyChanged if you only want to transfer data from the UI to your code.
             isCorrect: false
         - content: What do you need to do to display the objects stored in an IEnumerable collection in a list box?
           choices:
@@ -69,12 +69,12 @@ quiz:
             isCorrect: false
         - content: You're adding items to your collection while the app is running. How do you make the UI reflect these changes?
           choices:
-          - content: Implement the System.ComponentModel.INotifyPropertyChanged interface, and raise the PropertyChanged event every time a new item has beed added to the collection.
+          - content: Implement the System.ComponentModel.INotifyPropertyChanged interface, and raise the PropertyChanged event every time a new item has been added to the collection.
             explanation: Although this works, this approach forces the UI to re-create the entire contents of the list, instead of just dealing with the one new item.
             isCorrect: false
           - content: Use the `System.Collections.ObjectModel.ObservableCollection<T>` class to store the collection of items.
             explanation: The `ObservableCollection<T>` class implements the System.Collections.Specialized.INotifyCollectionChanged interface that notifies the UI whenever items are added or removed.
             isCorrect: true
-          - content: Implement the System.Collections.Specialized.INotifyCollectionChanged interface in your logic class, and raise the CollectionChanged event every time a new item has beed added to the collection.
+          - content: Implement the System.Collections.Specialized.INotifyCollectionChanged interface in your logic class, and raise the CollectionChanged event every time a new item has been added to the collection.
             explanation: This interface should be implemented by the collection class, not your business logic class.
             isCorrect: false

@@ -9,7 +9,7 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Release pipelines](/azure/devops/pipelines/release).
- -  [Task types &amp; usage](/azure/devops/pipelines/process/tasks).
- -  [Specify jobs in your pipeline](/azure/devops/pipelines/process/phases).
- -  [Configure and pay for parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs).
+ -  [Release pipelines - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/release).
+ -  [Build and Release Tasks - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/process/tasks).
+ -  [Jobs in Azure Pipelines and TFS - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/process/phases).
+ -  [Configure and pay for parallel jobs - Azure DevOps \| Microsoft Docs](/azure/devops/pipelines/licensing/concurrent-jobs).

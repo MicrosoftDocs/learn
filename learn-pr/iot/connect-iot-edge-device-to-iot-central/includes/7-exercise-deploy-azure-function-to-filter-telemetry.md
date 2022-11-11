@@ -11,7 +11,7 @@ Your IoT Edge device will need to download and install the custom Azure Function
 Run the following commands to add a container registry to your resource group in Azure:
 
 ```azurecli
-REGISTRY_NAME="edgeCentral$RANDOM"
+REGISTRY_NAME="edgecentral$RANDOM"
 az acr create -n $REGISTRY_NAME -g <rgn>[sandbox resource group name]</rgn> --sku Standard --admin-enabled true
 az acr credential show -n $REGISTRY_NAME
 echo "Your registry name is: $REGISTRY_NAME"
@@ -48,9 +48,9 @@ You can list the images in your registry with the following command:
 az acr repository list --name $REGISTRY_NAME
 ```
 
-## Update the device template to use the new module
+## Update the deployment manifest
 
-To use the new filter module on your IoT Edge device, update the deployment manifest associated with the device template and add a new interface to the device template. You'll also need to version the device template and migrate your device to use the new template.
+To use the new filter module on your IoT Edge device, update the deployment manifest with the new version.
 
 Download the new deployment manifest and interface definition to your local machine by right-clicking on the following links and choosing **Save as**:
 
@@ -89,20 +89,33 @@ This version of the deployment manifest:
     },
     ```
 
-Before you can upload the new version of the manifest to the device template, you need to create a new version of the template:
+To upload the new deployment manifest:
 
-1. Navigate to the **Device templates** page in the IoT Central application.
-1. Select the **Environmental Sensor Edge Device** device template.
-1. Select **Version**. Then select **Create** to accept the new template name.
-1. Select **Edit manifest**, then select **replace it with a new file**, Then select the *EnvironmentalSensorManifestFilter.json* file you edited previously.
-1. When the manifest is validated, select **Save** to replace the deployment manifest with the new version.
+1. In your IoT Central application, navigate to **Edge manifests** and select the **Environmental Sensor** manifest.
 
-The new module in the deployment manifest requires a new module definition in the device template. IoT Central doesn't add the module definition automatically when you replace the deployment manifest:
+1. On the **Customize** page, upload the new *EnvironmentalSensorManifestFilter.json* file. Select **Next**.
 
-1. On the **Environmental Sensor Edge Device v2** device template, select **Modules**, then select **+ Add module**, and then select **Custom**. A new module called **Environmental Sensor Edge Device v2** is added to your device template.
-1. Select **Edit identity** and change both the **Relationship name** and **Name** to *filterfunction*. Change the **Display name** to *Module FilterFunction*. Select **Save**.
+1. The **Review and finish** page shows the new **filterfunction** module. Select **Save**.
 
-    :::image type="content" source="../media/7-module-filterfunction.png" alt-text="Screenshot that shows the FilterFunction module added to the device template.":::
+1. Navigate to the **Environmental Sensor Edge Device - store-001** device from the **Devices** page and select **Modules**.
+
+1. On the **Modules** page, select **Manage manifest > Assign edge manifest**. Select the **Environmental Sensor** manifest.
+
+1. The list of modules now includes the running **filterfunction** module:
+
+:::image type="content" source="../media/7-filterfunction-running.png" alt-text="Screenshot that shows the FilterFunction module running on the IoT Edge device.":::
+
+## Update the device template to use the new module
+
+The IoT Edge device is now sending the telemetry through the **filterfunction** interface instead of the **Telemetry** interface. Therefore, you need to update the device template and views:
+
+1. Navigate to the **Environmental Sensor Edge Device** on the **Device templates page**.
+
+1. Select **Modules**, and then select **Import modules from manifest**.
+
+1. In the **Import modules** dialog, select **Environmental Sensor**, and then select **Import**.
+
+:::image type="content" source="../media/7-module-filterfunction.png" alt-text="Screenshot that shows the FilterFunction module added to the device template.":::
 
 The new module now sends the telemetry to IoT Central. Next, add an interface to the new filter module that specifies the telemetry and update the chart:
 
@@ -122,25 +135,11 @@ Modify the **View IoT Edge device telemetry** view to display the telemetry sent
 1. Select **Update** and then **Save** to save your changes.
 1. Select **Publish** to publish the new version of the device template.
 
-## Deploy the new module to your device
+## View the filtered data
 
-To send the updated deployment manifest to the device:
+To view the filtered telemetry from your IoT Edge device:
 
-1. Navigate to the **Devices** page in the IoT Central application.
-1. Select the **store-001** device.
-1. Select **Migrate**, in the **Migrate** dialog select **Environmental Sensor Edge Device v2**. Then select **Migrate**.
-
-    :::image type="content" source="../media/7-migrate-device.png" alt-text="Screenshot that shows the migrate device dialog.":::
-
-After a few seconds, the device is migrated to the new template version. The device now uses the new **FilterFunction** module and routes.
-
-To verify that the deployment of the new module was successful:
-
-1. On the **Devices** page, click on the **store-001** device.
-1. Select the **Modules** view. There are now four modules running on the device, including the new **filterfunction** module. You may need to wait for several minutes until the new module starts running.
-
-    :::image type="content" source="../media/7-filterfunction-running.png" alt-text="Screenshot that shows the FilterFunction module running on the IoT Edge device.":::
-
+1. Navigate to the **store-001** device on the **Devices** page.
 1. Select the **View IoT Edge device telemetry** view.
 1. You can see the filtered telemetry on the chart. There are no values shown with an average ambient temperature of less than 21.0 degrees.
 

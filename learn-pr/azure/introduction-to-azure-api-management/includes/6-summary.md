@@ -23,4 +23,4 @@ Today's connected world is increasingly being driven by the *API economy*&mdash;
 - [Azure API Management](https://azure.microsoft.com/services/api-management/?azure-portal=true)
 - [Azure API Management pricing](https://azure.microsoft.com/pricing/details/api-management/?azure-portal=true)
 - [Feature-based comparison of the Azure API Management tiers](/azure/api-management/api-management-features?azure-portal=true)
-- [Azure API Management FAQs](/azure/api-management/api-management-faq?azure-portal=true)
+

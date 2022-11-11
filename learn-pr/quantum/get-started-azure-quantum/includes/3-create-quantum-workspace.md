@@ -1,18 +1,24 @@
 With an active Azure subscription, you and your crew are ready to create an Azure Quantum workspace. An Azure Quantum workspace resource, or workspace for short, is a collection of assets associated with running quantum or optimization applications.
 
+First-time users automatically get $500 (USD) free [Azure Quantum Credits](/azure/quantum/azure-quantum-credits) for use with each participating quantum hardware provider (see the [full quantum provider list](/azure/quantum/qc-target-list)). Your free Azure Quantum Credits become available once you create a new Azure Quantum workspace. If you need more credits, you can apply to the [Azure Quantum Credits program](/azure/quantum/credits-faq).
+
 If you don't have an Azure account with an active subscription, choose from one of the following subscriptions or see [Microsoft Azure Offer Details](https://azure.microsoft.com/support/legal/offer-details/) for a full list.
+
+### [Pay-as-you-go (recommended)](#tab/payg)
+
+Register for free and sign up for a [pay-as-you-go subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/). With the Azure Quantum Credits you'll have $500 (USD) to use in each quantum hardware provider. Once you've consumed all your credits, you'll only pay for the services you use and you can cancel anytime.
 
 ### [Free Trial](#tab/free)
 
-[Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F). We offer eligible customers $200 in Azure credits to be used within the first 30 days of sign-up and 12 months of select free services. For more information, see [Create an Azure account](/training/modules/create-an-azure-account/?azure-portal=true) learning module. Within 30 days of sign-up or upon exhaustion of the credits (whichever occurs first), you must upgrade to a [pay-as-you-go subscription](https://azure.microsoft.com/offers/ms-azr-0003p/).
+Sign up for a [free trial subscription for 30 days](https://azure.microsoft.com/free/?WT.mc_id=A261C142F). With the Azure Quantum Credits you'll have $500 (USD) to use in each quantum hardware provider. After 30 days of sign-up or once you've consumed all you Azure Quantum Credits (whichever occurs first), you **must** upgrade to a [pay-as-you-go subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go). After the exhaustion of your Azure Quantum Credits, you'll only pay for the services you use and you can cancel anytime. 
 
-### [Pay-as-you-go](#tab/payg)
- 
-[Sign up for a pay-as-you-go subscription](https://azure.microsoft.com/offers/ms-azr-0003p/). Pay only for what you use and cancel anytime. If you've exhausted your credits on another subscription, you can upgrade to a pay-as-you-go subscription.
+In addition, the free Azure trial gets you started with $200 (USD) in Azure credits to be used in Azure 1st-party services (Azure Quantum is not elegible) within the first 30 days of sign-up.
 
 ### [Students](#tab/student)
 
-[Sign up for an Azure for Students subscription](https://azure.microsoft.com/offers/ms-azr-0170p/). Azure for Students gets you started with $100 in Azure credits to be used within the first 12 months, plus select free services without requiring a credit card at sign-up. If you exhaust your available credits, your Azure subscription will be disabled. You may then upgrade to a [pay-as-you-go subscription](https://azure.microsoft.com/offers/ms-azr-0003p/).
+Sign up for an [Azure for Students subscription](https://azure.microsoft.com/offers/ms-azr-0170p/). With the Azure Quantum Credits you'll have $500 (USD) to use in each quantum hardware provider. Once you've consumed all your credits, you must upgrade to a [pay-as-you-go subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go), and you can cancel anytime.
+
+Azure for Students gets you started with $100 (USD) in Azure credits to be used in Azure 1st-party services (Azure Quantum is not elegible), and you don't need a credit card to sign-up. 
 
 ### [Enterprise Agreement](#tab/EA)
 

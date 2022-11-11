@@ -1,4 +1,4 @@
-All data in Azure Cosmos DB for NoSQL containers is indexed by default. This occurs because the container includes a default **indexing policy** that’s applied to all newly created containers. The default indexing policy consists of the following settings:
+All data in Azure Cosmos DB for NoSQL containers is indexed by default. This occurs because the container includes a default **indexing policy** that’s applied to all newly created items. The default indexing policy consists of the following settings:
 
 - The inverted index is updated for all create, update, or delete operations on an item
 - All properties for every item is automatically indexed
