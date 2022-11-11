@@ -1,65 +1,17 @@
 ### YamlMime:Module
 uid: learn.introduction-to-sql-server-2022
 metadata:
-  moduleType: build-your-first-using-product # Do not edit: type must be 'build-your-first-using-product'
-  title: Introduction to SQL Server 2022                     # Title must be "(verb) your first (thing) by using (product)"
-  description: "TODO"                        # Copy your 'apply' Learning Objective here (see below)
-  ms.date: 11/10/2022                     # Date of commit to GitHub (do not use target publication date, cannot be in the future)
-  author: rgward                             # GitHub ID of the Microsoft employee either authoring or project-managing this content
-  ms.author: bobward                     # Alias     of the Microsoft employee either authoring or project-managing this content
-  ms.topic: interactive-tutorial             # Do not edit: value must be "interactive-tutorial"
-  ms.prod: learning-azure                    # Edit as appropriate for your portfolio area
-###########################################################################
-###
-### Title must be "(verb) your first (thing) by using (product)"
-###
+  moduleType: build-your-first-using-product
+  title: Introduction to SQL Server 2022      
+  description: "TODO"
+  ms.date: 11/10/2022
+  author: rgward
+  ms.author: bobward
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
 title: Introduction to SQL Server 2022
-###########################################################################
-###
-### Summary
-###
-### Length:
-###   - Write 2 sentences.
-###   - Total length should be 20-25 words; up to 35 is acceptable.
-###   - To keep it brief, avoid teaching, omit motivation, and remove "learn", "in this module", and title words.
-###
-### Sentence 1:
-###   Goal: Include key technologies
-###   Example (Logic Apps): "Define a workflow using built-in triggers, actions, and conditional operators."
-###
-### Sentence 2:
-###   Goal: Include key sub-tasks
-###   Example (Logic Apps): "Your workflow will run automatically when data is available, process the data in the cloud, record results in a database, and send email notifications."
-###
-### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main
-###
-summary: ""
-###########################################################################
-###
-### Learning Objectives
-###
-### Write 3 Learning Objectives, one that fits each pattern shown below.
-###
-### Learning Objective 1:
-###   Goal: Align to the verb 'prepare' as in "plan or get things ready to do the exercise"
-###   Example (Logic Apps): "Design a workflow to solve a business problem."
-###
-### Learning Objective 2:
-###   Goal: Align to the verb 'apply' as in "do the task in the exercise"
-###   Example (Logic Apps): "Implement a workflow from the standard triggers and actions"
-###
-### Learning Objective 3:
-###   Goal: Align to the verb 'validate' as in "check your work"
-###   Example (Logic Apps): "Run a workflow in the cloud to validate the results"
-###
-### Notes:
-###   - The YAML element name here is 'abstract' but it must contain your Learning Objectives.
-###   - Do not edit the lead-in sentence ("By the end of this module, you'll be able to:").
-###   - Start each objective with an upper-case letter.
-###   - End each objective with a period.
-###
-### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main
-###
+summary: |
+  Learn about new major capabilities of SQL Server 2022 from cloud connected features to core engine capabilities.
 abstract: |
   In this module, you'll be able to:
 
@@ -67,74 +19,27 @@ abstract: |
     - Be able to determine if SQL Server 2022 can help modernize your data estate, while reducing the cost of ownership, and accelerate the performance of your applications
     - Be able to leverage new security capabilities in SQL Server 2022 to protect your data, and use cryptographic attestations that your data hasn't been tampered with
     - Connect your data to Azure and data lakes
-###########################################################################
-###
-### Prerequisites
-###   - The first prerequisite is "_Knowledge of what (product) is and how it works at the beginner level_"
-###   - Other than the required first prerequisite, others follow the standard guidance:
-###     - Avoid ambiguity, e.g. say "Ability to write HTML at a novice level" rather than "Familiarity with HTML".
-###     - Be concrete: e.g. say "Familiarity with programming concepts such as loops, conditionals and variables" rather than "Familiarity with programming concepts".
-###     - Do not mention or link to other content that teaches the required prerequisite skills.
-###     - If needed, include software setup requirements with setup links.
-###
-### Detailed guidance:
-###   https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main
-###
 prerequisites: |
   - Basic working knowledge of SQL Server, including deployment, security, query processing, and high availability
   - Fundamental knowledge of the T-SQL language
   - Basic knowledge of Azure concepts, including subscriptions, resource groups, Infrastructure-as-a-Service and Platform-as-a-Service
-
-###########################################################################
-###
-### Replace with the custom module icon when available
-###
-iconUrl: /learn/achievements/generic-badge.svg
-###########################################################################
-###
-### Do not edit: level must be 'beginner'
-###
+iconUrl: /training/achievements/sqlserver/introduction-to-sql-server-2022.svg
 levels:
   - beginner
-###########################################################################
-###
-### Specify the target roles.
-###   - Set the 'roles' to match the role targeted by your hands-on exercise.
-###
-### Use value(s) from the role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role)
-###
 roles:
   - administrator
-###########################################################################
-###
-### Specify the covered products.
-### Use value(s) from the product taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product)
-###
 products:
   - sql-server
-###########################################################################
-###
-### Specify the subject areas.
-### Use value(s) from the subject taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject)
-###
 subjects:
   - database
-###########################################################################
-###
-### The units will be populated automatically during scaffold generation.
-###
 units:
 - learn.introduction-to-sql-server-2022.1-introduction
-- learn.introduction-to-sql-server-2022.2-deploy-and-feature-diff
+- learn.introduction-to-sql-server-2022.deploy-and-feature-difference
 - learn.introduction-to-sql-server-2022.3-cloud-connected
 - learn.introduction-to-sql-server-2022.4-built-in-query-intelligence
 - learn.introduction-to-sql-server-2022.5-security-scalability-availability
 - learn.introduction-to-sql-server-2022.6-data-virtualization-object-storage
 - learn.introduction-to-sql-server-2022.7-sql-language-enhancements
 - learn.introduction-to-sql-server-2022.8-summary
-###########################################################################
-###
-### TODO verify your badge
-###
 badge:
   uid: learn.introduction-to-sql-server-2022.badge

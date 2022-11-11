@@ -30,4 +30,6 @@ In this module, you'll be able to:
 
 ## Prerequisites
 
-**Need something here**
+- Basic working knowledge of SQL Server, including deployment, security, query processing, and high availability
+- Fundamental knowledge of the T-SQL language
+- Basic knowledge of Azure concepts, including subscriptions, resource groups, Infrastructure-as-a-Service and Platform-as-a-Service
