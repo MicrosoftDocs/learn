@@ -13,7 +13,7 @@ durationInMinutes: 5 #TBD
 content: |
   [!include[](includes/4-design-chaos-experiments.md)]
 
-  quiz:
+quiz:
   title: Knowledge check
   questions:
   - content: "Question 1"

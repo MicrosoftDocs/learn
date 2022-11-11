@@ -1,7 +1,11 @@
 Include the scenario and architecture that will be used for the exercises later. 
+
 Image
+
 Components
+
 Flow
+
 
 ## Learning objectives
 
