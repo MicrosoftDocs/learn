@@ -1,4 +1,4 @@
-Suppose you work for a clothing brand as the collaborative tools developer for the Global Expansion team. The team collaborates virtually through a multiuser mixed reality application to plan new store openings. This application enables people to work from anywhere in the world. The team spans seven countries and includes individuals who speak various languages. 
+Suppose you work for a clothing brand as the collaborative tools developer for the Global Expansion team. The team collaborates virtually through a multiuser mixed reality application to plan new store openings. This application enables people to work from anywhere in the world. The team spans seven countries/regions and includes individuals who speak various languages. 
 
 As the team prepares to map out product placement and store displays, it finds that the language barrier sometimes results in miscommunication between people. To foster an inclusive work environment, your team needs a speech translation service that can integrate with the collaboration tool.
 

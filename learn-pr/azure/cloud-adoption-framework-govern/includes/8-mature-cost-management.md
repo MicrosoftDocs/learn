@@ -13,7 +13,7 @@ The Cost Management discipline builds confidence in your ability to control cost
 
 ## Cost management best practices
 
-The objective of this discipline is to apply these cost management best practices:
+The objective of this discipline is to apply these cost-management best practices:
 
 - Align teams and accountability
 - Manage best practices centrally
@@ -25,7 +25,7 @@ Cost management across the enterprise is a function of cloud governance and clou
 
 - **Tagging is critical to all governance**: Make sure that all workloads and resources follow [proper naming and tagging conventions](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging?azure-portal=true) and that you [enforce tagging conventions by using Azure Policy](/azure/governance/policy/tutorials/govern-tags?azure-portal=true).
 - **Identify right-size opportunities**: Review your current resource utilization and performance requirements across the environment.
-- **Resize**. Modify each resource to use the smallest instance or SKU that can support the performance requirements of each resource.
+- **Resize**: Modify each resource to use the smallest instance or SKU that can support the performance requirements of each resource.
 - **Horizontal versus vertical scale**: Using multiple small instances can give you an easier scaling path than a single larger instance. Using multiple smaller instances supports scale automation, which creates cost optimization.
 
 ### Operational cost management best practices
@@ -49,7 +49,7 @@ Before making architectural changes, consult the technical lead for the workload
 - **Azure App Service**: Verify production requirements for any Premium tier App Service plan. Without an understanding of the business requirements for a workload and the underlying assets configuration, it's difficult to determine whether a Premium tier plan is required.
 - **Horizontal versus vertical scale**: Using multiple small instances can give you an easier scaling path than a single larger instance. Using small instances supports scale automation, which creates cost optimization. Before a workload can scale horizontally, the technical team must verify that the application is idempotent. Achieving horizontal scale might first require changes to the code and configuring various layers of the application.
 - **Autoscale**: Enable autoscale on all app services for a burstable number of smaller VMs. Enabling autoscale has the same idempotent requirement, which requires an understanding of the workload architecture. The workload and supporting assets must be approved for horizontal scaling and autoscaling by the cloud-adoption team before any operational changes are made.
-- **Implement serverless technologies**: VM workloads often are migrated as-is to avoid downtime. Often, VMs host tasks that are intermittent, tasks that take a short period to run, or tasks that run for many hours. Examples are VMs that run scheduled tasks like Windows task scheduler or PowerShell scripts. When these tasks aren't running, you're still paying for the VMs and disk storage. After migration, consider rearchitecting layers of the workload as serverless technologies, like by using Azure Functions or Azure Batch jobs.
+- **Implement serverless technologies**: VM workloads often are migrated as-is to avoid downtime. Often, VMs host tasks that are intermittent, tasks that take a short period to run, or tasks that run for many hours. Examples are VMs that run scheduled tasks, like Windows task scheduler or PowerShell scripts. When these tasks aren't running, you're still paying for the VMs and disk storage. After migration, consider rearchitecting layers of the workload as serverless technologies like Azure Functions or Azure Batch jobs.
 
 ## Cost management process
 
@@ -59,7 +59,7 @@ The best practices described here are actionable, but how and when do you apply 
 
 *Figure 1: The Cost Management discipline as a continuous process.*
 
-Work with the central operations and workload teams to ensure proper ownership of each Cost Management discipline best practice that's shown in Figure 1 (optimization, visibility, accountability). Depending on how you manage workloads in your environment, some best practices might move between teams. Although some organizations place all the cost management burden on central IT and neglect accountability for the workload team, other organizations place all the cost management burden on the workload team. Most organizations fall somewhere between these two extremes. At Tailwind Traders, central IT serves only a reporting and budget-management function.
+Work with the central operations and workload teams to ensure proper ownership of each Cost Management discipline best practice that's shown in Figure 1 (optimization, visibility, accountability). Depending on how you manage workloads in your environment, some best practices might move between teams. Although some organizations place all the cost-management burden on central IT and neglect accountability for the workload team, other organizations place all the cost management burden on the workload team. Most organizations fall somewhere between these two extremes. At Tailwind Traders, central IT serves only a reporting and budget-management function.
 
 After you align roles, establish recurring processes to meet and hold each other accountable for this important recurring task.
 
