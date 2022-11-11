@@ -8,16 +8,16 @@ Security Center's threat protection enables you to detect and prevent threats at
 
 Security Center's threat protection includes fusion kill-chain analysis, which automatically correlates alerts in your environment based on cyber kill-chain analysis, to help you better understand the full story of an attack campaign, where it started and what kind of impact it had on your resources. Security Center's supported kill chain intents are based on the MITRE ATT&amp;CK™ framework. As illustrated below, the typical steps that trace the stages of a cyberattack.
 
-:::image type="content" source="../media/az500-kill-chain-8468a5e8.png" alt-text="Illustration of the Cyber Kill Chain, the 9 steps used to infiltrate and damage an organization.":::
+### The cloud kill chain model
+
+When attacking cloud infrastructure, adversaries often attack multiple resources to try to obtain access to customer data or company secrets. The cloud kill chain model explains how attackers attempt to gain access to any of your resources running in the public cloud through a four-step process: exposure, access, lateral movement, and actions.
+
+:::image type="content" source="../media/the-cloud-kill-chain-model-27165b83.png" alt-text="Image demonstrating the cloud kill chain model.":::
 
 
- -  **Reconnaissance**: The observation stage where attackers assess your network and services to identify possible targets and techniques to gain entry.
- -  **Intrusion**: Attackers use knowledge gained in the reconnaissance phase to get access to a part of your network. This often involves exploring a flaw or security hole.
- -  **Exploitation**: This phase involves exploiting vulnerabilities and inserting malicious code onto the system to get more access.
- -  **Privilege Escalation**: Attackers often try to gain administrative access to compromised systems so they can get access to more critical data and move into other connected systems.
- -  **Lateral Movement**: This is the act of moving laterally to connected servers and gain greater access to potential data.
- -  **Obfuscation / Anti-forensics**: To successfully pull off a cyberattack, attackers need to cover their entry. They will often compromise data and clear audit logs to try to prevent detection by any security team.
- -  **Denial of Service**: This phase involves disruption of normal access for users and systems to keep the attack from being monitored, tracked, or blocked.
- -  **Exfiltration**: The final extraction stage: getting valuable data out of the compromised systems.
+1. Exposure is where attackers look for opportunities to gain access to your infrastructure. For example, attackers know customer-facing applications must be open for legitimate users to access them. Those applications are exposed to the Internet and therefore susceptible to attacks. Attackers will attempt to attack vulnerabilities or exploit weak credentials in the exposed applications. Exposure can also be found in vulnerabilities or malware-based attacks to compromise user credentials.
+1. Attackers will try to exploit an exposure to gain access to your public cloud infrastructure. This can be done through compromised user credentials, compromised instances, or misconfigured resources. With compromised instances, attackers can gain access to instances by exploiting a vulnerability, such as on a publicly facing web application or exploiting weak credentials, such as brute-forcing a publicly facing SSH server. Without security controls in place, 68% of breaches take months or longer to discover.
+1. During the lateral movement stage, attackers discover what resources they have access to and what the scope of that access is. Successful attacks on instances give attackers access to databases and other sensitive information. The attacker then searches for additional credentials. Without a security tool to quickly notify you of the attack, it takes organizations on average 101 days to discover a breach. Meanwhile, in just 24-48 hours after a breach, the attacker will usually have complete control of the network.
+1. The actions an attacker takes after lateral movement are largely dependent on the resources they were able to gain access to during the lateral movement phase. Attackers can take actions that cause data exfiltration, data loss, or launch other attacks. For enterprises, the average financial impact of data loss is now reaching $1.23 million.
 
 Different types of attacks are associated with each stage, and they target various subsystems.

@@ -8,7 +8,7 @@ You need to implement a virtual network peering solution. This solution should a
 
 ## Skills measured
 
-Configuring virtual network peering is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
+Configuring virtual network peering is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
 
 Configure and manage virtual networking (25–30%)
 
@@ -18,7 +18,7 @@ Implement and manage virtual networking
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
  -  Identify usage cases and product features of virtual network peering.
  -  Configure gateway transit, connectivity, and service chaining.

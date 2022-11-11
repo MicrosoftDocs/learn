@@ -12,4 +12,4 @@ Supplemental Resources:
 
 - [University of Lanarkshire customer story](https://aka.ms/lanarkshireCS)
 
-- [Students in Hong Kong with Microsoft Azure certifications attract recruiters](https://aka.ms/MSLEBlogHK) 
+- [Students with Microsoft Azure certifications attract recruiters](https://aka.ms/MSLEBlogHK) 

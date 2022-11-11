@@ -1,4 +1,4 @@
-The role of Azure Database Administrator is just one of the roles that can be filled by professionals working with the Microsoft data platform services. There are five different role-based certifications offered by Microsoft for people whose main job responsibilities deal with cloud-focussed data.
+The role of Azure Database Administrator is just one of the roles that can be filled by professionals working with the Microsoft Intelligent Data Platform services. There are five different role-based certifications offered by Microsoft for people whose main job responsibilities deal with cloud-focussed data.
 
 | Role | Definition |
 |------------|-------------|

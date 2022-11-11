@@ -41,7 +41,8 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
     | Availability options | Accept default **No infrastructure redundancy required**. This option is used to ensure the VM is highly available by grouping multiple VMs together to deal with planned or unplanned maintenance events or outages. |
     | Security type | Standard |
     | Image | Select **[smalldisk] Windows Server 2019 Datacenter - Gen2** from the dropdown list. |
-    | Azure Spot instance| Accept default (unchecked). |
+    | VM architecture | Accept default (x64). |
+    | Run with Azure Spot discount| Accept default (unchecked). |
     | Size | The **Size** field isn't directly editable. Select or accept the default **Standard DS1 v2**, which will give the VM 1 CPU and 3.5 GB of memory. Optionally, select the field to view recommended or recently chosen sizes; select **See all sizes** to explore filters for sizes based on vCPUs, RAM, Data disks, operations per second, and cost. Select the X in the top right of the pane to close the pane.  |
     | **Administrator account** |
     | Username | Enter a username you'll use to sign in to the VM. |
@@ -89,7 +90,7 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
 
    In a production system, where other components are already in use, it would be important to use an _existing_ virtual network so that the VM can communicate with the other cloud services in the production solution. If no virtual network has defined in this location, create it here and configure the:
 
-    - **Subnet**: First subnet to subdivide the address space - it must fit within the defined address space. After the VNet is created, you can add more subnets.
+    - **Subnet**: First subnet to subdivide the address space; it must fit within the defined address space. After the VNet is created, you can add more subnets.
     - **Public IP**: Overall IPV4 space available to this network.
 
 1. On the **Networking** tab, let's change some of the settings. Under the input field for **Virtual network**, select **Create new**. The **Create virtual network** pane appears.

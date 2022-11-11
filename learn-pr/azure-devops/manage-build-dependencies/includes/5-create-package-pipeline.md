@@ -4,7 +4,7 @@ Here, you'll get the team's new code for the **Tailspin.SpaceGame.Web.Models** p
 
 Recall that the _Space Game_ website is an ASP.NET Core app. It uses the Model-View-Controller (MVC) pattern to separate data from how that data is displayed in the user interface. Andy and Mara want to move the model classes to a separate library so that multiple projects can use those classes.
 
-To do that, they create a new C# project, called **Tailspin.SpaceGame.Web.Models**, that contains only the model classes. At the same time, they remove the model classes from their existing project, **Tailspin.SpaceGame.Web**. They replace the model classes in their existing project with a reference to the **Tailspin.SpaceGame.Web.Models** project.
+To do that, they create a new C# project called **Tailspin.SpaceGame.Web.Models** that contains only the model classes. At the same time, they remove the model classes from their existing project, **Tailspin.SpaceGame.Web**. They replace the model classes in their existing project with a reference to the **Tailspin.SpaceGame.Web.Models** project.
 
 To build these projects, Andy and Mara use two pipelines, one for each project. You already have the first project and its associated Azure Pipelines configuration. Here, you'll fork the second project on GitHub, and create an Azure Pipelines configuration to build it. You'll publish the resulting package to Azure Artifacts.
 
@@ -124,7 +124,7 @@ Here's how to set up a second pipeline to build the package, and upload that pac
 
 1. From Azure DevOps, go to the **Space Game - web - Dependencies** project.
 1. From the menu on the left, select **Pipelines**.
-1. Select **+ New Pipeline**.
+1. Select **New Pipeline**.
 1. From the **Connect** tab, select **GitHub**.
 1. From the **Select** tab, select **mslearn-tailspin-spacegame-web-models**.
 

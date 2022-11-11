@@ -56,51 +56,10 @@ Agile software development helps teams keep focused on business outcomes.
 
 ## Comparison of the waterfall and agile methodologies<br>
 
-:::row:::
-  :::column:::
-    **Waterfall**
-  :::column-end:::
-  :::column:::
-    **Agile**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Divided into distinct phases.
-  :::column-end:::
-  :::column:::
-    Separates the project development lifecycle into sprints.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    It can be rigid.
-  :::column-end:::
-  :::column:::
-    Known for flexibility.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    All project development phases, such as design, development, and test, are completed once.
-  :::column-end:::
-  :::column:::
-    It follows an iterative development approach so that each phase may appear more than once.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Define requirements at the start of the project with little change expected.
-  :::column-end:::
-  :::column:::
-    Requirements are expected to change and evolve.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Focus on completing the project.
-  :::column-end:::
-  :::column:::
-    Focus on meeting customers' demands.
-  :::column-end:::
-:::row-end:::
+| **Waterfall**                                                                              | **Agile**                                                                                  |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| Divided into distinct phases.                                                              | Separates the project development lifecycle into sprints.                                  |
+| It can be rigid.                                                                           | Known for flexibility.                                                                     |
+| All project development phases, such as design, development, and test, are completed once. | It follows an iterative development approach so that each phase may appear more than once. |
+| Define requirements at the start of the project with little change expected.               | Requirements are expected to change and evolve.                                            |
+| Focus on completing the project.                                                           | Focus on meeting customers' demands.                                                       |

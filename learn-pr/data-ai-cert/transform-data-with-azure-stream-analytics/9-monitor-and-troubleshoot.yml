@@ -4,9 +4,9 @@ title: Monitor and troubleshoot Azure Stream Analytics jobs
 metadata:
   title: Monitor and troubleshoot Azure Stream Analytics jobs
   description: Monitor and troubleshoot Azure Stream Analytics jobs
-  ms.date: 01/31/2019
-  author: ctesta-oneillmsft
-  ms.author: chtestao
+  ms.date: 11/07/2022
+  author: wwlpublish
+  ms.author: smcdowell
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

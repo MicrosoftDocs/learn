@@ -4,7 +4,7 @@ You have multiple features and configurations to support your teams, such as cal
 
 The Kanban board is one of several tools that allows you to add, update, and filter user stories, bugs, features, and epics.
 
-:::image type="content" source="../media/azure-boards-board-view-78b3f04e.png" alt-text="Screenshot of Kanban boards with work items." lightbox="../media/azure-boards-board-view-78b3f04e.png":::
+:::image type="content" source="../media/azure-boards-board-view-78b3f04e.png" alt-text="Screenshot of Kanban boards with work items.":::
 
 
 You can track your work using the default work item types such as user stories, bugs, features, and epics. It's possible to customize these types or create your own. Each work item provides a standard set of system fields and controls, including Discussion for adding and tracking comments, History, Links, and Attachments.
@@ -37,6 +37,6 @@ Delivery plans are fully interactive, supporting the following tasks:
 
 For more information about Azure Boards, see:
 
- -  [Azure Boards documentation](/azure/devops/boards).
- -  [Reasons to use Azure Boards to plan and track your work](/azure/devops/boards/get-started/why-use-azure-boards).
+ -  [Azure Boards documentation \| Microsoft Docs](/azure/devops/boards).
+ -  [Reasons to start using Azure Boards \| Microsoft Docs](/azure/devops/boards/get-started/why-use-azure-boards).
  -  [GitHub and Azure Boards](/azure/devops/boards/github).

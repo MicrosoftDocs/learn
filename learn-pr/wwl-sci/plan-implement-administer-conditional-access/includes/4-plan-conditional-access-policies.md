@@ -72,9 +72,9 @@ It can be difficult to predict the number and names of users affected by common 
 
 Report-only mode allows administrators to evaluate the CA policies before enabling them in their environment.
 
-### Exclude countries from which you never expect a sign-in
+### Exclude countries/regions from which you never expect a sign-in
 
-Azure active directory allows you to create named locations. Create a named location that includes all of the countries from which you would never expect a sign-in to occur. Then create a policy for all apps that blocks sign in from that named location. **Be sure to exempt your administrators from this policy**.
+Azure active directory allows you to create named locations. Create a named location that includes all of the countries/regions from which you would never expect a sign-in to occur. Then create a policy for all apps that blocks sign in from that named location. **Be sure to exempt your administrators from this policy**.
 
 ## Common policies
 

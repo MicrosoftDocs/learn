@@ -6,17 +6,17 @@ By understanding what makes startups succeed, you'll be able to bake some of the
 
 Every startup needs to be based on a good idea. Unfortunately for a lot of founders, the idea they decide to work on is self-evidently good. This means that a lot of other people are likely to have had the same idea, and the company will therefore most likely be competing with other startups, or even large enterprises, doing something similar.
 
-Some of the best startup ideas sound crazy at first but are actually a good idea. This makes them a *great* startup idea, because not many people are working on the same thing.
+Some of the best startup ideas sound wild at first but are actually a good idea. This makes them a *great* startup idea, because not many people are working on the same thing.
 
 Consider the following Venn diagram:
 
-:::image type="content" source="../media/learning-path-basic-venn-diagram.png" alt-text="Diagram that shows two slightly overlapping circles, one for good ideas, and the other for crazy-sounding ideas.":::
+:::image type="content" source="../media/learning-path-basic-venn-diagram.png" alt-text="Diagram that shows two slightly overlapping circles, one for good ideas, and the other for absurd-sounding ideas.":::
 
-The blue set on the left represents all ideas that sound crazy. When you first describe these ideas to people, their most common reaction is, "That wouldn't work."
+The blue set on the left represents all ideas that sound absurd. When you first describe these ideas to people, their most common reaction is, "That wouldn't work."
 
 The green set on the right represents all ideas that are in fact a good idea (that is, they could be the basis for a product that customers want and would pay for).
 
-Not many people start off with ideas that sound crazy and are *in fact* crazy (the blue set on the left, excluding the intersect). That's good news, because the world doesn't need any more perpetual-motion-machine inventors.
+Not many people start off with ideas that sound absurd and are *in fact* absurd (the blue set on the left, excluding the intersect). That's good news, because the world doesn't need any more perpetual-motion-machine inventors.
 
 However, a lot of people tend to come up with ideas that are perfectly good, but are very obvious (the green set on the right, excluding the intersect). There's a good chance that many startups are working on a similar idea.
 

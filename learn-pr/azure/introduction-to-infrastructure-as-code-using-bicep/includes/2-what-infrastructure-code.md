@@ -19,7 +19,7 @@ You can think of infrastructure as code as being like the instruction manual for
 
 Infrastructure as code is the process of automating your infrastructure provisioning. It uses a descriptive coding language and versioning system that's similar to what is used for source code. When you create an application, your source code generates the same result each time it's compiled. In a similar manner, infrastructure-as-code deployments are automated, consistent, and repeatable. Infrastructure as code can automate the deployments of your infrastructure resources, like virtual networks, virtual machines, applications, and storage.
 
-:::image type="content" source="../media/iac.svg" alt-text="Diagram that shows the infrastructure as code process using a source code repository with a template that deploys Azure resources.":::
+:::image type="content" source="../media/iac.svg" alt-text="Diagram that shows the infrastructure as code process using a source code repository with a template that deploys Azure resources." border="false" :::
 
 If you recall the instruction manual for the new toy, there are multiple ways to write the instruction manual. One option is to detail each step of the build process. Another option is to show an exploded view of the pieces and parts needed to assemble the toy. Later in this unit, you'll learn about the differences between imperative and declarative code and how they relate to your company's instruction manuals.
 
