@@ -47,10 +47,9 @@ Azure AD Connect Health for Active Directory Federation Services (AD FS) and Azu
 
 1. Open the **Server** blade from the **Server List** blade by selecting the server name to be removed.
 1. On the **Server** blade, from the action bar, click **Delete**.
-
-:::image type="content" source="../media/delete-server-2-1e9e75dc.png" alt-text="Screenshot of Azure A D Connect Health delete server.  Only keep servers that are active.":::
-
-
+    
+    :::image type="content" source="../media/delete-server-2-1e9e75dc.png" alt-text="Screenshot of Azure A D Connect Health delete server.  Only keep servers that are active.":::
+    
 1. Confirm by typing the server name in the confirmation box.
 1. Click **Delete**.
 
@@ -77,10 +76,9 @@ When you're deleting a service instance, be aware of the following:
 
 1. Open the **Service** blade from the **Service List** blade by selecting the service identifier (farm name) that you want to remove.
 1. On the **Service** blade, from the action bar, click **Delete**.
-
-:::image type="content" source="../media/delete-server-9ebbd5de.png" alt-text="Screenshot of Azure A D Connect Health delete service.  Remove unwanted services.":::
-
-
+    
+    :::image type="content" source="../media/delete-server-9ebbd5de.png" alt-text="Screenshot of Azure A D Connect Health delete service.  Remove unwanted services.":::
+    
 1. Confirm by typing the service name in the confirmation box (for example: sts.contoso.com).
 1. Click **Delete**.
 
