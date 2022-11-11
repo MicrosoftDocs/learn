@@ -1,4 +1,4 @@
-You've learned what Azure Private 5G Core is and the role it plays in Azure private MEC solutions. Now let's see how Azure Private 5G Core provides the 5G network functions and manage the private network. 
+You've learned what Azure Private 5G Core is and the role it plays in Azure private MEC solutions. Now let's see how Azure Private 5G Core provides the 5G network functions and manages the private network. 
 
 This unit introduces the key components and the packet core architecture of Azure Private 5G Core. In addition, it also lists the Azure resources that you'll use to manage your private mobile network.
 

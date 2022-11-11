@@ -34,7 +34,7 @@ TBD: A video that introduces several private MEC application scenarios
 
 As discussed in the video, you can typically use private MEC solutions with Azure Private 5G Core in these areas:
 
-- **Machine to machine automation** - Ultra reliable low latency connectivity (URLLC) for command and control messages from automated systems like robots or automated guide vehicles.
+- **Machine to machine automation** - Ultra reliable low latency connectivity (URLLC) for command-and-control messages from automated systems like robots or automated guide vehicles.
 - **Massive IoT telemetry** - Secure cloud connectivity for data collection from a large density and volume of IoT sensors and devices.
 - **Real-time analytics** - Local processing of real-time operational and diagnostics data.
 

@@ -24,14 +24,14 @@ quiz:
     - content: "Virtual machine provisioning in private networks."
       isCorrect: false
       explanation: "Try again. Enterprises can use Azure Private 5G Core to deploy private mobile networks but can't use it to provision virtual machines in the network."
-  - content: "Which of the following feature does Azure Private 5G Core provide?"
+  - content: "Which of the following features does Azure Private 5G Core provide?"
     choices:
     - content: "Docker-compatible containers to run business logic."
       isCorrect: false
       explanation: "Try again. Azure Private 5G Core can work together with applications that run business logic but doesn't provide containers for running business logic itself."
-    - content: "4G network functions"
+    - content: "5G network functions"
       isCorrect: true
-      explanation: "Correct. In addition to 5G network functions, Azure Private 5G Core provides 4G network functions such as Mobile management entity (MME)."
+      explanation: "Correct. The packet core instance that Azure Private 5G Core deploys at each site is a complete set of 5G network functions."
     - content: "Threat protection for IoT devices."
       isCorrect: false
       explanation: "Try again. Enterprises can use Azure Private 5G Core to deploy private mobile network that hosts IoT devices. However, Azure Private 5G Core doesn't provide threat protection for each IoT device."

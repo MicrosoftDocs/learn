@@ -1,4 +1,4 @@
-Azure Private 5G Core provides 5G and 4G network functions for enterprise private mobile network. It allows you to manage the network functions centrally from the Azure portal. While providing the convenience of central management through the cloud, the private MEC solution powered by Azure Private 5G Core can ensure data security and low latency levels with local data processing.
+Azure Private 5G Core provides 5G and 4G network functions for enterprise private mobile networks. It allows you to manage the network functions centrally from the Azure portal. While providing the convenience of central management through the cloud, the private MEC solution powered by Azure Private 5G Core can ensure data security and low latency levels with local data processing.
 
 This unit introduces the key features of Azure Private 5G Core.
 
