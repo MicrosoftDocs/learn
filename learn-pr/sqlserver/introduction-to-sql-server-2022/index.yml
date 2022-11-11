@@ -61,10 +61,12 @@ summary: ""
 ### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main
 ###
 abstract: |
-  By the end of this module, you'll be able to:
-    - (prepare)
-    - (apply)
-    - (validate)
+  In this module, you'll be able to:
+
+    - Describe the innovations introduced in SQL Server 2022
+    - Be able to determine if SQL Server 2022 can help modernize your data estate, while reducing the cost of ownership, and accelerate the performance of your applications
+    - Be able to leverage new security capabilities in SQL Server 2022 to protect your data, and use cryptographic attestations that your data hasn't been tampered with
+    - Connect your data to Azure and data lakes
 ###########################################################################
 ###
 ### Prerequisites
@@ -79,9 +81,10 @@ abstract: |
 ###   https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main
 ###
 prerequisites: |
-  - Knowledge of what (product) is and how it works at the beginner level
-  - TODO prerequisite 2
-  - TODO prerequisite 3
+  - Basic working knowledge of SQL Server, including deployment, security, query processing, and high availability
+  - Fundamental knowledge of the T-SQL language
+  - Basic knowledge of Azure concepts, including subscriptions, resource groups, Infrastructure-as-a-Service and Platform-as-a-Service
+
 ###########################################################################
 ###
 ### Replace with the custom module icon when available
@@ -101,7 +104,7 @@ levels:
 ### Use value(s) from the role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role)
 ###
 roles:
-  - developer
+  - administrator
 ###########################################################################
 ###
 ### Specify the covered products.
@@ -115,7 +118,7 @@ products:
 ### Use value(s) from the subject taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject)
 ###
 subjects:
-  - cloud-computing
+  - database
 ###########################################################################
 ###
 ### The units will be populated automatically during scaffold generation.
