@@ -4,24 +4,24 @@ Though finding which virtual machine size best fits your needs is an iterative p
 
 ## CPU or GPU
 
-One important decision to make when configuring compute is whether you want to use CPU or GPU. For smaller tabular datasets, CPU will be sufficient and cheaper to use. Whenever working with unstructured data like images or text, GPUs will be more powerful and effective.
+One important decision to make when configuring compute is whether you want to use a **central processing unit** (**CPU**) or a **graphics processing unit** (**GPU**). For smaller tabular datasets, CPU will be sufficient and cheaper to use. Whenever working with unstructured data like images or text, GPUs will be more powerful and effective.
 
-For larger amounts of tabular data, it may also be beneficial to use GPUs. When processing your data and training your model takes long, even with the largest CPU compute available, you may want to consider using GPU compute instead. There are libraries such as RAPIDs (developed by NVIDIA) which allow you to efficiently perform data preparation and model training with larger tabular datasets. As GPUs come at a higher cost than CPUs, it may require some experimentation to explore whether using GPU will be beneficial for your situation.
+For larger amounts of tabular data, it may also be beneficial to use GPUs. When processing your data and training your model takes a long time, even with the largest CPU compute available, you may want to consider using GPU compute instead. There are libraries such as RAPIDs (developed by NVIDIA) which allow you to efficiently perform data preparation and model training with larger tabular datasets. As GPUs come at a higher cost than CPUs, it may require some experimentation to explore whether using GPU will be beneficial for your situation.
 
 > [!Tip]
-> Learn how to [train compute-intensive models with Azure Machine Learning](/learn/paths/train-compute-intensive-models-azure-machine-learning/)
+> Learn how to [train compute-intensive models with Azure Machine Learning](/learn/paths/train-compute-intensive-models-azure-machine-learning?azure-portal=true)
 
 ## General purpose or memory optimized
 
 When you create compute resources for machine learning workloads, there are two common types of virtual machine sizes you can choose from:
 
 - **General purpose**: Have a balanced CPU-to-memory ratio. Ideal for testing and development with smaller datasets.
-- **Memory optimized**: Have a high memory-to-CPU ratio. Great for in-memory analytics, which is ideal when you have larger datasets or are working in notebooks.  
+- **Memory optimized**: Have a high memory-to-CPU ratio. Great for in-memory analytics, which is ideal when you have larger datasets or when you're working in notebooks.  
 
 The size of compute in Azure Machine Learning is shown as the **virtual machine size**. The sizes follow the same naming conventions as Azure Virtual Machines. 
 
 > [!Tip]
-> Learn more about [sizes for virtual machines in Azure](/azure/virtual-machines/sizes).
+> Learn more about [sizes for virtual machines in Azure](/azure/virtual-machines/sizes?azure-portal=true).
 
 ## Spark
 

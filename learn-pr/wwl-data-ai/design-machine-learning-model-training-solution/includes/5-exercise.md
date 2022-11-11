@@ -9,5 +9,5 @@ In this exercise, you will:
 
 Follow these instructions to complete the exercise:
 
-1. View the exercise repo at [https://microsoftlearning.github.io/mslearn-aml-design/](https://microsoftlearning.github.io/mslearn-aml-design/).
+1. View the exercise repo at [https://microsoftlearning.github.io/mslearn-aml-design/](https://microsoftlearning.github.io/mslearn-aml-design?azure-portal=true).
 1. Complete the **Design a model training strategy** exercise.

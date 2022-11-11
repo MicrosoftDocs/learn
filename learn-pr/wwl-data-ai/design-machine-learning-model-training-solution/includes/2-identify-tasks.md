@@ -1,10 +1,10 @@
 Imagine you're a data scientist, and you've been asked to train a machine learning model. You'll want to **define the problem** the model will solve by understanding:
 
-- What the model’s output should be
-- What type of machine learning task you’ll use
-- What criteria makes a model successful
+- What the model’s output should be.
+- What type of machine learning task you’ll use.
+- What criteria makes a model successful.
 
-Depending on the data you have and the expected output of the model, you can identify the machine learning task. The task will determine which type of algorithms you can use to train the model. 
+Depending on the data you have and the expected output of the model, you can identify the machine learning task. The task will determine which types of algorithms you can use to train the model. 
 
 Some common machine learning tasks are:
 
