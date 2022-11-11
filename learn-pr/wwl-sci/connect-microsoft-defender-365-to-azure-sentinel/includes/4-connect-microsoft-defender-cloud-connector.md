@@ -1,4 +1,4 @@
-Microsoft Defender for Cloud is a security management tool that allows you to detect and quickly respond to threats across Azure, hybrid, and multi-cloud workloads. This connector allows you to stream your security alerts from Microsoft Defender for Cloud into Microsoft Sentinel. Then you can view Defender data in workbooks, query it to produce alerts, and investigate and respond to incidents.
+Microsoft Defender for Cloud is a security management tool that allows you to detect and quickly respond to threats across Azure, hybrid, and multicloud workloads. This connector allows you to stream your security alerts from Microsoft Defender for Cloud into Microsoft Sentinel. Then you can view Defender data in workbooks, query it to produce alerts, and investigate and respond to incidents.
 
 To view the connector page, do the following steps:
 
