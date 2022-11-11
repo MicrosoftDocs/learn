@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "SECURITY.md"
       isCorrect: true
-      explanation: "The SECURITY.md file is the primary document for communicating security information , which is a Markdown file present in a repository's root, docs, or .github folder."
+      explanation: "The SECURITY.md file is the primary document for communicating security information, which is a Markdown file present in a repository's root, docs, or .github folder."
     - content: "CONTRIBUTING.md"
       isCorrect: false
       explanation: "GitHub supports other types of community health documentation that a user may add at the organization level or in their user account"
@@ -32,13 +32,13 @@ quiz:
       explanation: "Documentation and advisories require the most significant manual interaction, but applying Dependabot to your code base automates parts of the security process, up to and including updating dependencies."
     - content: "Add access restrictions to your enterprise"
       isCorrect: false
-      explanation: "Access restrictions, security documentation, advisories are available for all repositories, but do not automate your security process"
+      explanation: "Access restrictions, security documentation, advisories are available for all repositories, but don't automate your security process"
     - content: "Create security documentation"
       isCorrect: false
-      explanation: "Access restrictions, security documentation, advisories are available for all repositories, but do not automate your security process"
+      explanation: "Access restrictions, security documentation, advisories are available for all repositories, but don't automate your security process"
     - content: "Add advisories for your users"
       isCorrect: false
-      explanation: "Access restrictions, security documentation, advisories are available for all repositories, but do not automate your security process"
+      explanation: "Access restrictions, security documentation, advisories are available for all repositories, but don't automate your security process"
   - content: "Which two pieces of information should be included in a security advisory?"
     choices:
     - content: "Product affected and severity"
@@ -57,7 +57,7 @@ quiz:
     choices:
     - content: "The user that performed the action and the date and time of the action"
       isCorrect: true
-      explanation: "The log is available to organization owners, and records information about actions that affect the organization including: which repository an action was performed in, the user that performed the action, the action that was performed, which country the action took place in, and the date and time the action occurred"
+      explanation: "The log is available to organization owners, and records information about actions that affect the organization including: which repository an action was performed in, the user that performed the action, the action that was performed, which country/region the action took place in, and the date and time the action occurred"
     - content: "The date and time of the action and changes in permissions"
       isCorrect: false
       explanation: "The GraphQL API is available for organizations using GitHub Enterprise, and can retrieve information about actions up to 120 days ago. It can monitor: access to your organization or repository settings, changes in permissions, added or removed users in an organization, repository, or team, users being promoted to admin, and changes to permissions of a GitHub App"
