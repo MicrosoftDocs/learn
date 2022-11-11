@@ -5,10 +5,10 @@ metadata:
   title: Summary
   description: Summary.
   ms.date: 11/11/2022
-  author: authorGitHubname #TBD
+  author: ttorble #TBD
   ms.author: authorMSFTalias #TBD
   ms.topic: interactive-tutorial
   ms.prod: learning-azure #TBD
 durationInMinutes: 2 #TBD
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/6-summary.md)]

@@ -5,5 +5,5 @@ The goal of the experiment is not to break the system, but to validate resilienc
 Use Azure Chaos Studio to inject the faults into the relevant components. 
 Run some load against the system at the same time to be able to observe the behavior
 Content base:
--	https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-library 
--	https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/chaos-engineering?toc=%2Fazure%2Fchaos-studio%2Ftoc.json&bc=%2Fazure%2Fchaos-studio%2Fbreadcrumb%2Ftoc.json 
+-	https://learn.microsoft.com/azure/chaos-studio/chaos-studio-fault-library 
+-	https://learn.microsoft.com/azure/architecture/framework/resiliency/chaos-engineering?toc=%2Fazure%2Fchaos-studio%2Ftoc.json&bc=%2Fazure%2Fchaos-studio%2Fbreadcrumb%2Ftoc.json 
