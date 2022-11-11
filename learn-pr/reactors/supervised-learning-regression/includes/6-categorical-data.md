@@ -33,7 +33,7 @@ The output is:
 
 ***
 
-Now that we have the data points detailed in color, let's fit three separate, simple linear models for each group of countries.
+Now that we have the data points detailed in color, let's fit three separate, simple linear models for each group of countries/regions.
 
 ```python
 model = LinearRegression(fit_intercept=True)
