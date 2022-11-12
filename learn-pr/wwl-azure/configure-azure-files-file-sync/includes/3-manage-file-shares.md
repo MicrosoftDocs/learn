@@ -14,10 +14,10 @@ There are two important settings for Azure Files that you need to be aware of wh
 
 You can connect your Azure Files share with Windows or Windows Server in the Azure portal. Specify the **Drive** where you want to map the share, and choose the **Authentication method**. The system supplies you with PowerShell commands to run when you're ready to work with the file share.
 
-<iframe src="https://www.youtube.com/embed/AhAz3BcXy0A" title="Discovering the Azure Architecture Center | Azure Tips and Tricks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::image type="content" source="../media/map-file-shares-windows-a1aa8f59.png" alt-text="Screenshot that shows how to connect to an Azure Files share with Windows or Windows Server in the Azure portal.":::
 
 ## Mount Azure Files share on Linux
 
 You can also connect Azure Files shares with Linux machines. From your virtual machine page, select **Connect**. Azure Files shares can be mounted in Linux distributions by using the CIFS kernel client. File mounting can be done on-demand with the `mount` command or on-boot (persistent) by creating an entry in /etc/fstab.
 
-<iframe src="https://www.youtube.com/embed/16bUZ43CGxs?list=PLLasX02E8BPCNCK8Thcxu-Y-XcBUbhFWC" title="How to generate SSH public key to log into Linux VM | Azure Tips and Tricks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::image type="content" source="../media/map-file-shares-linux-1639a49a.png" alt-text="Screenshot that shows how to connect to an Azure Files share with Linux in the Azure portal.":::
