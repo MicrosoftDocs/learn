@@ -15,48 +15,9 @@ The refactor phase consists of eight steps, which you do in any order:
 - Add comments.
 - Follow Bicep best practices.
 
-Here's the output of the Bicep `decompile` command against a JSON template that creates an App Service plan:
+The following example shows the output from the Bicep `decompile` command of a JSON template that creates an App Service plan:
 
-```bicep
-@description('Location for resources.')
-param location string = resourceGroup().location
-
-@allowed([
-  'prod'
-  'dev'
-  'test'
-])
-@description('The list of allowed environment names.')
-param environment string = 'prod'
-
-@allowed([
-  'P1v3'
-  'P2v3'
-  'P3v3'
-])
-@description('The list of allowed App Service Plan SKUs.')
-param appServicePlanSku string = 'P1v3'
-
-@minValue(1)
-@maxValue(10)
-@description('The number of allowed App Service Plan instances.')
-param appServicePlanInstanceCount int = 1
-
-var appServicePlanName_var = 'plan-${environment}-001'
-
-resource appServicePlanName 'Microsoft.Web/serverfarms@2020-12-01' = {
-  name: appServicePlanName_var
-  location: location
-  sku: {
-    name: appServicePlanSku
-    capacity: appServicePlanInstanceCount
-  }
-  kind: 'app'
-  properties: {}
-}
-
-output appServicePlanId string = appServicePlanName.id
-```
+:::code language="bicep" source="code/4-bicep-decompile-output.bicep" :::
 
 If you deploy this Bicep template as-is, the deployment will succeed, but you can improve the template to align it with your template standards.
 
@@ -123,8 +84,8 @@ Single-line comments can be added as headers for sections of code or on individu
 Bicep provides the `@description` decorator that you can use to document the purpose of your parameters, variables, resources, modules, and outputs. You can add the description on the line above the item you're describing:
 
 ```bicep
-@description('The name of the App Service Plan.')
-param appServicePlanName string
+@description('The name of the App Service plan.')
+var appServicePlanName = 'plan-${environment}-001'
 ```
 
 ### Follow Bicep best practices
@@ -133,56 +94,6 @@ Make sure that your Bicep file follows standard recommendations. Review [Bicep b
 
 ### The converted template
 
-After you make the appropriate improvements, review the final template before you deploy it. Take a look at a final converted example template that includes the revised names and added comments:
+After you make the appropriate improvements, review the final template before you deploy it. The updated template includes revised names, API version, descriptions, and added comments:
 
-```bicep
-/*
-  This Bicep file was developed by the web team.
-  It deploys the resources we need for our toy company's website.
-*/
-
-// Parameters
-@description('Location for all resources.')
-param location string = resourceGroup().location
-
-@allowed([
-  'prod' // Production environment
-  'dev' // Development environment
-  'test' // Test environment
-])
-@description('The list of allowed environment names.')
-param environment string = 'prod'
-
-@allowed([
-  'P1v3'
-  'P2v3'
-  'P3v3'
-])
-@description('The list of allowed App Service plan SKUs.')
-param appServicePlanSku string = 'P1v3'
-
-@minValue(1)
-@maxValue(10)
-@description('The number of allowed App Service plan instances.')
-param appServicePlanInstanceCount int = 1
-
-// Variables
-@description('The name of the App Service plan.')
-var appServicePlanName = 'plan-${environment}-001'
-
-// Resource - App Service Plan
-@description('The App Service plan resource name.')
-resource appServicePlan 'Microsoft.Web/serverfarms@2022-03-01' = {
-  name: appServicePlanName
-  location: location
-  sku: {
-    name: appServicePlanSku // Specifies the SKU of the App Service plan.
-    capacity: appServicePlanInstanceCount
-  }
-  kind: 'app' // Specifies a Windows App Service plan.
-}
-
-// Outputs
-@description('The resource ID of the App Service plan.')
-output appServicePlanId string = appServicePlan.id
-```
+:::code language="bicep" source="code/4-app-service-plan-updated.bicep" :::

@@ -23,7 +23,7 @@ The migrate phase consists of three steps:
 
 ## Phase 3: Refactor
 
-The main focus of the refactor phase is to improve the quality of your Bicep code. These improvements can include changes, such as adding code comments, that bring the template in line with your template standards.
+The main focus of the refactor phase is to improve the quality of your Bicep code. These improvements can include changes, such as adding code comments, that align the template with your template standards.
 
 The refactor phase consists of eight steps:
 

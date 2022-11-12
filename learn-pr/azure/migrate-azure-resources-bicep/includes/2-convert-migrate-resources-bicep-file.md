@@ -103,7 +103,7 @@ When you attempt to export a resource through the Azure portal, Azure CLI, or Az
 
 #### Azure Resource Explorer
 
-[Azure Resource Explorer](/azure/azure-resource-manager/templates/view-resources?azure-portal=true#use-resource-explorer) is a tool that's embedded in the Azure portal. The portal doesn't show certain resource types, but Resource Explorer gives you a JSON representation of your resources. To access Resource Explorer, search for it in the search box:
+Azure Resource Explorer is a tool that's embedded in the Azure portal. The portal doesn't show certain resource types, but Resource Explorer gives you a JSON representation of your resources. To access Resource Explorer, search for it in the search box:
 
 :::image type="content" source="../media/2-resource-explorer-1.png" alt-text="Screenshot of the Azure portal that shows the search box with resource explorer entered.":::
 
@@ -159,7 +159,7 @@ You can choose specific resource providers and resource types, like `Microsoft.W
 
 #### Azure quickstart templates
 
-The [Azure quickstart templates](https://azure.microsoft.com/resources/templates?azure-portal=true) repository is a collection of community-contributed templates. This repository of searchable templates provides examples of many Azure resources and solutions. In some quickstarts, both a JSON ARM template and a Bicep ARM template are available to view. These templates can be used as a reference point to help you build and verify your templates for deployment.
+The [Azure quickstart templates](https://learn.microsoft.com/samples/browse/?expanded=azure&products=azure-resource-manager&azure-portal=true) repository is a collection of community-contributed templates. This repository of searchable templates provides examples of many Azure resources and solutions. In some quickstarts, both a JSON ARM template and a Bicep ARM template are available to view. These templates can be used as a reference point to help you build and verify your templates for deployment.
 
 Suppose you want to find a template that builds an Azure App Service plan and app. Each quickstart template gives you the option to deploy the template directly to Azure or to view the template on GitHub.
 

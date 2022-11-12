@@ -26,7 +26,7 @@ During the refactoring process, you'll:
    | Resource type | Current symbolic name | New symbolic name |
    |-|-|-|
    | Public IP address | `publicIPAddresses_ToyTruckServer_ip_name_resource` | `publicIPAddress` |
-   | Virtual network | `virtualNetworks_ToyTruck_vnet_name_resource` | `virtualNetwork ` |
+   | Virtual network | `virtualNetworks_ToyTruck_vnet_name_resource` | `virtualNetwork` |
    | Virtual machine | `virtualMachines_ToyTruckServer_name_resource` | `virtualMachine` |
    | Subnet | `virtualNetworks_ToyTruck_vnet_name_default` | `defaultSubnet` |
    | Network interface | `networkInterfaces_toytruckserver890_name_resource` | `networkInterface` |
@@ -80,7 +80,7 @@ The parameters in the current template don't really need to be parameters. Here,
 
 All the resources currently use a hard-coded location. Here, you'll add a parameter so that the template becomes more reusable.
 
-1. At the top of the file, add a new parameter and a description decorator to make the parameter's purpose clear:
+1. At the top of the file, add a new parameter and a description decorator to clarify the parameter's purpose.
 
    ```bicep
    @description('The location into which the resources should be deployed.')
@@ -165,7 +165,7 @@ Your template has some hard-coded values where parameters or variables would be 
 
 ## Remove unnecessary properties
 
-The export process adds redundant properties to many resources. Here, you remove the extraneous properties.
+The export process adds redundant properties to many resources. Use these steps to remove the unneeded properties.
 
 1. In the `networkSecurityGroup` resource, remove the `securityRules` property because it's empty. Remove the `properties` property because it's empty now, too.
 
@@ -212,11 +212,11 @@ Your parameters currently are defined as default values in your template. To mak
 
 1. Update the values for the `virtualNetworkAddressPrefix` and `virtualNetworkDefaultSubnetAddressPrefix` parameters to match the IP address ranges that are specified in your reference template's virtual network resource.
 
-   For example, here's how they are specified in a reference template. Your IP addresses might be different from IP addresses that are used in this example:
+   For example, here's how the values are specified in a reference template. Your IP addresses might be different from IP addresses that are used in this example:
 
    :::code language="bicep" source="code/3-main-migrated.bicep" range="31-54" highlight="7, 14":::
 
-1. Update your _main.bicep_ file to remove the default values for the parameters you specified in the parameters file. Leave the default values for the `location` and `publicIPAddressSkuName` parameters because they likely are the same for all your environments.
+1. Update your _main.bicep_ file to remove the default values for the parameters you specified in the parameters file. Don't change the default values for `location` and `publicIPAddressSkuName` parameters because those values are likely the same for all your environments.
 
 ## Verify your template
 
