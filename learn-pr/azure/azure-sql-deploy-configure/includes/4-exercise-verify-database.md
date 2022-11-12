@@ -1,4 +1,4 @@
-Now that you've seen how Azure SQL appears in SQL Server Management Studio (SSMS), let's explore an open-source tool called Azure Data Studio. Azure Data Studio provides a lightweight editor and other tools (including notebooks, which you'll see soon) for interacting with Azure Data Services (SQL Server on-premises, Azure SQL, Azure Database for PostgreSQL, and more). Let's take a brief tour to get acquainted.  
+Now that you've seen how Azure SQL appears in SQL Server Management Studio (SSMS), let's explore an open-source tool called Azure Data Studio. Azure Data Studio provides a lightweight editor and other tools for interacting with Azure Data Services, such as SQL Server on-premises, Azure SQL, and Azure Database for PostgreSQL. Let's take a brief tour to get acquainted.
 
 ## Connect with Azure Data Studio
 
@@ -6,7 +6,7 @@ Now that you've seen how Azure SQL appears in SQL Server Management Studio (SSMS
 
     If you're prompted to enable preview features, select **Yes**.  
 
-    :::image type="content" source="../media/4-azure-data-studio-connect.png" alt-text="Screenshot of the opening view of Azure Data Studio.":::  
+    :::image type="content" source="../media/4-azure-data-studio-connection-window.png" alt-text="Screenshot of the opening view of Azure Data Studio.":::  
 
     If you don't see this window, or at any time you want to add another connection, you can select the **New connection** button on the **Servers** bar. In the following example, you also get a preview of what a SQL Server connection would look like. But in this exercise, you won't connect to SQL Server.  
 
@@ -25,7 +25,6 @@ Now that you've seen how Azure SQL appears in SQL Server Management Studio (SSMS
     |**Database**     | AdventureWorks        |
     |**Server group**     | Leave as `<Default>`        |
     |**Name (optional)**     |  Leave blank       |
-
 
 1. On the **Connections** tab, under **Servers**, you should now see your Azure SQL Database connection. (The SQL Server connection shown in the following image is for comparison only.)  
 
@@ -55,7 +54,7 @@ Now that you're connected, you might want an easy way to access scripts and Jupy
 
 ## Verify deployment
 
-After you've deployed an instance of SQL (Azure SQL or SQL Server), you typically run queries to verify your deployment. In Azure SQL, some of these queries vary from SQL Server. In this step, you'll see what and how things change from SQL Server, and what's new.  
+After you've deployed an instance of SQL, you typically run queries to verify your deployment. In Azure SQL, some of these queries vary from SQL Server. In this step, you'll see what and how things change from SQL Server, and what's new.  
 
 There are two options for completing this exercise:
 
@@ -123,7 +122,7 @@ In this option, you'll walk through some common queries against system functions
 
     Two `VISIBLE ONLINE` schedulers are what you would expect when two vCores are available for the SQL Server instance where your SQL database is deployed.
 
-1. For a SQL Server deployment, you might normally look at DMVs like sys.dm_process_memory to see limits for CPU, memory, and workers. This DMV is not supported with Azure SQL Database, because the user doesn't expose or control the details of the host that supports the database. So you can use the DMV sys.dm_user_db_resource_governance (and sys.dm_instance_resource_governance in Azure SQL Managed Instance) to review capacities and limits for your deployed SQL database. 
+1. For a SQL Server deployment, you might normally look at DMVs like sys.dm_process_memory to see limits for CPU, memory, and workers. This DMV is not supported with Azure SQL Database, because the user doesn't expose or control the details of the host that supports the database. You can use the DMV sys.dm_user_db_resource_governance to review capacities and limits for your deployed SQL database. You can also use sys.dm_instance_resource_governance in Azure SQL Managed Instance.
 
     Run and review the following query results. Compare this to your pricing tier and the limits documented for your deployed tier. The `slo_name` is the Service Level Objective (SLO) which states the deployment option, service tier, hardware, and compute amount.  In addition, because Azure SQL Database uses Windows Job Objects for additional resource limits (such as memory), you can use the `sys.dm_os_job_object` DMV to see what resources are available for the deployment.
 
