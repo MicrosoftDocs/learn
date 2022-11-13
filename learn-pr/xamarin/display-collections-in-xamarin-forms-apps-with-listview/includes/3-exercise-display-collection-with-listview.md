@@ -98,11 +98,11 @@ Now that you've created a content page, add a `ListView` control to display the 
     }
     ```
 
-1. Run the application and verify that your `ListView` control is populated with the name of the countries.
+1. Run the application and verify that your `ListView` control is populated with the name of the countries/regions.
 
 ## Bind to SelectedItem
 
-Our application now displays a `ListView` control populated with the name of countries. Let's start adding some interactivity by letting our users select a country/region. We'll start off defining a two-way binding to the `CurrentFlag` property. This binding will allow us to keep track of which country/region was selected and let us change the currently selected country/region from code.
+Our application now displays a `ListView` control populated with the name of countries/regions. Let's start adding some interactivity by letting our users select a country/region. We'll start off defining a two-way binding to the `CurrentFlag` property. This binding will allow us to keep track of which country/region was selected and let us change the currently selected country/region from code.
 
 Add a binding in the XAML for the `ListView.SelectedItem` property to connect it to the `CurrentFlag` property. Make sure it's marked as a two-way binding.
 
