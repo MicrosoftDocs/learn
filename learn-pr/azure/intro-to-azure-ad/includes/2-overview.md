@@ -1,4 +1,4 @@
-The board wants to enable secure and easy access to applications and services. These applications are available to internal staff and doctors from various countries. Your team manager believes that Azure Active Directory (Azure AD) can address these needs. Your manager wants you to find out what Azure AD is, how it works, and what it does.
+The board wants to enable secure and easy access to applications and services. These applications are available to internal staff and doctors from various countries/regions. Your team manager believes that Azure Active Directory (Azure AD) can address these needs. Your manager wants you to find out what Azure AD is, how it works, and what it does.
 
 Here, you'll get an overview of Azure AD and see why you would use it. You'll learn about the differences between Azure AD and the traditional on-premises Active Directory.
 

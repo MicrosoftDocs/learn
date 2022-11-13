@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-windows-powershell
 metadata:
   title: Get started with Windows PowerShell
   description: Get started with Windows PowerShell
-  ms.date: 07/28/2022
+  ms.date: 11/10/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ prerequisites: |
   - Core networking technologies such as IP addressing, name resolution, and Dynamic Host Configuration Protocol (DHCP).
 summary: |
   This learning path introduces you to Windows PowerShell and provides an overview of the product’s functionality. It explains how to open and configure Windows PowerShell, run commands, and use its built-in Help system.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/get-started-windows-powershell.svg
 levels:
 - intermediate
 roles:

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.solution
+title: Design a data ingestion solution
+metadata:
+  title: Design a data ingestion solution
+  description: "Design a data ingestion solution"
+  ms.date: 11/11/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-solution.md)]
