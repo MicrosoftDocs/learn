@@ -15,7 +15,7 @@ prerequisites: |
   - Familiarity with database structures like tables, columns, and rows
 summary: |
   In this learning path, students will learn how to analyze data in Azure Data Explorer using the Kusto Query Language.
-iconUrl: /training/achievements/data-analysis-data-explorer-kusto-query-language.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
 - intermediate
