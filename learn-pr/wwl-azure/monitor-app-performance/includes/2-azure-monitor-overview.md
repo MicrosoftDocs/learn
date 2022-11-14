@@ -1,13 +1,12 @@
-Azure Monitor helps you maximize the availability and performance of your applications and services.
+Azure Monitor delivers a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. 
 
-## Overview
 The following diagram is a high-level view of Azure Monitor.
 
-- At the center of the diagram, you'll find the data stores for metrics and logs and changes. These data stores are the fundamental types of data used by Azure Monitor.
-- On the left are the sources of monitoring data that populate the data stores.
-- On the right are the different functions that Azure Monitor performs with this collected data. This diagram includes such actions as analysis, alerting, and integration such as streaming to external systems.
+* At the center of the diagram, you'll find the data stores for metrics and logs and changes. These data stores are the fundamental types of data used by Azure Monitor.
+* On the left are the sources of monitoring data that populate the data stores.
+* On the right are the different functions that Azure Monitor performs with this collected data. This diagram includes such actions as analysis, alerting, and integration such as streaming to external systems.
 
-:::image type="content" source="https://learn.microsoft.com/azure/azure-monitor/media/overview/azure-monitor-overview-2022-08-25-change-analysis-opt.svg" alt-text="Diagram that shows an overview of Azure Monitor." border="false" lightbox="https://learn.microsoft.com/azure/azure-monitor/media/overview/azure-monitor-overview-2022-08-25-change-analysis-opt.svg":::
+:::image type="content" source="../media/azure-monitor-overview2.png" alt-text="Diagram that shows an overview of Azure Monitor." border="false" lightbox="../media/azure-monitor-overview2.png":::
 
 ## What data does Azure Monitor collect?
 
@@ -22,6 +21,11 @@ Metrics, logs, and distributed traces are commonly referred to as the three pill
 
 ## Insights and curated visualizations
 
-Some Azure resource providers have a "curated visualization", which provide a customized monitoring experience for that particular service or set of services.
+Monitoring data is only useful if it can increase your visibility into the operation of your computing environment. Some Azure resource providers have a "curated visualization" which gives you a customized monitoring experience for that particular service or set of services. They generally require minimal configuration. Larger scalable curated visualizations are known as "insights" and marked with that name in the documentation and Azure portal. Some examples are:
 
-Larger, scalable, curated visualizations are known as "insights" and marked with that name in the documentation and the Azure portal. Examples of insights include Application Insights, Container Insights, and VM Insights.
+* **Application Insights:** Application Insights monitors the availability, performance, and usage of your web applications whether they're hosted in the cloud or on-premises. It leverages the powerful data analysis platform in Azure Monitor to provide you with deep insights into your application's operations. It enables you to diagnose errors without waiting for a user to report them. 
+
+* **Container Insights:** Container Insights monitors the performance of container workloads that are deployed to managed Kubernetes clusters hosted on Azure Kubernetes Service (AKS) and Azure Container Instances. It gives you performance visibility by collecting metrics from controllers, nodes, and containers that are available in Kubernetes through the Metrics API. Container logs are also collected. 
+
+* **VM Insights:** VM Insights monitors your Azure virtual machines (VM) at scale. It analyzes the performance and health of your Windows and Linux VMs and identifies their different processes and interconnected dependencies on external processes.
+

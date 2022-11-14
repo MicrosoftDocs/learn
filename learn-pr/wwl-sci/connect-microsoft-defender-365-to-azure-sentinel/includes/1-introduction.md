@@ -8,8 +8,10 @@ After completing this module, you'll be able to:
 
 - Activate the Microsoft 365 Defender connector in Microsoft Sentinel
 - Activate the Microsoft Defender for Cloud connector in Microsoft Sentinel
+- Activate the Microsoft Defender for IoT connector in Microsoft Sentinel
 
 
 ## Prerequisites
 
-Intermediate understanding of Microsoft 365. 
+- Intermediate understanding of Microsoft 365 Defender services
+- Hands on experience with Microsoft Azure
