@@ -1,4 +1,4 @@
-Microsoft Azure Arc can help you manage your Linux instances. Azure Arc provides a set of technologies for organizations that want to simplify their complex and distributed environments. Azure Arc provides a centralized, unified, and self-service approach to managing Linux resources.
+Microsoft Azure Arc can help you manage your Linux instances in addition to your Windows resources. Azure Arc provides a set of technologies for organizations that want to simplify their complex and distributed environments. Azure Arc provides a centralized, unified, and self-service approach to managing Linux resources.
 
 Contoso, Ltd. is a midsize financial services company in London with a branch office in New York City. Contoso has deployed and evaluated Azure Arc-enabled servers for their on-premise Windows servers. Given their positive experience with Azure Arc on their Windows estate, you've been tasked by management to learn about Azure Arc-enabled server capabilities for similarly managing Linux workloads.
 
