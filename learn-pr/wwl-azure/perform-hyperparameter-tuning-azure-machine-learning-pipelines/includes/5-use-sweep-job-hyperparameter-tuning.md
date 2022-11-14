@@ -2,7 +2,7 @@
 
 In Azure Machine Learning, you can tune hyperparameters by running a **sweep job**.
 
-## Creating a training script for hyperparameter tuning
+## Create a training script for hyperparameter tuning
 
 To run a sweep job, you need to create a training script just the way you would do for any other training job, except that your script ***must***:
 
@@ -45,15 +45,14 @@ acc = np.average(y_hat == y_test)
 mlflow.log_metric("Accuracy", acc)
 ```
 
-## Configuring and running a sweep job
+## Configure and run a sweep job
 
 To prepare the sweep job, you must first create a base **command job** that specifies which script to run and defines the parameters used by the script:
 
 ```python
 from azure.ai.ml import command
 
-# configure job
-
+# configure command job as base
 job = command(
     code="./src",
     command="python train.py --regularization ${{inputs.regularization}}",
@@ -98,7 +97,7 @@ sweep_job.set_limits(max_total_trials=4, max_concurrent_trials=2, timeout=7200)
 returned_sweep_job = ml_client.create_or_update(sweep_job)
 ```
 
-## Monitoring and reviewing sweep jobs
+## Monitor and review sweep jobs
 
 You can monitor sweep jobs in Azure Machine Learning studio. The sweep job will initiate trials for each hyperparameter combination to be tried. For each trial, you can review all logged metrics. 
 

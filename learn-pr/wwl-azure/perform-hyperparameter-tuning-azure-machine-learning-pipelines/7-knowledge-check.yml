@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.knowledge check
+uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -14,13 +14,13 @@ quiz:
   questions:
   - content: "You plan to use hyperparameter tuning to find optimal discrete values for a set of hyperparameters. You want to try every possible combination of a set of specified discrete values. Which kind of sampling should you use?"
     choices:
-    - content: "Random Sampling"
+    - content: "Random sampling"
       isCorrect: false
       explanation: "Incorrect. You should use grid sampling to try every combination of discrete hyperparameter values."
-    - content: "Grid Sampling"
+    - content: "Grid sampling"
       isCorrect: true
       explanation: "Correct. You should use grid sampling to try every combination of discrete hyperparameter values."
-    - content: "Bayesian Sampling"
+    - content: "Bayesian sampling"
       isCorrect: false
       explanation: "Incorrect. You should use grid sampling to try every combination of discrete hyperparameter values."
   - content: "You're using hyperparameter tuning to train an optimal model based on a target metric named \"AUC\". What should you do in your training script?"

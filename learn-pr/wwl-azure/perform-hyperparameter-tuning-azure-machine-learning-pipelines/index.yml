@@ -25,7 +25,6 @@ roles:
 products:
 - azure-machine-learning
 subjects:
-- artificial-intelligence
 - machine-learning
 units:
 - learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.introduction
@@ -34,7 +33,7 @@ units:
 - learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.configure-early-termination
 - learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.use-sweep-job-hyperparameter-tuning
 - learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.exercise-run-sweep-job
-- learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.knowledge check
+- learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.knowledge-check
 - learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.summary
 badge:
   uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.badge
