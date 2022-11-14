@@ -10,11 +10,33 @@ To choose the right disk type, it's important that you understand the performanc
 
 ## IOPS vs. throughput
 
-Throughput and IOPS have a direct relationship. Changing one directly affects the other. To get a theoretical limit of throughput, you can use the following formula: IOPS &times; I/O size = throughput. It's important to consider both these values when you plan your application.
+For disk types other than Ultra disks or Premium SSD v2 managed disks, throughput and IOPS have a direct relationship. Changing one directly affects the other. To get a theoretical limit of throughput, you can use the following formula: IOPS &times; I/O size = throughput. It's important to consider both these values when you plan your application.
 
-Now that you know which disks are available in Azure, you need to match each of your VMs with the correct disk type. VMs have their own storage IOPS limits, which can affect the overall application performance when combined with the disk IOPS.
+For Ultra disks and Premium SSD v2 managed disks, it works a little differently since you can independently adjust the disk size, IOPS, and throughput. Adjustments to IOPS or throughput for Ultra disks and Premium SSD v2 managed disks can be done at runtime, without detaching the disk from the VM.
+
+### Ultra disk IOPS
+
+Ultra disks support IOPS limits of 300 IOPS/GiB, up to a maximum of 160,000 IOPS per disk. To achieve the target IOPS for the disk, ensure that the selected disk IOPS are less than the VM IOPS limit.
+
+The current maximum limit for IOPS for a single VM in generally available sizes is 80,000. Ultra disks with greater IOPS can be used as shared disks to support multiple VMs.
+
+The minimum guaranteed IOPS per disk are 1 IOPS/GiB, with an overall baseline minimum of 100 IOPS. For example, if you provisioned a 4-GiB ultra disk, the minimum IOPS for that disk is 100, instead of four.
+
+### Ultra disk throughput
+
+The throughput limit of a single ultra disk is 256-KiB/s for each provisioned IOPS, up to a maximum of 4000 MBps per disk (where MBps = 10^6 Bytes per second). The minimum guaranteed throughput per disk is 4KiB/s for each provisioned IOPS, with an overall baseline minimum of 1 MBps.
+
+### Premium SSD v2 IOPS
+
+All Premium SSD v2 disks have a baseline IOPS of 3000 that is free of charge. After 6 GiB, the maximum IOPS a disk can have increases at a rate of 500 per GiB, up to 80,000 IOPS. So an 8 GiB disk can have up to 4,000 IOPS, and a 10 GiB can have up to 5,000 IOPS. To be able to set 80,000 IOPS on a disk, that disk must have at least 160 GiBs. Increasing your IOPS beyond 3000 increases the price of your disk.
+
+### Premium SSD v2 throughput
+
+All Premium SSD v2 disks have a baseline throughput of 125 MB/s, that is free of charge. After 6 GiB, the maximum throughput that can be set increases by 0.25 MB/s per set IOPS. If a disk has 3,000 IOPS, the max throughput it can set is 750 MB/s. To raise the throughput for this disk beyond 750 MB/s, its IOPS must be increased. For example, if you increased the IOPS to 4,000, then the max throughput that can be set is 1,000. 1,200 MB/s is the maximum throughput supported for disks that have 5,000 IOPS or more. Increasing your throughput beyond 125 increases the price of your disk.
 
 ## Virtual machine I/O capping
+
+Now that you know which disks are available in Azure, you need to match each of your VMs with the correct disk type. VMs have their own storage IOPS limits, which can affect the overall application performance when combined with the disk IOPS.
 
 If you don't size the VM correctly for the storage performance an application requires, the VM itself becomes a bottleneck.
 
