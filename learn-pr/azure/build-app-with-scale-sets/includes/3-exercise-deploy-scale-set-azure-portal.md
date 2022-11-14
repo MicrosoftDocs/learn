@@ -41,7 +41,7 @@ Your first task is to create a scale set. You'll configure it to run a web serve
 
     ```azurecli
     az group create \
-      --location westus2 \
+      --location westus3 \
       --name scalesetrg
     ```
 
