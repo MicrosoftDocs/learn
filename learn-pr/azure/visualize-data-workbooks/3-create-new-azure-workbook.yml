@@ -8,7 +8,9 @@ metadata:
   author: AbbyMSFT
   ms.author: abbyweisberg
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+  ms.prod: learning-azure
+azureSandbox: true
+interactive: bash
+durationInMinutes: 7
 content: |
   [!include[](includes/3-create-new-azure-workbook.md)]
