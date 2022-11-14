@@ -28,6 +28,7 @@ They can be briefly summarized as:
 4. Make documents accessible
 
 ### Nothing about us without us
+
 Include people with disabilities from the beginning of every planning process. 
 
 This mantra “reinforces the role of people without disabilities as strong allies and partners who share the role towards inclusivity and accessibility”*
@@ -42,7 +43,7 @@ A person who is deaf may have a sign language interpreter. Ensure that you speak
 
 ### Don't touch
 
-Never touch assistive tools, such as wheelchairs, guide dogs, canes, or phones. And when collaborating with someone who has a disability, if something isn't working on their device, don't just take it---ask if you can try troubleshooting it yourself.
+Never touch assistive tools, such as wheelchairs, guide dogs, canes, or phones. Don't touch or grab a person. And when collaborating with someone who has a disability, if something isn't working on their device, don't just take it; ask if you can try troubleshooting it yourself.
 
 ### Announce yourself
 
@@ -50,4 +51,4 @@ If a person has low vision or is blind, announce yourself when you walk by or en
 
 ### Make documents accessible
 
-Make all of your electronic files, like Word documents and PowerPoint presentations, accessible. Even if you only intend to share that beautiful presentation with a person who you know is sighted, it may wind up getting reviewed by someone who is not. Or, you may have spent thousands of dollars on a fancy video promoting a new feature of your product. Be sure to include closed captions so people who are deaf or hard of hearing---or even people who can hear but are in a noisy environment---can experience the great video you produced.
+Make all of your electronic files, like Word documents and PowerPoint presentations, accessible. Even if you only intend to share that beautiful presentation with a person who you know is sighted, it may wind up getting reviewed by someone who is not. Or, you may have spent thousands of dollars on a fancy video promoting a new feature of your product. Be sure to include closed captions so people who are deaf or hard of hearing, or even people who can hear but are in a noisy environment can experience the great video you produced.
