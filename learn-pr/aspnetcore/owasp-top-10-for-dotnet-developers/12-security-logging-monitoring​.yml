@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.owasp-top-10-for-dotnet-developers.security-logging-monitoring
+title: security-logging-monitoring
+metadata:
+  title: security-logging-monitoring
+  description: "OWASP Top Ten 2021 for .NET Developers. Security logging and monitoring."
+  ms.date: 01/09/2022
+  author: obrocki
+  ms.author: dawidobrocki
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/12-security-logging-monitoring.md)]

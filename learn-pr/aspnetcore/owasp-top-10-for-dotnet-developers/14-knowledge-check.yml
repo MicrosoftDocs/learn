@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.owasp-top-10-for-dotnet-developers.knowledge-check-2
+title: Knowledge check
+metadata:
+  title: knowledge-check
+  description: "OWASP Top Ten 2021 for .NET Developers. Knowledge check."
+  ms.date: 11/14/2022
+  author: obrocki
+  ms.author: dawidobrocki
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+
+content: |
+quiz:
+  questions:
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+  - content: "You're planning to analyse your running appl (DYNAMIC TEST TEASE)"
+    choices:
+    - content: "SAST"
+      isCorrect: true
+      explanation: ""
+    - content: "SCA"
+      isCorrect: false
+      explanation: ""
+    - content: "DAST"
+      isCorrect: false
+      explanation: ""
+    - content: "Perform Chaos Test"
+      isCorrect: false
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.owasp-top-10-for-dotnet-developers.identification-authentication-failures
+title: identification-authentication-failures
+metadata:
+  title: identification-authentication-failures
+  description: "OWASP Top Ten 2021 for .NET Developers. Identification and authentication failures."
+  ms.date: 01/09/2022
+  author: obrocki
+  ms.author: dawidobrocki
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/10-identification-authentication-failures.md)]
