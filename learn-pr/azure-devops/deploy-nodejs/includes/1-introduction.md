@@ -1,15 +1,16 @@
-Azure and Azure DevOps support development of just about any kind of application, including Node.js. Azure DevOps enables you to build and deploy to just about anywhere. On Azure, you can deploy to a virtual machine, an app service, a serverless solution, or as a container. You can even deploy your application from Azure DevOps to another cloud or on-premises.
-
-In this module, you create an automated CI/CD pipeline for a basic Node.js application hosted on Azure. You'll learn how a project can begin in GitHub and flow through Azure Pipelines to build, publish, and deploy to Azure App Service.
+In this module, you'll create an automated CI/CD pipeline for a Node.js application hosted on Azure. You'll learn how a project can begin in GitHub and flow through Azure Pipelines to build, publish, and deploy to Azure App Service.
 
 While this module focuses on the core tasks that are required to build and deploy your app, it's important to understand that all of the other features of Azure Pipelines are still available for Node.js applications. You can integrate testing, define multiple stages, and perform other tasks just like you would for your existing applications. We omit these tasks here to keep things focused.
 
+  > [!NOTE]
+  >  This is a **_guided project_** module where you’ll complete an end-to-end project by following step-by-step instructions.
+
 ## Learning objectives
 
-After completing this module, you'll be able to:
+In this module, you'll practice how to:
 
-* Explain how Azure and Azure DevOps support Node.js applications.
-* Install the Azure Pipelines extension for your GitHub repo.
+* Fork a GitHub repo.
+* Create an App Service environment.
 * Create an Azure DevOps pipeline that builds and deploys a basic Node.js application to Azure App Service.
 
 ## Prerequisites

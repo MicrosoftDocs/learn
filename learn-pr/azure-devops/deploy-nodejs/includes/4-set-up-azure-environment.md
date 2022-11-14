@@ -105,6 +105,12 @@ This solution requires several Azure resources for deployment, which you create 
       --runtime "node|16-lts"
     ```
 
+
+> [!IMPORTANT]
+> The [Clean up your Azure DevOps environment](/training/modules/deploy-nodejs/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
+
+## Check your work
+
 1. Run the following `az webapp list` command to list the host name and state of the App Service instance.
 
     ```azurecli
@@ -122,11 +128,8 @@ This solution requires several Azure resources for deployment, which you create 
     helloworld-nodejs-16353.azurewebsites.net  Running
     ```
 
-1. As an optional step, navigate your browser to the hostname. Verify that it's running and that the default home page appears.
+1. Navigate your browser to the hostname. Verify that it's running and that the default home page appears.
 
     Here's what you should see:
 
     :::image type="content" source="../media/4-app-service-default.png" alt-text="A screenshot of the default home page on Azure App Service.":::
-
-> [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/training/modules/deploy-nodejs/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.

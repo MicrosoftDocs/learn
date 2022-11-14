@@ -1,27 +1,13 @@
-In this section, you'll learn how Azure and Azure DevOps support Node.js applications.
+## Prepare
 
-**Node.js** is an open-source JavaScript runtime environment, designed for server-side execution. It runs outside the context of a web browser. You can learn more at [nodejs.org](https://nodejs.org?azure-portal=true).
+In this module, you'll explore creating a Node.js API for a bank and learn how Azure and Azure DevOps support Node.js applications.
 
-## Node.js and Azure
+This module uses a Bank API that's part of the Azure Developer Advocates' [Web Development for Beginners course](https://microsoft.github.io/Web-Dev-For-Beginners/#/?id=web-development-for-beginners-a-curriculum). If you'd like to learn more about the Bank API code, see the [Build a Bank project](https://github.com/microsoft/Web-Dev-For-Beginners/tree/main/7-bank-project) that's part of the course.
 
-Azure provides first-class support for Node.js. This means that you can take your existing codebase and, in most cases, deploy it directly to Azure without making modifications. On Azure, hosting a Node.js application is similar to hosting a .NET application, assuming that the proper dependencies are configured. Azure also enables you to configure environment variables for application settings, which mean you can continue to load settings and secrets using standard methods for Node.js.
+Azure provides first-class support for Node.js. This means that you can take an existing Node.js codebase and, in most cases, deploy it directly to Azure without making modifications. You'll practice doing that in this module.
 
-After deploying the Node.js application to Azure, you can connect to resources within Azure, across VPN connections, and anywhere else accessible from the internet. This includes access to databases, document stores, and all the other resources and services Node.js developers rely on.
+## Setup
 
-## Node.js and Azure DevOps
-
-As a Node.js developer, you'll find a welcoming environment in Azure DevOps. Although Azure DevOps provides a wide range of features for managing the entire software lifecycle, you can choose the features you need to make the process as efficient as possible.
-
-When you connect your code to Azure Pipelines, Azure Pipelines can automatically detect the language that you're using and provide starter code for your CI/CD pipeline.
-
-Here's an example that shows starter code templates for a Node.js application:
-
-:::image type="content" source="../media/2-configure-pipeline-nodejs.png" alt-text="A screenshot of Azure Pipelines showing a list of starter projects for Node.js.":::
-
-Azure Pipelines provides built-in tasks that support the build, test, and deployment jobs you need to deploy source code from GitHub or anywhere else.
-
-In Azure Pipelines, pipeline code is expressed through YAML configuration files. This example shows the `NodeTool@0` task, which installs the version of Node.js that you need to build your application.
-
-:::image type="content" source="../media/2-starter-code-nodejs.png" alt-text="A screenshot of Azure Pipelines showing starter code for the Node.js project.":::
-
-If Azure Pipelines doesn't provide a specific task that you need, you can write scripts that fill in the gaps. The `script` task in the previous example uses `npm` to install dependencies.
+* A GitHub account where you can create a repository. [Create one for free](https://github.com).
+* An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You can get started with Azure for free.
+* An Azure DevOps organization and project. [Create one for free](/azure/devops/pipelines/get-started/pipelines-sign-up).

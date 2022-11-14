@@ -7,7 +7,7 @@ Although you can propose changes to the original project, in this lesson, you'll
 
 1. In a web browser, go to [GitHub](https://github.com?azure-portal=true), and sign in.
 
-1. Go to the [Node.js Hello World](https://github.com/Azure-Samples/nodejs-docs-hello-world?azure-portal=true) project.
+1. Go to the [Node.js Hello World](https://github.com/Azure-Samples/nodejs-docs-hello-world) project.
 
 1. Select **Fork**.
     :::image type="content" source="../media/3-select-fork.png" alt-text="Screenshot of fork GitHub menu option.":::
@@ -15,3 +15,6 @@ Although you can propose changes to the original project, in this lesson, you'll
 1. Create a fork in your repository with **Create fork**.
     :::image type="content" source="../media/3-create-fork.png" alt-text="Screenshot of create a fork option.":::
 
+## Check your work
+
+Verify that you now have a version of the repository in your GitHub account by checking the URL path. Your URL should be `https://github.com/{GitHub User}/nodejs-docs-hello-world`.

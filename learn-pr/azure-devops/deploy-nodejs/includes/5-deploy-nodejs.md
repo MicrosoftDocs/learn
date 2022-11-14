@@ -120,7 +120,10 @@ You can learn more about the flexibility of this task in the [Azure Web App task
 ## Save the pipeline to trigger a build and release
 
 1. Select **Save and run** from the upper right corner of the page. Select **Save and run** again to commit git changes and trigger the pipeline to run.
-1. In Azure Pipelines, go to the build. Trace the build as it runs.
+
+## Check your work
+
+1. In Azure Pipelines, go to the build. You can trace the build as it runs.
 1. After the build has succeeded, select the deploy task, and select the URL to view the deployed website.
 
     :::image type="content" source="../media/5-deploy-url.png" alt-text="Screenshot of the web site URL location in Azure Pipelines.":::
@@ -129,4 +132,4 @@ You can learn more about the flexibility of this task in the [Azure Web App task
 
     :::image type="content" source="../media/5-hello-world.png" alt-text="Screenshot of the Node.js application running in a web browser.":::
 
-Although this application is very basic, you now have a complete CI/CD pipeline that you can extend. You can repeat the steps you performed here to deploy one of your own Node.js projects to Azure.
+You now have a complete CI/CD pipeline that you can extend. You can repeat the steps you performed here to deploy one of your own Node.js projects to Azure.
