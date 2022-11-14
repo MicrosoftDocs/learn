@@ -14,7 +14,7 @@ Features include, but not limited to:
 | Application Map | Allows a high level top-down view of the application architecture and at-a-glance visual references to component health and responsiveness. |
 | Distributed Tracing | Search and visualize an end-to-end flow of a given execution or transaction. |
 
-More details on Availability and Application Map are discussed later in this module.
+More details on availability and Application Map are discussed later in this module.
 
 ## What Application Insights monitors
 
