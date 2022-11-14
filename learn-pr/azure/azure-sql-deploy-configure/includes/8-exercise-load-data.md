@@ -27,7 +27,7 @@ Both exercises contain the same commands and content, so you can choose the opti
     sqlcmd -S <server name>.database.windows.net -P <password> -U cloudadmin -d AdventureWorks
     ```
 
-1. You need to create a table and schema for data to be loaded into. This is straightforward T-SQL. Run the following script in the terminal, now that you're connected to your database.
+1. You need to create a table and schema for data to be loaded into. This process is straightforward T-SQL. Run the following script in the terminal, now that you're connected to your database.
 
     ```sql
     IF SCHEMA_ID('DataLoad') IS NULL
@@ -69,7 +69,7 @@ Both exercises contain the same commands and content, so you can choose the opti
     GO
     ```
 
-1. A master key is required to create a `DATABASE SCOPED CREDENTIAL` value because Blob storage is not configured to allow public (anonymous) access. The credential refers to the Blob storage account, and the data portion specifies the container for the store return data.
+1. A master key is required to create a `DATABASE SCOPED CREDENTIAL` value because Blob storage isn't configured to allow public (anonymous) access. The credential refers to the Blob storage account, and the data portion specifies the container for the store return data.
 
     We use a shared access signature as the identity that Azure SQL knows how to interpret. The secret is the SAS token that you can generate from the Blob storage account. In this example, the SAS token for a storage account that you don't have access to is provided so you can access only the store return data.
 

@@ -27,7 +27,7 @@ The Azure SQL introduction module described limits, rates, and capabilities (lik
 
 The limits for Azure SQL Managed Instance and Azure SQL Database depend on your choice of purchasing model, service tier, and number of vCores (or DTU in Azure SQL Database only).
 
-Azure SQL Managed Instance and SQL Database are platform as a service (PaaS) offerings. Restricting these choices should not inhibit your ability to fully use a SQL Server managed service.
+Azure SQL Managed Instance and SQL Database are platform as a service (PaaS) offerings. Restricting these choices shouldn't inhibit your ability to fully use a SQL Server managed service.
 
 Within a General Purpose Azure SQL Database instance, your choice of provisioned or serverless compute will also affect these limits. Before deploying, you should review what's included in what you plan to deploy, to ensure that you're starting out with what you need.
 
@@ -45,9 +45,9 @@ Let's dive into a few of these options.
 
 ### Server
 
-When you create an Azure SQL managed instance, supplying the server name is the same as in SQL Server. But for databases and elastic pools, an Azure SQL Database server is required. An Azure SQL Database server is a *logical* server that acts as a central administrative point for a single or pooled database. It includes logins, firewall rules, auditing rules, threat detection policies, and failover groups. (You'll learn more about these topics later.) 
+When you create an Azure SQL managed instance, supplying the server name is the same as in SQL Server. But for databases and elastic pools, an Azure SQL Database server is required. An Azure SQL Database server is a *logical* server that acts as a central administrative point for a single or pooled database. It includes logins, firewall rules, auditing rules, threat detection policies, and failover groups. (You'll learn more about these topics later.)
 
-This logical server does not expose any instance-level access or features as with Azure SQL Managed Instance. For Azure SQL Database servers, the server name must be unique across all of Azure.  
+This logical server doesn't expose any instance-level access or features as with Azure SQL Managed Instance. For Azure SQL Database servers, the server name must be unique across all of Azure.  
 
 ### Compute and storage
 
@@ -55,7 +55,7 @@ In the previous module of this learning path, you learned about options and reco
 
 Generally, if you're migrating, you should use size that's similar to what you use on-premises. You can also use tools, like the Data Migration Assistant SKU recommender, to estimate the number of vCores and **Data max size** based on your current workload.  
 
-**Data max size** is not necessarily the size of your data today. It's the maximum amount of data space that can be allocated for your database. It will also help you understand the allocation of log space, which scales with **Data max size**.  
+**Data max size** isn't necessarily the size of your data today. It's the maximum amount of data space that can be allocated for your database. It will also help you understand the allocation of log space, which scales with **Data max size**.  
 
 ### Networking configuration
 
@@ -69,17 +69,17 @@ You can also enable a public endpoint so you can connect to a managed instance f
 
 ### Data source
 
-In Azure SQL Database, you can select the AdventureWorksLT database as the sample upon deployment in the Azure portal. In Azure SQL Managed Instance, you deploy the instance first and then databases inside it, so there's no option to have the sample database upon deployment (similar to SQL Server). You can learn more about the AdventureWorks sample databases on GitHub.
+In Azure SQL Database, you can select the AdventureWorksLT database as the sample upon deployment in the Azure portal. In Azure SQL Managed Instance, you deploy the instance first and then databases inside it. You can't have the sample database upon deployment, similar to SQL Server. You can learn more about the AdventureWorks sample databases on GitHub.
 
 You can also deploy a blank database or create a database that's based on the restore from a geo-replicated backup.
 
 ### Database collations
 
-Collations in SQL Server and Azure SQL tell the database engine how to treat certain characters and languages. A collation provides the sorting rules, case, and accent sensitivity properties for your data. 
+Collations in SQL Server and Azure SQL tell the database engine how to treat certain characters and languages. A collation provides the sorting rules, case, and accent sensitivity properties for your data.
 
-When you're creating a new SQL database or managed instance, it's important to first take into account the locale requirements of the data you're working with. The reason is that the collation set will affect the characteristics of many operations in the database. In the SQL Server box product, the default collation is typically determined by the OS locale. 
+When you're creating a new SQL database or managed instance, it's important to first take into account the locale requirements of the data you're working with. The reason is that the collation set will affect the characteristics of many operations in the database. In the SQL Server box product, the default collation is typically determined by the OS locale.
 
-In Azure SQL Managed Instance, you can set the server collation upon creation of the instance. It can't be changed later. The server collation sets the default for all of the databases in that instance of Azure SQL Managed Instance, but you can modify the collations on a database and column level. 
+In Azure SQL Managed Instance, you can set the server collation upon creation of the instance. It can't be changed later. The server collation sets the default for all of the databases in that instance of Azure SQL Managed Instance, but you can modify the collations on a database and column level.
 
 In Azure SQL Database, you can't set the server collation. It's set at the default (and most common) collation of `SQL_Latin1_General_CP1_CI_AS`, but you can set the database collation. If we break that into chunks:  
 
@@ -138,7 +138,7 @@ As you increase or decrease the resources in a service tier, the limits for dime
 * Resource Governor is a SQL Server feature that helps users (and in this case, Azure) govern resources like CPU, physical I/O, and memory. Azure SQL Managed Instance also allows user-defined workload groups and pools for Resource Governor.
 * File Server Resource Manager is available in Windows Server and is used to govern file directory quotas, which are used to manage **Data max size**.
 
-Additional implementations to govern transaction log rate are built into the database engine for Azure, through *transaction log rate governance*. This process limits high ingestion rates for workloads such as `BULK INSERT`, `SELECT INTO`, and index builds. They're tracked and enforced as the subsecond level. They currently scale within a service tier linearly.
+Other implementations to govern transaction log rate are built into the database engine for Azure, through *transaction log rate governance*. This process limits high ingestion rates for workloads such as `BULK INSERT`, `SELECT INTO`, and index builds. They're tracked and enforced as the subsecond level. They currently scale within a service tier linearly.
 
 ## Verification
 
@@ -146,7 +146,7 @@ After you've completed your deployment, it's time to verify that deployment. In 
 
 For Azure SQL Managed Instance and Azure SQL Database, the first thing you might do is check the status of the database or instance with the Azure portal or the Azure CLI. Next, you can review the deployment details and activity log to ensure there were no failures or active issues.
 
-For Azure SQL Managed Instance, you then might check the error log, which is a common thing to do in SQL Server on-premises or in an Azure VM. This capability is not available in Azure SQL Database.  
+For Azure SQL Managed Instance, you then might check the error log, which is a common thing to do in SQL Server on-premises or in an Azure VM. This capability isn't available in Azure SQL Database.  
 
 Finally, you'd likely confirm that your network is configured properly, obtain the server name, and connect in a tool like SQL Server Management Studio or Azure Data Studio. You can run the following queries to better understand what you've deployed and to verify that it was deployed correctly:  
 
@@ -164,8 +164,8 @@ SELECT * FROM sys.dm_instance_resource_governance -- Available only in Azure SQL
 SELECT * FROM sys.dm_os_job_object -- Available only in Azure SQL Database and SQL Managed Instance
 ```
 
-One query related to the OS process memory is not supported in Azure SQL Database, even though it might appear to work. This query isn't supported because with Azure SQL Database, some things related to the OS are abstracted away from you, allowing you to focus on the database.  
+One query related to the OS process memory isn't supported in Azure SQL Database, even though it might appear to work. This query isn't supported because with Azure SQL Database, some things related to the OS are abstracted away from you, allowing you to focus on the database.  
 
-The last three queries are available only in Azure SQL Database and/or Azure SQL Managed Instance. The first, `sys.dm_user_db_resource_governance`, will return the configuration and capacity settings used by resource governance mechanisms in the current database or elastic pool. You can get similar information for an Azure SQL Managed Instance with the second, `sys.dm_instance_resource_governance`. The third, `sys.dm_os_job_object`, will return a single row that describes the configuration of the job object that manages the SQL Server process, as well as resource consumption statistics.
+The last three queries are available only in Azure SQL Database and/or Azure SQL Managed Instance. The first, `sys.dm_user_db_resource_governance`, will return the configuration and capacity settings used by resource governance mechanisms in the current database or elastic pool. You can get similar information for an Azure SQL Managed Instance with the second, `sys.dm_instance_resource_governance`. The third, `sys.dm_os_job_object`, returns a single row that describes the configuration of the job object that manages the SQL Server process and resource consumption statistics.
 
 The next two exercises will go through all the details involved in deploying Azure SQL Database or Azure SQL Managed Instance. You'll use the sandbox environment to deploy Azure SQL Database. After deployment, you'll use various verification queries and pre-run SQL notebooks in Azure Data Studio to compare SQL Database, SQL Managed Instance, and SQL Server 2019.  
