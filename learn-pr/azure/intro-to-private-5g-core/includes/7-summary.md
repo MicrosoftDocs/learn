@@ -4,7 +4,7 @@ Now you should have high-level knowledge about Azure Private 5G Core and underst
 
 With Azure Private 5G Core, you can quickly deploy private mobile networks with 5G and 4G network functions, which provide high performance, low latency, and secure connectivity for IoT devices.
 
-Enterprises that deploy a private mobile network with Azure Private 5G Core has complete ownership of all the data. In addition, the network backed by Azure Private 5G Core removes any reliance on cloud connectivity and provides low latency levels for IoT devices.
+Enterprises that deploy a private mobile network with Azure Private 5G Core have complete ownership of all the data. In addition, the network backed by Azure Private 5G Core removes any reliance on cloud connectivity and provides low latency levels for IoT devices.
 
 ## References
 

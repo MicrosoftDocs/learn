@@ -4,23 +4,19 @@ Deploying a private mobile network using Azure Private 5G Core at the enterprise
 
 Azure Private 5G Core provides the following key benefits:
 
-- **Complete 5G core network functions**
+- **5G core network functions**
 
-  Each *packet core* instance that Azure Private 5G Core deploys is a complete set of 5G network functions. These network functions include the subscriber database, policy control, control plane, and user plane.
+  Each *packet core* instance that Azure Private 5G Core deploys is a set of 5G network functions. These network functions include the subscriber database, policy control, control plane, and user plane.
 
   You can also configure a packet core instance to operate in 4G mode to support Private Long-Term Evolution (LTE) use cases.
 
 - **Centralized service management**
   
-  In addition to local management, Azure Private 5G Core provides a centralized software lifecycle and service management for the private mobile network across multiple sites. You can use the Azure portal and Azure Resource Manager (ARM) APIs to carry out provisioning, orchestration, monitoring tasks.
-
-  The following diagram illustrates the network configuration for remote and local management of Azure Private 5G Core:
-
-  :::image type="content" source="../media/remote-local-management.png" alt-text="A diagram that illustrates the network configuration for remote and local management" border="true":::
+  Azure Private 5G Core provides a centralized software lifecycle and service management for the private mobile network across multiple sites. You can use the Azure portal and Azure Resource Manager (ARM) APIs to carry out provisioning, orchestration, monitoring tasks.
 
 - **Log Analytics integration**
 
-  Azure Private 5G Core integrates with Azure Monitor and Log Analytics to collect data from all sites and provide comprehensive monitoring and data analytics for the entire private mobile network.
+  Azure Private 5G Core integrates with Azure Log Analytics to collect data from all sites and provide comprehensive monitoring and data analytics for the private mobile network. Log Analytics also allows you to collect data from other network elements, such as the RAN or the applications in the data network. With that, you will be able to monitor the whole solution from a central point.
 
   Enterprises can use queries to retrieve records and visualize data in charts, either remotely through Azure or locally through other applications.
 

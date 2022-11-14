@@ -37,7 +37,7 @@ quiz:
       explanation: "Try again. Enterprises can use Azure Private 5G Core to deploy private mobile network that hosts IoT devices. However, Azure Private 5G Core doesn't provide threat protection for each IoT device."
   - content: "How does Azure Private 5G Core provide integration with Azure private multi-access edge compute (MEC) partners?"
     choices:
-    - content: "It exposes an N2 and N3 interface respectively for the 5G control plane and user plane."
+    - content: "It exposes the N2 and N3 interfaces for the 5G control plane."
       isCorrect: true
       explanation: "Correct. Azure Private 5G Core complies with 3GPP technical specifications for the N2 and N3 interface, which allows it to be integrated with a wide range of RAN models."
     - content: "It uses a fully managed event-routing service with a publish-subscribe model."

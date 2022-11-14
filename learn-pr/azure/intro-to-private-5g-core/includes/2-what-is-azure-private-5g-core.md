@@ -2,7 +2,7 @@
 
 Azure Private 5G Core is a key component in an [Azure private multi-access edge compute (MEC)](https://azure.microsoft.com/solutions/private-multi-access-edge-compute-mec) solution. Private MEC solutions bring together a portfolio of services and enable operators and system integrators to deliver high-performance connectivity for IoT applications at the enterprise edge.
 
-Azure Private 5G Core instantiates a single enterprise private mobile network distributed across one or more sites around the world. Each site contains a packet core instance, which is a complete set of 5G network functions. Packet core instances run on a Kubernetes cluster that is connected to Azure Arc and deployed on an Azure Stack Edge device.
+Azure Private 5G Core instantiates a single enterprise private mobile network distributed across one or more sites around the world. Each site contains a packet core instance, which is a set of 5G network functions. Packet core instances run on a Kubernetes cluster that is connected to Azure Arc and deployed on an Azure Stack Edge device.
 
 The following diagram shows the key components of a single site powered by an Azure Private 5G Core packet core instance:
 
@@ -24,11 +24,11 @@ A private MEC solution powered with Azure Private 5G Core typically consists of 
   The packet core instance is a cloud-native implementation of the 3GPP standards-defined 5G Next Generation Core (5G NGC or 5GC). Each packet core instance connects to a radio access network (RAN) to provide coverage for UEs. You'll source your RAN from a third party.
 
 - **Azure Stack Edge and Azure Arc-enabled Kubernetes**
-  When you add a site to your private mobile network, you'll create a *Kubernetes cluster* on the Azure Stack Edge device, which serves as the platform for the packet core instance. The platform provides security and manageability for the entire core network stack from Azure. Additionally, Azure Arc allows Microsoft to provide support at the edge.
+  Before you add a site to your private mobile network, you'll create a *Kubernetes cluster* on the Azure Stack Edge device, which serves as the platform for the packet core instance. The platform provides security and manageability for the entire core network stack from Azure. Additionally, Azure Arc allows Microsoft to provide support at the edge.
 
 - **RANs and SIMs**
-  UEs connect to the packet core through RAN. For the RAN service, you can choose any radio vendor who can connect Azure Private 5G Core to a gNodeB (for 5G deployments) or eNodeB (for 4G deployments).
-  
+  UEs connect to the packet core through RAN. For the RAN service, you can choose RAN vendors base on your business, technology, and spectrum requirements.
+
   UEs use SIMs or eSIMs to connect to RAN. SIM vendors offering physical SIM and eSIM services can integrate directly with Azure Private 5G Core through the SIM manager to securely provision physical SIMs and eSIMs.
 
 ## Enterprise network structure
