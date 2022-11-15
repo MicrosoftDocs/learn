@@ -2,7 +2,7 @@ In this unit, you'll export and run the brain in ACR deployment.
 
 ## Export the brain as a docker image
 
-1. Log into the Bonsai UI.
+1. Log in to the Bonsai UI.
 1. Select the brain and version you want to work with.
 1. Navigate to the Train tab.
 1. lick the Export brain button.
@@ -21,20 +21,20 @@ Bonsai displays exported brains by the name you assign during export. The full i
 
 ## Install the Bonsai CLI and SDK for Python
 
-In this section, you will install the Bonsai SDK and needed packages in order to download the exported brain and run it locally.
+In this section, you'll install the Bonsai SDK and needed packages in order to download the exported brain and run it locally.
 
 ### Step 1: Download Bonsai API Samples for Python
 
-The Microsoft Bonsai API (MBA) provides Bonsai integration packages for Simulations in Python, Java, Typescript, and C#. Follow the instructions bellow to get the API into your local device:
+The Microsoft Bonsai API (MBA) provides Bonsai integration packages for Simulations in Python, Java, TypeScript, and C#. Follow the instructions bellow to get the API into your local device:
 
 1. Download the GitHub repository: https://github.com/microsoft/microsoft-bonsai-api.
 2. Save and unzip the repo to a directory of your choice, such as C:\bonsai\microsoft-bonsai-api-main.
 
 ### Step 2: Install Miniconda and create a virtual environment
 
-To use Bonsai commands from your local computer, you need to install the Bonsai SDK and CLI. To make installation simpler for you, we have put together a YML file with all the packages you will need to install, and their respective compatible versions.
+To use Bonsai commands from your local computer, you need to install the Bonsai SDK and CLI. To make installation simpler for you, we have put together a YML file with all the packages you'll need to install, and their respective compatible versions.
 
-1. If you are using Miniconda or Anaconda, go ahead to the next step. If not, follow this link to install Miniconda. Miniconda will help you handle your virtual environments. A virtual environment helps isolate your package installations, helping minimize dependency mismatches and other conflicts across environments. If you rather use the CLI or Anaconda to handle your virtual environments, that is okay too.
+1. If you're using Miniconda or Anaconda, go ahead to the next step. If not, follow this link to install Miniconda. Miniconda will help you handle your virtual environments. A virtual environment helps isolate your package installations, helping minimize dependency mismatches and other conflicts across environments. If you rather use the CLI or Anaconda to handle your virtual environments, that is okay too.
 
     - For Windows, double click on the downloaded executable to install Miniconda.
     - For Mac, use the “bash your-miniconda-sh-file” command to get it installed.
@@ -56,7 +56,7 @@ To use Bonsai commands from your local computer, you need to install the Bonsai 
 
 To download your exported brain:
 
-1. Log into your Azure Container Registry with the Azure CLI:
+1. Log in to your Azure Container Registry with the Azure CLI:
 2. Fetch the containerized brain image and save it to your local machine. Replace WORKSPACE_NAME, WORKSPACE_ID,BRAIN_NAME,VERSION,OS_TYPE and ARCHITECTURE.
 3. Run the container as a local server.  Replace WORKSPACE_NAME, WORKSPACE_ID,BRAIN_NAME,VERSION,OS_TYPE and ARCHITECTURE.
 
