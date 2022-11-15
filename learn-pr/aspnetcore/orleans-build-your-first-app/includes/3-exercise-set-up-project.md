@@ -49,19 +49,16 @@ If you want to build the app from start to finish, create and run a new minimal 
 
 Orleans is available through a collection of NuGet packages. Follow the steps below to integrate Orleans into the project you created.
 
-1) For this module, you'll need to install the specific Orleans packages below by running the `dotnet add package` command in the Visual Studio Code terminal. The latest version of `3.x` will work for this exercise, or you can use the version specified in the following command:
+1) For this module, you'll need to install the specific Orleans packages below by running the `dotnet add package` command in the Visual Studio Code terminal. The latest version of `7.x` will work for this exercise, or you can use the version specified in the following command:
 
     ```dotnetcli
-    dotnet add package Microsoft.Orleans.Server -v 3.6.3
-    dotnet add package Microsoft.Orleans.CodeGenerator.MSBuild -v 3.6.3
+    dotnet add package Microsoft.Orleans.Server -v 7.0.0
     ```
 
 2) Add the `using` statements below to the top of your `Program` class. These `using` statements will ensure the necessary classes are available for the steps ahead.
     
     ```dotnetcli
     using Microsoft.AspNetCore.Http.Extensions;
-    using Orleans;
-    using Orleans.Hosting;
     using Orleans.Runtime;
     ```
 
