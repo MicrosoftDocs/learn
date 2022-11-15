@@ -37,7 +37,10 @@ units:
 - learn.oxford.teach-ai-with-project-bonsai.introduction
 - learn.oxford.teach-ai-with-project-bonsai.what-project-bonsai
 - learn.oxford.teach-ai-with-project-bonsai.design-bonsai-brain
-- learn.oxford.teach-ai-with-project-bonsai.knowledge-check
+- learn.oxford.teach-ai-with-project-bonsai.exercise-setup-account
+- learn.oxford.teach-ai-with-project-bonsai.exercise-create-brain
+- learn.oxford.teach-ai-with-project-bonsai.how-train-evaluate-progress
+- learn.oxford.teach-ai-with-project-bonsai.knowledge-check-1
 - learn.oxford.teach-ai-with-project-bonsai.summary
 
 badge: 
