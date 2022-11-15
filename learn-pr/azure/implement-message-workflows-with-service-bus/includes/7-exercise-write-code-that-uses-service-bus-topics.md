@@ -137,6 +137,7 @@ To complete the component that sends messages about sales performance, complete 
   
     ```command
     Sending a message to the Sales Performance topic...
+    Sending message: Total sales for Brazil in August: $13m.
     Message was sent successfully.
     ```
 
@@ -342,7 +343,7 @@ To create the component that retrieves messages about sales performance, complet
     You'll see output similar to the following example:
 
     ```command
-    Received message: SequenceNumber:31806672368304129 Body:Total sales for Brazil in August: $13m.
+    Received message: SequenceNumber:1 Body:Total sales for Brazil in August: $13m.
     ```
 
 1. When the program has returned notifications that it's receiving messages, press <kbd>Enter</kbd> to stop the app.
