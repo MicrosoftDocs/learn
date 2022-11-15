@@ -12,7 +12,7 @@ An [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways) connect
 
 ### Things to know about Azure ExpressRoute
 
-[Azure ExpressRoute](/azure/expressroute/) uses a private, dedicated connection through a third-party connectivity provider. This connection is private. Traffic doesn't go over the internet. The private connection extends your on-premises network into Azure.
+[Azure ExpressRoute](/azure/expressroute/expressroute-introduction) uses a private, dedicated connection through a third-party connectivity provider. This connection is private. Traffic doesn't go over the internet. The private connection extends your on-premises network into Azure.
 
 **Reference architecture**: [Hybrid network with Azure ExpressRoute](/azure/architecture/reference-architectures/hybrid-networking/expressroute)
 

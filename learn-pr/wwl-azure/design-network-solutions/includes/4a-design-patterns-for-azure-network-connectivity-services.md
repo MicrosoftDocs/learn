@@ -35,7 +35,7 @@ This pattern provides built-in segmentation through virtual networks because you
 
 :::image type="content" source="../media/multiple-regions.png" alt-text="Diagram of Azure networks in multiple regions." border="false":::
 
-## Pattern 3: Multiple virtual networks in a hub-spoke topology
+## Pattern 3: Multiple virtual networks in hub-spoke topology
 
 The third pattern is a more advanced virtual network organization, where you choose a virtual network in a given region as the hub for all the other virtual networks in that region.
 
@@ -49,7 +49,7 @@ One benefit of this pattern is that as your network topology grows, the security
 
 The following table compares capabilities of the three networking patterns. Review the details, and think about which patterns are applicable to the network topology for Tailwind Traders.
 
-| Compare | Single network | Multiple networks + peering | Multiple networks + hub-spoke |
+| Compare | Single virtual network | Multiple networks with peering | Multiple networks in hub-spoke topology |
 | --- | --- | --- | --- |
 | **Connectivity/Routing** (how segments communicate) | System routing provides default connectivity to any workload in any subnet. | System routing provides default connectivity to any workload in any subnet. | No default connectivity between spoke virtual networks. A layer 3 router (such as Azure Firewall) in the hub virtual network is required to enable connectivity. |
 | **Network-level traffic filtering** | Traffic is allowed by default. NSG can be used for filtering. | Traffic is allowed by default. NSG can be used for filtering. | Traffic between spoke virtual networks is denied by default. Azure Firewall configuration can enable selected traffic, such as `windowsupdate.com`. |

@@ -36,6 +36,7 @@ units:
 - learn.wwl.design-network-solutions.design-for-premises-connectivity-to-azure-virtual-networks
 - learn.wwl.design-network-solutions.design-patterns-for-azure-network-connectivity-services
 - learn.wwl.design-network-solutions.design-outbound-connectivity-routing
+- learn.wwl.design-network-solutions.choose-application-delivery-service
 - learn.wwl.design-network-solutions.design-for-application-delivery-services
 - learn.wwl.design-network-solutions.design-for-application-protection-services
 - learn.wwl.design-network-solutions.knowledge-check

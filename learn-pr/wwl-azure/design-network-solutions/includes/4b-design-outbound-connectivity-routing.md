@@ -1,27 +1,21 @@
-In this unit, we explore how to support outbound network connectivity and traffic communication routing in your Azure network solution.
+Part of the planning for your Azure network solution includes exploring how to support outbound network connectivity and traffic communication routing.
 
-## Outbound network connectivity and NAT
+Around the globe, IPv4 address ranges are in short supply. Trying to purchase an IP address in the v4 range can be an expensive way to grant access to your internet resources. To address this issue, architects use Network Address Translation (NAT) to enable internal resources on a private network to share routable IPv4 addresses. The internal resources use the routable IPv4 addresses to access external resources on a public network. Instead of buying an IPv4 address for each resource that needs internet access, you can use a NAT service to map outgoing requests from your internal resources to external IP addresses. Azure provides this technology via the Azure Virtual Network NAT service.
 
-Around the globe, IPv4 address ranges are in short supply. Trying to purchase an IP address in the v4 range can be an expensive way to grant access to your internet resources. To address this issue, Network Address Translation (NAT) was created to enable internal resources on a private network to share routable IPv4 addresses. Internal resources use routable IPv4 addresses to access external resources on a public network. Instead of buying an IPv4 address for each resource that needs internet access, you can use a NAT service to map outgoing requests from your internal resources to external IP addresses.
+Azure [routes communication traffic](/azure/virtual-network/virtual-networks-udr-overview) between your on-premises internal resources and external internet resources by using _route tables_. When you create a virtual network, Azure automatically creates a routing table for each subnet in the network. A routing table contains many different types of routes, including system, service endpoints, and subnet defaults. The table also has route entries for the Border Gateway Protocol (BGP), user-defined routes (UDRs), and routes from other virtual networks.
 
 ### Things to know about Azure Virtual Network NAT
 
 [Azure Virtual Network NAT](/azure/virtual-network/nat-gateway/nat-overview) simplifies outbound-only internet connectivity for virtual networks. When you configure this service on a subnet, all outbound connectivity uses your specified static public IP addresses. Outbound connectivity is possible without load balancer or public IP addresses directly attached to virtual machines. Virtual Network NAT is fully managed and highly resilient. 
 
-:::image type="content" source="../media/flow-map.png" alt-text=" Diagram of a Virtual Network NAT (network address translation) flow diagram." border="false":::
+:::image type="content" source="../media/flow-map.png" alt-text=" Diagram of a Virtual Network NAT (network address translation) flow." border="false":::
 
-### Things to consider when using NAT for outbound connectivity
+#### Business scenarios
 
-Consider the following business scenarios for using Azure Virtual Network NAT:
-
-- Support on-demand outbound-to-internet connectivity without pre-allocation 
-- Configure one or more static public IP addresses for scale 
-- Enable configurable idle timeout 
-- Allow TCP reset for unrecognized connections 
-
-## Traffic routing
-
-Azure [routes communication traffic](/azure/virtual-network/virtual-networks-udr-overview) between the Azure platform, your on-premises resources, and external internet resources by using _route tables_. When you create a virtual network, Azure automatically creates a routing table for each subnet in the network. A routing table contains many different types of routes, including system, service endpoints, and subnet defaults. The table also has route entries for the Border Gateway Protocol (BGP), user-defined routes (UDRs), and routes from other virtual networks.
+- Support on-demand outbound-to-internet connectivity without pre-allocation.
+- Configure one or more static public IP addresses for scale.
+- Enable configurable idle timeout.
+- Allow TCP reset for unrecognized connections.
 
 ### Things to know about routing tables and routes
 
@@ -37,27 +31,26 @@ Let's take a closer look at the characteristics of routing tables and the route 
 
 - **Service endpoint routes**: The public IP addresses for certain services are added to the route table by Azure when you enable a service endpoint to the service. Service endpoints are enabled for individual subnets within a virtual network. When you enable a service endpoint, a route is only added to the route table for the subnet that belongs to this service. Azure manages the addresses in the route table automatically when the addresses change.
 
-- **Routing order**: When you have competing entries in a routing table, Azure selects the next hop based on the longest prefix match similar to traditional routers. However, if there are multiple next hop entries with the same address prefix, Azure selects the routes in following order:
+- **Routing order**: When you have competing entries in a routing table, Azure selects the next hop based on the longest prefix match similar to traditional routers. If there are multiple next hop entries with the same address prefix, Azure selects routes in a specific order: UDRs, then BGP routes, and then system routes.
 
-   1. UDRs
-   1. BGP routes
-   1. System routes
+#### Business scenarios
 
-### Things to consider when using routes 
+Consider the following scenarios for working with routes.
 
-Consider the following scenarios for working with routes. Think about what route types are needed to support network traffic for the Tailwind Traders organization.
+**System routes**
 
-- **Consider system routes**. Here a few scenarios for using system routes:
-   - Route traffic between virtual machines in the same virtual network or between peered virtual networks.
-   - Support communication between virtual machines by using a virtual network-to-network VPN.
-   - Enable site-to-site communication through Azure ExpressRoute or an Azure VPN gateway.
+- Route traffic between virtual machines in the same virtual network or between peered virtual networks.
+- Support communication between virtual machines by using a virtual network-to-network VPN.
+- Enable site-to-site communication through Azure ExpressRoute or an Azure VPN gateway.
 
-- **Consider user defined routes**. There are several scenarios where UDRs are advantageous.
-   - Enable filtering of internet traffic by using Azure Firewall or forced tunneling.
-   - Flow traffic between subnets through an NVA.
-   - Define routes to specify how packets should be routed in a virtual network.
-   - Define routes that control network traffic and specify the next hop in the traffic flow. 
+**User defined routes**
 
-- **Consider route overrides**: Here are some example scenarios where you might override Azure's default routing.
-   - Cause traffic between subnets to flow through an NVA. Learn how to [configure route tables to force traffic through an NVA](/azure/virtual-network/tutorial-create-route-table-portal).   
-   - Force all internet-bound traffic through an NVA, or on-premises, through an Azure VPN gateway. Forcing internet traffic on-premises for inspection and logging is often referred to as _forced tunneling_. Learn how to [configure forced tunneling](/azure/vpn-gateway/vpn-gateway-forced-tunneling-rm).
+- Enable filtering of internet traffic by using Azure Firewall or forced tunneling.
+- Flow traffic between subnets through an NVA.
+- Define routes to specify how packets should be routed in a virtual network.
+- Define routes that control network traffic and specify the next hop in the traffic flow. 
+
+**Overriding routes**
+
+- Cause traffic between subnets to flow through an NVA. Learn how to [configure route tables to force traffic through an NVA](/azure/virtual-network/tutorial-create-route-table-portal).   
+- Force all internet-bound traffic through an NVA, or on-premises, through an Azure VPN gateway. Forcing internet traffic on-premises for inspection and logging is often referred to as _forced tunneling_. Learn how to [configure forced tunneling](/azure/vpn-gateway/vpn-gateway-forced-tunneling-rm).
