@@ -1,4 +1,6 @@
-Here you'll create the App Service environment for deployment. In this module, you use the Azure CLI to add the resources needed to deploy and run an App Service instance. You can access the Azure CLI from a terminal or through Visual Studio Code.
+Here you'll create the App Service environment for deployment. An App Service Environment is a single-tenant deployment of Azure App Service that runs on your virtual network. Applications are hosted in App Service plans, which are created in an App Service Environment.
+
+In this module, you use the Azure CLI to add the resources needed to deploy and run an App Service instance. You can access the Azure CLI from a terminal or through Visual Studio Code.
 
 Here you access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
 
