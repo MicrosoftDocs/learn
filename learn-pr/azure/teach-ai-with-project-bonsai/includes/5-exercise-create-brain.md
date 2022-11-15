@@ -115,7 +115,7 @@ Note that goal objectives have links to Bonsai official Docs for further informa
 
 Simulations model real-world processes by computing the environment states as the Brain applies the control actions. Therefore, any simulation that integrates with Bonsai needs to have a sim initializer method, a stepping method where the actions of the Brain are applied, and an episode restart method to allow for stopping and restarting a new episode once the current episode is finished.
 
-When restarting an episode, the simulation should allow to take configuration parameters to define the initialization conditions for that episode. In the specific case of the Moab simulation, these are the initialization values that are set every time a new episode is initialized.
+When restarting an episode, the simulation should take configuration parameters to define the initialization conditions for that episode. In the specific case of the Moab simulation, these are the initialization values that are set every time a new episode is initialized.
 
 Note that Bonsai can't verify if config values are taken and applied by the simulation. Simulation engineers are the ones to inform brain trainers about the valid config parameters (and their ranges) that the simulation accepts during episode restart.
 
