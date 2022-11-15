@@ -9,7 +9,7 @@ dotnet --list-sdks
 Your console output should look similar to the text below and should include a version that starts with `7.x`.
 
 ```dotnetcli
-7.0.301 [C:\Program Files\dotnet\sdk]
+7.0.0 [C:\Program Files\dotnet\sdk]
 ```
 
 ## Clone the completed project from GitHub
