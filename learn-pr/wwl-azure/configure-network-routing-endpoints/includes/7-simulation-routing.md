@@ -49,3 +49,4 @@ Your organization is exploring Azure virtual networking capabilities. As the Azu
 [![Screenshot of the simulation page.](../media/simulation-networks-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-104%20Exam%20Guide%20-%20Microsoft%20Azure%20Administrator%20Exercise%208?azure-portal=true)
 
 
+
