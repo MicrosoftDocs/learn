@@ -37,7 +37,7 @@ To use Bonsai commands from your local computer, you need to install the Bonsai 
 1. If you are using Miniconda or Anaconda, go ahead to the next step. If not, follow this link to install Miniconda. Miniconda will help you handle your virtual environments. A virtual environment helps isolate your package installations, helping minimize dependency mismatches and other conflicts across environments. If you rather use the CLI or Anaconda to handle your virtual environments, that is okay too.
 
     - For Windows, double click on the downloaded executable to install Miniconda.
-    - For Mac, use the “bash <your-miniconda-sh-file>” command to get it installed.
+    - For Mac, use the “bash your-miniconda-sh-file” command to get it installed.
 
 2. Download the following environment yml file to your local device (please click on the Raw button before downloading). The yml file indicates the Python version to be installed (v3.7), as well as the relevant python libraries needed. Among these libraries, we include the bonsai-cli, microsoft-bonsai-api, and azure-cli.
 

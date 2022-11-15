@@ -5,7 +5,7 @@ In this unit, you will evaluate trained brains and assess the performance of the
 The assessment list is accessible from the Train tab in the Bonsai UI. By default, the list includes all automatic and custom assessments associated with the selected brain version. Select the checkmarks next to Automatic or Custom to filter the list of assessments.
 
 - Select the assessment name from the list to display the details of an assessment.
-- To return to the default Train display, select "Concept overview: <ConceptName>".
+- To return to the default Train display, select "Concept overview: (ConceptName)".
 
 ## Create a custom assessment with Moab
 

@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Select the continuation of the sentence, "The brain training stops when…”:"
+  - content: "Select the continuation of the following sentence. The brain training stops when…:"
     choices:
     - content: "It reaches 100% Goal Satisfaction."
       isCorrect: false
