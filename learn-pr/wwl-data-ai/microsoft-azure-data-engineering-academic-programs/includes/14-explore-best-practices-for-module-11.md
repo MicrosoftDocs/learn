@@ -13,7 +13,7 @@ This module consists of four lessons:
 - Lesson 3 – Use sliding windows to aggregate over chunks of data rather than all data 
 - Lesson 4 – Apply watermarking 
 
-> [!VIDEO source=https://www.microsoft.com/videoplayer/embed/RE5apBq] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5apBq] 
 
 Module 11 Tips and Tricks 
 
