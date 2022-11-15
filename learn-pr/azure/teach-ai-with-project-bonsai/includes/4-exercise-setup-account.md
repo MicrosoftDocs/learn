@@ -2,7 +2,7 @@ q  In this unit, you'll go through the instructions to set up your account for P
 
 ## Sign into Bonsai
 
-1. Open the [Bonsai UI](https://preview.bons.ai/). You are automatically directed to sign in to your Microsoft account. Click on "Sign in or Sign up."
+1. Open the [Bonsai UI](https://preview.bons.ai/). You're automatically directed to sign in to your Microsoft account. Click on "Sign in or Sign up."
 
 2. Then, sign in to your account or click "Create one!" if you need to create an account.
 
@@ -12,7 +12,7 @@ q  In this unit, you'll go through the instructions to set up your account for P
 
 1. When you sign in for the first time, the Bonsai UI looks for a valid Azure subscription. If you need an Azure services subscription, click the Go to [Azure portal](https://portal.azure.com/) button and follow the prompts to sign up for an Azure free trial. You can use the free trial for 12 months.
 
-2. If you already have a valid Azure subscription but have not created a Bonsai workspace, the UI will prompt you to visit the Azure portal and create a workspace. Otherwise, you will be automatically directed to the Azure Portal after subscription sign-up.
+2. If you already have a valid Azure subscription but haven't created a Bonsai workspace, the UI will prompt you to visit the Azure portal and create a workspace. Otherwise, you'll be automatically directed to the Azure portal after subscription sign-up.
 
 ## Provision of a Bonsai workspace
 

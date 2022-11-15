@@ -36,13 +36,13 @@ quiz:
       explanation: "Correct. The state space is an input to the brain, because it needs to know the current state of the environment in the simulation before it can decide on an action."
     - content: "Control actions"
       isCorrect: false
-      explanation: "Incorrect. Control actions would not be an input to the brain, nor are they outputs coming from the simulator. Control actions are the output of the brain."
+      explanation: "Incorrect. Control actions wouldn't be an input to the brain, nor are outputs coming from the simulator. Control actions are the output of the brain."
     - content: "Module"
       isCorrect: false
       explanation: "Incorrect. In this monolithic brain, the single module is synonymous with the brain itself."
     - content: "Goals"
       isCorrect: false
-      explanation: "Incorrect. Goals are hard-coded into the brain using Inkling, they would not be inputs to the brain, outputted from the simulator."
+      explanation: "Incorrect. Goals are hard-coded into the brain using Inkling, they wouldn't be inputs to the brain, outputted from the simulator."
     - content: "Simulator"
       isCorrect: false
       explanation: "Incorrect. The highlighted area is the OUTPUT of the simulator. Don't confuse the simulator with the thing it outputs."
@@ -59,35 +59,35 @@ quiz:
       explanation: "Correct. In this monolithic brain, the single module is synonymous with the brain itself."
     - content: "Goals"
       isCorrect: false
-      explanation: "Incorrect. Goals are hard-coded into the brain using Inkling, they are part of the brain."
+      explanation: "Incorrect. Goals are hard-coded into the brain using Inkling, they're part of the brain."
     - content: "Simulator"
       isCorrect: false
-      explanation: "Incorrect. The highlighted area is not the simulator."
+      explanation: "Incorrect. The highlighted area isn't the simulator."
   - content: "The Moab sample is a:"
     choices:
     - content: "Modular brain"
       isCorrect: false
-      explanation: "Incorrect. A modular brain would have more than one module. MOAB only uses a single module, so it is not a modular brain."
+      explanation: "Incorrect. A modular brain would have more than one module. MOAB only uses a single module, so it isn't a modular brain."
     - content: "Hybrid brain"
       isCorrect: false
-      explanation: "Incorrect. This is a term related to brain design patterns. It is called a hybrid brain when you combine one or more design patterns. It is not possible to create a hybrid between monolithic and modular brain, it needs to be one or the other."
+      explanation: "Incorrect. This is a term related to brain design patterns. It's called a hybrid brain when you combine one or more design patterns. It isn't possible to create a hybrid between monolithic and modular brain, it needs to be one or the other."
     - content: "Monolithic brain"
       isCorrect: true
-      explanation: "Correct. Monolithic brains are characterized as having one module. Since MOAB only uses a single module it is monolithic."
+      explanation: "Correct. Monolithic brains are characterized as having one module. Since MOAB only uses a single module, it's monolithic."
     - content: "None of the above"
       isCorrect: false
-      explanation: "Incorrect. There is a right answer above."
+      explanation: "Incorrect. There's a right answer above."
   - content: "What would happen if we change the goal “Move to center” by “Avoid the center”:"
     choices:
-    - content: "It is an impossible task to learn, the brain will not converge."
+    - content: "It's an impossible task to learn, the brain won't converge."
       isCorrect: false
-      explanation: "Incorrect. There is a region on the plate that the brain will learn to remain."
+      explanation: "Incorrect. There's a region on the plate that the brain will learn to remain."
     - content: "The brain will constantly throw the ball off the plate."
       isCorrect: false
-      explanation: "Incorrect. Off the plate is not the region that the brain will learn to remain with these two goals."
+      explanation: "Incorrect. Off the plate isn't the region that the brain will learn to remain with these two goals."
     - content: "The brain will keep the ball within a donut area between the center and the periphery of the plate."
       isCorrect: true
       explanation: "Correct. These two goals guide the brain to learn to remain in a donut of the plate."
     - content: "The brain will keep the ball in the periphery of the plate."
       isCorrect: false
-      explanation: "Incorrect. That is not the region that the brain will learn to remain with these two goals."
+      explanation: "Incorrect. That isn't the region that the brain will learn to remain with these two goals."

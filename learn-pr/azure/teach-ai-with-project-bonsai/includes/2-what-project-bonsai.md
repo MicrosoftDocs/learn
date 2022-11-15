@@ -4,11 +4,11 @@ Project Bonsai's platform core is built on a new special-purpose programming lan
 
 The Bonsai platform brings together several innovations, which we outline below:
 
-- ***Machine Teaching***: Machine teaching involves injecting subject matter expertise into brain designs to accelerate the time to value. It helps engineering brains that will outperform the current methods and optimize machines, processes or production lines, reduce waste and energy consumption, even solving problems with high business value, that were not able to be solved before.
+- ***Machine Teaching***: Machine teaching involves injecting subject matter expertise into brain designs to accelerate the time to value. It helps engineering brains that will outperform the current methods and optimize machines, processes or production lines, reduce waste and energy consumption, even solving problems with high business value, that weren't able to be solved before.
 
 - ***Simulation friendly***: Bonsai provides accelerated simulation integration capabilities that simplify scaled training. You can easily integrate any simulation with Bonsai. Today, Bonsai offers seamless integrations for Anylogic, Simulink, VP-Link, and FMU simulations. Additionally, Bonsai has a Python integration accelerator for Python simulators, which can also be used for ad-hoc instancing of non-python simulators.
 
-- ***AI Engine-centered***: Automating neural network management and RL training is a crucial Bonsai feature. Hence, there is no need to define a training architecture. Furthermore, Bonsai also takes care of supervising training sessions, making those available to the user. This feature includes sharing key brain performance metrics live, preventing brain unlearning by keeping the best brain weights, and allowing for custom assessment on specific scenarios once training is finished.
+- ***AI Engine-centered***: Automating neural network management and RL training is a crucial Bonsai feature. Hence, there's no need to define a training architecture. Furthermore, Bonsai also takes care of supervising training sessions, making those available to the user. This feature includes sharing key brain performance metrics live, preventing brain unlearning by keeping the best brain weights, and allowing for custom assessment on specific scenarios once training is finished.
 
 - ***Deployment-oriented***: Bonsai allows flexible runtime to deploy and scale models in the real world. You can export a Brain at any time. You can deploy the exported Brain either locally or in the cloud. The inference is as fast as every tenth of a millisecond.
 

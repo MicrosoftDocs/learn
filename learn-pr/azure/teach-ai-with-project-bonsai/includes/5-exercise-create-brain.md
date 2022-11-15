@@ -3,7 +3,7 @@ Bonsai provides prepackaged simulations and sample codes.
 To build a new brain for the ball balancing problem:
 
 1.Click the Moab icon in the Getting started panel.
-2.Name your new Brain (e.g., "Moab MSLearn").
+2.Name your new Brain (for example, "Moab MSLearn").
 3.Click Create.
 
 The sample Moab brain and simulator will be loaded.
@@ -18,7 +18,7 @@ The teaching interface has three areas, as in the above illustration:
 
 - **(1) The Navigation sidebar** lists all your brains, simulators, and exported brains (if any).
 - **(2) The Coding panel** displays our teaching code (the curriculum) written in Inkling. Inkling is designed to focus on what you want to teach while handling your AI details. 
-- **(3) The Visual Authoring** is the graphing panel which displays the observable environment states, control actions, concepts, and simulator configurations currently defined in the coding panel. There is a direct correlation between the graphical interface and the Inkling code. You can implement your brain with Visual Authoring or coding, depending on your preference. The platform is considered a low-code platform because the brain can be implemented using the graphical interface, and the Inkling code will be automatically generated.
+- **(3) The Visual Authoring** is the graphing panel that displays the observable environment states, control actions, concepts, and simulator configurations currently defined in the coding panel. There's a direct correlation between the graphical interface and the Inkling code. You can implement your brain with Visual Authoring or coding, depending on your preference. The platform is considered a low-code platform because the brain can be implemented using the graphical interface, and the Inkling code will be automatically generated.
 
 ## Navigate to the Visual Authoring
 
@@ -60,7 +60,7 @@ To achieve this, we first define the concept, “**Move to center**" which can b
 
 The environment state is obtained with the sensors placed in the environment or device. In the Moab example, a camera is located in the center under the plate. A preprocessor embedded with the simulation determines the ball's velocity and position at every iteration.
 
-To define the valid state ranges in Inkling, we will rely on three global parameters defined at the top of the Inkling file:
+To define the valid state ranges in Inkling, we'll rely on three global parameters defined at the top of the Inkling file:
 
 - **MaxDistanceStep**: The expected distance a ball with maximum valid speed could traverse for an iteration step. This parameter is set to XXX meters.
 - **RadiusOfPlate**: The distance from the center to the edge of the plate. This parameter is set to XXX meters.
@@ -96,7 +96,7 @@ As shown below, to achieve this, the goal is expressed with two goals:
 	1.	Do not let the ball fall off the plate.
 	2.	Drive the ball to the center of the plate.
 
-To define the goals, we will rely on two global parameters defined at the top of the Inkling file:
+To define the goals, we'll rely on two global parameters defined at the top of the Inkling file:
 
 - **RadiusOfPlate**: The distance from the center to the edge of the plate. This parameter is set to XXX meters.
 - **CloseEnough**: The max target distance allowed from center for the episode to be considered a success. This parameter is set to XXX meters.
@@ -117,7 +117,7 @@ Simulations model real-world processes by computing the environment states as th
 
 When restarting an episode, the simulation should allow to take in configuration parameters to define the initialization conditions for that episode. In the specific case of the Moab simulation, these are the initialization values that are set every time a new episode is initialized.
 
-Note that Bonsai cannot verify if config values are taken and applied by the simulation. Simulation engineers are the ones to inform brain trainers about the valid config parameters (and their ranges) that the simulation accepts during episode restart.
+Note that Bonsai can't verify if config values are taken and applied by the simulation. Simulation engineers are the ones to inform brain trainers about the valid config parameters (and their ranges) that the simulation accepts during episode restart.
 
 ## Concept
 
@@ -132,4 +132,4 @@ The concept is named **MoveToCenter**. The **MoveToCenter** concept will receive
 
 You can also turn off the Visual Authoring and navigate to the Inking editor. You can click on the graph or the node to highlight the relevant types in the Inking code.
 
-At a glance, you will see that the Inkling code has different structs defined for the components we just reviewed within Visual Authoring: ObservableState, SimAction, goal, and lesson.
+At a glance, you'll see that the Inkling code has different structs defined for the components we just reviewed within Visual Authoring: ObservableState, SimAction, goal, and lesson.
