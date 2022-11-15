@@ -5,7 +5,7 @@ In this unit, you'll export and run the brain in ACR deployment.
 1. Log in to the Bonsai UI.
 1. Select the brain and version you want to work with.
 1. Navigate to the Train tab.
-1. lick the Export brain button.
+1. Click the Export brain button.
 1. In the dialog box that opens:
     - Provide a name for the exported brain.
     - Select the processor architecture the brain will run on.
