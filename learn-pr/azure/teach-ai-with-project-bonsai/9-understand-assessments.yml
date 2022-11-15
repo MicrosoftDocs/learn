@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.teach-ai-with-project-bonsai.understand-assessments
+title: Understand assessments
+metadata:
+  title: Understand assessments
+  description: We explain types of assessments in Project Bonsai.
+  ms.date: 11/15/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-understand-assessments.md)]
