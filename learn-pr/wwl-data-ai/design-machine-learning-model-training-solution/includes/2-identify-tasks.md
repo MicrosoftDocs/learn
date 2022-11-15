@@ -8,7 +8,7 @@ Depending on the data you have and the expected output of the model, you can ide
 
 Some common machine learning tasks are:
 
-![Overview of the five common machine learning tasks.](../media/02-01-overview-tasks.png)
+![Diagram of an overview of the five common machine learning tasks.](../media/02-01-overview-tasks.png)
 
 1. **Classification**: Predict a categorical value.
 2. **Regression**: Predict a numerical value.
