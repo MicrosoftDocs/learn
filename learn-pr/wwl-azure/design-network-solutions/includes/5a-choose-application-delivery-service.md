@@ -30,4 +30,4 @@ As you review the descriptions of the Azure load-balancing services in the next 
 
 After you identify possible solutions for your requirements, apply the options to your scenarios and do a detailed evaluation. If your application consists of multiple workloads, evaluate each workload separately. A complete solution might incorporate two or more load-balancing solutions.
 
-:::image type="content" source="../media/load-balancer-decision-tree-thumb.png" alt-text="Flowchart for choosing an Azure Load Balancer network solution." source="../media/load-balancer-decision-tree.png" border="false":::
+:::image type="content" source="../media/load-balancer-decision-tree-thumb.png" alt-text="Flowchart for choosing an Azure Load Balancer network solution." lightbox="../media/load-balancer-decision-tree.png" border="false":::
