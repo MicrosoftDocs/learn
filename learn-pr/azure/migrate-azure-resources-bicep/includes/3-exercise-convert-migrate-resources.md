@@ -27,7 +27,7 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 1. Under **Ubuntu Server 20.04 LTS**, select **Create**.
 
-   :::image type="content" source="../media/3-create-ubuntu.png" alt-text="Screenshot that shows Azure Marketplace, with the Create link highlighted under the words Ubuntu Server 20.04 L T S.":::
+   :::image type="content" source="../media/3-create-ubuntu.png" alt-text="Screenshot that shows Azure Marketplace, with the Create link highlighted under the words Ubuntu Server 20.04 LTS.":::
 
    > [!IMPORTANT]
    > If you don't see the **Ubuntu Server 20.04 LTS** item, go directly to [Ubuntu Server 20.04 LTS](https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-focal20_04-lts-ARM?azure-portal=true) in Azure Marketplace.
@@ -40,9 +40,9 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
     | Resource group | Select **Create new** and enter **ToyTruck**. |
     | **Instance Details** |
     | Virtual machine name  | ToyTruckServer |
-    | Region | (US) West US |
+    | Region | (US) West US 3 |
     | Availability options  | No infrastructure redundancy required |
-    | Image | Ubuntu Server 20.04 LTS - Gen1 |
+    | Image | Ubuntu Server 20.04 LTS - Gen2 |
     | Size | Standard_D2s_v3 |
     | **Administrator account** |
     | Authentication type | Password |
@@ -51,7 +51,7 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
     | **Inbound port rules** |
     | Public inbound ports | None |
 
-1. On the **Management** tab, ensure that **Enable auto-shutdown** is not selected.
+1. On the **Management** tab, ensure that **Enable auto-shutdown** isn't selected.
 
 1. Select **Review + Create**. Azure validates your settings. You might need to enter or select more information depending on the image requirements.
 
@@ -69,7 +69,7 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 ## Export the resource group contents to a JSON template
 
-1. In the left menu, select **Export template**.
+1. In the left menu, under **Automation** select **Export template**.
 
    :::image type="content" source="../media/3-export-template-menu.png" alt-text="Screenshot of the Azure portal that shows the Export template menu item in the resource group pane.":::
 
@@ -77,7 +77,7 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 1. Select the **Download** button.
 
-   :::image type="content" source="../media/3-export-template.png" alt-text="Screenshot of the Azure portal that shows the exported resource group J S O N template, with the Download button highlighted.":::
+   :::image type="content" source="../media/3-export-template.png" alt-text="Screenshot of the Azure portal that shows the exported resource group JSON template, with the Download button highlighted.":::
 
    The JSON template and parameters file are downloaded to your computer as a _.zip_ file.
 
@@ -172,8 +172,8 @@ You'll fix these problems throughout the rest of this module.
 1. Repeat the process with the following resources and their associated parameters:
 
    - `publicIPAddresses_ToyTruckServer_ip_name_resource`
-   - `virtualNetworks_ToyTruck_vnet_name_resource`
    - `virtualMachines_ToyTruckServer_name_resource`
+   - `virtualNetworks_ToyTruck_vnet_name_resource`
    - `virtualNetworks_ToyTruck_vnet_name_default`
    - `networkInterfaces_toytruckserver890_name_resource`
 
@@ -189,30 +189,24 @@ You'll fix these problems throughout the rest of this module.
 
 1. In the Azure portal, open the **ToyTruck** resource group.
 
-1. Review the list of resources and compare it against the list of resources in your Bicep file. Notice that the resource group contains a **Disk** resource that isn't defined in your Bicep file:
+1. Review the list of resources and compare it against the list of resources in your Bicep file. Notice that the resource group contains a **Disk** resource that isn't defined as a `resource` in your Bicep file.
 
    :::image type="content" source="../media/3-resource-group-missing-disk.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the disk resource highlighted.":::
 
-   When you work with virtual machines in Bicep, you don't need to explicitly define the managed disk resource. Instead, you define the properties of the virtual machine and Azure creates the managed disk for you automatically. This means that, in this case, you don't need to worry about the missing resource.
+   When you work with virtual machines in Bicep, you don't need to explicitly define the managed disk resource. Instead, you define the properties of the virtual machine and Azure creates the managed disk for you automatically. In this example, you don't need to be concerned that the disk resource isn't defined in the Bicep file.
 
 ## Verify your template
 
-1. At the end of the migrate phase, your _main.bicep_ file should look similar to this example:
+At the end of the migrate phase, your _main.bicep_ file should look similar to this example:
 
    :::code language="bicep" source="code/3-main-migrated.bicep" :::
 
    > [!NOTE]
    > A few things might be different in your template, including some of the symbolic names and the IP addresses. That's OK. Some of this will be resolved later in the module.
 
-1. Close the _template.bicep_ file.
-
-1. Select **View** > **Problems** to show the problems pane.
-
-   No problems are indicated.
-
-   :::image type="content" source="../media/3-visual-studio-code-problems.png" alt-text="Screenshot of the Visual Studio Code editor that shows the problems pane, with no problems listed.":::
-
 You've created an initial Bicep file to represent your resources. The Bicep file isn't well structured and it doesn't follow best practices. In the next unit, you'll learn how to improve the quality of the migrated template.
 
 > [!TIP]
 > If you use a version control system like Git, this would be a good time to commit your work.
+
+Close the _template.bicep_ file.

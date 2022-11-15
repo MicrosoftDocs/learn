@@ -26,8 +26,8 @@ During the refactoring process, you'll:
    | Resource type | Current symbolic name | New symbolic name |
    |-|-|-|
    | Public IP address | `publicIPAddresses_ToyTruckServer_ip_name_resource` | `publicIPAddress` |
-   | Virtual network | `virtualNetworks_ToyTruck_vnet_name_resource` | `virtualNetwork` |
    | Virtual machine | `virtualMachines_ToyTruckServer_name_resource` | `virtualMachine` |
+   | Virtual network | `virtualNetworks_ToyTruck_vnet_name_resource` | `virtualNetwork` |
    | Subnet | `virtualNetworks_ToyTruck_vnet_name_default` | `defaultSubnet` |
    | Network interface | `networkInterfaces_toytruckserver890_name_resource` | `networkInterface` |
 
@@ -39,11 +39,13 @@ The virtual network's subnet currently is defined twice. It's defined once in th
 
    Notice that the `networkInterface` resource now displays a problem, because it refers to the default subnet's resource ID:
 
-   :::image type="content" source="../media/5-network-interface-subnet-problem.png" alt-text="Screenshot of Visual Studio Code that shows the networkInterface resource definition, with the error highlighted.":::
+   :::image type="content" source="../media/5-network-interface-subnet-problem.png" alt-text="Screenshot of Visual Studio Code that shows the network interface resource definition, with the error highlighted.":::
 
 1. Update the `virtualNetwork` resource to include an `existing` reference to the subnet. By adding the `existing` reference, you can refer to the subnet again within your Bicep code without defining it again:
 
    :::code language="bicep" source="code/5-virtual-network-nsg-fixed.bicep" highlight="25-27" :::
+
+1. In the `virtualNetwork` resource remove `id: defaultSubnet.id` so to resolve the warning.
 
 1. Update the `networkInterface` resource to refer to the subnet's resource ID:
 
@@ -51,7 +53,7 @@ The virtual network's subnet currently is defined twice. It's defined once in th
 
 ## Change the parameters to variables
 
-The parameters in the current template don't really need to be parameters. Here, you'll convert them to variables. At the same time, you'll rename them to more meaningful names.
+The parameters in the template don't need to be parameters. You'll rename the parameters to more meaningful names and convert them to variables.
 
 1. Select the symbolic name for the `virtualNetworks_ToyTruck_vnet_name` parameter. Rename it to `virtualNetworkName`.
 
@@ -83,11 +85,11 @@ All the resources currently use a hard-coded location. Here, you'll add a parame
 1. At the top of the file, add a new parameter and a description decorator to clarify the parameter's purpose.
 
    ```bicep
-   @description('The location into which the resources should be deployed.')
+   @description('The location where resources are deployed.')
    param location string = resourceGroup().location
    ```
 
-1. Update each resource to use the `location` parameter instead of the hard-coded `westus` location.
+1. Update each resource to use the `location` parameter instead of the hard-coded `westus3` location.
 
 ## Add parameters and variables
 
@@ -128,7 +130,7 @@ Your template has some hard-coded values where parameters or variables would be 
    var virtualMachineImageReference = {
      publisher: 'canonical'
      offer: '0001-com-ubuntu-server-focal'
-     sku: '20_04-lts'
+     sku: '20_04-lts-gen2'
      version: 'latest'
    }
    ```
@@ -157,7 +159,7 @@ Your template has some hard-coded values where parameters or variables would be 
 1. Update the `virtualMachine` resource to refer to the parameters and variables:
 
    - Use the `virtualMachineSizeName` parameter for the `hardwareProfile.vmSize` property.
-   - Use the `virtualMachineImageReference` variable for the `storageProfile.imageReference` property.
+   - Use the `virtualMachineImageReference` variable for the `storageProfile.imageReference` property. Replace the object values including the curly braces with the variable name.
    - Use the `virtualMachineOSDiskName` variable for the `storageProfile.osDisk.name` property.
    - Use the `virtualMachineManagedDiskStorageAccountType` parameter for the `storageProfile.osDisk.managedDisk.storageAccountType` property.
    - Use the `virtualMachineAdminUsername` parameter for the `osProfile.adminUsername` property.
@@ -167,7 +169,7 @@ Your template has some hard-coded values where parameters or variables would be 
 
 The export process adds redundant properties to many resources. Use these steps to remove the unneeded properties.
 
-1. In the `networkSecurityGroup` resource, remove the `securityRules` property because it's empty. Remove the `properties` property because it's empty now, too.
+1. In the `networkSecurityGroup` resource, remove the `properties` because `securityRules` propertyis empty.
 
 1. In the `publicIPAddress` resource:
 
@@ -187,7 +189,7 @@ The export process adds redundant properties to many resources. Use these steps 
 1. In the `networkInterface` resource:
 
    - Remove the `privateIPAddress` property from `ipConfigurations` because it's automatically set by Azure and the allocation method is _Dynamic_.
-   - Remove the `dnsServers` property from `dnsSettings` because it's empty. Remove the `dnsSettings` property because it's empty now, too.
+   - Remove the `dnsSettings` because property `dnsServers` is empty.
 
 > [!TIP]
 > When you work with your own templates, you'll need to determine whether there are any properties that should be removed like you've done here.

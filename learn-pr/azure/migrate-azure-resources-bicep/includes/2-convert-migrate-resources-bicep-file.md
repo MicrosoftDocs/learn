@@ -13,7 +13,7 @@ The convert phase consists of two possible steps, which you complete in sequence
 1. Capture a representation of your Azure resources.
 2. If necessary, convert the JSON representation to Bicep by using the `decompile` command.
 
-:::image type="content" source="../media/2-convert.png" alt-text="Diagram that shows a JSON template decompiled to JSON, and Azure resources that are exported to a J S O N template, which is then decompiled." border="false":::
+:::image type="content" source="../media/2-convert.png" alt-text="Diagram that shows a JSON template decompiled to JSON, and Azure resources that are exported to a JSON template, which is then decompiled." border="false":::
 
 If you have an existing JSON template that you're converting to Bicep, the first step is easy because you already have your source template. You'll learn how to decompile it to Bicep shortly.
 
