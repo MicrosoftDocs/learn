@@ -156,7 +156,7 @@ $$
 
 In the equation, $a$ is the *slope* and $b$ is the *intercept*. That same terminology applies in linear regression. The slope refers to our model's predicted change in units of female life expectancy (years) for each unit of the base-10 logarithm of per-capita GDP. In other words, our model predicts that, on average, women's life expectancies increase by 11.6 years every time per-capita GDP increases tenfold.
 
-The intercept is a little more abstract because it's not directly tied to any data point. It shows the value of the $y$-axis at the point where our line crossed that axis (where $x=0$). If we were still modeling `ppgdp` versus `lifeExpF`, we might interpret the intercept as representing women's baseline life expectancy in a hypothetical country with a per-capita GDP of USD 0: 29.8 years. However, we're modeling `log_ppgdp` versus `lifeExpF`, and the logarithm of 0 is undefined. 
+The intercept is a little more abstract because it's not directly tied to any data point. It shows the value of the $y$-axis at the point where our line crossed that axis (where $x=0$). If we were still modeling `ppgdp` versus `lifeExpF`, we might interpret the intercept as representing women's baseline life expectancy in a hypothetical country/region with a per-capita GDP of USD 0: 29.8 years. However, we're modeling `log_ppgdp` versus `lifeExpF`, and the logarithm of 0 is undefined. 
 
 It can be easiest to accept the intercept in our model as a mathematical abstraction necessary to make other parts of our model work. Our model can be stated as:
 

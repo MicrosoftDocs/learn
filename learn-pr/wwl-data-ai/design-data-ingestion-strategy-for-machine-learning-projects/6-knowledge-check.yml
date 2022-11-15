@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/11/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Every minute, a JSON object is extracted from an Internet of Things (IoT) device. What is the type of data that is extracted?"
+    choices:
+    - content: "Structured"
+      isCorrect: false
+      explanation: "Incorrect. A JSON object consists of key-value pairs that may vary per data point. Structured data adheres to a fixed schema."
+    - content: "Semi-structured"
+      isCorrect: true
+      explanation: "Correct. A JSON object is considered semi-structured."
+    - content: "Unstructured"
+      isCorrect: false
+      explanation: "Incorrect. A JSON object has key-value pairs that can be queried, so it shouldn't be stored as unstructured data."
+  - content: "When a data scientist extracts JSON objects from an IoT device, and combines all transformed data in a CSV file, which data store would be best to use?"
+    choices:
+    - content: "Azure Blob Storage"
+      isCorrect: false
+      explanation: "Incorrect. Though you can store a CSV in an Azure Blob Storage, an IoT device generates many data points and you may reach the storage limits quickly."
+    - content: "Azure Data Lake Storage"
+      isCorrect: true
+      explanation: "Correct. You can store CSV files in a data lake without having any capacity constraints."
+    - content: "Azure SQL Database"
+      isCorrect: false
+      explanation: "Incorrect. A CSV file can't be directly stored in an Azure SQL Database, you'd have to convert the file to a SQL table to store the data."
