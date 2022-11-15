@@ -18,4 +18,4 @@ The Bonsai platform brings together several innovations, which we outline below:
 
 Microsoft Project Moab is a fully integrated system for users of all levels to learn and explore to build autonomous intelligent controls using Deep Reinforcement Learning (DRL) through Project Bonsai's Machine Teaching platform. The device (shown in the image below) has three arms powered by servo motors. These arms work in tandem to control the angle of the transparent plate to keep a ping-pong ball balanced in the plate's center.
 
-![The screenshot show the Moab device.](../media/moab-device.png)
+![The screenshot shows the Moab device.](../media/moab-device.png)

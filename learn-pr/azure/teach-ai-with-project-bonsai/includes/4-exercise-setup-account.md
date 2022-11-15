@@ -1,8 +1,10 @@
-q  In this unit, you'll go through the instructions to set up your account for Project Bonsai.
+In this unit, you'll go through the instructions to set up your account for Project Bonsai.
 
 ## Sign into Bonsai
 
 1. Open the [Bonsai UI](https://preview.bons.ai/). You're automatically directed to sign in to your Microsoft account. Click on "Sign in or Sign up."
+
+    ![The screenshot shows how to sign in to the platform.](../media/sign-bonsai.png)
 
 2. Then, sign in to your account or click "Create one!" if you need to create an account.
 

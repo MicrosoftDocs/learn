@@ -2,17 +2,17 @@ Bonsai provides prepackaged simulations and sample codes.
 
 To build a new brain for the ball balancing problem:
 
-1.Click the Moab icon in the Getting started panel.
-2.Name your new Brain (for example, "Moab MSLearn").
-3.Click Create.
+1. Click the Moab icon in the Getting started panel.
+2. Name your new Brain (for example, "Moab MSLearn").
+3. Click Create.
 
 The sample Moab brain and simulator will be loaded.
 
-## Overview of Bonsai UI Components
+## Overview of Bonsai UI components
 
 Bonsai opens the teaching interface when your Moab brain loads, which is prepopulated with everything you need to get started.
 
-![The screenshot demonstrate the teaching UI.](../media/teaching-ui.png)
+![The screenshot demonstrates the teaching UI.](../media/teaching-ui.png)
 
 The teaching interface has three areas, as in the above illustration:
 
@@ -24,9 +24,9 @@ The teaching interface has three areas, as in the above illustration:
 
 To turn on the Visual Authoring for brain teaching using the graphical interface, toggle the switch at the top right of the Bonsai UI on the Teach tab. The button will make your transition to the following page:
 
-![The screenshot show the visual authoring for brain teaching.](../media/visual-authoring.png)
+![The screenshot shows the visual authoring for brain teaching.](../media/visual-authoring.png)
 
-## Visual Authoring Components
+## Visual Authoring components
 
 The Visual Authoring UI includes an editing canvas, and a properties editor panel. From left to right, the components are the following:
 
@@ -48,7 +48,7 @@ The concepts are subcomponents of the Brain. This concept might be learned, impo
 
 - **Imported concept** lets you import Machine Learning (ML) models that have been trained elsewhere, such as Computer Vision preprocessors.
 
-![The screenshot illustrate the concept picker.](../media/concept-picker.png)
+![The screenshot illustrates the concept picker.](../media/concept-picker.png)
 
 ## Create your first Bonsai brain: Project Moab
 
@@ -56,7 +56,7 @@ The trained Bonsai brain for Moab should be able to adjust the plate pitch and r
 
 To achieve this, we first define the concept, “**Move to center**" which can be found in the extract of the AI specification document shown below.
 
-### Environment State
+### Environment state
 
 The environment state is obtained with the sensors placed in the environment or device. In the Moab example, a camera is located in the center under the plate. A preprocessor embedded with the simulation determines the ball's velocity and position at every iteration.
 
@@ -73,7 +73,7 @@ The Inkling associated with this is:
 - **ball_x, ball_y**: the (x, y) ball position
 - **ball_vel_x, ball_vel_y**: the x and y ball velocity components
 
-### Control Actions
+### Control actions
 
 Control action is what the Brain outputs after observing every environment state. For example, given the environment state, i.e., ball velocity and position, the brain will adjust the pitch and roll of the plate to meet the defined goal.
 
@@ -115,7 +115,7 @@ Note that goal objectives have links to Bonsai official Docs for further informa
 
 Simulations model real-world processes by computing the environment states as the Brain applies the control actions. Therefore, any simulation that integrates with Bonsai needs to have a sim initializer method, a stepping method where the actions of the Brain are applied, and an episode restart method to allow for stopping and restarting a new episode once the current episode is finished.
 
-When restarting an episode, the simulation should allow to take in configuration parameters to define the initialization conditions for that episode. In the specific case of the Moab simulation, these are the initialization values that are set every time a new episode is initialized.
+When restarting an episode, the simulation should allow to take configuration parameters to define the initialization conditions for that episode. In the specific case of the Moab simulation, these are the initialization values that are set every time a new episode is initialized.
 
 Note that Bonsai can't verify if config values are taken and applied by the simulation. Simulation engineers are the ones to inform brain trainers about the valid config parameters (and their ranges) that the simulation accepts during episode restart.
 
@@ -128,7 +128,7 @@ The concept is named **MoveToCenter**. The **MoveToCenter** concept will receive
     - **Center of Plate**: That will drive the ball to the center of the plate
 - **Lessons**, where episode randomization values are defined to be applied during each new episode restart. To prepare for deployment, you want to expose the Brain to complex scenarios. For example, initializing the ball at different positions and starting velocities ensures you can react to someone pushing the ball off center. Similarly, randomizing the initial plate pitch and roll prepares the Brain for a broader set of scenarios that could occur once deployed.
 
-## Inspect the Brain in Inkling editor
+## Inspect the brain in Inkling editor
 
 You can also turn off the Visual Authoring and navigate to the Inking editor. You can click on the graph or the node to highlight the relevant types in the Inking code.
 
