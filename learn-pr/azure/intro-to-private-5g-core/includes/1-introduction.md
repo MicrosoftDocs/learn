@@ -1,6 +1,6 @@
 As Internet of Things (IoT) devices typically need to respond to requests or data changes quickly, they usually require low-latency and high-performance network connectivity. Additionally, many IoT applications in enterprises may have strict data privacy requirements. 
 
-To satisfy the performance and security needs of IoT applications, Azure Private 5G Core offers simple, scalable, and secure deployment of private 5G core networks on an Azure edge platform. While ensuring high performance with local data processing, Azure Private 5G Core allows you to deploy and manage private 5G networks centrally across global sites through the Azure portal. It also allows you to monitor the sites in a private mobile network either remotely from the cloud or locally at each site.
+To satisfy the performance and security needs of IoT applications, Azure Private 5G Core offers simple, scalable, and secure deployment of private 5G core networks on an Azure edge platform. While ensuring high performance with local data processing, Azure Private 5G Core allows you to deploy and manage private 5G networks centrally across global sites through the Azure portal. It also allows you to monitor the sites in a private mobile network either remotely with Azure Log Analytics or locally with packet core dashboards.
 
 Different from WIFI, the 5G service offered by Azure Private 5G Core overcomes the communication issues caused by noisy radio frequency (RF) environment or large distances.
 

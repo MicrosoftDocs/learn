@@ -46,6 +46,6 @@ The following diagram shows the key Azure resources that you'll use to manage yo
 :::image type="content" source="../media/private-5g-core-resources.png" alt-text="A diagram that displays the resources you'll use to manage your private mobile network" border="true":::
 
 - Each *SIM* resource represents a physical SIM or an eSIM. The UEs hosted by the private network use the SIMs to communicate with the network. You can use *SIM group* resources to categorize SIMs for easier management. Each SIM must be a member of a SIM group, but can't be a member of more than one.
-- The *SIM policy* resources are for control policy customization. You can use SIM policies to implement flexible traffic handling. Each SIM policy defines a set of policies and interoperability settings. You'll need to assign a SIM policy to a SIM before the UE using that SIM can access the private mobile network.
+- The *SIM policy* resources are for control policy customization. You can use SIM policies to implement flexible traffic handling. Each SIM defines the identifiers and authentication data for the SIM, plus the policy set that will be applied to the UE. You'll need to assign a SIM policy to a SIM before the UE using that SIM can access the private mobile network.
 - The *mobile network site* and *packet core* resources allow you to centrally manage the sites in your private mobile network and the packet core instances that run in them.
 - Each *attached data network* resource allows you to manage how its associated packet core instance will connect to the data network.

@@ -21,15 +21,15 @@ TBD: A video that introduces Azure Private 5G Core and its role in private MEC s
 A private MEC solution powered with Azure Private 5G Core typically consists of the following components.
 
 - **Packet core**
-  The packet core instance is a cloud-native implementation of the 3GPP standards-defined 5G Next Generation Core (5G NGC or 5GC). Each packet core instance connects to a radio access network (RAN) to provide coverage for UEs. You'll source your RAN from a third party.
+  The packet core instance is a cloud-native implementation of the 3GPP standards-defined 5G Next Generation Core (5G NGC or 5GC). Each packet core instance connects to a radio access network (RAN) to provide coverage for UEs. You'll source your RAN from an [Azure private MEC partner](/azure/private-multi-access-edge-compute-mec/partner-programs).
 
 - **Azure Stack Edge and Azure Arc-enabled Kubernetes**
   Before you add a site to your private mobile network, you'll create a *Kubernetes cluster* on the Azure Stack Edge device, which serves as the platform for the packet core instance. The platform provides security and manageability for the entire core network stack from Azure. Additionally, Azure Arc allows Microsoft to provide support at the edge.
 
 - **RANs and SIMs**
-  UEs connect to the packet core through RAN. For the RAN service, you can choose RAN vendors base on your business, technology, and spectrum requirements.
+  UEs use SIMs or eSIMs to connect to RAN. They connect to the packet core through RAN.
 
-  UEs use SIMs or eSIMs to connect to RAN. SIM vendors offering physical SIM and eSIM services can integrate directly with Azure Private 5G Core through the SIM manager to securely provision physical SIMs and eSIMs.
+  For RANs and SIMs, you can choose vendors base on your business, technology, and spectrum requirements. For more information, see [Azure private multi-access edge compute partner solutions](/azure/private-multi-access-edge-compute-mec/partner-programs).
 
 ## Enterprise network structure
 

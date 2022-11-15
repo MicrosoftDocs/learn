@@ -51,3 +51,9 @@ Azure Private 5G Core supports authentication methods like:
 - Evolved Packet System based Authentication and Key Agreement (EPS-AKA) for mutual authentication between 4G UEs and the network.
 
 The packet core instance performs ciphering and integrity protection of 5G non-access stratum (NAS). During UE registration, the UE includes its security capabilities for 5G NAS with 128-bit keys.
+
+<!-- GA features to be added -->
+<!-- ## DNN (Multi-DN) -->
+
+<!-- ## Multi-slicing -->
+<!-- Core-focused features -->
