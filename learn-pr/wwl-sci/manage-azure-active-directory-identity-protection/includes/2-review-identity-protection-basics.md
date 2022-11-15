@@ -23,7 +23,7 @@ Identity Protection identifies risks in the following classifications:
 | Leaked credentials | Indicates that the user's valid credentials have been leaked. |
 | Password spray | Indicates that multiple usernames are being attacked using common passwords in a unified brute-force manner. |
 | Azure AD threat intelligence | Microsoft's internal and external threat intelligence sources have identified a known attack pattern. |
-| New country | This detection is discovered by Microsoft Defender for Cloud Apps (MDCA). |
+| New country/region | This detection is discovered by Microsoft Defender for Cloud Apps (MDCA). |
 | Activity from anonymous IP address | This detection is discovered by MDCA. |
 | Suspicious inbox forwarding | This detection is discovered by MDCA. |
 

@@ -8,7 +8,7 @@ The power of our solution areas is when they come together – for you. We start
 
 **The company:** The Carlsberg Group is one of the world’s leading breweries.
 
-**The need for digital transformation:** Carlsberg experienced significant growth in the last two decades, growing from four small markets in 2000 to 80 breweries today, with more than 40,000 employees across 27 countries. To create local favorites while maintaining global consistency and quality, Carlsberg needed to deploy a global collaboration solution to streamline processes, enable efficient teamwork, and continue to build its brand.
+**The need for digital transformation:** Carlsberg experienced significant growth in the last two decades, growing from four small markets in 2000 to 80 breweries today, with more than 40,000 employees across 27 countries/regions. To create local favorites while maintaining global consistency and quality, Carlsberg needed to deploy a global collaboration solution to streamline processes, enable efficient teamwork, and continue to build its brand.
 
 **The business outcomes:** Carlsberg adopted the Microsoft 365 modern workplace solution to enable seamless collaboration and teamwork for product development, globally. Regardless of location, Carlsberg employees can share brewing recipes and ideas, build the company’s collective creativity and enhance the quality of their brand while ensuring the consistency their customers have come to expect.
 
