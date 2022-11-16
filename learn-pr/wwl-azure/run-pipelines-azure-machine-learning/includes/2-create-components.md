@@ -9,13 +9,16 @@ There are two main reasons why you'd use components:
 - To build a pipeline.
 - To share ready-to-go code.
 
-You'll want to create components when you're preparing your code for scale. When you're done with experimenting and developing, and ready to move your model to production. 
+You'll want to create components when you're *preparing your code for scale*. When you're done with experimenting and developing, and ready to move your model to production. 
 
 Within Azure Machine Learning, you can create a component to store code (in your preferred language) within the workspace. Ideally, you design a component to perform a specific action that is relevant to your machine learning workflow. 
 
 For example, a component may consist of a Python script that normalizes your data, trains a machine learning model, or evaluates a model.
 
 Components can be easily shared to other Azure Machine Learning users, who can reuse components in their own Azure Machine Learning pipelines. 
+
+:::image type="content" source="../media/01-01-components.png" alt-text="Screenshot of available components in the Azure Machine Learning workspace.":::
+
 
 ## Create a component
 
@@ -27,16 +30,15 @@ A component consists of three parts:
  
 To create a component, you need two files:
 
-- A script to define the component. 
+- A script that contains the workflow you want to execute. 
 - A YAML file to define the metadata, interface, and command, code, and environment of the component.
 
 You can create the YAML file, or use the `command_component()` function as a decorator to create the YAML file.
 
 > [!Tip]
-> Learn more about [how to create components using the `command_component()`](/azure/machine-learning/how-to-create-component-pipeline-python?azure-portal=true). 
+> Here, we'll focus on creating a YAML file to create a component. Alternatively, learn more about [how to create components using `command_component()`](/azure/machine-learning/how-to-create-component-pipeline-python?azure-portal=true). 
 
-
-For example, you may have a Python script `prep.py` that prepares the data by removing missing values and normalizes the data:
+For example, you may have a Python script `prep.py` that prepares the data by removing missing values and normalizing the data:
 
 ```python
 # import libraries
@@ -111,7 +113,7 @@ When you've loaded the component, you can use it in a pipeline or register the c
 
 ## Register a component
 
-To use components in a pipeline, you'll need the script and the YAML file. To make the components accessible to other uses in the workspace, you can also register components to the Azure Machine Learning workspace.
+To use components in a pipeline, you'll need the script and the YAML file. To make the components accessible to other users in the workspace, you can also register components to the Azure Machine Learning workspace.
 
 You can register a component with the following code:
 

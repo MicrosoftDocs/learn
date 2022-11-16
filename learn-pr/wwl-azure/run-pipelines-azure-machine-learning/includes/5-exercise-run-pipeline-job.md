@@ -1,6 +1,6 @@
 
 
-Now, it's your chance to explore how to track models with MLflow in notebooks.
+Now, it's your chance to explore how to create and run pipelines in Azure Machine Learning.
 
 In this exercise, you will:
 

@@ -4,15 +4,18 @@ In Azure Machine Learning, a **pipeline** is a workflow of machine learning task
 
 Components can be arranged sequentially or in parallel, enabling you to build sophisticated flow logic to orchestrate machine learning operations. Each component can be run on a specific compute target, making it possible to combine different types of processing as required to achieve an overall goal.
 
-A pipeline can be executed as a process by running the pipeline as a **pipeline job**. Each component is executed as a child job as part of the overall pipeline job. Whenever an error occurs, you'll be able to explore which component failed and why, by investigating the component's output logs.
+A pipeline can be executed as a process by running the pipeline as a **pipeline job**. Each component is executed as a **child job** as part of the overall pipeline job. 
 
 ## Build a pipeline
 
-An Azure Machine Learning pipeline is defined in a YAML file. The YAML file includes the name, inputs, outputs, and settings of the pipeline. 
+An Azure Machine Learning pipeline is defined in a YAML file. The YAML file includes the pipeline job name, inputs, outputs, and settings. 
 
 You can create the YAML file, or use the `@pipeline()` function to create the YAML file.
 
-For example, if you want to build a pipeline with two components: preparing the data, and training the model, you can use the following code:
+> [!Tip]
+> Review the [reference documentation for the `@pipeline()` function](/python/api/azure-ai-ml/azure.ai.ml.dsl?view=azure-python?azure-portal=true).
+
+For example, if you want to build a pipeline that first prepares the data, and then trains the model, you can use the following code:
 
 ```python
 from azure.ai.ml.dsl import pipeline
@@ -28,9 +31,6 @@ def pipeline_function_name(pipeline_job_input):
     }
 ```
 
-> [!Tip]
-> Review the [reference documentation for the `@pipeline()` function](/python/api/azure-ai-ml/azure.ai.ml.dsl?view=azure-python?azure-portal=true).
-
 To pass a registered data asset as the pipeline job input, you can call the function you created with the data asset as input:
 
 ```python
@@ -45,8 +45,6 @@ pipeline_job = pipeline_function_name(
 
 The `@pipeline()` function builds a pipeline consisting of two sequential steps, represented by the two loaded components.  
 
-:::image type="content" source="../media/pipeline-overview.png" alt-text="Diagram of pipeline structure including all inputs and outputs.":::
-
 To understand the pipeline built in the example, let's explore it step by step:
 
 1. The pipeline is built by defining the function `pipeline_function_name`. 
@@ -59,6 +57,8 @@ To understand the pipeline built in the example, let's explore it step by step:
 There are two outputs: 
     - `pipeline_job_transformed_data` with the value of `prep_data.outputs.output_data` 
     - `pipeline_job_trained_model` with the value of `train_model.outputs.model_output`
+
+:::image type="content" source="../media/pipeline-overview.png" alt-text="Diagram of pipeline structure including all inputs and outputs.":::
 
 The result of running the `@pipeline()` function is a YAML file that you can review by printing the `pipeline_job` object you created when calling the function:
 
@@ -92,4 +92,4 @@ settings: {}
 ```
 
 > [!Tip]
-> Learn more about [the pipeline job YAML schema to explore which parameters are included when building a components-based pipeline](/azure/machine-learning/reference-yaml-job-pipeline?azure-portal=true).
+> Learn more about [the pipeline job YAML schema to explore which parameters are included when building a component-based pipeline](/azure/machine-learning/reference-yaml-job-pipeline?azure-portal=true).
