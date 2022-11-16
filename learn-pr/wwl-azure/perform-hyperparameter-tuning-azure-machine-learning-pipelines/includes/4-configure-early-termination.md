@@ -38,7 +38,11 @@ For example, the following code applies a bandit policy with a delay of five tri
 ```python
 from azure.ai.ml.sweep import BanditPolicy
 
-sweep_job.early_termination = BanditPolicy(slack_amount = 0.2, delay_evaluation = 5, evaluation_interval = 1)
+sweep_job.early_termination = BanditPolicy(
+    slack_amount = 0.2, 
+    delay_evaluation = 5, 
+    evaluation_interval = 1
+)
 ```
 
 Imagine the primary metric is the accuracy of the model. When after the first five trials, the best performing model has an accuracy of 0.9, any new model needs to perform better than (0.9-0.2) or 0.7. If the new model's accuracy is higher than 0.7, the sweep job will continue. If the new model has an accuracy score lower than 0.7, the policy will terminate the sweep job.
@@ -57,7 +61,9 @@ For example, the following code applies a median stopping policy with a delay of
 from azure.ai.ml.sweep import MedianStoppingPolicy
 
 sweep_job.early_termination = MedianStoppingPolicy(
-    delay_evaluation = 5, evaluation_interval = 1)
+    delay_evaluation = 5, 
+    evaluation_interval = 1
+)
 ```
 
 Imagine the primary metric is the accuracy of the model. When the accuracy is logged for the sixth trial, the metric needs to be higher than the median of the accuracy scores so far. Suppose the median of the accuracy scores so far is 0.82. If the new model's accuracy is higher than 0.82, the sweep job will continue. If the new model has an accuracy score lower than 0.82, the policy will stop the sweep job, and no new models will be trained. 
@@ -73,7 +79,11 @@ For example, the following code applies a truncation selection policy with a del
 ```python
 from azure.ai.ml.sweep import TruncationSelectionPolicy
 
-sweep_job.early_termination = TruncationSelectionPolicy(evaluation_interval=1, truncation_percentage=20, delay_evaluation=4, exclude_finished_jobs=true)
+sweep_job.early_termination = TruncationSelectionPolicy(
+    evaluation_interval=1, 
+    truncation_percentage=20, 
+    delay_evaluation=4 
+)
 ```
 
 Imagine the primary metric is the accuracy of the model. When the accuracy is logged for the fifth trial, the metric should **not** be in the worst 20% of the trials so far. In this case, 20% translates to one trial. In other words, if the fifth trial is **not** the worst performing model so far, the sweep job will continue. If the fifth trial has the lowest accuracy score of all trials so far, the sweep job will stop.
