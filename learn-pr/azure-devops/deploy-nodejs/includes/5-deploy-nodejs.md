@@ -82,6 +82,8 @@ This pipeline is divided into two stages: `Build` and `Deploy`. The `Build` stag
 
 The `NodeTool@0` task sets up the build environment for Node.js projects. For the purposes of this pipeline, only the `versionSpec` parameter is needed to specify the version of the Node.js tools to install. You can learn more about this task in the [Node.js Tool Installer task](/azure/devops/pipelines/tasks/tool/node-js?azure-portal=true) documentation.
 
+Verify that `versionSpec` is set to `16.x`. If it is not, update the value.
+
 [!code-yml[](code/4-4-azure-pipelines.yml)]
 
 ### Running the build
@@ -101,6 +103,8 @@ You don't need to provide your own storage for build artifacts. Azure Pipelines 
 ### Deploying the build
 
 The second stage of the pipeline deploys the application to Azure. It depends on the `Build` stage completing successfully. It then uses the pipeline's Azure service connection to deploy the app to the configured target. This project deploys the app to the Azure App Service.
+
+Verify that `runtimeStack` is set to `NODE|16-lts`. If it is not, update the value.
 
 [!code-yml[](code/4-7-azure-pipelines.yml)]
 

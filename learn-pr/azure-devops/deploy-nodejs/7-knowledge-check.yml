@@ -30,10 +30,10 @@ quiz:
       explanation: "This is the correct answer. You'll need to create an App Service plan and instance in your resource group."
   - content: "What does the `trigger` keyword mean in a Azure pipeline YAML file?"
     choices:
-    - content: "A `trigger` sets when to automatically run a pipeline. In the example in this module, the pipeline is configured to run whenever a change is committed to the main branch."
+    - content: "A `trigger` sets when to automatically run a pipeline. In the example in this module, the pipeline is configured to run whenever a change is committed to the `main` branch."
       isCorrect: true
       explanation: "The `trigger` keyword tells a pipeline when to run."
-    - content: "A `trigger` sets under what conditions to take an App Service app offline or online."
+    - content: "A `trigger` determines under what conditions to take an App Service app offline or online."
       isCorrect: false
       explanation: "A trigger tells a pipeline when to run."
     - content: "A `trigger` runs code as a step in your pipeline using command-line, PowerShell, or Bash."
