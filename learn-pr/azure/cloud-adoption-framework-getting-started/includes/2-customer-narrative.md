@@ -1,4 +1,4 @@
-:::image type="content" source="../media/logo.png" alt-text="Image of the Tailwind Traders logo." border="false":::
+:::image type="content" source="../media/logo.png" alt-text="The Tailwind Traders logo." border="false":::
 
 *Figure 1: The Tailwind Traders logo.*
 
