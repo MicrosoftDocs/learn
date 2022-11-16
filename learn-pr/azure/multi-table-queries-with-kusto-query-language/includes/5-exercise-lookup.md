@@ -10,7 +10,7 @@ In the following steps, you'll build the query in stages so that you get a bette
 
 1. Run the following query to get 10 matching arbitrary rows from the *SalesFact* table and the *Customers* table. 
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAAwtOzEktdktMLuGqUcjJz88uLVBwLi0uyc9NLSpWyM+Dc7xTK4EqShKzUxUMDQCq8uF9NQAAAA==" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAAwtOzEktdktMLuGqUcjJz88uLVBwLi0uyc9NLSpWyM+Dc7xTK4EqShKzUxUMDQCq8uF9NQAAAA==" target="_blank">Run the query</a>
 
     ```kusto
     SalesFact
@@ -22,7 +22,7 @@ In the following steps, you'll build the query in stages so that you get a bette
 
 1. Run the following query to get the total sales per country.
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA03LPQqAMAwG0N1TZNRDOAkugoN6gViDiG0jSTtUPLztIo7fz5vRkvZoQvWAZT7jBV3UwI5Egf0XBkr5odE5lOMmWDignQuGFgxHH+oG1gQT7Qf7rhSSRnSUFctGUsYf2kjNC9nYPm18AAAA" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA03LPQqAMAwG0N1TZNRDOAkugoN6gViDiG0jSTtUPLztIo7fz5vRkvZoQvWAZT7jBV3UwI5Egf0XBkr5odE5lOMmWDignQuGFgxHH+oG1gQT7Qf7rhSSRnSUFctGUsYf2kjNC9nYPm18AAAA" target="_blank">Run the query</a>
 
     ```kusto
     SalesFact
@@ -41,7 +41,7 @@ In the previous unit, you used a left outer join to get the total sales per prod
 
 1. Run the following query.
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAAwtOzEktdktMLuGqUcjJz88uLVAIKMpPKU0uKVbIz4OxvVMrgfLFpbm5iUWZVakKIfkliTnBIK0KtgrJ+aV5JRqaCkmVMOXOiSWp6flFlX6JualAfflFKalFIGkkbSmpxckAoEL9GXwAAAA=" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAAwtOzEktdktMLuGqUcjJz88uLVAIKMpPKU0uKVbIz4OxvVMrgfLFpbm5iUWZVakKIfkliTnBIK0KtgrJ+aV5JRqaCkmVMOXOiSWp6flFlX6JualAfflFKalFIGkkbSmpxckAoEL9GXwAAAA=" target="_blank">Run the query</a>
 
     ```kusto
     SalesFact

@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "What happens when the value a `StaticResource` refers to changes after it's been assigned to a variable?"
+  - content: "The value to which a `StaticResource` refers is assigned to a variable. What happens when the value then changes?"
     choices:
     - content: "Nothing, the lookup only occurs once and any further changes in the backing dictionary won't be reflected."
       isCorrect: true
