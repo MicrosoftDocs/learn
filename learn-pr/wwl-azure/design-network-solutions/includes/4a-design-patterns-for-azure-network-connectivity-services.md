@@ -20,9 +20,9 @@ The entities you would most likely use to create segments in the virtual network
 
 Here's how you might implement a single virtual network pattern:
 
-- One subnet (Subnet 1) can contain your database workloads.
-- Another subnet (Subnet 2) can contain your web workloads.
-- To govern subnet traffic, you can implement NSGs to specify Subnet 1 can talk only with Subnet 2 and Subnet 2 can talk to the internet.
+- One subnet (`Subnet 1`) can contain your database workloads.
+- Another subnet (`Subnet 2`) can contain your web workloads.
+- To govern subnet traffic, you can implement NSGs to specify that `Subnet 1` can talk only with `Subnet 2`, and `Subnet 2` can talk to the internet.
 - You can enforce segmentation by using an NVA from Azure Marketplace or Azure Firewall.
 - You can modify the pattern to support many workloads. You might carve out subnets that won't allow one workload to communicate to the backend of another workload.
 
