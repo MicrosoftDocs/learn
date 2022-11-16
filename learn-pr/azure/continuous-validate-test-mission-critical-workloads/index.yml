@@ -5,11 +5,11 @@ metadata:
   description: Validate and test your mission-critical workload continuously through automated pipelines to be aware of potential issues before deploying to production. 
   ms.date: 11/11/2022
   author: ttorble #TBD
-  ms.author: authorMSFTalias #TBD
+  ms.author: PageWriter-MSFT
   ms.topic: interactive-tutorial
   ms.prod: learning-azure #TBD
 title: 'Continuously validate and test your mission-critical workloads'
-summary: A mission-critical workload needs to stay operational even when failures occur. You want to evaluate the impact of changes, system’s ability to handle load, and simulate failures before deploying to production. Learn how you can use Azure Load Testing and Azure Chaos Studio simultaneously as part of DevOps pipelines to achieve those goals.
+summary: A mission-critical workload needs to stay operational even when failures occur. You want to evaluate the impact of changes, system's ability to handle load, and simulate failures before deploying to production. Learn how you can use Azure Load Testing and Azure Chaos Studio simultaneously as part of DevOps pipelines to achieve those goals.
 abstract:  | 
   In this module, you will:
   - Understand the importance of user and system flows as the foundation for defining load tests and chaos experiments

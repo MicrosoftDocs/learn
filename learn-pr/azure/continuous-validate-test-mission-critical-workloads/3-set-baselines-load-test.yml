@@ -6,7 +6,7 @@ metadata:
   description: Set baselines for load tests.
   ms.date: 11/11/2022
   author: ttorble #TBD
-  ms.author: authorMSFTalias #TBD
+  ms.author: PageWriter-MSFT
   ms.topic: interactive-tutorial
   ms.prod: learning-azure #TBD
 durationInMinutes: 5 #TBD

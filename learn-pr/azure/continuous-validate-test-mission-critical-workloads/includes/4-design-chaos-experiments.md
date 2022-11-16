@@ -11,7 +11,7 @@ Use Azure Chaos Studio to inject the faults into the relevant components.
 Run some load against the system at the same time to be able to observe the behavior.
 
 Content base:
-- https://learn.microsoft.com/azure/chaos-studio/chaos-studio-fault-library 
-- https://learn.microsoft.com/azure/architecture/framework/resiliency/chaos-engineering?toc=%2Fazure%2Fchaos-studio%2Ftoc.json&bc=%2Fazure%2Fchaos-studio%2Fbreadcrumb%2Ftoc.json
+- /azure/chaos-studio/chaos-studio-fault-library 
+- /azure/architecture/framework/resiliency/chaos-engineering?toc=%2Fazure%2Fchaos-studio%2Ftoc.json&bc=%2Fazure%2Fchaos-studio%2Fbreadcrumb%2Ftoc.json
 
  

@@ -1,4 +1,4 @@
-Summary guidance: https://review.learn.microsoft.com/en-us/help/learn/id-guidance-introductory-summaries?branch=main
+Summary guidance: /review.learn.microsoft.com/en-us/help/learn/id-guidance-introductory-summaries?branch=main
 
 ## Related links
 
