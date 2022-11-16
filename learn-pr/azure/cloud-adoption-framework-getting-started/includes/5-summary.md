@@ -6,3 +6,4 @@ You also learned about how the getting-started guides can help unblock common im
 
 - Get started with the [Cloud Adoption Framework](/azure/cloud-adoption-framework/get-started/?azure-portal=true) to find more articles that can help with common blockers.
 - Explore the [Ready methodology](/azure/cloud-adoption-framework/ready/?azure-portal=true) of the framework to learn about common operating models in the cloud, environmental configuration, Azure landing zones, and tools to help you build your cloud platform in Azure.
+- 
