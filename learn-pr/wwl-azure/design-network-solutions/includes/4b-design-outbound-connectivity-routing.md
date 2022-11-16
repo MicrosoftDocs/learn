@@ -8,8 +8,6 @@ Azure [routes communication traffic](/azure/virtual-network/virtual-networks-udr
 
 [Azure Virtual Network NAT](/azure/virtual-network/nat-gateway/nat-overview) simplifies outbound-only internet connectivity for virtual networks. When you configure this service on a subnet, all outbound connectivity uses your specified static public IP addresses. Outbound connectivity is possible without load balancer or public IP addresses directly attached to virtual machines. Virtual Network NAT is fully managed and highly resilient. 
 
-:::image type="content" source="../media/flow-map.png" alt-text=" Diagram of a Virtual Network NAT (network address translation) flow." border="false":::
-
 #### Business scenarios
 
 - Support on-demand outbound-to-internet connectivity without pre-allocation

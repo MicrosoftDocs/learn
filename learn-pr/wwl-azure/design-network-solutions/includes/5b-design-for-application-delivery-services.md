@@ -4,8 +4,6 @@ Azure offers several networking services to help deliver applications. In this u
 
 Azure Content Delivery Network offers a global solution for rapidly delivering high-bandwidth content to users. Content Delivery Network lets you cache your content at strategically placed physical nodes across the world.
 
-:::image type="content" source="../media/content-delivery-network.png" alt-text="Diagram of an implementation of Azure Content Delivery Network." border="false":::
-
 #### Business scenarios
 
 - Implement point-of-presence locations that are close to large clusters of users
@@ -16,9 +14,7 @@ Azure Content Delivery Network offers a global solution for rapidly delivering h
 ### Azure Front Door
 
 Azure Front Door lets you define, manage, and monitor the global routing for your web traffic by optimizing for best performance and instant global failover for high availability. With Front Door, you can transform your global (multi-region) consumer and enterprise applications into robust, high-performance personalized modern applications, APIs, and content that reaches a global audience with Azure.
-
-:::image type="content" source="../media/front-door-thumb.png" alt-text="Diagram of an implementation of Azure Front Door." lightbox="../media/front-door.png" border="false":::
-
+ 
 #### Business scenarios
 
 - Low latency: Ensure requests are sent to the lowest latency backends
@@ -29,9 +25,7 @@ Azure Front Door lets you define, manage, and monitor the global routing for you
 
 ### Azure Traffic Manager
 
-Azure Traffic Manager is a DNS-based traffic load balancer that enables you to distribute traffic optimally to services across global Azure regions, while providing high availability and responsiveness. Traffic Manager provides a range of traffic-routing methods to distribute traffic such as priority, weighted, performance, geographic, multi-value, and subnet. The following diagram shows endpoint priority-based routing with Traffic Manager.
-
-:::image type="content" source="../media/traffic-manager-priority-thumb.png" alt-text="Diagram that shows endpoint priority-based routing with Azure Traffic Manager." lightbox="../media/traffic-manager-priority.png" border="false":::
+Azure Traffic Manager is a DNS-based traffic load balancer that enables you to distribute traffic optimally to services across global Azure regions, while providing high availability and responsiveness. Traffic Manager provides a range of traffic-routing methods to distribute traffic such as priority, weighted, performance, geographic, multi-value, and subnet. 
 
 #### Business scenarios
 
@@ -42,9 +36,7 @@ Azure Traffic Manager is a DNS-based traffic load balancer that enables you to d
 
 ### Azure Load Balancer
 
-Azure Load Balancer provides high-performance, low-latency Layer 4 load-balancing for all UDP and TCP protocols. The following diagram shows an internet-facing multi-tier application that uses both external and internal load balancers.
-
-:::image type="content" source="../media/load-balancer.png" alt-text="Diagram of an internet-facing multi-tier application that uses both external and internal load balancers." border="false":::
+Azure Load Balancer provides high-performance, low-latency Layer 4 load-balancing for all UDP and TCP protocols.
 
 #### Business scenarios
 
@@ -55,14 +47,6 @@ Azure Load Balancer provides high-performance, low-latency Layer 4 load-balancin
 ### Azure Application Gateway 
 
 Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your web applications. Application Gateway is an Application Delivery Controller (ADC) as a service, offering various layer 7 load-balancing capabilities for your applications. There are two primary methods of routing traffic: path-based routing and multiple-site routing.
-
-#### Path-based routing
-
-:::image type="content" source="../media/path-based.png" alt-text="Diagram of path-based routing with Azure Application Gateway." border="false":::
-
-#### Multiple-site routing
-
-:::image type="content" source="../media/multiple-site.png" alt-text="Diagram of multiple-site routing with Azure Application Gateway." border="false":::
 
 #### Business scenarios
 

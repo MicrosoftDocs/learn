@@ -18,12 +18,11 @@ In the first pattern, all components of your workload (or in some cases your ent
 
 The entities you would most likely use to create segments in the virtual network are network security groups (NSGs). You could also use application security groups (ASGs) to simplify administration.
 
-:::image type="content" source="../media/single-azure-region.png" alt-text="Diagram of a segmented virtual network in a single region." border="false":::
-
 Here's how you might implement a single virtual network pattern:
-- One subnet (Subnet1) can contain your database workloads.
-- Another subnet (Subnet2) can contain your web workloads.
-- To govern subnet traffic, you can implement NSGs to specify Subnet1 can talk only with Subnet2 and Subnet2 can talk to the internet.
+
+- One subnet (Subnet 1) can contain your database workloads.
+- Another subnet (Subnet 2) can contain your web workloads.
+- To govern subnet traffic, you can implement NSGs to specify Subnet 1 can talk only with Subnet 2 and Subnet 2 can talk to the internet.
 - You can enforce segmentation by using an NVA from Azure Marketplace or Azure Firewall.
 - You can modify the pattern to support many workloads. You might carve out subnets that won't allow one workload to communicate to the backend of another workload.
 
@@ -33,8 +32,6 @@ The second pattern extends the single virtual network pattern to support multipl
 
 This pattern provides built-in segmentation through virtual networks because you must explicitly peer one virtual network to another for them to communicate. (Keep in mind that [Azure Virtual Network peering](/azure/virtual-network/virtual-network-peering-overview) connectivity isn't transitive.) You can add more segmentation within a virtual network in a manner similar to pattern 1 by using NSGs in the virtual networks.
 
-:::image type="content" source="../media/multiple-regions.png" alt-text="Diagram of Azure networks in multiple regions." border="false":::
-
 ## Pattern 3: Multiple virtual networks in hub-spoke topology
 
 The third pattern is a more advanced virtual network organization, where you choose a virtual network in a given region as the hub for all the other virtual networks in that region.
@@ -42,8 +39,6 @@ The third pattern is a more advanced virtual network organization, where you cho
 The connectivity between the hub virtual network and its spoke virtual networks is achieved by using Virtual Network peering. All traffic passes through the hub virtual network, and it can act as a gateway to other hubs in different regions. You set up your security posture at the hubs, so they get to segment and govern the traffic between the virtual networks in a scalable way.
 
 One benefit of this pattern is that as your network topology grows, the security posture overhead doesn't grow (except when you expand to new regions).
-
-:::image type="content" source="../media/hub-spoke.png" alt-text="Diagram of a hub and spoke topology in two Azure regions." border="false":::
 
 ## Compare patterns
 

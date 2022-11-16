@@ -8,23 +8,17 @@ An [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways) connect
 
 **Reference architecture**: [Hybrid network with Azure VPN Gateway](/azure/architecture/reference-architectures/hybrid-networking/vpn)
 
-:::image type="content" source="../media/virtual-private-network.png" alt-text="Diagram of an Azure virtual network that uses a VPN gateway to communicate with an on-premises network and Azure Stack." border="false":::
-
 ### Azure ExpressRoute
 
 [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) uses a private, dedicated connection through a third-party connectivity provider. This connection is private. Traffic doesn't go over the internet. The private connection extends your on-premises network into Azure.
 
 **Reference architecture**: [Hybrid network with Azure ExpressRoute](/azure/architecture/reference-architectures/hybrid-networking/expressroute)
 
-:::image type="content" source="../media/express-route.png" alt-text="Diagram of a hybrid network with Azure ExpressRoute." border="false":::
-
 ### Azure ExpressRoute with VPN failover
 
 Combine Azure ExpressRoute and Azure VPN Gateway to create a failover to a VPN connection if there's a loss of connectivity in the ExpressRoute circuit.
 
 **Reference architecture**: [Hybrid network with Azure ExpressRoute and VPN failover](/azure/architecture/reference-architectures/hybrid-networking/expressroute-vpn-failover)
-
-:::image type="content" source="../media/express-route-failover.png" alt-text="Diagram of a hybrid network with Azure ExpressRoute and VPN failover." border="false":::
 
 ### Azure Virtual WAN and hub-spoke networks
 
@@ -35,8 +29,6 @@ A hub-spoke architecture can be achieved via a customer-managed hub infrastructu
 Azure Virtual WAN is a networking service that provides optimized and automated branch connectivity to, and through, Azure. Azure regions serve as hubs that you can choose to connect your branches to. You can apply the Azure backbone to also connect branches and enjoy branch-to-VNet connectivity. Azure Virtual WAN brings together many Azure cloud connectivity services such as site-to-site VPN, ExpressRoute, point-to-site user VPN into a single operational interface. Connectivity to Azure VNets is established by using virtual network connections.
 
 **Reference architecture**: [Hub-spoke topology with Azure Virtual WAN](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
-
-:::image type="content" source="../media/hub-spoke-architecture.png" alt-text="Diagram of a hub and spoke architecture that uses Azure Virtual WAN." border="false":::
 
 The Azure Virtual WAN architecture includes the benefits of standard hub-spoke network topology and introduces several advantages:
 - Full meshed hub among Azure virtual networks
@@ -53,5 +45,5 @@ The following table compares the benefits and challenges of the network connecti
 | Compare | Azure VPN Gateway | Azure ExpressRoute | ExpressRoute + VPN failover | Azure Virtual WAN + hub-spoke | 
 | --- | --- | --- | --- | --- 
 | **Benefits** | - Simple to configure <br> - High bandwidth available (up to 10 Gbps depending on VPN Gateway SKU) | - High bandwidth available (up to 10 Gbps depending on connectivity provider) <br> - Supports dynamic scaling of bandwidth to help reduce costs during periods of lower demand (not supported by all connectivity providers) <br> - Enables direct organizational access to national clouds (depends on connectivity provider) | - High availability if ExpressRoute circuit fails (fallback connection on lower bandwidth network | - Reduced operational overhead by replacing existing hubs with fully managed service <br> - Cost savings by using managed service, which removes need for NVA <br> - Improved security via centrally managed secured hubs with Azure Firewall and Virtual WAN <br> - Separates concerns between central IT (SecOps, InfraOps) and workloads (DevOps) |
-| **Challenges** | - Requires on-premises VPN device | - Can be complex to set up <br> - Requires working with third-party connectivity provider <br> - Provider responsible for provisioning network connection <br> - Requires high-bandwidth routers on-premises | - Complex to configure <br> - Must set up both VPN connection and ExpressRoute circuit <br> - Requires redundant hardware (VPN appliances) <br> - Requires redundant Azure VPN Gateway connection for which you pay charges | TBD |
+| **Challenges** | - Requires on-premises VPN device | - Can be complex to set up <br> - Requires working with third-party connectivity provider <br> - Provider responsible for provisioning network connection <br> - Requires high-bandwidth routers on-premises | - Complex to configure <br> - Must set up both VPN connection and ExpressRoute circuit <br> - Requires redundant hardware (VPN appliances) <br> - Requires redundant Azure VPN Gateway connection for which you pay charges | **Note**: Azure Virtual WAN is designed to reduce previously listed connectivity challenges. |
 | **Scenarios** | _Hybrid apps with light traffic between on-premises hardware and the cloud_ <br><br> _Able to trade slightly extended latency for flexibility and processing power of the cloud_ | _Hybrid apps running large-scale, mission-critical workloads that require high degree of scalability_ | _Hybrid apps that require higher bandwidth of ExpressRoute and highly available network connectivity_ | _Connectivity among workloads requires central control and access to shared services_ <br><br> _Enterprise requires central control over security aspects like a firewall and segregated management for workloads in each spoke_ |
