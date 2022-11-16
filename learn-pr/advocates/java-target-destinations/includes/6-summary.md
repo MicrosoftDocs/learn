@@ -6,6 +6,6 @@ For more information about the Azure services described in this module, see:
 
 - [Azure App Service](https://azure.microsoft.com/services/app-service/)  
 - [Azure Functions](https://azure.microsoft.com/services/functions/)  
-- [Azure Spring Apps](https://azure.microsoft.com/services/spring-cloud/)  
+- [Azure Spring Apps](https://azure.microsoft.com/services/spring-apps/)  
 - [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/)  
 - [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines/)

@@ -5,4 +5,4 @@ In this module, you learned about the securing Java applications using Zero Trus
 For more information about the Azure services described in this module, see:
 
 - [Azure Key Vault](https://azure.microsoft.com/services/key-vault/)
-- [Azure Spring Apps](https://azure.microsoft.com/services/spring-cloud/)
+- [Azure Spring Apps](https://azure.microsoft.com/services/spring-apps/)
