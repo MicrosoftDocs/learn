@@ -2,7 +2,7 @@ For a successful migration, it's critical to connect on-premises corporate netwo
 
 Let's examine Azure services that provide connectivity between Azure resources, connectivity from an on-premises network to Azure resources, and branch to branch connectivity in Azure. We'll compare options for connecting an on-premises network to an Azure virtual network.
 
-### Things to know about Azure VPN Gateway
+### Azure VPN Gateway
 
 An [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways) connection is a type of virtual network gateway that sends encrypted traffic between an Azure virtual network and an on-premises location. The encrypted traffic goes over the public internet. There are different configurations available for VPN Gateway connections, such as, site-to-site, point-to-site, or virtual network-to-network.
 
@@ -10,7 +10,7 @@ An [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways) connect
 
 :::image type="content" source="../media/virtual-private-network.png" alt-text="Diagram of an Azure virtual network that uses a VPN gateway to communicate with an on-premises network and Azure Stack." border="false":::
 
-### Things to know about Azure ExpressRoute
+### Azure ExpressRoute
 
 [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) uses a private, dedicated connection through a third-party connectivity provider. This connection is private. Traffic doesn't go over the internet. The private connection extends your on-premises network into Azure.
 
@@ -18,7 +18,7 @@ An [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways) connect
 
 :::image type="content" source="../media/express-route.png" alt-text="Diagram of a hybrid network with Azure ExpressRoute." border="false":::
 
-### Things to know about ExpressRoute with VPN failover
+### Azure ExpressRoute with VPN failover
 
 Combine Azure ExpressRoute and Azure VPN Gateway to create a failover to a VPN connection if there's a loss of connectivity in the ExpressRoute circuit.
 
@@ -26,7 +26,7 @@ Combine Azure ExpressRoute and Azure VPN Gateway to create a failover to a VPN c
 
 :::image type="content" source="../media/express-route-failover.png" alt-text="Diagram of a hybrid network with Azure ExpressRoute and VPN failover." border="false":::
 
-### Things to know about Azure Virtual WAN and hub-spoke networks
+### Azure Virtual WAN and hub-spoke networks
 
 A hub-spoke network topology is a way to isolate workloads while sharing services such as identity and security. The hub is a virtual network in Azure that acts as a central point of connectivity to your on-premises network. Spokes are virtual networks that peer with the hub. Shared services are deployed in the hub, while individual workloads are deployed as spokes.
 

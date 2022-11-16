@@ -4,7 +4,7 @@ Around the globe, IPv4 address ranges are in short supply. Trying to purchase an
 
 Azure [routes communication traffic](/azure/virtual-network/virtual-networks-udr-overview) between your on-premises internal resources and external internet resources by using _route tables_. When you create a virtual network, Azure automatically creates a routing table for each subnet in the network. A routing table contains many different types of routes, including system, service endpoints, and subnet defaults. The table also has route entries for the Border Gateway Protocol (BGP), user-defined routes (UDRs), and routes from other virtual networks.
 
-### Things to know about Azure Virtual Network NAT
+### Azure Virtual Network NAT
 
 [Azure Virtual Network NAT](/azure/virtual-network/nat-gateway/nat-overview) simplifies outbound-only internet connectivity for virtual networks. When you configure this service on a subnet, all outbound connectivity uses your specified static public IP addresses. Outbound connectivity is possible without load balancer or public IP addresses directly attached to virtual machines. Virtual Network NAT is fully managed and highly resilient. 
 
@@ -12,10 +12,10 @@ Azure [routes communication traffic](/azure/virtual-network/virtual-networks-udr
 
 #### Business scenarios
 
-- Support on-demand outbound-to-internet connectivity without pre-allocation.
-- Configure one or more static public IP addresses for scale.
-- Enable configurable idle timeout.
-- Allow TCP reset for unrecognized connections.
+- Support on-demand outbound-to-internet connectivity without pre-allocation
+- Configure one or more static public IP addresses for scale
+- Enable configurable idle timeout
+- Allow TCP reset for unrecognized connections
 
 ### Things to know about routing tables and routes
 
@@ -33,24 +33,21 @@ Let's take a closer look at the characteristics of routing tables and the route 
 
 - **Routing order**: When you have competing entries in a routing table, Azure selects the next hop based on the longest prefix match similar to traditional routers. If there are multiple next hop entries with the same address prefix, Azure selects routes in a specific order: UDRs, then BGP routes, and then system routes.
 
-#### Business scenarios
+### Things to consider when using routing tables and routes
 
-Consider the following scenarios for working with routes.
+There are many networking scenarios where defining and overriding routes can be an advantage. Review the following suggestions and consider the routes required to support the Tailwind Traders solution.
 
-**System routes**
+- **Consider system routes**. Define system routes for specific locations and scenarios that you don't expect to modify.
+   - Route traffic between virtual machines in the same virtual network or between peered virtual networks
+   - Support communication between virtual machines by using a virtual network-to-network VPN
+   - Enable site-to-site communication through Azure ExpressRoute or an Azure VPN gateway
 
-- Route traffic between virtual machines in the same virtual network or between peered virtual networks.
-- Support communication between virtual machines by using a virtual network-to-network VPN.
-- Enable site-to-site communication through Azure ExpressRoute or an Azure VPN gateway.
+- **Consider user defined routes**. Create custom UDRs to override Azure's default system routes, or to add more routes to a subnet's route table.
+   - Enable filtering of internet traffic by using Azure Firewall or forced tunneling
+   - Flow traffic between subnets through an NVA
+   - Define routes to specify how packets should be routed in a virtual network
+   - Define routes that control network traffic and specify the next hop in the traffic flow
 
-**User defined routes**
-
-- Enable filtering of internet traffic by using Azure Firewall or forced tunneling.
-- Flow traffic between subnets through an NVA.
-- Define routes to specify how packets should be routed in a virtual network.
-- Define routes that control network traffic and specify the next hop in the traffic flow. 
-
-**Overriding routes**
-
-- Cause traffic between subnets to flow through an NVA. Learn how to [configure route tables to force traffic through an NVA](/azure/virtual-network/tutorial-create-route-table-portal).   
-- Force all internet-bound traffic through an NVA, or on-premises, through an Azure VPN gateway. Forcing internet traffic on-premises for inspection and logging is often referred to as _forced tunneling_. Learn how to [configure forced tunneling](/azure/vpn-gateway/vpn-gateway-forced-tunneling-rm).
+- **Consider overriding routes**. Plan for route overrides to control traffic flow.
+   - Flow through NVA: [Configure route tables to force traffic between subnets to flow through an NVA](/azure/virtual-network/tutorial-create-route-table-portal)
+   - Forced tunneling: [Force all internet-bound traffic through an NVA, or on-premises, through an Azure VPN gateway](/azure/vpn-gateway/vpn-gateway-forced-tunneling-rm)

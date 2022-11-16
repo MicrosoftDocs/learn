@@ -7,13 +7,9 @@ Tailwind Traders is currently running its workloads on-premises in its datacente
 As you plan your networking solution strategy, there are several workload requirements you need to investigate. 
 
 - Identify your resource names and establish naming conventions.
-
 - Determine your Azure regions and resource deployment.
-
 - Calculate how many subscriptions are required.
-
 - Review segmentation options for your virtual networks and subnets.
-
 - Design your application security and scheme for filtering network traffic.
 
 ### Name resources
