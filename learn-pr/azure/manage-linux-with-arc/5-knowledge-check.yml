@@ -49,26 +49,14 @@ quiz:
       isCorrect: true
       explanation: "Correct! Once a Linux resource is fully Arc enabled, you need to install the SSH extension on your workstation and then run a simple command to enable the SSH connection."
 
-  - content: ""
+  - content: "What Azure tools can be used specifically to help you manage large numbers of Linux machines in Azure Arc?"
     choices:
-    - content: ""
+    - content: "Azure Policy and Azure Automanage"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct! Once your Linux machines are onboarded to Azure Arc, you can use tools like Azure Policy and Azure Automanage to enforce standards and simplify ongoing management."
+    - content: "Microsoft Sentinel and Microsoft Defender"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "This is incorrect. Although Microsoft Sentinel and Microsoft Defender both work with Arc-enabled Linux machines, they are tools specifically designed for security enhancement."
+    - content: "Arc SSH and Azure Active Directory"
       isCorrect: false
-      explanation: ""
-
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "This is incorrect. Although Arc SSH and Azure Active directory both work with Arc-enabled Linux machines, their primary purpose is security and log-in related."
