@@ -37,7 +37,7 @@ When we program with calls to Azure Maps, we can add our own layers. An obvious 
 
 ### Route finding
 
-Routing information is available for nearly all countries in the world. However, routing with current traffic information is only available for a few, and routing specifically for trucks, fewer still. In North America, for the USA, Canada, and Mexico, all levels of routing are available.
+Routing information is available for nearly all countries/regions in the world. However, routing with current traffic information is only available for a few, and routing specifically for trucks, fewer still. In North America, for the USA, Canada, and Mexico, all levels of routing are available.
 
 To calculate a traffic route from A to B obviously takes detailed data: every junction, one-way street, bridge clearance, road gradient, needs to be known. In addition, accurate information is needed on the vehicle. This information includes the physical: length, width, height, weight. Also, engine efficiency data: fuel consumption, acceleration efficiency, uphill efficiency, and so on. Different engine data is needed for an electric vehicle.
 

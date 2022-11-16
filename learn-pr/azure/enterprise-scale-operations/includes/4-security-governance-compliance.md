@@ -12,9 +12,9 @@ Azure supports various encryption models, including:
 
 With client-side encryption, you can manage and store keys on-premises or in another secure location. An organization should define its encryption requirements for the services it uses, and enforce encryption configurations via Azure Policy.
 
-Without proper protection and management of the keys, encryption is useless. Key Vault is the recommended enterprise-scale solution for managing and controlling access to encryption keys used by cloud services. Permissions to access keys can be assigned to services or users via Azure Active Directory (Azure AD) accounts.
+Without proper key protection and key management, encryption is useless. Key Vault is the recommended enterprise-scale solution for managing and controlling access to encryption keys used by cloud services. You can assign permissions to access keys to services or users via Azure Active Directory (Azure AD) accounts.
 
-Key Vault relieves organizations of the need to configure, patch, and maintain hardware security modules (HSMs) and key management software.
+Key Vault relieves organizations of the need to configure, patch, and maintain hardware security modules (HSMs) and key-management software.
 
 ## Governance
 
