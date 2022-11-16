@@ -4,12 +4,16 @@ After defining environment states, control actions, and simulator configurations
 
 First, click on **Train** in the Bonsai UI.
 
+![The screenshot shows how to train brain.](../media/train-brain.png)
+
 When you begin training, a few things happen automatically:
 
 - Bonsai UI moves you to the Train tab and replaces the editor panel with a data panel.
 - A set of virtual, managed simulations are initialized for episode training.
 - The training performance chart begins populating with training data. Depending on the simulation running time, it might take time to display the initial performance. Don't worry if your training graph is blank for some time. For Moab, the starting time can take up to 5-10 minutes.
 - Automatic assessments begin populating the Assessments list. Assessments are found under the Brain graph. Automatic assessments will be accessible for each champion found throughout training. Champions are represented by the checkpoints displayed on the Training performance chart, and they signify evaluation points where the new brain policy was found to beat all previous policies.
+
+![The screenshot shows the training performance chart, brain graph,  simulator and assessment list.]
 
 ### The brain graph
 
@@ -22,6 +26,8 @@ The brain graph displays valuable information about the concept being trained an
 - the number of simulations running in parallel
 - the training speed, measured in iterations per second
 
+![The screenshot shows the brain graph.](../media/brain-graph.png)
+
 ### The training performance chart
 
 The chart at the top of the data panel displays the ***Goal Satisfaction Plot*** by default. The chart shows the average performance of the Brain for each automatic assessment (test episode). These assessments are run regularly during training. Automatic assessments evaluate brain performance without the exploratory noise added to actions during training. Exploration allows the Brain to try and test new control policies across the entire state-action space. During the assessment, we want to evaluate the exploitation of the current policy without exploration.
@@ -32,19 +38,29 @@ The overall goal satisfaction line (displayed in blue color) is the average goal
 
 See the graph below, which displays the goal satisfaction for a completed training session. Goal satisfaction graphs start empty, getting evaluation points added once new automatic assessments are completed. Each assessment shown in the training performance represents a champion. As stated earlier, champions are checkpoints where the brain policy was found to be the most effective up to that point.
 
+![The screenshot shows the goal satisfaction.](../media/goal-satisfaction.png)
+
 Reaching 100% goal satisfaction is not the end of the training session. For goals such as maximizing and minimizing, the teaching engine will continue to encourage the brain to move far beyond the desired threshold toward more robust and better performing policies. This continuous improvement is the so-called goal robustness of the brain.
 
 Hover over the “Goal Satisfaction” tag (located on the left of your Goal Satisfaction plot) to switch to the ***Goal Robustness Plot***. This chart shows how robust the learned policy is, beyond the 100% goal satisfaction limit. Goal robustness is a better criterion to follow brain training once you consistently meet 100% goal satisfaction for some of your objectives.
 
 Goal robustness should always be above zero for passing policies. The closer to a value of 1, the stronger the policy found for that custom assessment.
 
+![The screenshot shows the goal robustness.](../media/robustness.png)
+
 Note that **Goal Satisfaction** and **Goal Robustness** are good metrics to evaluate success for brains that have similar goal definitions. Yet, the moment that you switch a threshold for one of the goal objectives, or if you add or remove another goal objective, you will not be able to use these metrics for comparison. For that reason, the Product team embedded a different set of metrics that allow for more consistent evaluation.
 
 The first metric that is key for assessment of AVOID goals (no matter how many you have them) is the Episode iterations, which shows the number of iterations in average across all assessment episodes.
 
+![The screenshot shows the brain performance with episode iterations.](../media/brain-performance.png)
+
 If your average is lower than your Episode Iteration Limit (EIL) — 1,000 by default —, your episodes are being cut early due to hitting any of the AVOID conditions. For Moab, our EIL is 250 iterations, thus we know our brain is effectively controlling the ball without having the ball drop off the plate.
 
 The Drive objective has 2 additional metrics of interest to us, that are unfortunately dependent on the goal threshold: % (percentage) of iterations in target region; as well as Max iterations to reach target.
+
+![The screenshot shows the brain performance with drive objective.](../media/brain-performance-2.png)
+
+![The screenshot shows the brain performance.](../media/brain-performance-3.png)
 
 The Drive goal does depend on the threshold defined, but the metrics for MINIMIZE & MAXIMIZE do not. At the very beginning of a training session, you might want to start with MINIMIZE or MAXIMIZE to be able to compare more absolutely across brain versions. The 2 metrics that are useful on MINIMIZE & MAXIMIZE goal objectives are the following:
 
@@ -55,7 +71,9 @@ The Drive goal does depend on the threshold defined, but the metrics for MINIMIZ
 
 ### Simulation visualization
 
-The Moab sample simulation includes a live visualization of the Moab simulation below the goal satisfaction plot. 
+The Moab sample simulation includes a live visualization of the Moab simulation below the goal satisfaction plot.
+
+![The screenshot shows the virtual simulator.](../media/virtual-simulator.png)
 
 In addition to the 3D ball and hardware, the visualization displays:
 
