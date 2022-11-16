@@ -10,7 +10,7 @@ Azure Cosmos DB offers five well-defined levels. From strongest to weakest, the 
 
 Each level provides availability and performance tradeoffs. The following image shows the different consistency levels as a spectrum.
 
-:::image type="content" source="../media/five-consistency-levels.png" alt-text="Image showing data consistency as a spectrum":::
+:::image type="content" source="../media/five-consistency-levels.png" alt-text="Image showing data consistency as a spectrum.":::
 
 The consistency levels are region-agnostic and are guaranteed for all operations regardless of the region from which the reads and writes are served, the number of regions associated with your Azure Cosmos DB account, or whether your account is configured with a single or multiple write regions.
 
