@@ -35,7 +35,7 @@ units:
 - learn.wsl-introduction.3-install-and-setup
 - learn.wsl-introduction.4-understanding-workflow
 - learn.wsl-introduction.5-run-basic-commands
-- learn.wsl-introduction.knowledge-check
-- learn.wsl-introduction.summary
+- learn.wsl-introduction.6-knowledge-check
+- learn.wsl-introduction.7-summary
 badge:
   uid: learn.wsl-introduction.badge
