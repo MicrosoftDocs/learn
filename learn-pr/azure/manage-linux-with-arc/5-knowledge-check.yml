@@ -19,7 +19,8 @@ quiz:
       isCorrect: false
       explanation: "This is incorrect. Azure Arc can be used to manage both physical and virtual Linux machines out of Azure."
     - content: "Physical machines."
-      isCorrect: false.      explanation: "This is incorrect. Azure Arc can be used to manage both physical and virtual Linux machines out of Azure."
+      isCorrect: false
+      explanation: "This is incorrect. Azure Arc can be used to manage both physical and virtual Linux machines out of Azure."
     - content: "Both physical and virtual machines."
       isCorrect: true
       explanation: "Correct! Azure Arc can be used to manage both physical and virtual Linux machines out of Azure."
