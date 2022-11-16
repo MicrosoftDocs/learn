@@ -6,7 +6,7 @@ The first thing you want to do is look at the actual data to learn about which c
 
 1. Run the following query to take 50 arbitrary rows of data.
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwXBywmAMBAE0HuqmA7ixRLEAqxgIOOHxCwkqyJYvO/FiFkOYlNVY8GRRNiKZ6fjtash0YliljvKkRUWt3ZOt6r38MGZhXH4AQ7MP0VIAAAA" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwXBywmAMBAE0HuqmA7ixRLEAqxgIOOHxCwkqyJYvO/FiFkOYlNVY8GRRNiKZ6fjtash0YliljvKkRUWt3ZOt6r38MGZhXH4AQ7MP0VIAAAA" target="_blank">Run the query</a>
     
     ```kusto
     StormEvents
