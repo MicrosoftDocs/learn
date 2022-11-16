@@ -56,9 +56,9 @@ The following table shows how the _Actions_ or _NotActions_ permissions are used
 
 | Role&nbsp;name| Description | Actions&nbsp;permissions | NotActions&nbsp;permissions |
 | --- | --- | --- | --- |
-| _Owner_ | Allow all actions | `\*` | n/a |
-| _Contributor_ | Allow all actions, except write or delete role assignment | `\*` | - `Microsoft.Authorization/\*/Delete` <br> - `Microsoft.Authorization/\*/Write` <br> - `Microsoft.Authorization/elevateAccess/Action` |
-| _Reader_ | Allow all read actions | `\*/read` | n/a |
+| _Owner_ | Allow all actions | `*` | n/a |
+| _Contributor_ | Allow all actions, except write or delete role assignment | `*` | - `Microsoft.Authorization/*/Delete` <br> - `Microsoft.Authorization/*/Write` <br> - `Microsoft.Authorization/elevateAccess/Action` |
+| _Reader_ | Allow all read actions | `/*/read` | n/a |
 
 ### Role scopes
 
