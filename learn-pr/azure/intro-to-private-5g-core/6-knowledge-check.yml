@@ -15,29 +15,29 @@ quiz:
   questions:
   - content: "In which of the following situations should Azure Private 5G Core be used?"
     choices:
-    - content: "Artificial intelligence support in IoT devices."
+    - content: "Artificial intelligence functionalities in IoT devices."
       isCorrect: false
       explanation: "Try again. Azure Private 5G Core doesn't provide artificial intelligence functionalities for IoT devices."
-    - content: "Mobility and connectivity for disaster recovery operatives."
+    - content: "Mobility and connectivity at the customer edge."
       isCorrect: true
-      explanation: "Correct. To recover from disaster and respond to possible emergencies, recovery operatives typically require local mobile network connectivity and fast local data processing. Azure Private 5G Core provides functionalities that satisfy these requirements."
-    - content: "Virtual machine provisioning in private networks."
+      explanation: "Correct. Azure Private 5G Core provides local high-speed access at the customer location to reduce latency, ensure connectivity of devices even during network disruptions, and ensure data is locally processed and secured."
+    - content: "Deploying virtual machines in private networks."
       isCorrect: false
-      explanation: "Try again. Enterprises can use Azure Private 5G Core to deploy private mobile networks but can't use it to provision virtual machines in the network."
+      explanation: "Try again. Enterprises can use Azure Private 5G Core to deploy a private mobile network but not to provision other virtual machines in the network."
   - content: "Which of the following features does Azure Private 5G Core provide?"
     choices:
-    - content: "Docker-compatible containers to run business logic."
+    - content: "A docker-compatible container environment to run business logic."
       isCorrect: false
-      explanation: "Try again. Azure Private 5G Core can work together with applications that run business logic but doesn't provide containers for running business logic itself."
-    - content: "5G network functions"
+      explanation: "Try again. Azure Private 5G Core is container based and can work together with applications that run business logic. However, it doesn't provide the container environment itself to run business logic."
+    - content: "3GPP defined 5G network functions."
       isCorrect: true
-      explanation: "Correct. The packet core instance that Azure Private 5G Core deploys at each site is a complete set of 5G network functions."
+      explanation: "Correct. The packet core instance that Azure Private 5G Core deploys at each site is a set of 5G network functions."
     - content: "Threat protection for IoT devices."
       isCorrect: false
-      explanation: "Try again. Enterprises can use Azure Private 5G Core to deploy private mobile network that hosts IoT devices. However, Azure Private 5G Core doesn't provide threat protection for each IoT device."
-  - content: "How does Azure Private 5G Core provide integration with Azure private multi-access edge compute (MEC) partners?"
+      explanation: "Try again. Azure Private 5G Core can be used to connect IoT devices. However, it doesn't provide a threat protection service for each IoT device."
+  - content: "How does Azure Private 5G Core provide integration with RAN?"
     choices:
-    - content: "It exposes the N2 and N3 interfaces for the 5G control plane."
+    - content: "It exposes a standards-based N2 and N3 interfaces for the 5G control plane."
       isCorrect: true
       explanation: "Correct. Azure Private 5G Core complies with 3GPP technical specifications for the N2 and N3 interface, which allows it to be integrated with a wide range of RAN models."
     - content: "It uses a fully managed event-routing service with a publish-subscribe model."
@@ -45,4 +45,4 @@ quiz:
       explanation: "Try again. Azure Private 5G Core doesn't use any event-routing service for integration."
     - content: "It shares data with other applications through a central database server."
       isCorrect: false
-      explanation: "Try again. Azure Private 5G Core doesn't use any database server to share data."
+      explanation: "Try again. Azure Private 5G Core doesn't use a database server to share data."
