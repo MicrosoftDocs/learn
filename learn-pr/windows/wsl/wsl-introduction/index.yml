@@ -31,7 +31,7 @@ subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribu
   - digital-application-innovation
 units:
 - learn.wsl-introduction.1-introduction
-- learn.wsl-introduction.2-is-wsl-for-me
+- learn.wsl-introduction.2-what-is-wsl
 - learn.wsl-introduction.3-install-and-setup
 - learn.wsl-introduction.4-understanding-workflow
 - learn.wsl-introduction.5-run-basic-commands
