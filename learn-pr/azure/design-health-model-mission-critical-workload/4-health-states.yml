@@ -5,8 +5,8 @@ metadata:
   title: Health states, metrics and threshold
   description: Health states, metrics and threshold.
   ms.date: 11/11/2022
-  author: ttorble #TBD
-  ms.author: authorMSFTalias #TBD
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure #TBD
 durationInMinutes: 5 #TBD

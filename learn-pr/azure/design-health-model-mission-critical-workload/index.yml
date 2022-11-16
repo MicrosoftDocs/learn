@@ -4,8 +4,8 @@ metadata:
   title: 'Design a health model for your mission-critical workload'
   description: Improve your observability practices by defining a health model. The model gives you the ability to quickly identify and troubleshoot issues in your system..
   ms.date: 11/11/2022
-  author: ttorble #TBD
-  ms.author: authorMSFTalias #TBD
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure #TBD
 title: 'Design a health model for your mission-critical workload'
