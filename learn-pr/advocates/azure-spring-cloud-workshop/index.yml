@@ -2,7 +2,7 @@
 uid: learn.azure-spring-cloud-workshop
 metadata:
   title: Deploy Spring microservices to Azure
-  description: In this workshop, you'll go through tasks to deploy Spring Boot microservices to Azure Spring Cloud (ASC).
+  description: In this workshop, you'll go through tasks to deploy Spring Boot microservices to Azure Spring Apps (ASA).
   author: judubois
   ms.author: judubois
   ms.date: 08/19/2022
@@ -11,10 +11,10 @@ metadata:
   ms.custom: team=cloud_advocates
   ms.contributors: judubois-03042021
 title: Deploy Spring microservices to Azure
-summary: In this workshop, you'll go through tasks to deploy Spring Boot microservices to Azure Spring Cloud (ASC).
+summary: In this workshop, you'll go through tasks to deploy Spring Boot microservices to Azure Spring Apps (ASA).
 abstract: | 
  In this module, you will:
-  - Create a new Azure Spring Cloud cluster
+  - Create a new Azure Spring Apps cluster
   - Configure a Spring Cloud Config Server
   - Build and deploy a Spring Boot microservice
   - Create a Spring Cloud Gateway to access your microservice
