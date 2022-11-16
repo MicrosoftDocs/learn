@@ -52,9 +52,10 @@ Azure Private 5G Core supports authentication methods like:
 
 The packet core instance performs ciphering and integrity protection of 5G non-access stratum (NAS). During UE registration, the UE includes its security capabilities for 5G NAS with 128-bit keys.
 
-<!-- GA features to be added -->
-<!-- ## Multiple DNs -->
-Multi-DNN and how it can be used to access services - local ISV applications, UE to UE traffic, and cloud based destinations.
+## Network slicing and multiple data networks (DNs) support
 
-<!-- ## Multiple slices -->
-<!-- Core-focused features -->
+Azure Private 5G Core allows you to divide a site in a private mobile network into multiple network slices. Each slice is a logical end-to-end network within the site. To support different requirements of different UEs in the network, you can configure unique SIM policies for each slice, and then add the UEs to relevant network slices.
+
+Additionally, the packet core instance at each site can connect to multiple DNs. You can use different DNs for different applications. Each type of UEs can connect to a dedicated DN. Both 5G and 4G network functions in Azure Private 5G Core support multiple DNs.
+
+Azure Private 5G Core supports up to three DNs and eight network slices per site. You can configure UEs in a network slice to connect to different DNs.
