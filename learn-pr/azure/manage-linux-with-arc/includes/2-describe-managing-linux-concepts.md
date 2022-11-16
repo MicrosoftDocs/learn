@@ -1,4 +1,4 @@
-Azure Arc lets you manage physical and virtual Linux machines hosted outside of Azure, on your corporate network, or other cloud provider. Organizations like Contoso can manage their Linux resources with Azure just as they do their Arc-enabled Windows machines. Linux machines onboarded to Azure Arc enjoy the same capabilties as native Azure machines, including standard Azure constructs such as Azure policy and applying tags.
+Azure Arc lets you manage physical and virtual Linux machines hosted outside of Azure, on your corporate network, or other cloud provider. Organizations like Contoso can manage their Linux resources with Azure just as they do their Arc-enabled Windows machines. Linux machines onboarded to Azure Arc enjoy the same capabilities as native Azure machines, including standard Azure constructs such as Azure policy and applying tags.
 
 Once your Linux machines are onboarded to Azure Arc, you can:
 
