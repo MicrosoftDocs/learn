@@ -99,12 +99,12 @@ For more information content expiration, see the Further Reading section of the 
 
 ## Geo-filtering
 
-Geo-filtering enables you to allow or block content in specific countries, based on the country code. In the Azure CDN Standard for Microsoft Tier, you can only allow or block the entire site. With the Verizon and Akamai tiers, you can also set up restrictions on directory paths. For more information, see the further reading section in the Summary unit.
+Geo-filtering enables you to allow or block content in specific countries/regions, based on the country code. In the Azure CDN Standard for Microsoft Tier, you can only allow or block the entire site. With the Verizon and Akamai tiers, you can also set up restrictions on directory paths. For more information, see the further reading section in the Summary unit.
 
-To configure geo-filtering, in the properties of the respective endpoint, select Geo-filtering. On the Geo-filtering panel, select either allow or block, then in the Country codes list, select which countries you want to allow or block.
+To configure geo-filtering, in the properties of the respective endpoint, select Geo-filtering. On the Geo-filtering panel, select either allow or block, then in the Country codes list, select which countries/regions you want to allow or block.
 
 :::image type="content" source="../media/5-geo-filtering.png" alt-text="Screenshot of the geo filtering page for a CDN profile.":::
 
-The **Allow** setting is more restrictive than Block. Allow allows access only for the selected countries. The logic for Block is to allow access from all countries, except for those countries blocked.
+The **Allow** setting is more restrictive than Block. Allow allows access only for the selected countries/regions. The logic for Block is to allow access from all countries/regions, except for those countries/regions blocked.
 
 For more information on geo-filtering, see the Further Reading section in the Summary.

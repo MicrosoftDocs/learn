@@ -1,4 +1,4 @@
-Healthcare organizations store personal and potentially sensitive customer data. Financial institutions store account numbers, balances, and transaction history. Retailers store purchase history, account information, and demographic details of customers. A security incident might expose this sensitive data, which might cause personal embarrassment or financial harm. How do you ensure the integrity of their data and ensure that your systems are secure?
+Healthcare organizations store personal and potentially sensitive customer data. Financial institutions store account numbers, balances, and transaction histories. Retailers store purchase history, account information, and demographic details of customers. A security incident might expose this sensitive data, which might cause personal embarrassment or financial harm. How do you ensure the integrity of their data and ensure that your systems are secure?
 
 In this unit, you'll learn about the important elements of the security pillar.
 
@@ -8,13 +8,13 @@ Security is ultimately about protecting the data that your organization uses, st
 
 Your data might be subject to additional legal and regulatory requirements, depending on where you're located, the type of data you're storing, or the industry in which your application operates.
 
-For instance, in the healthcare industry in the United States, there's a law called the Health Insurance Portability and Accountability Act (HIPAA). In the financial industry, the Payment Card Industry Data Security Standard is concerned with the handling of credit card data. Organizations that store data that's in scope for these laws and standards are required to ensure that certain safeguards are in place for the protection of that data. In Europe, the General Data Protection Regulation (GDPR) lays out the rules of how personal data is protected, and defines individuals' rights related to stored data. Some countries require that certain types of data do not leave their borders.
+For instance, in the healthcare industry in the United States, there's a law called the Health Insurance Portability and Accountability Act (HIPAA). In the financial industry, the Payment Card Industry Data Security Standard is concerned with the handling of credit card data. Organizations that store data that's in scope for these laws and standards are required to ensure that certain safeguards are in place for the protection of that data. In Europe, the General Data Protection Regulation (GDPR) lays out the rules of how personal data is protected, and defines individuals' rights related to stored data. Some countries/regions require that certain types of data do not leave their borders.
 
 When a security breach occurs, there can be substantial impacts to the finances and reputation of both organizations and customers. This breaks down the trust that customers are willing to instill in your organization, and can affect the organization's long-term health.
 
 ### Defense in depth
 
-A multilayered approach to securing your environment will increase the security posture of your environment. Commonly known as *defense in depth*, we can break down the layers as follows:
+A multilayered approach to securing your environment will increase its security posture. Commonly known as *defense in depth*, we can break down the layers as follows:
 
 - Data
 - Applications
@@ -28,13 +28,13 @@ Each layer focuses on a different area where attacks can happen, and creates a d
 
 Addressing security in layers increases the work an attacker must do to gain access to your systems and data. Each layer will have different security controls, technologies, and capabilities that will apply. When you're identifying the protections to put in place, cost is often of concern. You'll need to balance cost with business requirements and overall risk to the business.
 
-![An illustration that shows defense in depth, with data at the center. The rings of security around data are: application, compute, network, perimeter, identity and access, and physical security.](../media/security-layers.png)
+![An illustration that shows defense in depth with data at the center. The rings of security around data are: application, compute, network, perimeter, identity and access, and physical security.](../media/security-layers.png)
 
 No single security system, control, or technology will fully protect your architecture. Security is more than just technology; it's also about people and processes. Creating an environment that looks holistically at security and makes it a requirement by default will help ensure that your organization is as secure as possible.
 
 ### Protect from common attacks
 
-At each layer, there are some common attacks that you'll want to protect against. The following list isn't all-inclusive, but it can give you an idea of how each layer can be attacked and what types of protections you might need.
+At each layer, there are some common attacks against which you'll want to protect. The following list isn't all-inclusive, but it can give you an idea of how each layer can be attacked and what types of protections you might need.
 
 - **Data layer**: Exposing an encryption key or using weak encryption can leave your data vulnerable if unauthorized access occurs.
 

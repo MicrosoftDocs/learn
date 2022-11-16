@@ -8,7 +8,7 @@ As an Azure Administrator, you need to detect these problems in real time. You n
 
 ## Skills measured
 
-Configuring alerts and actions is part of the [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
+Configuring alerts and actions is part of the [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
 
 Monitor and back up Azure resources (10–15%)
 

@@ -1,6 +1,6 @@
 Azure Database Migration Service enables online and offline migrations from multiple database sources to Azure data platforms, all with minimal downtime. The service uses the Microsoft Data Migration Assistant to generate assessment reports. The Database Migration Service then performs the identified tasks.
 
-During the early stages of the migration project, the IT Director requests that the current SQL Server cluster be included. The cluster hosts several line-of-business application databases.
+During the early stages of the migration project, the IT Director requests that the current SQL Server cluster is included. The cluster hosts several line-of-business application databases.
 
 In this unit, you'll see how to use the Data Migration Assistant and Database Migration Service together. They provide a way to move on-premises SQL Server databases efficiently to Azure.
 
@@ -17,18 +17,18 @@ Azure Database Migration Service has two pricing tiers:
 
 You can migrate your relational database to a number of different destinations in Azure:
 
-- **Single Azure SQL Database instance**: A fully managed single SQL database.
-- **Azure SQL Database managed instance**: 100% compatible with SQL Server Enterprise Edition Database Engine, but missing some minor SQL Server features.
-- **SQL Server on Azure Virtual Machines**: An infrastructure-as-a-service (IaaS) offering that runs a full version of SQL Server and supports all the features of SQL Server.
-- **Azure Database for MySQL**: An Azure database service based on the MySQL Community Edition, versions 5.6, 5.7, and 8.0.
-- **Azure Database for PostgresSQL**: An Azure database service based on the community version of the PostgreSQL database engine.
-- **Azure Cosmos DB**: A globally distributed, multi-model, fully managed database service.
+- **Single Azure SQL Database instance**: A fully managed single SQL database
+- **Azure SQL Database managed instance**: 100% compatible with SQL Server Enterprise Edition Database Engine, but missing some minor SQL Server features
+- **SQL Server on Azure Virtual Machines**: An infrastructure-as-a-service (IaaS) offering that runs a full version of SQL Server and supports all the features of SQL Server
+- **Azure Database for MySQL**: An Azure database service based on the MySQL Community Edition, versions 5.6, 5.7, and 8.0
+- **Azure Database for PostgresSQL**: An Azure database service based on the community version of the PostgreSQL database engine
+- **Azure Cosmos DB**: A globally distributed, multi-model, fully managed database service
 
 Your company's database needs are simple, so the fastest and cheapest option is to migrate your database workloads to a single Azure SQL Database instance.
 
 ## Overview of database migrations
 
-![Database migrations.](../media/5-database-migration.svg)
+![Diagram showing database migrations.](../media/5-database-migration.svg)
 
 The Data Migration Assistant will guide you through the process of migrating your database. You'll take your existing relational databases, split out the database schemas, and then recreate them in the destination Azure SQL Database instance. With the new schema in place, the data for each database can then be copied to Azure. Finally, you'll check that the new databases are performing as expected.
 
@@ -40,26 +40,26 @@ Both offline and online migrations have the same prerequisite tasks:
 - **Create an Azure Virtual Network instance**: This virtual network is for Azure Database Migration Service when it uses the Azure Resource Manager deployment model. The virtual network provides connectivity to the on-premises environment.
 - **Configure the network security group**: The security group associated with the new virtual network should allow inbound connectivity to the service via ports 443, 53, 9354, 445, and 12000.
 - **Configure the Windows Firewall**: You must configure the firewall to allow the Database Migration Service to connect over port 1433. You can also open port 1434 if multiple named instances on dynamic ports exist on the same server.
-- **Configure credentials**: 
+- **Configure credentials**:
   - Add CONTROL SERVER permissions to the credentials used to connect to the source SQL Server instance.
   - Add CONTROL DATABASE permissions to the credentials used to connect to the target Azure SQL Database instance.
-- **Provision your target database in Azure**: Create the database that will be the target of the migration. Size it appropriately for the migrated workload.
+- **Provision your target database in Azure**: Create the database that'll be the target of the migration. Size it appropriately for the migrated workload.
 
 ### Assess the on-premises databases
 
-Ensure that all the communication ports are open, and check the connectivity between the source and destination servers before the migration tasks begin. Using the Data Migration Assistant, create an **Assessment** project, give the project a name, and select the source and target servers. Provide the connection details for the source server, including credentials with permission to access it. On the database selection screen, choose the database you want to migrate.
+Ensure that all the communication ports are open and check the connectivity between the source and destination servers before the migration tasks begin. Using the Data Migration Assistant, create an **Assessment** project, give the project a name, and select the source and target servers. Provide the connection details for the source server, including credentials with permission to access it. On the database selection screen, choose the database you want to migrate.
 
 The assessment will generate a report on completion, including a set of recommendations and alternative approaches that could be taken for the migration. You'll see any compatibility issues between the source and destination databases that could cause the migration to fail. Address the issues in the report, running it as many times as you need to make sure that the issues have been fixed.
 
 A Data Migration Assistant report looks like this:
 
-:::image type="content" source="../media/5-dma-assessment.png" alt-text="Sample DMA Report." loc-scope="azure-database-migration"::: <!-- no-loc -->
+:::image type="content" source="../media/5-dma-assessment.png" alt-text="Screenshot of a sample Data Migration Assistant Report." loc-scope="azure-database-migration"::: <!-- no-loc -->
 
 ### Migrate the schema by using the Data Migration Assistant
 
 Each database has a schema that represents its entire structure. The schema defines the rules for how the data in it is organized and the relationships between data elements. You'll migrate the schema before you migrate all the data in the database. This creates an empty structure on the new Azure SQL database, and that structure matches that of the on-premises source database. Migrating the schema also validates the connectivity before you do the full data migration.
 
-To use the Data Migration Assistant to migrate the schema, create a new **Migration** project. Select your on-premises SQL Server instance as the source server, and your Azure SQL Database instance as the target server. Set the scope of the migration to **Schema Only**. After you connect to the source database, choose the schema objects to deploy to the new SQL database. The Data Migration Assistant will create a script to take the required actions. Then, select **Deploy Schema** to run the script. When the script is complete, check the target server to make sure the database has been configured correctly.
+To use the Data Migration Assistant to migrate the schema, create a new **Migration** project. Select your on-premises SQL Server instance as the source server and your Azure SQL Database instance as the target server. Set the scope of the migration to **Schema Only**. After you connect to the source database, choose the schema objects to deploy to the new SQL database. The Data Migration Assistant will create a script to take the required actions. Then, select **Deploy Schema** to run the script. When the script is complete, check the target server to make sure the database has been configured correctly.
 
 :::image type="content" source="../media/5-dma-migrate-schema.png" alt-text="Screenshot of the Data Migration Assistant exporting a schema." loc-scope="azure-database-migration":::
 

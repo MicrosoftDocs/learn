@@ -54,7 +54,7 @@ GitHub recommends using a cloud-based TOTP app to configure 2FA. TOTP applicatio
 
 #### SMS
 
-If your users aren't able to authenticate using a TOTP mobile app, they can authenticate using SMS messages. This form of 2FA relies on the assumption that the user is the only person with access to their mobile device. GitHub doesn't support authentication via SMS in all countries. Before an Administrator allows users to authenticate via SMS, they should confirm that it's supported in the country where the users are located.
+If your users aren't able to authenticate using a TOTP mobile app, they can authenticate using SMS messages. This form of 2FA relies on the assumption that the user is the only person with access to their mobile device. GitHub doesn't support authentication via SMS in all countries/regions. Before an Administrator allows users to authenticate via SMS, they should confirm that it's supported in the country/region where the users are located.
 
 :::image type="content" source="../media/two-factor-authentication-sms-six-digit-code-example.png" alt-text="screenshot of the sms code." :::
 
