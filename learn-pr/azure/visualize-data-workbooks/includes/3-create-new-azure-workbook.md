@@ -1,6 +1,5 @@
  Workbooks provide a canvas for creating interactive visual reports. In this exercise, you will create a new workbook, add some descriptive text and a parameter to query your resources. By the end of this unit, you will have a simple report that shows the distribution of your resources on a map.
 
-
 ## Deploy resources for the exercise using the Azure CLI
 
 The first thing we will do is activate the Azure sandbox and deploy an ARM template containing all the Azure resources we need for this exercise.
