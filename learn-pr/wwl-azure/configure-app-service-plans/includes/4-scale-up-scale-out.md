@@ -1,6 +1,6 @@
 There are two methods for Web App scaling, **scale up** and **scale out**. Apps can be scaled manually or automatically (autoscale).
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/LS8ZPbQzRpc" title="How to automatically scale Azure App Services | Azure Tips and Tricks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/LS8ZPbQzRpc" title="How to automatically scale Azure App Services | Azure Tips and Tricks" frameborder="0" allowfullscreen></iframe>
 
 **Scale up**. Get more CPU, memory, disk space, and extra features like dedicated virtual machines (VMs), custom domains and certificates, staging slots, autoscaling, and more. You scale up by changing the pricing tier of the App Service plan that your app belongs to.
 
