@@ -14,7 +14,7 @@ In the following steps, you'll build the query in stages so that you get a bette
 
 1. Run the following query to get 10 matching arbitrary rows from the *Customers* table and the *SalesFact* table.
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA3MuLS7Jz00tKuaqUcjKz8xTyM7MS7HNzMtLLVIITsxJLXZLTC5RyM9TcIYq9E6tBCotScxOVTA0AABvXAKoPgAAAA==" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA3MuLS7Jz00tKuaqUcjKz8xTyM7MS7HNzMtLLVIITsxJLXZLTC5RyM9TcIYq9E6tBCotScxOVTA0AABvXAKoPgAAAA==" target="_blank">Run the query</a>
 
     ```kusto
     Customers
@@ -26,7 +26,7 @@ In the following steps, you'll build the query in stages so that you get a bette
 
 1. Run the following query to summarize the joined tables to get the three countries that have the most sales.
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA02MsQ7CMAxEdyT+4cZ2Zu6AIrEgMQA/4FILBWobOckQxMfTAAPTSe/dXSgpm7Cn9eqFm0XFPeo0RFV2nGjmtKNLhinCr7nn2rqpiJDHJ+NsmeatWNGMAb7k1C22+6y/vO8xVhz5Gk1DA14PJNx+sj2wafbv5g1dXsYVlQAAAA==" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA02MsQ7CMAxEdyT+4cZ2Zu6AIrEgMQA/4FILBWobOckQxMfTAAPTSe/dXSgpm7Cn9eqFm0XFPeo0RFV2nGjmtKNLhinCr7nn2rqpiJDHJ+NsmeatWNGMAb7k1C22+6y/vO8xVhz5Gk1DA14PJNx+sj2wafbv5g1dXsYVlQAAAA==" target="_blank">Run the query</a>
 
     ```kusto
     Customers
@@ -45,7 +45,7 @@ You're then asked to answer a similar question to identify countries with lowest
 
 1. Run the following query.
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA22NPQvCQAyG90L/Q8Y7cNG9g1RcRAd1l9jGetpL5C4dKv54ryp+gFlCkvfJU3ZRxVOIeXaDkziGs+O6cMwUYIMtxTlWCsJQvpIL6ods7LzH4K4EW1Fsp146ViggpF6bdDUP+rm3Ns8g1b6HpbAeUy4qBpWDH0YzQ6X0145gTY0TLgco9Cv09OvC0Oy8Y/Pl/MPYt2igVS4wnnzcNcXqDuvWwxL3AAAA" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA22NPQvCQAyG90L/Q8Y7cNG9g1RcRAd1l9jGetpL5C4dKv54ryp+gFlCkvfJU3ZRxVOIeXaDkziGs+O6cMwUYIMtxTlWCsJQvpIL6ods7LzH4K4EW1Fsp146ViggpF6bdDUP+rm3Ns8g1b6HpbAeUy4qBpWDH0YzQ6X0145gTY0TLgco9Cv09OvC0Oy8Y/Pl/MPYt2igVS4wnnzcNcXqDuvWwxL3AAAA" target="_blank">Run the query</a>
 
     ```kusto
     Customers
@@ -70,7 +70,7 @@ Having analyzed the request, you choose to use the left outer join as it returns
 
 1. Run the following query.
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA03MQQrCMBCF4b2neEt7iK4KboRSsBcYk1FSkwxMJouUHt6gCK7f979FxVdn5XRgk5DxCtmPkR8m1Vhxo8jlQs4gGcvXXrl1XWpKpGFnrGIUPxAjnNRs5wH39uMTGT9F20yJeyfq+2+f/zLPxb0BQv/+DokAAAA=" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA03MQQrCMBCF4b2neEt7iK4KboRSsBcYk1FSkwxMJouUHt6gCK7f979FxVdn5XRgk5DxCtmPkR8m1Vhxo8jlQs4gGcvXXrl1XWpKpGFnrGIUPxAjnNRs5wH39uMTGT9F20yJeyfq+2+f/zLPxb0BQv/+DokAAAA=" target="_blank">Run the query</a>
 
     ```kusto
     Products
@@ -91,7 +91,7 @@ Similarly, your sales team wants to know the number of products that don't sell 
 
 1. Run the following query.
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAAzWLQQqDQAxF954iSz2EK6Gbggg9QToTptFOApnMYoqHVymu/oP/3gu/VB4YvNthVRbYWOJonD6O4gyLaazBC6jc/KR2yqXmjMY/gkmrOIwQru0HeLfbnNApqbUZM52JWiS77n8RqYQDxNGqTH8AAAA=" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAAzWLQQqDQAxF954iSz2EK6Gbggg9QToTptFOApnMYoqHVymu/oP/3gu/VB4YvNthVRbYWOJonD6O4gyLaazBC6jc/KR2yqXmjMY/gkmrOIwQru0HeLfbnNApqbUZM52JWiS77n8RqYQDxNGqTH8AAAA=" target="_blank">Run the query</a>
 
     ```kusto
     SalesFact
