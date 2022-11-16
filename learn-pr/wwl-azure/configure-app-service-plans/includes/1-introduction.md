@@ -22,7 +22,7 @@ Create and configure Azure App Service
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
  -  Identify features and usage cases of the Azure App Service.
  -  Select an appropriate Azure App Service plan pricing tier.

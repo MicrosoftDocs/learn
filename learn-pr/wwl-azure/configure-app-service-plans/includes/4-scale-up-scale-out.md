@@ -1,4 +1,5 @@
-There are two methods for Web App scaling, **scale up** and **scale out**. Apps can be scaled manually or automatically (autoscale).
+There are two methods for Web App scaling, **scale up** and **scale out**. Apps can be scaled manually or automatically (autoscale). Watch this video on how to automatically scale your app service. 
+
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/LS8ZPbQzRpc" title="How to automatically scale Azure App Services | Azure Tips and Tricks" frameborder="0" allowfullscreen></iframe>
 
@@ -8,7 +9,7 @@ There are two methods for Web App scaling, **scale up** and **scale out**. Apps 
 
 ## Changing your App Service plan (scale up)
 
-Your App Service plan can be scaled up and down at any time. It is as simple as changing the pricing tier of the plan. You can choose a lower pricing tier at first and scale up later when you need more App Service features.
+Your App Service plan can be scaled up and down at any time. It's as simple as changing the pricing tier of the plan. You can choose a lower pricing tier at first and scale up later when you need more App Service features.
 
 For example, you can start testing your web app in a Free App Service plan and pay nothing. When you want to add your custom DNS name to the web app, just scale your plan up to the Shared tier. Later, when you want to create an SSL binding, scale your plan up to Basic tier. When you want to have staging environments, scale up to Standard tier. When you need more cores, memory, or storage, scale up to a bigger VM size in the same tier.
 
