@@ -1,4 +1,4 @@
-Your toy company wants to launch a new teddy bear toy in multiple countries. For compliance reasons, the infrastructure must be spread across all the Azure regions where the toy will be launched.
+Your toy company wants to launch a new teddy bear toy in multiple countries/regions. For compliance reasons, the infrastructure must be spread across all the Azure regions where the toy will be launched.
 
 You needed to deploy the same resources in multiple locations and a variety of environments. You wanted to create flexible Bicep templates that you can reuse, and to control resource deployments by changing the deployment parameters.
 

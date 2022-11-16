@@ -106,3 +106,5 @@ The run conditions are based on age. Base blobs use the last modified time to tr
 |--|--|--|
 | daysAfterModificationGreaterThan | Integer value indicating the age in days | The condition for base blob actions |
 | daysAfterCreationGreaterThan | Integer value indicating the age in days | The condition for blob snapshot actions |
+| daysAfterLastAccessTimeGreaterThan | Integer value indicating the age in days | The condition for a current version of a blob when access tracking is enabled |
+ | daysAfterLastTierChangeGreaterThan | Integer value indicating the age in days after last blob tier change time | This condition applies only to `tierToArchive` actions and can be used only with the `daysAfterModificationGreaterThan` condition.
