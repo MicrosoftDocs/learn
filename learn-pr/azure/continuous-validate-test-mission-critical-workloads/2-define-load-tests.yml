@@ -5,8 +5,8 @@ metadata:
   title: Define load tests
   description: Define load tests.
   ms.date: 11/11/2022
-  author: ttorble #TBD
-  ms.author: PageWriter-MSFT
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure #TBD
 durationInMinutes: 5 #TBD

@@ -4,8 +4,8 @@ metadata:
   title: 'Continuously validate and test your mission-critical workloads'
   description: Validate and test your mission-critical workload continuously through automated pipelines to be aware of potential issues before deploying to production. 
   ms.date: 11/11/2022
-  author: ttorble #TBD
-  ms.author: PageWriter-MSFT
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure #TBD
 title: 'Continuously validate and test your mission-critical workloads'
