@@ -19,7 +19,7 @@ The diagram uses different colors to indicate the on-cloud components and the on
   - RAN Monitor: The RAN monitor allows you to monitor the RAN that your private network uses.
 - On-premises components: The on-premises components provide 5G and 4G network functions in a private mobile network.
   - 5G Core Control Plane and 5G Control Plane: The 5G components provide 5G network functions for your private mobile network.
-  - 4G Interworking Function: This component allows you to to attach 4G LTE based UEs and eNBs to your private mobile network.
+  - 4G Interworking Function: This component allows you to attach 4G LTE based UEs and eNBs to your private mobile network.
   - Subscriber database and policy control: This component stores the policy and subscriber information of the UEs in the private mobile network. Subscriber and policy provisioning is done centrally, and automatically distributed to sites in a private mobile network.
   - Arc managed Azure Kubernetes Service: This service hosts the packet core instance that Azure Private 5G Core deploys for each site.
   - Azure Stack Edge: ASE is the edge device in the enterprise. It provides the underlying platform that hosts Azure Private 5G Core.

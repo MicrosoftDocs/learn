@@ -54,6 +54,7 @@ The packet core instance performs ciphering and integrity protection of 5G non-a
 
 <!-- GA features to be added -->
 <!-- ## Multiple DNs -->
+Multi-DNN and how it can be used to access services - local ISV applications, UE to UE traffic, and cloud based destinations.
 
 <!-- ## Multiple slices -->
 <!-- Core-focused features -->
