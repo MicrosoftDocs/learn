@@ -2,7 +2,7 @@ Azure Arc provides a wide range of capabilities for managing a large number of L
 
 ## Azure Automanage best practices
 
-Azure Automanage offers a unified solution to simply the management of your Linux resources connect to Azure Arc. With point-and-click simplicity, you can automate operations and apply consistent best practices across the entire lifecycle of your Linux machines. 
+Azure Automanage offers a unified solution to simply the management of your Linux resources connect to Azure Arc. With point-and-click simplicity, you can automate operations and apply consistent best practices across the entire lifecycle of your Linux machines.
 
 When you use Automanage best practices profiles, a number of Azure services are automatically downloaded to your Linux VMs, including:
 
@@ -34,4 +34,3 @@ Common use cases for Azure Policy include implementing governance for resource c
 ## Ansible Automation Platform
 
 Azure Arc supports Red Hat Ansible IT automation for your Linux systems. Ansible Automation Platform provides an enterprise framework for building and operating IT automation at scale. Ansible Automation Platform enables users across an organization to create, share, and manage automation—from development and operations to security and network teams. IT managers can provide guidelines on how automation is applied to individual teams, and automation creators can write tasks that use existing knowledge. Ansible Automation Platform provides a more secure and stable foundation for deploying end-to-end automation.
-

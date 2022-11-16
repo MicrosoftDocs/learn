@@ -56,7 +56,6 @@ The benefits of Microsoft Sentinel include:
 
 Microsoft Sentinel comes with a number of connectors for Microsoft solutions, available out of the box and providing real-time integration. For physical and virtual Linux machines, you can install the Log Analytics agent that collects the logs and forwards them to Microsoft Sentinel.
 
-
 ## Monitoring
 
 Azure Monitor Agent (AMA) collects monitoring data from the guest operating system of Azure and hybrid virtual machines and delivers it to Azure Monitor for use by features, insights, and other services, such as Microsoft Defender for Cloud. AMA uses data collection rules that let you define the types of data you want each agent you install to collect. This allows you to create unique, scoped configurations for subsets of your Linux machines. These rules are independent of the workspace and the virtual machine, which means you can define a rule once and reuse it across machines and environments.
