@@ -13,27 +13,27 @@ durationInMinutes: 4
 quiz:
   questions:
 
-  - content: "What type of Linux machines can Azure Arc help you manage?"
+  - content: "What type of Linux resources can Azure Arc help you manage?"
     choices:
-    - content: "Virtual machines."
+    - content: "Virtual resources."
       isCorrect: false
       explanation: "This is incorrect. Azure Arc can be used to manage both physical and virtual Linux machines out of Azure."
-    - content: "Physical machines."
+    - content: "Physical resources."
       isCorrect: false
       explanation: "This is incorrect. Azure Arc can be used to manage both physical and virtual Linux machines out of Azure."
-    - content: "Both physical and virtual machines."
+    - content: "Both physical and virtual resources."
       isCorrect: true
       explanation: "Correct! Azure Arc can be used to manage both physical and virtual Linux machines out of Azure."
 
-  - content: "Linux machines managed by Azure Arc enjoy what capabilities?"
+  - content: "Linux machines managed by Azure Arc have what Azure capabilities?"
     choices:
-    - content: "Linux machines on Azure Arc enjoy same capabilities as native Azure Linux resources."
+    - content: "Linux machines on Azure Arc enjoy the same capabilities as native Azure Linux resources."
       isCorrect: true
       explanation: "Correct! Linux machines onboarded to Azure Arc enjoy the same capabilities as native Azure machines."
     - content: "A subset of Azure capabilities focused on security."
       isCorrect: false
       explanation: "This is incorrect. Linux machines onboarded to Azure Arc enjoy the same capabilities as native Azure machines, including robust security capabilities."
-    - content: "Linux machine onboarding to Azure Arc have limitations that make them more difficult to manage than other Azure resources."
+    - content: "Linux machines onboarded to Azure Arc have limitations that make them more difficult to manage than other Azure resources."
       isCorrect: false
       explanation: "This is incorrect. Linux machines onboarded to Azure Arc enjoy the same capabilities as native Azure machines and are just as easy to manage."
 
@@ -45,7 +45,7 @@ quiz:
     - content: "The opening of an additional inbound port."
       isCorrect: false
       explanation: "This is incorrect. You do not need to open any additional inbound ports to use SSH to access a Linux machine connected to Azure Arc."
-    - content: "Install the SSH extension and then run a command to enable the connection."
+    - content: "Installation of the SSH extension."
       isCorrect: true
       explanation: "Correct! Once a Linux resource is fully Arc enabled, you need to install the SSH extension on your workstation and then run a simple command to enable the SSH connection."
 
@@ -59,4 +59,4 @@ quiz:
       explanation: "This is incorrect. Although Microsoft Sentinel and Microsoft Defender both work with Arc-enabled Linux machines, they are tools specifically designed for security enhancement."
     - content: "Arc SSH and Azure Active Directory."
       isCorrect: false
-      explanation: "This is incorrect. Although Arc SSH and Azure Active directory both work with Arc-enabled Linux machines, their primary purpose is security and log-in related."
+      explanation: "This is incorrect. Although Arc SSH and Azure Active directory both work with Arc-enabled Linux machines, their primary purpose is security and connection related."

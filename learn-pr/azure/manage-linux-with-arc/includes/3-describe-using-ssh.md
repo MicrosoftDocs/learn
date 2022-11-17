@@ -43,7 +43,7 @@ To use SSH with a Linux machine connected via Azure Arc, the following high-leve
     
 1. Run the following command to make the connection between the workstation to the linux machine through Azure Arc:
     
-    az ssh arc --resource-group \<resource-group\> \<host-name\> --local-user \<local-user-name\>
+    `az ssh arc --resource-group \<resource-group\> \<host-name\> --local-user \<local-user-name\>`
 
     To connect using Azure Active Directory instead of connecting as a local user, remove the `--local-user` parameter from the command above. You need to already be logged in through Azure Active Directory for this method to work.
 
