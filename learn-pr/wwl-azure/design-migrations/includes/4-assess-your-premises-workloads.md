@@ -4,13 +4,13 @@ Before you begin the migration project at Tailwind Traders, we need to review th
 
 There are a range of tools and services that can help you plan and complete the four stages of your migration. Most migrations require several procedures and services. For some migrations, you might need only one or two services or tools. 
 
-| Service or tool | Migration stage(s) | Description |
+| Service or tool | Stage(s) | Description |
 | --- | --- | --- |
 | **Service Map** | _Assess_ | The Service Map feature of Azure Monitor maps communication between application components on Windows or Linux. Use this feature to identify dependencies when determining what data to migrate. Service Map requires another agent to be installed on the source environment virtual machines. |
 | **Azure TCO Calculator** | _Assess_ | The Azure Total Cost of Ownership (TCO) Calculator estimates the cost savings you can realize by migrating your workloads to Azure. |
-| **Azure Migrate** | _Assess_ and _Migrate_  | Azure Migrate performs assessment and migration to Azure of virtual machines (Hyper-V and VMware), cloud-based virtual machines, physical servers, databases, data, virtual desktop infrastructure, and web applications. |
-| **Data Migration Assistant (DMA)** | _Assess_ and _Migrate_  | SQL Server Data Migration Assistant helps you upgrade to a modern data platform. It detects compatibility issues that might impact database functionality in newer versions of SQL Server or Azure SQL Database. |
-| **Database Migration Service** | _Assess_ and _Migrate_  | The Azure Database Migration Service performs assessment and migration for several different databases, not just Azure SQL Database. |
+| **Azure Migrate** | _Assess_ & _Migrate_  | Azure Migrate performs assessment and migration to Azure of virtual machines (Hyper-V and VMware), cloud-based virtual machines, physical servers, databases, data, virtual desktop infrastructure, and web applications. |
+| **Data Migration Assistant (DMA)** | _Assess_ & _Migrate_  | SQL Server Data Migration Assistant helps you upgrade to a modern data platform. It detects compatibility issues that might impact database functionality in newer versions of SQL Server or Azure SQL Database. |
+| **Database Migration Service** | _Assess_ & _Migrate_  | The Azure Database Migration Service performs assessment and migration for several different databases, not just Azure SQL Database. |
 | **Data Migration tool** |  _Migrate_ | The Azure Cosmos DB Data Migration tool migrates your existing databases to Azure Cosmos DB. |
 | **Microsoft Cost Management** | _Optimize_ | Microsoft Cost Management (formerly known as Azure Cost Management and Billing) helps you monitor, optimize, and control your ongoing Azure costs. |
 | **Advisor** | _Monitor_ | Azure Advisor helps optimize your Azure resources for reliability, performance, cost, security, and operational excellence. |
@@ -86,15 +86,15 @@ In the last step, you review information about possible cost savings on the View
 
 The information available from the report can be useful in helping identify the benefits in moving from an on-premises content to one based in Azure.
 
-## Azure Migrate
+## Azure Migrate and assessment
 
 Azure Migrate lets you perform an agentless environment discovery or use agents to perform a dependency analysis. You can access Azure Migrate features in the Azure portal to help assess your current on-premises workloads. Azure Migrate makes recommendations for the size of virtual machine you need to provision to assess readiness for your move to Azure. You can identify estimated costs for the resources that those machines will consume, so the management team can set the budgets.
 
-Azure Migrate helps with performance-based sizing calculations (virtual machine sizing, compute/storage) for the machines that you'll migrate and estimates the ongoing cost of running these machines in Azure. Azure Migrate can assess both Hyper-V and VMware-based virtual machines, and also physical servers.
+Azure Migrate helps with performance-based sizing calculations (virtual machine sizing, compute/storage) for the machines to migrate and estimates the ongoing cost of running these machines in Azure. Azure Migrate can assess both Hyper-V and VMware-based virtual machines, and also physical servers.
 
 Azure Migrate also supports the visualization of dependencies for those machines. It helps you create groups of machines that can be assessed together and ultimately migrated to Azure at the same time.
 
-### Things to know about Azure Migrate and server assessment
+### Things to know about Server Assessment
 
 Azure Migrate includes several [assessment tools](/azure/migrate/how-to-assess) to help you prepare for your migration. To perform an agentless discovery, you use the Azure Migrate Server Assessment tool.
 
