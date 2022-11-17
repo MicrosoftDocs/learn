@@ -88,7 +88,7 @@ After you choose your client application, you'll:
 
 ::: zone pivot="vue"
 
-:::image type="content" source="../media/my-shopping-list-app-vue.png" alt-text="A screenshot illustrating the vue sample application.":::
+:::image type="content" source="../media/my-shopping-list-app-vue.png" alt-text="A screenshot illustrating the Vue sample application.":::
 
 ::: zone-end
 

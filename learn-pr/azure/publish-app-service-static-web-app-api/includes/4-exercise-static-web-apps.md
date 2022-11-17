@@ -14,7 +14,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 1. When the extension tab loads in Visual Studio Code, select  the **Install** button.
 
-1. After installation is complete, select **Restart to update**.
+1. After installation is complete, select **Restart to update** if prompted.
 
 ## Sign in to Azure in Visual Studio Code
 
