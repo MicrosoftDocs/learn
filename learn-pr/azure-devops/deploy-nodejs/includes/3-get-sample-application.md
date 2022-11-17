@@ -10,9 +10,11 @@ Although you can propose changes to the original project, in this lesson, you'll
 1. Go to the [Node.js](https://github.com/Azure-Samples/nodejs-docs-hello-world) project.
 
 1. Select **Fork**.
+
     :::image type="content" source="../media/3-select-fork.png" alt-text="Screenshot of fork GitHub menu option.":::
 
 1. Create a fork in your repository with **Create fork**.
+
     :::image type="content" source="../media/3-create-fork.png" alt-text="Screenshot of create a fork option.":::
 
 ## Check your work
