@@ -22,7 +22,7 @@ summary: |
   - Contribute to an open-source project.
 prerequisites: |
  - A [GitHub](https://github.com?azure-portal=true) account
-iconUrl: /learn/achievements/github/build-community-driven-projects-github.svg
+iconUrl: /training/achievements/github/build-community-driven-projects-github.svg
 levels:
 - beginner
 roles:
@@ -31,6 +31,8 @@ roles:
 - solution-architect
 products:
 - github
+subjects:
+- development-tools
 modules:
 - learn.github.introduction-to-github
 - learn.github.manage-innersource-program-github

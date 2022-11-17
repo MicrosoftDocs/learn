@@ -22,7 +22,7 @@ abstract: |
 prerequisites: |
   * Working experience creating, assigning, and securing corporate identities.
   * Conceptual knowledge of identity assignment solutions, role-based access control, and identity protection methods.
-iconUrl: /learn/achievements/6-manage-azure-stack-hub-by-using-privileged-endpoints.svg
+iconUrl: /training/achievements/6-manage-azure-stack-hub-by-using-privileged-endpoints.svg
 levels:
 - advanced
 roles:
@@ -32,6 +32,9 @@ products:
 - azure
 - azure-stack
 - azure-stack-hub
+subjects:
+- cloud-computing
+- identity-access
 units:
 - learn.wwl.manage-azure-stack-hub-by-using-privileged-endpoints.introduction
 - learn.wwl.manage-azure-stack-hub-by-using-privileged-endpoints.connect-to-privileged-endpoint

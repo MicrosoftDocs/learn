@@ -20,7 +20,7 @@ abstract: |
   - Debug bots locally using Visual Studio Code and the Microsoft Bot Framework Emulator
 prerequisites: |
   You will need an active Azure subscription (or trial) along with a local install of Visual Studio Code to complete the exercises in this module.
-iconUrl: /learn/achievements/build-chat-bot-with-azure-bot-service.svg
+iconUrl: /training/achievements/build-chat-bot-with-azure-bot-service.svg
 levels:
 - beginner
 roles:
@@ -29,9 +29,9 @@ roles:
 - student
 products:
 - azure
-- vs
-- vs-code
 - azure-bot-service
+subjects:
+- chatbot
 units:
 - learn.build-azure-bot-services-bot.1-introduction
 - learn.build-azure-bot-services-bot.2-create-web-app-bot

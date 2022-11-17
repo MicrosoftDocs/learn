@@ -16,7 +16,7 @@ abstract: |
   - Use variables and parameters to make your scripts flexible.
   - Apply flow-control logic to make intelligent decisions.  
   - Add robustness to your scripts by adding error management.
-iconUrl: /learn/achievements/powershell/scripting-with-powershell.svg
+iconUrl: /training/achievements/powershell/scripting-with-powershell.svg
 levels:
   - beginner
 roles:
@@ -29,6 +29,8 @@ prerequisites: |
   - Ability to install Visual Studio Code extensions 
   - Ability to install software on your computer, if you're not using a Windows operating system
   - Familiarity with running commands in PowerShell
+subjects:
+- development-tools
 units:
   - learn.powershell.scripting-with-powershell.1-introduction
   - learn.powershell.scripting-with-powershell.2-introduction-scripting

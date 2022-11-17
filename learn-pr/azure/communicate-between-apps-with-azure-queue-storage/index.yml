@@ -16,7 +16,7 @@ abstract:  |
   - Create a queue using C# and the Azure Storage Client Library for .NET
   - Add, retrieve, and remove messages from a queue using C# and the Azure Storage Client Library for .NET
 prerequisites: None
-iconUrl: /learn/achievements/communicate-between-apps-with-azure-queue-storage.svg
+iconUrl: /training/achievements/communicate-between-apps-with-azure-queue-storage.svg
 levels:
 - intermediate
 roles:
@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-storage
+subjects:
+- storage
 units:
 - learn.communicate-between-applications-with-azure-queue-storage.1-introduction
 - learn.communicate-between-applications-with-azure-queue-storage.2-create-the-azure-storage-infrastructure

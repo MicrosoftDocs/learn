@@ -17,7 +17,7 @@ prerequisites: |
   - Basic experience with Azure services
   - Basic knowledge of operational concepts such as monitoring, logging, and alerting
   - A Microsoft Sentinel instance in your Azure subscription
-iconUrl: /learn/achievements/security-ops-sentinel.svg
+iconUrl: /training/achievements/security-ops-sentinel.svg
 levels:
 - beginner
 roles:
@@ -28,6 +28,8 @@ roles:
 products:
   - azure
   - azure-sentinel
+subjects:
+- cloud-security
 modules:
 - learn.intro-to-azure-sentinel
 - learn.azure.azure-sentinel-deploy-connect

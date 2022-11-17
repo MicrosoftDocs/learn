@@ -1,8 +1,8 @@
 A number of important production resources were deleted by accident because they were in the same resource group. You were asked to separate development resources from production resources by moving them into their own development resource group.
 
-You've seen how to:
+You've learned how to:
 
-- Identify all resources in the production resource group. 
+- Identify all resources in the production resource group.
 - Check the limitations of resources and whether they can be moved to a new resource group.
 - Run a test validation to verify that resources can move successfully.
 - Create a new resource group to hold the development resources by using the Azure portal.

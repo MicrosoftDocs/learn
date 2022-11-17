@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-compute-solution.design-for-azure-virtual-machine-solutions
-title: Design for Azure virtual machine solutions
+title: Design for Azure Virtual Machines solutions
 metadata:
-  title: Design for Azure virtual machine solutions
-  description: "Design for Azure virtual machine solutions"
-  ms.date: 05/06/2022
+  title: Design for Azure Virtual Machines solutions
+  description: "Design for Azure Virtual Machines solutions"
+  ms.date: 11/15/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 6
 content: |
   [!include[](includes/3-design-for-azure-virtual-machine-solutions.md)]

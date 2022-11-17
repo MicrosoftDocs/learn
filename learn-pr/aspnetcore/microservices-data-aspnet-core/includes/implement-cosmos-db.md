@@ -13,7 +13,7 @@ In this unit, you will:
 1. Run the following script:
 
     ```bash
-    deploy/k8s/create-azure-cosmos-db.sh
+    ./create-azure-cosmos-db.sh
     ```
 
     The script:
@@ -72,10 +72,10 @@ In *deploy/k8s/helm-simple/coupon/templates/configmap.yaml*, update the `Connect
 
 ## Redeploy the coupon service
 
-Publish the existing `coupon-api` docker image from the `eshopdev` DockerHub with the following script:
+Publish the existing `coupon-api` docker image from the `eshoplearn` DockerHub with the following script:
 
 ```bash
-deploy/k8s/deploy-application.sh --charts coupon --registry eshopdev
+./deploy-application.sh --charts coupon --registry eshoplearn
 ```
 
 As there are no code changes, so there's no need to rebuild `coupon-api` docker image. The preceding script uses Helm to deploy the existing *:::no-loc text="coupon":::* Docker image to AKS with a new configuration. The script runs the `kubectl get pods` command, whose output contains entries for the pod of basket api. The `STATUS` and `AGE` column values indicate that the deployments were successful:
@@ -96,7 +96,7 @@ Upon submitting the order, the *order* service updates the status of the order t
 
 Use the Azure portal's **Data Explorer** tab to inspect the stored documents using the following steps:
 
-1. In another browser tab, sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account and directory as the Cloud Shell.
+1. In another browser tab, sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account and directory as the Azure CLI.
 1. Use the search box to find and open the CosmosDB resource prefixed with *:::no-loc text="eshoplearn":::*.
 1. Select **Data explorer** from the table on the left.
 1. Expand **CouponDb**.

@@ -97,7 +97,7 @@ Run the custom test by following these steps:
 
    Your output resembles the following. Notice the highlighted lines show your test:
 
-   :::code language="plaintext" source="../resources/7-custom-test-output.txt" highlight="6-7" :::
+   :::code language="plaintext" source="../resources/7-custom-test-output.txt" highlight="21-22" :::
 
    Now that you've found the test, leave this terminal window open. You'll reuse it later.
 
@@ -227,8 +227,8 @@ At this point, you want to verify the correctness of your custom test by changin
 
    ```output
    Validating custom\azuredeploy.json
-     deploymentTemplate
-       [+] Custom ParameterNaming (2 ms)
+     Custom ParameterNaming
+       [+] Custom ParameterNaming (9 ms)
    ```
 
 Success! You've implemented and run a custom test. You've also corrected a deployment template to match the test's condition.

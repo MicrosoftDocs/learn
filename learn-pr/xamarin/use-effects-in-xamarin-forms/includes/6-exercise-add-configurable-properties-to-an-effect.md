@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Now you add the ability to configure the gradient effect from your Xamarin.Forms code. You create an attached property and control it from a slider on the app.
 
 ## Open solution

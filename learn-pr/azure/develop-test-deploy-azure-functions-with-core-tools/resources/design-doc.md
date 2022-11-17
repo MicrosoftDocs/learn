@@ -121,5 +121,5 @@ Identify the subtasks of *Develop, test and deploy Azure Functions with Azure Fu
     As a developer at the car dealership, you wanted use create Azure Functions to provide a loan interest calculator to the business. You used Azure Core Tools to build a prototype locally and then deployed a version to Azure for others in the team to consume. 
 
     ### Learn more
-    - https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#create-a-local-functions-project
+    - https://learn.microsoft.com/azure/azure-functions/functions-run-local#create-a-local-functions-project
     - https://github.com/Azure/azure-functions-core-tools

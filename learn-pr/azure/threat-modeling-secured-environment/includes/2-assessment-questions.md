@@ -21,4 +21,4 @@ The questions below are a great starting point. You may add more depending on yo
 ---
 
 > [!IMPORTANT]
-> Visit [Privileged Access Worsktation Administration](https://docs.microsoft.com/security/compass/critical-impact-accounts) to learn about each security control enabled in a PAW.
+> Visit [Privileged Access Worsktation Administration](/security/compass/critical-impact-accounts) to learn about each security control enabled in a PAW.

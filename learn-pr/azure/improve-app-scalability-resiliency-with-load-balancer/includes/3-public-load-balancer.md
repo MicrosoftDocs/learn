@@ -16,9 +16,9 @@ By default, Azure Load Balancer distributes network traffic equally among virtua
 
 ## Choose a distribution mode
 
-In the healthcare portal example, imagine that a developer requirement of the presentation tier is to use in-memory sessions to store the logged in user's profile as the user interacts with the portal.
+In the healthcare portal example, imagine that a developer requirement of the presentation tier is to use in-memory sessions to store the signed-in user's profile as the user interacts with the portal.
 
-In this scenario, the load balancer must provide source IP affinity to maintain a user's session. The profile is stored only on the virtual machine that the client first connects to because that IP address is directed to the same server. When you create the load balancer endpoint, you must specify the distribution mode by using the following PowerShell example:
+In this scenario, the load balancer must provide source IP affinity to maintain a user's session. The profile is stored only on the virtual machine to which the client first connects, because that IP address is directed to the same server. When you create the load balancer endpoint, you must specify the distribution mode by using the following PowerShell example:
 
 ```powershell
 $lb = Get-AzLoadBalancer -Name MyLb -ResourceGroupName MyResourceGroup
@@ -32,7 +32,7 @@ To add session persistence through the Azure portal:
 1. Edit the relevant line of the **Load-balancing rules**.
 1. Change the value for **Session persistence** to **Client IP**.
 
-:::image type="content" source="../media/3-screenshot-session-persistence.png" alt-text="Screenshot showing how to set IP affinity in the Azure portal." border="false":::
+:::image type="content" source="../media/3-screenshot-session-persistence.png" alt-text="Screenshot showing how to set IP affinity in the Azure portal." :::
 
 ## Load Balancer and Remote Desktop Gateway
 

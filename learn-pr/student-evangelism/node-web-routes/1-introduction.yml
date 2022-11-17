@@ -5,7 +5,7 @@ metadata:
   title: Introduction
   description: Create Web API routes with Node.js by using JavaScript and Express
   author: clarkio
-  ms.author: brcl
+  ms.author: chnoring
   ms.date: 07/12/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

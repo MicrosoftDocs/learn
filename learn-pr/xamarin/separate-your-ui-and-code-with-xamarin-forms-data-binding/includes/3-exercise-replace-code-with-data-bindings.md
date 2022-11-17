@@ -1,4 +1,6 @@
-You'll build a simplified version of the educational geography app that focuses on countries' flags. In this first exercise, you replace data-manipulation code with bindings.
+[!include[](../../includes/xamarin-not-maintained.md)]
+
+You'll build a simplified version of the educational geography app that focuses on flags from a country/region. In this first exercise, you replace data-manipulation code with bindings.
 
 ## Open and run the starter solution
 

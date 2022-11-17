@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-azure-cosmos-db-sql-api-sdk.exercise-connect-to
-title: 'Exercise: Connect to Azure Cosmos DB SQL API with the SDK'
+title: 'Exercise: Connect to Azure Cosmos DB for NoSQL with the SDK'
 metadata:
-  title: 'Exercise: Connect to Azure Cosmos DB SQL API with the SDK'
-  description: "Exercise: Connect to Azure Cosmos DB SQL API with the SDK"
-  ms.date: 05/05/2022
+  title: 'Exercise: Connect to Azure Cosmos DB for NoSQL with the SDK'
+  description: "Exercise: Connect to Azure Cosmos DB for NoSQL with the SDK"
+  ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

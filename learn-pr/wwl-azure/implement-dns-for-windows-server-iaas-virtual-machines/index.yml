@@ -27,7 +27,7 @@ prerequisites: |
   - Security-related technologies (firewalls, encryption, multi-factor authentication).
   - Windows PowerShell scripting.
   - Automation and monitoring.
-iconUrl: /learn/achievements/implement-dns-for-windows-server-iaas-vm.svg
+iconUrl: /training/achievements/implement-dns-for-windows-server-iaas-vm.svg
 levels:
 - intermediate
 roles:
@@ -39,6 +39,9 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- networking
+- cloud-computing
 units:
 - learn.wwl.implement-dns-for-windows-server-iaas-vms.introduction
 - learn.wwl.implement-dns-for-windows-server-iaas-vms.understand-azure-dns

@@ -3,7 +3,7 @@ uid: learn.wwl.create-configure-data-loss-prevention-policies
 metadata:
   title: Configure DLP policies for Microsoft Defender for Cloud Apps and Power Platform
   description: "Configure DLP policies for Microsoft Defender for Cloud Apps and Power Platform"
-  ms.date: 12/29/2021
+  ms.date: 08/18/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ prerequisites: |
   - Basic knowledge of data loss prevention in Microsoft 365
   - Basic knowledge of Microsoft Defender for Cloud Apps
   - Basic knowledge of Power Platform
-iconUrl: /learn/achievements/create-and-configure-data-loss-prevention-policies.svg
+iconUrl: /training/achievements/create-and-configure-data-loss-prevention-policies.svg
 levels:
 - intermediate
 roles:
@@ -28,6 +28,8 @@ roles:
 products:
 - m365
 - m365-information-protection
+subjects:
+- security
 units:
 - learn.wwl.create-configure-data-loss-prevention-policies.introduction
 - learn.wwl.create-configure-data-loss-prevention-policies.configure-data-loss-prevention-policies-for-power-platform

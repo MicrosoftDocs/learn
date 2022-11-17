@@ -20,7 +20,7 @@ prerequisites: |
   - Basic knowledge of Azure resources
   - Basic knowledge of Azure RBAC
   - Basic knowledge of Azure Policies
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
@@ -31,6 +31,8 @@ roles:
 products:
 - azure
 - azure-blueprints
+subjects:
+- development-tools
 units:
 - learn.intro-to-azure-blueprints.introduction
 - learn.intro-to-azure-blueprints.what-is-azure-blueprints

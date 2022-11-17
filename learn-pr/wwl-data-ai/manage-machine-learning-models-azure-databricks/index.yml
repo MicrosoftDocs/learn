@@ -17,13 +17,17 @@ abstract: |
   - Manage model versioning
 prerequisites: |
   Before starting this module, you should be familiar with using Python to train machine learning models in Azure Databricks.
-iconUrl: /learn/achievements/manage-machine-learning-models-in-azure-databricks.svg
+iconUrl: /training/achievements/manage-machine-learning-models-in-azure-databricks.svg
 levels:
 - intermediate
 roles:
 - data-scientist
 products:
 - azure-databricks
+subjects:
+- data-analytics
+- data-lake
+- artificial-intelligence
 units:
 - learn.wwl.manage-machine-learning-models-azure-databricks.introduction
 - learn.wwl.manage-machine-learning-models-azure-databricks.describe-considerations-for-model-management

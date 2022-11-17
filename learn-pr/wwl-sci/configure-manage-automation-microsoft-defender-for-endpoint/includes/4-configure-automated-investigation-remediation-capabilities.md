@@ -44,7 +44,7 @@ With this level of semi-automation, approval is required for any remediation act
 
 **Semi - require approval for non-temp folders remediation (also a type of semi-automation)**
 
-With this level of semi-automation, approval is required for any remediation actions needed on files or executables that are not in temporary folders.
+With this level of semi-automation, approval is required for any remediation actions needed on files or executables that aren't in temporary folders.
 
 Temporary folders can include the following examples:
 
@@ -64,13 +64,13 @@ Temporary folders can include the following examples:
 
 - \documents and settings\*\users\*
 
-Remediation actions can be taken automatically on files or executables that are in temporary folders. Pending actions for files or executables that are not in temporary folders can be viewed and approved in the Action Center, on the Pending tab. Actions that were taken on files or executables in temporary folders can be viewed and approved in the Action Center on the History tab.
+Remediation actions can be taken automatically on files or executables that are in temporary folders. Pending actions for files or executables that aren't in temporary folders can be viewed and approved in the Action Center, on the Pending tab. Actions that were taken on files or executables in temporary folders can be viewed and approved in the Action Center on the History tab.
 
 **No automated response (also referred to as 'no automation')**
 
-With no automation, the automated investigation does not run on your organization's devices. As a result, no remediation actions are taken or pending as a result of an automated investigation. However, other threat protection features, such as protection from potentially unwanted applications, can be in effect, depending on how your antivirus and next-generation protection features are configured.
+With no automation, the automated investigation doesn't run on your organization's devices. As a result, no remediation actions are taken or pending as a result of an automated investigation. However, other threat protection features, such as protection from potentially unwanted applications, can be in effect, depending on how your antivirus and next-generation protection features are configured.
 
-Using the no automation option is not recommended because it reduces the security posture of your organization's devices. Consider setting up your automation level to full automation (or at least semi-automation).
+Using the no automation option isn't recommended because it reduces the security posture of your organization's devices. Consider setting up your automation level to full automation (or at least semi-automation).
 
 ## Quickly configure remediation levels on device groups
 

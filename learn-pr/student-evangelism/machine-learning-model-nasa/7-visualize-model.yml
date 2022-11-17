@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Visualize the machine learning model 
   description: Use libraries to visualize the model you made.
   ms.date: 05/24/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

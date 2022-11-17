@@ -33,10 +33,10 @@ Microsoft provides the following components to run Azure VMware Solution at scal
 
 You can use VMware Site Recovery Manager to implement different types of recovery from:
 
-- An on-premises VMware vCenter site to a recovery site in an Azure VMware Solution private cloud.
+- An on-premises VMware vCenter Server site to a recovery site in an Azure VMware Solution private cloud.
 - A primary Azure VMware Solution site in one Azure region to secondary Azure VMware Solution site in another Azure region.
 
-### Scenario 1: On-premises VMware vCenter site to a recovery site in an Azure VMware Solution private cloud
+### Scenario 1: On-premises VMware vCenter Server site to a recovery site in an Azure VMware Solution private cloud
 
 When you deploy VMware SRM on Azure VMware Solution, your organization can reduce the cost and overhead of managing a dedicated disaster recovery (DR) site. You can combine VMware SRM with the dynamic, on-demand scalability of Azure VMware Solution to balance the cost and recovery time needed for individual VMs.
 
@@ -44,7 +44,7 @@ You can replicate your VMs, create non-disruptive tests, and prepare dynamic rec
 
 #### Prerequisites for scenario 1
 
-Before you can deploy protection for your on-premises VMware vCenter site to the recovery site in Azure VMware Solution, you must ensure that the sites meet the following prerequisites:
+Before you can deploy protection for your on-premises VMware vCenter Server site to the recovery site in Azure VMware Solution, you must ensure that the sites meet the following prerequisites:
 
 - Networking: The private-cloud environment for Azure VMware Solution must be accessible from on-premises and Azure-based resources. You can use the following services to deliver interconnectivity:
 

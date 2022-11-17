@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-spring-cloud-workshop.2-create-instance
-title: Create an Azure Spring Cloud instance
+title: Create an Azure Spring Apps instance
 metadata:
-  title: Create an Azure Spring Cloud instance
-  description: Create an Azure Spring Cloud instance
+  title: Create an Azure Spring Apps instance
+  description: Create an Azure Spring Apps instance
   author: judubois
   ms.author: judubois
   ms.date: 03/04/2020
@@ -18,19 +18,19 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "True or false: You need to use the Azure CLI to create an Azure Spring Cloud cluster."
+  - content: "True or false: You need to use the Azure CLI to create an Azure Spring Apps cluster."
     choices:
     - content: "True"
       isCorrect: false
-      explanation: "An Azure Spring Cloud cluster can be created either using the Azure CLI or the Azure portal."
+      explanation: "An Azure Spring Apps cluster can be created either using the Azure CLI or the Azure portal."
     - content: "False"
       isCorrect: true
-      explanation: "An Azure Spring Cloud cluster can also be created using the Azure portal."
-  - content: "True or false: The name of an Azure Spring Cloud cluster should be unique across all of Azure."
+      explanation: "An Azure Spring Apps cluster can also be created using the Azure portal."
+  - content: "True or false: The name of an Azure Spring Apps cluster should be unique across all of Azure."
     choices:
     - content: "True"
       isCorrect: true
-      explanation: "The name of an Azure Spring Cloud cluster should be unique across all of Azure."
+      explanation: "The name of an Azure Spring Apps cluster should be unique across all of Azure."
     - content: "False"
       isCorrect: false
-      explanation: "The name of an Azure Spring Cloud cluster should be unique across all of Azure."
+      explanation: "The name of an Azure Spring Apps cluster should be unique across all of Azure."

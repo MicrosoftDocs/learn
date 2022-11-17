@@ -2,7 +2,7 @@ Conditional access is a capability of Azure AD (with an Azure AD Premium license
 
 Conditional access comes with six conditions: user/group, cloud application, device state, location (IP range), client application, and sign-in risk. You can use combinations of these conditions to get the exact conditional access policy you need. Notice on this image the conditions determine the access control from the previous topic.
 
-:::image type="content" source="../media/az500-conditional-access-policies-fed794b4.png" alt-text="Image showing a Condition to test a user's access. The Condition will allow enforce MFA, or block the user's access.":::
+:::image type="content" source="../media/az500-conditional-access-policies-fed794b4.png" alt-text="Daigram shows that conditional access comes with six conditions: user/group, cloud application, device state, location (IP range), client application, and sign-in risk.":::
 
 
 With access controls, you can either Block Access altogether or Grant Access with more requirements by selecting the desired controls. You can have several options:

@@ -16,11 +16,11 @@ Description for the steps in the image:
 
 - (3) When the **Deleted Items** folder is emptied, the messages are moved to the hidden folder structure, in this example to **Deletions**. The user can still restore the message using the Single Item Recovery feature.
 
-- (4a) When the message expired under the Single Item Recovery hold time, it is moved to the **Purges** folder.
+- (4a) When the message expired under the Single Item Recovery hold time, it's moved to the **Purges** folder.
 
-- (4b) When the message is subject to an eDiscovery hold, it is moved to the **DiscoveryHolds** folder.
+- (4b) When the message is subject to an eDiscovery hold, it's moved to the **DiscoveryHolds** folder.
 
-- (5) When a mailbox is subject to a retention policy or a litigation hold is activated, any version of an edited message is moved to the **Versions** folder in the hidden folder structure and it is retained.
+- (5) When a mailbox is subject to a retention policy or a litigation hold is activated, any version of an edited message is moved to the **Versions** folder in the hidden folder structure and it's retained.
 
 - (6a) When the Mailbox Folder Assistant (MFA) processes a mailbox, all expired items in **Deletions**, **Versions, and **Purges** are deleted, if no other feature holds the messages.
 
@@ -33,12 +33,12 @@ Description for the steps in the image:
 
 ## Accessing Recoverable Items folders
 
-To access these hidden folders, administrators can use different methods, such as compliance searches and eDiscovery cases. Before they can gain access to this potentially compliance relevant email communication, administrators and compliance officers need special permissions that are not assigned to any administrator by default.
+To access these hidden folders, administrators can use different methods, such as compliance searches and eDiscovery cases. Before they can gain access to this potentially compliance relevant email communication, administrators and compliance officers need special permissions that aren't assigned to any administrator by default.
 
 > [!WARNING]
 > By default, even the Global Administrator of a tenant does not have the required permission to search through all user data. If they did it would violate the data protection policies of several regulatory bodies. Before administrators or compliance officers are assigned permissions to discover user data, you must ensure no compliance polices are violated in the process.
 
-The permissions to perform a compliance search, create eDiscovery cases and use Advanced eDiscovery are managed via built-in RBAC roles in the Security or Compliance Center in Microsoft 365. The following table lists which role group contains which permissions:
+The permissions to perform a compliance search, create eDiscovery cases and Microsoft Purview eDiscovery Premium are managed via built-in RBAC roles in the Microsoft Microsoft Purview compliance portal. The following table lists which role group contains which permissions:
 
 | Role| Compliance Administrator| eDiscovery Manager & Administrator| Organization Management| Reviewer|
 | :--- | :--- | :--- | :--- | :--- |
@@ -57,16 +57,16 @@ Additional information for the permission overview:
 
 - While the eDiscovery Managers can only manage all settings in their own cases, the eDiscovery Administrator can access and modify all existing cases.
 
-- The Reviewers cannot create own searches or modify the search settings and locations, but they can see the results of an eDiscovery case they are assigned to.
+- The Reviewers can't create own searches or modify the search settings and locations, but they can see the results of an eDiscovery case they're assigned to.
 
-- The Search and Purge role is the only role that can remove content actively from multiple locations, but this role cannot search for data or see content.
+- The Search and Purge role is the only role that can remove content actively from multiple locations, but this role can't search for data or see content.
 
 > [!NOTE]
 > eDiscovery is not limited to mailbox content only, it includes documents and files stored in other locations too.
 
-The eDiscovery roles are often assigned to Compliance or Data Protection Officers, which are responsible to ensure the company does comply with all required policies in their location and industry sector. Administrators should not own eDiscovery roles that allow them to search or export content. They are responsible for the mailboxes and services. Too many permissions to access user content can lead to violations of compliance policies.
+The eDiscovery roles are often assigned to Compliance or Data Protection Officers, which are responsible to ensure the company does comply with all required policies in their location and industry sector. Administrators should not own eDiscovery roles that allow them to search or export content. They're responsible for the mailboxes and services. Too many permissions to access user content can lead to violations of compliance policies.
 
-When the non-technical compliance users require support creating an eDiscovery case, it may be a best to have a Compliance Administrator create the case, holds, and searches. Then assign Reviewer permissions to users that are legally allowed to see the content, while the administrator cannot see the results of the searches. Even if users are missing deleted content and they require an Administrator to recover it from a location they cannot access it themselves, like a message in a hidden folder, the recovery and export should be performed under the four-eyes principle together with the compliance or data protection personnel of an organization.
+When the non-technical compliance users require support creating an eDiscovery case, it may be a best to have a Compliance Administrator create the case, holds, and searches. Then assign Reviewer permissions to users that are legally allowed to see the content, while the administrator can't see the results of the searches. Even if users are missing deleted content and they require an Administrator to recover it from a location they can't access it themselves, like a message in a hidden folder, the recovery and export should be performed under the four-eyes principle together with the compliance or data protection personnel of an organization.
 
 > [!TIP]
 > Administrators should always consider the legal and regulatory restrictions when assigning permissions to search and recover user data in an organization!
@@ -80,7 +80,7 @@ Besides using retention policies and labels, Exchange provides more features to 
 | Litigation Hold| All mailbox contents.| Litigation hold is activated on the mailbox level and retains all mailbox content.|
 | eDiscovery Hold| Mailbox content matching the search filter.| Created in eDiscovery cases to retain all content matching the keyword search. Was formerly also available outside eDiscovery cases and called in-place hold.|
 | Retention Tags| Single email messages stored in mailboxes.| Formerly used to manage retention and deletion of mailbox content.|
-| Journaling| All mails sent to a single recipient.| Journaling creates a copy of all messages sent to a specific recipient and stores it in a dedicated mailbox, which cannot be another Exchange Online mailbox but only an on-premises or third-party target.|
+| Journaling| All mails sent to a single recipient.| Journaling creates a copy of all messages sent to a specific recipient and stores it in a dedicated mailbox, which can't be another Exchange Online mailbox but only an on-premises or third-party target.|
 
 > [!NOTE]
 > Some organizations use journaling to store copies of all messages for important recipients in third-party locations, to comply with regulatory requirements.

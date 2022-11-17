@@ -19,7 +19,7 @@ abstract: |
   - List the processes that you can implement to monitor site reliability.
   - Build a "just culture" that balances safety and accountability.
 prerequisites: None
-iconUrl: /learn/achievements/azure-devops/manage-site-reliability.svg
+iconUrl: /training/achievements/azure-devops/manage-site-reliability.svg
 ratingEnabled: true
 levels:
 - intermediate
@@ -30,6 +30,8 @@ roles:
 - solution-architect
 products:
 - azure-devops
+subjects:
+- site-reliability-engineering
 units:
 - learn.azdo.manage-site-reliability.1-introduction
 - learn.azdo.manage-site-reliability.2-site-reliability-engineering

@@ -17,7 +17,7 @@ prerequisites: |
   *   Describe the Azure IoT SDKs for devices and services, and how Visual Studio Code, Azure CLI, and the Azure Cloud Shell can be used to configure and develop components of an IoT solution.
 summary: |
   You will learn about the Device Provisioning Service properties and capabilities, device attestation mechanisms, device provisioning lifecycle tasks, and you will implement device enrollment (and disenrollment) using individual and group enrollment processes.
-iconUrl: /learn/achievements/iot-provisions-device-scale.svg
+iconUrl: /training/achievements/iot-provisions-device-scale.svg
 levels:
 - intermediate
 roles:
@@ -28,6 +28,8 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
+subjects:
+- iot
 modules:
 - learn.wwl.examine-device-provisioning-service-terms-concepts
 - learn.wwl.examine-device-provisioning-service-coding-tools-access

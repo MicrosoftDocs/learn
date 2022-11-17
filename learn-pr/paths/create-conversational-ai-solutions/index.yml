@@ -15,7 +15,7 @@ prerequisites: |
   - Experience programming with C# or Python. If you are new to programming, consider completing the [Take your first steps with C#](../csharp-first-steps/index.yml) or [Python for beginners](../beginner-python/index.yml) learning path first.
 summary: |
   Conversational AI solutions are based on interactions between human users and AI agents called _bots_. In this learning path, you'll learn how to build bots that can be delivered on Microsoft Azure.
-iconUrl: /learn/achievements/create-conversational-ai-solutions.svg
+iconUrl: /training/achievements/create-conversational-ai-solutions.svg
 levels:
 - intermediate
 roles:
@@ -27,6 +27,8 @@ products:
 - azure-cognitive-services
 - azure-language-understanding
 - azure-sdks
+subjects:
+- artificial-intelligence
 modules:
 - learn.wwl.design-bot-conversation-flow
 - learn.wwl.create-bot-with-bot-framework-composer

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-data-storage-solution-for-relational-data.design-for-sql-server-azure-vm
-title: Design for SQL Server on Azure VM
+title: Design for SQL Server on Azure Virtual Machines
 metadata:
-  title: Design for SQL Server on Azure VM
-  description: "Design for SQL Server on Azure VM"
-  ms.date: 03/02/2022
+  title: Design for SQL Server on Azure Virtual Machines
+  description: "Design for SQL Server on Azure Virtual Machines"
+  ms.date: 11/04/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

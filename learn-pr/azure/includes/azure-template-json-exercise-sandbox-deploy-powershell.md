@@ -1,9 +1,9 @@
 ---
-author: johndowns
+author: davidsmatlak
 ms.prod: learning-azure
 ms.topic: include
 ms.date: 11/14/2021
-ms.author: jodowns
+ms.author: davidsmatlak
 ---
 [!INCLUDE [Introduction (PowerShell)](azure-template-exercise-sandbox-intro-powershell.md)]
 

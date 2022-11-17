@@ -45,7 +45,7 @@ ExpressRoute is one of three solutions that you can use to connect your on-premi
 
 ### Site-to-site VPN
 
-An Azure site-to-site VPN connection enables you to connect your on-premises network to Azure over an IPsec tunnel to build a hybrid network solution. You configure an on-premises VPN device with a public IP address. You connect this device to an Azure virtual network through an Azure virtual network gateway.
+An Azure site-to-site VPN connection allows you to connect your on-premises network to Azure over an IPsec tunnel to build a hybrid network solution. You'd configure an on-premises VPN device with a public IP address. You'd connect this device to an Azure virtual network through an Azure virtual network gateway.
 
 ### Point-to-site VPN
 

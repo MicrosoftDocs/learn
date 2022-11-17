@@ -21,7 +21,7 @@ A database account is a container for managing one or more databases. Before we 
 
 1. In the **Create a resource** menu, select **Databases**, and then search for and select **Azure Cosmos DB**. The **Select API option** pane appears. 
 
-1. In the **Core (SQL) - Recommended** option, select **Create** so that we can create a Cosmos DB trigger and input/output bindings. The **Create Azure Cosmos DB Account - Core (SQL)** pane appears.
+1. In the **Azure Cosmos DB for NoSQL** option, select **Create** so that we can create a Cosmos DB trigger and input/output bindings. The **Create Azure Cosmos DB Account - Azure Cosmos DB for NoSQL** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -60,9 +60,9 @@ Let's use the Data Explorer tool to create a database and container.
 
     | Setting | Value | Description |
     |---|---|---|
-    | Database id | Select **Create new**, and enter *func-io-learn-db* for the database id | Database names can be 1 to 255 characters long, and cannot contain /, \\, #, ?, or a trailing space.<br>You' can enter whatever you want, but we're using *func-io-learn-db* in this module. |
+    | Database id | Select **Create new**, and enter *func-io-learn-db* for the database id | Database names can be 1 to 255 characters long, and cannot contain /, \\, #, ?, or a trailing space.<br>You can enter whatever you want, but we're using *func-io-learn-db* in this module. |
     | Database Max RU/s | 4000 |Accept the default throughput of 4000 request units per second (RU/s). To reduce latency, you can scale up the performance later. |
-    | Container id | *Bookmarks* | Container IDs have the same character requirements as database names. |
+    | Container id | *Bookmarks* | Container IDs have the same character requirements as database names. We're using *Bookmarks* in this module.|
     | Partition key | /id  | The partition key specifies how the documents in Azure Cosmos DB collections are distributed across logical data partitions. You'll use the *Partition key* setting as a convenience because you're not concerned with database performance in this module. To learn more about Azure Cosmos DB partition key strategies, explore the Microsoft Learn Azure Cosmos DB modules. |
 
     Accept the defaults for all the other settings.
@@ -90,7 +90,7 @@ You want to add data to your **Bookmarks** container. You'll use Data Explorer t
      ```json
      {
          "id": "docs",
-         "url": "https://docs.microsoft.com/azure"
+         "url": "https://learn.microsoft.com/azure"
      }
      ```
 
@@ -118,7 +118,7 @@ You want to add data to your **Bookmarks** container. You'll use Data Explorer t
     ```json
     {
         "id": "learn",
-        "url": "https://docs.microsoft.com/learn"
+        "url": "https://learn.microsoft.com/training"
     }
     ```
 
@@ -140,7 +140,7 @@ You want to add data to your **Bookmarks** container. You'll use Data Explorer t
 
     :::image type="content" source="../media/5-db-bookmark-collection-small.png" alt-text="Screenshot of SQL API data showing collection of items in bookmarks container of the func-io-learn-db." lightbox="../media/5-db-bookmark-collection.png":::
 
-Your **Bookmarks** container has five items. In this scenario, if a request arrives with "id=docs", it will look up that ID in your Bookmarks container, and return the URL `https://docs.microsoft.com/azure`. Let's make an Azure function that looks up values in your Bookmarks container.
+Your **Bookmarks** container has five items. In this scenario, if a request arrives with "id=docs", it will look up that ID in your Bookmarks container, and return the URL `https://learn.microsoft.com/azure`. Let's make an Azure function that looks up values in your Bookmarks container.
 
 ## Create your function
 
@@ -246,7 +246,7 @@ Now that your binding is defined, we can use it in your function. You need to ma
     };
     ```
 
-1. In the command bar, select **Save**. The **Logs** pane appears, showing you have `Connected!`
+1. In the command bar, select **Save**. Select **Filesystem Logs** in the drop-down at the top center of the logs pane (which displays **App Insights Logs** by default). The **Logs** pane appears, showing you have `Connected!`
 
 Let's examine what this code is doing.
 
@@ -262,7 +262,7 @@ Let's examine what this code is doing.
 
 1. Select **function.json** from the dropdown list in your **`<functionapp> \ HttpTrigger2 \`** path.
 
-1. Modify the values for `id` and `partitionKey` so that they accept a parameter of `{id}`. Your **function.json** code should resemble the following example, where `your-database_DOCUMENTDB` is replaced with the name of your Cosmos DB database.
+1. Modify the values for `id` and `partitionKey` so that they accept a parameter of `{id}`. Your **function.json** code should resemble the following example, where `your-database` is replaced with the name of your Cosmos DB database.
 
     ```json
     {
@@ -316,12 +316,10 @@ Let's examine what this code is doing.
     if ($bookmark) {
         $status = [HttpStatusCode]::OK
         $body = @{ url = $bookmark.url }
-        ContentType = "application/json"
     }
     else {
         $status = [HttpStatusCode]::NotFound
         $body = "No bookmarks found"
-        ContentType = "text/plain"
     }
 
     Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
@@ -330,7 +328,7 @@ Let's examine what this code is doing.
     })
     ```
 
-1. In the command bar, select **Save**. The **Logs** pane appears, showing you have `Connected!`
+1. In the command bar, select **Save**. Select **Filesystem Logs** in the drop-down at the top center of the logs pane (which displays **App Insights Logs** by default). The **Logs** pane appears, showing you have `Connected!`
 
 Let's examine what this code is doing.
 
@@ -346,7 +344,7 @@ Let's examine what this code is doing.
 
 1. Select **function.json** from the dropdown list in your **`<functionapp> \ HttpTrigger2 \`** path.
 
-1. Modify the values for `id` and `partitionKey` so that they accept a parameter of `{id}`. Your **function.json** code should resemble the following example, where `your-database_DOCUMENTDB` is replaced with the name of your Cosmos DB database.
+1. Modify the values for `id` and `partitionKey` so that they accept a parameter of `{id}`. Your **function.json** code should resemble the following example, where `your-database` is replaced with the name of your Cosmos DB database.
 
     ```json
     {
@@ -400,7 +398,7 @@ Let's examine what this code is doing.
 
     ```json
     {
-      "url": "https://docs.microsoft.com/azure"
+      "url": "https://learn.microsoft.com/azure"
     }
     ```
 

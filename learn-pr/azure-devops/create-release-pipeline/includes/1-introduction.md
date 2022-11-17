@@ -8,9 +8,10 @@ In this module, you'll continue your journey with the Tailspin team as they set 
 
 After completing this module, you'll be able to:
 
-- Define what continuous delivery is, why it's important, and what tools you can use
-- Create a basic release pipeline in Azure Pipelines that deploys a web application to Azure App Service
-- Examine pipeline analytics to understand the health and history of your releases
+- Define what continuous delivery is, why it is important, and what tools you can use.
+- Create a basic release pipeline in Azure Pipelines that deploys a web application to Azure
+  App Service.
+- Examine pipeline analytics to understand the health and history of your releases.
 
 ## Prerequisites
 
@@ -27,7 +28,7 @@ If you want to start with this learning path, set up a development environment o
 - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
 - A [GitHub](https://github.com/join?azure-portal=true) account
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-- [.NET 5.0 SDK](https://dotnet.microsoft.com/download/dotnet/5.0?azure-portal=true)
+- [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0?azure-portal=true)
 - [Git](https://git-scm.com/downloads?azure-portal=true)
 
 You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps. But here you'll use Azure DevOps to deploy to Azure resources in your Azure subscription.
@@ -54,4 +55,4 @@ You met the _Space Game_ web team at Tailspin Toys in previous modules. As a ref
 
 :::row-end:::
 
-Mara has prior experience with DevOps. She's helping the team adopt a more streamlined process by using Azure DevOps.
+Mara has prior experience with DevOps. She's helping the team adopt a streamlined process by using Azure DevOps.

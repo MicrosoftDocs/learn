@@ -1,4 +1,4 @@
-In this module, you’ve learned how to design a solution to log and monitor Azure resources. You should now be able to:
+In this module, you’ve learned how to design solutions for high availability. You should now be able to:
 
 - Identify the availability requirements of Azure resources 
 
@@ -20,15 +20,14 @@ In this module, you’ve learned how to design a solution to log and monitor Azu
 
 ### Learn more with self-paced training
 
-- [Design a geographically distributed application - Learn | Microsoft Docs](/learn/modules/design-a-geographically-distributed-application/)
+- [Design a geographically distributed application](/training/modules/design-a-geographically-distributed-application/)
 
-- [Microsoft Azure Well-Architected Framework - Reliability - Learn | Microsoft Docs](/learn/modules/azure-well-architected-reliability/)
+- [Microsoft Azure Well-Architected Framework - Reliability](/training/modules/azure-well-architected-reliability/)
 
-- [Describe high-availability and disaster-recovery strategies - Learn | Microsoft Docs](/learn/modules/describe-high-availability-disaster-recovery-strategies/)
+- [Describe high-availability and disaster-recovery strategies](/training/modules/describe-high-availability-disaster-recovery-strategies/)
 
-- [Introduction to Azure Front Door - Learn](/learn/modules/intro-to-azure-front-door/)
+- [Introduction to Azure Front Door](/training/modules/intro-to-azure-front-door/)
 
-- [Describe high availability and disaster recovery strategies - Learn](/learn/modules/describe-high-availability-disaster-recovery-strategies/)
+- [Describe high availability and disaster recovery strategies](/training/modules/describe-high-availability-disaster-recovery-strategies/)
 
-- [Explore IaaS and PaaS platform tools for high availability and disaster recovery - Learn](/learn/modules/explore-iaas-paas-platform-tools-for-high-availability-disaster-recovery/)
-
+- [Explore IaaS and PaaS platform tools for high availability and disaster recovery](/training/modules/explore-iaas-paas-platform-tools-for-high-availability-disaster-recovery/)

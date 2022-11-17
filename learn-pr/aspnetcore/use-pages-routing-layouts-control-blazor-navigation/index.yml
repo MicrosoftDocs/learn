@@ -23,7 +23,7 @@ prerequisites: |
   - C# extension for Visual Studio Code
   - Experience with using the command line
   - Knowledge of Blazor components
-iconUrl: /learn/achievements/use-pages-routing-layouts-improve-blazor-navigation.svg
+iconUrl: /training/achievements/use-pages-routing-layouts-improve-blazor-navigation.svg
 levels: 
   - intermediate
 roles: 
@@ -33,6 +33,8 @@ products:
   - blazor
   - dotnet-core
   - aspnet
+subjects:
+- development-tools
 units:
 - learn.use-pages-routing-layouts-improve-blazor-navigation.introduction
 - learn.use-pages-routing-layouts-improve-blazor-navigation.use-router-component-control-apps-navigation

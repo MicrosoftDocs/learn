@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.introduction-regression-models.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This knowledge check validates what you've learned in this module so far.
+  ms.date: 03/10/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+  - content: The tidymodels framework was used in R to train a regression model from a dataset of sales data. To evaluate the model to ensure it will predict accurately with new data, what should be done? 
+    choices:
+    - content: Split the data randomly into two subsets. Use one subset to train the model and the other subset to evaluate it.
+      isCorrect: true
+      explanation: Correct. A common way to train and evaluate models is to hold back an evaluation dataset when training.
+    - content: Use all the data to train the model. Then use all the data to evaluate it.
+      isCorrect: false
+      explanation: Incorrect. Training and evaluating the model by using the same data won't indicate if the model generalizes well. 
+    - content: Train the model by using only the feature columns. Then evaluate it by using only the label column.
+      isCorrect: false
+      explanation: Incorrect. Features and labels are needed to train and evaluate a regression model.
+  - content: A regression model specification was created by using the linear_reg() function in the tidymodels parsnip package. What should be done to train the model? 
+    choices:
+    - content: Call the predict() function and specify the model specification, formula, and data.
+      isCorrect: false
+      explanation: Incorrect. The predict() function applies a trained model to make predictions.
+    - content: Call the recipe() function and specify the model specification, formula, and data.
+      isCorrect: false
+      explanation: Incorrect. The recipe() function creates a description of what steps should be applied for data preprocessing. 
+    - content: Call the fit() function and specify the model specification, formula, and data.
+      isCorrect: true
+      explanation: Correct. After a model specification is made, model training can then be done with either the fit() function or fit_xy() function. 
+  - content: A regression model was trained by using the tidymodels framework. When it's evaluated with test data, the model achieves an R-squared metric of 0.95. What does this metric say about the model?
+    choices:
+    - content: The model is 95% accurate.
+      isCorrect: false
+      explanation: Incorrect. The R-squared metric is a measure of how much of the variance can be explained by the model. Model accuracy describes the proportion of the labels the model predicted correctly. 
+    - content: The model explains most of the variance between predicted and actual values.
+      isCorrect: true
+      explanation: Correct. The R-squared metric is a measure of how much of the variance can be explained by the model.
+    - content: On average, predictions are 0.95 higher than actual values.
+      isCorrect: false
+      explanation: Incorrect. The R-squared metric is a measure of how much of the variance can be explained by the model. 

@@ -1,16 +1,16 @@
-A basic SQL query in Azure Cosmos DB SQL API would be similar to the same query in any other database platform; it would be composed of a few essential components:
+A basic SQL query in Azure Cosmos DB for NoSQL would be similar to the same query in any other database platform; it would be composed of a few essential components:
 
 - The ``SELECT`` keyword
 - Either an asterisk to indicate all possible fields or an inclusive list of fields
 - The ``FROM`` keyword followed by the data source (container)
 
-Here is a basic query that returns all fields from a container:
+Here's a basic query that returns all fields from a container:
 
 ```sql
 SELECT * FROM products
 ```
 
-Here is another query that returns only a few fields from a container:
+Here's another query that returns only a few fields from a container:
 
 ```sql
 SELECT 
@@ -22,7 +22,7 @@ FROM
     products
 ```
 
-One interesting caveat here is that it doesn’t matter what name is used here for the source, as this will reference the source moving forward. You can think of this as a variable. It’s not uncommon to use a single letter from the container name:
+One interesting caveat here's that it doesn’t matter what name is used here for the source, as this will reference the source moving forward. You can think of this as a variable. It’s not uncommon to use a single letter from the container name:
 
 ```sql
 SELECT

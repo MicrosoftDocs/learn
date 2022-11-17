@@ -17,18 +17,18 @@ abstract: |
 prerequisites: |
  - Completed the UWP version of the Astronomy Picture of the Day tutorial.
  - (Optionally) Completed the introduction to Adaptive Cards tutorial.
-iconUrl: /learn/achievements/integrating-app-into-windows-10-timeline.svg
+iconUrl: /training/achievements/integrating-app-into-windows-10-timeline.svg
 levels:
 - beginner
 roles:
 - developer
 products:
 - windows
+subjects:
+- identity-access
 units:
 - learn-windows.integrating-app-into-windows-10-timeline.1-introducing-windows-timeline
 - learn-windows.integrating-app-into-windows-10-timeline.2-integrating-your-app-into-windows-10-timeline
 - learn-windows.integrating-app-into-windows-10-timeline.3-summary
 badge:
   uid: learn-windows.integrating-app-into-windows-10-timeline.badge
-  
-

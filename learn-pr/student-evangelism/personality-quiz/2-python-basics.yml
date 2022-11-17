@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Python basics needed for a super sleuth personality quiz
   description: This unit gives a high-level overview of some basic Python concepts used throughout this project. 
   ms.date: 04/14/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

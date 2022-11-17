@@ -11,7 +11,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-blazor
 prerequisites: None
-iconUrl: /learn/achievements/build-blazor-webapps.svg
+iconUrl: /training/achievements/build-blazor-webapps.svg
 levels:
 - beginner
 - intermediate
@@ -21,6 +21,8 @@ products:
 - blazor
 - aspnet-core
 - dotnet
+subjects:
+- development-tools
 modules:
 - learn.intro-to-blazor
 - learn.build-web-app-blazor-webassembly-vscode

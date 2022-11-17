@@ -1,25 +1,27 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.plan-implement-azure-cosmos-db-sql-api
 metadata:
-  title: Plan and implement Azure Cosmos DB SQL API
-  description: Plan and implement Azure Cosmos DB SQL API
-  ms.date: 12/22/2021
+  title: Plan and implement Azure Cosmos DB for NoSQL
+  description: Plan and implement Azure Cosmos DB for NoSQL
+  ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Plan and implement Azure Cosmos DB SQL API
+title: Plan and implement Azure Cosmos DB for NoSQL
 prerequisites: |
   Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
 summary: |
-  Plan for configuration options and provisioning choices with a new Azure Cosmos DB SQL API account.
-iconUrl: /learn/achievements/azure-cosmos-db-get-plan-implement.svg
+  Plan for configuration options and provisioning choices with a new Azure Cosmos DB for NoSQL account.
+iconUrl: /training/achievements/azure-cosmos-db-get-plan-implement.svg
 levels:
 - intermediate
 roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- database
 modules:
 - learn.wwl.plan-resource-requirements
 - learn.wwl.configure-azure-cosmos-db-sql-api

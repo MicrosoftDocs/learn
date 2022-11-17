@@ -3,7 +3,7 @@ uid: learn.wwl.optimize-query-performance-sql-server
 metadata:
   title: Optimize query performance in Azure SQL
   description: Optimize query performance in Azure SQL
-  ms.date: 05/06/2022
+  ms.date: 05/25/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ prerequisites: |
   - Basic understanding of relational database concepts
 summary: |
   Analyze individual query performance and determine where improvements can be made. Explore performance-related Dynamic Management Objects. Investigate how indexes and database design affect queries.
-iconUrl: /learn/achievements/optimize-query-performance-in-sql-server.svg
+iconUrl: /training/achievements/optimize-query-performance-in-sql-server.svg
 levels:
 - intermediate
 roles:
@@ -27,8 +27,10 @@ roles:
 products:
 - azure-sql-database
 - sql-server
+subjects:
+- database
 modules:
-- learn.wwl.describe-sql-server-query-plans
+- learn.wwl.explore-query-performance-optimization
 - learn.wwl.explore-performance-based-design
 - learn.wwl.evaluate-performance-improvements
 trophy:

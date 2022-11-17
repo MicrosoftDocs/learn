@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.catalog-data-artifacts-use-microsoft-purview.classify-data
+title: Classify and label data
+metadata:
+  title: Classify and label data
+  description: "Classify and label data"
+  ms.date: 07/22/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-classify-data.md)]

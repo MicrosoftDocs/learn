@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 The Linker will walk through every bit of your code and remove anything you don't have a direct reference to, including your own code.
 
 If that sounds a little dangerous, it is. The Linker can only work with what it sees. In complex apps, you often use abstractions and other techniques to hide final implementations. These techniques hide references from the Linker, which means you can end up with a program that won't run because it doesn't have all the classes and assemblies it needs.
@@ -175,4 +177,4 @@ When you define types through namespaces, every type declared in the specified n
 
 ## Create a distribution package
 
-After you have a compacted app, you can create a distribution package. Distribution packages are often zipped containers that contain the app and all its assets. Each platform uses packages a little differently. The best way to stay up to date is to check the documentation from each vendor. You can also find excellent guides on [docs.microsoft.com](/).
+After you have a compacted app, you can create a distribution package. Distribution packages are often zipped containers that contain the app and all its assets. Each platform uses packages a little differently. The best way to stay up to date is to check the documentation from each vendor. You can also find excellent guides in [Microsoft Learn](/?azure-portal=true).

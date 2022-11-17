@@ -4,7 +4,7 @@ metadata:
   moduleType: standard  
   title: Deploy serverless APIs with Azure Functions, Logic Apps, and Azure SQL Database
   description: In the language of your choice (Node.js, Python, or .NET), learn how to deploy an Azure Function that adds real-time data to an Azure SQL Database and triggers an Azure Logic App for notifications, all with GitHub Actions for CI/CD.
-  ms.date: 3/24/2021  
+  ms.date: 09/07/2022  
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial 
@@ -19,7 +19,7 @@ prerequisites: |
   - Ability to navigate the Azure portal
   - Familiarity with Visual Studio Code
   - Familiarity with CI/CD concepts such as GitHub Actions
-iconUrl: /learn/achievements/deploy-backend-apis.svg
+iconUrl: /training/achievements/deploy-backend-apis.svg
 levels:
   - intermediate
 roles:
@@ -34,7 +34,9 @@ products:
   - vs-code
   - azure-functions
   - azure-logic-apps
-units:  
+subjects:
+- serverless-compute
+units:
 - learn.azure.deploy-backend-apis.1-introduction
 - learn.azure.deploy-backend-apis.2-create-apis-azure-functions
 - learn.azure.deploy-backend-apis.3-exercise-deploy-resources

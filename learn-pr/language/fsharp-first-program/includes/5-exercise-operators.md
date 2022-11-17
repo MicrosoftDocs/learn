@@ -18,9 +18,9 @@ In this part, you add support for reading from the console.
 
    ```fsharp
    printfn "Type the first number"
-   let firstNo = Console.ReadLine()
+   let firstNo = System.Console.ReadLine()
    printfn "Type the second number"
-   let secondNo = Console.ReadLine()
+   let secondNo = System.Console.ReadLine()
    printfn "First %s, Second %s" firstNo secondNo
    ```
 

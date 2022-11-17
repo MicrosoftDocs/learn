@@ -19,7 +19,7 @@ abstract:  |
 prerequisites: | 
   - Have your Rust development environment already set up.
   - Know how to create, edit, and run Rust code by using Cargo or by working in the Rust playground.
-iconUrl: /learn/achievements/rust-understand-common-concepts.svg 
+iconUrl: /training/achievements/rust-understand-common-concepts.svg 
 levels:
 - beginner
 roles:
@@ -28,6 +28,8 @@ roles:
 products:
 - vs-code
 - azure
+subjects:
+- development-tools
 units:
 - learn.language.rust-if-else-expressions.0-introduction
 - learn.language.rust-if-else-expressions.1-arrays

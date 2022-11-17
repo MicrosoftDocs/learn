@@ -20,7 +20,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, select the Upload/Download files icon, in the drop-down menu, select Upload and upload the following files **ManufacturingVMazuredeploy.json** and **ManufacturingVMazuredeploy.parameters.json** into the Cloud Shell home directory from the source folder **F:\Allfiles\Exercises\M01**.
+2. In the toolbar of the Cloud Shell pane, select the Upload/Download files icon, in the drop-down menu, select Upload and upload the following files **ManufacturingVMazuredeploy.json** and **ManufacturingVMazuredeploy.parameters.json** into the Cloud Shell home directory from the source folder [**F:\Allfiles\Exercises\M01**](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M01).
 
 3. Deploy the following ARM templates to create the VMs needed for this exercise:
 
@@ -296,7 +296,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
     :::image type="content" source="../media/test-connection-succeeded-7c2cc7f6.png" alt-text="Screenshot of test connection succeeded":::
     
 
-Congratulations! You have successful configured connectivity between VNets by adding peerings.
+Congratulations! You have successfully configured connectivity between VNets by adding peerings.
 
 ## Task 6: Clean up resources
 

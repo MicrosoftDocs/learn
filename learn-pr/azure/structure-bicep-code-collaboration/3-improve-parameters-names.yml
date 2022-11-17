@@ -6,8 +6,8 @@ metadata:
   title: Improve parameters and names
   description: Learn how parameters, symbolic names, and resource names can improve your template's readability and maintainability.
   ms.date: 08/06/2021
-  author: pazdedav
-  ms.author: dapazd
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

@@ -3,7 +3,7 @@ uid: learn.wwl.configure-virtual-networks
 metadata:
   title: Configure virtual networks
   description: "You will learn to configure virtual networks and subnets, including IP addressing."
-  ms.date: 03/18/2022
+  ms.date: 11/04/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -20,13 +20,15 @@ abstract: |
   - Create virtual networks.
 prerequisites: |
   None
-iconUrl: /learn/achievements/virtual-network-configure.svg
+iconUrl: /training/achievements/virtual-network-configure.svg
 levels:
 - intermediate
 roles:
 - administrator
 products:
 - azure-virtual-network
+subjects:
+- networking
 units:
 - learn.wwl.configure-virtual-networks.introduction
 - learn.wwl.configure-virtual-networks.plan
@@ -36,6 +38,7 @@ units:
 - learn.wwl.configure-virtual-networks.create-public-ip-addressing
 - learn.wwl.configure-virtual-networks.associate-public-ip-addresses
 - learn.wwl.configure-virtual-networks.associate-private-ip-addresses
+- learn.wwl.configure-virtual-networks.lab-simulation-create-networks
 - learn.wwl.configure-virtual-networks.knowledge-check
 - learn.wwl.configure-virtual-networks.summary-resources
 badge:

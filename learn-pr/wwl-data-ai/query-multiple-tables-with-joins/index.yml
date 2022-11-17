@@ -18,7 +18,7 @@ abstract: |
   - Write queries that use self joins
 prerequisites: |
   Before starting this module, you should have experience of using Transact-SQL SELECT queries to retrieve and filter data from a table in a database.
-iconUrl: /learn/achievements/query-multiple-tables-with-transact-sql.svg
+iconUrl: /training/achievements/query-multiple-tables-with-transact-sql.svg
 levels:
 - beginner
 roles:
@@ -36,6 +36,8 @@ products:
 - azure-sql-managed-instance
 - azure-sqlserver-vm
 - azure-sql-virtual-machines
+subjects:
+- database
 units:
 - learn.wwl.query-multiple-tables-with-joins.introduction
 - learn.wwl.query-multiple-tables-with-joins.join-concepts

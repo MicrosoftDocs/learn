@@ -21,7 +21,7 @@ prerequisites: |
   Before starting this module, you should:
   - Be familiar with Azure services and the Azure portal
   - Have experience programming with C# or Python
-iconUrl: /learn/achievements/transcribe-speech-input-text.svg
+iconUrl: /training/achievements/transcribe-speech-input-text.svg
 levels:
 - intermediate
 roles:
@@ -32,6 +32,9 @@ roles:
 - student
 products:
 - azure-cognitive-services
+subjects:
+- custom-app-development
+- artificial-intelligence
 units:
 - learn.wwl.transcribe-speech-input-text.introduction
 - learn.wwl.transcribe-speech-input-text.create-speech-resource

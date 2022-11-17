@@ -3,7 +3,7 @@ Business-continuity and disaster-recovery requirements at the application layer 
 - *Availability targets* are typically measured by service-level objectives (SLOs) and service-level agreements (SLAs).
 - *Recovery targets* are typically measured by recovery-point objectives (RPOs) and recovery-time objectives (RTOs).
 
-These targets should be well understood by central IT and must inform many of the platform-level architectural decisions. A platform that can't meet application availability targets and recovery targets puts the business at risk.
+These targets should be well understood by central IT and must inform many of the platform-level architectural decisions. A platform that can't meet application-availability targets and recovery targets puts the business at risk.
 
 ## High availability
 

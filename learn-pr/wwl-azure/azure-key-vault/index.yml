@@ -19,7 +19,7 @@ abstract: |
   - Explore key security considers like key rotation and backup / recovery
 prerequisites: |
   - None
-iconUrl: /learn/achievements/azure-key-vault.svg
+iconUrl: /training/achievements/azure-key-vault.svg
 levels:
 - intermediate
 roles:
@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-key-vault
+subjects:
+- security
 units:
 - learn.wwl.azure-key-vault.introduction
 - learn.wwl.azure-key-vault.azure-key-vault

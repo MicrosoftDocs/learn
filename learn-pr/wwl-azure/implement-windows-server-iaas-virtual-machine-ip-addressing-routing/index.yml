@@ -30,7 +30,7 @@ prerequisites: |
   - Security-related technologies (firewalls, encryption, multi-factor authentication)
   - Windows PowerShell scripting
   - Automation and monitoring
-iconUrl: /learn/achievements/implement-windows-server-iaas-vm-ip-addressing-and-routing.svg
+iconUrl: /training/achievements/implement-windows-server-iaas-vm-ip-addressing-and-routing.svg
 levels:
 - intermediate
 roles:
@@ -42,6 +42,10 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- cloud-computing
+- virtual-machine
+- networking
 units:
 - learn.wwl.implement-windows-server-iaas-vm-ip-addressing-routing.introduction
 - learn.wwl.implement-windows-server-iaas-vm-ip-addressing-routing.implement-virtual-network

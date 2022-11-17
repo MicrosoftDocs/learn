@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.orleans-build-first-app.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check what you've learned.
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.date: 5/15/2022
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What are grains in the context of Orleans?"
+      choices:
+        - content: "Grains are streams that help developers process large series of data in real-time."
+          isCorrect: false
+          explanation: "Incorrect. Streams are a separate feature of Orleans that can utilize grains."
+        - content: "Grains manage collections of silos and the communication between them."
+          isCorrect: false
+          explanation: "Incorrect. A collection of silos is called a cluster."
+        - content: "Grains are virtual actors comprised of a user-defined identity, behavior and state."
+          isCorrect: true
+          explanation: "Correct. Grains are entities that manage behavior and state."
+        - content: "Grains handle implementation details for different storage options for persistent state, such as Azure Blob Storage."
+          isCorrect: false
+          explanation: "Incorrect. Storage providers implement different storage services that can be utilized by grains."
+    - content: "Which of the following methods is NOT defined on the `IPersistentState` interface?"
+      choices:
+        - content: "`WriteStateAsync`"
+          isCorrect: false
+          explanation: "Incorrect. `WriteStatAsync` is defined on `IPersistentState`."
+        - content: "`ReadStateAsync`"
+          isCorrect: false
+          explanation: "Incorrect. `ReadStateAsync` is defined on `IPersistentState`."
+        - content: "`ClearStateAsync`"
+          isCorrect: false
+          explanation: "Incorrect. `ClearStateAsync` is defined on `IPersistentState`."
+        - content: "`DeleteStateAsync`"
+          isCorrect: true
+          explanation: "Correct. `DeleteStateAsync` isn't defined on `IPersistentState`."
+    - content: "Which attribute should be applied to a grain constructor parameter to enable saving the state of the object?"
+      choices:
+        - content: "`StateFactory`"
+          isCorrect: false
+          explanation: "Incorrect. There's no `StateFactory` attribute available in Orleans."
+        - content: "`PersistentState`"
+          isCorrect: true
+          explanation: "Correct. `PersistentState` is the correct attribute to store state data."
+        - content: "`IGrainWithStringKey`"
+          isCorrect: false
+          explanation: "Incorrect. `IGrainWithStringKey` is used to provide grains with a string identifier."
+        - content: "`GrainState`"
+          isCorrect: false
+          explanation: "Incorrect. There's no `GrainState` attribute available in Orleans."
+    - content: "Which of the following accurately represents the order of a grain lifecycle?"
+      choices:
+        - content: "Activating → Active → Deactivating → Persisted"
+          isCorrect: true
+          explanation: "Correct. This list is the correct order of events in the grain life cycle."
+        - content: "Active → Persisted → Recycled"
+          isCorrect: false
+          explanation: "Incorrect. This list isn't the correct order of events in the grain life cycle."
+        - content: "Activating → Inactive → Persisted"
+          isCorrect: false
+          explanation: "Incorrect. This list isn't the correct order of events in the grain life cycle."
+        - content: "Active → Deactivating → Recycled → Initializing"
+          isCorrect: false
+          explanation: "Incorrect. This list isn't the correct order of events in the grain life cycle."

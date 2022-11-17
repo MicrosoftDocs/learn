@@ -9,8 +9,8 @@ You should now be able to:
 
 ## Learn more
 
-You can learn more by reviewing the following.
+You can learn more by reviewing the following. 
 
  -  [Azure App Service plan overview](/azure/app-service/overview-hosting-plans)
  -  [Scale up an app in Azure App Service](/azure/app-service/manage-scale-up)
- -  [Learn - Scale an App Service web app to efficiently meet demand with App Service scale up and scale out](/learn/modules/app-service-scale-up-scale-out/)
+ -  [Scale an App Service web app to efficiently meet demand with App Service scale up and scale out](/training/modules/app-service-scale-up-scale-out/)

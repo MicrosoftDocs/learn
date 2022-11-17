@@ -2,7 +2,7 @@ Implementing proper cloud governance requires proper business policy, protective
 
 ## Build governance maturity
 
-This unit explains the four-step process in the Cloud Adoption Framework to build a mature cloud governance solution:
+This unit explains the four-step process in the Cloud Adoption Framework to build a mature cloud-governance solution:
 
 1. **Methodology**: Understand the underlying methodology
 1. **Governance benchmark**: Assess your current-state and future-state needs
@@ -51,7 +51,7 @@ The Cloud Adoption Framework provides a [governance benchmark tool](https://cafb
 
 *Figure 2: A governance benchmark output that shows areas for improvement and a comparison between current state and future state governance requirements.*
 
-Use the governance benchmark tool for a personalized report that outlines the difference between your current state and business priorities, along with tailored resources to help you start assessing your current state and future state and establish a vision for applying the framework.
+You can use the governance benchmark tool for a personalized report that outlines the difference between your current state and business priorities, along with tailored resources to help you start assessing your current state and future state and establish a vision for applying the framework.
 
 ## Governance foundation
 

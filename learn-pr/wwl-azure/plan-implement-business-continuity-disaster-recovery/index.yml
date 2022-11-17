@@ -15,7 +15,7 @@ abstract: |
   *  Configure virtual machine (VM) replication for Azure Virtual Desktop.
   *  Configure FSLogix for multiple profile locations.
 prerequisites: ""
-iconUrl: /learn/achievements/1-plan-and-implement-business-continuity-and-disaster-recovery.svg
+iconUrl: /training/achievements/1-plan-and-implement-business-continuity-and-disaster-recovery.svg
 levels:
 - intermediate
 roles:
@@ -25,6 +25,8 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- business-continuity
 units:
 - learn.wwl.plan-implement-business-continuity-disaster-recovery.introduction
 - learn.wwl.plan-implement-business-continuity-disaster-recovery.disaster-recovery-for-azure-virtual-desktop

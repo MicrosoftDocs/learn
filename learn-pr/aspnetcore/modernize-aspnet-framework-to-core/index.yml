@@ -28,6 +28,8 @@ products:
 - dotnet
 - aspnet
 - aspnet-core
+subjects:
+- development-tools
 units:
 - learn.modernize-aspnet-framework-to-core.1-introduction
 - learn.modernize-aspnet-framework-to-core.2-why-modernize-to-aspnet-core
@@ -35,6 +37,6 @@ units:
 - learn.modernize-aspnet-framework-to-core.4-what-is-upgrade-assistant
 - learn.modernize-aspnet-framework-to-core.5-exercise-upgrade-aspnet-app
 - learn.modernize-aspnet-framework-to-core.6-summary
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 badge:
   uid: learn.modernize-aspnet-framework-to-core.badge

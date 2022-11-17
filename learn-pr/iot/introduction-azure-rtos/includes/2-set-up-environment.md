@@ -10,9 +10,9 @@ We provide two ways for setting up your environment:
 
 ## Use GitHub Codespace
 
-1. Open the [azure-rtos-learn-samples](https://github.com/Azure-Samples/azure-rtos-learn-samples) GitHub repo in browser.
+1. Fork the [azure-rtos-learn-samples](https://github.com/Azure-Samples/azure-rtos-learn-samples) GitHub repo to your own GitHub account. Codespaces requires read/write access which is why a fork is necessary.
 
-1. From the repo page, create a new codespace. Wait until the codespace is set up.
+1. From the forked repo page, create a new codespace. Wait until the codespace is set up.
 
 1. The VSCode web opens and you can see the projects in the Explorer view under `courses/threadx`. Follow the instructions of the unit to build and run the project.
 

@@ -21,7 +21,7 @@ prerequisites: |
   To get the best learning experience from this module, you should have:
     - Working experience of the Azure portal.
     - General knowledge of cloud computing.
-iconUrl: /learn/achievements/intro-to-bot-service-bot-framework-composer.svg
+iconUrl: /training/achievements/intro-to-bot-service-bot-framework-composer.svg
 levels:
   - beginner
 roles:
@@ -33,6 +33,10 @@ roles:
 products:
   - azure
   - azure-bot-service
+subjects:
+- cloud-computing
+- chatbot
+- artificial-intelligence
 units:
 - learn.azure.intro-to-bot-service-bot-framework-composer.1-introduction
 - learn.azure.intro-to-bot-service-bot-framework-composer.2-what-is-azure-bot-service

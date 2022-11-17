@@ -8,7 +8,7 @@ Attack surface reduction rules target certain software behaviors that are often 
 
 - Performing behaviors that apps don't usually initiate during normal day-to-day work.
 
-Such software behaviors are sometimes seen in legitimate applications; however, these behaviors are often considered risky because they are commonly abused by malware. Attack surface reduction rules can constrain risky behaviors and help keep your organization safe.
+Such software behaviors are sometimes seen in legitimate applications; however, these behaviors are often considered risky because they're commonly abused by malware. Attack surface reduction rules can constrain risky behaviors and help keep your organization safe.
 
 Each Attack Surface Reduction rule contains one of three settings:
 
@@ -110,7 +110,7 @@ To manage the attack surface reduction rules in mobile device management:
 
 - Use the ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules configuration service provider (CSP) to individually enable and set the mode for each rule.
 
-- Follow the mobile device management reference in [Attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules?azure-portal=true) for using GUID values.
+- Follow the mobile device management reference in [Attack surface reduction rules](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules?azure-portal=true) for using GUID values.
 
 - OMA-URI path: ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules
 
@@ -178,7 +178,7 @@ To manage the attack surface reduction rules with PowerShell:
 > [!WARNING]
 > If you manage your computers and devices with Intune, Configuration Manager, or another enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup. To allow users to define the value using PowerShell, use the "User Defined" option for the rule in the management platform.
 
-1. Type *powershell* in the Start menu, right-click Windows PowerShell, and select Run as administrator.
+1. Type *PowerShell* in the Start menu, right-click Windows PowerShell, and select Run as administrator.
 
 1. Enter the following cmdlet:
     

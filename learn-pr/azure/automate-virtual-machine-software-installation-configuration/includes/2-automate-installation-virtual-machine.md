@@ -45,16 +45,16 @@ Where:
 
 | Value | Description |
 | --- | --- |
-| `ssssssss-ssss-ssss-ssss-ssssssssssss` | This is the GUID for your Azure subscription. |
-| `[resource group name]` | This is the name of the resource group that you specified in your `az network vnet create` command. |
+| `ssssssss-ssss-ssss-ssss-ssssssssssss` | The GUID for your Azure subscription. |
+| `[resource group name]` | The name of the resource group that you specified in your `az network vnet create` command. |
 
-There are several additional options that are available when you create a virtual network, and you can retrieve a list of these options with the following command:
+There are several other options that are available when you create a virtual network, and you can retrieve a list of these options with the following command:
 
 ```azurecli
 az network vnet create --help
 ```
 
-A few of the additional options that you might want to consider adding to your virtual network are:
+A few of the other options that you might want to consider adding to your virtual network are:
 
 | Parameter | Description |
 | --- | --- |
@@ -88,17 +88,17 @@ When you use the Azure CLI to create a public IP address, Azure will return a JS
 }
 ```
 
-There are several additional options that are available when you create a public IP address, and you can retrieve a list of these options with the following command:
+There are several other options that are available when you create a public IP address, and you can retrieve a list of these options with the following command:
 
 ```azurecli
 az network public-ip create --help
 ```
 
-A few of the additional options that you might want to consider when creating your public IP address are:
+A few of the other options that you might want to consider when creating your public IP address are:
 
 | Parameter | Description |
 |---|---|
-| `--dns-name` | Specifies a globally unique DNS entry; this is useful for when you want to access your virtual machine using a DNS name rather than the IP address. |
+| `--dns-name` | Specifies a globally unique DNS entry; this entry is useful for when you want to access your virtual machine using a DNS name rather than the IP address. |
 | `--allocation-method` | Specifies `Dynamic` or `Static` to define whether the IP address can change when virtual machine is powered down; `Dynamic` is the default. |
 | `--sku` | Specifies `Basic` or `Standard` to define whether you need to have zone resiliency; `Basic` is the default, but you can pay for the `Standard` sku if you need zone resiliency. |
 | `--version` | Specifies `IPv4` or `IPv6` to define the IP address type; `IPv4` is the default. |
@@ -165,7 +165,7 @@ When you use the Azure CLI to create a rule like the preceding Azure CLI example
 }
 ```
 
-In this example, the priority value is used to tell Azure the order in which rules are applied. By default, this rule will apply to all protocols, but you can specify the protocol; for example `Tcp`, `Udp`, `Esp`, or use `*` to have the rule applied to all kinds of traffic.
+In this example, the priority value is used to tell Azure the order in which rules are applied. By default, this rule will apply to all protocols, but you can specify the protocol. For example, you can use `Tcp`, `Udp`, `Esp`, or `*` to have the rule applied to all kinds of traffic.
 
 #### Example: creating an NSG rule for HTTP access
 
@@ -199,7 +199,7 @@ When you use the Azure CLI to create a rule like the preceding example, Azure wi
 }
 ```
 
-As you saw with the preceding SSH example, the priority value is used to tell Azure the order in which rules are applied. By default, this rule will apply to all protocols, but you can specify the protocol; for example `Tcp`, `Udp`, `Esp`, or use `*` to have the rule applied to all kinds of traffic.
+As you saw with the preceding SSH example, the priority value is used to tell Azure the order in which rules are applied. By default, this rule will apply to all protocols, but you can specify the protocol. For example, you can use `Tcp`, `Udp`, `Esp`, or `*` to have the rule applied to all kinds of traffic.
 
 ### Creating a network interface
 
@@ -234,13 +234,13 @@ When you use the Azure CLI to create a network interface, Azure will return a JS
 }
 ```
 
-Like other CLI commands, there are several additional options that are available when you create a network interface, and you can retrieve a list of these options with the following command:
+Like other CLI commands, there are several more options that are available when you create a network interface, and you can retrieve a list of these options with the following command:
 
 ```azurecli
 az network nic create --help
 ```
 
-A few of the additional options that you might want to consider when creating your network interfaces are:
+A few of the other options that you might want to consider when creating your network interfaces are:
 
 | Parameter | Description |
 |---|---|
@@ -383,8 +383,8 @@ Where:
 
 | Value | Description |
 | --- | --- |
-| `iii.iii.iii.iii` | This is the internal/private IP address for your virtual machine on your virtual network. |
-| `eee.eee.eee.eee` | This is the external/public IP address for your virtual machine on the Internet. |
+| `iii.iii.iii.iii` | The internal/private IP address for your virtual machine on your virtual network. |
+| `eee.eee.eee.eee` | The external/public IP address for your virtual machine on the Internet. |
 
 As you have seen with all of the Azure CLI commands thus far, there are several optional parameters that you can specify when you're creating a virtual machine, and you can retrieve a list of these options with the following command:
 
@@ -515,8 +515,8 @@ Where:
 
 | Value | Description |
 | --- | --- |
-| `iii.iii.iii.iii` | This is the internal/private IP address for your virtual machine on your virtual network. |
-| `eee.eee.eee.eee` | This is the external/public IP address for your virtual machine on the Internet. |
+| `iii.iii.iii.iii` | The internal/private IP address for your virtual machine on your virtual network. |
+| `eee.eee.eee.eee` | The external/public IP address for your virtual machine on the Internet. |
 
 As you have seen with all of the Azure CLI commands thus far, there are several optional parameters that you can specify when you're creating a virtual machine, and you can retrieve a list of these options with the following command:
 

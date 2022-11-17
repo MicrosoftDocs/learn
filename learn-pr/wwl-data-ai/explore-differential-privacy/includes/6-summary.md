@@ -5,4 +5,4 @@ In this module, you learned how to:
 - Configure parameters for differential privacy
 - Perform differentially private data analysis
 
-To learn more about interpreting models, see [Differential Privacy](https://docs.microsoft.com/azure/machine-learning/concept-differential-privacy) in the Azure Machine Learning documentation.
+To learn more about interpreting models, see [Differential Privacy](/azure/machine-learning/concept-differential-privacy) in the Azure Machine Learning documentation.

@@ -2,9 +2,14 @@ The connectivity and reliable messaging features in Azure IoT device SDKs can he
 
 Applying proper guidance to device-side code can help you to address the following scenarios:
 
- -  Fixing a dropped network connection
- -  Switching between different network connections
- -  Reconnecting because of service transient connection errors
+- Fixing a dropped network connection
+- Switching between different network connections
+- Reconnecting because of service transient connection errors
+
+For information on IoT Hub performance and high availability, including IoT Hub failover, see the following resources:
+
+- [IoT Hub high availability and disaster recovery](/azure/iot-hub/iot-hub-ha-dr).
+- [Tutorial: Perform manual failover for an IoT hub](/azure/iot-hub/tutorial-manual-failover).
 
 ## Designing for resiliency
 

@@ -51,7 +51,7 @@ Identify the subtasks of *Centralize your core services using hub and spoke Azur
 
 1. **Introduction**
 
-    *An organization with multiple locations across the country is planning their migration to Azure. Their VM infrastructure will have central dependencies (AD, DNS, tooling services) that they will need to isolate but still allow access to. They will also have internet-facing resources, as well as on-premises connectivity that they need to include in their design.*
+    *An organization with multiple locations across the country/region is planning their migration to Azure. Their VM infrastructure will have central dependencies (AD, DNS, tooling services) that they will need to isolate but still allow access to. They will also have internet-facing resources, as well as on-premises connectivity that they need to include in their design.*
 
 2. **Implementing a hub-spoke network topology on Azure**
 
@@ -141,7 +141,7 @@ Network security groups – Used to restrict access to the services in each VNet
 
 Resources:
 
-Reference architecture: <https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/shared-services>
+Reference architecture: <https://learn.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services>
 <https://techcommunity.microsoft.com/t5/Azure/Microsoft-Azure-Hub-Spoke-model-by-Enterprise-Design-1-of-4/td-p/277896>
 <http://francescomolfese.it/en/2018/08/azure-networking-introduzione-al-modello-hub-spoke/>
 <https://azure.microsoft.com/mediahandler/files/resourcefiles/6ce2454f-eead-4b86-9a45-7434f890fea8/Mesh_and_Hub-Spoke_Networking_on_Azure.pdf>

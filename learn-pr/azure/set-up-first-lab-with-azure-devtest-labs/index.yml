@@ -20,7 +20,7 @@ prerequisites: |
   - Basic knowledge of the Azure DevTest Labs concepts of environments, artifacts, and virtual machines.
   - Experience creating and managing Azure virtual machine resources using the Azure portal at the beginner level.
   - Remote Desktop client installed. Get a [Remote Desktop client](/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients).
-iconUrl: /learn/achievements/set-up-first-lab-with-azure-devtest-labs.svg
+iconUrl: /training/achievements/set-up-first-lab-with-azure-devtest-labs.svg
 levels: 
   - beginner
 roles: 
@@ -30,6 +30,8 @@ products:
 - azure
 - azure-devtest-labs
 - azure-portal
+subjects:
+- virtual-machine
 units:
 - learn.setup-first-lab-using-azure-devtest-labs.introduction
 - learn.setup-first-lab-using-azure-devtest-labs.configure-development-lab

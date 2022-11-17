@@ -3,9 +3,9 @@ uid: learn.azure-well-architected-introduction
 metadata:
   title: Introduction to the Microsoft Azure Well-Architected Framework
   description: Learn how using key principles throughout your cloud architecture can help you design and build a solid architectural foundation that you can continuously improve.
-  ms.date: 04/22/2022
-  author: robbyatmicrosoft
-  ms.author: robbymillsap
+  ms.date: 11/03/2022
+  author: martinekuan
+  ms.author: martinek
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to the Microsoft Azure Well-Architected Framework
@@ -17,13 +17,15 @@ abstract: |
 prerequisites: |
   - Experience building or operating solutions by using core infrastructure technology such as data storage, compute, and networking
   - Experience building or operating technology systems to solve business problems
-iconUrl: /learn/achievements/azure-well-architected-introduction.svg
+iconUrl: /training/achievements/azure-well-architected-introduction.svg
 levels:
 - beginner
 roles:
 - solution-architect
 products:
 - azure
+subjects:
+- architecture
 units:
 - learn.azure-well-architected-introduction.1-introduction
 - learn.azure-well-architected-introduction.2-pillars

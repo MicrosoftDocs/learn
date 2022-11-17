@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/06/2022
+  ms.date: 11/15/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Which of the following statements best describes Azure routing?"
+  - content: "Which statement best describes Azure routing?"
     choices:
     - content: "The administrator can create system routes."
       isCorrect: false
@@ -28,7 +28,7 @@ quiz:
     - content: "When the next hop type is none, traffic is dropped."
       isCorrect: true
       explanation: "Correct. Traffic routed to the None next hop type isn't routed outside the subnet, but is dropped."
-  - content: "When creating user-defined routes, which of the following is a valid next hop types?"
+  - content: "Which is a valid next hop type?"
     choices:
     - content: "Internet"
       isCorrect: true
@@ -39,7 +39,7 @@ quiz:
     - content: "ExpressRoute"
       isCorrect: false
       explanation: "Incorrect. ExpressRoute isn't a valid next hop type."
-  - content: "A company needs to extend their private address space in Azure by providing a direct connection to Azure resources. Which of the following should be implemented?"
+  - content: "A company needs to extend their private address space in Azure by providing a direct connection to Azure resources. What should you use?"
     choices:
     - content: "User-defined route"
       isCorrect: false

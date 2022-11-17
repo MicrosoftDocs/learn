@@ -23,7 +23,7 @@ prerequisites: |
   - Basic knowledge of navigating the Azure portal
   - Basic knowledge of Azure resources
 
-iconUrl: /learn/achievements/intro-to-azure-service-health.svg
+iconUrl: /training/achievements/intro-to-azure-service-health.svg
 
 levels:
   - beginner
@@ -38,6 +38,10 @@ products:
 - azure
 - azure-service-health
 
+subjects:
+- cloud-computing
+- device-management
+- business-continuity
 units:
 - learn.intro-to-azure-service-health.introduction
 - learn.intro-to-azure-service-health.what-is-azure-service-health

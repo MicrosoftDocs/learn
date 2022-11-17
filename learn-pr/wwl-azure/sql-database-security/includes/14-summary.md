@@ -11,7 +11,7 @@ You should be able to:
 
 Microsoft Learn provides a large number of self-paced learning paths. For this lesson, we recommend the following modules. You may search and find other modules that are of interest to you.
 
- -  [Provision an Azure SQL database to store application data](/learn/modules/provision-azure-sql-db/)
- -  [Secure your Azure SQL Database](/learn/modules/secure-your-azure-sql-database/)
- -  [Configure security policies to manage data](/learn/modules/configure-security-policies-to-manage-data/)
- -  [Migrate your relational data stored in SQL Server to Azure SQL Database](/learn/modules/migrate-sql-server-relational-data/)
+ -  [Provision an Azure SQL database to store application data](/training/modules/provision-azure-sql-db/)
+ -  [Secure your Azure SQL Database](/training/modules/secure-your-azure-sql-database/)
+ -  [Configure security policies to manage data](/training/modules/configure-security-policies-to-manage-data/)
+ -  [Migrate SQL workloads to Azure SQL Databases](/training/modules/migrate-sql-workloads-azure-sql-databases/)

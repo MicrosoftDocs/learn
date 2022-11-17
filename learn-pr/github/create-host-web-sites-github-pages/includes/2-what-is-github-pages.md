@@ -1,22 +1,22 @@
-Here, we discuss the process of creating and maintaining a GitHub Pages web site.
+Here, we'll discuss the process of creating and maintaining a GitHub Pages web site.
 
-GitHub Pages are static sites hosted directly from your GitHub repository. But they're more than just a collection of static files. By making use of site generation technologies like Jekyll and Liquid, developers define dynamic templates that are processed into complete static web sites. Every time a change is committed to the source branch associated with the site, it is re-generated using the latest updates and automatically published to the target URL.
+GitHub Pages are static sites hosted directly from your GitHub repository, but they're more than just a collection of static files. By making use of site-generation technologies like Jekyll and Liquid, developers define dynamic templates that are processed into complete static web sites. Every time a change is committed to the source branch associated with the site, it's re-generated using the latest updates and automatically published to the target URL.
 
 Learn more about [Publishing sources for GitHub Pages sites](https://help.github.com/en/github/working-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites?azure-portal=true).
 
 ## Enabling GitHub Pages
 
-The first step in using GitHub Pages is to enable it from your repository's **Settings** tab. You can opt to use the `master` branch, or specify the `docs` folder within it. If you ever want to disable GitHub Pages, you can do so here.
+The first step in using GitHub Pages is to enable it from your repository's **Settings** tab. You can opt to use the `main` branch, or specify the `docs` folder within it. If you ever want to disable GitHub Pages, you can do so here.
 
 ![Enabling GitHub Pages.](../media/2-enabling-github-pages.png)
 
 ## Choosing a theme with Jekyll
 
-**Jekyll** is the static site generator used by GitHub to build your web site from the contents of your repository. In addition to providing great content convenience, it also conforms to a standard design convention. This style standardization allows for swappable themes, which you can select from the **GitHub Pages** configuration.
+**Jekyll** is the static site generator GitHub uses to build your web site from the contents of your repository. In addition to providing great content convenience, it also conforms to a standard design convention. This style standardization allows for swappable themes, which you can select from the **GitHub Pages** configuration.
 
 ![Choosing a Jekyll theme.](../media/2-choosing-jekyll-theme.png)
 
-There are a variety of themes provided by GitHub. There is also an array of commercial and open source themes available from the Jekyll community.
+GitHub provides a variety of themes. There is also an array of commercial and open-source themes available from the Jekyll community.
 
 ![Built-in Jekyll themes.](../media/2-jekyll-themes.png)
 
@@ -47,9 +47,9 @@ Learn more about [_config.yml Configuration](https://jekyllrb.com/docs/configura
 
 ## Creating and editing content
 
-Creating and editing pages on your site follows the standard GitHub experience. The files you use for your GitHub Pages web site enjoy all of the same benefits as other files in your GitHub repository, so you can edit them with any tool, create and merge branches, and link with issues or pull requests.
+Creating and editing pages on your site follows the standard GitHub experience. The files you use for your GitHub Pages web site enjoy all of the same benefits as other files in your GitHub repository, so you can edit them with any tools, create and merge branches, and link with issues or pull requests.
 
-In addition to Markdown and HTML, Jekyll supports the **Liquid** template language syntax. Liquid provides the ability for users to dynamically insert variables and basic logic flow constructs into their content files. When compiled, the final product is standard HTML.
+In addition to Markdown and HTML, Jekyll supports the **Liquid** template language syntax. Liquid lets users dynamically insert variables and basic logic flow constructs into their content files. When compiled, the final product is standard HTML.
 
 The example below shows a combination of `for` looping and variable insertion.
 

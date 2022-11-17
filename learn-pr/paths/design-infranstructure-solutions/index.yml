@@ -14,13 +14,15 @@ prerequisites: |
   - Working experience with architecting compute and network solutions.
 summary: |
   Design Infrastructure Solutions including compute, applications, networking and migrations.
-iconUrl: /learn/achievements/design-infrastructure-solutions.svg
+iconUrl: /training/achievements/design-infrastructure-solutions.svg
 levels:
 - advanced
 roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
 modules:
 - learn.wwl.design-compute-solution
 - learn.wwl.design-application-architecture

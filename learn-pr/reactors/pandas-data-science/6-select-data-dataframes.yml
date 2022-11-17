@@ -5,8 +5,8 @@ metadata:
   title: Select data in DataFrames objects
   description: Learn how to select data in DataFrames objects.
   ms.date: 04/22/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen

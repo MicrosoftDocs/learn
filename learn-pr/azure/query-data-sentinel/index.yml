@@ -21,7 +21,7 @@ prerequisites: |
   - Basic experience with Azure services
   - Basic knowledge of operational concepts such as monitoring, logging, and alerting
   - A Microsoft Sentinel instance in your Azure subscription
-iconUrl: /learn/achievements/query-data-sentinel.svg
+iconUrl: /training/achievements/query-data-sentinel.svg
 levels:
 - beginner
 roles:
@@ -29,6 +29,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
 units:
 - learn.azure.query-data-sentinel.1-introduction
 - learn.azure.query-data-sentinel.2-exercise-setup

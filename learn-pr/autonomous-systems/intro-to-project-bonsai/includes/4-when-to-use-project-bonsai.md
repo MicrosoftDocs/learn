@@ -42,7 +42,7 @@ learning algorithm.
   automation systems?
 
 You cannot train a Bonsai brain without providing a simulation in which it can
-learn. But not all simulations are appropriate for machine teaching. It is
+learn. But not all simulations are appropriate for machine teaching. It's
 important to take stock of any existing simulation assets you may already have
 access to, and whether your organization has the necessary expertise to modify
 an existing simulation model to make it machine teaching compatible or develop a
@@ -57,7 +57,7 @@ Consider using Project Bonsai when you meet the following criteria:
   to build one.
 - You have access to subject matter experts who understand the control system.
 
-As mentioned, it is  also ideal, but not essential, that you have AI experts in
+As mentioned, it's  also ideal, but not essential, that you have AI experts in
 your organization who have experience optimizing your automation systems.
 
 ### Example of when to use Project Bonsai

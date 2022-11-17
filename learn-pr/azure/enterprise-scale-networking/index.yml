@@ -3,7 +3,7 @@ uid: learn.azure.enterprise-scale-networking
 metadata:
   title: Network design principles for enterprise-scale architecture
   description: Network design principles for enterprise-scale architecture
-  ms.date: 04/15/2022
+  ms.date: 11/16/2022
   author: jknightly
   ms.author: joknight
   ms.topic: interactive-tutorial
@@ -21,13 +21,16 @@ abstract: |
 prerequisites: | 
   - Understanding of Azure networking concepts like ExpressRoute and virtual networks
   - Understanding of networking concepts like IP addressing, DNS, and routing
-iconUrl: /learn/achievements/enterprise-scale-networking.svg
+iconUrl: /training/achievements/enterprise-scale-networking.svg
 levels:
 - advanced
 roles:
 - solution-architect
 products:
 - azure
+subjects:
+- networking
+- architecture
 units:
 - learn.azure.enterprise-scale-networking.1-introduction
 - learn.azure.enterprise-scale-networking.2-ip-addressing

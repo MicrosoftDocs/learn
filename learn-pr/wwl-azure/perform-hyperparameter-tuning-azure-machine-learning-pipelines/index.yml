@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines
+metadata:
+  title: Perform hyperparameter tuning with Azure Machine Learning
+  description: "Perform hyperparameter tuning with Azure Machine Learning"
+  ms.date: 11/17/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Perform hyperparameter tuning with Azure Machine Learning
+summary: Learn how to perform hyperparameter tuning with a sweep job in Azure Machine Learning.
+abstract: |
+  In this module, you'll learn how to:
+  - Define a hyperparameter search space.
+  - Configure hyperparameter sampling.
+  - Select an early-termination policy.
+  - Run a sweep job.
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure-machine-learning
+subjects:
+- machine-learning
+units:
+- learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.introduction
+- learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.define-search-space
+- learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.configure-sampling-method
+- learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.configure-early-termination
+- learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.use-sweep-job-hyperparameter-tuning
+- learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.exercise-run-sweep-job
+- learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.knowledge-check
+- learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.summary
+badge:
+  uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.badge

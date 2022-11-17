@@ -6,6 +6,9 @@ metadata:
   ms.date: 03/19/2021
   author: dominicbetts
   ms.author: dobett
+  ms.reviewer: avneets
+  manager: lizross
+  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage IoT Central applications with the REST API
@@ -25,7 +28,7 @@ prerequisites: |
   - Experience using REST APIs at the beginner level. 
   - Experience administering an IoT Central application using the web UI at the intermediate level. 
   - Experience managing device templates and devices in an IoT central application using the web UI at the intermediate level.
-iconUrl: /learn/achievements/manage-iot-central-apps-with-rest-api.svg
+iconUrl: /training/achievements/manage-iot-central-apps-with-rest-api.svg
 levels:
 - intermediate
 roles:
@@ -34,6 +37,8 @@ roles:
 products:
 - azure
 - azure-iot-central
+subjects:
+- iot
 units:
 - learn.iot.manage-iot-central-apps-with-rest-api.introduction
 - learn.iot.manage-iot-central-apps-with-rest-api.authorize-api

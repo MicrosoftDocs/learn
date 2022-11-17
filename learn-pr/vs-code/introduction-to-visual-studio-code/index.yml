@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.introduction-to-visual-studio-code
+metadata:
+  title: Introduction to Visual Studio Code          
+  description: "Evaluate whether Visual Studio Code is appropriate for your development work."             
+  ms.date: 10/20/2022            
+  author: kjo-msft      
+  ms.author: karinjohnson          
+  ms.topic: interactive-tutorial  
+  ms.prod: learning-vs-code         
+
+title: Introduction to Visual Studio Code
+
+summary: "Evaluate development scenarios in which you could choose Visual Studio Code as your source code editor. Examine the features of Visual Studio Code such as the editor, debugger, and source control."
+
+abstract: |
+  By the end of this module, you'll be able to:
+    - Evaluate whether Visual Studio Code is an appropriate source code editor for your development work.
+    - Describe how Visual Studio Code can be customized with extensions to configure a development environment to meet your needs.
+
+prerequisites: |
+  - Basic familiarity with code editors or integrated development environments (IDEs) and their features such as source control and debugging.
+  - Basic understanding of the concept of using software plugins or extensions to customize applications.
+
+iconUrl: /learn/achievements/introduction-to-visual-studio-code.svg
+
+levels:
+  - beginner
+
+roles:
+  - developer
+
+products:
+ - vs-code
+
+subjects:
+  - digital-application-innovation
+
+units:
+- learn.introduction-to-visual-studio-code.introduction
+- learn.introduction-to-visual-studio-code.what-is-visual-studio-code
+- learn.introduction-to-visual-studio-code.how-visual-studio-code-works
+- learn.introduction-to-visual-studio-code.when-to-use-visual-studio-code
+- learn.introduction-to-visual-studio-code.knowledge-check
+- learn.introduction-to-visual-studio-code.summary
+
+badge:
+  uid: learn.introduction-to-visual-studio-code.badge

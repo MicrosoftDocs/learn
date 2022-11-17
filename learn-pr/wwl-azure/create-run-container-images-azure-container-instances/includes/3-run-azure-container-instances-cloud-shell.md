@@ -44,7 +44,7 @@ You create a container by providing a name, a Docker image, and an Azure resourc
         --dns-name-label $DNS_NAME_LABEL --location <myLocation> \
     ```
 
-    In the commands above, `$DNS_NAME_LABEL` specifies your DNS name. The image name, `mcr.microsoft.com/azuredocs/aci-helloworld`, refers to a Docker image hosted on Docker Hub that runs a basic Node.js web application.
+    In the commands above, `$DNS_NAME_LABEL` specifies your DNS name. The image name, `mcr.microsoft.com/azuredocs/aci-helloworld`, refers to a Docker image that runs a basic Node.js web application.
 
 ## Verify the container is running
 

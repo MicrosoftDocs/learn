@@ -4,7 +4,7 @@ One of the biggest issues when working with distributed applications is how to m
 
 Secrets are a type of resource present in Kubernetes that let you store sensitive information in a safer way than using them in plain text format in pods and deployments. A Secret can contain a small amount of data. They're designed to store passwords and other sensitive data.
 
-Secrets encode their data in a Base64 format, which isn't an encryption algorithm, but Kubernetes is smart enough to see that the information is encoded and hide it from command outputs such as `kubectl describe`, which doesn't happen with plain text configuration. A secret is always scoped to a single namespace, which avoids added exposure of sensitive data to other workloads in the cluster.
+Secrets encode their data in a Base64 format, which isn't an encryption algorithm, but Kubernetes is smart enough to see that the information is encoded and hides it from command outputs such as `kubectl describe`, which doesn't happen with plain text configuration. A secret is always scoped to a single namespace, which avoids added exposure of sensitive data to other workloads in the cluster.
 
 ### Types of Secrets
 

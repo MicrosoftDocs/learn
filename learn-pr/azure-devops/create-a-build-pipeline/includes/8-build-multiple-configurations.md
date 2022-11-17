@@ -1,4 +1,4 @@
-In the previous exercises, you implemented a pipeline that builds the *Space Game* website. You started with a script that performs each build action and mapped each action to its corresponding pipeline task. The output of the pipeline is a *.zip* file that contains the compiled web app.
+In the previous exercises, you implemented a pipeline that builds the *Space Game* website. You started with a script that performed each build action and mapped each action to its corresponding pipeline task. The output of the pipeline is a *.zip* file that contains the compiled web app.
 
 In this exercise, you'll use a template to define build tasks that can build any configuration defined in the project file. Templates let you define your logic one time and then reuse it several times. Templates combine the content of multiple YAML files into a single pipeline.
 
@@ -30,7 +30,7 @@ A better solution is to use a template.
 
 ## What are templates?
 
-A *template* lets you define common build tasks one time and reuse those tasks multiple times.
+A *template* lets you define common build tasks once and reuse those tasks multiple times.
 
 You'll call a template from the parent pipeline as a build step. You can pass parameters into a template from the parent pipeline.
 
@@ -38,7 +38,7 @@ Mara can define tasks to build and publish the app as a template, and then apply
 
 ## Define the template
 
-Remember that a template enables you to define common build tasks one time and reuse those tasks multiple times. You call a template from its parent template as a build step, and pass parameters into a template from the parent pipeline.
+Remember that a template lets you define common build tasks one time and reuse those tasks multiple times. You call a template from its parent template as a build step and pass parameters into a template from the parent pipeline.
 
 You'll now create a template that can build any configuration that's defined in the project file.
 
@@ -50,12 +50,12 @@ You'll now create a template that can build any configuration that's defined in 
 
     In practice, you can put a template file in any location. You don't need to put them in the *templates* directory.
 
-1. In Visual Studio Code, select **File > New File**. Next, to save the blank file as *build.yml* in your project's *templates* directory, select **File > Save**. (For example, *~/mslearn-tailspin-spacegame-web/templates*.)
+1. In Visual Studio Code, select **File > New File**. Next, to save the blank file as *build.yml* in your project's *templates* directory, select **File > Save**. An example would be *~/mslearn-tailspin-spacegame-web/templates*.
 
     > [!IMPORTANT]
     > As before, in Windows, in the **Save as type** list, select **YAML**.
 
-1. In Visual Studio Code, add this code to *build.yml*.
+1. In Visual Studio Code, add this code to *build.yml*:
 
     [!code-yml[](code/8-build.yml?highlight=1-2,6,9,13,18)]
 
@@ -69,13 +69,13 @@ You'll now create a template that can build any configuration that's defined in 
 
 You'll now call the template that you just built from the pipeline. You'll do so one time for the Debug configuration and then repeat the process for the Release configuration.
 
-1. In Visual Studio Code, modify *azure-pipelines.yml* as you see here.
+1. In Visual Studio Code, modify *azure-pipelines.yml* as you see here:
 
     [!code-yml[](code/8-azure-pipelines.yml?highlight=41-43, 45-47)]
 
-    This file looks like the original, except that it replaces the build and publish tasks with calls to the template that performs the same tasks.
+    This file looks like the original, except that it replaces the build and publishes tasks with calls to the template that does the same tasks.
 
-    You see that the template is called one time for each configuration. To pass the configuration name to the template, each `template` task uses the `parameters` argument.
+    You'll see that the template is called one time for each configuration. To pass the configuration name to the template, each `template` task uses the `parameters` argument.
 
 ## Run the pipeline
 
@@ -91,19 +91,19 @@ You'll now push your changes to GitHub and see the pipeline run.
 
 1. From Azure Pipelines, trace the build through each of the steps, as you did earlier.
 
-    As the pipeline runs, you see that the process expands the tasks within the template. The tasks that build and publish the project are run two times, once for each build configuration.
+    As the pipeline runs, you'll see that the process expands the tasks within the template. The tasks that build and publish the project are run two times, once for each build configuration.
 
-    :::image type="content" source="../media/8-template-tasks.png" alt-text="Azure Pipelines showing the expanded template tasks. Included are build and publish tasks for both the Debug and Release configurations.":::
+    :::image type="content" source="../media/8-template-tasks.png" alt-text="Screenshot of Azure Pipelines showing the expanded template tasks. Included are build and publish tasks for both the Debug and Release configurations.":::
 
 1. When the build completes, go back to the summary page, and select the published artifact as you did before. Expand the drop folder.
 
-    You see that the pipeline produces a *.zip* file for both the Debug configuration and the Release configuration.
+    You'll see that the pipeline produces a *.zip* file for both the Debug configuration and the Release configuration.
 
-    :::image type="content" source="../media/8-artifacts-explorer.png" alt-text="Azure Pipelines showing the packaged application for both Debug and Release configurations.":::
+    :::image type="content" source="../media/8-artifacts-explorer.png" alt-text="Screenshot of Azure Pipelines showing the packaged application for both Debug and Release configurations.":::
 
 ## Merge the branch into main
 
-At this point, you have a working build pipeline that accomplishes everything Mara needs for right now.
+At this point, you have a working build pipeline that accomplishes everything Mara needs right now.
 
 In practice, you'd submit a *pull request* that merges your `build-pipeline` branch into the `main` branch.
 

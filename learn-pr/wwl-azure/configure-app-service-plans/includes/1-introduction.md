@@ -11,7 +11,7 @@ You meet these goals providing scale up and down, and scale in and out. Your sca
 
 ## Skills measured
 
-App Service plans and scaling are part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+App Service plans and scaling are part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Deploy and manage Azure compute resources (20–25%)
 
@@ -22,7 +22,7 @@ Create and configure Azure App Service
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
  -  Identify features and usage cases of the Azure App Service.
  -  Select an appropriate Azure App Service plan pricing tier.

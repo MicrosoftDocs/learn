@@ -35,10 +35,10 @@ Clearly, Hadoop MapReduce's standard speculative execution approach suffers from
 
 1. _M. Zaharia, A. Konwinski, A. Joseph, R. Katz, and I. Stoica (2008). [Improving MapReduce Performance in Heterogeneous Environments](https://dl.acm.org/doi/10.5555/1855741.1855744) OSDI_
 2. _T. White (2011). [Hadoop: The Definitive Guide](http://shop.oreilly.com/product/0636920010388.do) 2nd Edition O'Reilly_
-3. _Z. Guo and G. Fox (2012). [Improving MapReduce Performance in Heterogeneous Network Environments and Resource Utilization](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.300.7002) In Proceedings of the 2012 12th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing_
+3. _Z. Guo and G. Fox (2012). [Improving MapReduce Performance in Heterogeneous Network Environments and Resource Utilization](https://citeseerx.ist.psu.edu/doc_view/pid/e8416af240aca62a4a7b9ffa3589a4e93576981f) In Proceedings of the 2012 12th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing_
 
 ***
 
 [^1]: <https://dl.acm.org/doi/10.5555/1855741.1855744> "M. Zaharia, A. Konwinski, A. Joseph, R. Katz, and I. Stoica (2008). *Improving MapReduce Performance in Heterogeneous Environments* OSDI"
 [^2]: <http://shop.oreilly.com/product/0636920010388.do> "T. White (2011). *Hadoop: The Definitive Guide* 2nd Edition O'Reilly"
-[^3]: <http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.300.7002> "Z. Guo and G. Fox (2012). *Improving MapReduce Performance in Heterogeneous Network Environments and Resource Utilization* In Proceedings of the 2012 12th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing"
+[^3]: <https://citeseerx.ist.psu.edu/doc_view/pid/e8416af240aca62a4a7b9ffa3589a4e93576981f> "Z. Guo and G. Fox (2012). *Improving MapReduce Performance in Heterogeneous Network Environments and Resource Utilization* In Proceedings of the 2012 12th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing"

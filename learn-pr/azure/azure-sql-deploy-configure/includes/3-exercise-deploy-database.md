@@ -9,12 +9,12 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
 
 1. In the top search bar, enter **Azure SQL** and wait for results so you can review what appears.  
 
-    There are a lot of items and categories here, but basically this menu gives you filters for what you can search on. Let's break them down:
-    * **Services**: If you select this, you can see your existing resources (that is, already deployed) all together. For example, if you selected Azure SQL, you would see all of your SQL virtual machines, databases, logical servers, managed instances, and pools.
-    * **Resources**: This searches based on existing resource names. For example, if you searched for "adventureworks," any resources with "adventureworks" in the name would be returned here.
-    * **Marketplace**: This allows you to deploy new resources from Azure Marketplace.
-    * **Documentation**: This searches docs.microsoft.com for relevant documentation.
-    * **Resource groups**: This allows you to search based on resource group name.
+    There are many items and categories here, but this menu gives you filters to search with. Let's break them down:
+    * **Services**: With this filter you can see your existing resources all together. For example, if you selected Azure SQL, you would see all of your SQL virtual machines, databases, logical servers, managed instances, and pools.
+    * **Resources**: This search is based on existing resource names. For example, if you searched for "adventureworks," any resources with "adventureworks" in the name would be returned here.
+    * **Marketplace**: This filter allows you to deploy new resources from Azure Marketplace.
+    * **Documentation**: This searches `learn.microsoft.com` for relevant documentation.
+    * **Resource groups**: This filter allows you to search based on resource group name.
 
 1. Select **Azure SQL** under **Marketplace**. This step will bring you to the Azure SQL create experience.
 
@@ -36,6 +36,7 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
     | | **Server admin login**: cloudadmin |
     | | **Password/Confirm Password**:  Use a complex password that meets [strong password requirements](/sql/relational-databases/security/strong-passwords?azure-portal=true). Note this password for later use.|
     |**Want to use SQL elastic pool?**     |   No      |
+    |**Workload environment**| Leave the default of **Production** |
     |**Compute + storage**     |  Leave the default of **General Purpose**, **Gen5, 2 vCores, 32 GB storage**       |
     |**Backup storage redundancy**     |  Leave the default of **Geo-redundant backup storage**       |
 
@@ -53,11 +54,11 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
 
 1. Leave remaining defaults and select **Next: Additional settings**.
 
-1. On the **Additional settings** tab, for Azure SQL Database you have the option to select the AdventureWorksLT database as the sample in the Azure portal. For this exercise, for **Use existing data**, select **Sample**.  
+1. On the **Additional settings** tab for Azure SQL Database, you can select the AdventureWorksLT database as the sample in the Azure portal. For this exercise, for **Use existing data**, select **Sample**.  
 
 1. Select **Review + create**. Here, you can review your deployment selections and the Azure Marketplace terms. Review all the options to ensure that all of your selections match the exercise instructions, and then select **Create** to deploy the service.  
 
-1. You're redirected to a pane where you can monitor the status of your deployment. You can also go to your resource group and select **Deployments** to open this same pane. It gives you the various deployments, their status, and more information. This deployment typically takes less than five minutes to deploy.  
+1. You're redirected to a pane where you can monitor the status of your deployment. You can also go to your resource group and select **Deployments** to open this same pane. It gives you the various deployments, their status, and more information. This deployment typically takes less than five minutes.  
 
     :::image type="content" source="../media/3-deployment-underway-2.png" alt-text="Screenshot of resources being deployed.":::
 
@@ -73,7 +74,7 @@ Next, let's look at the basics of connecting to your deployed SQL database and c
 
 ### What does connecting to SQL Server 2019 look like?
 
-Before you look at the SQL database that you just deployed, let's review what connecting to an instance of SQL Server 2019 might look like. Typically, you'd open SQL Server Management Studio (SSMS) and connect to the local instance of SQL Server 2019. You might use Windows Authentication for the connection. The selections would be similar to the following image.  
+Before you look at the SQL database that you deployed, let's review what connecting to an instance of SQL Server 2019 might look like. Typically, you'd open SQL Server Management Studio (SSMS) and connect to the local instance of SQL Server 2019. You might use Windows Authentication for the connection. The selections would be similar to the following image.  
 
 :::image type="content" source="../media/3-local-connect.png" alt-text="Screenshot that shows how to connect to SQL Server 2019 in SSMS.":::  
 
@@ -85,7 +86,7 @@ Keep that in mind as a reference for comparison as you complete the following st
 
 ### Connect to your SQL Database by using SSMS
 
-1. First, we need the logical server name. On the **Overview** pane for your database, locate the **Server name** information. This will be the fully qualified domain name (FQDN) of your logical server, for example, *aw-server0406.database.windows.net*. Hover your mouse at the end of the name and select **Copy to clipboard**.
+1. First, we need the logical server name. On the **Overview** pane for your database, locate the **Server name** information. This is the fully qualified domain name (FQDN) of your logical server, for example, *aw-server0406.database.windows.net*. Hover your mouse at the end of the name and select **Copy to clipboard**.
 
 1. Let's connect to your Azure SQL Database logical server. On your local device, open SSMS if it's not open already, and create a new connection. Select **Connect** > **Database Engine**.  
 

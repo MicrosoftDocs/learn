@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In this exercise, you complete the UI for a simple Tip Calculator by adding three controls to your screen: `UITextField`, `UIButton`, and `UILabel`.
 
 This unit is a continuation of the previous exercise. Use your existing solution as the starting point for these steps.

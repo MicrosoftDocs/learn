@@ -1,12 +1,12 @@
-Azure Database for PostgreSQL is available in both single server and multiserver versions.
+Azure Database for PostgreSQL is available in multiserver versions.
 
 As a database developer with many years experience of running and managing on-premises PostgreSQL installations, you want to explore how Azure Database for PostgreSQL supports and scales its features.
 
 In this unit, you'll explore the pricing, version support, replication, and scaling options of Azure Database for PostgreSQL.
 
-## Azure Database for PostgreSQL, Single Server
+## Azure Database for PostgreSQL
 
-The Azure Database for PostgreSQL service is an implementation of the community version of PostgreSQL. The single server version of this service is suitable for a broad range of traditional, transactional workloads. The service provides the common features used by typical PostgreSQL systems, including geo-spatial support and full-text search.
+The Azure Database for PostgreSQL service is an implementation of the community version of PostgreSQL. The service provides the common features used by typical PostgreSQL systems, including geo-spatial support and full-text search.
 
 Microsoft has adapted PostgreSQL for the Azure platform, and it's closely integrated with many Azure services. The Azure Database for PostgreSQL service is fully managed by Microsoft. Microsoft handle updates and patches to the software, and provide an SLA of 99.99% availability. This means you can just focus on the databases and applications running, using the service.
 
@@ -35,7 +35,7 @@ You can fine-tune the number of processor cores and storage that you require. Yo
 >
 > If you only change the storage size of backup options, there's no interruption in service.
 
-The pricing tier and the processing resources allocated determine the maximum number of concurrent connections the service will support. For example, if you select the General Purpose pricing tier and allocate 64 virtual cores, the service supports 1900 concurrent connections. The Basic Tier, with two virtual cores, handles up to 100 concurrent connections. Azure itself requires five of these connections to monitor the server. If you exceed the number of available connections, clients will receive the error **FATAL: sorry, too many clients already**. See [Limits in Azure Database for PostgreSQL - Single Server](https://docs.microsoft.com/azure/postgresql/concepts-limits#maximum-connections) for more information.
+The pricing tier and the processing resources allocated determine the maximum number of concurrent connections the service will support. For example, if you select the General Purpose pricing tier and allocate 64 virtual cores, the service supports 1900 concurrent connections. The Basic Tier, with two virtual cores, handles up to 100 concurrent connections. Azure itself requires five of these connections to monitor the server. If you exceed the number of available connections, clients will receive the error **FATAL: sorry, too many clients already**. 
 
 Prices can change. Visit the [Azure Database for PostgreSQL pricing](https://azure.microsoft.com/pricing/details/postgresql/server/) page for the latest information.
 
@@ -55,17 +55,9 @@ Azure Database for PostgreSQL is a highly available service. It contains built-i
 
 ### Supported PostgreSQL versions
 
-The Azure Database for PostgreSQL service currently supports PostgreSQL version 11, back to version 9.5. You specify which version of PostgreSQL to use when you create an instance of the service. Microsoft aim to update the service as new versions of PostgreSQL become available, and will maintain compatibility with the the previous two major versions.
+The Azure Database for PostgreSQL service currently supports PostgreSQL version 11, back to version 9.5. You specify which version of PostgreSQL to use when you create an instance of the service. Microsoft aim to update the service as new versions of PostgreSQL become available, and will maintain compatibility with the previous two major versions.
 
 Azure automatically manages upgrades to your databases between minor versions of PostgreSQL—but not major versions. For example, if you have a database that uses PostgreSQL version 10, Azure can automatically upgrade the database to version 10.1. If you want to switch to version 11, you must export your data from the databases in the current service instance, create a new instance of the Azure Database for PostgreSQL service, and import your data into this new instance.
-
-## Azure Database for PostgreSQL, HyperScale (Citus)
-
-The Hyperscale version of the Azure Database for PostgreSQL service is a multiserver implementation of PostgreSQL. Clients connect to a *Coordinator* node that distributes work across a number of *Worker* nodes. Each worker node is a PostgreSQL server in its own right, and all worker nodes operate independently of each other. You use this architecture to allocate many more processing and storage resources than are available in the single server model, providing increased scalability and power. This service is suitable for workloads in excess of 100 GB in size, real-time analytics, and high-throughput transactional processing.
-
-When you create an instance of the Azure Database for PostgreSQL HyperScale (Citus) service, you specify the number of worker nodes, and the size of the nodes. You also specify the resources for the coordinator node.
-
-[![Image showing the configuration page for the Hyperscale version of the service](../media/3-hyperscale-configuration.png)](../media/3-hyperscale-configuration.png#lightbox)
 
 ### Coordinator and worker nodes
 
@@ -81,9 +73,9 @@ You can also create *reference* tables. These tables contain lookup data, such a
 
 Finally, you can create *local* tables. A local table isn't sharded, but is stored on the coordinator node. Use local tables for holding small tables with data that's unlikely to be required by joins. Examples include the names of users and their login details.
 
-## Replicate data in Azure Database for PostgreSQL, Single Server
+## Replicate data in Azure Database for PostgreSQL
 
-The Hyperscale version of Azure Database for PostgreSQL is inherently distributed, supporting replication and sharding. The Single Server version of this service supports read-only replication. Read-only replicas are useful for handling read-intensive workloads. Client connections can be spread across replicas, easing the burden on a single instance of the service. If your clients are located in different regions of the world, you use cross-region replication to position data close to each set of clients, and reduce latency.
+Read-only replicas are useful for handling read-intensive workloads. Client connections can be spread across replicas, easing the burden on a single instance of the service. If your clients are located in different regions of the world, you use cross-region replication to position data close to each set of clients, and reduce latency.
 
 You can also use replicas as part of a contingency plan for disaster recovery. If the master server becomes unavailable, you might still be able to connect to a replica.
 
@@ -148,7 +140,7 @@ If you've configured read-only replicas, you must add a firewall rule to each on
 
 ### Client connection libraries
 
-If you're writing your own client applications, you must use the appropriate database driver to connect to a PostgreSQL database. Many of these libraries are programming-language dependent. They are maintained by independent third parties. Azure Database for PostgreSQL supports client libraries for Python, PHP, Node.js, Java, Ruby, Go, C# (.NET), ODBC, C, and C++. You'll find a list of the currently supported libraries online at [Connection libraries for Azure Database for PostgreSQL - Single Server](https://docs.microsoft.com/azure/postgresql/concepts-connection-libraries).
+If you're writing your own client applications, you must use the appropriate database driver to connect to a PostgreSQL database. Many of these libraries are programming-language dependent. They are maintained by independent third parties. Azure Database for PostgreSQL supports client libraries for Python, PHP, Node.js, Java, Ruby, Go, C# (.NET), ODBC, C, and C++.
 
 ### Client retry logic
 
@@ -167,7 +159,6 @@ Much PostgreSQL functionality is encapsulated in extensions. Extensions are pack
 - Full-text search
 - Indexes (bloom, btree_gist, and btree_gin)
 - The plpgsql language
-- Hyperscale
 - PostGIS
 - Many administrative functions
 

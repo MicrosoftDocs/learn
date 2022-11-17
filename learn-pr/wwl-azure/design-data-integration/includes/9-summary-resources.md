@@ -1,49 +1,39 @@
-In this module, you have learned about various Azure data integration and data analysis solutions and how to choose what is appropriate for your scenario. You have understood how to
-
-- Design a data integration solution with Azure Data Factory
-
-- Design a data integration solution with Azure Data Lake
-
-- Design a data integration and analytics solution with Azure Databricks
-
-- Design a data integration and analytics solution with Azure Synapse Analytics 
-
-- Design a strategy for hot/warm/cold data path
-
-- Design Azure Stream Analytics solution for Data Analysis
+In this module, you learned about Azure data integration and data analysis solutions. You explored integration and analytics options offered by Azure Data Factory, Azure Data Lake, Azure Databricks, and Azure Synapse Analytics. You discovered how to optimize your strategy for hot, warm, and cold data paths. You reviewed how to design an Azure Stream Analytics solution for data analysis.
 
 ## Learn more with Azure documentation
 
-- [Azure Data Factory](https://azure.microsoft.com/services/data-factory/)
+- Read about [Azure Data Factory](https://azure.microsoft.com/services/data-factory/).
 
-- [Azure Databricks](https://azure.microsoft.com/services/databricks/)
+- Read about [Azure Databricks](https://azure.microsoft.com/services/databricks/).
 
-- [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake/)
+- Read about [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake/).
 
-- [Azure Synapse SQL architecture](/azure/synapse-analytics/sql/overview-architecture)
+- Examine the [Azure Synapse SQL architecture](/azure/synapse-analytics/sql/overview-architecture).
 
-- [Azure Synapse Link for Azure Cosmos DB](/azure/cosmos-db/synapse-link)
+- Get an [overview of Azure Synapse Link for Azure Cosmos DB](/azure/cosmos-db/synapse-link).
 
-- [Transact-SQL features supported in Azure Synapse SQL](/azure/synapse-analytics/sql/overview-features)
+- Understand [Analytics end-to-end with Azure Synapse](/azure/architecture/example-scenario/dataplate2e/data-platform-end-to-end).
 
-- [Understand stream processing](/learn/modules/ingest-data-streams-with-azure-stream-analytics/2-understand-stream-processing) 
+- Understand [Transact-SQL features supported in Azure Synapse SQL](/azure/synapse-analytics/sql/overview-features).
 
-- [Overview of Azure Stream Analytics Cluster](/azure/stream-analytics/cluster-overview)
+- Understand [stream processing](/training/modules/ingest-data-streams-with-azure-stream-analytics/2-understand-stream-processing).
+
+- Get an [overview of Azure Stream Analytics Cluster](/azure/stream-analytics/cluster-overview).
 
 ## Learn more with self-paced training
 
-- [Data integration at scale Azure Data Factory](/learn/paths/data-integration-scale-azure-data-factory/)
+- Use [data integration at scale with Azure Data Factory](/training/paths/data-integration-scale-azure-data-factory/).
 
-- [Explore Azure database and analytics services](/learn/modules/azure-database-fundamentals/)
+- Discover [Azure database and analytics services](/training/modules/azure-database-fundamentals/).
 
-- [Explore concepts of data analytics](/learn/modules/explore-concepts-of-data-analytics/)
+- Review [concepts of data analytics](/training/modules/explore-concepts-of-data-analytics/).
 
-- [Introduction to Azure Data Factory - Learn](/learn/modules/intro-to-azure-data-factory/)
+- Review an [introduction to Azure Data Factory](/training/modules/intro-to-azure-data-factory/).
 
-- [Describe Azure Databricks - Learn](/learn/modules/describe-azure-databricks/)
+- Work with [data streams by using Azure Stream Analytics](/training/modules/introduction-to-data-streaming/).
 
-- [Introduction to Azure Synapse Analytics - Learn](/learn/modules/introduction-azure-synapse-analytics/)
+## Learn more with optional hands-on exercises
 
-- [Work with data streams by using Azure Stream Analytics - Learn](/learn/modules/introduction-to-data-streaming/)
+- Explore [Azure Databricks (interactive exercise)](/training/modules/describe-azure-databricks/). _This module requires an Azure subscription with administrative access permissions_.
 
-
+- Explore [Azure Synapse Analytics (interactive exercise)](/training/modules/introduction-azure-synapse-analytics/). _This module requires an Azure subscription with administrative access permissions_.

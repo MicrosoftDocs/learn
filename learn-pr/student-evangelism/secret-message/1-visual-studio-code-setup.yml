@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Check that Visual Studio Code is ready to decode messages
   description: This unit helps you to make sure Visual Studio Code is ready to write the decoder code.
   ms.date: 04/14/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

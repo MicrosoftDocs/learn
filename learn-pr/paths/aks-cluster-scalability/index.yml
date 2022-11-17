@@ -18,7 +18,7 @@ prerequisites: |
   - Ability to navigate the Azure portal 
   - Basic knowledge of Kubernetes and its concepts 
   - Basic knowledge of developing and deploying applications on Kubernetes 
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - advanced
 roles:
@@ -30,6 +30,9 @@ roles:
 - student
 products:
 - azure
+subjects:
+- development-tools
+- cloud-computing
 modules:
 - learn.aks-application-autoscaling-native
 - learn.aks-app-scaling-keda

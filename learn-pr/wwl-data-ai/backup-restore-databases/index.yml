@@ -19,7 +19,7 @@ prerequisites: |
   - Basic understanding of SQL Server file storage.
   - Familiarity with SQL Server database files for data and log.
   - Familiarity with purpose and management of SQL Server transaction log.
-iconUrl: /learn/achievements/backup-and-restore-databases.svg
+iconUrl: /training/achievements/backup-and-restore-databases.svg
 levels:
 - intermediate
 roles:
@@ -30,6 +30,8 @@ products:
 - azure
 - azure-sql-database
 - sql-server
+subjects:
+- business-continuity
 units:
 - learn.wwl.backup-restore-databases.introduction
 - learn.wwl.backup-restore-databases.backup-restore-sql-server-running-azure-virtual-machines

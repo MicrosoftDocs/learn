@@ -3,21 +3,22 @@ uid: learn.data-ai.data-engineering-processes.summary
 title: Summary
 metadata:
   title: Summary
-  description: Summary
-  ms.date: 01/31/2019
+  description: "Summary"
+  ms.date: 11/10/2022
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/5-summary.md)]
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
-
   - content: "Which role works with Azure Cognitive Services, Cognitive Search, and the Bot Framework?"
-    choices: 
+    choices:
     - content: "A data engineer"
       isCorrect: false
       explanation: "Data engineers are responsible for the provisioning and configuration of both on-premises and cloud data platform technologies."
@@ -27,9 +28,8 @@ quiz:
     - content: "An AI engineer"
       isCorrect: true
       explanation: "Correct. Artificial intelligence (AI) engineers work with AI services such as Cognitive Services, Cognitive Search, and the Bot Framework."
-
-  - content: "Which Azure data platform is commonly used to process data in an ELT framework?"
-    choices: 
+  - content: "Which Microsoft Intelligent Data Platform is commonly used to process data in an ELT framework?"
+    choices:
     - content: "Azure Data Factory"
       isCorrect: true
       explanation: "Correct. Azure Data Factory is a cloud-integration service that orchestrates the movement of data between various data stores."

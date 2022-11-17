@@ -53,7 +53,7 @@ prerequisites: |
   - Basic experience with on-premises SQL Server installations
   - Familiarity with what Azure and “the cloud” are
   - Navigation of the Azure portal
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 badge:
   uid: learn.azure.ms-learn-live.badge
 
@@ -71,6 +71,10 @@ products:
 - azure-app-service
 - azure-sql-database
 
+subjects:
+- cloud-computing
+- migration
+- storage
 units:
 - learn.azure.ms-learn-live.1-introduction
 - learn.azure.ms-learn-live.2-session-1-prep

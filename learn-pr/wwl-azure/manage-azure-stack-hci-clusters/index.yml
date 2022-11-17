@@ -23,7 +23,7 @@ prerequisites: |
   - Familiarity with the key features of Windows Server
   - Familiarity with the concept of virtualization
   - Familiarity with the architecture, core capabilities, and primary use cases of Azure Stack HCI
-iconUrl: /learn/achievements/manage-azure-stack-hci-clusters.svg
+iconUrl: /training/achievements/manage-azure-stack-hci-clusters.svg
 levels:
 - intermediate
 roles:
@@ -34,6 +34,9 @@ roles:
 - technology-manager
 products:
 - azure
+subjects:
+- cloud-computing
+- data-management
 units:
 - learn.wwl.manage-azure-stack-hci-clusters.introduction
 - learn.wwl.manage-azure-stack-hci-clusters.cluster

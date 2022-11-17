@@ -18,13 +18,15 @@ abstract: |
 prerequisites: |
   * You should be experienced with developer concepts and terminology.
   * An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /learn/achievements/azure-key-vault-implement.svg
+iconUrl: /training/achievements/azure-key-vault-implement.svg
 levels:
 - intermediate
 roles:
 - developer
 products:
 - azure-key-vault
+subjects:
+- cloud-security
 units:
 - learn.wwl.implement-azure-key-vault.introduction
 - learn.wwl.implement-azure-key-vault.explore

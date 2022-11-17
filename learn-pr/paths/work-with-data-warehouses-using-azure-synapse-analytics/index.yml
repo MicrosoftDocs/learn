@@ -13,13 +13,15 @@ prerequisites: |
   * It is recommended that students have completed Data Fundamentals before starting this learning path.
 summary: |
   Explore the tools and techniques that can be used to work with Modern Data Warehouses productively and securely within Azure Synapse Analytics.
-iconUrl: /learn/achievements/work-with-data-warehouses-using-azure-synapse-analytics.svg
+iconUrl: /training/achievements/work-with-data-warehouses-using-azure-synapse-analytics.svg
 levels:
 - intermediate
 roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- data-warehousing
 modules:
 - learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics
 - learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads

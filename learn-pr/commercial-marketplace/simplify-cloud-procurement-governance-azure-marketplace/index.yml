@@ -17,7 +17,7 @@ abstract: |
   - Learn how to find and try software in Azure Marketplace
   - Discover the benefits of buying cloud software through Microsoft
   - Learn how to manage your organization's software procurement with Azure Marketplace
-iconUrl: /learn/achievements/ccc-commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace.svg
+iconUrl: /training/achievements/ccc-commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace.svg
 levels:
 - beginner
 prerequisites: |
@@ -30,6 +30,9 @@ roles:
 products:
 - azure
 - azure-marketplace
+subjects:
+- cloud-computing
+- marketing-sales
 units:
 - learn.simplify-cloud-procurement-governance-azure-marketplace.1-introduction
 - learn.simplify-cloud-procurement-governance-azure-marketplace.2-find-try-software-azure-marketplace

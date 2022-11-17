@@ -16,11 +16,11 @@ The Tailspin web team has finished their experiment with private build agents. L
 
 **Mara:** Good point, Tim. Because we set up that build configuration on a Git branch, those changes are isolated from the main sources. We can leave the build agent running a bit longer while you demo this to the other teams.
 
-**Tim:** Sounds good. Thanks for your help here. This was all relatively easy to set up. And now I know a little bit more about how VMs work on Azure!
+**Tim:** Sounds good. Thanks for your help! This was all relatively easy to set up. And now I know a little bit more about how VMs work on Azure!
 
 ## How is the team measuring up?
 
-In the _Assess your existing software development process_ module, Mara performed a [value stream mapping exercise](/learn/modules/assess-your-development-process/4-assess-process-efficiency?azure-portal=true) to help the team analyze their current release cycle process.
+In the _Assess your existing software development process_ module, Mara performed a [value stream mapping exercise](/training/modules/assess-your-development-process/4-assess-process-efficiency?azure-portal=true) to help the team analyze their current release cycle process.
 
 Recall that the *activity ratio*, or efficiency, is process time divided by total lead time.
 
@@ -28,7 +28,7 @@ $${Activity\ ratio\ =\ }{\dfrac{Process\ time}{Total\ lead\ time}}$$
 
 The Tailspin web team initially determined that they were 23 percent efficient against this metric.
 
-Although the team has not yet transitioned to a full delivery cycle by using DevOps processes, they've already reduced some inefficiencies.
+Although the team hasn't yet transitioned to a full delivery cycle by using DevOps processes, they've already reduced some inefficiencies.
 
 So far, the team has reduced:
 
@@ -40,7 +40,7 @@ So far, the team has reduced:
     They did this by moving their build process to Azure Pipelines. Azure Pipelines automatically notifies Amita when a build is available, so the developers no longer need to update Amita's spreadsheet.
 * The time it takes Amita to test new features from **three days** to **one day**.
 
-    They did this by unit testing their code. Because unit tests are run each time a change moves through the build pipeline, fewer bugs and regressions reach Amita, which enables her to complete each manual test pass much faster.
+    They did this by unit testing their code. Because unit tests are run each time a change moves through the build pipeline, fewer bugs and regressions reach Amita, which enables her to complete each manual tests pass much faster.
 
 These changes reduce the total lead time from 22 days to 15 days. Substitute these numbers into the equation and we get:
 
@@ -48,7 +48,7 @@ $${Activity\ ratio\ =\ }{\dfrac{5\ days}{15\ days}}{ = .33}$$
 
 Multiply the result by 100% and you get **33%**.
 
-Although there's always room for improvement, this is a very positive change for the team. Not only do customers receive value more quickly, the Tailspin team now spends less time waiting and more time doing what they enjoy most: delivering features they know their customers will love.
+Although there's always room for improvement, this is a positive change for the team. Not only do customers receive value more quickly, the Tailspin team now spends less time waiting and more time doing what they enjoy most: delivering features they know their customers will love.
 
 Even management is beginning to take notice. The team plans to share their secret with management after they've had some more time to prove that the process works.
 
@@ -68,7 +68,7 @@ The focus of this learning path is on building applications and receiving build 
 
 You and the team have made a lot of progress, but the big release is coming up. How will the team deploy their build artifacts to development, test, and staging environments so they can run further test and verify their work? If you want to work along with them and learn how to configure release pipelines that continuously build, test, and deploy your applications, go to [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true).
 
-For more self-paced, hands-on learning around Azure DevOps, also check out [Azure DevOps Labs](https://www.azuredevopslabs.com?azure-portal=true).
+For more self-paced, hands-on learning around Azure DevOps, check out [Azure DevOps Labs](https://www.azuredevopslabs.com?azure-portal=true).
 
 ## Learn more
 
@@ -91,4 +91,4 @@ If you're interested in creating your own VM images for use with Azure Pipelines
 
 For more hands-on practice working with virtual machines on Azure, check out the [Administer infrastructure resources in Azure](../../../paths/administer-infrastructure-resources-in-azure/index.yml?azure-portal=true) learning path.
 
-We also mentioned how you can use Bicep to automate the process of creating build agents. To learn more about Bicep, see [Deploy and manage resources in Azure by using Bicep](/learn/paths/bicep-deploy?azure-portal=true).
+We also mentioned how you can use Bicep to automate the process of creating build agents. To learn more about Bicep, see [Deploy and manage resources in Azure by using Bicep](/training/paths/bicep-deploy?azure-portal=true).

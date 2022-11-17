@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-files-file-sync.identify-components
-title: Identify file sync components
+title: Identify Azure File Sync components
 metadata:
-  title: Identify file sync components
-  description: "Identify file sync components"
-  ms.date: 04/15/2022
+  title: Identify Azure File Sync components
+  description: "Identify Azure File Sync components"
+  ms.date: 11/17/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

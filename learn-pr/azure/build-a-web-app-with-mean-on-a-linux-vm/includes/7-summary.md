@@ -7,7 +7,7 @@ To see the MEAN stack in action, you created an Ubuntu virtual machine on Azure 
 With your MEAN stack in place, you created a basic book inventory web application. To summarize, the web application uses:
 
 * **MongoDB** to store information about books.
-* **Express** to route each HTTP request to the appropriate handler.
+* **Express.js** to route each HTTP request to the appropriate handler.
 * **AngularJS** to connect the user interface with the program's business logic.
 * **Node.js** to host the server-side application.
 
@@ -24,7 +24,7 @@ In this module, you got a sense of how the MEAN stack works and brought up a bas
 Learn more about the MEAN stack components and other Node.js packages you used in this module.
 
 * [MongoDB](https://www.mongodb.com?azure-portal=true)
-* [Express](https://expressjs.com?azure-portal=true)
+* [Express.js](https://expressjs.com?azure-portal=true)
 * [AngularJS](https://angularjs.org?azure-portal=true)
 * [Node.js](https://nodejs.org?azure-portal=true)
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-pipelines-azure-machine-learning.create-pipeline
+title: Create a pipeline
+metadata:
+  title: Create a pipeline
+  description: "Create a pipeline"
+  ms.date: 11/17/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-create-pipeline.md)]

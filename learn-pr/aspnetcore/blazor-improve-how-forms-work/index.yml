@@ -24,7 +24,7 @@ prerequisites: |
   - Experience with using the command line
   - Knowledge of Blazor components
   - Knowledge of Blazor routing and layouts
-iconUrl: /learn/achievements/use-forms-in-blazor-web-apps.svg
+iconUrl: /training/achievements/use-forms-in-blazor-web-apps.svg
 levels: 
   - intermediate
 roles:
@@ -34,6 +34,8 @@ products:
   - blazor
   - dotnet-core
   - aspnet
+subjects:
+- development-tools
 units:
 - learn-pr.use-forms-in-blazor-web-apps.introduction
 - learn-pr.use-forms-in-blazor-web-apps.attach-csharp-code-dom-events-blazor-event-handlers

@@ -2,13 +2,13 @@ Continuous security validation should be added at each step from development thr
 
 This approach aims to switch the conversation with the security team from approving each release to consenting to the CI/CD process and monitor and audit the process at any time.
 
-When building green field applications, the diagram below highlights the critical validation points in the CI/CD pipeline.
+The diagram below highlights the critical validation points in the CI/CD pipeline when building green field applications.
 
-Depending on your platform and your application's lifecycle, you may gradually implement the tools.
+You may gradually implement the tools depending on your platform and your application's lifecycle.
 
 Especially if your product is mature and you haven't previously run any security validation against your site or application.
 
-:::image type="content" source="../media/flowchart-integrated-development-environment-aef25fff.png" alt-text="Flowchart with IDE, and Pull, CI, Dev, and Test. Each node has validation and feedback.":::
+:::image type="content" source="../media/flowchart-integrated-development-environment-aef25fff.png" alt-text="Screenshot of flowchart with IDE, and Pull, CI, Dev, and Test.":::
 
 
 ## IDE / pull request
@@ -21,7 +21,7 @@ The process for committing code into a central repository should have controls t
 
 Using Git source control in Azure DevOps with branch policies provides a gated commit experience that can provide this validation.
 
-By enabling branch policies on the shared branch, a pull request is required to start the merge process and ensure the execution of all defined controls.
+Enabling branch policies on the shared branch requires a pull request to start the merge process and ensure the execution of all defined controls.
 
 The pull request should require a code review, the one manual but important check for identifying new issues introduced into your code.
 

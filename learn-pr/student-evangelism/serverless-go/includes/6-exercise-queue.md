@@ -114,8 +114,8 @@ At this point, you have an app skeleton. You're now ready to add code that can h
      d := json.NewDecoder(r.Body)
      d.Decode(&invokeRequest)
 
-     var reqData map[string]interface{}
-     json.Unmarshal(invokeRequest.Data["queueItem"], &reqData)
+     var parsedMessage string
+     json.Unmarshal(invokeRequest.Data["queueItem"], &parsedMessage)
    }
    ```
 

@@ -4,7 +4,7 @@ This module uses the [.NET CLI (command-line interface)](/dotnet/core/tools/) an
 
 ## Example scenario
 
-Suppose you're an employee of a pizza company named Contoso Pizza. Your manager has asked you to develop a RESTful service for pizza inventory management as a prerequisite for the company's web storefront and mobile application. The service has to support adding, viewing, modifying, and removing types of pizza&mdash;a standardized usage of HTTP verbs better known as *create, read, update, delete* (CRUD).
+Suppose you're an employee of a pizza company named Contoso Pizza. Your manager has asked you to develop a RESTful service for pizza inventory management as a prerequisite for the company's web storefront and mobile application. The service has to support adding, viewing, modifying, and removing types of pizza; a standardized usage of HTTP verbs better known as *create, read, update, delete* (CRUD).
 
 ## What will we be doing?
 

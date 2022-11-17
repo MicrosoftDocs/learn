@@ -59,9 +59,9 @@ To use Azure Advisor to review cost recommendations, use the following procedure
 
      [![Screenshot of Azure portal Advisor with several specific VMs to resize or shut down, and their potential savings.](../media/m21-advisor-resize-virtual-machine.png)](../media/m21-advisor-resize-virtual-machine.png#lightbox)
 
-## What is Azure Cost Management?
+## What is Microsoft Cost Management?
 
-You can use Azure *Cost Management* to gain greater insights into where your greatest Azure resource costs are. You can review historical information about which services are costing the most, and you can also track spending against configured budgets that you've set. To access Cost Management, use the following procedure:
+You can use Microsoft *Cost Management* to gain greater insights into where your greatest Azure resource costs are. You can review historical information about which services are costing the most, and you can also track spending against configured budgets that you've set. To access Cost Management, use the following procedure:
 
 1. From the Azure portal, search for and select **Cost management + Billing**.
 2. On the **Cost Management + Billing** blade, select **Cost Management**.

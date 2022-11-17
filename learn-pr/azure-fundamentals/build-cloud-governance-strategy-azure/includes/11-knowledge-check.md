@@ -7,7 +7,7 @@ Here's a diagram that shows the basic compute, database, and networking componen
 :::image type="content" source="../media/7-dev-test-environments-a3873b55.svg" alt-text="A diagram of the development and test environments. Each environment contains virtual machines, a database, and a virtual network. The development environment includes three virtual machines. The test environment contains six virtual machines.":::
 
 
-These environments provide a way for the team to build and test new application features. If you've gone through the [Plan and manage your Azure costs](/learn/modules/plan-manage-azure-costs/) module, then you've already seen this layout.
+These environments provide a way for the team to build and test new application features. If you've gone through the [Plan and manage your Azure costs](/training/modules/plan-manage-azure-costs/) module, then you've already seen this layout.
 
 Although the development and test teams report to different departments, both environments exist under the same Azure subscription.
 

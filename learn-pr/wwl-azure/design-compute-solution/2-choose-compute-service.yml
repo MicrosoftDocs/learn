@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-compute-solution.choose-compute-service
-title: Choose a compute service
+title: Choose an Azure compute service
 metadata:
-  title: Choose a compute service
-  description: "Choose a compute service"
-  ms.date: 05/06/2022
+  title: Choose an Azure compute service
+  description: "Choose an Azure compute service"
+  ms.date: 11/15/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/2-choose-compute-service.md)]

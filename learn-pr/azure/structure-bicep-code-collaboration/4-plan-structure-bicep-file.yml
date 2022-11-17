@@ -6,8 +6,8 @@ metadata:
   title: Plan the structure of your Bicep file
   description: Learn how a Bicep file can be structured to make it easy to understand and work with.
   ms.date: 08/06/2021
-  author: pazdedav
-  ms.author: dapazd
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

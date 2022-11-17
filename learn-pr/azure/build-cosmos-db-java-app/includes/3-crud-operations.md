@@ -6,12 +6,12 @@ You've made the connection to Azure Cosmos DB. In this unit, you'll create user 
 
 Data is stored in JSON documents in Azure Cosmos DB. [Documents](/azure/cosmos-db/databases-containers-items#azure-cosmos-items) can be created, retrieved, replaced, or deleted in the portal or programmatically. This lab focuses on programmatic operations. Azure Cosmos DB provides client-side SDKs for .NET, .NET Core, Java, Node.js, and Python, each of which supports these operations. In this module, we'll use the Java SDK to perform CRUD (create, retrieve, update, and delete) operations on the NoSQL data stored in Azure Cosmos DB.
 
-The main operations for Azure Cosmos DB documents are part of the [CosmosAsyncContainer](/java/api/com.azure.cosmos.cosmosasynccontainer?view=azure-java-stable) class:
-* [createItem](/java/api/com.azure.cosmos.cosmosasynccontainer.createitem?view=azure-java-stable#com_azure_cosmos_CosmosAsyncContainer__T_createItem_T_com_azure_cosmos_models_PartitionKey_com_azure_cosmos_models_CosmosItemRequestOptions_)
-* [readItem](/java/api/com.azure.cosmos.cosmosasynccontainer.readitem?view=azure-java-stable#com_azure_cosmos_CosmosAsyncContainer__T_readItem_java_lang_String_com_azure_cosmos_models_PartitionKey_com_azure_cosmos_models_CosmosItemRequestOptions_java_lang_Class_T__)
-* [replaceItem](/java/api/com.azure.cosmos.cosmosasynccontainer.replaceitem?view=azure-java-stable#com_azure_cosmos_CosmosAsyncContainer__T_replaceItem_T_java_lang_String_com_azure_cosmos_models_PartitionKey_com_azure_cosmos_models_CosmosItemRequestOptions_)
-* [upsertItem](/java/api/com.azure.cosmos.cosmosasynccontainer.upsertitem?view=azure-java-stable#com_azure_cosmos_CosmosAsyncContainer__T_upsertItem_T_com_azure_cosmos_models_CosmosItemRequestOptions_)
-* [deleteItem](/java/api/com.azure.cosmos.cosmosasynccontainer.deleteitem?view=azure-java-stable#com_azure_cosmos_CosmosAsyncContainer_deleteItem_java_lang_String_com_azure_cosmos_models_PartitionKey_com_azure_cosmos_models_CosmosItemRequestOptions_)
+The main operations for Azure Cosmos DB documents are part of the [CosmosAsyncContainer](/java/api/com.azure.cosmos.cosmosasynccontainer) class:
+* [createItem](/java/api/com.azure.cosmos.CosmosAsyncContainer#com-azure-cosmos-cosmosasynccontainer-(t)createitem(t))
+* [readItem](/java/api/com.azure.cosmos.CosmosAsyncContainer#com-azure-cosmos-cosmosasynccontainer-(t)readitem(java-lang-string-com-azure-cosmos-models-partitionkey-java-lang-class(t)))
+* [replaceItem](/java/api/com.azure.cosmos.CosmosAsyncContainer#com-azure-cosmos-cosmosasynccontainer-(t)replaceitem(t-java-lang-string-com-azure-cosmos-models-partitionkey))
+* [upsertItem](/java/api/com.azure.cosmos.CosmosAsyncContainer#com-azure-cosmos-cosmosasynccontainer-(t)upsertitem(t))
+* [deleteItem](/java/api/com.azure.cosmos.CosmosAsyncContainer#com-azure-cosmos-cosmosasynccontainer-deleteitem(java-lang-string-com-azure-cosmos-models-partitionkey))
 
 Upsert performs a create or replace operation, depending on whether the document already exists.
 
@@ -160,7 +160,7 @@ Next we'll create some entities and perform some basic CRUD operations on the Az
             ))
     );
 
-    createUserDocumentsIfNotExist(new ArrayList(Arrays.asList(maxaxam, nelapin)));
+    createUserDocumentsIfNotExist(new ArrayList<User>(Arrays.asList(maxaxam, nelapin)));
     ```
 
 1. Build and run **CosmosApp.java** in the IDE, or run the program in the terminal by using: 
@@ -278,7 +278,7 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
     }
     ```
 
-1. Copy and paste the following code to the end of the `basicOperations` method, after the document creation code.
+1. Copy and paste the following code to the end of the `basicOperations` method, after the document read code.
 
     ```java
     maxaxam.setLastName("Suh");
@@ -352,7 +352,7 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
 
 ## Working with documents programmatically
 
-Data is stored in JSON documents in Azure Cosmos DB. [Documents](/azure/cosmos-db/databases-containers-items#azure-cosmos-items) can be created, retrieved, replaced, or deleted in the portal or programmatically. This lab focuses on programmatic operations. All of this operations are available in Azure Cosmos DB Java SDK and are also accessible through the Spring Data programming model. In this module, we'll use Spring Data Azure Cosmos DB to perform CRUD (create, retrieve, update, and delete) operations on the NoSQL data stored in Azure Cosmos DB.
+Data is stored in JSON documents in Azure Cosmos DB. [Documents](/azure/cosmos-db/databases-containers-items#azure-cosmos-items) can be created, retrieved, replaced, or deleted in the portal or programmatically. This lab focuses on programmatic operations. All of these operations are available in Azure Cosmos DB Java SDK and are also accessible through the Spring Data programming model. In this module, we'll use Spring Data Azure Cosmos DB to perform CRUD (create, retrieve, update, and delete) operations on the NoSQL data stored in Azure Cosmos DB.
 
 The main operations for Spring Data Azure Cosmos DB documents are basic operations in the Spring Data programming model:
 * `save` - point-write or update a document, depending on whether the document already exists.
@@ -522,9 +522,8 @@ Next we'll create some entities and perform some basic CRUD operations on the Az
     Amidst the terminal output, you should see
 
     ```output
-    INFO: Database and container validation complete
-    INFO: Creating User 1
-    INFO: Creating User 2
+    INFO: Creating WebCustomer 1
+    INFO: Creating WebCustomer 2
     ```
 
 Congratulations! You've created and/or updated your first data in Azure Cosmos DB from a Java application. Let's pause and evaluate what you did here.
@@ -595,10 +594,7 @@ Now that we've demonstrated efficient async database requests with Project React
     Amidst the terminal output, you should see the following. "Read user 1" indicates that the document was retrieved.
 
     ```output
-    INFO: Database and container validation complete
-    INFO: User 1 already exists in the database
-    INFO: User 2 already exists in the database
-    INFO: Read user 1
+    INFO: Read webCustomer 1
     ```
 
 ## Delete documents
@@ -637,12 +633,7 @@ Now that we've demonstrated efficient async database requests with Project React
     Amidst the terminal output, you should see the following. "Deleted user 1" indicates that the document was deleted.
 
     ```output
-    INFO: Database and container validation complete
-    INFO: User 1 already exists in the database
-    INFO: User 2 already exists in the database
-    INFO: Read User 1
-    INFO: Replaced last name for Suh
-    INFO: Deleted User 1
+    INFO: Deleted webCustomer 1
     ```
 
 

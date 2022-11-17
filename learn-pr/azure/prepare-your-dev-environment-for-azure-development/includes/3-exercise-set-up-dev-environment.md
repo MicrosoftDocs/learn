@@ -117,10 +117,6 @@ To install Visual Studio, select your operating system from the procedures below
 
 1. When the installation is complete, select **Launch** to open Visual Studio.
 
-1. In the **View** menu, make sure **Cloud Explorer** is selected.
-
-   :::image type="content" source="../media/5-verify-cloud-explorer.png" alt-text="Screenshot of the Visual Studio View menu with the Cloud Explorer menu option highlighted." loc-scope="vs":::
-
 ### macOS
 
 1. Go to https://visualstudio.microsoft.com/ and download the Visual Studio for Mac installer.

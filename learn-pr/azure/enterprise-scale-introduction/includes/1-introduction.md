@@ -1,4 +1,4 @@
-In the context of an enterprise-scale architecture, a *landing zone* is a logical construct that captures everything that must be true to enable application migrations and development at scale in Azure. Landing zones consider all platform resources that are required to support a customer's application portfolio. Azure landing zones provide cloud-adoption teams with a well-managed environment for their workloads.
+An *Azure landing zone* is a logical construct that captures everything that must be true to enable application migrations and development at scale in Azure. Landing zones consider all platform resources that are required to support a customer's application portfolio. They provide cloud-adoption teams with a well-managed environment for their workloads.
 
 A good analogy to a landing zone is the set of services that are required to build a city. Before buildings can be erected and people can move into them, certain essential services must be in place. Citizens and businesses need roads, water and sewer facilities, and power and gas infrastructure.
 
@@ -19,8 +19,8 @@ Landing zones help with cloud adoption by creating better ways to organize resou
 After you complete this module, you'll be able to:
 
 - Explain the vision for enterprise-scale architecture in the Cloud Adoption Framework
-- Describe the top customer challenges that enterprise-scale Azure adoption addresses
-- Define the Cloud Adoption Framework approach for enterprise-scale landing zones
+- Describe the top customer challenges that are addressed by Azure landing zones
+- Define the Cloud Adoption Framework approach for Azure landing zones
 - Explain the enterprise-scale architecture design principles
 
 ## Prerequisites

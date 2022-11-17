@@ -12,10 +12,10 @@ title: 'AZ-204: Implement Azure Functions'
 prerequisites: |
   * At least one year of experience developing scalable solutions through all phases of software development.
   * Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
-  * If you are new to Azure or cloud computing it is recommended you complete the [AZ-900: Azure Fundamentals](/learn/paths/az-900-describe-cloud-concepts/) course.
+  * If you are new to Azure or cloud computing it is recommended you complete the [AZ-900: Azure Fundamentals](/training/paths/az-900-describe-cloud-concepts/) course.
 summary: |
   Learn how to create and deploy Azure Functions. Explore hosting options, bindings, triggers, and how to use Durable Functions to define stateful workflows.
-iconUrl: /learn/achievements/az-204-implement-azure-functions.svg
+iconUrl: /training/achievements/az-204-implement-azure-functions.svg
 levels:
 - intermediate
 roles:
@@ -23,6 +23,9 @@ roles:
 products:
 - azure
 - azure-functions
+- dotnet
+subjects:
+- serverless-compute
 modules:
 - learn.wwl.explore-azure-functions
 - learn.wwl.develop-azure-functions

@@ -72,7 +72,7 @@ For more information, see [Azure App Service Hybrid Connections](/azure/app-serv
 
 To perform a migration, you can use the Data Migration Assistant. For more information, see [Overview of Data Migration Assistant](/sql/dma/dma-overview?view=sql-server-2017).
 
-You might be interested in another Learn module, [Assess and convert SQL Server Databases using the Data Migration Assistant (DMA)](/learn/modules/assess-convert-sql-server-databases-using-dma/).
+You might be interested in another Learn module, [Assess and convert SQL Server Databases using the Data Migration Assistant (DMA)](/training/modules/assess-convert-sql-server-databases-using-dma/).
 
 ## What is an Azure Migrate project?
 

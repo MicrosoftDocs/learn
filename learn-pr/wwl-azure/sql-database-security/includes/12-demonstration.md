@@ -1,7 +1,7 @@
 Give these Try-This exercises a test to gain some experience using Azure.
 
 > [!NOTE]
-> These demonstrations requires an Azure SQL database with sample data. In Task 1, there are instructions to install the AdventureWorks sample database. Also, Task 3 requires SQL Server Management Studio.
+> These demonstrations require an Azure SQL database with sample data. In Task 1, there are instructions to install the AdventureWorks sample database. Also, Task 3 requires SQL Server Management Studio.
 
 ## Task 1 - Azure SQL: Advanced Data Security and Auditing
 
@@ -12,7 +12,7 @@ In this task, we will explore vulnerability assessments, data discovery and clas
 Skip this section if you already have a database to work with.
 
 1.  In the **Portal**, search for and a select **SQL databases**.
-2.  On the **Basics** tab, give you database a name, and create a new server.
+2.  On the **Basics** tab, give your database a name, and create a new server.
 3.  On the **Additional settings** tab, select **Sample** for **Use existing data**. Also, **Enable advanced data security** and **Start free trial**.
 4.  **Review &amp; create**, and then **Create**.
 5.  Wait for the database to deploy.
@@ -20,11 +20,11 @@ Skip this section if you already have a database to work with.
 ### Review Vulnerability Assessments
 
 1.  Navigate to your SQL database.
-2.  Under **Security** select **Advanced Data Security**.
+2.  Under **Security** select **Microsoft Defender for Cloud**.
 3.  Select **Vulnerability Assessment**.
 4.  Review vulnerability assessments and the risk levels.
 5.  Click **Scan**.
-6.  The scan does not need to fully complete for results to show.
+6.  The scan does not need to be fully complete for results to show.
 7.  Review the **Findings**.
 8.  Click any **Security Check** to get more details.
 9.  Review the **Passed** checks.
@@ -32,10 +32,9 @@ Skip this section if you already have a database to work with.
 
 ### Review Data Discovery and Classification
 
-1.  Return to the **Advanced data security** blade.
+1.  Return to the **Security** blade.
 2.  Select **Data Discovery &amp; Classification**.
 3.  On the **Classification** tab, select **Add classification**.
-    
      -  Schema name: **SalesLT**
      -  Table name: **Customer**
      -  Column name: **Phone**
@@ -51,7 +50,6 @@ Skip this section if you already have a database to work with.
 
 1.  Return to your SQL database.
 2.  Under **Security** select **Auditing**.
-    
      -  Select **On** for auditing.
      -  Click **Storage** for the destination.
      -  Select on the Storage account for logs.
@@ -74,7 +72,6 @@ In this task, we will review and configure SQL database diagnostics.
 5.  Give your setting a name.
 6.  Under **Destination details** select **Send to Log Analytics**. Make a note of the Log Analytics workspace that will be used.
 7.  Under **Destination details** select **Archive to Storage Account**.
-    
      -  Select the **Errors** log.
      -  Select the **Automatic tuning** log.
      -  Select the **Basic** metric.
@@ -110,7 +107,6 @@ In this task, we will configure Azure AD authentication.
 8.  In **SQL Server Management Studio** connect to the database server using your credentials.
 9.  Select the SQL database you configured with a new Active Directory admin.
 10. Construct a query to create a new user. Insert the admin user and domain. For example, user@contoso.com
-    
      -  Create user \[user@contoso.com\] from external provider;
 11. Run the query and ensure it completes successfully.
 12. In the **Object Explorer** navigate your database and **Security** and **Users** folder.

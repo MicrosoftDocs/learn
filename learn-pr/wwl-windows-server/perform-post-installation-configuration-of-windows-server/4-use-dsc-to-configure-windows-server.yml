@@ -4,12 +4,13 @@ title: Use DSC to configure Windows Server
 metadata:
   title: Use DSC to configure Windows Server
   description: "Use DSC to configure Windows Server"
-  ms.date: 02/26/2021
+  ms.date: 06/14/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-windows-server
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/4-use-dsc-to-configure-windows-server.md)]

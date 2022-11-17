@@ -8,8 +8,8 @@ In this unit, you'll use the Azure CLI to create an IoT Central application from
 
 When you create the device template for your IoT Edge device, you'll need the deployment manifest and an interface definition on your local machine. You can download these files by right-clicking on the following links and choosing **Save as**:
 
-- [EnvironmentalSensorManifest.json](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/master/edge-vm-deploy/EnvironmentalSensorManifest.json)
-- [TelemetryInterface.json](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/master/edge-vm-deploy/TelemetryInterface.json)
+- [EnvironmentalSensorManifest.json](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/edge-vm-deploy/EnvironmentalSensorManifest.json)
+- [TelemetryInterface.json](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/edge-vm-deploy/TelemetryInterface.json)
 
 Remember where you save these files, you'll use them later.
 
@@ -34,23 +34,41 @@ The following steps create an IoT Central application and generate an API token 
     --name $APP_NAME --sku ST2 --location centralus \
     --subdomain $APP_NAME --template iotc-pnp-preview \
     --display-name 'Store Management'
-    echo "You can now navigate to: https://$APP_NAME.azureiotcentral.com/device-templates"
+    echo "You can now navigate to: https://$APP_NAME.azureiotcentral.com/edge-manifests"
 
     ```
 
     Expect this command to take a minute or two to run.
 
-1. In another browser tab or window, navigate to the URL shown in the output of the previous command. This page in the web UI is where you create a device template:
+1. In another browser tab or window, navigate to the URL shown in the output of the previous command. This page in the web UI is where you upload an IoT Edge deployment manifest:
+
+    :::image type="content" source="../media/3-deployment-manifests.png" alt-text="Screenshot showing the deployment manifests page where you manage the IoT Edge deployment manifests in your IoT Central application.":::
+
+1. Select **Create an edge manifest**, enter the name **Environmental Sensor**, select **Upload a file**, and then browse to select the *EnvironmentalSensorManifest.json* file you downloaded previously.
+
+1. Select **Next** and then **Create** to upload the manifest. The manifest configures three IoT Edge modules: **edgeAgent**, **edgeHub**, and **SimulatedTemperatureSensor**.
+
+1. Next select **Device templates**. This page in the web UI is where you create a device template:
 
     :::image type="content" source="../media/3-device-templates.png" alt-text="The device templates page where you manage the templates in your IoT Central application.":::
 
 1. Select **Create a device template**, choose the **Azure IoT Edge** tile, and then select **Next: Customize**.
 
-1. Enter *Environmental Sensor Edge Device* as the device template name. Then select **Browse** to upload a deployment manifest. Select the *EnvironmentalSensorManifest.json* file you downloaded previously. IoT Central shows **Validated** after it checks the manifest. Select **Next: Review**.
+1. Enter *Environmental Sensor Edge Device* as the device template name. Then select **Next: Review**.
 
-1. Select **Create** to create the device template.
+1. Select **Create** to create the device template. Then select **Custom model** to start with a blank model.
 
-The device template has a module called **SimulatedTemperatureSensor** with an interface called **management**. The **management** interface includes the writable properties **SendData** and **SendInterval**. IoT Central discovered these capabilities from the deployment manifest.
+The deployment manifest you uploaded has a module called **SimulatedTemperatureSensor** with an interface called **management**. The **management** interface includes the writable properties **SendData** and **SendInterval**. To add this information to your new device template:
+
+1. On the device template page, select **Modules** in the **Model** section.
+
+1. Select **Import modules from manifest**:
+
+    :::image type="content" source="../media/3-import-modules.png" alt-text="Screenshot showing the device templates page where you import the module definitions from the deployment manifest.":::
+
+1. Select the **Environmental Sensor** deployment manifest to import the modules.
+
+Your device template now includes the **SimulatedTemperatureSensor** module with a **management** interface. The interface defines the **SendData** and **SendInterval** writable properties.
 
 The deployment manifest doesn't include information about the telemetry the device modules send. To enable IoT Central to create visualizations for the telemetry, add an interface with the required definitions:
 
@@ -62,12 +80,12 @@ The deployment manifest doesn't include information about the telemetry the devi
 
     :::image type="content" source="../media/3-telemetry-interface.png" alt-text="Screenshot that shows the telemetry interface in the device template.":::
 
-To enable an operator to record information about each IoT Edge device, add the following **Cloud properties** to the device template:
+To enable an operator to record information about each IoT Edge device, add the following **Cloud properties** to the **Environmental Sensor Edge Device** model:
 
-| Display name | Name | Schema |
-| ------------ | ---- | ------ |
-| Store Name | StoreName | String |
-| Service Date | ServiceDate | Date |
+| Display name | Name | Capability type | Schema |
+| ------------ | ---- | ---- | ------ |
+| Store Name | StoreName |Cloud Property| String |
+| Service Date | ServiceDate |Cloud Property| Date |
 
 :::image type="content" source="../media/3-cloud-properties.png" alt-text="Screenshot that shows the cloud properties in the device template.":::
 
@@ -106,9 +124,13 @@ You're now ready to publish the template and add a device:
 
 1. Select **Publish**, and then in the **Publish this device template to the application** dialog, select **Publish**.
 
-1. Go to the **Devices** page in your IoT Central application. Select the **Environmental Sensor Edge Device** device template. Then select **Create a device**.
+1. Go to the **Devices** page in your IoT Central application.
 
-1. In the **Create a new device** dialog, enter *store-001* as the device ID. Leave all the other settings as they are. Select **Create**.
+1. Select the **Environmental Sensor Edge** device template and then select **+ New**.
+
+1. In the **Create a new device** dialog, enter *store-001* as the device ID. Make sure that the device template is **Environmental Sensor Edge**. The **Azure IoT Edge device?** is already set to **Yes**. Then select the **Environmental Sensor** deployment manifest.
+
+1. Still in the **Create a new device** dialog, select the **Environmental Sensor Edge Device** device template. Select **Create**.
 
 1. The **store-001** device appears in the list of devices with the status **Registered**.
 
