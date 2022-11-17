@@ -1,6 +1,10 @@
 When creating an App Service, you will need to specify a resource group and service plan. Then there are few other configuration choices. You may need to ask your developer for assistance in completing this information.
 
-:::image type="content" source="../media/web-instances-feb0bc48.png" alt-text="Screenshot of the instance details for a new app service.":::
+Watch this video to learn how to create an App Service in the portal. 
+
+<br/>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/dHTzv-zY17I" title="How to create App Services in the Azure portal | Azure Portal Series" allowfullscreen></iframe>
+
 
 
  -  **Name**. The name must be unique and will be used to locate your app. For example, webappces1.azurewebsites.net. You can map a custom domain name, if you prefer to use that instead.

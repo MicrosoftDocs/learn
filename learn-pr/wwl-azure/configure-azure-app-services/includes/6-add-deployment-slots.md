@@ -4,7 +4,10 @@ New deployment slots can be empty or cloned. When you clone a configuration from
  -  Continuous deployment settings, if enabled.
  -  App Service authentication settings, if enabled.
 
-:::image type="content" source="../media/add-slot-ef3c31cf.png" alt-text="Screenshot of the Add a Web App blade. Several configuation sources are shown.":::
+Watch this video on how to use deployment slots. This video is based on [Azure Tips and Tricks #306 How to use deployment slots ](https://microsoft.github.io/AzureTipsAndTricks/blog/blog/tip306.html). The video also refers to [Azure Tips and Tricks #236 Deploy your web app]https://microsoft.github.io/AzureTipsAndTricks/blog/blog/tip236.html
+
+<br/>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/5rR5C4Z5dU4" title="How to use Deployment Slots in Azure App Service for Containers | Azure Tips and Tricks" frameborder="0" allowfullscreen></iframe>
 
 
 **Settings that are swapped:**

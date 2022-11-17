@@ -1,7 +1,9 @@
 The Backup and Restore feature in Azure App Service lets you easily create app backups manually or on a schedule. You can configure the backups to be retained up to an indefinite amount of time. You can restore the app to a snapshot of a previous state by overwriting the existing app or restoring to another app.
 
-:::image type="content" source="../media/web-app-backup-ff2a9e7f.png" alt-text="Screenshot of the Web app backup page.":::
+Watch this video on how to configure a backup for your Azure App Service. This video is based on [Azure Tips and Tricks #28 Configure a backup for the Azure App Service](https://microsoft.github.io/AzureTipsAndTricks/blog/blog/tip28.html).
 
+<br/>
+<iframe width="1192" height="745" src="https://www.youtube.com/embed/uQXDkW1pCzs" title="How to configure a backup for your Azure App Service | Azure Tips and Tricks" frameborder="0" allowfullscreen></iframe>
 
 ## What gets backed up
 
