@@ -6,7 +6,7 @@ Some tools help you create a data-flow diagram, while others also help with the 
 
 Over the next few units, you'll learn more about a few tools:
 
-- The Threat Modeling Tool provides you with the tools to create data-flow diagrams and analyze them for potential threats and risk reduction strategies
-- Visio gives you a clean canvas to help you create data-flow diagrams
+- The Threat Modeling Tool provides you with the tools to create data-flow diagrams and analyze them for potential threats and risk-reduction strategies.
+- Visio gives you a clean canvas to help you create data-flow diagrams.
 
 We'll check them out in the next few units.
