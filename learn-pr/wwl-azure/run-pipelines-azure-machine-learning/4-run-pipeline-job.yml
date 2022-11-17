@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-pipelines-azure-machine-learning.run-pipeline-job
+title: Run a pipeline job
+metadata:
+  title: Run a pipeline job
+  description: "Run a pipeline job"
+  ms.date: 11/17/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-run-pipeline-job.md)]

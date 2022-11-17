@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-pipelines-azure-machine-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/17/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "You're creating a pipeline that includes two steps. Step 1 prepares some data, and step 2 uses the preprocessed data to train a model. Which option should you use as input to the second step to train the model?"
+    choices:
+    - content: "`pipeline_job_input`"
+      isCorrect: false
+      explanation: "Incorrect. `pipeline_job_input` represents the input of the pipeline job."
+    - content: "`prep_data.outputs.output_data`"
+      isCorrect: true
+      explanation: "Correct. `prep_data.outputs.output_data` is the output of the step that prepares the data."
+    - content: "`train_model.outputs.model_output`"
+      isCorrect: false
+      explanation: "Incorrect. `train_model.outputs.model_output` is the output of the step that trains the model."
+  - content: "You've built a pipeline that you want to run every week. You want to take a simple approach to creating a schedule. Which class can you use to create the schedule that runs once per week?"
+    choices:
+    - content: "RecurrencePattern"
+      isCorrect: false
+      explanation: "Incorrect. You need the RecurrenceTrigger class to create a schedule that runs at a regular interval."
+    - content: "JobSchedule"
+      isCorrect: false
+      explanation: "Incorrect. You need the RecurrenceTrigger class to create a schedule that runs at a regular interval."
+    - content: "RecurrenceTrigger"
+      isCorrect: true
+      explanation: "Correct. You need the RecurrenceTrigger class to create a schedule that runs at a regular interval."
