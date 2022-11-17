@@ -2,10 +2,10 @@ In this unit, you'll learn about enterprise design considerations and recommenda
 
 ## Considerations
 
-Design based on zero trust and assumed breach. Systems should be able to communicate with each other only on the ports and protocols that the applications need. Here are a few key items to remember:
+You should design based on zero trust and assumed breach. Systems should be able to communicate with each other only on the ports and protocols that the applications need. Here are a few key items to remember:
 
 - Application security groups don't span virtual networks.
-- Network security groups are stateful, but are not firewalls. They're access control lists.
+- Network security groups are stateful, but are not firewalls. They're access-control lists.
 - Azure Firewall is available from Microsoft. You can also find partner firewalls in Azure Marketplace.
 
 ## Recommendations

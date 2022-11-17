@@ -18316,6 +18316,16 @@
       "redirect_document_id": false
     },
     {
+
+       "source_path": "learn-pr/wwl-azure/design-network-solutions/4-design-for-azure-network-connectivity-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-network-solutions/4a-design-patterns-for-azure-network-connectivity-services",
+      "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/design-network-solutions/5-design-for-application-delivery-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-network-solutions/5b-design-for-application-delivery-services",
+      "redirect_document_id": false
+    },
       "source_path": "learn-pr/azure-devops/deploy-nodejs/3-set-up-environment.yml",
       "redirect_url": "/training/modules/deploy-nodejs/4-set-up-environment",
       "redirect_document_id": false

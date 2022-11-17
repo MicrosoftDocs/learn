@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-sql-server-2022.deploy-and-feature-difference
+title: Deployment options, licensing, and feature differences in SQL Server 2022
+metadata:
+  unitType: learning-content
+  title: Deployment options, licensing, and feature differences in SQL Server 2022
+  description: "Learn in this unit the various deployment, edition, and licensing options for SQL Server 2022 and feature differences from previous releases"
+  ms.date: 11/10/2022
+  author: rgward
+  ms.author: bobward
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-deploy-and-feature-difference.md)]

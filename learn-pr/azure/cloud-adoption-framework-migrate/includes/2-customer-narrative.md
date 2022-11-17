@@ -1,6 +1,6 @@
-In the getting-started module, we shared a few of Tailwind Traders' objectives. The Tailwind Traders cloud-strategy team has defined an executive-level strategy that addressed financial and technical considerations.
+In the Getting Started module, we shared a few of Tailwind Traders' objectives. The Tailwind Traders cloud-strategy team has defined an executive-level strategy that addressed financial and technical considerations.
 
-A cloud adoption plan is in place to manage the various projects that contribute to that strategic program. The central operations and infrastructure team has deployed an Azure landing zone that meets its short-term compliance and operations needs.
+A cloud-adoption plan is in place to manage the various projects that contribute to that strategic program. The central operations and infrastructure team has deployed an Azure landing zone that meets its short-term compliance and operations needs.
 
 Most relevant to this module is the company's effort to migrate out of two leased datacenters before those leases expire. Those datacenters host a large portfolio of production workloads that support in-store and e-commerce operations. The second datacenter also hosts dev/test environments and other pre-production innovations from the retail innovation team.
 
@@ -8,7 +8,7 @@ We resume the Tailwind story just as the migration team is preparing to start mi
 
 ## The Tailwind Traders migration plan
 
-In the planning module, we rationalized the company's digital estate by using Azure Migrate and created a backlog to guide the migration in Azure DevOps. Now the migration team is ready to begin migrating the existing datacenters to the cloud. In the remaining 12 months, the team will migrate waves of workloads incrementally. Given the scope and timeline for this migration, the team has chosen the following migration-factory approach:
+In the Planning module, we rationalized the company's digital estate by using Azure Migrate and created a backlog to guide the migration in Azure DevOps. Now the migration team is ready to begin migrating the existing datacenters to the cloud. In the remaining 12 months, the team will migrate waves of workloads incrementally. Given the scope and timeline for this migration, the team has chosen the following migration-factory approach:
 
 :::image type="content" source="../media/methodology-effort-only.png" alt-text="Diagram of the three common task groups in a migration process." border="false":::
 

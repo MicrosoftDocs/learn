@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-machine-learning-model-training-solution.decide-between-compute-options
+title: Decide between compute options
+metadata:
+  title: Decide between compute options
+  description: "Decide between compute options"
+  ms.date: 11/15/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-decide-between-compute-options.md)]

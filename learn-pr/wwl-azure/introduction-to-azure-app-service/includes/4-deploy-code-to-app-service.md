@@ -2,7 +2,7 @@ Every development team has unique requirements that can make implementing an eff
 
 ## Automated deployment
 
-Automated deployment, or continuous integration, is a process used to push out new features and bug fixes in a fast and repetitive pattern with minimal impact on end users.
+Automated deployment, or continuous deployment, is a process used to push out new features and bug fixes in a fast and repetitive pattern with minimal impact on end users.
 
 Azure supports automated deployment directly from several sources. The following options are available:
 
