@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.exercise-run-sweep-job
+title: Exercise - Run a sweep job
+metadata:
+  title: Exercise - Run a sweep job
+  description: "Exercise - Run a sweep job"
+  ms.date: 11/17/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-exercise-run-sweep-job.md)]
