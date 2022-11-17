@@ -18,12 +18,12 @@ Tailwind Traders shouldn't undertake cloud adoption without considerable plannin
 
 ### Things to consider when implementing migration adoption
 
-The migration adoption process for Tailwind Traders should consist of three phases or _efforts_ for each workload: _Assess_, _Deploy_, and _Release_. The following illustration and table summarize the migration adoption efforts.
-
-:::image type="content" source="../media/migrate-methodology.png" alt-text="Diagram of migration adoption efforts for workloads, including assess, deploy, and release." border="false":::
+The migration adoption process for Tailwind Traders should consist of three phases or _efforts_ for each workload: _Assess_, _Deploy_, and _Release_. The following table and illustration summarize the migration adoption efforts.
 
 | Effort | Description |
 | --- | --- |
 | _Assess_ | Assess your workloads to determine costs, modernization, and required deployment tools. |
 | _Deploy_ | After you assess your workloads, the existing workload functionality is replicated (or improved) in the cloud. |
 | _Release_ | After your workloads are deployed (replicated) to the cloud, you can test, optimize, and document your migrated workloads. When you're ready, you can release the workloads to your users. During the _Release_ effort, be sure to hand off the workloads to governance, operations management, and security teams for ongoing support of the workloads. |
+
+:::image type="content" source="../media/migrate-methodology.png" alt-text="Diagram of migration adoption efforts for workloads, including assess, deploy, and release." border="false":::
