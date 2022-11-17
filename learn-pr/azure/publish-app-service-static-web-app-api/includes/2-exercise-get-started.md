@@ -73,7 +73,7 @@ You just created a GitHub repository named **my-static-web-app** in your GitHub 
    > [!NOTE]
    > If you get a *Cannot find PATH* error, make sure you've installed Node.js from https://nodejs.org. You might need to do a **Custom setup** that includes installing the **Add to PATH** option.
 
-   :::image type="content" source="../media/2-custom-install-nodjs.png" alt-text="Image displaying the custom install of Node.js options.":::
+   :::image type="content" source="../media/2-custom-install-nodjs.png" alt-text="Screenshot displaying the custom install of Node.js options in wizard.":::
 
 1. Finally, run the front-end client application.
 
