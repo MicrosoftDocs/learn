@@ -15,7 +15,7 @@ Watch this video to learn how to create an App Service in the portal.
 
 ## Application settings
 
-Once your app service is created, additional configuration information is available.
+Once your app service is created, other configuration information is available.
 
 :::image type="content" source="../media/web-app-configuration-27facdc5.png" alt-text="Screenshot of the app service configuration blade.":::
 
