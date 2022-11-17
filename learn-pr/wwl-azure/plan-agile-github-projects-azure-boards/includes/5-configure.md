@@ -8,22 +8,22 @@ To start working with GitHub Projects, you first need to create an organization 
 To create an **organization project**:
 
 1. On GitHub, navigate to the main page of your organization.
-2. Click **Projects**.
-3. Select the **New project** drop-down menu and click **New project.**
+1. Click **Projects**.
+1. Select the **New project** drop-down menu and click **New project.**
 
 To create a **user project**:
 
 1. On any GitHub page, click on your avatar, then select **Your projects**.
-2. Select the **New project** drop-down menu and click **New project**.
+1. Select the **New project** drop-down menu and click **New project**.
 
 Create a project **description** or a **README** file:
 
 1. Navigate to your project.
-2. In the top-right, click to open the menu.
-3. In the menu, click **Settings**.
-4. Under Add a description, type your description in the text box and click **Save**.
-5. To update your project's README, type your content in the text box under README.
-6. Click Save.
+1. In the top-right, click to open the menu.
+1. In the menu, click **Settings**.
+1. Under Add a description, type your description in the text box and click **Save**.
+1. To update your project's README, type your content in the text box under README.
+1. Click Save.
 
 ## Adding issues
 
