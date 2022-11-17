@@ -12,9 +12,9 @@ There are two important settings for Azure Files that you need to be aware of wh
 
 ## Map Azure Files share on Windows
 
-You can connect your Azure Files share with Windows or Windows Server in the Azure portal. Specify the **Drive** where you want to map the share, and choose the **Authentication method**. The system supplies you with PowerShell commands to run when you're ready to work with the file share.
+You can connect your Azure Files share with Windows or Windows Server in the Azure portal. Specify the **Drive** where you want to map the share, and choose the **Authentication method**. The system supplies you with PowerShell commands to run when you're ready to work with the file share. This video shows how to mount an Azure file share in Windows.  
 
-:::image type="content" source="../media/map-file-shares-windows-a1aa8f59.png" alt-text="Screenshot that shows how to connect to an Azure Files share with Windows or Windows Server in the Azure portal.":::
+<iframe width="854" height="480" src="https://www.youtube.com/embed/bmRZi9iGsK0" title="How to mount an Azure Files share in Windows | Azure Tips and Tricks" frameborder="0" allowfullscreen></iframe>
 
 ## Mount Azure Files share on Linux
 
