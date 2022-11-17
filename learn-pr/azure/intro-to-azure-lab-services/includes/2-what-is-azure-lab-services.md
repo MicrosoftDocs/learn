@@ -4,7 +4,7 @@ In your educational institution, suppose you've migrated almost all of your syst
 
 Here, you'll learn how Azure Lab Services can address those concerns.
 
-## Computer labs
+## Cloud-based computer labs
 
 Traditionally, if you wanted to teach classes using software, you'd need a classroom full of physical computers. Each student would use one to learn the material and run through exercises. At the end of each course, every computer must be reset to its initial state, so that another group of students can take the training. This reset is usually done by redeploying an operating system image.
 
