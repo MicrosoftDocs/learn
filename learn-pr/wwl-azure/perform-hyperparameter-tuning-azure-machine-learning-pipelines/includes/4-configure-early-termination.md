@@ -2,7 +2,7 @@
 
 Hyperparameter tuning helps you fine-tune your model and select the hyperparameter values that will make your model perform best. 
 
-Finding the best model, however, can be a never-ending conquest. You always have to weigh whether it's worth the time and expense of testing new hyperparameter values to find a model that may perform better.
+For you to find the best model, however, can be a never-ending conquest. You always have to consider whether it's worth the time and expense of testing new hyperparameter values to find a model that may perform better.
 
 Each trial in a sweep job, a new model is trained with a new combination of hyperparameter values. If training a new model doesn't result in a significantly better model, you may want to stop the sweep job and use the model that performed best so far.
 
