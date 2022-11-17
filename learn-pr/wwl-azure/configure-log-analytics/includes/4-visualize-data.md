@@ -4,7 +4,7 @@ This video shows how to write log queries in Azure Monitor. The next topic, will
 
 
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/cAzlAg2L1Bg" title="How to write log queries in Azure Monitor" allowfullscreen></iframe>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/cAzlAg2L1Bg" title="How to write log queries in Azure Monitor" allowfullscreen></iframe><br/>
 
 
 
