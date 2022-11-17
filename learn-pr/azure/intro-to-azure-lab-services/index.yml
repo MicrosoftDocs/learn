@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Lab Services
-summary: Learn how lab plans, labs, and virtual machines work together to simplify the infrastructure for hosted classroom labs. Determine the types of business problems that can be solved using Azure Lab Services. 
+summary: Find out how lab plans, labs, and virtual machines work together to simplify the infrastructure for hosted classroom labs. Determine the types of business problems that can be solved using Azure Lab Services. 
 abstract: |
   By the end of this module, you'll be able to:
   - Evaluate whether Azure Lab Services is appropriate to your lab requirements.
@@ -23,10 +23,10 @@ badge:
 levels: 
 - beginner
 roles: 
+- school-leader
 - administrator
 - higher-ed-educator
 - k-12-educator
-- school-leader
 products:
 - azure
 - azure-lab-services
