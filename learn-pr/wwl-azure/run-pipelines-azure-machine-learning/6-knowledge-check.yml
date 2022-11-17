@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/16/2022
+  ms.date: 11/17/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -27,10 +27,10 @@ quiz:
     choices:
     - content: "RecurrencePattern"
       isCorrect: false
-      explanation: "Incorrect. ou need the RecurrenceTrigger class to create a schedule that runs at a regular interval."
+      explanation: "Incorrect. You need the RecurrenceTrigger class to create a schedule that runs at a regular interval."
     - content: "JobSchedule"
       isCorrect: false
-      explanation: "Incorrect. ou need the RecurrenceTrigger class to create a schedule that runs at a regular interval."
+      explanation: "Incorrect. You need the RecurrenceTrigger class to create a schedule that runs at a regular interval."
     - content: "RecurrenceTrigger"
       isCorrect: true
       explanation: "Correct. You need the RecurrenceTrigger class to create a schedule that runs at a regular interval."

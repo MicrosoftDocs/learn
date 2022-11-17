@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.run-pipelines-azure-machine-learning.exercise-run-pipeline-job
-title: Exercise：Run a pipeline job
+title: Exercise - Run a pipeline job
 metadata:
-  title: Exercise：Run a pipeline job
-  description: "Exercise：Run a pipeline job"
-  ms.date: 11/16/2022
+  title: Exercise - Run a pipeline job
+  description: "Exercise - Run a pipeline job"
+  ms.date: 11/17/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial

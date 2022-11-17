@@ -13,7 +13,7 @@ An Azure Machine Learning pipeline is defined in a YAML file. The YAML file incl
 You can create the YAML file, or use the `@pipeline()` function to create the YAML file.
 
 > [!Tip]
-> Review the [reference documentation for the `@pipeline()` function](/python/api/azure-ai-ml/azure.ai.ml.dsl?view=azure-python?azure-portal=true).
+> Review the [reference documentation for the `@pipeline()` function](/python/api/azure-ai-ml/azure.ai.ml.dsl?azure-portal=true).
 
 For example, if you want to build a pipeline that first prepares the data, and then trains the model, you can use the following code:
 
