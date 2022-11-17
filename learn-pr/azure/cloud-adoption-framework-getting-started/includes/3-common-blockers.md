@@ -1,4 +1,4 @@
-In this exercise, you review a few common blockers and find the most applicable getting-started guides to overcome them. This exercise will focus all of the various points of guidance from the Cloud Adoption Framework into manageable, actionable steps.
+In this exercise, you'll review a few common blockers and find the most applicable getting-started guides to overcome them. This exercise will focus all of the various points of guidance from the Cloud Adoption Framework into manageable, actionable steps.
 
 ## Scenario 1: The chief information officer is concerned about progress
 
@@ -10,7 +10,7 @@ As the deadline for this project approaches, the Chief Information Officer (CIO)
 
 This is a common experience for customers who are new to cloud migration. Engaging an experienced partner can help with these concerns, as can proper planning and data-driven decisions.
 
-The getting-started guide for [accelerating migration](/azure/cloud-adoption-framework/get-started/migrate?azure-portal=true) will help the Tailwind Traders migration team address these concerns. In particular, that guide will help the team create a data-driven dialogue with leadership around stakeholder expectations and the general strategy. It will also help the team collect data on the overall portfolio and then map that data to actionable cloud adoption plans.
+The getting-started guide for [accelerating migration](/azure/cloud-adoption-framework/get-started/migrate?azure-portal=true) will help the Tailwind Traders migration team address these concerns. In particular, that guide will help the team create a data-driven dialogue with leadership around stakeholder expectations and the general strategy. It will also help the team collect data on the overall portfolio and map that data to actionable cloud-adoption plans.
 
 ## Scenario 2: Cost misalignment
 
@@ -33,4 +33,4 @@ Before operational management processes could start, the CIO asked the following
 - Are we capitalizing on the advanced operations built into the Azure platform?
 - What guardrails will ensure that all workload teams follow best practices for stable operations?
 
-You don't need to change how you operate to adopt the cloud, but you should be able to answer these basic operations-management questions during any migration of a full datacenter. Transitioning to an operations team after migration is often a blocker for migration efforts. The getting-started guide on [building a cloud operations team](/azure/cloud-adoption-framework/get-started/team/cloud-operations?azure-portal=true) walks through steps to answer each of these questions and determine whether you need a dedicated cloud operations team.
+You don't need to change how you operate to adopt the cloud, but you should be able to answer these basic operations-management questions during any migration of a full datacenter. Transitioning to an operations team after migration is often a blocker for migration efforts. The getting-started guide on [building a cloud operations team](/azure/cloud-adoption-framework/get-started/team/cloud-operations?azure-portal=true) walks through steps to answer each of these questions and determine whether you need a dedicated cloud-operations team.

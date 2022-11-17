@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-sql-server-2022.built-in-query-intelligence
+title: Gain performance insights when you need it and accelerate performance with no code changes
+metadata:
+  unitType: learning-content
+  title: Gain performance insights when you need it and accelerate performance with no code changes
+  description: "Learn how to reduce time for query tuning and accelerate performance with no code changes"
+  ms.date: 11/10/2022
+  author: rgward
+  ms.author: bobward
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-built-in-query-intelligence.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "What capability do query store hints provide?"
+    choices: 
+    - content: "An easy-to-use method for shaping query plans without changing application code"
+      isCorrect: true
+      explanation: "Query store hints allow you to persist a query hint in the Query Store without changing the query text"
+    - content: "Change query plans by reverting back to a previous plan found in the Query Store."
+      isCorrect: false
+      explanation: "Reverting back to a previous plan found in the Query Store is known as Auto Plan Correction."
+    - content: "Change query text when persisting a query in the Query Store"
+      isCorrect: false
+      explanation: "Query store hints don't change the original query text"
+  - content: "Parameter Sensitive Plan optimization can help which scenario?"
+    choices: 
+    - content: "Data is skewed and you use ad-hoc queries with your application."
+      isCorrect: false
+      explanation: "This feature isn't designed for ad-hoc queries, but for queries in stored procedures or parameterized statements."
+    - content: "Scenarios where more than one plan in cache would help with stored procedure performance."
+      isCorrect: true
+      explanation: "Parameter Sensitive Plan optimization is designed to allow more than one plan to be in cache for scenarios where parameter values are used in stored procedures or for parameterized queries."
+    - content: "Scenarios for queries that use parallelism"
+      isCorrect: false
+      explanation: "This feature might help queries that use parallelism, but doesn't require it. Degree of parallelism feedback is designed to help with queries that use parallelism"
