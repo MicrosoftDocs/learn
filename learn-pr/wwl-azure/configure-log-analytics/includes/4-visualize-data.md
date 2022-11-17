@@ -1,6 +1,6 @@
 Log Analytics provides a query syntax to quickly retrieve and consolidate data in the repository. You can create and save Log Searches to directly analyze data in the portal. You can also create log searches to run automatically and create an alert.
 
-This video shows how to write log queries in Azure Monitor. The next topic, will review the query structure. 
+This video shows how to write log queries in Azure Monitor. The next topic will review the query structure. 
 
 
 
