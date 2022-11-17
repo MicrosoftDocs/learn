@@ -21,8 +21,9 @@ Watch this video on how to use deployment slots. This video is based on [Azure T
  -  Hybrid connections \*
  -  Service endpoints \*
  -  Azure Content Delivery Network \*
+ -  Path mapping
 
-Features marked with an asterisk (\*) are planned to be unswapped.
+Features marked with an asterisk (\*) are planned.
 
 **Settings that aren't swapped:**
 
@@ -36,3 +37,6 @@ Features marked with an asterisk (\*) are planned to be unswapped.
  -  Diagnostic settings
  -  Cross-origin resource sharing (CORS)
  -  Virtual network integration
+ -  Managed identities
+ -  Settings that end with the suffix _EXTENSION_VERSION
+

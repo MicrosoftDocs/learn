@@ -1,4 +1,4 @@
-When creating an App Service, you will need to specify a resource group and service plan. Then there are few other configuration choices. You may need to ask your developer for assistance in completing this information.
+When creating an App Service, you'll need to specify a resource group and service plan. Then there are few other configuration choices. You may need to ask your developer for assistance in completing this information.
 
 Watch this video to learn how to create an App Service in the portal. 
 

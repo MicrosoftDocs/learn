@@ -7,7 +7,7 @@ Watch this video on how to configure a backup for your Azure App Service. This v
 
 ## What gets backed up
 
-App Service can back up the following information to an Azure storage account and container that you have configured your app to use.
+App Service can back up the following information to an Azure storage account and container that you've configured your app to use.
 
  -  App configuration.
  -  File content.
