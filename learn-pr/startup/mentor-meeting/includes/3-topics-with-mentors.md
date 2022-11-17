@@ -17,7 +17,7 @@ Remember that mentors are individuals with startup experience who volunteer thei
 
 Attempting to cover too many topics—or to force fit a lengthy topic into a single conversation—can be a recipe for failure. It's important to acknowledge that you only have a short period of time to engage with the mentor and that a successful outcome on a discrete topic will be far more valuable than a surface level conversation on a complex issue. Use your time accordingly and structure your discussion to ensure you can adequately engage with the mentor on a particular topic.
 
-You carefully evaluate the topics you'd like to discuss with your mentor and determine that financial modeling is the most pressing. What's more, you recognize that a financial model can be something to which every founder is exposed, so your mentor is likely to have a beneficial opinion to share.
+Carefully evaluate the topics you'd like to discuss with your mentor and determine that financial modeling is the most pressing. What's more, you recognize that a financial model can be something to which every founder is exposed, so your mentor is likely to have a beneficial opinion to share.
 
 > [!TIP]
 > Try to break your needs into topics that can be discussed and covered in 30 minutes or 30-minute increments over the course of multiple meetings. This ensures that you're able to cover the issues at hand, even during the shortest meetings
