@@ -1,4 +1,4 @@
-In this module, you’ve learned how to design a solution to log and monitor Azure resources. You should now be able to:
+In this module, you’ve learned how to design solutions for high availability. You should now be able to:
 
 - Identify the availability requirements of Azure resources 
 
