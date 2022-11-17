@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/16/2022
+  ms.date: 11/17/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -17,10 +17,10 @@ quiz:
     - content: "A managed online endpoint."
       isCorrect: false
       explanation: "Incorrect. Azure Machine Learning manages all the infrastructure if you use a managed online endpoint."
-    - content: "A batch endpoints."
+    - content: "A batch endpoint."
       isCorrect: false
       explanation: "Incorrect. A batch endpoint doesn't provide real-time predictions."
-    - content: "A Kubernetes online endpoints. (AKS) inferencing cluster"
+    - content: "A Kubernetes online endpoint."
       isCorrect: true
       explanation: "Correct. You should use Kubernetes online endpoint if you want to manage the underlying Kubernetes clusters."
   - content: "You're deploying a model as a real-time inferencing service. What functions must the scoring script for the deployment include?"

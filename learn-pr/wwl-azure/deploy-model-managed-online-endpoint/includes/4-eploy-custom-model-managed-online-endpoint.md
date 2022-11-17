@@ -12,7 +12,7 @@ To deploy a model, you must have:
 - A scoring script.
 - An execution environment.
 
-The model files can be logged and stored during a job that trains a model. 
+The model files can be logged and stored when you train a model.
 
 ### Create the scoring script
 

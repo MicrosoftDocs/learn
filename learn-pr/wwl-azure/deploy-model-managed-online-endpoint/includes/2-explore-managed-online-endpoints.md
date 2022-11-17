@@ -50,7 +50,7 @@ After testing, you can also seamlessly transition to the new version of the mode
 Blue/green deployment allows for multiple models to be deployed to an endpoint. You can decide how much traffic to forward to each deployed model. This way, you can switch to a new version of the model without interrupting service to the consumer.
 
 > [!Tip]
-> Learn more about [deploying and scoring a machine learning model by using an online endpoint](/azure/machine-learning/how-to-deploy-managed-online-endpoints#understand-the-scoring-script)
+> Learn more about [safe rollout for online endpoints](/azure/machine-learning/how-to-safely-rollout-online-endpoints?azure-portal=true)
 
 ## Create an endpoint
 
@@ -59,7 +59,7 @@ To create an online endpoint, you'll use the `ManagedOnlineEndpoint` class, whic
 - `name`: Name of the endpoint. Must be unique in the Azure region.
 - `auth_mode`: Use `key` for key-based authentication. Use `aml_token` for Azure Machine Learning token-based authentication.
 
-To actually create the endpoint, use the following command:
+To create an endpoint, use the following command:
 
 ```python
 from azure.ai.ml.entities import ManagedOnlineEndpoint
@@ -67,7 +67,7 @@ from azure.ai.ml.entities import ManagedOnlineEndpoint
 # create an online endpoint
 endpoint = ManagedOnlineEndpoint(
     name="endpoint-example",
-    description="Online endpoint for MLflow model",
+    description="Online endpoint",
     auth_mode="key",
 )
 

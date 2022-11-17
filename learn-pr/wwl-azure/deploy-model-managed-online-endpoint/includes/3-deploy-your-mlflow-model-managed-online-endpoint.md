@@ -6,7 +6,7 @@ To deploy an MLflow model, you need to have created an endpoint. Then you can de
 
 ## Deploy an MLflow model to an endpoint
 
-When you deploy a MLflow model to a managed online endpoint, you don´t need to have the scoring script and environment. 
+When you deploy an MLflow model to a managed online endpoint, you don´t need to have the scoring script and environment. 
 
 To deploy an MLflow model, you must have model files stored on a local path or with a registered model. You can log model files when training a model by using MLflow tracking. 
 

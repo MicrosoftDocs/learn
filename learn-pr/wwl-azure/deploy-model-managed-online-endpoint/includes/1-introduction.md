@@ -14,7 +14,7 @@ In Azure Machine Learning, you can use **online endpoints** to deploy and consum
 
 In this module, you'll learn how to:
 
-- Use managed online endpoints.
+- Create managed online endpoints.
 - Deploy your MLflow model to a managed online endpoint.
 - Deploy a custom model to a managed online endpoint.
 - Test online endpoints.
