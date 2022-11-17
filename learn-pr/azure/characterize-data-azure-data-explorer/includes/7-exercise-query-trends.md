@@ -11,7 +11,7 @@ The following query creates a timechart of the number of storm events per 8-hour
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAx2MMQrDMBRD95xCYwKFrF06hZzAvUDiKtiDv+n3dyGlh6+dSfCkp3mGI2GBOJTvSvEn8oFiWRP4oVjBfsJi4uA6XC82/FBqSpvGL7HkKoYHfM9x6vs9CkZnm9qzmTfcw9QUpbyo15kPrfsD4B0ckX4AAAA=" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAx2MMQrDMBRD95xCYwKFrF06hZzAvUDiKtiDv+n3dyGlh6+dSfCkp3mGI2GBOJTvSvEn8oFiWRP4oVjBfsJi4uA6XC82/FBqSpvGL7HkKoYHfM9x6vs9CkZnm9qzmTfcw9QUpbyo15kPrfsD4B0ckX4AAAA=" target="_blank">Run the query</a>
     
     
     ```kusto
@@ -31,7 +31,7 @@ Another way to look at data distribution is to group by event location, in this 
 
 1. Run the following query. 
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAyWMsQ3DMBADe0/B0qk8gUtPoAleyhsOEOmBFxUggYe3rBQsjjhyWRBUwaPHKG+UlqM6bId+tLAiflEp1CnQPG+jnE7UlrP466d/DyuStcL5cQ/CGHTJnDcPpbNrefbzKJ4OcV63IslrfQAAAA==" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAyWMsQ3DMBADe0/B0qk8gUtPoAleyhsOEOmBFxUggYe3rBQsjjhyWRBUwaPHKG+UlqM6bId+tLAiflEp1CnQPG+jnE7UlrP466d/DyuStcL5cQ/CGHTJnDcPpbNrefbzKJ4OcV63IslrfQAAAA==" target="_blank">Run the query</a>
     
     
     ```kusto
@@ -56,7 +56,7 @@ You've seen how the number of events vary based on time and state. Recall that t
 
 1. The following query groups events by geographic cell, and counts the number of events in each cell. These results are displayed on a map, where the circle size corresponds to the number of events in that cell. Run the following query.
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA2VPOw7CMAzdOYXF1EidGNi6ILGxcYAqBKsJNHGUuJQiDo/bgihis/2+PjIlv79h4Lx6Qkx0QcOww8aFA4XyPWkWsLeYEFwOxKFr2+IDKdDh/HenoESTO+91cg8EQ13get6HatoKBacBrM4WKmiQ6khOOEx13hhcOH1rlFu1qDlqZuooMvJE0u3sUoy2qvyNFSneGaXt/LHErifCWpAkd0wQHRqrE0Pv2EJxdcKuwOuoXlm6/gQrAQAA" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA2VPOw7CMAzdOYXF1EidGNi6ILGxcYAqBKsJNHGUuJQiDo/bgihis/2+PjIlv79h4Lx6Qkx0QcOww8aFA4XyPWkWsLeYEFwOxKFr2+IDKdDh/HenoESTO+91cg8EQ13get6HatoKBacBrM4WKmiQ6khOOEx13hhcOH1rlFu1qDlqZuooMvJE0u3sUoy2qvyNFSneGaXt/LHErifCWpAkd0wQHRqrE0Pv2EJxdcKuwOuoXlm6/gQrAQAA" target="_blank">Run the query</a>
     
     ```kusto
     StormEvents

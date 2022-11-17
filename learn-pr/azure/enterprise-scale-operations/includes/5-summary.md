@@ -2,9 +2,9 @@ Operationalizing the Azure estate is critical. It ensures that the organization 
 
 For central teams to maintain operational visibility within a large-scale Azure estate, organizations must establish a centralized approach to management and monitoring. We recommend that organizations enforce management and monitoring configurations across the Azure estate. This approach:
 
-- Ensures that there are no unintended gaps in observability
-- Provides application teams with easily consumable management capabilities
-- Gives central teams the ability to enforce controls that are necessary to meet governance and compliance requirements
+- Ensures that there are no unintended gaps in observability.
+- Provides application teams with easily consumable management capabilities.
+- Gives central teams the ability to enforce controls that are necessary to meet governance and compliance requirements.
 
 To provide a platform that meets application requirements for high availability (HA) and disaster recovery (DR), you must have a thorough understanding of the mechanisms that application teams use to achieve their goals. The platform team is responsible for connectivity and for guiding region selection for platform-replication capabilities.
 

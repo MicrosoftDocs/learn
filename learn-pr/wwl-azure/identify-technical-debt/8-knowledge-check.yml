@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/01/2022
+  ms.date: 11/16/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -28,17 +28,17 @@ quiz:
     - content: "Code smell."
       isCorrect: true
       explanation: "Correct. Code smells are characteristics in your code that could be a problem. Code smells hint at more profound problems in the design or implementation of the code."
-  - content: "Which of the following choices represents what is WhiteSource Bolt used?"
+  - content: "Which of the following choices can measure the probability that a system will run without failure over a specific period of operation?"
     choices:
-    - content: "Penetration Testing."
+    - content: "Maintainability"
       isCorrect: false
-      explanation: "Incorrect. WhiteSource Bolt is used to finding and fix open-source vulnerabilities."
-    - content: "Finding and fixing open-source vulnerabilities."
+      explanation: "Incorrect. Maintainability measures how easily software can be maintained. It relates to the codebase's size, consistency, structure, and complexity. And ensuring maintainable source code relies on several factors, such as testability and understandability."
+    - content: "Reliability"
       isCorrect: true
-      explanation: "Correct. WhiteSource Bolt is used to finding and fix open-source vulnerabilities."
-    - content: "Scanning for code quality issues."
+      explanation: "Correct. Reliability measures the probability that a system will run without failure over a specific period of operation. It relates to the number of defects and availability of the software. Several defects can be measured by running a static analysis tool."
+    - content: "Reusability"
       isCorrect: false
-      explanation: "Incorrect. WhiteSource Bolt is used to finding and fix open-source vulnerabilities."
+      explanation: "Incorrect. Reusability measures whether existing assets, such as code."
   - content: "Which of the following tools can you use to do code quality checks?"
     choices:
     - content: "Veracode."
