@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-migrations.migrate-your-databases
-title: Migrate your databases
+title: Migrate your structured data in databases
 metadata:
-  title: Migrate your databases
-  description: "Migrate your databases with the Azure Database Migration Service and SQL Server Data Migration Assistant (DMA)."
+  title: Migrate your structured data in databases
+  description: "Migrate your structured data in databases with the Azure Database Migration Service and SQL Server Data Migration Assistant (DMA)."
   ms.date: 11/21/2022
   author: wwlpublish
   ms.author: cynthist
@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/6-migrate-your-databases.md)]

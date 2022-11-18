@@ -13,15 +13,15 @@ The Azure Database Migration Service is part of Azure Migrate. You can use the D
 
 ### Things to know about the Database Migration Service
 
-The Azure Database Migration Service is a fully managed service. The service provides two ways to migrate SQL Server databases:
+The Azure Database Migration Service is a fully managed service. The service provides two ways to migrate structured data in SQL Server databases:
 
 - **Online migration**: An online migration uses a continuous synchronization of live data, which allows a cut over to the Azure replica database at any time. Online migration minimizes downtime. 
 
 - **Offline migration**: An offline migration requires shutting down the server at the start of the migration, which results in downtime for the service.
 
-#### Migrating databases
+#### Migrating data in databases
 
-When you begin the migration process with the Database Migration Service, [SQL Server Data Migration Assistant (DMA)](/sql/dma/dma-overview?azure-portal=true) guides you through the process. This process consists of three primary efforts:
+When you begin a migration of structured data with the Database Migration Service, [SQL Server Data Migration Assistant (DMA)](/sql/dma/dma-overview?azure-portal=true) guides you through the process. This process consists of three primary steps:
 
 1. **Assess databases**: DMA helps you assess the databases you want to migrate.
 
@@ -56,7 +56,7 @@ The following screenshot shows a typical DMA assessment report for migrating a d
 
 #### Step 2. Migrate schema with DMA
 
-Each database has a schema that represents its entire structure. The schema defines the rules for how the data is organized and the relationships between data elements. You migrate the schema before you migrate all the data in your database. By migrating the schema first, you accomplish two goals:
+Each database has a schema that represents its entire structure. The schema defines the rules for how the structured data is organized and the relationships between data elements. You migrate the schema before you migrate all the data in your database. By migrating the schema first, you accomplish two goals:
 
 - An empty structure is created on the new Azure SQL database. This structure matches the structure of the on-premises source database.
 
@@ -66,6 +66,6 @@ When the script completes, check the target server to make sure the database is 
 
 #### Step 3. Migrate data and verify
 
-After you complete your assessment and migrate your schema, you can migrate the data with the Database Migration Service.
+After you complete your assessment and migrate your schema, you can migrate the structured data with the Database Migration Service.
 
-When all migration steps are complete, your schema and data have been migrated to the Azure SQL Database instance. You can then safely shut down and decommission your on-premises databases and servers.
+When all migration steps are complete, your schema and structured data have been migrated to the Azure SQL Database instance. You can then safely shut down and decommission your on-premises databases and servers.
