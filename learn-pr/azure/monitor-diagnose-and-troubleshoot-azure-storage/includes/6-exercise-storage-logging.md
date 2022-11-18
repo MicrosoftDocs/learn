@@ -8,7 +8,7 @@ In this exercise, you'll create a Log Analytics workspace, create a diagnostic s
 
    - Select a **Subscription** from the subscription drop-down list if the default selected is not appropriate.
 
-   - For **Resource Group**, select the <rgn>[Sandbox resource group]</rgn> resource group.
+   - For **Resource Group**, select the **<rgn>[Sandbox resource group]</rgn>** resource group.
 
    - Provide a name for the new **Log Analytics workspace**, such as *DefaultLAWorkspace*. This name must be unique per resource group.
 
