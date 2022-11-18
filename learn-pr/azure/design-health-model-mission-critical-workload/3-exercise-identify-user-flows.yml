@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-health-model-mission-critical-workload.exercise-identify-user-flows
+title: Exercise - Identify user flows and key application components
+metadata:
+  title: Exercise - Identify user flows and key application components
+  description: Exercise - Identify user flows and key application components.
+  ms.date: 11/11/2022
+  author: PageWriter-MSFT
+  ms.author: prwilk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure #TBD
+durationInMinutes: 5 #TBD
+content: |
+  [!include[](includes/3-exercise-identify-user-flows.md)]

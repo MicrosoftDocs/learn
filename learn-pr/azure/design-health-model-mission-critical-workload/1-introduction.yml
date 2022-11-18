@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-health-model-mission-critical-workload.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction.
+  ms.date: 11/11/2022
+  author: PageWriter-MSFT
+  ms.author: prwilk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure #TBD
+durationInMinutes: 2 #TBD
+content: |
+  [!include[](includes/1-introduction.md)]

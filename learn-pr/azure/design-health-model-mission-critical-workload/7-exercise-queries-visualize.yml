@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-health-model-mission-critical-workload.exercise-queries-visualize
+title: Exercise - Queries and visualize #TBD
+metadata:
+  title: Exercise - Queries and visualize
+  description: Exercise - Queries and visualize.
+  ms.date: 11/11/2022
+  author: PageWriter-MSFT
+  ms.author: prwilk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure #TBD
+durationInMinutes: 5 #TBD
+content: |
+  [!include[](includes/7-exercise-queries-visualize.md)]

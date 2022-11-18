@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.design-health-model-mission-critical-workload
+metadata:
+  title: 'Design a health model for your mission-critical workload'
+  description: Improve your observability practices by defining a health model. The model gives you the ability to quickly identify and troubleshoot issues in your system..
+  ms.date: 11/11/2022
+  author: PageWriter-MSFT
+  ms.author: prwilk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure #TBD
+title: 'Design a health model for your mission-critical workload'
+summary: A mission-critical workload needs to be continuously monitored to ensure degraded application components are caught early to prevent a complete outage. A well-designed health model gives you that ability based on metrics and their thresholds that are important to you. Through optimized queries and visualization, you can identify the cascading impact of degraded components and troubleshoot issues early before they can cause an outage.
+abstract:  | 
+  In this module, you will:
+  -	Identify user flows and key application components of a given architecture
+  -	Identify key metrics that will make the foundation for the health model of a given architecture
+  -	Visualize the health model in a dashboard 
+prerequisites: |
+  - TBD
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+-	administrator
+-	solution-architect
+-	support-engineer 
+-	devops-engineer
+-	network-engineer
+-	security-engineer
+products:
+- azure #TBD
+subjects:
+-	high-availability-system
+-	architecture
+-	solution-design
+-	data-visualization
+-	it-management-monitoring
+units:
+- learn.design-health-model-mission-critical-workload.introduction
+- learn.design-health-model-mission-critical-workload.what-is-health-modeling
+- learn.design-health-model-mission-critical-workload.exercise-identify-user-flows
+- learn.design-health-model-mission-critical-workload.health-states
+- learn.design-health-model-mission-critical-workload.exercise-define-health-states-metrics-threshold
+- learn.design-health-model-mission-critical-workload.set-up-queries-and-visualize
+- learn.design-health-model-mission-critical-workload.exercise-queries-visualize
+- learn.design-health-model-mission-critical-workload.summary
+badge:
+  uid: learn.design-health-model-mission-critical-workload.badge 
