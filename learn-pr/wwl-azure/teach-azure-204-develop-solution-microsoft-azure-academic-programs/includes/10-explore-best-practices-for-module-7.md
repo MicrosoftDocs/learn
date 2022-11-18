@@ -10,7 +10,7 @@ This module consists of three lessons:
 
 - Lesson 1 – Implement Azure Key Vault 
 - Lesson 2 – Implement Managed Identities 
-- Lesson 1 – Implement Azure App Configuration 
+- Lesson 3 – Implement Azure App Configuration 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5ancR]
 
