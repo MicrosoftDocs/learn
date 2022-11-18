@@ -26,7 +26,7 @@ In the following procedure, you'll build the query in stages to give yourself a 
     | take 10
     ```
 
-    Take a look at the resulting list. Notice that the resulting table contains columns from the *Customers* table, followed by matching columns from the *SalesFact* table.
+    Take a look at the resulting list. Notice that the table contains columns from the *Customers* table, followed by matching columns from the *SalesFact* table.
 
 1. Run the following query to summarize the joined tables to get the three countries that have the most sales.
 
