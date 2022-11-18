@@ -38,13 +38,13 @@ This section includes general documents relating to the following categories:
 - Privacy and Data Protection - Privacy and Data Protection Resources
 - FAQ and Whitepapers - Whitepapers and answers to frequently asked questions
 
-:::image type="content" source="../media/stp-reports.png" alt-text="Tiles available in the reports, whitepapers, and artifacts section of the Service Trust Portal home page.":::
+:::image type="content" source="../media/stp-reports.png" alt-text="Screenshot that shows the tiles available in the reports, whitepapers, and artifacts section of the Service Trust Portal home page.":::
 
 ### Industry and Regional Resources
 
 This section includes documents the apply to the following industries and regions:
 
-- Financial Services - Resources elaborating regulatory compliance guidance for FSI (by country)
+- Financial Services - Resources elaborating regulatory compliance guidance for FSI (by country/region)
 - Healthcare and Life Sciences - Capabilities offered by Microsoft for Healthcare Industry
 - Media and Entertainment - Media and Entertainment Industry Resources
 - United States Government - Resources exclusively for US Government customers

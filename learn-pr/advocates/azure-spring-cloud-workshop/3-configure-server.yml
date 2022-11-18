@@ -18,7 +18,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'On Azure Spring Cloud, which security mechanisms do Spring Cloud Config Server support?'
+  - content: 'On Azure Spring Apps, which security mechanisms do Spring Cloud Config Server support?'
     choices:
     - content: 'Only HTTP basic authentication'
       isCorrect: false

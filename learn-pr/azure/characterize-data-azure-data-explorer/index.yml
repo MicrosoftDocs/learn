@@ -19,7 +19,7 @@ prerequisites: |
   - A Microsoft account or an Azure Active Directory user identity to connect to a free cluster. An Azure subscription isn't required. 
   - Familiarity with database structures like tables, columns, and rows.
   - Familiarity with Kusto Query Language (KQL) functions and operators.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-data-explore-web.svg
 levels: 
   - beginner
 roles:   

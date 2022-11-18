@@ -4,7 +4,7 @@ Microsoft Azure is made up of datacenters located around the globe. These datace
 
 Here are some points to consider about regions:
 
-- Azure is generally available in more than 60 regions in 140 countries.
+- Azure is generally available in more than 140 countries/regions.
 
 - Azure has more global regions than any other cloud provider.
 

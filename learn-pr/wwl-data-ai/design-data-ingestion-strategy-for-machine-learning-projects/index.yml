@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects
+metadata:
+  title: Design a data ingestion strategy for machine learning projects
+  description: "Design a data ingestion strategy for machine learning projects"
+  ms.date: 11/11/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design a data ingestion strategy for machine learning projects
+summary: Learn how to design a data ingestion solution for training data used in machine learning projects.
+abstract: |
+  In this module, you'll learn how to:
+  - Identify your data source and format
+  - Choose how to serve data to machine learning workflows
+  - Design a data ingestion solution
+prerequisites: ""
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure-databricks
+- azure-machine-learning
+- azure-synapse-analytics
+subjects:
+- artificial-intelligence
+- machine-learning
+units:
+- learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.introduction
+- learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.identify-your-data-source-format
+- learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.choose-how-serve-data-workflows
+- learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.solution
+- learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.exercise
+- learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.knowledge-check
+- learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.summary
+badge:
+  uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.badge
