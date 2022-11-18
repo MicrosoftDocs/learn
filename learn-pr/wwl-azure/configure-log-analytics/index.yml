@@ -2,8 +2,8 @@
 uid: learn.wwl.configure-log-analytics
 metadata:
   title: Configure Log Analytics
-  description: "You will learn how to configure Log Analytics including structuring queries."
-  ms.date: 10/28/2022
+  description: "Configure Log Analytics"
+  ms.date: 11/18/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

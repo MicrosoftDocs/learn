@@ -25,6 +25,6 @@ To connect to a Linux-based VM, you can use a secure shell protocol (SSH) client
 
 The Azure Bastion service is a fully platform-managed PaaS service. Bastion provides secure and seamless RDP/SSH connectivity to your virtual machines directly over SSL. When you connect via Azure Bastion, your virtual machines don't need a public IP address.
 
-Bastion provides secure RDP and SSH connectivity to all VMs in the virtual network in which it's provisioned. Using Azure Bastion protects your virtual machines from exposing RDP/SSH ports to the outside world while still providing secure access using RDP/SSH. With Azure Bastion, you connect to the virtual machine directly from the Azure portal. You don't a client, agent, or another piece of software.
+Bastion provides secure RDP and SSH connectivity to all VMs in the virtual network in which it's provisioned. Using Azure Bastion protects your virtual machines from exposing RDP/SSH ports to the outside world while still providing secure access using RDP/SSH. With Azure Bastion, you connect to the virtual machine directly from the Azure portal. You are not a client, agent, or another piece of software.
 
 :::image type="content" source="../media/connect-bastion.png" alt-text="Screenshot of a Bastion connection.":::
