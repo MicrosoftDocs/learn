@@ -4,7 +4,7 @@ In the preceding exercise, you used the `join` operator to find the total sales 
 
 Your sales team wants to know the company's total sales per country. You could use a `join` operator to get the customer and product information. However, this kind of query performs best when you use the `lookup` operator to get this information. 
 
-Recall that the `lookup` operator enriches a *fact* table with data from a *dimension* table. It's a bit like reading a book (fact table) and looking up unknown words in a dictionary (dimensions table).
+Recall that the `lookup` operator enriches a *fact* table with data from a *dimension* table. It's a bit like reading a book (fact table) and looking up unknown words in a dictionary (dimension table).
 
 For this query, you start with the *SalesFact* table and use the `lookup` operator to get *Customer* data and add it to the resultant table.
 
