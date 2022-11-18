@@ -41,7 +41,7 @@ In the table, *CustomerKey* and *ProductKey* are highlighted to indicate that th
 
 Now that you've analyzed your data, you need to understand how to combine tables to provide the information you need. Kusto queries provide several operators that you can use to combine data from multiple tables, including the `lookup`, `join`, and `union` operators.
 
-The `join` operator merges the rows of two tables by matching values of the specified columns from each table. The resultant table depends on the type of join you use. For example, if you use an *inner join*, the table will have the same columns as the left table (sometimes called the *outer table*), plus the columns from the right table (sometimes called the *inner table*). You'll learn more about join types in the next section. For best performance, if one table is always smaller than the other, use it as the left side of the `join` operator.
+The `join` operator merges the rows of two tables by matching values of the specified columns from each table. The resulting table depends on the kind of join you use. For example, if you use an *inner join*, the table will have the same columns as the left table (sometimes called the *outer table*), plus the columns from the right table (sometimes called the *inner table*). You'll learn more about join kinds in the next section. For best performance, if one table is always smaller than the other, use it as the left side of the `join` operator.
 
 The `lookup` operator is a special implementation of a `join` operator that optimizes the performance of queries where a fact table is enriched with data from a dimension table. It extends the fact table with values that are looked up in a dimension table. For best performance, the system by default assumes that the left table is the larger (fact) table, and the right table is the smaller (dimension) table. This is exactly opposite to the assumption that's used by the `join` operator.
 
@@ -54,13 +54,13 @@ The `materialize()` function caches results within a query execution for subsequ
 
 You'll learn more about the various table merging operators and the `materialize()` function, and how to use them, shortly.
 
-## Types of join
+## Kinds of join
 
-:::image type="content" source="../media/2-join-kinds.png" alt-text="Diagram showing query join types.":::
+:::image type="content" source="../media/2-join-kinds.png" alt-text="Diagram showing query join kinds.":::
 
-There are many different types of joins that can be performed that affect the schema and rows in the resultant table. The following table shows the types of joins supported by the Kusto Query Language and schema and rows they return:
+There are many different kinds of joins that can be performed that affect the schema and rows in the resultant table. The following table shows the kinds of joins supported by the Kusto Query Language and schema and rows they return:
 
-| Join type | Description | Illustration |
+| Join kind | Description | Illustration |
 | --- | --- | --- |
 | `innerunique` (default) | Inner join with left side deduplication<br />**Schema**: All columns from both tables, including the matching keys<br />**Rows**: All deduplicated rows from the left table that match rows from the right table | :::image type="icon" source="../media/2-join-inner-unique.png" border="false"::: |
 | `inner` | Standard inner join<br />**Schema**: All columns from both tables, including the matching keys<br />**Rows**: Only matching rows from both tables | :::image type="icon" source="../media/2-join-inner.png" border="false"::: |
@@ -72,6 +72,6 @@ There are many different types of joins that can be performed that affect the sc
 | `rightsemi` | Right semi join<br />**Schema**: All columns from the left table<br />**Rows**: All records from the right table that match records from the left table | :::image type="icon" source="../media/2-join-right-semi.png" border="false"::: |
 | `rightanti`, `rightantisemi` | Right anti join and semi variant<br />**Schema**: All columns from the left table<br />**Rows**: All records from the right table that don't match records from the left table | :::image type="icon" source="../media/2-join-right-anti.png" border="false"::: |
 
-You'll notice that the default join type is `innerunique` and doesn't need to be specified. Nevertheless, it's best practice to always explicitly specify the join type for clarity.
+You'll notice that the default join kind is `innerunique`, and it doesn't need to be specified. Nevertheless, it's a best practice to always explicitly specify the join kind for clarity.
 
 As you progress through this module, you'll also learn about the `arg_min()` and `arg_max()` aggregation functions, the `as` operator as an alternative to the `let` statement, and the `startofmonth()` function to assist with grouping data by month.
