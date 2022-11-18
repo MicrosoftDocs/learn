@@ -2,7 +2,7 @@ After you assess Tailwind Traders on-premises workloads, you can begin to consid
 
 ## Azure Migrate and migration
 
-As we reviwed in the previous unit, Azure Migrate is a set of features located in a centralized hub that you can use to assess and migrate different workloads to Azure. You can use Azure Migrate to perform the migration of workloads, including applications and virtual machines. Workloads that can be migrated to Microsoft Azure include on-premises servers, infrastructure, applications, and data.
+As we reviewed in the previous unit, Azure Migrate is a set of features located in a centralized hub that you can use to assess and migrate different workloads to Azure. You can use Azure Migrate to perform the migration of workloads, including applications and virtual machines. Workloads that can be migrated to Microsoft Azure include on-premises servers, infrastructure, applications, and data.
 
 :::image type="content" source="../media/discover-assess.png" alt-text="Screenshot that shows Azure Migrate: Discovery and assessment tools." border="false":::
 
@@ -27,7 +27,7 @@ Azure Migrate includes the following components to support the migration process
    | --- | --- |
    | Azure Migrate: Discovery and assessment: Server Assessment | Discover and assess servers including SQL and web apps |
    | Azure Migrate: Server Migration | Migrate servers |
-   | Data Migration Assistant | Assess SQL Server databases for migration to Azure SQL Database, Azure SQL Managed Instance, or Azure virtual machines running SQL Server |
+   | SQL Server Data Migration Assistant (DMA) | Assess SQL Server databases for migration to Azure SQL Database, Azure SQL Managed Instance, or Azure virtual machines running SQL Server |
    | Azure Database Migration Service | Migrate on-premises databases to Azure virtual machines running SQL Server, Azure SQL Database, or SQL Managed Instances |
    | Movere | Assess servers |
    | Web app migration assistant | Assess on-premises web apps and migrate them to Azure |
@@ -48,18 +48,18 @@ Choose the scenario that reflects your configuration requirements and migration 
 
 #### Migrating web apps to Azure
 
-Azure Migrate uses Azure App Service Migration Assistant to assess and migrate your web apps. App Service Migration Assistant enables you to assess and migrate your on-premises Windows ASP.NET web apps to Azure.
+Azure Migrate uses Azure App Service Migration Assistant to assess and migrate your web apps. App Service Migration Assistant enables you to assess and migrate your on-premises Windows ASP.NET web apps to Azure. Use App Service Migration Assistant to perform these tasks: 
 
-- Determine whether your app is a suitable migration candidate.
-- Run readiness checks to perform a general assessment of app configuration settings.
-- Migrate an app to Azure App Service.
+- Determine whether your app is a suitable migration candidate
+- Run readiness checks to perform a general assessment of app configuration settings
+- Migrate an app to Azure App Service
 
-App Service Migration Assistant uses an agent that you install locally, and then use to perform a detailed analysis of your apps. You can then use the tool to migrate those apps to Azure. After the initial assessment of your app is complete, you'e guided through the migration process by using a graphical wizard-driven interface.
+App Service Migration Assistant uses an agent that you install locally, and then it uses the agent to perform a detailed analysis of your apps. You use the tool to migrate those apps to Azure. After the initial assessment of your apps is complete, you're guided through the migration process via a graphical wizard-driven interface.
 
 After moving the app to Azure, you might also consider migrating any connected databases.
 
 > [!IMPORTANT]
-> App Service Migration Assistant migrates your web app and its associated configurations, but doesn't migrate any back-end databases connected to the app. You can use SQL Server Data Migration Assistant (DMA) to complete the migration of your database.
+> App Service Migration Assistant migrates your web app and its associated configurations, but doesn't migrate any back-end databases connected to the app. You can use DMA to complete the migration of your database.
 
 #### Migrating virtual machines
 

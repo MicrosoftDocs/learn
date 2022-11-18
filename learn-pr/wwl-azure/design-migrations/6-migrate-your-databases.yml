@@ -3,8 +3,8 @@ uid: learn.wwl.design-migrations.migrate-your-databases
 title: Migrate your databases
 metadata:
   title: Migrate your databases
-  description: "Migrate your databases"
-  ms.date: 06/28/2022
+  description: "Migrate your databases with the Azure Database Migration Service and SQL Server Data Migration Assistant (DMA)."
+  ms.date: 11/21/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
