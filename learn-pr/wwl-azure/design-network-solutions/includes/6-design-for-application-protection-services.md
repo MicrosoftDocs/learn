@@ -7,7 +7,7 @@ This section describes networking services in Azure that help protect your netwo
 :::image type="content" source="../media/denial-protection.png" alt-text="Diagram of denial of service attacks.":::
 
 
-Use DDoS protection Standard when you need:
+Use DDoS protection when you need:
 - Always-on traffic monitoring 
 - Adaptive tuning
 - Multi-layered protection
@@ -18,7 +18,7 @@ Use DDoS protection Standard when you need:
 
 ## Azure Private Link
 
-[Azure Private Link](/azure/private-link/private-link-overview) enables you to access Azure PaaS Services (for example, Azure Storage and SQL Database) and Azure hosted customer-owned/partner services over a private endpoint in your virtual network. Traffic between your virtual network and the service travels the Microsoft backbone network. Exposing your service to the public internet is no longer necessary. You can create your own private link service in your virtual network and deliver it to your customers. Private link is used to access PaaS services such as Azure Storage, Azure SQL, App Services and more as illustrated below. 
+[Azure Private Link](/azure/private-link/private-link-overview) enables you to access Azure PaaS Services (for example, Azure Storage and SQL Database) and Azure hosted customer-owned/partner services over a private endpoint in your virtual network. Traffic between your virtual network and the service travels the Microsoft backbone network. Exposing your service to the public internet is no longer necessary. You can create your own private link service in your virtual network and deliver it to your customers. Private link is used to access PaaS services such as Azure Storage, Azure SQL, App Services and more as illustrated below.
 
 Recommend private link or private endpoints when:
 

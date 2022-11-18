@@ -208,13 +208,13 @@ Within each virtual network address range, you can create one or more subnets th
 :::image type="content" source="../media/ip-addresses-vnet-configuration-50b4351d.png" alt-text="Create virtual network - IP Addresses tab.":::
 
 
-In the Create virtual network tab, you can enable security features like BastionHost, DDoS Protection Standard, and Firewall.
+In the Create virtual network tab, you can enable security features like BastionHost, DDoS Protection, and Firewall.
 
 **BastionHost**<br>‎The Azure Bastion service is a new fully platform-managed PaaS service that you provision inside your virtual network. It provides secure and seamless RDP/SSH connectivity to your virtual machines directly in the Azure portal over SSL. When you connect via Azure Bastion, your virtual machines do not need a public IP address.
 
 **Distributed Denial of Service (DDoS) protection**
 
-You can select to enable Standard DDoS protection. Standard DDoS Protection is a paid service plan that offers enhanced DDoS mitigation capabilities via adaptive tuning, attack notification, and telemetry to protect against the impacts of a DDoS attack for all protected resources within this virtual network. Basic DDoS protection is integrated into the Azure platform by default and at no additional cost.
+You can select to enable DDoS protection Standard. DDoS Protection is a paid service plan that offers enhanced DDoS mitigation capabilities via adaptive tuning, attack notification, and telemetry to protect against the impacts of a DDoS attack for all protected resources within this virtual network. Basic DDoS protection is integrated into the Azure platform by default and at no additional cost.
 
 **Firewall**
 
