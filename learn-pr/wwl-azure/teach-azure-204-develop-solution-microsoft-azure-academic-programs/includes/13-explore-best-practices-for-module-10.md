@@ -14,7 +14,7 @@ This module consists of one lesson:
 
 Module 10 Tips and Tricks 
 
-- Describe Azure Queues vs Event Grid vs Event Hub vs Service Bus 
+- Describe Azure Queues vs Event Grid vs Event Hubs vs Service Bus 
 - Consider flipping the order and start with Azure Queues 
 
 Module 10 Demos 
