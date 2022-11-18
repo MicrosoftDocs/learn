@@ -24,7 +24,7 @@ To provide this information, you'll want to break down the query into stages so 
     | summarize USTotalStateSales = round(sum(USTotalCustomerSales)) by StateProvinceName
     ```
 
-    Take a look at the resulting list. Notice that the resulting table contains columns for **StateProvinceName** and **USTotalStateSales**. You'll want to show the province name in the results, so you'll need to join the *Customers* table to the results.
+    Take a look at the resulting list. Notice that the table contains columns for **StateProvinceName** and **USTotalStateSales**. You'll want to show the province name in the results, so you'll need to join the *Customers* table to the results.
 
     :::image type="content" source="../media/7-materialize-1.png" alt-text="Screenshot of the materialize function, showing the first block of the query.":::
 
