@@ -19,9 +19,9 @@ quiz:
   questions:
   - content: "Your organization wants to improve their security best practices, which option best describes the benefit of using security baselines in Azure?"
     choices:
-    - content: "Security baselines for Azure apply guidance from the Azure Security Benchmark to the specific service for which it's defined and provide organizations a consistent experience when securing their environment."
+    - content: "Security baselines for Azure apply guidance from the Microsoft cloud security benchmark (or previous benchmarks) to the specific service for which it's defined and provide organizations a consistent experience when securing their environment."
       isCorrect: true
-      explanation: "Correct. Security baselines for Azure apply guidance from the Azure Security Benchmark to the specific service for which it's defined and provide organizations a consistent experience when securing their environment."
+      explanation: "Correct. Security baselines for Azure apply guidance from the Microsoft cloud security benchmark (or previous benchmarks) to the specific service for which it's defined and provide organizations a consistent experience when securing their environment."
     - content: "Security baselines continually assess your resources, subscriptions, and organization for security issues and then aggregates all the findings into a single score so that you can tell, at a glance, your current security situation."
       isCorrect: false
       explanation: "Incorrect. Security baselines in Azure do not provide a single score so that you can tell, at a glance, your current security situation. That functionality is provided through secure score."
@@ -49,4 +49,4 @@ quiz:
       explanation: "Correct. Microsoft Defender plans provide enhanced security features for your workloads, including vulnerability scanning."
     - content: "Security Benchmarks."
       isCorrect: false
-      explanation: "Incorrect. The Azure Security Benchmark (ASB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure, it does not provide vulnerability scanning."
+      explanation: "Incorrect. The Microsoft cloud security benchmark (MCSB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure, it does not provide vulnerability scanning."
