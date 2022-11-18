@@ -74,7 +74,7 @@ Your team then asks you to identify the countries with the lowest revenues in th
 
 Your sales team wants to know the total sales per product category. When you start reviewing the available data, you realize that you'll need the *Products* table to get the list of product categories and the *SalesFact* table to get the sales data. You also realize that you want to count the sales for each category and list all product categories, even for products that might not have sales.
 
-Having analyzed the request, you choose to use the `leftouter` join, because it returns all records from the left table, enriched with matching data from the right table. You write your query by using the *Products* table as the left dimensions table, matching data from the *SalesFact* facts table, and grouping the result by product category, as follows:
+Having analyzed the request, you choose to use the `leftouter` join, because it returns all records from the left table, enriched with matching data from the right table. You write your query by using the *Products* table as the left dimension table, matching data from the *SalesFact* facts table, and grouping the result by product category, as follows:
 
 1. Run the following query.
 
