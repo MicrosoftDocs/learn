@@ -1,35 +1,17 @@
-Event processing refers to the consumption and analysis of a continuous data stream to extract latent knowledge and derive actionable insights from the events happening within that stream. Event processing pipelines provide an end-to-end solution for ingesting, transforming, and analyzing data streams and are made up of three distinct components:
+Azure Stream Analytics is a service for complex event processing and analysis of streaming data. Stream Analytics is used to:
 
-- An **event producer**, which generates an event data stream
-- An **event processor** responsible for the ingestion and transformation of streaming event data
-- An **event consumer** that displays or consumes event data and takes action on it
+- Ingest data from an *input*, such as an Azure event hub, Azure IoT Hub, or Azure Storage blob container.
+- Process the data by using a *query* to select, project, and aggregate data values.
+- Write the results to an *output*, such as Azure Data Lake Gen 2, Azure SQL Database, Azure Synapse Analytics, Azure Functions, Azure event hub, Microsoft Power BI, or others.
 
-![Event processing engine insights](../media/3-event-processing-engine.png)
+![Diagram that shows a Stream Analytics job with inputs, a query, and outputs](../media/stream-analytics.png)
 
-## Event producer 
+Once started, a Stream Analytics query will run perpetually, processing new data as it arrives in the input and storing results in the output.
 
-An event producer is an application, connected device or sensor, or any other service that continuously outputs a data stream of events. Events can be any recurring action, such as a heartbeat, a car passing through a toll booth, or an engine sensor reporting temperature values on an automobile. Every event should include temporal information, such as a timestamp, indicating when it occurred.
+Stream Analytics guarantees *exactly once* event processing and *at-least-once* event delivery, so events are never lost. It has built-in recovery capabilities in case the delivery of an event fails. Also, Stream Analytics provides built-in checkpointing to maintain the state of your job and produces repeatable results. Because Azure Stream Analytics is a platform-as-a-service (PaaS) solution, it's fully managed and highly reliable. Its built-in integration with various sources and destinations and provides a flexible programmability model. The Stream Analytics engine enables in-memory compute, so it offers high performance.
 
-Azure Event Hubs and IoT Hub are frequently used as event producers in Azure. These services can handle incoming events at a massive scale and produce an event stream to feed into downstream event processing services, such as Azure Stream Analytics.
+### Azure Stream Analytics jobs and clusters
 
-## Event processor
+The easiest way to use Azure Stream Analytics is to create a Stream Analytics *job* in an Azure subscription, configure its input(s) and output(s), and define the query that the job will use to process the data. The query is expressed using structured query language (SQL) syntax, and can incorporate static reference data from multiple data sources to supply lookup values that can be combined with the streaming data ingested from an input.
 
-An event processor is an engine designed to consume and transform event data streams. Event processors require the ability to query time segments easily. Performing time-boxed computations or aggregations, such as counting the number of times an event happens during a particular period, is a frequent use case. Depending on the problem space, event processors either process one incoming event at a time, such as a heart rate monitor, or process multiple events simultaneously, such as Azure Stream Analytics processing sensor data from highway tollbooths.
-
-[Azure Stream Analytics](/azure/stream-analytics/stream-analytics-introduction) is the quickest way to get event processing running on Azure. Using Stream Analytics, you can ingest streaming data from Azure Events Hubs or IoT Hub and run real-time analytics queries against the streams.
-
-Stream Analytics supports multiple types of windowing functions for performing temporal computations on data streams, providing a way to aggregate events over various time intervals depending on specific window definitions. It also provides the capability to use Azure Machine Learning functions to make it a robust tool for analyzing data streams.
-
-## Event consumer
-
-An event consumer is an application that consumes the output of an event processor. Event consumers can be used to visualize data or take a specific action based on the insights, such as generating alerts when specified thresholds are met or sending data to another event processing engine.
-
-For visualizing and analyzing data, [Power BI](/power-bi/fundamentals/power-bi-overview) is the recommended event consumer. It provides a platform for creating complex linked visualizations and analyzing aggregated data in near-real-time. Azure Stream Analytics can output directly to Power BI, allowing dashboards to be updated continuously as data streams are processed.
-
-## Building event processing pipelines
-
-Event processing pipelines generally chain together multiple services to create a near-real-time analytics pipeline. The diagram below shows an example event processing pipeline built on Event Hubs, Azure Stream Analytics, and Power BI.
-
-![The diagram depicts an end-to-end end processing pipeline using Event Hubs to ingest streaming data from sensors in a connected factory, Azure Stream Analytics to transform and aggregate the data, and Power BI to visualize and analyze it.](../media/event-processing-pipeline.png "End-to-end Stream Analytics Solution")
-
-In this pipeline, Event Hubs ingests streaming data from sensors in a connected factory, and together they act as the event producer. The event processor is Azure Stream Analytics, which receives the data from Event Hubs and transforms and aggregates it. Power BI, the event consumer, receives output from Stream Analytics and displays rich visualizations used to analyze the event data.
+If your stream process requirements are complex or resource-intensive, you can create a Stream Analysis *cluster*, which uses the same underlying processing engine as a Stream Analytics job, but in a dedicated tenant (so your processing is not affected by other customers) and with configurable scalability that enables you to define the right balance of throughput and cost for your specific scenario.

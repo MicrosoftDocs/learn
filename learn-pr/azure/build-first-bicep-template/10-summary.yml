@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-azure-resources-bicep.summary
-title: Summary  
+title: Summary
 metadata:
-  unitType: summary  
+  unitType: summary
   title: Summary
   description: Summary.
-  ms.date: 11/25/2021  
+  ms.date: 10/10/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?

@@ -2,7 +2,7 @@ In this exercise, we will be using the AdventureWorks2019 sample database to fam
 
 ## Exercise 1: Restore AdventureWorks2019
 
-1. Download AdventureWorks2019 sample database backup [AdventureWorks2019](/sql/samples/adventureworks-install-configure&tabs=ssms#download-backup-files).
+1. Download AdventureWorks2019 sample database backup [AdventureWorks2019](/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms#download-backup-files).
 
 2. [Copy](/azure/azure-arc/data/migrate-to-managed-instance#step-2-copy-the-backup-file-into-the-pods-file-system) the downloaded backup file to your backup drive attached to your Arc-enabled SQL MI using the `kubectl cp` command.
 3. Open Azure Data Studio.

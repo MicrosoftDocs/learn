@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.exercise-paginate-cross-product-query-results-sdk
-title: 'Exercise: Paginate cross-product query results with the Azure Cosmos DB SQL API SDK'
+title: 'Exercise: Paginate cross-product query results with the Azure Cosmos DB for NoSQL SDK'
 metadata:
-  title: 'Exercise: Paginate cross-product query results with the Azure Cosmos DB SQL API SDK'
-  description: "Exercise: Paginate cross-product query results with the Azure Cosmos DB SQL API SDK"
-  ms.date: 06/03/2022
+  title: 'Exercise: Paginate cross-product query results with the Azure Cosmos DB for NoSQL SDK'
+  description: "Exercise: Paginate cross-product query results with the Azure Cosmos DB for NoSQL SDK"
+  ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

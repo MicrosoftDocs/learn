@@ -56,7 +56,7 @@ The two environment variables you created in the last part, `COSMOS_DB_ENDPOINT`
 
     **azuredocs/azure-vote-front:cosmosdb** refers to a container image that runs a fictitious voting app.
 
-    Note the `--environment-variables` argument. This argument specifies environment variables that are passed to the container when the container starts. The container image is configured to look for these environment variables. Here, you'kk pass the name of the Azure Cosmos DB endpoint and its connection key.
+    Note the `--environment-variables` argument. This argument specifies environment variables that are passed to the container when the container starts. The container image is configured to look for these environment variables. Here, you'll pass the name of the Azure Cosmos DB endpoint and its connection key.
 
 1. Run the `az container show` command to get your container's public IP address:
 

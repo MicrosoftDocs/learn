@@ -45,7 +45,7 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
 
     The above command creates a new AKS cluster named `aks-contoso-video` within the `rg-contoso-video` resource group. The cluster will have two nodes defined by the `--node-count` parameter. We're using only two nodes here for cost considerations in this exercise. The `--node-vm-size` parameter configures the cluster nodes as Standard_B2s-sized VMs. The HTTP application routing add-on is enabled via the `--enable-addons` flag. These nodes will be part of **System** mode.
 
-1. Run the `az aks nodepool add` command to add an additional node pool that uses the default Linux operating system.
+1. Run the `az aks nodepool add` command to add another node pool that uses the default Linux operating system.
 
     ```azurecli
     az aks nodepool add \
@@ -102,7 +102,7 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
 
     The `--windows-admin-username` parameter is used to set up administrator credentials for Windows containers, and prompts the user to set a password at the command line. The password has to meet [**Windows Server password requirements**](/windows/security/threat-protection/security-policy-settings/password-must-meet-complexity-requirements#reference).
 
-1. Run the `az aks nodepool add` command to add an additional node pool that uses the Windows operating system.
+1. Run the `az aks nodepool add` command to add another node pool that uses the Windows operating system.
 
     ```azurecli
     az aks nodepool add \
@@ -142,20 +142,20 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
 
    ```output
    NAME                                STATUS   ROLES   AGE    VERSION
-   aks-nodepool1-21895026-vmss000000   Ready    agent   245s   v1.19.9
-   aks-nodepool1-21895026-vmss000001   Ready    agent   245s   v1.19.9
-   aks-userpool-21895026-vmss000000    Ready    agent   105s   v1.19.9
-   aks-userpool-21895026-vmss000001    Ready    agent   105s   v1.19.9
+   aks-nodepool1-21895026-vmss000000   Ready    agent   245s   v1.23.12
+   aks-nodepool1-21895026-vmss000001   Ready    agent   245s   v1.23.12
+   aks-userpool-21895026-vmss000000    Ready    agent   105s   v1.23.12
+   aks-userpool-21895026-vmss000001    Ready    agent   105s   v1.23.12
    ```
 
 #### [Windows](#tab/windows)
 
    ```output
    NAME                                STATUS   ROLES   AGE    VERSION
-   aks-nodepool1-40010859-vmss000000   Ready    agent   245s   v1.19.9
-   aks-nodepool1-40010859-vmss000001   Ready    agent   245s   v1.19.9
-   aksuspool000000                     Ready    agent   105s   v1.19.9
-   aksuspool000001                     Ready    agent   105s   v1.19.9
+   aks-nodepool1-40010859-vmss000000   Ready    agent   245s   v1.23.12
+   aks-nodepool1-40010859-vmss000001   Ready    agent   245s   v1.23.12
+   aksuspool000000                     Ready    agent   105s   v1.23.12
+   aksuspool000001                     Ready    agent   105s   v1.23.12
    ```
 
 ---

@@ -4,8 +4,9 @@ metadata:
   title: Exercise - Control who can access your database
   description: Learn to control access to the database by creating users with deliberately reduced access.
   ms.date: 11/09/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: VanMSFT
+  ms.author: vanto
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash

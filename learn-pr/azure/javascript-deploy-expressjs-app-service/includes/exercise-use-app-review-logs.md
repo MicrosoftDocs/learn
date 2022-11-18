@@ -9,9 +9,9 @@ In this exercise, you'll:
 ## View the app
 
 1. In Visual Studio Code, select <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd> to open the **Azure** pane on the left.
-1. Right-click your Azure App Service resource and select **Browse website**.
+1. In the **Resources** section, expand the sandbox subscription, then right-click your Azure App Service resource and select **Browse website**.
 1. The Express.js web app should appear. You can add, edit, and delete properties on the website.
-1. The data is loaded in memory. If you want to refresh the data, go back to the **Azure** pane on the left, right-click your App Service resource, and select **Restart**.
+1. The data is loaded in memory. If you want to refresh the data, go back to the **Azure** pane on the left, in the **Resources** section and right-click your App Service resource, and select **Restart**.
 1. Spend a few minutes using the website.
 1. To create a 404 error, change the URL in the address bar to something like `https://YOUR-APP-NAME.azurewebsites.net/1234`.
 
@@ -20,7 +20,7 @@ In this exercise, you'll:
 The App Service keeps logs in the hosting environment, which you can use to resolve runtime issues.
 
 1. In Visual Studio Code, select <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd> to open the **Azure** pane on the left.
-1. Find and select your App Service resource and expand its child nodes.
+1. In the **Resources > App Services** node, find and select your App Service resource and expand its child nodes.
 1. Expand the **Logs** section.
 1. Select the file that ends in `_docker.log`.
 1. The last line of the file should display something like this example:
@@ -49,7 +49,7 @@ The App Service keeps logs in the hosting environment, which you can use to reso
 ## Were there any failures, such as "404 - File not found"?
 
 1. In Visual Studio Code, select <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd> to open the **Azure** pane on the left.
-1. Right-click your App Service resource, and then select **Open in portal**.
+1. In the **Resources > App Services** node, right-click your App Service resource, and then select **Open in portal**.
 1. In the web browser, select **Settings** > **Application Insights**. Then select **View Application Insights data**. This action opens your Azure Application Insights resource.
 1. Select **Investigate** > **Failures**. The graph should display your 404 error.
 

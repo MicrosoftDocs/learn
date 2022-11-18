@@ -36,6 +36,6 @@ modules:
 - learn.design-your-migration-to-azure
 - learn.wwl.prepare-onpremises-workloads-migration-azure
 - learn.wwl.migrate-onpremises-workloads-azure
-- learn.migrate-sql-server-relational-data
+- learn-wwl.migrate-sql-workloads-azure-sql-databases
 trophy:
   uid: learn.wwl.migrate-application-workloads-data-azure.trophy

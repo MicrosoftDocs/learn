@@ -1,28 +1,25 @@
-## Scenario
+Azure Files offers fully managed file shares in the cloud that are accessible via industry standard protocols. Azure File Sync is a service that allows you to cache several Azure Files shares on an on-premises Windows Server or cloud virtual machine.
 
-Your company has a large repository of documents used across the company. Offices are located in different geographical regions, but need the most current versions of the documents.
-
-You configure Azure File shares to provide a central location for the documents. You configure Azure File Sync to keep the information up to date across multiple offices.
-
-## Skills measured
-
-Configure Azure Files and Azure File Sync is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
-
-Implement and manage storage (15–20%)
-
-Configure Azure files and Azure Blob Storage
-
- -  Create an Azure file share.
- -  Create and configure Azure File Sync.
+In this module, your company has a large repository of documents that's used across the organization. Offices are located in different geographical regions, and users need the most current versions of the documents. You're researching how to implement Azure Files shares to provide a central location for the documents. You'd like to configure Azure File Sync to keep the documents up to date across the dispersed offices.
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you learn how to:
 
- -  Identify when to use Azure files versus Azure Blobs.
- -  Configure Azure file shares and file share snapshots.
- -  Identify features and usage cases of Azure File Sync.
- -  Identify File Sync components and configuration steps.
+- Identify when to use Azure Files versus Azure Blob Storage.
+- Configure Azure Files shares and file share snapshots.
+- Identify features and use cases for Azure File Sync.
+- Identify Azure File Sync components and configuration steps.
+
+## Skills measured
+
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). The module concepts are covered in:
+
+Implement and manage storage (15–20%)
+
+- Configure Azure Files and Azure Blob Storage
+   - Create an Azure Files share
+   - Create and configure Azure File Sync
 
 ## Prerequisites
 

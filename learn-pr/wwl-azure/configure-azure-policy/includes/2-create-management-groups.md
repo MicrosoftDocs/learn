@@ -16,7 +16,7 @@ The following diagram shows how Azure management groups can be used to organize 
 
 :::image type="content" source="../media/management-groups-aa92c04a.png" alt-text="Diagram that shows how Azure management groups can be used to organize subscriptions in a hierarchy of unified policy and access management." border="false":::
 
-### Things to consider when using management groups
+ ### Things to consider when using management groups
 
 Review the following ways you can use management groups in Azure Policy to manage your subscriptions:
 

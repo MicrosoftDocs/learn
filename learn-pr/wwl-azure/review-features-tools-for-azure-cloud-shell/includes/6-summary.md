@@ -2,11 +2,10 @@ In this module, you learned about Azure Cloud Shell and its features. The follow
 
 - Azure Cloud Shell is an interactive, browser-accessible shell for managing Azure resources. It provides the flexibility of choosing the shell experience that best suits the way you work. Linux users can opt for a Bash experience, while Windows users can opt for PowerShell.
 
-- You can access the Cloud Shell in three ways:
-
-  - **Direct link:** Open a browser and refer to <https://shell.azure.com>.
-  - **The Azure portal:** Select the Cloud Shell icon on the Azure portal.
-  - **Code snippets:** On Microsoft Learn, select the **Try It** option that displays with the Azure CLI and Azure PowerShell code snippets.
+- You can access the Cloud Shell in three ways: 
+    - Direct link. Open a browser and refer to https://shell.azure.com.
+    - Azure portal. Select the Cloud Shell icon on the Azure portal.
+    - Code snippets. On Microsoft Docs and Microsoft Learn, select the Try It option that displays with the Azure CLI and Azure PowerShell code snippets.
 
 - Cloud Shell offers a browser-accessible, preconfigured shell experience for managing Azure resources without the overhead of installing, versioning, and maintaining a machine yourself.
 

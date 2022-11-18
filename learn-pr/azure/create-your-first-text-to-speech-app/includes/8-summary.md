@@ -12,7 +12,7 @@ You created an Azure Cognitive Services account, which you used to create two sp
 
 - [Get started with text-to-speech](/azure/cognitive-services/speech-service/get-started-text-to-speech)
 
-- [Quickstart: Create a Cognitive Services resource using the Azure Command-Line Interface (CLI)](/cognitive-services/cognitive-services-apis-create-account-cli)
+- [Quickstart: Create a Cognitive Services resource using the Azure Command-Line Interface (CLI)](/azure/cognitive-services/cognitive-services-apis-create-account-cli)
 
 - [Language and voice support for the Speech service](/azure/cognitive-services/speech-service/language-support)
 

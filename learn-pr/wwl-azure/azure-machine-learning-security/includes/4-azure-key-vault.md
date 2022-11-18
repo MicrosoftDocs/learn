@@ -99,4 +99,3 @@ For more information about using secrets to secure and access your data, we reco
 - [Azure Key Vault](/azure/key-vault)
 - [The Keyvault class in the Python SDK](/python/api/azureml-core/azureml.core.keyvault.keyvault?view=azure-ml-py&viewFallbackFrom=azure-ml-py"\&preserve-view=true)
 - [Using Secrets In Runs with Python](/azure/machine-learning/how-to-use-secrets-in-runs)
-

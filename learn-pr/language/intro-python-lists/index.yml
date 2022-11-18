@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Introduction to lists in Python
   description: As a developer, you'll work with a lot of lists. A list is a series of values that contain variables of any type. You use lists in Python to store information. They're dynamic, so you can freely add items to them and remove items from them.
-  ms.date: 12/03/2021
+  ms.date: 10/14/2022
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen

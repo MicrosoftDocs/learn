@@ -1,4 +1,4 @@
-In this Learn module, you'll integrate a web app with MongoDB and deploy to Azure. **Azure Cosmos DB API for MongoDB** provides a MongoDB compatible layer. You can use your favorite npm client packages for MongoDB and store your data on Azure.
+In this Learn module, you'll integrate a Node.js server app with MongoDB and deploy to Azure. **Azure Cosmos DB API for MongoDB** provides a MongoDB compatible layer. You can use your favorite npm client packages for MongoDB and store your data on Azure.
 
 ## Example scenario
 
@@ -27,3 +27,7 @@ These steps include:
 ## What is the main goal?
 
 By the end of this module, you'll be able to create and integrate a MongoDB database, using Cosmos DB API for MongoDB, into an Express.js web app and configure your App Service resource to use that database.
+
+## Find additional information
+
+Additional resources are available in the summary unit.

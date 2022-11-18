@@ -9,8 +9,8 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Release Engineering: Deployment](/azure/architecture/framework/devops/release-engineering-cd).
- -  [Deployment jobs](/azure/devops/pipelines/process/deployment-jobs).
- -  [Configure the blue-green deployment strategy for Azure Linux virtual machines](/azure/virtual-machines/linux/tutorial-azure-devops-blue-green-strategy).
- -  [Progressive experimentation with feature flags](/devops/operate/progressive-experimentation-feature-flags).
- -  [Set up staging environments in Azure App Service](/azure/app-service/deploy-staging-slots).
+ -  [Release Engineering Continuous deployment - Azure Architecture Center \| Microsoft Docs](/azure/architecture/framework/devops/release-engineering-cd).
+ -  [Deployment jobs - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/process/deployment-jobs).
+ -  [Configure canary deployments for Azure Linux virtual machines - Azure Virtual Machines \| Microsoft Docs](/azure/virtual-machines/linux/tutorial-azure-devops-blue-green-strategy).
+ -  [Progressive experimentation with feature flags - Azure DevOps \| Microsoft Docs](/devops/operate/progressive-experimentation-feature-flags).
+ -  [Set up staging environments - Azure App Service \| Microsoft Docs](/azure/app-service/deploy-staging-slots).

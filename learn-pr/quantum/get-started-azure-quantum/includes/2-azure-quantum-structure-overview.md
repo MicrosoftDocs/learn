@@ -17,6 +17,7 @@ Once you have a quantum program that you'd like to run on a quantum computer, yo
 
 - [Quantinuum](https://www.quantinuum.com): Trapped-ion system with high-fidelity, fully connected qubits, and the ability to perform mid-circuit measurements.
 - [IONQ](https://ionq.com/): Dynamically reconfigurable trapped-ion quantum computer for up to 11 fully connected qubits, that lets you run a two-qubit gate between any pair.
+- [Rigetti](https://www.rigetti.com/): Gate-based superconducting processors will be available in Azure Quantum soon and utilize [Quantum Intermediate Representation (QIR)](/azure/quantum/concepts-qir) to enable low latency and parallel execution.
 - [Quantum Circuits, Inc](https://quantumcircuits.com/): Fast and high-fidelity system with powerful real-time feedback to enable error correction.
 
 ### Optimization providers

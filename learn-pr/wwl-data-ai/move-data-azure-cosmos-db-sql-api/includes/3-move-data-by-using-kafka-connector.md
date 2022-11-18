@@ -6,7 +6,7 @@ The Kafka Connect connectors for Azure Cosmos DB is available as an open-source 
 
 ### Configuration
 
-Four configuration properties should be set to properly configure connectivity to an Azure Cosmos DB SQL API account.
+Four configuration properties should be set to properly configure connectivity to an Azure Cosmos DB for NoSQL account.
 
 | **Property** | **Value** |
 | :--- | :--- |
@@ -41,7 +41,7 @@ kafka-console-producer \
     --topic prodlistener
 ```
 
-And in the console, you can then enter these three records to the topic. Once this is done, these records will be committed to the Azure Cosmos DB SQL API container mapped to the topic (**products**).
+And in the console, you can then enter these three records to the topic. Once this is done, these records will be committed to the Azure Cosmos DB for NoSQL container mapped to the topic (**products**).
 
 ```json
 {"id": "0ac8b014-c3f4-4db0-8a1f-434bab460938", "name": "handlebar", "categoryId": "78148556-4e84-44be-abae-9755dde9c9e3"}

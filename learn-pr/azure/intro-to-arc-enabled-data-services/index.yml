@@ -4,8 +4,9 @@ metadata:
   title: Introduction to Azure Arc-enabled data services
   description: Introduction to Azure Arc-enabled data services
   ms.date: 06/28/2021
-  author: bobward
-  ms.author: bobward
+  author: MikeRayMSFT
+  ms.author: mikeray
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid

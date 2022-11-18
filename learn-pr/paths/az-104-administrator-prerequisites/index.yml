@@ -1,15 +1,18 @@
 ### YamlMime:LearningPath
 uid: learn.az104-admin-prerequisites
 metadata:
-  title: "AZ-104: Prerequisites for Azure administrators"
-  description: "Learn the basic concepts you'll need to know as an Azure administrator and prepare for Exam AZ-104: Microsoft Azure Administrator."
-  brand: azure
-  ms.date: 08/06/2021
+  title: 'AZ-104: Prerequisites for Azure administrators'
+  description: 'AZ-104: Prerequisites for Azure administrators'
+  ms.date: 10/12/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "AZ-104: Prerequisites for Azure administrators"
+title: 'AZ-104: Prerequisites for Azure administrators'
+prerequisites: |
+  - [Microsoft Azure Fundamentals: Describe cloud concepts](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
+  - [Azure Fundamentals: Describe Azure architecture and services](/training/paths/azure-fundamentals-describe-azure-architecture-services/)
+  - [Azure Fundamentals: Describe Azure management and governance](/training/paths/describe-azure-management-governance/)
 summary: |
   Learn the basic Azure concepts you'll need to know as an Azure administrator. 
   Here are the learning paths in the AZ-104 Azure Administrator series:
@@ -51,14 +54,6 @@ summary: |
     [AZ-104: Monitor and back up Azure resources](/training/paths/az-104-monitor-backup-resources/)
   :::column-end:::
   :::row-end:::
-prerequisites:  | 
-  - [Azure Fundamentals Part 1: Describe core Azure concepts](../az-900-describe-cloud-concepts/index.yml)
-  - [Azure Fundamentals Part 2: Describe core Azure services](../az-900-describe-core-azure-services/index.yml)
-  - [Azure Fundamentals Part 3: Describe core solutions and management tools on Azure](../az-900-describe-core-solutions-management-tools-azure/index.yml)
-  - [Azure Fundamentals Part 4: Describe general security and network security features](../az-900-describe-general-security-network-security-features/index.yml)
-  - [Azure Fundamentals Part 5: Describe identity, governance, privacy, and compliance features](../az-900-describe-identity-governance-privacy-compliance-features/index.yml)
-  - [Azure Fundamentals Part 6: Describe Microsoft Cost Management and service level agreements](../az-900-describe-azure-cost-management-service-level-agreements/index.yml)
-  - [Prerequisites for Azure administrators](../az-104-administrator-prerequisites/index.yml)
 iconUrl: /training/achievements/az-104-administrator-prerequisites.svg
 levels:
 - beginner
@@ -66,13 +61,12 @@ roles:
 - administrator
 products:
 - azure
-- azure-virtual-machines
-- azure-virtual-network
-- azure-clis
 - azure-active-directory
+- azure-clis
 - azure-container-instances
 - azure-container-registry
-- azure-storage
+- azure-virtual-machines
+- azure-virtual-network
 subjects:
 - cloud-computing
 modules:

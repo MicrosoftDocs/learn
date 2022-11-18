@@ -2,7 +2,7 @@ Your team has gained an understanding of how Azure Resource Manager works, and y
 
 In this unit, you'll learn about the Bicep template language and the benefits it provides to template authoring.
 
-## What is Bicep?
+## Bicep language
 
 Bicep is a Resource Manager template language that's used to declaratively deploy Azure resources. Bicep is a domain-specific language, which means that it's designed for a specific scenario or _domain_. Bicep isn't meant to be used as a standard programming language for writing applications. Bicep is used only to create Resource Manager templates. Bicep is intended to be easy to understand and straightforward to learn, regardless of your experience with other programming languages. All resource types, API versions, and properties are valid in Bicep templates.
 
@@ -30,7 +30,7 @@ param namePrefix string = 'storage'
 var storageAccountName = '${namePrefix}${uniqueString(resourceGroup().id)}'
 var storageAccountSku = 'Standard_RAGRS'
 
-resource storageAccount 'Microsoft.Storage/storageAccounts@2021-09-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2022-05-01' = {
   name: storageAccountName
   location: location
   kind: 'StorageV2'

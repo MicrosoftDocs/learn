@@ -6,8 +6,9 @@ metadata:
   title: How Azure Database for MariaDB works
   description: How Azure Database for MariaDB works
   ms.date: 03/29/2021  
-  author: tchristiani
-  ms.author: terrychr  
+  author: markingmyname
+  ms.author: maghan 
+  manager: jroth 
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
 durationInMinutes: 10

@@ -5,10 +5,10 @@ Before you start to work on your toy company's website pipeline, you need to con
 To meet these objectives, you'll:
 
 > [!div class="checklist"]
-> * Set up an Azure DevOps project for this module.
-> * Clone the project's repository to your computer.
-> * Create a resource group in Azure.
-> * Create a service connection in Azure Pipelines.
+> - Set up an Azure DevOps project for this module.
+> - Clone the project's repository to your computer.
+> - Create a resource group in Azure.
+> - Create a service connection in Azure Pipelines.
 
 ## Get the Azure DevOps project
 

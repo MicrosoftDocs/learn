@@ -267,7 +267,7 @@ To make this application available to everyone, you'll need to create a service 
         kubernetes.io/ingress.class: addon-http-application-routing
     spec:
       rules:
-        - host: ship-manager-backend.somedns.location.aksapp.io
+        - host: ship-manager-backend.dnszone.location.aksapp.io
           http:
             paths:
               - path: /
@@ -298,8 +298,8 @@ kubectl get ingress
 You'll get a result similar to this:
 
 ```output
-NAME                   CLASS    HOSTS                                     ADDRESS        PORTS   AGE
-ship-manager-backend   <none>   ship-manager-backend.dns.zone.aksapp.io   xx.xx.xx.xx    80      2m40s
+NAME                   CLASS    HOSTS                                               ADDRESS        PORTS   AGE
+ship-manager-backend   <none>   ship-manager-backend.dnszone.location.aksapp.io   xx.xx.xx.xx    80      2m40s
 ```
 
 ### Deploy the front-end interface
@@ -437,7 +437,7 @@ Next, you'll create the networking resources that this application needs to be o
         kubernetes.io/ingress.class: addon-http-application-routing
     spec:
       rules:
-        - host: contoso-ship-manager.some-zone.eastus.aksapp.io
+        - host: contoso-ship-manager.dnszone.location.aksapp.io
           http:
             paths:
               - path: /
@@ -468,8 +468,8 @@ kubectl get ingress
 You'll get a result similar to this:
 
 ```output
-NAME                   CLASS    HOSTS                                     ADDRESS        PORTS   AGE
-ship-manager-frontend  <none>   contoso-ship-manager.dns.zone.aksapp.io   xx.xx.xx.xx    80      2m40s
+NAME                   CLASS    HOSTS                                             ADDRESS        PORTS   AGE
+ship-manager-frontend  <none>   contoso-ship-manager.dnszone.location.aksapp.io   xx.xx.xx.xx    80      2m40s
 ```
 
 You can now access the URL from the ingress resource's host name to enter the ship manager application.

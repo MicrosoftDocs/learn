@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - Ability to navigate the Azure portal
   - Access to a Microsoft Purview account with a data source added and scanned. You can follow our [deployment learn module to deploy a Microsoft Purview resource and scan the data.](/learn/modules/deploy-microsoft-purview-scan-data-resources/)
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/manage-data-assets-in-microsoft-purview-data-catalog.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - beginner
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role

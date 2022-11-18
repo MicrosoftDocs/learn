@@ -14,7 +14,7 @@ Supplemental Resources:
 
 - [Microsoft Virtual Training Days](https://aka.ms/events) 
 
-- [Students in Hong Kong with Microsoft Azure certifications attract recruiters](https://aka.ms/MSLEBlogHK) 
+- [Students with Microsoft Azure certifications attract recruiters](https://aka.ms/MSLEBlogHK) 
 
 - [University of Lanarkshire customer story](https://aka.ms/lanarkshireCS)
 

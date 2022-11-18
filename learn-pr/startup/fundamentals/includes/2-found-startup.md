@@ -24,7 +24,7 @@ In fact, in the early days of many startups, these unique insights are the only 
 There are four main ways in which startup founders can take advantage of their domain expertise to create value:
 
 - By identifying an important problem that many others don't realize exists. It's well known that many great startup ideas came from spending time "marinating" in the problem space, exploring interesting problems with potential customers and developing unique insights over a long period of time. Finding great problems to work on often means skipping over the problems that everyone else is working on, and identifying others that are hidden, or that seem unsolvable, but that still represent a great opportunity.
-- By coming up with a compelling solution that's unlikely to have occurred to others, and might even seem unlikely to succeed. Historically, many of the best startup ideas seemed crazy at the outset, and it was only with hindsight that their value became evident.
+- By coming up with a compelling solution that's unlikely to have occurred to others, and might even seem unlikely to succeed. Historically, many of the best startup ideas seemed wild at the outset, and it was only with hindsight that their value became evident.
 - By tapping into their existing network, or by using their profile as a thought leader, founders can make connections with customers that would be difficult for a newcomer.
 - In the case of *deep-tech* startups (those based on advanced technology or scientific research), by developing novel, cutting-edge technology that can become the basis for the company's competitive advantage.
 

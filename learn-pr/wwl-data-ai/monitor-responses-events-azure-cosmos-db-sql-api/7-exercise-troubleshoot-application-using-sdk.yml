@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.monitor-responses-events-azure-cosmos-db-sql-api.exercise-troubleshoot-application-using-sdk
-title: 'Exercise: Troubleshoot an application using the Azure Cosmos DB SQL API SDK'
+title: 'Exercise: Troubleshoot an application using the Azure Cosmos DB for NoSQL SDK'
 metadata:
-  title: 'Exercise: Troubleshoot an application using the Azure Cosmos DB SQL API SDK'
-  description: "Exercise: Troubleshoot an application using the Azure Cosmos DB SQL API SDK"
-  ms.date: 08/23/2022
+  title: 'Exercise: Troubleshoot an application using the Azure Cosmos DB for NoSQL SDK'
+  description: "Exercise: Troubleshoot an application using the Azure Cosmos DB for NoSQL SDK"
+  ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account.exercise-monitoring
-title: Exercise – Monitor an Azure Cosmos DB API for MongoDB account
+title: Exercise – Monitor an Azure Cosmos DB for MongoDB account
 metadata:
-  title: Exercise – Monitor an Azure Cosmos DB API for MongoDB account
-  description: "Exercise – Monitor an Azure Cosmos DB API for MongoDB account"
-  ms.date: 07/14/2022
+  title: Exercise – Monitor an Azure Cosmos DB for MongoDB account
+  description: "Exercise – Monitor an Azure Cosmos DB for MongoDB account"
+  ms.date: 10/20/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

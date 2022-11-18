@@ -32,11 +32,12 @@ After completing this lab, you'll be able to:
 During this lab, you'll complete the following exercises:
 
 > [!NOTE]
-> If you completed **[Lab 02: Version Controlling with Git in Azure Repos](/training/modules/work-azure-repos-github/7-version-control-git-azure-repos)**, you've already finished the steps in **Exercise 0: Configure the lab prerequisites** and **Exercise 1: Clone an existing repository** and can skip ahead to **Exercise 2: Manage branches from Azure DevOps**.
+> If you completed **[Lab 02: Version Controlling with Git in Azure Repos](/learn/modules/work-azure-repos-github/7-version-control-git-azure-repos)**, you've already finished the steps in **Exercise 0: Configure the lab prerequisites** and **Exercise 1: Clone an existing repository** and can skip ahead to **Exercise 2: Manage branches from Azure DevOps**.
 
  -  Exercise 0: Configure the lab prerequisites.
  -  Exercise 1: Clone an existing repository.
  -  Exercise 2: Manage branches from Azure DevOps.
  -  Exercise 3: Manage repositories.
 
-[:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button which will take you to the lab.":::](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M02_L03_Version_Controlling_with_Git_in_Azure_Repos.html)
+[:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button which will take you to the lab.":::
+](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M02_L03_Version_Controlling_with_Git_in_Azure_Repos.html)

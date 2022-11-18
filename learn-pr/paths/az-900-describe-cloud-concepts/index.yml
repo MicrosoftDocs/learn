@@ -32,12 +32,12 @@ summary: |
   :::column:::
     <img src="/training/achievements/az-900-describe-core-azure-services.svg" width="79.59" alt="The trophy for the Describe core Azure services learning path." role="presentation"></img>
 
-    [Part 2: Describe core Azure services](../az-900-describe-core-azure-services/index.yml)
+    [Part 2: Describe core Azure services](/training/paths/az-900-describe-core-azure-services/)
   :::column-end:::
   :::column:::
     <img src="/training/achievements/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg" width="79.59" alt="The trophy for the Describe core solutions and management tools on Azure learning path." role="presentation"></img>
 
-    [Part 3: Describe core solutions and management tools on Azure](../az-900-describe-core-solutions-management-tools-azure/index.yml)
+    [Part 3: Describe core solutions and management tools on Azure](/training/paths/az-900-describe-core-solutions-management-tools-azure/)
   :::column-end:::
   :::row-end:::
 
@@ -45,17 +45,17 @@ summary: |
   :::column:::
     <img src="/training/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg" width="101" alt="The trophy for the Describe general security and network security features learning path." role="presentation"></img>
 
-    [Part 4: Describe general security and network security features](../az-900-describe-general-security-network-security-features/index.yml)
+    [Part 4: Describe general security and network security features](/training/paths/az-900-describe-general-security-network-security-features/)
   :::column-end:::
   :::column:::
     <img src="/training/achievements/az-900-describe-identity-governance-privacy-compliance-features.svg" width="79.59" alt="The trophy for the Describe identity, governance, privacy, and compliance features learning path." role="presentation"></img>
 
-    [Part 5: Describe identity, governance, privacy, and compliance features](../az-900-describe-identity-governance-privacy-compliance-features/index.yml)
+    [Part 5: Describe identity, governance, privacy, and compliance features](/training/paths/az-900-describe-identity-governance-privacy-compliance-features/)
   :::column-end:::
   :::column:::
     <img src="/training/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg" width="101" alt="The trophy for the Describe Microsoft Cost Management and service level agreements learning path." role="presentation"></img>
 
-    [Part 6: Describe Microsoft Cost Management and service level agreements](../az-900-describe-azure-cost-management-service-level-agreements/index.yml)
+    [Part 6: Describe Microsoft Cost Management and service level agreements](/training/paths/az-900-describe-azure-cost-management-service-level-agreements/)
   :::column-end:::
   :::row-end:::
 prerequisites: | 

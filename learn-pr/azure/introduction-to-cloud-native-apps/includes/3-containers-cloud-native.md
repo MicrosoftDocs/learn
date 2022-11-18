@@ -38,6 +38,6 @@ Kubernetes can also automatically increase or decrease the number of containers 
 :::column-end:::
 :::row-end:::
 
-Additionally, one of the main benefits of using a Kubernetes service is simplified security configuration management. Many have built in authentication services, allowing the services to provide compliance offerings for most countries and industries.
+Additionally, one of the main benefits of using a Kubernetes service is simplified security configuration management. Many have built in authentication services, allowing the services to provide compliance offerings for most countries/regions and industries.
 
 Further, when a component is updated, you can automate Kubernetes to create new containers for your deployment, remove existing containers, and adopt all their resources to the new containers. Kubernetes services, such as AKS, simplify container management and can provide massive savings in development time, cost, and security obligations. Continuous integration and continuous delivery (CI/CD), allow Kuberenetes services to optimize development pipelines and application deployment.

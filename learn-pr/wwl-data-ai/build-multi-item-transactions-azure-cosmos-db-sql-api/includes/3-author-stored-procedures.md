@@ -9,7 +9,7 @@ Within the function, the ``getContext()`` method retrieves a context object, whi
 
 - Access the HTTP response object
 
-- Access the corresponding Azure Cosmos DB SQL API container
+- Access the corresponding Azure Cosmos DB for NoSQL container
 
 Using the context object, you can invoke the ``getResponse()`` method to access the HTTP response object to perform actions such as returning a **HTTP OK** (200) and setting the response's body to a static string.
 

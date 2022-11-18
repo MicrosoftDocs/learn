@@ -14,7 +14,19 @@ You used Visual Studio Code to create and connect your database to your web app.
 
 ## References
 
-- [Frequently asked questions about the Azure Cosmos DB's API for MongoDB](/azure/cosmos-db/mongodb/mongodb-faq)
+### Deployment
+
+- Learn more about deployment
+    - [With Visual Studio Code, run from package](/azure/app-service/deploy-run-package)
+    - [With Continuous deployment](/azure/app-service/deploy-continuous-deployment?tabs=github)
+    - [From local Git](/azure/app-service/deploy-local-git?tabs=cli)
+    - [From GitHub actions](/azure/app-service/deploy-github-actions?tabs=applevel)
+
+### Cosmos DB
+
+- [Cosmos DB FAQ for MongoDB API](/azure/cosmos-db/mongodb/mongodb-faq)
 - [Pre-migration steps for data migrations from MongoDB to Azure Cosmos DB's API for MongoDB](/azure/cosmos-db/mongodb/pre-migration-steps)
-- [Deploy a Node.js + MongoDB web app](/azure/app-service/tutorial-nodejs-mongodb-app?tabs=azure-portal%2Cterminal-bash%2Cvscode-deploy%2Cdeploy-instructions-azportal%2Cdeploy-zip-linux-mac%2Cdeploy-instructions--zip-azcli)
+
+### Store secrets in Key Vault
+
 - [Use Azure Key Vault secrets](/azure/app-service/app-service-key-vault-references)

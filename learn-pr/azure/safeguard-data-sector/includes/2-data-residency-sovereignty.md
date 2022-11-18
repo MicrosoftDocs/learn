@@ -15,7 +15,7 @@ While some personal data could be used on its own to identify a user (for exampl
 
 ## Data sovereignty
 
-Data sovereignty implies data residency, but it also introduces rules and requirements that define who has control over and access to customer data stored in the cloud. In many cases, data sovereignty requires that customer data be subject to the laws and legal jurisdiction of the country in which data resides. These laws can have direct implications on data access, even for platform maintenance or customer-initiated support requests. Customers can use Azure public multi-tenant cloud in combination with Azure Stack Hub and Azure Stack Edge for on-premises and edge solutions to meet their data sovereignty requirements. These other products can be deployed to put customers completely in control of their data, including storage, processing, transmission, and remote access.
+Data sovereignty implies data residency, but it also introduces rules and requirements that define who has control over and access to customer data stored in the cloud. In many cases, data sovereignty requires that customer data be subject to the laws and legal jurisdiction of the country/region in which data resides. These laws can have direct implications on data access, even for platform maintenance or customer-initiated support requests. Customers can use Azure public multi-tenant cloud in combination with Azure Stack Hub and Azure Stack Edge for on-premises and edge solutions to meet their data sovereignty requirements. These other products can be deployed to put customers completely in control of their data, including storage, processing, transmission, and remote access.
 
 ## Data at rest
 

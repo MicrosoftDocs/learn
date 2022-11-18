@@ -3,7 +3,7 @@ uid: learn.wwl.review-features-tools-for-azure-cloud-shell
 metadata:
   title: Review the features and tools for Azure Cloud Shell
   description: "This module covers Azure Cloud Shell and its features."
-  ms.date: 07/29/2022
+  ms.date: 10/20/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ prerequisites: |
   *   Familiarity with CIM and WMI technologies
   *   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
   *   Familiarity to administer remote computers with Windows PowerShell
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/review-features-tools-for-azure-cloud-shell.svg
 levels:
 - intermediate
 roles:

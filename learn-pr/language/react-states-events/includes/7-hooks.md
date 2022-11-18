@@ -8,7 +8,7 @@ The Effect Hook allows you to run code in response to the setting of the value. 
 
 ## When to use the Effect Hook
 
-You can use the Effect Hook whenever you need to centralize code to respond to a state change. Imagine a complex form that includes many values. You should typically disable the **Submit** button until the data that needs to be sent to the server is in a valid state. Let's say you have events for individual values that are changed in the data. After a user selects a country in your application, you need to retrieve a list of provinces from the server. 
+You can use the Effect Hook whenever you need to centralize code to respond to a state change. Imagine a complex form that includes many values. You should typically disable the **Submit** button until the data that needs to be sent to the server is in a valid state. Let's say you have events for individual values that are changed in the data. After a user selects a country/region in your application, you need to retrieve a list of provinces from the server. 
 
 You wouldn't want each event listener to examine the state to see if the data is ready to be sent to the server. This setup would be inefficient. Instead, you could use an Effect Hook. An Effect Hook can create one function that looks at the data. If the data is in a valid state, it can enable the **Submit** button.
 

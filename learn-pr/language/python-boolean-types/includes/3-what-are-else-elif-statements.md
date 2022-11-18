@@ -13,7 +13,7 @@ if a >= b:
     print(a)
 ```
 
-In this example, if `a` is not greater than or equal to `b`, nothing happens. Let's say you want to instead print `b` if the test expression is `False`:
+In this example, if `a` isn't greater than or equal to `b`, nothing happens. Let's say you want to instead print `b` if the test expression is `False`:
 
 ```python
 a = 93
@@ -46,7 +46,7 @@ elif a == b:
     print("a is equal to b")
 ```
 
-The `elif` statement in this block of code will not run, because the `if` statement is `True`.
+The `elif` statement in this block of code won't run, because the `if` statement is `True`.
 
 The syntax of an `if/elif` statement is:
 

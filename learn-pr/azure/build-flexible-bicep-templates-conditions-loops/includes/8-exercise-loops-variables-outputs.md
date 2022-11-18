@@ -1,4 +1,4 @@
-For your toy company, you need to deploy virtual networks in each country where you're launching the teddy bear. Your developers have also asked you to give them the fully qualified domain names (FQDNs) of each of the regional Azure SQL logical servers you've deployed. 
+For your toy company, you need to deploy virtual networks in each country/region where you're launching the teddy bear. Your developers have also asked you to give them the fully qualified domain names (FQDNs) of each of the regional Azure SQL logical servers you've deployed. 
 
 In this exercise, you'll add the virtual network and its configuration to your Bicep code, and you'll output the logical server FQDNs.
 

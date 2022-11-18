@@ -3,7 +3,7 @@ uid: learn.wwl.enhance-iot-solution-security-by-using-azure-defender
 metadata:
   title: Enhance IoT solution security by using Microsoft Defender for IoT
   description: Enhance IoT solution security by using Microsoft Defender for IoT
-  ms.date: 10/05/2022
+  ms.date: 10/13/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ prerequisites: |
   - Describe the Azure IoT Edge runtime support for custom code development, the IoT Edge coding tools, and the IoT Edge coding and debugging processes.
 summary: |
   You will learn about security considerations that apply at each level of the solution and the Azure services and tools that can be configured to address security concerns from the ground up.
-iconUrl: /learn/achievements/azure-defender-security-solution.svg
+iconUrl: /training/achievements/azure-defender-security-solution.svg
 levels:
 - intermediate
 roles:

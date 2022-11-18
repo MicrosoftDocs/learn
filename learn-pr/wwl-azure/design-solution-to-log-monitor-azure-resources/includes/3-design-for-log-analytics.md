@@ -19,7 +19,7 @@ Review these characteristics of Azure Monitor Logs workspaces and consider how t
 
 - With Azure role-based access control (Azure RBAC), you can grant users and groups only the amount of access they need to work with monitoring data in a workspace. You can align the user access control with your IT organization operating model by using a single workspace to store collected data enabled on all resources.
 
-- Workspaces are hosted on physical clusters. By default, the system creates and manages these clusters. If your system ingests more than 4 TB of data per day, you create your own dedicated clusters for your workspaces to support greater control and higher ingestion rate.
+- Workspaces are hosted on physical clusters. By default, the system creates and manages these clusters. If your system ingests more than 500 GB of data per day, you create your own dedicated clusters for your workspaces to support greater control and higher ingestion rate.
 
 ### Things to consider when using Azure Monitor Logs workspaces
 

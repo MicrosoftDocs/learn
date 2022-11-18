@@ -3,7 +3,7 @@ uid: learn.cloud-adoption-framework-manage
 metadata:
   title: Ensure stable operations and optimization across all supported workloads deployed to the cloud
   description: As workloads are deployed to the cloud, operations are critical to success.
-  ms.date: 04/20/2022
+  ms.date: 11/08/2022
   author: BrianBlanchard
   ms.author: brblanch
   ms.topic: interactive-tutorial

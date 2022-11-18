@@ -1,4 +1,4 @@
-Triggers are the core way that Azure Cosmos DB SQL API can inject business logic both before and after operations. Triggers are resources stored within a container, and their code is written in JavaScript, much like stored procedures and user-defined functions.
+Triggers are the core way that Azure Cosmos DB for NoSQL can inject business logic both before and after operations. Triggers are resources stored within a container, and their code is written in JavaScript, much like stored procedures and user-defined functions.
 
 Triggers are defined as JavaScript functions. The function is then executed when the trigger is invoked.
 
@@ -13,7 +13,7 @@ Within the function, the ``getContext()`` method retrieves a context object, whi
 
 - Access the HTTP response object (the source of a post-trigger)
 
-- Access the corresponding Azure Cosmos DB SQL API container
+- Access the corresponding Azure Cosmos DB for NoSQL container
 
 Using the context object, you can invoke the ``getRequest()`` or ``getResponse()`` methods to access the HTTP request and response objects. You can also invoke the `getCollection()` method to access the container using the JavaScript query API.
 

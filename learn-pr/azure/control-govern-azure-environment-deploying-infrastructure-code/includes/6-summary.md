@@ -7,11 +7,11 @@ The purpose of this module was to increase your confidence in, and the security 
 ## More resources
 
 - Learn more about the [considerations for platform automation](/azure/cloud-adoption-framework/ready/considerations/automation).
-- To learn more about governance of your deployment processes, see:
+- To learn more about governance of your deployment processes, reference:
   - [End-to-end governance in Azure when using CI/CD](/azure/architecture/example-scenario/governance/end-to-end-governance-in-azure)
   - [DevOps considerations](/azure/cloud-adoption-framework/ready/considerations/devops-principles-and-practices) in the Cloud Adoption Framework for Azure.
 - Learn more about [Azure landing zones](/azure/cloud-adoption-framework/ready/landing-zone/).
-- For guidance on using Bicep to deploy Azure resources, see:
+- For guidance on using Bicep to deploy Azure resources, reference:
   - [Create Azure RBAC resources by using Bicep](/azure/azure-resource-manager/bicep/scenarios-rbac)
   - [Manage secrets by using Bicep](/azure/azure-resource-manager/bicep/scenarios-secrets)
   - [Create virtual network resources by using Bicep](/azure/azure-resource-manager/bicep/scenarios-virtual-networks)

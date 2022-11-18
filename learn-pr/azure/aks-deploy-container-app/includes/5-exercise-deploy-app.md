@@ -80,11 +80,11 @@ Kubernetes groups containers into logical structures called pods, which have no 
             - name: contoso-website
     ```
 
-    The `containers` key is an array of container specifications because a pod can have one or more containers. The specification defines an `image`, `name`, `resources`, `ports`, and other important information about the container.
+    The `containers` key is an array of container specifications because a pod can have one or more containers. The specification defines an `image`, a `name`, `resources`, `ports`, and other important information about the container.
 
     All running pods will follow the name `contoso-website-<UUID>`, where UUID is a generated ID to identify all resources uniquely.
 
-1. It's a good practice to define a minimum and a maximum amount of the resources the app is allowed to use from the cluster. You use the `resources` key to specify this information.
+1. It's a good practice to define a minimum and a maximum amount of resources that the app is allowed to use from the cluster. You use the `resources` key to specify this information.
 
     Update the `deployment.yaml` file to match the following YAML.
 
@@ -186,7 +186,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
     ```
 
     > [!NOTE]
-    > In an AKS cluster which has multiple node pools (Linux and Windows), this above deployment manifest file also defines a `nodeSelector` to tell your AKS cluster to run the sample application's pod on a node that can run Linux containers.
+    > In an AKS cluster which has multiple node pools (Linux and Windows), the deployment manifest file listed above also defines a `nodeSelector` to tell your AKS cluster to run the sample application's pod on a node that can run Linux containers.
 
     Linux nodes can't run Windows containers and vice versa.
 

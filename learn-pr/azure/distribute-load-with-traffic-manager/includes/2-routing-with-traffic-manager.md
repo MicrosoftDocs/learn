@@ -1,6 +1,6 @@
 Your customers require 24/7 availability of your company's streaming music application. Cloud services in one region might become unavailable because of technical issues such as planned maintenance or scheduled security updates. In these scenarios, your company wants to have a failover endpoint so your customers can continue to access its services. To manage routing traffic and to handle these situations, you've decided to implement Azure Traffic Manager.
 
-![Illustration of a world map showing app users and app services in different countries.](../media/2-worldwide.svg)
+![Illustration of a world map showing app users and app services in different countries/regions.](../media/2-worldwide.svg)
 
 ## How Traffic Manager works
 

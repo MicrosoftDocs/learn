@@ -4,8 +4,9 @@ metadata:
   title: Exercise - Connect an ASP.NET application to Azure SQL Database
   description: Connect an ASP.NET application to Azure SQL Database
   ms.date: 06/28/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Connect an ASP.NET application to Azure SQL Database

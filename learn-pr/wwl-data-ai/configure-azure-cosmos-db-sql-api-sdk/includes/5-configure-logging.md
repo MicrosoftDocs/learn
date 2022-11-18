@@ -1,4 +1,4 @@
-There are many scenarios where you wish to log the HTTP requests that the Azure Cosmos DB SQL API SDK performs "under the hood." The SDK includes a fluent client builder class that simplifies the process of injecting custom handlers into the HTTP requests and responses. You can take advantage of this functionality to build a simple logging mechanism.
+There are many scenarios where you wish to log the HTTP requests that the Azure Cosmos DB for NoSQL SDK performs "under the hood." The SDK includes a fluent client builder class that simplifies the process of injecting custom handlers into the HTTP requests and responses. You can take advantage of this functionality to build a simple logging mechanism.
 
 ## Client builder
 

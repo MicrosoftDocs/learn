@@ -21,7 +21,7 @@ A database account is a container for managing one or more databases. Before we 
 
 1. In the **Create a resource** menu, select **Databases**, and then search for and select **Azure Cosmos DB**. The **Select API option** pane appears. 
 
-1. In the **Core (SQL) - Recommended** option, select **Create** so that we can create a Cosmos DB trigger and input/output bindings. The **Create Azure Cosmos DB Account - Core (SQL)** pane appears.
+1. In the **Azure Cosmos DB for NoSQL** option, select **Create** so that we can create a Cosmos DB trigger and input/output bindings. The **Create Azure Cosmos DB Account - Azure Cosmos DB for NoSQL** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -246,7 +246,7 @@ Now that your binding is defined, we can use it in your function. You need to ma
     };
     ```
 
-1. In the command bar, select **Save**. The **Logs** pane appears, showing you have `Connected!`
+1. In the command bar, select **Save**. Select **Filesystem Logs** in the drop-down at the top center of the logs pane (which displays **App Insights Logs** by default). The **Logs** pane appears, showing you have `Connected!`
 
 Let's examine what this code is doing.
 
@@ -328,7 +328,7 @@ Let's examine what this code is doing.
     })
     ```
 
-1. In the command bar, select **Save**. The **Logs** pane appears, showing you have `Connected!`
+1. In the command bar, select **Save**. Select **Filesystem Logs** in the drop-down at the top center of the logs pane (which displays **App Insights Logs** by default). The **Logs** pane appears, showing you have `Connected!`
 
 Let's examine what this code is doing.
 

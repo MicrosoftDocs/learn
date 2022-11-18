@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.read-text-computer-vision.get-started
-title: Get started with OCR on Azure
+title: Get started with the Read API on Azure
 metadata:
-  title: Get started with OCR on Azure
-  description: "Get started with OCR on Azure"
-  ms.date: 09/05/2022
+  title: Get started with the Read API on Azure
+  description: "Get started with the Read API on Azure"
+  ms.date: 10/18/2022
   author: benjiang
   ms.author: gmalc
   ms.topic: interactive-tutorial

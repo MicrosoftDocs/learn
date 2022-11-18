@@ -14,7 +14,7 @@ Customers can use Aura to ask questions about the products and services they use
 :::column-end:::
 :::row-end:::
 
-Aura has let millions of customers all over the world interact with Telefónica's technology in a simple and personalized way. Depending on the country, Aura is delivered to customer devices via mobile app or through third-party channels like WhatsApp, Facebook Messenger, and Google Assistant.
+Aura has let millions of customers all over the world interact with Telefónica's technology in a simple and personalized way. Depending on the country/region, Aura is delivered to customer devices via mobile app or through third-party channels like WhatsApp, Facebook Messenger, and Google Assistant.
 
 Aura is also able to leverage the power of AI to offer customers customized experiences. It facilitates the adoption of new value-added products, based on data insights.
 

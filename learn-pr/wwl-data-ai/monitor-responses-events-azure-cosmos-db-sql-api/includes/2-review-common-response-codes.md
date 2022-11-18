@@ -1,4 +1,4 @@
-Most common request operations using the Azure Cosmos DB SQL API, will be to create, query, or manage container documents. Each request will return an HTTP status code on the status of the operation.  This code might let us know if the operation was successful. Or the code will let us know the request was unsuccessful and provide us with some insight of what might have gone wrong. In this section we'll review some of the most common HTTP status codes returned by the following types of requests:
+Most common request operations using the Azure Cosmos DB for NoSQL, will be to create, query, or manage container documents. Each request will return an HTTP status code on the status of the operation.  This code might let us know if the operation was successful. Or the code will let us know the request was unsuccessful and provide us with some insight of what might have gone wrong. In this section we'll review some of the most common HTTP status codes returned by the following types of requests:
 
 - Create a Document
 - List Documents

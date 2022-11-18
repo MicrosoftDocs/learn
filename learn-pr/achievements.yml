@@ -1267,3 +1267,53 @@ achievements:
   title: Introduction to Hyperscale (Citus) on Azure Database for PostgreSQL
   summary: Introduction to Hyperscale (Citus) on Azure Database for PostgreSQL
   iconUrl: /learn/achievements/intro-to-hyperscale.svg
+- uid: learn.migrate-sql-server-relational-data.badge
+  type: badge
+  title: Migrate your relational data stored in SQL Server to Azure SQL Database
+  summary: Migrate your relational data stored in SQL Server to Azure SQL Database
+  iconUrl: /learn/achievements/migrate-sql-server-relational-data.svg
+- uid: learn.az-900-describe-azure-cost-management-service-level-agreements.trophy
+  type: trophy
+  title: 'Microsoft Azure Fundamentals: Describe Microsoft Cost Management and service level agreements'
+  summary: 'Microsoft Azure Fundamentals: Describe Microsoft Cost Management and service level agreements'
+  iconUrl: /training/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg
+- uid: learn.az-900-describe-core-azure-services.trophy
+  type: trophy
+  title: 'Microsoft Azure Fundamentals: Describe core Azure services'
+  summary: 'Microsoft Azure Fundamentals: Describe core Azure services'
+  iconUrl: /training/achievements/az-900-describe-core-azure-services.svg
+- uid: learn.az-900-describe-core-solutions-management-tools-azure.trophy
+  type: trophy
+  title: 'Microsoft Azure Fundamentals: Describe core solutions and management tools on Azure'
+  summary: 'Microsoft Azure Fundamentals: Describe core solutions and management tools on Azure'
+  iconUrl: /training/achievements/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg
+- uid: learn.az-900-describe-general-security-network-security-features.trophy
+  type: trophy
+  title: 'Microsoft Azure Fundamentals: Describe general security and network security features'
+  summary: 'Microsoft Azure Fundamentals: Describe general security and network security features'
+  iconUrl: /training/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg
+- uid: learn.az-900-describe-identity-governance-privacy-compliance-features.trophy
+  type: trophy
+  title: 'Microsoft Azure Fundamentals: Describe identity, governance, privacy, and compliance features'
+  summary: 'Microsoft Azure Fundamentals: Describe identity, governance, privacy, and compliance features'
+  iconUrl: /training/achievements/az-900-describe-identity-governance-privacy-compliance-features.svg
+- uid: learn.wwl.create-language-understanding-solution.trophy
+  type: trophy
+  title: Create a Language Understanding solution
+  summary: Create a Language Understanding solution
+  iconUrl: /training/achievements/natural-language-processing-language-understanding.svg
+- uid: learn.wwl.create-language-understanding-app.badge
+  type: badge
+  title: Create a Language Understanding app
+  summary: The Language Understanding service enables you to train a language model that apps can use to extract semantic meaning from natural language.
+  iconUrl: /training/achievements/language-understanding-create-app.svg
+- uid: learn.wwl.publish-use-language-understanding-app.badge
+  type: badge
+  title: Publish and use a Language Understanding app
+  summary: After creating a Language Understanding app, you can publish it and consume it from client applications.
+  iconUrl: /training/achievements/language-understanding-publish.svg
+- uid: learn.wwl.use-language-understanding-speech.badge
+  type: badge
+  title: Use Language Understanding with Speech
+  summary: While many applications work with text-based natural language input, it's also for applications to support speech. You can integrate the Language Understanding and Speech services to accomplish this.
+  iconUrl: /training/achievements/language-understanding-speech.svg

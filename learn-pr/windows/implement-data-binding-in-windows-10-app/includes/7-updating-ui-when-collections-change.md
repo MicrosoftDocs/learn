@@ -2,7 +2,7 @@
 
 :::image type="icon" source="../media/tech-uwp.png":::
 
-In this lesson, the user will select favorite colors. The available colors are listed in a dropdown (a `ComboBox` control). The user selects a color, and add it to your favorites by pressing a button. The favorite colors are displayed below. Selecting a favorite color also displays a button that allows the user to remove the selected color from their favorites.
+In this lesson, the user will select favorite colors. The available colors are listed in a dropdown (a `ComboBox` control). The user selects a color, and adds it to your favorites by pressing a button. The favorite colors are displayed below. Selecting a favorite color also displays a button that allows the user to remove the selected color from their favorites.
 
 ![Screenshot of sample databinding app running and displaying favorite colors.](../media/lesson7-finished.png)
 
@@ -10,11 +10,11 @@ First, add the ability to select a color from the `LotsOfColors` collection, and
 
 #### 1. Create the `SelectedColor` property
 
-Let's start with the code, and then we'll work our way through the UI. 
+Let's start with the code, and then we'll work our way through the UI.
 
 We need a way to determine which item (that is, instance of the `ColorDescriptor` class) the user selects in the dropdown. The `ComboBox` control has a `SelectedItem` property, which gets and sets the currently selected item. So, we can bind this property to a property of type `ColorDescriptor` in our code.
 
-Open ColorListDataContext.cs and add the following code:
+Open ColorListLogic.cs and add the following code:
 
 ```cs
 private ColorDescriptor _selectedColor;
@@ -48,23 +48,23 @@ public void AddSelectedColorToFavorites()
 }
 ```
 
-The assumption is that when this method is called, `SelectedColor` is filled with the color that should be added to the favorites list. 
+The assumption is that when this method is called, `SelectedColor` is filled with the color that should be added to the favorites list.
 
 With this, we're done with the code (for now). Let's turn our attention to the XAML.
 
 #### 4. Change the `ListBox` to a `ComboBox`
 
-Because we want to have the full list of colors to be shown in a dropdown (which is a `ComboBox` control), we need to change the XAML. Luckily, both `ListBox` and `ComboBox` are descendants of the `ItemsControl` control, and they work similarly despite there being a difference in how they look and behave. All we have to do is replace `ListBox` with `ComboBox` in the ColorList.xaml file. You can use the **Edit** > **Find and Replace** > **Quick Replace** command (CtrlL+H) for this. 
+Because we want to have the full list of colors to be shown in a dropdown (which is a `ComboBox` control), we need to change the XAML. Luckily, both `ListBox` and `ComboBox` are descendants of the `ItemsControl` control, and they work similarly despite there being a difference in how they look and behave. All we have to do is replace `ListBox` with `ComboBox` in the ColorList.xaml file. You can use the **Edit** > **Find and Replace** > **Quick Replace** command (CtrlL+H) for this.
 
 ![Screenshot of Visual Studio showing the Quick Replace command.](../media/quickreplace.png)
 
-If you quickly run the app now, you can see that the `ListBox` has been replaced with a `ComboBox`, but the colors are still displayed by using the same template. 
+If you quickly run the app now, you can see that the `ListBox` has been replaced with a `ComboBox`, but the colors are still displayed by using the same template.
 
 ![Screenshot of favorite colors app showing the color selection combo box.](../media/combobox.png)
 
 #### 5. Extract the template to a resource
 
-Speaking of the template, you'll need to reuse it for the list of favorite colors later. It's a good idea to only store the template in one place, so that your XAML is more readable. More importantly, this ensures that changes to the template affect every instance. Let's extract the template to a resource. 
+Speaking of the template, you'll need to reuse it for the list of favorite colors later. It's a good idea to only store the template in one place, so that your XAML is more readable. More importantly, this ensures that changes to the template affect every instance. Let's extract the template to a resource.
 
 Any `FrameworkElement` can have its list of resources. We chose to make our template global for this page, so let's add a `<Page.Reources>` tag above the `<Grid>` element. Then, move the entire `<DataTemplate>` tag and its contents inside it.
 
@@ -72,8 +72,8 @@ Any `FrameworkElement` can have its list of resources. We chose to make our temp
 <Page.Resources>
     <DataTemplate x:DataType="local:ColorDescriptor">
         <StackPanel Orientation="Horizontal">
-            <Rectangle Width="80" 
-                       Height="20">
+            <Rectangle Width="30" 
+                       Height="30">
                 <Rectangle.Fill>
                     <SolidColorBrush Color="{x:Bind Color}"/>
                 </Rectangle.Fill>
@@ -133,15 +133,15 @@ The UI is simple. All of the controls (the dropdown, the **Add to Favorites** bu
 </StackPanel>
 ```
 
-There's a `TwoWay` binding between the currently selected item in the `ComboBox` and the `SelectedColor` property of the `ColorListDataContext` class. 
+There's a `TwoWay` binding between the currently selected item in the `ComboBox` and the `SelectedColor` property of the `ColorListLogic` class.
 
 #### 7. Run the app
 
-Run the app now, select a color from the `ComboBox`, and select the **Add to Favorites** button. Nothing happens. Adding a breakpoint to the end of the `AddSelectedColorToFavorites` method in the `ColorListDataContext` class shows that the code works. The selected color gets added to the `FavoriteColors` list. 
+Run the app now, select a color from the `ComboBox`, and select the **Add to Favorites** button. Nothing happens. Adding a breakpoint to the end of the `AddSelectedColorToFavorites` method in the `ColorListLogic` class shows that the code works. The selected color gets added to the `FavoriteColors` list.
 
 The reason the UI doesn't reflect the changes in this `List<ColorDescriptor>` is that the UI needs to be notified when the collection changes. For lists, this is done through the `System.Collections.Specialized.INotifyCollectionChanged` interface. Fortunately, we don't have to implement this. The `System.Collections.ObjectModel.ObservableCollection<T>` class already has everything we need.
 
-To make our app work, all we have to do is to use the `ObservableCollection<T>` class instead of the `List<T>` class for the `FavoriteColors` property. 
+To make our app work, all we have to do is to use the `ObservableCollection<T>` class instead of the `List<T>` class for the `FavoriteColors` property.
 
 ```cs
 public ObservableCollection<ColorDescriptor> FavoriteColors { get; } = 
@@ -156,19 +156,19 @@ If you run the app now, selecting colors from the dropdown and selecting the **A
 
 When you launch the app, there's no color selected in the dropdown. If you select the **Add to Favorites** button now, `null`s are added to the list. This is a bug, so let's fix it!
 
-We could add a `null` check to the `AddSelectedColorToFavorites` method, but that wouldn't prevent the **Add to Favorites** button from showing up when it's non-functional. Instead, let's just make sure that there's always an item selected in the dropdown. Because the dropdown's `SelectedItem` property is two-way bound to the `SelectedColor` property in the code, let's just initialize it to a valid value on start. Add the following line to the end of the `ColorListDataContext` constructor:
+We could add a `null` check to the `AddSelectedColorToFavorites` method, but that wouldn't prevent the **Add to Favorites** button from showing up when it's non-functional. Instead, let's just make sure that there's always an item selected in the dropdown. Because the dropdown's `SelectedItem` property is two-way bound to the `SelectedColor` property in the code, let's just initialize it to a valid value on start. Add the following line to the end of the `ColorListLogic` constructor:
 
 ```cs
 SelectedColor = LotsOfColors[0];
 ```
 
-This ensures that the first item of the `LotsOfColors` list is selected when the app starts. The user won't be able to add a `null` to the `FavoriteColors` collection. 
+This ensures that the first item of the `LotsOfColors` list is selected when the app starts. The user won't be able to add a `null` to the `FavoriteColors` collection.
 
 #### 9. Remove favorite colors
 
-The next step is to add the ability to remove favorite colors from the `ListBox`. This will happen by the user selecting an item in the `ListBox`, and selecting the **Remove from Favorites** button. 
+The next step is to add the ability to remove favorite colors from the `ListBox`. This will happen by the user selecting an item in the `ListBox`, and selecting the **Remove from Favorites** button.
 
-Similarly to how the `ComboBox` worked, we can track the item the user has selected in the `ListBox` through its `SelectedItem` property. We can bind this to a property in the code. Add this to the `ColorListDataContext` class. 
+Similarly to how the `ComboBox` worked, we can track the item the user has selected in the `ListBox` through its `SelectedItem` property. We can bind this to a property in the code. Add this to the `ColorListLogic` class.
 
 ```cs
 private ColorDescriptor _selectedFavoriteColor;
@@ -186,7 +186,7 @@ public ColorDescriptor SelectedFavoriteColor
 public bool IsRemoveFavoriteColorButtonVisible => SelectedFavoriteColor != null;
 ```
 
-The preceding code also includes a Boolean property for controlling whether the button to remove items from the favorites list should be visible. Any change to `SelectedFavoriteColor` causes the UI to query this property, and act accordingly. 
+The preceding code also includes a Boolean property for controlling whether the button to remove items from the favorites list should be visible. Any change to `SelectedFavoriteColor` causes the UI to query this property, and act accordingly.
 
 To actually perform the removal of the color from the favorite list, we need to write one more method.
 
@@ -197,7 +197,7 @@ public void RemoveFavoriteColor()
 }
 ```
 
-To wire the button up in the XAML, open ColorList.xaml, and change the **Remove from Favorites** button's XAML. Change it so that it includes the Visibility binding as well as the Click binding.
+To wire the button up in the XAML, open ColorList.xaml, and change the **Remove from Favorites** button's XAML. Change it so that it includes the `Visibility` binding as well as the `Click` binding.
 
 ```xml
 <Button Margin="20" 
@@ -215,15 +215,13 @@ Run the app now, and verify that you can add colors to the favorite colors' list
 
 ### Summary
 
-This lesson illustrated how you can acquire and set the selected item in a `ComboBox` or `ListBox` control, by binding their `SelectedItem` properties to a C# property. You've also seen how using `ObservableCollection` in code causes the UI to automatically update the contents of controls that display multiple items. 
-
+This lesson illustrated how you can acquire and set the selected item in a `ComboBox` or `ListBox` control, by binding their `SelectedItem` properties to a C# property. You've also seen how using `ObservableCollection` in code causes the UI to automatically update the contents of controls that display multiple items.
 
 ::: zone-end
 
 ::: zone pivot="wpf"
 
 :::image type="icon" source="../media/tech-wpf.png":::
-
 
 In this lesson, the user will select favorite colors. The available colors are listed in a dropdown (a `ComboBox` control). The user selects a color, and adds it to his or her favorites by pressing a button. The favorite colors are displayed below. Selecting a favorite color also displays a button that allows the user to remove the selected color from their favorites.
 
@@ -233,7 +231,7 @@ First, add the ability to select a color from the `LotsOfColors` collection, and
 
 #### 1. Create the `SelectedColor` property
 
-Let's start with the code, and then we'll work our way through the UI. 
+Let's start with the code, and then we'll work our way through the UI.
 
 We need a way to determine which item (that is, instance of the `ColorDescriptor` class) the user selects in the dropdown. The `ComboBox` control has a `SelectedItem` property, which gets and sets the currently selected item. So, we can bind this property to a property of type `ColorDescriptor` in our code.
 
@@ -271,17 +269,17 @@ public void AddSelectedColorToFavorites()
 }
 ```
 
-The assumption is that when this method is called, `SelectedColor` is filled with the color that should be added to the favorites list. 
+The assumption is that when this method is called, `SelectedColor` is filled with the color that should be added to the favorites list.
 
 With this, we're done with the code (for now). Let's turn our attention to the XAML.
 
 #### 4. Change the `ListBox` to a `ComboBox`
 
-Because we want to have the full list of colors to be shown in a dropdown (which is a `ComboBox` control), we need to change the XAML. Luckily, both `ListBox` and `ComboBox` are descendants of the `ItemsControl` control, and they work similarly despite there being numerous difference in how they look and behave. All we have to do is replace `ListBox` with `ComboBox` in the ColorList.xaml file. You can use the **Edit** > **Find and Replace** > **Quick Replace** command (CtrlL+H) for this. 
+Because we want to have the full list of colors to be shown in a dropdown (which is a `ComboBox` control), we need to change the XAML. Luckily, both `ListBox` and `ComboBox` are descendants of the `ItemsControl` control, and they work similarly despite there being numerous differences in how they look and behave. All we have to do is replace `ListBox` with `ComboBox` in the ColorList.xaml file. You can use the **Edit** > **Find and Replace** > **Quick Replace** command (CtrlL+H) for this.
 
 ![Repeat screenshot of Visual Studio showing Quick Replace command.](../media/quickreplace.png)
 
-If you quickly run the app now, you can see that the `ListBox` has been replaced with a `ComboBox`, but the colors are still displayed by using the same template. 
+If you quickly run the app now, you can see that the `ListBox` has been replaced with a `ComboBox`, but the colors are still displayed by using the same template.
 
 ![Screenshot of sample app showing color list in a ComboBox.](../media/combobox_wpf.png)
 
@@ -366,7 +364,7 @@ There's a `TwoWay` binding between the currently selected item in the `ComboBox`
 
 #### 7. Create the Click handler for the `Add to Favorites` button
 
-We've already implemented the logic for adding the selected color to the `FavoriteColors` list in the `AddSelectedColorTofavorites` method. However, we need to invoke this method when the user clicks the button. 
+We've already implemented the logic for adding the selected color to the `FavoriteColors` list in the `AddSelectedColorTofavorites` method. However, we need to invoke this method when the user clicks the button.
 
 Double-click the `Add to Favorites` button in the visual designer in Visual Studio. This creates a `Button_Click` method in the codebehind, and a reference to it in the `Click` event in XAML:
 
@@ -378,7 +376,7 @@ Rename the `Button_Click` method to `AddToFavorites_Click` in both the codebehin
 
 ![Screenshot of Visual Studio quick action option to rename button click method.](../media/rename_addtofavorites_click_wpf.png).
 
-Add a convenience property to the top of the `ColorList` class to make it easier to access the `ColorListDataContext`: 
+Add a convenience property to the top of the `ColorList` class to make it easier to access the `ColorListDataContext`:
 
 ```cs
 private ColorListDataContext DC => (ColorListDataContext)DataContext;
@@ -395,11 +393,11 @@ private void AddToFavorites_Click(object sender, RoutedEventArgs e)
 
 #### 8. Run the app
 
-Run the app now, select a color from the `ComboBox`, and select the **Add to Favorites** button. Nothing happens. Adding a breakpoint to the end of the `AddSelectedColorToFavorites` method in the `ColorListDataContext` class shows that the code works. The selected color gets added to the `FavoriteColors` list. 
+Run the app now, select a color from the `ComboBox`, and select the **Add to Favorites** button. Nothing happens. Adding a breakpoint to the end of the `AddSelectedColorToFavorites` method in the `ColorListDataContext` class shows that the code works. The selected color gets added to the `FavoriteColors` list.
 
 The reason the UI doesn't reflect the changes in this `List<ColorDescriptor>` is that the UI needs to be notified when the collection changes. For lists, this is done through the `System.Collections.Specialized.INotifyCollectionChanged` interface. Fortunately, we don't have to implement this. The `System.Collections.ObjectModel.ObservableCollection<T>` class already has everything we need.
 
-To make our app work, all we have to do is to use the `ObservableCollection<T>` class instead of the `List<T>` class for the `FavoriteColors` property. 
+To make our app work, all we have to do is to use the `ObservableCollection<T>` class instead of the `List<T>` class for the `FavoriteColors` property.
 
 ```cs
 public ObservableCollection<ColorDescriptor> FavoriteColors { get; } = 
@@ -420,13 +418,13 @@ We could add a `null` check to the `AddSelectedColorToFavorites` method, but tha
 SelectedColor = LotsOfColors[0];
 ```
 
-This ensures that the first item of the `LotsOfColors` list is selected when the app starts. The user won't be able to add a `null` to the `FavoriteColors` collection. 
+This ensures that the first item of the `LotsOfColors` list is selected when the app starts. The user won't be able to add a `null` to the `FavoriteColors` collection.
 
 #### 10. Remove favorite colors
 
-The next step is to add the ability to remove favorite colors from the `ListBox`. This happens by the user selecting an item in the `ListBox`, and selecting the **Remove from Favorites** button. 
+The next step is to add the ability to remove favorite colors from the `ListBox`. This happens by the user selecting an item in the `ListBox`, and selecting the **Remove from Favorites** button.
 
-Similarly to how the `ComboBox` worked, we can track the item the user has selected in the `ListBox` through its `SelectedItem` property. We can bind this to a property in the code. Add this to the `ColorListDataContext` class. 
+Similarly to how the `ComboBox` worked, we can track the item the user has selected in the `ListBox` through its `SelectedItem` property. We can bind this to a property in the code. Add this to the `ColorListDataContext` class.
 
 ```cs
 private ColorDescriptor _selectedFavoriteColor;
@@ -445,7 +443,7 @@ public bool IsRemoveFavoriteEnabled => SelectedFavoriteColor != null;
 
 ```
 
-The preceding code also includes a Boolean property for controlling whether the button to remove items from the favorites list should be visible. Any change to `SelectedFavoriteColor` causes the UI to query this property, and act accordingly. 
+The preceding code also includes a Boolean property for controlling whether the button to remove items from the favorites list should be visible. Any change to `SelectedFavoriteColor` causes the UI to query this property, and act accordingly.
 
 To actually perform the removal of the color from the favorite list, we need to write one more method.
 

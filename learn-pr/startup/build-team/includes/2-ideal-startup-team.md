@@ -65,7 +65,7 @@ Successful startup founders understand objectively that most startups fail, yet 
 Founders who have this attribute:
 
 - Have a default mental state of *this could work* as opposed to *here are all the reasons this probably won't work*.
-- Are willing to explore new, untested, and crazy-sounding ideas.
+- Are willing to explore new, untested, and absurd-sounding ideas.
 - Recognize that unfettered optimism isn't helpful and are able to balance their optimism with open-mindedness.
 
 ### Open-mindedness
@@ -158,7 +158,7 @@ Here are some pros and cons of bringing in a cofounder versus hiring employees o
 |---|---|---|
 |**Cofounder**|High level of commitment to success of the startup<br><br>Might be willing to work for little or no salary<br><br>Primary financial objective is to create long-term value (realized at exit)|Small talent pool to draw from (typically limited to people you know personally)<br><br>Hard to get someone to make a commitment if your startup is still unproven and they're leaving a paid job<br><br>Hard to remove from the company if they don't perform|
 |**Employee**|Can recruit from a large talent pool and bring in specific skills<br><br>Can create some incentive to stay and perform via issuing stock options<br><br>Can terminate employment if they don't perform|Often not as committed as founders<br><br>Might leave if they receive a better offer from another company<br><br>Often need to pay a competitive salary, burning through the company's cash faster<br><br>Viable only after there's a substantive ongoing need for their particular skill set|
-|**Contractor**|Can engage for short periods or specific tasks, even when the startup is still unproven<br><br>Can utilize freelancing platforms to hire from a large talent pool, including countries that have a low cost of labor<br><br>Can generally access ratings and feedback from previous clients<br><br>Can scale up or down (or terminate) their time commitment as needed<br><br>Good way to evaluate someone who could become an employee in the future|Likely to have less commitment than founders or employees<br><br>Can be more difficult to manage, particularly if in a different country or time zone<br><br>Need to pay, often either an hourly rate or an agreed project fee<br><br>Motivation is to get the job done and get paid, rather than to create long-term value<br><br>Availability and responsiveness might change if they give other projects higher priority|
+|**Contractor**|Can engage for short periods or specific tasks, even when the startup is still unproven<br><br>Can utilize freelancing platforms to hire from a large talent pool, including countries/regions that have a low cost of labor<br><br>Can generally access ratings and feedback from previous clients<br><br>Can scale up or down (or terminate) their time commitment as needed<br><br>Good way to evaluate someone who could become an employee in the future|Likely to have less commitment than founders or employees<br><br>Can be more difficult to manage, particularly if in a different country/region or time zone<br><br>Need to pay, often either an hourly rate or an agreed project fee<br><br>Motivation is to get the job done and get paid, rather than to create long-term value<br><br>Availability and responsiveness might change if they give other projects higher priority|
 
 ## Task: Evaluate resourcing requirements
 

@@ -69,7 +69,7 @@ For scenarios where you need full container orchestration, including service dis
     aci-demo-0000.eastus.azurecontainer.io  Succeeded
     ````
 
-    If your container is in the **Creating** state, wait a few moments and run the command again until you see the **Succeeded** state.
+    If your container is in the **Creating** state, wait a few moments, and run the command again until you see the **Succeeded** state.
 
 1. From a browser, go to your container's FQDN to see it running. Ensure you enter the *http://* prefix in front of the *aci-demo...* string. You should get this welcome page:
 

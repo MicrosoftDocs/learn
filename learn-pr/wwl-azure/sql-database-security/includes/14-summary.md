@@ -14,4 +14,4 @@ Microsoft Learn provides a large number of self-paced learning paths. For this l
  -  [Provision an Azure SQL database to store application data](/training/modules/provision-azure-sql-db/)
  -  [Secure your Azure SQL Database](/training/modules/secure-your-azure-sql-database/)
  -  [Configure security policies to manage data](/training/modules/configure-security-policies-to-manage-data/)
- -  [Migrate your relational data stored in SQL Server to Azure SQL Database](/training/modules/migrate-sql-server-relational-data/)
+ -  [Migrate SQL workloads to Azure SQL Databases](/training/modules/migrate-sql-workloads-azure-sql-databases/)

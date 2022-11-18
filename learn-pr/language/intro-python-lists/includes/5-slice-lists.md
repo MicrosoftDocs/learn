@@ -47,7 +47,7 @@ You've seen how you can use slices to split up lists, but what about joining the
 
 To join two lists, you use the other operator (`+`) with two lists to return a new list.
 
-There are 79 known moons of Jupiter. The four largest are Io, Europa, Ganymede, and Callisto. These are called the Galilean moons, because Galileo Galilei discovered them by using his telescope in 1610. Closer to Jupiter than the Galilean group is the Amalthea group. It consists of the moons Metis, Adrastea, Amalthea, and Thebe.
+There are 79 known moons of Jupiter. The four largest are Io, Europa, Ganymede, and Callisto. These moons are called the Galilean moons, because Galileo Galilei discovered them by using his telescope in 1610. Closer to Jupiter than the Galilean group is the Amalthea group. It consists of the moons Metis, Adrastea, Amalthea, and Thebe.
 
 Create two lists. Populate the first list with the four Amalthea moons and the second list with the four Galilean moons. Join them together by using `+` to make a new list:
 

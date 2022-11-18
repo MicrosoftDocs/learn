@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-implement-network-security-monitoring.secure-your-virtual-networks-azure-portal
-title: Secure your virtual networks in the Azure portal
+title: Get network security recommendations with Microsoft Defender for Cloud
 metadata:
-  title: Secure your virtual networks in the Azure portal
-  description: "Secure your virtual networks in the Azure portal"
-  ms.date: 02/28/2022
+  title: Get network security recommendations with Microsoft Defender for Cloud
+  description: "Get network security recommendations with Microsoft Defender for Cloud"
+  ms.date: 10/13/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial

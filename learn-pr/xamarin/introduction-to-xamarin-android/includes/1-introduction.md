@@ -2,7 +2,7 @@
 
 It's a mobile-first, cloud-first world, and users expect devices of all types to be connected and online and to generate data. They want updates on everything from their taxi or flight arrival to the temperature of their home while they're on vacation. 
 
-Users need their data to be relevant, detailed, and readily available across multiple devices. And work data isn't the only focus. We see smart devices in all aspects of our lives. These devices, and more relevantly, the applications running on them, need to work everywhere: across devices, across network types, and across country borders.
+Users need their data to be relevant, detailed, and readily available across multiple devices. And work data isn't the only focus. We see smart devices in all aspects of our lives. These devices, and more relevantly, the applications running on them, need to work everywhere: across devices, across network types, and across geographic borders.
 
 Suppose you're working at a delivery company and want to take advantage of having your users' attention through their mobile devices. Your task is to create a mobile application that will allow your customers to quickly process payments. One of the first features you want to focus on is a tip calculator. You want to make it easy for your users to calculate a tip and return the total amount due.
 

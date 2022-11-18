@@ -32,8 +32,14 @@ Solution templates provide Infrastructure as a Service (IaaS) packaged virtual m
 
 Solution templates for blockchain can be found in the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/blockchain).
 
-### Azure Blockchain Workbench
+### ConsenSys Quorum Blockchain Service
 
-Use Azure Blockchain Workbench for rapid prototyping and integration with other Azure services. With Azure Blockchain Workbench, you can configure and deploy a consortium network quickly. It's ideal for development prototyping or test exploration. The goal of Azure Blockchain Workbench is to reduce development time and cost with prebuilt integrations to the cloud services needed for application development such as Azure Active Directory, Azure Key Vault, Azure Service Bus, and Azure Event Hubs.
+Quorum Blockchain Service is a fully managed ledger service for enterprises giving them the ability to grow and operate blockchain networks at scale. For more information about Quorum Blockchain Service, see [Consensys Quorum Blockchain Service](https://consensys.net/quorum/qbs/).
 
-For more information on Azure Blockchain Workbench, see the [Azure Blockchain Workbench](/azure/blockchain/workbench) documentation.
+### Azure confidential ledger
+
+Azure confidential ledger provides a managed and decentralized ledger for data entries backed by blockchain. You can maintain data integrity by preventing unauthorized or accidental modification with tamperproof storage. Data is protected at rest, in transit, and in use with hardware-backed secure enclaves used in Azure confidential computing. For more information about Azure confidential ledger, see [Azure confidential ledger](https://azure.microsoft.com/products/azure-confidential-ledger).
+
+### Azure SQL Database ledger
+
+Azure SQL Database ledger enables tamper-evidence through cryptographic verification for your centralized data stores. SQL Database ledger removes complexity of decentralized blockchain technology while providing many of the benefits of blockchain data integrity in a fully managed and familiar SQL environment. For more information about SQL Database ledger, see [Azure SQL Database ledger](/sql/relational-databases/security/ledger/ledger-landing-sql-server).

@@ -3,7 +3,7 @@ uid: learn.wwl.work-windows-powershell-pipeline
 metadata:
   title: Work with the Windows PowerShell pipeline
   description: Work with the Windows PowerShell pipeline
-  ms.date: 08/02/2022
+  ms.date: 10/20/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ prerequisites: |
   - Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
 summary: |
   This learning path explains the purpose and use of the PowerShell pipeline and use the pipeline to sort, filter, enumerate and display output data for PowerShell cmdlets. It also explains how to pass pipeline objects.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/work-windows-powershell-pipeline.svg
 levels:
 - intermediate
 roles:
