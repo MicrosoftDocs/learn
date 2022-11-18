@@ -28,7 +28,7 @@ quiz:
     - content: "A resource group, App Service plan, and App Service instance."
       isCorrect: true
       explanation: "This is the correct answer. You'll need to create an App Service plan and instance in your resource group."
-  - content: "What does the `trigger` keyword mean in a Azure pipeline YAML file?"
+  - content: "What does the `trigger` keyword mean in an Azure pipeline YAML file?"
     choices:
     - content: "A `trigger` sets when to automatically run a pipeline. In the example in this module, the pipeline is configured to run whenever a change is committed to the `main` branch."
       isCorrect: true
