@@ -26,4 +26,3 @@ If you are using Microsoft Test Manager, you should plan to migrate to Azure Tes
 
 For more information, search for Test Management at Visual Studio Marketplace.
 
-test change
