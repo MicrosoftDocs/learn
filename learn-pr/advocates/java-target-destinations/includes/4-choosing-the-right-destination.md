@@ -22,7 +22,7 @@ For running Java workloads on a platform as a service solution, Azure provides t
 
 - **Azure Functions**: Best for simple event-driven workloads that can scale extremely well.
 - **Azure App Service**: Best for normal web applications or for running Jakarta EE workloads.
-- **Azure Spring Cloud**: Best for running Spring Boot applications and, more specifically, Spring Cloud microservices.
+- **Azure Spring Apps**: Best for running Spring Boot applications and, more specifically, Spring Cloud microservices.
 
 ## Choose infrastructure control on Azure
 

@@ -3,8 +3,8 @@ uid: learn.wwl.configure-azure-files-file-sync.compare-files-to-blobs
 title: Compare storage for file shares and blob data
 metadata:
   title: Compare storage for file shares and blob data
-  description: "Compare features of Azure Files to Azure Blob Storage and Azure Disks to store file shares and blob data."
-  ms.date: 11/01/2022
+  description: "Compare storage for file shares and blob data"
+  ms.date: 11/17/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
