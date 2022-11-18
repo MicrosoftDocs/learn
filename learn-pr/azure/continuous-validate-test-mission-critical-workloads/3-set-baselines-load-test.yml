@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.continuous-validate-test-mission-critical-workloads.set-baselines-load-test
+title: Set baselines for load tests
+metadata:
+  title: Set baselines for load tests
+  description: Set baselines for load tests.
+  ms.date: 11/11/2022
+  author: PageWriter-MSFT
+  ms.author: prwilk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure #TBD
+durationInMinutes: 5 #TBD
+content: |
+  [!include[](includes/3-set-baselines-load-test.md)]
+
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "Question 1"
+    choices:
+    - content: "Option 1."
+      isCorrect: true
+      explanation: "Correct! Explanation."
+    - content: "Option 2."
+      isCorrect: false
+      explanation: "Incorrect. Explanation."
+    - content: "Option 3."
+      isCorrect: false
+      explanation: "Incorrect. Explanation."
+  - content: "Question 2"
+    choices:
+    - content: "Option 1."
+      isCorrect: true
+      explanation: "Correct! Explanation."
+    - content: "Option 2."
+      isCorrect: false
+      explanation: "Incorrect. Explanation."
+    - content: "Option 3."
+      isCorrect: false
+      explanation: "Incorrect. Explanation."
+  - content: "Question 3"
+    choices:
+    - content: "Option 1."
+      isCorrect: true
+      explanation: "Correct! Explanation."
+    - content: "Option 2."
+      isCorrect: false
+      explanation: "Incorrect. Explanation."
+    - content: "Option 3."
+      isCorrect: false
+      explanation: "Incorrect. Explanation."

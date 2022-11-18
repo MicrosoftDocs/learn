@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.continuous-validate-test-mission-critical-workloads.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary.
+  ms.date: 11/11/2022
+  author: PageWriter-MSFT
+  ms.author: prwilk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure #TBD
+durationInMinutes: 2 #TBD
+content: |
+  [!include[](includes/6-summary.md)]

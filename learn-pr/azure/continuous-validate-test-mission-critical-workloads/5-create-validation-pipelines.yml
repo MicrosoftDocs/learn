@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.continuous-validate-test-mission-critical-workloads.create-validation-pipelines
+title: Create continuous validation pipeline
+metadata:
+  title: Create continuous validation pipeline
+  description: Create continuous validation pipeline.
+  ms.date: 11/11/2022
+  author: PageWriter-MSFT
+  ms.author: prwilk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure #TBD
+durationInMinutes: 5 #TBD
+content: |
+  [!include[](includes/5-create-validation-pipelines.md)]
+
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "Question 1"
+    choices:
+    - content: "Option 1."
+      isCorrect: true
+      explanation: "Correct! Explanation."
+    - content: "Option 2."
+      isCorrect: false
+      explanation: "Incorrect. Explanation."
+    - content: "Option 3."
+      isCorrect: false
+      explanation: "Incorrect. Explanation."
+  - content: "Question 2"
+    choices:
+    - content: "Option 1."
+      isCorrect: true
+      explanation: "Correct! Explanation."
+    - content: "Option 2."
+      isCorrect: false
+      explanation: "Incorrect. Explanation."
+    - content: "Option 3."
+      isCorrect: false
+      explanation: "Incorrect. Explanation."
+  - content: "Question 3"
+    choices:
+    - content: "Option 1."
+      isCorrect: true
+      explanation: "Correct! Explanation."
+    - content: "Option 2."
+      isCorrect: false
+      explanation: "Incorrect. Explanation."
+    - content: "Option 3."
+      isCorrect: false
+      explanation: "Incorrect. Explanation."
+

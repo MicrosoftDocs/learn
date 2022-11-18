@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.continuous-validate-test-mission-critical-workloads
+metadata:
+  title: 'Continuously validate and test your mission-critical workloads'
+  description: Validate and test your mission-critical workload continuously through automated pipelines to be aware of potential issues before deploying to production. 
+  ms.date: 11/11/2022
+  author: PageWriter-MSFT
+  ms.author: prwilk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure #TBD
+title: 'Continuously validate and test your mission-critical workloads'
+summary: A mission-critical workload needs to stay operational even when failures occur. You want to evaluate the impact of changes, system's ability to handle load, and simulate failures before deploying to production. Learn how you can use Azure Load Testing and Azure Chaos Studio simultaneously as part of DevOps pipelines to achieve those goals.
+abstract:  | 
+  In this module, you will:
+  - Understand the importance of user and system flows as the foundation for defining load tests and chaos experiments
+  - Establish a baseline with expected thresholds for the system 
+  -	Define requirements for load testing and chaos experiments 
+prerequisites: |
+  -	Azure subscription 
+  -	Azure DevOps Organization / Project
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+-	administrator
+-	solution-architect
+-	devops-engineer
+-	network-engineer
+-	security-engineer
+products:
+-	azure-devops
+-	azure-load-testing
+# TBD azure-chaos-studio
+subjects:
+-	high-availability-system
+-	architecture
+-	solution-design
+-	devops
+units:
+- learn.continuous-validate-test-mission-critical-workloads.introduction
+- learn.continuous-validate-test-mission-critical-workloads.define-load-tests
+- learn.continuous-validate-test-mission-critical-workloads.set-baselines-load-test
+- learn.continuous-validate-test-mission-critical-workloads.design-chaos-experiments
+- learn.continuous-validate-test-mission-critical-workloads.create-validation-pipelines
+- learn.continuous-validate-test-mission-critical-workloads.summary
+badge:
+  uid: learn.continuous-validate-test-mission-critical-workloads.badge 
