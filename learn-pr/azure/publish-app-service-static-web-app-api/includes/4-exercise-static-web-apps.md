@@ -29,7 +29,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 1. Open Visual Studio Code, and select **File > Open** and open the repository you cloned to your computer in the editor.
 
-1. Verify that you have filtered your Azure subscriptions to include the Concierge Subscription by opening the command palette <kbd>F1</kbd>, entering `Azure: Select Subscriptions`, and press <kbd>Enter</kbd>.
+1. Verify that you have filtered your Azure subscriptions to include the Concierge Subscription by opening the command palette and entering `Azure: Select Subscriptions`, and press <kbd>Enter</kbd>.
 
 1. Select **Concierge Subscription** and press <kbd>Enter</kbd>.
 
@@ -48,13 +48,15 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 1. Place your mouse over the *Static Web Apps* heading, right click, and select **Create Static Web App**.
 
-1. When the command palette opens at the top of the editor, select **Concierge Subscription** and press <kbd>Enter</kbd>.
-
-   :::image type="content" source="../media/extension-concierge-subscription-select.png" alt-text="Screenshot showing how to select a subscription.":::
+   :::image type="content" source="../media/create-first-step.png" alt-text="Screenshot showing where to go to create a web app.":::
 
 1. Enter **my-first-static-web-app**, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-create-app.png" alt-text="Screenshot showing how to create a Static Web App.":::
+
+1. Select your **location** and press <kbd>Enter</kbd>.
+
+   :::image type="content" source="../media/extension-location-option.png" alt-text="Screenshot showing how to select a subscription.":::
 
 1. Select the **Custom** option, and press <kbd>Enter</kbd>
 
