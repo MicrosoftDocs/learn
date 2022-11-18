@@ -10,12 +10,12 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Write multi-table queries by using Kusto Query Language
-summary: Write advanced queries in Kusto Query Language to help you gain deeper insights by collating data from several tables. Learn how to use the table-level operators `lookup`, `join`, `union`, and `materialize`, and new aggregation functions `arg_min` and `arg_max`. You'll also communicate these results visually in charts.
+summary: Write advanced queries in Kusto Query Language to gain deeper insights by combining data from several tables. Learn how to use the table-level operators `lookup`, `join`, `union`, and `materialize`, and the new aggregation functions `arg_min` and `arg_max`. You'll also communicate these results visually in charts.
 abstract: |
   By the end of this module, you'll be able to:
     - Use Kusto Query Language to combine and retrieve data from two or more tables by using the `lookup`, `join`, and `union` operators.
     - Optimize multi-table queries by using the `materialize` operator to cache table data.
-    - Enrich insights by using new aggregation functions `arg_min` and `arg_max`.
+    - Enrich your insights by using the new aggregation functions `arg_min` and `arg_max`.
 prerequisites: |
   - A Microsoft account, an Azure Active Directory user identity to create a free cluster, or an Azure account
   - Familiarity with database structures such as tables, columns, and rows
