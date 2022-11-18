@@ -1,8 +1,8 @@
-When creating an App Service, you'll need to specify a resource group and service plan. Then there are few other configuration choices. You may need to ask your developer for assistance in completing this information.
+When creating an App Service, you'll need to specify a resource group and service plan. Then there are a few other configuration choices. You may need to ask your developer for assistance in completing this information.
 
 Watch this video to learn how to create an App Service in the portal. 
 
-<br/>
+
 <iframe width="854" height="480" src="https://www.youtube.com/embed/dHTzv-zY17I" title="How to create App Services in the Azure portal | Azure Portal Series" allowfullscreen></iframe>
 
 
