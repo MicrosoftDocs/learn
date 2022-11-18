@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.deploy-nodejs.2-azure-support-nodejs
+uid: learn.azdo.deploy-nodejs.azure-support-nodejs
 title: Prepare
 metadata:
   title: Prepare to build your Node.js CI/CD pipeline.

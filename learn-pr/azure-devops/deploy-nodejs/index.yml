@@ -34,13 +34,13 @@ subjects:
 - cross-development
 - process-workflow
 units:
-- learn.azdo.deploy-nodejs.1-introduction
-- learn.azdo.deploy-nodejs.2-azure-support-nodejs
-- learn.azdo.deploy-nodejs.3-get-sample-application
-- learn.azdo.deploy-nodejs.4-set-up-environment
-- learn.azdo.deploy-nodejs.5-deploy-nodejs
-- learn.azdo.deploy-nodejs.6-clean-up-environment
-- learn.azdo.deploy-nodejs.7-knowledge-check
-- learn.azdo.deploy-nodejs.8-summary
+- learn.azdo.deploy-nodejs.introduction
+- learn.azdo.deploy-nodejs.azure-support-nodejs
+- learn.azdo.deploy-nodejs.get-sample-application
+- learn.azdo.deploy-nodejs.set-up-environment
+- learn.azdo.deploy-nodejs.deploy-nodejs
+- learn.azdo.deploy-nodejs.clean-up-environment
+- learn.azdo.deploy-nodejs.knowledge-check
+- learn.azdo.deploy-nodejs.summary
 badge:
   uid: learn.azdo.deploy-nodejs.badge
