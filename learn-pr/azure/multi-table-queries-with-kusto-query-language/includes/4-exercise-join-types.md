@@ -8,7 +8,7 @@ In our retail company scenario, your team is asking you to list the three countr
 
 As you begin inspecting the *SalesFact* table, you notice that the figures you need are available in the **SalesAmount** column, but the table doesn't contain any country data. Examining the other tables, you notice that the country data is available in the **RegionCountryName** column in the *Customers* table. You also notice that both tables have a **CustomerKey** column.
 
-Because the data is spread over two tables, you'll need to both the customer data and the sales data so that you can write a query that provides the requested information. To do this, you use the `join` operator and the **CustomerKey** column to match rows from both tables.
+Because the data is spread over two tables, you'll need both the customer data and the sales data to write a query that provides the requested information. To write the query, you use the `join` operator and the **CustomerKey** column to match the rows from both tables.
 
 Now you're ready to write the query. You'll use an *inner* `join` to get all matching rows from both tables. For best performance, you'll use the customers *dimension* table as the left table and the sales *fact* table as the right table.
 
@@ -72,7 +72,7 @@ Your team then asks you to identify the countries with the lowest revenues in th
 
 ## Use the `leftouter` join kind
 
-Your sales team wants to know the total sales per product category. You start by reviewing the available data and realize that you'll need the *Products* table to get the list of product categories and the *SalesFact* table to get the sales data. You also realize that you'll want to count the sales for each category and list all product categories, even ones that might not have sales.
+Your sales team wants to know the total sales per product category. When you start reviewing the available data, you realize that you'll need the *Products* table to get the list of product categories and the *SalesFact* table to get the sales data. You also realize that you want to count the sales for each category and list all product categories, even for products that might not have sales.
 
 Having analyzed the request, you choose to use the `leftouter` join, because it returns all records from the left table, enriched with matching data from the right table. You write your query by using the *Products* table as the left dimensions table, matching data from the *SalesFact* facts table, and grouping the result by product category, as follows:
 
