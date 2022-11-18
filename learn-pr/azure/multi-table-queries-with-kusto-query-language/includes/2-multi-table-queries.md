@@ -1,4 +1,4 @@
-Organizations often collate different types of information from many sources. The information is stored in a large number of tables. Occasionally, you might need to join tables based on logical relationships between them, for the purpose of deeper analysis or reporting. In the retail company scenario, you'll use tables for customers, products, and sales information.
+Organizations often collate different types of information from many sources. The information is stored in a large number of tables. Occasionally, you might need to join tables based on logical relationships between them, for deeper analysis or reporting. In the retail company scenario, you'll use tables for customers, products, and sales information.
 
 In this module, you'll learn about various ways to combine data in Kusto queries to give your team members the information they need to increase product awareness and grow sales.
 
@@ -43,11 +43,11 @@ Now that you've analyzed your data, you need to understand how to combine tables
 
 The `join` operator merges the rows of two tables by matching values of the specified columns from each table. The resultant table depends on the type of join you use. For example, if you use an *inner join*, the table will have the same columns as the left table (sometimes called the *outer table*), plus the columns from the right table (sometimes called the *inner table*). You'll learn more about join types in the next section. For best performance, if one table is always smaller than the other, use it as the left side of the `join` operator.
 
-The `lookup` operator is a special implementation of `join` operator that optimizes the performance of queries where a fact table is enriched with data from a dimension table. It extends the fact table with values that are looked up in a dimension table. For best performance, the system by default assumes that the left table is the larger (fact) table, and the right table is the smaller (dimension) table. This is exactly opposite to the assumption that's used by the `join` operator.
+The `lookup` operator is a special implementation of a `join` operator that optimizes the performance of queries where a fact table is enriched with data from a dimension table. It extends the fact table with values that are looked up in a dimension table. For best performance, the system by default assumes that the left table is the larger (fact) table, and the right table is the smaller (dimension) table. This is exactly opposite to the assumption that's used by the `join` operator.
 
 The `union` operator returns all the rows from two or more tables. It's useful when you want to combine data from multiple tables.
 
-The `materialize()` function caches results within a query execution for subsequent reuse in the query. It's like taking a snapshot of the results of a sub-query and using it multiple times within the query. This is useful in optimizing queries for scenarios such as the following, where the results:
+The `materialize()` function caches results within a query execution for subsequent reuse in the query. It's like taking a snapshot of the results of a subquery and using it multiple times within the query. This is useful in optimizing queries for scenarios such as the following, where the results:
 
 - Are expensive to compute
 - Are non-deterministic
