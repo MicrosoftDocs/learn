@@ -18,7 +18,7 @@ You just created a GitHub repository named **my-static-web-app** in your GitHub 
 
 1. Open a terminal on your computer.
 
-1. Start by cloning the GitHub repository to your computer.
+1. Start by cloning the GitHub repository to the desired directory on your computer.
 
    ```bash
    git clone https://github.com/<YOUR_GITHUB_USERNAME>/my-static-web-app

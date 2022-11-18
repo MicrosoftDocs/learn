@@ -110,8 +110,8 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone-end
 
-> [!NOTE]
-> Your repository may be a bit different than the ones you may have used in the past. It contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.
+   > [!NOTE]
+   > Your repository may be a bit different than the ones you may have used in the past. It contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.
 
 9. Once the app is created, a confirmation notification is shown in Visual Studio Code.
 
