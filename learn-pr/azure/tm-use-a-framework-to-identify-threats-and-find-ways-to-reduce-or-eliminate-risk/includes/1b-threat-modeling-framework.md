@@ -26,4 +26,4 @@ Each threat category is associated with a security control to help you reduce or
 |Denial of service|Availability|System handles all requests appropriately|
 |Elevation of privilege|Authorization|User has appropriate permissions to carry out a request|
 
-Let's look at each threat category in the next few units.
+We'll look at each threat category in the next few units.
