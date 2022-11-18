@@ -2,19 +2,19 @@ In this exercise, you'll create a Log Analytics workspace, create a diagnostic s
 
 ## Create a Log Analytics workspace
 
-1. On the Azure portal menu, select **All services**. In the list of resources, type **Log Analytics**. As you begin typing, the list filters based on your input. Select **Log Analytics workspaces**.
+1. In the Azure portal, search for and select **Log Analytics workspaces**.
 
 2. Select **+ Create**, and then provide values for the following options:
 
    - Select a **Subscription** from the subscription drop-down list if the default selected is not appropriate.
 
-   - For **Resource Group**, select the resource group that you created in an earlier exercise.
+   - For **Resource Group**, select the **<rgn>[Sandbox resource group]</rgn>** resource group.
 
    - Provide a name for the new **Log Analytics workspace**, such as *DefaultLAWorkspace*. This name must be unique per resource group.
 
    - Select an available **Region**.  
 
-3. Select **Review + create** to review the settings and then **Create** to create the workspace.
+3. Select **Review + create** to review the settings, then select  **Create** to create the workspace.
 
 ## Create a diagnostic setting
 
