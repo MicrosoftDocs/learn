@@ -55,7 +55,7 @@ Create Bash variables to make the setup process more convenient and less error-p
     resourceSuffix=$RANDOM
     ```
 
-1. Create a globally unique name for your App Service Web App. Note that this commands use double quotes, which instructs Bash to interpolate the variables using the inline syntax.
+1. Create a globally unique name for your App Service Web App. Note that this command uses double quotes, which tells Bash to interpolate the variables using the inline syntax.
 
     ```bash
     webName="helloworld-nodejs-${resourceSuffix}"
