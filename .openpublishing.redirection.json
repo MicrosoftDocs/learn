@@ -18338,12 +18338,12 @@
     },
     {
       "source_path": "learn-pr/azure-devops/deploy-nodejs/5-clean-up-environment.yml",
-      "redirect_url": "/training/modules/migrate-sql-workloads-azure-sql-databases/",
+      "redirect_url": "/training/modules/deploy-nodejs/6-clean-up-environment",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/deploy-nodejs/6-summary.yml",
-      "redirect_url": "/training/modules/deploy-nodejs/7-summary",
+      "redirect_url": "/training/modules/deploy-nodejs/8-summary",
       "redirect_document_id": false
     }
   ]
