@@ -1,60 +1,55 @@
-The GitHub repo that you forked for this project contains the source code for a basic Node.js project. In this part, you create a project in Azure Pipelines that builds and deploys that project to the Azure app service created earlier.
+The GitHub repo that you forked for this project contains the source code for a basic Node.js project. In this part, you create a project in Azure Pipelines that builds and deploys that project to the app created earlier.
 
 In this part, you:
 
 > [!div class="checklist"]
-> * Install the Azure Pipelines extension for your GitHub repo.
-> * Set up an Azure DevOps project for this module.
 > * Create a CI/CD pipeline triggered by commits to the *main* branch.
 > * Review the pipeline tasks.
 > * Save the pipeline to trigger a CI/CD workflow.
 
-## Install the Azure Pipelines extension
-
-Here you install the Azure Pipelines extension for your GitHub repository. This extension enables Azure Pipelines to access your GitHub account so that it can pull the latest source code from your repository.
-
-1. Go to the [GitHub Marketplace](https://github.com/marketplace?azure-portal=true).
-1. Search for **Azure Pipelines** and select the **Azure Pipelines** result.
-1. Locate the **Free** option and select **Install it for free**.
-1. Select **Complete order and begin installation**.
-1. Select **Only select repositories** and choose the **nodejs-docs-hello-world** repository that you forked earlier.
-1. Select **Install**.
-
 ## Set up an Azure DevOps project
 
-The previous task links your GitHub repository to your Azure DevOps organization. To complete the process, you now create an Azure DevOps project.
+Create an Azure DevOps project.
 
 1. Sign into your account at [dev.azure.com](https://dev.azure.com?azure-portal=true).
 1. Select **+ New project**.
-
     The **Create new project** dialog box opens.
-1. In the **Project name** field, enter a name such as *nodejs-hello-world*.
-1. Under **Visibility**, you choose whether to make your project public or private. For now, you can choose private.
-
-    Creators of open source projects will often choose public visibility so that others can view active issues and build status.
-1. Select **Advanced**.
-1. Under **Version control**, make sure that **Git** is selected.
-1. Select **Create**.
+1. Create a new project with the following options. 
+    
+    |Field  |Description  |
+    |---------|---------|
+    |**Project name**     |   Enter a name such as *nodejs-hello-world*.    |
+    |**Visibility**     |    Choose whether to make your project public or private.     |
+    | **Advanced** > **Version control**     |   Select **Git**.      |
+    
 
 ## Create the pipeline
 
-Here you create a CI/CD pipeline in Azure Pipelines by using one of the built-in templates. The process generates a pipelines configuration file named *azure-pipelines.yml*, which lives in the root directory of your Git repository.
+You'll create a YAML CI/CD pipeline in Azure Pipelines by modifying the starter template. The process generates a pipelines configuration file named *azure-pipelines.yml*, which lives in the root directory of your Git repository.
 
-1. In Azure DevOps, go to your ***nodejs-hello-world*** project.
-1. Select **Pipelines**, either from the project page or from the left pane.
-1. Select **Create Pipeline**.
-1. On the **Connect** tab, select **GitHub**.
+1. Go to your ***nodejs-hello-world*** project.
 
-    If prompted, enter your GitHub credentials.
+1. Go to **Pipelines**, and then select **New pipeline**.
+
+1. Complete the steps of the wizard by first selecting **GitHub** as the location of your source code.
+
+1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+
+1. When you see the list of repositories, select your repository.
+
+1. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve & install**.
+
 1. On the **Select** tab, select your ***nodejs-docs-hello-world*** repository.
+
 1. On the **Configure** tab, select **Node.js Express Web App to Linux on Azure**.
 
     When prompted:
 
     1. Select the Azure subscription from which you created the resources earlier.
     1. Select **Continue**.
-    1. Select the Web App name you created earlier, for example **nodejs-cicd-17396**.
+    1. Select the app name you created earlier, for example **helloworld-nodejs-16353**.
     1. Select **Validate and configure**.
+
 1. On the **Review** tab, review the starter code for your pipeline configuration. Don't select **Save and run** just yet.
 
 ## Review the pipeline tasks
@@ -87,6 +82,8 @@ This pipeline is divided into two stages: `Build` and `Deploy`. The `Build` stag
 
 The `NodeTool@0` task sets up the build environment for Node.js projects. For the purposes of this pipeline, only the `versionSpec` parameter is needed to specify the version of the Node.js tools to install. You can learn more about this task in the [Node.js Tool Installer task](/azure/devops/pipelines/tasks/tool/node-js?azure-portal=true) documentation.
 
+Verify that `versionSpec` is set to `16.x`. If it is not, update the value.
+
 [!code-yml[](code/4-4-azure-pipelines.yml)]
 
 ### Running the build
@@ -107,6 +104,8 @@ You don't need to provide your own storage for build artifacts. Azure Pipelines 
 
 The second stage of the pipeline deploys the application to Azure. It depends on the `Build` stage completing successfully. It then uses the pipeline's Azure service connection to deploy the app to the configured target. This project deploys the app to the Azure App Service.
 
+Verify that `runtimeStack` is set to `NODE|16-lts`. If it is not, update the value.
+
 [!code-yml[](code/4-7-azure-pipelines.yml)]
 
 ### Azure Web App task
@@ -125,13 +124,20 @@ You can learn more about the flexibility of this task in the [Azure Web App task
 ## Save the pipeline to trigger a build and release
 
 1. Select **Save and run** from the upper right corner of the page. Select **Save and run** again to commit git changes and trigger the pipeline to run.
-1. In Azure Pipelines, go to the build. Trace the build as it runs.
+
+1. In Azure Pipelines, go to the build. You can trace the build as it runs.
 1. After the build has succeeded, select the deploy task, and select the URL to view the deployed website.
 
-    :::image type="content" source="../media/4-deploy-url.png" alt-text="Screenshot of the web site URL location in Azure Pipelines.":::
+    :::image type="content" source="../media/5-deploy-url.png" alt-text="Screenshot of the web site URL location in Azure Pipelines.":::
 
 1. You see the site running on App Service.
 
-    :::image type="content" source="../media/4-hello-world.png" alt-text="Screenshot of the Node.js application running in a web browser.":::
+    :::image type="content" source="../media/5-hello-world.png" alt-text="Screenshot of the Node.js application running in a web browser.":::
 
-Although this application is very basic, you now have a complete CI/CD pipeline that you can extend. You can repeat the steps you performed here to deploy one of your own Node.js projects to Azure.
+You now have a complete CI/CD pipeline that you can extend. You can repeat the steps you performed here to deploy one of your own Node.js projects to Azure.
+
+## Check your work
+
+1. Test the Bank API by sending a GET request. You can do this in your browser by visiting the URL `https://your-app-service-site.azurewebsites.net/api/accounts/test`. This query will return the account information and transactions for a test user.
+
+    :::image type="content" source="../media/5-json-return-query.png" alt-text="Screenshot of the Node.js application running in a web browser and returning a query.":::

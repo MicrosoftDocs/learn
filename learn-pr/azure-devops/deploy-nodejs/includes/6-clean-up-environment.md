@@ -16,10 +16,10 @@ To clean up your resource group:
 
     :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
-1. Run the following `az group delete` command to delete the resource group that you used, `nodejs-cicd-rg`.
+1. Run the following `az group delete` command to delete the resource group that you used, `hello-world-nodejs-rg`.
 
     ```azurecli
-    az group delete --name nodejs-cicd-rg
+    az group delete --name hello-world-nodejs-rg
     ```
 
     When prompted, enter `y` to confirm the operation.
@@ -30,7 +30,7 @@ To clean up your resource group:
     az group list --output table
     ```
 
-    You see that the resource group `nodejs-cicd-rg` no longer exists.
+    You see that the resource group `hello-world-nodejs-rg` no longer exists.
 
 ## Optional - Disable the pipeline or delete your project
 
