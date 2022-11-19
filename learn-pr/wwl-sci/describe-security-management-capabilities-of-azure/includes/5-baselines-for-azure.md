@@ -9,11 +9,11 @@ The Microsoft cloud security benchmark and security baselines for Azure, which a
 
 Microsoft has found that using security benchmarks can help organizations quickly secure their cloud deployments and reduce risk to their organization.
 
-The Microsoft cloud security benchmark (MCSB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure and your multi-cloud environment.  
+The Microsoft cloud security benchmark (MCSB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure and your multicloud environment.  
 
 The best way to understand the Microsoft cloud security benchmark is to view it on GitHub [Microsoft_cloud_security_benchmark_v1_preview](https://github.com/MicrosoftDocs/SecurityBenchmarks/blob/master/Azure%20Security%20Benchmark/Microsoft_cloud_security_benchmark_v1_preview.xlsx). Spoiler alert, it's an excel spreadsheet. Some of the key pieces of information in MCSB V1 are:
 -  ID - Each line item in the MCSB has an identifier that maps to a specific recommendation.
-- Control domain - A control is a high-level description of a feature or activity that needs to be addressed and is not specific to a technology or implementation. MCSB control domains include network security, data protection, identity management, privileged access, incident response, endpoint security to name just a few.
+- Control domain - A control is a high-level description of a feature or activity that needs to be addressed and isn't specific to a technology or implementation. MCSB control domains include network security, data protection, identity management, privileged access, incident response, endpoint security to name just a few.
 - Mapping to industry frameworks - The recommendations included in the MCSB map to existing industry frameworks, such as the Center for Internet Security (CIS), the National Institute of Standards and Technology (NIST), and the Payment Card Industry Data Security Standards (PCI DSS) frameworks. This makes security and compliance easier for customer applications running on Azure services.
 - Recommendation - For each control domain area there can be many distinct recommendations. Each recommendation captures specific functionality associated with the control domain area and is itself a control. For example, the "Network Security" control domain in MCSB v1 has 10 distinct recommendations identified as NS-1 through NS-10. Each of these recommendations describes a specific control under network security.  The recommendation identified as NS-1 is to establish network segmentation boundaries.
 - Security principle - Each recommendation lists a "Security Principle" that explains the "what" for the control at the technology-agnostic level.  For the recommendation to establish network segmentation boundaries, one of the points included in the security principle is that any workload that could incur higher risk for the organization should be in isolated virtual networks.
@@ -46,6 +46,6 @@ Content in the security baseline is grouped by the control domains defined by th
 - **Microsoft Defender for Cloud monitoring Note**: Microsoft Defender for Cloud policy / monitoring information. (Note: If a feature is not monitored by Microsoft Defender for Cloud for the service, this section is omitted.)
 - **Reference**: A reference link to dive deeper into how to implement the configuration guidance.
 
-The image below, which is an except from the Azure Key Vault security baseline, highlights the type of information provided in a security baseline.
+The image below, which is an excerpt from the Azure Key Vault security baseline, highlights the type of information provided in a security baseline.
 
 :::image type="content" source="../media/security-baseline-inline.png" lightbox="../media/security-baseline-expanded.png" alt-text="The image below shows the type of information provided in a security baseline.":::
