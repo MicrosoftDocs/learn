@@ -51,6 +51,10 @@ The virtual network's subnet currently is defined twice. It's defined once in th
 
    :::code language="bicep" source="code/5-network-interface-fixed.bicep" highlight="15" :::
 
+   You will notice an error about that the expression is invovled in a cycle. You'll fix that in the next step.
+
+1. In the `virtualNetwork` resource remove the line `id: defaultSubnet.id` for the subnet ID.
+
 ## Change the parameters to variables
 
 The parameters in the template don't need to be parameters. You'll rename the parameters to more meaningful names and convert them to variables.
@@ -63,7 +67,9 @@ The parameters in the template don't need to be parameters. You'll rename the pa
    var virtualNetworkName = 'ToyTruck-vnet'
    ```
 
-1. Repeat the process for each parameter. Rename the parameters as shown in the following table:
+1. Repeat the process for each parameter. Rename the parameters as shown in the following table.
+
+   Notice that the value of the `networkInterfaceName` includes a three-digit number. The number is different between deployments. Ensure that you copy the variable's value from your reference template.
 
    | Current parameter name | New variable name |
    |-|-|
@@ -72,11 +78,9 @@ The parameters in the template don't need to be parameters. You'll rename the pa
    | `publicIPAddresses_ToyTruckServer_ip_name` | `publicIPAddressName` |
    | `networkSecurityGroups_ToyTruckServer_nsg_name` | `networkSecurityGroupName` |
 
-1. Verify that your variable declarations look similar to the following example:
+1. Verify that your variable declarations look like the following example:
 
    :::code language="bicep" source="code/5-variables.bicep" :::
-
-   Notice that the value of the `networkInterfaceName` includes a three-digit number. The number is different between deployments. Ensure that you copy the variable's value from your reference template.
 
 ## Update the resource locations
 
@@ -112,7 +116,7 @@ Your template has some hard-coded values where parameters or variables would be 
    param virtualMachineAdminPassword string
 
    @description('The name of the SKU of the public IP address to deploy.')
-   param publicIPAddressSkuName string = 'Basic'
+   param publicIPAddressSkuName string = 'Standard'
 
    @description('The virtual network address range.')
    param virtualNetworkAddressPrefix string
@@ -142,7 +146,7 @@ Your template has some hard-coded values where parameters or variables would be 
    The value of the `virtualMachineOSDiskName` is unique. The value is different between deployments. Ensure that you copy the variable's value from your reference template.
 
    > [!WARNING]
-   > Ensure that you copy the values for the `virtualMachineOSDiskName` and `networkInterfaceName` variables correctly. Otherwise, Azure won't detect that you're declaring the same resources that already exist, and it might try to create new resources.
+   > Ensure that you copy the values for the `virtualMachineOSDiskName` and `networkInterfaceName` variables correctly. Otherwise, Azure won't detect that you're declaring existing resources and might try to create new resources.
 
    Your variable declarations should now look like this example:
 
@@ -156,6 +160,13 @@ Your template has some hard-coded values where parameters or variables would be 
    - Use the `virtualNetworkDefaultSubnetName` variable for the subnet `name` properties. Make sure you change both the `subnets` property and the nested `existing` resource.
    - Use the `virtualNetworkDefaultSubnetAddressPrefix` parameter for the subnet's `addressPrefix` property.
 
+   | Property | Parameter or variable |
+   | ---- | ---- |
+   | `addressSpace.addressPrefixes`| `virtualNetworkAddressPrefix` |
+   | `subnets.name` | `virtualNetworkDefaultSubnetName` |
+   | nested `resource defaultSubnet` `name` | `virtualNetworkDefaultSubnetName` |
+   | `subnets.addressPrefix` | `virtualNetworkDefaultSubnetAddressPrefix` |
+
 1. Update the `virtualMachine` resource to refer to the parameters and variables:
 
    - Use the `virtualMachineSizeName` parameter for the `hardwareProfile.vmSize` property.
@@ -165,30 +176,43 @@ Your template has some hard-coded values where parameters or variables would be 
    - Use the `virtualMachineAdminUsername` parameter for the `osProfile.adminUsername` property.
    - Directly below the `osProfile.adminUsername` property, add a new property named `adminPassword`. Set the property value to the `virtualMachineAdminPassword` parameter.
 
+   | Property | Parameter or variable |
+   | ---- | ---- |
+   | `hardwareProfile.vmSize` | `virtualMachineSizeName` |
+   | `storageProfile.imageReference` | `virtualMachineImageReference` <br> Use the variable name to teplace the object's values including the curly braces. |
+   | `storageProfile.osDisk.name` | `virtualMachineOSDiskName` |
+   | `storageProfile.osDisk.managedDisk.storageAccountType` | `virtualMachineManagedDiskStorageAccountType` |
+   | `osProfile.adminUsername` | `virtualMachineAdminUsername` |
+
+   Directly below the `osProfile.adminUsername` property, add a new property named `adminPassword` and use the `virtualMachineAdminPassword` parameter.
+
 ## Remove unnecessary properties
 
 The export process adds redundant properties to many resources. Use these steps to remove the unneeded properties.
 
-1. In the `networkSecurityGroup` resource, remove the `properties` because `securityRules` propertyis empty.
+1. In the `networkSecurityGroup` resource, remove the `properties` because `securityRules` property is empty.
 
 1. In the `publicIPAddress` resource:
 
    - Remove the `ipAddress` property because it's automatically set by Azure.
    - Remove the `ipTags` property because it's empty.
 
-1. In the `virtualNetwork` resource, remove the `delegations` and `virtualNetworkPeerings` properties because they're empty.
-
 1. In the `virtualMachine` resource:
 
    - Remove the `storageProfile.osDisk.managedDisk.id` property because Azure automatically determines this property when the virtual machine is deployed.
+
      > [!IMPORTANT]
      > It's important to remove this property or your template won't deploy correctly.
-   - Remove the `requireGuestProvisionSignal` property because Azure sets this property automatically.
-   - Remove the `storageProfile.dataDisks` and `osProfile.secrets` properties because they're empty.
+
+   - Remove the empty `storageProfile.dataDisks` property.
+   - Remove the empty `osProfile.secrets` property.
+   - Remove the `osProfile.requireGuestProvisionSignal` property because Azure sets this property automatically.
+
+1. In the `virtualNetwork` resource, remove the `delegations` and `virtualNetworkPeerings` properties because they're empty.
 
 1. In the `networkInterface` resource:
 
-   - Remove the `privateIPAddress` property from `ipConfigurations` because it's automatically set by Azure and the allocation method is _Dynamic_.
+   - From `ipConfigurations` remove the `privateIPAddress` property because it's automatically set by Azure and the allocation method is _Dynamic_.
    - Remove the `dnsSettings` because property `dnsServers` is empty.
 
 > [!TIP]
@@ -198,7 +222,7 @@ The export process adds redundant properties to many resources. Use these steps 
 >
 > :::image type="content" source="../media/5-visual-studio-code-required-properties.png" alt-text="Screenshot of Visual Studio Code that shows the required properties selection when defining a new Bicep resource.":::
 >
-> When you select **required-properties**, Visual Studio Code prepopulates the resource definition with the properties that are mandatory. You can refer to **required-properties** to determine whether the properties in your converted template all need to be present.
+> When you select **required-properties**, Visual Studio Code populates the resource definition with the properties that are mandatory. You can refer to **required-properties** to determine whether the properties in your converted template all need to be present.
 >
 > The Azure quickstart templates repository is also helpful for this task. Find a quickstart template that does approximately what you're trying to do, and look at the properties it sets on the resource.
 
