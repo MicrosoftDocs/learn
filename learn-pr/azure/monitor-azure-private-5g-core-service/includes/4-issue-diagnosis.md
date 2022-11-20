@@ -16,14 +16,31 @@ The URL for accessing the distributed tracing tool is as follows:
 
 Here *\<`LocalMonitoringIP`\>* is the IP address for accessing the local monitoring tools that you set up when you configure the management network during Azure Private 5G Core deployment.
 
-If this is the first time you access the packet core dashboards, use the following default account to sign in:
+<!-- Need to verify if the AAD feature will be delivered for GA -->
+Azure Private 5G Core provides two authentication methods for the distributed tracing tool:
 
-- Name: *admin*
-- Password: *packetCoreAdmin*
+- Username and password: The username/password method allows you to log in the distributed tracing tool with a default account. If your site isn't always connected to Azure, use this method.
 
-Change the password for the account after the initial sign-in.
+  You can use the following default account to sign in:
 
-## Trace types that you can check
+  - Username: *admin*
+  - Password: *packetCoreAdmin*
+  
+  Change the password for the account after the initial sign-in.
+
+- Azure Active Directory (AD): The Azure AD method allows users to log in to the packet core dashboards with their Azure accounts. If your site isn't always connected to Azure, use this method.
+
+  For more information about enabling and configuring the Azure AD authentication method, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
+
+You can select an authentication method when you create or modify a site through the Azure portal.
+
+## Diagnostics details that you can check
+
+To help you diagnose issues, the distributed tracing tool provides detailed information about signaling flows and errors through the following three views:
+
+- The **Summary** view: The summary of each flow or error.
+- The **Detailed Timeline** view: The sequence of operations and events that occurred during the flow or error.
+- The **Call Flow** view: The sequence of messages flowing between components during the course of the flow or error.
 
 What to check for what issues
 

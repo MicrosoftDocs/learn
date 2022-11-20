@@ -33,18 +33,29 @@ For more information about the packet core dashboards, see [Dashboards](/azure/p
 
 ## Access the dashboards
 
-The URL for accessing the packet core dashboard is as follows:
+The URL for accessing the packet core dashboards is as follows:
 
 `https://<LocalMonitoringIP>/grafana`
 
 Here *\<LocalMonitoringIP\>* is the IP address for accessing the local monitoring tools that you set up when you configure the management network during Azure Private 5G Core deployment.
 
-If this is the first time you access the packet core dashboards, use the default account to sign in:
+<!-- Need to verify if the AAD feature will be delivered for GA -->
+Azure Private 5G Core provides two authentication methods for the packet core dashboards:
 
-- Username: *admin*
-- Password: *admin*
+- Username and password: The username/password method allows you to log in the packet core dashboards with a default account. If your site isn't always connected to Azure, use this method.
 
-Change the password for the account after the initial sign-in.
+  You can use the following default account to sign in:
+
+  - Username: *admin*
+  - Password: *admin*
+  
+  Change the password for the account after the initial sign-in.
+
+- Azure active directory (AD): The Azure AD method allows users to log in to the packet core dashboards with their Azure accounts. If your site isn't always connected to Azure, use this method.
+
+  For more information about enabling and configuring the Azure AD authentication method, see [Packet core dashboards](/azure/private-5g-core/packet-core-dashboards).
+
+You can select an authentication method when you create or modify a site through the Azure portal.
 
 ## Adjust the time range
 
