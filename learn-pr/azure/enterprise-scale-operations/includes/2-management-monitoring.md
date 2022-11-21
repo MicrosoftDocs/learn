@@ -21,9 +21,9 @@ In the context of the enterprise-scale architecture, centralized logging is prim
 
 ## Auditing and log retention
 
-In Azure, the *activity log* is a platform log that provides insight into subscription-level events. The activity log contains all write operations (PUT, POST, DELETE) for subscription resources. These operations include information such as when a resource is modified or when a VM is started. You can view the activity log in the Azure portal or retrieve entries by using PowerShell and Azure CLI. Configure diagnostic settings for a subscription via policy to send log data to the centralized Log Analytics workspace. This configuration provides a central view across subscriptions and enables the retention of log data past the default 90 days.
+In Azure, the *activity log* is a platform log that provides insight into subscription-level events. The activity log contains all write operations (PUT, POST, DELETE) for subscription resources. These operations include information such as when a resource is modified or when a VM is started. You can view the activity log in the Azure portal or retrieve entries by using PowerShell and Azure CLI. You can configure diagnostic settings for a subscription via policy to send log data to the centralized Log Analytics workspace. This configuration provides a central view across subscriptions and lets you retain log data past the default 90 days.
 
-When a customer requires log-data retention longer than two years, configure the subscription diagnostic settings also for export to Azure Storage. Use immutable storage with *write once, read many (WORM)* policies to make data non-erasable and non-modifiable for a user-specified interval.
+When a customer requires log-data retention longer than two years, they can configure the subscription diagnostic settings also for export to Azure Storage. Use immutable storage with *write once, read many (WORM)* policies to make data non-erasable and non-modifiable for a user-specified interval.
 
 ## Dashboards and visualization
 
@@ -33,7 +33,7 @@ Azure Monitor workbooks are the platform-visualization capability where current 
 
 Workbooks can query data from multiple sources within Azure. Workbook authors can transform this data to provide insights into the availability, performance, usage, and overall health of the underlying components. For example, you can analyze performance logs from VMs to identify high-CPU or low-memory instances and display the results as a grid in an interactive report.
 
-But the real power of workbooks is the ability to combine data from disparate sources within a single report. You can create composite resource views or joins across resources to produce richer data and insights than would otherwise be possible.
+However, the real power of workbooks is the ability to combine data from disparate sources within a single report. You can create composite resource views or joins across resources to produce richer data and insights than would otherwise be possible.
 
 Workbooks are currently compatible with the following data sources:
 
@@ -49,9 +49,9 @@ We recommend that you build a curated set of dashboards for specific personas wi
 
 ## Logs and metrics
 
-All data collected by Azure Monitor fits into one of two fundamental types: metrics and logs. Logs in Azure Monitor are especially useful for complex analysis across data from various sources. Metrics in Azure Monitor are lightweight and can support near real-time scenarios, making them useful for alerting and fast detection of issues.
+All data collected by Azure Monitor fits into one of two fundamental types: logs or metrics. *Logs* in Azure Monitor are especially useful for complex analysis across data from various sources. *Metrics* in Azure Monitor are lightweight and can support near real-time scenarios, making them useful for alerting and fast detection of issues.
 
-Logs are events that occurred within the system. They can contain different kinds of data and might be structured or free-form text with a timestamp. They might be created sporadically as events in the environment generate log entries, and a system under heavy load typically generates more log volume. Azure resource logs can be sent to a Log Analytics workspace via the resource diagnostic settings. Use Azure Policy to ensure that diagnostic settings are configured appropriately for all resources.
+Logs are events that occurred within the system. They can contain different kinds of data, and might be structured or free-form text with a timestamp. They might be created sporadically as events in the environment generate log entries, and a system under heavy load typically generates more log volume. Azure resource logs can be sent to a Log Analytics workspace via the resource diagnostic settings. You can use Azure Policy to ensure that diagnostic settings are configured appropriately for all resources.
 
 Metrics are numerical values that describe some aspect of a system at a particular time. They're collected at regular intervals and identified by a timestamp, a name, a value, and one or more defining labels. Metrics can be:
 
@@ -81,7 +81,7 @@ Enabling guest-configuration audit capabilities via policy helps application tea
 
 ## Monitoring and alerts
 
-At the platform level, monitoring focuses on VM and resource-health data in Azure Monitor. Set diagnostic settings for Azure resources via policy to export to the centralized Log Analytics workspace. Enable Azure Monitor for VMs via policy to provide performance, health, and dependency insights for VMs, virtual-machine scale sets, and Azure Arc machines at scale. The application team is responsible for deploying and configuring application-health monitoring via tools such as Application Insights.
+At the platform level, monitoring focuses on VM and resource-health data in Azure Monitor. You can set diagnostic settings for Azure resources via policy to export to the centralized Log Analytics workspace. Enable Azure Monitor for VMs via policy to provide performance, health, and dependency insights for VMs, virtual-machine scale sets, and Azure Arc machines at scale. The application team is responsible for deploying and configuring application-health monitoring via tools such as Application Insights.
 
 We recommend that you also include service and resource health events as part of the overall platform-monitoring solution. Tracking the health of services and resources from a platform perspective is an important component of resource management in Azure.
 
