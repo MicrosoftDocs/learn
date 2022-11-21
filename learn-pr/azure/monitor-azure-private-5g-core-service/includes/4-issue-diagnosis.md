@@ -19,7 +19,7 @@ Here *\<`LocalMonitoringIP`\>* is the IP address for accessing the local monitor
 <!-- Need to verify if the AAD feature will be delivered for GA -->
 Azure Private 5G Core provides two authentication methods for the distributed tracing tool:
 
-- Username and password: The username/password method allows you to log in the distributed tracing tool with a default account. If your site isn't always connected to Azure, use this method.
+- Username and password: The username/password method allows you to sign in the distributed tracing tool with a default account. If your site isn't always connected to Azure, use this method.
 
   You can use the following default account to sign in:
 
@@ -28,7 +28,7 @@ Azure Private 5G Core provides two authentication methods for the distributed tr
   
   Change the password for the account after the initial sign-in.
 
-- Azure Active Directory (AD): The Azure AD method allows users to log in to the packet core dashboards with their Azure accounts. If your site isn't always connected to Azure, use this method.
+- Azure Active Directory (AD): The Azure AD method allows users to sign in to the packet core dashboards with their Azure accounts. If your site isn't always connected to Azure, use this method.
 
   For more information about enabling and configuring the Azure AD authentication method, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
 
@@ -36,27 +36,45 @@ You can select an authentication method when you create or modify a site through
 
 ## Diagnostics details that you can check
 
-To help you diagnose issues, the distributed tracing tool provides detailed information about signaling flows and errors through the following three views:
+To help you diagnose issues, the distributed tracing tool provides detailed information about signaling flows and errors through three views:
 
 - The **Summary** view: The summary of each flow or error.
 - The **Detailed Timeline** view: The sequence of operations and events that occurred during the flow or error.
 - The **Call Flow** view: The sequence of messages flowing between components during the course of the flow or error.
 
-What to check for what issues
+Each entry in the **Detailed Timeline** view represents an event. The entry includes the date and time at which the event occurred and the name of the component on which it occurred. You can check the details about each event. Additionally, you can filter the events by different levels. For example, the detailed events level includes the network protocol messages and more fine-grained detail of events. 
 
-example issues: Connectivity to Azure such as ports, URLs, RAN connection, and UE attaching; packet capture capability
+The **Call Flow** view uses a diagram to visually indicate the messages flowing between network functions. As shown in the example view below, the vertical lines show the network components involved in the flow. The black lines indicate packet core Network Functions that have logged sending or receiving messages for this flow. The gray lines indicate other components that don't log messages. A horizontal line shows each individual signaling message flowing between two network components. An arrow indicates the direction of flow from the sending to the receiving component. The messages appear in the diagram in the order in which they occurred.
+
+:::image type="content" source="../media/distributed-tracing-call-flow.png" alt-text="A screenshot showing the message flows in an example Call Flow view" border="true":::
+
+For detailed instructions on using these views, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
 
 ## Search for specific information
 
-How to search for the info I need
-Info to search; need to understand network functions and the communication process between functions.
+To find the root cause of a network issue, you'll need to find signal flows or errors involving a particular subscriber. The distributed tracing tool allows you to search for activities involving a particular subscriber using their subscription permanent identifier (SUPI) or, in 4G networks, their international mobile subscriber identity (IMSI). For errors, the tool allows you to search for error condition occurrences across all subscribers.
 
-## Check diagnostics details
+In addition, the distributed tracing tool allows you to use a date/time range to specify a custom time window in which to search for diagnostics data.
 
-What should I check for each issue
-details of each type
-How to check details of a trace
+> [!TIP]
+> Long search ranges result in slower searches. We recommend that you keep the search range to an hour or less if possible.
 
-## Share traces for technical support
+For detailed instructions on searching for information in the distributed tracing tool, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
 
-Further support - Collecting diagnostics packages
+## Collect diagnostics packages for technical support
+
+<!-- Need to check if this feature is delivered for GA before the publication of this module -->
+If you can't find the root cause of an issue, you may need Microsoft technical support to help you. In this case, you'll need to collect the diagnostics packages from the relevant packet core instance and share the packages with Microsoft support personnel.
+
+The distributed tracing tool allows you to use the Azure portal to collect diagnostics packages from a site. You can enable package collection either when you create a site or when you edit a site.
+
+To enable diagnostics package collection, you'll need to specify the following information:
+
+- A storage account for storing your diagnostics package.
+- A managed identity that has the write access to the storage account.
+
+  The distributed tracing tool uses this identity to upload the collected packages to your specified storage account.
+
+Once package collection is enabled, you can use the **Collect Diagnostics Package** link on the overview page of the relevant site to trigger package collection. After the collection is completed, share the package access Uniform Resource Identifier (URI) with Microsoft support personnel.
+
+For details about diagnostics package collection, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
