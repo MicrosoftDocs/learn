@@ -39,7 +39,7 @@ quiz:
     choices:
     - content: "It exposes a standards-based N2 interface for the 5G control plane."
       isCorrect: true
-      explanation: "Correct. Azure Private 5G Core complies with 3GPP technical specifications for the N2 interface, which allows it to be integrated with a wide range of RAN models."
+      explanation: "Correct. Azure Private 5G Core complies with 3GPP technical specifications. It uses the N2 interface to connect to 5G RANs and the S1-MME interface to connect to 4G RANs."
     - content: "It uses a fully managed event-routing service with a publish-subscribe model."
       isCorrect: false
       explanation: "Try again. Azure Private 5G Core doesn't use any event-routing service for integration."
