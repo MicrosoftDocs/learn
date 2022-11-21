@@ -1,4 +1,4 @@
-Threat modeling givess engineers the ability to graphically describe their system to others. It creates a common ground and enables more focused security conversations.
+Threat modeling gives engineers the ability to graphically describe their system to others. It creates a common ground and enables more focused security conversations.
 
 ## The importance of depth layers
 
