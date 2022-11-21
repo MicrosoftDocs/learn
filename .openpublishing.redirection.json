@@ -18314,6 +18314,21 @@
       "source_path": "learn-pr/wwl-azure/configure-network-security-groups/8-summary-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/configure-network-security-groups/9-summary-resources",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/7-plan-upcoming-sprint.yml",
+      "redirect_url": "learn-pr/azure-devops/create-release-pipeline/7-clean-up-environment.yml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/8-clean-up-environment.yml",
+      "redirect_url": "learn-pr/azure-devops/create-release-pipeline/7-clean-up-environment.yml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/9-summary.yml",
+      "redirect_url": "learn-pr/azure-devops/create-release-pipeline/8-summary.yml",
+      "redirect_document_id": false
     }
   ]
 }
