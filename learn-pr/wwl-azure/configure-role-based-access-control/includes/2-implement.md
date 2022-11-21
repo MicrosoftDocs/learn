@@ -27,7 +27,7 @@ The following table describes the core concepts of Azure RBAC.
 
 ### Things to consider when using Azure RBAC
 
-As you think about how you can implement roles and scope assignments within your organization, consider these points:
+As you think about how you can implement roles and scope assignments within your organization, consider four points:
 
 - **Consider your requestors**. Plan your strategy to accommodate for all types of access to your resources. Security principals are created for anything that requests access to your resources. Determine who are the requestors in your organization. Requestors can be internal or external users, groups of users, applications and services, resources, and so on.
 
