@@ -2,10 +2,8 @@ Now that the Tailwind Traders company has its applications up and running in Azu
 
 For Tailwind Traders, migration from the datacenter to Azure is more about operational efficiency. The research and development team is looking into new, cloud-based features that will keep them ahead of the competition.
 
-Tailwind Traders is in the development stages of creating a drone delivery system for rural customers. The company needs real-time storm tracking in the drone guidance system, but the feature isn't available yet. An AI Storm Analyzer service has recently been released in the public preview phase. Tailwind Traders R&D team has decided to incorporate the preview service into the early stages of application testing.
+Tailwind Traders is in the development stages of creating a drone delivery system for rural customers. The company needs real-time storm tracking in the drone guidance system, but the feature isn't available yet.  Tailwind Traders R&D team has decided to incorporate the preview service into the early stages of application testing.
 
-> [!NOTE]
-> AI Storm Analyzer is a fictitious Azure service, introduced here for illustrative purposes only.
 
 Before the team moves forward, it wants a better understanding of how preview services affect its SLA. Let's begin by defining the Azure service lifecycle.
 
