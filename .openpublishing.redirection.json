@@ -18314,6 +18314,37 @@
       "source_path": "learn-pr/wwl-azure/configure-network-security-groups/8-summary-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/configure-network-security-groups/9-summary-resources",
       "redirect_document_id": false
+    },
+    {
+
+       "source_path": "learn-pr/wwl-azure/design-network-solutions/4-design-for-azure-network-connectivity-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-network-solutions/4a-design-patterns-for-azure-network-connectivity-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-network-solutions/5-design-for-application-delivery-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-network-solutions/5b-design-for-application-delivery-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-nodejs/3-set-up-environment.yml",
+      "redirect_url": "/training/modules/deploy-nodejs/4-set-up-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-nodejs/4-deploy-nodejs.yml",
+      "redirect_url": "/training/modules/deploy-nodejs/5-deploy-nodejs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-nodejs/5-clean-up-environment.yml",
+      "redirect_url": "/training/modules/deploy-nodejs/6-clean-up-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-nodejs/6-summary.yml",
+      "redirect_url": "/training/modules/deploy-nodejs/8-summary",
+      "redirect_document_id": false
     }
   ]
 }

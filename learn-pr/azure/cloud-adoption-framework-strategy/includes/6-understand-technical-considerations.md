@@ -193,7 +193,7 @@ Watch this short video to get an overview of how the Azure Migration Program can
 
 ## Solution assessments
 
-Get assistance from a Microsoft Solution Assessment expert or qualified partner as part of a [Solution Assessment engagement](https://www.microsoft.com/solutionassessments/solutionassessments.aspx?rtc=2?azure-portal=true). Microsoft Solution Assessments can help customers gain a deeper understanding of the opportunities available in their environments to improve productivity, reduce costs, and optimize investments. These assessments use modern tools to collect the customers' data estate, analyze the deployed environment, and provide insights for data-driven recommendations to help customers determine actionable steps for digital transformations, cloud migrations, and process improvement.
+Get assistance from a Microsoft Solution Assessment expert or qualified partner as part of a [Solution Assessment engagement](https://www.microsoft.com/solutionassessments/). Microsoft Solution Assessments can help customers gain a deeper understanding of the opportunities available in their environments to improve productivity, reduce costs, and optimize investments. These assessments use modern tools to collect the customers' data estate, analyze the deployed environment, and provide insights for data-driven recommendations to help customers determine actionable steps for digital transformations, cloud migrations, and process improvement.
 
 ## Azure support
 

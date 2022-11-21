@@ -9,6 +9,6 @@ metadata:
   ms.author: mikejo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 7
+durationInMinutes: 3
 content: |
   [!include[](includes/2-what-is-azure-lab-services.md)]

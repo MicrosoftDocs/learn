@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-azure-data-engineering-academic-programs.explore-best-practices-for-module-5
+title: Explore best practices for module 5
+metadata:
+  title: Explore best practices for module 5
+  description: "Explore best practices for module 5"
+  ms.date: 11/18/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+durationInMinutes: 14
+content: |
+  [!include[](includes/8-explore-best-practices-for-module-5.md)]
