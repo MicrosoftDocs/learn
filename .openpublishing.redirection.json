@@ -18317,17 +18317,17 @@
     },
     {
       "source_path": "learn-pr/azure-devops/create-release-pipeline/7-plan-upcoming-sprint.md",
-      "redirect_url": "learn-pr/azure-devops/create-release-pipeline/7-clean-up-environment.md",
+      "redirect_url": "/training/modules/create-release-pipeline/7-clean-up-environment",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-release-pipeline/8-clean-up-environment.md",
-      "redirect_url": "learn-pr/azure-devops/create-release-pipeline/7-clean-up-environment.md",
+      "redirect_url": "/training/modules/create-release-pipeline/7-clean-up-environment",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-release-pipeline/9-summary.md",
-      "redirect_url": "learn-pr/azure-devops/create-release-pipeline/8-summary.md",
+      "redirect_url": "/training/modules/create-release-pipeline/8-summary",
       "redirect_document_id": false
     },
     {
