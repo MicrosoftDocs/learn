@@ -18316,11 +18316,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure-devops/create-release-pipeline/7-plan-upcoming-sprint.yml",
-      "redirect_url": "learn-pr/azure-devops/create-release-pipeline/7-clean-up-environment.yml",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/azure-devops/create-release-pipeline/7-plan-upcoming-sprint.md",
       "redirect_url": "learn-pr/azure-devops/create-release-pipeline/7-clean-up-environment.md",
       "redirect_document_id": false
