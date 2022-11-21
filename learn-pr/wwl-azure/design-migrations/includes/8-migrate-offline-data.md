@@ -1,4 +1,4 @@
-There are two options for migrating Tailwind Traders offline data to Azure: Azure Import/Export and Azure Data Box.
+Azure offers several options for migrating data offline. For your migration planning for Tailwind Traders, we examine Azure Import/Export and Azure Data Box.
 
 ## Azure Import/Export service
 
