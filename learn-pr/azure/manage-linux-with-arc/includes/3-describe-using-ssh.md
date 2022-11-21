@@ -7,7 +7,7 @@ Additionally, you can use SSH with Azure Active Directory credentials. With SSH 
 > [!NOTE]
 > Azure Active Directory authorization is limited to Linux machines.
 
-## Supported Linux enviroments
+## Supported Linux environments
 
 - CentOS: CentOS 7, CentOS 8
 - RedHat Enterprise Linux (RHEL): RHEL 7.4 to RHEL 7.10, RHEL 8.3+
