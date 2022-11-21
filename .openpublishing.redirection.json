@@ -18321,13 +18321,13 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure-devops/create-release-pipeline/8-clean-up-environment.yml",
-      "redirect_url": "learn-pr/azure-devops/create-release-pipeline/7-clean-up-environment.yml",
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/8-clean-up-environment.md",
+      "redirect_url": "learn-pr/azure-devops/create-release-pipeline/7-clean-up-environment.md",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure-devops/create-release-pipeline/9-summary.yml",
-      "redirect_url": "learn-pr/azure-devops/create-release-pipeline/8-summary.yml",
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/9-summary.md",
+      "redirect_url": "learn-pr/azure-devops/create-release-pipeline/8-summary.md",
       "redirect_document_id": false
     },
     {
