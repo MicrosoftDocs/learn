@@ -13,12 +13,11 @@ The diagram uses different colors to indicate the on-cloud components and the on
 - On-cloud components: The on-cloud components allow you to centrally manage sites in a private mobile network.
   - Portal: The Azure portal with which you can manage sites at different geographical locations.
   - Resource Manager APIs: The Resource Manager APIs allow the enterprise private mobile network and its sites to be managed from Azure.
-  - Azure Monitor and Log Analytics: The monitor component allows you to monitor the health of the private mobile network and the UEs in it.
+  - Monitor: The monitor component allows you to monitor the health of the private mobile network and the UEs in it.
   - SIM Manager: The SIM manager allows you to manage the SIMs in the UEs and relevant SIM groups from Azure.
   - Service Manager: The service manager allows you to configure and manage the network functions that Azure Private 5G Core provides.
-  - RAN Monitor: The RAN monitor allows you to monitor the RAN that your private network uses.
 - On-premises components: The on-premises components provide 5G and 4G network functions in a private mobile network.
-  - 5G Core Control Plane and 5G Control Plane: The 5G components provide 5G network functions for your private mobile network.
+  - 5G Core Control Plane and 5G User Plane: The 5G components provide 5G network functions for your private mobile network.
   - 4G Interworking Function: This component allows you to attach 4G LTE based UEs and eNBs to your private mobile network.
   - Subscriber database and policy control: This component stores the policy and subscriber information of the UEs in the private mobile network. Subscriber and policy provisioning is done centrally, and automatically distributed to sites in a private mobile network.
   - Arc managed Azure Kubernetes Service: This service hosts the packet core instance that Azure Private 5G Core deploys for each site.

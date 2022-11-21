@@ -37,7 +37,7 @@ You can use the Azure portal or Azure Resource Manager (ARM) APIs to perform tas
 
 Each packet core instance is standards-compliant and compatible with several RAN partners in the Azure private MEC ecosystem.
 
-Azure Private 5G Core respectively exposes the N2 and N3 interfaces for the 5G control plane, and the N3 and N6 interfaces for the 5G user plane. It complies with the relevant 3GPP Technical Specifications, allowing you to integrate with a wide range of RAN models. For 4G, it exposes S1-MME and S1-U interfaces to interoperate with 4G RAN models.
+Azure Private 5G Core respectively exposes the N1 and N2 interfaces for the 5G control plane, and the N3 and N6 interfaces for the 5G user plane. It complies with the relevant 3GPP Technical Specifications, allowing you to integrate with a wide range of RAN models. For 4G, it exposes S1-MME and S1-U interfaces to interoperate with 4G RAN models.
 
 Azure Private 5G Core also employs a simple, scalable provisioning model to allow you to bring the SIM partner of your choice to Azure.
 
@@ -56,6 +56,6 @@ The packet core instance performs ciphering and integrity protection of 5G non-a
 
 Azure Private 5G Core allows you to divide a site in a private mobile network into multiple network slices. Each slice is a logical end-to-end network within the site. To support different requirements of different UEs in the network, you can configure unique SIM policies for each slice, and then add the UEs to relevant network slices.
 
-Additionally, the packet core instance at each site can connect to multiple DNs. You can use different DNs for different applications. Each type of UEs can connect to a dedicated DN. Both 5G and 4G network functions in Azure Private 5G Core support multiple DNs.
+Additionally, the packet core instance at each site can connect to multiple DNs. You can use different DNs for different applications. Each UE can connect to multiple DNs simultaneously. Both 5G and 4G network functions in Azure Private 5G Core support multiple DNs.
 
 Azure Private 5G Core supports up to three DNs and eight network slices per site. You can configure UEs in a network slice to connect to different DNs.
