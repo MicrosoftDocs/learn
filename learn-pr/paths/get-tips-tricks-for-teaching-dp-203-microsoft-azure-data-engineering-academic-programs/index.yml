@@ -5,6 +5,7 @@ metadata:
   description: 'Prepare to teach DP-203: Microsoft Azure Data Engineering'
   ms.date: 11/21/2022
   author: wwlpublish
+  ms.author: tsheppard
   ms.topic: interactive-tutorial
 title: 'Prepare to teach DP-203: Microsoft Azure Data Engineering'
 prerequisites: |
