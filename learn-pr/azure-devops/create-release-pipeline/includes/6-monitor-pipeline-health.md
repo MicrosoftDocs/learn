@@ -66,4 +66,4 @@ You can filter the results to focus on a specific time period or on the overall 
 
 **Mara:** I see that the `npm install` task takes the longest to complete. Perhaps we can make it run faster by caching the npm packages.
 
-**Andy:** That's a great idea! We can investigate this further as have more pipeline runs.
+**Andy:** That's a great idea! We can investigate this further as we have more pipeline runs.

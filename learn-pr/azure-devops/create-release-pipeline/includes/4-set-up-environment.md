@@ -193,7 +193,7 @@ Next, you'll manually trigger the pipeline to run. This step ensures that your p
 
 1. Navigate to your project in Azure Devops, and then select **Pipelines**.
 
-1. Select the **mslearn-tailspin-spacegame-web-deploy** pipeline. If prompted, make sure you select **Authorize resouces** to authorize the service connection.
+1. Select the **mslearn-tailspin-spacegame-web-deploy** pipeline. If prompted, make sure you select **Authorize resources** to authorize the service connection.
 
     :::image type="content" source="../media/4-pipeline-no-runs.png" alt-text="Screenshot of Azure Pipelines showing the pipeline for this project. The pipeline has no runs.":::
 
