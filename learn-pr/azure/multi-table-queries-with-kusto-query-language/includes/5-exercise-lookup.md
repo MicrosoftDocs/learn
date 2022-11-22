@@ -43,7 +43,7 @@ In the following procedure, you build the query in stages to give yourself a bet
 
 1. Take a look at the resulting list. You notice that the top sales are in the United States. Try modifying the query to show the total sales in the United States by state.
 
-In the preceding unit, you used a `leftouter` join to get the total sales per product category. The query took 0.861 seconds to run. You'll now write a query to get the same result by using the `lookup` operator and then compare the execution time.
+In the preceding unit, you used a *leftouter* `join` to get the total sales per product category. The query took 0.861 seconds to run. You'll now write a query to get the same result by using the `lookup` operator and then compare the execution time.
 
 1. Run the following query.
 
