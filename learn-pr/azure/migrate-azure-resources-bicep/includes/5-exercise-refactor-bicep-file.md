@@ -208,12 +208,14 @@ The export process adds redundant properties to many resources. Use these steps 
    - Remove the empty `osProfile.secrets` property.
    - Remove the `osProfile.requireGuestProvisionSignal` property because Azure sets this property automatically.
 
-1. In the `virtualNetwork` resource, remove the `delegations` and `virtualNetworkPeerings` properties because they're empty.
+1. In the `virtualNetwork` resource, remove the `delegations` and `virtualNetworkPeerings` properties because they're empty. Also remove the line for `type: 'Microsoft.Network/virtualNetworks/subnets'`.
 
 1. In the `networkInterface` resource:
 
    - From `ipConfigurations` remove the `privateIPAddress` property because it's automatically set by Azure and the allocation method is _Dynamic_.
    - Remove the `dnsSettings` because property `dnsServers` is empty.
+   - Remove `type: 'Microsoft.Network/networkInterfaces/ipConfigurations'`.
+   - In `publicIPAddress` remove `properties` and `sku`.
 
 > [!TIP]
 > When you work with your own templates, you'll need to determine whether there are any properties that should be removed like you've done here.

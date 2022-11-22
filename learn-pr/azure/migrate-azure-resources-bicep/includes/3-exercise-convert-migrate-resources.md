@@ -202,7 +202,7 @@ At the end of the migrate phase, your _main.bicep_ file should look similar to t
    :::code language="bicep" source="code/3-main-migrated.bicep" :::
 
    > [!NOTE]
-   > A few things might be different in your template, including some of the symbolic names and the IP addresses. That's OK. Some of this will be resolved later in the module.
+   > A few things might be different in your template, including some of the symbolic names, API versions, and the IP addresses. That's OK. Some of this will be resolved later in the module.
 
 You've created an initial Bicep file to represent your resources. The Bicep file isn't well structured and it doesn't follow best practices. In the next unit, you'll learn how to improve the quality of the migrated template.
 
