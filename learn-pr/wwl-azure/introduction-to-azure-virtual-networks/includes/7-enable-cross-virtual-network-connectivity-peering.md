@@ -17,7 +17,7 @@ The benefits of using virtual network peering, whether local or global, include:
  -  The ability to peer a virtual network created through Resource Manager to one created through the classic deployment model.
  -  No downtime to resources in either virtual network is required when creating the peering, or after the peering is created.
 
-The following diagram shows a scenario where resources on the Contoso VNet and resources on the Fabrikam VNet need to communicate. The Contoso subscription in the US West region, is connected to the Fabrikam subscription in the US West region.
+The following diagram shows a scenario where resources on the Contoso VNet and resources on the Fabrikam VNet need to communicate. The Contoso subscription in the US West region, is connected to the Fabrikam subscription in the US East region.
 
 :::image type="content" source="../media/vnet-peering-ad980907.png" alt-text="Diagram shows a scenario where resources on the Contoso VNet and resources on the Fabrikam VNet need to communicate.":::
 
@@ -27,7 +27,7 @@ The routing tables show the routes known to the resources in each subscription. 
 :::image type="content" source="../media/contoso-vm-routes-peering-annotated-e9d34a07.png" alt-text="Routing tables show the routes known to the resources in each subscription. The following routing table shows the routes known to Contoso":::
 
 
-The following routing table shows the routes known to Fabrikam. Again, the final entry is the Global VNet peering entry, this time to the Contoso 10.1.26.0/25 subnet. 
+The following routing table shows the routes known to Fabrikam. Again, the final entry is the Global VNet peering entry, this time to the Contoso 10.17.26.0/24 subnet. 
 
 :::image type="content" source="../media/fabrikam-vm-routes-peering-annotated-54cba14c.png" alt-text="Route table known to Fabrikam":::
 
@@ -43,7 +43,7 @@ Here are the steps to configure VNet peering. Notice you will need two virtual n
 
 To configure the peering use the **Add peering** page. There are only a few optional configuration parameters to consider. 
 
-:::image type="content" source="../media/configure-vnet-peering-14dda7cd.png" alt-text="configure virtual network peering":::
+:::image type="content" source="../media/configure-vnet-peering.png" alt-text="configure virtual network peering":::
 
 
 > [!NOTE]

@@ -3,22 +3,22 @@ Since its release in 1991, Python has become more than a popular, general-purpos
 > [!NOTE]
 > Several examples in this Learn module draw from the Python documentation. Material from the [python.org introductory tutorial](https://docs.python.org/3.5/tutorial/introduction.html?azure-portal=true) and examples from the [Python 3 documentation](https://docs.python.org/3/?azure-portal=true) are presented with edits and amendments. Original material from the Python Software Foundation (PSF) is used here in accordance with the [PSF License Agreement for Python 3.8.3](https://docs.python.org/3/license.html#psf-license-agreement-for-python-release):
 >
->  [Copyright © 2001-2020 Python Software Foundation. All rights reserved.](https://docs.python.org/3/copyright.html)
+>  [Copyright © 2001-2022 Python Software Foundation. All rights reserved.](https://docs.python.org/3/copyright.html)
 
-This introduction to Python is written for Python version 3.6.7 but generally applies to other Python 3._x_ versions.
+This introduction to Python is written for Python version 3.6.7, but generally applies to other Python 3.*x* versions.
 
 This Learn module makes extensive use of Jupyter Notebook, which runs in Visual Studio Code. Visual Studio Code runs on macOS, Linux, and Windows. Throughout this Learn module, we encourage you to try out Python code in Visual Studio Code by using the Python extension and integrated Jupyter notebooks.
 
 ## Set up your environment
 
-We recommend that you set up your environment so that you can follow along and learn effectively throughout this Learn module.
+We recommend that you set up your environment so you can follow along and learn effectively throughout this Learn module.
 
 To set up your environment:
 
 1. Download and install [Visual Studio Code](https://code.visualstudio.com?azure-portal=true). It's free and works on Windows, Mac, and Linux. Select the stable build for your platform. 
 2. Download and install the [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python). This step requires that you first install a supported version of Python.
-3. Activate the [Anaconda environment in Visual Studio Code](https://code.visualstudio.com/docs/python/jupyter-support?azure-portal=true) so that you can run Jupyter Notebook.
-4. Set up a [Data Science environment in Visual Studio Code](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true) so that you can use the NumPy and pandas libraries.
+3. Activate the [Anaconda environment in Visual Studio Code](https://code.visualstudio.com/docs/python/jupyter-support?azure-portal=true) so you can run Jupyter Notebook.
+4. Set up a [Data Science environment in Visual Studio Code](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true) so you can use the NumPy and pandas libraries.
 
 ## Test your environment
 
@@ -60,9 +60,9 @@ Open the Python.ipynb file in Visual Studio Code. Then, copy and paste the prece
 
 Python is an interpreted language, which means that you can use the interpreter interactively to get immediate results. For example, you can use the Python interpreter as a simple calculator: type an expression, and you see the output immediately.
 
-How do you see the results? The Python interpreter runs inside this notebook. To run the code inside a cell, either select **Run Cell** at the top of the window or press Ctrl+Enter.
+How do you see the results? The Python interpreter runs inside this notebook. To run the code inside a cell, either select **Run Cell** at the top of the window or press <kbd>Ctrl+Enter</kbd>.
 
-In the Python.ipynb file in Visual Studio Code, enter the aft into a Python cell. (We'll cover what the syntax of the Python code means later on in this module.)
+In the Python.ipynb file in Visual Studio Code, enter the following code into a Python cell. (We'll cover what the syntax of the Python code means later on in this module.)
 
 ```python
 print("Hello, world.")
@@ -90,4 +90,4 @@ In this module, you will:
 - None
 
 > [!TIP]
-> Several units in this module include a Hint feature that you can select to reveal the answer to a practice question. This feature works best in Google Chrome and the latest Chromium-based Microsoft Edge browsers. In other browsers, the answer might be not be hidden.
+> Several units in this module include a Hint feature you can select to reveal the answer to a practice question. This feature works best in Google Chrome and the latest Chromium-based Microsoft Edge browsers. In other browsers, the answer might be not be hidden.

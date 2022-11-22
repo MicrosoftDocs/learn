@@ -15,6 +15,6 @@ By the end of this module, you will be able to:
 ## Prerequisites
 
 - Your own Azure subscription
-- The [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-9121-yoterada) installed on your computer
+- The [Azure CLI](/cli/azure/install-azure-cli?WT.mc_id=java-9121-yoterada) installed on your computer
 - [JDK 8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
 - [Tomcat 9.0.x](https://tomcat.apache.org/download-90.cgi) installed on your computer

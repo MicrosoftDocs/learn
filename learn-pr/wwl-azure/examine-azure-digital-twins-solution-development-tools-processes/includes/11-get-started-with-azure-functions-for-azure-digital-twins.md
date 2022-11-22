@@ -1,21 +1,20 @@
 Azure Digital Twins uses compute resources, such as a function that's made by using Azure Functions, to manage data ingress and egress. Functions can be used to manage the following data workflows:
 
- -  data ingress from an upstream source (such as data ingestion from IoT hub).
- -  process Azure Digital Twins data egress for downstream services (such as analysis, storage, workflow integration, analytics).
- -  process Azure Digital Twins data egress for in-service updates (such as digital twin updates originating from a different twin within the twin graph).
+ -  Data ingress from an upstream source (such as data ingestion from IoT hub).
+ -  Process Azure Digital Twins data egress for downstream services (such as analysis, storage, workflow integration, analytics).
+ -  Process Azure Digital Twins data egress for in-service updates (such as digital twin updates originating from a different twin within the twin graph).
 
 The following steps can be used to create your Azure function:
 
 1.  Create an Azure Functions project.
 2.  Write the function code.
-    
      -  Add authentication code to the function (for accessing Azure Digital Twins).
      -  Add code that will interact with Azure Digital Twins (and other Azure resources).
 3.  Publish the function app to Azure.
 4.  Set up security access for the function app.
 
 > [!NOTE]
-> The Azure function will interact with either upstream or downstream Azure services. Azure resource configuration before and/or after creating the Azure function will be required.
+> The Azure Function will interact with either upstream or downstream Azure services. Azure resource configuration before and/or after creating the Azure Function will be required.
 
 ## Configure software packages
 
@@ -107,7 +106,7 @@ namespace IotHubtoTwins
                     cred,
                     new DigitalTwinsClientOptions { Transport = new HttpClientTransport(httpClient) });
                 log.LogInformation($"Azure Digital Twins service client connection created.");
-            
+           
                 if (eventGridEvent != null && eventGridEvent.Data != null)
                 {
                     log.LogInformation(eventGridEvent.Data.ToString());
@@ -133,7 +132,7 @@ namespace IotHubtoTwins
             }
         }
     }
-} 
+}
 
 ```
 

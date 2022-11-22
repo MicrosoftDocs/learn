@@ -3,9 +3,10 @@ uid: learn.backup-restore-azure-sql.2-protect-database-with-backup
 metadata:
   title: Back up Azure SQL Database
   description: In this unit, you'll learn how to plan a backup regime for your Azure SQL Database service.
-  ms.date: 09/25/2019
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 03/10/2022
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Back up Azure SQL Database

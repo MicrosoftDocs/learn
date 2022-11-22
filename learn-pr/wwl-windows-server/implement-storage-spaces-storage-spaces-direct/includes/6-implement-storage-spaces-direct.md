@@ -41,7 +41,7 @@ The main steps in the process are:
 1. Enable the Storage Spaces Direct feature, create a storage pool, virtual disk, file server, and file share. Use Windows PowerShell to enable the Storage Spaces Direct feature, create a storage pool, virtual disk, file server, and file share.
 1. Test storage high availability. Use Windows PowerShell to trigger a failure of one of the cluster nodes and verify the availability of clustered volumes.
 
- > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MB0j]
+ > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MB0j]
 
 ---
 

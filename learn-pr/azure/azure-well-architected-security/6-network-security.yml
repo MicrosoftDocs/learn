@@ -4,9 +4,9 @@ title: Network security
 metadata:
   title: Network security
   description: In this unit, we'll discuss how to secure your network infrastructure
-  ms.date: 05/19/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 10/17/2022
+  author: martinekuan
+  ms.author: martinek
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: 'Communication between Azure virtual machines and the internet'
       isCorrect: false
-      explanation: 'Network security groups can be used to secure this communication flow, but this is not the only correct choice.'
+      explanation: 'Network security groups can be used to secure this communication flow, but it is not the only correct choice.'
     - content: 'Communication between Azure virtual machines within a virtual network'
       isCorrect: false
-      explanation: 'Network security groups can be used to secure this communication flow, but this is not the only correct choice.'
+      explanation: 'Network security groups can be used to secure this communication flow, but it is not the only correct choice.'
     - content: 'Communication between Azure virtual machines and systems in an on-premises network'
       isCorrect: false
-      explanation: 'Network security groups can be used to secure this communication flow, but this is not the only correct choice.'
+      explanation: 'Network security groups can be used to secure this communication flow, but it is not the only correct choice.'
     - content: 'All of the above'
       isCorrect: true
       explanation: 'Network security groups are fully customizable, and they give you the ability to fully lock down network communication to and from your virtual machines.'
@@ -41,6 +41,6 @@ quiz:
     - content: 'Azure Disk Encryption'
       isCorrect: true
       explanation: "Azure Disk Encryption protects your virtual machine VHDs from exposure, but it doesn't provide protection from network-based attacks."
-    - content: 'A network virtual appliance'
+    - content: 'Azure Firewall'
       isCorrect: false
-      explanation: 'Network virtual appliances can provide customized network protection for your internet-facing resources.'
+      explanation: 'Azure Firewall can provide customized network protection for your internet-facing resources.'

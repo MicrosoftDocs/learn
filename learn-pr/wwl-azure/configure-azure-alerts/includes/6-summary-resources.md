@@ -10,7 +10,7 @@ You should now be able to:
 You can learn more by reviewing the following.
 
  -  [The new alerts experience in Azure Monitor](/azure/monitoring-and-diagnostics/monitoring-overview-unified-alerts)
- -  [Learn - Improve incident response with alerting on Azure](/learn/modules/incident-response-with-alerting-on-azure/)
- -  [Learn - Manage alerts and incidents in Microsoft Defender for Endpoint](/learn/modules/manage-alerts-incidents-microsoft-defender-for-endpoints/)
- -  [Learn - Improve incident response with alerting on Azure](/learn/modules/incident-response-with-alerting-on-azure)
- -  [Learn - Monitor the health of your Azure virtual machine by using Azure Metrics Explorer and metric alerts](/learn/modules/monitor-azure-vm-using-diagnostic-data)
+ -  [Improve incident response with alerting on Azure](/training/modules/incident-response-with-alerting-on-azure/)
+ -  [Manage alerts and incidents in Microsoft Defender for Endpoint](/training/modules/manage-alerts-incidents-microsoft-defender-for-endpoints/)
+ -  [Improve incident response with alerting on Azure](/training/modules/incident-response-with-alerting-on-azure)
+ -  [Monitor the health of your Azure virtual machine by using Azure Metrics Explorer and metric alerts](/training/modules/monitor-azure-vm-using-diagnostic-data)

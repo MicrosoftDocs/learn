@@ -6,13 +6,14 @@ The scenario in this module features an existing .NET Framework web application 
 
 By the end of this module, you'll be able to:
 
-- Explain why logging is important in a commercial web application and the role of logging frameworks in recording application activity.
+- Explain why logging is important in a commercial web application.
+- Explain the role of logging frameworks in recording application activity.
 - Implement logging in an ASP.NET web application to store log data in Azure Blob Storage and incorporate log information into Application Insights performance data.
 
 ## Prerequisites
 
 - An Azure subscription. If you don't have an Azure account, you can [create a free trial subscription](https://azure.microsoft.com/free/).
-- Some C# programming experience
-- Familiarity with ASP.NET development
-- A development environment that has Windows 10 and Visual Studio 2019 installed, with the latest updates
-- Git for Windows installed on your desktop
+- Some C# programming experience.
+- Familiarity with ASP.NET development.
+- A development environment that has Windows 10 and Visual Studio 2019 installed, with the latest updates.
+- Git for Windows installed on your desktop.

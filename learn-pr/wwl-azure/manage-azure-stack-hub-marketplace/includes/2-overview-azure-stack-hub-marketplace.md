@@ -6,9 +6,6 @@ All gallery item artifacts, including images and JSON files, are accessible with
 
 To open the Marketplace, in the administrator portal select **+ Create a resource**.
 
-:::image type="content" source="../media/azure-stack-hybrid-overview-image-1-8ccfeff2.png" alt-text="Create a resource in Azure Stack Hub administrator portal.":::
-
-
 ## Marketplace items
 
 An Azure Stack Hub Marketplace item is a service, app, or resource that your users can download and use. All Azure Stack Hub Marketplace items are visible to all your users, including administrative items such as plans and offers. These administrative items don't require a subscription to view, but are non-functional to users.

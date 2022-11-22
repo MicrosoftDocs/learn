@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 `HttpClient` is a managed implementation, which means that it's unaware of the native platform networking stack. As a result, `HttpClient` can't use the native networking features of each platform, which makes it not as efficient and less optimized.
 
 In this unit, you take advantage of `HttpClient`'s extensibility and add support for the native platform's networking stack.

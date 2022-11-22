@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Manage app deployments from Eclipse
   description: Managing web app deployments from Eclipse using the Azure Toolkit
   ms.date: 02/01/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: cephalin
+  ms.author: cephalin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

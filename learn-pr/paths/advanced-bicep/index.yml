@@ -22,10 +22,13 @@ summary: |
   * Build deployment scripts that define custom steps in your Bicep templates.
   * Ensure reusability, consistency, and compliance by creating libraries of modules and templates.
 
+  > [!TIP]
+  > Want to learn Bicep live from subject matter experts? [Follow on-demand Learn Live sessions with our experts.](/events/learntv/learnlive-iac-and-bicep/)
+
   [!include[](../../includes/bicep-paths.md)]
 prerequisites: |
   This learning path assumes you have familiarity with deploying Azure resources by using Bicep.
-iconUrl: /learn/achievements/bicep/advanced-bicep.svg
+iconUrl: /training/achievements/bicep/advanced-bicep.svg
 levels:
 - advanced
 roles:
@@ -35,9 +38,12 @@ roles:
 products:
 - azure
 - azure-resource-manager
+subjects:
+- development-tools
 modules:
 - learn.azure.deploy-resources-different-scopes
 - learn.azure.extend-resource-manager-template-deployment-scripts
 - learn.azure.arm-template-specs
+- learn.azure.share-bicep-modules-using-private-registries
 trophy:
   uid: learn.advanced-bicep.trophy

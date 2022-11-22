@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Deriving from existing renderers and enhancing their built-in behavior works great when there's a Xamarin.Forms element that already does most of what we need. But if we want a control that doesn't exist in Xamarin.Forms at all yet, the steps are a little different and there's a bit more work.
 
 We'll need a Xamarin.Forms element and renderer. We'll also need a native control to use on each platform. For example, we want a control that allows the user to draw on the screen, but there's no built-in native control in either iOS or Android that does that. So we have to either create them or find third-party implementations in both platforms.

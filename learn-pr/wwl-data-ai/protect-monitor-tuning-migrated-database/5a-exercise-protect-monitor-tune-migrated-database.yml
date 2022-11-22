@@ -4,12 +4,13 @@ title: 'Exercise: Protect, monitor, and tune a migrated database'
 metadata:
   title: 'Exercise: Protect, monitor, and tune a migrated database'
   description: "Exercise: Protect, monitor, and tune a migrated database"
-  ms.date: 02/03/2021
+  ms.date: 09/26/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: true
+labModal: false
 durationInMinutes: 20
 content: |
   [!include[](includes/5a-exercise-protect-monitor-tune-migrated-database.md)]

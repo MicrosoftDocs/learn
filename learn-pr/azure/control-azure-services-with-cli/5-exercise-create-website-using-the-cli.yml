@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create an Azure website using the CLI
   description: Work with the Azure CLI to create a new PHP website
   ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  author: dbradish-microsoft
+  ms.author: dbradish
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
@@ -14,10 +14,11 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-create-website-using-the-cli.md)]
-tasks:
-- action: exists
-  environment: azure
-  hint: "Run the commands shown to create an App Service plan and web app."
-  azure:
-    resource:
-      type: "Microsoft.Web/sites"
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#  environment: azure
+#  hint: "Run the commands shown to create an App Service plan and web app."
+#  azure:
+#    resource:
+#      type: "Microsoft.Web/sites"

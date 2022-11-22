@@ -3,7 +3,7 @@ uid: learn.wwl.survey-components-of-azure-synapse-analytics
 metadata:
   title: Survey the Components of Azure Synapse Analytics
   description: "Survey the Components of Azure Synapse Analytics"
-  ms.date: 01/05/2022
+  ms.date: 06/23/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -20,13 +20,15 @@ abstract: |
   - Understand Hybrid Transactional Analytical Processing with Azure Synapse Link
 prerequisites: |
   * Before taking this module, it is recommended that you complete Data Fundamentals.
-iconUrl: /learn/achievements/survey-the-components-of-azure-synapse-analytics.svg
+iconUrl: /training/achievements/survey-the-components-of-azure-synapse-analytics.svg
 levels:
 - beginner
 roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- cloud-computing
 units:
 - learn.wwl.survey-components-of-azure-synapse-analytics.introduction
 - learn.wwl.survey-components-of-azure-synapse-analytics.create-workspace

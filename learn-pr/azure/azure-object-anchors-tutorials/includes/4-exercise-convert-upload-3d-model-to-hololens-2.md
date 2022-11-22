@@ -1,4 +1,4 @@
-In this tutorial you will learn how to use the sample project to create an Azure Object Anchors model from a 3D model using [Azure Object Anchors Conversion SDK for .NET.](/dotnet/api/overview/azure/mixedreality.objectanchors.conversion-readme-pre). This package allows you to convert an existing 3D asset into a format that the Object Anchors runtime can use to recognize physical objects.
+In this tutorial you will learn how to use the sample project to create an Azure Object Anchors model from a 3D model using [Azure Object Anchors Conversion SDK for .NET.](/dotnet/api/overview/azure/mixedreality.objectanchors.conversion-readme). This package allows you to convert an existing 3D asset into a format that the Object Anchors runtime can use to recognize physical objects.
 
 ## Get the sample project
 

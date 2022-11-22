@@ -5,8 +5,8 @@ metadata:
   title: Build data-driven ASP.NET web apps by using Azure Pipelines
   description: Step through the process of setting up an Azure pipeline that builds an ASP.NET website.
   ms.date: 01/26/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

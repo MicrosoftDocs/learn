@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.run-quantum-algorithms-hardware.5-use-qdk-create-qsharp-applications
-title: Exercise – Use the Quantum Development Kit to create Q# applications for Azure Quantum
+title: Exercise – Solve a simple Grover's Search with Q# and an Azure Quantum notebook
 metadata:
-  title: Exercise – Use the Quantum Development Kit to create Q# applications for Azure Quantum
-  description: Learn how to use the tools from the Quantum Development Kit to develop applications for Azure Quantum. 
-  ms.date: 05/19/2020
-  author: geduardo
-  ms.author: kitty
+  title: Exercise – Solve a simple Grover's Search with Q# and an Azure Quantum notebook
+  description: Learn how to use Q# and the Azure Quantum service together.
+  ms.date: 03/09/2022
+  author: SoniaLopezBravo
+  ms.author: sonialopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true

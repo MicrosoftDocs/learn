@@ -4,19 +4,20 @@ In this exercise, we'll create two Azure SQL databases to represent two fitness 
 
 We'll start by creating a SQL server for our fitness databases, and we'll add databases for two locations. The following steps use Vancouver and Paris but feel free to use other location names.
 
-1. First, declare a few helper variables. SERVERNAME variable will have a random number after the '-'. Replace `<location>` with one of the locations in the following list, and replace `<password>` with a complex password for the databases.
+1. First, declare a few helper variables. The SERVERNAME variable will have a random number after the '-'. Replace `<location>` with one of the locations in the following list, and replace `<password>` with a complex password for the databases.
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
     ```azurecli
     ADMIN_LOGIN="ServerAdmin"
     RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
-    SERVERNAME=FitnessSQLServer-$RANDOM
+    SERVERNAME=fitnesssqlserver-$RANDOM
     LOCATION=<location>
     PASSWORD=<password>
     ```
 
-1. Create a server named **FitnessSQLServer-nnnn**.
+1. Create a server named **fitnesssqlserver-nnnn**.
+
     ```azurecli
     az sql server create \
     --name $SERVERNAME \
@@ -26,20 +27,22 @@ We'll start by creating a SQL server for our fitness databases, and we'll add da
     --admin-password $PASSWORD
     ```
 
-1. Add a database named **FitnessVancouverDB** to **FitnessSQLServer-nnnn**.
+1. Add a database named **fitnessvancouverdb** to **fitnesssqlserver-nnnn**.
+
     ```azurecli
     az sql db create \
     --resource-group $RESOURCE_GROUP \
     --server $SERVERNAME \
-    --name FitnessVancouverDB
+    --name fitnessvancouverdb
     ```
 
-1. Add a database named **FitnessParisDB** to **FitnessSQLServer-nnnn**.
+1. Add a database named **fitnessparisdb** to **fitnesssqlserver-nnnn**.
+
     ```azurecli
     az sql db create \
     --resource-group $RESOURCE_GROUP \
     --server $SERVERNAME \
-    --name FitnessParisDB
+    --name fitnessparisdb
     ```
 
 ## Create a SQL elastic pool
@@ -62,8 +65,8 @@ We're ready to set up the resources for the SQL elastic pool. We'll switch to th
     | Subscription | Concierge Subscription |
     | Resource group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> |
     | **Elastic pool details** |
-    | Elastic Pool Name | Provide a meaningful name, such as *FitnessSQLPool*. |
-    | Server | Ensure your existing *FitnessSQLServer-nnnn* server is selected. |
+    | Elastic Pool Name | Provide a meaningful name, such as *fitnesssqlpool*. |
+    | Server | Ensure your existing *fitnesssqlserver-nnnn* server is selected. |
     | Compute + storage | Select the **Configure elastic pool** link. The **Configure** pane appears. |
 
 1. On the **Pool settings** tab, enter the following value for the setting.

@@ -165,9 +165,9 @@ You want to create a separate node pool that supports the batch-processing servi
 
 ## Schedule a pod with spot node affinity
 
-You can schedule a pod to run on a spot node by adding toleration to the pod's deployment manifest file. When the toleration corresponds with the taint applied to your spot nodes, the pod is scheduled on these nodes.
+You can schedule a pod to run on a spot node by adding a toleration and an affinity to the pod's deployment manifest file. When the toleration and node affinity correspond with the taint and label applied to your spot nodes, the pod is scheduled on these nodes.
 
-The nodes in a spot node pool are assigned a taint that equals `kubernetes.azure.com/scalesetpriority=spot:NoSchedule`. Use the information in this key-value pair in the `tolerations` section of your workloads YAML manifest file. With the second batch-processing pool configured as a spot node pool, you can now create a deployment file to schedule workloads to run on it.
+The nodes in a spot node pool are assigned a taint that equals `kubernetes.azure.com/scalesetpriority=spot:NoSchedule` and a label that equals `kubernetes.azure.com/scalesetpriority=spot`. Use the information in this key-value pair in the `tolerations` and `affinity` section of your workloads YAML manifest file. With the second batch-processing pool configured as a spot node pool, you can now create a deployment file to schedule workloads to run on it.
 
 1. Create a manifest file for the Kubernetes deployment called `spot-node-deployment.yaml` by using the integrated editor:
 
@@ -197,6 +197,15 @@ The nodes in a spot node pool are assigned a taint that equals `kubernetes.azure
         operator: "Equal"
         value: "spot"
         effect: "NoSchedule"
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: "kubernetes.azure.com/scalesetpriority"
+                operator: In
+                values:
+                - "spot"
     ```
 
 1. Press <kbd>Ctrl+S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to close the editor.

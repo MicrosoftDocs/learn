@@ -4,8 +4,9 @@ metadata:
   title: Knowledge Check
   description: Knowledge Check
   ms.date: 5/03/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Knowledge Check
@@ -18,10 +19,10 @@ quiz:
     choices:
     - content: "You're hosting several SQL servers to track election data for a regional election."
       isCorrect: false
-      explanation: "This scenario may not benefit from elastic pools as the demand on the servers is likely to increase uniformly at the servers would likely spike at similar times."
+      explanation: "This scenario may not benefit from elastic pools as the demand on the servers is likely to increase uniformly and the servers would likely spike at similar times."
     - content: "You're running a popular gaming website with customer data stored in an Azure SQL server."
       isCorrect: false
-      explanation: "Adding a single database to an elastic pool will not provide any cost or performance benefits."
+      explanation: "Adding a single database to an elastic pool won't provide any cost or performance benefits."
     - content: "You manage a cloud platform that tracks inventory for car dealerships."
       isCorrect: true
       explanation: "It's likely each dealership's data would be stored in a separate database. This scenario would likely benefit from elastic pools."

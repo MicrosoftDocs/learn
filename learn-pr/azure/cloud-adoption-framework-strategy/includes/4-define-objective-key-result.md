@@ -6,9 +6,9 @@ This unit demonstrates how to define OKRs that can measure your strategic impact
 
 Modern operations require modern ways to measure business outcomes, and cloud technology can help increase velocity for a business. An organization's measurement platform should support a company's outcomes and plan for growth by:
 
-- Providing insights to team members and groups.
-- Supporting staff to pivot quickly when outcomes don't align with strategy and expectations.
-- Offering a structured format, templates, sequences, and tools to help teams plan for and visualize increasing velocity.
+- Providing insights to team members and groups
+- Supporting staff to pivot quickly when outcomes don't align with strategy and expectations
+- Offering a structured format, templates, sequences, and tools to help teams plan for and visualize increasing velocity
 
 ## OKR overview
 
@@ -44,29 +44,29 @@ The principles of OKRs can help your organization understand how useful OKRs tak
 
 Here are some examples of OKRs:
 
-**Objective 1**: Be the top US provider of learning platforms to schools.
+**Objective 1**: Be the top US provider of learning platforms to schools
 
 **Key results**:
 
-- 45 percent of K-12 schools using our platform.
-- A 12 percent increase in student engagement, as measured through internal systems.
-- A 95 percent satisfaction rate from quarterly parent surveys.
+- 45 percent of K-12 schools using our platform
+- A 12 percent increase in student engagement, as measured through internal systems
+- A 95 percent satisfaction rate from quarterly parent surveys
 
-**Objective 2**: Build a technology platform that supports every person in our business to innovate and create.
-
-**Key results**:
-
-- Five new applications developed and adopted across the organization.
-- Every team with at least two members using Microsoft Power Platform.
-- Including new cloud technologies like data analytics and machine learning in all customer-facing applications.
-
-**Objective 3**: Transform our approach from sales driven to data driven.
+**Objective 2**: Build a technology platform that supports every person in our business to innovate and create
 
 **Key results**:
 
-- Increasing pipeline coverage from 50 percent to 200 percent.
-- Increasing closing rates for sales engagements by 5 percent.
-- Reducing the time to close deals by 8 percent.
+- Five new applications developed and adopted across the organization
+- Every team with at least two members using Microsoft Power Platform
+- Including new cloud technologies like data analytics and machine learning in all customer-facing applications
+
+**Objective 3**: Transform our approach from sales driven to data driven
+
+**Key results**:
+
+- Increasing pipeline coverage from 50 percent to 200 percent
+- Increasing closing rates for sales engagements by 5 percent
+- Reducing the time to close deals by 8 percent
 
 ## Implement OKRs
 

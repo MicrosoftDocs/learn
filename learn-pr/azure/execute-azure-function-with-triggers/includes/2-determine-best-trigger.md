@@ -12,7 +12,7 @@ In this module, we're going to focus on three trigger types: **timer**, **HTTP**
 
 ## Types of triggers
 
-Azure Functions support a wide range of trigger types. Here are some of the most common types:
+Azure Functions supports a wide range of trigger types. Here are some of the most common types:
 
 | Type | Purpose |
 | --- | --- |

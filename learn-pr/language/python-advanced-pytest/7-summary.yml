@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.python-advanced-pytest.summary
+title: Summary
+metadata:
+  title: Summary
+  description: In this module, we went through two advanced features of Pytest. Fixtures and _parametrize_ allow you to write better tests while producing better output.
+  ms.date: 1/31/2022
+  author: alfredodeza
+  ms.author: alfredodeza
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

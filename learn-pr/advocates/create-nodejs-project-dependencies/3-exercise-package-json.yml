@@ -4,12 +4,12 @@ title: Exercise - Configure the package.json
 metadata:
   title: Exercise - Configure the package.json
   description: Exercise on how to configure the package.json to add metadata but also create and run scripts to manage your Node.js throughout its lifetime.
-  author: softchris
+  author: GitHubber17
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 05/10/2022
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/3-exercise-package-json.md)]

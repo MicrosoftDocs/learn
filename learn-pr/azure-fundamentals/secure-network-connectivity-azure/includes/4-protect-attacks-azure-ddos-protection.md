@@ -28,12 +28,12 @@ DDoS Protection provides these service tiers:
 
     The Basic service tier is automatically enabled for free as part of your Azure subscription.
 
-    Always-on traffic monitoring and real-time mitigation of common network-level attacks provide the same defenses that Microsoft's online services use. The Basic service tier ensures that Azure infrastructure itself is not affected during a large-scale DDoS attack.
+    Always-on traffic monitoring and real-time mitigation of common network-level attacks provide the same defenses that Microsoft's online services use. The Basic service tier ensures that Azure infrastructure itself isn't affected during a large-scale DDoS attack.
 
     The Azure global network is used to distribute and mitigate attack traffic across Azure regions.
 + **Standard**
 
-    The Standard service tier provides additional mitigation capabilities that are tuned specifically to Azure Virtual Network resources. DDoS Protection Standard is relatively easy to enable and requires no changes to your applications.
+    The Standard service tier provides more mitigation capabilities that are tuned specifically to Azure Virtual Network resources. DDoS Protection Standard is relatively easy to enable and requires no changes to your applications.
 
     The Standard tier provides always-on traffic monitoring and real-time mitigation of common network-level attacks. It provides the same defenses that Microsoft's online services use.
 

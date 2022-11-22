@@ -17,7 +17,7 @@ prerequisites: |
   * Understand the Azure compute options
 summary: |
   The objective of this learning path is to educate the learner how they can migrate SQL Server workloads to SQL Services that exist on Azure.
-iconUrl: /learn/achievements/migrate-sql-workloads-to-azure.svg
+iconUrl: /training/achievements/migrate-sql-workloads-to-azure.svg
 levels:
 - intermediate
 roles:
@@ -30,6 +30,10 @@ products:
 - azure-sql-database
 - azure-virtual-machines
 - sql-server
+subjects:
+- migration
+- database
+- cloud-computing
 modules:
 - learn.wwl.introduction-data-platform-modernization
 - learn-sqlserver.assess-convert-sql-server-databases-using-dma

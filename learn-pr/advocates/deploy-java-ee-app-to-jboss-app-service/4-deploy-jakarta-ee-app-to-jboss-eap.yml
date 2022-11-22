@@ -9,6 +9,8 @@ metadata:
   ms.date: 02/01/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: yoterada-03082021
 durationInMinutes: 4
 content: |
   [!include[](includes/4-deploy-jakarta-ee-app-to-jboss-eap.md)]

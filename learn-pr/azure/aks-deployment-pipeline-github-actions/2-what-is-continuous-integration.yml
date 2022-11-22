@@ -4,8 +4,8 @@ metadata:
   title: What are continuous integration and continuous deployment?
   description: Explore some CI/CD concepts you need to consider when you configure your first GitHub action.
   ms.date: 10/08/2020
-  author: khaosdoctor
-  ms.author: ludossan
+  author: nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: github
 title: What are continuous integration and continuous deployment?

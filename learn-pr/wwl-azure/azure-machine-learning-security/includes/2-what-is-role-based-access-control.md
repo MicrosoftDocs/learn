@@ -54,7 +54,7 @@ A common challenge for developers is the management of secrets and credentials u
 
 ### Authentication with Azure AD
 
-In general, there are three authentication workflows that you can use when connecting to the workspace:
+In general, there are four authentication workflows that you can use when connecting to the workspace:
 
 **Interactive**: You use your account in Azure Active Directory to either manually authenticate or obtain an authentication token. Interactive authentication is used during **experimentation and iterative development.** It enables you to control access to resources (such as a web service) on a per-user basis.
 

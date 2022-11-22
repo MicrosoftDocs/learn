@@ -2,7 +2,7 @@ Azure Digital Twins metrics help you assess the overall health of Azure Digital 
 
 Metrics are enabled by default. You can view Azure Digital Twins metrics from the Azure portal.
 
-:::image type="content" source="../media/m11-l04-adt-metrics-portal-08c9bcb5.png" alt-text="Screen shot that shows how to view Azure Digital Twins metrics from the Azure portal.":::
+:::image type="content" source="../media/m11-l04-adt-metrics-portal-08c9bcb5.png" alt-text="Screenshot that shows how to view Azure Digital Twins metrics from the Azure portal.":::
 
 
 ## Azure Digital Twins metrics and how to use them

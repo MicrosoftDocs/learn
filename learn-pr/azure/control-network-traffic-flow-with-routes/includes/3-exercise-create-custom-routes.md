@@ -13,7 +13,7 @@ In this exercise, you'll create the route table, custom route, and subnets. You'
 The first task is to create a new routing table and then add a custom route for all traffic intended for the private subnet.
 
 > [!NOTE] 
->  You may get an error: This command is implicitly deprecated. Please ignore for this learning module. We are working on it!
+>  You might get an error that reads: *This command is implicitly deprecated*. Please ignore this error for this learning module. We are working on it!
 
 1. In Azure Cloud Shell, run the following command to create a route table.
 
@@ -38,7 +38,7 @@ The first task is to create a new routing table and then add a custom route for 
 
 ## Create a virtual network and subnets
 
-The next task is to create the **vnet** virtual network and the three subnets that you need: **publicsubnet**, **privatesubnet**, and **dmzsubnet**.
+The next task is to create the **vnet** virtual network and the three subnets you need: **publicsubnet**, **privatesubnet**, and **dmzsubnet**.
 
 1. Run the following command to create the **vnet** virtual network and the **publicsubnet** subnet.
 

@@ -3,9 +3,9 @@ uid: learn.wwl.query-logs-azure-sentinel
 metadata:
   title: Query logs in Microsoft Sentinel
   description: "Query logs in Microsoft Sentinel"
-  ms.date: 12/10/2021
+  ms.date: 06/21/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Query logs in Microsoft Sentinel
@@ -16,7 +16,7 @@ abstract: |
   - Query the most used tables using Microsoft Sentinel
 prerequisites: |
   Basic knowledge of operational concepts such as monitoring, logging, and alerting
-iconUrl: /learn/achievements/query-logs-in-azure-sentinel.svg
+iconUrl: /training/achievements/query-logs-in-azure-sentinel.svg
 levels:
 - intermediate
 roles:
@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- cloud-security
 units:
 - learn.wwl.query-logs-azure-sentinel.introduction
 - learn.wwl.query-logs-azure-sentinel.logs-page

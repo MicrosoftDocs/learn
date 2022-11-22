@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Setting and getting values from variables
   description: Assign values to a variable and retrieve values from variables.
   ms.date: 09/03/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

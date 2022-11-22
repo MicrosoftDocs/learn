@@ -5,8 +5,8 @@ metadata:
   title: Define the UI for drawer navigation
   description: "Create the interface for drawer navigation by using a Xamarin.Forms MasterDetailPage."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
   

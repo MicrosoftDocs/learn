@@ -19,13 +19,15 @@ abstract: |
 prerequisites: |
   - Knowledge of Python
   - Experience of training models using the Azure Machine Learning SDK
-iconUrl: /learn/achievements/explore-differential-privacy.svg
+iconUrl: /training/achievements/explore-differential-privacy.svg
 levels:
 - advanced
 roles:
 - data-scientist
 products:
 - azure-machine-learning
+subjects:
+- security
 units:
 - learn.wwl.explore-differential-privacy.introduction
 - learn.wwl.explore-differential-privacy.understand-differential-privacy

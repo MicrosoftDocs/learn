@@ -2,7 +2,7 @@ Once the **Microsoft.Azure.Cosmos** library is imported, you can begin using the
 
 ## Import the namespace
 
-Before using the library, you should import the **Microsoft.Azure.Cosmos** namespace using a **using directive**. The using directive allows you to use types within the namespace without being forced to fully qualify each type.
+Before using the library, you should import the **Microsoft.Azure.Cosmos** namespace using a **directive**. The using directive allows you to use types within the namespace without being forced to fully qualify each type.
 
 ```csharp
 using Microsoft.Azure.Cosmos;
@@ -45,7 +45,7 @@ CosmosClient client = new (endpoint, key);
 ## Read properties of the account
 
 > [!TIP]
-> At this point, you only have a logical client-side representation of the Azure Cosmos DB SQL API account. The SDK won't initially connect to the account until you perform an operation.
+> At this point, you only have a logical client-side representation of the Azure Cosmos DB for NoSQL account. The SDK won't initially connect to the account until you perform an operation.
 
 Once the client instance is instantiated, you can use various methods directly. For example, you can asynchronously invoke the **ReadAccountAsync** method to get an object of type **AccountProperties** with various properties.
 
@@ -96,7 +96,7 @@ Now that you have a database instance, you can retrieve or create a container us
 
 - Retrieve an existing container using just the name
 - Create a new container passing in a unique container name, partition key path, and the amount of throughput to manually provision
-- Have the SDK check for the existence of the database and either create or retrieve it automatically
+- Have the SDK check for the existence of the container and either create or retrieve it automatically
 
 Any of these three methods will return an instance of type **Container** that you can use to interact with the container.
 

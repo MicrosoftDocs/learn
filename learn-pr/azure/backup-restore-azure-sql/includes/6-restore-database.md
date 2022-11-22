@@ -1,10 +1,10 @@
-Testing and validating the restore capability and procedures is a critical piece of a recovery strategy. By testing the restore process, you validate that your backups are successful. You also familiarize yourself with the process and options available for recovering a database. This helps to ensure a quick and successful recovery of data when needed.
+Testing and validating the restore capability and procedures is a critical piece of a recovery strategy. By testing the restore process, you validate that your backups are successful. You also familiarize yourself with the process and options available for recovering a database. This familiarization helps to ensure a quick and successful recovery of data when needed.
 
 Here, you'll learn how to restore an Azure SQL Server database from automated database backups.
 
 ## What you can restore
 
-Automated backups in Azure SQL Database copy databases to blobs in read-access geo-redundant storage (RA-GRS) accounts on the schedule that you specify. If you want to restore one of these backups, you must create a new database to contain the restored data. You can't restore a database over an existing database. 
+Automated backups in Azure SQL Database copy databases to blobs in read-access geo-redundant storage (RA-GRS) accounts on the schedule that you specify. If you want to restore one of these backups, you must create a new database to contain the restored data. You can't restore a database over an existing database.
 
 You can create the database on the same server where the backup was taken or on another server with these options:
 
@@ -15,11 +15,11 @@ You can create the database on the same server where the backup was taken or on 
 
 ## How restore works
 
-To complete a restore, Azure copies the database from the storage account to the Azure SQL Database server that you specify. In a point-in-time restore, SQL Database follows that by applying transaction logs to the restored database, up to the time you chose. 
+To complete a restore, Azure copies the database from the storage account to the Azure SQL Database server that you specify. In a point-in-time restore, SQL Database follows that by applying transaction logs to the restored database, up to the time you chose.
 
 The length of this process varies widely. It depends on the database size, the transaction logs, network bandwidth, and the number of concurrent restore operations. Most restore operations finish in less than 12 hours.
 
-The only way to know how long your restore operation takes is to perform a trial restore. It's good idea to perform trial restores occasionally to time them and to ensure your complete backup and restore strategy works as you expect.
+The only way to know how long your restore operation takes is to perform a trial restore. It's a good idea to perform trial restores occasionally to time them and to ensure your complete backup and restore strategy works as you expect.
 
 ### Perform a point-in-time restore
 

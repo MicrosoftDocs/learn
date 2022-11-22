@@ -4,8 +4,8 @@ metadata:
   title: "Introduction to App Center"
   description: Explore Azure App services to find ways to simplify creation and integration as you build, distribute, test, and analyze usage of yours apps.
   ms.date: 9/30/2019
-  author: patridge
-  ms.author: adpatrid
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Introduction to App Center"
@@ -16,7 +16,7 @@ abstract: |
   - Describe how the App Center services can help create development processes to deliver quality mobile apps efficiently
 prerequisites: |
   - None
-iconUrl: /learn/achievements/app-center/introduction-to-app-center-badge.svg
+iconUrl: /training/achievements/app-center/introduction-to-app-center-badge.svg
 badge:
   uid: learn.azure-intro-to-app-center.badge
 levels: 

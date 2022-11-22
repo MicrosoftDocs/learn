@@ -24,7 +24,7 @@ The commands available in each of these categories are shown in the tables below
     az iot dps create
   :::column-end:::
   :::column:::
-    Create an Azure IoT Hub device provisioning service.
+    Create an Azure IoT Hub Device Provisioning Service instance.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -32,7 +32,7 @@ The commands available in each of these categories are shown in the tables below
     az iot dps delete
   :::column-end:::
   :::column:::
-    Delete an Azure IoT Hub device provisioning service.
+    Delete an Azure IoT Hub Device Provisioning Service instance.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -40,7 +40,7 @@ The commands available in each of these categories are shown in the tables below
     az iot dps list
   :::column-end:::
   :::column:::
-    List Azure IoT Hub device provisioning services.
+    List Azure IoT Hub Device Provisioning Service instances.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -48,7 +48,7 @@ The commands available in each of these categories are shown in the tables below
     az iot dps show
   :::column-end:::
   :::column:::
-    Get the details of an Azure IoT Hub device provisioning service.
+    Get the details of an Azure IoT Hub Device Provisioning Service instance.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -56,7 +56,7 @@ The commands available in each of these categories are shown in the tables below
     az iot dps update
   :::column-end:::
   :::column:::
-    Update an Azure IoT Hub device provisioning service.
+    Update an Azure IoT Hub Device Provisioning Service instance.
   :::column-end:::
 :::row-end:::
 
@@ -82,7 +82,7 @@ The commands available in each of these categories are shown in the tables below
     az iot dps access-policy create
   :::column-end:::
   :::column:::
-    Create a new shared access policy in an Azure IoT Hub device provisioning service.
+    Create a new shared access policy in an Azure IoT Hub Device Provisioning Service instance.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -90,7 +90,7 @@ The commands available in each of these categories are shown in the tables below
     az iot dps access-policy delete
   :::column-end:::
   :::column:::
-    Delete a shared access policies in an Azure IoT Hub device provisioning service.
+    Delete a shared access policies in an Azure IoT Hub Device Provisioning Service instance.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -98,7 +98,7 @@ The commands available in each of these categories are shown in the tables below
     az iot dps access-policy list
   :::column-end:::
   :::column:::
-    List all shared access policies in an Azure IoT Hub device provisioning service.
+    List all shared access policies in an Azure IoT Hub Device Provisioning Service instance.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -106,7 +106,7 @@ The commands available in each of these categories are shown in the tables below
     az iot dps access-policy show
   :::column-end:::
   :::column:::
-    Show details of a shared access policy in an Azure IoT Hub device provisioning service.
+    Show details of a shared access policy in an Azure IoT Hub Device Provisioning Service instance.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -114,7 +114,7 @@ The commands available in each of these categories are shown in the tables below
     az iot dps access-policy update
   :::column-end:::
   :::column:::
-    Update a shared access policy in an Azure IoT Hub device provisioning service.
+    Update a shared access policy in an Azure IoT Hub Device Provisioning Service instance.
   :::column-end:::
 :::row-end:::
 
@@ -214,7 +214,7 @@ The commands available in each of these categories are shown in the tables below
     az iot dps linked-hub create
   :::column-end:::
   :::column:::
-    Create a linked IoT hub in an Azure IoT Hub device provisioning service.
+    Create a linked IoT hub in an Azure IoT Hub Device Provisioning Service instance.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -222,7 +222,7 @@ The commands available in each of these categories are shown in the tables below
     az iot dps linked-hub delete
   :::column-end:::
   :::column:::
-    Update a linked IoT hub in an Azure IoT Hub device provisioning service.
+    Update (delete) a linked IoT hub in an Azure IoT Hub Device Provisioning Service instance.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -230,7 +230,7 @@ The commands available in each of these categories are shown in the tables below
     az iot dps linked-hub list
   :::column-end:::
   :::column:::
-    List all linked IoT hubs in an Azure IoT Hub device provisioning service.
+    List all linked IoT hubs in an Azure IoT Hub Device Provisioning Service instance.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -238,7 +238,7 @@ The commands available in each of these categories are shown in the tables below
     az iot dps linked-hub show
   :::column-end:::
   :::column:::
-    Show details of a linked IoT hub in an Azure IoT Hub device provisioning service.
+    Show details of a linked IoT hub in an Azure IoT Hub Device Provisioning Service instance.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -246,7 +246,7 @@ The commands available in each of these categories are shown in the tables below
     az iot dps linked-hub update
   :::column-end:::
   :::column:::
-    Update a linked IoT hub in an Azure IoT Hub device provisioning service.
+    Update a linked IoT hub in an Azure IoT Hub Device Provisioning Service instance.
   :::column-end:::
 :::row-end:::
 

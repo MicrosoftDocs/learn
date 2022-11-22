@@ -1,16 +1,16 @@
 # Title
 
-<!-- *Add the working title [(Title guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-title)* -->
+<!-- *Add the working title [(Title guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-title)* -->
 Deploy a containerized app to Azure Kubernetes Services
 
 ## Role(s)
 
-<!-- - *Add the role(s)* [Role guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#role) -->
+<!-- - *Add the role(s)* [Role guidance](https://review.learn.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=main#role) -->
 - DevOps Engineer
 
 ## Level
 
-<!-- - *Add the level*  [Level guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#level) -->
+<!-- - *Add the level*  [Level guidance](https://review.learn.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=main#level) -->
 - Beginner
 
 ## Product(s)
@@ -20,7 +20,7 @@ Deploy a containerized app to Azure Kubernetes Services
 
 ## Prerequisites
 
-<!-- - *List the prerequisites [(Prerequisite guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-prerequisites)* -->
+<!-- - *List the prerequisites [(Prerequisite guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-prerequisites)* -->
 - An Azure Subscription
 - Ability to use the Azure CLI
 - Ability to create a Docker container
@@ -29,12 +29,12 @@ Deploy a containerized app to Azure Kubernetes Services
 
 ## Summary
 
-<!-- *Add the summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductory-summaries)* -->
+<!-- *Add the summary [(Summary guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-introductory-summaries)* -->
 Rapidly deploy a containerized application hosted on Azure Container Services or any other registrar to the Azure Kubernetes Services.
 
 ## Learning objectives
 
-<!-- 1. *Add numbered Learning Objectives [(Learning objective guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-learning-objectives)* -->
+<!-- 1. *Add numbered Learning Objectives [(Learning objective guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-learning-objectives)* -->
 Upon the completion of this module, the learner will be able to:
 
 1. Create and set up an Azure Kubernetes Cluster
@@ -65,7 +65,7 @@ Identify the subtasks of *module title*
 
     After experimenting with Kubernetes you got to Azure Kubernetes Service, which fits all the prerequisites to be the perfect tool for the company's increased growth. So, after clearance from the leadership, you have to create the future structure that will support the company in the future!
 
-    <!-- *Add your scenario [(Scenario guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-scenarios)* -->
+    <!-- *Add your scenario [(Scenario guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-scenarios)* -->
 
 2. **Create an AKS Cluster**
 
@@ -142,6 +142,6 @@ Identify the subtasks of *module title*
 
     Imagine how would it be to deploy this application on a VM or another environment without Kubernetes. Having AKS to manage the heavy lifting for us, it made possible not only to save much time but to make our deployment much simpler.
 
-    <!-- *Add your summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit)* -->
+    <!-- *Add your summary [(Summary guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit)* -->
 
 ## Notes

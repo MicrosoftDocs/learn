@@ -3,7 +3,7 @@ uid: learn.wwl.analyze-images-computer-vision
 metadata:
   title: Analyze images with the Computer Vision service
   description: "Analyze images with the Computer Vision service"
-  ms.date: 11/23/2021
+  ms.date: 09/05/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ abstract: |
   Learn how to use the Computer Vision cognitive service to analyze images.
 prerequisites: |
   Ability to navigate the Azure portal
-iconUrl: /learn/achievements/analyze-images-computer-vision.svg
+iconUrl: /training/achievements/analyze-images-computer-vision.svg
 levels:
 - beginner
 roles:
@@ -25,6 +25,8 @@ roles:
 - student
 products:
 - azure-cognitive-services
+subjects:
+- classification-analysis
 units:
 - learn.wwl.analyze-images-computer-vision.introduction
 - learn.wwl.analyze-images-computer-vision.get-started

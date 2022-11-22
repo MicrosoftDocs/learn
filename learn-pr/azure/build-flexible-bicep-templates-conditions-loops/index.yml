@@ -4,9 +4,9 @@ metadata:
   moduleType: standard
   title: Build flexible Bicep templates by using conditions and loops
   description: Build advanced Bicep templates by using conditions to conditionally deploy resources and using loops to deploy multiple instances of resources.
-  ms.date: 05/09/2021
-  author: akasnik
-  ms.author: akasnik
+  ms.date: 07/25/2022
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
 title: Build flexible Bicep templates by using conditions and loops
@@ -27,7 +27,7 @@ prerequisites: |
   - Either:
     - The latest [Azure CLI](/cli/azure/install-azure-cli) tools installed locally.
     - The latest [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.
-iconUrl: /learn/achievements/bicep/bicep-conditions-loops.svg
+iconUrl: /training/achievements/bicep/bicep-conditions-loops.svg
 levels:
   - intermediate
 roles:
@@ -38,6 +38,9 @@ languages:
   - bicep
 products:
   - azure-resource-manager
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.bicep-conditions-loops.introduction
 - learn.azure.bicep-conditions-loops.use-conditions-deploy-resources

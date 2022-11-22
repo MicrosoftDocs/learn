@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.monitor-azure-arc-enabled-servers.onboard-azure-arc-enabled-servers-to-vm-insights
+title: Onboard Azure Arc-enabled servers to VM insights
+metadata:
+  title: Onboard Azure Arc-enabled servers to VM insights
+  description: Onboard Azure Arc-enabled servers to VM insights
+  ms.date: 04/01/2022
+  author: aurnovcy
+  ms.author: aurnovc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-onboard-azure-arc-enabled-servers-to-vm-insights.md)]

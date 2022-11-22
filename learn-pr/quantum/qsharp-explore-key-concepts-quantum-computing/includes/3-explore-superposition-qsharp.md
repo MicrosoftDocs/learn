@@ -2,7 +2,7 @@ Now you'll explore how to create, manage, and inspect superpositions in Q#. We i
 
 ## Create the project
 
-Start by creating a Q# project like you did for the quantum random number generator in the [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) module. 
+Start by creating a Q# project like you did for the quantum random number generator in the [Create your first Q# program by using the Quantum Development Kit](/training/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) module. 
 
 1. On the **View** menu, select **Command Palette**.
 1. Enter *Q#: Create New Project*.
@@ -14,8 +14,7 @@ Like before, you see two files: the project file and *Program.qs*, which contain
 
 ## Include the Diagnostics namespace
 
-You'll find the Diagnostics namespace [Microsoft.Quantum.Diagnostics](/qsharp/api/qsharp/microsoft.quantum.diagnostics?azure-portal=true) in the [Standard
-library](/quantum/user-guide/libraries/standard?azure-portal=true)
+You'll find the Diagnostics namespace [Microsoft.Quantum.Diagnostics](/qsharp/api/qsharp/microsoft.quantum.diagnostics?azure-portal=true) in the [Standard library](/quantum/user-guide/libraries/standard?azure-portal=true)
 of the Quantum Development Kit. This namespace contains functions and operations that are useful for
 diagnostic purposes.
 
@@ -35,8 +34,7 @@ To add the library, you use the `open` directive. Modify *Program.qs* like this 
 
 ## Dump the state of the program
 
-In the module [Create your first Q# program by using the Quantum Development
-Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true),
+In the module [Create your first Q# program by using the Quantum Development Kit](/training/modules/qsharp-create-first-quantum-development-kit?azure-portal=true),
 you defined the `GenerateRandomBit` operation. You can use this operation to see how `DumpMachine` works.
 
 To do so, you simply call `DumpMachine` at every step where you want to see the state of the register.
@@ -133,8 +131,7 @@ The `DumpMachine` function creates a table of information that describes the sta
 > [!TIP]
 > You can also run Q# in Jupyter Notebook. Notebooks provide a better
 > visualization of the `DumpMachine` outputs. You can install the application and try it
-> out by following the Quantum Development Kit (QDK) documentation about [Q# Jupyter
-> notebooks](/azure/quantum/install-jupyter-qdk?tabs=tabid-conda&azure-portal=true). 
+> out by following the Quantum Development Kit (QDK) documentation about [Q# Jupyter notebooks](/azure/quantum/install-jupyter-qdk?tabs=tabid-conda&azure-portal=true). 
 >
 > ![Screenshot of the DumpMachine function in a Jupyter notebook.](../media/3-jupyter.png)
 

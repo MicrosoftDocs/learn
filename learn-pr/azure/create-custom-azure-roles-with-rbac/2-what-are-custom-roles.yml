@@ -5,8 +5,8 @@ metadata:
   title: What are custom roles in Azure?
   description: Learn about custom roles for access management in Azure
   ms.date: 07/09/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: rolyon
+  ms.author: rolyon
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

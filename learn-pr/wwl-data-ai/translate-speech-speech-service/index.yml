@@ -20,7 +20,7 @@ prerequisites: |
   - Be familiar with Azure services and the Azure portal.
   - Have experience programming with C# or Python.
   - Have experience of using the Speech service to transcribe speech to text.
-iconUrl: /learn/achievements/translate-speech-speech-service.svg
+iconUrl: /training/achievements/translate-speech-speech-service.svg
 levels:
 - intermediate
 roles:
@@ -30,6 +30,8 @@ roles:
 - student
 products:
 - azure-cognitive-services
+subjects:
+- artificial-intelligence
 units:
 - learn.wwl.translate-speech-speech-service.introduction
 - learn.wwl.translate-speech-speech-service.speech-service

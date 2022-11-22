@@ -10,11 +10,15 @@ metadata:
   ms.author: cassieb
   ms.topic: interactive-tutorial
   ms.prod: azure
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - cassieb-08182021
 prerequisites: |
   - Basic Python knowledge
   - Basic knowledge about how to use Jupyter Notebooks
   - Basic understanding of machine learning
-iconUrl: /learn/achievements/pytorch-intro-trophy.svg
+iconUrl: /training/achievements/pytorch-intro-trophy.svg
 video:
   title: PyTorch Fundamentals
   url: https://www.microsoft.com/videoplayer/embed/RE4Nci7
@@ -27,6 +31,8 @@ roles:
 - student
 products: 
 - azure-machine-learning
+subjects:
+- development-tools
 modules:
 - learn.pytorch.intro-machine-learning
 - learn.pytorch.intro-computer-vision

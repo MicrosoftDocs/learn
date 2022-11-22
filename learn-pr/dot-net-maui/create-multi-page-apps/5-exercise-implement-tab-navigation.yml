@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.create-multi-page-apps.exercise-implement-tab-navigation
+title: "Exercise: Implement tab navigation"
+metadata:
+  unitType: exercise
+  title: "Exercise: Implement tab navigation"
+  description: "Use the TabbedPage class to create a multi-page app"
+  ms.date: 05/02/2022
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-implement-tab-navigation.md)]

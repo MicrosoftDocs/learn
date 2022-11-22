@@ -3,7 +3,7 @@ uid: learn.cmu-cloud-computing.distributed-programming.message-queues-stream-pro
 metadata:
   title: Message queues and stream processing
   description: Carnegie Mellon University's cloud developer course. The increase of available data has led to the rise of continuous streams of real-time data to process. Learn about different systems and techniques for consuming and processing real-time data streams.
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -44,7 +44,8 @@ prerequisites: |
   - Understand MapReduce and how it enables big-data computing
   - Understand Spark and how it differs from MapReduce
   - Understand GraphLab and how it differs from MapReduce and Spark
-iconUrl: /learn/achievements/cmu-cloud-developer/message-queues-stream-processing.svg
+iconUrl: /training/achievements/cmu-cloud-developer/message-queues-stream-processing.svg
+hidden: true
 levels:
 - beginner
 roles:
@@ -52,6 +53,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- data-management
 units:
 - learn.cmu-cloud-computing.distributed-programming.message-queues-stream-processing.0-introduction
 - learn.cmu-cloud-computing.distributed-programming.message-queues-stream-processing.1-message-queues

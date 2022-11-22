@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Xamarin.Forms apps that don't use MVVM generally have more code in their *code-behind* files. The code-behind files follow this pattern: *{something}.xaml.cs*. Most code in the code-behind file usually controls the user interface (UI) behavior. *UI behavior* can include anything that happens *to* the UI, like changing a color or some text. And it can include anything that happens *because of* the UI, including button click handlers.
 
 One problem with this approach is that it's hard to write unit tests against code-behind files. Code-behind files in a Xamarin.Forms app derive from a Xamarin.Forms framework type. They often assume an application state that's created by parsing XAML or even created by other pages. These conditions are difficult to handle in a unit test runner that might not even be running on a mobile device, let alone with a user interface. So, unit tests are rarely able to test the UI behaviors in these files.

@@ -3,11 +3,12 @@ uid: learn.azure.publish-express-node-app-service-vscode
 metadata:
   title: Create and publish a web application with Azure App Service and Visual Studio Code
   description: In this module, you'll learn how to create and publish webapps to Azure App Service from Visual Studio Code.
-  ms.date: 04/23/2020
-  author: nickwalkmsft
-  ms.author: nickwalk
+  ms.date: 09/01/2022
+  author: msangapu-msft
+  ms.author: msangapu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: vscode-azure-extension-update-completed
 title: Create and publish a web application with Azure App Service and Visual Studio Code
 summary: Create a web application with Visual Studio Code and publish it to Azure App Service.
 abstract: |
@@ -19,7 +20,7 @@ prerequisites: |
   - Familiarity with web app concepts
   - Beginner-level programming knowledge
   - Local installations of Visual Studio Code and either Node.js or Python
-iconUrl: /learn/achievements/publish-express-node-app-service-vscode.svg
+iconUrl: /training/achievements/publish-express-node-app-service-vscode.svg
 levels:
 - beginner
 roles:
@@ -28,6 +29,8 @@ products:
 - azure
 - azure-app-service
 - vs-code
+subjects:
+- cloud-computing
 units:
 - learn.azure.publish-express-node-app-service-vscode.1-introduction
 - learn.azure.publish-express-node-app-service-vscode.2-create-express-web-application-vs-code

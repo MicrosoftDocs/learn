@@ -4,9 +4,9 @@ title: What is Azure Firewall?
 metadata:
   title: What is Azure Firewall?
   description: Learn the basics and features Azure Firewall and Azure Firewall Manager.
-  ms.date: 12/28/2020
-  author: jamcneil
-  ms.author: jumcn
+  ms.date: 09/08/2022
+  author: vhorne
+  ms.author: victorh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12

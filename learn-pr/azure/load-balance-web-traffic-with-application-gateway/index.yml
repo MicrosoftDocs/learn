@@ -3,9 +3,9 @@ uid: learn.load-balance-web-traffic-with-application-gateway
 metadata:
   title: Load balance your web service traffic with Application Gateway
   description: Improve application resilience by distributing load across multiple servers and use path-based routing to direct web traffic.
-  ms.date: 05/02/2019
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 10/07/2022
+  author: vhorne
+  ms.author: victorh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Load balance your web service traffic with Application Gateway
@@ -19,7 +19,7 @@ prerequisites: |
   - Knowledge of basic networking concepts
   - Familiarity with Azure virtual machines and Azure App Service
   - Familiarity with Azure virtual networking
-iconUrl: /learn/achievements/load-balance-web-traffic-with-application-gateway.svg
+iconUrl: /training/achievements/load-balance-web-traffic-with-application-gateway.svg
 levels:
 - beginner
 roles:

@@ -6,6 +6,10 @@ on:
     branches: 
       - main
 
+permissions:
+  id-token: write
+  contents: read
+
 env:
   AZURE_RESOURCEGROUP_NAME: ToyWebsiteTest
   ENVIRONMENT_TYPE: Test
@@ -25,7 +29,9 @@ jobs:
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
     - uses: azure/arm-deploy@v1
       name: Run preflight validation
       with:
@@ -43,15 +49,18 @@ jobs:
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
-    - uses: Azure/cli@v1
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+    - uses: azure/arm-deploy@v1
       name: Run what-if
       with:
-        inlineScript: |
-            az deployment group what-if \
-              --resource-group ${{ env.AZURE_RESOURCEGROUP_NAME }} \
-              --template-file deploy/main.bicep \
-              --parameters environmentType=${{ env.ENVIRONMENT_TYPE }}
+        failOnStdErr: false
+        resourceGroupName: ${{ env.AZURE_RESOURCEGROUP_NAME }}
+        template: deploy/main.bicep
+        parameters: >
+          environmentType=${{ env.ENVIRONMENT_TYPE }}
+        additionalArguments: --what-if
 
   deploy:
     runs-on: ubuntu-latest
@@ -62,7 +71,9 @@ jobs:
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
     - uses: azure/arm-deploy@v1
       name: Deploy website
       with:

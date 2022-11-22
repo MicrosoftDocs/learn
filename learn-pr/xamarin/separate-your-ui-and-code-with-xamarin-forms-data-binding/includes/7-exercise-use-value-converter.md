@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Here, you create a value converter to translate the `ImageUrl` property on the `Flag` object into an `ImageSource` that the Xamarin.Forms image control can display. Specifically, the value converter loads images from your embedded resources located in the **FlagData** assembly.
 
 This exercise is a continuation of the previous one. Use your existing solution, or begin from the **exercise2** > **final** solution in your copy of the cloned or downloaded [!INCLUDE [module-exercise-repo](module-exercise-repo.md)].
@@ -82,7 +84,7 @@ This exercise is a continuation of the previous one. Use your existing solution,
 
 1. Remove the code-behind, which is currently setting the source property. You also can remove the `x:Name` on the image in XAML because you no longer need to reference it in code-behind.
 
-1. Run the application, and make sure the flag is properly displayed. Make sure to try a few countries by selecting the up and down arrows on the toolbar.
+1. Run the application, and make sure the flag is properly displayed. Make sure to try a few countries/regions by selecting the up and down arrows on the toolbar.
 
     ```xml
     <Image HeightRequest="200"

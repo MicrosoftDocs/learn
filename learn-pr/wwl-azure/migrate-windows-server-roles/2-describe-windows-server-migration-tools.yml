@@ -4,13 +4,12 @@ title: Describe the Windows Server Migration Tools
 metadata:
   title: Describe the Windows Server Migration Tools
   description: "Describe the Windows Server Migration Tools"
-  ms.date: 11/26/2021
+  ms.date: 04/06/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |

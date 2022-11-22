@@ -3,7 +3,7 @@ uid: learn.wwl.azure-virtual-desktop-architecture
 metadata:
   title: Azure Virtual Desktop Architecture
   description: "Azure Virtual Desktop Architecture"
-  ms.date: 01/20/2022
+  ms.date: 08/01/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   *  Identify the Azure limitations for Azure Virtual Desktop.
   *  Describe the options for Azure Virtual Desktop pricing.
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/1-azure-virtual-desktop-architecture.svg
 levels:
 - intermediate
 roles:
@@ -28,6 +28,9 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- architecture
+- remote-hybrid-work
 units:
 - learn.wwl.azure-virtual-desktop-architecture.introduction
 - learn.wwl.azure-virtual-desktop-architecture.for-enterprise

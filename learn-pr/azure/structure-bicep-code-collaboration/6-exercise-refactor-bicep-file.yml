@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Refactor your Bicep file
   description: Learn how to refactor your Bicep file to follow best practices.
   ms.date: 08/06/2021
-  author: pazdedav
-  ms.author: dapazd
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15

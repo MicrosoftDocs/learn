@@ -5,8 +5,8 @@ metadata:
   title: First Challenge
   description: Use your new knowledge of data type casting and conversion to solve a programming challenge.
   ms.date: 10/03/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

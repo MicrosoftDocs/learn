@@ -5,8 +5,8 @@ metadata:
   title: Retrieve application log files
   description: Retrieve application log files
   ms.date: 03/20/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: msangapu-msft
+  ms.author: msangapu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

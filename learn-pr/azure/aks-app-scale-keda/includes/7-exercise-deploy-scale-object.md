@@ -50,7 +50,7 @@ This is where we will see what KEDA can do.  We will create a `ScaledObject` to 
           listLength: "10"            # Required
           enableTLS: "false"          # optional
           databaseIndex: "0"          # optional
-          addressFromEnv: REDIS_HOST
+          hostFromEnv: REDIS_HOST
           portFromEnv: REDIS_PORT
     ```
 
@@ -102,7 +102,7 @@ This is where we will see what KEDA can do.  We will create a `ScaledObject` to 
           listLength: "10"            # Required
           enableTLS: "false"          # optional
           databaseIndex: "0"          # optional
-          addressFromEnv: REDIS_HOST
+          hostFromEnv: REDIS_HOST
           portFromEnv: REDIS_PORT
     ```
 

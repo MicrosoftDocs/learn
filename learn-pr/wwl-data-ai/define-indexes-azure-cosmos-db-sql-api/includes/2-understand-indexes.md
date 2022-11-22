@@ -1,4 +1,4 @@
-Every Azure Cosmos DB SQL API container has a built-in policy that determines how each item should be indexed. By default, this policy dictates that create, update, or delete operations for any item should update the index and that the index should include all properties of every item. This intelligent default is excellent at the start of many solutions as you get good and predictable query performance without having to dive too deeply into tuning an index.
+Every Azure Cosmos DB for NoSQL container has a built-in policy that determines how each item should be indexed. By default, this policy dictates that create, update, or delete operations for any item should update the index and that the index should include all properties of every item. This intelligent default is excellent at the start of many solutions as you get good and predictable query performance without having to dive too deeply into tuning an index.
 
 Let’s review an example of the default policy in action.
 
@@ -21,7 +21,7 @@ Here, we have a JSON object representing a product named **Touring-1000 Blue** w
 }
 ```
 
-If we were to represent this JSON object as a tree, this representation would include traversal paths for both the **name** property and its value (**Touring-100**). The tree also contains three traversal paths for the three objects in the **tags** array, each with a leaf node for their **name** properties and respective values.
+If we were to represent this JSON object as a tree, this representation would include traversal paths for both the **name** property and its value (**Touring-1000 Blue**). The tree also contains three traversal paths for the three objects in the **tags** array, each with a leaf node for their **name** properties and respective values.
 
 ![Visual tree representation of the Touring-1000 Blue JSON object](../media/2-tour-tree.png)
 
@@ -78,6 +78,6 @@ You can walk through a similar traversal:
 2. Moving to the **name** property, Still, all items match.
 3. Finally, ending at the **Touring-1000 Blue** node, Only the **#1** item matches.
 
-The search results are that the #1 item (**Touring-1000 Blue**) matches, and the SQL query will return only the **name** field from this item.
+The search results are that the #1 item (**Touring-1000 Blue**) matches, and the SQL query will return only the **id** field from this item.
 
 ![Example of a search traversal of the inverted index highlighting only the name property and Touring-1000 Blue value path](../media/2-search-tree-02.png)

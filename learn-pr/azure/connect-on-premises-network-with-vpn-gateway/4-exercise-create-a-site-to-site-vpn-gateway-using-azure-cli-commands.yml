@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create a site-to-site VPN gateway by using Azure CLI commands
   description: Exercise - Create a site-to-site VPN gateway by using Azure CLI commands
   ms.date: 04/26/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: cherylmc
+  ms.author: cherylmc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 25

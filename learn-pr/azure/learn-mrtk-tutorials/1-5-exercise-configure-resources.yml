@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 10
 content: |
-  [!include[](includes/1-5-exercise-configure-resources.md)]
+  [!include[](includes/1-5-exercise-import-resources.md)]

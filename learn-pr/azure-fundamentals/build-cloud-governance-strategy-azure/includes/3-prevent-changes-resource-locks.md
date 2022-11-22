@@ -8,7 +8,7 @@ For example, at Tailwind Traders, an IT administrator was performing routine cle
 
 You can manage resource locks from the Azure portal, PowerShell, the Azure CLI, or from an Azure Resource Manager template.
 
-To view, add, or delete locks in the Azure portal, go to the **Settings** section of any resource's **Settings** pane in the Azure portal.
+To view, add, or delete locks in the Azure portal, go to the **Settings** section of any resource's **Locks** pane in the Azure portal.
 
 Here's an example that shows how to add a resource lock from the Azure portal. You'll apply a similar resource lock in the next part.
 
@@ -19,8 +19,8 @@ Here's an example that shows how to add a resource lock from the Azure portal. Y
 
 You can apply locks to a subscription, a resource group, or an individual resource. You can set the lock level to **CanNotDelete** or **ReadOnly**.
 
- -  **CanNotDelete** means authorized people can still read and modify a resource, but they can't delete the resource without first removing the lock.
- -  **ReadOnly** means authorized people can read a resource, but they can't delete or change the resource. Applying this lock is like restricting all authorized users to the permissions granted by the **Reader** role in Azure RBAC.
+- **CanNotDelete** means authorized people can still read and modify a resource, but they can't delete the resource without first removing the lock.
+- **ReadOnly** means authorized people can read a resource, but they can't delete or change the resource. Applying this lock is like restricting all authorized users to the permissions granted by the **Reader** role in Azure RBAC.
 
 ## How do I delete or change a locked resource?
 

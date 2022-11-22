@@ -1,4 +1,4 @@
-Strings can be _indexed_ (or subscripted). The index of the first character of a string is 0. There is no separate character type. A character is simply a string of size 1. Here's how to get the character at a specific index.
+Strings can be *indexed* (or subscripted). The index of the first character of a string is 0. There is no separate character type. A character is simply a string of size 1. Here's how to get the character at a specific index.
 
 ```python
 word = 'Python'
@@ -23,7 +23,7 @@ The output is:
 'n'
 ```
 
-And index can also be a negative number, which indicates that counting is to start from the end of the string. Because -0 is the same as 0, a negative index starts from -1:
+An index can also be a negative number, which indicates that counting is to start from the end of the string. Because -0 is the same as 0, a negative index starts from -1:
 
 ```python
 word[-1]  # Last character.
@@ -49,7 +49,7 @@ The output is:
 
 ## Slices
 
-Python supports both indexing, which extracts individual characters from a string, and _slicing_, which extracts a substring or _slice_. To slice, you indicate a _range_ in the format _start_**:**_end_. The start position is included in the returned substring but the end position is excluded from it:
+Python supports both indexing, which extracts individual characters from a string, and *slicing*, which extracts a substring (or *slice*). To slice, you indicate a *range* in the format _start_**:**_end_. The start position is included in the returned substring, but the end position is excluded:
 
 ```python
 word[0:2]  # Characters from position 0 (included) to 2 (excluded).
@@ -73,7 +73,7 @@ The output is:
 'tho'
 ```
 
-If you omit either position, the default start position is 0 and the default end is the length of the string:
+If you omit either position, the default start position is 0 and the default end is the string's length:
 
 ```python
 word[:2]   # Characters from the beginning to position 2 (excluded).
@@ -202,7 +202,7 @@ The output is:
 
 ## String immutability
 
-Python strings are [immutable](https://docs.python.org/3.6/glossary.html#term-immutable?azure-portal=true), which means that they can't be changed. Assigning a value to an indexed position in a string therefore results in an error:
+Python strings are [immutable](https://docs.python.org/3.6/glossary.html#term-immutable?azure-portal=true), which means they can't be changed. Assigning a value to an indexed position in a string therefore results in an error:
 
 ```python
 word[0] = 'J'
@@ -234,7 +234,7 @@ TypeError                                 Traceback (most recent call last)
 TypeError: 'str' object does not support item assignment
 ```
 
-A slice is itself a value that you can concatenate with other values by using the plus ("+") operator:
+A slice is itself a value you can concatenate with other values using the plus ("+") operator:
 
 ```python
 'J' + word[1:]

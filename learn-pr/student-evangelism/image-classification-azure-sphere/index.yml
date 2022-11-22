@@ -29,7 +29,7 @@ prerequisites: |
     - Visual Studio Code installed on your computer
     - Git installed on your computer
     - Ability to use Git/GitHub
-iconUrl: /learn/achievements/student-evangelism/image-classification-using-azure-sphere.svg
+iconUrl: /training/achievements/student-evangelism/image-classification-using-azure-sphere.svg
 badge:
   uid: learn.oxford.image-classification-azure-sphere.badge
 levels:
@@ -38,6 +38,9 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-edge
+subjects:
+- classification-analysis
+- networking
 units:
 - learn.oxford.image-classification-azure-sphere.introduction
 - learn.oxford.image-classification-azure-sphere.design-image-classification-model

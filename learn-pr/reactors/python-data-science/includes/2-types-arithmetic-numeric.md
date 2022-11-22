@@ -36,7 +36,7 @@ The output is:
 1.4
 ```
 
-Division ("/") always returns a floating-point number, which brings up an important point. Python, like other programming languages, has different numeric types. Integer numbers, such as 1, 3, and 20, have type [int](https://docs.python.org/3.6/library/functions.html#int?azure-portal=true). Numbers like 3.0 or 1.6, which have a fractional component, have type [float](https://docs.python.org/3.5/library/functions.html#float?azure-portal=true).
+Division ("/") always returns a floating-point number, which brings up an important point. Python, like other programming languages, has different numeric types. Integer numbers, such as 1, 3, and 20, have the type [int](https://docs.python.org/3.6/library/functions.html#int?azure-portal=true). Numbers like 3.0 or 1.6, which have a fractional component, have the type [float](https://docs.python.org/3.5/library/functions.html#float?azure-portal=true).
 
 You can mix numeric types in calculations:
 
@@ -122,7 +122,7 @@ The output is:
 -25
 ```
 
-To assert the order of precedence that you want, use parentheses ("()"):
+To assert the order of precedence you want, use parentheses ("()"):
 
 ```python
 (-5) ** 2

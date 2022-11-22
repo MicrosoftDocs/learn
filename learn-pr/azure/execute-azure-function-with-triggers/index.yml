@@ -3,9 +3,9 @@ uid: learn.execute-azure-function-with-triggers
 metadata:
   title: Execute an Azure Function with triggers
   description: This module demos some of the most common types of triggers for executing Azure Functions and how to configure them to execute your logic.
-  ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 04/05/2022
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Execute an Azure Function with triggers
@@ -17,7 +17,7 @@ abstract:  |
   - Create an HTTP trigger to invoke a function when an HTTP request is received
   - Create a blob trigger to invoke a function when a blob is created or updated in Azure Storage
 prerequisites: None
-iconUrl: /learn/achievements/execute-azure-function-with-triggers.svg
+iconUrl: /training/achievements/execute-azure-function-with-triggers.svg
 levels: 
 - beginner
 roles: 
@@ -27,6 +27,8 @@ products:
 - azure
 - azure-functions
 - azure-portal
+subjects:
+- cloud-computing
 units:
 - learn.execute-azure-function-with-triggers.1-introduction
 - learn.execute-azure-function-with-triggers.2-determine-best-trigger

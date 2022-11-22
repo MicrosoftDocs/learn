@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 For this exercise, you'll return to the planetarium **Astronomy** app. Once again, there's a starter solution for you to work with. You'll still be adding navigation to the app, but this time you'll use tabs.
 
 ## Open starter solution

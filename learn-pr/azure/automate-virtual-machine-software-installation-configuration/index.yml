@@ -4,8 +4,8 @@ metadata:
   title: Automate the installation and configuration of software in your Virtual Machines
   description: Learn how to automate the installation and configuration of software in your Azure Virtual Machines.
   ms.date: 05/15/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Automate the installation and configuration of software in your Virtual Machines
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Basic understanding of Azure Virtual Machines
   - Experience using command-line tools to automate tasks
-iconUrl: /learn/achievements/automate-virtual-machine-software-installation-configuration.svg
+iconUrl: /training/achievements/automate-virtual-machine-software-installation-configuration.svg
 levels:
 - beginner
 roles:
@@ -28,6 +28,8 @@ products:
 - azure
 - azure-virtual-machines
 - azure-clis
+subjects:
+- virtual-machine
 units:
 - learn.azure.automate-virtual-machine-software-installation-configuration.introduction
 - learn.azure.automate-virtual-machine-software-installation-configuration.automate-installation-virtual-machine

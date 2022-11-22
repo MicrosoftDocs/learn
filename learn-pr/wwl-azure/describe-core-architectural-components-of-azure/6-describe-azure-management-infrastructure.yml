@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-core-architectural-components-of-azure.describe-azure-management-infrastructure
+title: Describe Azure management infrastructure
+metadata:
+  title: Describe Azure management infrastructure
+  description: "Describe Azure management infrastructure"
+  ms.date: 08/03/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-describe-azure-management-infrastructure.md)]

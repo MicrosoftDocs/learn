@@ -74,7 +74,7 @@ func main() {
     rand.Seed(sec)
 
     for {
-        fmt.Print("Writting inside the loop...")
+        fmt.Print("Writing inside the loop...")
         if num = rand.Int31n(10); num == 5 {
             fmt.Println("finish!")
             break

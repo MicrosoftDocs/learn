@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-significant-government-strategy-actions.describe-office-of-management-budget-circular
+title: Describe the Office of Management and Budget Circular No. A-130
+metadata:
+  title: Describe the Office of Management and Budget Circular No. A-130
+  description: "Describe the Office of Management and Budget Circular No. A-130"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/14-describe-office-of-management-budget-circular.md)]

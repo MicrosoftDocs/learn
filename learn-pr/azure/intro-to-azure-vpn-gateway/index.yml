@@ -6,16 +6,19 @@ metadata:
   ms.date: 12/22/2021
   author: Orin-Thomas
   ms.author: orthomas
-  ms.custom: team=cloud_advocates
+  ms.custom:
+  - team=cloud_advocates
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.contributors:
+  - orthomas-01082022
 title: Introduction to Azure VPN Gateway
 summary: This module describes what Azure VPN Gateway does, how it works, and when you should choose to use Azure VPN Gateway as a solution to meet your organization's needs.
 abstract: |
   In this module, you will:
   - Learn what Azure VPN Gateway is and the functionality it provides.
   - Determine whether Azure VPN Gateway meets the needs of your organization.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
@@ -27,6 +30,8 @@ products:
   - azure-vpn-gateway
 prerequisites: |
   Understanding of basic networking concepts.
+subjects:
+- networking
 units:
   - learn.azure.intro-to-azure-vpn-gateway.introduction
   - learn.azure.intro-to-azure-vpn-gateway.what-is-azure-vpn-gateway

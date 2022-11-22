@@ -1,42 +1,71 @@
-Compute refers to the hosting model for the computing resources that your applications run on. Azure offers several compute services, which we will cover in this module. Here’ a short summary. 
+Azure offers several compute services. _Compute_ refers to the hosting model for the computing resources that your applications run on. 
 
-- **Virtual machines (IaaS)**. Deploy and manage VMs inside an Azure virtual network.
+### Things to know about Azure compute services
 
-- **Azure Batch (PaaS)**. A managed service for running large-scale parallel and high-performance computing (HPC) applications.
+Let's take a quick look at the Azure compute services we review in this module.
 
-- **Azure Functions (FaaS)**. A managed service for running code in the cloud, without worrying about the infrastructure.
+- **Azure Virtual Machines**: Deploy and manage virtual machines inside an Azure virtual network.
 
-- **Azure Logic Apps (PaaS)**.  A cloud-based platform for creating and running automated workflows.
+- **Azure Batch**: Apply this managed service to run large-scale parallel and high-performance computing (HPC) applications.
 
-- **Container Instances (PaaS)**. A fast and simple way to run a container in Azure. You don’t provision any virtual machines and don’t need a higher-level service.
+- **Azure App Service**: Host web apps, mobile app backends, RESTful APIs, or automated business processes with this managed service.
 
-- **App Service (PaaS)**. A managed service for hosting web apps, mobile app back ends, RESTful APIs, or automated business processes.
+- **Azure Functions**: Use this managed service to run code in the cloud, without worrying about the infrastructure.
 
-- **Azure Kubernetes Service (PaaS).** A managed Kubernetes service for running containerized applications.
+- **Azure Logic Apps**: Configure this cloud-based _platform_ to create and run automated workflows similar to capabilities in Azure Functions.
 
-- **Azure Service Fabric.**  A distributed systems platform that makes it easy to package, deploy, and manage scalable and reliable microservices and containers.
+- **Azure Container Instances**: Run containers in Azure in a fast and simply manner without creating virtual machines or relying on a higher-level service.
 
-This [flowchart](/azure/architecture/guide/technology-choices/compute-decision-tree) provides high-level guidance on when to select each compute option. You’ll want to refer to this diagram as we go through the choices. 
+- **Azure Kubernetes Service (AKS)**: Run containerized applications with this managed Kubernetes service.
 
-:::image type="content" source="../media/compute-flowchart.png" alt-text="A detailed flowchart to show compute solutions.":::
+### Things to consider when choosing Azure compute services
 
- 
+As you begin to compare Azure compute services to choose your infrastructure solution for Tailwind Traders, there are several implementation points to think about.
 
+- Architecture and infrastructure requirements
+- Support for new workload scenarios, like HPC applications
+- Required hosting options, including platform, infrastructure, and functions
+- Support for migrations, such as cloud-optimized or lift and shift
 
-On the diagram, **Cloud optimized** is a strategy for migrating to the cloud. Cloud optimized refactors an application to take advantage of cloud-native features and capabilities. A **lift and shift** strategy migrates workloads without redesigning the application or making code changes. Lift-and-shift lets organizations keep running their applications with minimal changes and disruption.
+#### Workloads and architecture
 
-> [!TIP]
-> The output from this flowchart is a **starting point** for consideration. You’ll need to do a more detailed evaluation of the service to see if it meets your needs. The next sections will help with this analysis.
+When you plan for new instances of Azure services and new workloads, consider the following scenarios.
 
-**Review the compute hosting options**
+- **Control**: Determine if you require full control over installed software and applications.
+   
+- **Workloads**: Consider the workloads you need to support, such as **HPC workloads** or **event-driven workloads**.
 
-The compute solution has three hosting options: Infrastructure as a Service, Platform as a Service, and Function as a Service? There’s also Software-as-a-Service which isn’t a compute solution. The [hosting option](/azure/security/fundamentals/shared-responsibility) determines the developer and cloud provider responsibilities. This hosting decision will influence your design. 
+- **Architecture**: Think about what architecture best supports your infrastructure, including **microservice**, **full-fledged orchestration**, and **serverless**.
 
-:::image type="content" source="../media/host-infrastructures.png" alt-text="Responsibilities for IaaS, PaaS, and FaaS.":::
+#### Migrations
 
+An important consideration for your compute service involves analyzing the migration capabilities.
 
-- **Infrastructure-as-a-Service** (IaaS) lets you create individual VMs along with the associated networking and storage components. Then you deploy whatever software and applications you want onto those VMs. This model is the closest to a traditional on-premises environment, except that Microsoft manages the infrastructure. You still manage the individual VMs.
+- **Cloud optimized**: To migrate to the cloud and refactor applications to access cloud-native features, consider compute services that are cloud-optimized.
 
-- **Platform-as-a-Service** (PaaS) provides a managed hosting environment, where you can deploy your application without needing to manage VMs or networking resources. Azure App Service is a PaaS service.
+- **Lift and shift**: For lift and shift workload migrations, consider compute services that don't require application redesigns or code changes.
 
-- **Functions-as-a-Service** (FaaS) goes even further in removing the need to worry about the hosting environment. In a FaaS model, you deploy your code, and the service automatically runs it. Azure Functions is a FaaS service.
+- **Containerized**: In your migration planning, consider whether your compute service needs to support containerized applications, or commercial off the shelf (COTS) apps.
+
+#### Hosting
+
+The [hosting option](/azure/security/fundamentals/shared-responsibility) of your compute solution determines the developer and cloud provider responsibilities. Azure offers three hosting options across the compute services.
+
+:::image type="content" source="../media/host-infrastructures.png" alt-text="Diagram that highlights the developer and cloud provider responsibilities for infrastructure and platform services." border="false":::
+
+- **[Infrastructure-as-a-Service (IaaS)](https://azure.microsoft.com/overview/what-is-iaas/)** lets you create individual virtual machines along with the associated networking and storage components. Then you deploy the software and applications you want onto those virtual machines. This model is the closest to a traditional on-premises environment, except that Microsoft manages the infrastructure. You still manage the individual virtual machines. Azure Virtual Machines offers IaaS hosting.
+
+- **Platform-as-a-Service (PaaS)** provides a managed hosting environment, where you can deploy your application without needing to manage virtual machines or networking resources. Azure compute services that offer PaaS hosting include Azure Batch, App Service, Container Instances, and Azure Kubernetes Service.
+
+- **Function-as-a-Service (FaaS)** goes further in removing the need to worry about the hosting environment. In a FaaS model, you deploy your code, and the service automatically runs it. Azure Functions and Logic Apps offer FaaS hosting.
+
+### Azure compute service decision flowchart 
+
+Azure provides a decision [flowchart](/azure/architecture/guide/technology-choices/compute-decision-tree) with high-level guidance for how to select the appropriate Azure compute service for your scenario. 
+
+> [!NOTE]
+> The following diagram has been edited to show only the Azure services described in this module. 
+
+The output from this decision flowchart is a **starting point** for your planning. You'll need to do a detailed evaluation of the services to determine exactly which solution meets your requirements. As you work through this module, refer to this diagram to become familiar with the considerations and options. 
+
+:::image type="content" source="../media/compute-flowchart.png" alt-text="Flowchat that shows considerations and options for Azure compute solutions." border="false":::

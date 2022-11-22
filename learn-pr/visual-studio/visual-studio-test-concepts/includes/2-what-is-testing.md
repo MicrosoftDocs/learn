@@ -29,9 +29,9 @@ public void AddTest()
 
 In the preceding code, the product code is the `Calculator` class and its `Add()` method. The comparison happens when calling `Assert.AreEqual(2, actual)`. This pattern is something you find in most, if not all, test methods.
 Here's how this test would appear in Visual Studio:
-:::image type="content" source="../media/test-intro-testmethod.png" alt-text="Screenshot of test method in Visual Studio editor. There is a callout where the test is referencing product code. Another callout highlights where results are asserted.":::
+:::image type="content" source="../media/test-intro-testmethod.png" alt-text="Screenshot of test method in Visual Studio editor. There's a callout where the test is referencing product code. Another callout highlights where results are asserted.":::
 
-One difference between tests and product code is they don't run as part of your app's normal function. So instead of using F5 (or the large green run button at the top of your development environment) to run as you would your app, you choose which tests to run. You can make this choice through Visual Studio Test Explorer or other helpful editor tools. Tests are there for support, but aren't shipped with the app, and because of this, they are run independently like their own app.
+One difference between tests and product code is they don't run as part of your app's normal function. So instead of using F5 (or the large green run button at the top of your development environment) to run as you would your app, you choose which tests to run. You can make this choice through Visual Studio Test Explorer or other helpful editor tools. Tests are there for support but because they aren't shipped with the app, they run independently like their own app.
 
 :::image type="content" source="../media/test-intro-run-tests-collage.png" alt-text="Screenshot of buttons and commands for running or debugging tests from Visual Studio Test Explorer or Editor.":::
 

@@ -116,9 +116,9 @@ From left to right, the controls are:
 
 ### Use the debug console
 
-The debug console can be shown or hidden by selecting **Ctrl+Shift+Y** for Windows and Linux. Select **Cmd+Shift+Y** for Mac. The debug console can be used to visualize your application console logs. It can also be used to evaluate expressions or execute code in the current execution content, like commands or variable names in the built-in .NET debugger.
+You can show or hide the debug console by selecting **Ctrl+Shift+Y** for Windows and Linux. Select **Cmd+Shift+Y** for Mac. You can use the debug console to visualize your application console logs. You can also use it to evaluate expressions or execute code in the current execution content, like commands or variable names in the built-in .NET debugger.
 
-You can enter a .NET expression in the input field at the bottom of the debug console. Then select **Enter** to evaluate it. The result displays directly in the console.
+You can enter a .NET expression in the input field at the bottom of the debug console, then select **Enter** to evaluate it. The result displays directly in the console.
 
 :::image source="../media/debug-console.png" alt-text="Screenshot of Visual Studio Code debug console.":::
 

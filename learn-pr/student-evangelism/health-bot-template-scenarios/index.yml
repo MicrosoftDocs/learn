@@ -16,7 +16,7 @@ abstract: |
   - Learn what scenario templates are.
   - Recognize use cases for scenario templates.
   - Build a health bot by using a scenario template.
-iconUrl: /learn/achievements/student-evangelism/health-bot-template-scenarios.svg
+iconUrl: /training/achievements/student-evangelism/health-bot-template-scenarios.svg
 levels:
   - beginner
 roles:
@@ -29,6 +29,8 @@ prerequisites: |
   - Basic Azure Health Bot
   - Language understanding in Azure Health Bot
   - Azure Health Bot built-in scenarios
+subjects:
+- chatbot
 units:
   - learn.health-bot-template-scenarios.1-introduction
   - learn.health-bot-template-scenarios.2-introduction-scenario-templates

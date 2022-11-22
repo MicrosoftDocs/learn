@@ -5,9 +5,9 @@ metadata:
   unitType: exercise
   title: Exercise - Set up the host pool and register virtual machine host
   description: Exercise - Set up the host pool and register virtual machine host
-  ms.date: 07/05/2021
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 05/11/2022
+  author: vhorne
+  ms.author: victorh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 20

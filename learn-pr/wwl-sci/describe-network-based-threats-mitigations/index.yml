@@ -3,20 +3,20 @@ uid: learn.wwl.describe-network-based-threats-mitigations
 metadata:
   title: Describe network-based threats and mitigations
   description: "Describe basic networking concepts and how they relate to cybersecurity"
-  ms.date: 12/02/2021
+  ms.date: 08/17/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe network-based threats and mitigations
-summary: Networks form the backbone of our digitally connected world.  They also represent an entry point for cyberattacks.  In this module you will learn about threats to network security and how to mitigate those threats.
+summary: Networks form the backbone of our digitally connected world.  They also represent an entry point for cyberattacks.  In this module, you'll learn about threats to network security and how to mitigate those threats.
 abstract: |
   - Describe the basics of networks
   - Describe the threats to network security
   - Describe ways to protect your network
   - Describe ways to securely connect to and communicate over a network
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/4-describe-network-based-threats-and-mitigations.svg
 levels:
 - beginner
 roles:
@@ -26,6 +26,9 @@ roles:
 products:
 - azure
 - m365
+subjects:
+- networking
+- threat-protection
 units:
 - learn.wwl.describe-network-based-threats-mitigations.introduction
 - learn.wwl.describe-network-based-threats-mitigations.describe-different-types-of-networks

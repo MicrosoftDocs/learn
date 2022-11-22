@@ -3,9 +3,9 @@ uid: learn.wwl.intro-to-transact-sql
 metadata:
   title: Introduction to Transact-SQL
   description: "Introduction to Transact-SQL"
-  ms.date: 09/13/2021
+  ms.date: 11/08/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: anrudduc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Transact-SQL
@@ -20,7 +20,7 @@ abstract: |
   - Handle NULLs
 prerequisites: |
   Before starting this module, it is helpful to have experience of working with tables with data; for example in a spreadsheet.
-iconUrl: /learn/achievements/explore-sql-server-and-query-tools.svg
+iconUrl: /training/achievements/explore-sql-server-and-query-tools.svg
 levels:
 - beginner
 roles:
@@ -38,6 +38,9 @@ products:
 - azure-sql-managed-instance
 - azure-sqlserver-vm
 - azure-sql-virtual-machines
+subjects:
+- data-analytics
+- database
 units:
 - learn.wwl.intro-to-transact-sql.introduction
 - learn.wwl.intro-to-transact-sql.work-with-schemas

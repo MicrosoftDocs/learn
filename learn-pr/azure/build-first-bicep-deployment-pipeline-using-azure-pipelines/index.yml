@@ -5,8 +5,8 @@ metadata:
   title: Build your first Bicep deployment pipeline by using Azure Pipelines
   description: Build a basic deployment pipeline for Bicep infrastructure as code templates by using Azure DevOps and Azure Pipelines.
   ms.date: 08/30/2021
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build your first Bicep deployment pipeline by using Azure Pipelines
@@ -32,7 +32,7 @@ prerequisites: |
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
   - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps).
   - [Git](https://git-scm.com/download?azure-portal=true).
-iconUrl: /learn/achievements/bicep/build-first-bicep-deployment-pipeline-using-azure-pipelines.svg
+iconUrl: /training/achievements/bicep/build-first-bicep-deployment-pipeline-using-azure-pipelines.svg
 levels:
   - intermediate
 roles:
@@ -45,6 +45,9 @@ products:
   - azure-resource-manager
   - azure-devops
   - azure-pipelines
+subjects:
+  - devops
+  - cloud-computing
 units:
 - learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.introduction
 - learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.understand-azure-pipelines

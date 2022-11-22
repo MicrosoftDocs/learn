@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Publish the API with GitHub Actions
   description: Use a GitHub Action to automatically publish your updated static site and API
   ms.date: 06/17/2021
-  author: johnpapa
-  ms.author: jopapa
+  author: craigshoemaker
+  ms.author: cshoe
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-javascript-framework

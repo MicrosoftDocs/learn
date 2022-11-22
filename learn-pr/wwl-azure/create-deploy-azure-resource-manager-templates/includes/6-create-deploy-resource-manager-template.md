@@ -97,7 +97,7 @@ Follow the steps below to update the name property of the storage resource to us
 
 1. Enter a square bracket `[`, which produces a list of Azure Resource Manager template functions. Select **parameters** from the list.
 
-1. Enter a single quote `'` inside of the round brackets produces a list of all parameters defined in the template and select **storageAccountName**.
+1. Add `()` at the end of **parameters** and select **storageAccountName** from the pop-up. If the list of parameters does not show up automatically you can enter a single quote `'` inside of the round brackets to display the list.
 
 The resources block of the template should now be similar to the example below.
 
@@ -120,7 +120,7 @@ The resources block of the template should now be similar to the example below.
 
 ## Create a parameter file
 
-An Azure Resource Manager template parameter file allows you to store environment-specific parameter values and pass these values in as a group at deployment time. This useful if you want to have values specific to a test or production environment, for example. The extension makes it easy to create a parameter file that is mapped to your existing template. Follow the steps below to create a parameter file.
+An Azure Resource Manager template parameter file allows you to store environment-specific parameter values and pass these values in as a group at deployment time. This is useful if you want to have values specific to a test or production environment, for example. The extension makes it easy to create a parameter file that is mapped to your existing template. Follow the steps below to create a parameter file.
 
 1. With the *azuredeploy.json* file in focus open the **Command Palette**  by selecting **View > Command Palette** from the menu bar.
 
@@ -163,7 +163,7 @@ It's time to deploy the template. Follow the steps below, in the VS Code termina
 1. Use the `az deployment group create` command to deploy your template. The deployment will take a few minutes to complete, progress will be shown in the terminal.
 
     ```bash
-    az deployment group create --resource-group az204-arm-rg --template-file azuredeploy.json --parameters azuredeploy.parameters.json
+    az  deployment group create --resource-group az204-arm-rg --template-file azuredeploy.json --parameters azuredeploy.parameters.json
     ```
 
 1. You can verify the deployment by running the command below. Replace `<myStorageAccount>` with the name you used earlier.

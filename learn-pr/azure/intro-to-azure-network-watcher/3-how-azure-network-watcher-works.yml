@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-network-watcher.how-azure-network-watcher-works
+title: How Azure Network Watcher works
+metadata:
+  title: How Azure Network Watcher works
+  description: Learn how Azure Network Watcher works and how to implement it in your organization.
+  ms.date: 02/09/2022
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.custom: team=cloud_advocates
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-how-azure-network-watcher-works.md)]

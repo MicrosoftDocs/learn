@@ -8,7 +8,7 @@ To understand ownership, let's first take a look at Rust's *scoping rules* and *
 In Rust, like most other programming languages, variables are valid only within a certain *scope*. In Rust, scopes are often denoted by using curly brackets `{}`. Common scopes include function bodies and `if`, `else`, and `match` branches.
 
 > [!NOTE]
-> In Rust, "variables" are often called "bindings". This is because "variables" in Rust aren't very variable - they don't change that often since they're unchangeable by default. Instead, we often think about names being "bound" to data, hence the name "binding". We'll use both "variable" and "binding" interchangeably though. 
+> In Rust, "variables" are often called "bindings". This is because "variables" in Rust aren't very variable - they don't change that often since they're unchangeable by default. Instead, we often think about names being "bound" to data, hence the name "binding". In this module, we'll use the terms "variable" and "binding" interchangeably.
 
 Let's say we have a `mascot` variable that's a string, defined within a scope:
 
@@ -40,13 +40,13 @@ println!("{}", mascot);
 
 You can run this example online in the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=5734858af1e100f6ca2ef73be02e89ab&azure-portal=true).
 
-The variable is valid from the point at which it's declared until the end of that scope. 
+The variable is valid from the point at which it's declared until the end of that scope.
 
 ## Ownership and dropping
 
 Rust adds a twist to the idea of scopes. Whenever an object goes out of scope, it's "dropped." Dropping a variable means releasing any resources that are tied to it. For variables of files, the file ends up being closed. For variables that have allocated memory associated with them, the memory is freed.
 
-In Rust, bindings that have things "associated" with them that they will free when the binding is dropped are said to "own" those things.
+In Rust, bindings that have things "associated" with them that they'll free when the binding is dropped are said to "own" those things.
 
 In our example above, the `mascot` variable owns the String data associated with it. The `String` itself owns the heap-allocated memory that holds the characters of that string. At the end of the scope, `mascot` is "dropped", the `String` it owns is dropped, and finally the memory that `String` owns is freed.
 
@@ -59,7 +59,7 @@ In our example above, the `mascot` variable owns the String data associated with
 
 ## Move semantics
 
-Sometimes though we don't want the things associated with a variable to be dropped at the end of scope. Instead, we want to transfer ownership of an item from one binding to another.
+Sometimes, though, we don't want the things associated with a variable to be dropped at the end of scope. Instead, we want to transfer ownership of an item from one binding to another.
 
 The simplest example is when declaring a new binding:
 
@@ -74,9 +74,9 @@ The simplest example is when declaring a new binding:
 
 A key thing to understand is that once ownership is transferred, the old variable is no longer valid. In our example above, after we transfer ownership of the `String` from `mascot` to `ferris`, we can no longer use the `mascot` variable.
 
-In Rust, "transferring ownership" is known as "moving". In other words, in the example above, the `String` value has been *moved* from `mascot` to `ferris`.
+In Rust, "transferring ownership" is known as "moving". In other words, in the example above, the ownership of the `String` value has been *moved* from `mascot` to `ferris`.
 
-If we try to use `mascot` after the `String` has been moved from `mascot` to `ferris`, the compiler will not compile our code:
+If we try to use `mascot` after the `String` has been moved from `mascot` to `ferris`, the compiler won't compile our code:
 
 ```rust
 {
@@ -86,7 +86,7 @@ If we try to use `mascot` after the `String` has been moved from `mascot` to `fe
 }
 ```
 
-```
+```output
 error[E0382]: borrow of moved value: `mascot`
  --> src/main.rs:4:20
   |
@@ -105,7 +105,7 @@ This result is known as a "use after move" compile error.
 
 ## Ownership in functions
 
-Let's take a look at an example of a string being passed to a function as an argument. Passing something as argument to function *moves* that thing into the function.
+Let's take a look at an example of a string being passed to a function as an argument. Passing something as an argument to a function *moves* that thing into the function.
 
 ```rust
 fn process(input: String) {}
@@ -155,11 +155,11 @@ fn caller() {
 }
 ```
 
-Simple types like numbers *copy* types. They implement the `Copy` trait, which means they're copied rather than moved. The same action occurs for most simple types. Copying numbers is inexpensive, so it makes sense for these values to be copied. Copying strings or vectors or other complex types can be very expensive, so they don't implement the `Copy` trait and are instead moved.
+Simple types like numbers are *copy* types. They implement the `Copy` trait, which means they're copied rather than moved. The same action occurs for most simple types. Copying numbers is inexpensive, so it makes sense for these values to be copied. Copying strings or vectors or other complex types can be very expensive, so they don't implement the `Copy` trait and are instead moved.
 
 ## Copying types that don't implement `Copy`
 
-One way to work around the errors we saw above is by *explicitly* copying types before they are moved: known as cloning in Rust. A call to `.clone` will duplicate the memory and produce a new value. The new value is moved meaning the old value can still be used.
+One way to work around the errors we saw above is by *explicitly* copying types before they're moved: known as cloning in Rust. A call to `.clone` will duplicate the memory and produce a new value. The new value is moved meaning the old value can still be used.
 
 ```rust
 fn process(s: String) {}

@@ -30,10 +30,10 @@ Microsoft Azure Monitor is a core component of the Microsoft strategy to extend 
 Azure Monitor provides three main capabilities:
 
 - Metric-based monitoring. Metrics are numerical values that represent the health status of monitored systems.
-- Querying and analyzing logs. Logs include activity, diagnostics, and telemetry data.
+- Querying and analyzing logs. Logs include activity, diagnostics, and system-generated data.
 - Alerting and remediation. Alerts notify you of anomalous conditions, allowing you to configure automatically triggered corrective actions.
 
-Additionally, Azure Monitor allows you to archive collected data for long-term analysis or compliance purposes in Azure Storage or route it to Azure Stream Analytics or non-Microsoft services by using Event Hub. You can use alerts to trigger notifications via SMS or email, trigger a remediation action implemented by an Azure logic app, Azure functions, or Azure Automation Runbook. You also can raise an incident and work item response by leveraging integration between Azure Monitor and your internal Information Technology Service Management (ITSM) platform. In case of Azure Stack HCI clusters, Azure Monitor includes Health Service telemetry, which improves the day-to-day monitoring and operational experience for clusters running S2D.
+Additionally, Azure Monitor allows you to archive collected data for long-term analysis or compliance purposes in Azure Storage or route it to Azure Stream Analytics or non-Microsoft services by using Event Hub. You can use alerts to trigger notifications via SMS or email, trigger a remediation action implemented by an Azure logic app, Azure functions, or Azure Automation Runbook. You also can raise an incident and work item response by leveraging integration between Azure Monitor and your internal Information Technology Service Management (ITSM) platform. If there are Azure Stack HCI clusters, Azure Monitor includes Health Service data, which improves the day-to-day monitoring and operational experience for clusters running Azure Stack HCI.
 
 ### Integrating Azure Stack HCI with Azure Backup
 

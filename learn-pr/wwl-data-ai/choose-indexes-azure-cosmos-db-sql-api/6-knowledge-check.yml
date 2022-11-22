@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/12/2022
+  ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "Your team has written a SQL query for Azure Cosmos DB SQL API with the following text: ``SELECT * FROM c WHERE c.sku = 'RD3387G'``. Which lookup method will the query engine use for the **sku** filter?"
+  - content: "Your team has written a SQL query for Azure Cosmos DB for NoSQL with the following text: ``SELECT * FROM c WHERE c.sku = 'RD3387G'``. Which lookup method will the query engine use for the **sku** filter?"
     choices:
     - content: "``Full scan``"
       isCorrect: false

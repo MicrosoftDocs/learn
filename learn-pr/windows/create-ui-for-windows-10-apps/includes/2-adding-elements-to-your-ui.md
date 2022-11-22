@@ -1,4 +1,4 @@
-![Tech logo.](../media/tech-all.png)
+![Tech logo of U W P and W P F.](../media/tech-all.png)
 
 ## Add elements to your UI
 
@@ -17,13 +17,13 @@ Let's get started.
 
 ::: zone pivot="uwp"
 
-![Tech logo.](../media/tech-uwp.png)
+![Tech logo of U W P and W P F. W P F appears dimmed.](../media/tech-uwp.png)
 
 #### Create a new project
 
 With Visual Studio open, create a UWP C# project. Give the project a meaningful name for this lesson. An example is **UsingControlsApp.Uwp**.
 
-![Create the project.](../media/new-project-uwp.png)
+![Screenshot that shows the Visual Studio New Project window. Blank App is selected in the Windows Universal option under Visual C Sharp.](../media/new-project-uwp.png)
 
 #### Understand size
 
@@ -154,7 +154,7 @@ Add another `Rectangle` with *LightBlue* **Background**. This time, set the **Wi
 
 You see the new `Rectangle` on top of the previous `Rectangle`.
 
-![Light blue rectangle.](../media/uwp-lightblue-rectangle.png)
+![Screenshot that shows a light blue rectangle inside a blue rectangle.](../media/uwp-lightblue-rectangle.png)
 
 > [!NOTE]
 > Remember this important feature of XAML when you build your user interfaces. In a layout control like a `Grid`, the order the controls are defined in the code is the layer order they have in the UI.
@@ -188,7 +188,7 @@ Set the first `Rectangle`'s **HorizontalAlignment** to *Left*:
 
 Now you see the blue `Rectangle` repositioned to the left side of the `Grid`.
 
-![Left-aligned rectangle.](../media/uwp-left-aligned-rectangled.png)
+![Screenshot that shows the blue rectangle on the left side of the grid.](../media/uwp-left-aligned-rectangled.png)
 
 It retains the **Width** and **Height** values. But the **HorizontalAlignment** value is no longer the default *Stretch*.
 
@@ -224,7 +224,7 @@ Now set the `Rectangle`'s **VerticalAlignment** to *Top*:
 
 Notice that the `Rectangle` moved to the top-left corner.
 
-![Left-aligned rectangle.](../media/uwp-left-top-aligned-rectangled.png)
+![Screenshot that shows the blue rectangle at the top left corner of the grid.](../media/uwp-left-top-aligned-rectangled.png)
 
 
 That looks like a tight fit. Let's add some space between the edges of the `Rectangle` and the `Grid`. We add space with the **Margin** property. It's available to all UI elements.
@@ -257,7 +257,7 @@ We set the **Margin** by using a *left, top, right, bottom* pattern for the valu
 ```
 Now you see 20 pixels of space between the left side and top of the `Rectangle`:
 
-![Left-aligned rectangle.](../media/uwp-rectangle-with-margin.png)
+![Screenshot that shows the blue rectangle at the top left corner of the grid, with 20 pixels of spacing from the edge.](../media/uwp-rectangle-with-margin.png)
 
 
 To get the same margin value all around, use a single number like `Margin="20"`. This setting is the same as `Margin="20,20,20,20"`.
@@ -303,7 +303,7 @@ Add a `TextBlock` to the `Grid` and set the **Text** property to *I'm a TextBloc
 
 The text appears at the top left of the `Grid`. The default alignment of the entire `TextBlock` container is *Stretch* like the `Rectangles`. But the **text alignment** is top left.
 
-![TextBlock.](../media/uwp-textblock.png)
+![Screenshot than shows a blue rectangle on the top left of the grid. Above the rectangle is text that says, I'm a Text Block.](../media/uwp-textblock.png)
 
 To center the text over the light blue `Rectangle`, change the `TextBlock` **VerticalAlignment** and **HorizontalAlignment** to *Center*:
 
@@ -337,7 +337,7 @@ To center the text over the light blue `Rectangle`, change the `TextBlock` **Ver
 ```
 Now you see the text centered on the page. But it's on top of the light blue `Rectangle`.
 
-![Centered TextBlock.](../media/uwp-textblock-centered.png)
+![Screenshot that shows the text, I'm a Text Block, inside the light blue box in the center of the grid.](../media/uwp-textblock-centered.png)
 
 Finally, let's try some `TextBlock` font properties: **FontFamily**, **FontSize**, and **FontWeight**:
 
@@ -373,7 +373,7 @@ Finally, let's try some `TextBlock` font properties: **FontFamily**, **FontSize*
 </Page>
 ```
 
-![TextBlock font properties.](../media/uwp-textblock-font-properties.png)
+![Screenshot that shows the text, I'm a Text Block, in the center of the grid.](../media/uwp-textblock-font-properties.png)
 
 #### The Button
 
@@ -419,7 +419,7 @@ Add a `Button` to the `Grid` and set the **Content** to *I'm a button*:
 
 Now you see the following image:
 
-![TextBlock font properties.](../media/uwp-button.png)
+![Screenshot that shows the text, I'm a Button, on the left side of the grid.](../media/uwp-button.png)
 
 > [!NOTE]
 > Something's different in the `Button` than in the `Rectangle` or `TextBlock`. The default **HorizontalAlignment** is *Left*, and **VerticalAlignment** is *Center*. When you try new controls, keep in mind that not all of them have the same default property values.
@@ -476,7 +476,7 @@ Let's wrap up this lesson by combining everything you learned to adjust the `But
 
 Now you see the `Button` at the bottom center with the assigned font properties.
 
-![Finished button.](../media/uwp-button-finished.png)
+![Screenshot that shows the text, I'm a Button, at the center bottom of the grid.](../media/uwp-button-finished.png)
 
 
 You've got the fundamentals of some basic layouts and adding controls to the UI. Now let's use these elements to accept user input. From button selections to accepting text input, the next lesson speeds things up as we build a functional application.
@@ -485,13 +485,13 @@ You've got the fundamentals of some basic layouts and adding controls to the UI.
 
 ::: zone pivot="wpf"
 
-![Tech logo.](../media/tech-wpf.png)
+![Tech logo of U W P and W P F. U W P appears dimmed.](../media/tech-wpf.png)
 
 #### Create a new project
 
 With Visual Studio open, create a WPF C# project. Give the project a meaningful name for this lesson. An example is **UsingControlsApp.Wpf**.
 
-![Create the project.](../media/new-project-wpf.png)
+![Screenshot that shows the Visual Studio New Project window. WPF App is selected. Name field is highlighted with an arrow pointed at the OK button.](../media/new-project-wpf.png)
 
 #### Understand size
 
@@ -523,7 +523,7 @@ Open **MainWindow.xaml** if it's not already open. Add a `Rectangle` with a *Blu
 
 Now you see the following image in the designer:
 
-![Blue rectangle.](../media/wpf-blue-rectangle.png)
+![Screenshot that shows a blue rectangle.](../media/wpf-blue-rectangle.png)
 
 The blue `Rectangle` fills the entire `Grid` because the default **HorizontalAlignment** and **VerticalAlignment** of a `Rectangle` is *Stretch*. To constrain the `Rectangle`, give the control an explicit **Width** and **Height** value.
 
@@ -548,7 +548,7 @@ Let's start by setting the **Width** of the `Rectangle` to 200 pixels:
 
 The width of the `Rectangle` is constrained to 200 pixels because we defined an explicit value for the **Width**.
 
-![Blue rectangle with width set.](../media/wpf-blue-rectangle-with-width.png)
+![Screenshot that shows a blue rectangle with width set at 200 pixels.](../media/wpf-blue-rectangle-with-width.png)
 
 
 The `Rectangle` still fills the space vertically. To constrain it, set the **Height**.
@@ -574,7 +574,7 @@ Give the `Rectangle` a **Height** of 200 pixels:
 
 Now the `Rectangle` is in the middle of the `Grid`.
 
-![Blue rectangle with width and height set.](../media/wpf-blue-rectangle-with-width-and-height.png)
+![Screenshot that shows a blue rectangle in the middle of the grid.](../media/wpf-blue-rectangle-with-width-and-height.png)
 
 > [!NOTE]
 > Zoom the code editor or designer at any time with the zoom level drop-down menu at the bottom-left corner. Or select and hold the Ctrl key and scroll at the same time. Zoom doesn't change the code or app. It's a tool that helps you see your work better. In the previous screenshot, it was 99 percent. In this one, it's 132 percent.
@@ -645,7 +645,7 @@ Set the first `Rectangle`'s **HorizontalAlignment** to *Left*:
 
 Now you see the blue `Rectangle` repositioned to the left side of the `Grid`.
 
-![Left-aligned rectangle.](../media/wpf-left-aligned-rectangled.png)
+![Screenshot that shows a blue rectangle on the center left side of the grid.](../media/wpf-left-aligned-rectangled.png)
 
 It retains the **Width** and **Height** values. But the **HorizontalAlignment** value is no longer the default *Stretch*.
 
@@ -680,7 +680,7 @@ Now set the `Rectangle`'s **VerticalAlignment** to *Top*:
 
 Notice that the `Rectangle` moved to the top-left corner.
 
-![Left-aligned rectangle.](../media/wpf-left-top-aligned-rectangled.png)
+![Screenshot that shows the rectangle at the top left corner of the grid.](../media/wpf-left-top-aligned-rectangled.png)
 
 That looks like a tight fit. Let's add some space between the edges of the `Rectangle` and the `Grid`. We add space with the **Margin** property, which is available to all UI elements.
 
@@ -711,7 +711,7 @@ When you set **Margin**, you use a *left, top, right, bottom* pattern for the va
 ```
 Now you see 20 pixels of space between the left side and top of the `Rectangle`.
 
-![Left-aligned rectangle.](../media/wpf-rectangle-with-margin.png)
+![Screenshot that shows the blue rectangle at the top left corner with a 20 pixel gap from the edges of the grid.](../media/wpf-rectangle-with-margin.png)
 
 
 To get the same margin value all around, use a single number like `Margin="20"`. This setting is the same as `Margin="20,20,20,20"`.
@@ -824,7 +824,7 @@ Finally, let's try some `TextBlock` font properties: **FontFamily**, **FontSize*
 </Window>
 ```
 
-![TextBlock font properties.](../media/wpf-textblock-font-properties.png)
+![Screenshot that shows the text, I'm a Text Block, centered on the grid.](../media/wpf-textblock-font-properties.png)
 
 #### The Button
 
@@ -869,7 +869,7 @@ Add a `Button` to the `Grid` and set the **Content** to *I'm a button*:
 
 Now you see the following image:
 
-![TextBlock font properties.](../media/wpf-button.png)
+![Screenshot that shows the text, I'm a Button, in the center of the Main Window.](../media/wpf-button.png)
 
 Why can't you see the `Rectangle` or `TextBlock` anymore? Remember that the order you define for the children of the `Grid` determines the visual order they're layered in. Just as the `TextBlock` is on top of the `Rectangle`, the `Button` is on top of everything else.
 

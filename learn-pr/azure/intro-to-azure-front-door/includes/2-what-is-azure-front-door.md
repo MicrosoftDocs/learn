@@ -1,8 +1,8 @@
-Many organizations have apps they want to make available to their customers, their suppliers, and almost certainly their users. The tricky part is ensuring those apps are highly available. In addition, they need to respond quickly while being appropriately secured. Azure Front Door provides different SKUs (pricing tiers) that meet these requirements. Let's briefly review the features and benefits of these SKUs so you can determine which option best suits your requirements.
+Many organizations have applications they want to make available to their customers, their suppliers, and almost certainly their users. The tricky part is making sure those applications are highly available. In addition, they need to be able to quickly respond while being appropriately secured. Azure Front Door provides different SKUs (pricing tiers) that meet these requirements. Let's briefly review the features and benefits of these SKUs so you can determine which option best suits your requirements.
 
 ## What is a secure, modern cloud CDN?
 
-A secure, modern cloud CDN provides a distributed platform of servers. This helps minimize latency when users are accessing webpages. Historically, IT staff might have used a CDN and a web application firewall to control HTTP and HTTPS traffic flow to and from target apps.  
+A secure, modern cloud CDN provides a distributed platform of servers. This helps minimize latency when users are accessing webpages. Historically, IT staff might have used a CDN and a web application firewall to control HTTP and HTTPS traffic flowing to and from target applications.  
 
 If an organization uses Azure, they might achieve these goals by implementing the products described in the following table.
 
@@ -14,7 +14,7 @@ If an organization uses Azure, they might achieve these goals by implementing th
 
 ## Azure Front Door definition
 
-*Azure Front Door Standard/Premium* provides the capabilities of these three products. It offers a fast, reliable, and more secure modern cloud CDN by using the Microsoft global edge network to integrate with intelligent threat protection. Azure Front Door resides in the edge location and manages user requests to your hosted apps. Users connect to apps through the Microsoft global network. Azure Front Door then routes these user requests to the fastest and most available application backend.
+*Azure Front Door Standard/Premium* provides the capabilities of these three products. It offers a fast, reliable, and more secure modern cloud CDN by using the Microsoft global edge network to integrate with intelligent threat protection. Azure Front Door resides in the edge locations and manages user requests to your hosted applications. Users connect to your application through the Microsoft global network. Azure Front Door then routes user requests to the fastest and most available application backend.
 
 > [!NOTE]
 > An *application backend* is any internet-facing service that you host, either inside or outside Azure.
@@ -49,4 +49,4 @@ Azure Front Door Premium provides the same capabilities as Azure Front Door Stan
 
 ## How to improve your cloud app delivery
 
-To improve your cloud app delivery, consider deploying an Azure Front Door solution that best fits your needs. In the following unit, we'll discuss these choices in more detail.
+To improve your cloud application delivery, consider deploying an Azure Front Door solution that best fits your needs. In the following unit, we'll discuss these choices in more detail.

@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 App Center can build and test your apps, but regardless of how you build or test your app, you can use App Center Distribute to deliver a release to a target audience. If you have pre-release testers, you can distribute the latest alpha or beta release to them in order to gather their feedback. Maybe you have a collection of external users who get pre-release versions of your app for feedback. You can also distribute your release builds to a public app store.
 
 ## What is a distribution group?

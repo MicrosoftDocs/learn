@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 You've now seen how to create a basic Xamarin.Android app. Behind the scenes, Xamarin.Android uses many of the native Android tools and libraries. Your goal in this unit is to understand enough about how Xamarin.Android uses these tools and libraries to make sure your development environment is up to date.
 
 ![Screenshot showing the components that can make up a Xamarin.Android app: JDK, Android SDK, Android NDK, and Mono .NET.](../media/8-native-libraries-and-tools.png)

@@ -20,7 +20,7 @@ prerequisites: |
   - Basic understanding of scripting and JSON
   - AZ-104 certification or equivalent knowledge
   - Knowledge of SAP products such as SAP HANA or SAP NetWeaver
-iconUrl: /learn/achievements/automate-deployment-of-sap-on-azure.svg
+iconUrl: /training/achievements/automate-deployment-of-sap-on-azure.svg
 levels:
 - advanced
 roles:
@@ -32,6 +32,8 @@ products:
 - azure-cloud-shell
 - azure-resource-manager
 - azure-sap
+subjects:
+- cloud-computing
 units:
 - learn.wwl.automate-deployment-of-sap-azure.introduction
 - learn.wwl.automate-deployment-of-sap-azure.explore-azure-integrated-automation-for

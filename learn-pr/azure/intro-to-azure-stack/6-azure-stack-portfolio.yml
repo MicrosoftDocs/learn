@@ -4,8 +4,8 @@ metadata:
   title: Compare Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge
   description: In this unit you'll review the similarities and differences of Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge.
   ms.date: 12/09/2020
-  author: micrum
-  ms.author: micrum
+  author: sethmanheim
+  ms.author: sethm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid

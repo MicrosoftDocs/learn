@@ -4,8 +4,8 @@ metadata:
   title: Introduction
   description: This module explores the hybrid networking capabilities in Azure. It covers the services for on-premises integration, using tools such as ExpressRoute, and presents the scenarios that apply to the design of your company's hybrid architecture.
   ms.date: 01/14/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: duongau
+  ms.author: duau
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid

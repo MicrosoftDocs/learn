@@ -10,12 +10,11 @@ A security engineer uses perimeter security features to block network traffic aw
 
 ## Skills measured
 
-Securing the Azure platform your cloud solutions run on is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
+Securing the Azure platform your cloud solutions run on is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/certifications/exams/az-500).
 
 Implement platform protection (15-20%)
 
  -  Implement advanced network security
-    
      -  Create and configure Azure Firewall
      -  Implement Azure Firewall Manager
      -  Configure a firewall on a storage account, Azure SQL, Key Vault, or App Service

@@ -6,19 +6,19 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
 
 ## Create virtual machines and deploy the vehicle registration site
 
-1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription you want to create resources in.
+1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription in which you want to create resources.
 
-1. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
+1. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region in which you'd like to deploy your resources.
 
     > [!NOTE]
-    > If you need to find the location name, you can use the following command: az account list-locations -o table
+    > If you need to find the location name, you can use the following command: `az account list-locations -o table`
 
     ```azurecli
     RG=<resource group name>
     az group create --name $RG --location <location>
     ```
 
-1. In the Cloud Shell window on the right, run the following command. This command uses the Azure command-line interface to create a virtual network named `vehicleappvnet`. It's a private network that provides addresses in the range 10.0.0.0 to 10.0.255.255. The command also creates a subnet called `webServerSubnet`, with the address range 10.0.1.0 to 10.0.1.255. This subnet will contain the virtual machines.
+1. In the Cloud Shell window, run the following command. This command uses the Azure command-line interface to create a virtual network named `vehicleappvnet`. It's a private network that provides addresses in the range 10.0.0.0 to 10.0.255.255. The command also creates a subnet called `webServerSubnet`, with the address range 10.0.1.0 to 10.0.1.255. This subnet will contain the virtual machines.
 
     ```azurecli
     az network vnet create \
@@ -29,7 +29,7 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
       --subnet-prefixes 10.0.1.0/24
     ```
 
-1. To download the script that creates the virtual machines, run the following command.
+1. To download the script that creates the virtual machines, run the following command:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-load-balance-web-traffic-with-application-gateway module-files
@@ -68,7 +68,7 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
       --custom-data module-files/scripts/vmconfig.sh
     ```
 
-1. To confirm both virtual machines were created successfully, run the following command.
+1. To confirm both virtual machines were created successfully, run the following command:
 
     ```azurecli
     az vm list \
@@ -77,7 +77,7 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
       --output table
     ```
 
-    You should see output similar to the following. Before continuing, ensure the **PowerState** is **VM running** for both virtual machines.
+    You should get output similar to the following. Before continuing, ensure the **PowerState** is **VM running** for both virtual machines.
 
     ```output
     Name          ResourceGroup      PowerState    PublicIps    Fqdns    Location        Zones
@@ -86,17 +86,17 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
     webServer2    MyResourceGroup    VM running                          southcentralus
     ```
 
-You've now created the virtual machines running the vehicle registration web app. Both virtual machines are identical, and are part of the same virtual network.
+You've now created the virtual machines running the vehicle registration web app. Both virtual machines are identical and are part of the same virtual network.
 
 ## Create App Service and deploy the license renewal site
 
-1. To start, to generate a unique name for the website, run the following command.
+1. To start, to generate a unique name for the website, run the following command:
 
     ```bash
     APPSERVICE="licenserenewal$RANDOM"
     ```
 
-1. Next, to create the App Service plan the web app will use, run the following command.
+1. Next, to create the App Service plan the web app will use, run the following command:
 
     ```azurecli
     az appservice plan create \
@@ -105,7 +105,7 @@ You've now created the virtual machines running the vehicle registration web app
         --sku S1
     ```
 
-1. Lastly, create the web app and deploy the license renewal site.
+1. Lastly, create the web app and deploy the license renewal site:
 
     ```azurecli
     az webapp create \
@@ -113,7 +113,7 @@ You've now created the virtual machines running the vehicle registration web app
         --name $APPSERVICE \
         --plan vehicleAppServicePlan \
         --deployment-source-url https://github.com/MicrosoftDocs/mslearn-load-balance-web-traffic-with-application-gateway \
-        --deployment-source-branch appService --runtime "DOTNETCORE|2.1" 
+        --deployment-source-branch appService --runtime "DOTNETCORE|3.1" 
     ```
 
 Now, let's take a closer look at configuring Application Gateway.

@@ -4,8 +4,8 @@ metadata:
   title: On-premises network integration on Azure
   description: Explore on-premises connectivity in the Azure platform, get an overview of Azure Virtual Networks, and how to use VPN gateways to secure traffic to an on-premises network.
   ms.date: 01/14/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: duongau
+  ms.author: duau
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid

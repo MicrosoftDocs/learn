@@ -4,10 +4,10 @@ title: Application and package management using Helm
 metadata:
   description: Helm is an application package manager for Kubernetes that you use to standardize and simplify the deployment of cloud-native applications on Kubernetes. Here you'll see how to install third-party packages called Helm charts and how to create and install Helm charts for the workloads your teams develop.
   title: Application and package management using Helm
-  author: cryophobia
-  ms.author: chrvaw
+  author: zr-msft
+  ms.author: zarhoads
   ms.prod: learning-azure
-  ms.topic: interactive-tutorial 
+  ms.topic: interactive-tutorial
   ms.date: 10/11/2021
 summary: Helm is an application package manager for Kubernetes that you use to standardize and simplify the deployment of cloud-native applications on Kubernetes. Here you'll see how to install third-party packages called Helm charts and how to create and install Helm charts for the workloads your teams develop.
 abstract: |
@@ -21,7 +21,8 @@ prerequisites: |
   - Knowledge of Kubernetes and its concepts
   - Basic knowledge of creating Kubernetes YAML manifest files
   - Basic knowledge of executing commands using Kubectl
-iconUrl: /learn/achievements/app-package-management-using-helm.svg
+iconUrl: /training/achievements/app-package-management-using-helm.svg
+hidden: true
 badge:
   uid: learn.app-package-management-using-helm.badge
 levels:
@@ -34,6 +35,8 @@ roles:
 products:
 - azure
 - azure-kubernetes-service
+subjects:
+- development-tools
 units:
 - learn.app-package-management-using-helm.introduction
 - learn.app-package-management-using-helm.what-is-helm

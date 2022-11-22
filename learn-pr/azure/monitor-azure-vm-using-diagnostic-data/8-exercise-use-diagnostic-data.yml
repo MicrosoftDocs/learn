@@ -14,16 +14,17 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/8-exercise-use-diagnostic-data.md)]
-tasks:
-- action: exists
-  environment: azure
-  hint: "Create the action group for your alert in the Azure portal."
-  azure:
-    resource:
-      type: "microsoft.insights/actiongroups"
-- action: exists
-  environment: azure
-  hint: "Create an VM metric alert in the Azure portal."
-  azure:
-    resource:
-      type: "microsoft.insights/metricalerts"
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   hint: "Create the action group for your alert in the Azure portal."
+#   azure:
+#     resource:
+#       type: "microsoft.insights/actiongroups"
+# - action: exists
+#   environment: azure
+#   hint: "Create an VM metric alert in the Azure portal."
+#   azure:
+#     resource:
+#       type: "microsoft.insights/metricalerts"

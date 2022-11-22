@@ -5,10 +5,11 @@ For your toy launch website, you decide to first create a proof of concept by cr
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Create a template that defines a single storage account resource that includes hard-coded values.
-> * Provision your infrastructure and verify the result.
-> * Add an App Service plan and app to the template.
-> * Provision the infrastructure again to see the new resources.
+>
+> - Create a template that defines a single storage account resource that includes hard-coded values.
+> - Provision your infrastructure and verify the result.
+> - Add an App Service plan and app to the template.
+> - Provision the infrastructure again to see the new resources.
 
 [!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
@@ -16,22 +17,25 @@ During the process, you'll:
 
 1. Open Visual Studio Code.
 
-1. Create a new file called *main.bicep*.
+1. Create a new file called _main.bicep_.
 
-1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
- 
-   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *templates* folder to save it in.
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling.
 
-1. Add the following content into the file. You'll deploy the template soon. It's a good idea to type this in yourself instead of copying and pasting, so that you can see how the tooling helps you to write your Bicep files.
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a _templates_ folder in which to save the file.
+
+1. Add the following Bicep code into the file. You'll deploy the template soon. It's a good idea to type the code yourself instead of copying and pasting, so you can see how the tooling helps you to write your Bicep files.
 
    :::code language="bicep" source="code/4-template.bicep" range="1-11":::
 
    > [!TIP]
-   > Bicep is strict about where you put line breaks, so make sure you don't put line breaks in different places than what's listed here.
+   > Bicep is strict about where you put line breaks, so make sure you don't put line breaks in different places than listed here.
 
    Notice that Visual Studio Code automatically suggests property names as you type. The Bicep extension for Visual Studio Code understands the resources you're defining in your template, and it lists the available properties and values that you can use.
 
-1. Update the name of the storage account from `toylaunchstorage` to something that's likely to be unique. Make sure the name is all lowercase, without any special characters, and fewer than 24 characters.
+1. Update the name of the storage account from `toylaunchstorage` to something that's likely to be unique, because every storage account needs a globally unique name. Make sure the name includes only lowercase letters, numbers, and has 3 to 24 characters.
+
+   > [!IMPORTANT]
+   > Don't skip this step. If you do, your Bicep file won't deploy successfully.
 
 1. Save the changes to the file.
 
@@ -43,7 +47,7 @@ During the process, you'll:
 
 ### Deploy the template to Azure
 
-Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This can take a minute or two to complete, and then you'll see a successful deployment.
+Run the following command from the terminal in Visual Studio Code to deploy the Bicep template to Azure. The command can take a minute or two to complete, and then you'll see a successful deployment. If you see a warning about the location being hard-coded, you can ignore it. You'll fix the location later in the module. It's safe to proceed and the deployment will succeed.
 
 ```azurecli
 az deployment group create --template-file main.bicep
@@ -59,7 +63,7 @@ You'll see `Running...` in the terminal.
 
 ### Deploy the template to Azure
 
-Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This can take a minute or two to complete, and then you'll see a successful deployment. 
+Deploy the template to Azure by using the following Azure PowerShell command in the terminal. The command can take a minute or two to complete, and you'll see a successful deployment. If you see a warning about the location being hard-coded, you can ignore it. You'll fix the location later in the module. It's safe to proceed and the deployment will succeed.
 
 ```azurepowershell
 New-AzResourceGroupDeployment -TemplateFile main.bicep
@@ -73,7 +77,7 @@ The first time you deploy a Bicep template, you might want to use the Azure port
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription:
 
-   1. Select your avatar in the upper-right corner of the page. 
+   1. Select your avatar in the upper-right corner of the page.
    1. Select **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
 
 1. On the left-side panel, select **Resource groups**.
@@ -88,7 +92,7 @@ The first time you deploy a Bicep template, you might want to use the Azure port
 
     :::image type="content" source="../media/4-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the one deployment listed and a succeeded status." border="true":::
 
-1. Select the deployment called **main** to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's one storage account with the name that you specified.
+1. Select the deployment called **main** to see which resources were deployed, and then select **Deployment details** to expand it. In this case, there's one storage account with the name that you specified.
 
     :::image type="content" source="../media/4-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with one storage account resource listed." border="true":::
 
@@ -118,11 +122,11 @@ Get-AzResourceGroupDeployment -ResourceGroupName <rgn>[sandbox resource group na
 
 In the previous task, you learned how to create a template that contains a single resource and deploy it. Now you're ready to deploy more resources, including a dependency. In this task, you add an App Service plan and app to the Bicep template.
 
-1. In the *main.bicep* file in Visual Studio Code, add the following code to the bottom of the file:
+1. In the _main.bicep_ file in Visual Studio Code, add the following code to the bottom of the file:
 
-   :::code language="bicep" source="code/4-template.bicep" range="13-28":::
+   :::code language="bicep" source="code/4-template.bicep" range="13-29":::
 
-1. Update the name of the App Service app from `toy-product-launch-1` to something that's likely to be unique. Make sure the name is all lowercase, contains only alphanumerics and hyphens, doesn't start or end with a hyphen, and has 2 to 60 characters.
+1. Update the name of the App Service app from `toy-product-launch-1` to something that's likely to be unique. Make sure the name is all lowercase letters, contains only alphanumerics and hyphens, doesn't start or end with a hyphen, and has 2 to 60 characters.
 
 1. Save the changes to the file.
 
@@ -130,7 +134,7 @@ In the previous task, you learned how to create a template that contains a singl
 
 ::: zone pivot="cli"
 
-Run the following command in the terminal. This is the same command you ran before.
+Run the following Azure CLI command in the terminal. You can ignore the warnings about the hard-coded location. You'll fix the location soon.
 
 ```azurecli
 az deployment group create --template-file main.bicep
@@ -140,7 +144,7 @@ az deployment group create --template-file main.bicep
 
 ::: zone pivot="powershell"
 
-Run the following Azure PowerShell command in the terminal. This is the same command you ran before.
+Run the following Azure PowerShell command in the terminal. You can ignore the warning messages about the hard-coded location. You'll fix the location soon.
 
 ```azurepowershell
 New-AzResourceGroupDeployment -TemplateFile main.bicep
@@ -150,7 +154,7 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 ### Check your deployment
 
-1. Return to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment. 
+1. Return to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment.
 
 1. Select the **1 Succeeded** link.
 
@@ -158,4 +162,4 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
     :::image type="content" source="../media/4-addapp-details.png" alt-text="Screenshot that shows the Azure portal interface for the specific deployment, with storage account and App Service resources listed." border="true":::
 
-1. Notice that the App Service plan and app have been deployed.
+1. Notice that the App Service plan and app were deployed.

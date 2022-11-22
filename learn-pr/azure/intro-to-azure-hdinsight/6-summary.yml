@@ -5,9 +5,9 @@ metadata:
   unitType: summary  
   title: Summary
   description: Summary
-  ms.date: 04/11/2021  
-  author: tchristiani
-  ms.author: terrychr
+  ms.date: 10/27/2022  
+  author: sreekzz
+  ms.author: v-sreiyer
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
 durationInMinutes: 3

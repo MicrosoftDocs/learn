@@ -16,22 +16,22 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which VM extension can an administrator add to Azure Arc enabled servers running Windows Server?"
+  - content: "Which VM extension can an administrator add to Azure Arc enabled servers to configure it for log forwarding to a Log Analytics workspace?"
     choices:
-    - content: "VM Access."
+    - content: "Custom Script Extension."
       isCorrect: false
-      explanation: "That's incorrect. The Azure VM Access extension allows an administrator to reset local Administrator's credentials on a Windows Server running in an Azure VM, but it is not supported on Arc enabled servers."
-    - content: "BGInfo."
+      explanation: "That's incorrect, the Custom Script Extension is used to execute a script on the target Arc-enabled server."
+    - content: "Microsoft Dependency agent."
       isCorrect: false
-      explanation: "That's incorrect. The Azure BGInfo extension allows an administrator to configure the wallpaper on a Windows Server running in an Azure VM, but it is not supported on Arc enabled servers."
-    - content: "DSC."
+      explanation: "That's incorrect, the Microsoft Dependency agent is used to facilitate identifying internal and external dependencies of server workloads."
+    - content: "Log Analytics Extension."
       isCorrect: true
-      explanation: "That's correct. This VM extension allows an administrator to apply a PowerShell DSC configuration on Arc enabled servers."
+      explanation: "That's correct, the Log Analytics Extension is used to configure log forwarding to a Log Analytics workspace."
   - content: "Which software component allows an administrator to use Azure Policy to audit settings within the operating system of Arc enabled servers to evaluate their compliance?"
     choices:
-    - content: "DSC."
+    - content: "Connected Machine Agent."
       isCorrect: false
-      explanation: "That's incorrect. This is a VM extension that allows an administrator to apply a PowerShell DSC configuration on Arc enabled servers."
+      explanation: "That's incorrect. This is an agent that facilitates connection to Azure Arc-enabled servers."
     - content: "Microsoft Dependency agent."
       isCorrect: false
       explanation: "That's incorrect. This is an agent that facilitates identifying internal and external dependencies of server workloads."

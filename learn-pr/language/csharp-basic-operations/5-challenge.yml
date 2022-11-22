@@ -5,8 +5,8 @@ metadata:
   title: Challenge
   description: Convert a temperature from Fahrenheit to Celsius and print in a formatted message.
   ms.date: 09/03/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

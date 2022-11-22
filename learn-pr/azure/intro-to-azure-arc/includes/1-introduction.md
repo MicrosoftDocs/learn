@@ -10,14 +10,14 @@ Contoso will continue to operate an on-premises environment for some time after 
 
 Using Arc enables Contoso's on-premises IT administrators to familiarize themselves with the Azure management space. Azure Arc also enables Contoso's administrators that are already using Azure APIs to manage Azure resources to also manage on-premises resources.
 
-By the end of this module, you'll be able to describe Azure Arc enabled servers. You'll also be able to describe Azure Arc enabled Kubernetes.
-
 ## Learning objectives
 
 After completing this module, you'll be able to:
 
-- Describe Azure Arc enabled servers.
-- Describe Azure Arc enabled Kubernetes.
+- Describe Azure Arc-enabled servers.
+- Describe Azure Arc-enabled Kubernetes.
+- Describe Azure Arc-enabled data services.
+- Describe how Azure Arc can integrate with other Azure services.
 
 ## Prerequisites
 

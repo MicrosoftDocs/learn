@@ -6,15 +6,15 @@ Access your profile by navigating to the avatar image on the upper right corner 
 
 Here are some of the main items in your profile:
 
-|          |                                                              |
-|----------|--------------------------------------------------------------|
-| Activity | All your activities - check here for your in-progress and completed modules and learning paths |
-| Training | Your progression on modules and learning paths that you have started |
-| Certifications | Your Microsoft Certifications profile and dashboard |
-| Q&A | Your following activity for the Q&A platform  — the home for technical questions and answers at Microsoft.  |
-|Achievements | Badges and trophies that you have earned in Learn. You can export certificate for each badge and transcript for all your achievements |
-|Collections | Modules or learning paths you have saved to “favorites” and other personal collections you have created |
-|Settings | Change your display name, manage email preferences and account settings. You can link your work account to your profile and share your learning progress with your school |
+|  | Description |
+|---|---|
+| **Activity** | All your activities - check here for your in-progress and completed modules and learning paths |
+| **Training** | Your progression on modules and learning paths that you have started |
+| **Certifications** | Your Microsoft Certifications profile and dashboard |
+| **Q&A** | Your following activity for the Q&A platform  — the home for technical questions and answers at Microsoft.  |
+| **Achievements** | Badges and trophies that you have earned in Learn. You can export certificate for each badge and transcript for all your achievements |
+| **Collections** | Modules or learning paths you have saved to “favorites” and other personal collections you have created |
+| **Settings** | Change your display name, manage email preferences and account settings. You can link your work account to your profile and share your learning progress with your school |
 
 > [!NOTE]
 > Great news! Those of you who have achievement history within the Microsoft Educator Center, will get to retain all your prior course history, badges, and professional development hours.

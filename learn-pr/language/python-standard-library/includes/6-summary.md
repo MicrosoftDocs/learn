@@ -1,5 +1,0 @@
-Our goal was to explore and use the Python standard library in our own programs, and learn how to find solutions to common software development problems in the Python community at large.
-
-We imported the `random` module from the Python standard library to generate random numbers by calling a function in that module.  We explored the module by using IntelliSense in Visual Studio Code, and saw how we can learn about each function in the module by consulting the short form documentation in IntelliSense.  We searched for solutions to our needs by using the Python Package Index (PyPI), and then we used the `pip` utility to install a package locally and call a function in that package.
-
-Without this rich ecosystem to leverage, we would need to build everything ourselves, which would be time consuming and error prone. It would also require a vast knowledge of Python before we could be productive.  Fortunately, this massive collection of functionality from Python's creators and the community enables us to build programs more quickly and easily.

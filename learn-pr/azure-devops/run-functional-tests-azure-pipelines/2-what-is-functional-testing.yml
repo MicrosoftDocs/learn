@@ -5,8 +5,8 @@ metadata:
   title: What is functional testing?
   description: Define functional tests and identify some popular kinds of tests you can run.
   ms.date: 06/23/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: steved0x
+  ms.author: sdanie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

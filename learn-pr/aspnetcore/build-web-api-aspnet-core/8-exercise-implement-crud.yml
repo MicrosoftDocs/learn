@@ -2,7 +2,7 @@
 uid: learn.build-web-api-net-core.8-exercise-implement-crud
 metadata:
   title: Exercise - Implement CRUD operations
-  description: Learn how to implement Create, Read, Update, Delete (CRUD) methods in the web API.
+  description: Learn how to implement create, read, update, delete (CRUD) methods in the web API.
   ms.date: 04/28/2021
   author: jongalloway
   ms.author: jogallow

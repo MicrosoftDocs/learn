@@ -3,13 +3,11 @@
 
 Centralized source control systems are based on the idea that there's a single "central" copy of your project somewhere (probably on a server). Programmers will check in (or commit) their changes to this central copy.
 
-"Committing" a change means recording the difference in the central system. Other programmers can then see this change.
+"Committing" a change means to record the difference in the central system. Other programmers can then see this change.
 
-Also, it is possible to pull down the change. The version control tool will automatically update the contents of any files that were changed.
+Also, it's possible to pull down the change. The version control tool will automatically update the contents of any files that were changed.
 
-Most modern version control systems deal with "changesets," which are a group of changes (possibly-too-many files) that should be treated as a cohesive whole.
-
-For example, changing a C header file and the corresponding ".C" file will keep it together.
+Most modern version control systems deal with "changesets," which are a group of changes (possibly too many files) that should be treated as a cohesive whole.
 
 Programmers no longer must keep many copies of files on their hard drives manually. The version control tool can talk to the central copy and retrieve any version they need on the fly.
 
@@ -17,7 +15,7 @@ Some of the most common-centralized version control systems you may have heard o
 
 ## A typical centralized source control workflow
 
-Working with a centralized source control system, your workflow for adding a new feature or fixing a bug in your project will usually look something like this:
+If working with a centralized source control system, your workflow for adding a new feature or fixing a bug in your project will usually look something like this:
 
  -  Get the latest changes other people have made from the central server.
  -  Make your changes, and make sure they work correctly.

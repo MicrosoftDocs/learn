@@ -6,9 +6,11 @@ metadata:
   description: How Microsoft Sentinel works
   ms.date: 09/21/2020
   author: deanobalino
-  ms.author: debryen
+  ms.author: deanbryen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: debryen-11292021
 durationInMinutes: 10
 content: |
   [!include[](includes/3-how-azure-sentinel-works.md)]

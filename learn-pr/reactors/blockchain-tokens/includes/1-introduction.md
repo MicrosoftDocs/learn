@@ -1,6 +1,6 @@
-A digital asset, whether it's Bitcoin, Ether, or another cryptocurrency, represents value amount. Another example of a digital asset that represents value is a token. But, with a token, the value might not be monetary. Tokens can represent time, services, property, or goods that are tradeable.
+A digital asset, whether it's Bitcoin, Ether, or another cryptocurrency, represents a value amount. Another example of a digital asset that represents value is a token. But, with a token, the value might not be monetary. Tokens can represent time, services, property, or goods that are tradeable.
 
-In this module, you'll learn about the significance of tokens and how they are used in blockchain.
+In this module, you'll learn about the significance of tokens and how they're used in blockchain.
 
 ## Learning objectives
 
@@ -13,9 +13,9 @@ By the end of this module, you will be able to:
 
 ## Prerequisites
 
-- [Fundamental knowledge about blockchain](/learn/modules/intro-to-blockchain/?azure-portal=true)
-- [Solidity programming knowledge](/learn/modules/blockchain-learning-solidity/?azure-portal=true)
-- [Ethereum smart contract knowledge](/learn/modules/blockchain-solidity-ethereum-smart-contracts/?azure-portal=true)
+- [Fundamental knowledge about blockchain](/training/modules/intro-to-blockchain/?azure-portal=true)
+- [Solidity programming knowledge](/training/modules/blockchain-learning-solidity/?azure-portal=true)
+- [Ethereum smart contract knowledge](/training/modules/blockchain-solidity-ethereum-smart-contracts/?azure-portal=true)
 - Previous experience with a programming language like C, Python, or JavaScript
 - Basic knowledge of programming concepts
 - Familiarity with the command line to create new directories and install programs

@@ -9,6 +9,8 @@ metadata:
   ms.author: dnb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: dnb-04292021
 summary: With the right deployment practices, we can catch many problems before they get to our production environment and cause an incident. In this module we look at practices that can help us improve our reliability.
 abstract: |
   In this module you will:
@@ -18,7 +20,7 @@ abstract: |
   - Look deep into pipelines and how they are implemented in Azure Pipelines
   - Learn a number of different strategies for deployment to production that can help us avoid incidents
   - Examine some important best practices that can minimize the risk when rolling out new software or a new version of existing software
-iconUrl: /learn/achievements/improve-reliability-deployment.svg
+iconUrl: /training/achievements/improve-reliability-deployment.svg
 levels:
 - beginner
 roles:
@@ -29,6 +31,10 @@ roles:
 products:
 - azure
 prerequisites: None
+subjects:
+- cloud-computing
+- devops
+- threat-protection
 units:
 - learn.improve-reliability-deployment.1-introduction
 - learn.improve-reliability-deployment.2-definition

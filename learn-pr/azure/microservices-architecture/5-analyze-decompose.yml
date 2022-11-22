@@ -2,10 +2,10 @@
 uid: learn.microservices-architecture.5-analyze-decompose
 metadata:
   title: Analyze an application and identify decomposition boundaries
-  description:  Analyze an application and identify decomposition boundaries
+  description: Analyze an application and identify decomposition boundaries
   ms.date: 08/30/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: davidcberry13
+  ms.author: daberry
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Analyze an application and identify decomposition boundaries

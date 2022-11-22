@@ -42,7 +42,7 @@ If you enable or do not configure this setting, users will be able to enable exp
 If you disable this setting, users will not be able to enable experimental features for Windows Package Manager.
 
 ### Enable App Installer Local Manifest Files
-This policy controls whether users can install packages with local manifest files. If a user has a manifest available via their local file system rather than a Windows Package Manager source, they may install packages using winget install -m <path to manifest>.
+This policy controls whether users can install packages with local manifest files. If a user has a manifest available via their local file system rather than a Windows Package Manager source, they may install packages using winget install -m \<path to manifest\>.
 
 If you enable or do not configure this setting, users will be able to install packages with local manifests using Windows Package Manager.
 

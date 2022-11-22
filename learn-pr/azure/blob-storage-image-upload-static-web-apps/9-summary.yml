@@ -9,6 +9,8 @@ metadata:
   ms.author: alvidela
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: alvidela-11122021
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]

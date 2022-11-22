@@ -20,11 +20,11 @@ The output is:
 
 > |  | NDB_No | FoodGroup |
 > | --- | --- | --- |
-> | 0 | 1001 | Dairy and Egg Products |
-> | 1 | 1002 | Dairy and Egg Products |
-> | 2 | 1003 | Dairy and Egg Products |
-> | 3 | 1004 | Dairy and Egg Products |
-> | 4 | 1005 | Dairy and Egg Products |
+> | **0** | 1001 | Dairy and Egg Products |
+> | **1** | 1002 | Dairy and Egg Products |
+> | **2** | 1003 | Dairy and Egg Products |
+> | **3** | 1004 | Dairy and Egg Products |
+> | **4** | 1005 | Dairy and Egg Products |
 
 Note that `fg_df` does not have the same number of rows as `df`:
 
@@ -70,11 +70,11 @@ The output is:
 
 > |  | Alpha_Carot_(ï¿½g) | Ash_(g) | Beta_Carot_(ï¿½g) | Beta_Crypt_(ï¿½g) | Calcium_(mg) | Carbohydrt_(g) | Cholestrl_(mg) | Choline_Tot_ (mg) | Copper_mg) | Energ_Kcal | ... | Vit_A_RAE | Vit_B12_(ï¿½g) | Vit_B6_(mg) | Vit_C_(mg) | Vit_D_IU | Vit_D_ï¿½g | Vit_E_(mg) | Vit_K_(ï¿½g) | Water_(g) | Zinc_(mg) |
 > | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-> | 0 | 0.0 | 2.11 | 158.0 | 0.0 | 24.0 | 0.06 | 215.0 | 18.8 | 0.000 | 717.0 | ... | 684.0 | 0.17 | 0.003 | 0.0 | 0.0 | 0.0 | 2.32 | 7.0 | 15.87 | 0.09 |
-> | 1 | 1.0 | 1.62 | 135.0 | 6.0 | 23.0 | 2.87 | 225.0 | 18.8 | 0.010 | 718.0 | ... | 683.0 | 0.07 | 0.008 | 0.0 | 0.0 | 0.0 | 1.37 | 4.6 | 16.72 | 0.05 |
-> | 2 | 0.0 | 0.00 | 193.0 | 0.0 | 4.0 | 0.00 | 256.0 | 22.3 | 0.001 | 876.0 | ... | 840.0 | 0.01 | 0.001 | 0.0 | 0.0 | 0.0 | 2.80 | 8.6 | 0.24 | 0.01 |
-> | 3 | 0.0 | 5.11 | 74.0 | 0.0 | 528.0 | 2.34 | 75.0 | 15.4 | 0.040 | 353.0 | ... | 198.0 | 1.22 | 0.166 | 0.0 | 21.0 | 0.5 | 0.25 | 2.4 | 42.41 | 2.66 |
-> | 4 | 0.0 | 3.18 | 76.0 | 0.0 | 674.0 | 2.79 | 94.0 | 15.4 | 0.024 | 371.0 | ... | 292.0 | 1.26 | 0.065 | 0.0 | 22.0 | 0.5 | 0.26 | 2.5 | 41.11 | 2.60 |
+> | **0** | 0.0 | 2.11 | 158.0 | 0.0 | 24.0 | 0.06 | 215.0 | 18.8 | 0.000 | 717.0 | ... | 684.0 | 0.17 | 0.003 | 0.0 | 0.0 | 0.0 | 2.32 | 7.0 | 15.87 | 0.09 |
+> | **1** | 1.0 | 1.62 | 135.0 | 6.0 | 23.0 | 2.87 | 225.0 | 18.8 | 0.010 | 718.0 | ... | 683.0 | 0.07 | 0.008 | 0.0 | 0.0 | 0.0 | 1.37 | 4.6 | 16.72 | 0.05 |
+> | **2** | 0.0 | 0.00 | 193.0 | 0.0 | 4.0 | 0.00 | 256.0 | 22.3 | 0.001 | 876.0 | ... | 840.0 | 0.01 | 0.001 | 0.0 | 0.0 | 0.0 | 2.80 | 8.6 | 0.24 | 0.01 |
+> | **3** | 0.0 | 5.11 | 74.0 | 0.0 | 528.0 | 2.34 | 75.0 | 15.4 | 0.040 | 353.0 | ... | 198.0 | 1.22 | 0.166 | 0.0 | 21.0 | 0.5 | 0.25 | 2.4 | 42.41 | 2.66 |
+> | **4** | 0.0 | 3.18 | 76.0 | 0.0 | 674.0 | 2.79 | 94.0 | 15.4 | 0.024 | 371.0 | ... | 292.0 | 1.26 | 0.065 | 0.0 | 22.0 | 0.5 | 0.26 | 2.5 | 41.11 | 2.60 |
 
 5 rows × 54 columns
 ***
@@ -92,11 +92,11 @@ The output is:
 
 > |  | Alpha_Carot_(ï¿½g) | Ash_(g) | Beta_Carot_(ï¿½g) | Beta_Crypt_(ï¿½g) | Calcium_(mg) | Carbohydrt_(g) | Cholestrl_(mg) | Choline_Tot_ (mg) | Copper_mg) | Energ_Kcal | ... | Vit_A_RAE | Vit_B12_(ï¿½g) | Vit_B6_(mg) | Vit_C_(mg) | Vit_D_IU | Vit_D_ï¿½g | Vit_E_(mg) | Vit_K_(ï¿½g) | Water_(g) | Zinc_(mg) |
 > | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-> | 8984 | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | ... | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN |
-> | 8985 | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | ... | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN |
-> | 8986 | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | ... | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN |
-> | 8987 | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | ... | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN |
-> | 8988 | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | ... | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN |
+> | **8984** | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | ... | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN |
+> | **8985** | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | ... | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN |
+> | **8986** | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | ... | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN |
+> | **8987** | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | ... | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN |
+> | **8988** | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | ... | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN |
 
 5 rows × 54 columns
 ***

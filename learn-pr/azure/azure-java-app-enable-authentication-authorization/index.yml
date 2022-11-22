@@ -26,7 +26,7 @@ prerequisites: |
   - An Azure subscription and Azure Active Directory tenant
   - An IDE like Visual Studio Code to edit code
 
-iconUrl: /learn/achievements/azure-java-app-enable-authentication-authorization.svg
+iconUrl: /training/achievements/azure-java-app-enable-authentication-authorization.svg
 levels:
 - beginner
 roles:
@@ -34,6 +34,8 @@ roles:
 products:
 - azure
 - msal-java
+subjects:
+- identity-access
 units:
 - learn.azure.azure-java-app-enable-authentication-authorization.introduction
 - learn.azure.azure-java-app-enable-authentication-authorization.authentication-authorization

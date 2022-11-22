@@ -4,10 +4,11 @@ metadata:
   title: Prepare your development environment for Azure development
   description: Learn how to choose and install the appropriate IDE for your requirements to help you build, deploy, monitor, and scale cloud-hosted solutions.
   ms.date: 07/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: alexwolfmsft
+  ms.author: alexwolf
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: vscode-azure-extension-update-completed
   #ms.learn-contact: adsteven
 title: Prepare your development environment for Azure development
 summary: Set up your local development environment with several popular IDEs.
@@ -19,7 +20,7 @@ abstract:   |
   - Set up Eclipse for Java development
   - Set up IntelliJ IDEA for Java development
 prerequisites: None
-iconUrl: /learn/achievements/prepare-your-dev-environment-for-azure-development.svg
+iconUrl: /training/achievements/prepare-your-dev-environment-for-azure-development.svg
 levels:
 - beginner
 roles:
@@ -31,6 +32,8 @@ products:
 - vs-code
 - vs-mac
 - azure-sdks
+subjects:
+- cloud-computing
 units:
 - learn.prepare-azure-dev-environment.1-introduction
 - learn.prepare-azure-dev-environment.2-set-up-dev-environment

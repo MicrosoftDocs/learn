@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/10/2021
+  ms.date: 01/26/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -24,10 +24,10 @@ quiz:
       explanation: "Incorrect. A throughput of 10 TB per hour (needed to migrate 30 TB in 3 hours) is unlikely."
     - content: "15 hours"
       isCorrect: true
-      explanation: "Correct. A fully optimized VLDB migration should achieve around 2 TB per hour migration throughput per hour or possibly more. A throughput of 10 TB per hour (needed to migrate 30 TB in 3 hours) is unlikely."
+      explanation: "Correct. A fully optimized VLDB migration should achieve around 2 TB per hour migration throughput or possibly more. A throughput of 10 TB per hour (needed to migrate 30 TB in 3 hours) is unlikely."
     - content: "30 hours"
       isCorrect: false
-      explanation: "Incorrect. A fully optimized VLDB migration should achieve around 2 TB per hour migration throughput per hour or possibly more."
+      explanation: "Incorrect. A fully optimized VLDB migration should achieve around 2 TB per hour migration throughput or possibly more."
   - content: "In a very large database migration, commonly four export R3load servers are used. Typically, what is export server 1 dedicated to?"
     choices:
     - content: "The largest 1-4 tables in the database"

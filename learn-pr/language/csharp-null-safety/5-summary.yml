@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-null-safety.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: "In the summary section of the null-safety module, you'll find details related to the learning objectives and links to additional resources."
+  ms.date: 01/31/2022
+  author: IEvangelist
+  ms.author: dapine
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-summary.md)]

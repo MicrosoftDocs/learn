@@ -8,7 +8,9 @@ The default Azure Active Directory (Azure AD) organization in the Azure sandbox 
 1. Select **Create a resource** > **Identity** > **Azure Active Directory**.
 
    ![Screenshot that shows Azure Active Directory in the Azure Marketplace.](../media/4-create-active-directory.png)
-1. On the **Create tenant** page, use these values, and then select **Create**.
+1. Select **Azure Active Directory**, then select **Next : Configuration**.
+
+1. On the **Create tenant** page, use these values, select **Review + Create**, then select **Create**.
 
     | Property | Value |
     | --- | --- |
@@ -17,6 +19,7 @@ The default Azure Active Directory (Azure AD) organization in the Azure sandbox 
     | Country or region | United States. |
     | | |
 
+1. Complete the captcha, then select **Submit**.
 1. After you create the organization, select the F5 key to refresh the page. In the upper-right corner, select your user account. Then select **Switch directory**.
 1. Select the organization you just created.
 
@@ -51,17 +54,17 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
 
 ## Create a user account
 
-To test your configuration, create an account that's not associated with an administrator role.
+To test your configuration, create an account that's not associated with an administrator role. You'll also assign the account to the group you created.
 
 1. In your Azure AD organization, under **Manage**, select **Users**.
-1. Select **+ New user**, and use the following values:
+1. Select **+ New user**, select **Create new user** in the drop-down, and use the following values:
 
     | Setting | Value |
     | --- | --- |
     | User name | balas |
     | Name | Bala Sandhu |
     | Password | Select **Show Password**, and make a note of the password. |
-    | Groups | Select SSPRTesters. |
+    | Groups | Select the **0 groups selected** link, then select **SSPRTesters** and click **Select**. |
 
 1. Select **Create**.
 
@@ -70,8 +73,8 @@ To test your configuration, create an account that's not associated with an admi
 Now you're ready to enable SSPR for the group.
 
 1. In your Azure AD organization, under **Manage**, select **Password reset**. 
-1. If the **password reset** page still displays the message **Get a free Premium trial to use this feature**, wait for a few minutes and then refresh the page.
-1. On the **Properties** page, select **Selected**. Select the **SSPRTesters** group, and then select **Save**.
+1. If the **Password reset** page still displays the message **Get a free Premium trial to use this feature**, wait for a few minutes and then refresh the page.
+1. On the **Properties** page, select **Selected**. Select the **No groups selected** link, select the **SSPRTesters** group, and then select **Save**.
 
     ![Screenshot of the Password Reset properties panel wwith SSPR enabled and selected group set to SSPRTesters.](../media/4-choose-sspr-group.png)
 

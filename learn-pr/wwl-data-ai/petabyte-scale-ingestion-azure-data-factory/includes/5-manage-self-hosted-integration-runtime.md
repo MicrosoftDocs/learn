@@ -23,11 +23,7 @@ The self-hosted integration runtime is logically registered to the Azure Data Fa
 
 ## Create a self-hosted Integration Runtime within Azure Data Factory
 
-1. On the Let's get started page of Azure Data Factory UI, select the Author tab on the leftmost pane.
-    > [!div class="mx-imgBorder"]
-    > ![The home page author button](../media/home-page-author-button.png)
-
-1. Select Manage in the leftmost pane, and select Integration runtimes. Select +New.
+1. On the Let's get started page of Azure Data Factory UI, select Manage in the leftmost pane, and select Integration runtimes. Select +New.
     > [!div class="mx-imgBorder"]  
     > ![Create an integration runtime](../media/create-integration-runtime.png)
 

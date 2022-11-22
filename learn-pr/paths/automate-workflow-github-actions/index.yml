@@ -5,8 +5,8 @@ metadata:
   description: Learn how GitHub Actions enables you to automate your software development cycle and deploy applications to Azure.
   brand: github
   ms.date: 07/02/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-github
 title: Automate your workflow with GitHub Actions
@@ -23,7 +23,7 @@ summary: |
 prerequisites: |
  - A [GitHub](https://github.com?azure-portal=true) account
  - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
-iconUrl: /learn/achievements/github/automate-workflow-github-actions.svg
+iconUrl: /training/achievements/github/automate-workflow-github-actions.svg
 levels:
 - beginner
 - intermediate
@@ -35,6 +35,8 @@ roles:
 products:
 - github
 - azure
+subjects:
+- devops
 modules:
 - learn.github.introduction-to-github
 - learn.github.github-actions-automate-tasks

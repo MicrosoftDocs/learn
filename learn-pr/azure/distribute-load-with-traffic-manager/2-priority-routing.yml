@@ -4,8 +4,8 @@ metadata:
   title: Route network traffic by using Traffic Manager
   description: Learn how Traffic Manager uses different routing methods to direct network traffic
   ms.date: 04/15/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: KumudD
+  ms.author: kumud
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Route network traffic by using Traffic Manager

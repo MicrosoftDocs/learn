@@ -24,4 +24,4 @@ To use a container, you typically pull the container image from a registry and d
 \*_Docker is an open source solution for container development and management that includes a server engine that you can use to host containers. There are versions of the Docker server for common operating systems, including Microsoft Windows and Linux._
 
 > [!Tip]
-> To learn more about containers, review the [Introduction to Docker containers](/learn/modules/intro-to-docker-containers/) module on Microsoft Learn.
+> To learn more about containers, review the [Introduction to Docker containers](/training/modules/intro-to-docker-containers/) module on Microsoft Learn.

@@ -4,7 +4,7 @@ metadata:
   title: 'Case studies: NoSQL databases and cloud object storage'
   description: Carnegie Mellon University's Cloud Developer course. Learn about two more types of storage - NoSQL databases and object storage - with case studies from industry.
   brand: azure
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -36,7 +36,8 @@ prerequisites: |
   - Understand I/O virtualization
   - Know about the different types of data and how they are stored
   - Be familiar with distributed file systems and how they work
-iconUrl: /learn/achievements/cmu-cloud-developer/case-studies-nosql-databases.svg
+iconUrl: /training/achievements/cmu-cloud-developer/case-studies-nosql-databases.svg
+hidden: true
 levels:
 - beginner
 roles:
@@ -44,6 +45,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- database
 units:
 - learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.0-introduction
 - learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.1-apache-hbase

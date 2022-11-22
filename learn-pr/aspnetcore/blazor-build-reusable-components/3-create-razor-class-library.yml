@@ -4,7 +4,7 @@ title: Create a Razor class library
 metadata:
   unitType: exercise
   title: Create a Razor class library
-  description: "In this exercise, you will create your first Razor class library with a component that can be used in Blazor and ASP.NET Core applications.  Your library will be ready to send to NuGet for use by developers everywhere"
+  description: "In this exercise, you'll create your first Razor class library with a component that can be used in Blazor and ASP.NET Core applications."
   ms.date: 10/13/2021
   author: csharpfritz
   ms.author: jefritz

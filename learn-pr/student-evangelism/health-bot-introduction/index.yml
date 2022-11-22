@@ -17,7 +17,7 @@ abstract: |
   - Understand how Health Bot works.
   - Determine the scenarios where Health Bot can be used.
   - Create the first Health Bot instance.
-iconUrl: /learn/achievements/student-evangelism/health-bot-introduction.svg
+iconUrl: /training/achievements/student-evangelism/health-bot-introduction.svg
 levels:
   - beginner
 roles:
@@ -26,6 +26,8 @@ roles:
 products:
   - vs
 prerequisites: Introduction to Azure Health Bot
+subjects:
+- business-applications
 units:
   - learn.health-bot-introduction.1-introduction
   - learn.health-bot-introduction.2-what-is-azure-health-bot

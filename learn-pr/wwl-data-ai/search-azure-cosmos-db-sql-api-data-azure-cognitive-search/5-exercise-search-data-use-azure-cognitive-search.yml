@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search.exercise-search-data-using-azure-cognitive-search
-title: Exercise - Search data using Azure Cognitive Search and Azure Cosmos DB SQL API
+title: Exercise - Search data using Azure Cognitive Search and Azure Cosmos DB for NoSQL
 metadata:
-  title: Exercise - Search data using Azure Cognitive Search and Azure Cosmos DB SQL API
-  description: "Exercise - Search data using Azure Cognitive Search and Azure Cosmos DB SQL API"
-  ms.date: 12/09/2021
+  title: Exercise - Search data using Azure Cognitive Search and Azure Cosmos DB for NoSQL
+  description: "Exercise - Search data using Azure Cognitive Search and Azure Cosmos DB for NoSQL"
+  ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

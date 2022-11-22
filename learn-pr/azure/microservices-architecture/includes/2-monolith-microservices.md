@@ -12,7 +12,7 @@ All the services are contained within a single unit. This arrangement brings cha
 
 - Difficult to scale services independently.
 - Complex to develop and manage deployments as the codebase grows, which slows releases and new feature implementation.
-- Tied to a single technology stack, which limits innovation in new platforms and SDKs.
+- The architecture is tied to a single technology stack, which limits innovation in new platforms and SDKs.
 - Data schema updates can be increasingly difficult.
 
 These challenges can be addressed by looking at alternative architectures, such as a microservices architecture.
@@ -58,7 +58,7 @@ Teams can pick the technology that best fits their service. They can use a mix o
 
 #### Resiliency
 
-If an individual microservice becomes unavailable, it won't disrupt the entire application. This is the case as long as any upstream microservices are designed to handle faults correctly. An example is by implementing circuit breaking). The benefit to your users or service consumers is an always-on experience for your application.
+If an individual microservice becomes unavailable, it won't disrupt the entire application. This is the case as long as any upstream microservices are designed to handle faults correctly (for example, by implementing circuit breaking). The benefit to your users or service consumers is an always-on experience for your application.
 
 #### Scalability
 

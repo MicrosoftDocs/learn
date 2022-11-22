@@ -8,6 +8,10 @@ metadata:
   ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - masoucou-05122021
 title: Build your first microservice with .NET
 summary: Microservice applications are composed of small, independently versioned, and scalable customer-focused services that communicate with each other over standard protocols with well-defined interfaces. Each microservice typically encapsulates simple business logic, which you can scale out or in, test, deploy, and manage independently.  Smaller teams develop a microservice based on a customer scenario and use any technologies that they want to use. This module will teach you how to build your first microservice with .NET.
 abstract: |
@@ -23,13 +27,15 @@ prerequisites: |
   - Docker Desktop installed
   - Visual Studio Code installed
 ratingEnabled: true
-iconUrl: /learn/achievements/dotnet-microservices.svg
+iconUrl: /training/achievements/dotnet-microservices.svg
 levels:
 - beginner
 roles:
 - developer
 products:
 - dotnet
+subjects:
+- custom-app-development
 units:
 - learn.languages.dotnet-microservices.introduction
 - learn.languages.dotnet-microservices.what-are-microservices

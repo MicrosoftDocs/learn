@@ -4,9 +4,9 @@ title: How Azure Firewall works
 metadata:
   title: How Azure Firewall works
   description: Learn how Azure Firewall and Azure Firewall Manager protect Azure virtual networks.
-  ms.date: 12/28/2020
-  author: jamcneil
-  ms.author: jumcn
+  ms.date: 09/08/2022
+  author: vhorne
+  ms.author: victorh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

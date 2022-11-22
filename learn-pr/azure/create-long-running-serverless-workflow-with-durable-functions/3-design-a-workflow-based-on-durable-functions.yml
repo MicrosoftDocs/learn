@@ -5,8 +5,8 @@ metadata:
   title: Design a workflow based on Durable Functions
   description: Design a workflow based on Durable Functions.
   ms.date: 04/24/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

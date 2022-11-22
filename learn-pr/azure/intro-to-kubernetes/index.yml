@@ -4,8 +4,8 @@ metadata:
   title: Introduction to Kubernetes
   description: Get acquainted with the Kubernetes open-source container-orchestration system for automating application deployment, scaling, and management.
   ms.date: 4/01/2020
-  author: cryophobia
-  ms.author: chrvaw
+  author: nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Kubernetes
@@ -19,7 +19,7 @@ prerequisites: |
   - Basic concepts of microservice architectures
   - Basic understanding of how Docker containers work
   - Basic knowledge of how to install software by using a command-line interface
-iconUrl: /learn/achievements/introduction-to-kubernetes.svg
+iconUrl: /training/achievements/introduction-to-kubernetes.svg
 badge:
   uid: learn.intro-to-kubernetes.badge
 levels: 
@@ -32,6 +32,8 @@ roles:
 products:
 - azure
 - azure-kubernetes-service
+subjects:
+- container
 units:
 - learn.intro-to-kubernetes.introduction
 - learn.intro-to-kubernetes.what-is-kubernetes

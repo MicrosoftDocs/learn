@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In this exercise, you walk through the creation of a new Xamarin.iOS application with Visual Studio 2019. You can also use Visual Studio 2017 or Visual Studio for Mac, but keep in mind that some steps might be slightly different.
 
 The primary goal of this exercise is to disable the default Storyboard UI from the TipCalculator project you created in the previous exercise. After that, you replace it with a code-based `UIViewController`, which will be set as the `RootViewController` for the application.

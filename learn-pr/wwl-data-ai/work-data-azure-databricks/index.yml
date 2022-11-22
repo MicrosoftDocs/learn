@@ -3,7 +3,7 @@ uid: learn.wwl.work-data-azure-databricks
 metadata:
   title: Work with data in Azure Databricks
   description: "Work with data in Azure Databricks"
-  ms.date: 09/15/2021
+  ms.date: 08/18/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -17,13 +17,16 @@ abstract: |
   - Visualize data
 prerequisites: |
   Before starting this module, you should have some experience of provisioning an Azure Databricks workspace and cluster.
-iconUrl: /learn/achievements/work-with-data-in-azure-databricks.svg
+iconUrl: /training/achievements/work-with-data-in-azure-databricks.svg
 levels:
 - intermediate
 roles:
 - data-scientist
 products:
 - azure-databricks
+subjects:
+- cloud-computing
+- machine-learning
 units:
 - learn.wwl.work-data-azure-databricks.introduction
 - learn.wwl.work-data-azure-databricks.understand-dataframes

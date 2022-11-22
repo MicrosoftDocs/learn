@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction        
   title: Introduction to Azure Service Health 
   description: Introduction to Azure Service Health and how to get information from Azure Platform health.             # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 9/1/2021   
+  ms.date: 05/04/2022   
   author: ricmmartins  
   ms.author: ricmart   
   ms.topic: interactive-tutorial  
@@ -23,7 +23,7 @@ prerequisites: |
   - Basic knowledge of navigating the Azure portal
   - Basic knowledge of Azure resources
 
-iconUrl: /learn/achievements/intro-to-azure-service-health.svg
+iconUrl: /training/achievements/intro-to-azure-service-health.svg
 
 levels:
   - beginner
@@ -36,7 +36,12 @@ roles:
 
 products:
 - azure
+- azure-service-health
 
+subjects:
+- cloud-computing
+- device-management
+- business-continuity
 units:
 - learn.intro-to-azure-service-health.introduction
 - learn.intro-to-azure-service-health.what-is-azure-service-health

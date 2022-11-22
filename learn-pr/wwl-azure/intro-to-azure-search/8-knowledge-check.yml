@@ -4,57 +4,47 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Test your knowledge by answering questions about skills you learned in this module."
-  ms.date: 11/30/2021
+  ms.date: 09/02/2022
   author: wwlpublish
-  ms.author: robmcm
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which one of the following statements about query requests is true?"
-    choices:
-    - content: "All query composition is based on the full Lucene syntax."
-      isCorrect: false
-      explanation: "Incorrect. Azure Cognitive Search provides a simple syntax as the default. The optional full Lucene syntax is used for more advanced queries such as fuzzy search, proximity search, and regular expressions."
-    - content: "Query requests include search criteria, but nothing for shaping search results."
-      isCorrect: false
-      explanation: "Incorrect. A query request is a comprehensive instruction to the search engine. A single call can combine a search expression, a $filter expression, pagination, which fields to search, and which fields to return."
-    - content: "Search explorer returns results in JSON only."
-      isCorrect: true
-      explanation: "Correct. Search explorer returns results in JSON only."
-    - content: "SearchMode must be set to ON in order for queries to work."
-      isCorrect: false
-      explanation: "Incorrect. Valid values are \"any\" or \"all\". The searchMode specifies whether a positive match can be made using any of the criteria, or whether all of the criteria must be satisfied."
-  - content: "Which of the following data sources can be used as an input data source?"
-    choices:
-    - content: "Azure Data Lake."
-      isCorrect: false
-      explanation: "Incorrect. Azure Data Lake is not a supported external data source. It is, however, entirely possible to write code to use the REST API, and push data from Azure Data Lake to Azure Cognitive Search."
-    - content: "Azure Virtual Machines."
-      isCorrect: false
-      explanation: "Incorrect. Azure Virtual Machines are not a supported data source. SQL Server installed on a virtual machine is a supported source however."
-    - content: "Azure SQL Database."
-      isCorrect: true
-      explanation: "Correct. Azure SQL Database is one of the supported external data sources in Azure Cognitive Search. Azure SQL Database has a built-in indexer ready made for Azure Cognitive Search."
-    - content: "Azure Queue Storage."
-      isCorrect: false
-      explanation: "Incorrect. Azure Queue Storage is not supported. Only Blob and Table Storage are supported external sources within Azure Storage."
-  - content: "Which data format is accepted by Azure Cognitive Search when you are pushing data to the service?"
+  - content: "Which data format is accepted by Azure Cognitive Search when you're pushing data to the index?"
     choices:
     - content: "CSV."
       isCorrect: false
-      explanation: "Incorrect. CSV isn't supported."
+      explanation: "Incorrect. If source data is a CSV file, you'll have to convert it to JSON before you can push it to an index. You can also use an indexer to parse CSV files stored in Azure Storage."
     - content: "SQL."
       isCorrect: false
-      explanation: "Incorrect. SQL isn't supported."
-    - content: "XML."
-      isCorrect: false
-      explanation: "Incorrect. XML isn't supported."
+      explanation: "Incorrect. SQL data isn't supported natively. You can either convert it to JSON or use an indexer that serializes the content for you."
     - content: "JSON."
       isCorrect: true
-      explanation: "Correct. Documents are stored in the search index as JSON documents. JSON is also used to define index schemas, indexers, and data source objects."
+      explanation: "Correct. Cognitive Search can index JSON documents. JSON is also used to define index schemas, indexers, and data source objects."
+  - content: "Which explanation best describes an indexer and an index?"
+    choices:
+    - content: "An indexer converts documents into JSON and forwards them to a search engine for indexing."
+      isCorrect: true
+      explanation: "Correct. An indexer serializes a source document into JSON before passing it to a search engine for indexing. An indexer automates several steps of data ingestion, reducing the amount of code you need to write."
+    - content: "An indexer can be used instead of an index if the files are already in the proper format."
+      isCorrect: false
+      explanation: "Incorrect. An indexer is used to populate an index, but isn't a replacement for an index."
+    - content: "An indexer is only used for AI enrichment and skillset execution."
+      isCorrect: false
+      explanation: "Incorrect. A skillset requires an indexer, but an indexer doesn't require a skillset. You can use indexers to create a search index from textual content in any supported data source."
+  - content: "If you set up a search index without including a skillset, which would you still be able to query?"
+    choices:
+    - content: "Sentiment."
+      isCorrect: false
+      explanation: "Incorrect. Detecting the sentiment in content requires a skillset that includes the Sentiment Analysis skill."
+    - content: "Text content."
+      isCorrect: true
+      explanation: "Correct. Cognitive Search is used for full text search over indexes containing alphanumeric content."
+    - content: "Image captions."
+      isCorrect: false
+      explanation: "Incorrect. Creating captions for images requires a skillset that includes the Image Analysis skill."

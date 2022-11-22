@@ -14,21 +14,21 @@ In this unit, you'll learn about the steps to automate the installation of a web
 
 ## Using cloud-init to install Nginx on a Linux virtual machine
 
-**Cloud-init** is a GitHub-based project that was originally developed by Canonical to help them initialize Ubuntu machines. Cloud-init now supports most of the major Linux distributions, and it is cloud-aware, meaning that you can configure machines based on metadata that is read from cloud providers.
+**Cloud-init** is a GitHub-based project that was originally developed by Canonical to help them initialize Ubuntu machines. Cloud-init now supports most of the major Linux distributions, and it's cloud-aware, meaning that you can configure machines based on metadata that is read from cloud providers.
 
 The core features of cloud-init that your team needs to use are:
 
-- Specify additional packages to install
+- Specify more packages to install
 
 - Create files and with custom contents
 
-- Run additional Linux commands
+- Run more Linux commands
 
 Cloud-init uses a simple configuration file in YAML format. To customize the installation of your Linux virtual machine, you create a YAML file that specifies the tasks that you want to run as part of the installation process for your virtual machine. You supply this configuration file to the `az cm create` command, and cloud-init will use it to initialize your virtual machine.
 
 ### Use cloud-init to install and configure Nginx
 
-On Linux, you use the Advanced Package Tool (`apt`) management system on the command-line to manage and install additional software. To customize your Linux virtual machine creation, you add the names of the packages that you would add with the `apt` command to your cloud-init configuration file, and cloud-init will take care of the rest. There's also a useful configuration setting that updates the packages that are installed on your virtual machine, and retrieves the latest list of available packages.
+On Linux, you use the Advanced Package Tool (`apt`) management system on the command-line to manage and install other software. To customize your Linux virtual machine creation, you add the names of the packages that you would add with the `apt` command to your cloud-init configuration file, and cloud-init will take care of the rest. There's also a useful configuration setting that updates the packages that are installed on your virtual machine, and retrieves the latest list of available packages.
 
 For example, following excerpt from a cloud-init configuration file updates the software packages that have already been installed, and installs the Nginx package for the Linux distribution that you're using:
 
@@ -38,7 +38,7 @@ packages:
   - nginx
 ```
 
-As part of your Nginx installation, you can configure additional options, such as configuring Nginx to respond to HTTP requests with a default webpage. For example: the following configuration excerpt instructs cloud-init to create a path `/etc/nginx/sites-available/default` and sets the owner to `www-data`, then it tells Nginx to listen on port 80 and look for files in the `/home/azureuser/serverInfo` folder.
+As part of your Nginx installation, you can configure other options, such as configuring Nginx to respond to HTTP requests with a default webpage. For example: the following configuration excerpt instructs cloud-init to create a path `/etc/nginx/sites-available/default` and sets the owner to `www-data`, then it tells Nginx to listen on port 80 and look for files in the `/home/azureuser/serverInfo` folder.
 
 ```yaml
 write_files:
@@ -68,7 +68,7 @@ packages:
   - php7.2-fpm
 ```
 
-Now that you've instructed cloud-init to install PHP, you need to modify your cloud-init file to configure Nginx to process PHP pages. For example: the following configuration excerpt adds FastCGI definitions for Nginx that instruct it to process webpages ending in php with the package you just installed.
+Now that you've instructed cloud-init to install PHP, you need to modify your cloud-init file to configure Nginx to process PHP pages. For example: the following configuration excerpt adds FastCGI definitions for Nginx that instruct it to process webpages ending in php with the package you installed.
 
 ```yaml
 write_files:
@@ -93,11 +93,11 @@ write_files:
         }
 ```
 
-Once you have configured all of the preceding options, your cloud-init configuration is ready to set up a web server that can use use Nginx to process PHP requests.
+Once you've configured all of the preceding options, your cloud-init configuration is ready to set up a web server that can use Nginx to process PHP requests.
 
 ### Use cloud-init to create a default webpage
 
-Thus far you have created a cloud-init file that has the necessary settings for installing the Nginx web server and PHP, and configuring Nginx to run PHP pages. Your remaining task is to instruct cloud-init to create a default status page for your web server, which uses the `write-files` syntax that you saw earlier to create a *index.php* file. For example: the following configuration excerpt instructs cloud-init to create a default status page at `/home/azureuser/serverInfo/index.php`.
+So far you've created a cloud-init file that has the necessary settings for installing the Nginx web server and PHP, and configured Nginx to run PHP pages. Your remaining task is to instruct cloud-init to create a default status page for your web server, which uses the `write-files` syntax that you saw earlier to create a *index.php* file. For example: the following configuration excerpt instructs cloud-init to create a default status page at `/home/azureuser/serverInfo/index.php`.
 
 ```yaml
   - owner: azureuser:azureuser
@@ -152,7 +152,7 @@ The relevant PowerShell commands that you can use when setting up your virtual m
 | Command | Description |
 | --- | --- |
 | `Install-WindowsFeature` | Allows you to install Windows features, such as IIS. |
-| `Invoke-WebRequest` | Allows you to download additional software via the web. |
+| `Invoke-WebRequest` | Allows you to download more software via the web. |
 | `Add-WebConfiguration` | Allows you to configure IIS. |
 | `Remove-Item` and `New-Item` | Allows you to delete and create files. |
 
@@ -160,7 +160,7 @@ When you're setting up your Windows virtual machines, you'll add custom commands
 
 ### Using PowerShell to install and configure IIS
 
-As you learned in the previous exercise, when you've created a new virtual machine, it doesn't have IIS and the CGI components installed. However, Windows Server has a PowerShell cmdlet to add additional features to Windows. The following PowerShell commands install IIS, then the FastCGI component (which is necessary for PHP), and then the IIS Manager:
+As you learned in the previous exercise, when you've created a new virtual machine, it doesn't have IIS and the CGI components installed. However, Windows Server has a PowerShell cmdlet to add more features to Windows. The following PowerShell commands install IIS, then the FastCGI component (which is necessary for PHP), and then the IIS Manager:
 
 ```powershell
 Install-WindowsFeature -Name "Web-Server";
@@ -168,7 +168,7 @@ Install-WindowsFeature -Name "Web-CGI";
 Install-WindowsFeature -Name "Web-Mgmt-Console";
 ```
 
-After you have installed IIS with the components you need, you need to configure IIS to use a default PHP webpage. The following PowerShell command adds *index.php* to the list of default webpages:
+After you've installed IIS with the components you need, you need to configure IIS to use a default PHP webpage. The following PowerShell command adds *index.php* to the list of default webpages:
 
 ```powershell
 Add-WebConfiguration -Filter /system.webServer/defaultDocument/files -AtIndex 0 -PSPath IIS:\ -Value @{value="index.php"}
@@ -180,9 +180,9 @@ Add-WebConfiguration -Filter /system.webServer/defaultDocument/files -AtIndex 0 
 
 ### Using PowerShell to install and configure PHP
 
-There are several options for installing and configuring PHP with IIS. For example, you *could* log into your virtual machine after it has been created and run the installation process manually, but that would not fulfill your team's desire to automate the installation and configuration of your virtual machines.
+There are several options for installing and configuring PHP with IIS. For example, you *could* log into your virtual machine after it has been created and run the installation process manually, but that wouldn't fulfill your team's desire to automate the installation and configuration of your virtual machines.
 
-One of the easiest ways to install extra features on IIS is to use the Web Platform Installer (WPI), which you can use to install PHP. The WPI will install PHP, as well as any necessary dependencies. While the WPI can be run interactively, you can also automate the WPI with PowerShell.
+One of the easiest ways to install extra features on IIS is to use the Web Platform Installer (WPI), which you can use to install PHP. The WPI will install PHP and any necessary dependencies. While the WPI can be run interactively, you can also automate the WPI with PowerShell.
 
 In simplest terms, the process for installing the WPI consists of three steps:
 
@@ -210,7 +210,7 @@ After WPI has been downloaded and installed onto your virtual machine, you can u
 
 ### Using PowerShell to create a default webpage
 
-Thus far you have created a PowerShell script that has the necessary settings for installing IIS and PHP, and configuring IIS to run PHP pages. Your remaining task is to instruct PowerShell to create a default status page for your web server, which uses the `New-Item` cmdlet to create a *index.php* file. For example: the following configuration excerpt instructs PowerShell to create a default status page at `C:\inetpub\wwwroot\index.php`.
+Thus far you've created a PowerShell script that has the necessary settings for installing IIS and PHP, and configuring IIS to run PHP pages. Your remaining task is to instruct PowerShell to create a default status page for your web server, which uses the `New-Item` cmdlet to create a *index.php* file. For example: the following configuration excerpt instructs PowerShell to create a default status page at `C:\inetpub\wwwroot\index.php`.
 
 ```powershell
 New-Item -ItemType File -Path "C:\inetpub\wwwroot\" -Name index.php -Value @'

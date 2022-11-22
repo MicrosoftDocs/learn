@@ -4,13 +4,12 @@ title: Explore Azure Automation State configuration (DSC)
 metadata:
   title: Explore Azure Automation State configuration (DSC)
   description: "Explore Azure Automation State configuration (DSC)"
-  ms.date: 12/02/2021
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 2
 content: |

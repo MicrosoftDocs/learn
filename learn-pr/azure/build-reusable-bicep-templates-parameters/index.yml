@@ -5,8 +5,8 @@ metadata:
   title: Build reusable Bicep templates by using parameters
   description: Control and apply parameters to a Bicep template while protecting sensitive inputs. 
   ms.date: 10/29/2021
-  author: wviriya
-  ms.author: wviriya
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
 title: Build reusable Bicep templates by using parameters  
@@ -29,7 +29,7 @@ prerequisites: |
   - Either:
     - The latest [Azure CLI](/cli/azure/install-azure-cli) tools installed locally.
     - The latest [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.
-iconUrl: /learn/achievements/bicep/build-reusable-bicep-templates-parameters.svg
+iconUrl: /training/achievements/bicep/build-reusable-bicep-templates-parameters.svg
 levels:
   - intermediate
 roles:
@@ -40,7 +40,10 @@ languages:
   - bicep
 products:  
   - azure-resource-manager
-units:  
+subjects:
+  - devops
+  - cloud-computing
+units:
 - learn.azure.build-reusable-bicep-templates-parameters.introduction
 - learn.azure.build-reusable-bicep-templates-parameters.understand-parameters
 - learn.azure.build-reusable-bicep-templates-parameters.exercise-add-parameters-with-decorators

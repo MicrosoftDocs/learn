@@ -18,7 +18,7 @@ prerequisites: |
   - A basic familiarity with Azure
   - You should be familiar with basic cloud concepts and terminology
   - An understanding of cloud computing is helpful, but isn't necessary
-iconUrl: /learn/achievements/intro-to-cloud-native-apps.svg
+iconUrl: /training/achievements/intro-to-cloud-native-apps.svg
 levels:
 - beginner
 roles:
@@ -28,6 +28,9 @@ roles:
 - student
 products:
 - azure
+- azure-kubernetes-service
+subjects:
+- cloud-computing
 units:
 - learn.azure.intro-to-cloud-native-apps.1-introduction
 - learn.azure.intro-to-cloud-native-apps.2-what-are-cloud-native-apps

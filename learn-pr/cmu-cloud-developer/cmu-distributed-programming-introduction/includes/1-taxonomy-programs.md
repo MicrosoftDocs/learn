@@ -21,10 +21,10 @@ _Figure 2: A demonstration of the concepts of processes, threads, tasks, jobs, a
 ***
 ### References
 
-1. _Barney, Blaise (last updated 07/2019). [POSIX Threads Programming](https://computing.llnl.gov/tutorials/pthreads/) Lawrence Livermore National Laboratory_
+1. _Barney, Blaise (last updated 07/2019). [POSIX Threads Programming](https://cse.iitkgp.ac.in/~abhij/course/lab/CSL-I/sample/pthread.pdf) Lawrence Livermore National Laboratory_
 2. _M. Ben-Ari (March 6, 2006). [Principles of Concurrent and Distributed Programming](https://www.oreilly.com/library/view/principles-of-concurrent/9780321312839/) Addison-Wesley_
 
 ***
 
-[^1]: <https://computing.llnl.gov/tutorials/pthreads/> "Barney, Blaise (last updated 07/2019). *POSIX Threads Programming* Lawrence Livermore National Laboratory"
+[^1]: <https://cse.iitkgp.ac.in/~abhij/course/lab/CSL-I/sample/pthread.pdf> "Barney, Blaise (last updated 07/2019). *POSIX Threads Programming* Lawrence Livermore National Laboratory"
 [^2]: <https://www.oreilly.com/library/view/principles-of-concurrent/9780321312839/> "M. Ben-Ari (March 6, 2006). *Principles of Concurrent and Distributed Programming* Addison-Wesley"

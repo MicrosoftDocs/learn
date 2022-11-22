@@ -2,12 +2,14 @@
 uid: learn.deploy-azure-vmware-solution.deploy-azure-vmware-solution
 metadata:
   title: Deploy Azure VMware Solution
-  description: Deploy Azure VMware Solution
+  description: Deploy Azure VMware Solution.
   ms.date: 03/19/2021
   author: sbkuehn
   ms.author: shkuehn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: shkuehn-03222021
 title: Deploy Azure VMware Solution
 durationInMinutes: 5
 content: |

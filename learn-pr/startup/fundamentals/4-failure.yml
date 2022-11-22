@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.fundamentals.failure
+title: What makes startups fail?
+metadata:
+  title: What makes startups fail?
+  description: Learn why startups can fail. Factors include inadequate demand, competition from free products, unnecessary secrecy, and disagreement among cofounders.
+  ms.date: 02/11/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-failure.md)]

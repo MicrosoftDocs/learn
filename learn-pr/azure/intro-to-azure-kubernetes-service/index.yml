@@ -4,8 +4,8 @@ metadata:
   title: Introduction to Azure Kubernetes Service
   description: Get acquainted with the Azure Kubernetes open-source container-orchestration system for automating application deployment, scaling, and management.
   ms.date: 6/25/2019
-  author: cryophobia
-  ms.author: chrvaw
+  author: nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Kubernetes Service
@@ -16,7 +16,7 @@ abstract: |
   - Describe how the components of Azure Kubernetes Service work to support compute container orchestration
 prerequisites: |
   - Basic understanding of microservices
-iconUrl: /learn/achievements/intro-to-azure-kubernetes-service.svg
+iconUrl: /training/achievements/intro-to-azure-kubernetes-service.svg
 badge:
   uid: learn.intro-to-azure-kubernetes-service.badge
 levels: 
@@ -29,6 +29,8 @@ roles:
 products:
 - azure
 - azure-kubernetes-service
+subjects:
+- container
 units:
 - learn.intro-to-azure-kubernetes-service.introduction
 - learn.intro-to-azure-kubernetes-service.what-is-azure-kubernetes-service

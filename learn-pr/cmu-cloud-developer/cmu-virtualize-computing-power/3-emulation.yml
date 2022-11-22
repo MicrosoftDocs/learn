@@ -57,13 +57,13 @@ quiz:
       explanation: "Correct!"
     - content: "Predecoding"
       isCorrect: false
-      explanation: "Incorrect. The basic predecoding process does not include the actual addresses of the interpreter routines in the intermediate code. Remember that it's called <italic>indirect threaded</italic> because interpreting each instruction needs a lookup table instead of directly being able to run an interpretation routine."
+      explanation: "Incorrect. The basic predecoding process does not include the actual addresses of the interpreter routines in the intermediate code. Remember that it's called *indirect threaded* because interpreting each instruction needs a lookup table instead of directly being able to run an interpretation routine."
     - content: "Indirect-threaded interpretation"
       isCorrect: false
-      explanation: "Incorrect. Indirect-threaded interpretation does not employ any intermediate form. Remember that it's called <italic>indirect threaded</italic> because interpreting each instruction needs a lookup table instead of directly being able to run an interpretation routine."
+      explanation: "Incorrect. Indirect-threaded interpretation does not employ any intermediate form. Remember that it's called *indirect threaded* because interpreting each instruction needs a lookup table instead of directly being able to run an interpretation routine."
     - content: "Decode-and-dispatch interpretation"
       isCorrect: false
-      explanation: "Incorrect. Decode-and-dispatch interpretation does not employ any intermediate form. Remember that it's called <italic>indirect threaded</italic> because interpreting each instruction needs a lookup table instead of directly being able to run an interpretation routine."
+      explanation: "Incorrect. Decode-and-dispatch interpretation does not employ any intermediate form. Remember that it's called *indirect threaded* because interpreting each instruction needs a lookup table instead of directly being able to run an interpretation routine."
 
 # Did I Get This block 1 question 4
   - content: "With predecoding, all the source instructions of the same types are extracted with the same interpretation routine. Performance can be significantly enhanced by mapping each individual source binary instruction to its own customized target code. This process of converting the source binary program into a target binary program is called:"

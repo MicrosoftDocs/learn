@@ -26,7 +26,7 @@ The following list provides the primary **personal** enrollment methods:
 - **Android Enterprise Work Profile** - During enrollment, you set up Android Enterprise work profile management. Then, you tell your users how to enroll their devices using the Company Portal app. Android Enterprise work profile separates the personal data on an end user's device from their work files and data. Your organization manages the work profile, but cannot manage the personal data on the end user's device. 
 
 The following list provides the primary **corporate** enrollment methods:
-- **DEM** - Enroll devices in Intune by using a device enrollment manager (DEM) account and the Company Portal. DEM is an Intune permission that can be applied to an Azure AD user account and lets the user enroll up to 1,000 devices. A DEM account is useful for scenarios where devices are enrolled and prepared before handing them out to the users of the devices. By design, there's a limit of 150 Device Enrollment Manager (DEM) accounts in Microsoft Intune.
+- **DEM** - Enroll devices in Intune by using a device enrollment manager (DEM) account and the Company Portal. DEM includes an Intune permission that can be applied to an Azure AD user account and lets the user enroll up to 1,000 devices. A DEM account is useful for scenarios where devices are enrolled and prepared before handing them out to the users of the devices. By design, there's a limit of 150 Device Enrollment Manager (DEM) accounts in Microsoft Intune.
 
 Additionally, you can choose to enroll corporate owned devices in Intune based on an international mobile equipment identifier (IMEI) number or serial number (SN), as well as a number of other enrollment methods.
 

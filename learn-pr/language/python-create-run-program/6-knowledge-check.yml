@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.create-run-program.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 04/01/2022
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen, devdivchpfy22
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 4
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: To show a string on the console, what code would you enter?
+      choices:
+        - content: The code `print(my message)`
+          isCorrect: false
+          explanation: Incorrect. You need to use quotation marks to print.
+        - content: The code `println("my message")`
+          isCorrect: false
+          explanation: Incorrect. You need to use the `print()` function.
+        - content: The code `print("my message")`
+          isCorrect: true
+          explanation: Correct. You use the print function with double quotation marks to show strings.
+    - content: If you invoke a program with `program.py 1 2`, what does the code `sys.argv[0]` contain?
+      choices: 
+        - content: It contains `program.py`, the name of the program.
+          isCorrect: true
+          explanation: Correct. Position 0 is always the name of the program.
+        - content: It contains `1`, the first command-line argument.
+          isCorrect: false
+          explanation: Incorrect. Position 0 is always the name of the program.
+        - content: It contains `2`, the second command-line argument.
+          isCorrect: false
+          explanation: Incorrect. Position 0 is always the name of the program.
+    - content: What will happen if you run the statement `"1" + 2`?
+      choices:
+        - content: It will evaluate to 3.
+          isCorrect: false
+          explanation: Incorrect. You need to convert the string to an integer for this statement to work. 
+        - content: It will give an error.
+          isCorrect: true
+          explanation: Correct. It will show the error message "can only concatenate str (not "int") to str".
+        - content: It will become "12".
+          isCorrect: false
+          explanation: Incorrect. You need to convert the string to an integer for this statement to work. For the answer to become "12", both values would need to be strings, as in "1" + "2".
+
+

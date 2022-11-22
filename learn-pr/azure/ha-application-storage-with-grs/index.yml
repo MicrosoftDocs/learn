@@ -3,7 +3,7 @@ uid: learn.ha-application-storage-with-grs
 metadata:
   title: Make your application storage highly available with read-access geo-redundant storage
   description: In this module, you learn how to make your application storage highly available by ensuring that you can fail over resources if there's an Azure region failure.
-  ms.date: 09/03/2019
+  ms.date: 09/08/2022
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -19,13 +19,16 @@ prerequisites: |
   - Basic knowledge of Azure storage accounts
   - Familiarity with C#
   - Ability to install software locally (Visual Studio, Fiddler, Git)
-iconUrl: /learn/achievements/ha-application-storage-with-grs.svg
+iconUrl: /training/achievements/ha-application-storage-with-grs.svg
 levels:
 - beginner
 roles:
 - solution-architect
 products:
 - azure
+subjects:
+- storage
+- business-continuity
 units:
   - learn.ha-application-storage-with-grs.1-introduction
   - learn.ha-application-storage-with-grs.2-storage-account-replication-features

@@ -2,13 +2,13 @@
 uid: learn.intro-to-azure-front-door.3-how-azure-front-door-works  
 title: How Azure Front Door works  
 metadata:
-  unitType: learning-content  
+  unitType: learning-content
   title: How does Azure Front Door work?
   description: How does Azure Front Door work?
-  ms.date: 03/14/2021  
-  author: micrum
-  ms.author: micrum  
-  ms.topic: interactive-tutorial 
+  ms.date: 03/14/2021
+  author: duongau
+  ms.author: duau
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |

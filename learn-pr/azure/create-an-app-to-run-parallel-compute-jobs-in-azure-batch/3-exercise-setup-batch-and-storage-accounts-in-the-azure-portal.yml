@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Setup Batch and Storage accounts in the Azure portal
   description: In this hands-on exercise, you'll setup Batch and Storage accounts in the Azure portal.
   ms.date: 06/01/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: lauradolan
+  ms.author: ladolan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

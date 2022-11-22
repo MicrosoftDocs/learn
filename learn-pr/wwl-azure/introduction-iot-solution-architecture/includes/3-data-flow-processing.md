@@ -9,12 +9,12 @@ These stages can be classified in four categories - storage, routing, analysis, 
 
 These processes can be combined in simple graphs, for instance to display raw telemetry received in real time, or more complex graphs executing multiple and advanced tasks, for example updating dashboards, triggering alarms, and starting business integration processes, etc.
 
-For example, the following graph represents a simple scenario in which devices send telemetry records that are temporarily stored in Azure IoT Hub, and then are immediately displayed on a graph on screen for visualization:
+The following graph represents a simple scenario in which devices send telemetry records that are temporarily stored in Azure IoT Hub, and then are immediately displayed as a graph for on-screen visualization:
 
 :::image type="content" source="../media/m01-l02-data-flow-1-b3c3a3af.png" alt-text="Diagram that illustrates the data workflow from device to IoT Hub to display screen visualization.":::
 
 
-The following graph represents another common scenario, in which devices send telemetry, store it short term in Azure IoT Hub, analyze the data to detect anomalies, then trigger actions such as an email, SMS text, instant message, etc.:
+The following graph represents another common scenario in which devices send telemetry that is temporarily stored in Azure IoT Hub. The data is then analyzed to detect anomalies, which can then be used to trigger actions such as sending email or SMS text, launching a process, etc.:
 
 :::image type="content" source="../media/m01-l02-data-flow-2-1385659c.png" alt-text="Diagram that shows devices send telemetry, store it short term in Azure IoT Hub, analyze the data to detect anomalies, then trigger actions.":::
 

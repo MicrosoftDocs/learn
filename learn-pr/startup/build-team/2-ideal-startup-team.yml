@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.build-team.ideal-startup-team
+title: What does an ideal startup team look like?
+metadata:
+  title: What does an ideal startup team look like?
+  description: Learn about startup teams. Find out which personality characteristics startup teams need. Understand functional roles in startups.
+  ms.date: 02/11/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-ideal-startup-team.md)]

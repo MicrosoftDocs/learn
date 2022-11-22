@@ -5,18 +5,17 @@ Hybrid Identity is the process of connecting your on-premises Active Directory w
 A security engineer uses Hybrid Identity to share identity, authentication, and access across on-premises and cloud resources; you will work on such tasks as:
 
  -  Connect your on-premises AD with your Azure AD.
- -  Select the best authentication option based on your users needs and your security goals.
+ -  Select the best authentication option based on your user's needs and your security goals.
  -  Configure authentication options to create your most secure environment.
 
 ## Skills measured
 
-Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
+Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/certifications/exams/az-500).
 
 Manage identity and access (30-35%)
 
  -  Manage Azure AD identities
-    
-     -  configure authentication methods including password hash and Pass Through Authentication (PTA), OAuth, and passwordless
+     -  configure authentication methods including password hash and Pass-Through Authentication (PTA), OAuth, and passwordless
 
 ## Learning objectives
 

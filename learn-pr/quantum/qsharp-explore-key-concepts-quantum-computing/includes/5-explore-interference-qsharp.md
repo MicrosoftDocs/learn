@@ -30,8 +30,7 @@ $$ H  H |0\rangle=  H \frac1{\sqrt2}(|0\rangle+|1\rangle).$$
 
 Because $ H$ is a linear operator:
 
-$$=\frac1{\sqrt2}( H |0\rangle+ H |1\rangle)=
-\frac1{\sqrt2}(|\psi_1\rangle+|\psi_2\rangle).$$
+$$=\frac1{\sqrt2}( H |0\rangle+ H |1\rangle)=\frac1{\sqrt2}(|\psi_1\rangle+|\psi_2\rangle).$$
 
 So applying $ H$ twice to $|0\rangle$ is mathematically the same as
 superposing the states $|\psi_1\rangle$ and $|\psi_2\rangle$.

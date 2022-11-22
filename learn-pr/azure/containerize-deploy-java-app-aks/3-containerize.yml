@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.containerize-deploy-java-app-aks.containerize
+title: Containerize a Java app
+metadata:
+  unitType: Containerize a Java app
+  title: Containerize a Java app
+  description: Containerize a Java app
+  ms.date: 9/28/2021
+  author: chtrembl
+  ms.author: chtrembl
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-containerize.md)]

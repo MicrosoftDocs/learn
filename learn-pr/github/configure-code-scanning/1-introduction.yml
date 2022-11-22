@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.github.configure-code-scanning.1-introduction
+title: Introduction
+metadata:
+  unitType: Introduction 
+  title: Introduction
+  description: Learn how to implement code scanning using CodeQL, third party tools, and GitHub Actions.
+  ms.date: 02/8/2022
+  author: sterling463
+  ms.author: csterling
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

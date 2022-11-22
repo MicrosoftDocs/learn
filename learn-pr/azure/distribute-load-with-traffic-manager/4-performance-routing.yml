@@ -4,8 +4,8 @@ metadata:
   title: Optimize applications across regions by using performance routing
   description: Learn how to route traffic to the best endpoint for performance
   ms.date: 04/15/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: KumudD
+  ms.author: kumud
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Optimize applications across regions by using performance routing

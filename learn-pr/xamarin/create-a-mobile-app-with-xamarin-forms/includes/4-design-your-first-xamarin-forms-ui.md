@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In this module, we'll learn more about the building blocks of the Xamarin.Forms application and navigation structure, and begin defining a custom UI.
 
 ## What's in a Xamarin.Forms project?

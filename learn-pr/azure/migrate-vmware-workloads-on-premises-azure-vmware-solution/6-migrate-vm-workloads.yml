@@ -4,12 +4,16 @@ title: Migrate virtual machine workloads into Azure VMware Solution
 metadata:
   unitType: learning-content
   title: Migrate virtual machine workloads into Azure VMware Solution
-  description: Migrate virtual machine workloads into Azure VMware Solution
+  description: Migrate virtual machine workloads into Azure VMware Solution.
   ms.date: 6/17/2021
   author: sbkuehn
   ms.author: shkuehn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.contributors:
+  - shkuehn-06182021
+  ms.custom:
+  - team=cloud_advocates
 durationInMinutes: 5
 content: |
   [!include[](includes/6-migrate-vm-workloads.md)]

@@ -14,10 +14,11 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/3-exercise-create-virtual-machine.md)]
-tasks:
-- action: exists
-  environment: azure
-  hint: "Run the `az vm create` command as shown to create your virtual machine."
-  azure:
-    resource:
-      type: "Microsoft.Compute/virtualMachines"
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   hint: "Run the `az vm create` command as shown to create your virtual machine."
+#   azure:
+#     resource:
+#       type: "Microsoft.Compute/virtualMachines"

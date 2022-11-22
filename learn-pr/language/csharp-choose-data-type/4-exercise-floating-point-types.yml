@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Floating-point types
   description: Work with different floating-point types to learn the nuanced differences between each data type.
   ms.date: 09/05/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true

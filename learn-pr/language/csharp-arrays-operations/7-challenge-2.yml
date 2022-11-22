@@ -5,8 +5,8 @@ metadata:
   title: Second Challenge
   description: Use your knowledge of array helper methods to solve a coding challenge.
   ms.date: 10/14/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

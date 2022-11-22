@@ -2,7 +2,7 @@ Your custom skill must implement the expected schema for input and output data t
 
 ## Input Schema
 
-The input schema for a custom skill defines a JSON structure containing a record for each document to be processed. Each document has a unique identified, and a data payload with one or more inputs, like this:
+The input schema for a custom skill defines a JSON structure containing a record for each document to be processed. Each document has a unique identifier, and a data payload with one or more inputs, like this:
 
 ```JSON
 {

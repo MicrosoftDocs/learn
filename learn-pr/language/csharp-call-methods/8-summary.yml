@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Brief review of the concepts discussed in this module.
   ms.date: 09/17/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

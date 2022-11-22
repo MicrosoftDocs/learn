@@ -4,8 +4,8 @@ metadata:
   title: Manage application configuration and secrets in Azure Kubernetes Service (AKS)
   description: Learn how to securely store application secrets and configurations using native Kubernetes resources in Azure Kubernetes Service (AKS).
   ms.date: 12/16/2020
-  author: khaosdoctor
-  ms.author: ludossan
+  author: nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage Application Configuration and Secrets in Azure Kubernetes Service (AKS)
@@ -21,7 +21,7 @@ prerequisites: |
   - Knowledge of Kubernetes and its concepts
   - Basic knowledge of creating Kubernetes YAML manifest files
   - Basic knowledge of executing commands by using kubectl
-iconUrl: /learn/achievements/aks-secrets-configure-app.svg
+iconUrl: /training/achievements/aks-secrets-configure-app.svg
 badge:
   uid: learn.aks-secrets-configure-app.badge
 levels:
@@ -33,6 +33,9 @@ roles:
 products:
 - azure
 - azure-kubernetes-service
+- azure-app-configuration
+subjects:
+- security
 units:
 - learn.aks-secrets-configure-app.1-introduction
 - learn.aks-secrets-configure-app.2-concept-secrets

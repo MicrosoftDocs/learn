@@ -354,7 +354,7 @@ Partial results:
 
 ## Logical functions
 
-Another category of functions allows to to determine which of several values is to be returned. Logical functions evaluate an input expression, and return an appropriate value based on the result.
+Another category of functions allows determine which of several values is to be returned. Logical functions evaluate an input expression, and return an appropriate value based on the result.
 
 ### IIF
 

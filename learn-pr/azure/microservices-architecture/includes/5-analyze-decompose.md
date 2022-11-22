@@ -5,7 +5,7 @@ To move their application to a microservices architecture, Fabrikam needs to eva
 
 ## What is domain-driven design?
 
-DDD is an approach to system design originally introduced by Erik Evans in his 2005 book *Domain-Driven Design: Tackling Complexity in the Heart of Software*. This approach includes three key elements:
+DDD is an approach to system design originally introduced by Erik Evans in the 2005 book *Domain-Driven Design: Tackling Complexity in the Heart of Software*. This approach includes three key elements:
 
 - Focus on the core domain and domain logic.
 - Structure the design on a model of the domain.
@@ -89,7 +89,7 @@ The development team identified one more area of functionality, which doesn't fi
 
 Now we're ready to go from domain model to application design. Here's an approach that you can use to derive microservices from the domain model.
 
-1. Start with a bounded context. In general, the functionality in a microservice should not span more than one bounded context. By definition, a bounded context marks the boundary of a particular domain model. If you find that a microservice mixes different domain models together, that's a sign that you might need to go back and refine your domain analysis.
+1. Start with a bounded context. In general, the functionality in a microservice shouldn't span more than one bounded context. By definition, a bounded context marks the boundary of a particular domain model. If you find that a microservice mixes different domain models together, that's a sign that you might need to go back and refine your domain analysis.
 1. Next, look at the aggregates in your domain model. Aggregates are often good candidates for microservices. A well-designed aggregate exhibits many of the characteristics of a well-designed microservice:
     - An aggregate is derived from business requirements rather than technical concerns, such as data access or messaging.
     - An aggregate should have high functional cohesion.

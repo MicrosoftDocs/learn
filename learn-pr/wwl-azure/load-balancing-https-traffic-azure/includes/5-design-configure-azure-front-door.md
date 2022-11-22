@@ -91,9 +91,7 @@ You can also replace the query string parameters in the redirected URL. To repla
 
 Azure Front Door supports URL rewrite by configuring an optional Custom Forwarding Path to use when constructing the request to forward to the backend. By default, if a custom forwarding path isn't provided, the Front Door will copy the incoming URL path to the URL used in the forwarded request. The Host header used in the forwarded request is as configured for the selected backend. Read Backend Host Header to learn what it does and how you can configure it.
 
-The powerful part of URL rewrite is that the custom forwarding path will copy any part of the incoming path that matches to a wildcard path to the forwarded path (these path segments are the green segments in the example below):
-
-:::image type="content" source="../media/front-door-rewrite-policy-a2bfef24.png" alt-text="URL rewrite example":::
+The powerful part of URL rewrite is that the custom forwarding path will copy any part of the incoming path that matches to a wildcard path to the forwarded path.
 
 
 ## Configure health probes, including customization of HTTP response codes
@@ -145,4 +143,4 @@ Some of the key attributes of the custom HTTPS feature are:
 
 You can enable the HTTPS protocol for a custom domain that's associated with your Front Door under the frontend hosts section.
 
-For more information on how to configure HTTPS on Front door, see [Tutorial - Configure HTTPS on a custom domain for Azure Front Door | Microsoft Docs](/azure/frontdoor/front-door-custom-domain-https).
+For more information on how to configure HTTPS on Front door, see [Tutorial: Configure HTTPS on a Front Door custom domain](/azure/frontdoor/front-door-custom-domain-https).

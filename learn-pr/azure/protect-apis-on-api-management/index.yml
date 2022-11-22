@@ -4,8 +4,8 @@ metadata:
   title: Protect your APIs on Azure API Management
   description: Protect your back-end APIs from information exposure and implement throttling to prevent resource exhaustion with policies in Azure API Management.
   ms.date: 05/10/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: dlepow
+  ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Protect your APIs on Azure API Management
@@ -18,7 +18,7 @@ abstract: |
   - Call an API to test the applied policies
 prerequisites: | 
   - Familiarity with basic concepts of web APIs, such as operations and endpoints
-iconUrl: /learn/achievements/protect-apis-on-api-management.svg
+iconUrl: /training/achievements/protect-apis-on-api-management.svg
 levels:
 - beginner
 roles:
@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-api-management
+subjects:
+- cloud-computing
 units:
 - learn.protect-apis-on-api-management.1-introduction
 - learn.protect-apis-on-api-management.2-remove-technical-info

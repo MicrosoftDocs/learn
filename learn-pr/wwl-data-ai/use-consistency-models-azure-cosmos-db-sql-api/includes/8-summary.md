@@ -9,6 +9,6 @@ Now that you have completed this module, you can:
 
 For more information about the topics discussed in this module, see:
 
-- [Consistency levels in Azure Cosmos DB][docs.microsoft.com/azure/cosmos-db/consistency-levels]
+- [Consistency levels in Azure Cosmos DB][learn.microsoft.com/azure/cosmos-db/consistency-levels]
 
-[docs.microsoft.com/azure/cosmos-db/consistency-levels]: https://docs.microsoft.com/azure/cosmos-db/consistency-levels
+[learn.microsoft.com/azure/cosmos-db/consistency-levels]: https://learn.microsoft.com/azure/cosmos-db/consistency-levels

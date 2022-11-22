@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Knowledge of Python
   - Experience of training models using the Azure Machine Learning SDK
-iconUrl: /learn/achievements/register-and-deploy-model-with-amls-badge.svg
+iconUrl: /training/achievements/register-and-deploy-model-with-amls-badge.svg
 levels:
 - beginner
 roles:
@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-machine-learning
+subjects:
+- machine-learning
 units:
 - learn.data-ai.register-and-deploy-model-with-amls.introduction
 - learn.data-ai.register-and-deploy-model-with-amls.deploy-model

@@ -6,7 +6,7 @@ In this tutorial, you used the Azure Functions Core Tools to get started develop
 
 Now that you can create projects and functions with the Core Tools, what's next?
 
-- Install the [Core Tools](/azure/azure-functions/functions-run-local#install-the-azure-functions-core-tools) and [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest) on your own computer.
+- Install the [Core Tools](/azure/azure-functions/functions-run-local#install-the-azure-functions-core-tools) and [Azure CLI](/cli/azure/install-azure-cli) on your own computer.
 - Try creating functions projects using different languages to see the differences between them. Sample the different trigger templates and examine the generated code to see how to use them.
 - Run `func` without any commands to view the Core Tools usage guide and learn about its other features. What do `func settings` and `func azure functionapp logstream` do?
 - Use `func init` to initialize a functions project folder as a Git repository and track changes to your code, then upload it to GitHub and share it.

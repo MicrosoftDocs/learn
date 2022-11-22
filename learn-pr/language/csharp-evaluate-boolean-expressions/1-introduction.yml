@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Begin your software development journey by learning one of the most popular programming languages.
   ms.date: 09/24/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

@@ -2,8 +2,8 @@
 uid: learn.wwl.explore-azure-cosmos-db
 metadata:
   title: Explore Azure Cosmos DB
-  description: "Learn the core features and functionality of Azure Cosmos DB."
-  ms.date: 01/19/2022
+  description: "Explore Azure Cosmos DB"
+  ms.date: 11/16/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ prerequisites: |
   * You should be familiar with developer concepts and terminology.
   * Experience working with data solutions.
   * An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /learn/achievements/1-explore-azure-cosmos-db.svg
+iconUrl: /training/achievements/1-explore-azure-cosmos-db.svg
 levels:
 - intermediate
 roles:
@@ -30,6 +30,8 @@ roles:
 products:
 - azure
 - azure-cosmos-db
+subjects:
+- database
 units:
 - learn.wwl.explore-azure-cosmos-db.introduction
 - learn.wwl.explore-azure-cosmos-db.identify-key-benefits-of

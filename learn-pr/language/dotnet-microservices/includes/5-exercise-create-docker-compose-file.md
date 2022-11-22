@@ -1,4 +1,4 @@
-Contoso Pizza has two services that they'd like to group together to build and deploy as a single unit. They have decided that Docker Compose is the tool they'll use.
+Contoso Pizza has two services that they'd like to group together to build and deploy as a single unit. They've decided that Docker Compose is the tool they'll use.
 
 In this exercise, you'll create a Docker Compose YAML file, then use the Docker Compose utility to both build the Docker container images and run them.
 
@@ -30,13 +30,13 @@ In this exercise, you'll create a Docker Compose YAML file, then use the Docker 
           context: backend
           dockerfile: Dockerfile
         ports: 
-          - "5900:80"
+          - "5000:80"
 
     ```
 
     This code does several things:
 
-    - First, it creates the frontend website, naming it **pizza frontend**. The code tells Docker to build it, pointing to the Dockerfile found in the **frontend** folder. Then the code sets an environment variable for the website: `backendUrl=http://backend`. Finally, this code opens a port and declares it depends on the backend service.
+    - First, it creates the frontend website, naming it **pizzafrontend**. The code tells Docker to build it, pointing to the Dockerfile found in the **frontend** folder. Then the code sets an environment variable for the website: `backendUrl=http://backend`. Finally, this code opens a port and declares it depends on the backend service.
     - The backend service gets created next. It's named **pizzabackend**. It's built from the same Dockerfile you created in the previous exercise. The last command specifies which port to open.
 
 1. To build the container images, open a command prompt, navigate to the directory with the **docker-compose.yml** file, and run the following command::
@@ -59,4 +59,4 @@ In this exercise, you'll create a Docker Compose YAML file, then use the Docker 
 
 1. You can browse to: http://localhost:5902 to see the Contoso Pizza menu.
 
-In this exercise, you learned how to create and write a Docker Compose file, how to build the services contained within, and how to run those services.
+In this exercise, you learned how to create and write a Docker Compose file, build the services contained within, and run those services.

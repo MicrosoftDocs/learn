@@ -2,10 +2,10 @@
 uid: learn.choose-storage-approach-in-azure.1-introduction
 metadata:
   title: Introduction
-  description: Introduction
-  ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  description: Introduction.
+  ms.date: 06/05/2022
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction

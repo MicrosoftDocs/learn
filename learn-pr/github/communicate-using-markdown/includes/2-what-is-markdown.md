@@ -1,7 +1,7 @@
-Here, we discuss the structure and syntax of Markdown. We also cover features of GitHub-Flavored Markdown (GFM), which are syntax extensions that enable you to integrate GitHub features into content.
+Here, we'll discuss the structure and syntax of Markdown. We'll also cover features of GitHub-Flavored Markdown (GFM), which are syntax extensions that allow you to integrate GitHub features into content.
 
 > [!NOTE]
-> This unit is intended to give you a taste of what Markdown is about. For a more in-depth review, see [Markdown syntax description](https://daringfireball.net/projects/markdown/syntax?azure-portal=true) or [GitHub-Flavored Markdown Spec](https://github.github.com/gfm/?azure-portal=true).
+> This unit is intended to give you a taste of what Markdown is about. For a more in-depth review, reference [Markdown syntax description](https://daringfireball.net/projects/markdown/syntax?azure-portal=true) or [GitHub-Flavored Markdown Spec](https://github.github.com/gfm/?azure-portal=true).
 
 ## What is Markdown?
 
@@ -9,9 +9,9 @@ Markdown exists to shield content creators from the overhead of HTML. While HTML
 
 ### Emphasizing text
 
-The most important part of any communication on GitHub is usually the text itself. But how do you show that some parts of the text are more important than others?
+The most important part of any communication on GitHub is usually the text itself, but how do you show that some parts of the text are more important than others?
 
-Using italics in text is as easy as surrounding the target text with single asterisks (`*`) or single underscores (`_`). Just be sure to close an emphasis with the same character you used to open with. Be observant how you combine the use of asterisks and underscores. Here are several examples:
+Using italics in text is as easy as surrounding the target text with single asterisks (`*`) or single underscores (`_`). Just be sure to close an emphasis with the same character with which you opened it. Be observant how you combine the use of asterisks and underscores. Here are several examples:
 
 ```markdown
 This is *italic* text.
@@ -41,7 +41,7 @@ __This is bold and *italic* text__ using double underscores for bold and single 
 >_This is **italic and bold** text_ using a single underscore for italic and double asterisks for bold.
 > __This is bold and *italic* text__ using double underscores for bold and single asterisks for italic. 
 
-To use a literal asterisk, precede it with an escape character--in GFM  that is a backslash (`\`). This example results in the underscores and asterisks being shown in the output.
+To use a literal asterisk, precede it with an escape character; in GFM, that's a backslash (`\`). This example results in the underscores and asterisks being shown in the output.
 
 ```markdown
 \_This is all \*\*plain\*\* text\_.
@@ -67,23 +67,23 @@ Image and site links use a very similar syntax.
 ![Link an image.](/learn/azure-devops/shared/media/mara.png)
 ```
 
-> ![Link an image.](/learn/azure-devops/shared/media/mara.png)
+> ![Link an image.](/training/azure-devops/shared/media/mara.png)
 
 ```markdown
-[Link to Microsoft Learn](/learn)
+[Link to Microsoft Training](/training)
 ```
 
-> [Link to Microsoft Learn](/learn)
+> [Link to Microsoft Training](/training)
 
 ### Making lists
 
 You can define ordered or unordered lists. You can also define nested items through indentation.
 
- * Ordered lists start with numbers.
- * Unordered lists can use asterisks or dashes (`-`).
+* Ordered lists start with numbers.
+* Unordered lists can use asterisks or dashes (`-`).
 
+Here's the markdown for an ordered list:
 
-Here is the markdown for an ordered list.
 ```markdown
 1. First
 1. Second
@@ -91,10 +91,10 @@ Here is the markdown for an ordered list.
 ```
 
 Result:
+
 > 1. First
 > 1. Second
 > 1. Third
-
 
 ```markdown
 - First
@@ -112,9 +112,9 @@ Here is the markdown for an unordered list.
 
 ### Building tables
 
-Tables can be constructed using a combination of pipes (`|`) for column breaks and dashes (`-`) to designate the prviour row as a header.
+You can construct tables using a combination of pipes (`|`) for column breaks and dashes (`-`) to designate the prior row as a header.
 
-```
+```markdown
 First|Second
 -|-
 1|2
@@ -128,9 +128,9 @@ First|Second
 
 ### Quoting text
 
-Blockquotes can be created using the greater than (`>`) character.
+You can create blockquotes using the greater than (`>`) character.
 
-```
+```markdown
 > This is quoted text.
 ```
 
@@ -151,7 +151,7 @@ Here is a<br />line break
 
 Markdown provides default behavior for working with inline code blocks delimited by the backtick (\`) character. When decorating text with this character, it is rendered as code.
 
-```
+```markdown
 This is `code`.
 ```
 
@@ -159,7 +159,7 @@ This is `code`.
 
 If you have a code segment spanning multiple lines, you can use three backticks (\`\`\`) before and after to create a fenced code block.
 
-    ```
+    ```markdown
     var first = 1;
     var second = 2;
     var sum = first + second;
@@ -187,7 +187,7 @@ GFM extends this support with syntax highlighting for popular languages. Just sp
 
 ### Cross-linking issues and pull requests
 
-GFM supports a variety of shortcode formats to make it easy to link to issues and pull requests. The easiest way to do this is to use the format `#ID`, such as `#3602`. GitHub will automatically adjust longer links to this format if you paste them in. There are also additional conventions you can follow, such as if you are working with other tools or want to specify other projects/branches. 
+GFM supports a variety of shortcode formats to make it easy to link to issues and pull requests. The easiest way to do this is to use the format `#ID`, such as `#3602`. GitHub will automatically adjust longer links to this format if you paste them in. There are also additional conventions you can follow, such as if you're working with other tools or want to specify other projects/branches.
 
 | Reference type | Raw reference | Short link |
 | -------------- | ------------- | ---------- |
@@ -211,9 +211,9 @@ You can link to a commit by pasting in its ID, or, simply using its secure hash 
 
 ### Mentioning users and teams
 
-Typing an `@` symbol, followed by a GitHub username, will send a notification to that person about the comment. This is called an "@mention", because you're mentioning the individual. You can also `@mention` teams within an organization.
+Typing an `@` symbol followed by a GitHub username will send a notification to that person about the comment. This is called an "@mention", because you're mentioning the individual. You can also `@mention` teams within an organization.
 
-```
+```markdown
 @githubteacher
 ```
 
@@ -223,9 +223,9 @@ For more information, see [Receiving notifications about activity on GitHub](htt
 
 ### Tracking task lists
 
-You can create task lists within issues or pull requests using the syntax illustrated below. These can be helpful to track progress when used in the body of an issue or pull request. 
+You can create task lists within issues or pull requests using the following syntax. These can be helpful to track progress when used in the body of an issue or pull request.
 
-```
+```markdown
 - [x] First task
 - [x] Second task
 - [ ] Third task

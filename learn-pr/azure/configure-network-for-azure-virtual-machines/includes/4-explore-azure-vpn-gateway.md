@@ -8,7 +8,7 @@ An Azure virtual network gateway provides an endpoint for incoming connections f
 
 Each virtual network can have only one VPN gateway. All connections to that VPN gateway share the available network bandwidth.
 
-Within each virtual network gateway there are two or more virtual machines (VMs). These VMs have been deployed to a special subnet that you specify, called the _gateway subnet_. They contain routing tables for connections to other networks, along with specific gateway services. These VMs and the gateway subnet are similar to a hardened network device. You don't need to configure these VMs directly, and should not deploy any additional resources into the gateway subnet.
+Within each virtual network gateway, there are two or more virtual machines (VMs). These VMs have been deployed to a special subnet that you specify, called the _gateway subnet_. They contain routing tables for connections to other networks, along with specific gateway services. These VMs and the gateway subnet are similar to a hardened network device. You don't need to configure these VMs directly, and shouldn't deploy any more resources into the gateway subnet.
 
 Creating a virtual network gateway can take some time to complete, so it's vital that you plan appropriately. When you create a virtual network gateway, the provisioning process generates the gateway VMs and deploys them to the gateway subnet. These VMs will have the settings that you configure on the gateway.
 
@@ -42,16 +42,16 @@ Factors that you need to cover during your planning process include:
 - VPN gateway type
 - Azure VPN Gateway SKU
 
-The following table summarizes some of these planning issues. The remainder are described later.
+The following table summarizes some of these planning issues. The remaining issues are described later.
 
-|                           |  Point to site            | Site to site                          |  ExpressRoute                 |
-| -------------             | -------------             | -------------                         | ---------                     |
-| Azure supported services  | Cloud services and VMs    | Cloud services and VMs                | All supported services        |
-| Typical bandwidth         | Depends on [VPN Gateway SKU](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku)    | Depends on [VPN Gateway SKU](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku)       | See [ExpressRoute bandwidth options](/azure/expressroute/expressroute-introduction#bandwidth-options)       |
-| Protocols supported       | SSTP and IPsec            | IPsec                                 | Direct connection, VLANs      |
-| Routing                   | RouteBased (dynamic)      | PolicyBased (static) and RouteBased   | BGP                           |
-| Connection resiliency     | Active-passive            | Active-passive or active-active       | Active-active                 |
-| Use case                  | Testing and prototyping   | Dev, test and small-scale production  | Enterprise/mission critical   |
+|   | Point to site | Site to site | ExpressRoute |
+|---|---|---|---|
+| **Azure supported services** | Cloud services and VMs | Cloud services and VMs | All supported services |
+| **Typical bandwidth** | Depends on [VPN Gateway SKU](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku) | Depends on [VPN Gateway SKU](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku) | See [ExpressRoute bandwidth options](/azure/expressroute/expressroute-introduction#bandwidth-options) |
+| **Protocols supported** | SSTP and IPsec | IPsec | Direct connection, VLANs |
+| **Routing** | RouteBased (dynamic) | PolicyBased (static) and RouteBased | BGP |
+| **Connection resiliency** | Active-passive | Active-passive or active-active | Active-active |
+| **Use case** | Testing and prototyping | Dev, test and small-scale production | Enterprise/mission critical |
 
 ### Gateway SKUs
 
@@ -69,23 +69,23 @@ When designing a cloud connectivity strategy using virtual private networking on
 
 1. Create and configure connections to on-premises networks or other virtual networks, as required.
 
-1. If required, create and configure a point-to-site connection for your Azure VPN gateway.
+1. If necessary, create and configure a point-to-site connection for your Azure VPN gateway.
 
 ### Design considerations
 
 When you design your VPN gateways to connect virtual networks, you must consider the following factors:
 
-- Subnets cannot overlap
+- Subnets can't overlap
 
-    It is vital that a subnet in one location does not contain the same address space as in another location.
+    It's vital that a subnet in one location doesn't contain the same address space as in another location.
 
 - IP addresses must be unique
 
-    You cannot have two hosts with the same IP address in different locations, as it will be impossible to route traffic between those two hosts and the network-to-network connection will fail.
+    You can't have two hosts with the same IP address in different locations, as it will be impossible to route traffic between those two hosts and the network-to-network connection will fail.
 
 - VPN gateways need a gateway subnet called **GatewaySubnet**
 
-    It must have this name for the gateway to work, and it should not contain any other resources.
+    It must have this name for the gateway to work, and it shouldn't contain any other resources.
 
 ### Create an Azure virtual network
 
@@ -105,7 +105,7 @@ The type of VPN gateway you create will depend on your architecture. Options are
 
 ## Set up a VPN gateway
 
-The steps you need to take will depend on the type of VPN gateway that you are installing. For example, to create a point-to-site VPN gateway by using the Azure portal, you would perform the following steps:
+The steps you need to take will depend on the type of VPN gateway that you're installing. For example, to create a point-to-site VPN gateway by using the Azure portal, you would perform the following steps:
 
 1. Create a virtual network.
 
@@ -131,10 +131,10 @@ The steps you need to take will depend on the type of VPN gateway that you are i
 
 12. Connect to Azure.
 
-As there are several configuration paths with Azure VPN gateways, each with multiple options, it is not possible to cover every setup in this course. For more information, see the Additional Resources section.
+As there are several configuration paths with Azure VPN gateways, each with multiple options, it isn't possible to cover every setup in this course. For more information, see the Additional Resources section.
 
 ## Configure the gateway
 
-After your gateway is created, you'll need to configure it. There are several configuration settings you'll need to provide, such as the name, location, DNS server, and so on. We'll explore these in more detail in the exercise.
+After your gateway is created, you'll need to configure it. There are several configuration settings you'll need to provide, such as the name, location, DNS server, and so on. We'll explore these settings in more detail in the exercise.
 
 Azure VPN gateways are a component in Azure virtual networks that enable point-to-site, site-to-site, or network-to-network connections. Azure VPN gateways enable individual client computers to connect to resources in Azure, extend on-premises networks into Azure, or facilitate connections between virtual networks in different regions and subscriptions.

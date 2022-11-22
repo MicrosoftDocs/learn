@@ -24,7 +24,7 @@ In this exercise, you'll use the Azure Toolkit for Eclipse to create a new Azure
 
 1. A web browser window will open. At the **Enter code** prompt, paste the device code you copied to the clipboard, and then click **Next**
 
-    :::image type="content" source="../media/5-enter-code.png" alt-text="Screenshot of the Azure Device Login window. The user has selected Copy&Open." loc-scope="third-party":::
+    :::image type="content" source="../media/5-enter-code.png" alt-text="Screenshot of a browser window, prompting the user to Enter code from the Azure Device Login window.":::
 
 1. When prompted, sign in to Azure with the same account that you used to create the Azure sandbox.
 

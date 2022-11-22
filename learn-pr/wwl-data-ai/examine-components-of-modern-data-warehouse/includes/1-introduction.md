@@ -1,12 +1,10 @@
-Most organizations have multiple data stores, often with different structures and varying formats. They often have live, incoming streams of data, such as sensor data, that can be expensive to analyze. There's often a plethora of useful information available outside of organizations. This information could be combined with local data to add insights and enrich understanding. By combining all local data with useful external information, it's often possible to gain insights into the data that weren't previously possible. The process of combining all of the local data sources is known as data warehousing. The process of analyzing streaming data and data from the Internet is known as Big Data analytics. Azure Synapse Analytics combines data warehousing with Big Data analytics.
-
-Suppose you're a data engineer working at Contoso, an organization with a large manufacturing operation. The organization has to gather and store information from a range of sources, such as real-time data monitoring the status of production line machinery, product quality control data, historical production logs, product volumes in stock, and raw materials inventory data. This information is critical to the operation of the organization. You've been asked to determine how best to store this information, so that it can be analyzed quickly, and queried easily.
+Large-scale data warehousing solutions combine conventional data warehousing used to support business intelligence (BI) with techniques used for so-called "big data" analytics. A conventional data warehousing solution typically involves copying data from transactional data stores into a relational database with a schema that's optimized for querying and building multidimensional models. Big Data processing solutions on the other hand, are used with large volumes of data in multiple formats, which is batch loaded or captured in real-time streams and stored in a *data lake* from which distributed processing engines like Apache Spark are used to process it. 
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you will learn how to:
 
-- Explore data warehousing concepts
-- Explore Azure data services for modern data warehousing
-- Explore modern data warehousing architecture and workload
-- Explore Azure data services in the Azure portal
+- Identify common elements of a large-scale data warehousing solution
+- Describe key features for data ingestion pipelines
+- Identify common types of analytical data store and related Azure services
+- Provision Azure Synapse Analytics and use it to ingest, process, and query data

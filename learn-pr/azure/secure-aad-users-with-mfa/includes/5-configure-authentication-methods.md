@@ -1,19 +1,19 @@
-As mentioned earlier, it's recommended that administrators enable users to be able to select more than one authentication method in case their primary method is unavailable.
+As we mentioned earlier in the module, we recommend that administrators enable users to be able to select more than one authentication method in case their primary method is unavailable.
 
-When a user signs into a service that requires MFA the first time, they will be asked to register their preferred multi-factor authentication method as shown in the following screenshot.
+When a user signs into a service that requires MFA the first time, they'll be asked to register their preferred multifactor authentication method as shown in the following screenshot:
 
 ![Screenshot showing the registration info.](../media/5-setup-user.png)
 
 > [!TIP]
-> If you followed the previous exercise and turned on MFA for an account and app, then you can try accessing that app with the given user account and you should see the above flow.
+> If you followed the previous exercise and turned on MFA for an account and app, you can try accessing that app with the given user account, and you should see the preceding flow.
 
-Once they've registered, each time they sign into a service or app that requires MFA the Azure login process will prompt for the additional authentication information as shown in the following image.
+Once they've registered, each time users sign into a service or app that requires MFA, the Azure login process will prompt for the additional authentication information as shown in the following image:
 
 ![Screenshot that depicts asking for additional authentication information via one of four methods.](../media/5-identity-options.png)
 
 ## Azure Authentication Methods
 
-As we saw earlier, there are several possible authentication methods that an administrator can set up. Some of these also support Self-Service Password Reset (SSPR) which allows users to reset their password by supplying a secondary form of authentication. You can couple this service with Azure AD MFA to ease the burden on IT staff.
+As we learned earlier, there are several possible authentication methods that an administrator can set up. Some of these also support Self-Service Password Reset (SSPR), which allows users to reset their password by supplying a secondary form of authentication. You can couple this service with Azure AD MFA to ease the burden on IT staff.
 
 The following table lists the authentication methods and the services that can use them.
 
@@ -41,7 +41,7 @@ This is the only method that you can’t disable.
 
 This method is available only for non-administrative accounts that use Self-Service Password Reset.
 
-* Azure stores security questions privately and in a security-enhanced manner on a user object in the directory. Only users can answer the questions and only during registration. An administrator can’t read or change a user’s questions or answers.
+* Azure stores security questions privately and in a security-enhanced manner on a user object in the directory. Only users can answer the questions, and only during registration. An administrator can’t read or change a user’s questions or answers.
 
 * Azure provides 35 predefined questions, all translated and localized based on the browser locale.
 
@@ -49,19 +49,19 @@ This method is available only for non-administrative accounts that use Self-Serv
 
 ### Email address
 
-This method is available only in SSPR. It's recommended that you avoid the use of an email account that doesn’t require the user’s Azure AD password to access it.
+This method is available only in SSPR. We recommend that you avoid the use of an email account that doesn’t require the user’s Azure AD password to access it.
 
 ### Windows Hello for Business
 
-Windows Hello for Business provides reliable, fully integrated biometric authentication based on facial recognition or fingerprint matching. Windows Hello for Business, FIDO2 security keys, and Microsoft Authenticator are passwordless solutions. 
+Windows Hello for Business provides reliable, fully integrated biometric authentication based on facial recognition or fingerprint matching. Windows Hello for Business, FIDO2 security keys, and Microsoft Authenticator are passwordless solutions.
 
 ### FIDO2 security keys
 
-FIDO2 security keys are an unphishable standards-based passwordless authentication method that can come in any form factor. Fast Identity Online (FIDO) is an open standard for passwordless authentication. 
+FIDO2 security keys are an unphishable, standards-based passwordless authentication method that can come in any form factor. Fast Identity Online (FIDO) is an open standard for passwordless authentication.
 
-Users can register and then select a FIDO2 security key at the sign-in interface as their main means of authentication. These FIDO2 security keys are typically USB devices, but could also use Bluetooth or NFC. 
+Users can register and then select a FIDO2 security key at the sign-in interface as their main means of authentication. These FIDO2 security keys are typically USB devices, but could also use Bluetooth or NFC.
 
-FIDO2 security keys can be used to sign in to their Azure AD or hybrid Azure AD joined Windows 10 devices and get single-sign on to their cloud and on-premises resources. Users can also sign in to supported browsers. 
+FIDO2 security keys can be used to sign in to their Azure AD or hybrid Azure AD joined Windows 10 devices and get single-sign on to their cloud and on-premises resources. Users can also sign in to supported browsers.
 
 ### Microsoft Authenticator app
 
@@ -69,7 +69,7 @@ This method is available for Android and iOS. Users can register their mobile ap
 
 * The Microsoft Authenticator app helps prevent unauthorized access to accounts and helps stop fraudulent transactions by pushing a notification to your smartphone or tablet. Users view the notification and confirm or deny the request.
 
-* Users can use the Microsoft Authenticator app or a third-party app as a software token to generate an OATH verification code. After entering the username and password, the users enter the code provided by the app on the sign-in screen. The verification code provides a second form of authentication.
+* Users can use the Microsoft Authenticator app or a third-party app as a software token to generate an OATH verification code. After entering the username and password, the users enter the code provided by the app on the sign-in screen. The verification code provides a second form of authentication. Users can also set the Microsoft Authenticator app to deliver a push notification that they'll select and approve to sign in.
 
 ### OATH hardware tokens
 
@@ -103,6 +103,6 @@ You can drill down and see the latest registration audit information for each us
 
 ![Screenshot showing the registration details.](../media/5-auth-registration-details.png)
 
-You can also learn more about SSPR usage in your organization through the **Usage** tab on the main view as shown in the following image.
+You can also learn more about SSPR usage in your organization through the **Usage** tab on the main view, as shown in the following image:
 
 ![Screenshot showing the SSPR usage metrics.](../media/5-sspr-usage.png)

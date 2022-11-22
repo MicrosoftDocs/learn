@@ -4,14 +4,14 @@ In this unit, you'll configure applications to send or receive messages through 
 
 ## Create a general-purpose, standard storage account
 
-The Java receiver application stores messages in Azure Blob Storage, which requires a storage account. To create a storage account (general-purpose V2), use the `storage account create` command. We will define the following parameters for this command: 
+The Java receiver application stores messages in Azure Blob Storage, which requires a storage account. To create a storage account (general-purpose V2), use the `storage account create` command. We'll define the following parameters for this command: 
 
 | Parameter       | Description |
 | --------------- | ----------- |
 | name (required) | A name for your storage account. |
 | resource-group (required) | The resource group owner is the sandbox resource group, which has already been defined as a default value. |
-| location (optional) | Region has already been defined as a default value, but you can include if you want to set a different region from the default resource group location. |
-| sku | The default value SKU of the storage account is 'Standard_RAGRS', but in this exercise, we will specify that value. |
+| location (optional) | Region has already been defined as a default value, but you can include it if you want to set a different region from the default resource group location. |
+| sku | The default value SKU of the storage account is 'Standard_RAGRS', but in this exercise, we'll specify that value. |
 
 In the previous exercise, we defined default values for resource group and location, so we can omit those parameters from the command.
 
@@ -30,7 +30,8 @@ In the previous exercise, we defined default values for resource group and locat
     > [!TIP]
     > It may take a moment to create this storage account. If storage account creation fails, change your environment variable, and try again.
 
-1. Run the following command obtain the access keys associated with your storage account. 
+1. Run the following command obtain the access keys associated with your storage account.
+
     ```azurecli
     az storage account keys list --account-name $STORAGE_NAME
     ```
@@ -70,7 +71,7 @@ The repository is cloned to your home folder.
 
 ## Edit SimpleSend.java
 
-In this exercise you will use the built-in Cloud Shell editor to modify the SimpleSend application, adding your Event Hubs namespace, Event Hub name, shared access policy name, and primary key. 
+In this exercise you'll use the built-in Cloud Shell editor to modify the SimpleSend application, adding your Event Hubs namespace, Event Hub name, shared access policy name, and primary key. 
 
 1. Change to the **SimpleSend** folder.
 
@@ -83,8 +84,9 @@ In this exercise you will use the built-in Cloud Shell editor to modify the Simp
     ```bash
     code .
     ```
+
     The files in the current folder are listed on the left, and the editor space on the right displays the contents of the filename listed in the title bar.
-    
+
 1. If not already open, open **SimpleSend.java** by selecting it from the file list.
 
 1. In the editor, locate and replace the following strings under ConnectionStringBuilder:
@@ -101,10 +103,11 @@ In this exercise you will use the built-in Cloud Shell editor to modify the Simp
     echo $HUB_NAME
     echo $STORAGE_NAME
     ```
+
      For your primary SAS key, when you create an Event Hubs namespace, a 256-bit SAS key called **RootManageSharedAccessKey** is created and includes primary and secondary keys that grant send, listen, and manage rights to the namespace. Earlier in this exercise, you obtained the key by running an Azure CLI command; however, you can also find the keys and connection strings by selecting your Event Hubs namespace in the Azure portal, and then in the menu under the **Settings**, select **Shared access policies**; now select the policy name **RootManageSharedAccessKey** to display the SAS Policy keys. 
-     
+
 1. Save **SimpleSend.java** file, and then close the editor.
-     
+
     > [!TIP]
     > To save your edits, use <kbd>Ctrl+S</kbd>. Exit the editor by pressing <kbd>Ctrl+X</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS. Unlike the Cloud Shell terminal window, the Cloud Shell editor uses typical copy/paste keyboard accelerator keys for your OS. Alternatively, open the editor menu by selecting the ellipsis (...) in the upper right corner for additional editing commands.
 
@@ -132,7 +135,7 @@ You'll now build the Java application by running **mvn** commands.
 
 You'll now configure a **receiver** (also known as **subscribers** or **consumers**) application to ingest data from your Event Hub.
 
-For the receiver application, two classes are available: **EventHubReceiver** and **EventProcessorHost**. EventProcessorHost is built on top of EventHubReceiver, but provides simpler programmatic interface than EventHubReceiver. EventProcessorHost can automatically distribute message partitions across multiple instances of EventProcessorHost using the same storage account.
+For the receiver application, two classes are available: **EventHubReceiver** and **EventProcessorHost**. EventProcessorHost is built on top of EventHubReceiver, but provides a simpler programmatic interface than EventHubReceiver. EventProcessorHost can automatically distribute message partitions across multiple instances of EventProcessorHost using the same storage account.
 
 In this procedure, you'll use the EventProcessorHost method. You'll edit the EventProcessorSample application to add your Event Hubs namespace, Event Hub name, shared access policy name and primary key, storage account name, connection string, and container name.
 
@@ -152,7 +155,7 @@ In this procedure, you'll use the EventProcessorHost method. You'll edit the Eve
 
 1. Locate and replace the following strings in the editor:
 
-    - `----ServiceBusNamespaceName----` with the name of your Event Hubs namespace.
+    - `----EventHubNamespaceName----` with the name of your Event Hubs namespace.
     - `----EventHubName----` with the name of your Event Hub.
     - `----SharedAccessSignatureKeyName----` with **RootManageSharedAccessKey**.
     - `----SharedAccessSignatureKey----` with the value of the **primaryKey** key for your Event Hubs namespace that you saved earlier.
@@ -177,7 +180,7 @@ In this procedure, you'll use the EventProcessorHost method. You'll edit the Eve
     ```bash
     mvn clean package -DskipTests
     ```
-    
+
     The build process may take several minutes to complete. Ensure that you see a **[INFO] BUILD SUCCESS** message before continuing.
 
     :::image type="content" source="../media/5-receiver-build.png" alt-text="Build results for receiver application." loc-scope="other"::: <!-- no-loc -->

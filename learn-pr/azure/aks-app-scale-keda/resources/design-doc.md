@@ -1,17 +1,17 @@
 # Title
 
-<!-- *Add the working title [(Title guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-title)* -->
+<!-- *Add the working title [(Title guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-title)* -->
 Scale container applications in Azure Kubernetes Services (AKS) using Kubernetes Event-driven Autoscaling (KEDA)
 
 ## Role(s)
 
-<!-- - *Add the role(s)* [Role guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#role) -->
+<!-- - *Add the role(s)* [Role guidance](https://review.learn.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=main#role) -->
 - DevOps Engineer
 - Developer
 
 ## Level
 
-<!-- - *Add the level*  [Level guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#level) -->
+<!-- - *Add the level*  [Level guidance](https://review.learn.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=main#level) -->
 - Beginner
 
 ## Product(s)
@@ -22,7 +22,7 @@ Scale container applications in Azure Kubernetes Services (AKS) using Kubernetes
 
 ## Prerequisites
 
-<!-- - *List the prerequisites [(Prerequisite guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-prerequisites)* -->
+<!-- - *List the prerequisites [(Prerequisite guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-prerequisites)* -->
 - An Azure Subscription
 - Ability to use the Azure CLI
 - Ability to run and exec into a Docker container
@@ -33,12 +33,12 @@ Scale container applications in Azure Kubernetes Services (AKS) using Kubernetes
 
 ## Summary
 
-<!-- *Add the summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductory-summaries)* -->
+<!-- *Add the summary [(Summary guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-introductory-summaries)* -->
 Scale a containerized application hosted on AKS using event driven scaling using KEDA
 
 ## Learning objectives
 
-<!-- 1. *Add numbered Learning Objectives [(Learning objective guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-learning-objectives)* -->
+<!-- 1. *Add numbered Learning Objectives [(Learning objective guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-learning-objectives)* -->
 Upon the completion of this module, the learner will be able to:
 
 1. Understand the concept of event driven auto scaling and how it applies to Kubernetes
@@ -69,7 +69,7 @@ Identify the subtasks of *Event Driven Autoscaling using KEDA*
 
     After experimenting with various options, you've determined that using Azure Kubernetes Services (AKS) and KEDA fulfills all the requirements to scale for peak and off-peak usage. With clearance from leadership, you begin the journey of an event driven application that supports the company now and in the future!
 
-    <!-- *Add your scenario [(Scenario guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-scenarios)* -->
+    <!-- *Add your scenario [(Scenario guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-scenarios)* -->
 
 2. **Create an AKS Cluster**
 
@@ -153,6 +153,6 @@ Identify the subtasks of *Event Driven Autoscaling using KEDA*
 
     Using the native HPA would not adequately scale during times of high traffic. In the case of our application, we need to scale based on the number of messages in a list. HPAs scale based on metrics like CPU utilization. CPU utilization does not accurately reflect the number of messages in a list waiting to be processed. For this reason, we use KEDA to use the number of messages in the Redis list to scale the containers processing the messages.
 
-    <!-- *Add your summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit)* -->
+    <!-- *Add your summary [(Summary guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit)* -->
 
 ## Notes

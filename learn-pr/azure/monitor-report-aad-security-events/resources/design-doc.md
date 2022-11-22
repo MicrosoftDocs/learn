@@ -105,11 +105,11 @@ Identify the subtasks of *Monitor and report on security events in Azure AD*
 
 Look at structuring the module based on the sections in the following doc. Consider creating a new tenant and going through the logging and monitoring configuration steps as hands-on activities. If we can generate some activity to populate queries and reports, great, but that may take extended time.
 
-- https://docs.microsoft.com/azure/active-directory/reports-monitoring/
-- https://docs.microsoft.com/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics
-- https://docs.microsoft.com/azure/active-directory/reports-monitoring/howto-install-use-log-analytics-views
-- https://docs.microsoft.com/power-bi/service-connect-to-azure-audit-logs
-- https://docs.microsoft.com/azure/active-directory/identity-protection/
-- https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-portal
+- https://learn.microsoft.com/azure/active-directory/reports-monitoring/
+- https://learn.microsoft.com/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics
+- https://learn.microsoft.com/azure/active-directory/reports-monitoring/howto-install-use-log-analytics-views
+- https://learn.microsoft.com/power-bi/service-connect-to-azure-audit-logs
+- https://learn.microsoft.com/azure/active-directory/identity-protection/
+- https://learn.microsoft.com/azure/azure-monitor/log-query/get-started-portal
 
 The exercise comes at the end, but includes tasks with information gained in earlier units to make it more useful.

@@ -1,6 +1,6 @@
 Enabling the integrated cache is done in two primary steps:
 
-- Creating a dedicated gateway in your Azure Cosmos DB SQL API account
+- Creating a dedicated gateway in your Azure Cosmos DB for NoSQL account
 - Updating your SDK code to use the gateway for requests
 
 ## Create a dedicated gateway
@@ -16,7 +16,7 @@ As part of the provisioning process, you will be asked to configure the number o
 Once the new gateway is provisioned, you can get the connection string for the gateway.
 
 > [!NOTE]
-> The gateway connection string is a distinct connection string from the one used typically with an Azure Cosmos DB SQL API client.
+> The gateway connection string is a distinct connection string from the one used typically with an Azure Cosmos DB for NoSQL client.
 
 [![Keys pane with multiple connection strings both using and not using the dedicated gateway](../media/3-connection-string.png)](../media/3-connection-string-full.png)
 
@@ -28,7 +28,7 @@ For the .NET SDK client to use the integrated cache, you must make sure that thr
 - The client is configured to use **Gateway** mode instead of the default **Direct** connectivity mode
 - The client’s consistency level must be set to **session** or **eventual**
 
-First, ensure that the connection string is set to the dedicated gateway’s connection string. Typically, Azure Cosmos DB SQL API connection strings are in the format of `<cosmos-account-name>.documents.azure.com`. For the dedicated gateway, the connection string is in the structure of `<cosmos-account-name>.sqlx.cosmos.azure.com`.
+First, ensure that the connection string is set to the dedicated gateway’s connection string. Typically, Azure Cosmos DB for NoSQL connection strings are in the format of `<cosmos-account-name>.documents.azure.com`. For the dedicated gateway, the connection string is in the structure of `<cosmos-account-name>.sqlx.cosmos.azure.com`.
 
 ```csharp
 string connectionString = "AccountEndpoint=https://<cosmos-account-name>.sqlx.cosmos.azure.com/;AccountKey=<cosmos-key>;";

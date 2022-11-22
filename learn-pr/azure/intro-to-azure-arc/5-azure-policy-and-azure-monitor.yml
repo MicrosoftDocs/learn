@@ -4,8 +4,8 @@ metadata:
   title: Describe Azure Arc integration with Azure Policy and Azure Monitor
   description: Describe Azure Arc integration with Azure Policy and Azure Monitor
   ms.date: 09/21/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: JnHs
+  ms.author: jenhayes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid

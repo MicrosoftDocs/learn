@@ -2,7 +2,7 @@ In the next stage of your security implementation, you'll deploy a network virtu
 
 You'll configure the appliance to forward IP traffic. If IP forwarding isn't enabled, traffic that is routed through your appliance will never be received by its intended destination servers.
 
-In this exercise, you'll deploy the **nva** network appliance to the **dmzsubnet** subnet. You'll then enable IP forwarding so that traffic from **publicsubnet** and traffic that uses the custom route is sent to the **privatesubnet** subnet.
+In this exercise, you'll deploy the **nva** network appliance to the **dmzsubnet** subnet. Then you'll enable IP forwarding so that traffic from **publicsubnet** and traffic that uses the custom route is sent to the **privatesubnet** subnet.
 
 ![Network virtual appliance with IP forwarding enabled.](../media/5-nva-ip-forwarding.svg)
 

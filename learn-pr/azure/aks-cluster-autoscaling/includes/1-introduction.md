@@ -17,7 +17,7 @@ By the end of this module, you'll be able to:
 - Familiarity with [Git](/contribute/git-github-fundamentals?WT.mc_id=deploycontainerapps_intro-learn-ludossan) and [GitHub](https://github.com).
 - An active Azure [subscription](https://azure.microsoft.com/free/services/kubernetes-service/?azure-portal=true&WT.mc_id=deploycontainerapps_intro-learn-ludossan).
 - Ability to use the [Azure CLI](/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_intro-learn-ludossan).
-- Ability to create a Docker container. If you're new to Docker, start with the [intro to containers](/learn/modules/intro-to-containers/?WT.mc_id=deploycontainerapps_intro-learn-ludossan).
+- Ability to create a Docker container. If you're new to Docker, start with the [intro to containers](/training/modules/intro-to-containers/?WT.mc_id=deploycontainerapps_intro-learn-ludossan).
 
 All exercises will use [Azure Cloud Shell](/azure/cloud-shell/overview?WT.mc_id=deploycontainerapps_intro-learn-ludossan), which already has all the needed tooling installed. If you prefer to run the examples in your own terminal, you'll need to have the following tooling installed first:
 
@@ -38,8 +38,6 @@ First, sign in to Azure Cloud Shell with the account you want to deploy resource
 
 > [!IMPORTANT]
 > We'll run all the scripts with Bash, so if you haven't created a Cloud Shell yet, select "Bash" as the running shell.
-
-> [!NOTE]
 > If you're on Windows and not on Cloud Shell, execute the previous commands in WSL for a better experience.
 
 Then execute the following command.

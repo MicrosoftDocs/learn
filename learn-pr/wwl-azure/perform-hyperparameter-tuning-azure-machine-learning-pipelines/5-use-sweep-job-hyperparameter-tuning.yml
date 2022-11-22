@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.use-sweep-job-hyperparameter-tuning
+title: Use a sweep job for hyperparameter tuning
+metadata:
+  title: Use a sweep job for hyperparameter tuning
+  description: "Use a sweep job for hyperparameter tuning"
+  ms.date: 11/17/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-use-sweep-job-hyperparameter-tuning.md)]

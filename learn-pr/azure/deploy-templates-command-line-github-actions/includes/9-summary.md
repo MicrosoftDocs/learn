@@ -13,7 +13,7 @@ Here are some links to resources where you can learn more:
 - [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true)
 - [Understand the structure and syntax of ARM templates](/azure/azure-resource-manager/templates/template-syntax?azure-portal=true)
 - [Azure Resource Manager](/azure/azure-resource-manager/management/overview?azure-portal=true)
-- [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true)
+- [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true)
 - [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azps-4.2.0)
 - [Resource providers for Azure services](/azure/azure-resource-manager/management/azure-services-resource-providers?azure-portal=true)
 - [Define resources in Azure Resource Manager templates](/azure/templates?azure-portal=true)

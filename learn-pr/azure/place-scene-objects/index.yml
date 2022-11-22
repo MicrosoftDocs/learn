@@ -17,7 +17,7 @@ abstract: |
   - Use solvers to direct the user to objects
   - Use solvers to reposition objects
 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/place-scene-objects-tutorials-mrtk.svg
 levels:
 - beginner
 roles:
@@ -34,12 +34,14 @@ prerequisites: |
   - Windows 10 SDK 10.0.18362.0 or later
   - (Optional) A HoloLens 2 device configured for development
   - Unity Hub with Unity 2020.3.X/2019.4.X installed, and the Universal Windows Platform Build Support module added
-  - [Set Up Your Project and Use Hand Interaction](/learn/modules/learn-mrtk-tutorials/)
+  - [Set Up Your Project and Use Hand Interaction](/training/modules/learn-mrtk-tutorials/)
   - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
   - Basic familiarity with Unity, including the interface, scene creation, package import, and the addition of GameObjects to a scene
 
 
-units: 
+subjects:
+- mixed-reality
+units:
 - learn.azure.place-scene-objects-tutorials-mrtk.4-1-introduction
 - learn.azure.place-scene-objects-tutorials-mrtk.4-2-position-game-objects-set-visibility
 - learn.azure.place-scene-objects-tutorials-mrtk.4-3-exercise-position-game-objects-set-visibility

@@ -4,12 +4,13 @@ title: Migrate on-premises PostgreSQL database to Azure
 metadata:
   title: Migrate on-premises PostgreSQL database to Azure
   description: "Migrate on-premises PostgreSQL database to Azure"
-  ms.date: 01/18/2021
+  ms.date: 10/14/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 19
 content: |
   [!include[](includes/3-migrate-on-premises-postgresql-database.md)]

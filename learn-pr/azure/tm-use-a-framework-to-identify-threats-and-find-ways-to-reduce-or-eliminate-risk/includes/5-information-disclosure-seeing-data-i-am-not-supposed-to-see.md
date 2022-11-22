@@ -31,8 +31,8 @@ Examples include:
 
 Examples include:
 
-- Applying access control lists to ensure the right users can access to the right data
-- Encrypting data at-rest, in-transit, and in-use
+- Applying access-control lists to ensure the right users can access the right data
+- Encrypting data at rest, in transit, and in use
 - Enforcing SSL/TLS to secure transmission
 - Using IPSec tunnels to secure communication across endpoints
 

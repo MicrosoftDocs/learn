@@ -23,15 +23,15 @@ Here's an example that shows usage and quotas in the portal:
 
 Network diagnostic logs provide granular data. You'll use this data to understand connectivity and performance issues better. There are three log display tools in Network Watcher:
 
-- Flow logs
+- NSG Flow logs
 - Diagnostic logs
 - Traffic analytics
 
 Let's look at each of these tools.
 
-### Flow logs
+### NSG Flow logs
 
-In flow logs, you can view information about ingress and egress IP traffic on network security groups. Flow logs show outbound and inbound flows on a per-rule basis, based on the network adapter the flow applies. NSG flow logs show whether traffic was allowed or denied based on the 5-tuple information captured. This information includes:
+In NSG flow logs, you can view information about ingress and egress IP traffic on network security groups. Flow logs show outbound and inbound flows on a per-rule basis, based on the network adapter the flow applies. NSG flow logs show whether traffic was allowed or denied based on the 5-tuple information captured. This information includes:
 
 - Source IP
 - Source port
@@ -113,7 +113,7 @@ If you scale up the VM and the CPU is still running at above 95 percent, is app 
 
 #### Memory bottlenecks
 
-You can view the amount of memory that the VM uses. Logs will help you understand the trend and if it maps to the time at which you see issues. You should not have less than 100 MB of available memory at any time. Watch out for the following trends:
+You can view the amount of memory that the VM uses. Logs will help you understand the trend and if it maps to the time at which you see issues. You shouldn't have less than 100 MB of available memory at any time. Watch out for the following trends:
 
 - **Spike up and constant consumption**. High memory utilization might not be the cause of bad performance. Some apps, such as relational database engines, are memory intensive by design. But if there are multiple memory-hungry apps, you might see bad performance because memory contention causes trimming and paging to disk. These processes will cause a negative performance impact.
 - **Steadily increasing consumption**. This trend might be an app *warming up*. It's common when database engines start up. However, it might also be a sign of a memory leak in an app. 

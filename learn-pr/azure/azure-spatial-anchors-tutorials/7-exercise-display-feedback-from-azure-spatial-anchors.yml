@@ -3,7 +3,7 @@ uid: learn.azure.azure-spatial-anchors-tutorials-mrtk.7-exercise-display-feedbac
 title: Exercise - Display feedback from Azure Spatial Anchors
 metadata:
   title: Exercise - Display feedback from Azure Spatial Anchors
-  description: Description to Display feedback from Azure Spatial Anchors
+  description: Set up a feedback panel for anchor discovery, events, and status.
   ms.date: 09/09/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"

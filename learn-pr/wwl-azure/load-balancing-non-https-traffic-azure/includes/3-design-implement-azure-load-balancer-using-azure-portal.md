@@ -219,26 +219,12 @@ There are several tasks you need to perform to successfully create and configure
 
 ### Create the load balancer
 
+
 In this example, we are looking at the tasks required to create and configure a **Public** (external) **load balancer** in a **Basic SKU**. The first task is to create the load balancer itself.
 
-From the Azure portal home page, select **Create a resource**. 
+From the Azure portal home page, navigate to the Global Search bar and search  **Load Balancer** then select Load Balancer.
 
-:::image type="content" source="../media/create-load-balancer-1-95c6e720.png" alt-text="Start to create a load balancer resource":::
-
-
-On the Create a resource page, you can either browse to try and find the resource type you want to create or enter your search criteria in the search box and press ENTER. For example, type **Load Balancer**. To narrow down the search results, you can use the filters to the right of the search box. For example, select **Publisher Type**, and then choose **Microsoft**.
-
-:::image type="content" source="../media/create-load-balancer-2-552e3f8a.png" alt-text="Filter resource type by Publisher Type to create a load balancer resource":::
-
-
-Then choose the **Load Balancer** resource from Microsoft.
-
-:::image type="content" source="../media/create-load-balancer-3-b735193c.png" alt-text="Select the Microsoft load balancer resource type to create":::
-
-
-On the Load balancer page, choose **Create** to start the process.
-
-:::image type="content" source="../media/create-load-balancer-4-4a82194d.png" alt-text="Selecting Create for a Load Balancer":::
+Choose **Create** to start the process. 
 
 
 On the **Create load balancer** page, you must supply the following required information:
@@ -252,7 +238,7 @@ On the **Create load balancer** page, you must supply the following required inf
  -  **Tier** \- this is where you select whether your load balancer is balancing within a region (**Regional**) or across regions (**Global**) - If you select the **Basic** SKU above, this setting is greyed out.
  -  **Public IP address** \- here you specify whether to create a new public IP address for your public-facing front-end, or use an existing one, and you also specify a name for your public IP address, and whether to use a dynamic or statically assigned IP address. You can optionally also assign an IPv6 address to your load balancer in addition to the default IPv4 one.
 
-:::image type="content" source="../media/create-load-balancer-5-0425ac23.png" alt-text="Create load balancer - Basics tab":::
+:::image type="content" source="../media/create-load-balancer-basics.png" alt-text="Create load balancer - Basics tab":::
 
 
 After you click **Review + Create**, the configuration settings for the new load balancer resource will be validated, and then you can click **Create** to start creating it. 

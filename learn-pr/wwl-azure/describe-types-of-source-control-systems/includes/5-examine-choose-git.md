@@ -26,7 +26,7 @@ Having a complete local history makes Git fast since it means you do not need a 
 
 Distributed development also makes it easier to scale your engineering team. If someone breaks the production branch in SVN, other developers cannot check in their changes until it is fixed. With Git, this kind of blocking does not exist. Everybody can continue going about their business in their local repositories.
 
-And, like feature branches, distributed development creates a more reliable environment. Even if developers obliterate their repository, they can clone someone else is and start afresh.
+And, like feature branches, distributed development creates a more reliable environment. Even if developers obliterate their repository, they can clone from someone else and start afresh.
 
 ## Trunk-based development
 
@@ -35,7 +35,7 @@ One of the most significant advantages of Git is its branching capabilities. Unl
 :::image type="content" source="../media/trunk-based-development-fcd6834f.png" alt-text="Trunk-based Development.":::
 
 
-Trunk-based development provides an isolated environment for every change to your codebase. When developers want to start working on something—no matter how large or small—they create a new branch. It ensures that the master branch always contains production-quality code.
+Trunk-based development provides an isolated environment for every change to your codebase. When developers want to start working on something—no matter how large or small—they create a new branch. It ensures that the main branch always contains production-quality code.
 
 Using trunk-based development is more reliable than directly-editing production code, but it also provides organizational benefits.
 

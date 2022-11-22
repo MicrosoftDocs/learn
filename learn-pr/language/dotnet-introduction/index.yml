@@ -3,9 +3,9 @@ uid: learn.languages.dotnet-introduction
 metadata:
   title: Introduction to .NET
   description: Start learning about .NET. Understand what .NET is and how it works. Quickly build a small app in a web-based .NET environment.
-  ms.date: 10/12/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  ms.date: 03/28/2022
+  author: camsoper
+  ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to .NET
@@ -21,13 +21,15 @@ prerequisites: |
   - You should be able to recognize how to use `Console.WriteLine()` to send text to an output window.
   - You should be able to recognize minor issues in your code and to fix them.
 ratingEnabled: true
-iconUrl: /learn/achievements/dotnet-introduction.svg
+iconUrl: /training/achievements/dotnet-introduction.svg
 levels:
 - beginner
 roles:
 - developer
 products:
 - dotnet
+subjects:
+- cloud-computing
 units:
 - learn.languages.dotnet-introduction.introduction
 - learn.languages.dotnet-introduction.what-is-dotnet

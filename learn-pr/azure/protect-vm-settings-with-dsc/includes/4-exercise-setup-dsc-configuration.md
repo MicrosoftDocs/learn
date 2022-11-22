@@ -68,7 +68,7 @@ Start by deploying a new VM from a Windows Server 2019 image.
     |---|---|
     | Subscription | Concierge Subscription  |
     | Resource group | Select the existing resource group in the dropdown list |
-    | Name | *\[your-automation-account-name\]* This value must be globally unique in Azure; we suggest using *\[*your initials*\]-automation-account*. Use this name wherever you see *\[your-automation-account-name\]* in this exercise.|
+    | Name | *\[your-automation-account-name\]* We suggest using *\[*your initials*\]-automation-account*. Use this name wherever you see *\[your-automation-account-name\]* in this exercise.|
     | Region | Accept default location |
 
 1. Select **Review + Create**, then select **Create**. Wait until the automation account is deployed.

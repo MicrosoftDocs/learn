@@ -3,7 +3,7 @@ uid: learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-element
 metadata:
   title: Create a threat model using data-flow diagram elements
   description: Data-flow diagrams are graphical representations of your system and should specify each element, their interactions and context.
-  ms.date: 02/28/2020
+  ms.date: 04/01/2022
   author: rodsan
   ms.author: rodsan
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ abstract: |
     - Distinguish between the shape and function of each element
     - Include the right context for an element when creating a data-flow diagram
 prerequisites: None
-iconUrl: /learn/achievements/create-a-threat-model-using-data-flow-diagram-elements.svg
+iconUrl: /training/achievements/create-a-threat-model-using-data-flow-diagram-elements.svg
 levels:
 - beginner
 roles:
@@ -29,6 +29,8 @@ products:
 - azure-security-center
 - m365-security-center
 - m365-ems-cloud-app-security
+subjects:
+- threat-protection
 units:
 - learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.1-introduction
 - learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.1b-elements

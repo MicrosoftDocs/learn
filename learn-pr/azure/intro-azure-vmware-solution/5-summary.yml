@@ -5,10 +5,12 @@ metadata:
   title: Summary
   description: In this unit, we'll review what you've learned about Azure VMware Solution.
   ms.date: 06/17/2021
-  author: exchangegoddess
-  ms.author: phschmit
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: phschmit-07282021
 durationInMinutes: 2
 content: |
   [!include[](includes/5-summary.md)]

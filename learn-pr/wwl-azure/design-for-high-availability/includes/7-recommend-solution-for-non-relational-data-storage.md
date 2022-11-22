@@ -35,7 +35,7 @@ LRS is a good choice for the following scenarios:
 
 1) If your application stores data that can be easily reconstructed if data loss occurs, you may opt for LRS.
 
-2) If your application is restricted to replicating data only within a country or region due to data governance requirements, you may opt for LRS. In some cases, the paired regions across which the data is geo-replicated may be in another country or region. For more information on paired regions, see [Azure regions](https://azure.microsoft.com/regions/).
+2) If your application is restricted to replicating data only within a country or region due to data governance requirements, you may opt for LRS. In some cases, the paired regions across which the data is geo-replicated may be in another country or region. For more information on paired regions, visit [Azure regions](https://azure.microsoft.com/regions/).
 
 For your apps that require high durability, you can create copies of your data in a secondary region. Redundancy in the secondary region can be provided as follows:
 

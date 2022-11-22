@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.create-run-program.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction.
+  ms.date: 04/01/2022
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen, devdivchpfy22
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

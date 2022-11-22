@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Import and publish an API
   description: Exercise - Import and publish an API
   ms.date: 05/02/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: dlepow
+  ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

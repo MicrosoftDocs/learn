@@ -2,13 +2,13 @@
 uid: learn.intro-to-azure-bastion.4-when-to-use-azure-bastion  
 title: When to use Azure Bastion  
 metadata:
-  unitType: learning-content  
+  unitType: learning-content
   title: When to use Azure Bastion
   description: When to use Azure Bastion
-  ms.date: 03/12/2021  
-  author: micrum  
-  ms.author: micrum  
-  ms.topic: interactive-tutorial 
+  ms.date: 04/05/2022
+  author: cherylmc
+  ms.author: cherylmc
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |

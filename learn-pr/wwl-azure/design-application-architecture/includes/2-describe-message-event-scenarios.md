@@ -1,61 +1,53 @@
-Imagine you’re designing the architecture for a distributed music-sharing application. You want to ensure that the application is as reliable and scalable as possible. You want to use Azure technologies to build a robust communication infrastructure.
+Your first decision in your application architecture design is to plan how the application components will communicate. Defining your component strategy helps you choose the appropriate Azure service.
 
-But before you can choose the Azure technology, you must understand how each individual component communicates with the other components of the application. For each communication, you can choose a different Azure technology.
+Suppose you're designing the architecture for a home improvement video-sharing application for Tailwind Traders. You want your application to be as reliable and scalable as possible. You're planning to use Azure technologies to build a robust communication infrastructure. Before you can choose the appropriate Azure services, you need to design how each application component will communicate with the other components. For each type of communication, you might choose a different Azure technology.
 
-## Select messages or events for your application
+### Things to know about messages and events
 
-The first thing you must understand is whether an app sends messages or events. Knowing the difference helps you choose the appropriate Azure service.
+Most application components communicate by sending messages or events. Azure offers various services to support the different communication strategies.
 
-## What is a message?
+#### Messages
 
-[Messages](https://docs.microsoft.com/azure/event-grid/compare-messaging-services#message) have the following characteristics. 
+Let's examine the characteristics of [messages](/azure/event-grid/compare-messaging-services#message).
 
-- Contains raw data, produced by one component, that will be consumed by another component.
+- Messages contain raw data that's produced by one component and consumed by another component.
 
-- Contains the data itself, not just a reference to that data.
+- A message contains the data itself, not just a reference to that data.
 
-The sending component expects the message content to be processed in a certain way by the destination component. The integrity of the overall system may depend on both sender and receiver doing a specific job.
+In a message communication, the sending component expects the message data to be processed in a certain way by the destination component. The integrity of the overall system might depend on both the sender and receiver doing a specific job.
 
-**Example of a message**
+Suppose a user uploads a new video by using your mobile video-sharing app. Your mobile app must send the video to the web API that runs in Azure. The video file must be sent, not just an alert that indicates a new video has been added. The mobile app expects that the web API stores the new video in the database and makes the video available to other users.
 
-Let’s suppose a user uploads a new song by using your mobile music-sharing app. The mobile app must send that song to the web API that runs in Azure. The song file must be sent, not just an alert that indicates that a new song has been added. The mobile app expects that the web API stores the new song in the database and makes it available to other users.
+#### Events
 
-## What is an event?
+Now let's take a closer look at [events](/azure/event-grid/compare-messaging-services#event).
 
-[Events](https://docs.microsoft.com/azure/event-grid/compare-messaging-services#event) are lighter weight than messages and are most often used for broadcast communications. There are two components involved with events:
+- Events are lighter weight than messages and are most often used for broadcast communications.
 
-- Publishers, which send the event. 
+- An event has two components, a _publisher_ and _subscribers_. The event publisher sends the event.  The event subscribers receive events.
 
-- Subscribers, which receive events.
-
-With events, receiving components generally decide in which communications they’re interested and subscribe to those events. The subscription is managed by an intermediary. The intermediary can be provided by services such as Azure Event Grid or Azure Event Hubs. When publishers send an event, the intermediary routes that event to interested. This pattern is known as a publish-subscribe architecture and is the most used. 
+With events, receiving components generally decide the communications in which they're interested and then subscribe to those events. The subscription is managed by an intermediary. The intermediary can be provided by services like Azure Event Grid or Azure Event Hubs. When publishers send an event, the intermediary routes that event to any interested parties. This pattern is known as a _publish-subscribe_ architecture and is the most used. 
 
 Events have the following characteristics:
 
-- Is a lightweight notification that indicates something occurred?
+- An event is a lightweight notification that indicates something occurred.
 
-- May be sent to multiple receivers or to none.
+- An event can be sent to multiple receivers or to none.
 
-- Is often intended to "fan out" or have many subscribers for each publisher.
+- An event publisher has no expectations about actions by a receiving component.
 
-- Publisher has no expectation about the action a receiving component takes.
+- An event is often intended to "fan out" or have many subscribers for each publisher.
 
-- Is a discrete unit and unrelated to other events?
+- An event is a discrete unit that's unrelated to other events, but an event might be part of a related and ordered series.
 
-- Might be part of a related and ordered series.
+### Things to consider when choosing messages or events
 
-## When should you choose messages or events?
+Review the following scenarios regarding when to choose message or event communication for your application architecture for Tailwind Traders.
 
-A single application is likely to use events for some purposes and messages for others. The following table describes when to use which:
+- **Consider messages and events**. It's not uncommon for an application to implement both events and messages. An app can use events for some components and functions and messages for other components. Choose each Azure service to meet the specific needs of each component of your app.
 
-| **Event or message**| **When to use** |
-| - | - |
-| Event| More likely to be used for broadcasts and are often ephemeral. Ephemeral means the communication might not be handled by any receiver if none is currently subscribing. |
-| Message| More likely to be used where the distributed application requires a guarantee that the communication will be processed. |
+- **Consider sender expectations**. If the sending component in your application expects communication to be processed in a specific way by the destination component, consider implementing messages. If the sender component in your application has no requirements for the destination component, you might implement events rather than messages.
 
+- **Consider guaranteed communication**. If you're building a distributed application and want to guarantee all communication is processed, consider using messages. In a message communication, there's an expectation that both the message sender and receiver complete their tasks.
 
-For each communication, consider the following question: Does the sending component expect the communication to be processed in a particular way by the destination component?
-
-- If yes, choose to use a message. 
-
-- If no, you might be able to use events.
+- **Consider ephemeral communication**. Ephemeral means the communication might not be handled by any receiver if none is currently subscribing. If your application doesn't require subscribers or actions from any receiver, consider using events. 

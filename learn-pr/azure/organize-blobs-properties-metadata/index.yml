@@ -4,8 +4,8 @@ metadata:
   title: Organize Azure storage blobs with properties and metadata
   description: Find out about Azure storage blob properties and metadata, how to organize blob data, and create an app with .NET to retrieve metadata.
   ms.date: 09/30/2021
-  author: rmcmurray
-  ms.author: robmcm
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Organize Azure storage blobs with properties and metadata
@@ -19,13 +19,15 @@ prerequisites: |
   - Experience in basic Azure web app development and deployment
   - Basic familiarity with Azure Storage and Blob objects
   - Basic familiarity with .NET Core
-iconUrl: /learn/achievements/organize-blobs-with-properties-and-metadata.svg
+iconUrl: /training/achievements/organize-blobs-with-properties-and-metadata.svg
 levels:
 - beginner
 roles:
 - developer
 products:
 - azure
+subjects:
+- storage
 units:
 - learn.azure.organize-blobs-properties-metadata.introduction
 - learn.azure.organize-blobs-properties-metadata.manage-blob-data-using-properties-and-metadata

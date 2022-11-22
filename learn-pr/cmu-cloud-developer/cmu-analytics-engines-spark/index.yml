@@ -3,7 +3,7 @@ uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark
 metadata:
   title: 'Distributed computing on the cloud: Spark'
   description: Carnegie Mellon University's cloud developer course. Spark is an open-source cluster-computing framework with different strengths than MapReduce has. Learn about how Spark works.
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -43,7 +43,8 @@ prerequisites: |
   - Be familiar with NoSQL databases and object storage, and how they work
   - Know what distributed programming is and why it's useful for the cloud
   - Understand MapReduce and how it enables big data computing
-iconUrl: /learn/achievements/cmu-cloud-developer/distributed-programming-spark.svg
+iconUrl: /training/achievements/cmu-cloud-developer/distributed-programming-spark.svg
+hidden: true
 levels:
 - beginner
 roles:
@@ -51,6 +52,10 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
+- machine-learning
+- architecture
 units:
 - learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.0-introduction
 - learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.1-overview

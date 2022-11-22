@@ -1,7 +1,9 @@
 Similarly to **Speech-to-text** APIs, the Speech service offers two REST APIs for speech synthesis:
 
-- The **Text-to-speech** API, which is the primary way to perform speech synthesis. The endpoint for this API is `https://<LOCATION>.api.cognitive.microsoft.com/sts/v1.0`
-- The **Text-to-speech Long Audio** API, which is designed to support batch operations that convert large volumes of text to audio - for example to generate an audio-book from the source text. The endpoint for this API is at `https://<LOCATION>.customvoice.api.speech.microsoft.com/api/texttospeech/v3.0/longaudiosynthesis`
+- The **Text-to-speech** API, which is the primary way to perform speech synthesis.
+- The **Text-to-speech Long Audio** API, which is designed to support batch operations that convert large volumes of text to audio - for example to generate an audio-book from the source text.
+
+You can learn more about the REST APIs in the [Azure Text-to-speech REST APIs documentation](/azure/cognitive-services/speech-service/rest-text-to-speech). In practice, most interactive speech-enabled applications use the Speech service through a (programming) language-specific SDK.
 
 ## Using the Text-to-speech SDK
 

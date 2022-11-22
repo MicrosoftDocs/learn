@@ -10,17 +10,17 @@ If the financial data policy from the example above was ordered so a rule for a 
 
 To change the order in which the DLP rules inside a policy are prioritized, you need the DLP Compliance Management role and follow these steps:
 
-1. In the Microsoft 365 Compliance center, select **Policies**.
+1. In the Microsoft Purview compliance portal, select **Policies**.
 
 1. Expand **Data** and select **Data loss prevention**.
 
-1. Select the policy you want to modify and select **edit policy**.
+1. Navigate to the **Policies** tab and select the policy you want to modify, select **edit policy**.
 
 1. Select **Next** twice to reach the **Customize Advanced DLP rules** dialog.
 
 1. Select **Edit** behind the name of the low volume rule you want to change in the priority order.
 
-1. Select a new priority number from the dropdown menu. You can select "0" to select the highest priority.
+1. Select a new priority number from the dropdown menu under **Additional options**. You can select "0" to select the highest priority.
 
 1. You can also use PowerShell to change the priority of the DLP rule "Low Volume of Financial Data" to the highest value by using the following cmdlet:
 
@@ -33,7 +33,7 @@ Set-DLPComplianceRule -Identity "Low Volume of Financial Data" -Priority 0
 
 When you create more than one DLP policy, you can change the priority (or order). For example, if you have a personal data DLP policy and another financial data DLP policy and you want the personal data DLP policy to take precedence, follow these steps.
 
-1. In the Microsoft 365 Compliance Center, select **Policies** then select **Data loss prevention**.
+1. In the Microsoft Purview compliance portal, select **Policies** then select **Data loss prevention**.
 
 1. Select the **three vertical dots** behind the name of the personal data policy.
 
@@ -46,4 +46,4 @@ Set-DLPCompliancePolicy -Identity "EU Financial Data Policy" -Priority 1
 
 ```
 
-It is prudent to prioritize policies with less restrictive actions below more restrictive policies. Also, rules with less restrictive actions should be prioritized below more restrictive rules to prevent the less restrictive rules from overwriting any block actions of the more restrictive rules and policies.
+It's prudent to prioritize policies with less restrictive actions below more restrictive policies. Also, rules with less restrictive actions should be prioritized below more restrictive rules to prevent the less restrictive rules from overwriting any block actions of the more restrictive rules and policies.

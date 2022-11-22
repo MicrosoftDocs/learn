@@ -8,7 +8,7 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
     metadata:
       name: quickstart
     spec:
-      version: 7.11.1
+      version: 8.1.2
       nodeSets:
       - name: default
         count: 1
@@ -64,8 +64,8 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
     metadata:
       name: quickstart
     spec:
-      version: 7.11.1
-      count: 2
+      version: 8.1.2
+      count: 1
       http:
         service:
           spec:
@@ -76,7 +76,7 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
 
 1. Next, run the following command to deploy Kibana.
 
-    ```yml
+    ```bash
     kubectl apply -f kibana.yaml    
     ```
 
@@ -96,4 +96,4 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
 
     :::image type="content" source="../media/elastic-welcome-screen.png" alt-text="A screenshot of the Elastic welcome screen and button to add data.":::
 
-    The deployment is up and running. You can select **Add data** to add sample datasets and Kibana visualizations that are shipped with Kibana, or you can select **Explore on my own** to explore Kibana further and add your data.
+    The deployment is up and running. You can select **Add integrations** to add sample datasets and Kibana visualizations that are shipped with Kibana, or you can select **Explore on my own** to explore Kibana further and add your data.

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Use the switch case statement
   description: Use the switch statement to create cases to compare an expression against multiple possible values.
   ms.date: 09/26/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

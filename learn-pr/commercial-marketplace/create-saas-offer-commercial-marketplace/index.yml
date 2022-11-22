@@ -3,7 +3,7 @@ uid: learn.create-saas-offer-commercial-marketplace
 metadata:
   title: Create a SaaS offer for the commercial marketplace
   description: This module provides a high-level overview of SaaS offers in the commercial marketplace
-  ms.date: 01/25/2021
+  ms.date: 07/08/2022
   author: marleva
   ms.author: maevan
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Explore the benefits of SaaS offers in the commercial marketplace
   - Learn the key technical components of a SaaS offer
   - Learn how to publish a SaaS offer in Partner Center
-iconUrl: /learn/achievements/ccc-commercial-marketplace/create-saas-offer-commercial-marketplace.svg
+iconUrl: /training/achievements/ccc-commercial-marketplace/create-saas-offer-commercial-marketplace.svg
 levels:
 - beginner
 prerequisites: |
@@ -29,6 +29,9 @@ roles:
 products:
 - azure
 - azure-marketplace
+subjects:
+- marketing-sales
+- cloud-computing
 units:
 - learn.create-saas-offer-commercial-marketplace.1-introduction
 - learn.create-saas-offer-commercial-marketplace.2-what-is-saas-offer

@@ -25,7 +25,7 @@ The Reading Order pane shows the reading order in descending order from the top.
 2. Select the **Check reading order** category in the **Warnings** section to open the list. When the reading order of the objects on a slide doesn\'t match one of the common ways objects are spatially ordered, Accessibility Checker lists the slide here.
 3. Point at a slide number in the list, then select the adjoining drop-down arrow. Select the **Verify object order** command. This opens the **Reading Order** pane.
 
-:::image type="content" source="../media/project-status.png" alt-text="An example PowerPoint slide with the title Project status.":::
+:::image type="content" source="../media/project-status.png" alt-text="An example PowerPoint slide with the title Project status for Reading Order.":::
 :::image type="content" source="../media/reading-order.png" alt-text="Screenshot of the Reading Order pane in PowerPoint.":::
 
 The Selection Pane, on the other hand, indicates the order a screen reader will read the elements of a slide from bottom to top. When using the Selection Pane, make sure the slide title is last in the list rather than first (again, disregarding elements marked as decorative).
@@ -47,7 +47,7 @@ When slides are identified as having missing titles in the Accessibility Checker
 1. Open the drop-down for **Missing slide title**.
 2. Choose an option from the list: "Set as slide title," "Add slide title," or "Add hidden slide title."
 
-:::image type="content" source="../media/missing-slide-title.png" alt-text="Screenshot of the Selection pane in PowerPoint.":::
+:::image type="content" source="../media/missing-slide-title.png" alt-text="Screenshot that shows the Accessibility Checker with the Missing slide title list highlighted.":::
 
 ## Charts and graphs
 

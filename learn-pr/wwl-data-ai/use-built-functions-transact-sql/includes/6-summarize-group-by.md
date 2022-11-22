@@ -181,7 +181,7 @@ Here’s another way to think about it. This query returns one row for each **Cu
 If you want to see orders per customer ID and per purchase order, you can add the **PurchaseOrderNumber** column to the GROUP BY clause, as follows:
 
 ```sql
-SELECT CustomerID, OrderDate, COUNT(*) AS OrderCount
+SELECT CustomerID, PurchaseOrderNumber, COUNT(*) AS OrderCount
 FROM Sales.SalesOrderHeader
 GROUP BY CustomerID, PurchaseOrderNumber;
 ```

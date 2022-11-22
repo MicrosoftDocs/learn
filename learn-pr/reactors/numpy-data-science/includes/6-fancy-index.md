@@ -40,7 +40,7 @@ The output is:
 array([71, 86, 60])
 ```
 
-Another useful aspect of fancy indexing is that the shape of the output array reflects the shape of the *index arrays* you supply, rather than the shape of the array you're accessing. This is handy because, as a data scientist, you'll frequently want to grab data from an array in a particular way, such as to pass it to a machine learning API. Let's examine this property with an example:
+Another useful aspect of fancy indexing is that the shape of the output array reflects the shape of the *index arrays* you supply, rather than the shape of the array you're accessing. This is handy because, as a data scientist, you'll frequently want to grab data from an array in a particular way, such as to pass it to a machine-learning API. Let's examine this property with an example:
 
 ```python
 ind = np.array([[3, 7],

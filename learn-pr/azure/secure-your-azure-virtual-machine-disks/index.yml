@@ -3,21 +3,21 @@ uid: learn.secure-your-azure-virtual-machine-disks
 metadata:
   title: Secure your Azure virtual machine disks
   description: Explore the options for Azure disk encryption to encrypt OS and data disks on existing and new virtual machines.
-  ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 09/29/2022
+  author: roygara
+  ms.author: rogarana
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure your Azure virtual machine disks
 summary: Use Azure Disk Encryption (ADE) to encrypt OS and data disks on existing and new VMs.
 abstract: |
   In this module, you will:
-  - Determine which encryption method is best for your VM
-  - Encrypt existing virtual machine disks using the Azure portal
-  - Encrypt existing virtual machine disks using PowerShell
-  - Modify Azure Resource Manager templates to automate disk encryption on new VMs
+  - Determine which encryption method is best for your VM.
+  - Encrypt existing virtual machine disks using the Azure portal.
+  - Encrypt existing virtual machine disks using PowerShell.
+  - Modify Azure Resource Manager templates to automate disk encryption on new VMs.
 prerequisites: None
-iconUrl: /learn/achievements/secure-your-azure-virtual-machine-disks.svg
+iconUrl: /training/achievements/secure-your-azure-virtual-machine-disks.svg
 levels:
 - intermediate
 roles:
@@ -32,6 +32,8 @@ products:
 - azure-resource-manager
 - azure-disk-storage
 - azure-disk-encryption
+subjects:
+- virtual-machine
 units:
 - learn.secure-your-azure-virtual-machine-disks.1-introduction
 - learn.secure-your-azure-virtual-machine-disks.2-encryption-options-for-protecting-windows-and-linux-vms

@@ -8,6 +8,8 @@ metadata:
   ms.author: buhollan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: buhollan-01092020
 title: Build Serverless APIs with Azure Functions
 summary: Use Visual Studio Code and Azure Functions to rapidly create a serverless API, implement a RESTful architecture and safely store secure information like connection strings.
 abstract: |
@@ -25,7 +27,7 @@ prerequisites: |
   - Must have [Visual Studio Code](https://code.visualstudio.com/) installed
   - Must have [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed
   - Must have the [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed
-iconUrl: /learn/achievements/build-api-azure-functions.svg
+iconUrl: /training/achievements/build-api-azure-functions.svg
 levels:
   - beginner
 roles:
@@ -33,6 +35,8 @@ roles:
 products:
   - azure
   - azure-functions
+subjects:
+- serverless-compute
 units:
   - learn.azure.build-api-azure-functions.1-introduction
   - learn.azure.build-api-azure-functions.2-exercise-setup-project

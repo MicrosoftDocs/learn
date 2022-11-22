@@ -4,9 +4,16 @@ An **AI app** is simply a web or mobile application that is infused with AI capa
 
 Microsoft delivers breakthrough experiences in your apps with Azure Cognitive Services and Azure Bot Service. Leading AI models are being used across industries, and across a variety of different products today, such as Microsoft 365, Xbox, and Bing.
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to see the impact of AI apps and agents on businesses today.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to see the impact of AI apps and agents on businesses today.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqOXG]
 
@@ -16,7 +23,7 @@ Now let’s take a closer look at the services in intelligent apps and agents. S
 
 Cognitive services are a collection of domain-specific pre-trained AI models that can be customized with your data. They are categorized broadly into vision, speech, language, and search. For more information about each service, see the links in the resources section.
 
-| | |
+| Service | Features |
 |:---------:|---------|
 |**Vision** ![Vision](../media/ic-gm06-ai-icons-computer-vision.png)    |Vision makes it possible for apps and services to accurately identify and analyze content within images and videos.           |
 |**Speech** ![Speech](../media/ic-gm06-ai-icons-speech.png)     | Speech services can convert spoken language into text, or produce natural-sounding speech from text using standard (or customizable) voice fonts.        |
@@ -40,7 +47,7 @@ Let’s explore some key scenarios involving Azure Bot Service – commerce agen
 
 Together, the Azure Bot Service and Language Understanding services enable developers to create conversational interfaces for various scenarios in banking, travel, entertainment, and other industries. For example, a hotel’s concierge can use a bot to enhance traditional e-mail and phone interactions by validating a customer via Azure Active Directory and then using Azure Cognitive Services to better contextually process customer requests using text and voice. The Speech recognition service can be added to support voice commands.
 
-![Diagram reviewing the following steps.](../media/ic-gm06-ai-diagram1.png)
+![Diagram reviewing the following steps for a commerce agent.](../media/ic-gm06-ai-diagram1.png)
 
 Flow through the above:
 
@@ -56,7 +63,7 @@ Flow through the above:
 
 This bot can answer questions defined in a knowledge set or frequently asked questions (FAQ) using Azure Cognitive Services QnA Maker and answer more open-ended questions using Azure Search.
 
-![Diagram reviewing the following steps.](../media/ic-gm06-ai-Diagram2.png)
+![Diagram reviewing the following steps for an information bot.](../media/ic-gm06-ai-Diagram2.png)
 
 Flow through the above:
 
@@ -72,7 +79,7 @@ Flow through the above:
 
 You can combine Azure Bot Service with Language Understanding to build powerful enterprise productivity bots. These allow you to streamline common work activities by integrating external systems, such as Microsoft 365 calendar, customer cases stored in Dynamics CRM, and much more.
 
-![ Diagram reviewing the following steps](../media/ic-gm06-ai-diagram3.png)
+![Diagram reviewing the following steps for an enterprise productivity bot.](../media/ic-gm06-ai-diagram3.png)
 
 Flow through the above:
 
@@ -86,16 +93,27 @@ Flow through the above:
 > [!TIP]
 > You can find more details on Azure products and services for knowledge mining, machine learning, and AI apps and agents by using the products tab on azure.com in the “Summary and resources” unit at the end of the module.
 
-|  |  |
-| ------------ | -------------|
-|![Icon of lightbulb](../media/lightbulb.png)|*Familiarize yourself with the elements that enable these capabilities. Although each capability is different, the architectures share common elements. Suppose you want an application to begin fielding commonly asked questions. What tools, APIs, and services could you integrate? For a challenge, write these out and create your own diagram.*
-|
+:::row:::
+![Icon of lightbulb.](../media/lightbulb.png)
+
+:::column:::
+*Familiarize yourself with the elements that enable these capabilities. Although each capability is different, the architectures share common elements. Suppose you want an application to begin fielding commonly asked questions. What tools, APIs, and services could you integrate? For a challenge, write these out and create your own diagram.*
+
+:::column-end:::
+:::row-end:::
 
 ### AI in action
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to see what Azure Cognitive Services and Azure Bot Service can do together.|
+:::row:::
+![Icon indicating play video.](../media/video-icon.png)
+
+:::column:::
+Watch this video to see what Azure Cognitive Services and Azure Bot Service can do together.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWrRTR]
 

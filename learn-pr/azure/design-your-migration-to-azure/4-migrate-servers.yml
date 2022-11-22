@@ -21,12 +21,12 @@ quiz:
       isCorrect: false
     - content: "Azure VMs, physical Unix, physical Sun Solaris"
       isCorrect: false
-    - content: "Azure VMs, VMware VMs, Hyper-V VMs, Physical Windows"
+    - content: "Azure VMs, VMware VMs, Hyper-V VMs, physical servers"
       isCorrect: true
       explanation: "Correct"
   - content: "True or False: You can replicate up to 1000 virtual machines per batch using Azure Migrate."
     choices:
-    - content: "Incorrect. You can only replicate up to 100 at a time. To do more, it is recommended that you perform replication in multiple batches."
+    - content: "Incorrect. You can only replicate up to 100 at a time. To do more, it's recommended that you perform replication in multiple batches."
       isCorrect: true
-    - content: "Correct. To do more, it is recommended that you perform replication in multiple batches."
+    - content: "Correct. To do more, it's recommended that you perform replication in multiple batches."
       isCorrect: false

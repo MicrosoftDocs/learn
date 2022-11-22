@@ -28,7 +28,6 @@ VM extensions are lightweight software components that automate post-operating s
 | Extension | Additional information |
 | --- | --- |
 | CustomScriptExtension | Executes a script on the target Arc enabled server. |
-| Desired State Configuration (DSC) | Applies a PowerShell DSC configuration on the target Arc enabled server. |
 | Log Analytics agent | Installs the Log Analytics agent on the target Arc enabled server and configures it for log forwarding to a Log Analytics workspace. |
 | Microsoft Dependency agent | Installs the Dependency agent on the target Arc enabled server to facilitate identifying internal and external dependencies of server workloads. |
 

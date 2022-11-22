@@ -70,13 +70,13 @@ Six types of subscription models are used for Azure SQL Database managed instanc
 Two generations of Azure SQL Database managed instance have hardware limitations. Choose the version that will meet your needs:
 
 | | Gen4 | Gen5 |
-||||
-| Hardware | Intel E5-2673 v3 (Haswell) 2.4-GHz processors, attached SSD vCore = 1 PP (physical core) | Intel E5-2673 v4 (Broadwell) 2.3-GHz processors, fast NVMe SSD, vCore=1 LP (hyper-thread) |
-| vCores| up to 24 vCores| up to 80 vCores |
-| Memory | 7 GB per vCore| 5.1 GB per vCore |
-| Max OLTP memory | 3 GB per vCore | 2.5 GB per vCore|
-| Max instance storage (General Purpose) | 8 TB | 8 TB |
-| Max instance storage (Business Critical) | 1 TB | 1 TB, 2 TB, or 4 TB depending on the number of cores |
+|---|---|---|
+| **Hardware** | Intel E5-2673 v3 (Haswell) 2.4-GHz processors, attached SSD vCore = 1 PP (physical core) | Intel E5-2673 v4 (Broadwell) 2.3-GHz processors, fast NVMe SSD, vCore=1 LP (hyper-thread) |
+| **vCores** | up to 24 vCores| up to 80 vCores |
+| **Memory** | 7 GB per vCore| 5.1 GB per vCore |
+| **Max OLTP memory** | 3 GB per vCore | 2.5 GB per vCore|
+| **Max instance storage (General Purpose)** | 8 TB | 8 TB |
+| **Max instance storage (Business Critical)** | 1 TB | 1 TB, 2 TB, or 4 TB depending on the number of cores |
 
 You select the generation of the Azure SQL Database managed instance, and a service tier: General Purpose or Business Critical.
 
@@ -119,20 +119,20 @@ Create an Azure SQL Database managed instance by following these steps:
 
 1. Fill out the SQL managed instance form using the information in the following table:
 
-    | Setting | Suggested value |
-    ||||
+    |  | Suggested value |
+    |---|---|
     | **Subscription** | Your subscription. |
-    |**managed instance name**|Any valid name.||
-    |**managed instance admin login**|Any valid username. Don't use "serveradmin" because that's a reserved server-level role.|
-    |**Password**|Any password longer than 16 characters and meeting the complexity requirements.|
-    |**Time zone**|The time zone to be observed by your managed instance.|
-    |**Collation**|The collation you want to use for the managed instance. If you migrate databases from SQL Server, check the source collation by using SELECT SERVERPROPERTY(N'Collation') and use that value. |
-    |**Location**|The Azure region in which you want to create the managed instance.|
-    |**Virtual network**|Select either "Create new virtual network" or a valid virtual network and subnet.|
-    |**Enable public endpoint**|Check this option to enable a public endpoint, which then helps clients outside Azure to access the database. |
-    |**Allow access from**| Select from Azure services, the internet, or no access.|
-    |**Connection type**|Choose between a Proxy and a Redirect connection type.|
-    |**Resource group**|A new or existing resource group.|
+    | **managed instance name** | Any valid name. |
+    | **managed instance admin login** | Any valid username. Don't use "serveradmin" because that's a reserved server-level role. |
+    | **Password** | Any password longer than 16 characters and meeting the complexity requirements. |
+    | **Time zone** | The time zone to be observed by your managed instance. |
+    | **Collation** | The collation you want to use for the managed instance. If you migrate databases from SQL Server, check the source collation by using SELECT SERVERPROPERTY(N'Collation') and use that value. |
+    | **Location** | The Azure region in which you want to create the managed instance. |
+    | **Virtual network** | Select either "Create new virtual network" or a valid virtual network and subnet. |
+    | **Enable public endpoint** | Check this option to enable a public endpoint, which then helps clients outside Azure to access the database. |
+    | **Allow access from** | Select from Azure services, the internet, or no access. |
+    | **Connection type** | Choose between a Proxy and a Redirect connection type. |
+    | **Resource group** | A new or existing resource group. |
 
     ![Configuring managed instance performance in the Azure portal](../media/2-configure-managed-instance-performance.png)
 

@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-authentication-capabilities-of-azure-ad.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "After hearing of a breach at a competitor, the security team wants to improve identity security within their organization. What should they implement to provide the greatest protection to user identities?"
+    choices:
+    - content: "Multi-factor authentication."
+      isCorrect: true
+      explanation: "Correct. Multi-factor authentication dramatically improves the security of an identity."
+    - content: "Require security questions for all sign-ins."
+      isCorrect: false
+      explanation: "Incorrect. Security questions can only be used during the self-service password reset (SSPR) process to confirm who you are. Security questions aren't used as an authentication method during a sign-in event."
+    - content: "Require strong passwords for all identities."
+      isCorrect: false
+      explanation: "Incorrect. Although strong passwords improve security, they're not as secure multi-factor authentication."
+  - content: "Which of the following additional forms of verification can be used with Azure AD Multi-Factor Authentication?"
+    choices:
+    - content: "Microsoft Authenticator app, SMS, Voice call, FIDO2, and Windows Hello for Business"
+      isCorrect: true
+      explanation: "Correct.  These are all valid forms of verification with multi-factor authentication."
+    - content: "Security questions, SMS, Voice call, FIDO2, and Windows Hello for Business"
+      isCorrect: false
+      explanation: "Incorrect.  Security questions aren't a valid form of verification with multi-factor authentication."
+    - content: "Password spray, SMS, Voice call, FIDO2, and Windows Hello for Business"
+      isCorrect: false
+      explanation: "Correct.  Password spray isn't a form of verification, it's an identity based attack."
+  - content: "A company's IT organization has been asked to find ways to reduce IT costs, without compromising security. Which feature should they consider implementing?"
+    choices:
+    - content: "Self-service password reset."
+      isCorrect: true
+      explanation: "Correct. Self-service password reset allows users to change or reset their own passwords, thereby reducing the cost of providing administrators and help desk personnel."
+    - content: "Biometric sign-in on all devices."
+      isCorrect: false
+      explanation: "Incorrect. Biometric sign-in is secure but may involve upgrading hardware."
+    - content: "FIDO2."
+      isCorrect: false
+      explanation: "Incorrect. FIDO2 may require the purchase of external keys such as a USB device, which might involve additional expense."

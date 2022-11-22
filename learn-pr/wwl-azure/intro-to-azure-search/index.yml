@@ -3,9 +3,9 @@ uid: learn.azure-introduction-to-azure-search
 metadata:
   title: Introduction to Azure Cognitive Search
   description: "Explore Azure Cognitive Search to discover how to create an index, import data, and query the index for better search results."
-  ms.date: 11/30/2021
+  ms.date: 09/02/2022
   author: wwlpublish
-  ms.author: robmcm
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Cognitive Search
@@ -16,10 +16,8 @@ abstract: |
     - Create an Azure Cognitive Search index
     - Import data to the index
     - Query the Azure Cognitive Search index
-prerequisites: |
-  - Beginner-level experience with C#
-  - Familiarity with Azure Blob storage
-iconUrl: /learn/achievements/azure-introduction-to-azure-search.svg
+prerequisites: ""
+iconUrl: /training/achievements/azure-introduction-to-azure-search.svg
 levels:
 - beginner
 roles:
@@ -27,12 +25,17 @@ roles:
 products:
 - azure
 - azure-cognitive-search
+subjects:
+- artificial-intelligence
 units:
 - learn.azure-introduction-to-azure-search.1-introduction
 - learn.azure-introduction-to-azure-search.2-what-is-azure-search
-- learn.azure-introduction-to-azure-search.design-index
+- learn.azure-introduction-to-azure-search.process
+- learn.azure-introduction-to-azure-search.ai-skillsets
+- learn.azure-introduction-to-azure-search.understand-index
 - learn.azure-introduction-to-azure-search.use-indexer-to-build-index
-- learn.azure-introduction-to-azure-search.4-index-data-with-azure-search
+- learn.azure-introduction-to-azure-search.understand-knowledge-store
+- learn.azure-introduction-to-azure-search.2f-start-with-portal
 - learn.azure-introduction-to-azure-search.6-query-data-in-an-azure-search-index
 - learn.azure-introduction-to-azure-search.exercise
 - learn.azure-introduction-to-azure-search.8-knowledge-check

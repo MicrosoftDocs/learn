@@ -5,8 +5,8 @@ metadata:
   title: Create an Azure function using the Maven archetype
   description: A Maven archetype represents a specific type of functionality that you use to create the foundation of an application.
   ms.date: 04/01/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

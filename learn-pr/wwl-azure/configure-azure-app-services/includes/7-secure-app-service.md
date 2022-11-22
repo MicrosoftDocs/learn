@@ -24,7 +24,7 @@ The module runs separately from your application code and is configured using ap
 In the Azure portal, you can configure App Service with a number of behaviors:
 
 1.  **Allow Anonymous requests (no action):** This option defers authorization of unauthenticated traffic to your application code. For authenticated requests, App Service also passes along authentication information in the HTTP headers.This option provides more flexibility in handling anonymous requests. It lets you present multiple sign-in providers to your users.
-2.  **Allow only authenticated requests:** The option is **Log in with <provider>**. App Service redirects all anonymous requests to `/.auth/login/<provider>` for the provider you choose. If the anonymous request comes from a native mobile app, the returned response is an `HTTP 401 Unauthorized`. With this option, you don't need to write any authentication code in your app.
+2.  **Allow only authenticated requests:** The option is **Log in with \<provider\>**. App Service redirects all anonymous requests to `/.auth/login/<provider>` for the provider you choose. If the anonymous request comes from a native mobile app, the returned response is an `HTTP 401 Unauthorized`. With this option, you don't need to write any authentication code in your app.
 
 > [!NOTE]
 > Restricting access in this way applies to all calls to your app, which may not be desirable for apps wanting a publicly available home page, as in many single-page applications.

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Move between pages by using stack navigation
   description: "Implement stack navigation in the sample Astronomy app, by using a NavigationPage and navigation method calls."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
   

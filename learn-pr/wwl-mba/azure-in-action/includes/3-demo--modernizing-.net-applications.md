@@ -8,9 +8,16 @@ In this demo, you'll see the process by which Tailwind Traders can host its rewa
 
 ## Migrate and modernize applications
 
-|||
-| :--- | :--- |
-| ![Play video icon](../media/video-icon.png)| David, Senior Product Marketing Manager for Azure Application Development, demonstrates how easy it can be to migrate and modernize an app.|
+:::row:::
+![Play video icon](../media/video-icon.png)
+
+:::column:::
+David, Senior Product Marketing Manager for Azure Application Development, demonstrates how easy it can be to migrate and modernize an app.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3dj5N]
 

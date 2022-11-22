@@ -6,7 +6,7 @@ Azure load balancer is available in two SKUs: Basic and Standard.
 
 :::row:::
   :::column:::
-    
+
   :::column-end:::
   :::column:::
     **Standard load balancer**
@@ -159,12 +159,11 @@ Azure load balancer is available in two SKUs: Basic and Standard.
   :::column-end:::
 :::row-end:::
 
-
 ## Limitations
 
- -  SKUs aren't mutable. You can't change the SKU of an existing resource.
- -  A standalone virtual machine resource, availability set resource, or virtual machine scale set resource can reference one SKU, never both.
+- SKUs aren't mutable. You can't change the SKU of an existing resource.
+- A standalone virtual machine resource, availability set resource, or virtual machine scale set resource can reference one SKU, never both.
 
-## Optional demo:
+## Optional demo
 
- -  [Demonstration: Explore Network Security Groups (NSGs) and service endpoints](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-explore-network-security-groups-service-endpoints.md)
+- [Demonstration: Explore Network Security Groups (NSGs) and service endpoints](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-explore-network-security-groups-service-endpoints.md)

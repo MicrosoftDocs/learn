@@ -1,6 +1,6 @@
-Blazer gives you the power to connect C# code to HTML DOM events. You'll use this ability to improve an existing app.
+Blazor gives you the power to connect C# code to HTML DOM events. You'll use this ability to improve an existing app.
 
-As part of a development team working to enhance a Blazing Pizza app, you've been asked to finish the checkout process to capture customer's addresses. You'll add some text fields and improve the checkout process.
+As part of a development team working to enhance a Blazing Pizza app, you've been asked to finish the checkout process to capture customers' addresses. You'll add some text fields and improve the checkout process.
 
 In this exercise, you'll clone an existing app and create a new address component to capture address details. With the fields in place, you'll set the focus to the first field on the form.
 
@@ -27,20 +27,20 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 
     Visual Studio Code might prompt you about unresolved dependencies. Select **Restore**.
 
-1. Run the app to check everything is working correctly. 
+1. Run the app to check everything is working correctly.
 1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu select **Start Debugging**.
 
     :::image type="content" source="../media/3-blazing-pizza-starting-state.png" alt-text="Screenshot of the Blazing Pizza app after cloning it":::
 
     Try configuring some pizzas and adding them to your order. Select **Order >** at the bottom of the page. You'll see the current checkout page.
 
-1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app running.
+1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app from running.
 
 ## Refactor the checkout page
 
 1. In Visual Studio Code, in the file explorer, expand **Pages**, then select **Checkout.razor**.
 
-    At the moment, the checkout page just shows the list of pizzas that have been configured. You've been asked to refactor the page to include an address section. 
+    At the moment, the checkout page just shows the list of pizzas that have been configured. You've been asked to refactor the page to include an address section.
 
 1. Replace the existing `<div class="main">` HTML block to have two columns for data.
 
@@ -170,7 +170,7 @@ When the customer is taken to the checkout page, the first thing they do is ente
 
     The Blazor directive `@ref="startName"` lets the code block create an `ElementReference` to reference the input element. You can then use this element reference to call `FocusAsync` after a page has been rendered.
 
-1. Add code to call `FocusAsync` after a page has loaded under the `[Parameter] public Order Order { get; set; }` declaration.
+1. Add code to call `FocusAsync` after a page has loaded under the `[Parameter] public Address Address { get; set; }` declaration.
 
     ```razor
     private ElementReference startName;
@@ -189,6 +189,6 @@ When the customer is taken to the checkout page, the first thing they do is ente
 
     :::image type="content" source="../media/3-focus-name-field.png" alt-text="Screenshot of the Name field getting focus on page render.":::
 
-    Add some pizzas and select **Order >** to see that on the checkout page the **Name** form field has focus. 
+    Add some pizzas and select **Order >** to see that on the checkout page the **Name** form field has focus.
 
-1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app running.
+1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app from running.

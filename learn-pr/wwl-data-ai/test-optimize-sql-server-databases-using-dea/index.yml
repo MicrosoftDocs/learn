@@ -20,13 +20,15 @@ prerequisites: |
   - Experience administering SQL Server databases
   - Knowledge of SQL Server Profiler and trace files
   - Understanding of database performance
-iconUrl: /learn/achievements/sqlserver/test-and-optimize-sql-server-databases-using-dea.svg
+iconUrl: /training/achievements/sqlserver/test-and-optimize-sql-server-databases-using-dea.svg
 levels:
 - beginner
 roles:
 - administrator
 products:
 - sql-server
+subjects:
+- database
 units:
 - learn-sqlserver.test-optimize-sql-server-databases-using-dea.1-introduction
 - learn-sqlserver.test-optimize-sql-server-databases-using-dea.2-decide-dea-right-your-task

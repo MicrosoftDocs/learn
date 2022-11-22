@@ -1,0 +1,76 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.revenue.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Review concepts on startup revenue models. Topics include choosing the right pricing model and determining which customers to focus on initially.
+  ms.date: 02/11/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes: 4
+quiz:
+  questions:
+  - content: "If your product is a dashboard for aggregating bank feeds, which pricing model is most likely to be a fit?"
+    choices:
+    - content: "Subscription."
+      isCorrect: true
+      explanation: "Correct. A subscription model is best for software like a banking product that customers use regularly."
+    - content: "Commission."
+      isCorrect: false
+      explanation: "Incorrect. A commission model is best for businesses that connect a buyer with a seller. A different model is best for software like a banking product that customers use regularly."
+    - content: "Licensing."
+      isCorrect: false
+      explanation: "Incorrect. With a licensing model, you typically charge a fee when you grant another company the right to use your intellectual property. A different model is best for software like a banking product that customers use regularly."
+    - content: "Transactional."
+      isCorrect: false
+      explanation: "Incorrect. A transactional model is best for physical products that customers purchase online. A different model is best for software like a banking product that customers use regularly."
+
+  - content: "If your product is a marketplace that connects dog owners with dog walkers, which pricing model is most likely to be a fit?"
+    choices:
+    - content: "Subscription."
+      isCorrect: false
+      explanation: "Incorrect. A subscription model is best for software products that customer use regularly. A different model is best for marketplace businesses that connect buyers with sellers."
+    - content: "Commission."
+      isCorrect: true
+      explanation: "Correct. A commission model is best for marketplace businesses that connect buyers with sellers."
+    - content: "Advertising."
+      isCorrect: false
+      explanation: "Incorrect. Advertising models are best for businesses that sell advertising space to other companies. A different model is best for marketplace businesses that connect buyers with sellers."
+    - content: "Channel."
+      isCorrect: false
+      explanation: "Incorrect. Channel models are best for products or services that naturally sit alongside another company's offering as an upsell or specialist product. A different model is best for marketplace businesses that connect buyers with sellers."
+
+  - content: "The only reason why it's helpful to focus on your ideal first customer instead of any customer in the early days is because:"
+    choices:
+    - content: "They'll recommend your product to others in their networks."
+      isCorrect: false
+      explanation: "Incorrect. Getting customers to recommend your product to others is helpful, but it's not the only option."
+    - content: "You'll get better reviews and more five-star ratings."
+      isCorrect: false
+      explanation: "Incorrect. Getting good reviews and ratings is helpful, but it's not the only option."
+    - content: "Your customer lifetime value will be higher because these users are sticky."
+      isCorrect: false
+      explanation: "Incorrect. Increasing your customer lifetime value is helpful, but it's not the only option."
+    - content: "Your cost of acquiring customers will be driven down."
+      isCorrect: false
+      explanation: "Incorrect. Driving down the cost of acquiring customers is helpful, but it's not the only option."
+    - content: "All of the above."
+      isCorrect: true
+      explanation: "Correct. There are many benefits to initially focusing on your ideal first customer. When your product is an extremely good fit for customers, they recommend it to others and give you good reviews and ratings. Your customer lifetime value is high because these customers are likely to keep using your product. Referrals that these customers provide drive down your cost of acquiring new customers."
+
+  - content: "Which of the following is most likely to indicate that someone is a potential early adopter for your product?"
+    choices:
+    - content: "They have a high disposable income."
+      isCorrect: false
+      explanation: "Incorrect. An early adopter is willing to pay for your product before anyone else will, but they don't necessarily have a high disposable income."
+    - content: "They work in tech."
+      isCorrect: false
+      explanation: "Incorrect. Most early adopters like to try new things. Many have experimented with alternatives. But they can work in any area."
+    - content: "They've already built a complex spreadsheet in an attempt to solve the problem."
+      isCorrect: true
+      explanation: "Correct. Early adopters have likely experimented with alternatives. They might have created makeshift solutions themselves."
+    - content: "They work for a company that you're competing with."
+      isCorrect: false
+      explanation: "Incorrect. Early adopters are likely to have experimented with alternative solutions. But they can work for any company in any area."

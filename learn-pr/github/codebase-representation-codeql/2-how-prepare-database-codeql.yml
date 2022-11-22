@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.codebase-representation-codeql.2-how-prepare-database-codeql
+title: How to prepare a database for CodeQL
+metadata:
+  unitType: How to prepare a database for CodeQL
+  title: How to prepare a database for CodeQL
+  description: In this unit, you'll learn how to create a database.
+  ms.date: 02/10/2022
+  author: sterling463
+  ms.author: csterling
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-how-prepare-database-codeql.md)]

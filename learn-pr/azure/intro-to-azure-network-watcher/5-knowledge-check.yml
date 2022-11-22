@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-network-watcher.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 02/09/2022
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.custom: team=cloud_advocates
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: You're in the process of trying to ascertain which resources are connected to a specific virtual network that's being used as a Dev/Test environment for experimental Adatum workloads. Which of the following Network Watcher tools would you use to accomplish this goal?
+      choices:
+        - content: Topology
+          isCorrect: true
+          explanation: Correct. Topology allows you to view which resources are connected to a specific virtual network.
+        - content: Connection Monitor
+          isCorrect: false
+          explanation: Incorrect. Connection Monitor can catch changes that will affect connectivity, such as changes to the network configuration or changes to NSG rules.
+        - content: Network Performance Monitor
+          isCorrect: false
+          explanation: Incorrect. Network Performance Monitor allows you to track and alert based on traffic latency and packet drops.          
+    - content: Which of the following Network Watcher tools would you use to detect whether changes in NSG rules affect connectivity between IaaS VMs on a virtual network in Adatum's Azure subscription?
+      choices: 
+        - content: Topology
+          isCorrect: false
+          explanation: Incorrect. Topology allows you to view which resources are connected to a specific virtual network.          
+        - content: Connection Monitor
+          isCorrect: true
+          explanation: Correct. Connection Monitor can catch changes that will affect connectivity, such as changes to the network configuration or changes to NSG rules.          
+        - content: Network Performance Monitor
+          isCorrect: false
+          explanation: Incorrect. Network Performance Monitor allows you to track and alert based on traffic latency and packet drops.          
+    - content: You're responsible for diagnosing performance issues in a multi-tier application. This application is in a hybrid configuration and is hosted across computers and VMs that run both in on-premises and cloud locations. The front-end component runs on a computer on-premises and a back-end component runs on an IaaS VM in Azure. Your on-premises location is connected to the Azure virtual network that hosts the back-end IaaS VM through an Azure site-to-site VPN. Performance degrades when network traffic across the Azure site-to-site VPN is congested. Which of the following Network Watcher tools would you use to raise an alert when packet loss between the two hosts exceeds a specific threshold?
+      choices:
+        - content: Topology
+          isCorrect: false
+          explanation: Incorrect. Topology allows you to view which resources are connected to a specific virtual network.      
+        - content: Connection Monitor
+          isCorrect: false
+          explanation: Incorrect. Although Connection Monitor can inform you if a connection is disrupted by checking periodically, it doesn't raise alerts when latency or packet drops exceed a specific threshold.      
+        - content: Network Performance Monitor
+          isCorrect: true
+          explanation: Correct. Network Performance Monitor allows you to track and alert based on traffic latency and packet drops.
+          

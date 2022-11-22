@@ -5,10 +5,12 @@ metadata:
   title: How Azure VMware Solution works
   description: Learn how Azure VMware Solution is set up and how it works on Azure.
   ms.date: 06/17/2021
-  author: exchangegoddess
-  ms.author: phschmit
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: phschmit-07282021
 durationInMinutes: 7
 content: |
   [!include[](includes/3-how-azure-vmware-solution-works.md)]

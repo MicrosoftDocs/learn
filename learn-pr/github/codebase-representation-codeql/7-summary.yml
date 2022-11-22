@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.codebase-representation-codeql.7-summary
+title: Summary
+metadata:
+  unitType:  Summary
+  title:  Summary
+  description: Module summary
+  ms.date: 02/10/2022
+  author: sterling463
+  ms.author: csterling
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

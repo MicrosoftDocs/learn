@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-percept.explore.what-is-azure-percept
+title: What is Azure Percept?
+metadata:
+  title: What is Azure Percept?
+  description: Learn what Azure Percept is and how your organization can use Azure Percept.
+  ms.date: 06/14/2022
+  ms.author: chnoring
+  author: Amiyouss
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-what-is-azure-percept.md)]

@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/08/2021
+  ms.date: 11/04/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
@@ -18,36 +17,36 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Which Azure SQL deployment option will be easiest to use for the Inventory application?"
+  - content: "Which Azure SQL deployment option should be the easiest method to migrate the Inventory application?"
     choices:
-    - content: "SQL Server in an Azure virtual machine"
-      isCorrect: true
-      explanation: "that’s correct. SQL Server in an Azure VM allows for Windows authentication"
     - content: "Azure SQL Managed Instance"
       isCorrect: false
-      explanation: "that’s incorrect. SQL managed instance doesn’t meet the requirement of Windows authentication"
+      explanation: "Incorrect. An Azure SQL managed instance doesn't support Windows authentication."
     - content: "Azure SQL Database, single database"
       isCorrect: false
-      explanation: "that’s incorrect. SQL Database doesn’t meet the requirement of Windows authentication"
-  - content: "Which Azure SQL deployment option should be used for the HR application"
+      explanation: "Incorrect. A SQL database doesn't support Windows authentication."
+    - content: "SQL Server on Azure Virtual Machines"
+      isCorrect: true
+      explanation: "Correct. A SQL server in an Azure virtual machine supports Windows authentication."
+  - content: "What's the optimal Azure SQL deployment option to migrate the HR application?"
     choices:
     - content: "Azure SQL Managed Instance"
       isCorrect: true
-      explanation: "that’s correct. Azure SQL Managed Instance is the only PaaS service that supports instance-scoped features like CLR and Service Broker."
-    - content: "SQL Server in an Azure VM"
-      isCorrect: false
-      explanation: "that’s incorrect. This does not meet the requirements of removing management of SQL Server"
+      explanation: "Correct. Azure SQL Managed Instance is the only PaaS service that supports instance-scoped features like CLR and Service Broker."
     - content: "Azure SQL Database"
       isCorrect: false
-      explanation: "that’s incorrect. Azure SQL database doesn’t support instance-scoped features like service broker and CLR"
-  - content: "What database service tier should be selected for the databases being migrated?"
+      explanation: "Incorrect. Azure SQL Database doesn't support instance-scoped features like service broker and CLR."
+    - content: "SQL Server in an Azure virtual machine"
+      isCorrect: false
+      explanation: "Incorrect. SQL Server in an Azure VM doesn't meet the requirements for removing management of SQL Server."
+  - content: "Which database service tier best supports the large on-premises database migration?"
     choices:
-    - content: "Hyper Scale"
+    - content: "General Purpose"
+      isCorrect: false
+      explanation: "Incorrect. The General Purpose tier can't support up to 80 TB of data."
+    - content: "Hyperscale"
       isCorrect: true
-      explanation: "that’s correct. Hyper scale can support up to 100 TB"
+      explanation: "Correct. The Hyperscale tier can support up to 100 TB of data."
     - content: "Business Critical"
       isCorrect: false
-      explanation: "that’s incorrect. Business critical cant support up to 80 TB of data"
-    - content: "General purpose"
-      isCorrect: false
-      explanation: "that’s incorrect. General purpose cant support up to 80 TB of data"
+      explanation: "Incorrect. The Business Critical tier can't support up to 80 TB of data"

@@ -43,7 +43,7 @@ In this unit, you'll configure continuous deployment for the web app and create 
 
 1. Select the single webhook in the list. Your **Container registry webhook** appears.
 
-1. Note that there's a record of the webhook that just fired in response to the build and push you ran.
+1. Notice the record of the webhook that just fired in response to the build and push you ran.
 
     ![Screenshot of the webhook showing the push event.](../media/7-acr-webhook-event.png)
 
@@ -81,7 +81,7 @@ The web app has been updated and redeployed automatically based on the new image
     ...
     ```
 
-    Make sure to save the file when you are finished.
+    Make sure to save the file when you're finished.
 
 1. In Cloud Shell, run the next set of commands to rebuild the image for the web app, and push it to Container Registry. Replace `<container_registry_name>` with the name of your registry. Don't forget the `.` at the end of the second command.
 
@@ -92,7 +92,7 @@ The web app has been updated and redeployed automatically based on the new image
 
 1. In the left menu pane, under **Services**, select **Webhooks**. In the **Webhooks** pane of your container registry, and select the single webhook in the list.
 
-1. Note that there's a record of the webhook that just fired in response to the build and push you ran.
+1. Notice that there is a record of the webhook that just fired in response to the build and push you ran.
 
     ![Screenshot of the webhook showing the push event.](../media/7-acr-webhook-event.png)
 

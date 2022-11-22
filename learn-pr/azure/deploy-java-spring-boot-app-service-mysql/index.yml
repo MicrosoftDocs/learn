@@ -8,6 +8,8 @@ metadata:
   ms.author: ropreddy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: ropreddy-03032021
 title: Deploy a Spring Boot app to Azure
 summary: Create a Spring Boot application, connect it to a MySQL database, and then deploy to Azure App Service.
 abstract: |
@@ -18,7 +20,7 @@ abstract: |
 prerequisites: | 
   - An Azure subscription
   - Local installations of Java JDK (1.8 or later), Maven (3.0 or later), and the Azure CLI (2.12 or later)
-iconUrl: /learn/achievements/deploy-java-spring-boot-app-service-mysql.svg
+iconUrl: /training/achievements/deploy-java-spring-boot-app-service-mysql.svg
 levels:
 - intermediate
 roles:
@@ -28,6 +30,8 @@ products:
 - azure-app-service
 - azure-app-service-web
 - azure-database-mysql
+subjects:
+- custom-app-development
 units:
 - learn.azure.deploy-java-spring-boot-app-service-mysql.1-introduction
 - learn.azure.deploy-java-spring-boot-app-service-mysql.2-build

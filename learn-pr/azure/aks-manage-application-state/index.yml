@@ -4,8 +4,8 @@ metadata:
   title: Deploy and manage a stateful application by using Azure Cosmos DB and Azure Kubernetes Service
   description: Create and manage a stateful application with an external storage by using Azure Cosmos DB and Azure Kubernetes Service
   ms.date: 10/29/2020
-  author: khaosdoctor
-  ms.author: ludossan
+  author: nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy and manage a stateful application by using Azure Cosmos DB and Azure Kubernetes Service
@@ -21,7 +21,7 @@ prerequisites: |
   - Basic knowledge of running commands by using Azure CLI
   - Basic knowledge of Kubernetes and its concepts
   - Basic knowledge of AKS and its concepts
-iconUrl: /learn/achievements/aks-manage-application-state.svg
+iconUrl: /training/achievements/aks-manage-application-state.svg
 levels:
   - beginner
 roles:
@@ -32,6 +32,8 @@ products:
   - azure
   - azure-kubernetes-service
   - azure-cosmos-db
+subjects:
+- container
 units:
   - learn.aks-manage-application-state.1-introduction
   - learn.aks-manage-application-state.2-understand-state-management

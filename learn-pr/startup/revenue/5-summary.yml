@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.revenue.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review the fundamentals of revenue models. Topics include testing revenue model assumptions with customers and developing a customer persona.
+  ms.date: 02/11/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-summary.md)]

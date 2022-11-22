@@ -92,8 +92,7 @@ The YAML file to create the environment, which will refer to the Conda environme
 $schema: https://azuremlschemas.azureedge.net/latest/environment.schema.json
 name: basic-env-scikit
 version: 1
-docker:
-  image: mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04
+image: mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04
 conda_file: file:conda-envs/basic-env-ml.yml
 ```
 
@@ -101,7 +100,7 @@ Make sure both YAML files are stored locally on the same computer from which you
 
 To get a list of all environments in your workspace, you use the `az ml environment list` command. Both curated and custom environments will show in this list. All environments can also be found in the [Azure Machine Learning Studio](https://ml.azure.com), in the Environments tab.
 
-Learn more about the commands to [manage Azure ML environments](/cli/azure/ml/environment?view=azure-cli-latest).
+Learn more about the commands to [manage Azure ML environments](/cli/azure/ml/environment).
 
 All registered environments will persist in the Azure Machine Learning workspace and can be used whenever you want to train a model or run a job.
 

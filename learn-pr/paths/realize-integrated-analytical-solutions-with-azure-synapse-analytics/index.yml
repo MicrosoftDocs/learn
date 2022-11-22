@@ -13,13 +13,16 @@ prerequisites: |
   Completion of Azure Data Fundamentals learning path.
 summary: |
   Learn how Azure Synapse Analytics enables you to perform different types of analytics through its’ components that can be used to build Modern Data Warehouses through to Advanced Analytical solutions.
-iconUrl: /learn/achievements/realize-integrated-analytical-solutions-with-azure-synapse-analytics.svg
+iconUrl: /training/achievements/realize-integrated-analytical-solutions-with-azure-synapse-analytics.svg
 levels:
 - beginner
 roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- data-warehousing
+- data-analytics
 modules:
 - learn.wwl.introduction-to-azure-synapse-analytics
 - learn.wwl.survey-components-of-azure-synapse-analytics

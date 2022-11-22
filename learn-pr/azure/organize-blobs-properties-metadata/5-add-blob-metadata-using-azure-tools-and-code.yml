@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Add blob metadata using Azure tools and code
   description: Add blob metadata using Azure tools and code
   ms.date: 09/30/2021
-  author: rmcmurray
-  ms.author: robmcm
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

@@ -39,15 +39,4 @@ Azure Virtual WAN supports two WAN types, Basic and Standard. A Basic WAN create
 >[!NOTE]
 > A Basic Virtual WAN can be upgraded to a Standard Virtual WAN. A Standard Virtual WAN cannot be downgraded to a Basic Virtual WAN.
 
-The following table describes the key differences between Virtual WAN Hubs compared to VPN gateways.
-
-| Connection model | VPN Gateway | Virtual WAN Hub |
-|:------------- |:-------------------- |:-------------------- |
-| Site-to-site VPN max connections | 30 | 1,000 |
-| Site-to-site VPN connection speed | 10 Gbps| 20 Gbps |
-| Point-to-Site VPN max connections | 10,000 | 10,000 |
-| Point-to-Site VPN connection speed | 10 Gbps | 20 Gbps |
-| Express Route max connections | 0 | 4 |
-| Express Route connection speed | N/A | 20 Gbps |
-
-Additionally, Azure Virtual WAN is integrated into Azure Monitor Insights, which provides a display of health and metrics for all deployed network resources.
+Azure Virtual WAN is integrated into Azure Monitor Insights, which provides a display of health and metrics for all deployed network resources.

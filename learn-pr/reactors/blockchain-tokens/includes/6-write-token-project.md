@@ -8,7 +8,7 @@ To begin, open the **Token20** project in Visual Studio Code. When the project i
 
 ```solidity
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.4.22 <0.8.0;
+pragma solidity >=0.4.22;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
@@ -42,14 +42,14 @@ When the `reward` function is called, the current block's miner, `block.coinbase
 After you save the contract file, you're ready to build the contract. We'll be using Ganache CLI as your personal blockchain for development. We'll use Truffle to run the build.
 
 1. Open the **truffle-config.js** file, and then search for the line `solc`.
-1. In the `solc` section, uncomment the version by deleting `//`. Replace the version value with `0.6.3`. Note that this version number is required because the OpenZeppelin contracts specify the pragma directive as `pragma solidity ^0.6.2;`.
+1. In the `solc` section, ensure that the version value is `0.8.11` or greater. This version number is required because the OpenZeppelin contracts specify the pragma directive as `pragma solidity ^0.8.0;`.
 1. Save the file.
 1. In Visual Studio Code, select **Terminal** > **New Terminal** to open a terminal window.
 1. In the terminal, enter `ganache-cli` to start Ganache CLI. Information for about 10 accounts is generated for tests, followed by the account's private keys and other metadata about the development server. The last line tells you that `ganache-cli` is listening on 127.0.0.1:8545, the default port location, defined in your truffle-config.js file.
 1. Right-click in the terminal window, and then select **New Terminal**.
 1. In the new terminal window, enter `truffle build`.
 
-The following output should appear in your terminal window:
+Compiler messages similar to the following output should appear in your terminal window:
 
 ```output
 $ truffle build
@@ -57,16 +57,17 @@ No build configuration found. Preparing to compile contracts.
 
 Compiling your contracts...
 ===========================
-> Compiling ./contracts/ERC20MinerReward.sol
-> Compiling ./contracts/Migrations.sol
-> Compiling @openzeppelin/contracts/GSN/Context.sol
-> Compiling @openzeppelin/contracts/math/SafeMath.sol
-> Compiling @openzeppelin/contracts/token/ERC20/ERC20.sol
-> Compiling @openzeppelin/contracts/token/ERC20/IERC20.sol
-> Compiling @openzeppelin/contracts/utils/Address.sol
-> Artifacts written to /Users/meaghanlewis/Projects/Token20/build/contracts
+√ Fetching solc version list from solc-bin. Attempt #1
+√ Downloading compiler. Attempt #1.
+> Compiling @openzeppelin\contracts\token\ERC20\ERC20.sol
+> Compiling @openzeppelin\contracts\token\ERC20\IERC20.sol
+> Compiling @openzeppelin\contracts\token\ERC20\extensions\IERC20Metadata.sol
+> Compiling @openzeppelin\contracts\utils\Context.sol
+> Compiling .\contracts\ERC20MinerReward.sol
+> Compiling .\contracts\Migrations.sol
+> Artifacts written to /Users/username/Projects/Token20/build/contracts
 > Compiled successfully using:
-   - solc: 0.6.3+commit.8dda9521.Emscripten.clang
+   - solc: 0.8.11+commit.d7f03943.Emscripten.clang
 ```
 
 Notice that, in addition to the contracts that are defined in the contracts folder, the contracts in \@openzeppelin/contracts also are compiled. Make sure that the build finishes successfully before you move on.

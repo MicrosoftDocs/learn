@@ -12,6 +12,9 @@ az group create --name <resource group name> --location  <your nearest datacente
 
 ```
 
+> [!NOTE]
+> Check the available region for you [Choose the Right Azure Region for You](https://azure.microsoft.com/global-infrastructure/geographies). If you can't create in the nearest region, feel free to choose another one.
+
 2.  From Cloud Shell, run the **curl** command to download the template you used previously from GitHub:
 
 ```Bash
@@ -47,7 +50,7 @@ az deployment group create \
 5.  Obtain the IP address by running the following command:
 
 ```azurecli
-    IPADDRESS=$(az vm show \
+    $IPADDRESS=$(az vm show \
       --name SimpleWinVM \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --show-details \

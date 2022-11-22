@@ -1,12 +1,12 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.support-concurrency-blob-storage.6-implementing-pessimistic-concurrency
 title: Implement Pessimistic Concurrency
 metadata:
-  title: Implement Pessimistic Concurrency 
+  title: Implement Pessimistic Concurrency
   description: Implementing Pessimistic Concurrency
   ms.date: 04/06/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

@@ -6,8 +6,8 @@ metadata:
   title: When to use Azure Import/Export
   description: When to use Azure Import/Export
   ms.date: 7/26/2019
-  author: cwatson-cat
-  ms.author: cwatson
+  author: alkohli
+  ms.author: alkohli
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 

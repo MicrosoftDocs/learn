@@ -8,7 +8,7 @@ In this unit, you'll learn how to secure your webhook payload with a secret and 
 
 Setting a webhook secret allows you to ensure that POST requests sent to the payload URL are from GitHub. When you set a secret, you'll receive the `x-hub-signature` header in the webhook POST request.
 
-In GitHub, you can set the *secret* field by going to the repository where you have setup your webhook, and then editing the webhook. We'll show you how to do that for our example in the next exercise.
+In GitHub, you can set the *secret* field by going to the repository where you have set up your webhook, and then editing the webhook. We'll show you how to do that for our example in the next exercise.
 
 ## Validate payloads from GitHub
 

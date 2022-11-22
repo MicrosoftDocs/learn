@@ -44,7 +44,7 @@ Here are some CP/M commands to get you started:
 
 ## Get started with Microsoft BASIC-80
 
-For more information on Microsoft BASIC, see the [Microsoft BASIC-80 reference manual](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/Microsoft_BASIC-80.pdf?azure-portal=true).
+For more information on Microsoft BASIC, see the [Microsoft BASIC-80 reference manual](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/BASIC-80_MBASIC_Reference_Manual_text.pdf).
 
 Microsoft BASIC-80 is included on drive A.
 

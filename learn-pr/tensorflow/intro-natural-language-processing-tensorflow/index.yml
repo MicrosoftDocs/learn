@@ -17,7 +17,7 @@ abstract: |
   - Get an introduced to Recurrent Neural Networks (RNNs) and Generative Neural Networks (GNNs)
   - Learn about Attention Mechanisms
   - Learn how to build text classification models  
-iconUrl: /learn/achievements/tensor-natural-language-processing.svg
+iconUrl: /training/achievements/tensor-natural-language-processing.svg
 levels:
 - beginner
 roles:
@@ -29,6 +29,8 @@ products:
 prerequisites: |
   - Basic Python knowledge
   - Basic understanding of machine learning
+subjects:
+- natural-language-processing
 units:
 - learn.tensorflow.intro-natural-language-processing.introduction
 - learn.tensorflow.intro-natural-language-processing.representing-text

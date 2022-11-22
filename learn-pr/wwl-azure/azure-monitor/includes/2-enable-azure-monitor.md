@@ -35,7 +35,6 @@ Azure Event Hubs is a streaming platform and event ingestion service that can tr
 Within your Azure environment, there are several 'tiers' of monitoring data, and the method of accessing data from each tier varies slightly. Typically, these tiers can be described as:
 
  -  **Application monitoring data** \- Data about the performance and functionality of the code you have written and are running on Azure. Examples of application monitoring data include performance traces, application logs, and user telemetry. Application monitoring data is usually collected in one of the following ways:
-    
      -  By instrumenting your code with an SDK such as the **Application Insights SDK**.
      -  By running a monitoring agent that listens for new application logs on the machine running your application, such as the **Windows Azure Diagnostic Agent** or **Linux Azure Diagnostic Agent**.
  -  **Guest OS monitoring data** \- Data about the operating system on which your application is running. Examples of guest OS monitoring data would be Linux syslog or Windows system events. To collect this type of data, you need to install an agent such as the **Windows Azure Diagnostic Agent** or **Linux Azure Diagnostic Agent**.
@@ -45,14 +44,13 @@ Within your Azure environment, there are several 'tiers' of monitoring data, and
 
 Data from any tier can be sent into an event hub, where it can be pulled into a tool. Some sources can be configured to send data directly to an event hub while another process such as a Logic App may be required to retrieve the required data.
 
-### Connecting to Azure Sentinel
+### Connecting to Microsoft Sentinel
 
-Microsoft Sentinel is now generally available. With Azure Sentinel, enterprises worldwide can now keep pace with the exponential growth in security data, improve security outcomes without adding analyst resources, and reduce hardware and operational costs. Microsoft Sentinel brings together the power of Azure and AI to enable Security Operations Centers to achieve more.
+Microsoft Sentinel is now generally available. With Microsoft Sentinel, enterprises worldwide can now keep pace with the exponential growth in security data, improve security outcomes without adding analyst resources, and reduce hardware and operational costs. Microsoft Sentinel brings together the power of Azure and AI to enable Security Operations Centers to achieve more.
 
 Some of the features of Microsoft Sentinel are:
 
  -  **More than 100 built-in alert rules**
-    
      -  Sentinel's alert rule wizard to create your own.
      -  Alerts can be triggered by a single event or based on a threshold, or by correlating different datasets or by using built-in machine learning algorithms.
  -  **Jupyter Notebooks** that use a growing collection of hunting queries, exploratory queries, and python libraries.
@@ -60,6 +58,6 @@ Some of the features of Microsoft Sentinel are:
 
 The Microsoft Sentinel GitHub repository has grown to over 400 detection, exploratory, and hunting queries, plus Azure Notebooks samples and related Python libraries, playbooks samples, and parsers. The bulk of these were developed by Microsoft's security researchers based on their vast global security experience and threat intelligence.
 
-To on-board Azure Sentinel, you first need to enable Azure Sentinel, and then connect your data sources. Microsoft Sentinel comes with a number of connectors for Microsoft solutions, available out of the box and providing real-time integration, including **Microsoft Threat Protection solutions**, **Microsoft 365 sources**, including **Microsoft 365, Azure AD, Azure ATP**, and **Microsoft Cloud App Security**, and more. In addition, there are built-in connectors to the broader security ecosystem for non-Microsoft solutions. You can also use common event format, Syslog or REST-API to connect your data sources with Azure Sentinel.
+To on-board Microsoft Sentinel, you first need to enable Microsoft Sentinel, and then connect your data sources. Microsoft Sentinel comes with a number of connectors for Microsoft solutions, available out of the box and providing real-time integration, including **Microsoft Threat Protection solutions**, **Microsoft 365 sources**, including **Microsoft 365, Azure AD, Azure ATP**, and **Microsoft Cloud App Security**, and more. In addition, there are built-in connectors to the broader security ecosystem for non-Microsoft solutions. You can also use common event format, Syslog or REST-API to connect your data sources with Azure Sentinel.
 
 After you connect your data sources, choose from a gallery of expertly created dashboards that surface insights based on your data. These dashboards can be easily customized to your needs.

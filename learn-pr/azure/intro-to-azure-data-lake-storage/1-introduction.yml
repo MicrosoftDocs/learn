@@ -7,8 +7,8 @@ metadata:
   title: Introduction to Azure Data Lake Storage
   description: Introductory unit of the Introduction to Azure Data Lake Storage module.
   ms.date: 06/17/2021
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
 durationInMinutes: 5
 content: |

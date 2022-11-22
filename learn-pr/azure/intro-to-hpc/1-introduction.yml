@@ -3,9 +3,9 @@ uid: learn.intro-to-hpc.1-introduction
 metadata:
   title: Introduction
   description: In this unit, you'll learn about a business scenario that you can address by using high-performance computing services in Azure.
-  ms.date: 10/10/2019
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 09/23/2022
+  author: padmalathas
+  ms.author: padmalathas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction

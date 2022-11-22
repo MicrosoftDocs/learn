@@ -1,29 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.design-compute-solution
 metadata:
-  title: Design a compute solution
-  description: "Azure Architects design and recommend compute solutions."
-  ms.date: 12/14/2021
+  title: Design an Azure compute solution
+  description: "Design an Azure compute solution"
+  ms.date: 11/15/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Design a compute solution
-summary: Azure Architects design and recommend compute solutions.
+title: Design an Azure compute solution
+summary: Azure Architects design and recommend Azure compute solutions.
 abstract: |
-  In this module, you’ll learn how to:
-  - Choose a compute service.
-  - Design for Azure virtual machines solutions.
+  In this module, you learn how to:
+  - Choose an Azure compute service.
+  - Design for Azure Virtual Machines solutions.
   - Design for Azure Batch solutions.
-  - Design for Azure App Services solutions.
+  - Design for Azure App Service solutions.
   - Design for Azure Container Instances solutions.
   - Design for Azure Kubernetes Service solutions.
-  - Design for Azure Function solutions.
-  - Design for Azure Logic App solutions.
+  - Design for Azure Functions solutions.
+  - Design for Azure Logic Apps solutions.
 prerequisites: |
-  •	Conceptual knowledge of Azure compute solutions.
-  •	Working experience with virtual machines, containers, and app service.
-iconUrl: /learn/achievements/design-compute-solution.svg
+  - Conceptual knowledge of Azure compute solutions
+  - Working experience with virtual machines, Azure Storage containers, and Azure App Service
+iconUrl: /training/achievements/design-compute-solution.svg
 levels:
 - advanced
 roles:
@@ -33,6 +33,9 @@ products:
 - azure-batch
 - azure-container-instances
 - azure-virtual-machines
+subjects:
+- business-applications
+- infrastructure
 units:
 - learn.wwl.design-compute-solution.introduction
 - learn.wwl.design-compute-solution.choose-compute-service

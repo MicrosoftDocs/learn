@@ -5,8 +5,8 @@ metadata:
   description: Intrigued by quantum computing but don't know where to start? This learning path helps prepare you for this exciting next generation of computing.
   brand: azure
   ms.date: 09/20/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: dphansen
+  ms.author: davidph
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Quantum computing foundations
@@ -19,7 +19,7 @@ summary: |
 
   Welcome aboard!
 
-  <img src="/learn/quantum/qsharp-create-first-quantum-development-kit/media/spaceship-core.svg" alt="Spaceship of the quantum exploration crew." width="350" height="304"></img>
+  <img src="/training/quantum/qsharp-create-first-quantum-development-kit/media/spaceship-core.svg" alt="Spaceship of the quantum exploration crew." width="350" height="304"></img>
 
   After completing this learning path, you'll be able to:
   - Explain the fundamental concepts of quantum computing.
@@ -31,7 +31,7 @@ summary: |
   - Solve a job shop scheduling optimization problem.
 
 prerequisites: None
-iconUrl: /learn/achievements/quantum/quantum-computing-fundamentals.svg
+iconUrl: /training/achievements/quantum/quantum-computing-fundamentals.svg
 levels:
 - beginner
 - intermediate
@@ -40,6 +40,8 @@ roles:
 products:
 - qdk
 - azure-quantum
+subjects:
+- cloud-computing
 modules:
 - learn.quantum.get-started-azure-quantum
 - learn.quantum.qsharp-create-first-quantum-development-kit

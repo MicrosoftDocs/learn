@@ -7,11 +7,11 @@ In this demonstration, you'll learn to:
 - Schedule an update deployment programmatically.
 - Check deployment status.
 
->[!VIDEO https://aka.ms/manage-updates-for-your-azure-vms]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4zwXz]
 
 ## Next steps
 
-You can review the steps for this demonstration at [Manage updates and patches for your Azure VMs](https://docs.microsoft.com/azure/automation/update-management/manage-updates-for-vm)
+You can review the steps for this demonstration at [Manage updates and patches for your Azure VMs](/azure/automation/update-management/manage-updates-for-vm)
 
 If you want to repeat these steps, [get a free trial Azure subscription](https://aka.ms/Azure_free_account?azure-portal=true). 
 

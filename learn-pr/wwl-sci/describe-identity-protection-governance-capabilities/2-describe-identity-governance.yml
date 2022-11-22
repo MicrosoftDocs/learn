@@ -4,12 +4,13 @@ title: Describe identity governance in Azure AD
 metadata:
   title: Describe identity governance in Azure AD
   description: "Describe identity governance in Azure AD"
-  ms.date: 07/21/2021
+  ms.date: 04/02/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/2-describe-identity-governance.md)]

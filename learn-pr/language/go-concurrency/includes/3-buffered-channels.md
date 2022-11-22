@@ -199,7 +199,7 @@ The program clarifies each channel's intent in every function. If you try to use
 
 ```go
 func read(ch <-chan string) {
-    fmt.Printf("Receiving: %#v\n", <-ch
+    fmt.Printf("Receiving: %#v\n", <-ch)
     ch <- "Bye!"
 }
 ```

@@ -3,9 +3,16 @@ The process of adopting the cloud is a journey, not a destination. Along the way
 - **Define governance solutions for your cloud environment** that meet your organization's business needs, provide agility, and control risks.
 - **Manage your cloud environment based on the governance solutions** to allow it to evolve, grow, and adapt to your organization's changing business needs.
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this video to learn more.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to learn more.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3WHNC]
 
@@ -31,6 +38,7 @@ The goal of the Manage methodology is to maximize ongoing business returns by cr
 
 :::row:::
 ![Icon of key](../media/key-takeaway.png)
+
 :::column:::
 
 Here are the key points from this unit:

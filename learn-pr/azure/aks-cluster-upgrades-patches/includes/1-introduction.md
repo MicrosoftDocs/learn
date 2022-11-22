@@ -15,14 +15,17 @@ This must have happened because the deployment time took months to complete. Dur
 
 By the end of this module, you should be able to upgrade and apply patches to your AKS clusters to the latest supported versions.
 
+[!INCLUDE [azure-optional-exercise-subscription-prerequisite](../../../includes/azure-optional-exercise-subscription-prerequisite.md)]
+
 ## Learning objectives
 
-Upon completing this module, you should be able to: 
- - Understand what Kubernetes versions are supported by Azure Kubernetes Services (AKS)
- - Upgrade your existing Azure Kubernetes Services (AKS) clusters components to the latest supported Kubernetes version
- - Understand how to adopt a Blue/Green deployment to upgrade your Azure Kubernetes Services clusters in a production environment
- 
+Upon completing this module, you should be able to:
+
+- Understand what Kubernetes versions are supported by Azure Kubernetes Services (AKS)
+- Upgrade your existing Azure Kubernetes Services (AKS) clusters components to the latest supported Kubernetes version
+- Understand how to adopt a Blue/Green deployment to upgrade your Azure Kubernetes Services clusters in a production environment
+
 ## Prerequisites
 
-- A basic understanding of [containerization](/learn/modules/intro-to-docker-containers/). 
-- A basic understanding of [Azure Kubernetes Service](/learn/modules/intro-to-azure-kubernetes-service/).
+- A basic understanding of [containerization](/training/modules/intro-to-docker-containers/). 
+- A basic understanding of [Azure Kubernetes Service](/training/modules/intro-to-azure-kubernetes-service/).

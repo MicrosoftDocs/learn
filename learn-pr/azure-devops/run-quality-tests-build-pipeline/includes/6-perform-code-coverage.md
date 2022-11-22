@@ -1,4 +1,4 @@
-Much like the tool you use for unit testing, the tool you use for code coverage depends on the programming language and application framework you use.
+Much like the tool you use for unit testing, the tool you use for code coverage depends on the programming language and application framework.
 
 When you target .NET applications to run on Linux, [coverlet](https://github.com/tonerdo/coverlet?azure-portal=true) is a popular option. Coverlet is a cross-platform, code-coverage library for .NET. Before we add code coverage to the pipeline, let's check in with the team.
 
@@ -10,17 +10,17 @@ Amita feels much better. She's seeing actual progress in catching bugs and in ea
 
 **Andy:** That's cool. Sounds like we can establish a baseline and improve over time.
 
-**Mara:** That's right. Eventually we can even configure the build to fail if we don't meet a given threshold. That would help keep us honest. But for now, we can just see how much is covered.
+**Mara:** That's right. Eventually, we can even configure the build to fail if we don't meet a given threshold. That would help keep us honest. But for now, we can just see how much is covered.
 
-**Andy:** Great. Getting reports on how much code is covered by unit tests will help us to identify code paths that aren't covered. We can increase the coverage gradually, and that will help save us from feeling overwhelmed by how much there is to do.
+**Andy:** Great. Getting reports on how much code is covered by unit tests will help us to identify code paths that aren't covered. We can increase the coverage gradually, and that will help save us from feeling overwhelmed by how much there's to do.
 
-**Amita:** I'm really excited about the unit tests. I mostly do manual testing. I focus on the customer's perspective. I don't just look for bugs. I make sure the software does what it's specified to do, that the UI works, and that the user has a good experience.
+**Amita:** I'm excited about the unit tests. I mostly do manual testing. I focus on the customer's perspective. I don't just look for bugs. I make sure the software does what it's specified to do, that the UI works, and that the user has a good experience.
 
 **Mara:** That perspective is so important and definitely needs a human being. Right now, Andy and I are working on automated tests, software that tests the software. We're concentrating on tests that execute as the software moves through the build pipeline.
 
-That means the two types of tests we've already talked about. The unit tests test individual components and are really fast. Code coverage tells us how much of our code has associated unit tests.
+That means the two types of tests we've already talked about. The unit tests test individual components and are fast. Code coverage tells us how much of our code has associated unit tests.
 
-**Andy:** We should also think about doing lint testing from the command line, before the build. Lint testing can help us catch bugs, programming errors, and coding style problems really early.
+**Andy:** We should also think about doing lint testing from the command line before the build. Lint testing can help us catch bugs, programming errors, and coding style problems early.
 
 **Amita:** What about regression tests?
 
@@ -28,9 +28,9 @@ That means the two types of tests we've already talked about. The unit tests tes
 
 **Amita:** OK, so does that leave integration testing?
 
-**Andy:** Integration testing is a bit different. We do integration testing after the build, on the server. Although unit tests help you verify a single component like a function or method, integration testing verifies that multiple components work together. I don't think we're ready for integration tests quite yet. 
+**Andy:** Integration testing is a bit different. We do integration testing after the build, on the server. Although unit tests help you to verify a single component like a function or method, integration testing verifies that multiple components work together. I don't think we're ready for integration tests yet. 
 
-But at some point we also need to think about security and compliance. We should work with the security team to figure out how we can test against their security policies. I remember that was a concern of Tim's and I'd like to bring him into the process more.
+But at some point, we also need to think about security and compliance. We should work with the security team to figure out how we can test against their security policies. I remember that was a concern of Tim's and I'd like to bring him into the process more.
 
 **Mara:** Lots to do.
 
@@ -42,7 +42,7 @@ But at some point we also need to think about security and compliance. We should
 
 ## How is code coverage done in .NET?
 
-The way you collect code coverage depends on what programming language and frameworks you're using, as well as what code coverage tools are available.
+The way you collect code coverage depends on what programming language and frameworks you're using, and what code coverage tools are available.
 
 Mara and Andy do some investigation around code coverage for .NET applications. Here's what they find:
 
@@ -54,7 +54,7 @@ Mara and Andy do some investigation around code coverage for .NET applications. 
 
     Mara and Andy decide to try Cobertura.
 * To convert Cobertura coverage results to a format that's human-readable, they can use a tool called [ReportGenerator](https://github.com/danielpalme/ReportGenerator?azure-portal=true).
-* ReportGenerator provides a number of formats, including HTML. The HTML formats create detailed reports for each class in a .NET project.
+* ReportGenerator provides many formats, including HTML. The HTML formats create detailed reports for each class in a .NET project.
 
     Specifically, there's an HTML format called **HtmlInline_AzurePipelines**, which provides a visual appearance that matches Azure Pipelines.
 
@@ -68,9 +68,9 @@ A local tool is a more isolated copy of a .NET tool that's scoped to a specific 
 
 You use a _manifest file_ to manage local tools for a given directory. This file is in JSON format and is typically named *dotnet-tools.json*. A manifest file enables you to describe the specific tool versions that you need to build or run your application.
 
-When you include the manifest file in source control along with your application sources, developers and build systems can run the `dotnet tool restore` command to install all of the tools listed in the manifest file. When you need a newer version of a local tool, you simply update the version in the manifest file.
+When you include the manifest file in source control and your application sources, developers and build systems can run the `dotnet tool restore` command to install all of the tools listed in the manifest file. When you need a newer version of a local tool, you simply update the version in the manifest file.
 
-To keep things more isolated, in this module you work with local tools. You create a tool manifest that includes the `ReportGenerator` tool. You also modify your build pipeline to install the `ReportGenerator` tool to convert code coverage results to a human-readable format.
+To keep things more isolated, in this module you work with local tools. You create a tool manifest that includes the `ReportGenerator` Tool. You also modify your build pipeline to install the `ReportGenerator` Tool to convert code coverage results to a human-readable format.
 
 ## Run code coverage locally
 
@@ -101,6 +101,9 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
 1. Run the following `dotnet test` command to run your unit tests and collect code coverage:
 
+    > [!NOTE]
+    > If you are using the PowerShell terminal in Visual Studio, the line continuation character is a backtick (**`**). So, use that character in place of the backslash character (**\\**) for multi-line commands.
+
     ```dotnetcli
     dotnet test --no-build \
       --configuration Release \
@@ -109,7 +112,7 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
       /p:CoverletOutput=./TestResults/Coverage/
     ```
 
-    If the command fails, try running it like this:
+    If the command fails, try running it as follows:
 
     ```dotnetcli
     MSYS2_ARG_CONV_EXCL="*" dotnet test --no-build \
@@ -130,7 +133,7 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
       -reporttypes:HtmlInline_AzurePipelines
     ```
 
-    A number of HTML files appear in the *CodeCoverage* folder at the root of the project.
+    Many HTML files will appear in the *CodeCoverage* folder at the root of the project.
 1. In Visual Studio Code, expand the *CodeCoverage* folder, right-click *index.htm*, and then select **Reveal in Explorer** (**Reveal in Finder** on macOS or **Open Containing Folder** on Linux).
 1. In Windows Explorer (Finder on macOS), double-click *index.htm* to open it in a web browser.
 
@@ -148,7 +151,7 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
     :::image type="content" source="../media/6-coverage-class-details.png" alt-text="A screenshot of local class coverage detail with a visual representation of unit test coverage for two C# methods, one with all code lines green (covered) and one with all lines red (not covered).":::
 
-    This makes sense, because the `FetchOnlyRequestedGameRegion` test method calls the `GetItemsAsync` method but does not call the `CountItemsAsync` method. (To review the test code, see the *DocumentDBRepository_GetItemsAsyncShould.cs* file.)
+    This makes sense, because the `FetchOnlyRequestedGameRegion` test method calls the `GetItemsAsync` method but doesn't call the `CountItemsAsync` method. (To review the test code, see the *DocumentDBRepository_GetItemsAsyncShould.cs* file.)
 
 ## Create a branch
 
@@ -167,7 +170,7 @@ In this part, you create a branch named `code-coverage`, based on the `unit-test
 
 In this section, you add tasks that measure code coverage to your build pipeline.
 
-1. In Visual Studio Code, modify *azure-pipelines.yml* like this:
+1. In Visual Studio Code, modify *azure-pipelines.yml* as follows:
 
     [!code-yml[](code/6-azure-pipelines.yml?highlight=48-74)]
 
@@ -219,7 +222,7 @@ Although not required, here you add and commit each file separately so that each
 Here you see the tests run in the pipeline and then visualize the results from Azure Test Plans.
 
 1. In Azure Pipelines, trace the build through each of the steps.
-1. When the build finishes, navigate back to the summary page and select the **Code Coverage** tab.
+1. When the build finishes, go back to the summary page and select the **Code Coverage** tab.
 
     You view the same results that you did when you ran the tests locally.
 
@@ -264,11 +267,11 @@ Later, you can configure coverlet to check to see whether your tests provide a m
 
 ## Remove code coverage files
 
-Recall that when you ran `Reportgenerator` earlier, a number of HTML files appeared in the *CodeCoverage* folder at the root of the project.
+Recall that when you ran `Reportgenerator` earlier, many HTML files appeared in the *CodeCoverage* folder at the root of the project.
 
-These HTML files are not intended to be included in source control, and you no longer need them. Although the project's *.gitignore* file is already set up to ignore anything in the *CodeCoverage* directory, it's a good idea to delete these files so that they're not added to your Git repository in future modules.
+These HTML files aren't intended to be included in source control, and you no longer need them. Although the project's *.gitignore* file is already set up to ignore anything in the *CodeCoverage* directory, it's a good idea to delete these files so that they're not added to your Git repository in future modules.
 
-In Visual Studio Code, go to the terminal window and then, in your project's root directory, run this command:
+In Visual Studio Code, go to the terminal window, and then, in your project's root directory, run this command:
 
 ```bash
 rm -rf CodeCoverage/

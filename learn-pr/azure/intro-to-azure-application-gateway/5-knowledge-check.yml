@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-application-gateway.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 02/16/2022
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.custom: team=cloud_advocates
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: Which of the following Azure Application Gateway features can protect web applications against SQL injection attacks?
+      choices:
+        - content: Health probes
+          isCorrect: false
+          explanation: Incorrect. Health probes allow the application gateway to determine which hosts in the back-end pool are no longer responding.
+        - content: TLS/SSL termination
+          isCorrect: false
+          explanation: Incorrect. TLS/SSL termination offloads the encryption and decryption operations of TLS/SSL onto the application gateway.
+        - content: Web application firewall
+          isCorrect: true
+          explanation: Correct. A web application firewall allows you to protect against SQL injection and other attacks.          
+    - content: You have a back-end pool made up of four Azure infrastructure as a service (IaaS) virtual machines. Occasionally, one or more of these virtual machines might become temporarily unresponsive. You want to ensure that Application Gateway doesn't forward traffic to an unresponsive virtual machine, even if you're unaware that a problem exists. Which Application Gateway feature can prevent traffic from forwarding to an unresponsive virtual machine?
+      choices: 
+        - content: Health probes
+          isCorrect: true
+          explanation: Correct. Health probes allow the application gateway to determine which hosts in the back-end pool are no longer responding.          
+        - content: Web application firewall
+          isCorrect: false
+          explanation: Incorrect. A web application firewall allows you to protect against SQL injection and other attacks.          
+        - content: Connection draining
+          isCorrect: false
+          explanation: Incorrect. Connection draining allows you to deregister an instance in a back-end pool so that it doesn't receive any new traffic. It doesn't detect whether an instance in the back-end pool has become unresponsive.          
+    - content: You have a back-end pool made up of eight Azure IaaS virtual machines. You need to install a new framework on each of these virtual machines. You don't want the virtual machine to participate in the back-end pool while you do this maintenance operation. You want to stop new connections from occurring on the VM that you'll do maintenance on, and you also want to allow any existing connections that are present to complete naturally. Which of the following Azure Application Gateway features can you use to accomplish this goal?
+      choices:
+        - content: Session affinity
+          isCorrect: false
+          explanation: Incorrect. Session affinity ensures that a client connection to a web application always is served by the same back-end pool host.      
+        - content: Connection draining
+          isCorrect: true
+          explanation: Correct. Connection draining allows you to deregister an instance in a back-end pool so that it doesn't receive any new traffic. Connection draining is useful in maintenance scenarios during which you want to gracefully remove traffic from a node.      
+        - content: Health probes
+          isCorrect: false
+          explanation: Incorrect. Health probes allow the application gateway to determine which hosts in the back-end pool are no longer responding.
+          

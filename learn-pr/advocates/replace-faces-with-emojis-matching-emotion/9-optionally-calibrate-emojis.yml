@@ -4,8 +4,8 @@ metadata:
   title: Optionally calibrate emojis
   description: Learn how to fine-tune your face to work as data for the Face API.
   ms.date: 10/18/2018
-  author: adrianstevens
-  ms.author: adsteven
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Optionally calibrate emojis

@@ -1,4 +1,4 @@
-Adatum's management team is requesting support for additional customer needs for automated monitoring, alerting, and self-servicing of smart appliances. Your development team wants to address these needs by gradually extending the capabilities of recently developed cloud-native applications. To accomplish this goal, you decided to explore the functionality of Azure IoT Central. 
+Adatum's management team is requesting support for more customer needs for automated monitoring, alerting, and self-servicing of smart appliances. Your development team wants to address these needs by gradually extending the capabilities of recently developed cloud-native applications. To accomplish this goal, you decided to explore the functionality of Azure IoT Central. 
 
 ## What is Azure IoT Central?
 
@@ -27,7 +27,7 @@ Azure IoT Central architecture includes the following core components:
   - A stream processor consumes device telemetry, transforms it according to configurable algorithms, and places it into a data store.
   - A web-based portal provides an inventory of managed devices, features an intuitive management interface, and displays predefined and custom-built graphs and dashboards.
   - Data stores host device templates, their identities and metadata, user and user role definitions, and collected telemetry.
-  - Integration components provide the ability to define rule-based actions and implement continuous and interval-based data export.
+  - Integration components can define rule-based actions and implement continuous and interval-based data export.
   - The REST API interface provides programmatic access to Azure IoT Central features, including device management and data analytics. In addition, you can use a command-line interface for automation and management at scale.
 
 Azure IoT Central architecture includes the following optional components:
@@ -59,13 +59,13 @@ The core capabilities of Azure IoT Central include:
 - Individual and bulk device provisioning, with built-in authentication and access control provisions.
 - Monitoring device activities and state.
 - Remote management of device firmware.
-- Continuous or interval-based export of telemetry data to Azure and external services for additional processing or long-term storage.
+- Continuous or interval-based export of telemetry data to Azure and external services for more processing or long-term storage.
 - Customizable rules engine processing device and telemetry data, allowing you to trigger alerts and remediation tasks in response to an abnormal condition.
 - Authentication and authorization that's based on built-in support for identity management and RBAC.
 
 One of the core concepts of Azure IoT Central is an application. This term represents a collection of components that allow you to control operational aspects of configuration, management, maintenance, and analytics of an IoT solution. Microsoft offers many predefined application templates that illustrate the most common IoT use cases in four main categories: retail, energy, government, and healthcare. The purpose of application templates is to assist with developing IoT solutions. Each of them constitutes a ready-to-use product with sample dashboards, device templates, simulated devices producing real-time data, preconfigured rules, and jobs. For each, you have access to detailed documentation, which you can rely on if you decide to further customize the corresponding application to meet your specific needs.
 
-Device templates constitute blueprints for IoT devices. They define the device model, consisting of physical characteristics of the device, and their virtual representation in an Azure IoT Central application. In particular, the device model includes device capabilities that designate telemetry, properties, and commands that are available for a particular device type. Cloud properties allow you to assign additional metadata to the virtual representation of individual devices in the cloud, regardless of the supported physical capabilities.
+Device templates constitute blueprints for IoT devices. They define the device model, consisting of physical characteristics of the device, and their virtual representation in an Azure IoT Central application. In particular, the device model includes device capabilities that designate telemetry, properties, and commands that are available for a particular device type. Cloud properties allow you to assign more metadata to the virtual representation of individual devices in the cloud, regardless of the supported physical capabilities.
 
 ## What is the role of Azure IoT Central in designing and implementing cloud-native applications?
 

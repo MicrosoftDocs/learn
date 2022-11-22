@@ -4,8 +4,8 @@ metadata:
   title: Publish a function to Azure using Core Tools
   description: In this unit, you'll see how to create a function app in Azure and use the Core Tools to publish your functions project to it.
   ms.date: 12/11/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Publish a function to Azure using Core Tools

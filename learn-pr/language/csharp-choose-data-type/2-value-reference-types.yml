@@ -5,8 +5,8 @@ metadata:
   title: Value types and reference types
   description: Learn how the computer stores data differently based on whether it's declared as a value versus a reference type.
   ms.date: 09/05/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

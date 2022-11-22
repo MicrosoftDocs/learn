@@ -18,7 +18,7 @@ The package contains the following folders:
 
 ## Autoruns
 
-Contains set of files that each represent the content of the registry of a known auto start entry point (ASEP) to help identify attacker’s persistency on the device.  If the registry key is not found, the file will contain the following message: “ERROR: The system was unable to find the specified registry key or value.”
+Contains set of files that each represent the content of the registry of a known auto start entry point (ASEP) to help identify attacker’s persistency on the device.  If the registry key isn't found, the file will contain the following message: “ERROR: The system was unable to find the specified registry key or value.”
 
 ## Installed programs
 
@@ -44,7 +44,7 @@ This folder contains a set of data points related to the connectivity informatio
 
 Windows Prefetch files are designed to speed up the application startup process. It can be used to track all the files recently used in the system and find traces for applications that might have been deleted but can still be found in the prefetch file list.
 
-- Prefetch folder – Contains a copy of the prefetch files from %SystemRoot%\Prefetch. It is suggested to download a prefetch file viewer to view the prefetch files.
+- Prefetch folder – Contains a copy of the prefetch files from %SystemRoot%\Prefetch. It's suggested to download a prefetch file viewer to view the prefetch files.
 
 - PrefetchFilesList.txt – Contains the list of all the copied files that can be used to track if there were any copy failures to the prefetch folder.
 
@@ -74,7 +74,7 @@ Contains a SystemInformation.txt file that lists system information such as OS v
 
 ## Temp directories
 
-Contains a set of text files that lists the files located in %Temp% for every user in the system.  This can help to track suspicious files that an attacker may have dropped on the system.  If the file contains the following message: “The system cannot find the path specified”, it means that there is no temp directory for this user, and might be because the user didn’t sign in to the system.
+Contains a set of text files that lists the files located in %Temp% for every user in the system.  This can help to track suspicious files that an attacker may have dropped on the system.  If the file contains the following message: “The system can't find the path specified”, it means that there's no temp directory for this user, and might be because the user didn’t sign in to the system.
 
 ## Users and groups
 
@@ -86,4 +86,4 @@ Provides the MpCmdRunLog.txt and MPSupportFiles.cab.
 
 ## CollectionSummaryReport.xls
 
-This file is a summary of the investigation package collection, it contains the list of data points, the command used to extract the data, the execution status, and the error code if there is failure. You can use this report to track if the package includes all the expected data and identify if there were any errors.
+This file is a summary of the investigation package collection, it contains the list of data points, the command used to extract the data, the execution status, and the error code if there's failure. You can use this report to track if the package includes all the expected data and identify if there were any errors.

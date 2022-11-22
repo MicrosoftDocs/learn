@@ -3,9 +3,9 @@ uid: learn.introduction-to-azure-virtual-machines
 metadata:
   title: Introduction to Azure virtual machines
   description: Learn about the decisions you make before creating a virtual machine, the options to create and manage the VM, and the extensions and services you use to manage your VM.
-  ms.date: 09/24/2018
-  author: cryophobia
-  ms.author: chrvaw
+  ms.date: 09/13/2022
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure virtual machines
@@ -16,7 +16,7 @@ abstract: |
   - Describe the options to create and manage virtual machines
   - Describe the additional services available to administer virtual machines
 prerequisites: None
-iconUrl: /learn/achievements/intro-to-azure-virtual-machines.svg
+iconUrl: /training/achievements/intro-to-azure-virtual-machines.svg
 levels:
 - beginner
 roles:
@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.introduction-to-azure-virtual-machines.1-introduction
 - learn.introduction-to-azure-virtual-machines.2-compile-a-checklist-for-creating-a-vm

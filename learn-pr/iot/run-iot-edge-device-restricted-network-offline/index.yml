@@ -8,6 +8,10 @@ metadata:
   ms.author: abartolo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - abartolo-04302020
 title: Run an IoT Edge device in a restricted network and offline
 summary: >
   This module is theoretical and will walk you through how an IoT Edge device can be harnessed as a gateway to child devices and can store captured information if connectivity is unavailable.
@@ -24,9 +28,9 @@ prerequisites: |
   - An introductory knowledge of the purpose of Azure IoT
   -	Ability to navigate Azure IoT portal 
   -	Experience using Visual Studio, or Visual Studio Code, at the beginner level 
-### iconUrl: /learn/achievements/generic-badge.svg
-### iconUrl: /learn/achievements/iot/iot-hub-conveyor-belt-vibration-detection.svg
-iconUrl: /learn/achievements/run-iot-edge-device-restricted-network-offline.svg
+### iconUrl: /training/achievements/generic-badge.svg
+### iconUrl: /training/achievements/iot/iot-hub-conveyor-belt-vibration-detection.svg
+iconUrl: /training/achievements/run-iot-edge-device-restricted-network-offline.svg
 ### hidden: true
 ratingEnabled: true
 levels:
@@ -36,6 +40,8 @@ roles:
 - administrator
 products:
 - azure-iot-edge
+subjects:
+- iot
 units:
 - learn.iot.run-iot-edge-device-restricted-network-offline.introduction
 - learn.iot.run-iot-edge-device-restricted-network-offline.deploy-enabled-linux-vm

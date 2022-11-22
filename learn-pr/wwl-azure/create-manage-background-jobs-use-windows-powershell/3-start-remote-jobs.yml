@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-background-jobs-use-windows-powershell.start-remote-jobs
+title: Start remote jobs and CIM/WMI jobs in Windows PowerShell
+metadata:
+  title: Start remote jobs and CIM/WMI jobs in Windows PowerShell
+  description: "Start remote jobs and CIM/WMI jobs in Windows PowerShell"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-start-remote-jobs.md)]

@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-  uid: learn.student-evangelism.python-flask-build-ai-web-app.7-summary
+uid: learn.student-evangelism.python-flask-build-ai-web-app.7-summary
+title: Summary
+metadata:
   title: Summary
-  metadata:
-    title: Summary
-    description: Summary of lessons learned.
-    ms.date: 10/23/2020
-    author: GeekTrainer
-    ms.author: chnoring
-    ms.topic: interactive-tutorial
-    ms.prod: learning-python
-    ms.custom: team=nextgen
-  durationInMinutes: 5
-  content: |
-    [!include[](includes/7-summary.md)]
+  description: Summary of lessons learned.
+  ms.date: 04/08/2022
+  author: acomfort248
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+  ms.custom: team=nextgen
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-summary.md)]

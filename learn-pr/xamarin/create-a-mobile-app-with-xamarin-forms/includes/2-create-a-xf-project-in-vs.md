@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 The pattern most often used for mobile app development is to develop twice. Once for Android and once for iOS. This involves dealing with not only separate SDKs, but altogether different languages and toolsets.
 
 Xamarin.Forms allows you to work in one integrated development environment, with one language. You create your UI once, and both iOS and Android use that UI definition, including the actions and events you code. Unlike some other cross-platform solutions, Xamarin.Forms isn't rendered in a webview. Instead, internally it uses the Android SDK or the iOS SDK to create native controls for native performance.

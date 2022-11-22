@@ -24,10 +24,10 @@ _Parameter files_ make it easy to specify parameter values together as a set. Wi
       "value": [
         {
           "locationName": "australiaeast"
-        }
+        },
         {
           "locationName": "southcentralus"
-        }
+        },
         {
           "locationName": "westeurope"
         }

@@ -2,7 +2,7 @@ In this module, you learned how Tailwind Traders can take advantage of several c
 
 ## Learn more
 
- -  [Discuss Azure fundamental concepts](/learn/modules/fundamental-azure-concepts/)
+ -  [Discuss Azure fundamental concepts](/training/modules/fundamental-azure-concepts/)
  -  [Examples of fiscal outcomes](/azure/cloud-adoption-framework/strategy/business-outcomes/fiscal-outcomes)
  -  [What is cloud computing? A beginner's guide](https://azure.microsoft.com/overview/what-is-cloud-computing/)
  -  [What are public, private, and hybrid clouds?](https://azure.microsoft.com/overview/what-are-private-public-hybrid-clouds/)

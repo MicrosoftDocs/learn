@@ -2,10 +2,10 @@
 uid: learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm
 metadata:
   title: Build and run a web application with the MEAN stack on an Azure Linux virtual machine
-  description: Learn how to decide if the MEAN stack (MongoDB, Express.js, AngularJS, and Node.js) is a good choice for you and set up a MEAN-based web application on a new Azure Linux virtual machine. 
+  description: Learn how to decide if the MEAN stack (MongoDB, Express.js, AngularJS, and Node.js) is a good choice for you and set up a MEAN-based web application on a new Azure Linux virtual machine.
   ms.date: 09/24/2018
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build and run a web application with the MEAN stack on an Azure Linux virtual machine
@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Experience using Bash from the command-line
   - Familiarity or interest in using JavaScript to build web applications
-iconUrl: /learn/achievements/build-a-web-app-with-mean-on-a-linux-vm.svg
+iconUrl: /training/achievements/build-a-web-app-with-mean-on-a-linux-vm.svg
 levels:
 - beginner
 roles:
@@ -29,6 +29,8 @@ products:
 - azure
 - azure-virtual-machines
 - azure-cloud-shell
+subjects:
+- virtual-machine
 units:
 - learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.1-introduction
 - learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.2-decide-if-mean-is-right-for-you

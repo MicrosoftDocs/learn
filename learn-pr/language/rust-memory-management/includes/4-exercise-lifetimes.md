@@ -1,4 +1,4 @@
-In this exercise, you'll reimplement the `copy_and_return` function so that it returns a reference to the value inserted in the vector. Leave the `main` function as it is. You'll know your task is complete when the code run and all the assertions pass.
+In this exercise, you'll reimplement the `copy_and_return` function so that it returns a reference to the value inserted in the vector. Leave the `main` function as it is. You'll know your task is complete when the code runs and all the assertions pass.
 
 ```rust
 // TODO: modify only this function.

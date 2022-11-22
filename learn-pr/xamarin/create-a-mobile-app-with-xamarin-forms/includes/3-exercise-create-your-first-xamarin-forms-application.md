@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In this exercise, we'll create our first Xamarin.Forms solution. We'll add to this solution later to create our custom user interface and add functionality.
 
 ## Create a new project

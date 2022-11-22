@@ -4,12 +4,13 @@ title: Configure Server Core using Sconfig
 metadata:
   title: Configure Server Core using Sconfig
   description: "Configure Server Core using Sconfig"
-  ms.date: 02/26/2021
+  ms.date: 06/14/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-windows-server
 azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/3-configure-server-core-using-sconfig.md)]

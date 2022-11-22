@@ -7,7 +7,7 @@ metadata:
   description: Explanation of authentication and authorization concepts in Azure Active Directory
   ms.date: 06/11/2021
   author: navyasric
-  ms.author: nacanuma
+  ms.author: navyasric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

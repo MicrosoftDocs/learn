@@ -1,26 +1,23 @@
-In this exercise, we will create a simple modal dialog that can be included and referenced in other Blazor applications.
+In this exercise, you'll create a modal dialog in a Razor class library that you can reuse in the default Blazor template application.
 
-![Screenshot of our desired modal dialog presented in the standard Blazor template application](../media/first-modal.png)
+![Screenshot of the modal dialog to be created in the standard Blazor template application.](../media/first-modal.png)
 
-Our outcome of this exercise will be a reusable modal dialog in a Razor class library that we use in the default Blazor template application.
-
-## Create the Razor class library Project
+## Create the Razor class library project
 
 [!include[](../../../includes/dotnet6-sdk-version.md)]
 
-Let's first create the Razor Class library project for a modal dialog component.  You can use Visual Studio to create a new project or you can create the project in a new folder with the .NET Command-line tool as follows:
+To begin, create the Razor class library project for a modal dialog component. You can use Visual Studio to create a new project, or you can create the project in a new folder with the .NET command-line tool, as shown here:
 
 ```dotnetcli
 dotnet new razorclasslib -o FirstClassLibrary -f net6.0
 ```
 
-## Build the Modal Dialog Component
+## Build the modal dialog component
 
-Next, we will build the `Modal` component in our project with an appropriate CSS file to go with it and provide an initial format.
+Next, build the modal component in your project with an appropriate CSS file to go with it, and provide an initial format.
 
-
-1. Rename the `Component1.razor` file to `Modal.razor` and the `Component1.razor.css` file to `Modal.razor.css`.  This file contains the component we will create and in the future you can add blank text files to your project and format them with content for razor or CSS appropriately.
-1. Add the following razor content to the Modal.razor file
+1. Rename the *Component1.razor* file to *Modal.razor* and the `Component1.razor.css` file to *Modal.razor.css*. The *Modal.razor* file contains the component you'll create, and in the future you can add blank text files to your project and format them with content for Razor or CSS appropriately.
+1. Add the following Razor content to the *Modal.razor* file:
 
     ```razor
     @if (Show) {
@@ -69,9 +66,13 @@ Next, we will build the `Modal` component in our project with an appropriate CSS
     }
     ```
 
-    This component has several nice features that we want to share between our projects.  It allows for a `Title`, Cancel, and Confirm button labels to be configured, inner content of the component to be set through the `ChildContent` parameter, control the display or hidden state of the dialog with the `Show` parameter and handle the click events of the two buttons.
-
-1. Add the following CSS to the `Modal.razor.css` file to provide default formatting for the component:
+    This component has several nice features that you can share between your projects: 
+    * A title.
+    * **Cancel** and **Confirm** buttons, with labels you can configure and click events you can manage.
+    * You can set the inner content of the component through the `ChildContent` parameter.
+    * You can control the display state of the dialog with the `Show` parameter.
+    
+1. To provide default formatting for the component, add the following CSS to the *Modal.razor.css* file:
 
     ```css
     .dialog-container {
@@ -149,33 +150,33 @@ Next, we will build the `Modal` component in our project with an appropriate CSS
     }
     ```
 
-    This markup gives some default coloring to a title bar and button bar at the bottom, making it more interesting than a simple set of grey colored HTML elements.
+    This Markup gives some default coloring to a title bar and button bar at the bottom, making it more interesting than a simple set of gray-colored HTML elements.
 
-## Reference and Use the Modal Component
+## Reference and use the modal component
 
-With the `Modal` component residing in the `FirstClassLibrary` project, let's add a new Blazor Server application and start using the `Modal` component. 
+With the modal component now residing in the *FirstClassLibrary* project, add a new Blazor server application and start using the modal component. 
 
-1. Create a new Blazor Server project called `MyBlazorServer` in a folder next to the `FirstClassLibrary` project by either using the Visual Studio Add New Project feature or executing the following at the command line:
+1. Create a new Blazor server project called *MyBlazorServer* in a folder next to the *FirstClassLibrary* project either by using the Visual Studio Add New Project feature or by running the following command:
 
     ```dotnetcli
     dotnet new blazorserver -o MyBlazorServer -f net6.0
     ```
 
-1. In the `MyBlazorServer` project, let's add reference to the `FirstClassLibrary` project by using the Visual Studio Add Reference feature or we can execute the following command from the `MyBlazorServer` folder:
+1. In the *MyBlazorServer* project, add a reference to the *FirstClassLibrary* project either by using the Visual Studio Add Reference feature or by running the following command from the *MyBlazorServer* folder:
 
     ```dotnetcli
     dotnet add reference ../FirstClassLibrary
     ```
 
-    This project reference allows the `MyBlazorServer` application to interact with the components in the `FirstClassLibrary` project.
+    With this project reference in place, the *MyBlazorServer* application can interact with the components in the *FirstClassLibrary* project.
 
-1. Let's make it easier to reference the `Modal` component by adding an entry to the end of the `_Imports.razor` file in the `MyBlazorServer` application.  This allows us to reference the `Modal` component without specifying the entire namespace for the component.
+1. Make it easier to reference the modal component by adding an entry to the end of the *_Imports.razor* file in the *MyBlazorServer* application. By doing so, you can reference the modal component without having to specify the entire namespace for the component.
 
     ```dotnetcli
     @using FirstClassLibrary
     ```
 
-1. Now we can add a `Modal` component to the opening page of this application.  Let's add that component and give it a title 'My first Modal dialog' with some content in a paragraph to be presented inside the dialog.  Also, we will want to set the dialog to be shown by using the `Show` parameter.
+1. Add a modal component to the opening page of this application.
 
     ```razor
     <Modal Title="My first Modal dialog" Show="true">
@@ -184,10 +185,12 @@ With the `Modal` component residing in the `FirstClassLibrary` project, let's ad
      </p>
     </Modal>
     ```
+   a. Give the component a title, "My first Modal dialog."  
+   b. Add a short paragraph to be displayed inside the dialog. This content describes the purpose of the dialog.  
+   c. Set the dialog to be visible by using the `Show` parameter.
 
 ## Check your work
 
-1. Run the `MyBlazorServer` application and open it in your browser.
-1. You should be greeted with the 'My first Modal dialog' dialog overlaying the rest of the content on screen.
+Open the *MyBlazorServer* application in your browser. The **My first Modal dialog** dialog should be displayed in front of the rest of the content on the screen.
 
-![Screenshot of the desired modal dialog presented in the standard Blazor template application](../media/first-modal.png)
+![Screenshot of the modal dialog you've just created in the standard Blazor template application.](../media/first-modal.png)

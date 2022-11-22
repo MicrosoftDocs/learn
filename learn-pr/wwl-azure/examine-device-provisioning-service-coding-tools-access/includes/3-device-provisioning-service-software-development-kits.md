@@ -134,9 +134,7 @@ X.509 certificates can be used as an attestation mechanism to scale production a
 
  -  For production environment, we recommend purchasing an X.509 CA certificate from a public root certificate authority.
  -  For testing environment, you can generate an X.509 root certificate or X.509 certificate chain using:
-    
      -  OpenSSL: You can use scripts for certificate generation:
-        
          -  Node.js
          -  PowerShell or Bash
      -  Device Identity Composition Engine (DICE) Emulator: DICE can be used for cryptographic device identity and attestation based on TLS protocol and X.509 client certificates.

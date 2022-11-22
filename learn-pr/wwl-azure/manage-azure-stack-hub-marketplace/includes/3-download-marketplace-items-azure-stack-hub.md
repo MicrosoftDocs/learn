@@ -24,12 +24,12 @@ A connected deployment allows you to use the administrator portal to download ma
 
 4.  Each line item also shows the currently available version. If more than one version of a Marketplace item is available, the **Version** column shows Multiple.
     
-    :::image type="content" source="../media/stack-marketplace-items-image-3-429a5629.png" alt-text="Screenshot that shows the available versions of a Marketplace item."lightbox="../media/stack-marketplace-items-image-3-429a5629.png":::
+    :::image type="content" source="../media/stack-marketplace-items-image-3-429a5629.png" alt-text="Screenshot that shows the available versions of a Marketplace item.":::
     
 
 5.  If the version of an item is shown as **Multiple**, you can select that item and then choose a specific version.
     
-    :::image type="content" source="../media/stack-marketplace-items-image-4-d8da0e31.png" alt-text="Add item from Azure."lightbox="../media/stack-marketplace-items-image-4-d8da0e31.png":::
+    :::image type="content" source="../media/stack-marketplace-items-image-4-d8da0e31.png" alt-text="Add item from Azure.":::
     
 
 6.  Select the item you want, and then select **Download**. After the download completes, you can deploy the new marketplace item as either an Azure Stack Hub operator or a user.

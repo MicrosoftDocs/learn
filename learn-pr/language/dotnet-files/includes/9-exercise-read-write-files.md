@@ -14,13 +14,13 @@ In this exercise, you'll complete the project by reading the .json files, adding
 
 ## Preparation for sales data
 
-1. At the top of `Program.cs`, add `using Newtonsoft.Json`.
+1. At the top of `Program.cs`, add `using Newtonsoft.Json`:
 
     ```csharp
     using Newtonsoft.Json;
     ```
 
-1. In `Program.cs` directly under the `FindFiles` method, add a new `record` that will model the *sales.json* data.
+1. In `Program.cs` directly under the `FindFiles` method, [add a new `record`](/dotnet/csharp/language-reference/builtin-types/record/) that will model the *sales.json* data:
 
     ```csharp
     record SalesData (double Total);
@@ -28,7 +28,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
 
 ## Create a method to calculate sales totals
 
-1. In `Program.cs`, create a new function that will calculate the sales total. This method should take an `IEnumerable<string>` of file paths that it can iterate over.
+1. In `Program.cs`, just before the `record` line that you added in the previous step, create a new function that will calculate the sales total. This method should take an `IEnumerable<string>` of file paths that it can iterate over.
 
     ```csharp
     double CalculateSalesTotal(IEnumerable<string> salesFiles)
@@ -41,7 +41,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
     }
     ```
 
-1. Within that method, replace `// READ FILES LOOP` with a loop that iterates over the `salesFiles`, reads the file, parses the content as JSON, and then increments the `salesTotal` variable with the `total` value from the file.
+1. Within that method, replace `// READ FILES LOOP` with a loop that iterates over the `salesFiles`, reads the file, parses the content as JSON, and then increments the `salesTotal` variable with the `total` value from the file:
 
     ```csharp
     double CalculateSalesTotal(IEnumerable<string> salesFiles)
@@ -67,7 +67,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
 
 ## Call the CalculateSalesTotals method
 
-1. In the `Program.cs` file, add a call to the `CalculateSalesTotal` function just above the `File.WriteAllText` call.
+1. In the `Program.cs` file, add a call to the `CalculateSalesTotal` function just above the `File.WriteAllText` call:
 
     ```csharp
     var currentDirectory = Directory.GetCurrentDirectory();
@@ -105,13 +105,13 @@ In this exercise, you'll complete the project by reading the .json files, adding
 
 ## Run the program
 
-1. Run the program from the terminal.
+1. Run the program from the terminal:
 
     ```bash
     dotnet run
     ```
 
-   There's no output from the program. If you look in the *salesTotalsDir/totals.txt* file, you'll see the total of all the sales from the *sales.json* file.
+   There's no output from the program. If you look in the *salesTotalDir/totals.txt* file, you'll find the total of all the sales from the *sales.json* file.
 
 1. Run the program from the terminal again.
 
@@ -119,7 +119,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
     dotnet run
     ```
 
-1. Select the *salesTotalsDir/totals.txt* file.
+1. Select the *salesTotalDir/totals.txt* file.
 
    The *totals.txt* file now has a second line. Every time you run the program, the totals are added up again and a new line is written to the file.
 
@@ -127,7 +127,7 @@ Outstanding work! You've written a smart, robust, and handy tool that Tailwind T
 
 ## Got stuck?
 
-If you got stuck during this exercise, here's the full code for this project.
+If you got stuck during this exercise, here's the full code for this project:
 
 ```csharp
 using Newtonsoft.Json; 

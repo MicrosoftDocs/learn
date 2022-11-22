@@ -14,11 +14,11 @@ rock_samples.head()
 
 |   | ID | Mission | Type | Subtype | Weight (g) | Pristine (%) |
 |---|---|---|---|---|---|---|
-| 0 | 10001 | Apollo11 | Soil | Unsieved | 0.125 | 88.36 |
-| 1 | 10002 | Apollo11 | Soil | Unsieved | 5.6290 | 93.73 |
-| 2 | 10003 | Apollo11 | Basalt | Ilmenite | 0.2130 | 65.56 |
-| 3 | 10004 | Apollo11 | Core | Unsieved | 0.0448 | 71.76 |
-| 4 | 10005 | Apollo11 | Core | Unsieved | 0.0534 | 40.31 |
+| **0** | 10001 | Apollo11 | Soil | Unsieved | 0.125 | 88.36 |
+| **1** | 10002 | Apollo11 | Soil | Unsieved | 5.6290 | 93.73 |
+| **2** | 10003 | Apollo11 | Basalt | Ilmenite | 0.2130 | 65.56 |
+| **3** | 10004 | Apollo11 | Core | Unsieved | 0.0448 | 71.76 |
+| **4** | 10005 | Apollo11 | Core | Unsieved | 0.0534 | 40.31 |
 
 Here we first modified the values in the **Weight (g)** column to be the same value multiplied by 0.001. Then we modified the name of the column to be more accurate by changing it to **Weight (kg)**.
 

@@ -76,7 +76,7 @@ Now, you have a docker image with the YOLO model. Before you can push an image t
    [![The illustration shows how to login docker.](../media/docker-login.png)](../media/docker-login.png#lightbox)
 
 3. Tag the image using the **docker tag** command. Replace
-<login-server> with the login server name of your ACR instance.
+\<login-server\> with the login server name of your ACR instance.
 
    ```
    docker tag <original-image-name:tag> <registry-name>.azurecr.io/<image-name:tag>
@@ -84,7 +84,7 @@ Now, you have a docker image with the YOLO model. Before you can push an image t
 
    [![The illustration shows how to a docker image.](../media/tag-image.png)](../media/tag-image.png#lightbox)
 
-4. Use **docker push** to push the image to the registry instance. Replace <login-server> with the login server name of your registry instance.
+4. Use **docker push** to push the image to the registry instance. Replace \<login-server\> with the login server name of your registry instance.
 
    ```
    docker push <registry-name>.azurecr.io/<image-name:tag>

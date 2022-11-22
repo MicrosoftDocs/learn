@@ -5,8 +5,8 @@ metadata:
   title: Generalize a server
   description: Generalize a server
   ms.date: 03/18/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

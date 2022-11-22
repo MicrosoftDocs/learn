@@ -1,7 +1,7 @@
 For some computational tasks, quantum computing provides exponential speedups. These speedups are possible thanks to three phenomena from
 quantum mechanics: superposition, interference, and entanglement.
 
-In the [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) module, you used superposition to generate random numbers from qubits. In this part, you'll learn more about superposition.
+In the [Create your first Q# program by using the Quantum Development Kit](/training/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) module, you used superposition to generate random numbers from qubits. In this part, you'll learn more about superposition.
 
 ## Quantum computers are quantum systems
 
@@ -74,9 +74,7 @@ $$|\psi\rangle=a |\psi_1\rangle+b|\psi_2\rangle.$$
 This linear combination of $ |\psi_1\rangle$ and $|\psi_2\rangle$ is called a
 superposition of $ |\psi_1\rangle$ and $|\psi_2\rangle$. Here, $a$ and $b$ are the
 probability amplitudes of $ |\psi_1\rangle$ and $|\psi_2\rangle$, respectively.
-Remember that in the module [Create your first Q# program by using the Quantum
-Development
-Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true)
+Remember that in the module [Create your first Q# program by using the Quantum Development Kit](/training/modules/qsharp-create-first-quantum-development-kit?azure-portal=true)
 you used superposition to create a quantum random number generator. You used the operation `H` to put a qubit that's in the state $|0\rangle$ into superposition.
 Mathematically, this equation is $$  H |0\rangle = \frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle.$$
 
@@ -150,11 +148,10 @@ information about the superposition. We obtain only the results after a measurem
 
 ![Figure explaining that the number of possible configurations grows exponentially with the number of qubits as 2 to the N. The number of possible combinations of amplitude is infinite, as long as their squares add up to 1.](../media/2-scale.png)
 
-In the example state we produced for the quantum random bit generator,
-$|\psi\rangle=\frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle$, the probability
-for each state is
+In the example state we produced for the quantum random bit generator, $|\psi\rangle=\frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle$, the probability for each state is
 
 $$P(0)=\left|\frac1{\sqrt{2}}\right|^2=\frac12;$$
+
 $$P(1)=\left|\frac1{\sqrt{2}}\right|^2=\frac12.$$
 
 Each state has a 50-percent probability of being measured, so we have a balanced

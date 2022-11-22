@@ -1,10 +1,8 @@
-Feature Flags allow you to change how our system works without making changes to the code.
-
-Only a small configuration change is required. In many cases, it will also only be for a few users.
+Feature Flags allow you to change how our system works without making significant changes to the code. Only a small configuration change is required. In many cases, it will also only be for a few users.
 
 Feature Flags offer a solution to the need to push new code into the trunk and deploy it, but it isn't functional yet.
 
-They're commonly implemented as the value of variables that are used to control conditional logic.
+They're commonly implemented as the value of variables used to control conditional logic.
 
 Imagine that your team is all working in the main trunk branch of a banking application.
 
@@ -16,9 +14,11 @@ Worse, the changes will take you weeks to complete. You can't leave the main cod
 
 A Feature Flag could help you get around it.
 
-You can change the code so that other users who don't have the Feature Flag set will keep using the original interest calculation code, and the members of your team who are working on the new interest calculations and who have the Feature Flag set to see the code that's been created.
+You can change the code so that other users who don't have the Feature Flag set will use the original interest calculation code.
 
-It's an example of a business Feature Flag that's used to determine business logic.
+The members of your team who are working on the new interest calculations and set to see the Feature Flag will have the new interest calculation code.
+
+It's an example of a business feature flag used to determine business logic.
 
 The other type of Feature Flag is a Release Flag. Now, imagine that after you complete the work on the interest calculation code, you're nervous about publishing a new code out to all users at once.
 
@@ -34,9 +34,9 @@ You could have half the users working with the original version of the code and 
 
 You can then directly compare the outcome and decide if the feature is worth keeping. Feature Flags are sometimes called Feature Toggles instead.
 
-By exposing new features by just "flipping a switch" at runtime, we can deploy new software without exposing any new or changed functionality to the end user.
+By exposing new features by just "flipping a switch" at runtime, we can deploy new software without exposing any new or changed functionality to the end-user.
 
-The question is, what strategy do you want to use in releasing a feature to an end user.
+The question is, what strategy do you want to use in releasing a feature to an end-user.
 
  -  Reveal the feature to a segment of users, so you can see how the new feature is received and used.
  -  Reveal the feature to a randomly selected percentage of users.
@@ -50,7 +50,7 @@ The idea of separating feature deployment from Feature exposure is compelling an
 
 It helps us with more stable releases and better ways to roll back when we run into issues when we have a new feature that produces problems.
 
-We switch it off again and then create a hotfix. By separating deployments from revealing a feature, you make the opportunity to release a day anytime since the new software will not affect the system that already works.
+We switch it off again and then create a hotfix. By separating deployments from revealing a feature, you make the opportunity to release a day anytime since the new software won't affect the system that already works.
 
 ## What are feature toggles?
 

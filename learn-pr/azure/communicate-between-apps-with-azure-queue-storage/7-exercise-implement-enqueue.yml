@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Add a message to the queue
   description: Add a message to the queue
   ms.date: 10/07/2021
-  author: cryophobia
-  ms.author: chrvaw
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash

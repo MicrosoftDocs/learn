@@ -3,14 +3,9 @@ Imagine that you want to create an AKS cluster for a new video game your team is
 - Allow images only from trusted registries into the cluster
 - Kubernetes cluster pod security restricted standards for Linux-based workloads initiative
 
-The first step would be to create an AKS cluster that has Azure policies enabled. 
+The first step would be to create an AKS cluster that has Azure policies enabled.
 
-> [!NOTE]
-> If the cluster already exists, you can activate the addon by running the command below
->
-> ```azurecli-interactive
-> az aks enable-addons --addons azure-policy --name MyAKSCluster --resource-group MyResourceGroup
-> ```
+[!INCLUDE [azure-optional-exercise-subscription-note](../../../includes/azure-optional-exercise-subscription-note.md)]
 
 ## Create an AKS cluster with Azure Policy and Azure Monitor add-on
 

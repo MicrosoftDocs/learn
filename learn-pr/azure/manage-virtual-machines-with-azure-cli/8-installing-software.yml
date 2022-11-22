@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Install software on your VM
   description: Install software to run a web server on your Linux VM
   ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash

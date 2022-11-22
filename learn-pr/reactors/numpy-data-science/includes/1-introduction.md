@@ -2,7 +2,7 @@ NumPy is one of the two most important libraries in Python for data science, alo
 
 Datasets come from a huge range of sources and in a wide range of formats, including text documents, images, sound clips, numerical measurements, and nearly anything else. Despite this variety, the start of data science is to think of all data fundamentally as arrays of numbers.
 
-For example, the words in documents can be represented as the numbers that encode letters in computers or even as the frequency of particular words in a collection of documents. Digital images can be thought of as two-dimensional arrays of numbers that represent pixel brightness or color. Sound files can be represented as one-dimensional arrays of frequency versus time. But no matter what form our data takes, in order to analyze it, our first step is to transform it into arrays of numbers, which is where NumPy comes in (and pandas, down the road).
+For example, the words in documents can be represented as the numbers that encode letters in computers, or even as the frequency of particular words in a collection of documents. You can think of digital images as two-dimensional arrays of numbers that represent pixel brightness or color. Sound files can be represented as one-dimensional arrays of frequency versus time. But no matter what form our data takes, in order to analyze it, our first step is to transform it into arrays of numbers, which is where NumPy comes in (and pandas, down the road).
 
 NumPy is short for *Numerical Python*. It provides an efficient means of storing and operating on dense data buffers in Python. Array-oriented computing in Python goes back to 1995, with the Numeric library. Scientific programming in Python took off over the next 10 years, but the collections of libraries splintered. The NumPy project began in 2005 as a way to bring the Numeric and NumArray projects together around a single array-based framework.
 
@@ -22,7 +22,7 @@ Get used to this convention. It's a common convention in Python. It's the way we
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Import the NumPy library
 - Learn how NumPy arrays differ from the other Python data structures

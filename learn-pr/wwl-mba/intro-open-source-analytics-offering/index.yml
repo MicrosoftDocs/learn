@@ -20,7 +20,7 @@ prerequisites: |
   - Successfully login to the Azure portal
   - Understand the Azure storage options
   - Understand the Azure compute options
-iconUrl: /learn/achievements/introduction-to-the-open-source-analytics-offering.svg
+iconUrl: /training/achievements/introduction-to-the-open-source-analytics-offering.svg
 levels:
 - beginner
 roles:

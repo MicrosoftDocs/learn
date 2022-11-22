@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-arrays
 metadata:
-  title: Store and iterate through sequences of data using Arrays and the foreach statement in C#
+  title: 'Store and iterate through sequences of data using Arrays and the foreach statement in C#'
   description: Work with sequences of related data in data structures known as arrays.  Then, learn to iterate through each item in the sequence.
   ms.date: 09/19/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Store and iterate through sequences of data using Arrays and the foreach statement in C#
@@ -19,9 +19,9 @@ prerequisites: |
   - Experience with declaring and initializing variables and basic data types like `string`
   - Experience with printing to output using `Console.WriteLine()`
   - Experience with string interpolation to combine literal strings with variable data
-  - Experience researching how to use methods from the .NET Class Library on docs.microsoft.com  
+  - Experience researching how to use methods from the .NET Class Library
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-arrays.svg
+iconUrl: /training/achievements/csharp-arrays.svg
 levels:
 - beginner
 roles:
@@ -29,6 +29,8 @@ roles:
 - student
 products:
 - dotnet
+subjects:
+- development-tools
 units:
 - learn.languages.csharp-arrays.introduction
 - learn.languages.csharp-arrays.exercise-array-basics

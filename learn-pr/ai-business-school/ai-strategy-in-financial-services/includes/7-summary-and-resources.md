@@ -19,8 +19,7 @@ Explore the [Microsoft Perspective on Responsible AI in FSI](https://aka.ms/AA6e
 
 ## References
 
-[(1) Adobe and Econsultancy, “2018 Digital Trends in Financial Services,” 2018](https://wwwimages2.adobe.com/content/dam/acom/uk/modal-offers/pdfs/Econsultancy-2018-Digital-Trends-FS_EMEA.pdf)  
-[(2) Center for Strategic and International Studies, “Net Losses: Estimating the Global Cost of Cybercrime: Economic impact of cybercrime II,” June 2014](https://csis-prod.s3.amazonaws.com/s3fs-public/legacy_files/files/attachments/140609_rp_economic_impact_cybercrime_report.pdf)  
-[(3) Harrel, “Victims of Identity Theft,” 2016](https://www.bjs.gov/content/pub/pdf/vit16.pdf)  
-[(4) Medallia, “’Experience Factors’ Have Biggest Impact on Millennials’ Banking Choices, New Study Finds,” 2015](https://www.prnewswire.com/news-releases/experience-factors-have-biggest-impact-on-millennials-banking-choices-new-study-finds-300172866.html)  
-[(5) Mayhew, “BioCatch places 12th on Deloitte’s 2018 Technology Fast 500,” 21, November 2018](https://www.biometricupdate.com/201811/biocatch-places-12th-on-deloittes-2018-technology-fast-500)  
+[(1) Center for Strategic and International Studies, “Net Losses: Estimating the Global Cost of Cybercrime: Economic impact of cybercrime II,” June 2014](https://csis-prod.s3.amazonaws.com/s3fs-public/legacy_files/files/attachments/140609_rp_economic_impact_cybercrime_report.pdf)  
+[(2) Harrel, “Victims of Identity Theft,” 2016](https://www.bjs.gov/content/pub/pdf/vit16.pdf)  
+[(3) Medallia, “’Experience Factors’ Have Biggest Impact on Millennials’ Banking Choices, New Study Finds,” 2015](https://www.prnewswire.com/news-releases/experience-factors-have-biggest-impact-on-millennials-banking-choices-new-study-finds-300172866.html)  
+[(4) Mayhew, “BioCatch places 12th on Deloitte’s 2018 Technology Fast 500,” 21, November 2018](https://www.biometricupdate.com/201811/biocatch-places-12th-on-deloittes-2018-technology-fast-500)  

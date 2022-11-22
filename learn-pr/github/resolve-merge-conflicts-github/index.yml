@@ -3,9 +3,9 @@ uid: learn.github.merge-conflict-resolution-github
 metadata:
   title: "Settle competing commits by using merge conflict resolution on GitHub"
   description: Learn to settle overlapping commits across branches by using merge conflict resolution.
-  ms.date: 06/26/2020
-  author: tpetchel
-  ms.author: thpetche
+  ms.date: 07/08/2022
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Settle competing commits by using merge conflict resolution on GitHub"
@@ -19,7 +19,7 @@ prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub
   - Familiarity with pull requests
-iconUrl: /learn/achievements/github/resolve-merge-conflicts-github.svg
+iconUrl: /training/achievements/github/resolve-merge-conflicts-github.svg
 ratingEnabled: true
 levels:
 - beginner
@@ -31,6 +31,9 @@ roles:
 products:
 - github
 - azure
+subjects:
+- devops
+- cloud-computing
 units:
 - learn.github.merge-conflict-resolution-github.1-introduction
 - learn.github.merge-conflict-resolution-github.2-what-are-merge-conflicts

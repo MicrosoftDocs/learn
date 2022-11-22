@@ -35,7 +35,7 @@ In this exercise, you'll create a VM, set up a backup, and start a backup.
 
 ### Create a Windows virtual machine by using the Azure CLI
 
-Create the **NW-APP01** virtual machine by running the following command. Replace `<password>` with a password of your choice.
+Create the **NW-APP01** virtual machine by running the following command. Replace `<password>` with a password of your choice, enclosed in double quotes. For example, `--admin-password "PassWord123!"`.
 
 ```azurecli
 az vm create \
@@ -151,7 +151,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 1. On the Azure portal menu or from the **Home** page, select **All resources**.
 
-1. If the list is long, select **Add filter**. For Filter, selectTtype, for **Value**, select **Select all** to clear all selections, then select  **Virtual machine**, and select **Apply**.
+1. Enter *Virtual machines* in the search field at the top of the page and select **Virtual machines** from the results.
 
 1. Select the **NW-APP01** virtual machine. The **NW-APP01** virtual machine pane appears.
 

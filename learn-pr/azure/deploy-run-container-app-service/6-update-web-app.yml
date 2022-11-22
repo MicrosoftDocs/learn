@@ -5,8 +5,8 @@ metadata:
   title: Update the image and automatically redeploy the web app
   description: Learn how to use a webhook to redeploy a web app when the Docker image is updated.
   ms.date: 03/28/2019
-  author: cryophobia
-  ms.author: chrvaw
+  author: msangapu-msft
+  ms.author: msangapu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

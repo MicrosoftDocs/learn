@@ -1,15 +1,10 @@
-In this module, you will learn how to design and implement data stores in a modern data warehouse to optimize analytical workloads. You will design a multidimensional schema to store fact and dimension data. Next, you will learn how to create, populate, and query the data model in an Azure Synapse Analytics dedicated SQL pool.
+Relational data warehouses are at the center of most enterprise business intelligence (BI) solutions. While the specific details may vary across data warehouse implementations, a common pattern based on a denormalized, multidimensional schema has emerged as the standard design for a relational data warehouse.
 
-In this module, you will be able to:
+Azure Synapse Analytics includes a highly scalable relational database engine that is optimized for data warehousing workloads. By using *dedicated SQL pools* in Azure Synapse Analytics, you can create databases that are capable of hosting and querying huge volumes of data in relational tables.
 
-* Design a star schema for analytical workloads (OLAP)
-* Design a snowflake schema for analytics workloads
-* Create fact and dimension tables in Azure Synapse
-* Load data from delimited source files in Azure Storage
-* Implement a time dimension table for temporal analysis
+In this module, you'll learn how to:
 
-Before taking this module, it is recommended that you can:
-
-* Log into the Azure portal
-* Create a Synapse Analytics Workspace
-* Create an and connect to an Azure Synapse Analytics SQL pool
+- Design a schema for a relational data warehouse.
+- Create fact, dimension, and staging tables.
+- Use SQL to load data into data warehouse tables.
+- Use SQL to query relational data warehouse tables.

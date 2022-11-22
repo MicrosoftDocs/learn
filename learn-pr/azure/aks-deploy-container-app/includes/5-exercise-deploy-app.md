@@ -3,7 +3,7 @@ In this exercise, you'll deploy your company's website as a test app onto Azure 
 > [!NOTE]
 > The code for the web app is available in this [GitHub repository](https://github.com/MicrosoftDocs/mslearn-aks-deploy-container-app) if you want to explore the source code further. Also, this sample app will be deployed on a Linux node pool only.
 
-[!INCLUDE [azure-exercise-subscription-prerequisite](./include-sandbox-subscription-alert.md)]
+[!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## Create a deployment manifest
 
@@ -11,7 +11,12 @@ You create a deployment manifest file to deploy your application. The manifest f
 
 Kubernetes groups containers into logical structures called pods, which have no intelligence. Deployments add the missing intelligence to create your application. Let's create a deployment file.
 
-1. In Cloud Shell, create a manifest file for the Kubernetes deployment called `deployment.yaml` by using the integrated editor.
+1. Sign in to Azure Cloud Shell if you haven't done so already.
+
+    > [!div class="nextstepaction"]
+    > [Azure Cloud Shell](https://shell.azure.com/bash?azure-portal=true)
+
+1. In Cloud Shell, create  a manifest file for the Kubernetes deployment called `deployment.yaml` by using the integrated editor.
 
     ```bash
     touch deployment.yaml
@@ -75,11 +80,11 @@ Kubernetes groups containers into logical structures called pods, which have no 
             - name: contoso-website
     ```
 
-    The `containers` key is an array of container specifications because a pod can have one or more containers. The specification defines an `image`, `name`, `resources`, `ports`, and other important information about the container.
+    The `containers` key is an array of container specifications because a pod can have one or more containers. The specification defines an `image`, a `name`, `resources`, `ports`, and other important information about the container.
 
     All running pods will follow the name `contoso-website-<UUID>`, where UUID is a generated ID to identify all resources uniquely.
 
-1. It's a good practice to define a minimum and a maximum amount of the resources the app is allowed to use from the cluster. You use the `resources` key to specify this information.
+1. It's a good practice to define a minimum and a maximum amount of resources that the app is allowed to use from the cluster. You use the `resources` key to specify this information.
 
     Update the `deployment.yaml` file to match the following YAML.
 
@@ -181,9 +186,9 @@ Kubernetes groups containers into logical structures called pods, which have no 
     ```
 
     > [!NOTE]
-    > In an AKS cluster which has multiple node pools (Linux and Windows), this above deployment manifest file also defines a `nodeSelector` to tell your AKS cluster to run the sample application's pod on a node that can run Linux containers.
+    > In an AKS cluster which has multiple node pools (Linux and Windows), the deployment manifest file listed above also defines a `nodeSelector` to tell your AKS cluster to run the sample application's pod on a node that can run Linux containers.
 
-  Linux nodes cannot run Windows containers & vice versa.
+    Linux nodes can't run Windows containers and vice versa.
 
 1. Save the manifest file and close the editor.
 

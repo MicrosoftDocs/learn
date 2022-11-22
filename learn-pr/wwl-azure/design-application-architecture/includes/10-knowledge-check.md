@@ -1,11 +1,11 @@
-Tailwind Traders is continuing work on its new marketing game. With each purchase, the game will provide players a chance to win cash or prizes. There are several specific requirements. 
+Tailwind Traders is advancing work on its customer rewards game. With each purchase, customers are offered a chance to win cash or prizes. You're asked to provide input on engineering requirements to enable the game features. 
 
-- **Transaction processing**. When a customer makes a purchase, details should be grouped into a single transaction. The transaction should be sent to both the fulfillment center and the new gamification engine. 
+- **Transaction processing**. When a customer makes a purchase, the order details should be grouped into a single transaction in the game.  
 
-- **Update management.** Developers require scheduled software deployments and expect installation of updates within a defined maintenance window**.**
+- **Update management**. The developers of the game expect scheduled software deployments and installation of updates within a defined maintenance window.
 
-- **Event handling**. During game play millions of events are expected per second. Players will expect a low latency on responses. The event stream should be saved to blob storage.
+- **Event handling**. During game play, millions of events are expected per second. Customers should expect a low latency on responses. The event stream should be saved to Azure Blob Storage.
 
-- **GitHub code updates**. Developers will store their code in GitHub. A function should trigger a message when the application configuration has changed. 
+### Answer the following questions
 
 Choose the best response for each of the questions below. Then select **Check your answers**.

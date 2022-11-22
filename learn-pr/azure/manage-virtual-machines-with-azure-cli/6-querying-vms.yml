@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Query system and runtime information about the VM
   description: Learn how to use the Azure CLI to query information about your virtual machine
   ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash

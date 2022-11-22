@@ -78,3 +78,33 @@ hello_world/
     tests.py
     views.py
 ```
+
+## Register app with project
+
+Because apps and projects are separate in Django, you must register your app with the project. This is done by updating the `INSTALLED_APPS` variable inside **settings.py** for the project, adding a reference to the config class for the app. The config class is found in **apps.py**, and is the same name as the project. In our example, the class will be named `HelloWorldConfig`.
+
+1. Inside **helloproject**, open **settings.py**.
+1. Find the list `INSTALLED_APPS`, which should be in line 33.
+1. Add the following to the end of the list, inside the square brackets (`[ ]`):
+
+    ```python
+    'hello_world.apps.HelloWorldConfig',
+    ```
+
+1. The updated `INSTALLED_APPS` list should look like the following:
+
+    ```python
+    INSTALLED_APPS = [
+        'django.contrib.admin',
+        'django.contrib.auth',
+        'django.contrib.contenttypes',
+        'django.contrib.sessions',
+        'django.contrib.messages',
+        'django.contrib.staticfiles',
+        'hello_world.apps.HelloWorldConfig',
+    ]    
+    ```
+
+1. Save all files by selecting **File** > **Save all**.
+
+Congratulations! You have now created your first Django project and app. Next is to create a path and view to add some functionality.

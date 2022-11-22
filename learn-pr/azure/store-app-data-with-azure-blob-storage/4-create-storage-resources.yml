@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create Azure storage resources
   description: Exercise - Create Azure storage resources
   ms.date: 09/28/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-java
@@ -15,11 +15,12 @@ azureSandbox: true
 durationInMinutes: 5
 content: |
   [!include[](includes/4-create-storage-resources.md)]
-tasks:
-- action: exists
-  environment: azure
-  hint: "Run the `az storage account create` command above to create a general-purpose v2 storage account."
-  azure:
-    resource:
-      type: "Microsoft.Storage/storageAccounts"
-      kind: "StorageV2"
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#  environment: azure
+#  hint: "Run the `az storage account create` command above to create a general-purpose v2 storage account."
+#  azure:
+#    resource:
+#      type: "Microsoft.Storage/storageAccounts"
+#      kind: "StorageV2"

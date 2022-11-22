@@ -66,12 +66,9 @@ In this exercise, you'll set up a webhook for a GitHub repository. You'll learn 
 
 1. In the sidebar, select **Webhooks**. The **Webhooks** pane appears.
 
-    > [!NOTE]
-    > The webhook will indicate that the message was not processed correctly; it will generate an HTTP 400 error. The webhook is providing a payload that your function app wasn't expecting, and doesn't include a **name** parameter. You will learn how to parse the payload for a *Gollum* event in the next unit.
-
 1. Select **Edit**. The **Webhooks/Manage webhook** pane appears.
 
-1. Select the **Recent Deliveries** tab.
+1. Select the **Recent Deliveries** tab (you may need to scroll to the bottom of the page).
 
 1. In the list, select the top (latest) delivery entry by selecting the ellipsis (**...**).
 

@@ -4,14 +4,13 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 11/30/2021
+  ms.date: 09/02/2022
   author: wwlpublish
-  ms.author: robmcm
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]

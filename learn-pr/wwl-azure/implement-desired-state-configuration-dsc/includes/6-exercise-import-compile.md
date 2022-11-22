@@ -1,4 +1,4 @@
-After creating your DSC configuration file, you must import it and compile it to the DSC pull server. Compiling will create the MOF file. Read more about it at [Compiling a DSC Configuration with the Azure portal](https://docs.microsoft.com/azure/automation/automation-dsc-compile#compiling-a-dsc-configuration-with-the-azure-portal).
+After creating your DSC configuration file, you must import it and compile it to the DSC pull server. Compiling will create the MOF file. Read more about it at [Compiling a DSC Configuration with the Azure portal](/azure/automation/automation-dsc-compile#compiling-a-dsc-configuration-with-the-azure-portal).
 
 ## Import and compile configurations
 
@@ -43,4 +43,4 @@ To import and compile a configuration, complete the following high-level steps:
 
 
 > [!NOTE]
-> If you prefer, you can also use the **PowerShell Start-AzAutomationDscCompilationJob** cmdlet. More information about this method is available at [Compiling a DSC Configuration with Windows PowerShell](https://docs.microsoft.com/azure/automation/automation-dsc-compile#compiling-a-dsc-configuration-with-windows-powershell).
+> If you prefer, you can also use the **PowerShell Start-AzAutomationDscCompilationJob** cmdlet. More information about this method is available at [Compiling a DSC Configuration with Windows PowerShell](/azure/automation/automation-dsc-compile#compiling-a-dsc-configuration-with-windows-powershell).

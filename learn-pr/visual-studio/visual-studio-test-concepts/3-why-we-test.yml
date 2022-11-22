@@ -5,10 +5,10 @@ metadata:
   unitType: learning-content
   title: Why we test
   description: Why do we test? Testing can help improve the quality of your code by consistently running checks against the behavior of your app. This practice makes your code more stable and builds confidence in your code health.
-  ms.date: 6/28/2021
+  ms.date: 03/08/2022
   author: kendrahavens
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, devdivchpfy22
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
 durationInMinutes: 5
@@ -26,7 +26,7 @@ quiz:
       explanation: "Code coverage isn't the ultimate indicator of a healthy repo. There could be many other factors involved, such as the number of contributors over time or the number of open bugs or issues."
     - content: "Tests help keep track of the different capabilities of a program."
       isCorrect: false
-      explanation: "Tests can help keep track of different capabilities by checking all functionality regularly as new code is added."
+      explanation: "Tests can help keep track of different capabilities by checking all functionality regularly as you add new code."
   - content: "The correct code coverage goal in a repo is:"
     choices:
     - content: "100 percent"

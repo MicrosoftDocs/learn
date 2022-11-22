@@ -26,7 +26,7 @@ You might also want to dive deeper into the resource limits based on service tie
 
 ### Deploy, verify, and configure
 
-Two common command-line tools for deploying, verifying, and configuring Azure SQL are the [Azure CLI](/cli/azure/?view=azure-cli-latest&azure-portal=true) and [Azure PowerShell](/powershell/azure?azure-portal=true). You can also access both of these tools through [Azure Cloud Shell](/azure/cloud-shell/overview?azure-portal=true), which is an integrated terminal that supports Bash and PowerShell in the Azure portal.
+Two common command-line tools for deploying, verifying, and configuring Azure SQL are the [Azure CLI](/cli/azure/?azure-portal=true) and [Azure PowerShell](/powershell/azure?azure-portal=true). You can also access both of these tools through [Azure Cloud Shell](/azure/cloud-shell/overview?azure-portal=true), which is an integrated terminal that supports Bash and PowerShell in the Azure portal.
 
 #### Data max size
 
@@ -50,4 +50,4 @@ To learn more about the differences between SQL Server Agent in SQL Server and i
 
 #### Load data
 
-For more information on using Azure Data Factory to load data into Azure SQL Managed Instance and SQL Database, refer to [this documentation page](/azure/data-factory/connector-sql-server). Also, [here's a blog](https://techcommunity.microsoft.com/t5/datacat/turbo-boost-data-loads-from-spark-using-sql-spark-connector/ba-p/305523) detailing how to use Spark to load efficiently into Azure SQL.
+For more information about using Azure Data Factory to load data into Azure SQL Managed Instance and SQL Database, see [this documentation page](/azure/data-factory/connector-sql-server). Also, [here's a blog](https://techcommunity.microsoft.com/t5/datacat/turbo-boost-data-loads-from-spark-using-sql-spark-connector/ba-p/305523) detailing how to use Spark to load efficiently into Azure SQL.

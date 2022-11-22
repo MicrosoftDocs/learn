@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Deploy a data-driven ASP.NET web app by using Azure Pipelines
   description: Use an Azure DevOps release pipeline to deploy the artifacts generated in the first exercise of this module.
   ms.date: 01/26/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create a Redis Cache instance in Azure
   description: Exercise - Create a Redis Cache instance in Azure
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: flang-msft
+  ms.author: franlanglois
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-javascript
@@ -14,10 +14,11 @@ azureSandbox: true
 durationInMinutes: 15
 content: |
   [!include[](includes/4-exercise-create-redis-cache.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.Cache/Redis"
-  hint: "Use the instructions above to create a Redis cache."
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Cache/Redis"
+#   hint: "Use the instructions above to create a Redis cache."

@@ -17,7 +17,7 @@ When you create your own pipeline, you have two choices: the visual designer or 
 
 ## Additional resources
 
-To further your understanding, see the following additional resources.
+To further your understanding, see the following additional resources:
 
 If you're looking for a more academic approach, [*Continuous Delivery*](https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250?azure-portal=true) by Jez Humble and David Farley is a great starting point.
 
@@ -33,7 +33,4 @@ The [Build and release tasks](/azure/devops/pipelines/tasks/?azure-portal=true) 
 
 ### Create your own build pipeline
 
-In this module, you created the pipeline from Azure DevOps. You can repeat a similar process to create your own pipeline. You can also create a pipeline from the Azure portal or from the GitHub Marketplace app.
-
-* [Use the Azure portal](/azure/devops/pipelines/get-started-azure-devops-project?azure-portal=true)
-* [Azure Pipelines](https://github.com/marketplace/azure-pipelines?azure-portal=true) app on GitHub Marketplace
+In this module, you created the pipeline from Azure DevOps. You can repeat a similar process to create your own pipeline. You can also create a pipeline from the [GitHub Marketplace app](https://github.com/marketplace/azure-pipelines?azure-portal=true).

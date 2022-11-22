@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: In this unit, you'll learn about a business problem that we can solve by using a Java web app deployed in Azure App Service.
   ms.date: 03/01/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: bmitchell287
+  ms.author: brendm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

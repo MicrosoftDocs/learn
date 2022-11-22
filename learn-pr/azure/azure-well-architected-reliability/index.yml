@@ -3,9 +3,9 @@ uid: learn.azure-well-architected-reliability
 metadata:
   title: Microsoft Azure Well-Architected Framework - Reliability
   description: Learn how to recover from infrastructure and service failure, loss of data, and disasters by incorporating reliability into your architecture.
-  ms.date: 05/19/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 10/13/2022
+  author: martinekuan
+  ms.author: martinek
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Microsoft Azure Well-Architected Framework - Reliability
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking
   - Experience building or operating technology systems to solve business problems
-iconUrl: /learn/achievements/azure-well-architected-reliability.svg
+iconUrl: /training/achievements/azure-well-architected-reliability.svg
 levels:
 - intermediate
 roles:
@@ -35,6 +35,8 @@ products:
 - azure-load-balancer
 - azure-backup
 - azure-application-gateway
+subjects:
+- architecture
 units:
 - learn.azure-well-architected-reliability.1-introduction
 - learn.azure-well-architected-reliability.2-high-availability

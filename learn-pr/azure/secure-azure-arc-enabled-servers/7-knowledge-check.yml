@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.secure-azure-arc-enabled-servers.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 02/02/2022
+  author: aurnovcy
+  ms.author: aurnovc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following security services can you not use with Azure Arc-enabled servers?"
+    choices:
+    - content: "Microsoft Sentinel"
+      explanation: "Incorrect, you can use Microsoft Sentinel with Azure Arc-enabled servers."
+      isCorrect: false
+    - content: "Microsoft Defender for Cloud"
+      explanation: "Incorrect, you can use Microsoft Defender for Cloud with Azure Arc-enabled servers."
+      isCorrect: false
+    - content: "Microsoft Defender for Servers"
+      explanation: "Incorrect, you can use Microsoft Defender for Servers with Azure Arc-enabled servers."
+      isCorrect: false
+    - content: "Microsoft Defender for Containers"
+      explanation: "Correct, you can't use Microsoft Defender for Containers with Azure Arc-enabled servers. You can use Microsoft Defender for Containers with Azure Arc-enabled Kubernetes"
+      isCorrect: true
+  - content: "Which of the following security services helps you continuously assess, secure, and defend workloads in hybrid and multicloud environments?"
+    choices:
+    - content: "Microsoft Sentinel"
+      explanation: "Incorrect, Microsoft offers security information and event management (SIEM) and security orchestration, automation, and response (SOAR) capabilities"
+      isCorrect: false
+    - content: "Microsoft Defender for Cloud"
+      explanation: "Correct, Microsoft Defender for Cloud helps you continuously assess, secure, and defend workloads in hybrid and multicloud environments"
+      isCorrect: true
+    - content: "Microsoft Defender for Servers"
+      explanation: "Incorrect, Microsoft Defender for Servers offers enhanced security for your hybrid and multicloud machines."
+      isCorrect: false
+    - content: "Microsoft Defender for Containers"
+      explanation: "Incorrect, Microsoft Defender for Containers offers enhanced security for your hybrid and multicloud Kubernetes clusters."
+      isCorrect: false
+  - content: "Which of the following offers security information and event management (SIEM) and security orchestration, automation, and response (SOAR) capabilities?"
+    choices:
+    - content: "Microsoft Sentinel"
+      explanation: "Correct, Microsoft Sentinel offers security information and event management (SIEM) and security orchestration, automation, and response (SOAR) capabilities."
+      isCorrect: true
+    - content: "Microsoft Defender for Cloud"
+      explanation: "Incorrect, Microsoft Defender for Cloud helps you continuously assess, secure, and defend workloads in hybrid and multicloud environments"
+      isCorrect: false
+    - content: "Microsoft Defender for Servers"
+      explanation: "Incorrect, Microsoft Defender for Servers offers enhanced security for your hybrid and multicloud machines."
+      isCorrect: false
+    - content: "Microsoft Defender for Containers"
+      explanation: "Incorrect, Microsoft Defender for Containers offers enhanced security for your hybrid and multicloud Kubernetes clusters."
+      isCorrect: false
+  - content: "Which of the following services should you connect an Azure Arc-enabled server to before onboarding to Microsoft Defender for Cloud or Microsoft Sentinel?"
+    choices:
+    - content: "Azure Policy"
+      explanation: "Incorrect, Azure Policy can be used, but it isn't required to onboard to these Azure services."
+      isCorrect: false
+    - content: "Azure Automation"
+      explanation: "Incorrect, Azure Automation can be used, but it isn't required to onboard to these Azure services."
+      isCorrect: false
+    - content: "Azure Log Analytics Workspace"
+      explanation: "Correct, the Azure Arc-enabled server must be connected to a Log Analytics workspace to onboard to these Azure services."
+      isCorrect: true
+    - content: "Azure Function"
+      explanation: "Incorrect, Azure Functions can be used, but it isn't required to onboard to these Azure services."
+      isCorrect: false

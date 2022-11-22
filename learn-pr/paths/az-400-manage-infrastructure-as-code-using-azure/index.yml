@@ -1,20 +1,19 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-400-manage-infrastructure-as-code-using-azure
 metadata:
-  title: 'AZ-400: Manage infrastructure as code using Azure, DSC, and third-party tools'
-  description: 'AZ-400: Manage infrastructure as code using Azure, DSC, and third-party tools'
-  ms.date: 12/01/2021
+  title: 'AZ-400: Manage infrastructure as code using Azure and DSC'
+  description: 'AZ-400: Manage infrastructure as code using Azure and DSC'
+  ms.date: 06/17/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'AZ-400: Manage infrastructure as code using Azure, DSC, and third-party tools'
+title: 'AZ-400: Manage infrastructure as code using Azure and DSC'
 prerequisites: |
   None
 summary: |
   This learning path explores the “Infrastructure as Code” (IaC) concept and how to manage your operations environment the same way you do applications or other code for general release.
-iconUrl: /learn/achievements/generic-trophy.svg
-hidden: true
+iconUrl: /training/achievements/az-400-manage-infrastructure-as-code-using-azure.svg
 levels:
 - advanced
 roles:
@@ -36,14 +35,15 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- architecture
+- cloud-computing
 modules:
 - learn.wwl.explore-infrastructure-as-code-configuration-management
 - learn.wwl.create-azure-resources-using-azure-resource-manager-templates
 - learn.wwl.create-azure-resources-by-using-azure-cli
 - learn.wwl.explore-azure-automation-devops
 - learn.wwl.implement-desired-state-configuration-dsc
-- learn.wwl.introduction-to-chef-puppet
-- learn.wwl.implement-ansible
-- learn.wwl.implement-terraform
+- learn.wwl.implement-bicep
 trophy:
   uid: learn.wwl.az-400-manage-infrastructure-as-code-using-azure.trophy

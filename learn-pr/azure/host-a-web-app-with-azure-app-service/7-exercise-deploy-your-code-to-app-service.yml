@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Deploy your code to App Service
   description: Exercise - Deploy your code to App Service
   ms.date: 12/01/2020
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: cephalin
+  ms.author: cephalin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-java-node-python

@@ -5,13 +5,11 @@ metadata:
   title: Enrich your OpenAPI documentation with XML comments and annotations
   description: Enrich your OpenAPI documentation with XML comments and annotations
   ms.date: 05/06/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: camsoper
+  ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: 
 durationInMinutes: 4
 content: |
   [!include[](includes/4-visualize-and-interact-with-api-resources.md)]
-
-

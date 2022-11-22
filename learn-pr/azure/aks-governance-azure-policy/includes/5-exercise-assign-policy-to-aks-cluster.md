@@ -2,6 +2,8 @@ You are now ready to configure Azure policies and initiatives for your AKS clust
 
 In this unit, you'll deploy a non-compliant pod, apply an Azure Policy that enforces the use of only trusted registries and then deploy another non-compliant pod to see the effect of the Policy. You'll also learn troubleshooting steps to see why the pods are not being created. You will also deploy the **Kubernetes cluster pod security restricted standards for Linux-based workloads** initiative.
 
+[!INCLUDE [azure-optional-exercise-subscription-note](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## Deploy a non-compliant pod into the cluster
 
 We begin by deploying an image from directly from Docker Hub into the cluster. The first step would be to log into the cluster.
@@ -87,37 +89,37 @@ You have successfully deployed your workload on a cluster that doesn't have any 
 
 You'd like to ensure that only images from certain registries are allowed in the cluster. You'll need to create a new policy definition and then assign it to a scope; in this case the scope will be our **videogamerg** resource group. Policies can be created and assigned through the Azure portal, Azure PowerShell, or Azure CLI. This exercise takes you through creating a policy in the portal.
 
-Find the built-in policy definitions for managing your cluster using the Azure portal with the following steps. In this case, you'll be applying the "only allowed images" Policy.
+Find the built-in policy definitions for managing your cluster using the Azure portal with the following steps. In this case, you'll be applying the "only allowed images" policy.
 
 1. Go to the [Policy](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview) page in **Azure portal**.
 
-1. In the left pane of the Azure Policy page, select Definitions.
+1. In the left pane of the Azure Policy page, select **Definitions**.
 
-1. From the Category dropdown list box, use Select all to clear the filter and then select Kubernetes.
+1. From the **Category** dropdown list box, use **Select all** to clear the filter and then select **Kubernetes**.
 
    :::image type="content" source="../media/5-filtering-for-kubernetes.png" alt-text="Screenshot showing kubernetes selected for category." lightbox="../media/5-filtering-for-kubernetes.png":::
 
-1. Select the **Kubernetes cluster containers should only use allowed images** Policy definition.
+1. Select the **Kubernetes cluster containers should only use allowed images** policy definition.
 
 1. Click the **Assign** button.
 
-1. Set the Scope to the resource group of the Kubernetes cluster you created, which in this case is the **videogamerg** resource group.
+1. Set the **Scope** to the resource group of the Kubernetes cluster you created, which in this case is the **videogamerg** resource group.
 
    :::image type="content" source="../media/5-policy-assignment.png" alt-text="Screenshot showing policy assignment view." lightbox="../media/5-policy-assignment.png":::
 
 1. Enter the following into the **Allowed container image regex** field and click the **Review + create** button
 
-   ```
-   .+\.azurecr\.io/.+$
-   ```
+```console
+.+\.azurecr\.io/.+$
+```
 
 1. Click on the **Create** button
 
-Now that the new Policy has been enabled, you can click on **Assignments** to see the assigned Policy and select the Policy assignment you created.
+Now that the new policy has been enabled, you can click on **Assignments** to see the assigned Policy and select the Policy assignment you created.
 
 :::image type="content" source="../media/5-policy-assigned.png" alt-text="screenshot showing Policy assigned." lightbox="../media/5-policy-assigned.png":::
 
-Your Policy assignment should look like the picture below. The effect is set to deny by default. This means that only images hosted in Azure Container Registry can be deployed in the cluster.
+Your policy assignment should look like the picture below. The effect is set to deny by default. This means that only images hosted in Azure Container Registry can be deployed in the cluster.
 
 :::image type="content" source="../media/5-policy-assignment-details.png" alt-text="screenshot showing details of Policy assignment." lightbox="../media/5-policy-assignment-details.png":::
 
@@ -129,7 +131,7 @@ Initiatives can be assigned the same way policies are assigned. Follow the steps
 
 1. Return to the [Policy](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview) page in **Azure portal**.
 1. In the left pane of the Azure Policy page, select Definitions.
-1. From the Category dropdown list box, use Select all to clear the filter and then select Kubernetes.
+1. From the **Category** dropdown list box, use **Select all** to clear the filter and then select **Kubernetes**.
 1. Select the **Kubernetes cluster pod security restricted standards for Linux-based workloads** initiative  definition. Take some time to review the various policies that are a part of the initiative.
 1. Select the **Assign** button at the top-left corner of the screen.
 1. Set the Scope to the resource group of the Kubernetes cluster you created, which in this case is the **videogamerg**. Fill out the rest of the form as you did in the previous step and click **Review + create**.
@@ -252,7 +254,7 @@ In the previous section, we noticed that the second pod was not deployed. In thi
 1. First, let us describe the deployment. We see that the ReplicaSet was created but the replicas failed to create
 
    ```bash
-   kubectl describe replicasets
+   kubectl get replicasets
    ```
 
    You'll get an output similar to what you have below

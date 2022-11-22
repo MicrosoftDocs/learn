@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-load-balancer.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 02/16/2022
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.custom: team=cloud_advocates
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: Which layer of the OSI model does Azure Load Balancer function at?
+      choices:
+        - content: Layer 4
+          isCorrect: true
+          explanation: Correct. Load Balancer functions at Layer 4 (transport layer) of the OSI model.
+        - content: Layer 7
+          isCorrect: false
+          explanation: Incorrect. Load Balancer functions at Layer 4 of the OSI model. Other Azure services, such as Azure Application Gateway, can load balance traffic at Layer 7.
+        - content: Layer 5
+          isCorrect: false
+          explanation: Incorrect. Azure Load Balancer functions at Layer 4 of the OSI model. Layer 5 of the OSI model is the session layer that addresses opening, closing, and managing application sessions.  
+    - content: Which of the following components should you configure to ensure that traffic from a specific client computer is always directed to the same server in the back-end pool?
+      choices: 
+        - content: Health probe
+          isCorrect: false
+          explanation: Incorrect. Health probes allow you to determine whether a back-end pool instance is responding to traffic.
+        - content: High availability port
+          isCorrect: false
+          explanation: Incorrect. High availability ports are a type of rule in which all TCP and UDP traffic that arrives on all ports is load balanced.
+        - content: Session persistence
+          isCorrect: true
+          explanation: Correct. Session persistence allows you to ensure that traffic from a client computer interacting with Azure Load Balancer is always forwarded to the same server in the back-end pool.
+    - content: Which of the following components would you configure to ensure that back-end pool instances that are no longer responding to traffic on TCP port 443 no longer have traffic directed to them by Load Balancer?
+      choices:
+        - content: High availability port
+          isCorrect: false
+          explanation: Incorrect. High availability ports are a type of rule in which all TCP and UDP traffic that arrives on all ports is load balanced.
+        - content: Outbound rule
+          isCorrect: false
+          explanation: Incorrect. Outbound rules are used to configure traffic flow from back-end pool instances to the internet.
+        - content: Health probe
+          isCorrect: true
+          explanation: Correct. Health probes allow you to determine whether a back-end pool instance is responding to traffic.
+          

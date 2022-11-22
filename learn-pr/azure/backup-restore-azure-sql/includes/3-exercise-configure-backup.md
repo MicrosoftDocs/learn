@@ -1,8 +1,8 @@
 Although the default Azure SQL Database configuration includes automated backups, most organizations will modify the default setup to tailor it to their needs.
 
-Now that you have planned a comprehensive backup strategy for Azure SQL Database and your company's ERP system, it's time to implement it.
+Now that you've planned a comprehensive backup strategy for Azure SQL Database and your company's ERP system, it's time to implement it.
 
-Here, you'll create a database in Azure and then configure backups. You'll set the retention to 28 days to ensure that you have 4 weeks of backups retained in accordance with your policy. You'll also add some content to the database.
+Here, you'll create a database in Azure and then configure backups. You'll set the retention to 28 days to ensure that you have four weeks of backups retained in accordance with your policy. You'll also add some content to the database.
 
 ## Create a SQL Database server and database
 
@@ -17,9 +17,9 @@ Let's use the Azure CLI to create a SQL Database server and a database.
 
     ```
 
-   This step creates a server name with a random number at the end to ensure that it's globally unique. We'll refer to the server name as `erpserver-NNNN` through the exercises, but replace this with the name of your server that's generated here.
+   This step creates a server name with a random number at the end to ensure that it's globally unique. We'll refer to the server name as `erpserver-NNNN` through the exercises, but replace this name with the name of your server that's generated here.
 
-   This step also sets the location for your server to the location of the resource group. Finally, it sets the credentials that you'll use to access the database server. When you're prompted, enter a complex password of your choice. 
+   This step also sets the location for your server to the location of the resource group. Finally, it sets the credentials that you'll use to access the database server. When you're prompted, enter a complex password of your choice.
 
 1. Run the `New-AzSqlServer` command to create a SQL Database server to store the database.
 

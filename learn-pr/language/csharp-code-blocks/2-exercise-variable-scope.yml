@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Code blocks and variable scope
   description: Learn how code blocks impact the scope of variables.
   ms.date: 09/26/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

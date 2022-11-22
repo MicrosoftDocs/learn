@@ -4,7 +4,7 @@ metadata:
   title: Microsoft Endpoint Manager fundamentals
   description: This learning path will help you understand the fundamentals concepts involved in managing your endpoint environment.
   brand: azure
-  ms.date: 01/12/2022
+  ms.date: 03/25/2022
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
@@ -25,20 +25,23 @@ summary: |
   - Learn about configuring and managing device security.
   - Learn about the different types of enrollment methods available using Microsoft Endpoint Manager.
   - Understand the device and app management lifecycles.
-  - Understand the how your organization's apps can be can be configured and protected.
+  - Understand how your organization's apps can be configured and protected.
   - Understand how trusted users can access organizational resources on trusted devices using trusted apps.
   - Learn how to analyze and resolve endpoint compliance issues.
   - Understand the benefits of using Microsoft Endpoint Manager.
 prerequisites: |
   - Familiarity with basic device concepts
   - Familiarity with security and cloud concepts
-iconUrl: /learn/achievements/endpoint-manager-fundamentals.svg
+iconUrl: /training/achievements/endpoint-manager-fundamentals.svg
 levels:
 - beginner
 roles:
 - administrator
 products:
 - mem
+subjects:
+- threat-protection
+- information-protection-governance
 modules:
 - learn.intro-to-endpoint-manager
 - learn.protect-endpoints-with-endpoint-manager

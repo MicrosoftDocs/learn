@@ -3,9 +3,10 @@ uid: learn.aks-deploy-container-app
 metadata:
   title: Deploy a containerized application on Azure Kubernetes Service
   description: Explore how to create and deploy a containerized application by using Azure Kubernetes Service declarative manifest files.
-  ms.date: 07/31/2020
-  author: khaosdoctor
-  ms.author: ludossan
+  ms.published: 07/31/2020
+  ms.date: 03/01/2022
+  author: nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy a containerized application on Azure Kubernetes Service
@@ -21,7 +22,7 @@ prerequisites: |
   - Ability to create a Docker container
   - Ability to navigate the Azure portal
   - Basic knowledge of Kubernetes and its concepts
-iconUrl: /learn/achievements/aks-deploy-container-app.svg
+iconUrl: /training/achievements/aks-deploy-container-app.svg
 levels:
   - beginner
 roles:
@@ -32,6 +33,9 @@ products:
   - azure
   - azure-kubernetes-service
   - azure-container-registry
+subjects:
+- container
+- data-engineering
 units:
   - learn.aks-deploy-container-app.1-introduction
   - learn.aks-deploy-container-app.2-create-aks-cluster

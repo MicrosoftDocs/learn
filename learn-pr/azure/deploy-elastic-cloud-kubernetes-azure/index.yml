@@ -22,7 +22,8 @@ prerequisites: |
   - Basic understanding of Azure Kubernetes Services (AKS)  
   - Familiarity with using Azure Cloud Shell including Bash and/or PowerShell
   - Experience running Linux workloads on-premises or in the cloud 
-iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
@@ -30,6 +31,8 @@ roles:
 products:
   - azure
   - azure-kubernetes-service
+subjects:
+- container
 units:
 - learn.azure.deploy-elastic-cloud-kubernetes-azure.introduction
 - learn.azure.deploy-elastic-cloud-kubernetes-azure.create-cluster-install

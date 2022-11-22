@@ -4,8 +4,8 @@ metadata:
   title: Optimize storage performance and costs using Azure Blob storage tiers
   description: Learn what the different storage tiers are for blob storage and how they can improve performance and reduce costs.
   ms.date: 04/10/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Optimize storage performance and costs using Blob storage tiers
@@ -18,13 +18,17 @@ abstract: |
 prerequisites: | 
   - Basic familiarity with Azure storage and Blob objects
   - Experience in basic Azure web app development and deployment
-iconUrl: /learn/achievements/optimize-blob-storage-costs.svg
+iconUrl: /training/achievements/optimize-blob-storage-costs.svg
 levels:
 - beginner
 roles:
 - developer
 products:
 - azure
+subjects:
+- cloud-computing
+- storage
+- finance-accounting
 units:
 - learn.azure.optimize-blob-storage-costs.1-introduction
 - learn.azure.optimize-blob-storage-costs.2-design-a-strategy-for-using-tiered-storage

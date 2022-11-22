@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/05/2021
+  ms.date: 06/29/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -41,10 +41,10 @@ quiz:
       explanation: "Correct.  You are not waiting for detections to flag an anomaly."
   - content: "\"We want to check which accounts have run cmd.exe.\" Why is this hypothesis poor?"
     choices:
-    - content: "Cmd.exe is not a program."
+    - content: "Cmd.exe isn't a program."
       isCorrect: false
       explanation: "Incorrect. Cmd.exe is a program in windows."
-    - content: "Accounts are not associated with the running of cmd.exe"
+    - content: "Accounts aren't associated with the running of cmd.exe"
       isCorrect: false
       explanation: "Incorrect. Cmd.exe will be started by an Account"
     - content: "The scope is too broad."

@@ -5,10 +5,14 @@ metadata:
   title: Introduction
   description: In this unit we introduce the core PyTorch concepts covered in this course.
   author: cassiebreviu
-  ms.author: cassieb
+  ms.author: ruyakubu
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - cassieb-04262021
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

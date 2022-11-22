@@ -14,16 +14,17 @@ interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/2-exercise-deploy-resources.md)]
-tasks:
-- action: exists
-  environment: azure
-  hint: "Create the web app."
-  azure:
-    resource:
-      type: "Microsoft.Web/sites"
-- action: exists
-  environment: azure
-  hint: "Create the Azure SQL Database Server."
-  azure:
-    resource:
-      type: Microsoft.Sql/servers
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   hint: "Create the web app."
+#   azure:
+#     resource:
+#       type: "Microsoft.Web/sites"
+# - action: exists
+#   environment: azure
+#   hint: "Create the Azure SQL Database Server."
+#   azure:
+#     resource:
+#       type: Microsoft.Sql/servers

@@ -9,6 +9,8 @@ metadata:
   ms.date: 01/20/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: judubois-03112021
 durationInMinutes: 3
 quiz:
   title: Check your knowledge

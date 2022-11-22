@@ -1,4 +1,4 @@
-![Tech logo.](../media/tech-all.png)
+![Tech logo for U W P and W P F.](../media/tech-all.png)
 
 ## Create a UI layout
 
@@ -23,7 +23,7 @@ Now let's get started.
 
 ::: zone pivot="uwp"
 
-![Tech logo.](../media/tech-uwp.png)
+![Tech logo for U W P and W P F.  W P F appears dimmed.](../media/tech-uwp.png)
 
 #### Create a new project
 
@@ -466,7 +466,7 @@ In the next unit, we put these layouts to use. We add commonly used controls lik
 
 ::: zone pivot="wpf"
 
-![Tech logo.](../media/tech-wpf.png)
+![Tech logo for U W P and W P F. U W P appears dimmed.](../media/tech-wpf.png)
 
 #### Create a new project
 

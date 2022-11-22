@@ -1,28 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-integrated-cache
 metadata:
-  title: Implement integrated cache in Azure Cosmos DB SQL API
-  description: "Implement, configure, and monitor integrated cache in Azure Cosmos DB SQL API."
-  ms.date: 12/09/2021
+  title: Implement integrated cache in Azure Cosmos DB for NoSQL
+  description: "Implement, configure, and monitor integrated cache in Azure Cosmos DB for NoSQL."
+  ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Implement integrated cache in Azure Cosmos DB SQL API
-summary: Implement, configure, and monitor integrated cache in Azure Cosmos DB SQL API.
+title: Implement integrated cache in Azure Cosmos DB for NoSQL
+summary: Implement, configure, and monitor integrated cache in Azure Cosmos DB for NoSQL.
 abstract: |
   After completing this module, you'll be able to:
   *   Implement the integrated cache
   *   Configure integrated cache options
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/implement-integrated-cache.svg
+iconUrl: /training/achievements/azure-cosmos-db-sql-api-integrated-cache-implement.svg
 levels:
 - intermediate
 roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- database
 units:
 - learn.wwl.implement-integrated-cache.introduction
 - learn.wwl.implement-integrated-cache.review-workloads-that-benefit-from-cache

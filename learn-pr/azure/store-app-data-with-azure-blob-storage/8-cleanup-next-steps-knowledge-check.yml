@@ -5,8 +5,8 @@ metadata:
   title: Clean up and knowledge check
   description: Clean up and knowledge check
   ms.date: 09/28/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
@@ -56,4 +56,3 @@ quiz:
     - content: "The contents of the named blob are downloaded."
       isCorrect: false
       explanation: "Getting a blob reference does not make any calls to Azure Storage, it simply creates an object locally that can work with a stored blob."
-

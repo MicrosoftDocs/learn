@@ -1,4 +1,4 @@
-In your manufacturing company, you have asked the operations and engineering teams about their requirements for the number of virtual machines in Azure. You've also asked them about their plans for expansion. Based on the results of this survey, you want to plan an IP addressing scheme that you won't have to change in the foreseeable future.
+In your manufacturing company, you've asked the operations and engineering teams about their requirements for the number of virtual machines in Azure. You've also asked them about their plans for expansion. Based on the results of this survey, you want to plan an IP addressing scheme that you won't have to change in the foreseeable future.
 
 In this unit, you'll explore the requirements for a network IP address scheme. You'll learn about classless inter-domain routing (CIDR) and how you use it to slice an IP block to meet your addressing needs. At the end of the module, there's an exercise that shows how to plan IP addressing for Azure virtual networks.
 

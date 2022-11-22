@@ -14,8 +14,9 @@ Create a custom role within Azure for the new employee.
    ```azurecli
     az account list  --output json | jq '.[] | .id, .name'
    ```
+
 1. Type **code** into Cloud Shell.
-1. Paste the following role definition  into the editor. This is the role definition we identified in the previous unit.
+1. Paste the following role definition into the editor. This is the role definition we identified in the previous unit.
 
     ```JSON
    {
@@ -44,9 +45,9 @@ Create a custom role within Azure for the new employee.
     ```
 
 1. In the `AssignableScopes` section, replace **subscriptionId** with the value you got from the previous step.
-1. Select **Save** from the three-dot menu on the top right-hand side of the Cloud Shell pane.
+1. Select **Save** from the three-dot menu on the top right-hand side of the Cloud Shell pane (or press <kbd>CTRL + S</kbd> in Windows or <kbd>CMD + S</kbd> in macOS).
 1. Enter **vm-operator-role.json** as the filename and **Save**.
-1. Select **Close Editor** from the three-dot menu on the top right-hand side of the Cloud Shell pane.
+1. Select **Close Editor** from the three-dot menu on the top right-hand side of the Cloud Shell pane (or press <kbd>CTRL + Q</kbd> in Windows or <kbd>CMD + Q</kbd> in macOS).
 1. Run the following command in the Cloud Shell to create the custom role:
 
    ```azurecli
@@ -64,9 +65,9 @@ When the custom role is created, you can assign it to a user or group. To make t
     echo $USER
     ```
 
-1. Run the following command to assign the custom role to yourself.
+1. Run the following command to assign the custom role to yourself:
 
     ```azurecli
-    az role assignment create --assignee $USER --role "Virtual Machine Operator"
+    az role assignment create --assignee $USER --role "Virtual Machine Operator"  --scope /subscriptions/"your subscription id"/resourceGroups/"your resource group name"
     ```
 1. Close Cloud Shell.

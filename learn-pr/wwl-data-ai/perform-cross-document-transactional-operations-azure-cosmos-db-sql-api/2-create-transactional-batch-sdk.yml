@@ -4,13 +4,12 @@ title: Create a transactional batch with the SDK
 metadata:
   title: Create a transactional batch with the SDK
   description: "Create a transactional batch with the SDK"
-  ms.date: 12/23/2021
+  ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 5
 content: |

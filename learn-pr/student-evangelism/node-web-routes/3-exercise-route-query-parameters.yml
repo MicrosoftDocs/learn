@@ -5,7 +5,7 @@ metadata:
   title: Exercise - Route and query parameters
   description: This unit covers how to filter a response by using query parameters.
   author: clarkio
-  ms.author: brcl
+  ms.author: chnoring
   ms.date: 07/12/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

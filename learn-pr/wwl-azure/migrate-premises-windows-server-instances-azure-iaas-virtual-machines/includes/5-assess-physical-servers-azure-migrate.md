@@ -6,7 +6,7 @@ In this demonstration, you'll learn to:
 - Set up an assessment.
 - Review an assessment.
 
->[!VIDEO https://aka.ms/assess-physical-servers-with-azure-migrate]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4zf4s]
 
 ## Next steps
 

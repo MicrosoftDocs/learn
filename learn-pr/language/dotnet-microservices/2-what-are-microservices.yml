@@ -9,6 +9,10 @@ metadata:
   ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - masoucou-05122021
 durationInMinutes: 7
 content: |
   [!include[](includes/2-what-are-microservices.md)]
@@ -50,5 +54,3 @@ quiz:
     - content: "To create the code to run the microservice."
       isCorrect: false
       explanation: "The code to create the microservice is created in the tool that is best suited for the job. Any language and framework will work."
-
-

@@ -3,9 +3,9 @@ uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch
 metadata:
   title: Create an app to run parallel compute jobs in Azure Batch
   description: Learn to use the Azure Batch platform to write a .NET Core console app that performs parallel, large-scale, high-performance video transcoding.
-  ms.date: 05/06/2019
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 08/03/2022
+  author: lauradolan
+  ms.author: ladolan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create an app to run parallel compute jobs in Azure Batch
@@ -20,7 +20,7 @@ prerequisites: |
   - Working knowledge of Azure and the Azure portal
   - Familiarity with Azure Batch
   - Experience developing .NET apps
-iconUrl: /learn/achievements/create-an-app-to-run-parallel-compute-jobs-in-azure-batch.svg
+iconUrl: /training/achievements/create-an-app-to-run-parallel-compute-jobs-in-azure-batch.svg
 levels:
 - intermediate
 roles:
@@ -30,6 +30,8 @@ products:
 - dotnet
 - dotnet-core
 - azure-batch
+subjects:
+- cloud-computing
 units:
 - learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.introduction
 - learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.manage-azure-batch-workloads-from-dotnet-app

@@ -3,9 +3,9 @@ uid: learn.azure-well-architected-security
 metadata:
   title: Microsoft Azure Well-Architected Framework - Security
   description: Discover the tools that Azure provides to help you design a secure environment throughout your infrastructure, data, network, and applications.
-  ms.date: 05/19/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 10/27/2022
+  author: martinekuan
+  ms.author: martinek
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Microsoft Azure Well-Architected Framework - Security
@@ -18,7 +18,7 @@ abstract:  |
 prerequisites: |
   - Experience building or operating solutions by using core infrastructure technology such as data storage, compute, and networking
   - Experience building or operating technology systems to solve business problems
-iconUrl: /learn/achievements/azure-well-architected-security.svg
+iconUrl: /training/achievements/azure-well-architected-security.svg
 levels:
 - intermediate
 roles:
@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- cloud-security
 units:
 - learn.azure-well-architected-security.1-introduction
 - learn.azure-well-architected-security.2-defense-in-depth

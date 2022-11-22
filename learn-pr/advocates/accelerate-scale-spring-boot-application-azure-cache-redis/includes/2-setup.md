@@ -1,8 +1,8 @@
-You can create an Azure Cache for Redis instance by using either [the Azure portal](https://portal.azure.com/?WT.mc_id=java-11981-judubois) or [the Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-11981-judubois). Because this resource takes a few minutes to create, we'll run those commands (and let them continue running in the background) before we explain more about Azure Cache for Redis.
+You can create an Azure Cache for Redis instance by using either [the Azure portal](https://portal.azure.com/?WT.mc_id=java-11981-judubois) or [the Azure CLI](/cli/azure/install-azure-cli?WT.mc_id=java-11981-judubois). Because this resource takes a few minutes to create, we'll run those commands (and let them continue running in the background) before we explain more about Azure Cache for Redis.
 
 ## Set up the Azure CLI
 
-If the Azure CLI isn't already installed on your machine, [install it now](/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-11981-judubois). You can check the version of your current Azure CLI installation by running:
+If the Azure CLI isn't already installed on your machine, [install it now](/cli/azure/install-azure-cli?WT.mc_id=java-11981-judubois). You can check the version of your current Azure CLI installation by running:
 
 ```bash
 az --version

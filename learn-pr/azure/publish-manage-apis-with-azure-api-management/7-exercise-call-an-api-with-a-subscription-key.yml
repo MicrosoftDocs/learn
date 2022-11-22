@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Call an API with a subscription key
   description: Exercise - Call an API with a subscription key
   ms.date: 05/02/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: dlepow
+  ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

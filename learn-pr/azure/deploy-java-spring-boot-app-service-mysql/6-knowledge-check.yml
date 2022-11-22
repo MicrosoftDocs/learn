@@ -9,6 +9,8 @@ metadata:
   ms.author: ropreddy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: ropreddy-11202020
 durationInMinutes: 3
 quiz:
   questions:
@@ -45,4 +47,3 @@ quiz:
     - content: "package"
       isCorrect: false
       explanation: "This command bundles your application into an executable JAR file."
-

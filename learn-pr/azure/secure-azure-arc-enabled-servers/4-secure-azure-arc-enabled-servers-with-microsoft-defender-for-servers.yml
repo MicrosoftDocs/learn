@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.secure-azure-arc-enabled-servers.secure-azure-arc-enabled-servers-with-microsoft-defender-for-servers
+title: Secure Azure Arc-enabled servers with Microsoft Defender for Servers
+metadata:
+  title: Secure Azure Arc-enabled servers with Microsoft Defender for Servers
+  description: Secure Azure Arc-enabled servers with Microsoft Defender for Servers
+  ms.date: 02/02/2022
+  author: aurnovcy
+  ms.author: aurnovc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-secure-azure-arc-enabled-servers-with-microsoft-defender-for-servers.md)]

@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Familiarity of how data is protected at rest, in transit, and in use.
   - Familiarity with data classifications.
-iconUrl: /learn/achievements/support-hybrid-clouds.svg
+iconUrl: /training/achievements/support-hybrid-clouds.svg
 levels:
 - beginner
 roles: 
@@ -27,7 +27,9 @@ products:
 - azure
 - azure-stack-hub
 - azure-stack-edge
-units: 
+subjects:
+- classification-analysis
+units:
 - learn.azure.support-hybrid-clouds.1-introduction
 - learn.azure.support-hybrid-clouds.2-secure-stack-hub
 - learn.azure.support-hybrid-clouds.3-share-securely-stack

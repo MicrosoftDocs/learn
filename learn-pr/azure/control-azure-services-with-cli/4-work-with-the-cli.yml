@@ -5,8 +5,8 @@ metadata:
   title: Work with the Azure CLI
   description: Learn the command structure and syntax to work with the Azure CLI
   ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  author: dbradish-microsoft
+  ms.author: dbradish
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

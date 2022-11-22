@@ -23,7 +23,7 @@ Most of you will never go on to design and build your own large-scale datacenter
 ### References
 
 1. _Barroso, Luiz André, and Urs Hölzle (2009). [The datacenter as a computer: An introduction to the design of warehouse-scale machines](https://dl.acm.org/doi/book/10.5555/1643608) Synthesis Lectures on Computer Architecture - PDF_
-2. _Gordon Bell and Allen Newell (1970). [The PMS and ISP descriptive systems for computer structures Joint Computer Conference - PDF](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.140.9098&rep=rep1&type=pdf)_
+2. _Gordon Bell and Allen Newell (1970). [The PMS and ISP descriptive systems for computer structures Joint Computer Conference - PDF](https://citeseerx.ist.psu.edu/pdf/04565aed9ee5df3a475ea9f50ce58773d9674eb1)_
 
 [^1]: <https://dl.acm.org/doi/book/10.5555/1643608> "Barroso, Luiz André, and Urs Hölzle (2009). *The datacenter as a computer: An introduction to the design of warehouse-scale machines* Synthesis Lectures on Computer Architecture - PDF"
-[^2]: <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.140.9098&rep=rep1&type=pdf> "Gordon Bell and Allen Newell (1970). *The PMS and ISP descriptive systems for computer structures Joint Computer Conference - PDF*"
+[^2]: <https://citeseerx.ist.psu.edu/pdf/04565aed9ee5df3a475ea9f50ce58773d9674eb1> "Gordon Bell and Allen Newell (1970). *The PMS and ISP descriptive systems for computer structures Joint Computer Conference - PDF*"

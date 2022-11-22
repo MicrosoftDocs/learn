@@ -5,8 +5,8 @@ metadata:
   title: Remove technical information from API responses
   description: Create an API gateway and remove some of the headers from web API requests and responses.
   ms.date: 05/10/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: dlepow
+  ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

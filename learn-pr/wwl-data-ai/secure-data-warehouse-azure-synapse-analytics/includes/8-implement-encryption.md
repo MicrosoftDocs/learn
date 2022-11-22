@@ -10,9 +10,9 @@ In order to use TDE for Azure Synapse Analytics, you will have to manually enabl
 
 What TDE does is performing I/O encryption and decryption of data at the page level in real time. 
 When a page is read into memory, it is decrypted. It is encrypted before writing it to disk. 
-TDE encrypts the entire data base storage, using a symmetric key called a Database Encryption Key (DEK).
-When you start up a database, the encrypted Database Encryption Key is decrypted when it then will be used for decryption and re-encryption of the database files in the SQL Server database engine. 
-The DEK is protected by the Transparent Data Encryption Protector. 
+TDE encrypts the entire database storage using a symmetric key called a Database Encryption Key (DEK).
+When you start up a database, the encrypted Database Encryption Key is decrypted. The DEK will then be used for decryption and re-encryption of the database files in the SQL Server database engine. 
+The DEK is protected by the Transparent Data Encryption Protector.
 This protector can be either a service-managed certificated, which is referred to as service-managed transparent data encryption, or an asymmetric key that is stored in Azure Key Vault (customer-managed transparent data encryption).
 
 What is important to understand is that for Azure Synapse Analytics, this TDE protector is set on the server level. 

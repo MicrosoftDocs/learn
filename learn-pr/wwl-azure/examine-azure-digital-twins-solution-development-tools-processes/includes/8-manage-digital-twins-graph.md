@@ -71,7 +71,7 @@ This call returns twin data as a strongly-typed object type such as BasicDigital
 To update properties of a digital twin, you write the information you want to replace in JSON Patch format. In this way, you can replace multiple properties at once. You then pass the JSON Patch document into an `UpdateDigitalTwin()` method:
 
 > [!NOTE]
-> If you are not familiar with JSON Patch, you can read more here: [https://docs.microsoft.com/aspnet/core/web-api/jsonpatch](/aspnet/core/web-api/jsonpatch)
+> If you are not familiar with JSON Patch, you can read more here: [JsonPatch in ASP.NET Core web API](/aspnet/core/web-api/jsonpatch)
 
 ```csharp
 await client.UpdateDigitalTwinAsync(twinId, updateTwinData);
@@ -133,9 +133,9 @@ For example, consider the following JSON Patch document that replaces the digita
 
 This operation will only succeed if the digital twin being modified by the patch conforms with the new model. Consider the following example:
 
-- Imagine a digital twin with a model of foo\_old. foo\_old defines a required property mass.
-- The new model foo\_new defines a property mass, and adds a new required property temperature.
-- After the patch, the digital twin must have both a mass and temperature property.
+ -  Imagine a digital twin with a model of foo\_old. foo\_old defines a required property mass.
+ -  The new model foo\_new defines a property mass, and adds a new required property temperature.
+ -  After the patch, the digital twin must have both a mass and temperature property.
 
 The patch for this situation needs to update both the model and the twin's temperature property, like this:
 

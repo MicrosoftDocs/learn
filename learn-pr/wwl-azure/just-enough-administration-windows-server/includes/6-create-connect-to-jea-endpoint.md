@@ -48,11 +48,10 @@ $DNSOpssession = New-PSSession -ComputerName 'MyServer' -ConfigurationName 'DNSO
 
 You can connect to JEA endpoints programmatically the same way you connect to other PowerShell endpoints programmatically. Programmatic access to JEA is often used in in-house helpdesk apps and websites and uses the same approach as apps built to interact with unconstrained PowerShell endpoints.
 
-For more information about connecting to JEA endpoints programmatically, refer to the following [article](https://aka.ms/using-jea-programmatically) on docs.microsoft.com.
+For more information about connecting to JEA endpoints programmatically, see [Using JEA programmatically](/powershell/scripting/learn/remoting/jea/using-jea#using-jea-programmatically).
 
 ## JEA and PowerShell Direct
 
 PowerShell Direct allows Hyper-V administrators to connect to VMs from the Hyper-V host. By doing this, they can ignore any network or remote management settings on the VM.
 
 The Hyper-V administrator connects to the VM the same way they would connect to any other server using PSRemoting, only specifying the -VMName parameter or the -VMId parameter. Whenever using JEA to manage VMs, you should create a dedicated JEA user account for the Hyper-V administrator, and the accounts ability to sign-in locally to the VM.
-

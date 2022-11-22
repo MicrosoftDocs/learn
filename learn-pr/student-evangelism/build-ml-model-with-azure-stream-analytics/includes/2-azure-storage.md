@@ -4,7 +4,7 @@ Creating a storage account and uploading wildlife photos to the account are the 
 
 ## Create a storage account
 
-Let's begin by using Azure Cloud Shell to create an Azure Storage account. Cloud Shell provides a browser-based command line that you can use to run Azure commands. Cloud Shell is an alternative to installing the [Azure CLI](/cli/azure/?azure-portal=true&view=azure-cli-latest) on your own computer.
+Let's begin by using Azure Cloud Shell to create an Azure Storage account. Cloud Shell provides a browser-based command line that you can use to run Azure commands. Cloud Shell is an alternative to installing the [Azure CLI](/cli/azure/?azure-portal=true) on your own computer.
 
 > [!NOTE]
 > Whether to use the CLI or Cloud Shell often is a matter of personal preference. One of the advantages of Cloud Shell is that it doesn't require you to install any software. Another advantage is that you don't have to update Cloud Shell periodically like you do the CLI.
@@ -13,7 +13,7 @@ Let's begin by using Azure Cloud Shell to create an Azure Storage account. Cloud
 
 1. In the portal global controls, select **Azure Cloud Shell**.
 
-   ![Screenshot that shows the Azure Cloud Shell icon highlighted in the Azure portal global controls.](../media/cloud-shell.png)
+   :::image type="content" source="../media/cloud-shell.png" alt-text="Screenshot that shows the Azure Cloud Shell icon highlighted in the Azure portal global controls.":::
 
     _Open Azure Cloud Shell_
 
@@ -58,7 +58,7 @@ Let's begin by using Azure Cloud Shell to create an Azure Storage account. Cloud
    az storage account keys list --account-name $ACCOUNT_NAME
    ```
 
-1. The primary access key is the `key1` property value, which contains a long series of letters and numbers. Copy the primary access key from the output and paste it in a text file so that you can retrieve the key later. 
+1. The primary access key is the `key1` property value, which contains a long series of letters and numbers. Copy the primary access key from the output and paste it in a text file so that you can retrieve the key later.
   
    Remember that you can select Ctrl+Insert to copy text from Cloud Shell to the clipboard.
 
@@ -87,13 +87,13 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
     The [azure-storage](https://www.npmjs.com/package/azure-storage?azure-portal=true) package provides a programmatic interface to Azure Storage, including Blob Storage, for Node.js apps.
 
-1. When the installation finishes, in the project directory, create a subdirectory named *photos*. Download a [.zip file of camera images](https://github.com/MicrosoftDocs/mslearn-build-ml-model-with-azure-stream-analytics/raw/master/camera-images.zip?azure-portal=true). Unzip the file, and then copy the 30 .jpg files that are in the .zip file to the *photos* subdirectory.  The simulated cameras upload these images to Blob Storage. 
+1. When the installation finishes, in the project directory, create a subdirectory named *photos*. Download a [.zip file of camera images](https://github.com/MicrosoftDocs/mslearn-build-ml-model-with-azure-stream-analytics/raw/master/camera-images.zip?azure-portal=true). Unzip the file, and then copy the 30 .jpg files that are in the .zip file to the *photos* subdirectory.  The simulated cameras upload these images to Blob Storage.
 
-   The following images are a sample of the images that are in the dataset. Wildlife shown in the images include Arctic foxes, polar bears, and walruses.
+   The following images are a sample of the images that are in the dataset. Wildlife shown in the images includes Arctic foxes, polar bears, and walruses.
 
-   ![Two photos of Arctic foxes, four photos of polar bears, and two photos of walruses.](../media/wildlife-images.png)
+   :::image type="content" source="../media/wildlife-images.png" alt-text="Two photos of Arctic foxes, four photos of polar bears, and two photos of walruses.":::
 
-1. In the project directory, create a file named *cameras.json*. Paste the following JSON in the file:
+1. In the project directory, use Visual Studio Code to create a file named *cameras.json*. Paste the following JSON in the file:
 
    ```json
    [
@@ -240,7 +240,7 @@ The next task is to create a Node.js app that simulates an array of motion-activ
    set ACCOUNT_KEY=STORAGE_ACCOUNT_KEY
    ```
 
-   If you're running Linux or macOS, use these commands instead:
+   If you're running Linux or macOS or you get a credential error running the Windows commands, use these commands instead:
 
    ```console
    export ACCOUNT_NAME=STORAGE_ACCOUNT_NAME
@@ -284,17 +284,17 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
 1. In your browser, go to the Azure portal. Open the storage account that you created earlier, and then open the `photos` container. Confirm that the container has several .jpg images as shown in this example:
 
-    ![Screenshot that shows images uploaded to the photos container.](../media/uploaded-images.png)
+    :::image type="content" source="../media/uploaded-images.png" alt-text="Screenshot that shows images uploaded to the photos container.":::
 
     _Images uploaded to the photos container_
 
 1. Select one of the blobs to show a blob detail and examine the blob's metadata. Confirm that the blob metadata contains properties named `latitude`, `longitude`, and `id`:
 
-    ![Screenshot that shows blob metadata fields in the Metadata pane.](../media/blob-metadata.png)
+    :::image type="content" source="../media/blob-metadata.png" alt-text="Screenshot that shows blob metadata fields in the Metadata pane.":::
 
     _View blob metadata_
 
 1. Open a blob to view the actual image:
    - Select the ellipsis (**…**), and then select **View** > **Edit**. Repeat this action to view the images for several blobs.
-   
-   Which images contain polar bears, and which do not?
+
+   Which images contain polar bears, and which don't?

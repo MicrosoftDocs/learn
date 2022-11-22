@@ -26,7 +26,7 @@ Perform the following steps to see what happens when an application sends messag
 
 1. When you see **Send Complete**, press <kbd>Enter</kbd>.
 
-1. Return to the Azure portal. On the **Overview** page of your **Event Hubs Namespace** pane, select your Event Hub from the list at the bottom. This will show details specific to the Event Hub. You can also get to this pane with the **Event Hubs** entry from the namespace page. The**Event Hubs Instance** pane appears.
+1. Return to the Azure portal. On the **Overview** page of your **Event Hubs Namespace** pane, select your Event Hub from the list at the bottom. This will show details specific to the Event Hub. You can also get to this pane with the **Event Hubs** entry from the namespace page. The **Event Hubs Instance** pane appears.
 
 1. In the left menu pane, under **Settings**, select **Properties**. The **Properties** pane appears for your Event Hubs Instance.
 

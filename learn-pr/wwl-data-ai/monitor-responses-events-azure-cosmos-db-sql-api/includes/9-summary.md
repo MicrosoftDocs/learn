@@ -31,21 +31,21 @@ For more information about the topics discussed in this module, see:
 - [Azure security baseline for Azure Cosmos DB][/security/benchmark/azure/baselines/cosmos-db-security-baseline]
 - [How to audit Azure Cosmos DB control plane operations][/azure/cosmos-db/audit-control-plane-logs]
 
-[/azure/cosmos-db/sql/troubleshoot-dot-net-sdk]: https://docs.microsoft.com/azure/cosmos-db/sql/troubleshoot-dot-net-sdk
-[/rest/api/cosmos-db/documents]: https://docs.microsoft.com/rest/api/cosmos-db/documents
-[/rest/api/cosmos-db/create-a-document]: https://docs.microsoft.com/rest/api/cosmos-db/create-a-document
-[/rest/api/cosmos-db/list-documents]: https://docs.microsoft.com/rest/api/cosmos-db/list-documents
-[/rest/api/cosmos-db/get-a-document]: https://docs.microsoft.com/rest/api/cosmos-db/get-a-document
-[/rest/api/cosmos-db/replace-a-document]: https://docs.microsoft.com/rest/api/cosmos-db/replace-a-document
-[/rest/api/cosmos-db/patch-a-document]: https://docs.microsoft.com/rest/api/cosmos-db/patch-a-document
-[/rest/api/cosmos-db/delete-a-document]: https://docs.microsoft.com/rest/api/cosmos-db/delete-a-document
-[/rest/api/cosmos-db/query-documents]: https://docs.microsoft.com/rest/api/cosmos-db/query-documents
-[/rest/api/cosmos-db/http-status-codes-for-cosmosdb]: https://docs.microsoft.com/rest/api/cosmos-db/http-status-codes-for-cosmosdb
-[/azure/cosmos-db/sql/troubleshoot-service-unavailable]: https://docs.microsoft.com/azure/cosmos-db/sql/troubleshoot-service-unavailable
-[/azure/cosmos-db/sql/sql-sdk-connection-modes]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-sdk-connection-modes
-[/azure/cosmos-db/sql/troubleshoot-dot-net-sdk-request-timeout]: https://docs.microsoft.com/azure/cosmos-db/sql/troubleshoot-dot-net-sdk-request-timeout
-[/azure/cosmos-db/sql/troubleshoot-request-rate-too-large]: https://docs.microsoft.com/azure/cosmos-db/sql/troubleshoot-request-rate-too-large
-[/azure/cosmos-db/create-alerts]: https://docs.microsoft.com/azure/cosmos-db/create-alerts
-[/azure/cosmos-db/database-security]: https://docs.microsoft.com/azure/cosmos-db/database-security
-[/security/benchmark/azure/baselines/cosmos-db-security-baseline]: https://docs.microsoft.com/security/benchmark/azure/baselines/cosmos-db-security-baseline
-[/azure/cosmos-db/audit-control-plane-logs]: https://docs.microsoft.com/azure/cosmos-db/audit-control-plane-logs
+[/azure/cosmos-db/sql/troubleshoot-dot-net-sdk]: /azure/cosmos-db/sql/troubleshoot-dot-net-sdk
+[/rest/api/cosmos-db/documents]: /rest/api/cosmos-db/documents
+[/rest/api/cosmos-db/create-a-document]: /rest/api/cosmos-db/create-a-document
+[/rest/api/cosmos-db/list-documents]: /rest/api/cosmos-db/list-documents
+[/rest/api/cosmos-db/get-a-document]: /rest/api/cosmos-db/get-a-document
+[/rest/api/cosmos-db/replace-a-document]: /rest/api/cosmos-db/replace-a-document
+[/rest/api/cosmos-db/patch-a-document]: /rest/api/cosmos-db/patch-a-document
+[/rest/api/cosmos-db/delete-a-document]: /rest/api/cosmos-db/delete-a-document
+[/rest/api/cosmos-db/query-documents]: /rest/api/cosmos-db/query-documents
+[/rest/api/cosmos-db/http-status-codes-for-cosmosdb]: /rest/api/cosmos-db/http-status-codes-for-cosmosdb
+[/azure/cosmos-db/sql/troubleshoot-service-unavailable]: /azure/cosmos-db/sql/troubleshoot-service-unavailable
+[/azure/cosmos-db/sql/sql-sdk-connection-modes]: /azure/cosmos-db/sql/sql-sdk-connection-modes
+[/azure/cosmos-db/sql/troubleshoot-dot-net-sdk-request-timeout]: /azure/cosmos-db/sql/troubleshoot-dot-net-sdk-request-timeout
+[/azure/cosmos-db/sql/troubleshoot-request-rate-too-large]: /azure/cosmos-db/sql/troubleshoot-request-rate-too-large
+[/azure/cosmos-db/create-alerts]: /azure/cosmos-db/create-alerts
+[/azure/cosmos-db/database-security]: /azure/cosmos-db/database-security
+[/security/benchmark/azure/baselines/cosmos-db-security-baseline]: /security/benchmark/azure/baselines/cosmos-db-security-baseline
+[/azure/cosmos-db/audit-control-plane-logs]: /azure/cosmos-db/audit-control-plane-logs

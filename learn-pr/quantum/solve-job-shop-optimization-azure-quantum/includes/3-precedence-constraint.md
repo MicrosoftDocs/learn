@@ -80,23 +80,26 @@ Let's break that down:
 
 ## Code
 
-Using the mathematical formulation and the breakdown above, you can now translate this constraint function to code. You will see the `weight` argument included in this code snippet - this will be assigned a value later on when you call the function:
+Using the mathematical formulation and the breakdown above, you can now translate this constraint function to code. You will see the `weight` argument included in this code snippet - this will be assigned a value later on when you call the function. 
+
+Click **+ Code** to add another new cell and add the following lines:
 
 ```python
-# Reminder of the relevant parameters
-## Time to allow for all jobs to complete
+"""
+Reminder of the relevant parameters
+Time to allow for all jobs to complete
 T = 10 
 
-## Processing time for each operation
+Processing time for each operation
 processing_time = {0: 2, 1: 1, 2: 2, 3: 2, 4: 1, 5: 2}
 
-## Assignment of operations to jobs (job ID: [operation IDs])
+Assignment of operations to jobs (job ID: [operation IDs])
 jobs_ops_map = {
     0: [0, 1], # Restart life support
     1: [2, 3], # Recalibrate navigation system
     2: [4, 5]  # Replace power transformer in the reactor
 }
-
+"""
 def precedence_constraint(jobs_ops_map:dict, T:int, processing_time:dict, weight:float):
     """
     Construct penalty terms for the precedence constraint.

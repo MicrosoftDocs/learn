@@ -12,19 +12,19 @@ _Everyone looks at Amita. She has been especially frustrated lately._
 
 _Andy writes "Dependency versioning challenges for QA" on the whiteboard._
 
-**Tim:** I'd like to add operations to that frustration. We have a few teams that have unique version requirements, so we have to publish their apps on their own virtual machines just to make sure their version and component requirements don't conflict with our other apps. Besides the overhead involved in maintaining the extra set of VMs, it also costs us more than it would if those apps could run side by side.
+**Tim:** I'd like to add operations to that frustration. We have a few teams with unique version requirements, so we have to publish their apps on their own virtual machines just to ensure their version and component requirements don't conflict with our other apps. Besides the overhead involved in maintaining the extra set of VMs, it also costs us more than it would if those apps could run side by side.
 
 _Andy writes "Overhead due to solving app isolation with VMs" on the whiteboard._
 
-**Mara:** I have something from the development side. A few weeks ago I was working on the peer-to-peer update system and had it all working on my machine. But when I handed it off for deployment, it didn't work in production. I had forgotten that I needed to open port 315 as part of the service. It took us over a day of troubleshooting to realize what was going on. Once we opened that up in production, things worked as expected.
+**Mara:** I have something from the development side. A few weeks ago, I was working on the peer-to-peer update system and had it all working on my machine. But when I handed it off for deployment, it didn't work in production. I had forgotten that I needed to open port 315 as part of the service. It took us over a day of troubleshooting to realize what was going on. Once we opened that up in production, things worked as expected.
 
 _Andy writes "Configuration inconsistencies between deployment stages" on the whiteboard._
 
 **Andy:** I think this conversation is a good start. Let me research these issues and see what I can come up with. Here are the concerns that I heard:
 
-* Dependency versioning challenges for QA
-* Overhead due to solving app isolation with VMs
-* Configuration inconsistencies between deployment stages
+* Dependency versioning challenges for QA.
+* Overhead due to solving app isolation with VMs.
+* Configuration inconsistencies between deployment stages.
 
 ## Putting it all together (in one container)
 
@@ -34,7 +34,7 @@ The next morning, Andy calls a meeting to present a new idea to the team.
 
 **Amita:** What's a container? Is that like a _.zip_ file?
 
-**Andy:** Not exactly. It's more like a lightweight virtual machine designed to run directly on the host operating system. When you build your project, the output is a container that includes your software along with its dependencies. However, it's not a complete virtualized system, so it can spin up in a little as less than one second.
+**Andy:** Not exactly. It's more like a lightweight virtual machine designed to run directly on the host operating system. When you build your project, the output is a container that includes your software and its dependencies. However, it's not a complete virtualized system, so it can spin up in as little as less than one second.
 
 **Tim:** How does it handle security and isolation?
 
@@ -68,4 +68,4 @@ The Tailspin team selected Docker containers for this scenario because it met al
 
     Containers ship with manifests that automate configuration requirements, such as which ports need to be exposed.
 
-Adopting Docker containers can be a key step on the path towards a microservices architecture. We'll discuss that more later on.
+Adopting Docker containers can be a key step towards a microservices architecture. We'll discuss more about that later on.

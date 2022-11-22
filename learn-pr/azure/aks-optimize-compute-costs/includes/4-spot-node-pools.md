@@ -198,7 +198,10 @@ A taint is applied to a node to indicate that only specific pods can be schedule
 
 ### What is toleration?
 
-Toleration is a specification applied to a pod to allow it to tolerate a node's taint. Spot nodes are configured with a node taint set to `kubernetes.azure.com/scalesetpriority=spot:NoSchedule`.
+Toleration is a specification applied to a pod to allow, but not require, a pod to be scheduled on a node with the corresponding taint. Spot nodes are configured with a node taint set to `kubernetes.azure.com/scalesetpriority=spot:NoSchedule`.
+
+> [!NOTE]
+> Taints and tolerations don't guarantee a pod will be placed on a specific node. For example, if a node has no taint, then it's possible that the pod with the toleration may be scheduled on the untainted node. Specifying an affinity with taints and tolerations can address this issue.
 
 ### What is node affinity?
 
@@ -215,7 +218,21 @@ You specify node taint toleration by creating a `tolerations` dictionary entry i
 | `value` | Represents the value part of the node taint key-value pair that is specified on the node. For example, on a spot node pool with a key-value pair of `kubernetes.azure.com/scalesetpriority:spot`, the value is `spot`. |
 | `effect` | Indicates how the scheduling of a pod is handled in the system. There are three options: `NoSchedule`, `PreferNoSchedule`, and `NoExecute`. `NoSchedule` ensures that the system won't schedule the pod. `PreferNoSchedule` allows the system to try not to schedule the pod. `NoExecute` either evicts pods that are already running on the tainted node or doesn't schedule the pod at all. |
 
-Here's an example of a workload that has toleration added for spot node pools.
+## Define node affinity in a pod manifest file
+
+You specify affinity by creating an `affinity` entry in your workload manifest file. In this entry, you set the following properties for each node label that a workload must match:
+
+| Property | Description |
+| --- | --- |
+| `nodeAffinity` | Describes node affinity scheduling rules for the pod. |
+| `requiredDuringSchedulingIgnoredDuringExecution` | If the affinity requirements specified by this field aren't met at scheduling time, the pod won't be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (for example, due to an update), the system may or may not try to eventually evict the pod from its node. |
+| `nodeSelectorTerms` | A list of node selector terms. The terms are ORed rather than ANDed. |
+| `matchExpressions` | A list of node selector requirements by node's labels. |
+| `key` | The label key that the selector applies to. The key is `kubernetes.azure.com/scalesetpriority` |
+| `operator` | Represents a key's relationship to a set of values. Valid operators are `In`, `NotIn`, `Exists`, `DoesNotExist` `Gt`, and `Lt` |
+| `values` | Represents the value part of the node label key-value pair that is specified on the node. On a spot node pool with a key-value pair of `kubernetes.azure.com/scalesetpriority:spot`, the value is `spot`. |
+
+Here's an example of a workload that has toleration and affinity added for spot node pools.
 
 ```yml
 apiVersion: v1
@@ -234,4 +251,13 @@ spec:
     operator: "Equal"
     value: "spot"
     effect: "NoSchedule"
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: "kubernetes.azure.com/scalesetpriority"
+            operator: In
+            values:
+            - "spot"
 ```

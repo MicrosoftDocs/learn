@@ -24,7 +24,7 @@ GO
 
 The IF...ELSE structure is used in T-SQL to conditionally execute a block of code based on a predicate. The IF statement determines whether or not the following statement or block (if BEGIN...END is used) executes. If the predicate evaluates to TRUE, the code in the block is executed. When the predicate evaluates to FALSE or UNKNOWN, the block is not executed, unless the optional ELSE keyword is used to identify another block of code.
 
-For example, the following IF statement, without an ELSE, will only execute the statements between BEGIN and END if the predicate evaluates to TRUE, indicating that the object exists. If it evaluates to FALSE or UNKNOWN, no action is taken and execution resumes after the END statement:
+In the following IF statement, we are asking the database if the OBJECT_ID IS NULL, and if so, return the PRINT statement. In this example, the object is *NOT* null and therefore FALSE, which means the BEGIN/END code won't be executed. The PRINT statement will only be executed if the object does not exist in the database.
 
 ```sql
 USE TSQL;
@@ -35,10 +35,10 @@ BEGIN
 END;
 ```
 
-With the use of ELSE, you have another execution option when the IF predicate evaluates to FALSE or UNKNOWN, as in the following example:
+Due to the limitations with the code above with only an IF statement, this can be confusing. Combining IF and ELSE gives you more flexibility with the logic in your code, and you can use multiple ELSE statements. With the use of ELSE, you have another execution option when the IF predicate evaluates to FALSE or UNKNOWN, as in the following example:
 
 ```sql
-IF OBJECT_ID('HR.Employees') IS NULL
+IF OBJECT_ID('HR.Employees') IS NULL --this object does exist in the sample database
 BEGIN
     PRINT 'The specified object does not exist';
 END
@@ -59,7 +59,7 @@ END;
 
 ## Understand looping using WHILE statements
 
-The WHILE statement is used to execute code in a loop based on a predicate. Like the IF statement, the WHILE statement determines whether the following statement or block (if BEGIN...END is used) executes. The loop ends when the predicate evaluates to FALSE or UNKNOWN. Typically, you control the loop with a variable tested by the predicate and manipulated in the body of the loop itself.
+The WHILE statement is used to execute code in a loop based on a predicate. Like the IF statement, the WHILE statement determines whether the following statement or block (if BEGIN...END is used) executes. The loop continues to execute as long as the condition evaluates to TRUE. Typically, you control the loop with a variable tested by the predicate and manipulated in the body of the loop itself..
 
 The following example uses the @empid variable in the predicate and changes its value in the BEGIN...END block:
 
@@ -74,7 +74,5 @@ WHILE @empid <=5
    END;
 ```
 
-> [!NOTE]
-> Remember that if SELECT returns UNKNOWN, the variable retains its current value. If there is no employee with an ID equal to @empid, the variable doesn't change from one iteration to another. This would lead to an infinite loop.
 
 For extra options within a WHILE loop, you can use the CONTINUE and BREAK keywords to control the flow.

@@ -7,6 +7,7 @@ Functions are hosted in an execution context called a **function app**. You defi
 ### Choose a service plan
 
 Function apps may use one of two types of service plans:
+
 - Consumption plan
 - Azure App Service plan
 
@@ -52,7 +53,6 @@ Let's create a function app in the Azure portal.
 
 ::: zone-end
 
-
 ::: zone pivot="powershell"
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
@@ -62,7 +62,7 @@ Let's create a function app in the Azure portal.
     [!INCLUDE [](../../includes/functions-classic-workaround.md)]
 
      :::image type="content" source="../media/3-create-function-app-1.png" alt-text="Screenshot of Azure services with Create a resource highlighted." lightbox="../media/3-create-function-app-1.png":::
-     
+
     The **Create a resource** pane appears.
 
 1. In the resource menu, select **Compute**, and then in the results, select **Function App**. The **Create Function App** page appears.
@@ -77,7 +77,7 @@ Let's create a function app in the Azure portal.
     | **Instance Details** |
     | Function App name  | Enter a globally unique app name. This value serves as the base URL of your service. For example, you can name it **escalator-functions-xxx**, replacing xxx with your initials and a number. Valid characters are a-z, 0-9 and - |
     | Publish  | Code |
-    | Runtime stack | Node.js (the language we use to implement the function examples in this exercise). |
+    | Runtime stack | PowerShell Core |
     | Version | Accept *default* |
     | Region | Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function. |
 

@@ -5,8 +5,8 @@ metadata:
   title: Choose a tool and strategy to copy blobs
   description: Identify whether to use synchronous or asynchronous transfer, and the benefits of the three available toolsets.
   ms.date: 01/27/2020
-  author: patridge
-  ms.author: adpatrid
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

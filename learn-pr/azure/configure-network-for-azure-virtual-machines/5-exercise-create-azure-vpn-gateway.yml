@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create an Azure VPN gateway
   description: Exercise - Create an Azure VPN gateway
   ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  author: KumudD
+  ms.author: kumud
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 40

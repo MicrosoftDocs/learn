@@ -17,8 +17,8 @@ Roles and features that you can migrate include:
 - Local users and groups
 
 > [!IMPORTANT]
-> Although Windows Server Migration Tools can also be used to migrate file shares, you should use the Storage Migration Service instead.
+> Although Windows Server Migration Tools can also be used to migrate file shares, you should use the Storage Migration Service instead.
 Source servers must be running Windows Server 2008 or newer. However, you can't migrate from a server core installation of Windows Server that doesn't have the Microsoft .NET Framework. For example, Windows Server 2008 Server Core.
 
 > [!WARNING]
-> The language on the source and destination servers must match.
+> The language on the source and destination servers must match.

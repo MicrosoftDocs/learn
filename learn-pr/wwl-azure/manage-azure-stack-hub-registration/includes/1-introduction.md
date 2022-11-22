@@ -13,10 +13,6 @@ After completing this module, you'll be able to:
 
 ## Skills measured
 
-The content in the module will help you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
-
-**Implement data center integration.**
-
  -  Manage Azure Stack Hub registration.
 
 ## Prerequisites

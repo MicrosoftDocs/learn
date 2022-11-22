@@ -14,6 +14,6 @@ You can learn more by reviewing the following.
 
  -  [ExpressRoute documentation](/azure/expressroute/)
  -  [Azure Virtual WAN documentation](/azure/virtual-wan/)
- -  [Learn - Connect your on-premises network to the Microsoft global network by using ExpressRoute](/learn/modules/connect-on-premises-network-with-expressroute/)
- -  [Learn - Configure the network for your virtual machines](/learn/modules/configure-network-for-azure-virtual-machines/)
- -  [Learn - Introduction to Azure Virtual WAN](/learn/modules/introduction-azure-virtual-wan/)
+ -  [Introduction to Azure ExpressRoute](/training/modules/intro-to-azure-expressroute/)
+ -  [Design and implement Azure ExpressRoute](/training/modules/design-implement-azure-expressroute/)
+ -  [Introduction to Azure Virtual WAN](/training/modules/introduction-azure-virtual-wan/)

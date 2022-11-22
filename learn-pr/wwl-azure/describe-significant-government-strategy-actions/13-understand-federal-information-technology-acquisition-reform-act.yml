@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-significant-government-strategy-actions.understand-federal-information-technology-acquisition-reform-act
+title: Understand the Federal Information Technology Acquisition Reform Act (FITARA) of 2016
+metadata:
+  title: Understand the Federal Information Technology Acquisition Reform Act (FITARA) of 2016
+  description: "Understand the Federal Information Technology Acquisition Reform Act (FITARA) of 2016"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/13-understand-federal-information-technology-acquisition-reform-act.md)]

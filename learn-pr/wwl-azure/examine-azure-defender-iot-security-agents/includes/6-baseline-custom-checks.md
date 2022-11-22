@@ -79,7 +79,7 @@ To configure baseline custom checks:
     Default value: null
   :::column-end:::
   :::column:::
-    Full path of the baseline XML configuration.
+    Full path of the baseline xml configuration.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -96,6 +96,6 @@ To configure baseline custom checks:
     Default value: null
   :::column-end:::
   :::column:::
-    sha256sum of the XML configuration file. Use the sha256sum reference for additional information.
+    sha256sum of the xml configuration file. Use the sha256sum reference for additional information.
   :::column-end:::
 :::row-end:::

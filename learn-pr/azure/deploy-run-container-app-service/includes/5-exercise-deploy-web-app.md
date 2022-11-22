@@ -6,7 +6,7 @@ In this unit, you'll create a new web app by using the Docker image stored in Az
 
 ## Enable Docker access to the Azure Container Registry
 
-You'll use Docker to log in to the registry, and pull the web image that you want to deploy. Docker needs a username and password to perform this action. The Container Registry enables you to enable the registry name as the username and admin access key as the password to allow Docker to log in to your container registry.
+You'll use Docker to log in to the registry, and pull the web image that you want to deploy. Docker needs a username and password to perform this action. The Container Registry enables you to set the registry name as the username and the admin access key as the password to allow Docker to log in to your container registry.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true), and go to **All resources**. The **All resources** pane appears.
 
@@ -22,7 +22,7 @@ You're now ready to create your web app.
 
 1. Go back to the [Azure portal](https://portal.azure.com/?azure-portal=true) home page, and under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Web**, and under *Popular offers*, select **Web App**.
+1. In the left menu pane, select **Web**, and under *Popular Azure services*, select **Web App**.
 
     :::image type="content" source="../media/5-search-web-app-annotated.png" alt-text="Screenshot that shows the Azure Marketplace with Web App selected.":::
 
@@ -33,7 +33,7 @@ You're now ready to create your web app.
     | Setting | Value |
     |---|---|
     | **Project Details** |
-    | Subscription | Select your default Azure subscription in which you are allowed to create and manage resources. |
+    | Subscription | Select your default Azure subscription in which you're allowed to create and manage resources. |
     | Resource Group | From the dropdown list, select the existing resource group **learn-deploy-container-acr-rg**. |
     | **Instance Details** |
     | Name | Enter a unique name and make a note of it for later. |

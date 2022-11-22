@@ -36,7 +36,7 @@ To add chart labels:
 2. Axis titles: Select the chart, then select **Design** \> **Add Chart Element** \> **Axis Titles**. Ensure the Axis Title clearly describes the axis.  
 3. Data labels: Select the chart, then select **Design** \> **Add Chart Element** \> **Data Labels** \> **Outside End**.
 
-:::image type="content" source="../media/axes-options.png" alt-text="The Rename option selected in the right-click menu for Sheet1.":::
+:::image type="content" source="../media/axes-options.png" alt-text="Screenshot that shows Axes expanded under Add Chart Element from the toolbar. Primary Horizontal, Primary Vertical and More Axis Options are shown.":::
 
 To create an accessible chart design:
 

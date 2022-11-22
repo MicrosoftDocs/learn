@@ -3,7 +3,7 @@ uid: learn.cmu-cloud-computing.cloud-basics.cmu-data-center-design
 metadata:
   title: Datacenter components
   description: Carnegie Mellon University's Cloud Developer course. Take a deep dive into datacenters to discover how they are laid out and how computing resources are provisioned and metered.
-  ms.date: 02/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -27,7 +27,8 @@ prerequisites: |
   - Know the technologies that enable cloud computing
   - Understand how cloud service providers pay for and bill for the cloud
   - Know what datacenters are and why they exist
-iconUrl: /learn/achievements/cmu-cloud-developer/design-a-data-center.svg
+iconUrl: /training/achievements/cmu-cloud-developer/design-a-data-center.svg
+hidden: true
 levels:
 - beginner
 roles:
@@ -35,6 +36,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.cmu-cloud-computing.cloud-basics.cmu-data-center-design.0-introduction
 - learn.cmu-cloud-computing.cloud-basics.cmu-data-center-design.1-information-technology-components

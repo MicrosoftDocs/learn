@@ -10,6 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-devops-actions
+  ms.custom: team=cloud_advocates
+  ms.contributors: ropreddy-04092021
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise.md)]

@@ -27,7 +27,9 @@ function validateToDoItemTimestamp() {
 
 Pre-triggers cannot have any input parameters. The request object in the trigger is used to manipulate the request message associated with the operation. In the previous example, the pre-trigger is run when creating an Azure Cosmos item, and the request message body contains the item to be created in JSON format.
 
-When triggers are registered, you can specify the operations that it can run with. This trigger should be created with a `TriggerOperation` value of `TriggerOperation.Create`, which means using the trigger in a replace operation as shown in the following code is not permitted.
+When triggers are registered, you can specify the operations that it can run with. This trigger should be created with a `TriggerOperation` value of `TriggerOperation.Create`, which means using the trigger in a replace operation is not permitted.
+
+For examples of how to register and call a pre-trigger, visit the [pre-triggers](/azure/cosmos-db/sql/how-to-use-stored-procedures-triggers-udfs#pre-triggers) article.
 
 ## Post-triggers
 

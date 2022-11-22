@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Push a change through the pipeline
   description: Add a few visual changes to your application to see deployment slots in action.
   ms.date: 06/23/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: ramiMSFT
+  ms.author: rabououn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 14

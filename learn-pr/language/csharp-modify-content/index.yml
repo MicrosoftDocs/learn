@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-modify-content
 metadata:
-  title: Modify the content of strings using built-in string data type methods in C#
+  title: 'Modify the content of strings using built-in string data type methods in C#'
   description: Use built in methods to extract, remove, or replace data in strings.
-  ms.date: 11/05/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  ms.date: 08/23/2022
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Modify the content of strings using built-in string data type methods in C#
@@ -20,7 +20,7 @@ prerequisites: |
   - Beginner level experience with string helper methods
   - Beginner level experience with the `while` iteration statement
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-modify-content.svg
+iconUrl: /training/achievements/csharp-modify-content.svg
 levels:
 - beginner
 roles:

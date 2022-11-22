@@ -12,7 +12,7 @@ In this unit, you'll use the Azure portal to create a new registry in Container 
 
 1. On the Azure portal **home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Containers**, and under *Popular products*, select **Container Registry**.
+1. In the left menu pane, select **Containers**, and under *Popular Azure services*, select **Container Registry**.
 
    ![Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace.](../media/3-search-container-registry-annotated.png)
 
@@ -60,7 +60,7 @@ In this unit, you'll use the Azure portal to create a new registry in Container 
 
 ::: zone-end
 
-3. Run the following command. This command sends the folder's contents to Container Registry, which uses the instructions in the Docker file to build the image and store it. Replace `<container_registry_name>` with the name of the registry you created earlier. Take care not to leave out the `.` character at the end of the command.
+3. Run the following command. This command sends the folder's contents to the Container Registry, which uses the instructions in the Docker file to build the image and store it. Replace `<container_registry_name>` with the name of the registry you created earlier. Take care not to leave out the `.` character at the end of the command.
 
    ```bash
    az acr build --registry <container_registry_name> --image webimage .

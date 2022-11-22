@@ -1,10 +1,11 @@
-As more business data is being accessed away from locations outside of the traditional corporate network, security has become an overriding concern. Organizations need to understand how they can best protect their data, regardless of where it's accessed from and whether it sits on their corporate network, or in the cloud.
 
-This lesson introduces some important security concepts and methodologies. You'll learn about the Zero Trust model, the shared responsibility model, and defense in depth. You'll also cover common cyber security threats. The lesson introduces encryption and hashing as ways to protect data.  Lastly, you will learn about the cloud adoption framework to guide adoption to the cloud.
+As more business data is being accessed from locations outside of the traditional corporate network, security and compliance have become overriding concerns. Organizations need to understand how they can best protect their data, regardless of where it's accessed from, and whether it sits on their corporate network or in the cloud.  In addition, organizations need to ensure they're compliant with industry and regulatory requirements to ensure the protection and privacy of data.
 
-After completing this lesson, you'll be able to:
+This module introduces some important security and compliance concepts. You'll learn about the shared responsibility model, defense in depth, and Zero Trust model.   You'll be introduced to the concepts of encryption and hashing as ways to protect data. Lastly, you'll learn about concepts that relate to compliance.
 
-- Describe the Zero Trust and shared responsibility models.
-- Describe common security threats and ways to protect through the defense in-depth security model.
+After completing this module, you'll be able to:
+
+- Describe the shared responsibility and the defense in-depth security models.
+- Describe the Zero-Trust model.
 - Describe the concepts of encryption and hashing.
-- Describe the cloud adoption framework.
+- Describe some basic compliance concepts.

@@ -19,13 +19,16 @@ abstract: |
   - Choose an appropriate partitioning key.
 prerequisites: |
   Knowledge of the fundamental concepts of partitioning, replication, and resource governance for building and configuring scalable NoSQL applications that are agnostic of a Cosmos DB API.
-iconUrl: /learn/achievements/Introduction-to-open-source-database-migration-to-Azure-Cosmos-DB.svg
+iconUrl: /training/achievements/Introduction-to-open-source-database-migration-to-Azure-Cosmos-DB.svg
 levels:
 - intermediate
 roles:
 - data-engineer
 products:
 - azure
+- azure-cosmos-db
+subjects:
+- database
 units:
 - learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.introduction
 - learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.cosmos-db-overview

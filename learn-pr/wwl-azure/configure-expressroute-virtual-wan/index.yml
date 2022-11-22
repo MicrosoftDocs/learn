@@ -3,7 +3,7 @@ uid: learn.wwl.configure-expressroute-virtual-wan
 metadata:
   title: Configure ExpressRoute and Virtual WAN
   description: "You will learn how to configure ExpressRoute and Virtual WAN to provide connection services."
-  ms.date: 12/17/2021
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -17,13 +17,15 @@ abstract: |
   - Identify features and usage cases for virtual WAN.
 prerequisites: |
   None
-iconUrl: /learn/achievements/express-route-virtual-wan-configure.svg
+iconUrl: /training/achievements/express-route-virtual-wan-configure.svg
 levels:
 - intermediate
 roles:
 - administrator
 products:
 - azure-expressroute
+subjects:
+- virtual-machine
 units:
 - learn.wwl.configure-expressroute-virtual-wan.introduction
 - learn.wwl.configure-expressroute-virtual-wan.determine-expressroute-uses

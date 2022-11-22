@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-paas-resources-using-automated-methods.understand-azure-automation
+title: Understand Azure Automation
+metadata:
+  title: Understand Azure Automation
+  description: "Understand Azure Automation"
+  ms.date: 06/10/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-understand-azure-automation.md)]

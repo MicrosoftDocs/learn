@@ -41,7 +41,7 @@ To create a virtual machine with the copied VHD:
 2.  On the Specify Generation page, select **Generation 1**.
 3.  Under Checkpoint Type, disable checkpoints by unchecking the check box.
 
-You can also run the following cmdlet in PowerShell to disable checkpoints.<br>
+You can also run the following cmdlet in PowerShell to disable checkpoints.
 
 ```powershell
 Set-VM -Name <VMNAME> -CheckpointType Disabled
@@ -51,11 +51,10 @@ Set-VM -Name <VMNAME> -CheckpointType Disabled
 
 If you create a virtual machine from an existing virtual hard disk (VHD), it creates a dynamic disk by default. It can be changed to a fixed disk by selecting **Edit Disk**.
 
-You can also run the following PowerShell cmdlet to change the disk to a fixed disk.<br>
+You can also run the following PowerShell cmdlet to change the disk to a fixed disk.
 
 ```powershell
 Convert-VHD –Path c:\test\MY-VM.vhdx –DestinationPath c:\test\MY-NEW-VM.vhd -VHDType Fixed
-
 ```
 
 ## Upload master image to a storage account in Azure
@@ -66,4 +65,4 @@ The following instructions apply to a master image was created locally that can 
 
 1.  Convert the VM image (VHD) to Fixed if you haven't already. If you don't convert the image to Fixed, you can't successfully create the image.
 2.  Upload the VHD to a blob container in your storage account. You can upload quickly with the Storage Explorer tool.
-3.  Next, go to the Azure portal in your browser and search for "Images." Your search should lead you to the **Create image** page, as shown in the following screenshot:
+3.  Next, go to the Azure portal in your browser and search for "Images." Your search should lead you to the **Create image** page.

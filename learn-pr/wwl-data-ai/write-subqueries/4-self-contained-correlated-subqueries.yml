@@ -4,12 +4,13 @@ title: Use self-contained or correlated subqueries
 metadata:
   title: Use self-contained or correlated subqueries
   description: "Use self-contained or correlated subqueries"
-  ms.date: 06/30/2021
+  ms.date: 08/03/2022
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/4-self-contained-correlated-subqueries.md)]

@@ -3,7 +3,7 @@ uid: learn.wwl.implement-remote-access
 metadata:
   title: Implement remote access
   description: "Implement remote access"
-  ms.date: 10/20/2021
+  ms.date: 03/14/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ prerequisites: |
   - Active Directory Domain Services (AD DS) concepts and technologies.
   - Core networking technologies.
   - Basic security best practices.
-iconUrl: /learn/achievements/implement-remote-access.svg
+iconUrl: /training/achievements/implement-remote-access.svg
 levels:
 - intermediate
 roles:
@@ -33,6 +33,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- remote-hybrid-work
 units:
 - learn.wwl.implement-remote-access.introduction
 - learn.wwl.implement-remote-access.examine-remote-access-options

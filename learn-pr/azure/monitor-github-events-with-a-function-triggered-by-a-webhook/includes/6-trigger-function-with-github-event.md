@@ -1,6 +1,6 @@
 The GitHub *Gollum* event enables you to listen for wiki updates. When this event occurs, your Azure HttpTrigger function is triggered, and you can parse the payload to retrieve and process the data that was sent.
 
-You've shown your IT department that you can listen for *Gollum* events on your company's GitHub repository by setting up a webhook. You've also demonstrated how Azure Function apps enable you to run code when a function receives a webhook request. 
+You've shown your IT department that you can listen for *Gollum* events on your company's GitHub repository by setting up a webhook. You've also demonstrated how Azure Function apps enable you to run code when a function receives a webhook request.
 
 In this unit, we'll examine the payload from the *Gollum* event so we can update our function to parse it correctly.
 
@@ -8,14 +8,16 @@ In this unit, we'll examine the payload from the *Gollum* event so we can update
 
 The payload for the *Gollum* event contains the following items:
 
-- **pages** Pages that were updated. Each page includes the following information:
-    - `page_name` Name of the page.
-    - `title` Current page title.
-    - `action` Action that was performed on the page. Can be created or edited.
-    - `html_url` HTML wiki page. **repository** information about the repository containing the wiki page, including:
-        - `name` Name of the repository.
-        - `owner` Details of the owner of the repository.
-        - `html_url` Address of the repository. **sender** information about the user that raised the event that caused the webhook to fire.
+- **pages** that were updated. Each page includes the following information:
+  - `page_name` Name of the page.
+  - `title` Current page title.
+  - `action` Action that was performed on the page. Can be created or edited.
+  - `html_url` HTML wiki page.
+- **repository** information about the repository containing the wiki page, including:
+  - `name` Name of the repository.
+  - `owner` Details of the owner of the repository.
+  - `html_url` Address of the repository.
+- **sender** information about the user that raised the event that caused the webhook to fire.
 
 For example, a payload might look like the following code.
 
@@ -62,4 +64,4 @@ if (req.body.repository.name){
 }
 ```
 
-In the next exercise, we'll update your function code to be able to handle incoming **Gollum** event correctly.
+In the next exercise, we'll update your function code to be able to handle an incoming **Gollum** event correctly.

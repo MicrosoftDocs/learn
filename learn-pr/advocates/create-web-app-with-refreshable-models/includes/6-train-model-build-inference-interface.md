@@ -128,7 +128,7 @@ This method will show an image to the model, and the model will send back a pred
 
 Finally, you are ready to show these predictions in the UI.
 
-Add a `<div>` above the closing `<div>` in the <template> of `DetectImage.vue`.
+Add a `<div>` above the closing `<div>` in the \<template\> of `DetectImage.vue`.
 
 ```html
 <div v-for="pred in predictions" :key="pred.index">{{ pred.label }}: {{ pred.probability.toFixed(0) + '%' }}</div>

@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 We looked at three common navigation strategies used in Xamarin.Forms apps. The following table summarizes the key points.
 
 |     |     |     |

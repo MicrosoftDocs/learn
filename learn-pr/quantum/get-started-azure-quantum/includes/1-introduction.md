@@ -1,13 +1,11 @@
 Welcome to Azure Quantum!
 
-Azure Quantum is a cloud service that enables both quantum computing applications and optimization solutions, backed by the reliability and scale of Azure. On Azure Quantum, you can use the [Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit/?azure-portal=true) to:
+Azure Quantum is a cloud service that enables both quantum computing applications and optimization solutions, backed by the reliability and scale of Azure. On Azure Quantum, you can use the [Quantum Development Kit](/training/modules/qsharp-create-first-quantum-development-kit/?azure-portal=true) to:
 
 - Build Q# programs to run on quantum hardware.
 - Formulate problems for optimization solvers to run on classical hardware.
 
 In the [Quantum Computing Foundations](../../../paths/quantum-computing-fundamentals/index.yml?azure-portal=true) learning path, the quantum space exploration crew teaches you how to use quantum and quantum-inspired algorithms to solve security, logistics, infrastructure, and other types of optimization problems. Besides solving problems on the on-board simulator via the Quantum Development Kit, communication with Earth allows you to access the powerful optimizers and quantum hardware available on Azure Quantum to successfully complete your mission.
-
-![Figure showing Azure Quantum services.](../media/1-azure-quantum-services.png)
 
 In this module, you'll set up your access to Azure Quantum and learn about solutions that are available to you in the cloud.
 
@@ -24,8 +22,9 @@ In this module, you'll:
 - Discover what the Azure Quantum service has to offer: quantum computing and optimization.
 - Prepare your Azure account to use Azure Quantum.
 - Create an Azure Quantum workspace.
+- Run a sample notebook on Azure Quantum.
 
 ## Prerequisites
 
 You need:
-- An Azure account. For more information, see [Create an Azure account](/learn/modules/create-an-azure-account/?azure-portal=true).
+- An Azure account. For more information, see [Create an Azure account](/training/modules/create-an-azure-account/?azure-portal=true).

@@ -4,7 +4,7 @@ Suppose you work at an augmented-reality gaming company. Your game runs on every
 
 You need a storage solution that can handle thousands of simultaneous uploads, massive amounts of video data, and constantly growing log files. You also need to add the viewing functionality to all your mobile apps and your website, so you want API access from multiple platforms and languages.
 
-Here, you will see how Azure Blob Storage could be appropriate for this app.
+Here, you'll see how Azure Blob Storage could be appropriate for this app.
 
 ## Learning objectives
 

@@ -5,7 +5,6 @@ A solution builder adds device templates to an IoT Central application. A device
 A device template includes the following sections:
 
  -  A device model. This part of the device template defines how the device interacts with your application. A device developer implements the behaviors defined in the model.
-    
      -  Root component. Every device model has a root component. The root component's interface describes capabilities that are specific to the device model.
      -  Components. A device model may include components in addition to the root component to describe device capabilities. Each component has an interface that describes the component's capabilities. Component interfaces may be reused in other device models. For example, several phone device models could use the same camera interface.
      -  Inherited interfaces. A device model contains one or more interfaces that extend the capabilities of the root component.

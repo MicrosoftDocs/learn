@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Implement pessimistic concurrency
   description: Exercise - Implement pessimistic concurrency
   ms.date: 04/06/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash
@@ -14,4 +14,3 @@ azureSandbox: true
 durationInMinutes: 8
 content: |
   [!include[](includes/7-exercise-pessimistic-concurrency.md)]
-

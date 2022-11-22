@@ -6,8 +6,8 @@ metadata:
   title: Deploy and configure Azure SQL Database
   description: Perform the steps to deploy and configure your instance of Azure SQL Database.
   ms.date: 3/17/2021  
-  author: amthomas46
-  ms.author: antho  
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf  
   ms.topic: interactive-tutorial
   ms.prod: learning-azure  
 durationInMinutes: 15

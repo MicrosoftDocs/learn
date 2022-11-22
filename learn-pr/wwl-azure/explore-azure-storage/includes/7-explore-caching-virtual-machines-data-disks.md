@@ -4,16 +4,16 @@ When you mount disks to VMs, you can choose whether the I/O traffic between the 
 
 The possible cache types are:
 
- -  None
- -  Read
- -  Read/Write
+- None
+- Read
+- Read/Write
 
 ## Premium storage
 
 The following caching options exist:
 
- -  None
- -  Read
- -  Read/Write
- -  None + Write Accelerator (applicable only to Azure M-Series VMs)
- -  Read + Write Accelerator (applicable only to Azure M-Series VMs)
+- None
+- Read
+- Read/Write
+- None + Write Accelerator (applicable only to Azure M-Series VMs)
+- Read + Write Accelerator (applicable only to Azure M-Series VMs)

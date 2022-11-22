@@ -27,8 +27,6 @@ Azure Virtual Desktop supports hybrid identities through Azure Active Directory 
 
 Since users must be discoverable through Azure AD, Azure Virtual Desktop doesn't support standalone Active Directory deployments with ADFS.
 
-Azure Virtual Desktop currently doesn't support Active Directory Federation Services (ADFS) for SSO.
-
-The only way to avoid being prompted for your credentials for the session host is to save them in the client. We recommend you only do this with secure devices to prevent other users from accessing your resources.
+The only way to avoid being prompted for your credentials for the session host is to save them in the client. We recommend you only do this with secure devices to prevent other users from accessing your resources.<br>
 
 Windows 10 Enterprise multi-session is currently supported to be hybrid Azure AD-joined. After Windows 10 Enterprise multi-session is domain-joined, use the existing Group Policy Object to enable Azure AD registration.

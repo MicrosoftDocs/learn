@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Basic knowledge of C#
   - Basic knowledge of Azure AD
-iconUrl: /learn/achievements/secure-app-with-oidc-and-azure-ad.svg
+iconUrl: /training/achievements/secure-app-with-oidc-and-azure-ad.svg
 levels:
 - intermediate
 roles:
@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.secure-app-with-oidc-and-azure-ad.1-introduction
 - learn.secure-app-with-oidc-and-azure-ad.2-modern-auth-for-your-app

@@ -5,8 +5,8 @@ metadata:
   title: Check your knowledge
   description: Review what you've learned
   ms.date: 09/17/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-languages
 durationInMinutes: 3
@@ -48,7 +48,7 @@ quiz:
       explanation: "The `.` symbol is the member access operator."
     - content: "`{}`"
       isCorrect: false
-      explanation: "Curly braces are used to several reasons, but they never invoke a method."
+      explanation: "Curly braces are used for several reasons, but they never invoke a method."
     - content: "`()`"
       isCorrect: true
       explanation: "Correct!"

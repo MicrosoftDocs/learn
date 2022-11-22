@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Automate the configuration of a web server
   description: In this exercise, you'll automate the configuration of a web server.
   ms.date: 05/15/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: platform-cloud

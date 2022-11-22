@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.pitch-company.pitching-principles
+title: Principles of pitching
+metadata:
+  title: Principles of pitching
+  description: In this unit, you'll learn how to pitch a startup, the purpose of pitching, the pitching audience, and the types of pitch decks.
+  ms.date: 02/11/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-pitching-principles.md)]

@@ -16,7 +16,7 @@ abstract: |
   After completing this module, you'll be able to:
   - Describe the two deployment modes in Azure and their effects
   - Preview what changes will happen before you deploy by using the what-if operation
-iconUrl: /learn/achievements/bicep/arm-template-whatif.svg
+iconUrl: /training/achievements/bicep/arm-template-whatif.svg
 levels:
   - intermediate
 roles:
@@ -40,8 +40,11 @@ prerequisites: |
     - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed locally.
     - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally.
   - Either:
-    - The latest [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true&preserve-view=true) tools installed locally.
+    - The latest [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools installed locally.
     - The latest [Azure PowerShell](/powershell/azure/install-az-ps?&azure-portal=true) version installed locally.
+subjects:
+  - devops
+  - cloud-computing
 units:
   - learn.arm-template-whatif.1-introduction
   - learn.arm-template-whatif.2-deployment-modes

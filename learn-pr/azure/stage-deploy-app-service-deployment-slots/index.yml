@@ -4,8 +4,8 @@ metadata:
   title: Stage a web app deployment for testing and rollback by using App Service deployment slots
   description: Discover the benefits of creating deployment slots to streamline deployment and roll back a web app in Azure App Service.
   ms.date: 03/27/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: cephalin
+  ms.author: cephalin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Stage a web app deployment for testing and rollback by using App Service deployment slots
@@ -18,7 +18,7 @@ abstract: |
   - Swap slots to deploy a web app or roll back a deployment.
 prerequisites: |
   - Basic experience deploying apps to App Service
-iconUrl: /learn/achievements/stage-deploy-app-service-deployment-slots.svg
+iconUrl: /training/achievements/stage-deploy-app-service-deployment-slots.svg
 levels:
 - beginner
 roles:
@@ -28,6 +28,8 @@ products:
 - dotnet
 - aspnet-core
 - dotnet-core
+subjects:
+- cloud-computing
 units:
 - learn.azure.stage-deploy-app-service-deployment-slots.1-introduction
 - learn.azure.stage-deploy-app-service-deployment-slots.2-create-deployment-slots

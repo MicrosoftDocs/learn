@@ -152,7 +152,7 @@ Running this query results in the following error
 
 The query treats all rows as a single aggregated group. Therefore, all columns must be used as inputs to aggregate functions.
 
-In the previous examples, we aggregated numeric data such as the price and quantities in the previous example,. Some of the aggregate functions can also be used to summarize date, time, and character data. The following examples show the use of aggregates with dates and characters:
+In the previous examples, we aggregated numeric data such as the price and quantities in the previous example. Some of the aggregate functions can also be used to summarize date, time, and character data. The following examples show the use of aggregates with dates and characters:
 
 This query returns first and last company by name, using MIN and MAX:
 

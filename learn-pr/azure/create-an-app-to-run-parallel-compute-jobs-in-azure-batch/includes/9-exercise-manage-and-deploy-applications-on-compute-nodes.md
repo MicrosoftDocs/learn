@@ -129,11 +129,9 @@ By the end of this exercise, you'll have a working Batch process that can conver
 
 ## Test the console app
 
-1. Select the ellipses in the top-right corner of the code editor.
+1. In the code editor, right-click and select **Save**, and then select **Quit**.
 
-1. Select **Close Editor**, and in the dialog select **Save**.
-
-1. In the integrated terminal, build and run the app.
+1. In the cloud shell, build and run the app.
 
     ```bash
     dotnet run
@@ -152,7 +150,7 @@ By the end of this exercise, you'll have a working Batch process that can conver
     Uploading file ~\cutifypets\InputFiles\6.mp4 to container [input]...
     Creating pool [WinFFmpegPool]...
     Creating job [WinFFmpegJob]...
-    Adding 2 tasks to job [WinFFmpegJob]...
+    Adding 6 tasks to job [WinFFmpegJob]...
     ```
 
 1. The console app closes as soon as it has added the tasks. In Azure, the pool, nodes, job, and tasks are created. There's nothing monitoring what's happening within the app as it has exited. To see the current status of the conversion, and check the results, return to the Azure portal.
@@ -167,13 +165,9 @@ By the end of this exercise, you'll have a working Batch process that can conver
 
 1. When the tasks have completed, on the left select **Storage accounts**, then select the storage account your created in the first exercise.
 
-1. On the left select **Blobs**, then select the **output** folder.
-
-    ![Screenshot of the created containers in blob storage.](../media/9-containers-created-successfully.png)
+1. On the left select **Containers**, then select the **output** folder.
 
 1. The folder contains the converted animated gif files.
-
-    ![Screenshot of the converted files in blob storage.](../media/9-output-files.png)
 
 1. Download a file to check the cutest pet video.
 

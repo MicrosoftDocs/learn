@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-benefits-use-cloud-services.security-governance-cloud
+title: Describe the benefits of security and governance in the cloud
+metadata:
+  title: Describe the benefits of security and governance in the cloud
+  description: "Describe the benefits of security and governance in the cloud"
+  ms.date: 08/18/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-security-governance-cloud.md)]

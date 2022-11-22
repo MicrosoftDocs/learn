@@ -13,13 +13,15 @@ prerequisites: |
   Prior to taking this course, it is recommended that you have taken the Azure Administrator (AZ-103) or Azure Solutions Architect (AZ-300) exam, as well as SAP HANA or NetWeaver training.
 summary: |
   In this learning path, you see how to plan for a deployment of SAP solutions on Azure. You will also consider the preparation required for migrating SAP workloads to Azure.
-iconUrl: /learn/achievements/planning-azure-sap-workloads.svg
+iconUrl: /training/achievements/planning-azure-sap-workloads.svg
 levels:
 - advanced
 roles:
 - administrator
 products:
 - azure
+subjects:
+- cloud-computing
 modules:
 - learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture
 - learn-pr.wwl.planning-implementing-sap-solutions-azure

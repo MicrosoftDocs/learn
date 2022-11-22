@@ -16,7 +16,7 @@ Let's simulate a region-wide failure by manually initiating a failover.
 
 1. Select the storage account you created from the list of resources in your resource group.
 
-1. In the pane on the left, under the **Settings** section, select **Geo-replication**.
+1. In the pane on the left, under the **Data management** section, select **Redundancy**.
 
 1. Select **Prepare for failover**. This button isn't enabled until the initial sync from the primary to the secondary region is complete.
 
@@ -28,10 +28,10 @@ Let's simulate a region-wide failure by manually initiating a failover.
 
 1. In the **Confirm failover** field, enter **Yes**.
 1. Select **Failover**.
-1. On the geo-replication page, you see that the failover is in progress.
+1. On the geo-replication page, you'll notice that the failover is in progress.
    :::image type="content" source="../media/5-failover-progress.png" alt-text="Screenshot of the geo-replication page that shows the failover status is in progress.":::
 1. Wait a few minutes for the failover to finish.
-1. When the failover is complete, you see that the replication type is locally redundant storage (LRS) and the data is stored in one location.
+1. When the failover is complete, you'll notice that the replication type is locally redundant storage (LRS) and the data is stored in one location.
 
    :::image type="content" source="../media/5-failover-complete-lrs.png" alt-text="Screenshot of the geo-replication page that shows the replication type is now LRS and data is stored in one location.":::
 
@@ -39,10 +39,9 @@ Let's simulate a region-wide failure by manually initiating a failover.
 
 When failover is complete, your geo-replication map shows only one region. This region is your new primary. You'll need to reconfigure your account to use geo-redundant storage.
 
-1. Select **Configuration**.
-1. Under **Replication**, select **Geo-redundant storage (GRS)**.
+1. On the geo-replication page, in the **Replication** drop-down, select **Geo-redundant storage (GRS)**.
 
-    :::image type="content" source="../media/5-change-replication-type.png" alt-text="Screenshot of the storage configuration page where you can change the replication from LRS to GRS.":::
+    :::image type="content" source="../media/5-change-replication-type.png" alt-text="Screenshot of the geo-replication page, where you can change the replication from LRS to GRS.":::
 
 1. At the top of the form, select **Save**.
 
@@ -50,7 +49,7 @@ When failover is complete, your geo-replication map shows only one region. This 
 
 Now you need to estimate potential data loss. Review the **Last failover time**, and compare it with the **last sync time** value.
 
-1. In the pane on the left, under the **Settings** section, select **Geo-replication**.
+1. In the pane on the left, under the **Data management** section, select **Redundancy**.
 1. On the left side of the map, note the **Last failover time** value.
 
     :::image type="content" source="../media/5-last-sync-time-after-failover.png" alt-text="Screenshot that shows an updated last failover time on the geo-replication page.":::

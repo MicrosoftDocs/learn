@@ -9,7 +9,7 @@ In this module, you will learn how to manage compute and storage capacity for Az
 
 This module aligns with the exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
 
-## **Learning objectives**
+## Learning objectives
 
 After completing this module, you'll be able to:
 
@@ -19,13 +19,11 @@ After completing this module, you'll be able to:
  -  Manage storage capacity for Azure Stack Hub.
  -  Add IP pools in Azure Stack Hub.
 
-## **Skills measured**
-
-**Manage infrastructure.**<br>
+## Skills measured
 
  -  Manage capacity.
 
-## **Prerequisites**
+## Prerequisites
 
  -  Conceptual knowledge of Azure compute solutions.
  -  Working experience with virtual machines, containers, and app service.

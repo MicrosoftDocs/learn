@@ -1,16 +1,14 @@
 Azure Pipelines provides a pre-defined agent pool-named **Azure Pipelines** with Microsoft-hosted agents.
 
-It will often be an easy way to run jobs without needing to configure build infrastructure.
+It will often be an easy way to run jobs without configuring build infrastructure.
 
 The following virtual machine images are provided by default:
 
  -  Windows Server 2022 with Visual Studio 2022.
  -  Windows Server 2019 with Visual Studio 2019.
- -  Windows Server 2016 with Visual Studio 2017.
  -  Ubuntu 20.04.
  -  Ubuntu 18.04.
- -  macOS 11.
- -  macOS X Mojave 10.14.
+ -  macOS 11 Big Sur.
  -  macOS X Catalina 10.15.
 
 By default, all contributors in a project are members of the User role on each hosted pool.

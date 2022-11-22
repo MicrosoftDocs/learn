@@ -1,12 +1,12 @@
 While often misunderstood, a blockchain token is a powerful tool. A blockchain token can represent almost anything that we want to assign a value to. This representation includes whether the thing is virtual or a real-world, tangible object.
 
-A token can grant special platform permissions to a user, grant exclusive access to a service, or represent ownership. A token also can represent cryptocurrencies that have monetary value. Let's dive into the history of tokens and explore various use cases. We'll demonstrate exactly what a token is and what you can do with a token.
+A token can grant special platform permissions to a user, grant exclusive access to a service, or represent ownership. A token also can represent cryptocurrencies that have monetary value. Let's dive into the history of tokens and explore various use cases. We'll demonstrate exactly what a token is and what you can do with it.
 
 ## History of tokens
 
 Tokens aren't new. Tokens existed long before the emergence of blockchain and cryptocurrency.
 
-In their long history, tokens have represented any form of economic value. Shells and beads probably were the earliest forms of tokens, when they were used for trading. Present-day token forms include casinos chips, vouchers, airline points, stock certificates, concert entry tokens, dinner reservations, ID cards, and club memberships. Really, the list of possible ways to represent and use a token is unlimited.
+In their long history, tokens have represented any form of economic value. Shells and beads probably were the earliest forms of tokens, when they were used for trading. Present-day token forms include casino chips, vouchers, airline points, stock certificates, concert entry tokens, dinner reservations, ID cards, and club memberships. Really, the list of possible ways to represent and use a token is unlimited.
 
 Even our typical fiat currency, which includes cash and coins, is a type of token. The idea is that you can accumulate tokens, which have a certain assigned value, and then trade them to get some item or service of value in return.
 
@@ -26,7 +26,7 @@ Using a token in Augur is no different than using a token, for example, to take 
 
 ## Two categories of blockchain tokens
 
-Different kinds of tokens are available in blockchain, but they usually are in one of two categories:
+Different kinds of tokens are available in blockchain, but they're usually in one of two categories:
 
 - **Fungible**. Fungible tokens are:
   - *Equivalent*

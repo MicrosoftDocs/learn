@@ -6,7 +6,7 @@ In this unit, you'll learn how to annotate models so that Blazor knows what data
 
 When you collect information from a website user, it's important to check that it makes sense and is in the right form:
 
-- **For business reasons:** Customer information such as a telephone number or order details must be correct in order to give good service to users. For example, if your webpage can spot a malformed telephone number as soon as the user enters it, you can prevent costly delays later.
+- **For business reasons:** Customer information such as a telephone number or order details must be correct to give good service to users. For example, if your webpage can spot a malformed telephone number as soon as the user enters it, you can prevent costly delays later.
 - **For technical reasons:** If your code uses form input for calculations or other processing, incorrect input can cause errors and exceptions.
 - **For security reasons:** Malicious users may try to inject code by exploiting input fields that are not checked.
 
@@ -18,10 +18,10 @@ Here's an example form where the user has submitted invalid data. In this case, 
 
 It's a good idea to make validation messages as helpful as possible. Don't assume any knowledge from the user: For example, not everyone knows the format of a valid email address.
 
-When you use the **EditForm** component in Blazor, you have versatile validation options available without writing complex code:
+When you use the `EditForm` component in Blazor, you have versatile validation options available without writing complex code:
 
 - In your model, you can use **data annotations** against each property to tell Blazor when values are required and what format they should be in.
-- Within your **EditForm** component, add the **DataAnnotationsValidator** component, which will check the model annotations against the user's entered values.
+- Within your `EditForm` component, add the **DataAnnotationsValidator** component, which will check the model annotations against the user's entered values.
 - Use the **ValidationSummary** component when you want to display a summary of all the validation messages in a submitted form.
 - Use the **ValidationMessage** component when you want to display the validation message for a specific model property.
 
@@ -67,7 +67,7 @@ Other annotations that you can use in a model include:
 
 ## Add validation components to the form
 
-To configure your form to use data annotation validation, first make sure you've bound the input control to the properties of the model. Then, add the **DataAnnotationsValidator** component somewhere within the **EditForm** component. To display the messages that validation generates, use the **ValidationSummary** component, which shows all the validation messages for all controls in the form. If you prefer to show validation messages next to each control, use multiple **ValidationMessage** components. Remember to tie each **ValidationMessage** control to a specific property of the model, by using the `For` attribute:
+To configure your form to use data annotation validation, first make sure you've bound the input control to the properties of the model. Then, add the **DataAnnotationsValidator** component somewhere within the `EditForm` component. To display the messages that validation generates, use the **ValidationSummary** component, which shows all the validation messages for all controls in the form. If you prefer to show validation messages next to each control, use multiple **ValidationMessage** components. Remember to tie each **ValidationMessage** control to a specific property of the model, by using the `For` attribute:
 
 ```razor
 @page "/admin/createpizza"
@@ -123,20 +123,21 @@ public class Pizza
 }
 ```
 
-The built-in validation attributes are versatile and you can use regular expressions to check against many kinds of text pattern. However, if you have specific or unusual requirements for validation, you may be unable to satisfy them precisely with built-in attributes. In  these circumstances, you can create a custom validation attribute. Start by creating a class that inherits from the **ValidationAttribute** class and override the **IsValid** method:
+The built-in validation attributes are versatile and you can use regular expressions to check against many kinds of text patterns. However, if you have specific or unusual requirements for validation, you may be unable to satisfy them precisely with built-in attributes. In these circumstances, you can create a custom validation attribute. Start by creating a class that inherits from the **ValidationAttribute** class and overrides the **IsValid**** method:
 
 ```csharp
 public class PizzaBase : ValidationAttribute
 {
     public string GetErrorMessage() => $"Sorry, that's not a valid pizza base.";
-    
-    protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+
+    protected override ValidationResult IsValid(
+        object value, ValidationContext validationContext)
     {
         if (value != "Tomato" || value != "Pesto")
         {
             return new ValidationResult(GetErrorMessage());
         }
-        
+
         return ValidationResult.Success;
     }
 }
@@ -154,7 +155,8 @@ public class Pizza
     
     public string Description { get; set; }
     
-    [EmailAddress(ErrorMessage = "You must set a valid email address for the chef responsible for the pizza recipe.")]
+    [EmailAddress(
+        ErrorMessage = "You must set a valid email address for the chef responsible for the pizza recipe.")]
     public string ChefEmail { get; set;}
     
     [Required]
@@ -168,11 +170,11 @@ public class Pizza
 
 ## Handle form validations server-side on form submission
 
-When you use an **EditForm** component, three events are available for responding to form submission:
+When you use an `EditForm` component, three events are available for responding to form submission:
 
-- `OnSubmit`. This event fires whenever the user submits a form, regardless of the results of validation.
-- `OnValidSubmit`. This event fires when the user submits a form and their input passes validation.
-- `OnInvalidSubmit`. This event fires when the user submits a form and their input fails validation.
+- `OnSubmit`: This event fires whenever the user submits a form, regardless of the results of validation.
+- `OnValidSubmit`: This event fires when the user submits a form and their input passes validation.
+- `OnInvalidSubmit`: This event fires when the user submits a form and their input fails validation.
 
 If you use `OnSubmit`, the other two events will not fire. Instead you can use the `EditContext` parameter to check whether to process the input data or not. Use this event when you want to write your own logic to handle form submission:
 
@@ -203,7 +205,6 @@ If you use `OnSubmit`, the other two events will not fire. Instead you can use t
     void HandleSubmission(EditContext context)
     {
         bool dataIsValid = context.Validate();
-        
         if (dataIsValid)
         {
             // Store valid data here
@@ -238,7 +239,7 @@ If you use `OnValidSubmit` and `OnInvalidSubmit` instead, you don't have to chec
 @code {
     private Pizza pizza = new();
     
-    void ProcessInputData (EditContext context)
+    void ProcessInputData(EditContext context)
     {
         // Store valid data here
     }

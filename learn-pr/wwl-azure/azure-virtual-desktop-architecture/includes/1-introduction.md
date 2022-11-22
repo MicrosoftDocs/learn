@@ -15,7 +15,6 @@ After completing this module, you'll be able to:
  -  Configure a location for the Azure Virtual Desktop metadata
  -  Calculate and recommend a configuration for performance requirements
  -  Calculate and recommend a configuration for Azure Virtual Machine capacity
- -  requirements
 
 ## Prerequisites
 

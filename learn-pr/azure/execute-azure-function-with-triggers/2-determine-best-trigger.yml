@@ -2,11 +2,11 @@
 uid: learn.execute-azure-function-with-triggers.2-determine-best-trigger
 title: Determine the best trigger for your Azure function 
 metadata:
-  title: Determine the best trigger for your Azure function 
-  description: Determine the best trigger for your Azure function 
+  title: Determine the best trigger for your Azure function
+  description: Determine the best trigger for your Azure function
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

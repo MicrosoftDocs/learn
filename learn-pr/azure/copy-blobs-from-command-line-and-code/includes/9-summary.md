@@ -1,4 +1,4 @@
-In this module, you explored different techniques to copy Azure Storage blobs between storage accounts. You learned about the commands available using the Azure CLI and the AzCopy utility. Both commands provide a means of performing bulk transfers efficiently, but provide different feature sets. You also saw that, if you require complete flexibility, you can write your own custom data transfer code using the .NET Storage Client library.
+In this module, you explored different techniques to copy Azure Storage blobs between storage accounts. You learned about the commands available using the Azure CLI and the AzCopy utility. Both commands provide a means of performing bulk transfers efficiently, but provide different feature sets. You also saw that, if you require complete flexibility, you can write your own custom data-transfer code using the .NET Storage Client library.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 

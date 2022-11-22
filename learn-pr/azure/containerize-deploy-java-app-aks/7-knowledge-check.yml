@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.containerize-deploy-java-app-aks.knowledge-check
+title: Knowledge Check
+metadata:
+  unitType: Knowledge Check
+  title: Knowledge Check
+  description: Knowledge Check
+  ms.date: 9/28/2021
+  author: chtrembl
+  ms.author: chtrembl
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+quiz:
+  questions:
+  - content: "Which tool allows developers to write instructions that are used to build container images?"
+    choices:
+    - content: "Maven Build Tool"
+      isCorrect: false
+      explanation: "Maven is a build tool that allows you to configure dependencies and deploy apps."
+    - content: "Docker Runtime"
+      isCorrect: true
+      explanation: "Correct. Docker runtime is used to build, run, push and pull Docker container images."
+    - content: "Azure Container Registry"
+      isCorrect: false
+      explanation: "Azure Container Registry allows you to build, store, and manage container images and artifacts."
+  - content: "Which service allows you to build, store, and manage container images and artifacts in a private registry?"
+    choices:
+    - content: "Maven Build Tool"
+      isCorrect: false
+      explanation: "Maven is a build tool that allows you to configure dependencies and deploy apps."
+    - content: "Docker Runtime"
+      isCorrect: false
+      explanation: "Docker runtime is used to build, run, push and pull Docker container images."
+    - content: "Azure Container Registry"
+      isCorrect: true
+      explanation: "Azure Container Registry allows  you to build, store, and manage container images and artifacts in a private registry for all types of container deployments."
+  - content: "Which is NOT a Dockerfile instruction?"
+    choices:
+    - content: "RUN"
+      isCorrect: false
+      explanation: "RUN instruction is used to execute any command on top of the current image."
+    - content: "CMD"
+      isCorrect: false
+      explanation: "CMD instruction is used to set a command to be executed when running the container."
+    - content: "START"
+      isCorrect: true
+      explanation: "START is not a Dockerfile instruction."
+  - content: "What is a multi-stage Docker build?"
+    choices:
+    - content: "A feature that enables you to create a smaller container image with better caching and a smaller security footprint."
+      isCorrect: true
+      explanation: "A feature that enables you to create smaller container images with better caching and a smaller security footprint allowing for increased optimization and maintenance of the Dockerfile over time."
+    - content: "A feature that enables you to create larger container images that use less caching."
+      isCorrect: false
+      explanation: ""

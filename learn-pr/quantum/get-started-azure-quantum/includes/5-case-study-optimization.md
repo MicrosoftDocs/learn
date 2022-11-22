@@ -2,7 +2,6 @@ Azure Quantum offers solutions that enable some divisions of the space team to r
 
 There are other optimization problems of interest, such as optimizing travel time between planets, prioritizing job schedules, or finding the equilibrium configuration of certain proteins of a recently discovered form of life.
 
-![Figure of Azure Quantum optimization problems.](../media/5-azure-quantum-optimization-solutions.png)
 
 Complex optimization problems exist across every industry: vehicle routing, supply chain management, portfolio optimization, power grid management, and many others. Optimization algorithms are also at the core of many machine learning methods.
 
@@ -72,4 +71,4 @@ Microsoft Quantum has teamed up with Case Western Reserve University to use besp
 
 Read more about applications of quantum-inspired optimizations in the [Quantum Impact case studies](https://azure.microsoft.com/resources/whitepapers/search/?term=quantum).
 
-By understanding the power of quantum-inspired optimization, you'll work with your crew in the module [Solve Quantum inspired optimization problems](/learn/modules/solve-quantum-inspired-optimization-problems/?azure-portal=true) to help the logistics division efficiently load cargo vessels. In the module [Solve the job shop scheduling problem](/learn/modules/solve-job-shop-optimization-azure-quantum/?azure-portal=true), you'll work with the maintenance division to prioritize different kinds of jobs on the spaceship.
+By understanding the power of quantum-inspired optimization, you'll work with your crew in the module [Solve Quantum inspired optimization problems](/training/modules/solve-quantum-inspired-optimization-problems/?azure-portal=true) to help the logistics division efficiently load cargo vessels. In the module [Solve the job shop scheduling problem](/training/modules/solve-job-shop-optimization-azure-quantum/?azure-portal=true), you'll work with the maintenance division to prioritize different kinds of jobs on the spaceship.

@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: This unit introduces you to Azure shared disks.
   ms.date: 06/23/2021
-  author: ndelgado
-  ms.author: nedelgad
+  author: roygara
+  ms.author: rogarana
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

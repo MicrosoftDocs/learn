@@ -3,7 +3,7 @@ uid: learn.wwl.implement-hyper-v-replica
 metadata:
   title: Implement Hyper-V Replica
   description: "Implement Hyper-V Replica"
-  ms.date: 10/20/2021
+  ms.date: 07/29/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -23,7 +23,7 @@ prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
   - Windows Server.
   - Hyper-V.
-iconUrl: /learn/achievements/implement-hyper-v-replica.svg
+iconUrl: /training/achievements/implement-hyper-v-replica.svg
 levels:
 - intermediate
 roles:
@@ -31,6 +31,9 @@ roles:
 - solution-architect
 products:
 - windows-server
+subjects:
+- cloud-computing
+- virtual-machine
 units:
 - learn.wwl.implement-hyper-v-replica.introduction
 - learn.wwl.implement-hyper-v-replica.define

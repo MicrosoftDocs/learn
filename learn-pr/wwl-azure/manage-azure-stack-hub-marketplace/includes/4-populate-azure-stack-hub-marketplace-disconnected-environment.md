@@ -25,7 +25,7 @@ Install-Module -Name Azs.Syndication.Admin -AllowPrerelease -PassThru
 
 Once you have registered your Azure Stack, you can disregard the following message that appears on the Marketplace management blade, as this is not relevant for the disconnected use case:
 
-:::image type="content" source="../media/disconnected-powershell-image-1-e40ebea7.png" alt-text="Disregard the following message that appears on the Marketplace management blade."lightbox="../media/disconnected-powershell-image-1-e40ebea7.png":::
+:::image type="content" source="../media/disconnected-powershell-image-1-e40ebea7.png" alt-text="Disregard the following message that appears on the Marketplace management blade.":::
 
 
 ## Use the marketplace syndication tool to download marketplace items

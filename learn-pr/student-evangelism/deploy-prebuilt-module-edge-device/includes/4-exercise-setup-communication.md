@@ -93,6 +93,8 @@ Make sure that your password(**adminPasswordOrKey**) must be at least 12 charact
 
 It may take a few minutes to create and start the new virtual machine. Once the deployment is complete, you should receive JSON-formatted output in the CLI that contains the SSH information to connect to the virtual machine. Copy the value of the **public SSH** entry of the **outputs** section:
 
+[![An illustration is showing the public ssh.](../media/public-ssh.png)](../media/public-ssh.png)
+
 ## View the IoT Edge runtime status
 
 Use the following command to connect to your virtual machine. Replace `azureuser` if you used a different username than the one suggested during the deployment of the VM. Replace `{DNS name}` with your machine's DNS name.

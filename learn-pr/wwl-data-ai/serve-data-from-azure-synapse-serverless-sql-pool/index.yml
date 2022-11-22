@@ -18,13 +18,15 @@ abstract: |
   - Issue queries programmatically on Azure Synapse serverless SQL pool
 prerequisites: |
   - It is recommended that students have completed Data Fundamentals before starting this learning path.
-iconUrl: /learn/achievements/serve-the-data-from-azure-synapse-serverless-sql-pool.svg
+iconUrl: /training/achievements/serve-the-data-from-azure-synapse-serverless-sql-pool.svg
 levels:
 - beginner
 roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- data-analytics
 units:
 - learn.wwl.serve-data-from-azure-synapse-serverless-sql-pool.introduction
 - learn.wwl.serve-data-from-azure-synapse-serverless-sql-pool.use-synapse-studio-to-analyze-visualize-data-via

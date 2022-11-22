@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Add UI and behavior to a tip calculator app
   description: "Add UI and behavior to a tip calculator app by using Visual Studio."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
   

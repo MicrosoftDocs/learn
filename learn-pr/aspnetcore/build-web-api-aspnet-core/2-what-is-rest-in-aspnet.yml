@@ -2,7 +2,7 @@
 uid: learn.build-web-api-net-core.2-what-is-rest-in-aspnet
 metadata:
   title: REST in ASP.NET Core
-  description: Learn how to implement Create, Read, Update, Delete (CRUD) methods in the web API.
+  description: Learn how to implement create, read, update, delete (CRUD) methods in the web API.
   ms.date: 04/28/2021
   author: jongalloway
   ms.author: jogallow
@@ -15,14 +15,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which of the following is not a reason to build a web API using ASP.NET Core?"
+    - content: "Which of the following is *not* a reason to build a web API by using ASP.NET Core?"
       choices:
-      - content: "To provide a backend server for a single-page-application (SPA) front-end such as Angular or React."
+      - content: "To provide a back-end server for an SPA front end, such as Angular or React."
         isCorrect: false
-        explanation: "This is a great use case for ASP.NET Core, since it can serve the initial HTML via Razor Pages, then handle client interactions via RESTful web APIs."
-      - content: "To provide data to a mobile client application using XML or JSON."
+        explanation: "This is a great use case for ASP.NET Core, because it can serve the initial HTML via Razor Pages and then handle client interactions via RESTful web APIs."
+      - content: "To provide data to a mobile client application by using XML or JSON."
         isCorrect: false
         explanation: "Web APIs are commonly used to provide a back-end server for mobile client applications."
-      - content: "To serve a traditional HTML based web application."
+      - content: "To serve a traditional HTML-based web application."
         isCorrect: true
-        explanation: "In order to serve a traditional HTML based web application with ASP.NET Core, you would use Razor Pages or MVC."
+        explanation: "To serve a traditional HTML-based web application with ASP.NET Core, you would use Razor Pages or MVC."

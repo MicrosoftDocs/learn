@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-storage-accounts.determine-storage-account-kinds
-title: Determine storage account kinds
+title: Determine storage account types
 metadata:
-  title: Determine storage account kinds
-  description: "Determine storage account kinds"
-  ms.date: 11/24/2021
+  title: Determine storage account types
+  description: "Determine storage account types"
+  ms.date: 10/10/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 1
 content: |
   [!include[](includes/4-determine-storage-account-kinds.md)]

@@ -16,10 +16,11 @@ App Service uses federated identity, in which a third-party identity provider ma
 
 | Provider | Sign-in endpoint | How-To guidance |
 |--|--|--|
-| Microsoft Identity Platform | `/.auth/login/aad` | App Service Microsoft Identity Platform login |
-| Facebook | `/.auth/login/facebook` | App Service Facebook login |
-| Google | `/.auth/login/google` | App Service Google login |
-| Twitter | `/.auth/login/twitter` | App Service Twitter login |
+| Microsoft Identity Platform | `/.auth/login/aad` | [App Service Microsoft Identity Platform login](/azure/app-service/configure-authentication-provider-aad) |
+| Facebook | `/.auth/login/facebook` | [App Service Facebook login](/azure/app-service/configure-authentication-provider-facebook) |
+| Google | `/.auth/login/google` | [App Service Google login](/azure/app-service/configure-authentication-provider-google) |
+| Twitter | `/.auth/login/twitter` | [App Service Twitter login](/azure/app-service/configure-authentication-provider-twitter) |
+| Any OpenID Connect provider | `/.auth/login/<providerName>` | [App Service OpenID Connect login](/azure/app-service/configure-authentication-provider-openid-connect) |
 
 When you enable authentication and authorization with one of these providers, its sign-in endpoint is available for user authentication and for validation of authentication tokens from the provider. You can provide your users with any number of these sign-in options.
 

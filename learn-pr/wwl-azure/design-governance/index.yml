@@ -3,7 +3,7 @@ uid: learn.wwl.design-governance
 metadata:
   title: Design governance
   description: "Azure Architects design and recommend governance solutions."
-  ms.date: 12/13/2021
+  ms.date: 10/08/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -23,7 +23,7 @@ abstract: |
 prerequisites: |
   - Conceptual knowledge of governance policies, resource organization, and subscription management.
   - Working experience with organizing resources, applying governance policies, and enforcing compliance requirements.
-iconUrl: /learn/achievements/design-governance.svg
+iconUrl: /training/achievements/design-governance.svg
 levels:
 - advanced
 roles:
@@ -31,6 +31,8 @@ roles:
 products:
 - azure-policy
 - azure-resource-manager
+subjects:
+- information-protection-governance
 units:
 - learn.wwl.design-governance.introduction
 - learn.wwl.design-governance.design-for-governance
@@ -41,6 +43,7 @@ units:
 - learn.wwl.design-governance.design-for-azure-policy
 - learn.wwl.design-governance.design-for-role-based-access-control
 - learn.wwl.design-governance.design-for-azure-blueprints
+- learn.wwl.design-governance.design-for-azure-landing-zones
 - learn.wwl.design-governance.knowledge-check
 - learn.wwl.design-governance.summary-resources
 badge:

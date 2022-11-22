@@ -16,7 +16,7 @@ Complete the following steps to create an App Configuration instance in your Azu
 1. Run the following script to create an App Configuration store:
 
     ```bash
-    deploy/k8s/create-app-config.sh
+    ./create-app-config.sh
     ```
 
     A variation of the following output appears:
@@ -60,7 +60,7 @@ The preceding line represents a key-value pair, in which `AppConfig__Endpoint` i
 
 In Azure App Configuration, create and enable a key-value pair to be treated as a feature flag. Complete the following steps:
 
-1. In another browser tab, sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account and directory as the Cloud Shell.
+1. In another browser tab, sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account and directory as the Azure CLI.
 1. Use the search box to find and open the App Configuration resource prefixed with *:::no-loc text="eshoplearn":::*.
 
     :::image type="content" source="../media/5-implement-app-configuration/app-configuration-resource.png" alt-text="Screenshot of Azure portal search results showing the App Configuration resource prefixed with 'eshoplearn'." border="true" lightbox="../media/5-implement-app-configuration/app-configuration-resource.png":::
@@ -76,11 +76,11 @@ To access values from the App Configuration store in an ASP.NET Core app, the co
 
 Apply the following changes to your *:::no-loc text="WebSPA":::* project:
 
-1. Run the following command to install a NuGet package containing the .NET Core configuration provider for the App Configuration service:
+1. Run the following command to install a NuGet package containing the .NET configuration provider for the App Configuration service:
 
     ```dotnetcli
-    pushd src/Web/WebSPA && \
-        dotnet add package Microsoft.Azure.AppConfiguration.AspNetCore --version 4.0.0 && \
+    pushd ../../src/Web/WebSPA && \
+        dotnet add package Microsoft.Azure.AppConfiguration.AspNetCore --version 5.0.0 && \
         popd
     ```
 
@@ -141,16 +141,17 @@ Apply the following changes to your *:::no-loc text="WebSPA":::* project:
 
 Redeploy the *:::no-loc text="WebSPA":::* app to confirm that it works as intended:
 
+1. Ensure you've changed all your changes.
 1. As you did before, begin by building the *:::no-loc text="WebSPA":::* app with the following script:
 
     ```bash
-    deploy/k8s/build-to-acr.sh --services webspa
+    ./build-to-acr.sh --services webspa
     ```
 
 1. Run the following script to deploy the app to AKS:
 
     ```bash
-    deploy/k8s/deploy-application.sh --charts webspa
+    ./deploy-application.sh --charts webspa
     ```
 
 ## Test the feature flag

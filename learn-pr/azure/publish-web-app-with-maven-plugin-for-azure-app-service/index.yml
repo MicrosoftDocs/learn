@@ -3,9 +3,9 @@ uid: learn.azure.publish-app-with-maven-plugin-for-azure-web-apps
 metadata:
   title: Develop Java web app on Azure using Maven
   description: Use the Maven plugin for Azure App Service to develop a Java web app and deploy the app to Azure.
-  ms.date: 03/10/2020
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 04/18/2022
+  author: cephalin
+  ms.author: cephalin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Develop Java web app on Azure using Maven
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Experience writing web apps in Java
   - Knowledge of building and deploying Java web apps with Maven
-iconUrl: /learn/achievements/publish-app-with-maven-plugin-for-azure-web-apps.svg
+iconUrl: /training/achievements/publish-app-with-maven-plugin-for-azure-web-apps.svg
 levels:
 - beginner
 roles:
@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-app-service
+subjects:
+- development-tools
 units:
 - learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.introduction
 - learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.create-java-web-app

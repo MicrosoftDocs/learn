@@ -11,15 +11,15 @@ Key Vault also supports a contentType field for secrets. Clients may specify the
 
 As shown above, the values for Key Vault Secrets are:
 
- -  Name-vaule pair - **Name must be unique in the Vault**
- -  Value can ve any UTF-8 string - max of 25 KB in size
+ -  Name-value pair - **Name must be unique in the Vault**
+ -  Value can be any UTF-8 string - max of 25 KB in size
  -  Manual or certificate creation
  -  Activation date
  -  Expiration date
 
 ## Encryption
 
-All secrets in your Key Vault are stored encrypted. This encryption is transparent, and requires no action from the user. The Azure Key Vault service encrypts your secrets when you add them, and decrypts them automatically when you read them. The encryption key is unique to each key vault.
+All secrets in your Key Vault are stored encrypted. This encryption is transparent and requires no action from the user. The Azure Key Vault service encrypts your secrets when you add them, and decrypts them automatically when you read them. The encryption key is unique to each key vault.
 
 ## Azure storage account key management
 

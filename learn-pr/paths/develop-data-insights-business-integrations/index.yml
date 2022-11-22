@@ -19,7 +19,7 @@ prerequisites: |
   - Describe how Azure Stream Analytics is used in an IoT solution.
 summary: |
   You will learn about the tools and services that can be used to develop data insights and implement business integration, including Azure Event Grid, Azure Logic Apps, and Azure Time Series Insights.
-iconUrl: /learn/achievements/data-insights-business-integration.svg
+iconUrl: /training/achievements/data-insights-business-integration.svg
 levels:
 - intermediate
 roles:
@@ -34,6 +34,8 @@ products:
 - azure-portal
 - azure-storage
 - azure-time-series-insights
+subjects:
+- business-applications
 modules:
 - learn.wwl.examine-business-integration-for-iot-solutions
 - learn.wwl.examine-azure-time-series-insights

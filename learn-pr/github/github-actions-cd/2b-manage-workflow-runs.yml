@@ -3,10 +3,10 @@ uid: learn.github.github-actions-cd.2b-manage-workflow-runs
 title: Remove artifacts, create status badges, and configure environment protections
 metadata:
   title: Remove artifacts, create status badges, and configure environment protections
-  description: Manage workflow runs with removing artifacts, creating status badges, and configuring environment protections. 
+  description: Manage workflow runs with removing artifacts, creating status badges, and configuring environment protections.
   ms.date: 03/18/2020
-  author: jamcneil
-  ms.author: jumcn
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

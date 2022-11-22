@@ -1,4 +1,4 @@
-The default query for the Azure Cosmos DB SQL API data source is the following SQL query.
+The default query for the Azure Cosmos DB for NoSQL data source is the following SQL query.
 
 ```sql
 SELECT

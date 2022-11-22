@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-compute-solution.design-for-logic-app-solutions
-title: Design for Logic App solutions
+title: Design for Azure Logic Apps solutions
 metadata:
-  title: Design for Logic App solutions
-  description: "Design for Logic App solutions"
-  ms.date: 12/14/2021
+  title: Design for Azure Logic Apps solutions
+  description: "Design for Azure Logic Apps solutions"
+  ms.date: 11/15/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/9-design-for-logic-app-solutions.md)]

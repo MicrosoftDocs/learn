@@ -1,13 +1,14 @@
 ### YamlMime:Module
 uid: learn.choose-messaging-model
 metadata:
-  title: Choose a messaging model in Azure to loosely connect your services
+  title: Introduction to Azure messaging services
   description: Learn how Azure's storage queues, event hubs, event grid, and service bus can improve your communication between devices.
-  ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 03/10/2022
+  author: spelluru
+  ms.author: spelluru
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: intro-internal
 title: Choose a messaging model in Azure to loosely connect your services
 summary: When you have an application that consists of components running on different computers, servers, and mobile devices, reliable communications between those components can be difficult and unreliable. Azure provides several technologies that you can use to communicate more reliably, including Storage queues, Event Hubs, Event Grid, and Service Bus. This module shows you how to choose the best technology for your communication task.
 abstract: |
@@ -18,7 +19,7 @@ abstract: |
   - Identify scenarios in which Event Hubs is the best messaging technology for an application
   - Identify scenarios in which Service Bus is the best messaging technology for an application
 prerequisites: None
-iconUrl: /learn/achievements/choose-a-messaging-model-in-azure-to-connect-your-services.svg
+iconUrl: /training/achievements/choose-a-messaging-model-in-azure-to-connect-your-services.svg
 levels:
 - beginner
 roles:
@@ -29,6 +30,9 @@ products:
 - azure-service-bus
 - azure-event-grid
 - azure-event-hubs
+subjects:
+- cloud-computing
+- communication
 units:
 - learn.choose-messaging-model.1-introduction
 - learn.choose-messaging-model.2-choose-whether-to-use-message-queues-or-events

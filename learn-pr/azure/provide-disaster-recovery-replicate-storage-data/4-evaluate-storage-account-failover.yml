@@ -5,8 +5,8 @@ metadata:
   title: Evaluate storage account failover
   description: Learn about the storage account failover process.
   ms.date: 10/08/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

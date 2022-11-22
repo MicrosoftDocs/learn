@@ -3,7 +3,7 @@ uid: learn.wwl.describe-performance-monitoring
 metadata:
   title: Describe performance monitoring
   description: "Describe performance monitoring"
-  ms.date: 12/06/2021
+  ms.date: 09/26/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - Experience creating and configuring resources using the Azure portal.
   - Ability to use Windows Performance Monitor to monitor system components such as CPU, I/O, network traffic.
-iconUrl: /learn/achievements/describe-performance-monitoring.svg
+iconUrl: /training/achievements/describe-performance-monitoring.svg
 levels:
 - intermediate
 roles:
@@ -31,13 +31,16 @@ products:
 - azure
 - azure-sql-database
 - sql-server
+subjects:
+- data-management
 units:
 - learn.wwl.describe-performance-monitoring.introduction
 - learn.wwl.describe-performance-monitoring.tools
 - learn.wwl.describe-performance-monitoring.describe-critical-performance-metrics
 - learn.wwl.describe-performance-monitoring.establish-baseline-metrics
 - learn.wwl.describe-performance-monitoring.describe-extended-events
-- learn.wwl.describe-performance-monitoring.describe-azure-intelligent-insights
+- learn.wwl.describe-performance-monitoring.describe-azure-sql-insights
+- learn.wwl.describe-performance-monitoring.explore-query-performance-insight
 - learn.wwl.describe-performance-monitoring.exercise
 - learn.wwl.describe-performance-monitoring.knowledge-check
 - learn.wwl.describe-performance-monitoring.summary

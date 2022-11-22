@@ -2,7 +2,7 @@ In this unit, you will learn how to enable autoscaling, create autoscale rules, 
 
 ## Enable autoscaling
 
-To get started with autoscaling navigate to to your App Service plan in the Azure portal and select **Scale out (App Service plan)** in the **Settings** group in the left navigation pane.
+To get started with autoscaling navigate to your App Service plan in the Azure portal and select **Scale out (App Service plan)** in the **Settings** group in the left navigation pane.
 
 > [!NOTE]
 > Not all pricing tiers support autoscaling. The development pricing tiers are either limited to a single instance (the **F1** and **D1** tiers), or they only provide manual scaling (the **B1** tier). If you've selected one of these tiers, you must first scale up to the **S1** or any of the **P** level production tiers.

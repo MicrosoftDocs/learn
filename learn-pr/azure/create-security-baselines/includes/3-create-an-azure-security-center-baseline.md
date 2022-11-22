@@ -1,168 +1,196 @@
-Microsoft Defender for Cloud provides unified security management and advanced threat protection for workloads running in Azure, on-premises, and in other clouds. The following Defender for Cloud recommendations, if followed, will set various security policies on an Azure subscription.
+Microsoft Defender for Cloud provides unified security management and advanced threat protection for workloads that run in Azure, on-premises, and in other clouds. The following Defender for Cloud recommendations, if followed, will set various security policies on an Azure subscription. These policies define the set of controls that are recommended for your resources with an Azure subscription.
 
-These policies define the set of controls that are recommended for your resources with an Azure subscription.
+## Microsoft Defender for Cloud security recommendations
 
-## Microsoft Defender for Cloud recommendations
+The following sections describe the Microsoft Defender for Cloud recommendations that are in CIS Microsoft Azure Foundations Security Benchmark v. 1.3.0. Included with each recommendation are the basic steps to complete in the Azure portal. You should complete these steps for your own subscription and by using your own resources to validate each security recommendation. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
 
-Here are the recommendations for setting up Microsoft Defender for Cloud. Included with each recommendation are the basic steps to follow in the Azure portal. You should perform these steps with your own subscription using your own resources to validate the security for each. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
+### Enable enhanced security features - Level 2
 
-### Enable the Standard pricing tier - Level 2
+Microsoft Defender for Cloud is offered in two modes, **Without enhanced security features (Free)** and **With enhanced security features**. Enabling enhanced security extends the capabilities of the Free mode to workloads that run in private clouds and other public clouds. Enhanced security also provides unified security management and threat protection across your hybrid cloud workloads. This mode also adds advanced threat detection capabilities, such as:
 
-Microsoft Defender for Cloud is offered in two pricing tiers, **Free** and **Standard**. The Standard tier extends the capabilities of the Free tier to workloads running in private and other public clouds, providing unified security management and threat protection across your hybrid cloud workloads. The Standard tier also adds advanced threat detection capabilities, which uses built-in behavioral analytics and machine learning to identify attacks and zero-day exploits, access and application controls to reduce exposure to network attacks and malware, and more. Microsoft Defender for Cloud Standard supports Azure resources including virtual machines (VMs), virtual machine scale sets, App Service, SQL servers, threat detection provided with Microsoft Security Response Center, and Storage accounts.
+- Built-in behavioral analytics and machine learning to identify attacks and zero-day exploits.
+- Access and application controls to reduce exposure to network attacks and malware.
 
-1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
+Microsoft Defender for Cloud with all enhanced security features offers threat detection provided with Microsoft Security Response Center and supports resources deployed in:
 
-1. In resource menu, select **Defender for Cloud**. The **Defender for Cloud** Overview pane appears.
+- Azure Virtual Machines
+- Virtual machine scale sets
+- Azure App Service
+- Azure SQL Server
+- Azure Storage
 
-1. Select the subscription that will be upgraded to Standard.
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Defender for Cloud**.
 
-1. Select **Pricing tier**.
+1. In the left menu under **General**, select **Getting started**.
 
-1. Select **Standard** to upgrade.
+1. Select the **Upgrade** tab, and then select the subscription to upgrade. The **Resources** pane shows the resources that will be protected and the billing cost per resource.
 
-1. Select **Save**.
+1. Select the **Upgrade** button.
 
-    > [!NOTE]
-    > If you're still in a free tier, the portal might lock on the **Getting started** option, shown in the following screenshot. You can enable the Standard tier from this pane as well.
+    :::image type="content" source="../media/microsoft-defender-for-cloud/upgrade-subscription.png" alt-text="Screenshot that shows the getting started with Microsoft Defender for Cloud pane.":::
 
-    ![Screenshot showing getting started with Microsoft Defender for Cloud pane.](../media/3-asc-get-started.png)
+### View Microsoft Defender for Cloud built-in security policies
 
-### Microsoft Defender for Cloud built-in security polices
+To see the Microsoft Defender for Cloud security policies for your Azure subscription:
 
-The policies are grouped into four functional groups as follows.
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Defender for Cloud**.
 
-   ![Screenshot of Security policy AuditIfNotExists.](../media/3-asc-security-policies.png)
+1. In the left menu under **Management**, select **Environment settings**.
 
-The enabled policies define the Microsoft Defender for Cloud recommendations. Currently, *Enable Monitoring in Microsoft Defender for Cloud* is in **Preview** so the listed policies are subject to change.
+1. Select the subscription to open the **Policy settings** pane.
 
-### Enable the automatic provision of a monitoring agent - Level 1
+:::image type="content" source="../media/microsoft-defender-for-cloud/environment-settings.png" alt-text="Screenshot that shows the environment settings for Defender for Cloud.":::
 
-When automatic provisioning is enabled, Defender for Cloud installs the Microsoft Monitoring Agent on all supported Azure VMs and any new ones that are created. **Automatic provisioning is strongly recommended**.
+The enabled policies define the Microsoft Defender for Cloud recommendations, as shown in the following example:
 
-1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
+:::image type="content" source="../media/microsoft-defender-for-cloud/policy-settings.png" alt-text="Screenshot that shows the built-in security policies for Defender for Cloud.":::
 
-1. In the **Defender for Cloud** Overview menu, under **Management**, select **Security policy**. The **Defender for Cloud** Security Policy pane appears.
+### Enable automatic provision of the Log Analytics agent - Level 1
 
-1. In the list of management groups and subscription, select the subscription on which agents will be installed.
+When you enable automatic provisioning, Defender for Cloud installs the Azure Log Analytics agent on all supported Azure VMs and on any new VMs you create. *Automatic provisioning is strongly recommended*.
 
-1. Select **Install agents**.
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Defender for Cloud**.
 
-    ![Screenshot showing getting started again with Microsoft Defender for Cloud pane.](../media/3-asc-install-agents.png)
+1. In the left menu under **General**, select **Getting started**.
+
+1. Select the **Install agents** tab, and then select the subscription to install agents on.
+
+1. Select the **Install agents** button.
+
+    :::image type="content" source="../media/microsoft-defender-for-cloud/install-agents.png" alt-text="Screenshot that shows the getting started pane and the Install agents tab.":::
 
 ### Enable System Updates - Level 1
 
-Microsoft Defender for Cloud monitors daily Windows and Linux VMs and computers for missing operating system updates. Defender for Cloud retrieves a list of available security and critical updates from *Windows Update* or *Windows Server Update Services (WSUS)*, depending on which service is configured on a Windows computer. Defender for Cloud also checks for the latest updates in Linux systems. If your VM or computer is missing a system update, Defender for Cloud will recommend that you apply system updates.
+Microsoft Defender for Cloud daily monitors Windows and Linux VMs and computers for missing operating system updates. Defender for Cloud retrieves a list of available security and critical updates from Windows Update or Windows Server Update Services (WSUS). Which updates are on the list depends on which service you configure on a Windows computer. Defender for Cloud also checks for the latest updates on Linux systems. If your VM or computer is missing a system update, Defender for Cloud recommends that you apply system updates.
 
-1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Defender for Cloud**.
 
-1. On the **Defender for Cloud Overview** pane, in the left menu pane, under **Management**, select **Security policy**. The **Security policy** pane appears for the **Defender for Cloud**.
-
-1. Under **Policy Management**, select a subscription or management group from the list.
-
-1. Check that **System updates should be installed on your machines** is one of the policies.
-
-1. Select the **Enable Monitoring in Microsoft Defender for Cloud** link.
-
-    ![Screenshot of the Security policy Microsoft Defender for Cloud pane.](../media/3-asc-enable-system-updates.png)
-
-1. In this example, the Microsoft Defender for Cloud agent has not been deployed to a VM or physical machine so the message **AuditIfNotExists** appears. AuditIfNotExists enables auditing on resources that match the if condition. If the resource is not deployed, **NotExists** appears.
-
-    ![Screenshot again of Security policy AuditIfNotExists.](../media/3-asc-enable-auditing.png)
-
-    If enabled, **Audit** appears. If deployed but disabled, **Disabled** appears.
-
-    ![Screenshot yet again of Security policy AuditIfNotExists.](../media/3-state-of-audit.png)
-
-### Enable Security Configurations - Level 1
-
-Microsoft Defender for Cloud monitors security configurations by applying a set of over 150 recommended rules for hardening the OS, including rules related to firewalls, auditing, password policies, and more. If a machine is found to have a vulnerable configuration, Defender for Cloud generates a security recommendation.
-
-1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
-
-1. On the **Defender for Cloud Overview** pane, in the left menu pane, under **Management**, select **Security policy**. The **Security policy** pane appears for the **Defender for Cloud**.
-
-1. Under **Policy Management**, select a subscription or management group from the list.
-
-1. Check that **Vulnerabilities in security configuration on your virtual machine scale sets should be remediated** is one of the policies.
-
-    > [!NOTE]
-    > All of the following policies that have a (\*) in their title are listed in the **Security policies** pane as previously described.
-
-### Enable Endpoint Protection (\*) - Level 1
-
-Endpoint protection is recommended for all VMs.
-
-### Enable Disk Encryption (\*) - Level 1
-
-Microsoft Defender for Cloud recommends that you apply disk encryption if you have Windows or Linux VM disks that are not encrypted using Azure Disk Encryption. Disk Encryption lets you encrypt your Windows and Linux IaaS VM disks. Encryption is recommended for both the OS and data volumes on your VM.
-
-### Enable Network Security Groups (\*) - Level 1
-
-Microsoft Defender for Cloud recommends that you enable a network security group (NSG) if one is not already enabled. NSGs contain a list of Access Control List (ACL) rules that allow or deny network traffic to your VM instances in a virtual network. NSGs can be associated with either subnets or individual VM instances within that subnet. When an NSG is associated with a subnet, the ACL rules apply to all the VM instances in that subnet. In addition, traffic to an individual VM can be restricted further by associating an NSG directly to that VM.
-
-### Enable Web Application Firewall (\*) - Level 1
-
-Microsoft Defender for Cloud may recommend that you add a web application firewall (WAF) from a Microsoft partner to secure your web applications.
-
-### Enable Vulnerability Assessment (\*) - Level 1
-
-The vulnerability assessment in Microsoft Defender for Cloud is part of the Defender for Cloud VM recommendations. If Defender for Cloud doesn't find a vulnerability assessment solution installed on your VM, it recommends that you install one. A partner agent, after being deployed, starts reporting vulnerability data to the partner's management platform. In turn, the partner's management platform provides vulnerability and health monitoring data back to Defender for Cloud.
-
-### Enable Storage Encryption (\*) - Level 1
-
-When this setting is enabled, any new data in Azure Blobs and Files will be encrypted.
-
-### Enable JIT Network Access (\*) - Level 1
-
-Just-in-time (JIT) VM access can be used to lock down inbound traffic to your Azure VMs, reducing exposure to attacks while providing easy access to connect to VMs when needed.
-
-### Enable Adaptive Application Controls (\*) - Level 1
-
-Adaptive application control is an intelligent, automated end-to-end approved application listing solution from Microsoft Defender for Cloud. It helps you control which applications can run on your Azure and non-Azure VMs (Windows and Linux), which, among other benefits, helps harden your VMs against malware. Defender for Cloud uses machine learning to analyze the applications running on your VMs, and helps you apply the specific approval rules using this intelligence. This capability greatly simplifies the process of configuring and maintaining approved application policies.
-
-### Enable SQL Auditing & Threat Detection (\*) - Level 1
-
-Microsoft Defender for Cloud will recommend that you turn on auditing and threat detection for all databases on your Azure SQL servers if auditing is not already enabled. Auditing and threat detection can help you maintain regulatory compliance, understand database activity, and gain insight into discrepancies and anomalies that could indicate business concerns or suspected security violations.
-
-### Enable SQL Encryption (\*) - Level 1
-
-Microsoft Defender for Cloud will recommend that you enable Transparent Data Encryption (TDE) on SQL databases if TDE is not already enabled. TDE protects your data and helps you meet compliance requirements by encrypting your database, associated backups, and transaction log files at rest, without requiring changes to your application.
-
-### Set Security Contact Email and Phone Number - Level 1
-
-Microsoft Defender for Cloud will recommend that you provide security contact details for your Azure subscription if you haven't already. This information will be used by Microsoft to contact you if the Microsoft Security Response Center (MSRC) discovers that your customer data has been accessed by an unlawful or unauthorized party. MSRC performs select security monitoring of the Azure network and infrastructure and receives threat intelligence and abuse complaints from third parties.
-
-1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
-
-1. On the Azure **Home** page, in the top search bar, search for and select *Cost Management + Billing*. The **Billing scopes** pane appears for **Cost Management + Billing**.
-
-1. Enter or validate the contact information that appears.
-
-    ![Screenshot of the Contact information Microsoft Defender for Cloud pane.](../media/3-contact-info.png)
-
-### Enable Send me emails about alerts - Level 1
-
-Microsoft Defender for Cloud will recommend that you provide security contact details for your Azure subscription if you haven't already.
-
-1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
-
-1. On the Azure **Home** page, in the top search bar, search for and select *Defender for Cloud*. The **Defender for Cloud - Overview** pane appears.
-
-1. In the left menu pane, under **Management**, select **Pricing & settings**. The **Pricing & settings** pane appears for **Defender for Cloud**.
+1. In the left menu under **Management**, select **Environment settings**.
 
 1. Select the subscription.
 
-1. Select **Email notifications**.
+1. In the left menu, select **Security policy**.
 
-1. Select **Save**.
+1. Under **Default initiative**, select a subscription or management group.
 
-    ![Screenshot of the alert email notification Microsoft Defender for Cloud pane.](../media/3-asc-email-notifications.png)
+1. Select the **Parameters** tab.
+
+1. Ensure that the **Only show parameters that need input or review** box is cleared.
+
+   :::image type="content" source="../media/microsoft-defender-for-cloud/security-policies-parameters.png" alt-text="Screenshot that shows the Parameters tab and the checkbox for Only show parameters that need input or review is cleared.":::
+
+1. Ensure that **System updates should be installed on your machines** is one of the policies listed.
+
+   In the following example, the Microsoft Defender for Cloud agent hasn't been deployed to a VM or physical machine, so the message **AuditIfNotExists** appears. AuditIfNotExists enables auditing on resources that match the *if* condition. If the resource isn't deployed, **NotExists** appears.
+
+    :::image type="content" source="../media/microsoft-defender-for-cloud/parameters-system-updates.png" alt-text="Screenshot that shows the 'System updates should be installed on your machines' parameter.":::
+
+    If **System updates should be installed on your machines** is enabled, **Audit** appears. If deployed but disabled, **Disabled** appears.
+
+1. If you change any settings, select the **Review + Save** tab, and then select **Save**.
+
+### Enable Security Configurations - Level 1
+
+Microsoft Defender for Cloud monitors security configurations by applying a set of more than 150 recommended rules for hardening the OS. These rules are related to firewalls, auditing, password policies, and more. If a machine is found to have a vulnerable configuration, Defender for Cloud generates a security recommendation.
+
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Defender for Cloud**.
+
+1. In the left menu under **Management**, select **Environment settings**.
+
+1. Select the subscription.
+
+1. In the left menu, select **Security policy**.
+
+1. Under **Default initiative**, select a subscription or management group.
+
+1. Select the **Parameters** tab.
+
+1. Ensure that **Vulnerabilities in security configuration on your virtual machine scale sets should be remediated** is one of the policies.
+
+1. If you change any settings, select the **Review + Save** tab, and then select **Save**.
+
+> [!NOTE]
+> All of the following policy categories that have a (\*) in their title are on the **Parameters** tab. In some cases, there are several options in each category.
+
+#### Enable endpoint protection (\*) - Level 1
+
+Endpoint protection is recommended for all VMs.
+
+#### Enable disk encryption (\*) - Level 1
+
+Microsoft Defender for Cloud recommends that you use Azure Disk Encryption if you have Windows or Linux VM disks. Disk encryption lets you encrypt your Windows and Linux infrastructure as a service (IaaS) VM disks. Encryption is recommended for both the OS and the data volumes on your VM.
+
+#### Enable Network Security Groups (\*) - Level 1
+
+Microsoft Defender for Cloud recommends that you enable a network security group (NSG). NSGs contain a list of Access Control List (ACL) rules that allow or deny network traffic to your VM instances in a virtual network. NSGs can be associated either with subnets or with individual VM instances within that subnet. When an NSG is associated with a subnet, the ACL rules apply to all the VM instances in that subnet. In addition, traffic to an individual VM can be restricted further by associating an NSG directly with that VM.
+
+#### Enable a web application firewall (\*) - Level 1
+
+Microsoft Defender for Cloud might recommend that you add a web application firewall (WAF) from a Microsoft partner to secure your web applications.
+
+#### Enable vulnerability assessment (\*) - Level 1
+
+The vulnerability assessment in Microsoft Defender for Cloud is part of the Defender for Cloud VM recommendations. If Defender for Cloud doesn't find a vulnerability assessment solution installed on your VM, it recommends that you install one. A partner agent, after being deployed, starts reporting vulnerability data to the partner's management platform. In turn, the partner's management platform provides vulnerability and health monitoring data back to Defender for Cloud.
+
+#### Enable storage encryption (\*) - Level 1
+
+When storage encryption is enabled, any new data in Azure Blob Storage and Azure Files is encrypted.
+
+#### Enable JIT network access (\*) - Level 1
+
+Just-in-time (JIT) network access can be used to lock down inbound traffic to your Azure VMs. JIT network access reduces exposure to attacks while providing easy access to connect to VMs when needed.
+
+#### Enable adaptive application control (\*) - Level 1
+
+Adaptive application control is an intelligent, automated end-to-end approved application listing solution from Microsoft Defender for Cloud. It helps you control which applications can run on your Azure and non-Azure VMs (Windows and Linux), which, among other benefits, helps harden your VMs against malware. Defender for Cloud uses machine learning to analyze the applications running on your VMs. It helps you apply the specific approval rules by using adaptive application control intelligence. The capability greatly simplifies the process of configuring and maintaining approved application policies.
+
+#### Enable SQL auditing and threat detection (\*) - Level 1
+
+Microsoft Defender for Cloud recommends that you turn on auditing and threat detection for all databases on your servers that run Azure SQL. Auditing and threat detection can help you maintain regulatory compliance, understand database activity, and gain insight into discrepancies and anomalies that might alert you to business concerns or suspected security violations.
+
+#### Enable SQL encryption (\*) - Level 1
+
+Microsoft Defender for Cloud recommends that you enable Transparent Data Encryption (TDE) on SQL databases running in Azure. TDE protects your data and helps you meet compliance requirements by encrypting your database, associated backups, and transaction log files at rest. Enabling TDE doesn't require making changes to your applications.
+
+### Set security contact email and phone number - Level 1
+
+Microsoft Defender for Cloud recommends that you provide security contact details for your Azure subscription. Microsoft uses this information to contact you if the Microsoft Security Response Center finds that your customer data has been accessed by an unauthorized party. The Microsoft Security Response Center performs select security monitoring of the Azure network and infrastructure and receives threat intelligence and abuse complaints from third parties.
+
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Cost Management + Billing**. Depending on your subscriptions, you'll either see the **Overview** pane or the **Billing scopes** pane.
+
+    - If you see the **Overview** pane, continue to the next step.
+    - If you see the **Billing scopes** pane, select your subscription to go to the **Overview** pane.
+
+1. In the **Overview** pane, in the left menu under **Settings**, select **Properties**.
+
+1. Validate the contact information that appears. If you need to update the contact information, select the **Update sold to** link and enter the new information.
+
+1. If you change any settings, select **Save**.
+
+:::image type="content" source="../media/microsoft-defender-for-cloud/update-contact-information.png" alt-text="Screenshot that shows the Properties pane with contact information and the Update sold to link selected.":::
+
+### Enable Send me emails about alerts - Level 1
+
+Microsoft Defender for Cloud recommends that you provide security contact details for your Azure subscription.
+
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Defender for Cloud**.
+
+1. In the left menu under **Management**, select **Environment settings**.
+
+1. Select the subscription.
+
+1. In the left menu under **Settings**, select **Email notifications**.
+
+1. In the **All users with the following roles** dropdown, select your role or, in **Additional email addresses (separated by commas)**, enter your email address.
+
+1. Select the **Notify about alerts with the following severity** checkbox, select an alert severity, and then select **Save**.
+
+:::image type="content" source="../media/microsoft-defender-for-cloud/email-notifications-settings.png" alt-text="Screenshot that shows the email notifications settings pane for Microsoft Defender for Cloud.":::
 
 ### Enable Send email also to subscription owners - Level 1
 
-Microsoft Defender for Cloud will recommend that you provide security contact details for your Azure subscription if you haven't already.
+Microsoft Defender for Cloud recommends that you provide security contact details for your Azure subscription.
 
-- Using the previous **Email notifications** form, additional emails can be added separated by commas.
+1. In the **Email notifications** pane described in the preceding section, you can add more email addresses separated by commas.
 
-    > [!TIP]
-    > Remember to select **Save** if you make changes to any of the settings.
+1. If you change any settings, in the menu bar, select **Save**.

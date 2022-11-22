@@ -54,7 +54,7 @@ In this exercise, you will explore the Microsoft Sentinel playbooks by performin
 
     :::image type="content" source="../media/06-get-incident.png" alt-text="Screenshot of Get Incident." border="true":::
 
-    |||
+    | Settings | Values |
     | --- | --- |
     | Specify subscription ID | **Subscription ID** |
     | Specify resource group | **Resource group** |
@@ -65,7 +65,7 @@ In this exercise, you will explore the Microsoft Sentinel playbooks by performin
 16. From the **Actions** tab, locate and select **Change incident status (Preview)**.
 17. In the **Change incident status (Preview)** window, provide the following inputs:
 
-    |||
+    | Settings | Values |
     | --- | --- |
     | Specify subscription ID | **Subscription ID** |
     | Specify resource group | **Resource group** |

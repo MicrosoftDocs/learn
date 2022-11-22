@@ -18,8 +18,6 @@ After completing this module, you'll be able to:
 
 ## Skills measured
 
-### Manage infrastructure
-
  -  Plan and configure business continuity and disaster recovery.
 
 ## Prerequisites

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/10/2021
+  ms.date: 06/21/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -32,13 +32,13 @@ quiz:
     choices:
     - content: "Threat Actor Name"
       isCorrect: false
-      explanation: "Incorrect. This is not easily searched for in log data."
+      explanation: "Incorrect. This isn't easily searched for in log data."
     - content: "Domain Name"
       isCorrect: true
       explanation: "Correct. This indicator can be used to query against your log data."
     - content: "Threat Campaign"
       isCorrect: false
-      explanation: "Incorrect. This is not easily searched for in log data."
+      explanation: "Incorrect. This isn't easily searched for in log data."
   - content: "What table do you query in KQL to view your indicators?"
     choices:
     - content: "Indicator"

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.test-python-with-pytest.summary
+title: Summary
+metadata:
+  title: Summary
+  description: In this module, we went through the basics of testing with Pytest. We covered writing and organizing tests and some examples running Pytest.
+  ms.date: 1/25/2022
+  author: alfredodeza
+  ms.author: alfredodeza
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

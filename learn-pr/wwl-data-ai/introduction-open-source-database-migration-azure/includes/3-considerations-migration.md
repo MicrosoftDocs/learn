@@ -40,6 +40,8 @@ For the fall-back plan, consider:
 ## Offline versus online migration
 
 To migrate a database, you have at least two options:
+>[!NOTE]
+>The **online** option is not currently available for **MySQL databases** in Data Migration Service.
 
 - Halt the system, transfer the database, then reconfigure and restart the system to use the new database. This is an offline migration.
 - Keep the system running while you move the database to its new location, roll forward transactions being performed against the original database to the new database while the migration is proceeding, and then switch your applications to connect to the new database. This is an online migration.
@@ -192,8 +194,7 @@ For a database migration project, you have to make sure that users are authorize
     GRANT USAGE ON *.* TO 'dbadmin'@'cloud-host'
     ```
 
-> [!IMPORTANT]
-> Neither Azure Database for MySQL, Azure Database for MariaDB, nor Azure Database for PostgreSQL currently support user accounts in Azure Active Directory. If you're using Active Directory to store user accounts on-premises, you must migrate those user accounts to another store in the cloud.
+
 
 ### Encryption
 

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create a basic container action by using GitHub Actions
   description: Use GitHub Learning Lab to create a container action that will print a greeting in the action's log file, and a workflow that triggers on a push to the repository.
   ms.date: 05/19/2020
-  author: jamcneil
-  ms.author: jumcn
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 20

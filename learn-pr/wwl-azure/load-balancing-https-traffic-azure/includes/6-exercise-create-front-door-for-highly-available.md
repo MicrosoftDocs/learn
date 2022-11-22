@@ -83,7 +83,7 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
     :::image type="content" source="../media/add-backends-15334426.png" alt-text="Create a Front Door add a backend pool":::
 
 
-8.  Enter a globally unique **host name**, like BackendPool.
+8.  Enter a **host name**, like BackendPool.
 9.  Under **BACKENDS**, select + **Add a backend**.
 10. In Add a backend, enter, or select the following information.
     

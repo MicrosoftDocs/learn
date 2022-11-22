@@ -51,13 +51,10 @@ To enable all features of Azure Monitor for monitoring a virtual machine, you ne
     No configuration.
   :::column-end:::
   :::column:::
-    - Host platform metrics collected to Metrics.
-    - Activity log collected.
+    Host platform metrics collected to Metrics.Activity log collected.
   :::column-end:::
   :::column:::
-    - Metrics explorer for host.
-    - Metrics alerts for host.
-    - Activity log alerts.
+    Metrics explorer for host.Metrics alerts for host.Activity log alerts.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -65,16 +62,10 @@ To enable all features of Azure Monitor for monitoring a virtual machine, you ne
     Enable Azure Monitor for VMs.
   :::column-end:::
   :::column:::
-    - Log Analytics agent installed.
-    - Dependency agent installed.
-    - Guest performance data collected to Logs.
-    - Process and dependency details collected to Logs.
+    Log Analytics agent installed.Dependency agent installed.Guest performance data collected to Logs.Process and dependency details collected to Logs.
   :::column-end:::
   :::column:::
-    - Performance charts and workbooks for guest performance data.
-    - Log queries for guest performance data.
-    - Log alerts for guest performance data.
-    - Dependency map.
+    Performance charts and workbooks for guest performance data.Log queries for guest performance data.Log alerts for guest performance data.Dependency map.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -82,36 +73,9 @@ To enable all features of Azure Monitor for monitoring a virtual machine, you ne
     Install the diagnostics extension and telegraf agent.
   :::column-end:::
   :::column:::
-    - Guest performance data collected to Metrics.
+    Guest performance data collected to Metrics.
   :::column-end:::
   :::column:::
-    - Metrics explorer for guest.
-    - Metrics alerts for guest.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Configure Log Analytics workspace.
-  :::column-end:::
-  :::column:::
-    - Events collected from guest.
-  :::column-end:::
-  :::column:::
-    - Log queries for guest events.
-    - Log alerts for guest events.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Create diagnostic setting for virtual machine.
-  :::column-end:::
-  :::column:::
-    - Platform metrics collected to Logs.
-    - Activity log collected to Logs.
-  :::column-end:::
-  :::column:::
-    - Log queries for host metrics.
-    - Log alerts for host metrics.
-    - Log queries for Activity log.
+    Metrics explorer for guest.Metrics alerts for guest.
   :::column-end:::
 :::row-end:::

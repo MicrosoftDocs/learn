@@ -4,8 +4,8 @@ metadata:
   title: Introduction to Linux on Azure
   description: Discover the unique benefits of running Linux on Azure, and how to run Linux-based applications and workloads in the cloud with Azure.  
   ms.date: 6/26/2020
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: ChaseCrum
+  ms.author: chasecrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Linux on Azure
@@ -20,8 +20,8 @@ abstract: |
   - Envision building new Linux-based workloads and migrating existing workloads to Azure
   - Evaluate whether Linux on Azure is the right choice for your solutions
 prerequisites: |
-  - Beginner-level familiarity with the fundamental concepts of cloud computing, including IaaS and PaaS. You can find an overview of these concepts in [Cloud Concepts - Principles of cloud computing](/learn/modules/principles-cloud-computing/).
-iconUrl: /learn/achievements/intro-to-azure-linux.svg
+  - Beginner-level familiarity with the fundamental concepts of cloud computing, including IaaS and PaaS. You can find an overview of these concepts in [Cloud Concepts - Principles of cloud computing](/training/modules/principles-cloud-computing/).
+iconUrl: /training/achievements/intro-to-azure-linux.svg
 levels:
 - beginner
 roles:
@@ -30,6 +30,9 @@ roles:
 - business-owner
 products:
 - azure
+- azure-linux-vm
+subjects:
+- virtual-machine
 units:
 - learn.azure.intro-to-azure-linux.1-introduction
 - learn.azure.intro-to-azure-linux.2-what

@@ -1,6 +1,6 @@
 In the previous unit, you configured peering connections between the virtual networks to enable resources to communicate with each other. Your configuration used a hub and spoke topology. MarketingVNet was the hub, and SalesVNet and ResearchVNet were spokes.
 
-![A hub and spoke topology for virtual networks.](../media/5-hub-spoke-network.svg)
+![Diagram of a hub and spoke topology for virtual networks.](../media/5-hub-spoke-network.svg)
 
 Remember, peering connections are nontransitive. Intermediate virtual networks don't allow connectivity to flow through them to connected virtual networks. **SalesVNet** can communicate with **MarketingVNet**. **ResearchVNet** can communicate with **MarketingVNet**. **MarketingVNet** can communicate with both **SalesVNet** and **ResearchVNet**. The only communication that's not permitted is between **SalesVNet** and **ResearchVNet**. Even though **SalesVNet** and **ResearchVNet** are both connected to **MarketingVNet**, they can't communicate with each other because they're not directly peered to each other.
 
@@ -9,9 +9,9 @@ Let's confirm the connectivity across the peering connections. To do this, you'l
 > [!IMPORTANT]
 > To test the virtual network peering connection, connect to the private IP address assigned to each VM.
 
-1. To connect to your VMs, you'll use SSH (Secure Shell) directly from Cloud Shell. When using SSH, you first find the public IP addresses that are assigned to your test VMs.
+1. To connect to your VMs, you'll use SSH (Secure Shell) directly from Cloud Shell. When using SSH, you'll first find the public IP addresses that are assigned to your test VMs.
 
-1. In Cloud Shell, run the following command to list the IP addresses you'll use to connect to the VMs.
+1. In Cloud Shell, run the following command to list the IP addresses you'll use to connect to the VMs:
 
     ```azurecli
     az vm list \
@@ -23,11 +23,11 @@ Let's confirm the connectivity across the peering connections. To do this, you'l
 
 1. Record the output. You'll need the IP addresses for the exercises in this unit.
 
-Before you start the tests, think about what you've learned in this module. What results do you expect? Which VMs will and will not be able to communicate with each other?
+Before you start the tests, think about what you've learned in this module. What results do you expect? Which VMs will and won't be able to communicate with each other?
 
 ## Test connections from SalesVM
 
-In the first test, in Cloud Shell you'll use SSH to connect to the public IP address of **SalesVM**. You'll then attempt to connect from **SalesVM** to **MarketingVM** and **ResearchVM**.
+In the first test, you'll use SSH in Cloud Shell to connect to the public IP address of **SalesVM**. You'll then attempt to connect from **SalesVM** to **MarketingVM** and **ResearchVM**.
 
 1. In Cloud Shell, run the following command, using SSH to connect to the public IP address of **SalesVM**. In the command, replace `<SalesVM public IP>` with the VM's *public* IP address.
 
@@ -35,7 +35,7 @@ In the first test, in Cloud Shell you'll use SSH to connect to the public IP add
    ssh -o StrictHostKeyChecking=no azureuser@<SalesVM public IP>
    ```
 
-   ![Connect to the public IP address of SalesVM.](../media/5-sales-step-1.svg)
+   ![A diagram showing connection to the public IP address of SalesVM.](../media/5-sales-step-1.svg)
 
 1. Sign in with the password that you used to create the VM. The prompt now shows that you're signed in to **SalesVM**.
 
@@ -45,7 +45,7 @@ In the first test, in Cloud Shell you'll use SSH to connect to the public IP add
    ssh -o StrictHostKeyChecking=no azureuser@<MarketingVM private IP>
    ```
 
-   ![Connect from SalesVM to the private IP address of MarketingVM.](../media/5-sales-step-5.svg)
+   ![Diagram showing connection from SalesVM to the private IP address of MarketingVM.](../media/5-sales-step-5.svg)
 
     The connection attempt should succeed because of the peering connection between the **SalesVNet** and **MarketingVNet** virtual networks.
 
@@ -61,13 +61,13 @@ In the first test, in Cloud Shell you'll use SSH to connect to the public IP add
 
 1. The connection attempt should fail because there's no peering connection between the **SalesVNet** and **ResearchVNet** virtual networks. Up to 60 seconds might pass before the connection attempt times out. To force the attempt to stop, use Ctrl+C.
 
-   ![The attempt fails to connect from SalesVM to the private IP address of ResearchVM.](../media/5-sales-step-9.svg)
+   ![Diagram showing the attempt failing to connect from SalesVM to the private IP address of ResearchVM.](../media/5-sales-step-9.svg)
 
 1. Enter `exit` to close the SSH session and return to Cloud Shell.
 
 ## Test connections from ResearchVM
 
-In the second test, in Cloud Shell you'll use SSH to connect to the public IP address of **ResearchVM**. You'll then attempt to connect from **ResearchVM** to **MarketingVM** and **SalesVM**.
+In the second test, you'll use SSH in Cloud Shell to connect to the public IP address of **ResearchVM**. You'll then attempt to connect from **ResearchVM** to **MarketingVM** and **SalesVM**.
 
 1. In Cloud Shell, run the following command, using SSH to connect to the public IP address of **ResearchVM**. In the command, replace `<ResearchVM public IP>` with this VM's *public* IP address.
 
@@ -75,7 +75,7 @@ In the second test, in Cloud Shell you'll use SSH to connect to the public IP ad
    ssh -o StrictHostKeyChecking=no azureuser@<ResearchVM public IP>
    ```
 
-   ![Connect to the public IP address of ResearchVM.](../media/5-research-step-1.svg)
+   ![Diagram showing connection to the public IP address of ResearchVM.](../media/5-research-step-1.svg)
 
 1. Sign in by using the password that you used to create the VM. The prompt now shows that you're signed in to **ResearchVM**.
 
@@ -85,7 +85,7 @@ In the second test, in Cloud Shell you'll use SSH to connect to the public IP ad
    ssh -o StrictHostKeyChecking=no azureuser@<MarketingVM private IP>
    ```
 
-   ![Connect to the private IP address of MarketingVM.](../media/5-research-step-5.svg)
+   ![Diagram showing connection to the private IP address of MarketingVM.](../media/5-research-step-5.svg)
 
     The connection attempt should succeed because of the peering connection between the **ResearchVNet** and **MarketingVNet** virtual networks.
 
@@ -101,13 +101,13 @@ In the second test, in Cloud Shell you'll use SSH to connect to the public IP ad
 
 1. The connection attempt should fail because there's no peering connection between the **ResearchVNet** and **SalesVNet** virtual networks. Up to 60 seconds might pass before the connection attempt times out. To force the attempt to stop, use Ctrl+C.
 
-   ![The attempt fails to connect ResearchVM to the private IP address of SalesVM.](../media/5-research-step-9.svg)
+   ![Diagram showing the attempt failing to connect ResearchVM to the private IP address of SalesVM.](../media/5-research-step-9.svg)
 
 1. Enter `exit` to close the SSH session and return to Cloud Shell.
 
 ## Test connections from Marketing VM
 
-In the final test, in Cloud Shell you'll use SSH to connect to the public IP address of **MarketingVM**. You'll then attempt to connect from **MarketingVM** to **ResearchVM** and **SalesVM**.
+In the final test, you'll use SSH in Cloud Shell to connect to the public IP address of **MarketingVM**. You'll then attempt to connect from **MarketingVM** to **ResearchVM** and **SalesVM**.
 
 1. In Cloud Shell, run the following command, using SSH to connect to the public IP address of **MarketingVM**. In the command, replace `<MarketingVM public IP>` with this VM's *public* IP address.
 
@@ -115,7 +115,7 @@ In the final test, in Cloud Shell you'll use SSH to connect to the public IP add
    ssh -o StrictHostKeyChecking=no azureuser@<MarketingVM public IP>
    ```
 
-   ![Connect to the public IP address of MarketingVM.](../media/5-marketing-step-1.svg)
+   ![Diagram that shows connection to the public IP address of MarketingVM.](../media/5-marketing-step-1.svg)
 
 1. Sign in by using the password that you used to create the VM. The prompt shows that you're signed in to **MarketingVM**.
 
@@ -125,7 +125,7 @@ In the final test, in Cloud Shell you'll use SSH to connect to the public IP add
     ssh -o StrictHostKeyChecking=no azureuser@<ResearchVM private IP>
     ```
 
-    ![Connect to the private IP address of SalesVM.](../media/5-marketing-step-5.svg)
+    ![Diagram that shows Azure Cloud Shell connecting to the Marketing V Net and the Research V Net virtual networks, using a peering connection.](../media/5-marketing-step-5.svg)
 
     The connection attempt should succeed because of the peering connection between the **MarketingVNet** and **ResearchVNet** virtual networks.
 
@@ -141,7 +141,7 @@ In the final test, in Cloud Shell you'll use SSH to connect to the public IP add
 
    The connection attempt should also succeed because there *is* a peering connection between the **MarketingVNet** and **SalesVNet** virtual networks.
 
-   ![Connect to the private IP address of SalesVM.](../media/5-marketing-step-9.svg)
+   ![Diagram that shows Azure Cloud Shell connecting to the Marketing V Net and the Sales V Net virtual machines, using a peering connection.](../media/5-marketing-step-9.svg)
 
 1. Sign in by using the password you used to create the VM.
 

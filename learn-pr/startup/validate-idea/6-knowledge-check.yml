@@ -1,0 +1,82 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.validate-idea.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Review concepts on how to test your startup assumptions. Topics include experiments, interview strategies, and tools that measure value.
+  ms.date: 02/11/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "When you complete a Value Proposition Canvas, which three elements of your value proposition are you aiming to test?"
+    choices:
+    - content: "Costs, revenues, and channels."
+      isCorrect: false
+      explanation: "Incorrect. A Value Proposition Canvas isn't concerned with costs, revenues, or channels."
+    - content: "Acquisition, retention, and referral."
+      isCorrect: false
+      explanation: "Incorrect. A Value Proposition Canvas isn't concerned with acquisitions, retentions, or referrals."
+    - content: "Customer jobs to be done, pains, and gains."
+      isCorrect: true
+      explanation: "Correct. A Value Proposition Canvas helps you understand the needs of your target customers. It looks at jobs to be done, pains, and gains. Then it helps you design your value proposition to meet those needs."
+
+  - content: "Which of these business model blocks should you populate first when using the Lean Canvas?"
+    choices:
+    - content: "Cost structure, revenue streams, and key metrics."
+      isCorrect: false
+      explanation: "Incorrect. The Lean Canvas helps founders identify assumptions about their startup's business model. Founders should populate the most critical segments first. Other segments are more important than cost structure, revenue streams, and key metrics."
+    - content: "Problem, solution, and customer segments."
+      isCorrect: true
+      explanation: "Correct. The Lean Canvas helps founders identify assumptions about their startup's business model. Founders should populate the problem, solution, and customer segments first because assumptions in these areas are the most critical ones."
+    - content: "Any business model blocks about which some information is available."
+      isCorrect: false
+      explanation: "Incorrect. The Lean Canvas helps founders identify assumptions about their startup's business model. Founders should populate the most critical segments first, not segments that they happen to have information on."
+
+  - content: "Which category of assumptions are you testing by creating a simple landing page and tracking whether customers will provide their email address?"
+    choices:
+    - content: "Desirability."
+      isCorrect: true
+      explanation: "Correct. By tracking interest in your idea, you're testing whether customers want your product or service."
+    - content: "Feasibility."
+      isCorrect: false
+      explanation: "Incorrect. By tracking interest in your idea, you're testing whether customers want your product or service. You're not testing whether you can build the product or offer the service."
+    - content: "Viability."
+      isCorrect: false
+      explanation: "Incorrect. By tracking interest in your idea, you're testing whether customers want your product or service. You're not testing whether you can build a business around the idea."
+    - content: "Scalability."
+      isCorrect: false
+      explanation: "Incorrect. By tracking interest in your idea, you're testing whether customers want your product or service. You're not testing whether you can scale up to meet increased demand."
+
+  - content: "When you interview customers, which of the following things is unlikely to be helpful?"
+    choices:
+    - content: "Asking open questions."
+      isCorrect: false
+      explanation: "Incorrect. Asking open questions can be helpful. You can gain valuable information from customers' insights and experiences."
+    - content: "Having a prepared set of interview questions."
+      isCorrect: false
+      explanation: "Incorrect. Being prepared can be helpful. When you're not prepared, you risk omitting questions and wasting time."
+    - content: "Asking how much time or money they've spent trying to solve the problem."
+      isCorrect: false
+      explanation: "Incorrect. Learning how much time or money customers have spent on the problem can be helpful. You can use this information to gauge interest in your idea."
+    - content: "Pitching your product and trying to get them to commit to a sale."
+      isCorrect: true
+      explanation: "Correct. During customer interviews, your goal is to gather information. Before you've validated your idea, it's too early to invest a significant amount of time in selling your product."
+
+  - content: "What's the main difference between a concierge experiment and a Wizard of Oz experiment?"
+    choices:
+    - content: "In a concierge experiment, customers don't provide feedback."
+      isCorrect: false
+      explanation: "Incorrect. In both concierge and Wizard of Oz experiments, it's important to make it easy for customers to leave written feedback."
+    - content: "In a Wizard of Oz experiment, you don't try to make any sales."
+      isCorrect: false
+      explanation: "Incorrect. In both concierge and Wizard of Oz experiments, you can try to make sales as long as customers see enough value in the outcome."
+    - content: "In a Wizard of Oz experiment, customers are unaware that the process is being completed manually."
+      isCorrect: true
+      explanation: "Correct. Concierge and Wizard of Oz experiments are similar. But in Wizard of Oz, customers don't know that the behind-the-scenes process is manual."
+    - content: "A concierge experiment doesn't require a landing page."
+      isCorrect: false
+      explanation: "Incorrect. In both concierge and Wizard of Oz experiments, it's good to have a landing page where customers can sign up and provide input."

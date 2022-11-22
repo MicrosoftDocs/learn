@@ -59,6 +59,19 @@
                 "dest": "modules"
             },
             {
+                "src": "autonomous-systems",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "azure",
                 "files": [
                     "**/*.yml",
@@ -111,7 +124,7 @@
                 "dest": "modules"
             },
             {
-                "src": "beginner-python",
+                "src": "azure-percept",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
@@ -122,7 +135,7 @@
                     "**/resources/**"
                 ],
                 "dest": "modules"
-            },           
+            },
             {
                 "src": "cela-accessibility",
                 "files": [
@@ -177,6 +190,19 @@
             },
             {
                 "src": "databricks",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "dot-net-maui",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
@@ -358,6 +384,19 @@
                 "dest": "modules"
             },
             {
+                "src": "startup",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "student-evangelism",
                 "files": [
                     "**/*.yml",
@@ -439,6 +478,19 @@
             },
             {
                 "src": "wwl-azure",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "wwl-hedt",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
@@ -551,6 +603,19 @@
                     "**/resources/**"
                 ],
                 "dest": "modules"
+            },
+            {
+                "src": "vs-code",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
             },           
             {
                 "files": [
@@ -584,7 +649,7 @@
                 "dest": "modules"
             },
             {
-                "src": "beginner-python",
+                "src": "language",
                 "files": [
                     "**/*.gif",
                     "**/*.png",
@@ -696,9 +761,6 @@
         },
         "fileMetadata": {
             "sandbox-disabled": {},
-            "adobe-target": {
-                "azure/*/*-*.yml": true
-            },
             "localization_scopes": {
                 "azure/**/*.yml": [
                     "de-de",
@@ -864,6 +926,25 @@
                     "sv-se"
                 ],
                 "databricks/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "dot-net-maui/**/*.yml": [
                     "de-de",
                     "es-es",
                     "fr-fr",
@@ -1097,6 +1178,12 @@
                     "zh-tw"
                 ],
                 "wwl-azure/**/*.yml": [
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "wwl-hedt/**/*.yml": [
                     "ja-jp",
                     "ko-kr",
                     "zh-cn",

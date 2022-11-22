@@ -2,13 +2,13 @@ Microsoft Endpoint Manager helps you maximize your return on investment and acce
 
 ## Advanced endpoint analytics
 
-Proactively improve the user experience and track your progress against organization and industry baselines with the help of Integrated Endpoint Analytics. Use data-driven change management to maximize the effectiveness of IT and reduce help desk costs.
+You can proactively improve the user experience and track your progress against organization and industry baselines with the help of Integrated Endpoint Analytics. Use data-driven change management to maximize the effectiveness of IT and reduce help desk costs.
 
 By using the Technology Experience Score, Desktop Analytics, Log Analytics, Real-Time Advanced Threat Detection, and Dynamic User Risk Assessment, you can:
 
-- **Proactively maintain device performance and health.**
-- **Benefit from data-driven IT management, which shows how end users' productivity is impacted by endpoint hardware and software performance and health issues**
-- **Leverage machine learning for recommended security and configuration settings**
+- Proactively maintain device performance and health.
+- Benefit from data-driven IT management, which shows how end users' productivity is impacted by endpoint hardware and software performance and health issues.
+- Leverage machine learning for recommended security and configuration settings.
 
 ## Deep Microsoft 365 Integration
 
@@ -16,7 +16,7 @@ Get the most value from your Microsoft 365 integrated solution when you use the 
 
 By using role-based administration, Graph API, PowerShell, and Cloud Content Optimization, you can gain the following benefits: 
 
-- **Unified IT administration experience** -Use role-based administration to secure the access that is needed to administer Configuration Manager.
+- **Unified IT administration experience**: Use role-based administration to secure the access needed to administer Configuration Manager.
 - **Continuous security improvements for everyone**
 - **Automated app compatibility and software updates for OS and apps** 
 - **Secure access to the objects that you manage, such as collections, deployments, and sites**

@@ -8,7 +8,7 @@ Both Andy and Mara want to catch the error before it reaches Amita, the tester. 
 
 Andy also thinks that adding the unit tests now will give them a head start as they improve the _Space Game_ web app. The application uses a document database to store high scores and player profiles. Right now, it uses local test data. Later, they plan to connect the app to a live database.
 
-A number of unit test frameworks are available for C# applications. Mara chooses NUnit because it's popular with the community and she's used it before.
+Many unit test frameworks are available for C# applications. Mara chooses NUnit because it's popular with the community and she's used it before.
 
 Here's the unit test you're working with, along with Mara and Andy.
 
@@ -45,7 +45,7 @@ You can filter the leaderboard by any combination of game type and game map.
 
 This test queries the leaderboard for high scores and verifies that each result matches the provided game map.
 
-In an NUnit test method, `TestCase`, provides inline data to use to test that method. Here, NUnit calls the `FetchOnlyRequestedGameRegion` unit test method like this:
+In an NUnit test method, `TestCase` provides inline data to use to test that method. Here, NUnit calls the `FetchOnlyRequestedGameRegion` unit test method as follows:
 
 ```csharp
 FetchOnlyRequestedGameRegion("Milky Way");
@@ -94,7 +94,7 @@ This branch contains the _Space Game_ project that you worked with in the previo
     The format of this command enables you to get starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch to your GitHub repository, known as `origin`.
 
 1. As an optional step, in Visual Studio Code, open the *azure-pipelines.yml* file and familiarize yourself with the initial configuration.
-    The configuration resembles the basic one you created in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline/6-create-the-pipeline?azure-portal=true) module. It builds only the application's Release configuration.
+    The configuration resembles the basic one you created in the [Create a build pipeline with Azure Pipelines](/training/modules/create-a-build-pipeline/6-create-the-pipeline?azure-portal=true) module. It builds only the application's Release configuration.
 
 ## Run the tests locally
 
@@ -113,7 +113,7 @@ It's a good idea to run all tests locally before you submit any tests to the pip
     dotnet test --configuration Release --no-build
     ```
 
-    The `--no-build` flag specifies not to build the project before running it. You don't need to build the project, because you built it in the previous step.
+    The `--no-build` flag specifies not to build the project before running it. You don't need to build the project because you built it in the previous step.
 
     You see that all five tests pass.
 
@@ -141,7 +141,7 @@ It's a good idea to run all tests locally before you submit any tests to the pip
     Later, you'll see how Azure Pipelines can help you visualize and track your tests' results as they run through the pipeline.
 
     > [!NOTE]
-    > TRX files are not meant to be included in source control. A *.gitignore* file enables you specify which temporary and other files you want Git to ignore. The project's *.gitignore* file is already set up to ignore anything in the *TestResults* directory.
+    > TRX files are not meant to be included in source control. A *.gitignore* file enables you to specify which temporary and other files you want Git to ignore. The project's *.gitignore* file is already set up to ignore anything in the *TestResults* directory.
 
 1. As an optional step, in Visual Studio Code, open the *DocumentDBRepository_GetItemsAsyncShould.cs* file from the *Tailspin.SpaceGame.Web.Tests* folder, and examine the test code. Even if you're not interested in building .NET apps specifically, you might find the test code useful because it resembles code you might see in other unit test frameworks.
 
@@ -149,7 +149,7 @@ It's a good idea to run all tests locally before you submit any tests to the pip
 
 Here you configure the build pipeline to run your unit tests and collect the results.
 
-1. In Visual Studio Code, modify *azure-pipelines.yml* like this:
+1. In Visual Studio Code, modify *azure-pipelines.yml* as follows:
 
     [!code-yml[](code/4-azure-pipelines.yml?highlight=48-54)]
 
@@ -159,9 +159,9 @@ Here you configure the build pipeline to run your unit tests and collect the res
 
     This build task runs the `dotnet test` command.
 
-    Notice that this task does not specify the `--logger trx` argument that you used when you ran the tests manually. The `publishTestResults` argument adds that for you. This argument tells the pipeline to generate the TRX file to a temporary directory, accessible through the `$(Agent.TempDirectory)` built-in variable. It also publishes the task results to the pipeline.
+    Notice that this task doesn't specify the `--logger trx` argument that you used when you ran the tests manually. The `publishTestResults` argument adds that for you. This argument tells the pipeline to generate the TRX file to a temporary directory, accessible through the `$(Agent.TempDirectory)` built-in variable. It also publishes the task results to the pipeline.
 
-    The `projects` argument specifies all C# projects that match *"\*\*/\*.Tests.csproj*." The *"\*\*"* part matches all directories, and the *"\*.Tests.csproj"* part matches all projects whose file name ends with *".Tests.csproj*." The `unit-tests` branch contains just one unit test project, *Tailspin.SpaceGame.Web.Tests.csproj*. But by specifying a pattern, you can run additional test projects without the need to modify your build configuration.
+    The `projects` argument specifies all C# projects that match *"\*\*/\*.Tests.csproj*." The *"\*\*"* part matches all directories, and the *"\*.Tests.csproj"* part matches all projects whose file name ends with *".Tests.csproj*." The `unit-tests` branch contains just one unit test project, *Tailspin.SpaceGame.Web.Tests.csproj*. But by specifying a pattern, you can run more test projects without the need to modify your build configuration.
 
 ## Push the branch to GitHub
 
@@ -204,9 +204,9 @@ Here you see the tests run in the pipeline and then visualize the results from M
 
     :::image type="content" source="../media/4-test-run-results.png" alt-text="A screenshot of Azure DevOps test run results summary showing 5 passed tests.":::
 
-    In this example, all five tests have passed. If any tests failed, you could navigate to the build task to get additional details.
+    In this example, all five tests have passed. If any tests failed, you can go to the build task to get more details.
 
-    You can also download the TRX file so you can examine it through Visual Studio or another visualization tool.
+    You can also download the TRX file to examine it through Visual Studio or another visualization tool.
 
 Although Mara and Andy have added only one test, it's a good start and it fixes the immediate problem. Now, the team has a place to add more tests and run them as they improve their process.
 

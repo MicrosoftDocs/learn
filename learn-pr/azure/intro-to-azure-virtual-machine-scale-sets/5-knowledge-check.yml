@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-virtual-machine-scale-sets.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge about Azure virtual machine scale sets.
+  ms.date: 03/17/2022
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Rather than deploy new instances as load increases on the application hosted in a virtual machine scale set, you want to increase the CPU capacity of each existing instance. Which of the following types of scaling would you perform to achieve this goal?"
+    choices:
+    - content: "Vertical scaling"
+      isCorrect: true
+      explanation: "Correct. Vertical scaling increases the capacity of instances within a virtual machine scale set."
+    - content: "Horizontal scaling"
+      isCorrect: false
+      explanation: "Incorrect. Horizontal scaling increases the number of instances within a virtual machine scale set."
+    - content: "Load balancing"
+      isCorrect: false
+      explanation: "Incorrect. Load balancing distributes traffic across instances in a virtual machine scale set. It doesn't alter the number or performance of instances within the virtual machine scale sets."
+  - content: "Which of these should be the basis for autoscaling a business critical application that experiences surges in utilization at unpredictable times during the week?"
+    choices:
+    - content: "Autoscale according to schedule"
+      isCorrect: false
+      explanation: "Incorrect. As the surges in utilization are unpredictable, scaling according to a schedule won't result in an application that is responsive to user numbers."
+    - content: "Autoscale according to metrics"
+      isCorrect: true
+      explanation: "Correct. Configuring autoscale according to metrics lets the application be responsible for utilization, which meets your goals."
+    - content: "Low priority scale set"
+      isCorrect: false
+      explanation: "Incorrect. Low priority scale sets allow you to have applications scale using spare capacity. Since capacity might be diminished according to constraints beyond your control, you should avoid using low priority scale sets for business critical applications."      
+  - content: "What is the maximum number of Linux IaaS VMs in an Azure virtual machine scale set?"
+    choices:
+    - content: "1000"
+      isCorrect: true
+      explanation: "Correct. The maximum number of IaaS VMs in an Azure virtual machine scale set is 1000."
+    - content: "1024"
+      isCorrect: false
+      explanation: "Incorrect. The maximum number of IaaS VMs in an Azure virtual machine scale set is 1000."
+    - content: "2056"
+      isCorrect: false
+      explanation: "Incorrect. The maximum number of IaaS VMs in an Azure virtual machine scale set is 1000."

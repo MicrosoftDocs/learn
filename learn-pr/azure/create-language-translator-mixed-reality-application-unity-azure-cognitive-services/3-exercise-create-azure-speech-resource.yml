@@ -5,10 +5,12 @@ metadata:
   title: Exercise - Create an Azure Speech service resource
   description: Use the Azure portal to create a Speech service resource in Azure
   ms.date: 10/06/2020
-  author: aprilspeight
-  ms.author: apspeigh
+  author: laujan
+  ms.author: lajanuar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: apspeigh-10062020
 azureSandbox: true
 durationInMinutes: 10
 content: |

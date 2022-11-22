@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/29/2021
+  ms.date: 10/25/2022
   author: wwlpublish
-  ms.author: luiz.macedo
+  ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
@@ -15,7 +15,7 @@ durationInMinutes: 4
 content: |
   [!include[](includes/4-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge."
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following choices isn't a repository strategy?"
     choices:
@@ -32,13 +32,13 @@ quiz:
     choices:
     - content: "Allow teams to have their own repositories to develop."
       isCorrect: false
-      explanation: "Incorrect. The fundamental difference between the monorepo and multiple repos philosophies boils down to a difference about what will allow teams working together on a system to go fastest."
-    - content: "Allow teams working together on a system to go fastest."
+      explanation: "Incorrect. The fundamental difference between the monorepo and multiple repos philosophies boils down to a difference about what will allow teams working together on a system to go faster."
+    - content: "Allow teams working together on a system to go faster."
       isCorrect: true
-      explanation: "Correct. The fundamental difference between the monorepo and multiple repos philosophies boils down to a difference about what will allow teams working together on a system to go fastest."
+      explanation: "Correct. The fundamental difference between the monorepo and multiple repos philosophies boils down to a difference about what will allow teams working together on a system to go faster."
     - content: "Avoid teams losing their changes."
       isCorrect: false
-      explanation: "Incorrect. The fundamental difference between the monorepo and multiple repos philosophies boils down to a difference about what will allow teams working together on a system to go fastest."
+      explanation: "Incorrect. The fundamental difference between the monorepo and multiple repos philosophies boils down to a difference about what will allow teams working together on a system to go faster."
   - content: "Which of the following choices is a common tool to create a changelog?"
     choices:
     - content: "gitchangelog."

@@ -3,7 +3,7 @@ uid: learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations
 metadata:
   title: Describe basic cybersecurity threats, attacks, and mitigations
   description: "Describe basic cybersecurity threats, attacks, and mitigations"
-  ms.date: 11/05/2021
+  ms.date: 05/30/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   *   Describe different types of Malware
   *   Describe basic mitigation strategies
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/cybersecurity-threats-attacks.svg
 levels:
 - beginner
 roles:
@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - m365
+subjects:
+- threat-protection
 units:
 - learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations.introduction
 - learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations.describe-what-is-cybersecurity

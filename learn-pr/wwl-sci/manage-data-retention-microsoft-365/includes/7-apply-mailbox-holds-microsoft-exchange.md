@@ -1,4 +1,4 @@
-Microsoft 365 offers several ways for organizations to prevent mailbox content from being permanently deleted. Besides retention policies and retention labels, that can be applied to multiple Microsoft 365 service locations at the same time, Exchange Online provides a feature called holds, which is applied on a single mailbox level.
+Microsoft 365 offers several ways for organizations to prevent mailbox content from being permanently deleted. Besides retention policies and retention labels that can be applied to multiple Microsoft 365 service locations at the same time, Exchange Online provides a feature called holds, which is applied on a single mailbox level.
 
 There are two different types of mailbox holds in Exchange Online:
 

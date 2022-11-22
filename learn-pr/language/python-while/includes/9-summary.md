@@ -1,3 +1,0 @@
-Our goal was to build a looping structure in Python to iterate through a code block as long as a condition was met.
-
-Using the `while` statement, we implemented a loop that continued to run a code block as long as a Boolean expression evaluated to `True`. We used the `else` statement to perform a code block after the Boolean expression evaluated to `False`. We also added the `break` statement to exit the code block entirely. We added a `continue` statement to modify and set the execution path back to the evaluation of the `while` statement's Boolean expression. We also used new assignment operators to add simple increments and decrements to our programs.

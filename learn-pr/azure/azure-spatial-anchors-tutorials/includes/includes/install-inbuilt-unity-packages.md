@@ -1,36 +1,23 @@
 ## [Unity 2020 + Windows XR Plugin](#tab/winxr)
 
-In this section, you will upgrade or install the following inbuilt packages:
+Upgrade or install one of the following inbuilt packages from Unity Package Manager:
 
-* ARCore XR Plugin 4.0.12 for Android support
-* ARKit XR plugin 4.0.12 for iOS support
-
-Add the above mentioned packages from the Unity package manager.
+* ARCore XR Plugin 4.0.12 if you're developing for Android
+* ARKit XR Plugin 4.0.12 if you're developing for iOS
 
 > [!Caution]
-> Not all version are compatible with MRTK and only certain version works together, so make sure you install the exact versions listed above.
+> Not all package versions are compatible with the MRTK, and only certain versions work together. Be sure to install the exact version shown in the list.
 
-> [!Tip]
-> For a reminder on how to upgrade and install inbuilt packages, you can refer to the Installing inbuilt Unity packages instructions.
+For instructions on how to upgrade and install inbuilt packages, see the [Unity documentation](https://docs.unity3d.com/Manual/index.html).
 
-> [!Note]
-> If you are developing this project for Android, there is no need to install the ARKit XR Plugin package. Similarly, if you are developing this project for iOS, you do not need to install the ARCore XR Plugin.
+## [Legacy Windows Store apps](#tab/wsa)
 
-## [Legacy WSA](#tab/wsa)
-
-In this section, you will upgrade or install the following inbuilt packages:
+Upgrade or install the following inbuilt packages from Unity Package Manager:
 
 * XR Legacy Input Helpers 2.1.6
-* ARCore XR Plugin 3.1.3 for Android support
-* ARKit XR plugin 3.1.3 for iOS support
-
-Add the above mentioned packages from the Unity package manager.
+* ARCore XR Plugin 3.1.3 if you're developing for Android, or ARKit XR Plugin 3.1.3 if you're developing for iOS
 
 > [!Caution]
-> Not all version are compatible with MRTK and only certain version works together, so make sure you install the exact versions listed above.
+> Not all package versions are compatible with the MRTK, and only certain versions work together. Be sure to install the exact versions shown in the list.
 
-> [!Tip]
-> For a reminder on how to upgrade and install inbuilt packages, you can refer to the Installing inbuilt Unity packages instructions.
-
-> [!Note]
-> If you are developing this project for Android, there is no need to install the ARKit XR Plugin package. Similarly, if you are developing this project for iOS, you do not need to install the ARCore XR Plugin.
+For instructions on how to upgrade and install inbuilt packages, see the [Unity documentation](https://docs.unity3d.com/Manual/index.html).

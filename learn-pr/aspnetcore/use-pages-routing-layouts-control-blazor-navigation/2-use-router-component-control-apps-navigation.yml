@@ -20,21 +20,21 @@ quiz:
       choices:
       - content: "RouteManager"
         isCorrect: false
-        explanation: "This isn't a real object in the Blazor framework"
+        explanation: "This isn't a real object in the Blazor framework."
       - content: "NavigationManager"
         isCorrect: true
-        explanation: "NavigationManager allows you to get the full URI, a relative URI, and querystring information as the user interacts with the component"
+        explanation: "NavigationManager allows you to get the full URI, a relative URI, and querystring information as the user interacts with the component."
       - content: "ServiceLocator"
         isCorrect: false
-        explanation: "The ServiceLocator is used to inject services into a component or class, not URI information"  
-    - content: "What is the default CSS class added to an anchor tag by the NavLink component when the NavLink is referencing the current URL?"
+        explanation: "The ServiceLocator is used to inject services into a component or class, not URI information."
+    - content: "What is the default CSS class added to an anchor tag by the NavLink component when NavLink is referencing the current URL?"
       choices:
-      - content: "current"
+      - content: "`current`"
         isCorrect: false
-        explanation: "current is not the default CSS class assigned by the NavLink. You _could_ configure the NavLink ActiveClass property to specify 'current' as the class to assign"
-      - content: "live"
+        explanation: "The default CSS class assigned by the NavLink component isn't `current`. You _could_ configure the NavLink ActiveClass property to specify current as the class to assign."
+      - content: "`live`"
         isCorrect: false
-        explanation: "live is not the default CSS class assigned by the NavLink. You _could_ configure the NavLink ActiveClass property to specify 'live' as the class to assign"
-      - content: "active"
+        explanation: "The default CSS class assigned by the NavLink component isn't `live`. You _could_ configure the NavLink ActiveClass property to specify live as the class to assign."
+      - content: "`active`"
         isCorrect: true
-        explanation: "active is the default class added by the NavLink, allowing you to customize a link with different formatting when that link points to the current URL"
+        explanation: "The default class added by the NavLink component is `active`. You can customize a link with different formatting when that link points to the current URL."

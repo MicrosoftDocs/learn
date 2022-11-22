@@ -34,11 +34,11 @@ meteor_showers.head()
 
 |  | name | radiant | bestmonth | startmonth | startday | endmonth | endday | hemisphere | preferredhemisphere |
 |---|---|---|---|---|---|---|---|---|---|
-| 0 | Lyrids | Lyra | april | april | 21 | april | 22 | northern | northern |
-| 1 | Eta Aquarids | Aquarius | may | april | 19 | may | 28 | northern, southern | southern |
-| 2 | Orionids | Orion | october | october | 2 | november | 7 | northern, southern | northern, southern |
-| 3 | Perseids | Perseus | august | july | 14 | august | 24 | northern | northern |
-| 4 | Leonids | Leo | november | november | 6 | november | 30 | northern, southern | northern, southern |
+| **0** | Lyrids | Lyra | april | april | 21 | april | 22 | northern | northern |
+| **1** | Eta Aquarids | Aquarius | may | april | 19 | may | 28 | northern, southern | southern |
+| **2** | Orionids | Orion | october | october | 2 | november | 7 | northern, southern | northern, southern |
+| **3** | Perseids | Perseus | august | july | 14 | august | 24 | northern | northern |
+| **4** | Leonids | Leo | november | november | 6 | november | 30 | northern, southern | northern, southern |
 
 ```python
 meteor_showers.info()
@@ -69,11 +69,11 @@ moon_phases.head()
 
 |  | month | day | moonphase | specialevent |
 |---|---|---|---|---|
-| 0 | january | 1 | NaN | NaN |
-| 1 | january | 2 | first quarter | NaN |
-| 2 | january | 3 | NaN | NaN |
-| 3 | january | 4 | NaN | NaN |
-| 4 | january | 5 | NaN | NaN |
+| **0** | january | 1 | NaN | NaN |
+| **1** | january | 2 | first quarter | NaN |
+| **2** | january | 3 | NaN | NaN |
+| **3** | january | 4 | NaN | NaN |
+| **4** | january | 5 | NaN | NaN |
 
 
 ```python
@@ -100,11 +100,11 @@ constellations.head()
 
 |   | constellation | bestmonth | latitudestart | latitudeend | besttime | hemisphere |
 |---|---|---|---|---|---|---|
-| 0 | Lyra | august | 90 | -40 | 21:00 | northern |
-| 1 | Aquarius | october | 65 | -90 | 21:00 | southern |
-| 2 | Orion | january | 85 | -75 | 21:00 | northern |
-| 3 | Perseus | december | 90 | -35 | 21:00 | northern |
-| 4 | Leo | april | 90 | 65 | 21:00 | northern |
+| **0** | Lyra | august | 90 | -40 | 21:00 | northern |
+| **1** | Aquarius | october | 65 | -90 | 21:00 | southern |
+| **2** | Orion | january | 85 | -75 | 21:00 | northern |
+| **3** | Perseus | december | 90 | -35 | 21:00 | northern |
+| **4** | Leo | april | 90 | 65 | 21:00 | northern |
 
 ```python
 constellations.info()
@@ -132,11 +132,11 @@ cities.head()
 
 |  | city | latitude | country |
 |---|---|---|---|
-| 0 | Abu Dhabi | 24.47 | United Arab Emirates |
-| 1 | Abuja | 9.07 | Nigeria |
-| 2 | Accra | 5.55 | Ghana |
-| 3 | Adamstown | -25.07 | Pitcairn Islands |
-| 4 | Addis Ababa | 9.02 | Ethiopia |
+| **0** | Abu Dhabi | 24.47 | United Arab Emirates |
+| **1** | Abuja | 9.07 | Nigeria |
+| **2** | Accra | 5.55 | Ghana |
+| **3** | Adamstown | -25.07 | Pitcairn Islands |
+| **4** | Addis Ababa | 9.02 | Ethiopia |
 
 ```python
 cities.info()
@@ -181,11 +181,11 @@ meteor_showers.head()
 
 | | name | radiant | bestmonth | startmonth | startday | endmonth | endday | hemisphere | preferredhemisphere |
 |--|-----|---------|-----------|------------| ---------|----------|--------|------------| --------------------|
-| 0 | Lyrids | Lyra | 4 | 4 | 21 | 4 | 22 | northern | northern |
-| 1 | Eta Aquarids | Aquarius | 5 | 4 | 19 | 3 | 28 | northern, southern | southern |
-| 2 | Orionids | Orion | 10 | 10 | 2 | 11 | 7 | northern, southern | northern, southern |
-| 3 | Perseids | Perseus | 8 | 7 | 14 | 8 | 24 | northern | northern |
-| 4 | Leonids | Leo | 11 | 11 | 6 | 11 | 30 | northern, southern | northern, southern |
+| **0** | Lyrids | Lyra | 4 | 4 | 21 | 4 | 22 | northern | northern |
+| **1** | Eta Aquarids | Aquarius | 5 | 4 | 19 | 3 | 28 | northern, southern | southern |
+| **2** | Orionids | Orion | 10 | 10 | 2 | 11 | 7 | northern, southern | northern, southern |
+| **3** | Perseids | Perseus | 8 | 7 | 14 | 8 | 24 | northern | northern |
+| **4** | Leonids | Leo | 11 | 11 | 6 | 11 | 30 | northern, southern | northern, southern |
 
 ```python
 meteor_showers.info()
@@ -246,11 +246,11 @@ moon_phases.head()
 
 | month | day | moonphase | specialevent | date | percentage |
 |-------|-----|-----------|--------------|------|-----------|
-| 0 | 1 | 1 | NaN | NaN | 2020-01-01 | NaN |
-| 1 | 1 | 2 | first quarter | NaN | 2020-01-02 | 0.5 |
-| 2 | 1 | 3 | NaN | NaN | 2020-01-03 | NaN |
-| 3 | 1 | 4 | NaN | NaN | 2020-01-04 | NaN |
-| 4 | 1 | 5 | NaN | NaN | 2020-01-05 | NaN |
+| 0 | 1 | 1 | NaN | 2020-01-01 | NaN |
+| 1 | 1 | 2 | first quarter | 2020-01-02 | 0.5 |
+| 2 | 1 | 3 | NaN | 2020-01-03 | NaN |
+| 3 | 1 | 4 | NaN | 2020-01-04 | NaN |
+| 4 | 1 | 5 | NaN | 2020-01-05 | NaN |
 
 Now you've converted all the data that makes more sense as numbers. But some values are missing. 
 

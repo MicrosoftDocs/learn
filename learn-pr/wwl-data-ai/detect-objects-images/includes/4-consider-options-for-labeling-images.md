@@ -2,7 +2,7 @@ The easiest option for labeling images for object detection is to use the intera
 
 Additionally, after tagging an initial batch of images, you can train the model. Subsequent labeling of new images can benefit from the *smart labeler* tool in the portal, which can suggest not only the regions, but the classes of object they contain.
 
-Alternatively, you can use a labeling tool, such as the one provided in [Azure Machine Learning Studio](/azure/machine-learning/tutorial-labeling) or the [Microsoft Visual Object Tagging Tool (VOTT)](https://github.com/microsoft/VoTT/blob/master/README.md), to take advantage of other features, such as assigning image labeling tasks to multiple team members.
+Alternatively, you can use a labeling tool, such as the one provided in [Azure Machine Learning Studio](/azure/machine-learning/how-to-label-data) or the [Microsoft Visual Object Tagging Tool (VOTT)](https://github.com/microsoft/VoTT/blob/master/README.md), to take advantage of other features, such as assigning image labeling tasks to multiple team members.
 
 ## Bounding box measurement units
 

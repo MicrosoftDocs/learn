@@ -8,6 +8,10 @@ metadata:
   ms.author: apspeigh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - apspeigh-03262021
 title: Render a model with Azure Remote Rendering
 summary: >
   Create an Azure Remote Rendering session and render a 3D model.
@@ -20,10 +24,10 @@ prerequisites: |
   - A Windows 10 PC that meets the [system requirements](/azure/remote-rendering/overview/system-requirements) and is configured with [the correct tools](/windows/mixed-reality/install-the-tools)
   - Windows 10 SDK 10.0.18362.0 or later
   - Unity Hub with Unity 2019.4.X installed
-  - Familiarity with [setting up a Unity project for Windows Mixed Reality](/learn/modules/mixed-reality-toolkit-project-unity)
+  - Familiarity with [setting up a Unity project for Windows Mixed Reality](/training/modules/mixed-reality-toolkit-project-unity)
   - Basic familiarity with Unity: interface, scene creation, package import, and addition of GameObjects to a scene
   - Basic familiarity with C# and Unity scripting
-iconUrl: /learn/achievements/render-model-azure-remote-rendering-unity.svg
+iconUrl: /training/achievements/render-model-azure-remote-rendering-unity.svg
 levels:
 - beginner
 roles:
@@ -33,6 +37,8 @@ products:
 - azure-remote-rendering
 - windows-mixed-reality
 - hololens
+subjects:
+- mixed-reality
 units:
 - learn.azure.render-a-model-with-azure-remote-rendering-and-unity.1-introduction
 - learn.azure.render-a-model-with-azure-remote-rendering-and-unity.2-what-is-azure-remote-rendering

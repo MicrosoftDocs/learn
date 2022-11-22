@@ -23,7 +23,7 @@ abstract:  |
 
 prerequisites: |
   - [Visual Studio Code, with the Python extension](https://aka.ms/LearnOnVSCode?azure-portal=true)
-iconUrl: /learn/achievements/student-evangelism/plan-moon-mission-using-python-pandas.svg
+iconUrl: /training/achievements/student-evangelism/plan-moon-mission-using-python-pandas.svg
 levels:
 - beginner
 roles:
@@ -32,6 +32,8 @@ roles:
 - student
 products:
 - vs-code
+subjects:
+- development-tools
 units:
 - learn.student-evangelism.plan-moon-mission-using-python-pandas.1-introduction
 - learn.student-evangelism.plan-moon-mission-using-python-pandas.2-rock-samples

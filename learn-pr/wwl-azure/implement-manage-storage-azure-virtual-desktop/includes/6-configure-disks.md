@@ -7,7 +7,7 @@ You will see how to add and configure a new managed data disk to a Windows virtu
 3.  On the **Virtual machine** page, select **Disks**.
 4.  On the **Disks** page, select **Add data disk**.
 5.  In the drop-down for the new disk, select **Create disk**.
-6.  In the **Create managed disk** page, type in a name for the disk and adjust the other settings as necessary. When you're done, select **Create**.:::image type="content" source="../media/create-a-disk-1906b02f.png" alt-text="Create a managed disk using the Azure portal.":::
+6.  In the **Create managed disk** page, type in a name for the disk and adjust the other settings as necessary. When you're done, select **Create**.:::image type="content" source="../media/create-a-disk-1906b02f.png" alt-text="Image of the create managed disk page.":::
     
 
 7.  In the **Disks** page, select **Save** to save the new disk configuration for the VM.

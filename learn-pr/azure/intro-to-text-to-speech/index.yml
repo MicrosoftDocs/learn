@@ -4,8 +4,8 @@ metadata:
   title: Introduction to Text-to-speech
   description: Text-to-speech converts text into human-like speech, along with the ability to create a unique, custom voice to use in your applications. We introduce the different types of voices, how to use them, and review situations when they are appropriate to use.
   ms.date: 03/14/2021
-  author: tomreidnz
-  ms.author: jasdeb
+  author: eric-urban
+  ms.author: eur
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Text-to-speech 
@@ -16,7 +16,7 @@ abstract: |
   - Describe what Text-to-speech is
   - Define scenarios where Text-to-speech can be applied
 prerequisites: A basic familiarity with Azure
-iconUrl: /learn/achievements/intro-to-text-to-speech.svg
+iconUrl: /training/achievements/intro-to-text-to-speech.svg
 levels:
 - beginner
 roles:
@@ -29,6 +29,8 @@ products:
 - azure
 - azure-cognitive-services
 - azure-text-speech
+subjects:
+- artificial-intelligence
 units:
 - learn.azure.intro-to-text-to-speech.introduction
 - learn.azure.intro-to-text-to-speech.what-is-text-to-speech

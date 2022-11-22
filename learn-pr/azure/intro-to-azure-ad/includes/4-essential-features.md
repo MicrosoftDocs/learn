@@ -1,12 +1,12 @@
 Your company wants to improve how it provides services to doctors and how it collaborates with external healthcare organizations. You've been asked to investigate what other capabilities and services Azure Active Directory (Azure AD) can provide for the organization.
 
-Here, you explore some essential features of Azure AD and how you can use them. For example, you look at features like Azure AD B2B, Azure AD B2C, Azure AD Domain Services (AD DS), and Azure AD Identity Protection. You see which features you can use to help improve how you manage apps in Azure AD.
+Here, you'll explore some essential features of Azure AD and how you can use them. For example, you'll look at features like Azure AD B2B, Azure AD B2C, Azure AD Domain Services (AD DS), and Azure AD Identity Protection. You'll see which features you can use to help improve how you manage apps in Azure AD.
 
 ## Azure AD B2B
 
 Use Azure AD to invite external users to your tenant. Your organization can then collaborate with external healthcare partner staff members through Azure AD B2B Collaboration.
 
-For example, your company works with external healthcare partners. These partners can be invited as guest users to your tenant. When their work is done, you can revoke access for those external partners until it's needed again.
+For example, your company works with external healthcare partners. You can invite these partners as guest users to your tenant. When their work is done, you can revoke access for those external partners until it's needed again.
 
 Here's the B2B collaboration process:
 
@@ -22,9 +22,9 @@ This feature is available for all licensing tiers in Azure AD.
 
 ## Azure AD B2C
 
-You can also use Azure AD B2C to manage your customers' identities and access. Your doctors' accounts should have protected access to resources and services. Use Azure AD B2C to securely authenticate the doctors through their preferred identity providers. 
+You can also use Azure AD B2C to manage your customers' identities and access. Your doctors' accounts should have protected access to resources and services. Use Azure AD B2C to securely authenticate the doctors through their preferred identity providers.
 
-AD B2C also helps you monitor for threats like brute force attacks and denial-of-service attacks on doctors' user accounts. To use Azure AD B2C, you register your apps. You then configure user flows to set up the user's journey to access an app.
+AD B2C also helps you monitor for threats &mdash; like brute force attacks and denial-of-service attacks &mdash; on doctors' user accounts. To use Azure AD B2C, you'll first register your apps. You'll then configure user flows to set up the user's journey to access an app.
 
 For example, a flow for the sign-in process might go like this:
 
@@ -40,7 +40,7 @@ This feature is available on a pay-as-you-go basis.
 
 ## Azure AD DS
 
-Azure AD DS lets you add virtual machines to a domain without needing domain controllers. Your internal staff users can access virtual machines by using their company Azure AD credentials. 
+Azure AD DS lets you add virtual machines to a domain without needing domain controllers. Your internal staff users can access virtual machines by using their company Azure AD credentials.
 
 Use this service to reduce the complexity of migrating on-premises apps to Azure. An organization could also use Azure AD DS to handle its infrastructure if it runs apps both on-premises and in the cloud. The process might go like this:
 
@@ -51,7 +51,7 @@ Use this service to reduce the complexity of migrating on-premises apps to Azure
 1. The company enables Azure AD DS on their Azure AD tenant.
 1. The apps and servers in Azure can use features like domain joining and Kerberos authentication.
 
-This feature is available for pay-as-you-go, based on the total number of objects in your domain that's managed by Azure AD DS. Objects can include users, groups, and domain-joined computers.
+This feature is available for pay-as-you-go, based on the total number of objects in your domain managed by Azure AD DS. Objects can include users, groups, and domain-joined computers.
 
 ## App management
 
@@ -63,7 +63,7 @@ You can manage different categories of apps in Azure AD:
 
     ![Azure Marketplace.](../media/4-azure-ad-marketplace.png)
 
-- **Custom applications**. You can register your company-built apps with Azure AD. You then control and monitor authentication for these apps.
+- **Custom applications**. You can register your company-built apps with Azure AD. You can then control and monitor authentication for these apps.
 
     ![Add a custom application.](../media/4-applications.png)
 
@@ -75,11 +75,11 @@ You can manage different categories of apps in Azure AD:
 
     ![Add an on-premises application.](../media/4-add-on-premises-application.png)
 
-In the following sections, you learn about other Azure AD features that you can use to benefit your apps.
+In the following sections, you'll learn about other Azure AD features you can use to benefit your apps.
 
 ### Protect your apps through conditional-access policies
 
-Use conditional-access policies to require users to pass additional authentication challenges before they access an app. For example, you can configure a conditional-access policy to require users to complete a multi-factor authentication challenge after their credentials are verified and before they access the app.
+You can use conditional-access policies to require users to pass additional authentication challenges before they access an app. For example, you can configure a conditional-access policy to require users to complete a multi-factor authentication challenge after their credentials are verified and before they access the app.
 
 ![Require multi-factor authentication in Azure AD.](../media/4-conditional-access-policy.png)
 
@@ -87,7 +87,7 @@ Conditional-access policies are available for Premium P1 and Premium P2 license 
 
 ### Monitor your app access
 
-Azure AD can help monitor your app sign-ins by generating reports that cover sign-in dates, user details, apps the user has used, risk detection, location, and more. Access those reports through the Azure portal or specific APIs for programmatic usage.
+Azure AD can help monitor your app sign-ins by generating reports that cover sign-in dates, user details, apps the user has used, risk detection, location, and more. You can access those reports through the Azure portal or specific APIs for programmatic usage.
 
 ![Azure AD reports.](../media/4-reports.png)
 
@@ -95,15 +95,15 @@ Reports are available for all licensing tiers.
 
 ## Azure AD Identity Protection
 
-Azure AD Identity Protection helps you to automatically detect, investigate, and remediate identity risks for users. Identity Protection also lets you export all the information that was collected about risks. Export the information to third-party tools and solutions so that you can further analyze it.
+Azure AD Identity Protection helps you to automatically detect, investigate, and remediate identity risks for users. Identity Protection also lets you export all the information collected about risks. You can export the information to third-party tools and solutions so that you can further analyze it.
 
-Identity Protection uses risk policies to automatically detect and respond to threats. You configure a risk policy to set up how Identity Protection should respond to a particular type of risk. Use policies in this way to save time and give you peace of mind.
+Identity Protection uses risk policies to automatically detect and respond to threats. You can configure a risk policy to set up how Identity Protection should respond to a particular type of risk. Use policies in this way to save time and give you peace of mind.
 
 ![Identity Protection flow in Azure AD.](../media/4-identity-protection-flow.svg)
 
 By using automated risk detection and remediation through Identity Protection, the admin first configures the risk policies. These policies then monitor for identity risks. When a risk is detected, the policies enforce measures to remediate it. For example, a policy might require a user to reset their password in response to a detected risk. The user then resets their password, and the risk is remediated.
 
-You configure risk policies through the Azure portal. For example, the following risk policy detects user risks and remediates them by requiring the user to reset their password.
+You can configure risk policies through the Azure portal. For example, the following risk policy detects user risks and remediates them by requiring the user to reset their password.
 
 ![Risk policy in Azure AD Identity Protection.](../media/4-risk-policy.png)
 

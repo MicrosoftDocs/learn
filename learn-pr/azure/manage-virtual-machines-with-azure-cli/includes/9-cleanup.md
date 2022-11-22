@@ -5,5 +5,5 @@ You've created a new Linux virtual machine, changed its size, stopped and starte
 
 ## Additional resources
 
-- [Azure CLI overview](/cli/azure/?view=azure-cli-latest)
-- [Azure CLI command reference](/cli/azure/reference-index?view=azure-cli-latest)
+- [Azure CLI overview](/cli/azure/)
+- [Azure CLI command reference](/cli/azure/reference-index)

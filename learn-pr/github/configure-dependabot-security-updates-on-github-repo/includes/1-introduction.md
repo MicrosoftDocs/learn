@@ -8,17 +8,17 @@ Luckily, GitHub provides you with dependency management tools that help to manag
 
 By the end of this module, you'll be able to:
 
-- Describe the available tools for managing vulnerable dependencies on GitHub
-- Enable and configure Dependabot alerts
-- Identify the permissions and roles required to view and enable Dependabot alerts
-- Enable and configure Dependabot security updates
-- Identify, review, and address vulnerable dependencies
-- Explain how to use GraphQL API to retrieve vulnerability information
-- Explain how to configure notifications for vulnerable dependencies
+- Describe the available tools for managing vulnerable dependencies on GitHub.
+- Enable and configure Dependabot alerts.
+- Identify the permissions and roles required to view and enable Dependabot alerts.
+- Enable and configure Dependabot security updates.
+- Identify, review, and address vulnerable dependencies.
+- Explain how to use GraphQL API to retrieve vulnerability information.
+- Explain how to configure notifications for vulnerable dependencies.
 
 ## Prerequisites
 
-- A GitHub Account
-- Administrative access to a repository 
-- Familiarity with managing GitHub administrative settings is required
-- Working knowledge of the GitHub pull request workflow is required
+- A GitHub account.
+- Administrative access to a repository.
+- Familiarity with managing GitHub administrative settings.
+- Working knowledge of the GitHub pull request workflow.

@@ -16,4 +16,3 @@ In this module, you will:
 ## Prerequisites
 
 - Familiarity with basic concepts of web APIs, such as operations and endpoints.
-

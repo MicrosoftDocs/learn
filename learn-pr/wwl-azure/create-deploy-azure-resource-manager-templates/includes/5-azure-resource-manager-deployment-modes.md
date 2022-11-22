@@ -4,7 +4,7 @@ For both modes, Resource Manager tries to create all resources specified in the 
 
 ## Complete mode
 
-In complete mode, Resource Manager **deletes** resources that exist in the resource group but aren't specified in the template.
+In complete mode, Resource Manager **deletes** resources that exist in the resource group that aren't specified in the template.
 
 If your template includes a resource that isn't deployed because `condition` evaluates to false, the result depends on which REST API version you use to deploy the template. If you use a version earlier than 2019-05-10, the resource **isn't deleted**. With 2019-05-10 or later, the resource **is deleted**. The latest versions of Azure PowerShell and Azure CLI delete the resource.
 

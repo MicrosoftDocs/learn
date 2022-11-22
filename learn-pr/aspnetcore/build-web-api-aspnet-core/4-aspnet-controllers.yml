@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-web-api-net-core.4-aspnet-controllers
 metadata:
-  title: ASP.NET Core Web API Controllers
-  description: Learn how ASP.NET core has built in support for web APIs with controllers.
+  title: ASP.NET Core web API controllers
+  description: Learn how ASP.NET core has built-in support for web APIs with controllers.
   ms.date: 04/28/2021
   author: jongalloway
   ms.author: jogallow
@@ -17,12 +17,12 @@ quiz:
   questions:
     - content: "What is the purpose of the `[ApiController]` attribute?"
       choices:
-      - content: "`[ApiController]` enables opinionated behaviors that make it easier to build web APIs. "
+      - content: "`[ApiController]` enables opinionated behaviors that make it easier to build web APIs."
         isCorrect: true
-        explanation: "This is correct. This attribute includes several opinionated API-specific behaviors, such as automatic handling for bad HTTP requests."
-      - content: "`ApiController` is the base class, which provides standard functionality for handling HTTP requests."
+        explanation: "Correct. This attribute includes several opinionated API-specific behaviors, such as automatic handling for bad HTTP requests."
+      - content: "`ApiController` is the base class that provides standard functionality for handling HTTP requests."
         isCorrect: false
-        explanation: "`ControllerBase` is the base class which provides standard HTTP handling to the controller class."
+        explanation: "`ControllerBase` is the base class that provides standard HTTP handling to the controller class."
       - content: "`[ApiController]` routes HTTP requests to the associated controller class."
         isCorrect: false
-        explanation: "The `[Route]` attribute is used to route HTTP requests to controllers, not the `[ApiController]` attribute."
+        explanation: "The `[Route]` attribute, not the `[ApiController]` attribute, is used to route HTTP requests to controllers."

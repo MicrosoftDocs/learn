@@ -3,9 +3,9 @@ uid: learn.aks-optimize-compute-costs
 metadata:
   title: Optimize compute costs on Azure Kubernetes Service (AKS)
   description: Explore strategies that you can use on Azure to optimize your cloud-native application-development process by using Azure Kubernetes Service (AKS).
-  ms.date: 7/10/2020
-  author: cryophobia
-  ms.author: chrvaw
+  ms.date: 03/16/2022
+  author: Nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Optimize compute costs on Azure Kubernetes Service (AKS)
@@ -21,7 +21,7 @@ prerequisites: |
   - Knowledge of Kubernetes and its concepts
   - Basic knowledge of creating Kubernetes YAML manifest files
   - Basic knowledge of executing commands by using kubectl
-iconUrl: /learn/achievements/optimize-compute-costs-on-azure-kubernetes-service.svg
+iconUrl: /training/achievements/optimize-compute-costs-on-azure-kubernetes-service.svg
 badge:
   uid: learn.aks-optimize-compute-costs.badge
 levels: 
@@ -35,6 +35,10 @@ products:
 - azure
 - azure-kubernetes-service
 - azure-policy
+subjects:
+- cloud-computing
+- storage
+- finance-accounting
 units:
 - learn.aks-optimize-compute-costs.introduction
 - learn.aks-optimize-compute-costs.node-pools

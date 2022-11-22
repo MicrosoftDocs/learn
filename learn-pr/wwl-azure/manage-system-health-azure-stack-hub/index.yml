@@ -3,7 +3,7 @@ uid: learn.wwl.manage-system-health-azure-stack-hub
 metadata:
   title: Manage system health on Azure Stack Hub
   description: "Manage system health on Azure Stack Hub"
-  ms.date: 12/09/2021
+  ms.date: 08/10/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ abstract: |
 prerequisites: |
   Working experience with monitoring and logging cloud environments.
   Conceptual knowledge of monitoring and logging.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/1-manage-system-health-on-azure-stack-hub.svg
 levels:
 - advanced
 roles:
@@ -34,10 +34,13 @@ products:
 - azure
 - azure-stack
 - azure-stack-hub
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.manage-system-health-azure-stack-hub.introduction
 - learn.wwl.manage-system-health-azure-stack-hub.monitor-health-alerts
 - learn.wwl.manage-system-health-azure-stack-hub.integrate-external-monitoring
+- learn.wwl.manage-system-health-azure-stack-hub.azure-stack-hub-operator-access-workstation
 - learn.wwl.manage-system-health-azure-stack-hub.monitor-by-using-syslog-server
 - learn.wwl.manage-system-health-azure-stack-hub.manage-field-replacement-repair
 - learn.wwl.manage-system-health-azure-stack-hub.configure-automatic-diagnostic-log-collection

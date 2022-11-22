@@ -5,8 +5,8 @@ metadata:
   title: Install the necessary workloads
   description: Install the necessary workloads
   ms.date: 05/02/2020
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: mikejo5000
+  ms.author: mikejo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

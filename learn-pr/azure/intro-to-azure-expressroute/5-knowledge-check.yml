@@ -1,0 +1,55 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-expressroute.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 02/09/2022
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.custom: team=cloud_advocates
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: Your employer Adatum has branch office locations in Auckland and Seattle. Each branch office location has an ExpressRoute connection configured. You want to ensure that data transferred from servers in Auckland to servers in Seattle uses the Azure global network backbone rather than being transferred across the public internet. Which ExpressRoute feature would you use to achieve this goal?
+      choices:
+        - content: Site-to-site VPN
+          isCorrect: false
+          explanation: Incorrect. Site-to-site VPNs usually use the public internet, and they aren't a feature of Azure ExpressRoute.
+        - content: ExpressRoute Global Reach
+          isCorrect: true
+          explanation: Correct. ExpressRoute Global Reach allows you to route traffic between on-premises locations that have ExpressRoute connections across the Azure global network backbone.
+        - content: ExpressRoute Direct
+          isCorrect: false
+          explanation: Incorrect. ExpressRoute Direct is a model for how your on-premises location connects to ExpressRoute. ExpressRoute Direct doesn't ensure that traffic doesn't pass across the public internet.          
+    - content: At which of the following Open Systems Interconnection (OSI) model layers does ExpressRoute provide connectivity between hosts on an on-premises network and IaaS VM hosts on an Azure virtual network?
+      choices: 
+        - content: OSI Layer 1
+          isCorrect: false
+          explanation: Incorrect. ExpressRoute doesn't provide connectivity between hosts on an on-premises network at OSI Layer 1.          
+        - content: OSI Layer 2
+          isCorrect: false
+          explanation: Incorrect. ExpressRoute doesn't provide connectivity between hosts on an on-premises network at OSI Layer 2.          
+        - content: OSI Layer 3
+          isCorrect: true
+          explanation: Correct. ExpressRoute provides connectivity between hosts on an on-premises network at OSI Layer 3 or greater.          
+    - content: Several users at Adatum work remotely using laptops with cellular internet connections. These users visit Adatum's on-premises sites only once or twice a month. Which of the following methods should these users use to connect to resources in Azure?
+      choices:
+        - content: Azure ExpressRoute
+          isCorrect: false
+          explanation: Incorrect. Azure ExpressRoute isn't an appropriate option for individual hosts that need to securely access Azure resources, but which only intermittently connect to on-premises networks.      
+        - content: Site-to-site VPN
+          isCorrect: false
+          explanation: Incorrect. A site-to-site VPN isn't an appropriate option for individual hosts that need to securely access Azure resources, but which only intermittently connect to on-premises networks.      
+        - content: Point-to-site VPN
+          isCorrect: true
+          explanation: Correct. A point-to-site VPN is an appropriate for individual hosts that need to securely access Azure resources, but which only intermittently connect to on-premises networks.
+          
+
+
+        

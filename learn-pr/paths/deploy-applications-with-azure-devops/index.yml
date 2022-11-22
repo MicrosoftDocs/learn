@@ -5,8 +5,8 @@ metadata:
   description: Learn how to configure release pipelines that continuously build, test, and deploy your applications.
   brand: azure
   ms.date: 04/23/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: juliakm
+  ms.author: jukullam
   #ms.learn-contact: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -18,17 +18,17 @@ summary: |
 
   :::row:::
   :::column:::
-    <img src="/learn/achievements/azure-devops/evolve-your-devops-practices.svg" width="101" height="84" alt="The trophy for the Get started with Azure DevOps learning path." role="presentation"></img>
+    <img src="/training/achievements/azure-devops/evolve-your-devops-practices.svg" width="101" height="84" alt="The trophy for the Get started with Azure DevOps learning path." role="presentation"></img>
 
     [Part 1: Get started with Azure DevOps](../evolve-your-devops-practices/index.yml)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/azure-devops/build-applications-with-azure-devops.svg" width="101" height="84" alt="The trophy for the Build applications with Azure DevOps learning path." role="presentation"></img>
+    <img src="/training/achievements/azure-devops/build-applications-with-azure-devops.svg" width="101" height="84" alt="The trophy for the Build applications with Azure DevOps learning path." role="presentation"></img>
 
     [Part 2: Build applications with Azure DevOps](../build-applications-with-azure-devops/index.yml)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/azure-devops/deploy-applications-with-azure-devops.svg" width="91" height="84" alt="The trophy for the Deploy applications with Azure DevOps learning path." role="presentation"></img>
+    <img src="/training/achievements/azure-devops/deploy-applications-with-azure-devops.svg" width="91" height="84" alt="The trophy for the Deploy applications with Azure DevOps learning path." role="presentation"></img>
 
     Part 3: Deploy applications with Azure DevOps
   :::column-end:::
@@ -45,7 +45,7 @@ prerequisites: |
   - [Get started with Azure DevOps](../evolve-your-devops-practices/index.yml)
   - [Build applications with Azure DevOps](../build-applications-with-azure-devops/index.yml)
   - An [Azure subscription](https://azure.microsoft.com/free/)
-iconUrl: /learn/achievements/azure-devops/deploy-applications-with-azure-devops.svg
+iconUrl: /training/achievements/azure-devops/deploy-applications-with-azure-devops.svg
 levels:
 - intermediate
 roles:
@@ -55,6 +55,8 @@ roles:
 products:
 - azure
 - azure-devops
+subjects:
+- devops
 modules:
 - learn.azdo.create-release-pipeline
 - learn.azdo.create-multi-stage-pipeline

@@ -9,6 +9,8 @@ metadata:
   ms.author: dnb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: dnb-06092020
 summary: Success and the growth that comes with it can be just as much a challenge to your reliability as any other factor. Learn ways to plan for, handle, and estimate costs for your success while still retaining th reliability you need.
 abstract: |
   In this module you will:
@@ -24,7 +26,7 @@ abstract: |
       decoupling, queues, in-memory caching and database sharding
   -   Learn about the Azure tools that make it possible to take your
       application or service global
-iconUrl: /learn/achievements/improve-reliability-scaling.svg
+iconUrl: /training/achievements/improve-reliability-scaling.svg
 levels:
 - beginner
 roles:
@@ -35,6 +37,8 @@ roles:
 products:
 - azure
 prerequisites: None
+subjects:
+- site-reliability-engineering
 units:
 - learn.improve-reliability-scaling.1-introduction
 - learn.improve-reliability-scaling.2-definition

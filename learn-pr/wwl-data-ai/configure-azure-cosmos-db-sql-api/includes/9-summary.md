@@ -15,8 +15,8 @@ For more information about the topics discussed in this module, see:
 - [How to choose between standard (manual) and autoscale provisioned throughput][/azure/cosmos-db/how-to-choose-offer]
 - [How to choose between provisioned throughput and serverless][/azure/cosmos-db/throughput-serverless]
 
-[/azure/cosmos-db/provision-throughput-autoscale]: https://docs.microsoft.com/azure/cosmos-db/provision-throughput-autoscale
-[/azure/cosmos-db/set-throughput]: https://docs.microsoft.com/azure/cosmos-db/set-throughput
-[/azure/cosmos-db/serverless]: https://docs.microsoft.com/azure/cosmos-db/serverless
-[/azure/cosmos-db/how-to-choose-offer]: https://docs.microsoft.com/azure/cosmos-db/how-to-choose-offer
-[/azure/cosmos-db/throughput-serverless]: https://docs.microsoft.com/azure/cosmos-db/throughput-serverless 
+[/azure/cosmos-db/provision-throughput-autoscale]: /azure/cosmos-db/provision-throughput-autoscale
+[/azure/cosmos-db/set-throughput]: /azure/cosmos-db/set-throughput
+[/azure/cosmos-db/serverless]: /azure/cosmos-db/serverless
+[/azure/cosmos-db/how-to-choose-offer]: /azure/cosmos-db/how-to-choose-offer
+[/azure/cosmos-db/throughput-serverless]: /azure/cosmos-db/throughput-serverless 

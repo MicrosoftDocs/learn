@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Test your Application Gateway
   description: Connect to the web app through Application Gateway
   ms.date: 05/02/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: vhorne
+  ms.author: victorh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Test your Application Gateway

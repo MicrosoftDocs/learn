@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create the CI workflow on GitHub
   description: Create GitHub Actions workflows to support your continuous integration processes.
   ms.date: 04/13/2021
-  author: jamcneil
-  ms.author: jumcn
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 40

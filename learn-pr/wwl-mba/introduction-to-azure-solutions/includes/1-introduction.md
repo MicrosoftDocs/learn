@@ -2,12 +2,18 @@ Microsoft Azure is an ever-expanding set of cloud services that can help your or
 you want to use, on a secure and trusted platform.  Azure is built to allow you to Invent with Purpose. Azure taps into the powerful combination of data and AI to
 create the breakthrough experiences that today's businesses require. 
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this video from Julia White to learn why you should digitally transform your business.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video from Julia White to learn why you should digitally transform your business.
+
+:::column-end:::
+:::row-end:::
+
+</br>
+
 >[!video https://www.microsoft.com/videoplayer/embed/RE43XPS]
-
-
 
 In this module, you will:
 

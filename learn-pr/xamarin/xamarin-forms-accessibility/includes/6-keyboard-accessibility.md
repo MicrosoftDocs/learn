@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Now that you've improved the accessibility of the project data entry and images, it's time to add entry information for the user's and manager's names. You'll use a grid-like system to enter the forenames and surnames. 
 
 Screen readers try their best to read information about controls in the correct order. As user interfaces get more complex, developers must remain intentional about how to support an appropriate accessibility order.

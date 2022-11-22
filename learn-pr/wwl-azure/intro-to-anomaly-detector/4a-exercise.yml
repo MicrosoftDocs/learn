@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-anomaly-detector.exercise
-title: Exercise
+title: Exercise - Explore Cognitive Services
 metadata:
-  title: Exercise
-  description: "Exercise"
-  ms.date: 11/17/2021
+  title: Exercise - Explore Cognitive Services
+  description: "Exercise - Explore Cognitive Services"
+  ms.date: 09/05/2022
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial

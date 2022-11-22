@@ -93,14 +93,14 @@ A lot of work in making an app inclusive is done in the XAML files: `MainPage.xa
 
 6. Let's test these improvements. Enter "color settings" in the Windows search bar, and switch between the **Light** and **Dark** modes once again. Notice any improvement?
 
-| Color Schemes|  |
+| Color Scheme | Color Scheme |
 |:--:|:--:|
 | ![Setting the light color mode.](../media/inc-light-50.png) | ![Setting the dark color mode](../media/inc-dark-50.png) |
 | *Light*| *Dark* |
 
 7. Now "high contrast" in the Windows search bar. Select each of the four high contrast themes. Your scientific calculator should now look usable in all four themes, as shown in the following images.
 
-| High Contrast Color Schemes|  |
+| High Contrast Color Scheme | High Contrast Color Scheme |
 |:--:|:--:|
 | ![Setting High Contrast #1.](../media/inc-highcontrast1-50.png) | ![Setting High Contrast #2](../media/inc-highcontrast2-50.png) |
 | *High Contrast #1*| *High Contrast #2* |

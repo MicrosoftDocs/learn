@@ -18,7 +18,7 @@ abstract: |
   - Track incidents using workbooks, playbooks, and hunting techniques
 prerequisites: |
   - None
-iconUrl: /learn/achievements/azure-sentinel.svg
+iconUrl: /training/achievements/azure-sentinel.svg
 levels:
 - intermediate
 roles:
@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
 units:
 - learn.wwl.azure-sentinel.introduction
 - learn.wwl.azure-sentinel.enable-azure-sentinel

@@ -30,8 +30,7 @@ The oracle has to act on quantum states instead of classical bits. To enable
 this capacity, you can encode the input $x$ that has the binary representation $x=(x_0,x_1,...,x_{n-1})$
 into an $n$-qubit register: $|x\rangle=|x_0x_1...x_{n-1}\rangle$.
 
-For more information about quantum oracles, see the [conceptual documentation for the
-Quantum Development Kit (QDK)](/quantum/concepts/oracles?azure-portal=true).
+For more information about quantum oracles, see the [conceptual documentation for the Quantum Development Kit (QDK)](/quantum/concepts/oracles?azure-portal=true).
 
 ## Deutsch–Jozsa algorithm
 

@@ -19,7 +19,8 @@ prerequisites: |
   - Basic understanding of Elasticserach, Kibana, Logstash, and Beats
   - Familiarity with Azure virtual machines (VMs)
   - Established Ubuntu username 
-iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
@@ -28,6 +29,8 @@ products:
   - azure
   - azure-virtual-machines
   - azure-linux-vm
+subjects:
+- virtual-machine
 units:
 - learn.azure.deploy-elastic-cloud-azure-virtual-machines.introduction
 - learn.azure.deploy-elastic-azure-virtual-machines.deploy

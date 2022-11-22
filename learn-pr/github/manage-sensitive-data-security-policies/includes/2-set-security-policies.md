@@ -1,6 +1,6 @@
 <!--Manage sensitive data and security policies in GitHub-->
 
-In this unit, you'll learn more about the preventative measures you can take to maintain the health of your GitHub repositories.
+In this unit, you'll learn more about the preventive measures you can take to maintain the health of your GitHub repositories.
 
 Suppose you're an administrator who is helping to onboard many new collaborators to your organization. You need to make sure they contribute to the proper repositories and have easy access to assistance if they discover a security threat. To do this, you set security policies.
 
@@ -13,7 +13,7 @@ As an administrator, you can set some security policies individually at each lev
 Documentation and security settings serve three broad purposes.
 
 - Standardization: security policies ensure that everyone on your project responds in the same way to common issues, making it easier to know what is happening and why.
-- Compliance: the countries where you plan to develop and publish your projects may require that you follow industry-standard practices in coding and recording security events.
+- Compliance: the countries/regions where you plan to develop and publish your projects may require that you follow industry-standard practices in coding and recording security events.
 - Prevention of critical failure: most importantly, solid policies defend against events that threaten continued development, like publishing trade secrets or intellectual property.
 
 ## Documentation

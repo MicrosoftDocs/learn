@@ -4,8 +4,9 @@ metadata:
   title: Introduction to Azure Arc-enabled data services
   description: Introduction to Azure Arc-enabled data services
   ms.date: 06/28/2021
-  author: bobward
-  ms.author: bobward
+  author: MikeRayMSFT
+  ms.author: mikeray
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid
@@ -23,7 +24,7 @@ prerequisites: |
   - Basic understanding of how containers work
   - Basic knowledge of the Kubernetes platform
   - Working knowledge of SQL Server
-iconUrl: /learn/achievements/intro-to-arc-enabled-data-services.svg
+iconUrl: /training/achievements/intro-to-arc-enabled-data-services.svg
 levels:
 - intermediate
 roles:
@@ -38,6 +39,9 @@ roles:
 - technology-manager
 products:
 - azure
+- azure-arc
+subjects:
+- data-management
 units:
 - learn.azure.intro-to-arc-enabled-data-services.1-introduction
 - learn.azure.intro-to-arc-enabled-data-services.2-hybrid-computing

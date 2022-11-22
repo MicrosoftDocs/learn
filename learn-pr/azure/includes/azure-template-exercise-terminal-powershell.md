@@ -1,24 +1,27 @@
 ---
-author: johndowns
+author: davidsmatlak
 ms.prod: learning-azure
 ms.topic: include
-ms.date: 06/09/2021
-ms.author: jodowns
+ms.date: 10/10/2022
+ms.author: davidsmatlak
 ---
-1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 
-1. If the dropdown control at the right displays **pwsh** or **PowerShell**, you have the right shell to work from, and you can skip to the next section.
+1. In the **Terminal** menu, select **New Terminal**. The terminal window usually opens in the lower half of your screen.
 
-    :::image type="content" source="media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the pwsh option displayed in the dropdown control.":::
+1. If the shell shown on the right side of the terminal window is **powershell** or **pwsh**, the correct shell is open, and you can skip to the next section.
 
-   If **pwsh** or **PowerShell** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **pwsh** or **PowerShell**.   
+    :::image type="content" source="media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the p w s h option displayed in the shell dropdown.":::
 
-    :::image type="content" source="media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the Select your preferred terminal shell dropdown list shown.":::
+1. If a shell other than **powershell** or **pwsh** appears, select the shell dropdown, and then select **PowerShell**.
 
-1. Select the plus sign (**+**) in the terminal to create a new terminal with *pwsh* or *PowerShell* as the shell.
+    :::image type="content" source="media/select-shell-powershell.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the terminal shell dropdown shown and PowerShell selected.":::
 
-1. You might have to switch your terminal to the directory where you saved your template. For example, if you saved it to the *templates* folder, you can use this command:
+1. In the list of terminal shells, select **powershell** or **pwsh**.
+
+   :::image type="content" source="media/select-powershell.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the PowerShell terminal selected.":::
+
+1. In the terminal, go to the directory where you saved your template. For example, if you saved your template in the *templates* folder, you can use this command:
 
    ```azurepowershell
-   cd templates
+   Set-Location -Path templates
    ```

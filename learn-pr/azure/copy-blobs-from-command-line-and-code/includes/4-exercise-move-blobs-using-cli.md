@@ -36,7 +36,7 @@ In this exercise, you'll use the Azure CLI to migrate blobs that haven't changed
       --output table
     ```
 
-1. Create an environment variable for your account key; use the value of the first key retrieved by the previous command.
+1. Create an environment variable for your account key. Use the value of the first key retrieved by the previous command.
 
     ```bash
     HOT_KEY="<source account key>"
@@ -57,7 +57,7 @@ In this exercise, you'll use the Azure CLI to migrate blobs that haven't changed
     git clone https://github.com/MicrosoftDocs/mslearn-copy-move-blobs-from-containers-or-storage-accounts sample
     ```
 
-1. Upload the files to your storage account and save each one as a blob. This command uploads a number of specification files.
+1. Upload the files to your storage account and save each one as a blob. This command uploads several specification files.
 
     ```azurecli
     az storage blob upload-batch \

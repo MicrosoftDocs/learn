@@ -1,1 +1,1 @@
-Choose the best response for each question. Then select **Check your answers**.<br><br>
+Choose the best response for each question. Then select **Check your answers**.

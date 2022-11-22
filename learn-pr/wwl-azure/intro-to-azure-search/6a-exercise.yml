@@ -1,17 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-introduction-to-azure-search.exercise
-title: Exercise
+title: Exercise - Explore knowledge mining
 metadata:
-  title: Exercise
-  description: "Exercise"
-  ms.date: 11/30/2021
+  title: Exercise - Explore knowledge mining
+  description: "Exercise - Explore knowledge mining"
+  ms.date: 09/02/2022
   author: wwlpublish
-  ms.author: robmcm
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 35
 content: |
   [!include[](includes/6a-exercise.md)]

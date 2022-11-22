@@ -6,8 +6,8 @@ metadata:
   title: Knowledge check - Create a storage account
   description: Questions about storage account properties and creation.
   ms.date: 09/24/2018
-  author: cryophobia
-  ms.author: chrvaw
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 quiz:

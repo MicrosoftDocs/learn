@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.aspnet-core-signalr.knowledge-check
-title: ASP.NET Core SignalR knowledge check
+title: Knowledge check
 metadata:
   unitType: knowledge_check
-  title: SignalR fundamentals knowledge check
-  description: Assert your knowledge of ASP.NET Core SignalR fundamentals.
+  title: Knowledge check
+  description: Test what you've learned about ASP.NET Core SignalR fundamentals.
   ms.date: 09/28/2021
   author: IEvangelist
   ms.author: dapine
@@ -14,69 +14,69 @@ durationInMinutes: 4
 content: |
 quiz:
   questions:
-    - content: "Which built-in SignalR hub protocol should be used to reduce message sizes?"
+    - content: "Which built-in SignalR hub protocol should you use to reduce message sizes?"
       choices:
         - content: "MessagePack"
           isCorrect: true
-          explanation: "The MessagePack hub protocol provides an alternative to the default JSON protocol, and produces smaller messages."
+          explanation: "Correct! The MessagePack hub protocol provides an alternative to the default JSON protocol, and it produces smaller messages."
         - content: "JSON"
           isCorrect: false
-          explanation: "The JSON hub protocol is the default protocol, and is human readable, however; it's uncompressed and has larger messages compared to its binary counterpart."
+          explanation: "Incorrect. The JSON hub protocol is the default protocol and is human readable, but it's uncompressed and has larger messages than its binary counterpart."
         - content: "BlazorPack"
           isCorrect: false
-          explanation: "While BlazorPack is a binary protocol, it is only available with the Blazor server hosting model."
+          explanation: "Incorrect. Although BlazorPack is a binary protocol, it's available only with the Blazor server hosting model."
     - content: "A client can send and receive messages to and from the server with what SignalR type?"
       choices:
         - content: "`IHubContext<THub>`"
           isCorrect: false
-          explanation: "The `IHubContext<IHub>` type is a server concept to represent a specific `Hub`, outside the hub instance itself."
+          explanation: "Incorrect. The `IHubContext<IHub>` type is a server concept that represents a specific `Hub`, outside the hub instance itself."
         - content: "`HubConnection`"
           isCorrect: true
-          explanation: "The `HubConnection` is built from a `HubConnectionBuilder`, and its connection enables clients to send and receive messages."
+          explanation: "Correct! The `HubConnection` type is built from `HubConnectionBuilder`, and its connection enables clients to send and receive messages."
         - content: "`SynchronizationContext`"
           isCorrect: false
-          explanation: "The `SynchronizationContext` provides the basic functionality for propagating a synchronization context in various synchronization models, but is not related to SignalR."
-    - content: "A server cannot fire events from this SignalR type?"
+          explanation: "Incorrect. The `SynchronizationContext` type provides the basic functionality for propagating a synchronization context in various synchronization models, but it's unrelated to SignalR."
+    - content: "A server can't fire events from which SignalR type?"
       choices:
         - content: "`Hub`"
           isCorrect: false
-          explanation: "The `Hub` and `Hub<T>` types can fire events in addition to exposing methods."
+          explanation: "Incorrect. The `Hub` and `Hub<T>` types can fire events in addition to exposing methods."
         - content: "`IHubContext<IHub>`"
           isCorrect: false
-          explanation: "The `IHubContext<IHub>` type can be used to fire events."
+          explanation: "Incorrect. The `IHubContext<IHub>` type can be used to fire events."
         - content: "`HubConnection`"
           isCorrect: true
-          explanation: "The `HubConnection` is _client_ concept, and _cannot_ fire events directly."
+          explanation: "Correct! The `HubConnection` type is a _client_ concept and can't fire events directly."
     - content: "SignalR is not ideal in what types of apps?"
       choices:
         - content: "Apps that require high-frequency updates."
           isCorrect: false
-          explanation: "SignalR would be perfect for these types of apps to provide real-time web functionality"
+          explanation: "Incorrect. SignalR would be perfect for these types of apps to provide real-time web functionality."
         - content: "Apps with sparse or unreliable internet connectivity."
           isCorrect: true
-          explanation: "SignalR is as durable as the underlying connection. When connectivity is a primary concern, SignalR is probably not ideal."
-        - content: "Apps designed for collaborating, monitoring, or based on notifications."
+          explanation: "Correct! SignalR is only as durable as the underlying connection. When connectivity is a primary concern, SignalR is probably not ideal."
+        - content: "Apps that are designed for collaborating, monitoring, or based on notifications."
           isCorrect: false
-          explanation: "SignalR would be perfect for these types of apps to provide real-time web functionality."
-    - content: "When the server supports WebSockets, but the client only supports Long Polling which transport is used?"
+          explanation: "Incorrect. SignalR would be perfect for these types of apps to provide real-time web functionality."
+    - content: "When the server supports WebSockets but the client supports only Long Polling, which transport is used?"
       choices:
         - content: "WebSockets"
           isCorrect: false
-          explanation: "If the client doesn't support WebSockets, graceful fallback attempts Server-Sent Events then Long Polling."
+          explanation: "Incorrect. If the client doesn't support WebSockets, graceful fallback attempts Server-Sent Events and then Long Polling."
         - content: "Server-Sent Events"
           isCorrect: false
-          explanation: "If the client doesn't support WebSockets or Server-Sent Events, then only Long Polling is available."
+          explanation: "Incorrect. If the client doesn't support WebSockets or Server-Sent Events, only Long Polling is available."
         - content: "Long Polling"
           isCorrect: true
-          explanation: "Long Polling is used since its the lowest common denominator of potential transports."
-    - content: "With a SignalR connection which of the following statements is true?"
+          explanation: "Correct! Long Polling is used, because it's the lowest common denominator of potential transports."
+    - content: "With a SignalR connection, which of the following statements is true?"
       choices:
-        - content: "Only clients can send messages to the server"
+        - content: "Messages can be sent only from clients to the server."
           isCorrect: false
-          explanation: "While clients can send message to the server, the server can also send messages to clients."
-        - content: "Only servers can send messages to clients"
+          explanation: "Incorrect. Although clients can send messages to the server, the server can also send messages to clients."
+        - content: "Messages can be sent only from the server to the clients."
           isCorrect: false
-          explanation: "While servers can send message to clients, clients can also send messages to the server."
-        - content: "Both client and server can send messages (duplex communication)"
+          explanation: "Incorrect. Although the server can send messages to clients, clients can also send messages to the server."
+        - content: "Both clients and the server can send messages to each other (duplex communication)."
           isCorrect: true
-          explanation: "SignalR creates a duplex communication, in which both the server and client's alike can send messages to each other."
+          explanation: "Correct! SignalR creates a duplex communication in which the server and clients can send messages to each other."

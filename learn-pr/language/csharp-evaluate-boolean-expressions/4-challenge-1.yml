@@ -5,8 +5,8 @@ metadata:
   title: Challenge
   description: Test your knowledge by using the ideas in this module to solve a problem.
   ms.date: 09/24/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

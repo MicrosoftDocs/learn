@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.run-vmware-workloads-azure-vmware-solution
 metadata:
-  title: Run VMware workloads on Azure VMware Solution
+  title: Run VMware resources on Azure VMware Solution
   description: Learn about Azure VMware Solution, how to deploy the resource, and how to migrate VMware virtual machines on-premises.
   brand: azure
   ms.date: 06/21/2021
@@ -9,13 +9,17 @@ metadata:
   ms.author: shkuehn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Run VMware workloads on Azure VMware Solution
+  ms.contributors:
+  - shkuehn-01272022
+  ms.custom:
+  - team=cloud_advocates
+title: Run VMware resources on Azure VMware Solution
 summary:  |
   Learn about Azure VMware Solution, how to deploy the resource, and how to migrate VMware virtual machines on-premises.
 prerequisites: |
   - Experience managing VMware infrastructure, such as vSphere, vCenter, NSX-T, and vSAN.
   - Basic knowledge of network concepts, such as Classless Inter-Domain Routing (CIDR), Border Gateway Protocol (BGP) routing, Dynamic Host Configuration Protocol (DHCP), and subnets.
-iconUrl: /learn/achievements/run-vmware-workloads-azure-vmware-solution.svg
+iconUrl: /training/achievements/run-vmware-workloads-azure-vmware-solution.svg
 levels:
 - intermediate
 roles:
@@ -24,9 +28,13 @@ roles:
 products:
 - azure
 - azure-vmware-solution
+subjects:
+- cloud-computing
+- virtual-machine
 modules:
 - learn.azure.intro-azure-vmware-solution
 - learn.deploy-azure-vmware-solution
 - learn.migrate-vmware-workloads-on-premises-azure-vmware-solution
+- learn.azure.deploy-disaster-recovery-vmware-srm-azure-vmware-solution
 trophy:
   uid: learn.run-vmware-workloads-azure-vmware-solution.trophy

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - for iteration statement
   description: Use the `for` iteration statement in common scenarios.
   ms.date: 09/27/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

@@ -9,6 +9,8 @@ metadata:
   ms.author: dnb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: dnb-06092020
 durationInMinutes: 3
 content: |
   [!include[](includes/2-importance.md)]

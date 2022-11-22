@@ -16,6 +16,6 @@ In this module, you:
 
 - A GitHub account
 - The ability to navigate and edit files in GitHub
-  - For more information about GitHub, see [Introduction to GitHub](https://lab.github.com/githubtraining/introduction-to-github?azure-portal=true).
+  - For more information about GitHub, see [Introduction to GitHub](https://github.com/githublearn/introduction-to-github).
 - Basic familiarity with GitHub Actions and workflows
-  - If you are unfamiliar with GitHub Actions or workflows, check out [Automate development tasks by using GitHub Actions](/learn/modules/github-actions-automate-tasks/)
+  - If you are unfamiliar with GitHub Actions or workflows, check out [Automate development tasks by using GitHub Actions](/training/modules/github-actions-automate-tasks/)

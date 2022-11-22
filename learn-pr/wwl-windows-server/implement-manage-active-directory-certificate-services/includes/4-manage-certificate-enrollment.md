@@ -50,4 +50,4 @@ The main steps in the process are:
 1. Create a custom certificate template. Use the Certificate Templates console to duplicate the Web Server template.
 1. Configure the template so that it can be issued. Use the Certification Authority console, to make the template available for use.
 
- >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MjvJ]
+ >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MjvJ]

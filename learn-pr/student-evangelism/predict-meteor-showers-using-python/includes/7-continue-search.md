@@ -1,4 +1,4 @@
-As a reminder, we're following these steps to find the optimal date to view meteor showers in a particular capital city:
+As a reminder, we're following these steps to find the optimal date to view meteor showers in a particular capital/major city:
 1. Determine the *latitude* of the city.
 2. Use that latitude to figure out which *constellations* are visible to that city.
 3. Use the constellations to determine which *meteor showers* are visible to that city.
@@ -132,14 +132,14 @@ Here's an example of the first few lines of the output:
 
 |  | date | percentage |
 |--|------|------------|
-| 111 | 2020-04-21 | 0.5 |
-| 112 | 2020-04-22 | 0.0 |
-| 109 | 2020-04-19 | 0.5 |
-| 110 | 2020-04-20 | 0.5 |
-| 111 | 2020-04-21 | 0.5 |
-| 112 | 2020-04-22 | 0.0 |
-| 113 | 2020-04-23 | 0.0 |
-| 114 | 2020-04-24 | 0.0 |
+| **111** | 2020-04-21 | 0.5 |
+| **112** | 2020-04-22 | 0.0 |
+| **109** | 2020-04-19 | 0.5 |
+| **110** | 2020-04-20 | 0.5 |
+| **111** | 2020-04-21 | 0.5 |
+| **112** | 2020-04-22 | 0.0 |
+| **113** | 2020-04-23 | 0.0 |
+| **114** | 2020-04-24 | 0.0 |
 
 ## Find the optimal date based on Moon phases
 

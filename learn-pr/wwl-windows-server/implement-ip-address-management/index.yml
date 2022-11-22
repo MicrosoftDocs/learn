@@ -25,7 +25,7 @@ prerequisites: |
   - Windows Server.
   - Core networking technologies such as IP addressing, name resolution, and Dynamic Host Configuration Protocol (DHCP).
   - Windows PowerShell basics.
-iconUrl: /learn/achievements/implement-ip-address-management.svg
+iconUrl: /training/achievements/implement-ip-address-management.svg
 levels:
 - intermediate
 roles:
@@ -34,6 +34,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.implement-ip-address-management.introduction
 - learn.wwl.implement-ip-address-management.define-ipam

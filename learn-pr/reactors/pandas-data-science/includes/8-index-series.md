@@ -1,4 +1,4 @@
-For our first example, suppose you're combining two different data sources to find only the top five countries by area and the top five countries by population:
+For our first example, suppose you're combining two different data sources to find only the top five countries/regions by area and the top five countries/regions by population:
 
 ```python
 area = pd.Series({'Russia': 17075400, 'Canada':  9984670,
@@ -40,7 +40,7 @@ Now divide these to compute the population density.
 
 ***
 
-Your resulting array contains the union of indices of the two input arrays: seven countries in total. All of the countries in the array without an entry (because they lacked either area data or population data) are marked with the now familiar NaN, or "Not a Number," designation.
+Your resulting array contains the union of indices of the two input arrays: seven countries in total. All the countries in the array without an entry (because they lacked either area data or population data) are marked with the now-familiar NaN, or "Not a Number," designation.
 
 Index matching works the same way as built-in Python arithmetic expressions, and missing values are filled in with NaNs. You can see this clearly by adding two `Series` that are slightly misaligned in their indices:
 

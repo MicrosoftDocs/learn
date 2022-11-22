@@ -323,5 +323,4 @@ As per [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533), 
   :::column-end:::
 :::row-end:::
 
-
 Microsoft Azure offers Constrained vCPU capable VM sizes with a reduced number of vCPUs. The vCPU count can be constrained to one half or one quarter of the original VM size. These new VM sizes have a suffix that specifies the number of active vCPUs. You can use these VM sizes for SAP workload as well if the VM size is derived from one of the VM types listed above.

@@ -10,6 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
+  ms.custom: team=cloud_advocates
+  ms.contributors: pierrer-11122020
 azureSandbox: true
 durationInMinutes: 10
 content: |

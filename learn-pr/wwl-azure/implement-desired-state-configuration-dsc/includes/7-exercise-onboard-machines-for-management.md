@@ -1,7 +1,7 @@
 After your configuration is in place, you'll select the Azure VMs or on-premises VMs that you want to onboard.
 
 > [!NOTE]
-> For more information on onboarding on-premises VMs, review the [Physical/virtual Windows machines on-premises or in a cloud other than the Azure/AWS](https://docs.microsoft.com/azure/automation/automation-dsc-onboarding#physicalvirtual-windows-machines-on-premises-or-in-a-cloud-other-than-azureaws) webpage.
+> For more information on onboarding on-premises VMs, review the [Physical/virtual Windows machines on-premises or in a cloud other than the Azure/AWS](/azure/automation/automation-dsc-onboarding#physicalvirtual-windows-machines-on-premises-or-in-a-cloud-other-than-azureaws) webpage.
 
 You can onboard a VM and enable DSC in several different ways. Here we'll cover onboarding through an Azure Automation account.
 

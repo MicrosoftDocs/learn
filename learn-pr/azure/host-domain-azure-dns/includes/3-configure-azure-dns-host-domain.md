@@ -8,7 +8,7 @@ In this unit, you'll learn how to:
 
 ## Configure a public DNS zone
 
-You use a DNS zone to host the DNS records for a domain, such as wideworldimports.com. 
+You'll use a DNS zone to host the DNS records for a domain, such as wideworldimports.com. 
 
 ### Step 1: Create a DNS zone in Azure
 
@@ -18,22 +18,22 @@ To host the domain name with Azure DNS, you first need to create a DNS zone for 
 
 When creating a DNS zone, you need to supply the following details:
 
-- **Subscription**: The subscription to be used.
-- **Resource group**: The name of the resource group to hold your domains. If one doesn't exist, create one to allow for better control and management.
-- **Name**: The name of your domain, which in this case is wideworldimports.com.
-- **Resource group location**: The location defaults to the location of the resource group.
+- **Subscription:** The subscription to be used.
+- **Resource group:** The name of the resource group to hold your domains. If one doesn't exist, create one to allow for better control and management.
+- **Name:** The name of your domain, which in this case is wideworldimports.com.
+- **Resource group location:** The location defaults to the location of the resource group.
 
     ![Screenshot of Create DNS zone page.](../media/3-create-dns-zone.png)
 
 ### Step 2: Get your Azure DNS name servers
 
-After you create a DNS zone for the domain, you need to get the name server details from the name servers (NS) record. You use these details to update your domain registrar's information, and point to the Azure DNS zone.
+After you create a DNS zone for the domain, you need to get the name server details from the name servers (NS) record. You'll use these details to update your domain registrar's information and point to the Azure DNS zone.
 
 ![Screenshot of the name server details on the DNS zone page.](../media/3-name-server.png)
 
 ### Step 3: Update the domain registrar setting
 
-As the owner of the domain, you need to sign in to the domain management application provided by your domain registrar. In the management application, edit the NS record, and change the NS details to match your Azure DNS name server details.
+As the domain owner, you need to sign in to the domain-management application provided by your domain registrar. In the management application, edit the NS record, and change the NS details to match your Azure DNS name server details.
 
 Changing the NS details is called *domain delegation*. When you delegate the domain, you must use all four name servers provided by Azure DNS.
 
@@ -41,7 +41,7 @@ Changing the NS details is called *domain delegation*. When you delegate the dom
 
 The next step is to verify that the delegated domain now points to the Azure DNS zone you created for the domain. This can take as few as 10 minutes, but might take longer.
 
-To verify the success of the domain delegation, query the start of authority (SOA) record. The SOA record was automatically created when the Azure DNS zone was set up. You can do this by using a third-party tool, like nslookup.
+To verify the success of the domain delegation, query the start of authority (SOA) record. The SOA record was automatically created when the Azure DNS zone was set up. You can do this by using a third-party tool like nslookup.
 
 The SOA record represents your domain and will become the reference point when other DNS servers are searching for your domain on the internet.
 
@@ -53,16 +53,16 @@ nslookup -type=SOA wideworldimports.com
 
 ### Step 5: Configure your custom DNS settings
 
-The domain name is wideworldimports.com. When it's used in a browser, the domain resolves to your website. But what if you want to add in web servers, or load balancers? These resources need to have their own custom settings in the DNS zone, either as an A record or a CNAME.
+The domain name is wideworldimports.com. When it's used in a browser, the domain resolves to your website. But what if you want to add in web servers or load balancers? These resources need to have their own custom settings in the DNS zone, either as an A record or a CNAME.
 
 #### A record
 
 Each A record requires the following details:
 
-- **Name**: The name of the custom domain, for example *webserver1*.
-- **Type**: In this instance, it's A.
-- **TTL**: Represents the "time-to-live" as a whole unit, where 1 is one second. This value indicates how long the A record lives in a DNS cache before it expires.
-- **IP address**: The IP address of the server this A record should resolve to.
+- **Name:** The name of the custom domain, for example *webserver1*.
+- **Type:** In this instance, it's A.
+- **TTL:** Represents the "time-to-live" as a whole unit, where 1 is one second. This value indicates how long the A record lives in a DNS cache before it expires.
+- **IP address:** The IP address of the server to which this A record should resolve.
 
 #### CNAME record
 
@@ -92,7 +92,7 @@ Let's assume that your organization has already created your VMs and virtual net
 
 ### Step 3: Link your virtual network to a private DNS zone
 
-To link the private DNS zone to a virtual network, you create a virtual network link. In the Azure portal, go to the private zone, and select **Virtual network links**.
+To link the private DNS zone to a virtual network, you'll create a virtual network link. In the Azure portal, go to the private zone, and select **Virtual network links**.
 
 ![Screenshot of another Create Private DNS zone page.](../media/3-virtual-network-link-option.png)
 

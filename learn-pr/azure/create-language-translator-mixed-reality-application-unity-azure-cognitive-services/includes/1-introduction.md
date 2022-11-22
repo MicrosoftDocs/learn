@@ -1,4 +1,4 @@
-Suppose you work for a clothing brand as the collaborative tools developer for the Global Expansion team. The team collaborates virtually through a multiuser mixed reality application to plan new store openings. This application enables people to work from anywhere in the world. The team spans seven countries and includes individuals who speak various languages. 
+Suppose you work for a clothing brand as the collaborative tools developer for the Global Expansion team. The team collaborates virtually through a multiuser mixed reality application to plan new store openings. This application enables people to work from anywhere in the world. The team spans seven countries/regions and includes individuals who speak various languages. 
 
 As the team prepares to map out product placement and store displays, it finds that the language barrier sometimes results in miscommunication between people. To foster an inclusive work environment, your team needs a speech translation service that can integrate with the collaboration tool.
 
@@ -17,7 +17,7 @@ By the end of this module, you'll be able to integrate Speech Translation as a f
 - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
 - Windows 10 SDK 10.0.18362.0 or later
 - Unity Hub with Unity 2019.4.X installed
-- Familiarity with [setting up a Unity project for Windows Mixed Reality with the Mixed Reality Toolkit](/learn/modules/mixed-reality-toolkit-project-unity/?azure-portal=true)
+- Familiarity with [setting up a Unity project for Windows Mixed Reality with the Mixed Reality Toolkit](/training/modules/mixed-reality-toolkit-project-unity/?azure-portal=true)
 - Access to a microphone for audio capture
 - Basic familiarity with Unity: interface, scene creation, package import, and addition of GameObjects to a scene
 - Basic familiarity with C# and Unity scripting

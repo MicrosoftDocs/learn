@@ -5,8 +5,8 @@ metadata:
   title: Document an ASP.NET Core Web API with Swagger tools
   description: Document an ASP.NET Core Web API with Swagger tools
   ms.date: 05/06/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: camsoper
+  ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

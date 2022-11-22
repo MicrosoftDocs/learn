@@ -4,8 +4,8 @@ metadata:
   title: 'Exercise - Data exploration part 2 - Check the distribution of the data'
   description: Use histograms to discover the distribution of data in a dataset.
   ms.date: 03/10/2021
-  author: drguthals
-  ms.author: sguthals 
+  author: softchris
+  ms.author: chnoring 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

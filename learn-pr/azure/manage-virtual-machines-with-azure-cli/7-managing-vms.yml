@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Start and stop your VM with the Azure CLI
   description: Learn how to use the Azure CLI to start and stop a virtual machine
   ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash

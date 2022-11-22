@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-azure-functions.how-azure-functions-works
+title: How Azure Functions works
+metadata:
+  title: How Azure Functions works
+  description: In this unit, you learn about how Azure Functions works along with some foundational concepts.
+  author: saifeemustafaq
+  ms.author: msaifee
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-how-azure-functions-works.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which of the following isn't a good case for using Azure functions?"
+      choices:
+        - content: "A new customer signed up"
+          isCorrect: false
+          explanation: "Incorrect! Because the flow that happens is seldom and has a clear reason why code should run. This is a great use case for Azure Functions."
+        - content: "Fetching product data from a database"
+          isCorrect: true
+          explanation: "Correct! Fetching products from a database is something that's likely to happen quite a lot in an e-commerce app. You could implement such an endpoint in Azure Functions, but given its cost model you're more likely better off using something like App Service."
+        - content: "Processing real-time messages"
+          isCorrect: false
+          explanation: "Incorrect! Combined with SignalR it can provide messages as they arrive. This is a great use case for using Azure Functions as it has a clear reason for when code should run."

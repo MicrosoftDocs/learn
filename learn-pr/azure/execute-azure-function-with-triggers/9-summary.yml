@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
@@ -53,5 +53,3 @@ quiz:
     - content: "False"
       isCorrect: true
       explanation: "Every Azure Function must have exactly one trigger associated with it. If you want to use multiple triggers, you must create multiple functions."
-
-

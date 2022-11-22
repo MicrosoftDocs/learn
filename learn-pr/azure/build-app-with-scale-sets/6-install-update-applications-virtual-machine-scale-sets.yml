@@ -5,9 +5,9 @@ title: Install and update applications in virtual machine scale sets
 metadata:
   title: Install and update applications in virtual machine scale sets
   description: Install and update applications in virtual machine scale sets
-  ms.date: 09/02/2019
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 05/02/2022
+  author: ju-shim
+  ms.author: jushiman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 

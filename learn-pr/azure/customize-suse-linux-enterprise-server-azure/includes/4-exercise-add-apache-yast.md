@@ -36,7 +36,7 @@ It's time to add a package to the server that's going to host your company's web
 
     Notice that the icon or marker (i) in front of the apache entry on the right shows an empty box. This indicates that the package is not yet installed. 
 
-1. Switch to the right box with <TAB> and go down and select **apache2** in the list with the <SPACE> bar 
+1. Switch to the right box with \<TAB\> and go down and select **apache2** in the list with the \<SPACE\> bar.
 
     The icon changes to a check mark (or "+").  Any shown dependencies will also be indicated (a+).
 

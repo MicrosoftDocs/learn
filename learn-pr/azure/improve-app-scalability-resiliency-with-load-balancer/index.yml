@@ -3,9 +3,9 @@ uid: learn.improve-app-scalability-resiliency-with-load-balancer
 metadata:
   title: Improve application scalability and resiliency by using Azure Load Balancer
   description: In this module, you will learn how to use Azure Load Balancer to distribute traffic between multiple virtual servers or services.
-  ms.date: 08/31/2019
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 08/15/2022
+  author: asudbring
+  ms.author: allensu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Improve application scalability and resiliency by using Azure Load Balancer
@@ -17,7 +17,7 @@ abstract: |
 prerequisites: | 
   - Basic knowledge of networking concepts
   - Basic knowledge of Azure virtual machines
-iconUrl: /learn/achievements/improve-app-scalability-resiliency-with-load-balancer.svg
+iconUrl: /training/achievements/improve-app-scalability-resiliency-with-load-balancer.svg
 levels:
 - beginner
 roles:
@@ -27,6 +27,8 @@ products:
 - azure
 - azure-load-balancer
 - azure-virtual-network
+subjects:
+- cloud-computing
 units:
 - learn.improve-app-scalability-resiliency-with-load-balancer.1-introduction
 - learn.improve-app-scalability-resiliency-with-load-balancer.2-load-balancer-features

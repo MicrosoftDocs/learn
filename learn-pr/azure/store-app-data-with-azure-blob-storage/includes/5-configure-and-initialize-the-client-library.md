@@ -8,9 +8,9 @@ The typical workflow for apps that use Azure Blob storage is as follows:
 
 ## Configure your connection string
 
-Before running your app, you'll need the connection string for the storage account you will use. You can use any Azure management interface to get it, including the Azure portal, the Azure CLI, or Azure PowerShell. When you set up the web app to run your code near the end of this module, you'll use the Azure CLI to get the connection string for the storage account you created earlier.
+Before running your app, you'll need the connection string for the storage account you'll use. You can use any Azure management interface to get it, including the Azure portal, the Azure CLI, or Azure PowerShell. When you set up the web app to run your code near the end of this module, you'll use the Azure CLI to get the connection string for the storage account you created earlier.
 
-Storage account connection strings include the account key. Consider the account key a secret, and store it securely. Here, you will store the connection string in an App Service app setting. App Service app settings are a secure place for app secrets, but this design does not support local development and is not a robust, end-to-end solution on its own.
+Storage account connection strings include the account key. Consider the account key a secret, and store it securely. Here, you'll store the connection string in an App Service app setting. App Service app settings are a secure place for app secrets, but this design doesn't support local development and isn't a robust, end-to-end solution on its own.
 
 > [!WARNING]
 > **Do not place storage account keys in code or in unprotected configuration files.** Storage account keys enable full access to your storage account. Leaking a key can result in unrecoverable damage and large bills. For storage guidance and advice about how to recover from a leaked key, see the *Further Reading* section at the end of this module.
@@ -32,7 +32,7 @@ BlobServiceClient blobServiceClient = new BlobServiceClient(storageConfig.Connec
 BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient(storageConfig.FileContainerName);
 ```
 
-None of this initialization code makes calls over the network. This means that some exceptions that occur because of incorrect information won't be thrown until later. For example, if an incorrectly formatted connection string is supplied to the constructor of the `BlobServiceClient` class, an exception be thrown immediately.  However, if the connection string points to a storage account that does not exist, no exception will be thrown until you attempt an operation against the storage account.
+None of this initialization code makes calls over the network. This means that some exceptions that occur because of incorrect information won't be thrown until later. For example, if an incorrectly formatted connection string is supplied to the constructor of the `BlobServiceClient` class, an exception is thrown immediately. However, if the connection string points to a storage account that doesn't exist, no exception will be thrown until you attempt an operation against the storage account.
 
 ::: zone-end
 
@@ -40,9 +40,9 @@ None of this initialization code makes calls over the network. This means that s
 
 In the Azure Storage SDK for Java, the standard pattern for using Blob Storage consists of the following steps:
 
-1. Instantiate a new `BlobServiceClientBuilder` object and provide the connection string to your storage account and build `BlobServiceClient`.
+1. Build a `BlobServiceClient` by instantiating a new `BlobServiceClientBuilder` object using the connection string to your storage account.
 
-1. To get a `BlobContainerClient`, call `getBlobContainerClient` on the `BlobServiceClient` with the name of the container you want to interact with or create.
+1. Get a `BlobContainerClient` by calling the `getBlobContainerClient` method on the `BlobServiceClient`with the name of the container you want to interact with or create.
 
 In code, these steps look like this.
 
@@ -53,7 +53,7 @@ BlobServiceClient blobServiceClient = BlobServiceClientBuilder()
 BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient(containerName);
 ```
 
-None of this initialization code makes calls over the network. This means that some exceptions that occur because of incorrect information won't be thrown until later. For example, if an incorrectly formatted connection string is supplied to the `BlobServiceClientBuilder`, an exception will throw an exception immediately.  However, if the connection string points to a storage account that does not exist, no exception will be thrown until you attempt an operation against the storage account.
+None of this initialization code makes calls over the network. This means that some exceptions that occur because of incorrect information won't be thrown until later. For example, if an incorrectly formatted connection string is supplied to the `BlobServiceClientBuilder`, an exception is thrown immediately. However, if the connection string points to a storage account that doesn't exist, no exception will be thrown until you attempt an operation against the storage account.
 
 ::: zone-end
 
@@ -69,7 +69,7 @@ To create a container when your app starts or when the app first tries to use a 
 
 ::: zone pivot="java"
 
-To create a container when your app starts or when it first tries to use it, call `exists` on a `BlobContainerClient` to check whether container already exist, if it doesn't then call `create`. Call it once during initialization; not every time you try to use a container.
+To create a container when your app starts or when it first tries to use it, call `exists` on a `BlobContainerClient` to check whether a container already exists, if it doesn't then call `create`. Call it once during initialization; not every time you try to use a container.
 
 ::: zone-end
 
@@ -95,7 +95,7 @@ To create a container when your app starts or when it first tries to use it, cal
     - **Upload**: (POST /api/Files) receives an uploaded file and saves it.
     - **Download**: (GET /api/Files/{filename}) downloads an individual file by its name.
 
-    To do its work, each method uses an `IStorage` instance called `storage`. There is an incomplete implementation of `IStorage` in `Models/BlobStorage.cs` that you're going to fill in.
+    To do its work, each method uses an `IStorage` instance called `storage`. There's an incomplete implementation of `IStorage` in `Models/BlobStorage.cs` that you're going to fill in.
 
 ### Add the NuGet package
 
@@ -112,7 +112,7 @@ To create a container when your app starts or when it first tries to use it, cal
 
 The configuration values we need are the storage-account connection string and the name of the container the app will use to store files. In this module, you're only going to run the app in Azure App Service, so you'll follow App Service best practice and store the values in App Service app settings. You'll do that when we create the App Service instance, so there's nothing you need to do at the moment.
 
-When it comes to *using* the configuration, our starter app already includes the plumbing you need. The `IOptions<AzureStorageConfig>` constructor parameter in `BlobStorage` has two properties: the storage-account connection string and the name of the container your app will use to store blobs. There is code in the `ConfigureServices` method of `Startup.cs` that loads the values from configuration when the app starts.
+When it comes to *using* the configuration, our starter app already includes the plumbing you need. The `IOptions<AzureStorageConfig>` constructor parameter in `BlobStorage` has two properties: the storage-account connection string and the name of the container your app will use to store blobs. There's code in the `ConfigureServices` method of `Startup.cs` that loads the values from configuration when the app starts.
 
 ### Initialize
 
@@ -143,7 +143,7 @@ When it comes to *using* the configuration, our starter app already includes the
 
 ### Clone and explore the unfinished app
 
-1. First, let's clone the starter app from GitHub. In the Azure Shell CLI, to get a copy of the source code and open it in the editor, run the following command.
+1. First, let's clone the starter app from GitHub. To get a copy of the source code and open it in the editor, run the following command in Azure Shell CLI:
 
     ```console
     git clone https://github.com/MicrosoftDocs/mslearn-store-data-in-azure.git
@@ -156,14 +156,14 @@ When it comes to *using* the configuration, our starter app already includes the
     This request scoped bean implements three actions that are used by `src/main/webapp/index.xhtml` JSF (Java Server Faces) page:
 
     - **listFileNames**: returns a list of file names, one for each file that's been uploaded. The `index.xhtml` page calls this method to build a list of hyperlinks to the uploaded files.
-    - **upload**: receives an uploaded file content and saves it. The file content and metadata is injected into `uploadedFile` property by JSF framework.
+    - **upload**: receives an uploaded file and saves it. The file content and metadata is injected into the `uploadedFile` property by the JSF framework.
     - **download**: downloads an individual file by its name.
 
-    To do its work, each method uses a `Storage` instance called `storage`. There is an incomplete implementation of `Storage` in `src/main/java/com/microsoft/azure/samples/service/BlobStorage.java` that you're going to fill in.
+    To do its work, each method uses a `Storage` instance called `storage`. There's an incomplete implementation of `Storage` in `src/main/java/com/microsoft/azure/samples/service/BlobStorage.java` that you're going to fill in.
 
 ### Add the Azure Storage SDK for Java reference
 
-The recommended way of adding Azure client libraries to the project is to utilize BOM. It provides a simple and elegant way to orchestrate using multiple Azure client libraries while ensuring minimal dependency conflicts.
+The recommended way of adding Azure client libraries to the project is to utilize Azure BOM. It provides a simple and elegant way to orchestrate using multiple Azure client libraries while ensuring minimal dependency conflicts.
 
 1. In the editor, open the file `pom.xml`.
 
@@ -183,7 +183,7 @@ The recommended way of adding Azure client libraries to the project is to utiliz
     </dependencyManagement>
     ```
 
-1. To add Azure Storage SDK for Java add the following `dependency` to `project/dependencies` xml section.
+1. To add Azure Storage SDK for Java add the following `dependency` to the `project/dependencies` xml section.
 
     ```xml
     <dependency>
@@ -219,9 +219,9 @@ When it comes to *using* the configuration, the App Service app settings are pas
     ```
 
     > [!TIP]
-    > Azure clients are stateless and thread-safe. It is recommended to cache their instances where applicable. For example, the app you're working on uses single container with constant name, therefore it's best to cache it in app lifetime scope. `BlobStorage` is annotated with `@Singleton` therefore storing `BlobContainerClient` reference in its field is recommended.
+    > Azure clients are stateless and thread-safe. It is recommended to cache their instances where applicable. For example, the app you're working on uses a single container with a constant name, therefore it's best to cache it in app lifetime scope. `BlobStorage` is annotated with `@Singleton` therefore, storing the `BlobContainerClient` reference in its field is recommended.
 
-1. Locate the `init` method with `@PostConstruct` annotation. Your app will call this method after `BlobStorage` instance is created and before it is used for the first time.
+1. Locate the `init` method with `@PostConstruct` annotation. Your app will call this method after the `BlobStorage` instance is created and before it's used for the first time.
 
     `init` is where you want to create your container if it doesn't already exist. Replace the current implementation of `init` with the following code, and save your work.
 

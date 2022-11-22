@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Enable automatic failover by using priority routing
   description: In this hands-on exercise, you enable automatic failover by using priority routing
   ms.date: 04/15/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: KumudD
+  ms.author: kumud
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Enable automatic failover by using priority routing

@@ -4,33 +4,34 @@ metadata:
   title: Exercise - Host a new database by using Azure Cosmos DB
   description: Host a new database by using Azure Cosmos DB, and create a new AKS cluster to save your API changes to the database
   ms.date: 10/31/2020
-  author: khaosdoctor
-  ms.author: ludossan
+  author: nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Host a new database by using Azure Cosmos DB
 sandbox: true
 interactive: bash
-tasks:
-  - action: exists
-    environment: azure
-    azure:
-      resource:
-        type: Microsoft.DocumentDB/databaseAccounts
-        kind: MongoDB
-        properties:
-          provisioningState: "Succeeded"
-  - action: exists
-    environment: azure
-    azure:
-      resource:
-        type: Microsoft.ContainerService/managedClusters
-        name: ship-manager-cluster
-        properties:
-          provisioningState: "Succeeded"
-          addonProfiles:
-            httpApplicationRouting:
-              enabled: true
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-create-resources.md)]
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+#   - action: exists
+#     environment: azure
+#     azure:
+#       resource:
+#         type: Microsoft.DocumentDB/databaseAccounts
+#         kind: MongoDB
+#         properties:
+#           provisioningState: "Succeeded"
+#   - action: exists
+#     environment: azure
+#     azure:
+#       resource:
+#         type: Microsoft.ContainerService/managedClusters
+#         name: ship-manager-cluster
+#         properties:
+#           provisioningState: "Succeeded"
+#           addonProfiles:
+#             httpApplicationRouting:
+#               enabled: true

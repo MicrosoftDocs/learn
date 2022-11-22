@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-government-its-structure.describe-executive-branch
+title: Describe the executive branch
+metadata:
+  title: Describe the executive branch
+  description: "Describe the executive branch"
+  ms.date: 04/29/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-describe-executive-branch.md)]

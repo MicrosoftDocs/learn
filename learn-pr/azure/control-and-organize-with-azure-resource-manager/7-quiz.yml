@@ -4,16 +4,16 @@ title: Check your Knowledge
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 03/25/2020
-  author: patridge
-  ms.author: adpatrid
+  ms.date: 07/28/2022
+  author: tfitzmac
+  ms.author: tomfitz
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
 quiz:
   title: 'Knowledge check'
   questions:
-  - content: 'Tags can be applied to any type of resource on Azure'
+  - content: 'You can apply tags to any type of resource on Azure.'
     choices:
     - content: 'True'
       explanation: 'Not all resources support tags, so you will want to confirm that your resource type supports them.'

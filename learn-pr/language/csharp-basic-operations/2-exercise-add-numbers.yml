@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Simple Addition and Implicit Data Conversion
   description: Use the overloaded + symbol to perform both addition and string concatenation.
   ms.date: 09/03/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

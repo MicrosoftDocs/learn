@@ -65,16 +65,10 @@ In this section, you will create a virtual network and a subnet.
 
 In this section, you will create an internal Standard SKU load balancer. The reason we are creating a Standard SKU load balancer here in the exercise, instead of a Basic SKU load balance, is for later exercises that require a Standard SKU version of the load balancer.
 
-1.  On the Azure portal home page, click **Create a resource**.
-2.  In the search box at the top of the page, type **Load Balancer**, then press **Enter** (**Note:** do not select one from the list).
-3.  Scroll down to the bottom of the page and select **Load Balancer** (the one that says 'Microsoft' and 'Azure Service' under the name).
-4.  Click **Create**.
-
-    :::image type="content" source="../media/create-load-balancer-4-c6145228.png" alt-text="Create Load Balancer":::
-
-
-5.  On the **Basics** tab, use the information in the table below to create the load balancer.
-    
+1.  On the Azure home page, in the search bar, enter **Load Balancer** 
+2.  Select **Create Load Balancer**.
+3.  On the **Basics** tab, use the information in the table below to create the load balancer.
+        
     |      **Setting**      |        **Value**         |
     |:---------------------:|:------------------------:|
     |     Subscription      | Select your subscription |
@@ -84,11 +78,12 @@ In this section, you will create an internal Standard SKU load balancer. The rea
     |          SKU          |       **Standard**       |
     |         Type          |       **Internal**       |
     | Frontend IP configuration tab | + Add a frontend IP configuration |
+    |         Name          | **LoadBalancerFrontEnd** |
     |    Virtual network    |      **IntLB-VNet**      |
     |        Subnet         |   **myBackendSubnet**    |
     | IP address assignment |       **Dynamic**        |
-6.  Click **Review + create**.
-7.  Click **Create**.
+4.  Click **Review + create**.
+5.  Click **Create**.
 
 ## Task 3: Create a backend pool
 
@@ -155,7 +150,7 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
 
 ## Task 6: Create backend servers
 
-In this section, you will create three VMs, that will be in the same availability set, for the backend pool of the load balancer, add the VMs to the backend pool, and then install IIS on the three VMs to test the load balancer.
+In this section, you will create three VMs for the backend pool of the load balancer, add the VMs to the backend pool, and then install IIS on the three VMs to test the load balancer.
 
 1.  In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 2.  In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files azuredeploy.json, azuredeploy.parameters.vm1.json, azuredeploy.parameters.vm2.json and azuredeploy.parameters.vm3.json into the Cloud Shell home directory. [Azure Resource Manager Templates for this task](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M08)
@@ -214,7 +209,7 @@ In this section, you will create a test VM, and then test the load balancer.
     |        Region        |                **(US) West US**                |
     | Availability options |   **No infrastructure redundancy required**    |
     |        Image         |   **Windows Server 2019 Datacenter - Gen 1**   |
-    |         Size         | **Standard\_DS1\_v2 - 1 vcpu, 3.5 GiB memory** |
+    |         Size         | **Standard_DS2_v3 - 2 vcpu, 8 GiB memory**     |
     |       Username       |                  **TestUser**                  |
     |       Password       |               **TestPa$$w0rd!**                |
     |   Confirm password   |               **TestPa$$w0rd!**                |
@@ -289,16 +284,12 @@ In this section, you will create a test VM, and then test the load balancer.
 5.  Use the **Zoom In (+)** and **Zoom Out (-)** buttons in the bottom right corner of the page, to zoom in and out of the topology diagram (alternatively you can use your mouse wheel if you have one). You can also drag the topology diagram around the page to move it.
 6.  Hover over the **LoadBalancerFrontEnd** component in the diagram, then hover over the **myBackendPool** component.
 7.  Notice that you can use the links in these pop-up windows to view information about these load balancer components and open their respective Azure portal blades.
-8.  Hover over the **myVM3** virtual machine component. Note that you can open the resource blade for the virtual machine, and you can open the **VM Insights** page, or you can run the **Connection troubleshoot** tool from Network Watcher - all from this part of the topology diagram.
- 
-    :::image type="content" source="../media/network-insights-functional-dependency-view-2-e5d175bd.png" alt-text="Azure Monitor Network Insights functional dependency view" lightbox="../media/network-insights-functional-dependency-view-2-e5d175bd.png":::
-
-9.  To download a .SVG file copy of the topology diagram, click **Download topology**, and save the file in your **Downloads** folder.
-10. In the top right corner, click **View metrics** to reopen the metrics pane on the right-hand side of the screen. 
+8.  To download a .SVG file copy of the topology diagram, click **Download topology**, and save the file in your **Downloads** folder.
+9. In the top right corner, click **View metrics** to reopen the metrics pane on the right-hand side of the screen. 
 
     :::image type="content" source="../media/network-insights-functional-dependency-view-3-e991a770.png" alt-text="Azure Monitor Network Insights functional dependency view - View metrics button highlighted":::
     
-11. The Metrics pane provides a quick view of some key metrics for this load balancer resource, in the form of bar and line charts.
+10. The Metrics pane provides a quick view of some key metrics for this load balancer resource, in the form of bar and line charts.
 
     :::image type="content" source="../media/network-insights-basic-metrics-view-2d3d85cd.png" alt-text="Azure Monitor Network Insights - Basic metrics view":::
 

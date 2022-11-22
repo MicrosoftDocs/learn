@@ -5,8 +5,8 @@ metadata:
   title: Choose whether to use messages or events
   description: Choose whether to use messages or events
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: spelluru
+  ms.author: spelluru
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

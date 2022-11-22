@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Combine variables and literals into new strings.
   ms.date: 09/17/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

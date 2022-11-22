@@ -4,10 +4,10 @@ metadata:
   moduleType: introduction
   title: Introduction to software testing concepts
   description: "Evaluate if testing is right for your scenarios, and familiarize yourself with basic testing concepts such as TDD, BDD, unit testing, UI testing, and the test pyramid."
-  ms.date: 06/24/2021
+  ms.date: 03/08/2022
   author: kendrahavens
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, devdivchpfy22
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
 title: Introduction to software testing concepts
@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Ability to write C# at the beginner level, with C# concepts such as writing methods and creating projects.
   - Basic familiarity with debugging an app.
-iconUrl: /learn/achievements/visual-studio-test-concepts.svg
+iconUrl: /training/achievements/visual-studio-test-concepts.svg
 levels:
   - beginner
 roles:
@@ -27,6 +27,9 @@ roles:
   - student
 products:
   - vs
+subjects:
+- devops
+- development-tools
 units:
 - learn.visual-studio-test-concepts.1-introduction
 - learn.visual-studio-test-concepts.2-what-is-testing

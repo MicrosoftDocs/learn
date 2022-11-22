@@ -3,9 +3,9 @@ uid: learn.wwl.use-built-functions-transact-sql
 metadata:
   title: Use built-in functions and GROUP BY in Transact-SQL
   description: "Use built-in functions and GROUP BY in Transact-SQL"
-  ms.date: 06/30/2021
+  ms.date: 11/15/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use built-in functions and GROUP BY in Transact-SQL
@@ -20,7 +20,7 @@ abstract: |
   - Filter groups with HAVING
 prerequisites: |
   Before starting this module, you should have experience of using Transact-SQL SELECT queries to retrieve data from tables in a database.
-iconUrl: /learn/achievements/use-built-in-functions-in-transact-sql.svg
+iconUrl: /training/achievements/use-built-in-functions-in-transact-sql.svg
 levels:
 - beginner
 roles:
@@ -38,6 +38,10 @@ products:
 - azure-sql-managed-instance
 - azure-sqlserver-vm
 - azure-sql-virtual-machines
+subjects:
+- data-analytics
+- database
+- development-tools
 units:
 - learn.wwl.use-built-functions-transact-sql.introduction
 - learn.wwl.use-built-functions-transact-sql.categorize-functions

@@ -10,6 +10,8 @@ metadata:
   ms.author: ropreddy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.contributors: ropreddy-12032021
+  ms.custom: team=cloud_advocates
 durationInMinutes: 3
 content: |
   [!include[](includes/2-what-is-autoscale.md)]

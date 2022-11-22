@@ -2,9 +2,9 @@ Your team has gained an understanding of how Azure Resource Manager works, and y
 
 In this unit, you'll learn about the Bicep template language and the benefits it provides to template authoring.
 
-## What is Bicep?
+## Bicep language
 
-Bicep is a Resource Manager template language that's used to declaratively deploy Azure resources. Bicep is a domain-specific language, which means that it's designed for a specific scenario or "domain." Bicep isn't meant to be used as a standard programming language for writing applications. Bicep is used only to create Resource Manager templates. Bicep is intended to be easy to understand and straightforward to learn, regardless of your experience with other programming languages. All resource types, API versions, and properties are valid in Bicep templates.
+Bicep is a Resource Manager template language that's used to declaratively deploy Azure resources. Bicep is a domain-specific language, which means that it's designed for a specific scenario or _domain_. Bicep isn't meant to be used as a standard programming language for writing applications. Bicep is used only to create Resource Manager templates. Bicep is intended to be easy to understand and straightforward to learn, regardless of your experience with other programming languages. All resource types, API versions, and properties are valid in Bicep templates.
 
 > [!NOTE]
 > If you've previously looked into using JSON templates, you'll notice that Bicep simplifies the template creation experience. It provides a syntax that's easier to understand, better support for modularity and reusable code, and improved type safety. Creating a JSON ARM template requires complicated expressions, and the final result might be verbose.
@@ -15,7 +15,7 @@ Bicep provides many improvements over JSON for template authoring, including:
 
 - **Simpler syntax**: Bicep provides a simpler syntax for writing templates. You can reference parameters and variables directly, without using complicated functions. String interpolation is used in place of concatenation to combine values for names and other items. You can reference the properties of a resource directly by using its symbolic name instead of complex reference statements. These syntax improvements help both with authoring and reading Bicep templates.
 
-- **Modules**: You can break down complex template deployments into smaller module files and reference them in a main template. These modules provide easier management and greater reusability.
+- **Modules**: You can break down complex template deployments into smaller module files and reference them in a main template. These modules provide easier management and greater reusability. You can even share your modules with your team.
 
 - **Automatic dependency management**: In most situations, Bicep automatically detects dependencies between your resources. This process removes some of the work involved in template authoring.
 
@@ -30,7 +30,7 @@ param namePrefix string = 'storage'
 var storageAccountName = '${namePrefix}${uniqueString(resourceGroup().id)}'
 var storageAccountSku = 'Standard_RAGRS'
 
-resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2022-05-01' = {
   name: storageAccountName
   location: location
   kind: 'StorageV2'

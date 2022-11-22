@@ -18,7 +18,7 @@ abstract: |
   - How to return values from a function.
   - How to use anonymous functions.
 
-iconUrl: /learn/achievements/student-evangelism/web-development-101-functions.svg
+iconUrl: /training/achievements/student-evangelism/web-development-101-functions.svg
 levels:
   - beginner
 roles:
@@ -29,6 +29,8 @@ products:
 prerequisites: |
   - A web browser
   - Visual Studio Code and Live Server extension, installed
+subjects:
+- development-tools
 units:
   - learn.student-evangelism.web-development-101.functions.introduction
   - learn.student-evangelism.web-development-101.functions.overview-functions

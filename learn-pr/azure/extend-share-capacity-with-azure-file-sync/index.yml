@@ -3,9 +3,9 @@ uid: learn.azure.extend-share-capacity-with-azure-file-sync
 metadata:
   title: Extend your on-premises file share capacity using Azure File Sync
   description: Evaluate and deploy Azure File Sync to extend the capacity of your on-premises file share.
-  ms.date: 10/11/2019
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 09/27/2022
+  author: roygara
+  ms.author: rogarana
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Extend your on-premises file share capacity using Azure File Sync
@@ -19,7 +19,7 @@ prerequisites: |
   - Familiarity with Azure Files
   - Basic knowledge of Windows Server file shares
   - (Optional) Access to an Azure subscription
-iconUrl: /learn/achievements/extend-share-capacity-with-azure-file-sync.svg
+iconUrl: /training/achievements/extend-share-capacity-with-azure-file-sync.svg
 ratingEnabled: false
 levels:
 - beginner
@@ -29,6 +29,8 @@ products:
 - azure
 - azure-storage
 - azure-files
+subjects:
+- storage
 units:
 - learn.azure.extend-share-capacity-with-azure-file-sync.introduction
 - learn.azure.extend-share-capacity-with-azure-file-sync.what-is-azure-file-sync

@@ -6,7 +6,7 @@ Policies are applied inside the gateway which sits between the API consumer and 
 
 The policy definition is a simple XML document that describes a sequence of inbound and outbound statements. The XML can be edited directly in the definition window.
 
-The configuration is divided into `inbound`, `backend`, `outbound`, and `on-error`. The series of specified policy statements is executes in order for a request and a response.
+The configuration is divided into `inbound`, `backend`, `outbound`, and `on-error`. The series of specified policy statements is executed in order for a request and a response.
 
 ```xml
 <policies>
@@ -64,7 +64,7 @@ The snippet assumes that response content is formatted as JSON and contains root
     <base />
     <choose>
       <when condition="@(context.Response.StatusCode == 200 && context.Product.Name.Equals("Starter"))">
-        <!-- NOTE that we are not using preserveContent=true when deserializing response body stream into a JSON object since we don't intend to access it again. See details on https://docs.microsoft.com/azure/api-management/api-management-transformation-policies#SetBody -->
+        <!-- NOTE that we are not using preserveContent=true when deserializing response body stream into a JSON object since we don't intend to access it again. See details on https://learn.microsoft.com/azure/api-management/api-management-transformation-policies#SetBody -->
         <set-body>
           @{
             var response = context.Response.Body.As<JObject>();

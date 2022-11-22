@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create a Blob trigger
   description: Create a Blob trigger and run an Azure Function when a blob is created
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: true

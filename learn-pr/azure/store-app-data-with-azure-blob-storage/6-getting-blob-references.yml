@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Get blob references
   description: Exercise - Get blob references
   ms.date: 09/28/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-java

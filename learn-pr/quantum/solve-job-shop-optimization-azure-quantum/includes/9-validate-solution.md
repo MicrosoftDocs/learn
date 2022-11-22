@@ -1,6 +1,6 @@
 Recall your results from the previous unit:
 
-```console
+```output
 Config dict:
 {'0': 1, '10': 0, '11': 0, '1': 0, '12': 1, '2': 0, '13': 0, '3': 0, '14': 0, '4': 0, '15': 0, '5': 0, '16': 0, '6': 0, '17': 0, '7': 0, '18': 0, '8': 0, '19': 0, '9': 0, '20': 1, '30': 0, '31': 0, '21': 0, '32': 1, '22': 0, '33': 0, '23': 0, '34': 0, '24': 0, '35': 0, '25': 0, '36': 0, '26': 0, '37': 0, '27': 0, '38': 0, '28': 0, '39': 0, '29': 0, '40': 0, '50': 0, '41': 0, '51': 0, '42': 0, '52': 0, '43': 1, '53': 0, '44': 0, '54': 1, '45': 0, '55': 0, '46': 0, '56': 0, '47': 0, '57': 0, '48': 0, '58': 0, '49': 0, '59': 0}
 
@@ -44,6 +44,8 @@ Depending on how well the cost function is defined and the weights are tuned, th
 For larger or more complex problems, it will not always be possible to verify the solution by eye. It is therefore common practice to implement some code to verify that solutions returned from the optimizer are valid, as well as evaluating how good the solutions are (at least relative to solutions returned previously). This capability is also useful when it comes to tuning weights and penalty functions.
 
 You can perform this validation using the following code snippet, which checks the solution against all three constraints before declaring the solution valid or not. If any of the constraints are violated, the solution will be marked as invalid. An example of an invalid solution has also been included, for comparison.
+
+Click **+ Code** to add another new cell and add the following lines:
 
 ```python
 def check_precedence(processing_time, jobs):
@@ -148,7 +150,7 @@ validate_solution(matrix, machines_ops_map, processing_time, jobs_ops_map)
 
 When you run this code, you will see the following in the output window:
 
-```console
+```output
            Job ID: [0, 0, 1, 1, 2, 2]
      Operation ID: [0, 1, 2, 3, 4, 5]
 Operation runtime: [2, 1, 2, 2, 1, 2]

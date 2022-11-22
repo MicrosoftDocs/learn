@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Introduction.
   ms.date: 07/10/2020
-  author: jamcneil
-  ms.author: jumcn
+  author: tfitzmac
+  ms.author: tomfitz
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

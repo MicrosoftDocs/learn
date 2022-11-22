@@ -8,7 +8,7 @@ metadata:
   ms.date: 09/28/2021
   author: IEvangelist
   ms.author: dapine
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 durationInMinutes: 4
 content: |

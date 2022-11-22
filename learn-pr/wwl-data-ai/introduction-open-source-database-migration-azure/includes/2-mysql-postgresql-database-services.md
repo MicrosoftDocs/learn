@@ -17,7 +17,7 @@ If you wanted to achieve this availability in an on-premises network, you would 
 - An environmentally controlled datacenter.
 - Uninterruptible power supplies and backup generators.
 
-All these components are expensive and require skill to implement and run. They would also consume significant administrative resources. With Azure, these requirements are already solved; you just create the database, and high availability is built-in.
+All these components are expensive and require skill to implement and run. They would also consume significant administrative resources. With Azure, these requirements are already solved; you just create the database, and high availability is built in.
 
 ### Scalability
 
@@ -44,7 +44,7 @@ Azure Database for MySQL is a PaaS implementation of MySQL in the Azure cloud, b
 
 You get the following features with Azure Database for MySQL:
 
-- High availability features built-in.
+- High availability features built in.
 - Predictable performance.
 - Easy scaling that responds quickly to demand.
 - Secure data, both at rest and in motion.
@@ -54,10 +54,6 @@ You get the following features with Azure Database for MySQL:
 The system uses pay-as-you-go pricing so you only pay for what you use.
 
 You can choose from two deployment options:
-
-#### Azure Database for MySQL - Single Server
-
-Azure Database for MySQL Single Server provides a database system that scales up to large databases without the need to manage hardware, network components, virtual servers, software patches, and other underlying components.
 
 #### Azure Database for MySQL - Flexible Server
 
@@ -90,20 +86,9 @@ If you prefer PostgreSQL, you can choose Azure Database for PostgreSQL to get a 
 
 You can choose from three deployment options:
 
-#### Azure Database for PostgreSQL Single Server
-
-The Single Server deployment option for PostgreSQL provides similar benefits as Azure Database for MySQL. You choose from three pricing tiers: Basic, General Purpose, and Memory Optimized. Each tier supports different numbers of CPUs, memory, and storage sizes—you select one based on the load you expect to support.
-
 #### Azure Database for PostgreSQL - Flexible Server
 
 Azure Database for PostgreSQL - Flexible Server provides similar benefits as MySQL Flexible Server. You can use it to provide the greatest levels of availability and convenient restarts.
-
-> [!NOTE]
-> At the time of writing, the Azure Database for PostgreSQL Flexible Server deployment option is in public preview. It's a fully functional service, but doesn't yet offer a service-level agreement (SLA).
-
-#### Azure Database for PostgreSQL Hyperscale (Citus)
-
-Hyperscale (Citus) is a deployment option that scales queries across multiple server nodes to support large database loads. Your database is split across nodes. Different data is split into chunks based on the value of a partition key or sharding key. Consider using this deployment option for the largest database PostgreSQL deployments in the Azure Cloud.
 
 ## IaaS options for running MySQL, MariaDB, and PostgreSQL in Azure
 
@@ -121,7 +106,7 @@ With this strategy, you follow a step-by-step process for migration. You move pa
 
 The marketplace includes virtual machines preconfigured for MySQL, MariaDB, and PostgreSQL servers. These images save time because you don't need to install the database server software yourself. When you're setting up database virtual machines, check if there's an image in the Marketplace with the right version of the database software, and consider using it.
 
-You could also upload a custom virtual machine image to Azure and use it to create virtual machines. This image could include the database software of your choice and even the database itself. For more information, see [Tutorial: Create a custom image of an Azure VM with Azure PowerShell](https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-custom-images).
+You could also upload a custom virtual machine image to Azure and use it to create virtual machines. This image could include the database software of your choice and even the database itself. For more information, see [Tutorial: Create a custom image of an Azure VM with Azure PowerShell](/azure/virtual-machines/windows/tutorial-custom-images).
 
 ### Use MySQL, MariaDB, or PostgreSQL containers
 

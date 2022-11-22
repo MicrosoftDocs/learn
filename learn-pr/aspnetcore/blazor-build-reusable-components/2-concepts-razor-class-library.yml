@@ -3,8 +3,8 @@ uid: learn.blazor-build-reusable-components.concepts-razor-class-library
 title: Razor class library creation and concepts
 metadata:
   unitType: learning-content
-  title: Razor class library Creation and Concepts
-  description: "Razor Class Libraries are easy to create and share with other developers.  We'll learn what makes up a Razor class library, how to create one from the command line, and how they are different from other .NET class libraries"
+  title: Razor class library creation and concepts
+  description: "In this unit, you'll learn about Razor class libraries, how to create one, and how they differ from other .NET class libraries."
   ms.date: 10/13/2021
   author: csharpfritz
   ms.author: jefritz
@@ -20,13 +20,13 @@ quiz:
       choices:
       - content: "Razor components"
         isCorrect: false
-        explanation: "Razor class libraries can deliver more than just Razor Components"
+        explanation: "Incorrect. Razor class libraries can deliver more than just Razor components."
       - content: "CSS files"
         isCorrect: false
-        explanation: "Stylesheets can ship in Razor class libraries, but that's not the only thing that can be delivered in a Razor class library"
+        explanation: "Incorrect. Razor class libraries can deliver more than just cascading style sheets."
       - content: "JavaScript files"
         isCorrect: false
-        explanation: "JavaScript files can be delivered in Razor class libraries, but that's not the only thin that can be delivered in a Razor class library"
+        explanation: "Incorrect. Razor class libraries can deliver more than just JavaScript files."
       - content: "All of the above"
         isCorrect: true
-        explanation: "Razor class libraries can deliver Razor components, CSS files, JavaScript files, images, and any static web content your components need"
+        explanation: "Razor class libraries can deliver Razor components, CSS files, JavaScript files, images, and any static web content that your components need."

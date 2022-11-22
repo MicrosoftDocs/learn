@@ -1,4 +1,3 @@
-
 In this module, you explored the concepts of cloud computing. Cloud computing is the provisioning of services and applications on demand over the internet. Servers, applications, data, and other resources are provided as a service. 
 
 Cloud computing resources are delivered using three different service models:

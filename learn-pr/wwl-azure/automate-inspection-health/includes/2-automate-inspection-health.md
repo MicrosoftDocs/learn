@@ -5,11 +5,11 @@ When you run multiple deployments a day, you want to:
  -  Stay informed.
  -  Know whether a release passed or failed.
  -  Know the quality of the release.
- -  Know details about the release and how it has done.
+ -  Know details about the release and how it has been done.
  -  Stop releases when you detect something suspicious.
  -  Visualize some of these things on a dashboard.<br>
 
-You can do a few different things to stay informed about your release pipeline in an automated fashion. In the following chapters, we'll dive a bit deeper into these.
+You can do a few different things to stay informed about your release pipeline automatedly. In the following chapters, we'll dive a bit deeper into these.
 
 ## Release gates
 
@@ -19,7 +19,7 @@ Typically, gates are connected with incident management, problem management, cha
 
 ## Events, subscriptions, and notifications
 
-Events are raised when specific actions occur, like when a release is started or a build completed.
+Events are raised when specific actions occur, like when a release is started, or a build is completed.
 
 A notification subscription is associated with a supported event type. The subscription ensures you get notified when a specific event occurs.
 
@@ -35,8 +35,8 @@ Service hooks can also be used in custom apps and services as a more efficient w
 
 ## Reporting
 
-Reporting is the most static approach to inspection, but in many cases, also the most evident.
+Reporting is the most static approach to inspection but also the most evident in many cases.
 
-Creating a dashboard that shows the status of your build and releases combined with team-specific information is n many cases, a valuable asset to get insights.
+Creating a dashboard that shows the status of your build and releases combined with team-specific information is, in many cases, a valuable asset to get insights.
 
 Read more at [About dashboards, charts, reports, &amp; widgets](/azure/devops/report/dashboards/overview).

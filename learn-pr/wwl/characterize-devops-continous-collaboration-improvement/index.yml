@@ -17,7 +17,7 @@ abstract: |
   - Explain the role of value stream mapping in Continuous Improvement.
 prerequisites: |
   None
-iconUrl: /learn/achievements/characterize-devops-continuous-collaboration-improvement.svg
+iconUrl: /training/achievements/characterize-devops-continuous-collaboration-improvement.svg
 levels:
 - beginner
 roles:
@@ -34,6 +34,8 @@ roles:
 - technology-manager
 products:
 - azure
+subjects:
+- devops
 units:
 - learn.wwl.characterize-devops-continous-collaboration-improvement.introduction
 - learn.wwl.characterize-devops-continous-collaboration-improvement.explore-continuous-collaboration

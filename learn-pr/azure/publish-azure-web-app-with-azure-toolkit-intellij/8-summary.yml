@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: In this unit, you'll review what you've learned about the Azure Toolkit for IntelliJ.
   ms.date: 03/01/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: bmitchell287
+  ms.author: brendm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

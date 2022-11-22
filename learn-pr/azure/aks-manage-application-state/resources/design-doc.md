@@ -1,10 +1,10 @@
 # Title
 
-*Add the working title [(Title guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-title)*
+*Add the working title [(Title guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-title)*
 
 ## Role(s)
 
-- *Add the role(s)* [Role guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#role)
+- *Add the role(s)* [Role guidance](https://review.learn.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=main#role)
 
 ## Level
 

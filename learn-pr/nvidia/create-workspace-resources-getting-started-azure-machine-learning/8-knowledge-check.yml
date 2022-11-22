@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 03/14/2022
+  author: toolboc
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  questions:
+  - content: 'Which of the following was used to create a mechanism for uploading our image data into an Azure Storage account as blob data'
+    choices: 
+    - content: 'Creation of a Table in the Azure Storage Account'
+      isCorrect: false
+      explanation: Incorrect. A Table was not used to upload our image data into an Azure Storage account as blob data.
+    - content: 'Creation of a container in the Azure Storage Account'
+      isCorrect: true
+      explanation: Correct. A container was used to upload our image data into an Azure Storage account as blob data.
+    - content: 'Creation of a File Share in the Azure Storage Account.'
+      isCorrect: false
+      explanation: Incorrect. A File Share was not used to upload our image data into an Azure Storage account as blob data.
+  - content: 'What is the purpose of the compute instance that was created in our Azure Machine Learning Studio instance?'
+    choices: 
+    - content: 'To provide a development environment with the ability to execute Python code and run live Jupyter notebooks'
+      isCorrect: true
+      explanation: Correct. The compute instance will allow us to develop and execute custom code from a pre-configured cloud-accessible computer.
+    - content: 'To allow us to store and retrieve image data for training and validation'
+      isCorrect: false
+      explanation: Incorrect. A container was used to upload our image data into an Azure Storage account as blob data.
+    - content: 'To allow for management of machine learning workflows'
+      isCorrect: false
+      explanation: Incorrect. The Azure Machine Learning Studio instance manages machine learning workflows.  
+  - content: 'Which values are required in order to create an Azure Machine Learning Datastore of type `Azure Blob Storage`'
+    choices: 
+    - content: 'Only the Storage account name and Blob container name'
+      isCorrect: false
+      explanation: Incorrect. The Account (Access) Key OR a valid SAS token is also required in order to create an Azure Machine Learning Datastore of type `Azure Blob Storage`.
+    - content: 'Storage account name, File share name, and Account (Access) Key.'
+      isCorrect: false
+      explanation: Incorrect. The File share name is not required in order to create an Azure Machine Learning Datastore of type `Azure Blob Storage`.
+    - content: 'Storage account name, Blob container name, and Account (Access) Key.'
+      isCorrect: true
+      explanation: Correct. These values are required in order to create an Azure Machine Learning Datastore of type `Azure Blob Storage`.

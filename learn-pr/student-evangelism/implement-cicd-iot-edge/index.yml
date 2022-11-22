@@ -22,7 +22,7 @@ prerequisites: |
     - Basic knowledge of IoT Edge
     - An active Azure subscription
     - A GitHub account
-iconUrl: /learn/achievements/student-evangelism/implement-cicd-for-iot-edge.svg
+iconUrl: /training/achievements/student-evangelism/implement-cicd-for-iot-edge.svg
 badge:
   uid: learn.oxford.implementing-cicd-iot-edge.badge
 levels:
@@ -31,6 +31,9 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-edge
+subjects:
+- iot
+- devops
 units:
 - learn.oxford.implement-cicd-iot-edge.introduction
 - learn.oxford.implement-cicd-iot-edge.design-cicd-pipeline-iot-edge

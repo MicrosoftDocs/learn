@@ -8,7 +8,8 @@ metadata:
   ms.author: orthomas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: e2e-hybrid
+  ms.custom: e2e-hybrid, team=cloud_advocates
+  ms.contributors: orthomas-03112021
 title: Introduction to Azure hybrid cloud services
 summary: Get an introductory overview of hybrid cloud technologies and how you can connect an on-premises environment to Azure in a way that works best for your organization.
 abstract: | 
@@ -25,13 +26,15 @@ prerequisites: |
   - Basic understanding of Azure compute fundamentals
   - Basic understanding of Azure security fundamentals
   - Basic understanding of on-premises workload fundamentals
-iconUrl: /learn/achievements/intro-to-azure-hybrid-services.svg
+iconUrl: /training/achievements/intro-to-azure-hybrid-services.svg
 levels:
 - beginner
 roles:
 - solution-architect
 products:
 - azure
+subjects:
+- infrastructure
 units:
 - learn.azure.intro-to-azure-hybrid-services.1-introduction
 - learn.azure.intro-to-azure-hybrid-services.2-hybrid-cloud-overview

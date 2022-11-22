@@ -31,9 +31,6 @@ Azure Disk Encryption can automatically encrypt:
 
 It also supports both managed and unmanaged disks.
 
-> [!IMPORTANT]
-> Azure Disk Encryption doesn't support Generation 2 Azure VMs and Lsv2-series Azure VMs.
-
 You can use Azure Disk Encryption in three scenarios:
 
 - Enabling encryption on new Azure VMs that were created from Azure Marketplace images

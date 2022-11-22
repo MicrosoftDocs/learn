@@ -1,17 +1,11 @@
-Instead of managing each agent individually, you organize agents into agent pools.
+Instead of managing each agent individually, you organize agents into agent pools. An agent pool defines the sharing boundary for all agents in that pool.
 
-An agent pool defines the sharing boundary for all agents in that pool.
+In Azure Pipelines, pools are scoped to the entire organization so that you can share the agent machines across projects.
 
-In Azure Pipelines, agent pools are scoped to the Azure DevOps organization; so, you can share an agent pool across projects.
+If you create an Agent pool for a specific project, only that project can use the pool until you add the project pool into another project.
 
-A project agent pool provides access to an organization agent pool.
+When creating a build or release pipeline, you can specify which pool it uses, organization, or project scope.
 
-When you create a build or release pipeline, you specify which pool it uses.
+Pools scoped to a project can only use them across build and release pipelines within a project.
 
-Pools are scoped to your project, so you can only use them across build and release pipelines within a project.
-
-To share an agent pool with multiple projects, in each of those projects, you can create a project agent pool pointing to an organization agent pool.
-
-While multiple pools across projects can use the same organization agent pool, multiple pools cannot use the same organization agent pool.
-
-Also, each project agent pool can use only one-organization agent pool.
+To share an agent pool with multiple projects, use an organization scope agent pool and add them in each of those projects, add an existing agent pool, and choose the organization agent pool. If you create a new agent pool, you can automatically grant access permission to all pipelines.

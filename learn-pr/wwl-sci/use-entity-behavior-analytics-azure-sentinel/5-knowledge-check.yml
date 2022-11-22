@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/08/2021
+  ms.date: 06/30/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -39,14 +39,14 @@ quiz:
     - content: "Bookmarks"
       isCorrect: false
       explanation: "Incorrect.  Activities are the aggregation of events."
-  - content: "While viewing the investigation graph, what option will show UEBA information?"
+  - content: "When you're viewing the investigation graph, what option will show Entity Behavior information?"
     choices:
     - content: "Entities"
       isCorrect: false
-      explanation: "Incorrect.  Insights will display UEBA information."
+      explanation: "Incorrect.  Insights will display Entity Behavior information."
     - content: "Timeline"
       isCorrect: false
-      explanation: "Incorrect.  Insights will display UEBA information."
+      explanation: "Incorrect.  Insights will display Entity Behavior information."
     - content: "Insights"
       isCorrect: true
-      explanation: "Correct.  Insights will display UEBA information."
+      explanation: "Correct.  Insights will display Entity Behavior information."

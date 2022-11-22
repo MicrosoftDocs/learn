@@ -25,4 +25,4 @@ For a practical, real-world application of quantum-inspired optimization, see [H
 
 ## Get started with quantum programming with Q#
 
-To begin writing quantum programs, check out [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit/?azure-portal=true). There, you'll build a basic program that measures quantum bits (qubits) to generate random numbers.
+To begin writing quantum programs, check out [Create your first Q# program by using the Quantum Development Kit](/training/modules/qsharp-create-first-quantum-development-kit/?azure-portal=true). There, you'll build a basic program that measures quantum bits (qubits) to generate random numbers.

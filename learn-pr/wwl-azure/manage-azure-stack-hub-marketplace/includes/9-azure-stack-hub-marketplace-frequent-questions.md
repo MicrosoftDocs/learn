@@ -4,7 +4,7 @@ This unit answers some frequently asked questions about Marketplace items in the
 
 ### Who should I contact for support issues with Azure Stack Hub Marketplace items?
 
-Azure Marketplace support guidance extends to Azure Stack Hub Marketplace items as well. Publishers are responsible for providing technical support for their products on the Azure Stack Hub Marketplace. To learn more about support guidance for Azure Marketplace items, see the [support section in the Azure Marketplace FAQs topic.](https://docs.microsoft.com/azure/marketplace/marketplace-faq-publisher-guide#customer-support)
+Azure Marketplace support guidance extends to Azure Stack Hub Marketplace items as well. Publishers are responsible for providing technical support for their products on the Azure Stack Hub Marketplace. To learn more about support guidance for Azure Marketplace items, see the [support section in the Azure Marketplace FAQs topic.](/azure/marketplace/marketplace-faq-publisher-guide#customer-support)
 
 ### How do I update to a newer Windows image?
 

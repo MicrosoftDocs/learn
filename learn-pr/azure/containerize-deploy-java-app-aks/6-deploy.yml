@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.containerize-deploy-java-app-aks.deploy
+title: Deploy the container image to Azure Kubernetes Service
+metadata:
+  unitType: Deploy the container image to Azure Kubernetes Service
+  title: Deploy the container image to Azure Kubernetes Service
+  description: Deploy the container image to Azure Kubernetes Service
+  ms.date: 9/28/2021
+  author: chtrembl
+  ms.author: chtrembl
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/6-deploy.md)]

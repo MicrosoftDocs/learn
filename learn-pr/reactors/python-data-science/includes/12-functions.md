@@ -1,4 +1,4 @@
-As in other programming languages, it's often essential in Python to break your program into reusable chunks. A primary means of doing that is by using functions.
+As in other programming languages, it's often essential in Python to break your program into reusable chunks. A primary means of doing that is by using *functions*.
 
 For example, we could rewrite the `while` loop code example in the previous unit as a formal function:
 
@@ -23,7 +23,7 @@ The output is:
 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597,
 ```
 
-Python can also define new functions on the fly. These anonymous functions are called _lambda functions_ because you use the `lambda` keyword when you define them. Lambda functions can contain any number of arguments but only one expression.
+Python can also define new functions on the fly. These anonymous functions are called *lambda functions* because you use the `lambda` keyword when you define them. Lambda functions can contain any number of arguments but only one expression.
 
 ```python
 nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -39,4 +39,4 @@ The output is:
 > [!div class="alert is-tip"]
 > ### Takeaway
 >
-> You'll constantly use functions of all kinds to perform data science in Python. So, understanding how functions accept, work on, and return data is critical to further progress.
+> You'll constantly use functions of all kinds to perform data science in Python, so understanding how functions accept, work on, and return data is critical to further progress.

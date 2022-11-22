@@ -8,7 +8,7 @@ A blob storage module is useful in the following scenarios:
  -  When you want to reduce bandwidth costs and avoid transferring terabytes of data to the cloud. You can process the data locally and send only the processed data to the cloud.
 
 > [!NOTE]
-> Azure SQL Edge is another local storage option for IoT Edge devices. Azure SQL Edge is an optimized relational database engine geared for IoT and IoT Edge deployments. You can read more about Azure SQL Edge here: [https://docs.microsoft.com/azure/azure-sql-edge/overview](/azure/azure-sql-edge/overview)
+> Azure SQL Edge is another local storage option for IoT Edge devices. Azure SQL Edge is an optimized relational database engine geared for IoT and IoT Edge deployments. You can read more about Azure SQL Edge here: [What is Azure SQL Edge?](/azure/azure-sql-edge/overview)
 
 ## Supported storage operations
 
@@ -335,7 +335,6 @@ Specify your IoT Edge device as the blob endpoint for any storage requests that 
 
  -  For modules that are deployed on the same device as where the Azure Blob Storage on IoT Edge module is running, the blob endpoint is: `http://<module name>:11002/<account name>`.
  -  For modules or applications running on a different device, you have to choose the right endpoint for your network. Depending on your network setup, choose an endpoint format such that the data traffic from your external module or application can reach the device running the Azure Blob Storage on IoT Edge module. The blob endpoint for this scenario is one of:
-    
      -  `http://<device IP >:11002/<account name>`
      -  `http://<IoT Edge device hostname>:11002/<account name>`
      -  `http://<fully qualified domain name>:11002/<account name>`

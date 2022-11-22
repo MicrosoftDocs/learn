@@ -14,6 +14,6 @@ A secure Azure estate provides central teams with real-time visibility into chan
 
 To learn more about operational design principles for enterprise-scale architecture, see the following articles:
 
-- [Enterprise-scale management and monitoring](/azure/cloud-adoption-framework/ready/enterprise-scale/management-and-monitoring)
-- [Enterprise-scale business continuity and disaster recovery](/azure/cloud-adoption-framework/ready/enterprise-scale/business-continuity-and-disaster-recovery)
-- [Enterprise-scale security, governance, and compliance](/azure/cloud-adoption-framework/ready/enterprise-scale/security-governance-and-compliance)
+- [Management for Azure environments](/azure/cloud-adoption-framework/ready/landing-zone/design-area/management)
+- [Business continuity and disaster recovery](/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-business-continuity-disaster-recovery)
+- [Azure governance](/azure/cloud-adoption-framework/ready/landing-zone/design-area/governance)

@@ -4,8 +4,8 @@ metadata:
   title: Respond to Azure events by using Event Grid
   description: Learn how Event Grid can orchestrate events from multiple sources and pass them to multiple subscribers.
   ms.date: 04/30/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: spelluru
+  ms.author: spelluru
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Respond to Azure events by using Event Grid

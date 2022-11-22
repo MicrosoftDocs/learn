@@ -37,7 +37,7 @@ In the language of your choice (Node.js, Python, or .NET), deploy an Azure Stati
 
 ## Learning objectives
 
-1. Create Vue.js web applications leveraging Azure Static Web Apps
+1. Create jQuery web applications leveraging Azure Static Web Apps
 1. Design APIs in any language and integrate them with Azure SQL Database and Azure Static Web Apps
 1. Forumulate GitHub Actions to build CI/CD for Azure applications and services
 

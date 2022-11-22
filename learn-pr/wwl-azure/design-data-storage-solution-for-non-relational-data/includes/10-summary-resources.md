@@ -1,45 +1,37 @@
-In this module, you’ve learned how to design for non-relational data storage. You’ve learned different strategies for storage accounts, blob storage, file storage, disk storage, storage security, and data protection. You should now be able to:
-
-- Design for data storage.
-
-- Design for Azure storage accounts.
-
-- Design for Azure blob storage.
-
-- Design for Azure files.
-
-- Design an Azure disk solution.
-
-- Design for storage security.
+In this module, you learned how to design for unstructured non-relational data. You compared the features of different types of Azure storage accounts and Storage access tiers. You explored scenarios for using Azure Blob Storage, Azure managed disks, Azure Files, and Azure NetApp Files. You reviewed how to implement support for data redundancy, and examined options for storage security, including customer-managed encryption keys, and secure transfer.
 
 ### Learn more with Azure documentation
 
-- [Introduction to Azure Storage - Cloud storage on Azure | Microsoft Docs](/azure/storage/common/storage-introduction?toc=/azure/storage/blobs/toc.json)
+- Read an [introduction to Azure Storage](/azure/storage/common/storage-introduction?toc=/azure/storage/blobs/toc.json).
 
-- [Review your storage options - Cloud Adoption Framework | Microsoft Docs](/azure/cloud-adoption-framework/ready/considerations/storage-options)
+- Review [Azure Storage options](/azure/cloud-adoption-framework/ready/considerations/storage-options).
 
-- [About Blob (object) storage - Azure Storage | Microsoft Docs](/azure/storage/blobs/storage-blobs-overview)
+- Examine [Azure disk storage options](/azure/virtual-machines/managed-disks-overview).
 
-- [Introduction to Azure Files | Microsoft Docs](/azure/storage/files/storage-files-introduction)
+- Configure [Azure security baseline for Azure Storage](/security/benchmark/azure/baselines/storage-security-baseline).
 
-- [Azure Disk Storage overview - Azure Virtual Machines | Microsoft Docs](/azure/virtual-machines/managed-disks-overview)
+- Discover more about [Azure Blob Storage](/azure/storage/blobs/storage-blobs-overview).
 
-- [Azure security baseline for Azure Storage | Microsoft Docs](/security/benchmark/azure/baselines/storage-security-baseline)
+- Explore more about [Azure Files](/azure/storage/files/storage-files-introduction).
 
-- [What is Azure NetApp Files | Microsoft Docs](/azure/azure-netapp-files/azure-netapp-files-introduction)
-
- 
+- Read more about [Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction).
 
 ### Learn more with self-paced training
 
-- [Choose the right disk storage for your virtual machine workload - Learn | Microsoft Docs](/learn/modules/choose-the-right-disk-storage-for-vm-workload/)
+- Choose the [right disk storage for your virtual machine workload](/training/modules/choose-the-right-disk-storage-for-vm-workload/).
 
-- [Configure blob storage - Learn | Microsoft Docs](/learn/modules/configure-blob-storage/)
+- Configure [Azure Blob Storage](/training/modules/configure-blob-storage/).
 
-- [Optimize performance and costs by using Azure Disk Storage - Learn | Microsoft Docs](/learn/modules/optimize-performance-and-costs-using-azure-disk-storage/)
+- Optimize [performance and costs by using Azure disk storage](/training/modules/optimize-performance-and-costs-using-azure-disk-storage/).
 
-- [Caching and performance in Azure storage disks - Learn | Microsoft Docs](/learn/modules/caching-and-performance-azure-storage-and-disks/)
+- Get an [introduction to securing data at rest on Azure](/training/modules/secure-data-at-rest/).
 
-- [Secure your Azure virtual machine disks - Learn | Microsoft Docs](/learn/modules/secure-your-azure-virtual-machine-disks/)
+- Choose a [data storage approach in Azure](/training/modules/choose-storage-approach-in-azure/).
 
-- [Introduction to securing data at rest on Azure - Learn | Microsoft Docs](/learn/modules/secure-data-at-rest/)
+## Learn more with optional hands-on exercises
+
+- Create a [storage account by using the Azure portal (sandbox)](/training/modules/create-azure-storage-account).
+
+- Manage [caching and performance in Azure Storage disks (sandbox)](/training/modules/caching-and-performance-azure-storage-and-disks/).
+
+- Secure your [Azure Virtual Machines disks (sandbox)](/training/modules/secure-your-azure-virtual-machine-disks/).

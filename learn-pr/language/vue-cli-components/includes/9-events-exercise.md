@@ -99,7 +99,7 @@ Finish by adding the newly created `BookingForm` to the application by adding it
             }
             this.bookings.push(booking);
         }
-    },
+    }
     ```
 
     The `addBooking` function retrieves the selected cabin by using the index. The function then creates a new `booking` object by using `cabin.name` and `cabin.price`. We then add `booking` to the `bookings` array.
@@ -112,6 +112,20 @@ Finish by adding the newly created `BookingForm` to the application by adding it
 
     We connect the `addBooking` function to the `booking-created` event, and we pass the list of cabins for display.
 
+## Display the cabin type
+
+Let's modify the template to display the information for our bookings. Instead of the "Sample" booking message that we showed in the last exercise, we'll display the cabin type for each booking.
+
+1. Open *src/components/BookingList.vue*.
+
+1. Inside the `<template>` element, change the field name in the div from `booking.name` to `booking.cabin`:
+
+   ```html
+   <div class="row" v-for="(booking, index) in bookings" :key="index">
+       <div>{{ booking.cabin }} </div>
+   </div>
+   ```
+
 ## Test the page
 
 With all the code added, let's test the page!
@@ -122,6 +136,6 @@ With all the code added, let's test the page!
 
    Your new booking is displayed on the right.
 
-    ![Screenshot of the final application with the form shown on the left and list on the right.](../media/list-component.png)
+   ![Screenshot of the final application with the form shown on the left and list on the right.](../media/list-component.png)
 
 You've now created and called a component with a custom event!

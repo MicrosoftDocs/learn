@@ -1,15 +1,14 @@
 As your organization moves to Azure, you must design and implement a hybrid connectivity solution that will address the short term and long-term goals of the organization's global enterprise IT footprint.
 
-In this module you learned about three ways to connect your on premises data center and remote users to an Azure virtual network. 
+In this module you learned about three ways to connect your on premises data center and remote users to an Azure virtual network.
 
 You now have the fundamental knowledge required to design and implement hybrid networking in Azure.
 
-Now that you have reviewed this module, you should be able to:
 
-- Design and implement a site-to-site VPN connection
+## Learn more
 
-- Design and implement a point-to-site VPN connection 
+ -  [Introduction to Azure VPN Gateway](/training/modules/intro-to-azure-vpn-gateway/)
+ -  [VPN Gateway documentation](/azure/vpn-gateway/)
+ -  [Introduction to Azure Virtual WAN](/training/modules/introduction-azure-virtual-wan/)
+ -  [Virtual WAN documentation](/azure/virtual-wan/)
 
-- Design and implement authentication for point-to-site VPN connections
-
-- Design and implement Azure Virtual WAN

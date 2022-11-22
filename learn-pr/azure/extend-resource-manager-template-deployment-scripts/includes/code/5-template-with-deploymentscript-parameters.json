@@ -120,7 +120,7 @@
                 "azPowerShellVersion": "3.0",
                 "scriptContent": "
                     param([string]$File)
-                    $fileList = $File -replace '(\\[|\\])' -split ',' | ForEach-Object { $_.trim() }
+                    $fileList = $File -replace '(\[|\])' -split ',' | ForEach-Object { $_.trim() }
                     $storageAccount = Get-AzStorageAccount -ResourceGroupName $env:ResourceGroupName -Name $env:StorageAccountName -Verbose
                     $count = 0
                     $DeploymentScriptOutputs = @{}

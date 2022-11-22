@@ -105,7 +105,7 @@ The following video demonstrates how to implement, create, and manage DNS zones 
 6. In the new zone, create a new host record.
 7. Open **Windows PowerShell**, and using the `Resolve-DnsName` cmdlet, verify name resolution is successful for the new record in the new zone.
 
- >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MjvL]
+ >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MjvL]
 
 ---
 

@@ -70,6 +70,6 @@ You create the comma-separated values (CSV) file with the list of all the users 
 
 ## Delete user accounts
 
-You can also delete user accounts through the Azure portal, Azure PowerShell, or the Azure CLI. In PowerShell, run the cmdlet `Remove-AzureADUser`. In the Azure CLI, run the cmdlet `az ad user delete`.
+You can also delete user accounts through the Azure portal, Azure PowerShell, or the Azure CLI. In PowerShell, run the cmdlet `Remove-AzADUser`. In the Azure CLI, run the cmdlet `az ad user delete`.
 
 When you delete a user, the account remains in a suspended state for 30 days. During that 30-day window, the user account can be restored.

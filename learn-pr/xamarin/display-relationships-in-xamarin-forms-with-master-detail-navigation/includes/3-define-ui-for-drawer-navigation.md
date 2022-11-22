@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Apps with many top-level pages need a navigation model that makes all pages discoverable without taking up too much screen space. For example, a conference app might have pages for sessions, speakers, activities, rooms, and a venue map. That's five top-level pages that all have equal importance to the user. Drawer navigation is a good fit for this app.
 
 ## What is drawer navigation?

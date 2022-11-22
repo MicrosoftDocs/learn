@@ -5,7 +5,7 @@ Learn to perform post-installation configuration of Windows Server by using seve
 
 Contoso, Ltd. is a financial services company in Seattle with major offices located throughout the world. Most of its compute environment runs on-premises on Windows Server. This includes virtualized workloads on Windows Server 2016 hosts.
 
-Contoso IT staff are migrating Contoso on-premises servers to Windows Server 2019. As a Windows Server administrator, you are responsible for managing and maintaining the server infrastructure that will help Contoso achieve its business goals. After you deploy the first Windows Server 2019 server computer, you must complete the configuration. You know that there are several tools available to complete this post-installation configuration, but you must learn how best to use them.
+Contoso IT staff are migrating Contoso on-premises servers to Windows Server 2022. As a Windows Server administrator, you are responsible for managing and maintaining the server infrastructure that will help Contoso achieve its business goals. After you deploy the first Windows Server 2022 server computer, you must complete the configuration. You know that there are several tools available to complete this post-installation configuration, but you must learn how best to use them.
 
 After completing this module, you’ll be able to select the appropriate post-installation configuration tool and use it to complete the configuration of your Windows Server computers.
 

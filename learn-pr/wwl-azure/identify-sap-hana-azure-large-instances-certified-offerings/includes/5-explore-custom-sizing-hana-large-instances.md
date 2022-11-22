@@ -2,13 +2,13 @@ SAP offers customer-specific sizing for SAP HANA with TDIv5 (Tailored Datacenter
 
 TDIv5 is available in:
 
- -  US West and US East
- -  Australia East
- -  Australia Southeast
- -  Japan East
- -  Japan West
- -  West Europe
- -  North Europe
+- US West and US East
+- Australia East
+- Australia Southeast
+- Japan East
+- Japan West
+- West Europe
+- North Europe
 
 :::row:::
   :::column:::
@@ -95,6 +95,5 @@ TDIv5 is available in:
     56 TB
   :::column-end:::
 :::row-end:::
-
 
 CPU threads represent the sum of compute threads provided by hyper-threaded CPU cores of the sum of the processors of the server unit. Most units are configured by default to use Hyper-Threading Technology. S768m, S768xm, and S960m are not configured to use Hyper-Threading for running SAP HANA.

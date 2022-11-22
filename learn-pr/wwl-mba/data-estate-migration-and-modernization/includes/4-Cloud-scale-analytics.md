@@ -6,9 +6,16 @@ Cloud scale analytics is a comprehensive set of big-data solutions that help org
 
 With Azure, businesses can drive insights at cloud scale, with a comprehensive set of end-to-end offerings, driving data from ingest and store, through reporting. Cloud scale analytics uses data warehousing, advanced analytics, and real-time analytics to collect and manage unlimited data, extend applications with predictive insight, and operationalize data. By adopting cloud scale analytics, organizations can improve customer engagement, increase revenue, streamline operations, and lower costs.
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more about cloud scale analytics.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to learn more about cloud scale analytics.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqU1A]
 
@@ -22,9 +29,16 @@ As you saw in the video, cloud scale analytics allows you to generate insights a
 
 A modern data warehouse lets you gather data and insights at scale through analytical dashboards, operational reports, and advanced analytics for all users.
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to understand the process by which common types of data are transformed into insights.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to understand the process by which common types of data are transformed into insights.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqWCz]
 
@@ -39,10 +53,16 @@ The Microsoft comprehensive cloud scale analytics solution covers all stages of 
 
 Anheuser-Busch InBev (AB InBev) isn’t just a beverage company. They’re a technology company, pushing the innovation envelope. AB InBev is increasing agility by shifting its legacy data warehouses to an Azure PaaS environment, using Azure Synapse Analytics (formerly Azure SQL Data Warehouse). As a result, AB InBev can drive greater insights through data and is well on track to meet its consolidation goal.
 
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to see how Azure’s cloud scale analytics has helped in AB InBev’s business transformation.|
+:::column:::
+Watch this video to see how Azure’s cloud scale analytics has helped in AB InBev’s business transformation.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2NPWx]
 

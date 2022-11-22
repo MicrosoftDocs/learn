@@ -9,7 +9,7 @@ This learning module covers why we test, and provides a brief introduction to be
 
 There are lots of testing technologies out there, but no matter your language or software stack, this guidance should help you grasp the basic concepts and help you avoid common pitfalls.
 
-If you want to get started testing right away, see [C# testing in Visual Studio](/learn/modules/visual-studio-test-tools/). You can dive right into writing and running tests. If you prefer to learn with a command-line interface see [Unit testing C# with MSTest and .NET](/dotnet/core/testing/unit-testing-with-mstest).
+If you want to get started testing right away, see [C# testing in Visual Studio](/training/modules/visual-studio-test-tools/). You can dive right into writing and running tests. If you prefer to learn with a command-line interface see [Unit testing C# with MSTest and .NET](/dotnet/core/testing/unit-testing-with-mstest).
 
 :::image type="content" source="../media/test-intro-collage.png" alt-text="Collage showing screenshots of test features in Microsoft tools, including Visual Studio and Azure DevOps.":::
 
@@ -21,7 +21,7 @@ After just a few hours, you've started getting calls from customer service that 
 
 You quickly see the mistake. All newly added domestic numbers accidentally have the country code added twice! As you think back, you realize you had changed all new numbers inserted into your database to append country codes, but the domestic function had also been doing that already.
 
-Tests could have helped you catch that change in functionality earlier by making sure new functionality doesn't regress old functionality.
+Tests could have helped you catch that change in functionality earlier by making sure the new functionality doesn't regress old functionality.
 
 ## What will we be doing?
 

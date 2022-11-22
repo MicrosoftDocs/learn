@@ -69,7 +69,7 @@ For more information, learn how to [rehearse your slide show with Presenter Coac
 
 Microsoft Translator helps not only break down language barriers, but also provides people who are deaf or hard of hearing with a tool to more easily understand content. For example, if someone who speaks English is listening to a presentation in a language they do not speak that is supported by Translator, they can use their device to get English captions of what the presenter is saying. Likewise, if a person is deaf, they can use Translator to get English-to-English captions of the presentation on their device.
 
-You can translate real-time conversations, menus, and even street signs whether you are offline, online, or simply accessing documents or apps on your device. For example, if someone is at an airport in a country where they don't speak the language, they can take a picture of the signs to determine when flights are arriving or departing, or perhaps just figure out where the baggage claim is located.
+You can translate real-time conversations, menus, and even street signs whether you are offline, online, or simply accessing documents or apps on your device. For example, if someone is at an airport in a country/region where they don't speak the language, they can take a picture of the signs to determine when flights are arriving or departing, or perhaps just figure out where the baggage claim is located.
 
 :::image type="content" source="../media/microsoft-translator.png" alt-text="Microsoft Translator showing English translations for airport signs.":::
 
