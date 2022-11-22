@@ -31,7 +31,7 @@ quiz:
       explanation: "Not quite"
     - content: "Security Development Lifecycle"
       isCorrect: true
-      explanation: "Correct! You may come across similar acronym SDLC which means the same."
+      explanation: "Correct! You may come across similar acronym SDLC, which means the same."
     - content: "Supplier Document List"
       isCorrect: false
       explanation: "Almost there!"

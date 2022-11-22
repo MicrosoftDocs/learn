@@ -22,13 +22,13 @@ quiz:
       explanation: "Static analysis focuses on code prior to its deployment."
     - content: "Software Composition Analysis (SCA)."
       isCorrect: false
-      explanation: "Composition analysis focuses on code prior to is deployment."
+      explanation: "Composition analysis focuses on code prior to its deployment."
     - content: "Dynamic Application Security Testing (DAST)."
       isCorrect: true
       explanation: "Correct. Dynamic analysis can inspect and report on infrastructure configuration and expose its weak points."
     - content: "Chaos testing."
       isCorrect: false
-      explanation: "Try again, this is however helpful technique in reliability and disaster recovery testing."
+      explanation: "Try again, it is however helpful technique in reliability and disaster recovery testing."
 
   - content: "Should the DevOps team maintain and review list of third party components used in the system for security vulnerabilities? "
     choices:

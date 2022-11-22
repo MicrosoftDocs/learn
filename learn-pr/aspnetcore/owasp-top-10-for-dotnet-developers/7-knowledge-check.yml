@@ -15,12 +15,12 @@ content: |
 quiz:
   questions: 
 
-  - content: "What are the objectives of threat modelling exercise?"
+  - content: "What are the objectives of threat modeling exercise?"
     choices:
     - content: "It's a guided process to help with manual security testing."
       isCorrect: false
-      explanation: "Threat modeling indicates areas of the system that need verification after mitigation is applied but is not limited to manual testing."
-    - content: "Helps to identify an accountable person who will be to blame in case of a security incident."
+      explanation: "Threat modeling indicates areas of the system that need verification after mitigation is applied but isn't limited to manual testing."
+    - content: "Helps to identify an accountable person who will be to blame if a security incident."
       isCorrect: false
       explanation: "Avoid blame culture in your organizations. Learn from mistakes to prevent them from occurring in the future."
     - content: "Improves understand of security threats to a system, determine risks from those threats, and establish appropriate mitigations."
@@ -43,7 +43,7 @@ quiz:
       explanation: "Entity Framework with LINQ is a powerful way of querying many relational database engines."
     - content: "Using stored procedures"
       isCorrect: false
-      explanation: "Stored procedures is the most effective way of countering the SQL Injection vulnerability."
+      explanation: "Stored procedures are the most effective way of countering the SQL Injection vulnerability."
     - content: "Using parameterized queries"
       isCorrect: false
       explanation: "Use parameterized queries where a direct SQL query must be used."

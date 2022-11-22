@@ -19,24 +19,24 @@ quiz:
     choices:
     - content: "Yes."
       isCorrect: false
-      explanation: "Client side validation should never be the only line of defense when dealing with user input.Always validate on both client and server side."
+      explanation: "Client side validation should never be the only line of defense when dealing with user input. Always validate on both client and server side."
     - content: "No."
       isCorrect: true
       explanation: "Always validate on both client and server side."   
 
-  - content: "Which of the following is good security logging practice?"
+  - content: "Which of the statements below would you consider secure logging best practices?"
     choices:
     - content: "Log all events occurring in the system and store the logs in an easily accessible public location."
       isCorrect: false
       explanation: "Overlogging may add noise when diagnosing issues. Logs should be protected and not exposed to public."
-    - content: "Log user and password of all failed re-authentication attempts"
+    - content: "Log user and password of all failed reauthentication attempts"
       isCorrect: false
       explanation: "Not quite. Failed authentication attempts should be logged and audited. Logging passwords is a security risk"    
-    - content: "Sanitize logs from sensitive information and guard access to logged information.."
+    - content: "Sanitize logs from sensitive information and guard access to logged information."
       isCorrect: true
       explanation: "Correct."
       
-  - content: "While browsing a legacy web app codebase running in Azure you and your team inherited to support you stumbled upon a hardcoded database connection string with username and password to a production environment database. What would be the correct course of action?"
+  - content: "You support a legacy web app hosted in Azure. When browsing the codebase, you stumbled upon a hardcoded database connection string with username and password to a production environment database. What would be the correct course of action?"
     choices:
     - content: "Find the authors of the change with git blame and ask them to fix it when they have some spare time"
       isCorrect: false
