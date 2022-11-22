@@ -24,6 +24,5 @@ roles:
 products:
 - azure
 units:
-- learn.wwl.maintain-azure-sap-workloads.vertical-horizontal-scaling-sap-workloads
 badge:
   uid: learn.wwl.maintain-azure-sap-workloads.badge
