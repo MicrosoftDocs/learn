@@ -44,39 +44,53 @@ The first thing we will do is activate the Azure sandbox and deploy an ARM templ
 
 1. On the top toolbar, select **Browse**.
 
-:::image type="content" source="../media/3-portal-browse-app-service.png" alt-text="Screenshot of the browser button from the App Service page.":::
+    :::image type="content" source="../media/3-portal-browse-app-service.png" alt-text="Screenshot of the browser button from the App Service page.":::
 
 1. Populate the App service with some activities to generate some data for our example. On the **List of To-Do Items** page, create some items, edit them, or mark some as complete.
-1. Now, we can go ahead with creating a workbook.
 
-## Create a workbook
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+    :::image type="content" source="../media/3-app-service-tasks.png" alt-text="Screenshot that shows tasks for the app service for workbooks learn module.":::
+1. Now, we are ready to create a workbook.
 
-## Add some descriptive text
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Create a new workbook that lets the user select a subscription
 
-## Add a control to let the user pick a subscription
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+1. From the Azure portal home page, search for and select **Monitor**.
+1. Select **Workbooks** from the left pane.
+1. Select **+ New** from the top toolbar.
+    :::image type="content" source="../media/3-portal-workbooks-icon.png" alt-text="Screenshot that shows the Workbooks icon on the Azure Monitor page.":::
+1. Add descriptive text to the top of the workbook:
+    1. Select **Add** and then **Add Text**.
 
-## Add map visualization
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+        :::image type="content" source="../media/3-add-text.png" alt-text="Screenshot that shows the Add text button in an Azure workbook.":::
+    1.  The Azure Workbook text editor uses markdown format. Enter text into the editor. You can copy this text if you would like.
+        ```
+       # Learn module exercise workbook
+       ## Select a subscription from the drop-down below.
+       ```
+    1. Select **Done editing**.
+    1. You now have a simple workbook with text.
 
+    :::image type="content" source="../media/3-workbook-with-text.png" alt-text="Screenshot of a new Azure workbook with text.":::
 
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+## Add a subscription picker to your workbook
+
+1. Select **Edit** from the right side of the section you just created.
+
+    :::image type="content" source="../media/3-workbook-with-text-edit-button.png" alt-text="Screenshot that shows the edit button from a section of a workbook.":::
+1. Select **Add**, and then **Add parameters**.
+
+    :::image type="content" source="../media/3-add-parameters.png" alt-text="Screenshot that shows the add parameters button in a workbook.":::
+1. Select **Add Parameter**. 
+1. In the **New Parameter** window:
+    - In both the **Parameter name** and **Display name** fields, enter "Subscription".
+    - In the **Parameter type** field, select **Subscription picker**.
+    - Select the **Required** checkbox.
+
+    :::image type="content" source="../media/3-parameter-settings.png" alt-text="Screenshot that shows the parameter settings in a workbook."::: 
+    - Select **Save**, and then **Done editing**.
+1. Select **Done editing** again.
+1. You now have a workbook with a **Subscription** drop-down picker.
+
+## Add a map to show the distribution of the subscription's resources
+1. Select **Edit** from the top toolbar.
+1. Select the subscription from the **Subscription** drop-down.
+1. 
