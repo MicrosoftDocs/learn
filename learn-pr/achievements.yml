@@ -1327,3 +1327,8 @@ achievements:
   title: Maintain Azure for SAP workloads
   summary: Maintain Azure for SAP workloads
   iconUrl: /training/achievements/maintain-azure-sap-workloads.svg
+- uid: learn.wwl.migrate-sap-workloads-azure.badge
+  type: badge
+  title: Migrate SAP workloads to Azure
+  summary: Migrate SAP workloads to Azure
+  iconUrl: /training/achievements/migrating-sap-workloads-azure.svg
