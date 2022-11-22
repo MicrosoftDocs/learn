@@ -27,26 +27,26 @@ The first thing we will do is activate the Azure sandbox and deploy an ARM templ
        az deployment group create --resource-group $resourceGroup --template-file deploy-resources.bicep
     ```
 
-1. When you are prompted for a password, enter a password that complies with the password requirements. For example, enter `Learn@123456`. Write this password down, you will need it later. The password must:
+1. When you are prompted for a password, enter a password that complies with the password requirements. For example, enter "Learn@123456". Write this password down, you will need it later. The password must:
     - Be at least 12 characters long
     - Contain at least 3 out of the following 4 characteristics:
     - one lower case letter
     - one upper case letter
     - one number
-    - one special character, not including `\` or `-`.
+    - one special character, not including \ or -.
 1. The resources that you need for the module are now deployed. Wait until the process completes.
 1. Log into the Azure portal.
 1. On the **Home** page, enter "Resource groups" into the search bar at the top.
 1. Select the resource group that we just created.
 1. Look through the list of resources and select the App Service plan.
 
-:::image type="content" source="../media/3-portal-select-app-service.png" alt-text="Screenshot of selecting the App Service from the resource group.":::
+    :::image type="content" source="../media/3-portal-select-app-service.png" alt-text="Screenshot of selecting the App Service from the resource group.":::
 
 1. On the top toolbar, select **Browse**.
 
     :::image type="content" source="../media/3-portal-browse-app-service.png" alt-text="Screenshot of the browser button from the App Service page.":::
 
-1. Populate the App service with some activities to generate some data for our example. On the **List of To-Do Items** page, create some items, edit them, or mark some as complete.
+1. Populate the app service with some activities to generate some data for our example. On the **List of To-Do Items** page, create some items, edit them, or mark some as complete.
 
     :::image type="content" source="../media/3-app-service-tasks.png" alt-text="Screenshot that shows tasks for the app service for workbooks learn module.":::
 1. Now, we are ready to create a workbook.
@@ -56,16 +56,17 @@ The first thing we will do is activate the Azure sandbox and deploy an ARM templ
 1. From the Azure portal home page, search for and select **Monitor**.
 1. Select **Workbooks** from the left pane.
 1. Select **+ New** from the top toolbar.
-    :::image type="content" source="../media/3-portal-workbooks-icon.png" alt-text="Screenshot that shows the Workbooks icon on the Azure Monitor page.":::
+    :::image type="content" source="../media/3-portal-new-workbook.png" alt-text="Screenshot that shows the New workbook icon Azure Workbooks page.":::
 1. Add descriptive text to the top of the workbook:
     1. Select **Add** and then **Add Text**.
 
         :::image type="content" source="../media/3-add-text.png" alt-text="Screenshot that shows the Add text button in an Azure workbook.":::
     1.  The Azure Workbook text editor uses markdown format. Enter text into the editor. You can copy this text if you would like.
-        ```
-       # Learn module exercise workbook
-       ## Select a subscription from the drop-down below.
-       ```
+
+    ```
+        # Learn module exercise workbook
+        ## Select a subscription from the drop-down below.
+    ```
     1. Select **Done editing**.
     1. You now have a simple workbook with text.
 
