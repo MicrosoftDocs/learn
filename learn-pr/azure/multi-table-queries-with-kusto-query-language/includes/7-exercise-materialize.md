@@ -10,9 +10,7 @@ To provide this information, you'll want to break down the query into stages so 
 
 1. Run the following query to get the top states, by revenue. You'll use the `let` statement to assign subqueries to the variables `USCustomers` and `USCustomerSales`.
 
-    <!--- <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA22Q3QrCMAyF7/sUuXN7hrELGXgjiDj3AHULWm1TaDNlsoe3Lf5tLFcnkHPyJRoZmrrqPVuDzkMJPz3C44IO4YBnZamyPbEbdtIglCWsGlKMHdQsGf2qEHqSVEuNIU1AqKQ3suXUjeB7Y6RTTwzzR8tSz0xxIEt6beLSHE7DF2uLwzvmahXBTVFXKiJ0kzMs/RsKMQMTCxDpkA+BC3u7LHIsIeaJKBn2zt4VtRjf8gJ6isDhTAEAAA==" target="_blank">Run the query</a> --->
-
-    [Run the query](https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA22Q3QrCMAyF7/sUuXN7hrELGXgjiDj3AHULWm1TaDNlsoe3Lf5tLFcnkHPyJRoZmrrqPVuDzkMJPz3C44IO4YBnZamyPbEbdtIglCWsGlKMHdQsGf2qEHqSVEuNIU1AqKQ3suXUjeB7Y6RTTwzzR8tSz0xxIEt6beLSHE7DF2uLwzvmahXBTVFXKiJ0kzMs/RsKMQMTCxDpkA+BC3u7LHIsIeaJKBn2zt4VtRjf8gJ6isDhTAEAAA==)
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA22Q3QrCMAyF7/sUuXN7hrELGXgjiDj3AHULWm1TaDNlsoe3Lf5tLFcnkHPyJRoZmrrqPVuDzkMJPz3C44IO4YBnZamyPbEbdtIglCWsGlKMHdQsGf2qEHqSVEuNIU1AqKQ3suXUjeB7Y6RTTwzzR8tSz0xxIEt6beLSHE7DF2uLwzvmahXBTVFXKiJ0kzMs/RsKMQMTCxDpkA+BC3u7LHIsIeaJKBn2zt4VtRjf8gJ6isDhTAEAAA==" target="_blank">Run the query</a>
 
     ```kusto
     let USCustomers = Customers | where RegionCountryName == 'United States';
@@ -32,9 +30,7 @@ To provide this information, you'll want to break down the query into stages so 
 
     You'll optimize the query by using the `materialize` function in the *USCustomerSales* table `let` statement. Doing so runs the assigned subquery only once and caches the results.
 
-    <!--- <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA3WQzU7DMBCE73mKvTVBHOBc5YAqcUFCiNAzWppVcWvvVpsNkKoPX9v8NqQ+WLbWM/ONPRksm0XfmQTSDmr4PR/g/ZWU4JHWTnghPZsO9xgI6hpmS3ZGLTSGRt1sXvgTpwY9JbcQp+rQuz2VBcSVB7e4snw7QNeHgBrHUfwkhn7sEB+U+XwTEkEFL8MP4x0NXzYbcQxbx23tmElPOgn/FVTzYoRZTFDkWt8IGoPbMoFMMVYZKQseVN4cryh9UnT1Itt+B5/Fx6Hj+qjr54AfkxGXcHEmJLlUeY8tpxhMdnB9lcT/mh0BN6LUufwBAAA=" target="_blank">Run the query</a> --->
-
-    [Run the query](https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA3WQzU7DMBCE73mKvTVBHOBc5YAqcUFCiNAzWppVcWvvVpsNkKoPX9v8NqQ+WLbWM/ONPRksm0XfmQTSDmr4PR/g/ZWU4JHWTnghPZsO9xgI6hpmS3ZGLTSGRt1sXvgTpwY9JbcQp+rQuz2VBcSVB7e4snw7QNeHgBrHUfwkhn7sEB+U+XwTEkEFL8MP4x0NXzYbcQxbx23tmElPOgn/FVTzYoRZTFDkWt8IGoPbMoFMMVYZKQseVN4cryh9UnT1Itt+B5/Fx6Hj+qjr54AfkxGXcHEmJLlUeY8tpxhMdnB9lcT/mh0BN6LUufwBAAA=)
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA3WQzU7DMBCE73mKvTVBHOBc5YAqcUFCiNAzWppVcWvvVpsNkKoPX9v8NqQ+WLbWM/ONPRksm0XfmQTSDmr4PR/g/ZWU4JHWTnghPZsO9xgI6hpmS3ZGLTSGRt1sXvgTpwY9JbcQp+rQuz2VBcSVB7e4snw7QNeHgBrHUfwkhn7sEB+U+XwTEkEFL8MP4x0NXzYbcQxbx23tmElPOgn/FVTzYoRZTFDkWt8IGoPbMoFMMVYZKQseVN4cryh9UnT1Itt+B5/Fx6Hj+qjr54AfkxGXcHEmJLlUeY8tpxhMdnB9lcT/mh0BN6LUufwBAAA=" target="_blank">Run the query</a>
 
     ```kusto
     let USCustomers = Customers | where RegionCountryName == 'United States';
@@ -58,9 +54,7 @@ To provide this information, you'll want to break down the query into stages so 
 
 1. Run the following query to output the columns for the report and calculate the top customers' contributions to their state's sales, as a percentage.
 
-    <!--- <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA3VTy27CMBC85yv2RowiFXosyqFC4tKqQgXOlQsrMPgRbZy2tPTfazsklDjkEK29M+OZTSzRwnyN2kIOaWHICqMfgJDLDKyxXNYLBj9AptKbdDwawRDOSLirQRncM/idJNKprRbTqrRGIZVO81Kf4HOHhPCKW8ecOjFLxxeuEPIcBistLG5gYbnFctBVWnCJXk25LgkuxTemCbgnNGZ8bcPqBGWlFCfXduSld9ZVcIA01I/KO2Dwfmw9PuHxLLM3QsNB6E0utEa6yuRS/yOwSdKxmfS4CLEaC/UcvZE+jyxYCoQ5mQ+h1+iH5FSlMYeqgDp499BufE7bN8W/eo/IYHjjEK/Cwtul7PNgTQHjkSdHyVy3ILPH87eI2Nllu5lEpFFjlqZo/M4Elbb+SaCtI9Qzb0FNGWGup987+YgzR/JXg2+9crglN+YZBWF/Gs8rT1gDAAA=" target="_blank">Run the query</a> --->
-
-    [Run the query](https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA3VTy27CMBC85yv2RowiFXosyqFC4tKqQgXOlQsrMPgRbZy2tPTfazsklDjkEK29M+OZTSzRwnyN2kIOaWHICqMfgJDLDKyxXNYLBj9AptKbdDwawRDOSLirQRncM/idJNKprRbTqrRGIZVO81Kf4HOHhPCKW8ecOjFLxxeuEPIcBistLG5gYbnFctBVWnCJXk25LgkuxTemCbgnNGZ8bcPqBGWlFCfXduSld9ZVcIA01I/KO2Dwfmw9PuHxLLM3QsNB6E0utEa6yuRS/yOwSdKxmfS4CLEaC/UcvZE+jyxYCoQ5mQ+h1+iH5FSlMYeqgDp499BufE7bN8W/eo/IYHjjEK/Cwtul7PNgTQHjkSdHyVy3ILPH87eI2Nllu5lEpFFjlqZo/M4Elbb+SaCtI9Qzb0FNGWGup987+YgzR/JXg2+9crglN+YZBWF/Gs8rT1gDAAA=)
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA3VTy27CMBC85yv2RowiFXosyqFC4tKqQgXOlQsrMPgRbZy2tPTfazsklDjkEK29M+OZTSzRwnyN2kIOaWHICqMfgJDLDKyxXNYLBj9AptKbdDwawRDOSLirQRncM/idJNKprRbTqrRGIZVO81Kf4HOHhPCKW8ecOjFLxxeuEPIcBistLG5gYbnFctBVWnCJXk25LgkuxTemCbgnNGZ8bcPqBGWlFCfXduSld9ZVcIA01I/KO2Dwfmw9PuHxLLM3QsNB6E0utEa6yuRS/yOwSdKxmfS4CLEaC/UcvZE+jyxYCoQ5mQ+h1+iH5FSlMYeqgDp499BufE7bN8W/eo/IYHjjEK/Cwtul7PNgTQHjkSdHyVy3ILPH87eI2Nllu5lEpFFjlqZo/M4Elbb+SaCtI9Qzb0FNGWGup987+YgzR/JXg2+9crglN+YZBWF/Gs8rT1gDAAA=" target="_blank">Run the query</a>
 
     ```kusto
     let Pcent = (portion: real, total: real) { round(100 * portion / total, 2) };
