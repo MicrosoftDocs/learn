@@ -152,9 +152,6 @@ You can test holographic object behavior with the Unity in-editor input simulati
     > If you're deploying to HoloLens (1st generation), select the **x86** architecture.
     
     > [!NOTE]
-    > For HoloLens, you'll typically build for the ARM architecture. However, there's a [known issue](https://github.com/microsoft/MixedRealityToolkit-Unity) in Unity 2019.3 that causes errors when selecting ARM as the build architecture in Visual Studio. As a workaround, we recommend that you build for ARM64. If that isn't an option, in Unity, go to **Edit** > **Project Settings** > **Player** > **Other Settings** and disable **Graphics Jobs**.
-    
-    > [!NOTE]
     > If you don't see "Device" as a target option in Visual Studio, you may need to change the startup project for the solution from the IL2CPP project to the UWP project. To do this, in the **Solution Explorer**, right-click [**your project name**]**(Universal Windows)** and then select **Set as StartUp Project**.
 
     > [!IMPORTANT]

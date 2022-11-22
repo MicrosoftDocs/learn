@@ -30,5 +30,6 @@ We'll start by creating a new Unity project and configuring it for Windows Mixed
 
 To target Windows Mixed Reality, your Unity project must be set to export as a Universal Windows Platform app. By default, the build settings for the Universal Windows Platform target any device, including immersive headsets. However, you can select a specific device using the **Target Device** drop down.
 
-[!INCLUDE[](includes/switch-build-platform.md)]
+You have several options here, but OpenXR offers you the most current features so that's the one we recommend.
 
+[!INCLUDE[](includes/switch-build-platform.md)]

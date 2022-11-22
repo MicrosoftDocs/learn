@@ -1,12 +1,10 @@
-## [Unity 2020 + Openxr](#tab/openxr)
+## [Unity 2020.3 + OpenXR](#tab/openxr)
 
 1. In the menu bar, select **File** > **Build Settings...**.
 1. In the **Build Settings** window, select **Universal Windows Platform**.
 1. Make sure the following settings are active:
 
-    **Target device**: HoloLens
-
-    **Architecture**: ARM64
+    **Architecture**: ARM 64-bit
 
     **Build Type**: D3D Project
 
@@ -23,7 +21,7 @@
 1. Click the **Switch Platform** button. Unity displays a progress bar while it switches platforms.
 1. After the switch platform process is finished, close the **Build Settings** window.
 
-## [Unity 2019/2020 + windows xr plugin](#tab/winxr)
+## [Unity 2019/2020 + Windows XR plugin](#tab/winxr)
 
 1. In the menu bar, select **File** > **Build Settings...**.
 
@@ -37,7 +35,7 @@
 
     :::image type="content" source="../../media/close-icon.png" alt-text="Screenshot of Unity Build page with close icon highlighted." lightbox="../../media/close-icon.png":::
 
-## [Legacy wsa](#tab/wsa)
+## [Legacy WSA](#tab/wsa)
 
 1. In the menu bar, select **File** > **Build Settings...**.
 
