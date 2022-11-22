@@ -10,9 +10,7 @@ Examining these tables, you can see that they have the same columns. The only di
 
 1. Run the following query.
 
-    <!--- <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA62RwQrCMBBE7/2KvfUiVM/SgxS8FDxY+gHBrjU0yUqyQQr9eIMplVIRheaQMGFmeJsoZDh4x1YoKSqh0EEOr/MoLgxZFgVcgwq7Jf22JxDWAIqo83cowjVptA7ITKLEfnQ9bmgRzthKMgV5w7Y/CY2Q55BOjeloZtEh7Lb7RAW82kjGppSmbUj/hhgjMGZW45zXfoGtWDC6v1hjZG3U2Lognf94MoA3oePDS2+WAz0Bgv25ZzICAAA=" target="_blank">Run the query</a> --->
-
-    [Run the query](https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA62RwQrCMBBE7/2KvfUiVM/SgxS8FDxY+gHBrjU0yUqyQQr9eIMplVIRheaQMGFmeJsoZDh4x1YoKSqh0EEOr/MoLgxZFgVcgwq7Jf22JxDWAIqo83cowjVptA7ITKLEfnQ9bmgRzthKMgV5w7Y/CY2Q55BOjeloZtEh7Lb7RAW82kjGppSmbUj/hhgjMGZW45zXfoGtWDC6v1hjZG3U2Lognf94MoA3oePDS2+WAz0Bgv25ZzICAAA=)
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA62RwQrCMBBE7/2KvfUiVM/SgxS8FDxY+gHBrjU0yUqyQQr9eIMplVIRheaQMGFmeJsoZDh4x1YoKSqh0EEOr/MoLgxZFgVcgwq7Jf22JxDWAIqo83cowjVptA7ITKLEfnQ9bmgRzthKMgV5w7Y/CY2Q55BOjeloZtEh7Lb7RAW82kjGppSmbUj/hhgjMGZW45zXfoGtWDC6v1hjZG3U2Lognf94MoA3oePDS2+WAz0Bgv25ZzICAAA=" target="_blank">Run the query</a>
 
     ```kusto
     let AustraliaSales = SalesFact // Sales facts from Australia
@@ -45,9 +43,7 @@ The next month, your sales team again asks you to create the sales data from the
 
 1. Run the following query.
 
-    <!--- <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA7WSwQrCMAyG7z5Fbl560LPsMCZeBBWnDxBqmNWuGW2qCD68dRsizqP20qT8yc+X1JJAHoN4tAZLtBQgg/ZeoJYRpHMHy3yODRRJxzX5AOxeyZJuvep6JE+wpcqwKzg68bcV1gRZBuOXxbgXC54JppM+azyfSEtnnNfPYgU7FrQFhxTOUSgZqWF3BYWRNpqNbGLZOyN0WBpXHbj+H09nA73P76HWWscGJT2/Y5WSSsLfqTqb30O1fTeeL8Zp6lYWXRJ9fED1ZYlqOIEHRlC12roCAAA=" target="_blank">Run the query</a> --->
-
-    [Run the query](https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA7WSwQrCMAyG7z5Fbl560LPsMCZeBBWnDxBqmNWuGW2qCD68dRsizqP20qT8yc+X1JJAHoN4tAZLtBQgg/ZeoJYRpHMHy3yODRRJxzX5AOxeyZJuvep6JE+wpcqwKzg68bcV1gRZBuOXxbgXC54JppM+azyfSEtnnNfPYgU7FrQFhxTOUSgZqWF3BYWRNpqNbGLZOyN0WBpXHbj+H09nA73P76HWWscGJT2/Y5WSSsLfqTqb30O1fTeeL8Zp6lYWXRJ9fED1ZYlqOIEHRlC12roCAAA=)
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA7WSwQrCMAyG7z5Fbl560LPsMCZeBBWnDxBqmNWuGW2qCD68dRsizqP20qT8yc+X1JJAHoN4tAZLtBQgg/ZeoJYRpHMHy3yODRRJxzX5AOxeyZJuvep6JE+wpcqwKzg68bcV1gRZBuOXxbgXC54JppM+azyfSEtnnNfPYgU7FrQFhxTOUSgZqWF3BYWRNpqNbGLZOyN0WBpXHbj+H09nA73P76HWWscGJT2/Y5WSSsLfqTqb30O1fTeeL8Zp6lYWXRJ9fED1ZYlqOIEHRlC12roCAAA=" target="_blank">Run the query</a>
 
     ```kusto
     let AustraliaSales = SalesFact
@@ -82,9 +78,7 @@ To only return the columns that occur in all tables, you'll use an inner union o
 
 1. Run the following query.
 
-    <!--- <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA7WSsY7CMAyGd57CG0sGmFEHVMSCBAjuHsBKLQhN7SpxOCHdwxPaCiFghCyxo9/+9dnxpDBPUQN6h3v0FKGA7l6i1RHk8w9epE4tlFknDYUIwvdkRZdB9XekQLCjgxMuJbGGyxobgqKA8d1iPIgVa4LpZMjaICey2hvPm1uxgR9R9KXEHC5QKRuZ1+4GSqddNBv5zPLLTqlaOT5U0nyPp7eBwefzUBtrU4uanx+x9ppL4tepepvPQ3V9t0HOji31K0ucRVA7rgrHTOHpL5o3+zSvw7gCuE4kN8UCAAA=" target="_blank">Run the query</a> --->
-
-    [Run the query](https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA7WSsY7CMAyGd57CG0sGmFEHVMSCBAjuHsBKLQhN7SpxOCHdwxPaCiFghCyxo9/+9dnxpDBPUQN6h3v0FKGA7l6i1RHk8w9epE4tlFknDYUIwvdkRZdB9XekQLCjgxMuJbGGyxobgqKA8d1iPIgVa4LpZMjaICey2hvPm1uxgR9R9KXEHC5QKRuZ1+4GSqddNBv5zPLLTqlaOT5U0nyPp7eBwefzUBtrU4uanx+x9ppL4tepepvPQ3V9t0HOji31K0ucRVA7rgrHTOHpL5o3+zSvw7gCuE4kN8UCAAA=)
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA7WSsY7CMAyGd57CG0sGmFEHVMSCBAjuHsBKLQhN7SpxOCHdwxPaCiFghCyxo9/+9dnxpDBPUQN6h3v0FKGA7l6i1RHk8w9epE4tlFknDYUIwvdkRZdB9XekQLCjgxMuJbGGyxobgqKA8d1iPIgVa4LpZMjaICey2hvPm1uxgR9R9KXEHC5QKRuZ1+4GSqddNBv5zPLLTqlaOT5U0nyPp7eBwefzUBtrU4uanx+x9ppL4tepepvPQ3V9t0HOji31K0ucRVA7rgrHTOHpL5o3+zSvw7gCuE4kN8UCAAA=" target="_blank">Run the query</a>
 
     ```kusto
     let AustraliaSales = SalesFact
