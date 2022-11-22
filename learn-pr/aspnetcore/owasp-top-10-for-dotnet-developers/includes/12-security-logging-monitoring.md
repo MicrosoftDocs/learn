@@ -1,6 +1,6 @@
 # A09 - Security Logging and Monitoring
 
-How will you detect you've been breached? Without sufficient logging and monitoring, breaches cannot be detected.
+How will you detect you've been breached? Without sufficient logging and monitoring, breaches can not be detected.
 Logging and monitoring gives us an opportunity to stop the attacker in their tracks. Telemetry, logging and monitoring enables digital forensics and post mortem after a breach. Logging and monitoring are essential components in ensuring that any suspicious activity can be detected close to real-time, or diagnosed after the fact.
 More importantly, collection of this data this useless without actively reviewing it or alerting rules in place.
 

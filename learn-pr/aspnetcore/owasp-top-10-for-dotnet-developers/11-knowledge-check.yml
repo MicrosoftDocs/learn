@@ -35,7 +35,7 @@ quiz:
     - content: "An Excel spreadsheet with Software Bill of Materials should be part of the design phase and any new green field project."
       isCorrect: false
       explanation: "SBOM is recommended, however can be applied at any stage of the project in more automated fashion."
-    - content: "Favour automated tools at any stage of product lifecycle to track and monitor your dependencies."
+    - content: "Favor automated tools at any stage of product lifecycle to track and monitor your dependencies."
       isCorrect: true
       explanation: "Correct. Maintenance effort required to keep a list of dependencies up-to-date combined with their vulnerability check can quickly become unmanageable."
     - content: "There's no risk associated with third party purchased and OSS components."

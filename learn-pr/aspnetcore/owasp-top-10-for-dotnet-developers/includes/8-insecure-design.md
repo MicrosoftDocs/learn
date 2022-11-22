@@ -3,7 +3,7 @@
 Addresses design level flaw, others focus more on code-level issues​. An example could be an error including the exact location of a configuration file​ or a password stored as a plain text – intentional design decision​​.
 
 Insecure Design. This is a new entry on the OWASP Top 10 in 2021. It is different from insecure implementation in that it has more to do with risks related to design and architectural flaws. A secure implementation might have an insecure design which still renders an application vulnerable to attacks and exploits.​
-An insecure design cannot be fixed by a perfect implementation.​
+An insecure design can not be fixed by a perfect implementation.​
 
 If we genuinely want to 'shift left' as an industry, we need more threat modelling, secure design patterns and principles, and reference architectures. ​
 :::image type="content" source="../media/enterprise-app-threats.png" alt-text="angles of attack in complex system":::
@@ -19,7 +19,7 @@ A few techniques that can address insecure design are:
     - Defense in Depth​
     - Threat Modeling​
 
-Threat modeling is an essential part of DevSecOps because it informs your security design process and helps find vulnerabilities in your application. While it does fall under DevSecOps, it also sits neatly under education too. 
+Threat modeling is an essential part of DevSecOps because it informs your security design process and helps find vulnerabilities in your application. While it does fall under DevSecOps, it also sits neatly under education too.
 
 :::image type="content" source="../media/tm-1.png" alt-text="Application logical components":::
 
