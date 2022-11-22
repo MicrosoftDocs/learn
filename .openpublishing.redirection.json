@@ -18489,6 +18489,11 @@
       "source_path": "learn-pr/wwl-azure/maintain-azure-sap-workloads/4-networking-changes.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/maintain-azure-sap-workloads/3-perform-backup-restore.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
     }
   ]
 }
