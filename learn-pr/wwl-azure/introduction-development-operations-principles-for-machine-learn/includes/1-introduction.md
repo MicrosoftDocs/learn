@@ -6,7 +6,7 @@ However, one of the main obstacles when adopting and scaling machine learning pr
 
 **Machine learning operations** or **MLOps** aims to more efficiently scale from a proof of concept or pilot project to a machine learning workload in production.
 
-Implementing MLOps helps you to make your machine learn workloads robust and reproducible. For example, you'll be able to monitor, retrain, and redeploy a model whenever needed while always keeping a model in production.
+Implementing MLOps helps you to make your machine learning workloads robust and reproducible. For example, you'll be able to monitor, retrain, and redeploy a model whenever needed while always keeping a model in production.
 
 The purpose of MLOps is to make the machine learning lifecycle scalable:
 

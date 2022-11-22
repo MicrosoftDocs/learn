@@ -1,4 +1,4 @@
-The SQL query language for the Azure Cosmos DB SQL API ships with built-in functions for common tasks in a query. In this unit, we will walk through a brief set of examples of those functions.
+The SQL query language for the Azure Cosmos DB for NoSQL ships with built-in functions for common tasks in a query. In this unit, we will walk through a brief set of examples of those functions.
 
 Let’s start with an example where the name and the category are concatenated in the query result. For this example, the CONCAT built-in string function is used to concatenate these two fields together with a single vertical bar in the middle:
 
@@ -30,4 +30,4 @@ WHERE
 ```
 
 > [!TIP]
-> This is not a comprehensive list of built-in functions for the Azure Cosmos DB SQL API query language.
+> This is not a comprehensive list of built-in functions for the Azure Cosmos DB for NoSQL query language.

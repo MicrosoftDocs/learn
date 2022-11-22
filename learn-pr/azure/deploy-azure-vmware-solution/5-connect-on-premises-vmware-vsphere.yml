@@ -2,7 +2,7 @@
 uid: learn.deploy-azure-vmware-solution.connect-on-premises-vmware
 metadata:
   title: Connect to an on-premises VMware vSphere environment
-  description: Connect to an on-premises VMware vSphere environment
+  description: Connect to an on-premises VMware vSphere environment.
   ms.date: 03/19/2021
   author: sbkuehn
   ms.author: shkuehn

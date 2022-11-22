@@ -25,7 +25,7 @@ public IActionResult Create(Pizza pizza)
 }
 ```
 
-The `[HttpPost]` attribute will map HTTP `POST` requests sent to `http://localhost:5000/pizza` by using the `Create()` method. Instead of returning a list of pizzas, as we saw with the `Get()` method, this method returns an `IActionResult` response. 
+The `[HttpPost]` attribute will map HTTP `POST` requests sent to `http://localhost:5000/pizza` by using the `Create()` method. Instead of returning a list of pizzas, as we saw with the `Get()` method, this method returns an `IActionResult` response.
 
 `IActionResult` lets the client know if the request succeeded and provides the ID of the newly created pizza. `IActionResult` does this by using standard HTTP status codes, so it can easily integrate with clients regardless of the language or platform they're running on.
 
@@ -36,9 +36,9 @@ The `[HttpPost]` attribute will map HTTP `POST` requests sent to `http://localho
 
 Fortunately, `ControllerBase` has utility methods that will create the appropriate HTTP response codes and messages for you. You'll see how those work in the next exercise.
 
-## PUT 
+## PUT
 
-Modifying or updating a pizza in our inventory is similar to the POST method that you implemented. But it uses the `[HttpPut]` attribute and takes in the `id` parameter, in addition to the `Pizza` object that needs to be updated:
+Modifying or updating a pizza in our inventory is similar to the POST method that you implemented, but it uses the `[HttpPut]` attribute and takes in the `id` parameter in addition to the `Pizza` object that needs to be updated:
 
 ```csharp
 [HttpPut("{id}")]
@@ -57,7 +57,7 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
 |`BadRequest` is implied      |400             |The request body's `Pizza` object is invalid.|
 
 ## DELETE
-One of the easier actions to implement is the `DELETE` action that takes in just the `id` parameter of the pizza to remove from the in-memory cache:
+One of the easier actions to implement is the `DELETE` action, which takes in just the `id` parameter of the pizza to remove from the in-memory cache:
 
 ```csharp
 [HttpDelete("{id}")]
@@ -74,4 +74,4 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
 |`NoContent`                  |204             |The pizza was deleted from the in-memory cache.|
 |`NotFound`                   |404             |A pizza that matches the provided `id` parameter doesn't exist in the in-memory cache.|
 
-The following exercise demonstrates how to support each of the four actions in the web API.
+The exercise in the next unit demonstrates how to support each of the four actions in the web API.

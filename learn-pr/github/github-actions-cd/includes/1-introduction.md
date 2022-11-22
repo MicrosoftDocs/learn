@@ -18,14 +18,14 @@ In this module, you will:
 
 ## Prerequisites
 
-This module assumes you've completed the [Automate development tasks by using GitHub Actions](/learn/modules/github-actions-automate-tasks/) module and [Build continuous integration workflows by using GitHub Actions](/learn/modules/github-actions-ci/) module or that you're already familiar with GitHub Actions and workflows that are used in CI.
+This module assumes you've completed the [Automate development tasks by using GitHub Actions](/training/modules/github-actions-automate-tasks/) module and [Build continuous integration workflows by using GitHub Actions](/training/modules/github-actions-ci/) module or that you're already familiar with GitHub Actions and workflows that are used in CI.
 
 - A GitHub account
 - The ability to navigate and edit files in GitHub
   - For more information about GitHub, see [Introduction to GitHub](https://lab.github.com/githubtraining/introduction-to-github?azure-portal=true).
 - Basic familiarity with GitHub Actions and workflows
-  - If you aren't familiar with workflows, jobs and steps, check out the [Automate development tasks by using GitHub Actions](/learn/modules/github-actions-automate-tasks/) module.
+  - If you aren't familiar with workflows, jobs and steps, check out the [Automate development tasks by using GitHub Actions](/training/modules/github-actions-automate-tasks/) module.
 - Basic familiarity with continuous integration using GitHub Actions and workflows
-  - If you're unfamiliar with continuous integration using GitHub Actions and workflows, check out [Build continuous integration workflows by using GitHub Actions](/learn/modules/github-actions-ci/)
+  - If you're unfamiliar with continuous integration using GitHub Actions and workflows, check out [Build continuous integration workflows by using GitHub Actions](/training/modules/github-actions-ci/)
 - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true).
 - An understanding of [Microsoft Azure Fundamentals](../../../paths/az-900-describe-cloud-concepts/index.yml)

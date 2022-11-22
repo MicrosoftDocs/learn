@@ -6,13 +6,15 @@ To create, or enable, an Azure virtual machine with the system-assigned managed 
 
 ### Enable system-assigned managed identity during creation of an Azure virtual machine
 
-The following example creates a virtual machine named *myVM* with a system-assigned managed identity, as requested by the `--assign-identity` parameter. The `--admin-username` and `--admin-password` parameters specify the administrative user name and password account for virtual machine sign-in. Update these values as appropriate for your environment:
+The following example creates a virtual machine named *myVM* with a system-assigned managed identity, as requested by the `--assign-identity` parameter, with the specified `--role` and `--scope`. The `--admin-username` and `--admin-password` parameters specify the administrative user name and password account for virtual machine sign-in. Update these values as appropriate for your environment:
 
 ```bash
 az vm create --resource-group myResourceGroup \ 
     --name myVM --image win2016datacenter \ 
     --generate-ssh-keys \ 
     --assign-identity \ 
+    --role contributor \
+    --scope mySubscription \
     --admin-username azureuser \ 
     --admin-password myPassword12
 ```
@@ -44,7 +46,7 @@ az identity create -g myResourceGroup -n myUserAssignedIdentity
 
 ### Assign a user-assigned managed identity during the creation of an Azure virtual machine
 
-The following example creates a virtual machine associated with the new user-assigned identity, as specified by the `--assign-identity` parameter. 
+The following example creates a virtual machine associated with the new user-assigned identity, as specified by the `--assign-identity` parameter, with the given `--role` and `--scope`. 
 
 ```bash
 az vm create \
@@ -53,7 +55,9 @@ az vm create \
 --image UbuntuLTS \
 --admin-username <USER NAME> \
 --admin-password <PASSWORD> \
---assign-identity <USER ASSIGNED IDENTITY NAME>
+--assign-identity <USER ASSIGNED IDENTITY NAME> \
+--role <ROLE> \
+--scope <SUBSCRIPTION>
 ```
 
 ### Assign a user-assigned managed identity to an existing Azure virtual machine

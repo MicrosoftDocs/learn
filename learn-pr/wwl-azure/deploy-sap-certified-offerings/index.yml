@@ -16,13 +16,15 @@ abstract: |
   - Describe the three options when deploying SAP products in Azure.
 prerequisites: |
   Prior to taking this course, it is recommended that you have taken the Azure Administrator (AZ-103) exam, as well as SAP HANA or NetWeaver training.
-iconUrl: /learn/achievements/deploy-sap-certified-offerings-for-azure.svg
+iconUrl: /training/achievements/deploy-sap-certified-offerings-for-azure.svg
 levels:
 - advanced
 roles:
 - administrator
 products:
 - azure
+subjects:
+- compliance
 units:
 - learn.wwl.deploy-sap-certified-offerings.introduction
 - learn.wwl.deploy-sap-certified-offerings.prerequisites-sap-workloads-public-cloud

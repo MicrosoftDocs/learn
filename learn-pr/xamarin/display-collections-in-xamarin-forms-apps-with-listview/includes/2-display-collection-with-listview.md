@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In this unit, we'll create a Xamarin.Forms `ListView` control and populate it with string values. We'll also see how to get notified when a user interacts with a row.
 
 ## What is a ListView control?

@@ -6,7 +6,7 @@ In this unit, you'll complete the following tasks:
 
 ## Verify the deployment to AKS
 
-After the app has deployed to AKS, you'll see a variation of the following message in the command shell:
+After the app has deployed to AKS, you'll see a variation of the following message in the terminal:
 
 ```console
 The eShop-Learn application has been deployed to "http://203.0.113.55" (IP: 203.0.113.55).
@@ -18,11 +18,7 @@ You can begin exploring these services (when ready):
 ```
 
 > [!TIP]
-> To display these URLs again, run the following command:
->
-> ```bash
-> cat ~/clouddrive/aspnet-learn-temp/deployment-urls.txt
-> ```
+> These URLs are contained in *deployment-urls.txt* in the root of the project.
 
 Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
 
@@ -54,7 +50,13 @@ You've successfully verified that the app was deployed to AKS and is working pro
 
 GitHub Actions will be used to publish the container image to ACR. To configure permissions so the GitHub Actions runner can connect to Azure, complete the following steps:
 
-1. Run the following command to create an Azure Active Directory service principal to allow access from GitHub:
+1. Run the following command in the terminal to display your Subscription ID.
+
+    ```azurecli
+    az account show --query 'id' --output tsv
+    ```
+
+1. Using the Subscription ID you just obtained, run the following command to create an Azure Active Directory service principal to allow access from GitHub:
 
     ```azurecli
     az ad sp create-for-rbac --sdk-auth --name http://eshop-learn-sp --role Contributor --scopes /subscriptions/<SUBSCRIPTION-ID>
@@ -63,7 +65,10 @@ GitHub Actions will be used to publish the container image to ACR. To configure 
     A variation of the following output appears:
 
     ```console
-    Creating a role assignment under the scope of "/subscriptions/<SUBSCRIPTION-ID>"
+    Option '--sdk-auth' has been deprecated and will be removed in a future release.
+    Creating 'Contributor' role assignment under scope '/subscriptions/<SUBSCRIPTION-ID>'
+    
+    The output includes credentials that you must protect. Be sure that you do not include these credentials in your code or check the credentials into your source control. For more information, see https://aka.ms/azadsp-cli
     {
       "clientId": "<CLIENT-ID>",
       "clientSecret": "<CLIENT-SECRET>",
@@ -78,24 +83,28 @@ GitHub Actions will be used to publish the container image to ACR. To configure 
     }
     ```
 
-1. Copy the JSON output from the command shell. Don't include the text output above the JSON. You'll need the JSON and the credentials for the GitHub Action in next step.
+    > [!NOTE]
+    > The deprecated `--sdk-auth` warning is a known issue.
+
+1. Copy the JSON output from the terminal. Don't include the text output above the JSON. You'll need the JSON and the credentials for the GitHub Action in next step.
 
 ## Create the secrets
 
 The service principal and the credentials for the container registry are sensitive information. The GitHub Actions runner will need the credentials to interact with ACR and AKS. As a best practice, sensitive information should be stored as encrypted *secrets* in a secure location. The secrets should be managed by repository administrators and accessed by the GitHub Actions runner. Complete the following steps to securely store the sensitive information as environment variables in your repository:
 
-1. In the GitHub repository you forked, go to **:::no-loc text="Settings":::** > **:::no-loc text="Secrets":::**.
-1. Select the **:::no-loc text="New secret":::** button.
+1. In the GitHub repository you forked, go to **:::no-loc text="Settings":::** > **:::no-loc text="Secrets":::** > **:::no-loc text="Actions":::**.
+1. Select the **:::no-loc text="New repository secret":::** button.
 1. Enter `AZURE_CREDENTIALS` and the JSON output you copied in the **:::no-loc text="Name":::** and **:::no-loc text="Value":::** text boxes, respectively.
 
     At this point, you should have something like this:
 
     :::image type="content" source="../media/3-permissions-secrets/add-github-secrets.png" alt-text="AZURE_CREDENTIALS environment variable secrets page." border="true" lightbox="../media/3-permissions-secrets/add-github-secrets.png":::
+
 1. Select the **:::no-loc text="Add secret":::** button.
-1. Create four additional secrets. Run the following command to get the values for the new secrets:
+1. Create four additional repository secrets. Run the following command in the terminal to get the values for the new secrets:
 
     ```bash
-    cat ~/clouddrive/aspnet-learn-temp/config.txt
+    cat ../../config.txt
     ```
 
     Name the secrets as follows and use the values provided in the text output:

@@ -6,15 +6,15 @@ Resizing of Azure VMs can be performed from the Azure portal, via PowerShell, Az
 
 As explained earlier in this course, the size of the virtual machine controls how many data disks you can attach. Attaching disks is an online operation. You can detach a data disk without stopping the Azure VM by using PowerShell or Azure CLI, but you should first make sure that the disk is not being used. For details, refer to 
 
-* **Windows VMs**: [https://docs.microsoft.com/azure/virtual-machines/windows/detach-disk](https://docs.microsoft.com/azure/virtual-machines/windows/detach-disk) 
+* **Windows VMs**: [How to detach a data disk from a Windows virtual machine](/azure/virtual-machines/windows/detach-disk) 
 
-* **Linux VMs**: [https://docs.microsoft.com/azure/virtual-machines/linux/detach-disk](https://docs.microsoft.com/azure/virtual-machines/linux/detach-disk) 
+* **Linux VMs**: [How to detach a data disk from a Linux virtual machine](/azure/virtual-machines/linux/detach-disk) 
 
 You also have the option of expanding attached Azure VM disks. For details, refer to
 
-* **Windows VMs**: [https://docs.microsoft.com/azure/virtual-machines/windows/expand-os-disk](https://docs.microsoft.com/azure/virtual-machines/windows/expand-os-disk) 
+* **Windows VMs**: [How to expand virtual hard disks attached to a Windows virtual machine](/azure/virtual-machines/windows/expand-os-disk) 
 
-* **Linux VMs**: [https://docs.microsoft.com/azure/virtual-machines/linux/expand-disks](https://docs.microsoft.com/azure/virtual-machines/linux/expand-disks)
+* **Linux VMs**: [Expand virtual hard disks on a Linux VM with the Azure CLI](/azure/virtual-machines/linux/expand-disks)
 
 ## Scaling SAP HANA on Azure (Large Instances)
 
@@ -56,4 +56,3 @@ When you look at the documentation, the advantage might not be visible immediate
 
 
 The higher the data volume compared to the memory, the higher the chances are that the warm data you are asking for is stored on disk storage.
-

@@ -26,7 +26,7 @@ prerequisites: |
   - Explain and create resource groups
   - Describe Azure Data Factory and it's core components
   - Ingest data into Azure Data Factory using the Copy Activity
-iconUrl: /learn/achievements/orchestrate-data-movement-transformation-azure-data-factory.svg
+iconUrl: /training/achievements/orchestrate-data-movement-transformation-azure-data-factory.svg
 levels:
 - intermediate
 roles:
@@ -35,6 +35,8 @@ roles:
 products:
 - azure-data-factory
 - azure-synapse-analytics
+subjects:
+- data-analytics
 units:
 - learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.introduction
 - learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.understand-control-flow

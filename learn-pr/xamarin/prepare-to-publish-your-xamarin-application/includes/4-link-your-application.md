@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Mobile device users are sensitive about mobile applications and data usage. Even users who need to download new apps or update existing apps check the size of the application first. Xamarin provides tools to manage the final binary size of your app.
 
 In this unit, you'll learn how to use the Linker to manage the final binary size of your application.

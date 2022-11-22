@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Prepare JSON data for Mixed Reality experiences
   description: Convert CSV data from a web app to JSON data for a Mixed Reality experience.
   ms.date: 06/15/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

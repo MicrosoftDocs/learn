@@ -16,7 +16,7 @@ abstract: |
   - Review the two methods for backing up Azure VMs running SAP workloads.
 prerequisites: |
   Prior to taking this course, it is recommended that you have taken the Azure Administrator (AZ-103) or Azure Solutions Architect (AZ-300) exam, as well as SAP HANA or NetWeaver training.
-iconUrl: /learn/achievements/maintain-azure-sap-workloads.svg
+iconUrl: /training/achievements/maintain-azure-sap-workloads.svg
 levels:
 - advanced
 roles:

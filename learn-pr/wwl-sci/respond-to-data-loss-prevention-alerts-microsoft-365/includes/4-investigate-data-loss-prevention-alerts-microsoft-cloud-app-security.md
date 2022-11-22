@@ -1,4 +1,4 @@
-After a Defender for Cloud Apps File policy is created with a DLP-related configuration, file policy violation alerts are investigated in the Alerts area of Defender for Cloud Apps.
+When a Defender for Cloud Apps File policy is created with a DLP-related configuration, file policy violation alerts can be investigated in the Alerts area of Defender for Cloud Apps.
 
 To manage alerts:
 
@@ -6,7 +6,7 @@ From the Alerts page, select **Open** for the Resolution Status.
 
 This section of the dashboard provides full visibility into any suspicious activity or violation of your established policies. It can help you safeguard the security posture you defined for your cloud environment.
 
-![Defender for Cloud Apps Alerts Dashboard](../media/cloud-apps-dlp-alerts.png)
+:::image type="content" source="../media/cloud-apps-dlp-alerts.png" alt-text="Screen shot of Defender for Cloud Apps Alerts Dashboard":::
 
 For each alert, you need to investigate and determine the nature of the violation and the required response.
 
@@ -44,13 +44,13 @@ Anytime you dismiss an alert, it's important to submit feedback about why you're
 
   - Benign positive: The alert is accurate, but the activity is legitimate. You can dismiss the alert and set the reason to Actual severity is lower or Not interesting.
 
-  - False positive: The alert is inaccurate. Dismiss the alert and set the reason to Alert is not accurate.
+  - False positive: The alert is inaccurate. Dismiss the alert and set the reason to Alert isn't accurate.
 
 - If there's too much noise to determine the legitimacy and accuracy of an alert, dismiss it and set the reason to Too many similar alerts.
 
 - True positive: If the alert is related to an actual risky event that was either committed maliciously or unintentionally by an insider or outsider, you should set the event to Resolve after all appropriate action has been taken to remediate the event.
 
-Even though you are interested in File policy alerts for DLP, the alerts list will show many different alert types.  It is important to understand the different alert types because these non-DLP alerts could also provide insight into a security incident.
+Even though you're interested in File policy alerts for DLP, the alerts list will show many different alert types.  It's important to understand the different alert types because these non-DLP alerts could also provide insight into a security incident.
 
 The following table provides a list of the types of alerts that can be triggered and recommends ways you can resolve them.
 

@@ -20,7 +20,7 @@ abstract: |
   - Read from files
   - Write to files
   - Parse data in files
-iconUrl: /learn/achievements/nodejs-files.svg
+iconUrl: /training/achievements/nodejs-files.svg
 levels:
   - beginner
 roles:
@@ -29,6 +29,8 @@ roles:
 products:
   - azure
 prerequisites: None
+subjects:
+- development-tools
 units:
   - learn.azure.nodejs-files.1-introduction
   - learn.azure.nodejs-files.2-file-system

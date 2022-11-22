@@ -18,13 +18,16 @@ abstract: |
 prerequisites: |
   * You should be familiar with developer concepts and terminology.
   * An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /learn/achievements/cdn-develop-storage.svg
+iconUrl: /training/achievements/cdn-develop-storage.svg
 levels:
 - intermediate
 roles:
 - developer
 products:
 - azure-cdn
+subjects:
+- cache
+- cloud-computing
 units:
 - learn.wwl.develop-for-storage-cdns.introduction
 - learn.wwl.develop-for-storage-cdns.explore-azure-content-delivery-networks

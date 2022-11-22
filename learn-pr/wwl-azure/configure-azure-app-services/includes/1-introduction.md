@@ -2,13 +2,13 @@
 
 Imagine you're building a website for a new business, or you're running an existing web app on an aging on-premises server. Setting up a new server can be challenging. You need appropriate hardware, likely a server-level operating system, and a web hosting stack.
 
-And once it's running, you need to maintain the server. And what happens if your website traffic increases? You may need to invest in additional hardware.
+And once it's running, you need to maintain the server. And what happens if your website traffic increases? You may need to invest in extra hardware.
 
 Hosting your web application using Azure App Service makes deploying and managing a web app much easier when compared to managing a physical server.
 
 ## Skills measured
 
-Configuring the Azure App Service is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Configuring the Azure App Service is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Deploy and manage Azure compute resources (20–25%)
 
@@ -29,14 +29,14 @@ Monitor resources by using Azure Monitor
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
- -  Identify features and usage cases for the the Azure App Service.
+ -  Identify features and usage cases for the Azure App Service.
  -  Create an App Service.
  -  Configure deployment settings, specifically deployment slots.
  -  Secure the App Service.
  -  Configure custom domain names
- -  Backup the App Service.
+ -  Back up the App Service.
  -  Configure Application Insights.
 
 ## Prerequisites

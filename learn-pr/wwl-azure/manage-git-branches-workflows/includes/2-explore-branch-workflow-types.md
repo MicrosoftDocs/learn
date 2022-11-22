@@ -24,16 +24,6 @@ This encapsulation makes it easy for multiple developers to work on a particular
 
 It also means the main branch should never contain broken code, which is a huge advantage for continuous integration environments.
 
-## GitFlow workflow
-
-The GitFlow workflow was first published in a highly regarded 2010 blog post from [Vincent Driessen at nvie](https://nvie.com/posts/a-successful-git-branching-model/).
-
-The Gitflow Workflow defines a strict branching model designed around the project release.
-
-This workflow doesn't add any new concepts or commands beyond what's required for the Feature Branch Workflow.
-
-Instead, it assigns particular roles to different branches and defines how and when they should interact.
-
 ## Forking workflow
 
 The Forking Workflow is fundamentally different than the other workflows discussed in this tutorial.

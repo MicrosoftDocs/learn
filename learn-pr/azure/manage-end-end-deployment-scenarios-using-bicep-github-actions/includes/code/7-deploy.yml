@@ -16,12 +16,20 @@ on:
         required: true
         type: string
     secrets:
-      AZURE_CREDENTIALS:
+      AZURE_CLIENT_ID:
+        required: true
+      AZURE_TENANT_ID:
+        required: true
+      AZURE_SUBSCRIPTION_ID:
         required: true
       reviewApiKey:
         required: true
       sqlServerAdministratorLoginPassword:
         required: true
+
+permissions:
+  id-token: write
+  contents: read
 
 jobs:
   validate:
@@ -31,7 +39,9 @@ jobs:
      - uses: azure/login@v1
        name: Sign in to Azure
        with:
-         creds: ${{ secrets.AZURE_CREDENTIALS }}
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
      - if: inputs.environmentType != 'Production'
        uses: azure/arm-deploy@v1
        name: Run preflight validation
@@ -47,18 +57,19 @@ jobs:
            sqlServerAdministratorLoginPassword=${{ secrets.sqlServerAdministratorLoginPassword }}
          deploymentMode: Validate
      - if: inputs.environmentType == 'Production'
-       uses: Azure/cli@v1
+       uses: azure/arm-deploy@v1
        name: Run what-if
        with:
-         inlineScript: |
-             az deployment group what-if \
-               --resource-group ${{ inputs.resourceGroupName }} \
-               --template-file ./deploy/main.bicep \
-               --parameters environmentType=${{ inputs.environmentType }} \
-                            reviewApiUrl=${{ inputs.reviewApiUrl }} \
-                            reviewApiKey=${{ secrets.reviewApiKey }} \
-                            sqlServerAdministratorLogin=${{ inputs.sqlServerAdministratorLogin }} \
-                            sqlServerAdministratorLoginPassword=${{ secrets.sqlServerAdministratorLoginPassword }}
+         failOnStdErr: false
+         resourceGroupName: ${{ inputs.resourceGroupName }}
+         template: ./deploy/main.bicep
+         parameters: >
+           environmentType=${{ inputs.environmentType }}
+           reviewApiUrl=${{ inputs.reviewApiUrl }}
+           reviewApiKey=${{ secrets.reviewApiKey }}
+           sqlServerAdministratorLogin=${{ inputs.sqlServerAdministratorLogin }}
+           sqlServerAdministratorLoginPassword=${{ secrets.sqlServerAdministratorLoginPassword }}
+         additionalArguments: --what-if
  
   deploy:
     needs: validate
@@ -76,7 +87,9 @@ jobs:
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
     - uses: azure/arm-deploy@v1
       id: deploy
       name: Deploy Bicep file
@@ -101,7 +114,9 @@ jobs:
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
     - uses: azure/webapps-deploy@v2
       name: Deploy website
       with:
@@ -111,14 +126,16 @@ jobs:
   deploy-database:
     needs: deploy
     environment: ${{ inputs.environmentType }}
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/download-artifact@v2
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
-    - uses: azure/sql-action@v1
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+    - uses: azure/sql-action@v1.2
       name: Deploy DACPAC to database
       with:
         server-name: ${{ needs.deploy.outputs.sqlServerFullyQualifiedDomainName }}
@@ -130,15 +147,17 @@ jobs:
     - deploy
     - deploy-database
     environment: ${{ inputs.environmentType }}
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
     - if: inputs.environmentType != 'Production'
-      uses: azure/sql-action@v1
+      uses: azure/sql-action@v1.2
       name: Add test data to database
       with:
         server-name: ${{ needs.deploy.outputs.sqlServerFullyQualifiedDomainName }}
@@ -154,7 +173,9 @@ jobs:
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
     - if: inputs.environmentType != 'Production'
       uses: Azure/cli@v1
       name: Upload sample images

@@ -16,7 +16,7 @@ Device-to-cloud messaging with IoT Hub has the following characteristics:
  -  Device-to-cloud messages can be at most 256 KB, and can be grouped in batches to optimize sends. Batches can be at most 256 KB.
  -  IoT Hub does not allow arbitrary partitioning. Device-to-cloud messages are partitioned based on their originating **deviceId**.
  -  IoT Hub enables per-device authentication and access control.
- -  You can stamp messages with information that goes into the application properties. For more information, please see message enrichments.
+ -  You can stamp messages with information that goes into the application properties.
 
 ## System properties of D2C IoT hub messages
 
@@ -149,7 +149,7 @@ routing query
 :::row-end:::
 :::row:::
   :::column:::
-    dt-dataschema
+    dt-subject
   :::column-end:::
   :::column:::
     The name of the component that is sending the device-to-cloud messages.
@@ -158,7 +158,7 @@ routing query
     Yes
   :::column-end:::
   :::column:::
-    $dt-dataschema
+    $dt-subject
   :::column-end:::
 :::row-end:::
 
@@ -217,7 +217,7 @@ routing query
     Date and time of message expiration.
   :::column-end:::
   :::column:::
-    No
+    Yes
   :::column-end:::
 :::row-end:::
 :::row:::

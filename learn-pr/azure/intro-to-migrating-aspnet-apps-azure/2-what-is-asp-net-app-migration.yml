@@ -5,8 +5,8 @@ metadata:
   title: What is ASP.NET app migration?
   description: Content
   ms.date: 01/16/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: wadepickett
+  ms.author: wpickett
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

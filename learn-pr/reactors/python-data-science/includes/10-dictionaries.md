@@ -21,7 +21,7 @@ The output is:
 
 ### Try it yourself
 
-Try adding another country (or something else) to the capitals dictionary.
+Try adding another country/region (or something else) to the capitals dictionary.
 
 <br />
 

@@ -8,7 +8,7 @@ After you successfully deploy your production environment by using your Bicep co
 
 ## References
 
-- [Bicep on Microsoft Docs](/azure/azure-resource-manager/bicep/overview?azure-portal=true)
+- [Bicep documentation](/azure/azure-resource-manager/bicep/overview?azure-portal=true)
 - [Bicep on GitHub](https://github.com/Azure/bicep?azure-portal=true)
 - [Azure quickstart templates](https://azure.microsoft.com/resources/templates?azure-portal=true)
 - [Azure ARM template reference](/azure/templates/?azure-portal=true)

@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 For this exercise, you'll return to the **Astronomy** app. You'll update the detail view when the user selects a page from the drawer menu.
 
 ## Open the starter solution

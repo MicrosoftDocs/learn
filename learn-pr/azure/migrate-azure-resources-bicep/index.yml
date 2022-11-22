@@ -5,8 +5,8 @@ metadata:
   title: Migrate Azure resources and JSON ARM templates to use Bicep
   description: Learn how to migrate your Azure resources to Bicep.
   ms.date: 08/17/2021
-  author: joshuawaddell
-  ms.author: jowaddel
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Migrate Azure resources and JSON ARM templates to use Bicep
@@ -30,7 +30,7 @@ prerequisites: |
   - Either:
     - The latest [Azure CLI](/cli/azure/install-azure-cli/?azure-portal=true) tools, installed locally.  
     - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps/?azure-portal=true), installed locally.
-iconUrl: /learn/achievements/bicep/migrate-azure-resources-and-json-templates-bicep.svg
+iconUrl: /training/achievements/bicep/migrate-azure-resources-and-json-templates-bicep.svg
 levels:
 - intermediate
 roles:

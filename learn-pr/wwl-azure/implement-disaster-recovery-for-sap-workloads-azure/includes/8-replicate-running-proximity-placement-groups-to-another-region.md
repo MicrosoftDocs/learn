@@ -6,7 +6,7 @@ In a typical scenario, you may have your virtual machines running in a proximity
 
 ## Considerations
 
- -  The best effort will be to failover/failback the virtual machines into a proximity placement group. However, if VM is unable to be brought up inside Proximity Placement during failover/failback, then failover/failback will still happen, and virtual machines will be created outside of a proximity placement group.
- -  If an Availability Set is pinned to a Proximity Placement Group and during failover/failback VMs in the availability set have an allocation constraint, then the virtual machines will be created outside of both the availability set and proximity placement group.
- -  This functionality is currently available via PowerShell and supports any Azure VM using Managed Disks. Site Recovery for Proximity Placement Groups is not supported for unmanaged disks.
- -  Azure Site Recovery does not support failback from managed disks for Hyper-V to Azure scenarios. As such, failback from a Proximity Placement Group in Azure to Hyper-V is not supported.
+- The best effort will be to failover/failback the virtual machines into a proximity placement group. However, if VM is unable to be brought up inside Proximity Placement during failover/failback, then failover/failback will still happen, and virtual machines will be created outside of a proximity placement group.
+- If an Availability Set is pinned to a Proximity Placement Group and during failover/failback VMs in the availability set have an allocation constraint, then the virtual machines will be created outside of both the availability set and proximity placement group.
+- This functionality is currently available via PowerShell and supports any Azure VM using Managed Disks. Site Recovery for Proximity Placement Groups is not supported for unmanaged disks.
+- Azure Site Recovery does not support failback from managed disks for Hyper-V to Azure scenarios. As such, failback from a Proximity Placement Group in Azure to Hyper-V is not supported.

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.build-blazor-hybrid.bh-platform-features
+title: Access platform features in Blazor Hybrid
+metadata:
+  title: Access platform features in Blazor Hybrid
+  description: Learn how to access platform features of desktop and mobile in Blazor Hybrid apps.
+  ms.date: 07/22/2022
+  author: jamesmontemagno
+  ms.author: jamont
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/8-platform-features.md)]

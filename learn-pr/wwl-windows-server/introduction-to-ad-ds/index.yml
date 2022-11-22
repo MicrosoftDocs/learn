@@ -21,7 +21,7 @@ prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
   - Windows Server.
   - Core networking technologies.
-iconUrl: /learn/achievements/introduction-to-ad-ds.svg
+iconUrl: /training/achievements/introduction-to-ad-ds.svg
 levels:
 - intermediate
 roles:
@@ -30,6 +30,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- identity-access
 units:
 - learn.wwl.introduction-to-ad-ds.introduction
 - learn.wwl.introduction-to-ad-ds.define

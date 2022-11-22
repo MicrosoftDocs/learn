@@ -1,61 +1,55 @@
-Many organizations have an aging or under-engineered data platform strategy. There's been a significant trend of moving existing systems to the cloud, building new applications quickly with the cloud, and offloading some on-premises costs. You need a plan for how to move data workloads to the cloud. And you need to understand how to set up your organization for success. 
+Many organizations have an aging or under-engineered data platform strategy. There's been a significant trend of moving existing systems to the cloud, building new applications quickly with the cloud, and offloading some on-premises costs. Organizations are seeking to design a plan for how to move their data workloads to the cloud. Administrators want to understand how to set up their organizations for success. 
 
 ## Meet Tailwind Traders
 
-:::image type="content" source="../media/tailwind-traders.png" alt-text="The Tailwind Traders logo.":::
+:::image type="icon" source="../media/tailwind-traders.png":::
 
+Tailwind Traders is a fictitious home improvement retailer. The company operates retail hardware stores across the globe and online. It currently manages an on-premises datacenter that hosts the company's retail website. The datacenter also stores all of the data and streaming video for its applications. The on-premises SQL Server provides storage for customer data, order history, and product catalogs. SQL Server also serves as data storage for the internal-only training portal website. The company wants to effectively manage their database needs by migrating their infrastructure to the cloud. 
 
+As you work through this lesson, suppose you're the CTO for Tailwind Traders. You're tasked with finding a cost efficient database solution that provides low latency and high availability. In this module, you'll explore different storage solutions that solve different types of problems. You'll review storage options offered by Azure SQL Database, Azure SQL Managed Instance, and SQL Server in an Azure virtual machine. You'll discover how to work with data in Azure SQL Edge, Azure Table Storage, and Azure Cosmos DB. You'll also learn how to design your solution with data encryption. 
 
-Tailwind Traders is a fictitious home improvement retailer. It operates retail hardware stores across the globe and online. It currently manages an on-premises datacenter that hosts the company’s retail website. The datacenter also stores all of the data and streaming video for its applications. The on premises SQL server also provides storage for customer data, order history, and product catalogs, apart from data storage for your internal-only training portal website.
+### Learning objectives
 
-Tailwind Traders wants to effectively manage database needs by migrating it to the cloud. You are tasked with finding a cost efficient database solution that provides low latency and high availability. 
+In this module, you learn how to:
 
-The Tailwind Trader’s CTO asks, “What is our storage solution for relational data?” The CTO’s question is a reasonable and an area Azure Architects can help. In this module, we’ll explore different storage solutions that solve different types of problems. Storage solutions will include Azure SQL Database, Azure SQL Managed Instance, SQL Server in an Azure virtual machine, SQL edge, Azure table storage and Cosmos DB. You will also learn how to design your solution with data encryption. 
+- Design for Azure SQL Database.
 
- 
+- Design for Azure SQL Managed Instance.
 
-## Learning objectives
+- Design for SQL Server on Azure Virtual Machines.
 
-In this module, you’ll be able to:
+- Recommend a solution for database scalability.
 
-- Design for Azure SQL Database 
+- Recommend a solution for database availability.
 
-- Design for Azure SQL Managed Instance 
+- Design protection for data at rest, data in transmission, and data in use.
 
-- Design for SQL Server on Azure VM
-
-- Recommend a solution for Database Scalability
-
-- Design encryption for data at rest, data in transmission, and data in use
-
-- Design for Azure SQL Edge 
-
-- Design for Azure tables.
+- Design for Azure SQL Edge.
 
 - Design for Azure Cosmos DB.
 
- 
+- Design for Azure Table Storage.
 
-## Skills measured
+### Skills measured
 
-The content in the module will help you prepare for Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions. The module concepts are covered in:
+The content in this module helps you prepare for Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions. The module concepts are covered in:
 
-Design a Data Storage Solution for Relational Data
+Design data storage solutions
 
-- Recommend database service tier sizing
+- Design a data storage solution for relational data
 
-- Recommend a solution for database scalability
+   - Recommend database service tier sizing
 
-- Recommend a solution for encrypting data at rest, data in transmission, and data in use
+   - Recommend a solution for database scalability
 
-Recommend a Data Storage Solution
+   - Recommend a solution for encrypting data at rest, data in transmission, and data in use
+
+Recommend a data storage solution
 
 - Recommend a solution for storing relational data
 
- 
-
-## Prerequisites
-
-- Working experience with database solutions 
+### Prerequisites
 
 - Conceptual knowledge of SQL Server 
+
+- Working experience with database solutions

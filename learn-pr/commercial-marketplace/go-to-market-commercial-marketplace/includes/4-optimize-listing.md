@@ -6,7 +6,7 @@ In this unit, we'll look at some best practices to create your online store list
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IFjS]
 
-Your marketplace listing in the online stores has a lot of useful information for buyers. When you publish your offer in Partner Center you'll be required to provide certain information that will appear on your product listing in Azure Marketplace and Microsoft AppSource.
+Your marketplace listing in the online stores has a lot of useful information for buyers. When you publish your offer in Partner Center, you'll be required to provide certain information that will appear on your product listing in Azure Marketplace and Microsoft AppSource.
 
 Here's a list of some of the required information with suggestions to get the most out of your listing:
 
@@ -14,7 +14,7 @@ Here's a list of some of the required information with suggestions to get the mo
 
 - **Offer Description**: Write a description that positions your solution in a way that encourages customers to learn more and, eventually, purchase your offer. Good offer descriptions go beyond a list of tasks your solution is designed to complete. Communicate why your customers need it using scenarios they can understand.
 
-- **Category and Industry selections**: You’ll select product categories from a list in the “Properties” tab in Partner Center. Make sure you select the categories that match the kind of solution you’re offering to make it easier for customers to find your offer using search filters.
+- **Category and Industry selections**: You’ll select product categories from a list in the **Properties** tab in Partner Center. Make sure you select the categories that match the kind of solution you’re offering to make it easier for customers to find your offer using search filters.
 
    For Microsoft AppSource solutions and consulting services published to Azure Marketplace, you’ll also be able to identify industries that your solution was built to serve. Customers often filter by industry, so make sure you choose the most applicable options.
 
@@ -24,7 +24,7 @@ Here's a list of some of the required information with suggestions to get the mo
 
 In addition to the information you provide customers in the online stores, you can build optional features into your commercial marketplace offer to improve customer engagement.
 
-- **Free trials + test drives**: Many customers will want to try your product before they buy it, so we recommend building a trial experience into your listing. The commercial marketplace allows publishers to enable two different kinds of trial experiences—free software trials and test drives. When customers click “free trial” or “test drive” on your offer listing page, Microsoft will send leads to your CRM so you can follow up to continue the conversation.
+- **Free trials + test drives**: Many customers will want to try your product before they buy it, so we recommend building a trial experience into your listing. The commercial marketplace allows publishers to enable two different kinds of trial experiences: free software trials and test drives. When customers click “free trial” or “test drive” on your offer listing page, Microsoft will send leads to your CRM so you can follow up to continue the conversation.
 
 - **Plans and pricing**: Customers like options. You can give your customers choices by offering multiple plans of your listing, with each plan representing a different version of the same product. Plans can be split by tiers of functionality, capacity, seats of access, or other variables depending on your solution. We recommend that you give customers as much choice and flexibility as possible by offering multiple plans at different price points.
 

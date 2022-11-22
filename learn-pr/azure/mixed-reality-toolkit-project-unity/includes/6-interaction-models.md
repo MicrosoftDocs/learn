@@ -23,7 +23,7 @@ Some specific scenarios include:
 - Providing information workers 2D virtual screens with UI affordances to display and control content
 - Providing Firstline Workers tutorials and guides for factory assembly lines
 - Developing professional tools for assisting and educating medical professionals
-- Using 3D virtual objects to decorate the real world or to create a second world
+- Using 3D virtual objects to decorate the real world or to create another world
 - Creating location-based services and games using the real world as a background
 
 There are three hands and motion controllers modalities:

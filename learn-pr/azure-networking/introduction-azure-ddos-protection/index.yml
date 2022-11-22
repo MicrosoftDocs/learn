@@ -2,26 +2,26 @@
 uid: introduction-azure-ddos-protection
 metadata:
   title: "Introduction to Azure DDoS Protection"
-  description: Learn how to guard your Azure services from a denial of service attack using Azure DDoS Protection Standard.
-  ms.date: 02/10/2021
-  author: KumudD
-  ms.author: kumud
+  description: Learn how to guard your Azure services from a denial of service attack using Azure DDoS Protection.
+  ms.date: 10/12/2022
+  author: AbdullahBell
+  ms.author: abell
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Introduction to Azure DDoS Protection"
-summary: Learn how to guard your Azure services from a denial of service attack using Azure DDoS Protection Standard.
+summary: Learn how to guard your Azure services from a denial of service attack using Azure DDoS Protection.
 abstract: |
   After completing this module, you’ll be able to:
   - Explain Distributed Denial of Service (DDoS) attack types and the components of an effective DDoS response strategy. 
-  - Compare the differences between Azure DDoS Protection Basic and Standard. 
-  - Evaluate Azure DDoS Protection Standard, its features, and architecture options. 
+  - Compare the differences between Azure DDoS infrastructure protection and Azure DDoS Protection. 
+  - Evaluate Azure DDoS Protection, its features, and architecture options. 
   - Choose fundamental best practices to build DDoS-resilient services on Azure.  
 prerequisites: |
   To get the best learning experience from this module, you should have: 
   - Intermediate-level knowledge of networking concepts such as routing, hubs, switches, and DNS. 
   - Beginner-level knowledge of Azure networking services, including virtual networks, Express Route, site-to-site VPN, point-to-site VPN, Azure Firewall, and Azure Regions. 
   - Intermediate-level knowledge of security concepts such as the zero-trust security model, identity management, and common network attacks. 
-iconUrl: /learn/achievements/introduction-to-azure-ddos-protection.svg
+iconUrl: /training/achievements/introduction-to-azure-ddos-protection.svg
 ratingEnabled: true
 levels:
 - beginner
@@ -33,6 +33,8 @@ roles:
 - security-engineer
 products:
 - azure-ddos-protection
+subjects:
+- security
 units:
 - learn.introduction-azure-ddos-protection.1-introduction
 - learn.introduction-azure-ddos-protection.2-what-is-azure-ddos-protection

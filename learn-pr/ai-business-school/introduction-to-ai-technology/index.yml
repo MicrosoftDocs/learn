@@ -18,7 +18,7 @@ abstract: |
   - Understand how to use prebuilt AI with no machine learning expertise.
   - Understand the basics of machine learning and what kinds of business problems to apply it.
 prerequisites: None
-iconUrl: /learn/achievements/introduction-to-ai-technology.svg
+iconUrl: /training/achievements/introduction-to-ai-technology.svg
 levels: 
 - beginner
 roles: 
@@ -28,7 +28,9 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- artificial-intelligence
+units:
 - learn-wwl.intro-to-ai-technology.introduction
 - learn-wwl.intro-to-ai-technology.explore-state-of-the-art-ai-technology
 - learn-wwl.intro-to-ai-technology.introduction-to-ai-technology

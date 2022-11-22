@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.pool-stored-procedures-from-synapse-pipelines
-title: Use Azure Synapse serverless SQL pool stored procedures from Synapse Pipelines
+title: Include a data transformation stored procedure in a pipeline
 metadata:
-  title: Use Azure Synapse serverless SQL pool stored procedures from Synapse Pipelines
-  description: "Use Azure Synapse serverless SQL pool stored procedures from Synapse Pipelines"
-  ms.date: 01/05/2022
+  title: Include a data transformation stored procedure in a pipeline
+  description: "Include a data transformation stored procedure in a pipeline"
+  ms.date: 08/02/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial

@@ -6,7 +6,7 @@ Applying a policy to your resources with Azure Policy involves the following hig
 
 ## Policy definition
 
-A **policy definition** specifies the resources to be evaluated and the actions to take on them. For example, you could prevent VMs from deploying if exposed to a public IP address. You could also contain a specific hard disk from deploying VMs to control costs. Policies are defined in the JavaScript Object Notation (JSON) format.
+A **policy definition** specifies the resources to be evaluated and the actions to take on them. For example, you could prevent VMs from deploying if exposed to a public IP address. You could also contain a specific hard disk for deploying VMs to control costs. Policies are defined in the JavaScript Object Notation (JSON) format.
 
 The following example defines a policy that limits where you can deploy resources:
 
@@ -44,10 +44,12 @@ The following example defines a policy that limits where you can deploy resource
 
 The following list is example policy definitions:
 
- -  Allowed Storage Account SKUs. This policy defines conditions (or *rules*) that limit storage accounts to a set of specified sizes or Stock Keeping Units (SKUs). Its effect is to deny all storage accounts that don't adhere to defined SKU sizes.
- -  Allowed Resource Type. This policy definition has a set of conditions to specify the resource types deployed. Its effect is to deny all resources that are on the list.
- -  Allowed Locations. This policy restricts the locations where new resources can be deployed. It's used to enforce geographic compliance requirements.
- -  Allowed Virtual Machine SKUs. This policy specifies a set of VM SKUs that can be deployed. The policy effect is that VMs can't be deployed from unspecified SKUs.
+ -  Allowed Storage Account SKUs (Deny): Determines if a storage account being deployed is within a set of SKU sizes. Its effect is to deny all storage accounts that don't adhere to the set of defined SKU sizes.
+ -  Allowed Resource Type (Deny): Defines the resource types that you can deploy. Its effect is to deny all resources that aren't part of this defined list.
+ -  Allowed Locations (Deny): Restricts the available locations for new resources. Its effect is used to enforce your geo-compliance requirements.
+ -  Allowed Virtual Machine SKUs (Deny): Specify a set of virtual machine SKUs you can deploy.
+ -  Add a tag to resources (Modify): Applies a required tag and its default value if the deploy request does not specify it.
+ -  Not allowed resource types (Deny): Prevents a list of resource types from being deployed.
 
 ## Policy assignment
 

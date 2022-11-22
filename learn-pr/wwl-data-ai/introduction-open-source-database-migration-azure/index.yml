@@ -3,9 +3,9 @@ uid: learn.wwl.introduction-open-source-database-migration-azure
 metadata:
   title: Introduction to open-source database migration on Azure
   description: "Introduction to open-source database migration on Azure"
-  ms.date: 02/14/2022
+  ms.date: 11/07/2022
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to open-source database migration on Azure
@@ -18,15 +18,15 @@ abstract: |
 prerequisites: |
   - Knowledge of MySQL or PostgreSQL database management systems, including application development for these systems, administration, backup, and recovery techniques, such as import/export and backup/restore.
   - Knowledge of Azure fundamental concepts, and experience using the Azure portal.
-iconUrl: /learn/achievements/introduction-to-open-source-database-migration-on-azure.svg
+iconUrl: /training/achievements/introduction-to-open-source-database-migration-on-azure.svg
 levels:
 - intermediate
 roles:
 - data-engineer
 products:
 - azure
-- azure-database-mysql
-- azure-database-postgresql
+subjects:
+- database
 units:
 - learn.wwl.introduction-open-source-database-migration-azure.introduction
 - learn.wwl.introduction-open-source-database-migration-azure.mysql-postgresql-database-services-azure

@@ -24,7 +24,7 @@ prerequisites: |
   - Describe the features and capabilities of Azure IoT Edge.
   - Describe the Azure IoT Edge runtime support for custom code development, the IoT Edge coding tools, and the IoT Edge coding and debugging processes.
   - Describe the extended offline capabilities provided by Azure IoT Edge, local device storage using Azure Blob storage, and IoT Edge module access to local storage.
-iconUrl: /learn/achievements/iot-edge-offline-support.svg
+iconUrl: /training/achievements/iot-edge-offline-support.svg
 levels:
 - intermediate
 roles:
@@ -36,6 +36,8 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
+subjects:
+- iot
 units:
 - learn.wwl.explore-iot-edge-offline-support.introduction
 - learn.wwl.explore-iot-edge-offline-support.configure-iot-edge-gateway-for

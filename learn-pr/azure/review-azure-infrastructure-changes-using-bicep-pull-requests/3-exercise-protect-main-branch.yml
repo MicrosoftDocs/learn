@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Protect your main branch
   description: Add branch protection or branch policies to your repository's main branch.
   ms.date: 02/11/2022
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: repository-hosting-platform

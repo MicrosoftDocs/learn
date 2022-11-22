@@ -27,7 +27,7 @@ prerequisites: |
     - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azure-cli-latest)
   - A [GitHub](https://github.com?azure-portal=true) account
   - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
-iconUrl: /learn/achievements/deploy-templates-command-line-github-actions.svg
+iconUrl: /training/achievements/deploy-templates-command-line-github-actions.svg
 ratingEnabled: true
 levels:
 - intermediate
@@ -38,6 +38,8 @@ roles:
 products:
 - azure
 - vs-code
+subjects:
+- cloud-computing
 units:
 - learn.azure.deploy-templates-command-line-github-actions.1-introduction
 - learn.azure.deploy-templates-command-line-github-actions.2-single-deployment

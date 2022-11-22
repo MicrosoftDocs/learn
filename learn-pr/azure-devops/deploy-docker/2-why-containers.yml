@@ -4,9 +4,10 @@ title: Why are containers important?
 metadata:
   title: Why are containers important?
   description: Understand the benefits of Docker containers and when to use them.
-  ms.date: 06/23/2021
+  ms.date: 08/04/2022
   author: ramiMSFT
   ms.author: rabououn
+  ms.custom: devdivchpfy22
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

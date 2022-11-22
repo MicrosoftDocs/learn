@@ -31,7 +31,7 @@ prerequisites: |
   - Security-related technologies (firewalls, encryption, multi-factor authentication).
   - Windows PowerShell scripting.
   - Automation and monitoring.
-iconUrl: /learn/achievements/implement-a-hybrid-file-server-infrastructure.svg
+iconUrl: /training/achievements/implement-a-hybrid-file-server-infrastructure.svg
 levels:
 - intermediate
 roles:
@@ -44,6 +44,8 @@ products:
 - azure-portal
 - azure-storage
 - azure-virtual-machines
+subjects:
+- development-tools
 units:
 - learn.wwl.implement-hybrid-file-server-infrastructure.introduction
 - learn.wwl.implement-hybrid-file-server-infrastructure.describe-azure-file-services

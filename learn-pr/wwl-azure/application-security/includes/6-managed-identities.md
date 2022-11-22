@@ -39,7 +39,6 @@ The following diagram shows how managed service identities work with Azure virtu
 3.  Azure Resource Manager configures the identity on the VM by updating the Azure Instance Metadata Service identity endpoint with the service principal client ID and certificate.
 4.  After the VM has an identity, use the service principal information to grant the VM access to Azure resources. To call Azure Resource Manager, use role-based access control (RBAC) in Azure AD to assign the appropriate role to the VM service principal. To call Key Vault, grant your code access to the specific secret or key in Key Vault.
 5.  Your code that's running on the VM can request a token from the Azure Instance Metadata service endpoint, accessible only from within the VM: http://169.254.169.254/metadata/identity/oauth2/token
-    
      -  The resource parameter specifies the service to which the token is sent. To authenticate to Azure Resource Manager, use resource=https://management.azure.com/.
      -  API version parameter specifies the IMDS version, use api-version=2018-02-01 or greater.
 6.  A call is made to Azure AD to request an access token (as specified in step 5) by using the client ID and certificate configured in step 3. Azure AD returns a JSON Web Token (JWT) access token.

@@ -5,7 +5,7 @@ The interoperability between Apache Spark and SQL helps you achieve as follows:
 -	Enable fast, scalable loads for data transferring between SQL and Apache Spark databases.
 -	Make use of a shared Hive-compatible metadata system that enables you to define tables on files in the data lake such that it can be consumed by either Apache Spark or Hive.
 
-It raises the question of how SQL and Apache Spark integration works. That's where the Azure Synapse Apache Spark to Synapse SQL connector comes in to play.
+It raises the question of how SQL and Apache Spark integration works. That's where the Azure Synapse Apache Spark to Synapse SQL connector comes into play.
 
 The Azure Synapse Apache Spark to Synapse SQL connector is designed to efficiently transfer data between serverless Apache Spark pools and dedicated SQL pools in Azure Synapse. At the moment, the Azure Synapse Apache Spark to Synapse SQL connector works on dedicated SQL pools only, it doesn't work with serverless SQL pools.
 

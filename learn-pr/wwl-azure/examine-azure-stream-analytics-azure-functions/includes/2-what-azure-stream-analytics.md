@@ -25,7 +25,7 @@ Azure Stream Analytics is designed to be easy to use, flexible, reliable, and sc
 
 Azure Stream Analytics is easy to start. It only takes a few clicks to connect to multiple sources and sinks, creating an end-to-end pipeline. Stream Analytics can connect to Azure Event Hubs and Azure IoT Hub for streaming data ingestion, and Azure Blob storage to ingest historical data. Job input can also include static or slow-changing reference data from Azure Blob storage or SQL Database that you can join to streaming data to perform lookup operations.
 
-Stream Analytics can route job output to many storage systems such as Azure Blob storage, Azure SQL Database, Azure Data Lake Store, and Azure CosmosDB. You can run batch analytics on stored output with Azure HDInsight, or you can send the output to another service, like Event Hubs for consumption or Power BI for real-time visualization.
+Stream Analytics can route job output to many storage systems such as Azure Blob storage, Azure SQL Database, Azure Data Lake Store, and Azure Cosmos DB. You can run batch analytics on stored output with Azure HDInsight, or you can send the output to another service, like Event Hubs for consumption or Power BI for real-time visualization.
 
 ### Programmer productivity
 
@@ -44,4 +44,4 @@ Azure Stream Analytics is a fully managed serverless (PaaS) offering on Azure. Y
 Azure Stream Analytics can run in the cloud, for large-scale analytics, or run on IoT Edge for ultra-low latency analytics. Azure Stream Analytics uses the same query language on both cloud and the edge, enabling developers to build truly hybrid architectures for stream processing.
 
 > [!NOTE]
-> Additional service characteristics (such as cost, reliability, and performance) can be found here: [https://docs.microsoft.com/azure/stream-analytics/stream-analytics-introduction](/azure/stream-analytics/stream-analytics-introduction)
+> Additional service characteristics (such as cost, reliability, and performance) can be found here: [Welcome to Azure Stream Analytics](/azure/stream-analytics/stream-analytics-introduction)

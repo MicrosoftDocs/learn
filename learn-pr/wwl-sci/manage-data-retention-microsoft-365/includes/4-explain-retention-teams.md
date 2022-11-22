@@ -2,9 +2,13 @@ Teams is a solution with content stored across the different Microsoft 365 servi
 
 - **Items can be retained and deleted by using retention policies for Teams**: Chat messages and channel messages, including embedded images, tables, hypertext links and links to other Teams messages and files. Chat messages include all the names of the people in the chat, and channel messages include the team name and the message title (if supplied).
 
-- **Teams messages in private channels are not included**, and reactions from others in the form of emoticons are not included.
+- **Teams messages in private channels are not included in retention policies for Teams channels**, if you want to retain private channel messages you need to create a designated retention policy for private channel messages only. You can't create a retention policy for both regular and private channel messages.
+
+- **Reactions from others in the form of emoticons are not included.**
 
 - **Emails and files that you use with Teams are not included in retention policies for Teams**. These items require a separate retention policy configured for Exchange locations to protect the group mailbox.
+
+- **Shared channels are only subject to retention in the originating tenant**. Messages in shared channels are stored in a hidden folder in a mailbox that is created in the originator tenant of the channel specifically for this purpose. Unlike private channel messages these shared channels inherit retention settings from the parent channel and don't need designated retention policies.
 
 Retention policies with Teams locations can retain chats and channel messages in Teams, which are ingested from the original storage location in an Azure Cosmos DB into a hidden folder in the group mailbox. To retain other email messages sent to a Teams retention policy with Exchange locations and the group mailbox in scope is required.
 
@@ -13,7 +17,7 @@ Retention policies with Teams locations can retain chats and channel messages in
 
 ## Teams retention functionality
 
-After a retention policy is configured for chat and channel messages, a timer job from the Exchange service periodically evaluates items in the hidden folder where these Teams messages are stored. The timer job takes up to seven days to run. When these items have expired their retention period, they are moved to the SubstrateHolds folder—another hidden folder that's in every user or group mailbox to store "soft-deleted" items before they are permanently deleted.
+After a retention policy is configured for chat and channel messages, a timer job from the Exchange service periodically evaluates items in the hidden folder where these Teams messages are stored. The timer job takes up to seven days to run. When these items have expired their retention period, they're moved to the SubstrateHolds folder—another hidden folder that's in every user or group mailbox to store "soft-deleted" items before they're permanently deleted.
 
 After a retention policy is configured for chat and channel messages, the paths the content takes depend on whether the retention policy is to **retain and then delete**, to **retain only**, or **delete only**.
 
@@ -23,9 +27,11 @@ The following table provides an overview of the different ways content is held o
 
 | Step| (1) **If a chat or channel message is edited or deleted** by the user during the retention period…| (2) **If a chat or channel message is not deleted** during the retention period…|
 | :--- | :--- | :--- |
-| **retain and delete**| The original message is copied (if edited) or moved (if deleted) to the SubstrateHolds folder within 21 days. The message is stored there until the retention period expires and then the message is permanently deleted within 24 hours.| The message is moved to the SubstrateHolds folder after the retention period expires. This action takes up to 7 days from the expiry date. When the message is in the SubstrateHolds folder, it is then permanently deleted within 24 hours.|
-| **retain-only**| A copy of the original message is created in the SubstrateHolds folder within 21 days, and retained there until the retention period expires. Then the message is permanently deleted from the SubstrateHolds folder within 24 hours.| Nothing happens before and after the retention period; the message remains in its original location.|
-| **delete-only**| At the end of the retention period, the message is moved to the SubstrateHolds folder. This action takes up to seven days from the expiry date. Then the message is permanently deleted from the SubstrateHolds folder within 24 hours.| The item is moved to the SubstrateHolds folder within 21 days where it is then permanently deleted within 24 hours.|
+| **retain and delete**| The original message is copied (if edited) or moved (if deleted) to the SubstrateHolds folder. The message is stored there for at least one day. When the retention period expires, the message is permanently deleted the next time the timer job runs.| The message is moved to the SubstrateHolds folder within seven days after the retention period expires and stays there for at least one day, and then the message is permanently deleted the next time the timer job runs.|
+| **retain-only**| A copy of the original message is created in the SubstrateHolds folder and retained there for at least one day. If the retention policy is configured to retain forever, the item remains in the SubstrateHolds folder. If the retention policy has and end date and expires, the message is permanently deleted the next time the timer job runs. | Nothing happens before and after the retention period; the message remains in its original location.|
+| **delete-only**| At the end of the retention period, the message is moved to the SubstrateHolds folder. The message is retained there for at least one day and is permanently deleted the next time the timer job runs.| The message is moved to the SubstrateHolds folder within seven days after the retention period expires and stays there for at least one day, and then the message is permanently deleted the next time the timer job runs.|
+
+After a retention policy is configured for chat and channel messages, a timer job from the Exchange service periodically evaluates items in the hidden mailbox folder where these Teams messages are stored. The timer job typically takes 1-7 days to run.
 
 ## Important considerations
 
@@ -33,13 +39,13 @@ Because the Teams storage locations are complex, there are several other conside
 
 - Channel meeting messages are stored the same way as channel messages and Teams channel messages location is required for retention.
 
-- Impromptu meeting messages are stored in the same way as group chat messages why the Teams chats location is required for retention.
+- Impromptu and scheduled meeting messages are stored in the same way as group chat messages, so for this data, select the Teams chats location when you configure your retention policy.
 
-- For guest users in a meeting that your organization hosts, a shadow mailbox exists in your tenant that can be subject to a retention policy for Teams. Messages from the meeting are stored in both the users' and the shadow mailbox.
+- For guest users in a meeting that your organization hosts, any messages from the meeting are stored in both your users mailbox and a shadow mailbox that's granted to the guest account. Retention policies aren't supported for shadow mailboxes but they can be reported as included in a "organization-wide" retention policy. 
 
-- For external users joining by using an account from another Microsoft 365 organization, your retention policies can't delete messages for this user because they are stored in that user's mailbox in another tenant.
+- For external users joining by using an account from another Microsoft 365 organization, your retention policies can't delete messages for this user because they're stored in that user's mailbox in another tenant.
 
-It is also important to know what happens to the data of users, when they leave the organization:
+It's also important to know what happens to the data of users, when they leave the organization:
 
 | Documents and Files| Chat messages| Channel messages|
 | :--- | :--- | :--- |

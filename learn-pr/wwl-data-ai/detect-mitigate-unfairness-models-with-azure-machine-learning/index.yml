@@ -17,13 +17,15 @@ abstract: |
 prerequisites: |
   - Knowledge of Python
   - Experience of training models using the Azure Machine Learning SDK
-iconUrl: /learn/achievements/detect-and-mitigate-unfairness-in-models-with-azure-machine-learning.svg
+iconUrl: /training/achievements/detect-and-mitigate-unfairness-in-models-with-azure-machine-learning.svg
 levels:
 - intermediate
 roles:
 - data-scientist
 products:
 - azure-machine-learning
+subjects:
+- machine-learning
 units:
 - learn.wwl.detect-mitigate-unfairness-models-with-azure-machine-learning.introduction
 - learn.wwl.detect-mitigate-unfairness-models-with-azure-machine-learning.consider-model-fairness

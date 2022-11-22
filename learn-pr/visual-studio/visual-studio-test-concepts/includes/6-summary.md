@@ -14,4 +14,4 @@ The testing schools of thought recommend different styles of testing that can dr
 ## References
 
 * [Unit testing C# with MSTest and .NET](/dotnet/core/testing/unit-testing-with-mstest)
-* [Run tests in Azure DevOps](/learn/modules/run-functional-tests-azure-pipelines)
+* [Run tests in Azure DevOps](/training/modules/run-functional-tests-azure-pipelines)

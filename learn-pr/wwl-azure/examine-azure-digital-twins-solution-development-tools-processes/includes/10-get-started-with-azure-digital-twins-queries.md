@@ -288,5 +288,5 @@ This section describes limitations of the query language.
 
 For more Azure Digital Twins query details and examples, see the following articles:
 
- -  Query API: [https://docs.microsoft.com/rest/api/digital-twins/dataplane/query/querytwins](/rest/api/digital-twins/dataplane/query/querytwins)
- -  Query the twin graph: [https://docs.microsoft.com/azure/digital-twins/how-to-query-graph](/azure/digital-twins/how-to-query-graph)
+ -  Query API: [Query - Query Twins](/rest/api/digital-twins/dataplane/query/querytwins)
+ -  Query the twin graph: [Query the Azure Digital Twins twin graph](/azure/digital-twins/how-to-query-graph)

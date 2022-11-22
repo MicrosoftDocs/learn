@@ -346,6 +346,7 @@ This is as clean as it gets.
 If all went well, you should be able to run the app at this point, and verify that it works exactly as it did earlier. Congratulations!
 
 ### Summary
+
 So, what did we achieve with all this work? While the app works the same as before, we've arrived at a scalable, sustainable, and testable architecture.
 
 The `MainPage` class is now very simple. It contains a reference to the logic, and simply receives and forwards a button click event. All the data flow between the logic and the UI happens through data binding, which is fast, robust, and proven.
@@ -354,7 +355,7 @@ The `MainPageLogic` class is now UI-agnostic. It doesn't matter whether the cloc
 
 For these reasons, as well as others, it's a good practice to only have UI-related features in the page's codebehind, and separate the logic in a different class. More complicated apps may also have animation control and other, concrete UI-related features. As you work with more complicated apps, you'll appreciate the separation of UI and logic that we've created in this lesson.
 
-You can re-use the `ObservableObject` class in your own project. After a bit of practice, you'll find that it is actually faster and easier to approach problems this way. Or take advantage of an existing, well established library, such as [MVVM Light](http://www.mvvmlight.net/), that follows and builds upon the principles you learned in this module.
+You can re-use the `ObservableObject` class in your own project. After a bit of practice, you'll find that it is actually faster and easier to approach problems this way. Or take advantage of an existing, well established library, such as the [MVVM Toolkit](/windows/communitytoolkit/mvvm/introduction/), that follows and builds upon the principles you learned in this module.
 
 ::: zone-end
 
@@ -378,7 +379,7 @@ To raise the `PropertyChanged` event, we've created a convenience function in th
 _timer.Tick += (sender, o) => RaisePropertyChanged(nameof(CurrentTime));
 ```
 
-The `Clock` class has already became simpler. But let's see what we can do with the more complex `MainWindowDataContext` class.
+The `Clock` class already became simpler. But let's see what we can do with the more complex `MainWindowDataContext` class.
 
 #### 6. Modify the `MainWindowDataContext` class to take advantage of `ObservableObject`
 
@@ -424,6 +425,7 @@ Not bad!
 If all went well, you should be able to run the app at this point, and verify that it works exactly as it did earlier. Congratulations!
 
 ### Summary
+
 So, what did we achieve with all this work? While the app works the same as before, we've arrived at a scalable, sustainable, and testable architecture.
 
 The `MainWindow` class is very simple. It contains a reference to the logic, and simply receives and forwards a button click event. All the data flow between the logic and the UI happens through data binding, which is fast, robust, and proven.
@@ -432,6 +434,6 @@ The `MainWindowDataContext` class is now UI-agnostic. It doesn't matter whether 
 
 For these reasons, as well as others, it's a good practice to only have UI-related features in the page's codebehind, and separate the logic in a different class. More complicated apps may also have animation control and other, concrete UI-related features. As you work with more complicated apps, you'll appreciate the separation of UI and logic that we've created in this lesson.
 
-You can re-use the `ObservableObject` class in your own project. After a bit of practice, you'll find that it is actually faster and easier to approach problems this way. Or take advantage of an existing, well established library, such as [MVVM Light](http://www.mvvmlight.net/), that follows and builds upon the principles you learned in this module.
+You can re-use the `ObservableObject` class in your own project. After a bit of practice, you'll find that it is actually faster and easier to approach problems this way. Or take advantage of an existing, well established library, such as the [MVVM Toolkit](/windows/communitytoolkit/mvvm/introduction), that follows and builds upon the principles you learned in this module.
 
 ::: zone-end

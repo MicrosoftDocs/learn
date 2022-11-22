@@ -7,8 +7,8 @@ metadata:
   title: Exercise - Create a registry
   description: Create an Azure container registry and publish a Bicep module to it, and then consume the module in a deployment.
   ms.date: 02/10/2022
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface

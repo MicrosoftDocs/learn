@@ -22,8 +22,8 @@ Billing admins can view all reservations from **Cost Management + Billing** > **
 
 You can get the same data that we covered in the preceding sections using APIs:
 
-- Use the Reservation Summaries API to get reservation utilization percentage data at https://docs.microsoft.com/rest/api/consumption/reservationssummaries.
-- Use Reservation Details API to determine which resources got a reservation discount and for what quantity at https://docs.microsoft.com/rest/api/consumption/reservationsdetails/list.
+- Use the Reservation Summaries API to get reservation utilization percentage data at [Reservations Summaries](/rest/api/consumption/reservationssummaries).
+- Use Reservation Details API to determine which resources got a reservation discount and for what quantity at [Reservations Details - List](/rest/api/consumption/reservationsdetails/list).
 
 ## Make optimizations with exchanges or scope changes
 

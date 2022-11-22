@@ -6,10 +6,10 @@ Implementing the equivalent functionality on your own, without the abstraction l
 
 ## References
 
-* [Azure CycleCloud Documentation](/azure/cyclecloud/) 
-* [Azure CycleCloud](https://azure.microsoft.com/features/azure-cyclecloud/)
+* [Azure CycleCloud documentation](/azure/cyclecloud/)
+* [Azure CycleCloud product information](https://azure.microsoft.com/features/azure-cyclecloud/)
 * [What is Azure CycleCloud?](/azure/cyclecloud/overview)
-* [Quickstart - Install CycleCloud using the Marketplace image](/azure/cyclecloud/qs-install-marketplace)
+* [Quickstart: Install CycleCloud using the Marketplace image](/azure/cyclecloud/qs-install-marketplace)
 * [Azure CycleCloud Tutorial 1: Create and Run a Simple HPC Cluster](/azure/cyclecloud/tutorials/create-cluster)
 * [CycleCloud: Core Concepts](/azure/cyclecloud/concepts/core)
 * [CycleCloud Scheduling and Autoscaling Concepts](/azure/cyclecloud/concepts/scheduling)

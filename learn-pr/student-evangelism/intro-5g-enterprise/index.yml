@@ -25,7 +25,7 @@ prerequisites: |
   - Azure Stack hardware and services (Azure Stack Edge, Azure Stack HCI)
   - Application services (Azure IoT Edge Runtime, Azure IoT Hub, Azure IoT Central, Azure Digital Twins)
 
-iconUrl: /learn/achievements/student-evangelism/introduction-5g-services-on-azure.svg
+iconUrl: /training/achievements/student-evangelism/introduction-5g-services-on-azure.svg
 
 badge:
   uid: learn.oxford.introduction-5g-services-on-azure.badge
@@ -35,6 +35,8 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-edge
+subjects:
+- infrastructure
 units:
 - learn.oxford.intro-5g-azure.introduction
 - learn.oxford.intro-5g-azure.what-azure-private-multi-access-5g
@@ -42,5 +44,3 @@ units:
 - learn.oxford.intro-5g-azure.when-use-azure-private-multi-access-5g
 - learn.oxford.intro-5g-azure.knowledge-check
 - learn.oxford.intro-5g-azure.summary
-
-

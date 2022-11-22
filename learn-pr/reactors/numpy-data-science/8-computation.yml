@@ -5,8 +5,8 @@ metadata:
   title: 'Efficient computation on NumPy arrays: Universal functions'
   description: Get a basic understanding of what NumPy universal functions are and how (and why) to use them.
   ms.date: 04/22/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen

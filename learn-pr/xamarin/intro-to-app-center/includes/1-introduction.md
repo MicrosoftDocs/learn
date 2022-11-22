@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Delivering a quality mobile app is challenging. You not only need to know how your app is being used, you also need to be able to find and fix customer issues. When you fix those issues, you need to test and publish your app quickly to get the latest release to customers as soon as possible. How do you transition from code change to test to users quickly and automatically? You need to use a continuous integration (CI) and continuous delivery (CD) system (CI/CD system).
 
 Suppose you work at an athletic shoe company. You sell your shoes through a mobile shopping app. A recent update is preventing customers from placing orders. If you had a CI system that executes tests to validate customer use cases, you might have caught this issue before it was published to the app store.

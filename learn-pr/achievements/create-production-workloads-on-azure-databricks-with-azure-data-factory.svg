@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="101px" height="101px" viewBox="0 0 101 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Data engineering with Azure Databricks/create-production-workloads-on-azure-databricks-with-azure-data-factory</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M47.1698113,0 C73.2209788,0 94.3396226,21.1186439 94.3396226,47.1698113 C94.3396226,73.2209788 73.2209788,94.3396226 47.1698113,94.3396226 C21.1186439,94.3396226 0,73.2209788 0,47.1698113 C0,21.1186439 21.1186439,0 47.1698113,0 Z M47.1698113,3.77358491 C23.2027373,3.77358491 3.77358491,23.2027373 3.77358491,47.1698113 C3.77358491,71.1368854 23.2027373,90.5660377 47.1698113,90.5660377 C71.1368854,90.5660377 90.5660377,71.1368854 90.5660377,47.1698113 C90.5660377,23.2027373 71.1368854,3.77358491 47.1698113,3.77358491 Z" id="path-6"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#566D86" offset="0%"></stop>
+            <stop stop-color="#2B3B4E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-9">
+            <stop stop-color="#618197" offset="0%"></stop>
+            <stop stop-color="#324A5E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-10">
+            <stop stop-color="#566D86" offset="0%"></stop>
+            <stop stop-color="#2B3B4E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-11">
+            <stop stop-color="#618197" offset="0%"></stop>
+            <stop stop-color="#324A5E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-12">
+            <stop stop-color="#618197" offset="0%"></stop>
+            <stop stop-color="#324A5E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-13">
+            <stop stop-color="#618197" offset="0%"></stop>
+            <stop stop-color="#324A5E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-14">
+            <stop stop-color="#626F7B" offset="0%"></stop>
+            <stop stop-color="#8C8F99" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-15">
+            <stop stop-color="#626F7B" offset="0%"></stop>
+            <stop stop-color="#8C8F99" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-9.93901477%" x2="50%" y2="92.7254775%" id="linearGradient-16">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#EFEFEF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-34.8%" y="-31.9%" width="169.6%" height="167.6%" filterUnits="objectBoundingBox" id="filter-17">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.100883152 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-18">
+            <stop stop-color="#FB9449" offset="0%"></stop>
+            <stop stop-color="#F65B23" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-19">
+            <stop stop-color="#FB9449" offset="0%"></stop>
+            <stop stop-color="#F65B23" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Data-engineering-with-Azure-Databricks" transform="translate(-160.000000, -890.000000)">
+            <g id="Data-engineering-with-Azure-Databricks/create-production-workloads-on-azure-databricks-with-azure-data-factory" transform="translate(160.000000, 890.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Azure/BG-Solid-Badges" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Azure/Border" mask="url(#mask-7)" fill="#27C0F5">
+                            <rect id="Rectangle" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Manufacturing" transform="translate(18.000000, 22.000000)" fill-rule="nonzero">
+                    <path d="M33.1026369,26.7781774 L27.8904665,22.2682109 L27.8904665,17.0702835 C27.8904665,16.6880829 27.6048682,16.3058824 27.1764706,16.3058824 C26.8194726,16.3058824 26.4624746,16.6116428 26.4624746,17.0702835 L26.4624746,22.2682109 L21.2503043,26.7781774 C21.0361055,26.9310576 20.9647059,27.1603779 20.9647059,27.3896983 L20.9647059,30.7530631 C20.9647059,30.9059433 21.1075051,31.0588235 21.2503043,31.0588235 L22.6068966,31.0588235 L22.6068966,29.5300213 L22.3926978,29.5300213 L22.3926978,27.7718988 L27.1764706,23.6441329 L31.9602434,27.7718988 L31.9602434,29.5300213 L31.7460446,29.5300213 L31.7460446,31.0588235 L33.1026369,31.0588235 C33.2454361,31.0588235 33.3882353,30.9059433 33.3882353,30.7530631 L33.3882353,27.3896983 C33.3882353,27.1603779 33.2454361,26.9310576 33.1026369,26.7781774 Z" id="Path" fill="url(#linearGradient-8)"></path>
+                    <path d="M60.547903,53.5764706 L21.7564993,53.5764706 C18.7126483,53.5764706 16.3058824,51.4588235 16.3058824,48.9176471 L16.3058824,48.9176471 C16.3058824,46.3159664 18.7834355,44.2588235 21.7564993,44.2588235 L60.547903,44.2588235 C63.591754,44.2588235 65.9985199,46.3764706 65.9985199,48.9176471 L65.9985199,48.9176471 C66.0693071,51.4588235 63.591754,53.5764706 60.547903,53.5764706 Z" id="Path" fill="url(#linearGradient-9)"></path>
+                    <g id="Group" transform="translate(18.635294, 45.811765)">
+                        <ellipse id="Oval" fill="#2B3B4E" cx="42.2861517" cy="2.65766504" rx="2.60445074" ry="2.65766504"></ellipse>
+                        <ellipse id="Oval" fill="#2B3B4E" cx="2.64062367" cy="2.65766504" rx="2.60445074" ry="2.65766504"></ellipse>
+                        <ellipse id="Oval" fill="#2B3B4E" cx="12.5520057" cy="2.65766504" rx="2.60445074" ry="2.65766504"></ellipse>
+                        <ellipse id="Oval" fill="#2B3B4E" cx="22.4633877" cy="2.65766504" rx="2.60445074" ry="2.65766504"></ellipse>
+                        <ellipse id="Oval" fill="#2B3B4E" cx="32.3747697" cy="2.65766504" rx="2.60445074" ry="2.65766504"></ellipse>
+                        <rect id="Rectangle" fill="url(#linearGradient-10)" x="2.71296953" y="7.4377709" width="39.5731821" height="2.95296115"></rect>
+                    </g>
+                    <path d="M28.7294118,9.31764706 L28.7294118,17.2376471 C28.7294118,17.8588235 28.4798319,18.4023529 28.0638655,18.7905882 C27.6478992,19.1788235 27.0655462,19.4117647 26.4,19.4117647 C25.0689076,19.4117647 24.0705882,18.4023529 24.0705882,17.2376471 L24.0705882,9.31764706 C24.8193277,9.62823529 25.5680672,9.86117647 26.4,9.86117647 C27.2319328,9.86117647 27.9806723,9.62823529 28.7294118,9.31764706 Z" id="Path" fill="url(#linearGradient-11)"></path>
+                    <g id="Group" transform="translate(3.105882, 3.105882)">
+                        <path d="M5.05649258,6.56635294 L5.05649258,32.8317647 C4.30179219,32.4649293 3.47162177,32.3181952 2.56598131,32.3181952 C1.66034085,32.3181952 0.830170423,32.5382964 0.0754700385,32.8317647 L0.0754700385,6.56635294 C0.830170423,7.00655537 1.66034085,7.22665659 2.56598131,7.22665659 C3.47162177,7.22665659 4.30179219,7.00655537 5.05649258,6.56635294 Z" id="Path" fill="url(#linearGradient-12)"></path>
+                        <path d="M19.3957999,2.45779691 C19.3957999,3.33820177 19.62221,4.21860664 20.0750302,4.87891029 L6.79230346,4.87891029 C7.24512369,4.14523957 7.47153381,3.33820177 7.47153381,2.45779691 C7.47153381,1.57739205 7.24512369,0.770354256 6.79230346,0.036683536 L20.1505003,0.036683536 C19.62221,0.770354256 19.3957999,1.57739205 19.3957999,2.45779691 Z" id="Path" fill="url(#linearGradient-13)"></path>
+                    </g>
+                    <path d="M10.8705882,55.9058824 L0,55.9058824 L0,40.5554536 C0,37.4285145 2.4080417,34.9411765 5.43529412,34.9411765 L5.43529412,34.9411765 C8.46254654,34.9411765 10.8705882,37.4285145 10.8705882,40.5554536 L10.8705882,55.9058824 Z" id="Path" fill="url(#linearGradient-14)"></path>
+                    <circle id="Oval" fill="url(#linearGradient-15)" cx="6.21176471" cy="5.43529412" r="5.43529412"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-16)" cx="6.21176471" cy="5.43529412" r="3.10588235"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-15)" cx="27.1764706" cy="5.43529412" r="5.43529412"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-16)" cx="27.1764706" cy="5.43529412" r="3.10588235"></circle>
+                </g>
+                <g id="Databrick" filter="url(#filter-17)" transform="translate(39.500000, 48.000000)" fill-rule="nonzero">
+                    <g id="Lower" transform="translate(0.858209, 4.428358)">
+                        <polygon id="Rectangle-8" fill="#E63118" points="9.7429816 2.65734827 9.74371442 2.65695919 9.74371442 4.44282268 4.87185721 7.10057073 4.87185721 5.3154961 9.74371442 2.65774805"></polygon>
+                        <polygon id="Rectangle-8" fill="#CC271F" points="0 2.65774805 4.87185721 5.3154961 4.87185721 7.10057073 0 4.44282268 0 2.65729653"></polygon>
+                        <polygon id="Rectangle-8" fill="url(#linearGradient-18)" points="0 2.65774805 4.87185721 0 9.74371442 2.65774805 4.87185721 5.3154961"></polygon>
+                    </g>
+                    <g id="Top" transform="translate(0.858209, 0.858209)">
+                        <polygon id="Shadow" fill-opacity="0.093919837" fill="#000000" points="1.01415901e-16 4.71744954 0 3.90542801 9.74371442 3.90542801 9.74371442 4.71744954 4.87185721 7.37519759"></polygon>
+                        <polygon id="Rectangle-8" fill="#E63118" points="9.7429816 2.65734827 9.74371442 2.65695919 9.74371442 4.44282268 4.87185721 7.10057073 4.87185721 5.3154961 9.74371442 2.65774805"></polygon>
+                        <polygon id="Rectangle-8" fill="#CC271F" points="0 2.65774805 4.87185721 5.3154961 4.87185721 7.10057073 0 4.44282268 0 2.65729653"></polygon>
+                        <polygon id="Rectangle-8" fill="url(#linearGradient-18)" points="0 2.65774805 4.87185721 0 9.74371442 2.65774805 4.87185721 5.3154961"></polygon>
+                    </g>
+                </g>
+                <g id="Databrick" transform="translate(52.000000, 57.750000)" fill-rule="nonzero">
+                    <g id="Lower" transform="translate(0.820896, 4.235821)">
+                        <polygon id="Rectangle-8" fill="#E63118" points="9.31937371 2.54181139 9.32007466 2.54143923 9.32007466 4.24965647 4.66003733 6.79185026 4.66003733 5.08438757 9.32007466 2.54219379"></polygon>
+                        <polygon id="Rectangle-8" fill="#CC271F" points="0 2.54219379 4.66003733 5.08438757 4.66003733 6.79185026 0 4.24965647 0 2.54176189"></polygon>
+                        <polygon id="Rectangle-8" fill="url(#linearGradient-19)" points="0 2.54219379 4.66003733 0 9.32007466 2.54219379 4.66003733 5.08438757"></polygon>
+                    </g>
+                    <g id="Top" transform="translate(0.820896, 0.820896)">
+                        <polygon id="Shadow" fill-opacity="0.093919837" fill="#000000" points="9.70065139e-17 4.51234304 0 3.73562679 9.32007466 3.73562679 9.32007466 4.51234304 4.66003733 7.05453683"></polygon>
+                        <polygon id="Rectangle-8" fill="#E63118" points="9.31937371 2.54181139 9.32007466 2.54143923 9.32007466 4.24965647 4.66003733 6.79185026 4.66003733 5.08438757 9.32007466 2.54219379"></polygon>
+                        <polygon id="Rectangle-8" fill="#CC271F" points="0 2.54219379 4.66003733 5.08438757 4.66003733 6.79185026 0 4.24965647 0 2.54176189"></polygon>
+                        <polygon id="Rectangle-8" fill="url(#linearGradient-19)" points="0 2.54219379 4.66003733 0 9.32007466 2.54219379 4.66003733 5.08438757"></polygon>
+                    </g>
+                </g>
+                <g id="Databrick" transform="translate(66.000000, 57.750000)" fill-rule="nonzero">
+                    <g id="Lower" transform="translate(0.820896, 4.235821)">
+                        <polygon id="Rectangle-8" fill="#E63118" points="9.31937371 2.54181139 9.32007466 2.54143923 9.32007466 4.24965647 4.66003733 6.79185026 4.66003733 5.08438757 9.32007466 2.54219379"></polygon>
+                        <polygon id="Rectangle-8" fill="#CC271F" points="0 2.54219379 4.66003733 5.08438757 4.66003733 6.79185026 0 4.24965647 0 2.54176189"></polygon>
+                        <polygon id="Rectangle-8" fill="url(#linearGradient-19)" points="0 2.54219379 4.66003733 0 9.32007466 2.54219379 4.66003733 5.08438757"></polygon>
+                    </g>
+                    <g id="Top" transform="translate(0.820896, 0.820896)">
+                        <polygon id="Shadow" fill-opacity="0.093919837" fill="#000000" points="9.70065139e-17 4.51234304 0 3.73562679 9.32007466 3.73562679 9.32007466 4.51234304 4.66003733 7.05453683"></polygon>
+                        <polygon id="Rectangle-8" fill="#E63118" points="9.31937371 2.54181139 9.32007466 2.54143923 9.32007466 4.24965647 4.66003733 6.79185026 4.66003733 5.08438757 9.32007466 2.54219379"></polygon>
+                        <polygon id="Rectangle-8" fill="#CC271F" points="0 2.54219379 4.66003733 5.08438757 4.66003733 6.79185026 0 4.24965647 0 2.54176189"></polygon>
+                        <polygon id="Rectangle-8" fill="url(#linearGradient-19)" points="0 2.54219379 4.66003733 0 9.32007466 2.54219379 4.66003733 5.08438757"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

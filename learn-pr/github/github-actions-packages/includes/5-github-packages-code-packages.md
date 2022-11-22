@@ -1,11 +1,10 @@
 In the previous unit, you saw how to use GitHub Actions to build and publish container images.
 
-In this unit, we'll take a look at the other packages supported by GitHub Packages.
-GitHub Packages work with your current project's ecosystem tooling: npm for NPM packages; nuget.exe, or the dotnet CLI for NuGet packages, etc.
+In this unit, we'll take a look at the other packages supported by GitHub Packages. GitHub Packages work with your current project's ecosystem tooling: npm for npm packages; nuget.exe, or the dotnet CLI for NuGet packages, etc.
 
 ## Authenticate to GitHub Packages
 
-The way you authenticate into your package manager will depend on your project's ecosystem. Whichever ecosystem you're working with, you will need three pieces of information: 
+The way you authenticate into your package manager will depend on your project's ecosystem. Whichever ecosystem you're working with, you'll need three pieces of information: 
 
 - Your GitHub username
 - A Personal Access Token
@@ -13,7 +12,7 @@ The way you authenticate into your package manager will depend on your project's
 
 ### Generate a Personal Access Token
 
-To install, publish or delete a package, you need an access token. When using your package
+To install, publish, or delete a package, you need an access token. When using your package
 manager, you must generate a Personal Access Token (PAT). You can generate a PAT via [your profile settings](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token?azure-portal=true).
 
 > [!WARNING]
@@ -21,14 +20,14 @@ manager, you must generate a Personal Access Token (PAT). You can generate a PAT
 
 ### Log in into GitHub Packages
 
-Before publishing or installing packages from GitHub Packages, you'll need to authenticate in your package manager. The endpoint is like `https://PACKAGE_TYPE.pkg.github.com/OWNER/REPOSITORY`, where `PACKAGE_TYPE` is the type of package ecosystem you're using.
+Before publishing or installing packages from GitHub Packages, you'll need to authenticate in your package manager. The endpoint will look like `https://PACKAGE_TYPE.pkg.github.com/OWNER/REPOSITORY`, where `PACKAGE_TYPE` is the type of package ecosystem you're using.
 
 The following table shows you the command to run in order to authenticate to GitHub Packages based on your package ecosystem:
 
 | Your package ecosystem | Command line to authenticate to GitHub Package     |
 |------------------------|----------------------------------------------------|
 | NuGet                  | `dotnet nuget add source https://nuget.pkg.github.com/OWNER/index.json -n github -u OWNER -p [Your PAT Token]` |
-| NPM                    | `bash npm login --registry=https://npm.pkg.github.com` |
+| npm                    | `bash npm login --registry=https://npm.pkg.github.com` |
 | RubyGems     | `echo ":github: Bearer GH_TOKEN" >> ~/.gem/credentials` |
 | Maven & Gradle | You can directly authenticate while pushing. |
 

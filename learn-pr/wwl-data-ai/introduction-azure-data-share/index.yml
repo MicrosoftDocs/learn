@@ -21,7 +21,7 @@ abstract: |
   * Manage existing shares
 prerequisites: |
   - Before taking this module, it is recommended that you complete Data Fundamentals.
-iconUrl: /learn/achievements/introduction-to-azure-data-share.svg
+iconUrl: /training/achievements/introduction-to-azure-data-share.svg
 levels:
 - intermediate
 roles:

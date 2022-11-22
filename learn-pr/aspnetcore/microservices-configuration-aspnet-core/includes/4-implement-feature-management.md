@@ -10,49 +10,48 @@ In this unit, you will:
 * Deploy the *:::no-loc text="WebSPA":::* app to your AKS cluster.
 * Disable the discount coupon feature.
 
-> [!NOTE]
-> If your Cloud Shell session disconnects due to inactivity, reconnect and run the following command to return to this directory and open the Cloud Shell editor:
->
-> ```bash
-> cd ~/clouddrive/aspnet-learn/src/ && \
->   code .
-> ```
+## Review code
 
-## Verify the deployment to AKS
+Review the directories in the explorer pane in the IDE. Relative to the workspace root, the files for this module are located in *modules/microservices-configuration-aspnet-core*.
+
+> [!IMPORTANT]
+> For brevity, all directory paths described in this module are relative to the *modules/microservices-configuration-aspnet-core* directory.
+
+## Verify deployment to AKS
+
+After the app has deployed to AKS, you'll see a variation of the following message in the terminal:
+
+```console
+The eShop-Learn application has been deployed to "http://203.0.113.55" (IP: 203.0.113.55).
+
+You can begin exploring these services (when ready):
+- Centralized logging       : http://203.0.113.55/seq/#/events?autorefresh (See transient failures during startup)
+- General application status: http://203.0.113.55/webstatus/ (See overall service status)
+- Web SPA application       : http://203.0.113.55/
+```
+
+> [!TIP]
+> This output can be found in *modules/microservices-configuration-aspnet-core/deployment-urls.txt*.
 
 Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
 
-1. Run the following command to display the various app URLs:
+1. Select the **General application status** link in the terminal to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page is designed to refresh automatically, every 10 seconds.
 
-    ```bash
-    cat ~/clouddrive/aspnet-learn/deployment-urls.txt
-    ```
-
-    A variation of the following output appears:
-
-    ```console
-    The eShop-Learn application has been deployed to "http://203.0.113.55" (IP: 203.0.113.55).
-
-    You can begin exploring these services (when ready):
-    - Centralized logging       : http://203.0.113.55/seq/#/events?autorefresh (See transient failures during startup)
-    - General application status: http://203.0.113.55/webstatus/ (See overall service status)
-    - Web SPA application       : http://203.0.113.55/
-    ```
-
-1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. A green checkmark icon denotes a healthy service. The page refreshes automatically, every 10 seconds.
+    > [!IMPORTANT]
+    > If the WebStatus isn't automatically refreshing, it's due to an issue with the container image used for WebStatus. To work around the issue, manually refresh the WebStatus page periodically.
 
     > [!NOTE]
-    > While the app is starting up, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
+    > While the app is starting up, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **Centralized logging** URL, are available before the other endpoints.
 
-1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
+1. After all the services are healthy, select the **Web SPA application** link in the terminal to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
-    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="Screenshot of the WebSPA application's products catalog page." border="true" lightbox="../../media/microservices/eshop-spa.png":::
+    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app." border="true" lightbox="../../media/microservices/eshop-spa.png":::
 
-1. Navigate to the checkout page as follows:
-    1. Select the **:::no-loc text="LOGIN":::** link in the upper right to sign into the app. Sign in using the credentials provided on the page.
-    1. Add the **:::no-loc text=".NET BLUE HOODIE":::** to the shopping bag by selecting the image.
+1. Complete a purchase as follows:
+    1. Select the **LOGIN** link in the upper right to sign into the app. The credentials are provided on the page. Select the **:::no-loc text="Remember me?":::** check box to avoid signing in again.
+    1. Add the **.NET BLUE HOODIE** to the shopping bag by selecting the image.
     1. Select the shopping bag icon in the upper right.
-    1. Select the **:::no-loc text="CHECKOUT":::** button.
+    1. Select the **CHECKOUT** button.
 
 1. Scroll to the bottom of the checkout page. Notice the presence of a discount coupon feature, formed by the following UI elements:
     * **:::no-loc text="See Available Coupons":::** link
@@ -67,15 +66,19 @@ You've successfully verified the app was deployed to AKS. Additionally, you've s
 
 Complete the following steps to support toggling of the SPA's discount coupon feature in real time:
 
-1. Run the following command in the command shell:
+1. Temporarily set your working directory to the WebSPA source:
 
-    ```dotnetcli
-    pushd src/Web/WebSPA && \
-        dotnet add package Microsoft.FeatureManagement.AspNetCore --version 2.2.0 && \
-        popd
+    ```bash
+    pushd ../../src/Web/WebSPA
     ```
 
-    The preceding command installs the NuGet package required to use the Feature Management library with ASP.NET Core. The library retrieves feature flags using .NET Core's native configuration system. You can define your app's feature flags by using any configuration provider that .NET Core supports. In this case, you'll define the configuration in the :::no-loc text="ConfigMap"::: file of the SPA's Helm chart. The library also provides a `<feature>` Tag Helper that can be registered and used in Razor views.
+1. Run the following commands in the terminal:
+
+    ```dotnetcli
+    dotnet add package Microsoft.FeatureManagement.AspNetCore --version 2.5.1
+    ```
+
+    The preceding command installs the NuGet package required to use the Feature Management library with ASP.NET Core. The library retrieves feature flags using .NET's native configuration system. You can define your app's feature flags by using any configuration provider that .NET supports. In this case, you'll define the configuration in the :::no-loc text="ConfigMap"::: file of the SPA's Helm chart. The library also provides a `<feature>` Tag Helper that can be registered and used in Razor views.
 
 1. In the *:::no-loc text="deploy/k8s/helm-simple/webspa/templates/configmap.yaml":::* file, uncomment the `UseFeatureManagement` and `FeatureManagement__Coupons` lines. Save your changes.
 
@@ -112,7 +115,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
 
         As mentioned before, for the SPA to query the coupon's feature state, you need to expose an endpoint. That endpoint is exposed in the next step.
 
-    1. In the `Configure` method, replace the comment `// Add the MapFeatureManagement code` with the following code. Save your changes.
+    1. In the `Configure` method, replace the comment `// Add the MapFeatureManagement code` with the following code.
 
         ```csharp
         if (Configuration.GetValue<bool>("UseFeatureManagement"))
@@ -125,12 +128,24 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
 
         :::code language="csharp" source="../code/src/web/webspa/extensions/endpointroutebuilderextensions.cs" id="snippet_MapFeatureManagement":::
 
+    1. Ensure you've saved all your changes, and then build the app. The build should complete with no errors or warnings.
+
+        ```dotnetcli
+        dotnet build
+        ```
+
+    1. Return to the *deploy/k8s* directory.
+
+        ```bash
+        popd
+        ```
+
 ## Use the feature flag in an Angular view
 
 To add the `featureFlag` directive to the Angular views, run the following script:
 
 ```bash
-deploy/implement-directive.sh
+./implement-directive.sh
 ```
 
 The preceding script uses the Linux `sed` command to modify two Angular views. The `*featureFlag="'coupons'"` attribute is added to the subtotal and discount code `div` elements in the *:::no-loc text="src/Web/WebSPA/Client/src/modules/orders":::* directory's *:::no-loc text="orders-detail/orders-detail.component.html":::* and *:::no-loc text="orders-new/orders-new.component.html":::* files. The relevant portions of *:::no-loc text="orders-detail.component.html":::* are highlighted below.
@@ -178,25 +193,25 @@ The preceding markup applies conditional logic against the feature flag by using
 
 ## Deploy the updated app to AKS
 
-1. To deploy the updated *:::no-loc text="WebSPA":::* app, build and publish a new image to ACR with the following script:
+1. Make sure you've saved all your changes, and then build and publish the updated WebSPA image to ACR with the following script:
 
     ```bash
-    deploy/k8s/build-to-acr.sh --services webspa
+    ./build-to-acr.sh --services webspa
     ```
 
     The script starts an [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) for the *:::no-loc text="WebSPA":::* app. A variation of the following line confirms the Docker image was pushed to ACR:
 
     ```console
-    2020/10/26 21:57:23 Successfully pushed image: eshoplearn20201026212601002.azurecr.io/webspa:linux-latest
+    2020/10/26 21:57:23 Successfully pushed image: eshoplearn20201026212601002.azurecr.io/webspa:linux-net6-coupon
     ```
 
     > [!IMPORTANT]
-    > The *:::no-loc text="WebSPA":::* project is built in ACR, rather than local to Cloud Shell, to take advantage of robust build hosts in ACR. If the ACR quick task fails, inspect the output for troubleshooting information. Run the above script again to attempt additional builds.
+    > The *:::no-loc text="WebSPA":::* project is built in ACR, rather than local to the container, to take advantage of robust build hosts in ACR. If the ACR quick task fails, inspect the output for troubleshooting information. Run the above script again to attempt additional builds.
 
 1. Run the following script to deploy the updated *:::no-loc text="WebSPA":::* app to AKS:
 
     ```bash
-    deploy/k8s/deploy-application.sh --charts webspa
+    ./deploy-application.sh --charts webspa
     ```
 
     The preceding script uses Helm to deploy the *:::no-loc text="WebSPA":::* Docker image from your ACR instance to AKS. The script runs the `kubectl get pods` command, whose output contains entries for the SPA's pods. The `STATUS` and `AGE` column values indicate that the deployments were successful:
@@ -238,7 +253,7 @@ Complete the following steps to disable the discount coupon feature:
 1. Redeploy the app to apply the configuration change:
 
     ```bash
-    deploy/k8s/deploy-application.sh --charts webspa
+    ./deploy-application.sh --charts webspa
     ```
 
 1. Refresh the browser tab displaying the `/features` endpoint. Notice the value of the discount coupon feature's `enabled` property is now `false`.

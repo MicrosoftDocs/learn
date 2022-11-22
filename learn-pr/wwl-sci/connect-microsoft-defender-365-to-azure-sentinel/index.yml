@@ -3,21 +3,22 @@ uid: learn.wwl.connect-microsoft-defender-365-to-azure-sentinel
 metadata:
   title: Connect Microsoft 365 Defender to Microsoft Sentinel
   description: "Connect Microsoft 365 Defender to Microsoft Sentinel"
-  ms.date: 12/09/2021
+  ms.date: 11/14/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Connect Microsoft 365 Defender to Microsoft Sentinel
 summary: Learn about the configuration options and data provided by Microsoft Sentinel connectors for Microsoft 365 Defender.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Activate the Microsoft 365 Defender connector in Microsoft Sentinel
-  - Activate the Microsoft Defender for Endpoint connector in Microsoft Sentinel
-  - Activate the Microsoft Defender for Office 365 connector in Microsoft Sentinel
+  *   Activate the Microsoft 365 Defender connector in Microsoft Sentinel
+  *   Activate the Microsoft Defender for Cloud connector in Microsoft Sentinel
+  *   Activate the Microsoft Defender for IoT connector in Microsoft Sentinel
 prerequisites: |
-  Intermediate understanding of Microsoft 365.
-iconUrl: /learn/achievements/connect-microsoft-defender-365-to-azure-sentinel.svg
+  * Intermediate understanding of Microsoft 365 Defender services
+  * Hands on experience with Microsoft Azure
+iconUrl: /training/achievements/connect-microsoft-defender-365-to-azure-sentinel.svg
 levels:
 - intermediate
 roles:
@@ -25,12 +26,15 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
 units:
 - learn.wwl.connect-microsoft-defender-365-to-azure-sentinel.introduction
 - learn.wwl.connect-microsoft-defender-365-to-azure-sentinel.plan-for-microsoft-365-defender-connectors
-- learn.wwl.connect-microsoft-defender-365-to-azure-sentinel.connect-alerts-from-for-office-365
-- learn.wwl.connect-microsoft-defender-365-to-azure-sentinel.connect-alerts-from-for-endpoint
 - learn.wwl.connect-microsoft-defender-365-to-azure-sentinel.365-defender-connector
+- learn.wwl.connect-microsoft-defender-365-to-azure-sentinel.connect-microsoft-defender-cloud-connector
+- learn.wwl.connect-microsoft-defender-365-to-azure-sentinel.connect-microsoft-defender-iot
+- learn.wwl.connect-microsoft-defender-365-to-azure-sentinel.connect-microsoft-defender-legacy-connectors
 - learn.wwl.connect-microsoft-defender-365-to-azure-sentinel.knowledge-check
 - learn.wwl.connect-microsoft-defender-365-to-azure-sentinel.summary-resources
 badge:

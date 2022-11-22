@@ -2,7 +2,7 @@ Here, we discuss how pull requests can help you request, review, and incorporate
 
 ## The GitHub flow
 
-In addition to providing a platform for collaborative software development, GitHub also offers a prescribed workflow designed to optimize use of its various features. While this unit focuses on pull requests, it is recommended that you first review [Understanding the GitHub flow](https://guides.github.com/introduction/flow/?azure-portal=true).
+In addition to providing a platform for collaborative software development, GitHub also offers a prescribed workflow designed to optimize use of its various features. While this unit focuses on pull requests, it is recommended that you first review [Understanding the GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow).
 
 ### Working on branches
 
@@ -20,7 +20,6 @@ A pull request is a mechanism used to communicate that changes from one branch a
 
 > [!NOTE]
 > This unit discusses working with pull requests within the context of a browser. There are also many development platforms, like [Visual Studio](https://visualstudio.microsoft.com/?azure-portal=true), that offer integrated pull request experiences.
-
 ### Author responsibilities
 
 The author of a pull request is the person who created the pull request. They're hoping to ultimately have the changes from the **compare** branch merged into the **base** branch. They're generally responsible for answering questions about the changes and applying feedback.

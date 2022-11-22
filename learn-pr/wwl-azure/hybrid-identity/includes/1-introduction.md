@@ -10,12 +10,11 @@ A security engineer uses Hybrid Identity to share identity, authentication, and 
 
 ## Skills measured
 
-Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
+Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/certifications/exams/az-500).
 
 Manage identity and access (30-35%)
 
  -  Manage Azure AD identities
-    
      -  configure authentication methods including password hash and Pass-Through Authentication (PTA), OAuth, and passwordless
 
 ## Learning objectives

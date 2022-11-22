@@ -16,7 +16,7 @@ Let's add support to our .NET core application to retrieve a connection string f
     touch appsettings.json
     ```
 
-1. Open the project in an editor. If you are working locally, you can use your editor of choice. We recommend Visual Studio Code, which is an extensible cross-platform IDE. If you are working in Azure Cloud Shell (to the right), we recommend the Cloud Shell editor. Use the following command to open the editor in either environment.
+1. Open the project in an editor. If you're working locally, you can use your editor of choice. We recommend Visual Studio Code, which is an extensible cross-platform IDE. If you're working in Azure Cloud Shell (to the right), we recommend the Cloud Shell editor. Use the following command to open the editor in either environment.
 
     ```bash
     code .
@@ -65,7 +65,7 @@ Let's add support to our .NET core application to retrieve a connection string f
     </ItemGroup>
     ```
 
-1. Press <kbd>Ctrl+S</kbd> to save the file. (You must save this file, or you will lose the change when you add the following package!)
+1. Press <kbd>Ctrl+S</kbd> to save the file. (You must save this file, or you'll lose the change when you add the following package!)
 
 ## Add support to read a JSON configuration file
 
@@ -81,20 +81,31 @@ Now that we've added the required libraries to enable reading the configuration,
 
 1. In the editor, select **Program.cs**.
 
-1. At the top of the file is a **using System;** line. Immediately below that line, add the following lines of code:
+1. At the top of the file is a commented line of code. Delete that line and add the following lines of code to the top of the file:
 
     ```csharp
+    using System;    
     using Microsoft.Extensions.Configuration;
     using System.IO;
     ```
 
-1. Replace the contents of the **Main** method (the line that contains "Hello World!") with the following code. 
+1. Replace the contents of the **Main** method (the line that contains "Hello World!") with the following code:
+
     ```csharp
-    var builder = new ConfigurationBuilder()
-        .SetBasePath(Directory.GetCurrentDirectory())
-        .AddJsonFile("appsettings.json");
-    
-    var configuration = builder.Build();
+    namespace PhotoSharingApp
+    {
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                var builder = new ConfigurationBuilder()
+                    .SetBasePath(Directory.GetCurrentDirectory())
+                    .AddJsonFile("appsettings.json");
+
+                var configuration = builder.Build();
+            }
+        }
+    }
     ```
     
     This code initializes the configuration system to read from the **appsettings.json** file.
@@ -123,7 +134,7 @@ Now that we've added the required libraries to enable reading the configuration,
     ```
 
 1. Save the file.
-    
+
 ::: zone-end
 
 ::: zone pivot="javascript"
@@ -132,7 +143,7 @@ Let's add support to our Node.js application to retrieve a connection string fro
 
 ## Create an .env configuration file
 
-1. In the Azure Cloud Shell session enter the following command to make sure you are in the correct working directory for your project.
+1. In the Azure Cloud Shell session, enter the following command to make sure you are in the correct working directory for your project.
 
     ```bash
     cd PhotoSharingApp 
@@ -195,7 +206,7 @@ Node.js apps can include support to read from the **.env** file by adding the **
 
 ## Add code to read the configuration file
 
-Now that we have added the required libraries to enable reading the configuration, we need to enable that functionality in our application.
+Now that we've added the required libraries to enable reading the configuration, we need to enable that functionality in our application.
 
 1. In the editor, open the **index.js** file.
 

@@ -32,11 +32,11 @@ You'll need to enable, at least, the minimum Remediation Level for a given Devic
 
 **Enable live response unsigned script execution (optional)**
 
-Allowing the use of unsigned scripts may increase your exposure to threats.  Running unsigned scripts is not recommended as it can increase your exposure to threats. If you must use them however, you'll need to enable the setting in the Advanced features settings page.
+Allowing the use of unsigned scripts may increase your exposure to threats.  Running unsigned scripts isn't recommended as it can increase your exposure to threats. If you must use them however, you'll need to enable the setting in the Advanced features settings page.
 
 **Ensure that you have the appropriate permissions**
 
-Only users who have been provisioned with the appropriate permissions can initiate a session.  The option to upload a file to the library is only available to users with the appropriate RBAC permissions. The button is greyed out for users with only delegated permissions.  Depending on the role that's been granted to you, you can run basic or advanced live response commands. Users' permissions are controlled by RBAC custom role.
+Only users who have been provisioned with the appropriate permissions can initiate a session.  The option to upload a file to the library is only available to users with the appropriate Role-based access control (RBAC) permissions. The button is greyed out for users with only delegated permissions.  Depending on the role that's been granted to you, you can run basic or advanced live response commands. Users' permissions are controlled by RBAC custom role.
 
 ## Live response dashboard overview
 
@@ -60,7 +60,7 @@ The dashboard also gives you access to:
 
 ## Live response commands
 
-Depending on the role that's been granted to you, you can run basic or advanced live response commands. User permissions are controlled by RBAC custom roles.   Live response is a cloud-based interactive shell; as such, specific command experience may vary in response time depending on network quality and system load between the end user and the target device.
+Depending on the role that's been granted to you, you can run basic or advanced live response commands. User permissions are controlled by RBAC custom roles.   Live response is a cloud-based interactive shell. So, specific command experience may vary in response time depending on network quality and system load between the end user and the target device.
 
 ### Basic commands
 
@@ -73,9 +73,9 @@ The following commands are available for user roles that are granted the ability
 | [connect]| Starts a live response session to the device.|
 | [connections]| Shows all the active connections.|
 | [dir]| Shows a list of files and subdirectories in a directory.|
-| [download] <file_path> &| Downloads a file in the background.|
+| [getfile] &lt;file_path&gt;| Downloads a file in the background.|
 | [drivers]| Shows all drivers installed on the device.|
-| [fg] \<command ID\>| Returns a file download to the foreground.|
+| [fg] &lt;command ID&gt;| Returns a file download to the foreground.|
 | [fileinfo]| Get information about a file.|
 | [findfile]| Locates files by a given name on the device.|
 | [help]| Provides help information for live response commands.|
@@ -102,7 +102,7 @@ The following commands are available for user roles that are granted the ability
 
 ## Use live response commands
 
-The commands that you can use in the console follow similar principles as Windows Commands.  The advanced commands offer a more robust set of actions that allow you to take more powerful actions such as download and upload a file, run scripts on the device, and take remediation actions on an entity.
+The commands that you can use in the console follow similar principles as Windows Commands. The advanced commands offer expanded capabilities that allow you to take more powerful actions. Advanced actions include downloading or uploading a file, running scripts on the device, and taking remediation actions on an entity.
 
 ### Get a file from the device
 
@@ -120,17 +120,17 @@ The following file size limits apply:
 
 To enable your security operations team to continue investigating an impacted device, files can now be downloaded in the background.
 
-- To download a file in the background, in the live response command console, type **download <file_path> &**.
+- To download a file in the background, in the live response command console, type **getfile &lt;file_path&gt;**.
 
-- If you are waiting for a file to be downloaded, you can move it to the background by using **Ctrl + Z**.
+- If you're waiting for a file to be downloaded, you can move it to the background by using **Ctrl + Z**.
 
-- To bring a file download to the foreground, in the live response command console, type **fg <command_id>**.
+- To bring a file download to the foreground, in the live response command console, type **fg &lt;command_id&gt;**.
 
 Here are some examples:
 
 | Command| What it does|
 | :--- | :--- |
-| "C:\windows\some_file.exe" &| Starts downloading a file named some_file.exe in the background.|
+| getfile "C:\windows\some_file.exe" | Starts downloading a file named some_file.exe in the background.|
 | fg 1234| Returns a download with command ID 1234 to the foreground.|
 
 ### Put a file in the library
@@ -226,7 +226,7 @@ Select the Command log tab to see the commands used on the device during a sessi
 
 ## Command examples
 
-The next commands are examples that demonstrates the use of the live response commands.
+The next commands are examples that demonstrate the use of the live response commands.
 
 ### Analyze
 
@@ -252,7 +252,7 @@ Live response has the following limitations:
 
 - Live response sessions are limited to 10 live response sessions at a time.
 
-- Large-scale command execution is not supported.
+- Large-scale command execution isn't supported.
 
 - Live response session inactive timeout value is 5 minutes.
 

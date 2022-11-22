@@ -63,7 +63,7 @@ Goals are a high-level specification of what you want the system to learn. They 
 :::image type="content" source="../media/training-curriculum.png" alt-text="Simulator flows into circular graph. Outgoing arrow indicates an exported brain. The training curriculum section is highlighted.":::
 
 Bonsai uses a proprietary language called Inkling to encode goals and objectives. Inkling code defines what (and how) you want to teach your AI. An expression in Inkling code is any syntactic entity that can be evaluated to
-determine its value. These entities can include comments, identifies, keywords, literals, and operators.
+determine its value. These entities can include comments, identifiers, keywords, literals, and operators.
 
 ### What are Bonsai brains?
 

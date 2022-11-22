@@ -13,13 +13,16 @@ prerequisites: |
   Before taking this course, you should take the Azure Administrator (AZ-103) or Azure Solutions Architect (AZ-300) exam, and SAP HANA or NetWeaver training.
 summary: |
   This learning path augments existing knowledge around the deployment methodologies for SAP workloads in Azure, focusing on Azure Marketplace and custom images using the Azure portal, Azure Resource Manager (ARM) templates, and Azure PowerShell cmdlets.
-iconUrl: /learn/achievements/run-azure-sap-workloads.svg
+iconUrl: /training/achievements/run-azure-sap-workloads.svg
 levels:
 - advanced
 roles:
 - administrator
 products:
 - azure
+subjects:
+- cloud-computing
+- marketing-sales
 modules:
 - learn.wwl.implement-azure-vm-based-sap-solutions
 - learn.wwl.migrate-sap-workloads-azure

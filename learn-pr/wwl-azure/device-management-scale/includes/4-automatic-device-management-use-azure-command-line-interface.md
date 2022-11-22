@@ -81,7 +81,6 @@ az iot hub configuration update --config-id [configuration id] \
  -  `--config-id` \- The name of the configuration that exists in the IoT hub.
  -  `--hub-name` \- Name of the IoT hub in which the configuration exists. The hub must be in the current subscription. Switch to the desired subscription with the command `az account set -s [subscription name]`
  -  `--set` \- Update a property in the configuration. You can update the following properties:
-    
      -  targetCondition - for example `targetCondition=tags.location.state='Oregon'`
      -  labels
      -  priority

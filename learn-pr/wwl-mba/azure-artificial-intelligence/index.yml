@@ -16,7 +16,7 @@ abstract: |
   - Identify ways you can use Azure AI.
   - Define what Azure AI is, how it works, and how it's built.
 prerequisites: None
-iconUrl: /learn/achievements/azure-artificial-intelligence.svg
+iconUrl: /training/achievements/azure-artificial-intelligence.svg
 levels:
 - beginner
 roles:

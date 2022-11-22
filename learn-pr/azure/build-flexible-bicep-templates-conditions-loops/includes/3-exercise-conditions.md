@@ -22,7 +22,7 @@ During the process, you'll:
 
 1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
  
-   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *templates* folder to save it in.
 
 1. To define a logical server and database, add the following content to the file, along with the parameters and variables that these resources need. Enter the content yourself instead of copying and pasting so that you can see how the tooling helps you to write your Bicep files.
 
@@ -78,10 +78,10 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 ### Deploy the template to Azure by using the Azure CLI
 
-In the Visual Studio Code terminal, deploy the Bicep template to Azure by running the following code. Notice that you're explicitly setting the `location` parameter to `westus`.
+In the Visual Studio Code terminal, deploy the Bicep template to Azure by running the following code. Notice that you're explicitly setting the `location` parameter to `westus3`.
 
 ```azurecli
-az deployment group create --template-file main.bicep --parameters location=westus
+az deployment group create --template-file main.bicep --parameters location=westus3
 ```
 
 ::: zone-end
@@ -95,7 +95,7 @@ az deployment group create --template-file main.bicep --parameters location=west
 In the Visual Studio Code terminal, deploy the template to Azure by running the following Azure PowerShell command. This process can take a couple of minutes to complete, and then you'll have a successful deployment.
 
 ```azurepowershell
-New-AzResourceGroupDeployment -TemplateFile main.bicep -location westus
+New-AzResourceGroupDeployment -TemplateFile main.bicep -location westus3
 ```
 
 ::: zone-end
@@ -112,9 +112,9 @@ You're prompted to enter the values for `sqlServerAdministratorLogin` and `sqlSe
 > 
 > Also, *be sure to note the login and password that you enter*. You'll use them again shortly.
 
-You'll see `Running...` in the terminal. Because you haven't specified a value for the `environmentName` parameter, the default value of `Development` is used.
+Because you haven't specified a value for the `environmentName` parameter, the default value of `Development` is used.
 
-Wait for deployment to finish.
+Wait for deployment to finish. If your deployment fails with a message that a location isn't accepting creation of new Windows Azure SQL Database servers, select a different region like `eastus` or `eastus2`.
 
 ## Verify the deployment
 
@@ -140,7 +140,7 @@ Use the Azure portal to inspect the resources that you deploy and to inspect the
 
     :::image type="content" source="../media/3-deployment-succeeded.png" alt-text="Screenshot of the Azure portal resource group overview pane, displaying additional details of the successful deployment." border="true":::
 
-1. Select the deployment called **main** to see what resources were deployed, and then select **Deployment details** to expand it. 
+1. Select the deployment called **main** to see which resources were deployed, and then select **Deployment details** to expand it. 
  
    In this case, one logical server and one SQL database are deployed. Notice that the storage account and auditing settings aren't on the list of resources.
 
@@ -161,7 +161,7 @@ Now you'll explicitly set the parameter value to `Production`. You expect that, 
 In the Visual Studio Code terminal, deploy the Bicep template to Azure by running the following code:
 
 ```azurecli
-az deployment group create --template-file main.bicep --parameters environmentName=Production location=westus
+az deployment group create --template-file main.bicep --parameters environmentName=Production location=westus3
 ```
 
 ::: zone-end
@@ -171,7 +171,7 @@ az deployment group create --template-file main.bicep --parameters environmentNa
 In the Visual Studio Code terminal, deploy the template to Azure by running the following Azure PowerShell command:
 
 ```azurepowershell
-New-AzResourceGroupDeployment -TemplateFile main.bicep -environmentName Production -location westus
+New-AzResourceGroupDeployment -TemplateFile main.bicep -environmentName Production -location westus3
 ```
 
 ::: zone-end
@@ -179,7 +179,7 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep -environmentName Producti
 > [!CAUTION]
 > Be sure to use the same login and password that you used previously, or else the deployment won't finish successfully.
 
-You see `Running...` in the terminal. After minute or two, the deployment should finish successfully.
+After minute or two, the deployment should finish successfully.
 
 ### Verify the redeployment
 

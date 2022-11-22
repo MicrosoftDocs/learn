@@ -1,7 +1,7 @@
 As documented in the Azure virtual machines planning guide, there are two basic methods for connecting into Azure VMs:
 
- -  Connect through public endpoints on a Jumpbox VM.
- -  Connect through a VPN or Azure ExpressRoute.
+- Connect through public endpoints on a Jumpbox VM.
+- Connect through a VPN or Azure ExpressRoute.
 
 Site-to-site connectivity via VPN or ExpressRoute is necessary for production scenarios. This type of connection is also needed for non-production scenarios that feed into production scenarios where SAP software is being used.
 

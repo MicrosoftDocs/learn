@@ -1,4 +1,4 @@
-After you have all the Azure resources deployed, you need to register your on-premises Windows file server with the sync group. Then you connect to your Windows Server computer and install the Azure File Sync agent. After your server is registered, you add it as a server endpoint in your Azure subscription.
+After you have all the Azure resources deployed, you need to register your on-premises Windows file server with the sync group. Then you'll connect to your Windows Server computer and install the Azure File Sync agent. After your server is registered, you'll add it as a server endpoint in your Azure subscription.
 
 In this exercise, you'll change the security setting so it allows you to download the Azure File Sync agent. You'll then install and run the agent to register the server with the Azure sync group.
 
@@ -31,7 +31,7 @@ The following video shows you how set up your on-premises server to work with Az
 
 1. Select **Download**.
 
-1. Select **StorageSyncAgent_WS2019.msi**, and then select **Next**.
+1. Select **StorageSyncAgent_WS2019.msi**, then select **Next**.
 
 1. Allow the pop-up and select **Run**.
 
@@ -65,7 +65,7 @@ The following video shows you how set up your on-premises server to work with Az
 
 1. On your local computer, sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Go to the sync group, CADFiles. Select **All resources** > **CADSyncService** > **CADFiles**. Your **CADFiles** pane for your *Sync group* appears.
+1. Go to the CADFiles sync group you created earlier. Select **All resources** > **CADSyncService** > **CADFiles**. Your **CADFiles** pane for your *Sync group* appears.
 
 1. In the top menu bar, select **Add server endpoint**.
 
@@ -84,6 +84,6 @@ The following video shows you how set up your on-premises server to work with Az
 
 1. Select **Create**.
 
-1. When the endpoint is created, the file sync process begins. This process might take a couple minutes.
+1. When the endpoint is created, the file sync process begins. This process might take a few minutes.
 
     ![Screenshot that shows the status of the endpoint.](../media/8-created-endpoint.png)

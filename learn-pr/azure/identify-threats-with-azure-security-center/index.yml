@@ -17,7 +17,7 @@ abstract: |
   - Use the workload protection dashboard to identify potential security issues
   - Analyze the recommendations made by Defender for Cloud
 prerequisites: Basic familiarity with Azure services
-iconUrl: /learn/achievements/identify-threats-with-azure-security-center.svg
+iconUrl: /training/achievements/identify-threats-with-azure-security-center.svg
 levels:
 - beginner
 roles:
@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-security-center
+subjects:
+- threat-protection
 units:
 - learn.azure-security.identify-threats-with-azure-security-center.introduction
 - learn.azure-security.identify-threats-with-azure-security-center.security-center-tiers

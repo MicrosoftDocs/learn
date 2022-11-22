@@ -67,7 +67,7 @@ To invoke a direct method on a device:
 
 1.  In the VS Code Explorer pane, right-click the device that you are interested in.
 2.  On the context menu for your device, select **Invoke Direct Method**.
-3.  Enter the method name in the input box, and then the associated payload value. The results will be shown in OUTPUT &gt; Azure IoT Hub Toolkit view. If the direct method that you specify does exist on the device, you will see message similar to the following: Failed to invoke Direct Method: Not found.
+3.  Enter the method name in the input box, and then the associated payload value. The results will be shown in OUTPUT &gt; Azure IoT Hub Toolkit view. If the direct method that you specify does not exist on the device, you will see message similar to the following: Failed to invoke Direct Method: Not found.
 
 ### Read a device twin
 

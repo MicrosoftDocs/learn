@@ -1,32 +1,37 @@
-## Scenario
+Azure Administrators need to secure access to their Azure resources like virtual machines (VMs), websites, networks, and storage. They need mechanisms to help them manage who can access their resources, and what actions are allowed. Organizations that do business in the cloud recognize that securing their resources is a critical function of their infrastructure.
 
-Securing your Azure resources, such as virtual machines, websites, networks, and storage, is a critical function for any organization using the cloud. Your company wants to ensure that your data and assets are protected, but still grant your employees and partners the access they need to perform their jobs.
-
-You decide to use role-based access control. You need to ensure assets are protected, but users can still access the resources they need.
-
-## Skills measured
-
-Role- based access control is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
-
-Manage Azure identities and governance (15-20%)
-
-Manage role-based access control (RBAC)
-
- -  Create a custom role.
- -  Provide access to Azure resources by assigning roles at different scopes.
- -  Interpret access assignments.
+In this module, your business is investigating how to ensure their corporate data and assets are protected. They want secure protection that enables them to control access to their data and resources by specifying roles and access privileges for employees and business partners. You're responsible for researching how to use role-based access control (RBAC) to accomplish these tasks. You need to ensure the company assets are protected, and also support user access to the resources.
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you learn how to:
 
- -  Identify the features and usage cases for role-based access control.
- -  List and create role definitions.
- -  Create role assignments.
- -  Identify the differences between Azure role-based access control and Azure Active Directory roles.
- -  Manage access to subscriptions using role-based access control.
- -  Review the built-in Azure role-based access control roles.
+- Identify features and use cases for role-based access control.
+
+- List and create role definitions.
+
+- Create role assignments.
+
+- Identify differences between Azure RBAC and Azure Active Directory (Azure AD) roles.
+
+- Manage access to subscriptions with RBAC.
+
+- Review built-in Azure RBAC roles.
+
+## Skills measured
+
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). The module concepts are covered in:
+
+Manage identities and governance in Azure (15-20%)
+
+- Manage role-based access control (RBAC)
+
+   - Create a custom role.
+
+   - Provide access to Azure resources by assigning roles at different scopes.
+
+  - Interpret access assignments.
 
 ## Prerequisites
 
-None
+None.

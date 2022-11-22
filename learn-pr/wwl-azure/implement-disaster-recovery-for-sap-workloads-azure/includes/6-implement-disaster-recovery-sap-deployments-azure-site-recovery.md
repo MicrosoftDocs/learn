@@ -2,8 +2,8 @@
 
 To start replicating Azure VMs to the Azure region serving as the disaster recovery site, follow the guidance in [Tutorial: Set up disaster recovery for Azure VMs](/azure/site-recovery/azure-to-azure-walkthrough-enable-replication).
 
- -  For guidance on protecting Active Directory and DNS, refer to [Set up disaster recovery for Active Directory and DNS](/azure/site-recovery/site-recovery-active-directory).
- -  For guidance on protecting database tier running on SQL server, refer to [Set up disaster recovery for SQL Server](/azure/site-recovery/site-recovery-sql).
+- For guidance on protecting Active Directory and DNS, refer to [Set up disaster recovery for Active Directory and DNS](/azure/site-recovery/site-recovery-active-directory).
+- For guidance on protecting database tier running on SQL server, refer to [Set up disaster recovery for SQL Server](/azure/site-recovery/site-recovery-sql).
 
 ## Configure networking
 
@@ -25,16 +25,16 @@ For example, you should add a pre-action script to a facilitate failover SQL Ava
 
 ## Run a test failover
 
-1.  In the Azure portal, select your Recovery Services vault.
-2.  Select the recovery plan that you created for SAP applications.
-3.  Select **Test Failover**.
-4.  To start the test failover process, select the recovery point and the Azure virtual network.
-5.  When the secondary environment is up, perform validations.
-6.  When validations are complete, to clean the failover environment, select **Cleanup test failover**.
+1. In the Azure portal, select your Recovery Services vault.
+2. Select the recovery plan that you created for SAP applications.
+3. Select **Test Failover**.
+4. To start the test failover process, select the recovery point and the Azure virtual network.
+5. When the secondary environment is up, perform validations.
+6. When validations are complete, to clean the failover environment, select **Cleanup test failover**.
 
 ## Run a failover
 
-1.  In the Azure portal, select your Recovery Services vault.
-2.  Select the recovery plan that you created for SAP applications.
-3.  Select **Failover**.
-4.  To start the failover process, select the recovery point.
+1. In the Azure portal, select your Recovery Services vault.
+2. Select the recovery plan that you created for SAP applications.
+3. Select **Failover**.
+4. To start the failover process, select the recovery point.

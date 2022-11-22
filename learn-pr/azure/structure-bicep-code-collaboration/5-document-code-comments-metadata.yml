@@ -6,8 +6,8 @@ metadata:
   title: Document your code by adding comments and metadata
   description: Learn how to use comments, metadata, and tags in your Bicep code.
   ms.date: 08/06/2021
-  author: pazdedav
-  ms.author: dapazd
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

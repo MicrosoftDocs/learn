@@ -17,7 +17,7 @@ abstract: |
   - Evaluate and prioritize organizational readiness for long-term innovation. 
   - Learn how to apply creative ways to encourage experimentation and coinnovation across your organization. 
 prerequisites: Familiarity with successful implementations of AI
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels: 
 - intermediate
 roles: 
@@ -27,7 +27,9 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- productivity
+units:
 - learn-wwl.cultivate-innovative-mindset.introduction
 - learn-wwl.cultivate-innovative-mindset.power-embracing-innovative-mindset
 - learn-wwl.cultivate-innovative-mindset.establish-collaborative-environment

@@ -4,8 +4,8 @@ metadata:
   title: How humans and machine learning models learn
   description: Learn how humans learn, and how it is similar to how a machine learning model is trained.
   ms.date: 04/08/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

@@ -20,7 +20,7 @@ The first step in creating a disaster recovery plan is performing a risk analysi
 
 The risk assessment needs to consider *every* process that can't afford unlimited downtime, and every category of data that can't afford unlimited loss. When a disaster that affects multiple application components occurs, it's critical that the plan owners can use the plan to take a complete inventory of what needs attention and how to prioritize each item.
 
-Some apps may only consist of a single process or classification of data. This is still important to note, as the application will likely be one component of a larger disaster recovery plan that includes multiple applications with the organization.
+Some apps may only consist of a single process or classification of data. This is still important to note, as the application will likely be one component of a larger disaster recovery plan that includes multiple applications within the organization.
 
 ### Recovery objectives
 
@@ -106,7 +106,7 @@ You might also have apps that run on Azure PaaS offerings like App Service. Most
 
 ## Testing a disaster recovery plan
 
-Disaster recovery planning doesn't end once you have a completed plan in hand. Testing the plan is a crucial aspect of disaster recovery to ensure that the directions and explanations are clear and up-to-date.
+Disaster recovery planning doesn't end once you have a completed plan in hand. Testing the plan is a crucial aspect of disaster recovery to ensure that the directions and explanations are clear and up to date.
 
 Choose intervals to perform different types and scopes of tests, such as testing backups and failover mechanisms every month, and performing a full-scale disaster recovery simulation every six months. Always follow the steps and details exactly as they're documented in the plan, and consider having someone unfamiliar with the plan give perspective on anything that could be made clearer. As you execute the test, identify gaps, areas of improvement, and places to automate and add these enhancements to your plan.
 

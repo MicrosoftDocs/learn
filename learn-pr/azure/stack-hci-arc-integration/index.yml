@@ -22,13 +22,15 @@ prerequisites: |
   - Basic concepts of virtualization and containerization
   - Basic architecture and operating principles of Azure Stack HCI
   - The purpose and core capabilities of Azure Resource Manager
-iconUrl: /learn/achievements/stack-hci-arc-integration.svg
+iconUrl: /training/achievements/stack-hci-arc-integration.svg
 levels:
 - beginner
 roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.azure.stack-hci-arc-integration.1-introduction
 - learn.azure.stack-hci-arc-integration.2-azure-arc-capabilities

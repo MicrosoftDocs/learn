@@ -6,8 +6,8 @@ metadata:
   title: Summary
   description: This unit summarizes what you've learned about automating Azure infrastructure change reviews by using Bicep and GitHub.
   ms.date: 03/30/2022
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

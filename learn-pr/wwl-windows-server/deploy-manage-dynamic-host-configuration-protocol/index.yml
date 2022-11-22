@@ -24,7 +24,7 @@ prerequisites: |
   - Windows Server.
   - Core networking technologies.
   - Windows client operating systems such as Windows 10.
-iconUrl: /learn/achievements/deploy-and-manage-dhcp.svg
+iconUrl: /training/achievements/deploy-and-manage-dhcp.svg
 levels:
 - intermediate
 roles:
@@ -33,6 +33,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- networking
 units:
 - learn.wwl.deploy-manage-dhcp.introduction
 - learn.wwl.deploy-manage-dhcp.use-dhcp-to-simplify-ip-configuration

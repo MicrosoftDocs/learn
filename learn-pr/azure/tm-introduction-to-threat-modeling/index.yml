@@ -17,7 +17,7 @@ abstract: |
   - Learn about the security control categories that help you reduce or eliminate potential threats
   - Highlight the importance of verifying assumptions, requirements, and fixes before deployment
 prerequisites: None
-iconUrl: /learn/achievements/introduction-to-threat-modeling.svg
+iconUrl: /training/achievements/introduction-to-threat-modeling.svg
 levels:
 - beginner
 roles:
@@ -31,6 +31,8 @@ products:
 - azure-security-center
 - m365-security-center
 - m365-ems-cloud-app-security
+subjects:
+- threat-protection
 units:
 - learn.tm-introduction-to-threat-modeling.1-introduction
 - learn.tm-introduction-to-threat-modeling.1b-threat-modeling-phases

@@ -22,7 +22,7 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
 1. At the bottom of the file, where you see a comment that says **To be added**, add the following lint job definition:
 
-   :::code language="yaml" source="code/4-workflow.yml" range="18-24" highlight="2-7" :::
+   :::code language="yaml" source="code/4-workflow.yml" range="22-28" highlight="2-7" :::
 
    Your repository has a *bicepconfig.json* file that configures the linter to emit errors instead of warnings. Any failures during the lint job will cause the workflow to fail.
 
@@ -35,7 +35,7 @@ Now, you can add a second job to publish the template spec to Azure.
 
 1. Add the following code at the end of the *template-spec-linux-app-service.yml* file:
 
-   :::code language="yaml" source="code/4-workflow.yml" range="26-45" :::
+   :::code language="yaml" source="code/4-workflow.yml" range="30-51" :::
 
    This job checks out the code from your repository and signs in to Azure by using GitHub secret that you created earlier. It then runs the `az ts create` command to publish the template spec to Azure.
 
@@ -48,7 +48,7 @@ Now, you can add a second job to publish the template spec to Azure.
 
 1. Verify that your *template-spec-linux-app-service.yml* file looks like the following example:
 
-   :::code language="yaml" source="code/4-workflow.yml" highlight="19-45" :::
+   :::code language="yaml" source="code/4-workflow.yml" highlight="23-51" :::
 
    If it doesn't, update it to match this example, and then save it.
 

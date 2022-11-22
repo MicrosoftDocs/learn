@@ -18,10 +18,10 @@ abstract: |
   - Adapt and create Q# applications to run them in Azure Quantum.  
   - Submit and manage jobs in Azure Quantum in a Jupyter notebook in the Azure Quantum portal.
 prerequisites: |
-  - [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true)
-  - [Solve graph coloring problems by using Grover's search](/learn/modules/solve-graph-coloring-problems-grovers-search/?azure-portal=true)
+  - [Get started with Azure Quantum](/training/modules/get-started-azure-quantum/?azure-portal=true)
+  - [Solve graph coloring problems by using Grover's search](/training/modules/solve-graph-coloring-problems-grovers-search/?azure-portal=true)
   - An Azure Quantum workspace
-iconUrl: /learn/achievements/quantum.run-quantum-algorithms-hardware.svg
+iconUrl: /training/achievements/quantum.run-quantum-algorithms-hardware.svg
 ratingEnabled: true
 levels:
 - beginner
@@ -29,6 +29,9 @@ roles:
 - developer
 products:
 - azure-quantum
+subjects:
+- cloud-computing
+- development-tools
 units:
 - learn.quantum.run-quantum-algorithms-hardware.1-introduction
 - learn.quantum.run-quantum-algorithms-hardware.2-quantum-hardware-overview

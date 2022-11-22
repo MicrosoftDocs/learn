@@ -1,4 +1,4 @@
-Your band is on tour next month, and you have identified issues that, in some cases, can be surfaced through metrics and alerts. Your main areas of concern are potential Distributed Denial of Service (DDoS) attacks, and increased CPU load that would require another server.
+Your band is on tour next month, and you have identified issues that, in some cases, can be surfaced through metrics and alerts. Your main areas of concern are Distributed Denial of Service (DDoS) attacks, and increased CPU load that would require another server.
 
 In this unit, you'll look at some scenarios where you might use the data you're collecting to diagnose and fix problems.
 
@@ -8,7 +8,7 @@ To create a chart or alert for a DDoS attack, in the Azure portal, you go to **M
 
 You don't have to install the Azure Monitor Agent to be alerted about DDoS attacks. The alert is on the public IP address resource, not the VM.
 
-![Screenshot that shows the "Under DDoS attack" metric](../media/7-ddos.png)
+:::image type="content" source="../media/7-ddos.png" alt-text="Screenshot that shows the 'Under DDoS attack' metric.":::
 
 ## Increased CPU load
 
@@ -16,8 +16,8 @@ Monitor CPU activity and memory availability to see if you need to scale up your
 
 To respond to a high load, you can create an alert rule for the virtual machine with a condition for the CPU metric. For example, you might monitor to see if the average value over any 15 minutes is higher than 85 percent.
 
-![Screenshot that shows adding an alert rule.](../media/7-condition.png)
+:::image type="content" source="../media/7-condition.png" alt-text="Screenshot that shows adding an alert rule.":::
 
 Then, add an action and create an action group. The action group sends you an email and can then scale up your virtual machine.
 
-![Screenshot that shows adding an action group.](../media/7-runbook.png)
+:::image type="content" source="../media/7-runbook.png" alt-text="Screenshot that shows adding an action group.":::

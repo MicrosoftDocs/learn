@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.perform-cross-document-transactional-operations-azure-cosmos-db-sql-api.exercise-batch-multiple-point-operations-together-sdk
-title: 'Exercise: Batch multiple point operations together with the Azure Cosmos DB SQL API SDK'
+title: 'Exercise: Batch multiple point operations together with the Azure Cosmos DB for NoSQL SDK'
 metadata:
-  title: 'Exercise: Batch multiple point operations together with the Azure Cosmos DB SQL API SDK'
-  description: "Exercise: Batch multiple point operations together with the Azure Cosmos DB SQL API SDK"
-  ms.date: 12/23/2021
+  title: 'Exercise: Batch multiple point operations together with the Azure Cosmos DB for NoSQL SDK'
+  description: "Exercise: Batch multiple point operations together with the Azure Cosmos DB for NoSQL SDK"
+  ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labId: 107577
 labModal: true
 durationInMinutes: 15

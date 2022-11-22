@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Experience with building and deploying static websites.
   - Familiarity with how web content is requested and delivered on the internet, including basics of the Domain Name System (DNS)
-iconUrl: /learn/achievements/create-cdn-static-resources-blob-storage.svg
+iconUrl: /training/achievements/create-cdn-static-resources-blob-storage.svg
 levels:
 - beginner
 roles:
@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-cdn
+subjects:
+- storage
 units:
 - learn.azure.create-content-delivery-network-azure-cdn-blob-services.1-introduction
 - learn.azure.create-content-delivery-network-azure-cdn-blob-services.1b-exercise-deploy-a-website

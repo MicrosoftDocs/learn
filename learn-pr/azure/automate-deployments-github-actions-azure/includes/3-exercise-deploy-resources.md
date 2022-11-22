@@ -9,12 +9,13 @@ In order to complete the exercises, you'll need to configure your environment. I
 1. Download and install [Visual Studio Code](https://code.visualstudio.com/Download).
 1. Download and install the [Azure Functions Core Tools](/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#install-the-azure-functions-core-tools).
 1. In Visual Studio Code, install the following extensions:
-    1. **Azure Account**: This extension allows you to authenticate to Azure.
-    1. **Azure Functions**: This extension allows you to manage Azure Functions.
-    1. **GitHub**: This extension allows you to authenticate to GitHub and manage repositories.
-    1. **Azure Resources**: This extension allows you to manage Azure resources.
-    1. **SQL Server (mssql)**: This extension includes tools for querying SQL Server and Azure SQL resources.
-    1. **Live Server**: This extension enables you to run web applications locally with ease.
+    - [**Azure Account**](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account): This extension allows you to authenticate to Azure.
+    - [**Azure Functions**](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions): This extension allows you to manage Azure Functions.
+    - [**GitHub Pull Requests and Issues**](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github): This extension allows you to authenticate to GitHub and manage repositories.
+    - [**Azure Resources**](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups): This extension allows you to manage Azure resources.
+    - [**SQL Server (mssql)**](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql): This extension includes tools for querying SQL Server and Azure SQL resources.
+    - [**Live Server**](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer): This extension enables you to run web applications locally with ease.
+    
 1. Sign in to GitHub in Visual Studio Code using your GitHub account. If you do not have a GitHub account, [create one here](https://github.com/join).
 1. Sign in to GitHub with your GitHub account and navigate to [this repository](https://github.com/Azure-Samples/serverless-full-stack-apps-azure-sql). In the top-right corner of your browser, select the **Fork** button.
 1. On the same page, select **Code** and copy the HTTPS Clone URL, for example, *`https://github.com/<github-username>/serverless-full-stack-apps-azure-sql.git`*.
@@ -37,7 +38,17 @@ These scripts should take three to five minutes to complete. Be sure to note you
     > [!TIP]
     > If you are not on a Windows device, you need to locate your IP address with another method. In your terminal, you can run `curl ifconfig.co`.
 
-1. Run the following commands in Cloud Shell. Enter a complex password and, at the prompt, enter your local public IP address, which you obtained in the preceding step.
+1. Run the following commands in Cloud Shell. Enter a **complex password** and, at the prompt, enter your local public IP address, which you obtained in the preceding step.
+
+    > [!Note]
+    > A **complex password** must consist of:
+    >
+    > * 8 characters minimum and 16 characters maximum
+    > * Requires 3 out of 4 of the following:
+    >    * Lowercase characters
+    >    * Uppercase characters
+    >    * Numbers ( 0-9 )
+    >    * Symbols ( @ # $ % ^ & * - _  + = [ ] { } | \ : ‘ , . ? / ` ~ “ ( ) ; )
 
     ```powershell
     # Collect password 

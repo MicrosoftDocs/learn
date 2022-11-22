@@ -19,7 +19,7 @@ To learn more about Azure Sphere and IoT Hub then review the following resources
 1. [Azure Sphere documentation](/azure-sphere?azure-portal=true)
 1. [Azure IoT Central documentation](/azure/iot-central/?azure-portal=true)
 1. [Azure IoT reference architecture](/azure/architecture/reference-architectures/iot?azure-portal=true)
-1. [Microsoft Certified: Azure IoT Developer Specialty](/learn/certifications/azure-iot-developer-specialty?azure-portal=true)
+1. [Microsoft Certified: Azure IoT Developer Specialty](/certifications/azure-iot-developer-specialty?azure-portal=true)
 
 ## Learning module feedback
 

@@ -11,6 +11,6 @@ You should be able to:
 
 Microsoft Learn provides a large number of self-paced learning paths. For this lesson, we recommend the following modules. You may search and find other modules that are of interest to you.
 
- -  [Overview of identity and access management in Microsoft 365](/learn/modules/m365-identity-overview/)
- -  [Secure Azure Active Directory users with multi-factor authentication](/learn/modules/secure-aad-users-with-mfa/)
- -  [Protect your identities with Azure AD Identity Protection](/learn/modules/protect-identities-with-aad-idp/)
+ -  [Overview of identity and access management in Microsoft 365](/training/modules/m365-identity-overview/)
+ -  [Secure Azure Active Directory users with multi-factor authentication](/training/modules/secure-aad-users-with-mfa/)
+ -  [Protect your identities with Azure AD Identity Protection](/training/modules/protect-identities-with-aad-idp/)

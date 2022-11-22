@@ -6,7 +6,7 @@ Microsoft Sentinel integrates with Microsoft Graph Security API data sources to 
 
 1. Configure API permissions for the registered application: Add the Microsoft Graph Application permission **ThreatIndicators.ReadWrite.OwnedBy** to your registered application.
 
-1. Ask your Azure Active Directory tenant administrator to grant admin consent to the registered application for your organization. From the Azure portal: **Azure Active Directory > App registrations > \<app name\> > View API Permissions > Grant admin consent for \<tenant name\>**.
+1. Ask your Azure Active Directory tenant administrator to grant admin consent to the registered application for your organization. From the Azure portal: **Azure Active Directory > App registrations > app name > View API Permissions > Grant admin consent for tenant name**.
 
 1. Configure your TIP product or app that uses direct integration with Microsoft Graph Security tiIndicators API to send indicators to Microsoft Sentinel by specifying the following:
 
@@ -22,4 +22,4 @@ Microsoft Sentinel integrates with Microsoft Graph Security API data sources to 
 
 1. To view the threat indicators imported into Microsoft Sentinel, navigate to **Microsoft Sentinel Logs > SecurityInsights, and then expand ThreatIntelligenceIndicator**.
 
-:::image type="content" source="../media/threat-intelligence-platform-connector.png" alt-text="Threat Intelligence Platform connector page" lightbox="../media/threat-intelligence-platform-connector.png":::
+:::image type="content" source="../media/threat-intelligence-platform-connector.png" alt-text="Screenshot of the Threat Intelligence Platform connector page" lightbox="../media/threat-intelligence-platform-connector.png":::

@@ -12,7 +12,7 @@ metadata:
 title: Introduction to AI technology for business leaders
 summary: In this learning path, you will be provided with a high-level overview of the primary concepts of AI. You will be able to describe what AI happens to be and the technologies that underpin it. You will be able to share  how Microsoft is turning the latest advancements in AI into tools, products, and services that can be leveraged by organizations.
 prerequisites: None
-iconUrl: /learn/achievements/ai-technology-for-business-leaders.svg
+iconUrl: /training/achievements/ai-technology-for-business-leaders.svg
 levels:
 - beginner
 roles:
@@ -22,6 +22,8 @@ products:
 - azure
 - dynamics-365
 - m365
+subjects:
+- artificial-intelligence
 modules:
 - learn-wwl.intro-to-ai-technology
 - learn-wwl.microsoft-approach-to-ai

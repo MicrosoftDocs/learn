@@ -7,7 +7,7 @@ In this unit, you'll explore the steps required to:
 
 In this section, you'll create a new Unity project and get it ready for Mixed Reality Toolkit (MRTK) development.
 
-First, follow the steps in [Initializing your project and deploying your first application](/learn/paths/beginner-hololens-2-tutorials/) in the HoloLens 2 introduction module, excluding the "Build your application to HoloLens 2" instructions in unit 7. The steps that you'll follow include:
+First, follow the steps in [Initializing your project and deploying your first application](/training/paths/beginner-hololens-2-tutorials/) in the HoloLens 2 introduction module, excluding the "Build your application to HoloLens 2" instructions in unit 7. The steps that you'll follow include:
 
 1. Create the Unity project and give it a suitable name, like **MRTK Tutorials**.
 2. Switch the build platform.
@@ -118,7 +118,7 @@ In this section, you'll add scripts to the scene to create a series of button ev
 Azure Spatial Anchors can't run in Unity. To test the Azure Spatial Anchors functionality, you need to build the project and deploy the app to your device.
 
 > [!Tip]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, see the [Building your application to HoloLens 2](/learn/modules/learn-mrtk-tutorials/1-7-exercise-hand-interaction-with-objectmanipulator?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.azure.beginner-hololens-2-tutorials) instructions.
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, see the [Building your application to HoloLens 2](/training/modules/learn-mrtk-tutorials/1-7-exercise-hand-interaction-with-objectmanipulator?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.azure.beginner-hololens-2-tutorials) instructions.
 
 When the app runs on your device, follow the on-screen instructions displayed on the **Azure Spatial Anchor Tutorial Instructions** panel:
 

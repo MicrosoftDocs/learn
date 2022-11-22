@@ -13,7 +13,7 @@ To plan and organize the work you need to do as a data scientist, you can use **
 Azure Boards organizes agile planning by work item tracking, visualization, and reporting. You can customize many things to make it fit your project planning. 
 
 > [!TIP]
-> If you want to explore how to set up and customize Azure Boards, you can learn more about using [Azure Boards for agile workloads](/learn/modules/choose-an-agile-approach/), or [review the Azure Boards documentation](/azure/devops/boards/get-started/what-is-azure-boards). 
+> If you want to explore how to set up and customize Azure Boards, you can learn more about using [Azure Boards for agile workloads](/training/modules/choose-an-agile-approach/), or [review the Azure Boards documentation](/azure/devops/boards/get-started/what-is-azure-boards). 
 
 Most importantly for a data scientist, you'll get a work item assigned to you to inform you on what you need to do to contribute to the machine learning project. To organize your work, *you'll link a work item to a new branch*.
 

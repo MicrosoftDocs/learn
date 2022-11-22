@@ -6,7 +6,7 @@ Here are some ways to continue your learning and data journey:
 
 - **Explore the data further:** Look up articles and reports on each launch. Were there considerations made about weather before launch? Were there weather conditions around these dates that might have been worrisome?
 - **Explore the missing weather data:** What about the dates that NASA didn't choose to launch rockets? Beyond individual days, were there seasons that NASA avoided? What kind of weather profile do those seasons tend to have?
-- **Explore the missing launch data:** Can you find data on launches that were pushed because of weather? Is there data about other countries' launches that you can incorporate? 
+- **Explore the missing launch data:** Can you find data on launches that were pushed because of weather? Is there data about launches in other countries/regions that you can incorporate? 
 - **Explore other data manipulations:** Could we have used better values to fill in missing data? 
 - **Decide what data you would want:** If you had access to NASA's subject matter experts and data sources, what do you think would be most important to making a launch or push decision? If you could ask an expert something, what would it be?
 - **Evaluate similar problems:** Are there similar problems that you can use to help fill in this data? For example, are airplane delays because of weather in the area also an indicator?

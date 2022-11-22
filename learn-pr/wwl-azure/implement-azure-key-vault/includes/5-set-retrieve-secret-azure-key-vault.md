@@ -71,5 +71,5 @@ You have created a Key Vault, stored a secret, and retrieved it.
 When you no longer need the resources in this exercise use the following command to delete the resource group and associated Key Vault.
 
 ```azurecli
-az group delete --name az204vault-rg --no-wait 
+az group delete --name az204-vault-rg --no-wait 
 ```

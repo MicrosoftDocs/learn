@@ -134,7 +134,7 @@ For Enterprise Agreements, see [Understand EA roles](/azure/billing/billing-unde
 
 ## Resources
 
-- Related module: [Secure your Azure resources with Azure role-based access control (Azure RBAC)](/learn/modules/secure-azure-resources-with-rbac/)
+- Related module: [Secure your Azure resources with Azure role-based access control (Azure RBAC)](/training/modules/secure-azure-resources-with-rbac/)
 - [Elevate access to manage all Azure subscriptions and management groups](/azure/role-based-access-control/elevate-access-global-admin)
 - [Add or change Azure subscription administrators](/azure/billing/billing-add-change-azure-subscription-administrator)
 - [Best practices for Azure RBAC](/azure/role-based-access-control/best-practices)

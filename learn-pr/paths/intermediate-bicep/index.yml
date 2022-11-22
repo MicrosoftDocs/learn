@@ -26,12 +26,12 @@ summary: |
   * Use Bicep to work with resources you've previously deployed using the Azure portal or other tooling to make your deployments repeatable and consistent.
 
   > [!TIP]
-  > Want to learn Bicep live from subject matter experts? [Learn Live with our experts every Tuesday (Pacific time) beginning March 8, 2022.](https://aka.ms/learnlive-iac-and-bicep)
+  > Want to learn Bicep live from subject matter experts? [Follow on-demand Learn Live sessions with our experts.](/events/learntv/learnlive-iac-and-bicep/)
 
   [!include[](../../includes/bicep-paths.md)]
 prerequisites: |
   This learning path assumes you have familiarity with deploying Azure resources by using Bicep.
-iconUrl: /learn/achievements/bicep/intermediate-bicep.svg
+iconUrl: /training/achievements/bicep/intermediate-bicep.svg
 levels:
 - intermediate
 roles:
@@ -41,6 +41,8 @@ roles:
 products:
 - azure
 - azure-resource-manager
+subjects:
+- development-tools
 modules:
 - learn.azure.child-extension-bicep-templates
 - learn.azure.manage-changes-bicep-code-git

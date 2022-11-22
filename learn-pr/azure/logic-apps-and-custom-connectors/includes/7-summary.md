@@ -1,5 +1,5 @@
-In this module, you have learned how to create a custom Logic Apps connector. To connect Logic Apps to a custom REST API, describe that API by supplying a definition in OpenAPI format or a Postman collection. Then you can call functions in that API from Actions in any Logic App.
+In this module, you learned how to create an Azure Logic Apps custom connector. To connect workflows in Azure Logic Apps to a custom REST API, you describe that API by supplying a definition in OpenAPI format or a Postman collection. You can then call functions in that API as actions in any logic app workflow.
 
-Now that you’ve created the connector, you can also use it to connect Microsoft Flow and PowerApps to your REST API.
+Now that you've created a custom connector, you can also use that connector with Power Automate and Power Apps.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]

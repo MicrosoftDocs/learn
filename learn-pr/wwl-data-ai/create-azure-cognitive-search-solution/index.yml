@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Familiarity with with Microsoft Azure
   - Application development experience with C# or Python
-iconUrl: /learn/achievements/create-an-azure-cognitive-search-solution.svg
+iconUrl: /training/achievements/create-an-azure-cognitive-search-solution.svg
 levels:
 - intermediate
 roles:
@@ -26,6 +26,8 @@ roles:
 - solution-architect
 products:
 - azure-cognitive-search
+subjects:
+- artificial-intelligence
 units:
 - learn.wwl.create-azure-cognitive-search-solution.introduction
 - learn.wwl.create-azure-cognitive-search-solution.get-ready-to-develop

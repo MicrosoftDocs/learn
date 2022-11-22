@@ -3,14 +3,14 @@ uid: learn.student-evangelism.unix-shell-wrangle-data.3-regular-expressions
 metadata:
   title: Introduction to regular expressions
   description: In this unit, you'll be introduced to regular expressions. You'll learn about basic regular expressions that cover literal character matching, wildcards, ranges, and anchors.
-  ms.date: 12/09/2020
-  author: trallard
+  ms.date: 06/15/2022
+  author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Introduction to regular expressions
-durationInMinutes: 5
+durationInMinutes: 7
 azureSandbox: true
 interactive: bash
 content: |

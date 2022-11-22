@@ -9,7 +9,7 @@ At the directory/file level, Azure Files supports preserving, inheriting, and en
 Identity-based authentication for Azure Files offers several benefits over using Shared Key authentication:
 
  -  Extend the traditional identity-based file share access experience to the cloud with on-premises AD DS and Azure AD DS. If you plan to lift and shift your application to the cloud, replacing traditional file servers with Azure file shares, then you may want your application to authenticate with either on-premises AD DS or Azure AD DS credentials to access file data. Azure Files supports using both on-premises AD DS or Azure AD DS credentials to access Azure file shares over SMB from either on-premises AD DS or Azure AD DS domain-joined VMs.
- -  Enforce granular access control on Azure file shares. You can grant permissions to a specific identity at the share, directory, or file level. For example, suppose that you have several teams using a single Azure file share for project collaboration. You can grant all teams access to non-sensitive directories, while limiting access to directories containing sensitive financial data to your Finance team only.
+ -  Enforce granular access control on Azure file shares. You can grant permissions to a specific identity at the share, directory, or file level. For example, suppose that you have several teams using a single Azure file share for project collaboration. You can grant all teams access to non-sensitive directories while limiting access to directories containing sensitive financial data to your Finance team only.
  -  Back up Windows ACLs (also known as NTFS) along with your data. You can use Azure file shares to back up your existing on-premises file shares. Azure Files preserves your ACLs along with your data when you back up a file share to Azure file shares over SMB.
 
 ## Identity-based authentication data flow
@@ -17,14 +17,9 @@ Identity-based authentication for Azure Files offers several benefits over using
 :::image type="content" source="../media/az500-azure-files-authentication-6d7a7c7d.png" alt-text="Diagram of how identity-based authentication works or Azure files.":::
 
 
-1.  Before you can enable authentication on Azure file shares, you must first set up your domain environment. For Azure AD DS authentication, you should enable Azure AD Domain Services and domain join the VMs you plan to access file data from. Your domain-joined VM must reside in the same virtual network (VNET) as your Azure AD DS. Similarly, for on-premises AD DS authentication, you need to set up your domain controller and domain join your machines or VMs.
-2.  When an identity associated with an application running on a VM attempts to access data in Azure file shares, the request is sent to Azure AD DS to authenticate the identity.
-3.  If authentication is successful, Azure AD DS returns a Kerberos token.
-4.  The application sends a request that includes the Kerberos token, and Azure file shares use that token to authorize the request. Azure file shares receive the token only and does not persist Azure AD DS credentials.
+### How it works
 
-Azure file shares supports Kerberos authentication for integration with either Azure AD DS or on-premises AD DS. Before you can enable authentication on Azure file shares, you must first set up your domain environment. For Azure AD DS authentication, you should enable Azure AD Domain Services and domain join the VMs you plan to access file data from. Your domain-joined VM must reside in the same virtual network (VNET) as your Azure AD DS. Similarly, for on-premises AD DS authentication, you need to set up your domain controller and domain join your machines or VMs.
-
-When an identity associated with an application running on a VM attempts to access data in Azure file shares, the request is sent to Azure AD DS to authenticate the identity. If authentication is successful, Azure AD DS returns a Kerberos token. The application sends a request that includes the Kerberos token, and Azure file shares use that token to authorize the request. Azure file shares receive the token only and does not persist Azure AD DS credentials. On-premises AD DS authentication works in a similar fashion, where your AD DS provides the Kerberos token
+Azure file shares leverages Kerberos protocol for authenticating with either on-premises AD DS or Azure AD DS. When an identity associated with a user or application running on a client attempts to access data in Azure file shares, the request is sent to the domain service, either AD DS or Azure AD DS, to authenticate the identity. If authentication is successful, it returns a Kerberos token. The client sends a request that includes the Kerberos token and Azure file shares use that token to authorize the request. Azure file shares only receive the Kerberos token, not access credentials.
 
 ### Preserve directory and file ACLs when importing data to Azure file shares
 

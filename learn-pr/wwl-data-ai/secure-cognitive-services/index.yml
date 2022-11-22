@@ -18,7 +18,7 @@ prerequisites: |
   - Active Azure subscription
   - Ability to navigate the Azure portal
   - Understanding of networking concepts
-iconUrl: /learn/achievements/secure-cognitive-services.svg
+iconUrl: /training/achievements/secure-cognitive-services.svg
 levels:
 - advanced
 roles:
@@ -31,6 +31,8 @@ roles:
 products:
 - azure-active-directory
 - azure-cognitive-services
+subjects:
+- security
 units:
 - learn.wwl.secure-cognitive-services.introduction
 - learn.wwl.secure-cognitive-services.keys-with-azure-key-vault

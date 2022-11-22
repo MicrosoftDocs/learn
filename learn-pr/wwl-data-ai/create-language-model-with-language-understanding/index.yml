@@ -3,7 +3,7 @@ uid: learn.wwl.create-language-model-with-luis
 metadata:
   title: Create a language model with Conversational Language Understanding
   description: "Create a language model with Conversational Language Understanding"
-  ms.date: 04/25/2022
+  ms.date: 09/02/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
    - Build and publish a natural-language machine-learning model.
 prerequisites: |
   Ability to navigate the Azure portal
-iconUrl: /learn/achievements/create-publish-luis-model.svg
+iconUrl: /training/achievements/create-publish-luis-model.svg
 levels:
 - intermediate
 roles:
@@ -31,6 +31,8 @@ products:
 - azure-cognitive-services
 - azure-language-understanding
 - azure-sdks
+subjects:
+- natural-language-processing
 units:
 - learn.wwl.create-language-model-with-luis.introduction
 - learn.wwl.create-language-model-with-luis.get-started

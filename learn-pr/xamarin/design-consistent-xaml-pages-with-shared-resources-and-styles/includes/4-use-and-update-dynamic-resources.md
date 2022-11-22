@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In the previous unit, you defined a resource in XAML and used it as a static value. There are some cases where `StaticResource` isn't sufficient:
 
 * You want to implement color themes that let the user change the look of the app at runtime. `StaticResource` does the dictionary lookup only once, so it can't update the UI dynamically.

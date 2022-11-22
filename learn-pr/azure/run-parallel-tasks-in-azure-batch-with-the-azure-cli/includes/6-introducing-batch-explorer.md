@@ -6,7 +6,7 @@ Here you'll learn about the Azure Batch Explorer tool and how it can help you to
 
 Azure Batch Explorer is a free client tool that helps with every aspect of the creation, management, monitoring and debugging of the Azure Batch applications. It's a standalone tool dedicated to the Azure Batch workflow and can be downloaded for Windows, Mac, and Linux.
 
-With Batch Explorer you can manage batch accounts, and see vast amounts of information on huge Batch scenarios all at a glance, as well as drilling right down into the detail of areas of interest. Once your Batch scenario gets to a certain scale, it becomes unwieldy to use the CLI. The advantage of Batch Explorer is that it gives a visual tool for all aspects of Batch management and debugging.
+With Batch Explorer you can manage batch accounts, see vast amounts of information on huge Batch scenarios all at a glance, and drill down into the details of areas of interest. Once your Batch scenario gets to a certain scale, it becomes unwieldy to use the CLI. The advantage of Batch Explorer is that it gives a visual tool for all aspects of Batch management and debugging.
 
 For example, you can see all the nodes you create in a Batch pool.
 

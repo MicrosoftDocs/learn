@@ -17,17 +17,17 @@ Data scientists, analysts, and developers across industries can use automated ML
 
 Classification is a common machine learning task. Classification is a type of supervised learning in which models learn using training data and apply those learnings to new data. Azure Machine Learning offers featurizations specifically for these tasks, such as deep neural network text featurizers for classification.
 
-The main goal of classification models is to predict which categories new data will fall into based on learnings from its training data. Common classification examples include fraud detection, handwriting recognition, and object detection. Learn more and see an example at [Create a classification model with automated ML](https://docs.microsoft.com/azure/machine-learning/tutorial-first-experiment-automated-ml).
+The main goal of classification models is to predict which categories new data will fall into based on learnings from its training data. Common classification examples include fraud detection, handwriting recognition, and object detection. Learn more and see an example at [Create a classification model with automated ML](/azure/machine-learning/tutorial-first-experiment-automated-ml).
 
 ### Regression
 
-Similar to classification, regression tasks are also a common supervised learning task. Azure Machine Learning offers [featurizations specifically for these tasks](https://docs.microsoft.com/azure/machine-learning/how-to-configure-auto-features#featurization).
+Similar to classification, regression tasks are also a common supervised learning task. Azure Machine Learning offers [featurizations specifically for these tasks](/azure/machine-learning/how-to-configure-auto-features#featurization).
 
 Different from classification, where predicted output values are categorical, regression models predict numerical output values based on independent predictors. In regression, the objective is to help establish the relationship among those independent predictor variables by estimating how one variable impacts the others. For example, automobile prices are based on features like gas mileage, safety rating, etc.
 
 ### Time-series forecasting
 
-Building forecasts is an integral part of any business, whether it's revenue, inventory, sales, or customer demand. You can use automated ML to combine techniques and approaches and get a recommended, high-quality time-series forecast. Learn more with this how-to: [automated machine learning for time series forecasting](https://docs.microsoft.com/azure/machine-learning/how-to-auto-train-forecast).
+Building forecasts is an integral part of any business, whether it's revenue, inventory, sales, or customer demand. You can use automated ML to combine techniques and approaches and get a recommended, high-quality time-series forecast. Learn more with this how-to: [automated machine learning for time series forecasting](/azure/machine-learning/how-to-auto-train-forecast).
 
 An automated time-series experiment is treated as a multivariate regression problem. Past time-series values are "pivoted" to become additional dimensions for the regressor together with other predictors. Unlike classical time series methods, this approach has the advantage of naturally incorporating multiple contextual variables and their relationship to one another during training. Automated ML learns a single but often internally branched model for all items in the dataset and prediction horizons. More data is thus available to estimate model parameters and generalization to unseen series becomes possible.
 

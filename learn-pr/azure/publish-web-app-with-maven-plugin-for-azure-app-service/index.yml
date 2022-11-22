@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Experience writing web apps in Java
   - Knowledge of building and deploying Java web apps with Maven
-iconUrl: /learn/achievements/publish-app-with-maven-plugin-for-azure-web-apps.svg
+iconUrl: /training/achievements/publish-app-with-maven-plugin-for-azure-web-apps.svg
 levels:
 - beginner
 roles:
@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-app-service
+subjects:
+- development-tools
 units:
 - learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.introduction
 - learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.create-java-web-app

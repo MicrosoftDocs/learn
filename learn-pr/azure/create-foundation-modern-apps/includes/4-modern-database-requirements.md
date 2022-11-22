@@ -2,7 +2,7 @@ After you've configured your environment, you're ready to start analyzing and te
 
 ## Scale to meet demand with flexible Azure SQL Database options
 
-One of the core elements of a modern application is the ability to easily scale up or down in order to correctly respond to workload usage. The ability to easily update and evolve a solution, along with deterministic, automatic deployment are also foundational pillars of modern application development. This principle also empowers applications to pay only for what is needed, when it is needed.
+One of the core elements of a modern application is the ability to easily scale up or down in order to correctly respond to workload usage. The ability to easily update and evolve a solution, along with deterministic, automatic deployment are also foundational pillars of modern application development. This principle also empowers applications to pay only for what is needed, when it's needed.
 
 Azure SQL Database provides strong support to all these required features. If you need a future-proof, scalable, secure, and high-performance database, [Azure SQL Hyperscale](/azure/azure-sql/database/service-tier-hyperscale) provides everything you need, and more. It can scale up to 100 TB and its distributed architecture make it easy to scale up and out. It's the ideal database for transactional and hybrid transactional-analytics workloads.
 
@@ -10,7 +10,7 @@ To support development and developers, you can use [Azure SQL Serverless](https:
 
 ## Support development workflows with GitHub Actions
 
-As the DevOps practice is now ubiquitous, it is important for a modern solution to properly support and have a healthy continuous integration and continuous delivery/continuous deployment (CI/CD) pipeline. Azure SQL natively supports GitHub Actions, which you can use to deploy changes to your development database to test and production databases when ready. Azure SQL actions use a state-based approach. DevOps for data is an interesting topic, and you can learn more about it in the Data Exposed episodes referenced at the end of the module.
+As the DevOps practice is now ubiquitous, it's important for a modern solution to properly support and have a healthy continuous integration and continuous delivery/continuous deployment (CI/CD) pipeline. Azure SQL natively supports GitHub Actions, which you can use to deploy changes to your development database to test and production databases when ready. Azure SQL actions use a state-based approach. DevOps for data is an interesting topic, and you can learn more about it in the Data Exposed episodes referenced at the end of the module.
 
 Another key requirement of a modern database is the ability to handle and support the latest development trends and innovations. Azure SQL provides many features so you can use the best technology or model for a given use case. An overview of all the available features is provided in a blog post at the end of the module.
 
@@ -52,4 +52,4 @@ declare @p as geography = geography::STPointFromText('POINT(-122.13315058040392 
 select @p.STWithin(@bldg44)
 ```
 
-Because text format for the locations (for example, `POINT(-122.13315058040392 47.64101193601368)`) is a standard, known as Well-Known Text (WKT) format, it is possible to see the shape projected on a map just by copying and pasting the string. In the following exercise, you'll test it yourself with the [OpenStreetMap WKT Playground](https://clydedacruz.github.io/openstreetmap-wkt-playground/).
+Because text format for the locations (for example, `POINT(-122.13315058040392 47.64101193601368)`) is a standard, known as Well-Known Text (WKT) format, it's possible to see the shape projected on a map just by copying and pasting the string. In the following exercise, you'll test it yourself with the [OpenStreetMap WKT Playground](https://clydedacruz.github.io/openstreetmap-wkt-playground/).

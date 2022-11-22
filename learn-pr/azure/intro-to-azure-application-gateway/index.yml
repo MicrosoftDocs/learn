@@ -20,7 +20,7 @@ prerequisites: |
   - Understanding of basic networking concepts.
   - Familiarity with Azure virtual machines and Azure App Service.
   - Familiarity with Azure virtual networking.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
@@ -28,6 +28,8 @@ roles:
   - solution-architect
 products:
   - azure-application-gateway
+subjects:
+- networking
 units:
   - learn.azure.intro-to-azure-application-gateway.introduction
   - learn.azure.intro-to-azure-application-gateway.what-is-azure-application-gateway

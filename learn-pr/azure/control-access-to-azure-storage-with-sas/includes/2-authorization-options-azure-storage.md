@@ -21,7 +21,7 @@ There are two separate settings that affect public access:
 
 - **The Storage Account.** Configure the storage account to allow public access by setting the *AllowBlobPublicAccess* property. When set to true, Blob data is available for public access only if the container's public access setting is also set.
 
-- **The Container.** You can enable anonymous access only if anonymous access has been allowed for the storage account. A container has two possible settings public access: *Public read access for blobs*, or *public read access for a container and its blobs*. Anonymous access is controlled at the container level, not for individual blobs. This means that if you want to secure some of the files, you need to put them in a separate container that doesn't permit public read access.
+- **The Container.** You can enable anonymous access only if anonymous access has been allowed for the storage account. A container has two possible settings for public access: *Public read access for blobs*, or *public read access for a container and its blobs*. Anonymous access is controlled at the container level, not for individual blobs. This means that if you want to secure some of the files, you need to put them in a separate container that doesn't permit public read access.
 
  Both storage account and container settings are required to enable anonymous public access. The advantages of this approach are that you don't need to share keys with clients who need access to your files. You also don't need to manage a SAS.
 

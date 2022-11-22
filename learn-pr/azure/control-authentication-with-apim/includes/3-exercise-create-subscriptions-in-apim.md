@@ -50,7 +50,7 @@ To save time, let's start by running a script to host our API in Azure. The scri
 
     ![Swagger view.](../media/3-swagger.png)
 
-1. Finally, copy the Example URL from Azure Cloud Shell output. This location is the Swagger JSON URL. You'll need it later in this exercise.
+1. Finally, copy and save the Example URL from Azure Cloud Shell output. This location is the Swagger JSON URL. You'll need it later in this exercise.
 
 ## Deploy an API gateway
 
@@ -129,7 +129,7 @@ The final step is to add a subscription key for the Weather Data API.
 
 1. At the end of the *Weather Data Subscription* row, select the ellipsis, and in the context menu select **Show/hide keys**. The Primary and Secondary key values show.
 
-1. Copy the *Primary key* from Weather Data Subscription to your clipboard. You'll need this key for the next step.
+1. Copy the *Primary key* from Weather Data Subscription to your clipboard and save it in something like Notepad. You'll need this key in the next step.
 
 ## Test the subscription key
 

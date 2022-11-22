@@ -39,7 +39,7 @@ There are several ways to get started. Begin with whichever works best for you. 
 Instrument your web app on the server. Avoids any update to the code. You need admin access to your server.
 
  -  [IIS on-premises or on a VM](/azure/application-insights/app-insights-monitor-performance-live-website-now)
- -  [Azure web app or VM](/azure/application-insights/app-insights-monitor-performance-live-website-now)
+ -  [Azure web app or VM](/azure/azure-monitor/app/azure-vm-vmss-apps)
  -  [J2EE](/azure/application-insights/app-insights-java-live)
 
 ### At development time
@@ -50,6 +50,6 @@ Add Application Insights to your code. Allows you to write custom telemetry and 
  -  [Java](/azure/application-insights/app-insights-java-get-started)
  -  Node.js
  -  [Other platforms](/azure/application-insights/app-insights-platforms)
- -  [Instrument your web pages](/azure/application-insights/app-insights-javascript) for page view, AJAX, and another client-side telemetry.
+ -  [Instrument your web pages](/azure/application-insights/app-insights-javascript) for page view, and another client-side telemetry.
  -  [Analyze mobile app usage](/azure/application-insights/app-insights-mobile-center-quickstart) by integrating with Visual Studio App Center.
  -  [Availability tests](/azure/application-insights/app-insights-monitor-web-app-availability) \- ping your website regularly from our servers.

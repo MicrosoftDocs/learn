@@ -5,8 +5,8 @@ metadata:
   title: Import the dataset
   description: Import the dataset and the pandas Python library.
   ms.date: 06/30/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
   ms.custom: team=nextgen

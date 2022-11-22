@@ -34,9 +34,13 @@ To begin, you need to update your *pr-validation* workflow to create an ephemera
 
    This setting prevents multiple workflows for the same pull request from running at the same time, which might cause unpredictable results when you deploy resources to Azure.
 
-1. Near the top of the file, under the `on` section that defines the trigger, add two new environment variables:
+1. Near the top of the file, under the `on` section that defines the trigger, define the `permissions` section:
 
    :::code language="yaml" source="code/6-pr-validation.yml" range="1-8" highlight="6-8" :::
+
+1. Below the `permissions` section, add two new environment variables:
+
+   :::code language="yaml" source="code/6-pr-validation.yml" range="1-12" highlight="10-12" :::
 
    The `resourceGroupName` environment variable specifies the name of the resource group that should be used for each ephemeral environment. Each resource group will be named `pr_123`, where `123` is the unique pull request number.
 
@@ -44,7 +48,7 @@ To begin, you need to update your *pr-validation* workflow to create an ephemera
 
 1. Define a new job named `deploy`, below the `lint` job:
 
-   :::code language="yaml" source="code/6-pr-validation.yml" range="10-21" highlight="5-12" :::
+   :::code language="yaml" source="code/6-pr-validation.yml" range="14-27" highlight="5-14" :::
 
    The job first checks out all the code onto the GitHub runner, and then signs in to your Azure environment.
 
@@ -53,15 +57,15 @@ To begin, you need to update your *pr-validation* workflow to create an ephemera
 
 1. Add a step to create the resource group with the name defined in the environment variable:
 
-   :::code language="yaml" source="code/6-pr-validation.yml" range="22-28" :::
+   :::code language="yaml" source="code/6-pr-validation.yml" range="28-34" :::
 
 1. After the resource group creation step, add a step to deploy the Bicep file to the resource group:
 
-   :::code language="yaml" source="code/6-pr-validation.yml" range="29-38" :::
+   :::code language="yaml" source="code/6-pr-validation.yml" range="35-44" :::
 
 1. After the deployment step, add a step to display the ephemeral environment's website address in the workflow log:
 
-   :::code language="yaml" source="code/6-pr-validation.yml" range="39-41" :::
+   :::code language="yaml" source="code/6-pr-validation.yml" range="45-47" :::
 
 1. Save your changes.
 
@@ -86,23 +90,23 @@ You've created a workflow that automatically deploys the changes in each pull re
 
    :::image type="content" source="../media/6-visual-studio-code-workflow.png" alt-text="Screenshot of Visual Studio Code that shows the P R closed dot Y M L file within the workflows folder.":::
 
-1. At the top of the file, name the workflow, configure the same concurrency key that you used in the pull request validation workflow, and configure the workflow to run whenever a pull request is closed:
+1. At the top of the file, name the workflow, configure the same concurrency key that you used in the pull request validation workflow, configure the workflow to run whenever a pull request is closed, and allow the workflow to get an access token:
 
-   :::code language="yaml" source="code/6-pr-closed.yml" range="1-6" :::
+   :::code language="yaml" source="code/6-pr-closed.yml" range="1-10" :::
 
 1. Below the code you just entered, define an environment variable for the name of the resource group that's associated with the pull request's ephemeral environment:
 
-   :::code language="yaml" source="code/6-pr-closed.yml" range="8-9" :::
+   :::code language="yaml" source="code/6-pr-closed.yml" range="12-13" :::
 
    The resource group name is the same as the one you used for the pull request validation workflow.
 
 1. Below the code you added, define a new job named `remove`, and configure it to sign in to Azure:
 
-   :::code language="yaml" source="code/6-pr-closed.yml" range="11-18" :::
+   :::code language="yaml" source="code/6-pr-closed.yml" range="15-24" :::
 
 1. Within the `remove` job, define a step to delete the resource group by using the Azure CLI, and confirm the deletion by using the `--yes` argument:
 
-   :::code language="yaml" source="code/6-pr-closed.yml" range="19-25" :::
+   :::code language="yaml" source="code/6-pr-closed.yml" range="25-31" :::
 
 1. Save your changes.
 

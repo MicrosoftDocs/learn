@@ -6,15 +6,15 @@ After you deployed a VM in Azure, you follow the same guidelines and tools to in
 
 This approach involves deploying VMs based on customer-specific images, which can be used in cases where Azure Marketplace images might not fit your needs. The process of preparing custom images is operating system specific. For details, refer to: 
 
-* Windows: [https://docs.microsoft.com/azure/virtual-machines/windows/upload-generalized-managed](https://docs.microsoft.com/azure/virtual-machines/windows/upload-generalized-managed) 
+* Windows: [Upload a generalized Windows VHD and use it to create new VMs in Azure](/azure/virtual-machines/windows/upload-generalized-managed) 
 
 * Linux: 
 
-    * **SUSE**: [https://docs.microsoft.com/azure/virtual-machines/linux/suse-create-upload-vhd](https://docs.microsoft.com/azure/virtual-machines/linux/suse-create-upload-vhd)
+    * **SUSE**: [Prepare a SLES or openSUSE Leap virtual machine for Azure](/azure/virtual-machines/linux/suse-create-upload-vhd)
 
-    * **Red Hat**: [https://docs.microsoft.com/azure/virtual-machines/linux/redhat-create-upload-vhd](https://docs.microsoft.com/azure/virtual-machines/linux/redhat-create-upload-vhd) 
+    * **Red Hat**: [Prepare a Red Hat-based virtual machine for Azure](/azure/virtual-machines/linux/redhat-create-upload-vhd) 
 
-    * **Oracle Linux**: [https://docs.microsoft.com/azure/virtual-machines/linux/oracle-create-upload-vhd](https://docs.microsoft.com/azure/virtual-machines/linux/oracle-create-upload-vhd) 
+    * **Oracle Linux**: [Prepare an Oracle Linux virtual machine for Azure](/azure/virtual-machines/linux/oracle-create-upload-vhd) 
 
 If you have already installed SAP content in your on-premises VM (especially for 2-Tier systems), you can adapt the SAP system settings after the deployment of the Azure VM through the instance rename procedure supported by the SAP Software Provisioning Manager (SAP Note 1619720).
 

@@ -16,7 +16,7 @@ abstract: |
   - Describe what Custom Commands is
   - Define scenarios where Custom Commands can be applied
 prerequisites: A basic familiarity with Azure
-iconUrl:  /learn/achievements/intro-to-custom-commands.svg
+iconUrl:  /training/achievements/intro-to-custom-commands.svg
 levels:
 - beginner
 roles:
@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-cognitive-services
+subjects:
+- natural-language-processing
 units:
 - learn.azure.intro-to-custom-commands.introduction
 - learn.azure.intro-to-custom-commands.what-is-custom-commands

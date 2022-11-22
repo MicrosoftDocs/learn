@@ -1,4 +1,4 @@
-Cloud computing resources are delivered using three different service models.
+Cloud computing resources are delivered using three different service models:
 
 - **Infrastructure-as-a-service (IaaS)** provides instant computing infrastructure that you can provision and manage over the Internet.
 - **Platform as a service (PaaS)** provides ready-made development and deployment environments that you can use to deliver your own cloud services.

@@ -40,7 +40,7 @@ Your application will mainly be driven by traditional UI, so you'll use the [Azu
 
 In this section, you'll' create a new Unity project and get it ready for MRTK development.
 
-First, follow the steps in [Initializing your project and first application](/learn/paths/beginner-hololens-2-tutorials/), excluding the Build your application to your device instructions, which includes the following steps:
+First, follow the steps in [Initializing your project and first application](/training/paths/beginner-hololens-2-tutorials/), excluding the Build your application to your device instructions, which includes the following steps:
 
 1. Creating the Unity project and giving it a suitable name, for example, *Azure Cloud Tutorials*
 2. Switching the build platform
@@ -137,7 +137,7 @@ While the project yet has to be filled with content, you still have some prepara
 You won't be able to run all the features that you will use in this tutorial series inside the Unity editor. Therefore, you need to be familiar with deploying the application to your HoloLens 2 device.
 
 > [!TIP]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Getting started tutorials - Build your application to your device](/learn/modules/learn-mrtk-tutorials/1-7-exercise-hand-interaction-with-objectmanipulator?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.azure.beginner-hololens-2-tutorials/) instructions.
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Getting started tutorials - Build your application to your device](/training/modules/learn-mrtk-tutorials/1-7-exercise-hand-interaction-with-objectmanipulator?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.azure.beginner-hololens-2-tutorials/) instructions.
 
 ### 3. Run the app on your HoloLens 2 and follow the in-app instructions
 

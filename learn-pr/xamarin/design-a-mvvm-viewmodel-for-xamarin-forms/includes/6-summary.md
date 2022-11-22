@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In this module, we explored and used the Model-View-ViewModel pattern.
 
 We mentioned that testability is a primary motivation for using the MVVM pattern. It helps testability by decoupling your user interface from the inputs and outputs that drive it. Those inputs and outputs, exposed as bindings, are more easily exercised through unit-testing frameworks.

@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-modeling-partitioning-azure-cosmos-db-sql-api
 metadata:
-  title: Implement a data modeling and partitioning strategy for Azure Cosmos DB SQL API
-  description: Implement a data modeling and partitioning strategy for Azure Cosmos DB SQL API
-  ms.date: 12/09/2021
+  title: Implement a data modeling and partitioning strategy for Azure Cosmos DB for NoSQL
+  description: Implement a data modeling and partitioning strategy for Azure Cosmos DB for NoSQL
+  ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Implement a data modeling and partitioning strategy for Azure Cosmos DB SQL API
+title: Implement a data modeling and partitioning strategy for Azure Cosmos DB for NoSQL
 prerequisites: |
   Before starting this learning path, you should already have:
   - Familiarity with Azure and the Azure portal.
@@ -16,7 +16,7 @@ prerequisites: |
   If you have no previous programming experience, we recommend you complete the Take your first steps with C# learning path before starting this one.
 summary: |
   In this learning path, you’ll learn how Azure Cosmos DB uses partitioning to scale containers and how spending some time thinking about your data model helps to meet the performance needs of your applications.
-iconUrl: /learn/achievements/data-modeling-implement.svg
+iconUrl: /training/achievements/data-modeling-implement.svg
 levels:
 - intermediate
 roles:
@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-cosmos-db
+subjects:
+- data-modeling
 modules:
 - learn.wwl.implement-non-relational-data-model
 - learn.wwl.design-data-partitioning-strategy

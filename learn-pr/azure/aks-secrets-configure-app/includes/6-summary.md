@@ -8,8 +8,9 @@ In this module, you created resources by using your Azure subscription. The foll
 
 1. Open the Azure portal:
 
-    > [!div class="nextstepaction"]
-    > [Azure portal](https://portal.azure.com?azure-portal=true)
+   > [!div class="nextstepaction"]
+   > [Azure portal](https://portal.azure.com?azure-portal=true)
+
 1. Select **Resource groups** on the left.
 
 1. Find the resource group **rg-ship-manager**, or the resource group name that you used, and select it.
@@ -22,21 +23,21 @@ In this module, you created resources by using your Azure subscription. The foll
 
 1. Run the `kubectl config delete-context` command to remove the deleted cluster's context. Here's an example of the complete command. Remember to replace the name of the cluster with your cluster's name.
 
-    ```bash
-    kubectl config delete-context ship-manager
-    ```
+   ```bash
+   kubectl config delete-context ship-manager
+   ```
 
-    If the command is successful, it returns the following example output:
+   If the command is successful, it returns the following example output:
 
-    ```output
-    deleted context ship-manager from /home/user/.kube/config
-    ```
+   ```output
+   deleted context ship-manager from /home/user/.kube/config
+   ```
 
 ## Learn more
 
 To learn more about Azure Kubernetes Service, see the following articles:
 
-- [Introduction to AKS](/learn/modules/intro-to-azure-kubernetes-service/)
-- [AKS documentation on Microsoft Docs](/azure/aks/)
+- [Introduction to AKS](/training/modules/intro-to-azure-kubernetes-service/)
+- [AKS documentation](/azure/aks/)
 - [AKS production baseline](/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks)
 - [Deploy an AKS cluster](/azure/aks/tutorial-kubernetes-deploy-cluster)

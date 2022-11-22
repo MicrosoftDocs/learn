@@ -22,7 +22,7 @@ prerequisites: |
   - Beginners Data Science for Python Developers
   - 'Join and clean datasets: Deep dive'
   
-iconUrl: /learn/achievements/reactors/supervised-learning-regression.svg
+iconUrl: /training/achievements/reactors/supervised-learning-regression.svg
 hidden: true
 levels:
 - beginner
@@ -33,6 +33,8 @@ roles:
 products:
 - azure
 - vs-code
+subjects:
+- machine-learning
 units:
 - learn.reactors.supervised-learning-regression.1-introduction
 - learn.reactors.supervised-learning-regression.2-load-data
@@ -41,4 +43,4 @@ units:
 - learn.reactors.supervised-learning-regression.5-multiple-regression
 - learn.reactors.supervised-learning-regression.6-categorical-data
 badge:
-  uid: learn.reactors.supervised-learning-regression.badge 
+  uid: learn.reactors.supervised-learning-regression.badge

@@ -1,4 +1,4 @@
-You work for a large insurance organization that's planning a migration to Azure. Your head office currently hosts all the company's public-facing websites and its insurance quote app. Your company headquarters and satellite offices around the country will still need to access internal resources that were migrated to Azure, and the back-office area of the quote app. Your virtual machine infrastructure has central dependencies, such as Active Directory and DNS, that should be accessible.
+You work for a large insurance organization that's planning a migration to Azure. Your head office currently hosts all the company's public-facing websites and its insurance quote app. Your company headquarters and satellite offices around the country/region will still need to access internal resources that were migrated to Azure, and the back-office area of the quote app. Your virtual machine infrastructure has central dependencies, such as Active Directory and DNS, that should be accessible.
 
 In this module, you'll look at a hub-spoke topology in Azure designed for:
 

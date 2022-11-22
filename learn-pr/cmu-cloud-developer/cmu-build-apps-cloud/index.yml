@@ -29,7 +29,7 @@ prerequisites: |
   - Know what datacenters are and why they exist
   - Know how datacenters are set up, powered, and provisioned
   - Understand how cloud resources are provisioned and metered
-iconUrl: /learn/achievements/cmu-cloud-developer/build-applications-on-the-cloud.svg
+iconUrl: /training/achievements/cmu-cloud-developer/build-applications-on-the-cloud.svg
 hidden: true
 levels:
 - beginner
@@ -38,6 +38,9 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
+- development-tools
 units:
 - learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud.0-introduction
 - learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud.1-program-cloud

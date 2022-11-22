@@ -4,12 +4,12 @@ metadata:
   title: Exercise - Repeat code with while and for loops
   description: Learn about iterations in Python.
   ms.date: 06/25/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Exercise - Repeat code with while and for loops
 durationInMinutes: 5
 sandbox: true
-notebook: https://docs.microsoft.com/learn/modules/intermediate-python-nasa/notebooks/4-iterations.ipynb
+notebook: /training/modules/intermediate-python-nasa/notebooks/4-iterations.ipynb

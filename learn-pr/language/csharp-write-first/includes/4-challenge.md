@@ -15,4 +15,4 @@ This is the first line.
 This is the second line.
 ```
 
-Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.
+Whether you get stuck and need to peek at the solution or you finish successfully, continue to the next unit to view a solution to this challenge.

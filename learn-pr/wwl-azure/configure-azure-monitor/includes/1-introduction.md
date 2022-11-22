@@ -8,7 +8,7 @@ Suppose that you work for the operations team of a large organization. The organ
 
 ## Skills measured
 
-Azure Monitor is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Azure Monitor is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Monitor and back up Azure resources (10–15%)
 

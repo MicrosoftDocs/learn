@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-paas-resources-using-automated-methods.build-automation-runbook
+title: Build an automation runbook
+metadata:
+  title: Build an automation runbook
+  description: "Build an automation runbook"
+  ms.date: 06/10/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-build-automation-runbook.md)]

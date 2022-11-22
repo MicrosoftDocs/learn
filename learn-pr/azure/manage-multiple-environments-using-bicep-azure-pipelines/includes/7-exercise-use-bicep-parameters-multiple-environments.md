@@ -57,33 +57,33 @@ Because you're adding more parameters that vary between each environment, you de
 
 1. In Visual Studio Code, open the *deploy.yml* file.
 
-1. At the top of the file, remove the `resourceGroupName` and `serviceConnectionName` parameters. Don't delete the `environmentType` parameter.
+1. At the top of the file, remove the `resourceGroupName` and `serviceConnectionName` parameters. Don't delete the `environmentType` or `deploymentDefaultLocation` parameters.
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="1-3" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" range="1-6" :::
 
 1. Update the `ValidateBicepCode` job to import the variable group:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="7-15" highlight="7-8" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" range="10-18" highlight="7-8" :::
 
 1. Update the `ValidateBicepCode` job to automatically infer the service connection name based on the `environmentType` parameter value:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="7-21" highlight="14" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" range="10-29" highlight="14" :::
 
-1. Update the `ValidateBicepCode` job to use the imported variable group to set the resource group name and environment type parameters for the Azure CLI task:
+1. Update the `ValidateBicepCode` job to use the imported variable group to set the resource group name and environment type arguments for the deployment task:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="7-27" highlight="19, 21" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" range="10-29" highlight="17, 20" :::
 
 1. Make the changes to the `PreviewAzureChanges` job:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="29-49" highlight="7-8, 14, 19, 21" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" range="31-51" highlight="7-8, 14, 19, 21" :::
 
 1. Make the same changes to the `Deploy` deployment job:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="51-79" highlight="6-7, 18, 25, 27" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" range="53-78" highlight="6-7, 19, 22, 25" :::
 
 1. Verify that your *deploy.yml* file now looks like the following code:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" :::
+   :::code language="yaml" source="code/7-deploy-1.yml" highlight="1-6, 16-17, 23, 26, 29, 37-38, 44, 49, 51, 58-59, 71, 74, 77" :::
 
 1. Save your changes to the file.
 
@@ -114,7 +114,7 @@ Because you're adding more parameters that vary between each environment, you de
 
 1. Update the `appServiceApp` resource definition to provide the review API URL and key to the application, so that your website's code can use them:
 
-   :::code language="bicep" source="code/7-main.bicep" range="53-80" highlight="17-24" :::
+   :::code language="bicep" source="code/7-main.bicep" range="63-90" highlight="17-24" :::
 
 1. Save your changes to the file.
 
@@ -154,24 +154,24 @@ Because you're adding more parameters that vary between each environment, you de
 
 1. In Visual Studio Code, open the *deploy.yml* file.
 
-1. In the `ValidateBicepCode` job, add the review API parameter values to the Azure CLI task:
+1. In the `ValidateBicepCode` job, add the review API parameter values to the deployment task:
 
-   :::code language="yaml" source="code/7-deploy-2.yml" range="7-29" highlight="21-23" :::
-
-   > [!IMPORTANT]
-   > Be sure to add the backslash (`\`) at the end of the line that sets the `environmentType` parameter value, and on the subsequent line. The `\` character indicates that further lines are part of the same command.
+   :::code language="yaml" source="code/7-deploy-2.yml" range="10-31" highlight="21-22" :::
 
 1. Make the same change to the `PreviewAzureChanges` job:
 
-   :::code language="yaml" source="code/7-deploy-2.yml" range="31-53" highlight="21-23" :::
+   :::code language="yaml" source="code/7-deploy-2.yml" range="33-55" highlight="21-23" :::
+
+   > [!IMPORTANT]
+   > Be sure to add the backslash (`\`) at the end of the line that sets the `environmentType` parameter value, and on the subsequent line. The `\` character indicates that further lines are part of the same Azure CLI command.
 
 1. Make the same change to the `Deploy` job:
 
-   :::code language="yaml" source="code/7-deploy-2.yml" range="55-85" highlight="27-29" :::
+   :::code language="yaml" source="code/7-deploy-2.yml" range="57-84" highlight="26-27" :::
 
 1. Verify that your *deploy.yml* file now looks like the following code:
 
-   :::code language="yaml" source="code/7-deploy-2.yml" :::
+   :::code language="yaml" source="code/7-deploy-2.yml" highlight="30-31, 53-55, 82-83" :::
 
 1. Commit and push your changes to your Git repository by using the following commands: 
 
@@ -188,6 +188,8 @@ Because you're adding more parameters that vary between each environment, you de
 1. Select the most recent run of your pipeline.
 
    Wait for the pipeline to pause before the **Deploy (Production Environment)** stage. It might take a few minutes for the pipeline to reach this point.
+
+1. If you're asked to grant permission to access a resource, select **View** and then select **Permit**.
 
 1. Approve the deployment to the production environment by selecting **Review** > **Approve**.
 

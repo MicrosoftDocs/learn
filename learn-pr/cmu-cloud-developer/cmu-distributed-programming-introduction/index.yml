@@ -46,7 +46,7 @@ prerequisites: |
   - Know about the different types of data and how they're stored
   - Be familiar with distributed file systems and how they work
   - Be familiar with NoSQL databases and object storage, and how they work
-iconUrl: /learn/achievements/cmu-cloud-developer/distributed-programming-introduction.svg
+iconUrl: /training/achievements/cmu-cloud-developer/distributed-programming-introduction.svg
 hidden: true
 levels:
 - beginner
@@ -55,6 +55,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.cmu-cloud-computing.distributed-programming.introduction.0-introduction
 - learn.cmu-cloud-computing.distributed-programming.introduction.1-taxonomy-programs

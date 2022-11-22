@@ -34,7 +34,7 @@ Contribute to an open-source project using GitHub
 
 ## Summary
 
-*Add the summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductory-summaries)*
+*Add the summary [(Summary guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-introductory-summaries)*
 
 Contribute to open-source projects and communities through GitHub. Identify tasks you can work on and adopt best practices to contribute to the project and interact with its communities.
 
@@ -129,7 +129,7 @@ Identify the subtasks of *Contribute to an open-source project using GitHub*
 
 6. **Knowledge check**
 
-    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
+    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)*
 
  - What is the best place on a GitHub repository to find where you can help a project?
    * The README file

@@ -4,7 +4,7 @@ title: What is Azure Functions?
 metadata:
   title: What is Azure Functions?
   description: Understand the benefits of Azure Functions and when to use them.
-  ms.date: 06/23/2021
+  ms.date: 06/21/2022
   author: juliakm
   ms.author: jukullam
   ms.topic: interactive-tutorial
@@ -22,29 +22,29 @@ quiz:
       explanation: "Serverless applications are great as gateways to more sophisticated functions, such as cognitive services."
     - content: "A peer-to-peer file sharing network."
       isCorrect: false
-      explanation: "While peer-to-peer networks operate without the use of a centralized server, this is not the kind of serverless we're talking about here."
+      explanation: "While peer-to-peer networks operate without the use of a centralized server, this isn't the kind of serverless we're talking about here."
     - content: "A service that manages an online shopping cart."
       isCorrect: false
-      explanation: "Shopping carts require some sort of state in order to track items, so they are not a good candidate for serverless computing."
-  - content: "Which of the following is not a good reason to use Azure Functions?"
+      explanation: "Shopping carts require some sort of state in order to track items, so they aren't a good candidate for serverless computing."
+  - content: "Which of the following isn't a good reason to use Azure Functions?"
     choices:
-    - content: "They do not require any special configuration to be massively scalable."
+    - content: "They don't require any special configuration to be massively scalable."
       isCorrect: false
-      explanation: "Azure Functions automatically scales based on demand. In fact, you can even specify specialized behavior, such as keeping a certain number of instances warm at all times."
+      explanation: "Azure Functions automatically scales based on demand. In fact, you can even specify specialized behavior, such as keeping some instances warm at all times."
     - content: "They can be written in virtually any mainstream language."
       isCorrect: false
       explanation: "Azure Functions can be developed in C#, Java, JavaScript, Python, PowerShell, and more."
-    - content: "They are a replacement for app services and virtual machines."
+    - content: "They're a replacement for app services and virtual machines."
       isCorrect: true
-      explanation: "Azure Functions is great for providing specific services, but are not intended to replace app services or virtual machines."
-  - content: "Which of the following is not a supported way to directly trigger an Azure Functions app?"
+      explanation: "Azure Functions is great for providing specific services, but aren't intended to replace app services or virtual machines."
+  - content: "Which of the following isn't a supported way to directly trigger an Azure Functions app?"
     choices:
     - content: "Making an HTTP request over the public Internet."
       isCorrect: false
       explanation: "This is one of the most common ways to integrate with Azure Functions."
     - content: "Detecting a new message on a message queue."
       isCorrect: false
-      explanation: "This is a very common way to invoke an Azure Functions app asynchronously."
+      explanation: "This is a common way to invoke an Azure Functions app asynchronously."
     - content: "Receiving a carefully filled-out form via fax machine."
       isCorrect: true
-      explanation: "At this time, incoming fax messages are not directly supported. However, there's no reason you couldn't wire up fax software to another trigger method."
+      explanation: "At this time, incoming fax messages aren't directly supported. However, there's no reason you couldn't wire up fax software to another trigger method."

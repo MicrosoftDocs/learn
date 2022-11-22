@@ -20,7 +20,7 @@ prerequisites: |
   - Successfully login to the Azure portal
   - Understand the Azure storage options
   - Understand the Azure compute options
-iconUrl: /learn/achievements/migrate-sql-workloads-to-azure-virtual-machines.svg
+iconUrl: /training/achievements/migrate-sql-workloads-to-azure-virtual-machines.svg
 levels:
 - intermediate
 roles:
@@ -29,6 +29,8 @@ products:
 - azure
 - azure-virtual-machines
 - sql-server
+subjects:
+- virtual-machine
 units:
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines.introduction
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines.considerations-sql-server-azure-virtual-machine-migrations

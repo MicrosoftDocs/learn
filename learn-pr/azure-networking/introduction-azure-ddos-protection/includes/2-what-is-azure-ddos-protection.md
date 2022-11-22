@@ -2,9 +2,9 @@ Microsoft offers DDoS Basic protection to all Azure customers for free. Microsof
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWCjzm]
 
-## Azure DDoS Basic or Standard Protection
+## Azure DDoS infrastructure Protection or Azure DDoS Protection
 
-You’re investigating the benefits for Contoso to upgrade to Azure DDoS Protection Standard for your services running in Azure. The motivation for evaluating this upgrade option, in the consensus of DDoS security experts, is the growing frequency and sophistication of DDoS attacks.
+You’re investigating the benefits for Contoso to upgrade to Azure DDoS Protection for your services running in Azure. The motivation for evaluating this upgrade option, in the consensus of DDoS security experts, is the growing frequency and sophistication of DDoS attacks.
 
 The attack traffic doesn't have to be in the range of terabits per second to take down an application. Any specific targeted attack can impact the availability of an application running in Azure, which is receiving traffic from the public internet.
 
@@ -31,30 +31,30 @@ Some common DDoS attacks are:
 
 DDoS protection is similar to a secure and functioning backup system. A backup’s value to your organization isn't obvious until it’s needed. DDoS protection, like a backup, provides risk mitigation against potential threats.
 
-### DDoS  Protection Basic
+### DDoS infrastructure protection
 
-Azure provides continuous protection against DDoS attacks. DDoS protection does not store customer data. At no additional cost, Azure DDoS Protection Basic protects every Azure service that uses public IPv4 and IPv6 addresses. This DDoS protection service helps to protect all Azure services, including platform as a service (PaaS) services such as Azure DNS. DDoS Protection Basic requires no user configuration or application changes.
+Azure provides continuous protection against DDoS attacks. DDoS protection doesn't store customer data. At no additional cost, Azure DDoS infrastructure protection protects every Azure service that uses public IPv4 and IPv6 addresses. This DDoS protection service helps to protect all Azure services, including platform as a service (PaaS) services such as Azure DNS. DDoS infrastructure protection requires no user configuration or application changes.
 
-DDoS Protection Basic provides:
+Azure DDoS infrastructure protection provides:
 
-- Active traffic monitoring and always-on detection. DDoS Protection Basic monitors your application traffic patterns all day, every day, searching for indicators of DDoS attacks.
+- Active traffic monitoring and always-on detection. DDoS infrastructure protection monitors your application traffic patterns all day, every day, searching for indicators of DDoS attacks.
 - Automatic attack mitigation. Once the attack is detected, it’s mitigated.
-- The DDoS Protection Basic service level agreement (SLA), which is based on the Azure region with best-effort support.
+- The DDoS infrastructure protection service level agreement (SLA), which is based on the Azure region with best-effort support.
 
-### DDoS Protection Standard
+### Azure DDoS Protection
 
-DDoS Protection Standard provides enhanced DDoS mitigation features to defend against DDoS attacks. It's automatically tuned to help protect your specific Azure resources in a virtual network.
+DDoS Protection provides enhanced DDoS mitigation features to defend against DDoS attacks. It's automatically tuned to help protect your specific Azure resources in a virtual network.
 
-The following list describes the features and benefits of DDoS Protection Standard:
+The following list describes the features and benefits of DDoS Protection:
 
 - It provides intelligent traffic profiling, which you’ll learn about in the next unit.
 - It provides native integration into the Azure portal for setup and deployment. This level of integration enables DDoS Standard to identify your Azure resources and their configurations.
 - When DDoS Standard is enabled for a virtual network, all resources on that network are automatically protected. No additional administrative procedure is needed.
 - Your network resources are under constant traffic monitoring for indications of a DDoS attack. Once detected, DDoS Standard will intervene and automatically mitigate the attack.
-- It helps secure layers 3 and 4 at the network layer and provide application (layer 7) protection with Azure Web Application Firewall, which is included with Azure Gateway. Because the Azure Gateway and Web Application Firewall are internet-facing, DDoS Protection Standard protects their network interfaces. This is an example of multilayered or defense-in-depth protection.
+- It helps secure layers 3 and 4 at the network layer and provide application (layer 7) protection with Azure Web Application Firewall, which is included with Azure Gateway. Because the Azure Gateway and Web Application Firewall are internet-facing, DDoS Protection protects their network interfaces. This is an example of multilayered or defense-in-depth protection.
 - It provides detailed attack analytic reports during the attack in five-minute intervals and an after-action report for a complete summary of the event, when the attack ends.
 - It includes support for the integration of mitigation logs with Microsoft Defender for Cloud, Microsoft Sentinel, or an offline security information and event management (SIEM) system for near real-time monitoring during an attack.
-- Azure Monitor collects monitoring telemetry from DDoS Protection Standard for access to summarized attack metrics.
+- Azure Monitor collects monitoring telemetry from DDoS Protection for access to summarized attack metrics.
 
 Cost guarantee and DDoS rapid response support are two of the other important DDoS Standard Protection features.
 
@@ -63,7 +63,7 @@ Cost guarantee and DDoS rapid response support are two of the other important DD
 At the beginning of a DDoS attack, the attack often triggers the automatic scale-out of the service running in Azure. This could be caused by the increase in network bandwidth, the scaling-up of the virtual machine count, or both.
 
 > [!NOTE]
-> Customers that are onboarded to DDoS Protection Standard receive service credit for application scale-out and network bandwidth cost that they incur during a documented DDoS attack. Microsoft directly provides this credit.
+> Customers that are onboarded to DDoS Protection receive service credit for application scale-out and network bandwidth cost that they incur during a documented DDoS attack. Microsoft directly provides this credit.
 
 ### DDoS rapid response support
 
@@ -73,4 +73,4 @@ You can notify the team by opening a support request on the Azure portal. Contac
 
 - Your company is planning a virtual event that's expected to significantly increase your network traffic.
 - There's an attack that's severely degrading the performance of a protected critical business system.
-- Your security team determines that protected resources are under attack, but DDoS Protection Standard isn’t mitigating the attack effectively.
+- Your security team determines that protected resources are under attack, but DDoS Protection isn’t mitigating the attack effectively.

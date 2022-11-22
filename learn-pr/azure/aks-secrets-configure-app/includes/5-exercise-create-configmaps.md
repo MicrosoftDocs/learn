@@ -40,7 +40,7 @@ az aks create \
  --enable-addons http_application_routing
 ```
 
-After the previous command runs, or if the list is not empty (the cluster is already created), get the administration config:
+After the previous command runs, or if the list isn't empty (the cluster is already created), get the administration config:
 
 ```azurecli-interactive
 az aks get-credentials -n $CLUSTER_NAME -g $RESOURCE_GROUP
@@ -53,7 +53,7 @@ The complete cluster creation can take up to five minutes.
 
 ## Create a ConfigMap
 
-1. Log in to your Azure Cloud Shell. Get the DNS zone that has been made available with the HTTP application routing add-on:
+1. In your Azure Cloud Shell. Get the DNS zone that has been made available with the HTTP application routing add-on:
 
     ```azurecli-interactive
     az aks show \
@@ -137,7 +137,7 @@ The complete cluster creation can take up to five minutes.
     ---
     ```
 
-    Notice how we're mounting the ConfigMap in the Deployment object. We're not specifying any keys, which means we need to specify a `subPath` key. This is the filename inside the container.
+    Notice how we're mounting the ConfigMap in the Deployment object. We're not specifying any keys, which means we need to specify a `subPath` key. The `subpath` is the filename inside the container.
 
 1. Continue to edit the file by adding the following lines below the last three dashes (`---`):
 
@@ -194,4 +194,9 @@ The complete cluster creation can take up to five minutes.
 
     The DNS propagation may take up to five minutes to complete.
 
-To check your work, access the front-end URL defined in the front-end ingress configuration.
+    When the API is available, you should get an output similar to:
+
+    ```output
+    NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
+    contoso-ship-manager-frontend  1/1     1            1           18s
+    ```

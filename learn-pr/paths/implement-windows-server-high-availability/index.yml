@@ -15,7 +15,7 @@ prerequisites: |
   - Windows Server Hyper-V fundamentals.
 summary: |
   Learn to implement high availability Windows Server virtual machine (VM) workloads with Hyper-V Replica, Windows Server Failover Clustering, and Windows Server File Server high availability.
-iconUrl: /learn/achievements/implement-windows-server-high-availability.svg
+iconUrl: /training/achievements/implement-windows-server-high-availability.svg
 levels:
 - intermediate
 roles:
@@ -24,6 +24,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- networking
 modules:
 - learn.wwl.introduction-to-cluster-shared-volumes
 - learn.wwl.implement-windows-server-failover-clustering

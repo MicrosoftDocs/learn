@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/25/2022
+  ms.date: 11/03/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "You have created a bulk operation in Azure Cosmos DB SQL API that will insert hundreds of thousands of items into a container. You need to temporarily disable indexing and re-enable it after the bulk operation is complete. Prior to starting the bulk operation, which indexing mode should you configure in the indexing policy?"
+  - content: "You've created a bulk operation in Azure Cosmos DB for NoSQL that will insert hundreds of thousands of items into a container. You need to temporarily disable indexing and re-enable it after the bulk operation is complete. Prior to starting the bulk operation, which indexing mode should you configure in the indexing policy?"
     choices:
     - content: "None"
       isCorrect: true
@@ -24,8 +24,8 @@ quiz:
       explanation: "That's incorrect. The consistent indexing mode will still continue to index items."
     - content: "Automatic"
       isCorrect: false
-      explanation: "That's incorrect. Automatic is not a valid indexing mode option."
-  - content: "You are authoring a new indexing policy for a container in Azure Cosmos DB SQL API. You would like to define an included path that includes all possible properties from the root of any JSON document. Which path expression should you use?"
+      explanation: "That's incorrect. Automatic isn't a valid indexing mode option."
+  - content: "You're authoring a new indexing policy for a container in Azure Cosmos DB for NoSQL. You would like to define an included path that includes all possible properties from the root of any JSON document. Which path expression should you use?"
     choices:
     - content: "``/*``"
       isCorrect: true

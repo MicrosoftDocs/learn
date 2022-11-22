@@ -96,7 +96,7 @@ Here's how to use `nslookup` to verify the DNS zone configuration.
    The command should look something like the following:
 
     ```bash
-    nslookup www.wideworldimportsXXXX.com ns1-07.azure-dns.com
+    nslookup www.wideworldimportsXXXX.com ns1-04.azure-dns.com
     ```
 
 1. You should see that your host name `www.wideworldimportsXXXX.com` resolves to 10.10.10.10.

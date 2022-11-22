@@ -5,8 +5,8 @@ Typically, programs take input. The input could come from sources such as web re
 To read from the console, you can use methods found in the `System` namespace. You want to use something like `Console.Readline()`. This method reads all the characters up to a newline character and places those characters in a string. Here's an example of using this method.
 
 ```fsharp
-Console.Write "Type a value:"
-let str = Console.ReadLine()
+System.Console.Write "Type a value:"
+let str = System.Console.ReadLine()
 printfn "You typed %s" str
 ```
 

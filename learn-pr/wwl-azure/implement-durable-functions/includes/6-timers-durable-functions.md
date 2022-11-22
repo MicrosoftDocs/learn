@@ -17,7 +17,7 @@ public static async Task Run(
 {
     for (int i = 0; i < 10; i++)
     {
-        DateTime deadline = context.CurrentUtcDateTime.Add(TimeSpan.FromDays(1));
+        DateTime deadline = context.CurrentUtcDateTime.Add(TimeSpan.FromDays(i + 1));
         await context.CreateTimer(deadline, CancellationToken.None);
         await context.CallActivityAsync("SendBillingEvent");
     }

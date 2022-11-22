@@ -16,16 +16,16 @@ In this unit, you'll create an Azure Batch and Azure Storage account using the A
 
 1. Select **Create** to open the **Create storage account** form, as shown in the following screenshot.
 
-    ![Screenshot showing the create storage account form.](../media/3-create-storage-account.png)
+    :::image type="content" source="../media/3-storage-account-create.png" alt-text="Screenshot that shows the create storage account form.":::
 
-1. In the **Storage account name** field, enter a unique name. An example might be **cutifypets\<date\>\<your initials\>**.
+1. In the **Storage account name** field, enter a unique name.
 
     > [!NOTE]
     > Your storage account name must be globally unique, and only lowercase characters and numbers are allowed.
 
 1. Select a location close to you from the available options.
 
-1. Leave all the other options as their defaults and select **Review + create**, followed by **Create**.
+1. Leave all the other options as their defaults and select **Review**, followed by **Create**.
 
 1. Wait for the deployment to complete. We now have a storage account that we'll use in our processing to store input and output files. We'll associate this storage account with our Batch account shortly.
 
@@ -41,11 +41,11 @@ In order to create batch workloads, we need to create an account within the Batc
 
 1. Select **Create** to open the **New Batch account** form.
 
-    ![Screenshot showing the new batch account form.](../media/3-new-batch-service.png)
+    :::image type="content" source="../media/3-batch-account-create.png" alt-text="Screenshot that shows the new batch account form.":::
 
 1. Select an existing resource group, or create a new one for the resource we're adding in this module. To simplify cleanup once you've finished with this module, we recommend creating a new resource group. Note the name of the resource group you're using - it will be needed throughout these exercises. 
 
-1. In the Account account name, enter a unique name. For example, you could enter **cutifypets\<date\>\<your initials\>**.
+1. In the Account account name, enter a unique name.
 
 1. Select the link called **Select a storage account**, and in the panel that opens select the storage account your created earlier.
 
@@ -55,11 +55,7 @@ In order to create batch workloads, we need to create an account within the Batc
 
 1. Wait for the deployment to complete.
 
-1. On the **Your deployment is complete** screen, select the link to the Batch account, as shown in the following screenshot.
-
-    ![Screenshot showing the deployment complete page, with the new Batch account highlighted.](../media/3-new-batch-service-created.png)
-
-    You now have a Batch account in which to create our jobs. 
+1. On the **Your deployment is complete** screen, select **Go to resource**.
 
 ## Create an application package containing ffmpeg
 
@@ -74,7 +70,6 @@ For our scenario, we've decided to enlist the help of **FFmpeg** to do our video
     ![Screenshot showing the new application configuration form.](../media/3-add-application-to-batch.png)
 
 1. In **Application id**, type **ffmpeg**.
-
 
 1. In **Version** type **3.4**.
 

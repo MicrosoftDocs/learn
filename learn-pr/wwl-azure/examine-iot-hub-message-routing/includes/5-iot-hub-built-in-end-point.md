@@ -1,4 +1,4 @@
-By default, messages are routed to the built-in service-facing endpoint (messages/events) which is compatible with Event Hubs. This endpoint is currently only exposed using the AMQP protocol on port 5671. An IoT hub exposes the following properties to enable you to control the built-in endpoint.
+By default, messages are routed to the built-in service-facing endpoint (messages/events) which is compatible with Event Hubs. This endpoint is currently only exposed using the AMQP protocol on port 5671 and AMQP over WebSockets on port 443. An IoT hub exposes the following properties to enable you to control the built-in endpoint.
 
 :::row:::
   :::column:::
@@ -36,7 +36,7 @@ You can modify the retention time, either programmatically using the IoT Hub res
 
 IoT Hub exposes the messages/events built-in endpoint for your back-end services to read the device-to-cloud messages received by your hub. This endpoint is Event Hubs-compatible, which enables you to use any of the mechanisms the Event Hubs service supports for reading messages.
 
-## Accessing the Built-in endpoint
+## Read from the Built-in endpoint
 
 Some product integrations and Event Hubs SDKs are aware of IoT Hub and let you use your IoT hub service connection string to connect to the built-in endpoint.
 

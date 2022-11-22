@@ -12,7 +12,7 @@ Azure Data Explorer is a great choice of technology when you need to:
 Azure Synapse Data Explorer is an especially good choice when you need to perform these tasks in a centralized environment used for other kinds of analytics, such as SQL and Spark based queries.
 
 > [!TIP]
-> To learn more about Azure Data Explorer and its uses, see the [Introduction to Azure Data Explorer](/learn/modules/intro-to-azure-data-explorer/intro-to-azure-data-explorer/?azure-portal=true) module, which is not part of the official course materials for this course but supports further learning beyond the scope of the Data Fundamentals certification.
+> To learn more about Azure Data Explorer and its uses, see the [Introduction to Azure Data Explorer](/training/modules/intro-to-azure-data-explorer/intro-to-azure-data-explorer/?azure-portal=true) module, which is not part of the official course materials for this course but supports further learning beyond the scope of the Data Fundamentals certification.
 
 ## Kusto Query Language (KQL)
 
@@ -36,4 +36,4 @@ LogEvents
 Kusto query language is a versatile but intuitive language that enables data analysts to quickly gain insights from data captured and stored in a Data Explorer database.
 
 > [!TIP]
-> To learn more about Kusto Query Language, see the [Write your first query with Kusto Query Language](/learn/modules/write-first-query-kusto-query-language/?azure-portal=true) module, which is not part of the official course materials for this course but supports further learning beyond the scope of the Data Fundamentals certification.
+> To learn more about Kusto Query Language, see the [Write your first query with Kusto Query Language](/training/modules/write-first-query-kusto-query-language/?azure-portal=true) module, which is not part of the official course materials for this course but supports further learning beyond the scope of the Data Fundamentals certification.

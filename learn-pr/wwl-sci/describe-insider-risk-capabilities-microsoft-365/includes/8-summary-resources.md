@@ -1,10 +1,10 @@
-There are various capabilities available from Microsoft 365 to help protect organizations from insider risks. Without these capabilities, organizations are exposed to negative financial and reputational consequences that can result from data leaks or inappropriate communication, from company insiders.
+There are various capabilities available from Microsoft Purview to help protect organizations from data leaks or inappropriate communication, from company insiders.
 
 Now that you’ve completed this module, you should be able to:
 
-- Describe Microsoft Purview Insider Risk Management.
-- Describe Microsoft Purview Communication Compliance.
-- Describe Microsoft Purview Information Barriers.
+- Describe insider risk management.
+- Describe communication compliance.
+- Describe information barriers.
 
 ## Learn more
 

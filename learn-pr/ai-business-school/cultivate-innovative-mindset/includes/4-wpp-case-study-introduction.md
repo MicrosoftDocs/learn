@@ -1,6 +1,6 @@
 ## Abstract
 
-WPP is a London-based multinational communications company responsible for creating memorable campaigns, experiences, and communications for brands. They have been addressing the industry’s leading challenges with technology-driven solutions to revolutionize modern marketing. This case study describes how WPP enhances international collaboration across their organization by making powerful tools like AI accessible to everyone. By educating and empowering their employees across countries, roles, and domains to collaborate using AI, WPP is creating a foundation that will help them foster innovation to adapt quickly and retain market share in an increasingly competitive market.
+WPP is a London-based multinational communications company responsible for creating memorable campaigns, experiences, and communications for brands. They have been addressing the industry’s leading challenges with technology-driven solutions to revolutionize modern marketing. This case study describes how WPP enhances international collaboration across their organization by making powerful tools like AI accessible to everyone. By educating and empowering their employees across countries/regions, roles, and domains to collaborate using AI, WPP is creating a foundation that will help them foster innovation to adapt quickly and retain market share in an increasingly competitive market.
 
 ## Challenge
 
@@ -8,7 +8,7 @@ The environment in which modern marketing operates has changed significantly ove
 
 There is more to that complicated task—employee knowledge and creativity is WPP’s best IP and they’re competing with other companies such as Google to hire and retain top creative talent.  To further innovation often initiated by talented hires, it’s critical to prioritize retention by providing employees with the support, resources, and culture needed to thrive. Creating channels for feedback and continuous improvement can also increase visibility into the concerns and ideas from employees.
 
-Additionally, WPP has over 80 agencies operating in 110 different countries. They’ve also acquired over 54 companies since inception. For these reasons, effective collaboration and streamlined knowledge sharing across more than 100,000 employees is a daunting task.
+Additionally, WPP has over 80 agencies operating in 110 different countries/regions. They’ve also acquired over 54 companies since inception. For these reasons, effective collaboration and streamlined knowledge sharing across more than 100,000 employees is a daunting task.
 
 WPP needed a way to bridge the innovative ideas and best practices across employees, agencies, and locations to eliminate duplicative work and empower people in different places to build on top of other’s ideas.
 

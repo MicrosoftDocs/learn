@@ -1,10 +1,10 @@
 In this module, you'll add functional tests to the pipeline. These tests verify an application's behavior.
 
-In the [Create a multistage pipeline by using Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module, you helped the Tailspin Toys web team design and build a multistage release pipeline. The team uses the pipeline to move changes through a series of stages. Changes move through the _Dev_ stage, the _Test_ stage, and finally the _Staging_ stage, which resembles a production environment.
+In the [Create a multistage pipeline by using Azure Pipelines](/training/modules/create-multi-stage-pipeline?azure-portal=true) module, you helped the Tailspin Toys web team design and build a multistage release pipeline. The team uses the pipeline to move changes through a series of stages. Changes move through the _Dev_ stage, the _Test_ stage, and finally the _Staging_ stage, which resembles a production environment.
 
 The stages that you and the team defined provide the overall shape of the pipeline. But you can add more to each stage. For example, in the _Test_ stage, Amita still tests the web application manually as she always has. When she's satisfied, she manually promotes the application to _Staging_. In _Staging_, management reviews the new features and decides whether to make the release publicly available.
 
-In the [Run quality tests in your build pipeline using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true) module, you incorporated unit and code coverage tests into the build process. These tests help avoid regression bugs and ensure that the code meets the company's standards for quality and style. But what kinds of tests can you run after a service is operational and deployed to an environment?
+In the [Run quality tests in your build pipeline using Azure Pipelines](/training/modules/run-quality-tests-build-pipeline?azure-portal=true) module, you incorporated unit and code coverage tests into the build process. These tests help avoid regression bugs and ensure that the code meets the company's standards for quality and style. But what kinds of tests can you run after a service is operational and deployed to an environment?
 
 ## Learning objectives
 
@@ -29,7 +29,7 @@ If you want to go through just this module, you need to set up a development env
 - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
 - A [GitHub](https://github.com/join?azure-portal=true) account
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-- [.NET 5.0 SDK](https://dotnet.microsoft.com/download/dotnet/5.0?azure-portal=true)
+- [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0?azure-portal=true)
 - [Git](https://git-scm.com/downloads?azure-portal=true)
 
 You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to resources that exist in your Azure subscription.

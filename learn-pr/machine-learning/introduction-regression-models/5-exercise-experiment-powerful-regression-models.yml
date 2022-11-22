@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.introduction-regression-models.exercise-experiment-powerful-regression-models
+title: Exercise - Experiment with more powerful regression models
+metadata:
+  title: Exercise - Experiment with more powerful regression models
+  description: In this exercise, you'll learn how to experiment with more powerful regression models.
+  ms.date: 03/10/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+sandbox: true
+notebook: notebooks/5-exercise-experiment-powerful-regression-models.ipynb

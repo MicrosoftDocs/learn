@@ -13,7 +13,7 @@ prerequisites: |
   None.
 summary: |
   In this learning path, you will see how Azure Data Lake Storage can make processing Big Data analytical solutions more efficient and how easy it is to set up. You will also explore how it fits into common architectures, as well as the different methods of uploading the data to the data store. You will finally examine the myriad of security features that will ensure your data is secure.
-iconUrl: /learn/achievements/data-ai/data-processing-with-azure-adls-trophy.svg
+iconUrl: /training/achievements/data-ai/data-processing-with-azure-adls-trophy.svg
 levels:
 - beginner
 roles:
@@ -23,6 +23,8 @@ products:
 - azure-portal
 - azure-storage
 - azure-virtual-machines
+subjects:
+- data-lake
 modules:
 - learn.data-ai.introduction-to-azure-data-lake-storage
 - learn.data-ai.upload-data-to-azure-data-lake-storage

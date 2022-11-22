@@ -18,7 +18,7 @@ prerequisites: |
   - Working knowledge of common Windows Server management tools
   - Some experience managing typical Windows Server workloads
   - Familiarity with basic PowerShell commands and syntax
-iconUrl: /learn/achievements/4-monitor-windows-server-performance.svg
+iconUrl: /training/achievements/4-monitor-windows-server-performance.svg
 levels:
 - intermediate
 roles:
@@ -27,6 +27,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.monitor-windows-server-performance.introduction
 - learn.wwl.monitor-windows-server-performance.use-performance-monitor-to-identify-performance-problems

@@ -2,7 +2,7 @@ Adding text to a scene can be very informative and can guide the users. Here you
 
 ## Add text to the scene
 
-1. In the Hierarchy pane , right-click the **Table** object and select **3D Object** > **Text - TextMeshPro** to add a text object as a child of the Table object, and then in the Inspector pane, configure the **Rect Transform** component as follows:
+1. In the Hierarchy pane, right-click the **Table** object and select **3D Object** > **Text - TextMeshPro** to add a text object as a child of the Table object, and then in the Inspector pane, configure the **Rect Transform** component as follows:
     * Change **Pos Y** to 1
     * Change **Width** to 1
     * Change **Height** to 1
@@ -43,6 +43,6 @@ Adding text to a scene can be very informative and can guide the users. Here you
     * For the **UHFAntenna_Part**, change the **Tool Tip Text** to **UHF Antenna** field
     * For the **Spectrometer_Part**, change the **Tool Tip Text** to **Spectrometer**
 
-5. Press Play to enter Game mode, and then press-and-hold the right mouse button while moving your mouse until the gaze hits one of the parts and the tooltip for that part displays:
+5. Press Play to enter Game mode. Then, press-and-hold the right mouse button while moving your mouse until the gaze hits one of the parts and the tooltip for that part displays:
 
     :::image type="content" source="../media/tool-tip-triggered.png" alt-text="Screenshot of Unity Play mode split view with tooltip triggered by gaze." lightbox="../media/tool-tip-triggered.png":::

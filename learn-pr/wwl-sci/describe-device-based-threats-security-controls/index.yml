@@ -15,7 +15,7 @@ abstract: |
   - Describe how devices and become cybersecurity threats
   - Describe how to mitigate against device-related threats
 prerequisites: ""
-iconUrl: /learn/achievements/5-describe-device-based-threats-and-security-controls.svg
+iconUrl: /training/achievements/5-describe-device-based-threats-and-security-controls.svg
 levels:
 - beginner
 roles:
@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - m365
+subjects:
+- threat-protection
 units:
 - learn.wwl.describe-device-based-threats-security-controls.introduction
 - learn.wwl.describe-device-based-threats-security-controls.describe-what-your-device-knows-about-you

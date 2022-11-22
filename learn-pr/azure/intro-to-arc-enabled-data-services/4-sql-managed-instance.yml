@@ -4,8 +4,8 @@ metadata:
   title: Deploy a managed database service with Azure Arc-enabled SQL Managed Instance
   description: This unit will describe what Azure Arc-enabled SQL Managed instance provides and why it provides a hybrid data solution for SQL applications. This unit will also compare the features and management capabilities of Azure Arc-enabled SQL Managed Instance with SQL Server and Azure SQL Managed Instance. This unit will also provide more details on the interfaces used with Azure Arc-enabled SQL Managed Instance.
   ms.date: 06/28/2021
-  author: bobward
-  ms.author: bobward
+  author: MikeRayMSFT
+  ms.author: mikeray
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid

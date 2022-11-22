@@ -27,7 +27,7 @@ prerequisites: |
   - Understand how cloud service providers pay for and bill for the cloud
   - Know what datacenters are and why they exist
   - Know how datacenters are set up, powered, and provisioned
-iconUrl: /learn/achievements/cmu-cloud-developer/data-center-to-cloud-service.svg
+iconUrl: /training/achievements/cmu-cloud-developer/data-center-to-cloud-service.svg
 hidden: true
 levels:
 - beginner
@@ -36,6 +36,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.cmu-cloud-computing.cloud-basics.cmu-data-center-cloud-service.0-introduction
 - learn.cmu-cloud-computing.cloud-basics.cmu-data-center-cloud-service.1-middleware

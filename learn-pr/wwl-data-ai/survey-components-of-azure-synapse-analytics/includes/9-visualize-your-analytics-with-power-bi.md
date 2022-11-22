@@ -1,4 +1,4 @@
-You can integrate your Azure Synapse Analytics workspace with a Power BI workspace so that you can get you data from within Azure Synapse Analytics visualized in a Power BI report or dashboard.
+You can integrate your Azure Synapse Analytics workspace with a Power BI workspace so that you can get your data from within Azure Synapse Analytics visualized in a Power BI report or dashboard.
 
 1. You can perform this step by clicking on the visualize icon on the home page of Azure Synapse Studio
  

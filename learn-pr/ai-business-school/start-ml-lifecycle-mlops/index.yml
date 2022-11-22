@@ -17,7 +17,7 @@ abstract: |
   - Describe how to create and manage machine learning models using MLOps processes.
   - Articulate processes to monitor models and respond to incidents. 
 prerequisites: None
-iconUrl: /learn/achievements/start-ml-lifecycle-mlops.svg
+iconUrl: /training/achievements/start-ml-lifecycle-mlops.svg
 levels: 
 - intermediate
 roles: 
@@ -27,7 +27,9 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- machine-learning
+units:
 - learn-wwl.start-ml-lifecycle-mlops.introduction
 - learn-wwl.start-ml-lifecycle-mlops.mlops-introduction
 - learn-wwl.start-ml-lifecycle-mlops.mlops-executive-overview

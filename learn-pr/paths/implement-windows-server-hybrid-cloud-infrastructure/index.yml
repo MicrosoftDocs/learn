@@ -24,7 +24,7 @@ prerequisites: |
     - Monitoring
 summary: |
   You will learn how to address problems relating to the migration of on-premises workloads into Azure. After completing the learning path, you will be able to implement a hybrid Azure infrastructure.
-iconUrl: /learn/achievements/implement-a-windows-server-hybrid-cloud-infrastructure.svg
+iconUrl: /training/achievements/implement-a-windows-server-hybrid-cloud-infrastructure.svg
 levels:
 - intermediate
 roles:
@@ -38,6 +38,8 @@ products:
 - azure-portal
 - azure-storage
 - azure-virtual-machines
+subjects:
+- migration
 modules:
 - learn.wwl.implement-hybrid-network-infrastructure
 - learn.wwl.implement-hybrid-identity-with-windows-server

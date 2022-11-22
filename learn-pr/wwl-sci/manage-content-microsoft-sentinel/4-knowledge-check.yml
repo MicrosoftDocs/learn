@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-content-microsoft-sentinel.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/01/2022
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You can connect Microsoft Sentinel to which repositories?"
+    choices:
+    - content: "Azure DevOps only"
+      isCorrect: false
+      explanation: "Incorrect.  Both repository types are supported."
+    - content: "GitHub only"
+      isCorrect: false
+      explanation: "Incorrect.  Both repository types are supported."
+    - content: "GitHub and Azure DevOps"
+      isCorrect: true
+      explanation: "Correct.  Both repository types are supported."
+  - content: "Which content type is supported by content hub solutions?"
+    choices:
+    - content: "Advanced Multistage Attack Detection Fusion Rule"
+      isCorrect: false
+      explanation: "Incorrect. Parsers are supported in a content hub solution."
+    - content: "Parsers"
+      isCorrect: true
+      explanation: "Correct. Parsers are supported in a content hub solution."
+    - content: "Search job"
+      isCorrect: false
+      explanation: "Incorrect.  Parsers are supported in a content hub solution."
+  - content: "What is the maximum number of repository connections allowed for each Microsoft Sentinel workspace?"
+    choices:
+    - content: "3"
+      isCorrect: false
+      explanation: "Incorrect. Five is the maximum connections for each workspace."
+    - content: "5"
+      isCorrect: true
+      explanation: "Correct.  Five is the maximum connections for each workspace."
+    - content: "10"
+      isCorrect: false
+      explanation: "Incorrect. Five is the maximum connections for each workspace."

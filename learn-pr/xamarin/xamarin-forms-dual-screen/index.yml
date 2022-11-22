@@ -4,8 +4,8 @@ metadata:
   title: "Build dual-screen Xamarin.Forms apps by using TwoPaneView"
   description: In this module, you'll use TwoPaneView and DualScreenInfo to 
   ms.date: 08/12/2020
-  author: conceptdev
-  ms.author: crdun
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
 title: "Build dual-screen Xamarin.Forms apps by using TwoPaneView"
@@ -18,7 +18,7 @@ abstract: |
   - See how TwoPaneView also adapts to larger screens, and how to detect hinge angle changes
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
-iconUrl: /learn/achievements/xamarin/xamarin-forms-dual-screen-badge.svg
+iconUrl: /training/achievements/xamarin/xamarin-forms-dual-screen-badge.svg
 levels: 
 - intermediate
 roles: 

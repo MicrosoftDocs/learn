@@ -15,6 +15,6 @@ Azure Cosmos DB has support for all three types of bindings in Azure Functions:
 | **Output** | Write one or more items to a container |
 
 > [!NOTE]
-> The bindings referenced here are only supported by the SQL API.
+> The bindings referenced here are only supported by the NoSQL API.
 
 ![Diagram illustrating an Azure Function with an Azure Cosmos DB trigger, generic input, and generic output.](../media/2-bindings-cosmos-db.png)

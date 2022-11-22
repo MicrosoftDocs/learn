@@ -1,6 +1,6 @@
-A JOIN in Azure Cosmos DB SQL API is different from a JOIN in a relational database as its only scope is a single item. A JOIN creates a cross-product between different sections of a single item.
+A JOIN in Azure Cosmos DB for NoSQL is different from a JOIN in a relational database as its only scope is a single item. A JOIN creates a cross-product between different sections of a single item.
 
-Let’s take this example JSON object, which has a **name** property and an array with two objects that each have their own **group** property:
+Let’s take this example JSON object, which has a **name** property and an array with three objects that each have their own **group** property:
 
 ```json
 {
@@ -40,7 +40,7 @@ If you create a cross-product of the **name** and **group** properties, you will
 ]
 ```
 
-So, how can you create this type of cross-product in a SQL query? The ``JOIN`` keyword in Azure Cosmos DB SQL API returns all possible combinations of values within two sets. Let’s use a different example JSON object with a more complex group of tags:
+So, how can you create this type of cross-product in a SQL query? The ``JOIN`` keyword in Azure Cosmos DB for NoSQL returns all possible combinations of values within two sets. Let’s use a different example JSON object with a more complex group of tags:
 
 ```json
 {

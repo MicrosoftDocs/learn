@@ -19,7 +19,7 @@ prerequisites: |
   - Experience writing web apps in Java
   - Familiarity with [IntelliJ IDEA](https://www.jetbrains.com/idea/) to create projects in Java
   - The [Azure Toolkit for IntelliJ](/azure/developer/java/toolkit-for-intellij/)
-iconUrl: /learn/achievements/publish-a-web-app-to-azure-by-using-azure-toolkit-for-intellij.svg
+iconUrl: /training/achievements/publish-a-web-app-to-azure-by-using-azure-toolkit-for-intellij.svg
 levels:
 - beginner
 roles:
@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-virtual-machines
+subjects:
+- development-tools
 units:
 - learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.1-introduction
 - learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.2-create-web-app-intellij

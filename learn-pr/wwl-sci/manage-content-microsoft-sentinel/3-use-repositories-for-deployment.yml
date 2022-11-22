@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-content-microsoft-sentinel.use-repositories-for-deployment
+title: Use repositories for deployment
+metadata:
+  title: Use repositories for deployment
+  description: "Use repositories for deployment"
+  ms.date: 07/01/2022
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-use-repositories-for-deployment.md)]

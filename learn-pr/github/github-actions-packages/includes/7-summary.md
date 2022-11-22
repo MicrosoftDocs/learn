@@ -11,7 +11,6 @@ You learned about:
 
 Here are some links to more information on the topics we discussed in this module:
 
-- [Publishing a Package](https://docs.github.com/free-pro-team@latest/packages/publishing-and-managing-packages/publishing-a-package)
-- [Using GitHub Packages with your project's ecosystem](https://docs.github.com/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem)
 - [Publishing a package](https://docs.github.com/packages/learn-github-packages/publishing-a-package)
+- [Using GitHub Packages with your project's ecosystem](https://docs.github.com/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem)
 - [Pushing and pulling Docker images](https://docs.github.com/packages/guides/pushing-and-pulling-docker-images)

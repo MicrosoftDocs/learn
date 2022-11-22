@@ -32,4 +32,4 @@ The design serves two more purposes, besides generating watermarks:
 Notice that when you choose to use **arrival time** as the event time, there is no need to configure the out-of-order tolerance and late arrival tolerance. Since **arrival time** is guaranteed to be monotonically increasing in the input event broker, Azure Stream Analytics simply disregards the configurations.
 
 > [!NOTE]
-> You can find additional information describing more advanced time handling considerations here:[ https://docs.microsoft.com/azure/stream-analytics/stream-analytics-time-handling](/azure/stream-analytics/stream-analytics-time-handling)
+> You can review additional information describing [more advanced time handling considerations](/azure/stream-analytics/stream-analytics-time-handling).

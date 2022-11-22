@@ -19,7 +19,7 @@ summary: |
     - Assign file access permissions
     - Script tasks
 prerequisites: None
-iconUrl: /learn/achievements/shell-linux-command-line.svg
+iconUrl: /training/achievements/shell-linux-command-line.svg
 levels:
 - beginner
 - intermediate
@@ -31,6 +31,8 @@ roles:
 products:
 - azure-devops
 - azure
+subjects:
+- development-tools
 modules:
 - learn.student-evangelism.bash-introduction
 - learn.student-evangelism.unix-shell-wrangle-data

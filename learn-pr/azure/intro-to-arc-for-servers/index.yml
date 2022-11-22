@@ -18,7 +18,7 @@ abstract: |
   - How can you simplify management and maintenance of Azure Arc enabled servers?
 prerequisites: |
   -Basic experience with Azure services
-iconUrl: /learn/achievements/intro-to-arc-for-servers.svg
+iconUrl: /training/achievements/intro-to-arc-for-servers.svg
 levels:
 - beginner
 roles:
@@ -29,6 +29,8 @@ roles:
 products:
 - azure
 - azure-arc
+subjects:
+- networking
 units:
 - learn.azure.intro-to-arc-for-servers.introduction
 - learn.azure.intro-to-arc-for-servers.characteristics-azure-arc-enabled-servers

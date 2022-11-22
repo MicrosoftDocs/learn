@@ -4,7 +4,7 @@ This section describes various operations you can perform by using Azure Active 
 
 You can configure the Azure AD Connect Health service to send email notifications when alerts indicate that your identity infrastructure is not healthy. This occurs when an alert is generated, and when it is resolved.
 
-:::image type="content" source="../media/email-notifications-discover-b4e716c2.png" alt-text="Screenshot of Azure AD Connect Health email notification settings.":::
+:::image type="content" source="../media/email-notifications-discover-697eb478.png" alt-text="Screenshot of Azure A D Connect Health email notification settings. Enter your admin's email.":::
 
 
 > [!NOTE]
@@ -12,12 +12,12 @@ You can configure the Azure AD Connect Health service to send email notification
 
 ### To enable Azure AD Connect Health email notifications
 
-1.  Open the **Alerts** blade for the service for which you want to receive email notification.
-2.  From the action bar, click **Notification Settings**.
-3.  At the email notification switch, select **ON**.
-4.  Select the check box if you want all global administrators to receive email notifications.
-5.  If you want to receive email notifications at any other email addresses, specify them in the **Additional Email Recipients** box. To remove an email address from this list, right-click the entry and select **Delete**.
-6.  To finalize the changes, click **Save**. Changes take effect only after you save.
+1. Open the **Alerts** blade for the service for which you want to receive email notification.
+1. From the action bar, click **Notification Settings**.
+1. At the email notification switch, select **ON**.
+1. Select the check box if you want all global administrators to receive email notifications.
+1. If you want to receive email notifications at any other email addresses, specify them in the **Additional Email Recipients** box. To remove an email address from this list, right-click the entry and select **Delete**.
+1. To finalize the changes, click **Save**. Changes take effect only after you save.
 
 > [!NOTE]
 > When there are issues processing synchronization requests in our back-end service, this service sends a notification email with the details of the error to the administrative contact email address(es) of your tenant. We heard feedback from customers that in certain cases the volume of these messages is prohibitively large so we are changing the way we send these messages.
@@ -45,22 +45,21 @@ When you're deleting a server, be aware of the following:
 
 Azure AD Connect Health for Active Directory Federation Services (AD FS) and Azure AD Connect (Sync):
 
-1.  Open the **Server** blade from the **Server List** blade by selecting the server name to be removed.
-2.  On the **Server** blade, from the action bar, click **Delete**.
-
-:::image type="content" source="../media/delete-server-2-4b3abb8a.png" alt-text="Screenshot of Azure AD Connect Health delete server.":::
-
-
-3.  Confirm by typing the server name in the confirmation box.
-4.  Click **Delete**.
+1. Open the **Server** blade from the **Server List** blade by selecting the server name to be removed.
+1. On the **Server** blade, from the action bar, click **Delete**.
+    
+    :::image type="content" source="../media/delete-server-2-1e9e75dc.png" alt-text="Screenshot of Azure A D Connect Health delete server.  Only keep servers that are active.":::
+    
+1. Confirm by typing the server name in the confirmation box.
+1. Click **Delete**.
 
 Azure AD Connect Health for Azure Active Directory Domain Services:
 
-1.  Open the **Domain Controllers** dashboard.
-2.  Select the domain controller to be removed.
-3.  From the action bar, click **Delete Selected**.
-4.  Confirm the action to delete the server.
-5.  Click **Delete**.
+1. Open the **Domain Controllers** dashboard.
+1. Select the domain controller to be removed.
+1. From the action bar, click **Delete Selected**.
+1. Confirm the action to delete the server.
+1. Click **Delete**.
 
 ### Delete a service instance from Azure AD Connect Health service
 
@@ -75,14 +74,13 @@ When you're deleting a service instance, be aware of the following:
 
 ### To delete a service instance from the Azure AD Connect Health service
 
-1.  Open the **Service** blade from the **Service List** blade by selecting the service identifier (farm name) that you want to remove.
-2.  On the **Service** blade, from the action bar, click **Delete**.
-
-:::image type="content" source="../media/delete-server-b9cf3dac.png" alt-text="Screenshot of Azure AD Connect Health delete service.":::
-
-
-3.  Confirm by typing the service name in the confirmation box (for example: sts.contoso.com).
-4.  Click **Delete**.
+1. Open the **Service** blade from the **Service List** blade by selecting the service identifier (farm name) that you want to remove.
+1. On the **Service** blade, from the action bar, click **Delete**.
+    
+    :::image type="content" source="../media/delete-server-9ebbd5de.png" alt-text="Screenshot of Azure A D Connect Health delete service.  Remove unwanted services.":::
+    
+1. Confirm by typing the service name in the confirmation box (for example: sts.contoso.com).
+1. Click **Delete**.
 
 ## Manage access with Azure Role Based Access Control
 
@@ -92,39 +90,11 @@ When you're deleting a service instance, be aware of the following:
 
 Azure AD Connect Health supports the following built-in roles:
 
-:::row:::
-  :::column:::
-    **Role**
-  :::column-end:::
-  :::column:::
-    **Permissions**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Owner
-  :::column-end:::
-  :::column:::
-    Owners can *manage access* (for example, assign a role to a user or group), *view all information* (for example, view alerts) from the portal, and *change settings* (for example, email notifications) within Azure AD Connect Health.By default, Azure AD global administrators are assigned this role, and this cannot be changed.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Contributor
-  :::column-end:::
-  :::column:::
-    Contributors can *view all information* (for example, view alerts) from the portal, and *change settings* (for example, email notifications) within Azure AD Connect Health.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Reader
-  :::column-end:::
-  :::column:::
-    Readers can *view all information* (for example, view alerts) from the portal within Azure AD Connect Health.
-  :::column-end:::
-:::row-end:::
-
+| **Role**    | **Permissions**                                                                                                                                                                                                                                                                                                                        |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Owner       | Owners can *manage access* (for example, assign a role to a user or group), *view all information* (for example, view alerts) from the portal, and *change settings* (for example, email notifications) within Azure AD Connect Health. By default, Azure AD global administrators are assigned this role, and this cannot be changed. |
+| Contributor | Contributors can *view all information* (for example, view alerts) from the portal, and *change settings* (for example, email notifications) within Azure AD Connect Health.                                                                                                                                                           |
+| Reader      | Readers can *view all information* (for example, view alerts) from the portal within Azure AD Connect Health.                                                                                                                                                                                                                          |
 
 All other roles (such as User Access Administrators or DevTest Labs Users) have no impact to access within Azure AD Connect Health, even if the roles are available in the portal experience.
 
@@ -147,24 +117,21 @@ To allow a user access at the *all service instances* level within Azure AD Conn
 
 **Step 2: Add users and groups, and assign roles**
 
-1.  From the **Configure** section, click **Users**.
-
-:::image type="content" source="../media/start-role-based-access-control-849f7691.png" alt-text="Screenshot of Azure AD Connect Health resource sidebar":::
-
-
-2.  Select **Add**.
-3.  In the **Select a role** pane, select a role (for example, **Owner**).
-
-:::image type="content" source="../media/role-based-access-control-add-f198c4e8.png" alt-text="Screenshot of Azure AD Connect Health and Azure RBAC configure menu":::
-
-
-4.  Type the name or identifier of the targeted user or group. You can select one or more users or groups at the same time. Click **Select**.
-
-:::image type="content" source="../media/role-based-access-control-select-users-c12962bf.png" alt-text="Screenshot of Azure AD Connect Health and Azure RBAC and new users highlighted":::
-
-
-5.  Select **OK**.
-6.  After the role assignment is complete, the users and groups appear in the list.
+1. From the **Configure** section, click **Users**.
+    
+    :::image type="content" source="../media/start-role-based-access-control-7a8afaa9.png" alt-text="Screenshot of Azure A D Connect Health resource sidebar.  Add the users you need.":::
+    
+1. Select **Add**.
+1. In the **Select a role** pane, select a role (for example, **Owner**).
+    
+    :::image type="content" source="../media/role-based-access-control-add-73b3e096.png" alt-text="Screenshot of Azure A D Connect Health and Azure R B A C configure menu.":::
+    
+1. Type the name or identifier of the targeted user or group. You can select one or more users or groups at the same time. Click **Select**.
+    
+    :::image type="content" source="../media/role-based-access-control-select-users-cdbd95a8.png" alt-text="Screenshot of Azure A D Connect Health and Azure R B A C and new users highlighted.":::
+    
+1. Select **OK**.
+1. After the role assignment is complete, the users and groups appear in the list.
 
 Now the listed users and groups have access, according to their assigned roles.
 
@@ -175,20 +142,17 @@ Now the listed users and groups have access, according to their assigned roles.
 
 **Step 3: Share the blade location with users or groups**
 
-1.  After you assign permissions, a user can access Azure AD Connect Health by going [here](https://aka.ms/aadconnecthealth).
-2.  On the blade, the user can pin the blade, or different parts of it, to the dashboard. Simply click the **Pin to dashboard** icon.
-
-:::image type="content" source="../media/role-based-access-control-pin-blade-23a2e86d.png" alt-text="Screenshot of Azure AD Connect Health and Azure RBAC pin blade, with pin icon highlighted":::
-
-
-> [!NOTE]
-> A user with the Reader role assigned is not able to get Azure AD Connect Health extension from the Azure Marketplace. The user cannot perform the necessary "create" operation to do so. The user can still get to the blade by going to the preceding link. For subsequent usage, the user can pin the blade to the dashboard.
+1. After you assign permissions, a user can access Azure AD Connect Health by going [here](https://aka.ms/aadconnecthealth).
+1. On the blade, the user can pin the blade, or different parts of it, to the dashboard. Simply click the **Pin to dashboard** icon.
+    
+    :::image type="content" source="../media/role-based-access-control-pin-blade-171b7351.png" alt-text="Screenshot of Azure A D Connect Health and Azure R B A C pin blade, with pin icon highlighted.":::
+    
 
 ### Remove users or groups
 
 You can remove a user or a group added to Azure AD Connect Health and Azure RBAC. Simply right-click the user or group, and select **Remove**.
 
-:::image type="content" source="../media/role-based-access-control-remove-7649ef67.png" alt-text="Screenshot of Azure AD Connect Health and Azure RBAC with Remove highlighted":::
+:::image type="content" source="../media/role-based-access-control-remove-460239f8.png" alt-text="Screenshot of Azure A D Connect Health and Azure R B A C with Remove highlighted.":::
 
 
 ## Diagnose and remediate duplicated attribute sync errors<br>
@@ -207,7 +171,7 @@ Taking one step farther to highlight sync errors, Azure Active Directory (Azure 
 
 When **QuarantinedAttributeValueMustBeUnique** and **AttributeValueMustBeUnique** sync errors happen, it's common to see a **UserPrincipalName** or **Proxy Addresses** conflict in Azure AD. You might solve the sync errors by updating the conflicting source object from the on-premises side. The sync error will be resolved after the next sync. For example, this image indicates that two users have a conflict of their **UserPrincipalName**. Both are **Joe.J@contoso.com**. The conflicting objects are quarantined in Azure AD.
 
-:::image type="content" source="../media/identity-fix-common-case-3aaf9002.png" alt-text="Diagnose sync error common scenario":::
+:::image type="content" source="../media/identity-fix-common-case-526debc8.png" alt-text="Diagram of the Diagnose sync error common scenarios.  Most likely place to see errors.":::
 
 
 ### Orphaned object scenario
@@ -218,104 +182,38 @@ When an existing user is a cloud-only object, you can also see the conflicting u
 
 As an example, the existing object in Azure AD preserves the license of Joe. A newly synchronized object with a different **Source Anchor** occurs in a duplicated attribute state in Azure AD. Changes for Joe in on-premises Active Directory won't be applied to Joe’s original user (existing object) in Azure AD.
 
-:::image type="content" source="../media/identity-fix-orphaned-case-78740929.png" alt-text="Diagnose sync error orphaned object scenario":::
+:::image type="content" source="../media/identity-fix-orphaned-case-9d4eccc4.png" alt-text="Screenshot of the Diagnose sync error orphaned object scenario.  Track down objects that are orphaned.":::
 
 
 ## Diagnostic and troubleshooting steps in Connect Health
 
 The diagnose feature supports user objects with the following duplicated attributes:
 
-:::row:::
-  :::column:::
-    **Attribute name**
-  :::column-end:::
-  :::column:::
-    **Synchronization error types**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    UserPrincipalName
-  :::column-end:::
-  :::column:::
-    QuarantinedAttributeValueMustBeUnique or AttributeValueMustBeUnique
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    ProxyAddresses
-  :::column-end:::
-  :::column:::
-    QuarantinedAttributeValueMustBeUnique or AttributeValueMustBeUnique
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    SipProxyAddress
-  :::column-end:::
-  :::column:::
-    AttributeValueMustBeUnique
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    OnPremiseSecurityIdentifier
-  :::column-end:::
-  :::column:::
-    AttributeValueMustBeUnique
-  :::column-end:::
-:::row-end:::
-
+| **Attribute name**          | **Synchronization error types**                                     |
+| --------------------------- | ------------------------------------------------------------------- |
+| UserPrincipalName           | QuarantinedAttributeValueMustBeUnique or AttributeValueMustBeUnique |
+| ProxyAddresses              | QuarantinedAttributeValueMustBeUnique or AttributeValueMustBeUnique |
+| SipProxyAddress             | AttributeValueMustBeUnique                                          |
+| OnPremiseSecurityIdentifier | AttributeValueMustBeUnique                                          |
 
 > [!IMPORTANT]
 > To access this feature, Global Admin permission, or Contributor permission from Azure RBAC, is required.
 
 Follow the steps from the Azure portal to narrow down the sync error details and provide more specific solutions:
 
-:::image type="content" source="../media/identity-fix-steps-99968904.png" alt-text="Sync error diagnosis steps":::
+:::image type="content" source="../media/identity-fix-steps-93d07aa5.png" alt-text="Digram of the Sync error diagnosis steps.  Use these steps to reach a resolution.":::
 
 
 From the Azure portal, take a few steps to identify specific fixable scenarios:
 
-1.  Check the **Diagnose status** column. The status shows if there's a possible way to fix a sync error directly from Azure Active Directory. In other words, a troubleshooting flow exists that can narrow down the error case and potentially fix it.
+1. Check the **Diagnose status** column. The status shows if there's a possible way to fix a sync error directly from Azure Active Directory. In other words, a troubleshooting flow exists that can narrow down the error case and potentially fix it.
     
-    :::row:::
-      :::column:::
-        **Status**
-      :::column-end:::
-      :::column:::
-        **What does it mean?**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Not Started
-      :::column-end:::
-      :::column:::
-        You haven't visited this diagnosis process. Depending on the diagnostic result, there's a potential way to fix the sync error directly from the portal.
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Manual Fix Required
-      :::column-end:::
-      :::column:::
-        The error doesn't fit the criteria of available fixes from the portal. Either conflicting object types aren't users, or you already went through the diagnostic steps, and no fix resolution was available from the portal. In the latter case, a fix from the on-premises side is still one of the solutions.
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Pending Sync
-      :::column-end:::
-      :::column:::
-        A fix was applied. The portal is waiting for the next sync cycle to clear the error.
-      :::column-end:::
-    :::row-end:::
-    
-    
-    > [!IMPORTANT]
-    > The diagnostic status column will reset after each sync cycle.
-2.  Select the **Diagnose** button under the error details. You'll answer a few questions and identify the sync error details. Answers to the questions help identify an orphaned object case.
-3.  If a **Close** button appears at the end of the diagnostics, there's no quick fix available from the portal based on your answers. Refer to the solution shown in the last step. Fixes from on-premises are still the solutions. Select the **Close** button. The status of the current sync error switches to **Manual fix required**. The status stays during the current sync cycle.
-4.  After an orphaned object case is identified, you can fix the duplicated attributes sync errors directly from the portal. To trigger the process, select the **Apply Fix** button. The status of the current sync error updates to **Pending sync**.
-5.  After the next sync cycle, the error should be removed from the list.
+    | **Status**          | **What does it mean?**                                                                                                                                                                                                                                                                                         |
+    | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | Not Started         | You haven't visited this diagnosis process. Depending on the diagnostic result, there's a potential way to fix the sync error directly from the portal.                                                                                                                                                        |
+    | Manual Fix Required | The error doesn't fit the criteria of available fixes from the portal. Either conflicting object types aren't users, or you already went through the diagnostic steps, and no fix resolution was available from the portal. In the latter case, a fix from the on-premises side is still one of the solutions. |
+    | Pending Sync        | A fix was applied. The portal is waiting for the next sync cycle to clear the error.                                                                                                                                                                                                                           |
+1. Select the **Diagnose** button under the error details. You'll answer a few questions and identify the sync error details. Answers to the questions help identify an orphaned object case.
+1. If a **Close** button appears at the end of the diagnostics, there's no quick fix available from the portal based on your answers. Refer to the solution shown in the last step. Fixes from on-premises are still the solutions. Select the **Close** button. The status of the current sync error switches to **Manual fix required**. The status stays during the current sync cycle.
+1. After an orphaned object case is identified, you can fix the duplicated attributes sync errors directly from the portal. To trigger the process, select the **Apply Fix** button. The status of the current sync error updates to **Pending sync**.
+1. After the next sync cycle, the error should be removed from the list.

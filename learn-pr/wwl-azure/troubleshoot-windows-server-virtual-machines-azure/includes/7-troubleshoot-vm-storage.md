@@ -37,7 +37,7 @@ You can eliminate this administrative overhead by using managed disks. With this
 - Ability to create an Azure VM from a custom image stored in any storage account in the same region and the same subscription
 
 > [!IMPORTANT]
-> Ensure that you select the appropriate disk type when you deploy your VMs. Although you can convert Azure VM unmanaged disks to managed disks, this requires stopping and deallocating all VMs in the availability set. In addition, there is no support for converting managed disks to unmanaged disks.
+> Ensure that you select the appropriate disk type when you deploy your VMs. Although you can convert Azure VM unmanaged disks to managed disks, this requires stopping and deallocating all VMs in the availability set. In addition, there is no support for converting managed disks to unmanaged disks.
 ## What are the common storage issues?
 
 Aside from the performance issues we discussed earlier in this module, you might occasionally encounter storage problems with your Azure VMs. There are a number of common issues that you might encounter. These include:
@@ -174,4 +174,4 @@ This status error can occur if you use low-level commands to directly unencrypt 
 - Update important platform level encryption settings and extension settings associated with the VM
 
 > [!NOTE]
-> If these are not kept in alignment, the platform can't report encryption status or provision the VM properly.
+> If these are not kept in alignment, the platform can't report encryption status or provision the VM properly.

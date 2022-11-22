@@ -110,9 +110,9 @@ This proxy doesn't provide DNS services by itself. A DNS cluster add-on based on
 
 ### What is the container runtime?
 
-The container runtime is the underlying software that runs containers on a Kubernetes cluster. The runtime is responsible for fetching, starting, and stopping container images. Kubernetes supports several container runtimes, including but not limited to Docker, rkt, CRI-O, containerd, and frakti. The support for many container runtime types is based on the Container Runtime Interface (CRI). The CRI is a plug-in design that enables the kubelet to communicate with the available container runtime.
+The container runtime is the underlying software that runs containers on a Kubernetes cluster. The runtime is responsible for fetching, starting, and stopping container images. Kubernetes supports several container runtimes, including but not limited to Docker, containerd, rkt, CRI-O, and frakti. The support for many container runtime types is based on the Container Runtime Interface (CRI). The CRI is a plug-in design that enables the kubelet to communicate with the available container runtime.
 
-The default container runtime in AKS is Docker. However, you can also use Kata Containers and containerd (available as a daemon for Windows and Linux).
+The default container runtime in AKS is Docker. However, AKS now supports creation of clusters and node pools with containerd, an industry-standard container runtime, in preview. Containerd will become the default container runtime for AKS when containerd support becomes generally available.
 
 ## Interact with a Kubernetes cluster
 
@@ -156,7 +156,7 @@ Here are the phases in a pod's lifecycle:
 
 | Phase | Description |
 |---|---|
-| Pending | The pod has been accepted by the cluster, but one or more of the containers is not set up or ready to run. The Pending status includes the time a pod is waiting to be scheduled and the time spent downloading container images. |
+| Pending | The pod has been accepted by the cluster, but one or more of the containers isn't set up or ready to run. The Pending status includes the time a pod is waiting to be scheduled and the time spent downloading container images. |
 | Running | The pod transitions to a running state after all of the resources within the pod are ready. |
 | Succeeded | The pod transitions to a succeeded state after the pod completes its intended task, and runs successfully. |
 | Failed | Pods can fail for various reasons. A container in the pod may have failed, leading to the termination of all other containers. Or, maybe an image wasn't found during preparation of the pod containers. In these types of cases, the pod can go to a failed state. Pods can transition to a failed state from either a pending state or a running state. A specific failure can also place a pod back in the pending state. |

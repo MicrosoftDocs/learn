@@ -28,7 +28,7 @@ prerequisites: |
   - Security-related technologies (firewalls, encryption, multi-factor authentication).
   - Windows PowerShell scripting.
   - Automation and monitoring.
-iconUrl: /learn/achievements/manage-azure-updates.svg
+iconUrl: /training/achievements/manage-azure-updates.svg
 levels:
 - intermediate
 roles:
@@ -40,6 +40,10 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- cloud-computing
+- virtual-machine
+- device-management
 units:
 - learn.wwl.manage-azure-updates.introduction
 - learn.wwl.manage-azure-updates.describe-update-management

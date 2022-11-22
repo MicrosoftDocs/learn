@@ -2,7 +2,7 @@ In this unit, you complete the *Coupon.API* project. You'll then run a script to
 
 ## Add the coupon service
 
-You can find an ASP.NET Core project for the coupon service in the *:::no-loc text="src/Services/Coupon/Coupon.API":::* directory. Locate that directory in the Cloud Shell editor. Apply the following changes to the service:
+You can find an ASP.NET Core project for the coupon service in the *:::no-loc text="src/Services/Coupon/Coupon.API":::* directory. Locate that directory in the explorer pane. Apply the following changes to the service:
 
 1. In *:::no-loc text="Controllers/CouponController.cs":::*, replace the comment `// Add the GetCouponByCodeAsync method` with the following code:
 
@@ -35,7 +35,7 @@ You can find an ASP.NET Core project for the coupon service in the *:::no-loc te
 1. Add real-time HTTP health checking to the coupon service by applying the following changes in *Startup.cs*:
     1. In the `ConfigureServices` method, invoke the custom `AddCustomHealthCheck` extension method immediately after the `AddSwagger` method call:
 
-        :::code language="csharp" source="../code/src/services/coupon/coupon.api/Startup.cs" id="snippet_ConfigureServicesMethod" highlight="13":::
+        :::code language="csharp" source="../code/src/services/coupon/coupon.api/Startup.cs" id="snippet_ConfigureServicesMethod" highlight="12-13":::
 
         With the preceding change:
 
@@ -97,7 +97,7 @@ You can find an ASP.NET Core project for the coupon service in the *:::no-loc te
             spec:
               containers:
                 - name: coupon-api
-                  image: {{ .Values.registry }}/coupon.api:linux-latest
+                  image: {{ .Values.registry }}/coupon.api:linux-net6-initial
                   imagePullPolicy: Always
                   ports:
                     - containerPort: 80
@@ -122,15 +122,15 @@ You can find an ASP.NET Core project for the coupon service in the *:::no-loc te
                         name: coupon-cm
         ```
 
-1. Run the following command to build the coupon service project:
+1. Save all your changes. In the terminal pane you created earlier, run the following command to build the coupon service project:
 
     ```dotnetcli
-    dotnet build src/Services/Coupon/Coupon.API/
+    dotnet build ../../src/Services/Coupon/Coupon.API/
     ```
 
     The build succeeds with no warnings. If the build fails, check the output for troubleshooting information.
 
-1. Open *:::no-loc text="src/Services/Coupon/Coupon.API/Dockerfile":::* in the Azure Cloud Shell editor. Notice the following things in this *:::no-loc text="Dockerfile":::*:
+1. Open *:::no-loc text="src/Services/Coupon/Coupon.API/Dockerfile":::*. Notice the following things in this *:::no-loc text="Dockerfile":::*:
 
     * The ASP.NET Core runtime image is used as the base image of the multistage build.
     * The .NET SDK image is acquired to support the running of the following .NET Core CLI commands against the *:::no-loc text="Coupon.API":::* project:
@@ -140,15 +140,11 @@ You can find an ASP.NET Core project for the coupon service in the *:::no-loc te
     * The final image contains the ASP.NET Core runtime and the published coupon service artifacts.
     * When you start a container from the final image, you start the coupon service by running `dotnet Coupon.API.dll`.
 
-1. Run the following script in the command shell to make additional configuration changes for the coupon service:
+1. Run the following script in the terminal to make additional configuration changes for the coupon service:
 
     ```bash
-    ./deploy/k8s/implementation-script.sh
+    ./implementation-script.sh
     ```
-
-    > [!TIP]
-    > This unit uses scripts to keep focus on the learning objectives. You can inspect the scripts in the Cloud Shell editor to better understand the commands used.
-
     The preceding script:
 
     * Uncomments HTML markup in the *:::no-loc text="WebSPA":::* checkout and order details Angular components. This supports accepting coupon codes and displaying discount amounts, respectively. The following HTML markup in the *:::no-loc text="Web/WebSPA/Client/src/modules/orders":::* directory is uncommented:
@@ -198,19 +194,19 @@ You don't have permissions to make changes to the Container Registry of Microsof
 
 ## Build the coupon service in Container Registry
 
-Run the following script in the command shell. This builds the coupon service and *:::no-loc text="WebSPA":::* app container images, and hosts them in Container Registry:
+Run the following script in the terminal. This builds the coupon service and *:::no-loc text="WebSPA":::* app container images, and hosts them in Container Registry:
 
 ```bash
-./deploy/k8s/build-to-acr.sh
+./build-to-acr.sh
 ```
 
 The preceding script builds the container images in Container Registry by using the `az acr build` command, with the provided *:::no-loc text="Dockerfile":::* files for the *:::no-loc text="Coupon.API":::* and *:::no-loc text="WebSPA":::* projects.
 
-Note that the solution isn't being built in your Cloud Shell instance. The build occurs in the cloud when the container image is sent to Container Registry. You can see build output shown in the command shell. The `az acr build` command used by the script is shown in the command shell, with the correct parameters. The command resembles the following example:
+Note that the solution isn't being built in your development container. The build occurs in the cloud when the container image is sent to Container Registry. You can see build output shown in the terminal. The `az acr build` command used by the script is shown in the terminal, with the correct parameters. The command resembles the following example (for reference only, do not run):
 
 ```azurecli
 az acr build --registry eshoplearn \
-     --image eshoplearn.azurecr.io/coupon.api:linux-latest \
+     --image eshoplearn.azurecr.io/coupon.api:linux-net6-coupon \
      --file src/Services/Coupon/Coupon.API/Dockerfile \
      .
 ```

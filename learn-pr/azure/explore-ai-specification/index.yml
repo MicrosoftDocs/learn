@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.oxford.explore-ai-specification
+metadata:
+  title: Explore AI Specification document 
+  description: We explain how to fill out AI Specification document for Autonomous AI use case.
+  ms.date: 10/21/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore AI Specification document 
+summary: In this module, you'll learn how to fill out an AI specification document for an Autonomous AI use case.
+abstract: |
+  After completing this module, you'll be able to:
+  - Understand how to fill out an AI Specification document for a use case of your choice
+prerequisites: |
+
+  -	Basic knowledge of Automated Intelligence
+  - Basic knowledge of Autonomous Intelligence
+  -	Basic knowledge of Machine Teaching 
+  - Basic knowledge of brain design patterns
+  - Basic knowledge of selecting use cases for Autonomous AI
+iconUrl: /training/achievements/generic-badge.svg
+levels: 
+- beginner
+roles: 
+- business-user
+products: 
+- azure
+subjects:
+- artificial-intelligence
+units:
+- learn.oxford.explore-ai-specification.introduction
+- learn.oxford.explore-ai-specification.design-ai-specification
+- learn.oxford.explore-ai-specification.knowledge-check
+- learn.oxford.explore-ai-specification.summary
+badge: 
+  uid: learn.oxford.explore-ai-specification.badge

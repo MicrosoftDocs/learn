@@ -16,7 +16,7 @@ The industry is always evolving better ways to ensure code quality with tests. T
 
 Unit tests are the most basic types of tests and make up the base of the testing pyramid. They should be specific to one method or the smallest testable unit of code. A method can have many unit tests to cover all its functionality, given a range of parameters. These tests are the easiest to write and also the easiest to debug because they should be the simplest way to exercise the piece of code that they test.
 
-For example, let's say you have a method that parses a postal address from a string of input. Good unit tests for this method would insert many kinds of different postal addresses to make sure they were parsed correctly by the method, and matched the expected result. One unit test might insert a postal address from a different country as a string. Another might insert a string that had special characters to make sure it doesn't break your parser. Unit tests should be testing small aspects of the functionality of your app so that, if the test fails, it's easy to determine what functionality failed.
+For example, let's say you have a method that parses a postal address from a string of input. Good unit tests for this method would insert many kinds of different postal addresses to make sure they were parsed correctly by the method, and matched the expected result. One unit test might insert a postal address from a different country/region as a string. Another might insert a string that had special characters to make sure it doesn't break your parser. Unit tests should be testing small aspects of the functionality of your app so that, if the test fails, it's easy to determine what functionality failed.
 
 ### Integration tests
 

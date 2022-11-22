@@ -17,7 +17,7 @@ abstract: |
   - Identify PowerShell elements such as cmdlets, parameters, inputs, and outputs.
 prerequisites: None
 ratingEnabled: true
-iconUrl: /learn/achievements/powershell/powershell-write-first-code.svg
+iconUrl: /training/achievements/powershell/powershell-write-first-code.svg
 levels:
 - beginner
 roles:
@@ -27,6 +27,8 @@ products:
 - dotnet
 languages:
 - powershell
+subjects:
+- development-tools
 units:
 - learn.languages.powershell-write-first.introduction
 - learn.languages.powershell-write-first.exercise-hello-world

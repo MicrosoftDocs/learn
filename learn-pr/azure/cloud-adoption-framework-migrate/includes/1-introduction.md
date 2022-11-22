@@ -8,13 +8,13 @@ In this module, you'll learn the tools, the processes, and the options used in m
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
-- Understand the tools commonly used in migration
-- Learn about the migration processes required to migrate effectively
-- Demonstrate a migration (hands-on if possible)
-- Understand options for properly migrating various platforms and workloads
-- Choose the best learning path to migrate a specific platform or workload
+- Understand the tools commonly used in migration.
+- Learn about the migration processes required to migrate effectively.
+- Demonstrate a migration (hands-on if possible).
+- Understand options for properly migrating various platforms and workloads.
+- Choose the best learning path to migrate a specific platform or workload.
 
 ## Prerequisites
 

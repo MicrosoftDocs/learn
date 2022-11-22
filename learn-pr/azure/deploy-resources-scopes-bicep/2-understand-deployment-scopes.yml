@@ -6,8 +6,8 @@ metadata:
   title: Understand deployment scopes
   description: Learn about the scopes at which Azure resources can be deployed, and get common example use cases for each scope.
   ms.date: 10/14/2021
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

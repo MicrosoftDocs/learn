@@ -1,4 +1,4 @@
-resource appServiceApp 'Microsoft.Web/sites@2021-03-01' = {
+resource appServiceApp 'Microsoft.Web/sites@2022-03-01' = {
   name: appServiceAppName
   location: 'westus3'
   properties: {

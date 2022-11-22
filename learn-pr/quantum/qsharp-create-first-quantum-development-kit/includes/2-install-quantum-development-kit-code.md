@@ -11,7 +11,7 @@ To set up your development environment, you:
 But first, let's take a quick look at what you get with the Quantum Development Kit (QDK).
 
 > [!NOTE]
-> Before you proceed, make sure you have the [.NET Core 3.1 version (both SDK and Core)](https://dotnet.microsoft.com/download/dotnet/3.1?azure-portal=true) and [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true) installed on your computer.
+> Before you proceed, make sure you have the [.NET SDK 6.0](https://dotnet.microsoft.com/download?azure-portal=true) and [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true) installed on your computer.
 
 > [!NOTE]
 > For Linux users, you may encounter a missing dependency depending on your particular distribution and installation method (e.g. certain Docker images). Please make sure that the `libgomp` library is installed on your system, as the GNU OpenMP support library is required by the quantum simulator of the QDK. On Ubuntu, you can do so by running `sudo apt install libgomp1`, or `yum install libgomp` on CentOS. For other distributions, please refer to your particular package manager.
@@ -27,11 +27,11 @@ The QDK also includes:
 * Q# libraries that help you build real-world quantum applications right away.
 * Targets, which allow you to run your program locally or on different kinds of hardware through Azure Quantum.
 
-    Targets include resource estimators and simulators for larger quantum programs, as well as a quantum simulator, which behaves much like a quantum computer would.
+    Targets include resource estimators and simulators for larger quantum programs, and a quantum simulator, which behaves much like a quantum computer would.
 
     The simulator is useful for trying out new ideas, debugging programs, and learning about quantum computing, but it's only suitable for programs that require relatively few qubits. (Don't worry, we'll explain what a qubit is later in the module.)
 
-    The simulator enables you to run quantum programs locally, on computers you use to write software. You can also target your programs to run on quantum hardware by using Azure Quantum. (See this [module](/learn/modules/get-started-azure-quantum?azure-portal=true) to learn more on Azure Quantum.)
+    The simulator enables you to run quantum programs locally, on computers you use to write software. You can also target your programs to run on quantum hardware by using Azure Quantum. (See this [module](/training/modules/get-started-azure-quantum?azure-portal=true) to learn more on Azure Quantum.)
 * Tools that help you integrate quantum programs with classical programs, including support for C#, F#, and Python. (Classical code enables you to work with the results from quantum computations.)
 
 ## Install the QDK for Visual Studio Code
@@ -55,11 +55,9 @@ Project templates enable you to quickly create Q# applications, libraries, and u
 
 1. In Visual Studio Code, on the **View** menu, select **Command Palette**.
 
-1. Enter **Q#: Install project templates**. The templates are installed successfully once the pop-up window appears on the bottom right corner:
+1. Enter **Q#: Install command line project templates**. The templates are installed successfully once the pop-up window appears on the bottom right corner:
 
    ![Screenshot of pop-up installed templates.](../media/install_project_templates.png)
-
-1. Enter **Q#: Install command line project templates**.
 
 ### Create a project
 

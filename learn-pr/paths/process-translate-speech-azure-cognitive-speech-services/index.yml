@@ -16,7 +16,7 @@ prerequisites: |
   If you are new to programming, consider completing the [Take your first steps with C#](../csharp-first-steps/index.yml) or [Python for beginners](../beginner-python/index.yml) learning path first.
 summary: |
   Learn how to develop speech-enabled applications by using the Speech service.
-iconUrl: /learn/achievements/process-translate-speech-azure-cognitive-speech-services.svg
+iconUrl: /training/achievements/process-translate-speech-azure-cognitive-speech-services.svg
 levels:
 - intermediate
 roles:
@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-cognitive-services
+subjects:
+- natural-language-processing
 modules:
 - learn.wwl.transcribe-speech-input-text
 - learn.wwl.translate-speech-speech-service

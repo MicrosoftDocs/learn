@@ -63,7 +63,8 @@ In this exercise, you'll update your web app to create SASs with stored access p
         // Create a user SAS that only allows reading for a minute
         BlobSasBuilder sas = new BlobSasBuilder 
         {
-            Identifier = _storedPolicyID
+            Identifier = _storedPolicyID,
+            BlobContainerName = _iconfiguration.GetValue<string>("StorageAccount:Container")
         };
     
         // Use the shared key to access the blob

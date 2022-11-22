@@ -6,7 +6,7 @@ In this module, you'll learn how to effectively debug .NET programs. The faster 
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+By the end of this module, you'll be able to:
 
 * Use the Visual Studio Code debugger with a .NET program.
 * Create breakpoints and run your code step by step to find issues.

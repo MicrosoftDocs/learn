@@ -22,7 +22,7 @@ prerequisites: |
       - Visual Studio 2019, with Universal Windows Platform (UWP) workload installed 
       - USB Device Connectivity 
       - Microsoft Mixed Reality Feature Tool  
-iconUrl: /learn/achievements/build-mixed-reality-azure-digital-twins-unity.svg
+iconUrl: /training/achievements/build-mixed-reality-azure-digital-twins-unity.svg
 levels:
 - beginner
 roles:
@@ -44,6 +44,8 @@ products:
 - hololens
 - windows
 - windows-mixed-reality 
+subjects:
+- mixed-reality
 modules:
 - learn.azure.set-up-mixed-reality-azure-digital-twins-unity
 - learn.azure.build-3d-scene-mixed-reality-unity

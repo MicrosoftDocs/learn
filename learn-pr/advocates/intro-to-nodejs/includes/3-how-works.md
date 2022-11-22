@@ -23,7 +23,7 @@ while (queue.wait()) {
 
 Node.js uses an event-driven architecture where an event loop handles orchestration and a worker pool blocks tasks. The event loop makes it possible for Node.js to handle concurrent operations. The following diagram illustrates how an event loop works, at a high level:
 
-:::image type="content" source="../media/event-loop.svg" alt-text="Diagram showing how Node.js uses an event-driven architecture where an event loop handles orchestration and a worker pool blocks tasks.":::
+:::image type="content" source="../media/event-loop.svg" alt-text="Diagram showing how Node J S uses an event-driven architecture where an event loop handles orchestration and a worker pool blocks tasks.":::
 
 The main phases of an event loop are:
 
@@ -33,61 +33,68 @@ The main phases of an event loop are:
 - **Check** allows callbacks to be run immediately after the poll phase is completed.
 - **Close callbacks** closes events (for example, `socket.destroy()`) and callbacks (for example, `socket.on('close', ...)`).
 
-Node.js uses the worker pool to handle blocking tasks. This includes blocking I/O operations and CPU-intensive tasks.
+Node.js uses the worker pool to handle blocking tasks like blocking I/O operations and CPU-intensive tasks.
 
 In summary, the event loop runs the JavaScript callbacks registered for events, and is also responsible for fulfilling non-blocking asynchronous requests like network I/O.
 
 ### Performance
 
-JavaScript can produce the same performance results as low-level languages such as C because of performance boosts made possible by the V8 engine. Node.js also takes advantage of the unique event-driven nature of JavaScript. This makes composing server tasks fast and high-performing.
+JavaScript can produce the same performance results as low-level languages like **C** because of performance boosts made possible by the V8 engine. Node.js also takes advantage of the unique event-driven nature of JavaScript that makes composing server tasks fast and high-performing.
 
 ### Asynchronous programming
 
 To support the powerful event-based programming model, Node.js has a built-in set of non-blocking I/O APIs to handle common tasks such as file-system and database manipulation. These APIs are provided by the libuv library. When you make a request for Node.js to read file content from a disk, Node.js doesn't block waiting for the disk and file descriptors to be ready. Instead, the non-blocking I/O interface notifies Node.js when the file is ready. The non-blocking I/O works the same way when the browser notifies your code that a mouse or keyboard event has been triggered, or when an XMLHttpRequest (XHR) response is received from a remote endpoint.
 
-:::image type="content" source="../media/architecture.svg" alt-text="Diagram showing the built-in set of non-blocking I/O APIs that Node.js uses to handle common tasks.":::
+:::image type="content" source="../media/architecture.svg" alt-text="Diagram showing the built-in set of non-blocking I O A P Is that Node J S uses to handle common tasks.":::
 
 ## Install and use Node.js
 
 There are many ways to install Node.js. Here are a few of the most common options:
 
 - **Install via executable**: The Node.js **Downloads** page at `https://nodejs.org/en/download/` provides installation packages for different operating systems.
-- **Install via Brew**: Brew is a popular package manager for Linux and macOS.
-- **Install via NVM**: Node Version Manager (NVM) not only helps you install the version of Node.js you want, but also helps manage your installation. We won't cover this option in this section.
+
+- **Install via brew**: [Homebrew](https://brew.sh/?azure-portal=true), or brew, is a popular package manager for Linux and macOS.
+
+- **Install via nvm**: [Node Version Manager (nvm)](https://nodejs.org/en/download/package-manager/#nvm?azure-portal=true) not only helps you install the version of Node.js you want, but also helps manage your installation. We won't cover the nvm option in this section.
 
 Let's take a more detailed look at the steps required to download and install Node.js and verify successful installation.
 
 ### Install via executable
 
-Here's an excerpt from the Install page found at `https://nodejs.org/en/download/`:
+Here's an excerpt from the Install page found at the `https://nodejs.org/en/download/` download location:
 
-:::image type="content" source="../media/install-page.png" alt-text="Screen capture of the Node.js installation page showing available installers and source code.":::
+:::image type="content" source="../media/install-page.png" alt-text="Screenshot of the Node J S installation page showing available installers and source code.":::
 
 Notice the various installers available for different operating systems like Windows, macOS, and Linux. You can also download two different source code versions:
 
-- **LTS** stands for Long-Term Support. Note that LTS is described as "Recommended for most users." LTS is designed for enterprise usage where frequent updates might not be possible or aren't wanted.
+- **LTS** is an abbreviation for long-term support and is described as "Recommended for most users." LTS is designed for enterprise usage where frequent updates might not be possible or aren't wanted.
 
 - **Current** means source code that's under active development. Feature additions and breaking changes might happen. The code should adhere to semantic versioning.
 
 Base your choice of version on your company's requirements. For example, if you update often, the Current version might be right for you.
 
-To learn more about the different release types, see [Release types](https://github.com/nodejs/node#release-types).
+To learn more about the different release types, see [Release types](https://github.com/nodejs/node#release-types?azure-portal=true).
 
-### Install via the Brew package manager
+::: zone pivot="linux,macos"
 
-If you don't have Brew installed, run this command in your macOS/Linux terminal:
+### Install via the brew package manager on Linux or macOS
+
+If you don't have brew installed, run this command in your Linux or macOS terminal:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-After you've downloaded Brew, type the following command in your terminal to start installation:
+After you download brew, enter the following command in your terminal to start installation:
 
 ```bash
 brew install node
 ```
 
-This downloads all the needed binaries and installs Node.js on your system.
+This command downloads all the needed binaries and installs Node.js on your system.
+
+::: zone-end
+
 
 ### Verify installation
 
@@ -97,10 +104,10 @@ After installation of Node.js has finished, run the following command in your te
 node --version
 ```
 
-The command should print out the current version in the following format:
+The command should display the current version in the following format:
 
-```bash
+```output
 v[major version].[minor version].[patch version]
 ```
 
-The `[]` brackets in this example indicate that results might vary depending on the version you've installed on your system.
+The `[]` brackets in this example indicate that results might vary depending on the version you installed on your system.

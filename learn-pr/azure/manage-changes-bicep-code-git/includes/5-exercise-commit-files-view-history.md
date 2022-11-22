@@ -52,7 +52,7 @@ Here you add a Bicep module and reference it from your _main.bicep_ file.
 
 Now that you've made a change to the _main.bicep_ file, let's inspect the differences. It's a good idea to review the differences in each file you're about to stage and commit, to ensure you don't accidentally commit any changes you don't want.
 
-1. In Visual Studio Code, select **View** > **SCM**, or select <kbd>Ctrl+Shift+G</kbd> on the keyboard.
+1. In Visual Studio Code, select **View** > **Source Control**, or select <kbd>Ctrl+Shift+G</kbd> on the keyboard.
 
 1. On the **Source Control** panel that opens, select the _main.bicep_ file.
 

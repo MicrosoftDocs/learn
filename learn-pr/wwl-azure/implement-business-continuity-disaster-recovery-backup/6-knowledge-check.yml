@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/08/2021
+  ms.date: 06/30/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -21,21 +21,21 @@ quiz:
     choices:
     - content: "Hourly snapshots retained for 1 week, and daily snapshots retained for 1 year"
       isCorrect: false
-      explanation: "Incorrect. The prefix=hourlyhana snapshots are retained for 2 days (--retention=48) and the prefix=dailyhana snapshots are retained for 4 weeks (--retention=28)."
+      explanation: "That’s incorrect. The prefix=hourlyhana snapshots are retained for 2 days (--retention=48) and the prefix=dailyhana snapshots are retained for 4 weeks (--retention=28)."
     - content: "Snapshots every 15 minutes retained for 1 week, and daily snapshots retained for 1 year"
       isCorrect: false
-      explanation: "Incorrect. The prefix=hourlyhana snapshots are retained for 2 days (--retention=48) and the prefix=dailyhana snapshots are retained for 4 weeks (--retention=28)."
+      explanation: "That’s incorrect. The prefix=hourlyhana snapshots are retained for 2 days (--retention=48) and the prefix=dailyhana snapshots are retained for 4 weeks (--retention=28)."
     - content: "Hourly snapshots retained for 2 days, and daily snapshots retained for 4 weeks"
       isCorrect: true
-      explanation: "Correct. The prefix=hourlyhana snapshots are retained for 2 days (--retention=48) and the prefix=dailyhana snapshots are retained for 4 weeks (--retention=28)."
+      explanation: "That's correct. The prefix=hourlyhana snapshots are retained for 2 days (--retention=48) and the prefix=dailyhana snapshots are retained for 4 weeks (--retention=28)."
   - content: "What is the ReaR software pre-installed on all Type II HANA Large Instances SKUs used for?"
     choices:
     - content: "Operating system backup"
       isCorrect: true
-      explanation: "Correct. OS backup scripts use the Relax-and-Recover (ReaR) software, which is pre-installed in the server. ReaR packages are pre-installed in the Type II SKUs of HANA Large Instances, and no action is needed from you."
+      explanation: "That's correct. OS backup scripts use the Relax-and-Recover (ReaR) software, which is pre-installed in the server. ReaR packages are pre-installed in the Type II SKUs of HANA Large Instances, and no action is needed from you."
     - content: "Scheduling storage snapshots"
       isCorrect: false
-      explanation: "Incorrect. OS backup scripts use the Relax-and-Recover (ReaR) software, which is pre-installed in the server. ReaR packages are pre-installed in the Type II SKUs of HANA Large Instances, and no action is needed from you."
+      explanation: "That’s incorrect. OS backup scripts use the Relax-and-Recover (ReaR) software, which is pre-installed in the server. ReaR packages are pre-installed in the Type II SKUs of HANA Large Instances, and no action is needed from you."
     - content: "Disaster recovery failover"
       isCorrect: false
-      explanation: "Incorrect. OS backup scripts use the Relax-and-Recover (ReaR) software, which is pre-installed in the server. ReaR packages are pre-installed in the Type II SKUs of HANA Large Instances, and no action is needed from you."
+      explanation: "That’s incorrect. OS backup scripts use the Relax-and-Recover (ReaR) software, which is pre-installed in the server. ReaR packages are pre-installed in the Type II SKUs of HANA Large Instances, and no action is needed from you."

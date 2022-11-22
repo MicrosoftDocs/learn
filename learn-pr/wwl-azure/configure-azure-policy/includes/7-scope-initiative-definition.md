@@ -1,8 +1,11 @@
-Once our Initiative Definition is created, you can assign the definition to establish its scope. A scope determines what resources or grouping of resources the policy assignment gets enforced on.
+After you create your initiative definition, the next step is to assign the initiative to establish the scope for the policies. The scope determines what resources or grouping of resources are affected by the conditions of the policies.
 
-:::image type="content" source="../media/assign-definition-87bc203c.png" alt-text="Screenshot of the Definitions page for assigning an Initiative Definition to resources or groups or resources.":::
+Here's an example that shows how to configure the scope assignment:
 
+:::image type="content" source="../media/assign-definition-87bc203c.png" alt-text="Screenshot that shows how to assign an initiative definition to resources or groups or resources to establish the scope.":::
 
-You can select the Subscription, and then optionally a Resource Group.
+To establish the scope, you select the affected subscriptions. As an option, you can also choose the affected resource groups. 
 
-:::image type="content" source="../media/scope-initiative-9fbf59d5.png" alt-text="Screenshot showing that scope applies to the subscription and can be also be optionally assigned to a resource group.":::
+The following example shows how to apply the scope:
+
+:::image type="content" source="../media/scope-initiative-9fbf59d5.png" alt-text="Screenshot that shows how a scope is applied to a subscription, and optionally applied to a resource group.":::

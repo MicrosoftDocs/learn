@@ -25,13 +25,15 @@ prerequisites: |
  - Administrative access to a repository.
  - Familiarity with managing GitHub administrative settings.
  - Working knowledge of the GitHub pull request workflow.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels: 
 - intermediate 
 roles: 
 - developer 
 products:
 - github 
+subjects:
+- security
 units:
 - learn.configure-dependabot-security-updates-on-github-repo.introduction
 - learn.configure-dependabot-security-updates-on-github-repo.manage-your-dependencies-github

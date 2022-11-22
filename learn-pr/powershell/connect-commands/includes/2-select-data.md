@@ -11,7 +11,7 @@ When you pass the results of a command to `Get-Member`, `Get-Member` returns inf
 Let's demonstrate this fact by running `Get-Member` on the command `Get-Process`.
 
 ```powershell
-Get-Process zsh | Get-Member
+Get-Process | Get-Member
 ```
 
 Note how you are using the pipe `|` and that by calling `Get-Member`, you are in fact creating a pipeline already. The first few lines of output from the preceding statement look like so:

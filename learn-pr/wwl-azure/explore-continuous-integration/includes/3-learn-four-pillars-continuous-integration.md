@@ -1,4 +1,4 @@
-Continuous integration relies on four key elements for successful implementation: a Version Control System, Packet Management System, Continuous Integration System, and an Automated Build Process.
+Continuous integration relies on four key elements for successful implementation: a Version Control System, Package Management System, Continuous Integration System, and an Automated Build Process.
 
 A **version control system** manages changes to your source code over time.
 
@@ -27,4 +27,4 @@ An **automated build process** creates a software build, including compiling, pa
  -  [Gradle](https://gradle.org/)
 
 > [!NOTE]
-> For each element, your team needs to select the specific platforms and tools they'll use. You need to ensure that you've established each pillar before proceeding.
+> Your team needs to select the specific platforms and tools they'll use for each element. You need to ensure that you've established each pillar before proceeding.

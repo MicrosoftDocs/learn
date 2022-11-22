@@ -24,7 +24,7 @@ prerequisites: |
     - Monitoring
 summary: |
   This learning path addresses problems related to managing, monitoring, and securing a hybrid environment. After completing the learning path, you’ll be able to manage and maintain hybrid Azure and on-premises workloads.
-iconUrl: /learn/achievements/implement-windows-server-hybrid-cloud-management-monitoring-and-security.svg
+iconUrl: /training/achievements/implement-windows-server-hybrid-cloud-management-monitoring-and-security.svg
 levels:
 - intermediate
 roles:
@@ -36,6 +36,8 @@ products:
 - azure-cloud-shell
 - azure-monitor
 - azure-portal
+subjects:
+- security
 modules:
 - learn.wwl.manage-hybrid-workloads-with-azure-arc
 - learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances

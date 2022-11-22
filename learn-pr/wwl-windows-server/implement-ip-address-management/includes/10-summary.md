@@ -4,5 +4,5 @@ As a Windows Server infrastructure administrator, you're responsible for managin
 
 You can learn more by reviewing the following documents:
 
-- [What is IPAM](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj878331(v=ws.11)?azure-portal=true).
-- [Course WS-011T00-A: Windows Server 2019 Administration](https://docs.microsoft.com/learn/certifications/courses/ws-011t00?azure-portal=true)
+- [What is IPAM](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj878331(v=ws.11)?azure-portal=true).
+- [Course WS-011T00-A: Windows Server 2019 Administration](/certifications/courses/ws-011t00?azure-portal=true)

@@ -1,10 +1,10 @@
 Now, you're ready to create and deploy some virtual networks with the IP addresses that you planned.
 
-In this unit, you will implement three virtual networks and subnets to support resources in those virtual networks.
+In this unit, you'll implement three virtual networks and subnets to support resources in those virtual networks.
 
-The **CoreServicesVnet** virtual network is deployed in the **US West** region. This virtual network will have the largest number of resources. It will have connectivity to on-premises networks through a VPN connection. This network will have web services, databases, and other systems that are key to the operations of the business. Shared services, such as domain controllers and DNS also will be located here. A large amount of growth is anticipated, so a large address space is necessary for this virtual network.
+The **CoreServicesVnet** virtual network is deployed in the **US West** region. This virtual network will have the largest number of resources. It will have connectivity to on-premises networks through a VPN connection. This network will have web services, databases, and other systems that are key to the operations of the business. Shared services, such as domain controllers and DNS, also will be located here. A large amount of growth is anticipated, so a large address space is necessary for this virtual network.
 
-The **ManufacturingVnet** virtual network is deployed in the **North Europe** region, near the location of your organization's manufacturing facilities. This virtual network will contain systems for the operations of the manufacturing facilities. The organization is anticipating a large number of internal connected devices for their systems to retrieve data from, such as temperature, and will need an IP address space that it can expand into.
+The **ManufacturingVnet** virtual network is deployed in the **North Europe** region, near the location of your organization's manufacturing facilities. This virtual network will contain systems for the manufacturing facilities' operations. The organization is anticipating a large number of internal connected devices from which their systems  will retrieve data, such as temperature, and will need an IP address space that it can expand into.
 
 The **ResearchVnet** virtual network is deployed in the **West India** region, near the location of the organization's research and development team. The research and development team uses this virtual network. The team has a small, stable set of resources that is not expected to grow. The team needs a small number of IP addresses for a few virtual machines for their work.
 
@@ -70,7 +70,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
         --address-prefixes 10.20.30.0/24
     ```
 
-1. Let's take a look at what we have created. Run this command to show all the subnets that we configured:
+1. Let's take a look at what we've created. Run this command to show all the subnets that we configured:
 
     ```azurecli
     az network vnet subnet list \
@@ -130,7 +130,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
         --address-prefixes 10.30.22.0/24
     ```
 
-1. Let's take a look at what we have created. Run this command to show all the subnets that we configured:
+1. Let's take a look at what we've created. Run this command to show all the subnets that we configured:
 
     ```azurecli
     az network vnet subnet list \
@@ -189,6 +189,6 @@ These virtual networks and subnets are structured in a way that accommodates exi
     10.40.40.0/24    ResearchSystemSubnet  Enabled                           Enabled                              Succeeded            <rgn>[sandbox resource group name]</rgn>
     ```
 
-Now that you have created the virtual networks and subnets, you have the infrastructure on which you can deploy resources.
+Now that you've created the virtual networks and subnets, you have the infrastructure on which you can deploy resources.
 
 These networks can be further integrated through virtual network peering and through Azure VPN Gateway to connect to on-premises networks. You can use network security groups to filter traffic and control access within and between virtual networks.

@@ -2,7 +2,7 @@ Scaling out enables you to run more instances of a web app, but the resources av
 
 If you initially deploy a web app using a relatively cheap pricing tier, you might find the resources are sufficient to start with. But the resources might become too limited if demand for your web service grows, or if you add features that require more power. In this case, you can scale up to a more powerful pricing tier.
 
-In the hotel reservation system, you've noticed a steady increase in the number of visitors, beyond the variations caused by special offers or events. And your company is adding more features to the web app that require additional resources. You're nearing the scale-out limits of your current App Service plan pricing tier, so you need to scale up to a tier that provides more instances and more powerful hardware.
+In the hotel reservation system, you've noticed a steady increase in the number of visitors, beyond the variations caused by special offers or events. And your company is adding more features to the web app that require more resources. You're nearing the scale-out limits of your current App Service plan pricing tier, so you need to scale up to a tier that provides more instances and more powerful hardware.
 
 In this unit, you'll learn how to scale up the web app to meet the increasing resource requirements.
 
@@ -16,4 +16,4 @@ You scale an App Service plan up and down by changing the pricing tier and hardw
 
 Scaling up can cause an interruption in service to client apps running at the time. They might need to disconnect from the service and reconnect if the scale-up occurs during an active call to the web app. And new connections might be rejected until scaling finishes. Also, scaling up can cause the outgoing IP addresses for the web app to change. If your web app depends on other services that have firewalls restricting incoming traffic, you'll need to reconfigure these services.
 
-As with scale-out, you should monitor the performance of your system to ensure that scaling up (or down) has the desired effect. It's also important to understand that scale up and scale out can work cooperatively together. If you have scaled out to the maximum number of instances available for your pricing tier, you must scale up before you can scale out further.
+As with scale-out, you should monitor the performance of your system to ensure that scaling up (or down) has the desired effect. It's also important to understand that scale up and scale out can work cooperatively together. If you've scaled out to the maximum number of instances available for your pricing tier, you must scale up before you can scale out further.

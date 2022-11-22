@@ -2,7 +2,7 @@ A virtual network can be segmented into one or more subnets. Subnets provide log
 
 Each subnet contains a range of IP addresses that fall within the virtual network address space. The range must be unique within the address space for the virtual network. The range can't overlap with other subnet address ranges within the virtual network. The address space must be specified by using Classless Inter-Domain Routing (CIDR) notation.
 
-:::image type="content" source="../media/azure-subnets-a5c893d5.png" alt-text="The Create virtual network page of the Azure portal is shown. The Address space, 10.1.0.0 16, is highlighted. Connected to the address space are two subnets.":::
+:::image type="content" source="../media/azure-subnets-a5c893d5.png" alt-text="Screenshot of the Create virtual network page of the Azure portal. The address space, 10.1.0.0 16, is highlighted. Connected to the address space are two subnets.":::
 
 
 ## Considerations
@@ -14,9 +14,14 @@ Each subnet contains a range of IP addresses that fall within the virtual networ
  -  **Private Links**. Azure Private Link provides private connectivity from a virtual network to Azure platform as a service (PaaS), customer-owned, or Microsoft partner services. It simplifies the network architecture and secures the connection between endpoints in Azure by eliminating data exposure to the public internet.
 
 > [!NOTE]
-> There are restrictions on using IP addresses. Azure reserves five IP addresses within each subnet.
+> Azure reserves the first four and last IP address for a total of 5 IP addresses within each subnet.
 
- -  x.x.x.0: Network address
- -  x.x.x.1: Reserved by Azure for the default gateway
- -  x.x.x.2, x.x.x.3: Reserved by Azure to map the Azure DNS IPs to the VNet space
- -  x.x.x.255: Network broadcast address
+For example, the IP address range of 192.168.1.0/24 has the following reserved addresses:
+
+192.168.1.0: Network address
+
+192.168.1.1: Reserved by Azure for the default gateway
+
+192.168.1.2, 192.168.1.3: Reserved by Azure to map the Azure DNS IPs to the VNet space
+
+192.168.1.255: Network broadcast address.
