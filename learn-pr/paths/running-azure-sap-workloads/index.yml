@@ -25,7 +25,6 @@ subjects:
 - marketing-sales
 modules:
 - learn.wwl.migrate-sap-workloads-azure
-- learn.wwl.maintain-azure-sap-workloads
 - learn.wwl.implement-azure-backup-for-sap-workloads-azure-vms
 - learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms
 trophy:
