@@ -8,7 +8,7 @@ Your organization is setting up a new Help Desk. You've been tasked to configure
 
 ## Architecture diagram
 
-:::image type="content" source="../media/lab02a.png" alt-text="Architecture diagram as explained in the text.":::
+:::image type="content" source="../media/lab-02a.png" alt-text="Architecture diagram as explained in the text.":::
 
 ## Objectives
 
