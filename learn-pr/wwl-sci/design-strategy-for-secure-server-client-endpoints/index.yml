@@ -2,8 +2,8 @@
 uid: learn.wwl.design-strategy-for-secure-server-client-endpoints
 metadata:
   title: Design a strategy for securing server and client endpoints
-  description: "Learn how to design a cybersecurity strategy to secure server and client endpoints."
-  ms.date: 08/02/2022
+  description: "Design a strategy for securing server and client endpoints"
+  ms.date: 11/22/2022
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
@@ -42,6 +42,7 @@ units:
 - learn.wwl.design-strategy-for-secure-server-client-endpoints.specify-requirements-active-directory-domain-services
 - learn.wwl.design-strategy-for-secure-server-client-endpoints.design-strategy-manage-secrets-keys-certificates
 - learn.wwl.design-strategy-for-secure-server-client-endpoints.secure-remote-access
+- learn.wwl.design-strategy-for-secure-server-client-endpoints.understand-security-operations-frameworks-processes-procedures
 - learn.wwl.design-strategy-for-secure-server-client-endpoints.plan-for-endpoint-forensics
 - learn.wwl.design-strategy-for-secure-server-client-endpoints.exercise
 - learn.wwl.design-strategy-for-secure-server-client-endpoints.knowledge-check

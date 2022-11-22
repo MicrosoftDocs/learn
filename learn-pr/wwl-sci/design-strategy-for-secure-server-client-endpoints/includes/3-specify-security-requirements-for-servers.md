@@ -13,15 +13,11 @@ In addition to security baselines for Windows Server, the SCT also includes the 
 
 ## Secure Servers (Domain Members)
 
-### Local administrator accounts
-
 Each computer that is member of a domain keeps a local Administrator account. This is the account that you configure when you first deploy the computer manually, or which is configured automatically when you use software deployment tools such as Microsoft Endpoint Configuration Manager. The local Administrator account allows IT staff to sign in to the computer if they can't establish connectivity to the domain.
 
 Managing passwords for the local Administrator account for every computer in the organization can be extremely complicated. An organization with 5,000 computers has 5,000 separate local Administrator accounts to manage. What often happens is that organizations assign a single, common local Administrator account password to all local Administrator accounts. The drawback to this approach is that people beyond the IT operations team often figure out this password, and then use it to gain unauthorized local Administrator access to computers in their organization.
 
 The "Local Administrator Password Solution" (LAPS) provides management of local account passwords of domain joined computers. LAPS is available for all currently supported Windows Server and client operating system versions. To get LAPS to function, you must update the AD DS schema. You perform this update by running the *Update-AdmPwdADSchema* cmdlet, which is included in a Windows PowerShell module that's made available when you install LAPS on a computer.
-
-### SMB protocol
 
 Another important part of server's protection is to ensure that you disable legacy protocols and enforce a more secure communication method. Server Message Block (SMB) protocol is a network protocol primarily used for file sharing. Along with its common file-sharing use, it's also frequently used by printers, scanners, and email servers. The original version of SMB, SMB 1.0 does not support encryption. SMB encryption was introduced with version 3.0.
 
