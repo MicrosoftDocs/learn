@@ -18316,8 +18316,37 @@
       "redirect_document_id": false
     },
     {
-
-       "source_path": "learn-pr/wwl-azure/design-network-solutions/4-design-for-azure-network-connectivity-services.md",
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/includes/7-plan-upcoming-sprint.md",
+      "redirect_url": "/training/modules/create-release-pipeline/7-clean-up-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/includes/8-clean-up-environment.md",
+      "redirect_url": "/training/modules/create-release-pipeline/7-clean-up-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/includes/9-summary.md",
+      "redirect_url": "/training/modules/create-release-pipeline/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/7-plan-upcoming-sprint.yml",
+      "redirect_url": "/training/modules/create-release-pipeline/7-clean-up-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/8-clean-up-environment.yml",
+      "redirect_url": "/training/modules/create-release-pipeline/7-clean-up-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/9-summary.yml",
+      "redirect_url": "/training/modules/create-release-pipeline/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-network-solutions/4-design-for-azure-network-connectivity-services.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-network-solutions/4a-design-patterns-for-azure-network-connectivity-services",
       "redirect_document_id": false
     },
@@ -18344,6 +18373,41 @@
     {
       "source_path": "learn-pr/azure-devops/deploy-nodejs/6-summary.yml",
       "redirect_url": "/training/modules/deploy-nodejs/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/2-learn-module-best-practices.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/3-learn-module-best-practices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/3-explore-best-practices-for-module-1.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/4-explore-best-practices-module-1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/4-explore-best-practices-for-module-2.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/5-explore-best-practices-module-2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/5-explore-best-practices-for-module-3.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/6-explore-best-practices-module-3",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/6-explore-best-practices-for-module-4.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/7-explore-best-practices-module-4",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/7-explore-best-practices-for-module-5.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/8-bring-it-together.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/8-bring-it-all-together",
       "redirect_document_id": false
     }
   ]

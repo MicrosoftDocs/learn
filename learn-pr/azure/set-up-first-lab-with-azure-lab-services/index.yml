@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of the Azure Lab Services concepts of lab plans and labs.
   - Experience using the Azure portal at the beginner level.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/setup-first-lab-using-azure-lab-services.svg
 badge:
   uid: learn.setup-first-lab-using-azure-lab-services.badge
 levels: 

@@ -227,7 +227,7 @@ appetite, and technical portfolio, and more.
 |                      | Secure score                                                  |
 |                      | % compliant apps                                              |
 |                      | # of privileged accounts meeting 100% of requirements         |
-|                      | # pf accounts meeting 100% of requirements                    |
+|                      | # of accounts meeting 100% of requirements                    |
 | Security Response    | Mean Time to Recover (MTTR)                                   |
 |                      | Mean Time to Acknowledge (MTTA)                               |
 |                      | Time to Restore Critical Systems                              |
