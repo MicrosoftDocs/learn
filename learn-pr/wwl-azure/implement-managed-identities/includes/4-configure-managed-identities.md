@@ -21,7 +21,7 @@ az vm create --resource-group myResourceGroup \
 
 ### Enable system-assigned managed identity on an existing Azure virtual machine
 
-Use `az vm identity assign` command enable the system-assigned identity to an existing virtual machine:
+Use the `az vm identity assign` command to assign the system-assigned identity to an existing virtual machine:
 
 ```bash
 az vm identity assign -g myResourceGroup -n myVm
