@@ -2,13 +2,13 @@ Your students want skills that make them employable. Using the resources availab
 
 Supplemental Resources: 
 
-- [Microsoft Learn](https://aka.ms/learn)
+- [Microsoft Learn ](https://aka.ms/learn)
 
 - [Microsoft Student Certification](https://aka.ms/studentcertification) 
 
-- [Microsoft Virtual Training Days](https://aka.ms/mvtds)
+- [Microsoft Virtual Training Days ](https://aka.ms/mvtds)
 
-- [Certiport Authorized Testing Center Locator](https://aka.ms/certiporttest)
+- [Certiport Authorized Testing Center Locator ](https://aka.ms/certiporttest)
 
 - [Get Started as a Certiport test center](https://aka.ms/certiporttestcenter) 
 

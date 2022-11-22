@@ -18,20 +18,20 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'To deploy a Spring Boot microservice to Azure Spring Cloud, what do you need to change in your application?'
+  - content: 'To deploy a Spring Boot microservice to Azure Spring Apps, what do you need to change in your application?'
     choices:
     - content: 'Code a specific Spring bean'
       isCorrect: false
       explanation: 'You do not need to add or change any code in your application.'
     - content: 'Add a specific Maven dependency'
       isCorrect: false
-      explanation: 'Azure Spring Cloud requires no Azure-specific dependency in your application.'
+      explanation: 'Azure Spring Apps requires no Azure-specific dependency in your application.'
     - content: 'Set up some specific environment variables'
       isCorrect: false
       explanation: 'You do not need to set up some specific environment variables.'
     - content: 'None of the above'
       isCorrect: true
-      explanation: 'Migrate your Spring Cloud apps to Azure Spring Cloud is seamless without vendor lock-in.'
+      explanation: 'Migrate your Spring Cloud apps to Azure Spring Apps is seamless without vendor lock-in.'
   - content: 'By default, how can you access your microservice once it is deployed?'
     choices:
     - content: 'There is a specific, secured endpoint, where the application is published'

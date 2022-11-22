@@ -39,5 +39,5 @@ Together with the security-control types, security-control functions create a ma
 |Preventative|Locks|Firewalls|Data classification|
 |Detective|Surveillance|Honeypots|Audit logs|
 |Corrective|Physical repair|System patches|Incident response plans|
-|Recovery|Hot-sites|System backups|Disaster recovery plan|
+|Recovery|Hot sites|System backups|Disaster recovery plan|
 |Deterrent|Fences|Least privilege|Authorized use policy|
