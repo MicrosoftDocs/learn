@@ -18434,6 +18434,11 @@
       "source_path": "learn-pr/wwl-azure/implement-azure-vm-based-sap-solutions/7-implement-ad-azure-ad-based-authentication-sap-workloads.md",
       "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-vm-based-sap-solutions/5-implement-high-availability-sap-hana-azure-vms.md",
+      "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
+      "redirect_document_id": false
     }
   ]
 }
