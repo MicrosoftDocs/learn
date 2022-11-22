@@ -18549,6 +18549,11 @@
       "source_path": "learn-pr/wwl-azure/migrate-sap-workloads-azure/2-understand-migration-options.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/running-azure-sap-workloads/index.md",
+      "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
+      "redirect_document_id": false
     }
   ]
 }
