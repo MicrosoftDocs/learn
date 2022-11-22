@@ -18419,6 +18419,11 @@
       "source_path": "learn-pr/wwl-azure/implement-azure-vm-based-sap-solutions/6-configure-azure-enhanced-monitor-extension-sap-workloads.md",
       "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-vm-based-sap-solutions/2-define-azure-vm-deployment-methodologies-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
+      "redirect_document_id": false
     }
   ]
 }
