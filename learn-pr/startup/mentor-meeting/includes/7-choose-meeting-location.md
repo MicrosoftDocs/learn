@@ -28,7 +28,7 @@ This is the perfect location for a short meeting. It will enable you and your me
 
 ***Coffee shop***
 
-A coffee shop can serve as a casual environment for a mentor meeting with the added benefit that it also provides the opportunity for the mentee to purchase a beverage or snack to thank the mentor for their time. This can make it a perfect location for the first meeting between a mentor and mentee. Coffee shop meetings generally run about 30 minutes, especially if they're a busy or noisy environment. If you have to present slides, share documentation, or discuss confidential information, a coffee shop can be a challenging environment. But if you're planning to simply have a conversation, a coffee shop can be a great option for a low-stress environment for a meeting.
+A coffee shop can serve as a casual environment for a mentor meeting with the added benefit that it also provides the opportunity for you to purchase a beverage or snack to thank the mentor for their time. This can make it a perfect location for the first meeting between you and your mentor. Coffee shop meetings generally run about 30 minutes, especially if they're a busy or noisy environment. If you have to present slides, share documentation, or discuss confidential information, a coffee shop can be a challenging environment. But if you're planning to simply have a conversation, a coffee shop can be a great option for a low-stress environment for a meeting.
 
 ***Lunch***
 
