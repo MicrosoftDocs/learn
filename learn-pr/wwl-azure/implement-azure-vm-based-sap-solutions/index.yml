@@ -29,7 +29,6 @@ subjects:
 - virtual-machine
 units:
 - learn.wwl.implement-azure-vm-based-sap-solutions.introduction
-- learn.wwl.implement-azure-vm-based-sap-solutions.define-azure-vm-deployment-methodologies-sap-workloads
 - learn.wwl.implement-azure-vm-based-sap-solutions.define-single-instance-implementations-sap-workloads
 - learn.wwl.implement-azure-vm-based-sap-solutions.implement-ha-sap-netweaver-with-anydb-azure-vms
 - learn.wwl.implement-azure-vm-based-sap-solutions.implement-ha-sap-hana-azure-vms
