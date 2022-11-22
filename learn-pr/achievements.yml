@@ -1332,3 +1332,8 @@ achievements:
   title: Migrate SAP workloads to Azure
   summary: Migrate SAP workloads to Azure
   iconUrl: /training/achievements/migrating-sap-workloads-azure.svg
+- uid: learn.wwl.run-azure-sap-workloads.trophy
+  type: trophy
+  title: Run Azure for SAP workloads
+  summary: Run Azure for SAP workloads
+  iconUrl: /training/achievements/run-azure-sap-workloads.svg
