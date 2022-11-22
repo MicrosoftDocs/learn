@@ -8,30 +8,29 @@ metadata:
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
 durationInMinutes: 1
 
 content: |
 quiz:
   questions:
  
-
-  - content: "Your team is planning to analyze the deployed and running system for infrastructure and configuration security vulnerabilities. Which form of security testing could be most beneficial?"
+  - content: "You plan to analyze deployed and running system. You want to focus finding security vulnerabilities in infrastructure and configuration. Which form of security testing would you benefit the most?"
     choices:
-    - content: "SAST."
+    - content: "Static application security testing."
       isCorrect: false
-      explanation: "Static analysis focuses on code propr to it's deployment."
+      explanation: "Static analysis focuses on code prior to its deployment."
     - content: "SCA."
       isCorrect: false
-      explanation: "Composition analysis focuses on code propr to it's deployment."
+      explanation: "Composition analysis focuses on code prior to is deployment."
     - content: "DAST."
       isCorrect: true
-      explanation: "Correct. Dynamic analysis can inspect and report on infrastructure configuration and expose it's weak points."
+      explanation: "Correct. Dynamic analysis can inspect and report on infrastructure configuration and expose its weak points."
     - content: "Chaos testing."
       isCorrect: false
-      explanation: "Try again, this is however very helpful technique in reliability and disaster recovery testing."
+      explanation: "Try again, this is however helpful technique in reliability and disaster recovery testing."
 
-  - content: "Should the DevOps team maintain and review list of 3rd party components used in the system for security vulnerabilities? "
+  - content: "Should the DevOps team maintain and review list of third party components used in the system for security vulnerabilities? "
     choices:
     - content: "An Excel spreadsheet with Software Bill of Materials should be part of the design phase and any new green field project."
       isCorrect: false
@@ -39,7 +38,7 @@ quiz:
     - content: "Favour automated tools at any stage of product lifecycle to track and monitor your dependencies."
       isCorrect: true
       explanation: "Correct. Maintenance effort required to keep a list of dependencies up-to-date combined with their vulnerability check can quickly become unmanageable."
-    - content: "There is no risk associated with 3rd party purchased and OSS components."
+    - content: "There's no risk associated with third party purchased and OSS components."
       isCorrect: false
       explanation: "Even if your software makes the best effort in staying secure, an insecure or flowed dependency may introduce security vulnerability in your system."
 

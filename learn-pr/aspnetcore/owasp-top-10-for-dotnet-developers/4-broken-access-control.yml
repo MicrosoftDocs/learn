@@ -8,7 +8,7 @@ metadata:
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+  ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
+durationInMinutes: 3
 content: |
   [!include[](includes/4-broken-access-control.md)]

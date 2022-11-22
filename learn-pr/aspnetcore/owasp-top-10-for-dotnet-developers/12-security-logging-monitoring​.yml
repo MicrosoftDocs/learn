@@ -8,7 +8,7 @@ metadata:
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
 durationInMinutes: 1
 content: |
-  [!include[](includes/12-security-logging-monitoring.md)]
+  [!include[](includes/12-security-logging-monitoring​.md)]
