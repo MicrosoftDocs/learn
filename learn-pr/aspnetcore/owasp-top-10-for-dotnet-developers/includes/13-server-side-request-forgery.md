@@ -24,4 +24,4 @@ Without validation of the supplied url the attacker can hijack the network conne
 An only-allowed or not-allowed should be enforces (like IP addresses and host names)
 
 > [!TIP]
-> Use built-in [IPAddress.TryParse](https://learn.microsoft.com/dotnet/api/system.net.ipaddress.tryparse) or [Uri.CheckHostName](https://learn.microsoft.com/dotnet/api/system.uri.checkhostname) methods for input and configuration validation.
+> Use built-in [IPAddress.TryParse](/dotnet/api/system.net.ipaddress.tryparse) or [Uri.CheckHostName](/dotnet/api/system.uri.checkhostname) methods for input and configuration validation.

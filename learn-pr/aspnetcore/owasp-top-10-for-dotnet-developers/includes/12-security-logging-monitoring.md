@@ -25,4 +25,4 @@ Make sure you have answers to the following questions:
 .NET Core come with a LoggerFactory, which is in Microsoft.Extensions.Logging.
 
 > [!TIP]
-> .NET provides native logging capabilities (through [ILogger](https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger) or [LoggerFactory](https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loggerfactory) that can be easily added to your solutions.
+> .NET provides native logging capabilities (through [ILogger](/dotnet/api/microsoft.extensions.logging.ilogger) or [LoggerFactory](/dotnet/api/microsoft.extensions.logging.loggerfactory) that can be easily added to your solutions.

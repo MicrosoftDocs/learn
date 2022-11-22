@@ -47,7 +47,7 @@ Azure security technology and services are here to help you protect Azure and yo
 
 ## Learn more
 
-* [ASP.NET Core security topics.](https://learn.microsoft.com/aspnet/core/security)
+* [ASP.NET Core security topics.](/aspnet/core/security)
 * [Vulnerability Scanning Tools | OWASP Foundation.](https://owasp.org/www-community/Vulnerability_Scanning_Tools)
 * [OWASP Secure Coding Practices Quick Reference Guide.](https://owasp.org/www-pdf-archive/OWASP_Code_Review_Guide-V1_1.pdf)
 * [OWASP Code Review Guide.](https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf)
@@ -56,5 +56,5 @@ Azure security technology and services are here to help you protect Azure and yo
 ## References
 
 * [GitHub Advanced Security](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-* [Azure Defender for DevOps](https://learn.microsoft.com/azure/defender-for-cloud/defender-for-devops-introduction)
+* [Azure Defender for DevOps](/azure/defender-for-cloud/defender-for-devops-introduction)
 * [Manage access to billing information for Azure](/azure/billing/billing-manage-access)
