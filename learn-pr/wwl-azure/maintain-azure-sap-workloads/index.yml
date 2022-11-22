@@ -29,7 +29,6 @@ units:
 - learn.wwl.maintain-azure-sap-workloads.perform-backup-restore-sap-workloads
 - learn.wwl.maintain-azure-sap-workloads.networking-changes-sap-workloads
 - learn.wwl.maintain-azure-sap-workloads.vertical-horizontal-scaling-sap-workloads
-- learn.wwl.maintain-azure-sap-workloads.define-disaster-recovery-sap-workloads
 - learn.wwl.maintain-azure-sap-workloads.knowledge-check
 - learn.wwl.maintain-azure-sap-workloads.summary
 badge:
