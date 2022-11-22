@@ -13,7 +13,7 @@ In this exercise, you use the Azure Data Explorer web interface to connect to th
 1. On the left pane, select **Add cluster**.
 1. Under **Connection URI**, enter **help**, and then select **Add**.
 
-    :::image type="content" source="../media/3-add-cluster.png" alt-text="Screenshot that shows how to add a 'help' cluster on the Azure Data Explorer web UI.":::
+    :::image type="content" source="../media/3-add-cluster.png" alt-text="Screenshot that shows how to add the 'help' cluster, which contains sample data, on the Azure Data Explorer web UI.":::
 
 Now you're connected to the help cluster.
 
