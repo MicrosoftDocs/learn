@@ -1317,3 +1317,8 @@ achievements:
   title: Use Language Understanding with Speech
   summary: While many applications work with text-based natural language input, it's also for applications to support speech. You can integrate the Language Understanding and Speech services to accomplish this.
   iconUrl: /training/achievements/language-understanding-speech.svg
+- uid: learn.wwl.implement-azure-vm-based-sap-solutions.badge
+  type: badge
+  title: Implement Azure VM-based SAP solutions
+  summary: Implement Azure VM-based SAP solutions
+  iconUrl: /training/achievements/implementing-azure-vm-based-sap-solutions.svg
