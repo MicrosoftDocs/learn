@@ -1322,3 +1322,8 @@ achievements:
   title: Implement Azure VM-based SAP solutions
   summary: Implement Azure VM-based SAP solutions
   iconUrl: /training/achievements/implementing-azure-vm-based-sap-solutions.svg
+- uid: learn.wwl.maintain-azure-sap-workloads.badge
+  type: badge
+  title: Maintain Azure for SAP workloads
+  summary: Maintain Azure for SAP workloads
+  iconUrl: /training/achievements/maintain-azure-sap-workloads.svg
