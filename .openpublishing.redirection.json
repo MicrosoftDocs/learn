@@ -18449,6 +18449,11 @@
       "source_path": "learn-pr/wwl-azure/implement-azure-vm-based-sap-solutions/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-vm-based-sap-solutions/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
+      "redirect_document_id": false
     }
   ]
 }
