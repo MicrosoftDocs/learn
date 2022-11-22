@@ -33,7 +33,6 @@ units:
 - learn.wwl.implement-azure-vm-based-sap-solutions.define-single-instance-implementations-sap-workloads
 - learn.wwl.implement-azure-vm-based-sap-solutions.implement-ha-sap-netweaver-with-anydb-azure-vms
 - learn.wwl.implement-azure-vm-based-sap-solutions.implement-ha-sap-hana-azure-vms
-- learn.wwl.implement-azure-vm-based-sap-solutions.configure-azure-enhanced-monitoring-extension-sap-workloads
 - learn.wwl.implement-azure-vm-based-sap-solutions.implement-ad-azure-ad-based-authentication-sap-workloads
 - learn.wwl.implement-azure-vm-based-sap-solutions.knowledge-check
 - learn.wwl.implement-azure-vm-based-sap-solutions.summary
