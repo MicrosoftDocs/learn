@@ -19,7 +19,7 @@ TEMPLATE_ID=`az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices
 --query "template" -o tsv`
 
 az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/query \
---url-parameters api-version=2022-06-30-preview \
+--url-parameters api-version=2022-10-31-preview \
 --headers Authorization="$OPERATOR_TOKEN" Content-Type=application/json \
 --body '{
     "query": "SELECT TOP 5 $id AS device-id, $ts AS timestamp, ContentsTemperature, Location FROM '"$TEMPLATE_ID"' WHERE device-id = '"'sim-truck-001'"' ORDER BY timestamp DESC"

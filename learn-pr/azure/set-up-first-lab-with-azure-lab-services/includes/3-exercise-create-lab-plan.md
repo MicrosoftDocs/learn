@@ -6,7 +6,9 @@ During the process, you'll:
 - Create a lab plan.
 - Select virtual machine images that can be used for labs.
 
-[!include[](../../../includes/azure-subscription-prerequisite.md)]
+If you want to perform the steps in the Azure portal as you read along, you need an Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) and add a subscription before you begin. If you are a student, you can take advantage of the [Azure for students](https://azure.microsoft.com/free/students/) offer.
+
+When you complete the exercises, be sure to delete the resources you created.
 
 ## Create a lab plan
 
@@ -14,7 +16,7 @@ The following steps show how to use the Azure portal to create a lab plan.
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 1. In the top left of the screen, select **Create a resource**.
-1. Select **All services** in the left menu.  Search for **Lab plans**.
+1. Search for **Lab plans**.
 1. Select **Lab plan**, and then select **Create**.
 
     :::image type="content" source="../media/select-lab-plans-service.png" alt-text="Screenshot that shows the Lab plan tile for Azure Marketplace.":::

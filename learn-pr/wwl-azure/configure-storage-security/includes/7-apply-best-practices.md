@@ -6,6 +6,12 @@ It's important to understand that when you use a SAS in your application, there 
 
 - If a SAS provided to a client application expires and the application is unable to retrieve a new SAS from your service, the application functionality might be hindered.
 
+Watch this video for more ideas on how to secure your storage. This video is based on [Azure Tips and Tricks #272 Azure Security Best Practices](https://microsoft.github.io/AzureTipsAndTricks/blog/blog/tip272.html).
+
+<br/>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/mntOLLNejUo?list=PLLasX02E8BPCNCK8Thcxu-Y-XcBUbhFWC" title="Azure Security best practices | Azure Tips and Tricks" allowfullscreen></iframe>
+
+
 ### Recommendations for managing risks
 
 Let's look at some recommendations that can help mitigate risks when working with a SAS.

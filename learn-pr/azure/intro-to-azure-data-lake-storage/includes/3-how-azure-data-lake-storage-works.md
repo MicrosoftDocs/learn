@@ -56,7 +56,6 @@ If your relational data is on-premises, Azure Data Factory can also work with mo
 
 Does your organization generate real-time streaming data from devices, sensors, or applications? If so, then you'll want to capture that data on an event-by-event basis as the data is generated, and then ingest that data into Azure Data Lake Storage for processing and analysis. You can use the following tools to ingest streaming data:
 
-- Apache Storm on Azure HDInsight
 - Azure Stream Analytics
 
 ## Accessing stored data
