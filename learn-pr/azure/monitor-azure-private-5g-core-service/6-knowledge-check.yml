@@ -27,17 +27,17 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "To monitor all the sites in a private mobile network centrally from Azure, which of the following tools should be used?"
     choices:
-    - content: ""
+    - content: "Azure Log Analytics"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Azure Private 5G Core can stream log data from packet core instances to the Log Analytics workspace. It allows you to use queries to retrieve the log data or use dashboards to visualize query results."
+    - content: "The packet core dashboards"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Try again. The packet core dashboards allow you to locally monitor a specific site in a private mobile network."
+    - content: "The distributed tracing tool"
       isCorrect: false
-      explanation: ""
+      explanation: "Try again. The distributed tracing tool is for issue diagnostics. It allows you locally diagnose network issues in a site."
   - content: ""
     choices:
     - content: ""

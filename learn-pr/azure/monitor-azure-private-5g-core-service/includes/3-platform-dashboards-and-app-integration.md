@@ -15,7 +15,7 @@ How to configure the dashboards?
 Are the list and names of the dashboards finalized?
 Will RAN monitoring be available for GA?
 
-## Monitor the private mobile network with other applications
+## Application integration for network monitoring
 
 Why do you need it?
 Offer: Azure Monitor REST API
