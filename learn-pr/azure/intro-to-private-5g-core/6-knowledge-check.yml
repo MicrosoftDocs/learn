@@ -35,7 +35,7 @@ quiz:
     - content: "Threat protection for IoT devices."
       isCorrect: false
       explanation: "Try again. Azure Private 5G Core can be used to connect IoT devices. However, it doesn't provide a threat protection service for each IoT device."
-  - content: "How does Azure Private 5G Core provide integration with RAN?"
+  - content: "How does Azure Private 5G Core provide integration with 5G RAN?"
     choices:
     - content: "It exposes a standards-based N2 interface for the 5G control plane."
       isCorrect: true
