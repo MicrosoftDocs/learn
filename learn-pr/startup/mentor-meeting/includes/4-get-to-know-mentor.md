@@ -34,7 +34,7 @@ The more knowledgeable and prepared you are for the initial meeting, the more li
 
 ### LinkedIn
 
-For business professionals, LinkedIn tends to be the predominate source of relevant information. Using LinkedIn as a research tool, you can answer a variety of questions about the topics above, including experience, geography, networks, and to some extent, personality. Use the mentors LinkedIn profile to gain a better understanding of where the founder has worked, how long they were at their startup, which networks they highlight, and the type of content they share.
+For business professionals, LinkedIn tends to be the predominate source of relevant information. Using LinkedIn as a research tool, you can answer a variety of questions about the topics above, including experience, geography, networks, and to some extent, personality. Use the mentor's LinkedIn profile to gain a better understanding of where the mentor has worked, how long they were at their startup, which networks they highlight, and the type of content they share.
 
 ### Google or other search engines
 
@@ -51,7 +51,7 @@ Finding a mentor on social media is another way to gain a better understanding o
 
 ### Crunchbase
 
-If the founder raised venture capital, using a resource like Crunchbase can also be an efficient way of learning about the mentor, their company, its products, and investors who funded the startup at various stages. It can also be a good way to determine whether the mentor has raised venture capital.
+If the founder raised venture capital, using a resource like [Crunchbase](https://crunchbase.com/) can also be an efficient way of learning about the mentor, their company, its products, and investors who funded the startup at various stages. It can also be a good way to determine whether the mentor has raised venture capital.
 
 This can be a key differentiator for where you steer the conversation. For example, if you're a founder who is interested in potential ways to fund your business, then asking a mentor who bootstrapped about VC may need to focus on reasons why they didn't pursue VC, rather than how to pursue VC.
 
