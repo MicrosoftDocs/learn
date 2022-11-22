@@ -47,7 +47,7 @@ In the following procedure, you'll build the query in stages to give yourself a 
 
 1. Take a look at the resulting list. Try modifying the query to also show the corresponding total cost and profit for these countries.
 
-Your team then asks you to identify the countries with the lowest revenues in the last recorded year, by month. To do this, you use a similar query. But this time, you use the `startofmonth` function to facilitate grouping by month. You also use the `arg_min()` aggregation function to find the countries with the lowest revenues in each month.
+Your team then asks you to identify the countries with the lowest revenues in the last recorded year, by month. To do this, you use a similar query. But this time, you use the `startofmonth()` function to facilitate grouping by month. You also use the `arg_min()` aggregation function to find the countries with the lowest revenues in each month.
 
 1. Run the following query.
 
@@ -70,11 +70,11 @@ Your team then asks you to identify the countries with the lowest revenues in th
 
 1. Look at each row. Notice that the first column shows the months of the last year, in descending order, followed by columns that show the total sales for the country with the lowest sales numbers that month.
 
-## Use the `leftouter` join kind
+## Use the leftouter 'join' kind
 
 Your sales team wants to know the total sales per product category. When you start reviewing the available data, you realize that you'll need the *Products* table to get the list of product categories and the *SalesFact* table to get the sales data. You also realize that you want to count the sales for each category and list all product categories, even for products that might not have sales.
 
-Having analyzed the request, you choose to use the `leftouter` join, because it returns all records from the left table, enriched with matching data from the right table. You write your query by using the *Products* table as the left dimension table, matching data from the *SalesFact* facts table, and grouping the result by product category, as follows:
+Having analyzed the request, you choose to use the *leftouter* `join`, because it returns all records from the left table, enriched with matching data from the right table. You write your query by using the *Products* table as the left dimension table, matching data from the *SalesFact* facts table, and grouping the result by product category, as follows:
 
 1. Run the following query.
 
@@ -95,9 +95,9 @@ Having analyzed the request, you choose to use the `leftouter` join, because it 
 
 1. Notice that the execution time is 0.861 seconds, though this time might vary between runs. This query is one way to get this answer and is a good example of a query that isn't optimized for performance. Later, you'll compare this time with the execution time of an equivalent query by using the `lookup` operator, which is optimized for this type of data.
 
-## Use the `rightanti` join kind
+## Use the rightanti `join` kind
 
-Similarly, your sales team wants to know the number of products that don't sell in each product category. You can use a `rightanti` join to get all the rows from the *Products* table that don't match any rows in the *SalesFacts* table, and then group the results by product category.
+Similarly, your sales team wants to know the number of products that don't sell in each product category. You can use a *rightanti* `join` to get all the rows from the *Products* table that don't match any rows in the *SalesFacts* table, and then group the results by product category.
 
 1. Run the following query.
 
@@ -116,4 +116,4 @@ Similarly, your sales team wants to know the number of products that don't sell 
 
     :::image type="content" source="../media/4-join-4.png" alt-text="Screenshot of the join operator query, showing the number of products that don't sell in each product category.":::
 
-    Look at each row. The results show the number of unsold products per product category. Notice that the `rightanti` join selects only products that have no sales facts, indicating that there were no sales for products that were returned by the `join` operator.
+    Look at each row. The results show the number of unsold products per product category. Notice that the rightanti `join` selects only products that have no sales facts, indicating that there were no sales for products that were returned by the `join` operator.
