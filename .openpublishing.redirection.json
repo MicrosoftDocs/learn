@@ -18524,6 +18524,11 @@
       "source_path": "learn-pr/wwl-azure/migrate-sap-workloads-azure/3-define-database-migration-option-methodologies.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/migrate-sap-workloads-azure/5-implement-large-database-migration-azure.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
     }
   ]
 }
