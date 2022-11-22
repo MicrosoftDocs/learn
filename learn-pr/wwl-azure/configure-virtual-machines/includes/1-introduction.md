@@ -1,4 +1,4 @@
-Azure Virtual Machines is an on-demand, scalable computing resource. Azure Architects commonly implement virtual machines to gain greater control over the computing environment.
+Azure Virtual Machines enables you to create on-demand, scalable computing resources. Azure Architects commonly use virtual machines to gain greater control over the computing environment.
 
 In this module, your company is doing consumer research, and your team manages the on-premises servers. The servers you administer run the entire company infrastructure from web servers to databases. However, the hardware is aging and starting to struggle to keep up with some of the new data analysis applications being deployed. Rather than upgrade the hardware, the company has decided to deploy Azure virtual machines. You're responsible for deploying the new virtual machines. Your deployment tasks include correctly sizing the machines, selecting storage, and configuring networking.
 

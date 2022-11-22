@@ -6,13 +6,13 @@ In this module, you learned how to configure virtual machine names and locations
 
 - Peruse [Azure Virtual Machines documentation](/azure/virtual-machines/).
 
-- Peruse [Linux virtual machines documentation](/azure/virtual-machines/linux/).
+- Find [virtual machines for your configuration with the Virtual machines selector](https://azure.microsoft.com/pricing/vm-selector/).
 
 ## Learn more with self-paced training
 
-- Choose the [right disk storage for your virtual machine workload](/training/modules/choose-the-right-disk-storage-for-vm-workload/).
+- Choose [disk storage for your virtual machine workload](/training/modules/choose-the-right-disk-storage-for-vm-workload/).
 
-- Connect to [virtual machines through the Azure portal by using Azure Bastion](/training/modules/connect-vm-with-azure-bastion/).
+- Connect to [virtual machines through the Azure portal with Azure Bastion](/training/modules/connect-vm-with-azure-bastion/). _Azure subscription required_.
 
 ## Learn more with optional hands-on exercises
 
