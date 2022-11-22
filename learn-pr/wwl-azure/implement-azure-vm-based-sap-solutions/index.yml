@@ -28,6 +28,5 @@ subjects:
 - data-engineering
 - virtual-machine
 units:
-- learn.wwl.implement-azure-vm-based-sap-solutions.summary
 badge:
   uid: learn.wwl.implement-azure-vm-based-sap-solutions.badge
