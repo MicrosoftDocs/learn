@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-security-misconfiguration.md)]
+  [!include[](includes/8-security-misconfiguration.md)]

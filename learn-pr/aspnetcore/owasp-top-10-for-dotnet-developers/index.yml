@@ -118,7 +118,9 @@ roles:
 ###
 products:
 - azure
-- aspnet-core
+- aspnet
+- aspnet-web-api
+- defender-for-threat-intelligence
 - blazor
 - dotnet-framework
 ###########################################################################
@@ -139,18 +141,20 @@ subjects:
 units:
 - learn.owasp-top-10-for-dotnet-developers.introduction
 - learn.owasp-top-10-for-dotnet-developers.what-is-owasp-top-10
+- learn.owasp-top-10-for-dotnet-developers.knowledge-check-1
 - learn.owasp-top-10-for-dotnet-developers.broken-access-control
 - learn.owasp-top-10-for-dotnet-developers.cryptographic-failures
 - learn.owasp-top-10-for-dotnet-developers.injection
 - learn.owasp-top-10-for-dotnet-developers.insecure-design
+- learn.owasp-top-10-for-dotnet-developers.knowledge-check-2
 - learn.owasp-top-10-for-dotnet-developers.security-misconfiguration
-- learn.owasp-top-10-for-dotnet-developers.vulnerable-outdated-components
-- learn.owasp-top-10-for-dotnet-developers.knowledge-check-1
 - learn.owasp-top-10-for-dotnet-developers.identification-authentication-failures
+- learn.owasp-top-10-for-dotnet-developers.vulnerable-outdated-components
+- learn.owasp-top-10-for-dotnet-developers.knowledge-check-3
+- learn.owasp-top-10-for-dotnet-developers.software-data-integrity-failures
 - learn.owasp-top-10-for-dotnet-developers.security-logging-monitoring
 - learn.owasp-top-10-for-dotnet-developers.server-side-request-forgery
-- learn.owasp-top-10-for-dotnet-developers.software-data-integrity-failures
-- learn.owasp-top-10-for-dotnet-developers.knowledge-check-2
+- learn.owasp-top-10-for-dotnet-developers.knowledge-check-4
 - learn.owasp-top-10-for-dotnet-developers.summary
 badge:
   uid: learn.owasp-top-10-for-dotnet-developers.badge

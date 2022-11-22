@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.owasp-top-10-for-dotnet-developers.knowledge-check-2
+uid: learn.owasp-top-10-for-dotnet-developers.knowledge-check-4
 title: Knowledge check
 metadata:
   title: knowledge-check
-  description: "OWASP Top Ten 2021 for .NET Developers. Knowledge check."
+  description: "OWASP Top Ten 2021 for .NET Developers. Knowledge check - part 4."
   ms.date: 11/14/2022
   author: obrocki
   ms.author: dawidobrocki
@@ -13,62 +13,37 @@ durationInMinutes: 1
 
 content: |
 quiz:
-  questions:
-  - content: ""
+  questions:  
+ 
+  - content: "Performing input validation on client side only is considered to be best practice?"
     choices:
-    - content: ""
+    - content: "Yes."
+      isCorrect: false
+      explanation: "Client side validation should never be the only line of defense when dealing with user input.Always validate on both client and server side."
+    - content: "No."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Always validate on both client and server side."   
+
+  - content: "Which of the following is good security logging practice?"
     choices:
-    - content: ""
+    - content: "Log all events occurring in the system and store the logs in an easily accessible public location."
+      isCorrect: false
+      explanation: "Overlogging may add noise when diagnosing issues. Logs should be protected and not exposed to public."
+    - content: "Log user and password of all failed re-authentication attempts"
+      isCorrect: false
+      explanation: "Not quite. Failed authentication attempts should be logged and audited. Logging passwords is a security risk"    
+    - content: "Sanitize logs from sensitive information and guard access to logged information.."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: "You're planning to analyse your running appl (DYNAMIC TEST TEASE)"
+      explanation: "Correct."
+      
+  - content: "While browsing a legacy web app codebase running in Azure you and your team inherited to support you stumbled upon a hardcoded database connection string with username and password to a production environment database. What would be the correct course of action?"
     choices:
-    - content: "SAST"
+    - content: "Find the authors of the change with git blame and ask them to fix it when they have some spare time"
+      isCorrect: false
+      explanation: "Changes are, whoever checked in the commit, might no longer be part of your team or even the same company."
+    - content: "Change password for username referenced in connection string. Open a pull request with hardcoded connection string now being obtained from Azure KeyVault."
       isCorrect: true
-      explanation: ""
-    - content: "SCA"
+      explanation: "Secret rotation is a good practice. Azure KeyVault is the go-to service for storing secrets, certificates and keys and in most secure fashion. Avoid blame games."
+    - content: "The connection string is only referenced in Git and code, no one can access it since only the web app is available to the public so nothing needs to be done."
       isCorrect: false
-      explanation: ""
-    - content: "DAST"
-      isCorrect: false
-      explanation: ""
-    - content: "Perform Chaos Test"
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Secret scanning can ensure no secrets make their way into the repository. Access to the codebase and the CI/CD system can be compromised leading to exposure of connection string."

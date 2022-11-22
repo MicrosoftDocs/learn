@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.owasp-top-10-for-dotnet-developers.knowledge-check-3
+title: Knowledge check
+metadata:
+  title: knowledge-check
+  description: "OWASP Top Ten 2021 for .NET Developers. Knowledge check - part 3."
+  ms.date: 11/14/2022
+  author: obrocki
+  ms.author: dawidobrocki
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+
+content: |
+quiz:
+  questions:
+ 
+
+  - content: "Your team is planning to analyze the deployed and running system for infrastructure and configuration security vulnerabilities. Which form of security testing could be most beneficial?"
+    choices:
+    - content: "SAST."
+      isCorrect: false
+      explanation: "Static analysis focuses on code propr to it's deployment."
+    - content: "SCA."
+      isCorrect: false
+      explanation: "Composition analysis focuses on code propr to it's deployment."
+    - content: "DAST."
+      isCorrect: true
+      explanation: "Correct. Dynamic analysis can inspect and report on infrastructure configuration and expose it's weak points."
+    - content: "Chaos testing."
+      isCorrect: false
+      explanation: "Try again, this is however very helpful technique in reliability and disaster recovery testing."
+
+  - content: "Should the DevOps team maintain and review list of 3rd party components used in the system for security vulnerabilities? "
+    choices:
+    - content: "An Excel spreadsheet with Software Bill of Materials should be part of the design phase and any new green field project."
+      isCorrect: false
+      explanation: "SBOM is recommended, however can be applied at any stage of the project in more automated fashion."
+    - content: "Favour automated tools at any stage of product lifecycle to track and monitor your dependencies."
+      isCorrect: true
+      explanation: "Correct. Maintenance effort required to keep a list of dependencies up-to-date combined with their vulnerability check can quickly become unmanageable."
+    - content: "There is no risk associated with 3rd party purchased and OSS components."
+      isCorrect: false
+      explanation: "Even if your software makes the best effort in staying secure, an insecure or flowed dependency may introduce security vulnerability in your system."
+
+  

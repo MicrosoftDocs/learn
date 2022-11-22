@@ -12,7 +12,7 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/17-summary.md)]
-
+  
 # more: |
 #   [https://docs.microsoft.com/en-us/learn/modules/owasp-and-dynamic-analyzers/]
 #   [https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf]

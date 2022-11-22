@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.owasp-top-10-for-dotnet-developers.knowledge-check-1
+title: Knowledge check
+metadata:
+  title: knowledge-check
+  description: "OWASP Top Ten 2021 for .NET Developers. Knowledge check - part 1."
+  ms.date: 11/14/2022
+  author: obrocki
+  ms.author: dawidobrocki
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+
+content: |
+quiz:
+  questions:
+
+  - content: "The goal of Open Web Application Security Project (OWASP) Top 10 report put together by security experts is to"  
+    choices:
+    - content: "Improve awareness and promote recommended mitigation techniques to most critical security concerns for web app security."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Create a standard for security benchmark of web applications."
+      isCorrect: false
+      explanation: "Incorrect. OWASP Top 10 is often effort to as 'awareness document' for educational purposes."
+
+  - content: "In context of Secure DevOps, what does SDL stand for?"
+    choices:
+    - content: "Schema Definition Language"
+      isCorrect: false
+      explanation: "Not quite"
+    - content: "Security Development Lifecycle"
+      isCorrect: true
+      explanation: "Correct! You may come across similar acronym SDLC which means the same."
+    - content: "Supplier Document List"
+      isCorrect: false
+      explanation: "Almost there!"
+
+  
