@@ -24,7 +24,6 @@ roles:
 products:
 - azure
 units:
-- learn.wwl.maintain-azure-sap-workloads.introduction
 - learn.wwl.maintain-azure-sap-workloads.set-up-remote-management-sap-workloads
 - learn.wwl.maintain-azure-sap-workloads.perform-backup-restore-sap-workloads
 - learn.wwl.maintain-azure-sap-workloads.networking-changes-sap-workloads
