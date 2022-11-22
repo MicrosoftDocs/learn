@@ -18409,6 +18409,11 @@
       "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/8-bring-it-together.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/8-bring-it-all-together",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-vm-based-sap-solutions/index.md",
+      "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
+      "redirect_document_id": false
     }
   ]
 }
