@@ -29,6 +29,5 @@ subjects:
 - cloud-computing
 units:
 - learn.wwl.migrate-sap-workloads-azure.understand-migration-options-sap-workloads
-- learn.wwl.migrate-sap-workloads-azure.summary
 badge:
   uid: learn.wwl.migrate-sap-workloads-azure.badge
