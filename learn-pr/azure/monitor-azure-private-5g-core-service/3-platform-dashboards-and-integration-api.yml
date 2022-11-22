@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-azure-private-5g-core-service.platform-dashboards-and-integration-api
+title: Platform dashboards and application integration API
+metadata:
+  title: Platform dashboards and application integration API
+  description: Azure Private 5G Core allows you to use platform dashboards to remotely monitor all the sites in your private mobile network. It also allows you to use the Azure Monitor REST API to integrate the network metrics into other applications.
+  ms.date: 11/22/2022
+  author: michael-weizhong-shan
+  ms.author: michaelshan
+  ms.topic: interactive-tutorial
+  ms.service: learning-private-5g-core
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-platform-dashboards-and-integration-api.md)]

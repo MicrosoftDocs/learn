@@ -5,7 +5,10 @@ In the private mobile networks powered with Azure Private 5G Core, enterprises u
 
 Azure Private 5G Core provides flexible monitoring options, which allow you to either monitor multiple network sites centrally from the cloud, or locally monitor each individual site from within the site.
 
-- Remote monitoring with Azure Log Analytics: Log Analytics is a standard Azure tool that you can use through the Azure portal. Once you enable the Log Analytics tool for a private mobile network is enabled, each packet core instance in the network starts to stream relevant logs to the tool. You can create queries to retrieve the log data, and use Log Analytics dashboards to visualize your saved log queries.
+- Remote monitoring
+  - Remote monitoring with Azure Log Analytics: Log Analytics is a standard Azure tool that you can use through the Azure portal. Once you enable the Log Analytics tool for a private mobile network, each packet core instance in the network streams relevant logs to the tool. You can create queries to retrieve the log data, and use Log Analytics dashboards to visualize your saved log queries.
+  - Remote monitoring with the platform dashboards: The site resource that you use to manage a site in your private mobile network offers a list of dashboards called platform dashboards. Through these dashboards, you can check site health information such as user plane packets dropped or session establishment failures.
+  - Remote monitoring with other applications: Azure Private 5G Core can share network health metrics through [Azure Event Hub](/azure/event-hubs/). You can use the [Azure Monitor REST API](/rest/api/monitor/) to retrieve the metrics from Azure Event Hub and then integrate the metrics data into other applications.
 
 - Local monitoring with packet core dashboards: The packet core instance that powers each site in a private mobile network provides the packet core dashboards by default. With these boards, you can monitor key network statistics in real time. These boards also allow you to view information on firing alerts, based on which you can quickly react to emerging issues.
 
@@ -49,10 +52,10 @@ In general, pay special attention to the following metrics:
 
 In this module, we'll introduce the use of the following monitoring and troubleshooting tools to you:
 
-- Azure Log Analytics,
-- The packet core dashboards
-- The distributed tracing tool
+- The remote monitoring tools, including Azure Log Analytics, the platform dashboards, and the application integration API.
+- The packet core dashboards.
+- The distributed tracing tool.
 
 After the learning, you'll need to answer questions in the knowledge check unit to make sure that you've grasped these tools.
 
-By the end of the session, you'll be able to use the tools to monitor the private mobile network in an enterprise and diagnose any issues that they detect during the monitoring.
+By the end of the session, you'll be able to use the tools to monitor the private mobile network in an enterprise and diagnose any issues detected during the monitoring.

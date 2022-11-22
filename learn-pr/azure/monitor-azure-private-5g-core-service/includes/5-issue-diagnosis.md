@@ -61,6 +61,10 @@ In addition, the distributed tracing tool allows you to use a date/time range to
 
 For detailed instructions on searching for information in the distributed tracing tool, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
 
+## An example of diagnosis
+
+TBD
+
 ## Collect diagnostics packages for technical support
 
 <!-- Need to check if this feature is delivered for GA before the publication of this module -->
