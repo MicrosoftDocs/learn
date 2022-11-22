@@ -28,7 +28,6 @@ subjects:
 - migration
 - cloud-computing
 units:
-- learn.wwl.migrate-sap-workloads-azure.introduction
 - learn.wwl.migrate-sap-workloads-azure.understand-migration-options-sap-workloads
 - learn.wwl.migrate-sap-workloads-azure.knowledge-check
 - learn.wwl.migrate-sap-workloads-azure.summary
