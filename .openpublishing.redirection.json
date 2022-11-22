@@ -18316,8 +18316,37 @@
       "redirect_document_id": false
     },
     {
-
-       "source_path": "learn-pr/wwl-azure/design-network-solutions/4-design-for-azure-network-connectivity-services.md",
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/includes/7-plan-upcoming-sprint.md",
+      "redirect_url": "/training/modules/create-release-pipeline/7-clean-up-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/includes/8-clean-up-environment.md",
+      "redirect_url": "/training/modules/create-release-pipeline/7-clean-up-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/includes/9-summary.md",
+      "redirect_url": "/training/modules/create-release-pipeline/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/7-plan-upcoming-sprint.yml",
+      "redirect_url": "/training/modules/create-release-pipeline/7-clean-up-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/8-clean-up-environment.yml",
+      "redirect_url": "/training/modules/create-release-pipeline/7-clean-up-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/9-summary.yml",
+      "redirect_url": "/training/modules/create-release-pipeline/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-network-solutions/4-design-for-azure-network-connectivity-services.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-network-solutions/4a-design-patterns-for-azure-network-connectivity-services",
       "redirect_document_id": false
     },
