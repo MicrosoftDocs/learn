@@ -1317,3 +1317,23 @@ achievements:
   title: Use Language Understanding with Speech
   summary: While many applications work with text-based natural language input, it's also for applications to support speech. You can integrate the Language Understanding and Speech services to accomplish this.
   iconUrl: /training/achievements/language-understanding-speech.svg
+- uid: learn.wwl.implement-azure-vm-based-sap-solutions.badge
+  type: badge
+  title: Implement Azure VM-based SAP solutions
+  summary: Implement Azure VM-based SAP solutions
+  iconUrl: /training/achievements/implementing-azure-vm-based-sap-solutions.svg
+- uid: learn.wwl.maintain-azure-sap-workloads.badge
+  type: badge
+  title: Maintain Azure for SAP workloads
+  summary: Maintain Azure for SAP workloads
+  iconUrl: /training/achievements/maintain-azure-sap-workloads.svg
+- uid: learn.wwl.migrate-sap-workloads-azure.badge
+  type: badge
+  title: Migrate SAP workloads to Azure
+  summary: Migrate SAP workloads to Azure
+  iconUrl: /training/achievements/migrating-sap-workloads-azure.svg
+- uid: learn.wwl.run-azure-sap-workloads.trophy
+  type: trophy
+  title: Run Azure for SAP workloads
+  summary: Run Azure for SAP workloads
+  iconUrl: /training/achievements/run-azure-sap-workloads.svg
