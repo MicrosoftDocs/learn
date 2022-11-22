@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/9-identification-authentication-failures​.md)]
+  [!include[](includes/9-identification-authentication-failures.md)]

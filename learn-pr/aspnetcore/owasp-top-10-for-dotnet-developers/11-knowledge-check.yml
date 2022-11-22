@@ -17,13 +17,13 @@ quiz:
  
   - content: "You plan to analyze deployed and running system. You want to focus finding security vulnerabilities in infrastructure and configuration. Which form of security testing would you benefit the most?"
     choices:
-    - content: "Static application security testing."
+    - content: "Static application security testing (SAST)."
       isCorrect: false
       explanation: "Static analysis focuses on code prior to its deployment."
-    - content: "SCA."
+    - content: "Software Composition Analysis (SCA)."
       isCorrect: false
       explanation: "Composition analysis focuses on code prior to is deployment."
-    - content: "DAST."
+    - content: "Dynamic Application Security Testing (DAST)."
       isCorrect: true
       explanation: "Correct. Dynamic analysis can inspect and report on infrastructure configuration and expose its weak points."
     - content: "Chaos testing."
