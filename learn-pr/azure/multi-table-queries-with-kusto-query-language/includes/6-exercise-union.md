@@ -109,4 +109,6 @@ To only return the columns that occur in all tables, you'll use an inner union o
 
     :::image type="content" source="../media/6-union-3.png" alt-text="Screenshot of the union operator, returning common columns from tables that have different columns, query, and results.":::
 
-    Notice that you get all the rows from the three tables and only the columns that occur in all of the tables. Try modifying the query to add more common columns by extending each table with a column of the same name, and see how their values are populated in the results.
+    Notice that you get all the rows from the three tables and only the columns that occur in all of the tables. 
+    
+1. Now try modifying the query to add more common columns by extending each table with a column of the same name, and then see how their values are populated in the results.
