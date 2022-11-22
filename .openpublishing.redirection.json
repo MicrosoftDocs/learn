@@ -18504,6 +18504,11 @@
       "source_path": "learn-pr/wwl-azure/maintain-azure-sap-workloads/9-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/maintain-azure-sap-workloads/6-vertical-horizontal-scaling.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
     }
   ]
 }
