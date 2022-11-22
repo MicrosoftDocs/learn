@@ -26,7 +26,6 @@ products:
 units:
 - learn.wwl.maintain-azure-sap-workloads.set-up-remote-management-sap-workloads
 - learn.wwl.maintain-azure-sap-workloads.perform-backup-restore-sap-workloads
-- learn.wwl.maintain-azure-sap-workloads.networking-changes-sap-workloads
 - learn.wwl.maintain-azure-sap-workloads.vertical-horizontal-scaling-sap-workloads
 - learn.wwl.maintain-azure-sap-workloads.summary
 badge:
