@@ -1357,3 +1357,8 @@ achievements:
   title: SAP HANA on Azure Compute, Network, and Storage
   summary: SAP HANA on Azure (Large Instances) provides virtual machines for deploying and running SAP HANA. This module explores the SAP HANA on Azure (Large Instances) solution that builds on assigned, non-shared host/server bare-metal hardware.
   iconUrl: /training/achievements/sap-hana-azure-compute-network-storage.svg
+- uid: learn.wwl.using-iaas-support-azure-sap-workloads.badge
+  type: badge
+  title: Using IAAS support with Azure for SAP workloads
+  summary: There are many SAP-certified operating systems supported by SAP running on Azure VMs. In this module, you will review the SAP recommended support products for VM types and the network, database, and monitoring requirements.
+  iconUrl: /training/achievements/using-iaas-support-with-azure-for-sap-workloads.svg
