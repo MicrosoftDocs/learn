@@ -26,7 +26,6 @@ products:
 - azure-sap
 units:
 - learn.wwl.introduction-azure-sap-workloads.introduction
-- learn.wwl.introduction-azure-sap-workloads.identity-services-sap-workloads
 - learn.wwl.introduction-azure-sap-workloads.knowledge-check
 - learn.wwl.introduction-azure-sap-workloads.summary
 badge:
