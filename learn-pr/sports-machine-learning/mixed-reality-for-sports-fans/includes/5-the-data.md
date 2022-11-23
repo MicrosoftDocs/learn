@@ -15,7 +15,7 @@ For the Babylon.js Mixed Reality project, you can pull all the images of the Tun
 - PER
 - Image URL
 
-Luckily, you can use a little bit of Python to do this.
+Luckily, you can use a little bit of Python to create the JSON file.
 
 ## Convert CSV to JSON with Python
 
@@ -33,7 +33,7 @@ You should have the following content set up in Visual Studio Code.
 
 ## Write the CSV reader
 
-Next, extract only the relevant parts of the CSV file, such as the name and PER for each player.
+Next, use the `convert.py` file to extract only the relevant parts of the CSV file, such as the name and PER for each player.
 
 Make sure you imported the CSV package, and create a set of constants that will represent your current team.
 
@@ -114,7 +114,7 @@ This JSON file hasn't been completed yet. That's because you had an outlier in y
 
 ## Add the missing player back in the data
 
-In the first module of this learning path inspired by *Space Jam: A New Legacy*, you realized you had some outliers in your data. If you completed this module, you might remember that in [Unit 5: Check for outliers](/learn/modules/predict-basketball-player-efficiency-ratings/5-check-for-outliers?azure-portal=true) there was an outlier who had a very low value for points and possessions. This was row 35, ID 40. It turns out that player was Yosemite Sam!
+In the first module of this learning path inspired by *Space Jam: A New Legacy*, you realized you had some outliers in your data. If you completed this module, you might remember that in [Unit 5: Check for outliers](/training/modules/predict-basketball-player-efficiency-ratings/5-check-for-outliers?azure-portal=true) there was an outlier who had a low value for points and possessions. This was row 35, ID 40. It turns out that player was Yosemite Sam!
 
 You want to make sure he's added back into your JSON data so that he can show up in your Mixed Reality experience. You'll have to write a bit more code.
 

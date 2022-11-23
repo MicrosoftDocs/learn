@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.
-iconUrl: /learn/achievements/azure-storage-fundamentals.svg
+iconUrl: /training/achievements/azure-storage-fundamentals.svg
 levels:
 - beginner
 roles:
@@ -34,6 +34,8 @@ products:
 - azure-storage
 - azure-storage-accounts
 - azure-storage-explorer
+subjects:
+- storage
 units:
 - learn.azure.azure-storage-fundamentals.introduction
 - learn.azure.azure-storage-fundamentals.azure-storage-accounts

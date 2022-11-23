@@ -19,7 +19,7 @@ abstract: |
 prerequisites: | 
   - Knowledge of networking fundamentals
   - Familiarity with Azure virtual networking
-iconUrl: /learn/achievements/design-a-hybrid-network-architecture.svg
+iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
 levels:
 - beginner
 roles:
@@ -29,6 +29,8 @@ products:
 - azure-expressroute
 - azure-virtual-network
 - azure-vpn-gateway
+subjects:
+- networking
 units:
 - learn.design-a-hybrid-network-architecture.1-introduction
 - learn.design-a-hybrid-network-architecture.2-on-premises-integration-on-azure

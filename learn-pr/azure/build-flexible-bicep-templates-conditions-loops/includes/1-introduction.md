@@ -4,9 +4,9 @@ When you work with Bicep templates, conditions and loops can help make your Azur
 
 Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Your company is designing a new smart teddy bear toy. Some of the teddy bear's features are based on back-end server components and SQL databases that are hosted in Azure. For security reasons, within your production environments, you need to make sure that you've enabled auditing on your Azure SQL logical servers.
 
-You expect that the toy will be very popular, and your company plans to launch it in new countries regularly. Every country where you launch the smart teddy bear will need a separate database server and virtual network. To comply with each country's laws, you'll need to physically place these resources in specific locations. You've been asked to deploy each country's database servers and virtual networks and, at the same time, make it easy to add logical servers and virtual networks as the toy is launched in new countries.
+You expect that the toy will be very popular, and your company plans to launch it in new countries/regions regularly. Every country/region where you launch the smart teddy bear will need a separate database server and virtual network. To comply with each country's/region's laws, you'll need to physically place these resources in specific locations. You've been asked to deploy each country's/region's database servers and virtual networks and, at the same time, make it easy to add logical servers and virtual networks as the toy is launched in new countries/regions.
 
-:::image type="content" source="../media/1-architecture-diagram.png" alt-text="Architecture diagram illustrating a resource group containing Azure SQL logical servers in multiple countries." border="false":::
+:::image type="content" source="../media/1-architecture-diagram.png" alt-text="Architecture diagram illustrating a resource group containing Azure SQL logical servers in multiple countries/regions." border="false":::
 
 ## What will we be doing?
 

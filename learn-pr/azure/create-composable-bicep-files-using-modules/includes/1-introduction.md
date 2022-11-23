@@ -1,10 +1,10 @@
-Bicep modules enable you to break a complex template into parts. You can ensure that each module is focused on a specific task, and that the modules are reusable for multiple deployments and workloads. 
+Bicep modules let you break a complex template into parts. You can ensure that each module is focused on a specific task, and that the modules are reusable for multiple deployments and workloads. 
 
 In this module, you'll learn about the benefits of Bicep modules and how you can create, use, and combine them for your own deployments.
 
 ## Example scenario
 
-Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. You've previously created a Bicep template that deploys websites to support the launch of each new toy product. 
+Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. You've previously created a Bicep template that deploys websites to support the launch of each new toy product.
 
 Your company recently launched a new toy: a remote control wombat. The wombat toy has become extremely popular, and the traffic to its website has increased significantly. Customers are complaining about slow response times because the server can't keep up with the demand.
 

@@ -5,9 +5,9 @@ metadata:
   unitType: summary
   title: Summary
   description: This page summarizes what you've learned in this module.
-  ms.date: 05/09/2021
-  author: akasnik
-  ms.author: akasnik
+  ms.date: 07/25/2022
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
 durationInMinutes: 1

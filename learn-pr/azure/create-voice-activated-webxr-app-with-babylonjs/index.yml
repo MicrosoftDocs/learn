@@ -24,7 +24,7 @@ prerequisites: |
   - NodeJS (v14.17.X or above) and npm (v6.14.X or above) installed on your computer
   - Basic familiarity with Babylon.js (creating a scene, adding meshes to a scene)
   - Basic familiarity with JavaScript or TypeScript
-iconUrl: /learn/achievements/create-voice-activated-webxr-app-with-babylonjs.svg
+iconUrl: /training/achievements/create-voice-activated-webxr-app-with-babylonjs.svg
 levels:
   - beginner
 roles:
@@ -38,6 +38,8 @@ products:
 - azure-blob-storage
 - windows-mixed-reality
 - hololens
+subjects:
+- artificial-intelligence
 units:
 - learn.create-voice-activated-webxr-app-with-babylonjs.introduction
 - learn.create-voice-activated-webxr-app-with-babylonjs.overview-azure-speech-to-text

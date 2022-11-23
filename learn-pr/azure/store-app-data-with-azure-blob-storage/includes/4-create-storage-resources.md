@@ -2,7 +2,7 @@ After you have an idea about how you're going to store data across storage accou
 
 ### Storage accounts
 
-Storage account creation is an administrative/management activity that takes place before deploying and running your app. Accounts are usually created by a deployment or environment setup script, an Azure Resource Manager template, or manually by an admin. Generally, apps other than administrative tools shouldn't have permissions to create storage accounts.
+Storage account creation is an administrative/management activity that takes place before deploying and running your app. Accounts are created by a deployment or environment setup script, an Azure Resource Manager template, or manually by an admin. Generally, apps other than administrative tools shouldn't have permissions to create storage accounts.
 
 ### Containers
 

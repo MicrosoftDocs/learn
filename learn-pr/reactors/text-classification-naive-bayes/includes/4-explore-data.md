@@ -146,7 +146,7 @@ The output is:
 -----------------------------------------------------------------------------------------------------------------------------------------
 |   | Class  | Message                                                                                                  | Length_of_msg |
 -----------------------------------------------------------------------------------------------------------------------------------------
-| 0 | ham    | Go until jurong point, crazy.. Available only in bugis n great world la e buffet... Cine there got amore | 111           |
+| 0 | ham    | Go until jurong point.. Available only in bugis n great world la e buffet... Cine there got amore | 111           |
 |   |        | wat...                                                                                                   |               |
 -----------------------------------------------------------------------------------------------------------------------------------------
 | 1 | ham    | Ok lar... Joking wif u oni...                                                                            | 29            |

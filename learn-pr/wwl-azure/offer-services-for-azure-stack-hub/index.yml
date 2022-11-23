@@ -22,7 +22,7 @@ abstract: |
 prerequisites: |
   *   Working experience with deploying cloud applications.
   *   Conceptual knowledge of messaging, events, code deployments, configurations, API management, and app caching.
-iconUrl: /learn/achievements/4-offer-services-for-azure-stack-hub.svg
+iconUrl: /training/achievements/4-offer-services-for-azure-stack-hub.svg
 levels:
 - advanced
 roles:
@@ -32,6 +32,8 @@ products:
 - azure
 - azure-stack
 - azure-stack-hub
+subjects:
+- cloud-computing
 units:
 - learn.wwl.offer-services-for-azure-stack-hub.introduction
 - learn.wwl.offer-services-for-azure-stack-hub.quotas-plans-offers-subscriptions

@@ -16,16 +16,16 @@ Supplemental Resources:
 
 - [Microsoft Learn](https://aka.ms/learn) 
 
-- [Microsoft Learn for Educators](/learn/educator-center/?source=mec) 
+- [Microsoft Learn for Educators](/training/educator-center/?source=mec) 
 
 - [Microsoft Technical Documentation](https://aka.ms/docs) 
 
 - [Microsoft Whiteboard](https://aka.ms/whiteboard)
 
-- [Learn TV | Microsoft Docs](https://aka.ms/LearnTV) 
+- [Learn TV](https://aka.ms/LearnTV) 
 
-- [Describe the basic concepts of cybersecurity - Learn | Microsoft Docs](https://aka.ms/SCBasic)
+- [Describe the basic concepts of cybersecurity](https://aka.ms/SCBasic)
 
-- [Exam SC-900: Microsoft Security, Compliance, and Identity Fundamentals - Learn | Microsoft Docs ](https://aka.ms/SC900Exam)
+- [Exam SC-900: Microsoft Security, Compliance, and Identity Fundamentals](https://aka.ms/SC900Exam)
 
  

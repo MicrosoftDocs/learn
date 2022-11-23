@@ -1,4 +1,4 @@
-In this unit, you'll see how to monitor current sessions and force a disconnect. 
+In this unit, you'll learn how to monitor current sessions and force a disconnect. 
 
 ## Generate session data
 
@@ -29,4 +29,4 @@ View the current Azure Bastion sessions and force a disconnect for one of the re
    :::image type="content" source="../media/6-bastion-sessions-ellipsis.png" alt-text="Screenshot of the Azure Bastion sessions page with the ellipsis on the far right for each session." lightbox="../media/6-bastion-sessions-ellipsis.png":::
 
 1. On the first session, select the ellipsis (**...**) > **Delete**.
-1. Go to the browser window for your first session. You see that it's disconnected and won't allow you to reconnect.
+1. Go to the browser window for your first session. You'll find that it's disconnected and won't allow you to reconnect.

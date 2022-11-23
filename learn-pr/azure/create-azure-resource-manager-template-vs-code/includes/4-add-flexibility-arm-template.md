@@ -98,7 +98,7 @@ templateFile="azuredeploy.json"
 az deployment group create \
   --name testdeployment1 \
   --template-file $templateFile \
-  --parameters StorageAccountType=Standard_LRS
+  --parameters storageAccountType=Standard_LRS
 ```
 
 # [PowerShell](#tab/azure-powershell)

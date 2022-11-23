@@ -65,7 +65,7 @@ This request returns an XML block with data specific to the account:
 </EnumerationResults>  
 ```
 
-However, this approach requires a lot of manual parsing and the creation of HTTP packets to work with each API. For this reason, Azure provides pre-built _client libraries_ that make working with the service easier for common languages and frameworks.
+However, this approach requires manual parsing and the creation of HTTP packets to work with each API. For this reason, Azure provides pre-built _client libraries_ that make working with the service easier for common languages and frameworks.
 
 ## Use a client library
 
@@ -73,7 +73,7 @@ Client libraries can save a significant amount of work for app developers becaus
 
 :::row:::  
     :::column:::  
-    Microsoft has Azure client libraries that support a number of languages and frameworks, including:
+    Microsoft has Azure client libraries that support many languages and frameworks, including:
     - .NET
     - Java
     - Python

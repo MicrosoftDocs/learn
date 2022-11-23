@@ -3,7 +3,7 @@ uid: learn.wwl.intro-to-iot-central
 metadata:
   title: Intro to IoT Central
   description: "This module introduces you to the features, capabilities, and UI components presented by the Azure IoT Central application platform, the underlying architecture built on Azure IoT services, and other support considerations."
-  ms.date: 03/15/2022
+  ms.date: 07/14/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   Ability to:
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
   - Describe the features, capabilities, and data workflows of an IoT solution.
-iconUrl: /learn/achievements/iot-central-introduction.svg
+iconUrl: /training/achievements/iot-central-introduction.svg
 levels:
 - intermediate
 roles:
@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-iot-central
+subjects:
+- iot
 units:
 - learn.wwl.intro-to-iot-central.introduction
 - learn.wwl.intro-to-iot-central.what-is-azure-iot-central

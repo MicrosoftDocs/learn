@@ -15,5 +15,5 @@ In this module, you'll:
 - Create, compile, and run a Rust program to process compound data and test values.
 
 <!-- Links -->
-[Rust-intro]: /learn/modules/rust-introduction/4-rust-playground?azure-portal=true
+[Rust-intro]: /training/modules/rust-introduction/4-rust-playground?azure-portal=true
 [RustPlay]: https://play.rust-lang.org?azure-portal=true

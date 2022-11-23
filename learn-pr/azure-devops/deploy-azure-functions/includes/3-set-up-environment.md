@@ -55,7 +55,7 @@ The modules in this learning path form a progression as you follow the Tailspin 
 1. When the project is successfully provisioned, select **Navigate to project** to go to your project in Azure DevOps.
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/learn/modules/deploy-azure-functions/5-clean-up-environment?azure-portal=true) page in this module contains **important steps** that you must complete, even if you don't complete this module. Cleaning up helps ensure that you don't run out of free build minutes. 
+> The [Clean up your Azure DevOps environment](/training/modules/deploy-azure-functions/5-clean-up-environment?azure-portal=true) page in this module contains **important steps** that you must complete, even if you don't complete this module. Cleaning up helps ensure that you don't run out of free build minutes. 
 
 [!INCLUDE [](../../shared/includes/project-visibility.md)]
 
@@ -85,7 +85,7 @@ At the end of this module, you'll move the card to the **Done** column after you
 
 Here you create the App Service and Azure Functions app required to deploy the new version of the site and API.
 
-In the [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true) MS Learn module, you brought up App Service through the Azure portal. Although the portal is a great way to explore what's available on Azure or to do basic tasks, bringing up components such as App Service can be tedious.
+In the [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) MS Learn module, you brought up App Service through the Azure portal. Although the portal is a great way to explore what's available on Azure or to do basic tasks, bringing up components such as App Service can be tedious.
 
 In this module, you use the Azure CLI to bring up an App Service instance. You can access the Azure CLI from a terminal or through Visual Studio Code. Here we will access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
 
@@ -195,7 +195,7 @@ Our solution requires several Azure resources for deployment, which we will crea
       --name $webName \
       --resource-group $rgName \
       --plan $planName \
-      --runtime "DOTNETCORE|3.1"
+      --runtime "DOTNETCORE|6.0"
     ```
 
 1. Azure Functions requires a storage account for deployment. Run the following `az storage account create` command to create it.
@@ -214,7 +214,7 @@ Our solution requires several Azure resources for deployment, which we will crea
       --name $leaderboardName \
       --resource-group $rgName \
       --storage-account $storageName \
-      --functions-version 3 \
+      --functions-version 4 \
       --consumption-plan-location <region>
     ```
 
@@ -257,11 +257,11 @@ Our solution requires several Azure resources for deployment, which we will crea
 1. As an optional step, open a browser and enter a host name to verify that it's running. The default home page appears.
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/learn/modules/deploy-azure-functions/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
+> The [Clean up your Azure DevOps environment](/training/modules/deploy-azure-functions/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
 
 ## Create pipeline variables in Azure Pipelines
 
-In the [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true) module, you added a variable to your pipeline that stores the name of your web app in App Service. Here you'll do the same. In addition, you will add the name of your leaderboard app for the Azure Functions instance.
+In the [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) module, you added a variable to your pipeline that stores the name of your web app in App Service. Here you'll do the same. In addition, you will add the name of your leaderboard app for the Azure Functions instance.
 
 You could hard-code these names in your pipeline configuration, but if you define them as variables, your configuration will be more reusable. Plus, if the names of your instances change, you can update the variables and trigger your pipeline without modifying your configuration.
 

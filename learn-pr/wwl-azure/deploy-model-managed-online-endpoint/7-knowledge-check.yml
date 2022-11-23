@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-model-managed-online-endpoint.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/17/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "You've trained a model using the Python SDK for Azure Machine Learning. You want to deploy the model to get real-time predictions. You want to manage the underlying infrastructure used by the endpoint. What kind of endpoint should you create?"
+    choices:
+    - content: "A managed online endpoint."
+      isCorrect: false
+      explanation: "Incorrect. Azure Machine Learning manages all the infrastructure if you use a managed online endpoint."
+    - content: "A batch endpoint."
+      isCorrect: false
+      explanation: "Incorrect. A batch endpoint doesn't provide real-time predictions."
+    - content: "A Kubernetes online endpoint."
+      isCorrect: true
+      explanation: "Correct. You should use Kubernetes online endpoint if you want to manage the underlying Kubernetes clusters."
+  - content: "You're deploying a model as a real-time inferencing service. What functions must the scoring script for the deployment include?"
+    choices:
+    - content: "`main()` and `score()`"
+      isCorrect: false
+      explanation: "Incorrect. You must implement init and run functions in the entry (scoring) script."
+    - content: "`base()` and `train()`"
+      isCorrect: false
+      explanation: "Incorrect. You must implement init and run functions in the entry (scoring) script."
+    - content: "`init()` and `run()`"
+      isCorrect: true
+      explanation: "Correct. You must implement init and run functions in the entry (scoring) script."

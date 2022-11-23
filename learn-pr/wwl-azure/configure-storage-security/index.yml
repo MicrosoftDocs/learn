@@ -1,30 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-storage-security
 metadata:
-  title: Configure storage security
-  description: "You will learn how to configure common storage security features like storage access signatures."
-  ms.date: 05/06/2022
+  title: Configure Azure Storage security
+  description: "Configure Azure Storage security"
+  ms.date: 11/18/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Configure storage security
-summary: You will learn how to configure common storage security features like storage access signatures.
+title: Configure Azure Storage security
+summary: Learn how to configure common Azure Storage security features like storage access signatures.
 abstract: |
-  After completing this module, you will be able to:
-  - Configure shared access signatures including URI and SAS parameters.
-  - Configure storage service encryption.
+  In this module, you learn how to:
+  - Configure a shared access signature (SAS), including the uniform resource identifier (URI) and SAS parameters.
+  - Configure Azure Storage encryption.
   - Implement customer-managed keys.
-  - Recommend opportunities to improve storage security.
+  - Recommend opportunities to improve Azure Storage security.
 prerequisites: |
   None
-iconUrl: /learn/achievements/storage-security-configure.svg
+iconUrl: /training/achievements/storage-security-configure.svg
 levels:
 - intermediate
 roles:
 - administrator
 products:
 - azure-storage
+subjects:
+- security
+- storage
 units:
 - learn.wwl.configure-storage-security.introduction
 - learn.wwl.configure-storage-security.review-strategies
@@ -33,6 +36,7 @@ units:
 - learn.wwl.configure-storage-security.determine-storage-service-encryption
 - learn.wwl.configure-storage-security.create-customer-managed-keys
 - learn.wwl.configure-storage-security.apply-best-practices
+- learn.wwl.configure-storage-security.interactive-lab-simulation-storage
 - learn.wwl.configure-storage-security.knowledge-check
 - learn.wwl.configure-storage-security.summary-resources
 badge:

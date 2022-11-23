@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   To truly empower an organization with AI, business leaders need to put AI in the hands of everyone, not just developers and data scientists.
-iconUrl: /learn/achievements/introduction-ai-for-business-users.svg
+iconUrl: /training/achievements/introduction-ai-for-business-users.svg
 levels:
 - beginner
 roles:
@@ -21,6 +21,8 @@ roles:
 products:
 - m365
 - power-platform
+subjects:
+- artificial-intelligence
 modules:
 - learn.wwl.enable-business-users-with-key-ai-uses-cases
 - learn-bizapps.wwl.introduction-power-bi

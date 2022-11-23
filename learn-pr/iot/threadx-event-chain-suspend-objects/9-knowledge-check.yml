@@ -5,7 +5,7 @@ metadata:
   title: Knowledge check
   description: Interactive questions that validate whether the learner achieved the learning objectives.
   ms.date: 01/27/2022
-  author: EdLamie
+  author: edlamie80
   ms.author: liydu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -49,14 +49,14 @@ quiz:
   - content: "What happens when a queue send notification function is registered for Queue_1?"
     choices:
     - content: "ThreadX sends a message to Queue_1."
-      isCorrect: true
-      explanation: "Correct! ThreadX sends a message to Queue_1."
+      isCorrect: false
+      explanation: "Incorrect! ThreadX monitors Queue_1 and when a message is sent to Queue_1, the notification function is invoked."
     - content: "ThreadX sends a message to all the queues."
       isCorrect: false
       explanation: "Incorrect. In this scenario, ThreadX doesn't send a message to all the queues."
     - content: "ThreadX monitors Queue_1 and when a message is sent to Queue_1, the notification function is invoked."
-      isCorrect: false
-      explanation: "Incorrect. In this scenario, the notification function isn't invoked."
+      isCorrect: true
+      explanation: "Correct. In this scenario, the notification function is invoked when a message is sent to Queue_1."
   - content: "Which one of the following statements is true about event chaining?"
     choices:
     - content: "The number of threads and associated resources are increased."

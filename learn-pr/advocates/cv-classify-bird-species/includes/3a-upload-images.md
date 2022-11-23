@@ -5,7 +5,9 @@ Now, it's time to upload the images that we'll use to train the machine learning
 
 When you have a large amount of data, image classes, and tags to upload, it's faster to use the Custom Vision SDK. However, you can choose one of the options that are described in the next sections. Complete the steps to upload the images in the dataset the way that works best for you. 
 
-## Use the Custom Vision portal to upload images
+## Option 1: Use the Custom Vision portal to upload and tag images
+
+The images must be uploaded and tagged individually by each subfolder. For this exercise, you might want to  upload images in only four or five of the subfolders depending on your upload speed. Keep in mind that when training a machine learning module, more and varied examples will yield better results.
 
 1. Create a project in the Custom Vision portal:
 
@@ -54,19 +56,19 @@ When you have a large amount of data, image classes, and tags to upload, it's fa
 
 1. Repeat the preceding step to upload the photos in each bird species folder in the downloaded dataset.
 
-## Use the Custom Vision SDK to upload images
+## Option 2: Use Python and the Custom Vision SDK to upload and tag images
 
-The Custom Vision SDK is available in the following programming languages: Python, .NET, Node.js, Go, and Java. We'll use Python and Jupyter Notebook. If you don't already have these tools installed, we recommend that you get them with an Anaconda installation. You get Python and Jupyter Notebook when you [download Anaconda](https://www.anaconda.com/?azure-portal=true).
+The Custom Vision SDK is available in the following programming languages: Python, .NET, Node.js, Go, and Java. We'll use Python. If you don't already have Python installed, we recommend that you get it with an Anaconda installation. You get Python when you [download Anaconda](https://www.anaconda.com/?azure-portal=true).
 
-If you prefer to instead download the notebook and code from GitHub, you can clone the repo by using the following command:
+If you prefer to instead download the code from GitHub, you can clone the repo by using the following command:
  
 ```bash
 git clone https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species.git
 ```
 
-Follow these steps to create the Jupyter notebook and paste code into the notebook:
+Follow these steps to create the virtual environment and paste code into the environment:
 
-1. Open a new Jupyter Notebook instance or the IDE of your choice. Then, run the following command to import the package:
+1. Open the IDE of your choice. Then, run the following command to import the package:
 
    ```python
    !pip install azure-cognitiveservices-vision-customvision
@@ -186,11 +188,11 @@ Follow these steps to create the Jupyter notebook and paste code into the notebo
 
 1. Now, we’ll add the code for our main method. For each tag, the method calls the three functions we created. We loop through each tag (folder name) in the `tags` collection that we created from the folders in the bird-photos/custom-photos directory. Here are the steps in the `for` loop:
 
-   1. Call the `createTag` function to create the class `tag` in the Custom Vision project.
+   1. Call the `createTag` function, which you created earlier, to create the class `tag` in the Custom Vision project.
 
-   1. Call the `createImageList` function and with the `tag` name and `tag_id` values returned from Custom Vision. The function returns the list of images to upload.
+   1. Call the `createImageList` function, which you created earlier, and with the `tag` name and `tag_id` values returned from Custom Vision. The function returns the list of images to upload.
 
-   1. Call the `imageList` function to upload the images from the `image_list` in batches of 25. We upload in batches of 25 because Custom Vision time outs if we try to upload the entire dataset all at once.
+   1. Call the `imageList` function, which you created earlier, to upload the images from the `image_list` in batches of 25. We upload in batches of 25 because Custom Vision times out if we try to upload the entire dataset all at once.
 
        ```python
        for tag in tags: 

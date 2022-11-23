@@ -70,9 +70,9 @@ The output is:
 
 This first model accounts for only 30 percent of the variability in `lifeExpF` and is not a good representation of the relationship between economic activity and female life expectancy.
 
-These results are not good because there is no linear relationship between per-capita GDP and female life expectancy. Instead, the relationship has an elbow-like curve. When countries are very poor, the data suggests that even modest increases to GDP per capita can dramatically increase female life expectancy, but only up to a point. After countries hit about USD 10,000 per capita, additional gains correlated to increases in wealth are much smaller. This suggests a logarithmic relationship between these factors: female life expectancy being not related to GDP, but to its logarithm.
+These results are not good because there is no linear relationship between per-capita GDP and female life expectancy. Instead, the relationship has an elbow-like curve. When countries/regions are very poor, the data suggests that even modest increases to GDP per capita can dramatically increase female life expectancy, but only up to a point. After countries/regions hit about USD 10,000 per capita, additional gains correlated to increases in wealth are much smaller. This suggests a logarithmic relationship between these factors: female life expectancy being not related to GDP, but to its logarithm.
 
-Let's create a new column that contains the logarithm of per-capita GDP by country. Note that because we're dealing with powers of 10 in the GDP column, we'll use the base-10 logarithm rather than the natural logarithm to make interpretation easier.
+Let's create a new column that contains the logarithm of per-capita GDP by country/region. Note that because we're dealing with powers of 10 in the GDP column, we'll use the base-10 logarithm rather than the natural logarithm to make interpretation easier.
 
 ```python
 df['log_ppgdp'] = np.log10(df['ppgdp'])
@@ -156,7 +156,7 @@ $$
 
 In the equation, $a$ is the *slope* and $b$ is the *intercept*. That same terminology applies in linear regression. The slope refers to our model's predicted change in units of female life expectancy (years) for each unit of the base-10 logarithm of per-capita GDP. In other words, our model predicts that, on average, women's life expectancies increase by 11.6 years every time per-capita GDP increases tenfold.
 
-The intercept is a little more abstract because it's not directly tied to any data point. It shows the value of the $y$-axis at the point where our line crossed that axis (where $x=0$). If we were still modeling `ppgdp` versus `lifeExpF`, we might interpret the intercept as representing women's baseline life expectancy in a hypothetical country with a per-capita GDP of USD 0: 29.8 years. However, we're modeling `log_ppgdp` versus `lifeExpF`, and the logarithm of 0 is undefined. 
+The intercept is a little more abstract because it's not directly tied to any data point. It shows the value of the $y$-axis at the point where our line crossed that axis (where $x=0$). If we were still modeling `ppgdp` versus `lifeExpF`, we might interpret the intercept as representing women's baseline life expectancy in a hypothetical country/region with a per-capita GDP of USD 0: 29.8 years. However, we're modeling `log_ppgdp` versus `lifeExpF`, and the logarithm of 0 is undefined. 
 
 It can be easiest to accept the intercept in our model as a mathematical abstraction necessary to make other parts of our model work. Our model can be stated as:
 

@@ -10,12 +10,11 @@ A security engineer will protect data within databases, file shares, or anywhere
 
 ## Skills measured
 
-Locking down applications and data is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
+Locking down applications and data is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/certifications/exams/az-500).
 
 Secure data and applications (20-25%)
 
  -  Configure security for storage
-    
      -  configure access control for storage accounts
      -  configure key management for storage accounts
      -  configure Azure AD authentication for Azure Storage

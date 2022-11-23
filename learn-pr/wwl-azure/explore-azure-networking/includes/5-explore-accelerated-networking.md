@@ -2,7 +2,6 @@ Network performance of Azure VMs running Windows Server (including Windows Serve
 
 Accelerated networking is supported on most general purpose and compute-optimized instance sizes with 2 or more vCPUs (D/DSv2 and F/Fs). On instances that support hyperthreading, Accelerated Networking is supported on VM instances with 4 or more vCPUs (D/Dsv3, E/Esv3, Fsv2, Lsv2, Ms/Mms and Ms/Mmsv2).
 
-:::image type="content" source="../media/accelerated-networking-35431646.png" alt-text="Diagram illustrating accelerated and non-accelerated networking":::
-
+:::image type="content" source="../media/accelerated-networking-35431646.png" alt-text="Diagram illustrating accelerated and non-accelerated networking.":::
 
 For details, refer to [Optimize network throughput for Azure virtual machines](/azure/virtual-network/virtual-network-optimize-network-bandwidth).

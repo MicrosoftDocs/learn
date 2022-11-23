@@ -18,13 +18,15 @@ abstract: |
 prerequisites: |
   * You should be familiar with developer concepts and terminology.
   * An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /learn/achievements/2-explore-azure-event-hubs.svg
+iconUrl: /training/achievements/2-explore-azure-event-hubs.svg
 levels:
 - intermediate
 roles:
 - developer
 products:
 - azure-event-hubs
+subjects:
+- data-ai
 units:
 - learn.wwl.azure-event-hubs.introduction
 - learn.wwl.azure-event-hubs.discover

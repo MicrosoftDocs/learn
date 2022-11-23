@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints.detect-devices-with-device-discovery
+title: Detect devices with device discovery
+metadata:
+  title: Detect devices with device discovery
+  description: "Detect devices with device discovery"
+  ms.date: 07/01/2022
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-detect-devices-with-device-discovery.md)]

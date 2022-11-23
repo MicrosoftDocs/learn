@@ -4,10 +4,11 @@ metadata:
   title: Publish your app
   description: "Learn about the options for publishing your app."
   ms.date: 05/01/2019
-  author: davidbritch
-  ms.author: dabritch
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
+  
 title: Publish your application
 durationInMinutes: 4
 content: |

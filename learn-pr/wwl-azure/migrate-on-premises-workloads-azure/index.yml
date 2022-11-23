@@ -21,7 +21,7 @@ prerequisites: |
   + Knowledge of networking, compute, and database systems
   + Familiarity with virtualization concepts such as VMs, virtual networking, and virtual hard disks
   + Ability to manage cloud identities with Azure Active Directory
-iconUrl: /learn/achievements/migrate-onpremises-workloads-azure.svg
+iconUrl: /training/achievements/migrate-onpremises-workloads-azure.svg
 levels:
 - intermediate
 roles:
@@ -29,6 +29,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.wwl.migrate-onpremises-workloads-azure.introduction
 - learn.wwl.migrate-onpremises-workloads-azure.enable-hyperv-host-servers-replication

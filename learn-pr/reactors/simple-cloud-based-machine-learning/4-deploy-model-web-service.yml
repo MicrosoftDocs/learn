@@ -5,8 +5,8 @@ metadata:
   title: Deploy your model as a web service
   description: Deploy your model as a web service for data science operations.
   ms.date: 06/30/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen

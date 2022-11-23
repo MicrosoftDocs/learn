@@ -2,10 +2,10 @@ In this unit, you run a script to deploy the coupon service and other configurat
 
 ## Deploy changes
 
-Run the following script in the command shell to update the existing Azure Kubernetes Service (AKS) cluster with the new configuration:
+Run the following script in the terminal to update the existing Azure Kubernetes Service (AKS) cluster with the new configuration:
 
 ```bash
-./deploy/k8s/update-aks.sh
+./update-aks.sh
 ```
 
 The preceding script uses `helm` commands to:
@@ -14,7 +14,7 @@ The preceding script uses `helm` commands to:
 * Install the reconfigured *:::no-loc text="WebStatus":::* and aggregator Helm charts by using a public container registry.
 * Install the new *:::no-loc text="Coupon.API":::* chart and the reconfigured *:::no-loc text="WebSPA":::* chart by using your private Azure Container Registry.
 
-The `helm uninstall` and `helm install` commands used by the script are shown in the command shell with the correct parameters.
+The `helm uninstall` and `helm install` commands used by the script are shown in the terminal with the correct parameters.
 
 ## Verify changes
 

@@ -86,7 +86,7 @@ When you create a gateway, several topologies are available. These topologies, a
 
 #### Site-to-site
 
-You use a site-to-site connection for cross-premises and hybrid-network configurations. This connection topology requires an on-premises VPN device to have a publicly accessible IP address, and must not be behind a NAT. The connection uses a secret ASCII string of up to 128 characters, to authenticate between the gateway and the VPN device.
+You use a site-to-site connection for cross-premises and hybrid-network configurations. This connection topology requires an on-premises VPN device to have a publicly accessible IP address, and must not be behind Network Address Translation (NAT). The connection uses a secret ASCII string of up to 128 characters, to authenticate between the gateway and the VPN device.
 
 #### Multisite
 

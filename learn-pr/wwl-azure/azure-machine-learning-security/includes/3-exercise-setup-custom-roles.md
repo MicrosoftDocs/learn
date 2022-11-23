@@ -10,7 +10,7 @@ In this exercise, we will set up an Azure Machine Learning Workspace, which will
 
 If you don't have an Azure subscription yet, please follow the instructions in the link below:
 
-[Create a subscription in the Azure portal.](https://docs.microsoft.com/azure/cost-management-billing/manage/create-subscription#create-a-subscription-in-the-azure-portal)
+[Create a subscription in the Azure portal.](/azure/cost-management-billing/manage/create-subscription#create-a-subscription-in-the-azure-portal)
 
 ## Sign in to Azure
 
@@ -167,5 +167,5 @@ In this unit you've covered the following topics:
 To read more about Workspaces and Custom Roles visit:
 
 - [What is an Azure Machine Learning workspace?](/azure/machine-learning/concept-workspace)
-- [Manage Azure Resource Manager resource groups by using the Azure portal](https://docs.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal#what-is-a-resource-group)
+- [Manage Azure Resource Manager resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal#what-is-a-resource-group)
 - [Manage access to an Azure Machine Learning workspace](/azure/machine-learning/how-to-assign-roles)

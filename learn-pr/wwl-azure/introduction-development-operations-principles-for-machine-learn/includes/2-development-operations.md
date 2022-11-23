@@ -50,7 +50,7 @@ Continuous integration covers the *create* and *verify* activities. The goal is 
 With MLOps, continuous integration may include:
 
 - Refactoring exploratory code in Jupyter notebooks into Python or R scripts.
-- Linting to check for any programmatic or stylistic errors in the Python or R scripts. For example, check whether the script contains fewer than 80 lines of code.
+- Linting to check for any programmatic or stylistic errors in the Python or R scripts. For example, check whether a line in your script contains fewer than 80 characters.
 - Unit testing to check the performance of the content of the scripts. For example, check whether the model generates accurate predictions on a test dataset.
 
 > [!TIP]
@@ -104,4 +104,4 @@ Applying DevOps principles to machine learning projects means you want to create
 To repeat and automate the infrastructure needed to train and deploy your model, your team will use **Infrastructure as Code** (**IaC**). When you train and deploy models on Azure, IaC means that you define all Azure resources needed in the process in code and the code is stored in a repository.
 
 > [!TIP]
-> Get more familiar with DevOps by exploring the Microsoft Learn modules on [the DevOps transformation journey](/learn/paths/az-400-get-started-devops-transformation-journey/)
+> Get more familiar with DevOps by exploring the Microsoft Learn modules on [the DevOps transformation journey](/training/paths/az-400-get-started-devops-transformation-journey/)

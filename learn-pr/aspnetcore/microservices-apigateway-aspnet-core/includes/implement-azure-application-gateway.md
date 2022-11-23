@@ -15,7 +15,7 @@ In this exercise, you will:
 To create a new instance of Azure Application Gateway, run the following command:
 
 ```bash
-./deploy/k8s/create-application-gateway.sh
+./create-application-gateway.sh
 ```
 
 The script does the following tasks:
@@ -25,11 +25,7 @@ The script does the following tasks:
 - Creates a public IP address.
 - Creates the Application Gateway instance.
 
-The output resembles the following image.
-
-:::image type="content" source="../media/create-application-gateway.png" alt-text="Screenshot that shows output from the create-application-gateway script." lightbox="../media/create-application-gateway.png":::
-
-Note the Application Gateway public IP address that's exported as `ESHOP_APPGATEWAYPUBLICIP`.
+Note the displayed Application Gateway public IP address. You'll need it later.
 
 > [!NOTE]
 > The script takes several minutes to finish.
@@ -39,7 +35,7 @@ Note the Application Gateway public IP address that's exported as `ESHOP_APPGATE
 You've created an instance of the Azure Application Gateway service. Now enable AGIC in the cluster by using the following command:
 
 ```bash
-./deploy/k8s/enable-agic-adon.sh
+./enable-agic-addon.sh
 ```
 
 The script does the following tasks:
@@ -81,15 +77,13 @@ spec:
           servicePort: 80
 ```
 
-Along with the *websalesagg* service, you need to update the NGINX configuration for each service to make it available for AGIC. All of the service configurations in the *helm-simple* directory require changes. For simplicity, you'll copy files from the *helm-ingress* folder. These files have been preconfigured for you. Run the following command:
+Along with the *websalesagg* service, you need to update the NGINX configuration for each service to make it available for AGIC. All of the service configurations in the *helm-simple* directory require changes. For simplicity, you'll copy files from the *helm-ingress* folder. These files have been preconfigured for you.
+
+Run the following command:
 
 ```bash
-cp -r deploy/k8s/helm-ingress/* deploy/k8s/helm-simple
+cp -r ./helm-ingress/* ./helm-simple
 ```
-
-You can view this step with the following image.
-
-:::image type="content" source="../media/helm-ingress-manifest-replace.png" alt-text="Screenshot that shows the helm ingress manifest update." lightbox="../media/helm-ingress-manifest-replace.png":::
 
 > [!NOTE]
 > In the preceding step, a new ingress file is created for the *websalesagg* app because it was newly created. For other apps, the file will replace the existing ones.
@@ -104,35 +98,23 @@ kubectl delete ingress --all
 
 ## Deploy the application with the updated ingresses
 
-Use the following command to display the public IP address of the Application Gateway instance from earlier:
+Replace `{appgw-public-ip}` with the Application Gateway public IP address (from earlier) in the following command:
 
 ```bash
-cat ~/clouddrive/aspnet-learn/create-application-gateway-exports.txt
+./deploy-application.sh --registry eshoplearn --hostip {appgw-public-ip}
 ```
 
-Replace `{appgw-public-ip}` with the value of the variable `ESHOP_APPGATEWAYPUBLICIP` in the following command:
-
-```bash
-deploy/k8s/deploy-application.sh --registry eshopdev --hostip {appgw-public-ip}
-```
-
-:::image type="content" source="../media/eshop-app-gateway-public-ip.png" alt-text="Screenshot that shows the gateway public I P address for the fetch app." lightbox="../media/eshop-app-gateway-public-ip.png":::
-
-The pods redeploy from the public container registry that you used in the beginning of this module. The following output appears:
-
-:::image type="content" source="../media/deployed-eshop-app-app-gateway.png" alt-text="Screenshot that shows the deployed websalesagg app to Application Gateway." lightbox="../media/deployed-eshop-app-app-gateway.png":::
-
-You can now explore the app deployed onto the new AKS instance. Other than the IP address, you shouldn't see any difference.
+You can now explore the app again using the URLs in *deployment-urls.txt*. The file has been updated to reflect the new IP address. When browsing the app, note there are no differences other than the IP address.
 
 > [!NOTE]
-> In this step, you'll see an error related to the *websalesagg* pod. That's because the public container registry doesn't contain a image of the Web Sales aggregator. You'll deploy that from your private Azure Container Registry instance in the next step. In an actual production scenario, you can avoid this extra step by deploying all the Docker images from the same container registry.
+> If you run `kubectl get pods`, you'll see the *websalesagg* pod ends up in a `ImagePullBackOff` status. That's because the public container registry doesn't contain a image of the Web Sales aggregator. You'll deploy that from your private Azure Container Registry instance in the next step. In an actual production scenario, you can avoid this extra step by deploying all the Docker images from the same container registry.
 
 ## Redeploy the affected apps to the cluster
 
-Now you'll redeploy your local changes to the cluster with the public IP address of the Application Gateway instance. Replace `{appgw-public-ip}` with the public IP address in `ESHOP_APPGATEWAYPUBLICIP`, and then run the following command:
+Now you'll redeploy your local changes to the cluster with the public IP address of the Application Gateway instance. Replace `{appgw-public-ip}` with the Application Gateway public IP address, and then run the following command:
 
 ```bash
-./deploy/k8s/deploy-affected-services.sh --ipAddress {appgw-public-ip}
+./deploy-affected-services.sh --ipAddress {appgw-public-ip}
 ```
 
 The script redeploys the following services from your private Azure Container Registry instance:
@@ -157,27 +139,27 @@ The existing `[Microsoft.eShopOnContainers.Service.IdentityDb]` database in the 
     kubectl delete pods --selector service!=sqldata
     ```
 
-    :::image type="content" source="../media/delete-all-pods-apart-from-sql.png" alt-text="Screenshot that shows deleting all pods." lightbox="../media/delete-all-pods-apart-from-sql.png":::
-
-1. Check the `WebStatus` app by using `http://{appgw-public-ip}/webstatus/hc-ui#/healthchecks` and verify that *websalesagg* is healthy. This address uses the new IP address.
+1. Check the WebStatus app using the URL in *deployment-urls.txt* and verify that *websalesagg* is healthy. This address uses the new IP address.
 
     > [!NOTE]
     > As with the initial deployment, the health check dashboard might take a few minutes to come up.
 
-1. Access the *websalesagg* Swagger UI by using the `http://{appgw-public-ip}/websalesagg/` URL.
+1. Sign in to the *WebSPA* app by using the URL in *deployment-urls.txt*. Instead of using the demo user, sign in using the address `adminuser@microsoft.com`. Add an item to your shopping bag and checkout.
+1. Access the *websalesagg* Swagger UI using the `http://{appgw-public-ip}/websalesagg/swagger/index.html` URL.
+1. Select the **Authorize** button.
+1. In the **Available authorizations** dialog, select all the scopes and select **Authorize**.
+1. After being redirected to the eShop UI, select **YES, ALLOW**.
+1. Back in the Swagger UI, expand the **GET** operation and select **Try it out**. Select the **Execute** button to send the authorized request.
 
-## Test websalesagg by using the Swagger UI
+    The response body resembles the following JSON:
 
-### Create an order
+    ```json
+    [
+      {
+        "brandName": ".NET",
+        "totalSales": 1
+      }
+    ]
+    ```
 
-Sign in to the *WebSPA* app by using `http://{appgw-public-ip}/` and create an order to create data for the Sales API.
-
-:::image type="content" source="../media/list-of-orders.png" alt-text="Screenshot that shows a list of orders." lightbox="../media/list-of-orders.png":::
-
-### Fetch sales data
-
-Authorize the request with the `adminuser@microsoft.com` user. Then select the Sales API to fetch the API data.
-
-Output similar to the following text appears. Note that the aggregated sales unit per brand is shown for orders created today.
-
-:::image type="content" source="../media/websales-agg-sales-api-data.png" alt-text="Screenshot that shows Sales A P I data." lightbox="../media/websales-agg-sales-api-data.png":::
+Congratulations! You've created and configured an Azure Application Gateway Ingress Controller!

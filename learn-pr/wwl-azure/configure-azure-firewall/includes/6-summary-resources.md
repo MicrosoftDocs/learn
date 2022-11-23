@@ -10,5 +10,5 @@ You should now be able to:
 You can learn more by reviewing the following.
 
  -  [Azure Firewall documentation](/azure/firewall/)
- -  [Learn - Introduction to Azure Firewall](/learn/modules/introduction-azure-firewall/)
- -  [Learn - Introduction to Azure Firewall Manager](/learn/modules/intro-to-azure-firewall-manager/)
+ -  [Introduction to Azure Firewall](/training/modules/introduction-azure-firewall/)
+ -  [Introduction to Azure Firewall Manager](/training/modules/intro-to-azure-firewall-manager/)

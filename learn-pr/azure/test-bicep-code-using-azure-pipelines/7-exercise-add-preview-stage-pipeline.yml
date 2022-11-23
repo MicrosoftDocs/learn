@@ -5,9 +5,9 @@ metadata:
   unitType: exercise
   title: Exercise - Add a preview stage to your pipeline
   description: Add a what-if preview stage to your Bicep deployment pipeline.
-  ms.date: 09/15/2021
-  author: vermegi
-  ms.author: givermei
+  ms.date: 10/31/2022
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

@@ -14,7 +14,7 @@ prerequisites: |
   - Familiarity with Transact-SQL
 summary: |
   Learn how to use programming techniques in your Transact-SQL.
-iconUrl: /learn/achievements/transact-sql-program.svg
+iconUrl: /training/achievements/transact-sql-program.svg
 levels:
 - advanced
 roles:
@@ -32,6 +32,8 @@ products:
 - azure-sql-virtual-machines
 - azure-sqlserver-vm
 - sql-server
+subjects:
+- database
 modules:
 - learn.wwl.get-started-transact-sql-programming
 - learn.wwl.create-stored-procedures-table-valued-functions

@@ -4,7 +4,7 @@ Utilization is a measure of how much of a computer's resources are being used, w
 
 [Energy proportionality](https://en.wikipedia.org/wiki/Energy_proportional_computing) is a measure of the relationship between power consumed in a computer system and the rate at which useful work is done (its utilization). If the overall power consumption is proportional to the computer's utilization, then it is said to be energy proportional.
 
-In an energy proportional system, the energy efficiency is a constant, no matter the utilization the energy efficiency remains the same. However, the energy efficiency of hardware is not constant. It varies based on context. Due to the complex interactions of many different components of a hardware device, it can be non-linear, which means that the relationship between power and utilization is not proportional.
+In an energy proportional system, the energy efficiency is a constant; no matter the utilization, the energy efficiency remains the same. However, the energy efficiency of hardware is not constant. It varies based on context. Due to the complex interactions of many different components of a hardware device, it can be non-linear, which means that the relationship between power and utilization is not proportional.
 
 ![Power versus utilization.](../media/7-energy-proportionality-1.svg)
 
@@ -14,7 +14,7 @@ Because of this relationship, **the more you utilize a computer, the more effici
 
 ## Static power draw
 
-There are various reasons for this lack of energy proportionality, one of them is static power draw.
+There are various reasons for this lack of energy proportionality, and one of them is static power draw.
 
 An idle computer, even one at zero percent utilization, still draws electricity. This static power draw varies by configuration and hardware components, but all components have some static power draw. This potential power draw is one of the reasons that PCs, laptops, and mobile devices have power-save modes available. If the device is idle, it will eventually trigger a hibernation mode and put the disk and screen to sleep or even change the CPU frequency. These power-save modes save on electricity, but they have other trade-offs, such as a slower restart when the device wakes up.
 

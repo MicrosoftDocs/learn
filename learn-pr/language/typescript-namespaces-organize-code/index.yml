@@ -25,7 +25,7 @@ prerequisites: |
     - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
     - [Node.js](https://nodejs.org/?azure-portal=true)
     - TypeScript
-iconUrl: /learn/achievements/typescript/typescript-namespaces-organize-code.svg
+iconUrl: /training/achievements/typescript/typescript-namespaces-organize-code.svg
 levels:
 - intermediate
 roles:
@@ -34,6 +34,8 @@ roles:
 products:
 - azure
 - vs-code
+subjects:
+- development-tools
 units:
 - learn.language.typescript-namespaces-organize-code.1-introduction
 - learn.language.typescript-namespaces-organize-code.2-organize-code-namespaces
@@ -44,4 +46,4 @@ units:
 - learn.language.typescript-namespaces-organize-code.7-knowledge-check
 - learn.language.typescript-namespaces-organize-code.8-summary-resources
 badge:
-  uid: learn.language.typescript-namespaces-organize-code.badge 
+  uid: learn.language.typescript-namespaces-organize-code.badge

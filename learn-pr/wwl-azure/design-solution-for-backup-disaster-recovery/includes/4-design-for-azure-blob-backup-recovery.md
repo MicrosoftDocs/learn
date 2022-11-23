@@ -5,7 +5,7 @@
 
 Soft delete protects an individual blob, snapshot, container, or version from accidental deletes or overwrites. Soft delete maintains the deleted data in the system for a specified retention period. During the retention period, you can restore a soft-deleted object to its state at the time it was deleted.
 
-:::image type="content" source="../media/soft-delete.png" alt-text="A container has blobs and blobs have versions.":::
+:::image type="content" source="../media/soft-delete.png" alt-text="An image of a container with blobs and blobs versions.":::
 
 
 - [**Container** soft delete](/azure/storage/blobs/soft-delete-container-enable) can restore a container and its contents at the time of deletion. The retention period for deleted containers is between 1 and 365 days. The default retention period is seven days.

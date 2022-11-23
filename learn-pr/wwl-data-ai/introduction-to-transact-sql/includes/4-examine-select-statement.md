@@ -33,7 +33,7 @@ The WHERE clause filters rows out of the results, keeping only those rows that s
 WHERE Status = 'Shipped'
 ```
 
-The GROUP BY clause takes the rows that met the filter condition and groups them by**OrderDate**, so that all the rows with the same **OrderDate** are considered as a single group and one row will be returned for each group:
+The GROUP BY clause takes the rows that met the filter condition and groups them by **OrderDate**, so that all the rows with the same **OrderDate** are considered as a single group and one row will be returned for each group:
 
 ```sql
 GROUP BY OrderDate

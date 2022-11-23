@@ -10,4 +10,4 @@ In this module, you will:
  -  Test and troubleshoot Conditional Access policies.
  -  Implement application controls.
  -  Implement session management.
- -  Configure smart lockout thresholds.
+ -  Configure continuous access evaluation.

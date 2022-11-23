@@ -8,7 +8,7 @@ If your bot includes any of these applications, or might have consequential impa
 
 Before beginning any work on your bot, design or otherwise, first consider if your bot has the capability to affect the well-being of your user, or if there are any legal requirements to consider. Some actions may ethically and/or legally require human judgment or approval. Common instances include financial or healthcare systems.
 
-For example, many countries have strict rules around which institutions and individuals can hand out financial advice, and there are further rules around what information actually is financial advice. In a jurisdiction like this, a bot operating in the fintech space must be programmed carefully to make sure it doesn't stray into accidentally handing out legally fraught information. If a bot breaks the law, liability can be many pronged - but legal responsibility will almost always begin and end with the developer.
+For example, many countries/regions have strict rules around which institutions and individuals can hand out financial advice, and there are further rules around what information actually is financial advice. In a jurisdiction like this, a bot operating in the fintech space must be programmed carefully to make sure it doesn't stray into accidentally handing out legally fraught information. If a bot breaks the law, liability can be many pronged - but legal responsibility will almost always begin and end with the developer.
 
 ## Is the use case suitable for automation at all?
 

@@ -1,6 +1,6 @@
 In this module, you learned how clustering can be used to create unsupervised machine learning models that group data observations into clusters. You then used the **scikit-learn** framework in Python to train a clustering model.
 
-While scikit-learn is a popular framework for writing code to train clustering models, you can also create machine learning solutions for clustering using the graphical tools in Microsoft Azure Machine Learning. You can learn more about no-code development of clustering models using Azure Machine Learning in the [Create a clustering model with Azure Machine Learning designer](/learn/modules/create-clustering-model-azure-machine-learning-designer/) module.
+While scikit-learn is a popular framework for writing code to train clustering models, you can also create machine learning solutions for clustering using the graphical tools in Microsoft Azure Machine Learning. You can learn more about no-code development of clustering models using Azure Machine Learning in the [Create a clustering model with Azure Machine Learning designer](/training/modules/create-clustering-model-azure-machine-learning-designer/) module.
 
 ## Challenge: Cluster Unlabelled Data
 

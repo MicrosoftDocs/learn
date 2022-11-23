@@ -13,19 +13,23 @@ on:
 
 jobs:
   deploy-sandbox:
-    uses: mygithubuser/myworkflow/.github/workflows/deploy.yml@main
+    uses: /.github/workflows/deploy.yml
     with:
       environmentName: Sandbox
     secrets:
-      AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+      client-id: ${{ secrets.AZURE_CLIENT_ID }}
+      tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+      subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
   deploy-production:
-    uses: mygithubuser/myworkflow/.github/workflows/deploy.yml@main
+    uses: /.github/workflows/deploy.yml
     needs: deploy-sandbox
     with:
       environmentName: Production
     secrets:
-      AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+      client-id: ${{ secrets.AZURE_CLIENT_ID }}
+      tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+      subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 ```
 
 *.github/workflows/deploy.yml*:
@@ -40,7 +44,11 @@ on:
         required: true
         type: string
     secrets:
-      AZURE_CREDENTIALS:
+      AZURE_CLIENT_ID:
+        required: true
+      AZURE_TENANT_ID:
+        required: true
+      AZURE_SUBSCRIPTION_ID:
         required: true
 
 jobs:
@@ -51,7 +59,9 @@ jobs:
     - uses: actions/checkout@v2
     - uses: azure/login@v1
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
     - uses: azure/arm-deploy@v1
       with:
         failOnStdErr: false
@@ -60,5 +70,5 @@ jobs:
         template: ./deploy/main.bicep
         parameters: deploy/parameters.${{ inputs.environmentName }}.json
 ```
-\
+
 The Git repository's *deploy* folder also contains the Bicep file and parameter files.

@@ -24,7 +24,7 @@ abstract: |
 prerequisites: |
   - Review the steps to manipulate and clean data.
   - Understand machine learning models for data science.
-iconUrl: /learn/achievements/reactors/simple-cloud-based-machine-learning.svg
+iconUrl: /training/achievements/reactors/simple-cloud-based-machine-learning.svg
 hidden: true
 levels:
 - beginner
@@ -35,10 +35,12 @@ roles:
 products:
 - azure
 - vs-code
+subjects:
+- machine-learning
 units:
 - learn.reactors.simple-cloud-based-machine-learning.1-introduction
 - learn.reactors.simple-cloud-based-machine-learning.2-connect-azure-ml-studio-workspace
 - learn.reactors.simple-cloud-based-machine-learning.3-initiate-automl-run
 - learn.reactors.simple-cloud-based-machine-learning.4-deploy-model-web-service
 badge:
-  uid: learn.reactors.simple-cloud-based-machine-learning.badge 
+  uid: learn.reactors.simple-cloud-based-machine-learning.badge

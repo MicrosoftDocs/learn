@@ -10,7 +10,7 @@ In this unit, you will:
 
 ## Configure the ingress manifest
 
-To expose your container to the management webapp via DNS, you'll configure and deploy an ingress controller. You'll find the zone name to access the cna-express service and add to to the `ingress.yaml` file.
+To expose your container to the management webapp via DNS, you'll configure and deploy an ingress controller. You'll find the zone name to access the cna-express service and add to the `ingress.yaml` file.
 
 1. Identify the fully qualified domain name (FQDN) of the host allowed access to the cluster.
 
@@ -21,7 +21,7 @@ To expose your container to the management webapp via DNS, you'll configure and 
     ```
 
 2. Copy the output, and open the integrated editor in Cloud Shell by entering `code .`
-3. Open the `ingress.yaml` file and replace the `<zone-name>` placeholder value with the `ZoneName` value you copied.
+3. Open the `ingress.yaml` file and replace the `<zone-name>` placeholder value with the `ZoneName` value you copied. Also, replace the `apiVersion` value with `networking.k8s.io/v1`.
 
     The `ingress.yaml` file should match the following YAML, with `<exampleURL.eastus.aksapp.io>` **replaced by the output in step 1**.
 
@@ -143,7 +143,7 @@ You'll use the Docker image to deploy the webapp, which will require a username 
 
     Make sure there are two new records at the bottom of the list with the host we created in the `host` key. The `ProvisioningState` value is `Succeeded`. It can take several minutes for zone records to propagate.
 
-14. Open your browser, and go to your full aksapp.io FQDN URL described in the output. You should see a hello world message. **Remember to not to include the `.` from the end of the URL.**
+14. Open your browser, and go to your full aksapp.io FQDN URL described in the output. You should see a hello world message. **Remember to not include the `.` from the end of the URL.**
 
     :::image type="content" source="../media/deployment.png" alt-text="Deployment test.":::
 
@@ -164,7 +164,7 @@ You'll use the Docker image to deploy the webapp, which will require a username 
     | Setting | Value |
     |---|---|
     | **Project Details** |
-    | Subscription | Select your default Azure subscription in which you are allowed to create and manage resources. |
+    | Subscription | Select your default Azure subscription in which you're allowed to create and manage resources. |
     | Resource Group | From the dropdown list, select the existing resource group. |
     | **Instance Details** |
     | Name | Enter a unique name and make a note of it for later. |

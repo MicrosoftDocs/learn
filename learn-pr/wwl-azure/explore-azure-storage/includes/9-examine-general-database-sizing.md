@@ -1,13 +1,13 @@
 When you plan your disk layout, find the optimal configuration based on the following factors:
 
- -  The number of data files
- -  The number of disks that contain the files
- -  The IOPS quotas of a single disk
- -  The data throughput per disk
- -  The number of additional data disks possible per VM size
- -  The overall storage throughput a VM can provide
- -  The latency different Azure Storage types can provide
- -  VM SLAs
+- The number of data files
+- The number of disks that contain the files
+- The IOPS quotas of a single disk
+- The data throughput per disk
+- The number of additional data disks possible per VM size
+- The overall storage throughput a VM can provide
+- The latency different Azure Storage types can provide
+- VM SLAs
 
 Database performance is dependent on the underlying storage. For new workloads on Azure, the number of IOPS and throughput should come from the sizing estimates. In migrations, the storage performance requirement can be obtained either from the underlying storage platform, whether it has performance monitoring tools available, or from the database itself.
 

@@ -15,7 +15,7 @@ The following example shows how an IoT Edge scenario operates in offline mode:
 
 The extended offline capabilities described here are available in IoT Edge version 1.0.7 or higher. Earlier versions have a subset of offline features. Existing IoT Edge devices that don't have extended offline capabilities can't be upgraded by changing the runtime version, but must be reconfigured with a new IoT Edge device identity to gain these features.
 
-IoT Edge devices and their assigned child devices can function indefinitely offline after the initial, one-time sync. However, storage of messages depends on the time to live (TTL) setting and the available disk space for storing the messages.<br>
+IoT Edge devices and their assigned child devices can function indefinitely offline after the initial, one-time sync. However, storage of messages depends on the time to live (TTL) setting and the available disk space for storing the messages.
 
 ## Set up parent and child devices
 
@@ -72,7 +72,7 @@ You can think of a parent/child relationship as a transparent gateway, where the
 
 ## Specify DNS servers
 
-To improve robustness, it is highly recommended you specify the DNS server addresses used in your environment. To set your DNS server for IoT Edge, either set DNS server address in container engine settings or per module in the IoT Edge deployment. For more information, see the resolution for **Edge Agent module continually reports 'empty config file' and no modules start on device** in the troubleshooting article [https://docs.microsoft.com/azure/iot-edge/troubleshoot](/azure/iot-edge/troubleshoot).
+To improve robustness, it is highly recommended you specify the DNS server addresses used in your environment. To set your DNS server for IoT Edge, either set DNS server address in container engine settings or per module in the IoT Edge deployment. For more information, see the resolution for **Edge Agent module continually reports 'empty config file' and no modules start on device** in the troubleshooting article [Troubleshoot your IoT Edge device](/azure/iot-edge/troubleshoot).
 
 ## Optional offline settings
 

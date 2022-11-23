@@ -8,4 +8,4 @@ You can learn more by reviewing the following documents:
 - [Configure the Server Certificate Template](/windows-server/networking/core-network-guide/cncg/server-certs/configure-the-server-certificate-template)
 - [Certificate Directory](/windows/win32/seccertenroll/about-certificate-directory)
 - [New-SelfSignedCertificate](/powershell/module/pki/new-selfsignedcertificate)
-- [Course WS-011T00-A: Windows Server 2019 Administration](/learn/certifications/courses/ws-011t00)
+- [Course WS-011T00-A: Windows Server 2019 Administration](/certifications/courses/ws-011t00)

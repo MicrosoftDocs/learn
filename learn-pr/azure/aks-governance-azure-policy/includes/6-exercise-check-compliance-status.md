@@ -1,5 +1,7 @@
 In the previous section, you saw how Azure policies can be used to easily govern your cluster by using a built-in Policy and Initiative. We also noted that the policy does not terminate already existing pods. We however would like to discover non-compliant pods so that we can take actions on them. We will do that in this exercise.
 
+[!INCLUDE [azure-optional-exercise-subscription-note](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## Using the Azure portal to see non-compliant pods
 
 1. Go to the [Policy](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/Overview) page in **Azure portal**.

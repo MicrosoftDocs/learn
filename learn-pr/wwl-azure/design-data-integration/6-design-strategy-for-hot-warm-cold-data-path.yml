@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-data-integration.design-strategy-for-hot-warm-cold-data-path
-title: Design a strategy for hot, warm, cold data path
+title: Design strategies for hot, warm, and cold data paths
 metadata:
-  title: Design a strategy for hot, warm, cold data path
-  description: "Design a strategy for hot, warm, cold data path"
-  ms.date: 04/29/2022
+  title: Design strategies for hot, warm, and cold data paths
+  description: "Design strategies for hot, warm, and cold data paths"
+  ms.date: 11/14/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/6-design-strategy-for-hot-warm-cold-data-path.md)]

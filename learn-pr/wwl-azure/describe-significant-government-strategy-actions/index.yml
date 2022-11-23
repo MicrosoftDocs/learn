@@ -19,13 +19,16 @@ abstract: |
 prerequisites: |
   - You should have an understanding of technology innovations since the year 1995.
   - You should understand the consumers of private sector services (consumers) and public sector services (citizens).
-iconUrl: /learn/achievements/government-significant-strategy-actions.svg
+iconUrl: /training/achievements/government-significant-strategy-actions.svg
 levels:
 - beginner
 roles:
 - business-owner
 products:
 - azure-sovereign-us
+subjects:
+- cloud-computing
+- information-protection-governance
 units:
 - learn.wwl.describe-significant-government-strategy-actions.introduction
 - learn.wwl.describe-significant-government-strategy-actions.understand-e-government-act-of-2002

@@ -24,8 +24,8 @@ prerequisites: |
   - [NVIDIA Jetson embedded device](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/?azure-portal=true) provisioned with [JetPack 4.6](https://developer.nvidia.com/jetpack-sdk-46)
   - Familiarity with container workloads and Docker
   - Familiarity with Azure IoT Edge and Azure IoT Hub 
-  - Completion of the prerequisite module [Introduction to NVIDIA DeepStream Graph Composer with Azure](/learn/modules/introduction-nvidia-deepstream-graph-composer-azure/?azure-portal=true)
-iconUrl: /learn/achievements/nvidia-deepstream-embedded-device-deployment-azure.svg
+  - Completion of the prerequisite module [Introduction to NVIDIA DeepStream Graph Composer with Azure](/training/modules/introduction-nvidia-deepstream-graph-composer-azure/?azure-portal=true)
+iconUrl: /training/achievements/nvidia-deepstream-embedded-device-deployment-azure.svg
 levels:
 - intermediate
 roles:
@@ -37,6 +37,9 @@ products:
 - azure-container-registry
 - azure-iot-edge
 - azure-iot-hub
+subjects:
+- iot
+- development-tools
 units:
 - learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.1-introduction
 - learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.2-introduction-artificial-intelligence-edge

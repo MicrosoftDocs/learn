@@ -21,7 +21,7 @@ prerequisites: |
   Before taking this training, you should complete:
   - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
   - SAP HANA or NetWeaver training.
-iconUrl: /learn/achievements/3-perform-backups-and-restores.svg
+iconUrl: /training/achievements/3-perform-backups-and-restores.svg
 levels:
 - advanced
 roles:
@@ -29,6 +29,9 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
+- business-continuity
 units:
 - learn.wwl.perform-backups-restores.introduction
 - learn.wwl.perform-backups-restores.explore-backup-restore-of-azure-virtual-machines

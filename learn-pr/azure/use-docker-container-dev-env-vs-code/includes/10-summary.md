@@ -7,9 +7,9 @@ You've created a standard environment for the developers in your agency who work
 
 ## Learn more
 
-- [Remote - Containers tutorial](https://code.visualstudio.com/docs/remote/containers-tutorial)
+- [Dev Containers tutorial](https://code.visualstudio.com/docs/remote/containers-tutorial)
 - [Learn to create a development container](https://code.visualstudio.com/docs/remote/create-dev-container)
-- [Main Remote - Containers documentation](https://code.visualstudio.com/docs/remote/containers)
+- [Main Dev Containers documentation](https://code.visualstudio.com/docs/remote/containers)
 - [How educators can use dev containers](https://code.visualstudio.com/blogs/2020/07/27/containers-edu)
 - [How students can use dev containers](https://youtu.be/Uvf2FVS1F8k)
 - [File an issue or request a feature on GitHub](https://github.com/microsoft/vscode-remote-release/issues)

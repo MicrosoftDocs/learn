@@ -8,18 +8,18 @@ Messaging records management (MRM) consists of the following features:
 
 - **Default policy tags (DPTs)** for mailboxes to manage the retention of all untagged items, such as the setting "Default 2-year move to archive".
 
-- **Personal tags** for custom folders and individual items, that are assigned by end users.
+- **Personal tags** for custom folders and individual items that are assigned by end users.
 
 By default, all mailboxes have assigned an MRM retention policy named Default MRM Policy, which includes the following retention tags:
 
 | Retention Tag| Type| Description|
 | :--- | :--- | :--- |
-| 1 Month Delete, 1 Week Delete, 1 Year Delete, 5 Year Delete, 6 Month Delete, Never Delete, Personal 1-year move to archive, Personal 5-year move to archive, Personal never move to archive| Personal tags| Can be assigned by users and applies the assigned action to messages.|
+| One Month Delete, one Week Delete, one Year Delete, five Year Delete, six Month Delete, Never Delete, Personal 1-year move to archive, Personal 5-year move to archive, Personal never move to archive| Personal tags| Can be assigned by users and applies the assigned action to messages.|
 | Junk Email, Recoverable Items 14 days move to archive| Retention policy tags (RPTs)| Automatically assigned tags for the default folders "Junk" and "Recoverable items". Deletes messages automatically from Junk and moves messages in Recoverable Items to the archive mailbox.|
 | Default 2-year move to archive| Default policy tags (DPTs)| Automatically assigned when no other tag applies to a message.|
 
 > [!NOTE]
-> To proactively retain or delete mailbox content for information governance in Microsoft 365, we recommend that you use retention policies and retention labels from the Microsoft 365 compliance center, instead of messaging records management that's described on this page. However, you should continue using messaging records management to move messages to archive mailboxes.  If you currently use messaging records management, this older feature will continue to work side-by-side with retention policies and retention labels. However, we recommend that going forward, you use retention policies and retention labels instead. They provide you with a single mechanism to centrally manage both retention and deletion of content across Microsoft 365.
+> To proactively retain or delete mailbox content for data lifecycle management in Microsoft 365, we recommend that you use retention policies and retention labels from the Microsoft Purview portal, instead of messaging records management that's described on this page. However, you should continue using messaging records management to move messages to archive mailboxes.  If you currently use messaging records management, this older feature will continue to work side-by-side with retention policies and retention labels. However, we recommend that going forward, you use retention policies and retention labels instead. They provide you with a single mechanism to centrally manage both retention and deletion of content across Microsoft 365.
 
 ## Activating archive mailboxes
 

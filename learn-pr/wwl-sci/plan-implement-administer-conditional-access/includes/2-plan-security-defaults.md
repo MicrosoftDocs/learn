@@ -5,9 +5,9 @@ Managing security can be difficult with common identity-related attacks like pas
  -  Blocking legacy authentication protocols.
  -  Requiring users to perform multi-factor authentication when necessary.
  -  Protecting privileged activities like access to the Azure portal.
-
-:::image type="content" source="../media/security-defaults-azure-active-directory-portal-b2772a4d.png" alt-text="Screenshot of the Azure portal with the toggle to enable security defaults":::
-
+    
+    :::image type="content" source="../media/security-defaults-azure-active-directory-portal-1d0b1406.png" alt-text="Screenshot of the Azure portal with the toggle to enable security defaults.":::
+    
 
 ## Availability
 
@@ -15,34 +15,11 @@ Microsoft security defaults are available to everyone. The goal is to ensure tha
 
 ### Who's it for?
 
-:::row:::
-  :::column:::
-    **Who should use security defaults?**
-  :::column-end:::
-  :::column:::
-    **Who shouldn't use security defaults?**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    
-
- -  Organizations that want to increase their security posture but don't know how or where to start
- -  Organizations utilizing the free tier of Azure Active Directory Licensing
-
-
-  :::column-end:::
-  :::column:::
-    
-
- -  Organizations currently using Conditional Access policies to bring signals together, make decisions, and enforce organizational policies
- -  Organizations with Azure Active Directory Premium licenses
- -  Organizations with complex security requirements that warrant using Conditional Access
-
-
-  :::column-end:::
-:::row-end:::
-
+| **Who should use security defaults?**                                                           | **Who shouldn't use security defaults?**                                                                                                 |
+| ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Organizations that want to increase their security posture but don't know how or where to start | Organizations currently using Conditional Access policies to bring signals together, make decisions, and enforce organizational policies |
+| Organizations utilizing the free tier of Azure Active Directory Licensing                       | Organizations with Azure Active Directory Premium licenses                                                                               |
+|                                                                                                 | Organizations with complex security requirements that warrant using Conditional Access                                                   |
 
 ## Policies enforced
 

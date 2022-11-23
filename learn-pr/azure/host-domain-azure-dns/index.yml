@@ -15,7 +15,7 @@ abstract: |
   - Configure Azure DNS to host your domain
 prerequisites: |
   - Knowledge of networking concepts like name resolution and IP addresses
-iconUrl: /learn/achievements/host-domain-azure-dns.svg
+iconUrl: /training/achievements/host-domain-azure-dns.svg
 levels:
 - beginner
 roles:
@@ -23,6 +23,9 @@ roles:
 products:
 - azure
 - azure-dns
+subjects:
+- cloud-computing
+- networking
 units:
 - learn.azure.host-domain-azure-dns.introduction
 - learn.azure.host-domain-azure-dns.what-is-azure-dns

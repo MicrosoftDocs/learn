@@ -39,14 +39,14 @@ To create the **staging** environment:
 
 Here you modify your pipeline configuration to deploy the build to the _Staging_ stage.
 
-1. In Visual Studio Code, modify *azure-pipelines.yml* like this:
+1. In Visual Studio Code, modify *azure-pipelines.yml* as follows:
 
     [!code-yml[](code/6-azure-pipelines.yml?highlight=130-151)]
 
     This code adds the _Staging_ stage. The stage deploys to the **staging** environment, which includes a release approval.
 
     > [!TIP]
-    > You probably noticed that all three of your deployment stages follow similar steps. You can use _templates_ to define common build tasks one time and reuse them multiple times. You already used this technique in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline/8-build-multiple-configurations?azure-portal=true) module. For learning purposes, we repeat the steps in each stage.
+    > You probably noticed that all three of your deployment stages follow similar steps. You can use _templates_ to define common build tasks one time and reuse them multiple times. You already used this technique in the [Create a build pipeline with Azure Pipelines](/training/modules/create-a-build-pipeline/8-build-multiple-configurations?azure-portal=true) module. For learning purposes, we repeat the steps in each stage.
 
 1. From the integrated terminal, add *azure-pipelines.yml* to the index. Next, commit the change and push it up to GitHub.
 
@@ -73,7 +73,7 @@ Here you modify your pipeline configuration to deploy the build to the _Staging_
 
     In practice, to verify that they meet your requirements, you would inspect the changes.
 
-1. After the build finishes, open a web browser. Navigate to the URL that's associated with the App Service instance for your **staging** environment.
+1. After the build finishes, open a web browser. Go to the URL that's associated with the App Service instance for your **staging** environment.
 
     If you still have the browser tab open, refresh the page. If you don't remember the URL, find it in the Azure portal, on the **App Service details** page.
 

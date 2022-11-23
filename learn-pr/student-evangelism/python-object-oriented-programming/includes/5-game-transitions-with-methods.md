@@ -26,12 +26,12 @@ Let's explain the reasoning why data shouldn't be directly touched by another ob
 
    ```python
    class Square:
-     def __init__(self):
-       self.height = 2
-       self.width = 2
-     def set_side(self, new_side):
-       self.height = new_side
-       self.width = new_side
+       def __init__(self):
+           self.height = 2
+           self.width = 2
+       def set_side(self, new_side):
+           self.height = new_side
+           self.width = new_side
 
    square = Square()
    square.height = 3 # not a square anymore
@@ -47,12 +47,12 @@ The way Python accomplishes data hiding is by adding prefixes to attribute names
 
 ```python
   class Square:
-    def __init__(self):
-      self._height = 2
-      self._width = 2
-    def set_side(new_side):
-      self._height = new_side
-      self._width = new_side
+      def __init__(self):
+          self._height = 2
+          self._width = 2
+      def set_side(self, new_side):
+          self._height = new_side
+          self._width = new_side
 
   square = Square()
   square._height = 3 # not a square anymore
@@ -62,12 +62,12 @@ One leading underscore still allows for data to be modified, which Python refers
 
 ```python
   class Square:
-    def __init__(self):
-      self.__height = 2
-      self.__width = 2
-    def set_side(new_side):
-      self.__height = new_side
-      self.__width = new_side
+      def __init__(self):
+          self.__height = 2
+          self.__width = 2
+    def set_side(self, new_side):
+          self.__height = new_side
+          self.__width = new_side
 
   square = Square()
   square.__height = 3 # raises AttributeError
@@ -90,19 +90,19 @@ Getters and setters, which are also known as *accessors* and *mutators*, are met
 
 ```python
   class Square:
-    def __init__(self):
-      self.__height = 2
-      self.__width = 2
-    def set_side(self, new_side):
-      self.__height = new_side
-      self.__width = new_side
-    def get_height(self):
-      return self.__height
-    def set_height(self, h):
-      if h >= 0:
-        self.__height = h
-      else:
-        raise Exception("value needs to be 0 or larger")
+      def __init__(self):
+          self.__height = 2
+          self.__width = 2
+      def set_side(self, new_side):
+          self.__height = new_side
+          self.__width = new_side
+      def get_height(self):
+          return self.__height
+      def set_height(self, h):
+          if h >= 0:
+              self.__height = h
+          else:
+              raise Exception("value needs to be 0 or larger")
 
   square = Square()
   square.__height = 3 # raises AttributeError
@@ -125,24 +125,24 @@ Let's see this decorator in action:
 
 ```python
 class Square:
-  def __init__(self, w, h):
-    self.height = h
-    self.__width = w
+    def __init__(self, w, h):
+        self.height = h
+        self.__width = w
   
-  def set_side(self, new_side):
-    self.__height = new_side
-    self.__width = new_side
+    def set_side(self, new_side):
+        self.__height = new_side
+        self.__width = new_side
 
-  @property
-  def height(self):
-    return self.__height
+    @property
+    def height(self):
+        return self.__height
 
-  @height.setter
-  def height(self, new_value):
-    if new_value >= 0:
-      self.__height = new_value
-    else:
-      raise Exception("Value must be larger than 0")
+    @height.setter
+    def height(self, new_value):
+        if new_value >= 0:
+            self.__height = new_value
+        else:
+            raise Exception("Value must be larger than 0")
 ```
 
 In the preceding code, the function `height()` is decorated by the decorator `@property`. This *decoration* action creates the private field `__height`. The `__height` field isn't defined in the constructor `__init__()` because the decorator does that already. There's also another decoration happening, namely, `@height.setter`. This decoration points out a similar-looking `height()` method as the *setter*. The new height method takes on another parameter `value` as its second parameter.

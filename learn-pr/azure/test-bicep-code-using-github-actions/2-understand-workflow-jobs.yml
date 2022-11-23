@@ -6,8 +6,8 @@ metadata:
   title: Understand workflow jobs
   description: Learn about jobs in GitHub Actions. Also, learn about the typical deployment jobs for Bicep code.
   ms.date: 10/19/2021
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

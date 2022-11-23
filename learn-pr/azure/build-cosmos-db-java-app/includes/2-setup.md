@@ -7,7 +7,7 @@ For completing this lab, Microsoft Learn provides a free Azure sandbox in which 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you activated the sandbox with.
 1. By using the Azure portal, create an Azure Cosmos DB account with the name of your choice. When the opportunity arrives to choose a resource group for your account, find the resource group <rgn>[Sandbox resource group]</rgn> and select that.
 1. In your Azure Cosmos DB account, create a database called **Users**.
-1. In the **Users** database, create a container called **WebCustomers**. Provision **400 RU/s** for **WebCustomers**.
+1. In the **Users** database, create a container called **WebCustomers** with a partition key of **/userId**. Provision **400 RU/s** for **WebCustomers**.
 
 ## Create your working directory
 
@@ -39,7 +39,7 @@ For completing this lab, Microsoft Learn provides a free Azure sandbox in which 
 
 1. Next, you'll build and run Hello World. By using your IDE or the terminal, open this project. Depending on your IDE, there might be an option to open the **pom.xml** file in the **java** subdirectory as a project. 
 
-    After the project is open, go to **src/main/java/com/azure/azure-cosmos-java-sql-app-mslearn** and open **CosmosApp.java**, which is a template for the Java application that we'll develop. It should look something like this:
+    After the project is open, go to **src/main/java/com/azure/cosmos/examples/mslearnbasicapp** and open **CosmosApp.java**, which is a template for the Java application that we'll develop. It should look something like this:
 
     ```java
     import org.slf4j.Logger;
@@ -208,83 +208,15 @@ In this unit, you set up the groundwork for your Azure Cosmos DB Java applicatio
     <dependency>
       <groupId>com.azure</groupId>
       <artifactId>azure-spring-data-cosmos</artifactId>
-      <version>3.1.0</version>
+      <version>3.24.0</version>
     </dependency>
     ```
 
     This dependency pulls in the latest version of Spring Data Azure Cosmos DB. You can close this file.
 
-1. Next, you'll build and run Hello World. By using your IDE or the terminal, open this project. Depending on your IDE, there might be an option to open the **pom.xml** file in the **spring** subdirectory as a project. 
-
-    After the project is open, go to **src/main/java/com/azure/cosmos/examples/springexamples** and open **CosmosSample.java**, which is a template for the Spring Data application that we'll develop. It should look something like this:
-
-    ```java
-    // Copyright (c) Microsoft Corporation. All rights reserved.
-    // Licensed under the MIT License.
-    package com.azure.cosmos.examples.springexamples;
-
-    import com.azure.cosmos.CosmosException;
-    import com.azure.cosmos.examples.springexamples.common.CouponsUsed;
-    import com.azure.cosmos.examples.springexamples.common.OrderHistory;
-    import com.azure.cosmos.examples.springexamples.common.ShippingPreference;
-    import com.azure.cosmos.models.CosmosItemResponse;
-    import com.azure.cosmos.models.PartitionKey;
-    import org.slf4j.Logger;
-    import org.slf4j.LoggerFactory;
-    import org.springframework.beans.factory.annotation.Autowired;
-    import org.springframework.boot.CommandLineRunner;
-    import org.springframework.boot.SpringApplication;
-    import org.springframework.boot.autoconfigure.SpringBootApplication;
-    import reactor.core.publisher.Flux;
-    import reactor.core.publisher.Mono;
-
-    import java.util.ArrayList;
-    import java.util.Arrays;
-    import java.util.List;
-
-    @SpringBootApplication
-    public class CosmosSample implements CommandLineRunner {
-
-        private final Logger logger = LoggerFactory.getLogger(CosmosSample.class);
-
-        @Autowired
-        private ReactiveWebCustomerRepository reactiveWebCustomerRepository;
-
-        public static void main(String[] args) {
-            SpringApplication.run(CosmosSample.class, args);
-        }
-
-        public void run(String... var1) {
-            logger.info("Hello world.");
-        }
-    }
-    ```
-
-    As is, the application code implements a simple "Hello World."
-
-1. *If your IDE offers tools to build and run your Maven application*: Build and run your application by using the IDE, and confirm that the application logs `Hello World` to the terminal.
-
-1. *If you'll use the terminal to build and run your Maven application*: Use the following command to build the Maven project:
-
-    ```bash
-    mvn clean package
-    ```
-
-    Then run:
-
-    ```bash
-    mvn spring-boot:run
-    ```
-
-    Confirm that the application logs the following output to the terminal, amidst all of the other output:
-
-    ```output
-    INFO: Hello World.
-    ```
-
 ## Connect the app to Azure Cosmos DB
 
-1. Navigate to **src/main/resources/** using a file explorer tool. You should see a file named **application.properties.rename**. Spring Data emphasizes configuration files over hard-coded configuration parameters; to create the configuration file for your Spring Data project, copy **application.properties.rename** to **application.properties** and open the new **application.properties** file. You should see
+1. By using your IDE or the terminal, open this project. Depending on your IDE, there might be an option to open the **pom.xml** file in the **spring** subdirectory as a project. After the project is open, navigate to **src/main/resources/** using a file explorer tool. You should see a file named **application.properties.rename**. Spring Data emphasizes configuration files over hard-coded configuration parameters; to create the configuration file for your Spring Data project, copy **application.properties.rename** to **application.properties** and open the new **application.properties** file. You should see
 
     ```bash
     cosmos.uri=${ACCOUNT_HOST}
@@ -301,6 +233,7 @@ In this unit, you set up the groundwork for your Azure Cosmos DB Java applicatio
 1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), go to the **Keys** pane, and copy the Azure Cosmos DB endpoint URI and primary key. As discussed in the previous step, use the method of your choice to assign your Azure Cosmos DB endpoint URI and primary key to the aforementioned variables.
 
     For example, if your URI is `https://cosmosacct.documents.azure.com:443/`, and you choose to paste the endpoint and primary key into **application.properties**, the line in **application.properties** will subsequently look like this: `cosmos.uri=https://cosmosacct.documents.azure.com:443/`. If your primary key is `elzirrKCnXlacvh1CRAnQdYVbVLspmYHQyYrhx0PltHi8wn5lHVHFnd1Xm3ad5cn4TUcH4U0MSeHsVykkFPHpQ==`, then following the same process your new variable assignment will look like this: `cosmos.key=elzirrKCnXlacvh1CRAnQdYVbVLspmYHQyYrhx0PltHi8wn5lHVHFnd1Xm3ad5cn4TUcH4U0MSeHsVykkFPHpQ==`.
+
 
 ## Configure the Azure Cosmos DB client
 
@@ -369,14 +302,16 @@ Spring Data Azure Cosmos DB automatically instantiates the Azure Cosmos DB clien
 
     At startup, Spring Data will automatically call this method, obtain the `CosmosClientBuilder` which this method returns, and call its `build()` method - at which point (under the hood) a `CosmosAsyncClient` instance will be created based on the configuration settings contained within the `CosmosClientBuilder`. You can use this method to configure the `CosmosClientBuilder` using builder methods.
 
-1. Notice how near the top of `CosmosSampleConfiguration` we declare an "autowired" `CosmosProperties` variable, `properties`
+1. Notice that we use constructor injection (rather than field injection using @Autowired) to instantiate the `properties` variable *and populate its member variables with parsed values from the configuration file*. This ensures all required dependencies are present when the instance of this class is created, and facilitates writing test code in the future. 
 
     ```java
-    @Autowired
-    private CosmosProperties properties;
+    //use constructor injection for spring dependencies 
+    public CosmosSampleConfiguration(CosmosProperties properties){
+        this.properties = properties;
+    }
     ```
     
-    Notice there is no definition of this variable in the code - once again, `@Autowired` signals Spring Data to instantiate this variable automatically *and populate its member variables with parsed values from the configuration file*. We can use `properties` to get the *uri* and *key* for our Azure Cosmos DB account and implement `cosmosClientBuilder` as shown below:
+    We can use `properties` to get the *uri* and *key* for our Azure Cosmos DB account and implement `cosmosClientBuilder` as shown below:
 
     ```java
     @Bean
@@ -423,16 +358,66 @@ Spring Data Azure Cosmos DB automatically instantiates the Azure Cosmos DB clien
     public class WebCustomer {
     ```
 
-1. At this point, your Spring Data project is set up to interact with Azure Cosmos DB. However, the `run` method does not make use of any functionality, so our application still serves to print "Hello World." As a check, build and run **CosmosSample.java** in the IDE or run the program in the terminal by using: 
+1. At this point, your Spring Data project is set up to interact with Azure Cosmos DB. Next, you'll build and run Hello World. Go to **src/main/java/com/azure/cosmos/examples/springexamples** and open **CosmosSample.java**, which is a template for the Spring Data application that we'll develop. It should look something like this:
+
+    ```java
+    // Copyright (c) Microsoft Corporation. All rights reserved.
+    // Licensed under the MIT License.
+    package com.azure.cosmos.examples.springexamples;
+
+    import com.azure.cosmos.CosmosException;
+    import com.azure.cosmos.examples.springexamples.common.CouponsUsed;
+    import com.azure.cosmos.examples.springexamples.common.OrderHistory;
+    import com.azure.cosmos.examples.springexamples.common.ShippingPreference;
+    import com.azure.cosmos.models.CosmosItemResponse;
+    import com.azure.cosmos.models.PartitionKey;
+    import org.slf4j.Logger;
+    import org.slf4j.LoggerFactory;
+    import org.springframework.boot.CommandLineRunner;
+    import org.springframework.boot.SpringApplication;
+    import org.springframework.boot.autoconfigure.SpringBootApplication;
+    import reactor.core.publisher.Flux;
+    import reactor.core.publisher.Mono;
+
+    import java.util.ArrayList;
+    import java.util.Arrays;
+    import java.util.List;
+
+    @SpringBootApplication
+    public class CosmosSample implements CommandLineRunner {
+
+        private final Logger logger = LoggerFactory.getLogger(CosmosSample.class);
+
+        private ReactiveWebCustomerRepository reactiveWebCustomerRepository;
+
+        //constructor dependency injection
+        public CosmosSample(ReactiveWebCustomerRepository reactiveWebCustomerRepository){
+            this.reactiveWebCustomerRepository = reactiveWebCustomerRepository;
+        }
+
+        public void run(String... var1) {
+            logger.info("Hello world.");
+        }
+    }
+    ```
+
+    As is, the application code implements a simple "Hello World."
+
+1. *If your IDE offers tools to build and run your Maven application*: Build and run your application by using the IDE, and confirm that the application logs `Hello World` to the terminal.
+
+1. *If you'll use the terminal to build and run your Maven application*: Use the following command to build the Maven project:
 
     ```bash
     mvn clean package
+    ```
+
+    Then run:
+
+    ```bash
     mvn spring-boot:run
     ```
 
-    You should see verbose output in the terminal - including indications that your application is connecting to the Azure Cosmos DB service.
-
-    Confirm that the app still logs the following output to the terminal:
+    Confirm that the application logs the following output to the terminal, amidst all of the other output:
 
     ```output
     INFO: Hello World.

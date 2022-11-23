@@ -29,6 +29,10 @@ Let’s start by creating an Azure Function App in the portal.
     | Runtime stack | .NET |
     | Version | 3.1 |
     | Region | Select a location close to you. |
+    | **Operating system** |
+    | Operating System | Windows |
+    | **Plan** |
+    | Plan type | Consumption (Serverless). When using the Consumption Plan type, you're charged for each execution of your function, and resources are automatically allocated based on your app workload.|
 
 1. Select **Next : Hosting**, and enter the following values for each setting.
 
@@ -36,10 +40,6 @@ Let’s start by creating an Azure Function App in the portal.
     |---|---|
     | **Storage** |
     | Storage account |  Defaults to (New) and a unique storage account name. You can change the name if you like. |
-    | **Operating system** |
-    | Operating System | Windows |
-    | **Plan** |
-    | Plan type | Consumption (Serverless). When using the Consumption Plan type, you're charged for each execution of your function, and resources are automatically allocated based on your app workload.|
 
 1. Select **Review + create** to validate your input, and then select **Create**. Deployment progress displays the items that are created. It may take a minute or two for deployment to complete.
 
@@ -100,6 +100,10 @@ You've created an Azure function app with logic to print a message to the log wi
     | Runtime stack | PowerShell Core. |
     | Version | 7.0 (or latest version). |
     | Region | Select a location close to you. |
+    | **Operating system** |
+    | Operating System | Windows |
+    | **Plan** |
+    | Plan type | Consumption (Serverless). When using the Consumption Plan type, you're charged for each execution of your function, and resources are automatically allocated based on your app workload.|
 
 1. Select **Next : Hosting**. Enter the following values for each setting.
 
@@ -107,10 +111,6 @@ You've created an Azure function app with logic to print a message to the log wi
     |---|---|
     | **Storage** |
     | Storage account |  Default is a unique storage account name. You can change the name if you like.|
-    | **Operating system** |
-    | Operating System | Windows |
-    | **Plan** |
-    | Plan type | Consumption (Serverless). When using the Consumption Plan type, you're charged for each execution of your function, and resources are automatically allocated based on your app workload.|
 
 1. Select **Review + create** to validate your settings, and then select **Create**. The deployment pane displays the resources that are being created for your function app. 
 

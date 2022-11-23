@@ -7,4 +7,4 @@ In this module you've learned how to:
 
 ## Next steps
 
-Now that you’ve learned about professional data roles and the services they use, consider learning more about data-related workloads on Microsoft Azure by pursuing a Microsoft certification in [Azure Data Fundamentals](/learn/certifications/azure-data-fundamentals/).
+Now that you’ve learned about professional data roles and the services they use, consider learning more about data-related workloads on Microsoft Azure by pursuing a Microsoft certification in [Azure Data Fundamentals](/certifications/azure-data-fundamentals/).

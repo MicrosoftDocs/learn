@@ -18,8 +18,8 @@ prerequisites: |
   - Familiarity with with Microsoft Azure
   - Application development experience with C# or Python
   - Experience of creating an enrichment pipeline with Azure Cognitive Search
-  If you have not completed the [Create an Azure Cognitive Search solution](/learn/modules/create-azure-cognitive-search-solution/) module, do so before starting this module.
-iconUrl: /learn/achievements/implementing-a-knowledge-store.svg
+  If you have not completed the [Create an Azure Cognitive Search solution](/training/modules/create-azure-cognitive-search-solution/) module, do so before starting this module.
+iconUrl: /training/achievements/implementing-a-knowledge-store.svg
 levels:
 - intermediate
 roles:
@@ -28,6 +28,8 @@ roles:
 - solution-architect
 products:
 - azure-cognitive-search
+subjects:
+- artificial-intelligence
 units:
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search.introduction
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search.define-projection

@@ -2,8 +2,8 @@
 uid: learn.wwl.create-run-container-images-azure-container-instances
 metadata:
   title: Run container images in Azure Container Instances
-  description: "Learn how Azure Container Instances can help you quickly deploy containers, how to set environment variables, and specify container restart policies."
-  ms.date: 04/14/2022
+  description: "Run container images in Azure Container Instances"
+  ms.date: 11/14/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   *   You should be familiar with container concepts and terminology.
   *   An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /learn/achievements/azure-container-instances-images.svg
+iconUrl: /training/achievements/azure-container-instances-images.svg
 levels:
 - intermediate
 roles:
@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-container-instances
+subjects:
+- container
 units:
 - learn.wwl.create-run-container-images-azure-container-instances.introduction
 - learn.wwl.create-run-container-images-azure-container-instances.explore

@@ -32,7 +32,7 @@ prerequisites: |
   - Be familiar with the concept of virtualization
   - Know what the different types of virtualization are
   - Understand CPU virtualization
-iconUrl: /learn/achievements/cmu-cloud-developer/virtualize-memory.svg
+iconUrl: /training/achievements/cmu-cloud-developer/virtualize-memory.svg
 hidden: true
 levels:
 - beginner
@@ -41,6 +41,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory.0-introduction
 - learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory.1-one-level-page-map

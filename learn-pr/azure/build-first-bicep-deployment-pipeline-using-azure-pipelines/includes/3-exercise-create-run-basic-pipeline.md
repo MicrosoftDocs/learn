@@ -1,3 +1,5 @@
+[!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 You want to automate deployment of updates to your toy company's website. As a first step, you create a basic pipeline in Azure DevOps.
 
 In this exercise, you'll:
@@ -13,7 +15,7 @@ In this exercise, you'll:
 
 1. If you created a new account, follow the prompts to create an Azure DevOps organization. Azure DevOps then prompts you to create a new project. Continue to the next step to set up the project.
 
-    If you signed in to an existing Azure DevOps organization, select your account ID in the resource bar, and then select **New project** to create a new project.
+    If you signed in to an existing Azure DevOps organization, select **New project** to create a new project.
 
     :::image type="content" source="../../includes/media/azure-devops-create-project.png" alt-text="Screenshot of Azure DevOps with new project button highlighted.":::
 
@@ -36,7 +38,7 @@ In this exercise, you'll:
 
 1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials** and copy the username and password displayed to somewhere safe.
 
-1. In the **Clone to your computer** section, select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open in Visual Studio Code**.
+1. In the **Clone to your computer** section, select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
 
     :::image type="content" source="../media/3-clone-visual-studio-code.png" alt-text="Screenshot showing repository settings with the Clone in VS Code button highlighted.":::
 
@@ -80,6 +82,8 @@ Now that you've created your organization, project, and repository, you're ready
 
     :::code language="yaml" source="code/3-pipeline.yml":::
 
+1. Save your changes to the file.
+
 1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. A **TERMINAL** panel and an **OUTPUT** panel open.
 
 1. To commit and push the *azure-pipelines.yml* file to your Git repository, paste this code in the terminal panel, and then press <kbd>Enter</kbd>.
@@ -92,7 +96,7 @@ Now that you've created your organization, project, and repository, you're ready
 
 ## Set up the pipeline in Azure Pipelines
 
-You've created a pipeline definition. Next, register the pipeline with Azure Pipelines. This procedure follows the Create Pipeline workflow built into Azure.
+You've created a pipeline definition. Next, register the pipeline with Azure Pipelines.
 
 1. In the resource menu of your Azure DevOps session, select **Pipelines**, and in the resulting **Create your first Pipeline** pane, select **Create Pipeline**.
 
@@ -126,6 +130,15 @@ You've created a pipeline definition. Next, register the pipeline with Azure Pip
     Azure Pipelines creates the pipeline and starts a first run.
 
 ## Verify the pipeline run
+
+> [!IMPORTANT]
+> If this is your first time using pipelines in this Azure DevOps organization, you might see an error saying:
+>
+> > *No hosted parallelism has been purchased or granted.*
+>
+> In order to protect against misuse, Azure DevOps requires that new organizations be approved before they can use Microsoft-hosted pipeline agents without a charge.
+>
+> [To request that your Azure DevOps organization be granted access to free pipeline agents, complete this form.](https://aka.ms/azpipelines-parallelism-request)
 
 1. When the pipeline run starts, a page displays information about the run.
 

@@ -141,9 +141,9 @@ Identify the subtasks of *Automate the installation and configuration of softwar
 - [Tutorial - Deploy applications to a Windows virtual machine in Azure with the Custom Script Extension](/azure/virtual-machines/windows/tutorial-automate-vm-deployment)
 - [Tutorial - How to use cloud-init to customize a Linux virtual machine in Azure on first boot](/azure/virtual-machines/linux/tutorial-automate-vm-deployment)
 - [Cloud-init support for virtual machines in Azure](/azure/virtual-machines/linux/using-cloud-init)
-- [Create a Linux virtual machine in Azure](/learn/modules/create-linux-virtual-machine-in-azure/)
-- [Create a Windows virtual machine in Azure](/learn/modules/create-windows-virtual-machine-in-azure/)
-- [Manage virtual machines with the Azure CLI](/learn/modules/manage-virtual-machines-with-azure-cli/)
+- [Create a Linux virtual machine in Azure](/training/modules/create-linux-virtual-machine-in-azure/)
+- [Create a Windows virtual machine in Azure](/training/modules/create-windows-virtual-machine-in-azure/)
+- [Manage virtual machines with the Azure CLI](/training/modules/manage-virtual-machines-with-azure-cli/)
 - [Use the Azure Custom Script Extension Version 2 with Linux virtual machines](/azure/virtual-machines/extensions/custom-script-linux#azure-cli)
 
 ### Steps for both machines

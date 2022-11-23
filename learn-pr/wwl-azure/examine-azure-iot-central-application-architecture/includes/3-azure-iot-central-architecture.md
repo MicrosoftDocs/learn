@@ -36,7 +36,6 @@ Azure IoT Central is not limited to IoT devices, you can also connect Azure IoT 
 IoT Central enables the following capabilities for IoT Edge devices:
 
  -  Device templates are used to describe the capabilities of an IoT Edge device, such as:
-    
      -  Deployment manifest upload capability, which helps you manage a manifest for a fleet of devices.
      -  Modules that run on the IoT Edge device.
      -  The telemetry each module sends.

@@ -21,7 +21,7 @@ prerequisites: |
   - Know how to create, edit, and run Rust code by using Cargo.
   - Know how to create functions.
   - Understand how control flow, specifically `if`, statements work in Rust. 
-iconUrl: /learn/achievements/rust-automated-tests.svg 
+iconUrl: /training/achievements/rust-automated-tests.svg 
 levels:
 - beginner
 roles:
@@ -29,6 +29,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- development-tools
 units:
 - learn.language.rust-automated-tests.introduction
 - learn.language.rust-automated-tests.unit-tests

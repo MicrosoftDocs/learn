@@ -12,7 +12,7 @@ metadata:
 title: Azure for the Data Engineer
 summary: Explore how the world of data has evolved and how the advent of cloud technologies is providing new opportunities for business to explore. You will learn the various data platform technologies that are available, and how a Data Engineer can take advantage of this technology to an organization benefit.
 prerequisites: None
-iconUrl: /learn/achievements/data-ai/azure-for-the-data-engineer-trophy.svg
+iconUrl: /training/achievements/data-ai/azure-for-the-data-engineer-trophy.svg
 levels:
 - beginner
 roles:
@@ -22,6 +22,8 @@ products:
 - azure-portal
 - azure-storage
 - azure-virtual-machines
+subjects:
+- data-engineering
 modules:
 - learn.data-ai.evolving-world-of-data
 - learn.data-ai.survey-the-azure-data-platform

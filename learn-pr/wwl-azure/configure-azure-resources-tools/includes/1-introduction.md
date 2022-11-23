@@ -10,11 +10,11 @@ You must select and use a tooling option. Your choices can include the Azure por
 
 ## Skills measured
 
-These administrative tools aren't directly tested on [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104). However, may be used during performance-based testing.
+These administrative tools aren't directly tested on [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). However, may be used during performance-based testing.
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
  -  Manage resources with the Azure portal.
  -  Manage resources with Azure Cloud Shell.

@@ -12,7 +12,7 @@ A [hub-and-spoke model](/azure/architecture/reference-architectures/hybrid-netwo
 
 - **Workload-SN** ‒ the workload server is in this subnet. This subnet's network traffic goes through the firewall.
 
-The following [Tutorial - Deploy & configure Azure Firewall using the Azure portal | Microsoft Docs](/azure/firewall/tutorial-firewall-deploy-portal) can help you learn how to:
+The following [Deploy and configure Azure Firewall using the Azure portal](/azure/firewall/tutorial-firewall-deploy-portal) can help you learn how to:
 
 - Set up a test network environment.
 
@@ -197,4 +197,3 @@ The following [Tutorial: Secure your virtual hub using Azure Firewall Manager](/
 - Create a firewall policy and secure your hub.
 
 - Test the firewall.
-

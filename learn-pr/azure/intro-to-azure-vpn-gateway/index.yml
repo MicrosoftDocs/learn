@@ -18,7 +18,7 @@ abstract: |
   In this module, you will:
   - Learn what Azure VPN Gateway is and the functionality it provides.
   - Determine whether Azure VPN Gateway meets the needs of your organization.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
@@ -30,6 +30,8 @@ products:
   - azure-vpn-gateway
 prerequisites: |
   Understanding of basic networking concepts.
+subjects:
+- networking
 units:
   - learn.azure.intro-to-azure-vpn-gateway.introduction
   - learn.azure.intro-to-azure-vpn-gateway.what-is-azure-vpn-gateway

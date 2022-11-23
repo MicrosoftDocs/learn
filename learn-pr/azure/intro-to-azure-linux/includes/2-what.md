@@ -50,7 +50,7 @@ Improve the intelligence of your apps with AI and Azure Cognitive Services. The 
 
 ### Governance and monitoring
 
-Maintain control of your applications with a comprehensive set of governance and monitoring capabilities. Monitor and optimize spending with Azure Cost Management budgeting and reporting capabilities. Enforce organizational standards with Azure Policy business rules and alerts. Define policy-backed resources with Azure Blueprints. Centralize monitoring, logging, and performance analysis across your entire cloud infrastructure with Azure Monitor. Instrument applications with Application Insights, perform deep queries with Log Analytics, and trigger automated actions and notifications with alerts.
+Maintain control of your applications with a comprehensive set of governance and monitoring capabilities. Monitor and optimize spending with Microsoft Cost Management budgeting and reporting capabilities. Enforce organizational standards with Azure Policy business rules and alerts. Define policy-backed resources with Azure Blueprints. Centralize monitoring, logging, and performance analysis across your entire cloud infrastructure with Azure Monitor. Instrument applications with Application Insights, perform deep queries with Log Analytics, and trigger automated actions and notifications with alerts.
 
 ### Security tools and capabilities
 

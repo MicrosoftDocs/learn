@@ -21,11 +21,11 @@ To be most effective, the strategy for mapping partitions—whether graph or dat
 ***
 ### References
 
-1. _G. Coulouris, J. Dollimore, T. Kindberg, and G. Blair (May 2011). [Distributed Systems: Concepts and Design](http://dinus.ac.id/repository/docs/ajar/George-Coulouris-Distributed-Systems-Concepts-and-Design-5th-Edition.pdf) Addison-Wesley_
+1. _G. Coulouris, J. Dollimore, T. Kindberg, and G. Blair (May 2011). [Distributed Systems: Concepts and Design](https://repository.dinus.ac.id/view/setViewer/12/1196/36059/Distributed-Systems--Concepts-and-Design--5th-Edition-.pdf) Addison-Wesley_
 2. Netperf
 3. _M. Hammoud, M. S. Rehman, and M. F. Sakr (2012). [Center-of-Gravity Reduce Task Scheduling to Lower MapReduce Network Traffic](https://dl.acm.org/doi/10.1109/CLOUD.2012.92) CLOUD_
 
 ***
 
-[^1]: <http://dinus.ac.id/repository/docs/ajar/George-Coulouris-Distributed-Systems-Concepts-and-Design-5th-Edition.pdf> "G. Coulouris, J. Dollimore, T. Kindberg, and G. Blair (May 2011). *Distributed Systems: Concepts and Design* Addison-Wesley"
+[^1]: <https://repository.dinus.ac.id/view/setViewer/12/1196/36059/Distributed-Systems--Concepts-and-Design--5th-Edition-.pdf> "G. Coulouris, J. Dollimore, T. Kindberg, and G. Blair (May 2011). *Distributed Systems: Concepts and Design* Addison-Wesley"
 [^3]: <https://dl.acm.org/doi/10.1109/CLOUD.2012.92> "M. Hammoud, M. S. Rehman, and M. F. Sakr (2012). *Center-of-Gravity Reduce Task Scheduling to Lower MapReduce Network Traffic* CLOUD"

@@ -23,7 +23,7 @@ To send your metrics data to an Event Hubs endpoint or an Azure Storage account,
 
 IoT Hub provides metrics that give you an overview of the health of your hub, the total number of connected devices, and metrics that give you specific details related to key operations. You can combine information from multiple metrics to paint a bigger picture of the state of the IoT hub.
 
-The following tables provide a partial listing of the metrics that each IoT hub tracks, and describe how each of the metric listed relates to the overall status of the IoT hub. You can also find a single table that lists all of the IoT Hub platform metrics by metric name under Microsoft.Devices/IotHubs in the Azure Monitor documentation here: [https://docs.microsoft.com/azure/azure-monitor/essentials/metrics-supported](/azure/azure-monitor/essentials/metrics-supported).
+The following tables provide a partial listing of the metrics that each IoT hub tracks, and describe how each of the metric listed relates to the overall status of the IoT hub. You can also find a single table that lists all of the IoT Hub platform metrics by metric name under Microsoft.Devices/IotHubs in the Azure Monitor documentation here: [Supported metrics with Azure Monitor](/azure/azure-monitor/essentials/metrics-supported).
 
 ### D2C telemetry ingress and egress
 

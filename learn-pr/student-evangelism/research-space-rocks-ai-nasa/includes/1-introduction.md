@@ -1,6 +1,6 @@
 As technology advances, many disciplines outside the field of computer science have found ways to introduce advanced technologies into their work. Artificial intelligence (AI) is a relatively new technology that's being applied to many tasks.
 
-This Microsoft Learn learning path is the second in a series of learning paths that highlight how AI might influence NASA research, and space exploration in general. From teaching a computer to detect which rock an astronaut should collect based on the rock type, to predicting whether a rocket can launch on a specific day, AI can be a useful tool for the brilliant research minds that are behind some of Earth's most inspiring discoveries.
+This learning path on Microsoft Learn is the second in a series of learning paths that highlight how AI might influence NASA research, and space exploration in general. From teaching a computer to detect which rock an astronaut should collect based on the rock type, to predicting whether a rocket can launch on a specific day, AI can be a useful tool for the brilliant research minds that are behind some of Earth's most inspiring discoveries.
 
 The programming services and libraries that do much of the complex math and algorithms in AI are widely available. For example, Python libraries and packages like [PyTorch][PyTorch] explore, visualize, and analyze data. [Azure also offers AI services][AzureAI] that analyze an image by using a simple API call.
 

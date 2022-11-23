@@ -2,32 +2,34 @@
 uid: learn.wwl.configure-subscriptions
 metadata:
   title: Configure subscriptions
-  description: "You will learn how to configure subscriptions including obtaining a subscription, implementing cost management, and applying resource tags."
-  ms.date: 04/15/2022
+  description: "Configure subscriptions"
+  ms.date: 11/21/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure subscriptions
-summary: You'll learn how to configure subscriptions. This includes getting a subscription, implementing cost management, and applying resource tags.
+summary: Learn how to configure Azure subscriptions, including how to obtain a subscription, implement cost management, and apply Azure resource tags.
 abstract: |
-  After completing this module, you'll be able to:
-   -  Determine the correct region to locate Azure services.
-   -  Identify features and usage cases for Azure subscriptions.
-   -  Identify how to obtain an Azure subscription.
-   -  Understand billing and features for different Azure subscriptions.
-   -  Use the Cost Management product for cost analysis.
-   -  Determine when to use resource tagging.
-   -  Identify ways to reduce costs.
+  In this module, you learn how to:
+  - Determine the correct region to locate Azure services.
+  - Review features and use cases for Azure subscriptions.
+  - Obtain an Azure subscription.
+  - Understand billing and features for different Azure subscriptions.
+  - Use Microsoft Cost Management for cost analysis.
+  - Discover when to use Azure resource tagging.
+  - Identify ways to reduce costs.
 prerequisites: |
   None
-iconUrl: /learn/achievements/subscriptions-configure.svg
+iconUrl: /training/achievements/subscriptions-configure.svg
 levels:
 - intermediate
 roles:
 - administrator
 products:
 - azure
+subjects:
+- finance-accounting
 units:
 - learn.wwl.configure-subscriptions.introduction
 - learn.wwl.configure-subscriptions.identify-regions

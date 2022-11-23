@@ -16,7 +16,7 @@ abstract: |
   - Describe what Form Recognizer is
   - Define scenarios where Form Recognizer can be applied
 prerequisites: A basic familiarity with Azure
-iconUrl: /learn/achievements/intro-to-form-recognizer.svg
+iconUrl: /training/achievements/intro-to-form-recognizer.svg
 levels:
 - beginner
 roles:
@@ -29,6 +29,8 @@ products:
 - azure
 - azure-cognitive-services
 - azure-form-recognizer
+subjects:
+- classification-analysis
 units:
 - learn.azure.intro-to-form-recognizer.introduction
 - learn.azure.intro-to-form-recognizer.what-is-form-recognizer

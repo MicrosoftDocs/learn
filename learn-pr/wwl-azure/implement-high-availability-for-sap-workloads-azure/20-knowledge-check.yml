@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/05/2022
+  ms.date: 07/06/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -30,7 +30,7 @@ quiz:
       explanation: "Correct. Two or more VMs in different Availability Zones in the same Azure region offers a 99.99% uptime SLA."
   - content: "Can availability sets be deployed in Azure Availability Zones?"
     choices:
-    - content: "No, they cannot."
+    - content: "No, they can't."
       isCorrect: true
       explanation: "Correct. You can't deploy Azure availability sets within an Azure Availability Zone. Choose one or the other as a deployment framework for virtual machines."
     - content: "Yes, they can."

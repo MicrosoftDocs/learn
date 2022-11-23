@@ -3,7 +3,7 @@ uid: learn.wwl.read-text-computer-vision
 metadata:
   title: Read text with the Computer Vision service
   description: "Read text with the Computer Vision service"
-  ms.date: 11/11/2021
+  ms.date: 10/18/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ abstract: |
   Learn how to read text in images with the Computer Vision service
 prerequisites: |
   Ability to navigate the Azure portal
-iconUrl: /learn/achievements/read-text-computer-vision.svg
+iconUrl: /training/achievements/read-text-computer-vision.svg
 levels:
 - beginner
 roles:
@@ -25,6 +25,8 @@ roles:
 - student
 products:
 - azure-cognitive-services
+subjects:
+- natural-language-processing
 units:
 - learn.wwl.read-text-computer-vision.introduction
 - learn.wwl.read-text-computer-vision.get-started

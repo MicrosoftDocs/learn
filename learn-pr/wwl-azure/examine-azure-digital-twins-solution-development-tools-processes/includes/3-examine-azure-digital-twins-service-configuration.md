@@ -91,7 +91,7 @@ Use the following chart to see what resources should be set up before creating y
     Event Grid endpoint
   :::column-end:::
   :::column:::
-    Event Grid Topic
+    Event Grid topic
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -139,7 +139,6 @@ An event route definition contains these elements:
  -  The route name you want to use.
  -  The name of the endpoint you want to use.
  -  A filter that defines which events are sent to the endpoint:
-    
      -  To disable the route so that no events are sent, use a filter value of false.
      -  To enable a route that has no specific filtering, use a filter value of true.
      -  For details on any other type of filter, see the Filter events section below.

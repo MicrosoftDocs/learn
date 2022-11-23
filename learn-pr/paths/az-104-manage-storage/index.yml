@@ -1,15 +1,19 @@
 ### YamlMime:LearningPath
 uid: learn.az-104-manage-storage
 metadata:
-  title: "AZ-104: Implement and manage storage in Azure"
-  description: "Learn how to manage storage in Azure and prepare for Exam AZ-104: Microsoft Azure Administrator."
-  brand: azure
-  ms.date: 08/06/2021
-  author: tamram
-  ms.author: tamram
+  title: 'AZ-104: Implement and manage storage in Azure'
+  description: 'AZ-104: Implement and manage storage in Azure'
+  ms.date: 10/12/2022
+  author: wwlpublish
+  ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "AZ-104: Implement and manage storage in Azure"
+title: 'AZ-104: Implement and manage storage in Azure'
+prerequisites: |
+  - [Microsoft Azure Fundamentals: Describe cloud concepts](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
+  - [Azure Fundamentals: Describe Azure architecture and services](/training/paths/azure-fundamentals-describe-azure-architecture-services/)
+  - [Azure Fundamentals: Describe Azure management and governance](/training/paths/describe-azure-management-governance/)
+  - [AZ-104: Prerequisites for Azure administrators](/training/paths/az-104-administrator-prerequisites/)
 summary: |
   Learn how to manage storage accounts, data in Azure Storage, and Azure File and Blob storage. 
   
@@ -17,17 +21,17 @@ summary: |
 
   :::row:::
   :::column:::
-    <img src="/learn/achievements/az-104-administrator-prerequisites.svg" width="84" height="70" alt="The trophy for the AZ-104 Prerequisites for Azure administrators learning path." role="presentation"></img>
+    <img src="/training/achievements/az-104-administrator-prerequisites.svg" width="84" height="70" alt="The trophy for the AZ-104 Prerequisites for Azure administrators learning path." role="presentation"></img>
 
-    [AZ-104: Prerequisites for Azure administrators](/learn/paths/az-104-administrator-prerequisites/)
+    [AZ-104: Prerequisites for Azure administrators](/training/paths/az-104-administrator-prerequisites/)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/az-104-manage-identities-governance.svg" width="101" height="84" alt="The trophy for the AZ-104 Manage identities and governance in Azure learning path." role="presentation"></img>
+    <img src="/training/achievements/az-104-manage-identities-governance.svg" width="101" height="84" alt="The trophy for the AZ-104 Manage identities and governance in Azure learning path." role="presentation"></img>
 
-    [AZ-104: Manage identities and governance in Azure](/learn/paths/az-104-manage-identities-governance/)
+    [AZ-104: Manage identities and governance in Azure](/training/paths/az-104-manage-identities-governance/)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/az-104-manage-storage.svg" width="113" height="84" alt="The trophy for the AZ-104 Implement and manage storage in Azure learning path." role="presentation"></img>
+    <img src="/training/achievements/az-104-manage-storage.svg" width="113" height="84" alt="The trophy for the AZ-104 Implement and manage storage in Azure learning path." role="presentation"></img>
 
     AZ-104: Implement and manage storage in Azure
   :::column-end:::
@@ -36,43 +40,37 @@ summary: |
 
   :::row:::
   :::column:::
-    <img src="/learn/achievements/az-104-manage-compute-resources.svg" width="101" height="84" alt="The trophy for the AZ-104 Deploy and manage Azure compute resources learning path." role="presentation"></img>
+    <img src="/training/achievements/az-104-manage-compute-resources.svg" width="101" height="84" alt="The trophy for the AZ-104 Deploy and manage Azure compute resources learning path." role="presentation"></img>
 
-    [AZ-104: Deploy and manage Azure compute resources](/learn/paths/az-104-manage-compute-resources/)
+    [AZ-104: Deploy and manage Azure compute resources](/training/paths/az-104-manage-compute-resources/)
 
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/az-104-manage-virtual-networks.svg" width="101" height="84" alt="The trophy for the AZ-104 Configure and manage virtual networks for Azure administrators learning path." role="presentation"></img>
+    <img src="/training/achievements/az-104-manage-virtual-networks.svg" width="101" height="84" alt="The trophy for the AZ-104 Configure and manage virtual networks for Azure administrators learning path." role="presentation"></img>
 
-    [AZ-104: Configure and manage virtual networks for Azure administrators](/learn/paths/az-104-manage-virtual-networks/)
+    [AZ-104: Configure and manage virtual networks for Azure administrators](/training/paths/az-104-manage-virtual-networks/)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/az-104-monitor-backup-resources.svg" width="101" height="84" alt="The trophy for the AZ-104 Monitor and back up Azure resources learning path." role="presentation"></img>
+    <img src="/training/achievements/az-104-monitor-backup-resources.svg" width="101" height="84" alt="The trophy for the AZ-104 Monitor and back up Azure resources learning path." role="presentation"></img>
 
-    [AZ-104: Monitor and back up Azure resources](/learn/paths/az-104-monitor-backup-resources/)
+    [AZ-104: Monitor and back up Azure resources](/training/paths/az-104-monitor-backup-resources/)
   :::column-end:::
   :::row-end:::
-prerequisites:   | 
-  - [Azure Fundamentals Part 1: Describe core Azure concepts](../az-900-describe-cloud-concepts/index.yml)
-  - [Azure Fundamentals Part 2: Describe core Azure services](../az-900-describe-core-azure-services/index.yml)
-  - [Azure Fundamentals Part 3: Describe core solutions and management tools on Azure](../az-900-describe-core-solutions-management-tools-azure/index.yml)
-  - [Azure Fundamentals Part 4: Describe general security and network security features](../az-900-describe-general-security-network-security-features/index.yml)
-  - [Azure Fundamentals Part 5: Describe identity, governance, privacy, and compliance features](../az-900-describe-identity-governance-privacy-compliance-features/index.yml)
-  - [Azure Fundamentals Part 6: Describe Azure cost management and service level agreements](../az-900-describe-azure-cost-management-service-level-agreements/index.yml)
-  - [AZ-104: Prerequisites for Azure administrators](../az-104-administrator-prerequisites/index.yml)
-iconUrl: /learn/achievements/az-104-manage-storage.svg
+iconUrl: /training/achievements/az-104-manage-storage.svg
 levels:
 - beginner
 roles:
 - administrator
 products:
 - azure
+- azure-blob-storage
+- azure-files
 - azure-storage
 - azure-storage-accounts
 - azure-storage-explorer
-- azure-blob-storage
-- azure-files
 - azure-virtual-machines
+subjects:
+- storage
 modules:
 - learn.wwl.configure-storage-accounts
 - learn.wwl.configure-blob-storage

@@ -8,7 +8,7 @@ This unit examines design considerations and recommendations related to IAM in a
 
 Enterprise organizations typically follow a least-privileged approach to operational access. This model should be considered for Azure through the Azure Active Directory (Azure AD) role-based access control (RBAC) and custom role definitions. It's critical to plan how to govern control-plane and data-plane access to resources in Azure. Any design for IAM and RBAC must meet regulatory, security, and operational requirements before it can be accepted.
 
-Identity and access management is a multistep process that involves careful planning for identity integration and other security considerations, such as blocking legacy authentication and planning for modern passwords. Staging planning also involves the selection of business-to-business or business-to-consumer identity and access management. While these requirements vary, there are common design considerations and recommendations to consider for an enterprise landing zone.
+Identity and access management is a multistep process that involves careful planning for identity integration and other security considerations, such as blocking legacy authentication and planning for modern passwords. Staging planning also involves the selection of business-to-business or business-to-consumer identity and access management. While these requirements vary, there are common design considerations and recommendations to consider for an Azure landing zone.
 
 :::image type="content" source="../media/3-identity-access-management.png" alt-text="Diagram that shows identity and access management." lightbox="../media/3-identity-access-management-large.png":::
 
@@ -44,11 +44,9 @@ When you plan for role-based access, use custom RBAC role definitions within the
     "Description": "Used for platform-wide global connectivity management of network resources.",
     "Actions": [
       "*/read",
-      "Microsoft.Authorization/*/write",
-      "Microsoft.Network/vpnGateways/*",
-      "Microsoft.Network/expressRouteCircuits/*",
-      "Microsoft.Network/routeTables/write",
-      "Microsoft.Network/vpnSites/*"
+      "Microsoft.Network/*",
+      "Microsoft.Resources/deployments/*",
+      "Microsoft.Support/*",
     ],
     "NotActions": [],
     "DataActions": [],

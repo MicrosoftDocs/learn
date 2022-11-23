@@ -17,7 +17,7 @@ abstract: |
   - Learn how to create speech commands
   - Learn how to control speech commands globally and locally
 
-iconUrl: /learn/achievements/using-eyetracking-and-voice-commands-mrtk.svg
+iconUrl: /training/achievements/using-eyetracking-and-voice-commands-mrtk.svg
 levels:
 - beginner
 roles:
@@ -34,12 +34,14 @@ prerequisites: |
   - Windows 10 SDK 10.0.18362.0 or later
   - (Optional) A HoloLens 2 device configured for development
   - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
-  - [Set up a mixed reality project in Unity module](/learn/modules/mixed-reality-toolkit-project-unity)
+  - [Set up a mixed reality project in Unity module](/training/modules/mixed-reality-toolkit-project-unity)
   - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
   - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
 
 
-units: 
+subjects:
+- mixed-reality
+units:
 - learn.azure.use-eye-tracking-voice-commands-mrtk.6-1-introduction
 - learn.azure.use-eye-tracking-voice-commands-mrtk.6-2-eye-tracking
 - learn.azure.use-eye-tracking-voice-commands-mrtk.6-3-exercise-eye-tracking

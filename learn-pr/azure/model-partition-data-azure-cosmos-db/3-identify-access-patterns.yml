@@ -5,8 +5,9 @@ metadata:
   title: Identify access patterns for your app
   description: We need to understand the relationships between the data as well as how data will be accessed. The access patterns are important because they, along with the relationships, will determine how and where data is stored in Azure Cosmos DB.
   ms.date: 6/14/2021 
-  author: markjbrown 
-  ms.author: mjbrown 
+  author: seesharprun 
+  ms.author: sidandrews 
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 03

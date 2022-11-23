@@ -1,58 +1,37 @@
-In this module, you’ve learned how to design a data storage solution for databases. You should now be able to:
-
-- Design for Azure SQL Database 
-
-- Design for Azure SQL Managed Instance 
-
-- Design for SQL Server on Azure VM
-
-- Recommend a solution for Database Scalability
-
-- Design encryption for data at rest, data in transmission, and data in use
-
-- Design for Azure SQL Edge 
-
-- Design for Azure table storage.
-
-- Design for Azure Cosmos DB. 
-
- 
+In this module, you learned how to design a cost efficient database solution that provides low latency, high availability, and scalability. You examined options for moving relational data workloads to the cloud. You explored scenarios for using Azure SQL Database, Azure SQL Managed Instance, and SQL Server on Azure Virtual Machines. You reviewed how to work with data in Azure SQL Edge, Azure Cosmos DB, and Azure Table Storage. You discovered how to protect data at rest, data in transmission, and data in use by using different security and encryption methods. 
 
 ## Learn more with Azure documentation
 
-- [SQL Server on Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines/sql-server/).
+- Explore [SQL Server on Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines/sql-server/).
 
-- [Azure SQL Managed Instance](https://azure.microsoft.com/products/azure-sql/managed-instance/).
+- Explore [Azure SQL Managed Instance](https://azure.microsoft.com/products/azure-sql/managed-instance/).
 
-- [Azure SQL Database](https://azure.microsoft.com/products/azure-sql/database/).
+- Explore [Azure SQL Database](https://azure.microsoft.com/products/azure-sql/database/).
 
-- [Elastic pools help you manage and scale multiple databases in Azure SQL Database](/azure/azure-sql/database/elastic-pool-overview).
+- Read about [Azure Cosmos DB](/azure/cosmos-db/introduction).
 
-- [Azure SQL Database serverless](/azure/azure-sql/database/serverless-tier-overview).
+- Review [FAQ about the Table API in Azure Cosmos DB](/azure/cosmos-db/table/table-api-faq).
 
-- [Building scalable cloud databases](/azure/azure-sql/database/elastic-database-client-library).
+- Discover [Azure SQL Database serverless](/azure/azure-sql/database/serverless-tier-overview).
 
-- [Scaling out with Azure SQL Database](/azure/azure-sql/database/elastic-scale-introduction).
+- Build [scalable cloud databases](/azure/azure-sql/database/elastic-database-client-library).
 
-- [Introduction to Azure Cosmos DB | Microsoft Docs](/azure/cosmos-db/introduction)
+- Scale out with [Azure SQL Database](/azure/azure-sql/database/elastic-scale-introduction).
 
-- [Frequently asked questions about the Table API in Azure Cosmos DB | Microsoft Docs](/azure/cosmos-db/table/table-api-faq) 
-
-
- 
+- Use [elastic pools to manage and scale multiple databases in Azure SQL Database](/azure/azure-sql/database/elastic-pool-overview).
 
 ## Learn more with self-paced training
 
-- [Introduction to securing data at rest on Azure - Learn | Microsoft Docs](/learn/modules/secure-data-at-rest/)
+- Secure [data at rest on Azure](/training/modules/secure-data-at-rest/).
 
-- [Choose the appropriate API for Azure Cosmos DB - Learn | Microsoft Docs](/learn/modules/choose-api-for-cosmos-db/)
+- Work with [Azure Cosmos DB](/training/modules/work-with-cosmos-db/).
 
-- [Explore Azure database and analytics services - Learn](/learn/modules/azure-database-fundamentals/)
+- Explore [Azure database and analytics services](/training/modules/azure-database-fundamentals/).
 
-- [Explore provisioning and deploying relational database services in Azure - Learn](/learn/modules/explore-provision-deploy-relational-database-offerings-azure/)
+- Explore [relational database services in Azure](/training/modules/explore-provision-deploy-relational-database-offerings-azure/).
 
-- [Introduction to Azure SQL Edge - Learn](/learn/modules/intro-to-azure-sql-edge/)
+- Get an [introduction to Azure SQL Edge](/training/modules/intro-to-azure-sql-edge/).
 
 ## Learn more with optional hands-on exercises
 
-- [Create a SQL database](/learn/modules/azure-database-fundamentals/exercise-create-sql-database)
+- Create and query a [SQL database in Azure (sandbox)](/training/modules/azure-database-fundamentals/exercise-create-sql-database).

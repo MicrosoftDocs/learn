@@ -31,6 +31,7 @@ var appServiceAppName = '${environmentName}-${solutionName}-app'
 resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
   name: appServicePlanName
   location: location
+  properties: {}
   sku: {
     name: appServicePlanSku.name
     tier: appServicePlanSku.tier

@@ -4,7 +4,7 @@ In this unit, you'll learn several valid ways to include variable values in text
 
 ## Percent sign (`%`) formatting
 
-The placeholder is `%s,` and the variable is passed onto the text after the `%` character outside the string. Here is how to format by using the `%` character:
+The placeholder is `%s,` and the variable is passed onto the text after the `%` character outside the string. Here's how to format by using the `%` character:
 
 ```python
 >>> mass_percentage = "1/6"
@@ -81,6 +81,6 @@ Using an expression doesn't require a function call. Any of the string methods a
 
 ```python
 >>> subject = "interesting facts about the moon"
->>> f"{subject.title()}
+>>> f"{subject.title()}"
 'Interesting Facts About The Moon'
 ```

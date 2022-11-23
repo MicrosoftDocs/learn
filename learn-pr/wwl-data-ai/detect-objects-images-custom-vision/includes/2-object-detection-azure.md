@@ -31,7 +31,7 @@ Model training process is an iterative process in which the Custom Vision servic
 
 - **Precision**: What percentage of class predictions did the model correctly identify? For example, if the model predicted that 10 images are oranges, of which eight were actually oranges, then the precision is 0.8 (80%).
 - **Recall**: What percentage of the class predictions made by the model were correct? For example, if there are 10 images of apples, and the model found 7 of them, then the recall is 0.7 (70%).
-- **Mean Average Precision (mAP)**: An overall metric that takes into account both precision and recall across all classes).
+- **Mean Average Precision (mAP)**: An overall metric that takes into account both precision and recall across all classes.
 
 ## Using the model for prediction
 

@@ -16,13 +16,13 @@ If you look at the Dockerfile in the root of the fork you created, you see that 
 You can build an image from a Dockerfile by using the `docker build` command.
 
 > [!IMPORTANT]
-> The `build` command for Docker will not work within CloudShell environment since the use of Docker inside a running container is disallowed as explained in [this doc](/azure/cloud-shell/troubleshooting#bash-troubleshooting). If you want to test the `docker build .` command you'll need to clone the repository locally and run using your own Docker installation.
+> The `build` command for Docker will not work within the CloudShell environment because the use of Docker inside a running container is disallowed as explained in [this doc](/azure/cloud-shell/troubleshooting#bash-troubleshooting). If you want to test the `docker build .` command, clone the repository locally and run the command by using your own Docker installation.
 
 ## Image tags
 
 Tags are an important aspect of working with container images. Tags tell you what type of image you're dealing with. A tag can differentiate images, even if multiple images have the same name.
 
-To build a container image, you use the same technique that you use to create a GitHub repository. Like a GitHub repository, Docker container paths usually are something like *repository/image-name*. But images go a step further. You can have multiple versions of the same image and use tags to distinguish them.
+To build a container image, you use the same technique that you use to create a GitHub repository. Like a GitHub repository, Docker container paths are usually something like *repository/image-name*. But images go a step further. You can have multiple versions of the same image and use tags to distinguish them.
 
 For example, consider the Node.js image in the repository's directory. If you want to start from Node 12, you'd include the tag `FROM node:12` in the Dockerfile. If you want to start from the latest stable version, you can use the tag `FROM node:current`. Tags tell you what type of image you're using and what to expect it to do.
 

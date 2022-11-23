@@ -2,7 +2,7 @@ Much of Contoso's data is generated or consumed by custom applications. The appl
 
 Azure Storage accounts can create authorized apps in Active Directory to control access to the data in blobs and queues. This authentication approach is the best solution for apps that use Blob storage or Queue storage.
 
-For other storage models, clients can use a _shared key_, or shared secret. This authentication option is one of the easiest to use, and it supports blobs, files, queues, and tables. The client embeds the shared key in the HTTP `Authorization` header of every request, and the Storage account validates the key.
+For other storage models, clients can use a *shared key*, or shared secret. This authentication option is one of the easiest to use, and it supports blobs, files, queues, and tables. The client embeds the shared key in the HTTP `Authorization` header of every request, and the Storage account validates the key.
 
 For example, an application can issue a `GET` request against a blob resource:
 
@@ -22,7 +22,7 @@ Authorization: SharedKey myaccount:CY1OP3O3jGFpYFbTCBimLn0Xov0vt0khH/E5Gy0fXvg=
 
 ## Storage account keys
 
-In Azure Storage accounts, shared keys are called *storage account keys*. Azure creates two of these keys (primary and secondary) for each storage account you create. The keys give access to _everything_ in the account.
+In Azure Storage accounts, shared keys are called *storage account keys*. Azure creates two of these keys (primary and secondary) for each storage account you create. The keys allow access to *everything* in the account.
 
 You'll find the storage account keys in the Azure portal view of the storage account. In the left menu pane of your storage account, select **Security + networking** > **Access keys**.
 
@@ -44,4 +44,4 @@ To refresh keys:
 - Refresh the primary key in the Azure portal. This will be the new secondary key value.
 
 > [!IMPORTANT]
-> After you refresh keys, any client that attempts to use the old key value will be refused. Make sure you identify all clients that use the shared key, and update them to keep them operational.
+> After you refresh keys, any client that attempts to use the old key value will be refused. Make sure you identify all clients that use the shared key and update them to keep them operational.

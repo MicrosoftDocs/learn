@@ -24,7 +24,7 @@ prerequisites: |
     - Monitoring
 summary: |
   After completing this learning path, you’ll know how to implement identity in Azure. You’ll be able to extend an existing on-premises Active Directory identity service into Azure.
-iconUrl: /learn/achievements/implement-windows-server-iaas-vm-identity.svg
+iconUrl: /training/achievements/implement-windows-server-iaas-vm-identity.svg
 levels:
 - intermediate
 roles:
@@ -37,6 +37,9 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- identity-access
+- virtual-machine
 modules:
 - learn.wwl.implement-hybrid-identity-with-windows-server
 - learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure

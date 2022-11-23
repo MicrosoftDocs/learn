@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-background-jobs-use-windows-powershell.define-types-of-background-jobs
+title: Define the types of background jobs in Windows PowerShell
+metadata:
+  title: Define the types of background jobs in Windows PowerShell
+  description: "Define the types of background jobs in Windows PowerShell"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-define-types-of-background-jobs.md)]

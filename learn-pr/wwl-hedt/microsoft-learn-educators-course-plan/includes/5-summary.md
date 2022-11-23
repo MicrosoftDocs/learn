@@ -10,4 +10,4 @@ Supplemental Resources:
 
 - [Microsoft Learn Catalog LTI Provider](https://aka.ms/MSLTI) 
 
-- [Best practices for Microsoft Learn LMS integration with University of Oxford, 9th March Webinar - Microsoft Tech Community ](https://techcommunity.microsoft.com/t5/educator-developer-blog/best-practices-for-microsoft-learn-lms-integration-with/ba-p/2179561)
+- [Best practices for Microsoft Learn LMS integration with University of Oxford, 9th March Webinar](https://techcommunity.microsoft.com/t5/educator-developer-blog/best-practices-for-microsoft-learn-lms-integration-with/ba-p/2179561)

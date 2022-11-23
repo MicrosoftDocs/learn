@@ -1,13 +1,11 @@
 To detect and analyze faces with the Computer Vision service, call the **Analyze Image** REST function (or equivalent SDK method), specifying **Faces** as one of the visual features to be returned.
 
-In images that contain one or more faces, the response includes details of their location in the image and the predicted age and gender of the detected person, like this:
+In images that contain one or more faces, the response includes details of their location in the image and the attributes of the detected person, like this:
 
 ```JSON
 {
   "faces": [
       {
-        "age": 32,
-        "gender": "Female",
         "faceRectangle": {
           "top": 225,
           "left": 237,
@@ -16,8 +14,6 @@ In images that contain one or more faces, the response includes details of their
         }
       },
       {
-        "age": 29,
-        "gender": "Female",
         "faceRectangle": {
           "top": 309,
           "left": 534,
@@ -28,3 +24,8 @@ In images that contain one or more faces, the response includes details of their
   ]
 }
 ```
+
+For more information on the Computer Vision endpoint, see the [Computer Vision REST API reference page](/rest/api/computer-vision/)
+
+> [!NOTE]
+> Computer Vision previously included age and gender prediction, however that has been removed as a safeguard for responsible use. You can read more about our [Responsible AI Investments here](https://azure.microsoft.com/blog/responsible-ai-investments-and-safeguards-for-facial-recognition/).

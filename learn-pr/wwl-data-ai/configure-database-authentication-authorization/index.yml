@@ -21,13 +21,15 @@ prerequisites: |
   - Understanding of why security is a crucial part of database system planning
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level
   - Experience creating and configuring resources using the Azure portal
-iconUrl: /learn/achievements/configure-database-authentication-and-authorization.svg
+iconUrl: /training/achievements/configure-database-authentication-and-authorization.svg
 levels:
 - intermediate
 roles:
 - administrator
 products:
 - azure
+subjects:
+- database
 units:
 - learn.wwl.configure-database-authentication-authorization.introduction
 - learn.wwl.configure-database-authentication-authorization.describe-active-directory-azure-active-directory

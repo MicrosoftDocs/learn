@@ -1,8 +1,8 @@
 This module provided the choices and considerations that are needed to set up the Microsoft Intune endpoint management solution. 
 
-In this module, you accomplished the following actions:
+In this module, you:
 
-- Reviewed the supported configurations, which include the supported operating systems, browsers, and network
+- Reviewed the supported Microsoft Intune configurations, which include the supported operating systems, browsers, and network
 - Signed up for the Microsoft Intune trial
 - Configured the Intune tenant domain name
 - Added users to Intune
@@ -14,7 +14,7 @@ In this module, you accomplished the following actions:
 ## Next steps
 
 To learn more about Microsoft Endpoint Manager, continue to the next learning module in this series:
-- [Set up tenant attach using Microsoft Endpoint Configuration Manager](/learn/modules/setup-tenant-attach-using-configuration-manager/)
+- [Set up tenant attach using Microsoft Endpoint Configuration Manager](/training/modules/setup-tenant-attach-using-configuration-manager/)
 
 To evaluate Microsoft Intune and the Microsoft technologies available with Microsoft's Enterprise Mobility + Security (EMS), continue with the free trial:
 - [Get a free trial, evaluate Enterprise Mobility + Security (EMS)](https://go.microsoft.com/fwlink/?linkid=845167)

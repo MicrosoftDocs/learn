@@ -2,7 +2,7 @@ This unit covers protection and recovery of storage accounts forAzure Storage ac
 
 This section covers the overall structure of the solution and major parts.
 
-### Application layer<br>
+### Application layer
 
 Data can be replicated between storage accounts on separate Azure Stack Hub scale units. Replication is done issuing multiple `PUT Blob` or `Put Block` operations to write objects to multiple locations. Alternatively, the application can issue the `Copy Blob` operation to copy the Blob to a storage account hosted on a separate scale unit after the Put operation to the primary account completes.
 
@@ -30,7 +30,7 @@ Run `AzCopy` to store data when copying from your source and then writing to you
 
 2.  Create and record SAS Tokens for the source and target storage accounts.
 
-3.  Install **`AzCopy`** on the intermediary server and set the API Version to account for Azure Stack Hub Storage Accounts.
+3.  Install `AzCopy` on the intermediary server and set the API Version to account for Azure Stack Hub Storage Accounts.
 
 **For Windows Server:**
 
@@ -70,7 +70,7 @@ The RPO you can achieve with this solution will be determined by the /MO paramet
 
 ## Use your storage account in a disaster
 
-Each Azure Stack Hub Storage account possesses a unique DNS name derived from the name of the Azure Stack Hub region itself, for example, https://krsource.blob.east.asicdc.com/. Applications writing to and reading from this DNS Name will need to accommodate the storage account DNS name change when the target account, for example, `https://krtarget.blob.west.asicdc.com/` needs to be used during a disaster.
+Each Azure Stack Hub Storage account possesses a unique DNS name derived from the name of the Azure Stack Hub region itself, for example, `https://krsource.blob.east.asicdc.com/`. Applications writing to and reading from this DNS Name will need to accommodate the storage account DNS name change when the target account, for example, `https://krtarget.blob.west.asicdc.com/` needs to be used during a disaster.
 
 Application connection strings can be modified after a disaster is declared to account for the relocation of the objects or, if a CNAME record is used in front of a load balancer front-ending the source and target storage accounts, the load balancer can be configured with a manual failover algorithm that will allow the administrator to declare the target.
 

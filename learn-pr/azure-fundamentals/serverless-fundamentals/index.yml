@@ -17,7 +17,7 @@ prerequisites: |
   - An understanding of the concepts of orchestration, workflows, and application programming interfaces (API)
   - High-level familiarity with relevant Microsoft products such as Dynamics 365 and Office 365
 ratingEnabled: true
-iconUrl: /learn/achievements/serverless-fundamentals.svg
+iconUrl: /training/achievements/serverless-fundamentals.svg
 levels:
 - beginner
 roles:
@@ -30,6 +30,8 @@ products:
 - azure
 - azure-functions
 - azure-logic-apps
+subjects:
+- cloud-computing
 units:
 - learn.azure.serverless-fundamentals.introduction
 - learn.azure.serverless-fundamentals.identify-product-options

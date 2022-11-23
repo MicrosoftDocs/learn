@@ -22,13 +22,15 @@ abstract: |
   * Review the compute considerations for planning SAP HANA on Azure Large Instances.
 prerequisites: |
   Prior to taking this course, it is recommended that you have taken the Azure Administrator (AZ-103) exam, as well as SAP HANA or NetWeaver training.
-iconUrl: /learn/achievements/utilizing-azure-sap-workloads-reference-architecture.svg
+iconUrl: /training/achievements/utilizing-azure-sap-workloads-reference-architecture.svg
 levels:
 - advanced
 roles:
 - administrator
 products:
 - azure
+subjects:
+- architecture
 units:
 - learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.introduction
 - learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.configuring-sap-netweaver-anydb-azure-vms

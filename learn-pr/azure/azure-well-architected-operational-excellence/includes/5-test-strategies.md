@@ -2,7 +2,7 @@ Testing is one of the fundamental components of DevOps and agile development in 
 
 A main tenet of a DevOps practice to achieve system reliability is the *shift left* principle. If your process for developing and deploying an application is depicted as a series of steps that are listed from left to right, your testing should be shifted as much as possible toward the beginning of your process (e.g. to the left), and not just at the very end of your process (e.g. to the right). Errors are far cheaper to repair when they're caught early, and issues can be expensive or impossible to fix later in your application's lifecycle.
 
-Testing should occur on both application code and infrastructure code, and they should both be subject to the same quality controls. The environment where applications are running should be version-controlled, and deployed through the same mechanisms as application code. As a result, you can test and validate both application code and infrastructure code using DevOps testing paradigms.
+Testing should occur on both application code and infrastructure code, and they should both be subject to the same quality controls. The environment where applications are running should be version-controlled and deployed through the same mechanisms as application code. As a result, you can test and validate both application code and infrastructure code using DevOps testing paradigms.
 
 You can use your favorite testing tool to run your tests, including Azure Pipelines for automated testing and Azure Testing Plans for manual testing.
 
@@ -14,7 +14,7 @@ Automating tests is the best way to make sure that they're executed. Depending o
 
 ### Unit Testing
 
-Unit tests are tests typically run by each new version of code that's committed into your version-control system. Unit Tests should be extensive (they should ideally cover 100% of the code), and quick (typically under 30 seconds, although this number isn't a rule set in stone). Unit testing could verify things like the syntax correctness of application code, Resource Manager templates or Terraform configurations, that the code is following best practices, or that the code produces the expected results when provided certain inputs.
+Unit tests are tests typically run by each new version of code that's committed into your version-control system. Unit tests should be extensive (they should ideally cover 100% of the code), and quick (typically under 30 seconds, although this number isn't a rule set in stone). Unit testing could verify things like the syntax correctness of application code, Resource Manager templates or Terraform configurations, that the code is following best practices, or that the code produces the expected results when provided certain inputs.
 
 Unit tests should be applied both to application code and infrastructure code.
 
@@ -22,7 +22,7 @@ Unit tests should be applied both to application code and infrastructure code.
 
 Smoke tests are more exhaustive than unit tests, but still not as much as integration tests. Smoke tests normally run in less than 15 minutes. While smoke tests don't verify the interoperability of your different components with each other, they verify that each component can be correctly built, and each component meets your criteria for expected functionality and performance.
 
-Smoke tests usually involve building the application code, and if you're deploying infrastructure as part of your process, then possibly testing the deployment in a test environment.
+Smoke tests usually involve building the application code. If you're deploying infrastructure as part of your process, then smoke tests can possibly involve testing the deployment in a test environment.
 
 ### Integration Testing
 
@@ -44,7 +44,7 @@ There are many different ways of confirming that the application is doing what i
 
 An important aspect to consider is how to measure the effectiveness of new features in an application. One way to measure that is through the Application Insights User Behavior Analytic, which you can use to determine how people are using your application. By analyzing the results, you can decide whether a new feature has increased or decreased your application's usability.
 
-Certain services in Azure offer functionality that can help you implement these kind of tests. For example: the deployment slot functionality in the Azure App Service allows you to have two different versions of the same application running at the same time, and you can redirect your users to one version or the other.
+Certain services in Azure offer functionality that can help you implement these kinds of tests. For example: the deployment slot functionality in the Azure App Service allows you to have two different versions of the same application running at the same time, and you can redirect your users to one version or the other.
 
 ### Stress tests
 
@@ -62,6 +62,6 @@ Most companies use a controlled way of injecting faults into the system, althoug
 
 ### Security tests
 
-Another critical component of your test strategy should be routine testing of your application for security vulnerabilities. You should regularly perform security tests against your application to identify any application vulnerabilities that are introduced through code defects or through software dependencies. These tests can include automated security scans to test against common vulnerabilities, such as cross-site scripting or SQL injection. Your security tests can also include *red team* exercises, where security teams attempt to compromise your application.
+Another critical component of your test strategy should be routinely testing your application for security vulnerabilities. You should regularly perform security tests against your application to identify any application vulnerabilities that are introduced through code defects or through software dependencies. These tests can include automated security scans to test against common vulnerabilities, such as cross-site scripting or SQL injection. Your security tests can also include *red team* exercises, where security teams attempt to compromise your application.
 
 Use the results from these tests to provide feedback through your entire development process and resolve any security issues that you find in your code or software dependencies.

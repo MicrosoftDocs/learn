@@ -6,8 +6,8 @@ metadata:
   title: Manage a template spec
   description: Learn how to update template specs safely by using versions, and how to control access.
   ms.date: 09/30/2021
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: arm-template-language-azure-shell-interface

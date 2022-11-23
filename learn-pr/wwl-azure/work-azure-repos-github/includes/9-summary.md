@@ -1,10 +1,9 @@
-This module-introduced Azure Repos and GitHub tools and ways to link Azure Boards and GitHub. Also, how to migrate from Team Foundation Version Control (TFVC) to Git and work with GitHub Codespaces for development.
+This module introduced Azure Repos and GitHub and explored ways to migrate from TFVC to Git and work with GitHub Codespaces for development.
 
 You learned how to describe the benefits and usage of:
 
- -  Work with Azure Repos and GitHub.
- -  Link Azure Boards and GitHub.
- -  Plan and migrate from TFVC to Git.
+ -  Describe Azure Repos and GitHub.
+ -  Migrate from TFVC to Git.
  -  Work with GitHub Codespaces.
 
 ## Learn more

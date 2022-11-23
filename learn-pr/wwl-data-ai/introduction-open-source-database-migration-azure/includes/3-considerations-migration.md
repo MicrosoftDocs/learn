@@ -194,8 +194,7 @@ For a database migration project, you have to make sure that users are authorize
     GRANT USAGE ON *.* TO 'dbadmin'@'cloud-host'
     ```
 
-> [!IMPORTANT]
-> Neither Azure Database for MySQL, Azure Database for MariaDB, nor Azure Database for PostgreSQL currently support user accounts in Azure Active Directory. If you're using Active Directory to store user accounts on-premises, you must migrate those user accounts to another store in the cloud.
+
 
 ### Encryption
 

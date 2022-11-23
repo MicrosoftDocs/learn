@@ -3,7 +3,7 @@ uid: learn.wwl.monitor-troubleshoot-adt
 metadata:
   title: Monitor and troubleshoot ADT
   description: "This module introduces you to the Azure services and tools that can be used to monitor and troubleshoot an Azure Digital Twins solution."
-  ms.date: 02/24/2022
+  ms.date: 07/14/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ prerequisites: |
   - Describe Azure Event Grid and Azure Function integration within an IoT solution.
   - Describe the components of an Azure Digital Twins solution and how to build an Azure Digital Twins graph using models and digital twins.
   - Describe how to integrate upstream and downstream services within your Azure Digital Twins solution.
-iconUrl: /learn/achievements/adt-monitor-troubleshoot.svg
+iconUrl: /training/achievements/adt-monitor-troubleshoot.svg
 levels:
 - intermediate
 roles:
@@ -32,6 +32,8 @@ products:
 - azure-digital-twins
 - azure-monitor
 - azure-portal
+subjects:
+- iot
 units:
 - learn.wwl.monitor-troubleshoot-adt.introduction
 - learn.wwl.monitor-troubleshoot-adt.examine-azure-digital-twins-metrics

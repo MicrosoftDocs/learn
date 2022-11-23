@@ -54,5 +54,4 @@ To add registry entries on both cluster nodes of the SAP ASCS/SCS instance, firs
   :::column-end:::
 :::row-end:::
 
-
 To apply the changes, restart both cluster nodes.

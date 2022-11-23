@@ -74,7 +74,7 @@ In this exercise, you'll explore a Microsoft Sentinel analytics rule and perform
 
 1. On the **Analytics** pane, select **Rule templates** tab.
 
-1. In the search field, enter **Create incidents based on security alerts** and then select that rule template.
+1. In the search field, enter **Create incidents based on Microsoft Defender for Cloud** and then select that rule template.
 
 1. In the details pane, select **Create rule**.
 
@@ -94,7 +94,7 @@ In this exercise, you'll explore a Microsoft Sentinel analytics rule and perform
 
 After completing this exercise, you'll have created an incident rule from an existing template and created a scheduled query rule using your own query code.
 
-After you finished with the exercise you should delete resources to avoid incurring costs.
+After you've finished with the exercise, you should delete resources to avoid incurring costs.
 
 ### Clean up the resources
 

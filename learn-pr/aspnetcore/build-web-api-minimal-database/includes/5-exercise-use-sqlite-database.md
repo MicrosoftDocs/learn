@@ -8,75 +8,68 @@ Complete the following sections to set up the SQLite database.
 
 ### Install the following tools and packages
 
-Use the .NET CLI and Visual Studio package manager UI to install the following packages:
+In the terminal, install the following packages:
 
-   * [SQLite EF Core Database Provider](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Sqlite/6.0.0?azure-portal=true): Can access many different databases through plug-in libraries called [database providers](/ef/core/providers/?tabs=dotnet-core-cli?azure-portal=true). The following package is the SQLite database provider for Entity Framework (EF) Core.
+1. [SQLite EF Core Database Provider](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Sqlite/6.0.0?azure-portal=true): Can access many different databases through plug-in libraries called [database providers](/ef/core/providers/?tabs=dotnet-core-cli?azure-portal=true). The following package is the SQLite database provider for Entity Framework (EF) Core.
 
-       ```console
-       dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 6.0
-       ```
+    ```dotnetcli
+    dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 6.0
+    ```
 
-   * [EF Core tools](/ef/core/cli/dotnet?azure-portal=true): Tools for EF Core perform design-time development tasks. For example, they create migrations, apply migrations, and generate code for a model based on an existing database.
+1. [EF Core tools](/ef/core/cli/dotnet?azure-portal=true): Tools for EF Core perform design-time development tasks. For example, they create migrations, apply migrations, and generate code for a model based on an existing database.
 
-       ```console
-       dotnet tool install --global dotnet-ef
-       ```
+    ```dotnetcli
+    dotnet tool install --global dotnet-ef
+    ```
 
-   * [Microsoft.EntityFrameworkCore.Design](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/6.0.0?azure-portal=true): Contains all the design-time logic for EF Core to create your database.
+1. [Microsoft.EntityFrameworkCore.Design](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/6.0.0?azure-portal=true): Contains all the design-time logic for EF Core to create your database.
 
-       ```console
-       dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0
-       ```
+    ```dotnetcli
+    dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0
+    ```
 
 ## Enable database creation
 
-To enable database creation, you need to complete two steps:
+To enable database creation, you need to set the database connection string. Then you'll migrate your data model to a SQLite database.
 
-1. Set the database connection string.
-1. Migrate your data model to a SQLite database.
+1. In *Program.cs*, under `var builder = WebApplication.CreateBuilder(args);`, add a connection string.
 
-## Set the database connection string
+    ```csharp
+    var connectionString = builder.Configuration.GetConnectionString("Pizzas") ?? "Data Source=Pizzas.db";
+    ```
 
-In *Program.cs*, under your app builder `var builder = WebApplication.CreateBuilder(args);`, add a connection string.
+    This code checks the configuration provider for a connection string named *Pizzas*. If it doesn't find one, it will use `Data Source=Pizzas.db` as the connection string. SQLite will map this to a file.
 
-```csharp
-var connectionString = builder.Configuration.GetConnectionString("Pizzas") ?? "Data Source=Pizzas.db";
-```
+1. In the CRUD portion of this tutorial, you used an in-memory database. Now you're going to replace the in-memory database with a persistent database.
 
-## Add your context to your services
+    Replace your current in-memory database implementation `builder.Services.AddDbContext<PizzaDb>(options => options.UseInMemoryDatabase("items"));` in your build services with the SQLite one here:
 
-In the CRUD portion of this tutorial, you used an in-memory database. Now you're going to replace the in-memory database with a persistent database.
+    ```csharp
+    builder.Services.AddSqlite<PizzaDb>(connectionString);
+    ```
 
-Replace your current in-memory database implementation `builder.Services.AddDbContext<PizzaDb>(options => options.UseInMemoryDatabase("items"));` in your build services with the SQLite one here:
+1. With the EF Core migration tool, you can now generate your first migration, `InitialCreate`. Save all your changes, and then run the following command:
 
-```csharp
-builder.Services.AddSqlite<PizzaDb>(connectionString);
-```
+    ```console
+    dotnet ef migrations add InitialCreate
+    ```
 
-## Migrate your data model
+    EF Core creates a folder named *Migrations* in your project directory that contains two files with the code that represents the database migrations.
 
-With the EF Core migration tool, you can now start your first migration, `InitialCreate`. In a terminal window, run the `migrations` command:
+1. Now that you've completed the migration, you can use it to create your database and schema.
 
-```console
-   dotnet ef migrations add InitialCreate
-```
+    In a terminal window, run the following `database update` command to apply migrations to a database:
 
-EF Core creates a folder named *Migrations* in your project directory that contains two files with the code that represents the database migrations.
+    ```console
+    dotnet ef database update
+    ```
 
-## Create your database and schema
-
-Now that you've completed the migration, you can use it to create your database and schema.
-
-In a terminal window, run the following `database update` command to apply migrations to a database:
-
-```console
-   dotnet ef database update
-```
-
-You should see a newly created *Pizzas.db* file in your project directory.
+    You should see a newly created *Pizzas.db* file in your project directory.
 
 ## Run and test the application
 
 Now that you have a backing database, your changes will be persisted.
 
-To test your application, run the `dotnet run` command in your terminal window and interact with the API in the Swagger UI. You can stop the application by using the **Ctrl+C** command. Use **Cmd+C** on macOS. Then run it again and verify that your changes are still persisted.
+Test your application as before using `dotnet run` and the Swagger UI. Stop the application by using the **Ctrl+C** command. Then run it again and verify that your changes are still persisted in *Pizzas.db*.
+
+Congratulations! You wired a database to your minimal API!

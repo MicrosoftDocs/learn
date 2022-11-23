@@ -6,8 +6,8 @@ metadata:
   title: Understand Azure resources
   description: Learn about Azure resource types and resource IDs.
   ms.date: 01/23/2022
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
 durationInMinutes: 3

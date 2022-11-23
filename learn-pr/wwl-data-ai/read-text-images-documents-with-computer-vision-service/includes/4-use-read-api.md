@@ -2,7 +2,7 @@ To use the Read API, call the **Read** REST function (or equivalent SDK method),
 
 The Read function returns an operation ID, which you can use in a subsequent call to the **Get Read Results** function in order to retrieve details of the text that has been read. Depending on the volume of text, you may need to poll the **Get Read Results** function multiple times before the operation is complete.
 
-The results of from the Read API are similar to the OCR API, except that the text is broken down by *page*, then *line*, and then *word*. Additionally, the text values are included at both the *line* and *word* levels, making it easier to read entire lines of text if you don't need to extract text at the individual *word* level.
+The results of from the Read API are broken down by *page*, then *line*, and then *word*. Additionally, the text values are included at both the *line* and *word* levels, making it easier to read entire lines of text if you don't need to extract text at the individual *word* level.
 
 ```JSON
 {

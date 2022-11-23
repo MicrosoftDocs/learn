@@ -1,4 +1,4 @@
-resource storageAccount 'Microsoft.Storage/storageAccounts@2021-08-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2022-05-01' = {
   name: 'toylaunchstorage'
   location: 'westus3'
   sku: {
@@ -10,7 +10,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2021-08-01' = {
   }
 }
 
-resource appServicePlan 'Microsoft.Web/serverFarms@2021-03-01' = {
+resource appServicePlan 'Microsoft.Web/serverFarms@2022-03-01' = {
   name: 'toy-product-launch-plan-starter'
   location: 'westus3'
   sku: {
@@ -18,7 +18,7 @@ resource appServicePlan 'Microsoft.Web/serverFarms@2021-03-01' = {
   }
 }
 
-resource appServiceApp 'Microsoft.Web/sites@2021-03-01' = {
+resource appServiceApp 'Microsoft.Web/sites@2022-03-01' = {
   name: 'toy-product-launch-1'
   location: 'westus3'
   properties: {

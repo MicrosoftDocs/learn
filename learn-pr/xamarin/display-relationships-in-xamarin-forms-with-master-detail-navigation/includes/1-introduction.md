@@ -1,4 +1,4 @@
-[!include[](../../includes/dotnet-maui-note.md)]
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Building a great application means creating a clear navigation path through your content. Your UI should allow users to quickly switch between related pages or the elements of a collection.
 

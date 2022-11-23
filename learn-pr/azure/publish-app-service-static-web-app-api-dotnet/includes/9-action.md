@@ -10,7 +10,7 @@ The GitHub Action is ready to build and publish your web app and API once it det
 
 ## Pre-production environments with preview URLs
 
-Sometimes you want to see your changes in a staging site before publishing to the live web site. Azure Static Web Apps lets you see your changes through pre-production environments that each have its own preview URL. You can create a pre-production environment by creating a pull request against the branch that your GitHub Action is watching. Your live web site won't be affected. Instead, a new version of your app is created in its own pre-production environment. If you go back and check your pull request on GitHub you'll notice that a link to the pre-production version posted in the Conversation tab.
+Sometimes you want to see your changes in a staging site before publishing to the live web site. Azure Static Web Apps lets you see your changes through pre-production environments that each have their own preview URL. You can create a pre-production environment by creating a pull request against the branch that your GitHub Action is watching. Your live web site won't be affected. Instead, a new version of your app is created in its own pre-production environment. If you go back and check your pull request on GitHub, you'll notice that a link to the pre-production version is posted in the Conversation tab.
 
 The following table shows how Azure Static Web Apps will publish your app to different URLs. Your app publishes to one URL while a pull request to the same branch publishes to another URL. Azure Static Web Apps provides auto-generated URLs for the production app and pull requests. You can optionally assign a custom domain to the production app.
 

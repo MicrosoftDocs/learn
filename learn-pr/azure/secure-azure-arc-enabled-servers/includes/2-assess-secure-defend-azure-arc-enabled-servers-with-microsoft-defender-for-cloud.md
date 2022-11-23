@@ -16,7 +16,7 @@ Defender for Cloud enables you to continuously assess, secure, and defend worklo
 
 Enabling enhanced security extends the capabilities to workloads running in private and other public clouds. Enhanced security provides unified security management and threat protection across your hybrid cloud workloads. Major benefits for enabling enhanced security features with Azure Arc-enabled servers include:
 
-- **Microsoft Defender for Endpoint** - Microsoft Defender for servers is available as an enhanced security features. Microsoft Defender for servers includes Microsoft Defender for Endpoint for comprehensive endpoint detection and response (EDR).  
+- **Microsoft Defender for Endpoint** - Microsoft Defender for servers is available as an enhanced security feature. Microsoft Defender for servers includes Microsoft Defender for Endpoint for comprehensive endpoint detection and response (EDR).  
 - **Vulnerability assessment for virtual machines, container registries, and SQL resources** - Use point and click vulnerability assessment solutions to discover, manage, and resolve vulnerabilities. View, investigate, and remediate the findings directly from within Defender for Cloud. 
 - **Multi-cloud security** - Connect your accounts from Amazon Web Services (AWS) and Google Cloud Platform (GCP) to protect resources and workloads on those platforms.
 - **Hybrid security** – Get a unified view of security across all your on-premises and cloud workloads. Apply security policies and continuously assess the security of your hybrid cloud workloads to ensure compliance with security standards. Collect, search, and analyze security data from multiple sources, including firewalls and other partner solutions. 

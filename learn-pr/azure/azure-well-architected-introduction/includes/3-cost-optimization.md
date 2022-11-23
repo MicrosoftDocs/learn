@@ -1,4 +1,4 @@
-Your organization has moved a majority of its systems to the cloud, but you're now seeing cost increases in areas you didn't expect. After some observation, you realize that you're inefficient across your environment, and you're still doing manual operational work.
+Your organization has moved a majority of its systems to the cloud, but you're now seeing cost increases in areas you didn't expect. After some observation, you realize that you're inefficient across your environment and you're still doing manual operational work.
 
 In this unit, you'll learn about cost optimization. You'll also look at ways to reduce unnecessary expenses and improve operational efficiencies.
 
@@ -8,7 +8,7 @@ Cost optimization is ensuring that the money your organization spends is being u
 
 When an organization decides to own infrastructure, it buys equipment that goes onto the balance sheet as assets. Because a capital investment was made, accountants categorize this transaction as a capital expense (CapEx). Over time, to account for the assets' limited useful lifespan, assets are depreciated or amortized.
 
-Cloud services, on the other hand, are categorized as an operating expense (OpEx), because of their consumption model. Under this scheme, there is no asset to amortize. Instead, OpEx has a direct impact on net profit, taxable income, and the associated expenses on the balance sheet.
+Cloud services, on the other hand, are categorized as an operating expense (OpEx) because of their consumption model. Under this scheme, there's no asset to amortize. Instead, OpEx has a direct impact on net profit, taxable income, and the associated expenses on the balance sheet.
 
 When an organization adopts a cloud platform, it must shift away from CapEx-oriented budgeting toward OpEx. This move reflects the shift from owning infrastructure to leasing solutions. Some organizations can derive value just from this new accounting model. For example, a startup company can attract investors by demonstrating a profitable idea at large scale, without needing a large investment up front to purchase infrastructure.
 
@@ -16,13 +16,13 @@ To optimize costs in your organization's architecture, you can use several princ
 
 ### Plan and estimate costs
 
-For any cloud project, whether it's the development of a new application or the migration of an entire datacenter, it's important to get an estimate of your costs. This estimate involves identifying any current resources to move or redevelop, understanding business objectives that might affect sizing, and selecting the appropriate services for the project. 
+For any cloud project, whether it's the development of a new application or the migration of an entire datacenter, it's important to get an estimate of your costs. This estimate involves identifying any current resources to move or redevelop, understanding business objectives that might affect sizing, and selecting the appropriate services for the project.
 
 With the requirements identified, you can use cost-estimation tools to provide a more concise estimate of the resources that would be required. Transparency is important here, so that all stakeholders can review for accuracy and have visibility into the costs that are associated with the project.
 
 ### Provision with optimization
 
-Provisioning services that are optimized for cost from the outset can reduce your work effort in the future. For example, you should ensure that you're selecting the appropriate service level for your workload, and take advantage of services that let you adjust the service level. You should also use discounts when they're available, such as reserved instances and bring-your-own-license offers.
+Provisioning services that are optimized for cost from the outset can reduce your work effort in the future. For example, you should ensure that you're selecting the appropriate service level for your workload and take advantage of services that let you adjust the service level. You should also use discounts when they're available, such as reserved instances and bring-your-own-license offers.
 
 Where possible, you want to move from IaaS to PaaS services. PaaS services typically cost less than IaaS, and they generally reduce your operational costs.
 
@@ -30,7 +30,7 @@ With PaaS services, you don't have to worry about patching or maintaining VMs, b
 
 ### Use monitoring and analytics to gain cost insights
 
-If you're not monitoring your spending, you don't know what you can save. Take advantage of cost management tools and regularly review billing statements to better understand where money is being spent.
+If you're not monitoring your spending, you don't know what you can save. Take advantage of cost-management tools and regularly review billing statements to better understand where money is being spent.
 
 Take time to conduct regular cost reviews across services to understand if the expenditure is appropriate for the resource requirements of the workload. Adjust expenditures as necessary. Identify and track down any cost anomalies that might show up on billing statements or through alerts. If you notice a large spike in cost associated with network traffic, it might uncover both cost savings and potential technical issues.
 

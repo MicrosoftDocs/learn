@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.explore-design-brain-patterns.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: In this unit, you'll get an introduction to the context of brain design patterns.
+  ms.date: 10/18/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)] 

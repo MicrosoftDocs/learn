@@ -1,6 +1,6 @@
 ## Template references
 
-You can export reusable sections of your pipeline to a separate file. These individual files are known as templates. Azure Pipelines supports four kinds of templates:
+You can export reusable sections of your pipeline to a separate file. These individual files are known as templates.
 
 Azure Pipelines supports four types of templates:
 

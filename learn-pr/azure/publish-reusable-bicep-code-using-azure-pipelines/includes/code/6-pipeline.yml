@@ -52,7 +52,6 @@ stages:
           scriptType: 'bash'
           scriptLocation: 'inlineScript'
           inlineScript: |
-            az bicep install
             az bicep publish \
               --target 'br:$(ModuleRegistryServer)/$(ModuleName):$(ModuleVersion)' \
               --file $(ModuleFilePath)

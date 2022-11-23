@@ -17,7 +17,7 @@ prerequisites: |
   - Window Server software-defined storage
   - Windows Server software-defined networking
   - IoT technologies
-iconUrl: /learn/achievements/azure-stack-hci.svg
+iconUrl: /training/achievements/azure-stack-hci.svg
 levels:
 - beginner
 roles:
@@ -36,6 +36,8 @@ products:
   - azure-stack-hci
   - azure-stack-hub
   - azure-stack-edge
+subjects:
+- cloud-computing
 modules:
 - learn.azure.intro-to-azure-stack
 - learn.azure.azure-stack-hci-technologies

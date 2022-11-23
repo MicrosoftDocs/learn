@@ -41,35 +41,27 @@ In the exercise, you'll replace the current HTML fields with a Blazor component 
 
 1. Delete the `isSubmitting = true;` line of code from the `PlaceOrder()` method.
 
-1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu select **Start Debugging**.
-
-    The app will work as it did previously. At the moment we've added an EditForm component, we now need to replace the HTML input elements.
-
-1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app running.
-
 ## Replace HTML elements with Blazor components
 
 1. In the file explorer, expand **Shared**, then select **AddressEditor.razor**.
 
-1. Select the **Edit** menu, then select **Replace**. 
+1. Select the **Edit** menu, then select **Replace**.
 1. In the first field, enter `<input` in the replace field enter `<InputText`, then select replace all.
 
-    :::image type="content" source="../media/5-replace-input-elements.png" alt-text="Screenshot of Visual Studio Code and the text replace dialog."::: 
+    :::image type="content" source="../media/5-replace-input-elements.png" alt-text="Screenshot of Visual Studio Code and the text replace dialog.":::
 
-1. Select the **Edit** menu, then select **Replace**. 
+1. Select the **Edit** menu, then select **Replace**.
 1. In the first field, enter `@bind=` in the replace field enter `@bind-Value=`, then select replace all.
-1. Remove the `@ref="startName"` code on the Name field. 
+1. Remove the `@ref="startName"` code on the Name field.
 1. Remove all the code below the Parameter declaration in the `@code` block. The block should now look like this.
 
     ```razor
     @code {
-
         [Parameter] public Address Address { get; set; }
-
-    }    
+    }
     ```
 
-    FocusAsync is currently only supported on HTML elements.
+    `FocusAsync` is currently only supported on HTML elements.
 
 ## Check for empty fields before submitting a form
 
@@ -88,7 +80,7 @@ Let's add an error message the app can show a customer if they don't enter their
     </div>
     ```
 
-1. In the `@code` block, add a declaration for the `isError` boolean. 
+1. In the `@code` block, add a declaration for the `isError` boolean.
 
     ```csharp
     bool isError = false;
@@ -99,28 +91,23 @@ Let's add an error message the app can show a customer if they don't enter their
     ```csharp
     private async Task CheckSubmission(EditContext editContext)
     {
-        var model = editContext.Model as Address;
         isSubmitting = true;
-        if (string.IsNullOrWhitespace(model?.Name) || 
-            string.IsNullOrWhitespace(model?.Line1) ||
-            string.IsNullOrWhitespace(model?.PostalCode)
+        var model = editContext.Model as Address;
+        isError = string.IsNullOrWhiteSpace(model?.Name)
+            || string.IsNullOrWhiteSpace(model?.Line1)
+            || string.IsNullOrWhiteSpace(model?.PostalCode);
+        if (!isError)
         {
-            isError = true;
-        } 
-        else 
-        {
-            isError = false;
             await PlaceOrder();
         }
-      isSubmitting = false;
-    }  
+        isSubmitting = false;
+    }
     ```
 
-1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu select **Start Debugging**.
+1. In Visual Studio Code press <kbd>F5</kbd>, or from the **Run** menu select **Start Debugging**.
 
     Try to order some pizzas without entering any information. You should see the error message.
 
     :::image type="content" source="../media/5-showing-error-message.png" alt-text="Screenshot of the error message.":::
 
-1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app running. 
-
+1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app from running.

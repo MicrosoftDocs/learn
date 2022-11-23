@@ -12,10 +12,10 @@ title: 'AZ-204: Implement infrastructure as a service solutions'
 prerequisites: |
   * At least one year of experience developing scalable solutions through all phases of software development.
   * Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
-  * If you are new to Azure, or cloud computing, it is recommended you complete the [AZ-900: Azure Fundamentals](/learn/paths/az-900-describe-cloud-concepts/) course.
+  * If you are new to Azure, or cloud computing, it is recommended you complete the [AZ-900: Azure Fundamentals](/training/paths/az-900-describe-cloud-concepts/) course.
 summary: |
   Learn how to create and deploy virtual machine, deploy resources using Azure Resource Manager templates, and manage and deploy containers.
-iconUrl: /learn/achievements/iaas-implement-solutions.svg
+iconUrl: /training/achievements/iaas-implement-solutions.svg
 levels:
 - intermediate
 roles:
@@ -26,6 +26,9 @@ products:
 - azure-container-registry
 - azure-resource-manager
 - azure-virtual-machines
+subjects:
+- container
+- virtual-machine
 modules:
 - learn.wwl.provision-virtual-machines-azure
 - learn.wwl.create-deploy-azure-resource-manager-templates

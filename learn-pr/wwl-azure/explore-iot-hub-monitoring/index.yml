@@ -21,7 +21,7 @@ prerequisites: |
   - Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
   - Describe Azure Monitor support and IoT Hub metrics.
   - Describe IoT device connection state and lifecycle events.
-iconUrl: /learn/achievements/iot-hub-monitoring.svg
+iconUrl: /training/achievements/iot-hub-monitoring.svg
 levels:
 - intermediate
 roles:
@@ -31,6 +31,8 @@ products:
 - azure-iot-hub
 - azure-monitor
 - azure-portal
+subjects:
+- iot
 units:
 - learn.wwl.explore-iot-hub-monitoring.introduction
 - learn.wwl.explore-iot-hub-monitoring.configure

@@ -15,7 +15,7 @@ Synapse Studio provides a SQL script web interface for you to author SQL queries
 Synapse notebooks enable you to analyze data across raw formats (CSV, txt, JSON, etc.), processed file formats (parquet, Delta Lake, ORC, etc.), and SQL tabular data files against Spark and SQL.
 
 > [!NOTE]
-> Learn more about [large-scale data analytics in Azure Synapse Analytics](/learn/modules/explore-azure-synapse-analytics/).
+> Learn more about [large-scale data analytics in Azure Synapse Analytics](/training/modules/explore-azure-synapse-analytics/).
 
 ## Visualize data and create reporting solutions using Microsoft Power BI
 
@@ -28,5 +28,4 @@ Power BI also has native connectors to many Azure data services. Using Power BI,
 [![Power BI Report interface in Azure Synapse Analytics Workspace.](../media/synapse-power-bi.png)](../media/synapse-power-bi.png#lightbox)
 
 > [!NOTE]
-> Learn more about [analytics and reporting with Power BI](/learn/paths/create-use-analytics-reports-power-bi/).
-
+> Learn more about [analytics and reporting with Power BI](/training/paths/create-use-analytics-reports-power-bi/).

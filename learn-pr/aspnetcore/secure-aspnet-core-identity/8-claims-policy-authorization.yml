@@ -8,7 +8,7 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
 durationInMinutes: 2
 content: |
   [!include[](includes/8-claims-policy-authorization.md)]

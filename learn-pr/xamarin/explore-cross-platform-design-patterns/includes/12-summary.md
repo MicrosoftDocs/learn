@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 .NET Standard is a specification of .NET APIs that are intended to be available on all .NET implementations. 
 
 You'll use libraries based on .NET Standard to share common code in your application. Some things, however, can't be shared, even in a .NET Standard library. These unsharable things are the platform-specific features of each platform.

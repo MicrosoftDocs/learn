@@ -18,7 +18,7 @@ Most computer vision solutions are based on machine learning models that can be 
 | Object detection| ![An image of a street with buses, cars, and cyclists identified and highlighted with a bounding box](../media/object-detection.png)<br/> Object detection machine learning models are trained to classify individual objects within an image, and identify their location with a bounding box. For example, a traffic monitoring solution might use object detection to identify the location of different classes of vehicle. |
 | Semantic segmentation| ![An image of a street with the pixels belonging to buses, cars, and cyclists identified](../media/semantic-segmentation.png)<br/> Semantic segmentation is an advanced machine learning technique in which individual pixels in the image are classified according to the object to which they belong. For example, a traffic monitoring solution might overlay traffic images with "mask" layers to highlight different vehicles using specific colors. |
 | Image analysis| ![An image of a person with a dog on a street and the caption "A person with a dog on a street"](../media/image-analysis.png)<br/> You can create solutions that combine machine learning models with advanced image analysis techniques to extract information from images, including "tags" that could help catalog the image or even descriptive captions that summarize the scene shown in the image. |
-| Face detection, analysis, and recognition| ![An image of multiple people on a city street with their faces highlighted](../media/face-analysis.png)<br/> Face detection is a specialized form of object detection that locates human faces in an image. This can be combined with classification and facial geometry analysis techniques to infer details such as age and emotional state; and even recognize individuals based on their facial features. |
+| Face detection, analysis, and recognition| ![An image of multiple people on a city street with their faces highlighted](../media/face-analysis.png)<br/> Face detection is a specialized form of object detection that locates human faces in an image. This can be combined with classification and facial geometry analysis techniques to recognize individuals based on their facial features. |
 | Optical character recognition (OCR)| ![An image of a building with the sign "Toronto Dominion Bank", which is highlighted](../media/ocr.png)<br/> Optical character recognition is a technique used to detect and read text in images. You can use OCR to read text in photographs (for example, road signs or store fronts) or to extract information from scanned documents such as letters, invoices, or forms. |
 
 ## Computer vision services in Microsoft Azure
@@ -32,9 +32,3 @@ Microsoft Azure provides the following cognitive services to help you create com
 | **Face** | The Face service enables you to build face detection and facial recognition solutions.|
 | **Form Recognizer** | Use this service to extract information from scanned forms and invoices.|
 
-## Try this
-
-To see an example of a how computer vision can be used to analyze images, follow these steps:
-
-1. Open another browser tab and go to https://aidemos.microsoft.com/computer-vision.
-2. Use the demo interface to try each of the steps. For each step, you can select images and review the information returned by the Computer Vision service.

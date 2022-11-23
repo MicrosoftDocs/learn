@@ -3,7 +3,7 @@ uid: learn.machinelearning.introduction-to-machine-learning
 metadata:
   title: Introduction to machine learning
   description: A high-level overview of machine learning for people with little or no knowledge of computer science and statistics. You’ll be introduced to some essential concepts, explore data, and interactively go through the machine learning life-cycle - using Python to train, save, and use a machine learning model like we would in the real world.
-  ms.date: 05/25/2021
+  ms.date: 08/02/2022
   author: TomReidNZ
   ms.author: jasdeb
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Create and test a machine learning model
   - Load a model and use it with new data
 prerequisites: None
-iconUrl: /learn/achievements/machine-learning/introduction-to-machine-learning.svg
+iconUrl: /training/achievements/machine-learning/introduction-to-machine-learning.svg
 levels: 
 - beginner
 roles: 
@@ -26,6 +26,8 @@ roles:
 products: 
 - azure
 - azure-machine-learning
+subjects:
+- machine-learning
 units:
 - learn.machinelearning.introduction-to-machine-learning.introduction
 - learn.machinelearning.introduction-to-machine-learning.creating-ml-models

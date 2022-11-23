@@ -82,7 +82,7 @@ Your repository contains a draft of a pipeline that you can use as a starting po
 
 Now, you can add a second stage to publish the module to your container registry.
 
-1. At the bottom of the *storage-account.yml* file, define the *Publish* stage, and add a step to read the version number from your module's *metadata.json* file and set it as a pipeline variable.
+1. At the bottom of the *pipeline.yml* file, define the *Publish* stage, and add a step to read the version number from your module's *metadata.json* file and set it as a pipeline variable.
 
    :::code language="yaml" source="code/6-pipeline.yml" range="37-46" :::
 
@@ -90,7 +90,7 @@ Now, you can add a second stage to publish the module to your container registry
 
 1. Below the step that you just created, add a step to publish the module to the registry.
 
-   :::code language="yaml" source="code/6-pipeline.yml" range="47-58" :::
+   :::code language="yaml" source="code/6-pipeline.yml" range="47-57" :::
 
    Notice that this step constructs the value of the `--target` argument dynamically. It combines the value of the registry server, the module name, and the version number.
 
@@ -100,7 +100,7 @@ Now, you can add a second stage to publish the module to your container registry
 
 1. Verify that your *storage_account_module.yml* file looks like the following example:
 
-   :::code language="yaml" source="code/6-pipeline.yml" highlight="16, 27-58" :::
+   :::code language="yaml" source="code/6-pipeline.yml" highlight="16, 27-57" :::
 
    If it doesn't, update it to match this example, and then save it.
 

@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-subscriptions.identify-regions
-title: Identify regions
+title: Identify Azure regions
 metadata:
-  title: Identify regions
-  description: "Identify regions"
-  ms.date: 04/15/2022
+  title: Identify Azure regions
+  description: "Identify Azure regions"
+  ms.date: 11/21/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/2-identify-regions.md)]

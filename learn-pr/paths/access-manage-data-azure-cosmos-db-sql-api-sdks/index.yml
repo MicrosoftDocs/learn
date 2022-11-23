@@ -1,25 +1,27 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.access-manage-data-azure-cosmos-db-sql-api-sdks
 metadata:
-  title: Access and manage data with the Azure Cosmos DB SQL API SDKs
-  description: Access and manage data with the Azure Cosmos DB SQL API SDKs
-  ms.date: 12/22/2021
+  title: Access and manage data with the Azure Cosmos DB for NoSQL SDKs
+  description: Access and manage data with the Azure Cosmos DB for NoSQL SDKs
+  ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Access and manage data with the Azure Cosmos DB SQL API SDKs
+title: Access and manage data with the Azure Cosmos DB for NoSQL SDKs
 prerequisites: |
   Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
 summary: |
-  Use the .NET SDK for Azure Cosmos DB SQL API to perform common operations on databases, containers, and items.
-iconUrl: /learn/achievements/azure-cosmos-database-access-data.svg
+  Use the .NET SDK for Azure Cosmos DB for NoSQL to perform common operations on databases, containers, and items.
+iconUrl: /training/achievements/azure-cosmos-database-access-data.svg
 levels:
 - intermediate
 roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- data-management
 modules:
 - learn.wwl.implement-azure-cosmos-db-sql-api-point-operations
 - learn.wwl.perform-cross-document-transactional-operations-azure-cosmos-db-sql-api

@@ -20,7 +20,7 @@ prerequisites:  |
   - A GitHub Enterprise Cloud or Enterprise Server account
   - Working knowledge of GitHub Actions and workflows
 ratingEnabled: true
-iconUrl: /learn/achievements/manage-sensitive-data-security-policies.svg
+iconUrl: /training/achievements/manage-sensitive-data-security-policies.svg
 levels:
   - intermediate
 roles:
@@ -30,6 +30,8 @@ roles:
   - solution-architect
 products:
   - github
+subjects:
+- information-protection-governance
 units:
   - learn.github.manage-sensitive-data-security-policies.introduction 
   - learn.github.manage-sensitive-data-security-policies.set-security-policies

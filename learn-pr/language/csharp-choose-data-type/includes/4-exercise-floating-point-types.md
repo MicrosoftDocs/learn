@@ -4,21 +4,21 @@ A floating point is a simple value type that represents fractional numbers. Unli
 
 ## Evaluate floating-point types
 
-First, you must also consider the digits of precision each allow.  Precision is the number of values that can be stored after the decimal point.
+First, you must also consider the digits of precision each allow. Precision is the number of values that can be stored after the decimal point.
 
-Second, you must consider the manner in which the values are stored and the impact that has on the accuracy of the value. In other words, `float` and `double` values are stored internally in a binary (base 2) format while `decimal` is stored in a decimal (base 10) format. Why does this matter?
+Second, you must consider the manner in which the values are stored and the impact that has on the accuracy of the value. In other words, `float` and `double` values are stored internally in a binary (base 2) format, while `decimal` values are stored in a decimal (base 10) format. Why does this matter?
 
-Performing math on binary floating-point values can produce results that may surprise you if you're used to decimal (base 10) math. Often, binary floating-point math is an approximation of the real value. Therefore, `float` and `double` are useful because large numbers can be stored using a small memory footprint; however, should only be used when an approximation is useful. For example, being a few thousandths off when calculating the blast zone of a weapon in a video game is close enough.
+Performing math on binary floating-point values can produce results that may surprise you if you're used to decimal (base 10) math. Often, binary floating-point math is an approximation of the real value. Therefore, `float` and `double` are useful, because they can store large numbers using a small memory footprint; however, you should only use them when an approximation is useful. For example, being a few thousandths off when calculating the blast zone of a weapon in a video game is close enough.
 
-When you need more a more precise answer, you should use `decimal`. Each value of type `decimal` has a relatively large memory footprint, however performing math operations gives you a more precise result.  So, you should use `decimal` when working with financial data or any scenario where you need an accurate result from a calculation.
+When you need more a more precise answer, you should use `decimal`. Each value of type `decimal` has a relatively large memory footprint; however, performing math operations gives you a more precise result. So, you should use `decimal` when working with financial data or any scenario where you need an accurate result from a calculation.
 
 ### Step 1 - Delete or comment out any code from the previous exercises in the .NET Editor
 
-Select the code from the previous exercise, and select the backspace or `del` key. Optionally, comment out the previous code in the .NET Editor.
+Select the code from the previous exercise and select the `backspace` or `del` key. Optionally, comment out the previous code in the .NET Editor.
 
 ### Step 2 - Use the MinValue and MaxValue properties for each signed float type
 
-To see the value ranges for the various data types, enter the following code into the .NET Editor.
+To see the value ranges for the various data types, enter the following code into the .NET Editor:
 
 ```csharp-interactive
 Console.WriteLine("");
@@ -30,7 +30,7 @@ Console.WriteLine($"decimal: {decimal.MinValue} to {decimal.MaxValue} (with 28-2
 
 ### Step 3 - Run the code to inspect each data type's range of values
 
-If you run the code, you'll see the following output.
+If you run the code, you'll get the following output:
 
 ```output
 Floating point types:

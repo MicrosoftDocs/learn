@@ -4,11 +4,11 @@ In the bus-catching scenario, you'll use several of these tools to build out the
 
 ## Configure your local machine for development with Azure
 
-Here, you'll learn how to download the latest recommended tools and extensions. You'll also set up the code sample on your local machine, and you'll select a language for the rest of the learning path (Python, Node.js, or .NET Core). If you decide to complete other modules in the learning path, you will not need to repeat these steps.
+Here, you'll learn how to download the latest recommended tools and extensions. You'll also set up the code sample on your local machine, and you'll select a language for the rest of the learning path (Python, Node.js, or .NET Core). If you decide to complete other modules in the learning path, you won't need to repeat these steps.
 
 ### Execute application lifecycles with Visual Studio Code
 
-Throughout the learning path, you'll use Visual Studio Code as your main development tool. If you have another tool of choice, you are free to use it for the exercises, but note that the instructions will be catered to capabilities and options in Visual Studio Code.
+Throughout the learning path, you'll use Visual Studio Code as your main development tool. If you have another tool of choice, you're free to use it for the exercises, but note that the instructions will be catered to capabilities and options in Visual Studio Code.
 
 1. Visual Studio Code is available on all operating systems. Go to the [Visual Studio Code Download](https://code.visualstudio.com/Download) page and download/install the application applicable to your operating system.
 
@@ -16,14 +16,14 @@ Throughout the learning path, you'll use Visual Studio Code as your main develop
 
 1. Open the **Extensions** pane from the left-hand taskbar. We recommend installing the following extensions:
 
-    - **Azure Account**: This extension allows you to authenticate to Azure.
-    - **Azure Functions**: This extension allows you to manage Azure Functions.
-    - **GitHub**: This extension allows you to authenticate to GitHub and manage repositories.
-    - **Azure Resources**: This extension allows you to manage Azure resources.
-    - **SQL Server (mssql)**: This extension includes tools for querying SQL Server and Azure SQL resources.
-    - **Live Server**: This extension enables you to run web applications locally with ease.
+    - [**Azure Account**](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account): This extension allows you to authenticate to Azure.
+    - [**Azure Functions**](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions): This extension allows you to manage Azure Functions.
+    - [**GitHub Pull Requests and Issues**](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github): This extension allows you to authenticate to GitHub and manage repositories.
+    - [**Azure Resources**](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups): This extension allows you to manage Azure resources.
+    - [**SQL Server (mssql)**](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql): This extension includes tools for querying SQL Server and Azure SQL resources.
+    - [**Live Server**](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer): This extension enables you to run web applications locally with ease.
 
-1. The main code sample is hosted on GitHub. Sign into GitHub in Visual Studio Code using your GitHub account so you can clone, commit, push, and pull from Visual Studio Code. If you do not have a GitHub account, [create one here](https://github.com/join).
+1. The main code sample is hosted on GitHub. Sign into GitHub in Visual Studio Code using your GitHub account so you can clone, commit, push, and pull from Visual Studio Code. If you don't have a GitHub account, [create one here](https://github.com/join).
 
 1. You'll need to fork and clone the GitHub repository so you can access it in Visual Studio Code. To do this step, sign in to GitHub in a browser with your GitHub account and go to [this repository](https://github.com/Azure-Samples/serverless-full-stack-apps-azure-sql). In the top-right corner of your browser, select **Fork**.
 

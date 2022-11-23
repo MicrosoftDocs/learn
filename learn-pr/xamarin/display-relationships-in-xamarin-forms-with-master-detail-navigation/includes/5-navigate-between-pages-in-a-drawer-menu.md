@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 It's our job to update the detail content when the user makes a selection from the drawer. In this unit, we'll see how to write that code.
 
 ## Coordinate page changes

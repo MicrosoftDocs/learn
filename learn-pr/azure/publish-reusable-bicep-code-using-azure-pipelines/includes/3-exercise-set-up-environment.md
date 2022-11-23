@@ -1,3 +1,5 @@
+[!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 Before you start to publish your toy company's reusable Bicep code, you need to configure your environment. In this section, you make sure that your Azure and Azure DevOps environments are set up to complete the rest of this module.
 
 To meet these objectives, you'll:
@@ -60,9 +62,9 @@ On the Azure DevOps Demo Generator site, do the following:
 
 1. You're using this repository for the first time, so you might be prompted to sign in.
 
-    If you're using Windows, enter the same credentials you used to sign in to Azure DevOps earlier in this exercise.
+   - If you're using Windows, enter the same credentials that you used to sign in to Azure DevOps earlier in this exercise.
 
-    If you're using macOS, enter the Git username and password that you generated a few moments ago.
+   - If you're using macOS, enter the Git username and password that you generated a few moments ago.
 
 1. Visual Studio Code prompts you to open the repository. Select **Open**.
 

@@ -1,4 +1,4 @@
-By manually scaling out and back in again, you can respond to expected increases and decreases in traffic. Scaling out has the additional benefit of increasing availability because of the increased number of instances of the web app. A failure of one instance doesn't make the web app unavailable. 
+By manually scaling out and back in again, you can respond to expected increases and decreases in traffic. Scaling out has the extra benefit of increasing availability because of the increased number of instances of the web app. A failure of one instance doesn't make the web app unavailable. 
 
 In the hotel reservation system, you can scale out before an anticipated seasonal influx. You can scale back in when the season is over and the number of booking requests is reduced.
 
@@ -12,7 +12,7 @@ The resources available to each instance are defined by an App Service plan. The
 
 Azure provides a series of well-defined App Service plan tiers. This list summarizes each of these tiers, in increasing order of capacity (and cost):
 
-- The Free tier provides 1 GB of disk space and support for up to 10 apps, but only a single shared instance and no SLA for availability. Each app has a compute quota of 60 minutes per day. The Free service plan is mainly suitable for app development and testing rather than production deployments.
+- The Free tier provides 1 GB of disk space and support for up to 10 apps, but only a single shared instance and no SLA for availability. Each app has a compute quota of 60 minutes per day. The Free service plan is suitable for app development and testing rather than production deployments.
 - The Shared tier provides support for more apps (up to 100) also running on a single shared instance. Apps have a compute quota of 240 minutes per day. There is no availability SLA.
 - The Basic tier supports an unlimited number of apps and provides more disk space. Apps can be scaled out to three dedicated instances. This tier provides an SLA of 99.95% availability. There are three levels in this tier that offer varying amounts of computing power, memory, and disk storage.
 - The Standard tier also supports an unlimited number of apps. This tier can scale to 10 dedicated instances and has an availability SLA of 99.95%. Like the Basic tier, this tier has three levels that offer an increasingly powerful set of computing, memory, and disk options.

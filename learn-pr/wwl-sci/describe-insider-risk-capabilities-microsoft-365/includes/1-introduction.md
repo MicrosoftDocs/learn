@@ -4,6 +4,6 @@ In this module, you’ll learn how insider risk management, communication compli
 
 After completing this module, you'll be able to:
 
-- Describe Microsoft Purview Insider Risk Management.
-- Describe Microsoft Purview Communication Compliance.
-- Describe Microsoft Purview Information Barriers.
+- Describe insider risk management.
+- Describe communication compliance.
+- Describe information barriers.

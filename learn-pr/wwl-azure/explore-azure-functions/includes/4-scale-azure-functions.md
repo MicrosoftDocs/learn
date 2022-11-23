@@ -13,7 +13,7 @@ The unit of scale for Azure Functions is the function app. When the function app
 :::image type="content" source="../media/central-listener.png" alt-text="Scale controller monitoring events and creating instances":::
 
 > [!NOTE]
-> After your function app has been idle for a number of minutes, the platform may scale the number of instances on which your app runs down to zero. The next request has the added latency of scaling from zero to one. This latency is referred to as a *cold start*.
+> After your function app has been idle for a number of minutes, the platform may scale the number of instances on which your app runs in to zero. The next request has the added latency of scaling from zero to one. This latency is referred to as a *cold start*.
 
 ## Scaling behaviors
 
@@ -21,7 +21,7 @@ Scaling can vary on a number of factors, and scale differently based on the trig
 
 * **Maximum instances:** A single function app only scales out to a maximum of 200 instances. A single instance may process more than one message or request at a time though, so there isn't a set limit on number of concurrent executions.
 
-* **New instance rate:** For HTTP triggers, new instances are allocated, at most, once per second. For non-HTTP triggers, new instances are allocated, at most, once every 30 seconds. Scaling is faster when running in a Premium plan.
+* **New instance rate:** For HTTP triggers, new instances are allocated, at most, once per second. For non-HTTP triggers, new instances are allocated, at most, once every 30 seconds. 
 
 ## Limit scale out
 

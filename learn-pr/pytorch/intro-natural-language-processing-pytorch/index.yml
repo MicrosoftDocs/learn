@@ -17,7 +17,7 @@ abstract: |
   - Get introduced to using Recurrent Neural Networks (RNNs) and Generative Neural Networks (GNNs)
   - Learn how to build text classification models  
 
-iconUrl: /learn/achievements/pytorch-natural-language-process.svg
+iconUrl: /training/achievements/pytorch-natural-language-process.svg
 levels:
   - beginner
 roles:
@@ -30,6 +30,8 @@ prerequisites: |
   - Basic Python knowledge
   - Basic knowledge about how to use Jupyter Notebooks
   - Basic understanding of machine learning
+subjects:
+- natural-language-processing
 units:
 - learn.pytorch.intro-natural-language-processing.introduction
 - learn.pytorch.intro-natural-language-processing.representing-text

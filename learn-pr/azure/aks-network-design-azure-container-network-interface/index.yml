@@ -20,7 +20,7 @@ prerequisites: |
   - Understand Docker containers at a beginner level.
   - Understand Kubernetes at a beginner level.
   - Understand networking basics, such as IP addresses and CIDR address ranges
-iconUrl: /learn/achievements/aks-network-design-azure-container-network-interface.svg
+iconUrl: /training/achievements/aks-network-design-azure-container-network-interface.svg
 levels:
   - intermediate
 roles:
@@ -28,6 +28,9 @@ roles:
 products:
   - azure
   - azure-kubernetes-service
+subjects:
+- data-engineering
+- networking
 units:
   - learn.aks-network-design-azure-container-network-interface.1-introduction
   - learn.aks-network-design-azure-container-network-interface.2-overview-of-kubernetes-networking

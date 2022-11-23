@@ -19,7 +19,7 @@ abstract: |
   - Implement pessimistic concurrency with blobs using blob leases
 prerequisites: |
   - Experience editing C# .NET code at a beginner level
-iconUrl: /learn/achievements/support-concurrency-blob-storage.svg
+iconUrl: /training/achievements/support-concurrency-blob-storage.svg
 levels:
 - beginner
 roles:
@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-storage
+subjects:
+- storage
 units:
 - learn.support-concurrency-blob-storage.1-introduction
 - learn.support-concurrency-blob-storage.2-last-writer-wins

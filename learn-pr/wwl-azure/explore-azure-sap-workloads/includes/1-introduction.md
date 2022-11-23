@@ -10,6 +10,6 @@ You understand and communicate risks, and suggest solutions using Azure to autom
 
 You will:
 
- -  Discover the SAP and Microsoft partnership.
- -  Explore your options with SAP on Azure.
- -  Evaluate Microsoft components and their integration with SAP apps and data.
+- Discover the SAP and Microsoft partnership.
+- Explore your options with SAP on Azure.
+- Evaluate Microsoft components and their integration with SAP apps and data.

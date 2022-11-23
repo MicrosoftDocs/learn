@@ -4,17 +4,17 @@ A Kusto query can be used to explore datasets and gain insights. Recall that we 
 
 The sample database we're using has an entry for each storm event in the US in 2007, for a total of about 60 thousand records.
 
-To group these events into chunks of information, you'll use the `summarize` operator. `summarize` is used for all functions that aggregation groups of values of multiple rows to form a single summary value. You can summarize the whole table, for example, by counting the number of results using the following query:
+To group these events into chunks of information, you'll use the `summarize` operator. `summarize` is used for all functions that aggregate groups of values of multiple rows to form a single summary value. You can summarize the whole table, for example, by counting the number of results using the following query:
 
-<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVUjOL80r0dAEAIiJgN4fAAAA" target="_blank">Click to run query</a>
+<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVUjOL80r0dAEAIiJgN4fAAAA" target="_blank">Run the query</a>
 
 :::image type="content" source="../media/4-count-basic.png" alt-text="Screenshot of count operator general query and results.":::
 
-You can also summarize data into groups of similar types of events by specifying the way you want to group the aggregation. For example, to count events by state, you'll write a query to `summarize` `count` by `state`. In fact, the previous sentence is very similar to the actual query. You'll use the aggregation function called `count()`, which counts the number of rows by group. This function generates a new column that gives the count of events grouped by state, which we've renamed within the query to *EventCount*. 
+You can also summarize data into groups of similar types of events by specifying the way you want to group the aggregation. For example, to count events by state, you'll write a query to `summarize` `count` by `state`. In fact, the previous sentence is very similar to the actual query. You'll use the aggregation function called `count()`, which counts the number of rows by group. This function generates a new column that gives the count of events grouped by state, which we've renamed within the query from the default name *count_* to *EventCount*. Renaming new columns is a recommended practice to make queries and their results more readable.
 
 1. Copy and paste the query into your query editor.
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5uWqUSguzc1NLMqsSlUAiznnl+aVKNgqJINoDU2FpEqF4JLEklSw0vyiEpAAQiEAmVOvwUwAAAA=" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5uWqUSguzc1NLMqsSlUAiznnl+aVKNgqJINoDU2FpEqF4JLEklSw0vyiEpAAQiEAmVOvwUwAAAA=" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents
@@ -45,21 +45,21 @@ Notice that all elements within the summarize operator are separated by commas a
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAy1NSw5AMBDdO8UsSSxcgA1OQGIpxaCLGmmHhDg87Xi792+YrKlP3NhFD7jDGGX1jTDSsXGcpBF8EL/TvFbKqAVbKi3tDnKJ6TkWXdQCsr83yUqot9eOCQwXNKwY/RdZ9jxk+hdcHcMviAAAAA==" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVUjOL80r0dDU4VIAAoh8eGZJhktibmJ6aki+c1F+QbGCLURZZpoGRBwiaqdgANXnDJIFqkqBmAY2JqSyIFVTIalSIbgksSQVZGd+UQmID1YMAFgA5v6PAAAA" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents
     | summarize count(),
         EventsWithDamageToCrops = countif(DamageCrops > 0),
-        dcount(EventType) by State
-    | sort by count_
+        Count = dcount(EventType) by State
+    | sort by Count
     ```
 
     You should get results that look like the following image:
 
     :::image type="content" source="../media/4-count.png" alt-text="Screenshot of Kusto query that counts events by state.":::
 
-1. Notice the column names in the results. Which part of the query corresponds to each column? You can see that the `count()` function created a new column and gave it the default name *count_*. You'll also notice that you used this name as the column for the `sort` operator in the query. How many different types of storms occurred in Texas?
+1. Notice the column names in the results. Which part of the query corresponds to each column? You can see that the `dcount()` function created a new column and gave it the name *Count*. You'll also notice that you used this name as the column for the `sort` operator in the query. How many different types of storms occurred in Texas?
 
 ## Use the `distinct` operator
 
@@ -67,7 +67,7 @@ The previous query returned a distinct count of 27 different types of storms in 
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLElVsLVVUApxjXAMVgJKpGQWl2TmJZcogJWGVBakAgWL84tKFJIqEWIKicXJABv/PVBRAAAA" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLElVsLVVUApxjXAMVgJKpGQWl2TmJZcogJWGVBakAgWL84tKFJIqEWIKicXJABv/PVBRAAAA" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents

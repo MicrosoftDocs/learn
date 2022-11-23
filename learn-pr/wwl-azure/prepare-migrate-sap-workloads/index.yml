@@ -16,13 +16,15 @@ abstract: |
   * Review the checklist for initiating a project to deploy SAP workloads to Azure.
 prerequisites: |
   Prior to taking this course, it is recommended that you have taken the Azure Administrator (AZ-103) exam, as well as SAP HANA or NetWeaver training.
-iconUrl: /learn/achievements/preparing-migrate-sap-workloads-azure.svg
+iconUrl: /training/achievements/preparing-migrate-sap-workloads-azure.svg
 levels:
 - advanced
 roles:
 - administrator
 products:
 - azure
+subjects:
+- migration
 units:
 - learn-pr.wwl.preparing-migrate-sap-workloads-azure.introduction
 - learn-pr.wwl.preparing-migrate-sap-workloads-azure.strategies-migrating-sap-workloads-microsoft-azure

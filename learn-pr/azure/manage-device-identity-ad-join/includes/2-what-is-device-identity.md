@@ -1,4 +1,4 @@
-In this unit, you'll learn about device identity and registration options, and how they apply to various devices. You'll see how you can apply Conditional Access to improve access control with your devices. Finally, you'll look at the benefits, and the considerations, of using device identity in Azure.
+In this unit, you'll learn about device identity and registration options and how they apply to various devices. You'll learn how you can apply Conditional Access to improve access control with your devices. Finally, you'll consider the benefits and the considerations of using device identity in Azure.
 
 ## Basics of device identity
 
@@ -6,7 +6,7 @@ Device identity in Azure Active Directory (Azure AD) helps you control the devic
 
 Today's work environment extends beyond the controllable boundaries of your on-premises workspace. Your staff can now work in various locations, not only in their home country or region but also abroad. Users can access a broader range of technologies. Some of these technologies are owned by your organization, but others aren't.
 
-The challenge faced by IT staff is how to give users flexibility while protecting the company's data. You want to support your users and enable them to be productive wherever they're working, on whatever device they're using. But you still need to keep your organization's resources and assets safe.
+The challenge IT staff faces is how to give users flexibility while protecting the company's data. You want to support your users and enable them to be productive wherever they're working and on whatever device they're using, but you still need to keep your organization's resources and assets safe.
 
 Finding a balance between protecting assets and allowing users greater flexibility in the devices they use is at the heart of device identity. Every device that you want to connect to your network must be known. Tools such as Microsoft Intune can enhance what's known about a device by ensuring compliance with organizational requirements.
 
@@ -14,17 +14,17 @@ Combining Azure AD with single sign-on means that users can access services and 
 
 ## Device registration options
 
-You have three device registration options to add a device to Azure AD: 
+You have three device registration options to add a device to Azure AD:
 
-- **Azure AD registered**: These devices fall into the Bring Your Own Device (BYOD) category. They're typically privately owned, or they use a personal Microsoft account or another local account. This method of device registration is the least restrictive because it supports devices running Windows 10, iOS, iPadOS, Android, and macOS. Device security is typically provided from a password, a PIN, a pattern, or Windows Hello.
+- **Azure AD registered**: These devices fall into the Bring Your Own Device (BYOD) category. They're typically privately owned, or they use a personal Microsoft account or another local account. This method of device registration is the least restrictive because it supports devices running Windows 10 or newer, iOS, iPadOS, Android, and macOS. Device security is typically provided from a password, a PIN, a pattern, or Windows Hello.
 
-- **Azure AD joined**: These devices are owned by your organization. Users access your cloud-based Azure AD instance through their work account. Device identities exist only in the cloud. This option is available only to Windows 10 or Windows Server 2019 devices. Windows Server 2019 Server Core installation isn't supported. Security for this option uses either a password or Windows Hello.
+- **Azure AD joined**: Your organization owns these devices. Users access your cloud-based Azure AD instance through their work account. Device identities exist only in the cloud. This option is available only to Windows 10, Windows 11, or Windows Server 2019 devices. Windows Server 2019 Server Core installation isn't supported. Security for this option uses either a password or Windows Hello.
 
-- **Hybrid Azure AD joined**: This option is similar to Azure AD joined. The devices are owned by the organization, and they're signed in with an Azure AD account that belongs to that organization. Device identities exist in the cloud and on-premises. The hybrid option is better suited to organizations that need on-premises and cloud access. This option supports Windows 7, 8.1, and 10, and Windows Server 2008 or later.
+- **Hybrid Azure AD joined**: This option is similar to Azure AD joined. The devices are owned by the organization, and they're signed in with an Azure AD account that belongs to that organization. Device identities exist in the cloud and on-premises. The hybrid option is better suited to organizations that need on-premises and cloud access. This option supports Windows 8.1, 10, and 11, and Windows Server 2012 or later.
 
 ## Conditional Access
 
-Conditional Access in Azure AD uses data from sources known as *signals*, validates them against a user-definable rule base, and chooses the best outcome to enforce your organization's security policies. Conditional Access enables device identity management, but Conditional Access policies can be complex. 
+Conditional Access in Azure AD uses data from sources known as *signals*, validates them against a user-definable rule base, and chooses the best outcome to enforce your organization's security policies. Conditional Access enables device identity management, but Conditional Access policies can be complex.
 
 At their simplest, these policies can be thought of as "if-then" statements. If a user wants access to a resource, then they must fulfill the condition to complete the request. Example: A payroll manager wants to access the payroll application. The Conditional Access policy requires them to use a compliant device and to complete multifactor authentication to access the application.
 
@@ -41,10 +41,10 @@ Conditional Access uses many common signal types to make a decision on which out
 Signals include the following types:
 
 - **User or group membership** provides fine-grained access to resources.
-- **IP location information** uses an allow list of trusted IP addresses, and a deny list of blocked or banned IP addresses.
+- **IP location information** uses an allowlist of trusted IP addresses and a blocklist of blocked or banned IP addresses.
 - **Device** allows you to specify the type of device and its state.
 - **Application** lets you control access to an application for a specific device.
-- **Real-time and calculated risk detection** allows Azure AD to identify behaviors not only during sign-in but also throughout the user's session.
+- **Real-time and calculated risk detection** allows Azure AD to identify behaviors not only during sign-in, but also throughout the user's session.
 - **Microsoft Defender for Cloud Apps** provides real-time monitoring of the user's session and application access. Defender for Cloud Apps also helps you control your cloud environment.
 
 ### Common decisions
@@ -52,7 +52,7 @@ Signals include the following types:
 Conditional Access evaluates the signals and provides a decision:
 
 - **Block access**, which is the most restrictive.
-- **Grant access**, which is the least restrictive but might require additional criteria before allowing access.
+- **Grant access**, which is the least restrictive, but might require additional criteria before allowing access.
 
 Those criteria can be one or more of:
 
@@ -62,14 +62,14 @@ Those criteria can be one or more of:
 - Approved application
 - Need for an app protection policy
 
-If your organization uses Azure AD Multi-Factor Authentication, users don't have to do multifactor authentication when they're using a device that's mobile device management (MDM) compliant and Azure AD joined. You can select the option **Require one of the selected controls** with your grant controls selected. If you need extra security for something like a payroll app, select **Require all the selected controls** to require multifactor authentication and a compliant device. 
+If your organization uses Azure AD Multi-Factor Authentication, users don't have to do multifactor authentication when they're using a device that's mobile device management (MDM) compliant and Azure AD joined. You can select the option **Require one of the selected controls** with your grant controls selected. If you need extra security for something like a payroll app, select **Require all the selected controls** to require multifactor authentication *and* a compliant device.
 
 >[!div class="mx-imgBorder"]
 >![Screenshot of the access control grant settings with the options selected: Require multifactor authentication, Require device compliant, and Require one of the selected controls.](../media/2-access-controls-grant.png)
 
 ### Commonly applied policies
 
-Many organizations have common access concerns that Conditional Access policies can help with, such as:
+Many organizations have common access concerns with which Conditional Access policies can help, such as:
 
 - Requiring multifactor authentication for users who have administrative roles.
 - Requiring multifactor authentication for Azure management tasks.
@@ -96,7 +96,7 @@ To make your policy work, you must configure:
 
 ## Benefits of device identity management
 
-Some of the benefits of using device identity, combined with Conditional Access in Azure AD, are:
+Here are some of the benefits of using device identity combined with Conditional Access in Azure AD:
 
 - The combination simplifies the procedure for adding and managing devices in Azure AD.
 - The combination reduces the friction for users when they're switching between devices.

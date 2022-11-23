@@ -1,6 +1,6 @@
 The Device inventory page shows a list of the devices in your network where alerts were generated. By default, the queue displays devices with alerts seen in the last 30 days.  Select a device to open the Device page.  The Device page is also accessed from various investigation pages like Incidents and Alerts.
 
-:::image type="content" source="../media/device-list.png" alt-text="Device Inventory List" lightbox="../media/device-list.png":::
+:::image type="content" source="../media/device-list.png" alt-text="Screen shot of Defender for Endpoint Device Inventory List" lightbox="../media/device-list.png":::
 
 At a glance, you'll see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
 
@@ -16,9 +16,9 @@ The exposure level reflects the current exposure of the device based on the cumu
 
 If the exposure level says, "No data available," there are a few reasons why this may be the case:
 
-- The device stopped reporting for more than 30 days – in that case, it is considered inactive, and the exposure isn't computed
+- The device stopped reporting for more than 30 days – in that case, it's considered inactive, and the exposure isn't computed
 
-- The device OS is not supported - see minimum requirements for Microsoft Defender for Endpoint
+- The device OS isn't supported - see minimum requirements for Microsoft Defender for Endpoint
 
 - The device has a stale agent (unlikely)
 
@@ -42,7 +42,7 @@ The antivirus status for Windows 10 devices only:
 
 - Disabled - Virus & threat protection is turned off.
 
-- Not reporting - Virus & threat protection is not reporting.
+- Not reporting - Virus & threat protection isn't reporting.
 
-- Not updated - Virus & threat protection is not up to date.
+- Not updated - Virus & threat protection isn't up to date.
 

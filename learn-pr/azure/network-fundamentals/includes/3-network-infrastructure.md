@@ -1,4 +1,4 @@
-A network can't exist unless each of the devices has the means of communicating with another. This fact applies whether it's your organization's network or more extensive networks like the web. All networks are built on the same principles.
+A network can't exist unless each of the devices has the means of communicating with another. This fact applies whether it's your organization's network or more extensive networks, like the web. All networks are built on the same principles.
 
 In this unit, you'll learn about the term *network standards* and explore the hardware that forms the backbone of any network.
 
@@ -57,7 +57,7 @@ The media access control (MAC) address is a unique identifier assigned to every 
 
 :::image type="content" source="../media/3-mac-address.png" alt-text="A screenshot showing a network device's address information as returned when running the ipconfig /all command." loc-scope="other"::: <!--no-loc -->
 
-The MAC address has a standard composition of six hexadecimal numbers separated by a colon or dash. The first three numbers of the MAC address define the manufacturer's organizationally unique identifier (OUI) and the remaining three numbers uniquely identify the device. For example, if the MAC address is `AA-6A-BA-2B-68-C1` then the OUI is `AA-6A-BA` and `2B-68-C1` is the device ID.
+The MAC address has a standard composition of six hexadecimal numbers separated by a colon or dash. The first three numbers of the MAC address define the manufacturer's organizationally unique identifier (OUI), and the remaining three numbers uniquely identify the device. For example, if the MAC address is `AA-6A-BA-2B-68-C1` then the OUI is `AA-6A-BA` and `2B-68-C1` is the device ID.
 
 ## Repeater
 
@@ -65,15 +65,15 @@ A repeater is a two-port device that repeats network signals. Repeaters are used
 
 ## Bridge
 
-A bridge divides a network into network segments and can filter and forward data packets between these segments. Bridges use the network device's MAC address to decide the data package's destination. Typically, a bridge is used to improve network performance by reducing unnecessary network traffic on network segments.
+A bridge divides a network into network segments, and can filter and forward data packets between these segments. Bridges use the network device's MAC address to decide the data package's destination. Typically, a bridge is used to improve network performance by reducing unnecessary network traffic on network segments.
 
 ## Hub
 
-A hub acts as a multiport repeater on a network. Hubs are used to connect more than one device and structure the layout of a network. For example, you can cascade hubs to create network branches or as an endpoint to create a star layout with multiple user type devices. Hubs contain multiple ports that act as an input/output Ethernet connection between the hub and a network device. A hub can operate at only one speed, which is the speed of the slowest network device on the network. It doesn't interpret or filter data packets and sends copies of each data packet to all attached devices.
+A hub acts as a multiport repeater on a network. Hubs are used to connect more than one device and structure the layout of a network. For example, you can cascade hubs to create network branches, or as an endpoint to create a star layout with multiple-user-type devices. Hubs contain multiple ports that act as an input/output Ethernet connection between the hub and a network device. A hub can operate at only one speed, which is the speed of the slowest network device on the network. It doesn't interpret or filter data packets, and sends copies of each data packet to all attached devices.
 
 ### Types of hubs
 
-- **Fast Ethernet**: This hub is used for 100-Mbps networks and comes as Class I and Class II type hubs. The primary difference between the two is the amount of delay in data transmission. A Class I hub introduces a signal delay of up to 140-bit times. A Class II hub has a delay of up to 96-bit times. The delay allows for the transcoding of data between different base types. Only two Class II hubs can be used in a hub-based network. Class II hubs increase the likelihood of packet collisions because of their higher speeds.
+- **Fast Ethernet**: This hub is used for 100-Mbps networks, and comes as Class I and Class II type hubs. The primary difference between the two is the amount of delay in data transmission. A Class I hub introduces a signal delay of up to 140-bit times. A Class II hub has a delay of up to 96-bit times. The delay allows for the transcoding of data between different base types. Only two Class II hubs can be used in a hub-based network. Class II hubs increase the likelihood of packet collisions because of their higher speeds.
 - **Dual speed**: With a traditional hub network, the speed of the network was governed by the slowest network device attached. For example, if you had 10-Mbps and 100-Mbps devices connected to a network, the speed of the whole network was only 10 Mbps. Dual-speed hubs solve the problem by acting as a bridge between the two different-speed devices.
 
 Hubs are used for small ad-hoc networks of a few devices, but they're rarely used at an enterprise level.
@@ -87,16 +87,16 @@ A switch combines the functionality of a bridge and a hub. It segments networks 
 Modern Ethernet-based switches offer more functionality and capabilities than an Ethernet hub.
 
 - An Ethernet switch can adjust the connection speed of an inbound packet to match the connection speed of the destination network.
-- Many switches now support Power over Ethernet (PoE). PoE enables network devices like Voice over IP (VoIP) phones to get power from the switch, without needing a separate power supply.
-- Other modules can be attached to the switch to enable functions like port mirroring, packet sniffers, and intrusion detection systems.
+- Many switches now support Power over Ethernet (PoE). PoE enables network devices like Voice over IP (VoIP) phones to get power from the switch without needing a separate power supply.
+- Other modules can be attached to the switch to enable functions like port mirroring, packet sniffers, and intrusion-detection systems.
 
 ### Types of Ethernet switch
 
-The two distinct types of switch are unmanaged and managed.
+The two distinct types of switch are *unmanaged* and *managed*.
 
 #### Unmanaged
 
-This type of switch has no configuration capability and is designed for small office or home office environments. Packet switching occurs automatically.
+This type of switch has no configuration capability, and is designed for small-office or home-office environments. Packet switching occurs automatically.
 
 #### Managed
 
@@ -112,14 +112,14 @@ Here's a list of the more commonly available options to configure on a managed s
 - **MAC address filtering**: Provide the ability to control which network devices can be used or have access through the switch.
 - **SNMP client**: Set up and configure SNMP with your network monitoring tools.
 
-There are two subtypes of managed switch:
+There are two subtypes of managed switches:
 
 - **Smart**: A smart switch is a halfway point between an unmanaged and a managed switch. They tend to offer only a web-based interface to manage the configuration. The available options are virtual LANs, port mirroring, and bandwidth rate limiting.
 - **Enterprise**: The fully managed switch service previously described.
 
 ## Router
 
-Routers link networks with different ranged addresses together. They can interpret and filter data packets, and then forward them to the correct network. Routers use the network device's IP address information to route the data package to its destination. Most routers can now detect issues with data traffic that flows to any attached network and route or reroute it around the issue. A router is also called a gateway. When you configure network devices, you'll usually configure it with a default gateway IP address.
+Routers link networks with different ranged addresses together. They can interpret and filter data packets, and then forward them to the correct network. Routers use the network device's IP address information to route the data package to its destination. Most routers can now detect issues with data traffic that flows to any attached network and route or reroute it around the issue. A router is also called a gateway. When you configure network devices, you'll usually configure them with a default gateway IP address.
 
 ### Interconnectivity
 
@@ -133,14 +133,14 @@ There are several distinct classifications or types of routers available to serv
 
 - **Access routers**: Typically used in a home or small satellite offices, these routers tend to be low-cost devices with a simple routing need.
 - **Distribution routers**: These routers compile traffic routing data from multiple routers. Distribution routers come with more significant memory and processing power. This type of router is designed to hold vast quantities of routing information. It's often used to manage and control the quality of service across a WAN.
-- **Edge routers**: An edge router operates at the boundary between your network and other networks, for example, your local network and the internet. They act as gateways to filter traffic and route it internally or forward it based on the packet header. An edge router often comes with access control or firewalls to improve the security. It might also handle DHCP and DNS services.
+- **Edge routers**: An edge router operates at the boundary between your network and other networks; for example, your local network and the internet. They act as gateways to filter traffic and route it internally or forward it based on the packet header. An edge router often comes with access control or firewalls to improve the security. It might also handle DHCP and DNS services.
 - **Core routers**: Sometimes called enterprise routers, these routers are designed for higher bandwidths. They're used to connect different buildings or geographic locations together. Core routers tend to have fewer features than edge routers because their primary focus is on minimizing packet loss and preventing congestion. They tend to do packet forwarding to edge routers.
 
 ## Wireless router
 
 This network device provides all the routing capabilities of a regular access router, but it also offers wireless access point functions. A wireless router or wireless access point is designed to provide a non-wired connection to your network. Any provision to access the internet or other networks is handled by an edge router associated with your network. A wireless router lets you build a different type of network called a wireless local area network.
 
-A wireless router shouldn't be confused with a wireless modem. A wireless modem is what you receive from your ISP for your home or office and is the device that converts the signal from the ISP into one that's usable on a computer network. Wireless modems are typically combined with routers to allow you to create a private home or office network.
+A wireless router shouldn't be confused with a wireless modem. A wireless modem is what you receive from your ISP for your home or office, and is the device that converts the signal from the ISP into one that's usable on a computer network. Wireless modems are typically combined with routers to allow you to create a private home or office network.
 
 ## Azure options
 

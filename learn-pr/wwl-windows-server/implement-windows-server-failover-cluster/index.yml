@@ -21,7 +21,7 @@ prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
   - Windows Server 2012 or Windows Server 2016.
   - Core networking technologies.
-iconUrl: /learn/achievements/implement-windows-server-failover-clustering.svg
+iconUrl: /training/achievements/implement-windows-server-failover-clustering.svg
 levels:
 - intermediate
 roles:
@@ -30,6 +30,8 @@ roles:
 - solution-architect
 products:
 - windows-server
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.implement-windows-server-failover-clustering.introduction
 - learn.wwl.implement-windows-server-failover-clustering.define

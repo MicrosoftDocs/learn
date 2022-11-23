@@ -1,4 +1,4 @@
-If an item is deleted from a container in Azure Cosmos DB SQL API, that item may not be deleted from the index in Azure Cognitive Search. To enable tracking of deleted items, you must configure a policy to track when an item is deleted.
+If an item is deleted from a container in Azure Cosmos DB for NoSQL, that item may not be deleted from the index in Azure Cognitive Search. To enable tracking of deleted items, you must configure a policy to track when an item is deleted.
 
 Azure Cognitive Search supports, exclusively, the ability to track if an item is deleted using a combination of a field and value in a soft-delete scenario. For example, consider this JSON document that has a property named ``_isDeleted`` with a value of ``true``.
 
@@ -12,4 +12,4 @@ Azure Cognitive Search supports, exclusively, the ability to track if an item is
 }
 ```
 
-Using the soft-delete policy, the **softDeleteColumnName** for the data source (Azure Cosmos DB SQL API) would be configured as **_isDeleted**. The **softDeleteMarkerValue** would then be set to **true**. Using this strategy, Azure Cognitive Search will remove items that have been soft-deleted from the container.
+Using the soft-delete policy, the **softDeleteColumnName** for the data source (Azure Cosmos DB for NoSQL) would be configured as **_isDeleted**. The **softDeleteMarkerValue** would then be set to **true**. Using this strategy, Azure Cognitive Search will remove items that have been soft-deleted from the container.

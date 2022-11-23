@@ -198,7 +198,7 @@ AND T.Temperature = 70
 As shown in the query above, the ID of a digital twin is queried using the metadata field `$dtId`.
 
 > [!TIP]
-> If you are using Cloud Shell to run a query with metadata fields that begin with \`\`\`$\`\`\`, you should escape the \`\`\`$\`\`\` with a backtick to let Cloud Shell know it's not a variable and should be consumed as a literal in the query text.
+> If you are using Cloud Shell to run a query with metadata fields that begin with `$`, you should escape the `$` with a backtick to let Cloud Shell know it's not a variable and should be consumed as a literal in the query text.
 
 You can also get twins based on whether a certain property is defined. Here is a query that gets twins that have a defined Location property:
 
@@ -288,5 +288,5 @@ This section describes limitations of the query language.
 
 For more Azure Digital Twins query details and examples, see the following articles:
 
- -  Query API: [https://docs.microsoft.com/rest/api/digital-twins/dataplane/query/querytwins](/rest/api/digital-twins/dataplane/query/querytwins)
- -  Query the twin graph: [https://docs.microsoft.com/azure/digital-twins/how-to-query-graph](/azure/digital-twins/how-to-query-graph)
+ -  Query API: [Query - Query Twins](/rest/api/digital-twins/dataplane/query/querytwins)
+ -  Query the twin graph: [Query the Azure Digital Twins twin graph](/azure/digital-twins/how-to-query-graph)

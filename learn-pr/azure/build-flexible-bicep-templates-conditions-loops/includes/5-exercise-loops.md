@@ -71,7 +71,7 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 > [!CAUTION]
 > Be sure to use the same login and password that you used previously, or else the deployment won't finish successfully.
 
-You see `Running...` in the terminal. Wait for the deployment to finish.
+Wait for the deployment to finish.
 
 ## Verify the deployment
 
@@ -126,7 +126,7 @@ The teddy bear toy team is about to launch again, this time into Asia. The team 
 > [!CAUTION]
 > Be sure to use the same login and password that you used previously, or else the deployment won't finish successfully.
 
-You see `Running...` in the terminal. Wait for the deployment to finish.
+Wait for the deployment to finish.
 
 ## Verify the redeployment
 

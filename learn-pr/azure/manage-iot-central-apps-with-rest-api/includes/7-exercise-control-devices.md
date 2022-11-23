@@ -14,12 +14,12 @@ You can use the REST API to query for a device's telemetry measurement. Run the 
 # The FROM clause in the query needs the device template id.
 
 TEMPLATE_ID=`az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-001 \
---url-parameters api-version=1.0 \
+--url-parameters api-version=2022-07-31 \
 --headers Authorization="$OPERATOR_TOKEN" \
 --query "template" -o tsv`
 
 az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/query \
---url-parameters api-version=1.1-preview \
+--url-parameters api-version=2022-10-31-preview \
 --headers Authorization="$OPERATOR_TOKEN" Content-Type=application/json \
 --body '{
     "query": "SELECT TOP 5 $id AS device-id, $ts AS timestamp, ContentsTemperature, Location FROM '"$TEMPLATE_ID"' WHERE device-id = '"'sim-truck-001'"' ORDER BY timestamp DESC"
@@ -34,7 +34,7 @@ You can use the REST API to view device properties. Run the following command to
 
 ```azurecli
 az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-001/properties \
---url-parameters api-version=1.0 \
+--url-parameters api-version=2022-07-31 \
 --headers Authorization="$OPERATOR_TOKEN"
 ```
 
@@ -62,7 +62,7 @@ Run the following command in the Cloud Shell to set the **Target Temperature** t
 
 ```azurecli
 az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-001/properties \
---url-parameters api-version=1.0 \
+--url-parameters api-version=2022-07-31 \
 --headers Authorization="$OPERATOR_TOKEN" --body \
 '{
   "TargetTemperature": 12.5
@@ -76,39 +76,40 @@ Run the following command to see the new value for the property:
 
 ```azurecli
 az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-001/properties \
---url-parameters api-version=1.0 \
+--url-parameters api-version=2022-07-31 \
 --headers Authorization="$OPERATOR_TOKEN"
 ```
 
 ## Set a cloud property
 
-*The cloud property REST APIs are currently in preview.*
+You use the property API to update a cloud property.
 
 The refrigerated truck device template specified a **Last maintenance date** cloud property in the solution model:
 
 ```json
 {
-  "@type": "CloudProperty",
+  "@type": [
+    "Property",
+    "Cloud",
+    "StringValue"
+  ],
   "displayName": "Last maintenance date",
   "name": "maintenancedate",
-  "schema": "string",
-  "valueDetail": {
-    "@type": "StringValueDetail"
-  }
+  "schema": "string"
 }
 ```
 
 Run the following command in the Cloud Shell to set the **Last maintenance date** to **12.5** for one of the real devices in the application:
 
 ```azurecli
-az rest -m patch -u https://$APP_NAME.azureiotcentral.com/api/devices/real-truck-001/cloudProperties \
---url-parameters api-version=preview \
+az rest -m patch -u https://$APP_NAME.azureiotcentral.com/api/devices/real-truck-001/properties \
+--url-parameters api-version=2022-07-31 \
 --headers Authorization="$OPERATOR_TOKEN" --body \
 '{
   "maintenancedate": "December 2020"
 }'
-az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices/real-truck-001/cloudProperties \
---url-parameters api-version=preview \
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices/real-truck-001/properties \
+--url-parameters api-version=2022-07-31 \
 --headers Authorization="$OPERATOR_TOKEN"
 
 ```
@@ -166,12 +167,12 @@ The vehicle monitoring device template specified a **Get Max-Min report** comman
 }
 ```
 
-Run the following command in the Cloud Shell to send a **Get Max-Min report** command to one of the simulated devices in the application. The **Get Max-Min report** command takes a parameter that specifies the the start of the time period for the report:
+Run the following command in the Cloud Shell to send a **Get Max-Min report** command to one of the simulated devices in the application. The **Get Max-Min report** command takes a parameter that specifies the start of the time period for the report:
 
 ```azurecli
 SINCE=`date -d "now -2 hours" -Ins`
 az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-001/commands/getMaxMinReport \
---url-parameters api-version=1.0 \
+--url-parameters api-version=2022-07-31 \
 --headers Authorization="$OPERATOR_TOKEN" --body \
 '{
     "since": "'$SINCE'"
@@ -183,6 +184,6 @@ You can view the command history for a command to retrieve the most recent respo
 
 ```azurecli
 az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-001/commands/getMaxMinReport \
---url-parameters api-version=1.0 \
+--url-parameters api-version=2022-07-31 \
 --headers Authorization="$OPERATOR_TOKEN"
 ```

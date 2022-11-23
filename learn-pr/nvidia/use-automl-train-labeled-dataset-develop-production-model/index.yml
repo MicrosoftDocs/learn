@@ -20,7 +20,7 @@ abstract: |
   - Download the resulting model for use in a production deployment
 prerequisites: |
   - [Azure Free Trial Account](https://azure.microsoft.com/free/)
-iconUrl: /learn/achievements/setup-configure-nvidia-deepstream-development.svg
+iconUrl: /training/achievements/setup-configure-nvidia-deepstream-development.svg
 levels:
 - intermediate
 roles:
@@ -29,6 +29,10 @@ roles:
 products:
 - azure
 - azure-machine-learning
+subjects:
+- machine-learning
+- data-analytics
+- artificial-intelligence
 units:
 - learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.introduction
 - learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.prepare-jupyter-notebook-workspace

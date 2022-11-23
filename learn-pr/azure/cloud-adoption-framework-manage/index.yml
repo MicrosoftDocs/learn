@@ -3,9 +3,9 @@ uid: learn.cloud-adoption-framework-manage
 metadata:
   title: Ensure stable operations and optimization across all supported workloads deployed to the cloud
   description: As workloads are deployed to the cloud, operations are critical to success.
-  ms.date: 04/20/2022
+  ms.date: 11/08/2022
   author: BrianBlanchard
-  ms.author: bblanch
+  ms.author: brblanch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Ensure stable operations and optimization across all supported workloads deployed to the cloud
@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - Foundational understanding of cloud adoption
   - Understanding of your organization's requirements for operations management
-iconUrl: /learn/achievements/cloud-adoption-framework-manage.svg
+iconUrl: /training/achievements/cloud-adoption-framework-manage.svg
 ratingEnabled: true
 levels:
 - intermediate
@@ -44,6 +44,9 @@ products:
 - azure-monitor
 - azure-arc
 - azure-resource-manager
+subjects:
+- security
+- business-continuity
 units:
 - learn.cloud-adoption-framework-manage.1-introduction
 - learn.cloud-adoption-framework-manage.2-business-alignment

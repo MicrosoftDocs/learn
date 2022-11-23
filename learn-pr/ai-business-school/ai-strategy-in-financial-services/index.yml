@@ -17,7 +17,7 @@ abstract: |
   - Articulate the components of an AI strategy.
   - Apply the value creation framework.
 prerequisites: None
-iconUrl: /learn/achievements/ai-strategy-in-financial-services.svg
+iconUrl: /training/achievements/ai-strategy-in-financial-services.svg
 levels: 
 - intermediate
 roles: 
@@ -27,7 +27,9 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- artificial-intelligence
+units:
 - learn-wwl.ai-strategy-in-financial-services.introduction
 - learn-wwl.ai-strategy-in-financial-services.ai-value-in-financial-services-insead
 - learn-wwl.ai-strategy-in-financial-services.financial-services-case-study-introduction

@@ -17,7 +17,7 @@ abstract: |
   - Explain how Microsoft incorporated AI into its finance processes. 
   - Identify opportunities for change to achieve an AI-ready culture in your finance department.
 prerequisites: None
-iconUrl: /learn/achievements/foster-ai-ready-culture-finance.svg
+iconUrl: /training/achievements/foster-ai-ready-culture-finance.svg
 levels: 
 - intermediate
 roles: 
@@ -27,7 +27,9 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- artificial-intelligence
+units:
 - learn-wwl.foster-ai-culture-finance.introduction
 - learn-wwl.foster-ai-culture-finance.finance-case-study-introduction
 - learn-wwl.foster-ai-culture-finance.finance-executive-qa

@@ -8,7 +8,7 @@ Azure DevOps is a similar service that automatically builds and tests code proje
 
 DevOps is a combination of development (Dev) and operations (Ops). DevOps is the union of people, process, and technology to continually provide value to customers. Teams that adopt DevOps culture, practices, and tools become high-performing: building better products faster for greater customer satisfaction.
 
-A Continuous Integration and Continuous Delivery (CI/CD) pipeline is the backbone of a DevOps environment, and most Azure resources can be fully integrated with any CI/CD tool you choose. Two of the most common and widely tools used in Azure are GitHub Actions and Azure DevOps.
+A Continuous Integration and Continuous Delivery (CI/CD) pipeline is the backbone of a DevOps environment, and most Azure resources can be fully integrated with any CI/CD tool you choose. Two of the most common and widely used tools in Azure are GitHub Actions and Azure DevOps.
 
 ## Implement deployment automation with GitHub Actions
 
@@ -16,9 +16,9 @@ In the catching the bus example, there are three key services using GitHub Actio
 
 ### Automate deployment of Azure SQL Database using the SQL Action
 
-There is a specific GitHub Action available through Azure called the **SQL Action**. This action was created to work with Azure SQL services. Let's review how the main part of the workflow (YAML) file is constructed. As an example, let's use the catch the bus sample.
+There's a specific GitHub Action available through Azure called the **SQL Action**. This action was created to work with Azure SQL services. Let's review how the main part of the workflow (YAML) file is constructed. As an example, let's use the catch the bus sample.
 
-Below you are looking at the job within the workflow file. When a push happens or a pull request is merged, this job will run. The workflow uses `Azure/sql-action@v1.2`, which does most of the heavy lifting. You just have to provide the items under `with`: the connection string (stored as a secret in the repository), and the location of the .dacpac file. A .dacpac file contains the necessary database schema that is required for the database. The action will incrementally update the database schema to match the schema of the source .dacpac file.
+Below you're looking at the job within the workflow file. When a push happens or a pull request is merged, this job will run. The workflow uses `Azure/sql-action@v1.2`, which does most of the heavy lifting. You just have to provide the items under `with`: the connection string (stored as a secret in the repository), and the location of the .dacpac file. A .dacpac file contains the necessary database schema that is required for the database. The action will incrementally update the database schema to match the schema of the source .dacpac file.
 
 ```yml
   deploy_database_job:
@@ -36,7 +36,7 @@ Below you are looking at the job within the workflow file. When a push happens o
 
 ### Automate deployment of Azure Functions in any language
 
-Similar to Azure SQL, connecting to Azure Functions from GitHub Actions is not difficult. The documentation provides several sample snippets depending on the language you want to use, and then you fill it in. Just like a connection string for Azure SQL is required, you have to include your function's *Publish Profile*, which specifies how to connect to Azure Functions. Additionally, just like you had to specify the 'code' for your database's schema, you also have to specify where in your repository the code is located. Finally, depending on the language, you'll need to specify the version (for example, `NODE_VERSION: '14.x'`).
+Similar to Azure SQL, connecting to Azure Functions from GitHub Actions isn't difficult. The documentation provides several sample snippets depending on the language you want to use, and then you fill it in. Just like a connection string for Azure SQL is required, you have to include your function's *Publish Profile*, which specifies how to connect to Azure Functions. Additionally, just like you had to specify the 'code' for your database's schema, you also have to specify where in your repository the code is located. Finally, depending on the language, you'll need to specify the version (for example, `NODE_VERSION: '14.x'`).
 
 ### Implement CI/CD by default using Azure Static Web Apps
 

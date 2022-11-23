@@ -4,13 +4,12 @@ title: Examine architectural components
 metadata:
   title: Examine architectural components
   description: "Examine architectural components"
-  ms.date: 12/08/2021
+  ms.date: 07/07/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 5
 content: |

@@ -33,7 +33,7 @@ Before you can use the SAP ERP Connector, install these components on the same m
     > [!NOTE]
     > Access to the download requires a valid S-user. You may need to reach out to your SAP team. The connector comes in 32-bit and 64-bit versions, and you must choose the 64-bit version. Install on the data gateway. In the Optional setup steps window, make sure you select the Install assemblies to GAC option.
 
-If you have a unique connectivity requirement, you can [build a custom connector](https://docs.microsoft.com/connectors/custom-connectors/) and connect to it.
+If you have a unique connectivity requirement, you can [build a custom connector](/connectors/custom-connectors/) and connect to it.
 
 Power Apps and Power Automate Robotic Process Automation (RPA) allow you to automate rules-based tasks from SAP data and applications. For example, you can automate legacy applications such as terminal emulators, and interact with modern web and desktop applications, Excel files, folders and more.
 

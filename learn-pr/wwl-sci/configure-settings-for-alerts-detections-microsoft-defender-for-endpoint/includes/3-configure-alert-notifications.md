@@ -2,7 +2,7 @@ You can configure Defender for Endpoint to send email notifications to specified
 
 Only users with 'Manage security settings' permissions can configure email notifications. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications.
 
-You can set the alert severity levels that trigger notifications. You can also add or remove recipients of the email notification. New recipients get notified about alerts encountered after they are added. For more information about alerts, see View and organize the Alerts queue.
+You can set the alert severity levels that trigger notifications. You can also add or remove recipients of the email notification. New recipients get notified about alerts encountered after they're added. For more information about alerts, see View and organize the Alerts queue.
 
 If you're using role-based access control (RBAC), recipients will only receive notifications based on the device groups that were configured in the notification rule. Users with the proper permission can only create, edit, or delete notifications limited to their device group management scope. Only users assigned to the Global administrator role can manage notification rules that were configured for all device groups.
 

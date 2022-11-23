@@ -29,7 +29,7 @@ summary: |
  
 prerequisites: |
   None
-iconUrl: /learn/achievements/beginner-python.svg
+iconUrl: /training/achievements/beginner-python.svg
 levels:
 - beginner
 roles:
@@ -37,6 +37,8 @@ roles:
 - student
 products:
 - vs-code
+subjects:
+- development-tools
 modules:
 - learn.beginner-python.create-run-jupyter-notebook
 - learn.languages.python-install-vscode

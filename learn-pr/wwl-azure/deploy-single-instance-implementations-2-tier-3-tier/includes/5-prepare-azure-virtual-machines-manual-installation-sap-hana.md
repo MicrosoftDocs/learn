@@ -1,11 +1,11 @@
 This section covers the following topics:
 
- -  OS updates
- -  Disk setup
- -  Kernel parameters
- -  File systems
- -  The **/etc/hosts** file
- -  The **/etc/fstab** file
+- OS updates
+- Disk setup
+- Kernel parameters
+- File systems
+- The **/etc/hosts** file
+- The **/etc/fstab** file
 
 ## OS updates
 
@@ -13,8 +13,8 @@ Check for Linux OS updates and fixes before you install additional software. By 
 
 Make sure that you use:
 
- -  SUSE Linux Enterprise Server for SAP Applications.
- -  Red Hat Enterprise Linux for SAP Applications or Red Hat Enterprise Linux for SAP HANA.
+- SUSE Linux Enterprise Server for SAP Applications.
+- Red Hat Enterprise Linux for SAP Applications or Red Hat Enterprise Linux for SAP HANA.
 
 If you haven't done so already, register the OS deployment with your Linux subscription from the Linux vendor. SUSE has OS images for SAP applications that already include services, and which are registered automatically.
 
@@ -24,20 +24,20 @@ Here's an example of how to check for available patches for SUSE Linux by using 
 
 Depending on the kind of issue, patches are classified by category and severity. Commonly used values for category are:
 
- -  Security
- -  Recommended
- -  Optional
- -  Feature
- -  Document
- -  Yast
+- Security
+- Recommended
+- Optional
+- Feature
+- Document
+- Yast
 
 Commonly used values for severity are:
 
- -  Critical
- -  Important
- -  Moderate
- -  Low
- -  Unspecified
+- Critical
+- Important
+- Moderate
+- Low
+- Unspecified
 
 The zypper command looks only for the updates that your installed packages need. For example, you can use this command:
 
@@ -92,7 +92,6 @@ Based on the SAP HANA TDI storage requirements, the following Azure premium stor
   :::column-end:::
 :::row-end:::
 
-
 In the suggested disk configuration, the HANA data volume and log volume are placed on the same set of premium storage disks that are striped with LVM or mdadm. It isn't necessary to define any RAID redundancy level because Azure premium storage provides sufficient level of redundancy.
 
 You can add more premium storage disks to the HANA DBMS VMs to store database or transaction log backups.
@@ -116,8 +115,7 @@ To make the SAP HANA kernel settings permanent, use grub2 on SLES 12. Another op
 
 The following screenshot shows two file systems that were created on the SAP app server VM on top of the two attached Azure standard storage disks. Both file systems are of the type XFS and are mounted to /sapdata and /sapsoftware.
 
-:::image type="content" source="../media/two-file-systems-sap-app-server-728cdf09.png" alt-text="Two file systems that were created on the SAP app server VM on top of the two attached Azure standard storage disks.":::
-
+:::image type="content" source="../media/two-file-systems-sap-app-server-728cdf09.png" alt-text="Two file systems that were created on the S A P app server virtual machine on top of the two attached Azure standard storage disks.":::
 
 It isn't mandatory to structure your file systems this way. You have other options for how to structure the disk space. The most important consideration is to prevent the root file system from running out of free space.
 

@@ -3,7 +3,7 @@ uid: learn.github.create-custom-github-actions
 metadata:
   title: Create and publish custom GitHub actions 
   description: Learn how to create and publish custom GitHub actions.
-  ms.date: 04/14/2021
+  ms.date: 07/08/2022
   author: a-a-ron
   ms.author: aastewar
   ms.topic: interactive-tutorial
@@ -31,6 +31,8 @@ prerequisites: |
   - The ability to navigate and edit files in GitHub
   - Basic familiarity with GitHub Actions and workflows
   - Basic familiarity with continuous integration using GitHub Actions and workflows
+subjects:
+- devops
 units:
   - learn.github.create-custom-github-actions.introduction
   - learn.github.create-custom-github-actions.create-custom-github-action
@@ -38,6 +40,6 @@ units:
   - learn.github.create-custom-github-actions.exercise-create-custom-action
   - learn.github.create-custom-github-actions.knowledge-check
   - learn.github.create-custom-github-actions.summary
-iconUrl: /learn/achievements/github/create-custom-github-actions.svg
+iconUrl: /training/achievements/github/create-custom-github-actions.svg
 badge:
   uid: learn.github.create-custom-github-actions.badge

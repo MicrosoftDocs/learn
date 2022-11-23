@@ -19,7 +19,7 @@ abstract: |
   - Filter data with predicates
 prerequisites: |
   Before starting this module, you should be familiar with the basic syntax of the SELECT Transact-SQL statement.
-iconUrl: /learn/achievements/organize-data-with-transact-sql.svg
+iconUrl: /training/achievements/organize-data-with-transact-sql.svg
 levels:
 - beginner
 roles:
@@ -36,6 +36,8 @@ products:
 - azure-sql-managed-instance
 - azure-sqlserver-vm
 - azure-sql-virtual-machines
+subjects:
+- database
 units:
 - learn.wwl.sort-and-filter-queries.introduction
 - learn.wwl.sort-and-filter-queries.sort-your-data-as-its-returned

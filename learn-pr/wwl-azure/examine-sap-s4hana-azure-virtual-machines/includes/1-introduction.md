@@ -8,6 +8,6 @@ You review the architecture options available when deploying SAP S/4HANA on Azur
 
 You will:
 
- -  Explore SAP S/4HANA on Azure virtual machines.
- -  Learn to recognize the architecture's components.
- -  Examine a sample functional workflow.
+- Explore SAP S/4HANA on Azure virtual machines.
+- Learn to recognize the architecture's components.
+- Examine a sample functional workflow.

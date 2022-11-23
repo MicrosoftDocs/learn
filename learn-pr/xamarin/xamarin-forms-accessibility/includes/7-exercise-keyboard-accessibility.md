@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 To complete the project, you must now implement a way to enter data for the user's and their manager's forenames and surnames.
 
 ## Add data-entry elements for names

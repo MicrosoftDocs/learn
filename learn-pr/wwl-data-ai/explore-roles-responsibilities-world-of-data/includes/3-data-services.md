@@ -80,7 +80,6 @@ Data Analysts can use the native notebook support in Azure Databricks to query a
 - **Apache Hadoop** - a distributed system that uses *MapReduce* jobs to process large volumes of data efficiently across multiple cluster nodes. MapReduce jobs can be written in Java or abstracted by interfaces such as Apache Hive - a SQL-based API that runs on Hadoop.
 - **Apache HBase** - an open-source system for large-scale NoSQL data storage and querying.
 - **Apache Kafka** - a message broker for data stream processing.
-- **Apache Storm** - an open-source system for real-time data processing through a topology of *spouts* and *bolts*.
 
 Data engineers can use Azure HDInsight to support big data analytics workloads that depend on multiple open-source technologies.
 
@@ -104,5 +103,5 @@ Data engineers can use Microsoft Purview to enforce data governance across the e
 
 ## Microsoft Power BI
 
-![Microsoft Power BI logo](../media/power-bi.png) Microsoft Power BI is a platform for analytical data modeling and reporting that data analysts can use to create and share interactive data visualizations. Power BI reports can be created by using the Power BI Desktop application, and the published and delivered through web-based reports and apps in the Power BI service, as well as in the Power BI mobile app.
+![Microsoft Power BI logo](../media/power-bi.png) Microsoft Power BI is a platform for analytical data modeling and reporting that data analysts can use to create and share interactive data visualizations. Power BI reports can be created by using the Power BI Desktop application, and then published and delivered through web-based reports and apps in the Power BI service, as well as in the Power BI mobile app.
 

@@ -2,7 +2,7 @@
 uid: learn.python-partnership.secret-message
 metadata:
   title: Crack the code and reveal a secret with Python and Visual Studio Code
-  description: You're handed a secret message that needs a code cracker to find the truth. Learn how to solve the code mystery to reveal a location and date to find a hidden treasure. Get a glimpse into the popular Python programming language with this introductory lesson that requires no coding experience.
+  description: You're handed a secret message that you need to decode to find the truth. Learn how to solve the code mystery to reveal a location and date to find a hidden treasure. Get a glimpse into the popular Python programming language with this introductory lesson that requires no coding experience.
   ms.date: 04/14/2021
   author: drguthals
   ms.author: chnoring
@@ -24,7 +24,7 @@ abstract: |
   > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
 prerequisites: |
   - [Visual Studio Code with Python Extension](https://aka.ms/LearnOnVSCode?azure-portal=true)
-iconUrl: /learn/achievements/python-partnership/secret-message-revised.svg
+iconUrl: /training/achievements/python-partnership/secret-message-revised.svg
 levels:
 - beginner
 roles:
@@ -32,6 +32,8 @@ roles:
 - developer
 products:
 - vs-code
+subjects:
+- development-tools
 units:
 - learn.python-partnership.secret-message.introduction
 - learn.python-partnership.secret-message.vs-code-setup

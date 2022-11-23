@@ -2,7 +2,7 @@ The Microsoft Azure IoT device SDKs include lots of useful tools and information
 
 ## Coding language support
 
-Depending on the IoT scenario and your developer experience, you may have a preferred language or platform. The SDKs got you covered. Support for various platforms, languages, and protocols allows you to develop in your preferred environment. Five languages are currently supported: C, C\#, Java, Node.js, and Python. APIs are consistent across the five languages, as much as language-specific constructs allow.
+Depending on the IoT scenario and your developer experience, you may have a preferred language or platform. The SDKs have got you covered. Support for various platforms, languages, and protocols allows you to develop in your preferred environment. Five languages are currently supported: C, C\#, Java, Node.js, and Python. APIs are consistent across the five languages, as much as language-specific constructs allow.
 
 Each language has a public GitHub repo that includes sample code and documentation. The SDKs are also available as binary packages. You can choose from NuGet for C\#, Maven for Java, apt-get for some Linux Distributions, npm for Node.js, and pip for Python.
 

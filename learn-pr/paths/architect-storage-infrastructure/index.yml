@@ -12,7 +12,7 @@ metadata:
 title: Architect storage infrastructure in Azure
 summary: Learn how to architect storage solutions for your applications in Azure.
 prerequisites: None
-iconUrl: /learn/achievements/architect-storage-infrastructure.svg
+iconUrl: /training/achievements/architect-storage-infrastructure.svg
 levels:
 - intermediate
 roles:
@@ -20,6 +20,8 @@ roles:
 products:
 - azure
 - azure-storage
+subjects:
+- infrastructure
 modules:
 - learn.choose-storage-approach-in-azure
 - learn.create-azure-storage-account

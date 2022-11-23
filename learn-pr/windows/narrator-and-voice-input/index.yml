@@ -18,13 +18,16 @@ prerequisites: |
  - Experience writing C# and XAML code.
  - Familiarity with using Visual Studio as a development environment.
  - A set of speakers and microphone, or a headset.
-iconUrl: /learn/achievements/narrator-and-voice-input.svg
+iconUrl: /training/achievements/narrator-and-voice-input.svg
 levels:
 - intermediate
 roles:
 - developer
 products:
 - windows
+subjects:
+- natural-language-processing
+- artificial-intelligence
 units:
 - learn-windows.narrator-and-voice-input.1-introduction
 - learn-windows.narrator-and-voice-input.2-audio-descriptions-with-narrator

@@ -17,7 +17,7 @@ quiz:
   questions:
   - content: "What operating systems do Azure AD registered devices support?"
     choices:
-    - content: "Windows 10, iOS, Android, and macOS"
+    - content: "Windows 10, Windows 11, iOS, Android, and macOS"
       isCorrect: true
       explanation: "The option of Azure AD registered supports devices that run Windows 10, iOS, iPadOS, Android, and macOS."
     - content: "Windows 7, Windows 8.1, and Windows 10 only"

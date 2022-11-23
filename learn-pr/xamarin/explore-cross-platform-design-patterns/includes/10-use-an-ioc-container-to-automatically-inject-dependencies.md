@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 The last pattern we'll look at is the *dependency injection* pattern. 
 
 Service locators work nicely for smaller projects. But they can be unwieldy when you try to reuse things across applications or when you have many interconnected services. Service locators tend to be fragile because missing dependencies can't be detected until they're requested at runtime.

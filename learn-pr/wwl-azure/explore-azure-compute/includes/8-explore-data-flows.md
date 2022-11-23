@@ -8,4 +8,4 @@ Azure VMs are more agile than on-premises virtual machines. You can deploy and s
 
 In each of these scenarios, you also benefit from the pricing model applicable to Azure VMs. When you run Azure VMs, you pay for the compute time on a per-second basis. The price for VMs is calculated based on their size, the operating system, and any licensed software installed on the VM. A running virtual machine requires allocation of Azure compute resources. Therefore, to avoid the corresponding charges whenever you aren't using it, you should change its state to **Stopped (Deallocated)**.
 
-:::image type="content" source="../media/data-flows-between-2-vms-network-appliance-fa603621.png" alt-text="Diagram illustrating data flows between 2 VMs and a network appliance":::
+:::image type="content" source="../media/data-flows-between-2-vms-network-appliance-fa603621.png" alt-text="Diagram illustrating data flows between 2 virtual machines and a network appliance.":::

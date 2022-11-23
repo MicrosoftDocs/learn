@@ -1,8 +1,8 @@
-You've spent some time with your team learning the benefits of infrastructure as code and the different approaches that are available. Your company is growing at a rapid pace and your team knows it will be deploying a significant number of resources to Azure. As a team, you've decided that declarative infrastructure as code is the right approach to resource provisioning. The team doesn't want to maintain scripts that list every deployment step. Before beginning the process of building your first template, you need to understand how Azure Resource Manager works. Investigating the types of templates that are available to use with Azure will help you determine the next steps in your infrastructure as code strategy.
+You've spent some time with your team learning the benefits of infrastructure as code and the different approaches that are available. Your company is growing at a rapid pace and your team knows it will be deploying a significant number of resources to Azure. As a team, you've decided that declarative infrastructure as code is the right approach to resource provisioning. The team doesn't want to maintain scripts that list every deployment step. Before beginning the process of building your first template, you need to understand how Azure Resource Manager works. Investigating the types of templates that are available to use with Azure will help you determine the next steps in your infrastructure-as-code strategy.
 
 In this unit, you'll learn about Resource Manager and the two types of Resource Manager templates.
 
-## What is Azure Resource Manager?
+## Azure Resource Manager concepts
 
 Azure Resource Manager is the service that's used to deploy and manage resources in Azure. You can use Resource Manager to create, update, and delete resources in your Azure subscription. You can interact with Resource Manager by using many tools, including the Azure portal. Resource Manager also provides a series of other features, like access control, auditing, and tagging, to help manage your resources after deployment.
 
@@ -21,11 +21,11 @@ As you begin your cloud journey with Resource Manager, it's important to underst
 
 - **Management group**: A logical container that you use to manage more than one subscription. You can define a hierarchy of management groups, subscriptions, resource groups, and resources to efficiently manage access, policies, and compliance through inheritance.
 
-- **Azure Resource Manager template (ARM template)**: A template file that defines one or more resources to deploy to a resource group, subscription, management group, or tenant. You can use the template to deploy the resources in a consistent and repeatable way. There are two types of ARM template files: JSON and Bicep. This module focuses on the Bicep type of ARM template.
+- **Azure Resource Manager template (ARM template)**: A template file that defines one or more resources to deploy to a resource group, subscription, management group, or tenant. You can use the template to deploy the resources in a consistent and repeatable way. There are two types of ARM template files: JSON and Bicep. This module focuses on Bicep.
 
 ### Benefits
 
-Resource Manager provides many benefits and capabilities related to infrastructure as code resource provisioning:
+Resource Manager provides many benefits and capabilities related to infrastructure-as-code resource provisioning:
 
 - You can deploy, manage, and monitor the resources in your solution as a group instead of individually.
 - You can redeploy your solution throughout the development lifecycle and have confidence that your resources are deployed in a consistent state.
@@ -44,19 +44,19 @@ When you send a request from any of the Azure tools, APIs, or SDKs, Resource Man
 
 The following image shows the role Resource Manager plays in handling Azure requests:
 
-:::image type="content" source="../../includes/media/azure-resource-manager.png" alt-text="Diagram showing Azure Resource Manager accepting requests from all Azure clients and libraries." border="false":::
+:::image type="content" source="../../includes/media/azure-resource-manager.png" alt-text="Diagram that shows how Azure Resource Manager accepts requests from all Azure clients and libraries." border="false" :::
 
 All control plane operation requests are sent to a Resource Manager URL. For example, the create or update operation for virtual machines is a control plane operation. Here's the request URL for this operation:
 
 ```http
-PUT https://management.azure.com/subscriptions/<subscriptionId>/resourceGroups/<resourceGroupName>/providers/Microsoft.Compute/virtualMachines/{virtualMachineName}?api-version=2020-12-01
+PUT https://management.azure.com/subscriptions/<subscriptionId>/resourceGroups/<resourceGroupName>/providers/Microsoft.Compute/virtualMachines/{virtualMachineName}?api-version=2022-08-01
 ```
 
 The control plane understands which resources need to be created and which resources already exist. Resource Manager understands the difference between these requests and won't create identical resources or delete existing resources, although there are ways to override this behavior.
 
 #### Data plane
 
-When starting a data plane operation, requests are sent to a specific endpoint in your Azure subscription. For example, the Detect Language operation in Cognitive Services is a data plane operation because the request URL is:
+When a data plane operation starts, the requests are sent to a specific endpoint in your Azure subscription. For example, the Detect Language operation in Cognitive Services is a data plane operation because the request URL is:
 
 ```http
 POST https://eastus.api.cognitive.microsoft.com/text/analytics/v2.0/languages
@@ -76,7 +76,7 @@ There are many benefits to using ARM templates, both JSON and Bicep, for your re
 
 - **Orchestration**:  When a template deployment is submitted to Resource Manager, the resources in the template are deployed in parallel. This process allows deployments to finish faster. Resource Manager orchestrates these deployments in the correct order if one resource depends on another.
 
-- **Preview**:  The what-if tool, available in PowerShell and Azure CLI, allows you to preview changes to your environment before template deployment. This tool will detail any creations, modification, and deletions that will be made by your template.
+- **Preview**:  The what-if tool, available in Azure PowerShell and Azure CLI, allows you to preview changes to your environment before template deployment. This tool will detail any creations, modification, and deletions that will be made by your template.
 
 - **Testing and Validation**:  You can use tools like the Bicep linter to check the quality of your templates before deployment. ARM templates submitted to Resource Manager are validated before the deployment process. This validation alerts you to any errors in your template before resource provisioning.
 

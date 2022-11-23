@@ -1,4 +1,4 @@
-If the back end and front end of your app live in two different places, you need to configure something called *cross-origin resource sharing*, or CORS. 
+If the back end and front end of your app live in two different places, you need to configure something called *cross-origin resource sharing*, or CORS.
 
 ## Connect to a back end
 
@@ -9,11 +9,11 @@ You have a front-end app. What do you need to think about for the back-end appli
 
 ## Mock an API
 
-As you build your front-end app, you know that a back-end team will be done building the API at some point. Do you wait for the back-end team to finish, before you build the corresponding view? There are actually different approaches you can take here:
+As you build your front-end app, you know that a back-end team will be done building the API at some point. Do you wait for the back-end team to finish, before you build the corresponding view? There are different approaches you can take here:
 
 - **Build a vertical:** In this approach, you work closely with the person building the back end. You build your front-end part, and then the back-end developer builds their part. When both parts work, you have a _full vertical_, and you can continue to the next feature. This approach is viable, but it does force the teams to be very in sync.
 
-- **Mock the data:** This approach has fewer requirements for close coordination between teams. In this scenario, the front-end developer negotiates with the back-end team, with regard to what the response from the back end will look like. When you're in agreement, you start creating mock data, static files that the front-end team uses instead. The front-end team can now move at any desired development speed. At some point, you do need to synchronize with the back-end team, to ensure that the back end was built according to what you agreed on.
+- **Mock the data:** This approach has fewer requirements for close coordination between teams. In this scenario, the front-end developer negotiates with the back-end team, with regard to what the response from the back end will look like. When you agree, you start creating mock data, static files that the front-end team uses instead. The front-end team can now move at any desired development speed. At some point, you do need to synchronize with the back-end team, to ensure that the back end was built according to what you agreed on.
 
 ### Use the json-server library
 
@@ -79,7 +79,7 @@ However, when you first try to talk to your real back end, you might get an erro
 Access to fetch at http://localhost:5000 from origin 'http://localhost:3000' has been blocked by CORS policy...
 ```
 
-This error tells you that the front-end app isn't allowed to call the back end, because the front end comes from a different place than the back end is residing in. One is running on port 3000, and the other on port 5000. The good news is that you can fix this error by implementing CORS on the back end.  
+This error tells you that the front-end app isn't allowed to call the back end, because the front end comes from a different place than the back end is residing. One is running on port 3000, and the other on port 5000. The good news is that you can fix this error by implementing CORS on the back end.  
 
 > [!NOTE]
 > When your front end and back end run on the same domain and port, you won't get CORS issues. Configuring CORS is only needed if the front end and back end run on different places.
@@ -111,14 +111,16 @@ The CORS configuration is the responsibility of the server. How that's configure
 ```csharp
 // 1) define a unique string
 readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
-// 2) define allowed domains, in this case "http://example.com" and "*" = all domains, for testing purposes only
+
+// 2) define allowed domains, in this case "http://example.com" and "*" = all
+//    domains, for testing purposes only.
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: MyAllowSpecificOrigins,
       builder =>
       {
-          builder.WithOrigins("http://example.com",
-                              "*");
+          builder.WithOrigins(
+            "http://example.com", "*");
       });
 });
 // 3) use the capability

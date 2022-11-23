@@ -16,7 +16,7 @@ abstract: |
   - Identify the metrics and logs that can be used to troubleshoot and diagnose storage issues
 prerequisites: | 
   - Basic familiarity with Azure Storage
-iconUrl: /learn/achievements/monitor-diagnose-and-troubleshoot-azure-storage.svg
+iconUrl: /training/achievements/monitor-diagnose-and-troubleshoot-azure-storage.svg
 levels:
 - intermediate
 roles:
@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-storage
+subjects:
+- storage
 units:
 - learn.monitor-diagnose-and-troubleshoot-azure-storage.1-introduction
 - learn.monitor-diagnose-and-troubleshoot-azure-storage.2-storage-troubleshooting-tools

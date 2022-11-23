@@ -2,7 +2,7 @@ In complex deployments, organizations might have a need to restrict authenticati
 
  -  Resource access from an unmanaged or shared device.
  -  Access to sensitive information from an external network.
- -  High impact users.
+ -  High priority or executive users.
  -  Critical business applications.
 
 Conditional Access controls allow you to create policies that target specific use cases within your organization without affecting all users.
@@ -15,7 +15,7 @@ Sign-in frequency defines the time period before a user is asked to sign in agai
 
 The Azure AD default configuration for user sign-in frequency is a rolling window of 90 days. Asking users for credentials often seems like a sensible thing to do, but it can backfire: Users who are trained to enter their credentials without thinking can unintentionally supply them to a malicious credential prompt.
 
-It might sound alarming to not ask for a user to sign back in; in reality any violation of IT policies will revoke the session. Some examples include a password change, an incompliant device, or an account disable. You can also explicitly revoke users’ sessions using PowerShell. The Azure AD default configuration comes down to “don’t ask users to provide their credentials if the security posture of their sessions has not changed.”
+It might sound alarming to not ask for a user to sign back in; in reality any violation of IT policies will revoke the session. Some examples include a password change, an incompliant device, or an account disable. You can also explicitly revoke users’ sessions using PowerShell. The Azure AD default configuration comes down to “don’t ask users to provide their credentials if the security posture of their sessions hasn't changed.”
 
 The sign-in frequency setting works with apps that have implemented OAUTH2 or OIDC protocols according to the standards. Most Microsoft native apps for Windows, Mac, and mobile, including the following web applications, comply with the setting.
 
@@ -29,13 +29,13 @@ The sign-in frequency setting works with apps that have implemented OAUTH2 or OI
  -  Dynamics CRM Online
  -  Azure portal
 
-The sign-in frequency setting works with SAML applications as well, as long as they do not drop their own cookies and are redirected back to Azure AD for authentication on a regular basis.
+The sign-in frequency setting works with SAML applications as well, as long as they don't drop their own cookies and are redirected back to Azure AD for authentication on a regular basis.
 
 ### User sign-in frequency and multifactor authentication
 
 Sign-in frequency previously applied only to the first factor authentication on devices that were Azure AD joined, Hybrid Azure AD joined, and Azure AD registered. There was no easy way for our customers to re-enforce multifactor authentication (MFA) on those devices. Based on customer feedback, sign-in frequency will apply for MFA as well.
 
-:::image type="content" source="../media/conditional-access-flow-chart-bffc32a8.png" alt-text="Sign in frequency and MFA":::
+:::image type="content" source="../media/conditional-access-flow-chart-2401cc8b.png" alt-text="Screenshot of the Sign-in frequency and MFA with Azure A D conditional access.":::
 
 
 ### User sign-in frequency and device identities
@@ -61,9 +61,9 @@ A persistent browser session allows users to remain signed in after closing and 
 
 ## Validation
 
-Use the What-If tool to simulate a login from the user to the target application and other conditions based on how you configured your policy. The authentication session management controls show up in the result of the tool.
+Use the What-If tool to simulate a sign-in from the user to the target application and other conditions based on how you configured your policy. The authentication session management controls show up in the result of the tool.
 
-:::image type="content" source="../media/conditional-access-what-if-tool-result-d650b99d.png" alt-text="Conditional Access What If tool results":::
+:::image type="content" source="../media/conditional-access-what-if-tool-result-3dc01f5c.png" alt-text="Screenshot of the Conditional Access What If tool results.":::
 
 
 ## Policy deployment

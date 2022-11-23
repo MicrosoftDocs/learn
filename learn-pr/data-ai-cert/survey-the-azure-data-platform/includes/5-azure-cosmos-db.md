@@ -10,7 +10,7 @@ Because of the multimodel architecture of Azure Cosmos DB, you benefit from each
 
 > [!NOTE]
 >
-> For more information about the APIs that are available in Azure Cosmos DB, see [Choose the appropriate API for Azure Cosmos DB storage](/learn/modules/choose-api-for-cosmos-db/).
+> For more information about the APIs that are available in Azure Cosmos DB, see [Choose the appropriate API for Azure Cosmos DB storage](/training/modules/choose-api-for-cosmos-db/).
 
 ## When to use Azure Cosmos DB
 
@@ -18,7 +18,7 @@ Deploy Azure Cosmos DB when you need a NoSQL database of the supported API model
 
 Consider this example where Azure Cosmos DB helps resolve a business problem. Contoso is an e-commerce retailer based in Manchester, UK. The company sells children's toys. After reviewing Power BI reports, Contoso's managers notice a significant decrease in sales in Australia. Managers review customer service cases in Dynamics 365 and see many Australian customer complaints that their site's shopping cart is timing out.
 
-Contoso's network operations manager confirms the problem. It's that the company's only data center is located in London. The physical distance to Australia is causing delays. Contoso applies a solution that uses the Microsoft Australia East datacenter to provide a local version of the data to users in Australia. Contoso migrates their on-premises SQL Database to Azure Cosmos DB by using the SQL API. This solution improves performance for Australian users. The data can be stored in the UK and replicated to Australia to improve throughput times.
+Contoso's network Operations Manager confirms the problem. It's that the company's only data center is located in London. The physical distance to Australia is causing delays. Contoso applies a solution that uses the Microsoft Australia East datacenter to provide a local version of the data to users in Australia. Contoso migrates their on-premises SQL Database to Azure Cosmos DB by using the SQL API. This solution improves performance for Australian users. The data can be stored in the UK and replicated to Australia to improve throughput times.
 
 ## Key features
 

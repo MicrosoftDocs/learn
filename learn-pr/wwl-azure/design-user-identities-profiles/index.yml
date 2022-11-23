@@ -19,7 +19,7 @@ abstract: |
   *  Deploy Windows Desktop client to multiple devices.
   *  Describe Hybrid Identity for Azure Virtual Desktop.
 prerequisites: ""
-iconUrl: /learn/achievements/3-design-for-user-identities-and-profiles.svg
+iconUrl: /training/achievements/3-design-for-user-identities-and-profiles.svg
 levels:
 - intermediate
 roles:
@@ -29,6 +29,8 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- identity-access
 units:
 - learn.wwl.design-for-user-identities-profiles.introduction
 - learn.wwl.design-for-user-identities-profiles.select-appropriate-licensing-model-for-azure-virtual-desktop-based-requirements

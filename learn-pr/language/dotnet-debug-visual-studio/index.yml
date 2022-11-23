@@ -15,7 +15,7 @@ abstract: |
   - Debug a .NET program with the Visual Studio debugger.
   - Create breakpoints and run your code step by step to find issues.
   - Inspect your program state at any execution step.
-iconUrl: /learn/achievements/dotnet-debug-visual-studio.svg
+iconUrl: /training/achievements/dotnet-debug-visual-studio.svg
 levels:
 - beginner
 roles:
@@ -25,8 +25,9 @@ products:
 - dotnet
 - vs-ide
 prerequisites: |
-  - Local installations of [.NET SDK](https://dotnet.microsoft.com/download)
-  - [Visual Studio](https://visualstudio.com)
+  - [Visual Studio](https://visualstudio.com) with a .NET workload installed (for example, ASP.NET and web development workload)
+subjects:
+- development-tools
 units:
 - learn.dotnet-debug-visual-studio.introduction
 - learn.dotnet-debug-visual-studio.debugger

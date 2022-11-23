@@ -28,13 +28,15 @@ prerequisites: |
 video:
   title: "Work with data in C#"
   url: https://www.microsoft.com/videoplayer/embed/RWVrBc
-iconUrl: /learn/achievements/csharp-data.svg
+iconUrl: /training/achievements/csharp-data.svg
 levels:
 - beginner
 roles:
 - developer
 products:
 - dotnet
+subjects:
+- data-engineering
 modules:
 - learn.languages.csharp-choose-data-type
 - learn.languages.csharp-convert-cast

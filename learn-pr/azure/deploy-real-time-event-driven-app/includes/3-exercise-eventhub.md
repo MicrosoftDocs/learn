@@ -70,11 +70,11 @@ az functionapp create \
     --storage-account $STORAGE_ACCOUNT"p" \
     --consumption-plan-location $LOCATION \
     --runtime java \
-    --functions-version 3
+    --functions-version 4
 ```
 
 > [!NOTE]
-> To use Java for the Azure Functions application, we need to use at least functions-version 2, or the latest, version 3.
+> Use functions-version 4 as 2 and 3 are deprecated early December 2022.
 
 When the `az functionapp create` command creates your function application, it also creates an Application Insights resource with the same name. We'll use that resource later for our monitoring.
 
@@ -147,7 +147,7 @@ For local execution, the application settings need to be retrieved and stored at
 func azure functionapp fetch-app-settings $FUNCTION_APP"-p"
 ```
 
-Next, open the `Functions.java` file and replace the content with the following code:
+Next, open the `Function.java` file and replace the content with the following code:
 
 ``` Java
 package com.learn;

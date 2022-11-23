@@ -4,8 +4,8 @@ metadata:
   title: Publish an API to Azure Static Web Apps
   description: Publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Web Apps and Azure Functions. Deploy your code from GitHub to a staging site using preview URLs.
   ms.date: 06/17/2021
-  author: johnpapa
-  ms.author: jopapa
+  author: craigshoemaker
+  ms.author: cshoe
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Publish an API to Azure Static Web Apps
@@ -23,7 +23,7 @@ prerequisites: |
   - [GitHub](https://github.com) account
   - [Visual Studio Code](https://code.visualstudio.com)
   - Beginner-level experience with Azure Functions
-iconUrl: /learn/achievements/publish-static-web-app-api-preview-url.svg
+iconUrl: /training/achievements/publish-static-web-app-api-preview-url.svg
 levels:
   - beginner
 roles:
@@ -33,6 +33,8 @@ products:
   - azure-functions
   - azure-app-service
   - azure-app-service-static
+subjects:
+- cloud-computing
 units:
   - learn.azure.publish-static-web-app-api-preview-url.1-introduction
   - learn.azure.publish-static-web-app-api-preview-url.2-exercise-get-started

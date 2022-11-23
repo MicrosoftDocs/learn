@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/24/2022
+  ms.date: 08/18/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -14,25 +14,25 @@ labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "You want to configure a private endpoint. You open up Azure Synapse Studio, go to the manage hub, and see that the private endpoints is greyed out. Why is the option not available?"
+  - content: "You want to configure a private endpoint. You open up Azure Synapse Studio, go to the manage hub, and see that the private endpoints are greyed out. Why is the option not available?"
     choices:
-    - content: "Azure Synapse Studio does not support the creation of private endpoints."
+    - content: "Azure Synapse Studio doesn't support the creation of private endpoints."
       isCorrect: false
       explanation: "Incorrect. Azure Synapse Studio does support the creation of private endpoints."
     - content: "A Conditional Access policy has to be defined first."
       isCorrect: false
-      explanation: "Incorrect. A Conditional Access policy is not required to create a private endpoint."
-    - content: "A managed virtual network has not been created."
+      explanation: "Incorrect. A Conditional Access policy isn't required to create a private endpoint."
+    - content: "A managed virtual network hasn't  been created."
       isCorrect: true
       explanation: "Correct. In order to create a private endpoint, you first must create a managed virtual network."
   - content: "You require an Azure Synapse Analytics Workspace to access an Azure Data Lake Store using the benefits of the security provided by Azure Active Directory. What is the best authentication method to use?"
     choices:
     - content: "Storage account keys."
       isCorrect: false
-      explanation: "Incorrect. Keys are not able to take advantage of Azure Active Directory."
+      explanation: "Incorrect. Keys aren't able to take advantage of Azure Active Directory."
     - content: "Shared access signatures."
       isCorrect: false
-      explanation: "Incorrect. Shared access signatures are not able to take advantage of Azure Active Directory."
+      explanation: "Incorrect. Shared access signatures aren't able to take advantage of Azure Active Directory."
     - content: "Managed identities."
       isCorrect: true
-      explanation: "Correct. Managed identities provides Azure services with an automatically managed identity in Azure Active Directory. You can use the Managed Identity capability to authenticate to any service that support Azure Active Directory authentication."
+      explanation: "Correct. Managed identities provide Azure services with an automatically managed identity in Azure Active Directory. You can use the Managed Identity capability to authenticate to any service that support Azure Active Directory authentication."

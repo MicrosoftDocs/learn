@@ -6,6 +6,6 @@ A virtual network typically contains one or more subnets. Subnets facilitate seg
 
 VMs use a virtual network adapter to attach to a subnet to communicate with other VMs and other networked resources, such as load balancers or gateways. VMs can have more than one network adapter, typically to facilitate network isolation scenarios. The maximum number of network adapters that you can attach to a VM depends on its size.
 
-## Optional demo:
+## Optional demo
 
- -  [Demonstration: Connect to Linux virtual machines](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-connect-linux-virtual-machines.md)
+- [Demonstration: Connect to Linux virtual machines](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-connect-linux-virtual-machines.md)

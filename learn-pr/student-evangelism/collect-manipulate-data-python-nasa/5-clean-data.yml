@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Clean weather data to analyze rocket launch criteria
   description: Clean the weather data to prepare it to train the machine learning model
   ms.date: 05/19/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

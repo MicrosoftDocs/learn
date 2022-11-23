@@ -5,9 +5,9 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
-  ms.date: 03/12/2021  
-  author: joshuawaddell
-  ms.author: jowaddel
+  ms.date: 10/17/2022
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

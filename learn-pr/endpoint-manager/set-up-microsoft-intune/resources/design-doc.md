@@ -58,7 +58,7 @@ Identify the subtasks of *Learn about paths to modern endpoint management*
 
 1. **Introduction**
 
-    Suppose that you're the administrator or business decision maker of a company with several thousand employees. You need to keep your corporate data safe by protecting data, apps, and devices that your employees use, as well as keep your employees productive and maximize the return on your investment. You and your company have determined that Microsoft Intune is the endpoint management solution that they want to use to manage end users devices, apps, and data. You currently have a limited Mobile Device Management solution. Learn how you can set up Microsoft Intune and [benefit from modern endpoint management](/learn/modules/benefits-microsoft-endpoint-manager?azure-portal=true).
+    Suppose that you're the administrator or business decision maker of a company with several thousand employees. You need to keep your corporate data safe by protecting data, apps, and devices that your employees use, as well as keep your employees productive and maximize the return on your investment. You and your company have determined that Microsoft Intune is the endpoint management solution that they want to use to manage end users devices, apps, and data. You currently have a limited Mobile Device Management solution. Learn how you can set up Microsoft Intune and [benefit from modern endpoint management](/training/modules/benefits-microsoft-endpoint-manager?azure-portal=true).
 
 
 2. **Review the supported configurations, which include the supported operating systems and browsers**

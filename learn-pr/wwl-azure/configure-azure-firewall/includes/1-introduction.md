@@ -6,7 +6,7 @@ You need to implement Azure Firewall. You need to configure Azure Firewall to de
 
 ## Skills measured
 
-Implementing Azure Firewall is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Implementing Azure Firewall is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Configure and manage virtual networking (25–30%)
 

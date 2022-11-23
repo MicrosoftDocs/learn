@@ -8,7 +8,7 @@ In this unit, you'll learn how to use data binding in Blazor to tie UI elements 
 
 If you want an HTML element to display a value, you can write code to alter the display. You'll need to write extra code to update the display when the value changes. In Blazor, you can use data binding to connect an HTML element to a field, property, or expression. This way, when the value changes, the HTML element is automatically updated. The update usually happens quickly after the change, and you don't have to write any update code.
 
-To bind a control, use the `@bind` directive:
+To bind a control, you would use the `@bind` directive:
 
 ```razor
 @page "/"
@@ -125,3 +125,5 @@ As an alternative to using the `@bind:format` directive, you can write C# code t
     }
 }
 ```
+
+In the next unit, you'll apply what you've learned.
