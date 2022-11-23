@@ -30,6 +30,5 @@ subjects:
 - virtual-machine
 units:
 - learn.wwl.sap-hana-azure-compute-network-storage.supported-scenarios
-- learn.wwl.sap-hana-azure-compute-network-storage.summary
 badge:
   uid: learn.wwl.sap-hana-azure-compute-network-storage.badge
