@@ -72,9 +72,9 @@
     :::image type="content" source="../../media/022-configurator-apply-settings.png" alt-text="Screenshot of MRTK Project Configurator with the Apply Settings button.":::
 
 1. In the **Project Validation** window that appears, make sure you're on the UWP platform tab (the tab displays the Windows logo), and then click **Fix all** to resolve the validation issues. Note that there may be issues that remain after you click **Fix All**. In that case, click **Fix All** again, ignore any issues that are marked **Scene specific**, and then read the recommendations for the remaining issues (if any) and make any changes you want.
-1. In the **MRTK Configurator**, select **Next**, then **Apply**.
-1. Click**Next**, and then click **Import TMP Essentials**.
-1. When the **MRTK Setup Completed!** panel appears, click **Done**.
+2. In the **MRTK Configurator**, click **Next**, and then click **Apply** to apply the recommended settings.
+3. Click**Next**, and then click **Import TMP Essentials**.
+4. When the **MRTK Setup Completed!** panel appears, click **Done**.
 
 ## Configure project settings for OpenXR
 
