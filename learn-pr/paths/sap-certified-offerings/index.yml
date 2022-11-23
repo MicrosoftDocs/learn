@@ -24,7 +24,6 @@ subjects:
 - virtual-machine
 - cloud-computing
 modules:
-- learn.wwl.introduction-azure-sap-workloads
 - learn.wwl.using-iaas-support-azure-sap-workloads
 - learn.wwl.sap-hana-azure-compute-network-storage
 trophy:
