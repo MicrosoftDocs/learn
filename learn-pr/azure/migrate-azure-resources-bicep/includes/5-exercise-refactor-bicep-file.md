@@ -234,7 +234,7 @@ Your parameters currently are defined as default values in your template. To mak
 
    For example, here's how the values are specified in a reference template. Your IP addresses might be different from IP addresses that are used in this example:
 
-   :::code language="bicep" source="code/3-main-migrated.bicep" range="31-54" highlight="7, 14":::
+   :::code language="bicep" source="code/3-main-migrated.bicep" range="93-118" highlight="7, 15":::
 
 1. Update your _main.bicep_ file to remove the default values for the parameters you specified in the parameters file.
 

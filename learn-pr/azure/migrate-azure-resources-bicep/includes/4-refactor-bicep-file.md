@@ -79,7 +79,7 @@ You can add a multi-line comment at the beginning of the file:
 
 Single-line comments can be added as headers for sections of code or on individual lines to describe the code:
 
-:::code language="bicep" source="code/4-app-service-plan-updated.bicep" range="34-46" highlight="1,6,9,12" :::
+:::code language="bicep" source="code/4-app-service-plan-updated.bicep" range="35-49" highlight="1,7,10,15" :::
 
 Bicep provides the `@description` decorator that you can use to document the purpose of your parameters, variables, resources, modules, and outputs. You can add the description on the line above the item you're describing:
 

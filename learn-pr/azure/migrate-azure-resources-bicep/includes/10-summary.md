@@ -10,7 +10,7 @@ After you successfully deploy your production environment by using your Bicep co
 
 - [Bicep documentation](/azure/azure-resource-manager/bicep/overview?azure-portal=true)
 - [Bicep on GitHub](https://github.com/Azure/bicep?azure-portal=true)
-- [Azure Quickstart Templates](https://learn.microsoft.com/samples/browse/?expanded=azure&products=azure-resource-manager&azure-portal=true)
+- [Azure Quickstart Templates](/samples/browse/?expanded=azure&products=azure-resource-manager&azure-portal=true)
 - [Azure ARM template reference](/azure/templates/?azure-portal=true)
 - [ARM template deployment what-if operation](/azure/azure-resource-manager/templates/deploy-what-if?tabs=azure-powershell&azure-portal=true)
 - [Export a template](/azure/azure-resource-manager/templates/export-template-portal?azure-portal=true)
