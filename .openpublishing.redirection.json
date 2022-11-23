@@ -18564,6 +18564,11 @@
       "source_path": "learn-pr/wwl-azure/deploy-sap-certified-offerings/3-deployment-options-sap-solutions.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/deploy-sap-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-sap-certified-offerings/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/deploy-sap-azure/",
+      "redirect_document_id": false
     }
   ]
 }
