@@ -3,7 +3,7 @@ uid: learn.multi-table-queries-with-kusto-query-language.introduction
 title: Introduction
 metadata:
   unitType: introduction
-  title: Introduction
+  title: This unit introduces you to writing Kusto Query Language (KQL) queries to combine and retrieve data from two or more tables.
   description: Introduction
   ms.date: 07/31/2022
   author: shsagir

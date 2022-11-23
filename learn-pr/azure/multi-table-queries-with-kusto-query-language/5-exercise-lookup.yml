@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.multi-table-queries-with-kusto-query-language.exercise-lookup
-title: Exercise - Combine table results using the lookup operator
+title: Exercise - Combine table results by using the lookup operator
 metadata:
   unitType: exercise
-  title: Exercise - Combine table results using the lookup operator
-  description: Exercise - Combine table results using the lookup operator
+  title: Exercise - Combine table results by using the lookup operator
+  description: In this exercise, you'll combine table results by using the lookup operator.
   ms.date: 09/22/2022
   author: shsagir
   ms.author: shsagir
