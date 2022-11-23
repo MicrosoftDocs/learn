@@ -10,7 +10,7 @@ To add your coffee machine to your application, you use the **Connected Coffee M
 
 1. Select **Connected Coffee Machine**, and then **+ New**.
 
-1. On the **Create a new device** form, change the device ID to _ccm-001_, and the device name to _Connected Coffee Machine - Real - 001_. Make sure that **Simulate this device** is **No**, and then select **Create**.
+1. On the **Create a new device** form, change the device ID to *ccm-001*, and the device name to *Connected Coffee Machine - Real - 001*. Make sure that **Simulate this device** is **No**, and then select **Create**.
 
 The **Connected Coffee Machine - Real - 001** device now shows in the list of **Connected Coffee Machine** devices with a status of **Registered**.
 
@@ -354,7 +354,7 @@ The following steps show you how to create a client application that implements 
 
 1. Update the placeholders `{ID scope}`, `{Device ID}`, and `{Primary key}` at the top of this code with the connection information you made a note of previously.
 
-1. Select the three dots `...` to the top right of the editor to expand the editor menu. Then select **Save** to save the edits you made to `coffeeMaker.js`
+1. Right-click inside the editor to open the menu. Then select **Save** to save the edits you made to `coffeeMaker.js`
 
 1. Execute the following command in the Cloud Shell to start the app:
 
