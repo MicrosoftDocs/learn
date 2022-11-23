@@ -1342,3 +1342,8 @@ achievements:
   title: Deploy SAP certified offerings on Azure
   summary: In this module, you explore the platform compliance criteria that is stipulated by SAP for deploying SAP solutions in Azure. In addition, you will look at the options for deploying SAP in Azure.
   iconUrl: /training/achievements/deploy-sap-certified-offerings-for-azure.svg
+- uid: learn.wwl.introduction-azure-sap-workloads.badge
+  type: badge
+  title: Introduction to Azure for SAP workloads
+  summary: With the recently expanded partnership between Microsoft and SAP, you can run SAP applications across development, test, and production scenarios in Azure, taking advantage of the scalability, flexibility, and cost savings of Microsoft Azure.
+  iconUrl: /training/achievements/introduction-azure-sap-workloads.svg
