@@ -91,7 +91,6 @@ resource virtualMachine 'Microsoft.Compute/virtualMachines@2022-08-01' = {
         enableVMAgentPlatformUpdates: false
       }
       allowExtensionOperations: true
-      requireGuestProvisionSignal: true
     }
     networkProfile: {
       networkInterfaces: [

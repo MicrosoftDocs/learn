@@ -56,21 +56,62 @@ Run the what-if command before you deploy your new Bicep file. This command veri
 
 Review the what-if output, which looks like the following example:
 
-# [Screenshot](#tab/screenshot)
-
-:::image type="content" source="../media/7-whatif-output-1.png" alt-text="Screenshot of the Visual Studio Code terminal that shows the output from the what-if operation, with three changes detected.":::
-
-# [Text](#tab/textoutput)
-
 :::code language="output" source="code/7-whatif-output-1.txt" :::
 
----
-
-The output includes two important pieces of information. Let's review each one.
+The output includes three important pieces of information. Let's review each one.
 
 - The what-if command detects that the managed disk will be deleted. This output isn't accurate. Managed disks are created automatically when you create virtual machines. Although managed disks appear in the list of resources to be deleted, the virtual machine prevents their deletion. However, adopting a cautious approach is always advisable, so in the next steps you'll run the actual deployment in incremental mode to mitigate the risk of anything going wrong.
 
 - The `networkInterface` resource shows the `privateIPAddress` property is detected as removed. This result is OK, because you removed that property intentionally. The `privateIPAllocationMethod` property  is set to _Dynamic_ so removing the `privateIPAddress` property won't have any effect, even though it's a change.
+
+- The `networkInterface` shows that two properties for the publicIPAddress will be deleted. We'll use this as an example to fix a problem found by what-if. In this scenario repdeploying without these properties won't cause a problem.
+
+## Update the template
+
+Update _main.bicep_ to include the `publicIPAddress` properties for `deleteOption` and `sku` properties.
+
+:::code language="bicep" source="code/7-main-final.bicep" range="149-164" highlight="4-9":::
+
+## Rerun the what-if command
+
+::: zone pivot="cli"
+
+1. In the Visual Studio Code terminal, run the following command:
+
+   ```azurecli
+   az deployment group what-if \
+     --mode Complete \
+     --resource-group ToyTruck \
+     --template-file main.bicep \
+     --parameters main.parameters.production.json
+   ```
+
+1. When prompted, enter a secure password for the `virtualMachineAdminPassword` parameter value.
+1. After the operation is finished, review the output. The output will look like the following sample:
+
+   :::code language="output" source="code/7-whatif-output-2.txt" :::
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. In the Visual Studio Code terminal, run the following command:
+
+   ```azurepowershell
+   New-AzResourceGroupDeployment `
+     -WhatIf `
+     -Mode Complete `
+     -ResourceGroupName ToyTruck `
+     -TemplateFile main.bicep `
+     -TemplateParameterFile main.parameters.production.json
+   ```
+
+1. When prompted, enter a secure password for the `virtualMachineAdminPassword` parameter value.
+1. After the operation is finished, review the output. The output will look like the following sample:
+
+   :::code language="output" source="code/7-whatif-output-2.txt" :::
+
+::: zone-end
 
 ## Deploy your template
 

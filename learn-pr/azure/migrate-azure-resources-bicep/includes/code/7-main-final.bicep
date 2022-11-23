@@ -91,7 +91,6 @@ resource virtualMachine 'Microsoft.Compute/virtualMachines@2022-08-01' = {
         enableVMAgentPlatformUpdates: false
       }
       allowExtensionOperations: true
-      requireGuestProvisionSignal: true
     }
     networkProfile: {
       networkInterfaces: [
@@ -149,6 +148,13 @@ resource networkInterface 'Microsoft.Network/networkInterfaces@2022-05-01' = {
           privateIPAllocationMethod: 'Dynamic'
           publicIPAddress: {
             id: publicIPAddress.id
+            properties:{
+              deleteOption: 'Detach'
+            }
+            sku: {
+              name: 'Basic'
+              tier: 'Regional'
+            }
           }
           subnet: {
             id: virtualNetwork::defaultSubnet.id

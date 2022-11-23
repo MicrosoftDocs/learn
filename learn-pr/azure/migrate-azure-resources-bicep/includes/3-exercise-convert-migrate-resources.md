@@ -107,29 +107,29 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 ::: zone pivot="cli"
 
-Create a Bicep file from the template:
+Use the `decompile` command to create a Bicep file from the template.
 
-   ```azurecli
-   az bicep decompile --file template.json
-   ```
+```azurecli
+az bicep decompile --file template.json
+```
 
-   The decompile operation shows warnings similar to the following example:
+The decompile operation shows warnings similar to the following example:
 
-   :::code language="output" source="code/3-decompile-output.txt" :::
+:::code language="output" source="code/3-decompile-output.txt" :::
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-Create a Bicep file from the template:
+Use the `decompile` command to create a Bicep file from the template.
 
-   ```powershell
-   bicep decompile template.json
-   ```
+```powershell
+bicep decompile template.json
+```
 
-   The decompile operation shows warnings similar to the following example:
+The decompile operation shows warnings similar to the following example:
 
-   :::code language="output" source="code/3-decompile-output.txt" :::
+:::code language="output" source="code/3-decompile-output.txt" :::
 
 ::: zone-end
 
@@ -153,7 +153,7 @@ You'll fix these problems throughout the rest of this module.
 
 1. Split the editor so that you can see both files at the same time.
 
-   You can drag the tab titled **main.bicep** to the right side of the window to split. Alternatively, select **View** > **Editor Layout** > **Split Right**. In the left pane, select the **template.bicep** tab.
+   Select **View** > **Editor Layout** > **Split Right**. In the left pane, select the **template.bicep** tab. You can close the **main.bicep** tab in the left pane.
 
    :::image type="content" source="../media/3-visual-studio-code-split-editor.png" alt-text="Screenshot of the split Visual Studio Code editor that shows the template dot bicep file in the left pane and the main dot bicep file in the right pane.":::
 
@@ -209,4 +209,4 @@ You've created an initial Bicep file to represent your resources. The Bicep file
 > [!TIP]
 > If you use a version control system like Git, this would be a good time to commit your work.
 
-Close the _template.bicep_ file.
+After you've verified your _main.bicep_ file close the _template.bicep_ file.

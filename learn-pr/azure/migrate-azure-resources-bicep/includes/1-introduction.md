@@ -27,7 +27,7 @@ You should be familiar with:
 - The what-if operation.
 - Refactoring Bicep files to align with best practices.
 
-To follow along with the exercises in the module, you'll need the following items:
+Before you begin to follow the exercises in the module, you'll need the following items:
 
 - An Azure account, with the ability to create resource groups.
   > [!TIP]

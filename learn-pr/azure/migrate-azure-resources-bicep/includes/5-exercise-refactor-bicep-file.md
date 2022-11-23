@@ -24,7 +24,7 @@ During the refactoring process, you'll:
    > The names of the resources in your deployment will be a little different from the names in the table. Find the resources that have names that are close to these names.
 
    | Resource type | Current symbolic name | New symbolic name |
-   |-|-|-|
+   | ---- | ---- | ---- |
    | Public IP address | `publicIPAddresses_ToyTruckServer_ip_name_resource` | `publicIPAddress` |
    | Virtual machine | `virtualMachines_ToyTruckServer_name_resource` | `virtualMachine` |
    | Virtual network | `virtualNetworks_ToyTruck_vnet_name_resource` | `virtualNetwork` |
@@ -72,7 +72,7 @@ The parameters in the template don't need to be parameters. You'll rename the pa
    Notice that the value of the `networkInterfaceName` includes a three-digit number. The number is different between deployments. Ensure that you copy the variable's value from your reference template.
 
    | Current parameter name | New variable name |
-   |-|-|
+   | ---- | ---- |
    | `virtualMachines_ToyTruckServer_name` | `virtualMachineName` |
    | `networkInterfaces_toytruckserver890_name` | `networkInterfaceName` |
    | `publicIPAddresses_ToyTruckServer_ip_name` | `publicIPAddressName` |
@@ -84,7 +84,7 @@ The parameters in the template don't need to be parameters. You'll rename the pa
 
 ## Update the resource locations
 
-All the resources currently use a hard-coded location. Here, you'll add a parameter so that the template becomes more reusable.
+All the resources currently use a hard-coded location. You'll add a parameter so that the template becomes more reusable.
 
 1. At the top of the file, add a new parameter and a description decorator to clarify the parameter's purpose.
 
@@ -127,7 +127,7 @@ Your template has some hard-coded values where parameters or variables would be 
 
    Some of the parameters have default values and others don't. Later, you'll create a parameter file to set most of these values.
 
-1. Add the following new variable declarations:
+1. Add the following new variable declarations below the `networkSecurityGroupName` variable.
 
    ```bicep
    var virtualNetworkDefaultSubnetName = 'default'
@@ -146,51 +146,38 @@ Your template has some hard-coded values where parameters or variables would be 
    The value of the `virtualMachineOSDiskName` is unique. The value is different between deployments. Ensure that you copy the variable's value from your reference template.
 
    > [!WARNING]
-   > Ensure that you copy the values for the `virtualMachineOSDiskName` and `networkInterfaceName` variables correctly. Otherwise, Azure won't detect that you're declaring existing resources and might try to create new resources.
+   > Ensure that you copy the correct values for the `virtualMachineOSDiskName` and `networkInterfaceName` variables. Otherwise, Azure won't detect that you're declaring existing resources and might try to create new resources.
 
    Your variable declarations should now look like this example:
 
    :::code language="bicep" source="code/5-main-refactored.bicep" range="26-38" highlight="2, 4-9, 10, 11" :::
 
-1. Update the `publicIPAddress` resource to refer to the `publicIPAddressSkuName` parameter in its `sku.name` property.
-
-1. Update the `virtualNetwork` resource to refer to the parameters and variables:
-
-   - Use the `virtualNetworkAddressPrefix` parameter within the virtual network's `addressSpace.addressPrefixes` property.
-   - Use the `virtualNetworkDefaultSubnetName` variable for the subnet `name` properties. Make sure you change both the `subnets` property and the nested `existing` resource.
-   - Use the `virtualNetworkDefaultSubnetAddressPrefix` parameter for the subnet's `addressPrefix` property.
-
-   | Property | Parameter or variable |
-   | ---- | ---- |
-   | `addressSpace.addressPrefixes`| `virtualNetworkAddressPrefix` |
-   | `subnets.name` | `virtualNetworkDefaultSubnetName` |
-   | nested `resource defaultSubnet` `name` | `virtualNetworkDefaultSubnetName` |
-   | `subnets.addressPrefix` | `virtualNetworkDefaultSubnetAddressPrefix` |
+1. Update the `publicIPAddress` resource's  `sku.name` property to refer to the `publicIPAddressSkuName` parameter.
 
 1. Update the `virtualMachine` resource to refer to the parameters and variables:
-
-   - Use the `virtualMachineSizeName` parameter for the `hardwareProfile.vmSize` property.
-   - Use the `virtualMachineImageReference` variable for the `storageProfile.imageReference` property. Replace the object values including the curly braces with the variable name.
-   - Use the `virtualMachineOSDiskName` variable for the `storageProfile.osDisk.name` property.
-   - Use the `virtualMachineManagedDiskStorageAccountType` parameter for the `storageProfile.osDisk.managedDisk.storageAccountType` property.
-   - Use the `virtualMachineAdminUsername` parameter for the `osProfile.adminUsername` property.
-   - Directly below the `osProfile.adminUsername` property, add a new property named `adminPassword`. Set the property value to the `virtualMachineAdminPassword` parameter.
 
    | Property | Parameter or variable |
    | ---- | ---- |
    | `hardwareProfile.vmSize` | `virtualMachineSizeName` |
-   | `storageProfile.imageReference` | `virtualMachineImageReference` <br> Use the variable name to teplace the object's values including the curly braces. |
+   | `storageProfile.imageReference` | `virtualMachineImageReference` <br> Use the variable name to replace the object's values including the curly braces. |
    | `storageProfile.osDisk.name` | `virtualMachineOSDiskName` |
    | `storageProfile.osDisk.managedDisk.storageAccountType` | `virtualMachineManagedDiskStorageAccountType` |
    | `osProfile.adminUsername` | `virtualMachineAdminUsername` |
+   | `osProfile.adminPassword ` <br> Add this property below `osProfile.adminUsername` | `virtualMachineAdminPassword` |
 
-   Directly below the `osProfile.adminUsername` property, add a new property named `adminPassword` and use the `virtualMachineAdminPassword` parameter.
+1. Update the `virtualNetwork` resource to refer to the parameters and variables:
+
+   | Property | Parameter or variable |
+   | ---- | ---- |
+   | `addressSpace.addressPrefixes`| `virtualNetworkAddressPrefix` |
+   | `subnets.name` | `virtualNetworkDefaultSubnetName` <br> Use the variable for the `name` property of the nested `resource defaultSubnet`.|
+   | `subnets.addressPrefix` | `virtualNetworkDefaultSubnetAddressPrefix` |
 
 ## Remove unnecessary properties
 
 The export process adds redundant properties to many resources. Use these steps to remove the unneeded properties.
 
-1. In the `networkSecurityGroup` resource, remove the `properties` because `securityRules` property is empty.
+1. In the `networkSecurityGroup` resource, remove `properties` because `securityRules` property is empty.
 
 1. In the `publicIPAddress` resource:
 
@@ -208,14 +195,19 @@ The export process adds redundant properties to many resources. Use these steps 
    - Remove the empty `osProfile.secrets` property.
    - Remove the `osProfile.requireGuestProvisionSignal` property because Azure sets this property automatically.
 
-1. In the `virtualNetwork` resource, remove the `delegations` and `virtualNetworkPeerings` properties because they're empty. Also remove the line for `type: 'Microsoft.Network/virtualNetworks/subnets'`.
+1. In the `virtualNetwork` resource:
+   - Remove the `delegations` and `virtualNetworkPeerings` properties because they're empty.
+   - Remove the line for `type: 'Microsoft.Network/virtualNetworks/subnets'`.
+   - Remove the `subnets.id` property.
 
 1. In the `networkInterface` resource:
 
    - From `ipConfigurations` remove the `privateIPAddress` property because it's automatically set by Azure and the allocation method is _Dynamic_.
-   - Remove the `dnsSettings` because property `dnsServers` is empty.
    - Remove `type: 'Microsoft.Network/networkInterfaces/ipConfigurations'`.
-   - In `publicIPAddress` remove `properties` and `sku`.
+   - Remove `dnsSettings` because the `dnsServers` property is empty.
+   - In `publicIPAddress` remove `name`, `properties`, `type: 'Microsoft.Network/publicIPAddresses'`, and `sku`.
+   - Remove `kind`.
+   - Remove from `ipConfigurations` the `id`, `etag`, and `provisioningState` properties.
 
 > [!TIP]
 > When you work with your own templates, you'll need to determine whether there are any properties that should be removed like you've done here.
@@ -244,7 +236,13 @@ Your parameters currently are defined as default values in your template. To mak
 
    :::code language="bicep" source="code/3-main-migrated.bicep" range="31-54" highlight="7, 14":::
 
-1. Update your _main.bicep_ file to remove the default values for the parameters you specified in the parameters file. Don't change the default values for `location` and `publicIPAddressSkuName` parameters because those values are likely the same for all your environments.
+1. Update your _main.bicep_ file to remove the default values for the parameters you specified in the parameters file.
+
+   - `virtualMachineSizeName`
+   - `virtualMachineManagedDiskStorageAccountType`
+   - `virtualMachineAdminUsername`
+
+  Don't change the default values for `location` and `publicIPAddressSkuName` parameters because those values are likely the same for all your environments.
 
 ## Verify your template
 
