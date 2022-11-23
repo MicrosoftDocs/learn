@@ -26,6 +26,5 @@ products:
 subjects:
 - compliance
 units:
-- learn.wwl.deploy-sap-certified-offerings.summary
 badge:
   uid: learn.wwl.deploy-sap-certified-offerings.badge
