@@ -18594,6 +18594,11 @@
       "source_path": "learn-pr/wwl-azure/deploy-sap-certified-offerings/7-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/deploy-sap-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-azure-sap-workloads/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-sap-workloads/",
+      "redirect_document_id": false
     }
   ]
 }
