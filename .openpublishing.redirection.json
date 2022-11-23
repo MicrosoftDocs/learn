@@ -18649,6 +18649,11 @@
       "source_path": "learn-pr/wwl-azure/sap-hana-azure-compute-network-storage/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sap-hana-azure-compute-network-storage/8-connect-hana-large-instances-multiple-azure-regions.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
     }
   ]
 }
