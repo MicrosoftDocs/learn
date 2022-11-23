@@ -1,4 +1,4 @@
-![Data Store Element heading image.](../media/data-store.png)
+![Rendering of a two parallel horizontal lines representing the Data Store Element.](../media/data-store.png)
 
 Depicted by parallel lines, this element represents data stored on a temporary or permanent basis.
 
