@@ -80,7 +80,7 @@ The first thing we will do is activate the Azure sandbox and deploy an ARM templ
 1. Select **Add**, and then **Add parameters**.
 
     :::image type="content" source="../media/3-add-parameters.png" alt-text="Screenshot that shows the add parameters button in a workbook.":::
-1. Select **Add Parameter**. 
+1. Select **Add Parameter**.
 1. In the **New Parameter** window:
     - In both the **Parameter name** and **Display name** fields, enter "Subscription".
     - In the **Parameter type** field, select **Subscription picker**.
@@ -91,7 +91,10 @@ The first thing we will do is activate the Azure sandbox and deploy an ARM templ
 1. Select **Done editing** again.
 1. You now have a workbook with a **Subscription** drop-down picker.
 
+    :::image type="content" source="../media/3-workbook-with-subscription-picker.png" alt-text="Screenshot that shows an Azure workbook with a subscription picker drop down list.":::
+
 ## Add a map to show the distribution of the subscription's resources
+
 1. Select **Edit** from the top toolbar.
 1. Select the subscription from the **Subscription** drop-down.
-1. 
+1. Select **Add Query**
