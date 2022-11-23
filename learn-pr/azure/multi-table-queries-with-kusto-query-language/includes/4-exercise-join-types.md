@@ -64,7 +64,7 @@ Your team then asks you to identify the countries with the lowest revenues in th
 
 1. Look at each row. Notice that the first column shows the months of the last year, in descending order, followed by columns that show the total sales for the country with the lowest sales numbers that month.
 
-## Use the leftouter 'join' kind
+## Use the leftouter `join` kind
 
 Your sales team wants to know the total sales per product category. When you start reviewing the available data, you realize that you'll need the *Products* table to get the list of product categories and the *SalesFact* table to get the sales data. You also realize that you want to count the sales for each category and list all product categories, even for products that might not have sales.
 
