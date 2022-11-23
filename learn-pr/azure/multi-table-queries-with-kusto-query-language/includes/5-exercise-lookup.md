@@ -1,12 +1,14 @@
-In the last exercise, you used the `join` operator to find the total sales per product. In this exercise, you'll use the `lookup` operator to find the total sales per country.
+In the preceding exercise, you used the `join` operator to find the total sales per product. In this exercise, you use the `lookup` operator to find the total sales per country.
 
 ## Use the `lookup` operator
 
-Your sales team wants to know total sales per country. You could use a join to get the customer and product information. However, this kind of query performs best when using the `lookup` operator to get the information you need. Recall that the `lookup` operator enriches a fact table with data from a dimensions table. It's a bit like reading a book (fact table) and looking up unknown words in a dictionary (dimensions table).
+Your sales team wants to know the company's total sales per country. You could use a `join` operator to get the customer and product information. However, this kind of query performs best when you use the `lookup` operator to get this information. 
 
-For this query, you'll start with the *SalesFact* table and use the `lookup` operator to get *Customer* data and add it to the resultant table.
+Recall that the `lookup` operator enriches a *fact* table with data from a *dimension* table. It's a bit like reading a book (fact table) and looking up unknown words in a dictionary (dimension table).
 
-In the following steps, you'll build the query in stages so that you get a better understanding the result of using the `lookup` operator.
+For this query, you start with the *SalesFact* table and use the `lookup` operator to get *Customer* data and add it to the resultant table.
+
+In the following procedure, you build the query in stages to give yourself a better understanding the result of using the `lookup` operator.
 
 1. Run the following query to get 10 matching arbitrary rows from the *SalesFact* table and the *Customers* table. 
 
@@ -31,13 +33,13 @@ In the following steps, you'll build the query in stages so that you get a bette
     | order by TotalSales desc
     ```
 
-    You should get results that look like the following image:
+    Your results should look like those in the following image:
 
-    :::image type="content" source="../media/5-lookup-1.png" alt-text="Screenshot of lookup operator with total sales per country query and results.":::
+    :::image type="content" source="../media/5-lookup-1.png" alt-text="Screenshot of the lookup operator, with total sales per country query and results.":::
 
 1. Take a look at the resulting list. You notice that the top sales are in the United States. Try modifying the query to show the total sales in the United States by state.
 
-In the previous unit, you used a left outer join to get the total sales per product category. The query took 0.861 seconds to run. You'll now write a query to get the same result using the `lookup` operator and compare the execution time.
+In the preceding unit, you used a *leftouter* `join` to get the total sales per product category. The query took 0.861 seconds to run. You'll now write a query to get the same result by using the `lookup` operator and then compare the execution time.
 
 1. Run the following query.
 
@@ -50,8 +52,8 @@ In the previous unit, you used a left outer join to get the total sales per prod
     | order by TotalSales desc
     ```
 
-    You should get results that look like the following image:
+    Your results should look like those in the following image:
 
     :::image type="content" source="../media/5-lookup-2.png" alt-text="Screenshot of lookup operator with total sales per product query and results.":::
 
-1. Notice that you get the same results but the execution time is 0.398 second. The faster execution time is because the `lookup` operator is optimized for this type of query.
+    Notice that you get the same results but the execution time is 0.398 seconds. The faster execution time is because the `lookup` operator is optimized for this type of query.
