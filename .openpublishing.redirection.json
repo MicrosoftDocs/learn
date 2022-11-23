@@ -18729,6 +18729,11 @@
       "source_path": "learn-pr/wwl-azure/using-iaas-support-azure-sap-workloads/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/using-iaas-support-azure-sap-workloads/7-licensing-pricing-support-sap-azure.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
     }
   ]
 }
