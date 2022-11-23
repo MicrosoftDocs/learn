@@ -18719,6 +18719,11 @@
       "source_path": "learn-pr/wwl-azure/using-iaas-support-azure-sap-workloads/4-database-support-sap-workloads.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/using-iaas-support-azure-sap-workloads/5-high-availability-disaster-recovery-support-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
     }
   ]
 }
