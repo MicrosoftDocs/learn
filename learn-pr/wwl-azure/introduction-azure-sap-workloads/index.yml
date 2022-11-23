@@ -26,7 +26,6 @@ products:
 - azure-sap
 units:
 - learn.wwl.introduction-azure-sap-workloads.introduction
-- learn.wwl.introduction-azure-sap-workloads.azure-compute-sap-workloads
 - learn.wwl.introduction-azure-sap-workloads.azure-storage-sap-workloads
 - learn.wwl.introduction-azure-sap-workloads.azure-networking-sap-workloads
 - learn.wwl.introduction-azure-sap-workloads.azure-large-instances-sap-hana
