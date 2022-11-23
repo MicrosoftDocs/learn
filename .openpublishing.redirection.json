@@ -18604,6 +18604,11 @@
       "source_path": "learn-pr/wwl-azure/introduction-azure-sap-workloads/2-azure-compute-sap-workloads.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-sap-workloads/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-azure-sap-workloads/5-azure-large-instances-sap-hana.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-sap-workloads/",
+      "redirect_document_id": false
     }
   ]
 }
