@@ -1,4 +1,4 @@
-![Data-Flow Element heading image.](../media/data-flow.png)
+![Rendering of two diagonal arrows representing the Data-Flow Element.](../media/data-flow.png)
 
 Data movement between elements is represented by directional arrows to indicate communication between data source and destination.
 
