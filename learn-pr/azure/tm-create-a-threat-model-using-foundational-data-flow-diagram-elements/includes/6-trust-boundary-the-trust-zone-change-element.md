@@ -1,12 +1,12 @@
 Trust boundary box
 
-![Trust Boundary Box Element heading image.](../media/trust-boundary-box.png)
+![Rendering of a dashed square representing the Trust Boundary Box Element.](../media/trust-boundary-box.png)
 
 <br>
 
 Trust boundary line
 
-![Trust Boundary Line Element heading image.](../media/trust-boundary-line.png)
+![Rendering of a dashed diagonal line representing the Trust Boundary Line Element.](../media/trust-boundary-line.png)
 
 Represented by dotted lines or squares, trust boundaries are used to describe data flow as it crosses different trust zone levels.
 
