@@ -27,6 +27,5 @@ products:
 subjects:
 - cloud-computing
 units:
-- learn.wwl.using-iaas-support-azure-sap-workloads.learn.wwl.deploy-sap-certified-offerings.summary
 badge:
   uid: learn.wwl.using-iaas-support-azure-sap-workloads.badge
