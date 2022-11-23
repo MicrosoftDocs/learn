@@ -1,6 +1,6 @@
 Data-flow diagrams are made up of shapes that create graphical representations of your system. Each shape represents a unique function. Each interaction is analyzed to help you identify potential threats and ways to reduce risk.
 
-Using shapes correctly allows you to receive better input from colleagues and security teams. Everyone will then understand how the system works. It can also help them avoid going through countless design documents and development plans to get them up and running.
+Using shapes correctly helps you receive better input from colleagues and security teams. Everyone will then understand how the system works. It can also help everyone avoid going through countless design documents and development plans to get them up and running.
 
 > [!NOTE]
 > If you fail to properly account for all the parts of a system in the data-flow diagram, you'll risk deploying the system with potential vulnerabilities.
