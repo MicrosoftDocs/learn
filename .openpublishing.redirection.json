@@ -18674,6 +18674,11 @@
       "source_path": "learn-pr/wwl-azure/sap-hana-azure-compute-network-storage/2-workloads-azure-large-instances-compute-considerations.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sap-hana-azure-compute-network-storage/4-workloads-azure-large-instances-networking-considerations.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
     }
   ]
 }
