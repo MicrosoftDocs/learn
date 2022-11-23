@@ -36,7 +36,6 @@ units:
 - learn.wwl.sap-hana-azure-compute-network-storage.expressroute-fast-path
 - learn.wwl.sap-hana-azure-compute-network-storage.single-multiple-sap-systems
 - learn.wwl.sap-hana-azure-compute-network-storage.sap-hana-workloads-azure-large-instances-routing-considerations
-- learn.wwl.sap-hana-azure-compute-network-storage.connecting-hana-large-instances-multiple-azure-regions
 - learn.wwl.sap-hana-azure-compute-network-storage.supported-scenarios
 - learn.wwl.sap-hana-azure-compute-network-storage.knowledge-check
 - learn.wwl.sap-hana-azure-compute-network-storage.summary
