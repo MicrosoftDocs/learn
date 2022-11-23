@@ -1347,3 +1347,8 @@ achievements:
   title: Introduction to Azure for SAP workloads
   summary: With the recently expanded partnership between Microsoft and SAP, you can run SAP applications across development, test, and production scenarios in Azure, taking advantage of the scalability, flexibility, and cost savings of Microsoft Azure.
   iconUrl: /training/achievements/introduction-azure-sap-workloads.svg
+- uid: learn.wwl.sap-certified-offerings-azure.trophy
+  type: trophy
+  title: SAP certified offerings for Azure
+  summary: As an IT Professional experienced in SAP solutions, you need to understand how to leverage Azure resources that include virtual machines, virtual networks, storage accounts, and Azure AD. These modules will provide the basis for running SAP workloads in Azure.
+  iconUrl: /training/achievements/sap-certified-offerings-for-azure.svg
