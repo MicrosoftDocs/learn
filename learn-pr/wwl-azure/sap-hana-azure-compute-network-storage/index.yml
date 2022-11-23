@@ -29,7 +29,6 @@ products:
 subjects:
 - virtual-machine
 units:
-- learn.wwl.sap-hana-azure-compute-network-storage.sap-hana-workloads-azure-large-instances-storage-considerations
 - learn.wwl.sap-hana-azure-compute-network-storage.single-multiple-sap-systems
 - learn.wwl.sap-hana-azure-compute-network-storage.supported-scenarios
 - learn.wwl.sap-hana-azure-compute-network-storage.summary
