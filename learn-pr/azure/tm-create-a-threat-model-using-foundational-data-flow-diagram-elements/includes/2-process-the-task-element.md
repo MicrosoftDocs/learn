@@ -1,4 +1,4 @@
-![Process Element heading image.](../media/process.png)
+![Rendering of a circle representing the Process Element.](../media/process.png)
 
 Depicted by a circle, this element represents activities that can modify or redirect received input to their proper outputs.
 
