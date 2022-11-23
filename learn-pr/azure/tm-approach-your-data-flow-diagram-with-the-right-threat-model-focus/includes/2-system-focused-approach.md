@@ -1,8 +1,8 @@
 ## The importance of a system-focused approach
 
-Authenticating your users with Azure is a good thing. Understanding how it works and interacts with each part of the system is better and avoids creating unknown post-deployment risk.
+Authenticating your users with Azure is a good thing. Understanding how that authentication works and interacts with each part of the system is better, and avoids creating unknown post-deployment risk.
 
-After all, the goals of threat modeling are to validate assumptions previously made, identify potential threats, and reduce risk earlier in the development lifecycle.
+After all, the goals of threat modeling are to validate assumptions you previously made, identify potential threats, and reduce risk earlier in the development lifecycle.
 
 ### Practical example of a system-focused approach
 
