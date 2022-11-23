@@ -29,7 +29,6 @@ units:
 - learn.wwl.deploy-sap-certified-offerings.prerequisites-sap-workloads-public-cloud
 - learn.wwl.deploy-sap-certified-offerings.sap-product-support
 - learn.wwl.deploy-sap-certified-offerings.os-support-azure-sap-workloads
-- learn.wwl.deploy-sap-certified-offerings.knowledge-check
 - learn.wwl.deploy-sap-certified-offerings.summary
 badge:
   uid: learn.wwl.deploy-sap-certified-offerings.badge
