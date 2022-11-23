@@ -12,7 +12,7 @@ title: Getting started with Visual Studio for Windows 10 app development
 summary: Visual Studio is the development tool used to create, debug, and deploy Windows 10 applications.
 abstract: |
   In this module, you will:
-  - Learn the key features of Visual Studio.
+  - Install Visual Studio and learn the key features.
   - Build a simple app by using Visual Studio.
   - Debug a Windows 10 app.
   - Use themes and other Visual Studio features.
