@@ -27,7 +27,6 @@ products:
 subjects:
 - cloud-computing
 units:
-- learn.wwl.using-iaas-support-azure-sap-workloads.learn.wwl.deploy-sap-certified-offerings.introduction
 - learn.wwl.using-iaas-support-azure-sap-workloads.learn.wwl.deploy-sap-certified-offerings.storage-support-sap-workloads
 - learn.wwl.using-iaas-support-azure-sap-workloads.learn.wwl.deploy-sap-certified-offerings.networking-support-sap-workloads
 - learn.wwl.using-iaas-support-azure-sap-workloads.learn.wwl.deploy-sap-certified-offerings.monitoring-requirements-sap-workloads
