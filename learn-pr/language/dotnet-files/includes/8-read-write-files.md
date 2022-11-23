@@ -26,7 +26,7 @@ This data in its string format doesn't do you much good. It's still just charact
 
 There are many ways to parse JSON files with .NET, including a community library known as *Json.NET*.
 
-You add the *Json.NET* package to your project by using NuGet.
+You can add the *Json.NET* package to your project by using NuGet:
 
 ```bash
 dotnet add package Newtonsoft.Json
@@ -57,7 +57,7 @@ class SalesTotal
 
 ## Write data to files
 
-You learned how to write files in the previous exercise. It's just that you wrote an empty one. To write data to a file, use the same `WriteAllText` method, but pass in the data that you want to write.
+You learned how to write files in the previous exercise; it's just that you wrote an empty one. To write data to a file, use the same `WriteAllText` method, but pass in the data that you want to write.
 
 ```csharp
 var data = JsonConvert.DeserializeObject<SalesTotal>(salesJson);
@@ -70,7 +70,7 @@ File.WriteAllText($"salesTotalDir{Path.DirectorySeparatorChar}totals.txt", data.
 
 ### Append data to files
 
-In the preceding example, the file is overwritten every time you write to it. Sometimes you don't want that. Sometimes you want to append data to the file, not replace it entirely. You can append data with the `File.AppendAllText` method. By default, `File.AppendAllText` will create the file if it doesn't already exist.
+In the preceding example, the file is overwritten every time you write to it. Sometimes you don't want that; you want to append data to the file, not replace it entirely. You can append data with the `File.AppendAllText` method. By default, `File.AppendAllText` will create the file if it doesn't already exist.
 
 ```csharp
 var data = JsonConvert.DeserializeObject<SalesTotal>(salesJson);

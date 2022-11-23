@@ -1,10 +1,10 @@
-All data in Azure Cosmos DB SQL API containers is indexed by default. This occurs because the container includes a default **indexing policy** that’s applied to all newly created containers. The default indexing policy consists of the following settings:
+All data in Azure Cosmos DB for NoSQL containers is indexed by default. This occurs because the container includes a default **indexing policy** that’s applied to all newly created items. The default indexing policy consists of the following settings:
 
 - The inverted index is updated for all create, update, or delete operations on an item
 - All properties for every item is automatically indexed
 - Range indexes are used for all strings or numbers
 
-Indexing policies are defined and managed in JSON. The default indexing policy for a new container in Azure Cosmos DB SQL API includes the following components:
+Indexing policies are defined and managed in JSON. The default indexing policy for a new container in Azure Cosmos DB for NoSQL includes the following components:
 
 | **Component** | **Description** | **Default value** |
 | ---: | :--- | :--- |
@@ -34,9 +34,9 @@ The default indexing policy, in JSON, contains the following content:
 
 ## Configure indexing mode
 
-There are two primary indexing mode options for most Azure Cosmos DB SQL API containers.
+There are two primary indexing mode options for most Azure Cosmos DB for NoSQL containers.
 
-The **consistent** indexing mode updates the index synchronously as your perform individual operations that modify an item (create, update, or delete). This indexing mode will be the standard choice for most containers to ensure the index is updated as items change.
+The **consistent** indexing mode updates the index synchronously as you perform individual operations that modify an item (create, update, or delete). This indexing mode will be the standard choice for most containers to ensure the index is updated as items change.
 
 The **none** indexing mode completely disables indexing on a container. This indexing mode is a scenario-specific mode where the indexing operation is either unnecessary or could impact the solution's overall performance. Two examples include:
 
@@ -47,7 +47,7 @@ The **none** indexing mode completely disables indexing on a container. This ind
 
 Indexing policies specify paths that are either explicitly included or excluded from the index. Using a path syntax, you can author expressions to describe various paths within a JSON item.
 
-Consider this JSON object that represents a product item in our Azure Cosmos DB SQL API container:
+Consider this JSON object that represents a product item in our Azure Cosmos DB for NoSQL container:
 
 ```json
 {

@@ -27,11 +27,11 @@ In this module, you'll:
 
 We're going to use Azure Maps route finding, to select a best route from a west coast city, to an east coast city. We have arbitrarily chosen Seattle, Portland, and San Francisco as the west coast cities, and New York, Charleston, and Miami as the east coast cities. You'll be able to change these locations to any favorites you may have.
 
-Also, we want to find the route for a variety of vehicles. We'll find the routes for a truck, a car, and a bicycle. OK, so cycling from Seattle to Miami may sound like madness to many. However, there's method to our madness. By including bicycles in our selection of vehicles, we can see the cross country routes, the passenger only ferries, or the bike trails, that are included in the underlying Azure Maps data.
+Also, we want to find the route for a variety of vehicles. We'll find the routes for a truck, a car, and a bicycle. OK, so cycling from Seattle to Miami may sound like madness to many. However, there's method to our madness. By including bicycles in our selection of vehicles, we can see the cross-country routes, the passenger only ferries, or the bike trails, that are included in the underlying Azure Maps data.
 
 On a more professional note, we can also vary the contents of our truck. There are nine classifications of hazardous materials, and our test app will allow us to specify any one of them. We add this feature so, again, we can see if the Azure Maps route finding algorithms can navigate through areas with road-use restrictions - "No flammable materials in the I-90 tunnel", for example.
 
-Finally, we need to know a route may well consist of more than a start and ending location. There can be many intermediary points on any desired route. For our test app, we'll add the option of saying "hi" to Chicago on the way across country.
+Finally, we need to know a route may well consist of more than a start and ending location. There can be many intermediary points on any desired route. For our test app, we'll add the option of saying "hi" to Chicago when you pass through.
 
 The following image shows the app we're going to build.
 

@@ -8,7 +8,7 @@ Out of the box, Azure Cosmos DB’s multi-region write feature has automatic con
 
 The default conflict resolution policy in Azure Cosmos DB is **Last Write Wins**. This policy uses the timestamp (_ts) to determine which item wrote last. In simple terms, if multiple items are in conflict, the item with the largest value for the **_ts** property will win. In the case of a delete conflict, the operation to delete an item will always win out over other operations.
 
-While the **_ts** property is the default for the Last Write Wins policy, you can configure any numeric property for this policy by configuring a *conflict resolution path*. You can use the .NET SDK for Azure Cosmos DB SQL API to configure the custom conflict resolution path.
+While the **_ts** property is the default for the Last Write Wins policy, you can configure any numeric property for this policy by configuring a *conflict resolution path*. You can use the .NET SDK for Azure Cosmos DB for NoSQL to configure the custom conflict resolution path.
 
 In this example, a new container named **products** is created with a custom conflict resolution path of **/sortableTimestamp**.
 

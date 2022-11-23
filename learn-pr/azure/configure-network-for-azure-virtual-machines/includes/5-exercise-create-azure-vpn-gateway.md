@@ -1,6 +1,6 @@
 You want to ensure that you can connect clients or sites within your environment into Azure using encrypted tunnels across the public internet. In this unit, you'll create a point-to-site VPN gateway, and then connect to that gateway from your client computer. You'll use native Azure certificate authentication connections for security.
 
-You will carry out the following process:
+You'll carry out the following process:
 
 1. Create a RouteBased VPN gateway.
 
@@ -14,7 +14,7 @@ You will carry out the following process:
 
 To complete this module, use Azure PowerShell from your local Windows 10 computer.
 
-1. Open a new PowerShell session on your local Windows 10 computer where you have the Azure PowerShell module installed.
+1. Open a new PowerShell session on your local Windows 10 computer where you installed the Azure PowerShell module.
 
 1. Sign in to Azure by running the PowerShell cmdlet `Connect-AzAccount`.
 
@@ -46,7 +46,7 @@ $GWIPconfName = "gwipconf"
     New-AzResourceGroup -Name $ResourceGroup -Location $Location
     ```
 
-1. Run the following command to create subnet configurations for the virtual network. These have the name **FrontEnd, BackEnd**, and **GatewaySubnet**. All of these subnets exist within the virtual network prefix.
+1. Run the following command to create subnet configurations for the virtual network. These configurations have the name **FrontEnd, BackEnd**, and **GatewaySubnet**. All of these subnets exist within the virtual network prefix.
 
     ```PowerShell
     $fesub = New-AzVirtualNetworkSubnetConfig -Name $FESubName -AddressPrefix $FESubPrefix
@@ -60,7 +60,7 @@ $GWIPconfName = "gwipconf"
     New-AzVirtualNetwork -Name $VNetName -ResourceGroupName $ResourceGroup -Location $Location -AddressPrefix $VNetPrefix1,$VNetPrefix2 -Subnet $fesub, $besub, $gwsub -DnsServer 10.2.1.3
     ```
 
-1. Now specify the variables for this network that you have just created.
+1. Now specify the variables for this network that you've created.
 
     ```PowerShell
     $vnet = Get-AzVirtualNetwork -Name $VNetName -ResourceGroupName $ResourceGroup
@@ -81,7 +81,7 @@ When creating this VPN gateway:
 - GatewayType must be Vpn
 - VpnType must be RouteBased
 
-Note that this part of the exercise can take up to 45 minutes to complete.
+This part of the exercise can take up to 45 minutes to complete.
 
 1. To create the VPN gateway, run the following command, and press <kbd>Enter</kbd>.
 
@@ -106,7 +106,7 @@ Note that this part of the exercise can take up to 45 minutes to complete.
 
 ## Generate a client certificate
 
-With the network infrastructure created on Azure, we need to create a self-signed client certificate on our local machine. This can be done similarly on most operating systems, but we will cover how to generate your client certificate on Windows 10 using PowerShell with the Azure PowerShell module and the Windows **Certificate Manager** utility.
+With the network infrastructure created on Azure, we need to create a self-signed client certificate on our local machine. This creation can be done similarly on most operating systems, but we'll cover how to generate your client certificate on Windows 10 using PowerShell with the Azure PowerShell module and the Windows **Certificate Manager** utility.
 
 1. Our first step is to create the self-signed root certificate. Run the following command.
 
@@ -185,7 +185,7 @@ With our certificates generated, we need to export our root certificate's public
 
 1. Copy the URL returned in the output from this command, and paste it into your browser. Your browser should start downloading a .ZIP file. Extract the archive contents and put them in a suitable location.
 
-   Some browsers will initially attempt to block downloading this ZIP file as a dangerous download. You will need to override this in your browser to be able to extract the archive contents.
+   Some browsers will initially attempt to block downloading this ZIP file as a dangerous download. You'll need to override this in your browser to be able to extract the archive contents.
 
 1. In the extracted folder, navigate to either the **WindowsAmd64** folder (for 64-bit Windows computers) or the **WindowsX86** folder (for 32-bit computers).
 
@@ -215,7 +215,7 @@ With our certificates generated, we need to export our root certificate's public
 
 1. In the **User Account Control** message box, select **Yes**.
 
- If these steps do not work, you may need to restart your computer.
+ If these steps don't work, you might need to restart your computer.
 
 ## Verify your connection
 

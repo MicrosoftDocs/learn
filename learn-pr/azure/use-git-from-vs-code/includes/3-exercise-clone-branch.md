@@ -1,15 +1,15 @@
 ## What you'll accomplish in this exercise
 
-In this first exercise, you'll simulate the process of contributing to an open-source library.  This provides the perfect context for using the Visual Studio Code integration with Git. You'll see how each tool and feature plays a part in creating a local clone and making your first change to your project code.
+In this first exercise, you'll simulate the process of contributing to an open-source library. This contribution provides the perfect context for using Visual Studio Code's integration with Git. You'll see how each tool and feature plays a part in creating a local clone and make your first change to your project code.
 
 In the next exercise, you'll stage and commit your changes and then push them to your remote fork.
 
 > [!IMPORTANT]
-> To continue with this exercise, you need to observe the requirements for this module: both Git and Visual Studio Code should be installed locally. Also, you'll need a GitHub account. Finally, this exercise assumes that you already know how to use Git.  The intent of the exercise is to demonstrate Git integration with Visual Studio Code.
+> To continue with this exercise, you need to install both Git and Visual Studio Code locally. You'll also need a GitHub account. Finally, this exercise assumes that you already know how to use Git. The intent of the exercise is to demonstrate Git integration with Visual Studio Code.
 
 ### Step 1 - Create a fork of an open-source project in GitHub
 
-If you clone someone else's GitHub repository and make some changes, you'll find that you don't have permission to push those changes back to GitHub. The workflow for making contributions to other people's projects on GitHub is a little more complex than working directly in the project repository.
+If you clone someone else's GitHub repository and make changes, you'll find that you don't have permission to push those changes back to GitHub. The workflow for making contributions to other people's projects on GitHub is a little more complex than working directly in the project repository.
 
 It all starts with creating a *fork*.
 
@@ -25,15 +25,17 @@ At this time, don't worry about what the code in this repository does or how it 
 
 Next, select **Fork** near the upper right of the webpage.
 
-![Screenshot of a GitHub Fork button.](../media/3-exercise-clone-branch-01.png)
+:::image type="content" source="../media/3-github-fork-branch.png" alt-text="Screenshot that shows the GitHub Fork button." lightbox="../media/3-github-fork-branch.png":::
 
 After a moment or two, the repository is forked to your GitHub account.
 
 ### Step 2 - Copy the URL to your forked repository
 
-When you're working with a fork of a project repository, you usually want to perform the clone operation from your own fork, not from the original repository. This automatically configures Git on your development computer to push your changes to the fork, where you have permissions to do so.
+When you're working with a fork of a project repository, you usually want to perform the clone operation from your own fork, not from the original repository. This operation automatically configures Git on your development computer to push your changes to the fork, where you have permissions to do so.
 
-You need the URL of your fork to clone it to your local hard drive. While at the root of this repository, copy the URL of your address bar. It will be in the format of `https://github.com/{Owner}/{Repository}`. For example, https://github.com/Microsoft/terminal.
+You need the URL of your fork to clone it to your local hard drive. Select **Code**, and then select the **Copy** button to copy the URL. It will be in the format of `https://github.com/{Owner}/{Repository}`. For example, https://github.com/Microsoft/terminal.
+
+:::image type="content" source="../media/3-clone-repo-copy-url-github.png" alt-text="Screenshot that shows the GitHub repository Copy URL button.":::
 
 That address is all we need to clone the fork to your machine.
 
@@ -81,17 +83,17 @@ The **Status Bar** appears at the bottom of the Visual Studio Code window, and p
 
    ![Screenshot of the Status Bar with a Publish Changes icon.](../media/3-exercise-clone-branch-05.png)
 
-To create a branch, click on the branch name (currently set to **master**) in the Status Bar.  This opens the **Command Palette** and allows you to either switch to an existing branch or create a new branch.
+To create a branch, click on the branch name (currently set to **master**) in the Status Bar.  This action opens the **Command Palette** and allows you to either switch to an existing branch or create a new branch.
 
 Start entering the name of the new branch, **update-response**. As you enter characters, notice that the existing branch names disappear.
 
-After you type **update-response**, press <kbd>Enter</kbd>.  The Command Palette prompts you to select the branch that you will base your new branch on. Select **master**.
+After you type **update-response**, press <kbd>Enter</kbd>.  The Command Palette prompts you to select the branch that you'll base your new branch on. Select **master**.
 
 The Status Bar should now display **update-response**, indicating the branch you're now working on.
 
 ### Step 5 - Make a change to the source code
 
-In the Explorer View, expand the `node/routes` folder and select the `index.js` file so that it is displayed in the code editor area of Visual Studio Code.
+In the Explorer View, expand the `node/routes` folder and select the `index.js` file so that it displays in the code editor area of Visual Studio Code.
 
 Update the code example to match the following code without saving your changes:
 
@@ -112,7 +114,7 @@ module.exports = router;
 
 If you didn't save the `index.js` file in the previous step, you'll notice several visual cues that indicate a change of state to your files in Visual Studio Code.  As you're editing the file, a small blue circle with a number appears on the **Explorer View** icon in the left column.  The number indicates how many files have unsaved changes.
 
-When you save your changes to the file by using <kbd>Ctrl+S</kbd>, the blue circle will disappears and a new blue icon with a number appears on the Source Control Icon, indicating the number of pending changes (unstaged or staged) that are ready to be committed.  The number increments as you make more changes to more files.
+When you save your changes to the file by using <kbd>Ctrl+S</kbd>, the blue circle will disappear and a new blue icon with a number appears on the Source Control Icon, indicating the number of pending changes (unstaged or staged) that are ready to be committed.  The number increments as you make more changes to more files.
 
 :::image type="content" source="../media/3-exercise-clone-branch-06.png" alt-text="Screenshot of the Source Control icon with a circled number indicating the number of changed files ready to commit.":::
 
@@ -127,9 +129,9 @@ Finally, after you commit your changes, this icon disappears. You'll commit the 
 
 Here are a few important takeaways from this exercise:
 
-- To quickly clone a repository, open the Command Palette by pressing <kbd>Ctrl+Shift+P</kbd> and typing **clone**.
-- To quickly see which branch you're working with, look at the Status Bar.
-- To quickly switch to a new branch or create a new branch, select the current branch name in the Status Bar.
-- To quickly run `git pull` and `git push` commands on an existing branch, select **Synchronize Changes**.
-- To quickly run a `git push` command on a new branch, select **Publish Changes**.
-- To quickly view the number of unstaged or staged changes, look at the blue numbered circle over the Source Control icon in the left column.
+- To clone a repository, open the Command Palette by pressing <kbd>Ctrl+Shift+P</kbd> and typing **clone**.
+- To see which branch you're working with, look at the Status Bar.
+- To switch to a new branch or create a new branch, select the current branch name in the Status Bar.
+- To run `git pull` and `git push` commands on an existing branch, select **Synchronize Changes**.
+- To run a `git push` command on a new branch, select **Publish Changes**.
+- To view the number of unstaged or staged changes, look at the blue numbered circle over the Source Control icon in the left column.

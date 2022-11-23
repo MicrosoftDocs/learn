@@ -1,13 +1,16 @@
 It's easy to add inbound and outbound rules. You can select from a large variety of services. These services include HTTPS, RDP, FTP, and DNS.
 
-:::image type="content" source="../media/add-network-security-rule-2f306d23.png" alt-text="Screenshot of the Add inbound security rule page in the Azure portal. The Advanced configuration link is highlighted.":::
+:::image type="content" source="../media/add-network-security-rule-2f306d23.png" alt-text="Screenshot of the Add inbound security rule page in the Azure portal.":::
 
+**Source.** The source filter can be Any, an IP address range, an Application security group, or a default tag. It specifies the incoming traffic from a specific source IP address range that will be allowed or denied by this rule.
 
-**Service.** Service specifies the destination protocol and port range for this rule. You can choose a predefined service, like HTTPS and SSH. When you select a service, the Port range is automatically completed. Choose custom to provide your own port range.
+**Destination.** The destination filter can be Any, an IP address range, an application security group, or a default tag. It specifies the outgoing traffic for a specific destination IP address range that will be allowed or denied by this rule.
 
-**Port ranges.** Port ranges can include a single port, a port range, or a comma-separated list of ports. The ports designate the traffic will be allowed or denied by this rule. Provide an asterisk (\*) to allow traffic on any port.
+**Service.** The service specifies the destination protocol and port range for this rule. You can choose a predefined service, like RDP or SSH, or provide a custom port range. There are a large number of services to select from. 
 
-**Priority.** Rules are processed in priority order. The lower the number, the higher the priority. We recommend leaving gaps between rules to make it easier to add new rules. The value is between 100-4096 and unique for all security rules within the network security group.
+:::image type="content" source="../media/security-services.png" alt-text="Screenshot of the service rule selections.":::
+
+**Priority.** Rules are processed in priority order; the lower the number, the higher the priority. We recommend leaving gaps between rules - 100, 200, 300, etc. - so that it's easier to add new rules without having to edit existing rules.
 
 > [!NOTE]
 > Will you need to create rules? Which services will you need to control the network traffic?

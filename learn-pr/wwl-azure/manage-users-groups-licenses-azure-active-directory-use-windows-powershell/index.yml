@@ -3,7 +3,7 @@ uid: learn.wwl.manage-users-groups-licenses-azure-active-directory-use-windows-p
 metadata:
   title: Manage users, groups, and licenses in Azure AD by using Windows PowerShell
   description: "This module covers how to give access to the services in Microsoft 365, so that you can create user accounts and then assign licenses that provide access to the services."
-  ms.date: 08/02/2022
+  ms.date: 10/26/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ prerequisites: |
   *   Familiarity with CIM and WMI technologies
   *   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
   *   Familiarity to administer remote computers with Windows PowerShell
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/manage-users-groups-licenses-use-windows-powershell.svg
 levels:
 - intermediate
 roles:

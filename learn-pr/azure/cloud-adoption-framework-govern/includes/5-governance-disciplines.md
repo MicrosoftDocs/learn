@@ -10,8 +10,6 @@ The following table summarizes each discipline from the Govern methodology in th
 | <br> :::image type="content" source="../media/resource-consistency-icon.png" alt-text="Resource consistency icon." border="false"::: | <br> [Resource Consistency discipline](/azure/cloud-adoption-framework/govern/resource-consistency/?azure-portal=true): Cloud operations depend on consistent resource configuration. Through governance tooling, resources can be configured consistently to manage risks related to onboarding, drift, discoverability, and recovery. |
 | <br> :::image type="content" source="../media/deployment-acceleration-icon.png" alt-text="Deployment acceleration icon." border="false"::: | <br> [Deployment Acceleration discipline](/azure/cloud-adoption-framework/govern/deployment-acceleration/?azure-portal=true): Centralization, standardization, and consistency in approaches to deployment and configuration improve governance practices. When provided through cloud-based governance tooling, they create a cloud factor that can accelerate deployment activities. |
 
-## Resource Consistency discipline
-
 ### Cost Management discipline
 
 This discipline focuses on scaling the operational best practices for cost management across all workloads and assets in your portfolio.
@@ -28,7 +26,7 @@ This discipline focuses on automating the application of security principles to 
 
 :::image type="content" source="../media/security-baseline.png" alt-text="Diagram of components in the security baseline." border="false":::
 
-*Figure 2: The Security Baseline discipline.*
+*Figure 1: The Security Baseline discipline.*
 
 This discipline would help Tailwind Traders address the following risks:
 
@@ -41,7 +39,7 @@ After you've established identity and access requirements for your cloud environ
 
 :::image type="content" source="../media/identity-baseline.png" alt-text="Diagram of components in the Identity Baseline discipline." border="false":::
 
-*Figure 3: The Identity Baseline discipline.*
+*Figure 2: The Identity Baseline discipline.*
 
 This discipline would help Tailwind Traders to address the following risk:
 
@@ -53,7 +51,7 @@ Resource consistency focuses on the initial organization of the resources that a
 
 :::image type="content" source="../media/resource-consistency.png" alt-text="Image that demonstrates the Resource Consistency baseline as a hierarchy of resources." border="false":::
 
-*Figure 1: The Resource Consistency discipline.*
+*Figure 3: The Resource Consistency discipline.*
 
 This discipline would help Tailwind Traders address the following risks:
 

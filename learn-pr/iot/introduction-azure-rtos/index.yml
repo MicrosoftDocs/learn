@@ -4,8 +4,11 @@ metadata:
   title: Introduction to Azure RTOS
   description: Description TBD
   ms.date: 01/27/2022
-  author: EdLamie
-  ms.author: liydu
+  author: timlt
+  ms.author: timlt
+  ms.reviewer: liydu
+  manager: lizross
+  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure RTOS

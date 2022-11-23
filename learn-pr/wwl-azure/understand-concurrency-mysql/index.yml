@@ -3,7 +3,7 @@ uid: learn.wwl.understand-concurrency-mysql
 metadata:
   title: Understand concurrency in MySQL
   description: "Learn about concurrency in MySQL, including how to limit the number of connections, and when to use thread pools."
-  ms.date: 06/20/2022
+  ms.date: 11/09/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Understand locking
 prerequisites: |
   Demonstrate an understanding of relational databases. Demonstrate an understanding of basic SQL.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/understand-concurrency-mysql.svg
 levels:
 - intermediate
 roles:

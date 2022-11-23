@@ -1,6 +1,6 @@
 ## Scenario
 
-Your company recently suffered a security incident that exposed customer personal information. This resulted in the loss of customers' confidential data and confidence. The IT team has recommended implementing network virtual appliances.
+Your company recently suffered a security incident that exposed customer personal information. This security incident has resulted in the loss of customers' confidential data and confidence. The IT team has recommended implementing network virtual appliances.
 
 You must ensure traffic is properly routed through the virtual appliances. You explore other security options like service endpoints and private links.
 
@@ -18,7 +18,7 @@ Implement and manage virtual networking
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
  -  Implement system routes and user-defined routes.
  -  Configure a custom route.

@@ -1,21 +1,21 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.get-started-azure-cosmos-db-sql-api
 metadata:
-  title: Get started with Azure Cosmos DB SQL API
-  description: Get started with Azure Cosmos DB SQL API
-  ms.date: 12/22/2021
+  title: Get started with Azure Cosmos DB for NoSQL
+  description: Get started with Azure Cosmos DB for NoSQL
+  ms.date: 10/13/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Get started with Azure Cosmos DB SQL API
+title: Get started with Azure Cosmos DB for NoSQL
 prerequisites: |
   Before starting this learning path, you should already have:
   *   Familiarity with Azure and the Azure portal.
   *   Experience programming with C#.
   If you have no previous programming experience, we recommend you complete the Take your first steps with C# learning path before starting this one.
 summary: |
-  Learn about the Azure Cosmos DB SQL API and how to get started with your first account, database, and container.
+  Learn about the Azure Cosmos DB for NoSQL and how to get started with your first account, database, and container.
 iconUrl: /training/achievements/azure-cosmos-db-get-started.svg
 levels:
 - intermediate

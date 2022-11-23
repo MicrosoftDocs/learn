@@ -1,4 +1,4 @@
-To configure an Azure Function to use an Azure Cosmos DB SQL API binding, you should first create an app setting in the function instance with the connection string of the Azure Cosmos DB account. If you are using the Azure portal, this can be done automatically on your behalf. Once you have the app setting with the connection string, you can leverage the setting in bindings for your Azure Function.
+To configure an Azure Function to use an Azure Cosmos DB for NoSQL binding, you should first create an app setting in the function instance with the connection string of the Azure Cosmos DB account. If you are using the Azure portal, this can be done automatically on your behalf. Once you have the app setting with the connection string, you can leverage the setting in bindings for your Azure Function.
 
 > [!NOTE]
 > The following examples assume that an app setting named **cosmosdbsqlconnstr** is already configured in the function instance with the connection string of the Azure Cosmos DB account.
@@ -13,7 +13,7 @@ The function.json file is the configuration file for all bindings within a funct
 
 ## Trigger function on changes in the change feed
 
-Configuring the Azure Cosmos DB SQL API trigger requires a JSON object within the bindings array. This object contains various properties that you can configure to change the behavior of the trigger. These properties include, but are not limited to:
+Configuring the Azure Cosmos DB for NoSQL trigger requires a JSON object within the bindings array. This object contains various properties that you can configure to change the behavior of the trigger. These properties include, but are not limited to:
 
 | **Property** | **Description** |
 | ---: | :--- |

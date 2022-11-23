@@ -28,7 +28,7 @@ subjects:
 - data-analytics
 modules:
 - learn.provision-azure-sql-db
-- learn.migrate-sql-server-relational-data
+- learn-wwl.migrate-sql-workloads-azure-sql-databases
 - learn.create-azure-db-for-postgresql
 - learn.azure-scale-azure-sql-dbs-elastic-pools
 - learn.secure-your-azure-sql-database

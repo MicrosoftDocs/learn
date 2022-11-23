@@ -4,8 +4,11 @@ metadata:
   title: Next steps for Azure RTOS ThreadX
   description: Learn the next learning path for ThreadX.
   ms.date: 03/29/2022
-  author: edlamie80
-  ms.author: liydu
+  author: timlt
+  ms.author: timlt
+  ms.reviewer: liydu
+  manager: lizross
+  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure RTOS ThreadX next steps

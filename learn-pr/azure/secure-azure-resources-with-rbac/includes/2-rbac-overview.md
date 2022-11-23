@@ -40,7 +40,7 @@ Here are some scenarios you can implement with Azure RBAC.
 
 In several areas in the Azure portal, you'll see a pane named **Access control (IAM)**, also known as *identity and access management*. On this pane, you can see who has access to that area and their role. Using this same pane, you can grant or remove access.
 
-The following shows an example of the Access control (IAM) pane for a resource group. In this example, Alain Charon has been assigned the Backup Operator role for this resource group.
+The following shows an example of the Access control (IAM) pane for a resource group. In this example, Alain has been assigned the Backup Operator role for this resource group.
 
 ![Screenshot of the Azure portal showing the Access control-Role assignment pane with the Backup operator section highlighted.](../media/2-resource-group-access-control.png)
 

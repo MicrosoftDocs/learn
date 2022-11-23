@@ -3,9 +3,9 @@ uid: learn.data-ai.transform-data-with-azure-stream-analytics
 metadata:
   title: Transform data by using Azure Stream Analytics
   description: Learn how to create Azure Stream Analytics jobs to process input data, transform it with a query, and return results
-  ms.date: 08/16/2022
-  author: ctesta-oneillmsft
-  ms.author: chtestao
+  ms.date: 11/07/2022
+  author: wwlpublish
+  ms.author: smcdowell
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Transform data by using Azure Stream Analytics
@@ -19,7 +19,7 @@ abstract: |
   - Write a transformation query.
   - Start a Stream Analytics job.
 prerequisites: An Azure account or active trial
-iconUrl: /training/achievements/data-ai/transform-data-with-azure-stream-analytics-badge.svg
+iconUrl: /learn/achievements/data-ai/transform-data-with-azure-stream-analytics-badge.svg
 levels:
 - beginner
 roles:

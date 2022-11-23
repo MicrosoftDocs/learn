@@ -1,6 +1,6 @@
-Application Gateway listens on an endpoint for incoming requests, and forwards these requests to one of the web servers in its back-end pool. You provide the configuration that describes how Application Gateway directs traffic, and how to load balance requests across web servers.
+Application Gateway listens on an endpoint for incoming requests, then forwards these requests to one of the web servers in its back-end pool. You'll provide the configuration that describes how Application Gateway directs traffic, and how to load balance requests across web servers.
 
-In the motor vehicle department system, you need to configure Application Gateway to load balance incoming requests across the web servers hosting the vehicle registration web app. You also need to configure Application Gateway to detect when either of the web servers has failed, so it can redirect traffic to a working server. Additionally, you need to configure path-based routing to send requests for the vehicle registration and license renewal sites to the proper back-end web services.
+In the motor vehicle department system, you need to configure Application Gateway to load balance incoming requests across the web servers hosting the vehicle registration web app. You also need to configure Application Gateway to detect when either of the web servers has failed so it can redirect traffic to a working server. Additionally, you need to configure path-based routing to send requests for the vehicle registration and license renewal sites to the proper back-end web services.
 
 In this exercise, you'll create an instance of Application Gateway with a back-end pool of web servers. You'll verify that Application Gateway is configured with the correct listener to handle incoming HTTP requests, and routes these requests to a functioning web server.
 
@@ -30,7 +30,17 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
 ## Create an application gateway
 
-1. Create an application gateway named `vehicleAppGateway` with the following configuration:
+1. First, use the following command to create a WAF policy:
+
+    ```azurecli
+    az network application-gateway waf-policy create \
+      --name waf-pol \
+      --resource-group $RG \
+      --type OWASP \
+      --version 3.2
+    ```
+
+1. Use the following command to create an application gateway named `vehicleAppGateway` with the following configuration:
 
     - A back-end pool containing the IP addresses of the web server virtual machines.
     - A firewall that blocks malicious requests, such as those used by SQL Injection and Cross-Site Scripting attacks.
@@ -50,6 +60,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
     --http-settings-port 8080 \
     --private-ip-address 10.0.0.4 \
     --frontend-port 8080 \
+    --waf-policy waf-pol \
     --priority 100
     ```
 
@@ -84,7 +95,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
       --servers 10.0.1.4 10.0.1.5
     ```
 
-1. To create a back-end pool for the license renewal site running on App Service, run the following command.
+1. To create a back-end pool for the license renewal site running on App Service, run the following command:
 
     ```azurecli
     az network application-gateway address-pool create \
@@ -94,7 +105,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
         --servers $APPSERVICE.azurewebsites.net
     ```
 
-1. For port 80, create a front-end port.
+1. For port 80, create a front-end port:
 
     ```azurecli
     az network application-gateway frontend-port create \
@@ -104,7 +115,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
         --port 80
     ```
 
-1. To handle requests on port 80, create the listener.
+1. To handle requests on port 80, create the listener:
 
     ```azurecli
     az network application-gateway http-listener create \
@@ -119,7 +130,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
 1. Create a health probe that tests the availability of a web server. The health probe runs every 15 seconds (`--interval 15`), and sends an HTTP GET request to the root path of the web app. If the web app doesn't respond within 10 seconds (`--timeout 10`), the probe times out. The web server is marked as unhealthy if the probe fails three times in succession (`--threshold 3`).
 
-    Because you're using App Service as one of our back-ends, you'll set the host header to the name of the App Service. Without this setting, the App Service won't respond and won't show as healthy.
+    Because you're using App Service as one of your back-ends, you'll set the host header to the name of the App Service. Without this setting, the App Service won't respond and won't show as healthy.
 
     ```azurecli
     az network application-gateway probe create \
@@ -134,7 +145,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
         --host-name-from-http-settings true
     ```
 
-1. Next, to use the health probe you created, create the HTTP Settings for the gateway.
+1. Next, to use the health probe you created, create the HTTP Settings for the gateway:
 
     ```azurecli
     az network application-gateway http-settings create \
@@ -150,7 +161,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
 Now we need to configure path-based routing for our Application gateway. We'll route requests to **/VehicleRegistration/** to the **vmPool** and requests to **/LicenseRenewal/** to the **appServicePool**. Any requests without any URL context will be routed to the **vmPool** as a default.
 
-1. To create the path map for the **vmPool**, run the following command.
+1. To create the path map for the **vmPool**, run the following command:
 
     ```azurecli
     az network application-gateway url-path-map create \
@@ -162,7 +173,7 @@ Now we need to configure path-based routing for our Application gateway. We'll r
         --address-pool vmPool
     ```
 
-1. To create the path map rule for the **appServicePool**, run the following command.
+1. To create the path map rule for the **appServicePool**, run the following command:
 
     ```azurecli
     az network application-gateway url-path-map rule create \
@@ -175,7 +186,7 @@ Now we need to configure path-based routing for our Application gateway. We'll r
         --path-map-name urlPathMap
     ```
 
-1. Now, create a new routing rule using the path map you created.
+1. Now, create a new routing rule using the path map you created:
 
     ```azurecli
     az network application-gateway rule create \
@@ -189,7 +200,7 @@ Now we need to configure path-based routing for our Application gateway. We'll r
         --url-path-map urlPathMap
     ```
 
-1. The last piece of configuration is to delete the rule that was created when we initially deployed the Application Gateway. With your custom rule in place, you no longer need it.
+1. The last piece of configuration is to delete the rule that we created when we initially deployed the Application Gateway. With your custom rule in place, you no longer need it.
 
     ```azurecli
     az network application-gateway rule delete \

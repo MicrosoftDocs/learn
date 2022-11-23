@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.recommend-secure-methodology-using-cloud-adoption-framework-caf.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/17/2022
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Recommend a secure methodology using the Cloud Adoption Framework (CAF)"
+  questions:
+  - content: "What three security practices should be the focus of the plan and develop stage?"
+    choices:
+    - content: "1) Dependency management 2) Static application security testing 3) Secure pipelines"
+      isCorrect: false
+      explanation: "Incorrect. These security controls are used in the 'Commit the code' phase."
+    - content: "1) Threat modeling, 2) IDE security plug-ins and pre-commit hooks and 3) peer reviews and securing coding standards."
+      isCorrect: true
+      explanation: "Correct. These are all security controls, which should be applied the plan and develop stage."
+    - content: "1) Dynamic application security testing 2) Cloud configuration validation 3) Infrastructure scanning."
+      isCorrect: false
+      explanation: "Incorrect. These items are security controls that used in the 'Build and test' phase"
+  - content: "What should be the first step to get started with asset protection?"
+    choices:
+    - content: "Start with industry baselines."
+      isCorrect: false
+      explanation: "Incorrect. This is technique is actually the second step for getting started with asset protection."
+    - content: "Focus on well known resources."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Make a list of accountable and responsible teams."
+      isCorrect: false
+      explanation: "This best practice is key information in the asset protection process, but is not the first step."
+  - content: "The goal of a mature security program should be which of the following?"
+    choices:
+    - content: "Search for and eliminate risk."
+      isCorrect: false
+      explanation: "Incorrect. It may be difficult or impossible to completely eliminate all risk from an organization's systems."
+    - content: "Expose and mitigate risks."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Prevent risks from occurring."
+      isCorrect: false
+      explanation: "Incorrect. In situations where a security program is being created after systems already exist, the goal should be to handle existing risks."

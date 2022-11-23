@@ -21,7 +21,7 @@ Create and configure containers
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
  -  Identify AKS components including pods, clusters, and nodes.
  -  Configure network connections for AKS.

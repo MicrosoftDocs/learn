@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-storage-security.apply-best-practices
-title: Apply storage security best practices
+title: Apply Azure Storage security best practices
 metadata:
-  title: Apply storage security best practices
-  description: "Apply storage security best practices"
-  ms.date: 08/05/2022
+  title: Apply Azure Storage security best practices
+  description: "Apply Azure Storage security best practices"
+  ms.date: 11/18/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 8
 content: |
   [!include[](includes/7-apply-best-practices.md)]

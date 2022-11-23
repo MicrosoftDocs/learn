@@ -33,9 +33,9 @@ quiz:
     - content: "`rmdir`"
       isCorrect: false
       explanation: "Incorrect. The `rmdir` command deletes only empty directories."
-    - content: "`nuke`"
+    - content: "`destroy`"
       isCorrect: false
-      explanation: "Incorrect. `nuke` is not a Bash command."
+      explanation: "Incorrect. `destroy` is not a Bash command."
   - content: "Which of the following commands combines the contents of <b>foo.txt</b> and <b>bar.txt</b> into a new file named <b>foobar.txt</b>?"
     choices:
     - content: "`concat foo.txt bar.txt > foobar.txt`"

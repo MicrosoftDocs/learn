@@ -1,12 +1,12 @@
-You've started to use Bicep templates for some recent product launches, and they've been very successful. Because you've declared your resources in a template file, you can quickly deploy the resources for new toy launches without needing to manually configure resources in the Azure portal.
+You've started to use Bicep templates for some recent product launches, and they've been successful. Because you've declared your resources in a template file, you can quickly deploy the resources for new toy launches without needing to manually configure resources in the Azure portal.
 
-The IT manager can see your Bicep code is becoming more complex and has an increasing number of resources defined, so they've asked if you can make the code more *modularized*. You can create individual Bicep files, called modules, for different parts of your deployment. The main Bicep template can reference these modules. Behind the scenes, modules are transpiled into a single JSON template for deployment.
+The IT manager can see your Bicep code is becoming more complex and has an increasing number of resources defined, so they've asked if you can make the code more _modularized_. You can create individual Bicep files, called modules, for different parts of your deployment. The main Bicep template can reference these modules. Behind the scenes, modules are transpiled into a single JSON template for deployment.
 
 Modules are also a way to make Bicep code even more reusable. You can have a single Bicep module that lots of Bicep templates use.
 
-You also will often need to emit *outputs* from the Bicep modules and templates. Outputs are a way for your Bicep code to send data back to whoever or whatever started the deployment. Let's look at outputs first.
+You also will often need to emit _outputs_ from the Bicep modules and templates. Outputs are a way for your Bicep code to send data back to whoever or whatever started the deployment. Let's look at outputs first.
 
-[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+[!INCLUDE [Note - don't run commands](../../../includes/dont-run-commands.md)]
 
 ## Outputs
 
@@ -47,11 +47,11 @@ output ipFqdn string = publicIPAddress.properties.dnsSettings.fqdn
 
 ## Define a module
 
-Bicep modules allow you to organize and reuse your Bicep code by creating smaller units that can be composed into a template. Any Bicep template can be used as a module by another template. Throughout this learning module, you've been creating Bicep templates. That means you've already created files that can be used as Bicep modules!
+Bicep modules allow you to organize and reuse your Bicep code by creating smaller units that can be composed into a template. Any Bicep template can be used as a module by another template. Throughout this learning module, you've created Bicep templates. That means you've already created files that can be used as Bicep modules!
 
-Imagine you have a Bicep template that deploys application, database, and networking resources for *solution A*. You might split this template into three modules, each of which is focused on its own set of resources. As a bonus, you can now reuse the modules in other templates for other solutions too. So when you develop a template for *solution B* &mdash; which has similar networking requirements to *solution A* &mdash; you can reuse the network module.
+Imagine you have a Bicep template that deploys application, database, and networking resources for _solution A_. You might split this template into three modules, each of which is focused on its own set of resources. As a bonus, you can now reuse the modules in other templates for other solutions too. So when you develop a template for _solution B_, which has similar networking requirements to _solution A_, you can reuse the network module.
 
-:::image type="content" source="../../includes/media/bicep-templates-modules.png" alt-text="Diagram that shows a template for solution A referencing three modules - application, database, and networking. The networking module is then reused in another template for solution B." border="false":::
+:::image type="content" source="../../includes/media/bicep-templates-modules.png" alt-text="Diagram that shows a template for solution A referencing three modules: application, database, and networking. The networking module is then reused in another template for solution B." border="false":::
 
 When you want the template to include a reference to a module file, use the `module` keyword. A module definition looks similar to a resource declaration, but instead of including a resource type and API version, you'll use the module's file name:
 
@@ -66,11 +66,11 @@ module myModule 'modules/mymodule.bicep' = {
 
 Let's look closely at some key parts of this module definition:
 
-* The `module` keyword tells Bicep you're about to use another Bicep file as a module.
-* Just like resources, modules need a *symbolic name*. You'll use the symbolic name when you refer to the module's outputs in other parts of the template.
-* `modules/mymodule.bicep` is the path to the module file, relative to the template file. Remember, this is just a regular Bicep file.
-* Just like resources, the *name* property is mandatory. Azure uses the name of the module because it creates a separate deployment for each module within the template file. Those deployments have names you can use to identify them.
-* You can specify any *parameters* of the module by using the `params` keyword. When you set the values of each parameter within the template, you can use expressions, template parameters, variables, properties of resources deployed within the template, and outputs from other modules. Bicep will automatically understand the dependencies between the resources.
+- The `module` keyword tells Bicep you're about to use another Bicep file as a module.
+- Just like resources, modules need a _symbolic name_ like `myModule`. You'll use the symbolic name when you refer to the module's outputs in other parts of the template.
+- `modules/mymodule.bicep` is the path to the module file, relative to the template file. Remember, a module file is just a regular Bicep file.
+- Just like resources, the `name` property is mandatory. Azure uses the name of the module because it creates a separate deployment for each module within the template file. Those deployments have names you can use to identify them.
+- You can specify any _parameters_ of the module by using the `params` keyword. When you set the values of each parameter within the template, you can use expressions, template parameters, variables, properties of resources deployed within the template, and outputs from other modules. Bicep will automatically understand the dependencies between the resources.
 
 ## Modules and outputs
 
@@ -78,16 +78,16 @@ Just like templates, Bicep modules can define outputs. It's common to chain modu
 
 ## Design your modules
 
-A good Bicep module follows a few key principles:
+A good Bicep module follows some key principles:
 
 > [!div class="checklist"]
 >
-> * **A module should have a clear purpose.** You can use modules to define all of the resources related to a specific part of your solution. For example, you might create a module that contains all of the resources used to monitor your application. You might also use a module to define a set of resources that belong together, like all of your database servers and databases.
+> - **A module should have a clear purpose.** You can use modules to define all of the resources related to a specific part of your solution. For example, you might create a module that contains all of the resources used to monitor your application. You might also use a module to define a set of resources that belong together, like all of your database servers and databases.
 >
-> * **Don't put every resource into its own module.** You shouldn't create a separate module for every resource you deploy. If you have a resource that has lots of complex properties, it might make sense to put that resource into its own module. But in general, it's better for modules to combine multiple resources.
+> - **Don't put every resource into its own module.** You shouldn't create a separate module for every resource you deploy. If you have a resource that has lots of complex properties, it might make sense to put that resource into its own module. But in general, it's better for modules to combine multiple resources.
 >
-> * **A module should have clear parameters and outputs that make sense.** Consider the purpose of the module. Think about whether the module should be manipulating parameter values, or whether the parent template should handle that and then pass a single value through to the module. Similarly, think about the outputs a module should return, and make sure they're useful to the templates that will use the module.
+> - **A module should have clear parameters and outputs that make sense.** Consider the purpose of the module. Think about whether the module should manipulate parameter values, or whether the parent template should handle that, and then pass a single value through to the module. Similarly, think about the outputs a module should return, and make sure they're useful to the templates that will use the module.
 >
-> * **A module should be as self-contained as possible.** If a module needs to use a variable to define a part of a module, the variable should generally be included in the module file rather than in the parent template.
+> - **A module should be as self-contained as possible.** If a module needs to use a variable to define a part of a module, the variable should generally be included in the module file rather than in the parent template.
 >
-> * **A module should not output secrets.** Just like templates, don't create module outputs for secret values like connection strings or keys.
+> - **A module should not output secrets.** Just like templates, don't create module outputs for secret values like connection strings or keys.

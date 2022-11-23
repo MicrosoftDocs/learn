@@ -5,8 +5,9 @@ metadata:
   title: Summary and cleanup
   description: Summary and cleanup
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

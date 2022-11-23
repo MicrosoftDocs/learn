@@ -1,16 +1,16 @@
-Moving just your resources to the cloud is taking advantage of only a small portion of what the cloud can bring to your organization. Along with the technical capabilities that the cloud brings, you can improve your operational capabilities as well. From improving developer agility to improving your visibility into the health and performance of your application, you can use the cloud to improve the operational capabilities of your organization.
+Moving just your resources to the cloud is taking advantage of only a small portion of what the cloud can bring to your organization. Along with the technical capabilities that the cloud delivers, you can improve your operational capabilities as well. From improving developer agility to improving your visibility into the health and performance of your application, you can use the cloud to improve the operational capabilities of your organization.
 
 In this unit, we'll look at the pillar of operational excellence.
 
 ## What is operational excellence?
 
-Operational excellence is about ensuring that you have full visibility into how your application is running, and ensuring the best experience for your users. Operational excellence includes making your development and release practices more agile, which allows your business to quickly adjust to changes. By improving operational capabilities, you can have faster development and release cycles, and a better experience for your application's users.
+Operational excellence is about ensuring that you have full visibility into how your application is running, as well as ensuring the best experience for your users. Operational excellence includes making your development and release practices more agile, which allows your business to quickly adjust to changes. By improving operational capabilities, you can have faster development and release cycles, and a better experience for your application's users.
 
 You can use several principles when driving operational excellence through your architecture.
 
 ### Design, build, and orchestrate with modern practices
 
-Modern architectures should be designed with DevOps and continuous integration in mind. A modern architecture will give you the ability to automate deployments by using infrastructure as code, automate application testing, and build new environments as needed. DevOps is as much cultural as it is technical, but can bring many benefits to organizations that embrace it.
+Modern architectures should be designed with DevOps and continuous integration in mind. A modern architecture allows you to automate deployments by using infrastructure as code, automate application testing, and build new environments as needed. DevOps is as much cultural as it is technical, but can bring many benefits to organizations that embrace it.
 
 Regardless of whether your project is a greenfield application that uses full continuous integration and continuous deployment (CI/CD) and containers, or if it's a legacy application that you're continuing to service, there are DevOps practices you can bring into your organization.
 

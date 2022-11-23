@@ -2,7 +2,7 @@ Now we'll review the geographic location requirements for datacenters.
 
 ## Geographic location requirements
 
-For a large multinational corporation, there is a good chance that it already has a number of servers at each of its branch offices and would likely build traditional datacenters in the countries in which it is already established. The reason for having equipment closer to the users is for better application responsiveness, which (hopefully) yields higher productivity.
+For a large multinational corporation, there is a good chance that it already has a number of servers at each of its branch offices and would likely build traditional datacenters in the countries/regions in which it is already established. The reason for having equipment closer to the users is for better application responsiveness, which (hopefully) yields higher productivity.
 
 A company whose product is web based would need to build multiple datacenters around the world to provide better service to customers in a wide variety of geographic locations. A common example of this is web search—Google, Microsoft, and Yahoo all have large datacenters at many sites scattered around the globe. This variety in location provides faster search results to the user, which is a competitive advantage (as long as accuracy is maintained).
 

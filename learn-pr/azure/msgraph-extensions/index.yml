@@ -22,7 +22,7 @@ prerequisites: |
     - Have basic knowledge of working with REST APIs and how to use the create, read, update, and delete (CRUD) REST API operations.
     - Have basic knowledge of working with user data in Azure AD and Microsoft 365 by using Microsoft Graph. Sign in to a client app such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph.
     - Be an owner of an application that you'll use in this module.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/msgraph-extensions.svg
 levels:
   - intermediate
 roles:

@@ -1,6 +1,4 @@
-In order to use these tactics like proactive and reactive detection to manage threats, you should have a central console to allow SOC administrators to detect, investigate, remediate, hunt, utilize threat intelligence, understand known vulnerabilities, lean on threat experts and block threats across any of the six Zero Trust technology pillars. The tools needed to support these phases work best if converged into a single workflow, providing a seamless experience that increases the effectiveness of the SOC analyst.
-
-:::image type="content" source="../media/modern-security-operation.png" alt-text="Diagram showing technology capabilities for modern security operations." lightbox="../media/modern-security-operation.png":::
+In order to use these tactics like proactive and reactive detection to manage threats, you should have a central console to allow SOC administrators to detect, investigate, remediate, hunt, utilize threat intelligence, understand known vulnerabilities, lean on threat experts and block threats across any of the six pillars. The tools needed to support these phases work best if converged into a single workflow, providing a seamless experience that increases the effectiveness of the SOC analyst.
 
 Security Operation Centers often deploy a combination of SIEM and SOAR technologies to collect, detect, investigate, and respond to threats. Microsoft offers Microsoft Sentinel as its SIEM-as-a-service offering. Microsoft Sentinel ingests all Microsoft Defender for Identity and third-party data.
 
@@ -8,7 +6,7 @@ Microsoft 365 Defender, a key feed into Microsoft Sentinel, provides a unified e
 
 It is through this hierarchy that we enable our customers to maximize their focus. Through context-awareness and automated remediation, Microsoft 365 Defender can detect and stop many threats without adding additional alert-fatigue to already overloaded SOC personnel. Advanced hunting inside of Microsoft 365 Defender brings that context to the hunt to focus on many key attack points. And hunting and orchestration across the entire ecosystem through Microsoft Sentinel provides the ability to gain the right visibility into all aspects of a heterogeneous environment, all while minimizing the cognitive overload of the operator.
 
-
+:::image type="content" source="../media/modern-security-operation.png" alt-text="Diagram showing technology capabilities for modern security operations." lightbox="../media/modern-security-operation.png":::
 
 ## Visibility, automation, and orchestration Zero Trust deployment objectives
 
@@ -106,7 +104,3 @@ The following are best practices for network monitoring and available tools.
 Most security breaches occur when attackers gain access to an environment by stealing a user's identity. Discovering compromised identities is no easy task. Azure AD uses adaptive machine learning algorithms and heuristics to detect suspicious actions related to user accounts. Each detected suspicious action is stored in a record called risk detection. Risk detections are recorded in Azure AD security reports. For more information, read about the users at risk security report and the risky sign-ins security report. 
 
 **Monitor for suspicious actions related to your user accounts** - Monitor for [users at risk](/azure/active-directory/identity-protection/overview-identity-protection) and [risky sign-ins](/azure/active-directory/identity-protection/overview-identity-protection) by using Azure AD security reports.
-
-For more detailed guidance on unified SIEM and XDR capabilities, view the following interactive guide.
-
-[:::image type="content" source="../media/detect-respond-modern-attacks-unified-siem-xdr-capabilities.png" alt-text="Cover for an interactive guide that says Detect and respond to modern attacks with unified SIEM and XDR capabilities." border="true":::](https://mslearn.cloudguides.com/guides/Detect%20and%20respond%20to%20modern%20attacks%20with%20unified%20SIEM%20and%20XDR%20capabilities)

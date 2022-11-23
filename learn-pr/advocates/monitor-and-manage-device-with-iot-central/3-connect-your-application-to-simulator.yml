@@ -6,8 +6,11 @@ metadata:
   description: Connect your simulated coffee machine to the application
   ms.date: 09/24/2018
   #TODO: Update with real author name.
-  author: adrianstevens
-  ms.author: adsteven
+  author: asergaz
+  ms.author: sergaz
+  ms.reviewer: adchukwu
+  manager: lizross
+  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash

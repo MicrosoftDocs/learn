@@ -206,7 +206,7 @@ But you can also do powerful, array-like operations with `Series`, like slicing.
 You can also add elements to a `Series` the way you would to an `ndarray`.
 
 - Try adding elements to a `Series` in the following code cell.
-- Try running `population['Albania'] = 2937590` (or another country of your choice).
+- Try running `population['Albania'] = 2937590` (or another country/region of your choice).
 - Predict what order the keys appear in when you run `population`. Is it what you expected?
 
 <br />

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.understand-azure-function-bindings
-title: Understand Azure Function bindings for Azure Cosmos DB SQL API
+title: Understand Azure Function bindings for Azure Cosmos DB for NoSQL
 metadata:
-  title: Understand Azure Function bindings for Azure Cosmos DB SQL API
-  description: "Understand Azure Function bindings for Azure Cosmos DB SQL API"
-  ms.date: 08/31/2022
+  title: Understand Azure Function bindings for Azure Cosmos DB for NoSQL
+  description: "Understand Azure Function bindings for Azure Cosmos DB for NoSQL"
+  ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

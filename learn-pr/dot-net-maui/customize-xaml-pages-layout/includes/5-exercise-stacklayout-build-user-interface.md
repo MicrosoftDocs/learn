@@ -184,4 +184,4 @@ The complete XAML markup for the content page should look like this:
 
 Run the app again and look at the differences in the UI. Verify that the controls are aligned correctly, and properly sized and spaced.
 
-You used `VerticalStakLayout` and `HorizontalStackLayout` containers to improve the aesthetics of an existing UI. These layouts are the simplest layout panels, but are powerful enough to produce a reasonable UI.
+You used `VerticalStackLayout` and `HorizontalStackLayout` containers to improve the aesthetics of an existing UI. These layouts are the simplest layout panels, but are powerful enough to produce a reasonable UI.

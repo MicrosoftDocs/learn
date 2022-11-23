@@ -11,5 +11,5 @@ You should now be able to:
 You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
 
  -  [Load Balancer documentation](/azure/load-balancer/).
- -  [Improve application scalability and resiliency by using Azure Load Balancer (Sandbox)](/training/modules/improve-app-scalability-resiliency-with-load-balancer/)
- -  [Load balance non-HTTP(S) traffic in Azure](/training/modules/load-balancing-non-https-traffic-azure/)
+ -  [Learn - Improve application scalability and resiliency by using Azure Load Balancer (Sandbox)](/training/modules/improve-app-scalability-resiliency-with-load-balancer/)
+ -  [Learn - Load balance non-HTTP(S) traffic in Azure](/training/modules/load-balancing-non-https-traffic-azure/)

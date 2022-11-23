@@ -1,7 +1,3 @@
-Advanced cybersecurity attacks comprise multiple complex malicious events, attributes, and contextual information. Identifying and deciding which of these activities qualify as suspicious can be a challenging task. Your knowledge of known attributes and abnormal activities specific to your industry is fundamental in knowing when to call an observed behavior as suspicious.
-
-:::image type="content" source="../media/pete-attack-patterns.png" alt-text="Diagram showing common attack patterns." lightbox="../media/pete-attack-patterns.png":::
-
 Organizations use Cyber Threat Intelligence to collect information gained from access to various signals across the Microsoft network. Cyber Threat Intelligence can be sourced from many places. These include, open-source data feeds, threat intelligence-sharing communities, commercial intelligence feeds, and local intelligence gathered during security investigations within an organization. Every second, hundreds of GB's worth of data is added to the Microsoft Intelligent Security Graph. This anonymized data comes from:
 
 -   Over a hundred Microsoft data centers across the globe.
@@ -61,7 +57,9 @@ collectively to identify early clues on a possible cybersecurity attack.
 These indicators are typically a combination of activities,
 characteristics, and actions taken by an attacker to successfully
 achieve the objective of an attack. Monitoring these combinations of
-attributes is critical in gaining a vantage point against attacks. Monitoring based on these indicators can help interfere with the chain of events before an attacker's objective is reached.
+attributes is critical in gaining a vantage point against attacks. These
+possibly interfere with the chain of events before an attacker's
+objective is reached.
 
 ### Indicators of compromise (IOC)
 
@@ -93,13 +91,13 @@ the Microsoft 365 Defender console.
 Microsoft Defender for IoT is a unified security solution for identifying IoT and OT devices, vulnerabilities, and threats and
 managing them through a central interface.
 
-Defender for IoT has [native threat intelligence capabilities](/azure/sentinel/iot-solution?tabs=use-out-of-the-box-analytics-rules-recommended) using threat intelligence packages. You can deploy Microsoft Defender for IoT in Azure-connected and hybrid environments or on-premises. If you choose to integrate Defender for IoT with Microsoft Sentinel, you'll get threat intelligence from Defender for IoT and the enriched threat intelligence from Sentinel.
+Defender for IoT has [native threat intelligence capabilities](/azure/sentinel/iot-solution?tabs=use-out-of-the-box-analytics-rules-recommended) using threat intelligence packages. You can deploy Microsoft Defender for IoT in Azure-connected and hybrid environments or completely on-premises. If you choose to integrate Defender for IoT with Microsoft Sentinel, you'll get threat intelligence from Defender for IoT and the enriched threat intelligence from Sentinel.
 
 ![Diagram showing an example of Defender for IoT's end-to-end coverage solution.](../media/defender-for-iot.png) 
 
 Defender for IoT has both agent-based and agentless monitoring solutions:
 
--   **For end-user organizations**, Microsoft Defender for IoT provides agentless, network-layer monitoring that integrates smoothly with industrial equipment and SOC tools. You can deploy Microsoft Defender for IoT in Azure-connected and hybrid environments or on-premises.
+-   **For end-user organizations**, Microsoft Defender for IoT provides agentless, network-layer monitoring that integrates smoothly with industrial equipment and SOC tools. You can deploy Microsoft Defender for IoT in Azure-connected and hybrid environments or completely on-premises.
 -   **For IoT device builders**, Microsoft Defender for IoT also offers a lightweight micro-agent that supports standard IoT operating systems, such as Linux and RTOS. The Microsoft Defender device builder agent helps you ensure that security is built into your IoT/OT projects from the cloud. For more information, see [Microsoft Defender for IoT for device builders    documentation](/azure/defender-for-iot/device-builders/overview).
 
 ## Threat Intelligence in Defender for Cloud

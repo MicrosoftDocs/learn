@@ -2,10 +2,9 @@ To create a web app by using the Azure Static Web Apps extension, you'll use a G
 
 In this case, we'll use the Static Web Vanilla Basic repo template. Before continuing, make sure you have your GitHub account, and that you're signed in to GitHub in a web browser.
 
-
 ## Create the web app repo
 
-There are many ways to create a static web app in Azure. In later units, we introduce some other ways. In this module, we'll build a *very* simple web app and deploy it by using GitHub Actions.
+There are many ways to create a static web app in Azure. In later units, we introduce some other ways. In this module, we'll build a simple web app and deploy it by using GitHub Actions.
 
 To get started, you'll need to create a repo based on this app. Go to [https://aka.ms/LearnWithDrG/Basketball/TemplateApp](https://github.com/microsoft/space-jam-a-new-legacy-template/generate?azure-portal=true) and fill in the form. Name your repo *space-jam-a-new-legacy-app*. You can make this repo public or private, but be sure to include all branches.
 
@@ -22,7 +21,7 @@ Open the command palette, you can use the Ctrl+Shift+P shortcut, and type "Git: 
 
 :::image type="content" source="../media/clone-repo-selection.png" alt-text="Screenshot that shows the clone repository menu item in Visual Studio Code.":::
 
-Then, back on GitHub.com in your *space-jam-a-new-legacy-app* repo, select the **Clone** button and copy the HTTPS URL:
+Then, back on GitHub.com in your *space-jam-a-new-legacy-app* repo, select **Code**, and then select **Copy** under **Clone** to copy the HTTPS URL:
 
 :::image type="content" source="../media/github-clone-url.png" alt-text="Screenshot that shows how to get the HTTPS URL of the repo from GitHub.com.":::
 
@@ -58,7 +57,7 @@ To go to the **Actions** page of your *space-jam-a-new-legacy-app* GitHub repo t
 
 :::image type="content" source="../media/action-on-github.png" alt-text="Screenshot that shows the GitHub action for this web app.":::
 
-To see the workflow that was generated, select the action, and then select **Workflow file**. In this action, all code that's pushed to the main branch is deployed to the static web app that's saved in the secret GitHub token that was set up when you connected the repo to Azure in Visual Studio Code.
+To see the workflow that was generated, select the action, and then select **Workflow file**. In this action, all code that's pushed to the main branch is deployed to the static web app that's saved in the secret GitHub token. This token was set up when you connected the repo to Azure in Visual Studio Code.
 
 For this module, all you have to know is that if you push changes to your main branch, the changes are rendered in the static web app.
 
@@ -68,7 +67,7 @@ The final setup step is to make sure that your web app is live. Back in Visual S
 
 :::image type="content" source="../media/browse-site.png" alt-text="Screenshot that shows locating the browse site menu in Visual Studio Code.":::
 
-You might have to authorize Visual Studio Code to open a new browser window or tab. After you've done this, your live web app opens in a browser tab and you'll see the beginnings of a Tune Squad basketball web app:
+You might have to authorize Visual Studio Code to open a new browser window or tab. Afterwards, your live web app opens in a browser tab and you'll see the beginnings of a Tune Squad basketball web app:
 
 :::image type="content" source="../media/web-app-browser.png" alt-text="Screenshot that shows the basketball web app with no functionality in a web browser.":::
 

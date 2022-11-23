@@ -4,8 +4,8 @@ title: Configure App Service to connect to Cosmos DB
 metadata:
   unitType: learning-content
   title: Configure App Service to connect to Cosmos DB
-  description: "Configure an App Service app setting to connect to Cosmos DB."
-  ms.date: 05/06/2022
+  description: "Configure an App Service app setting to connect to Cosmos DB with a connection string."
+  ms.date: 10/19/2022
   author: diberry
   ms.author: diberry
   ms.topic: interactive-tutorial

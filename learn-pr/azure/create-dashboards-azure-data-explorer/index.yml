@@ -20,7 +20,7 @@ prerequisites: |
   - Familiarity with database structures like tables, columns, and rows.
   - Familiarity with Kusto Query Language (KQL) functions and operators.
   - Familiarity with the Azure Data Explorer web UI
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-data-explorer-create-dashboards.svg
 levels: 
   - beginner
 roles: 

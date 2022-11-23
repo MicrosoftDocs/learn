@@ -9,5 +9,8 @@ Now that you have completed this module, you can:
 
 For more information about the topics discussed in this module, see:
 
-- [How to write stored procedures, triggers, and user-defined functions in Azure Cosmos DB](/azure/cosmos-db/sql/how-to-write-stored-procedures-triggers-udfs)
-- [How to write stored procedures and triggers in Azure Cosmos DB by using the JavaScript query API](/azure/cosmos-db/sql/how-to-write-javascript-query-api)
+- [How to write stored procedures, triggers, and user-defined functions in Azure Cosmos DB][/azure/cosmos-db/sql/how-to-write-stored-procedures-triggers-udfs]
+- [How to write stored procedures and triggers in Azure Cosmos DB by using the JavaScript query API][/azure/cosmos-db/sql/how-to-write-javascript-query-api]
+
+[/azure/cosmos-db/sql/how-to-write-stored-procedures-triggers-udfs]: /azure/cosmos-db/sql/how-to-write-stored-procedures-triggers-udfs
+[/azure/cosmos-db/sql/how-to-write-javascript-query-api]: /azure/cosmos-db/sql/how-to-write-javascript-query-api

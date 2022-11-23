@@ -1,12 +1,12 @@
-To build highly resilient, enterprise-grade applications on Azure, a well-designed network is critical. Carefully plan the IP schema so you don't conflict with existing private IP space. Carefully choose the connectivity type: Azure Virtual WAN or hub and spoke. Select Azure ExpressRoute providers or ExpressRoute Direct and peering locations to get onto the Microsoft backbone with the least latency possible. Finally, plan segmentation and secure connectivity to platform as a service (PaaS) services.
+A well-designed network is critical to building highly resilient, enterprise-grade applications on Azure. Carefully plan the IP schema so you don't conflict with existing private IP space. Carefully choose the connectivity type: Azure Virtual WAN or hub and spoke. Select Azure ExpressRoute providers or ExpressRoute Direct and peering locations to get onto the Microsoft backbone with the least latency possible. Finally, plan segmentation and secure connectivity to platform as a service (PaaS) services.
 
 ## Learn more
 
-To Learn more about networking design principles for enterprise-scale architecture, see the following articles.
+To learn more about networking design principles for enterprise-scale architecture, reference the following articles.
 
 ### Landing zone
 
-- [Full enterprise-scale landing zone networking documentation](/azure/cloud-adoption-framework/ready/enterprise-scale/network-topology-and-connectivity?azure-portal=true)
+- [Azure landing zone networking documentation](/azure/cloud-adoption-framework/ready/landing-zone/design-area/network-topology-and-connectivity)
 
 ### DNS
 

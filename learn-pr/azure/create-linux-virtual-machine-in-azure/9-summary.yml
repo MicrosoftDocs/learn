@@ -37,7 +37,7 @@ quiz:
       isCorrect: false
       explanation: "Unrestricted inbound traffic is too risky for the default behavior."
 
-  - content: "Suppose you have several Linux virtual machines hosted in Azure. You will administer these VMs remotely over SSH from three dedicated machines in your corporate headquarters. Which of the following authentication methods would typically be considered best-practice for this situation?"
+  - content: "Suppose you have several Linux virtual machines hosted in Azure. You'll administer these VMs remotely over SSH from three dedicated machines in your corporate headquarters. Which of the following authentication methods would typically be considered best-practice for this situation?"
     choices:
     - content: "Username and password"
       isCorrect: false

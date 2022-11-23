@@ -10,7 +10,7 @@ We'll use the following formula to give us a starting point on RU/s estimate fro
 
 - ***T***: Total vCores in your existing database data-bearing replica set(s).
 - ***R***: Replication factor of your existing data-bearing replica set(s).
-- ***C***: Recommended provisioned RU/s per vCore, or 1000 RU/s/vCore for Azure Cosmos DB API for MongoDB v4.0
+- ***C***: Recommended provisioned RU/s per vCore, or 1000 RU/s/vCore for Azure Cosmos DB for MongoDB v4.0
 
     > [!TIP]
     > For R, we recommend plugging in the average replication factor of your database replica sets; if this information is not available then R=3 is a good rule of thumb.

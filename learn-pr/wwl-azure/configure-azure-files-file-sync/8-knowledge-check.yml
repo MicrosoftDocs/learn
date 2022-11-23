@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/25/2022
+  ms.date: 11/17/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -17,36 +17,36 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Which of the following is correct about cloud tiering?"
+  - content: "Which of the following statements correctly describes cloud tiering?"
     choices:
-    - content: "Archives infrequently accessed files to free up space on the local file share."
-      isCorrect: true
-      explanation: "Correct. Cloud tiering allows frequently accessed files to be cached on the local server. Infrequently accessed files are tiered, or archived, to the Azure file share according to the policy created."
-    - content: "Prioritizes the sync order of file shares."
+    - content: "Cloud tiering prioritizes the sync order of file shares."
       isCorrect: false
       explanation: "Incorrect. Cloud tiering doesn't prioritize the sync order of file shares."
-    - content: "Sets the frequency at which the sync job runs."
+    - content: "Cloud tiering sets the frequency at which the sync job runs."
       isCorrect: false
       explanation: "Incorrect. Cloud tiering doesn't set the job frequency."
-  - content: "A local manufacturing company runs dedicated software in their warehouse to keep track of stock. The software needs to run on machines in the warehouse, but the management team wants to access the output from the main office. The limited bandwidth available in the warehouse has caused problems in the past when they tried to use cloud-based solutions. What is the best way to sync these files with the cloud?"
+    - content: "Cloud tiering archives infrequently access files to free up space on the local file share."
+      isCorrect: true
+      explanation: "Correct. Cloud tiering allows frequently accessed files to be cached on the local server. Infrequently accessed files are tiered or archived to the Azure Files share according to the policy created."
+  - content: "What's the best way to sync files stored on the manufacturing warehouse machines with the cloud?"
     choices:
     - content: "Create an Azure Files share and directly mount shares on the machines in the warehouse."
       isCorrect: false
-      explanation: "Incorrect. Is there a more efficient answer?"
+      explanation: "Incorrect. Is there a more efficient way?"
     - content: "Use a machine in the warehouse to host a file share, install Azure File Sync, and share a drive with the rest of the warehouse."
       isCorrect: true
-      explanation: "Correct. This answer is best because the low bandwidth means Azure File Sync will handle the updating and syncing of files efficiently over the low-bandwidth network."
-    - content: "Install Azure File Sync on every machine in the warehouse and head office."
+      explanation: "Correct. This answer is the best option. The low bandwidth means Azure File Sync can handle the updating and syncing of files efficiently over the low-bandwidth network."
+    - content: "Install Azure File Sync on every machine in the warehouse and also in the main office."
       isCorrect: false
-      explanation: "Incorrect. Is there a more efficient answer?"
-  - content: "Which of the following best describes the Azure File Sync agent?"
+      explanation: "Incorrect. Is there a more efficient way?"
+  - content: "How is the Azure File Sync agent installed and used?"
     choices:
-    - content: "It's installed on a server to enable Azure File Sync replication between the local file share and an Azure file share."
+    - content: "The Azure File Sync agent is installed on a server to enable Azure File Sync replication between the local file share and an Azure Files share."
       isCorrect: true
-      explanation: "Correct. The Azure File Sync agent is a downloadable package that enables a Windows Server file share to be synced with an Azure file share."
-    - content: "It's installed on a server to set NTFS permissions on files and folders."
+      explanation: "Correct. The Azure File Sync agent is a downloadable package that enables a Windows Server file share to be synced with an Azure Files share."
+    - content: "The Azure File Sync agent is installed on a server to set NTFS permissions on files and folders."
       isCorrect: false
-      explanation: "Incorrect. Azure File Sync doesn't configure file permissions."
-    - content: "It's installed on an Azure file share to control on-premises file and folder replication traffic."
+      explanation: "Incorrect. The Azure File Sync agent doesn't configure file permissions."
+    - content: "The Azure File Sync agent is installed on an Azure Files share to control on-premises file and folder replication traffic."
       isCorrect: false
-      explanation: "Incorrect. Azure File Sync isn't just an on-premises agent."
+      explanation: "Incorrect. The Azure File Sync agent isn't only an on-premises agent. Is there a more accurate description?"

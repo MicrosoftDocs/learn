@@ -32,7 +32,7 @@ When you've configured the cdnverify subdomain and the CNAME for the domain mapp
 
 To add a custom domain, go to the CDN endpoint that you created, and under **Settings**, select **Custom domains**. In the **Custom domain** pane, select **Custom domain**, then in the **Add a custom domain**, under **Custom hostname**, enter the hostname that matches the CNAME record in your custom domain, such as www\.contoso.com.
 
-![Add a custom domain.](../media/5-custom-domain.png)
+:::image type="content" source="../media/5-custom-domain.png" alt-text="Screenshot of add a custom domain page for a CDN profile.":::
 
 When you enter the custom domain name, Azure will use DNS to attempt to resolve the address to the endpoint hostname. You'll see a tick next to the **Custom hostname field if they match. If you see a red exclamation mark, then you should check your DNS settings.
 
@@ -41,6 +41,8 @@ If the custom domain name resolves to the endpoint hostname, select **Add**. Now
 ## Compressing files
 
 Azure CDN can improve performance by compressing the files before they're delivered. Files are then decompressed by the receiving browser. How this activity applies depends on whether the file is originally compressed on the origin server or not.
+
+:::image type="content" source="../media/5-compression.png" alt-text="Screenshot of the compression settings page for a CDN profile.":::
 
 Azure CDN passes along the compressed files unaltered if you enable compression on files hosted on your origin server. Azure CDN dynamically compresses uncompressed files on the origin server that is of a type that can be compressed. It then stores the compressed files on the POP. This process improves the client experience and site performance.
 
@@ -60,6 +62,8 @@ With the Azure CDN Standard for Microsoft Tier, caching rules are as simple as t
 - Cache every unique URL. Every time a requesting client generates a unique URL, that URL is passed back to the origin server and the response cached with its own TTL. This final method is inefficient where each request is a unique URL, as the cache-hit ratio becomes low.
 
 To change these settings, in the Endpoint pane, select **Caching rules** and then select the caching option that you want to apply to the endpoint and select **Save**.
+
+:::image type="content" source="../media/5-caching-behaviors.png" alt-text="Screenshot of the cache behavior page from CDN profile.":::
 
 ## Caching and time to live
 
@@ -87,7 +91,7 @@ You can purge content in several ways.
 - Specify a file, by including the path to that file or all assets on the selected endpoint by checking the **Purge All** checkbox.
 - Based on wildcards (*) or using the root (/).
 
-![Purge assets.](../media/5-purge-cache.png)
+:::image type="content" source="../media/5-purge-cache.png" alt-text="Screenshot of the purge cache page from CDN profile.":::
 
 When you've specified what content you want to purge, select the Purge button.
 
@@ -95,12 +99,12 @@ For more information content expiration, see the Further Reading section of the 
 
 ## Geo-filtering
 
-Geo-filtering enables you to allow or block content in specific countries, based on the country code. In the Azure CDN Standard for Microsoft Tier, you can only allow or block the entire site. With the Verizon and Akamai tiers, you can also set up restrictions on directory paths. For more information, see the further reading section in the Summary unit.
+Geo-filtering enables you to allow or block content in specific countries/regions, based on the country code. In the Azure CDN Standard for Microsoft Tier, you can only allow or block the entire site. With the Verizon and Akamai tiers, you can also set up restrictions on directory paths. For more information, see the further reading section in the Summary unit.
 
-To configure geo-filtering, in the properties of the respective endpoint, select Geo-filtering. On the Geo-filtering panel, select either allow or block, then in the Country codes list, select which countries you want to allow or block.
+To configure geo-filtering, in the properties of the respective endpoint, select Geo-filtering. On the Geo-filtering panel, select either allow or block, then in the Country codes list, select which countries/regions you want to allow or block.
 
-![Geo-filtering.](../media/5-geo-filtering.png)
+:::image type="content" source="../media/5-geo-filtering.png" alt-text="Screenshot of the geo filtering page for a CDN profile.":::
 
-The **Allow** setting is more restrictive than Block. Allow allows access only for the selected countries. The logic for Block is to allow access from all countries, except for those countries blocked.
+The **Allow** setting is more restrictive than Block. Allow allows access only for the selected countries/regions. The logic for Block is to allow access from all countries/regions, except for those countries/regions blocked.
 
 For more information on geo-filtering, see the Further Reading section in the Summary.

@@ -64,7 +64,7 @@ For detailed explanations of all the available commands, refer to the Azure CLI 
 
 ## Manage connection policies with the Azure CLI
 
-One thing that you might use the Azure CLI or Azure PowerShell commands for is updating the connection policy. We'll use this as an example for how you can manage Azure SQL by using a tool like the Azure CLI. In this example, you'll look at Azure SQL Database and its commands for managing the connection policies. But the implementation is very similar in Azure SQL Managed Instance.  
+One thing that you might use the Azure CLI or Azure PowerShell commands for is updating the connection policy. We'll use this update as an example for how you can manage Azure SQL by using a tool like the Azure CLI. In this example, you'll look at Azure SQL Database and its commands for managing the connection policies. But the implementation is similar in Azure SQL Managed Instance.  
 
 1. See what the current policy is by using the Azure CLI.  
 
@@ -83,7 +83,7 @@ One thing that you might use the Azure CLI or Azure PowerShell commands for is u
     az sql server conn-policy show
     ```
 
-3. To test round-trip time, you can connect with SSMS. On your device, open SSMS and connect to your database. Right-click your database and select **New Query**. Create a new query with the following text, and choose **Include Client Statistics** for your results. (One way to do this is by selecting **Query** > **Include Client Statistics**.) In the results, **Wait time on server replies** is the best indicator of network latency. You can run this a few times to get a good average.  
+3. To test round-trip time, you can connect with SSMS. On your device, open SSMS and connect to your database. Right-click your database and select **New Query**. Create a new query with the following text, and then select **Query** > **Include Client Statistics**. In the results, **Wait time on server replies** is the best indicator of network latency. You can run this query a few times to get a good average.  
 
     ```sql
     -- Proxy
@@ -95,10 +95,10 @@ One thing that you might use the Azure CLI or Azure PowerShell commands for is u
 
 4. What if you want to make everything `Redirect` so you can try to achieve reduced latency?
 
-    First, for anything that's outside Azure, you need to allow inbound and outbound communication on ports in the range of 11000 to 11999. This is required for the `Redirect` connection policy.  
+    First, for anything that's outside Azure, you need to allow inbound and outbound communication on ports in the range of 11000 to 11999. Opening these ports is required for the `Redirect` connection policy.  
 
     > [!NOTE]
-    > This is likely already configured on your local device. If you hit errors in the next steps, you might need to enable the ports mentioned earlier. For more guidance, see [this article](/azure/sql-database/sql-database-develop-direct-route-ports-adonet-v12?azure-portal=true).  
+    > This is likely already configured on your local device. If you hit errors in the next steps, you might need to enable the ports mentioned earlier. For more information, see [this article](/azure/sql-database/sql-database-develop-direct-route-ports-adonet-v12?azure-portal=true).  
 
     Update the connection policy and confirm that update with the following two commands.  
 
@@ -128,4 +128,4 @@ One thing that you might use the Azure CLI or Azure PowerShell commands for is u
     az sql server conn-policy show
     ```
 
-Redirect is faster because after the initial connection, you can bypass the gateway and go straight to the database. This means fewer hops, which results in less latency. Less latency helps in preventing bottlenecks, which is especially important for chatty applications. In the performance module, you'll learn more about how to improve and optimize performance.
+Redirect is faster because after the initial connection you can bypass the gateway and go straight to the database. This bypass means fewer hops, which results in less latency. Less latency helps in preventing bottlenecks, which is especially important for chatty applications. In the performance module, you'll learn more about how to improve and optimize performance.

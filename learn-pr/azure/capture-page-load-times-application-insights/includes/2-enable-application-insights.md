@@ -1,8 +1,8 @@
 You can enable runtime instrumentation, the type of Application Insights instrumentation that doesn't require you to change your app's code, when the app is first created or at any time afterwards.
 
-Developers at your company want to start gathering instrumentation data about the video application quickly, without having to modify it.
+Developers at your company want to start gathering instrumentation data about the video application quickly without having to modify it.
 
-In this unit, you'll learn what Application Insights can do, and how to enable it.
+In this unit, you'll learn what Application Insights can do and how to enable it.
 
 ## What is Application Insights?
 
@@ -29,7 +29,7 @@ By viewing an Application Insights resource in the Azure portal, you can visuali
 
 These tools are all available in the Azure portal and in Visual Studio. You can also view Application Insights data in Power BI, which you might already be using for business intelligence.
 
-![Diagram Application Insight's relationship to incoming data from client, server and background services and to various outputs.](../media/2-app-insights-architecture.png)
+![Diagram of Application Insight's relationship to incoming data from client, server, and background services and to various outputs.](../media/2-app-insights-architecture.png)
 
 ### Runtime instrumentation and build-time instrumentation
 
@@ -37,7 +37,7 @@ There are two ways to configure your app to send data to Application Insights:
 
 - **Runtime instrumentation**: Runtime instrumentation captures telemetry without requiring you to change the web app's source code. You can quickly enable this turnkey solution from the Azure portal when you first create your web app or anytime afterwards. Use this method when you want to set up Application Insights without involving developers or when code management policies prevent you from changing the app's source code. Note that some advanced data displays aren't available when you use only runtime instrumentation.
 
-- **Build-time instrumentation**: With this method, developers add a server-side SDK to the web app's code. For example, in an ASP.NET Core app, a developer could reference a NuGet package to access the SDK. When you instrument your app with the Application Insights SDK, you can enable full functionality and the richest set of visualizations in Application Insights. This type of instrumentation also enables you to add custom events and telemetry to your code to monitor unusual or unique behavior.
+- **Build-time instrumentation**: With this method, developers add a server-side SDK to the web app's code. For example, in an ASP.NET Core app, a developer could reference a NuGet package to access the SDK. When you instrument your app with the Application Insights SDK, you can enable full functionality and the richest set of visualizations in Application Insights. This type of instrumentation also allows you to add custom events and telemetry to your code to monitor unusual or unique behavior.
 
 You can enable *client-side instrumentation* for an app by including a standard Application Insights JavaScript library in pages delivered to your app's users. Client-side instrumentation captures information about the user experience of the app, including page load times, details of browser exceptions, and performance data about AJAX calls. You can configure Azure App Service web apps to automatically inject the client SDK and capture many client-side metrics. Developers can add JavaScript code to capture data about specific events. Client-side instrumentation enables displays like usage analysis.
 
@@ -45,7 +45,7 @@ In this module, you'll enable runtime instrumentation and client-side instrument
 
 ### Web app requirements
 
-Runtime instrumentation and automatic client-side instrumentation is supported only on Windows web apps. These features rely on capabilities of IIS, the web server technology that powers Windows apps on App Service. The use of Application Insights in Linux apps is fully supported, but you need to modify application code to reference the Application Insights SDK.
+Runtime instrumentation and automatic client-side instrumentation are supported only on Windows web apps. These features rely on capabilities of IIS, the web server technology that powers Windows apps on App Service. The use of Application Insights in Linux apps is fully supported, but you need to modify application code to reference the Application Insights SDK.
 
 Any Windows App Service web app can benefit from the runtime instrumentation techniques described in this module. But web apps created with the ASP.NET or ASP.NET Core frameworks have the best integration with Application Insights. They automatically record framework-specific data, like stack traces and dependency information, in Application Insights.
 
@@ -55,7 +55,7 @@ You can enable runtime instrumentation for a Windows App Service web app when yo
 
 - To enable it when you create the web app, on the web app **Create** pane, select the **Monitoring** tab, and then select **Yes** next to **Enable Application Insights**. This pane will also give you the opportunity to create a new Application Insights resource.
 
-    ![Screenshot of Web app create dialog's Monitoring tab to enable Application Insights as you create a web app.](../media/2-enable-app-insights-at-web-app-creation.png)
+    ![Screenshot of the Create a Web app dialog's Monitoring tab with the option to enable Application Insights as you create a web app.](../media/2-enable-app-insights-at-web-app-creation.png)
 
 - If you choose to create a web app without enabling Application Insights, you can enable it later on the **Application Insights** page of the web app's pane.
 

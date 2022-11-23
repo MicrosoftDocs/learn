@@ -1,6 +1,6 @@
 ## Scenario
 
-Azure Monitor collects log data and stores it in tables. As an Administrator, you configure the input data sources and then conduct queries. Queries provide insights into your infrastructure. For example, assessing system updates and troubleshooting operational incidents. To quickly retrieve and consolidate data in the repository you will create Kusto Query Language (KQL) queries.
+Azure Monitor collects log data and stores it in tables. As an Administrator, you configure the input data sources and then conduct queries. Queries provide insights into your infrastructure. For example, assessing system updates and troubleshooting operational incidents. To retrieve and consolidate data in the repository you'll create Kusto Query Language (KQL) queries.
 
 As part of a larger team, you must know what the capabilities are to query and evaluate the log data that's fed into the service.
 
@@ -16,7 +16,7 @@ Monitor resources by using Azure Monitor
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
  -  Identify the features and usage cases for Log Analytics.
  -  Create a Log Analytics workspace.

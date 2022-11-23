@@ -6,8 +6,8 @@ metadata:
   title: Lint and validate your Bicep code
   description: Learn about linting and validating your Bicep code in a deployment workflow.
   ms.date: 10/19/2021
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface

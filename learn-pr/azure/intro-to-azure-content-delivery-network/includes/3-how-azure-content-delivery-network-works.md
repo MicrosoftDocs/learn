@@ -63,8 +63,8 @@ Azure CDN dynamically compresses uncompressed files on the origin server that is
 
 ## Geo-filtering
 
-Geo-filtering enables you to allow or block content in specific countries, based on the country code. In the Azure CDN Standard for Microsoft tier, you can only allow or block the entire site. With the Verizon and Akamai tiers, you can also set up restrictions on directory paths. For more information, see the further reading section in the Summary unit.
+Geo-filtering enables you to allow or block content in specific countries/regions, based on the country code. In the Azure CDN Standard for Microsoft tier, you can only allow or block the entire site. With the Verizon and Akamai tiers, you can also set up restrictions on directory paths. For more information, see the further reading section in the Summary unit.
 
-To configure geo-filtering, in the properties of the respective endpoint, select **Geo-filtering**. On the **Geo-filtering** pane, select either **Allow** or **Block**. In the **Country codes** list, select which countries you want to allow or block.
+To configure geo-filtering, in the properties of the respective endpoint, select **Geo-filtering**. On the **Geo-filtering** pane, select either **Allow** or **Block**. In the **Country codes** list, select which countries/regions you want to allow or block.
 
-The **Allow** setting is more restrictive than **Block**. **Allow** allows access only for the selected countries. The logic for **Block** is to allow access from all countries, except for those countries that are blocked.
+The **Allow** setting is more restrictive than **Block**. **Allow** allows access only for the selected countries/regions. The logic for **Block** is to allow access from all countries/regions, except for those countries/regions that are blocked.

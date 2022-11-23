@@ -9,7 +9,7 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Key concepts for new Azure Pipelines users](/azure/devops/pipelines/get-started/key-pipelines-concepts).
- -  [YAML pipeline editor](/azure/devops/pipelines/get-started/yaml-pipeline-editor).
- -  [Check out multiple repositories in your pipeline](/azure/devops/pipelines/repos/multi-repo-checkout).
- -  [Azure Pipelines agents](/azure/devops/pipelines/agents/agents).
+ -  [Azure Pipelines New User Guide - Key concepts - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/get-started/key-pipelines-concepts).
+ -  [Azure Pipelines YAML pipeline editor guide - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/get-started/yaml-pipeline-editor).
+ -  [Check out multiple repositories in your pipeline - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/repos/multi-repo-checkout).
+ -  [Azure Pipelines Agents - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/agents/agents).

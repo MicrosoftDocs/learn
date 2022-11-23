@@ -2,7 +2,7 @@ Your company is experiencing increased demand for its video rendering service be
 
 You created an AKS cluster and deployed your web application to the Kubernetes cluster. When you deployed the web app, you used the Kubernetes declarative paradigm to describe what you wanted to create. This way, you can keep the app's version history and make future deployments easily reproducible.
 
-Imagine how it would be to deploy this application onto multiple virtual machines or another environment without Kubernetes. You would have to re-create your environment with each new deployment and configure additional services to manage user requests between these instances. AKS simplifies the implementation of Kubernetes clusters and provides all the orchestration features you need to manage cloud-native applications.
+Imagine how it would be to deploy this application onto multiple virtual machines or another environment without Kubernetes. You would have to re-create your environment with each new deployment and configure more services to manage user requests between these instances. AKS simplifies the implementation of Kubernetes clusters and provides all the orchestration features you need to manage cloud-native applications.
 
 ## Clean up resources
 

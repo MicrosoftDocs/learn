@@ -1,9 +1,9 @@
 ---
-author: johndowns
+author: davidsmatlak
 ms.prod: learning-azure
 ms.topic: include
 ms.date: 12/03/2021
-ms.author: jodowns
+ms.author: davidsmatlak
 ---
 To learn about Bicep, we recommend you take these three learning paths:
 

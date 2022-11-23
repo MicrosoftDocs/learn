@@ -135,7 +135,7 @@ Techniques examples:
 
 ### RunOnce
 
-runOnce is the simplest deployment strategy wherein all the lifecycle hooks.
+runOnce is the most straightforward deployment strategy in all the presented lifecycle hooks.
 
 ```YAML
 strategy:
@@ -201,7 +201,7 @@ strategy:
 
 ### Canary
 
-By using this strategy, you can roll out the changes to a small subset of servers first. The canary deployment strategy is an advanced deployment strategy that helps mitigate the risk involved in rolling out new versions of applications.
+Using this strategy, you can first roll out the changes to a small subset of servers. The canary deployment strategy is an advanced deployment strategy that helps mitigate the risk of rolling out new versions of applications.
 
 As you gain more confidence in the new version, you can release it to more servers in your infrastructure and route more traffic to it.
 
@@ -247,7 +247,7 @@ Lifecycle hooks inherit the pool specified by the deployment job. Deployment job
 Available lifecycle hooks:
 
  -  **preDeploy:** Used to run steps that initialize resources before application deployment starts.
- -  **deploy:** Used to run steps that deploy your application. Download artifact task will be auto injected only in the deploy hook for deployment jobs. To stop downloading artifacts, use - download: none or choose specific artifacts to download by specifying [Download Pipeline Artifact task](/azure/devops/pipelines/yaml-schema/steps-download).
+ -  **deploy:** Used to run steps that deploy your application. Download artifact task will be auto-injected only in the deploy hook for deployment jobs. To stop downloading artifacts, use - download: none or choose specific artifacts to download by specifying [Download Pipeline Artifact task](/azure/devops/pipelines/yaml-schema/steps-download).
  -  **routeTraffic:** Used to run steps that serve the traffic to the updated version.
  -  **postRouteTraffic:** Used to run the steps after the traffic is routed. Typically, these tasks monitor the health of the updated version for a defined interval.
  -  **on: failure** or **on: success:** Used to run steps for rollback actions or clean-up.

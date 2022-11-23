@@ -60,7 +60,7 @@ The local project has several folders. Each folder represents a Learn module. Th
 ## Deploy the sample from your local computer to App Service
 
 1. In Visual Studio Code, select <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd> to open the **Azure** pane on the left.
-1. In the **App Service** section, find and expand the subscription's App Service resource.
+1. In the **Resources** section, find and expand the subscription's **App Service** node.
 1. The app you created in the previous exercise, such as `jimb-rentals`, should be listed.
    
    If the app isn't listed, try the following steps:

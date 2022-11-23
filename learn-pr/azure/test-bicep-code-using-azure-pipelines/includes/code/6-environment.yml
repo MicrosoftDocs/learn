@@ -5,7 +5,7 @@ variables:
 stages:
 
 - stage: Preview
-  jobs: 
+  jobs:
   - job: Preview
     steps:
     - task: AzureCLI@2

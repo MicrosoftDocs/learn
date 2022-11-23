@@ -6,8 +6,8 @@ metadata:
   title: Summary
   description: Summary for managing multiple environments by using Bicep and Azure Pipelines.
   ms.date: 10/18/2021
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

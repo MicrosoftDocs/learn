@@ -6,8 +6,8 @@ metadata:
   title: Introduction
   description: Learn how to create, manage, and grant permissions to workload identities, which enable your deployment workflows to securely authenticate to Azure. 
   ms.date: 07/27/2022
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

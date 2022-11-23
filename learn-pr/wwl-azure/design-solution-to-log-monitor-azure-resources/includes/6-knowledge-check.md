@@ -9,3 +9,5 @@ Tailwind Traders has several workloads that are being migrated to Azure. It's im
 ### Answer the following questions
 
 Choose the best response for each of the questions below. Then select **Check your answers**.
+
+---

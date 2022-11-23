@@ -5,7 +5,7 @@ This exercise can be completed using a Microsoft Learn *sandbox*, which provides
 > [!TIP]
 > If you prefer, you can use your own Azure subscription. To do so, [sign into the Azure portal using credentials for your subscription](https://portal.azure.com?azure-portal=true). Ensure you are working in the directory containing your subscription - indicated at the top right under your user ID. If not, select the user icon and switch directory.
 
-## Monitor an Azure Cosmos DB API for MongoDB account
+## Monitor an Azure Cosmos DB for MongoDB account
 
 In this exercise, we'll create an Azure Cosmos DB account, add some data to it, and run some queries to create some load we can monitor.  We'll also force some rate-limiting exceptions to learn how to identify those types of errors.  Let's first set up our environment.
 
@@ -18,7 +18,7 @@ If you haven't already prepared the Azure Cosmos DB account and environment wher
     1. *If you're using the Sandbox*, a resource group has already been created for you so run the following script.
 
         ```bash
-        # Create an Azure Cosmos DB API for MongoDB account and add the customer collection
+        # Create an Azure Cosmos DB for MongoDB account and add the customer collection
         git clone https://github.com/MicrosoftLearning/mslearn-cosmosdb.git
         GitRepositoryRoot=$(pwd)
         bash "$GitRepositoryRoot/mslearn-cosmosdb/api-for-mongodb/04-monitor-cosmos-db-mongodb-account/init.sh"
@@ -27,7 +27,7 @@ If you haven't already prepared the Azure Cosmos DB account and environment wher
     1. If you already have a resource group you want to use in your environment, replace the string ***YOURRESOURCEGROUPNAMEHERE*** below for the name of your resource group. *If you aren't using the Sandbox, you'll need to run the ***az login*** command before running the ***init*** bash script below*.
 
         ```bash
-        # Create an Azure Cosmos DB API for MongoDB account and add the customer collection
+        # Create an Azure Cosmos DB for MongoDB account and add the customer collection
         git clone https://github.com/MicrosoftLearning/mslearn-cosmosdb.git
         GitRepositoryRoot=$(pwd)
         # Replace YOURRESOURCEGROUPNAMEHERE for the name of your Resource Group
@@ -38,7 +38,7 @@ If you haven't already prepared the Azure Cosmos DB account and environment wher
     > If you want to specify the location where you would like to create your database and storage objects, add a ***-l LOCATIONNAME*** parameter to the *init.sh* call.
 
     > [!NOTE]
-    > This bash script will create the Azure Cosmos DB API for MongoDB account and copy the customer collection into that account. *It can take 5-10 minutes to create this account* so it might be a good time to get a cup of coffee or tea.
+    > This bash script will create the Azure Cosmos DB for MongoDB account and copy the customer collection into that account. *It can take 5-10 minutes to create this account* so it might be a good time to get a cup of coffee or tea.
 
 1. Copy the connection string somewhere, we'll need it later in the lab.
 
@@ -108,7 +108,7 @@ Let's continue with the Lab, our Log Analytics tables should be ready when we ge
 We'll do some changes to our Cosmos DB environment to trigger 16500 exceptions.
 
     > [!NOTE]
-    > In a production environment we ***shouldn't*** see any 16500 errors. In a production environment ***Server Side retries*** should always be enabled by default in your Azure Cosmos DB API for MongoDB account. You shouldn't have a reason to disable ***server side retries*** in a production environment, this is only done for illustration purposes.
+    > In a production environment we ***shouldn't*** see any 16500 errors. In a production environment ***Server Side retries*** should always be enabled by default in your Azure Cosmos DB for MongoDB account. You shouldn't have a reason to disable ***server side retries*** in a production environment, this is only done for illustration purposes.
 
 1. If you haven't done so, on the Azure portal, go to your Azure Cosmos DB account.
 
@@ -181,7 +181,7 @@ We'll use the Azure Monitor to monitor our Azure Cosmos DB account.
 
 Let's open the Azure Monitor and run a few scenarios.
 
-1. On tha Azure portal, search for **Monitor** and select it.
+1. On the Azure portal, search for **Monitor** and select it.
 
 1. Select **Metrics**.
 
@@ -333,6 +333,6 @@ Our final subject will be to run a few queries against the Azure diagnostic logs
         | render timechart 
         ```
 
-    These examples are just the tip of the iceberg of what queries can be run against the Azure Cosmos DB API for MongoDB tables.
+    These examples are just the tip of the iceberg of what queries can be run against the Azure Cosmos DB for MongoDB tables.
 
 In this exercise, we were able to monitor Azure Cosmos DB using Azure Monitor, Azure Cosmos DB Insights and Azure Diagnostic logs. To learn more on the Azure Monitor, see the [Azure Monitor overview](/azure/azure-monitor/overview) article.

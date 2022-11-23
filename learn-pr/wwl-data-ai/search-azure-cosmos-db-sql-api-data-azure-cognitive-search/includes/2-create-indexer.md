@@ -6,11 +6,11 @@ An **Azure Cognitive Search** instance is comprised of a few core components:
 
 ![Diagram of an Azure Cognitive Services account where an indexer indexes data from a data source and stores the result in an index](../media/2-indexers.png)
 
-In the case of Azure Cosmos DB SQL API, you can configure a container as a **data source**, create a query and a frequency that the **indexer** will use to crawl data, and create a target **index** where the resulting searchable JSON documents are stored.
+In the case of Azure Cosmos DB for NoSQL, you can configure a container as a **data source**, create a query and a frequency that the **indexer** will use to crawl data, and create a target **index** where the resulting searchable JSON documents are stored.
 
 ## Connecting a data source
 
-The first step is to create a data source. The data source points to somewhere where data is stored. With Azure Cosmos DB SQL API, the data source is a reference to an existing account with the following parameters configured:
+The first step is to create a data source. The data source points to somewhere where data is stored. With Azure Cosmos DB for NoSQL, the data source is a reference to an existing account with the following parameters configured:
 
 | **Parameter** | **Value** |
 | ---: | :--- |

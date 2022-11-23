@@ -14,7 +14,7 @@ The Tailwind Traders retail innovation team uses technology to continually redef
 
 The retail innovation team reports to the company's Chief Technology Officer (CTO), who was the CEO of the acquired e-commerce startup. Those technology solutions are the main hub for interactions with customers. Those solutions affect 60 percent of global revenue and produce 30 percent of annual gross sales. Examples of those innovations include:
 
-- **Boundless commerce:** Originally a simple e-commerce solution, this custom-built platform now provides online and offline experiences for customers. Customers can make purchases from the platform. The mobile app gathers information from customers' viewing history to customize the retail experience with in-store ads, shopping lists, and other interactions.
+- **Boundless commerce:** Originally a simple e-commerce solution, this custom-built platform now provides online and offline experiences for customers. Customers can make purchases from the platform, and the mobile app gathers information from customers' viewing history to customize the retail experience with in-store ads, shopping lists, and other interactions.
 - **Analytics, AI, and robotics innovation:** The team is experimenting with drone delivery, autonomous warehousing, and other AI-led approaches to reduce costs, scale through automation, and improve customer experiences. These experiments are built on big data, analytics, and AI solutions.
 
 ## Information technology
@@ -25,20 +25,20 @@ Beyond new innovations, Tailwind Traders' central IT teams support the back offi
 
 *Figure 3: A balance of speed and control.*
 
-The retail innovation team is a division of the company's IT team. It's led by Tailwind Traders' Chief Information Officer (CIO). E-commerce and innovation are just the beginning of the company's technical capability, and they're a small portion of the overall IT spend. The company supports 3,500 employees, and fewer than 100 are dedicated to IT. The innovation team consists of only 20 employees who are mostly developers.
+The retail innovation team is a division of the company's IT team. It's led by Tailwind Traders' Chief Information Officer (CIO). E-commerce and innovation are just the beginning of the company's technical capability, and they're a small portion of the overall IT spend. The company supports 3,500 employees, and fewer than 100 are dedicated to IT. The innovation team consists of only 20 employees, who are mostly developers.
 
 Beyond core innovation, the IT team supports the following types of technologies:
 
 - **Smart storefronts:** Storefronts include environmental controls, doors, lighting, interactive shelves, in-store displays and advertisements, and more than 500 point-of-sale systems.
 - **Corporate headquarters:** More than 900 employees work in corporate headquarters. Technology systems cover best-of-breed solutions to support processes across areas like real estate, logistics, supply chain, pricing, human resources, employee schedules/tracking, and payroll.
-- **User workstations:** Workstations are mostly desktop-based. A growing number of employees are opting for mobile and BYOD (bring you own device) options, in-store kiosks, and virtual desktop solutions.
+- **User workstations:** Workstations are mostly desktop-based. A growing number of employees are opting for mobile and BYOD (bring your own device) options, in-store kiosks, and virtual desktop solutions.
 - **Central operations:** The IT team provides ongoing technical operations for all IT and retail innovation assets.
 
 ## CIO transition (new strategy)
 
 The previous CIO of Tailwind Traders recently retired. The new CIO is focused on improving technical operations in multiple areas to fuel greater innovation throughout the company while limiting disruptions to core business operations. The cloud will play an important role in this transition.
 
-:::image type="content" source="../media/ccoe-paradigm-shift.png" alt-text="An analogy that uses traffic routing to demonstrate the shift in IT operations." border="false":::
+:::image type="content" source="../media/ccoe-paradigm-shift.png" alt-text="Diagram of an analogy that uses traffic routing to demonstrate the shift in IT operations." border="false":::
 
 *Figure 4: The shift in IT operations.*
 
@@ -61,7 +61,7 @@ The leases for the two external datacenters are due to run out in 18 months and 
 - **CIO:** This is the first transformation effort to start since the new CIO accepted the role. The CIO will closely monitor the project and will examine how IT operates in the cloud.
 - **CTO:** The smaller of the two external datacenters hosts IT assets, including the experiments that the retail innovations team is developing. That datacenter also hosts mainstreamed innovations that are now considered production IT assets. The CTO wants to ensure that the company continues to innovate and that the existing innovations will be properly supported.
 - **Project managers:** Part of the IT department, project managers help to keep projects on time and on budget. They ensure that all the right stakeholders are involved.
-- **Central operations or infrastructure team:** The operations team is currently in charge of the datacenters. This team oversees areas like hardware maintenance, operating systems, patch management, networking, and out-of-hours support. Most team members are familiar with the current infrastructure but have little coding experience. The majority holds Microsoft qualifications related to Windows Server.
+- **Central operations or infrastructure team:** The operations team is currently in charge of the datacenters. This team oversees areas like hardware maintenance, operating systems, patch management, networking, and out-of-hours support. Most team members are familiar with the current infrastructure, but have little coding experience. The majority holds Microsoft qualifications related to Windows Server.
 - **Developer:** The in-house development team makes the website for the online store that Tailwind Traders hosts from its own datacenter.
 - **IT manager:** The IT manager is in charge of the operations, developer, and project-management teams. This manager wants to make the IT department run better, replace old servers, and make Tailwind Traders more competitive. Another goal is to make things better for the operations team, which juggles many different systems.
 - **Finance director:** The finance director wants to reduce costs from the budget where possible. This director is familiar with the capital expenditure for the IT department and equipment.

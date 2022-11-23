@@ -41,11 +41,11 @@ Replace the default contents of the ColorDescriptor.cs file with the preceding c
 
 To display the color list, we'll use a new XAML page. Right-click the `DatabindingSample` project in **Solution Explorer**, and select **Add / New Item**. Choose **Blank Page** from the list of available items, and then enter `ColorList` as the name. Select **Add** to create the page.
 
-![Screenshot that shows Package Layout selected under Visual C Sharp, in the Add New Item dialog box.](../media/create-colorlist-page.png)
+![Screenshot that shows Blank Page selected under Visual C Sharp, in the Add New Item dialog box.](../media/create-colorlist-page.png)
 
 #### 3. Set the startup page
 
-Now if you launch the application, it opens with the **MainPage** page. Because you're going to be working with the newly created ColorList.xaml page, it'd be nice to have that as the starting page. To make it happen, open App.xaml.cs, and find the line that navigates to **MainPage**. 
+Now if you launch the application, it opens with the **MainPage** page. Because you're going to be working with the newly created ColorList.xaml page, it'd be nice to have that as the starting page. To make it happen, open App.xaml.cs, and find the line that navigates to **MainPage**.
 
 ```cs
 rootFrame.Navigate(typeof(MainPage), e.Arguments);
@@ -55,7 +55,7 @@ Replace `MainPage` with `ColorList`, and verify that the **ColorList** page is l
 
 #### 4. Create the logic for the color list
 
-We'll continue the previously introduced best practice of creating a separate logic for the new page. So, go ahead and create a new class, called `ColorListLogic`. 
+We'll continue the previously introduced best practice of creating a separate logic for the new page. So, go ahead and create a new class, called `ColorListLogic`.
 
 Right-click the `DatabindingSample` project in **Solution Explorer**, select **Add / Class**, and then enter `ColorListLogic` as the class' name. Select **Add** to create the class, and paste the following into the file:
 
@@ -110,19 +110,19 @@ Next, open ColorList.xaml and add the following XAML inside the `Grid` element.
          VerticalAlignment="Top"/>
 ```
 
-The interesting part here is the `ItemsSource` attribute. As the name suggests, it provides the source of the items displayed in the `ListBox`. And it's simply bound to the `ColorListLogic`'s `LotsOfColors` property. 
+The interesting part here is the `ItemsSource` attribute. As the name suggests, it provides the source of the items displayed in the `ListBox`. And it's simply bound to the `ColorListLogic`'s `LotsOfColors` property.
 
-If you run the app now, it shows the colors in a `ListBox`! But it's not too nice to look at. The `ListBox` seems to have invoked the `ToString()` method of the `ColorDescriptor`s stored in the `LotsOfColors` list. 
+If you run the app now, it shows the colors in a `ListBox`! But it's not too nice to look at. The `ListBox` seems to have invoked the `ToString()` method of the `ColorDescriptor`s stored in the `LotsOfColors` list.
 
 ![Screenshot that shows the Data binding Sample window, with yellow selected.](../media/colorlist1.png)
 
 #### 6. Define a template for the items
 
-It'd be nice to have a template that shows the actual color stored in the `ColorDescriptor.Color` property, and it's name. Something like this:
+It'd be nice to have a template that shows the actual color stored in the `ColorDescriptor.Color` property, and its name. Something like this:
 
 ![Screenshot of template.](../media/colortemplate-plan.png)
 
-To code this in XAML, we can put a colored `Rectangle` and a `TextBlock` in a `StackPanel`. 
+To code this in XAML, we can put a colored `Rectangle` and a `TextBlock` in a `StackPanel`.
 
 ```xml
 <StackPanel Orientation="Horizontal">
@@ -194,7 +194,7 @@ If you launch an XAML app in debug mode, you can take advantage of live XAML edi
 
 ![Screenshot that shows the Data binding Sample window, with a list of six colors next to squares representing the color.](../media/colorlist-square.png)
 
-This is useful for fine-tuning the layout and animations in your app. 
+This is called [XAML Hot Reload](/visualstudio/xaml-tools/xaml-hot-reload), and it can be useful for fine-tuning the layout and animations in your app.
 
 ### Summary
 
@@ -253,7 +253,7 @@ To display the color list, we'll use a new XAML file. Right-click the `Databindi
 
 #### 3. Set the startup XAML file
 
-Now if you launch the application, it opens with **MainWindow**. Because you're going to be working with the newly created ColorList.xaml, it'd be nice to have that display on startup. To make it happen, open App.xaml, and find the `StratupUri` attribute of the root `Application` element. 
+Now if you launch the application, it opens with **MainWindow**. Because you're going to be working with the newly created ColorList.xaml, it'd be nice to have that display on startup. To make it happen, open App.xaml, and find the `StratupUri` attribute of the root `Application` element.
 
 ```xml
 StartupUri="MainWindow.xaml"
@@ -265,7 +265,7 @@ Replace `MainWindow` with `ColorList`, and verify that the **ColorList** is show
 
 #### 4. Create the `DataContext` for the color list
 
-We'll continue the previously introduced best practice of creating a separate `DataContext` class for the new XAML window. So, go ahead and create a new class, called `ColorListDataContext`. 
+We'll continue the previously introduced best practice of creating a separate `DataContext` class for the new XAML window. So, go ahead and create a new class, called `ColorListDataContext`.
 
 Right-click the `DatabindingSample` project in **Solution Explorer**, select **Add / Class**, and then enter `ColorListLogic` as the class' name. Select **Add** to create the class, and paste the following into the file:
 
@@ -308,9 +308,10 @@ The next step is to display the colors in our app. As before, we need to create 
     <local:ColorListDataContext/>
 </Window.DataContext>
 ```
+
 You need to compile the code at this point, so that the XAML designer can pick up on the newly defined `ColorListDataContext` class.
 
-Then, copy the following XAML inside the `<Grid>` tag: 
+Then, copy the following XAML inside the `<Grid>` tag:
 
 ```xml
 <ListBox ItemsSource="{Binding LotsOfColors}" 
@@ -320,19 +321,19 @@ Then, copy the following XAML inside the `<Grid>` tag:
          VerticalAlignment="Top"/>
 ```
 
-The interesting part here is the `ItemsSource` attribute. As the name suggests, it provides the source of the items displayed in the `ListBox`. And it's simply bound to the `ColorListDataContext`'s `LotsOfColors` property. 
+The interesting part here is the `ItemsSource` attribute. As the name suggests, it provides the source of the items displayed in the `ListBox`. And it's simply bound to the `ColorListDataContext`'s `LotsOfColors` property.
 
-If you run the app now, it shows the colors in a `ListBox`! But it's not too nice to look at. The `ListBox` seems to have invoked the `ToString()` method of the `ColorDescriptor`s stored in the `LotsOfColors` list. 
+If you run the app now, it shows the colors in a `ListBox`! But it's not too nice to look at. The `ListBox` seems to have invoked the `ToString()` method of the `ColorDescriptor`s stored in the `LotsOfColors` list.
 
 ![Screenshot that shows the Color List window with six colors listed.](../media/colorlist1_wpf.png)
 
 #### 6. Define a template for the items
 
-It'd be nice to have a template that shows the actual color stored in the `ColorDescriptor.Color` property, and it's name. Something like this:
+It'd be nice to have a template that shows the actual color stored in the `ColorDescriptor.Color` property, and its name. Something like this:
 
 ![Screenshot fo template.](../media/colortemplate-plan.png)
 
-To code this in XAML, we can put a colored `Rectangle` and a `TextBlock` in a `StackPanel`. 
+To code this in XAML, we can put a colored `Rectangle` and a `TextBlock` in a `StackPanel`.
 
 ```xml
 <StackPanel Orientation="Horizontal">
@@ -392,12 +393,11 @@ Now the whole `ListBox` looks like this (if you haven't followed along, replace 
 </ListBox>
 ```
 
-
-Note that because every item in the `ListBox` corresponds to a `ColorDescriptor` object, you only need to define the bindings inside the template within the context of this class. 
+Note that because every item in the `ListBox` corresponds to a `ColorDescriptor` object, you only need to define the bindings inside the template within the context of this class.
 
 #### 7. Run the app
 
-You should immediately see the color list in Visual Studio. Just to make sure, run the app now by pressing F5 or by selecting **Debug / Start Debugging** in the menu. 
+You should immediately see the color list in Visual Studio. Just to make sure, run the app now by pressing F5 or by selecting **Debug / Start Debugging** in the menu.
 
 ![Screenshot that shows the Color List window, with six colors listed next to rectangles representing the color.](../media/colorlist2_wpf.png)
 
@@ -405,7 +405,7 @@ If you launch an XAML app in debug mode, you can take advantage of live XAML edi
 
 ![Screenshot that shows the Color List window, with six colors listed next to squares representing the color.](../media/colorlist-square_wpf.png)
 
-This is useful for fine-tuning the layout and animations in your app. 
+This is called [XAML Hot Reload](/visualstudio/xaml-tools/xaml-hot-reload), and it can be useful for fine-tuning the layout and animations in your app.
 
 ### Summary
 

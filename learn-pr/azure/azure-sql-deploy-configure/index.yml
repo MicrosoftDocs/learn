@@ -3,9 +3,10 @@ uid: learn.azure-sql-deploy-configure
 metadata:
   title: Deploy and configure servers, instances, and databases for Azure SQL
   description: Deploy and configure servers, instances, and databases for Azure SQL
-  ms.date: 08/05/2020
-  author: amthomas46
-  ms.author: bobward
+  ms.date: 11/10/2022
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy and configure servers, instances, and databases for Azure SQL

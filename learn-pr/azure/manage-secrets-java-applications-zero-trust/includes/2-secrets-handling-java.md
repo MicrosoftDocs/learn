@@ -57,6 +57,6 @@ A Secrets store, like Hashicorp Vault or Azure Key Vault, is a specialized softw
 system to authorize users, rotate security keys, and validates which application can access which secret.
 
 They also provide an external API, so they can be used on any system. For example, you can use Azure Key Vault on all Azure services,
-including Virtual Machines, Azure App Services, Azure Kubernetes Services, or Azure Spring Cloud.
+including Virtual Machines, Azure App Services, Azure Kubernetes Services, or Azure Spring Apps.
 
 A Secrets store is the most secure and advanced solution for managing secrets, but they require the use of a dedicated tool.

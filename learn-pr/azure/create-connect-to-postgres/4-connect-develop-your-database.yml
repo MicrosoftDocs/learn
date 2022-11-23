@@ -5,8 +5,9 @@ metadata:
   title: Connect to your database
   description: Review the common tools for connecting to a database for development
   ms.date: 10/23/2020
-  author: tomreidnz
-  ms.author: jasdeb
+  author: markingmyname
+  ms.author: maghan
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

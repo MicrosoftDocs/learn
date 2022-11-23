@@ -2,10 +2,10 @@ In this module, you learned how to upload your existing project to GitHub.
 
 You learned about:
 
-- Identifying where your code is stored
-- Introducing code to a repository
-- Creating important Git files like a `.gitignore`
-- Identifying important next steps to managing your repository and adding community involvement
+- Identifying where your code is stored.
+- Introducing code to a repository.
+- Creating important Git files like a `.gitignore`.
+- Identifying important next steps to managing your repository and adding community involvement.
 
 Now that you have your project on GitHub, learn to [Manage an InnerSource program by using GitHub](/training/modules/manage-innersource-program-github/) and [Create an open-source program by using GitHub best practices](/training/modules/create-open-source-program-github/).
 
@@ -15,4 +15,4 @@ Here are some links to more information on the topics we discussed in this modul
 
 - [Ignoring files with .gitignore](https://help.github.com/en/github/using-git/ignoring-files?azure-portal=true)
 - [.gitignore repository for popular platforms](https://github.com/github/gitignore?azure-portal=true)
-- [Setting repository visibility](https://help.github.com/enterprise/2.16/user/github/administering-a-repository/setting-repository-visibility?azure-portal=true)
+- [Setting repository visibility](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility)
