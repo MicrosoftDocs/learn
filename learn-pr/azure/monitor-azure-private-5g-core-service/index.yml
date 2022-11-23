@@ -17,7 +17,6 @@ abstract: |
     - Describe the cloud and on-premises monitoring tools that Azure Private 5G Core provides.
     - Describe the tool that you can use to diagnose network issues.
     - Give examples of key metrics to monitor.
-    - Give examples of typical issues in a private mobile network.
 prerequisites: |
   - Fundamental knowledge about Azure. If you don't have the knowledge, consider taking relevant Azure Fundamental (AZ-900) training programs.
   - Fundamental knowledge of 5G and 4G technologies.

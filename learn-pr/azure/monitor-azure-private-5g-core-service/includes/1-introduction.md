@@ -7,8 +7,8 @@ Azure Private 5G Core provides flexible monitoring options, which allow you to e
 
 - Remote monitoring
   - Remote monitoring with Azure Log Analytics: Log Analytics is a standard Azure tool that you can use through the Azure portal. Once you enable the Log Analytics tool for a private mobile network, each packet core instance in the network streams relevant logs to the tool. You can create queries to retrieve the log data, and use Log Analytics dashboards to visualize your saved log queries.
-  - Remote monitoring with the platform dashboards: The site resource that you use to manage a site in your private mobile network offers a list of dashboards called platform dashboards. Through these dashboards, you can check site health information such as user plane packets dropped or session establishment failures.
-  - Remote monitoring with other applications: Azure Private 5G Core can share network health metrics through [Azure Event Hub](/azure/event-hubs/). You can use the [Azure Monitor REST API](/rest/api/monitor/) to retrieve the metrics from Azure Event Hub and then integrate the metrics data into other applications.
+  - Remote monitoring with the platform metrics dashboards: The site resource that you use to manage a site in your private mobile network contains a list of dashboards called platform metrics dashboards. Through these dashboards, you can check site health and performance information such as user plane packets dropped or session establishment failures.
+  - Remote monitoring with third-party applications: Azure Private 5G Core shares network health metrics through [Azure Monitor](/azure/azure-monitor/overview). You can use the [Azure Monitor REST API](/rest/api/monitor/) to retrieve the metrics and then integrate the metrics data into third-party applications. Additionally, you can export the metrics data from Azure Monitor to applications such as Azure Event Hub or a storage account and use the data from there.
 
 - Local monitoring with packet core dashboards: The packet core instance that powers each site in a private mobile network provides the packet core dashboards by default. With these boards, you can monitor key network statistics in real time. These boards also allow you to view information on firing alerts, based on which you can quickly react to emerging issues.
 
@@ -39,8 +39,8 @@ In addition to the alert levels, you should also define the key metrics to monit
 In general, pay special attention to the following metrics:
 
 - Data plane metrics
-  - Numbers of packets sent/received on the N3/N6 interfaces
-  - Number of bytes sent/received on the N3/N6 interfaces
+  - The numbers of packets sent/received on the N3/N6 interfaces
+  - The number of bytes sent/received on the N3/N6 interfaces
   - The distribution of packet sizes on the N3/N6 interfaces
   - The traffic type statistics, such as TCP vs. UDP or HTTP vs. HTTPs
 - Subscriber metrics

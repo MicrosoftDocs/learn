@@ -38,47 +38,36 @@ quiz:
     - content: "The distributed tracing tool"
       isCorrect: false
       explanation: "Try again. The distributed tracing tool is for issue diagnostics. It allows you locally diagnose network issues in a site."
-  - content: ""
+  - content: "To use third-party applications to monitor a private mobile network, which of the following methods should be used?"
     choices:
-    - content: ""
+    - content: "Use the distributed tracing tool."
+      isCorrect: false
+      explanation: "Try again. The distributed tracing tool is mainly for diagnosing network issues."
+    - content: "Use the Azure Monitor REST API"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Azure Private 5G Core shares a list of performance and health metrics, which third-party applications can retrieve with the Azure Monitor REST API."
+    - content: "Use the platform metrics dashboards"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Try again. The platform metrics dashboards provide visualized views of the performance and health metrics. However, third-party can't retrieve the metrics directly from these dashboards."
+  - content: "To diagnose a 5G network issue with the distributed tracing tool, what keyword should be used to search for information about signaling flows and errors?"
     choices:
-    - content: ""
+    - content: "The subscription permanent identifier (SUPI)."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Activities involving a particular subscriber can be searched using their subscription permanent identifier (SUPI) or, in 4G networks, their international mobile subscriber identity (IMSI)."
+    - content: "Words in error messages."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Try again. Words in error messages can't be used to search for information about signaling flows and errors. However, the distributed tracing tool supports searching by error types."
+    - content: "The time at which an event occurred."
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Try again. Time can't be used as a search keyword in the distributed tracing tool. However, the tool allows search results to be restricted with a date/time range."
+  - content: "Which of the following is a health and performance metric that you need to monitor for a private mobile network?"
     choices:
-    - content: ""
+    - content: "The names of the RANs to which Azure Private 5G Core connects."
+      isCorrect: false
+      explanation: "Try again. RAN names aren't health and performance metrics. They don't often change."
+    - content: "The number of the SIM polices defined for a site"
+      isCorrect: false
+      explanation: "Try again. The number of SIM polices isn't a health and performance metic. It depends on the business needs of the private mobile network."
+    - content: "The numbers of packets sent/received on the N3/N6 interfaces"
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Azure Private 5G Core uses the N3/N6 interfaces to communicate with the data network. For issues related to the data network, checking the numbers of packets sent/received on the N3/N6 interfaces may help."

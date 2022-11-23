@@ -61,9 +61,29 @@ In addition, the distributed tracing tool allows you to use a date/time range to
 
 For detailed instructions on searching for information in the distributed tracing tool, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
 
-## An example of diagnosis
+## An example of network issue diagnosis
 
-TBD
+Suppose a UE is provisioned for a site in your private mobile network. However, the UE can't communicate with the data network successfully.
+
+To find the root cause of this communication issue, you can take the following steps to diagnose and resolve the issue:
+
+1. Search for the SUPI of the UE in the distributed tracing tool.
+
+   In the search results page, you may see an event that indicates the authentication request of the UE has been rejected. This tells you that there are some authentication issues with the UE.
+
+1. Click the event to open it. 
+
+   On the **Summary** view, you may see the following message:
+
+   `The authentication credentials were rejected.`
+
+1. To further check the details of the error, go to the **Call Flow** view.
+
+   As the AUSF network function is responsible for authentication, you can check the messages to and from AUSF. For example, the message displayed in the following screen indicates the authentication failed because the authentication key from the UE doesn't match the authentication key in the provisioned UE.
+
+   :::image type="content" source="../media/authentication-rejected.png" alt-text="A screenshot with a message indicating the reason for authentication failure" border="true":::
+
+1. After figuring out that the root cause for the issue is the wrong authentication key in the provisioned UE, you can remove the UE through the Azure portal and then provision it again with the correct authentication key.
 
 ## Collect diagnostics packages for technical support
 
