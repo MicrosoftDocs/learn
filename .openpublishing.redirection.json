@@ -18579,6 +18579,11 @@
       "source_path": "learn-pr/wwl-azure/deploy-sap-certified-offerings/5-os-support-azure-sap-workloads.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/deploy-sap-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-sap-certified-offerings/2-prerequisites-sap-workloads-public-cloud.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/deploy-sap-azure/",
+      "redirect_document_id": false
     }
   ]
 }
