@@ -32,6 +32,5 @@ products:
 subjects:
 - virtual-machine
 units:
-- learn-pr.wwl.planning-implementing-sap-solutions-azure.summary
 badge:
   uid: learn-pr.wwl.planning-implementing-sap-solutions-azure.badge
