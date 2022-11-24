@@ -18909,6 +18909,11 @@
       "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/5-sap-hana-azure-sample-workflow.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/3-sap-netweaver-azure-sample-workflow.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
+      "redirect_document_id": false
     }
   ]
 }
