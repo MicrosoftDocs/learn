@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.owasp-top-10-for-dotnet-developers.vulnerable-outdated-components
-title: vulnerable-outdated-components
+title: Vulnerable Outdated Components
 metadata:
   title: vulnerable-outdated-components
   description: "OWASP Top Ten 2021 for .NET Developers. Vulnerable and outdated components."

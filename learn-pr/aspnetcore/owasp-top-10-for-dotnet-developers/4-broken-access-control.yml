@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.owasp-top-10-for-dotnet-developers.broken-access-control
-title: Broken Access Ccontrol
+title: Broken Access Control
 metadata:
   title: broken-access-control
   description: "OWASP Top Ten 2021 for .NET Developers. Broken Access Control."

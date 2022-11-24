@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.owasp-top-10-for-dotnet-developers.insecure-design
-title: insecure-design
+title: Insecure Design
 metadata:
   title: insecure-design
   description: "OWASP Top Ten 2021 for .NET Developers. Insecure design."
