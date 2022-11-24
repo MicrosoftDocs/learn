@@ -136,7 +136,7 @@ Two ways to link VNets to a private zone:
 
 If you have an external DNS server, for example an on-premises server, you can use custom DNS configuration on your VNet to integrate the two.
 
-Your external DNS can run on any DNS server: BIND on UNIX, Active Directory Domain Services DNS, and so on. If you want to use and external DNS server and not the default Azure DNS service, you must configure the desired DNS servers.
+Your external DNS can run on any DNS server: BIND on UNIX, Active Directory Domain Services DNS, and so on. If you want to use an external DNS server and not the default Azure DNS service, you must configure the desired DNS servers.
 
 Organizations often use an internal Azure private DNS zone for auto registration, and then use a custom configuration to forward queries external zones from an external DNS server.
 
