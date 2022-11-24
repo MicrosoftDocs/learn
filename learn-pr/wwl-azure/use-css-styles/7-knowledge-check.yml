@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-css-styles.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/24/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check Your Knowledge on CSS Concepts"
+  questions:
+  - content: "To make all the `h2` elements on your page bold using a single style command, what method should be used?"
+    choices:
+    - content: "Use the style tag on each h2 element using copy and paste."
+      isCorrect: false
+      explanation: "This answer is incorrect. While this would work, it duplicates the style rather than using a single style command."
+    - content: "Enclose the h2 tag in a style tag."
+      isCorrect: false
+      explanation: "This answer is incorrect. Using a CSS selector is a best practice."
+    - content: "Use a CSS selector for h2 to set the style."
+      isCorrect: true
+      explanation: "Correct. By using an h2 selector, you can set the style for all the h2 tags with a single command."
+  - content: "Which is the best method to bold all italicized elements?"
+    choices:
+    - content: "Place the `<strong>` tag around each italicized element."
+      isCorrect: false
+      explanation: "That answer is incorrect. While this would achieve the goal, using CSS and a style is a better approach."
+    - content: "Use an inline property on each italicized element."
+      isCorrect: false
+      explanation: "That answer is incorrect. Setting an inline style property will work but a better approach is to use CSS and a style to bold the text."
+    - content: "Use `font-style:bold;` style and the `i` selector in CSS."
+      isCorrect: true
+      explanation: "Correct. Using the style with the tag selector in CSS will apply the style to all elements on the page or site."
+  - content: "Which is the best method to apply the same styles to multiple elements?"
+    choices:
+    - content: "Change all elements to the same tag and use a tag selector in CSS"
+      isCorrect: false
+      explanation: "That answer is incorrect. You can use custom selectors with the class attribute to change any element using that selector."
+    - content: "Create a custom selector and assign the `id` attribute on the elements to that selector."
+      isCorrect: false
+      explanation: "That answer is incorrect. The `id` property can be used on only one element. The class attribute allows you to use a selector on more than one element."
+    - content: "Create a custom selector and assign the `class` attribute on the elements to that selector."
+      isCorrect: true
+      explanation: "Correct. The `class` attribute enables you to refer to a single selector on many elements."
