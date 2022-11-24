@@ -1362,3 +1362,8 @@ achievements:
   title: Using IAAS support with Azure for SAP workloads
   summary: There are many SAP-certified operating systems supported by SAP running on Azure VMs. In this module, you will review the SAP recommended support products for VM types and the network, database, and monitoring requirements.
   iconUrl: /training/achievements/using-iaas-support-with-azure-for-sap-workloads.svg
+- uid: learn-pr.wwl.planning-azure-sap-workloads.trophy
+  type: trophy
+  title: Planning Azure for SAP workloads
+  summary: In this learning path, you see how to plan for a deployment of SAP solutions on Azure. You will also consider the preparation required for migrating SAP workloads to Azure.
+  iconUrl: /training/achievements/planning-azure-sap-workloads.svg
