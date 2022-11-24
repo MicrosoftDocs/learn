@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-model-deployment-solution.understand-how-model-will-be-consumed
+uid: learn.wwl.design-model-deployment-solution.understand-how-model-consumed
 title: Understand how model will be consumed
 metadata:
   title: Understand how model will be consumed
   description: "Understand how model will be consumed"
-  ms.date: 11/23/2022
+  ms.date: 11/24/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-understand-how-model-will-be-consumed.md)]
+  [!include[](includes/2-understand-how-model-consumed.md)]

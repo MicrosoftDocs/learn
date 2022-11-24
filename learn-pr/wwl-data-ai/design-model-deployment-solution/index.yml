@@ -3,7 +3,7 @@ uid: learn.wwl.design-model-deployment-solution
 metadata:
   title: Design a model deployment solution
   description: "Azure Machine Learning Python SDK v2"
-  ms.date: 11/23/2022
+  ms.date: 11/24/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.design-model-deployment-solution.introduction
-- learn.wwl.design-model-deployment-solution.understand-how-model-will-be-consumed
+- learn.wwl.design-model-deployment-solution.understand-how-model-consumed
 - learn.wwl.design-model-deployment-solution.decide-real-time-batch-deployment
 - learn.wwl.design-model-deployment-solution.exercise
 - learn.wwl.design-model-deployment-solution.knowledge-check
