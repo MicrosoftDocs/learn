@@ -1,12 +1,11 @@
-# A05 - Security Misconfiguration
+## A05 - Security Misconfiguration
 
 With more shifts into highly configurable software, it's not surprising to see this category move up. 
 The application might be vulnerable if the application is without a rigorous repeatable application security configuration process
 
 > [!TIP]
 > Challenge the defaults.
-
-:::image type="content" source="../media/abel.png" alt-text="Don't accept the defaults - Abel Wang":::
+<!-- :::image type="content" source="../media/abel.png" alt-text="Don't accept the defaults - Abel Wang"::: -->
 
 Security misconfiguration may manifest could mean many things, from `web.cofnig` or `appsettings.json` settings, database account and connectivity configuration, IIS configurations to CI/CD pipeline secret handling or incorrect Azure Role Base Access Control use.
 

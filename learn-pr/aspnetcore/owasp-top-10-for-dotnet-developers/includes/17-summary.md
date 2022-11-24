@@ -1,5 +1,3 @@
-# Module Summary
-
 The objectives of the module was to explain:
 
 * what OWASP as an non-profit organization goals are

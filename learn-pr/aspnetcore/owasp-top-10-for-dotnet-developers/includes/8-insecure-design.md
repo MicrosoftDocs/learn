@@ -1,4 +1,4 @@
-# A04 - Insecure Design
+## A04 - Insecure Design
 
 Addresses design level flaw, others focus more on code-level issues​. An example could be an error including the exact location of a configuration file​ or a password stored as a plain text – intentional design decision​​.
 

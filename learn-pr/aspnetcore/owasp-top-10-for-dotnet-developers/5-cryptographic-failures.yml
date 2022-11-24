@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.owasp-top-10-for-dotnet-developers.cryptographic-failures
-title: cryptographic-failures
+title: Cryptographic Failures
 metadata:
   title: cryptographic-failures
   description: "OWASP Top Ten 2021 for .NET Developers. Cryptographic failures."

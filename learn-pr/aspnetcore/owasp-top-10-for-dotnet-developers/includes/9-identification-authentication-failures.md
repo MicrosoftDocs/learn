@@ -1,4 +1,4 @@
-# A07 - Identification and Authentication Failures
+## A07 - Identification and Authentication Failures
 
 Authentication is a process in which a user provides credentials that are then compared to those stored in an operating system, database, app or resource. If they match, users authenticate successfully, and can then perform actions that they're authorized for, during an authorization process. The authorization refers to the process that determines what a user is allowed to do.
 

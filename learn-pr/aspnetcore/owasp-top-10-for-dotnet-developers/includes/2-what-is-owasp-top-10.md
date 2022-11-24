@@ -1,6 +1,3 @@
-
-# What is OWASP Top 10
-
 Let's start our education journey by establishing the current state of play in secure software development.
 
 ## Education

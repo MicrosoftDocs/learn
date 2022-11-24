@@ -1,10 +1,9 @@
-# A08 - Software and Data Integrity Failures
+## A08 - Software and Data Integrity Failures
 
 Happens when an application relies upon plugins, libraries, or modules from untrusted sources, repositories
 New category for 2021, focusing on making assumptions related to software updates, critical data, and CI/CD pipelines without verifying integrity.
 
-Perform supply chain verification - depend only on vetted and verified libraries and components. 
-
+Perform supply chain verification - depend only on vetted and verified libraries and components.
 
 Verify and update
 many applications now include auto-update functionality, where updates are downloaded without sufficient integrity verification and applied to the previously trusted application.
