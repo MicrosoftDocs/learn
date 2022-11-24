@@ -26,7 +26,6 @@ products:
 subjects:
 - migration
 units:
-- learn-pr.wwl.preparing-migrate-sap-workloads-azure.strategies-migrating-sap-workloads-microsoft-azure
 - learn-pr.wwl.preparing-migrate-sap-workloads-azure.summary
 badge:
   uid: learn-pr.wwl.preparing-migrate-sap-workloads-azure.badge
