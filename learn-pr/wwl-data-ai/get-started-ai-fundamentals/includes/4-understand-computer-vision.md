@@ -32,9 +32,3 @@ Microsoft Azure provides the following cognitive services to help you create com
 | **Face** | The Face service enables you to build face detection and facial recognition solutions.|
 | **Form Recognizer** | Use this service to extract information from scanned forms and invoices.|
 
-## Try this
-
-To see an example of a how computer vision can be used to analyze images, follow these steps:
-
-1. Open another browser tab and go to https://aidemos.microsoft.com/computer-vision.
-2. Use the demo interface to try each of the steps. For each step, you can select images and review the information returned by the Computer Vision service.
