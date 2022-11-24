@@ -2,24 +2,24 @@
 uid: learn.multi-table-queries-with-kusto-query-language
 metadata:
   moduleType: standard
-  title: Multi-table queries with Kusto Query Language
-  description: Learn how to write Kusto Query Language (KQL) queries to combine and retrieve data from two or more tables using the `lookup`, `join`, and `union` operators.
+  title: Write multi-table queries by using Kusto Query Language
+  description: Learn how to write Kusto Query Language (KQL) queries to combine and retrieve data from two or more tables by using the `lookup`, `join`, and `union` operators.
   ms.date: 10/04/2022
   author: shsagir
   ms.author: shsagir
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Multi-table queries using Kusto Query Language
-summary: Write advanced queries in Kusto Query Language to help you gain deeper insights by collating data from several tables. Learn how to use the table-level operators `lookup`, `join`, `union`, `materialize`, and new aggregation functions `arg_min` and `arg_max`. Communicate these results visually in charts.
+title: Write multi-table queries by using Kusto Query Language
+summary: Write advanced queries in Kusto Query Language to gain deeper insights by combining data from several tables. Learn how to use the table-level operators `lookup`, `join`, `union`, and `materialize`, and the new aggregation functions `arg_min` and `arg_max`. You'll also communicate these results visually in charts.
 abstract: |
   By the end of this module, you'll be able to:
-    - Use the Kusto Query Language to combine and retrieve data from two or more tables using the `lookup`, `join`, and `union` operators.
+    - Use Kusto Query Language to combine and retrieve data from two or more tables by using the `lookup`, `join`, and `union` operators.
     - Optimize multi-table queries by using the `materialize` operator to cache table data.
-    - Enrich insights using and new aggregation functions `arg_min` and `arg_max`.
+    - Enrich your insights by using the new aggregation functions `arg_min` and `arg_max`.
 prerequisites: |
   - A Microsoft account, an Azure Active Directory user identity to create a free cluster, or an Azure account
-  - Familiarity with database structures like tables, columns, and rows
-  - Familiarity with Kusto Query Language operators such as project, where, sort, summarize, and let
+  - Familiarity with database structures such as tables, columns, and rows
+  - Familiarity with Kusto Query Language operators such as `project`, `where`, `sort`, `summarize`, and `let`
 iconUrl: /learn/achievements/multi-table-queries-with-kusto-query-language.svg
 levels:
   - advanced
