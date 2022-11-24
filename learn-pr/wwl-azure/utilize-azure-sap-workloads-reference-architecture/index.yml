@@ -32,7 +32,6 @@ products:
 subjects:
 - architecture
 units:
-- learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.sap-netweaver-azure-sample-workflow
 - learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.utilizing-sap-hana-azure-large-instances
 - learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.summary
 badge:
