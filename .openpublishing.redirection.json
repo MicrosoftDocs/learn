@@ -18759,6 +18759,11 @@
       "source_path": "learn-pr/paths/plan-azure-sap-workloads/index.md",
       "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-implement-sap-solutions/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-sap-workload-planning-deployment-checklist/",
+      "redirect_document_id": false
     }
   ]
 }
