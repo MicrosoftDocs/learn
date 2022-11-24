@@ -18809,6 +18809,11 @@
       "source_path": "learn-pr/wwl-azure/plan-implement-sap-solutions/8-sap-hana-azure-large-instances-compute-network-storage.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/use-sap-workload-planning-deployment-checklist/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-implement-sap-solutions/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-sap-workload-planning-deployment-checklist/",
+      "redirect_document_id": false
     }
   ]
 }
