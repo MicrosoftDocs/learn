@@ -18844,6 +18844,11 @@
       "source_path": "learn-pr/wwl-azure/prepare-migrate-sap-workloads/5-nonproduction-phase.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/prepare-migrate-sap-workloads/4-pilot-phase.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
     }
   ]
 }
