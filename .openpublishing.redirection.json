@@ -18874,6 +18874,11 @@
       "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/2-configure-sap-netweaver-anydb-azure-vms.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
+      "redirect_document_id": false
     }
   ]
 }
