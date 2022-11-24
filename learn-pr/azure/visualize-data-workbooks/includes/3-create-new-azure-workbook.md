@@ -12,8 +12,8 @@ The first thing we will do is activate the Azure sandbox and deploy an ARM templ
 1. The output contains a row with the name of the resource group. The name starts with "learn-".
 
     :::image type="content" source="../media/3-cloud-shell-resourcegroup-name.png" alt-text="Screenshot of cloud shell displaying resource group name for sandbox.":::
-1. Copy the name of the resource group.
-1. Enter this command to define the resource group.
+1. Copy the name of the resource group. (You may need to highlight the text and right-click on your mouse to copy the text.)
+1. Enter this command to define the resource group. (You may need to erase some extraneous characters from around the resource group name.)
 
     ```azurecli
     resourceGroup="<your resource group name>"
@@ -51,7 +51,7 @@ The first thing we will do is activate the Azure sandbox and deploy an ARM templ
     :::image type="content" source="../media/3-app-service-tasks.png" alt-text="Screenshot that shows tasks for the app service for workbooks learn module.":::
 1. Now, we are ready to create a workbook.
 
-## Create a new workbook that lets the user select a subscription
+## Create a new workbook
 
 1. From the Azure portal home page, search for and select **Monitor**.
 1. Select **Workbooks** from the left pane.
@@ -61,12 +61,14 @@ The first thing we will do is activate the Azure sandbox and deploy an ARM templ
     1. Select **Add** and then **Add Text**.
 
         :::image type="content" source="../media/3-add-text.png" alt-text="Screenshot that shows the Add text button in an Azure workbook.":::
+
     1.  The Azure Workbook text editor uses markdown format. Enter text into the editor. You can copy this text if you would like.
 
     ```
         # Learn module exercise workbook
         ## Select a subscription from the drop-down below.
     ```
+
     1. Select **Done editing**.
     1. You now have a simple workbook with text.
 
@@ -97,4 +99,29 @@ The first thing we will do is activate the Azure sandbox and deploy an ARM templ
 
 1. Select **Edit** from the top toolbar.
 1. Select the subscription from the **Subscription** drop-down.
-1. Select **Add Query**
+1. Select **Add Query**.
+
+    :::image type="content" source="../media/3-add-query.png" alt-text="Screenshot that shows the add query icon in a workbook.":::
+
+1. In the **Data source** field, select **Azure Resource Graph**.
+1. In the **Subcription** field, under **Resource parameters**, select the **Subscription** checkbox.
+1. Add this query to the **Subscriptions Azure Resource Graph Query** section:
+
+    ```
+    resources
+   | summarize count() by location
+    ```  
+
+    :::image type="content" source="../media/3-query.png" alt-text="Screenshot that shows a query being configured in a workbook.":::
+
+1. Select **Run Query**.
+1. You will see the results of your query in a table below the query.
+1. To show your resources in a map, in the **Visualization** field on top of the query, select **Map**.
+1. In the **Map Settings** window, keep the default map settings, and select **Save and close**.
+1. Select **Advanced settings** at the top of the query, and enter "Resource distribution per region" in the **Chart title**.
+1. Select **Done editing**.
+1. You now have a workbook that lets the user select a subscription and displays all of the resources in that subscription in a map.
+    :::image type="content" source="../media/3-workbook-with-map.png" alt-text="Screenshot that shows an Azure workbook with a map displaying a subscription's resources.":::
+1. Select **Save**.
+1. Enter a name for your workbook, and select the resource group and subscription.
+1. 

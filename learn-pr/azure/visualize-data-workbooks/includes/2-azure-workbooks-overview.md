@@ -1,5 +1,5 @@
 
-Azure Workbooks combine text, log queries, metrics, and parameters in single tool. Workbooks use multiple kinds of visualizations and analyses to create rich interactive reports. Workbooks are the foundation for many of the Azure monitor insights. You can use Workbook's flexible canvas for free-form data exploration to extract data from multiple data sources and combine them into an individualized report. You can share Workbooks with your team in the Azure portal, to interactively gather and share information.
+Workbooks are the foundation for many of the Azure monitor insights. You can use Workbook's flexible canvas for free-form data exploration to extract data from multiple data sources and combine them into an individualized report. Azure Workbooks combine text, log queries, metrics, and parameters, and include multiple kinds of visualizations and analyses to create rich interactive reports with a single tool. You can share Workbooks with your team in the Azure portal, to interactively gather and share information.
 
 ## Data Sources
 You can query and combine data from multiple data sources within a single report. Workbooks support these data sources:
