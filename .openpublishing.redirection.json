@@ -18774,6 +18774,11 @@
       "source_path": "learn-pr/wwl-azure/plan-implement-sap-solutions/4-azure-vm-backup-considerations-sap-workloads.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/use-sap-workload-planning-deployment-checklist/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-implement-sap-solutions/2-azure-vm-compute-network-storage-considerations-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-sap-workload-planning-deployment-checklist/",
+      "redirect_document_id": false
     }
   ]
 }
