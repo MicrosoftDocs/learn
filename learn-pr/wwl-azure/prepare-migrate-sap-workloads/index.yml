@@ -28,7 +28,6 @@ subjects:
 units:
 - learn-pr.wwl.preparing-migrate-sap-workloads-azure.introduction
 - learn-pr.wwl.preparing-migrate-sap-workloads-azure.strategies-migrating-sap-workloads-microsoft-azure
-- learn-pr.wwl.preparing-migrate-sap-workloads-azure.creating-checklist-sap-workload-planning-deployment
 - learn-pr.wwl.preparing-migrate-sap-workloads-azure.pilot-phase
 - learn-pr.wwl.preparing-migrate-sap-workloads-azure.non-production-phase
 - learn-pr.wwl.preparing-migrate-sap-workloads-azure.production-preparation-phase
