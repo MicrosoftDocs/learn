@@ -33,7 +33,6 @@ subjects:
 - architecture
 units:
 - learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.introduction
-- learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.configuring-sap-netweaver-anydb-azure-vms
 - learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.sap-netweaver-azure-sample-workflow
 - learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.configuring-sap-s4-hana-azure-vms
 - learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.sap-hana-azure-sample-workflow
