@@ -2,8 +2,8 @@
 uid: learn.wwl.configure-app-service-plans
 metadata:
   title: Configure app service plans
-  description: "You will learn how to configure the App Service Plan including pricing and scaling."
-  ms.date: 05/19/2022
+  description: "Configure app service plans"
+  ms.date: 11/17/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -25,6 +25,8 @@ roles:
 - administrator
 products:
 - azure-app-service
+subjects:
+- cloud-computing
 units:
 - learn.wwl.configure-app-service-plans.introduction
 - learn.wwl.configure-app-service-plans.implement-azure

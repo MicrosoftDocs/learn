@@ -19,7 +19,7 @@ You want to display the list of ingredients, including adding a line-through for
 Because your HTML is integrated with JavaScript in JSX, you rely on JavaScript for logic and looping. To display a set of items contained in an array, you typically use the `map` function. `map` is designed to create a new array of items based on the result of a function call. If you want to display a list of titles in an ordered list, use both `map` and the `{ }` syntax you learned earlier.
 
 1. Inside **src**, create a new file named **IngredientList.jsx**.
-1. Just under the line that reads `import ReactDOM from 'react-dom';`, which should be line 3, add the following code.
+1. Add the following code to the file:
 
     ```javascript
     import './IngredientList.css'

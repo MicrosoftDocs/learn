@@ -6,19 +6,19 @@ First, determine how critical the issue would be to your system. Second, select 
 
 ## Determine security issues priority
 
-Security issues are prioritized according to risk severity. The labels might change from organization to organization. However, they tend to follow a pattern from critical to low-risk impact if the threat was exploited by an attacker.
+Security issues are prioritized according to risk severity. The labels might change from organization to organization. However, they tend to follow a pattern from critical to low-risk impact if an attacker exploited the threat.
 
 ## Types and functions
 
 Security controls have different types and functions.
 
-There are three main types that are meant to help you look at three different forms of security.
+There are three main types of security controls that are meant to help you look at three different forms of security.
 
 Examples include:
 
-- Physical: Cameras, badges, and fences
-- Technical: Encryption, virtual firewalls, and antivirus
-- Administrative: Policies, regulations, and written requirements
+- **Physical**: Cameras, badges, and fences
+- **Technical**: Encryption, virtual firewalls, and antivirus
+- **Administrative**: Policies, regulations, and written requirements
 
 Functions are meant to help protect your system against each phase of a potential threat.
 
