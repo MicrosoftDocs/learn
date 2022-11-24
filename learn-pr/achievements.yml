@@ -1367,3 +1367,8 @@ achievements:
   title: Planning Azure for SAP workloads
   summary: In this learning path, you see how to plan for a deployment of SAP solutions on Azure. You will also consider the preparation required for migrating SAP workloads to Azure.
   iconUrl: /training/achievements/planning-azure-sap-workloads.svg
+- uid: learn-pr.wwl.planning-implementing-sap-solutions-azure.badge
+  type: badge
+  title: Planning for implementing SAP solutions on Azure
+  summary: In this module, you will review the SAP supported VM and HLI types, the OS and DBMS releases for SAP in Azure, and the SAPS throughput estimates provided by Azure VMs and HLI.
+  iconUrl: /training/achievements/planning-implementing-sap-solutions-azure.svg
