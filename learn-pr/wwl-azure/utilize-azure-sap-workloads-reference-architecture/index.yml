@@ -33,6 +33,5 @@ subjects:
 - architecture
 units:
 - learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.utilizing-sap-hana-azure-large-instances
-- learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.summary
 badge:
   uid: learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.badge
