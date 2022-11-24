@@ -18869,6 +18869,11 @@
       "source_path": "learn-pr/wwl-azure/prepare-migrate-sap-workloads/10-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
+      "redirect_document_id": false
     }
   ]
 }
