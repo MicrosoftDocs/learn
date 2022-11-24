@@ -150,7 +150,7 @@ Your template has some hard-coded values where parameters or variables would be 
 
    Your variable declarations should now look like this example:
 
-   :::code language="bicep" source="code/5-main-refactored.bicep" range="26-38" highlight="2, 4-9, 10, 11" :::
+   :::code language="bicep" source="code/5-main-refactored.bicep" range="26-38" highlight="3, 6, 7-12, 13" :::
 
 1. Update the `publicIPAddress` resource's  `sku.name` property to refer to the `publicIPAddressSkuName` parameter.
 
@@ -177,34 +177,35 @@ Your template has some hard-coded values where parameters or variables would be 
 
 The export process adds redundant properties to many resources. Use these steps to remove the unneeded properties.
 
-1. In the `networkSecurityGroup` resource, remove `properties` because `securityRules` property is empty.
+1. In the `networkSecurityGroup` resource, remove `properties` because the `securityRules` property is empty.
 
-1. In the `publicIPAddress` resource:
+1. In the `publicIPAddress` resource remove the following properties:
 
-   - Remove the `ipAddress` property because it's automatically set by Azure.
-   - Remove the `ipTags` property because it's empty.
+   - `ipAddress` property because it's automatically set by Azure.
+   - `ipTags` property because it's empty.
 
-1. In the `virtualMachine` resource:
+1. In the `virtualMachine` resource remove the following properties:
 
-   - Remove the `storageProfile.osDisk.managedDisk.id` property because Azure automatically determines this property when the virtual machine is deployed.
+   - `storageProfile.osDisk.managedDisk.id` property because Azure automatically determines this property when the virtual machine is deployed.
 
      > [!IMPORTANT]
      > It's important to remove this property or your template won't deploy correctly.
 
-   - Remove the empty `storageProfile.dataDisks` property.
-   - Remove the empty `osProfile.secrets` property.
-   - Remove the `osProfile.requireGuestProvisionSignal` property because Azure sets this property automatically.
+   - `storageProfile.dataDisks` property because it's empty.
+   - `osProfile.secrets` property because it's empty.
+   - `osProfile.requireGuestProvisionSignal` property because Azure sets this property automatically.
 
-1. In the `virtualNetwork` resource:
-   - Remove the `delegations` and `virtualNetworkPeerings` properties because they're empty.
-   - Remove the line for `type: 'Microsoft.Network/virtualNetworks/subnets'`.
-   - Remove the `subnets.id` property.
+1. In the `virtualNetwork` resourceremove the following properties:
 
-1. In the `networkInterface` resource:
+   - `delegations` and `virtualNetworkPeerings` properties because they're empty.
+   - The line for `type: 'Microsoft.Network/virtualNetworks/subnets'`.
+   - `subnets.id` property.
+
+1. In the `networkInterface` resource remove the following properties:
 
    - From `ipConfigurations` remove the `privateIPAddress` property because it's automatically set by Azure and the allocation method is _Dynamic_.
-   - Remove `type: 'Microsoft.Network/networkInterfaces/ipConfigurations'`.
-   - Remove `dnsSettings` because the `dnsServers` property is empty.
+   - The line `type: 'Microsoft.Network/networkInterfaces/ipConfigurations'`.
+   - `dnsSettings` because the `dnsServers` property is empty.
    - In `publicIPAddress` remove `name`, `properties`, `type: 'Microsoft.Network/publicIPAddresses'`, and `sku`.
    - Remove `kind`.
    - Remove from `ipConfigurations` the `id`, `etag`, and `provisioningState` properties.
