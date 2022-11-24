@@ -33,7 +33,6 @@ subjects:
 - virtual-machine
 units:
 - learn-pr.wwl.planning-implementing-sap-solutions-azure.introduction
-- learn-pr.wwl.planning-implementing-sap-solutions-azure.azure-vm-security-considerations-sap-workloads
 - learn-pr.wwl.planning-implementing-sap-solutions-azure.sap-hana-azure-large-instances-compute-network-storage
 - learn-pr.wwl.planning-implementing-sap-solutions-azure.knowledge-check
 - learn-pr.wwl.planning-implementing-sap-solutions-azure.summary
