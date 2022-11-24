@@ -18899,6 +18899,11 @@
       "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/7-sap-azurehana-large-instance-architecture.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/8-sap-azure-hana-large-instance-sample-workflow.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
+      "redirect_document_id": false
     }
   ]
 }
