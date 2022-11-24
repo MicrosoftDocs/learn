@@ -31,7 +31,6 @@ units:
 - learn-pr.wwl.preparing-migrate-sap-workloads-azure.pilot-phase
 - learn-pr.wwl.preparing-migrate-sap-workloads-azure.non-production-phase
 - learn-pr.wwl.preparing-migrate-sap-workloads-azure.production-preparation-phase
-- learn-pr.wwl.preparing-migrate-sap-workloads-azure.go-live-phase
 - learn-pr.wwl.preparing-migrate-sap-workloads-azure.post-production-phase
 - learn-pr.wwl.preparing-migrate-sap-workloads-azure.knowledge-check
 - learn-pr.wwl.preparing-migrate-sap-workloads-azure.summary
