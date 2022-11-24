@@ -1377,3 +1377,8 @@ achievements:
   title: Prepare to migrate SAP workloads to Azure
   summary: In this module, you will walk through the important steps required for deploying SAP workloads to Azure. The steps include project preparation, pilot, non-production, production preparation, go-live, and post production.
   iconUrl: /training/achievements/preparing-migrate-sap-workloads-azure.svg
+- uid: learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.badge
+  type: badge
+  title: Utilize Azure for SAP workloads reference architecture
+  summary: In this module, you will review the Azure infrastructure options for hosting SAP NetWeaver and S/4HANA systems in Azure. You will examine the differences between the offerings of traditional outsourcers and IaaS offerings.
+  iconUrl: /training/achievements/utilizing-azure-sap-workloads-reference-architecture.svg
