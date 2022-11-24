@@ -35,7 +35,6 @@ units:
 - learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.sap-netweaver-azure-sample-workflow
 - learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.sap-hana-azure-sample-workflow
 - learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.utilizing-sap-hana-azure-large-instances
-- learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.sap-azure-hli-architecture
 - learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.sap-azure-hli-sample-workflow
 - learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.summary
 badge:
