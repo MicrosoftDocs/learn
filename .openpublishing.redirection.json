@@ -18889,6 +18889,11 @@
       "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
+      "redirect_document_id": false
     }
   ]
 }
