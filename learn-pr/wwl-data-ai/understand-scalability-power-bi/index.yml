@@ -15,9 +15,9 @@ abstract: |
   * Implement Power BI data modeling best practices
   * Use the Power BI large dataset storage format
 prerequisites: |
-  Consider completing the [Model data in Power BI](/learn/paths/model-power-bi/) learning path.
+  Consider completing the [Model data in Power BI](/training/paths/model-power-bi/) learning path.
   You will need knowledge of:
-  - Power BI data model design including star schema design basics
+  *   Power BI data model design including star schema design basics
 iconUrl: /training/achievements/understand-scalability-power-bi.svg
 levels:
 - intermediate
