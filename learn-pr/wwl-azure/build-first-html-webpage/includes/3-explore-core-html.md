@@ -17,7 +17,8 @@ A tag and any content between the open and close is called an **element**
 - This is a closing tag to make something bold: `</strong>`
 - This is an element: `<strong> Make me bold </strong>`
 
-> [!IMPORTANT] You will often hear developers use the terms tag and element interchangeably. While they do technically mean different things, in most conversation, the slight difference in meaning isn't important.
+> [!IMPORTANT] 
+> You will often hear developers use the terms tag and element interchangeably. While they do technically mean different things, in most conversation, the slight difference in meaning isn't important.
 
 Headers are common elements that are numbered one through six, with one being the top of the hierarchy and six being the lowest. These are written as `h1` through `h6`. If you want to add a top-level heading to a page to display the word **Resume**, you could use:
 
