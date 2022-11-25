@@ -20,12 +20,16 @@ Users who are assigned to the Global administrator role can read and modify ever
  -  **Billing Administrator** \- Makes purchases, manages subscriptions, manages support tickets, and monitors service health.
  -  **Cloud Application Administrator** \- Users in this role have the same permissions as the Application Administrator role, excluding the ability to manage application proxy.
  -  **Cloud Device Administrator** \- Users in this role can enable, disable, and delete devices in Azure AD and read Windows 10 BitLocker keys (if present) in the Azure portal.
- -  **Compliance Administrator** \- Users with this role have permissions to manage compliance-related features in the Microsoft 365 compliance center, Microsoft 365 admin center, Azure, and Microsoft 365 Security &amp; Compliance Center.
- -  **Compliance Data Administrator** \- Users with this role have permissions to track data in the Microsoft 365 compliance center, Microsoft 365 admin center, and Azure. Users can also track compliance data within the Exchange admin center,
+ -  **Compliance Administrator** \- Users with this role have permissions to manage compliance-related features in the 	compliance portal
+Microsoft Purview compliance portal, Microsoft 365 admin center, Azure, and Microsoft 365 Security &amp; compliance portal
+Microsoft Purview compliance portal.
+ -  **Compliance Data Administrator** \- Users with this role have permissions to track data in the compliance portal
+Microsoft Purview compliance portal, Microsoft 365 admin center, and Azure. Users can also track compliance data within the Exchange admin center,
  -  **Conditional Access Administrator** \- Users with this role have the ability to manage Azure Active Directory Conditional Access settings
  -  **Exchange Administrator** \- Users with this role have global permissions within Microsoft Exchange Online when the service is present.
  -  **Directory Readers** \- Users in this role can read basic directory information.
- -  **Global Administrator / Company Administrator** \- Users with this role have access to all administrative features in Azure Active Directory, as well as services that use Azure Active Directory identities like Microsoft 365 security center, Microsoft 365 compliance center, Exchange Online, SharePoint Online, and Skype for Business Online.
+ -  **Global Administrator / Company Administrator** \- Users with this role have access to all administrative features in Azure Active Directory, as well as services that use Azure Active Directory identities like Microsoft 365 security center, Microsoft 365 compliance portal
+Microsoft Purview compliance portal, Exchange Online, SharePoint Online, and Skype for Business Online.
  -  **Groups Administrator** \- Users in this role can create/manage groups and its settings like naming and expiration policies.
  -  **Security Administrator** \- Users with this role have permissions to manage security-related features in the Microsoft 365 security center, Azure Active Directory Identity Protection, Azure Information Protection, and Microsoft 365 Security &amp; Compliance Center.
 
