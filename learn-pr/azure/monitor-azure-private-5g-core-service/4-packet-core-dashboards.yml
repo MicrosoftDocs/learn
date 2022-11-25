@@ -9,6 +9,6 @@ metadata:
   ms.author: michaelshan
   ms.topic: interactive-tutorial
   ms.service: learning-private-5g-core
-durationInMinutes: 15
+durationInMinutes: 6
 content: |
   [!include[](includes/4-packet-core-dashboards.md)]

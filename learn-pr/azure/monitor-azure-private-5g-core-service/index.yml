@@ -3,7 +3,7 @@ uid: learn.monitor-azure-private-5g-core-service
 hidden: true
 metadata:
   title: Monitor the Azure Private 5G Core service
-  description: Describes the monitoring capabilities of Azure Private 5G Core, the Azure Log Analytics tool and the packet core dashboards for monitoring the service, and the distributed tracing tool for diagnosing network issues.
+  description: Describes the monitoring capabilities of Azure Private 5G Core, the tools for monitoring the service, and the tool for diagnosing network issues.
   ms.date: 10/27/2022
   author: michael-weizhong-shan
   ms.author: michaelshan
@@ -13,8 +13,8 @@ title: Monitor the Azure Private 5G Core service
 summary: Learn about the network monitoring capabilities of Azure Private 5G Core, the use of relevant monitoring tools, and the techniques to troubleshoot and resolve network issues.
 abstract: |
   By the end of this module, you'll be able to:
-    - Describes the monitoring capabilities of Azure Private 5G Core.
-    - Describe the cloud and on-premises monitoring tools that Azure Private 5G Core provides.
+    - Describe the monitoring capabilities of Azure Private 5G Core.
+    - Describe the cloud and local monitoring tools that Azure Private 5G Core provides.
     - Describe the tool that you can use to diagnose network issues.
     - Give examples of key metrics to monitor.
 prerequisites: |
@@ -36,7 +36,7 @@ subjects:
 units:
 - learn.monitor-azure-private-5g-core-service.introduction
 - learn.monitor-azure-private-5g-core-service.azure-log-analytics
-- learn.monitor-azure-private-5g-core-service.platform-dashboards-and-app-integration
+- learn.monitor-azure-private-5g-core-service.platform-metrics-and-app-integration
 - learn.monitor-azure-private-5g-core-service.packet-core-dashboards
 - learn.monitor-azure-private-5g-core-service.issue-diagnosis
 - learn.monitor-azure-private-5g-core-service.knowledge-check

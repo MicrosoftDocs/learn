@@ -9,6 +9,6 @@ metadata:
   ms.author: michaelshan
   ms.topic: interactive-tutorial
   ms.service: learning-private-5g-core
-durationInMinutes: 14
+durationInMinutes: 10
 content: |
   [!include[](includes/2-azure-log-analytics.md)]

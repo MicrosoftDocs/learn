@@ -9,21 +9,7 @@ metadata:
   ms.author: michaelshan
   ms.topic: interactive-tutorial
   ms.service: learning-private-5g-core
-durationInMinutes: 1
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-###########################################################################
+durationInMinutes: 4
 content: |
 quiz:
   questions:
@@ -37,18 +23,18 @@ quiz:
       explanation: "Try again. The packet core dashboards allow you to locally monitor a specific site in a private mobile network."
     - content: "The distributed tracing tool"
       isCorrect: false
-      explanation: "Try again. The distributed tracing tool is for issue diagnostics. It allows you locally diagnose network issues in a site."
+      explanation: "Try again. The distributed tracing tool is for issue diagnostics. It allows you to locally diagnose network issues in a site."
   - content: "To use third-party applications to monitor a private mobile network, which of the following methods should be used?"
     choices:
     - content: "Use the distributed tracing tool."
       isCorrect: false
       explanation: "Try again. The distributed tracing tool is mainly for diagnosing network issues."
-    - content: "Use the Azure Monitor REST API"
+    - content: "Use the Azure Monitor REST API."
       isCorrect: true
-      explanation: "Correct. Azure Private 5G Core shares a list of performance and health metrics, which third-party applications can retrieve with the Azure Monitor REST API."
-    - content: "Use the platform metrics dashboards"
+      explanation: "Correct. Azure Private 5G Core shares a list of health and performance metrics, which third-party applications can retrieve with the Azure Monitor REST API."
+    - content: "Use the platform metrics."
       isCorrect: false
-      explanation: "Try again. The platform metrics dashboards provide visualized views of the performance and health metrics. However, third-party can't retrieve the metrics directly from these dashboards."
+      explanation: "Try again. The platform metrics provide visualized views of the health and performance metrics. However, third-party applications can't retrieve the metrics directly from these dashboards."
   - content: "To diagnose a 5G network issue with the distributed tracing tool, what keyword should be used to search for information about signaling flows and errors?"
     choices:
     - content: "The subscription permanent identifier (SUPI)."
@@ -59,15 +45,15 @@ quiz:
       explanation: "Try again. Words in error messages can't be used to search for information about signaling flows and errors. However, the distributed tracing tool supports searching by error types."
     - content: "The time at which an event occurred."
       isCorrect: false
-      explanation: "Try again. Time can't be used as a search keyword in the distributed tracing tool. However, the tool allows search results to be restricted with a date/time range."
-  - content: "Which of the following is a health and performance metric that you need to monitor for a private mobile network?"
+      explanation: "Try again. The time can't be used as a search keyword in the distributed tracing tool. However, the tool allows search results to be restricted with a date/time range."
+  - content: "Which of the following item is a health and performance metric that you need to monitor for a private mobile network?"
     choices:
     - content: "The names of the RANs to which Azure Private 5G Core connects."
       isCorrect: false
       explanation: "Try again. RAN names aren't health and performance metrics. They don't often change."
-    - content: "The number of the SIM polices defined for a site"
+    - content: "The number of SIM policies defined for a site."
       isCorrect: false
-      explanation: "Try again. The number of SIM polices isn't a health and performance metic. It depends on the business needs of the private mobile network."
+      explanation: "Try again. The number of SIM policies isn't a health and performance metric. It depends on the business needs of the enterprise that uses the UEs."
     - content: "The numbers of packets sent/received on the N3/N6 interfaces"
       isCorrect: true
       explanation: "Azure Private 5G Core uses the N3/N6 interfaces to communicate with the data network. For issues related to the data network, checking the numbers of packets sent/received on the N3/N6 interfaces may help."

@@ -1,10 +1,11 @@
-During the monitoring of your private mobile network, you may find network issues. For example, a connection or a network function may not be working as expected. In this case, you can use a *distributed tracing tool*, which is a network issue diagnostic tool that Azure Private 5G Core offers, to diagnose the issues reported.
+During the monitoring of your private mobile network, you may find network issues. For example, a connection or a network function may not work as expected. In this case, you can use the *distributed tracing tool*, a network issue diagnostic tool that Azure Private 5G Core offers, to diagnose the issues reported.
 
-The distributed tracing tool allows you to collect detailed traces for signaling flows involving packet core instances. Each *trace* represents the results of a distinct occurrence of a network activity. Through a web graphical user interface (GUI), you can use traces to diagnose many common configuration, network, and interoperability problems affecting network services.
+The distributed tracing tool allows you to collect detailed traces for signaling flows involving a packet core instance. Each *trace* represents the results of a distinct occurrence of a network activity. Through a web graphical user interface (GUI), you can use traces to diagnose many common configuration, network, and interoperability problems affecting network services.
 
-The distributed tracing tool is available from the ASE on which the packet core instance runs. As the tool resides within each site in your private mobile network, it doesn't have much reliance on the network bandwidth or the cloud connectivity. With the tool, you can quickly diagnose network issues and minimize their impact to your network services.
+The distributed tracing tool is available from the ASE on which the packet core instance runs. As the tool resides within each site in your private mobile network, it doesn't have much reliance on the network bandwidth or the cloud connectivity. With the tool, you can quickly diagnose network issues and minimize their impact on your network services.
 
-To effectively diagnose issues in your private mobile network, you need to be familiar with the network functions that Azure Private 5G Core provides. For more information about the network functions, see [Packet core architecture](/azure/private-5g-core/private-5g-core-overview#packet-core-architecture). You also need to understand how different components in an [Azure private multi-access edge compute (MEC)](https://azure.microsoft.com/solutions/private-multi-access-edge-compute-mec/#overview) solution interact with each other.
+> [!IMPORTANT]
+> To effectively diagnose issues in your private mobile network, you need to be familiar with the network functions that Azure Private 5G Core provides. For more information about the network functions, see [Packet core architecture](/azure/private-5g-core/private-5g-core-overview#packet-core-architecture).
 
 <!-- Insert an issue debugging video here once it is available -->
 
@@ -42,9 +43,9 @@ To help you diagnose issues, the distributed tracing tool provides detailed info
 - The **Detailed Timeline** view: The sequence of operations and events that occurred during the flow or error.
 - The **Call Flow** view: The sequence of messages flowing between components during the course of the flow or error.
 
-Each entry in the **Detailed Timeline** view represents an event. The entry includes the date and time at which the event occurred and the name of the component on which it occurred. You can check the details about each event. Additionally, you can filter the events by different levels. For example, the detailed events level includes the network protocol messages and more fine-grained detail of events. 
+Each entry in the **Detailed Timeline** view represents an event. The entry includes the date and time at which the event occurred and the name of the component on which it occurred. You can check the details about each event. Additionally, you can filter the events by different levels. For example, the detailed events level includes the network protocol messages and more fine-grained detail of events.
 
-The **Call Flow** view uses a diagram to visually indicate the messages flowing between network functions. As shown in the example view below, the vertical lines show the network components involved in the flow. The black lines indicate packet core Network Functions that have logged sending or receiving messages for this flow. The gray lines indicate other components that don't log messages. A horizontal line shows each individual signaling message flowing between two network components. An arrow indicates the direction of flow from the sending to the receiving component. The messages appear in the diagram in the order in which they occurred.
+The **Call Flow** view uses a diagram to visually indicate the messages flowing between network functions. As shown in the example view below, the vertical lines show the network components involved in the flow. The black lines indicate packet core Network Functions that have logged sending or receiving messages for this flow. The gray lines indicate other components that don't log messages. A horizontal line shows each individual signaling message flowing between two network components. An arrow indicates the direction of flow from the sending component to the receiving component. The messages appear in the diagram in the order in which they occurred.
 
 :::image type="content" source="../media/distributed-tracing-call-flow.png" alt-text="A screenshot showing the message flows in an example Call Flow view" border="true":::
 
@@ -59,7 +60,7 @@ In addition, the distributed tracing tool allows you to use a date/time range to
 > [!TIP]
 > Long search ranges result in slower searches. We recommend that you keep the search range to an hour or less if possible.
 
-For detailed instructions on searching for information in the distributed tracing tool, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
+For detailed instructions in searching for information in the distributed tracing tool, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
 
 ## An example of network issue diagnosis
 
@@ -71,7 +72,7 @@ To find the root cause of this communication issue, you can take the following s
 
    In the search results page, you may see an event that indicates the authentication request of the UE has been rejected. This tells you that there are some authentication issues with the UE.
 
-1. Click the event to open it. 
+1. Select the event to open it.
 
    On the **Summary** view, you may see the following message:
 
@@ -83,7 +84,7 @@ To find the root cause of this communication issue, you can take the following s
 
    :::image type="content" source="../media/authentication-rejected.png" alt-text="A screenshot with a message indicating the reason for authentication failure" border="true":::
 
-1. After figuring out that the root cause for the issue is the wrong authentication key in the provisioned UE, you can remove the UE through the Azure portal and then provision it again with the correct authentication key.
+1. After figuring out that the root cause for the issue is the wrong authentication key in the provisioned UE, you can remove the UE through the Azure portal, and then provision it again with the correct authentication key.
 
 ## Collect diagnostics packages for technical support
 
