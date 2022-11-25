@@ -25,16 +25,16 @@ The enablement steps are as follows:
 
 1. Create an Azure Monitor extension for the Azure Arc-enabled Kubernetes cluster and deploy it to the cluster. This step allows Azure Monitor to connect to the cluster.
   
-  Follow the detailed instructions in [Azure Monitor Container Insights for Azure Arc-enabled Kubernetes clusters](/azure/azure-monitor/containers/container-insights-enable-arc-enabled-clusters) to create and deploy the extension.
+   Follow the detailed instructions in [Azure Monitor Container Insights for Azure Arc-enabled Kubernetes clusters](/azure/azure-monitor/containers/container-insights-enable-arc-enabled-clusters) to create and deploy the extension.
 
-  > [!NOTE]
-  >
-  > - Use Azure CLI for this step.
-  > - In the "Create extension instance" step, make sure that you choose **Option 4 - On Azure Stack Edge**.
+   > [!NOTE]
+   >
+   > - Use Azure CLI for this step.
+   > - In the "Create extension instance" step, make sure that you choose **Option 4 - On Azure Stack Edge**.
 
 1. Configure and deploy a ConfigMap. This step allows the packet core instance to stream its log data to the Log Analytics workspace.
   
-  For detailed instructions, see [Configure and deploy the ConfigMap](/azure/private-5g-core/enable-log-analytics-for-private-5g-core).
+   For detailed instructions, see [Configure and deploy the ConfigMap](/azure/private-5g-core/enable-log-analytics-for-private-5g-core).
 
 > [!TIP]
 >
