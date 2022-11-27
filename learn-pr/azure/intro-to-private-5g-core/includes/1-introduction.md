@@ -2,7 +2,7 @@ As Internet of Things (IoT) devices typically need to respond to requests or dat
 
 To satisfy the performance and security needs of IoT applications, Azure Private 5G Core offers simple, scalable, and secure deployment of private 5G core networks on an Azure edge platform. While ensuring high performance with local data processing, Azure Private 5G Core allows you to deploy and manage private 5G networks centrally across global sites through the Azure portal. It also allows you to monitor the sites in a private mobile network either remotely with Azure Log Analytics or locally with packet core dashboards.
 
-Different from WIFI, the 5G service offered by Azure Private 5G Core overcomes the communication issues caused by noisy radio frequency (RF) environment or large distances.
+Different from Wi-Fi, the 5G service offered by Azure Private 5G Core overcomes the communication issues caused by noisy radio frequency (RF) environment or large distances.
 
 Suppose you work in a logistics company, which has sets of cameras installed at different packaging zones in its warehouse. At each packaging stage, the cameras scan the labels on the packages. With packages scanned at each step, the company can ensure that all the items are correctly packaged. They can also use the collected data to assess their packaging performance.
 
@@ -12,7 +12,7 @@ In this case, the company can use Azure Private 5G core to deploy a private mobi
 
 The following diagram illustrates an example configuration that the warehouse can use:
 
-:::image type="content" source="../media/ap5gc-warehouse-example.png" alt-text="A diagram of the Warehouse IoT system" border="true":::
+:::image type="content" source="../media/ap5gc-warehouse-example.png" alt-text="A diagram of the Warehouse IoT system." border="true":::
 
 In this module, we'll introduce Azure Private 5G Core and its role in private mobile network solutions. We'll also take you through the key benefits and key features of the product. With the help of videos that introduce the solution and its usage scenarios, you'll have a good understanding of Azure Private 5G Core and its applications.
 

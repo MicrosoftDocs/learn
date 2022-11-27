@@ -6,7 +6,7 @@ Azure Private 5G Core instantiates a single enterprise private mobile network di
 
 The following diagram shows the key components of a single site powered by an Azure Private 5G Core packet core instance:
 
-:::image type="content" source="../media/site-physical-components.png" alt-text="A diagram that displays the main components of a site in a private mobile network" border="true":::
+:::image type="content" source="../media/site-physical-components.png" alt-text="A diagram that displays the main components of a site in a private mobile network." border="true":::
 
 As shown in the diagram, the packet core instance runs on a Kubernetes cluster deployed on an ASE device. The IoT user equipment (UE) connects to Azure Private 5G Core through RAN. To process the data from UEs, you'll also need to deploy data processing applications. For instance, in the package scanning example discussed in the introduction unit, the warehouse uses computer vision applications to process the data collected from each camera.
 
@@ -21,12 +21,15 @@ TBD: A video that introduces Azure Private 5G Core and its role in private MEC s
 A private MEC solution powered with Azure Private 5G Core typically consists of the following components.
 
 - **Packet core**
+
   The packet core instance is a cloud-native implementation of the 3GPP standards-defined 5G Next Generation Core (5G NGC or 5GC). Each packet core instance connects to a radio access network (RAN) to provide coverage for UEs. You'll source your RAN from an [Azure private MEC partner](/azure/private-multi-access-edge-compute-mec/partner-programs).
 
 - **Azure Stack Edge and Azure Arc-enabled Kubernetes**
+
   Before you add a site to your private mobile network, you'll create a *Kubernetes cluster* on the Azure Stack Edge device, which serves as the platform for the packet core instance. The platform provides security and manageability for the entire core network stack from Azure. Additionally, Azure Arc allows Microsoft to provide support at the edge.
 
 - **RANs and SIMs**
+
   UEs use SIMs or eSIMs to connect to a RAN. They connect to the packet core through the RAN.
 
   For RANs and SIMs, you can choose vendors based on your business, technology, and spectrum requirements. For more information, see [Azure private multi-access edge compute partner solutions](/azure/private-multi-access-edge-compute-mec/partner-programs).
@@ -35,6 +38,6 @@ A private MEC solution powered with Azure Private 5G Core typically consists of 
 
 Each private mobile network that Azure Private 5G Core deploys can have multiple sites around the world. The following diagram illustrates the structure of a typical multi-site private mobile network:
 
-:::image type="content" source="../media/site-structure.png" alt-text="A diagram that illustrates the sites of a private mobile network" border="true":::
+:::image type="content" source="../media/site-structure.png" alt-text="A diagram that illustrates the sites of a private mobile network." border="true":::
 
 An enterprise that has multiple sites at different geographical locations can centrally manage all the sites from Azure. For example, they can perform provisioning or monitoring tasks from the Azure portal, and they can monitor all sites with applications such as Azure Monitor.
