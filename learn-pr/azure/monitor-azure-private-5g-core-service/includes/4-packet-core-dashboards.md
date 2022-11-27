@@ -40,7 +40,7 @@ Here *\<LocalMonitoringIP\>* is the IP address for accessing the local monitorin
 <!-- Need to verify if the AAD feature will be delivered for GA -->
 Azure Private 5G Core provides two authentication methods for the packet core dashboards:
 
-- Username and password: The username/password method allows you to sign in the packet core dashboards with a default account. If your site isn't always connected to Azure, use this method.
+- Username and password: The username/password method allows you to sign in the packet core dashboards with a default account. Use this method if your site isn't always connected to Azure.
 
   You can use the following default account to sign in:
 
@@ -49,7 +49,7 @@ Azure Private 5G Core provides two authentication methods for the packet core da
   
   Change the password for the account after the initial sign-in.
 
-- Azure active directory (AD): The Azure AD method allows users to sign in to the packet core dashboards with their Azure accounts. If your site is always connected to Azure, use this method.
+- Azure active directory (AD): The Azure AD method allows users to sign in to the packet core dashboards with their Azure accounts. Use this method if your site is always connected to Azure.
 
   For more information about enabling and configuring the Azure AD authentication method, see [Packet core dashboards](/azure/private-5g-core/packet-core-dashboards).
 

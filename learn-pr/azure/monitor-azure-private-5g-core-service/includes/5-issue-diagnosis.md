@@ -1,4 +1,4 @@
-During the monitoring of your private mobile network, you may find network issues. For example, a connection or a network function may not work as expected. In this case, you can use the *distributed tracing tool*, a network issue diagnostic tool that Azure Private 5G Core offers, to diagnose the issues reported.
+During the monitoring of your private mobile network, you may find network issues. For example, a connection or a network function may not work as expected. In this case, you can use the *distributed tracing* tool, a network issue diagnostic tool that Azure Private 5G Core offers, to diagnose the issues reported.
 
 The distributed tracing tool allows you to collect detailed traces for signaling flows involving a packet core instance. Each *trace* represents the results of a distinct occurrence of a network activity. Through a web graphical user interface (GUI), you can use traces to diagnose many common configuration, network, and interoperability problems affecting network services.
 
@@ -20,7 +20,7 @@ Here *\<`LocalMonitoringIP`\>* is the IP address for accessing the local monitor
 <!-- Need to verify if the AAD feature will be delivered for GA -->
 Azure Private 5G Core provides two authentication methods for the distributed tracing tool:
 
-- Username and password: The username/password method allows you to sign in the distributed tracing tool with a default account. If your site isn't always connected to Azure, use this method.
+- Username and password: The username/password method allows you to sign in the distributed tracing tool with a default account. Use this method if your site isn't always connected to Azure.
 
   You can use the following default account to sign in:
 
@@ -29,7 +29,7 @@ Azure Private 5G Core provides two authentication methods for the distributed tr
   
   Change the password for the account after the initial sign-in.
 
-- Azure Active Directory (AD): The Azure AD method allows users to sign in to the packet core dashboards with their Azure accounts. If your site isn't always connected to Azure, use this method.
+- Azure Active Directory (AD): The Azure AD method allows users to sign in to the packet core dashboards with their Azure accounts. Use this method if your site is always connected to Azure.
 
   For more information about enabling and configuring the Azure AD authentication method, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
 

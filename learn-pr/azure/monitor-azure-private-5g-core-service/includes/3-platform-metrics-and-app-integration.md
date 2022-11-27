@@ -1,6 +1,6 @@
 <!-- Need to verify these GA feature details before official publication -->
 
-In addition to Log Analytics, Azure Private 5G Core provides platform metrics through the Azure portal. Platform metrics are dashboards that present visualized views of the network health and performance information.
+In addition to Log Analytics, Azure Private 5G Core provides platform metrics through the Azure portal. Platform metrics are dashboards that visualize the network health and performance information.
 
 Azure Private 5G Core also allows you to use third-party applications to monitor a private mobile network. From the applications, you can use the Azure Monitor REST API to retrieve the metrics that Azure Private 5G Core shares.
 
