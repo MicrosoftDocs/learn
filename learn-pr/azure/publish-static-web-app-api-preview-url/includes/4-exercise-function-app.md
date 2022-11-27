@@ -398,4 +398,4 @@ It's time to see your application running locally against the Azure Functions AP
 
 ## Next steps
 
-Your app works locally, and your next step is to publish the app with the API together.
+Your app works locally, and your next step is to publish the app with the API.
