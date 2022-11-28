@@ -1,4 +1,4 @@
-In practice, you will connect Azure IoT Central to a physical device, such as an IoT enabled coffee machine. Here, you'll simulate a device with a Node.js application and connect it to the Azure IoT Central application. Telemetry measurements from the simulated coffee machine are sent to IoT Central for monitoring and analysis.
+In practice, you'll connect Azure IoT Central to a physical device, such as an IoT enabled coffee machine. Here, you'll simulate a device with a Node.js application and connect it to the Azure IoT Central application. Telemetry measurements from the simulated coffee machine are sent to IoT Central for monitoring and analysis.
 
 ![An illustration showing a Coffee machine.](../media/3-coffee-machine.png)
 
@@ -18,7 +18,7 @@ The **Connected Coffee Machine - Real - 001** device now shows in the list of **
 
 Your real device needs some connection information to connect securely to your IoT Central application:
 
-1. Click on **Connected Coffee Machine - Real - 001** in the list of devices to view the device details.
+1. Select **Connected Coffee Machine - Real - 001** in the list of devices to view the device details.
 
 1. Select **Connect** to open the **Device connection groups** panel.
 

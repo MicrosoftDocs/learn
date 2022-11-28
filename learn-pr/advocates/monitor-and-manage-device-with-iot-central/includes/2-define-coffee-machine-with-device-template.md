@@ -22,7 +22,7 @@ Use commands to remotely manage your device from your application. You can direc
 
 ### Cloud properties
 
-*Cloud properties* are device metadata that's associated with the device. Use cloud properties to record information about your device in your IoT Central application. In this scenario, you use cloud properties to record the ideal water temperature range of the coffee machine. Cloud properties are stored in the IoT Central application and don't synchronize with the device. Cloud properties are not part of an interface definition.
+*Cloud properties* are device metadata that's associated with the device. Use cloud properties to record information about your device in your IoT Central application. In this scenario, you use cloud properties to record the ideal water temperature range of the coffee machine. Cloud properties are stored in the IoT Central application and don't synchronize with the device. Cloud properties aren't part of an interface definition.
 
 ### Views
 
