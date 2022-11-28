@@ -76,7 +76,7 @@ In the Azure portal, select **Monitor > Metrics**. In the **Metrics** pane, sele
 
 DDoS Protection applies three autotuned mitigation policies (SYN, TCP, and UDP) for each public IP of the protected resource, in the virtual network that has DDoS enabled. You can view the policy thresholds by selecting the **Inbound \[SYN/TCP/UDP\] packets to trigger DDoS mitigation** metrics as shown in the example screenshot below.
 
-:::image type="content" source="../media/ddos-mitigation-policies-586c35e7.png" alt-text="Chart displaying mitigation policy metrics from DDoS Protection":::
+:::image type="content" source="../media/ddos-mitigation-policies-586c35e7.png" alt-text="Chart displaying mitigation policy metrics from DDoS Protection.":::
 
 
 The policy thresholds are autoconfigured via machine learning-based network traffic profiling. DDoS mitigation occurs for an IP address under attack only when the policy threshold is exceeded.
