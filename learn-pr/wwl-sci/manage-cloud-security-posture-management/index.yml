@@ -3,7 +3,7 @@ uid: learn.wwl.manage-cloud-security-posture-management
 metadata:
   title: Manage your cloud security posture management​
   description: "Manage your cloud security posture management​"
-  ms.date: 06/20/2022
+  ms.date: 11/24/2022
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Explain the Microsoft Defender for Cloud security posture management protections for your resources.
 prerequisites: |
   None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/manage-cloud-security-posture-management.svg
 levels:
 - intermediate
 roles:

@@ -25,9 +25,7 @@ let cardDescription (card: int) : string =
 
 To create a card description:
 
-1. In *Program.fs*, add the code before the `main()` method.
-
-    The code in *Program.fs* now looks like this example:
+1. In *Program.fs*, replace the contents with the following code:
 
     ```fsharp
     open System
