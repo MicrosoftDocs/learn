@@ -55,6 +55,7 @@ To use Bonsai commands from your local computer, you need to install the Bonsai 
 
     ``(bonsai-preview) C:\>``
 
+
 ## Download and run the Docker container
 
 To download your exported brain:

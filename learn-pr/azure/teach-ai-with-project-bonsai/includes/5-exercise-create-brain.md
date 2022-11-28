@@ -156,4 +156,5 @@ You can also turn off the Visual Authoring and navigate to the Inking editor. Yo
 
 ![The screenshot shows the Inkling code and brain graph.](../media/inspect-brain.png)
 
+
 At a glance, you'll see that the Inkling code has different structs defined for the components we just reviewed within Visual Authoring: ObservableState, SimAction, goal, and lesson.
