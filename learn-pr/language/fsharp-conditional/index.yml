@@ -3,7 +3,7 @@ uid: learn.fsharp-conditional
 metadata:
   title: Manage execution flow in F#
   description: Learn how to manage execution flow in your programs by using `if...elif...else` and loop constructs.
-  ms.date: 07/23/2021
+  ms.date: 11/23/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
