@@ -31,7 +31,7 @@ You'll configure the following settings for a basic virtual network:
 :::image type="content" source="../media/create-virtual-network-security-286df13c.png" alt-text="Screenshot of the Azure portal showing the security page of create virtual network.":::
 
  -  **BastionHost** You can select to enable or disable Azure Bastion in your virtual network. Azure Bastion service provides a secure and seamless RDP/SSH connectivity to your virtual machines directly in the Azure portal over SSL. For more information on Azure Bastion, see [Azure Bastion overview](/azure/bastion/bastion-overview).
- -  **DDoS Protection Standard** You can select to enable or disable Standard DDoS protection. The Standard DDoS protection is a premium service. For more information on Standard DDoS protection, see [Azure DDoS protection Standard overview](/azure/virtual-network/ddos-protection-overview).
+ -  **DDoS Protection Standard** You can select to enable or disable Standard DDoS protection. The Standard DDoS protection is a premium service. For more information on DDoS Protection, see [Azure DDoS protection overview](/azure/virtual-network/ddos-protection-overview).
  - **Firewall** You can enable or disable Azure Firewall. Azure Firewall service is managed cloud-based network security service that protects your Azure Virtual Network resources. For more information on Azure Firewall, see [Azure Firewall overview](/azure/firewall/overview)
 
 After you've configured these settings, select **Review + Create** and then select **Create** when validation is passed.
