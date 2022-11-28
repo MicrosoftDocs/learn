@@ -4,8 +4,8 @@ metadata:
   title: Get started with Python in Visual Studio Code
   description: Get started with learning Python by installing and configuring the tools you'll need to build real applications.
   ms.date: 04/05/2022
-  author: rjmolyneaux
-  ms.author: rmolyneaux
+  author: anandmeg
+  ms.author: meghaanand
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen, devdivchpfy22
