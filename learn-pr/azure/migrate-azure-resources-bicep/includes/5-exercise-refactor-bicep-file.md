@@ -45,15 +45,13 @@ The virtual network's subnet currently is defined twice. It's defined once in th
 
    :::code language="bicep" source="code/5-virtual-network-nsg-fixed.bicep" highlight="25-27" :::
 
-1. In the `virtualNetwork` resource remove `id: defaultSubnet.id` so to resolve the warning.
-
 1. Update the `networkInterface` resource to refer to the subnet's resource ID:
 
    :::code language="bicep" source="code/5-network-interface-fixed.bicep" highlight="15" :::
 
-   You will notice an error about that the expression is invovled in a cycle. You'll fix that in the next step.
+   You will notice an error about that the expression is involved in a cycle. You'll fix that in the next step.
 
-1. In the `virtualNetwork` resource remove the line `id: defaultSubnet.id` for the subnet ID.
+1. Go to the `virtualNetwork` resource's `subnets` property and remove `id: defaultSubnet.id` to resolve the error.
 
 ## Change the parameters to variables
 
@@ -141,7 +139,7 @@ Your template has some hard-coded values where parameters or variables would be 
 
 1. Add the following variable declaration. Replace the values with the OS disk name from your own reference template:
 
-   :::code language="bicep" source="code/5-main-refactored.bicep" range="35":::
+   :::code language="bicep" source="code/5-main-refactored.bicep" range="38":::
 
    The value of the `virtualMachineOSDiskName` is unique. The value is different between deployments. Ensure that you copy the variable's value from your reference template.
 
@@ -195,20 +193,20 @@ The export process adds redundant properties to many resources. Use these steps 
    - `osProfile.secrets` property because it's empty.
    - `osProfile.requireGuestProvisionSignal` property because Azure sets this property automatically.
 
-1. In the `virtualNetwork` resourceremove the following properties:
+1. In the `virtualNetwork` resource remove the following properties:
 
    - `delegations` and `virtualNetworkPeerings` properties because they're empty.
    - The line for `type: 'Microsoft.Network/virtualNetworks/subnets'`.
-   - `subnets.id` property.
 
 1. In the `networkInterface` resource remove the following properties:
 
-   - From `ipConfigurations` remove the `privateIPAddress` property because it's automatically set by Azure and the allocation method is _Dynamic_.
-   - The line `type: 'Microsoft.Network/networkInterfaces/ipConfigurations'`.
+   - The `kind` property.
+   - From `ipConfigurations` the `id`, `etag`, and `type`.
+   - From `ipConfigurations.properties`:
+     - `provisioningState`.
+     - `privateIPAddress` property because it's automatically set by Azure and the allocation method is _Dynamic_.
+   - From `publicIPAddress` remove `name`, `properties`, `type`, and `sku`.
    - `dnsSettings` because the `dnsServers` property is empty.
-   - In `publicIPAddress` remove `name`, `properties`, `type: 'Microsoft.Network/publicIPAddresses'`, and `sku`.
-   - Remove `kind`.
-   - Remove from `ipConfigurations` the `id`, `etag`, and `provisioningState` properties.
 
 > [!TIP]
 > When you work with your own templates, you'll need to determine whether there are any properties that should be removed like you've done here.
