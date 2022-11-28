@@ -22,15 +22,15 @@ Manage identities and governance in Azure (15-20%)
 
 - Manage Azure Active Directory objects
 
-   - Create users and groups
+  - Create users and groups
 
-   - Manage user and group properties
+  - Manage user and group properties
 
-   - Manage device settings
+  - Manage device settings
 
-   - Perform bulk user updates
-   
-   - Manage guest accounts
+  - Perform bulk user updates
+
+  - Manage guest accounts
 
 ## Prerequisites
 

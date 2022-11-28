@@ -1,4 +1,4 @@
-In the previous unit, recall that you need to explore Azure native monitoring tools for your company. To further your knowledge, you'll need to know how to provision a Log Analytics workspace with the right permissions model. Then you'll configure Azure Monitor VM Insights to complete the process.
+From the previous unit, recall that you need to explore Azure native monitoring tools for your company. To further your knowledge, you'll need to know how to provision a Log Analytics workspace with the right permissions model. Then you'll configure Azure Monitor VM Insights to complete the process.
 
 In this unit, you'll:
 
@@ -8,7 +8,7 @@ In this unit, you'll:
 
 ## Create and configure a Log Analytics workspace
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), search for and select **Log Analytics workspaces**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), search for and select **Log Analytics Workspace**.
 
 1. Select **Create**.
 
@@ -103,7 +103,7 @@ In this unit, you'll:
 
 1. Experiment with different settings by moving from **Avg**, to **Min**, to **Max**, and so on. The virtual machines were created only a few minutes ago, so there might not be much data generated.
 
-1. Select **Log Events**. You might need to expand the property panel on the right.
+1. Select **Log Events**. You might need to expand the Property panel on the right.
 
     :::image type="content" source="../media/3-log-events.png" alt-text="Screenshot of where Log Events show up within Azure Monitor VM Insights." lightbox="../media/3-log-events.png":::
 

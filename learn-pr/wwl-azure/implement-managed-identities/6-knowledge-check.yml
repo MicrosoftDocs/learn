@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/21/2021
+  ms.date: 11/22/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: "Shared lifecycle with an Azure resource"
       isCorrect: false
-      explanation: "That's incorrect. User-assigned identities have an independent lifecycle from the resources they are associated with."
+      explanation: "That's incorrect. User-assigned identities have an independent lifecycle from the resources they're associated with."
     - content: "Independent life-cycle"
       isCorrect: true
-      explanation: "That's correct. User-assigned identities exist independently from the resources they are associated with and must be explicitly deleted."
+      explanation: "That's correct. User-assigned identities exist independently from the resources they're associated with and must be explicitly deleted."
     - content: "Can only be associated with a single Azure resource"
       isCorrect: false
       explanation: "That's incorrect. The same user-assigned managed identity can be associated with more than one Azure resource."
@@ -30,10 +30,10 @@ quiz:
     choices:
     - content: "Oauth 2.0"
       isCorrect: false
-      explanation: "That's incorrect. Oauth 2.0 is a protocol that can be used to acquire a token, but is not the basis for the token."
+      explanation: "That's incorrect. Oauth 2.0 is a protocol that can be used to acquire a token, but isn't the basis for the token."
     - content: "Service principal"
       isCorrect: true
       explanation: "That's correct. The token is based on the managed identities for Azure resources service principal."
     - content: "Virtual machine"
       isCorrect: false
-      explanation: "That's incorrect. The virtual machine may be assigned a managed identity, but is not the basis for the token."
+      explanation: "That's incorrect. The virtual machine may be assigned a managed identity, but isn't the basis for the token."

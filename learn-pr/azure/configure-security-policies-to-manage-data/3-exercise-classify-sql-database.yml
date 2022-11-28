@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Classify an Azure SQL Database
   description: Exercise - Classify an Azure SQL Database
   ms.date: 09/30/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: VanMSFT
+  ms.author: vanto
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

@@ -80,4 +80,4 @@ Azure hosts the instance with a domain name based on the DNS label you specified
 az container show --resource-group mygroup --name myinstance --query ipAddress.fqdn
 ```
 
-You can access the application using a web browser. Navigate to the URL returned by this command.
+You can access the application using a web browser. You can navigate to the URL returned by this command; we'll learn how in the next unit.

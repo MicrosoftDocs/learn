@@ -1,4 +1,4 @@
-This unit describes how you can use cost analysis, with several different default ways to view cost and usage information. There are also many ways you can customize cost views for deeper analysis. This unit also covers how to save and share cost analysis views. Lastly, you'll learn how to export data from cost analysis for use elsewhere.
+This unit describes how you can use cost analysis, with several different default ways to view cost and usage information. There are also many ways you can customize cost views for deeper analysis. This unit also covers how to save and share cost-analysis views. Lastly, you'll learn how to export data from cost analysis for use elsewhere.
 
 **Accumulated cost view:** This view represents the predefined cost analysis view configuration. Each view includes date range, granularity, group by, and filter settings. The default view shows accumulated costs for the current billing period, but you can change to other built-in views. This view answers questions like: How much have I spent so far this month? Will I stay within my budget?
 
@@ -18,7 +18,7 @@ Let's look at each cost view in more detail.
 
 ![Screenshot of Cost Analysis panel with callout around the Built-In view options with Cost By Service selected.](../media/3-customized-cost-views.png)
 
-**Accumulated costs:** By default, cost analysis shows data for the current month. Use the date selector to switch to common date ranges quickly. Examples include the last seven days, the last month, the current year, or a custom date range. Pay-as-you-go subscriptions also include date ranges based on your billing period (which isn't bound to the calendar month), like the current billing period or last invoice. Use the  **PREVIOUS** and **NEXT** links at the top of the menu to jump to the previous or next period, respectively. For example, **PREVIOUS** will switch from the **Last 7 days** to **8-14 days ago** or **15-21 days ago**.
+**Accumulated costs:** By default, cost analysis shows data for the current month. You can use the date selector to switch to common date ranges quickly. Examples include the last seven days, the last month, the current year, or a custom date range. Pay-as-you-go subscriptions also include date ranges based on your billing period (which isn't bound to the calendar month), like the current billing period or last invoice. Use the **PREVIOUS** and **NEXT** links at the top of the menu to jump to the previous or next period, respectively. For example, **PREVIOUS** will switch from the **Last 7 days** to **8-14 days ago** or **15-21 days ago**.
 
 Cost analysis shows **accumulated** costs by default. Accumulated costs include all costs for each day plus the previous days, for a constantly growing view of your daily aggregate costs. This view is optimized to show how you're trending against a budget for the selected time range.
 
@@ -28,7 +28,7 @@ Cost analysis shows **accumulated** costs by default. Accumulated costs include 
 
 This view answers the question: Which resources cost the most so far this month?
 
-**Daily costs:** The daily view showing costs for each day. The daily view doesn't show a growth trend. The view is designed to show irregularities as cost spikes or dips from day to day. If you've selected a budget, the daily view also shows an estimate of your daily budget.
+**Daily costs:** This view shows the costs for each day. The daily view doesn't show a growth trend. The view is designed to show irregularities as cost spikes or dips from day to day. If you've selected a budget, the daily view also shows an estimate of your daily budget.
 
 When your daily costs are consistently above the estimated daily budget, you can expect you'll surpass your monthly budget. The estimated daily budget is a means to help you visualize your budget at a lower level. If you have fluctuations in daily costs, then the estimated daily budget comparison to your monthly budget is less precise.
 
@@ -48,7 +48,7 @@ Cost Management has many grouping and filtering options. In this module's summar
 
 ## Actual versus amortized cost
 
-Let's look at Azure service costs for the current month. You should see a graph like the following example.
+Let's look at Azure service costs for the current month. You should see a graph like the following example:
 
 ![Screenshot of grouped daily accumulated view showing example Azure service costs for last month.](../media/3-grouped-daily-accum-view.png)
 
@@ -64,7 +64,7 @@ Due to the change in how costs are represented, it's important to note that actu
 
 Customizing a view in cost analysis is easy. Just pick the date range you need, group the data to see a breakdown, and then choose the visualization that you want. **Pin** your view to a dashboard for quick access, and then share the dashboard with your team so everyone can track costs from a single place.
 
-![Screenshot of the Cost Analysis view with a callout highlighting the pin icon in the uppoer right-hand corner to pin to the dashboard.](../media/3-save-share-view01.png)
+![Screenshot of the Cost Analysis view with a callout highlighting the pin icon in the upper right-hand corner to pin to the dashboard.](../media/3-save-share-view01.png)
 
 You can also share a direct link to your customized view so others can copy and personalize it for themselves. To share a link to a view, select **Share**.
 
@@ -72,13 +72,13 @@ Both sharing options offer flexibility, but you need something more convenient. 
 
 People with Cost Management Contributor (or greater) access can create shared views. You can create up to 50 shared views per scope.
 
-Anyone can save up to 50 private views, even if they only have read access. These views cannot be shared with others directly in cost analysis, but they can be pinned to a dashboard or shared via URL so others can save a copy.
+Anyone can save up to 50 private views, even if they only have read access. You can't share these views with others directly in cost analysis, but you can pin them to a dashboard or share them via URL so others can save a copy.
 
 You can access all views from the view menu. You'll see your private views first, then views shared across the scope, and lastly the built-in views that are always available.
 
 ![Screenshot of the Cost Analysis view with a callout highlighting a dropdown to select private, shared and built-in views.](../media/3-cost-analysis-views.png)
 
-Do you need to share your view outside of the portal? You can download the charts as an image, and copy it into an email or presentation to share it with your team, for example. There's a slightly redesigned **Export** menu that offers a **PNG** option when viewing charts. You can't download the table view as an image.
+Do you need to share your view outside of the portal? You can download the charts as an image and copy that image into an email or presentation to share it with your team, for example. There's a slightly redesigned **Download** menu that offers a **PNG** option when viewing charts. You can't download the table view as an image.
 
 The filter bar shows both the:
 
@@ -89,7 +89,7 @@ The filter bar shows both the:
 
 Let's start by creating a daily export of your cost and usage data.
 
-Go to **Subscriptions**, select a subscription from the list, and in the menu pane under **Cost Management**, select **Cost analysis**. At the top of the Cost analysis pane, select **Settings**. On the **Configuration** pane, select **Exports**, and then select an export option. For example, select  **Schedule export**.
+Go to **Subscriptions**, select a subscription from the list, and in the menu pane under **Cost Management**, select **Cost analysis**. At the top of the Cost analysis pane, select **Configure subscription**. On the **Configuration** pane, select **Exports**, and then select an export option. For example, select  **Schedule export**.
 
 Besides subscriptions, you can create exports on resource groups, accounts, departments, and enrollments.
 
@@ -105,9 +105,9 @@ Initially, it can take 12-24 hours before the export runs. However, it can take 
 
 ### Export schedule
 
-Scheduled exports are affected by the time and day of week of when you initially create the export. When you create a scheduled export, the export runs at the same frequency for each subsequent export occurrence. For example, for a daily export of month-to-date costs export set at a daily frequency, the export runs daily. Similarly for a weekly export, the export runs every week on the same day as it is scheduled. The exact delivery time of the export is not guaranteed, and the exported data is available within four hours of run time.
+Scheduled exports are affected by the time and day of week of when you initially create the export. When you create a scheduled export, the export runs at the same frequency for each subsequent export occurrence. For example, for a daily export of month-to-date costs export set at a daily frequency, the export runs daily. Similarly for a weekly export, the export runs every week on the same day as it's scheduled. The exact delivery time of the export isn't guaranteed, and the exported data is available within four hours of run time.
 
-Each export creates a new file, so older exports are not overwritten.
+Each export creates a new file, so older exports aren't overwritten.
 
 Select an export option:
 
@@ -124,10 +124,10 @@ In the export list, select the storage account name. On the storage account page
 
 ![Screenshot of storage account page showing example information and link to Open in Explorer.](../media/3-storage-account-page.png)
 
-In Storage Explorer, navigate to the container that you want to open, and select the folder corresponding to the current month. A list of CSV files appears. Select one, then select **Open**.
+In Storage Explorer, navigate to the container that you want to open and select the folder corresponding to the current month. A list of CSV files appears. Select one, then select **Open**.
 
 ![Screenshot of example information shown in Storage Explorer.](../media/3-storage-explorer.png)
 
-The file opens with the program or application you've set to open CSV file extensions. Here's an example in Excel.
+The file opens with the program or application you've set to open CSV file extensions. Here's an example in Excel:
 
 ![Screenshot of example exported CSV data shown in Excel.](../media/3-example-export-data.png)

@@ -4,8 +4,8 @@ Now that you've completed this module, you can:
 
 - Understand how to calculate RUs from your current environment vCore count.
 - Know the pre-migration steps needed to have a successful migration.
-- Understand your Azure Cosmos DB API for MongoDB migration online options.
-- Understand your Azure Cosmos DB API for MongoDB migration offline options.
+- Understand your Azure Cosmos DB for MongoDB migration online options.
+- Understand your Azure Cosmos DB for MongoDB migration offline options.
 
 ## Learn more
 
@@ -18,4 +18,4 @@ For more information about the subjects discussed in this module, see:
 - [Tutorial: Migrate MongoDB to Azure Cosmos DB's API for MongoDB offline using MongoDB native tools](/azure/cosmos-db/mongodb/tutorial-mongotools-cosmos-db)
 - [Partitioning and horizontal scaling in Azure Cosmos DB](/azure/cosmos-db/partitioning-overview)
 - [Request Units in Azure Cosmos DB](/azure/cosmos-db/request-units)
-- [Migrate data from MongoDB to an Azure Cosmos DB API for MongoDB account by using Azure Databricks](/azure/cosmos-db/mongodb/migrate-databricks)
+- [Migrate data from MongoDB to an Azure Cosmos DB for MongoDB account by using Azure Databricks](/azure/cosmos-db/mongodb/migrate-databricks)

@@ -3,7 +3,7 @@ uid: learn.azure.use-git-from-vs-code
 metadata:
   title: Use Git version-control tools in Visual Studio Code
   description: Utilize the tight integration of Visual Studio Code with the Git source-control management system.
-  ms.date: 3/18/2020
+  ms.date: 10/19/2022
   author: gregvanl
   ms.author: gregvanl
   ms.topic: interactive-tutorial

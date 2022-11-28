@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-azure-cosmos-db-sql-api.what-is
-title: What is Azure Cosmos DB SQL API
+title: What is Azure Cosmos DB for NoSQL
 metadata:
-  title: What is Azure Cosmos DB SQL API
-  description: "What is Azure Cosmos DB SQL API"
-  ms.date: 09/02/2022
+  title: What is Azure Cosmos DB for NoSQL
+  description: "What is Azure Cosmos DB for NoSQL"
+  ms.date: 10/13/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-microsoft-datacenters.explore-security-and-privacy-in-the-microsoft-cloud
+title: Explore security and privacy in the Microsoft Cloud
+metadata:
+  title: Explore security and privacy in the Microsoft Cloud
+  description: TBD
+  ms.date: 10/01/2022
+  author: TBD
+  ms.author: v-jenhor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 11
+content: |
+  [!include[](includes/7-explore-security-and-privacy-in-the-microsoft-cloud.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following statements does *not* reflect Microsoft policy for customer data privacy on the Microsoft Cloud?"
+    choices:
+    - content: "Customers own their own data in the Microsoft Cloud."
+      isCorrect: false
+      explanation: "Incorrect. This statement is true and reflects Microsoft policy."
+    - content: "Microsoft support receives the least privilege required to complete the task."
+      isCorrect: false
+      explanation: "Incorrect. This statement is true and reflects Microsoft policy."
+    - content: "Microsoft support can access user or administrator accounts on customer VMs."
+      isCorrect: true
+      explanation: "Correct. This statement is not a Microsoft policy. Microsoft support personnel can't access user or administrator accounts on customer VMs."

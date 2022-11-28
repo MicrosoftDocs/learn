@@ -4,11 +4,9 @@ Now that you've completed this module, you should be able to:
 
 - Describe statistics in Azure Database for PostgreSQL.
 - Assess query performance with the Query Store.
-- Visualize performance with Query Performance Insight.
 
 ## Resources
 
 To find more information about the topics covered in this module, see:
 
-[Monitor performance with the Query Store](/azure/postgresql/concepts-query-store)
-[Query Performance Insight](/azure/postgresql/concepts-query-performance-insight)
+[Monitor performance with the Query Store](/azure/postgresql/concepts-query-store) 

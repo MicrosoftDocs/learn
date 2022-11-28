@@ -4,8 +4,9 @@ metadata:
   title: Deliver consistent performance with Azure SQL
   description: Deliver consistent performance with Azure SQL
   ms.date: 08/05/2020
-  author: rgward
-  ms.author: bobward
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deliver consistent performance with Azure SQL

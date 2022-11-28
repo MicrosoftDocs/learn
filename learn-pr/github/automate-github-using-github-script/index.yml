@@ -3,7 +3,7 @@ uid: learn.github.automate-github-using-github-script
 metadata:
   title: "Automate GitHub by using GitHub Script"
   description: Learn to interact with the GitHub API from GitHub Actions by using GitHub Script.
-  ms.date: 07/08/2022
+  ms.date: 10/18/2022
   author: a-a-ron
   ms.author: aastewar
   ms.topic: interactive-tutorial

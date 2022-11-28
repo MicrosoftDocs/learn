@@ -11,7 +11,8 @@ As part of the resource creation, these resources are created for you:
 
 1. Open Visual Studio Code.
 1. To open the **Azure** pane on the left, select <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>.
-1. In the **App Service** section, right-click the sandbox subscription name. Select **Create New Web App (Advanced)**. By selecting the advanced creation process, you can select _all_ your choices.
+1. In the **Resources** section, right-click the sandbox subscription name. 
+1. Right-click on **App Services** and select **Create New Web App (Advanced)**. By selecting the advanced creation process.
 1. Use the following table to answer the creation steps:
 
     | Step | Value|
@@ -25,7 +26,7 @@ As part of the resource creation, these resources are created for you:
     |Pricing tier|Confirm the tier is Free.|
     |Application Insights|Create a new Application Insights resource and select the default name.|
 
-1. When you're finished, the new web app appears in the **App Service** section of the **Azure** pane on the left.
+1. When you're finished, the new web app appears in the **Resources > App Service** node of the **Azure** pane on the left.
 1. Expand the web app to see the subnodes:
 
     |Subnode|Purpose|
@@ -35,6 +36,7 @@ As part of the resource creation, these resources are created for you:
     |Deployments|Shows a list of deployments. Deployments are covered in the next exercise of this module.|
     |Files| Files deployed to your resource. Before you deploy your app, the `hostingstart.html` file is returned for any requests.|
     |Logs|This location is where your running app's logs are stored. You might look at these logs if you deploy an app that requires environment variables or npm modules to run but they aren't correctly specified. The app won't start up correctly.|
+    |WebJobs|WebJobs are not available for Linus Apps.|
     |Deployment slots|*This feature isn't used in this module.*|
 
 1. Expand the **Files** section to see the **hostingstart.html** file.

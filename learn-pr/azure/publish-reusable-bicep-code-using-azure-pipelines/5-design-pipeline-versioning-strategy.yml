@@ -6,8 +6,8 @@ metadata:
   title: Design a pipeline and versioning strategy
   description: Learn about how to version your reusable Bicep code within a pipeline, and whether to use a single pipeline or multiple pipelines.
   ms.date: 03/29/2022
-  author: pazdedav
-  ms.author: dapazd
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

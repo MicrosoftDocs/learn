@@ -4,8 +4,11 @@ metadata:
   title: Azure RTOS ThreadX memory management
   description: Learn about the memory management options that are available in Azure RTOS ThreadX.
   ms.date: 01/27/2022
-  author: EdLamie
-  ms.author: liydu
+  author: timlt
+  ms.author: timlt
+  ms.reviewer: liydu
+  manager: lizross
+  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure RTOS ThreadX memory management

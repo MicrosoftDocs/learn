@@ -6,8 +6,11 @@ metadata:
   title: How Azure IoT Central works
   description: Learn how Azure IoT Central works.
   ms.date: 07/21/2021
-  author: whitneylampkin
-  ms.author: wlampkin
+  author: asergaz
+  ms.author: sergaz
+  ms.reviewer: adchukwu
+  manager: lizross
+  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

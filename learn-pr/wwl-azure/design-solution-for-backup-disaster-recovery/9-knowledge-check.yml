@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/16/2022
+  ms.date: 11/18/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -52,10 +52,10 @@ quiz:
       explanation: "Correct. Active geo-replication can fail over to a secondary database if your primary database fails or needs to be taken offline."
   - content: "‎To address the company’s concern with accidental data deletion, which of these solutions is best?"
     choices:
-    - content: "Disk caching"
+    - content: "Enable disk caching"
       isCorrect: false
       explanation: "Incorrect. Disk caching is about optimizing read and write access to the VHD files."
-    - content: "Soft delete"
+    - content: "Enable soft delete"
       isCorrect: true
       explanation: "Correct. With soft delete you can specify a retention period. The data is retained during the retention period and can be recovered."
     - content: "Add a resource lock to the storage account"

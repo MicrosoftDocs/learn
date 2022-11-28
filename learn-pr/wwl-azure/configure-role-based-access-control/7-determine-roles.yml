@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-role-based-access-control.determine-rbac-roles
-title: Determine role-based access control roles
+title: Review fundamental Azure RBAC roles
 metadata:
-  title: Determine role-based access control roles
-  description: "Determine role-based access control roles"
-  ms.date: 09/19/2022
+  title: Review fundamental Azure RBAC roles
+  description: "Review fundamental Azure RBAC roles"
+  ms.date: 11/22/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/7-determine-roles.md)]

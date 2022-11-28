@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/21/2022
+  ms.date: 11/08/2022
   author: wwlpublish
   ms.author: caroline
   ms.topic: interactive-tutorial
@@ -16,17 +16,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which storage engines does Azure Database for MySQL Support?"
+  - content: "Which storage engines does Azure Database for MySQL support?"
     choices:
-    - content: "Blackhole and Innodb"
+    - content: "Blackhole and InnoDB"
       isCorrect: false
-      explanation: "Incorrect. Azure Database for MySQL doesn't support Blackhole storage engine."
-    - content: "MyISAM and Innodb"
+      explanation: "Incorrect. Azure Database for MySQL doesn't support the Blackhole storage engine."
+    - content: "MyISAM and InnoDB"
       isCorrect: false
       explanation: "Incorrect. Azure Database for MySQL doesn't support the MyISAM storage engine."
-    - content: "Memory and Innodb"
+    - content: "Memory and InnoDB"
       isCorrect: true
-      explanation: "Correct. Azure Database for MySQL supports Innodb and Memory storage engines."
+      explanation: "Correct. Azure Database for MySQL supports InnoDB and Memory storage engines."
   - content: "If you don't specify a storage engine when creating a table, what happens?"
     choices:
     - content: "The table will not be created."
@@ -49,7 +49,7 @@ quiz:
     - content: "CREATE TABLESPACE"
       isCorrect: false
       explanation: "Incorrect. you don't use the CREATE TABLESPACE statement to specify the storage engine for a table."
-  - content: "What is best practice when creating tables in Innodb?"
+  - content: "What is best practice when creating tables in InnoDB?"
     choices:
     - content: "All tables are created in the system tablespace."
       isCorrect: false
@@ -64,10 +64,10 @@ quiz:
     choices:
     - content: "To improve performance."
       isCorrect: false
-      explanation: "Incorrect. Although write-ahead logging can improve performance, it isn't its primary purpose."
+      explanation: "Incorrect. Although write-ahead logging can improve performance, that isn't its primary purpose."
     - content: "To recover data in the event of a crash."
       isCorrect: true
       explanation: "Correct. The primary purpose of the write-ahead log is to recover data in the event of a crash."
     - content: "To group changes together and write them to disk in one batch."
       isCorrect: false
-      explanation: "Incorrect. The write-ahead log improves performance by writing changes first to the log sequentially and only then writing changes to disk in batches, but isn't its primary purpose."
+      explanation: "Incorrect. The write-ahead log improves performance by writing changes first to the log sequentially and only then writing changes to disk in batches, but this process isn't its primary purpose."

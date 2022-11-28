@@ -12,9 +12,9 @@ The in-memory state is the information that the application doesn't need to look
 
 There are two types of application states. The first type is the *ephemeral state*, which isn't persistent and will vanish as soon as the application is closed.
 
-Containers have an ephemeral state because all the data that's stored within their bounds is instantly lost when a container is deleted. Some applications can work with that alone, because they can regenerate the state from other sources and don't need the state to be stored locally. Those applications are called *:::no-loc text="stateless"::: applications*.
+Containers have an ephemeral state. All of the data that's stored within their bounds is instantly lost when a container is deleted. Some applications can work with that alone, because they can regenerate the state from other sources and don't need the state to be stored locally. Those applications are called *:::no-loc text="stateless"::: applications*.
 
-In contrast, all the state that isn't ephemeral is called *persistent state*. It continues to exist after the life cycle of a container. Most container technologies that we use (like Docker) have the concept of *volume*, an in-disk location where the state exists. So, even if you remove the container and then turn it back on, the state remains stored in a safe location and can be used once again.
+In contrast, all the state that isn't ephemeral is called *persistent state*. It continues to exist after the life cycle of a container. Most container technologies that we use (like Docker) have the concept of *volume*, an in-disk location where the state exists. Even if you remove the container and then turn it back on, the state remains stored in a safe location and can be used again.
 
 Applications that rely on an external state to be retrieved are called *:::no-loc text="stateful"::: applications*.
 
@@ -39,7 +39,7 @@ All database providers are stateful applications. If you're deploying a database
 
 ## Best practices for state handling
 
-State is present in the vast majority of applications. However, a best practice for handling state is to not deal with it at all.
+State is present in most applications. However, a best practice for handling state is to not deal with it at all.
 
 You design any efficient application with the goal of making it highly available and scalable. State goes in the opposite direction. Despite the offers of storage providers and the ease of deployment and use, state doesn't scale easily. It's not highly available either.
 

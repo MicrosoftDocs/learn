@@ -28,9 +28,10 @@ Bicep can also help to validate the input that users provide through _parameter 
 
 One of the goals of defining your infrastructure as code is to make your templates reusable and flexible. You don't want to create single-purpose templates that have a hard-coded configuration. On the other hand, it doesn't make sense to expose all resource properties as parameters. Create templates that work for your specific business problem or solution, not generic templates that need to work for every situation. You also don't want to have so many parameters that it takes a long time to enter the values before the template can be deployed. This is particularly important when you configure the SKUs and instance counts of resources.
 
-When you're planning a template, consider how you'll balance flexibility with simplicity. There are two common ways to provide parameters in templates: 
-* Provide free-form configuration options.
-* Use predefined configuration sets. 
+When you're planning a template, consider how you'll balance flexibility with simplicity. There are two common ways to provide parameters in templates:
+
+- Provide free-form configuration options.
+- Use predefined configuration sets.
 
 Let's consider both approaches by using an example Bicep file that deploys a storage account and an Azure App Service plan.
 
@@ -38,7 +39,7 @@ Let's consider both approaches by using an example Bicep file that deploys a sto
 
 Both the App Service plan and the storage account require that you specify their SKUs. You might consider creating a set of parameters to control each of the SKUs and instance counts for the resources:
 
-:::image type="content" source="../media/3-free-form-configuration.png" alt-text="Diagram showing a user entering a parameter, which then directly influences the resource definition." border="false":::
+:::image type="icon" source="../media/3-free-form-configuration.png" border="false":::
 
 Here's how this looks in Bicep:
 
@@ -48,7 +49,7 @@ This format provides the most flexibility, because anyone who uses the template 
 
 > [!TIP]
 > Think about the people who will work with your template. Seeing dozens of parameters might overwhelm them and cause them to abandon using your template.
-> 
+>
 > You might be able to reduce the number of parameters by grouping related parameters in the form of a parameter object, like this:
 >
 > ```bicep
@@ -64,7 +65,7 @@ This format provides the most flexibility, because anyone who uses the template 
 
 Alternatively, you could provide a _configuration set_: a single parameter, whose value is a restricted list of allowed values, such as a list of environment types. When users deploy your template, they need to select a value for only this one parameter. When they select a value for the parameter, the deployment automatically inherits a set of configuration:
 
-:::image type="content" source="../media/3-configuration-map.png" alt-text="Diagram showing a user entering a parameter. The resource definition takes its value from a configuration map variable that's based on the parameter value." border="false":::
+:::image type="icon" source="../media/3-configuration-map.png" border="false":::
 
 The parameter definition looks like this:
 

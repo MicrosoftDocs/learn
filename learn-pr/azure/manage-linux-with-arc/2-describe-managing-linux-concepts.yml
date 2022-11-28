@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-linux-with-arc.describe-managing-linux-concepts
+title: Describe concepts around managing Linux with Azure Arc
+metadata:
+  title: Describe concepts around managing Linux with Azure Arc
+  description: Describe how to manage Linux systems with Azure Arc and the cross-team coordination required to deploy the solution.
+  ms.date: 10/10/2022
+  author: johnmarco
+  ms.author: johnmarc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-describe-managing-linux-concepts.md)]

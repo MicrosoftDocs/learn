@@ -6,10 +6,10 @@ In this module, you'll learn about the *Operational Excellence* pillar of the Az
 
 By the end of this module, you'll be able to:
 
-- Apply modern practices to design, build, and orchestrate resources on Azure
-- Gain operational insights by using monitoring and analytics
-- Reduce effort and error by using automation
-- Identify issues and improve quality in your application by using tests
+- Apply modern practices to design, build, and orchestrate resources on Azure.
+- Gain operational insights by using monitoring and analytics.
+- Reduce effort and error by using automation.
+- Identify issues and improve quality in your application by using tests.
 
 ## Prerequisites
 

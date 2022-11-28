@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.write-scripts-for-azure-cosmos-db-sql-api
 metadata:
-  title: Write management scripts for Azure Cosmos DB SQL API
-  description: "Learn how to manage Azure Cosmos DB SQL API accounts, databases, and containers using the Azure CLI."
-  ms.date: 08/23/2022
+  title: Write management scripts for Azure Cosmos DB for NoSQL
+  description: "Learn how to manage Azure Cosmos DB for NoSQL accounts, databases, and containers using the Azure CLI."
+  ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Write management scripts for Azure Cosmos DB SQL API
-summary: Learn how to manage Azure Cosmos DB SQL API accounts, databases, and containers using the Azure CLI.
+title: Write management scripts for Azure Cosmos DB for NoSQL
+summary: Learn how to manage Azure Cosmos DB for NoSQL accounts, databases, and containers using the Azure CLI.
 abstract: |
   After completing this module, you'll be able to:
   - View arguments, groups, and subgroups for a specific CLI command

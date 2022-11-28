@@ -9,5 +9,8 @@ Now that you have completed this module, you can:
 
 For more information about the topics discussed in this module, see:
 
-- [How to write stored procedures, triggers, and user-defined functions in Azure Cosmos DB](/azure/cosmos-db/sql/how-to-write-stored-procedures-triggers-udfs)
-- [User-defined functions (UDFs) in Azure Cosmos DB](/azure/cosmos-db/sql/sql-query-udfs)
+- [How to write stored procedures, triggers, and user-defined functions in Azure Cosmos DB][/azure/cosmos-db/sql/how-to-write-stored-procedures-triggers-udfs]
+- [User-defined functions (UDFs) in Azure Cosmos DB][/azure/cosmos-db/sql/sql-query-udfs]
+
+[/azure/cosmos-db/sql/how-to-write-stored-procedures-triggers-udfs]: /azure/cosmos-db/sql/how-to-write-stored-procedures-triggers-udfs
+[/azure/cosmos-db/sql/sql-query-udfs]: /azure/cosmos-db/sql/sql-query-udfs

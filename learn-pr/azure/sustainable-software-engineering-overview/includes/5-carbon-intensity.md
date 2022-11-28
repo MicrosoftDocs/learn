@@ -56,6 +56,6 @@ Several services allow you to obtain real-time data regarding the current carbon
 
 - [Carbon Intensity API](https://carbonintensity.org.uk/): Free resource for carbon intensity data in the UK.
 
-- [ElectricityMap](https://api.electricitymap.org/): Free for non-commercial single country use, premium solutions for commercial and multi-country access.
+- [ElectricityMap](https://api.electricitymap.org/): Free for non-commercial single country/region use, premium solutions for commercial and multi-country/region access.
 
 - [WattTime](https://www.watttime.org/): Free for a single grid region, premium solutions for multi-grid, and real-time marginal emissions.

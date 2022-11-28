@@ -1,6 +1,6 @@
 PowerShell lets you write commands and execute them immediately. This is known as **interactive mode**.
 
-Recall that the overall goal in the Customer Relationship Management (CRM) example is to create three test environments containing Virtual Machines. You will use resource groups to ensure the VMs are organized into separate environments: one for unit testing, one for integration testing, and one for acceptance testing. You only need to create the resource groups once, so using the PowerShell interactive mode in this use case is a good choice.
+Recall that the overall goal in the Customer Relationship Management (CRM) example is to create three test environments containing Virtual Machines. You'll use resource groups to ensure the VMs are organized into separate environments: one for unit testing, one for integration testing, and one for acceptance testing. You only need to create the resource groups once, so using the PowerShell interactive mode in this use case is a good choice.
 
 When you enter a command into PowerShell, PowerShell matches the command to a *cmdlet*, and PowerShell then performs the requested action. We'll look at some common commands you can use, then we'll look into installing the Azure support for PowerShell.
 
@@ -10,7 +10,7 @@ A PowerShell command is called a **cmdlet** (pronounced "command-let"). A cmdlet
 
 The base PowerShell product ships with cmdlets that work with features such as sessions and background jobs. You can add modules to your PowerShell installation to get cmdlets that manipulate other features. For example, there are third-party modules to work with ftp, administer your operating system, access the file system, and so on.
 
-Cmdlets follow a verb-noun naming convention; for example, `Get-Process`, `Format-Table`, and `Start-Service`. There is also a convention for verb choice: "get" to retrieve data, "set" to insert or update data, "format" to format data, "out" to direct output to a destination, and so on.
+Cmdlets follow a verb-noun naming convention; for example, `Get-Process`, `Format-Table`, and `Start-Service`. There's also a convention for verb choice: "get" to retrieve data, "set" to insert or update data, "format" to format data, "out" to direct output to a destination, and so on.
 
 Cmdlet authors are encouraged to include a help file for each cmdlet. The `Get-Help` cmdlet displays the help file for any cmdlet. For example, to get help on the `Get-ChildItem` cmdlet, enter the following statement in a Windows PowerShell session:
 
@@ -26,7 +26,7 @@ Cmdlets are shipped in *modules*. A PowerShell Module is a DLL that includes the
 Get-Module
 ```
 
-This will output something like:
+This command will output something like:
 
 ```Output
 ModuleType Version    Name                                ExportedCommands
@@ -65,7 +65,7 @@ To install the latest Azure Az PowerShell module, run the following commands:
 
 This installs the module for your current user (controlled by the `Scope` parameter).
 
-The command relies on NuGet to retrieve components, so depending on the version you have installed, you might be prompted to download and install the latest version of NuGet.
+The command relies on NuGet to retrieve components, so depending on the version you've installed, you might be prompted to download and install the latest version of NuGet.
 
 ```Output
 NuGet provider is required to continue
@@ -109,7 +109,7 @@ It might also fail by not responding at all. In this case, press <kbd>Ctrl</kbd>
 
 Both behaviors typically indicate that the execution policy is "Restricted", meaning you can't run  modules that you download from an external source, including the PowerShell Gallery. You can check this by running the cmdlet `Get-ExecutionPolicy`. If it returns "Restricted", then do the following:
 
-1. Use the `SetExecutionPolicy` cmdlet to change the policy to "RemoteSigned":
+1. Use the `Set-ExecutionPolicy` cmdlet to change the policy to "RemoteSigned":
 
     ```powershell
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser

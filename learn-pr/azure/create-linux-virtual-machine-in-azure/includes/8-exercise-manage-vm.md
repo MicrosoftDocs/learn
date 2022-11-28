@@ -8,7 +8,7 @@ Port 80 is open on the NSG applied to the subnet. But port 80 is blocked by the 
 
 1. In the left menu pane, under **Settings**, select **Networking**.
 
-1. You should see the NSG rules for the subnet in the top section, and the NSG rules for the network interface in the bottom section of the same tab. In the bottom section, for the NSG rules for the network interface, select **Add inbound port rule**.
+1. You should have the NSG rules for the subnet in the top section, and the NSG rules for the network interface in the bottom section of the same tab. In the bottom section, for the NSG rules for the network interface, select **Add inbound port rule**.
 
     ![Screenshot that shows the "Add inbound port rule" button in the network security group > network interface section.](../media/8-add-rule-network-interface.png)
 

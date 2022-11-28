@@ -16,7 +16,7 @@ A population is what we are interested in or, if you like, in every conceivable 
 
 A sample refers to data that we have available (a subset of the population). For our Titanic dataset, this sample will just be the people who are listed on the official passenger list. For our alternative example, our sample might be every ship captain who we can convince to do a personality test down at our local marina.
 
-it's important to think about whether your sample is representative of (‘like’) the population. For our Titanic example, our sample is so large that it’s probably a very good match. By contrast, for our alternative example, only talking to ship captains at our local marina probably isn’t a good cross-section of the kinds of sailors that exist across the globe. Using data from our local marina might build a model that works well for local captains but isn't very helpful when discussing captains from other countries.
+it's important to think about whether your sample is representative of (‘like’) the population. For our Titanic example, our sample is so large that it’s probably a very good match. By contrast, for our alternative example, only talking to ship captains at our local marina probably isn’t a good cross-section of the kinds of sailors that exist across the globe. Using data from our local marina might build a model that works well for local captains but isn't very helpful when discussing captains from other countries/regions.
 
 ## What is a data error?
 

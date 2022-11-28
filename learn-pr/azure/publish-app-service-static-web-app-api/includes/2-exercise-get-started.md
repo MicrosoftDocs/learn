@@ -4,13 +4,13 @@ Azure Static Web Apps publishes websites to a production environment by building
 
 This module makes it easy for you to create a new repository by using a GitHub template repository. A series of templates is available where each contains a starter app built with a different front-end framework.
 
-1. Navigate to the [create from template page](https://github.com/login?return_to=/MicrosoftDocs/mslearn-staticwebapp/generate?azure-portal=true) for the template repository. If you get a _404 Page Not Found_ error, sign in to GitHub, and try again.
+1. Navigate to the [create from template page](https://github.com/login?return_to=/MicrosoftDocs/mslearn-staticwebapp/generate?azure-portal=true) for the template repository. If you get a *404: Page Not Found* error, sign in to GitHub and try again.
 
-1. If prompted for **Owner**, choose one of your GitHub accounts.
+1. Choose one of your GitHub accounts in the **Owner** drop-down.
 
 1. Name your repository **my-static-web-app**.
 
-1. Select **Create repository from template**.
+1. Select the **Create repository from template** button.
 
 ## Run your app
 
@@ -18,7 +18,7 @@ You just created a GitHub repository named **my-static-web-app** in your GitHub 
 
 1. Open a terminal on your computer.
 
-1. Start by cloning the GitHub repository to your computer.
+1. Start by cloning the GitHub repository to the desired directory on your computer.
 
    ```bash
    git clone https://github.com/<YOUR_GITHUB_USERNAME>/my-static-web-app
@@ -71,9 +71,9 @@ You just created a GitHub repository named **my-static-web-app** in your GitHub 
    ```
 
    > [!NOTE]
-   > If you get the error: Cannot find path - Make sure you have installed Nodejs from: https://nodejs.org You may need to do a **Custom setup** that include installing the, **Add to PATH** option.
+   > If you get a *Cannot find PATH* error, make sure you've installed Node.js from https://nodejs.org. You might need to do a **Custom setup** that includes installing the **Add to PATH** option.
 
-   :::image type="content" source="../media/2-custom-install-nodjs.png" alt-text="Image displaying the custom install of Node.js options.":::
+   :::image type="content" source="../media/2-custom-install-nodjs.png" alt-text="Screenshot displaying the custom install of Node.js options in wizard.":::
 
 1. Finally, run the front-end client application.
 
@@ -148,12 +148,12 @@ Browse to `http://localhost:8080`.
 ::: zone-end
 
 > [!NOTE]
-> In this module's exercises, you will deploy an app without an API. See the _Next steps_ section in the final unit for information about the next module, where you'll deploy an API alongside your app.
+> In this module's exercises, you'll deploy an app without an API. See the *Next steps* section at the end of this module for information about the next module, where you'll deploy an API alongside your app.
 
 Now, stop your running app by pressing <kbd>Ctrl-C</kbd> in the terminal.
 
 ## Next steps
 
-You built your application and now it's running locally in your browser.
+You've built your application, and now it's running locally in your browser.
 
 Next, you'll publish your application to Azure Static Web Apps.

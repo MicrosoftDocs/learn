@@ -30,11 +30,11 @@ Now that we understand what we need to do, let's create our resources and publis
 
 1. To go to the new directory, run `cd mslearn-aks-deployment-pipeline-github-actions`.
 
-1. Execute the **init.sh** file that's located in the root of the project.
+1. Execute the **init.sh** file that's located in the root of the project, by using the command `bash init.sh`.
 
     The init.sh file does the following tasks:
 
-    - Sets up the environment variables `AKS_NAME`, `DNS_NAME`, `RESOURCE_GROUP_NAME`, and `ACR_NAME`. These variables are the names of the resources you will create.
+    - Sets up the environment variables `AKS_NAME`, `DNS_NAME`, `RESOURCE_GROUP_NAME`, and `ACR_NAME`. These variables are the names of the resources you'll create.
     - Creates a new resource group.
     - Creates a new AKS cluster and sets up Kubectl to access it.
     - Creates a new Container Registry repository and links it to your AKS cluster.

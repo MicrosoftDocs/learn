@@ -6,6 +6,9 @@ metadata:
   ms.date: 03/19/2021
   author: dominicbetts
   ms.author: dobett
+  ms.reviewer: avneets
+  manager: lizross
+  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage IoT Central applications with the REST API

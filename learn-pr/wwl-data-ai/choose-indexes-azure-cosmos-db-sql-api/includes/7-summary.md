@@ -8,5 +8,8 @@ Now that you have completed this module, you can:
 
 For more information about the topics discussed in this module, see:
 
-- [Indexing in Azure Cosmos DB - Overview](/azure/cosmos-db/index-overview)
-- [Indexing policies in Azure Cosmos DB](/azure/cosmos-db/index-policy)
+- [Indexing in Azure Cosmos DB - Overview][/azure/cosmos-db/index-overview]
+- [Indexing policies in Azure Cosmos DB][/azure/cosmos-db/index-policy]
+
+[/azure/cosmos-db/index-overview]: /azure/cosmos-db/index-overview
+[/azure/cosmos-db/index-policy]: /azure/cosmos-db/index-policy

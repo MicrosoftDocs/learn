@@ -1,11 +1,11 @@
 If you're using Azure Batch to run intensive tasks, you'll often want to know how the tasks are going.
 
-As the solution architect for the non-profit, you will need ways to access what is happening in Azure Batch. You also need to determine whether the nodes and tasks are working, how far they've progressed, and whether they have produced output files that can be downloaded.
+As the solution architect for the non-profit, you'll need ways to access what is happening in Azure Batch. You also need to determine whether the nodes and tasks are working, how far they've progressed, and whether they have produced output files that can be downloaded.
 
 In this unit, you'll create a job similar to the one in the previous unit, monitor the progress of its tasks, and download the files that the tasks produce as output, all using the Azure CLI.
 
 >[!IMPORTANT]
->The exercises in this module are optional. To complete the exercises, you will need your own Azure subscription.
+>The exercises in this module are optional. To complete the exercises, you'll need your own Azure subscription.
 
 ## Monitor tasks using the CLI
 
@@ -61,6 +61,9 @@ To check that the batch job executed correctly, you can download and examine the
      --output table
     ```
 
+    > [!NOTE]
+    > If you see a `The files of the specified task cannot be accessed as the task state is still active` error message, wait a few minutes, and then run the command again.
+
 1. Run the following command in the Cloud Shell to create a dedicated directory for task outputs and navigate into it:
 
     ```bash
@@ -90,7 +93,7 @@ To check that the batch job executed correctly, you can download and examine the
 
     This output shows different tasks being scheduled onto different nodes as the Batch scheduler processes them.
 
-    Again, we'll leave the Azure Batch account and pool of worker nodes in place for use in the next unit, but we will delete the Batch job. Because the Batch job acts as a container for its Batch tasks, these tasks are also deleted.
+    Again, we'll leave the Azure Batch account and pool of worker nodes in place for use in the next unit, but we'll delete the Batch job. Because the Batch job acts as a container for its Batch tasks, these tasks are also deleted.
 
 1. Delete the Batch job:
 

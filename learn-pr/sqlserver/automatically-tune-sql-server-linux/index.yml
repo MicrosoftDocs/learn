@@ -3,9 +3,10 @@ uid: learn-sqlserver.automatically-tune-sql-server-linux
 metadata:
   title: Automatically tune SQL Server on Linux 
   description: In this module, you will learn how to monitor and optimize the performance of SQL Server on Linux servers.
-  ms.date: 06/11/2019
-  author: markohot
-  ms.author: markohot
+  ms.date: 09/26/2022
+  author: rwestmsft
+  ms.author: randolphwest
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 title: Automatically tune SQL Server on Linux

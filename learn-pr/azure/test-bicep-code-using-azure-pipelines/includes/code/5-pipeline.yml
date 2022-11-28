@@ -14,7 +14,7 @@ variables:
 stages:
 
 - stage: Lint
-  jobs: 
+  jobs:
   - job: LintCode
     displayName: Lint code
     steps:
@@ -24,7 +24,7 @@ stages:
         displayName: Run Bicep linter
 
 - stage: Validate
-  jobs: 
+  jobs:
   - job: ValidateBicepCode
     displayName: Validate Bicep code
     steps:

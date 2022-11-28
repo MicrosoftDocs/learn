@@ -12,9 +12,9 @@ To create the diagnostic settings using the Azure portal, navigate to the Azure 
 
 :::image type="content" source="../media/5-monitor-diagnostics-settings.png" alt-text="Diagram that shows the diagnostic settings options for Azure Cosmos DB.":::
 
-The SQL API log tables are:
+The NoSQL API log tables are:
 - `DataPlaneRequests` - This table logs back-end requests for operations that execute create, update, delete, or retrieve data.
-- `QueryRuntimeStatistics` - This table logs query operations against the SQL API account.
+- `QueryRuntimeStatistics` - This table logs query operations against the NoSQL API account.
 - `PartitionKeyStatistics` - This table logs logical partition key statistics in estimated KB. It's helpful when troubleshooting skew storage.
 - `PartitionKeyRUConsumption` - This table logs every second aggregated RU/s consumption of partition keys. It's helpful when troubleshooting hot partitions.
 - `ControlPlaneRequests` - This table logs Azure Cosmos DB account control data, for example adding or removing regions in the replication settings.

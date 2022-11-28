@@ -6,8 +6,8 @@ metadata:
   title: Configure applications and virtual machines
   description: Learn how to build and deploy applications in a Bicep deployment workflow.
   ms.date: 10/10/2021
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

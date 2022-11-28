@@ -1,4 +1,4 @@
-Authoring a template for an Azure Cosmos DB SQL API account is much like building one from scratch using the portal or from the CLI. There are three primary resources to define in a specific relationship order.
+Authoring a template for an Azure Cosmos DB for NoSQL account is much like building one from scratch using the portal or from the CLI. There are three primary resources to define in a specific relationship order.
 
 ## Empty template
 
@@ -18,7 +18,7 @@ An Azure Resource Manager template is, at its core, a JSON file with a specific 
 
 ## Account resource
 
-The first resource type to define is **Microsoft.DocumentDB/databaseAccounts**. This represents an account that is not specific to any API. If the API is not specified, it is inferred to be a SQL API account.
+The first resource type to define is **Microsoft.DocumentDB/databaseAccounts**. This represents an account that is not specific to any API. If the API is not specified, it is inferred to be a NoSQL API account.
 
 An object for this resource must contain, at a minimum, the following properties:
 

@@ -26,7 +26,7 @@ To create the diagnostics settings using the Azure portal:
 The MongoDB API log categories are:
 
 - **DataPlaneRequests** - This category logs back-end requests for operations that execute create, update, delete, or retrieve data within the account.
-- **MongoRequests** - Logs user-initiated requests from the front end to serve requests to Azure Cosmos DB API for MongoDB. *When you enable this category, make sure to disable DataPlaneRequests*.
+- **MongoRequests** - Logs user-initiated requests from the front end to serve requests to Azure Cosmos DB for MongoDB. *When you enable this category, make sure to disable DataPlaneRequests*.
 - **PartitionKeyStatistics** - This category logs logical shard key statistics in estimated KB. It's helpful when troubleshooting skew storage.
 - **ControlPlaneRequests** - This category logs Azure Cosmos DB account control data, for example adding or removing regions in the replication settings.
 

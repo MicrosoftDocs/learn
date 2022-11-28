@@ -1,20 +1,24 @@
-Application Insights, a feature of Azure Monitor, is an extensible Application Performance Management (APM) service for developers and DevOps professionals. Use it to monitor your live applications. It will automatically detect performance anomalies, and includes powerful analytics tools to help you diagnose issues and to understand what users actually do with your app. It's designed to help you continuously improve performance and usability.
+Application Insights is an extension of Azure Monitor and provides Application Performance Monitoring (also known as “APM”) features.
 
-## How Application Insights works
+## Application Insights feature overview
 
-You install a small instrumentation package (SDK) in your application or enable Application Insights using the Application Insights Agent when [supported](/azure/azure-monitor/app/platforms). The instrumentation monitors your app and directs the telemetry data to an Azure Application Insights Resource using a unique GUID that we refer to as an Instrumentation Key.
+Features include, but not limited to:
 
-You can instrument not only the web service application, but also any background components, and the JavaScript in the web pages themselves. The application and its components can run anywhere - it doesn't have to be hosted in Azure.
+| Feature | Description |
+|:---|:---|
+| Live Metrics | Observe activity from your deployed application in real time with no effect on the host environment. |
+| Availability | Probe your applications external endpoint(s) to test the overall availability and responsiveness over time. |
+| GitHub or Azure DevOps integration | Create GitHub or Azure DevOps work items in context of Application Insights data. |
+| Usage | Reveals which features are popular with users and how users interact and use your application. |
+| Smart Detection | Provides automatic failure and anomaly detection through proactive telemetry analysis. |
+| Application Map | Allows a high level top-down view of the application architecture and at-a-glance visual references to component health and responsiveness. |
+| Distributed Tracing | Search and visualize an end-to-end flow of a given execution or transaction. |
 
-:::image type="content" source="../media/application-insights-overview.png" alt-text="Application Insights instrumentation in your app sends telemetry to your Application Insights resource.":::
-
-In addition, you can pull in telemetry from the host environments such as performance counters, Azure diagnostics, or Docker logs. You can also set up web tests that periodically send synthetic requests to your web service.
-
-All these telemetry streams are integrated into Azure Monitor. In the Azure portal, you can apply powerful analytic and search tools to the raw data. The impact on your app's performance is small. Tracking calls are non-blocking, and are batched and sent in a separate thread.
+More details on availability and Application Map are discussed later in this module.
 
 ## What Application Insights monitors
 
-Application Insights is aimed at the development team, to help you understand how your app is performing and how it's being used. It monitors:
+Application Insights collects Metrics and application Telemetry data, which describe application activities and health, as well as trace logging data.
 
 * **Request rates, response times, and failure rates** - Find out which pages are most popular, at what times of day, and where your users are. See which pages perform best. If your response times and failure rates go high when there are more requests, then perhaps you have a resourcing problem.
 * **Dependency rates, response times, and failure rates** - Find out whether external services are slowing you down.
@@ -27,15 +31,14 @@ Application Insights is aimed at the development team, to help you understand ho
 * **Diagnostic trace logs** from your app - so that you can correlate trace events with requests.
 * **Custom events and metrics** that you write yourself in the client or server code, to track business events such as items sold or games won.
 
-## Use Application Insights
+## Getting started with Application Insights
 
-Application Insights is one of the many services hosted within Microsoft Azure, and telemetry is sent there for analysis and presentation. It is free to sign up, and if you choose the basic pricing plan of Application Insights, there's no charge until your application has grown to have substantial usage.
+Application Insights is one of the many services hosted within Microsoft Azure, and telemetry is sent there for analysis and presentation. It's free to sign up, and if you choose the basic pricing plan of Application Insights, there's no charge until your application has grown to have substantial usage.
 
 There are several ways to get started monitoring and analyzing app performance: 
 
 * **At run time:** instrument your web app on the server. Ideal for applications already deployed. Avoids any update to the code.
-* **At development time:** add Application Insights to your code. Allows you to customize telemetry collection and send additional telemetry.
+* **At development time:** add Application Insights to your code. Allows you to customize telemetry collection and send more telemetry.
 * **Instrument your web pages** for page view, AJAX, and other client-side telemetry.
 * **Analyze mobile app usage** by integrating with Visual Studio App Center.
 * **Availability tests** - ping your website regularly from our servers.
-

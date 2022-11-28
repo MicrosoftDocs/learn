@@ -13,6 +13,9 @@ Complete the following steps **in the SSH session on the Raspberry Pi**:
     :::image type="content" source="../media/app-running.png" alt-text="A screenshot of a terminal with the cheesecave.net app running." lightbox="../media/app-running.png":::
 
     The app runs and displays the current status. Notice **Fan** is *OFF*.
+    
+    > [!NOTE]
+    > If you receive either `No such file or directory` or `cannot execute binary file: Exec format error`, the most likely cause is a 32/64-bit mismatch between Raspberry Pi OS and your target runtime.
 
 1. Type `fan` and press <kbd>Enter</kbd>.
 

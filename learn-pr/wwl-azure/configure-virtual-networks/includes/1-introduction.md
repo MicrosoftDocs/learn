@@ -1,6 +1,6 @@
 ## Scenario
 
-Your company is migrating to Azure. They want to replicate their on-premises network in the cloud. Azure resources must be organized into virtual networks and subnets. Your company requires an Azure IP addressing schema. The schema should provide flexibility, room for growth, and integration with on-premises networks. The schema should also minimize public exposure of systems, and give the organization flexibility in its network design. If not properly designed, systems might not be able to communicate, and additional work will be required to remediate.
+Your company is migrating to Azure. They want to replicate their on-premises network in the cloud. Azure resources must be organized into virtual networks and subnets. Your company requires an Azure IP addressing schema. The schema should provide flexibility, room for growth, and integration with on-premises networks. The schema should also minimize public exposure of systems, and give the organization flexibility in its network design. If not properly designed, systems might not be able to communicate.
 
 You need to configure the necessary virtual networks and subnets, including IP addressing.
 
@@ -18,7 +18,7 @@ Implement and manage virtual networking
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
  -  Describe virtual network features and components.
  -  Identify features and usage cases for subnets and subnetting.

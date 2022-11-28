@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/20/2022
+  ms.date: 11/09/2022
   author: wwlpublish
   ms.author: caroline
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ quiz:
       explanation: "That's correct. If you don't want to place a limit on the number of users connecting, set innodb_thread_concurrency to zero."
     - content: "Thread concurrency doesn't define how many users can connect."
       isCorrect: false
-      explanation: "That's incorrect. Innodb_thread_concurrency is the server parameter that defines how many users can connect."
+      explanation: "That's incorrect. innodb_thread_concurrency is the server parameter that defines how many users can connect."
   - content: "What is an explicit transaction?"
     choices:
     - content: "An explicit transaction includes the START TRANSACTION and COMMIT keywords."
@@ -39,11 +39,11 @@ quiz:
     - content: "An explicit transaction is one with more than one statement that rollback at the same time."
       isCorrect: false
       explanation: "That's incorrect. Explicit transactions may have one or several statements that are rolled back at the same time, but that isn't the definition of an explicit transaction."
-  - content: "When might you consider using Thread Pool?"
+  - content: "When might you consider using a thread pool?"
     choices:
     - content: "Your workload often has between 400 and 600 simultaneous connections, with occasional bursts of high activity."
       isCorrect: true
-      explanation: "That's correct. Thread Pool is suitable for workloads of more than 600 simultaneous connection."
+      explanation: "That's correct. Thread pool is suitable for workloads of more than 600 simultaneous connection."
     - content: "Your workload requires low CPU utilization."
       isCorrect: false
       explanation: "That's incorrect. Thread pool is suitable for workload with high CPU utilization."
@@ -54,10 +54,10 @@ quiz:
     choices:
     - content: "DML statement."
       isCorrect: false
-      explanation: "That's incorrect. **Metadata locking** doesn't prevent data manipulation language (DML) statements acting on affected objects while a transaction is in progress."
+      explanation: "That's incorrect. **Metadata locking** doesn't prevent Data Manipulation Language (DML) statements acting on affected objects while a transaction is in progress."
     - content: "Both DDL and DML statements."
       isCorrect: false
-      explanation: "That's incorrect. **Metadata locking** doesn't prevent data manipulation language (DML) statements acting on affected objects while a transaction is in progress."
+      explanation: "That's incorrect. **Metadata locking** doesn't prevent Data Manipulation Language (DML) statements acting on affected objects while a transaction is in progress."
     - content: "DDL statement."
       isCorrect: true
-      explanation: "That's correct. **Metadata locking** prevents data definition language (DDL) statements acting on affected objects while a transaction is in progress."
+      explanation: "That's correct. **Metadata locking** prevents Data Definition Language (DDL) statements acting on affected objects while a transaction is in progress."

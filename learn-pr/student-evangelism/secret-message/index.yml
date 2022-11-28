@@ -2,7 +2,7 @@
 uid: learn.python-partnership.secret-message
 metadata:
   title: Crack the code and reveal a secret with Python and Visual Studio Code
-  description: You're handed a secret message that needs a code cracker to find the truth. Learn how to solve the code mystery to reveal a location and date to find a hidden treasure. Get a glimpse into the popular Python programming language with this introductory lesson that requires no coding experience.
+  description: You're handed a secret message that you need to decode to find the truth. Learn how to solve the code mystery to reveal a location and date to find a hidden treasure. Get a glimpse into the popular Python programming language with this introductory lesson that requires no coding experience.
   ms.date: 04/14/2021
   author: drguthals
   ms.author: chnoring

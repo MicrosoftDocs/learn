@@ -8,7 +8,7 @@ Azure Container Instances has three restart-policy options:
 
 | Restart policy   | Description |
 | ---------------- | :---------- |
-| **Always** | Containers in the container group are always restarted. This policy makes sense for long-running tasks such as a web server. This is the **default** setting applied when no restart policy is specified at container creation. |
+| **Always** | Containers in the container group are always restarted. This policy makes sense for long-running tasks like a web server. This is the **default** setting applied when no restart policy is specified at container creation. |
 | **Never** | Containers in the container group are never restarted. The containers run one time only. |
 | **OnFailure** | Containers in the container group are restarted only when the process executed in the container fails (when it terminates with a nonzero exit code). The containers are run at least once. This policy works well for containers that run short-lived tasks. |
 
@@ -16,7 +16,7 @@ Azure Container Instances has three restart-policy options:
 
 To see the restart policy in action, create a container instance from the **azuredocs/aci-wordcount** container image and specify the **OnFailure** restart policy. This container runs a Python script that analyzes the text of Shakespeare's Hamlet, writes the 10 most common words to standard output, and then exits.
 
-1. Run this `az container create` command to start the container.
+1. Run this `az container create` command to start the container:
 
     ```azurecli
     az container create \
@@ -29,7 +29,7 @@ To see the restart policy in action, create a container instance from the **azur
 
     Azure Container Instances starts the container and then stops it when its process (a script, in this case) exits. When Azure Container Instances stops a container whose restart policy is **Never** or **OnFailure**, the container's status is set to **Terminated**.
 
-1. Run `az container show` to check your container's status.
+1. Run `az container show` to check your container's status:
 
     ```azurecli
     az container show \
@@ -40,7 +40,7 @@ To see the restart policy in action, create a container instance from the **azur
 
     Repeat the command until it reaches the **Terminated** status.
 
-1. View the container's logs to examine the output. To do so, run `az container logs` like this.
+1. Run `az container logs` as below to view the container's logs to examine the output:
 
     ```azurecli
     az container logs \
@@ -48,7 +48,7 @@ To see the restart policy in action, create a container instance from the **azur
       --name mycontainer-restart-demo
     ```
 
-    You see this.
+    You'll get this output:
 
     ```output
     [('the', 990),

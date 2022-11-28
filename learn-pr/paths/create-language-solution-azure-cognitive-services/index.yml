@@ -3,7 +3,7 @@ uid: learn.wwl.create-language-solution-azure-cognitive-services
 metadata:
   title: Create a Language Understanding solution with Azure Cognitive Services
   description: Create a Language Understanding solution with Azure Cognitive Services
-  ms.date: 08/29/2022
+  ms.date: 10/12/2022
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
@@ -11,12 +11,12 @@ metadata:
 title: Create a Language Understanding solution with Azure Cognitive Services
 prerequisites: |
   Before starting this learning path, you should already have:
-  - Familiarity with Azure and the Azure portal.
-  - Experience programming with C# or Python.
+  *   Familiarity with Azure and the Azure portal.
+  *   Experience programming with C# or Python.
   If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
 summary: |
   Natural language processing (NLP) solutions use language models to interpret the semantic meaning of written or spoken language. You can use the Language Understanding service to build language models for your applications.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/create-language-solution-azure-cognitive-services.svg
 levels:
 - intermediate
 roles:

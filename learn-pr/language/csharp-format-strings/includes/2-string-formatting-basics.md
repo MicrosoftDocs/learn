@@ -92,7 +92,7 @@ When you run the code in the .NET Editor, you'll get the following output:
 Price: ¤123.45 (Save ¤50.00)
 ```
 
-The symbol `¤` is used instead of the symbol for your country's currency. This is a generic symbol used to denote "currency" regardless of the *type* of currency. You'll see this symbol in the .NET Editor because it ignores your current location.
+The symbol `¤` is used instead of the symbol for your country's/region's currency. This is a generic symbol used to denote "currency" regardless of the *type* of currency. You'll see this symbol in the .NET Editor because it ignores your current location.
 
 However, if you executed this code on a computer in the United States that has its Windows Display Language set to English, you'll get the following output:
 
@@ -102,7 +102,7 @@ Price: $123.45 (Save $50.00)
 
 Notice how adding the `:C` to the tokens inside of the curly braces formats the number as currency regardless of whether you use `int` or `decimal`.
 
-## How the user's country and language impact string formatting
+## How the user's country/region and language impact string formatting
 
 What if you execute the preceding code on a computer in France that has its Windows Display Language set to French? In that case, you would get the following output.
 
@@ -110,7 +110,7 @@ What if you execute the preceding code on a computer in France that has its Wind
 Price: 123,45 € (Save 50,00 €)
 ```
 
-This happens because using these string-formatting features is dependent on the computing *culture*. In this context, the term "culture" refers to the country and language of the end user. The *culture code* is a five-character string that computers use to identify the location and language of the end user to ensure certain information, like dates and currency, can be presented properly.
+This happens because using these string-formatting features is dependent on the computing *culture*. In this context, the term "culture" refers to the country/region and language of the end user. The *culture code* is a five-character string that computers use to identify the location and language of the end user to ensure certain information, like dates and currency, can be presented properly.
 
 For example:
 
@@ -120,7 +120,7 @@ For example:
 
 The culture affects the writing system, the calendar that's used, the sort order of strings, and formatting for dates and numbers (like formatting currency).
 
-Unfortunately, making sure your code works correctly on all computers regardless of the country or the end user's language is challenging. This process is known as *localization* (or *globalization*). Localization depends on many factors that we can't discuss in this module. For now, just be aware that the string formatting syntax may use a different format depending on the user's culture.
+Unfortunately, making sure your code works correctly on all computers regardless of the country/region or the end user's language is challenging. This process is known as *localization* (or *globalization*). Localization depends on many factors that we can't discuss in this module. For now, just be aware that the string formatting syntax may use a different format depending on the user's culture.
 
 ### Formatting numbers
 
@@ -176,4 +176,4 @@ Here are most important takeaways from this unit about string formatting:
 - With **string interpolation**, you'll use a string template containing the variable names you want replaced surrounded by curly braces. You can use the `$` directive before the string template to indicate you want the string to be interpolated.
 - You can format currency using a `:C` specifier.
 - You can format numbers using a `:N` specifier. You can control the precision (number of values after the decimal point) by using a number after the `:N`, like `{myNumber:N3}`.
-- Formatting currency and numbers depends on the end user's culture, a five-character code that includes the user's country and language (per the settings on their computer).
+- Formatting currency and numbers depends on the end user's culture, a five-character code that includes the user's country/region and language (per the settings on their computer).

@@ -29,8 +29,6 @@ products:
 - azure-iot
 - azure-iot-hub
 - azure-signalr-service
-- azure-event-grid
-- azure-event-hubs
 - azure-functions
 - hololens
 - windows

@@ -1,4 +1,4 @@
-In this exercise, we'll introduce using *Azure Database Migration Services* (***DMS***) to migrate to an Azure Cosmos DB API for MongoDB account. 
+In this exercise, we'll introduce using *Azure Database Migration Services* (***DMS***) to migrate to an Azure Cosmos DB for MongoDB account. 
 
 > [!NOTE]
 > To complete this exercise, you'll need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at ***https://azure.microsoft.com/free***. You cannot use a Microsoft Learn sandbox subscription for this exercise..
@@ -91,22 +91,22 @@ We'll run a script that will create the Azure storage and Azure Cosmos DB accoun
         # close the browser window and continue running the script.
         az login
         
-        # Create an Azure Cosmos DB API for MongoDB account and add the customer collection
+        # Create an Azure Cosmos DB for MongoDB account and add the customer collection
         # replace YOURRESOURCGROUPNAMEHERE with your Resource Group Name 
-        bash $GitRepositoryRoot/api-for-mongodb/03-migrating-to-azure-cosmos-db-using-dms/init.sh -r YOURRESOURCEGROUPNAMEHERE
+        bash "$GitRepositoryRoot/api-for-mongodb/03-migrating-to-azure-cosmos-db-using-dms/init.sh" -r YOURRESOURCEGROUPNAMEHERE
         ```
 
     1. If you want the script to create a resource group for you, run the following script. *This script will open a browser window to sign in to your Azure account.*
 
         ```bash
         GitRepositoryRoot=$(pwd)
-        cd $GitRepositoryRoot/api-for-mongodb/03-migrating-to-azure-cosmos-db-using-dms
+        cd "$GitRepositoryRoot/api-for-mongodb/03-migrating-to-azure-cosmos-db-using-dms"
         # Open a browser window to login to Azure, once you are logged in,
         # close the browser window and continue running the script.
         az login
         
-        # Create an Azure Cosmos DB API for MongoDB account and add the customer collection
-        bash $GitRepositoryRoot/api-for-mongodb/03-migrating-to-azure-cosmos-db-using-dms/init.sh
+        # Create an Azure Cosmos DB for MongoDB account and add the customer collection
+        bash "$GitRepositoryRoot/api-for-mongodb/03-migrating-to-azure-cosmos-db-using-dms/init.sh"
         ```
 
         > [!Tip]
@@ -116,7 +116,7 @@ We'll run a script that will create the Azure storage and Azure Cosmos DB accoun
         > If you want to specify the location where you would like to create your database and storage objects, add a ***-l LOCATIONNAME*** parameter to the *init.sh* call.
 
         > [!NOTE]
-        > This bash script will create the Azure Cosmos DB API for MongoDB account, create an Azure blob storage and copy the MongoDB backup into the blob storage. ***It can take 5-15 minutes to create these accounts*** and moved the files so it might be a good time to get a cup of coffee or tea.
+        > This bash script will create the Azure Cosmos DB for MongoDB account, create an Azure blob storage and copy the MongoDB backup into the blob storage. ***It can take 5-15 minutes to create these accounts*** and moved the files so it might be a good time to get a cup of coffee or tea.
 
     1. Don't close Visual Studio Code, we'll need it in a few minutes.
 
@@ -196,7 +196,7 @@ Azure Blob Storage connections strings are in a URI format. Additionally, these 
     > [![Screenshot showing the shared access signature page.](../media/6-shared-access-signature-page-set-permissions.png)](../media/6-shared-access-signature-page-set-permissions.png#lightbox)
 
     > [!NOTE]
-    > The actual settings of this page are way beyond the scope of this lesson, your can read further on this topic under the [Create an account SAS](/rest/api/storageservices/create-account-sas) article.
+    > The actual settings of this page are way beyond the scope of this lesson, your can read further on this subject under the [Create an account SAS](/rest/api/storageservices/create-account-sas) article.
 
 1. Since we're going to perform this migration in a few minutes, we only need to set one setting, the ***Permissions*** setting. Select the **Permissions** pulldown, and select **Read** and **List**.
 

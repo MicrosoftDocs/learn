@@ -2,7 +2,7 @@ Azure Pipelines can automatically build and validate every pull request and comm
 
 Azure Pipelines can be used with Azure DevOps public projects and Azure DevOps private projects.
 
-In future sections of this training, we'll also learn how to use Azure Repos with external code repositories such as GitHub.
+In future training sections, we'll also learn how to use Azure Repos with external code repositories such as GitHub.
 
 Let's start by creating a hello world YAML Pipeline.
 
@@ -51,9 +51,9 @@ Most pipelines will have these components:
 
 ## Name
 
-The variable name is a bit misleading since the name is in the build number format. You'll get an integer number if you don't explicitly set a name format. It's a monotonically increasing number for run triggered off this pipeline, starting at 1. This number is stored in Azure DevOps. You can make use of this number by referencing $(Rev).
+The variable name is a bit misleading since the name is in the build number format. You'll get an integer number if you don't explicitly set a name format. A monotonically increasing number of runs triggered off this pipeline, starting at 1. This number is stored in Azure DevOps. You can make use of this number by referencing $(Rev).
 
-To make a date-based number, you can use the format `$(Date:yyyy-mm-dd-HH-mm)` to get a build number like 2020-01-16-19-22.
+To make a date-based number, you can use the format `$(Date:yyyyMMdd)` to get a build number like 20221003.
 
 To get a semantic number like 1.0.x, you can use something like 1.0.$(Rev:.r).
 
@@ -61,7 +61,7 @@ To get a semantic number like 1.0.x, you can use something like 1.0.$(Rev:.r).
 
 If there's no explicit triggers section, then it's implied that any commit to any path in any branch will trigger this pipeline to run.
 
-However, you can be more precise using filters such as branches or paths.
+However, you can be more precise by using filters such as branches or paths.
 
 Let's consider this trigger:
 
@@ -106,7 +106,7 @@ trigger:
 You can mix includes and excludes if you need to. You can also filter on tags.
 
 > [!TIP]
-> Don't forget one overlooked trigger: none. If you never want your pipeline to trigger automatically, you can use none. It's helpful if you're going to create a pipeline that is only manually triggered.
+> Don't forget one overlooked trigger: none. You can use none if you never want your pipeline to trigger automatically. It's helpful if you're going to create a pipeline that is only manually triggered.
 
 There are other triggers for other events, such as:
 
@@ -118,7 +118,7 @@ You can find all the documentation on triggers [here](/azure/devops/pipelines/bu
 
 ## Jobs
 
-A job is a set of steps executed by an agent in a queue (or pool). Jobs are atomic – they're performed wholly on a single agent. You can configure the same job to run on multiple agents simultaneously, but even in this case, the entire set of steps in the job is run on every agent. If you need some steps to run on one agent and some on another, you'll need two jobs.
+A job is a set of steps executed by an agent in a queue (or pool). Jobs are atomic – they're performed wholly on a single agent. You can configure the same job to run on multiple agents simultaneously, but even in this case, the entire set of steps in the job is run on every agent. You'll need two jobs if you need some steps to run on one agent and some on another.
 
 A job has the following attributes besides its name:
 
@@ -137,7 +137,7 @@ A job has the following attributes besides its name:
 
 ## Dependencies
 
-You can define dependencies between jobs using the `dependensOn` property. It lets you specify sequences and fan-out and fan-in scenarios.
+You can define dependencies between jobs using the `dependsOn` property. It lets you specify sequences and fan-out and fan-in scenarios.
 
 A sequential dependency is implied if you don't explicitly define a dependency.
 
@@ -239,7 +239,7 @@ Classic builds implicitly checkout any repository artifacts, but pipelines requi
 Downloading artifacts requires you to use the download keyword. Downloads also work the opposite way for jobs and deployment jobs:
 
  -  Jobs don't download anything unless you explicitly define a download.
- -  Deployment jobs implicitly do a download: current, which downloads any pipeline artifacts that have been created in the existing pipeline. To prevent it, you must specify `download: none`.
+ -  Deployment jobs implicitly do a download: current, which downloads any pipeline artifacts created in the existing pipeline. To prevent it, you must specify `download: none`.
 
 ## Resources
 
@@ -271,13 +271,13 @@ steps:
 
 Steps are the actual "things" that execute in the order specified in the job.
 
-Each step is a task: out-of-the-box (OOB) tasks come with Azure DevOps. Many of which have aliases and tasks installed to your Azure DevOps organization via the marketplace.
+Each step is a task: out-of-the-box (OOB) tasks come with Azure DevOps. Many have aliases and tasks installed on your Azure DevOps organization via the marketplace.
 
 Creating custom tasks is beyond the scope of this chapter, but you can see how to make your custom tasks [here](/azure/devops/extend/develop/add-build-task).
 
 ## Variables
 
-It would be tough to achieve any sophistication in your pipelines without variables. Though this classification is partly mine, several types of variables exist, and pipelines don't distinguish between these types. However, I've found it helpful to categorize pipeline variables to help teams understand some nuances when dealing with them.
+It would be tough to achieve any sophistication in your pipelines without variables. Though this classification is partly mine, several types of variables exist, and pipelines don't distinguish between these types. However, I've found it helpful to categorize pipeline variables to help teams understand nuances when dealing with them.
 
 Every variable is a key: value pair. The key is the variable's name, and it has a value.
 

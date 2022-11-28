@@ -48,7 +48,7 @@ The following considerations apply to the different access tiers:
  -  Only the hot and cool access tiers can be set at the account level. The archive access tier isn't available at the account level.
  -  Hot, cool, and archive tiers can be set at the blob level, during or after upload.
  -  Data in the cool access tier can tolerate slightly lower availability, but still requires high durability, retrieval latency, and throughput characteristics similar to hot data. For cool data, a slightly lower availability service-level agreement (SLA) and higher access costs compared to hot data are acceptable trade-offs for lower storage costs.
- -  Archive storage stores data offline and offers the lowest storage costs, but also the highest costs to retrieve and access data.
+ -  Archive storage stores data offline and offers the lowest storage costs, but also the highest costs to rehydrate and access data.
 
 ## Azure Files
 

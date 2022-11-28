@@ -9,6 +9,6 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Use deployment rings with extension releases](/azure/devops/migrate/phase-rollout-with-rings).
- -  [Testing your application and Azure environment](/azure/architecture/framework/devops/release-engineering-testing).
- -  [What is continuous delivery?](/devops/deliver/what-is-continuous-delivery).
+ -  [Progressively expose your releases using deployment rings - Azure DevOps \| Microsoft Docs](/azure/devops/migrate/phase-rollout-with-rings).
+ -  [Testing your app and Azure environment - Azure Architecture Center \| Microsoft Docs](/azure/architecture/framework/devops/release-engineering-testing).
+ -  [What is Continuous Delivery? - Azure DevOps \| Microsoft Docs](/devops/deliver/what-is-continuous-delivery).

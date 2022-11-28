@@ -11,7 +11,7 @@ Data exists in three basic states: data at rest, data in motion, and data in pro
 
 - **Data in motion** (also called _data in transit_) is data that's being moved from one device to another within a private network or public network like the internet. data in motion can also be data that's being read (used) but not changed. Data in motion includes email messages in transit, browsing internet websites, or using company applications like an organization chart.
 
-- **Data in process** is data that's open and being changed. Data in motion includes writing an email message, saving your work files, or ordering from a website.
+- **Data in process** is data that's open and being changed. Data in process includes writing an email message, saving your work files, or ordering from a website.
 
 There are different encryption methods for each of data state. The following table summarizes the methods. 
 
@@ -24,11 +24,11 @@ There are different encryption methods for each of data state. The following tab
 Large organizations, governments, and military entities use data classification to manage their data's integrity. The data classification process has yielded common metadata attributes that enable us to label data as _Public_, _Confidential_, or _Restricted_. After data is classified, you can implement data protection measures for highly classified data.
 
 > [!NOTE]
-> You might be familiar with another state called **Defense in depth**. This state is a cybersecurity strategy that employs a layered approach to slow the advance of an attack aimed at acquiring unauthorized access to information. To learn more, watch the video, [Defense in depth security in Azure](https://learn.microsoft.com/shows/azure-videos/defense-in-depth-security-in-azure).
+> You might be familiar with another state called **Defense in depth**. This state is a cybersecurity strategy that employs a layered approach to slow the advance of an attack aimed at acquiring unauthorized access to information. To learn more, watch the video, [Defense in depth security in Azure](/shows/azure-videos/defense-in-depth-security-in-azure).
 
 ### Things to know about data at rest and TDE
 
-Data encryption at rest is a mandatory step toward data privacy, compliance, and data sovereignty. Encryption helps mitigate risks related to unauthorized data access. data at rest needs to be protected from unauthorized or offline access to raw files or backups to an unsecured server. data at rest needs to be protected by preventing copying of the database and transaction log files to an unsecured server.
+Data encryption at rest is a mandatory step toward data privacy, compliance, and data sovereignty. Encryption helps mitigate risks related to unauthorized data access. data at rest needs to be protected from unauthorized or offline access to raw files or backups to an unsecured server. Data at rest needs to be protected by preventing copying of the database and transaction log files to an unsecured server.
 
 Transparent data encryption (TDE) protects Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics against the threat of malicious offline activity by encrypting data at rest. TDE performs real-time encryption and decryption of the database, associated backups, and transaction log files at rest without requiring changes to the application. TDE is enabled by default to all newly deployed Azure SQL Databases. For Azure SQL Managed Instance, databases created after February 2019 have TDE enabled.
 
@@ -73,7 +73,7 @@ Encryption for data-in-use is about protecting data and sensitive information wh
 
 Consider a scenario where customer assistants access the Tailwind Traders database that has customer phone numbers and email addresses. The assistants require access to only a portion of the sensitive data. They need to verify the user who is calling by checking the last four digits of the customer's phone number. The assistant doesn't need access to the remaining sensitive data. You can encrypt the remaining customer data and not reveal it to the assistants. 
 
-Data-in-use employs a policy-based security feature called _dynamic data masking_. This feature hides the sensitive data in the result set of a query over designated database fields, while the data in the database remains changed. Dynamic data masking helps prevent unauthorized access to sensitive data by enabling customers to designate how much of the sensitive data to reveal with minimal consequence on the application layer.
+Data-in-use employs a policy-based security feature called _dynamic data masking_. This feature hides the sensitive data in the result set of a query over designated database fields, while the data in the database remains unchanged. Dynamic data masking helps prevent unauthorized access to sensitive data by enabling customers to designate how much of the sensitive data to reveal with minimal consequence on the application layer.
 
 ### Things to consider when protecting data-in-use
 

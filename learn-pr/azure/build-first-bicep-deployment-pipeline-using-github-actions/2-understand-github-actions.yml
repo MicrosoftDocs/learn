@@ -6,8 +6,8 @@ metadata:
   title: Understand GitHub Actions
   description: Learn about workflows, jobs, and actions. Also, learn how workflows run on runners.
   ms.date: 07/20/2022
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

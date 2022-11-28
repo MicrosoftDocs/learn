@@ -4,8 +4,9 @@ metadata:
   title: Use the SQL Server Query Tuning Assistant 
   description: Use the SQL Server Query Tuning Assistant
   ms.date: 01/31/2019
-  author: markohot
-  ms.author: markohot
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 title: Use the SQL Server Query Tuning Assistant
