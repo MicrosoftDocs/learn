@@ -42,18 +42,9 @@ There are two other points to consider about the virtual machine location.
 
 - There are price differences between locations. To find the most cost-effective choice, check for your required configuration in different regions.
 
-#### Virtual machine size
+### Virtual machine size
 
-Azure offers different memory and storage options for different [virtual machine sizes](/azure/virtual-machines/sizes). The best way to determine the appropriate machine size is to consider the type of workload your machine needs to run. Based on the workload, you can choose from a subset of available virtual machine sizes. The following table shows size classifications for Azure Virtual Machines workloads and recommended usage scenarios.
-
-| **Classification** | **Description** | **Scenarios** |
-| --- | --- | --- |
-| **General purpose** | General-purpose virtual machines are designed to have a balanced CPU-to-memory ratio. | - Testing and development <br> - Small to medium databases <br> - Low to medium traffic web servers |
-| **Compute optimized** | Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. | - Medium traffic web servers <br> - Network appliances <br> - Batch processes <br> - Application servers |
-| **Memory optimized** | Memory optimized virtual machines are designed to have a high memory-to-CPU ratio. | - Relational database servers <br> - Medium to large caches <br> - In-memory analytics |
-| **Storage optimized** | Storage optimized virtual machines are designed to have high disk throughput and I/O. | - Virtual machines running databases |
-| **GPU** | GPU virtual machines are specialized virtual machines targeted for heavy graphics rendering and video editing. | - Model training and inferencing with deep learning |
-| **High performance computes** | High performance compute offers the fastest and most powerful CPU virtual machines with optional high-throughput network interfaces. | - Workloads that require fast performance <br> - High traffic networks |
+Azure offers different memory and storage options for different [virtual machine sizes](/azure/virtual-machines/sizes). The best way to determine the appropriate machine size is to consider the type of workload your machine needs to run. Based on the workload, you can choose from a subset of available virtual machine sizes.
 
 ### Virtual machine pricing options
 
