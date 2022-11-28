@@ -2,7 +2,7 @@
 uid: learn.oxford.teach-ai-with-project-bonsai
 metadata:
   title: Teach AI like you would a human with Project Bonsai
-  description: Learn the concept of Project Bonsai and use it to teach AI with an example of balancing ball.
+  description: Learn the concept of Project Bonsai and use to teach AI with an example of balancing ball.
   ms.date: 11/8/2022
   author: softchris
   ms.author: chnoring
@@ -50,4 +50,4 @@ units:
 - learn.oxford.teach-ai-with-project-bonsai.summary
 
 badge: 
-  uid: learn.oxford.intro-machine-teaching.badge
+  uid: learn.oxford.teach-ai-with-project-bonsai.badge

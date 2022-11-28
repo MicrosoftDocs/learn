@@ -6,6 +6,8 @@ To build a new brain for the ball balancing problem:
 2. Name your new Brain (for example, "Moab MSLearn").
 3. Click Create.
 
+    ![The screenshot show how to get started with Project Bonsai.](../media/get-started.png)
+
 The sample Moab brain and simulator will be loaded.
 
 ## Overview of Bonsai UI components
@@ -56,9 +58,13 @@ The trained Bonsai brain for Moab should be able to adjust the plate pitch and r
 
 To achieve this, we first define the concept, “**Move to center**" which can be found in the extract of the AI specification document shown below.
 
+    ![The screenshot shows concept in AI Specification document.](../media/ai-specification.png)
+
 ### Environment state
 
 The environment state is obtained with the sensors placed in the environment or device. In the Moab example, a camera is located in the center under the plate. A preprocessor embedded with the simulation determines the ball's velocity and position at every iteration.
+
+![The screenshot shows states in AI specification document.](../media/state.png)
 
 To define the valid state ranges in Inkling, we'll rely on three global parameters defined at the top of the Inkling file:
 
@@ -77,7 +83,11 @@ The Inkling associated with this is:
 
 Control action is what the Brain outputs after observing every environment state. For example, given the environment state, i.e., ball velocity and position, the brain will adjust the pitch and roll of the plate to meet the defined goal.
 
+![The screenshot shows the action in AI Specification document.](../media/action.png)
+
 As shown below, the control action is provided as an output from the brain and input to the simulator or Moab device.
+
+![The screenshot shows the action in the brain graph](../media/sim-action.png)
 
 In the Moab simulation, the available control actions are captured by the following variables:
 
@@ -92,6 +102,8 @@ In the Moab simulation, the available control actions are captured by the follow
 
 Goals are a high-level specification of what the Brain should learn, and from the Moab AI solution specification.
 
+    [The screenshot shows the goal in AI Specification document.](../media/goal-reward.PNG)
+
 As shown below, to achieve this, the goal is expressed with two goals:
 	1.	Do not let the ball fall off the plate.
 	2.	Drive the ball to the center of the plate.
@@ -100,6 +112,8 @@ To define the goals, we'll rely on two global parameters defined at the top of t
 
 - **RadiusOfPlate**: The distance from the center to the edge of the plate. This parameter is set to XXX meters.
 - **CloseEnough**: The max target distance allowed from center for the episode to be considered a success. This parameter is set to XXX meters.
+
+![The screenshot shows the goal in the brain graph.](../media/goal.png)
 
 Available Goal objectives in Inkling include:
 
@@ -117,6 +131,12 @@ Simulations model real-world processes by computing the environment states as th
 
 When restarting an episode, the simulation should take configuration parameters to define the initialization conditions for that episode. In the specific case of the Moab simulation, these are the initialization values that are set every time a new episode is initialized.
 
+![The screenshot shows the configuration in AI Specification document.](../media/configuration.png)
+
+The simulator configuration can be accessed by clicking on the simulation box in Visual Authoring as shown below:
+
+![The screenshot shows the configuration in brain graph.]
+
 Note that Bonsai can't verify if config values are taken and applied by the simulation. Simulation engineers are the ones to inform brain trainers about the valid config parameters (and their ranges) that the simulation accepts during episode restart.
 
 ## Concept
@@ -128,8 +148,13 @@ The concept is named **MoveToCenter**. The **MoveToCenter** concept will receive
     - **Center of Plate**: That will drive the ball to the center of the plate
 - **Lessons**, where episode randomization values are defined to be applied during each new episode restart. To prepare for deployment, you want to expose the Brain to complex scenarios. For example, initializing the ball at different positions and starting velocities ensures you can react to someone pushing the ball off center. Similarly, randomizing the initial plate pitch and roll prepares the Brain for a broader set of scenarios that could occur once deployed.
 
+![The screenshot shows the concept with goal and lessons in the brain graph.](../media/goal-lesson.png)
+
 ## Inspect the brain in Inkling editor
 
-You can also turn off the Visual Authoring and navigate to the Inking editor. You can click on the graph or the node to highlight the relevant types in the Inking code.
+You can also turn off the Visual Authoring and navigate to the Inking editor. You can click on the graph or the node to highlight the relevant types in the Inking code. The concept graph (**MovetoCenter**) is shown below:
+
+![The screenshot shows the Inkling code and brain graph.](../media/inspect-brain.png)
+
 
 At a glance, you'll see that the Inkling code has different structs defined for the components we just reviewed within Visual Authoring: ObservableState, SimAction, goal, and lesson.

@@ -10,6 +10,8 @@ In this unit, you'll export and run the brain in ACR deployment.
     - Provide a name for the exported brain.
     - Select the processor architecture the brain will run on.
 
+![The screenshot shows how to export the brain.](../media/export-brain.png)
+
 An image of the exported brain is packaged as a Docker container, saved to the ACR associated with your workspace, and added to the list of available brains under Exported Brains in the left-hand menu.
 
 Bonsai displays exported brains by the name you assign during export. The full image name in ACR is **BRAIN_NAME:VERSION-OS_TYPE-ARCHITECTURE** where:
@@ -43,26 +45,45 @@ To use Bonsai commands from your local computer, you need to install the Bonsai 
 
 3. Next, open the Miniconda/Anaconda Prompt and traverse to the location where you downloaded the YML file. Then, run the following command to install the virtual environment. This command will create a new virtual environment named bonsai-preview. This virtual environment should always be activated prior to running any other Bonsai commands.
 
-    - (base) C:\Downloads> conda env update -f environment.yml
+    ``(base) C:\Downloads> conda env update -f environment.yml``
 
 4. Now, you need to activate your virtual environment. Every time you open a new Anaconda/Miniconda Prompt, enter the following command to activate the virtual environment:
 
-    - (base) C:\> conda activate bonsai-preview
+    ``(base) C:\> conda activate bonsai-preview``
 
 5. The name in between the parenthesis reflects the current active environment. After running the command you should see the tag change to the selected environment as follows:
-    - (bonsai-preview) C:\>
+
+    ``(bonsai-preview) C:\>``
+
 
 ## Download and run the Docker container
 
 To download your exported brain:
 
 1. Log in to your Azure Container Registry with the Azure CLI:
+
+    ``az login``
+
+    ``az acr login --name ACR_NAME``
+
 2. Fetch the containerized brain image and save it to your local machine. Replace WORKSPACE_NAME, WORKSPACE_ID,BRAIN_NAME,VERSION,OS_TYPE and ARCHITECTURE.
+
+    ``docker pull  WORKSPACE_NAME.azurecr.io/WORKSPACE_ID/BRAIN_NAME:VERSION-OS_TYPE-ARCHITECTURE``
+
+    - **ACR_NAME**: The name of your Azure Container Registry (ACR) instance.
+    - **WORKSPACE_NAME**: The name you gave to your Bonsai workspace when it was provisioned.
+    - **WORKSPACE_ID**: The Azure-assigned resource ID of your Bonsai workspace
+    - **CONTAINER_NAME**: A human-readable name for the local Docker container.
+
 3. Run the container as a local server.  Replace WORKSPACE_NAME, WORKSPACE_ID,BRAIN_NAME,VERSION,OS_TYPE and ARCHITECTURE.
 
-    The detach flag starts the container in the background without blocking your terminal. The 	publish flag tells Docker to route traffic on port 5000 of the container to port 5000 on your 	local machine (localhost:5000).
+    ``docker run \ --detach \ --publish 5000:5000 \ --name CONTAINER_NAME \ WORKSPACE_NAME.azurecr.io/WORKSPACE_ID/BRAIN_NAME:VERSION-OS_TYPE-ARCHITECTURE``
+
+    The detach flag starts the container in the background without blocking your terminal. The 	publish flag tells Docker to route traffic on port 5000 of the container to port 5000 on your local machine (localhost:5000).
 
 4. Check the status of the container. Run the following to list the status of all running containers by default.
+
+    ``docker ps``
 
 ## Clean up
 
