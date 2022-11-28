@@ -65,13 +65,13 @@ quiz:
     choices:
     - content: "DDoS infrastructure protection"
       isCorrect: false
-      explanation: "That’s incorrect. Both Network Protection and IP Protection has several advantages over the infrastructure service, including logging, alerting, and telemetry."
+      explanation: "That’s incorrect. Both Network Protection and IP Protection have several advantages over the infrastructure service, including logging, alerting, and telemetry."
     - content: "Both Network Protection and IP Protection"
       isCorrect: true
-      explanation: "That’s correct. Both Network Protection and IP Protection has several advantages over DDoS infrastructure Protection service, including logging, alerting, and telemetry."
+      explanation: "That’s correct. Both Network Protection and IP Protection have several advantages over DDoS infrastructure Protection service, including logging, alerting, and telemetry."
     - content: "All of the above"
       isCorrect: false
-      explanation: "That’s incorrect. Both Network Protection and IP Protection has several advantages over the infrastructure service, including logging, alerting, and telemetry."
+      explanation: "That’s incorrect. Both Network Protection and IP Protection have several advantages over the infrastructure service, including logging, alerting, and telemetry."
   - content: "In a cross-premises scenario, where a single or multiple Azure IaaS-hosted SAP workloads are integrated into an existing on-premises SAP environment, which of the following deployments is supported?"
     choices:
     - content: "Different layers of SAP applications are run in different deployment methods."
