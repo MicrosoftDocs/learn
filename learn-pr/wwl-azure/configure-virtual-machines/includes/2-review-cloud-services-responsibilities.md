@@ -2,13 +2,13 @@ The primary advantage of working with virtual machines is to have more control o
 
 ### Things to know about Azure Virtual Machines
 
-Review the following characteristics of Azure Virtual Machines.
+Consider the following characteristics of Azure Virtual Machines.
 
-- Azure Virtual Machines is part of the infrastructure as a service (IaaS) offering. IaaS is an instant computing infrastructure, provisioned and managed over the internet.
+- Azure Virtual Machines is the basis of the Azure infrastructure as a service (IaaS) model. IaaS is an instant computing infrastructure, provisioned and managed over the internet.
 
 - A virtual machine provides its own operating system, storage, and networking capabilities, and can run a wide range of applications.
 
-- You can implement multiple virtual machines, and configure each machine with different software and settings to support separate operation scenarios. 
+- You can implement multiple virtual machines, and configure each machine with different software and settings to support separate operation scenarios, such as development, testing, and deployment.
 
 - You can use virtual machines to quickly scale up and down with demand and pay only for what you use. 
 
