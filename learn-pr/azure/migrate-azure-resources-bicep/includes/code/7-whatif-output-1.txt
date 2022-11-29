@@ -1,12 +1,11 @@
 Note: The result may contain false positive predictions (noise).
-You can help us improve the accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues
+You can help us improve the accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues.
 
 Resource and property changes are indicated with these symbols:
   - Delete
-  + Create
   ~ Modify
-  = Nochange
-  x Noeffect
+  x NoEffect
+  = NoChange
 
 The deployment will update the following scope:
 
@@ -21,10 +20,6 @@ Scope: /subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/TOYTRU
       sku.name:  "Premium_LRS"
       sku.tier:  "Premium"
       type:      "Microsoft.Compute/disks"
-
-  ~ Microsoft.Compute/virtualMachines/ToyTruckServer [2022-08-01]
-    + properties.storageProfile.osDisk.diskSizeGB:                     30
-    x properties.storageProfile.osDisk.managedDisk.storageAccountType: "Premium_LRS"
 
   ~ Microsoft.Network/networkInterfaces/toytruckserver123 [2022-05-01]
     - kind:                                              "Regular"
@@ -43,8 +38,11 @@ Scope: /subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/TOYTRU
       ]
     x properties.ipConfigurations[0].properties.primary: true
 
+  = Microsoft.Compute/virtualMachines/ToyTruckServer [2022-08-01]
+    x properties.storageProfile.osDisk.managedDisk.storageAccountType: "Premium_LRS"
+
   = Microsoft.Network/networkSecurityGroups/ToyTruckServer-nsg [2022-05-01]
   = Microsoft.Network/publicIPAddresses/ToyTruckServer-ip [2022-05-01]
   = Microsoft.Network/virtualNetworks/ToyTruck-vnet [2022-05-01]
 
-Resource changes: 1 to delete, 2 to modify, 3 no change.
+Resource changes: 1 to delete, 1 to modify, 4 no change.

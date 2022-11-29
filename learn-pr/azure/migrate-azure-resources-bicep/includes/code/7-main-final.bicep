@@ -148,7 +148,7 @@ resource networkInterface 'Microsoft.Network/networkInterfaces@2022-05-01' = {
           privateIPAllocationMethod: 'Dynamic'
           publicIPAddress: {
             id: publicIPAddress.id
-            properties:{
+            properties: {
               deleteOption: 'Detach'
             }
             sku: {
