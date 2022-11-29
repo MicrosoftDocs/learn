@@ -8,5 +8,5 @@ You'll learn how to design a model deployment solution and how the requirements 
 
 In this module, you'll learn how to:
 
-- Identify how a model will be consumed.
+- Understand how a model will be consumed.
 - Decide whether to deploy your model to a real-time or batch endpoint.
