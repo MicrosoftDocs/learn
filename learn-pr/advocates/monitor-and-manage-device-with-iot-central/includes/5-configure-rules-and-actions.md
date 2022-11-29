@@ -12,7 +12,7 @@ Azure IoT Central can use email to send notifications. In this scenario, if the 
 
 1. In **Conditions**, select to trigger the rule if *any of the conditions are true*.
 
-1. Add the condition **Water Temperature** is less than **Coffee Maker Min Temperature** to the rule.
+1. Add the condition **Water Temperature** is less than **Coffee Maker Min Temperature** to the rule. To see the value options, select **Select a value**.
 
 1. Add the condition **Water Temperature** is greater than **Coffee Maker Max Temperature** to the rule.
 
@@ -20,10 +20,10 @@ Azure IoT Central can use email to send notifications. In this scenario, if the 
 
 1. Scroll down on the **Coffee Maker Water Temperature out of range** rule page and choose **+ Email** in the **Actions** section.
 
-1. Enter _Temperature out of range_ as the display name.
+1. Enter *Temperature out of range* as the display name.
 
-1. Enter the email address that you used to sign in to the IoT Central application and add the note _Coffee maker's water temperature is out of range. Maintenance is required._
+1. Enter the email address that you used to sign in to the IoT Central application and add the note *Coffee maker's water temperature is out of range. Maintenance is required.*
 
-1. Select **Done**. Then select **Save**. Your rule is listed on the **Rules** page.
+1. Select **Done**, and then select **Save**. Your rule is listed on the **Rules** page.
 
-To trigger the rule, set the optimal temperature on the **Properties** page for your device to _92_. Once you're done with the validation, turn off the rules to avoid flooding your inbox with emails.
+To trigger the rule, set the optimal temperature on the **Properties** page for your device to *92*. Once you're done with the validation, turn off the rules to avoid flooding your inbox with emails.
