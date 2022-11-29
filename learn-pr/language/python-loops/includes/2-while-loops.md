@@ -10,7 +10,7 @@ A `while` loop performs an operation *while* a certain condition is true. You co
 > [!IMPORTANT]
 > The most important thing to remember when you create `while` loops is to ensure that the condition changes. If the condition is always true, Python will continue to run your code until the program crashes.
 
-The syntax of a `while` loop is similar to that of an `if` statement. You provide both a condition and the code you want to run while the condition is true. 
+The syntax of a `while` loop is similar to that of an `if` statement. You provide both a condition and the code you want to run while the condition is true.
 
 A `while` loop has three important parts:
 
@@ -23,7 +23,7 @@ A `while` loop has three important parts:
         # code here
     ```
 
-Let's see how you can create code to prompt users to enter values, and then allow them to use *done* when they've finished entering the values. In our example, use the user input as the condition and then test it at the top of the `while` loop.
+Let's see how you can create code to prompt users to enter values, and then allow them to enter *done* when they've finished entering the values. In our example, the user input is the condition that is tested at the top of the `while` loop.
 
 ```python
 user_input = ''
