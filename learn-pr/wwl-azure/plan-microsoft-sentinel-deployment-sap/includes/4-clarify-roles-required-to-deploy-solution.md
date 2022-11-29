@@ -1,7 +1,4 @@
----
-title: Clarify the roles required to deploy the solution
-durationInMinutes: 3
----
+
 
 Deploying this solution requires the cooperation and efforts of multiple roles at Contoso. After all, you need to integrate a security solution between two distinctly different environments, with an agent running in between. With cross-functional team collaboration, you can plan, deploy, configure, operate, change, and maintain this solution. Your team might include the following roles, with the following responsibilities.
 

@@ -1,7 +1,4 @@
----
-title: Describe the Microsoft Sentinel solution for SAP
-durationInMinutes: 4
----
+
 
 Because Contoso uses Microsoft Sentinel, you already understand many of its capabilities. However, the Microsoft Sentinel solution isn’t integrated with your SAP system. You need to understand the components of the Microsoft Sentinel solution for SAP. You also need to understand which cross-functional team members to involve in the planning process.
 

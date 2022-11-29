@@ -1,7 +1,4 @@
----
-title: Explore how to plan and prepare for security operations
-durationInMinutes: 6
----
+
 
 Because you need to carefully manage a cross-functional team to prepare for deployment, you intend to follow best practices before you move to production.
 

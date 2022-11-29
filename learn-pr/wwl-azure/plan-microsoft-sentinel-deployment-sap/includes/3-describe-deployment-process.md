@@ -1,7 +1,4 @@
----
-title: Describe the deployment process
-durationInMinutes: 7
----
+
 
 As part of your planning process, you want to understand the steps that the cross-functional team will need to follow. Here’s an overview.
 
