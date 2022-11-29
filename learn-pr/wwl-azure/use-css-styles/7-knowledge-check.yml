@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/24/2022
+  ms.date: 11/29/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -35,7 +35,7 @@ quiz:
     - content: "Use an inline property on each italicized element."
       isCorrect: false
       explanation: "That answer is incorrect. Setting an inline style property will work but a better approach is to use CSS and a style to bold the text."
-    - content: "Use `font-style:bold;` style and the `i` selector in CSS."
+    - content: "Use `font-style: bold;` style and the `i` selector in CSS."
       isCorrect: true
       explanation: "Correct. Using the style with the tag selector in CSS will apply the style to all elements on the page or site."
   - content: "Which is the best method to apply the same styles to multiple elements?"

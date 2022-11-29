@@ -10,14 +10,14 @@ h1 {
 
 The CSS code above starts with (`h1`) that selects the HTML you want to style. The `h1` in the sample is called a **selector**.
 
-Inside the curly braces is the code `color: orange;` that declares how the selected `h1` tag should be styled. The CSS code in the curly braces `{ }`, such as `color: orange;` is called a **declaration**.
+Notice the code inside the curly braces, `color: orange;`t declares how the selected `h1` tag should be styled. The CSS code in the curly braces `{ }`, such as `color: orange;` is called a **declaration**.
 
 Your sample declaration contains a **property**, `color`, which is separated from a **value**, `orange`, with a colon (`:`), and the end of the setting is marked by a semicolon (`;`).
 
 > [!NOTE]
 > There is no need to memorize every available property and value in CSS. There are a lot of websites that you can reference. Also, tools such as [vscode.dev](https://vscode.dev) or [Visual Studio Code](https://code.visualstudio.com) offer auto-complete options that can help guide you as you create a CSS.
 
-## Embed a Cascading Style Sheet
+## Embed a CSS file
 
 A quick way to add style information is to place it within the `head` tags of your HTML page by using a `style` attribute. This method isn't considered the best practice, but is OK to use for learning and testing.  
 
@@ -47,13 +47,13 @@ When viewed in a browser, the "Welcome" text in the `<h1>` tag displays gray.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE5ax20]
 
-## Link to a Cascading Style Sheet
+## Link to a CSS file
 
-When you add styles to Hypertext Markup Language (HTML), it's best to do your styling in a separate cascading style sheet (CSS). When several HTML files use the same CSS, they'll have a consistent appearance. Plus, updating one CSS file is easier than having to update each individual HTML file.
+When you add styles to Hypertext Markup Language (HTML), it's best to do your styling in a separate CSS file. When several HTML files use the same CSS, they'll have a consistent appearance. Plus, updating one CSS file is easier than having to update each individual HTML file.
 
 To reference the CSS file, you use the `link` element.
 
-`link` has two attributes, `rel` and `href`. `rel` is used to identify the resource type you are referencing, **style sheet** for style sheets. `href` is used to identify the path to the style sheet. If your stylesheet was in the same folder as your HTML file and had the name **style.css**, you could use the following to reference it from your page:
+`link` has two attributes, `rel` and `href`. `rel` is used to identify the resource type you are referencing, **style sheet** for style sheets. `href` is used to identify the path to the CSS file. If your CSS file was in the same folder as your HTML file and had the name **style.css**, you could use the following to reference it from your page:
 
 ```html
 <link rel="stylesheet" href="style.css">

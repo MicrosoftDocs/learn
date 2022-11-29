@@ -13,7 +13,7 @@ As with any computer language, CSS supports comments. To comment in a section of
 
 You can use CSS to tell the browser what font you want to use for specific text. Sometimes you want to use Arial for readability or something fancier for style. The following image shows some text in Arial and other text in a font called "Impact."
 
-![Screenshot of text in two fonts](../media/two-fonts.png)
+![text in two fonts](../media/two-fonts.png)
 
 The most common option for setting the font to use on a page is `font-family`. `font-family` is typically set to a list of fonts, allowing the browser to use the first font listed it can support. For example, a setting of `Tahoma, Verdana, sans-serif` will attempt to use Tahoma, followed by Verdana, and finally a generic sans serif font.
 
@@ -25,7 +25,7 @@ You can also use other options, such as the style, weight, and decoration. `font
 | `font-style: italic;`         | *Demo*      |
 | `text-decoration: line-through;` | ~~Demo~~ |
 
-`text-decoration` can feel different from the other options used to modify a font's display. The key difference is that `text-decoration` is used to apply style around or on the text but does not modify the actual font itself. Bold and italic are modifying the font.
+`text-decoration` can feel different from the other options used to modify a font's display. The key difference is that `text-decoration` is used to apply style around or on the text but does not modify the actual font itself. Bold and italics are modifying the font.
 
 > [!NOTE]
 > Using underline on a webpage should typically be avoided because the text may appear to be a hyperlink.
@@ -92,4 +92,4 @@ h2 {
 
 As you might suspect, there are dozens of available named colors, and RGB values offer an infinite set of options. Editors such as [vscode.dev](https://vscode.dev) or [Visual Studio Code](https://code.visualstudio.com) can assist in the available color values. Both editors will show a color swatch preview in your CSS. If you mouse over the swatch you are presented with a color selector you can use to set the color you desire.
 
-![Screenshot of the color selector from Visual Studio Code](../media/color-selector.png)
+![Color selector from Visual Studio Code](../media/color-selector.png)

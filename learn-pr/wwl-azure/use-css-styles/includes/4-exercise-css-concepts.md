@@ -17,7 +17,7 @@ You'll start by creating a folder, setting up your tooling, and creating a "swin
 
 1. In the **Search Extensions in Marketplace** text box, type **CodeSwing**.
 1. Select **Install** to install **CodeSwing**.
-1. Open the Command Palette by selecting **Ctl+Shift+P** or **Cmd-Shift-P** on a Mac.
+1. Open the Command Palette by selecting **Ctrl+Shift+P** or **Cmd-Shift-P** on a Mac.
 1. Type **CodeSwing** in the Command Palette and select **CodeSwing: New Swing in Directory**.
 1. Select **Select Folder** to use the current directory (which is the one you created in a prior step).
 1. Select **Basic: HTML/CSS/JavaScript**.
@@ -28,7 +28,7 @@ Visual Studio Code will create two sections side by side. The left will be your 
 
 ## Create the HTML
 
-You will use existing HTML to allow us to focus solely on the CSS. The HTML includes the `link` element to reference the style sheet.
+You will use existing HTML to allow us to focus solely on the CSS. The HTML includes the `link` element to reference the CSS file.
 
 1. Copy the following HTML into the window titled **index.html**:
 
@@ -118,4 +118,4 @@ By default, most browsers will use a serif font such as Times New Roman. You wan
 
 The following screenshot is the result of the CSS you applied in this exercise. If you wish to experiment with different fonts and sizes, you can modify the CSS as you wish.
 
-![Screenshot of the final page](../media/fonts-final.png)
+![Final page as rendered in browser](../media/fonts-final.png)

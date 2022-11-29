@@ -47,7 +47,7 @@ To identify a class in CSS, you prefix a `.` in front of the name. In our exampl
 }
 ```
 
-If you were using a stylesheet, you would write the class style definition in the stylesheet. The class attribute in HTML references the definition from the stylesheet.
+If you were using a CSS file, you would write the class style definition in the CSS file. The class attribute in HTML references the definition from the CSS file.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE5amMK]
 ### Pseudo-classes
