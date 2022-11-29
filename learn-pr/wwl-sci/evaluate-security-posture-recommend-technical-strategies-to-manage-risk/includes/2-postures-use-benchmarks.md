@@ -63,7 +63,7 @@ The Microsoft cloud security benchmark (MCSB) provides prescriptive best practic
 
 * Cloud Adoption Framework: Guidance on security, including [strategy, roles and responsibilities](/azure/cloud-adoption-framework/organize/cloud-security), [Azure Top 10 Security Best Practices](/azure/cloud-adoption-framework/get-started/security#step-1-establish-essential-security-practices), and [reference implementation](/azure/cloud-adoption-framework/ready/enterprise-scale).
 * Azure Well-Architected Framework: Guidance on [securing your workloads on Azure](/assessments/?mode=pre-assessment&session=local).
-* The Chief Information Security Officer (CISO) Workshop: [Program guidance and reference strategies to accelerate security modernization using Zero Trust principles](https://learn.microsoft.com/security/ciso-workshop/the-ciso-workshop).
+* The Chief Information Security Officer (CISO) Workshop: [Program guidance and reference strategies to accelerate security modernization using Zero Trust principles](/security/ciso-workshop/the-ciso-workshop).
 * Other industry and cloud service providers security best practice standards and framework: Examples include the Amazon Web Services (AWS) Well-Architected Framework, Center for Internet Security (CIS) Controls, National Institute of Standards and Technology (NIST), and Payment Card Industry Data Security Standard (PCI-DSS).
 
 
@@ -83,4 +83,4 @@ Here's what's new in the Microsoft cloud security benchmark v1:
 
 1. A refresh of the existing Azure guidance and security principles: We also refreshed some of the existing Azure security guidance and security principles during this update so you can stay current with the latest Azure features and capabilities.
 
-For more information, see [Microsoft cloud security benchmark](https://learn.microsoft.com/security/benchmark/azure/overview).
+For more information, see [Microsoft cloud security benchmark](/security/benchmark/azure/overview).

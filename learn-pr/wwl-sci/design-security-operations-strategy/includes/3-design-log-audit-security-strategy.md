@@ -32,8 +32,7 @@ successful.
     operation of the system. It should be as close to real-time as
     possible so that the operations staff can react to issues quickly.
     Ideally, monitoring can help avert problems before a critical
-    failure. For more information, see [Monitoring and
-    diagnostics](https://docs.microsoft.com/azure/architecture/best-practices/monitoring).
+    failure. For more information, see [Monitoring and diagnostics](/azure/architecture/best-practices/monitoring).
 
 * **Instrument for root cause analysis.** Root cause analysis is the
     process of finding underlying causes of failures. It occurs after a

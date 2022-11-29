@@ -5,7 +5,7 @@ findings into a single score so that you can tell, at a glance, your
 current security situation: the higher the score, the lower the
 identified risk level.
 
-:::image type="content" source=".../media/single-secure-score-via-ui.png" alt-text="Screenshot of Azure portal showing Microsoft Defender for cloud secure score metrics." border="true":::
+:::image type="content" source="../media/single-secure-score-via-ui.png" alt-text="Screenshot of Azure portal showing Microsoft Defender for cloud secure score metrics." border="true":::
 
 To increase your security, review Defender for Cloud's recommendations page and remediate the recommendation by implementing the remediation instructions for each issue. Recommendations are grouped into security controls. Each control is a logical group of related security recommendations, and reflects your vulnerable attack surfaces. Your score only improves when you remediate all of the recommendations for a single resource within a control. To see how well your organization is securing each individual attack surface, review the scores for each security control.
 
