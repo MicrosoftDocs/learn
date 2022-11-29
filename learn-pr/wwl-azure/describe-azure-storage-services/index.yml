@@ -3,7 +3,7 @@ uid: learn.wwl.describe-azure-storage-services
 metadata:
   title: Describe Azure storage services
   description: "Azure storage services, tiers, redundancy options, and migration options and tools."
-  ms.date: 10/28/2022
+  ms.date: 11/29/2022
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ abstract: |
   - Describe migration options, including Azure Migrate and Azure Data Box
 prerequisites: |
   * Basic familiarity with IT terms and concepts
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/describe-azure-storage-services.svg
 levels:
 - beginner
 roles:
