@@ -29,8 +29,8 @@ Defender for Cloud can also protect resources in other clouds (such as AWS and G
 For example, if you've connected an Amazon Web Services (AWS) account to an Azure subscription, you can enable any of these protections:
 
  -  Defender for Cloud's CSPM features extend to your AWS resources. This agentless plan assesses your AWS resources according to AWS-specific security recommendations, and includes the results in the secure score. The resources will also be assessed for compliance with built-in standards specific to AWS (AWS CIS, AWS PCI DSS, and AWS Foundational Security Best Practices). Defender for Cloud's asset inventory page is a multi-cloud enabled feature helping you manage your AWS resources alongside your Azure resources.
- -  Microsoft Defender for Kubernetes extends its container threat detection and advanced defenses to your Amazon EKS Linux clusters.
- -  Microsoft Defender for servers brings threat detection and advanced defenses to your Windows and Linux EC2 instances.
+ -  Microsoft Defender for Containers extends its container threat detection and advanced defenses to your Amazon EKS Linux clusters.
+ -  Microsoft Defender for Servers brings threat detection and advanced defenses to your Windows and Linux EC2 instances.
 
 ## Assess, Secure, and Defend
 
