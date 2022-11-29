@@ -15,14 +15,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is Layer 0 commonly referred as?"
+  - content: "Layer 0 is commonly referred to as the: "
     choices:
     - content: "Context Layer"
       isCorrect: true
-      explanation: "This layer is the starting ground for any system. Also known as System Layer"
+      explanation: "This layer is the starting ground for any system. It's also known as System Layer."
     - content: "Process Layer"
       isCorrect: false
-      explanation: "This layer focuses on each system part"
+      explanation: "This layer focuses on each system part."
     - content: "Subprocess Layer"
       isCorrect: false
-      explanation: "This layer focuses on the system subparts of a specific system part"
+      explanation: "This layer focuses on the system subparts of a specific system part."

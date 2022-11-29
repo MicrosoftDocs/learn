@@ -14,7 +14,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 1. When the extension tab loads in Visual Studio Code, select  the **Install** button.
 
-1. After installation is complete, select **Restart to update**.
+1. After installation is complete, select **Restart to update** if prompted.
 
 ## Sign in to Azure in Visual Studio Code
 
@@ -29,11 +29,11 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 1. Open Visual Studio Code, and select **File > Open** and open the repository you cloned to your computer in the editor.
 
-1. Verify that you have filtered your Azure subscriptions to include the Concierge Subscription by opening the command palette <kbd>F1</kbd>, entering `Azure: Select Subscriptions`, and press <kbd>Enter</kbd>.
+1. Verify that you have filtered your Azure subscriptions to include the Concierge Subscription by opening the command palette and entering `Azure: Select Subscriptions`, and press <kbd>Enter</kbd>.
 
 1. Select **Concierge Subscription** and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-concierge-subscription.png" alt-text="Filter by subscription.":::
+   :::image type="content" source="../media/extension-concierge-subscription.png" alt-text="Screenshot of VS Code showing how to filter by subscription.":::
 
 ## Create a static web app
 
@@ -41,34 +41,36 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 1. Inside Visual Studio Code, select the Azure logo in the Activity Bar to open the Azure extensions window.
 
-   :::image type="content" source="../media/extension-azure-logo.png" alt-text="Azure Logo.":::
+   :::image type="content" source="../media/extension-azure-logo.png" alt-text="Screenshot of the Azure Logo in VS Code.":::
 
    > [!NOTE]
    > Azure and GitHub sign-in are required. If you are not already signed in to Azure and GitHub from Visual Studio Code, the extension will prompt you to sign in to both during the creation process.
 
 1. Place your mouse over the *Static Web Apps* heading, right click, and select **Create Static Web App**.
 
-1. When the command palette opens at the top of the editor, select **Concierge Subscription** and press <kbd>Enter</kbd>.
-
-   :::image type="content" source="../media/extension-concierge-subscription-select.png" alt-text="Select Subscription.":::
+   :::image type="content" source="../media/create-first-step.png" alt-text="Screenshot showing where to go to create a web app.":::
 
 1. Enter **my-first-static-web-app**, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-create-app.png" alt-text="Create Static Web App.":::
+   :::image type="content" source="../media/extension-create-app.png" alt-text="Screenshot showing how to create a Static Web App.":::
+
+1. Select your **location** and press <kbd>Enter</kbd>.
+
+   :::image type="content" source="../media/extension-location-option.png" alt-text="Screenshot showing how to select a subscription.":::
 
 1. Select the **Custom** option, and press <kbd>Enter</kbd>
 
-   :::image type="content" source="../media/extension-custom-option.png" alt-text="Create Static Web App - Custom.":::
+   :::image type="content" source="../media/extension-custom-option.png" alt-text="Screenshot showing the custom option selected.":::
 
 ::: zone pivot="angular"
 
 7. Select **angular-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Angular application code location.":::
+   :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Screenshot showing the code location entered as Angular app.":::
 
 8. Enter **dist/angular-app** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-artifact-angular.png" alt-text="Angular app files path.":::
+   :::image type="content" source="../media/extension-artifact-angular.png" alt-text="Screenshot showing how to enter the build output location for Angular.":::
 
 ::: zone-end
 
@@ -76,11 +78,11 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 7. Select **react-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-app-location-react.png" alt-text="React application code location.":::
+   :::image type="content" source="../media/extension-app-location-react.png" alt-text="Screenshot showing the code location entered as react app.":::
 
 8. Enter **build** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-artifact-react.png" alt-text="React app files path.":::
+   :::image type="content" source="../media/extension-artifact-react.png" alt-text="Screenshot showing how to enter the build output location for React.":::
 
 ::: zone-end
 
@@ -88,11 +90,11 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 7. Select **svelte-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Svelte application code location.":::
+   :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Screenshot showing the code location entered as Svelte app.":::
 
 8. Enter **public** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-artifact-svelte.png" alt-text="Svelte app files path.":::
+   :::image type="content" source="../media/extension-artifact-svelte.png" alt-text="Screenshot showing how to enter the build output location for Svelte.":::
 
 ::: zone-end
 
@@ -100,34 +102,34 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 7. Select **vue-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Vue application code location.":::
+   :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Screenshot showing the code location entered as Vue app.":::
 
 8. Enter **dist** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-artifact-vue.png" alt-text="Vue app files path.":::
+   :::image type="content" source="../media/extension-artifact-vue.png" alt-text="Screenshot showing how to enter the build output location for Vue":::
 
 ::: zone-end
 
-> [!NOTE]
-> Your repository may be a bit different than the ones you may have used in the past. It contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.
+   > [!NOTE]
+   > Your repository may be a bit different than the ones you may have used in the past. It contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.
 
 9. Once the app is created, a confirmation notification is shown in Visual Studio Code.
 
-   :::image type="content" source="../media/extension-confirmation.png" alt-text="Open Actions in GitHub or View/Edit Config.":::
+   :::image type="content" source="../media/extension-confirmation.png" alt-text="Screenshot of the confirmation code asking the user to open actions in GitHub or View/Edit Configure.":::
 
    As the deployment is in progress, the Visual Studio Code extension reports the build status to you.
 
-   :::image type="content" source="../media/extension-waiting-for-deployment.png" alt-text="Waiting for Deployment.":::
+   :::image type="content" source="../media/extension-waiting-for-deployment.png" alt-text="Screenshot of the VS Code UI showing waiting for deployment.":::
 
 10. You can view the progress of the deployment using GitHub Actions by expanding the **Actions** menu.
 
-    :::image type="content" source="../media/extension-actions.png" alt-text="GitHub Actions.":::
+    :::image type="content" source="../media/extension-actions.png" alt-text="Screenshot showing how to check progress via GitHub Actions.":::
 
     Once the deployment is complete, you can navigate directly to your website.
 
 11. To view the website in the browser, right-click on the project in the Static Web Apps extension, and select Browse Site.
 
-    :::image type="content" source="../media/extension-browse-site.png" alt-text="Browse Site.":::
+    :::image type="content" source="../media/extension-browse-site.png" alt-text="Screenshot showing how to browse to your static web app site.":::
 
 Congratulations! You've deployed your first app to Azure Static Web Apps!
 

@@ -11,6 +11,6 @@ metadata:
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 6
 sandbox: true
 notebook: notebooks/4-exercise-handle-exceptions.ipynb

@@ -77,7 +77,7 @@ To add MLflow to an existing training script, you can add the following code:
 import mlflow
 
 reg_rate = 0.1
-mlflow.log_param(")
+mlflow.log_param("Regularization rate", reg_rate)
 ```
 
 > [!Tip]

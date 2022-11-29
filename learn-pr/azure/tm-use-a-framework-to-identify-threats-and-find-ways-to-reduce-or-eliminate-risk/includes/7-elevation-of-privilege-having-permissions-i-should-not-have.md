@@ -29,7 +29,7 @@
 
 ### Common security controls to reduce or eliminate risk
 
-- Access control lists (ACL)
+- Access-control lists (ACL)
 - Role-based access controls (RBAC)
 - Group-based access
 - Permissions
