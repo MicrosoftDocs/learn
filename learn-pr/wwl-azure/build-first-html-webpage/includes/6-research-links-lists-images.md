@@ -34,7 +34,7 @@ It's possible to link to an email address. This type of link will automatically 
 
 If you put a link in the HTML page you're creating, you'll notice that the text between (not inside) the opening and closing tag turns blue. You'll also notice that the address is hidden. Finally, you'll notice that the word is now selectable. That is, you select the word to be taken to the resource.
 
-The text that is displayed as the link is known as link text. Using good link text is a key to ensuring your page is accessible to all users. Phrases like "click here" are disruptive to screen readers and other non-browser tools used to navigate the web. As a best practice, always use link text that briefly describes the resource being referenced. You can learn more about ensuring accessibility by exploring the Accessibility Learn module or [Microsoft's Accessibility site](https://www.microsoft.com/en-us/accessibility/).
+The text that is displayed as the link is known as link text. Using good link text is a key to ensuring your page is accessible to all users. Phrases like "click here" are disruptive to screen readers and other non-browser tools used to navigate the web. As a best practice, always use link text that briefly describes the resource being referenced. You can learn more about ensuring accessibility by exploring the Accessibility Learn module.
 
 ## Images
 
