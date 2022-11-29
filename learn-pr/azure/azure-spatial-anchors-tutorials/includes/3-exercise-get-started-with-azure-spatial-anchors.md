@@ -16,9 +16,9 @@ When you're finished, close the **Project Settings** window and continue on with
 
 ## Choose configuration options
 
-There's one configuration option that we need to change: occlusion. MRTK2 bases its various configurations on a series of default profiles which can't be altered. In order to change an option, you must clone an existing default profile and change the option in the clone. We'll do that next.
+There's one configuration option that we need to change: occlusion. MRTK2 bases its various configurations on a series of default profiles that can't be altered. In order to change an option, you must clone an existing default profile and change the option in the clone. We'll do that next.
 
-1. In the **Hierarchy**, select the **Mixed Reality Toolit** object. This causes the Mixed Reality Toolkit (MRTK) profile to appear in the **Inspector.**
+1. In the **Hierarchy**, select the **Mixed Reality Toolkit** object. This causes the Mixed Reality Toolkit (MRTK) profile to appear in the **Inspector.**
 1. In the **Inspector**, at the top of the **MixedReality Toolkit** component, click the drop-down that displays **DefaultMixedRealityToolkitConfigurationProfile** and change that setting to **DefaultHoloLens2ConfigurationProfile**.
 1. In the vertical column of subsystems along the left side of the **Inspector**, select **Spatial Awareness**.
 
@@ -112,38 +112,38 @@ In this section, you'll add scripts to the scene to create a series of button ev
 
 1. In the **Hierarchy** pane in the **ButtonParent** child list, select **StopAzureSession**
 1. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
-1. In the **Hierarchy**, click the the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
-1. Click the **No Function** drop-down and then select **AnchorModuleScript** > **StopAzureSession ()**.
+2. In the **Hierarchy**, click the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
+3. Click the **No Function** drop-down and then select **AnchorModuleScript** > **StopAzureSession ()**.
 
 
     :::image type="content" source="../media/009-stop-azure-session.png" alt-text="Screenshot of Unity with the StopAzureSession button's OnClick event configured." :::
 
 1. In the **Hierarchy** pane in the **ButtonParent** child list, select **CreateAzureAnchor**.
 1. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
-1. In the **Hierarchy**, click the the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
-1. Click the **No Function** drop-down and then select **AnchorModuleScript** > **CreateAzureAnchor (GameObject)**.
+2. In the **Hierarchy**, click the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
+3. Click the **No Function** drop-down and then select **AnchorModuleScript** > **CreateAzureAnchor (GameObject)**.
 
     :::image type="content" source="../media/010-create-azure-anchor.png" alt-text="Screenshot of Unity with the CreateAzureAnchor button's OnClick event configured." :::
 
-1. In the **Hierarchy** pane in the **ButtonParent** child list, select **RemoveLocalAnchor**.
-1. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
-1. In the **Hierarchy**, click the the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
-1. Click the **No Function** drop-down and then select **AnchorModuleScript** > **RemoveLocalAnchor (GameObject)**.
+4. In the **Hierarchy** pane in the **ButtonParent** child list, select **RemoveLocalAnchor**.
+5. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
+6. In the **Hierarchy**, click the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
+7. Click the **No Function** drop-down and then select **AnchorModuleScript** > **RemoveLocalAnchor (GameObject)**.
 
     :::image type="content" source="../media/011-remove-local-anchor.png" alt-text="Screenshot of Unity with the RemoveLocalAnchor button's OnClick event configured." :::
 
 
 1. In the **Hierarchy** pane in the **ButtonParent** child list, select **FindAzureAnchor**.
 1. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
-1. In the **Hierarchy**, click the the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
-1. Click the **No Function** drop-down and then select **AnchorModuleScript** > **FindAzureAnchor (GameObject)**.
+2. In the **Hierarchy**, click the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
+3. Click the **No Function** drop-down and then select **AnchorModuleScript** > **FindAzureAnchor (GameObject)**.
 
      :::image type="content" source="../media/012-find-azure-anchor.png" alt-text="Screenshot of Unity with the FindAzureAnchor button's OnClick event configured." :::
 
-1. In the **Hierarchy** pane in the **ButtonParent** child list, select **DeleteAzureAnchor**.
-1. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
-1. In the **Hierarchy**, click the the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
-1. Click the **No Function** drop-down and then select **AnchorModuleScript** > **DeleteAzureAnchor (GameObject)**.
+4. In the **Hierarchy** pane in the **ButtonParent** child list, select **DeleteAzureAnchor**.
+5. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
+6. In the **Hierarchy**, click the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
+7. Click the **No Function** drop-down and then select **AnchorModuleScript** > **DeleteAzureAnchor (GameObject)**.
 
     :::image type="content" source="../media/013-delete-azure-anchor.png" alt-text="Screenshot of Unity with the DeleteAzureAnchor button's OnClick event configured." :::
 
@@ -157,7 +157,7 @@ In this section, you'll add scripts to the scene to create a series of button ev
    * In the **Spatial Anchors Account Key** field, paste the primary or secondary **Access Key** value from your Azure Spatial Anchors account.
    * In the **Spatial Anchors Account Domain** field, paste the **Account Domain** value from your Azure Spatial Anchors account.
 
-   :::image type="content" source="../media/015-spatial-anchor-manager.png" alt-text="Screenshot of Unity with Spatial Anchor Manager configured." :::
+   :::image type="content" source="../media/015-spatial-anchor-manager.png" alt-text="Screenshot of Unity with the Spatial Anchor Manager configured." :::
 
 ## Try the basic behaviors of Azure Spatial Anchors
 
