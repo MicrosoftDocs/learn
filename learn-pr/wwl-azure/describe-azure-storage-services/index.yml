@@ -2,7 +2,7 @@
 uid: learn.wwl.describe-azure-storage-services
 metadata:
   title: Describe Azure storage services
-  description: "Describe Azure storage services"
+  description: "Azure storage services, tiers, redundancy options, and migration options and tools."
   ms.date: 11/29/2022
   author: wwlpublish
   ms.author: robbarefoot
