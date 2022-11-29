@@ -46,6 +46,6 @@ on Allowed Locations policy
 * For more information, visit [Data Residency in
 Azure](https://azure.microsoft.com/global-infrastructure/data-residency/)
 * Watch [this video](https://youtu.be/W2bsj3ULw0Y) for more
-information about Azure Purview.
+information about Microsoft Purview.
 * Watch [this video](https://youtu.be/1REQYdZ6364) for more
 information on Azure AD Identity Protection.

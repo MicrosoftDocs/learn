@@ -44,7 +44,7 @@ The table below shows the full organizational security landscape, demonstrating 
 |  | Express Route | On-Premises Network Extension | Layer 3 Connectivity, Connectivity to Microsoft Cloud Services, Global Connectivity to Microsoft Services, Dynamic Routing, Built-In Redundancy |
 |  | Private Link | Private Azure Access, On-Premises and Peered Networks, Data Leakage Protection | PaaS, Storage, SQL Databases, Network |
 | Information Protection |  |  |  |
-|  | Azure Purview | Unified Data Governance, Automated Data Discovery, Sensitive Data Classification | Microsoft Information Protection (MIP), File Scanner, Data Governance, eDiscovery (Premium) |
+|  | Microsoft Purview | Unified Data Governance, Automated Data Discovery, Sensitive Data Classification | Microsoft Information Protection (MIP), File Scanner, Data Governance, eDiscovery (Premium) |
 |  | Compliance Manager | Pre-Built Assessments, Workflow, Risk-Based Compliance Score | Azure Controls, Assessments, Templates, Improvement Actions |
 | People Security |  |  |  |
 |  | Attack Simulator | Simulation Training Platform | Credential Harvest, Malware Attachment, Link in Attachment, Link to Malware, Drive-by-URL |

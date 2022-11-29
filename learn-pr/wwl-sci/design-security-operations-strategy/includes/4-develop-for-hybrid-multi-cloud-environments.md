@@ -130,3 +130,7 @@ The architecture consists of the following workflow:
 - **Azure Windows and Linux VMs**. Systems on which the Microsoft Defender for Cloud monitoring agent is installed.
 
 For full details on this reference architecture, see [Monitor hybrid security using Microsoft Defender for Cloud and Microsoft Sentinel](/azure/architecture/hybrid/hybrid-security-monitoring)
+
+For an overview of some technologies which can help you secure hybrid and multicloud environments, view the following interactive guide.
+
+[:::image type="content" source="../media/secure-azure-hybrid-multicloud-interactive-guide.png" alt-text="Cover for an interactive guide that says Secure your Azure, hybrid, and multicloud environment." border="true":::](https://mslearn.cloudguides.com/guides/Secure%20your%20Azure%20hybrid%20and%20multicloud%20environment)
