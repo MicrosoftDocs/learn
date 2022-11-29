@@ -6,7 +6,7 @@ The sample database we're using has an entry for each storm event in the US in 2
 
 To group these events into chunks of information, you'll use the `summarize` operator. `summarize` is used for all functions that aggregate groups of values of multiple rows to form a single summary value. You can summarize the whole table, for example, by counting the number of results using the following query:
 
-<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVUjOL80r0dAEAIiJgN4fAAAA" target="_blank">Click to run query</a>
+<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVUjOL80r0dAEAIiJgN4fAAAA" target="_blank">Run the query</a>
 
 :::image type="content" source="../media/4-count-basic.png" alt-text="Screenshot of count operator general query and results.":::
 
@@ -14,7 +14,7 @@ You can also summarize data into groups of similar types of events by specifying
 
 1. Copy and paste the query into your query editor.
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5uWqUSguzc1NLMqsSlUAiznnl+aVKNgqJINoDU2FpEqF4JLEklSw0vyiEpAAQiEAmVOvwUwAAAA=" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5uWqUSguzc1NLMqsSlUAiznnl+aVKNgqJINoDU2FpEqF4JLEklSw0vyiEpAAQiEAmVOvwUwAAAA=" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents
@@ -45,7 +45,7 @@ Notice that all elements within the summarize operator are separated by commas a
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVUjOL80r0dDU4VIAAoh8eGZJhktibmJ6aki+c1F+QbGCLURZZpoGRBwiaqdgANXnDJIFqkqBmAY2JqSyIFVTIalSIbgksSQVZGd+UQmID1YMAFgA5v6PAAAA" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVUjOL80r0dDU4VIAAoh8eGZJhktibmJ6aki+c1F+QbGCLURZZpoGRBwiaqdgANXnDJIFqkqBmAY2JqSyIFVTIalSIbgksSQVZGd+UQmID1YMAFgA5v6PAAAA" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents
@@ -67,7 +67,7 @@ The previous query returned a distinct count of 27 different types of storms in 
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLElVsLVVUApxjXAMVgJKpGQWl2TmJZcogJWGVBakAgWL84tKFJIqEWIKicXJABv/PVBRAAAA" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLElVsLVVUApxjXAMVgJKpGQWl2TmJZcogJWGVBakAgWL84tKFJIqEWIKicXJABv/PVBRAAAA" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents

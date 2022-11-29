@@ -4,5 +4,5 @@ You explored what it means to conduct a system-focused threat modeling exercise.
 
 In this module, you:
 
-- Defined a system-focused threat-modeling exercise
-- Explained the high-level differences between the system-, asset-, and attacker-focused approaches
+- Defined a system-focused threat-modeling exercise.
+- Explained the high-level differences between the system-, asset-, and attacker-focused approaches.

@@ -21,7 +21,7 @@ To be able to send SMS messages from an Azure Function, you'll need a Twilio acc
 1. Select **Get a trial phone number** on your account dashboard. Twilio assigns you a phone number that's used to send messages.
 
     > [!NOTE]
-    > These assigned numbers might not be able to send messages in some countries. The Twilio documentation lists [which countries have restrictions](https://support.twilio.com/hc/articles/223183068-Twilio-international-phone-number-availability-and-their-capabilities?azure-portal=true), and shows ways to send SMS messages using an [international number or AlphaNumeric sender Id](https://support.twilio.com/hc/articles/226690868-Using-Twilio-when-SMS-numbers-are-unavailable-in-your-country?azure-portal=true).
+    > These assigned numbers might not be able to send messages in some countries/regions. The Twilio documentation lists [which countries/regions have restrictions](https://support.twilio.com/hc/articles/223183068-Twilio-international-phone-number-availability-and-their-capabilities?azure-portal=true), and shows ways to send SMS messages using an [international number or AlphaNumeric sender Id](https://support.twilio.com/hc/articles/226690868-Using-Twilio-when-SMS-numbers-are-unavailable-in-your-country?azure-portal=true).
 
 1. Take note of your new Twilio Trial Number. You'll need the number later in this module. You can also get this number anytime on your dashboard under **Account Info**.
 

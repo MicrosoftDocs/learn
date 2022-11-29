@@ -6,7 +6,7 @@ The Microsoft commercial marketplace addresses these trends, making it possible 
 
 In this module, we’ll explore some key go-to-market concepts you’ll want to consider as you position your organization for success in the commercial marketplace. “Success” in the commercial marketplace is different for every organization, but common commercial marketplace objectives include:
 
-- Increasing sales revenue by selling to new customers in more than 140 countries
+- Increasing sales revenue by selling to new customers in more than 140 countries/regions
 
 - Shortening your sales cycles by making it easier for customers to find, try, buy, and deploy your products
 

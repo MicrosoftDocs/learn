@@ -12,11 +12,11 @@ These responsibilities of the National Government are defined in the United Stat
 
 The National Government is divided into three branches: the Executive, Legislative, and Judicial.
 
-The Executive Branch has offices across the country as well as around the globe because of its charter. It's led by the President.
+The Executive Branch has offices across the country/region as well as around the globe because of its charter. It's led by the President.
 
 The Legislative Branch consists of Congress: the House of Representatives and the Senate, chartered with making laws and controlling government spending.
 
-The Judicial branch consists of the Federal Court system, with courts across the country, but headquartered in Washington D.C.
+The Judicial branch consists of the Federal Court system, with courts across the country/region, but headquartered in Washington D.C.
 
 Each branch leverages U.S. sovereign clouds for their specific purposes.
 

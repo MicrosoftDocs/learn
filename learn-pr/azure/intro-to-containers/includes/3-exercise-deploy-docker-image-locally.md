@@ -14,7 +14,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
 2. Enter the following code to pull the **ASP.NET Sample** app image from the Docker Hub registry. This image contains a sample web app developed by Microsoft, and is based on the default ASP.NET template available in Visual Studio.
 
     ```bash
-    docker pull mcr.microsoft.com/dotnet/core/samples:aspnetapp
+    docker pull mcr.microsoft.com/dotnet/samples:aspnetapp
     ```
 
 3. Enter the following code to verify that the image has been stored locally.

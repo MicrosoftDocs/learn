@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-model-managed-online-endpoint
+metadata:
+  title: Deploy a model to a managed online endpoint
+  description: "Deploy a model to a managed online endpoint"
+  ms.date: 11/17/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy a model to a managed online endpoint
+summary: Learn how to deploy models to a managed online endpoint for real-time inferencing.
+abstract: |
+  In this module, you'll learn how to:
+  - Use managed online endpoints.
+  - Deploy your MLflow model to a managed online endpoint.
+  - Deploy a custom model to a managed online endpoint.
+  - Test online endpoints.
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure-machine-learning
+subjects:
+- machine-learning
+units:
+- learn.wwl.deploy-model-managed-online-endpoint.introduction
+- learn.wwl.deploy-model-managed-online-endpoint.explore-managed-online-endpoints
+- learn.wwl.deploy-model-managed-online-endpoint.deploy-your-mlflow-model-managed-online-endpoint
+- learn.wwl.deploy-model-managed-online-endpoint.eploy-custom-model-managed-online-endpoint
+- learn.wwl.deploy-model-managed-online-endpoint.monitor-online-endpoints
+- learn.wwl.deploy-model-managed-online-endpoint.exercise-deploy-mlflow-model-online-endpoint
+- learn.wwl.deploy-model-managed-online-endpoint.knowledge-check
+- learn.wwl.deploy-model-managed-online-endpoint.summary
+badge:
+  uid: learn.wwl.deploy-model-managed-online-endpoint.badge

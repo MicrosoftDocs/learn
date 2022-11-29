@@ -22,7 +22,7 @@ The ObjectManipulator and NearInteractionGrabbable scripts support the "direct m
 
     We want to be able to see three sides of the cube, so we'll change the cube's rotation, too. 
 
-1. 1. In the **Inspector**, change the cube's **Tranform/Rotation** values to the following:
+1. In the **Inspector**, change the cube's **Tranform/Rotation** values to the following:
    
    X = 9, Y = 14, Z = 0
 
@@ -95,11 +95,11 @@ In order for an object to be "grabbable" with tracked hands, it must have three 
 
     :::image type="content" source="../media/034-far-pointer.png" alt-text="Screenshot of simulated hand's far pointer.":::
 
-2. Move the hand closer to Far Cube until you can see the tip of the pointer on the cube. You may have to move the hand around in a circular motion a few times to make the tip of the pointer appear on the cube.
+1. Move the hand closer to Far Cube until you can see the tip of the pointer on the cube. You may have to move the hand around in a circular motion a few times to make the tip of the pointer appear on the cube.
 
     :::image type="content" source="../media/035-far-pointer-touches-cube.png" alt-text="Screenshot of the far pointer touching the cube.":::
 
-3. Click the left mouse button (this makes the hand close, taking on what we call the "pinch gesture") and then drag the cube around the scene.
+1. Click the left mouse button (this makes the hand close, taking on what we call the "pinch gesture") and then drag the cube around the scene.
 
 ## Unity in-editor input simulation
 
@@ -144,15 +144,12 @@ You can test holographic object behavior with the Unity in-editor input simulati
 
     :::image type="content" source="../media/036-builds-folder.png" alt-text="Screenshot of File Explorer with the builds folder displayed." :::
 
-2. Configure Visual Studio for HoloLens by selecting the **Master** or **Release** configuration and the **ARM64** architecture:
+1. Configure Visual Studio for HoloLens by selecting the **Master** or **Release** configuration and the **ARM64** architecture:
 
     :::image type="content" source="../media/037-visual-studio-build-options.png" alt-text="Screenshot of Visual Studio window with the build options for the project.":::
 
     > [!TIP]
     > If you're deploying to HoloLens (1st generation), select the **x86** architecture.
-    
-    > [!NOTE]
-    > For HoloLens, you'll typically build for the ARM architecture. However, there's a [known issue](https://github.com/microsoft/MixedRealityToolkit-Unity) in Unity 2019.3 that causes errors when selecting ARM as the build architecture in Visual Studio. As a workaround, we recommend that you build for ARM64. If that isn't an option, in Unity, go to **Edit** > **Project Settings** > **Player** > **Other Settings** and disable **Graphics Jobs**.
     
     > [!NOTE]
     > If you don't see "Device" as a target option in Visual Studio, you may need to change the startup project for the solution from the IL2CPP project to the UWP project. To do this, in the **Solution Explorer**, right-click [**your project name**]**(Universal Windows)** and then select **Set as StartUp Project**.
