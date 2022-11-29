@@ -27,7 +27,7 @@ The following sections cover how to create custom patterns for organizations and
 
 Follow the steps below to create a custom pattern for a private repository:
 
-1. In your repository, navigate to **Settings > Security & analysis**.
+1. In your repository, navigate to **Settings > Code security & analysis**.
 2. Under **GitHub Advanced Security > Secret scanning**, click **New pattern**.
 3. Provide the following details for your custom pattern:
     - The name of the pattern
@@ -42,7 +42,7 @@ Follow the steps below to create a custom pattern for a private repository:
 
 Follow the steps below to create a custom pattern for an organization:
 
-1. In your organization, navigate to **Settings > Security & analysis**.
+1. In your organization, navigate to **Settings > Code security & analysis**.
 2. Under **GitHub Advanced Security > Secret scanning**, click **New pattern**.
 3. Provide the following details for your custom pattern:
     - The name of the pattern
