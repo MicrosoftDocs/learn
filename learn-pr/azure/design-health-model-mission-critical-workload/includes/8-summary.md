@@ -6,4 +6,4 @@ In this module, you identified user flows and key application components of a gi
 
 - [Challenge Project - Design a mission-critical web application - Training | Microsoft Learn](/training/modules/azure-mission-critical/)
 
-- For more information about architecture solutions in Azure, see the [Microsoft Azure Well-Architected Framework guide](https://learn.microsoft.com/azure/architecture/framework) in the Azure Architecture Center.
+- For more information about architecture solutions in Azure, see the [Microsoft Azure Well-Architected Framework guide](/azure/architecture/framework) in the Azure Architecture Center.

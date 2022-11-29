@@ -8,7 +8,7 @@ Health modeling ultimately strives to maximize observability by augmenting raw m
 
 ### Layered application health
 
-A layered health model enables application health to be traced back to lower level dependencies, which helps to quickly root cause service degradation. Each layer of the health model should capture what "healthy" and "unhealthy" states represent. For more information about layered application health, see [Layered application health](https://learn.microsoft.com/azure/architecture/framework/mission-critical/mission-critical-health-modeling#layered-application-health). For an example of a layered health model, see [Example - Layered health model](https://learn.microsoft.com/azure/architecture/framework/mission-critical/mission-critical-health-modeling#example---layered-health-model).
+A layered health model enables application health to be traced back to lower level dependencies, which helps to quickly root cause service degradation. Each layer of the health model should capture what "healthy" and "unhealthy" states represent. For more information about layered application health, see [Layered application health](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#layered-application-health). For an example of a layered health model, see [Example - Layered health model](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#example---layered-health-model).
 
 ![Diagram showing the architecture for a typical layered health model.](../media/layered-health-model-example.png)
 

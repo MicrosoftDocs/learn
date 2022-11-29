@@ -16,7 +16,7 @@ Use Azure Log Analytics as the central store for logs and metrics for all applic
 
 Use Azure Application Insights for all application monitoring data. Each stamp in the infrastructure has a dedicated Log Analytics workspace and Application Insights instance. Use a separate Log Analytics workspace for globally shared resources, such as Azure Front Door and Azure Cosmos DB.
 
-Use Azure Monitor Logs (Log Analytics) as a unified data sink to provide a "single pane" across all operational data sets. To make analysis and health calculations easier, all resources within a stamp should use the stamp workspace for logging. As per the [mission-critical guidance](https://learn.microsoft.com/azure/architecture/framework/mission-critical/mission-critical-health-modeling#unified-data-sink-for-correlated-analysis), each stamp and global resource uses their own Log Analytics workspace to eliminate a single point of failure, in case a region is down.
+Use Azure Monitor Logs (Log Analytics) as a unified data sink to provide a "single pane" across all operational data sets. To make analysis and health calculations easier, all resources within a stamp should use the stamp workspace for logging. As per the [mission-critical guidance](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#unified-data-sink-for-correlated-analysis), each stamp and global resource uses their own Log Analytics workspace to eliminate a single point of failure, in case a region is down.
 
 ![Diagram showing an example of application health data collection.](../media/mission-critical-health-data-collection.png)
 
@@ -34,7 +34,7 @@ All stamps are short-lived and continuously replaced with each new release. The 
 
 - All Azure resources expose logs and metrics, but resources must be appropriately configured to route diagnostic data to your desired data sink.
 
-- Azure provides various [built-in policies](https://learn.microsoft.com/azure/azure-monitor/policy-reference) that can be applied to ensure deployed resources are configured to send logs and metrics to an Azure Monitor instance.
+- Azure provides various [built-in policies](/azure/azure-monitor/policy-reference) that can be applied to ensure deployed resources are configured to send logs and metrics to an Azure Monitor instance.
 
 - Azure Monitor Logs Dedicated Clusters provides a deployment option that enables Availability Zones for protection from zonal failures in supported Azure regions. Dedicated Clusters require a minimum daily data ingest commitment.
 
@@ -60,7 +60,7 @@ Azure Mission-Critical uses different Kusto Query Language (KQL) queries to impl
 
 This approach separates the query logic from the visualization layer. The Log Analytics queries are called directly from code, for example from the HealthService API. Another example is from a visualization tool such as Azure Dashboards, Monitor Workbooks, or Grafana.
 
-Log Analytics, Application Insights, and Azure Data Explorer all use [KQL](https://learn.microsoft.com/azure/data-explorer/kusto/query/) for their queries. With KQL, you can build queries and use functions to fetch metrics and calculate scores. For sample queries, see [Samples for Kusto Queries](/azure/data-explorer/kusto/query/samples?pivots=azuremonitor).
+Log Analytics, Application Insights, and Azure Data Explorer all use [KQL](/azure/data-explorer/kusto/query) for their queries. With KQL, you can build queries and use functions to fetch metrics and calculate scores. For sample queries, see [Samples for Kusto Queries](/azure/data-explorer/kusto/query/samples?pivots=azuremonitor).
 
 This definition of health can be represented by a KQL query, as demonstrated by the following example AKS query, which aggregates InsightsMetrics (AKS Container insights) and AzureMetrics (Azure diagnostics) and compares (inner join) against modeled health thresholds.
 
