@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-health-model-mission-critical-workload.health-states
-title: Health states, metrics and threshold
+title: Health states, metrics, and thresholds
 metadata:
-  title: Health states, metrics and threshold
-  description: Health states, metrics and threshold.
+  title: Health states, metrics, and thresholds
+  description: Health states, metrics, and thresholds.
   ms.date: 11/11/2022
   author: PageWriter-MSFT
   ms.author: prwilk

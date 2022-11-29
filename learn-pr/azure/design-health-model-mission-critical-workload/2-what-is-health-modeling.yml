@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-health-model-mission-critical-workload.what-is-health-modeling
-title: What is health modeling
+title: What is health modeling?
 metadata:
-  title: What is health modeling
-  description: What is health modeling.
+  title: What is health modeling?
+  description: What is health modeling?
   ms.date: 11/11/2022
   author: PageWriter-MSFT
   ms.author: prwilk
@@ -16,17 +16,17 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "Question 1"
+  - content: "What's the first design activity you should do when modeling health?"
     choices:
-    - content: "Option 1."
+    - content: "Define which health states are healthy and unhealthy."
+      isCorrect: false
+      explanation: "Incorrect. While this activity is important, defining the user flows and mapping dependencies between Azure resources is the foundation of a health model design."
+    - content: "An architectural exercise to define all user flows and map dependencies between functional and logical components."
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
+      explanation: "Correct! This exercise implicitly maps dependencies between Azure resources, which is the foundation of a health model design."
+    - content: "Define the layers of the health model."
       isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
+      explanation: "Incorrect. While this activity is important, defining the user flows and mapping dependencies between Azure resources is the foundation of a health model design."
   - content: "Question 2"
     choices:
     - content: "Option 1."
