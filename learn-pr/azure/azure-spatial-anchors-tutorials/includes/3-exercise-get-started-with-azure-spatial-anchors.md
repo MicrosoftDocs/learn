@@ -24,35 +24,35 @@ There's one configuration option that we need to change: occlusion. MRTK2 bases 
 
     We need to change an option in the Spatial Awareness subsystem, but it's currently grayed out.
 
-    :::image type="content" source="../media/005-spatial-awareness-grayed-out.png" alt-text="Screen shot of the MRTK Spatial Awareness subsystem selected but grayed out.":::
+    :::image type="content" source="../media/005-spatial-awareness-grayed-out.png" alt-text="Screenshot that shows the MRTK Spatial Awareness subsystem selected but grayed out.":::
 
     To make it available, you must clone the default profile.
 
 1. Click the **Clone** button.
 1. In the **Clone Profile** window, note that in the **Profile Name** field, Unity provides a default name of **New MixedRealityToolkitconfigurationProfile**. You can change the name to anything you want, but for this learn module we'll stay with the name provided by Unity.
 
-    :::image type="content" source="../media/001-clone-profile-window.png" alt-text="Screen shot of the Clone Profile window and default clone name provided by Unity.":::
+    :::image type="content" source="../media/001-clone-profile-window.png" alt-text="Screenshot that shows the Clone Profile window and default clone name provided by Unity.":::
 
 1. Click the **Clone** button in the **Clone Profile** window. 
 1. Note that the **Enable Spatial Awareness System** option is now available. 
 
-    :::image type="content" source="../media/002-enable-spatial-awareness.png" alt-text="Screen of the Enable Spatial Awareness System option now being available.":::
+    :::image type="content" source="../media/002-enable-spatial-awareness.png" alt-text="Screenshot that shows the Enable Spatial Awareness System option now being available.":::
 
     Select this option.
 
-1. The Spatial Awareness system has its own default profile (see "1" in the image below). Like the earlier default profile, it can't be altered, so the **Add Spatial Observer** section is grayed out (see "2" in the image below).
+2. The Spatial Awareness system has its own default profile (see "1" in the image below). Like the earlier default profile, it can't be altered, so the **Add Spatial Observer** section is grayed out (see "2" in the image below).
 
-    :::image type="content" source="../media/003-spatial-awareness-profile.png" alt-text="Screen of the default Spatial profile and its options grayed out.":::
+    :::image type="content" source="../media/003-spatial-awareness-profile.png" alt-text="Screenshot that shows the default Spatial profile and its options grayed out.":::
 
     You must clone this profile, too.
 
-1. Click the **Clone** button to the right of the default profile name.
-1. In the **Clone Profile** window, click the **Clone** button to accept the clone name provided by Unity.
-1. There are now three Spatial Observers available as drop-downs. Click the first one, **XR SDK Windows Mixed Reality Spatial Mesh Observer**, to reveal its contents.
-1. This spatial observer also has its own default profile that must be cloned. Click the **Clone** button, and then in the **Clone Profile** window, click **Clone** to accept the name provided by Unity and clone the default profile.
-1. Scroll down to the last section in the profile, **Display Settings**, then click the **Display Option** drop-down, and then select **Occlusion**.
+3. Click the **Clone** button to the right of the default profile name.
+4. In the **Clone Profile** window, click the **Clone** button to accept the clone name provided by Unity.
+5. There are now three Spatial Observers available as drop-downs. Click the first one, **XR SDK Windows Mixed Reality Spatial Mesh Observer**, to reveal its contents.
+6. This spatial observer also has its own default profile that must be cloned. Click the **Clone** button, and then in the **Clone Profile** window, click **Clone** to accept the name provided by Unity and clone the default profile.
+7. Scroll down to the last section in the profile, **Display Settings**, then click the **Display Option** drop-down, and then select **Occlusion**.
 
-    :::image type="content" source="../media/004-display-options-occlusion.png" alt-text="Screen of the Spatial Observer section Display Settings with Occlusion selected.":::
+    :::image type="content" source="../media/004-display-options-occlusion.png" alt-text="Screenshot that shows the Spatial Observer section Display Settings with Occlusion selected.":::
 
 ## Install in-built Unity packages and import the tutorial assets
 
@@ -108,7 +108,7 @@ In this section, you'll add scripts to the scene to create a series of button ev
 1. In the **Hierarchy**, click the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
 1. Click the **No Function** drop-down and then select **AnchorModuleScript** > **StartAzureSession ()**. This function will be executed when the event is triggered.
 
-    :::image type="content" source="../media/008a-start-azure-session.png" alt-text="Unity with the StartAzureSession button's OnClick event configured." :::
+    :::image type="content" source="../media/008-a-start-azure-session.png" alt-text="Screenshot that shows Unity with the StartAzureSession button's OnClick event configured." :::
 
 1. In the **Hierarchy** pane in the **ButtonParent** child list, select **StopAzureSession**
 1. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
