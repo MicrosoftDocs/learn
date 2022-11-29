@@ -1,4 +1,4 @@
-You've now worked with the Azure IoT Central application and connected the coffee machine to Azure IoT Central. You are well on your way to begin to monitor and manage your remote coffee machine. In this unit, you take a moment to validate your setup and connection by using the **Connected Coffee Machine** template that you defined earlier. You update the optimal temperature on the **Properties** form, run commands to update the state of your machine, and view your connected coffee machine telemetry.
+You've now worked with the Azure IoT Central application and connected the coffee machine to Azure IoT Central. You're well on your way to begin to monitor and manage your remote coffee machine. In this unit, you take a moment to validate your setup and connection by using the **Connected Coffee Machine** template that you defined earlier. You update the optimal temperature on the **Properties** form, run commands to update the state of your machine, and view your connected coffee machine telemetry.
 
 ## Update properties to sync your application with the coffee machine
 
@@ -6,11 +6,11 @@ Use the **Properties** form you defined in the device template to send configura
 
 1. Navigate to the **Devices** page in your Azure IoT Central application.
 
-1. Click on **Connected Coffee Machine - Real - 001** in the list of devices to view the device details.
+1. Select **Connected Coffee Machine - Real - 001** in the list of devices to view the device details.
 
 1. Select **Properties** to view the form.
 
-1. Enter _95_ as the optimal temperature. Then select **Save**.
+1. Enter *95* as the optimal temperature. Then select **Save**.
 
 When the property is changed, the property is marked as **Pending: now** in the UI until the coffee machine acknowledges the setting change. The property is then marked as **Accepted: now**.
 
@@ -23,13 +23,13 @@ Use the **Properties** form you defined in the device template to update configu
 
 1. Navigate to the **Devices** page in your Azure IoT Central application.
 
-1. Click on **Connected Coffee Machine - Real - 001** in the list of devices to view the device details.
+1. Select **Connected Coffee Machine - Real - 001** in the list of devices to view the device details.
 
 1. Select **Properties** to view the form.
 
-1. Enter _92_ as the **Coffee Maker Min Temperature (&deg;C)** and _99_ as the **Coffee Maker Max Temperature (&deg;C)**. Then select **Save**.
+1. Enter *92* as the **Coffee Maker Min Temperature (&deg;C)** and *99* as the **Coffee Maker Max Temperature (&deg;C)**. Then select **Save**.
 
-Cloud properties are not synced with the device, they only exist in the IoT Central application.
+Cloud properties aren't synced with the device, they only exist in the IoT Central application.
 
 ## Run commands on the coffee machine
 
@@ -47,7 +47,7 @@ Navigate to the **Commands** page for your device for the following exercise. To
 
     Look for confirmation messages in the console log of the simulated coffee machine.
 
-    ```
+    ```console
     Device successfully connected to Azure IoT Central
     Device Twin successfully retrieved from Azure IoT Central
      * Property - Warranty State: false
@@ -72,7 +72,7 @@ Navigate to the **Commands** page for your device for the following exercise. To
     > [!NOTE]
     > As in real life, when the technician takes the machine offline to perform necessary repairs before switching it back online, the coffee machine continues to stay in the maintenance mode until you reboot the client code.
 
-    ```
+    ```console
     Device successfully connected to Azure IoT Central
     Device Twin successfully retrieved from Azure IoT Central
      * Property - Warranty State: true
