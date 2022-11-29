@@ -12,9 +12,9 @@ Telemetry is the data that streams from your device. You can add multiple teleme
 
 Use properties to share configuration data between a device and your application.
 
-In this scenario, you use a _writeable_ property to set the optimal water temperature and send it to the coffee machine. When the writeable property is updated in IoT Central, it's marked as pending in the UI until the device acknowledges that it has responded to the update.
+In this scenario, you use a *writeable* property to set the optimal water temperature and send it to the coffee machine. When the writeable property is updated in IoT Central, it's marked as pending in the UI until the device acknowledges that it has responded to the update.
 
-You can use _read-only_ properties to enable a device to send values to your application. Read-only properties can only be changed by the device. In this scenario, you define a device property called **Device Warranty Expired** in the device template. The **Device Warranty Expired** field remains empty until the coffee machine is connected to IoT Central. Once connected, the coffee machine sends the warranty status to the application.
+You can use *read-only* properties to enable a device to send values to your application. Read-only properties can only be changed by the device. In this scenario, you define a device property called **Device Warranty Expired** in the device template. The **Device Warranty Expired** field remains empty until the coffee machine is connected to IoT Central. Once connected, the coffee machine sends the warranty status to the application.
 
 ### Commands
 
@@ -22,7 +22,7 @@ Use commands to remotely manage your device from your application. You can direc
 
 ### Cloud properties
 
-_Cloud properties_ are device metadata that's associated with the device. Use cloud properties to record information about your device in your IoT Central application. In this scenario, you use cloud properties to record the ideal water temperature range of the coffee machine. Cloud properties are stored in the IoT Central application and don't synchronize with the device. Cloud properties are not part of an interface definition.
+*Cloud properties* are device metadata that's associated with the device. Use cloud properties to record information about your device in your IoT Central application. In this scenario, you use cloud properties to record the ideal water temperature range of the coffee machine. Cloud properties are stored in the IoT Central application and don't synchronize with the device. Cloud properties aren't part of an interface definition.
 
 ### Views
 
@@ -194,9 +194,7 @@ To create a device template, you can either build it from scratch in the IoT Cen
 
 1. On the **Select template type** page, select the **IoT device** tile, and then select **Next: Customize**.
 
-1. On the **Customize** page, enter _Connected Coffee Machine_ as the device template name. Then select **Next: Review**. Then select **Create**.
-
-1. Enter _Connected Coffee Machine_ as the device template name, and then press **Enter**.
+1. On the **Customize** page, enter *Connected Coffee Machine* as the device template name. Then select **Next: Review**. Then select **Create**.
 
 1. On the **Create a model** page, select the **Import a model** tile. Then browse to and select the **CoffeeMaker.json** file you created previously, and select **Open**.
 
@@ -210,6 +208,8 @@ To add the cloud properties that store the ideal water temperature range for cof
 
 1. Navigate to the **Connected Coffee Machine** device template you created, and select  **Connected Coffee Maker** capability model.
 
+1. Select **+ Add capability** twice, and then select the **Expand** arrow on the new capabilities.
+
 1. Add two cloud properties to the device template using the information in the following table:
 
     | Display name | Name |Capability type | Semantic type | Schema | Min value | Max value | Decimal places | Unit|
@@ -217,10 +217,9 @@ To add the cloud properties that store the ideal water temperature range for cof
     | Coffee Maker Min Temperature | CoffeeMakerMinTemperature | Cloud Property | Temperature | Double | 88 | 92 | 1 | Degree celsius |
     | Coffee Maker Max Temperature | CoffeeMakerMaxTemperature | Cloud Property | Temperature | Double | 96 | 99 | 1 | Degree celsius |
 
-1. Save your changes.
+1. Select **Save** to save your changes.
 
     ![Connected Coffee Machine cloud properties.](../media/2-cloud-properties.png)
-
 
 ## Add views to your template
 
@@ -228,19 +227,22 @@ To create a view that lets you visualize the telemetry from your coffee machine:
 
 1. Navigate to the **Connected Coffee Machine** device template you created, and select **Views**.
 
-1. Add a new **Visualizing the device** view called _Telemetry_.
+1. Add a new **Visualizing the device** view called *Telemetry*.
 
-1. Select **Start with devices**. Add a 2x1 tile called **Cup Detected** to show the last known value of the **Cup Detected** telemetry value.
+1. Select **Start with devices**. Select the **Telemetry** drop-down, select **Cup Detected**, and then select **Add tile**. On the new tile, select the **Change Visualization** icon, and then select **Last Known Value**. Then, select the **Size available** icon and select **2x1**. This tile will show the last known value of the **Cup Detected** telemetry value.
 
-1. Add a 2x1 tile called **Brewing** to show the last known value of the **Brewing** telemetry value.
+    > [!NOTE]
+    > Use the previous step as an example when you create the rest of the tiles. You'll need to change the visualization in most cases to see certain tile size options.
 
-1. Add a 3x3 tile called **Telemetry** that uses a line chart to plot the average values of **Water Temperature** and **Air Humidity** for the past 30 minutes.
+1. Add a 2x1 last known value tile called **Brewing** to show the **Brewing** telemetry value.
 
-1. Add a 1x1 tile called **Water Temperature (Min)** that displays the minimum water temperature over the past 12 hours as a KPI.
+1. Add a 3x3 line chart tile called **Telemetry** to plot the average values of **Water Temperature** and **Air Humidity** for the past 30 minutes.
 
-1. Add a 1x1 tile called **Air Humidity (avg)** that displays the maximum air humidity over the past 12 hours as a KPI.
+1. Add a 1x1 KPI tile called **Water Temperature (Min)** that displays the minimum water temperature over the past 12 hours.
 
-1. Save your changes.
+1. Add a 1x1 KPI tile called **Air Humidity (avg)** that displays the maximum air humidity over the past 12 hours.
+
+1. Select **Save** to save your changes.
 
     ![Connected Coffee Machine telemetry view.](../media/2-telemetry-view.png)
 
@@ -248,11 +250,11 @@ To create a view that lets you manage the properties of your coffee machine:
 
 1. Navigate to the **Connected Coffee Machine** device template you created, and select **Views**.
 
-1. Add a new **Editing device and cloud data** form called _Properties_.
+1. Add a new **Editing device and cloud data** form called *Properties*.
 
 1. Add a section that includes both the **Optimal Temperature** and **Device Warranty Expired** properties and the **Coffee Maker Min Temperature** and **Coffee Maker Max Temperature** cloud properties.
 
-1. Save your changes.
+1. Select **Save** to save your changes.
 
     ![Connected Coffee Machine property view.](../media/2-properties-form.png)
 
