@@ -59,4 +59,4 @@ Many web developers change the color and style of hyperlinks on a page. You will
 
 The following screenshot shows the results of the CSS you applied. You used classes, IDs, and pseudo-classes to apply styles to specific elements and logical groups of elements.
 
-![Rendered results of the CSS being appled to the HTML code](../media/selectors-final.png)
+![Browser render of the CSS appled to the HTML code.](../media/selectors-final.png)

@@ -13,7 +13,7 @@ As with any computer language, CSS supports comments. To comment in a section of
 
 You can use CSS to tell the browser what font you want to use for specific text. Sometimes you want to use Arial for readability or something fancier for style. The following image shows some text in Arial and other text in a font called "Impact."
 
-![text in two fonts](../media/two-fonts.png)
+![Browser render of H T M L text in two fonts.](../media/two-fonts.png)
 
 The most common option for setting the font to use on a page is `font-family`. `font-family` is typically set to a list of fonts, allowing the browser to use the first font listed it can support. For example, a setting of `Tahoma, Verdana, sans-serif` will attempt to use Tahoma, followed by Verdana, and finally a generic sans serif font.
 
