@@ -23,8 +23,7 @@ this module:
 
 * [Define cloud governance corporate policy - Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/policy-compliance/policy-definition)
 * [Operational compliance in Azure - Cloud Adoption Framework](/azure/cloud-adoption-framework/manage/azure-management-guide/operational-compliance?tabs=UpdateManagement%2CAzurePolicy%2CAzureBlueprints)
-* [Azure and other Microsoft cloud services compliance offerings -
-    Azure Compliance](https://learn.microsoft.com/azure/compliance/offerings/)
+* [Azure and other Microsoft cloud services compliance offerings - Azure Compliance](/azure/compliance/offerings/)
 * [Operational compliance in Azure - Cloud Adoption Framework](/azure/cloud-adoption-framework/manage/azure-management-guide/operational-compliance?tabs=UpdateManagement%2CAzurePolicy%2CAzureBlueprints)
 * [Evaluate and define corporate policy - Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/corporate-policy)
 * [Regulatory compliance - Microsoft Azure Well-Architected Framework](/azure/architecture/framework/security/design-regulatory-compliance)
