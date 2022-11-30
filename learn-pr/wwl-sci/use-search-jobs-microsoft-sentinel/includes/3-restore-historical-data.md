@@ -24,8 +24,9 @@ You can restore archived data directly from the Search  page or from a saved sea
 1. Under General, select Search.
 1. Restore log data in one of two ways:
 
-    - At the top of Search page, select Restore.
-    - Select the Saved Searches tab and Restore on the appropriate search.
+    1. At the top of Search page, select Restore.
+    1. Select the Saved Searches tab and Restore on the appropriate search.
+
 1. Select the table you want to restore.
 1. Select the time range of the data that you want restore.
 1. Select Restore.
