@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.build-industrial-brain.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: In this unit, you'll get an introduction to the context of building a modular with Project Bonsai.
+  ms.date: 11/30/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)] 

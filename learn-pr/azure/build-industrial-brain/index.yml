@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.oxford.build-industrial-brain
+metadata:
+  title: Build an industrial strength brain
+  description: Learn the concept of Machine Teaching to create a modular brain with an example.
+  ms.date: 11/30/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build an industrial strength brain
+summary: In this module, you'll learn about capabilities and essential concepts of Machine Teaching, the steps to add intelligence into Autonomous Intelligence systems and the types of business problems that you can solve using Machine Teaching for Autonomous AI.
+abstract: | 
+  In this module, you'll learn how to:
+  - Describe how AI specification documents are used to build Bonsai brains 
+  - Explain coding and training of monomodular brains with the Bonsai UI
+  - Describe the Project Bonsai workflow using the Moab as an example 
+
+  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+prerequisites: | 
+  - Basic knowledge of Automated Intelligence
+  - Basic knowledge of Autonomous Intelligence
+  - Basic knowledge of Machine Teaching
+  - Basic knowledge of AI Specification document
+  - Basic knowledge of brain design patterns
+iconUrl: /training/achievements/generic-badge.svg
+levels: 
+- beginner
+roles: 
+- business-user
+products: 
+- azure
+subjects:
+- artificial-intelligence
+units:
+- learn.oxford.build-industrial-brain.introduction
+- learn.oxford.build-industrial-brain.define-problem
+- learn.oxford.build-industrial-brain.setup-account
+- learn.oxford.build-industrial-brain.create-brain
+- learn.oxford.build-industrial-brain.summary
+
+badge: 
+  uid: learn.oxford.build-industrial-brain.badge
