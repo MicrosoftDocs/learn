@@ -22,9 +22,9 @@ Security posture refers to the current state of an organization's security---tha
 
 These three pillars are:
 
--   Protect: An organization's security posture is not static, it changes constantly in response to emerging new threats and variabilities in the environment. Enabling protections, like multifactor authentication (MFA) for administrators, strengthens a company's posture. A lack of vigilance, such as failing to update endpoints or use available protections can weaken an organizations security posture. The security hygiene of your environment helps to reduce the likelihood that threat actors will successfully compromise your workloads.
--   Detect: After mitigating all security recommendations, you also must ensure that you have threat detection in place to quickly identify suspicious activities in your workloads and trigger an alert to bring awareness about it.
--   Respond: Finally, ensure that you have automation in place to take immediate action on the alerts that you receive by appropriately responding to it with actions that can contain and mitigate the attack.
+- Protect: An organization's security posture is not static, it changes constantly in response to emerging new threats and variabilities in the environment. Enabling protections, like multifactor authentication (MFA) for administrators, strengthens a company's posture. A lack of vigilance, such as failing to update endpoints or use available protections can weaken an organizations security posture. The security hygiene of your environment helps to reduce the likelihood that threat actors will successfully compromise your workloads.
+- Detect: After mitigating all security recommendations, you also must ensure that you have threat detection in place to quickly identify suspicious activities in your workloads and trigger an alert to bring awareness about it.
+- Respond: Finally, ensure that you have automation in place to take immediate action on the alerts that you receive by appropriately responding to it with actions that can contain and mitigate the attack.
 
 The use of benchmarks to evaluate your current environment, understand
 the current gaps and provide guidance on how to improve, is a very common
@@ -59,45 +59,28 @@ practices for Azure workloads.
 
 ## Evaluating security posture in Azure workloads
 
-One option to evaluate the security posture of your workloads is by
-using Azure Security Benchmark (ASB), which is widely used by
-organizations to meet security control requirements in Azure. ASB
-provides clear and concrete guidance on how to securely configure Azure
-resources to meet both security and compliance requirements. ASB often
-plays a key role in Azure onboarding, enabling organizations to
-accelerate both initial Azure onboarding as well as ongoing
-onboarding/assessment of Azure Cloud Services.
+The Microsoft cloud security benchmark (MCSB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure and your multicloud environment. This benchmark focuses on cloud-centric control areas with input from a set of holistic Microsoft and industry security guidance that includes:
 
-Customers often have to reconcile and harmonize multiple control
-frameworks when planning and evaluating their Azure environments to meet
-security and compliance requirements. This often requires security teams
-to repeat the same evaluation process for the various control
-frameworks, creating unnecessary overhead, cost, and effort. To address
-this concern, Microsoft developed ASB to function as a harmonizing
-control framework to help you quickly work with established standards in
-the context of a cloud environment---standards such as CIS Controls v8
-and v7, NIST SP800-53 Rev4, and PCI-DSS v3.2.1. Organizations can use
-ASB to evaluate their Azure deployment's security posture consistently
-and easily against these industry standards with minimal repeated work.
+* Cloud Adoption Framework: Guidance on security, including [strategy, roles and responsibilities](/azure/cloud-adoption-framework/organize/cloud-security), [Azure Top 10 Security Best Practices](/azure/cloud-adoption-framework/get-started/security#step-1-establish-essential-security-practices), and [reference implementation](/azure/cloud-adoption-framework/ready/enterprise-scale).
+* Azure Well-Architected Framework: Guidance on [securing your workloads on Azure](/assessments/?mode=pre-assessment&session=local).
+* The Chief Information Security Officer (CISO) Workshop: [Program guidance and reference strategies to accelerate security modernization using Zero Trust principles](/security/ciso-workshop/the-ciso-workshop).
+* Other industry and cloud service providers security best practice standards and framework: Examples include the Amazon Web Services (AWS) Well-Architected Framework, Center for Internet Security (CIS) Controls, National Institute of Standards and Technology (NIST), and Payment Card Industry Data Security Standard (PCI-DSS).
 
-![Diagram showing Azure centric controls coming from C I S, P C I and NIST.](../media/azure-centric-controls.png) 
 
-Azure Security Benchmark is surfaced in Microsoft Defender for Cloud
-regulatory compliance dashboard as shown in the following image:
+Here's what's new in the Microsoft cloud security benchmark v1:
+
+1. Comprehensive multicloud security framework: Organizations often have to build an internal security standard to reconcile security controls across multiple cloud platforms to meet security and compliance requirements on each of them. This often requires security teams to repeat the same implementation, monitoring and assessment across the different cloud environments (often for different compliance standards). This creates unnecessary overhead, cost, and effort. To address this concern, we enhanced the ASB to MCSB to help you quickly work with different clouds by:
+
+    - Providing a single control framework to easily meet the security controls across clouds
+    - Providing consistent user experience for monitoring and enforcing the multicloud security benchmark in Defender for Cloud
+    - Staying aligned with Industry Standards (e.g., CIS, NIST, PCI)
+
+    ![Diagram showing Azure centric controls coming from C I S, P C I and N I S T.](../media/azure-centric-controls.png) 
+
+1. Automated control monitoring for AWS in Microsoft Defender for Cloud: You can use Microsoft Defender for Cloud Regulatory Compliance Dashboard to monitor your AWS environment against MCSB just like how you monitor your Azure environment. We developed approximately 180 AWS checks for the new AWS security guidance in MCSB, allowing you to monitor your AWS environment and resources in Microsoft Defender for Cloud.
 
 ![Screenshot showing Azure Security Benchmark surfaced in Microsoft Defender for Cloud regulatory compliance dashboard.](../media/microsoft-defender-cloud-regulatory-compliance.png) 
 
-This benchmark gives you visibility of which security recommendations
-are open per compliance control. Under each applicable compliance
-control, you have a set of assessments run by Defender for Cloud that
-are associated with that control. If they're all green, it means those
-assessments are currently passing; this does not ensure you're fully
-compliant with that control. Furthermore, not all controls for any
-particular regulation are covered by Defender for Cloud assessments, and
-therefore this report is only a partial view of your overall compliance
-status.
+1. A refresh of the existing Azure guidance and security principles: We also refreshed some of the existing Azure security guidance and security principles during this update so you can stay current with the latest Azure features and capabilities.
 
-While this is the preferred benchmark for Azure, you may need to use a
-different benchmark according to your organization's needs. You can
-navigate through different tabs that have assigned regulatory standards to visualize the applicable compliance controls that were assessed
-and the current status of each item.
+For more information, see [Microsoft cloud security benchmark](/security/benchmark/azure/overview).
