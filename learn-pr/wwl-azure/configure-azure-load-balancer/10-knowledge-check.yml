@@ -35,7 +35,7 @@ quiz:
       explanation: "Incorrect. Affinity specifies that successive requests from the same client IP address and protocol combination will be handled by the same virtual machine."
     - content: "Three-tuple hash"
       isCorrect: false
-      explanation: "Incorrect. A three-tuple hash is not the distribution type."
+      explanation: "Incorrect. A three-tuple hash isn't the distribution type."
     - content: "Five-tuple hash"
       isCorrect: true
       explanation: "Correct. The load balancer uses a five-tuple (source IP, source port, destination IP, destination port, and protocol type) hash to map traffic to available servers."
