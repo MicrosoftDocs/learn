@@ -1,6 +1,6 @@
 Azure provides several high availability options for virtual machines. You can achieve high availability by using availability sets, availability zones, and Azure Virtual Machine Scale Sets.
 
-In this module, you learned how to configure virtual machine availability by using availability sets and availability zones for updates and fault domains. You discovered how to autoscale virtual machines and configure vertical and horizontal scaling. You reviewed how to implement Virtual Machine Scale Sets, including storage resiliency and scalability options. You explored how to use Azure Virtual Machine Custom Script extensions to automatically configure virtual machines.
+In this module, you learned how to configure virtual machine availability by using availability sets and availability zones with update and fault domains. You discovered how to autoscale virtual machines and configure vertical and horizontal scaling. You reviewed how to implement Virtual Machine Scale Sets, including storage resiliency and scalability options. You explored how to use Azure Virtual Machine Custom Script extensions to automatically configure virtual machines.
 
 ## Learn more
 

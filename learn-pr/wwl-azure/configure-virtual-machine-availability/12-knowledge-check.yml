@@ -30,7 +30,7 @@ quiz:
       isCorrect: true
       explanation: "Correct. To meet the Admin team scenario requirements, enable the autoscale option so more virtual machines are created when the CPU is 75% consumed."
 
-  - content: "Which Virtual Machine Scale Sets features can be configured to add more DevOps machines during peak production?"
+  - content: "Which Virtual Machine Scale Sets feature can be configured to add more DevOps machines during peak production?"
     choices:
     - content: "Schedule-based rules"
       isCorrect: true
@@ -42,7 +42,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. Metric-based rules are better for situations like CPU usage or storage disk capacity."
 
-  - content: "RWhat types of scaling can you use to increase the CPU _capacity_ for your existing Virtual Machine Scale Sets instances?"
+  - content: "What types of scaling can you use to increase the CPU _capacity_ for your existing Virtual Machine Scale Sets instances?"
     choices:
     - content: "Horizontal scaling"
       isCorrect: false
