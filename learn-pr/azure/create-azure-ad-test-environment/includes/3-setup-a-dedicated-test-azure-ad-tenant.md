@@ -8,7 +8,7 @@
 
     [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
 -->
-When setting up an application test environment, you need to decide between using a dedicated test Azure AD tenant or your production tenant.  Using a production tenant can make some aspects of application testing easier, but it requires the right level of isolation between test and production resources. Isolation is especially important for high-privilege scenarios. If you can't safely constrain your test app in your production tenant, create a separate tenant for development and testing purposes.
+When setting up your application's Azure AD test environment, you need to decide between using a dedicated test tenant or your production Azure AD tenant.  Using a production tenant can make some aspects of application testing easier, but it requires the right level of isolation between test and production resources. Isolation is especially important for high-privilege scenarios. If you can't safely constrain your test app in your production tenant, create a separate tenant for development and testing purposes.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 

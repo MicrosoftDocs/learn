@@ -10,7 +10,7 @@
 -->
 Great work!  You have successfully:
 
-- Learned how to evaluate whether you should use an existing production tenant in Azure AD for application testing, or whether you should create a separate test tenant
+- Learned how to evaluate whether you should use an existing production tenant in Azure AD for your application test environment, or whether you should create a separate test tenant
 - Setup a dedicated test tenant in Azure AD
 - Created a test user in the test tenant
 - Created an app registration to use as a test client for your web app
@@ -73,3 +73,51 @@ TODO: describe the business impact
  -->
 
 <!-- Do not include any other content -->
+## Clean up
+
+In this module, you created resources using your Azure subscription. You'll want to clean up these resources so that they won't count against your quotas and/or you won't continue to be charged for them. If you don’t need the resources you created to complete other training modules, delete the resources by completing the following steps.
+
+### Delete a user
+
+To delete a user in Azure CLI, run the az ad user delete command as a Global Administrator or a User Administrator.
+
+```azurecli-interactive
+az ad user delete --id "<NewUser@contoso.onmicrosoft.com>"
+```
+
+### Delete an app registration
+
+To delete an app registration in Azure CLI, run the az ad app delete command as a Global Administrator or Application Administrator.
+
+```azurecli-interactive
+az ad app delete --id $TESTUPN
+```
+
+### Delete an Azure AD tenant
+
+When an tenant is deleted in Azure AD, part of Microsoft Entra, all resources in the organization are also deleted. Prepare your organization by minimizing its associated resources before you delete. Only a global administrator in Azure AD can delete an Azure AD organization from the Azure portal.
+
+#### Prepare the tenant
+
+You can't delete an organization in Azure AD until it passes several checks.
+
+- You've paid all outstanding invoices and amounts due or overdue.
+- No users are in the Azure AD tenant, except one global administrator who will delete the organization. You must delete any other users before you can delete the organization.
+- If users are synchronized from on-premises, turn off the sync first. You must delete the users in the cloud organization by using the Azure portal or Azure PowerShell cmdlets.
+- No applications are in the organization. You must remove any applications before you can delete the organization.
+- No multifactor authentication providers are linked to the organization.
+- No subscriptions for any Microsoft Online Services offerings (such as Azure, Microsoft 365, or Azure AD Premium) are associated with the organization.
+- For example, if a default Azure AD tenant was created for you in Azure, you can't delete this organization if your Azure subscription still relies on it for authentication. You also can't delete a tenant if another user has associated an Azure subscription with it.
+
+#### Delete the tenant
+
+1. Sign in to the [Azure AD admin center](https://aad.portal.azure.com) with an account that is the global administrator for your organization.
+1. Select **Azure Active Directory**.
+1. On a tenant's **Overview** page, select **Manage tenants**.
+  
+   ![Screenshot that shows the button for managing tenants.](../media/directory-delete-howto/manage-tenants-command.png)
+
+1. Select the checkbox for the tenant that you want to delete, and then select **Delete**.
+  
+   ![Screenshot that shows the button for deleting an organization.](../media/directory-delete-howto/manage-tenants-delete-command.png)
+1. If your organization doesn't pass one or more checks, you'll get a link to more information on how to pass. After you pass all checks, select **Delete** to complete the process.

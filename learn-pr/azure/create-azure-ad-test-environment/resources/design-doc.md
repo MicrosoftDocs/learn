@@ -17,6 +17,7 @@ Azure Active Directory
 
 ## Prerequisites
 - Experience navigating the Azure portal
+- Ability to write Azure CLI and PowerShell scripts at the beginner ability
 - Knowledge of Azure AD tenants, app registrations, service principals, and users at the beginner level.
 - Knowledge of app permissions and consent in Microsoft identity platform at the beginner level.
 - To complete the exercise in this module you will need an Azure account with an active subscription. Create an [account for free](https://azure.microsoft.com/free/).
@@ -30,7 +31,7 @@ Evaluate whether you need a dedicated test tenant for your application test envi
 After completing this module, you'll be able to:
 
 1. Evaluate whether you need a dedicated test Azure AD tenant or production tenant for your application test environment.
-1. Set up a test environment in a separate tenant
+1. Set up a test environment in a separate Azure AD tenant.
 
 ## Chunk your content into subtasks
 

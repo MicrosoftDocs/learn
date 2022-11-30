@@ -18,7 +18,7 @@ To help move your app through the development, test, and production lifecycle, y
 
     Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
 -->
-Recall that in the sales team dashboard example, managers use an internal web app to manage their direct reports and help them meet their targets.  Managers sign in to the web app and can view confidential information for themselves and the employees that report to them, internal sales goals, and upcoming product release dates.  To better secure access to the sales team dashboard, administrators recently enabled Azure AD Multi-Factor Authentication to prompt users for additional verification information during sign-in. Testing your application in your production tenant would be simpler and easier, but can you safely constrain the test application in the production environment?  Will the administrators approve the creation of test users and test data in production environment?  How can your tests use automated sign-ins for integration testing when user interaction is required (through multi-factor authentication)?
+Recall that in the sales team dashboard example, managers use an internal web app to manage their direct reports and help them meet their targets.  Managers sign in to the web app and can view confidential information for themselves and the employees that report to them, internal sales goals, and upcoming product release dates.  To better secure access to the sales team dashboard, administrators recently enabled Azure AD Multi-Factor Authentication to prompt users for additional verification information during sign-in. Testing your application in your production Azure AD tenant would be simpler and easier, but can you safely constrain the test application in the production environment?  Will the administrators approve the creation of test users and test data in production environment?  How can your tests use automated sign-ins for integration testing when user interaction is required (through multi-factor authentication)?
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------
 
@@ -28,7 +28,7 @@ Recall that in the sales team dashboard example, managers use an internal web ap
 
     Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
 -->
-This exercise takes you through the process of evaluating whether you need a dedicated Azure AD tenant for your application test environment or if you can use your existing production tenant.
+This exercise takes you through the process of evaluating whether you need a dedicated tenant for your application's Azure AD test environment or if you can use your existing production tenant.
 
 <!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
 
