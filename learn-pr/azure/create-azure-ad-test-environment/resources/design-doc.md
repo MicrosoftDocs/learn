@@ -40,7 +40,9 @@ Identify the subtasks of module title.
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it? (Exercise or Knowledge check) | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
 | Evaluate whether you need a dedicated test tenant or production Azure AD tenant for your application test environment | TODO | Knowledge check | 1 | Yes |
-| Create a dedicated Azure AD tenant for your application test environment | TODO | Exercise | 1 | Yes |
+| Create a dedicated Azure AD tenant for your application test environment | TODO | Exercise | 2 | Yes |
+| Create an Azure AD app registration as an identity for your web app. | TODO | Exercise | 2 | Yes|
+| Create a test user | TODO | Exercise | 2 | No |
 
 ## Outline the units
 
