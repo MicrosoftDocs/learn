@@ -6,6 +6,7 @@ on:
 
 jobs:
   stale:
+    if: github.repository == "MicrosoftDocs/learn-pr"
 
     runs-on: ubuntu-latest
 
