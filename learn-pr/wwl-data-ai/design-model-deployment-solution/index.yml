@@ -3,7 +3,7 @@ uid: learn.wwl.design-model-deployment-solution
 metadata:
   title: Design a model deployment solution
   description: "Azure Machine Learning Python SDK v2"
-  ms.date: 11/29/2022
+  ms.date: 11/30/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
