@@ -24,6 +24,10 @@ Let's review some characteristics of availability sets.
 
 - Microsoft provides robust Service Level Agreements (SLAs) for Azure virtual machines and availability sets. For details, see [SLA for Azure Virtual Machines](/support/legal/sla/virtual-machines/v1_9/).
 
+> [!NOTE]
+> Adding your virtual machines to an availability set won't protect your applications from operating system or application-specific failures.
+> You'll need to explore other disaster recovery and backup techniques to provide application-level protection.
+
 ### Things to consider when using availability sets
 
 Availability sets are an essential capability when you want to build reliable cloud solutions. In your planning for availability sets, keep the following general principles in mind:

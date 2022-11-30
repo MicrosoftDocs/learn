@@ -10,6 +10,8 @@ In this module, you learned how to configure virtual machine availability by usi
 
 - Deploy [your application on Azure Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app).
 
+- Choose [the right number of fault domains for Azure Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-manage-fault-domains).
+
 - Explore the [Custom Script Extension for Windows virtual machines](/azure/virtual-machines/extensions/custom-script-windows).
 
 - Use the [Azure Custom Script Extension Version 2 with Linux virtual machines](/azure/virtual-machines/extensions/custom-script-linux).
