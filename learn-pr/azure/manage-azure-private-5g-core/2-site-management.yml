@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-azure-private-5g-core.site-management
+title: Site management
+metadata:
+  title: Site management
+  description: "Describes the tasks for managing a site in a private mobile network that Azure Private 5G Core powers."
+  ms.date: 29/11/2022
+  author: michael-weizhong-shan
+  ms.author: michaelshan
+  ms.topic: interactive-tutorial
+  ms.service: learning-private-5g-core
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-site-management.md)]
