@@ -135,7 +135,7 @@ When restarting an episode, the simulation should take configuration parameters 
 
 The simulator configuration can be accessed by clicking on the simulation box in Visual Authoring as shown below:
 
-![The screenshot shows the configuration in brain graph.]
+![The screenshot shows the configuration in brain graph.](../media/chart-brain-simulator.png)
 
 Note that Bonsai can't verify if config values are taken and applied by the simulation. Simulation engineers are the ones to inform brain trainers about the valid config parameters (and their ranges) that the simulation accepts during episode restart.
 

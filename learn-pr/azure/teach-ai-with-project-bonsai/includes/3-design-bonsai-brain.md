@@ -6,7 +6,7 @@ You'll use the following in creating the solution:
 
 - **Project Bonsai**: Low-code AI development platform for intelligent control systems.
 
-- **Bonsai workspace**: It's a resource group that is provisioned on Azure to store exported brains and upload the simulators. The workspace links to the Bonsai site where brain training and evaluation happens.
+- **Bonsai workspace**: It's a resource group that is provisioned on Azure to store exported brains and upload the simulators. The workspace links to the Bonsai site where brain training and evaluation happen.
 
 - **Moab sample**: It's a prepackaged sample code for the ball balancing problem provided by Project Bonsai.
 
