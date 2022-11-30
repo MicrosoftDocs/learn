@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.teach-ai-with-project-bonsai.exercise-setup-account
+title: Exercise - Set up your account for Project Bonsai
+metadata:
+  title: Exercise - Set up your account for Project Bonsai
+  description: We explain how to create an account for designing brain in Project Bonsai.
+  ms.date: 11/14/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-exercise-setup-account.md)] 
