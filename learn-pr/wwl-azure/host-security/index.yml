@@ -2,8 +2,8 @@
 uid: learn.wwl.host-security
 metadata:
   title: Configure and manage host security
-  description: "Configure and manage host security"
-  ms.date: 11/29/2022
+  description: "Learn to lock down the devices, virtual machines, and other components that run your applications in Azure."
+  ms.date: 11/30/2022
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
