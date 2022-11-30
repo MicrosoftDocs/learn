@@ -7,7 +7,7 @@ security strategy and architecture. You should now be able to:
 
 -   Design a logging and auditing security strategy
 
--   Develop security operations for hybrid and multi-cloud environments
+-   Develop security operations for hybrid and multicloud environments
 
 -   Design a strategy for Security Information and Event Management
     (SIEM) and Security Orchestration, Automation, and Response (SOAR)

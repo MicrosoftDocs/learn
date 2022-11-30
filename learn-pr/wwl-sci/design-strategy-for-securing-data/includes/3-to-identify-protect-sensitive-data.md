@@ -157,7 +157,7 @@ the product which is being used:
 -   Microsoft Purview: Know your data, Protect your data, Prevent Data
     loss, Govern your data. Microsoft Purview is a unified data
     governance service that helps you manage and govern your
-    on-premises, multi-cloud, and software-as-a-service (SaaS) data.
+    on-premises, multicloud, and software-as-a-service (SaaS) data.
     Create a holistic, up-to-date map of your data landscape with
     automated data discovery, sensitive data classification, and
     end-to-end data lineage. Enable data curators to manage and secure

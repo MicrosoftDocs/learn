@@ -53,7 +53,7 @@ Once you know your data, you can establish key requirements such as:
 Just like any other cloud workload, data workloads need to have an
 ongoing security assessment to improve the overall security posture.
 Microsoft Purview is a unified data governance service that helps you manage
-and govern your on-premises, multi-cloud, and software-as-a-service
+and govern your on-premises, multicloud, and software-as-a-service
 (SaaS) data. Create a holistic, up-to-date map of your data landscape
 with automated data discovery, sensitive data classification, and
 end-to-end data lineage. Enable data curators to manage and secure your

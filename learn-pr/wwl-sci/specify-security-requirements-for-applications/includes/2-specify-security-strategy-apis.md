@@ -87,4 +87,4 @@ Focus on the business entities that the web API exposes. For example, in an e-co
 
 For a walkthrough of using Microsoft Defender for Cloud to unify DevOps security, view the following interactive guide.
 
-[:::image type="content" source="../media/unify-devops-security-management-defender-cloud-interactive-guide.png" alt-text="Cover for an interactive guide that says Manage your cloud security posture with Microsoft Defender for Cloud." border="true":::](https://mslearn.cloudguides.com/guides/Unify%20DevOps%20security%20management%20with%20Microsoft%20Defender%20for%20Cloud)
+[:::image type="content" source="../media/unify-devops-security-management-defender-cloud-interactive-guide.png" alt-text="Screenshot of an interactive guide with the title 'Manage your cloud security posture with Microsoft Defender for Cloud'." border="true":::](https://mslearn.cloudguides.com/guides/Unify%20DevOps%20security%20management%20with%20Microsoft%20Defender%20for%20Cloud)
