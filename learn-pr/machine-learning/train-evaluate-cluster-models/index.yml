@@ -23,7 +23,7 @@ levels:
 roles:
 - data-scientist
 products:
-- Azure
+- azure
 subjects:
 - machine-learning
 units:
