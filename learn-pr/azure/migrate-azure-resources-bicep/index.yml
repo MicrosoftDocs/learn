@@ -25,13 +25,13 @@ prerequisites: |
 
   Before you begin to follow the exercises in the module, you'll need the following items:
 
-  - An Azure account, with the ability to create resource groups. If you can't meet these requirements with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
+  - An Azure account, with the ability to create resource groups. If you can't meet these requirements with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/) and create a new Azure subscription and tenant.
   - Local installations of the following software:
-    - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
-    - [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
+    - [Visual Studio Code](https://code.visualstudio.com).
+    - [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
     - The latest version of one of the following command-line interface applications:
-      - [Azure CLI](/cli/azure/install-azure-cli/?azure-portal=true).
-      - [Azure PowerShell](/powershell/azure/install-az-ps/?azure-portal=true).
+      - [Azure CLI](/cli/azure/install-azure-cli/).
+      - [Azure PowerShell](/powershell/azure/install-az-ps/).
 iconUrl: /training/achievements/bicep/migrate-azure-resources-and-json-templates-bicep.svg
 levels:
 - intermediate

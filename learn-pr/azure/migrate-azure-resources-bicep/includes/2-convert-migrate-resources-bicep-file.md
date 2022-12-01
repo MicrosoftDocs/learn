@@ -153,13 +153,13 @@ resource dependencyAgentWindows 'Microsoft.Compute/virtualMachines/extensions@20
 
 #### ARM template reference
 
-The [ARM template reference](/azure/templates/?azure-portal=true) is a source of information about ARM template structure, resource types, API versions, and property definitions for Azure resources. The documentation provides examples both in Bicep and JSON formats.
+The [ARM template reference](/azure/templates/) is a source of information about ARM template structure, resource types, API versions, and property definitions for Azure resources. The documentation provides examples both in Bicep and JSON formats.
 
 You can choose specific resource providers and resource types, like `Microsoft.Web/serverFarms`, and their API versions. You can review which resource properties are required and which are optional. Most properties are described to help you understand what they do.
 
 #### Azure quickstart templates
 
-The [Azure quickstart templates](/samples/browse/?expanded=azure&products=azure-resource-manager&azure-portal=true) repository is a collection of community-contributed templates. This repository of searchable templates provides examples of many Azure resources and solutions. In some quickstarts, both a JSON ARM template and a Bicep ARM template are available to view. These templates can be used as a reference point to help you build and verify your templates for deployment.
+The [Azure quickstart templates](/samples/browse/?expanded=azure&products=azure-resource-manager) repository is a collection of community-contributed templates. This repository of searchable templates provides examples of many Azure resources and solutions. In some quickstarts, both a JSON ARM template and a Bicep ARM template are available to view. These templates can be used as a reference point to help you build and verify your templates for deployment.
 
 Suppose you want to find a template that builds an Azure App Service plan and app. Each quickstart template gives you the option to deploy the template directly to Azure or to view the template on GitHub.
 
