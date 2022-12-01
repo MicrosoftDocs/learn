@@ -17,24 +17,3 @@ You'll learn how to convert and migrate your Azure resources and JSON templates 
 ## What is the main goal?
 
 After completing this module, you'll understand how to migrate your Azure resources to Bicep. You'll also gain confidence in the fidelity of the templates you'll use in future deployments.
-
-## Prerequisites
-
-You should be familiar with:
-
-- Azure, including the Azure portal, subscriptions, and resource groups.
-- ARM templates (both JSON and Bicep), including parameters, modules, the `existing` keyword, and child and extension resources.
-- The what-if operation.
-- Refactoring Bicep files to align with best practices.
-
-Before you begin to follow the exercises in the module, you'll need the following items:
-
-- An Azure account, with the ability to create resource groups.
-  > [!TIP]
-  > If you can't meet these requirements with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
-- Local installations of the following software:
-  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
-  - [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
-  - The latest version of one of the following command-line interface applications:
-    - [Azure CLI](/cli/azure/install-azure-cli/?azure-portal=true).
-    - [Azure PowerShell](/powershell/azure/install-az-ps/?azure-portal=true).

@@ -68,7 +68,7 @@ The output includes three important pieces of information. Let's review each one
 
 ## Update the template
 
-Update _main.bicep_ `networkInterface` resource to include the `publicIPAddress` properties for `deleteOption` and `sku` properties.
+Update _main.bicep_ `networkInterface` resource to include the `publicIPAddress` properties for `deleteOption` and `sku`.
 
 :::code language="bicep" source="code/7-main-final.bicep" range="140-175" highlight="12-18":::
 
