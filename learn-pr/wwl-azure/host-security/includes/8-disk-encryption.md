@@ -7,7 +7,7 @@ If you use Microsoft Defender for Cloud, you'll be alerted if you have VMs that 
 
 Azure Disk Encryption is zone resilient, the same way as Virtual Machines.
 
-## Supported VMs and operating systems<br>
+## Supported VMs and operating systems
 
 **Supported VMs**
 
