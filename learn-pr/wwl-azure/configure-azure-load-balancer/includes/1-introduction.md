@@ -21,7 +21,7 @@ Configure load balancing
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
  -  Identify features and usage cases for Azure load balancer.
  -  Implement public and internal Azure load balancers.
