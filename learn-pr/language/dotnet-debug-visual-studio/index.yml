@@ -6,6 +6,7 @@ metadata:
   ms.date: 11/29/2022
   author: jongalloway
   ms.author: jogallow
+  manager: jmartens
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
 title: Interactively debug .NET apps with the Visual Studio debugger
