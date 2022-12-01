@@ -3,7 +3,7 @@ uid: learn.manage-azure-private-5g-core
 metadata:
   title: Manage the Azure Private 5G Core service
   description: "Describes Azure Private 5G Core routine management tasks, including site management, SIM management, and system upgrading tasks."
-  ms.date: 29/11/2022
+  ms.date: 11/29/2022
   author: michael-weizhong-shan
   ms.author: michaelshan
   ms.topic: interactive-tutorial
@@ -13,19 +13,15 @@ summary: "Describes Azure Private 5G Core routine management tasks, including si
 abstract: |
   By the end of this module, you'll be able to:
     - Give examples of routine management tasks for a private mobile network.
-    - Mange sites in a private mobile network.
-    - Mange SIMs for user equipment in a private mobile network.
-    - Upgrade a packet core instance and its underlying systems.
+    - Manage sites in a private mobile network.
+    - Manage SIMs, SIM policies, and services for user equipment in a private mobile network.
+    - Upgrade a packet core instance and its underlying Azure Stack Edge platform.
 prerequisites: |
   - Fundamental knowledge about Azure.
-    
     If you don't have the knowledge, consider taking relevant Azure Fundamental (AZ-900) training programs.
-
   - Fundamental knowledge of 5G and 4G technologies.
   - Fundamental knowledge about Azure Private 5G Core.
-  
     If you don't have the knowledge, consider taking the *Introduction to Azure Private 5G Core* training module first.
-
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate
