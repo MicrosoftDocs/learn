@@ -2,7 +2,7 @@ In this exercise, you'll begin creating the web page for your resume. You'll sta
 
 This exercise uses [vscode.dev](https://vscode.dev/) - a web-based version of Visual Studio Code and [CodeSwing](https://marketplace.visualstudio.com/items?itemName=codespaces-Contrib.codeswing). These tools help streamline the development process. No local installation is required to complete the exercises below.
 
-## Create an HTML Page with CodeSwing
+## Create an HTML page with CodeSwing
 
 You'll start by creating a folder, setting up your tooling, and creating a "swing" using CodeSwing in vscode.dev. A swing will automatically display the results of your code you author in vscode.dev. This allows you to quickly make modifications and the updates will happen in real time.
 
@@ -16,9 +16,7 @@ The following video demonstrates how to install CodeSwing in Visual Studio Code.
 1. Navigate to the **resume** folder you created earlier and select **Select Folder**.
 1. When prompted to **Let site view files**, select **View Files**.
 1. Select the **Extensions** button.
-
-  ![Extensions icon](../media/extensions.png)
-
+    >![Extensions icon](../media/extensions.png)
 1. In the **Search Extensions in Marketplace** text box, type **CodeSwing**.
 1. Select **Install** to install **CodeSwing**.
 1. Open the Command Palette by selecting **Ctl-Shift-P** or **Cmd-Shift-P** on a Mac.
@@ -29,7 +27,7 @@ The following video demonstrates how to install CodeSwing in Visual Studio Code.
 
 Visual Studio Code will create two windows side by side. The left will be your editor, where you can enter your HTML. The right will behave like a browser, displaying the results of your HTML code.
 
-## Add HTML to Create the Structure of Your Page
+## Add HTML to create the structure of your page
 
 Next, you'll add the HTML to create the structure of your page. You'll create the three main elements of `html`, `head`, and `body`. Inside the `body`, you'll add a section that will contain general information about you such as your name and social media information. You'll then add sections that will list your education and experience.
 
@@ -78,7 +76,7 @@ Each of the elements in the HTML does specific things. The following table descr
 
   ![Screenshot of resume structure](../media/html-structure.png)
 
-### Reviewing the Code
+### Reviewing the code
 
 Every HTML page has `html` as the root core element, with all content contained inside of it. `html` normally has two direct children, `head` that contains metadata, and `body` that contains the information to be displayed.
 
