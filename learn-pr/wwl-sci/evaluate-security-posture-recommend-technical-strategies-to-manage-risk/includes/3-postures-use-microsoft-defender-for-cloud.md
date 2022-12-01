@@ -32,6 +32,7 @@ the image below:
 ![Screenshot showing the filter in Defender for Cloud that allows you to view which phase of the MITRE ATTACK framework each remediation is mapped to.](../media/mitre-attack-tactics-filter.png)
 
 
-For a walkthrough of Using Microsoft Defender for Cloud along with other technologies to secure your resources view the following interactive guide.
+For a walkthrough of using Microsoft Defender for Cloud to manage your cloud security posture, view the following interactive guide.
 
-[:::image type="content" source="../media/secure-azure-hybrid-multicloud-interactive-guide.png" alt-text="Cover for an interactive guide that says Secure your Azure, hybrid, and multicloud environment." border="true":::](https://mslearn.cloudguides.com/guides/Secure%20your%20Azure%20hybrid%20and%20multicloud%20environment)
+[:::image type="content" source="../media/manage-cloud-security-posture-defender-cloud-interactive-guide.png" alt-text="Screenshot that shows an interactive guide with the title 'Manage your cloud security posture with Microsoft Defender for Cloud'." border="true":::](https://mslearn.cloudguides.com/guides/Manage%20your%20cloud%20security%20posture%20with%20Microsoft%20Defender%20for%20Cloud)
+

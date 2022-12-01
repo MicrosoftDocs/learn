@@ -9,7 +9,7 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
 durationInMinutes: 2
 content: |
   [!include[](includes/3-exercise-create-minimal-api.md)]
