@@ -10,6 +10,7 @@ After you successfully deploy your production environment by using your Bicep co
 
 - [Bicep documentation](/azure/azure-resource-manager/bicep/overview)
 - [Bicep on GitHub](https://github.com/Azure/bicep)
+- [Bicep deployment what-if operation](/azure/azure-resource-manager/bicep/deploy-what-if)
 - [Azure Quickstart Templates](/samples/browse/?expanded=azure&products=azure-resource-manager)
 - [Azure ARM template reference](/azure/templates/)
 - [ARM template deployment what-if operation](/azure/azure-resource-manager/templates/deploy-what-if?tabs=azure-powershell)
