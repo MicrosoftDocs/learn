@@ -1,4 +1,4 @@
-Now, let's review an example of an AI spec document for Project Moab.
+Now, let's review an example of an [AI spec document for Project Moab](https://github.com/MicrosoftDocs/mslearn-machine-teaching-for-autonomous-ai/blob/main/Bonsai%20Brain,%20AI%20Solution%20Spec%20-%20Moab%20Ball%20Balance.docx?raw=true).
 
 We'll be explaining the different sections that are included in any AI specification document, using the Moab specification document as an example.
 
