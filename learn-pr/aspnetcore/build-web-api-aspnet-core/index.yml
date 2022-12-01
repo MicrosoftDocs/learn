@@ -29,8 +29,6 @@ roles:
 products:
 - dotnet
 - aspnet-core
-- vs
-- vs-code
 subjects:
 - architecture
 - cache
