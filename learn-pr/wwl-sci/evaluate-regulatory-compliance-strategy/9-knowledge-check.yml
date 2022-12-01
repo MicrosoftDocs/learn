@@ -33,7 +33,7 @@ quiz:
     - content: "Microsoft Defender for Cloud"
       isCorrect: true
       explanation: "That’s correct. Security posture management from a centralized location is one of the main capabilities in Defender for Cloud."
-    - content: "Azure Purview"
+    - content: "Microsoft Purview"
       isCorrect: false
       explanation: "Incorrect. Microsoft Purview is a data classification and labeling solution for Azure."
     - content: "Azure AD"
