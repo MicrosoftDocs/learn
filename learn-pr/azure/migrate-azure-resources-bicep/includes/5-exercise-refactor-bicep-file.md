@@ -150,7 +150,11 @@ Your template has some hard-coded values where parameters or variables would be 
 
    :::code language="bicep" source="code/5-main-refactored.bicep" range="26-38" highlight="3, 6, 7-12, 13" :::
 
-1. Update the `publicIPAddress` resource's  `sku.name` property to refer to the `publicIPAddressSkuName` parameter.
+1. Update the `publicIPAddress` resource to refer to a parameter.
+
+   | Property | Parameter |
+   | ---- | ---- |
+   | `sku.name` | `publicIPAddressSkuName` |
 
 1. Update the `virtualMachine` resource to refer to the parameters and variables:
 
@@ -168,8 +172,14 @@ Your template has some hard-coded values where parameters or variables would be 
    | Property | Parameter or variable |
    | ---- | ---- |
    | `addressSpace.addressPrefixes`| `virtualNetworkAddressPrefix` |
-   | `subnets.name` | `virtualNetworkDefaultSubnetName` <br> Use the variable for the `name` property of the nested `resource defaultSubnet`.|
+   | `subnets.name` | `virtualNetworkDefaultSubnetName` |
    | `subnets.addressPrefix` | `virtualNetworkDefaultSubnetAddressPrefix` |
+
+1. Update the `virtualNetwork` resource's nested resource `defaultSubnet`.
+
+   | Property | Variable |
+   | ---- | ---- |
+   | `name` | `virtualNetworkDefaultSubnetName` |
 
 ## Remove unnecessary properties
 

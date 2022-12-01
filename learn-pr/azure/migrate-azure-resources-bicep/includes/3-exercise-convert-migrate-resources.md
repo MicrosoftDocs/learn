@@ -151,9 +151,11 @@ You'll fix these problems throughout the rest of this module.
 
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS).
 
-1. Split the editor so that you can see both files at the same time.
+1. Split the editor so that you can see both files at the same time. The _template.bicep_ file in the left pane and the _main.bicep_ file in the right pane.
 
-   Select **View** > **Editor Layout** > **Split Right**. In the left pane, select the **template.bicep** tab. You can close the **main.bicep** tab in the left pane.
+   1. Select the **main.bicep** tab.
+   1. Select **View** > **Editor Layout** > **Split Right** to open the **main.bicep** tab in the right pane.
+   1. Close the **main.bicep** tab in the left pane.
 
    :::image type="content" source="../media/3-visual-studio-code-split-editor.png" alt-text="Screenshot of the split Visual Studio Code editor that shows the template dot bicep file in the left pane and the main dot bicep file in the right pane.":::
 

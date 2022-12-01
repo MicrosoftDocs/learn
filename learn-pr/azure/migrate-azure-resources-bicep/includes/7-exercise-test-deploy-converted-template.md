@@ -64,13 +64,13 @@ The output includes three important pieces of information. Let's review each one
 
 - The `networkInterface` resource shows the `privateIPAddress` property is detected as removed. This result is OK, because you removed that property intentionally. The `privateIPAllocationMethod` property  is set to _Dynamic_ so removing the `privateIPAddress` property won't have any effect, even though it's a change.
 
-- The `networkInterface` shows that two properties for the `publicIPAddress` will be deleted. We'll add these properties as examples of how to fix a problem found by what-if. In this scenario, redeploying the template without these properties didn't cause a problem with the existing resources.
+- The `networkInterface` shows that two properties for the `publicIPAddress` will be deleted. We'll add these properties as examples of how to fix a problem found by what-if.
 
 ## Update the template
 
 Update _main.bicep_ `networkInterface` resource to include the `publicIPAddress` properties for `deleteOption` and `sku` properties.
 
-:::code language="bicep" source="code/7-main-final.bicep" range="149-164" highlight="4-9":::
+:::code language="bicep" source="code/7-main-final.bicep" range="140-175" highlight="12-18":::
 
 ## Rerun the what-if command
 
@@ -128,11 +128,13 @@ You know that your Bicep file is valid, and the what-if operation has indicated 
      --parameters main.parameters.production.json
    ```
 
+1. When prompted, enter a secure password for the `virtualMachineAdminPassword` parameter value.
+
    Within a few seconds, the deployment finishes successfully.
 
 1. In the Azure portal, open the resource group. Select the **2 Succeeded** link to view the list of deployments.
 
-   :::image type="content" source="../media/7-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the two successful deployment link highlighted.":::
+   :::image type="content" source="../media/7-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the two successful deployment links highlighted.":::
 
    The deployment succeeded:
 
@@ -151,11 +153,13 @@ You know that your Bicep file is valid, and the what-if operation has indicated 
      -TemplateParameterFile main.parameters.production.json
    ```
 
+1. When prompted, enter a secure password for the `virtualMachineAdminPassword` parameter value.
+
    Within a few seconds, the deployment finishes successfully.
 
 1. In the Azure portal, open the resource group. Select the **2 Succeeded** link to view the list of deployments.
 
-   :::image type="content" source="../media/7-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the two successful deployment link highlighted.":::
+   :::image type="content" source="../media/7-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the two successful deployment links highlighted.":::
 
    The deployment succeeded:
 
@@ -164,7 +168,7 @@ You know that your Bicep file is valid, and the what-if operation has indicated 
 ::: zone-end
 
 > [!TIP]
-> In a real migration, you should also run smoke tests to verify that your resources are still working correctly. A smoke test is a final check to ensure that you didn't make unintentional changes.
+> In a real migration, you should also run _smoke tests_ to verify that your resources are still working correctly. A _smoke test_ is a final check to ensure that you didn't make unintentional changes.
 
 ## Clean up the resources
 

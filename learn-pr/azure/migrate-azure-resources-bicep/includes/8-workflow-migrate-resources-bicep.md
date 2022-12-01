@@ -54,4 +54,4 @@ The deploy phase consists of four steps:
 1. Prepare a rollback plan.
 1. Run the what-if operation against production.
 1. Deploy manually.
-1. Run smoke tests.
+1. Run _smoke tests_.
