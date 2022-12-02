@@ -40,7 +40,7 @@ WHERE ReadingValue < 0
 A common pattern for streaming queries is to aggregate event data over temporal (time-based) intervals, or *windows*. To accomplish this, you can use a **GROUP BY** clause that includes a Window function defining the kind of window you want to define (for example, *tumbling*, *hopping*, or *sliding*).
 
 > [!TIP]
-> For more information about window functions, see [Introduction to Stream Analytics windowing functions](/azure/stream-analytics/stream-analytics-window-functions) in the Azure Stream Analytics documentation.
+> For more information about window functions, see [Introduction to Stream Analytics windowing functions](/azure/stream-analytics/stream-analytics-window-functions?azure-portal=true) in the Azure Stream Analytics documentation.
 
 The following example groups streaming sensor readings into 1 minute tumbling (serial, non-overlapping) windows, recording the start and end time of each window and the maximum reading for each sensor. The **HAVING** clause filters the results to include only windows where at least one event occurred.
 
@@ -59,4 +59,4 @@ HAVING COUNT(*) > 1
 ```
 
 > [!TIP]
-> For more information about common patters for queries, see [Common query patterns in Azure Stream Analytics](/azure/stream-analytics/stream-analytics-stream-analytics-query-patterns) in the Azure Stream Analytics documentation.
+> For more information about common patters for queries, see [Common query patterns in Azure Stream Analytics](/azure/stream-analytics/stream-analytics-stream-analytics-query-patterns?azure-portal=true) in the Azure Stream Analytics documentation.

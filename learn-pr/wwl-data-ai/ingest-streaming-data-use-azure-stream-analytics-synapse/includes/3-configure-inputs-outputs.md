@@ -12,7 +12,7 @@ Inputs for streaming data consumed by Azure Stream Analytics can include:
 Depending on the specific input type, the data for each streamed event includes the event's data fields as well input-specific metadata fields. For example, data consumed from an Azure Event Hubs input includes an **EventEnqueuedUtcTime** field indicating the time when the event was received in the event hub.
 
 > [!NOTE]
-> For more information about streaming inputs, see [Stream data as input into Stream Analytics](/azure/stream-analytics/stream-analytics-define-inputs) in the Azure Stream Analytics documentation.
+> For more information about streaming inputs, see [Stream data as input into Stream Analytics](/azure/stream-analytics/stream-analytics-define-inputs?azure-portal=true) in the Azure Stream Analytics documentation.
 
 ## Azure Synapse Analytics outputs
 
@@ -21,7 +21,7 @@ If you need to load the results of your stream processing into a table in a dedi
 Authentication to Azure Synapse Analytics is usually accomplished through SQL Server authentication, which requires a username and password. Alternatively, you can use a managed identity to authenticate. When using an Azure Synapse Analytics output, your Azure Stream Analytics job configuration must include an Azure Storage account in which authentication metadata for the job is stored securely.
 
 > [!NOTE]
-> For more information about using an Azure Synapse Analytics output, see [Azure Synapse Analytics output from Azure Stream Analytics](/azure/stream-analytics/azure-synapse-analytics-output) in the Azure Stream Analytics documentation.
+> For more information about using an Azure Synapse Analytics output, see [Azure Synapse Analytics output from Azure Stream Analytics](/azure/stream-analytics/azure-synapse-analytics-output?azure-portal=true) in the Azure Stream Analytics documentation.
 
 ## Azure Data Lake Storage Gen2 outputs
 
@@ -30,4 +30,4 @@ If you need to write the results of stream processing to an Azure Data Lake Stor
 You can specify minimum and maximum row counts for each batch, which determines the number of output files generated (each batch creates a new file). You can also configure the *write mode* to control when the data is written for a time window - appending each row as it arrives or writing all rows once (which ensures "exactly once" delivery).
 
 > [!NOTE]
-> For more information about using a Blob storage/ADLS Gen2 output, see [Blob storage and Azure Data Lake Gen2 output from Azure Stream Analytics](/azure/stream-analytics/blob-storage-azure-data-lake-gen2-output) in the Azure Stream Analytics documentation.
+> For more information about using a Blob storage/ADLS Gen2 output, see [Blob storage and Azure Data Lake Gen2 output from Azure Stream Analytics](/azure/stream-analytics/blob-storage-azure-data-lake-gen2-output?azure-portal=true) in the Azure Stream Analytics documentation.
