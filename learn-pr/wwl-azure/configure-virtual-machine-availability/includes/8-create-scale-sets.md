@@ -1,7 +1,5 @@
 You can implement Azure Virtual Machine Scale Sets in the Azure portal. You specify the number of virtual machines and their sizes, and indicate preferences for using Azure Spot instances, Azure managed disks, and allocation policies.
 
-### Configure Azure Virtual Machine Scale Sets 
-
 In the Azure portal, there are several settings to configure to create an Azure Virtual Machine Scale Sets implementation.
 
 :::image type="content" source="../media/implement-scale-sets-61516afb.png" alt-text="Screenshot that shows how to create Virtual Machine Scale Sets in the Azure portal.":::
