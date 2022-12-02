@@ -10,7 +10,7 @@
 -->
 Great work!  You have successfully:
 
-- Learned how to evaluate whether you should use an existing production tenant in Azure AD for your application test environment, or whether you should create a separate test tenant
+- Learned how to evaluate whether you should use an existing production tenant in Azure Active Directory (Azure AD) for your application test environment, or whether you should create a separate test tenant
 - Setup a dedicated test tenant in Azure AD
 - Created a test user in the test tenant
 - Created an app registration to use as a test client for your web app
@@ -95,7 +95,7 @@ az ad app delete --id $TESTUPN
 
 ### Delete an Azure AD tenant
 
-When an tenant is deleted in Azure AD, part of Microsoft Entra, all resources in the organization are also deleted. Prepare your organization by minimizing its associated resources before you delete. Only a global administrator in Azure AD can delete an Azure AD organization from the Azure portal.
+When an tenant is deleted in Azure AD, all resources in the organization are also deleted. Prepare your organization by minimizing its associated resources before you delete. Only a global administrator in Azure AD can delete an Azure AD organization from the Azure portal.
 
 #### Prepare the tenant
 
