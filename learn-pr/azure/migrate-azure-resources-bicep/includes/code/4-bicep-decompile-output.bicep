@@ -1,4 +1,4 @@
-@description('Location for all resources.')
+@description('Location for resources.')
 param location string = resourceGroup().location
 
 @allowed([
