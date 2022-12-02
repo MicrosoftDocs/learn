@@ -10,8 +10,10 @@ Your organization has decided to use Azure backup and recovery services. As the 
 
 ## Objectives
 
+
 > [!NOTE]
-> Task 4 and Task 5 focus on file and folder backup. 
+> This interactive lab simulation covers two areas explored in this Learning Path. This module focuses on file and folder backups which is covered in Tasks 4 and Task 5. The simulation is also appropriate for the [Configure virtual machine backups](/training/modules/configure-virtual-machine-backups/) module. 
+
 
 + **Task 1**: Provision the lab environment. 
     + Review an [Azure Resource Manager template]( https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Allfiles/Labs/10/az104-10-vms-edge-template.json).

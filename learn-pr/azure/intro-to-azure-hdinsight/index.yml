@@ -14,7 +14,7 @@ summary: You can use Azure HDInsight to process big data in many scenarios, eith
 abstract: |
   By the end of this module, you will be able to: 
     - Evaluate whether Azure HDInsight can help your organization process big data.
-    - Describe how Azure HDInsight uses popular open-source frameworks such as Hadoop, Spark, Hive, LLAP, Kafka, Storm, and others.
+    - Describe how Azure HDInsight uses popular open-source frameworks such as Hadoop, Spark, Hive, LLAP, Kafka, and others.
 prerequisites: |
   - Good working experience with Azure.
   - Good working experience with big data platforms.

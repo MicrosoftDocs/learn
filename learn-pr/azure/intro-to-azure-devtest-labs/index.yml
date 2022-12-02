@@ -5,8 +5,9 @@ metadata:
   title: Introduction to Azure DevTest Labs
   description: In this module, you'll learn how to evaluate whether Microsoft Azure DevTest Labs is appropriate for setting up virtual machine environments for your team.
   ms.date: 01/18/2022
-  author: j-martens
-  ms.author: jmartens
+  author: RoseHJM
+  ms.author: rosemalcolm
+  manager: jmartens
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure DevTest Labs

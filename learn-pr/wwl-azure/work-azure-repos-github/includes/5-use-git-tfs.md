@@ -6,15 +6,15 @@ But you can do a once-off migration using the Git TFS clone.
 
 **GIT-TFS** has the advantage that it can migrate multiple branches and preserve the relationships to merge branches in Git after you migrate.
 
-Be warned that it can take a while to do this conversion - especially for large or long history repositories.
+Be warned that doing this conversion can take a while - especially for large or long-history repositories.
 
-You can quickly dry run the migration locally, iron out any issues, and then do it for real. There are lots of flexibilities with this tool.
+You can quickly dry-run the migration locally, iron out any issues, and then do it for real. There are lots of flexibilities with this tool.
 
 If you are on Subversion, you can use **GIT-SVN** to import your Subversion repo similarly to **GIT-TFS**.
 
 ## Migrating from TFVC to Git using GIT-TFS
 
-If Chocolatey is already installed on your computer, `run choco install gittfs`
+If Chocolatey is already installed on your computer, run `choco install gittfs`
 
 Add the GIT-TFS folder path to your PATH. You could also set it temporary (the time of your current terminal session) using: `set PATH=%PATH%;%cd%\GitTfs\bin\Debug`
 

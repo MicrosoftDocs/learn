@@ -23,7 +23,7 @@ To send and receive text messages programmatically, you'll need to get a Twilio 
 1. When your account dashboard is shown, select the **Get a Trial Number** button. Twilio assigns you a phone number to use to send messages.
 
     > [!NOTE]
-    > Assigned numbers might not be able to send messages in some countries. To learn which countries have restrictions, see [Twilio international phone number availability and their capabilities](https://support.twilio.com/hc/articles/223183068-Twilio-international-phone-number-availability-and-their-capabilities?azure-portal=true). For more information about restrictions, see [Using Twilio when SMS numbers are unavailable in your country](https://support.twilio.com/hc/articles/226690868-Using-Twilio-when-SMS-numbers-are-unavailable-in-your-country?azure-portal=true).
+    > Assigned numbers might not be able to send messages in some countries/regions. To learn which countries/regions have restrictions, see [Twilio international phone number availability and their capabilities](https://support.twilio.com/hc/articles/223183068-Twilio-international-phone-number-availability-and-their-capabilities?azure-portal=true). For more information about restrictions, see [Using Twilio when SMS numbers are unavailable in your country](https://support.twilio.com/hc/articles/226690868-Using-Twilio-when-SMS-numbers-are-unavailable-in-your-country?azure-portal=true).
 
 1. On your dashboard, copy and save the following values to use later:
 

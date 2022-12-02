@@ -1,19 +1,19 @@
 You want to add an extra stage to your pipeline so you can check what changes will be made to your Azure environment.
 
-During the process, you'll: 
+During the process, you'll:
 
 > [!div class="checklist"]
-> * Update the pipeline YAML file to add a new preview stage.
-> * Add an environment to Azure Pipelines.
-> * Configure the environment to require an approval.
-> * Update the pipeline YAML file to use the environment for the deployment stage.
-> * View the what-if results and approve a pipeline run.
+> - Update the pipeline YAML file to add a new preview stage.
+> - Add an environment to Azure Pipelines.
+> - Configure the environment to require an approval.
+> - Update the pipeline YAML file to use the environment for the deployment stage.
+> - View the what-if results and approve a pipeline run.
 
 ## Update the pipeline definition to add a preview stage
 
 Here, you add a new stage to your pipeline that runs the what-if operation.
 
-1. In Visual Studio Code, open the *azure-pipelines.yml* file in the *deploy* folder.
+1. In Visual Studio Code, open the _azure-pipelines.yml_ file in the _deploy_ folder.
 
 1. Between the **Validate** and **Deploy** stages, add the following definition for the **Preview** stage:
 
@@ -66,17 +66,17 @@ Here, you add a new stage to your pipeline that runs the what-if operation.
 
 Here, you configure the **Deploy** stage to run against the **Website** environment that you created previously. You convert the **Deploy** stage to run a deployment job instead of a standard job, and you configure it to deploy to the environment.
 
-1. In the *azure-pipelines.yml* file in Visual Studio Code, replace the **Deploy** stage definition with the following code:
+1. In the _azure-pipelines.yml_ file in Visual Studio Code, replace the **Deploy** stage definition with the following code:
 
    :::code language="yaml" source="code/7-pipeline.yml" range="61-82" :::
 
-   Notice that you define a new `checkout` step. Unlike normal jobs, deployment jobs need to be configured to check out (download) the files from your Git repository. If you don't do this, the deployment job won't be able to read your Bicep file. You could instead consider using *pipeline artifacts* to send files between pipeline stages. We link to more information about artifacts in the summary.
+   Notice that you define a new `checkout` step. Unlike normal jobs, deployment jobs need to be configured to check out (download) the files from your Git repository. If you don't do this step, the deployment job won't be able to read your Bicep file. You could instead consider using _pipeline artifacts_ to send files between pipeline stages. We link to more information about artifacts in the summary.
 
 1. Save the file.
 
 ## Verify and commit your pipeline definition
 
-1. Verify that your *azure-pipelines.yml* file looks like the following code:
+1. Verify that your _azure-pipelines.yml_ file looks like the following code:
 
    :::code language="yaml" source="code/7-pipeline.yml" highlight="43-59, 61-83" :::
 
@@ -116,7 +116,7 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
    The what-if operation has detected a change to the website resource. However, the changes that it has detected are noise. They don't represent real changes to your resource. Over time, the Azure team works to reduce noise. In the meantime, for these two specific properties, you can ignore the detected changes.
 
-   You might also see an item in the what-if output for the resource type `microsoft.alertsmanagement/smartDetectorAlertRules/Failure Anomalies - toywebsite`. This is a resource that Application Insights creates automatically. The what-if command detects that no change will be made to the resource.
+   You might also see an item in the what-if output for the resource type `microsoft.alertsmanagement/smartDetectorAlertRules/Failure Anomalies - toywebsite`. Application Insights creates this resource automatically. The what-if command detects that no change will be made to the resource.
 
 ## Approve the pipeline run
 

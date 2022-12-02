@@ -1,45 +1,18 @@
-In the context of analytics, data streams are the data pertaining to the occurrence of specific activities that are emitted by applications, IoT devices or sensors, or other sources known as data producers. These perpetually generated data streams typically contain temporal and additional information about the events. The proliferation of connected applications and devices has led to exponential growth in the number of streaming data sources in recent years.
+A data stream consists of a perpetual series of data, typically related to specific point-in-time events. For example, a stream of data might contain details of messages submitted to a social media micro-blogging site, or a series of environmental measurements recorded by an internet-connected weather sensor. Streaming data analytics is most often used to better understand change over time. For example, a marketing organization may perform sentiment analysis on social media messages to see if an advertising campaign results in more positive comments about the company or its products, or an agricultural business might monitor trends in temperature and rainfall to optimize irrigation and crop harvesting.
 
-Data streams are most often used to better understand change over time. For example, an organization may perform sentiment analysis on tweets to see if an advertising campaign results in more positive comments about the company or its products.
+Common goals for stream analytics include
 
-## Analyzing data streams 
+- Continuously analyzing data to report issues or trends.
+- Understanding component or system behavior under various conditions to help plan future enhancements.
+- Triggering specific actions or alerts when certain events occur or thresholds are exceeded.
 
-In today's world, data streams are ubiquitous. Analyzing a data stream is typically performed to measure how an event's state changes over time or to capture information on an area of interest. The intent being to:
+### Characteristics of stream processing solutions
 
-- Continuously analyze data to detect issues and understand or respond to them
-- Understand component or system behavior under various conditions to fuel further enhancements of that component or system
-- Trigger specific actions or alerts when certain thresholds are hit
+Stream processing solutions typically exhibit the following characteristics:
 
-By analyzing data streams and extracting actionable insights, companies can harness latent knowledge to improve efficiencies, further innovation, and respond to irregularities. Examples of use cases that analyze data streams include:
+![A diagram showing a stream of data including a date and time field being processed, aggregated by day, and visualized and stored.](../media/stream-processing.png)
 
-:::row:::
-    :::column:::
-- Stock market trends
-- Monitoring data of water pipelines and electrical transmission and distribution systems by utility companies
-- Mechanical component health monitoring data in automotive and automobile industries
-- Monitoring data from industrial and manufacturing equipment
-    :::column-end:::
-    :::column:::
-- Sensor data in transportation, such as traffic management and highway toll lanes
-- Patient health monitoring data in the healthcare industry
-- Satellite data in the space industry
-- Fraud detection in the banking and finance industries
-- Sentiment analysis of social media posts
-    :::column-end:::
-:::row-end:::
-
-## Approaches to data stream processing
-
-There are two approaches to processing data streams: live and on-demand.
-
-The most commonly adopted method for processing data streams is to analyze new data continuously as it arrives from an event producer, such as Azure Event Hubs. This "live" approach requires more processing power to run computations but offers the ability to gain near-real-time insights. Using a service like Azure Stream Analytics, you can execute calculations and aggregations against arriving data using temporal analysis. The results of those queries can be sent to a Power BI dashboard for real-time visualization and analysis.
-
-The diagram below depicts an end-to-end "live" data stream processing solution using Event Hubs to ingest streaming data, Azure Stream Analytics to transform data, and Power BI to visualize and analyze it.
-
-![The diagram depicts an end-to-end solution using Event Hubs to ingest streaming data, Azure Stream Analytics to transform the data, and Power BI to visualize and analyze it.](../media/data-stream-processing-live.png "Live data stream processing")
-
-The "on-demand" approach for processing streaming data involves persisting all incoming data in a data store, such as [Azure Data Lake Storage (ADLS) Gen2](/azure/storage/blobs/data-lake-storage-introduction). This method allows you to collect streaming data over time and store it as static data. You can then process the _static_ data in batches when convenient or during times when compute costs are lower.
-
-The following diagram illustrates an on-demand data stream processing solution. Streaming data from Azure Event Hubs and IoT Hub are written as blobs into Azure Data Lake Storage (ADLS) Gen2. The static data are then processed using Azure Stream Analytics and output to a Power BI dashboard for visualization and analysis.
-
-![The diagram illustrates an on-demand data stream processing solution. Streaming data from Azure Event Hubs and IoT Hub are written as blobs into Azure Data Lake Storage (ADLS) Gen2. The static data are then processed using Azure Stream Analytics and output to a Power BI dashboard for visualization and analysis.](../media/data-stream-processing-on-demand.png "On-demand data stream processing")
+1. The source data stream is *unbounded* - data is added to the stream perpetually.
+2. Each data record in the stream includes *temporal* (time-based) data indicating when the event to which the record relates occurred (or was recorded).
+3. Aggregation of streaming data is performed over temporal *windows* - for example, recording the number of social media posts per minute or the average rainfall per hour.
+4. The results of streaming data processing can be used to support real-time (or *near* real-time) automation or visualization, or persisted in an analytical store to be combined with other data for historical analysis. Many solutions combine these approaches to support both real-time and historical analytics.

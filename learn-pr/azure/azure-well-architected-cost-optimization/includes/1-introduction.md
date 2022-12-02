@@ -6,9 +6,9 @@ The concepts described in this module are not all-inclusive, but they represent 
 
 By the end of this module, you'll be able to:
 
-- Use monitoring and analytics to gain cost insights
-- Maximize the efficiency of your cloud environment
-- Provision resources that are optimized for cost
+- Use monitoring and analytics to gain cost insights.
+- Maximize the efficiency of your cloud environment.
+- Provision resources that are optimized for cost.
 
 ## Prerequisites
 

@@ -20,13 +20,13 @@ Compute resources can be scaled in two directions:
 
   ![An illustration that shows scaling out by adding instances to increase performance.](../media/scale-out.png)
 
-Scaling up is concerned with adding more resources, such as CPU or memory, to a single instance. This instance might be a virtual machine or a PaaS service.
+*Scaling up* is concerned with adding more resources, such as CPU or memory, to a single instance. This instance might be a virtual machine or a PaaS service.
 
-The act of adding more capacity to the instance increases the resources that are available to your application, but it does come with a limit. Virtual machines are limited to the capacity of the host that they run on, and hosts themselves have physical limitations. Eventually, when you scale up an instance, you can run into these limits. They restrict your ability to add more resources to the instance.
+The act of adding more capacity to the instance increases the resources that are available to your application, but it does come with a limit. Virtual machines are limited to the capacity of the host on which they run, and hosts themselves have physical limitations. Eventually, when you scale up an instance, you can run into these limits. They restrict your ability to add more resources to the instance.
 
-Scaling out is concerned with adding more instances to a service. They can be virtual machines or PaaS services. Instead of adding more capacity by making a single instance more powerful, we add capacity by increasing the total number of instances.
+*Scaling out* is concerned with adding more instances to a service. They can be virtual machines or PaaS services. Instead of adding more capacity by making a single instance more powerful, we add capacity by increasing the total number of instances.
 
-The advantage of scaling out is that you can conceivably scale out forever if you have more machines to add to the architecture. Scaling out requires some type of load distribution. This might be in the form of a load balancer that distributes requests across available servers, or it might be a service-discovery mechanism for identifying active servers to send requests to.
+The advantage of scaling out is that you can conceivably scale out forever if you have more machines to add to the architecture. Scaling out requires some type of load distribution. This might be in the form of a load balancer that distributes requests across available servers, or it might be a service-discovery mechanism for identifying active servers to which to send requests.
 
 In both types of scaling, resources can be reduced, which brings cost optimization into the picture.
 
@@ -56,4 +56,4 @@ Performance optimization will include understanding how the applications themsel
 
 Look across all layers of your application and identify and remediate performance bottlenecks. These bottlenecks might be poor memory handling in your application, or even the process of adding indexes into your database. It might be an iterative process as you relieve one bottleneck and then uncover another that you were unaware of.
 
-With a thorough approach to performance monitoring, you'll be able to determine the types of patterns and practices that your architecture will benefit from.
+With a thorough approach to performance monitoring, you'll be able to determine the types of patterns and practices from which your architecture will benefit.

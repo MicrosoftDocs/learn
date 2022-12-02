@@ -18,13 +18,13 @@ Running a Java application on Azure Functions usually requires some minor config
 
 As a result, Azure Functions is tailored for applications that need a lot of scalability. You can stop them regularly to reduce cost, and you can scale them up to respond to high loads.
 
-## Azure Spring Cloud
+## Azure Spring Apps
 
-Azure Spring Cloud is a unique Azure service that provides a platform as a service solution for running Spring Boot microservices. Spring Cloud provides many tools, such as a service registry or a configuration server. It also provides specific autoscaling and security mechanisms that greatly simplify the use of a microservice architecture that's based on Spring Boot. 
+Azure Spring Apps is a unique Azure service that provides a platform as a service solution for running Spring Boot microservices. Spring Cloud provides many tools, such as a service registry or a configuration server. It also provides specific autoscaling and security mechanisms that greatly simplify the use of a microservice architecture that's based on Spring Boot. 
 
 The Spring Cloud offering is created and managed jointly by Microsoft and VMware, the company that builds the Spring Framework. Spring Cloud provides support both for OS and JVM updates and patches, such as Azure App Service, and for advanced Spring services.
 
-You can also use the Azure Spring Cloud service to run other workloads, such as Spring Boot monolithic applications or even .NET microservices, which use Steeltoe, but the service is mainly used to run Spring Boot microservices.
+You can also use the Azure Spring Apps service to run other workloads, such as Spring Boot monolithic applications or even .NET microservices, which use Steeltoe, but the service is mainly used to run Spring Boot microservices.
 
 ## Azure Kubernetes Service
 

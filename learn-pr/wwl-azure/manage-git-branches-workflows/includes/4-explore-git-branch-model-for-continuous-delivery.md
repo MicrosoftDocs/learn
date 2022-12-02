@@ -43,7 +43,7 @@ In this recipe, we'll be using three trendy extensions from the marketplace:
 
  -  [Azure CLI](/cli/azure/install-azure-cli): is a command-line interface for Azure.
  -  [Azure DevOps CLI](/azure/devops/cli): It's an extension of the Azure CLI for working with Azure DevOps and Azure DevOps Server designed to seamlessly integrate with Git, CI pipelines, and Agile tools. With the Azure DevOps CLI, you can contribute to your projects without leaving the command line. CLI runs on Windows, Linux, and Mac.
- -  [Git Pull Request Merge Conflict](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.conflicts-tab/): This open-source extension created by Microsoft DevLabs allows you to review and resolve the pull request merge conflicts on the web. Any conflicts with the target branch must be resolved before a Git pull request can complete. With this extension, you can resolve these conflicts on the web as part of the pull request merge instead of doing the merge and resolving conflicts in a local clone.
+ -  [Git Pull Request Merge Conflict](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.conflicts-tab): This open-source extension created by Microsoft DevLabs allows you to review and resolve the pull request merge conflicts on the web. Any conflicts with the target branch must be resolved before a Git pull request can complete. With this extension, you can resolve these conflicts on the web as part of the pull request merge instead of doing the merge and resolving conflicts in a local clone.
 
 The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, YAMLC, table, TSV, and none. You can configure your preference by using the configure command.
 

@@ -8,7 +8,7 @@ When you create your storage account, you’ll start by picking the storage acco
 
  -  Locally redundant storage (LRS)
  -  Geo-redundant storage (GRS)
- -  Read-access geo-redundant storage (RA-GZRS)
+ -  Read-access geo-redundant storage (RA-GRS)
  -  Zone-redundant storage (ZRS)
  -  Geo-zone-redundant storage (GZRS)
  -  Read-access geo-zone-redundant storage (RA-GZRS)

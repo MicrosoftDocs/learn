@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-network-security-groups.interactive-lab-simulation-network-groups
+title: Interactive lab simulation
+metadata:
+  title: Interactive lab simulation
+  description: "Interactive lab simulation"
+  ms.date: 11/04/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-simulation-create-network-groups.md)]

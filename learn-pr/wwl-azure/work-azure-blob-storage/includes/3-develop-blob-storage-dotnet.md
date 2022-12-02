@@ -156,8 +156,11 @@ BlobClient blobClient = containerClient.GetBlobClient(fileName);
 Console.WriteLine("Uploading to Blob storage as blob:\n\t {0}\n", blobClient.Uri);
 
 // Open the file and upload its data
-using FileStream uploadFileStream = File.OpenRead(localFilePath);
-await blobClient.UploadAsync(uploadFileStream, true);
+using (FileStream downloadFileStream = File.OpenWrite(downloadFilePath))
+    {
+        await download.Content.CopyToAsync(downloadFileStream);
+        downloadFileStream.Close();
+    }
 
 Console.WriteLine("\nThe file was uploaded. We'll verify by listing" + 
         " the blobs next.");

@@ -1,4 +1,4 @@
-Now that you have had the opportunity to learn about the Cost Analysis tool, it's time to put that tool to work. In this exercise, you'll select one of your Azure subscriptions, and identify your most costly resource. You use the Cost Analysis tool to look at your costs, group them, and narrow results.
+Now that you've had the opportunity to learn about the Cost Analysis tool, it's time to put that tool to work. In this exercise, you'll select one of your Azure subscriptions and identify your most costly resource. You'll use the Cost Analysis tool to look at your costs, group them, and narrow results.
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 

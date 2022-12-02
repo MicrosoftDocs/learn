@@ -136,7 +136,7 @@ In this query, we use the LAG function (1) to return the difference in sales (2)
 
 The ROWS and RANGE clauses further limit the rows within the partition by specifying start and end points within the partition. This is done by specifying a range of rows with respect to the current row either by logical association or physical association. Physical association is achieved by using the ROWS clause.
 
-Tailwind Traders wants to find the books that have the fewest downloads by country, while displaying the total number of downloads for each book within each country in ascending order.
+Tailwind Traders wants to find the books that have the fewest downloads by country/region, while displaying the total number of downloads for each book within each country/region in ascending order.
 
 To achieve this, you use ROWS in combination with UNBOUNDED PRECEDING to limit the rows within the Country partition, specifying that the window start with the first row of the partition.
 
@@ -159,6 +159,6 @@ To achieve this, you use ROWS in combination with UNBOUNDED PRECEDING to limit t
 
     ![Viewing window function with rows unbounded preceding results](../media/window-unbounded-preceding-results.png)
 
-In this query, we use the FIRST_VALUE analytic function to retrieve the book title with the fewest downloads, as indicated by the ROWS UNBOUNDED PRECEDING clause over the Country partition (1). The UNBOUNDED PRECEDING option set the window start to the first row of the partition, giving us the title of the book with the fewest downloads for the country within the partition.
+In this query, we use the FIRST_VALUE analytic function to retrieve the book title with the fewest downloads, as indicated by the ROWS UNBOUNDED PRECEDING clause over the Country partition (1). The UNBOUNDED PRECEDING option set the window start to the first row of the partition, giving us the title of the book with the fewest downloads for the country/region within the partition.
 
-In the result set, we can scroll through the list that of books by country, sorted by number of downloads in ascending order.
+In the result set, we can scroll through the list that of books by country/region, sorted by number of downloads in ascending order.

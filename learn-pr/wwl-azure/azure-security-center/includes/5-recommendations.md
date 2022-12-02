@@ -10,13 +10,13 @@ Defender for Cloud makes its security recommendations based on your chosen initi
 
 In practice, it works like this:
 
-1.  Azure Security Benchmark is an ***initiative*** that contains requirements.
+1. Azure Security Benchmark is an ***initiative*** that contains requirements.
     
     For example, Azure Storage accounts must restrict network access to reduce their attack surface.
-2.  The initiative includes multiple ***policies***, each with a requirement of a specific resource type. These policies enforce the requirements in the initiative.
+1. The initiative includes multiple ***policies***, each with a requirement of a specific resource type. These policies enforce the requirements in the initiative.
     
     To continue the example, the storage requirement is enforced with the policy "Storage accounts should restrict network access using virtual network rules".
-3.  Microsoft Defender for Cloud continually assesses your connected subscriptions. If it finds a resource that doesn't satisfy a policy, it displays a ***recommendation*** to fix that situation and harden the security of resources that aren't meeting your security requirements.
+1. Microsoft Defender for Cloud continually assesses your connected subscriptions. If it finds a resource that doesn't satisfy a policy, it displays a ***recommendation*** to fix that situation and harden the security of resources that aren't meeting your security requirements.
     
     :::image type="content" source="../media/microsoft-defender-for-cloud-security-recommendations-7be6d7c7.jpg" alt-text="Screenshot of Microsoft Defender for Cloud Security Recommendations.":::
     

@@ -1,4 +1,4 @@
-By using test expressions, otherwise known as Boolean expressions, you can conditionally run Python code. They are commonly used in Python to "make decisions" about what should happen next while a program is running. In the earlier units, you wrote test expressions as part of `if`, `else`, and `elif` statements, and you further fine-tuned your conditions by using the operators `and` and `or`.
+By using test expressions, otherwise known as Boolean expressions, you can conditionally run Python code. They're commonly used in Python to "make decisions" about what should happen next while a program is running. In the earlier units, you wrote test expressions as part of `if`, `else`, and `elif` statements, and you further fine-tuned your conditions by using the operators `and` and `or`.
 
 Boolean expressions and statements are a key part of creating complex Python programs, where you want your code to run only under certain conditions.
 

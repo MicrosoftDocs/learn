@@ -14,9 +14,9 @@ If that explanation seems too complicated, don't worry. The main thing you need 
 
 ## Add a dictionary of capital/major cities
 
-Let's try to make our bot do something useful. Consider the problem of learning the capital/major cities of different countries. Our first exercise is to turn our bot into a "capital dictionary" that returns the capital/major city of any given country/region.
+Let's try to make our bot do something useful. Consider the problem of learning the capital/major cities of different countries/regions. Our first exercise is to turn our bot into a "capital dictionary" that returns the capital/major city of any given country/region.
 
-The [list of national capital/major cities][List of national capital/major cities] on Wikipedia highlights an important fairness and data complexity problem. Some countries, like Switzerland, might not have a *de jure* capital/major city. Other countries/regions, like Israel, have a capital/major city that's not officially recognized by all other countries/regions.
+The [list of national capital/major cities][List of national capital/major cities] on Wikipedia highlights an important fairness and data complexity problem. Some countries/regions, like Switzerland, might not have a *de jure* capital/major city. Other countries/regions, like Israel, have a capital/major city that's not officially recognized by all other countries/regions.
 
 To make our bot as responsible as possible, we have to keep these tricky situations in mind. Unfortunately, there's no easy way to solve this problem.  For this module, we'll choose the simplest solution, which is to cite our data source. To implement a more complex approach, here are some options to consider:
 
@@ -105,7 +105,7 @@ To represent the country data, we'll create a new class in the root of our proje
 
 ### Add a function to get the capital city
 
-We need to extend the behavior of the `CountryData` class definition to get the capital for a given country. We'll create the `GetCapital` function inside the `CountryData` class. Add the following code to the end of the `CountryData` class definition, before the closing curly parenthesis for the class:
+We need to extend the behavior of the `CountryData` class definition to get the capital/major city for a given country/region. We'll create the `GetCapital` function inside the `CountryData` class. Add the following code to the end of the `CountryData` class definition, before the closing curly parenthesis for the class:
 
 ```csharp
 public string GetCapital(string country)
@@ -115,7 +115,7 @@ public string GetCapital(string country)
 }
 ```
 
-The `GetCapital` function returns `null` if the country isn't found in the list.
+The `GetCapital` function returns `null` if the country/region isn't found in the list.
 
 ### Implement the bot logic
 
@@ -123,7 +123,7 @@ Our last code update is to add the logic for our bot to the `Bots\EchoBot.cs` fi
 
 To add this logic, we'll reprogram the primary function in that file, `OnMessageActivityAsync`. This function is called each time the bot receives a message from the user.
 
-Currently, the code echoes the user's message. We'd like to change the function to respond with a capital when a user enters a country.
+Currently, the code echoes the user's message. We'd like to change the function to respond with a capital when a user enters a country/region.
 
 To make this change:
 
@@ -146,9 +146,9 @@ To make this change:
 
 In our code for these exercises, we haven't considered performance. Instead we're focusing on simplicity. In a proper implementation, we'd get faster access by using a hash table structure to store the dictionary of countries/regions and capital/major cities.
 
-We've now programmed our bot to inform users about countries' capital/major cities. In the next unit, we'll make one more code change. Then we'll test this functionality.
+We've now programmed our bot to inform users about a countries'/regions' capital/major cities. In the next unit, we'll make one more code change. Then we'll test this functionality.
 
 <!-- Links -->
 
-[List of national capitals]: https://en.wikipedia.org/wiki/List_of_national_capitals
+[List of national capitals/major cities]: https://en.wikipedia.org/wiki/List_of_national_capitals
 [SimpleMaps]: https://simplemaps.com/data/world-cities?azure-portal=true

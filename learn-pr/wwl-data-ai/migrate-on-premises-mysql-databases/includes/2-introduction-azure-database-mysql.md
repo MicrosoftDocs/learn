@@ -167,7 +167,7 @@ Azure Database for MySQL uses the MySQL community edition and is compatible with
 
 [![Image showing connection strings](../media/2-connection-strings.png)](../media/2-connection-strings.png#lightbox)
 
-For more information on MySQL drivers, see [MySQL drivers and management tools compatible with Azure Database for MySQL](/azure/mysql/concepts-compatibility)
+For more information on MySQL drivers, see [MySQL drivers and management tools compatible with Azure Database for MySQL](/azure/mysql/flexible-server/how-to-data-in-replication)
 
 ### Configure the firewall
 

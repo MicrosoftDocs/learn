@@ -24,7 +24,7 @@ Designing for inclusivity not only opens our products and services to more peopl
 > [!div class="mx-imgBorder"]
 > ![Image showing how the perception of disability has changed.](../media/3-disability-2.png)
  
-Finally, recognizing that exclusion isn’t always permanent helps us to expand our awareness beyond the obvious. For instance, exclusion can be temporary. This could range from things like a broken appendage requiring a cast (short-term injury) to contextual, such as trying to order a meal in a foreign country. Exclusion can also be situational, based on a person’s environment. Distracted driving, loud environments, or simply having an overwhelming day, can all be examples of how situational exclusion might present itself.
+Finally, recognizing that exclusion isn’t always permanent helps us to expand our awareness beyond the obvious. For instance, exclusion can be temporary. This could range from things like a broken appendage requiring a cast (short-term injury) to contextual, such as trying to order a meal in a foreign country/region. Exclusion can also be situational, based on a person’s environment. Distracted driving, loud environments, or simply having an overwhelming day, can all be examples of how situational exclusion might present itself.
 
 ### Solve for one, extend to many
 

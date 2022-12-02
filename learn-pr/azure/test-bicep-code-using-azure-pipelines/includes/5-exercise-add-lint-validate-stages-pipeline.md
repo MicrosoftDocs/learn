@@ -13,7 +13,7 @@ During the process, you'll:
 
 First, you need to update your pipeline file to define a stage. Azure Pipelines automatically creates a single stage for you. But because you'll add more stages soon, you need to update your pipeline to explicitly define stages.
 
-1. In Visual Studio Code, open the *azure-pipelines.yml* file in the *deploy* folder.
+1. In Visual Studio Code, open the _azure-pipelines.yml_ file in the _deploy_ folder.
 
 1. Remove everything in the file from line 14 to the bottom of the file. Be sure to also remove the `jobs:` line.
 
@@ -38,15 +38,15 @@ First, you need to update your pipeline file to define a stage. Azure Pipelines 
 
    This stage defines a single step that runs the preflight validation. Notice that this step includes a reference to your service connection, because the preflight validation process requires communicating with Azure.
 
-   Your pipeline definition now has three stages. The first lints your Bicep file, the second performs a preflight validation, and the third performs the deployment to Azure.
+   Your pipeline definition now has three stages. The first runs the linter on your Bicep file, the second performs a preflight validation, and the third performs the deployment to Azure.
 
 1. Save the file.
 
 ## Configure the linter
 
-By default, the Bicep linter provides a warning when it detects a problem with your file. Azure Pipelines doesn't treat linter warnings as problems that should stop your pipeline. To customize this behavior, you create a *bicepconfig.json* file that reconfigures the linter.
+By default, the Bicep linter provides a warning when it detects a problem with your file. Azure Pipelines doesn't treat linter warnings as problems that should stop your pipeline. To customize this behavior, you create a _bicepconfig.json_ file that reconfigures the linter.
 
-1. Add a new file in the *deploy* folder and name it *bicepconfig.json*.
+1. Add a new file in the _deploy_ folder and name it _bicepconfig.json_.
 
    :::image type="content" source="../media/5-visual-studio-code-bicep-config-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the new file shown in the deploy folder.":::
 
@@ -58,7 +58,7 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 ## Verify and commit your pipeline definition
 
-1. Verify that your *azure-pipelines.yml* file looks like the following:
+1. Verify that your _azure-pipelines.yml_ file looks like the following file:
 
    :::code language="yaml" source="code/5-pipeline.yml" :::
 
@@ -106,9 +106,9 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 Now that you've identified the problem, you can fix it in your Bicep file.
 
-1. In Visual Studio Code, open the *main.bicep* file in the *deploy* folder.
+1. In Visual Studio Code, open the _main.bicep_ file in the _deploy_ folder.
 
-1. Notice that the Bicep linter has also detected that the `storageAccountNameParam` parameter isn't used. In Visual Studio Code, it indicates this by displaying a squiggly line. Normally, the line would be yellow to indicate a warning. But because you customized the *bicepconfig.json* file, the linter treats the code as an error and displays the line in red.
+1. Notice that the Bicep linter has also detected that the `storageAccountNameParam` parameter isn't used. Visual Studio Code indicates the unused parameter with a squiggly line. Normally, the line would be yellow to indicate a warning. But because you customized the _bicepconfig.json_ file, the linter treats the code as an error and displays the line in red.
 
    :::code language="bicep" source="code/5-template-1.bicep" range="15" :::
 
@@ -154,7 +154,7 @@ Now that you've identified the problem, you can fix it in your Bicep file.
 
 You've found another problem in the Bicep file. Here, you fix the problem.
 
-1. In Visual Studio Code, open the *main.bicep* file in the *deploy* folder.
+1. In Visual Studio Code, open the _main.bicep_ file in the _deploy_ folder.
 
 1. Look at the definition of the `storageAccountName` variable:
 

@@ -8,7 +8,7 @@ Like most businesses, Tailwind Traders is attempting to balance two competing bu
 
 *Figure 1: Finding the balance between transformation and risk mitigation.*
 
-In the Getting Started module, we shared a few objectives that Tailwind Traders included in its cloud-adoption plan. Most relevant to this module is its effort to migrate out of two leased datacenters in the next 24 months. The datacenters host a large portfolio of production workloads that support in-store and e-commerce operations. One of the datacenters also hosts dev/test environments and other preproduction innovations from the retail innovation team.
+In the Getting Started module, we shared a few objectives that Tailwind Traders included in its cloud-adoption plan. Most relevant to this module is its effort to migrate out of two leased datacenters in the next 24 months. The datacenters host a large portfolio of production workloads that support in-store and e-commerce operations. One of the datacenters also hosts dev/test environments, and other hosts preproduction innovations from the retail innovation team.
 
 Tailwind's effort is driving digital transformation and pushing the boundaries of what the business can do in the cloud. It has migrated low-risk workloads to the cloud. Tailwind also has begun to use cloud-native technologies to innovate and create new solutions that couldn't be delivered on-premises. The value of the cloud is proving out. As Tailwind's adoption plans progress, the need for balance becomes more apparent.
 
@@ -32,12 +32,12 @@ The CIO is working to change the policy, but the central operations and infrastr
 - Control costs to deliver on the promised savings as adoption scales
 - Adhere to security and third-party compliance requirements
 - Configure asset management to prepare all workloads to be ready for operations management
-- Apply and meet identity and access management requirements
+- Apply and meet identity and access-management requirements
 - Follow a path to ensure that all these controls are consistently applied to all workloads while acknowledging the scale and learning curve challenges across the technology teams
 
-Demonstrating that these controls are in place will give the CIO confidence that the team is ready to migrate more complex, higher-risk workloads to the cloud. It also will provide the governance balance that's required.
+Demonstrating that these controls are in place will give the CIO confidence that the team is ready to migrate more complex, higher-risk workloads to the cloud. It also will provide the required governance balance.
 
-Unfortunately, the "existing datacenters" governance requirement was discovered only as the team prepared to deploy its first mission-critical workload to production. The policy has frozen the effort to migrate the company's current datacenters. More foresight would have helped the team address this policy sooner as they moved lower-risk workloads to production.
+Unfortunately, the "existing datacenters" governance requirement was discovered only as the team prepared to deploy its first mission-critical workload to production. The policy has frozen the effort to migrate the company's current datacenters. More foresight would've helped the team address this policy sooner as they moved lower-risk workloads to production.
 
 The retail innovation team currently isn't affected by the governance policy, and it has been delivering new innovations in the cloud faster than expected. However, the same challenges will soon block the following teams and efforts:
 

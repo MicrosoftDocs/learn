@@ -3,7 +3,7 @@ uid: learn.wwl.azure-fundamentals-describe-azure-architecture-services
 metadata:
   title: 'Azure Fundamentals: Describe Azure architecture and services'
   description: 'Azure Fundamentals: Describe Azure architecture and services'
-  ms.date: 06/30/2022
+  ms.date: 11/29/2022
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ prerequisites: |
 summary: |
   The Microsoft Azure Fundamentals training is composed of three learning paths: Microsoft Azure Fundamentals: Describe cloud concepts, Describe Azure architecture and services, and Describe Azure management and governance.
   Microsoft Azure Fundamentals: Azure architecture and services is the second learning path in the Microsoft Azure Fundamentals course. This learning path explores Microsoft Azure, its architecture, and some of the most commonly used services and resources.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/azure-fundamentals-describe-azure-architecture-services.svg
 levels:
 - beginner
 roles:

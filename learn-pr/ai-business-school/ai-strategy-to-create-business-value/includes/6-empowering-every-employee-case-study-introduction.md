@@ -6,7 +6,7 @@ Their recently appointed Chairman and CEO, Arthur Sadoun, proposed a remarkable 
 
 ## Industry context
 
-Publicis Groupe is one of the "Big Four" multinational advertising and public relations agencies. Publicis is a global leader in marketing, communications, and digital transformation, and its network contains some of the best-known names in communications and media, including Leo Burnett Worldwide, Publicis Worldwide, Saatchi & Saatchi, Zenith, Starcom, and more recently Sapient in the consulting space. With over 80,000 employees spanning 200 specialties over 130 countries, thousands of clients, and an almost hundred-year history, Publicis Groupe is one of the largest and oldest companies of its type in the world.
+Publicis Groupe is one of the "Big Four" multinational advertising and public relations agencies. Publicis is a global leader in marketing, communications, and digital transformation, and its network contains some of the best-known names in communications and media, including Leo Burnett Worldwide, Publicis Worldwide, Saatchi & Saatchi, Zenith, Starcom, and more recently Sapient in the consulting space. With over 80,000 employees spanning 200 specialties over 130 countries/regions, thousands of clients, and an almost hundred-year history, Publicis Groupe is one of the largest and oldest companies of its type in the world.
 
 :::row:::
 :::column span="2":::
@@ -33,7 +33,7 @@ For Publicis Groupe, which owns multiple different agencies, each with their own
 
 When Arthur Sadoun took charge of Publicis, becoming its third leader ever over 91 years of existence, he had one objective in mind: making it possible to execute projects more quickly than ever by breaking down the company's knowledge and personnel silos and creating an environment where everyone had immediate access to the information they needed.
 
-But with over 80,000 employees in dozens of different organizations spanning over 100 countries, this was much easier said than done.
+But with over 80,000 employees in dozens of different organizations spanning over 100 countries/regions, this was much easier said than done.
 
 ## Strategy questions
 

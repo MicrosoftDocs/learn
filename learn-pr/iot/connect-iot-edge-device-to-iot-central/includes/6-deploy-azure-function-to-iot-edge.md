@@ -61,8 +61,6 @@ The following snippet shows how the telemetry is routed between the modules in t
 },
 ```
 
-## Update the device template in IoT Central
+## Update the deployment manifest in IoT Central
 
-To deploy the new module to your IoT Edge device, add the new deployment manifest to your IoT Central device template. When you update a device template like this, you must create a new version of the template. Devices using the original version of the device template run the modules defined in the old deployment manifest, devices using the new version of the template run the modules defined in the updated deployment manifest.
-
-IoT Central lets you publish multiple versions of a device template to support devices with different IoT Edge runtime configurations. You can also use IoT Central to migrate a device between template versions and dynamically update the IoT Edge modules running on the device.
+To deploy the new module to your IoT Edge device, update the deployment manifest to your IoT Central application. When you update a deployment manifest like this, the IoT Edge devices that are connected to your IoT Central application download it and update the modules on the device.

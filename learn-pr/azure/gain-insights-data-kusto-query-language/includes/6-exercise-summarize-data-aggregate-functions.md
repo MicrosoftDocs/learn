@@ -6,11 +6,11 @@ In the last unit, you looked at the number of storms as a function of time and t
 
 First, you'll use the `avg()` function to calculate the average damage caused by storms in US dollars.
 
-The following query creates a calculated column using the `extend` operator to add all values of damage, in this case *DamageProperty* and *DamageCrops* in US dollars. The query then filters for events that caused damage greater than zero. Next, the query summarizes the average damage created by each type of storm. Finally, the results are sorted by the new average damage column.
+The following query creates a calculated column using the `extend` operator to add all values of damage, in this case *DamageProperty* and *DamageCrops*, in US dollars. The query then filters for events that caused damage greater than zero. Next, the query summarizes the average damage created by each type of storm. Finally, the results are sorted by the new average damage column.
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy8ozUolSYajsFA6BQcWlubmJRZlWqQmJZugZESlMhqVIBbEdIZUEqSFF+UQlIDKgkHqIEALtwQu2HAAAA" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy8ozUolSYajsFA6BQcWlubmJRZlWqQmJZugZESlMhqVIBbEdIZUEqSFF+UQlIDKgkHqIEALtwQu2HAAAA" target="_blank">Run the query</a>
 
     ```Kusto
     StormEvents
@@ -24,13 +24,13 @@ The following query creates a calculated column using the `extend` operator to a
 
     :::image type="content" source="../media/6-avg-1.png" alt-text="Screenshot of avg aggregation function results.":::
 
-1. A more concise way to run this query is to use the `avgif()` function. This function is similar to the `avg()` function, but only averages results for which the predicate is true. The input for this function is the column to evaluate, and the condition on which to evaluate the value. So, the query  `where damage > 0 | summarize avg(damage) by EventType` is equivalent to `summarize avgif(damage, damage > 0) by EventType`.
+1. A more concise way to run this query is to use the `avgif()` function. This function is similar to the `avg()` function, but only averages results for which the predicate is true. The input for this function is the column to evaluate and the condition on which to evaluate the value. So, the query  `where damage > 0 | summarize avg(damage) by EventType` is equivalent to `summarize avgif(damage, damage > 0) by EventType`.
 
-    While you're at it, let's clean up the results by using the `round()` function. This function rounds the results to the specified number of digits after the decimal point. In this example, you'll use the default rounding value of 0.
+    While we're at it, let's clean up the results by using the `round()` function. This function rounds the results to the specified number of digits after the decimal point. In this example, you'll use the default rounding value of 0.
 
     Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy4tLc3MSizKpUhaL80rwUjcSy9Mw0DYhuHZgpdgoGmpoKSZUKYFtCKgtSQTrzi0pAYmAd8RCVAL1AJu6LAAAA" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy4tLc3MSizKpUhaL80rwUjcSy9Mw0DYhuHZgpdgoGmpoKSZUKYFtCKgtSQTrzi0pAYmAd8RCVAL1AJu6LAAAA" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents
@@ -47,11 +47,11 @@ The following query creates a calculated column using the `extend` operator to a
 
 Let's now look at the damage extremes.
 
-For absolute maximum or minimum values, use the `min()` and `max()` aggregation functions. Within these functions, you have to define the column on which to calculate the minimum or maximum value, and the field on which to aggregate the data. The following query builds on the previously calculated `damage` column, adding `min()` and `max()` values for the same column.
+For absolute maximum or minimum values, use the `min()` and `max()` aggregation functions. Within these functions, you have to define the column on which to calculate the minimum or maximum value and the field on which to aggregate the data. The following query builds on the previously calculated `damage` column, adding `min()` and `max()` values for the same column.
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA0WOMQ7CMAxFd07hEQQDFygSAsZKSHABo1olg5PKdUOCevgmbQPb1/tP336oE755stpvRqCgZBtokLElqOA6h7u4jkQj7FdwSSDrnzcJFfsEx4T6gRnFfAlqDItdMYbtIu0OUBtbsLF/fPYkKa0V+rZU8Iow//eMHeUDTjSz3/wEBeMpqMIAAAA=" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA0WOMQ7CMAxFd07hEQQDFygSAsZKSHABo1olg5PKdUOCevgmbQPb1/tP336oE755stpvRqCgZBtokLElqOA6h7u4jkQj7FdwSSDrnzcJFfsEx4T6gRnFfAlqDItdMYbtIu0OUBtbsLF/fPYkKa0V+rZU8Iow//eMHeUDTjSz3/wEBeMpqMIAAAA=" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents
@@ -76,7 +76,7 @@ So far, you've calculated the min, max, and average values of damage caused by e
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy8ozUolSYajsFA6BQcWlubmJRZlWqAlBLMtDYzJzUYg2IEh0FUx0FIwMgBcQWQGxpqqmQVKkAtj6ksiAVpD+/qARFTCGxOBkAk1m5yaUAAAA=" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy8ozUolSYajsFA6BQcWlubmJRZlWqAlBLMtDYzJzUYg2IEh0FUx0FIwMgBcQWQGxpqqmQVKkAtj6ksiAVpD+/qARFTCGxOBkAk1m5yaUAAAA=" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents

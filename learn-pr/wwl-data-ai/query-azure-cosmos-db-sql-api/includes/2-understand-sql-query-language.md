@@ -32,5 +32,6 @@ Here is an example of a JSON object that would be in this container:
             "id": "765EF7D7-331C-42C0-BF23-A3022A723BF7",
             "name": "Tag-191"
         }
+    ]
 }
 ```

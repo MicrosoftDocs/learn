@@ -8,7 +8,7 @@ To start the server, run the following commands from a terminal in the project's
 pip install -r requirements.txt
 flask run --host=localhost
 ```
-Open your browser and navigate to [http://localhost:5000](http://localhost:5000). If everything worked, the sample app should produce an output similar to the screenshot below.
+Open your browser and navigate to `http://localhost:5000`. If everything worked, the sample app should produce an output similar to the screenshot below.
 
 :::image type="content" source="../media/7-python-web-app-home-page.png" alt-text="Screenshot of the Python web app homepage.":::
 

@@ -3,7 +3,7 @@ uid: learn.wwl.review-windows-powershell
 metadata:
   title: Review Windows PowerShell
   description: "Review Windows PowerShell"
-  ms.date: 08/04/2022
+  ms.date: 11/10/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - Familiarity with Windows networking technologies and implementation.
   - Familiarity with Windows Server administration, maintenance, and troubleshooting.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/review-windows-powershell.svg
 levels:
 - intermediate
 roles:
@@ -32,7 +32,6 @@ products:
 - azure-cloud-shell
 - azure-powershell
 - m365
-- vs-code
 subjects:
 - architecture
 - development-tools

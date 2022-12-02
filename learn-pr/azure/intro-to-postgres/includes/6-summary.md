@@ -1,4 +1,4 @@
-In this module, you learned about Azure Database for PostgreSQL. You also learned a little about Azure Cosmos DB for PostgreSQL, and other server deployment options.
+In this module, you learned about Azure Database for PostgreSQL.
 
 Now that you've reviewed this module, you should be able to:
 
@@ -10,4 +10,4 @@ Now that you've reviewed this module, you should be able to:
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
 * [Azure Database for PostgreSQL documentation](/azure/postgresql/)
-* [Azure Cosmos for PostgreSQL documentation](/azure/postgresql/hyperscale/)
+* [Azure Cosmos DB for PostgreSQL documentation](/azure/postgresql/hyperscale/)
