@@ -4,9 +4,9 @@ title: What is health modeling?
 metadata:
   title: What is health modeling?
   description: What is health modeling?
-  ms.date: 11/11/2022
+  ms.date: 11/30/2022
   author: PageWriter-MSFT
-  ms.author: prwilk
+  ms.author: msimecek
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure #TBD
 durationInMinutes: 5 #TBD
@@ -16,36 +16,27 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "What's the first design activity you should do when modeling health?"
+  - content: "What is the main motivation to use health models instead of traditional dashboards?"
     choices:
-    - content: "Define which health states are healthy and unhealthy."
-      isCorrect: false
-      explanation: "Incorrect. While this activity is important, defining the user flows and mapping dependencies between Azure resources is the foundation of a health model design."
-    - content: "An architectural exercise to define all user flows and map dependencies between functional and logical components."
+    - content: "Health models provide contextual information to raw metrics data and allow you to react faster to problems."
       isCorrect: true
-      explanation: "Correct! This exercise implicitly maps dependencies between Azure resources, which is the foundation of a health model design."
-    - content: "Define the layers of the health model."
+      explanation: "Health modeling focuses on a holistic view of the application, so you don't need to focus on raw data."
+    - content: "Health models look better and allow operators to focus on the important parts."
       isCorrect: false
-      explanation: "Incorrect. While this activity is important, defining the user flows and mapping dependencies between Azure resources is the foundation of a health model design."
-  - content: "Question 2"
+      explanation: "Health models evaluate raw metrics data and display a clear indication of the overall health of the workload."
+  - content: "Health modeling focuses on:"
     choices:
-    - content: "Option 1."
+    - content: "Cloud resources and health metrics."
+      isCorrect: false
+      explanation: "Health modeling focuses on a holistic view of the application, not just cloud resources and metrics."
+    - content: "A holistic view of the application, including, but not limited to, cloud resources."
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-  - content: "Question 3"
+      explanation: "Health modeling focuses on the overall health status of the application, rather than raw data metrics. "
+  - content: "What does it mean when an application health model is described as 'layered?'"
     choices:
-    - content: "Option 1."
+    - content: "The health model is multi-dimensional, the whole system is broken down into layers, and the operator filters for only the layer relevant to them."
+      isCorrect: false
+      explanation: "A layered health model enables application health to be traced back to the health of its lower level dependencies."
+    - content: "A layered health model enables application health to be traced back to the health of its lower level dependencies, which helps to quickly find the root cause of service degradation."
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
+      explanation: "Each layer of the health model captures what its healthy and unhealthy states represent."

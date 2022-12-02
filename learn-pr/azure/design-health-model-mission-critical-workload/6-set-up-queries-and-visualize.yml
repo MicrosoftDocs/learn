@@ -6,7 +6,7 @@ metadata:
   description: Collect, query, and visualize heath states.
   ms.date: 11/11/2022
   author: PageWriter-MSFT
-  ms.author: prwilk
+  ms.author: msimecek
   ms.topic: interactive-tutorial
   ms.prod: learning-azure #TBD
 durationInMinutes: 5 #TBD

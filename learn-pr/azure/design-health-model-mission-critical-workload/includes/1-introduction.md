@@ -1,8 +1,8 @@
-In a mission-critical workload, it's important to continuously monitor application components to ensure any degradations are caught early to prevent an outage. A well-designed health model gives you that ability based on metrics and their thresholds. Through optimized queries and visualization, you can identify the cascading impact of degraded components and troubleshoot issues early before they can cause an outage.
+For a mission-critical workload, continuous monitoring of application components is essential to ensuring degradations are caught early and outages are prevented. A well-designed health model provides you that ability based on metrics and corresponding thresholds. Through optimized queries and visualizations, you can quickly identify the cascading impact of degraded system components and troubleshoot issues before an outage can occur.
 
 ## Example scenario
 
-After Contoso Shoes successfully applied the principles of mission-critical architecture in their main customer-facing application, the organization identified a gap in awareness of the health and availability of their internal web application. This website is used by Contoso Shoes employees to update the item catalog, which is then displayed on the main shop site. This existing application was designed according to the quality pillars of [Microsoft Azure Well-Architected Framework](https://learn.microsoft.com/azure/architecture/framework).
+After Contoso Shoes successfully applied the [principles of mission-critical architecture](https://learn.microsoft.com/azure/architecture/framework/mission-critical/mission-critical-design-principles) in their main customer-facing application, the organization identified a gap in awareness of the health and availability of their internal web application. This website is used by Contoso Shoes employees to update the item catalog, which is then displayed on the main shop site. This existing application was designed according to the quality pillars of the [Microsoft Azure Well-Architected Framework](/azure/architecture/framework).
 
 The organization is looking to perform health modeling on this workload and develop queries and dashboards for better observability.
 
@@ -48,7 +48,7 @@ The components of this architecture are as follows:
 
 By the end of this module, you'll have demonstrated your ability to design a health modeling system in a production-ready, mission-critical solution.
 
-## What will you be doing?
+## What will you do?
 
 - Design a health endpoint in the application to check the health at the API level and its dependencies.
 - Expand the solution into multiple regions to survive a regional outage.
@@ -56,4 +56,4 @@ By the end of this module, you'll have demonstrated your ability to design a hea
 
 > [!IMPORTANT]
 >
-> The exercises do not cover all aspects of health modeling for mission-critical workloads. After you complete this module, you're encouraged to continue exploring health modeling principles given in [**Health modeling for mission-critical workloads**](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-health-modeling), so that you have a complete perspective for your own designs.
+> The exercises do not cover all aspects of health modeling for mission-critical workloads. After you complete this module, you're encouraged to continue exploring health modeling principles given in [Health modeling for mission-critical workloads](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-health-modeling), so that you have a complete perspective for your own designs.
