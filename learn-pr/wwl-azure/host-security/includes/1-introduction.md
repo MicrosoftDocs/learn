@@ -15,7 +15,6 @@ Securing the Azure platform your cloud solutions run on is a part of [Exam AZ-50
 Implement platform protection (15-20%)
 
  -  Configure advanced security for compute
-    
      -  Configure endpoint protection
      -  Configure and monitor system updates for VMs
      -  Implement Azure Disk Encryption

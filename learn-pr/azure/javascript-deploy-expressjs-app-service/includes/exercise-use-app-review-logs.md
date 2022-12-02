@@ -11,7 +11,7 @@ In this exercise, you'll:
 1. In Visual Studio Code, select <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd> to open the **Azure** pane on the left.
 1. In the **Resources** section, expand the sandbox subscription, then right-click your Azure App Service resource and select **Browse website**.
 1. The Express.js web app should appear. You can add, edit, and delete properties on the website.
-1. The data is loaded in memory. If you want to refresh the data, go back to the **Azure** pane on the left, in the **Resources** section and right-click your App Service resource, and select **Restart**.
+1. The data is loaded in memory. If you want to refresh the data, go back to the **Azure** pane on the left, right-click your App Service resource in the **Resources** section, right-click your App Service resource, and select **Restart**.
 1. Spend a few minutes using the website.
 1. To create a 404 error, change the URL in the address bar to something like `https://YOUR-APP-NAME.azurewebsites.net/1234`.
 
@@ -44,13 +44,13 @@ The App Service keeps logs in the hosting environment, which you can use to reso
 
     These log lines are generated because the `package.json` file's `start` script includes the environment `DEBUG` variable with `express` and `node` included.
 
-    The debug hosting logs are interesting for a developer new to Azure. They aren't a configuration you want to keep in the production app because your runtime environment could eventually fill up.
+    The debug hosting logs are interesting for a developer new to Azure. They aren't a configuration you want to keep in the production app, because your runtime environment could eventually fill up.
 
 ## Were there any failures, such as "404 - File not found"?
 
 1. In Visual Studio Code, select <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd> to open the **Azure** pane on the left.
 1. In the **Resources > App Services** node, right-click your App Service resource, and then select **Open in portal**.
-1. In the web browser, select **Settings** > **Application Insights**. Then select **View Application Insights data**. This action opens your Azure Application Insights resource.
+1. In the web browser, select **Settings** > **Application Insights**, then select **View Application Insights data**. This action opens your Azure Application Insights resource.
 1. Select **Investigate** > **Failures**. The graph should display your 404 error.
 
     :::image type="content" source="../media/azure-application-insights-failures.png" alt-text="Screenshot of web browser that shows the Azure portal with the Application Insights resource list of web app failures that includes 404 - File not found." lightbox="../media/azure-application-insights-failures.png":::
