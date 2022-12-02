@@ -51,3 +51,5 @@ Your story should include the following components:
 - What is the business value of the decision?
 - What are the limitations of the current methods?
 - How will Autonomous AI lead to groundbreaking results?
+
+Here you can find an example of a [presentation for Autonomous AI winning use cases](https://github.com/MicrosoftDocs/mslearn-machine-teaching-for-autonomous-ai/blob/main/Coffee%20Roasting%20with%20Bonsai%20presentation.pptx?raw=true).

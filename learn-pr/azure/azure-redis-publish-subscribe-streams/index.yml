@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Fundamental knowledge of Azure Cache for Redis
   - Experience using a command-line shell
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-redis-publish-subscribe-streams.svg
 levels:
   - beginner
 roles:
