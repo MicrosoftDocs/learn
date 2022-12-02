@@ -227,7 +227,7 @@ The export process adds redundant properties to many resources. Use these steps 
 >
 > When you select **required-properties**, Visual Studio Code populates the resource definition with the properties that are mandatory. You can refer to **required-properties** to determine whether the properties in your converted template all need to be present.
 >
-> The Azure quickstart templates repository is also helpful for this task. Find a quickstart template that does approximately what you're trying to do, and look at the properties it sets on the resource.
+> The Azure Quickstart Templates repository is also helpful for this task. Find a quickstart template that does approximately what you're trying to do, and look at the properties it sets on the resource.
 
 ## Create a parameter file
 
