@@ -51,6 +51,6 @@ To save costs, we recommend you delete the restored table when you no longer nee
 
 1. Identify the table you want to delete.
 
-1. Select Delete for that table row.
+1. Select Delete for that table  row. 
 
 
