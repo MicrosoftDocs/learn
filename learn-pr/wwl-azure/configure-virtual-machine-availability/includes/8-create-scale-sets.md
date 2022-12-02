@@ -1,10 +1,19 @@
-:::image type="content" source="../media/implement-scale-sets-61516afb.png" alt-text="Screenshot of the Create virtual machine scale set page in the portal.":::
+You can implement Azure Virtual Machine Scale Sets in the Azure portal. You specify the number of virtual machines and their sizes, and indicate preferences for using Azure Spot instances, Azure managed disks, and allocation policies.
 
+### Configure Azure Virtual Machine Scale Sets 
 
-When you create a scale set, consider these parameters.
+In the Azure portal, there are several settings to configure to create an Azure Virtual Machine Scale Sets implementation.
 
- -  **Initial instance count.** Number of virtual machines in the scale set (0 to 1000).
- -  **Instance size.** The size of each virtual machine in the scale set.
- -  **Azure spot instance**. Low-priority VMs are allocated from Microsoft Azure's excess compute capacity. Spot instances enable several types of workloads to run at a reduced cost.
- -  **Enable scaling beyond 100 instances.** If No, the scale set will be limited to one placement group with a max capacity of 100. If Yes, the scale set can span multiple placement groups. This allows for capacity to be up to 1,000 but changes the availability characteristics of the scale set.
- -  **Spreading algorithm**. We recommend deploying with max spreading for most workloads. This approach provides the best spreading.
+:::image type="content" source="../media/implement-scale-sets-61516afb.png" alt-text="Screenshot that shows how to create Virtual Machine Scale Sets in the Azure portal.":::
+
+- **Initial instance count**: Specify the number of virtual machines to use in your Virtual Machine Scale Sets implementation (0 to 1,000).
+
+- **Size**: Specify the size of each virtual machine in your implementation.
+
+- **Azure Spot instance**: Determine whether to enable the Azure Spot instance feature. When Azure Spot instance is enabled, low-priority virtual machines are allocated from Microsoft Azure's excess compute capacity. Azure Spot instances allow several types of workloads to run at a reduced cost.
+
+- **Use managed disks**: Determine whether to use Azure managed disks for block-level storage.
+
+- **Enable scaling beyond 100 instances**: Identify your scaling allocation preference. If you select **No**, your Virtual Machine Scale Sets implementation is limited to one placement group with a maximum capacity of 100. If you select **Yes**, your implementation can span multiple placement groups with capacity up to 1,000. Selecting **Yes** also changes the availability characteristics of your implementation.
+
+- **Spreading algorithm**: Microsoft recommends allocating **Max spreading** for your implementation. This approach provides the optimal spreading.
