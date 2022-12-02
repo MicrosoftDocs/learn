@@ -114,10 +114,9 @@ You can't delete an organization in Azure AD until it passes several checks.
 1. Sign in to the [Azure AD admin center](https://aad.portal.azure.com) with an account that is the global administrator for your organization.
 1. Select **Azure Active Directory**.
 1. On a tenant's **Overview** page, select **Manage tenants**.
-  
-   ![Screenshot that shows the button for managing tenants.](../media/manage-tenants-command.png)
+   :::image type="content" source="../media/manage-tenants-command.png" alt-text="Screenshot that shows the button for managing tenants.":::
 
 1. Select the checkbox for the tenant that you want to delete, and then select **Delete**.
   
-   ![Screenshot that shows the button for deleting an organization.](../media/manage-tenants-delete-command.png)
+   :::image type="content" source="../media/manage-tenants-delete-command.png" alt-text="Screenshot that shows the button for deleting an organization.":::
 1. If your organization doesn't pass one or more checks, you'll get a link to more information on how to pass. After you pass all checks, select **Delete** to complete the process.

@@ -169,30 +169,41 @@ Replicating conditional access policies ensures you don't encounter unexpected b
 
 Viewing your production tenant conditional access policies may need to be performed by a company administrator.
 
-1. Sign into the Azure portal as a Conditional Access Administrator, Security Administrator, or Global Administrator using your production tenant account.
-1. Go to Azure Active Directory > Enterprise applications > Conditional Access.
+1. Sign into the [Azure portal](https://portal.azure.com) using your production tenant Conditional Access Administrator, Security Administrator, or Global Administrator account.
+1. Go to **Azure Active Directory** > **Enterprise applications** > **Conditional Access**.
 1. View the list of policies in your tenant. Click the first one.
-1. Navigate to Cloud apps or actions.
-1. If the policy only applies to a select group of apps, then move on to the next policy. If not, then it will likely apply to your app as well when you move to production. You should copy the policy over to your test tenant.
 
-In a new tab or browser session, navigate to the Azure portal, and sign into your test tenant.
+   :::image type="content" source="../media/conditional-access-policies.png" alt-text="Screenshot of the 'Conditional Access policies' pane.":::
 
-1. Go to Azure Active Directory > Enterprise applications > Conditional Access.
-1. Click on New policy
-1. Copy the settings from the production tenant policy, identified through the previous steps.
+1. Navigate to **Cloud apps or actions**.
+1. If the policy applies to all cloud apps, it will likely apply to your app when you move it from test to production.  Make note of the policy settings in order to copy the policy to your test tenant.  If the policy only applies to a select group of apps, then move on to the next policy and do not copy the policy to your test tenant.
+
+   :::image type="content" source="../media/cloud-apps-or-actions.png" alt-text="Screenshot of the 'Conditional Access policies' pane.":::
+
+In a new tab or browser session, sign into the [Azure portal](https://portal.azure.com) using your test tenant Conditional Access Administrator, Security Administrator, or Global Administrator account.
+
+1. Sign in to the Azure portal as a Conditional Access Administrator, Security Administrator, or Global Administrator.
+1. Browse to **Azure Active Directory** > **Security** > **Conditional Access**.
+Select **New policy**.
+1. Copy the settings from the production tenant policy, identified through the previous steps, and create the new policy.
 
 ### Permission grant policies
-Replicating permission grant policies ensures you don't encounter unexpected prompts for admin consent when moving to production.
 
-1. Sign into the Azure portal using your production tenant account.
-1. Click on Azure Active Directory.
-1. Go to Enterprise applications.
-1. From your production tenant, go to Azure Active Directory > Enterprise applications > Consent and permissions > User consent settings. Copy the settings there to your test tenant.
+Replicating permission grant policies ensures you don't encounter unexpected prompts for admin consent when moving to production.  To configure user consent settings, you need to sign in as a user with Global Administrator or Privileged Administrator roles.
 
-### Token lifetime policies
-Replicating token lifetime policies ensures tokens issued to your application don't expire unexpectedly in production.
+1. Sign into the [Azure portal](https://portal.azure.com) using your production tenant Global Administrator account.
+1. Select **Azure Active Directory** > **Enterprise applications** > **Consent and permissions** > **User consent settings**.
+1. Under User **consent for applications**, view the consent settings for all users.
 
-Token lifetime policies can currently only be managed through PowerShell. Read about configurable token lifetimes to learn about identifying any token lifetime policies that apply to your whole production organization. Copy those policies to your test tenant.
+   :::image type="content" source="../media/setting-for-all-users.png" alt-text="Screenshot of the 'User consent settings' pane.":::
+
+1. Make note of the settings you want to replicate to users of your test tenant.
+1. Sign into the Azure portal using your test tenant Global Administrator account.
+1. Select **Azure Active Directory** > **Enterprise applications** > **Consent and permissions** > **User consent settings**.
+1. Under **User consent for applications**, select which consent setting you want to configure for all users.
+1. Select **Save** to save your settings.
+
+   :::image type="content" source="../media/setting-for-all-users-save.png" alt-text="Screenshot of the 'User consent settings' pane.":::
 
 <!-- 5. Validation -------------------------------------------------------------------------------------------
 
