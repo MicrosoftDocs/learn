@@ -123,7 +123,7 @@ To allow or deny calls from specific IP addresses or ranges of IP addresses, use
 
 Several policies enable you to control authentication:
 
-You can use the **Authenticate with Basic** policy to enable authentication in plain text. This form of authentication is broadly supported, but remember that yous should protect it with SSL encryption; otherwise, a malicious attack can intercept the credentials as they cross the network.
+You can use the **Authenticate with Basic** policy to enable authentication in plain text. This form of authentication is broadly supported, but remember that you should protect it with SSL encryption; otherwise, a malicious attack can intercept the credentials as they cross the network.
 
 You can use the **Authenticate with client certificate** policy to enable clients to authenticate by supplying a client certificate.
 
