@@ -105,7 +105,7 @@ You can't delete an organization in Azure AD until it passes several checks.
 - No users are in the Azure AD tenant, except one global administrator who will delete the organization. You must delete any other users before you can delete the organization.
 - If users are synchronized from on-premises, turn off the sync first. You must delete the users in the cloud organization by using the Azure portal or Azure PowerShell cmdlets.
 - No applications are in the organization. You must remove any applications before you can delete the organization.
-- No multifactor authentication providers are linked to the organization.
+- No multi-factor authentication providers are linked to the organization.
 - No subscriptions for any Microsoft Online Services offerings (such as Azure, Microsoft 365, or Azure AD Premium) are associated with the organization.
 - For example, if a default Azure AD tenant was created for you in Azure, you can't delete this organization if your Azure subscription still relies on it for authentication. You also can't delete a tenant if another user has associated an Azure subscription with it.
 
@@ -115,9 +115,9 @@ You can't delete an organization in Azure AD until it passes several checks.
 1. Select **Azure Active Directory**.
 1. On a tenant's **Overview** page, select **Manage tenants**.
   
-   ![Screenshot that shows the button for managing tenants.](../media/directory-delete-howto/manage-tenants-command.png)
+   ![Screenshot that shows the button for managing tenants.](../media/manage-tenants-command.png)
 
 1. Select the checkbox for the tenant that you want to delete, and then select **Delete**.
   
-   ![Screenshot that shows the button for deleting an organization.](../media/directory-delete-howto/manage-tenants-delete-command.png)
+   ![Screenshot that shows the button for deleting an organization.](../media/manage-tenants-delete-command.png)
 1. If your organization doesn't pass one or more checks, you'll get a link to more information on how to pass. After you pass all checks, select **Delete** to complete the process.

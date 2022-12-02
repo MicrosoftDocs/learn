@@ -22,8 +22,8 @@ When setting up your application's Azure AD test environment, you need to decide
 -->
 Recall that in the sales team dashboard example, your development team chose to setup a test environment in a separate Azure AD tenant.  Some of the key factors for making this decision were:
 
-- You want to set up a CI/CD pipeline that automates building, testing, and deploying the web app.  Creating test users and test app registrations in the tenant require in the production tenant are high-privilege operations, since they require admin permissions.
-- The administrators reviewed your request for allowing the creation of test users and test data in the production tenant and did not approve.
+- You want to set up a CI/CD pipeline that automates building, testing, and deploying the web app.  Creating test users and test app registrations in the production tenant are high-privilege operations, since they require admin permissions.
+- The administrators reviewed your request for automatically creating test users and test data in the production tenant and did not approve.
 - Multi-factor authentication is required for all users in the production tenant.  Automating sign-ins for integration testing will not be possible.
 - After some investigation, your team decided that the integration tests need to use a non-interactive flow, called Resource Owner Password Credential Grant (ROPC), to automatically sign in users for testing. Microsoft recommends that you *do not* use the ROPC flow in a production environment.
 
@@ -64,9 +64,7 @@ In this exercise, you setup your test environment in Azure AD by creating a sepa
 
 ## Get a test tenant
 
-If you don't already have a dedicated test tenant in Azure AD, you can create one for free using the Microsoft 365 Developer Program or manually create one yourself.
-
-### Join the Microsoft 365 Developer Program (recommended)
+If you don't already have a dedicated test tenant in Azure AD, you can create one for free.  You can [manually create a new tenant](https://learn.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant), which will be empty upon creation and will have to be configured with test data and test users.  Microsoft recommends you join the Microsoft 365 Developer Program, which is free and can be used to easily setup an Azure AD tenant.  The Microsoft 365 Developer Program also includes a Microsoft 365 E5 developer subscription that you can use to create your own sandbox and develop solutions independent of your production environment. You can build Microsoft Teams apps, Office Add-ins for Word, Excel, PowerPoint, or Outlook, or SharePoint Add-ins, using Microsoft Graph, the SharePoint Framework, Power Apps, and more.
 
 1. Go to the [Join the Microsoft 365 Developer Program](https://learn.microsoft.com/office/developer-program/microsoft-365-developer-program#join-the-microsoft-365-developer-program) page.
 1. Click on the **Join now** button on the screen.
@@ -75,11 +73,11 @@ If you don't already have a dedicated test tenant in Azure AD, you can create on
 1. Click on **Set Up Subscription**. Specify the region where you want to create your new tenant, create a username, domain, and enter a password. This will create a new tenant and the first administrator of the tenant.
 1. Enter the security information, which is needed to protect the administrator account of your new tenant. This will set up multi-factor authentication for the account.
 
-### Manually create a tenant
-
-You can [manually create a tenant](https://learn.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant), which will be empty upon creation and will have to be configured with test data.
+When you're finished setting up your subscription, you can optionally set up set up your Microsoft 365 E5 sandbox which includes an Azure AD tenant, fictitious test users, a Microsoft Teams sample data pack, and data for Microsoft Graph, Sharepoint, and Office Add-ins development.
 
 ## Populate your tenant with users
+
+If you did not use a Microsoft 365 developer subscription to add test users to your tenant, or those test users do not meet your testing needs, you can add more yourself.
 
 For convenience, you may want to invite yourself and other members of your development team to be guest users in the tenant. This will create separate guest objects in the test tenant, but means you only have to manage one set of credentials for your corporate account and your test account.
 
