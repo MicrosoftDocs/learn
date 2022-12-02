@@ -158,6 +158,7 @@ public InputStream read(String name) {
     ```azurecli
     CONNECTIONSTRING=$(az storage account show-connection-string \
     --name <your-unique-storage-account-name> \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
     --output tsv)
     ```
 

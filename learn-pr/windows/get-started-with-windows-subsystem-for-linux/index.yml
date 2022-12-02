@@ -30,7 +30,6 @@ roles:
 - developer
 products:
 - windows
-- vs-code
 subjects:
 - development-tools
 units:

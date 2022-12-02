@@ -2,8 +2,8 @@
 uid: learn.wwl.plan-implement-manage-access-review
 metadata:
   title: Plan, implement, and manage access review
-  description: "Once identity is deployed, proper governance using access reviews is necessary for a secure solution. Explore how to plan for and implement access reviews."
-  ms.date: 06/24/2022
+  description: "Plan, implement, and manage access review"
+  ms.date: 11/29/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
