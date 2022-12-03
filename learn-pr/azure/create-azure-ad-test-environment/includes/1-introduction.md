@@ -53,8 +53,11 @@ TODO: add a visual element
 
 In this module, you will:
 
-- Evaluate whether you need a dedicated test tenant for application's Azure AD test environment, or can use an existing production tenant
-- Set up an Azure AD test environment in a separate tenant
+- Decide whether to use a production Azure AD tenant or a separate tenant for your test environment
+- Setup a dedicated test tenant in Azure AD
+- Create a test user in the test tenant
+- Create an app registration to use as a test client for your web app
+- Add policies to the test tenant
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
@@ -70,11 +73,3 @@ In this module, you will:
 By the end of this session, you'll be able to setup a test environment in Azure AD for testing Azure applications.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
-
-## Prerequisites
-
-- Experience navigating the Azure portal
-- Ability to write Azure CLI and PowerShell scripts at the beginner ability
-- Knowledge of Azure AD tenants, app registrations, service principals, and users at the beginner level.
-- Knowledge of app permissions and consent in Microsoft identity platform at the beginner level.
-- To complete the exercise in this module you will need an Azure account with an active subscription. Create an [account for free](https://azure.microsoft.com/free/).

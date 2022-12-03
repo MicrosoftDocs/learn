@@ -1,24 +1,24 @@
 ### YamlMime:Module
 uid: learn.create-azure-ad-test-environment
 metadata:
-  title: Setup an Azure AD test environment for application testing in Azure
-  description: "Evaluate whether you need a dedicated test tenant for your Azure application test environment or whether you can use a production tenant. Create a dedicated Azure AD tenant for application testing."
+  title: Setup an Azure Active Directory test environment for application testing
+  description: Evaluate whether you need a dedicated test tenant for your Azure application test environment or whether you can use a production tenant. Create a dedicated Azure AD tenant for application testing.
   ms.date: 11/18/2022
   author: rwike77
   ms.author: ryanwi
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-title: Setup an Azure AD test environment for application testing in Azure
-summary: "Evaluate whether you need a dedicated test tenant for your application test environment. Create a test tenant in Azure AD for use in a continuous integration/continuous deployment (CI/CD) pipeline or testing Azure applications."
+title: Setup an Azure Active Directory test environment for application testing in Azure
+summary: Evaluate whether you need a dedicated test tenant for your application test environment. Create a test tenant in Azure AD for use in a continuous integration/continuous deployment (CI/CD) pipeline or testing Azure applications.
 abstract: |
   By the end of this module, you'll be able to:
     - "Evaluate whether you need a dedicated test Azure AD tenant or production tenant for your application test environment."
     - "Set up a test environment in a separate tenant"    
 prerequisites: |
-  - "Experience navigating the Azure portal"
-  - "Knowledge of Azure AD tenants, app registrations, service principals, and users at the beginner level."
-  - "Knowledge of app permissions and consent in Microsoft identity platform at the beginner level."
-  - "To complete the exercise in this module you will need an Azure account with an active subscription. Create an [account for free](https://azure.microsoft.com/free/)."
+  - Experience navigating the Azure portal
+  - Knowledge of Azure AD tenants, app registrations, service principals, and users at the beginner level.
+  - Knowledge of app permissions and consent in Microsoft identity platform at the beginner level.
+  - To complete the exercise in this module you will need an Azure account with an active subscription. Create an [account for free](https://azure.microsoft.com/free/).
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - intermediate
