@@ -1,4 +1,8 @@
-As you build your health model, you define application health in the context of key business requirements by quantifying "healthy" and "unhealthy" states in a layered and measurable format. Use a "traffic light" model to visually represent these healthy and unhealthy states, with green used to illustrate when key non-functional requirements are fully satisfied and resources are optimally utilized. Use "Green", "Amber, and "Red" to represent "Healthy", "Degraded", and "Unavailable" states.
+As you build your health model, you define application health in the context of key business requirements by quantifying *healthy*, *degraded*, and *unhealthy* states in a layered and measurable format. Use a *traffic light* model to visually represent these health states by using green, amber, and red as follows:
+
+- Green: Healthy state. Key non-functional requirements are fully satisfied and resources are optimally utilized.
+- Amber: Degraded state. The operator's attention is required to mitigate this state.
+- Red: Unhealthy state. The effects of the impacted system are apparent to the end user.
 
 Each layer of the health model should capture what the healthy and unhealthy states represent. It's important to distinguish between transient and non-transient failure states to qualify service degradation relative to unavailability. Metrics and metric thresholds for resources must be finely tuned in terms of what values represent healthy and unhealthy states, which are heavily influenced by encompassed application functionality and target non-functional requirements. To capture health states for an individual component, that component's distinct operational characteristics must be understood under a steady state that is reflective of production load. Performance testing is therefore a key capability to define and continually evaluate application health.
 

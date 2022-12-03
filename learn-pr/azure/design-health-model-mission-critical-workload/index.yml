@@ -44,7 +44,6 @@ units:
 - learn.design-health-model-mission-critical-workload.health-states
 - learn.design-health-model-mission-critical-workload.exercise-define-health-states-metrics-threshold
 - learn.design-health-model-mission-critical-workload.set-up-queries-and-visualize
-- learn.design-health-model-mission-critical-workload.exercise-queries-visualize
 - learn.design-health-model-mission-critical-workload.summary
 badge:
   uid: learn.design-health-model-mission-critical-workload.badge 
