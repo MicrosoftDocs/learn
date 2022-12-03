@@ -27,7 +27,7 @@ Recall that in the sales team dashboard example, your development team chose to 
 - Multi-factor authentication is required for all users in the production tenant.  Automating sign-ins for integration testing will not be possible.
 - After some investigation, your team decided that the integration tests need to use a non-interactive flow, called Resource Owner Password Credential Grant (ROPC), to automatically sign in users for testing. Microsoft recommends that you *do not* use the ROPC flow in a production environment.
 
-TODO: add your scenario image
+<!-- TODO: add your scenario image -->
 
 <!-- 3. Task performed in the exercise ---------------------------------------------------------------------
 

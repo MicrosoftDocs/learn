@@ -36,7 +36,7 @@ This exercise takes you through the process of evaluating whether you need a ded
 
     Heading: none
 -->
-TODO: add a visual element
+<!-- TODO: add a visual element -->
 
 <!-- 5. Chunked content-------------------------------------------------------------------------------------
 

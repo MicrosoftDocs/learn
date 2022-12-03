@@ -12,7 +12,7 @@
 -->
 An Azure Active Directory (Azure AD) tenant includes the tenant's users, groups, and apps and is used to perform identity and access management functions for tenant resources.  You can create different tenants and resources to represent different application environments, such as production and test.
 
-TODO: add a visual element
+<!--TODO: add a visual element -->
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
@@ -35,7 +35,7 @@ Suppose you work on a development team that creates internal apps for a retail c
 
 In this module, your team will set up an Azure AD test environment to help move your web app through the development, test, and production lifecycle.  You'll need an Azure AD tenant which contains app registrations to represent your application and test clients, test users, and optionally policies to protect resources.
 
-TODO: add a visual element
+:::image type="content" source="../media/pipeline.png" alt-text="Diagram showing the components of a CI/CD pipeline.":::
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
