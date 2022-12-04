@@ -2,6 +2,8 @@ Enterprises often use private mobile networks that Azure Private 5G Core powers 
 
 In this module, we'll introduce you to Azure Private 5G Core routine management tasks, including tasks for site management, SIM and SIM policy management, and system upgrade. For each task, we'll explain the reasons for performing the operation. We'll also provide high-level instructions for completing the task, with links to the detailed steps described in relevant documentation.
 
+You can complete many management tasks by using either the Azure portal or an Azure Resource Manage template (ARM template). While the Azure portal provides intuitive graphical user interface, an ARM template can help you quickly complete repetitive steps. For example, with an ARM template, you can deploy multiple sites or provision multiple SIMs in one go. Where applicable, this module provides instructions for using both the Azure portal and an ARM template to complete a task.
+
 After the learning, you'll need to do some exercises in the Knowledge Check unit to make sure that you've learned the tasks successfully. With the knowledge taught in this module, you should be able to manage an Azure Private 5G Core powered private mobile network on a routine basis.
 
 > [!NOTE]
