@@ -12,7 +12,7 @@ You'll start by creating a folder, setting up your tooling, and creating a "swin
 1. Navigate to the **resume** folder you created earlier and select **Select Folder**.
 1. When prompted to **Let site view files**, select **View Files**.
 1. Select the **Extensions** button.
-    >![Visual Studio extensions button.](../media/extensions.png)
+    >:::image type="content" source="../media/extensions.png" alt-text="Visual Studio extensions button.":::
 1. In the **Search Extensions in Marketplace** text box, type **CodeSwing**.
 1. Select **Install** to install **CodeSwing**.
 1. Open the Command Palette by selecting **Ctrl+Shift+P** or **Cmd-Shift-P** on a Mac.
@@ -116,4 +116,4 @@ By default, most browsers will use a serif font such as Times New Roman. You wan
 
 The following screenshot is the result of the CSS you applied in this exercise. If you wish to experiment with different fonts and sizes, you can modify the CSS as you wish.
 
-![Final page as rendered in browser](../media/fonts-final.png)
+:::image type="content" source="../media/fonts-final.png" alt-text="Final page as rendered in browser":::
