@@ -12,13 +12,22 @@ metadata:
 
 title: Introduction to Partner Center
 
-summary: "In this module, you'll learn how to manage your customer relationships with Microsoft Partner Center."
+summary: "In this module, you'll learn how Microsoft Partner Center can help you manage your business relationships."
 
 abstract: |
   In this module, you will:
     - Evaluate whether Microsoft Partner Center is appropriate for your business
     - Learn about workspaces
-    - Find out about billing, customers, incentives, insights, referrals, and pricing
+  
+  You will also learn how to: 
+    - Manage your Microsoft account and users
+    - Engage with customers
+    - Build relationships with other partners
+    - Enroll in incentive programs
+    - Manage customer subscriptions
+    - Bill and get paid
+    - Contact support
+    - Publish or explore offers in the Microsoft commercial marketplace
 
 prerequisites: |
   - None
