@@ -1,6 +1,6 @@
-resource networkInterface 'Microsoft.Network/networkInterfaces@2020-11-01' = {
+resource networkInterface 'Microsoft.Network/networkInterfaces@2022-05-01' = {
   name: networkInterfaces_toytruckserver890_name
-  location: 'westus'
+  location: 'westus3'
   properties: {
     ipConfigurations: [
       {
@@ -24,8 +24,10 @@ resource networkInterface 'Microsoft.Network/networkInterfaces@2020-11-01' = {
     }
     enableAcceleratedNetworking: true
     enableIPForwarding: false
+    disableTcpStateTracking: false
     networkSecurityGroup: {
       id: networkSecurityGroup.id
     }
+    nicType: 'Standard'
   }
 }
