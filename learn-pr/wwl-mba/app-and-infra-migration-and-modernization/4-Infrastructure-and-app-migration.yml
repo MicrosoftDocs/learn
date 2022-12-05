@@ -5,8 +5,8 @@ metadata:
   title: Infrastructure and app migration
   description: Infrastructure and app migration
   ms.date: 12/04/2022
-  author: maargued
-  ms.author: maargued
+  author: wwlpublish
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
