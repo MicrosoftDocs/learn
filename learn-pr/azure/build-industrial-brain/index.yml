@@ -23,6 +23,7 @@ prerequisites: |
   - Basic knowledge of Machine Teaching
   - Basic knowledge of AI Specification document
   - Basic knowledge of brain design patterns
+  - Basic knowledge of selecting use cases for Autonomous AI
 iconUrl: /training/achievements/generic-badge.svg
 levels: 
 - beginner
@@ -30,13 +31,18 @@ roles:
 - business-user
 products: 
 - azure
+- bonsai
 subjects:
 - artificial-intelligence
 units:
 - learn.oxford.build-industrial-brain.introduction
 - learn.oxford.build-industrial-brain.define-problem
-- learn.oxford.build-industrial-brain.setup-account
-- learn.oxford.build-industrial-brain.create-brain
+- learn.oxford.build-industrial-brain.decompose-problem
+- learn.oxford.build-industrial-brain.exercise-setup-account
+- learn.oxford.build-industrial-brain.exercise-create-brain
+- learn.oxford.build-industrial-brain.exercise-train-brain
+- learn.oxford.build-industrial-brain.exercise-create-custom-assessment
+- learn.oxford.build-industrial-brain.exercise-query-assessment-data
 - learn.oxford.build-industrial-brain.summary
 
 badge: 
