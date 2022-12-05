@@ -29,7 +29,7 @@ You can use the Azure portal or Azure Resource Manager (ARM) APIs to perform tas
 
 - Deploy and configure a packet core instance on your Azure Stack Edge device.
 - Provision SIM resources to authenticate devices in the network.
-- Employ Log Analytics and other observability services to view the health of your network and take corrective action through Azure.
+- Employ platform metrics or other observability services to view the health of your network and take corrective action through Azure.
 - Use Azure role-based access control (RBAC) to allow granular access to the private mobile network.
 - Access the large ecosystem of Microsoft independent software vendor (ISV) partners for applications and network functions.
 
