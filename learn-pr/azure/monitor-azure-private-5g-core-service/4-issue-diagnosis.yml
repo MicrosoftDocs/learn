@@ -11,4 +11,4 @@ metadata:
   ms.service: learning-private-5g-core
 durationInMinutes: 11
 content: |
-  [!include[](includes/5-issue-diagnosis.md)]
+  [!include[](includes/4-issue-diagnosis.md)]

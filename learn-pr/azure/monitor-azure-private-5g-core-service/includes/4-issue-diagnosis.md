@@ -18,22 +18,9 @@ The URL for accessing the distributed tracing tool is as follows:
 Here *\<`LocalMonitoringIP`\>* is the IP address for accessing the local monitoring tools that you set up when you configure the management network during Azure Private 5G Core deployment.
 
 <!-- Need to verify if the AAD feature will be delivered for GA -->
-Azure Private 5G Core provides two authentication methods for the distributed tracing tool:
+The distributed tracing tool uses Azure active directory (AD) for user authentication. It allows users to sign in with their Azure accounts.
 
-- Username and password: The username/password method allows you to sign in the distributed tracing tool with a default account. Use this method if your site isn't always connected to Azure.
-
-  You can use the following default account to sign in:
-
-  - Username: *admin*
-  - Password: *packetCoreAdmin*
-  
-  Change the password for the account after the initial sign-in.
-
-- Azure Active Directory (AD): The Azure AD method allows users to sign in to the packet core dashboards with their Azure accounts. Use this method if your site is always connected to Azure.
-
-  For more information about enabling and configuring the Azure AD authentication method, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
-
-You can select an authentication method when you create or modify a site through the Azure portal.
+For detailed instructions on enabling and configuring the Azure AD authentication method, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
 
 ## Diagnostics details that you can check
 

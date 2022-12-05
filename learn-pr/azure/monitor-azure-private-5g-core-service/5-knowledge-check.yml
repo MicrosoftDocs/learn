@@ -15,9 +15,9 @@ quiz:
   questions:
   - content: "To monitor all the sites in a private mobile network centrally from Azure, which of the following tools should be used?"
     choices:
-    - content: "Azure Log Analytics"
+    - content: "Platform metrics"
       isCorrect: true
-      explanation: "Correct. Azure Private 5G Core can stream log data from packet core instances to the Log Analytics workspace. It allows you to use queries to retrieve the log data or use dashboards to visualize query results."
+      explanation: "Correct. Azure Private 5G Core creates the platform metrics for a site once the site is deployed. You can check these platform metrics through the Mobile Network Site resource that you use to manage the site."
     - content: "The packet core dashboards"
       isCorrect: false
       explanation: "Try again. The packet core dashboards allow you to locally monitor a specific site in a private mobile network."

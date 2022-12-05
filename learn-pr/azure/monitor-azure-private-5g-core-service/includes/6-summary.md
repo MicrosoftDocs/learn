@@ -1,6 +1,6 @@
 To ensure the availability and the performance of a private mobile network, Azure Private 5G Core allows you to monitor the private mobile network either centrally from Azure or locally at each site of the network. 
 
-From Azure, you can use platform metrics or Log Analytics to do the monitoring. Additionally, Azure Private 5G Core supports monitoring a network with third-party applications. These applications can use the Azure Monitor REST API to retrieve the health and performance metrics data from Azure Private 5G Core. You can also export the metrics data to another application like Azure Event Hubs or a storage account.
+From Azure, you can use platform metrics to do the monitoring. Additionally, Azure Private 5G Core supports monitoring a network with an application of your choice. These applications can use the Azure Monitor REST API to retrieve the health and performance metrics data from Azure Private 5G Core. You can also export the metrics data to another application like Azure Event Hubs or a storage account.
 
 Locally at each site, you can use the packet core dashboards to do real-time monitoring.
 

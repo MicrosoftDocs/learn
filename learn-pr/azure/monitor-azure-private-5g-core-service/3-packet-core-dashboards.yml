@@ -11,4 +11,4 @@ metadata:
   ms.service: learning-private-5g-core
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-packet-core-dashboards.md)]
+  [!include[](includes/3-packet-core-dashboards.md)]
