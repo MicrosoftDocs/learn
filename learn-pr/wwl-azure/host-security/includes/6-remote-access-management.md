@@ -8,7 +8,7 @@ If you are using PowerShell and have the Azure PowerShell module installed you m
 
 ## Connect to a Linux-based VM
 
-To connect the Linux-based VM, you need a secure shell protocol (SSH) client. The most used free tool is **PuTTY** SHH terminal. The following shows the PuTTY configuration dialog.
+To connect the Linux-based VM, you need a secure shell protocol (SSH) client. The most used free tool is **PuTTY** SSH terminal. The following shows the PuTTY configuration dialog.
 
 :::image type="content" source="../media/az500-putty-9887de6d.png" alt-text="PuTTY configuration dialog box.":::
 
