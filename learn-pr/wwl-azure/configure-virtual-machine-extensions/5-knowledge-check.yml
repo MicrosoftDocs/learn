@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
@@ -20,12 +20,12 @@ quiz:
   questions:
   - content: "Which of the following options is a small application that provides post-deployment configuration and automation tasks for Azure Virtual Machines?"
     choices:
-    - content: "Automation state configuration"
+    - content: "Automation State Configuration"
       isCorrect: false
-      explanation: "Incorrect. Automated state configuration ensures all virtual machines in a collection are in the same consistent state."
-    - content: "Desired state configuration"
+      explanation: "Incorrect. Automated State Configuration ensures all virtual machines in a collection are in the same consistent state."
+    - content: "Desired State Configuration"
       isCorrect: false
-      explanation: "Incorrect. Desired state configuration helps with deploying and managing configuration data for software services."
+      explanation: "Incorrect. Desired State Configuration helps with deploying and managing configuration data for software services."
     - content: "Virtual machine extensions"
       isCorrect: true
       explanation: "Correct. Virtual machine extensions are small applications that automate the tasks of creating, maintaining, and removing virtual machines."
@@ -44,9 +44,9 @@ quiz:
   
   - content: "What option can the infrastructure team use for their IIS configuration instead of Custom Script Extensions?"
     choices:
-    - content: "Desired state configuration"
+    - content: "Desired State Configuration"
       isCorrect: true
-      explanation: "Correct. Desired state configuration is a good choice for installing virtual machine features."
+      explanation: "Correct. Desired State Configuration is a good choice for installing virtual machine features."
     - content: "Virtual machine extension"
       isCorrect: false
       explanation: "Incorrect. Virtual machine extensions automate the tasks of creating, maintaining, and removing virtual machines."

@@ -1,6 +1,6 @@
 Azure virtual machine extensions are small applications that provide post-deployment configuration and automation tasks for Azure Virtual Machines. If your virtual machine requires software installation or anti-virus protection, or your machine needs to run a script, you can use a virtual machine extension to manage the process.
 
-In this module, you explored the features of virtual machine extensions and reviewed example scenarios. You discovered how Custom Script Extensions can be used to automatically launch and execute virtual machine customization tasks after the initial configuration. You explored the desired state configuration management platform in Windows PowerShell. You reviewed how to use the platform to deploy and manage configuration data and manage the virtual machine services environment.
+In this module, you explored the features of virtual machine extensions and reviewed example scenarios. You discovered how Custom Script Extensions can be used to automatically launch and execute virtual machine customization tasks after the initial configuration. You explored the Desired State Configuration management platform in Windows PowerShell. You reviewed how to use the platform to deploy and manage configuration data and manage the virtual machine services environment.
 
 ## Learn more
 
@@ -11,6 +11,8 @@ In this module, you explored the features of virtual machine extensions and revi
 - Get started with [Azure Automation State Configuration](/azure/automation/automation-dsc-getting-started).
 
 - Deploy [applications to a Windows virtual machine in Azure with the Custom Script Extension](/azure/virtual-machines/windows/tutorial-automate-vm-deployment).
+
+- Explore [Desired State Configuration 2.0](/powershell/dsc/overview?view=dsc-2.0).
 
 ## Learn more with self-paced training
 

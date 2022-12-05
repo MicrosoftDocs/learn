@@ -13,8 +13,8 @@ summary: Learn how to use virtual machine extensions to automate virtual machine
 abstract: |
   In this module, you learn how to:
   - Identify features and usage cases for virtual machine extensions.
-  - Identify features and usage cases for custom script extensions.
-  - Identify features and usage cases for desired state configuration.
+  - Identify features and usage cases for Custom Script Extensions.
+  - Identify features and usage cases for Desired State Configuration.
 prerequisites: |
   None
 iconUrl: /training/achievements/virtual-machines-configure-extension.svg

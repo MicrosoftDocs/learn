@@ -7,8 +7,8 @@ In this module, your company has created numerous scripts and processes to ensur
 In this module, you learn how to:
 
 - Identify features and usage cases for virtual machine extensions.
-- Identify features and usage cases for custom script extensions.
-- Identify features and usage cases for desired state configuration.
+- Identify features and usage cases for Custom Script Extensions.
+- Identify features and usage cases for Desired State Configuration.
 
 ## Skills measured
 
