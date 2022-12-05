@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/30/2022
+  ms.date: 12/05/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -12,27 +12,23 @@ metadata:
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
 quiz:
   questions:
-  - content: "A data scientist has trained a model to cluster customers into four different personas. The marketing team wants to integrate the model with their customer relationship management (CRM) system to add the persona tag to each individual customer information in the system. What type of predictions are needed?"
+  - content: "What type of predictions are needed?"
     choices:
     - content: "Real-time predictions"
-      isCorrect: false
-      explanation: "Incorrect. You can generate batch predictions to add tags to each customer. There is no need for immediate predictions for individual customers."
+      isCorrect: true
+      explanation: "Correct. There is a need for immediate predictions for individual patients."
     - content: "Batch predictions"
-      isCorrect: true
-      explanation: "Correct. You can generate batch predictions to add tags to each customer. There is no need for immediate predictions for individual customers."
-    - content: "Individual predictions"
       isCorrect: false
-      explanation: "Incorrect. You can generate batch predictions to add tags to each customer. There is no need for immediate predictions for individual customers."
-  - content: "At a hospital, a model has been trained to detect abnormalities in X-ray images of lungs. An X-ray is analyzed by a doctor before communicating the results with the patient during the next appointment. How should the model be deployed?"
+      explanation: "Incorrect. Batch predictions would take too long. We need immediate predictions."
+  - content: "What kind of compute should be used by the deployed model?"
     choices:
-    - content: "To a real-time endpoint."
+    - content: "Virtual machines."
       isCorrect: false
-      explanation: "Incorrect. There is no need for immediate predictions as the doctor has time to analyze the results before the next appointment."
-    - content: "To a batch endpoint."
+      explanation: "Incorrect. Virtual machine will be too expensive to have running all the time. Containers will be a more cost-effective solution."
+    - content: "Containers."
       isCorrect: true
-      explanation: "Correct. A batch endpoint can be triggered when one or more X-ray images need to be analyzed. There is no need for immediate predictions."
-    - content: "To an online endpoint."
-      isCorrect: false
-      explanation: "Incorrect. There is no need for immediate predictions as the doctor has time to analyze the results before the next appointment."
+      explanation: "Correct. Containers will be the more cost-effective solution as we want the model to be always available and respond immediately."
