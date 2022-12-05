@@ -5,9 +5,10 @@ Special thanks to [Audrey St. John from Mount Holyoke College](https://www.mthol
 > [!TIP]
 > Remember, this module is part of a multimodal learning experience. [Follow along with a video walkthrough of a similar program](https://youtu.be/VH_mU42lQkQ?azure-portal=true) in a new tab.
 
-## Additional challenges for your decrypt code
+## Other challenges for your decrypt code
 
 As an added challenge, you can explore how to:
+
 - Maintain casing for each letter throughout the decoding process.
 - Create a function to read in an entire message without having to print each word individually.
 - Modify your decoder to include numbers.

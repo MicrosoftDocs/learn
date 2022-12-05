@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/25/2022
+  ms.date: 12/01/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "A company provides customers a virtual network in the cloud. There are dozens of Linux virtual machines in another virtual network. Which Azure load balancer should be used to direct traffic between the virtual networks?"
+  - content: "A company provides customers a virtual network in the cloud. Which type of Azure load balancer should be used to direct traffic to resources inside the virtual networks?"
     choices:
     - content: "An external load balancer."
       isCorrect: false
@@ -35,7 +35,7 @@ quiz:
       explanation: "Incorrect. Affinity specifies that successive requests from the same client IP address and protocol combination will be handled by the same virtual machine."
     - content: "Three-tuple hash"
       isCorrect: false
-      explanation: "Incorrect. A three-tuple hash is not the distribution type."
+      explanation: "Incorrect. A three-tuple hash isn't the distribution type."
     - content: "Five-tuple hash"
       isCorrect: true
       explanation: "Correct. The load balancer uses a five-tuple (source IP, source port, destination IP, destination port, and protocol type) hash to map traffic to available servers."
