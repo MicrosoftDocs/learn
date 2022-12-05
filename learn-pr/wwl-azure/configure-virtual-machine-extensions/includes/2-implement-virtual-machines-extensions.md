@@ -4,7 +4,7 @@ Azure virtual machine extensions are small applications that provide post-deploy
 
 ### Things to know about virtual machine extensions
 
-Examine some characteristics of virtual machine extensions.
+Examine the following characteristics of virtual machine extensions.
 
 - You can manage virtual machine extensions with the Azure CLI, PowerShell, Azure Resource Manager (ARM) templates, and the Azure portal.
 
@@ -14,7 +14,7 @@ Examine some characteristics of virtual machine extensions.
 
    :::image type="content" source="../media/virtual-machine-extensions-facf0a08.png" alt-text="Screenshot of Windows extensions in the Azure portal showing the Custom Script Extension and PowerShell Desired State Configuration extension.":::
 
-### Things to know when using virtual machine extensions
+### Things to consider when using virtual machine extensions
 
 Let's review some example scenarios for working with virtual machine extensions. Think about how can you implement virtual machines extensions to support your organization.
 
