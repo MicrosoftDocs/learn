@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.oxford.build-industrial-brain.setup-account
+uid: learn.oxford.build-industrial-brain.exercise-setup-account
 title: Set up your account for Bonsai
 metadata:
   title: Set up your account for Bonsai
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/3-exercise-set-up-account.md)] 
+  [!include[](includes/5-exercise-set-up-account.md)] 

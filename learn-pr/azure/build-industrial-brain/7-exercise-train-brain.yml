@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.oxford.build-industrial-brain.create-brain
-title: Create a modular brain
+uid: learn.oxford.build-industrial-brain.exercise-train-brain
+title: Exercise - Train a brain
 metadata:
-  title: Create a modular brain 
+  title: Exercise - Train a brain 
   description: In this unit, we will explain how to create a brain.
   ms.date: 11/30/2022
   author: softchris
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/4-create-modular-brain.md)] 
+  [!include[](includes/6-exercise-train-brain.md)] 
