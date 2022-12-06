@@ -1,4 +1,4 @@
-With some programs, you are given a list of mentors from which to select. For other programs, you will be assigned mentors. Either way, you will want to do a fair amount of research on the mentor to ensure that you have a good understanding of their expertise. Doing this research will also provide the context you need to build an agenda, define clear objectives for the relationshop, and target successful outcomes for your ongoing engagement with your mentor.
+With some programs, you're given a list of mentors from which to select. For other programs, you'll be assigned mentors. Either way, you'll want to do a fair amount of research on the mentor to ensure that you have a good understanding of their expertise. Doing this research will also provide the context you need to build an agenda, define clear objectives for the relationship, and target successful outcomes for your ongoing engagement with your mentor.
 
 For this exercise, you've already been assigned a mentor with whom you're supposed to meet.
 
