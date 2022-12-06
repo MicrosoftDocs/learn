@@ -20,12 +20,12 @@ When setting up your application's Azure Active Directory (Azure AD) test enviro
 
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
-Recall that in the sales team dashboard example, your development team chose to setup a test environment in a separate Azure AD tenant.  Some of the key factors for making this decision were:
+Recall that in the sales team dashboard example, your development team chose to set up a test environment in a separate Azure AD tenant.  Some of the key factors for making this decision were:
 
 - You want to set up a CI/CD pipeline that automates building, testing, and deploying the web app.  Creating test users and test app registrations in the production tenant are high-privilege operations, since they require admin permissions.
-- The administrators reviewed your request for automatically creating test users and test data in the production tenant and did not approve.
-- Multi-factor authentication is required for all users in the production tenant.  Automating sign-ins for integration testing will not be possible.
-- After some investigation, your team decided that the integration tests need to use a non-interactive flow, called Resource Owner Password Credential Grant (ROPC), to automatically sign in users for testing. Microsoft recommends that you *do not* use the ROPC flow in a production environment.
+- The administrators reviewed your request for automatically creating test users and test data in the production tenant and didn't approve.
+- Multi-factor authentication is required for all users in the production tenant.  Automating sign-ins for integration testing won't be possible.
+- After some investigation, your team decided that the integration tests need to use a non-interactive flow, called Resource Owner Password Credential Grant (ROPC), to automatically sign in users for testing. Microsoft recommends that you *don't* use the ROPC flow in a production environment.
 
 <!-- TODO: add your scenario image -->
 
@@ -67,17 +67,17 @@ In this exercise, you setup your test environment in Azure AD by creating a sepa
 If you don't already have a dedicated test tenant in Azure AD, you can create one for free.  You can [manually create a new tenant](https://learn.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant), which will be empty upon creation and will have to be configured with test data and test users.  Microsoft recommends you join the Microsoft 365 Developer Program, which is free and can be used to easily setup an Azure AD tenant.  The Microsoft 365 Developer Program also includes a Microsoft 365 E5 developer subscription that you can use to create your own sandbox and develop solutions independent of your production environment. You can build Microsoft Teams apps, Office Add-ins for Word, Excel, PowerPoint, or Outlook, or SharePoint Add-ins, using Microsoft Graph, the SharePoint Framework, Power Apps, and more.
 
 1. Go to the [Join the Microsoft 365 Developer Program](https://learn.microsoft.com/office/developer-program/microsoft-365-developer-program#join-the-microsoft-365-developer-program) page.
-1. Click on the **Join now** button on the screen.
+1. Select the **Join now** button on the screen.
 1. Sign in with a new Microsoft Account or use an existing (work) account you already have.
-1. On the sign-up page select your region, enter a company name and accept the terms and conditions of the program before you click **Next**.
-1. Click on **Set Up Subscription**. Specify the region where you want to create your new tenant, create a username, domain, and enter a password. This will create a new tenant and the first administrator of the tenant.
+1. On the sign-up page select your region, enter a company name and accept the terms and conditions of the program before you select **Next**.
+1. Select **Set Up Subscription**. Specify the region where you want to create your new tenant, create a username, domain, and enter a password. This will create a new tenant and the first administrator of the tenant.
 1. Enter the security information, which is needed to protect the administrator account of your new tenant. This will set up multi-factor authentication for the account.
 
-When you're finished setting up your subscription, you can optionally set up set up your Microsoft 365 E5 sandbox which includes an Azure AD tenant, fictitious test users, a Microsoft Teams sample data pack, and data for Microsoft Graph, Sharepoint, and Office Add-ins development.
+When you're finished setting up your subscription, you can optionally set up your Microsoft 365 E5 sandbox, which includes an Azure AD tenant, fictitious test users, a Microsoft Teams sample data pack, and data for Microsoft Graph, Sharepoint, and Office Add-ins development.
 
 ## Populate your tenant with users
 
-If you did not use a Microsoft 365 developer subscription to add test users to your tenant, or those test users do not meet your testing needs, you can add more yourself.
+If you didn't use a Microsoft 365 developer subscription to add test users to your tenant, or those test users don't meet your testing needs, you can add more yourself.
 
 For convenience, you may want to invite yourself and other members of your development team to be guest users in the tenant. This will create separate guest objects in the test tenant, but means you only have to manage one set of credentials for your corporate account and your test account.
 
@@ -110,7 +110,7 @@ echo "created user $TESTUSERNAME with password $TESTPASSWORD"
 
 ## Create and configure an app registration
 
-You'll need to create an app registration for your web app to use in your test environment. This should be a separate registration from your eventual production app registration, to maintain security isolation between your test environment and your production environment. How you configure your application depends on the type of app you are building.  For confidential client applications, you'll need to add a client secret. For public client applications, you can skip this step.
+You'll need to create an app registration for your web app to use in your test environment. This should be a separate registration from your eventual production app registration, to maintain security isolation between your test environment and your production environment. How you configure your application depends on the type of app you're building.  For confidential client applications, you'll need to add a client secret. For public client applications, you can skip this step.
 
 The following script creates an app registration for a single tenant web app.
 
@@ -171,12 +171,12 @@ Viewing your production tenant conditional access policies may need to be perfor
 
 1. Sign into the [Azure portal](https://portal.azure.com) using your production tenant Conditional Access Administrator, Security Administrator, or Global Administrator account.
 1. Go to **Azure Active Directory** > **Enterprise applications** > **Conditional Access**.
-1. View the list of policies in your tenant. Click the first one.
+1. View the list of policies in your tenant. Select the first one.
 
    :::image type="content" source="../media/conditional-access-policies.png" alt-text="Screenshot of the 'Conditional Access policies' pane.":::
 
 1. Navigate to **Cloud apps or actions**.
-1. If the policy applies to all cloud apps, it will likely apply to your app when you move it from test to production.  Make note of the policy settings in order to copy the policy to your test tenant.  If the policy only applies to a select group of apps, then move on to the next policy and do not copy the policy to your test tenant.
+1. If the policy applies to all cloud apps, it will likely apply to your app when you move it from test to production.  Make note of the policy settings in order to copy the policy to your test tenant.  If the policy only applies to a select group of apps, then move on to the next policy and don't copy the policy to your test tenant.
 
    :::image type="content" source="../media/cloud-apps-or-actions.png" alt-text="Screenshot of the 'Conditional Access policies' pane.":::
 

@@ -33,7 +33,7 @@ An Azure Active Directory (Azure AD) tenant includes the tenant's users, groups,
 
 Suppose you work on a development team that creates internal apps for a retail company. Your team recently released a sales team dashboard for sales managers to manage their direct reports and help them meet their targets. The initial release of the dashboard app went well, but now management and internal customers are requesting new features and bug fixes in advance of the coming holiday season. You and your team have been manually building, testing, and deploying the web app to Azure App Service.  This process has been labor intensive and is affecting your ability to deliver quality updates on time. The configuration of web app authentication, creation of Azure AD test environments and users, and execution of integration tests have been especially time consuming. You need a CI/CD pipeline that uses an Azure AD test environment to automate the deployment of a web app, the configuration of Azure App Service authentication, and the execution of integration tests as a user.
 
-In this module, your team will set up an Azure AD test environment to help move your web app through the development, test, and production lifecycle.  You'll need an Azure AD tenant which contains app registrations to represent your application and test clients, test users, and optionally policies to protect resources.
+In this module, your team will set up an Azure AD test environment to help move your web app through the development, test, and production lifecycle.  You'll need an Azure AD tenant, which contains app registrations to represent your application and test clients, test users, and optionally policies to protect resources.
 
 :::image type="content" source="../media/pipeline.png" alt-text="Diagram showing the components of a CI/CD pipeline.":::
 
@@ -54,7 +54,7 @@ In this module, your team will set up an Azure AD test environment to help move 
 In this module, you will:
 
 - Decide whether to use a production Azure AD tenant or a separate tenant for your test environment
-- Setup a dedicated test tenant in Azure AD
+- Set up a dedicated test tenant in Azure AD
 - Create a test user in the test tenant
 - Create an app registration to use as a test client for your web app
 - Add policies to the test tenant
@@ -70,6 +70,6 @@ In this module, you will:
  -->
 ## What is the main goal?
 
-By the end of this session, you'll be able to setup a test environment in Azure AD for testing Azure applications.
+By the end of this session, you'll be able to set up a test environment in Azure AD for testing Azure applications.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
