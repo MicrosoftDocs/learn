@@ -407,7 +407,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
   
-1. Run the following commmand:
+1. Run the following command:
 
     ```bash
     git tag -a v2.0.0 -m 'First tag'
