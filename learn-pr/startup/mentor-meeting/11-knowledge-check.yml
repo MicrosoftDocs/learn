@@ -59,7 +59,7 @@ quiz:
       explanation: "A mentee is in charge of managing all aspects of the mentor-mentee relationship."
     - content: "A virtual assistant"
       isCorrect: false
-      explanation: "When working to establish and manage a relationship with a mentor, it is important for the mentee to develop a direct relationship with them."
+      explanation: "When working to establish and manage a relationship with a mentor, it's important for the mentee to develop a direct relationship with them."
 
   - content: "If you're hoping to have a short in-person meeting with your mentor that involves confidential materials, it's best to schedule that meeting in a:"
     choices:
