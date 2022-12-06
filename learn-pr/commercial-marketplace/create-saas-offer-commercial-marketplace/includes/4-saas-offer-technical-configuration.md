@@ -51,7 +51,7 @@ For more detailed information on anomaly detection, you can reference our [docum
 
 To assist with development, Microsoft has published several tools to speed your development:
 
-- Client libraries for several common languages including .NET-based languages, and JVM-based languages.
+- Client libraries for several common languages including .NET-based languages and JVM-based languages.
 - An OpenAPI specification to allow you to quickly develop in other languages supported by various OpenAPI library generators.
 
 The client libraries and OpenAPI specification are all open source. You can access them, plus other helpful content, in the [commercial marketplace samples index on GitHub](https://github.com/Azure-Samples/commercial-marketplace-samples).
