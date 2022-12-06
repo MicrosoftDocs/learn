@@ -19,7 +19,7 @@ Now that you've had the opportunity to thank your mentor, you now have more time
 
 Let's create the second follow-up email that you're going to send.
 
-First and foremost, make sure to capture any and all tasks that the mentor recommended for you. In this case, your mentor raised several questions about metrics that were not captured in your financial model. You both agreed that it was important to add those additional parameters to improve the effectiveness of your financial model. So that's one task you should capture.
+First and foremost, make sure to capture any and all tasks that the mentor recommended for you. In this case, your mentor raised several questions about metrics that weren't captured in your financial model. You both agreed that it was important to add those additional parameters to improve the effectiveness of your financial model. So that's one task you should capture.
 
 Consider whether they are tasks that can be completely quickly and easily, if they will take hours, or if they will take a significant amount of time. Organize them accordingly in buckets like "Before our next meeting" and "Complete by [DATE]." If you have met with your mentor more than once, remind them of the tasks you've completed since the previous meeting, "crossing them off the list," as it were.
 
