@@ -1,4 +1,4 @@
-In the previous unit, you learned about expressing your nullablility intent in code. In this unit, you'll apply what you've learned to an existing C# project.
+In the previous unit, you learned about expressing your nullability intent in code. In this unit, you'll apply what you've learned to an existing C# project.
 
 > [!NOTE]
 > This module uses the .NET CLI (Command Line Interface) and Visual Studio Code for local development. After completing this module, you can apply the concepts using Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
