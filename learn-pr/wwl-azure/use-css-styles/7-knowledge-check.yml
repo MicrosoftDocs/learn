@@ -4,10 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/05/2022
+  ms.date: 12/06/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -31,10 +32,10 @@ quiz:
     choices:
     - content: "Use RGB values such as `color: rgb(105, 6, 19)` or `color: #7462e0;`"
       isCorrect: false
-      explanation: "That answer is incorrect. While RGB values would achieve the goal, there are multiple methods availble."
+      explanation: "That answer is incorrect. While RGB values would achieve the goal, there are multiple methods available."
     - content: "Use named color values such as `color: brown;` or `color: lightgrey;`."
       isCorrect: false
-      explanation: "That answer is incorrect. While named color values would achieve the goal, there are multiple methods availble."
+      explanation: "That answer is incorrect. While named color values would achieve the goal, there are multiple methods available."
     - content: "Use either RGB or named values."
       isCorrect: true
       explanation: "Correct. you can use either RGB or named color values to set the color property"

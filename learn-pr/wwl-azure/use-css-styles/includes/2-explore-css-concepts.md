@@ -43,7 +43,7 @@ The example below adds the `<style>` tag with styling information for any `h1` t
 
 When viewed in a browser, the "Welcome" text in the `<h1>` tag displays gray.
 
-:::image type="content" source="../media/simple-html-embeded-css.png" alt-text="Rendered H T M L page displays the heading 1 in grey.":::
+:::image type="content" source="../media/simple-html-embeded-css.png" alt-text="Screenshot of rendered H T M L page displays the heading 1 in grey.":::
 
 ### Apply styles to HTML using CSS
 

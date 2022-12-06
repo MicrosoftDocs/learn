@@ -13,7 +13,7 @@ As with any computer language, CSS supports comments. To comment in a section of
 
 You can use CSS to tell the browser what font you want to use for specific text. Sometimes you want to use Arial for readability or something fancier for style. The following image shows some text in Arial and other text in a font called "Impact."
 
-:::image type="content" source="../media/two-fonts.png" alt-text="Browser render of H T M L text in two fonts.":::
+:::image type="content" source="../media/two-fonts.png" alt-text="Screenshot of browser render of H T M L text in two fonts.":::
 
 The most common option for setting the font to use on a page is `font-family`. `font-family` is typically set to a list of fonts, allowing the browser to use the first font listed it can support. For example, a setting of `Tahoma, Verdana, sans-serif` will attempt to use Tahoma, followed by Verdana, and finally a generic sans serif font.
 
@@ -92,4 +92,4 @@ h2 {
 
 As you might suspect, there are dozens of available named colors, and RGB values offer an infinite set of options. Editors such as [vscode.dev](https://vscode.dev) or [Visual Studio Code](https://code.visualstudio.com) can assist in the available color values. Both editors will show a color swatch preview in your CSS. If you mouse over the swatch you are presented with a color selector you can use to set the color you desire.
 
-:::image type="content" source="../media/color-selector.png" alt-text="Color selector from Visual Studio Code":::
+:::image type="content" source="../media/color-selector.png" alt-text="Screenshot of color selector from Visual Studio Code":::
