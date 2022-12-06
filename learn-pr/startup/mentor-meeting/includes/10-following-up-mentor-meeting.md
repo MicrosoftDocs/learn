@@ -6,7 +6,7 @@ Immediately after you part ways with your mentor, take 30 seconds to send a quic
 
 - First, it's an expression of gratitude for someone who has volunteered their time to help you.
 - Second, it's an opportunity to further your relationship with your mentor beyond a one-off meeting.
-- Third, it provides you with additional time to review the meeting's content and associated tasks before following up with a more detailed recap of your meeting.
+- Third, it provides you with extra time to review the meeting's content and associated tasks before following up with a more detailed recap of your meeting.
 
 If you met your mentor in person, try to ensure that the thank you message will be in their inbox before they return to their desk.
 
