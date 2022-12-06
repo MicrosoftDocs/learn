@@ -2,7 +2,7 @@ Now that you have a clear objective that aligns with your needs and your mentor'
 
 It is the your responsibility to manage the meeting from setting the agenda to driving the dynamics of the meeting itself. The more structure you are able to bring to the meeting, the more effective the meeting with the mentor will be.
 
-If this is the first time you're meeting this mentor, make sure to propose adequate time for introductions. Unlike working with an expert on a problem, your first meeting with a mentor should serve as an opportunity for learning more about one another. Gaining additional details about the mentor and their experience will help you better facilitate future meetings. And the mentor learning more about you and your company will ensure that they have the context they need for providing feedback.
+If this is the first time you're meeting this mentor, make sure to propose adequate time for introductions. Unlike working with an expert on a problem, your first meeting with a mentor should serve as an opportunity for learning more about one another. Gaining more details about the mentor and their experience will help you better facilitate future meetings. And the mentor learning more about you and your company will ensure that they have the context they need for providing feedback.
 
 Sometimes, the first meeting with a new mentor can be consumed by simply getting to know one another. This context can be critical for the ongoing relationship, so it's important to spend that time to get acquainted. Don't worry if you're not able to cover every agenda item. It's more important that the first meeting sets a tone and establishes a basis for future meetings with the mentor.
 
