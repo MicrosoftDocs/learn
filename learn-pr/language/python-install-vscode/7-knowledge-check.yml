@@ -33,10 +33,10 @@ quiz:
         - content: "`print`"
           isCorrect: true
           explanation: "Correct! The Python function to display information on the screen
-            is `print``."
+            is `print`."
         - content: "`open`"
           isCorrect: false
-          explanation: "Incorrect. `open`` is used to open a file."
+          explanation: "Incorrect. `open` is used to open a file."
     - content: "What file extension is typically used for Python files?"
       choices:
         - content: "python"
