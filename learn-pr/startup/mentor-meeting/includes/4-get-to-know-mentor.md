@@ -34,7 +34,7 @@ The more knowledgeable and prepared you are for the initial meeting, the more li
 
 ### LinkedIn
 
-For business professionals, LinkedIn tends to be the predominate source of relevant information. Using LinkedIn as a research tool, you can answer a variety of questions about the topics above, including experience, geography, networks, and to some extent, personality. Use the mentor's LinkedIn profile to gain a better understanding of where the mentor has worked, how long they were at their startup, which networks they highlight, and the type of content they share.
+For business professionals, LinkedIn tends to be the predominate source of relevant information. Using LinkedIn as a research tool, you can answer many questions about the topics above, including experience, geography, networks, and to some extent, personality. Use the mentor's LinkedIn profile to gain a better understanding of where the mentor has worked, how long they were at their startup, which networks they highlight, and the type of content they share.
 
 ### Google or other search engines
 
