@@ -8,7 +8,7 @@ Health modeling ultimately strives to maximize observability by augmenting raw m
 
 ### Layered application health
 
-A layered health model enables application health to be traced back to its lower level dependencies, which helps to quickly find the root cause of service degradation. Each layer of the health model should capture what "healthy" and "unhealthy" states represent. 
+A layered health model enables application health to be traced back to its lower level dependencies, which helps to quickly find the root cause of service degradation. Each layer of the health model should capture what *healthy* and *unhealthy* states represent.
 
 For more information about layered application health, see [Layered application health](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#layered-application-health). For an example of a layered health model, see [Example - Layered health model](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#example---layered-health-model).
 
@@ -16,7 +16,7 @@ For more information about layered application health, see [Layered application 
 
 ## Advantages of health monitoring
 
-To help you determine whether your environment is working as expected, it's important to monitor your application's health and the key metrics of its Azure resources. To understand these metrics and evaluate the overall health of your workload, you need a holistic understanding of all of the data monitored. A health model can assist with the evaluation of the overall health status by displaying a clear indication of the health of the workload, as opposed to raw data metrics. Representation of a health model with set indicators makes it intuitive for an operator to understand the overall health of the workload and respond quickly to any issues that might arise. Health status is typically presented as "traffic light" indicators, such as red, green, or yellow.
+To help you determine whether your environment is working as expected, it's important to monitor your application's health and the key metrics of its Azure resources. To understand these metrics and evaluate the overall health of your workload, you need a holistic understanding of all of the data monitored. A health model can assist with the evaluation of the overall health status by displaying a clear indication of the health of the workload, as opposed to raw data metrics. Representation of a health model with set indicators makes it intuitive for an operator to understand the overall health of the workload and respond quickly to any issues that might arise. Health status is typically presented as *traffic light* indicators, such as red, green, or yellow.
 
 ## Who's responsible for health modeling?
 

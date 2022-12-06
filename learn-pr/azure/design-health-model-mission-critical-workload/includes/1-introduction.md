@@ -25,24 +25,24 @@ The following diagram shows the architecture of the Contoso Shoes application. M
 The components of this architecture are as follows:
 
 - Front-end web application: The user interface of this workload, which runs on Azure Web Apps.
-  - Reads: Catalog API
+  - Reads: Azure Data Catalog REST API
   - Writes: End user
 
-- Catalog API: The REST API layer used by the front-end web application to perform data operations (for example, load catalog, create item, update item, delete item). Hosted on Azure Functions.
+- Azure Data Catalog REST API: The API layer used by the front-end web application to perform data operations (for example, load catalog, create item, update item, delete item). Hosted on Azure Functions.
   - Reads: Azure Cosmos DB
   - Writes: Azure Event Hubs
 
-- Background Processor: A component without any public endpoint, which is used for asynchronous processing of database updates. Hosted on Azure Functions.
+- Background processor: A component without any public endpoint, which is used for asynchronous processing of database updates. Hosted on Azure Functions.
   - Reads: Azure Event Hubs
   - Writes: Azure Cosmos DB
 
-- Messaging bus: The messaging bus uses Azure Event Hubs to pass messages between the Catalog API and the background processor.
+- Messaging bus: The messaging bus uses Azure Event Hubs to pass messages between the Data Catalog API and the background processor.
 
 - Database: The data that's persisted in Azure Cosmos DB. The Catalog API reads from the database directly, and writes are handled by the background processor.
 
-- Secrets: Application components of this workload use secrets to authorize access. The Catalog API and background processor use connection strings to access the database and Azure Event Hubs, while the front-end application uses an API key to call the Catalog API. Secrets are stored in Azure Key Vault.
+- Secrets: Application components of this workload use secrets to authorize access. The Data Catalog API and background processor use connection strings to access the database and Azure Event Hubs, while the front-end application uses an API key to call the Data Catalog API. Secrets are stored in Azure Key Vault.
 
-- Monitoring: Application components send all telemetry to Application Insights, backed with a Log Analytics Workspace. The same workspace is used to collect other logs and metrics for this workload.
+- Monitoring: Application components send all data measurements to Application Insights, backed with a Log Analytics workspace. The same workspace is used to collect other logs and metrics for this workload.
 
 ## What is the main goal?
 
