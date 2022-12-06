@@ -6,7 +6,7 @@ If this is the first time you're meeting this mentor, make sure to propose adequ
 
 Sometimes, the first meeting with a new mentor can be consumed by simply getting to know one another. This context can be critical for the ongoing relationship, so it's important to spend that time to get acquainted. Don't worry if you're not able to cover every agenda item. It is more important that the first meeting sets a tone and establishes a basis for future meetings with the mentor.
 
-If you already know the mentor or this is a subsequent meeting, provide time at the outset of the meeting to recap the previous meeting and any tasks either you or the mentor had from the previous meeting.
+If you already know the mentor or this is a subsequent meeting, provide time at the outset of the meeting to recap the previous meeting, and any tasks you or the mentor had from the previous meeting.
 
 A sample agenda for a 30-minute meeting could look like this:
 
