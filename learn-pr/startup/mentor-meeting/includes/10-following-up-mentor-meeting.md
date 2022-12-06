@@ -13,7 +13,7 @@ If you met your mentor in person, try to ensure that the thank you message will 
 > [!TIP]
 > If you and your mentor have communicated via text, you can simply text your mentor a quick thank you, rather than emailing.
 
-## Provide a detailed follow up for your mentor
+## Provide a detailed follow-up for your mentor
 
 Now that you've had the opportunity to thank your mentor, you now have more time to review your notes and/or recording to capture details from the meeting. If you were able to block time on your calendar immediately following the meeting, take advantage of compiling your recap while the meeting is still fresh in your mind. If you were unable to block time, make sure to return to your notes and/or recording as quickly as you can.
 
