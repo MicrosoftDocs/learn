@@ -43,7 +43,7 @@ Search engines can be an efficient means of finding other social media profiles,
 > [!TIP]
 > If the mentor publishes a weekly newsletter on specific topic, it's safe for you to assume that asking that mentor for nuanced advice on that topic would be a valuable use of your and their time. But you might not realize that newsletter exists without doing your research.
 
-Just as important as the content, itself, are the number of times the mentor appears in context with certain topics. Are they referenced as an expert in leading publications about a particular topics or startups in general? Have they had certain experiences—positive or negative—that have been covered in the news? Pay attention to the topics they regularly discuss and how they discuss them.
+Just as important as the content, itself, are the number of times the mentor appears in context with certain topics. Are they referenced as an expert in leading publications about a particular topic or startups in general? Have they had certain experiences—positive or negative—that have been covered in the news? Pay attention to the topics they regularly discuss and how they discuss them.
 
 ### Social media
 
