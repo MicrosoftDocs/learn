@@ -28,7 +28,7 @@ While this can be difficult to determine without meeting the mentor, you can oft
 
 ## Use a variety of resources to do your research
 
-With the popularity of startups and startup founders, it's likely that there is information about your mentor to be found online, whether that content was created by the mentor themselves or covered by traditional media. Use every resource at your disposal to gain a better understanding of your mentor, their areas of expertise, and other insights that ensure you can make the best use of the limited time you have with them.
+With the popularity of startups and startup founders, it's likely that there's information about your mentor to be found online, whether that content was created by the mentor themselves or covered by traditional media. Use every resource at your disposal to gain a better understanding of your mentor, their areas of expertise, and other insights that ensure you can make the best use of the limited time you have with them.
 
 The more knowledgeable and prepared you are for the initial meeting, the more likely that both you and the mentor will find that meeting valuable and worthwhile. This, in turn, sets positive expectations for future meetings and an on-going relationship.
 
