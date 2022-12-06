@@ -41,7 +41,7 @@ quiz:
       explanation: "Personal content can be valuable resources of information, but it's important to use multiple sources for your research."
     - content: "LinkedIn"
       isCorrect: false
-      explanation: "LinkedIn can be a valuable resource of information, but it is important to use multiple sources for your research."
+      explanation: "LinkedIn can be a valuable resource of information, but it's important to use multiple sources for your research."
     - content: "All of the above"
       isCorrect: true
       explanation: "It is best to use a variety of resources to do your research on your mentor before you meet with them."
