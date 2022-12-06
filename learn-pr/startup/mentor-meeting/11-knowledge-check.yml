@@ -32,7 +32,7 @@ quiz:
     choices:
     - content: "Social media"
       isCorrect: false
-      explanation: "Social media can be a valuable resource of information, but it is important to use multiple sources for your research."
+      explanation: "Social media can be a valuable resource of information, but it's important to use multiple sources for your research."
     - content: "Google or another search engine"
       isCorrect: false
       explanation: "Search engines can be valuable resources of information, but it is important to use multiple sources for your research."
