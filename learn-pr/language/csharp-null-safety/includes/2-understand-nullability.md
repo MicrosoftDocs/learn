@@ -106,7 +106,7 @@ Nullable contexts enable fine-grained control for how the compiler interprets re
 - `warnings`: The compiler performs all null analysis and emits warnings when code might dereference `null`.
 - `annotations`: The compiler doesn't perform null analysis or emit warnings when code might dereference `null`, but you can still annotate your code using nullable reference types `?` and null-forgiving operators (`!`).
 
-This module is scoped to the either `disable` or `enable` nullable contexts. For more information, reference [Nullable reference types: Nullable contexts](/dotnet/csharp/nullable-references#nullable-contexts).
+This module is scoped to either `disable` or `enable` nullable contexts. For more information, reference [Nullable reference types: Nullable contexts](/dotnet/csharp/nullable-references#nullable-contexts).
 
 ### Enable nullable reference types
 
