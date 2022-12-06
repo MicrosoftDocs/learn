@@ -4,7 +4,7 @@ As a matter of practice, you should get in the habit of sending at least two fol
 
 Immediately after you part ways with your mentor, take 30 seconds to send a quick thank you email. It doesn't have to be more than a few sentences. This simple email serves three important purposes.
 
-- First, it is an expression of gratitude for someone who has volunteered their time to help you.
+- First, it's an expression of gratitude for someone who has volunteered their time to help you.
 - Second, it's an opportunity to further your relationship with your mentor beyond a one-off meeting.
 - Third, it provides you with additional time to review the meeting's content and associated tasks before following up with a more detailed recap of your meeting.
 
