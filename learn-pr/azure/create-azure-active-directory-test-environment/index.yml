@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 title: Set up an Azure Active Directory test environment for application testing
-summary: Evaluate whether you need a dedicated test tenant for your application test environment. Create a test tenant in Azure Active Directory (Azure AD) for use in a continuous integration/continuous deployment (CI/CD) pipeline or testing Azure applications.
+summary: Evaluate whether you need a dedicated test tenant for your application test environment. Create a test tenant in Azure Active Directory (Azure AD) for use in a continuous integration/continuous deployment (CI/CD) pipeline or for testing applications.
 abstract: |
   By the end of this module, you'll be able to:
     - Evaluate whether you need a dedicated test Azure AD tenant or production tenant for your application test environment.
