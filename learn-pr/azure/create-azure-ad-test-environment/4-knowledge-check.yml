@@ -37,15 +37,15 @@ quiz:
       explanation: "Try again. It's true that the team can easily get a free test tenant, test accounts, and sample data through the Microsoft 365 Developer Program. However, determining the proper level of isolation between test and production resources is much more important than ease of use when creating a test environment."
     - content: "There are no policies (for example multi-factor authentication) enabled in their production tenant that require user interaction during authentication."
       isCorrect: false
-      explanation: "Try again. If there are no policies that require user interaction during authentication, that would be a point in favor of using the production tenant for testing.  Of course, other factors should be considered to make sure they have the right level of isolation between test and production resources before using a production tenant for testing."
+      explanation: "Try again. Not having policies that require user interaction during authentication would be a reason for using the production tenant for testing.  Other factors should be considered to make sure they have the right level of isolation between test and production resources before using a production tenant for testing."
   - content: "When creating a separate test tenant in Azure AD, what is a good reason for joining the Microsoft 365 Developer Program instead of manually creating a tenant?"
     choices:
-    - content: "It is free and they can have test user accounts and sample data packs automatically added to the tenant."
+    - content: "It's free and they can have test user accounts and sample data packs automatically added to the tenant."
       isCorrect: true
       explanation: "Correct. The Microsoft 365 Developer Program provides many benefits that make it easier and faster to set up a test environment."
     - content: "They can only get a free trial of Azure AD Premium1 or Premium 2 licenses through the Microsoft 365 Developer Program."
       isCorrect: false
       explanation: "Try again. They can also get a free trial of Azure AD Premium1 or Premium 2 licenses when they manually create a tenant."
-    - content: "It does not include a Microsoft 365 E5 developer subscription, which can be used to create their own sandbox and develop solutions independent of their production environment."
+    - content: "It doesn't include a Microsoft 365 E5 developer subscription, which can be used to create their own sandbox and develop solutions independent of their production environment."
       isCorrect: false
       explanation: "Try again. The Microsoft 365 Developer Program provides many benefits that make it easier and faster to set up a test environment."
