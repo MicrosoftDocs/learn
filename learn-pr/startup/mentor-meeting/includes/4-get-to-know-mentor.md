@@ -26,7 +26,7 @@ Part of the value of engaging with mentors can be gaining access to the mentor's
 
 While this can be difficult to determine without meeting the mentor, you can often use clues on social media to help provide some insights into your mentor's personality. This can also be a good way of identifying other areas of commonality between you and the mentor. Does the mentor participate in social media or are they fairly quiet online? Do they tend to focus energy on sharing more personal content or more business content? Do they tend to travel or remain in one place? Are they more likely to express themselves in long-form posts or short snippets?
 
-## Use a variety of resources to do your research
+## Use various resources to do your research
 
 With the popularity of startups and startup founders, it's likely that there's information about your mentor to be found online, whether that content was created by the mentor themselves or covered by traditional media. Use every resource at your disposal to gain a better understanding of your mentor, their areas of expertise, and other insights that ensure you can make the best use of the limited time you have with them.
 
