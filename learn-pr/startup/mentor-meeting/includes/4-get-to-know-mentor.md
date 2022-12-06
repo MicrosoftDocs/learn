@@ -12,7 +12,7 @@ First and foremost, a mentor will be providing advice based on their own persona
 
 ### Product
 
-While every startup is focused on exponential growth, a variety of product offerings can lead a founder down that path. For that reason, it's important to understand what type of product(s) your mentor has built in the past. What was the product focus of the mentor's company/companies? Does the mentor have experience in a particular industry or a variety of industries? Was the mentor typically focused on consumer-focused products or business-to-business products? Was the product an end user focused product or a platform on which others build end user products?
+While every startup is focused on exponential growth, a variety of product offerings can lead a founder down that path. For that reason, it's important to understand what type of product(s) your mentor has built in the past. What was the product focus of the mentor's company/companies? Does the mentor have experience in a particular industry or across several industries? Was the mentor typically focused on consumer-focused products or business-to-business products? Was the product an end user focused product or a platform on which others build end user products?
 
 ### Geography
 
