@@ -2,7 +2,7 @@ As a founder building a startup, you'll have many opportunities to meet with men
 
 Building a relationship with your mentor starts with the very first meeting. So how you run that first meeting with your prospective mentor could mean the difference between building an ongoing meaningful relationship with a trusted confidante or losing access to critical insights and experience to guide your startup journey.
 
-With that in mind, let’s walk through the process of preparing for your first meeting with a new mentor to ensure that you start this relationship off on the right foot.
+With that in mind, let’s walk through the process of preparing for your first meeting with a new mentor to ensure that you start off this relationship on the right foot.
 
 ## Scenario
 
