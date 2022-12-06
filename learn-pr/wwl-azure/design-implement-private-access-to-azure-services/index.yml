@@ -3,7 +3,7 @@ uid: learn.wwl.design-implement-private-access-to-azure-services
 metadata:
   title: Design and implement private access to Azure Services
   description: "Design and implement private access to Azure Services"
-  ms.date: 12/05/2022
+  ms.date: 12/06/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ prerequisites: |
   - You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing
   - You should have experience with network connectivity methods, such as VPN or WAN
   - You should have experience with the Azure portal and Azure PowerShell
-iconUrl: /learn/achievements/design-and-implement-private-access-to-azure-services.svg
+iconUrl: /training/achievements/design-and-implement-private-access-to-azure-services.svg
 levels:
 - intermediate
 roles:
