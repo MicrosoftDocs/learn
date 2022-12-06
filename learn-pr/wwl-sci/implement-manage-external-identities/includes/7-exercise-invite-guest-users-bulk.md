@@ -3,7 +3,7 @@
 1. Sign in to the [Azure portal](https://portal.azure.com/) with an account that is a User administrator in the organization.
 1. In the navigation pane, select **Azure Active Directory**.
 1. Under **Manage**, select **Users**.
-1. On the Users blade, on the menu, select **Bulk operations - Bulk invite**.
+1. On the Users screen, on the menu, select **Bulk operations - Bulk invite**.
     
     :::image type="content" source="../media/bulk-invite-option-d3ab6f3c.png" alt-text="Screenshot of the All user page with the Bulk operations and Bulk invite menu options highlighted.":::
     
@@ -12,7 +12,7 @@
     
     > [!NOTE]
     > \- **Email address to invite**<br>\- the user who will receive an invitation<br>\- **Redirection url**<br>\- the URL to which the invited user is forwarded after accepting the invitation.
-1. Open the .csv template and add a line for each guest user. Required values are :
+1. Open the .csv template and add a line for each guest user. Required values are:
     
     :::image type="content" source="../media/template-csv-aebd1cb9.png" alt-text="Screenshot of the example bulk invite guests template C S V.":::
     
