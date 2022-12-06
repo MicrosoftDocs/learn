@@ -44,7 +44,7 @@ quiz:
       explanation: "LinkedIn can be a valuable resource of information, but it's important to use multiple sources for your research."
     - content: "All of the above"
       isCorrect: true
-      explanation: "It is best to use a variety of resources to do your research on your mentor before you meet with them."
+      explanation: "It's best to use a variety of resources to do your research on your mentor before you meet with them."
 
   - content: "In the mentor-mentee relationship, the responsibility for organizing, scheduling, and facilitating the meetings belongs to:"
     choices:
