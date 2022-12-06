@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-azure-ad-test-environment.setup-a-dedicated-test-azure-ad-tenant
-title: Exercise - Setup a dedicated test Azure Active Directory tenant
+uid: learn.create-azure-ad-test-environment.set-up-azure-ad-test-environment
+title: Exercise - Setup a test environment in Azure Active Directory
 metadata:
   title: exercise
   description: "Set up a test environment in a separate Azure Active Directory tenant.  Join the Microsoft 365 Developer Program or manually create a tenant."
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-setup-a-dedicated-test-azure-ad-tenant.md)]
+  [!include[](includes/3-set-up-azure-ad-test-environment.md)]
