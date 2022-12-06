@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.create-azure-ad-test-environment
+uid: learn.create-azure-active-directory-test-environment
 metadata:
   title: Set up an Azure Active Directory test environment for application testing
   description: Evaluate whether you need a dedicated test tenant for your Azure application test environment or whether you can use a production tenant. Create a dedicated Azure AD tenant for application testing.
@@ -32,10 +32,10 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - cloud-computing
 units:
-- learn.create-azure-ad-test-environment.introduction
-- learn.create-azure-ad-test-environment.plan-your-azure-active-directory-test-environment
-- learn.create-azure-ad-test-environment.exercise-set-up-azure-active-directory-test-environment
-- learn.create-azure-ad-test-environment.knowledge-check
-- learn.create-azure-ad-test-environment.summary
+- learn.create-azure-active-directory-test-environment.introduction
+- learn.create-azure-active-directory-test-environment.plan-your-azure-active-directory-test-environment
+- learn.create-azure-active-directory-test-environment.exercise-set-up-azure-active-directory-test-environment
+- learn.create-azure-active-directory-test-environment.knowledge-check
+- learn.create-azure-active-directory-test-environment.summary
 badge:
-  uid: learn.create-azure-ad-test-environment.badge
+  uid: learn.create-azure-active-directory-test-environment.badge
