@@ -6,7 +6,7 @@ Without the ability to adapt to this kind of interruption to the conversational 
 
 ![A pizza ordering bot with a fixed flow](../media/fixed-flow.png)
 
-A better design is to implement an adaptive dialog that enables you to handle the interruption and redirect the flow of the conversation, maintaining state so that relevant information that has already been gathered can be retained; or in some cases, restart the dialog (or the entire conversation), resetting state as appropriate.
+A better design is to implement an adaptive dialog that enables you to handle the interruption and redirect the flow of the conversation. The dialog can maintain state so that relevant information that has already been gathered can be retained to pick up where it left off; or in some cases, restart the dialog (or the entire conversation), resetting state as appropriate.
 
 ![A pizza ordering bot with an adaptive flow](../media/adaptive-flow.png)
 
@@ -14,6 +14,6 @@ A better design is to implement an adaptive dialog that enables you to handle th
 
 When using the Bot Framework Composer, user input is provided through actions in a dialog flow, which can be configured to allow interruptions. An interruption occurs when the recognizer identifies input that fires a trigger, signaling a conversational context change - usually by ending the current dialog flow or starting a child dialog. For example, a trigger might respond to the entry of the term "cancel" by ending the current dialog flow and resetting all dialog-scope variables.
 
-In the case of the pizza ordering bot, the main dialog welcomes the user, and contains a trigger that starts a child dialog to select pizza details. At any point during the select pizza dialog, the user might enter a message indicating that they want to do something else (for example, cancel the order), and the recognizer for the select pizza dialog (or its parent dialog) can be used to trigger an appropriate change in the conversational flow, ending the select pizza dialog, resetting the dialog scope properties, and returning to the main dialog.
+For the pizza ordering bot, the main dialog welcomes the user, and contains a trigger that starts a child dialog to select pizza details. At any point during the select pizza dialog, the user might enter a message indicating that they want to do something else (for example, cancel the order). The recognizer for the select pizza dialog (or its parent dialog) can be used to trigger an appropriate change in the conversational flow, ending the select pizza dialog, resetting the dialog scope properties, and returning to the main dialog.
 
 The ability to handle interruptions is configurable for each user input action, under the **Prompt Configurations** tab of the action.

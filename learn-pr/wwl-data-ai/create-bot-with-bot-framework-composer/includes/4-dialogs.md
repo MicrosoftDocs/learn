@@ -1,6 +1,6 @@
 Before starting to develop a bot with the Bot Framework Composer, it's useful to understand a key concept in bot design - *dialogs*.
 
-In all but the most simple cases, your bot will likely make use multiple *dialogs* to implement multi-turn conversations in which the bot gathers information from the user, storing state between turns. Commonly, a bot interaction begins with a *main* dialog in which the user is welcomed and the initial conversation established, and then child dialogs are triggered.
+In all but the most simple cases, your bot will likely make use multiple *dialogs* to implement multi-turn conversations in which the bot gathers information from the user, storing state between turns. Commonly, a bot interaction begins with a *main* dialog in which the bot welcomes a user and establishes the initial conversation, and then trigger child dialogs.
 
 ## A flow of dialogs
 
@@ -18,7 +18,7 @@ The important thing is to consider the purpose of your bot - what should it help
 
 ## Implementing dialogs with the Bot Framework Composer
 
-The Bot Framework Composer implements dialogs (previously called adaptive dialogs, which they are still sometimes referred to), in which the conversation flow is flexible, allowing for interruptions, cancellations, and context switches at any point in the conversation. Each dialog consists of:
+The Bot Framework Composer implements dialogs (previously called adaptive dialogs, which they're still sometimes referred to) to build the bot conversation. Dialogs have a flexible conversation flow, allowing for interruptions, cancellations, and context switches at any point in the conversation. Each dialog consists of:
 
 - One or more *actions* that define the flow of message activities in the dialog. These include sending a message, prompting the user for input, asking a question, and branching the conversation.
 - A *Trigger*, which invokes the dialog logic for certain conditions or based on intent detected.
@@ -28,7 +28,7 @@ A message or response for your bot can have one or more responses to choose from
 
 In addition to these elements, a dialog has *memory* in which values are stored as properties. Properties can be defined at various scopes, including the *user* scope (variables that store information for the lifetime of the user session with the bot, such as `user.greeted`) and *dialog* scope (variables that persist for the lifetime of the dialog, such as `dialog.response`).
 
-In this style of conversation, the bot initiates a *main* dialog, which contains a flow of actions (which can include branches and loops) in which input from users is analyzed by the recognizer, and responses are returned depending on the input event. The recognizer analyzes the event or natural language input and detects intents, which can be mapped to triggers that change the flow of the conversation - often by starting new child dialogs, which contain their own actions, triggers, and recognizers.
+In this style of conversation, the bot initiates a *main* dialog, which contains a flow of actions (which can include branches and loops). Within the dialog, input from users is analyzed by the recognizer, and responses are returned depending on the input event. The recognizer analyzes the event or natural language input to detect intents, which can be mapped to triggers that change the flow of the conversation. This change in flow often starts new child dialogs, which contain their own actions, triggers, and recognizers.
 
 For example, when a new user is added to the conversation and triggers a `ConversationUpdate` activity, the bot can greet them with various welcome responses, and then ask them a question.
 

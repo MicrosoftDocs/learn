@@ -2,7 +2,7 @@ Bot Framework Composer is a visual designer that lets you quickly and easily bui
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
 - Understand methods for authoring a bot.
 - Plan for a bot dialog flow.
