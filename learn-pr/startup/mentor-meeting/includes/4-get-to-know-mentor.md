@@ -38,7 +38,7 @@ For business professionals, LinkedIn tends to be the predominate source of relev
 
 ### Google or other search engines
 
-Search engines can be an efficient means of finding other social media profiles, content the mentor has created, and stories, articles, newsletters, and podcasts featuring the mentor. Spending time researching insights the mentor has shared in media or on a personal site can be a great way of gaining a base understanding of the mentor's perspective, as well as a guide for forming more nuanced questions for your mentor meeting.
+Search engines can be an efficient means of finding other social media profiles, content the mentor has created, and stories, articles, newsletters, and podcasts featuring the mentor. Spending time researching insights the mentor has shared in media or on a personal site can be a great way of gaining a base understanding of the mentor's perspective. It can also be a guide for forming more nuanced questions for your mentor meeting.
 
 > [!TIP]
 > If the mentor publishes a weekly newsletter on specific topic, it's safe for you to assume that asking that mentor for nuanced advice on that topic would be a valuable use of your and their time. But you might not realize that newsletter exists without doing your research.
