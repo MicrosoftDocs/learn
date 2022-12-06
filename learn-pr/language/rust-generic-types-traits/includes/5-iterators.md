@@ -112,7 +112,7 @@ The preceding snippet will then print the following output in the console:
     10
 ```
 
-The `Iterator` trait's full definition includes other methods too, but they are default methods. They're built on top of `next`, so you get them for free:
+The `Iterator` trait's full definition includes other methods too, but they're default methods. They're built on top of `next`, so you get them for free:
 
 ```rust
 let sum_until_10: usize = Counter::new(10).sum();
