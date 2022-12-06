@@ -31,3 +31,7 @@ You should test your generalized image by deploying it on an Azure VM. To do so,
 
 >[!TIP]
 >As we mentioned at the beginning of this unit, there are a variety of ways to create your offer's base VM images. Be sure to reference our documentation on [creating a VM from an approved base](/azure/marketplace/azure-vm-create-using-approved-base) and [creating a VM using your own image](/azure/marketplace/azure-vm-create-using-own-image) for more details on the process.
+
+## Other resources to help you get started
+
+For more learning opportunities, including videos for every stage of the process, check out the [Mastering Virtual Machine Offers](https://aka.ms/MasteringTheMarketplace/vm) series. These demo-heavy modules take you all the way from creating a new virtual machine in Azure through publishing a custom virtual machine offer to the Microsoft commercial marketplace.
