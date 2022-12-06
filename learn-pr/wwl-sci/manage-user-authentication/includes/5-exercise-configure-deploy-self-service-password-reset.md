@@ -30,8 +30,8 @@ Create a user account that will be added to a security group.
 1. The User pane now appears. Enter the following values:
     
     
-     -  User name: mias
-     -  Name: Mia Steele
+     -  `User name: mias`
+     -  `Name: Mia Steele`
 1. Select **Show Password** and then copy it somewhere to reference it later.
 1. Select **Create**.
 
