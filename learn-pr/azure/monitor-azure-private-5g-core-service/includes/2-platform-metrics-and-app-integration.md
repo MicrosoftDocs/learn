@@ -29,9 +29,13 @@ To integrate an application with Azure Private 5G Core, you can use one of the f
 
   For detailed exporting instructions, see [Stream Azure monitoring data to an event hub or external partner](/azure/azure-monitor/essentials/stream-monitoring-data-event-hubs).
 
-  > [!NOTE]
-  > Exporting the network metrics to another application for application integration or longer data retention period may incur extra cost.
-
 The [Supported metrics with Azure Monitor](/azure/azure-monitor/essentials/metrics-supported) article provides the latest list of metrics that you can use.
+
+To further enhance your monitoring experience, you can use [Azure Monitor Alerts](/azure/azure-monitor/alerts/alerts-overview) to alert people about the changes of important metrics. Once an alert rule is triggered, Azure Monitor Alerts take the specified actions, such as sending out a notification email or creating a support ticket.
+
+> [!NOTE]
+>
+> - Exporting the network metrics to another application for application integration or longer data retention period may incur extra cost. For more information, see the documentation for the relevant application.
+> - Using Azure Monitor Alerts may incur extra cost. For more information, see [Azure Monitor pricing](https://azure.microsoft.com/pricing/details/monitor/).
 
 For details in using an application of your choice to monitor a private mobile network, see the application integration information in the [Azure Private 5G Core documentation](/azure/private-5g-core/).

@@ -18,9 +18,15 @@ The URL for accessing the distributed tracing tool is as follows:
 Here *\<`LocalMonitoringIP`\>* is the IP address for accessing the local monitoring tools that you set up when you configure the management network during Azure Private 5G Core deployment.
 
 <!-- Need to verify if the AAD feature will be delivered for GA -->
-The distributed tracing tool uses Azure active directory (AD) for user authentication. It allows users to sign in with their Azure accounts.
 
-For detailed instructions on enabling and configuring the Azure AD authentication method, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
+Azure Private 5G Core provides two authentication methods for the distributed tracing tool:
+
+- Azure active directory (AD): The Azure AD method allows users to sign in with their Azure accounts.
+- Username and password: The username/password method allows users to sign in with a default account.
+
+Whenever possible, use the Azure AD method, as it's more secure. Only use the username and password method when you don't have a stable connection to Azure. You can choose your preferred authentication method when you deploy or modify a site.
+
+For detailed instructions on configuring and using these authentication methods, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
 
 ## Diagnostics details that you can check
 
@@ -73,12 +79,40 @@ To find the root cause of this communication issue, you can take the following s
 
 1. After figuring out that the root cause for the issue is the wrong authentication key in the provisioned UE, you can remove the UE through the Azure portal, and then provision it again with the correct authentication key.
 
-## Collect diagnostics packages for technical support
+## Collect and share information for technical support
+
+If you can't find the root cause of an issue, you may need Microsoft technical support to help you. In this case, you'll need to collect necessary diagnostics information and share it with Microsoft support personnel.
+
+You can use one of the following methods to collect the diagnostics information:
+
+- [Collect a trace](#export-and-share-a-trace) for a specific signaling flow.
+
+  If you know with which signaling flow the issue is related, you can collect and share the trace for that flow.
+
+- [Collect a diagnostics package](#collect-and-share-a-diagnostics-package) for a site.
+
+  If you don't know with which signaling flows the issue is related, you can collect and share a diagnostics package for the whole site.
+
+> [!NOTE]
+>
+> - The trace file or the diagnostics package may contain your system data, such as information about a UE. Share these files at your discretion.
+> - You can use a [support ticket](/azure/databox-online/azure-stack-edge-contact-microsoft-support) to share the trace file or the diagnostics package.
+
+### Export and share a trace
+
+The distributed tracing tool allows you to export traces for signaling flows.
+
+For example, if you notice that a UE doesn't work as expected during a certain time period, you can do a search with the SUPI of the UE and the time period. After that, you can select a trace in the search result and export it as a file.
+
+To share the file securely with Microsoft support personnel through Azure, you can use a storage account and a container resource.
+
+For detailed instructions on exporting a trace and share the exported trace file, see [Export, upload and share traces](/azure/private-5g-core/distributed-tracing-share-traces).
+
+### Collect and share a diagnostics package
 
 <!-- Need to check if this feature is delivered for GA before the publication of this module -->
-If you can't find the root cause of an issue, you may need Microsoft technical support to help you. In this case, you'll need to collect the diagnostics packages from the relevant packet core instance and share the packages with Microsoft support personnel.
 
-The distributed tracing tool allows you to use the Azure portal to collect diagnostics packages from a site. You can enable package collection either when you create a site or when you edit a site.
+Azure Private 5G Core allows you to use the Azure portal to collect diagnostics packages from a site. You can enable package collection either when you create a site or when you edit a site.
 
 To enable diagnostics package collection, you'll need to specify the following information:
 
@@ -87,6 +121,6 @@ To enable diagnostics package collection, you'll need to specify the following i
 
   The distributed tracing tool uses this identity to upload the collected packages to your specified storage account.
 
-Once package collection is enabled, you can use the **Collect Diagnostics Package** link on the overview page of the relevant site to trigger package collection. After the collection is completed, share the package access Uniform Resource Identifier (URI) with Microsoft support personnel.
+You can enable diagnostics package collection when you deploy or modify a site. Once package collection is enabled, you can use the **Collect Diagnostics Package** link on the overview page of the relevant site resource to trigger package collection. After the collection is completed, share the package access Uniform Resource Identifier (URI) with Microsoft support personnel.
 
-For details about diagnostics package collection, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
+For details about diagnostics package collection, see the relevant information in the [Azure Private 5G Core documentation](/azure/private-5g-core/).
