@@ -8,4 +8,4 @@ With that in mind, let’s walk through the process of preparing for your first 
 
 Suppose you’re a startup founder who has the opportunity to meet with a mentor. This mentor will be able to provide critical insights on your role, your product, and your company. If the meeting goes well, the mentor could have the potential to be an ongoing resource for you.
 
-You are especially interested in getting this mentor’s insights on building a financial model to help guide your decision making, but you are unsure about the critical elements of such a tool. You only have limited time with this mentor, so you want to make sure that you make the best use of the mentor’s time while getting you the answers you need.
+You're especially interested in getting this mentor’s insights on building a financial model to help guide your decision making, but you're unsure about the critical elements of such a tool. You only have limited time with this mentor, so you want to make sure that you make the best use of the mentor’s time while getting the answers you need.
