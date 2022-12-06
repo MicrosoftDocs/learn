@@ -48,4 +48,4 @@ quiz:
       explanation: "Try again. They can also get a free trial of Azure AD Premium1 or Premium 2 licenses when they manually create a tenant."
     - content: "It doesn't include a Microsoft 365 E5 developer subscription, which can be used to create their own sandbox and develop solutions independent of their production environment."
       isCorrect: false
-      explanation: "Try again. The Microsoft 365 Developer Program provides many benefits that make it easier and faster to set up a test environment."
+      explanation: "Try again. The Microsoft 365 Developer Program does include a Microsoft 365 E5 developer subscription as well as many other benefits that make it easier and faster to set up a test environment."
