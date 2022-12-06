@@ -11,7 +11,7 @@ If you already know the mentor or this is a subsequent meeting, provide time at 
 A sample agenda for a 30-minute meeting could look like this:
 
 - 2:30 PM - Review agenda and recap previous meeting/tasks
-- 2:35 PM - Walkthrough the financial model
+- 2:35 PM - Walk through the financial model
 - 2:45 PM - Discuss the current model and suggested changes/additions
 - 2:55 PM - Establish tasks and tentative timing for the next meeting
 - 2:59 PM - Meeting ends
