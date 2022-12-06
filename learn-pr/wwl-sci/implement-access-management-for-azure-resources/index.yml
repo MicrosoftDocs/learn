@@ -2,12 +2,13 @@
 uid: learn.wwl.implement-access-management-for-azure-resources
 metadata:
   title: Implement access manager for Azure resource
-  description: "Explore how to use built-in Azure roles, managed identities, and RBAC-policy to control access to Azure resources. Identity is the key to secure solutions."
-  ms.date: 09/01/2022
+  description: "Implement access management for Azure resources"
+  ms.date: 12/06/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: active-directory
 title: Implement access management for Azure resources
 summary: Explore how to use built-in Azure roles, managed identities, and RBAC-policy to control access to Azure resources.  Identity is the key to secure solutions.
 abstract: |
@@ -18,7 +19,7 @@ abstract: |
   - Configure access to data in Azure Key Vault using RBAC-policy
 prerequisites: |
   None
-iconUrl: /training/achievements/implement-access-management-for-azure-resources.svg
+iconUrl: /learn/achievements/implement-access-management-for-azure-resources.svg
 levels:
 - advanced
 roles:
