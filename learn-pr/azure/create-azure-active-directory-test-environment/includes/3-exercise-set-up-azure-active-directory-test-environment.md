@@ -171,7 +171,7 @@ Viewing your production tenant conditional access policies may need to be perfor
 
 1. Sign into the [Azure portal](https://portal.azure.com) using your production tenant Conditional Access Administrator, Security Administrator, or Global Administrator account.
 1. Go to **Azure Active Directory** > **Enterprise applications** > **Conditional Access**.
-1. View the list of policies in your tenant. Select the first one.
+1. View the list of policies in your tenant. Select the first policy.
 
    :::image type="content" source="../media/conditional-access-policies.png" alt-text="Screenshot of the 'Conditional Access policies' pane.":::
 
