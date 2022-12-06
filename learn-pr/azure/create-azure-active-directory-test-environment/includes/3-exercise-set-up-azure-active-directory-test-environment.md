@@ -66,7 +66,7 @@ In this exercise, you setup your test environment in Azure AD by creating a sepa
 
 If you don't already have a dedicated test tenant in Azure AD, you can create one for free.  You can [manually create a new tenant](/azure/active-directory/develop/quickstart-create-new-tenant), which will be empty upon creation and will have to be configured with test data and test users.  Microsoft recommends you join the Microsoft 365 Developer Program, which is free and can be used to easily setup an Azure AD tenant.  The Microsoft 365 Developer Program also includes a Microsoft 365 E5 developer subscription that you can use to create your own sandbox and develop solutions independent of your production environment. You can build Microsoft Teams apps, Office Add-ins for Word, Excel, PowerPoint, or Outlook, or SharePoint Add-ins, using Microsoft Graph, the SharePoint Framework, Power Apps, and more.
 
-1. Go to the [Join the Microsoft 365 Developer Program](https://learn.microsoft.com/office/developer-program/microsoft-365-developer-program#join-the-microsoft-365-developer-program) page.
+1. Go to the [Join the Microsoft 365 Developer Program](/office/developer-program/microsoft-365-developer-program#join-the-microsoft-365-developer-program) page.
 1. Select the **Join now** button on the screen.
 1. Sign in with a new Microsoft Account or use an existing (work) account you already have.
 1. On the sign-up page select your region, enter a company name and accept the terms and conditions of the program before you select **Next**.
