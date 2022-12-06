@@ -9,7 +9,7 @@ Inputs for streaming data consumed by Azure Stream Analytics can include:
 - Azure IoT Hubs
 - Azure Blob or Data Lake Gen 2 Storage
 
-Depending on the specific input type, the data for each streamed event includes the event's data fields as well input-specific metadata fields. For example, data consumed from an Azure Event Hubs input includes an **EventEnqueuedUtcTime** field indicating the time when the event was received in the event hub.
+Depending on the specific input type, the data for each streamed event includes the event's data fields as well as input-specific metadata fields. For example, data consumed from an Azure Event Hubs input includes an **EventEnqueuedUtcTime** field indicating the time when the event was received in the event hub.
 
 > [!NOTE]
 > For more information about streaming inputs, see [Stream data as input into Stream Analytics](/azure/stream-analytics/stream-analytics-define-inputs?azure-portal=true) in the Azure Stream Analytics documentation.
