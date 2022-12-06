@@ -64,7 +64,7 @@ In this exercise, you setup your test environment in Azure AD by creating a sepa
 
 ## Get a test tenant
 
-If you don't already have a dedicated test tenant in Azure AD, you can create one for free.  You can [manually create a new tenant](https://learn.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant), which will be empty upon creation and will have to be configured with test data and test users.  Microsoft recommends you join the Microsoft 365 Developer Program, which is free and can be used to easily setup an Azure AD tenant.  The Microsoft 365 Developer Program also includes a Microsoft 365 E5 developer subscription that you can use to create your own sandbox and develop solutions independent of your production environment. You can build Microsoft Teams apps, Office Add-ins for Word, Excel, PowerPoint, or Outlook, or SharePoint Add-ins, using Microsoft Graph, the SharePoint Framework, Power Apps, and more.
+If you don't already have a dedicated test tenant in Azure AD, you can create one for free.  You can [manually create a new tenant](/azure/active-directory/develop/quickstart-create-new-tenant), which will be empty upon creation and will have to be configured with test data and test users.  Microsoft recommends you join the Microsoft 365 Developer Program, which is free and can be used to easily setup an Azure AD tenant.  The Microsoft 365 Developer Program also includes a Microsoft 365 E5 developer subscription that you can use to create your own sandbox and develop solutions independent of your production environment. You can build Microsoft Teams apps, Office Add-ins for Word, Excel, PowerPoint, or Outlook, or SharePoint Add-ins, using Microsoft Graph, the SharePoint Framework, Power Apps, and more.
 
 1. Go to the [Join the Microsoft 365 Developer Program](https://learn.microsoft.com/office/developer-program/microsoft-365-developer-program#join-the-microsoft-365-developer-program) page.
 1. Select the **Join now** button on the screen.
@@ -178,7 +178,7 @@ Viewing your production tenant conditional access policies may need to be perfor
 1. Navigate to **Cloud apps or actions**.
 1. If the policy applies to all cloud apps, it will likely apply to your app when you move it from test to production.  Make note of the policy settings in order to copy the policy to your test tenant.  If the policy only applies to a select group of apps, then move on to the next policy and don't copy the policy to your test tenant.
 
-   :::image type="content" source="../media/cloud-apps-or-actions.png" alt-text="Screenshot of the 'Conditional Access policies' pane.":::
+   :::image type="content" source="../media/cloud-apps-or-actions.png" alt-text="Screenshot of the 'clout apps or actions' pane.":::
 
 In a new tab or browser session, sign into the [Azure portal](https://portal.azure.com) using your test tenant Conditional Access Administrator, Security Administrator, or Global Administrator account.
 
@@ -203,7 +203,7 @@ Replicating permission grant policies ensures you don't encounter unexpected pro
 1. Under **User consent for applications**, select which consent setting you want to configure for all users.
 1. Select **Save** to save your settings.
 
-   :::image type="content" source="../media/setting-for-all-users-save.png" alt-text="Screenshot of the 'User consent settings' pane.":::
+   :::image type="content" source="../media/setting-for-all-users-save.png" alt-text="Screenshot of the 'User consent for applications' pane.":::
 
 <!-- 5. Validation -------------------------------------------------------------------------------------------
 
