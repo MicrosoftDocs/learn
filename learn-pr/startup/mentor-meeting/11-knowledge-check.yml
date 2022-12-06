@@ -80,7 +80,7 @@ quiz:
     choices:
     - content: "A start and end time"
       isCorrect: false
-      explanation: "While the beginning and end times are important, you should strive to provide additional structure and timing as part of your meeting agenda."
+      explanation: "While the beginning and end times are important, you should strive to provide more structure and timing as part of your meeting agenda."
     - content: "The mentee's problem"
       isCorrect: false
       explanation: " While the problem being discussed is important, it is ideal to reserve time for the mentor's advice."
