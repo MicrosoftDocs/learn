@@ -16,7 +16,7 @@ While every startup is focused on exponential growth, a variety of product offer
 
 ### Geography
 
-While modern day mentorship allows founders to meet mentors anywhere in the world, geography still plays an important role in a startup journey. That's why it's important to consider geography as you're researching your mentor. For example, someone building a startup in San Francisco will have a very different experience from someone building a startup in Amsterdam. Was the mentor's company focused on a global customer base or focused on a specific geography? Did the mentor start and build the company in a location that would provide interesting insights for your company? Did the mentor build a remote-first company or was the company anchored to a specific location? Is the mentor currently located nearby or will the meeting be virtual? Is the mentor located in a time zone that will make finding a meeting time difficult?
+While modern day mentorship allows founders to meet mentors anywhere in the world, geography still plays an important role in a startup journey. That's why it's important to consider geography as you're researching your mentor. For example, someone building a startup in San Francisco will have a different experience from someone building a startup in Amsterdam. Was the mentor's company focused on a global customer base or focused on a specific geography? Did the mentor start and build the company in a location that would provide interesting insights for your company? Did the mentor build a remote-first company or was the company anchored to a specific location? Is the mentor currently located nearby or will the meeting be virtual? Is the mentor located in a time zone that will make finding a meeting time difficult?
 
 ### Networks
 
