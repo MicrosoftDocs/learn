@@ -18,7 +18,7 @@ Welcome to Proseware! We're a company determined to innovate health care by help
 ## Consider the requirements
 :::row:::
     :::column span="":::
-        :::image type="icon" source="../media/02-blob.png":::
+        :::image type="icon" source="../media/01-frequency.png":::
     :::column-end:::
     :::column span="2":::
         ### Consider the frequency
@@ -27,7 +27,7 @@ Welcome to Proseware! We're a company determined to innovate health care by help
 :::row-end:::
 :::row:::
     :::column span="":::
-        :::image type="icon" source="../media/03-blob.png":::
+        :::image type="icon" source="../media/02-costs.png":::
     :::column-end:::
     :::column span="2":::
         ### Consider the costs
@@ -36,7 +36,7 @@ Welcome to Proseware! We're a company determined to innovate health care by help
 :::row-end:::
 :::row:::
     :::column span="":::
-        :::image type="icon" source="../media/04-blob.png":::
+        :::image type="icon" source="../media/03-size.png":::
     :::column-end:::
     :::column span="2":::
         ### Consider the size 
