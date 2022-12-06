@@ -25,7 +25,7 @@ The following diagram shows the architecture of the Contoso Shoes application. M
 The components of this architecture are as follows:
 
 - Front-end web application: The user interface of this workload, which runs on Azure Web Apps.
-  - Reads: Azure Data Catalog REST API
+  - Reads: Azure Data Catalog REST API, Azure Blob Storage
   - Writes: End user
 
 - Azure Data Catalog REST API: The API layer used by the front-end web application to perform data operations (for example, load catalog, create item, update item, delete item). Hosted on Azure Functions.
@@ -38,7 +38,7 @@ The components of this architecture are as follows:
 
 - Messaging bus: The messaging bus uses Azure Event Hubs to pass messages between the Data Catalog API and the background processor.
 
-- Database: The data that's persisted in Azure Cosmos DB. The Catalog API reads from the database directly, and writes are handled by the background processor.
+- Database: The data that's persisted in Azure Cosmos DB. The Catalog API reads from the database directly, and writes are handled by the background processor. In addition, images are stored in Azure Blob Storage.
 
 - Secrets: Application components of this workload use secrets to authorize access. The Data Catalog API and background processor use connection strings to access the database and Azure Event Hubs, while the front-end application uses an API key to call the Data Catalog API. Secrets are stored in Azure Key Vault.
 

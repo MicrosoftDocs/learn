@@ -29,3 +29,4 @@ Each health state is represented by a set of indicators and corresponding thresh
 | Azure Cosmos DB | DTU utilization | < 70% | 70-90% | > 90% |
 | Azure Key Vault | Failure count | < 3 | 3-10 | > 10 |
 | Azure Event Hubs | Processing backlog length (outgoing/incoming messages) | < 3 | 3-20 |  > 20 |
+| Azure Blob Storage | TBD | TBD | TBD |  TBD |
