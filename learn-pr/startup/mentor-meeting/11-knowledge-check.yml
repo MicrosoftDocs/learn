@@ -86,7 +86,7 @@ quiz:
       explanation: " While the problem being discussed is important, it's ideal to reserve time for the mentor's advice."
     - content: "The mentor's advice"
       isCorrect: false
-      explanation: "While the mentor's advice is important, it is ideal to reserve adequate time for describing the mentee's current request or problem."
+      explanation: "While the mentor's advice is important, it's ideal to reserve adequate time for describing the mentee's current request or problem."
     - content: "A balance of time for outlining the problem and providing advice"
       isCorrect: true
       explanation: "A good mentor meeting creates space for both the mentor and the mentee to share their thoughts."
