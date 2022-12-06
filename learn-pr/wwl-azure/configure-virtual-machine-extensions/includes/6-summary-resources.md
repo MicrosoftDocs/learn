@@ -12,7 +12,7 @@ In this module, you explored the features of virtual machine extensions and revi
 
 - Deploy [applications to a Windows virtual machine in Azure with the Custom Script Extension](/azure/virtual-machines/windows/tutorial-automate-vm-deployment).
 
-- Explore [Desired State Configuration 2.0](/powershell/dsc/overview?view=dsc-2.0).
+- Explore [Desired State Configuration 2.0](/powershell/dsc/overview).
 
 ## Learn more with self-paced training
 
