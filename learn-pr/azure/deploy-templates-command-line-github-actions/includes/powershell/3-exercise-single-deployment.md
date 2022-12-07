@@ -7,13 +7,13 @@
     ```
 
 1. After you're signed in, you see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox, the Concierge Subscription should be in this list.
-1. Get the subscription ID. The following command will list your subscriptions and their IDs in an easy-to-read table format. The subscription ID is the second column. Look for `Concierge Subscription` and copy the second column. It will look something like `cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0`.
+1. Verify the subscription name. The following command will list your subscriptions, names, and their IDs in an easy-to-read table format. Look for `Concierge Subscription`.
 
     ```powershell
     Get-AzSubscription
     ```
 
-1. Change your active subscription to the Concierge Subscription. Be sure to substitute `{Your subscription ID}` with the ID of the Concierge Subscription that you got in the previous command.
+1. Change your active subscription to the Concierge Subscription.
 
     ```powershell
     $context = Get-AzSubscription -SubscriptionName "Concierge Subscription" | Set-AzContext
@@ -183,11 +183,11 @@ To pass inline parameters to your deployment, you need to provide the names of t
 
     Rather than pass parameters as inline values in your script, you might find it easier to use a JSON file that contains the parameter values. The parameter file can be a local file or an external/remote file with an accessible URI. For more information about the parameter file, see [Create Resource Manager parameter file](/azure/azure-resource-manager/templates/parameter-files?azure-portal=true).
 
-1. To pass a local parameter file, we use the `TemplateParameterFile` parameter in the same command that we've been using. But first, you need to create and save your parameter file: 
+1. To pass a local parameter file, we use the `TemplateParameterFile` parameter in the same command that we've been using. But first, you need to create and save your parameter file:
 
-    1. Because we're using Visual Studio Code with the Azure Resource Manager Tools extension, you can open the ARM template that you saved locally and click the **Select or create a parameter file to enable full validation** link.
+    1. Because we're using Visual Studio Code with the Azure Resource Manager Tools extension, you can open the ARM template that you saved locally and click the **Select/create parameter file...** link.
 
-    1. Select **New** on the menu. The extension creates a parameter file based on the template that's currently opened.
+    1. Select **New** on the menu, and then select **Only required parameters**. The extension creates a parameter file based on the template that's currently opened.
 
     :::image type="content" source="../../media/5-parameter-file-create-2.png" alt-text="Screenshot that shows selections for creating a parameter file in Visual Studio Code." loc-scope="vs-code":::
 
