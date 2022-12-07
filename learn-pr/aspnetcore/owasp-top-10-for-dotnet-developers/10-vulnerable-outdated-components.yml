@@ -11,4 +11,4 @@ metadata:
   ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
 durationInMinutes: 1
 content: |
-  [!include[](includes/15-vulnerable-outdated-components.md)]
+  [!include[](includes/10-vulnerable-outdated-components.md)]

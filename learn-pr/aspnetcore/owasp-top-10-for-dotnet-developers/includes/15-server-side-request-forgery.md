@@ -1,12 +1,10 @@
-## A10 - Server-Side Request Forgery
+## A10: Server-Side Request Forgery
 
-A10:2021 - Server-Side Request Forgery
-
-This is the third and final new entry into the Top 10 in 2021.
+The third and final new entry into the Top 10 in 2021 compared with 2017 edition.
 Occur whenever a web application is fetching a remote resource without validating the user-supplied URL. It allows an attacker to coerce the application to send a crafted request to an unexpected destination
 
-The attacker can supply or modify a URL which the code running on the server will read or submit data to, and by carefully selecting the URLs, the attacker may be able to read server configuration such as AWS metadata, connect to internal services like http enabled databases or perform post requests towards internal services which are not intended to be exposed.
-attacker may also use this functionality to import untrusted data into code that expects to only read data from trusted sources, and as such circumvent input validation.
+The attacker can supply or modify a crafted URL, which the code running on the server will read or submit data to.By carefully selecting the URLs, the attacker may be able to read server configuration such as metadata, connect to internal services like http enabled databases or perform POST requests to an internal services which are not intended to be exposed.
+Attacker may also use this functionality to import untrusted data into code that expects to only read data from trusted sources, and as such circumvent input validation.
 
 Let's consider a seemingly harmless REST web GET request:
 

@@ -27,8 +27,6 @@ This is the recently updated list for 2021, and you can see how each category co
 
 The OWASP Top 10 is a standard awareness document for developers and web application security. It represents a broad consensus about the most critical security risks to web applications.
 
-Globally recognized by developers as the first step towards more secure coding, ordered by severity of reported, vulnerabilities, industry suggested guidelines and probability of attracts
-
 * A01:2021 - Broken Access Control​
 * A02:2021 - Cryptographic Failures​
 * A03:2021 - Injection​
@@ -40,4 +38,4 @@ Globally recognized by developers as the first step towards more secure coding, 
 * A09:2021 - Security Logging and Monitoring Failures​
 * A10:2021 - Server-Side Request Forgery​
 
-Top of the 2021 list is broken access control, which covers a range of issues that fail to stop users accessing or changing data, or performing functions they shouldn’t be able to. Things like failing to properly validate authorization roles or scopes; or maybe elevation of privilege such as being able to perform admin tasks when you’re not an admin; the ability to enumerate information such as users or orders. It’s what happens when you don’t get authentication and authorization right.
+The list is curated and ordered by severity of reported, vulnerabilities, industry suggested guidelines and probability of attracts.

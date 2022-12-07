@@ -29,7 +29,7 @@ quiz:
     - content: "Log all events occurring in the system and store the logs in an easily accessible public location."
       isCorrect: false
       explanation: "Overlogging may add noise when diagnosing issues. Logs should be protected and not exposed to public."
-    - content: "Log user and password of all failed reauthentication attempts"
+    - content: "Log user and password of all failed authentication attempts"
       isCorrect: false
       explanation: "Not quite. Failed authentication attempts should be logged and audited. Logging passwords is a security risk"    
     - content: "Sanitize logs from sensitive information and guard access to logged information."

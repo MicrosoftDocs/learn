@@ -11,4 +11,4 @@ metadata:
   ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
 durationInMinutes: 1
 content: |
-  [!include[](includes/13-server-side-request-forgery.md)]
+  [!include[](includes/15-server-side-request-forgery.md)]

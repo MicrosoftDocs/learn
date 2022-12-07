@@ -28,7 +28,7 @@ quiz:
       explanation: "Correct. Dynamic analysis can inspect and report on infrastructure configuration and expose its weak points."
     - content: "Chaos testing."
       isCorrect: false
-      explanation: "Try again, it is however helpful technique in reliability and disaster recovery testing."
+      explanation: "Helpful technique in reliability and disaster recovery testing but not quite."
 
   - content: "Should the DevOps team maintain and review list of third party components used in the system for security vulnerabilities? "
     choices:

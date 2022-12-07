@@ -1,4 +1,4 @@
-## A08 - Software and Data Integrity Failures
+## A08: Software and Data Integrity Failures
 
 Happens when an application relies upon plugins, libraries, or modules from untrusted sources, repositories
 New category for 2021, focusing on making assumptions related to software updates, critical data, and CI/CD pipelines without verifying integrity.

@@ -1,4 +1,4 @@
-## A05 - Vulnerable and Outdated Components
+## A06: Vulnerable and Outdated Components
 
 Occurs when you don’t know all the versions of all the components you use and if the software is vulnerable unsupported or out of date.
 
@@ -8,10 +8,11 @@ Remove unused dependencies, unnecessary features, components, files, and documen
 > [!IMPORTANT]
 > Know what your digital components and dependencies are (bill or materials) for the project.
 
-The .NET Framework, for example, is kept up-to-date by Microsoft with the Windows Update service. Individual frameworks can be kept up to date using NuGet.
+The .NET, for example, is kept up-to-date by Microsoft with the Windows Update service. Individual components and dependencies can be kept up to date using NuGet.
+
 :::image type="content" source="../media/nuget-updates.png" alt-text="Visual Studio Nuget Updates":::
-As Visual Studio prompts for updates, build it into your lifecycle.
-With GitHub Dependabot
+
+Cater for, with plan and schedule, regular updates of your product's components. As you develop your app you might already have a habit of checking Visual Studio prompts for updates.
 
 :::row:::
     :::column:::
@@ -23,4 +24,4 @@ With GitHub Dependabot
 :::row-end:::
 
 > [!TIP]
-> Leverage automation and CI/CD workflows, like Dependabot version updates, to keep dependencies updated.
+> Leverage automation and CI/CD workflows, like GitHub Dependabot version updates, to keep dependencies updated.

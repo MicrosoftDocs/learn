@@ -11,4 +11,4 @@ metadata:
   ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
 durationInMinutes: 2
 content: |
-  [!include[](includes/10-security-misconfiguration.md)]
+  [!include[](includes/9-security-misconfiguration.md)]

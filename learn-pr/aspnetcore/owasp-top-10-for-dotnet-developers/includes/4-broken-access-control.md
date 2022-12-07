@@ -1,6 +1,6 @@
-## A01- Broken Access Control
+## A01: Broken Access Control
 
-Occurs when confidential information is viewed by a user who should not have permission to access that data
+Occurs when confidential information is viewed by a user who shouldn't have permission to access that data
 
 Good practices would include
 

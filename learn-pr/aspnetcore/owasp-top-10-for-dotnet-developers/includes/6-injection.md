@@ -1,8 +1,8 @@
-## A03 - Injection
+## A03: Injection
 
 Happens when an application accepts data as input and processes it as instruction instead of as data​.
 
-As a golden rule please ensure you perform validation whenever you are processing user input. Never assume any user data input as safe to process until proven otherwise.
+As a golden rule ensure validation is performed whenever you' a're processing user input. Never assume any user data input as safe to process until proven otherwise.
 
 > [!IMPORTANT]
 > Neutralize or verify user input in your application
@@ -12,7 +12,7 @@ The canonical example of SQL injection could be the following statement, where `
 ```sql
 string sql = ​"SELECT * FROM users WHERE name = '" + username + "';";
 ```
-Withough validation of user input a mallicious actor could suplement a genuine user name for a crafted part of SQL statement:
+Without validation of user input a malicious actor could supplement a genuine user name for a crafted part of SQL statement:
 ```sql
 SELECT * FROM Users WHERE name = 'a';DROP TABLE users;--
 ```
@@ -36,10 +36,10 @@ public class ExampleModel ​
 }​
 ```
 
-In client-server scenarios always ensure input is validated on both client and server side.
-Additionally,if validation passes on the server, process the form and send back a success status code (200 - OK). ​However, if validation fails, return a failure status code (400 - Bad Request) and the field validation errors, don't bubble up validation details from server to the client as it may give the malicious actor more insights on how your app logic works.
+In client-server scenarios make sure input is validated on both client and server side.
+Additionally, if validation passes on the server, process the form and send back a success status code (200 - OK). ​However, if validation fails, return a failure status code (400 - Bad Request) and the field validation errors, don't bubble up validation details from server to the client as it may give the malicious actor more insights on how your app logic works.
 
-Be extra careful when it comes to file uploads.
+Be extra careful when it comes to uploading a file.
 
 Input validation also includes the way we handle file upload. Following example (ASP.NET Blazor component) attempts to validate correctness of file before uploading it to Azure Blob Storage, including check for expected extension, max file size and overriding supplied filename with a random name.
 

@@ -10,38 +10,29 @@ No matter if you are  designing a brand new green field application or contribut
 
 :::row:::
     :::column:::
-        :::image type="content" source="../media/defender-threat-intelligence.jpg" alt-text="Microsoft Defender Threat Intelligence":::
+        :::image type="content" source="../media/attack-surface-reduction.jpg" alt-text="Microsoft Defender Threat Intelligence":::
     :::column-end:::
     :::column:::
-        Track threat actor activity and patterns with Microsoft Defender Threat Intelligence. Security operations teams can uncover attacker infrastructure and accelerate investigation and remediation with more context, insights, and analysis than ever before. While threat intelligence is already built into the real-time detections of our platform and security products like the Microsoft Defender family and Microsoft Sentinel, this new offering provides direct access to real-time data from Microsoft’s unmatched security signals. Organizations can proactively hunt for threats more broadly in their environments, empower custom threat intelligence processes and investigations, and improve the performance of third-party security products.
+        Microsoft Defender product family can bring best-in-class security features to your product. Defender for DevOps provides unified DevOps security management giving the team full visibility into the security posture of pre-production application code, resource configurations across GitHub, Azure DevOps, across multi-cloud and multiple-pipeline environments. You can track threat actor activity and patterns with Microsoft Defender Threat Intelligence. Defender External Attack Surface Management can help discover unmanaged resources that could be potential entry points for an attacker
     :::column-end:::
 :::row-end:::
 
-:::row:::
-    :::column:::
-        See your business the way an attacker can with Microsoft Defender External Attack Surface Management. The new Defender External Attack Surface Management gives security teams the ability to discover unknown and unmanaged resources that are visible and accessible from the internet—essentially the same view an attacker has when selecting a target. Defender External Attack Surface Management helps customers discover unmanaged resources that could be potential entry points for an attacker.
-    :::column-end:::
-    :::column:::
-        :::image type="content" source="../media/attack-surface-reduction.jpg" alt-text="Microsoft Defender External Attack Surface Management":::
-    :::column-end:::
-:::row-end:::
+The developers should not only be focusing on just their own code. Single codebase monolith applications of the past may giving place to microservices and distributed applications are made up of lots of moving parts, all of which are integral to their operation. Things like open-source libraries, or external services used by developers (hosted source code repositories for example) or services your application is dependent on, like a Azure Key Vault, or the big one of course being identity (authentication and authorization).
 
 :::row:::
+    :::column:::
+        Weather with Azure DevOps or GitHub Advanced Security remember to
+        - Shift security left by automatically finding vulnerabilities early in your development workflows
+        - Ensure the security and compliance of your open source components
+        - Bring the expertise of top security researchers to your software projects
+    :::column-end:::
+
     :::column:::
         :::image type="content" source="../media/dependency-graph.png" alt-text="GitHub Advanced Security":::
     :::column-end:::
-
-    :::column:::
-        Weather with Azure DevOps or GitHub Advanced Security remember to
-
-        * Shift security left by automatically finding vulnerabilities early in your development workflows
-        * Ensure the security and compliance of your open source components
-        * Bring the expertise of top security researchers to your software projects        
-    :::column-end:::
 :::row-end:::
 
-Azure security technology and services are here to help you protect Azure and your entire multi-cloud environment with built-in security, powered by AI.
-:::image type="content"  source="../media/protect-with-azure-ecosystem.png" alt-text="Azure security technologies":::
+Security is a journey, not a destination. With the right mindset, you can improve the quality and security standpoint of an application before you’ve even written a single line of code - by thinking about the design; think about what files you include in the project; the choices you make about libraries you use; how you handle security and authorization; where you store and build your code; how you deploy the application.
 
 ## Learn more
 
