@@ -2,6 +2,7 @@ There are two methods for scaling your Azure App Service plan and applications: 
 
 Watch the following video about how to implement automatic scaling for your Azure App Service plan and applications. 
 
+
 <iframe width="854" height="480" src="https://www.youtube.com/embed/LS8ZPbQzRpc" title="How to automatically scale Azure App Service applications | Azure Tips and Tricks" frameborder="0" allowfullscreen></iframe>
 
 ### Things to know about Azure App Service scaling
@@ -18,7 +19,7 @@ Let's examine the details of scaling for your Azure App Service plan and App Ser
 
 ### Things to consider when using Azure App Service scaling
 
-Now let's review the benefits of implementing scaling for your App Service plan and applications. Think about the scaling advantages for the hotel website.
+Review the following benefits of implementing scaling for your App Service plan and applications. Think about the scaling advantages for your hotel website.
 
 - **Consider manually adjusting plan tiers**. Start your plan at a lower pricing tier and scale up as needed to acquire more App Service features. Scale down when features are no longer needed, and control your overall costs.
 

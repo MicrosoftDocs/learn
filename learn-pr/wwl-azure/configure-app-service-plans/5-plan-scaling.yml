@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-app-service-plans.plan-scaling
-title: Configure app service plan scaling
+title: Configure Azure App Service plan scaling
 metadata:
-  title: Configure app service plan scaling
-  description: "Configure app service plan scaling"
-  ms.date: 11/17/2022
+  title: Configure Azure App Service plan scaling
+  description: "Configure Azure App Service plan scaling"
+  ms.date: 12/08/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
