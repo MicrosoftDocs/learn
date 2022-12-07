@@ -9,7 +9,7 @@ Microsoft provides three ways to author a bot, each providing a different author
 
 Power Virtual Agents (PVA) is built on the Microsoft Power Platform, and enables users to build a chatbot without requiring any code. PVA lets users use an interface to build conversations, send messages, publish, monitor, and configure your bot all within the PVA app. This PVA app is tailored for individuals who prefer not to write any code and use a graphical interface to build their bot, or for teams made up of both subject matter experts and developers working together.
 
-Some features of the Azure Bot service aren't available in the PVA app, and require using Bot Framework Composer (which can be launched directly from the PVA web app) to integrate those features. 
+Some features of the Azure Bot service aren't available in the PVA app, and require using Bot Framework Composer (which can be launched directly from the PVA web app) to integrate those features.
 
 > [!NOTE]
 > Terminology of concepts between PVA and Composer is different, so if you are planning to use the PVA app check out the correlation of [concepts for Composer users](/power-virtual-agents/preview/composer-concepts)
