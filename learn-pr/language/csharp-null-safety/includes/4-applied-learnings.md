@@ -1,4 +1,4 @@
-In the previous unit, you learned about expressing your nullablility intent in code. In this unit, you'll apply what you've learned to an existing C# project.
+In the previous unit, you learned about expressing your nullability intent in code. In this unit, you'll apply what you've learned to an existing C# project.
 
 > [!NOTE]
 > This module uses the .NET CLI (Command Line Interface) and Visual Studio Code for local development. After completing this module, you can apply the concepts using Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
@@ -7,7 +7,7 @@ In the previous unit, you learned about expressing your nullablility intent in c
 
 ## Retrieve and examine the sample code
 
-1. At a command terminal, clone the sample GitHub repository and switch to the cloned directory.
+1. In a command terminal, clone the sample GitHub repository and switch to the cloned directory.
 
     ```bash
     git clone https://github.com/microsoftdocs/mslearn-csharp-null-safety
@@ -34,7 +34,7 @@ In the previous unit, you learned about expressing your nullablility intent in c
        at Program.<Main>$(String[] args) in .\src\ContosoPizza.Service\Program.cs:line 13
     ```
 
-    The stack trace indicates that the exception occurred on line 13 in _.\src\ContosoPizza.Service\Program.cs_.. On line 13, the `Add` method is called on the `pizza.Cheeses` property. Since `pizza.Cheeses` is `null`, a <xref:System.NullReferenceException> is thrown.
+    The stack trace indicates that the exception occurred on line 13 in *.\src\ContosoPizza.Service\Program.cs*. On line 13, the `Add` method is called on the `pizza.Cheeses` property. Since `pizza.Cheeses` is `null`, a <xref:System.NullReferenceException> is thrown.
 
     :::code source="~/../csharp-null-safety-main/src/ContosoPizza.Service/Program.cs" highlight="13":::
 
@@ -42,13 +42,13 @@ In the previous unit, you learned about expressing your nullablility intent in c
 
 Now you'll enable a nullable context and examine its effect on the build.
 
-1. In _src/ContosoPizza.Service/ContosoPizza.Service.csproj_, add the highlighted line and save your changes:
+1. In *src/ContosoPizza.Service/ContosoPizza.Service.csproj*, add the highlighted line and save your changes:
 
     :::code language="xml" source="~/../csharp-null-safety-solution/src/ContosoPizza.Service/ContosoPizza.Service.csproj" highlight="7" range="1-7,9-15":::
 
     The preceding change enables the nullable context for the entire `ContosoPizza.Service` project.
 
-1. In _src/ContosoPizza.Models/ContosoPizza.Models.csproj_, add the highlighted line and save your changes:
+1. In *src/ContosoPizza.Models/ContosoPizza.Models.csproj*, add the highlighted line and save your changes:
 
     :::code language="xml" source="~/../csharp-null-safety-solution/src/ContosoPizza.Models/ContosoPizza.Models.csproj" highlight="6" range="1-6,8-10":::
 
@@ -96,7 +96,7 @@ Now you'll enable a nullable context and examine its effect on the build.
     > [!TIP]
     > You can force a rebuild of all assemblies in a project by using the `dotnet clean` command prior to `dotnet build`.
 
-1. In the _.csproj_ files, add the highlighted lines and save your changes.
+1. In the *.csproj* files, add the highlighted lines and save your changes.
 
     :::code language="xml" source="~/../csharp-null-safety-solution/src/ContosoPizza.Service/ContosoPizza.Service.csproj" highlight="8":::
 
@@ -139,15 +139,15 @@ Now you'll enable a nullable context and examine its effect on the build.
 
 ## Fix the errors
 
-There's a plethora of tactics to resolve the warnings/errors related to nullability. Some examples include:
+There are many tactics to resolve the warnings/errors related to nullability. Some examples include:
 
-- Require a non-nullable collection of cheeses and toppings as constructor parameters.
-- Intercept the property `get`/`set` and add a `null` check.
-- Express the intent for the properties to be nullable.
-- Initialize the collection with a default (empty) value inline using property initializers.
-- Assign the property a default (empty) value in the constructor.
+- Require a non-nullable collection of cheeses and toppings as constructor parameters
+- Intercept the property `get`/`set` and add a `null` check
+- Express the intent for the properties to be nullable
+- Initialize the collection with a default (empty) value inline using property initializers
+- Assign the property a default (empty) value in the constructor
 
-1. To fix the error on the `Pizza.Cheeses` property, modify the property definition on *Pizza.cs* to add a `null` check. It's not really a pizza without cheese, is it?!
+1. To fix the error on the `Pizza.Cheeses` property, modify the property definition on *Pizza.cs* to add a `null` check. It's not really a pizza without cheese, is it?
 
     :::code source="~/../csharp-null-safety-solution/src/ContosoPizza.Models/Pizza.cs" highlight="5,16-20":::
 
