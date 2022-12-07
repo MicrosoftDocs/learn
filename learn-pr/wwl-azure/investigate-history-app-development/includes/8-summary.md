@@ -1,6 +1,6 @@
 You've learned in this module that computers have come a long way since they were invented. Computers used to be the size of rooms. They typically did just a few things. And they were hard to scale.
 
-Modern cloud computing made both the hardware and software more modular. Programs can be as small as a single function but can be used with other programs. Programs designed in this way gives them a lot of power. Hardware, too, can scale up and down depending on how much power and storage are needed. Modern computing lets people from all over the world use applications and store data.
+Modern cloud computing made both the hardware and software more modular. Programs can be as small as a single function but can be used with other programs. Programs designed in this way give them a lot of power. Hardware can also scale up and down depending on how much power and storage are needed. Modern computing lets people from all over the world use applications and store data.
 
 Specifically, this module explored the following areas:
 

@@ -12,21 +12,21 @@ Here are some examples of areas that computer scientists have had to think about
 
 People with low vision may need to enlarge the text on the screen. Doing so may impact everything else that's being shown. Suppose the text on a button gets bigger, but the button doesn't. The text may go outside the button, making it hard to read. So the program needs to adjust everything when some parts are enlarged.
 
-![Image of an eyeball](../media/eyeball.svg)
+![Diagram showing an eyeball.](../media/eyeball.svg)
 
 Color is another consideration. People with color vision deficiency can't rely on color alone to tell the difference between things on a screen. Programmers shouldn't rely on color alone to communicate important information.
 
 How items contrast with each other can be a challenge for certain people. People with light sensitivity may not be able to see a light color on top of a white background. Ensuring items have good contrast can help make a computer more accessible.
 
-Individuals that are visually impaired also rely on screen readers to access content on their computers. Screen readers read every item of text on the screen and help people get around. Items like images can't be read, so describing an image in text is important. Images should include "alt text." This text can be added to an image so a screen reader can read it.
+Individuals that are visually impaired also rely on screen readers to access content on their computers. Screen readers read every item of text on the screen and help people get around. Items like images can't be read, so describing an image in text is important. Images should include *alt text*. This text can be added to an image so a screen reader can read it.
 
 ### Hearing
 
-While people may tend to think of computing as mainly visual, modern devices use a lot of audio too. Programmers should never rely on audio only to communicate to the user. For example, most modern phones will have the option to vibrate and ring when a call comes in. This vibration option is called "haptics."
+While people may tend to think of computing as mainly visual, modern devices use a lot of audio too. Programmers should never rely on audio only to communicate to the user. For example, most modern phones will have the option to vibrate and ring when a call comes in. This vibration option is called *haptics*.
 
-![Illustration of a vibrating mobile phone](../media/mobile-phone.svg)
+![Diagram showing a vibrating mobile phone.](../media/mobile-phone.svg)
 
-Some devices enable haptics for other types of things too. Pressing a button on a keyboard may include a slight vibration. Like a "click" on a keyboard, this gives people with hearing loss a connection to the keys they're pressing.
+Some devices enable haptics for other types of things too. Pressing a button on a keyboard may include a slight vibration. This gives people with hearing loss a connection to the keys they're pressing.
 
 ### Motor Skills
 
