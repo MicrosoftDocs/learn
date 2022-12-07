@@ -1,4 +1,9 @@
-Welcome to Proseware! We're a company determined to innovate health care by helping doctors to diagnose patients more quickly and reliably. 
+---
+title: Exercise - Design a deployment solution
+durationInMinutes: 10
+---
+
+Welcome to Proseware! You've been hired as the *lead data scientist* to help us design a machine learning deployment solution. 
 
 ## Understand the problem
 
@@ -7,43 +12,25 @@ Welcome to Proseware! We're a company determined to innovate health care by help
         :::image type="content" source="../media/mock-up-app.png" alt-text="Show the mobile application." lightbox="../media/mock-up-app.png":::
     :::column-end:::    
     :::column span="2":::
-        We're working on several machine learning models that will help our business processes and those of our customers: health care providers. 
+        At Proseware, we're developing a **mobile application** that will help doctors diagnose diseases in patients faster. A doctor can enter the patient's medical data into the app to get a diagnosis on the patient.
 
-        One project we started is a mobile application, which allows a doctor to enter the patient's medical data. The app needs to quickly analyze the data and tell the doctor whether the patient should be further screened for diabetes. 
+        Our first planned feature is that the app will tell the doctor *whether the patient should be further screened or treated for diabetes*.
+
+        We have already collected data that correlates with diabetes, such as the number of pregnancies, age, and body mass index (BMI). We also have a team of data scientists working on training a model that can classify whether a patient is likely to have diabetes. 
+
+        We need your help deciding how to deploy the model to integrate it with our mobile application.
+
+        We're looking forward to your advice on **how to design the model's deployment solution**!
     :::column-end:::
 :::row-end:::
-
----
 
 ## Consider the requirements
-:::row:::
-    :::column span="":::
-        :::image type="icon" source="../media/01-frequency.png":::
-    :::column-end:::
-    :::column span="2":::
-        ### Consider the frequency
-        The idea is that a doctor enters a patient's information into the app. After entering, a doctor can select the **Analyze** button, after which the model should predict whether or not a patient is likely to have diabetes.
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="":::
-        :::image type="icon" source="../media/02-costs.png":::
-    :::column-end:::
-    :::column span="2":::
-        ### Consider the costs
-        A doctor consultation typically takes less than ten minutes. If we want doctors to use this app, we need the answers to be returned as quickly as possible. The deployed model should always be available as we don't know when a doctor may use it.
-    :::column-end:::    
-:::row-end:::
-:::row:::
-    :::column span="":::
-        :::image type="icon" source="../media/03-size.png":::
-    :::column-end:::
-    :::column span="2":::
-        ### Consider the size 
-        A doctor will only use the app to get a prediction on an individual's situation. There is no need for generating the prediction of multiple patients at once.
-    :::column-end:::
-:::row-end:::
 
----
+| | |
+|---|---|
+|:::image type="icon" source="../media/01-frequency.png":::|**Consider the frequency**. The plan is that a doctor enters a patient's information into the app, like their age and BMI. After entering, a doctor can select the `Analyze` button, after which the model should predict whether or not a patient is likely to have diabetes.|
+|:::image type="icon" source="../media/02-costs.png":::|**Consider the compute**. A doctor consultation typically takes less than 10 minutes. If we want doctors to use this app, we need the answers to be returned as quickly as possible. The deployed model should always be available as we don't know when a doctor may use it.|
+|:::image type="icon" source="../media/03-size.png":::|**Consider the size**. A doctor will only use the app to get a prediction on an individual's situation. There's no need for generating the predictions of multiple patients at once.|
+
 
 ## Propose a solution
