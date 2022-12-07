@@ -1,4 +1,4 @@
-Learning something new can be scary. The world of computers can especially be overwhelming. It's both technical and very big. But take heart--all journeys start with a first step. In this learning path, you're going to cover the basics of this big topic area.
+Learning something new can be scary. The world of computers can especially be overwhelming. It's both technical and very big. But take heart, all journeys start with a first step. In this learning path, you're going to cover the basics of this big topic area.
 
 In this learning path, you're going to explore how information travels around the internet. You may have wondered how a picture sent to you by your relative reaches your tablet, computer, or mobile phone in a matter of seconds. How does the internet know how to find your phone? Why doesn't the photo get sent to someone else by accident? Or why doesn't it get lost? Does the internet connect my phone with my relative's phone directly or is something else going on?
 

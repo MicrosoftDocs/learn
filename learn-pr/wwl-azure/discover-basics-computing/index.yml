@@ -2,8 +2,8 @@
 uid: learn.wwl.discover-basics-computing
 metadata:
   title: Discover the basics of computing
-  description: "Discover the basics of computing"
-  ms.date: 12/05/2022
+  description: "Learn about the parts of computers and how they work together."
+  ms.date: 12/07/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Identify the parts of a web address
 prerequisites: |
   - Basic understanding of computer terminology.
-iconUrl: /learn/achievements/discover-basics-computing.svg
+iconUrl: /training/achievements/discover-basics-computing.svg
 levels:
 - beginner
 roles:
