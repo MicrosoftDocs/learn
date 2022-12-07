@@ -34,12 +34,12 @@ subjects:
   - cloud-computing
   - networking
 units:
-- learn.intro-to-azur-private-5g-core.introduction
-- learn.intro-to-azur-private-5g-core.what-is-azure-private-5g-core
-- learn.intro-to-azur-private-5g-core.benefits-and-usage-scenarios
-- learn.intro-to-azur-private-5g-core.structure-and-components
-- learn.intro-to-azur-private-5g-core.key-features
-- learn.intro-to-azur-private-5g-core.knowledge-check
-- learn.intro-to-azur-private-5g-core.summary
+- learn.intro-to-azure-private-5g-core.introduction
+- learn.intro-to-azure-private-5g-core.what-is-azure-private-5g-core
+- learn.intro-to-azure-private-5g-core.benefits-and-usage-scenarios
+- learn.intro-to-azure-private-5g-core.structure-and-components
+- learn.intro-to-azure-private-5g-core.key-features
+- learn.intro-to-azure-private-5g-core.knowledge-check
+- learn.intro-to-azure-private-5g-core.summary
 badge:
   uid: learn.intro-to-azure-private-5g-core.badge
