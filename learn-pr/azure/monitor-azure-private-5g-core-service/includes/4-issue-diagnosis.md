@@ -2,7 +2,7 @@ During the monitoring of your private mobile network, you may find network issue
 
 The distributed tracing tool allows you to collect detailed traces for signaling flows involving a packet core instance. Each *trace* represents the results of a distinct occurrence of a network activity. Through a web graphical user interface (GUI), you can use traces to diagnose many common configuration, network, and interoperability problems affecting network services.
 
-The distributed tracing tool is available from the ASE on which the packet core instance runs. As the tool resides within each site in your private mobile network, it doesn't have much reliance on the network bandwidth or the cloud connectivity. With the tool, you can quickly diagnose network issues and minimize their impact on your network services.
+The distributed tracing tool is available from the ASE on which the packet core instance runs. As the tool resides within each site in your private mobile network, it doesn't have much reliance on network bandwidth or cloud connectivity. With the tool, you can quickly diagnose network issues and minimize their impact on your network services.
 
 > [!IMPORTANT]
 > To effectively diagnose issues in your private mobile network, you need to be familiar with the network functions that Azure Private 5G Core provides. For more information about the network functions, see [Packet core architecture](/azure/private-5g-core/private-5g-core-overview#packet-core-architecture).
@@ -102,25 +102,25 @@ You can use one of the following methods to collect the diagnostics information:
 
 The distributed tracing tool allows you to export traces for signaling flows.
 
-For example, if you notice that a UE doesn't work as expected during a certain time period, you can do a search with the SUPI of the UE and the time period. After that, you can select a trace in the search result and export it as a file.
+For example, if you notice that a UE doesn't work as expected during a certain time period, you can do a search with the SUPI of the UE and the time period. After that, you can select a trace in the search result and then export it as a file.
 
 To share the file securely with Microsoft support personnel through Azure, you can use a storage account and a container resource.
 
-For detailed instructions on exporting a trace and share the exported trace file, see [Export, upload and share traces](/azure/private-5g-core/distributed-tracing-share-traces).
+For detailed instructions on exporting a trace and sharing the exported trace file, see [Export, upload and share traces](/azure/private-5g-core/distributed-tracing-share-traces).
 
 ### Collect and share a diagnostics package
 
 <!-- Need to check if this feature is delivered for GA before the publication of this module -->
 
-Azure Private 5G Core allows you to use the Azure portal to collect diagnostics packages from a site. You can enable package collection either when you create a site or when you edit a site.
+Azure Private 5G Core allows you to use the Azure portal to collect a diagnostics package from a site. You can enable package collection either when you create a site or when you edit a site.
 
 To enable diagnostics package collection, you'll need to specify the following information:
 
 - A storage account for storing your diagnostics package.
 - A managed identity that has the write access to the storage account.
 
-  The distributed tracing tool uses this identity to upload the collected packages to your specified storage account.
+  Azure Private 5G Core uses this identity to upload the collected package to your specified storage account.
 
-You can enable diagnostics package collection when you deploy or modify a site. Once package collection is enabled, you can use the **Collect Diagnostics Package** link on the overview page of the relevant site resource to trigger package collection. After the collection is completed, share the package access Uniform Resource Identifier (URI) with Microsoft support personnel.
+Once package collection is enabled, you can use the **Collect Diagnostics Package** link on the overview page of the relevant site resource to trigger package collection. After the collection is completed, share the package access Uniform Resource Identifier (URI) with Microsoft support personnel.
 
-For details about diagnostics package collection, see the relevant information in the [Azure Private 5G Core documentation](/azure/private-5g-core/).
+For details about diagnostics package collection, see relevant information in the [Azure Private 5G Core documentation](/azure/private-5g-core/).

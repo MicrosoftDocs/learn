@@ -21,9 +21,9 @@ Azure Private 5G Core offers you the flexibility to use an application of your c
 To integrate an application with Azure Private 5G Core, you can use one of the following methods:
 
 - Use the [Azure Monitor REST API](/rest/api/monitor/) to retrieve the health and performance metrics that Azure Private 5G Core shares.
-- Use the Azure Monitor Metrics Explorer to analyze metrics in the Azure portal.
+- Use the Azure Monitor Metrics Explorer to analyze metrics through the Azure portal.
 
-  The platform metrics data is stored by [Azure Monitor Metrics](/azure/azure-monitor/essentials/data-platform-metrics). You can use the Azure Monitor [Metrics Explorer](/azure/azure-monitor/essentials/metrics-getting-started) to analyze metrics through the Azure portal.
+  The platform metrics data is stored by [Azure Monitor Metrics](/azure/azure-monitor/essentials/data-platform-metrics). You can use the Azure Monitor [Metrics Explorer](/azure/azure-monitor/essentials/metrics-getting-started) to analyze the data.
 
 - Export the metrics to a data storage and processing service such as [Azure Monitor Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), [Azure Storage](/azure/storage/), or [Azure Event Hubs](/azure/event-hubs/).
 

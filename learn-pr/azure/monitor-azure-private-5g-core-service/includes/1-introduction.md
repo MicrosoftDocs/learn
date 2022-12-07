@@ -1,5 +1,5 @@
 
-In the private mobile networks powered with Azure Private 5G Core, enterprises usually run mission-critical applications that support their user equipment (UE). For example, robots on a factory floor rely on the network to communicate with each other, and IoT devices in a smart farm rely on the network to report status and adjust to environmental changes. If these UEs malfunction or even stop functioning due to network connectivity or performance issues, the business of the enterprise will be severely impacted. Therefore, monitoring the health and performance of the network continuously and making sure everything runs smoothly are of critical importance to the business continuity of enterprises. In addition, to minimize business impact, enterprises need to quickly diagnose and fix an issue once it's reported.
+In the private mobile networks powered with Azure Private 5G Core, enterprises usually run mission-critical applications that support their user equipment (UE). For example, robots on a factory floor rely on the network to communicate with each other, and IoT devices in a smart farm rely on the network to report status and adjust to environmental changes. If these UEs malfunction or even stop functioning due to network connectivity or performance issues, the business of the enterprise will be severely impacted. Therefore, monitoring the health and performance of the network continuously and making sure everything runs smoothly are of critical importance to the business continuity of enterprises. In addition, to minimize business impact, enterprises need to quickly diagnose and fix any issues that are reported.
 
 In this module, we'll introduce the use of the network monitoring and issue diagnosis tools that Azure Private 5G Core offers. After learning, you'll be able to choose appropriate tools based on the business needs of an enterprise and use the chosen tools to do the monitoring and issue diagnosis.
 
@@ -9,9 +9,13 @@ Azure Private 5G Core provides flexible monitoring options. It allows you to eit
 
 - Cloud monitoring
 
-  - Cloud monitoring using platform metrics: The Mobile Network Site resource that you use to manage a site in your private mobile network contains a list of dashboards called platform metrics. Through the platform metrics, you can check site health and performance information such as user plane packets dropped or session establishment failures.
+  - Cloud monitoring using platform metrics
+
+    The *Mobile Network Site* resource that you use to manage a site in your private mobile network contains a list of dashboards called platform metrics. Through the platform metrics, you can check site health and performance information such as user plane packets dropped or session establishment failures.
   
-  - Cloud monitoring using the Azure Monitor REST API: Azure Private 5G Core shares network health metrics through [Azure Monitor](/azure/azure-monitor/overview). You can use the [Azure Monitor REST API](/rest/api/monitor/) to retrieve the metrics and then integrate the metrics data into an applications of your choice. Additionally, you can export the metrics data to a data storage and processing service such as [Azure Monitor Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), [Azure Storage](/azure/storage/), or [Azure Event Hubs](/azure/event-hubs/) and use the data from there.
+  - Cloud monitoring using the Azure Monitor REST API
+
+    Azure Private 5G Core shares network health metrics through [Azure Monitor](/azure/azure-monitor/overview). You can use the [Azure Monitor REST API](/rest/api/monitor/) to retrieve the metrics and then integrate the metrics data into an application of your choice. Additionally, you can export the metrics data to a data storage and processing service such as [Azure Monitor Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), [Azure Storage](/azure/storage/), or [Azure Event Hubs](/azure/event-hubs/) and use the data from there.
 
 - Local monitoring
 

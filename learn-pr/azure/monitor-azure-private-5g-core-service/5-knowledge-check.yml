@@ -17,7 +17,7 @@ quiz:
     choices:
     - content: "Platform metrics"
       isCorrect: true
-      explanation: "Correct. Azure Private 5G Core creates the platform metrics for a site once the site is deployed. You can check these platform metrics through the Mobile Network Site resource that you use to manage the site."
+      explanation: "Correct. Azure Private 5G Core creates the platform metrics for a site when the site is deployed. You can check these platform metrics through the Mobile Network Site resource that you use to manage the site."
     - content: "The packet core dashboards"
       isCorrect: false
       explanation: "Try again. The packet core dashboards allow you to locally monitor a specific site in a private mobile network."

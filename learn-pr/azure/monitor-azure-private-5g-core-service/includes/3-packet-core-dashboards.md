@@ -43,7 +43,7 @@ Azure Private 5G Core provides two authentication methods for the packet core da
 - Azure active directory (AD): The Azure AD method allows users to sign in with their Azure accounts.
 - Username and password: The username/password method allows users to sign in with a default account.
 
-Whenever possible, use the Azure AD method, as it's more secure. Only use the username and password method when you don't have a stable connection to Azure.
+Whenever possible, use the Azure AD method, as it's more secure. Only use the username and password method when you don't have a stable connection to Azure. You can choose your preferred authentication method when you deploy or modify a site.
 
 For detailed instructions on configuring and using these authentication methods, see [Packet core dashboards](/azure/private-5g-core/packet-core-dashboards).
 

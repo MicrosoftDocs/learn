@@ -20,8 +20,8 @@ abstract: |
 prerequisites: |
   - Fundamental knowledge about Azure. If you don't have the knowledge, consider taking relevant Azure Fundamental (AZ-900) training programs.
   - Fundamental knowledge of 5G and 4G technologies.
-  - Fundamental knowledge about Azure Private 5G Core. If you don't have the knowledge, consider taking the *Introduction to Azure Private 5G Core* training module first.
-iconUrl: /learn/achievements/generic-badge.svg
+  - Fundamental knowledge about Azure Private 5G Core.
+iconUrl: /learn/achievements/monitor-azure-private-5g-core-service.svg
 levels:
   - intermediate
 roles:
