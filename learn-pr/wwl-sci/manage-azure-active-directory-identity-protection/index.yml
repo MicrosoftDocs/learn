@@ -2,8 +2,8 @@
 uid: learn.wwl.manage-azure-ad-identity-protection
 metadata:
   title: Manage Azure AD Identity Protection
-  description: "Manage Azure AD Identity Protection"
-  ms.date: 12/06/2022
+  description: "Protecting a user's identity by monitoring their usage and sign-in patterns will ensure a secure cloud solution. Explore how to design and implement Azure AD Identity protection."
+  ms.date: 12/07/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Monitor, investigate, and remediate elevated risky users
 prerequisites: |
   None
-iconUrl: /learn/achievements/manage-azure-ad-identity-protection.svg
+iconUrl: /training/achievements/manage-azure-ad-identity-protection.svg
 levels:
 - advanced
 roles:
