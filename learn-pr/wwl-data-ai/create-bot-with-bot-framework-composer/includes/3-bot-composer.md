@@ -1,9 +1,11 @@
 Using the Bot Framework Composer presents some advantages when compared to creating a bot with the SDK and coding.
 
-- Use of Adaptive Dialogs allow for Language Generation (LG), which can simplify interruption handling and give bots character.
 - Visual design surface in Composer eliminates the need for boilerplate code and makes bot development more accessible.
-- Time saved with fewer steps to set up your environment.
-- The Composer bot projects contain reusable assets in the form of JSON and Markdown files that can be bundled and packaged with a bot's source code. The files can be checked into source control systems and deployed along with code updates, such as dialogs, language understanding (LU) training data, and message templates.
+- Save time with fewer steps to set up your environment.
+- Visualize Dialogs, allow for building portions of the bot's functionality and how to guide the conversation.
+- Triggers are easily created to invoke a specific dialog, and enabling interruptions is handled by switching a value within a prompt.
+- Composer enables saving of pieces of data to various scopes to remember things between dialogs or sessions.
+- Test your bot directly inside Composer via embedded Web Chat.
 
 You can download and install the Bot Framework Composer from [Install Bot Framework Composer](/composer/install-composer). The tool is under active development, and updates are available frequently.
 
