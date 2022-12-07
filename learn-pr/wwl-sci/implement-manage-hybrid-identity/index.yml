@@ -2,8 +2,8 @@
 uid: learn.wwl.implement-manage-hybrid-identity
 metadata:
   title: Implement and manage hybrid identity
-  description: "Implement and manage hybrid identity"
-  ms.date: 12/06/2022
+  description: "Creating a hybrid-identity solution to use your on-premises active directory can be challenging. Explore how to implement a secure hybrid-identity solution."
+  ms.date: 12/07/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
