@@ -6,9 +6,9 @@ In this module, you'll first scaffold a Quarkus web application by using Spring 
 
 You'll then code a to-do application that stores tasks in a relational database. The tasks will need a PostgreSQL database, so you'll create and host by using Azure Database for MySQL.
 
-Next you'll build the application and also configure it to connect to the PostgreSQL database. Before you deploy, you'll confirm the application can run locally. You'll then deploy through Maven and host on Azure App Service.
+Next you'll build the application and also configure it to connect to the PostgreSQL database. Before you deploy, you'll confirm the application can run locally. You'll then deploy through Maven and host on Azure Container Apps .
 
-By the end of this module, you'll be able to incorporate Quarkus applications into Azure App Service and integrate with a relational database.
+By the end of this module, you'll be able to incorporate Quarkus applications into Azure Container Apps and integrate with a relational database.
 
 You'll use your own Azure subscription to deploy the resources in this module. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/java/?azure-portal=true&WT.mc_id=java-10785-ropreddy) before you begin.
 > [!IMPORTANT]
@@ -20,7 +20,7 @@ By the end of this module, you'll be able to:
 
 - Develop a Quarkus web application.
 - Connect your application to a PostgreSQL database.
-- Deploy the web application to Azure App Service.
+- Deploy the web application to Azure Container Apps.
 
 ## Prerequisites
 

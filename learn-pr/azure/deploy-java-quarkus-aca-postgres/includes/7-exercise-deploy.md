@@ -1,8 +1,8 @@
-In this unit, you'll configure your Quarkus application to be deployed through Maven. Then you'll create and deploy to an Azure App Service instance.
+In this unit, you'll configure your Quarkus application to be deployed through Maven. Then you'll create and deploy to an Azure Container Apps instance.
 
 ## Configure the Maven plug-in
 
-The deployment process to Azure App Service automatically uses your Azure credentials from the Azure CLI.
+The deployment process to Azure Container Apps automatically uses your Azure credentials from the Azure CLI.
 
 Run the following Maven command to configure the deployment. This command helps you set up the App Service operating system, Azure subscription, and Java version.
 
@@ -52,18 +52,18 @@ In your project's *pom.xml* file, change the following field.
 
 ## Deploy the app
 
-The Maven deployment plug-in creates your Azure App Service server. It copies your JAR file to the application server's */local/site/wwwroot* directory. Finally, the plug-in starts your application by using your Quarkus JAR file's embedded HTTP server.
+The Maven deployment plug-in creates your Azure Container Apps server. It copies your JAR file to the application server's */local/site/wwwroot* directory. Finally, the plug-in starts your application by using your Quarkus JAR file's embedded HTTP server.
 
 Next, deploy your Quarkus application to Azure by using the following command:
 
 ```bash
 mvn package com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
 ```
-This screenshot shows the application deployed to Azure App Service:
+This screenshot shows the application deployed to Azure Container Apps:
 
 ![Screenshot showing the deployed application.](../media/5-spring-boot-01.png)
 
-## Test the Azure App Service application
+## Test the Azure Container Apps application
 
 When the deployment finishes, your application is ready at `http://<appName>.azurewebsites.net/`. 
 

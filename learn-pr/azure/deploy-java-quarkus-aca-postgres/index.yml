@@ -19,7 +19,7 @@ abstract: |
   - Deploy the application to Azure Container Apps.
 prerequisites: | 
   - An Azure subscription
-  - Local installations of Java JDK (11 or later), Docker Desktop, and the Azure CLI (2.40 or later)
+  - Local installations of Java JDK (11 or later), Maven (3.8 or later), Docker Desktop, and the Azure CLI (2.40 or later)
 iconUrl: /training/achievements/deploy-java-quarkus-aca-postgres.svg
 levels:
 - intermediate

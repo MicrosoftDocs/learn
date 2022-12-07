@@ -1,19 +1,26 @@
 In this unit, you'll learn how to create a Spring application, connect it to a PostgreSQL database, and run everything locally.
 
-## Introduction to Azure App Service
+## Introduction to Azure Container Apps
 
-Azure App Service allows you to host your company's websites, web applications, REST APIs, and other application code on Azure.  Running your web application in Azure App Service provides you with all the benefits of running on Azure: your application is available, it scales, and it has built-in security and compliance.
+[Azure Container Apps](https://azure.microsoft.com/products/container-apps) is a fully managed serverless container service on Azure. It allows you to run containerized applications without worrying about orchestration or managing complex infrastructure such as Kubernetes. You write code using your preferred programming language or framework (here it's Java and Quarkus, but it can be anything), and build microservices with full support for Distributed Application Runtime ([Dapr](https://dapr.io)). Then, your containers will scale dynamically based on HTTP traffic or events powered by Kubernetes Event-Driven Autoscaling ([KEDA](https://keda.sh)).
 
-You want to create a Quarkus application that hosts its logic in Azure App Service and hosts its database in an Azure PostgreSQL database.
+You want to create a Quarkus application that hosts its logic in Azure Container Apps and hosts its database in an Azure PostgreSQL database.
 
-## Develop your Spring app
+### Introduction to Azure Database for PostgreSQL
 
-Spring is a great framework to host and manage your applications. You just wire certain Spring components without needing to manage the underlying server runtime.
+[Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/) is a relational database service based on the open-source Postgres database engine. It's a fully managed database-as-a-service that can handle mission-critical workloads with predictable performance, security, high availability, and dynamic scalability.
+
+## Introduction to Quarkus
+
+[Quarkus](https://quarkus.io) is A Kubernetes Native Java stack tailored for OpenJDK HotSpot & GraalVM, crafted from the best of breed Java libraries and standards. In practice, Quarkus is an Open Source stack for writing Java applications, specifically back end applications. So Quarkus is not limited to microservices, even though it is highly suited for it.
+
+From a developer's point of view, Quarkus proposes a nice developer experience: it gives you fast live reload, unified configuration and hides the complexity of GraalVM, allowing you to easily generate native executables. All this without reinventing the wheel by proposing a new programming model, Quarkus leverages your experience in standard libraries that you already know (e.g. CDI, JPA, Bean Validation, JAX-RS, etc.) as well as many popular frameworks (e.g. Eclipse Vert.x, Apache Camel, etc.).
+
+## Develop your Quarkus application
+
+Quarkus is a great framework to execute your applications. You just wire certain Quarkus extensions and the runtime does everything for you.
 
 You've decided to use Quarkus. This framework is self-hosted, and it provides support services to run your application.
-
-The Spring injection annotations use dependency injection to process the components.
-You can use Azure Spring Starter integration libraries to configure and set up connections to Azure services.
 
 ## Create your resources by using the Azure CLI and Maven
 
@@ -26,10 +33,7 @@ For example, to get the details of a subscription, you can use the following com
 az account show
 ```
 
-In this module, you use the Azure CLI to spin up the Azure App Service and Azure Database for PostgreSQL instance. Access the Azure CLI from a terminal or through Visual Studio Code. Or you can access it from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
+In this module, you use the Azure CLI to spin up the Azure Container Apps and the Azure Database for PostgreSQL instance. Access the Azure CLI from a terminal or through Visual Studio Code. Or you can access it from [Azure Cloud Shell](https://azure.microsoft.com/get-started/azure-portal/cloud-shell). This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
 
-You'll use the Maven package manager to structure your project and pull in dependencies. Maven also provides the tools you need to configure and deploy your project to Azure App Service by using the Azure Web Apps plug-in.
+You'll use the Maven package manager to bootstrap your project and pull in dependencies. Maven also provides the tools you need to configure and deploy your project to Azure Container Apps by using the Azure Web Apps plug-in.
 
-### Azure Database for PostgreSQL
-
-Whether you're building new applications that target PostgreSQL or you're migrating legacy applications, Azure Database for MySQL provides the enterprise-ready solution that modern applications need. For more information, see [Azure Database for MySQL](https://azure.microsoft.com/services/mysql/?azure-portal=true&WT.mc_id=java-10785-ropreddy).

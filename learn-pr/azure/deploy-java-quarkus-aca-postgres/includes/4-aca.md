@@ -1,10 +1,10 @@
 In this unit, you'll learn how to create a Spring application, connect it to a PostgreSQL database, and run everything locally.
 
-## Introduction to Azure App Service
+## Introduction to Azure Container Apps
 
-Azure App Service allows you to host your company's websites, web applications, REST APIs, and other application code on Azure.  Running your web application in Azure App Service provides you with all the benefits of running on Azure: your application is available, it scales, and it has built-in security and compliance.
+Azure Container Apps allows you to host your company's websites, web applications, REST APIs, and other application code on Azure.  Running your web application in Azure Container Apps provides you with all the benefits of running on Azure: your application is available, it scales, and it has built-in security and compliance.
 
-You want to create a Quarkus application that hosts its logic in Azure App Service and hosts its database in an Azure PostgreSQL database.
+You want to create a Quarkus application that hosts its logic in Azure Container Apps and hosts its database in an Azure PostgreSQL database.
 
 ## Develop your Spring app
 
@@ -26,9 +26,9 @@ For example, to get the details of a subscription, you can use the following com
 az account show
 ```
 
-In this module, you use the Azure CLI to spin up the Azure App Service and Azure Database for PostgreSQL instance. Access the Azure CLI from a terminal or through Visual Studio Code. Or you can access it from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
+In this module, you use the Azure CLI to spin up the Azure Container Apps and Azure Database for PostgreSQL instance. Access the Azure CLI from a terminal or through Visual Studio Code. Or you can access it from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
 
-You'll use the Maven package manager to structure your project and pull in dependencies. Maven also provides the tools you need to configure and deploy your project to Azure App Service by using the Azure Web Apps plug-in.
+You'll use the Maven package manager to structure your project and pull in dependencies. Maven also provides the tools you need to configure and deploy your project to Azure Container Apps by using the Azure Web Apps plug-in.
 
 ### Azure Database for PostgreSQL
 
