@@ -18924,6 +18924,26 @@
       "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/6-utilize-sap-hana-azure-large-instances.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-azure-active-directory-identity-protection/6a-implement-security-workload-identities.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-azure-active-directory-identity-protection/7-implement-security-workload-identities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-azure-active-directory-identity-protection/6b-explore-microsoft-defender-identity.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-azure-active-directory-identity-protection/8-explore-microsoft-defender-identity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-azure-active-directory-identity-protection/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-azure-active-directory-identity-protection/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-azure-active-directory-identity-protection/8-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-azure-active-directory-identity-protection/10-summary-resources",
+      "redirect_document_id": false
     }
   ]
 }
