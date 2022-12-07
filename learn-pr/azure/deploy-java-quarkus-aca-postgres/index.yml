@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.azure.deploy-java-quarkus-aca-postgres
+metadata:
+  title: Deploy a Quarkus application to Azure Container Apps
+  description: Create a Quarkus application, connect it to a PostgreSQL database, and then deploy to Azure Container Apps.
+  ms.date: 12/16/2022
+  author: antoniomanug
+  ms.author: antoniomanug
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=devdiv
+  ms.contributors: antoniomanug
+title: Deploy a Quarkus application to Azure Container Apps
+summary: Create a Quarkus application, connect it to a PostgreSQL database, and then deploy to Azure Container Apps.
+abstract: |
+  In this module, you will:
+  - Develop a Quarkus application.
+  - Connect your application to a PostgreSQL database.
+  - Deploy the application to Azure Container Apps.
+prerequisites: | 
+  - An Azure subscription
+  - Local installations of Java JDK (11 or later), Docker Desktop, and the Azure CLI (2.40 or later)
+iconUrl: /training/achievements/deploy-java-quarkus-aca-postgres.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-container-apps
+- azure-database-postgresql
+subjects:
+- custom-app-development
+units:
+- learn.azure.deploy-java-quarkus-aca-postgres.1-introduction
+- learn.azure.deploy-java-quarkus-aca-postgres.2-build
+- learn.azure.deploy-java-quarkus-aca-postgres.3-exercise-build
+- learn.azure.deploy-java-quarkus-aca-postgres.4-aca
+- learn.azure.deploy-java-quarkus-aca-postgres.5-exercise-aca
+- learn.azure.deploy-java-quarkus-aca-postgres.6-deploy
+- learn.azure.deploy-java-quarkus-aca-postgres.7-exercise-deploy
+- learn.azure.deploy-java-quarkus-aca-postgres.8-knowledge-check
+- learn.azure.deploy-java-quarkus-aca-postgres.9-summary
+badge:
+  uid: learn.azure.deploy-java-quarkus-aca-postgres.badge
