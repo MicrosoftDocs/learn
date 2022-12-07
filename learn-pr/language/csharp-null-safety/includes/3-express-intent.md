@@ -2,7 +2,7 @@ In the previous unit, you learned how the C# compiler can perform static analysi
 
 ## Declaring variables
 
-With a nullable context enabled, you have more visibility into how the compiler sees your code. The warnings generated from a nullable-enabled context can be acted upon, and in doing so you're explicitly defining your intentions. For example, let's continue examining the `FooBar` code and scrutinize the declaration and assignment:
+With a nullable context enabled, you have more visibility into how the compiler sees your code. You can act upon the warnings generated from a nullable-enabled context, and in doing so, you're explicitly defining your intentions. For example, let's continue examining the `FooBar` code and scrutinize the declaration and assignment:
 
 ```csharp
 // Define as nullable
@@ -32,7 +32,7 @@ As discussed in the previous unit, C# defines several operators to express your 
 
 ### Null-forgiving (`!`) operator
 
-You were introduced to the null-forgiving operator (`!`) in the previous section. It tells the compiler to ignore the CS8600 warning. This is one way to tell the compiler that you know what you're doing, but it comes with the caveat that you should _actually know what you're doing_!
+You were introduced to the null-forgiving operator (`!`) in the previous section. It tells the compiler to ignore the CS8600 warning. This is one way to tell the compiler that you know what you're doing, but it comes with the caveat that you should *actually know what you're doing*!
 
 When you initialize non-nullable types while a nullable context is enabled, you may need to explicitly ask the compiler for forgiveness. For example, consider the following code:
 
@@ -53,7 +53,7 @@ FooBar fooBar = fooList.Find(f => f.Name == "Bar");
 record FooBar(int Id, string Name);
 ```
 
-In the preceding example, `FooBar fooBar = fooList.Find(f => f.Name == "Bar");` generates a CS8600 warning because `Find` might return `null`. This possible `null` would be assigned to `fooBar`, which is non-nullable in this context. However, in this contrived example, we know that `Find` will never return `null` as written. You can express this intent to the compiler with the null-forgiving operator:
+In the preceding example, `FooBar fooBar = fooList.Find(f => f.Name == "Bar");` generates a CS8600 warning, because `Find` might return `null`. This possible `null` would be assigned to `fooBar`, which is non-nullable in this context. However, in this contrived example, we know that `Find` will never return `null` as written. You can express this intent to the compiler with the null-forgiving operator:
 
 ```csharp
 FooBar fooBar = fooList.Find(f => f.Name == "Bar")!;
@@ -61,7 +61,7 @@ FooBar fooBar = fooList.Find(f => f.Name == "Bar")!;
 
 Note the `!` at the end of `fooList.Find(f => f.Name =="Bar")`. This tells the compiler that you know that the object returned by the `Find` method might be `null`, and it's okay.
 
-The null-forgiving operator can be applied to an object inline prior to a method call or property evaluation, too. Consider another contrived example:
+You can apply the null-forgiving operator to an object inline prior to a method call or property evaluation, too. Consider another contrived example:
 
 ```csharp
 List<FooBar>? fooList = FooListFactory.GetFooList();
@@ -97,9 +97,9 @@ FooBar fooBar = fooList!.Find(f => f.Name == "Bar")!;
 ```
 
 > [!NOTE]
-> The null-forgiving operator should be used judiciously. Using it simply to dismiss a warning means that you're telling the compiler not to help you discover possible null mishaps. Use sparingly and only when you are certain.
+> You should use the null-forgiving operator judiciously. Using it simply to dismiss a warning means that you're telling the compiler not to help you discover possible null mishaps. Use it sparingly, and only when you are certain.
 
-For more information, see [! (null-forgiving) operator (C# reference)](/dotnet/csharp/language-reference/operators/null-forgiving).
+For more information, reference [! (null-forgiving) operator (C# reference)](/dotnet/csharp/language-reference/operators/null-forgiving).
 
 ### Null-coalescing (`??`) operator
 
@@ -137,7 +137,7 @@ In the preceding C# code:
 > }
 > ```
 
-Another common C# idiom where the null-coalescing operator can be useful, is shown in the following example:
+Here's an example of another common C# idiom where the null-coalescing operator can be useful:
 
 ```csharp
 public sealed class Wrapper<T> where T : new()
@@ -155,11 +155,11 @@ The preceding C# code:
 - The constructor accepts a `T source` parameter that is defaulted to `null`.
 - The wrapped `_source` is conditionally initialized to a `new T()`.
 
-For more information, see [?? and ??= operators (C# reference)](/dotnet/csharp/language-reference/operators/null-coalescing-operator).
+For more information, check out [?? and ??= operators (C# reference)](/dotnet/csharp/language-reference/operators/null-coalescing-operator).
 
 ### Null-conditional (`?.`) operator
 
-When working with nullable types, you may need to conditionally perform actions based on the state of a `null` object. For example, in the previous unit, the `FooBar` record was used to demonstrate `NullReferenceException` by dereferencing `null`. This was caused when its `ToString` was called. Consider this same example, but now applying the null-conditional operator:
+When working with nullable types, you may need to conditionally perform actions based on the state of a `null` object. For example: in the previous unit, the `FooBar` record was used to demonstrate `NullReferenceException` by dereferencing `null`. This was caused when its `ToString` was called. Consider this same example, but now applying the null-conditional operator:
 
 ```csharp
 using System;
@@ -208,7 +208,7 @@ var str = fooBar?.ToString() ?? "unknown";
 Console.Write(str); // output: unknown
 ```
 
-For more information, see [?. and ?[] (null-conditional) operators](/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-).
+For more information, reference [?. and ?[] (null-conditional) operators](/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-).
 
 ## Summary
 
