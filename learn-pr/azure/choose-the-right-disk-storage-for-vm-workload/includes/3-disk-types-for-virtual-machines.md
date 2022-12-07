@@ -7,7 +7,7 @@ Here, you'll learn about the performance and behavior of each disk type so that 
 To choose the right disk type, it's critical to understand its performance. Performance is expressed in two key measures:
 
 - **Input/output operations per second (IOPS)**. IOPS measure the rate at which the disk can complete a mix of read and write operations. Higher performance disks have higher IOPS values.
-- **Throughput**. Throughput measures the rate at which data can be moved onto the disk from the host computer and off the disk to the host computer. Throughput is also called *data transfer rate* and is measured in megabytes per second (MBps). Higher performance disks have higher throughput.
+- **Throughput**. Throughput measures the rate at which data can be moved onto the disk from the host computer and off the disk to the host computer. Throughput is also called *data transfer rate* and is measured in megabytes per second (:::no-loc text="MBps":::). Higher performance disks have higher throughput.
 
 For physical disks, solid-state disks (SSDs) usually realize higher IOPS and throughput than hard disk drives (HDDs). Virtual disks that you can choose for an Azure virtual machine are based on SSDs of several types or HDDs. Their performance varies widely based on the disk type that you choose. Let's examine the types that are available.
 
@@ -17,7 +17,7 @@ Ultra disks provide the highest disk performance available in Azure. Choose them
 
 The maximum performance of an Ultra disk depends on the size you select, as you can see from examples in this table:
 
-| Disk size (GB) | IOPS | Throughput (MBps) |
+| Disk size (GB) | IOPS | Throughput (:::no-loc text="MBps":::) |
 | --- | --- | --- |
 | 4 | 1,200 | 300 |
 | 16 | 4,800 | 1,200 |
@@ -38,9 +38,9 @@ Premium SSD managed disks are the next tier down from Ultra disks in terms of pe
 
 The following table provides an example of disk capacities and performance maximums.
 
-|Disk Size  |Maximum available IOPS  |Maximum available throughput (MB/s)  |
+|Disk Size  |Maximum available IOPS  |Maximum available throughput (:::no-loc text="MBps":::)  |
 |---------|---------|---------|
-|1 GiB-64 TiBs    |3,000-80,000 (Increases by 500 IOPS per GiB)        |125-1,200 (increases by 0.25 MB/s per set IOPS)         |
+|1 GiB-64 TiBs    |3,000-80,000 (Increases by 500 IOPS per GiB)        |125-1,200 (increases by 0.25 :::no-loc text="MBps"::: per set IOPS)         |
 
 Unlike Premium SSD managed disks, Premium SSD v2 managed disks don't have dedicated sizes. You can set a Premium SSD v2 disk to any supported size you prefer, and make granular adjustments to the performance without downtime. Premium SSD v2 managed disks don't support host caching but, benefits significantly from lower latency which addresses some of the same core problems host caching addresses. The ability to adjust IOPS, throughput, and size at any time also means you can avoid the maintenance overhead of having to stripe disks to meet your needs.
 
@@ -56,7 +56,7 @@ You can't adjust performance without detaching these disks from their virtual ma
 
 This table has examples that illustrate the high performance of premium SSD managed disks:
 
-| Disk size name | Disk size | IOPS | Throughput (MBps) |
+| Disk size name | Disk size | IOPS | Throughput (:::no-loc text="MBps":::) |
 | --- | --- | --- | --- |
 | P4 | 32 GiB | 120 | 25 |
 | P15 | 256 GiB | 1,100 | 125 |
@@ -78,7 +78,7 @@ Standard SSDs in Azure are a cost-effective storage option for virtual machines 
 
 This table has examples that illustrate the performance characteristics of Standard SSDs in several sizes:
 
-| Disk size name | Disk size (GB) | IOPS | Throughput (MBps) |
+| Disk size name | Disk size (GB) | IOPS | Throughput (:::no-loc text="MBps":::) |
 | --- | --- | --- | --- |
 | E4 | 32 | 120 | 25 |
 | E15 | 256 | 500 | 60 |
@@ -98,7 +98,7 @@ If you choose to use Standard HDDs, data is stored on conventional magnetic disk
 
 This table illustrates the performance characteristics of standard HDDs in several sizes:
 
-| Disk size name | Disk size (GB) | IOPS | Throughput (MBps) |
+| Disk size name | Disk size (GB) | IOPS | Throughput (:::no-loc text="MBps":::) |
 | --- | --- | --- | --- |
 | S4 | 32 | 500 | 60 |
 | S15 | 256 | 500 | 60 |

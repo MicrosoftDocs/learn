@@ -6,6 +6,7 @@ metadata:
   description: What is Visual Studio and how is it different from Visual Studio code? This module will cover the main features in the Visual Studio IDE including the editor, debugger, customizations, and more!
   author: anandmeg
   ms.author: meghaanand
+  manager: jmartens
   ms.date: 12/15/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio

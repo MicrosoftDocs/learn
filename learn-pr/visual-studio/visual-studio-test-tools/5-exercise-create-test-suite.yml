@@ -7,6 +7,7 @@ metadata:
   description: Scale up your test skills with this exercise by building a test suite, filtering, and debugging. Get practice with using the red, green, refactor pattern to write code.
   author: kendrahavens
   ms.author: chnoring
+  manager: jmartens
   ms.custom: team=nextgen
   ms.date: 07/19/2021
   ms.topic: interactive-tutorial
