@@ -12,7 +12,7 @@ There are certain items that a computer *must* have and those things that most c
 
 All modern computers, in order to fit the name "computer," include at least two things: a processor and memory. We'll talk about these items in more detail in the next unit. When you think about the name "computer," the main thing it does is compute. In order to compute, it has to have a "brain" that does the thinking and somewhere to keep the facts it uses to compute. This is what the processor and memory do in computers.
 
-## The Do Haves
+## The May-Haves
 
 Most computers these days also have long-term storage (a place where the device can access data over time) and a network adapter for talking to other computers. As the parts that make up these things have gotten smaller, these additional parts can be made to fit into things as small as a light bulb.
 

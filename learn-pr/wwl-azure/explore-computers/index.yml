@@ -3,7 +3,7 @@ uid: learn.wwl.explore-computers
 metadata:
   title: Explore computers
   description: "Explore computers"
-  ms.date: 12/05/2022
+  ms.date: 12/07/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -33,7 +33,7 @@ subjects:
 - cloud-computing
 units:
 - learn.wwl.explore-computers.introduction
-- learn.wwl.explore-computers.explore-what-pc
+- learn.wwl.explore-computers.explore-what-personal-computer
 - learn.wwl.explore-computers.investigate-processor
 - learn.wwl.explore-computers.examine-random-access-memory
 - learn.wwl.explore-computers.understand-storage

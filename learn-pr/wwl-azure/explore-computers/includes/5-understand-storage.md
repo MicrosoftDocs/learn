@@ -6,7 +6,7 @@ The second type of memory is more accurately called "storage" or long-term memor
 
 For example, when you want to remember items for a grocery list, you may write it down on paper and take it with you so you "don't forget." You take something from your short-term memory (your brain) and put it on something that will last (your list) even if you lose it from your memory. You can go to sleep and pick up your grocery list in the morning and take it shopping.
 
-![Illustration of a list with 'don't forget' at the top](../media/dont-forget.svg)
+![Diagram showing a list with 'don't forget' at the top.](../media/dont-forget.svg)
 
 ## Types of Storage
 
@@ -28,6 +28,6 @@ Solid-state drives (SSD) have no moving parts. They store data on small circuits
 
 Both hard drives and solid-state drives can hold a lot of information. Some of the biggest drives can hold terabytes of data.
 
->If you printed all the data just one of these drives can store and stacked the sheets on top of each other, the stack would be taller than the tallest building in the world!
+If you printed all the data just one of these drives can store and stacked the sheets on top of each other, the stack would be taller than the tallest building in the world!
 
 These drives also connect to the computer in similar ways, so people can use one or the other without having to buy a new computer.
