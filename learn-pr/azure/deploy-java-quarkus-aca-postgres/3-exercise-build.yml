@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-java-spring-boot-app-service-mysql.3-exercise-build
-title: Exercise - Create Azure resources and a Java Spring application
+uid: learn.azure.deploy-java-quarkus-aca-postgres.3-exercise-build
+title: Exercise - Create a Quarkus application
 metadata:
-  title: Exercise - Create Azure resources and a Java Spring application
-  description: Create Azure resources and a Java Spring application.
-  ms.date: 11/16/2020
-  author: roryp
-  ms.author: ropreddy
+  title: Exercise - Create a Quarkus application
+  description: In this exercise, follow the steps to bootstrap a Quarkus application, develop it, test it, and execute it locally.
+  ms.date: 12/16/2022
+  author: agoncal
+  ms.author: antoniomanug
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
-  ms.contributors: ropreddy-11202020
+  ms.custom: team=devdiv
+  ms.contributors: antoniomanug
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-build.md)]

@@ -1,4 +1,4 @@
-In this unit, you'll configure your Spring Boot application to be deployed through Maven. Then you'll create and deploy to an Azure App Service instance.
+In this unit, you'll configure your Quarkus application to be deployed through Maven. Then you'll create and deploy to an Azure App Service instance.
 
 ## Configure the Maven plug-in
 
@@ -52,9 +52,9 @@ In your project's *pom.xml* file, change the following field.
 
 ## Deploy the app
 
-The Maven deployment plug-in creates your Azure App Service server. It copies your JAR file to the application server's */local/site/wwwroot* directory. Finally, the plug-in starts your application by using your Spring Boot JAR file's embedded HTTP server.
+The Maven deployment plug-in creates your Azure App Service server. It copies your JAR file to the application server's */local/site/wwwroot* directory. Finally, the plug-in starts your application by using your Quarkus JAR file's embedded HTTP server.
 
-Next, deploy your Spring Boot application to Azure by using the following command:
+Next, deploy your Quarkus application to Azure by using the following command:
 
 ```bash
 mvn package com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
@@ -74,14 +74,14 @@ As you redeployed your application, you cleared the database. Now you need to cr
 ```bash
 curl --header "Content-Type: application/json" \
     --request POST \
-    --data '{"description":"configuration","details":"congratulations, you have set up your Spring Boot application correctly!","done": "true"}' \
+    --data '{"description":"configuration","details":"congratulations, you have set up your Quarkus application correctly!","done": "true"}' \
     http://<appName>.azurewebsites.net
 ```
 
 This command should return the created item:
 
 ```json
-{"id":1,"description":"configuration","details":"congratulations, you have set up your Spring Boot application correctly!","done":true}
+{"id":1,"description":"configuration","details":"congratulations, you have set up your Quarkus application correctly!","done":true}
 ```
 
 Retrieve the data by using a new `cURL` request:
@@ -93,7 +93,7 @@ curl http://<appName>.azurewebsites.net
 This command returns the list of to-do items, including the item you created:
 
 ```json
-[{"id":1,"description":"configuration","details":"congratulations, you have set up your Spring Boot application correctly!","done":true}]
+[{"id":1,"description":"configuration","details":"congratulations, you have set up your Quarkus application correctly!","done":true}]
 ```
 
 > [!NOTE]

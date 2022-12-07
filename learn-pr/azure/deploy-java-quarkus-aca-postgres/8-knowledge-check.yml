@@ -1,27 +1,27 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-java-spring-boot-app-service-mysql.6-knowledge-check
+uid: learn.azure.deploy-java-quarkus-aca-postgres.8-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 11/16/2020
-  author: roryp
-  ms.author: ropreddy
+  ms.date: 12/16/2022
+  author: agoncal
+  ms.author: antoniomanug
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
-  ms.contributors: ropreddy-11202020
+  ms.custom: team=devdiv
+  ms.contributors: antoniomanug
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which service allows developers to scaffold the structure of a Spring Boot application?"
+  - content: "Which service allows developers to scaffold the structure of a Quarkus application?"
     choices:
     - content: "Maven"
       isCorrect: false
       explanation: "Maven is a build tool that allows you to configure dependencies and deploy applications."
     - content: "Spring Initializr"
       isCorrect: true
-      explanation: "Correct. Spring Initializr is a web application that generates a Spring Boot project structure for you."
+      explanation: "Correct. Spring Initializr is a web application that generates a Quarkus project structure for you."
     - content: "The Azure CLI"
       isCorrect: false
       explanation: "The Azure CLI is a command-line interface that you can use to create and manage Azure resources."

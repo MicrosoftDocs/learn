@@ -1,10 +1,10 @@
-Congratulations! You've deployed a Spring Boot web application to Azure App Service.
+Congratulations! You've deployed a Quarkus web application to Azure App Service.
 
-Your company wanted to learn how to migrate its existing Spring Boot Java web applications to Azure App Service. You followed these steps:
+Your company wanted to learn how to migrate its existing Quarkus Java web applications to Azure App Service. You followed these steps:
 
-1. Create a sample Spring Boot web application.
+1. Create a sample Quarkus web application.
 
-1. Create a MySQL database, connect your Spring Boot web application, and test it locally.
+1. Create a PostgreSQL database, connect your Quarkus web application, and test it locally.
 
 1. Verify that your application works successfully. 
 
@@ -41,4 +41,4 @@ For more information about using Azure with Java, see [Azure for Java developers
 
 For more information about comparing java options on Azure, see [Compare Java application hosting options on Azure](/azure/architecture/guide/technology-choices/service-for-java-comparison).
 
-For more information about creating MySQL servers, see [Create an Azure Database for MySQL server by using the Azure portal](/azure/mysql/quickstart-create-mysql-server-database-using-azure-portal/?WT.mc_id=java-10785-ropreddy&azure-portal=true).
+For more information about creating PostgreSQL servers, see [Create an Azure Database for MySQL server by using the Azure portal](/azure/mysql/quickstart-create-mysql-server-database-using-azure-portal/?WT.mc_id=java-10785-ropreddy&azure-portal=true).

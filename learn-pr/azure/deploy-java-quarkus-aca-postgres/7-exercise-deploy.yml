@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-java-spring-boot-app-service-mysql.5-exercise-deploy
-title: Exercise - Deploy a Spring Boot application
+uid: learn.azure.deploy-java-quarkus-aca-postgres.7-exercise-deploy
+title: Exercise - Deploy a Quarkus application to Azure Container Apps
 metadata:
-  title: Exercise - Deploy a Spring Boot application
-  description: In this exercise, follow the steps to deploy a Spring Boot application.
-  ms.date: 11/16/2020
-  author: roryp
-  ms.author: ropreddy
+  title: Exercise - Deploy a Quarkus application to Azure Container Apps
+  description: In this exercise, follow the steps to deploy a Quarkus Docker container to Azure Container Apps and connect it to the PostgreSQL database.
+  ms.date: 12/16/2022
+  author: agoncal
+  ms.author: antoniomanug
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
-  ms.contributors: ropreddy-11202020
+  ms.custom: team=devdiv
+  ms.contributors: antoniomanug
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-exercise-deploy.md)]
+  [!include[](includes/7-exercise-deploy.md)]

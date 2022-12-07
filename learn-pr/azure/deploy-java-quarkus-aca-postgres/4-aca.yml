@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-java-spring-boot-app-service-mysql.2-build
-title: Build a Spring Boot application
+uid: learn.azure.deploy-java-quarkus-aca-postgres.4-aca
+title: Set up Azure Container Apps
 metadata:
-  title: Build a Spring Boot application
-  description: Build a Spring Boot application, set up its Azure resources, and connect it to a MySQL database.
-  ms.date: 11/16/2020
-  author: roryp
-  ms.author: ropreddy
+  title: Set up Azure Container Apps
+  description: Set up the Azure Container Apps resources and the PostgreSQL database.
+  ms.date: 12/16/2022
+  author: agoncal
+  ms.author: antoniomanug
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
-  ms.contributors: ropreddy-11202020
+  ms.custom: team=devdiv
+  ms.contributors: antoniomanug
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-build.md)]
+  [!include[](includes/4-aca.md)]

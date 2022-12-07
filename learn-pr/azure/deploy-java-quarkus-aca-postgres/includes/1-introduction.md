@@ -1,14 +1,14 @@
-Imagine you're a Java developer working for a company that creates Spring Boot applications. The applications currently run on on-premises servers. Your applications also integrate with a relational database (in this case, MySQL). 
+Imagine you're a Java developer working for a company that creates Quarkus applications. The applications currently run on on-premises servers. Your applications also integrate with a relational database (in this case, PostgreSQL). 
 
-You want to build a to-do list application that uses a MySQL database. You've decided to build this Spring Boot application from scratch.
+You want to build a to-do list application that uses a PostgreSQL database. You've decided to build this Quarkus application from scratch.
 
-In this module, you'll first scaffold a Spring Boot web application by using Spring Initializr. Spring Initializr is an online tool that generates a Spring Boot project that includes just what you need to start quickly. This scaffold gives you a base to work from. 
+In this module, you'll first scaffold a Quarkus web application by using Spring Initializr. Spring Initializr is an online tool that generates a Quarkus project that includes just what you need to start quickly. This scaffold gives you a base to work from. 
 
-You'll then code a to-do application that stores tasks in a relational database. The tasks will need a MySQL database, so you'll create and host by using Azure Database for MySQL.
+You'll then code a to-do application that stores tasks in a relational database. The tasks will need a PostgreSQL database, so you'll create and host by using Azure Database for MySQL.
 
-Next you'll build the application and also configure it to connect to the MySQL database. Before you deploy, you'll confirm the application can run locally. You'll then deploy through Maven and host on Azure App Service.
+Next you'll build the application and also configure it to connect to the PostgreSQL database. Before you deploy, you'll confirm the application can run locally. You'll then deploy through Maven and host on Azure App Service.
 
-By the end of this module, you'll be able to incorporate Spring Boot applications into Azure App Service and integrate with a relational database.
+By the end of this module, you'll be able to incorporate Quarkus applications into Azure App Service and integrate with a relational database.
 
 You'll use your own Azure subscription to deploy the resources in this module. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/java/?azure-portal=true&WT.mc_id=java-10785-ropreddy) before you begin.
 > [!IMPORTANT]
@@ -18,8 +18,8 @@ You'll use your own Azure subscription to deploy the resources in this module. I
 
 By the end of this module, you'll be able to:
 
-- Develop a Spring Boot web application.
-- Connect your application to a MySQL database.
+- Develop a Quarkus web application.
+- Connect your application to a PostgreSQL database.
 - Deploy the web application to Azure App Service.
 
 ## Prerequisites
