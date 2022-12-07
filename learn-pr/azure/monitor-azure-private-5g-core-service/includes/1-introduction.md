@@ -58,7 +58,6 @@ In general, pay special attention to the following metrics:
   - The numbers of packets sent/received on the N3/N6 interfaces
   - The number of bytes sent/received on the N3/N6 interfaces
   - The distribution of packet sizes on the N3/N6 interfaces
-  - The traffic type statistics, such as TCP vs. UDP or HTTP vs. HTTPs
 - Subscriber metrics
   - Registration status
   - Connection status
