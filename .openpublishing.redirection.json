@@ -18944,6 +18944,81 @@
       "source_path": "learn-pr/wwl-sci/manage-azure-active-directory-identity-protection/8-summary-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-azure-active-directory-identity-protection/10-summary-resources",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/1a-describe-guess-access-business-to-business-accounts.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/2-describe-guess-access-business-to-business-accounts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/2-collaboration.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/3-collaboration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/3-exercise-configure-external-collaboration.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/4-exercise-configure-external-collaboration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/4-invite-external-users-individually-bulk.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/5-invite-external-users-individually-bulk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/5-exercise-add-guest-users-to-directory.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/6-exercise-add-guest-users-to-directory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/6-exercise-invite-guest-users-bulk.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/7-exercise-invite-guest-users-bulk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/7-demo-invite-guest-users-to-app.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/8-demo-invite-guest-users-to-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/8-user-accounts-azure-active-directory.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/9-user-accounts-azure-active-directory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/8a-manage-extern-users-microsoft-365-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/10-manage-extern-users-microsoft-365-workloads",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/9-exercise-explore-dynamic-groups.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/11-exercise-explore-dynamic-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/10a-implement-manager-entra-verified-id.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/12-implement-manager-entra-verified-id",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/10-configure-identity-providers.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/13-configure-identity-providers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/9a-implement-cross-tenant-access-controls.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/14-implement-cross-tenant-access-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/11-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/15-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/12-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/16-summary-resources",
+      "redirect_document_id": false
     }
   ]
 }
