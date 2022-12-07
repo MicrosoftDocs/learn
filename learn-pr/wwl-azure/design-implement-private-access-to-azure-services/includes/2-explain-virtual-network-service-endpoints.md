@@ -54,7 +54,7 @@ In the [service endpoint tutorial](/azure/virtual-network/tutorial-restrict-netw
 - Enable a service endpoint on a subnet
 - Use network rules to restrict access to Azure Storage
 - Create a virtual network service endpoint for Azure Storage
-- Verify that aceess is denied appropriately
+- Verify that access is denied appropriately
 
 :::image type="content" source="../media/exercise-task-723aea52.png" alt-text="Diagram showing data server accessing Azure storage with service endpoint" lightbox="../media/exercise-task-723aea52.png":::
 
