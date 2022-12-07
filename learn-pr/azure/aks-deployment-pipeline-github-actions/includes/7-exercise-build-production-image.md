@@ -112,7 +112,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
    Your file should look like this example:
 
-    ```yml
+    ```yaml
     name: Build and push the tagged build to production
 
     on:
@@ -132,7 +132,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
 1. Create a new step that will gather the necessary version information. You'll use the `::set-output` internal command to create this step. Add the following lines below the checkout action:
 
-    ```yml
+    ```yaml
     - name: Fetch latest version
       id: fetch_version
       run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
@@ -177,7 +177,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     Your YAML file should look like this example:
 
-    ```yml
+    ```yaml
     name: Build and push the tagged build to production
 
     on:
@@ -331,7 +331,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     To set this action, copy the snippet from this example and paste it between the `Fetch latest version` and the `Docker Login` actions.
 
-    ```yml
+    ```yaml
     - name: Set up Buildx
       uses: docker/setup-buildx-action@v1
     ```
@@ -407,12 +407,24 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
   
-1. Run `git tag -a v2.0.0 -m 'First tag'`.
+1. Run the following command:
 
-1. Run `git push --tags`.
+    ```bash
+    git tag -a v2.0.0 -m 'First tag'
+    ```
+
+1. Run the following command:
+
+    ```bash
+    git push --tags
+    ```
 
 1. When prompted, provide your GitHub username, and the PAT created previously as the password.
 
 1. Select the **Actions** tab and check the running process.
 
-1. When the process is completed, in Azure Cloud Shell, run `az acr repository show-tags --repository contoso-website --name <ACR_NAME> -o table` to confirm that two tags are listed in the results.
+1. When the process is completed, in Azure Cloud Shell, run the following command to confirm that two tags are listed in the results:
+
+    ```bash
+    az acr repository show-tags --repository contoso-website --name <ACR_NAME> -o table
+    ```
