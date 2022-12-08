@@ -1,13 +1,12 @@
 Our goal was to introduce you to Partner Center. We presented content on how to complete the following tasks:
 
-- Manage your Microsoft account and users
-- Engage with customers
-- Build relationships with other partners
-- Enroll in incentive programs
-- Manage customer subscriptions
-- Bill and get paid
-- Contact support
-- Publish or explore offers in the Microsoft commercial marketplace
+- Manage **Account settings** for you and your users
+- Download invoices and reconciliation files in the **Billing** workspace
+- Connect with your **Customers**
+- Explore **Incentives** programs offered by Microsoft
+- Get valuable **Insights** on how to grow your business
+- Discover and manage **Referrals**
+- Get **Pricing** information on the products you want to sell
 
 We explained how to navigate the Partner Center dashboard to make managing your partner relationships easier. We also explained workspaces and roles to get information that is custom tailored to your needs.
 

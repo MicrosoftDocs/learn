@@ -15,58 +15,33 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "What is Partner Center?"
     choices:
-    - content: ""
+    - content: "one of the Microsoft Cloud Partner Program membership programs"
+      isCorrect: false
+    - content: "a web-based, unified console that provides access to a wide range of partner-centric activities such as membership, benefits, and account settings, all through a graphical user interface."
       isCorrect: true
-      explanation: ""
-    - content: ""
+    - content: "a section of Action Center that displays notifications and preferences"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Partner Center is a web-based console that streamlines several business processes to make it easier for Microsoft partners to manage their relationships."
+  - content: "Partner Center provides analytics and insights to help you grow your business."
     choices:
-    - content: ""
+    - content: "True"
       isCorrect: true
-      explanation: ""
-    - content: ""
+    - content: "False"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "This is true."
+  - content: "Insights allow partners to jointly sell with Microsoft and other partners for collaborative, better-together selling, and positive customer outcomes."
     choices:
-    - content: ""
+    - content: "True"
+      isCorrect: false
+    - content: "False"
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Co-sell is the path for partners to jointly sell with Microsoft and other partners."
+  - content: "Everyone will see the same workspaces on their Partner Center dashboard."
     choices:
-    - content: ""
+    - content: "True"
       isCorrect: true
-      explanation: ""
-    - content: ""
+    - content: "False"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "The view of workspaces in your portal is based on your permissions and memberships."
