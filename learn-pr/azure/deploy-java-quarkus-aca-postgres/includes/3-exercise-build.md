@@ -24,6 +24,48 @@ mvn -U io.quarkus:quarkus-maven-plugin:2.14.3.Final:create \
 > [!NOTE]
 > By default the project is generated using Java 17. We use the `javaVersion` parameter to override the default value and use Java 11.
 
+This command creates a new Quarkus project. Despite generating a Maven directory structure (`src/main/java`), it has created some Java classes and some tests. It has also generated a `pom.xml` file with all the needed dependencies (Hibernate, RestEasy, Jackson, PostgreSQL and Docker).  
+
+```xml
+  <dependencies>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-hibernate-orm-panache</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-resteasy-jackson</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-jdbc-postgresql</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-container-image-docker</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-arc</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-resteasy</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-junit5</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+```
+
 ## Code the application
 
 Next, create a new Java class and add the following Java code to the `Todo`. It uses Java Persistence API (`javax.persistence.Entity` package) to store and retrieve data from your PostgreSQL server. It also uses [Hibernate ORM with Panache](https://quarkus.io/guides/hibernate-orm-panache) (`io.quarkus.hibernate.orm.panache.PanacheEntity` package) to simplify the persistence layer.
@@ -62,7 +104,7 @@ public class Todo extends PanacheEntity {
 }
 ```
 
-To manage that class, update the `TodoResource` that can publish REST interfaces to store and retrieve data by using HTTP. Implement a `TodoResource` class in the same package. Then add the following code:
+To manage that class, update the `TodoResource` that can publish REST interfaces to store and retrieve data by using HTTP. Update the `TodoResource` class and add the following code:
 
 ```java
 package com.example.demo;
@@ -103,17 +145,36 @@ public class TodoResource {
 
 ## Execute the application
 
-Finally, start it again by using the following command:
+To execute the application is development mode, you need Docker Desktop to be up and running. That's because Quarkus detects that you need a PostgreSQL database (thanks to the PostgreSQL dependency `quarkus-jdbc-postgresql` in the `pom.xml`), downloads the PostgreSQL Docker image, and starts a container with the database. Then, it automatically creates the `Todo` table in the database. 
+
+Start the application by using the following command:
 
 ```bash
 ./mvnw quarkus:dev 
 ```
 
-The Quarkus application should start and connect to your database.
+The Quarkus application should start and connect to your database. You should have the following output:
 
-This screenshot shows the application connecting to the database:
+```shell
+[io.qua.dat.dep.dev.DevServicesDatasourceProcessor] Dev Services for the default datasource (postgresql) started.
+[io.qua.hib.orm.dep.HibernateOrmProcessor] Setting quarkus.hibernate-orm.database.generation=drop-and-create to initialize Dev Services managed database
+__  ____  __  _____   ___  __ ____  ______ 
+ --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
+ -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
+--\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
+[org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread) SQL Warning Code: 0, SQLState: 00000
 
-![Screenshot showing the running application connecting to database.](../media/3-spring-boot-02.png)
+[org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread) table "todo" does not exist, skipping
+[org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread) SQL Warning Code: 0, SQLState: 00000
+[org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread) sequence "hibernate_sequence" does not exist, skipping
+[io.quarkus] (Quarkus Main Thread) todo 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.14.3.Final) started in 4.381s. Listening on: http://localhost:8080
+[io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+[io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, narayana-jta, resteasy, resteasy-jackson, smallrye-context-propagation, vertx]
+
+--
+Tests paused
+Press [r] to resume testing, [o] Toggle test output, [:] for the terminal, [h] for more options>
+```
 
 
 To test the application, you can use `cURL`.
@@ -123,29 +184,42 @@ First, create a new to-do item in the database:
 ```bash
 curl --header "Content-Type: application/json" \
     --request POST \
-    --data '{"description":"configuration","details":"congratulations, you have set up your Quarkus application correctly!","done": "true"}' \
-    http://127.0.0.1:8080
+    --data '{"description":"Take Quarkus MS Learn","details":"Take the MS Learn on deploying Quarkus to Azure Container Apps","done": "true"}' \
+    http://127.0.0.1:8080/api/todos
 ```
 
-This command should return the created item:
+This command should return the created item (with an identifier):
 
 ```json
-{"id":1,"description":"configuration","details":"congratulations, you have set up your Quarkus application correctly!","done":true}
+{"id":1,"description":"Take Quarkus MS Learn","details":"Take the MS Learn on deploying Quarkus to Azure Container Apps","done":true}
+```
+
+Create a second Todo with the following `cURL` command:
+
+```bash
+curl --header "Content-Type: application/json" \
+    --request POST \
+    --data '{"description":"Take Azure Container Apps MS Learn","details":"Take the ACA Learn module","done": "false"}' \
+    http://127.0.0.1:8080/api/todos
 ```
 
 Next, retrieve the data by using a new `cURL` request:
 
 ```bash
-curl http://127.0.0.1:8080
+curl http://127.0.0.1:8080/api/todos
 ```
 
 This command returns the list of to-do items, including the item you created:
 
 ```json
-[{"id":1,"description":"configuration","details":"congratulations, you have set up your Quarkus application correctly!","done":true}]
+[ {"id":1,"description":"Take Quarkus MS Learn","details":"Take the MS Learn on deploying Quarkus to Azure Container Apps","done":true},
+  {"id":2,"description":"Take Azure Container Apps MS Learn","details":"Take the ACA Learn module","done":false}
+]
 ```
 
 ## Test the application
+
+To test the application, you can use the existing `TodoResourceTest` class. It needs to test the REST endpoint and for that it uses [RESTAssured](https://rest-assured.io/). Update the `TodoResourceTest` class and add the following code:
 
 ```java
 package com.example.demo;
@@ -182,4 +256,27 @@ class TodoResourceTest {
                 .statusCode(201);
     }
 }
+```
+
+To test the application, you also need Docker Desktop to be up and running because Quarkus detects that it needs the PostgreSQL database for testing. Test the application by using the following command:
+
+```bash
+./mvnw clean test
+```
+
+You shoud have the following output:
+
+```shell
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.demo.TodoResourceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
 ```
