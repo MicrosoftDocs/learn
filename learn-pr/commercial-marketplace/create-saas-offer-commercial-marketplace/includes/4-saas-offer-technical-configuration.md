@@ -47,12 +47,13 @@ Metered billing also makes use of anomaly detection, which calls out usage level
 
 For more detailed information on anomaly detection, you can reference our [documentation on the anomaly detection service for metered billing](/azure/marketplace/partner-center-portal/anomaly-detection-service-for-metered-billing).
 
-### Code samples to help you get started
+### Other resources to help you get started
 
 To assist with development, Microsoft has published several tools to speed your development:
 
-- Client libraries for several common languages including .NET-based languages, JVM-based languages, and Python.
-
+- Client libraries for several common languages including .NET-based languages and JVM-based languages.
 - An OpenAPI specification to allow you to quickly develop in other languages supported by various OpenAPI library generators.
 
 The client libraries and OpenAPI specification are all open source. You can access them, plus other helpful content, in the [commercial marketplace samples index on GitHub](https://github.com/Azure-Samples/commercial-marketplace-samples).
+
+For more learning opportunities, check out the [Mastering SaaS offers](https://aka.ms/MasteringTheMarketplace/saas) series. These videos, sample code, and hands-on labs will help you learn more about publishing your custom SaaS offer on the Microsoft commercial marketplace.
