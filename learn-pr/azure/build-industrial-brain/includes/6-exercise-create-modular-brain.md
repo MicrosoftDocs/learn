@@ -63,11 +63,11 @@ You can see the ranges defined for each goal by clicking on the EDIT (pencil) bu
 
 Note that available goal objectives in Inkling include:
 
-- [avoid](https://docs.microsoft.com/en-gb/bonsai/inkling/keywords/goal?tabs=avoid): Avoid a defined region.
-- [drive](https://docs.microsoft.com/en-gb/bonsai/inkling/keywords/goal?tabs=drive): Get to a target as quickly as possible and stay near the target.
-- [maximize](https://docs.microsoft.com/en-gb/bonsai/inkling/keywords/goal?tabs=max): Push a target value as high as possible within a given range.
-- [minimize](https://docs.microsoft.com/en-gb/bonsai/inkling/keywords/goal?tabs=min): Push a target value as low as possible within a given range.
-- [reach](https://docs.microsoft.com/en-gb/bonsai/inkling/keywords/goal?tabs=reach): Get to a target as quickly as possible.
+- [avoid](/bonsai/inkling/keywords/goal?tabs=avoid): Avoid a defined region.
+- [drive](/bonsai/inkling/keywords/goal?tabs=drive): Get to a target as quickly as possible and stay near the target.
+- [maximize](/bonsai/inkling/keywords/goal?tabs=max): Push a target value as high as possible within a given range.
+- [minimize](/bonsai/inkling/keywords/goal?tabs=min): Push a target value as low as possible within a given range.
+- [reach](/bonsai/inkling/keywords/goal?tabs=reach): Get to a target as quickly as possible.
 
 ### Simulation
 
