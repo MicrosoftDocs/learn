@@ -8,7 +8,7 @@ Just as software can be broken apart and linked together, the hardware that make
 
 In the cloud, things work differently. Like modern programs, the functions of a computer can be isolated. The storage (the disks) can be separated from the brains or central processing unit. Even the networking function can be separate from the rest of the functions.
 
-![Diagram showing a single computer with all the components separated out.](../media/computer-exploded-view.svg)
+![Diagram showing a single computer with all the components separated out.](../media/computer-exploded-view.png)
 
 ## More Power
 
@@ -16,7 +16,7 @@ Separating these functions makes it easier to add power to specific functions wh
 
 Suppose you have a small car that does fine for driving to and from work. If you need power and storage to haul something, you may have to borrow or rent a truck. If cars worked like the cloud, you could add to the size and power of your car when you need to haul an appliance or a few yards of dirt. When you're done, you can go back to your commuter car.
 
-![Diagram showing vehicles that go from smallest at the left to largest at the right.](../media/vehicles.svg)
+![Diagram showing vehicles that go from smallest at the left to largest at the right.](../media/vehicles.png)
 
 The cloud scales resources like this but goes even further. The cloud supports autoscaling, which means it can provide more space and power on-demand, or when it's needed. It monitors the work being done (called *workloads*), and if more power or storage is needed, it adds it. When the need goes away, it scales things down.
 
