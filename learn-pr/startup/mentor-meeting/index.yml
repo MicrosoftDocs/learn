@@ -24,6 +24,7 @@ ratingEnabled: false
 levels:
 - beginner
 roles:
+- startup-founder
 - business-owner
 - business-analyst
 - functional-consultant
