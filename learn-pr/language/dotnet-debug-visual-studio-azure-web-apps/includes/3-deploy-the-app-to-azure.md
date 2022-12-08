@@ -141,7 +141,7 @@ You can create the sample app for this module using Visual Studio. The sample ap
 
     This file provides some essential configuration values for the app, including the URL of the GitHub API that is used to retrieve an organization's repositories.
 
-8. Test the app locally by pressing the run button at the top of Visual Studio. The app should load in the browser and present a form to use for search queries. For example, search **dotnet** to browse repos for that GitHub organization to get an idea of what the results should look like.
+8. Test the app locally by pressing the run button at the top of Visual Studio. The app should load in the browser and present a form to use for search queries. For example, search *dotnet* to browse repos for that GitHub organization to get an idea of what the results should look like.
 
     :::image type="content" source="../media/visual-studio-remote-debug-app.png" alt-text="A screenshot of the sample app.":::
 
@@ -196,7 +196,7 @@ Next you need to deploy the app to Azure so others can use it to browse reposito
 
 When the deployment finishes Visual Studio will launch a web browser to the home page of your app. At first, it appears that everything is working correctly.
 
-Next, enter **dotnet** again in the GitHubBrowser app's search box, and at this point you'll receive an error page instead of the table of results. This error didn't happen locally, and you can use Visual Studio to figure out why.
+Next, enter *dotnet* again in the GitHubBrowser app's search box, and at this point you'll receive an error page instead of the table of results. This error didn't happen locally, and you can use Visual Studio to figure out why.
 
 :::image type="content" source="../media/visual-studio-remote-debug-error.png" alt-text="A screenshot of the application error.":::
 

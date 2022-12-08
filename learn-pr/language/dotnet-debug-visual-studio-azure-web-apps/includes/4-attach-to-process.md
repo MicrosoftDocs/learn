@@ -29,7 +29,9 @@ Make sure you have completed the following steps in Visual Studio before debuggi
 
     :::image type="content" source="../media/visual-studio-remote-debug-attach-to-process.png" alt-text="A screenshot of the attach to process features.":::
 
-1) The `OnPost` method inside of `Index.cshtml.cs` handles most of the logic for the app. Set a breakpoint on the first line of that method.
+1) In `Index.cshtml.cs`, go to the first line of the `OnPost` method, and set a breakpoint in that method by clicking in the left margin. (Or, right-click and choose **Breakpoint** > **Insert breakpoint**.)
+
+   The `OnPost` method inside of `Index.cshtml.cs` handles most of the logic for the app.
 
 1) Optionally, you can also verify that Visual Studio has loaded the symbol files for your debugging session. Navigate to **Debug > Windows > Modules** to open the modules window. This window should indicate that the symbol files were successfully loaded for the GitHub browser `.dll` file after the **Just my code** configuration changes you made earlier.
 
@@ -39,9 +41,9 @@ Make sure you have completed the following steps in Visual Studio before debuggi
 
 Once your symbols have loaded, you can debug the Azure hosted app just like you would locally.
 
-1) With the breakpoint set in Visual Studio, enter a value of *dotnet* in the app search box and then hit submit. Visual Studio will hit the break point inside the `OnPost` method. The first time may take a moment to sync. The code will attempt to retrieve the `GitHubUrl` value using the `IConfiguration` service. By default the configuration service loads values from the `appsettings.json` file in the app.
+1) With the breakpoint set in Visual Studio, switch to the app in the browser, enter a value of *dotnet* in the app search box, and then hit **Submit**. Visual Studio will hit the break point inside the `OnPost` method. The first time may take a moment to sync. The code will attempt to retrieve the `GitHubUrl` value using the `IConfiguration` service. By default the configuration service loads values from the `appsettings.json` file in the app.
 
-1) Use the step over button on the Visual Studio debugging controls to move to the line of code that creates the `searchUrl`. Place your mouse cursor over the `githubUrl` variable above it, you'll find that the value is currently null. This code worked fine locally, so why is the value null in Azure?
+1) Use the step over button on the Visual Studio debugging controls (or press **F10**) to move to the line of code that creates the `searchUrl`. Place your mouse cursor over the `githubUrl` variable above it, you'll find that the value is currently null. This code worked fine locally, so why is the value null in Azure?
 
 1) Open the `appsettings.json` file to investigate further. Inside of this file there are a few configuration settings around logging - but no `GitHubUrl` value to be found.
 
