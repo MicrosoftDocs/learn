@@ -27,7 +27,7 @@ products:
 subjects:
   - development-tools
 prerequisites: |
-  - [Visual Studio 2022](https://visualstudio.com) with the **ASP.NET** and **Azure** development workload installed
+  - [Visual Studio 2022](https://visualstudio.com) with the **ASP.NET and web development** and the **Azure development** workload installed
 units:
 - learn.dotnet-debug-visual-studio-app-service.introduction
 - learn.dotnet-debug-visual-studio-app-service.remote-debugging-concepts
