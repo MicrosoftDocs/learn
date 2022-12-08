@@ -1,9 +1,10 @@
-## A10: Server-Side Request Forgery
+<!-- ## A10: Server-Side Request Forgery -->
 
 The third and final new entry into the Top 10 in 2021 compared with 2017 edition.
-Occur whenever a web application is fetching a remote resource without validating the user-supplied URL. It allows an attacker to coerce the application to send a crafted request to an unexpected destination
 
-The attacker can supply or modify a crafted URL, which the code running on the server will read or submit data to.By carefully selecting the URLs, the attacker may be able to read server configuration such as metadata, connect to internal services like http enabled databases or perform POST requests to an internal services which are not intended to be exposed.
+Occurs whenever a web application is fetching a remote resource without validating the user-supplied URL. It allows an attacker to coerce the application to send a crafted request to an unexpected destination
+
+Consider a crafted or modified URL supplied by the attacker. The server code will read or submit data to the URL. By carefully selecting the URLs, the attacker may be able to read server configuration such as metadata, connect to internal services like http enabled databases or perform POST requests to an internal services which are not intended to be exposed.
 Attacker may also use this functionality to import untrusted data into code that expects to only read data from trusted sources, and as such circumvent input validation.
 
 Let's consider a seemingly harmless REST web GET request:
@@ -19,7 +20,7 @@ Without validation of the supplied url the attacker can hijack the network conne
 > [!WARNING]
 > User-controlled data should not be trusted. Validate all input to  and ensure that the request is being sent to the expected destination.
 
-An only-allowed or not-allowed should be enforces (like IP addresses and host names)
+An allow-list or block-list should be enforced (like IP addresses and host names).
 
 > [!TIP]
 > Use built-in [IPAddress.TryParse](/dotnet/api/system.net.ipaddress.tryparse) or [Uri.CheckHostName](/dotnet/api/system.uri.checkhostname) methods for input and configuration validation.

@@ -1,4 +1,4 @@
-## A05: Security Misconfiguration
+<!-- ## A05: Security Misconfiguration -->
 
 With more shifts into highly configurable software, it's not surprising to see this category move up.
 The application might be vulnerable if the application is without a rigorous repeatable application security configuration process.

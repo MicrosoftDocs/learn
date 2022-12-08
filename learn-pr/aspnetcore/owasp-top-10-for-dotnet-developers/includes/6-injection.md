@@ -1,4 +1,4 @@
-## A03: Injection
+<!-- ## A03: Injection -->
 
 Happens when an application accepts data as input and processes it as instruction instead of as data​.
 

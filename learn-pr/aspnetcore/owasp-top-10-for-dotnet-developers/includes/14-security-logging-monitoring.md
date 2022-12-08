@@ -1,4 +1,4 @@
-## A09: Security Logging and Monitoring
+<!-- ## A09: Security Logging and Monitoring -->
 
 How will you detect you've been breached?
 How can you determine what steps did the attacker take to penetrate your system?

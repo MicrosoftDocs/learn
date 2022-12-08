@@ -1,4 +1,4 @@
-## A02: Cryptographic Failures
+<!-- ## A02: Cryptographic Failures -->
 
 Failures related to cryptography that often leads to sensitive data exposure or system compromise.
 .NET provides us with all the tools we need, encryption, hashing and random number generation out of the box

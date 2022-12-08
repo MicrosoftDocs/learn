@@ -1,6 +1,5 @@
 Implementing secured and high quality software  be challenging. In this module, we'll learn about  about application security from the perspective of a (.NET) developer. We’ll go through the recently updated version of OWASP TOP Ten to discover, by looking at examples, that are the most common security weaknesses and how we, app developers, can minimalize the risk of security bug infecting our systems. We’ll also introduce techniques, tools and best practices that can improve our product’s security posture.
 
-
 <!-- ![Security culture, delivery and automation cogs work better with CI, shift left and automation](../media/security-in-devops.png) -->
 # Threat landscape
 

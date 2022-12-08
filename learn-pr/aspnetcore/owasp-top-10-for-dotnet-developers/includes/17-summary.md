@@ -1,23 +1,23 @@
-The objectives of the module was to explain:
+The objectives of the module were to explain:
 
-* what OWASP as an non-profit organization goals are
-* what OWASP Top 10 is
+* learned about the threat landscape and risks involving unsecure software
+* what OWASP Top 10 is and its importance
 * how can it be used as a reference in writing more secure code.
 
-We started by explaining  the threat landscape and complexity associated with modern day application security. Going one by one through the recently updated list OWASP Top 10 equipped us in methods and techniques used by malicious actors to compromise an app and more importantly how we, as authors and maintainers of any side codebase, can improve it's security posture.
+We started by explaining the threat landscape and complexity associated with modern day application security. Going one by one through the recently updated list OWASP Top 10 equipped us in methods and techniques used by malicious actors to compromise an app. More importantly we learned how we, the authors and maintainers of any size codebase, can improve it's security posture.
 
-No matter if you are  designing a brand new green field application or contributing to large-scale open source project best security principles apply. Shift security left and conduct security requirement and design reviews, perform threat modeling, use automation to scan for vulnerabilities as you write code (with static code analysis tools) and as part of the CI/CD process. Follow compartmentalization best practices zero trust and least-privilege principles.
+No matter if you are designing a brand new green field application or contributing to large-scale open source project best security principles apply. Shift security left and conduct security requirement and design reviews, perform threat modeling, use automation to scan for vulnerabilities as you write code (with static code analysis tools) and as part of the CI/CD process. Follow compartmentalization best practices zero trust and least-privilege principles.
 
 :::row:::
     :::column:::
         :::image type="content" source="../media/attack-surface-reduction.jpg" alt-text="Microsoft Defender Threat Intelligence":::
     :::column-end:::
     :::column:::
-        Microsoft Defender product family can bring best-in-class security features to your product. Defender for DevOps provides unified DevOps security management giving the team full visibility into the security posture of pre-production application code, resource configurations across GitHub, Azure DevOps, across multi-cloud and multiple-pipeline environments. You can track threat actor activity and patterns with Microsoft Defender Threat Intelligence. Defender External Attack Surface Management can help discover unmanaged resources that could be potential entry points for an attacker
+        Microsoft Defender product family can bring best-in-class security features to your product. Defender for DevOps provides unified DevOps security management. The team can gain full visibility into the security posture of pre-production application code, resource configurations across GitHub, Azure DevOps, across multi-cloud and multiple-pipeline environments. You can track threat actor activity and patterns with Microsoft Defender Threat Intelligence. Defender External Attack Surface Management can help discover unmanaged resources that could be potential entry points for an attacker
     :::column-end:::
 :::row-end:::
 
-The developers should not only be focusing on just their own code. Single codebase monolith applications of the past may giving place to microservices and distributed applications are made up of lots of moving parts, all of which are integral to their operation. Things like open-source libraries, or external services used by developers (hosted source code repositories for example) or services your application is dependent on, like a Azure Key Vault, or the big one of course being identity (authentication and authorization).
+The developers shouldn't only be focusing on just their own code. Single codebase monolith applications of the past may giving place to microservices and distributed applications are made up of lots of moving parts, all of which are integral to their operation. Things like open-source libraries, or external services used by developers (hosted source code repositories for example) or services your application is dependent on, like an Azure Key Vault, or the major one of course being identity (authentication and authorization).
 
 :::row:::
     :::column:::
@@ -31,6 +31,18 @@ The developers should not only be focusing on just their own code. Single codeba
         :::image type="content" source="../media/dependency-graph.png" alt-text="GitHub Advanced Security":::
     :::column-end:::
 :::row-end:::
+
+Remember the Zero Trust principles and apply them in your apps in systems:
+
+-**Verify explicitly.** Always authenticate and authorize based on all available data points, including user, application and device identity, location etc.
+
+-**User least privilege access.** Limit user, application, and device access with granular permissions, role assignments, just-in-time and just-enough-access (JIT/JEA).
+
+-**Assume breach.** Mentality help minimize the blast radius for breaches and prevent lateral movement.Enable swift replacement and rotation of credentials. Keep sessions, network access, and data encrypted end to end. Build and test durable and repeatable backup and restore processes. Avoid insecure legacy authentication and authorization protocols.
+
+We already broke out of silo-ed approach with bringing developers and operations together with DevOps. It's about time to make security experts and champions part of our team to ensure best security practices.
+
+Security code reviews, automation of security checks with SAST, DAST and SCA, and threat modeling can identify most of the OWASP Top 10 items.
 
 Security is a journey, not a destination. With the right mindset, you can improve the quality and security standpoint of an application before you’ve even written a single line of code - by thinking about the design; think about what files you include in the project; the choices you make about libraries you use; how you handle security and authorization; where you store and build your code; how you deploy the application.
 
