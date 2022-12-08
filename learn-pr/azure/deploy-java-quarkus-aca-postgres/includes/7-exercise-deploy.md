@@ -1,8 +1,36 @@
 In this unit, you'll configure your Quarkus application to be deployed through Maven. Then you'll create and deploy to an Azure Container Apps instance.
 
 
+## Containerize the Quarkus application 
+
+Rename `Dockerfile.jvm` to `Dockerfile` and move it to the root folder.
+This image is a native image that is optimized for running in a container. 
+
+```bash
+mv src/main/docker/Dockerfile.jvm ./Dockerfile
+```
 
 
+```dockerfile
+FROM registry.access.redhat.com/ubi8/openjdk-11:1.14
+
+ENV LANGUAGE='en_US:en'
+
+
+# We make four distinct layers so if there are application changes the library layers can be re-used
+COPY --chown=185 target/quarkus-app/lib/ /deployments/lib/
+COPY --chown=185 target/quarkus-app/*.jar /deployments/
+COPY --chown=185 target/quarkus-app/app/ /deployments/app/
+COPY --chown=185 target/quarkus-app/quarkus/ /deployments/quarkus/
+
+EXPOSE 8080
+USER 185
+ENV AB_JOLOKIA_OFF=""
+ENV JAVA_OPTS="-Dquarkus.http.host=0.0.0.0 -Djava.util.logging.manager=org.jboss.logmanager.LogManager"
+ENV JAVA_APP_JAR="/deployments/quarkus-run.jar"
+```
+
+## Deploy the container to Azure Container App
 
 
 ```bash
@@ -21,118 +49,25 @@ Creating ContainerAppEnvironment 'cae-azure-deploy-quarkus' in resource group rg
 No Log Analytics workspace provided.
 Generating a Log Analytics workspace with name "workspace-rgazuredeployquarkusEED7"
 Creating Azure Container Registry ca001ad52ae7acr in resource group rg-azure-deploy-quarkus
+
+Run ID: ca3 was successful after 41s
+Creating Containerapp ca-azure-deploy-quarkus in resource group rg-azure-deploy-quarkus
+Adding registry password as a secret with name "ca001ad52ae7acrazurecrio-ca001ad52ae7acr"
+
+Your container app ca-azure-deploy-quarkus has been created and deployed! Congrats! 
 ```
 
-> [!NOTE]
-> This module uses the `jq` tool, which is installed by default on [Azure Cloud Shell](https://shell.azure.com/) to display JSON data and make it more readable.
->
-> If you don't want to use the `jq` tool, you can safely remove the `| jq` part of all commands in this module.
+## Check the deployment
 
-### Configure a firewall rule for your PostgreSQL server
-
-Azure Database for PostgreSQL is secured by default. Its firewall allows no incoming connections. So add a firewall rule to allow the local IP address to access the database server.
-
-Run the following command to open the server's firewall:
-
-```bash
-az mysql server firewall-rule create \
-    --resource-group $AZ_RESOURCE_GROUP \
-    --name $AZ_DATABASE_NAME-database-allow-local-ip \
-    --server-name $AZ_DATABASE_NAME \
-    --start-ip-address $AZ_LOCAL_IP_ADDRESS \
-    --end-ip-address $AZ_LOCAL_IP_ADDRESS \
-    | jq
-```
-
-Run the following command to allow firewall access from Azure resources:
-
-```bash
-az mysql server firewall-rule create \
-    --resource-group $AZ_RESOURCE_GROUP \
-    --name allAzureIPs \
-    --server-name $AZ_DATABASE_NAME \
-    --start-ip-address 0.0.0.0 --end-ip-address 0.0.0.0 \
-    | jq
-```
-
-### Configure a PostgreSQL database
-
-The PostgreSQL server that you created earlier is empty. It has no database that you can use with the Quarkus application. Create a new database called `demo`:
-
-```bash
-az mysql db create \
-    --resource-group $AZ_RESOURCE_GROUP \
-    --name demo \
-    --server-name $AZ_DATABASE_NAME \
-    | jq
-```
+![Screenshot showing the deployed application.](../media/azure-portal.png)
 
 
+Stream logs for your container with: az containerapp logs show -n ca-azure-deploy-quarkus -g rg-azure-deploy-quarkus
 
-## Configure the Maven plug-in
-
-The deployment process to Azure Container Apps automatically uses your Azure credentials from the Azure CLI.
-
-Run the following Maven command to configure the deployment. This command helps you set up the App Service operating system, Azure subscription, and Java version.
-
-```bash
-mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
-```
-
-1. When you're prompted with the **Subscription** option, select a subscription by entering the appropriate number at the beginning of the line.
-1. When you're prompted with the **Web App** option, accept the default option `<create>` by pressing Enter.
-1. When you're prompted with the **OS** option, select `linux` by pressing Enter.
-1. Choose the default Java version, 1.8, by pressing Enter.
-1. At the last prompt, press Enter to confirm your selections.
-
-    ```bash
-    Please confirm webapp properties
-    AppName : demo-1604579125693
-    ResourceGroup : demo-1604579125693-rg
-    Region : eastus
-    PricingTier : PremiumV2_P1v2
-    OS : Linux
-    Java : Java 8
-    Web server stack: Java SE
-    Deploy to slot : false
-    Confirm (Y/N) [Y]: Y
-    [INFO] Saving configuration to pom.
-    [INFO] ------------------------------------------------------------------------
-    [INFO] BUILD SUCCESS
-    [INFO] ------------------------------------------------------------------------
-    [INFO] Total time:  28.781 s
-    [INFO] Finished at: 2020-11-05T14:30:00+02:00
-    [INFO] ------------------------------------------------------------------------
-    ```
+See full output using: az containerapp show -n ca-azure-deploy-quarkus -g rg-azure-deploy-quarkus --query "properties.configuration.ingress.fqdn"
 
 
-> [!IMPORTANT]
-> The default value for the region is `westeurope`. For the best performance, change the value to `eastus` because your database is located in this region.
-
-In your project's *pom.xml* file, change the following field.
-
-```xml
-    <configuration>
-        ...
-        <region>eastus</region>
-        ...
-    </configuration>
-```
-
-## Deploy the app
-
-The Maven deployment plug-in creates your Azure Container Apps server. It copies your JAR file to the application server's */local/site/wwwroot* directory. Finally, the plug-in starts your application by using your Quarkus JAR file's embedded HTTP server.
-
-Next, deploy your Quarkus application to Azure by using the following command:
-
-```bash
-mvn package com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
-```
-This screenshot shows the application deployed to Azure Container Apps:
-
-![Screenshot showing the deployed application.](../media/5-spring-boot-01.png)
-
-## Test the Azure Container Apps application
+## Execute the Azure Container Apps application
 
 When the deployment finishes, your application is ready at `http://<appName>.azurewebsites.net/`. 
 
