@@ -50,7 +50,7 @@ The total IOPS that VM will return to the application will be 12,300 as a sum of
 
 This scenario is known as *disk I/O capping*, when the disk itself can't meet the application demands.
 
-:::image type="content" source="../media/virtual-machine-input-output-capping.png" alt-text="Diagram that depicts disk input output capping.":::
+:::image type="content" source="../media/disk-input-output-capping.png" alt-text="Diagram that depicts disk input output capping.":::
 
 To diagnose disk I/O capping, use the following metrics:
 
