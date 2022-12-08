@@ -2,7 +2,7 @@ Scientist Arthur C. Clark once said, "Any sufficiently advanced technology is in
 
 While the things modern computers can do are magical, you can understand a bit how they actually work. Really, how computers work is rather simple. The magic in computer systems comes from doing something simple quickly and many, many times. So when you turn on that cell phone or talk to your Alexa or Siri or Google, what's going on?
 
-![Diagram showing repeated 1s and 0s.](../media/ones-zeros.svg)
+![Diagram showing repeated 1s and 0s.](../media/ones-zeros.png)
 
 ## Did You Turn It Off and On?
 

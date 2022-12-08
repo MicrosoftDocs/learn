@@ -8,7 +8,7 @@ All those computers need something like a name that no other computers share. Th
 
 Every computer on the internet has an ID that is different than all other devices on the internet. This ID is called a *MAC address* (MAC stands for "media access control"). It's like having a name that no one else shares or could share.
 
-![Diagram showing a mac address.](../media/mac-address.svg)
+![Diagram showing a mac address.](../media/mac-address.png)
 
 Okay, so there are lots of computers with unique IDs on the internet. Let's talk about how they all talk to each other.
 
@@ -18,7 +18,7 @@ Networks are groups of computers. You can have a huge group like the internet. T
 
 The following image shows the relationship between the internet and smaller subnets.
 
-![Diagram showing internet and subnets.](../media/person-diagram.svg)
+![Diagram showing internet and subnets.](../media/person-diagram.png)
 
 Think of it like groupings of people. You have a family that forms a group that is a part of a larger group, say your town. Your town is a part of a larger group, say your city or region. Sometimes when something needs to be communicated, the state may send a message to your town's officials who then spread the word to your family and it finally gets to you. Networks and subnets work similarly.
 
