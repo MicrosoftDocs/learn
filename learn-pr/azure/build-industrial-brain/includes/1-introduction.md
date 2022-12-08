@@ -1,6 +1,6 @@
 Suppose you're the head of the chemical engineering team at the chemical manufacturing company and manage the process of chemical reactions to be used in several applications, including chemical production, food and beverage manufacturing. 
 
-You use a Continuous Stirred Tank Reactor (CSTR) (Figure 1), which is essentially a tank that has a stirring apparatus to continuously mix reactants inside. The inlet to the reactor has a specific concentration. This fluid reacts exothermically, and the output concentration will depend on the temperature of a cooling fluid that keeps the concentration steady.
+You use a Continuous Stirred Tank Reactor (CSTR), which is essentially a tank that has a stirring apparatus to continuously mix reactants inside. The inlet to the reactor has a specific concentration. This fluid reacts exothermically, and the output concentration will depend on the temperature of a cooling fluid that keeps the concentration steady.
 
 The reactor operates continuously, so during steady-state operation, you continuously feed the reacting fluid as an inlet while extracting the resulting reacting fluid at a similar or lower concentration with a fixed conversion rate.
 
