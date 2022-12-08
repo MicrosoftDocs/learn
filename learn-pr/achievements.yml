@@ -1382,3 +1382,28 @@ achievements:
   title: Utilize Azure for SAP workloads reference architecture
   summary: In this module, you will review the Azure infrastructure options for hosting SAP NetWeaver and S/4HANA systems in Azure. You will examine the differences between the offerings of traditional outsourcers and IaaS offerings.
   iconUrl: /training/achievements/utilizing-azure-sap-workloads-reference-architecture.svg
+- uid: learn.create-voice-activated-webxr-app-with-babylonjs.badge
+  type: badge
+  title: Create and deploy a voice activated WebXR app with Babylon.js and Azure Cognitive Services
+  summary: Create a voice activated WebXR app using Babylon.js and the Azure Speech-to-text API under Azure Cognitive Services, and then deploy the app using Azure Blob Storage.
+  iconUrl: /training/achievements/create-voice-activated-webxr-app-with-babylonjs.svg
+- uid: learn.azure.intro-to-custom-commands.badge
+  type: badge
+  title: Introduction to Custom Commands
+  summary: Custom Commands makes it easy to build voice commanding apps optimized for voice-first interaction experiences. It provides a straightforward authoring and hosting experience on a single interface, helping you to focus on building the best solution for your voice-commanding scenarios.
+  iconUrl: /training/achievements/intro-to-custom-commands.svg
+- uid: learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.badge
+  type: badge
+  title: Create a speech translator application with Unity and Azure Cognitive Services.
+  summary: Create a speech translator application for your mixed reality device (Windows Mixed Reality, HoloLens 2, etc.) by using Cognitive Services.
+  iconUrl: /training/achievements/language-translator-mixed-reality.svg
+- uid: learn.azure.intro-to-speech-to-text.badge
+  type: badge
+  title: Introduction to Speech-to-text
+  summary: Speech-to-text enables the real-time transcription of audio streams into text.
+  iconUrl: /training/achievements/intro-to-speech-to-text.svg
+- uid: learn.azure.intro-to-text-to-speech.badge
+  type: badge
+  title: Introduction to Text-to-speech
+  summary: Text-to-speech converts text into human-like speech, along with the ability to create a unique, custom voice to use in your applications.
+  iconUrl: /training/achievements/intro-to-text-to-speech.svg

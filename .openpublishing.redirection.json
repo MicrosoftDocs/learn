@@ -19044,6 +19044,226 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-app-services/14-summary-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/configure-azure-app-services/13-summary-resources",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/2-overview-speech-translation.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/3-exercise-create-azure-speech-resource.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/4-capabilities-configuration-profile.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/5-exercise-capabilities-configuration-profile.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/6-speech-translation-script.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/7-exercise-create-speech-translation-script.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/2-overview-azure-speech-to-text.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/3-exercise-create-azure-speech-resource.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/4-speech-to-text-javascript-sdk.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/5-exercise-call-speech-to-text-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/6-webxr-support-in-babylonjs.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/7-exercise-enable-webxr-babylonjs-project.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/8-static-website-hosting-with-azure-blob-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/9-exercise-deploy-babylonjs-project-to-public-web.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-custom-commands/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-custom-commands/2-what-is-custom-commands.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-custom-commands/3-how-custom-commands-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-custom-commands/4-when-to-use-custom-commands.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-custom-commands/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-custom-commands/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-custom-commands/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-speech-to-text/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-speech-to-text/2-what-is-speech-to-text.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-speech-to-text/3-how-speech-to-text-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-speech-to-text/4-when-to-use-speech-to-text.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-speech-to-text/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-speech-to-text/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-speech-to-text/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-text-to-speech/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-text-to-speech-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-text-to-speech/2-what-is-text-to-speech.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-text-to-speech-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-text-to-speech/3-how-text-to-speech-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-text-to-speech-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-text-to-speech/4-when-to-use-text-to-speech.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-text-to-speech-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-text-to-speech/5-use-text-to-speech.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-text-to-speech-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-text-to-speech/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-text-to-speech-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-text-to-speech/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-text-to-speech-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-text-to-speech/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-text-to-speech-app/",
+      "redirect_document_id": false
     }
   ]
 }
