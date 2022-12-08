@@ -2,9 +2,9 @@
 uid: learn.create-azure-active-directory-test-environment.introduction
 title: Introduction
 metadata:
-  title: Setup an Azure Active Directory test environment for application testing
-  description: Setup an Azure Active Directory test environment for application testing in Azure. Evaluate whether you need a dedicated test tenant for your application test environment or if you can use an existing production tenant.
-  ms.date: 12/07/2022
+  title: Set up an Azure Active Directory test environment for application testing
+  description: Set up an Azure Active Directory test environment for application testing in Azure. Evaluate whether you need a dedicated test tenant for your application test environment or if you can use an existing production tenant.
+  ms.date: 12/08/2022
   author: rwike77
   ms.author: ryanwi
   ms.topic: interactive-tutorial
