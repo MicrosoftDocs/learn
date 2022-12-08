@@ -1,4 +1,4 @@
-Azure Architects are interested in solutions that make it easier to deploy and manage their web applications.
+Azure Architects are interested in solutions that make it easier to deploy and manage their web, mobile, and API applications.
 
 Suppose you're building a website for a new business, or running an existing web app on an aging on-premises server. Setting up a new server can be challenging. You need appropriate hardware, and likely a server-level operating system. You also need a web hosting stack.
 
