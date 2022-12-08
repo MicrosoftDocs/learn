@@ -2,9 +2,10 @@
 author: davidsmatlak
 ms.prod: learning-azure
 ms.topic: include
-ms.date: 04/20/2022
+ms.date: 11/09/2022
 ms.author: davidsmatlak
 ---
+
 1. In the **Terminal** menu, select **New Terminal**. The terminal window usually opens in the lower half of your screen.
 
 1. If the shell shown on the right side of the terminal window is **bash**, the correct shell is open and you can skip to the next section.
@@ -19,7 +20,7 @@ ms.author: davidsmatlak
 
    :::image type="content" source="media/select-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the bash terminal selected.":::
 
-1. In the terminal, go to the directory where you saved your template. For example, if you saved your template to the *templates* folder, you can use this command:
+1. In the terminal, go to the directory where you saved your template. For example, if you saved your template to the _templates_ folder, you can use this command:
 
     ```azurecli
     cd templates

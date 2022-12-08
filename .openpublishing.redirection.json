@@ -6361,6 +6361,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/2-bot-composer.yml",
+      "redirect_url": "/training/modules/create-bot-with-bot-framework-composer/3-bot-composer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/3-dialogs.yml",
+      "redirect_url": "/training/modules/create-bot-with-bot-framework-composer/4-dialogs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/4-adaptive-flow.yml",
+      "redirect_url": "/training/modules/create-bot-with-bot-framework-composer/5-adaptive-flow",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/2-introduce-principles-bot-design.md",
       "redirect_url": "/training/modules/design-bot-conversation-flow/2-bot-design-principles",
       "redirect_document_id": true
@@ -17991,16 +18006,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-azure/configure-azure-app-services/12-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/configure-azure-app-services/13-knowledge-check",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/configure-azure-app-services/13-summary-resources.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/configure-azure-app-services/14-summary-resources",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/wwl-azure/configure-azure-policy/9-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/configure-azure-policy/10-knowledge-check",
       "redirect_document_id": false
@@ -18316,8 +18321,37 @@
       "redirect_document_id": false
     },
     {
-
-       "source_path": "learn-pr/wwl-azure/design-network-solutions/4-design-for-azure-network-connectivity-services.md",
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/includes/7-plan-upcoming-sprint.md",
+      "redirect_url": "/training/modules/create-release-pipeline/7-clean-up-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/includes/8-clean-up-environment.md",
+      "redirect_url": "/training/modules/create-release-pipeline/7-clean-up-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/includes/9-summary.md",
+      "redirect_url": "/training/modules/create-release-pipeline/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/7-plan-upcoming-sprint.yml",
+      "redirect_url": "/training/modules/create-release-pipeline/7-clean-up-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/8-clean-up-environment.yml",
+      "redirect_url": "/training/modules/create-release-pipeline/7-clean-up-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/9-summary.yml",
+      "redirect_url": "/training/modules/create-release-pipeline/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-network-solutions/4-design-for-azure-network-connectivity-services.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-network-solutions/4a-design-patterns-for-azure-network-connectivity-services",
       "redirect_document_id": false
     },
@@ -18379,6 +18413,856 @@
     {
       "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/8-bring-it-together.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/8-bring-it-all-together",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-vm-based-sap-solutions/index.md",
+      "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-vm-based-sap-solutions/6-configure-azure-enhanced-monitor-extension-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-vm-based-sap-solutions/2-define-azure-vm-deployment-methodologies-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-vm-based-sap-solutions/3-define-single-instance-implementations-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-vm-based-sap-solutions/7-implement-ad-azure-ad-based-authentication-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-vm-based-sap-solutions/5-implement-high-availability-sap-hana-azure-vms.md",
+      "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-vm-based-sap-solutions/4-implement-high-availability-sap-netweaver-with-anydb-azure-vms.md",
+      "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-vm-based-sap-solutions/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-vm-based-sap-solutions/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-vm-based-sap-solutions/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/maintain-azure-sap-workloads/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/maintain-azure-sap-workloads/5-configure-updates.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/maintain-azure-sap-workloads/7-define-disaster-recovery.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/maintain-azure-sap-workloads/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/maintain-azure-sap-workloads/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/maintain-azure-sap-workloads/4-networking-changes.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/maintain-azure-sap-workloads/3-perform-backup-restore.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/maintain-azure-sap-workloads/2-set-up-remote-management.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/maintain-azure-sap-workloads/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/maintain-azure-sap-workloads/6-vertical-horizontal-scaling.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/migrate-sap-workloads-azure/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/migrate-sap-workloads-azure/4-configure-cloud-migration-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/migrate-sap-workloads-azure/3-define-database-migration-option-methodologies.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/migrate-sap-workloads-azure/5-implement-large-database-migration-azure.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/migrate-sap-workloads-azure/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/migrate-sap-workloads-azure/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/migrate-sap-workloads-azure/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/migrate-sap-workloads-azure/2-understand-migration-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/running-azure-sap-workloads/index.md",
+      "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-sap-certified-offerings/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/deploy-sap-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-sap-certified-offerings/3-deployment-options-sap-solutions.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/deploy-sap-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-sap-certified-offerings/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/deploy-sap-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-sap-certified-offerings/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/deploy-sap-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-sap-certified-offerings/5-os-support-azure-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/deploy-sap-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-sap-certified-offerings/2-prerequisites-sap-workloads-public-cloud.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/deploy-sap-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-sap-certified-offerings/4-sap-product-support.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/deploy-sap-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-sap-certified-offerings/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/deploy-sap-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-azure-sap-workloads/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-sap-workloads/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-azure-sap-workloads/2-azure-compute-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-sap-workloads/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-azure-sap-workloads/5-azure-large-instances-sap-hana.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-sap-workloads/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-azure-sap-workloads/4-azure-networking-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-sap-workloads/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-azure-sap-workloads/3-azure-storage-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-sap-workloads/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-azure-sap-workloads/6-identity-services-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-sap-workloads/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-azure-sap-workloads/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-sap-workloads/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-azure-sap-workloads/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-sap-workloads/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-azure-sap-workloads/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-sap-workloads/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/sap-certified-offerings/index.md",
+      "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sap-hana-azure-compute-network-storage/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sap-hana-azure-compute-network-storage/8-connect-hana-large-instances-multiple-azure-regions.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sap-hana-azure-compute-network-storage/5-expressroute-fast-path.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sap-hana-azure-compute-network-storage/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sap-hana-azure-compute-network-storage/10-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sap-hana-azure-compute-network-storage/2-workloads-azure-large-instances-compute-considerations.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sap-hana-azure-compute-network-storage/4-workloads-azure-large-instances-networking-considerations.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sap-hana-azure-compute-network-storage/7-workloads-azure-large-instances-routing-considerations.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sap-hana-azure-compute-network-storage/3-workloads-azure-large-instances-storage-considerations.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sap-hana-azure-compute-network-storage/6-single-multiple-sap-systems.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sap-hana-azure-compute-network-storage/11-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sap-hana-azure-compute-network-storage/9-supported-scenarios.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/using-iaas-support-azure-sap-workloads/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/using-iaas-support-azure-sap-workloads/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/using-iaas-support-azure-sap-workloads/4-database-support-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/using-iaas-support-azure-sap-workloads/5-high-availability-disaster-recovery-support-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/using-iaas-support-azure-sap-workloads/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/using-iaas-support-azure-sap-workloads/7-licensing-pricing-support-sap-azure.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/using-iaas-support-azure-sap-workloads/6-monitoring-requirements-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/using-iaas-support-azure-sap-workloads/3-networking-support-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/using-iaas-support-azure-sap-workloads/2-storage-support-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/using-iaas-support-azure-sap-workloads/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-foundations-of-iaas/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/plan-azure-sap-workloads/index.md",
+      "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-implement-sap-solutions/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-sap-workload-planning-deployment-checklist/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-implement-sap-solutions/7-azure-vm-authentication-access-control-considerations-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-sap-workload-planning-deployment-checklist/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-implement-sap-solutions/4-azure-vm-backup-considerations-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-sap-workload-planning-deployment-checklist/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-implement-sap-solutions/2-azure-vm-compute-network-storage-considerations-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-sap-workload-planning-deployment-checklist/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-implement-sap-solutions/3-azure-vm-high-availability-disaster-recovery-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-sap-workload-planning-deployment-checklist/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-implement-sap-solutions/5-azure-vm-monitor-considerations-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-sap-workload-planning-deployment-checklist/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-implement-sap-solutions/6-azure-vm-security-considerations-sap-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-sap-workload-planning-deployment-checklist/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-implement-sap-solutions/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-sap-workload-planning-deployment-checklist/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-implement-sap-solutions/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-sap-workload-planning-deployment-checklist/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-implement-sap-solutions/8-sap-hana-azure-large-instances-compute-network-storage.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-sap-workload-planning-deployment-checklist/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-implement-sap-solutions/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-sap-workload-planning-deployment-checklist/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/prepare-migrate-sap-workloads/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/prepare-migrate-sap-workloads/3-create-checklist-plan-deployment.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/prepare-migrate-sap-workloads/7-go-live-phase.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/prepare-migrate-sap-workloads/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/prepare-migrate-sap-workloads/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/prepare-migrate-sap-workloads/5-nonproduction-phase.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/prepare-migrate-sap-workloads/4-pilot-phase.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/prepare-migrate-sap-workloads/8-post-production-phase.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/prepare-migrate-sap-workloads/6-production-preparation-phase.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/prepare-migrate-sap-workloads/2-strategies-migrate.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/prepare-migrate-sap-workloads/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/2-configure-sap-netweaver-anydb-azure-vms.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/4-configure-sap-s4-hana-azure-vms.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/7-sap-azurehana-large-instance-architecture.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/8-sap-azure-hana-large-instance-sample-workflow.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/5-sap-hana-azure-sample-workflow.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/3-sap-netweaver-azure-sample-workflow.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/utilize-azure-sap-workloads-reference-architecture/6-utilize-sap-hana-azure-large-instances.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/ensure-business-continuity-implement-disaster-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-azure-active-directory-identity-protection/6a-implement-security-workload-identities.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-azure-active-directory-identity-protection/7-implement-security-workload-identities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-azure-active-directory-identity-protection/6b-explore-microsoft-defender-identity.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-azure-active-directory-identity-protection/8-explore-microsoft-defender-identity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-azure-active-directory-identity-protection/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-azure-active-directory-identity-protection/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-azure-active-directory-identity-protection/8-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-azure-active-directory-identity-protection/10-summary-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/1a-describe-guess-access-business-to-business-accounts.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/2-describe-guest-access-business-to-business-accounts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/2-collaboration.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/3-collaboration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/3-exercise-configure-external-collaboration.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/4-exercise-configure-external-collaboration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/4-invite-external-users-individually-bulk.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/5-invite-external-users-individually-bulk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/5-exercise-add-guest-users-to-directory.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/6-exercise-add-guest-users-to-directory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/6-exercise-invite-guest-users-bulk.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/7-exercise-invite-guest-users-bulk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/7-demo-invite-guest-users-to-app.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/8-demo-invite-guest-users-to-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/8-user-accounts-azure-active-directory.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/9-user-accounts-azure-active-directory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/8a-manage-extern-users-microsoft-365-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/10-manage-external-users-microsoft-365-workloads",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/9-exercise-explore-dynamic-groups.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/11-exercise-explore-dynamic-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/10a-implement-manager-entra-verified-id.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/12-implement-manager-entra-verified-id",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/10-configure-identity-providers.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/13-configure-identity-providers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/9a-implement-cross-tenant-access-controls.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/14-implement-cross-tenant-access-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/11-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/15-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-manage-external-identities/12-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-manage-external-identities/16-summary-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-app-services/11-exercise-implement-web-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-azure-app-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-app-services/12-simulation-web-apps.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-azure-app-services/11-simulation-web-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-app-services/13-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-azure-app-services/12-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-app-services/14-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-azure-app-services/13-summary-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/2-overview-speech-translation.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/3-exercise-create-azure-speech-resource.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/4-capabilities-configuration-profile.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/5-exercise-capabilities-configuration-profile.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/6-speech-translation-script.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/7-exercise-create-speech-translation-script.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/2-overview-azure-speech-to-text.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/3-exercise-create-azure-speech-resource.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/4-speech-to-text-javascript-sdk.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/5-exercise-call-speech-to-text-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/6-webxr-support-in-babylonjs.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/7-exercise-enable-webxr-babylonjs-project.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/8-static-website-hosting-with-azure-blob-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/9-exercise-deploy-babylonjs-project-to-public-web.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-voice-activated-webxr-app-with-babylonjs/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-custom-commands/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-custom-commands/2-what-is-custom-commands.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-custom-commands/3-how-custom-commands-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-custom-commands/4-when-to-use-custom-commands.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-custom-commands/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-custom-commands/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-custom-commands/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-speech-to-text/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-speech-to-text/2-what-is-speech-to-text.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-speech-to-text/3-how-speech-to-text-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-speech-to-text/4-when-to-use-speech-to-text.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-speech-to-text/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-speech-to-text/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-speech-to-text/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-speech-to-text-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-text-to-speech/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-text-to-speech-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-text-to-speech/2-what-is-text-to-speech.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-text-to-speech-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-text-to-speech/3-how-text-to-speech-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-text-to-speech-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-text-to-speech/4-when-to-use-text-to-speech.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-text-to-speech-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-text-to-speech/5-use-text-to-speech.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-text-to-speech-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-text-to-speech/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-text-to-speech-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-text-to-speech/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-text-to-speech-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-text-to-speech/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-text-to-speech-app/",
       "redirect_document_id": false
     }
   ]

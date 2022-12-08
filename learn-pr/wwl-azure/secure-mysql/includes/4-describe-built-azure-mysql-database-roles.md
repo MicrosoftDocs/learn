@@ -49,3 +49,6 @@ TO 'new_master_user'@'%' WITH GRANT OPTION;
 
 FLUSH PRIVILEGES;
 ```
+
+> [!NOTE]
+> This article contains references to the term *slave*, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.

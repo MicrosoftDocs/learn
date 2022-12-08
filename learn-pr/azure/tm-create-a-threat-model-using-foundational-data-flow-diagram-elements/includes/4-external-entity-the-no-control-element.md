@@ -1,4 +1,4 @@
-![External Entity Element.](../media/external-entity.png)
+![Rendering of a square representing the External Entity Element.](../media/external-entity.png)
 
 Depicted by a square, an external entity can be a process, data store, or even a full-fledged system outside of your direct control.
 
@@ -11,7 +11,7 @@ Examples include:
 ## When to use the external entity element
 
 - To represent what you can't directly modify
-- Data stores and external entities start the data-flow, so verify you have either one in place
+- Data stores and external entities start the data flow, so verify you have either one in place
 
 ## Include context
 
