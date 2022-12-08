@@ -141,7 +141,7 @@ You can create the sample app for this module using Visual Studio. The sample ap
 
     This file provides some essential configuration values for the app, including the URL of the GitHub API that is used to retrieve an organization's repositories.
 
-8) Test the app locally by pressing the run button at the top of Visual Studio. The app should load in the browser and present a form to use for search queries. For example, search *dotnet* to browse repos for that GitHub organization to get an idea of what the results should look like.
+8) Test the app locally by pressing the run button at the top of Visual Studio. The app should load in the browser and present a form to use for search queries. For example, search **dotnet** to browse repos for that GitHub organization to get an idea of what the results should look like.
 
     :::image type="content" source="../media/visual-studio-remote-debug-app.png" alt-text="A screenshot of the sample app.":::
 
@@ -150,7 +150,7 @@ You can create the sample app for this module using Visual Studio. The sample ap
 Next you need to deploy the app to Azure so others can use it to browse repositories. You can deploy the app using Visual Studio and the steps below.
 
 > [!NOTE]
-> If you are using the Learn sandbox, you may need to log out and log in again inside of Visual Studio for your subscription information to refresh. You can manage your account by clicking on the name icon in the upper right of Visual Studio. Make sure you are logged into the account you used to create the sandbox.
+> If you are using the Learn sandbox, you may need to log out and log in again inside of Visual Studio for your subscription information to refresh. You can manage your account by clicking on the name icon in the upper right of Visual Studio, choose **Account settings**, and then choose **sign out / sign in**. Make sure you are logged into the same account you used to create the sandbox.
 
 :::image type="content" source="../media/visual-studio-remote-account.png" alt-text="A screenshot of the account settings icon.":::
 
@@ -164,14 +164,17 @@ Next you need to deploy the app to Azure so others can use it to browse reposito
 
 4) For the **App Service** step, make sure you're signed into the correct Azure Account in the upper right of the dialog.  and then select the subscription you would like to deploy to. 
 
-5) Next, create a new app service instance by selecting the green **+** icon. In the new app service dialog, enter the following values:
+5) Next, create a new app service instance by selecting the green **+ Create new** icon. In the new app service dialog, enter the following values:
+
+   >[NOTE!]
+   > For the sandbox environment, wait until the subscription and other values become available in the dialog. This may take a little time. Remember, you may need to sign out of Visual Studio and sign in to make the sandbox subscription available, as described previously.
 
     | Setting | Value  |
     | --- | --- |
     | **Name** |  Enter `GitHubBrowser123`, where `123` are three random numbers of your choosing to ensure your App Service name and domain is unique across Azure. |
-    | **Subscription name** | If you are using the Learn sandbox environment, select the `Concierge Subscription`, otherwise select your own. Remember, you may need to log out and in again if you don't see the sandbox subscription as an option. |
+    | **Subscription name** | If you are using the Learn sandbox environment, select the `Concierge Subscription`, otherwise select your own. |
     | **Resource group** | Choose the default <rgn>[sandbox resource group name]</rgn> if you are using the sandbox, or select **New...** to create your own new group with a name such as `mslearn-github-browser`. |
-    | **Hosting plan** | If you are using the Learn sandbox, leave the default value.  If you are using your own subscription, select **New...** and enter a name of `mslearn-github-browser-plan` and choose your instance size. |
+    | **Hosting plan** | If you are using the Learn sandbox, leave the default value.  If you are using your own subscription, select **New...** and enter a name of `mslearn-github-browser-plan` and choose your instance size. (Tip: If you are using the Learn sandbox and the default hosting plan won't populate, switch the resource group to a new group and then switch back to the default group.)|
 
     :::image type="content" source="../media/visual-studio-remote-debug-create-app-service.png" alt-text="A screenshot of the create app service workflow.":::
 
@@ -179,11 +182,13 @@ Next you need to deploy the app to Azure so others can use it to browse reposito
 
 7) Once the App Service is created, select the new instance, and then choose Finish.
 
-8) Visual Studio will display a summary view of the publishing profile. Select **Publish** in the upper right corner to deploy your app to Azure. This process may take a moment to complete.
+8) Visual Studio will display a summary view of the publishing profile. Select **Publish** in the upper right corner to deploy your app to Azure. This process may take a little time to complete.
 
     :::image type="content" source="../media/visual-studio-remote-debug-publish-profile.png" alt-text="A screenshot of the publishing profile.":::
 
-When the deployment finishes Visual Studio will launch a web browser to the home page of your app. At first, it appears that everything is working correctly. However, when you try to search *dotnet* again, you'll receive an error page instead of the table of results. This error didn't happen locally, and you can use Visual Studio to figure out why.
+When the deployment finishes Visual Studio will launch a web browser to the home page of your app. At first, it appears that everything is working correctly.
+
+Next, enter **dotnet** again in the GitHubBrowser app's search box, and at this point you'll receive an error page instead of the table of results. This error didn't happen locally, and you can use Visual Studio to figure out why.
 
 :::image type="content" source="../media/visual-studio-remote-debug-error.png" alt-text="A screenshot of the application error.":::
 
