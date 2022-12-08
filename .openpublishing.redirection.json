@@ -6361,6 +6361,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/2-bot-composer.yml",
+      "redirect_url": "/training/modules/create-bot-with-bot-framework-composer/3-bot-composer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/3-dialogs.yml",
+      "redirect_url": "/training/modules/create-bot-with-bot-framework-composer/4-dialogs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/4-adaptive-flow.yml",
+      "redirect_url": "/training/modules/create-bot-with-bot-framework-composer/5-adaptive-flow",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/2-introduce-principles-bot-design.md",
       "redirect_url": "/training/modules/design-bot-conversation-flow/2-bot-design-principles",
       "redirect_document_id": true
