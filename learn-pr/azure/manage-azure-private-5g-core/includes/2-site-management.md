@@ -8,7 +8,7 @@ Once a site is deployed and in operation, you'll need to manage it on a daily ba
 
 The *Mobile Network Site* resource in the Azure portal represents a packet core instance deployed at the enterprise edge. Through this resource, you can modify the configuration of the relevant packet core instance and its connected DNs.
 
-
+To modify a site, open the Mobile Network Site resource that represents the site through the Azure portal, and then select the 
 
 ### Packet core configuration
 

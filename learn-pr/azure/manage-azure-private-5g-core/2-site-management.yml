@@ -3,7 +3,7 @@ uid: learn.manage-azure-private-5g-core.site-management
 title: Site management
 metadata:
   title: Site management
-  description: "Describes the tasks for managing a site in a private mobile network that Azure Private 5G Core powers."
+  description: Describes the tasks for managing a site in a private mobile network that Azure Private 5G Core powers.
   ms.date: 11/29/2022
   author: michael-weizhong-shan
   ms.author: michaelshan

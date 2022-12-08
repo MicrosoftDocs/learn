@@ -3,12 +3,12 @@ uid: learn.manage-azure-private-5g-core.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Checks that you've successfully learned the routine tasks for managing the Azure Private 5G Core service."
+  description: Checks that you've successfully learned the routine tasks for managing the Azure Private 5G Core service.
   ms.date: 11/29/2022
   author: michael-weizhong-shan
   ms.author: michaelshan
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.service: learning-private-5g-core
 durationInMinutes: 1
 ###########################################################################
 ###

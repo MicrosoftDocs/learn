@@ -22,7 +22,7 @@ prerequisites: |
   - Fundamental knowledge of 5G and 4G technologies.
   - Fundamental knowledge about Azure Private 5G Core.
     If you don't have the knowledge, consider taking the *Introduction to Azure Private 5G Core* training module first.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/manage-azure-private-5g-core.svg
 levels:
   - intermediate
 roles:
