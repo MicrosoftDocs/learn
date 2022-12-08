@@ -174,8 +174,8 @@ Next you need to deploy the app to Azure so others can use it to browse reposito
 
 6. Next, create a new app service instance by selecting the green **+ Create new** icon. In the new app service dialog, enter or verify the following values:
 
-   >[NOTE!]
-   > For the sandbox environment, you may need to wait until the values become available in the dialog. This may take a few moments.
+   > [!NOTE]
+   > For the sandbox environment, you may need to wait a few moments until the values become available in the dialog.
 
     | Setting | Value  |
     | --- | --- |
@@ -204,7 +204,7 @@ Next, enter *dotnet* again in the GitHubBrowser app's search box, and at this po
 
 Before you can debug this issue with Visual Studio, you must enable the remote debugging feature on the App Service. This setting will allow the Visual Studio debugger to connect to the main App Service web hosting process.
 
-1. If you're using the Learn sandbox, sign into the [Learn sandbox Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to sign in with the same account that you opened the sandbox. If you're not using the sandbox, sign into your own [Azure portal](https://portal.azure.com/).
+1. If you're using the Learn sandbox, open the [Learn sandbox Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to sign in with the same account that you opened the sandbox. If you're not using the sandbox, sign into your own [Azure portal](https://portal.azure.com/).
 
    Locate your deployed application in the Azure portal. You can find your app by browsing to the **App Services** page and then selecting the **GitHubBrowser123** app.  You can also search for the App Service instance directly by name in the search bar at the top.
 
