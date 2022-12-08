@@ -16,7 +16,7 @@ The following image shows the tools to endpoint security management, as well as 
 
 ## Unified security
 
-You an securely access corporate resources through continuous assessment and intent-based policies with Conditional Access app control, powered by Azure Active Directory (Azure AD) and natively integrated in Microsoft Endpoint Manager. Unified security management with Microsoft Defender for Endpoint Manager enables quick, automated remediation of app vulnerabilities.
+You can securely access corporate resources through continuous assessment and intent-based policies with Conditional Access app control, powered by Azure Active Directory (Azure AD) and natively integrated in Microsoft Endpoint Manager. Unified security management with Microsoft Defender for Endpoint Manager enables quick, automated remediation of app vulnerabilities.
 
 Microsoft Endpoint Manager helps ensure cross-platform device controls to help manage your Zero Trust endpoint strategy, which includes:
 
