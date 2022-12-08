@@ -4,8 +4,8 @@ Tracing is a way for you to monitor the execution of your application while it's
 
 This simple technique is surprisingly powerful. It can be used in situations where you need more than a debugger:
 
-- Issues that occur over long periods of time can be difficult to debug with a traditional debugger. Logs allow for detailed post-mortem review that spans long periods of time. In contrast, debuggers are constrained to real-time analysis.
-- Multi-threaded applications and distributed applications are often difficult to debug. Attaching a debugger tends to modify behaviors. Detailed logs can be analyzed as needed to understand complex systems.
+- Issues that occur over long periods of time can be difficult to debug with a traditional debugger. Logs allow for detailed a post-mortem review that spans long periods of time. In contrast, debuggers are constrained to real-time analysis.
+- Multi-threaded applications and distributed applications are often difficult to debug. Attaching a debugger tends to modify behaviors. You can analyze detailed logs as needed to understand complex systems.
 - Issues in distributed applications might arise from a complex interaction between many components. It might not be reasonable to connect a debugger to every part of the system.
 - Many services shouldn't be stalled. Attaching a debugger often causes timeout failures.
 - Issues aren't always foreseen. Logging and tracing are designed for low overhead so that programs can always be recording in case an issue occurs.
@@ -14,7 +14,7 @@ This simple technique is surprisingly powerful. It can be used in situations whe
 
 Up to this point, we've been using the console to display information to the application user. There are other types of applications that are built with .NET that have user interfaces, such as mobile, web, and desktop apps, and there's no visible console. In these applications, `System.Console` is used to log messages "behind the scenes." These messages might show up in an output window in Visual Studio or Visual Studio Code. They also might be output to a system log such as Android's `logcat`. As a result, you should take great consideration when you use `System.Console.WriteLine` in a non-console application.
 
-This is where `System.Diagnostics.Debug` and `System.Diagnostics.Trace` can be used in addition to `System.Console`. Both `Debug` and `Trace` are part of `System.Diagnostics` and will only write to logs when an appropriate listener is attached.
+This is where you can use `System.Diagnostics.Debug` and `System.Diagnostics.Trace` in addition to `System.Console`. Both `Debug` and `Trace` are part of `System.Diagnostics` and will only write to logs when an appropriate listener is attached.
 
 The choice of which print style API to use is up to you. The key differences are:
 
@@ -54,7 +54,7 @@ This is another full line.
 
 ## Define TRACE and DEBUG constants
 
-By default, when an application is running under debug, the `DEBUG` constant is defined. This can be controlled by adding a `DefineConstants` entry in the project file in a property group. Here's an example of turning on `TRACE` for both `Debug` and `Release` configurations in addition to `DEBUG` for `Debug` configurations.
+By default, when an application is running under debug, the `DEBUG` constant is defined. You can control this by adding a `DefineConstants` entry in the project file in a property group. Here's an example of turning on `TRACE` for both `Debug` and `Release` configurations in addition to `DEBUG` for `Debug` configurations.
 
 ```xml
 <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -69,7 +69,7 @@ When you use `Trace` when not attached to the debugger, you'll need to configure
 
 ## Conditional tracing
 
-In addition to simple `Write` and `WriteLine` methods, there's also the capability to add conditions with `WriteIf` and `WriteLineIf`. As an example, the following logic checks if the count is zero and then writes a debug message.
+In addition to simple `Write` and `WriteLine` methods, there's also the capability to add conditions with `WriteIf` and `WriteLineIf`. As an example, the following logic checks if the count is zero, then writes a debug message:
 
 ```csharp
 if(count == 0)
@@ -78,13 +78,13 @@ if(count == 0)
 }
 ```
 
-It could be rewritten in a single line of code.
+You could rewrite it in a single line of code:
 
 ```csharp
 Debug.WriteLineIf(count == 0, "The count is 0 and this may cause an exception.");
 ```
 
-You can also use these conditions with `Trace` and with flags that you define in your application.
+You can also use these conditions with `Trace` and with flags that you define in your application:
 
 ```csharp
 bool errorFlag = false;  
@@ -99,7 +99,7 @@ An assertion, or `Assert` statement, tests a condition, which you specify as an 
 
 You can use the `Assert` method from either `Debug` or `Trace`, which are in the `System.Diagnostics` namespace. `Debug` class methods aren't included in a release version of your program, so they don't increase the size or reduce the speed of your release code.
 
-Use the System.Diagnostics.Debug.Assert method freely to test conditions that should hold true if your code is correct. For example, suppose you've written an integer divide function. By the rules of mathematics, the divisor can never be zero. You might test this condition by using an assertion:
+Use the `System.Diagnostics.Debug.Assert` method freely to test conditions that should hold true if your code is correct. For example, suppose you've written an integer divide function. By the rules of mathematics, the divisor can never be zero. You might test this condition by using an assertion:
 
 ```csharp
 int IntegerDivide(int dividend, int divisor)

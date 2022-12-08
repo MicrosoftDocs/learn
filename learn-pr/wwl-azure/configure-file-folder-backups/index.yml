@@ -2,8 +2,8 @@
 uid: learn.wwl.configure-file-folder-backups
 metadata:
   title: Configure file and folder backups
-  description: "You will learn how to configure backup and restore policies that meet your company's regulatory needs."
-  ms.date: 11/01/2022
+  description: "Configure file and folder backups"
+  ms.date: 12/01/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
