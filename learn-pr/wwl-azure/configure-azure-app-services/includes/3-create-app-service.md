@@ -8,7 +8,7 @@ Watch this video to learn how to create an app with Azure App Service in the Azu
 
 ### Things to know about configuration settings
 
-Let's examine some the basic configuration settings you need to specify to create an app with App Service. You might need to ask your developer for assistance in gathering information for these settings.
+Let's examine some of the basic configuration settings you need to specify to create an app with App Service. You might need to ask your developer for assistance in gathering information for these settings.
 
 - **Name**: The name for your app must be unique because it's used to identify and locate your app in Azure. An example name is `webappces1.azurewebsites.net`. You can map a custom domain name, if you prefer to use that option instead.
 
@@ -20,7 +20,7 @@ Let's examine some the basic configuration settings you need to specify to creat
 
 - **Region**: The region location that you choose for your app affects the App Service plans that are available.
 
-- **App Service plan**: Your app needs to be assoicated with an Azure App Service plan to establish avaialble resources, features, and capacity. You can choose from pricing tiers that are available for the region location you selected.
+- **App Service plan**: Your app needs to be associated with an Azure App Service plan to establish available resources, features, and capacity. You can choose from pricing tiers that are available for the region location you selected.
 
 #### Post-creation settings
 
