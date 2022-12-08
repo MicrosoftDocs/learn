@@ -213,7 +213,7 @@ You can delete your Google federation setup. If you do so, Google guest users wh
 1. Select **All identity providers**.
 1. On the **Google** line, select the ellipsis button (**...**) and then select **Delete**.
     
-    :::image type="content" source="../media/google-social-identity-providers-22681be3.png" alt-text="Screenshot of the Delete button for the social identity provider":::
+    :::image type="content" source="../media/google-social-identity-providers-22681be3.png" alt-text="Screenshot of the Delete button for the social identity provider.":::
     
 1. Select **Yes** to confirm the deletion.
 
