@@ -30,9 +30,9 @@ subjects:
 units:
 - learn.wwl.construct-kql-statements.introduction
 - learn.wwl.construct-kql-statements.understand-kql-statement-structure
-- learn.wwl.construct-kql-statements.use-let-statement
 - learn.wwl.construct-kql-statements.use-search-operator
 - learn.wwl.construct-kql-statements.use-where-operator
+- learn.wwl.construct-kql-statements.use-let-statement
 - learn.wwl.construct-kql-statements.use-extend-operator
 - learn.wwl.construct-kql-statements.use-order-by-operator
 - learn.wwl.construct-kql-statements.use-project-operators

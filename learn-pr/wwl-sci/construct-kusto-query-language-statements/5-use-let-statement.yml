@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-use-let-statement.md)]
+  [!include[](includes/5-use-let-statement.md)]
