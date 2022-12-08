@@ -1,27 +1,37 @@
-When creating an App Service, you'll need to specify a resource group and service plan. Then there are a few other configuration choices. You may need to ask your developer for assistance in completing this information.
+You create Web Apps, Mobile Apps, or API Apps with Azure App Service in the Azure portal. To implement your app, you need to specify several configuration settings, including the resource group and App Service plan.
 
-Watch this video to learn how to create an App Service in the portal. 
-
-
-<iframe width="854" height="480" src="https://www.youtube.com/embed/dHTzv-zY17I" title="How to create App Services in the Azure portal | Azure Portal Series" allowfullscreen></iframe>
+Watch this video to learn how to create an app with Azure App Service in the Azure portal. 
 
 
-
- -  **Name**. The name must be unique and will be used to locate your app. For example, webappces1.azurewebsites.net. You can map a custom domain name, if you prefer to use that instead.
- -  **Publish**. The App service can host either Code or a Docker Container.
- -  **Runtime stack**. The software stack to run the app, including the language and SDK versions. For Linux apps and custom container apps, you can also set an optional start-up command or file. Choices include: .NET Core, .NET Framework, Node.js, PHP, Python, and Ruby. Various versions of each are available.
- -  **Operating system**. Choices are Linux and Windows.
- -  **Region**. Your choice will affect app service plan availability.
-
-## Application settings
-
-Once your app service is created, other configuration information is available.
-
-:::image type="content" source="../media/web-app-configuration-27facdc5.png" alt-text="Screenshot of the app service configuration blade.":::
+<iframe width="854" height="480" src="https://www.youtube.com/embed/dHTzv-zY17I" title="How to create an app with Azure App Service in the Azure portal | Azure Portal Series" allowfullscreen></iframe>
 
 
-Certain configuration settings can be included in the developer's code or configurated in the app service. Here are a few interesting settings.
+### Things to know about configuration settings
 
- -  **Always On**. Keep the app loaded even when there's no traffic. It's required for continuous WebJobs or for WebJobs that are triggered using a CRON expression.
- -  **ARR affinity**. In a multi-instance deployment, ensure that the client is routed to the same instance for the life of the session.
- -  **Connection strings**. Connection strings are encrypted at rest and transmitted over an encrypted channel.
+Let's examine some the basic configuration settings you need to specify to create an app with App Service. You might need to ask your developer for assistance in gathering information for these settings.
+
+- **Name**: The name for your app must be unique because it's used to identify and locate your app in Azure. An example name is `webappces1.azurewebsites.net`. You can map a custom domain name, if you prefer to use that option instead.
+
+- **Publish**: App Service hosts (publishes) your app as code or as a Docker Container.
+
+- **Runtime stack**: App Service uses a software stack to run your app, including the language and SDK versions. For Linux apps and custom container apps, you can set an optional start-up command or file. Your choices for the stack include .NET Core, .NET Framework, Node.js, PHP, Python, and Ruby. Various versions of each product are available for Linux and Windows.
+
+- **Operating system**: The operating system for your app runtime stack can be Linux or Windows.
+
+- **Region**: The region location that you choose for your app affects the App Service plans that are available.
+
+- **App Service plan**: Your app needs to be assoicated with an Azure App Service plan to establish avaialble resources, features, and capacity. You can choose from pricing tiers that are available for the region location you selected.
+
+#### Post-creation settings
+
+After your app is created, other configuration settings become available in the Azure portal, including app deployment options and path mapping.
+
+:::image type="content" source="../media/web-app-configuration-27facdc5.png" alt-text="Screenshot that shows other configuration options for an app with the App Service in the Azure portal.":::
+
+Some of the extra configuration settings can be included in the developer's code, while others can be configured in your app. Here are a few of the extra settings.
+
+- **Always On**: You can keep your app loaded even when there's no traffic. This setting is required for continuous WebJobs or for WebJobs that are triggered by using a CRON expression.
+
+- **ARR affinity**: In a multi-instance deployment, you can ensure your app client is routed to the same instance for the life of the session.
+
+- **Connection strings**: Connection strings for your app are encrypted at rest and transmitted over an encrypted channel.

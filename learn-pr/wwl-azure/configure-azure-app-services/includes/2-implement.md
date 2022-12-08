@@ -1,8 +1,12 @@
-Azure App Service brings together everything you need to create websites, mobile backends, and web APIs for any platform or device. Applications run and scale with ease in both Windows and Linux-based environments. There are many deployment choices, as shown in the following image.
+Azure App Service brings together everything you need to create websites, mobile backends, and web APIs for any platform or device. Applications run and scale with ease in both Windows and Linux-based environments.
+
+App Service provides Quickstarts for several products to help you easily create and deploy your Windows and Linux apps:
 
 :::image type="content" source="../media/web-quickstarts-c154c8e4.png" alt-text="Illustration that shows products for which you can use an App Service quickstart to develop and deploy your web, mobile, and API apps." border="false":::
 
-There are many advantages to using App Service to develop and deploy your web, mobile, and API apps.
+### App Service benefits
+
+There are many advantages to using App Service to develop and deploy your web, mobile, and API apps. Review the following table and think about what features can help you host your website and web apps.
 
 | Benefit | Description |
 | --- | --- |

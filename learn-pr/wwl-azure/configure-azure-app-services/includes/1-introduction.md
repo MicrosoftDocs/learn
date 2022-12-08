@@ -11,11 +11,11 @@ You're investigating how to use Azure App Service to host your website and web a
 In this module, you learn how to:
 
 - Identify features and usage cases for Azure App Service.
-- Create an instance of Azure App Service.
+- Create an app with App Service.
 - Configure deployment settings, specifically deployment slots.
-- Secure your Azure App Service instance.
+- Secure your App Service app.
 - Configure custom domain names.
-- Back up your Azure App Service instance.
+- Back up your App Service app.
 - Configure Azure Application Insights.
 
 ## Skills measured
@@ -24,13 +24,13 @@ The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Ad
 
 Deploy and manage Azure compute resources (20–25%)
 
-- Create and configure Azure App Service
-   - Create an instance of Azure App Service
-   - Secure an instance of Azure App Service.
-   - Configure custom domain names.
-   - Configure backup for an instance of Azure App Service.
-   - Configure networking settings.
-   - Configure deployment settings.
+- Create and configure apps with Azure App Service
+   - Create an app with App Service
+   - Secure your App Service app
+   - Configure custom domain names
+   - Configure backup for your App Service app
+   - Configure networking settings
+   - Configure deployment settings
 
 Monitor and back up Azure resources (10–15%)
 
