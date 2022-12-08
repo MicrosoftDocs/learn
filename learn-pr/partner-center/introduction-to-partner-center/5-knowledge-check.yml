@@ -19,8 +19,10 @@ quiz:
     choices:
     - content: "one of the Microsoft Cloud Partner Program membership programs"
       isCorrect: false
+      explanation: "Partner Center is a web-based console that streamlines several business processes to make it easier for Microsoft partners to manage their relationships."
     - content: "a web-based, unified console that provides access to a wide range of partner-centric activities such as membership, benefits, and account settings, all through a graphical user interface."
       isCorrect: true
+      explanation: "Yes, Partner Center is a web-based console that streamlines several business processes to make it easier for Microsoft partners to manage their relationships."
     - content: "a section of Action Center that displays notifications and preferences"
       isCorrect: false
       explanation: "Partner Center is a web-based console that streamlines several business processes to make it easier for Microsoft partners to manage their relationships."
@@ -28,20 +30,23 @@ quiz:
     choices:
     - content: "True"
       isCorrect: true
+      explanation: "Yes, Partner Center provides useful analytics and insights."
     - content: "False"
       isCorrect: false
-      explanation: "This is true."
+      explanation: "Partner Center does provide useful analytics and insights."
   - content: "Insights allow partners to jointly sell with Microsoft and other partners for collaborative, better-together selling, and positive customer outcomes."
     choices:
     - content: "True"
       isCorrect: false
+      explanation: "Co-sell is the path for partners to jointly sell with Microsoft and other partners."
     - content: "False"
       isCorrect: true
       explanation: "Co-sell is the path for partners to jointly sell with Microsoft and other partners."
   - content: "Everyone will see the same workspaces on their Partner Center dashboard."
     choices:
     - content: "True"
-      isCorrect: true
-    - content: "False"
       isCorrect: false
+      explanation: "The view of workspaces in your portal is based on your permissions and memberships."
+    - content: "False"
+      isCorrect: true
       explanation: "The view of workspaces in your portal is based on your permissions and memberships."
