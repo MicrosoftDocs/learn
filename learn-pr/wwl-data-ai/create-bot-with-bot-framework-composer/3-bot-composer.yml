@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-bot-composer.md)]
+  [!include[](includes/3-bot-composer.md)]
