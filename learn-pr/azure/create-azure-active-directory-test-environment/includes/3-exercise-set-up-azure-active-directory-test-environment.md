@@ -39,7 +39,7 @@ Recall that in the sales team dashboard example, your development team chose to 
 
     Optional: a video that shows the end-state
 -->
-In this exercise, you setup your test environment in Azure AD by creating a separate test tenant, adding a test user, and creating an app registration.
+In this exercise, you setup your test environment in Azure AD by creating a separate test tenant, adding a test user, and creating an app registration.  If you have access to the production tenant, it's also recommended that you populate the test tenant with policies that are in your production tenant. 
 
 <!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
@@ -159,7 +159,7 @@ If you want to fully test Azure AD premium features on your application, you'll 
 
 If you signed up using the Microsoft 365 Developer program, your test tenant will come with Azure AD P2 licenses. If not, you can still enable a [free trial of Azure AD premium](https://azure.microsoft.com/free/active-directory/).
 
-## Populate your tenant with policies
+## Populate your tenant with policies (recommended)
 
 If your app will primarily be used by a single organization (commonly referred to as single tenant), and you have access to that production tenant, then you should try to replicate the settings of your production tenant that can affect your app's behavior. That will lower the chances of unexpected errors when operating in production.
 
