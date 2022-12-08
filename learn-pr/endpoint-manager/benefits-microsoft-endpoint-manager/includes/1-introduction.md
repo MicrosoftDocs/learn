@@ -18,7 +18,7 @@ Organizations ready for the next step can use co-management to manage Windows us
 
 ## Modern endpoint Management
 
-Modern IT provides cloud intelligence at the core. Microsoft Endpoint Manager provides this modern management. Microsoft Endpoint Manager doesn't require you to make an either/or decision between on-premises and cloud management; you can do both and modernize at your own pace to manage risk in a smart way. You can take advantage of modern IT and the cloud by using Microsoft Endpoint Manager, which also gives you the tools and capabilities to manage your existing on-prem investments.
+Modern IT provides cloud intelligence at the core. Microsoft Endpoint Manager provides this modern management. Microsoft Endpoint Manager doesn't require you to make an either/or decision between on-premises and cloud management; you can do both and modernize at your own pace to manage risk in a smart way. You can take advantage of modern IT and the cloud by using Microsoft Endpoint Manager, which also gives you the tools and capabilities to manage your existing on-premises investments.
 
 Suppose you're the administrator or business decision maker of a company with several thousand employees. Your company must determine the best way to implement an Enterprise Mobility Management service that keeps your corporate data safe, protects the data, apps, and devices that your employees use, and maximizes return on your investment. Learn how Microsoft Endpoint Manager provides these capabilities.
 
