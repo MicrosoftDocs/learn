@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.data-ai.introduction-to-data-streaming.introduction
+uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.introduction
 title: Introduction
 metadata:
   title: Introduction
@@ -9,8 +9,7 @@ metadata:
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: stream-analytics
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
