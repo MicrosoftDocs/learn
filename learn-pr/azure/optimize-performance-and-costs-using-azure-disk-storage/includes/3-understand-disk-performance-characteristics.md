@@ -67,7 +67,7 @@ Caching uses specialized, and sometimes expensive, temporary storage that has fa
 
 *Read caching* tries to speed up data *retrieval*. Instead of reading from permanent storage, the application reads the data from the faster cache.
 
-It's important to note that read caching helps when there is some *predictability* to the read queue, such as a set of sequential reads. For random I/O, in which the data you're accessing is scattered across storage, caching will be of little or no benefit and can even reduce disk performance.
+It's important to note that read caching helps when there's some *predictability* to the read queue, such as a set of sequential reads. For random I/O, in which the data you're accessing is scattered across storage, caching will be of little or no benefit and can even reduce disk performance.
 
 *Write caching* tries to speed up *writing data* to persistent storage. By using a write cache, the app can consider the data that should be saved.
 
