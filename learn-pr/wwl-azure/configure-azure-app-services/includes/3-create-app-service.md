@@ -1,6 +1,6 @@
-You create Web Apps, Mobile Apps, or API Apps with Azure App Service in the Azure portal. To implement your app, you need to specify several configuration settings, including the resource group and App Service plan.
+You can use the Web Apps, Mobile Apps, or API Apps features of Azure App Service, and create your own apps in the Azure portal.
 
-Watch this video to learn how to create an app with Azure App Service in the Azure portal. 
+Watch the following video to learn how to create an app with Azure App Service. 
 
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/dHTzv-zY17I" title="How to create an app with Azure App Service in the Azure portal | Azure Portal Series" allowfullscreen></iframe>
@@ -8,7 +8,7 @@ Watch this video to learn how to create an app with Azure App Service in the Azu
 
 ### Things to know about configuration settings
 
-Let's examine some of the basic configuration settings you need to specify to create an app with App Service. You might need to ask your developer for assistance in gathering information for these settings.
+Let's examine some of the basic configuration settings you need to create an app with App Service. You might ask your developer for assistance in gathering information for these settings.
 
 - **Name**: The name for your app must be unique because it's used to identify and locate your app in Azure. An example name is `webappces1.azurewebsites.net`. You can map a custom domain name, if you prefer to use that option instead.
 
@@ -28,7 +28,7 @@ After your app is created, other configuration settings become available in the 
 
 :::image type="content" source="../media/web-app-configuration-27facdc5.png" alt-text="Screenshot that shows other configuration options for an app with the App Service in the Azure portal.":::
 
-Some of the extra configuration settings can be included in the developer's code, while others can be configured in your app. Here are a few of the extra settings.
+Some of the extra configuration settings can be included in the developer's code, while others can be configured in your app. Here are a few of the extra application settings.
 
 - **Always On**: You can keep your app loaded even when there's no traffic. This setting is required for continuous WebJobs or for WebJobs that are triggered by using a CRON expression.
 
