@@ -35,10 +35,10 @@ You can stay in your browser on your repository and watch the GitHub Action's pr
 
 1. Click on the **Actions** menu
 1. Under the Workflows menu, click on the **Azure Static Web Apps CI/CD** workflow item
-:::image type="content" source="../media/track-actions-workflow.png" alt-text="Screenshot showing your angular web app.":::
+:::image type="content" source="../media/track-actions-workflow.png" alt-text="Screenshot showing how to find the correct workflow.":::
 1. Select the top link in the action runs to the right
 1. Click the **Build and Deploy Job** link
-:::image type="content" source="../media/build-and-deploy-job.png" alt-text="Screenshot showing your angular web app.":::
+:::image type="content" source="../media/build-and-deploy-job.png" alt-text="Screenshot showing the build and deploy button on the workflow page.":::
 
 You can see the progress of your GitHub Action as it builds and publishes your web app and API.
 
