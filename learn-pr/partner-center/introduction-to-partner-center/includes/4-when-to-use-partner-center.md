@@ -6,6 +6,8 @@ Some of the key tasks Partner Center can help with are listed below.
 
 Use the **Billing** tile in Partner Center to access and download your invoices and reconciliation files.
 
+:::image type="content" source="../media/billing-tile.png" alt-text="Screenshot of the billing tile in Partner Center.":::
+
 Within the [Billing](/partner-center/billing.md) workspace, view billing history, review each customer's Azure spending and budgets, and find information on partner earned credit and taxes.
 
 ### Recommended content for the Billing workspace
@@ -19,7 +21,7 @@ Within the [Billing](/partner-center/billing.md) workspace, view billing history
 - [Billing frequency changes at Partner Center](/partner-center/billing-frequency-changes?source=recommendations)
   - Information about changing the billing frequency of CSP license-based subscriptions from monthly to annual or from annual to monthly
 - [Legacy annual billing - common scenarios](/partner-center/common-billing-scenarios-annual?source=recommendations)
- ]() legacy annual billing - when you add new subscriptions, add licenses before billing date, change license quantity, or suspend/reactivate subscriptions.
+  - Legacy annual billing is when you add new subscriptions, add licenses before billing date, change license quantity, or suspend/reactivate subscriptions.
 - [License-based billing](/partner-center/license-based-billing?source=recommendations)
   - Learn how license-based billing differs from usage-based billing in Partner Center. Learn how you're billed per license (not by license usage).
 - [Regional taxes and tax exemptions](/partner-center/tax-and-tax-exemptions?source=recommendations)
@@ -30,6 +32,8 @@ Within the [Billing](/partner-center/billing.md) workspace, view billing history
 ## Customers
 
 Use the **Customers** tile in Partner Center to connect with customers, purchase subscriptions, manage licenses, and submit support requests on their behalf.
+
+:::image type="content" source="../media/customers-tile.png" alt-text="Screenshot of the customers tile in Partner Center.":::
 
 Within the [Customers](/partner-center/connect-with-your-customers.md) workspace, partners can view customer lists, see customer activity logs, add and remove customer relationships, manage customer subscriptions and licenses, provide customer support, and manage Microsoft Customer Agreements.
 
@@ -56,6 +60,8 @@ Within the [Customers](/partner-center/connect-with-your-customers.md) workspace
 
 Use the **Insights** tile in Partner Center to view data on your customers and their purchases, and gain insights on how to grow your business.
 
+:::image type="content" source="../media/insights-tile.png" alt-text="Screenshot of the insights tile in Partner Center.":::
+
 Within the [Insights](/partner-center/partner-center-insights.md) workspace, partners can access all Partner Center analytics reports and key performance indicators (KPIs). The workspace is a unified analytics hub that addresses all the data analytics and business intelligence needs. In the Insights workspace, you'll find reports, forecasts, and recommendations designed to help you make data-driven decisions for your business.
 
 ### Recommended content for the Insights workspace
@@ -81,6 +87,8 @@ Within the [Insights](/partner-center/partner-center-insights.md) workspace, par
 
 Use the **Pricing** tile to view and download pricing information for different offers, SKUs, and product bundles
 
+:::image type="content" source="../media/pricing-tile.png" alt-text="Screenshot of the pricing tile in Partner Center.":::
+
 Within the [Pricing](/partner-center/pricing-and-offers.md) workspace, partners can access price lists, commercial marketplace solutions published by independent software vendors (ISVs), promotions and discounts, and private offer margins from ISVs.
 
 ### Recommended content for the Pricing workspace
@@ -105,6 +113,8 @@ Within the [Pricing](/partner-center/pricing-and-offers.md) workspace, partners 
 ## Referrals
 
 Use the **Referrals** tile to discover and manage leads and Co-sell opportunities to set your business apart.
+
+   :::image type="content" source="../media/referrals-tile.png" alt-text="Screenshot of the referrals tile in Partner Center.":::
 
 Within the [Referrals](/partner-center/referrals.md) workspace, partners can create and view business profiles, gather and respond to referrals, track leads, see inbound and outbound Co-seel opportunities, and see ISV connect invoices.
 
