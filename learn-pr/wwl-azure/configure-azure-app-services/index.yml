@@ -41,7 +41,6 @@ units:
 - learn.wwl.configure-azure-app-services.create-custom-domain-names
 - learn.wwl.configure-azure-app-services.backup-app-service
 - learn.wwl.configure-azure-app-services.use-application-insights
-- learn.wwl.configure-azure-app-services.11-exercise-implement-web-services
 - learn.wwl.configure-azure-app-services.interactive-simulation-web-apps
 - learn.wwl.configure-azure-app-services.knowledge-check
 - learn.wwl.configure-azure-app-services.summary-resources
