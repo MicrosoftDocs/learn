@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-spatial-anchors-tutorials-mrtk.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Answer three multiple-choice questions.
+  ms.date: 11/09/2022
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: Choose the best response for the question below. Then select **Check your answers**.
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What should the MRTK configuration profile for a scene be set to?"
+      choices:
+        - content: "DefaultHoloLens1ConfigurationProfile"
+          isCorrect: false
+          explanation: This is a default profile that's optimized for deployment and testing on HoloLens 1.
+        - content: "DefaultHoloLens2ConfigurationProfile"
+          isCorrect: true
+          explanation: You set the MRTK configuration profile to this default profile that's optimized for deployment and testing on HoloLens 2.
+        - content: "DefaultMixedRealityToolkitConfigurationProfile"
+          isCorrect: false
+          explanation: When you use this profile, you'll be able to try out scenarios on virtual reality (OpenVR, Windows Mixed Reality) and HoloLens (1 and 2).
+   

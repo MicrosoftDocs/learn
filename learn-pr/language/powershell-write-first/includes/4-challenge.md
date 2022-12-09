@@ -16,7 +16,7 @@ No matter how you do it, your code should produce something like the following o
 
 ```output
 Today's date is <current date>.
-Today is the day <your name> began their PowerShell programming journey.
+Today is the day <your name> began a PowerShell programming journey.
 ```
 
 ### Step 4: Run the code
