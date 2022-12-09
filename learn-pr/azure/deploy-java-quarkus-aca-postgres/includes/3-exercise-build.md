@@ -92,6 +92,8 @@ public class Todo extends PanacheEntity {
 
     public boolean done;
 
+    public Instant createdAt = Instant.now();
+
     @Override
     public String toString() {
         return "Todo{" +
@@ -99,6 +101,7 @@ public class Todo extends PanacheEntity {
                 ", description='" + description + '\'' +
                 ", details='" + details + '\'' +
                 ", done=" + done +
+                ", createdAt=" + createdAt +
                 '}';
     }
 }
@@ -128,9 +131,13 @@ import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 @Produces(APPLICATION_JSON)
 public class TodoResource {
 
+    @Inject
+    Logger logger;
+
     @POST
     @Transactional
     public Response createTodo(Todo todo, @Context UriInfo uriInfo) {
+        logger.info("Creating todo: " + todo);
         Todo.persist(todo);
         UriBuilder uriBuilder = uriInfo.getAbsolutePathBuilder().path(todo.id.toString());
         return Response.created(uriBuilder.build()).entity(todo).build();
@@ -138,6 +145,7 @@ public class TodoResource {
 
     @GET
     public List<Todo> getTodos() {
+        logger.info("Getting all todos");
         return Todo.listAll();
     }
 }

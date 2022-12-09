@@ -40,7 +40,8 @@ az containerapp up \
     --location "$AZ_LOCATION" \
     --resource-group "$AZ_RESOURCE_GROUP" \
     --ingress external \
-    --source src/main/docker/
+    --target-port 8080 \
+    --source .
 ```
 
 ```bash
@@ -62,14 +63,25 @@ Your container app ca-azure-deploy-quarkus has been created and deployed! Congra
 ![Screenshot showing the deployed application.](../media/azure-portal.png)
 
 
-Stream logs for your container with: az containerapp logs show -n ca-azure-deploy-quarkus -g rg-azure-deploy-quarkus
 
-See full output using: az containerapp show -n ca-azure-deploy-quarkus -g rg-azure-deploy-quarkus --query "properties.configuration.ingress.fqdn"
 
 
 ## Execute the Azure Container Apps application
 
-When the deployment finishes, your application is ready at `http://<appName>.azurewebsites.net/`. 
+
+```bash
+APP_URL=$(
+    az containerapp show \
+        --name "$AZ_CONTAINERAPP" \
+        --resource-group "$AZ_RESOURCE_GROUP" \
+        --query "properties.configuration.ingress.fqdn" \
+        --output tsv \
+)
+
+echo "APP_URL=$APP_URL"
+```
+
+When the deployment finishes, your application is ready at `https://<appName>.azurecontainerapps.io/`. Notice the `https` protocol. This is because the application is deployed with a TLS certificate.
 
 To test the application, you can use `cURL`.
 
@@ -79,25 +91,35 @@ As you redeployed your application, you cleared the database. Now you need to cr
 curl --header "Content-Type: application/json" \
     --request POST \
     --data '{"description":"configuration","details":"congratulations, you have set up your Quarkus application correctly!","done": "true"}' \
-    http://<appName>.azurewebsites.net
-```
-
-This command should return the created item:
-
-```json
-{"id":1,"description":"configuration","details":"congratulations, you have set up your Quarkus application correctly!","done":true}
+    https://<value of $APP_URL>/api/todos
 ```
 
 Retrieve the data by using a new `cURL` request:
 
 ```bash
-curl http://<appName>.azurewebsites.net
+curl https://<value of $APP_URL>/api/todos
 ```
 
 This command returns the list of to-do items, including the item you created:
 
 ```json
 [{"id":1,"description":"configuration","details":"congratulations, you have set up your Quarkus application correctly!","done":true}]
+```
+
+Stream logs for your container with: 
+
+```bash
+az containerapp logs show \
+    --name "$AZ_CONTAINERAPP" \
+    --resource-group "$AZ_RESOURCE_GROUP" \
+    --follow
+```
+
+Execute more curl commands, and you should see the logs scrolling in the terminal. 
+
+
+```bash
+curl https://<value of $APP_URL>/api/todos
 ```
 
 > [!NOTE]
