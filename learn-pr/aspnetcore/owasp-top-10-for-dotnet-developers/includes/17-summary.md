@@ -10,18 +10,18 @@ No matter if you are designing a brand new green field application or contributi
 
 :::row:::
     :::column:::
-        :::image type="content" source="../media/attack-surface-reduction.jpg" alt-text="Microsoft Defender Threat Intelligence":::
+        :::image type="content" source="../media/devops-metrics.png" alt-text="Microsoft Defender for DevOps":::
     :::column-end:::
     :::column:::
         Microsoft Defender product family can bring best-in-class security features to your product. Defender for DevOps provides unified DevOps security management. The team can gain full visibility into the security posture of pre-production application code, resource configurations across GitHub, Azure DevOps, across multi-cloud and multiple-pipeline environments. You can track threat actor activity and patterns with Microsoft Defender Threat Intelligence. Defender External Attack Surface Management can help discover unmanaged resources that could be potential entry points for an attacker
     :::column-end:::
 :::row-end:::
 
-The developers shouldn't only be focusing on just their own code. Single codebase monolith applications of the past may giving place to microservices and distributed applications are made up of lots of moving parts, all of which are integral to their operation. Things like open-source libraries, or external services used by developers (hosted source code repositories for example) or services your application is dependent on, like an Azure Key Vault, or the major one of course being identity (authentication and authorization).
+The developers shouldn't only be focusing on just their own code. Single codebase monolith applications of the past give place to microservice architecture. Distributed applications are made up of lots of moving parts, all of which are integral to their operation. 
 
 :::row:::
     :::column:::
-        Weather with Azure DevOps or GitHub Advanced Security remember to
+        Weather with Azure DevOps, GitHub Advanced Security or any other service, remember to
         - Shift security left by automatically finding vulnerabilities early in your development workflows
         - Ensure the security and compliance of your open source components
         - Bring the expertise of top security researchers to your software projects
@@ -32,6 +32,7 @@ The developers shouldn't only be focusing on just their own code. Single codebas
     :::column-end:::
 :::row-end:::
 
+Shift left security. Don't treat security as an afterthought. The sooner we start addressing security considerations the easier and cheeper it is to implement them.
 Remember the Zero Trust principles and apply them in your apps in systems:
 
 -**Verify explicitly.** Always authenticate and authorize based on all available data points, including user, application and device identity, location etc.
@@ -43,6 +44,8 @@ Remember the Zero Trust principles and apply them in your apps in systems:
 We already broke out of silo-ed approach with bringing developers and operations together with DevOps. It's about time to make security experts and champions part of our team to ensure best security practices.
 
 Security code reviews, automation of security checks with SAST, DAST and SCA, and threat modeling can identify most of the OWASP Top 10 items.
+
+Be on a look out for unverified user input.
 
 Security is a journey, not a destination. With the right mindset, you can improve the quality and security standpoint of an application before you’ve even written a single line of code - by thinking about the design; think about what files you include in the project; the choices you make about libraries you use; how you handle security and authorization; where you store and build your code; how you deploy the application.
 
