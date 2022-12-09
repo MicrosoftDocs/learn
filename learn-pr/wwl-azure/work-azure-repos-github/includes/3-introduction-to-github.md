@@ -23,7 +23,7 @@ Using GitHub is free if your project is open source and includes a wiki and issu
      -  Stay on top of CVEs: Stay up to date with the latest Common Vulnerabilities and Exposures (CVEs), and learn how they affect you with the GitHub Advisory Database.
      -  Find vulnerabilities that other tools miss: CodeQL is the industry's leading semantic code analysis engine. GitHub's revolutionary approach treats code as data to identify security vulnerabilities faster.
      -  Eliminate variants: Never make the same mistake twice. Proactive vulnerability scanning prevents vulnerabilities from ever reaching production.
-     -  Keep your tokens safe: Accidentally committed a token to a public repository? GitHub got you. With support from 20 service providers, GitHub takes steps to keep you safe.
+     -  Keep your tokens safe: Accidentally commit a token to a public repository? GitHub got you. With support from 20 service providers, GitHub takes steps to keep you safe.
  -  Seamless code review: Code review is the surest path to better code and is fundamental to how GitHub works. Built-in review tools make code review an essential part of your team's process.
      -  Propose changes: Better code starts with a Pull Request, a living conversation about changes where you can talk through ideas, assign tasks, discuss details, and conduct reviews.
      -  Request reviews: If you are on the other side of a review, you can request reviews from your peers to get the detailed feedback you need.
