@@ -13,8 +13,9 @@ The best way to learn how to code in any language is to _write_ as much code as 
 ## Learning objectives
 
 After you've completed this module, you'll be able to:
-  - Manage PowerShell inputs and outputs.
-  - Diagnose errors when you type code incorrectly.
-  - Identify PowerShell elements such as cmdlets, parameters, inputs, and outputs.
+
+- Manage PowerShell inputs and outputs.
+- Diagnose errors when you type code incorrectly.
+- Identify PowerShell elements such as cmdlets, parameters, inputs, and outputs.
 
 This module gives you your first look at the PowerShell syntax. It provides invaluable insights and introduces many new ideas that will be expanded on in other modules.
