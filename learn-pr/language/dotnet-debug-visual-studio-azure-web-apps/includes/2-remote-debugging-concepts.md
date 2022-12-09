@@ -2,7 +2,7 @@ Visual Studio provides powerful remote debugging tools and features to troublesh
 
 * Connect to and debug an app hosted in one of many Azure services, such as app service instances or virtual machines.
 
-* Debug an app hosted from an on-premise server in IIS.
+* Debug an app hosted from an on-premises server in IIS.
 
 * Debug an app running on another development machine to assist with troubleshooting.
 
