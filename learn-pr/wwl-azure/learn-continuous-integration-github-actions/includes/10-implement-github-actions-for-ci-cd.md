@@ -10,7 +10,7 @@ In this lab, you'll learn how to implement a GitHub Action workflow that deploys
 
 After completing this lab, you'll be able to:
 
- -  Implement a GitHub Action workflow for CI/CD.<br>
+ -  Implement a GitHub Action workflow for CI/CD.
  -  Explain the basic characteristics of GitHub Action workflows.
 
 ## Requirements
