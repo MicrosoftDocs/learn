@@ -2,7 +2,7 @@ Visual Studio is an integrated development environment (IDE). It's popular for .
 
 :::image type="content" source="../media/intro-debug-1.png" alt-text="Screenshot of Visual Studio debugging a webapp called my first website":::
 
-## Visual Studio or VS Code?
+## How to choose between Visual Studio or VS Code?
 
 | Visual Studio                                                | VS Code                                     |
 |--------------------------------------------------------------|---------------------------------------------|
