@@ -1,8 +1,8 @@
 ## Training environment
 
-To prevent a thermal runaway, the brain manages the temperature of the coolant in the cooling jacket by raising or lowering the temperature in 30 second intervals (**d**). For the model, thermal runaway is defined as the reactor reaching or exceeding a temperature of 400 degrees Kelvin.
+To prevent a thermal runaway, the brain manages the temperature of the coolant in the cooling jacket by raising or lowering the temperature in 30-second intervals (**d**). For the model, thermal runaway is defined as the reactor reaching or exceeding a temperature of 400 degrees Kelvin.
 
-The model simulates the nonlinear process dynamics in 30 second timesteps with formulas derived from Reynolds Transport Theorem for unsteady energy balance. Coolant temperature (**Tc**) must be rate limited to 10 degrees Kelvin per minute (5 degrees Kelvin per timestep). As a result, the coolant temperature adjustment (**ΔT**, or **Tc_adjust**) is similarly rate limited such that the total change in coolant temperature across any two timesteps doesn't exceed 5 degrees Kelvin.
+The model simulates the nonlinear process dynamics in 30-second timesteps with formulas derived from Reynolds Transport Theorem for unsteady energy balance. Coolant temperature (**Tc**) must be rate limited to 10 degrees Kelvin per minute (5 degrees Kelvin per timestep). As a result, the coolant temperature adjustment (**ΔT**, or **Tc_adjust**) is similarly rate limited such that the total change in coolant temperature across any two timesteps doesn't exceed 5 degrees Kelvin.
 
 To simplify the sample, the simulation also makes the following assumptions:
 
@@ -23,13 +23,13 @@ On every training iteration, Bonsai receives a SimState object from the simulati
 - **Tc**: current absolute temperature of the coolant (**Tc = TcEQ + dTc**)
 - **dTc**: current coolant temperature adjustment relative to coolant equilibrium (**dTc = dTc_prev + ΔTc**)
 
-Note that the SimState is larger than the ObservableState described above. SimState often contains all the states a simulation computes during episode step based on the brain suggested action. Yet not all the states might be needed (or helpful) to learn how to control the environment. For the CSTR problem, we performed several training experiments until we tested that Tref & dTc were not needed for effective brain training across the 3 concepts: Steady State, Modify Concentration, and Select Strategy.
+Note that the SimState is larger than the ObservableState described above. SimState often contains all the states a simulation computes during episode step based on the brain suggested action. Yet not all the states might be needed (or helpful) to learn how to control the environment. For the CSTR problem, we performed several training experiments until we tested that Tref & dTc weren't needed for effective brain training across the three concepts: Steady State, Modify Concentration, and Select Strategy.
 
 ## Training the Bonsai brain
 
 After defining environment states, control actions, and simulation configurations and confirming that the training goals are correct, you can start to train your Brain. First, click on "**Train**” in the Bonsai UI.
 
-Start to train each one of the concepts of the brain Modify Concentration, Steady State, Select Strategy, sequentially, one after the other. To train each concept will take some time. Note that you won't be able to train SelectStrategy until both ModifyConcentration and SteadyState concepts have been fully trained.
+Start to train each one of the concepts of the brain Modify Concentration, Steady State, Select Strategy, sequentially, one after the other. To train each concept will take some time. You won't be able to train SelectStrategy until both ModifyConcentration and SteadyState concepts have been fully trained.
 
 If you expected the selector to be first, and not last, you aren't alone. Note, Bonsai displays selectors at the bottom mainly to mimic the training workflow. You can't train the selector if you haven’t first trained each of the concepts the selector depends on.
 
