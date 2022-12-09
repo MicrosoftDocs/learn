@@ -18,7 +18,7 @@ the risks that were identified.
 
 > [!Note] 
 > - Students who don't already have an Azure subscription can [sign up for one free](https://azure.microsoft.com/free/)
-> - Students who don't already have a Microsoft 365 subscription can setup an [M365 E5 sandbox subscription](https://learn.microsoft.com/office/developer-program/microsoft-365-developer-program-get-started)
+> - Students who don't already have a Microsoft 365 subscription can setup an [M365 E5 sandbox subscription](/office/developer-program/microsoft-365-developer-program-get-started)
 
 * [Microsoft Defender for Cloud Module 5 - Improving your Secure Posture](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-5-Improving-your-Secure-Posture.md)
 

@@ -17,7 +17,7 @@ security strategy and architecture. You should now be able to:
 
 > [!Note] 
 > - Students who don't already have an Azure subscription can [sign up for one free](https://azure.microsoft.com/free/)
-> - Students who don't already have a Microsoft 365 subscription can setup an [M365 E5 sandbox subscription](https://learn.microsoft.com/office/developer-program/microsoft-365-developer-program-get-started)
+> - Students who don't already have a Microsoft 365 subscription can setup an [M365 E5 sandbox subscription](/office/developer-program/microsoft-365-developer-program-get-started)
 
 * [Microsoft Sentinel Training Lab](https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/Training/Azure-Sentinel-Training-Lab) - eight modules covering data connectors, analytics rules, incident management, hunting, watchlists, threat intelligence, and the content hub.
 
