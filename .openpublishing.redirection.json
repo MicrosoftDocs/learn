@@ -19304,6 +19304,11 @@
       "source_path": "learn-pr/azure/intro-to-text-to-speech/index.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-your-first-text-to-speech-app/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/learn-continuous-integration-github-actions/10-implement-github-actions-by-using-devops-starter.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/learn-continuous-integration-github-actions/",
+      "redirect_document_id": false
     }
   ]
 }
