@@ -35,9 +35,9 @@ The output shows the type of object that the `Get-Process` command returns (`Sys
 
 ## Select-Object
 
-By default, when you run a command that is going to output to the screen, PowerShell automatically adds the command `Out-Default`. If the data is not just a collection of strings, but objects - PowerShell looks at the object type to determine if there is a registered view for that object type, and if so, it uses that view.
+By default, when you run a command that is going to output to the screen, PowerShell automatically adds the command `Out-Default`. If the data isn't just a collection of strings, but objects - PowerShell looks at the object type to determine if there's a registered view for that object type, and if so, it uses that view.
 
-The view generally doesn't contain all the properties of an object because it wouldn't display properly on screen, so only some of the most common properties are selected in the view.
+The view generally doesn't contain all the properties of an object because it wouldn't display properly on screen, so only some of the most common properties are included in the view.
 
 You can override the default view by using `Select-Object` and choosing your own list of properties. You can then send those properties to `Format-Table` or `Format-List`, to display the table however you like.
 
@@ -56,7 +56,7 @@ Consider the result of running `Get-Process` on the process `zsh`:
       0     0.00       1.16       0.31   68298 …98 zsh
 ```
 
-What you see is a view that represents what you most likely want to see from this command. However, this view does not show you a complete set of information. In order to see something different, you can explicitly specify which properties you want to see in the result.
+What you see is a view that represents what you most likely want to see from this command. However, this view doesn't show you a complete set of information. In order to see something different, you can explicitly specify which properties you want to see in the result.
 
 ### Getting the full response
 
@@ -66,13 +66,13 @@ What you've seen so far is a limited response. To present the full response, you
 Get-Process zsh | Format-List -Property *
 ```
 
-The `*` character shows you every attribute and its value, which allows you to investigate the values you are interested in. The full response also uses presentation names for properties instead of the actual property names, and presentation names look good in a report.
+The `*` character shows you every attribute and its value, which allows you to investigate the values you're interested in. The full response also uses presentation names for properties instead of the actual property names, and presentation names look good in a report.
 
 Despite these benefits, you may not want a full output of data, but you may not be content with the default response either.
 
 ### Selecting specific columns
 
-To limit the response and find a middle ground between the default response and the full response, you want to select some properties you are interested in and have that as parameter input to `Select-Object`. But, and here's a problem, you need to use the real names for the columns. How do you find out the real names? Use `Get-Member`. A call to `Get-Member` gives you all the properties and their actual names.
+To limit the response and find a middle ground between the default response and the full response, you want to select some properties you're interested in and have that as parameter input to `Select-Object`. But, and here's a problem, you need to use the real names for the columns. How do you find out the real names? Use `Get-Member`. A call to `Get-Member` gives you all the properties and their actual names.
 
 ### Finding the real property name
 
@@ -140,7 +140,7 @@ By providing properties, you can choose to sort by specific columns, like so:
 Get-Process | Sort-Object -Descending -Property Name
 ```
 
-In the preceding command, we are sorting by the column `Name` in descending order. To sort by more than one column, separate the column names with a comma, like so:
+In the preceding command, we're sorting by the column `Name` in descending order. To sort by more than one column, separate the column names with a comma, like so:
 
 ```powershell
 Get-Process | Sort-Object -Descending -Property Name, CPU
