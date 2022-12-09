@@ -176,6 +176,8 @@ Next, you need to deploy the app to Azure so others can use it to browse reposit
    > [!NOTE]
    > For the sandbox environment, you may need to wait a few moments until the values become available in the dialog.
 
+    :::image type="content" source="../media/visual-studio-remote-debug-loading-subscription.png" alt-text="A screenshot of selecting your subscription in the create app service workflow.":::
+
     | Setting | Value  |
     | --- | --- |
     | **Name** |  Enter `GitHubBrowser123`, where `123` are three random numbers of your choosing to ensure your App Service name and domain is unique across Azure. |
