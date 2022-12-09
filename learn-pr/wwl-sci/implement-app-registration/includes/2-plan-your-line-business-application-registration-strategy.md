@@ -1,4 +1,4 @@
-This unit looks at why applications integrate with Azure AD? Add applications to Azure AD to apply one or more of the services it provides, including:
+This unit looks at why applications integrate with Azure Active Directory (Azure AD), part of Entra? Add applications to Azure AD to apply one or more of the services it provides, including:
 
  -  Application authentication and authorization.
  -  User authentication and authorization.
