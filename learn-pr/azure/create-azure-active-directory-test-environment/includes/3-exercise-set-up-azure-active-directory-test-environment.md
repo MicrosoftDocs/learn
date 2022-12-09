@@ -20,7 +20,7 @@ When setting up your application's Azure Active Directory (Azure AD) test enviro
 
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
-Recall that in the sales team dashboard example, your development team chose to set up a test environment in a separate Azure AD tenant.  Some of the key factors for making this decision were:
+Recall that in the sales team dashboard example, your development team chose to set up a test environment in a separate Azure AD tenant.  Here are some of the key factors the team reviewed while making this decision:
 
 - You want to set up a CI/CD pipeline that automates building, testing, and deploying the web app.  Creating test users and test app registrations in the production tenant are high-privilege operations, since they require admin permissions.
 - The administrators reviewed your request for automatically creating test users and test data in the production tenant and didn't approve.
@@ -39,7 +39,7 @@ Recall that in the sales team dashboard example, your development team chose to 
 
     Optional: a video that shows the end-state
 -->
-In this exercise, you setup your test environment in Azure AD by creating a separate test tenant, adding a test user, and creating an app registration.
+In this exercise, you will set up your test environment in Azure AD by creating a separate test tenant, adding a test user, and creating an app registration.  If you have access to the production tenant, it's also recommended that you populate the test tenant with policies that are in your production tenant. 
 
 <!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
@@ -64,7 +64,7 @@ In this exercise, you setup your test environment in Azure AD by creating a sepa
 
 ## Get a test tenant
 
-If you don't already have a dedicated test tenant in Azure AD, you can create one for free.  You can [manually create a new tenant](/azure/active-directory/develop/quickstart-create-new-tenant), which will be empty upon creation and will have to be configured with test data and test users.  Microsoft recommends you join the Microsoft 365 Developer Program, which is free and can be used to easily setup an Azure AD tenant.  The Microsoft 365 Developer Program also includes a Microsoft 365 E5 developer subscription that you can use to create your own sandbox and develop solutions independent of your production environment. You can build Microsoft Teams apps, Office Add-ins for Word, Excel, PowerPoint, or Outlook, or SharePoint Add-ins, using Microsoft Graph, the SharePoint Framework, Power Apps, and more.
+If you don't already have a dedicated test tenant in Azure AD, you can create one for free.  You can [manually create a new tenant](/azure/active-directory/develop/quickstart-create-new-tenant), which will be empty upon creation and will have to be configured with test data and test users.  Microsoft recommends you join the Microsoft 365 Developer Program, which is free and can be used to easily set up an Azure AD tenant.  The Microsoft 365 Developer Program also includes a Microsoft 365 E5 developer subscription that you can use to create your own sandbox and develop solutions independent of your production environment. You can build Microsoft Teams apps, Office Add-ins for Word, Excel, PowerPoint, or Outlook, or SharePoint Add-ins, using Microsoft Graph, the SharePoint Framework, Power Apps, and more.
 
 1. Go to the [Join the Microsoft 365 Developer Program](/office/developer-program/microsoft-365-developer-program#join-the-microsoft-365-developer-program) page.
 1. Select the **Join now** button on the screen.
@@ -77,7 +77,7 @@ When you're finished setting up your subscription, you can optionally set up you
 
 ## Populate your tenant with users
 
-If you didn't use a Microsoft 365 developer subscription to add test users to your tenant, or those test users don't meet your testing needs, you can add more yourself.
+If you didn't use a Microsoft 365 developer subscription to add test users to your tenant, or those test users don't meet your testing needs, you can add more yourself.  To create users, the account running the code needs Global Administrator or User Administrator role in the directory.
 
 For convenience, you may want to invite yourself and other members of your development team to be guest users in the tenant. This will create separate guest objects in the test tenant, but means you only have to manage one set of credentials for your corporate account and your test account.
 
@@ -110,9 +110,13 @@ echo "created user $TESTUSERNAME with password $TESTPASSWORD"
 
 ## Create and configure an app registration
 
-You'll need to create an app registration for your web app to use in your test environment. This should be a separate registration from your eventual production app registration, to maintain security isolation between your test environment and your production environment. How you configure your application depends on the type of app you're building.  For confidential client applications, you'll need to add a client secret. For public client applications, you can skip this step.
+You'll need to create an app registration for your web app to use in your test environment. This should be a separate registration from your eventual production app registration, to maintain security isolation between your test environment and your production environment.
 
-The following script creates an app registration for a single tenant web app.
+How you configure your application depends on the type of app you're building.  For confidential client applications, you'll need to add a client secret. For public client applications, you can skip this step. A redirect URI, or reply URL, is the location where the authorization server sends the user once the app has been successfully authorized and granted an authorization code or access token. The authorization server sends the code or token to the redirect URI, so it's important you register the correct location as part of the app registration process. The identifier URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique.
+
+The following script creates an app registration for a single tenant web app.  The signed-in user is given User.Read delegated permissions in Microsoft Graph. The web application can request an ID token using the OAuth 2.0 implicit flow.  To create an app registration, the account running the code needs Global Administrator or Application Administrator role in the directory.  
+
+To find the tenant ID, sign into the [Azure portal](https://portal.azure.com) and select **Azure Active Directory**.  On your test tenant's **Overview** page, find the **tenant ID** value.
 
 ```azurecli-interactive
 WEBAPPNAMETEST="mytestwebapp444"
@@ -143,7 +147,7 @@ echo "Registered app: $appIdTest"
 
 # Set identifier URI, homepage, redirect URI, and resource access
 az ad app update --id $appIdTest --identifier-uris api://$appIdTest --web-redirect-uris $redirectUriTest  --web-home-page-url $homePageUrlTest --required-resource-accesses @manifest.json
-echo "Updated app regisration settings"
+echo "Updated app registration settings"
 
 # Add client secret with expiration. The default is one year. 
 # The client secret is saved in the variable and can be displayed with the echo command. Make a note of it as it isn't visible on the portal. 
@@ -159,7 +163,7 @@ If you want to fully test Azure AD premium features on your application, you'll 
 
 If you signed up using the Microsoft 365 Developer program, your test tenant will come with Azure AD P2 licenses. If not, you can still enable a [free trial of Azure AD premium](https://azure.microsoft.com/free/active-directory/).
 
-## Populate your tenant with policies
+## Populate your tenant with policies (recommended)
 
 If your app will primarily be used by a single organization (commonly referred to as single tenant), and you have access to that production tenant, then you should try to replicate the settings of your production tenant that can affect your app's behavior. That will lower the chances of unexpected errors when operating in production.
 
@@ -225,11 +229,11 @@ Replicating permission grant policies ensures you don't encounter unexpected pro
 
 ## Check your work
 
-At this point, you should have a separate tenant set up in Azure AD for application testing.  You should also have a test user created and an app registration you can use for testing a web app.  To verify:
+At this point, you should have set up a separate tenant in Azure AD for application testing.  You should also have a test user created and an app registration you can use for testing a web app.  To verify:
 
 1. In the Azure portal, select **Azure Active Directory** from the list of services.
 1. Select **Users** from the left nav.
-1. In the list of users, verify that the guest users you invited appear in the list as well as any test user accounts you created.
+1. In the list of users, verify that the guest users you invited and any other test users you created appear in the list.
 1. Close the **Users** view.
 1. Select **App registrations** from the left nav.
 1. Select the **All applications** tab.

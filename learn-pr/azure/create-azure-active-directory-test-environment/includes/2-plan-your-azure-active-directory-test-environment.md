@@ -18,7 +18,7 @@ To help move your app through the development, test, and production lifecycle, y
 
     Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
 -->
-Recall that in the sales team dashboard example, managers use an internal web app to manage their direct reports and help them meet their targets.  Managers sign in to the web app and can view confidential information for themselves and the employees that report to them, internal sales goals, and upcoming product release dates.  To better secure access to the sales team dashboard, administrators recently enabled Azure AD Multi-Factor Authentication to prompt users for extra verification information during sign-in. Testing your application in your production Azure AD tenant would be simpler and easier, but can you safely constrain the test application in the production environment?  Will the administrators approve the creation of test users and test data in production environment?  How can your tests use automated sign-ins for integration testing when user interaction is required (through multi-factor authentication)?
+Recall that in the sales team dashboard example, managers use an internal web app to manage their direct reports and help them meet their targets.  Managers sign in to the web app and can view confidential information for themselves and the employees that report to them, internal sales goals, and upcoming product release dates.  To better secure access to the sales team dashboard, administrators recently enabled Azure AD Multi-Factor Authentication to prompt users for extra verification information during sign-in. Testing your application in your production Azure AD tenant would be simpler and easier, but can you safely constrain the test application in the production environment?  Will the administrators approve the creation of test users and test data in the production environment?  How can your integration tests use automated sign-ins when user interaction is required (through multi-factor authentication)?
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------
 
@@ -57,7 +57,7 @@ Your task is to decide between using an Azure AD tenant dedicated to testing or 
 
 Using a production tenant can make some aspects of application testing easier, but it requires the right level of isolation between test and production resources. Isolation is especially important for high-privilege scenarios.
 
-Don't use your production Azure AD tenant if:
+Don't use your production Azure AD tenant for testing if:
 
 - Your application uses settings that require tenant-wide uniqueness. For example, your app might need to access tenant resources as itself, not on behalf of a user, by using app-only permissions. App-only access requires admin consent, which applies to the entire tenant. Such permissions are hard to scope down safely within a tenant boundary.
 - You have low tolerance of risk for potential unauthorized access of test resources by tenant members.
