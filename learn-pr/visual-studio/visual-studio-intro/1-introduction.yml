@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.visual-studio.visual-studio-intro.1-introduction
-title: Introduction
+title: "Let's get started!"
 metadata:
-  title: Introduction
+  title: "Let's get started"
   description: What is Visual Studio and how is it different from Visual Studio code? This module will cover the main features in the Visual Studio IDE including the editor, debugger, customizations, and more!
   author: anandmeg
   ms.author: meghaanand
