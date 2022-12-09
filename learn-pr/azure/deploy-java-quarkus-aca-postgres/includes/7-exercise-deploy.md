@@ -63,14 +63,18 @@ Your container app ca-azure-deploy-quarkus has been created and deployed! Congra
 ![Screenshot showing the deployed application.](../media/azure-portal.png)
 
 
-
-
+```bash
+az resource list \
+    --location "$AZ_LOCATION" \
+    --resource-group "$AZ_RESOURCE_GROUP" \
+    --output table
+```
 
 ## Execute the Azure Container Apps application
 
 
 ```bash
-APP_URL=$(
+AZ_APP_URL=$(
     az containerapp show \
         --name "$AZ_CONTAINERAPP" \
         --resource-group "$AZ_RESOURCE_GROUP" \
@@ -78,7 +82,7 @@ APP_URL=$(
         --output tsv \
 )
 
-echo "APP_URL=$APP_URL"
+echo "AZ_APP_URL=$AZ_APP_URL"
 ```
 
 When the deployment finishes, your application is ready at `https://<appName>.azurecontainerapps.io/`. Notice the `https` protocol. This is because the application is deployed with a TLS certificate.
@@ -91,13 +95,13 @@ As you redeployed your application, you cleared the database. Now you need to cr
 curl --header "Content-Type: application/json" \
     --request POST \
     --data '{"description":"configuration","details":"congratulations, you have set up your Quarkus application correctly!","done": "true"}' \
-    https://<value of $APP_URL>/api/todos
+    https://<value of $AZ_APP_URL>/api/todos
 ```
 
 Retrieve the data by using a new `cURL` request:
 
 ```bash
-curl https://<value of $APP_URL>/api/todos
+curl https://<value of $AZ_APP_URL>/api/todos
 ```
 
 This command returns the list of to-do items, including the item you created:
@@ -119,7 +123,7 @@ Execute more curl commands, and you should see the logs scrolling in the termina
 
 
 ```bash
-curl https://<value of $APP_URL>/api/todos
+curl https://<value of $AZ_APP_URL>/api/todos
 ```
 
 > [!NOTE]

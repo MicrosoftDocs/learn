@@ -35,7 +35,7 @@ In your code, replace the placeholders with the values in the following table. T
 | `AZ_LOCATION` | The Azure region you'll use. We recommend that you use a region close to where you live. To see the full list of available regions, enter `az account list-locations` |
 | `AZ_CONTAINERAPP` | The name of the Azure Container Apps holding all the containers |
 | `AZ_CONTAINERAPP_ENV` | The name of the Azure Container Apps environement |
-| `AZ_POSTGRES_SERVER_NAME` | The name of your PostgreSQL server. It should be unique across Azure. |
+| `AZ_POSTGRES_SERVER_NAME` | The name of your PostgreSQL server (nonalphanumeric characters are not allowed (-, _, !, $, #, %, etc.)). It should be unique across Azure. |
 | `AZ_POSTGRES_DB_NAME` | The name of the default PostgreSQL database is `postgres`. |
 | <YOUR_POSTGRES_USERNAME> | The username of your PostgreSQL database server. The username should have a minimum of eight characters. The characters should be from three of the following categories: English uppercase letters, English lowercase letters, numbers 0 through 9, and nonalphanumeric characters (!, $, #, %, and so on). |
 | <YOUR_POSTGRES_PASSWORD> | The password of your PostgreSQL database server. The password should have a minimum of eight characters. The characters should be from three of the following categories: English uppercase letters, English lowercase letters, numbers 0 through 9, and nonalphanumeric characters (!, $, #, %, and so on). |

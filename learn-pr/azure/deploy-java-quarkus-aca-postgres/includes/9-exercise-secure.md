@@ -44,7 +44,7 @@ Unable to connect to flexible server
 
 
 ```bash
-curl https://<value of $APP_URL>/api/todos
+curl https://<value of $AZ_APP_URL>/api/todos
 ```
 
 
