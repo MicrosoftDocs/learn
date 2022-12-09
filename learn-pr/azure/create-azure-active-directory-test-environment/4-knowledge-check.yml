@@ -57,6 +57,6 @@ quiz:
     - content: "The *user-principal-name* property value is empty or isn't formatted properly."
       isCorrect: false
       explanation: "Try again. If the *user-principal-name* property value was mis-formatted, the 'Property userPrincipalName is invalid.' error would be returned."
-    - content: "The account running the AZ CLI script does have Global Administrator or User Administrator role."
+    - content: "The account running the AZ CLI script does not have Global Administrator or User Administrator role."
       isCorrect: true
       explanation: "Correct. To create a new user, the account running the AZ CLI script must have Global Administrator or User Administrator role."
