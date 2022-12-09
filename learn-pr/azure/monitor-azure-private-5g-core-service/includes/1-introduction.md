@@ -50,6 +50,10 @@ To satisfy the specific monitoring requirements of an enterprise, you'll need to
 
 Different tools may define different alert levels. For example, in the packet core dashboards, you may see critical, major, or minor alerts. Among these alerts, the critical alerts have the highest priority and should be handled first.
 
+The following screenshot shows an example packet core **Alert** dashboard with five critical alerts:
+
+:::image type="content" source="../media/packet-core-alerts-dashboard.png" alt-text="A packet core Alert dashboard showing five major alerts." border="true":::
+
 Based on the business needs of an enterprise, you should also define a set of key metrics to monitor.
 
 In general, pay special attention to the following metrics:
