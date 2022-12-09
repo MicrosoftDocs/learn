@@ -47,7 +47,7 @@ The Microsoft Purview Data Map supports labeling structured and unstructured dat
 Labels are defined in Microsoft Purview Information Protection, and you can extend the application to Microsoft Purview Data Catalog. 
 
 The screenshot below shows both data classification and label in the Microsoft Purview Data Catalog. You can see that this Azure SQL table has a column called “CreditCard”:
-- Classified as “Credit Card Number” because scan detected numbers corresponding to credit card patter rules.
+- Classified as “Credit Card Number” because scan detected numbers corresponding to credit card pattern rules.
 - Labeled as “Confidential – Finance” because credit card number was defined in your organization as confidential information (and this label brings encryption).
 
 > [!div class="mx-imgBorder"]
