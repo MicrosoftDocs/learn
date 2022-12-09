@@ -6,7 +6,9 @@ metadata:
   description: "Enable Dynamic Configuration Feature Flags"
   ms.date: 12/09/2022
   author: wwlpublish
+  ms.author: lumac
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 60
