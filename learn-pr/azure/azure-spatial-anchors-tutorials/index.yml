@@ -42,7 +42,7 @@ units:
 - learn.azure.azure-spatial-anchors-tutorials-mrtk.2-get-started-with-azure-spatial-anchors
 - learn.azure.azure-spatial-anchors-tutorials-mrtk.3-exercise-get-started-with-azure-spatial-anchors
 - learn.azure.azure-spatial-anchors-tutorials-mrtk.4-knowledge-check
-- learn.azure.azure-spatial-anchors-tutorials-mrtk.5-summary
+- learn.azure.azure-spatial-anchors-tutorials-mrtk.11-summary
 
 badge:
   uid: learn.azure.azure-spatial-anchors-tutorials-mrtk.badge
