@@ -167,7 +167,7 @@ Next, you need to deploy the app to Azure so others can use it to browse reposit
 
 6. Select the subscription you would like to deploy to.
 
-   For the Learn sandbox environment, first click the **Refresh** button if you don't see `Concierge Subscription`.
+   For the Learn sandbox environment, first click the **Refresh** button if you don't see `Concierge Subscription`. Then select it.
 
     :::image type="content" source="../media/visual-studio-remote-debug-select-subscription.png" alt-text="A screenshot of selecting your subscription in the create app service workflow.":::
 
