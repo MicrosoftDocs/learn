@@ -3,7 +3,15 @@ In this module you learned how to specify security baselines for PaaS workloads,
 
 You also learned the security requirements for Azure App Service and how to use Microsoft Defender for App Service to provide posture management and threat detection for this type of workload. You learned about the requirements for data and storage workloads, and how Microsoft Purview can help with data classification and labeling. Lastly, you learned about the security requirements for containers and container orchestration.
 
-Visit the links below for more information about the topics covered in this module:
+## Learn more with optional hands-on exercises
+
+> [!Note] 
+> - Students who don't already have an Azure subscription can [sign up for one free](https://azure.microsoft.com/free/)
+> - Students who don't already have a Microsoft 365 subscription can setup an [M365 E5 sandbox subscription](https://learn.microsoft.com/office/developer-program/microsoft-365-developer-program-get-started)
+
+* [Microsoft Defender for Cloud Module 6 - Workload Protections](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-6-Azure-Defender.md)
+
+## Learn more with security documentation
 
 * [Best practices for secure PaaS deployments](/azure/security/fundamentals/paas-deployments)
 * [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise - Deploy Office](/deployoffice/admincenter/overview-office-cloud-policy-service)

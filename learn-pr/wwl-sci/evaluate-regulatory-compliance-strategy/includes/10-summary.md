@@ -16,7 +16,15 @@ design data residency requirements and translate privacy requirements
 into security solutions with proper data classification and identity
 protection.
 
-## More information
+## Learn more with optional hands-on exercises
+
+> [!Note] 
+> - Students who don't already have an Azure subscription can [sign up for one free](https://azure.microsoft.com/free/)
+> - Students who don't already have a Microsoft 365 subscription can setup an [M365 E5 sandbox subscription](https://learn.microsoft.com/office/developer-program/microsoft-365-developer-program-get-started)
+
+* [Microsoft Defender for Cloud Module 4 - Regulatory Compliance](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-4-Regulatory-Compliance.md)
+
+## Learn more with security documentation
 
 Visit the links below for more information about the topics covered in
 this module:
@@ -30,6 +38,9 @@ this module:
 * [HIPAA HITRUST 9.2](/azure/governance/policy/samples/hipaa-hitrust-9-2)
 * Visit Azure Compliance offerings to learn more about the industries
 that are covered by Azure from the compliance perspective: [Azure and other Microsoft cloud services compliance offerings - Azure Compliance](/azure/compliance/offerings/)
+
+## Learn more with video content
+
 * Watch [this webinar](https://youtu.be/tD8JnqzNOPc) for more
 information on how to track your regulatory compliance. Although this
 webinar was delivered when Microsoft Defender for Cloud was called Azure
