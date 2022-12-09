@@ -12,3 +12,5 @@ Enterprises that deploy a private mobile network with Azure Private 5G Core have
 - [Azure private 5G Core product information](https://azure.microsoft.com/products/private-5g-core/)
 - [Azure private multi-access edge compute (MEC) solution information](https://azure.microsoft.com/solutions/private-multi-access-edge-compute-mec/)
 - [Deploy private 5G networks on Azure](/azure/architecture/industries/telecommunications/deploy-private-mobile-network)
+- [Introduction to 5G](https://www.linkedin.com/learning/introduction-to-5g)
+- [Introduction to 4G Mobile Communications](https://ieeexplore.ieee.org/document/9100268)
