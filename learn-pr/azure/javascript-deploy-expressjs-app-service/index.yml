@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Deploy Node.js to Azure App Service
   description: "Deploy an Node.js web app with APIs to Azure App Service."
-  ms.date: 10/17/2022
+  ms.date: 11/30/2022
   author: diberry
   ms.author: diberry
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ prerequisites: |
   - Familiarity with deployment concepts such as deploying from local computer
   - Configuring web app such as configuring logging
   - Finding and resolving cloud app runtime issues 
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/js-data-web-app-to-azure-app-service.svg
 levels: # see level taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - intermediate
 roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role

@@ -15,6 +15,6 @@ You'll write simple queries in KQL to explore and gain insights from a sample da
 - Reorder returned data by using the `sort` operator.
 - Build queries by using multiple operators.
 
-## What is the main goal?
+## What's the main goal?
 
 By the end of this session, you'll be able to write a query with the most commonly used operators.
