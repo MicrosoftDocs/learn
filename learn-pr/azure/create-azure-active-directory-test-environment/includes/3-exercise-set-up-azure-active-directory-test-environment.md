@@ -77,7 +77,7 @@ When you're finished setting up your subscription, you can optionally set up you
 
 ## Populate your tenant with users
 
-If you didn't use a Microsoft 365 developer subscription to add test users to your tenant, or those test users don't meet your testing needs, you can add more yourself.
+If you didn't use a Microsoft 365 developer subscription to add test users to your tenant, or those test users don't meet your testing needs, you can add more yourself.  To create users, the account running the code needs Global Administrator or User Administrator role in the directory.
 
 For convenience, you may want to invite yourself and other members of your development team to be guest users in the tenant. This will create separate guest objects in the test tenant, but means you only have to manage one set of credentials for your corporate account and your test account.
 
@@ -110,9 +110,13 @@ echo "created user $TESTUSERNAME with password $TESTPASSWORD"
 
 ## Create and configure an app registration
 
-You'll need to create an app registration for your web app to use in your test environment. This should be a separate registration from your eventual production app registration, to maintain security isolation between your test environment and your production environment. How you configure your application depends on the type of app you're building.  For confidential client applications, you'll need to add a client secret. For public client applications, you can skip this step.
+You'll need to create an app registration for your web app to use in your test environment. This should be a separate registration from your eventual production app registration, to maintain security isolation between your test environment and your production environment.
 
-The following script creates an app registration for a single tenant web app.
+How you configure your application depends on the type of app you're building.  For confidential client applications, you'll need to add a client secret. For public client applications, you can skip this step. A redirect URI, or reply URL, is the location where the authorization server sends the user once the app has been successfully authorized and granted an authorization code or access token. The authorization server sends the code or token to the redirect URI, so it's important you register the correct location as part of the app registration process. The identifier URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique.
+
+The following script creates an app registration for a single tenant web app.  The signed-in user is given User.Read delegated permissions in Microsoft Graph. The web application can request an ID token using the OAuth 2.0 implicit flow.  To create an app registration, the account running the code needs Global Administrator or Application Administrator role in the directory.  
+
+To find the tenant ID, sign into the [Azure portal](https://portal.azure.com) and select **Azure Active Directory**.  On your test tenant's **Overview** page, find the **tenant ID** value.
 
 ```azurecli-interactive
 WEBAPPNAMETEST="mytestwebapp444"
@@ -143,7 +147,7 @@ echo "Registered app: $appIdTest"
 
 # Set identifier URI, homepage, redirect URI, and resource access
 az ad app update --id $appIdTest --identifier-uris api://$appIdTest --web-redirect-uris $redirectUriTest  --web-home-page-url $homePageUrlTest --required-resource-accesses @manifest.json
-echo "Updated app regisration settings"
+echo "Updated app registration settings"
 
 # Add client secret with expiration. The default is one year. 
 # The client secret is saved in the variable and can be displayed with the echo command. Make a note of it as it isn't visible on the portal. 

@@ -49,3 +49,14 @@ quiz:
     - content: "The Microsoft 365 Developer Program doesn't include a Microsoft 365 E5 developer subscription, which can be used to create their own sandbox and develop solutions independent of their production environment."
       isCorrect: false
       explanation: "Try again. The Microsoft 365 Developer Program does include a Microsoft 365 E5 developer subscription as well as many other benefits that make it easier and faster to set up a test environment."
+  - content: "When running the `az ad user create` Azure CLI command to create a user, the following error is returned: 'Insufficient privileges to complete the operation.' What might be the cause?"
+    choices:
+    - content: "The *password* property is empty or isn't formatted correctly."
+      isCorrect: false
+      explanation: "Try again. If the *password* property value was mis-formatted, the 'The specified password does not comply with password complexity requirements. Please provide a different password.' error would be returned."
+    - content: "The *user-principal-name* property value is empty or isn't formatted properly."
+      isCorrect: false
+      explanation: "Try again. If the *user-principal-name* property value was mis-formatted, the 'Property userPrincipalName is invalid.' error would be returned."
+    - content: "The account running the AZ CLI script does have Global Administrator or User Administrator role."
+      isCorrect: true
+      explanation: "Correct. To create a new user, the account running the AZ CLI script must have Global Administrator or User Administrator role."
