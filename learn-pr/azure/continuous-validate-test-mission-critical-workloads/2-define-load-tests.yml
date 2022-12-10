@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.continuous-validate-test-mission-critical-workloads.define-load-tests
-title: Define load tests
+title: Define load tests based on key user flows
 metadata:
-  title: Define load tests
-  description: Define load tests.
-  ms.date: 11/11/2022
+  title: Define load tests based on key user flows
+  description: Understand what the most important user flows are and design load tests based on these user flows.
+  ms.date: 12/08/2022
   author: PageWriter-MSFT
-  ms.author: prwilk
+  ms.author: sebader
   ms.topic: interactive-tutorial
   ms.prod: learning-azure #TBD
 durationInMinutes: 5 #TBD
@@ -16,36 +16,27 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "Question 1"
+  - content: "Are all user and system flows always equally important?"
     choices:
-    - content: "Option 1."
+    - content: "Yes"
+      isCorrect: false
+      explanation: ""
+    - content: "No"
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-  - content: "Question 2"
+      explanation: ""
+  - content: "Does an outage of a component always result in a service degradation?"
     choices:
-    - content: "Option 1."
+    - content: "Yes"
+      isCorrect: false
+      explanation: ""
+    - content: "No"
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-  - content: "Question 3"
+      explanation: ""
+  - content: "Can a load test help to evaluate the expected performance of a user flow?"
     choices:
-    - content: "Option 1."
+    - content: "Yes"
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
+      explanation: ""
+    - content: "No"
       isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
+      explanation: ""

@@ -4,9 +4,9 @@ title: Design chaos experiments
 metadata:
   title: Design chaos experiments
   description: Design chaos experiments.
-  ms.date: 11/11/2022
+  ms.date: 12/09/2022
   author: PageWriter-MSFT
-  ms.author: prwilk
+  ms.author: sebader
   ms.topic: interactive-tutorial
   ms.prod: learning-azure #TBD
 durationInMinutes: 5 #TBD
@@ -16,37 +16,40 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "Question 1"
+  - content: "Is it the goal of a chaos experiment to break your application?"
     choices:
-    - content: "Option 1."
+    - content: "Yes"
+      isCorrect: false
+      explanation: ""
+    - content: "No"
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-  - content: "Question 2"
+      explanation: ""
+  - content: "Which services does Azure Chaos Studio support?"
     choices:
-    - content: "Option 1."
+    - content: "Azure App Service"
+      isCorrect: false
+      explanation: ""
+    - content: "Azure Virtual Machines"
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
+      explanation: ""
+    - content: "Azure Kubernetes Service (AKS)"
+      isCorrect: true
+      explanation: ""
+    - content: "Azure Cache for Redis"
+      isCorrect: true
+      explanation: ""
+    - content: "Azure Functions"
       isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-  - content: "Question 3"
+      explanation: ""      
+  - content: "Before you can run an experiment against a service from Azure Chaos Studio, what do you need to enable?"
     choices:
-    - content: "Option 1."
+    - content: "Target"
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
+      explanation: ""
+    - content: "Capability"
+      isCorrect: true
+      explanation: ""
+    - content: "Availability zones"
       isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
+      explanation: ""
 
