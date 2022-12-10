@@ -25,7 +25,7 @@ roles:
   - higher-ed-educator
   - school-leader
 products:
-  - vs-code
+  - azure
 prerequisites: |
   - Basic Python knowledge
   - Basic understanding of PyBryt annotations and reference implementations
