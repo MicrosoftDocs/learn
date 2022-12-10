@@ -1,4 +1,4 @@
-When you work with PowerShell, _filtering_ and _formatting_ are important concepts to understand, for a couple of reasons. First, you want to create a pipeline that produces the result you want. Second, you want to do so efficiently, in terms of both how you pull data over the network and how you ensure that the result is something you can work with.
+When you work with PowerShell, _filtering_ and _formatting_ are important concepts to understand, for a couple of reasons. First, you want to create a pipeline that produces the result you want. Second, you want to do so efficiently, in terms of how you pull data over the network and how you ensure that the result is something you can work with.
 
 ## Filtering left
 
