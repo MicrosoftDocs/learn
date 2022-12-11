@@ -153,7 +153,7 @@ In this section you will open your terminal and create some variables that will 
     A batch of 3 messages has been published to the queue.
     ```
 
-1. Login to the Azure portal and navigate to your Service Bus namespace. On the Overview page, select the *az204-queue* queue in the bottom-middle pane. 
+1. Login in to the Azure portal and navigate to your Service Bus namespace. On the Overview page, select the *az204-queue* queue in the bottom-middle pane. 
 
 
     :::image type="content" source="../media/service-bus-queue.png" alt-text="Select az204-queue in the bottom-middle pane.":::

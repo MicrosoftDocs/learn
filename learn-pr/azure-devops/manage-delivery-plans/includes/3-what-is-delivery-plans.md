@@ -10,7 +10,7 @@ Mara created a delivery plan and added the sprints for her team and the game eng
 
 :::image type="content" source="../media/3-delivery-plan-before.png" alt-text="Screenshot of a delivery plan showing schedules for the Web team and the Engine team.":::
 
-**Mara:** Delivery Plans allows us to create a "delivery plan". Once we create that, we can add in the backlogs of teams within the organization. They are shown in parallel so that we can see what each team is planning to deliver against a calendar backdrop.
+**Mara:** Delivery Plans allows us to create a "delivery plan". Once we create that, we can add in the backlogs of teams within the organization. They're shown in parallel so that we can see what each team is planning to deliver against a calendar backdrop.
 
 **Andy:** This view looks great! Now we know when something we're dependent on won't be available in time. We can even gauge the likelihood of delay based on how much other work and dependencies those teams have taken on. This should help mitigate some of the "schedule chicken" behavior that sometimes goes on around here.
 

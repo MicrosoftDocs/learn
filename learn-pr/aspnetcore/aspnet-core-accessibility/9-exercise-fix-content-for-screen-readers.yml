@@ -7,7 +7,7 @@ metadata:
   author: jongalloway
   ms.author: jogallow
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
   
 title: Exercise - Find and fix content for screen reader accessibility
 durationInMinutes: 10

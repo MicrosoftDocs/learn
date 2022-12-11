@@ -31,7 +31,7 @@ Now you have:
 - [What is Traffic Manager?](/azure/traffic-manager/traffic-manager-overview)
 - [Virtual network traffic routing](/azure/virtual-network/virtual-networks-udr-overview)
 - [What is Azure Firewall?](/azure/firewall/overview)
-- [Azure DDoS Protection Standard overview](/azure/virtual-network/ddos-protection-overview)
+- [Azure DDoS Protection overview](/azure/virtual-network/ddos-protection-overview)
 - [VPN Gateway documentation](/azure/vpn-gateway/)
 - [What is Azure Front Door?](/azure/frontdoor/front-door-overview)
 - [The virtual datacenter: A network perspective](/azure/cloud-adoption-framework/reference/networking-vdc)

@@ -6,6 +6,7 @@ metadata:
   ms.date: 03/18/2022
   author: ggailey777
   ms.author: glenga
+  manager: jmartens
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Develop, test, and deploy an Azure Function with Visual Studio
