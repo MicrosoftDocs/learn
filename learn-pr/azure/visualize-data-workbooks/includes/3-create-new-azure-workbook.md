@@ -124,4 +124,3 @@ The first thing we will do is activate the Azure sandbox and deploy an ARM templ
     :::image type="content" source="../media/3-workbook-with-map.png" alt-text="Screenshot that shows an Azure workbook with a map displaying a subscription's resources.":::
 1. Select **Save**.
 1. Enter a name for your workbook, and select the resource group and subscription.
-1. 
