@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.data-ai.implement-data-streaming-with-asa
 metadata:
-  title: Implement a Data Streaming Solution with Azure Streaming Analytics
-  description: Implement a Data Streaming Solution with Azure Streaming Analytics
-  ms.date: 01/06/2022
+  title: Implement a Data Streaming Solution with Azure Stream Analytics
+  description: Implement a Data Streaming Solution with Azure Stream Analytics
+  ms.date: 12/12/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Implement a Data Streaming Solution with Azure Streaming Analytics
+title: Implement a Data Streaming Solution with Azure Stream Analytics
 prerequisites: |
   None
 summary: |
@@ -29,5 +29,7 @@ modules:
 - learn.data-ai.introduction-to-data-streaming
 - learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs
 - learn.wwl.ingest-data-streams-with-azure-stream-analytics
+- learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse
+- learn.wwl.visualize-real-time-data-azure-stream-analytics-power-bi
 trophy:
   uid: learn.data-ai.implement-data-streaming-with-asa.trophy
