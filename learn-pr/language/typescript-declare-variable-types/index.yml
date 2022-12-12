@@ -34,7 +34,6 @@ roles:
 - student
 products:
 - azure
-- vs-code
 units:
 - learn.language.typescript-declare-variable-types.1-introduction
 - learn.language.typescript-declare-variable-types.2-types-overview
