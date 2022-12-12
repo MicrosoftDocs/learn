@@ -53,8 +53,8 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
 
 ## Create a new workbook
 
-1. From the Azure portal home page, search for and select **Monitor**.
-1. Select **Workbooks** from the left pane.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Search for and select **Monitor**, then select **Workbooks** from the left pane.
 1. Select **+ New** from the top toolbar.
     :::image type="content" source="../media/3-portal-new-workbook.png" alt-text="Screenshot that shows the New workbook icon Azure Workbooks page.":::
 1. Add descriptive text to the top of the workbook:

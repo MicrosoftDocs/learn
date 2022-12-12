@@ -6,4 +6,10 @@
 ## Add a visualization to show the availability of your resources
 
 1. In your workbook, select **Edit** from the top toolbar.
+1. Select **Add**, and then **Add Query**.
+1. In the **Data source** field, select **Azure Resource Health**.
+
+   :::image type="content" source="../media/4-new-query-resource-health.png" alt-text="A screenshots showing selecting Azure Resource health as the data source for a query in a workbook":::
+
+1. 
 
