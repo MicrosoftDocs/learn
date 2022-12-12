@@ -1,4 +1,4 @@
-Azure Active Directory (Azure AD) audit and diagnostic logs provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data.
+Azure Active Directory (Azure AD), part of Entra audit and diagnostic logs provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data.
 
 In this module, you will:
 

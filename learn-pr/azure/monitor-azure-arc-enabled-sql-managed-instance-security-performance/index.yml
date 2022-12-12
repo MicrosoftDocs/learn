@@ -6,6 +6,7 @@ metadata:
   ms.date: 8/23/2022
   author: tchristiani
   ms.author: terrychr
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 title: Monitor Azure Arc-enabled SQL Managed Instance security performance

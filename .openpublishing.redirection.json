@@ -19319,6 +19319,21 @@
       "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/13-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-configuration-data/14-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/7a-create-manage-application-collections.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/8-create-manage-application-collections",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/9-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/10-summary-resources",
+      "redirect_document_id": false
     }
   ]
 }
