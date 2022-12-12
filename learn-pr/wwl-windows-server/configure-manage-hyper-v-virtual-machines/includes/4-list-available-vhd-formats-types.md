@@ -35,7 +35,7 @@ You can convert between VHDX and VHD formats by using Hyper-V Manager's Edit Vir
 > Before you begin, ensure that you have sufficient disk space to perform the conversion.
 
 > [!NOTE]
-> Generation 1 VMs support the use the use of VHD or VHDX formats, whereas Generation 2 VMs only support VHDX format VHDs.
+> Generation 1 VMs support the use of VHD or VHDX formats, whereas Generation 2 VMs only support VHDX format VHDs.
 
 ## VHD types
 
@@ -45,7 +45,7 @@ Hyper-V supports multiple VHD types as listed in the following table. They each 
 |---|---|
 |Fixed size|This type of VHD allocates all of the space immediately. This minimizes fragmentation, which in turn enhances performance.|
 |Dynamically expanding|When you create a dynamically expanding VHD, you specify a maximum size for the file. The disk itself only uses the amount of space that needs to be allocated, and it grows as necessary. This type of disk provides better use of physical storage space and only uses space as needed.|
-|Differencing|This type of disk involves a parent-child relationship. A differencing disk is linked to a parent disk that contains a base installation and configuration. Any changes made, are done to the differencing disk, and thus results in no change to the parent disk. Differencing disks are typically used to reduce data storage requirements for child disks that might use the same parent configuration. For example, you might have 10 differencing disks based on the same parent disk that contains a *sysprepped* image of Windows Server 2019. You then could use the 10 differencing disks to create 10 different VMs.|
+|Differencing|This type of disk involves a parent-child relationship. A differencing disk is linked to a parent disk that contains a base installation and configuration. Any changes made, are done to the differencing disk, and thus results in no change to the parent disk. Differencing disks are typically used to reduce data storage requirements for child disks that might use the same parent configuration. For example, you might have 10 differencing disks based on the same parent disk that contains a *sysprepped* image of Windows Server. You then could use the 10 differencing disks to create 10 different VMs.|
 
 > [!NOTE]
 > You can use the Edit Virtual Hard Disk Wizard to convert between disk types. Ensure that the target disk format is the same as the source disk format.
@@ -63,5 +63,5 @@ You can attach a pass-through disk to a VM by performing the following steps:
 
 1. Ensure that the target hard disk is offline.
 1. Use **Hyper-V Manager** to edit the existing VM's properties.
-1. Select an integrated drive electronics (IDE) or SCSI controller, select **Add**, and then select **Hard Drive**.
+1. Select an integrated hard disk electronics (IDE) or SCSI controller, select **Add**, and then select **Hard Drive**.
 1. On the **Hard Drive** page, select **Physical hard disk**, and then in the drop-down list, select the disk that you want to use as the pass-through disk.
