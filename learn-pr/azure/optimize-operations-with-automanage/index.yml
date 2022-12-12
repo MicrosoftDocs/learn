@@ -1,14 +1,14 @@
 ### YamlMime:Module
-uid: learn.manage-linux-with-arc
+uid: learn.optimize-operations-with-automanage
 metadata:
-  title: Manage Linux with Arc
+  title: Optimizing operations with Automanage for Windows Server and Linux VMs
   description: Learn how to use Azure Arc with Linux systems, including SSH and Ansible.
-  ms.date: 10/10/2022
+  ms.date: 12/12/2022
   author: johnmarco
   ms.author: johnmarc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Manage Linux with Arc
+title: Optimizing operations with Automanage for Windows Server and Linux VMs
 summary: In this module, you'll discover how to manage Linux machines and systems using Azure Arc, SSH, and Ansible. 
 abstract: |
   By the end of this module, you'll be able to:
@@ -30,11 +30,12 @@ products:
 subjects:
   - cloud-computing
 units:
-- learn.manage-linux-with-arc.introduction
-- learn.manage-linux-with-arc.describe-managing-linux-concepts
-- learn.manage-linux-with-arc.describe-using-ssh
-- learn.manage-linux-with-arc.options-for-managing-multiple-systems
-- learn.manage-linux-with-arc.knowledge-check
-- learn.manage-linux-with-arc.summary
+- learn.optimize-operations-with-automanage.introduction
+- learn.optimize-operations-with-automanage.describe-automanage-best-practices
+- learn.optimize-operations-with-automanage.enable-automanage-best-practices
+- learn.optimize-operations-with-automanage.create-custom-configuration-profile
+- learn.optimize-operations-with-automanage.extend-automanage-with-arc
+- learn.optimize-operations-with-automanage.knowledge-check
+- learn.optimize-operations-with-automanage.summary
 badge:
-  uid: learn.manage-linux-with-arc.badge
+  uid: learn.optimize-operations-with-automanage.badge

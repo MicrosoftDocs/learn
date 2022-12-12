@@ -16,14 +16,7 @@ After onboarding your machines to Azure Automanage, each best practice service i
 
 :::image type="content" source="../media/intelligently-onboard-services-1.png" alt-text="Diagram of intelligently onboard services.":::
 
-Your VMs will be automatically onboarded to these participating services when you use the best practices configuration profiles. Participating services include the following:
-
-
-
-
-
-NOTE!
-
+Your VMs will be automatically onboarded to these participating services when you use the best practices configuration profiles.
 
 ## Configuration profiles
 
@@ -38,4 +31,6 @@ You can view the overall status of all your Azure Automanage machines from the *
 :::image type="content" source="../media/configured-status.png" alt-text="Screenshot of a list of automanaged enabled virtual machines." lightbox="../media/configured-status.png":::
 
 The page lists the following details for each machine listed: Name, Configuration profile, Status, Resource type, Resource group, Subscription
+
+
 
