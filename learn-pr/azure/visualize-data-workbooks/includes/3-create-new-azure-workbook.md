@@ -1,4 +1,4 @@
- Workbooks provide a canvas for creating interactive visual reports. In this exercise, you will create a new workbook, add some descriptive text and a parameter to query your resources. By the end of this unit, you will have a report that shows the distribution of your resources on a map.
+ Workbooks provide a canvas for creating interactive visual reports. In this exercise, you will create a new workbook, add some descriptive text and a parameter to query all of the resources in a selected subscription. By the end of this unit, you will have a report that shows the distribution of your resources on a map.
 
 ## Deploy resources for the exercise using the Azure CLI
 
