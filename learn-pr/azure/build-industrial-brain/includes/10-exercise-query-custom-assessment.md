@@ -40,7 +40,13 @@ Querying assessment data in Azure Log Analytics is a good choice if you're unfam
 2. Navigate to Bonsai workspace resource group and list [Bonsai workspaces](https://aka.ms/portal-bonsai-workspaces) associated with your account.
 3. Click on the workspace you want to query logs for.
 4. Select the Log Analytics Workspace.
+
+    ![The screenshot shows how to select workspace.](../media/log-analytics-workplace.png)
+
 5. Select Logs from the General section of the portal navigation and you'll see the query panel.
+
+    ![The screenshot shows how to run the query.](../media/run-query.png)
+
 6. Paste the KQL query into the query panel.
 7. Replace the following in the KQL query into the query panel and set:
     - BRAIN_NAME with the object name of the brain you assessed as a lowercase string. For example, hive mind. You can find the object name by right clicking the brain and selecting Brain info.
@@ -56,9 +62,12 @@ Exporting custom assessment data to Jupyter is a good choice if you're familiar 
 2. From the cloned directory, make sure you have all the requirements installed:
 3. Open the custom_assessment_logs.ipynb notebook template in Jupyter and set the configuration variables for the training data you want to analyze:
     a. In [2], set LOG_ANALYTICS_WORKSPACE_ID to the Azure object ID of your Log Analytics Workspace. You can select the Log Analytics Workspace from Azure portal.
-    b. In [9], set brain_name with the object name of the brain you assessed as a lowercase string. You can find the object name by right clicking the brain and selecting Brain info.
-    c. In [9], set brain_version with the numeric version of the brain you assessed. For example, 2.
-    d. In [9], set assessment_name with the object name of your custom assessment as a lowercase string. You can find the object name by right clicking the assessment record in the UI and selecting Assessment info.
+
+        ![The screenshot shows how to select workspace.](../media/log-analytics-workplace.png)    
+
+    1. In [9], set brain_name with the object name of the brain you assessed as a lowercase string. You can find the object name by right clicking the brain and selecting Brain info.
+    1. In [9], set brain_version with the numeric version of the brain you assessed. For example, 2.
+    1. In [9], set assessment_name with the object name of your custom assessment as a lowercase string. You can find the object name by right clicking the assessment record in the UI and selecting Assessment info.
 4. Run the notebook.
 
 After training the brain, the next step is to export and deploy the brain. In this module, we don't have a physical device and deployment option isn't available.
