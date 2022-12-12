@@ -13,11 +13,11 @@ summary: Learn how to configure and monitor Azure App Service instances, includi
 abstract: |
   In this module, you learn how to:
   - Identify features and usage cases for Azure App Service.
-  - Create an instance of Azure App Service.
+  - Create an app with Azure App Service.
   - Configure deployment settings, specifically deployment slots.
-  - Secure your Azure App Service instance.
+  - Secure your Azure App Service app.
   - Configure custom domain names.
-  - Back up your Azure App Service instance.
+  - Back up your Azure App Service app.
   - Configure Azure Application Insights.
 prerequisites: |
   None

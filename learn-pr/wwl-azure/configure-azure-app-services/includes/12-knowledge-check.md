@@ -8,4 +8,4 @@ You're developing a strategy to implement web apps for your company by using Azu
 
 ### Answer the following questions
 
-Choose the best response for each of the questions below. Then select **Check your answers**.
+Choose the best response for each of the following questions. Then select **Check your answers**.
