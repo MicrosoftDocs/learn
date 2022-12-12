@@ -1,5 +1,11 @@
 Let's take a look at how this brain is designed. You can see the full AI specification document [here](https://github.com/MicrosoftDocs/mslearn-machine-teaching-for-autonomous-ai/blob/main/MineCo%20Gyratory%20Crusher%20Optimization%20presentation.pptx?raw=true).
 
+## Understand a modular brain
+
+Modular brains are much more complex for real industrial processes. These brains require decomposition of the task into skills, training or programming multiple skills, and experimentation to get the orchestration and the training right.
+
+## Brain design
+
 First, we start by defining input/states.
 
 - The labels for our input states are Cr, Tr, Cref, Tref and Tc.
@@ -20,4 +26,4 @@ Finally, based on the scenarios our brain needs to be able to generalize to, we 
 - **Learned Concept 2**: **Modify Concentration** - The brain is exposed to transient scenarios. It must learn to operate the reactor under transient conditions by modifying the coolant concentration following the concentration reference (Cref).
 - **Selector Concept**: **Select Strategy** - The brain is exposed to both steady-state and transient operation. We train a selector to learn under which conditions to apply each skill. It must learn the fuzzy boundary between steady-state control and transient operation.
 
-![The screenshot shows how the brain works in the flow.](../media/brain-flow.PNG)
+![The screenshot shows how the brain works in the flow.](../media/brain-flow.png)
