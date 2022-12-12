@@ -26,7 +26,7 @@ Welcome to Proseware! You've been hired as the *lead data scientist* to help us 
 
 ## Consider the requirements
 
-| Consideration | Description |
+| Requirement | Description |
 |---|---|
 |:::image type="icon" source="../media/01-frequency.png":::|**Consider the frequency**. The plan is that a doctor enters a patient's information into the app, like their age and BMI. After entering, a doctor can select the `Analyze` button, after which the model should predict whether or not a patient is likely to have diabetes.|
 |:::image type="icon" source="../media/02-costs.png":::|**Consider the compute**. A doctor consultation typically takes less than 10 minutes. If we want doctors to use this app, we need the answers to be returned as quickly as possible. The deployed model should always be available as we don't know when a doctor may use it.|
