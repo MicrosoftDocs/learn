@@ -25,7 +25,6 @@ roles:
 products:
   - vs
   - dotnet
-  - vs-code
   - aspnet-core
 prerequisites: |
   - Local installations of the [.NET SDK](https://dotnet.microsoft.com/download).

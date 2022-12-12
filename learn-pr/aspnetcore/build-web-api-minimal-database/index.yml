@@ -26,7 +26,6 @@ products:
   - vs
   - dotnet
   - aspnet-core
-  - vs-code
 prerequisites: |
   - Familiarity with .NET 6
   - A basic understanding of what an API is
