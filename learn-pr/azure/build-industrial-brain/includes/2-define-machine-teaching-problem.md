@@ -10,3 +10,7 @@ Based on conversations with Subject Matter Experts (SMEs), we extracted the foll
 - When the CSTR is transitioning to produce different output concentrations, it is in a **transient operation**. The transient operation is difficult to manage. Minor deviations in the transient of coolant temperature can result in unstable conditions, hitting thermal runaway.
 
 ![The screenshot shows example of stirring tank.](../media/stirring-tank.png)
+
+## Understand a modular brain
+
+Modular brains are much more complex for real industrial processes. These brains require decomposition of the task into skills, training or programming multiple skills, and experimentation to get the orchestration and the training right.
