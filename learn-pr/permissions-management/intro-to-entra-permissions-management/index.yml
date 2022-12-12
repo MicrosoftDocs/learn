@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-entra-permissions-management
+metadata:
+  title: Introduction to Entra Permissions Management
+  description: Permissions Management is a CIEM solution that provides complete visibility into permissions that are assigned to all identities. 
+  ms.date: 11/14/2022
+  author: jenniferf-skc
+  ms.author: jfields
+  ms.topic: interactive-tutorial
+  ms.prod: learning-entra-permissions-management
+title: Introduction to Entra Permissions Management 
+summary: Permissions Management gives security operation administrators insight into over-privileged workload and user identities, actions, and resources across multicloud infrastructures.
+abstract: |
+  In this module, you will:
+
+ - Identify what a CIEM solution is
+ - Learn how Permissions Management fits in a CIEM solution
+ - Define real-world scenarios and challenges that Permissions Management can solve
+prerequisites: A basic familiarity with Azure Active Directory (AD)
+iconUrl: /training/achievements/intro-to-entra-permissions-management.svg
+levels:
+- beginner
+roles:
+- security operations 
+products:
+- azure-active-directory
+subjects:
+- classification-analysis
+units:
+- learn.azure.intro-to-entra-permissions-management.introduction
+- learn.azure.intro-to-entra-permissions-management.what-is-ciem
+- learn.azure.intro-to-entra-permissions-management.what-is-entra-permissions-management
+- learn.azure.intro-to-entra-permissions-management.how-entra-permissions-management-works
+- learn.azure.intro-to-entra-permissions-management.when-to-use-permissions-management
+- learn.azure.intro-to-entra-permissions-management.knowledge-check
+- learn.azure.intro-to-entra-permissions-management.summary
+badge:
+  uid: learn.azure.intro-to-entra-permissions-management.badge

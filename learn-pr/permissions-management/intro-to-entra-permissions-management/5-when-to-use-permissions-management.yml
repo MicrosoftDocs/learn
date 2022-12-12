@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-entra-permissions-management.use-permissions-management
+title: When to use Entra Permissions Management
+metadata:
+  title: When to use Entra Permissions Management
+  description: When to use Entra Permissions Management
+  ms.date: 11/11/2022
+  author: jenniferf-skc
+  ms.author: jfields
+  ms.topic: interactive-tutorial
+  ms.prod: learning-entra-permissions-management
+durationInMinutes: 10
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/5-when-to-use-permissions-management.md)]
