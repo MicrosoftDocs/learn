@@ -18,7 +18,7 @@ As you consider the concepts in this module, think about how you can apply them 
 
 In this module, you'll:
 
-- Identify ways to align the different departments in your organization
-- Learn best practices for optimizing your commercial marketplace offer
-- Learn about commercial marketplace sales channels
-- Learn how to access Marketplace Rewards benefits in Partner Center
+- Identify ways to align the different departments in your organization.
+- Learn best practices for optimizing your commercial marketplace offer.
+- Learn about commercial marketplace sales channels.
+- Learn how to access Marketplace Rewards benefits in Partner Center.
