@@ -35,7 +35,6 @@ roles:
 - student
 products:
 - azure
-- vs-code
 subjects:
 - blockchain
 - cross-development
