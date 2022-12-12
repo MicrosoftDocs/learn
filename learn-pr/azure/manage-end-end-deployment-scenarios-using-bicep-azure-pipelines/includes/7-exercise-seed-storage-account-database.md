@@ -211,9 +211,7 @@ In this section, you define the steps that are required to deploy the database c
 
    The _Preview (Production Environment)_ stage finishes successfully.
 
-   The pipeline then pauses again at the _Deploy (Production Environment)_ stage.
-
-1. Select **View**, and then select **Permit** > **Permit**.
+1. Monitor the pipeline as it completes the final stages.
 
    The _Deploy (Production Environment)_ stage finishes successfully, and the _Smoke Test (Production Environment)_ stage also finishes successfully.
 

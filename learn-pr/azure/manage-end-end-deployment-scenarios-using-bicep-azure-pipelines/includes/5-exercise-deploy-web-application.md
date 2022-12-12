@@ -127,19 +127,15 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
 
    :::image type="content" source="../media/5-pipeline-run-validate-approve-2.png" alt-text="Screenshot of Azure DevOps showing the permission confirmation interface. The Permit button is highlighted.":::
 
-   The _Validate (Test Environment)_ stage finishes successfully. The pipeline then pauses again, this time before the _Deploy (Test Environment)_ stage.
+   The _Validate (Test Environment)_ stage finishes successfully.
 
-1. Select **View**, and then select **Permit** > **Permit**.
-
-   :::image type="content" source="../media/5-pipeline-run-deploy-permission.png" alt-text="Screenshot of Azure DevOps showing the pipeline run paused at the Deploy stage. Permission is required to continue. The View button is highlighted.":::
-
-   The _Deploy (Test Environment)_ stage finishes successfully. The pipeline then runs the _Smoke Test (Test Environment)_ stage, but the smoke test stage fails:
-
-   :::image type="content" source="../media/5-smoke-test-failure.png" alt-text="Screenshot of Azure DevOps showing the pipeline run's Smoke Test stage for the test environment. The status shows that the stage has failed.":::
+   The pipeline continues and the _Deploy (Test Environment)_ stage finishes successfully. The pipeline then runs the _Smoke Test (Test Environment)_ stage, but the smoke test stage fails.
 
 1. Select the **Smoke Test (Test Environment)** stage to open the pipeline log.
 
-1. Select the **Run smoke tests** step to view the associated section of the pipeline log:
+   :::image type="content" source="../media/5-smoke-test-failure.png" alt-text="Screenshot of Azure DevOps showing the pipeline run's Smoke Test stage for the test environment. The status shows that the stage has failed.":::
+
+1. Select the **Run smoke tests** step to view the associated section of the pipeline log.
 
    :::image type="content" source="../media/5-smoke-test-failure-log.png" alt-text="Screenshot of Azure DevOps showing the pipeline run log, with the output of the smoke test displayed. The JSON health test result is highlighted.":::
 
