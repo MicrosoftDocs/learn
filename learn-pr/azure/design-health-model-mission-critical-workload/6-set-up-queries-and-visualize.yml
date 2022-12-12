@@ -16,36 +16,36 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "Question 1"
+  - content: "Where should system components send their telemetry?"
     choices:
-    - content: "Option 1."
+    - content: "Central data sink for logs and telemetry, which is common for global and regional resources."
+      isCorrect: false
+      explanation: "Incorrect. While using central storage for all telemetry makes it easier to analyze, it creates a single point of failure, which is unacceptable in mission-critical applications."
+    - content: "Stamp-based data sink for logs and telemetry, where each stamp and global tier has its own."
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
+      explanation: "Correct. Using dedicated data sink, shared on the global and stamp levels, is a good compromise for ease of access while eliminating single point of failure."
+    - content: "Decentralized data sink, where every Azure resource and every component has its own."
       isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-  - content: "Question 2"
+      explanation: "Incorrect. Splitting data sinks per resource is inefficient and creates unnecessary overhead for analysis."
+  - content: "What language is used to query Log Analytics logs and calculate health scores?"
     choices:
-    - content: "Option 1."
+    - content: "SQL"
+      isCorrect: false
+      explanation: "Incorrect. SQL (Structured Query Language) is commonly used in querying relational databases. Log Analytics query format looks similar, but it's not SQL."
+    - content: "T-SQL"
+      isCorrect: false
+      explanation: "Incorrect. T-SQL (Transact-SQL) is an extension of the SQL language and is used to interact with relational databases."
+    - content: "KQL"
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-  - content: "Question 3"
+      explanation: "Correct. KQL (Kusto Query Language) is used to query Log Analytic logs. It uses a hierarchy similar to SQL, but has different syntax."
+  - content: "What's the best dashboarding technology for health modeling?"
     choices:
-    - content: "Option 1."
+    - content: "There's no 'best' technology - it depends on the needs."
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
+      explanation: "Azure offers multiple options when it comes to dashboarding, and each can be suitable for different purpose. The correct approach is to evaluate the visualization needs of the health model and choose appropriately."
+    - content: "Azure Dashboards"
       isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
+      explanation: "Azure Dashboards is suitable technology for dashboarding, but it might not fully support all necessary customizations."
+    - content: "Azure Managed Grafana"
       isCorrect: false
-      explanation: "Incorrect. Explanation."
+      explanation: "Grafana is powerful dashboarding technology with rich customization options, but more complex to build and mange the right visualization."
