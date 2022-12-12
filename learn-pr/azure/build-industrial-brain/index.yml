@@ -9,12 +9,15 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build an industrial strength brain
-summary: In this module, you'll learn about capabilities and essential concepts of Machine Teaching, the steps to add intelligence into Autonomous Intelligence systems and the types of business problems that you can solve using Machine Teaching for Autonomous AI.
+summary: Train a modular brain for real industrial processes. Decompose the tasks into skills, do Machine Teaching experimentation to get the orchestration and the training completed successfully. Evaluate brain performance using training graphs and custom assessments. 
 abstract: | 
   In this module, you'll learn how to:
-  - Describe how AI specification documents are used to build Bonsai brains 
-  - Explain coding and training of monomodular brains with the Bonsai UI
-  - Describe the Project Bonsai workflow using the Moab as an example 
+  - Identify the benefits of "modular" brains against "monolithic" brains when tackling industrial use cases
+  - Explore the Machine Teaching training strategies required to build industrial strength brains
+  - Learn the benefits of using web visualizers and how to embed them into the Bonsai UI
+  - Understand how Autonomous control can have a positive impact in process performance
+  - Understand how industrial strength brains require more nuanced machine teaching
+  - Describe how assessing a modular brain is different than assessing a monolithic brain
 
   "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
 prerequisites: | 
