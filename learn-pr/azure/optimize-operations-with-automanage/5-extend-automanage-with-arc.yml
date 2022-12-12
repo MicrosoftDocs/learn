@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.optimize-operation-with-automanage.extend-automanage-with-arc
+uid: learn.optimize-operations-with-automanage.extend-automanage-with-arc
 title: Extend Azure Automanage across non-Azure infrastructure with Azure Arc
 metadata:
   title: Extend Azure Automanage across non-Azure infrastructure with Azure Arc
