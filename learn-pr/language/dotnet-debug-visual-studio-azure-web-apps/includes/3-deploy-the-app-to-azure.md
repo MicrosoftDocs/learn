@@ -167,14 +167,16 @@ Next, you need to deploy the app to Azure so others can use it to browse reposit
 
 6. Select the subscription you would like to deploy to.
 
-   For the Learn sandbox environment, first click the **Refresh** button if you don't see `Concierge Subscription`. Then select it.
+   For the Learn sandbox environment, check whether the `Concierge Subscription` has loaded by clicking the **Refresh** button. If it's available, select it. If it's not available, continue with the next step.
 
-    :::image type="content" source="../media/visual-studio-remote-debug-select-subscription.png" alt-text="A screenshot of selecting your subscription in the create app service workflow.":::
-
-7. Next, create a new app service instance by selecting the green **+ Create new** icon. In the new app service dialog, enter or verify the following values:
+7. Create a new app service instance by selecting the green **+ Create new** icon.
 
    > [!NOTE]
-   > For the sandbox environment, you may need to wait a few moments until the values become available in the dialog.
+   > For the sandbox environment, you may need to wait while Visual Studio loads the subscriptions information. This may take some time.
+
+    :::image type="content" source="../media/visual-studio-remote-debug-loading-subscriptions.png" alt-text="A screenshot of loading subscription info in the create app service workflow.":::
+
+8. In the new app service dialog, enter or verify the following values:
 
     | Setting | Value  |
     | --- | --- |
@@ -185,9 +187,9 @@ Next, you need to deploy the app to Azure so others can use it to browse reposit
 
     :::image type="content" source="../media/visual-studio-remote-debug-create-app-service.png" alt-text="A screenshot of the create app service workflow.":::
 
-8. Select **Create** to close the dialog, and Visual Studio will take a moment to create the App Service instance for you.
+9. Select **Create** to close the dialog, and Visual Studio will take a moment to create the App Service instance for you.
 
-9. Once the App Service is created, select the new instance, and then choose **Finish**.
+   Once the App Service is created, select the new instance, and then choose **Finish**.
 
 10. Visual Studio will display a summary view of the publishing profile. Select **Publish** in the upper right corner to deploy your app to Azure. This process may take a little time to complete.
 
