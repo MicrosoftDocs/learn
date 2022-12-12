@@ -24,15 +24,100 @@ The Azure Functions runtime registers the Application Insights logging provider 
 
 ## Health monitoring queries
 
-Log Analytics and Application Insights, and Azure Data Explorer all use [Kusto Query Language (KQL)](/azure/data-explorer/kusto/query) for their queries. With KQL, you can build queries and use functions to fetch metrics and calculate health scores.
+Log Analytics, Application Insights, and Azure Data Explorer all use [Kusto Query Language (KQL)](/azure/data-explorer/kusto/query) for their queries. With KQL, you can build queries and use functions to fetch metrics and calculate health scores.
 
 For individual services that calculate the health status, see the following sample queries:
 
 - [Catalog API](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/CatalogServiceHealthStatus.kql)
 
-- [Azure Event Hubs](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/EventHubHealthStatus.kql)
+```kql
+let _maxAge = 2d; // Only include data from the last two days
+let _timespanStart = ago(_maxAge); // Start time for the timespan
+let _timespanEnd = now(-2m); // there is some ingestion lag, so we account for this by stripping the last 2m
+// For the timeframe, compare the averages to the following threshold values:
+let Thresholds=datatable(MetricName: string, YellowThreshold: double, RedThreshold: double) [
+    // Failed requests. Anything non-200. We allow a few more than 0 for user-caused errors like 404s. 
+    "failureCount", 10, 50,
+    // Average duration of the request, in ms
+    "avgProcessingTime", 150, 500
+    ];
+//
+// Calculate average processing time for each request
+let avgProcessingTime = AppRequests
+| where AppRoleName startswith "CatalogService"
+| where OperationName != "GET /health/liveness" // Since the liveness requests don't do any processing, including them would skew the results. 
+| make-series Value = avg(DurationMs) default=0 on TimeGenerated from _timespanStart to _timespanEnd step 1m
+| mv-expand TimeGenerated, Value
+| extend TimeGenerated = todatetime(TimeGenerated), Value=toreal(Value), MetricName= 'avgProcessingTime';
+// Calculate failed requests
+let failureCount = AppRequests
+| where AppRoleName startswith "CatalogService"
+| where OperationName != "GET /health/liveness" // Since the liveness requests don't do any processing, including them would skew the results. 
+| make-series Value=countif(Success != true) default=0 on TimeGenerated from _timespanStart to _timespanEnd step 1m
+| mv-expand TimeGenerated, Value
+| extend TimeGenerated = todatetime(TimeGenerated), Value=toreal(Value), MetricName= 'failureCount';
+// Union all together and join with the thresholds
+avgProcessingTime
+| union failureCount
+| lookup kind = inner Thresholds on MetricName
+| extend IsYellow = iff(todouble(Value) > YellowThreshold and todouble(Value) < RedThreshold, 1, 0)
+| extend IsRed = iff(todouble(Value) > RedThreshold, 1, 0)
+| project-reorder TimeGenerated, MetricName, Value, IsYellow, IsRed, YellowThreshold, RedThreshold
+| extend ComponentName="CatalogService"
+```
 
 - [Azure Key Vault](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/KeyvaultHealthStatus.kql)
+
+```kql
+let _maxAge = 2d; // Only include data from the last two days
+let _timespanStart = ago(_maxAge); // Start time for the timespan
+let _timespanEnd = now(-2m); // there is some ingestion lag, so we account for this by stripping the last 2m
+//
+let Thresholds = datatable(MetricName: string, YellowThreshold: double, RedThreshold: double) [
+    // Failure count on key vault requests
+    "failureCount", 3, 10
+    ];
+//
+let failureStats = AzureDiagnostics
+| where TimeGenerated > _timespanStart
+| where ResourceProvider == "MICROSOFT.KEYVAULT"
+// Ignore Authentication operations with a 401. This is normal when using Key Vault SDK, first an unauthenticated request is done then the response is used for authentication.
+| where Category=="AuditEvent" and not (OperationName == "Authentication" and httpStatusCode_d == 401)
+| where OperationName in ('SecretGet','SecretList','VaultGet') or '*' in ('SecretGet','SecretList','VaultGet')
+| where ResultSignature != "Not Found" // Exclude Not Found responses as these happen regularly during 'terraform plan' operations, when TF checks for the existence of secrets
+// Create ResultStatus with all the 'success' results bucked as 'Success'
+// Certain operations like StorageAccountAutoSyncKey have no ResultSignature, for now set to 'Success' as well
+| extend ResultStatus = case ( ResultSignature == "", "Success",
+                               ResultSignature == "OK", "Success",
+                               ResultSignature == "Accepted", "Success",
+                               ResultSignature);
+//
+//
+failureStats
+| make-series Value=countif(ResultStatus != "Success") default=0 on TimeGenerated from _timespanStart to _timespanEnd step 1m
+| mv-expand TimeGenerated, Value
+| extend TimeGenerated = todatetime(TimeGenerated), Value=toreal(Value), MetricName="failureCount", ComponentName="Keyvault"
+| lookup kind = inner Thresholds on MetricName
+| extend IsYellow = iff(todouble(Value) > YellowThreshold and todouble(Value) < RedThreshold, 1, 0)
+| extend IsRed = iff(todouble(Value) > RedThreshold, 1, 0)
+```
+
+Eventually, various health **status** queries can be tied together to calculate a health **score** of a component. Following is an example of the [Catalog Service health score](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/CatalogServiceHealthScore.kql) in the Mission-critical Online reference implementation:
+
+```kql
+CatalogServiceHealthStatus()
+| union AksClusterHealthStatus()
+| union KeyvaultHealthStatus()
+| union EventHubHealthStatus()
+| where TimeGenerated < ago(2m)
+| summarize YellowScore = max(IsYellow), RedScore = max(IsRed) by bin(TimeGenerated, 2m)
+| extend HealthScore = 1 - (YellowScore * 0.25) - (RedScore * 0.5)
+| extend ComponentName = "CatalogService", Dependencies="AKSCluster,Keyvault,EventHub" // These values are added to build the dependency visualization.
+| order by TimeGenerated desc
+```
+
+> [!TIP]
+> [More examples](https://github.com/Azure/Mission-Critical-Online/tree/feature/reactflowtest/src/infra/monitoring/queries) can be found in the Mission-critical Online GitHub repository.
 
 ## Set up query-based alerts
 
