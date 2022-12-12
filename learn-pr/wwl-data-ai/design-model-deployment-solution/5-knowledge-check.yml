@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: "Real-time predictions"
       isCorrect: true
-      explanation: "Correct. There is a need for immediate predictions for individual patients."
+      explanation: "Correct. There's a need for immediate predictions for individual patients."
     - content: "Batch predictions"
       isCorrect: false
       explanation: "Incorrect. Batch predictions would take too long. We need immediate predictions."
     - content: "Local predictions"
       isCorrect: false
-      explanation: "Incorrect. There is a need for immediate predictions for individual patients so we need real-time predictions."
+      explanation: "Incorrect. There's a need for immediate predictions for individual patients so we need real-time predictions."
   - content: "What kind of compute should be used by the deployed model?"
     choices:
     - content: "Virtual machines"
