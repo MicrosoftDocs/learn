@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.oxford.build-industrial-brain.knowledge-check-1
-title: Set up your account for Bonsai
+uid: learn.oxford.build-industrial-brain.knowledge-check-setup-account
+title: Knowledge check
 metadata:
-  title: Set up your account for Bonsai
-  description: In this unit, we'll explain how to set up account for Bonsai.
+  title: Knowledge check
+  description: A knowledge check for the discover machine teaching problem.
   ms.date: 12/12/2022
   author: softchris
   ms.author: chnoring

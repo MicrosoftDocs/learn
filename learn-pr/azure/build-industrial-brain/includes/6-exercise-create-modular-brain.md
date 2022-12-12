@@ -69,9 +69,22 @@ This problem consists of the three concepts we defined earlier during our overvi
 
 The environment state defines the current situation of the simulation. This includes the measured status of the reactor, the residual concentration (Cr) and the reactor temperature (Tr); the references desired, the concentration reference (Cref) and the temperature reference (Tref); as well as the absolute temperature of the coolant (Tc).
 
+![The screenshot shows the environment states in AI Specification document.](../media/environment-state-ai-spec.png)
+
 The environment state can be accessed by clicking on the collection of boxes on top of our concept graph, as shown below:
 
 ![The screenshot shows how to access environment states in brain graph.](../media/environment-state.png)
+
+The Inkling associated with the definition of the environment state is:
+
+```Inkling
+type ObservableState {
+    Cr: number<conc_min .. conc_max>,         # Concentration: Real-time reactor read
+    Tr: number<temp_min .. temp_max>,         # Temperature: Real-time reactor read
+    Cref: number<conc_min .. conc_max>,       # Concentration: Target reference to follow
+    Tc: number<temp_min .. temp_max>,         # Coolant absolute temperature as input to the simulation
+}
+```
 
 The steady-state conditions in the reactor can be uniquely identified by either concentration or temperature. In other words, the steady state reference temperature is unique for a given reference concentration, and vice versa. That is the reason why we only have the reference value for concentration on our ObservableState (without the need for a temperature reference value).
 
@@ -88,6 +101,13 @@ During machine teaching experimentation, our brain trainer realized that the sys
 The brain action can be accessed by clicking on the box at the bottom of our graph. As shown below, the control action is an output from the brain and input to the simulation.
 
 ![The screenshot shows how to access control actions in brain graph.](../media/control-action.png)
+
+```Inkling
+type SimAction {
+    # Delta to be applied to initial coolant temp (absolutely, not per-iteration)
+    Tc_adjust: number<-coolant_temp_deriv_limit .. coolant_temp_deriv_limit>
+}
+```
 
 ### Goals/Rewards
 
@@ -108,6 +128,19 @@ You can see in the figures below the goals for the three concepts we have in our
 
 ![The screenshot shows how to access Select Strategy in brain graph.](../media/goal-concept-3.png)
 
+The inkling code associated with this is:
+
+```Inkling
+goal (State: SimState) {
+                minimize `Concentration Reference` weight 1:
+                    Math.Abs(State.Cref - State.Cr)
+                    in Goal.RangeBelow(0.25)
+                avoid `Thermal Runaway` weight 4:
+                    Math.Abs(State.Tr)
+                    in Goal.RangeAbove(400)
+            }
+```
+
 You can see the ranges defined for each goal by clicking on the EDIT (pencil) button on any of the concepts.
 
 Note that available goal objectives in Inkling include:
@@ -124,8 +157,29 @@ The simulation models the real-world process and updates the environment states 
 
 Episodes may end naturally once they reach the max episode length. Others might have to be abruptly interrupted after hitting a terminal condition such as thermal runaway. In both cases, we need to be able to reset into new episodes based on the scenario that the brain is being trained in. Thus, the simulation reset method must allow us to define the set of desired initial conditions for the concept being trained.
 
-In Bonsai, the parameters that allow a brain to perform custom initialization of the conditions of the system are called configuration variables. The CSTR simulation has the following config parameters that can be used to customize the reset of the simulation for each concept.
+In Bonsai, the parameters that allow a brain to perform custom initialization of the conditions of the system are called configuration variables. The CSTR simulation has the following config parameters that can be used to customize the reset of the simulation for each concept:
+
+![The screenshot shows the simulation configuration in AI Specification document.](../media/simulation-configuration-ai-spec.png)
 
 The simulation configuration is defined as shown below:
 
 ![The screenshot shows how to access simulation configuration in brain graph.](../media/sim-config.png)
+
+This is defined in Inkling as:
+
+```Inkling
+type SimConfig {
+    # Scenario to be run - 5 scenarios: 1-based INT
+    # > 1: Concentration transition --> 8.57 to 2.000 - 0 min delay
+    # > 2: Concentration transition --> 8.57 to 2.000 - 10 min delay 
+    # > 3: Concentration transition --> 8.57 to 2.000 - 20 min delay
+    # > 4: Concentration transition --> 8.57 to 2.000 - 30 min delay
+    # > 5: Steady State --> 8.57
+    Cref_signal: number<1 .. 5 step 1>,
+    noise_percentage: number<0 .. 100>  # Percentage of noise to include
+}
+```
+
+- **noise_percentage**: the amount of gaussian noise added to the Tr and Cr states.
+- **Cref_signal**: an episode start index that sets up the Cref setpoint evolution throughout the episode. Five signals are specified in the simulation to represent the different operation conditions of the reactor.
+        - For example, a Cref_signal value of 5 is the steady state operating condition where Cref remains at 8.57 kmol/m^3 throughout the entire episode.
