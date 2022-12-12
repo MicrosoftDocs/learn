@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "Generation 1"
       isCorrect: false
-      explanation: "That's incorrect. Generation 1 VMs do not support Secure Boot."
+      explanation: "That's incorrect. Generation 1 VMs don't support Secure Boot."
     - content: "Generation 2"
       isCorrect: true
       explanation: "That's correct. Generation 2 VMs support Secure Boot."
