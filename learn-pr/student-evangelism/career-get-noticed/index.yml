@@ -24,7 +24,7 @@ roles:
   - developer
   - student
 products:
-  - vs-code
+  - azure
 units:
   - learn.career-get-noticed.1-introduction
   - learn.career-get-noticed.5-resume-building

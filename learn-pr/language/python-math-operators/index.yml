@@ -3,7 +3,7 @@ uid: learn.beginner-python.use-math-operators
 metadata:
   title: Use mathematical operations in Python
   description: Almost every application a developer creates involves some level of math. This module will explore the core functionality in Python and arithmetic operators.
-  ms.date: 12/02/2021
+  ms.date: 12/07/2022
   author: geektrainer
   ms.author: chnoring
   ms.custom: team=nextgen

@@ -4,12 +4,12 @@ title: Create and configure VMs
 metadata:
   title: Create and configure VMs
   description: "Create and configure VMs"
-  ms.date: 02/26/2021
+  ms.date: 12/12/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/5-create-configure-vms.md)]
