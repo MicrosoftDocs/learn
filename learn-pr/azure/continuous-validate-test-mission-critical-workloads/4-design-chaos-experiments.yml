@@ -35,12 +35,9 @@ quiz:
     - content: "Azure Kubernetes Service (AKS) and Azure Functions"
       isCorrect: false
       explanation: ""
-  - content: "Before you can run an experiment against a service from Azure Chaos Studio, what setting do you need to enable?"
+  - content: "Before you can run an experiment against a service from Azure Chaos Studio, what settings do you need to enable?"
     choices:
-    - content: "Target"
-      isCorrect: true
-      explanation: ""
-    - content: "Capability"
+    - content: "Target and capability"
       isCorrect: true
       explanation: ""
     - content: "Availability zones"
