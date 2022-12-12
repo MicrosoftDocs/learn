@@ -47,5 +47,4 @@ After signing in to the Azure portal, you must provision a Bonsai workspace as a
 
 4. When provisioning completes, open the Bonsai UI and select your subscription and workspace from the available dropdowns to complete setup.
 
-   ![The screenshot shows how to select subscription.](../media/select-directory-subscription.png)]
-
+   ![The screenshot shows how to select subscription.](../media/select-directory-subscription.png)

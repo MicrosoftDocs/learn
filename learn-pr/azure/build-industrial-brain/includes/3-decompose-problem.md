@@ -19,3 +19,5 @@ Finally, based on the scenarios our brain needs to be able to generalize to, we 
 - **Learned Concept 1**: **Steady State** - The brain is exposed to the steady-state scenario. It must learn to operate the reactor under continuous steady-state conditions.
 - **Learned Concept 2**: **Modify Concentration** - The brain is exposed to transient scenarios. It must learn to operate the reactor under transient conditions by modifying the coolant concentration following the concentration reference (Cref).
 - **Selector Concept**: **Select Strategy** - The brain is exposed to both steady-state and transient operation. We train a selector to learn under which conditions to apply each skill. It must learn the fuzzy boundary between steady-state control and transient operation.
+
+![The screenshot shows how the brain works in the flow.](../media/brain-flow.PNG)
