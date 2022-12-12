@@ -41,9 +41,10 @@ units:
 - learn.oxford.build-industrial-brain.introduction
 - learn.oxford.build-industrial-brain.define-problem
 - learn.oxford.build-industrial-brain.decompose-problem
-- learn.oxford.build-industrial-brain.knowledge-check-1
+- learn.oxford.build-industrial-brain.knowledge-check-setup-account
 - learn.oxford.build-industrial-brain.exercise-setup-account
 - learn.oxford.build-industrial-brain.exercise-create-brain
+- learn.oxford.build-industrial-brain.knowledge-check-brain
 - learn.oxford.build-industrial-brain.exercise-train-brain
 - learn.oxford.build-industrial-brain.exercise-create-custom-assessment
 - learn.oxford.build-industrial-brain.exercise-query-assessment-data
