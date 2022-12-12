@@ -129,6 +129,10 @@ Azure Monitor provides an extensive alerting framework to detect, categorize, an
 
 ## Use dashboards for visualization
 
-Visually representing the health model with critical operational data is essential to achieve effective operations and maximize reliability. Use dashboards to provide near-real time insights into application health for DevOps teams, facilitating the swift diagnosis of deviations from steady state. A robust dashboard is essential to diagnose issues that have already occurred, and supports operational teams in detecting and responding to issues as they happen.
+Essential part of health modeling is visually representing the health model and the data it continously collects. Operators need to be able to see the dependency tree and understand quickly the effect of a component outage on the whole system. The ultimate goal of a health model is to facilitate swift diagnosis by providing informed view into deviations from steady state.
+
+A common way to visualize system health information is to use dashboards as a way to combine the layered health model view with telemetry drill-down capabilities if needed.
+
+![Example health model dashboard showing layered model followed by drill-down data tables](../media/health-dashboard-example.png)
 
 Microsoft provides several data visualization technologies, including Azure Dashboards, Power BI, and Azure Managed Grafana. Azure Dashboards provides a tightly integrated out-of-the-box visualization solution for operational data within Azure Monitor. However, if you can't use Azure Dashboards to accurately represent the health model, then it's recommended to consider Grafana as an alternative visualization solution. Grafana provides market-leading capabilities and an extensive open-source plugin ecosystem.
