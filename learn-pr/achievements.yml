@@ -1392,6 +1392,11 @@ achievements:
   title: Introduction to Custom Commands
   summary: Custom Commands makes it easy to build voice commanding apps optimized for voice-first interaction experiences. It provides a straightforward authoring and hosting experience on a single interface, helping you to focus on building the best solution for your voice-commanding scenarios.
   iconUrl: /training/achievements/intro-to-custom-commands.svg
+- uid: learn.iot.manage-iot-central-apps-with-rest-api.badge
+  type: badge
+  title: Manage IoT Central applications with the REST API
+  summary: The IoT Central REST API lets you manage applications programmatically. For example, you can add device templates, create devices, set device properties, send commands to devices, and manage data exports.
+  iconUrl: /training/achievements/learn.iot.manage-iot-central-apps-with-rest-api.svg
 - uid: learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.badge
   type: badge
   title: Create a speech translator application with Unity and Azure Cognitive Services.
@@ -1407,3 +1412,4 @@ achievements:
   title: Introduction to Text-to-speech
   summary: Text-to-speech converts text into human-like speech, along with the ability to create a unique, custom voice to use in your applications.
   iconUrl: /training/achievements/intro-to-text-to-speech.svg
+  
