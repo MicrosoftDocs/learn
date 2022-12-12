@@ -1,17 +1,17 @@
- Workbooks provide a canvas for creating interactive visual reports. In this exercise, you will create a new workbook, add some descriptive text and a parameter to query all of the resources in a selected subscription. By the end of this unit, you will have a report that shows the distribution of your resources on a map.
+ Workbooks provide a canvas for creating interactive visual reports. In this exercise, you'll create a new workbook, add some descriptive text and a parameter to query all of the resources in a selected subscription. By the end of this unit, you'll have a report that shows the distribution of your resources on a map.
 
 ## Deploy resources for the exercise using the Azure CLI
 
-The first thing we will do is activate the Azure sandbox and deploy an ARM template containing all the Azure resources we need for this exercise.
+The first thing we'll do is activate the Azure sandbox and deploy an ARM template containing all the Azure resources we need for this exercise.
 
 1. Activate the Azure sandbox. When the sandbox is activated, a resource group is created for you to use.
-1. In the Azure Cloud shell, get the name of the resource group that was generated for your sandbox.
+1. In the Azure Cloud Shell, get the name of the resource group that was generated for your sandbox.
     ```azurecli
     az group list
     ```
 1. The output contains a row with the name of the resource group. The name starts with "learn-".
 
-    :::image type="content" source="../media/3-cloud-shell-resourcegroup-name.png" alt-text="Screenshot of cloud shell displaying resource group name for sandbox.":::
+    :::image type="content" source="../media/3-cloud-shell-resourcegroup-name.png" alt-text="Screenshot of Cloud Shell displaying resource group name for sandbox.":::
 1. Copy the name of the resource group. (You may need to highlight the text and right-click on your mouse to copy the text.)
 1. Enter this command to define the resource group. (You may need to erase some extraneous characters from around the resource group name.)
 
@@ -27,17 +27,17 @@ The first thing we will do is activate the Azure sandbox and deploy an ARM templ
        az deployment group create --resource-group $resourceGroup --template-file deploy-resources.bicep
     ```
 
-1. When you are prompted for a password, enter a password that complies with the password requirements. For example, enter "Learn@123456". Write this password down, you will need it later. The password must:
+1. When you're prompted for a password, enter a password that complies with the password requirements. For example, enter "Learn@123456". Write down this password, you'll need it later. The password must:
     - Be at least 12 characters long
-    - Contain at least 3 out of the following 4 characteristics:
+    - Contain at least 3 out of the following four characteristics:
     - one lower case letter
     - one upper case letter
     - one number
     - one special character, not including \ or -.
 1. The resources that you need for the module are now deployed. Wait until the process completes.
-1. Log into the Azure portal.
+1. Log in to the Azure portal.
 1. On the **Home** page, enter "Resource groups" into the search bar at the top.
-1. Select the resource group that we just created.
+1. Select the resource group that we created.
 1. Look through the list of resources and select the App Service plan.
 
     :::image type="content" source="../media/3-portal-select-app-service.png" alt-text="Screenshot of selecting the App Service from the resource group.":::
@@ -49,7 +49,7 @@ The first thing we will do is activate the Azure sandbox and deploy an ARM templ
 1. Populate the app service with some activities to generate some data for our example. On the **List of To-Do Items** page, create some items, edit them, or mark some as complete.
 
     :::image type="content" source="../media/3-app-service-tasks.png" alt-text="Screenshot that shows tasks for the app service for workbooks learn module.":::
-1. Now, we are ready to create a workbook.
+1. Now, we're ready to create a workbook.
 
 ## Create a new workbook
 
@@ -76,7 +76,7 @@ The first thing we will do is activate the Azure sandbox and deploy an ARM templ
 
 ## Add a subscription picker to your workbook
 
-1. Select **Edit** from the right side of the section you just created.
+1. Select **Edit** from the right side of the section you created.
 
     :::image type="content" source="../media/3-workbook-with-text-edit-button.png" alt-text="Screenshot that shows the edit button from a section of a workbook.":::
 1. Select **Add**, and then **Add parameters**.
@@ -93,7 +93,7 @@ The first thing we will do is activate the Azure sandbox and deploy an ARM templ
 1. Select **Done editing** again.
 1. You now have a workbook with a **Subscription** drop-down picker.
 
-    :::image type="content" source="../media/3-workbook-with-subscription-picker.png" alt-text="Screenshot that shows an Azure workbook with a subscription picker drop down list.":::
+    :::image type="content" source="../media/3-workbook-with-subscription-picker.png" alt-text="Screenshot that shows an Azure workbook with a subscription picker drop-down list.":::
 
 ## Add a map to show the distribution of the subscription's resources
 
@@ -104,7 +104,7 @@ The first thing we will do is activate the Azure sandbox and deploy an ARM templ
     :::image type="content" source="../media/3-add-query.png" alt-text="Screenshot that shows the add query icon in a workbook.":::
 
 1. In the **Data source** field, select **Azure Resource Graph**.
-1. In the **Subcription** field, under **Resource parameters**, select the **Subscription** checkbox.
+1. In the **Subscription** field, under **Resource parameters**, select the **Subscription** checkbox.
 1. Add this query to the **Subscriptions Azure Resource Graph Query** section:
 
     ```
@@ -115,7 +115,7 @@ The first thing we will do is activate the Azure sandbox and deploy an ARM templ
     :::image type="content" source="../media/3-query.png" alt-text="Screenshot that shows a query being configured in a workbook.":::
 
 1. Select **Run Query**.
-1. You will see the results of your query in a table below the query.
+1. You'll see the results of your query in a table below the query.
 1. To show your resources in a map, in the **Visualization** field on top of the query, select **Map**.
 1. In the **Map Settings** window, keep the default map settings, and select **Save and close**.
 1. Select **Advanced settings** at the top of the query, and enter "Resource distribution per region" in the **Chart title**.

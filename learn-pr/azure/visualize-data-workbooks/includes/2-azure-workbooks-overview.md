@@ -31,6 +31,6 @@ Using workbooks, you can use a rich set of visualizations to customize the repor
 - Maps
 - Text visualizations
 
-This is an example of a report that combines data from multiple sources to produce some visualizations to help you analyze the data.
+This screenshot shows an example of a report that combines data from multiple sources to produce visualizations that help analyze the data.
 
 :::image type="content" source="../media/2-workbook-sample.png" alt-text="Screenshot of a sample workbook with several visualizations.":::
