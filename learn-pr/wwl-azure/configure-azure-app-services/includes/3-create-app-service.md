@@ -2,6 +2,7 @@ You can use the Web Apps, Mobile Apps, or API Apps features of Azure App Service
 
 Watch the following video to learn how to create an app with Azure App Service. 
 
+#### <!-- Video -->
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/dHTzv-zY17I" title="How to create an app with Azure App Service in the Azure portal | Azure Portal Series" allowfullscreen></iframe>
 

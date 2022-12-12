@@ -2,7 +2,7 @@ When you deploy your web app, web app on Linux, mobile backend, or API app to Az
 
 ### Things to know about deployment slots
 
-Let's take a closer look at how your app can implement deployment slots.
+Let's take a closer look at the characteristics of deployment slots.
 
 - Deployment slots are live apps that have their own hostnames.
 
