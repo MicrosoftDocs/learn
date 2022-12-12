@@ -26,22 +26,16 @@ quiz:
       explanation: ""
   - content: "Which services does Azure Chaos Studio support?"
     choices:
-    - content: "Azure App Service"
+    - content: "Azure Virtual Machines, Azure App Service, and Azure Cache for Redis "
       isCorrect: false
       explanation: ""
-    - content: "Azure Virtual Machines"
+    - content: "Azure Virtual Machines, Azure Kubernetes Service (AKS), and Azure Cache for Redis"
       isCorrect: true
       explanation: ""
-    - content: "Azure Kubernetes Service (AKS)"
-      isCorrect: true
-      explanation: ""
-    - content: "Azure Cache for Redis"
-      isCorrect: true
-      explanation: ""
-    - content: "Azure Functions"
+    - content: "Azure Kubernetes Service (AKS) and Azure Functions"
       isCorrect: false
-      explanation: ""      
-  - content: "Before you can run an experiment against a service from Azure Chaos Studio, what do you need to enable?"
+      explanation: ""
+  - content: "Before you can run an experiment against a service from Azure Chaos Studio, what setting do you need to enable?"
     choices:
     - content: "Target"
       isCorrect: true

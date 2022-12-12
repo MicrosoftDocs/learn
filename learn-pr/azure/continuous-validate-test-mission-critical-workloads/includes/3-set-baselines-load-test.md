@@ -2,9 +2,13 @@ An application can have several user flows, each of which can have different per
 
 ![Diagram showing sample test criteria.](../media/deployment-testing-test-criteria.png)
 
+## Use Azure Load Testing to evaluate thresholds
+
 Because the expected performance of components is often not clearly known or understood, Azure Load Testing can help to identify the performance of individual components, the scale-out behavior and the thresholds to expect.
 
 The expected number of requests per second for the various components might be different or there might be different requirements for normal operations and special situations (for example during a chaos experiment or peak load) where higher error rates or lower requests per second are expected and acceptable.
+
+## Set up baselines
 
 To set up baselines for load tests, follow these steps:
 
