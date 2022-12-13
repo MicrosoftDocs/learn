@@ -224,11 +224,7 @@ Now it's time to watch your web app and Azure Functions project work together. S
 > [!NOTE]
 > Be sure to install the [Azure Functions Core Tools](/azure/azure-functions/functions-run-local), which will allow you to run Azure Functions locally.
 
-1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
-
-1. Enter and select **Terminal: Create New Terminal (In Active Workspace)**.
-
-1. Go to the _api_ folder:
+1. Open a git terminal and go to the _api_ folder:
 
    ```bash
    cd api
@@ -237,7 +233,11 @@ Now it's time to watch your web app and Azure Functions project work together. S
 1. Run the Azure Functions app locally:
 
    ```bash
-   func start
+   npm install
+   ```
+
+   ```bash
+   npm start
    ```
 
 ## Run the web app
@@ -292,9 +292,7 @@ Configure the proxy for your front-end app with the following steps:
 
 Your API is already running on port 7071. Now, when you run your web app, it will make its HTTP requests to your API. Run your web app by following these steps:
 
-1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
-
-1. Enter and select **Terminal: Create New Terminal (In Active Workspace)**.
+1. Open a second git terminal instance.
 
 1. Next, go to the folder of your preferred front-end framework, as follows:
 
@@ -398,4 +396,4 @@ It's time to see your application running locally against the Azure Functions AP
 
 ## Next steps
 
-Your app works locally, and your next step is to publish the app with the API together.
+Your app works locally, and your next step is to publish the app with the API.

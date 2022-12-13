@@ -4,8 +4,8 @@ metadata:
   title: Monitor and report on security events in Azure Active Directory
   description: Keep tabs on security events in your Azure Active Directory resources by using built-in reporting and monitoring capabilities. Respond to events as they happen, and address security risks before they become a problem.
   ms.date: 04/22/2022
-  author: MarkusVi
-  ms.author: markvi
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Monitor and report on security events in Azure Active Directory
