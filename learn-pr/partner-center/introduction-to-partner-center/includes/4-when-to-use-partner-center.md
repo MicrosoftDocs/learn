@@ -16,7 +16,7 @@ Within the [Billing](/partner-center/billing.md) workspace, view billing history
   - Explore legacy billing when you add new subscriptions, adjust license quantity, or cancel a subscription. See how usage-based and license-based subscriptions differ.
 - [Common legacy monthly billing scenarios](/partner-center/common-billing-scenarios-monthly?source=recommendations)
   - Common scenarios in Partner Center when you use legacy monthly billing - includes adding new subscriptions, changing license quantity, and suspending subscriptions.
-- [Recon file fields for CSP one-time purchases](/partner-center/modern-invoice-reconciliation-file?source=recommendations)
+- [Recon file fields for Cloud Solution Provider (CSP) one-time purchases](/partner-center/modern-invoice-reconciliation-file?source=recommendations)
   - Learn about all of the items on your CSP one-time purchase reconciliation file in Partner Center, including sample values.
 - [Billing frequency changes at Partner Center](/partner-center/billing-frequency-changes?source=recommendations)
   - Information about changing the billing frequency of CSP license-based subscriptions from monthly to annual or from annual to monthly
@@ -27,7 +27,7 @@ Within the [Billing](/partner-center/billing.md) workspace, view billing history
 - [Regional taxes and tax exemptions](/partner-center/tax-and-tax-exemptions?source=recommendations)
   - CSP program partners can learn about tax responsibilities per region, how to submit tax exemptions for CSP sales, and how to get support for tax questions.
 - [Restricted direct-bill capabilities](/partner-center/restricted-direct-bill-capabilities?source=recommendations)
-  - Learn about Cloud Solution Provider (CSP) direct-bill partner requirements and what to do to avoid capabilities being restricted. Find out if your capabilities have been restricted.
+  - Learn about CSP direct-bill partner requirements and what to do to avoid capabilities being restricted. Find out if your capabilities have been restricted.
 
 ## Customers
 
@@ -48,11 +48,11 @@ Within the [Customers](/partner-center/connect-with-your-customers.md) workspace
 - [Partner with indirect resellers in CSP](/partner-center/indirect-provider-tasks-in-partner-center?source=recommendations)
   - As an indirect provider or distributor, learn how to expand by partnering with indirect resellers. This expansion includes tasks you can perform in Partner Center.
 - [Switch direct-bill partner to indirect reseller](/partner-center/transition-direct-to-indirect?source=recommendations)
-  - Learn how a Cloud Solution Provider (CSP) program partner can use Partner Center to transition from direct-bill partner to indirect reseller.
+  - Learn how a CSP program partner can use Partner Center to transition from direct-bill partner to indirect reseller.
 - [Microsoft Cloud Partner Program benefits FAQ](/partner-center/benefits-faq-new?source=recommendations)
   - Questions answered about policies regarding Microsoft Cloud Partner Program benefits.
 - [Requirements for CSP direct-bill partners](/partner-center/direct-partner-new-requirements?source=recommendations)
-  - Learn how to meet the latest support and services requirements to become a direct-bill partner in the Microsoft Cloud Solution Provider (CSP) program.
+  - Learn how to meet the latest support and services requirements to become a direct-bill partner in the Microsoft CSP program.
 - [Enroll in the Cloud Solution Provider program](/partner-center/enrolling-in-the-csp-program?source=recommendations)
   - Learn how to enroll in the Cloud Solution Provider (CSP) program sales model that's best for your business, such as indirect reseller or direct-bill partner.
 
@@ -102,7 +102,7 @@ Within the [Pricing](/partner-center/pricing-and-offers.md) workspace, partners 
 - [July 2022 announcements](/partner-center/announcements/2022-july?source=recommendations)
   - July 2022 announcements for Microsoft Partner Center including new capabilities, promotions, offers, markets, or changes to existing offers.
 - [Requirements for CSP direct-bill partners](/partner-center/direct-partner-new-requirements?source=recommendations)
-  - Learn how to meet the latest support and services requirements to become a direct-bill partner in the Microsoft Cloud Solution Provider (CSP) program.
+  - Learn how to meet the latest support and services requirements to become a direct-bill partner in the Microsoft CSP program.
 - [Billing for one-time and recurring purchases in new commerce](/partner-center/common-billing-scenarios-onetime-recurring?source=recommendations)
   - New commerce billing examples from the Partner Center for one-time and recurring purchases.
 - [November 2022 announcements](/partner-center/announcements/2022-november?source=recommendations)
@@ -116,7 +116,7 @@ Use the **Referrals** tile to discover and manage leads and Co-sell opportunitie
 
    :::image type="content" source="../media/referrals-tile.png" alt-text="Screenshot of the referrals tile in Partner Center.":::
 
-Within the [Referrals](/partner-center/referrals.md) workspace, partners can create and view business profiles, gather and respond to referrals, track leads, see inbound and outbound Co-seel opportunities, and see ISV connect invoices.
+Within the [Referrals](/partner-center/referrals.md) workspace, partners can create and view business profiles, gather and respond to referrals, track leads, see inbound and outbound Co-sell opportunities, and see ISV connect invoices.
 
 ### Recommended content for the Referrals workspace
 

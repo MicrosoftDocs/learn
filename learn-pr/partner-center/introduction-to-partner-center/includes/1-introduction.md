@@ -9,7 +9,7 @@ Partner Center helps:
 - **Direct-bill partners** have a direct billing relationship with Microsoft and can purchase offers directly from the commercial marketplace and sell them to customers.
 
 > [!NOTE]
-> If you are another kind of partner, such as a marketplace publisher, you can still a learn about the use of Partner Center, but the majority of examples used will be based on CSP scenarios.
+> If you are another kind of partner, such as a marketplace publisher, you can still learn about the use of Partner Center, but the majority of examples used will be based on CSP scenarios.
 
 You can see how these relationships overlap in the following diagram.
 

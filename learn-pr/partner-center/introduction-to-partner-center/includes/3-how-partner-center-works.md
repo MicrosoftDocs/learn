@@ -40,13 +40,13 @@ Learn more about the available workspaces by selecting the links in the followin
 
 ## Find your workspaces
 
-Use **My access** to find your organization's workspaces and which of them you have access to.
+Use **My access** to find your organization's workspaces that you can access.
 
 **To find your organization’s workspaces, the workspaces that you have access to, and to request access to a workspace:**
 
 1. From the [Partner Center home page](https://partner.microsoft.com/dashboard/home), select **My access** to display a list of your organization's workspaces.
 1. In the list that appears, view the workspaces and which of those workspaces you have been granted access to.
-   - If a workspace you're trying to access isn’t listed, that means your organization isn’t enrolled in the corresponding program. You can explore programs offered by Partner Center in **Account Settings | Programs**.
+If a workspace you're trying to access isn’t listed, that means your organization isn’t enrolled in the corresponding program. You can explore programs offered by Partner Center in **Account Settings | Programs**.
 1. Selecting a workspace in the list displays the admin to contact to request access to a workspace, and other useful information.
 
 ## Find your roles
