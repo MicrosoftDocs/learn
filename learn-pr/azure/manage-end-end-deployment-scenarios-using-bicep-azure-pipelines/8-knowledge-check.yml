@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check.
-  ms.date: 10/10/2021
+  ms.date: 12/12/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ quiz:
       explanation: Incorrect. You need to explicitly grant a deployment script's identity access to your Azure environment.
     - content: Deployment scripts can't accept parameters.
       isCorrect: false
-      explanation: Incorrect. Deployment scripts can accept arguments as well as environment variables.
+      explanation: Incorrect. Deployment scripts can accept arguments and environment variables.
 
   - content: |
       You've created a multistage pipeline that deploys an Azure Cosmos DB account, database, and container.
