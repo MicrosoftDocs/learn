@@ -1,54 +1,24 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
 
-    Goal: briefly summarize the key skill this unit will teach
-
-    Heading: none
-
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
-
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
 You can merge or join data to provide rich insights using the merge control. 
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+Merging data from different sources can enhance the insights experience. An example is augmenting active alert information with related metric data. Merging data allows users to see not just the effect (an active alert) but also potential causes, for example, high CPU usage. The monitoring domain has numerous such correlatable data sources that are often critical to the triage and diagnostic workflow.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+- **Merge**. Merge or join data to provide rich insights. There are several correlatable data sources that can be important to the triage and diagnostic workflow.For example, you can augment active alert information with related metric data. Merging data lets you see the active alert and also see potential causes, for example, high CPU usage. 
+Workbooks support these merges:
+* Inner unique join
+* Full inner join
+* Full outer join
+* Left outer join
+* Right outer join
+* Left semi-join
+* Right semi-join
+* Left anti-join
+* Right anti-join
+* Union
+* Duplicate table
 
-    Heading: none, combine this with the topic sentence into a single paragraph
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
-
-    Goal: State concisely what's covered in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+With workbooks, you can query different data sources. Workbooks also provide simple controls that you can use to merge or join data to provide rich insights. The *merge* control is the way to achieve it.
 
 <!-- Pattern for simple chunks (repeat as needed) -->
 ## H2 heading

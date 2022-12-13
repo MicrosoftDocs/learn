@@ -34,7 +34,7 @@ units:
 - learn.visualize-data-workbooks.introduction
 - learn.visualize-data-workbooks.azure-workbooks-overview
 - learn.visualize-data-workbooks.create-new-azure-workbook
-- learn.visualize-data-workbooks.query-multiple-data-sources
+- learn.visualize-data-workbooks.supported-data-sources
 - learn.visualize-data-workbooks.add-visualization-for-query-results
 - learn.visualize-data-workbooks.compare-data
 - learn.visualize-data-workbooks.add-visualizations-chart-grid
