@@ -1,6 +1,6 @@
 Azure Web PubSub can help you add real-time messaging and communication functionality to your application without the need to provision and maintain WebSocket servers. Azure Web PubSub delivers real-time messages to your customers anywhere across web applications, mobile platforms, and desktop platforms with flexible SDKs.
 
-Azue Web PubSub helps you create loosely coupled, scalable applications — including chats, live broadcasting, and IoT dashboards — with the publish-subscribe messaging pattern. Using Web PubSub to manage the flow of data and content to your webpages or mobile apps means you can focus on the functionality instead of the infrastructure.
+Azure Web PubSub helps you create loosely coupled, scalable applications — including chats, live broadcasting, and IoT dashboards — with the publish-subscribe messaging pattern. Using Web PubSub to manage the flow of data and content to your webpages or mobile apps means you can focus on the functionality instead of the infrastructure.
 
 ## Learn more
 
