@@ -40,6 +40,6 @@ Workbooks can extract data from these data sources:
 
 - **Azure RBAC**. The Azure role-based access control (RBAC) provider allows you to check permissions on resources. It's most commonly used in parameters to check if the correct RBACs are set up. A use case would be to create a parameter to check deployment permission and then notify the user if they don't have deployment permission.
 
-- **Change Analysis.(preview)** Use [Application Change Analysis](../app/change-analysis.md) as the data source, to display changes for up to the last 14 days.
+- **Change Analysis.(preview)** Use Change Analysis as the data source, to display changes for up to the last 14 days.
 
     ![Screenshot that shows a workbook with Change Analysis.](../media/4-change-analysis-data-source.png) 
