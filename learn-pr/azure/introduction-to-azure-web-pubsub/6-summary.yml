@@ -6,7 +6,7 @@ metadata:
   description: This unit contains a summary of Azure Web PubSub and what we have learned so far.
   author: dlepow
   ms.author: danlep
-  ms.date: 12/15/2022
+  ms.date: 12/12/2022
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

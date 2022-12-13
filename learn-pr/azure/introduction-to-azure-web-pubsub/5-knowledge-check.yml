@@ -1,0 +1,55 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-to-azure-web-pubsub.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge of Azure Web PubSub
+  ms.date: 12/12/2022
+  author: dlepow
+  ms.author: danlep
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+      - content: "Azure Web PubSub isn't suitable for small scale applications."
+        choices:
+          - content: "True"
+            isCorrect: false
+            explanation:
+              "Incorrect. Azure Web PubSub is suitable for large scale and
+              small scale requirements."
+          - content: "False"
+            isCorrect: true
+            explanation:
+              "Correct! Azure Web PubSub is suitable for large scale and
+              small scale requirements."
+      - content: "Azure Web PubSub supports a wide variety of client SDKs and programming languages"
+        choices:
+          - content: "True"
+            isCorrect: true
+            explanation: "Correct! Azure Web PubSub supports a wide variety of client SDKs and programming languages"
+          - content: "False"
+            isCorrect: false
+            explanation: "Incorrect. Azure Web PubSub supports a wide variety of client SDKs and programming languages"
+      - content: "Which is true about Azure Web PubSub?"
+        choices:
+          - content:
+              "Azure Web PubSub is best suited for scenarios requiring real-time
+              applications"
+            isCorrect: true
+            explanation:
+              "Correct. Azure Web PuSub is useful when an application requires
+              real-time publish-subscribe functionality."
+          - content:
+              "Azure Web PubSub requires you to configure and set up the infrastructure
+              from scratch before using the service."
+            isCorrect: false
+            explanation:
+              "Incorrect! Azure Web PubSub works with serverless applications as
+              well as server-based applications, hence infrastructure isn't a mandatory requirement, it is optional."
+          - content: "You can't use REST API with Azure Web PubSub"
+            isCorrect: false
+            explanation: "Incorrect. Azure Web PubSub service provides a REST API to enable applications to post messages to clients connected, in any REST capable programming languages."

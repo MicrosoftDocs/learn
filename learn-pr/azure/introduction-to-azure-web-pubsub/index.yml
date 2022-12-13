@@ -3,18 +3,17 @@ uid: learn.introduction-to-azure-web-pubsub
 metadata:
   title: Introduction to Azure Web PubSub
   description: Learn what Azure Web PubSub is, when to use it, and how it works.
-  ms.date: 12/15/2022
+  ms.date: 12/12/2022
   author: dlepow
   ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Web PubSub
-summary: Evaluate how Azure Web PubSub can help you add real-time publish-subscribe messaging and communication functionality to your application. Determine how clients connect to the service and the service exposes REST APIs and SDKs for you to manage these clients.
-abstract: |
-  In this module you'll learn:
-  - What is Azure Web PubSub
-  - How Azure Web PubSub works and the logic behind it
-  - When to use Azure Web PubSub
+summary: "Learn about adding real-time messaging and communication functionality to your web application by using Azure Web PubSub. Describe client connections to the service using WebSocket protocol and the publish-subscribe pattern."  
+abstract: |  
+  By the end of this module you'll be able to:
+  - Evaluate whether to use Azure Web PubSub for adding messaging and communication functionality to your web application.
+  - Describe using WebSockets and the publish-subscribe pattern for real-time content updates between a server and connected clients.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
@@ -31,6 +30,7 @@ units:
   - learn.introduction-to-azure-web-pubsub.what-azure-web-pubsub
   - learn.introduction-to-azure-web-pubsub.how-azure-web-pubsub-works
   - learn.introduction-to-azure-web-pubsub.when-use-azure-pubsub
+  - learn.introduction-to-azure-web-pubsub.knowledge-check
   - learn.introduction-to-azure-web-pubsub.summary
 badge:
   uid: learn.introduction-to-azure-web-pubsub.badge
