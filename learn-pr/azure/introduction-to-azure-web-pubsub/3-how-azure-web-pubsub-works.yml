@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-azure-web-pubsub.how-azure-web-pubsub-works
+title: How Azure Web PubSub works
+metadata:
+  title: How Azure Web PubSub works
+  description:
+    In this unit, we learn about Azure Web PubSub workflow and how the logic behind the service works.
+  author: saifeemustafaq
+  ms.author: msaifee
+  ms.date: 03/31/2022
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-how-azure-web-pubsub-works.md)]
