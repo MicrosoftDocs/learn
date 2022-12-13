@@ -140,7 +140,7 @@ Django templates help us create html files that get loaded when an endpoint is a
 
 1. Finally, we create the two shared template files. These templates are the *layout.html* and *content.html* files.
 
-    *4.a layout.html*
+    *5.a layout.html*
 
     ```html
         {% load static %}
@@ -182,7 +182,7 @@ Django templates help us create html files that get loaded when an endpoint is a
         </html>
     ```
 
-    *4.b content.html*
+    *5.b content.html*
 
     ```html
         {% extends './layout.html' %}
