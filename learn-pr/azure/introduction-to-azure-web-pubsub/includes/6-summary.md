@@ -1,8 +1,6 @@
-The goal here was to help you understand how Azure Web PubSub can help you add real-time messaging and communication functionality to your application without the need to provision and maintain WebSocket servers. We also learned that Azure Web PubSub handles hosting, scalability, load balancing, and other tasks so you're free to focus on what you do best.
+Azure Web PubSub can help you add real-time messaging and communication functionality to your application without the need to provision and maintain WebSocket servers. Azure Web PubSub delivers real-time messages to your customers anywhere across web applications, mobile platforms, and desktop platforms with flexible SDKs.
 
-Azure Web PubSub delivers real-time messages to your customers anywhere across web applications, mobile platforms, and desktop platforms with flexible SDKs.
-
-We learned that with Azure Web PubSub, you can add sophisticated capabilities to your applications using Azure services—such as Azure Cognitive Services for speech recognition and machine learning—and help protect them with built-in Azure security.
+Azue Web PubSub helps you create loosely coupled, scalable applications — including chats, live broadcasting, and IoT dashboards — with the publish-subscribe messaging pattern. Using Web PubSub to manage the flow of data and content to your webpages or mobile apps means you can focus on the functionality instead of the infrastructure.
 
 ## Learn more
 
@@ -10,12 +8,12 @@ To learn more about Azure Web PubSub, visit the following sites and articles:
 
 - [Azure Web PubSub service documentation](/azure/azure-web-pubsub/)
 - [Samples for Azure Functions, C#, Java, JavaScript and Python](https://github.com/Azure/azure-webpubsub/tree/main/samples)
-- [Quickstart Azure Web PubSub from Azure CLI](/azure/azure-web-pubsub/quickstart-cli-try)
+- [Quickstart: Azure Web PubSub from Azure CLI](/azure/azure-web-pubsub/quickstart-cli-try)
 - Everything about Azure Web PubSub in a PDF format: [Download PDF on everything Azure Web PubSub](/azure/opbuildpdf/azure-web-pubsub/toc.pdf?branch=live)
 
-## Here are a few examples about how you can implement Azure Web PubSub
+## Examples to implement Azure Web PubSub
 
-The below links will redirect you to tutorial documentations where you can follow the instructions and get started with building your first Azure Web PubSub application.
+See the following tutorials to get started with building your first Azure Web PubSub application.
 
 - [Create a serverless notification app with Azure Functions and Azure Web PubSub service](/azure/azure-web-pubsub/tutorial-serverless-notification?tabs=javascript)
 
@@ -28,8 +26,3 @@ The below links will redirect you to tutorial documentations where you can follo
 - [Publish and subscribe messages between WebSocket clients using subprotocol](/azure/azure-web-pubsub/tutorial-subprotocol?tabs=csharp)
 
 - [Add authentication and permissions to your application when using Azure Web PubSub](/azure/azure-web-pubsub/tutorial-permission)
-
-
-
-
-Azure Web PubSub is an excellent choice when you want to develop web applications with real-time messaging. It's a fully managed service that supports native and serverless WebSockets. You can create loosely coupled, scalable applications—including chats, live broadcasting and IoT dashboards—with the publish-subscribe messaging pattern. Using Web PubSub to manage the flow of data and content to your webpages or mobile apps means you can focus on the functionality instead of the infrastructure.

@@ -1,7 +1,7 @@
 Many of today's web applications demand real-time messaging and notification features. Consider just a few examples where content and data updates in real time are crucial to the customer experience and business goals:
 
 - Gaming, voting, polling, and auction apps requiring fast data transit.
-- Live chat rooms, chat bots, on-line customer support, real-time shopping assistant, messenger, in-game chat, and so on.
+- Live chat rooms, chat bots, on-line customer support, and real-time shopping assistant apps.
 - Logistic tracking, delivery status tracking, transportation status updates, and GPS apps.
 - Social meeting apps, whiteboard apps, and team meeting software that require a seamless experience for live collaboration.
 - Social networking, email, games, and travel apps requiring instant notifications.
@@ -9,7 +9,7 @@ Many of today's web applications demand real-time messaging and notification fea
 
 ## Scenario
 
-Your company wants to build a real-time notification app for web and mobile browsers. Your team needs a solution that requires minimum time to build and works easily with other Azure services. You also want the app to be serverless and use serverless services such as Azure Functions, which doesn't require management of infrastructure. Over time, you expect the app to scale to a large number of users requiring concurrent connections. Here, you'll see how Azure Web PubSub can help you implement real-time notifications and help you decide if Azure Web PubSub is a good choice for your business.
+Your company wants to build an app for web and mobile browsers that includes real-time notifications. Your team needs a solution that requires minimum time to build and works easily with other Azure services. You also want the app to be serverless and use serverless services such as Azure Functions, which doesn't require management of infrastructure. Over time, you expect the app to scale to a large number of users requiring concurrent connections. Here, you'll see how Azure Web PubSub can help you implement real-time notifications and help you decide if Azure Web PubSub is a good choice for your business.
 
 ## What will you learn?
 

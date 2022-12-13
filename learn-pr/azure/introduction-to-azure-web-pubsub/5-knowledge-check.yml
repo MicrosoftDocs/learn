@@ -14,6 +14,23 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
+      - content: "For which application scenario would you **not** choose Azure Web PubSub?"
+        choices:
+          - content:
+              "Notifications from a travel app"
+            isCorrect: false
+            explanation: 
+              "Incorrect. Instant updates from a social networking, gaming, or travel app are handled well using Azure Web PubSub to manage the flow of data and content."
+          - content:
+              "Cross-platform live chat room"
+            isCorrect: false
+            explanation: 
+              "Incorrect. A live chat room is an excellent use case for real-time publish-subscribe messaging between server and clients using Azure Web PubSub."
+          - content:
+              "Web server for static content such as HTML pages and images"
+            isCorrect: true
+            explanation:
+              "Correct! Delivering static web page content doesn't require clients to poll or submit new HTTP requests for updates."
       - content: "Azure Web PubSub isn't suitable for small-scale applications."
         choices:
           - content: "True"

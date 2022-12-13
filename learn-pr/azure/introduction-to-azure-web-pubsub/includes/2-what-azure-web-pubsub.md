@@ -1,4 +1,4 @@
- The Azure Web PubSub Service helps you build real-time messaging web applications using WebSockets and the publish-subscribe pattern easily. This real-time functionality allows publishing content updates between server and connected clients (for example a single page web application or mobile application). The clients don't need to poll the latest updates, or submit new HTTP requests for updates. 
+ The Azure Web PubSub Service helps you build real-time messaging web applications using WebSockets and the publish-subscribe pattern easily. This real-time functionality allows publishing content updates between server and connected clients (for example, a single-page web application or mobile application). The clients don't need to poll the latest updates, or submit new HTTP requests for updates. 
 
 ## Benefits of using Azure Web PubSub service
 
