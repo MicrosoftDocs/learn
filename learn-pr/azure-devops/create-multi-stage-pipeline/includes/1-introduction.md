@@ -25,7 +25,7 @@ We also recommend you start at the beginning of this learning path: [Deploy appl
 
 If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
 
-- An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
+- An [Azure DevOps organization](https://dev.azure.com?azure-portal=true) with access to [parallel jobs](azure/devops/pipelines/licensing/concurrent-jobs). If your organization does not have access to parallel jobs, you can request parallel jobs for free for public or private projects using [this form](https://aka.ms/azpipelines-parallelism-request). Your request will take 2-3 business days.
 - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
 - A [GitHub](https://github.com/join?azure-portal=true) account
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
