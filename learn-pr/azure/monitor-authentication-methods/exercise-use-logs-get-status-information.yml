@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Access sign-in logs directly
   description: Exercise - Access sign-in logs directly
   ms.date: 07/21/2022
-  author: MarkusVi
-  ms.author: markvi
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure 
 durationInMinutes: 15

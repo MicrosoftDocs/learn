@@ -37,7 +37,6 @@ roles:
   - developer
 products:  
   - azure
-  - vs-code
   - azure-app-service
 subjects:
 - development-tools

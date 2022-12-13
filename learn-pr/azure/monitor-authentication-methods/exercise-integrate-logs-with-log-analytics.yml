@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Integrate logs with Log analytics  
   description: Exercise - Integrate logs with Log analytics
   ms.date: 07/21/2022
-  author: MarkusVi
-  ms.author: markvi
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure 
 durationInMinutes: 25

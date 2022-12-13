@@ -33,7 +33,6 @@ roles:
 - student
 products:
 - azure
-- vs-code
 units:
 - learn.language.typescript-develop-typed-functions.1-introduction
 - learn.language.typescript-develop-typed-functions.2-create-functions-typescript

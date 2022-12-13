@@ -55,7 +55,7 @@ With any-to-any connectivity, you can integrate your wide area network (WAN) wit
 
 ### Directly from ExpressRoute sites
 
-You can connect directly into the Microsoft global network at a peering location strategically distributed across the world. ExpressRoute Direct provides dual 100 Gbps or 10-Gbps connectivity, which supports Active/Active connectivity at scale.
+You can connect directly into the Microsoft's global network at a peering location strategically distributed across the world. ExpressRoute Direct provides dual 100 Gbps or 10-Gbps connectivity, which supports Active/Active connectivity at scale.
 
 ## Security considerations
 
