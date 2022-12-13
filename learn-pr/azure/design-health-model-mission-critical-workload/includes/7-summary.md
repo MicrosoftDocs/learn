@@ -2,13 +2,14 @@ Contoso Shoes is an online shoe store that wants to add health modeling to their
 
 ## What is the main goal?
 
-By the end of this module, you'll have demonstrated your ability to design a health modeling system in a production-ready, mission-critical solution.
+By the end of this module, you'll have demonstrated your ability to design a health model in a production-ready, mission-critical solution.
 
 In this module, you created the foundation of a health model for the defined architecture:
 
 - You identified two user flows: list catalog items and add comment.
-- You identified key application components and metrics.
-- You visualized the health model in a dashboard.
+- You identified key application components and built a layered health model.
+- You identified metrics and thresholds for individual components in the model.
+- You learned about visualizing the health model in a dashboard.
 
 Congratulations on completing this training module. You've learned how to design a health model and have applied this knowledge through the exercises to meet an organization's needs.
 

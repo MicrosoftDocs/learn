@@ -10,8 +10,9 @@ Going forward, Contoso Shoes needs to be ready for their next high-profile produ
 
 By the end of this module, you'll be able to:
 
-- Identify user flows and key application components of a given architecture
-- Identify key metrics for the foundation of the health model of a given architecture
+- Identify user flows and key application components of a given architecture.
+- Build a layered health model of a given architecture.
+- Identify key metrics and thresholds of the health model of a given architecture.
 - Visualize the health model in a dashboard
 
 ## What is the main goal?
@@ -20,9 +21,9 @@ By the end of this module, you'll have demonstrated your ability to design a hea
 
 ## What will you do?
 
-- Design a health endpoint in the application to check the health at the API level and its dependencies.
 - Design a multi-layered health model structure for an internal employee application.
 - Build a health model and visualize the observability data an operational dashboard.
+- Design queries and a health endpoint in the application to check the health at the API level and its dependencies.
 
 > [!IMPORTANT]
 >
