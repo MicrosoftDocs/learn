@@ -4,7 +4,7 @@ title: Plan and configure Privileged Access Groups
 metadata:
   title: Plan and configure Privileged Access Groups
   description: "Plan and configure Privileged Access Groups"
-  ms.date: 06/27/2022
+  ms.date: 12/13/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/6a-plan-configure-privileged-access-groups.md)]
+  [!include[](includes/7-plan-configure-privileged-access-groups.md)]
