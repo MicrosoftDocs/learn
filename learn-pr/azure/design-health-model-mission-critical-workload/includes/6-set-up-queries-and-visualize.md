@@ -14,13 +14,15 @@ A *unified data sink* is required to ensure all operational data is stored and m
 
 ![Diagram showing an example of application health data collection.](../media/mission-critical-health-data-collection.png)
 
-When you use Application Insights with one of the supported SDKs, the key benefit is transparent end-to-end tracing.
+When you use Application Insights with one of the supported SDKs, the key benefit is transparent end-to-end tracing. It's important to be able to track requests from the client through all layers of the system. 
+
+*For example, when a user creates a comment in their web-browser, the operator is able to find this operation in Application Insights and see that the request went through the Catalog API to Event Hub, where it was picked up by the Background Processor and stored in Cosmos DB.*
 
 Contoso Shoes uses Azure Functions on .NET 6 for their backend services, so they can make use of the native integration.
 
 Because the backend applications already exist, the team will create only a new Application Insights resource in Azure and configure the `APPLICATIONINSIGHTS_CONNECTION_STRING` setting on both Function Apps.
 
-The Azure Functions runtime registers the Application Insights logging provider automatically. For additional custom logs, use ILogger.
+The Azure Functions runtime registers the Application Insights logging provider automatically, so telemetry should appear in Azure without additional effort. For more custom logging, they would use `ILogger`.
 
 ## Health monitoring queries
 
@@ -28,7 +30,7 @@ Log Analytics, Application Insights, and Azure Data Explorer all use [Kusto Quer
 
 For individual services that calculate the health status, see the following sample queries:
 
-- [Catalog API](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/CatalogServiceHealthStatus.kql)
+- [Catalog API](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/CatalogServiceHealthStatus.kql) example
 
 ```kql
 let _maxAge = 2d; // Only include data from the last two days
@@ -66,7 +68,7 @@ avgProcessingTime
 | extend ComponentName="CatalogService"
 ```
 
-- [Azure Key Vault](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/KeyvaultHealthStatus.kql)
+- [Azure Key Vault](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/KeyvaultHealthStatus.kql) example
 
 ```kql
 let _maxAge = 2d; // Only include data from the last two days
