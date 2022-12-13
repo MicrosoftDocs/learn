@@ -119,6 +119,25 @@ Django templates help us create html files that get loaded when an endpoint is a
         {% endblock %}
     ```
 
+1. Create the *auth-bar-items.html* template. This template displays the sign-in or sign-out button depending on whether the user is signed-in or not.
+
+    ```html
+        <ul class="nav navbar-nav navbar-right">
+        {% if request.identity_context_data.authenticated %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'status' %}">Hello {{ request.identity_context_data.username }}!</a>
+            </li>
+            <li>
+                <a class="btn btn-warning" href="{% url 'sign_out' %}">Sign Out</a>
+            </li>
+        {% else %}
+            <li>
+                <a class="btn btn-success" href="{% url 'sign_in' %}">Sign In</a>
+            </li>
+        {% endif %}
+        </ul>
+    ```
+
 1. Finally, we create the two shared template files. These templates are the *layout.html* and *content.html* files.
 
     *4.a layout.html*
