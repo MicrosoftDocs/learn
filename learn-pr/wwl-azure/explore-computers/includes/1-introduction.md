@@ -18,4 +18,4 @@ In this module, you'll explore the following articles:
 
 ## Power up
 
-So, keep your computer charged or plugged in and we'll learn a bit more about how it all works. You're about to go from being a user of your hardware to being, well, a user who knows these machines as an "insider."
+So, keep your computer charged or plugged in and we'll learn a bit more about how it all works. You're about to go from being a user of your hardware to being, well, a user who knows these machines as an "insider." 
