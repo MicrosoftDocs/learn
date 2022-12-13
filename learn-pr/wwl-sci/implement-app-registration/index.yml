@@ -2,8 +2,8 @@
 uid: learn.wwl.implement-app-registration
 metadata:
   title: Implement app registration
-  description: "Line of business developed in-house need registration in Azure AD and assigned to users for a secure Azure solution. Explore how to implement app registration."
-  ms.date: 07/25/2022
+  description: "Implement app registration"
+  ms.date: 12/13/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
