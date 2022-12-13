@@ -2,7 +2,7 @@
 uid: learn.introduction-to-azure-web-pubsub
 metadata:
   title: Introduction to Azure Web PubSub
-  description: Learn what Azure Web PubSub is, when to use it, and how it works.
+  description: Learn what Azure Web PubSub is, when to use it, and how it works to add real-time messaging functionality to your web application.
   ms.date: 12/12/2022
   author: dlepow
   ms.author: danlep
