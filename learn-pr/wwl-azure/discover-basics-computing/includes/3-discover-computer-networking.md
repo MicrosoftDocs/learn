@@ -8,7 +8,7 @@ All those computers need something like a name that no other computers share. Th
 
 Every computer on the internet has an ID that is different than all other devices on the internet. This ID is called a *MAC address* (MAC stands for "media access control"). It's like having a name that no one else shares or could share.
 
-![Diagram showing a mac address.](../media/mac-address.png)
+![Diagram showing a mac address.](../media/media-access-control-address.png)
 
 Okay, so there are lots of computers with unique IDs on the internet. Let's talk about how they all talk to each other.
 
