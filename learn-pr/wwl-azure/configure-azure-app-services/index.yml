@@ -17,7 +17,7 @@ abstract: |
   - Configure deployment settings, specifically deployment slots.
   - Secure your Azure App Service app.
   - Configure custom domain names.
-  - Back up your Azure App Service app.
+  - Back up and restore your Azure App Service app.
   - Configure Azure Application Insights.
 prerequisites: |
   None

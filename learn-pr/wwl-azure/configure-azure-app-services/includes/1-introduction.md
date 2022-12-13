@@ -15,7 +15,7 @@ In this module, you learn how to:
 - Configure deployment settings, specifically deployment slots.
 - Secure your App Service app.
 - Configure custom domain names.
-- Back up your App Service app.
+- Back up and restore your App Service app.
 - Configure Azure Application Insights.
 
 ## Skills measured
