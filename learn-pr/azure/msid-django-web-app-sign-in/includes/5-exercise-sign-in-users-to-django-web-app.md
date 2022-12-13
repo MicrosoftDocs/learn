@@ -111,7 +111,7 @@ Django templates help us create html files that get loaded when an endpoint is a
 
         {% block text %}
             {% for claim, value in claims_to_display.items %}
-                <strong>{{ claim }}:</strong> {{ value }} ddddd
+                <strong>{{ claim }}:</strong> {{ value }}
                 <br>
             {% endfor %}
             <br>
