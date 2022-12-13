@@ -30,7 +30,7 @@ roles:
 - student
 - data-scientist
 products:
-- vs-code
+- azure
 units:
 - learn.student-evangelism.count-moon-rocks-python-nasa.1-introduction
 - learn.student-evangelism.count-moon-rocks-python-nasa.2-set-up-program
