@@ -1,4 +1,4 @@
-[Partner Center](https://partner.microsoft.com/dashboard) streamlines several business processes to make it easier for Microsoft partners to manage their relationships with Microsoft and with their customers. it gives you access to the tools you need to get work done.
+[Partner Center](https://partner.microsoft.com/dashboard) streamlines several business processes so that Microsoft partners can easily manage their relationships with their customers and Microsoft. 
 
 Partner Center is a web-based, unified console that provides access to a wide range of partner-centric activities such as membership, benefits, and account settings, all through a graphical user interface. The portal uses the concept of workspaces to group related tasks and information together.
 
