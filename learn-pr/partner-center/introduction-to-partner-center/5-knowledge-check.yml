@@ -17,13 +17,13 @@ quiz:
   questions:
   - content: "What is Partner Center?"
     choices:
-    - content: "one of the Microsoft Cloud Partner Program membership programs"
+    - content: "One of the Microsoft Cloud Partner Program membership programs"
       isCorrect: false
       explanation: "Partner Center is a web-based console that streamlines several business processes to make it easier for Microsoft partners to manage their relationships."
-    - content: "a web-based, unified console that provides access to a wide range of partner-centric activities such as membership, benefits, and account settings, all through a graphical user interface."
+    - content: "A web-based, unified console that provides access to a wide range of partner-centric activities such as membership, benefits, and account settings, all through a graphical user interface."
       isCorrect: true
       explanation: "Yes, Partner Center is a web-based console that streamlines several business processes to make it easier for Microsoft partners to manage their relationships."
-    - content: "a section of Action Center that displays notifications and preferences"
+    - content: "A section of Action Center that displays notifications and preferences"
       isCorrect: false
       explanation: "Partner Center is a web-based console that streamlines several business processes to make it easier for Microsoft partners to manage their relationships."
   - content: "Partner Center provides analytics and insights to help you grow your business."
