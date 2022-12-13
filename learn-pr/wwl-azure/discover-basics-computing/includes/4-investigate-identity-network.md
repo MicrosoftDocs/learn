@@ -10,7 +10,7 @@ The title of this section sounds like a science fiction movie, doesn't it? In so
 
 In addition to the MAC address, each computer that connects to a network (or a subnet) gets another unique ID *on that network*. When you connect to your home network, there's a machine, called a router, that assigns an ID to your device. This is a different ID than the MAC address. This new ID is called an internet protocol (IP) address.
 
-![Diagram showing various computers with an IP Address underneath each one.](../media/ip-address-computers.png)
+![Diagram showing various computers with an IP Address underneath each one.](../media/internet-protocol-address-computers.png)
 
 You may have seen these weird IDs here and there. They're made up of four groups of numbers separated by a period. Here's an example of a common IP address: `192.168.1.1`. It's not important at this point to understand these numbers. Focus on the fact that each device on a network gets one. It's used to identify that device on that network.
 
