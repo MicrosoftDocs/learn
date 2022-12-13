@@ -129,7 +129,7 @@ When the application bundle is generated and compiled, a browser tab automatical
 
 Local host for angular is `http://localhost:4200`.
 
-:::image type="content" source="../media/my-shopping-list-app-loading-angular.png" alt-text="local host for your Angular web app.":::
+:::image type="content" source="../media/my-shopping-list-app-loading-angular.png" alt-text="Screenshot of the local host for your Angular web app.":::
 
 ::: zone-end
 
@@ -137,7 +137,7 @@ Local host for angular is `http://localhost:4200`.
 
 Local host for react is  `http://localhost:3000`.
 
-:::image type="content" source="../media/my-shopping-list-app-loading-react.png" alt-text="local host for your React web app.":::
+:::image type="content" source="../media/my-shopping-list-app-loading-react.png" alt-text="Screenshot of the local host for your React web app.":::
 
 ::: zone-end
 
@@ -145,7 +145,7 @@ Local host for react is  `http://localhost:3000`.
 
 Local host for svelte is `http://localhost:5000`.
 
-:::image type="content" source="../media/my-shopping-list-app-loading-svelte.png" alt-text="local host for your Svelte web app.":::
+:::image type="content" source="../media/my-shopping-list-app-loading-svelte.png" alt-text="Screenshot of the local host for your Svelte web app.":::
 
 ::: zone-end
 
@@ -153,7 +153,7 @@ Local host for svelte is `http://localhost:5000`.
 
 Local host for Vue is `http://localhost:8080`.
 
-:::image type="content" source="../media/my-shopping-list-app-loading-vue.png" alt-text="Browsing to your Vue web app.":::
+:::image type="content" source="../media/my-shopping-list-app-loading-vue.png" alt-text="Screenshot of the local host for your Vue web app.":::
 
 ::: zone-end
 
@@ -317,21 +317,21 @@ A current Azure and GitHub authenticated sessions are required to create a stati
 
 3. Once the app is created, a confirmation notification is shown in Visual Studio Code.
 
-   :::image type="content" source="../media/extension-confirmation.png" alt-text="Open Actions in GitHub or View/Edit Config.":::
+   :::image type="content" source="../media/extension-confirmation.png" alt-text="Screenshots of the Open Actions in GitHub or View/Edit Config pop-up window.":::
 
    While you're configuring the build, Visual Studio Code reports the build status to you.
 
-   :::image type="content" source="../media/extension-waiting-for-deployment.png" alt-text="Waiting for Deployment.":::
+   :::image type="content" source="../media/extension-waiting-for-deployment.png" alt-text="Screenshot showing production status as waiting for deployment.":::
 
 4. You can view the progress of the deployment using GitHub Actions by expanding the **Actions** menu.
 
-    :::image type="content" source="../media/extension-actions.png" alt-text="GitHub Actions.":::
+    :::image type="content" source="../media/extension-actions.png" alt-text="Screenshot showing how to see GitHub Actions.":::
 
     Once the deployment is complete, you can navigate directly to your website.
 
 5. To view the website in the browser, right-click on the project in the Static Web Apps extension, and select Browse Site.
 
-    :::image type="content" source="../media/extension-browse-site.png" alt-text="Use the Visual Studio Code extension to browse the static web app.":::
+    :::image type="content" source="../media/extension-browse-site.png" alt-text="Screenshot showing how to use the Visual Studio Code extension to browse the static web app.":::
 
     Your app should say **Loading data ...** because there's no data or API yet. You'll add the API for your web app later on in this module.
 
