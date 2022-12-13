@@ -30,7 +30,7 @@ roles:
 - student
 - developer
 products:
-- vs-code
+- azure
 units:
 - learn.python-partnership.personality-quiz.introduction
 - learn.python-partnership.personality-quiz.set-up-visual-studio-code

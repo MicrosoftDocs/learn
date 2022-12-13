@@ -16,7 +16,7 @@ Let's take a closer look at how to use autoscale for your Azure App Service plan
 
    - **Time-based** rules (or, schedule-based) allow you to scale when you see time patterns in your load and want to scale before a possible load increase or decrease occurs. An example is "trigger a webhook every 8:00 AM on Saturday in a given time zone."
 
-   :::image type="content" source="../media/web-app-autoscale-94c4da54.png" alt-text="Screenshot that shows how to create an autoscale condition in the Azure portal, including settings for the scale mode and instance count.":::
+    :::image type="content" source="../media/web-app-autoscale-94c4da54.png" alt-text="Screenshot that shows how to create an autoscale condition in the Azure portal, including settings for the scale mode and instance count.":::
 
 - The autoscale engine uses notification settings.
 
@@ -26,7 +26,7 @@ Let's take a closer look at how to use autoscale for your Azure App Service plan
 
 There are several considerations to keep in mind when you configure autoscale for your Azure App Service plan and applications. 
 
-- **Minimum instance count**. Set a minimum instance count to makes sure your application is always running even when there's no load.
+- **Minimum instance count**. Set a minimum instance count to make sure your application is always running even when there's no load.
 
 - **Maximum instance count**. Set a maximum instance count to limit your total possible hourly cost.
 
