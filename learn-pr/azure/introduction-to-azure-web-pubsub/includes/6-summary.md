@@ -28,3 +28,8 @@ The below links will redirect you to tutorial documentations where you can follo
 - [Publish and subscribe messages between WebSocket clients using subprotocol](/azure/azure-web-pubsub/tutorial-subprotocol?tabs=csharp)
 
 - [Add authentication and permissions to your application when using Azure Web PubSub](/azure/azure-web-pubsub/tutorial-permission)
+
+
+
+
+Azure Web PubSub is an excellent choice when you want to develop web applications with real-time messaging. It's a fully managed service that supports native and serverless WebSockets. You can create loosely coupled, scalable applications—including chats, live broadcasting and IoT dashboards—with the publish-subscribe messaging pattern. Using Web PubSub to manage the flow of data and content to your webpages or mobile apps means you can focus on the functionality instead of the infrastructure.

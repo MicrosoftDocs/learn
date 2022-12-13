@@ -4,7 +4,7 @@ title: How Azure Web PubSub works
 metadata:
   title: How Azure Web PubSub works
   description:
-    In this unit, we learn about Azure Web PubSub workflow and how the logic behind how the service works.
+    In this unit, learn about the Azure Web PubSub workflow and the logic behind how the service works.
   author: dlepow
   ms.author: danlep
   ms.date: 12/12/2022

@@ -14,19 +14,19 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-      - content: "Azure Web PubSub isn't suitable for small scale applications."
+      - content: "Azure Web PubSub isn't suitable for small-scale applications."
         choices:
           - content: "True"
             isCorrect: false
             explanation:
-              "Incorrect. Azure Web PubSub is suitable for large scale and
+              "Incorrect. Azure Web PubSub is suitable for large-scale and
               small scale requirements."
           - content: "False"
             isCorrect: true
             explanation:
-              "Correct! Azure Web PubSub is suitable for large scale and
-              small scale requirements."
-      - content: "Azure Web PubSub supports a wide variety of client SDKs and programming languages"
+              "Correct! Azure Web PubSub is suitable for large-scale and
+              small-scale requirements."
+      - content: "Azure Web PubSub supports a wide variety of client SDKs and programming languages."
         choices:
           - content: "True"
             isCorrect: true
@@ -34,7 +34,7 @@ quiz:
           - content: "False"
             isCorrect: false
             explanation: "Incorrect. Azure Web PubSub supports a wide variety of client SDKs and programming languages"
-      - content: "Which is true about Azure Web PubSub?"
+      - content: "Which of the following statements is true about Azure Web PubSub?"
         choices:
           - content:
               "Azure Web PubSub is best suited for scenarios requiring real-time
@@ -49,7 +49,7 @@ quiz:
             isCorrect: false
             explanation:
               "Incorrect! Azure Web PubSub works with serverless applications as
-              well as server-based applications, hence infrastructure isn't a mandatory requirement, it is optional."
+              well as server-based applications, hence infrastructure isn't a mandatory requirement. It is optional."
           - content: "You can't use REST API with Azure Web PubSub"
             isCorrect: false
-            explanation: "Incorrect. Azure Web PubSub service provides a REST API to enable applications to post messages to clients connected, in any REST capable programming languages."
+            explanation: "Incorrect. Azure Web PubSub service provides a REST API to enable applications to post messages to connected clients, in any REST-capable programming language."
