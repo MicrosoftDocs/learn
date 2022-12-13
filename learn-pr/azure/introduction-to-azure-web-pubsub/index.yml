@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Web PubSub
-summary: Azure Web PubSub is an excellent choice when you want to develop web applications with real-time messaging. It's a fully managed service that supports native and serverless WebSockets. Learn what Azure Web PubSub is, when to use it, and how it works.
+summary: Evaluate how Azure Web PubSub can help you add real-time messaging and communication functionality to your application. Lean how Azure Web PubSub enables real-time publish-subscribe messaging between server and clients or among clients.
 abstract: |
   In this module you'll learn:
   - What is Azure Web PubSub

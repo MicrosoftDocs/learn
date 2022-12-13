@@ -4,9 +4,9 @@ title: When to use Azure Web PubSub
 metadata:
   title: When to use Azure Web PubSub
   description: In this unit, we'll learn when to use Azure Web PubSub and how it can make your application awesome.
-  author: saifeemustafaq
-  ms.author: msaifee
-  ms.date: 03/31/2022
+  author: dlepow
+  ms.author: danlep
+  ms.date: 12/15/2022
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

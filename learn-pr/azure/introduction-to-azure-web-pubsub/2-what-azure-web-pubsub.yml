@@ -4,9 +4,9 @@ title: What is Azure Web PubSub
 metadata:
   title: What is Azure Web PubSub
   description: In this unit, we understand what Azure Web PubSub is and why we should use it.
-  author: saifeemustafaq
-  ms.author: msaifee
-  ms.date: 03/31/2022
+  author: dlepow
+  ms.author: danlep
+  ms.date: 12/15/2022
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
