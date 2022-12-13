@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   *   You should be familiar with developer concepts and terminology.
   *   An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /learn/achievements/signatures-shared-access.svg
+iconUrl: /training/achievements/signatures-shared-access.svg
 levels:
 - intermediate
 roles:

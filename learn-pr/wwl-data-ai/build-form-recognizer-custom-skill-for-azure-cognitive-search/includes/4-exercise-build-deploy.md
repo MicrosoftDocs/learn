@@ -23,7 +23,7 @@ We'll use a script to create the Azure Forms Recognizer resource, a resource gro
     git clone https://github.com/MicrosoftLearning/mslearn-formrecognizer.git
     ```
 
-1. Change the **Mod5** directory and then execute the setup script:
+1. Change to the **Mod5** directory and then execute the setup script:
 
    ``` bash
    cd mslearn-formrecognizer/Mod5/
@@ -55,7 +55,7 @@ You'll host your custom skill in an Azure Function App. Let's create that Functi
 The Python code that you'll deploy needs to know the endpoint and API key for your Form Recognizer resource. We'll obtain those values from the Azure portal and use the Function Apps application settings to configure them:
 
 1. In the Azure portal, select **All resources** and then select **FormsRecognizer**.
-1. To the right of the **Endpoint** textbox, select the **Copy to clipboard** button.
+1. Select **Keys and Enpoint** tab. To the right of the **Endpoint** textbox, select the **Copy to clipboard** button.
 1. Open Notepad and paste the endpoint value.
 1. In the Azure portal, to the right of the **KEY 1** textbox, select the **Copy to clipboard** button.
 1. Switch to Notepad and paste the key on a new line.
@@ -132,11 +132,12 @@ To configure Cognitive Services to use the new Azure Function that calls Form Re
 1. To the right of the **default** host key, select the **Copy to clipboard** button.
 1. Switch to Notepad and paste the key on a new line.
 1. In the Azure portal, select **All resources** and then select **enrichedcognitivesearch**.
-1. On the **Overview** page for the Cognitive Search resource, select the **Skillsets** tab and then select **New Skillset**.
+1. On the **Overview** page for the Cognitive Search resource, select the **Skillsets** tab and then select **Add skillset**.
 1. Copy the following JSON code and then paste it into the **Skillset definition (JSON)** textbox, replacing the default content:
 
     ```json
     { 
+        "name": "[SkillsetName]",
         "description":"Skillset that calls a Form Recognizer custom skill",
         "skills":[ 
             { 
@@ -176,6 +177,7 @@ To configure Cognitive Services to use the new Azure Function that calls Form Re
     }
     ```
 
+1. Replace `[SkillsetName]` with a unique name for your skillset.
 1. From Notepad, copy the Function App URL and paste it into the above JSON code, replacing `[EndpointUrl]`.
 1. From Notepad, copy the default host key and paste it into the above JSON code, replacing `[AzureFunctionDefaultHostKey]`.
 1. At the top left, select **Save**. You've completed the integration of Cognitive Search with Forms Recognizer.

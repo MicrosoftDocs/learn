@@ -8,6 +8,7 @@ Now that your pipeline deploys to multiple environments, you have higher confide
 
 - [Azure Pipelines environments](/azure/devops/pipelines/process/environments)
 - [Approvals and checks](/azure/devops/pipelines/process/approvals)
+- [Deployment jobs](/azure/devops/pipelines/process/deployment-jobs)
 - [Pipeline templates](/azure/devops/pipelines/process/templates)
     - [Use other repositories](/azure/devops/pipelines/process/templates#use-other-repositories)
     - [Security through templates](/azure/devops/pipelines/security/templates)

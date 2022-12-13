@@ -14,7 +14,7 @@ prerequisites: |
   - Basic knowledge of information protection concepts
 summary: |
   In this learning plan we discuss how to implement data loss prevention techniques to secure your Microsoft 365 data. This learning path aligns with exam SC-400: Microsoft Information Protection Administrator.
-iconUrl: /learn/achievements/implement-data-loss-prevention.svg
+iconUrl: /training/achievements/implement-data-loss-prevention.svg
 levels:
 - intermediate
 roles:

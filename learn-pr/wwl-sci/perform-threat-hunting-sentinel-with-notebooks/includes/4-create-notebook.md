@@ -2,7 +2,7 @@ To start with Notebooks, use the "Getting Started Guide For Microsoft Sentinel M
 
 1. In the Microsoft Sentinel Workspace, select **Notebooks** 
 
-1. You need to crate an AzureML Workspace. Select **Configure Azure Machine Learning** then **Create new Azure ML workspace**.
+1. You need to create an AzureML Workspace. Select **Configure Azure Machine Learning** then **Create new Azure ML workspace**.
 
 1. In the Subscription box, select your subscription.
 

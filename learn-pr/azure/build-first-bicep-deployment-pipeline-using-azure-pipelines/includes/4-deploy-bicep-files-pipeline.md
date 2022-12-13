@@ -34,7 +34,7 @@ When you need to deploy a Bicep file from a pipeline, you can use the *Azure Res
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     connectedServiceName: 'MyServiceConnection'
-    location: 'westus'
+    location: 'westus3'
     resourceGroupName: Example
     csmFile: deploy/main.bicep
     overrideParameters: >

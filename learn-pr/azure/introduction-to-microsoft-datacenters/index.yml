@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.discover-how-microsoft-datacenters-work
+metadata:
+  title: Introduction to Microsoft Datacenters
+  description: TBD
+  ms.date: 10/01/2022
+  author: TBD
+  ms.author: v-jenhor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Microsoft Datacenters
+summary: In this module, you'll learn the physical infrastructure of the Microsoft Cloud and its datacenters, which will help customers make better decisions when considering and planning for cloud infrastructure and workloads.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain major offerings in the Microsoft Cloud
+  - Explain Microsoft datacenter basic components
+  - Explain Azure geographies, regions, availability zones, and networking
+  - Explain how Microsoft internal operations support Azure customers 
+prerequisites: |
+  For the best learning experience from this module, you should already have the following knowledge and experience:
+  - IT experience with infrastructure
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+- functional-consultant
+- business-user
+products:
+- azure
+- azure-cloud-services
+units:
+- learn.introduction-to-microsoft-datacenters.introduction
+- learn.introduction-to-microsoft-datacenters.describe-microsoft-cloud-concepts
+- learn.introduction-to-microsoft-datacenters.explore-the-components-of-a-datacenter
+- learn.introduction-to-microsoft-datacenters.describe-azure-geographies-and-regions
+- learn.introduction-to-microsoft-datacenters.describe-availability-zones
+- learn.introduction-to-microsoft-datacenters.describe-azure-networking
+- learn.introduction-to-microsoft-datacenters.explore-security-and-privacy-in-the-microsoft-cloud
+- learn.introduction-to-microsoft-datacenters.discover-how-microsoft-supports-cloud-customers
+- learn.introduction-to-microsoft-datacenters.summary
+badge:
+  uid: learn.discover-how-microsoft-datacenters-work-badge

@@ -5,6 +5,7 @@ In this unit, you'll tackle the last step in the diagram—the deploy steps.
 :::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that shows the procession from triggers, through three build steps, to the deploy step in a pipeline.":::
 
 For staging, the steps include:
+
 - Add a deploy job
 - Install Helm
 - Get the AKS credentials
@@ -13,6 +14,7 @@ For staging, the steps include:
 - Test the deployment
 
 To deploy to production, we'll:
+
 - Create the production deploy job
 - Test the deployment
 
@@ -156,7 +158,7 @@ In this exercise, you use Helm version `v3.3.1`. Azure has a built action that d
               version: v3.3.1
       ```
 
-1. Sign in to your AKS cluster by using the Azure CLI through another action that Azure provides. In the search bar, enter **Set Context**. In the search results, select **Azure Kubernetes Set Context** published by **Azure**.
+1. Sign in to your AKS cluster by using the Azure CLI through another action that Azure provides. In the search bar, enter *set context*. In the search results, select **Azure Kubernetes set context** published by **Azure**.
 
     :::image type="content" source="../media/10-azure-kubernetes-set-context.png" alt-text="Screenshot that shows the results for a Set Context search.":::
 
@@ -260,7 +262,9 @@ Next, you use an action that uses the Azure CLI to get the AKS credentials. Then
 
 You've set the credential secret, but the secret isn't created yet. Let's create it.
 
-1. In a new browser tab, go to your fork of the repository. Select **Settings** > **Secrets**.
+1. In a new browser tab, go to your fork of the repository. Select the **Settings** tab. In the menu under **Security**, select **Secrets** and choose **Actions**. The **Actions Secrets** pane opens.
+
+1. Select **New repository secret**.
 
 1. Create a new secret called `AZURE_CREDENTIALS`. The value of this secret will be the output of the following command, a JSON object:
 
@@ -274,7 +278,7 @@ You've set the credential secret, but the secret isn't created yet. Let's create
 
 Now, you have access to your cluster and you have Helm installed. The next step is to deploy the application. For this step, you use the command instructions that are native to GitHub Actions.
 
-1.  In the YAML file, below the latest step, create a new `- name:` key. Name the key `Run Helm Deploy`. Then, below this key, create another key called `run`.
+1. In the YAML file, below the latest step, create a new `- name:` key. Name the key `Run Helm Deploy`. Then, below this key, create another key called `run`.
 
     The YAML should look like this example:
 
@@ -374,7 +378,9 @@ Now, you have access to your cluster and you have Helm installed. The next step 
                 --set dns.name=${{ secrets.DNS_NAME }}
     ```
 
-1. In a new browser tab, in your fork of the repository, select **Settings** > **Secrets**.
+1. In a new browser tab, go to your fork of the repository. Select the **Settings** tab. In the menu under **Security**, select **Secrets** and choose **Actions**. The **Actions Secrets** pane opens.
+
+1. Select **New repository secret**.
 
 1. Create a new secret called `DNS_NAME`. You can get the value to use for this secret by running the following command in Cloud Shell:
 

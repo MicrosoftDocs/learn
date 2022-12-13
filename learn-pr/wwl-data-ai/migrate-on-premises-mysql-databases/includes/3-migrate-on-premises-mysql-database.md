@@ -21,7 +21,7 @@ Enter the details for the service. These include:
 - **Version**. Select the version that corresponds to the on-premises database that you're migrating.
 - **Compute + storage**. Select **Configure server** to set the pricing tier and specify the resources that you require for the service. The options were covered in Lesson 1. Remember that, if you select the **General purpose** or **Memory optimized** pricing tiers, you scale up and down the number of virtual processor cores later. However, you can't reduce the amount of storage; it can only increase after the server has been created.
 
-![Image showing a sample configuration for Azure Database for MySQL, Single Server, in the Azure portal](../media/2-server-configuration.png)
+![Screenshot showing a sample configuration for Azure Database for MySQL in the Azure portal.](../media/2-server-configuration.png)
 
 Select **Review + Create** to deploy the service. Deployment will take several minutes.
 

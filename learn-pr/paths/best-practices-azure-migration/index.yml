@@ -20,7 +20,7 @@ summary: |
   - Get best practices and how-to guidance for Azure migration and modernization
 prerequisites: |
   - Basic understanding of cloud computing, Azure fundamentals and workloads being migrated and modernized
-iconUrl: /learn/achievements/best-practices-azure-migration.svg
+iconUrl: /training/achievements/best-practices-azure-migration.svg
 hidden: true
 levels:
 - intermediate

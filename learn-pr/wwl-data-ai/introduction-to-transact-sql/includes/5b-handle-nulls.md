@@ -90,7 +90,7 @@ If all arguments are NULL, COALESCE returns NULL. All the expressions must retur
 The syntax is as follows:
 
 ```sql
-SELECT COALESCE(&lt;expression_1&gt;[, ...&lt;expression_n&gt;];
+SELECT COALESCE ( expression1, expression2, [ ,...n ] )
 ```
 
 The following example uses a fictitious table called **HR.Wages**, which includes three columns that contain information about the weekly earnings of the employees: the hourly rate, the weekly salary, and a commission per unit sold. However, an employee receives only one type of pay. For each employee, one of those three columns will have a value, the other two will be NULL. To determine the total amount paid to each employee, you can use COALESCE to return only the non-null value found in those three columns.

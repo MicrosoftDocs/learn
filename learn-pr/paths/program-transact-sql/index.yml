@@ -14,7 +14,7 @@ prerequisites: |
   - Familiarity with Transact-SQL
 summary: |
   Learn how to use programming techniques in your Transact-SQL.
-iconUrl: /learn/achievements/transact-sql-program.svg
+iconUrl: /training/achievements/transact-sql-program.svg
 levels:
 - advanced
 roles:

@@ -17,8 +17,8 @@ abstract: |
 prerequisites: |
   - Familiarity with with Microsoft Azure
   - Application development experience with C# or Python
-  - Experience of building a basic search solution with Azure Cognitive Search. If you have not completed the [Create an Azure Cognitive Search solution](/learn/modules/create-azure-cognitive-search-solution/) module, you should do so before starting this module.
-iconUrl: /learn/achievements/create-an-enrichment-pipeline.svg
+  - Experience of building a basic search solution with Azure Cognitive Search. If you have not completed the [Create an Azure Cognitive Search solution](/training/modules/create-azure-cognitive-search-solution/) module, you should do so before starting this module.
+iconUrl: /training/achievements/create-an-enrichment-pipeline.svg
 levels:
 - intermediate
 roles:
@@ -27,7 +27,6 @@ roles:
 - solution-architect
 products:
 - azure-functions
-- vs-code
 - azure-cognitive-search
 units:
 - learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.introduction

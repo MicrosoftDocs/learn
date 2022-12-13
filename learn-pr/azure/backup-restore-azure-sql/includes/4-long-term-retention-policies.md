@@ -1,6 +1,6 @@
 Companies need to keep backups for months or years for regular administrative protection, such as to restore accidentally deleted data.
 
-For example, data protection laws in at least one country where your retail organization operates require you to keep records of all customer transactions for five years. You need to ensure that data in Azure SQL Database, which underpins your enterprise resource planning (ERP) system, is kept for at least that long.
+For example, data protection laws in at least one country/region where your retail organization operates require you to keep records of all customer transactions for five years. You need to ensure that data in Azure SQL Database, which underpins your enterprise resource planning (ERP) system, is kept for at least that long.
 
 Here, you'll learn about long-term retention policies in Azure SQL Database and how to use them when you need backups kept for more than 35 days.
 

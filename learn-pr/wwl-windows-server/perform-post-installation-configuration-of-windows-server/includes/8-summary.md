@@ -10,4 +10,4 @@ You can learn more by reviewing the following documents.
 - [Configure a Server Core installation of Windows Server 2016 or Windows Server, version 1709, with Sconfig.cmd](/windows-server/get-started/sconfig-on-ws2016?azure-portal=true).
 - [Download and install the Windows ADK](/windows-hardware/get-started/adk-install?azure-portal=true).
 - [Automate Windows Setup](/windows-hardware/manufacture/desktop/automate-windows-setup?azure-portal=true).
-- [Course WS-011T00-A: Windows Server 2019 Administration](/learn/certifications/courses/ws-011t00?azure-portal=true).
+- [Course WS-011T00-A: Windows Server 2019 Administration](/certifications/courses/ws-011t00?azure-portal=true).

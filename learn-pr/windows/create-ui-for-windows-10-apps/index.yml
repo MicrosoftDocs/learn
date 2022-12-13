@@ -20,7 +20,7 @@ prerequisites: |
  - A computer that runs the current release of Windows 10. To verify that you're running the latest version, go to **Settings** > **Windows Update**.
  - [Visual Studio 2017](/visualstudio/productinfo/vs2017-system-requirements-vs) installed.
  - Basic knowledge of Windows 10 app development.
-iconUrl: /learn/achievements/creating-ui-windows10-apps.svg
+iconUrl: /training/achievements/creating-ui-windows10-apps.svg
 levels:
 - beginner
 roles:

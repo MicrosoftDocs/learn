@@ -2,7 +2,7 @@ Azure Static Web Apps publishes websites to a production environment by building
 
 ## Create a repository
 
-This module makes it easy for you to create a new repository by using a GitHub template repository. A template is available which contains a starter app built with Blazor.
+This module makes it easy for you to create a new repository by using a GitHub template repository. A template is available that contains a starter app built with Blazor.
 
 1. Go to the [create from template page](https://github.com/MicrosoftDocs/mslearn-staticwebapp-dotnet/generate?azure-portal=true) for the template repository.
    - If you get a 404 Page Not Found error, sign in to GitHub and try again.
@@ -19,12 +19,12 @@ This module makes it easy for you to create a new repository by using a GitHub t
 
 You just created a GitHub repository named **my-static-blazor-app** in your GitHub account. Next, you'll clone the repo and run the code locally on your computer.
 
-1. In your GitHub repository, select **Code**, and select **Open Visual Studio** from the menu. This will prompt you to launch Visual Studio and clone the repository to your machine.
+1. In your GitHub repository, select **Code**, and select **Open with Visual Studio** from the menu. This command will prompt you to launch Visual Studio and clone the repository to your machine.
    - If you have multiple versions of Visual Studio installed, ensure your app is opened in Visual Studio 2022 or later.
 
 1. Open the solution file, _ShoppingList.sln_.
 
-1. Finally, run the front-end client application by selecting **Client** as the start up project and launching the debugger.
+1. Finally, run the front-end client application by selecting **Client** as the start-up project and launching the debugger.
 
 ## Browse to your app
 
@@ -32,7 +32,7 @@ It's time to see your application running locally. Visual Studio will open the w
 
 :::image type="content" source="../media/my-shopping-list-app-loading.png" alt-text="Browsing to your web app.":::
 
-Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this module.
+Your app should say **Loading data ...** because there's no data or API yet. You'll add the API for your web app later on in this module.
 
 Now, stop your running app by ending the debugging session in Visual Studio.
 

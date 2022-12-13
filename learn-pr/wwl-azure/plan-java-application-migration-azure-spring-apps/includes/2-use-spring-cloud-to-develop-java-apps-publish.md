@@ -35,3 +35,5 @@ To follow the Azure Spring Apps deployment examples, you need the location of th
 
  -  From a web browser, navigate to the [GitHub repo hosting the Spring Petclinic application code](https://github.com/spring-petclinic/spring-petclinic-microservices) and review the [README.md file](https://github.com/spring-petclinic/spring-petclinic-microservices/blob/master/README.md#understanding-the-spring-petclinic-application).
  -  In the web browser displaying the GitHub repo, navigate to each folder containing the code of the individual *spring-petclinic-\** services and review the content. You don't need to know their full details, but you should understand their basic structure.<br>
+
+For the activities in this learning path, you'll be using a subset of resources from the PetClinic sample application located on the [Deploying and running Java applications in Azure Spring Apps](https://github.com/MicrosoftLearning/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps/tree/master/StarterProject) repository.

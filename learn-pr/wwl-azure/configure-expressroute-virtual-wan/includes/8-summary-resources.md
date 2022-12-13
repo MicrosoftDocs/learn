@@ -14,6 +14,6 @@ You can learn more by reviewing the following.
 
  -  [ExpressRoute documentation](/azure/expressroute/)
  -  [Azure Virtual WAN documentation](/azure/virtual-wan/)
- -  [Learn - Introduction to Azure ExpressRoute](/learn/modules/intro-to-azure-expressroute/)
- -  [Learn - Design and implement Azure ExpressRoute](/learn/modules/design-implement-azure-expressroute/)
- -  [Learn - Introduction to Azure Virtual WAN](/learn/modules/introduction-azure-virtual-wan/)
+ -  [Introduction to Azure ExpressRoute](/training/modules/intro-to-azure-expressroute/)
+ -  [Design and implement Azure ExpressRoute](/training/modules/design-implement-azure-expressroute/)
+ -  [Introduction to Azure Virtual WAN](/training/modules/introduction-azure-virtual-wan/)

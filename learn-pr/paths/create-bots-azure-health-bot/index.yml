@@ -15,7 +15,7 @@ summary: |
   The modules in this Learning path guide you through the creation of both a basic and enhanced health bot. You'll learn about language understanding and how to use both built-in and template scenarios.    
 prerequisites: |
   - None
-iconUrl: /learn/achievements/create-bots-azure-health-bot.svg
+iconUrl: /training/achievements/create-bots-azure-health-bot.svg
 levels:
 - beginner
 roles:

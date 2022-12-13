@@ -35,7 +35,7 @@ prerequisites: |
   - Understand how cloud resource provisioning works
   - Know how data centers work and how data is stored in the cloud
   - Understand the basics of cloud security
-iconUrl: /learn/achievements/cmu-cloud-admin/cmu-disaster-recovery-backup.svg
+iconUrl: /training/achievements/cmu-cloud-admin/cmu-disaster-recovery-backup.svg
 hidden: true
 levels:
 - beginner

@@ -2,7 +2,7 @@ Now you'll create quantum entanglement in Q#. This time, instead of writing and 
 
 A [Jupyter](https://jupyter.org/) notebook is a document that contains both rich text and code and can run in your browser, and can run Q# and Python code in Azure Quantum.  Notebooks can be created directly in the Azure Quantum portal and offer features such as preloaded connection information and standard Q# libraries. 
 
-If you don´t have an Azure Quantum workspace yet, check the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) module.
+If you don´t have an Azure Quantum workspace yet, check the [Get started with Azure Quantum](/training/modules/get-started-azure-quantum/?azure-portal=true) module.
 
 ## Create a new Notebook in your workspace
 
@@ -354,8 +354,7 @@ Your program should behave exactly like the program you created in the previous 
 > - `Adjoint`, which creates the adjoint version of the operations 
 >
 > For more information
-> about these functors and many other Q# features, see the [Q# user
-> guide](/quantum/user-guide/).
+> about these functors and many other Q# features, see the [Q# user guide](/quantum/user-guide/).
 
 
 

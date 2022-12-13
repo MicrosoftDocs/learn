@@ -21,7 +21,7 @@ abstract: |
   - Understand common design patterns for autoscaling
 prerequisites: |
   - Azure subscription
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels: 
   - intermediate
 roles:

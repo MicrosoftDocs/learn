@@ -311,7 +311,7 @@ Next, create an app security group for database servers so that all servers in t
     ssh -t azureuser@$APPSERVERIP 'wget http://10.0.1.4; exit; bash'
     ```
 
-1. Enter the password you kdefined when you created the VM.
+1. Enter the password you defined when you created the VM.
 
 1. As before, the response should include a `200 OK` message. The app security group settings can take a minute or two to take effect. If you don't initially receive the `200 OK` message, wait a minute and try again.
 

@@ -2,7 +2,7 @@ When designing an app that needs to store data, it's important to think about ho
 
 ## Storage accounts
 
-A single storage account is flexible enough to organize your blobs. However, you should use additional storage accounts as necessary to logically separate costs and control access to data.
+A single storage account is flexible enough to organize your blobs. However, you should use more storage accounts as necessary to logically separate costs and control access to data.
 
 ## Containers and blobs
 

@@ -1,4 +1,4 @@
-Our goal is to use the data that we have about each Tune Squad player to make quick decisions during the game. We know we want to use the PER because it's a per-minute measurement of the player's productivity on the court. Although in professional basketball, PER is computed for players based on the player's performance over an entire season, we can use PER as a loose proxy for player performance in a single game. To use PER this way, we'll need the following statistics for each player:
+Our goal is to use the data that we have about each Tune Squad player to make quick decisions during the game. We know we want to use the PER because it's a per-minute measurement of the player's productivity on the court. In professional basketball, PER is computed for players based on the player's performance over an entire season. However, we can use PER as a loose proxy for player performance in a single game. To use PER this way, we'll need the following statistics for each player:
 
 * **TS%**: A player's shooting percentage, taking free throws and three-pointers into account
 * **AST**: The percentage of a player's possessions that end in an assist
@@ -15,14 +15,14 @@ We don't have an actual game to follow because the film doesn't come out until S
 
 We'll use the standard deviation of players' stats to simulate how they might perform in a game. Because we don't have data from multiple games for our players, we'll take the standard deviation of each stat for the players we have. 
 
-Of course, this approach won't give us an accurate view of how we might expect players to perform in an actual game, but we can use this data to meet our primary objective: learning how we *can* use data science in a real-world scenario.
+This approach won't give us an accurate view of how we might expect players to perform in an actual game, but we can use this data to meet our primary objective: learning how we *can* use data science in a real-world scenario.
 
 When you finish this module, you'll be able to use actual player and game stats to test whether this approach is effective in the real world!
 
 To make this process easier, let's create a lookup pandas Series for each stat's standard deviations. A Series basically is a single-column DataFrame. Set the stat names as the Series index to make looking them up easier later on.
 
 ```python
-# Create a list of only the column names we are interested in.
+# Create a list of only the column names we're interested in.
 game_stat_cols = list(ts_df.iloc[:, 7:-1])
 game_stat_stdevs = []
 
@@ -46,11 +46,11 @@ REBR    1.906786
 dtype: float64
 ```
 
-With this Series, we can run a simulation of our player data. We want to see whether, with our very broad assumptions, a player's PER might help us make choices about the player: should we give the player a water break, and should we keep the player in the game?
+With this Series, we can run a simulation of our player data. We want to see whether, with our broad assumptions, a player's PER might help us make choices about the player: should we give the player a water break, and should we keep the player in the game?
 
 ## Train a machine learning model based on player data
 
-To train a machine learning model to predict a player PER by using specific player stats for a simulated game, we'll use all the data that we initially downloaded, including the human player data. To do this, we'll need to split our data into two parts:
+To train a machine learning model to predict a player PER by using specific player stats for a simulated game, we'll use all the data that we initially downloaded, including the human player data. To train this model, we'll need to split our data into two parts:
 
 * `X`: The *input* data we use to predict `y`
 * `y`: The *output* value that you want the machine learning model to predict
@@ -132,9 +132,9 @@ Here's the output:
 > [!NOTE]
 > Your data will be different from the data shown here because each time we run this code, we generate a random number within the standard deviation for each relevant stat column. If it *is* identical, it was complete luck!
 
-Our methodology provides a variety of results that are in line with what we might expect based on the stats: Lola is likely one of the best players, based on PER.
+Our methodology provides various results that are in line with what we might expect based on the stats: Lola is likely one of the best players, based on PER.
 
-So, if we had in-game data instead of random values based on the standard deviation, we could feasibly feed that data into this machine learning model and determine which player (the lowest PER player) should take a water break and which should stay in the game (the highest PER player).
+So, if we had in-game data instead of random values based on the standard deviation, we could feasibly feed that data into this machine learning model and determine which player should take a water break and which should stay in the game.
 
 As the game continues, the stats for each player will change. If we see a high PER player's PER start to drop, we might consider giving that player a water break. The player's lower PER probably means that they're getting tired.
 

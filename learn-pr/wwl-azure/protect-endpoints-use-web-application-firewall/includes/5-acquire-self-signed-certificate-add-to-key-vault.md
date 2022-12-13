@@ -1,4 +1,4 @@
-You've recreated the Spring Cloud service in a virtual network and configured private DNS in the virtual network. Now you can reach your microservices within your virtual network.
+You've recreated the Spring Apps service in a virtual network and configured private DNS in the virtual network. Now you can reach your microservices within your virtual network.
 
 You'll now integrate with Azure Application Gateway allowing applications to be accessible on the Internet. To direct your Azure Spring Apps back-end, you'll need to make sure that the domain name is the same as the `hostname`used by the Application Gateway to direct traffic to your Azure Spring Apps service. The `hostname`is required so cookies and generated redirect URLs work as expected.
 
@@ -40,7 +40,7 @@ You need to acquire a self-signed certificate and add it to Key Vault.
 3.  You'll need to find and replace the **myapp.mydomain.com** DNS name in the **sample-policy.json** file with a randomly generated custom domain name. You'll use custom domain name later in this exercise. To generate the custom domain name, run the following commands.
     
     ```Bash
-    DNS_LABEL=springclouddns$RANDOM$RANDOM
+    DNS_LABEL=springappsdns$RANDOM$RANDOM
     DNS_NAME=sampleapp.${DNS_LABEL}.com
     cat sample-policy.json | sed "s/myapp.mydomain.com/${DNS_NAME}/g" > result-policy.json
     

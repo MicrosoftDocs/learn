@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-microsoft-sentinel-deployment-sap.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/29/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "The Microsoft Sentinel solution for SAP contains an agent. How is this agent run?"
+    choices:
+    - content: "As a service in an Azure region."
+      isCorrect: false
+      explanation: "That is incorrect. The agent runs in a Docker container on a virtual machine, Kubernetes or AKS cluster, or a physical server running Docker."
+    - content: "As a Docker container."
+      isCorrect: true
+      explanation: "That is correct. The agent runs as a Docker container, which allows it to run in a variety of services and locations."
+    - content: "In Azure SQL Server."
+      isCorrect: false
+      explanation: "That is incorrect. The agent runs in a Docker container on a virtual machine, Kubernetes or AKS cluster, or a physical server running Docker."
+  - content: "Which statement best describes the SAP - Systems watchlist?"
+    choices:
+    - content: "It defines user roles for the solution based on the access that users need."
+      isCorrect: false
+      explanation: "That is incorrect. It defines which SAP systems are present in the monitored environment."
+    - content: "It defines which SAP systems are present in the monitored environment."
+      isCorrect: true
+      explanation: "That is correct. The SAP – Systems watchlist defines which SAP systems are present in the monitored environment. More than one SAP system can provide data to the solution."
+    - content: "It configures sensitive data from networks."
+      isCorrect: false
+      explanation: "That is incorrect. It defines which SAP systems are present in the monitored environment."
+  - content: "What are the main responsibilities of SAP BASIS Administrators?"
+    choices:
+    - content: "They apply SAP change requests and create the role that allows the agent to connect to SAP."
+      isCorrect: true
+      explanation: "That is correct. The SAP BASIS Administrator is a key member of the team."
+    - content: "They use workbooks, notebooks, and queries to hunt for threats in SAP deployments and combined signals."
+      isCorrect: false
+      explanation: "That is incorrect. They apply SAP change requests and create the role that allows the agent to connect to SAP."
+    - content: "They ensure that the events that are being monitored are the ones the organization cares the most about."
+      isCorrect: false
+      explanation: "That is incorrect. They apply SAP change requests and create the role that allows the agent to connect to SAP."
+  - content: "What are the primary activities when defining governance policies for the solution?"
+    choices:
+    - content: "Map architecture and decide where to deploy the data connector."
+      isCorrect: false
+      explanation: "That is incorrect. The primary activities are determining user access roles and data retention policies."
+    - content: "Determine user access roles and data retention policies."
+      isCorrect: true
+      explanation: "That is correct. The primary activities are determining user access roles and data retention policies."
+    - content: "Perform penetration testing to fine-tune rules and reduce false positives."
+      isCorrect: false
+      explanation: "That is incorrect. The primary activities are determining user access roles and data retention policies."

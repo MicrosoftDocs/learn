@@ -22,7 +22,7 @@ prerequisites: |
   - Windows Server 2012 or Windows Server 2016.
   - Core networking technologies.
   - Active Directory Domain Services (AD DS).
-iconUrl: /learn/achievements/implement-and-manage-active-directory-certificate-services.svg
+iconUrl: /training/achievements/implement-and-manage-active-directory-certificate-services.svg
 levels:
 - intermediate
 roles:

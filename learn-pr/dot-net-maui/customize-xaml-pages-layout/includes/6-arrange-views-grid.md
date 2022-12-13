@@ -187,7 +187,7 @@ This example shows how to create a `Grid` and add a view by using attached prope
 ```xaml
 <Grid RowDefinitions="*, *, *" ColumnDefinitions="*, *">
 
-    <BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="Navy" />
+    <BoxView Grid.Row="1" Grid.Column="0" Color="Navy" />
     
 </Grid>
 ```
@@ -203,7 +203,7 @@ There are two more attached properties you should be aware of: `Grid.RowSpan` an
 ```xaml
 <Grid RowDefinitions="*, *, *" ColumnDefinitions="*, *">
 
-    <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="Navy" />
+    <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Color="Navy" />
     
 </Grid>
 ```

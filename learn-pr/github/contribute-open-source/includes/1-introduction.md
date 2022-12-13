@@ -25,4 +25,4 @@ By the end of this module, you'll be able to:
 > [!NOTE]
 > This module covers how to make contributions to open-source projects on GitHub. To familiarize yourself with GitHub, complete the following module first:
 >
-> - [Introduction to GitHub](/learn/modules/introduction-to-github)
+> - [Introduction to GitHub](/training/modules/introduction-to-github)

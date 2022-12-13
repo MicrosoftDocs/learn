@@ -17,7 +17,7 @@ prerequisites: |
  - Unity Hub with Unity 2020.3 LTS or Unity 2019.4 LTS installed (OpenXR requires 2020.3.8 or later to prevent bugs)
 summary: |
  Learn the techniques and best practices for developing mixed reality applications.You will identify and describe some of the core concepts like Mixed Reality Toolkit (MRTK), Azure Spatial Anchors, Azure Services, PC Holographic Remoting, and so on.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
 roles:

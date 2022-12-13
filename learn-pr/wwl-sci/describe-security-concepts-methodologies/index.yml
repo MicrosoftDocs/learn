@@ -18,7 +18,7 @@ abstract: |
   - Describe some basic compliance concepts.
 prerequisites: |
   - None
-iconUrl: /learn/achievements/describe-security-concepts-and-methodologies.svg
+iconUrl: /training/achievements/describe-security-concepts-and-methodologies.svg
 levels:
 - beginner
 roles:

@@ -277,7 +277,7 @@ To check whether your app is working well, run the following commands in the roo
     python manage.py runserver localhost:8000
 ```
 
-Navigate to [http://localhost:8000](http://localhost:8000). You should see a screen that looks like the one shown below:
+Navigate to `http://localhost:8000`. You should see a screen that looks like the one shown below:
 
 ![Screenshot of web app sign-in page.](../media/05-sign-in-user.png)
 

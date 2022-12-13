@@ -26,7 +26,7 @@ prerequisites: |
     - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
     - [Node.js](https://nodejs.org/?azure-portal=true)
     - TypeScript 
-iconUrl: /learn/achievements/typescript/typescript-declare-variable-types.svg
+iconUrl: /training/achievements/typescript/typescript-declare-variable-types.svg
 levels:
 - intermediate
 roles:
@@ -34,7 +34,6 @@ roles:
 - student
 products:
 - azure
-- vs-code
 units:
 - learn.language.typescript-declare-variable-types.1-introduction
 - learn.language.typescript-declare-variable-types.2-types-overview

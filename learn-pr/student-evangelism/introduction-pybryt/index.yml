@@ -16,7 +16,7 @@ abstract: |
   - Combine annotations into reference implementations
   - Explore how combining reference implementations can support different kinds of solutions
   - Explore the process of creating a Fibonacci sequence assignment using PyBryt
-iconUrl: /learn/achievements/student-evangelism/introduction-pybryt.svg
+iconUrl: /training/achievements/student-evangelism/introduction-pybryt.svg
 levels:
   - beginner
 roles:
@@ -25,7 +25,7 @@ roles:
   - higher-ed-educator
   - school-leader
 products:
-  - vs-code
+  - azure
 prerequisites: |
   - Basic Python knowledge
 subjects:

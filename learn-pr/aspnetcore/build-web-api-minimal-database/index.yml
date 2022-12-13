@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
 title: Use a database with minimal API, Entity Framework Core, and ASP.NET Core
 summary: Learn how to add a database to a minimal API application.
 abstract: |
@@ -16,7 +16,7 @@ abstract: |
   - Learn how to add Entity Framework Core to a minimal API application.
   - Persist data to an in-memory datastore.
   - Persist data to a SQLite database.
-iconUrl: /learn/achievements/build-web-api-minimal-database.svg
+iconUrl: /training/achievements/build-web-api-minimal-database.svg
 levels:
   - beginner
 roles:
@@ -26,7 +26,6 @@ products:
   - vs
   - dotnet
   - aspnet-core
-  - vs-code
 prerequisites: |
   - Familiarity with .NET 6
   - A basic understanding of what an API is

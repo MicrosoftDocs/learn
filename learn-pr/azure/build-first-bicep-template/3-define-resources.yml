@@ -2,10 +2,10 @@
 uid: learn.azure.deploy-azure-resources-bicep.define-resources
 title: Define resources
 metadata:
-  unitType: learning-content  
+  unitType: learning-content
   title: Define Azure resources in a Bicep template
   description: Learn how to define resources in Bicep and understand how Bicep treats dependencies between resources.
-  ms.date: 11/25/2021  
+  ms.date: 10/10/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?

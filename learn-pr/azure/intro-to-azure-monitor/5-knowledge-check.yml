@@ -4,7 +4,7 @@ title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also
 metadata:
   unitType: knowledge_check
   title: "Azure Monitor knowledge check" # user input: module title for browser tab and search results
-  description: "Check you knowledge of Azure Monitor." # user input: a description for site search and SEO.
+  description: "Check your knowledge of Azure Monitor." # user input: a description for site search and SEO.
   ms.prod: learning-azure-monitor
   ms.date: 4/15/2021
   author: gerryaobrien
@@ -13,7 +13,7 @@ metadata:
 durationInMinutes: 10
 ###########################################################################
 ###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
 ###  - Questions are complete sentences ending with a question mark
 ###  - No true/false questions
 ###  - 3 answers per question
@@ -37,12 +37,12 @@ durationInMinutes: 10
 content: |
 quiz:
   questions:
-  - content: "What parameters do you need to set, to have Azure Monitor start recording metrics on your resource?"
+  - content: "What parameters do you need to set to have Azure Monitor start recording metrics on your resource?"
     choices:
     - content: "None. Azure Monitor begins recording as soon as your resources are created."
       isCorrect: true
       explanation: "Correct. Azure Monitor will begin collecting metrics on your resources as soon as they are created."
-    - content: "You must configure at least one Alert Rule, before Azure Monitor will record metrics."
+    - content: "You must configure at least one Alert Rule before Azure Monitor will record metrics."
       isCorrect: false
       explanation: "Incorrect. You do not need to configure any alerts or alert rules for Azure Monitor to begin collecting metrics data."
     - content: "Associate the resource with a Log Analytics Workspace."
@@ -64,7 +64,7 @@ quiz:
     - content: "Send the monitoring data to Event Hubs."
       isCorrect: false
       explanation: "Incorrect. Event Hubs can be used to stream the monitoring data to external tools, but it isn't the most optimal tool for aggregating metrics into a single view."
-    - content: "Setup a Log Analytics workspace."
+    - content: "Set up a Log Analytics workspace."
       isCorrect: false
       explanation: "Incorrect. A Log Analytics Workspace is required for the logging function of Azure Monitor, and it gives you the option to query the data, but it isn't the most optimal tool for aggregating metrics into a single view."
     - content: "Use Azure Dashboards or Azure Monitor workbooks."

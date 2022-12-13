@@ -24,7 +24,7 @@ abstract: |
     - Create a global administrator account in Azure AD
 prerequisites: | 
   - None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles: 

@@ -5,7 +5,7 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery store 
 1. Open Visual Studio and create a new solution. This action opens the New Project wizard in Visual Studio.
 
     > [!TIP]
-    > To create .NET MAUI apps, you'll need the latest [Visual Studio 2022 17.3 Preview](https://visualstudio.microsoft.com/vs/preview/). The .NET MAUI project template isn't an available option in earlier versions of Visual Studio.
+    > Make sure you have the .NET MAUI workload installed with Visual Studio 2022 v17.3 or later. [More info here.](/dotnet/maui/get-started/first-app)
 
 1. Select the **MAUI** app type, select the **.NET MAUI App template**, and then select **Next**.
 
@@ -100,7 +100,7 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery store 
 
     :::image type="content" source="../media/4-debug-using-emulator.png" alt-text="A screenshot of the Visual Studio toolbar. It shows the pixel 3 a p i 30 profile has been selected and ready to start debugging with as soon as the user presses the play button.":::
 
-1. When the app starts running on the emulator, tap the **Click me** button and check that the app runs in exactly the same way that it did on Windows.
+1. When the app starts running on the emulator (this can take a few minutes), tap the **Click me** button and check that the app runs in exactly the same way that it did on Windows.
 
     :::image type="content" source="../media/4-android-app.png" alt-text="A screenshot of the Android version of the Phoneword application running in the selected emulator.":::
 

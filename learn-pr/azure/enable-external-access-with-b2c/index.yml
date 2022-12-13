@@ -16,7 +16,7 @@ abstract: |
   - Learn how to enable multi-factor authentication for Azure AD B2C
 prerequisites: | 
   - Basic understanding of Azure AD
-iconUrl: /learn/achievements/enable-external-access-with-b2c.svg
+iconUrl: /training/achievements/enable-external-access-with-b2c.svg
 levels:
 - beginner
 roles:

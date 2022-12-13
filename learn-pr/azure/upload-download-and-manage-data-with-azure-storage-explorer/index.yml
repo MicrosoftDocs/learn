@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Basic knowledge of Azure Storage and Data Lake
   - Ability to install software locally
-iconUrl: /learn/achievements/upload-download-and-manage-data-with-azure-storage-explorer.svg
+iconUrl: /training/achievements/upload-download-and-manage-data-with-azure-storage-explorer.svg
 levels:
 - beginner
 roles:

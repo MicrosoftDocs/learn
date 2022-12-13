@@ -6,8 +6,8 @@ metadata:
   title: Test your resources after deployment
   description: Learn about testing your Azure resources in your deployment workflow.
   ms.date: 10/19/2021
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

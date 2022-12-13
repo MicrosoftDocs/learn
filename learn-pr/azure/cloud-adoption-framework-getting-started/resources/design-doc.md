@@ -1,14 +1,14 @@
 # Title
 
-*Add the working title [(Title guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-title)*
+*Add the working title [(Title guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-title)*
 
 ## Role(s)
 
-- *Add the role(s)* [Role guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#role)
+- *Add the role(s)* [Role guidance](https://review.learn.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=main#role)
 
 ## Level
 
-- *Add the level*  [Level guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#level)
+- *Add the level*  [Level guidance](https://review.learn.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=main#level)
 
 ## Product(s)
 
@@ -16,15 +16,15 @@
 
 ## Prerequisites
 
-- *List the prerequisites [(Prerequisite guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-prerequisites)*
+- *List the prerequisites [(Prerequisite guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-prerequisites)*
 
 ## Summary
 
-*Add the summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductory-summaries)*
+*Add the summary [(Summary guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-introductory-summaries)*
 
 ## Learning objectives
 
-1. *Add numbered Learning Objectives [(Learning objective guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-learning-objectives)*
+1. *Add numbered Learning Objectives [(Learning objective guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-learning-objectives)*
 
 ## Chunk your content into subtasks
 
@@ -44,7 +44,7 @@ Identify the subtasks of *module title*
 
     Provide a scenario of a real-world job-task that shows how the technology is used in practice:
 
-    *Add your scenario [(Scenario guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-scenarios)*
+    *Add your scenario [(Scenario guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-scenarios)*
 
 1. **Learning-content unit title**
 
@@ -62,7 +62,7 @@ Identify the subtasks of *module title*
 
     **Knowledge check**
 
-    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
+    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)*
 
     - Question type
     - Question type
@@ -79,7 +79,7 @@ Identify the subtasks of *module title*
 
     How did you solve the problem in the initial scenario with the knowledge learned in the module? 
     
-    *Add your summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit)*
+    *Add your summary [(Summary guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit)*
 
 ## Notes
 

@@ -27,13 +27,13 @@ The implementation process relies on Azure CLI, kubectl, and Helm. Microsoft Azu
 
 Prefer to install at least the below version on your system if you are not using Azure Cloud Shell.
 
-- Azure CLI (version 2.29.x or later). For installation instructions, refer to [the Install the Azure CLI page on Microsoft Docs](/cli/azure/install-azure-cli).
+- Azure CLI (version 2.29.x or later). For installation instructions, see [Install the Azure CLI](/cli/azure/install-azure-cli).
 - kubectl (version 1.20.x or later). After you install Azure CLI, use it to install kubectl by running `az aks install-cli`.
-- Helm (version 3.4.0 or later). For information about Helm and installation, refer to [the Install existing applications with Helm in Azure Kubernetes Service (AKS) page on Microsoft Docs](/azure/aks/kubernetes-helm).
+- Helm (version 3.4.0 or later). For information about Helm and installation, see [Install existing applications with Helm in Azure Kubernetes Service (AKS)](/azure/aks/kubernetes-helm).
 
 ## Task 2: Enable required preview features in the Azure subscription
 
-Azure App Service on Kubernetes with Azure Arc currently available in public preview. [Microsoft documentation](/azure/app-service/overview-arc-integration#public-preview-limitations) contains more about various limitations on this public preview feature. Your Azure subscription may not have necessary resources providers registered to be able to test all these capabilities. You must explicitly enable these providers in your subscription before continuing.
+Azure App Service on Kubernetes with Azure Arc currently available in public preview. [App Service, Functions, and Logic Apps on Azure Arc](/azure/app-service/overview-arc-integration#public-preview-limitations) contains more about various limitations on this public preview feature. Your Azure subscription may not have necessary resources providers registered to be able to test all these capabilities. You must explicitly enable these providers in your subscription before continuing.
 
 1. Start any Azure Cloud Shell-compatible web browser, navigate to [Azure Cloud Shell](https://shell.azure.com), and, if prompted, authenticate with a Microsoft account or an Azure AD account that has an Owner role in the Azure subscription.
 1. If prompted to select either **Bash** or **PowerShell**, select **Bash**.

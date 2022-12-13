@@ -21,14 +21,14 @@ prerequisites: |
   - An internet-connected browser, like Microsoft Edge.
   - Node.js, installed locally.
   - npm, installed locally.
-iconUrl: /learn/achievements/use-apis-discover-museum-art.svg
+iconUrl: /training/achievements/use-apis-discover-museum-art.svg
 levels:
 - beginner
 roles:
 - developer
 - student
 products:
-- "vs-code"
+- azure
 subjects:
 - development-tools
 units:

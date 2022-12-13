@@ -4,4 +4,4 @@ After completing this module, you'll be able to:
 
 - Distribute data across global data centers
 - Configure automatic failover and do a manual failover
-- Configure the Azure Cosmos DB SQL API .NET SDK to use a specific region
+- Configure the Azure Cosmos DB for NoSQL .NET SDK to use a specific region

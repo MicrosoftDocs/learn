@@ -15,7 +15,7 @@ abstract: |
   - Create a watchlist in Microsoft Sentinel
   - Use KQL to access the watchlist in Microsoft Sentinel
 prerequisites: ""
-iconUrl: /learn/achievements/use-watchlists-in-azure-sentinel.svg
+iconUrl: /training/achievements/use-watchlists-in-azure-sentinel.svg
 levels:
 - intermediate
 roles:

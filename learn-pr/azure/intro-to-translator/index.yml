@@ -16,7 +16,7 @@ abstract: |
   - Describe what Translator is
   - Define scenarios where Translator can be applied
 prerequisites: A basic familiarity with Azure
-iconUrl: /learn/achievements/intro-to-translator.svg
+iconUrl: /training/achievements/intro-to-translator.svg
 levels:
 - beginner
 roles:

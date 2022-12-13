@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst
+metadata:
+  title: 'Get tips and tricks for teaching PL-300: Microsoft Power BI Data Analyst in academic programs'
+  description: "Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
+  ms.date: 11/18/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+title: 'Get tips and tricks for teaching PL-300: Microsoft Power BI Data Analyst in academic programs'
+summary: Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials.
+abstract: |
+  After completing this module, you will be able to:
+  - Understand how to utilize the tips and tricks for teaching PL-300: Microsoft Power BI Data Analyst in the classroom
+  - Leverage the lab environment during the instructional portion of the class
+  - Explain course terminology and technical topics
+  - Discover additional resources and materials to prepare students for success on their Microsoft certification exams
+prerequisites: |
+  - Understand the Microsoft technical training program
+  - Utilize the built-in accessibility features
+  - Understand using the objective domains when preparing to teach
+  - Prepare for the exam by understanding the exam structure
+  - Prepare to teach the fundamentals courses leveraging best practices
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- higher-ed-educator
+products:
+- azure
+subjects:
+- data-ai
+units:
+- learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.introduction
+- learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.objective-domains
+- learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.learn-module-best-practices
+- learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.explore-best-practices-for-module-1
+- learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.explore-best-practices-for-module-2
+- learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.explore-best-practices-for-module-3
+- learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.explore-best-practices-for-module-4
+- learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.explore-best-practices-for-module-5
+- learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.explore-best-practices-for-module-6
+- learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.explore-best-practices-for-module-7
+- learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.explore-best-practices-for-module-8
+- learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.explore-best-practices-for-module-9
+- learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.explore-best-practices-for-module-10
+- learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.explore-best-practices-for-module-11
+- learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.explore-best-practices-for-module-12
+- learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.bring-all-together
+- learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.knowledge-check
+- learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.summary
+badge:
+  uid: learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.badge

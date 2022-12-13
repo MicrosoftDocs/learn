@@ -6,7 +6,7 @@ You now have the fundamental knowledge required to design and implement network 
 
 Now that you have reviewed this module, you should be able to:
 
- -  Understand how to implement compliance with network security rules
+ -  Get network security recommendations with Microsoft Defender for Cloud
  -  Configure and monitor an Azure DDoS protection plan
  -  Implement and manage firewalls
  -  Implement network security groups (NSGs)

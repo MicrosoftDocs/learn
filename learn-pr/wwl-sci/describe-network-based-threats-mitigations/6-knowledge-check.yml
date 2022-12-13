@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/02/2022
+  ms.date: 08/17/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -21,43 +21,43 @@ quiz:
     choices:
     - content: "The switch"
       isCorrect: true
-      explanation: "That's correct. The switch is a fundamental building block that allows different devices to communicate with each other.)"
+      explanation: "Correct. The switch is a fundamental building block that allows different devices to communicate with each other.)"
     - content: "The router"
       isCorrect: false
-      explanation: "That's incorrect. A router lets networks communicate with each other."
+      explanation: "Incorrect. A router lets networks communicate with each other."
     - content: "The access point"
       isCorrect: false
-      explanation: "That's incorrect. The access point allows devices to connect wirelessly to your network."
+      explanation: "Incorrect. The access point allows devices to connect wirelessly to your network."
   - content: "What is a datagram used for?"
     choices:
     - content: "A datagram is used to announce a message is ready to send across the network."
       isCorrect: false
-      explanation: "That's incorrect. The datagram is used to send data across the network."
+      explanation: "Incorrect. The datagram is used to send data across the network."
     - content: "A datagram is a chunk of data of uniform length that can be sent across the network."
       isCorrect: true
-      explanation: "That's correct. Datagrams, also known as packets, are used to send data across a network."
+      explanation: "Correct. Datagrams, also known as packets, are used to send data across a network."
     - content: "A datagram is used to send music data across a network."
       isCorrect: false
-      explanation: "That's incorrect. Datagrams, also known as packets, are used to send data across a network."
+      explanation: "Incorrect. Datagrams, also known as packets, are used to send data across a network."
   - content: "What is the name of a common network attack where the cybercriminal compromises a router in the network to eavesdrop on, or alter, data?"
     choices:
     - content: "Man-in-the-middle."
       isCorrect: true
-      explanation: "That's correct. This occurs when a router is compromised by an attack and can let criminals intercept and change messages."
+      explanation: "Correct. This occurs when a router is compromised by an attack and can let criminals intercept and change messages."
     - content: "Bluejacking."
       isCorrect: false
-      explanation: "That's incorrect. This is a Bluetooth attack that allows unsolicited messages to be sent to your device via Bluetooth."
+      explanation: "Incorrect. This is a Bluetooth attack that allows unsolicited messages to be sent to your device via Bluetooth."
     - content: "Wardriving."
       isCorrect: false
-      explanation: "That's incorrect. This is a wireless attack where the cybercriminal drives around looking for unsecured Wi-Fi access points to use to hack other computers and steal data."
+      explanation: "Incorrect. This is a wireless attack where the cybercriminal drives around looking for unsecured Wi-Fi access points to use to hack other computers and steal data."
   - content: "When considering security, what is the common name given to separating your network into discrete entities?"
     choices:
     - content: "Network access control."
       isCorrect: false
-      explanation: "That's incorrect. Network access control is a security solution that controls device and user access through strict policy enforcement."
+      explanation: "Incorrect. Network access control is a security solution that controls device and user access through strict policy enforcement."
     - content: "Virtual private network."
       isCorrect: false
-      explanation: "That's incorrect. A virtual private network is a dedicated and secure connection, between a device and a server, across the internet."
+      explanation: "Incorrect. A virtual private network is a dedicated and secure connection, between a device and a server, across the internet."
     - content: "Network segmentation."
       isCorrect: true
-      explanation: "That's correct. Network segmentation creates boundaries around critical operations or assets, in much the same way as you'd put your finance team in their own office."
+      explanation: "Correct. Network segmentation creates boundaries around critical operations or assets, in much the same way as you'd put your finance team in their own office."

@@ -25,7 +25,7 @@ In addition, Defender for Cloud protects non-Azure servers and virtual machines 
 
 The events collected from the agents and Azure are correlated in the security analytics engine to provide you tailored recommendations (hardening tasks) that you should follow to ensure your workloads are secure. You should investigate these alerts as soon as possible to make sure malicious attacks aren't taking place on your workloads.
 
-When you enable Defender for Cloud, the security policy built-in to Defender for Cloud is reflected in Azure Policy as a built-in initiative under the Defender for Cloud category. The built-in initiative is automatically assigned to all Defender for Cloud registered subscriptions (regardless of whether or not they have Defender for Cloud enabled). The built-in initiative contains only Audit policies. For more information about Defender for Cloud policies in Azure Policy, see Working with security policies.
+When you enable Defender for Cloud, the security policy built-in to Defender for Cloud is reflected in Azure Policy as a built-in initiative under the Defender for Cloud category. The built-in initiative is automatically assigned to all Defender for Cloud registered subscriptions (regardless of whether or not they have Defender for Cloud enabled). The built-in initiative contains only Audit policies. For more information about Defender for Cloud policies in Azure Policy, see [Working with security policies](/azure/defender-for-cloud/tutorial-security-policy).
 
 ## Strengthen security posture
 

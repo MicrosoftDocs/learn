@@ -60,7 +60,7 @@ In this unit, you'll create a Front Door named `vehicleFrontDoor` with the follo
     | Resource | Select **myPrivateLinkService**. |
     | Region | Region will be selected when you select the resource. |
     | Request message | Enter **webServer private connection.** |
-    | Status | Leave as checked. |
+    | Status | Enabled this origin. |
 
 1. Select **Add** to add the origin to the origin group. Leave the rest of the origin group settings as default. Then select **Add** to create the origin group.
 
@@ -81,11 +81,8 @@ In this unit, you'll create a Front Door named `vehicleFrontDoor` with the follo
     | HTTPS port | Leave as default. **443**. |
     | Priority | Leave as default. **1**. |
     | Weight | Leave as default. **1000**. |
-    | Private link | Select the checkbox for **Enable private link service**. |
-    | Region | Region will be selected when you select the resource. |
-    | Target sub resource | Select **sites** from the drop-down menu. |
-    | Request message | Enter **appService private connection.** |
-    | Status | Leave as checked. |
+    | Private link | Leave as default. |
+    | Status | Enable this origin. |
 
 1. Select **Add** to add the origin to the origin group. Leave the rest of the origin group settings as default. Then select **Add** to create the second origin group.
 
@@ -99,13 +96,7 @@ In this unit, you'll create a Front Door named `vehicleFrontDoor` with the follo
 
     :::image type="content" source="./../media/5-approve-web-server-private-endpoint.png" alt-text="Screenshot of private endpoint connection approval list for web servers.":::
 
-1. To approve the private endpoint connection for the **App service** you create previously, locate the App service resource then select **Networking** under *Settings* from the left menu pane. Then select **Private endpoints** to go to the *Private Endpoint connections* page.
-
-    :::image type="content" source="./../media/5-app-service-private-endpoints.png" alt-text="Screenshot of private endpoint settings for App service.":::
-
-1. Select the connection with the description of *appService private connection.* and select **Approve**.
-
-    :::image type="content" source="./../media/5-approve-app-service-private-endpoint.png" alt-text="Screenshot of private endpoint connection approval list for App service.":::
+1. You don't need to approve private endpoint for the App Service since the connectivity will be over the public internet.
 
 ### Add routes
 

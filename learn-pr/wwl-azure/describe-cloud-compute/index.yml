@@ -2,8 +2,8 @@
 uid: learn.wwl.describe-cloud-compute
 metadata:
   title: Describe cloud computing
-  description: "Introduction to concepts surrounding cloud computing. Mostly platform agnostic, focused instead on general concepts."
-  ms.date: 07/18/2022
+  description: "Describe cloud computing"
+  ms.date: 11/21/2022
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ abstract: |
   *   Compare cloud pricing models.
 prerequisites: |
   *   Basic familiarity with IT terms and concepts
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/describe-cloud-compute.svg
 levels:
 - beginner
 roles:

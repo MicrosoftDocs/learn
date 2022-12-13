@@ -1,0 +1,10 @@
+- stage: DeployTest
+  displayName: Deploy (Test Environment)
+  jobs:
+  - deployment: DeployWebsite
+    environment: Test
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+            - checkout: self

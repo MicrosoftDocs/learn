@@ -1,19 +1,19 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.define-implement-indexing-strategy-cosmos-db-sql-api
 metadata:
-  title: Define and implement an indexing strategy for Azure Cosmos DB SQL API
-  description: Define and implement an indexing strategy for Azure Cosmos DB SQL API
-  ms.date: 12/22/2021
+  title: Define and implement an indexing strategy for Azure Cosmos DB for NoSQL
+  description: Define and implement an indexing strategy for Azure Cosmos DB for NoSQL
+  ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Define and implement an indexing strategy for Azure Cosmos DB SQL API
+title: Define and implement an indexing strategy for Azure Cosmos DB for NoSQL
 prerequisites: |
   Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
 summary: |
-  Create custom indexing policies for Azure Cosmos DB SQL API containers.
-iconUrl: /learn/achievements/azure-cosmos-db-define-implent-indexing-strategy.svg
+  Create custom indexing policies for Azure Cosmos DB for NoSQL containers.
+iconUrl: /training/achievements/azure-cosmos-db-define-implent-indexing-strategy.svg
 levels:
 - intermediate
 roles:

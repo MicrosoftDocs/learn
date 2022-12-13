@@ -87,7 +87,7 @@ The first phase of the project needs you create an Azure database for MySQL to h
 1. Select **+ Create a resource**.
 1. In the **Search the Marketplace** box, type **Azure Database for MySQL**, and press enter.
 1. On the **Azure Database for MySQL** page, select **Create**.
-1. On the **Select Azure Database for MySQL deployment option** page, under **Single server** select **Create**.
+1. On the **Select Azure Database for MySQL deployment option** page, under **Flexible server** select **Create**.
 1. On the **Create MySQL server** page, enter the following details, and then select **Review + create**:
 
     | Property  | Value  |

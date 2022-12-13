@@ -25,7 +25,6 @@ Use Azure Pipelines to deploy your code to multiple targets. Targets including:
  -  Container registries.
  -  Virtual machines.
  -  Azure services, or any on-premises or cloud target such:
-    
      -  Microsoft Azure.
      -  Google Cloud.
      -  Amazon Web Services (AWS).

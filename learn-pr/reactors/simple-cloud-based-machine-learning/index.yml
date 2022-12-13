@@ -24,7 +24,7 @@ abstract: |
 prerequisites: |
   - Review the steps to manipulate and clean data.
   - Understand machine learning models for data science.
-iconUrl: /learn/achievements/reactors/simple-cloud-based-machine-learning.svg
+iconUrl: /training/achievements/reactors/simple-cloud-based-machine-learning.svg
 hidden: true
 levels:
 - beginner
@@ -34,7 +34,6 @@ roles:
 - data-scientist
 products:
 - azure
-- vs-code
 subjects:
 - machine-learning
 units:

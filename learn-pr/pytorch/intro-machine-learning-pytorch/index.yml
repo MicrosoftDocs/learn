@@ -21,7 +21,7 @@ abstract: |
   - Build an image recognition model using a neural network
   - Learn how to optimize a model
   - Learn how to enhance model inference performance
-iconUrl: /learn/achievements/pytorch-intro.svg
+iconUrl: /training/achievements/pytorch-intro.svg
 levels:
 - beginner
 roles:

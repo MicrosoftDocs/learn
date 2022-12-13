@@ -22,7 +22,7 @@ prerequisites: |
   - Describe how an IoT solution uses message routing and other message processing options to process message and event data.
   - Describe Azure Event Grid integration within an IoT solution.
   - Describe the purpose and capabilities of Azure Logic Apps.
-iconUrl: /learn/achievements/event-grid-integration.svg
+iconUrl: /training/achievements/event-grid-integration.svg
 levels:
 - intermediate
 roles:

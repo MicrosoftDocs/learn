@@ -146,7 +146,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
 To test the function, you can send an HTTP request to the function URL using cURL on the command line.
 
-1. Expand the **Logs** frame at the bottom of the trigger function pane. The log frame should start accruing trace notifications every minute.
+1. Expand the **Logs** frame at the bottom of the trigger function pane. Select **Filesystem Logs** in the drop-down at the top of the Logs frame. The log frame should start accruing trace notifications every minute.
 
 1. To find the endpoint URL of the function, from the command bar, select **Get function URL**, as shown in the following image. Save this link by selecting the *Copy to clipboard* icon at the end of the URL. Store this link in Notepad or a similar app for later use.
 
@@ -187,7 +187,7 @@ Because you specified *Function* when you created this function, you need to sup
 
 1. Select **Run**.
 
-    The **Code + Test** pane should open a session displaying log file output. The log file updates with the status of your request, which should look something like this for JavaScript:
+    The **Code + Test** pane should open a session displaying log file output (ensure **Filesystem Logs** is selected in the drop-down at the top of the **Logs** pane). The log file updates with the status of your request, which should look something like this for JavaScript:
 
     ```output
     2022-02-16T22:34:10.473 [Information] Executing 'Functions.HttpTrigger1' (Reason='This function was programmatically called via the host APIs.', Id=4f503b35-b944-455e-ba02-5205f9e8b47a)

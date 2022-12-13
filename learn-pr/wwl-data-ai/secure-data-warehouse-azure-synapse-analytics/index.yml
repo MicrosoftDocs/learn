@@ -3,7 +3,7 @@ uid: learn.wwl.secure-data-warehouse-azure-synapse-analytics
 metadata:
   title: Secure a data warehouse in Azure Synapse Analytics
   description: "Secure a data warehouse in Azure Synapse Analytics"
-  ms.date: 02/24/2022
+  ms.date: 08/18/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ abstract: |
   - Implement encryption in Azure Synapse Analytics
 prerequisites: |
   - Before taking this module, it is recommended that you complete Data Fundamentals.
-iconUrl: /learn/achievements/secure-a-data-warehouse-in-azure-synapse-analytics.svg
+iconUrl: /training/achievements/secure-a-data-warehouse-in-azure-synapse-analytics.svg
 levels:
 - intermediate
 roles:

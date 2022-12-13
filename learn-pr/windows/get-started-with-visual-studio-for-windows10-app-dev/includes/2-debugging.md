@@ -1,99 +1,133 @@
 ## Debugging basics
 
-It's difficult to write error-free code the first time. Or even the second time. Here are some ways to use Visual Studio to find those pesky little bugs in your code (or great big ones).
+It's difficult to write error-free code. Use Visual Studio to find the bugs in your project.
 
 ## Simple debugging
 
-The easiest way to debug an app is to simply add some `print` statements in your project so you can see which code is actually running. It's surprising how often bugs are caused when code that you thought was running, well, isn't. But littering your project with messages isn't recommended for anything but the simplest cases.
+Add `print` statements to your project to see how your code is being executed. Bugs are often caused by code that isn't executing effectively. Use this method for simple debugging on smaller projects. This method *isn't* recommended for anything other than simple projects.
 
-Here's how to add these messages to the Universal Windows Platform (UWP) project you created in the previous unit.
+Add `print` statements to your Universal Windows Platform (UWP) project:
 
-1. In the Solution Explorer view on the right, select **MainPage.xaml** to expand it, and then select **MainPage.xaml.cs**. This is the C# code that's associated with the main window that your app will display.
+1. In the **Solution Explorer**, expand **MainPage.xaml** and click **MainPage.xaml.cs**.
 
-![Screenshot shows the code editor in Visual Studio for the Main Page dot x a m l dot c s file.](../media/debug1.png)
+    :::image type="content" source="../media/open-code.png" alt-text="Screenshot of the Visual Studio solution explorer. The MainPage.xaml.cs file is highlighted.":::
 
-2. Scroll down the source code editor window until you find this code:
+    The C# code here is associated with the window displayed in your app.
 
-```csharp
-public MainPage()
-{
-    this.InitializeComponent();
-}
-```
+2. Scroll down in the **Editor Window** until you find the following code:
 
-Change it so it looks like this code:
+    ```csharp
+    public MainPage()
+    {
+      this.InitializeComponent();
+    }
+    ```
 
-```csharp
-public MainPage()
-{
-    this.InitializeComponent();
-    Hello();
-}
+    Change it to this code:
 
-public void Hello()
-{
-    System.Diagnostics.Debug.WriteLine("Hello!");
-}
-```
+    ```csharp
+    public MainPage()
+    {
+      this.InitializeComponent();
+      Hello();
+    }
 
-Now Visual Studio will look like this: 
+    public void Hello()
+    {
+      System.Diagnostics.Debug.WriteLine("Hello!");
+    }
+    ```
 
-![Screenshot shows the code editor in Visual Studio with changes to the Main Page dot x a m l dot c s file.](../media/debug2.png)
+    Your **Editor Window** should look like this:
 
-3. To run the project, select F5 or select the green **Run** button. After a few seconds, your app will open as a large, empty window. Minimize the window to bring Visual Studio back into view.
+    :::image type="content" source="../media/print-example.png" alt-text="Screenshot of the editor window in Visual Studio. Sample code from the writeline steps from above is shown.":::
 
-4. To see the message, you need to make the Visual Studio *Output window* visible. Select Ctrl+W and then O, or on the menu select **View** > **Output**, and you'll see the greeting.
+3. Click the **Run** button (or press the *F5* key) to run your project.
 
-> [!NOTE]
-> You can also use this process to display debug text in WPF and Windows Forms apps.
+    :::image type="content" source="../media/run-app.png" alt-text="Screenshot showing the Visual Studio menu bar. The run button, represented by a green triangle, is highlighted.":::
+
+4. Minimize the app window and bring Visual Studio back into view. Click **Output** to view the *Hello!* message created by your app.
+
+    :::image type="content" source="../media/view-output.png" alt-text="Screenshot showing the Visual Studio output window with the Hello! message shown.":::
+
+    > [!NOTE]
+    > You can also display debug text in *Windows Presentation Foundation (WPF)* and *Windows Forms* apps.
+
+5. Click the **Stop** button to stop the app.
+
+    :::image type="content" source="../media/stop-app.png" alt-text="Screenshot showing the Visual Studio menu bar. The stop button, represented by a red square, is highlighted.":::
 
 ## Better debugging
 
-Now we'll use breakpoints to stop an app in its tracks and find out what's going on inside it.
+Use *breakpoints* to stop an app at specific points to find out what's going on with it. Let's see how this works.
 
-1. Stop the app and update the `Hello()` method to look like this:
+1. Update your `Hello()` function to match this code:
 
-```csharp
-public void Hello()
-{
-    int a = 1;
-    int b = 2;
-    int c = a + b;
-
-    if (c == 4)
+    ```C#
+    public void Hello()
     {
-        // Success
+      int a = 1;
+      int b = 2;
+      int c = a + b;
+
+      if (c == 4)
+      {
+          // Success
+      }
+      else
+      {
+          // Fail
+      }
     }
-    else
-    {
-        // Fail
-    }
-}
-```
+    ```
 
-This app really wants to get the value 4. Unfortunately, there's a bug because a + b is currently equal to 3. Let's add a breakpoint to examine what's happening.
+    Your **Editor Window** should look like this:
 
-2. Click in the margin at the far left side of the screen, next to the code `int c = a + b;`. A red dot will appear. This is your *breakpoint*. Here's how it will look:
+    :::image type="content" source="../media/breakpoint-example.png" alt-text="Screenshot of the editor window in Visual Studio. Sample code from the above breakpoint steps is shown.":::
 
-![Screenshot shows the code editor in Visual Studio with changes to the Main Page c s file edited to expose a bug.](../media/debug3.png)
+    **Explanation**: The app wants a value of `4` to execute the `Hello()` function. Unfortunately, in this case, `a + b` doesn't equal `c`. Let's examine the line performing this calculation using a breakpoint.
 
-3. Press F5 or select **Run** again. This time the app will immediately stop and bring Visual Studio back to the foreground. A small yellow arrow will appear in the margin, and a line of code will be highlighted in yellow. The highlight shows you the line of code that will run next.
+2. Click within the gray margin on the far-left of the screen, next to the line containing the code `int c = a + b;`. A red dot appears. This dot is your breakpoint.
 
-4. Hover over the variable `c`. A little pop-up window will show you its current value. It's 3, not 4 like our code expected! Looks like we found the bug!
+    :::image type="content" source="../media/add-breakpoint.png" alt-text="Screenshot of the Visual Studio editor window. A breakpoint (red circle) has been placed in the margin.":::
 
-![Screenshot shows the code editor in Visual Studio. Mouseover c, on line 37, shows the correct value of 3.](../media/debug4.png)
+3. Click the **Run** button (or press *F5*) to start your app again.
 
-5. While your program is paused, you can step through it line by line by using the **Step into**, **Step over**, and **Step out** buttons on the toolbar. Try it now. Select **Step over** and watch the yellow arrow as it follows the flow of control.
+    :::image type="content" source="../media/run-app.png" alt-text="Screenshot showing the Visual Studio menu bar. The run button, represented by a green triangle, is highlighted.":::
 
-![Screenshot shows the code editor in Visual Studio. C equal 4, on line 37, is highlighted in a red box.](../media/debug5.png)
+    The app stops running immediately. A small **yellow arrow** appears within the margin, next to the line containing the error. The highlighted line of code is what will run next.
 
-6. If you move your pointer down to hover near one of the closing braces, a little green arrow will appear. This lets you keep running the app until that location is reached, which can be useful. Try it out.
+    :::image type="content" source="../media/error-indication.png" alt-text="Screenshot of the Visual Studio editor window. A yellow arrow is displayed within the breakpoint in the margin.":::
+
+    With your program paused, you can step through it line by line using the **Step into**, **Step over**, and **Step out** buttons on the toolbar.
+
+    :::image type="content" source="../media/step-options.png" alt-text="Screenshot of the Visual Studio menu bar. The step into, step over, and step out options are highlighted.":::
+
+4. Select **Step into** and watch the yellow arrow follow the flow of control.
+
+    :::image type="content" source="../media/step-into.png" alt-text="Screenshot of the Visual Studio menu bar. The step into option is highlighted.":::
+
+5. Hover over the variable `c`.
+
+    :::image type="content" source="../media/using-breakpoints.png" alt-text="Screenshot of the Visual Studio editor window. A pop-up displays where the mouse was hovering. It indicates c has a value of three.":::
+
+    A window appears to display the current value of the variable. As we know, it's 3, not the 4 our function expects.
+
+6. Hover near the closing braces until a green arrow appears.
+
+    :::image type="content" source="../media/run-execution.png" alt-text="Screenshot of the Visual Studio editor window. A green arrow is displayed where the mouse was hovering.":::
+
+    This breakpoint allows the app to run until the containing line is reached.
+
+7. Click the **Stop** button to stop running your app.
+
+    :::image type="content" source="../media/stop-app.png" alt-text="Screenshot showing the Visual Studio menu bar. The stop button, represented red square, is highlighted.":::
 
 ## The philosophy of debugging
 
-A quick word on debugging. Knowing the tools at your disposal is half the battle, but understanding why things aren't working can take experience, coffee, patience, and a degree of luck. Here are some tips when things seem bleak:
+A quick word on debugging. Knowing the tools you have at your disposal is half the battle. Understanding why something isn't working takes experience, patience, and (occasionally) luck. Use these tips to debug code:
 
-- Understand that your code is doing exactly what you asked it to do, but you asked it to do the wrong thing.
-- Explain your code, line by line, to a friend or even a stuffed toy. Saying things out loud can help.
-- Break up your code (a form of refactoring) into smaller and smaller sections, and confirm that each section is working.
-- Sometimes it can help to take a walk and clear your mind.
+- Understand that your code is doing exactly what you asked it to do. You just asked it to do the wrong thing.
+- Explain your code, line by line, to a friend, or even to yourself. Saying things out loud can help.
+- Break up your code into smaller and smaller sections (a form of refactoring) to confirm that each section is working.
+- Sometimes it helps to take a break and clear your mind.

@@ -64,7 +64,7 @@ Use these resources to discover more:
 
 [Introduction to flow logging for NSGs - Azure Network Watcher](/azure/network-watcher/network-watcher-nsg-flow-logging-overview)
 
-[Tutorial - Deploy & configure Azure Firewall using the Azure portal | Microsoft Docs](/azure/firewall/tutorial-firewall-deploy-portal)
+[Deploy and configure Azure Firewall using the Azure portal](/azure/firewall/tutorial-firewall-deploy-portal)
 
 [Azure Activity Logs content pack for Power BI](/power-bi/connect-data/service-connect-to-services)
 
@@ -93,4 +93,3 @@ Use these resources to discover more:
 [Resize a VM](/azure/virtual-machines/resize-vm?tabs=portal)
 
 [Validate VPN throughput to a virtual network - Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-validate-throughput-to-vnet)
-

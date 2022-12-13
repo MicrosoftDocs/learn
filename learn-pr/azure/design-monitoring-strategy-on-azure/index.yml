@@ -3,7 +3,7 @@ uid: learn.design-monitoring-strategy-on-azure
 metadata:
   title: Design a holistic monitoring strategy on Azure
   description: Use monitoring services on Azure to bring operational excellence to your applications and infrastructure.
-  ms.date: 03/22/2021
+  ms.date: 09/07/2022
   author: kayodeprinceMS
   ms.author: kaprince
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
 prerequisites: | 
   - Basic knowledge of Azure services
   - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
-iconUrl: /learn/achievements/design-monitoring-strategy-on-azure.svg
+iconUrl: /training/achievements/design-monitoring-strategy-on-azure.svg
 levels:
 - intermediate
 roles:

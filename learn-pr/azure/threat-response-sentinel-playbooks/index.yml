@@ -20,7 +20,7 @@ prerequisites: |
   - Automation and monitoring
   - Azure Monitor and its Log Analytics workspace
   - Azure Logic Apps
-iconUrl: /learn/achievements/threat-response-sentinel-playbooks.svg
+iconUrl: /training/achievements/threat-response-sentinel-playbooks.svg
 levels:
 - beginner
 roles:

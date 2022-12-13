@@ -94,7 +94,7 @@ A few receipt model uses include:
 More info can be found about this model at the [receipts model page](/azure/applied-ai-services/form-recognizer/concept-receipt).
 
 >[!NOTE]
->You can learn more about the prebuilt receipt model with this separate <a href="https://docs.microsoft.com/learn/modules/analyze-receipts-form-recognizer/" target="_blank">Form Recognizer service module</a>.  
+>You can learn more about the prebuilt receipt model with this separate <a href="/training/modules/analyze-receipts-form-recognizer/" target="_blank">Form Recognizer service module</a>.  
 
 ## ID documents
 

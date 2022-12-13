@@ -17,7 +17,7 @@ abstract: |
     - Evaluate the scenarios where you can use Azure Percept.
 prerequisites: |
     - Basic knowledge of Azure, Azure IoT, and Azure AI services.
-iconUrl: /learn/achievements/azure-percept/explore-azure-percept.svg
+iconUrl: /training/achievements/azure-percept/explore-azure-percept.svg
 badge:
   uid: learn.azure-percept.explore.badge
 hidden: true

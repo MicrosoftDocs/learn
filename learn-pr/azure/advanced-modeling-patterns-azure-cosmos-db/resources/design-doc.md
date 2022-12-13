@@ -217,12 +217,12 @@ Identify strategies to manage relationships between data entitles like customers
 
 To learn more about these concepts in Azure Cosmos DB, see:
 
--[Understanding the differences between NoSQL and relational databases](https://docs.microsoft.com/azure/cosmos-db/relational-nosql)
+-[Understanding the differences between NoSQL and relational databases](https://learn.microsoft.com/azure/cosmos-db/relational-nosql)
 
--[Data modeling in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/modeling-data)
+-[Data modeling in Azure Cosmos DB](https://learn.microsoft.com/azure/cosmos-db/modeling-data)
 
--[How to model and partition data on Azure Cosmos DB using a real-world example](https://docs.microsoft.com/azure/cosmos-db/how-to-model-partition-example)
+-[How to model and partition data on Azure Cosmos DB using a real-world example](https://learn.microsoft.com/azure/cosmos-db/how-to-model-partition-example)
 
--[Change Feed in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/change-feed)
+-[Change Feed in Azure Cosmos DB](https://learn.microsoft.com/azure/cosmos-db/change-feed)
 
--[Transactional batch operations in Azure Cosmos DB using the .NET SDK](https://docs.microsoft.com/azure/cosmos-db/transactional-batch)
+-[Transactional batch operations in Azure Cosmos DB using the .NET SDK](https://learn.microsoft.com/azure/cosmos-db/transactional-batch)

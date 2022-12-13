@@ -30,17 +30,41 @@ For more clarity at a glance, automatic incident naming generates incident names
 
 ### Available filters
 
-**Assigned to**
+**Status**
+
+You can choose to limit the list of incidents shown based on their status to see which ones are active or resolved.
+
+**Severity**
+
+The severity of an incident is indicative of the impact it can have on your assets. The higher the severity, the bigger the impact and typically requires the most immediate attention.
+
+**Incident assignment**
 
 You can choose to show alerts that are assigned to you or the alerts handled by automation.
+
+**Multiple service source**
+
+Select No (default), or yes to enable.
+
+**Service sources**
+
+Filter to only see incidents that contain alerts from different sources. Sources include: Microsoft Defender for Endpoint, Microsoft Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Office 365.
+
+**Tags**
+
+Filter on assigned tags. Any assigned Tags will appear once you select the *Type tag name* field.
+
+**Multiple category**
+
+You can choose to see only incidents that have mapped to multiple categories and can thus potentially cause more damage.
 
 **Categories**
 
 Choose categories to focus on specific tactics, techniques, or attack components seen.
 
-**Classification**
+**Entities**
 
-Filter incidents based on the set classifications of the related alerts. The values include true alerts, false alerts, or not set.
+Filter on entity name or ID.
 
 **Data sensitivity**
 
@@ -50,33 +74,22 @@ Some attacks focus on targeting to exfiltrate sensitive or valuable data. By app
 
 Filter by defined device groups.
 
-**Automated Investigation state**
-
-Filter incidents by the status of the automated investigation.
-
-**Multiple categories**
-
-You can choose to see only incidents that have mapped to multiple categories and can thus potentially cause more damage.
-
-**Multiple service sources**
-
-Filter to only see incidents that contain alerts from different sources. Sources include: Microsoft Defender for Endpoint, Microsoft Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Office 365.
-
 **OS platform**
 
 Limit the incident queue view by operating system.
 
-**Service sources**
+**Classification**
 
-By choosing a specific source, you can focus on incidents that contain at least one alert from that chosen source.
+Filter incidents based on the set classifications of the related alerts. The values include true alerts, false alerts, or not set.
 
-**Severity**
+**Automated Investigation state**
 
-The severity of an incident is indicative of the impact it can have on your assets. The higher the severity, the bigger the impact and typically requires the most immediate attention.
+Filter incidents by the status of the automated investigation.
 
-**Status**
+**Associated Threat**
 
-You can choose to limit the list of incidents shown based on their status to see which ones are active or resolved.
+Selecting the *Type associated threat* field will allow you to enter threat information, and bring up previous search criteria.
+
 
 ## Preview incidents
 

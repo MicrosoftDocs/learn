@@ -158,6 +158,7 @@ public InputStream read(String name) {
     ```azurecli
     CONNECTIONSTRING=$(az storage account show-connection-string \
     --name <your-unique-storage-account-name> \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
     --output tsv)
     ```
 
@@ -243,6 +244,11 @@ Your app is finished, so let's deploy it and see it work. We'll use the Maven Pl
                 </appSettings>
          </configuration>
        </plugin>
+       <plugin>  
+         <groupId>org.apache.maven.plugins</groupId>  
+         <artifactId>maven-war-plugin</artifactId>  
+         <version>3.3.2</version>  
+       </plugin> 
      </plugins>
      ```
 

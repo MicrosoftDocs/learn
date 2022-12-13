@@ -13,7 +13,7 @@ prerequisites: |
   - It is recommended that students have completed Data Fundamentals before starting this learning path.
 summary: |
   Learn how Azure Data Share enables you to send and receive data between departments and external organizations.
-iconUrl: /learn/achievements/sharing-data-with-azure-data-share.svg
+iconUrl: /training/achievements/sharing-data-with-azure-data-share.svg
 levels:
 - intermediate
 roles:

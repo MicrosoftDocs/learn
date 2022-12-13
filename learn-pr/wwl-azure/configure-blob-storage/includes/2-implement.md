@@ -1,25 +1,37 @@
-Azure Blob storage is a service that stores unstructured data in the cloud as objects/blobs. Blob storage can store any type of text or binary data, such as a document, media file, or application installer. Blob storage is also referred to as object storage.
+Azure Blob Storage is a service that stores unstructured data in the cloud as objects or blobs. Blob stands for Binary Large Object. Blob Storage is also referred to as _object storage_ or _container storage_.
 
-Common uses of Blob storage include:
+### Things to know about Azure Blob Storage
 
- -  Serving images or documents directly to a browser.
- -  Storing files for distributed access, such as installation.
- -  Streaming video and audio.
- -  Storing data for backup and restore, disaster recovery, and archiving.
- -  Storing data for analysis by an on-premises or Azure-hosted service.
+Let's examine some configuration characteristics of Blob Storage.
 
-## Blob service resources
+- Blob Storage can store any type of text or binary data. Some examples are text documents, images, video files, and application installers.
 
-Blob storage offers three types of resources:
+- Blob Storage uses three resources to store and manage your data:
+   - An Azure storage account
+   - Containers in an Azure storage account
+   - Blobs in a container
 
- -  The storage account
- -  Containers in the storage account
- -  Blobs in a container
+- To implement Blob Storage, you configure several settings:
+   - Blob container options
+   - Blob types and upload options
+   - Blob Storage access tiers
+   - Blob lifecycle rules
+   - Blob object replication options
 
-The following diagram shows the relationship between these resources.
+The following diagram shows the relationship between the Blob Storage resources.
 
-:::image type="content" source="../media/blob-storage-94fb52b8.png" alt-text="Diagram of Blob storage architecture.":::
+:::image type="content" source="../media/blob-storage-94fb52b8.png" alt-text="Diagram that shows the Azure Blob Storage architecture." border="false":::
 
+### Things to consider when implementing Azure Blob Storage
 
-> [!NOTE]
-> Within the storage account, you can group as many blobs as needed in a container.
+There are many common uses for Blob Storage. Consider the following scenarios and think about your own data needs:
+
+- **Consider browser uploads**. Use Blob Storage to serve images or documents directly to a browser.
+
+- **Consider distributed access**. Blob Storage can store files for distributed access, such as during an installation process.
+
+- **Consider streaming data**. Stream video and audio by using Blob Storage.
+
+- **Consider archiving and recovery**. Blob Storage is a great solution for storing data for backup and restore, disaster recovery, and archiving.
+
+- **Consider application access**. You can store data in Blob Storage for analysis by an on-premises or Azure-hosted service.

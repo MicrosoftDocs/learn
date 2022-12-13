@@ -20,7 +20,7 @@ abstract: |
 prerequisites: | 
   - Knowledge of personal computer operating systems.
   - Fundamentals of cloud computing.
-iconUrl: /learn/achievements/intro-to-azure-arc.svg
+iconUrl: /training/achievements/intro-to-azure-arc.svg
 levels:
 - beginner
 roles:

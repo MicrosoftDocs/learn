@@ -10,7 +10,7 @@ The advantage of CEF over Syslog is that it ensures the data is normalized. This
 
 The Microsoft Sentinel agent converts CEF-formatted logs into a format that Log Analytics can ingest. Depending on the appliance type, the agent installs directly on the appliance or on a dedicated Linux-based log forwarder. The Microsoft Sentinel agent is actually the Azure Monitor Log Analytics agent.
 
-The agent for Linux receives events from the Syslog daemon over User Datagram Protocol (UDP) unless you expect the Linux machine to collect a high volume of Syslog events. In that case, they're sent over Transmission Control Protocol (TCP) from the Syslog daemon to the agent. The Syslog daemon then sends the data to Log Analytics. The agent caches data, which helps prevent data loss in case of communication issues between the agent and the cloud.
+The agent for Linux receives events from the Syslog daemon over User Datagram Protocol (UDP) unless you expect the Linux machine to collect a high volume of Syslog events. In that case, they're sent over Transmission Control Protocol (TCP) from the Syslog daemon to the agent. The agent then sends the data to Log Analytics. The agent caches data, which helps prevent data loss in case of communication issues between the agent and the cloud.
 
 The Log Analytics agent can collect different types of events from servers and endpoints. After it's enabled through the Microsoft Sentinel data connectors, events are collected by every agent that's configured to send data to the workspace.
 

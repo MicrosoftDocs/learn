@@ -24,7 +24,7 @@ prerequisites: |
   - .NET 6.0 SDK
   - Git
   - A GitHub account
-iconUrl: /learn/achievements/azure-devops/run-non-functional-tests-azure-pipelines.svg
+iconUrl: /training/achievements/azure-devops/run-non-functional-tests-azure-pipelines.svg
 levels:
 - beginner
 roles:

@@ -4,8 +4,9 @@ metadata:
   title: Secure your data with Azure SQL
   description: Secure your data with Azure SQL
   ms.date: 01/07/2022
-  author: amthomas46
-  ms.author: bobward
+  author: VanMSFT
+  ms.author: vanto
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure your data with Azure SQL
@@ -19,7 +20,7 @@ abstract: |
 prerequisites: | 
   - Experience working with, maintaining, and developing with SQL Server
   - Experience with Azure, such as deploying and managing resources
-iconUrl: /learn/achievements/azure-sql-secure-data.svg
+iconUrl: /training/achievements/azure-sql-secure-data.svg
 levels:
 - beginner
 - intermediate

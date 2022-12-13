@@ -26,7 +26,7 @@ prerequisites: |
   The student should be able to:
   - Log into the Azure portal
   - Explain and create resource groups
-iconUrl: /learn/achievements/integrate-data-azure-data-factory.svg
+iconUrl: /training/achievements/integrate-data-azure-data-factory.svg
 levels:
 - beginner
 roles:

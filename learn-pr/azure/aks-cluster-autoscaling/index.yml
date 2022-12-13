@@ -22,7 +22,7 @@ prerequisites: |
   - Ability to create a Docker container
   - Ability to navigate the Azure portal
   - Basic knowledge of Kubernetes and its concepts
-iconUrl: /learn/achievements/aks-cluster-autoscaling.svg
+iconUrl: /training/achievements/aks-cluster-autoscaling.svg
 levels:
   - beginner
 roles:

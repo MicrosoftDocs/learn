@@ -30,7 +30,7 @@ prerequisites: |
   - Security-related technologies (firewalls, encryption, multi-factor authentication)
   - Windows PowerShell scripting
   - Automation and monitoring
-iconUrl: /learn/achievements/implement-hybrid-backup-and-recovery-with-windows-server-iaas.svg
+iconUrl: /training/achievements/implement-hybrid-backup-and-recovery-with-windows-server-iaas.svg
 levels:
 - intermediate
 roles:

@@ -16,7 +16,7 @@ abstract: |
   - Use HorovodRunner in Azure Databricks for distributed deep learning.
 prerequisites: |
   Before starting this module, you should be familiar with using Python to train deep learning models in Azure Databricks.
-iconUrl: /learn/achievements/deep-learning-horovod-databricks.svg
+iconUrl: /training/achievements/deep-learning-horovod-databricks.svg
 levels:
 - advanced
 roles:

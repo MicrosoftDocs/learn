@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.build-blazor-hybrid.bh-understand-blazor-hybrid
+title: What is Blazor Hybrid?
+metadata:
+  title: What is Blazor Hybrid?
+  description: Explore what Blazor Hybrid is and how it enables you to build native apps with .NET MAUI.
+  ms.date: 07/22/2022
+  author: jamesmontemagno
+  ms.author: jamont
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-understand-blazor-hybrid.md)]

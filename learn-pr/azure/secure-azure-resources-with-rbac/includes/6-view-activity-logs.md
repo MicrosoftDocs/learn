@@ -4,11 +4,11 @@ First Up Consultants reviews Azure role-based access control (Azure RBAC) change
 
 The easiest way to get started is to view the activity logs with the Azure portal.
 
-1. Click **All services** and then find **Activity log**.
+1. Select **All services**, then find **Activity log**.
 
     ![Screenshot of the Azure portal showing the location of Activity logs option.](../media/6-all-services-activity-log.png)
 
-1. Click **Activity log** to open the activity log.
+1. Select **Activity log** to open the activity log.
 
     ![Screenshot of the Azure portal showing the Activity logs.](../media/6-activity-log-portal.png)
 
@@ -27,7 +27,7 @@ The easiest way to get started is to view the activity logs with the Azure porta
 
     After a few moments, you'll see all the role assignment and role definition operations for the last month. It also includes a link to download the activity log as a CSV file.
 
-1. Click one of the operations to see the activity log details.
+1. Select one of the operations to see the activity log details.
 
     ![Screenshot show the details for an activity log.](../media/6-activity-log-details.png)
 

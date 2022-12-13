@@ -24,7 +24,7 @@ However, if your container is small, you probably don't have enough physical par
 
 Your container will require more than a few physical partitions when either of the following are true:
 
-* Your container will have over 30,000 RU's provisioned
+* Your container will have over 30,000 RUs provisioned
 
 * Your container will store over 100 GB of data
 

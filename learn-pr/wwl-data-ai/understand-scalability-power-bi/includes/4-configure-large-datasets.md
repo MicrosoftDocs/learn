@@ -31,4 +31,4 @@ You can set the default storage format for all datasets created in a workspace i
 Large dataset storage format for a workspace can also be enabled using PowerShell.
 
 > [!NOTE]
-> See [Configure large datasets](/power-bi/enterprise/service-premium-large-models) to learn more about large models in Power BI premium including information on checking dataset size, dataset eviction, considerations, and limitations.
+> See [Configure large datasets](/power-bi/enterprise/service-premium-large-models) to learn more about large models in Power BI Premium including information on checking dataset size, dataset eviction, considerations, and limitations.

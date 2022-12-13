@@ -17,7 +17,7 @@ To create an environment within your GitHub repo:
 To associate an environment with a specific Azure Machine Learning workspace, you can create an **environment secret** to give only that environment access to an Azure Machine Learning workspace.
 
 > [!Note]
-> To give GitHub access to any Azure Machine Learning workspace, you need to create a service principal in Azure. Next, you need to give the service principal access to the Azure Machine Learning workspace in Azure. Learn how to [integrate Azure Machine Learning with DevOps tools such as GitHub](/learn/modules/introduction-development-operations-principles-for-machine-learn/4-integrate-azure-development-operations-tools).
+> To give GitHub access to any Azure Machine Learning workspace, you need to create a service principal in Azure. Next, you need to give the service principal access to the Azure Machine Learning workspace in Azure. Learn how to [integrate Azure Machine Learning with DevOps tools such as GitHub](/training/modules/introduction-development-operations-principles-for-machine-learn/4-integrate-azure-development-operations-tools).
 
 You can create a secret in the repo to store the credentials of the service principal. When working with environments, you'll want to create an environment secret instead, to define which specific GitHub environment should have access to which Azure Machine Learning workspace.
 
@@ -41,4 +41,4 @@ For example, whenever you trigger an Azure Machine Learning job in your GitHub A
 To give you the opportunity to review the output of the model training in the Azure Machine Learning workspace, you can add an approval for an environment. Whenever a GitHub Actions workflow wants to run a task in a specific environment, the required reviewers will be notified and need to approve the tasks before they'll be run. 
 
 > [!Tip]
-> Learn more about [how to use environments in GitHub Actions and how to add approvals](/learn/modules/continuous-deployment-for-machine-learning/).
+> Learn more about [how to use environments in GitHub Actions and how to add approvals](/training/modules/continuous-deployment-for-machine-learning/).

@@ -3,7 +3,7 @@ uid: learn.wwl.software-composition-analysis
 metadata:
   title: Software Composition Analysis
   description: "Software Composition Analysis"
-  ms.date: 06/13/2022
+  ms.date: 12/09/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Interpret alerts from scanning tools
   - Configure GitHub Dependabot alerts and security
 prerequisites: ""
-iconUrl: /learn/achievements/5-integrate-license-and-vulnerability-scans.svg
+iconUrl: /training/achievements/5-integrate-license-and-vulnerability-scans.svg
 levels:
 - advanced
 roles:

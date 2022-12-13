@@ -28,7 +28,7 @@ prerequisites: |
   - Knowledge of how to write functions.
   - Knowledge of how to create structures and methods.
   - Knowledge of how to use libraries like `net/http`.
-iconUrl: /learn/achievements/go/go-write-test-program.svg
+iconUrl: /training/achievements/go/go-write-test-program.svg
 levels:
 - beginner
 roles:
@@ -36,7 +36,6 @@ roles:
 - student
 products:
 - azure
-- vs-code
 units:
 - learn.language.go-write-test-program.0-introduction
 - learn.language.go-write-test-program.1-project-files

@@ -20,7 +20,7 @@ For best results, consider using either connection pooling or persistent connect
 
 ## Connection stored procedures
 
-Azure Database for MySQL Flexible server allows many parameters to be viewed and modified in the Azure portal by navigating to the server and the **Server Parameters** blade (or using Azure CLI). There are, however, two administrative tasks that require additional privileges must be carried out using stored procedures. These are:
+Azure Database for MySQL allows many parameters to be viewed and modified in the Azure portal by navigating to the server and the **Server Parameters** blade (or using Azure CLI). There are, however, two administrative tasks that require additional privileges must be carried out using stored procedures. These are:
 
 - mysql.az_kill - equivalent to the KILL CONNECTION statement. Takes the processlist_id as input parameter. Terminates the connection after terminating a statement being executed by the connection.
 - mysql.az_kill_query - equivalent to the KILL QUERY statement. Takes the processlist_id as input parameter. Terminates only the statement being executed by the connection and does not terminate the connection.
@@ -29,4 +29,4 @@ These stored procedures require SUPER USER privileges.
 
 ## Connection efficiency
 
-For best performance, you should typically use **ProxySQL**, or **Heimdall Data Proxy** proxy solutions for MySQL. For more information on connection efficiency, see [Connection Efficiency](/azure/mysql/single-server/concept-performance-best-practices).
+For best performance, you should typically use **ProxySQL**, or **Heimdall Data Proxy** proxy solutions for MySQL. For more information on connection efficiency, see [Connection Efficiency](/azure/mysql/concept-performance-best-practices).

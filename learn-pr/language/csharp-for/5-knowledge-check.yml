@@ -31,13 +31,13 @@ quiz:
     choices:
     - content: "`end;`"
       isCorrect: false
-      explanation: "End isn't a keyword in C#."
+      explanation: "`end` isn't a keyword in C#."
     - content: "`break;`"
       isCorrect: true
       explanation: "Correct!"
     - content: "`exit;`"
       isCorrect: false
-      explanation: "Exit isn't a keyword in C#."
+      explanation: "`exit` isn't a keyword in C#."
     - content: "`return;`"
       isCorrect: false
       explanation: "The `return` keyword would exit out of the entire method."         

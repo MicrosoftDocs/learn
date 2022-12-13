@@ -23,7 +23,7 @@ prerequisites: |
   - C# extension for Visual Studio Code
   - Experience with using the command line
   - Knowledge of Blazor components
-iconUrl: /learn/achievements/use-pages-routing-layouts-improve-blazor-navigation.svg
+iconUrl: /training/achievements/use-pages-routing-layouts-improve-blazor-navigation.svg
 levels: 
   - intermediate
 roles: 

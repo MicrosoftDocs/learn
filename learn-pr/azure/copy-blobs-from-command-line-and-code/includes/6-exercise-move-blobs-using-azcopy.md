@@ -16,23 +16,23 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
 
 <!-- NOTE TO REVIEWER. I wanted to generate SAS tokens from the command line, using the Azure CLI. However, there are currently bugs in the CLI storage commands which cause dates and timestamps to be handled incorrectly (may also be responsible for some of the issues in Exercise 4), so I have used the portal to generate SAS tokens. -->
 
-2. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the Sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the Sandbox.
 
-3. Select **All resources**, and select your destination (cool) storage account.
+1. Select **All resources**, and select your destination (cool) storage account.
 
-4. On the storage account page, under **Security + networking**, select **Shared access signature**.
+1. On the storage account page, under **Security + networking**, select **Shared access signature**.
 
-5. On the shared access signature page, check **Container** and **Object** under the **Allowed resource types** section.
+1. On the shared access signature page, check **Container** and **Object** under the **Allowed resource types** section.
 
-6. With the allowed resource type checked, select **Generate SAS and connection string** at the bottom of the shared access signature page.
+1. With the allowed resource types checked, select **Generate SAS and connection string** at the bottom of the shared access signature page.
 
-7. In the Cloud Shell, create an environment variable to assign the generated **SAS token** value from the portal.
+1. In the Cloud Shell, create an environment variable to assign the generated **SAS token** value from the portal.
 
     ```bash
     COOL_SAS_TOKEN="<token from portal>"
     ```
 
-8. Repeat these steps, and assign a generated SAS token for the hot storage account to a variable named **HOT_SAS_TOKEN**.
+1. Repeat these steps, and assign a generated SAS token for the hot storage account to a variable named **HOT_SAS_TOKEN**.
 
     ```bash
     HOT_SAS_TOKEN="<token from portal>"
@@ -40,7 +40,7 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
 
 ## Create a container for holding archived blobs
 
-1. In the Cloud Shell, navigate to the directory containing the *AzCopy* utility, replacing `<version>` with the version number downloaded with the latest AzCopy release. You can find this with the `dir` command.
+1. In the Cloud Shell, navigate to the directory containing the *AzCopy* utility, replacing `<version>` with the version number downloaded with the latest AzCopy release. You can find the directory name with the `dir` command.
 
     ```bash
     cd azcopy_linux_amd64_<version>
@@ -52,7 +52,7 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
     ./azcopy make https://$COOL_STORAGE_NAME.blob.core.windows.net/azcopy-archive$COOL_SAS_TOKEN
     ```
 
-    Verify that the command responds with the message *Successfully created the resource*.
+    Verify that the command responds with the message, *Successfully created the resource*.
 
 ## Copy blobs to *Cool* storage
 

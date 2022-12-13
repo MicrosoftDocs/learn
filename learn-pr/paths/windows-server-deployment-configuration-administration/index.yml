@@ -19,7 +19,7 @@ prerequisites: |
   - Automation and monitoring.
 summary: |
   Learn how to configure and administer Windows Server 2019 securely using the appropriate management tool. Learn to deploy Windows Server and perform post-installation configuration.
-iconUrl: /learn/achievements/windows-server-deployment-configuration-and-administration.svg
+iconUrl: /training/achievements/windows-server-deployment-configuration-and-administration.svg
 levels:
 - intermediate
 roles:

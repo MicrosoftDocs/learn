@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Experience in basic web app development and deployment, including creating trace output from applications
   - Understanding of Web apps in Microsoft Azure
-iconUrl: /learn/achievements/capture-application-logs-app-service.svg
+iconUrl: /training/achievements/capture-application-logs-app-service.svg
 levels:
 - beginner
 roles:

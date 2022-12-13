@@ -5,5 +5,5 @@ Contoso IT staff are migrating Contoso on-premises servers to Windows Server 202
 You can learn more by reviewing the following documents.
 
 - [Install Windows Admin Center](/windows-server/manage/windows-admin-center/deploy/install?azure-portal=true).
-- [Configure TrustedHosts](https://docs.microsoft.com/windows-server/manage/windows-admin-center/support/troubleshooting#configure-trustedhosts?azure-portal=true).
+- [Configure TrustedHosts](/windows-server/manage/windows-admin-center/support/troubleshooting#configure-trustedhosts?azure-portal=true).
 - [Troubleshooting Windows Admin Center](/windows-server/manage/windows-admin-center/support/troubleshooting?azure-portal=true).

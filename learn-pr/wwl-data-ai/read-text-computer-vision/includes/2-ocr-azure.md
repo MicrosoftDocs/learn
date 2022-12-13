@@ -19,27 +19,15 @@ Whichever type of resource you choose to create, it will provide two pieces of i
 
 Many times an image contains text.  It can be typewritten text or handwritten.  Some common examples are images with road signs, scanned documents that are in an image format such as JPEG or PNG file formats, or even just a picture taken of a white board that was used during a meeting.
 
-The Computer Vision service provides two application programming interfaces (APIs) that you can use to read text in images: the **OCR** API and the **Read** API.
-
-### The OCR API
-
-The OCR API is designed for quick extraction of small amounts of text in images. It operates synchronously to provide immediate results, and can recognize text in numerous languages.
-
-When you use the OCR API to process an image, it returns a hierarchy of information that consists of:
-
-- **Regions** in the image that contain text
-- **Lines** of text in each region
-- **Words** in each line of text
-
-For each of these elements, the OCR API also returns *bounding box* coordinates that define a rectangle to indicate the location in the image where the region, line, or word appears.
+The Computer Vision service provides one application programming interface (APIs) that you can use to read text in images: the **Read** API.
 
 ### The Read API
 
-The OCR method can have issues with false positives when the image is considered text-dominate.  The Read API uses the latest recognition models and is optimized for images that have a significant amount of text or has considerable visual noise.  
+The Read API uses the latest recognition models and is optimized for images that have a significant amount of text or has considerable visual noise.  
 
-The Read API is a better option for scanned documents that have a lot of text.  The Read API also has the ability to automatically determine the proper recognition model to use, taking into consideration lines of text and supporting images with printed text as well as recognizing handwriting.
+The Read API can handle scanned documents that have a lot of text. It also has the ability to automatically determine the proper recognition model to use, taking into consideration lines of text and supporting images with printed text as well as recognizing handwriting.
 
-Because the Read API can work with larger documents, it works asynchronously so as not to block your application while it is reading the content and returning results to your application. This means that to use the Read API, your application must use a three-step process:
+Because the Read API can work with large documents, it works asynchronously so as not to block your application while it is reading the content and returning results to your application. This means that to use the Read API, your application must use a three-step process:
 
 1. Submit an image to the API, and retrieve an *operation ID* in response.
 2. Use the operation ID to check on the status of the image analysis operation, and wait until it has completed.
@@ -49,6 +37,6 @@ The results from the Read API are arranged into the following hierarchy:
 
 - **Pages** - One for each page of text, including information about the page size and orientation.
 - **Lines** - The lines of text on a page.
-- **Words** - The words in a line of text.
+- **Words** - The words in a line of text, including the bounding box coordinates and text itself.
 
 Each line and word includes bounding box coordinates indicating its position on the page.

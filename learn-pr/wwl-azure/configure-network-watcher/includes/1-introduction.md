@@ -6,7 +6,7 @@ Administrators use Network Watcher to monitor, diagnose, and gain insight into t
 
 ## Skills measured
 
-Network watcher is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Network watcher is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Configure and manage virtual networking (25–30%)
 

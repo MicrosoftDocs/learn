@@ -3,7 +3,7 @@ uid: learn.azure.azure-machine-learning-security
 metadata:
   title: Explore security concepts in Azure Machine Learning
   description: "Explore and experiment with securing a machine learning environment to ensure data remains private and models are accurate."
-  ms.date: 10/26/2021
+  ms.date: 11/09/2022
   author: wwlpublish
   ms.author: jasdeb
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
     - Use an Azure Machine Learning workspace with Azure Virtual Network
 prerequisites: |
   A basic familiarity with Azure
-iconUrl: /learn/achievements/15-explore-security-concepts-in-azure-machine-learning.svg
+iconUrl: /training/achievements/15-explore-security-concepts-in-azure-machine-learning.svg
 levels:
 - beginner
 roles:

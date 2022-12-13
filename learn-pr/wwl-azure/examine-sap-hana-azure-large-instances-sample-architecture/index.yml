@@ -19,7 +19,7 @@ prerequisites: |
   Before taking this training, you should complete:
   - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
   - SAP HANA or NetWeaver training.
-iconUrl: /learn/achievements/sap-hana-sample-architecture.svg
+iconUrl: /training/achievements/sap-hana-sample-architecture.svg
 levels:
 - advanced
 roles:

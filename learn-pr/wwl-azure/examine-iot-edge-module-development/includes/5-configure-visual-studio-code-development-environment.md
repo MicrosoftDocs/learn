@@ -59,7 +59,7 @@ pip install --upgrade iotedgehubdev
 
 To test your module on a device, you'll need an active IoT hub with at least one IoT Edge device. To use your computer as an IoT Edge device, follow the steps in the quickstart:
 
- -  For Linux - Quickstart: Deploy your first IoT Edge module to a virtual Linux device: [https://docs.microsoft.com/azure/iot-edge/quickstart-linux](/azure/iot-edge/quickstart-linux)
- -  For Windows - Quickstart: Deploy your first IoT Edge module to a virtual Windows device: [https://docs.microsoft.com/azure/iot-edge/quickstart](/azure/iot-edge/quickstart).
+ -  For Linux - Quickstart: Deploy your first IoT Edge module to a virtual Linux device: [Quickstart: Deploy your first IoT Edge module to a virtual Linux device](/azure/iot-edge/quickstart-linux)
+ -  For Windows - Quickstart: Deploy your first IoT Edge module to a virtual Windows device: [Quickstart: Deploy your first IoT Edge module to a Windows device](/azure/iot-edge/quickstart).
 
 If you are running IoT Edge daemon on your development machine, you might need to stop EdgeHub and EdgeAgent before you move to next step.

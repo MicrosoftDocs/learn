@@ -13,7 +13,7 @@ prerequisites: |
   This learning path assumes that you have experience training machine learning models with Python and open-source frameworks like Scikit-Learn. Some familiarity with the main concepts of Azure Machine Learning is also expected.
 summary: |
   The Azure Machine Learning CLI (v2) is an Azure CLI extension that you can use to train and deploy machine learning models. Learn how to use the CLI (v2) to create Azure Machine Learning workspace assets to use for model training and deployment.
-iconUrl: /learn/achievements/train-models-in-azure-machine-learning-with-cli-v2.svg
+iconUrl: /training/achievements/train-models-in-azure-machine-learning-with-cli-v2.svg
 levels:
 - intermediate
 roles:

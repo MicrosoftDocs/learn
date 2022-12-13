@@ -20,7 +20,7 @@ abstract: |
   - See how to use Azure Resource Manager templates
   - Set up Defender for Cloud with Alerting
   - Create a managed service offer on the Azure Marketplace
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
 roles:

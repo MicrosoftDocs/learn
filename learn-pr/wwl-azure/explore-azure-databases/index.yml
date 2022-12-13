@@ -21,7 +21,7 @@ prerequisites: |
   - SAP HANA or NetWeaver training.
   - Azure Data Fundamentals training (DP-900).
   - Azure Fundamentals training (AZ-900).
-iconUrl: /learn/achievements/6-explore-azure-databases.svg
+iconUrl: /training/achievements/6-explore-azure-databases.svg
 levels:
 - intermediate
 roles:

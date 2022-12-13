@@ -7,7 +7,7 @@
 
 
 
-## Initialize the Microsoft Defender for Endpoint Environment
+## Initialize the Microsoft Defender for Endpoint environment
 
 
 When accessing your Microsoft 365 Defender portal settings for Endpoints for the first time, you'll be able to configure many attributes. You must be a global administrator or security administrator for the tenant. On the Set-up preferences page, you can set the:

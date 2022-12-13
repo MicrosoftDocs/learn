@@ -22,7 +22,7 @@ prerequisites: |
   - Beginners Data Science for Python Developers
   - 'Join and clean datasets: Deep dive'
   
-iconUrl: /learn/achievements/reactors/supervised-learning-regression.svg
+iconUrl: /training/achievements/reactors/supervised-learning-regression.svg
 hidden: true
 levels:
 - beginner
@@ -32,7 +32,6 @@ roles:
 - data-scientist
 products:
 - azure
-- vs-code
 subjects:
 - machine-learning
 units:

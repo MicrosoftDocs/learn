@@ -4,8 +4,8 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/08/2022
-  author: hrasheed-msft
+  ms.date: 09/19/2022
+  author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -33,7 +33,7 @@ quiz:
     - content: "Microsoft Defender for Cloud"
       isCorrect: true
       explanation: "That’s correct. Security posture management from a centralized location is one of the main capabilities in Defender for Cloud."
-    - content: "Azure Purview"
+    - content: "Microsoft Purview"
       isCorrect: false
       explanation: "Incorrect. Microsoft Purview is a data classification and labeling solution for Azure."
     - content: "Azure AD"

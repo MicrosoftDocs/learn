@@ -22,7 +22,7 @@ prerequisites: |
   - Describe the Azure IoT SDKs for devices and services, and how Visual Studio Code, Azure CLI, and the Azure Cloud Shell can be used to configure and develop components of an IoT solution.
   - Describe the features and capabilities of Azure IoT Edge.
   - Describe the Azure IoT Edge runtime support for custom code development, the IoT Edge coding tools, and the IoT Edge coding and debugging processes.
-iconUrl: /learn/achievements/iot-edge-custom-module-development.svg
+iconUrl: /training/achievements/iot-edge-custom-module-development.svg
 levels:
 - intermediate
 roles:

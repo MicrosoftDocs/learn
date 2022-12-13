@@ -23,7 +23,7 @@ prerequisites: |
     - Ability to use Azure Cloud Shell
     - Experience creating and managing resources using the Azure portal or Azure Cloud Shell at the beginner level
     - Basic knowledge of Azure IoT Edge
-iconUrl: /learn/achievements/student-evangelism/deploy-pre-built-module-iot-edge.svg
+iconUrl: /training/achievements/student-evangelism/deploy-pre-built-module-iot-edge.svg
 badge:
   uid: learn.deploy-built-module-iot-edge.badge
 levels:

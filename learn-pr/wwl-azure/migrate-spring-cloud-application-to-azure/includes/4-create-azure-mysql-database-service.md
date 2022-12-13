@@ -10,7 +10,7 @@ You'll also need to update the config for your applications to use the newly pro
 1.  Run the following commands to create an instance of Azure Database for MySQL Single Server. The name of the server must be globally unique, so adjust it accordingly in case the randomly generated name is already in use. Keep in mind that the name can contain only lowercase letters, numbers and hyphens. In addition, replace the *myadmin\_password* placeholder with a complex password and record its value.
     
     ```Bash
-    SQL_SERVER_NAME=springcloudmysql$RANDOM$
+    SQL_SERVER_NAME=springappsmysql$RANDOM$
     RANDOM SQL_ADMIN_PASSWORD=<myadmin_password>
     DATABASE_NAME=petclinic
     

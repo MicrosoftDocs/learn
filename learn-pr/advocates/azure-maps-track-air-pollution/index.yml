@@ -18,7 +18,7 @@ abstract: |
   - Learn about GeoJSON
   - Get air quality measurements from an API and convert them to GeoJSON
   - Plot air quality measurements on a map
-iconUrl: /learn/achievements/advocates/use-azure-maps-to-track-air-pollution.svg
+iconUrl: /training/achievements/advocates/use-azure-maps-to-track-air-pollution.svg
 levels:
 - beginner
 roles:
@@ -35,7 +35,7 @@ prerequisites: |
   - Visual Studio Code installed
   - Python extension for Visual Studio Code installed
   
-  You can meet these prerequisites by completing [Set up your Python beginner development environment with Visual Studio Code](/learn/languages/python-install-vscode/).
+  You can meet these prerequisites by completing [Set up your Python beginner development environment with Visual Studio Code](/training/languages/python-install-vscode/).
 subjects:
 - data-modeling
 units:

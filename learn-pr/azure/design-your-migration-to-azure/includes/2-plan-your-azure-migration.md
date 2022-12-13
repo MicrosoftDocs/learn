@@ -1,16 +1,16 @@
 Your first task is to plan your company's migration to Azure. You need to put together a plan to present to your leadership team to get their support and approval.
 
-In this unit, you'll cover some considerations and methods that you can use to plan your migration to Azure. Every situation is different, but by following some principles, you can achieve your goals in the best possible way and in the shortest amount of time.
+In this unit, you'll cover some considerations and methods that you can use to plan your migration to Azure. Every situation is different, but by following some standard principles, you can achieve your goals in the best possible way and in the shortest amount of time.
 
 ## Azure migration framework
 
 You can use a framework of Assess, Migrate, Optimize, and Monitor as a path for migration. Each stage focuses on a particular aspect of ensuring the success of a migration.
 
-![Stages of migration, Assess, Migrate, Optimize, and Monitor.](../media/2-planning-process.png)
+![Diagram showing the stages of migration: Assess, Migrate, Optimize, and Monitor.](../media/2-planning-process.png)
 
 Let's look at what's involved at each stage.
 
-![Assess stage.](../media/2-assess.png)
+![Heading image for the Assess stage.](../media/2-assess.png)
 
 ### Discovery and evaluation
 
@@ -22,7 +22,7 @@ For each application, there are multiple migration options:
 
 - **Rehost**: Recreate your existing infrastructure in Azure. Choosing this approach has the least impact because it requires minimal changes. It typically involves moving virtual machines from your data center to virtual machines on Azure.
 - **Refactor**: Move services running on virtual machines to platform-as-a-service (PaaS) services. This approach can reduce operational requirements, improve release agility, and keep your costs low. Small enhancements to run more efficiently in the cloud can have large impacts on performance.
-- **Rearchitect**: You might be forced to rearchitect some systems so that they can be migrated. Other apps could be changed to become cloud native, or to take advantage of new approaches to software, such as containers or microservices.
+- **Rearchitect**: You might be forced to rearchitect some systems so that they can be migrated. Other apps could be changed to become cloud native, or to take advantage of new approaches to software such as containers or microservices.
 - **Rebuild**: You might need to rebuild software if the cost to rearchitect it is more than that of starting from scratch.
 - **Replace**: While you're reviewing your estate, it's possible you'll find that third-party applications could completely replace your custom applications. Evaluate software-as-a-service (SaaS) options that can be used to replace existing applications.
 
@@ -30,7 +30,7 @@ Review each application to determine which option is the best fit.
 
 ### Involve key stakeholders
 
-Applications are used by specific sections of the business. The owners and superusers of applications have a wealth of experience to call on. Involving these people in the planning stage increases the chance of a successful migration. These resources can offer guidance in areas where the person running the migration project might have knowledge gaps. Often, each area of the business will appoint business owners to manage specific sections.
+Applications are used by specific sections of the business. The owners and superusers of applications have a wealth of experience on which to call. Involving these people in the planning stage increases the chance of a successful migration. These resources can offer guidance in areas where the person running the migration project might have knowledge gaps. Often, each area of the business will appoint business owners to manage specific sections.
 
 ### Estimate cost savings
 
@@ -52,7 +52,7 @@ Several tools and services are available to help you plan and complete the four 
 | [Azure Monitor](/azure/azure-monitor/)                             | Monitor  | Allows you to monitor your entire estate's performance. Includes application-health monitoring via enhanced telemetry, and setting up notifications. |
 | [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/)                       | Monitor  | Provides intelligent security analytics for your applications. |
 
-![Migrate stage.](../media/2-migrate.png)
+![Heading image for the Migrate stage.](../media/2-migrate.png)
 
 ### Deploy cloud infrastructure targets
 
@@ -80,15 +80,15 @@ For the database migrations, the high-level steps are:
 
 ### Decommission on-premises infrastructure
 
-After all migrated workloads have been tested and verified as successfully migrated to Azure, you can decommission all your on-premises systems. Even after you decommission them, it can be useful to keep backups and archive data from the migrated systems. This practice gives you a historical archive of data in case it's needed. This data could be stored on-premises or in a cloud-storage service such as Azure Blob storage.
+After all migrated workloads have been tested and verified as successfully migrated to Azure, you can decommission all your on-premises systems. Even after you decommission them, it can be useful to keep backups and archive data from the migrated systems. This practice gives you a historical archive of data in case it's needed. This data could be stored on-premises, or in a cloud-storage service such as Azure Blob storage.
 
-![Optimize stage.](../media/2-optimize.png)
+![Heading image for the Optimize stage.](../media/2-optimize.png)
 
 After your services are migrated, it's important to optimize them to ensure that they're running as efficiently as possible from a cost and performance standpoint.
 
 ### Analyze running costs
 
-Use Microsoft Cost Management to start analyzing your Azure costs at different management scopes. For example, by choosing a subscription in the portal, you can see a breakdown of all the resources for that subscription. Or, you could view a resource group to see all the costs associated with all the resources in just the selected group:
+Use Microsoft Cost Management to start analyzing your Azure costs at different management scopes. For example, by choosing a subscription in the portal, you can see a breakdown of all the resources for that subscription. You could also view a resource group to see all the costs associated with all the resources in just the selected group:
 
 ![Screenshot of the cost analysis section of the Azure portal, showing a resource group.](../media/2-cost-analysis.png)
 
@@ -96,7 +96,7 @@ Use Microsoft Cost Management to start analyzing your Azure costs at different m
 
 Microsoft Cost Management shows you cost-reduction advice from Azure Advisor. The advice includes suggestions like reducing the performance of underused VMs, making use of additional discounts, or reserving resources instead of paying as you go. Azure Advisor also shows you recommendations for network security, high availability, and performance. Review the recommendations that Advisor presents to further optimize your environment.
 
-![Monitor stage.](../media/2-monitor.png)
+![Heading image for the Monitor stage.](../media/2-monitor.png)
 
 ### Integrate health and performance monitoring
 
@@ -107,7 +107,7 @@ You can set up alerts based on a range of data sources, such as:
 - Specific metric values like CPU usage
 - Specific text in log files
 - Health metrics
-- An Autoscale metric
+- An autoscale metric
 
 It's also important to have event logging and visibility into security events across your enterprise. Microsoft Sentinel provides security information and event-management (SIEM) capabilities, along with artificial intelligence to help you protect against, detect, and respond to security events. This information helps security operations (SecOps) teams triage critical alerts and prioritize work effectively.
 

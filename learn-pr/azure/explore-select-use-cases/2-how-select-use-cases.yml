@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.explore-select-use-cases.how-select-use-cases
+title: How to select use cases
+metadata:
+  title: How to select use cases
+  description: We explain the key factors when we select use cases.
+  ms.date: 10/19/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-how-select-use-cases.md)] 

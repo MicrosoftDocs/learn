@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.analyze-images-computer-vision.exercise
-title: Exercise - Analyze images with the Computer Vision service
+title: Exercise - Explore Computer Vision
 metadata:
-  title: Exercise - Analyze images with the Computer Vision service
-  description: "Exercise - Analyze images with the Computer Vision service"
-  ms.date: 03/18/2022
-  author: benjiang
+  title: Exercise - Explore Computer Vision
+  description: "Exercise - Explore Computer Vision"
+  ms.date: 09/05/2022
+  author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

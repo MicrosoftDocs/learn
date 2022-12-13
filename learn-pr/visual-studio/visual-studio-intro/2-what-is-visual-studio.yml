@@ -4,8 +4,9 @@ title: What is Visual Studio?
 metadata:
   title: What is Visual Studio?
   description: Visual Studio is a popular integrated development used by millions across the globe. It's been around for over 20 years and is part of the Visual Studio family along with Visual Studio Code.
-  author: kendrahavens
-  ms.author: kehavens
+  author: anandmeg
+  ms.author: meghaanand
+  manager: jmartens
   ms.date: 12/15/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio

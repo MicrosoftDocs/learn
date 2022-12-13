@@ -38,7 +38,7 @@ The Limited Access policy requires customers to [submit an intake form](https://
 To use Face, you must create one of the following types of resource in your Azure subscription:
 
 - **Face**: Use this specific resource type if you don't intend to use any other cognitive services, or if you want to track utilization and costs for Face separately.
-- **Cognitive Services**: A general cognitive services resource that includes Computer Vision along with many other cognitive services; such as Computer Vision, Text Analytics, Translator Text, and others. Use this resource type if you plan to use multiple cognitive services and want to simplify administration and development.
+- **Cognitive Services**: A general cognitive services resource that includes Computer Vision along with many other cognitive services; such as Custom Vision, Form Recognizer, Language, and others. Use this resource type if you plan to use multiple cognitive services and want to simplify administration and development.
 
 Whichever type of resource you choose to create, it will provide two pieces of information that you will need to use it:
 

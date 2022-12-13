@@ -70,7 +70,7 @@ The RPO you can achieve with this solution will be determined by the /MO paramet
 
 ## Use your storage account in a disaster
 
-Each Azure Stack Hub Storage account possesses a unique DNS name derived from the name of the Azure Stack Hub region itself, for example, https://krsource.blob.east.asicdc.com/. Applications writing to and reading from this DNS Name will need to accommodate the storage account DNS name change when the target account, for example, `https://krtarget.blob.west.asicdc.com/` needs to be used during a disaster.
+Each Azure Stack Hub Storage account possesses a unique DNS name derived from the name of the Azure Stack Hub region itself, for example, `https://krsource.blob.east.asicdc.com/`. Applications writing to and reading from this DNS Name will need to accommodate the storage account DNS name change when the target account, for example, `https://krtarget.blob.west.asicdc.com/` needs to be used during a disaster.
 
 Application connection strings can be modified after a disaster is declared to account for the relocation of the objects or, if a CNAME record is used in front of a load balancer front-ending the source and target storage accounts, the load balancer can be configured with a manual failover algorithm that will allow the administrator to declare the target.
 

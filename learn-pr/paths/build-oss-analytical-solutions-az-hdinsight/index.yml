@@ -16,7 +16,7 @@ prerequisites: |
   - Understand the Azure compute options
 summary: |
   In this learning path, the learner will be introduced to HDInsight and how to apply this technology to solve a range of real world challenges.
-iconUrl: /learn/achievements/building-oss-analytical-solutions-with-azure-hdinsight.svg
+iconUrl: /training/achievements/building-oss-analytical-solutions-with-azure-hdinsight.svg
 levels:
 - intermediate
 roles:

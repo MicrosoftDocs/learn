@@ -17,7 +17,7 @@ abstract: |
   *   Understand how to score machine learning models with PREDICT
 prerequisites: |
   - It is recommended that students understand how Azure Synapse Analytics and Azure Machine Learning Services works
-iconUrl: /learn/achievements/azure-synapse-analytics-integrate-machine-learning.svg
+iconUrl: /training/achievements/azure-synapse-analytics-integrate-machine-learning.svg
 levels:
 - intermediate
 roles:

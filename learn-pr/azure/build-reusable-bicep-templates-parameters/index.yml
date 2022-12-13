@@ -29,7 +29,7 @@ prerequisites: |
   - Either:
     - The latest [Azure CLI](/cli/azure/install-azure-cli) tools installed locally.
     - The latest [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.
-iconUrl: /learn/achievements/bicep/build-reusable-bicep-templates-parameters.svg
+iconUrl: /training/achievements/bicep/build-reusable-bicep-templates-parameters.svg
 levels:
   - intermediate
 roles:

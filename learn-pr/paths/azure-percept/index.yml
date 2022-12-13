@@ -20,7 +20,7 @@ summary: |
     - Evaluate the scenarios where you can use Azure Percept. 
 prerequisites: |
   - Basic knowledge of Azure cloud computing is helpful, but not necessary.
-iconUrl: /learn/achievements/azure-percept/azure-percept.svg
+iconUrl: /training/achievements/azure-percept/azure-percept.svg
 hidden: true
 levels:
 - beginner

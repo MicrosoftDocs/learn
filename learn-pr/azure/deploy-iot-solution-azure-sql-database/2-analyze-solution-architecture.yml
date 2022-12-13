@@ -5,8 +5,8 @@ metadata:
   title: Analyze the solution architecture
   description: In this unit, we explain the need for the reusable architecture. Present the architecture for this scenario and explain each component, why it was used over alternatives, and its specific advantages.
   ms.date: 07/19/2021
-  author: amthomas46
-  ms.author: antho
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

@@ -2,7 +2,7 @@ In this exercise, you'll measure the difference for customer entities when you m
 
 ## Set up the environment
 
-In Azure Cloud Shell, copy and paste the following commands. 
+In Azure Cloud Shell, copy and paste the following commands.
 
 ```bash
 git clone https://github.com/MicrosoftDocs/mslearn-model-partition-data-azure-cosmos-db.git
@@ -17,7 +17,9 @@ These commands:
 
 1. Clone a GitHub repository.
 1. Run a script that creates a new Azure Cosmos DB account.
-1. Build and start the app that you use to populate the database and complete the exercises. 
+1. Build and start the app that you use to populate the database and complete the exercises.
+
+After pasting the commands, be sure to press <kbd>Enter</kbd> so that the final command is executed and the data is loaded.
 
 This process should take less than 10 minutes to complete.
 
@@ -111,4 +113,3 @@ Now we're going to query for the same information but with the entities embedded
 When you compare the RU/s for each query that you ran, you see that the last query where the customer entities are in a single document is much less expensive than the combined cost for running the three queries independently. The latency for returning this data is lower because the data is returned in a single operation.
 
 When you're searching for a single item and know the partition key and ID of the data, you can retrieve this data via a *point-read* by calling `ReadItemAsync()` in the Azure Cosmos DB SDK. A point-read is even faster than our query. For the same customer data, the cost is just 1 RU/s, which is a nearly threefold improvement.
-

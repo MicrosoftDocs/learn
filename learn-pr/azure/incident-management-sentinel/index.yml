@@ -20,7 +20,7 @@ prerequisites: |
   - Basic experience with Azure services
   - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
   - Basic knowledge of Microsoft Sentinel rules
-iconUrl: /learn/achievements/incident-management-sentinel.svg
+iconUrl: /training/achievements/incident-management-sentinel.svg
 levels:
 - beginner
 roles:

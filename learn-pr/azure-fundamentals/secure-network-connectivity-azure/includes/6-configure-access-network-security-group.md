@@ -80,7 +80,7 @@ In this procedure, you get the IP address for your VM and attempt to access your
     curl: (28) Connection timed out after 5001 milliseconds
     ```
 
-    This message means that the VM was not accessible within the timeout period.
+    This message means that the VM wasn't accessible within the timeout period.
 
 1. As an optional step, try to access the web server from a browser:
 
@@ -114,7 +114,7 @@ Your web server wasn't accessible. To find out why, let's examine your current N
       --output tsv
     ```
 
-    You see this:
+    You see:
 
     ```output
     my-vmNSG
@@ -146,7 +146,7 @@ Your web server wasn't accessible. To find out why, let's examine your current N
       --output table
     ```
 
-    You see this:
+    You see:
 
     ```output
     Name               Priority    Port    Access
@@ -189,7 +189,7 @@ Here, you create a network security rule that allows inbound access on port 80 (
       --output table
     ```
 
-    You see this both the *default-allow-ssh* rule and your new rule, *allow-http*:
+    You see both the *default-allow-ssh* rule and your new rule, *allow-http*:
 
     ```output
     Name               Priority    Port    Access
@@ -208,18 +208,18 @@ Now that you've configured network access to port 80, let's try to access the we
     curl --connect-timeout 5 http://$IPADDRESS
     ```
 
-    You see this:
+    You see:
 
     ```html
     <html><body><h2>Welcome to Azure! My name is my-vm.</h2></body></html>
     ```
 
     > [!NOTE]
-    > There may be a slight delay between rules being added and ports being opened.
+    > There may be a slight delay between rules being added and ports being opened. If you still see a `connection timed out` message, wait a few seconds, then run the `curl` command again.
 
 1. As an optional step, refresh your browser tab that points to your web server.
 
-    You see this:
+    You see:
 
     :::image type="content" source="../media/7-browser-success.png" alt-text="A web browser showing the home page from the web server. The home page displays a welcome message along with the web server's host name.":::
 

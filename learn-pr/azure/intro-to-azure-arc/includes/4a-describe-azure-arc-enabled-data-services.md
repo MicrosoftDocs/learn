@@ -18,7 +18,7 @@ The following chart compares management capabilities by deployment model:
 
 ## Connected and disconnected modes
 
-Since Contoso has operational capabilities in countries where data is required to be on-premises due to regulations and low latency needs, Azure Arc-enabled data services is a perfect solution for them. Since the data is stored in country, you can meet regulation compliance or data sovereignty requirements. The underlying latency issues are also resolved by enabling the databases locally or in close proximity to operations.
+Since Contoso has operational capabilities in countries/regions where data is required to be on-premises due to regulations and low latency needs, Azure Arc-enabled data services is a perfect solution for them. Since the data is stored in country/region, you can meet regulation compliance or data sovereignty requirements. The underlying latency issues are also resolved by enabling the databases locally or in close proximity to operations.
 
 The disconnected mode of deployments doesn't automatically load any data sets back to Azure. For example billing files, logs, and metrics aren't loaded automatically. Inventory information is only used for billing purposes. Manually export and load the billing file to Azure portal at least monthly. Although disconnected mode doesn't automatically load the file, you still get the scaling, evergreen SQL and other benefits from the solution.
 

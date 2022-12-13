@@ -10,7 +10,6 @@ After completing this module, you'll be able to:
 
 - Describe statistics in Azure Database for PostgreSQL.
 - Assess query performance with the Query Store.
-- Visualize performance with Query Performance Insight.
 
 
 ## Prerequisites

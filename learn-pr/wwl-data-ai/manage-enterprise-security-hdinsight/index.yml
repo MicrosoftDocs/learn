@@ -25,7 +25,7 @@ prerequisites: |
   - Understand the Azure storage options
   - Understand the Azure compute options
   - Create and configure a HDInsight Cluster in the Azure portal
-iconUrl: /learn/achievements/manage-enterprise-security-in-hdinsight.svg
+iconUrl: /training/achievements/manage-enterprise-security-in-hdinsight.svg
 levels:
 - intermediate
 roles:

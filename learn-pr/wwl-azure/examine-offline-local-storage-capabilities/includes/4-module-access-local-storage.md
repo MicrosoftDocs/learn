@@ -72,6 +72,6 @@ In addition to using the container create options to enable access to local/host
  -  Map host port to module port
  -  Restrict module memory and CPU usage
 
-You can find detailed information for implementing these scenarios here: [https://docs.microsoft.com/azure/iot-edge/how-to-use-create-options](/azure/iot-edge/how-to-use-create-options).
+You can find detailed information for implementing these scenarios here: [How to configure container create options for IoT Edge modules](/azure/iot-edge/how-to-use-create-options).
 
 You can find more details about create options from docker docs [https://docs.docker.com/engine/api/v1.32/\#operation/ContainerCreate](https://docs.docker.com/engine/api/v1.32/#operation/ContainerCreate).

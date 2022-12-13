@@ -31,7 +31,7 @@ prerequisites: |
   - Ability to use Git/GitHub
   - Basic knowledge of Azure Sphere
   - Basic knowledge of Azure IoT
-iconUrl: /learn/achievements/student-evangelism/develop-secure-iot-solutions-for-azure-sphere-with-iot-hub.svg
+iconUrl: /training/achievements/student-evangelism/develop-secure-iot-solutions-for-azure-sphere-with-iot-hub.svg
 badge:
   uid: learn.develop-secure-iot-solutions-with-azure-sphere-iot-hub.badge
 levels:

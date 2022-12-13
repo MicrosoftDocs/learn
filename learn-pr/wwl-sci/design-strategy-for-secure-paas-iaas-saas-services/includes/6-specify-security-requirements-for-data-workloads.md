@@ -52,8 +52,8 @@ Once you know your data, you can establish key requirements such as:
 
 Just like any other cloud workload, data workloads need to have an
 ongoing security assessment to improve the overall security posture.
-Azure Purview is a unified data governance service that helps you manage
-and govern your on-premises, multi-cloud, and software-as-a-service
+Microsoft Purview is a unified data governance service that helps you manage
+and govern your on-premises, multicloud, and software-as-a-service
 (SaaS) data. Create a holistic, up-to-date map of your data landscape
 with automated data discovery, sensitive data classification, and
 end-to-end data lineage. Enable data curators to manage and secure your
@@ -61,13 +61,13 @@ data estate. Empower data consumers to find valuable, trustworthy data.
 
 :::image type="content" source="../media/microsoft-purview.png" alt-text="Diagram that shows high level architecture of Microsoft Purview." lightbox="../media/microsoft-purview.png":::
 
-Microsoft Defender for Cloud integration with Azure Purview allows you
-to obtain vital layer of metadata from Azure Purview and use in alerts
+Microsoft Defender for Cloud integration with Microsoft Purview allows you
+to obtain vital layer of metadata from Microsoft Purview and use in alerts
 and recommendations: information about any potentially sensitive data
 involved. This knowledge helps solve the triage challenge and ensures
 security professionals can focus their attention on threats to sensitive
 data. The example below shows a SQL database status in Defender for
-Cloud, with the data enrichment coming from Azure Purview in the low
+Cloud, with the data enrichment coming from Microsoft Purview in the low
 left corner:
 
 :::image type="content" source="../media/resource-health-purview.png" alt-text="Screenshot showing security health of a database in Defender for Cloud." lightbox="../media/resource-health-purview.png":::

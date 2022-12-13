@@ -43,7 +43,7 @@ To add or edit app settings in bulk, click the **Advanced** edit button. When fi
 
 ## Configure connection strings
 
-For ASP.NET and ASP.NET Core developers the values you set in App Service override the ones in *Web.config*. For other language stacks, it's better to use app settings instead, because connection strings require special formatting in the variable keys in order to access the values. Connection strings are always encrypted when stored (encrypted-at-rest).
+For ASP.NET and ASP.NET Core developers, the values you set in App Service override the ones in *Web.config*. For other language stacks, it's better to use app settings instead, because connection strings require special formatting in the variable keys in order to access the values. Connection strings are always encrypted when stored (encrypted-at-rest).
 
 > [!TIP]
 > There is one case where you may want to use connection strings instead of app settings for non-.NET languages: certain Azure database types are backed up along with the app only if you configure a connection string for the database in your App Service app.

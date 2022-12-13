@@ -2,7 +2,7 @@
 
 :::image type="icon" source="../media/tech-uwp.png":::
 
-In this lesson, we explore how you can use data binding for data entry, showing and hiding pieces of UI based on the app's state. You'll also get familiar with the full `INotifyPropertyChanged` pattern. 
+In this lesson, we explore how you can use data binding for data entry, showing and hiding pieces of UI based on the app's state. You'll also get familiar with the full `INotifyPropertyChanged` pattern.
 
 Let's expand our existing demo with a friendly greeting that looks like this.
 
@@ -18,7 +18,7 @@ If you don't have Visual Studio open with the project you've created during the 
 
 #### 2. Create the data entry UI
 
-The data entry UI is simple: just a `TextBlock`, a `TextBox`, and a `Button`, in a single horizontal layout in the middle of the screen. The simplest way to horizontally place controls is to use a `StackPanel`, like this. 
+The data entry UI is simple: just a `TextBlock`, a `TextBox`, and a `Button`, in a single horizontal layout in the middle of the screen. The simplest way to horizontally place controls is to use a `StackPanel`, like this.
 
 ```xml
 <StackPanel HorizontalAlignment="Center" 
@@ -40,7 +40,7 @@ Copy the preceding code, and paste it inside the `Grid` tag of MainPage.xaml, be
 
 #### 3. Implement and bind the UserName property
 
-Let's turn our attention to the code. Open up MainPage.xaml.cs (you can press F7 to switch to the code behind, and Shift+F7 to switch back to the XAML). Create a simple property called `UserName`. 
+Let's turn our attention to the code. Open up MainPage.xaml.cs (you can press F7 to switch to the code behind, and Shift+F7 to switch back to the XAML). Create a simple property called `UserName`.
 
 ```cs
 public string UserName { get; set; }
@@ -56,7 +56,7 @@ Going back to the MainPage.xaml, we can create the data binding between this new
          Text="{x:Bind UserName, Mode=TwoWay}"/>
 ```
 
-> [!Note]
+> [!NOTE]
 > Be sure not to confuse the `TextBlock` and the `TextBox` controls here. They look very similar in XAML, but if you bind the `UserName` to the `TextBlock`'s text property instead of the `TextBox`, the app won't work.
 
 With the preceding code, we've created a two-directional binding between the `Text` property of the `TextBox` and the `UserName` property in the code. This means that any time the user enters text (and moves the focus off the `TextBox`), the `UserName` property in the code will change. Also, the `TextBox`'s text is set to the value stored in the `UserName` property upon the app's start, or whenever we raise the `NotifyPropertyChanged` event with the `propertyName` parameter `"UserName"`. (We won't do that in this lesson.)
@@ -75,10 +75,12 @@ Going back to the code behind, let's display a simple dialog box when the button
 
 ```cs
 var dlg = new Windows.UI.Popups.MessageDialog($"Hello {UserName}!");
-dlg.ShowAsync();
+_ = dlg.ShowAsync();
 ```
 
 If you're not familiar with the `$"Hello {Username}"` syntax, it is the equivalent of `"Hello " + UserName + "!"` or `String.Format("Hello {0}!", UserName)`. This more concise and readable feature is called [string interpolation](/dotnet/csharp/language-reference/tokens/interpolated), and was introduced in C# 6.
+
+The `_` is a [discard](/dotnet/csharp/discards) variable. It is used to indicate that the return value of the `ShowAsync` method is not used. The `ShowAsync` method returns a `Task` object, which is a placeholder for a task that will be completed in the future. In our case, we don't need to wait for the task to complete, so we can discard the return value.
 
 #### 5. Run the app
 
@@ -110,9 +112,10 @@ public bool IsNameNeeded
 }
 ```
 
-This is a pretty standard Boolean property with a backing field and a default value of `true`, until we get to the setter. The property setter first verifies whether the new value is the same as the old one. If it is, there's no need to do anything. If nothing has changed, you don't want to embark on a lengthy process of recalculating the layout and re-rendering controls. However, if the value of the property *has* changed, you do need to tell the UI about that, by using the `PropertyChanged` event. 
+This is a pretty standard Boolean property with a backing field and a default value of `true`, until we get to the setter. The property setter first verifies whether the new value is the same as the old one. If it is, there's no need to do anything. If nothing has changed, you don't want to embark on a lengthy process of recalculating the layout and re-rendering controls. However, if the value of the property *has* changed, you do need to tell the UI about that, by using the `PropertyChanged` event.
 
 In the preceding code, you can see the standard pattern of the **INotifyPropertyChanged** interface:
+
 - Verify whether the value has changed.
 - If it has, set the new value.
 - Notify the UI.
@@ -132,11 +135,11 @@ if (string.IsNullOrEmpty(UserName))
 IsNameNeeded = false;
 ```
 
-First, a quick check is performed, as we no longer accept an empty username here. After a name has been entered,  `IsNameNeeded` is set to `false`, and the app proceeds with displaying the message dialog box. Setting the value of `IsNameNeeded` raises the `NotifyPropertyChanged` event and notifies the UI. 
+First, a quick check is performed, as we no longer accept an empty username here. After a name has been entered,  `IsNameNeeded` is set to `false`, and the app proceeds with displaying the message dialog box. Setting the value of `IsNameNeeded` raises the `NotifyPropertyChanged` event and notifies the UI.
 
 We are now done with the code to hide the UI. Let's head back to the XAML!
 
-On the XAML side, we need to hide the `TextBlock`, the `TextBox`, and the `Button` when IsNameNeeded is false. Or we can just hide their container, the `StackPanel`, in one step. Just add the `Visibility` attribute to the `StackPanel`, like this:
+On the XAML side, we need to hide the `TextBlock`, the `TextBox`, and the `Button` when `IsNameNeeded` is false. Or we can just hide their container, the `StackPanel`, in one step. Just add the `Visibility` attribute to the `StackPanel`, like this:
 
 ```cs
 Visibility="{x:Bind IsNameNeeded, Mode=OneWay}"
@@ -157,7 +160,7 @@ Let's replace the `MessageDialog` with a more permanent display: a `TextBlock` i
 
 There's a lot of new things going on here. Let's dissect the `Text` attribute's binding!
 
-To evaluate the value of the `Text` property on the `TextBlock`, the system calls the built-in `String.Format` method with the format string `"Hello {0}"`. The object to format will be `tbUserName.Text` (in other words, the `Text` property on the `tbUserName` control). The mode of the binding is defined as `OneWay`, meaning the `TextBlock` will receive data from the `TextBox`'s `Text` property. 
+To evaluate the value of the `Text` property on the `TextBlock`, the system calls the built-in `String.Format` method with the format string `"Hello {0}"`. The object to format will be `tbUserName.Text` (in other words, the `Text` property on the `tbUserName` control). The mode of the binding is defined as `OneWay`, meaning the `TextBlock` will receive data from the `TextBox`'s `Text` property.
 
 This is called *UI-to-UI binding* because both the data binding's source and target are on the UI. To see it in action, you need to define the `sys` namespace (which contains the `System.Format` method). Add the following line to the root `Page` tag in the XAML:
 
@@ -173,7 +176,7 @@ In a real world app, displaying the user's name wouldn't happen through UI-to-UI
 
 #### 9. Hide the greeting until Submit is selected
 
-As cool as it looks to have the greeting update while typing, the **"Hello !"** text at startup may appear unprofessional. It would be preferable to have the greeting `TextBlock` stay invisible until the **Submit** button has been selected. 
+As cool as it looks to have the greeting update while typing, the **"Hello !"** text at startup may appear unprofessional. It would be preferable to have the greeting `TextBlock` stay invisible until the **Submit** button has been selected.
 
 To calculate whether the greeting is visible, use a method called `GetGreetingVisibility`, and add it to the `MainPage` class.
 
@@ -215,16 +218,16 @@ Finally, to stop displaying the `MessageDialog`, comment out the following lines
 Now you're ready to run the app and enjoy your greeting messages.
 
 #### Summary
-In this lesson, you've seen how data binding makes it easier to transfer data between the UI and your code, or between two UI elements. However, there was a lot of code to write, especially when invoking the `PropertyChanged` event in the property setters. In the next lesson, you'll create a helper class to simplify the use of the `INotifyPropertyChanged` pattern. 
+
+In this lesson, you've seen how data binding makes it easier to transfer data between the UI and your code, or between two UI elements. However, there was a lot of code to write, especially when invoking the `PropertyChanged` event in the property setters. In the next lesson, you'll create a helper class to simplify the use of the `INotifyPropertyChanged` pattern.
 
 ::: zone-end
-
 
 ::: zone pivot="wpf"
 
 :::image type="icon" source="../media/tech-wpf.png":::
 
-In this lesson, we explore how you can use data binding for data entry, showing and hiding pieces of UI based on the app's state. You'll also get familiar with the full `INotifyPropertyChanged` pattern, and learn more about `DataContext`. 
+In this lesson, we explore how you can use data binding for data entry, showing and hiding pieces of UI based on the app's state. You'll also get familiar with the full `INotifyPropertyChanged` pattern, and learn more about `DataContext`.
 
 Let's expand our existing demo with a friendly greeting that looks like this.
 
@@ -238,11 +241,11 @@ When you select the **Submit** button, the app will display a simple greeting at
 
 If you don't have Visual Studio open with the project you've created during the last lesson, open it now.
 
-In the previous lesson, we created a dedicated `Clock` class, that has been instantiated within the `TextBlock` that displayed the clock. This `Clock` class contained the business logic for the clock itself. However, you often need to encompass much more functionality for a screen, and it would be tedious to set the `DataContext` for every single control. 
+In the previous lesson, we created a dedicated `Clock` class, that has been instantiated within the `TextBlock` that displayed the clock. This `Clock` class contained the business logic for the clock itself. However, you often need to encompass much more functionality for a screen, and it would be tedious to set the `DataContext` for every single control.
 
 Luckily, `DataContext` is designed so that you can apply it to the entire XAML tree - or just a part of it. A key property of `DataContext` is that it is inherited throughout the XAML tree, but it can be overwritten at any point for a specific subtree.
 
-Let's see this in practice. Create a new class called `MainWindowDataContext`, and make sure it's constructor is public:
+Let's see this in practice. Create a new class called `MainWindowDataContext`, and make sure its constructor is public:
 
 ```cs
 namespace DatabindingSampleWPF
@@ -267,7 +270,7 @@ Let's review what we have. The `DataContext` is set at the `Window` (root) level
 
 #### 2. Create the data entry UI
 
-The data entry UI is simple: just a `TextBlock`, a `TextBox`, and a `Button` in a single horizontal layout in the middle of the screen. The simplest way to horizontally place controls is to use a `StackPanel`, like this. 
+The data entry UI is simple: just a `TextBlock`, a `TextBox`, and a `Button` in a single horizontal layout in the middle of the screen. The simplest way to horizontally place controls is to use a `StackPanel`, like this.
 
 ```xml
 <StackPanel HorizontalAlignment="Center" 
@@ -290,7 +293,7 @@ Copy the preceding code, and paste it inside the `Grid` tag of MainPage.xaml, be
 
 #### 3. Implement and bind the UserName property
 
-Let's turn our attention to the code. Open up MainWindowData.cs, and create a simple property called `UserName`. 
+Let's turn our attention to the code. Open up MainWindowData.cs, and create a simple property called `UserName`.
 
 ```cs
 public string UserName { get; set; }
@@ -306,13 +309,13 @@ Going back to MainWindow.xaml, we can create the data binding between this newly
          Text="{Binding UserName, Mode=TwoWay}"/>
 ```
 
-> [!Note]
+> [!NOTE]
 > Be sure not to confuse the `TextBlock` and the `TextBox` controls here. They look very similar in XAML, but if you bind the `UserName` to the `TextBlock`'s text property instead of the `TextBox`, the app won't work.
 
 With the preceding code, we've created a two-way binding between the `Text` property of the `TextBox` and the `UserName` property in the code. This means that any time the user enters text (and moves the focus off the `TextBox`), the `UserName` property in the code will change. Also, the `TextBox`'s text will be set to the value stored in the `UserName` property upon the app's start, or whenever we raise the `NotifyPropertyChanged` event with the `propertyName` parameter `"UserName"`. (We won't do that in this lesson.)
 
-> [!Note]
-> In WPF, the binding mode is automatically determined for the most common situations. For example, if you're binding to the `Text` property of a `TextBox`, WPF sets the binding mode to `TwoWay` by default. This means that we could have even skipped specifying the binding mode here, and could've just written `Text={Binding UserName}`. Learn more about binding modes [here](/dotnet/api/system.windows.data.binding.mode?view=netframework-4.7.2).
+> [!NOTE]
+> In WPF, the binding mode is automatically determined for the most common situations. For example, if you're binding to the `Text` property of a `TextBox`, WPF sets the binding mode to `TwoWay` by default. This means that we could have even skipped specifying the binding mode here, and could've just written `Text={Binding UserName}`. Learn more about binding modes [here](/dotnet/api/system.windows.data.binding.mode?view=netframework-4.8&preserve-view=true).
 
 #### 4. Create the Submit button's click handler
 
@@ -361,6 +364,7 @@ public class MainWindowDataContext : INotifyPropertyChanged
 ```
 
 Next, create a property to indicate whether entering the user's name is still needed. Add the following code within the `MainWindowDataContext` class:
+
 ```cs
 private bool _isNameNeeded = true;
         
@@ -382,6 +386,7 @@ public bool IsNameNeeded
 This is a pretty standard Boolean property with a backing field and a default value of `true`, until we get to the setter. The property setter first verifies whether the new value is the same as the old one. If it is, there's no need to do anything. If nothing has changed, you don't want to embark on a lengthy process of recalculating the layout and re-rendering controls. However, if the value of the property *has* changed, you do need to tell the UI about that, by using the `PropertyChanged` event.
 
 In the preceding code, you can see the standard pattern of the **INotifyPropertyChanged** interface:
+
 - Verify whether the value has changed.
 - If it has, set the new value.
 - Notify the UI.
@@ -401,7 +406,7 @@ if (string.IsNullOrEmpty(DC.UserName))
 DC.IsNameNeeded = false;
 ```
 
-First, a quick check is performed, as we no longer accept an empty username here. After a name has been entered, `IsNameNeeded` is set to `false`, and the app proceeds with displaying the message dialog box. Setting the value of `IsNameNeeded` raises the `NotifyPropertyChanged` event and notifies the UI. 
+First, a quick check is performed, as we no longer accept an empty username here. After a name has been entered, `IsNameNeeded` is set to `false`, and the app proceeds with displaying the message dialog box. Setting the value of `IsNameNeeded` raises the `NotifyPropertyChanged` event and notifies the UI.
 
 We are now done with the code to hide the UI. Let's head back to the XAML!
 
@@ -411,9 +416,9 @@ On the XAML side, we need to hide the `TextBlock`, the `TextBox`, and the `Butto
 Visibility="{Binding IsNameNeeded, Converter={StaticResource BooleanToVisibilityConverter}}"
 ```
 
-This binding consists of two parts. The first part specifies the binding path, which points to the `IsNameNeeded` property of the `MainWindowDataContext` object that is set as the `DataContext` of the entire `Window`. 
+This binding consists of two parts. The first part specifies the binding path, which points to the `IsNameNeeded` property of the `MainWindowDataContext` object that is set as the `DataContext` of the entire `Window`.
 
-But the `IsNameNeeded` property is a Boolean, while `Visibility` is of type [System.Windows.Visibility](/dotnet/api/system.windows.visibility?view=netframework-4.7.2%22), which is an `enum`. We need to do a conversion between the two. This conversion is so common, WPF has a built-in helper class called `BooleanToVisibilityConverter`. We need to create an instance of this class, and point to it from the binding declaration. 
+But the `IsNameNeeded` property is a Boolean, while `Visibility` is of type [System.Windows.Visibility](/dotnet/api/system.windows.visibility?view=netframework-4.8&preserve-view=true), which is an `enum`. We need to do a conversion between the two. This conversion is so common, WPF has a built-in helper class called `BooleanToVisibilityConverter`. We need to create an instance of this class, and point to it from the binding declaration.
 
 We instantiate this class in XAML, as a resource of the `Window` object. Every `FrameworkElement` can have its own resource collection, with a key identifying every resource in the collection. The `BooleanToVisibilityConverter` in the preceding binding is this key, pointing to a `BooleanToVisibilityConverter` object inside the resource collection. You can define the resource collection by adding the following code to the `Window`, right after the opening tag:
 
@@ -448,7 +453,7 @@ In a real world app, displaying the user's name wouldn't happen through UI-to-UI
 
 #### 9. Hide the greeting until Submit is selected
 
-As cool as it looks to have the greeting update while typing, the **"Hello !"** text at startup may appear unprofessional. It would be preferable to have the greeting `TextBlock` stay invisible until the **Submit** button has been selected. 
+As cool as it looks to have the greeting update while typing, the **"Hello !"** text at startup may appear unprofessional. It would be preferable to have the greeting `TextBlock` stay invisible until the **Submit** button has been selected.
 
 To calculate whether the greeting is visible, use a property called `GreetingVisibility`, and add it to the `MainWindowDataContext` class.
 
@@ -488,6 +493,7 @@ Finally, to stop displaying the `MessageBox`, comment out the following line fro
 Now you're ready to run the app and enjoy your greeting messages.
 
 #### Summary
-In this lesson, you've seen how data binding makes it easier to transfer data between the UI and your code, or between two UI elements. However, there was a lot of code to write, especially when invoking the `PropertyChanged` event in the property setters. In the next lesson, you'll create a helper class to simplify the use of the `INotifyPropertyChanged` pattern. 
+
+In this lesson, you've seen how data binding makes it easier to transfer data between the UI and your code, or between two UI elements. However, there was a lot of code to write, especially when invoking the `PropertyChanged` event in the property setters. In the next lesson, you'll create a helper class to simplify the use of the `INotifyPropertyChanged` pattern.
 
 ::: zone-end

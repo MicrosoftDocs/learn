@@ -1,10 +1,10 @@
 In this module, the Tailspin team took on some common organizational challenges around software delivery and adapted their process to better handle them. Some of the things you learned to do with Azure DevOps include how to:
 
-* Create a delivery plan
-* Add team sprints and milestones to a delivery plan
-* Rearrange work items to fit the overall schedule
-* View dependencies between work items in a delivery plan
-* Resolve dependencies that have issues 
+* Create a delivery plan.
+* Add team sprints and milestones to a delivery plan.
+* Rearrange work items to fit the overall schedule.
+* View dependencies between work items in a delivery plan.
+* Resolve dependencies that have issues.
 
 ## Learning path summary
 
@@ -24,6 +24,6 @@ For more self-paced, hands-on learning around Azure DevOps, also check out [Azur
 
 ## Learn more
 
-This module focused on how delivery plans can help you manage work schedules across multiple teams. However, there are a lot of things to consider when coordinating projects at scale.
+This module focused on how delivery plans can help you manage work schedules across multiple teams. However, there are many things to consider when coordinating projects at scale.
 
 To learn more about some of the other features Azure DevOps provides for scaling your team projects, such as team hierarchies, project portfolio management, and dashboards, see [Plans (Agile at scale)](/azure/devops/boards/plans/?azure-portal=true).

@@ -21,7 +21,7 @@ prerequisites: |
   - Explain the features and capabilities of IoT Hub
   - Describe how an IoT solution uses message routing and other message processing options to process message and event data.
   - Describe the hot and cold storage path options for an Azure IoT solution.
-iconUrl: /learn/achievements/iot-business-integration.svg
+iconUrl: /training/achievements/iot-business-integration.svg
 levels:
 - intermediate
 roles:

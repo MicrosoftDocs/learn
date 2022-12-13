@@ -17,7 +17,7 @@ abstract: |
   - Describe the licensing models for Azure AD.
 prerequisites: | 
   - None
-iconUrl: /learn/achievements/intro-to-azure-ad.svg
+iconUrl: /training/achievements/intro-to-azure-ad.svg
 levels:
 - beginner
 roles:

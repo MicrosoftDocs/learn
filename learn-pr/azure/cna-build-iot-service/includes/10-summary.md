@@ -13,7 +13,7 @@ Now that you've completed this module, you should know more about how to:
 You can learn more by reviewing the following articles:
 
 * [Azure IoT Central documentation](/azure/iot-central/?azure-portal=true)
-* [Introduction to Azure IoT](/learn/paths/introduction-to-azure-iot/?azure-portal=true)
+* [Introduction to Azure IoT](/training/paths/introduction-to-azure-iot/?azure-portal=true)
 * [Welcome to Azure Cosmos DB](/azure/cosmos-db/introduction?azure-portal=true)
 * [Quickstart: Create an Azure Cosmos account, database, container, and items from the Azure portal](/azure/cosmos-db/create-cosmosdb-resources-portal?azure-portal=true)
 * [Azure Cosmos DB resource model](/azure/cosmos-db/account-databases-containers-items?azure-portal=true)

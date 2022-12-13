@@ -25,12 +25,12 @@ Your company wants to control the costs of the app, and have asked you to use a 
 
     The above settings will be used in the code to create the pool. Looking at each variable we can explain them as follows.
     - **PoolId**: The name our code will use to reference the pool in other batch client calls.
-    - **LowPriorityNodeCount**: You are going to create a pool with three low-priority virtual machines (VMs)
+    - **LowPriorityNodeCount**: You're going to create a pool with three low-priority virtual machines (VMs)
     - **PoolVMSize**: The VMs will be STANDARD_A1_v2, which gives the nodes 1 CPU, 2 GB of RAM, and 10 GB of SSD storage
     - **appPackageId**: The name of the application package to use on the nodes you create
     - **appPackageVersion**: The version of the application to use on the nodes you create
 
-## Update the Main() method to support asynchronous calls.
+## Update the Main() method to support asynchronous calls
 
 We'll be making several asynchronous calls to cloud services, so the first thing to do is to make `Main` asynchronous. With C# .NET version 7.1 and onwards, async `Main` methods in console applications are supported.
 
@@ -140,9 +140,7 @@ We'll be making several asynchronous calls to cloud services, so the first thing
 
 ## Test the app
 
-1. Select the ellipses in the top-right corner of the code editor.
-
-1. Select **Close Editor**, and in the dialog select **Save**.
+1. In the code editor, right-click and select **Save**, and then select **Quit**.
 
 1. In the Cloud Shell, compile and run the app with the following command.
 

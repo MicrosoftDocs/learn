@@ -21,7 +21,7 @@ abstract: |
   - Prepare endpoint management support and help desk.
 prerequisites: | 
   - Basic knowledge of Microsoft Endpoint Manager and endpoint management concepts, see [Microsoft Endpoint Manager fundamentals](../../paths/endpoint-manager-fundamentals/index.yml).
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 ratingEnabled: true
 levels:
 - beginner

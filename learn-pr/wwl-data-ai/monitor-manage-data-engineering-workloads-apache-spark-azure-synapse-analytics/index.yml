@@ -23,7 +23,7 @@ prerequisites: |
   -  Data Fundamentals
   - Introduction to Azure Data Factory
   - Introduction to Azure Synapse Analytics
-iconUrl: /learn/achievements/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse.svg
+iconUrl: /training/achievements/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse.svg
 levels:
 - intermediate
 roles:

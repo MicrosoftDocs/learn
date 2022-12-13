@@ -2,7 +2,7 @@ Let's suppose that you work on the operations team for an Internet Service Provi
 
 Azure Virtual Machines (VMs) provide you with the power and flexibility to scale your company's infrastructure globally. Azure virtual machines are platform-agnostic, and they support the technologies that your company is using right now; for example: you can create both Windows and Linux virtual machines. You can use consistent Azure tools to manage your virtual machines, and you can continue to use platform-specific tools and applications for each operating system once you have created your virtual machines.
 
-In this module, you'll automate the creation of a virtual machine, as well as the installation and configuration of the software that your company uses to provision web servers. For the exercises in this module, you can choose to deploy a virtual machine using either Ubuntu or Windows 2019 Data Center.
+In this module, you'll automate the creation of a virtual machine and the installation and configuration of the software that your company uses to provision web servers. For the exercises in this module, you can choose to deploy a virtual machine using either Ubuntu or Windows 2019 Data Center.
 
 ## Learning objectives
 

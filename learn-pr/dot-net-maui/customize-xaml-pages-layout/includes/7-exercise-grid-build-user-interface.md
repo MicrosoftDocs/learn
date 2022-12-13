@@ -8,7 +8,7 @@ The starter solution contains a fully functional tip calculator app.
 
 1. Using Visual Studio, open the starter solution in the **exercise3/TipCalculator** folder in the repo that you cloned at the start of the previous exercise.
 
-1. Open **MainPage.xaml**. Notice that all the views are in displayed using one vertical `StackLayout` panel:
+1. Open **MainPage.xaml**. Notice that all the views are displayed using one vertical `StackLayout` panel:
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -46,7 +46,7 @@ The starter solution contains a fully functional tip calculator app.
 
 ## Create a Grid layout
 
-1. Change the layout panel from `VerticalStackLayout` to `Grid` with spacing of `40` units.
+1. Change the layout panel from `VerticalStackLayout` to `Grid` with padding of `40` units.
 
 1. Define seven rows and two columns for the `Grid`. Make all the rows `Auto` size except the fourth row. The fourth row should use `Star` so it will get all the remaining space available in the grid. Use `Star` sizing for both columns.
 

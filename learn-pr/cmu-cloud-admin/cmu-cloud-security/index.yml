@@ -31,7 +31,7 @@ prerequisites: |
   - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
   - Understand how cloud resource provisioning works
   - Know how data centers work and how data is stored in the cloud
-iconUrl: /learn/achievements/cmu-cloud-admin/cmu-cloud-security.svg
+iconUrl: /training/achievements/cmu-cloud-admin/cmu-cloud-security.svg
 hidden: true
 levels:
 - beginner

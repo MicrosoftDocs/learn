@@ -23,7 +23,7 @@ abstract:  |
 prerequisites: |
   - Introduction to Python for data science
   
-iconUrl: /learn/achievements/reactors/text-classification-naive-bayes.svg
+iconUrl: /training/achievements/reactors/text-classification-naive-bayes.svg
 hidden: true
 levels:
 - beginner
@@ -33,7 +33,6 @@ roles:
 - data-scientist
 products:
 - azure
-- vs-code
 subjects:
 - machine-learning
 - threat-protection

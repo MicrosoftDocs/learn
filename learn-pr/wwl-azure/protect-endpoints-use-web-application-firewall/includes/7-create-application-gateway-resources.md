@@ -1,5 +1,21 @@
 You're now ready to create an Application Gateway instance to expose your application to the internet.
 
+When you host your apps or microservices in [Azure Spring Apps](/azure/spring-cloud), you don't always want to publish them directly to the internet. You might want to expose them through a reverse proxy instead. Doing so allows you to place a service in front of your apps where you can define web application firewall (WAF) capabilities to help secure your apps, load balancing, routing, request filtering, and rate limiting.
+
+When you deploy a reverse proxy service like [Azure Application Gateway](/azure/application-gateway) or [Azure Front Door](/azure/frontdoor) in front of Azure Spring Apps, you should ensure that your apps can be reached only through this reverse proxy. This safeguard helps to prevent malicious users from trying to bypass the WAF or circumvent throttling limit.
+
+The diagram below shows Application Gateway as the reverse proxy.
+
+:::image type="content" source="../media/application-gateway-reverse-proxy-virtual-network-spring-2ce1d462.png" alt-text="Displays a diagram showing Application Gateway as the reverse proxy":::
+
+
+The diagram below shows Azure Front Door and Application Gateway as the reverse proxy.
+
+:::image type="content" source="../media/azure-front-door-application-gateway-reverse-proxy-spring-7bdb6176.png" alt-text="Displays a diagram showing Azure Front Door and Application Gateway as the reverse proxy.":::
+
+
+The recommended way to enforce these restrictions depends on how you deploy your Azure Spring Apps instance and which reverse proxy you use. In this unit you will choose for the Azure Application Gateway and the network locked down.
+
 > [!NOTE]
 > An Application Gateway resource needs a dedicated subnet to be deployed into, however, you already created this subnet at the beginning of this exercise.
 

@@ -18,7 +18,7 @@ abstract: |
   - Monitor transient errors in your app using logging
 prerequisites: |
   - Entry-level developer knowledge in either C#, Java, or Node.js
-iconUrl: /learn/achievements/handle-transient-errors-in-your-app.svg
+iconUrl: /training/achievements/handle-transient-errors-in-your-app.svg
 levels:
 - beginner
 roles:

@@ -9,7 +9,7 @@ In this module, you've learned how Microsoft Endpoint Manager uses Conditional A
 ## Next steps
 
 To learn more about Microsoft Endpoint Manager, continue to the next learning module in this series:
-- [Analyze and resolve compliance issues using Microsoft Endpoint Manager](/learn/modules/compliance-endpoint-manager/)
+- [Analyze and resolve compliance issues using Microsoft Endpoint Manager](/training/modules/compliance-endpoint-manager/)
 
 To evaluate Microsoft Intune and the Microsoft technologies available with Microsoft's Enterprise Mobility + Security (EMS), continue with the free trial:
 - [Get a free trial, evaluate Enterprise Mobility + Security (EMS)](https://go.microsoft.com/fwlink/?linkid=845167)

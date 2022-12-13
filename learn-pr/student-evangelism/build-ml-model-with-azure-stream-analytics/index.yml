@@ -27,7 +27,7 @@ prerequisites: |
   - Familiarity with [Node.js](https://nodejs.org/?azure-portal=true)
   - [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true)
   - [Power BI Desktop](https://powerbi.microsoft.com/desktop/?azure-portal=true) and a work or school Microsoft account
-iconUrl: /learn/achievements/student-evangelism/build-ml-model-with-azure-stream-analytics-badge.svg
+iconUrl: /training/achievements/student-evangelism/build-ml-model-with-azure-stream-analytics-badge.svg
 levels:
 - beginner
 roles:

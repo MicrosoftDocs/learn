@@ -61,7 +61,7 @@ You can choose to save the estimate for future reference. If you save the estima
 
 ### Try it with Pricing calculator
 
-If you'd like to try estimating costs with Pricing calculator, you can complete the exercise at [Exercise - Estimate workload cost by using the Pricing calculator](https://docs.microsoft.com/learn/modules/plan-manage-azure-costs/5-estimate-workload-cost-pricing-calculator?azure-portal=true). (This exercise doesn't require an Azure subscription.)
+If you'd like to try estimating costs with Pricing calculator, you can complete the exercise at [Exercise - Estimate workload cost by using the Pricing calculator](/training/modules/plan-manage-azure-costs/5-estimate-workload-cost-pricing-calculator?azure-portal=true). (This exercise doesn't require an Azure subscription.)
 
 ## Additional reading
 

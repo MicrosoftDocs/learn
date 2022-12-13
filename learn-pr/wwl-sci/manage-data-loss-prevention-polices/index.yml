@@ -18,7 +18,7 @@ abstract: |
   - Mitigate DLP violations in Microsoft Defender for Cloud Apps.
 prerequisites: |
   •	Knowledge of data loss prevention in Microsoft 365
-iconUrl: /learn/achievements/manage-data-loss-prevention-polices.svg
+iconUrl: /training/achievements/manage-data-loss-prevention-polices.svg
 levels:
 - intermediate
 roles:

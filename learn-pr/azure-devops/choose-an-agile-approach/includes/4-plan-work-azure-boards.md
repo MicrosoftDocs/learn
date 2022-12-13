@@ -8,20 +8,21 @@ In this part, you'll set up an Azure DevOps project and Azure Boards for the Tai
 
 ### Create the project
 
-Here you'll create an Azure DevOps project.
+Here you'll create an Azure DevOps project:
 
 1. Sign in to your account at [dev.azure.com](https://dev.azure.com).
+
 1. Select your organization.
 1. Select **+ New project**.
-
+    
     The **Create a project** dialog box opens.
 1. In the **Project name** field, enter **Space Game - web**.
 1. In the **Description** field, enter **The Space Game website**.
 1. Under **Visibility**, choose whether to make your project public or private. For now, you can select private.
-
+    
     Creators of open source projects will often choose public visibility so that others can view active issues and build status.
 1. Select **Advanced**.
-1. Under **Version control**, make sure that **Git** is selected. Under **Work item process**, make sure that **Basic** is selected.
+1. Under **Version control**, ensure that **Git** is selected. Under **Work item process**, ensure that **Basic** is selected.
 1. Select **Create**.
 
 After just a few moments, you're taken to your new project.
@@ -50,25 +51,25 @@ Now's a good time to add members to your team. Although not required, if you'd l
 
 Mara adds entries for herself and her team members: "andy@tailspintoys.com", "amita@tailspintoys.com", "mara@tailspintoys.com", and "tim@tailspintoys.com".
 
-In practice, you might manage your team through an identity and access management service such as Azure Active Directory, and set the appropriate permission levels for each team member. We'll point you to more resources at the end of this module.
+In practice, you might manage your team through an identity and access management service like Azure Active Directory, and set the appropriate permission levels for each team member. We'll point you to more resources at the end of this module.
 
 ### Create the board
 
-Although Mara and her team identified a number of issues, here you'll add the three work items Mara originally proposed to your board to practice the process.
+Although Mara and her team identified a number of issues, here you'll add the three work items Mara originally proposed to her team, which you can use to practice the process.
 
 1. In the column on the left, point to **Boards**, and select **Boards** from the menu that appears.
 
 1. Select **Space Game - web Team boards**. A blank board appears.
 
-    :::image type="content" source="../media/3-blank-board.png" alt-text="Azure Boards showing an initially empty board.":::
+    :::image type="content" source="../media/3-blank-board.png" alt-text="Screenshot of Azure Boards showing an initially empty board.":::
 
     Recall that you're using the Basic process. The Basic process involves three task states: **To Do**, **Doing**, and **Done**.
 
-    If you choose a different process, such as Scrum, you'll see a layout that supports that process.
+    If you choose a different process, like Scrum, you'll see a layout that supports that process.
 
 1. In the **To Do** column, select the green **+** button next to the **New item** field.
 
-1. Enter **Stabilize the build server**, and then press <kbd>Enter</kbd>.
+1. Enter **Stabilize the build server**, and then press Enter.
 
 1. Select the ellipsis (**...**), and then select **Open**.
 
@@ -87,7 +88,7 @@ Although Mara and her team identified a number of issues, here you'll add the th
 
 1. Drag **Stabilize the build server** to the top of the stack. Then, drag **Create a Git-based workflow** to the second item position. Your final board looks like this.
 
-    :::image type="content" source="../../shared/media/build-initial-tasks.png" alt-text="Azure Boards showing the initial three tasks. Each task is in the To Do column.":::
+    :::image type="content" source="../../shared/media/build-initial-tasks.png" alt-text="Screenshot of Azure Boards showing the initial three tasks. Each task is in the To Do column.":::
 
 ### Define a sprint
 
@@ -97,9 +98,9 @@ When you create an Azure Boards project, you get an initial sprint called **Spri
 
 1. In the left-side column, select **Sprints**.
 
-    :::image type="content" source="../media/4-boards-sprints-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Sprints menu.":::
+    :::image type="content" source="../media/4-boards-sprints-menu.png" alt-text="Screenshot of Azure DevOps showing the location of the Sprints menu.":::
 
-1. Select **Set dates** from the upper right.
+1. Select **Set dates** from the upper-right corner.
 
 1. Leave the name as **Sprint 1**.
 
@@ -121,11 +122,11 @@ You have an initial set of work items and a timeline for your first sprint. Here
 
 1. In the **Iteration** dropdown, select **Sprint 1**.
 
-    :::image type="content" source="../media/3-assign-sprint.png" alt-text="Azure Boards showing the location of the Sprint 1 iteration.":::
+    :::image type="content" source="../media/3-assign-sprint.png" alt-text="Screenshot of Azure Boards showing the location of the Sprint 1 iteration.":::
 
 1. From the same window, select **Unassigned** and set yourself as the task owner.
 
-    :::image type="content" source="../media/3-assign-owner.png" alt-text="Azure Boards showing the location of the task owner.":::
+    :::image type="content" source="../media/3-assign-owner.png" alt-text="Screenshot of Azure Boards showing the location of the task owner.":::
 
 1. Select **Save**.
 

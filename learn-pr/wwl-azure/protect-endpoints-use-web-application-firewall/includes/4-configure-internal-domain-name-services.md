@@ -1,11 +1,11 @@
 You've redeployed your Azure Spring Apps service to a virtual network and redeployed your apps to the service. Next, you'll need to set up a private DNS service for your apps to be discoverable in your virtual network.
 
-1.  To find the IP address used for your Spring Cloud service, you'll be querying for the internal load balancer IP address of the service runtime network.
+1.  To find the IP address used for your Spring Apps service, you'll be querying for the internal load balancer IP address of the service runtime network.
     
     ```Bash
-    SERVICE_RUNTIME_RG=`az spring-cloud show \
+    SERVICE_RUNTIME_RG=`az spring show \
         --resource-group $RESOURCE_GROUP \
-        --name $SPRING_CLOUD_SERVICE \
+        --name $SPRING_APPS_SERVICE \
         --query "properties.networkProfile.serviceRuntimeNetworkResourceGroup" \
         --output tsv`
     
@@ -48,16 +48,16 @@ You've redeployed your Azure Spring Apps service to a virtual network and redepl
 5.  Update your **api-gateway** and **admin-service** apps to get an FQDN based on your private DNS zone.
     
     ```Bash
-    az spring-cloud app update \
+    az spring app update \
         --resource-group $RESOURCE_GROUP \
         --name api-gateway \
-        --service $SPRING_CLOUD_SERVICE \
+        --service $SPRING_APPS_SERVICE \
         --assign-endpoint true
     
-    az spring-cloud app update \
+    az spring app update \
         --resource-group $RESOURCE_GROUP \
         --name admin-service \
-        --service $SPRING_CLOUD_SERVICE \
+        --service $SPRING_APPS_SERVICE \
         --assign-endpoint true
     ```
 

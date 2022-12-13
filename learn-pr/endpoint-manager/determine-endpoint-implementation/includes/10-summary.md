@@ -13,7 +13,7 @@ In this module, you learned about the things to consider when implementing an en
 ## Next steps
 
 To learn more about Microsoft Endpoint Manager, continue to the next learning module in this series:
-- [Set up Microsoft Intune](/learn/modules/set-up-microsoft-intune/)
+- [Set up Microsoft Intune](/training/modules/set-up-microsoft-intune/)
 
 To evaluate Microsoft Intune and the Microsoft technologies available with Microsoft's Enterprise Mobility + Security (EMS), continue with the free trial:
 - [Get a free trial, evaluate Enterprise Mobility + Security (EMS)](https://go.microsoft.com/fwlink/?linkid=845167)

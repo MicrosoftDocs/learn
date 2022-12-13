@@ -48,7 +48,7 @@ IndexingPolicy policy = new ()
 };
 ```
 
-The class also includes an **ExcludedPaths** collection with an **Add** method to add new object of type **ExcludedPath**. In this example, the ``\*`` path is added to the list of excluded paths.
+The class also includes an **ExcludedPaths** collection with an **Add** method to add new object of type **ExcludedPath**. In this example, the ``/*`` path is added to the list of excluded paths.
 
 ```csharp
 policy.ExcludedPaths.Add(

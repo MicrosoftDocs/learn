@@ -3,7 +3,7 @@ uid: learn.wwl.search-data-outside-azure-platform-cognitive-search
 metadata:
   title: Search data outside the Azure platform in Azure Cognitive Search using Azure Data Factory
   description: "Use Azure Data Factory to add data that resides inside or outside the Azure platform into your search indexes."
-  ms.date: 07/05/2022
+  ms.date: 09/21/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -15,11 +15,11 @@ abstract: |
   - Use Azure Data Factory to copy data into an Azure Cognitive Search Index
   - Use the Azure Cognitive Search push API to add to an index from any external data source
 prerequisites: |
-  - Familiarity with Microsoft Azure
-  - Application development experience with C# or Python
-  - Experience of building a basic search solution with Azure Cognitive Search. If you haven't completed the [Create an Azure Cognitive Search solution ]( /learn/modules/create-azure-cognitive-search-solution) module, you should do so before starting this module
-  - Experience using Azure Data Factory for data integration
-iconUrl: /learn/achievements/generic-badge.svg
+  *   Familiarity with Microsoft Azure
+  *   Application development experience with C# or Python
+  *   Experience of building a basic search solution with Azure Cognitive Search. If you haven't completed the [Create an Azure Cognitive Search solution](/training/modules/create-azure-cognitive-search-solution) module, you should do so before starting this module
+  *   Experience using Azure Data Factory for data integration
+iconUrl: /training/achievements/search-data-outside-azure-platform-cognitive-search.svg
 levels:
 - intermediate
 roles:

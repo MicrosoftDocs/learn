@@ -13,4 +13,4 @@ If your reference data is a slowly changing data set, then support for refreshin
 Azure Stream Analytics automatically scans for refreshed reference data blobs at a one-minute interval.
 
 > [!NOTE]
-> You can find more information about reference data input here: [https://docs.microsoft.com/azure/stream-analytics/stream-analytics-use-reference-data](/azure/stream-analytics/stream-analytics-use-reference-data)
+> You can find more information about reference data input here: [Use reference data for lookups in Stream Analytics](/azure/stream-analytics/stream-analytics-use-reference-data)

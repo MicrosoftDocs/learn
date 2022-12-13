@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Familiarity with basic computing concepts and terminology.
   - Familiarity with cloud computing. 
-iconUrl: /learn/achievements/discover-azure-government.svg
+iconUrl: /training/achievements/discover-azure-government.svg
 levels: 
 - beginner
 roles: 

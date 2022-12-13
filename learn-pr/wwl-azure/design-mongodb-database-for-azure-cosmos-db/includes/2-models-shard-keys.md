@@ -9,7 +9,7 @@ To achieve this level of scalability, users need to understand the concepts, tec
 
 ## Identify access patterns for your app
 
-When you're designing a data model for a NoSQL database, the objective is to ensure that operations on data are done in the fewest requests. To do this, you need to understand the relationships between the data and how data will be accessed by the application. These access patterns are important because they, along with the relationships, will determine how the properties of the various entities are grouped together and stored in documents within collections in Azure Cosmos DB API for MongoDB databases.
+When you're designing a data model for a NoSQL database, the objective is to ensure that operations on data are done in the fewest requests. To do this, you need to understand the relationships between the data and how data will be accessed by the application. These access patterns are important because they, along with the relationships, will determine how the properties of the various entities are grouped together and stored in documents within collections in Azure Cosmos DB for MongoDB databases.
 
 You need to understand when and how your documents will be created, updated or retrieved. Let's consider an entity that defines a book author and separate the three entities that define that author. This can be divided into the Author's general information, the books the author published, and any awards that the author won.
 

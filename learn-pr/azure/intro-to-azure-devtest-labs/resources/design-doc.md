@@ -114,8 +114,8 @@ Identify the subtasks of *Introduction to Azure DevTest Labs*
 
 ## Notes
 
-Concepts - https://docs.microsoft.com/en-gb/azure/lab-services/devtest-lab-concepts
+Concepts - https://learn.microsoft.com/azure/lab-services/devtest-lab-concepts
 
-DevTest Labs Overview - https://docs.microsoft.com/en-gb/azure/lab-services/devtest-lab-overview 
+DevTest Labs Overview - https://learn.microsoft.com/azure/lab-services/devtest-lab-overview 
 
 This module will likely not have hands-on interactivity outside of knowledge checks, due to the resource requirements and unique use cases for Virtual machines.

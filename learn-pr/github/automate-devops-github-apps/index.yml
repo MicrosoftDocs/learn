@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub
-iconUrl: /learn/achievements/github/automate-devops-github-apps.svg
+iconUrl: /training/achievements/github/automate-devops-github-apps.svg
 ratingEnabled: true
 levels:
 - beginner

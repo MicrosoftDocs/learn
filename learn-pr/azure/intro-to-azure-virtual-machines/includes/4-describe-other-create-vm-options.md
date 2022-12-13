@@ -2,7 +2,7 @@ The Azure portal is the easiest way to create resources such as VMs when you are
 
 Let's look at some other ways to create and administer resources in Azure:
 
-- Azure Resource Manager
+- Azure Resource Manager templates
 - Azure PowerShell
 - Azure CLI
 - Azure REST API
@@ -10,15 +10,9 @@ Let's look at some other ways to create and administer resources in Azure:
 - Azure VM Extensions
 - Azure Automation Services
 
-## Azure Resource Manager
+## Resource Manager templates
 
 Let's assume you want to create a copy of a VM with the same settings. You could create a VM image, upload it to Azure, and reference it as the basis for your new VM. This process is inefficient and time-consuming. Azure provides you with the option to create a template from which to create an exact copy of a VM.
-
-Typically, your Azure infrastructure will contain many resources, many of them related to one another in some way. For example, the VM we created has the virtual machine itself, storage and network interface. **Azure Resource Manager** makes working with these related resources more efficient. It organizes resources into named **resource groups** that let you deploy, update, or delete all of the resources together. When we created the Ubuntu VM site, we identified the resource group as part of the VM creation, and Resource Manager placed the associated resources into the same group.
-
-Resource Manager also enables you to create _templates_, which can be used to create and deploy specific configurations.
-
-### What are Resource Manager templates?
 
 **Resource Manager templates** are JSON files that define the resources you need to deploy for your solution.
 
@@ -28,41 +22,18 @@ You can create a resource template for your VM. From the VM menu, under **Automa
 
 > [!NOTE]
 > The policies for the resources included in the sandbox for this Learn module prevent you from being able to export the VM you just created; that said, an exported template is an easy-to-edit JSON file. 
-
 You have the option to download or save a template for later use, or immediately deploy a new VM based on the template. For example, you might create a VM from a template in a test environment, and find it doesn’t quite work to replace your on-premises machine. You can delete the resource group, which deletes all of the resources, tweak the template, and try again. If you only want to make changes to the existing deployed resources, you can change the template used to create it, and redeploy it. Resource Manager will change the resources to match the new template.
 
 After you have it working the way you want it, you can use that template to easily replicate multiple versions of your infrastructure, such as staging and production. You can parameterize fields such as the VM name, network name, storage account name, and so on, and load the template repeatedly, using different parameters to customize each environment.
 
-You can use automation scripting tools such as the Azure CLI, Azure PowerShell, or even the Azure REST APIs with your favorite programming language to process resource templates, making this a powerful tool for quickly spinning up your infrastructure.
+For more information about using templates, see [Quickstart: Create an Ubuntu Linux virtual machine using an ARM template](/azure/virtual-machines/linux/quick-create-template).
 
-## Azure PowerShell
-
-Creating administration scripts is a powerful way to optimize your workflow. You can automate everyday, repetitive tasks, and after a script has been verified, it will run consistently, likely reducing errors. **Azure PowerShell** is ideal for one-off interactive tasks and/or the automation of repeated tasks.
-
-> [!NOTE]
-> PowerShell is a cross-platform shell that provides services like the shell window and command parsing. Azure PowerShell is an optional add-on package that adds the Azure-specific commands (referred to as **cmdlets**). You can learn more about installing and using Azure PowerShell in a separate training module.
-
-For example, you can use the `New-AzVM` cmdlet to create a new Azure virtual machine.
-
-```powershell
-New-AzVm `
-    -ResourceGroupName "TestResourceGroup" `
-    -Name "test-wp1-eus-vm" `
-    -Location "East US" `
-    -VirtualNetworkName "test-wp1-eus-network" `
-    -SubnetName "default" `
-    -SecurityGroupName "test-wp1-eus-nsg" `
-    -PublicIpAddressName "test-wp1-eus-pubip" `
-    -OpenPorts 80,3389
-```
-
-As shown here, you supply various parameters to handle the large number of VM configuration settings available. Most of the parameters have reasonable values; you only need to specify the required parameters. Learn more about creating and managing VMs with Azure PowerShell in the **Automate Azure tasks using scripts with PowerShell** module.
 
 ## Azure CLI
 
-Another option for scripting and command-line Azure interaction is the **Azure CLI**.
+An option for scripting and command-line Azure interaction is the **Azure CLI**.
 
-The Azure CLI is Microsoft's cross-platform command-line tool for managing Azure resources such as virtual machines and disks from the command line. It's available for Windows, Linux and macOS, or in a browser using the Cloud Shell. Like Azure PowerShell, the Azure CLI is a powerful way to streamline your administrative workflow. Unlike Azure PowerShell, the Azure CLI does not need PowerShell to function.
+The Azure CLI is Microsoft's cross-platform command-line tool for managing Azure resources such as virtual machines and disks from the command line. It's available for Linux, macOS, Windows, or in a browser using the Cloud Shell.
 
 For example, from the CLI, you can create an Azure VM with the `az vm create` command.
 
@@ -70,15 +41,50 @@ For example, from the CLI, you can create an Azure VM with the `az vm create` co
 az vm create \
     --resource-group TestResourceGroup \
     --name test-wp1-eus-vm \
-    --image win2016datacenter \
-    --admin-username jonc \
-    --admin-password aReallyGoodPasswordHere
+    --image Ubuntu \
+    --admin-username azureuser \
+    --generate-ssh-keys
 ```
 
-The Azure CLI can be used with other scripting languages, such as Ruby and Python. Both languages are commonly used on non-Windows-based machines where a developer might not be familiar with PowerShell.
+The Azure CLI can be used with other scripting languages, like Ruby and Python.
 
 Learn more about creating and managing VMs in the **Manage virtual machines with the Azure CLI tool** module.
 
+For more information about using the Azure CLI to create VMs, see [Quickstart: Create a Linux virtual machine using the CLI](/azure/virtual-machines/linux/quick-create-cli).
+
+## Azure PowerShell
+
+**Azure PowerShell** is ideal for one-off interactive tasks and/or the automation of repeated tasks.
+
+> [!NOTE]
+> PowerShell is a cross-platform shell that provides services like the shell window and command parsing. Azure PowerShell is an optional add-on package that adds the Azure-specific commands (referred to as **cmdlets**). You can learn more about installing and using Azure PowerShell in a separate training module.
+
+For example, you can use the `New-AzVM` cmdlet to create a new Debian-based Azure virtual machine.
+
+```powershell
+New-AzVm `
+    -ResourceGroupName "TestResourceGroup" `
+    -Name "test-wp1-eus-vm" `
+    -Location "East US" `
+    -Image Debian `
+    -VirtualNetworkName "test-wp1-eus-network" `
+    -SubnetName "default" `
+    -SecurityGroupName "test-wp1-eus-nsg" `
+    -PublicIpAddressName "test-wp1-eus-pubip" `
+    -GenerateSshKey `
+    -SshKeyName myPSKey
+    -OpenPorts 22
+```
+
+As shown here, you supply various parameters to handle the large number of VM configuration settings available. Most of the parameters have reasonable values; you only need to specify the required parameters. Learn more about creating and managing VMs with Azure PowerShell in the **Automate Azure tasks using scripts with PowerShell** module.
+
+For more information about using PowerShell to create VMs, see [Quickstart: Create a Linux virtual machine using PowerShell](/azure/virtual-machines/linux/quick-create-powershell).
+
+## Terraform
+
+Azure also has a Terraform provider, so you can easily use Terraform to create and manage your VMs. Terraform enables the definition, preview, and deployment of cloud infrastructure. Using Terraform, you create configuration files using HCL syntax. The HCL syntax allows you to specify the cloud provider - such as Azure - and the elements that make up your cloud infrastructure. After you create your configuration files, you create an execution plan that allows you to preview your infrastructure changes before they're deployed. Once you verify the changes, you apply the execution plan to deploy the infrastructure.
+
+For more information, see the [Azure Terraform Provider](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs) and [Quickstart: Use Terraform to create a VM](/azure/virtual-machines/linux/quick-create-terraform).
 ## Programmatic (APIs)
 
 Generally speaking, both Azure PowerShell and Azure CLI are good options if you have simple scripts to run and want to stick to command-line tools. When it comes to more complex scenarios, where the creation and management of VMs form part of a larger application with complex logic, another approach is needed.
@@ -89,15 +95,9 @@ You can interact with every type of resource in Azure programmatically.
 
 The Azure REST API provides developers with operations categorized by resource as well as the ability to create and manage VMs. Operations are exposed as URIs with corresponding HTTP methods (`GET`, `PUT`, `POST`, `DELETE`, and `PATCH`) and a corresponding response.
 
-The Azure Compute APIs give you programmatic access to virtual machines and their supporting resources. With this API, you have operations to:
+The Azure Compute APIs give you programmatic access to virtual machines and their supporting resources.
 
-- Create and manage availability sets
-- Add and manage virtual machine extensions
-- Create and manage managed disks, snapshots, and images
-- Access the platform images available in Azure
-- Retrieve usage information of your resources
-- Create and manage virtual machines
-- Create and manage virtual machine scale sets
+For more information, see the [Virtual Machines REST API reference](/rest/api/compute/virtual-machines).
 
 ### Azure Client SDK
 
@@ -150,10 +150,9 @@ VirtualMachine virtualMachine = azure.virtualMachines()
 
 Let's assume you want to configure and install additional software on your virtual machine after the initial deployment. You want this task to use a specific configuration, monitored and executed automatically.
 
-**Azure VM extensions** are small applications that enable you to configure and automate tasks on Azure VMs after initial deployment. **Azure VM extensions** can be run with the Azure CLI, PowerShell, Azure Resource Manager templates, and the Azure portal.
+**Azure VM extensions** are small applications that enable you to configure and automate tasks on Azure VMs after initial deployment. 
 
-You bundle extensions with a new VM deployment, or run them against an existing system.
-
+For more information, see [Azure virtual machine extensions and features](/azure/virtual-machines/extensions/overview).
 ## Azure Automation services
 
 Saving time, reducing errors, and increasing efficiency are some of the most significant operational management challenges faced when managing remote infrastructure. If you have a lot of infrastructure services, you might want to consider using higher-level services in Azure to help you operate from a higher level.

@@ -21,7 +21,7 @@ abstract: |
 prerequisites: | 
   - Visual Studio 2022 with the MAUI workload installed
   - Familiarity with C# and .NET
-iconUrl: /learn/achievements/build-mobile-and-desktop-apps.svg
+iconUrl: /training/achievements/build-mobile-and-desktop-apps.svg
 levels: 
   - beginner
 roles: 

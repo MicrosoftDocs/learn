@@ -3,8 +3,7 @@ Connect your App Service resource to your Cosmos DB resource with a connection s
 ## Copy your Cosmos DB connection string
 
 1. In Visual Studio Code, open the **Azure** pane by selecting <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>.
-1. Expand your Cosmos DB in the **Databases** section.
-1. Right-click the database and select **Copy Connection String**.
+1. In the **Resources > Concierge Subscription > App services** section, right-click the database and select **Copy Connection String**.
 1. Still in the Azure explorer, expand the **App Service** and expand your resource.
 1. Right-click **Application Settings** and select **Add New Setting**.
 1. Use the following table to create the 3 required app settings:
@@ -19,8 +18,7 @@ Connect your App Service resource to your Cosmos DB resource with a connection s
 
 Open the app in a browser. 
 
-1. In Visual Studio Code, in the Azure explorer, expand the **App Service** and expand your resource.
-1. Right-click on your resource and select **Browse Website**.
+1. In Visual Studio Code, in the Azure explorer, in the **Resources > Concierge Subscription > App services** section, right-click your web app resource and select **Browse Website**.
 1. Use the web app to add, edit, and delete rental properties. 
 
 ## Check your work

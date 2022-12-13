@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Knowledge of Python
   - Experience of training machine learning models using frameworks such as scikit-learn
-iconUrl: /learn/achievements/train-local-model-with-azure-mls-badge.svg
+iconUrl: /training/achievements/train-local-model-with-azure-mls-badge.svg
 levels:
 - beginner
 roles:

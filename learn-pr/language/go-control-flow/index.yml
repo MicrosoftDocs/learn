@@ -26,7 +26,7 @@ prerequisites: |
   - Know how to declare and initialize variables.
   - Know how to create functions.
   
-iconUrl: /learn/achievements/go/go-control-flow.svg
+iconUrl: /training/achievements/go/go-control-flow.svg
 levels: # TBC
 - beginner
 roles: # TBC
@@ -34,7 +34,6 @@ roles: # TBC
 - student
 products: 
 - azure
-- vs-code
 subjects:
 - development-tools
 units:

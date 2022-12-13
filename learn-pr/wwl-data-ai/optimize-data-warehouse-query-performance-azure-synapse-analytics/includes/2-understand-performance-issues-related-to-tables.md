@@ -27,6 +27,6 @@ Set-AzSqlDatabase -ResourceGroupName "resourcegroupname" -DatabaseName "mySample
 ```
 To view queries and their assigned performance use sys.dm_pdw_exec_requests
 > [!Note]
-> sys.dm_pdw_exec_requests is not supported by serverless SQL pool in Azure Synapse Analytics, instead use sys.dm_pdw_exec_requests
+> sys.dm_pdw_exec_requests is not supported by serverless SQL pool in Azure Synapse Analytics, instead use sys.dm_exec_requests
 
 Even with these changes, performance issue may not be resolved. The next step would be to explore other areas that will be explored later in this module to resolve the issue.

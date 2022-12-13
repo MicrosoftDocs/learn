@@ -4,10 +4,10 @@ Imagine the network administrator at Contoso is auditing the security of the ass
 
 ## Learning objectives
 
-In this module you will:
+In this module, you'll:
 
-- Investigate the ways Azure Storage protects your data
-- Explore the authentication options to access data
-- Learn about Advanced Threat Protection
-- Learn how to control network access to data
-- Explore the Azure Data Lake enterprise-class security features
+- Investigate the ways Azure Storage protects your data.
+- Explore the authentication options to access data.
+- Learn about Advanced Threat Protection.
+- Learn how to control network access to data.
+- Explore the Azure Data Lake enterprise-class security features.

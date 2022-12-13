@@ -8,7 +8,7 @@ In this unit, you'll create both development and production resources, and put t
 
 Create a resource group to act as the production resource group.
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
 1. On the home page, under **Azure services**, select **Resource groups**. The **Resource groups** pane appears.
 
@@ -26,7 +26,8 @@ Create a resource group to act as the production resource group.
 
 1. Select **Review + create**. After validation passes, select **Create**.
 
-1. Use the following quickstart template to create a virtual machine (VM) in your production resource group: [Deploy a simple Windows VM](https://azure.microsoft.com/resources/templates/vm-simple-windows/).  
+1. Use the following quickstart template to create a virtual machine (VM) in your production resource group: [Deploy a simple Windows VM](https://azure.microsoft.com/resources/templates/vm-simple-windows/).
+
 1. Select **Deploy to Azure** on the template page. The **Deploy a simple Windows VM** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
@@ -84,7 +85,7 @@ Now, use the Azure portal to apply tags to resources so you can identify and loc
 
 1. In the top menu bar, select **Assign tags**. The **Assign tags** pane appears.
 
-1. Enter the following values for each setting.
+1. Enter the following values for each setting:
 
     ![Screenshot that shows the Assign tags pane.](../media/3-assign-tags.png)
 
@@ -104,13 +105,13 @@ Now, use the Azure portal to apply tags to resources so you can identify and loc
 
 ## Filter and identify your development resources
 
-Now you'll filter your resources and find your development tagged resources.  
+Now you'll filter your resources and find your development tagged resources.
 
-1. At the top of the Azure portal, search for and select *Tags*.
+1. At the top of the Azure portal, search for and select **Tags**.
 
     ![Screenshot that shows the search for tags.](../media/3-search-tags.png)
 
-    The **Tags** pane appears.
+    The *Tags* pane appears.
 
 1. Select the **environment:development** tag.
 

@@ -15,7 +15,7 @@ abstract: |
   After completing this module, you'll be able to:
   - Validate your template's adherence to recommendations by using the ARM Template Test Toolkit.
   - Implement domain-specific rules for deployments that you can run by using the ARM Template Test Toolkit.
-iconUrl: /learn/achievements/arm-template-test.svg
+iconUrl: /training/achievements/arm-template-test.svg
 levels:
   - intermediate
 roles:

@@ -16,7 +16,7 @@ var cosmosDBDatabaseThroughput = (environmentType == 'prod') ? 1000 : 400
 var cosmosDBContainerName = 'Products'
 var cosmosDBContainerPartitionKey = '/productid'
 
-resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2020-04-01' = {
+resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2022-05-15' = {
   name: cosmosDBAccountName
   location: location
   properties: {
@@ -29,7 +29,7 @@ resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2020-04-01' = {
   }
 }
 
-resource cosmosDBDatabase 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases@2020-04-01' = {
+resource cosmosDBDatabase 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases@2022-05-15' = {
   parent: cosmosDBAccount
   name: cosmosDBDatabaseName
   properties: {

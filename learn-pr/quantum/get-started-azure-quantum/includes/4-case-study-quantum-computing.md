@@ -12,7 +12,7 @@ The following sections describe case studies in applications of quantum computin
 
 ## Quantum speedups
 
-One of the goals of quantum computing research is to study which problems can be solved by a quantum computer faster than a classical computer and how large the speedup can be. Two well-known examples are [Grover's algorithm](https://wikipedia.org/wiki/Grover%27s_algorithm?azure-portal=true) and [Shor's algorithm](https://wikipedia.org/wiki/Shor's_algorithm), as mentioned in the module [Explore the key concepts of quantum computing by using Q#](/learn/modules/qsharp-explore-key-concepts-quantum-computing/?azure-portal=true). These quantum algorithms yield a polynomial and an exponential speedup, respectively, over their classical counterparts.
+One of the goals of quantum computing research is to study which problems can be solved by a quantum computer faster than a classical computer and how large the speedup can be. Two well-known examples are [Grover's algorithm](https://wikipedia.org/wiki/Grover%27s_algorithm?azure-portal=true) and [Shor's algorithm](https://wikipedia.org/wiki/Shor's_algorithm), as mentioned in the module [Explore the key concepts of quantum computing by using Q#](/training/modules/qsharp-explore-key-concepts-quantum-computing/?azure-portal=true). These quantum algorithms yield a polynomial and an exponential speedup, respectively, over their classical counterparts.
 
 You might ask why some problems allow exponential speedup, whereas others allow only polynomial speedup. The answer lies in the structure of the input.
 
@@ -32,9 +32,9 @@ The proof technique used in [Robin Kothari et al.](https://www.microsoft.com/res
 
 Graph problems are a common source of algorithmic problems in computer science. We can study different properties of a graph, such as the shortest path between two points, or identify groups of relationships. The funny thing about theoretical proofs and mathematics is that you never know when you'll find a connection with another unsolved problem. 
 
-The query complexity of monotone graph properties remains unsolved to this day. However, their quantum analog has been resolved. If you haven't explored it already, there is a [module on solving graph coloring problems by using Grover's search](/learn/modules/solve-graph-coloring-problems-grovers-search/?azure-portal=true).
+The query complexity of monotone graph properties remains unsolved to this day. However, their quantum analog has been resolved. If you haven't explored it already, there is a [module on solving graph coloring problems by using Grover's search](/training/modules/solve-graph-coloring-problems-grovers-search/?azure-portal=true).
 
-With an understanding of the status quo of quantum computing and the future that it promises, you'll head back to the spaceship. You'll work with the communications division to run Grover's algorithm in [another Azure Quantum module](/learn/modules/run-algorithms-quantum-hardware-azure-quantum/?azure-portal=true) for assigning bandwidth ranges to space stations.
+With an understanding of the status quo of quantum computing and the future that it promises, you'll head back to the spaceship. You'll work with the communications division to run Grover's algorithm in [another Azure Quantum module](/training/modules/run-algorithms-quantum-hardware-azure-quantum/?azure-portal=true) for assigning bandwidth ranges to space stations.
 
 ## Using quantum computers to address climate change
 
@@ -68,7 +68,7 @@ One example of a cryptographic scheme is the [Rivest–Shamir–Adleman (RSA) sc
 
 [Quantum cryptography](https://wikipedia.org/wiki/Quantum_cryptography?azure-portal=true) promises information security by harnessing basic physics rather than complexity assumptions. RSA is safe today because a scalable quantum computer is not yet available. But after quantum computers are built at large scale, polynomial time quantum algorithms might attack the underlying math problems for these cryptosystems. RSA would then become unsafe.
 
-In the module [Explore the key concepts of quantum computing by using Q#](/learn/modules/qsharp-explore-key-concepts-quantum-computing/8-introduction-quantum-algorithms/?azure-portal=true), you can find an overview of Shor's algorithm application in cryptography.
+In the module [Explore the key concepts of quantum computing by using Q#](/training/modules/qsharp-explore-key-concepts-quantum-computing/8-introduction-quantum-algorithms/?azure-portal=true), you can find an overview of Shor's algorithm application in cryptography.
 
 With the anticipation of a sufficiently large and fault-tolerant quantum computer, active research is underway to:
 

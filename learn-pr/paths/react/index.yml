@@ -13,7 +13,7 @@ title: Creating your first web apps with React
 summary: | 
   React.js is the most popular front-end JavaScript framework. Through JSX, a combination of HTML and JavaScript, developers are able to create views in a natural fashion. Developers can also create components for reusable blocks across their applications. This learning path will introduce you to React, and the core skills you need as a developer to use this powerful framework.
 prerequisites: Knowledge of HTML/CSS, JavaScript, Git, npm, and some experience with React.
-iconUrl: /learn/achievements/react/react-path.svg
+iconUrl: /training/achievements/react/react-path.svg
 levels:
 - beginner
 - intermediate

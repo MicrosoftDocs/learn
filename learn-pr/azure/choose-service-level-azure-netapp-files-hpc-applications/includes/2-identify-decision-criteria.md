@@ -26,7 +26,7 @@ In the preceding example, two volumes are within capacity pool 1 and the total q
 
 ## Service levels
 
-The first important concept in determining performance with Azure NetApp Files is the service level. Service levels define the maximum throughput allowed on a normalized basis relative to volume quota. For example, with the Premium service level, you can achieve up to 64 MBs per second of throughput for every TB of quota in the volume.
+The first important concept in determining performance with Azure NetApp Files is the service level. Service levels define the maximum throughput allowed on a normalized basis relative to volume quota. For example, with the Premium service level, you can achieve up to 64 MiBs per second of throughput for every TB of quota in the volume.
 
 Azure NetApp Files offers three service levels suited to different workload types: Standard, Premium, and Ultra.
 
@@ -42,8 +42,8 @@ The gross performance limit of the volume is the product of these two factors.
 
 Let's walk through an example:
 
-- If I choose the Premium service level, I get 64 MB per second for every 1 TB of quota within the volume.
-- If I provision a volume with a 2-TB quota, that volume can deliver up to 128 MB per second of throughput.
+- If I choose the Premium service level, I get 64 MiB per second for every 1 TB of quota within the volume.
+- If I provision a volume with a 2-TB quota, that volume can deliver up to 128 MiB per second of throughput.
 
 Note that:
 

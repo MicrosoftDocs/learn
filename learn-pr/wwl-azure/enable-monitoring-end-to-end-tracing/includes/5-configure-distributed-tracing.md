@@ -4,11 +4,11 @@ Log Analytics is a tool in the Azure portal used to edit and run log queries wit
 
 To begin capturing log information, do the following procedure.
 
-1.  When configuring diagnostics settings, you can do so for multiple categories of logs. Each service exposes different categories. Use the below statement to get an overview of the log categories Spring Cloud Service exposes.
+1.  When configuring diagnostics settings, you can do so for multiple categories of logs. Each service exposes different categories. Use the below statement to get an overview of the log categories Spring Apps Service exposes.
     
     ```Bash
     az monitor diagnostic-settings categories list \
-        --resource $SPRING_CLOUD_SERVICE \
+        --resource $SPRING_APPS_SERVICE \
         -g $RESOURCE_GROUP \
         --resource-type Microsoft.AppPlatform/Spring \
         --query value[].name
@@ -23,7 +23,7 @@ To begin capturing log information, do the following procedure.
         --workspace-name $LAWORKSPACE
     ```
 
-3.  Now you create the Diagnostics Settings for your Spring Cloud Service to link to a workspace. You begin by creating the *logs.json* file and save it to the directory where you've been CLI statements.
+3.  Now you create the Diagnostics Settings for your Spring Apps Service to link to a workspace. You begin by creating the *logs.json* file and save it to the directory where you've been CLI statements.
     
     ```azurecli
     [
@@ -61,12 +61,12 @@ To begin capturing log information, do the following procedure.
     ]
     ```
 
-5.  Next, you'll use both files to create the diagnostics settings for your Spring Cloud Service. Lastly, you'll send the logs to your Log Analytics workspace.
+5.  Next, you'll use both files to create the diagnostics settings for your Spring Apps Service. Lastly, you'll send the logs to your Log Analytics workspace.
     
     ```azurecli
     az monitor diagnostic-settings create \
-        --name springcloudlogs \
-        --resource $SPRING_CLOUD_SERVICE \
+        --name springappslogs \
+        --resource $SPRING_APPS_SERVICE \
         --resource-type Microsoft.AppPlatform/Spring \
         --resource-group $RESOURCE_GROUP \
         --workspace $LAWORKSPACE \

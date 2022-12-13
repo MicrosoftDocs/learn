@@ -1,4 +1,4 @@
-Congratulations! You've completed this Learn module, and you now know how to work with files and directories in .NET.
+Congratulations! You've completed this module, and you now know how to work with files and directories in .NET.
 
 In this module, you learned how to read files and directories, create files and directories, and write data to files. Your code is going to run in fictional production at the largest fake company on the internet!
 

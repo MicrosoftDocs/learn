@@ -3,7 +3,7 @@ uid: learn.wwl.describe-ediscovery-capabilities-of-microsoft-365
 metadata:
   title: Describe the eDiscovery and audit capabilities of Microsoft Purview
   description: "Describe the eDiscovery and audit capabilities of Microsoft Purview"
-  ms.date: 07/06/2022
+  ms.date: 07/29/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
   - General understanding of Microsoft Azure and Microsoft 365.
-iconUrl: /learn/achievements/describe-the-ediscovery-capabilities-of-microsoft-365.svg
+iconUrl: /training/achievements/describe-the-ediscovery-capabilities-of-microsoft-365.svg
 levels:
 - beginner
 roles:

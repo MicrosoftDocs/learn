@@ -25,7 +25,7 @@ Each methodology listed above is part of a broad cloud adoption lifecycle. The m
 
 :::image type="content" source="../media/cloud-adoption-framework.png" alt-text="Diagram that shows the Cloud Adoption Framework stages define strategy, plan, ready, adopt, and govern and manage." lightbox="../media/cloud-adoption-framework.png":::
 
-Portions of the Cloud Adoption Framework are highlighted here. For a detailed description of the entire framework, see [Microsoft Cloud Adoption Framework for Azure](https://docs.microsoft.com/azure/cloud-adoption-framework/)
+Portions of the Cloud Adoption Framework are highlighted here. For a detailed description of the entire framework, see [Microsoft Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/)
 
 ## Define your strategy
 
@@ -78,4 +78,4 @@ The Secure methodology consists of three ways to integrate security into the lar
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWVBXs?postJsllMsg=true]
 
-For more information, see [Security in the Microsoft Cloud Adoption Framework for Azure](https://docs.microsoft.com/azure/cloud-adoption-framework/secure/)
+For more information, see [Security in the Microsoft Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/secure/)

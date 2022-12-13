@@ -8,5 +8,5 @@ In this module you've learned how to:
 
 ## Learn more
 
-- [Explore fundamentals of modern data warehousing](/learn/modules/explore-azure-synapse-analytics/)
+- [Explore fundamentals of modern data warehousing](/training/modules/explore-azure-synapse-analytics/)
 - [Azure data architecture guide](/azure/architecture/data-guide/)

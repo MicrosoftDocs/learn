@@ -32,6 +32,7 @@ Then, create your AKS cluster by running the following command in a Cloud Shell 
 az aks create \
  -g $RESOURCE_GROUP \
  -n $CLUSTER_NAME \
+ --location $LOCATION \
  --node-count 1 \
  --node-vm-size Standard_B2s \
  --generate-ssh-keys \
@@ -53,15 +54,14 @@ The complete cluster creation can take up to five minutes.
 
 According to the [application documentation](https://github.com/Azure-Samples/aks-contoso-ships-sample/tree/main/kubernetes), there are two parts of this application: the front end, and the back end. Only the back end will need to use a Secret, because it has the MongoDB connection string as an environment variable.
 
-1. The first step is to deploy a MongoDB database to support this application by using CosmosDB:
+1. The first step is to deploy a MongoDB database to support this application by using Cosmos DB:
 
     ```azurecli-interactive
     export DATABASE_NAME=contoso-ship-manager-$RANDOM && \
     az cosmosdb create \
      -n $DATABASE_NAME \
      -g $RESOURCE_GROUP \
-     --kind MongoDB \
-     --enable-free-tier
+     --kind MongoDB
     ```
 
     The database creation can take up to three minutes. Once the database is created, fetch the connection string:
@@ -83,7 +83,7 @@ According to the [application documentation](https://github.com/Azure-Samples/ak
     touch backend-secret.yaml
     ```
 
-1. Enter the following command to open the file in the editor. 
+1. Enter the following command to open the file in the editor.
 
     ```bash
     code backend-secret.yaml
@@ -227,7 +227,8 @@ Let's create the application and apply the secret to this application.
                       name: http
     ```
 
-1. Save and close the file.
+
+1. Change the DNS zone in the `host:` to match the DNS you copied earlier. Save and close the file.
 
 1. Apply the changes by running the following command:
 
@@ -235,4 +236,4 @@ Let's create the application and apply the secret to this application.
     kubectl apply -f backend-application.yaml
     ```
 
-    The changes can take up to five minutes to propagate.
+   The changes can take up to five minutes to propagate.

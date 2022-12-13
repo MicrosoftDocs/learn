@@ -156,8 +156,8 @@ Identify the subtasks of *Improve incident response with alerting on Azure*
 ## Notes
 
 Useful URLs:
-- Alerts in Azure Monitor overview - https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-overview
-- Smart groups - https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-smartgroups-overview
-- Metric alerts - https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-metric-overview
-- Log alerts - https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-unified-log
-- Activity log alerts - https://docs.microsoft.com/en-us/azure/azure-monitor/platform/activity-log-alerts
+- Alerts in Azure Monitor overview - https://learn.microsoft.com/azure/azure-monitor/platform/alerts-overview
+- Smart groups - https://learn.microsoft.com/azure/azure-monitor/platform/alerts-smartgroups-overview
+- Metric alerts - https://learn.microsoft.com/azure/azure-monitor/platform/alerts-metric-overview
+- Log alerts - https://learn.microsoft.com/azure/azure-monitor/platform/alerts-unified-log
+- Activity log alerts - https://learn.microsoft.com/azure/azure-monitor/platform/activity-log-alerts

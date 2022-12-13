@@ -30,7 +30,7 @@ To protect the main branch, enable a **branch protection rule** in GitHub:
 Whenever you want to edit the code, you'll have to create a branch and work in there. Once you want to make your changes final, you can create a pull request to merge the feature branch with the main branch. 
 
 > [!Tip]
-> Learn more about [source control for machine learning projects and working with trunk-based development.](/learn/modules/source-control-for-machine-learning-projects)
+> Learn more about [source control for machine learning projects and working with trunk-based development.](/training/modules/source-control-for-machine-learning-projects)
 
 ## Trigger a GitHub Actions workflow
 

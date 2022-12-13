@@ -14,7 +14,7 @@ prerequisites: |
   - Know how to create detections and perform investigations like you could learn from learning path SC-200: Create detections and perform investigations using Microsoft Sentinel
 summary: |
   Proactively hunt for security threats using the Microsoft Sentinel powerful threat hunting tools.  This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.
-iconUrl: /learn/achievements/perform-threat-hunting-in-azure-sentinel.svg
+iconUrl: /training/achievements/perform-threat-hunting-in-azure-sentinel.svg
 levels:
 - intermediate
 roles:

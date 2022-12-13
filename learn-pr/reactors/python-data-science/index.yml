@@ -22,7 +22,7 @@ abstract: |
 prerequisites: |
   - None
 # placeholder icon
-iconUrl: /learn/achievements/reactors/python-data-science.svg
+iconUrl: /training/achievements/reactors/python-data-science.svg
 hidden: true
 levels:
 - beginner
@@ -32,7 +32,6 @@ roles:
 - data-scientist
 products:
 - azure
-- vs-code
 subjects:
 - data-ai
 units:

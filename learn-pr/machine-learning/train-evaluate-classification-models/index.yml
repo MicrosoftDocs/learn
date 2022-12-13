@@ -17,13 +17,13 @@ abstract: |
 prerequisites: |
   - Basic mathematical concepts
   - Programming with Python
-iconUrl: /learn/achievements/train-and-evaluate-classification-models.svg
+iconUrl: /training/achievements/train-and-evaluate-classification-models.svg
 levels:
 - intermediate
 roles:
 - data-scientist
 products:
-- vs-code
+- azure
 subjects:
 - machine-learning
 - classification-analysis

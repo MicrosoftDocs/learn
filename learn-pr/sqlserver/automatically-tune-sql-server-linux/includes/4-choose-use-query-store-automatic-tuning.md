@@ -1,4 +1,4 @@
-SQL Server 2019 performance depends on many factors, including query execution plans. If the server chooses a suboptimal query plan, performance might drop and you should return to using the previous plan.
+SQL Server 2019 performance depends on many factors, including query execution plans. If the server chooses a suboptimal query plan, performance might drop, and you should return to using the previous plan.
 
 Suppose your wine import company has chosen to run SQL Server 2019 on Red Hat Enterprise Linux (RHEL) servers. These servers host your sales management database. Your team is using Azure Data Studio to investigate and display performance changes over time. You make configuration changes manually when you suspect that a bottleneck has developed.
 
@@ -48,8 +48,8 @@ In SQL Server 2019, you can also use the new automatic tuning feature. If you en
 
 You choose to enable or disable the Query Store for each database in SQL Server. Use it whenever you want to obtain full information about the performance of your queries. If you're using SQL Server Management Studio (SSMS) to administer your servers, you can use it to enable the Query Store:
 
-1. In SSMS, in the **Object Explorer**, right-click the database you wish to administer, and then click **Properties**.
-1. In the **Database Properties** dialog, click the **Query Store** page.
+1. In SSMS, in the **Object Explorer**, right-click the database you wish to administer, and then select **Properties**.
+1. In the **Database Properties** dialog, select the **Query Store** page.
 1. In the **Operation Mode (Requested)** box, select **On**.
 
 Instead, you can use Azure Data Studio or the SQLCMD tool to execute the following code, replacing the name of the database you wish to administer:

@@ -23,7 +23,7 @@ prerequisites: |
   - .NET 6.0 SDK
   - Git
   - A GitHub account
-iconUrl: /learn/achievements/azure-devops/manage-release-cadence-using-deployment-patterns.svg
+iconUrl: /training/achievements/azure-devops/manage-release-cadence-using-deployment-patterns.svg
 levels:
 - intermediate
 roles:

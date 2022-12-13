@@ -7,7 +7,7 @@ You should now be able to:
 - Configure deployment settings, specifically deployment slots.
 - Secure the App Service.
 - Configure custom domain names
-- Backup the App Service.
+- Back up the App Service.
 - Configure Application Insights.
 
 ## Learn more
@@ -15,6 +15,6 @@ You should now be able to:
 You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
 
 - [Azure App Service Overview](/azure/app-service/)
-- [Learn - Host a web application with Azure App Service (Sandbox)](/learn/modules/host-a-web-app-with-azure-app-service/)
-- [Learn - Stage a web app deployment for testing and rollback by using App Service deployment slots](/learn/modules/stage-deploy-app-service-deployment-slots/)
-- [Learn - Dynamically meet changing web app performance requirements with autoscale rules](/learn/modules/app-service-autoscale-rules/)
+- [Host a web application with Azure App Service (Sandbox)](/training/modules/host-a-web-app-with-azure-app-service/)
+- [Stage a web app deployment for testing and rollback by using App Service deployment slots](/training/modules/stage-deploy-app-service-deployment-slots/)
+- [Dynamically meet changing web app performance requirements with autoscale rules](/training/modules/app-service-autoscale-rules/)

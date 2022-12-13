@@ -141,7 +141,7 @@ The query partitions products into groupings based on their categories, and with
 
 ## Retrieving an approximate count
 
-While th purpose of a data warehouse is primarily to support analytical data models and reports for the enterprise; data analysts and data scientists often need to perform some initial data exploration, just to determine the basic scale and distribution of the data.
+While the purpose of a data warehouse is primarily to support analytical data models and reports for the enterprise; data analysts and data scientists often need to perform some initial data exploration, just to determine the basic scale and distribution of the data.
 
 For example, the following query uses the `COUNT` function to retrieve the number of sales for each year in a hypothetical data warehouse:
 

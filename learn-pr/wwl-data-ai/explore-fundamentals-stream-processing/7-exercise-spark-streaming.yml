@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-fundamentals-of-stream-processing.exercise-process-streaming-data-using-spark
-title: 'Exercise: Process streaming data using Spark'
+title: 'Exercise: Explore Spark Streaming in Azure Synapse Analytics'
 metadata:
-  title: 'Exercise: Process streaming data using Spark'
-  description: "Exercise: Process streaming data using Spark"
-  ms.date: 06/10/2022
+  title: 'Exercise: Explore Spark Streaming in Azure Synapse Analytics'
+  description: "Exercise: Explore Spark Streaming in Azure Synapse Analytics"
+  ms.date: 08/31/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial

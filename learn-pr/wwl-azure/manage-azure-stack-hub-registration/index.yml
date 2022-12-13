@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   * Working experience creating, assigning, and securing corporate identities.
   * Conceptual knowledge of identity assignment solutions, role-based access control, and identity protection methods.
-iconUrl: /learn/achievements/3-manage-azure-stack-hub-registration.svg
+iconUrl: /training/achievements/3-manage-azure-stack-hub-registration.svg
 levels:
 - advanced
 roles:

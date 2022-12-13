@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Visual Studio 2022 with the MAUI workload installed
   - Familiarity with C# and .NET
-iconUrl: /learn/achievements/create-multi-page-apps.svg
+iconUrl: /training/achievements/create-multi-page-apps.svg
 levels: 
   - beginner
 roles: 

@@ -1,62 +1,45 @@
-Azure Storage provides a layered security model. This model enables you to secure and control the level of access to your storage accounts. In this unit, we’ll cover some best practices for storage security. 
+Azure Storage provides a layered security model that lets you secure and control the level of access to your storage accounts. The model consists of several storage security options, including firewall policies, customer-managed keys, and endpoints.
 
-:::image type="content" source="../media/storage-security.png" alt-text="Firewall policies, customer-managed keys, and endpoints.":::
+:::image type="content" source="../media/storage-security.png" alt-text="Diagram that shows storage security options, including firewall policies, customer-managed keys, and endpoints." border="false":::
 
+### Things to know about storage security
 
-### Grant limited access to Azure Storage resources 
+Let's take a look at some best practices for storage security. Think about options can be used for the Tailwind Traders infrastructure.
 
-The [Azure security baseline for Azure Storage baseline](/security/benchmark/azure/baselines/storage-security-baseline#data-protection) provides a comprehensive list of ways to secure your Azure storage. 
+- [Azure security baseline for Azure Storage](/security/benchmark/azure/baselines/storage-security-baseline) grants limited access to Azure Storage resources. Azure security baseline provides a comprehensive list of ways to secure your Azure storage. 
 
-### Use Shared Access Signatures
+- [Shared access signatures](/azure/storage/common/storage-sas-overview) provide secure delegated access to resources in your storage account. With a SAS, you have granular control over how a client can access your data.
 
-One of the most common ways is to use a [Shared Access Signature](/azure/storage/common/storage-sas-overview). A SAS provides secure delegated access to resources in your storage account. With a SAS, you have granular control over how a client can access your data. For example:
+- [Firewall policies and rules](/azure/storage/common/storage-network-security) limit access to your storage account. Requests can be limited to specific IP addresses or ranges, or to a list of subnets in an Azure virtual network. The Azure Storage firewall provides access control for the public endpoint of your storage account.
 
-- What resources the client may access.
+- [Virtual network service endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview) restrict network access and provide direct connection to your Azure storage. You can secure storage accounts to your virtual network, and enable private IP addresses in the virtual network to reach the service endpoint. With [private endpoints](/azure/storage/common/storage-private-endpoints), you can create a special network interface for an Azure service in your virtual network.
 
-- What permissions they have to those resources.
+- [Secure transfer](/azure/storage/common/storage-require-secure-transfer) enables an Azure storage account to accept requests from secure connections. When you require secure transfer, any requests originating from non-secure connections are rejected. Microsoft recommends that you always require secure transfer for all your storage accounts.
 
-- How long the SAS is valid.
+- Data in your storage account is automatically encrypted. Azure Storage encryption offers two ways to manage encryption keys at the storage account level:
 
-### Enable firewall policies and rules
+  - Microsoft-managed keys: By default, Microsoft manages the keys used to encrypt your storage account.
 
-- [Configure firewall rules](/azure/storage/common/storage-network-security?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal) to limit access to your storage account. Requests can be limited to specific IP addresses or ranges, or to a list of subnets in an Azure virtual network. The Azure storage firewall provides access control for the public endpoint of your storage account. You can also use the firewall to block all access through the public endpoint when using private endpoints. Your storage firewall configuration also enables select trusted Azure platform services to access the storage account securely.
+  - Customer-managed keys: You can optionally choose to manage encryption keys for your storage account. [Customer-managed keys](/azure/storage/common/storage-encryption-key-model-get) must be stored in Azure Key Vault.
 
-### Restrict network access using service endpoints
+### Things to consider when implementing storage security
 
-Use [virtual network service endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview) to provide direct connection to your Azure storage. 
+You've reviewed some of the security options for Azure Storage. Take a few minutes to determine how you can configure security for Tailwind Traders.
 
-:::image type="content" source="../media/storage-endpoints.png" alt-text="A virtual machine uses an endpoint to access a storage account.":::
+- **Consider Azure security baseline options**. Review the comprehensive options provided by Azure security baseline provides to secure your Azure storage. Grant limited access to Azure Storage resources. 
 
+- **Consider shared access signatures**. Specify what Tailwind Traders resources clients can access. Define the access permissions for resources. Configure how long the SAS remains valid.
 
+- **Consider firewall policies and rules**. Limit requests to IP addresses or subnets in an Azure virtual network. Use the Azure Storage firewall to block all access through the public endpoint when using private endpoints. Select trusted Azure platform services to access the storage account securely.
 
-Service endpoints provide several advantages. 
+- **Consider service endpoints**. Secure Azure storage accounts to your virtual networks by using service endpoints. You can provide optimal routing by always keeping traffic destined to Azure Storage on the Azure backbone network. Enable private IP addresses in the virtual network to reach the service endpoint without requiring a public IP address. Allow on-premises networks to access resources by using NAT IP addresses.
 
-- Allows you to secure Azure storage accounts to your virtual networks.
+   :::image type="content" source="../media/storage-endpoints.png" alt-text="Diagram of a virtual machine that uses an endpoint to access an Azure storage account." border="false":::
 
-- Provides optimal routing by always keeping traffic destined to Azure Storage on the Azure backbone network.
+- **Consider private endpoints**. Add private endpoints to create a special network interface for an Azure service in your virtual network. When you implement a private endpoint for your storage account, it provides secure connectivity between clients on your virtual network and your storage.
 
-- Service Endpoints enable private IP addresses in the VNet to reach the service endpoint. A public IP address isn’t needed.
+   :::image type="content" source="../media/private-links.png" alt-text="Diagram of a private endpoint that uses a private link to Azure storage accounts." border="false":::
 
-- Enables on-premises networks to access resources using NAT IP addresses. 
+- **Consider secure transfer**. (Microsoft recommended) Always require secure transfer for all your Azure storage accounts. In the Azure portal, choose **Enable secure transfer** for your storage accounts. The `Secure transfer required` property is enabled by default when an Azure storage account is created.
 
-### Determine when to use private endpoints
-
-A [private endpoint](/azure/storage/common/storage-private-endpoints) is a special network interface for an Azure service in your virtual network. When you create a private endpoint for your storage account, it provides secure connectivity between clients on your VNet and your storage.
-
- 
-
-:::image type="content" source="../media/private-links.png" alt-text="A private endpoint uses a private link to storage accounts.":::
-
-
-
-### Enable secure transfer
-
-You can configure your storage account to accept requests from secure connections. This is done by setting the [Secure transfer required](/azure/storage/common/storage-require-secure-transfer) property for the storage account. When you require secure transfer, any requests originating from non-secure connections are rejected. Microsoft recommends that you always require secure transfer for all your storage accounts.
-
-### Use customer-managed encryption keys
-
-Data in your storage account is automatically encrypted. Azure Storage encryption offers two options for managing encryption keys at the level of the storage account:
-
-- **Microsoft-managed keys.** By default, Microsoft manages the keys used to encrypt your storage account.
-
-- **Customer-managed keys.** You can optionally choose to manage encryption keys for your storage account. [Customer-managed keys](/azure/storage/common/storage-encryption-key-model-get?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=portal) must be stored in Azure Key Vault. When you bring-your-own-key (BYOK), you gain full control over who can use the encryption keys and who can access the encrypted data.
+- **Consider customer-managed keys**. Manage encryption keys for your storage account by using customer-managed keys stored in Azure Key Vault. Customer-managed keys give you full control over access to your encryption keys and encrypted data.

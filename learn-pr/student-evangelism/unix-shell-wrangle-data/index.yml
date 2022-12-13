@@ -23,7 +23,7 @@ abstract: |
   - Use pipes and filters for data wrangling.
 prerequisites: |
   - Basic knowledge of the command line and basic shell commands
-iconUrl: /learn/achievements/student-evangelism/unix-shell-wrangle-data.svg
+iconUrl: /training/achievements/student-evangelism/unix-shell-wrangle-data.svg
 levels:
   - beginner
 roles:
@@ -32,7 +32,7 @@ roles:
   - data-engineer
   - developer
 products:
-  - vs-code
+  - azure
 subjects:
 - data-engineering
 units:

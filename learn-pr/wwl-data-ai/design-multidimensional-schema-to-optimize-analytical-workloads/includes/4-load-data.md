@@ -131,7 +131,7 @@ While the scripted loop approach can be an effective way to populate a time dime
 
 ### Updating dimension tables
 
-So far we've explored how to inert new dimension data. However, in many data warehouses you need to handle updates to dimension data and support what are commonly referred to as *slowly changing dimensions* (SCDs).
+So far we've explored how to Insert new dimension data. However, in many data warehouses you need to handle updates to dimension data and support what are commonly referred to as *slowly changing dimensions* (SCDs).
 
 There are multiple kinds of slowly changing dimension, of which three are commonly implemented:
 

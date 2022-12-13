@@ -16,7 +16,7 @@ abstract: |
   - Use Gatsby to create a static web app
   - Add data to a page in the app with a GraphQL query
   - Deploy your app to the web with Azure Static Web Apps
-iconUrl: /learn/achievements/static-apps-gatsby.svg
+iconUrl: /training/achievements/static-apps-gatsby.svg
 levels:
 - beginner
 roles:

@@ -20,7 +20,7 @@ prerequisites: |
   - Experience using PowerShell to administer Windows Server
   - Ability to create and edit PowerShell scripts
   - Ability to enable remote management and connect to a remote system
-iconUrl: /learn/achievements/windows-just-enough-administration.svg
+iconUrl: /training/achievements/windows-just-enough-administration.svg
 levels:
 - intermediate
 roles:

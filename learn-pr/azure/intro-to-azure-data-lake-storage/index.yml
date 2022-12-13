@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of Azure, including Azure virtual networks and Azure virtual machines.
   - Basic knowledge of big data concepts, including ingestion, blob storage, processing, and visualization.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:

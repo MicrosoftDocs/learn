@@ -19,7 +19,7 @@ summary: |
     - Build a message decoder program
     - Create a personality quiz to determine your super sleuth character
   
-  <strong>No coding experience is required to complete this Microsoft Learn learning path.</strong>
+  <strong>No coding experience is required to complete this learning path on Microsoft Learn.</strong>
   
   After you complete this learning path, you'll have a great foundation to build on in later Python learning paths.
   
@@ -28,7 +28,7 @@ summary: |
   
 prerequisites: |
   None.
-iconUrl: /learn/achievements/python-partnership.svg
+iconUrl: /training/achievements/python-partnership.svg
 levels:
 - beginner
 roles:
