@@ -7,19 +7,19 @@ Begin by looking at the health model structure and proceed top-to-bottom through
 - *When is "List catalog items" healthy?*, *Can it operate in a degraded state?*
 - *When is "Add comment" healthy?*, *Can it operate in a degraded state?*
 
-Based on the implementation and functional requirements, neither of the user flows can operate without its underlying services. Not even in degraded mode. We can conclude that:
+Based on the implementation and functional requirements, neither of the user flows can operate without its underlying services. Not even in degraded mode. So,
 
 - The health state of **List catalog items** user flow reflects the health of the **frontend web application**, and the **Catalog API**.
 - The health state of **Add comment** user flow reflects the health of the **frontend web application**, the **Catalog API**, and **Background Processor**.
 
-If any of these dependencies become unhealthy, the user flow should become unhealthy.
+If any of these dependencies become unhealthy, the user flow is expected to become unhealthy.
 
 > [!NOTE]
 > Some applications can operate in a special "degraded" mode. For example, implementing local browser caching would allow creating comments, but not sending them until the Catalog API becomes healthy (which the browser can continuously check).
 
 ## Application components
 
-Health states of application components are based on a combination of application metrics (for example, number of exceptions and response time) and service metrics. Application components also typically depend on Azure resources (or even other components), so those define the health state too.
+Health states are based on a combination of application metrics. For example, number of exceptions, response time, and service metrics. Application components can have dependencies on Azure resources and even other components). Factor in those health states too.
 
 Defining metrics and thresholds for application components requires knowledge and understanding of their functionality. Ask questions like:
 
@@ -39,7 +39,7 @@ This stage is mostly about experience with running the system and understanding 
 
 ## Health states and thresholds
 
-In the end you should have a list of components, along with their health state definition. The format is up to the learner to choose, for example:
+In the end you should have a list of components, along with their health state definition. Your heath states representation should look similar to this example:
 
 | Component | Indicator/metric | Healthy | Degraded | Unhealthy |
 | --------- | ---------------- | ------- | -------- | --------- |

@@ -38,4 +38,4 @@ Users with any of the following roles typically design and use a health model:
 
 ## How to get started
 
-The process of modeling health is a top-down design activity, based on deep understanding of the system and its expected performance. It starts with defining all user flows and mapping dependencies between functional and logical components, thereby implicitly mapping dependencies between Azure resources.
+To do the health modeling exercise, you must have a deep understanding of the system and its expected performance. Start by defining all user flows and mapping dependencies between functional and logical components. Also map out the dependencies between Azure resources.

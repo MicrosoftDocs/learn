@@ -14,7 +14,7 @@ A *unified data sink* is required to ensure all operational data is stored and m
 
 ![Diagram showing an example of application health data collection.](../media/mission-critical-health-data-collection.png)
 
-When you use Application Insights with one of the supported SDKs, the key benefit is transparent end-to-end tracing. It's important to be able to track requests from the client through all layers of the system. 
+Using Application Insights with one of the supported SDKs is highly recommended. The key benefit is transparent end-to-end tracing because you'll be able to track requests from the client through all layers of the system. 
 
 *For example, when a user creates a comment in their web-browser, the operator is able to find this operation in Application Insights and see that the request went through the Catalog API to Event Hub, where it was picked up by the Background Processor and stored in Cosmos DB.*
 
@@ -131,7 +131,7 @@ Azure Monitor provides an extensive alerting framework to detect, categorize, an
 
 ## Use dashboards for visualization
 
-Essential part of health modeling is visually representing the health model and the data it continously collects. Operators need to be able to see the dependency tree and understand quickly the effect of a component outage on the whole system. The ultimate goal of a health model is to facilitate swift diagnosis by providing informed view into deviations from steady state.
+You must visualize your health model and the data it continuously collects. Operators will be able to see the dependency tree and understand quickly the effect of a component outage on the whole system. The ultimate goal of a health model is to facilitate swift diagnosis by providing informed view into deviations from steady state.
 
 A common way to visualize system health information is to use dashboards as a way to combine the layered health model view with telemetry drill-down capabilities if needed.
 
