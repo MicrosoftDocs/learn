@@ -5,6 +5,7 @@ metadata:
   description: Introduction to blockchain on Azure. See how blockchain allows business partners to trust each other's data without a central authority. You'll also learn a bit about how blockchain works. The goal is to help you decide if blockchain is a good choice for your scenario.
   ms.date: 12/12/2022
   author: meaghanlewis
+  manager: eliotgra
   ms.author: mosagie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
