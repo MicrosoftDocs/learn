@@ -4,10 +4,10 @@ In this module, you will plan your line-of-business application registration str
 
 In this module, you will:
 
-- Plan your line-of-business application registration strategy.
-- Implement application registrations.
-- Configure application permissions.
-- Establish and maintain an application governance process.
+ -  Plan your line-of-business application registration strategy.
+ -  Implement application registrations.
+ -  Configure application permissions.
+ -  Establish and maintain an application governance process.
 
 ## Prerequisites
 
