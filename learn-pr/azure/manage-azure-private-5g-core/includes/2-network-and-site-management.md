@@ -11,26 +11,38 @@ Azure Private 5G Core allows you to divide a private mobile network into multipl
 You can create new slices when you set up a private mobile network or modify existing slices after the network setup.
 
 <!-- Need to verify the instructions before publication -->
-For slice, you'll need to configure the following information:
+For each slice, you need to configure the following fields:
 
-- Slice name
-- Slice service type (SST)
-- Slice differentiator (SD)
+- Slice name: The name of the slice.
 
-To add a slice when you create a new private mobile network, specify appropriate values for fields in the **Slice configuration** section of the network creation screen.
+  In a private mobile network, slice names must be unique.
+
+- Slice service type: The service type of the slice.
+
+  Valid values are 0 to 255, with 0-127 reserved for standards defined usages. For example, `1` is for Enhanced Mobile Broadband (eMBB) and `3` is for Massive Internet of Things (MIoT).
+
+- Slice differentiator: Optional. A differentiator that helps identify slices of the same slice service type.
+
+  Valid values are 0 to 16777216. For example, while two slices may both have `1` (eMBB) as the value of its service type, their slice differentiators are different, with one being `1` and the other being `2`, which identifies each slice uniquely.
+
+For more information about these fields, refer to relevant 5G standards.
 
 To add or modify a slice for an existing private mobile network, take these steps:
 
 1. On the Azure portal, open the **Mobile Network** resource representing the private mobile network.
-1. Go to the slice details screen.
+1. Go to the slice details screen, as shown below:
+
+   :::image type="content" source="../media/slice-details.png" alt-text="A screenshot that shows an example slice details screen." border="true":::
+
+1. Proceed with one of the following options:
 
    - To create a new slice, select **Create** and then specify appropriate slice information.
-   - To modify a slice, select the slice that you want to modify and then change the slice information appropriately.
+   - To modify a slice, select the slice that you want to modify and then select **Modify the selected slice**.
    - To delete a slice, select the slice that you want to delete and then select **Delete**.
 
 > [!NOTE]
 >
-> - In a private mobile network, slice names must be unique.
+> - Network slices are only supported in 5G networks.
 > - You can't delete a slice that is currently used by other components.
 
 For detailed instructions on configuring network slices, see the relevant information in the [Azure Private 5G Core documentation](/azure/private-5g-core/).
@@ -45,7 +57,7 @@ To modify the packet core instance in a site, take these steps:
 1. Select the **Packet Core Control Plane** resource and open it.
 1. On the **Overview** screen, select **Modify packet core**.
 
-   The **Configuration** screen is displayed, as illustrated below:
+   The **Configuration** screen is displayed, as shown below:
 
    :::image type="content" source="../media/modify-packet-core-configuration.png" alt-text="A screenshot that shows an example packet core configuration screen." border="true":::
 
