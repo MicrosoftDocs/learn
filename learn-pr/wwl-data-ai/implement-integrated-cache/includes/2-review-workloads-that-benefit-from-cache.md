@@ -3,7 +3,7 @@ Point operations and queries consume request units (RU/s) when they are performe
 As a developer, it can be tempting to write a custom cache client in code, but you have to consider multiple things:
 
 - First, you must route all requests through your custom cache. You would be responsible for scaling out your cache compute to levels that can keep up with Azure Cosmos DB’s scale
-- You will need to handle cache invalidation when items or updated or deleted
+- You will need to handle cache invalidation when items updated or deleted
 - You will also need to increase the complexity of operations that create one or more new items
 
 For all of these reasons, an integrated in-memory cache in Azure Cosmos DB is a viable solution. As a developer, you will get the benefits of caching without the complexities of implementing the cache yourself.
