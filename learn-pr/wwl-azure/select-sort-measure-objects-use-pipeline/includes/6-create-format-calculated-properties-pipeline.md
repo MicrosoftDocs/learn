@@ -62,8 +62,8 @@ To improve the output, make the following change:
 Get-Process |
 Select-Object Name,
               ID,
-              @{n='VirtualMemory(MB)';e={'{0:N2}' –f ($PSItem.VM / 1MB) }},
-              @{n='PagedMemory(MB)';e={'{0:N2}' –f ($PSItem.PM / 1MB) }}
+              @{n='VirtualMemory(MB)';e={'{0:N2}' –f ($PSItem.VM / 1MB) -as [Double] }},
+              @{n='PagedMemory(MB)';e={'{0:N2}' –f ($PSItem.PM / 1MB) -as [Double] }}
 ```
 
 This example uses the Windows PowerShell **-f** formatting operator. When used with a string, the **-f** formatting operator instructs Windows PowerShell to replace one or more placeholders in the string with the specified values that follow the operator.

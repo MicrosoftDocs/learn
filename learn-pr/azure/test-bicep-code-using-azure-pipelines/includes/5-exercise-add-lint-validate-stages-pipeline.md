@@ -11,7 +11,7 @@ During the process, you'll:
 
 ## Update your pipeline to prepare for stages
 
-First, you need to update your pipeline file to define a stage. Azure Pipelines automatically creates a single stage for you. But because you'll add more stages soon, you need to update your pipeline to explicitly define stages.
+First, you need to update your pipeline file to define a stage. Azure Pipelines automatically creates a single stage for you, but because you'll add more stages soon, you need to update your pipeline to explicitly define stages.
 
 1. In Visual Studio Code, open the _azure-pipelines.yml_ file in the _deploy_ folder.
 
@@ -152,7 +152,7 @@ Now that you've identified the problem, you can fix it in your Bicep file.
 
 ## Fix the validation error
 
-You've found another problem in the Bicep file. Here, you fix the problem.
+You've found another problem in the Bicep file. Here, you'll fix the problem.
 
 1. In Visual Studio Code, open the _main.bicep_ file in the _deploy_ folder.
 
