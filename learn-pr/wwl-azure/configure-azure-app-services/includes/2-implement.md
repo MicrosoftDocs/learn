@@ -6,7 +6,7 @@ App Service provides Quickstarts for several products to help you easily create 
 
 ### App Service benefits
 
-There are many advantages to using App Service to develop and deploy your web, mobile, and API apps. Review the following table and think about what features can help you host your website and web apps.
+There are many advantages to using App Service to develop and deploy your web, mobile, and API apps. Review the following table and think about what features can help you host your App Service instances.
 
 | Benefit | Description |
 | --- | --- |

@@ -4,7 +4,7 @@ The Azure portal provides out-of-the-box continuous integration and deployment w
 
 ### Things to know about continuous deployment
 
-When you create your web app with App Service, you can choose automated or manual deployment. As you review these options, consider which deployment method to implement for your web apps and website.
+When you create your web app with App Service, you can choose automated or manual deployment. As you review these options, consider which deployment method to implement for your App Service apps.
 
 - **Automated deployment** (continuous integration) is a process used to push out new features and bug fixes in a fast and repetitive pattern with minimal impact on end users. Azure supports automated deployment directly from several sources:
 

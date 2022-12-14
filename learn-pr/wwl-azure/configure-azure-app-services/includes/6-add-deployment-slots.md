@@ -21,7 +21,7 @@ Let's review some details about how deployment slots are configured.
 
 #### Swapped settings versus slot-specific settings
 
-The following table lists the settings that are swapped between deployment slots, and settings that remain in the source slot (slot-specific). As you review these settings, consider which features are required for your web apps and website.
+The following table lists the settings that are swapped between deployment slots, and settings that remain in the source slot (slot-specific). As you review these settings, consider which features are required for your App Service apps.
 
 | Swapped settings | Slot-specific settings | 
 | --- | --- |

@@ -8,7 +8,7 @@ Watch the following video on how to configure a backup for your App Service inst
 
 ### Things to know about Backup and Restore
 
-Examine the following details about the Backup and Restore feature. Think about how you can implement this feature for your web app or site.
+Examine the following details about the Backup and Restore feature. Think about how you can implement this feature for your App Service apps.
 
 - To use the Backup and Restore feature, you need the Standard or Premium tier App Service plan for your app or site.
 

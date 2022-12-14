@@ -1,10 +1,8 @@
 Azure Architects are interested in solutions that make it easier to deploy and manage their web, mobile, and API applications.
 
-Suppose you're building a website for a new business, or running an existing web app on an aging on-premises server. Setting up a new server can be challenging. You need appropriate hardware, and likely a server-level operating system. You also need a web hosting stack.
+In this module, your company is doing consumer research, and your team manages the on-premises servers. The servers you administer run the entire company infrastructure from web servers to databases. However, the hardware is aging and starting to struggle to keep up with some of the new data analysis applications being deployed.
 
-After your hardware is running, you need to maintain the server. You need a strategy to support traffic increases on your website. You might need to invest in extra hardware to support the extra load.
-
-You're investigating how to use Azure App Service to host your website and web apps. You expect that deploying and managing your web app with Azure App Service will be easier than managing a physical server.
+Rather than upgrade the hardware, the company has decided to deploy Azure App Service where possible. As the administrator, you're responsible for deploying App Service. Your tasks include app configuration settings, deployment slots, security settings, and custom domain names. You're also responsible for application backup, recovery, and monitoring.
 
 ## Learning objectives
 

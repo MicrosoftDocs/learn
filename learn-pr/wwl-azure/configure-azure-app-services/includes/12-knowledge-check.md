@@ -1,8 +1,8 @@
 You're developing a strategy to implement web apps for your company by using Azure App Service. Various teams in your organization have submitted requests for your consideration as part of the implementation plan.
 
-- The Admin team needs information about cloning configurations across deployment slots.
+- The Production team needs information about cloning configurations across deployment slots.
 
-- The Marketing team needs to know which web pages are most popular, at what times of day, and where users are located.
+- The Marketing team needs to know which research web pages are most popular, at what times of day, and where users are located.
 
 - You're investigating automated deployment sources.
 

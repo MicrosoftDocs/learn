@@ -16,7 +16,7 @@ Let's take a closer look at the characteristics of deployment slots.
 
 ### Things to consider when using deployment slots
 
-There are several advantages to using deployment slots with your App Service app. Review the following benefits and think about how they can support your web apps and website.
+There are several advantages to using deployment slots with your App Service app. Review the following benefits and think about how they can support your App Service implementation.
 
 - **Consider validation**. You can validate changes to your app in a staging deployment slot before swapping the app changes with the content in the production slot.
 

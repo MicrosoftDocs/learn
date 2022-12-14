@@ -23,7 +23,7 @@ Let's take a closer look at how App Service helps you provide security for your 
 
 ### Things to consider when using App Service for app security
 
-You configure authentication and authorization security in App Service by selecting features In the Azure portal. Review the following options and think about what security can benefit your web apps and website.
+You configure authentication and authorization security in App Service by selecting features In the Azure portal. Review the following options and think about what security can benefit your App Service apps implementation.
 
 - **Allow Anonymous requests (no action)**. Defer authorization of unauthenticated traffic to your application code. For authenticated requests, App Service also passes along authentication information in the HTTP headers. This feature provides more flexibility for handling anonymous requests. With this feature, you can present multiple sign-in providers to your users.
 
