@@ -16,7 +16,7 @@ The topology capability of Azure Network Watcher allows you to view all of the f
 - Virtual network gateways
 - VPN gateway connections
 - Virtual machines
-- Virtual machine scale sets
+- Virtual Machine Scale Sets
 
 All resources returned in a topology have the following properties:
 
