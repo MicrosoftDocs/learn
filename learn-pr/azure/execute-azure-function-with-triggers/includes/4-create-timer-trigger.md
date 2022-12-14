@@ -4,8 +4,6 @@ In this unit, we create an Azure Function app that's invoked every 20 seconds us
 
 Let’s start by creating an Azure Function App in the portal.
 
-::: zone pivot="csharp"
-
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. Under **Azure services**, select **Create a resource**.
