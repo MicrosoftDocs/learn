@@ -11,15 +11,15 @@ After you've decided to use a DSVM to explore your domain, you need to decide wh
 There are two DSVM images:
 
 * Windows Server 2019
-* Ubuntu Server 18.04 LTS
+* Ubuntu Server 20.04 LTS
 
-Both images contain a variety of tools for data science and deep learning. If you're a Python programmer, you can use Visual Studio Code or PyCharm to program PyTorch, TensorFlow, and ONNX. If you use R, there's RStudio. C#, TypeScript, and F# users can use Visual Studio Code or, on the Windows image, Visual Studio to program ML.NET and SQL Server to store and retrieve their data.
+Both images contain various tools for data science and deep learning. If you're a Python programmer, you can use Visual Studio Code or PyCharm to program PyTorch, TensorFlow, and ONNX. If you use R, there's CRAN-R. C#, TypeScript, and F# users can use Visual Studio Code. On the Windows image, they can use Visual Studio to program ML.NET and SQL Server to store and retrieve their data.
 
 Jupyter is installed on both machines with multiple language kernels. On the Ubuntu image, JupyterHub is installed to provide multiuser access.
 
 ## Processor, RAM, and disk choices
 
-Azure virtual machines come in a variety of sizes, grouped by type:
+Azure virtual machines come in various sizes, grouped by type:
 
 | Type | Characteristics |
 | - |- |
