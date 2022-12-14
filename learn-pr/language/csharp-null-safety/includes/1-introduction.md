@@ -1,12 +1,12 @@
-In this module, you'll gain an understanding of nullability in C#. You'll use null state analysis and compiler warnings to check code for null safety.
+In this module, you'll gain an understanding of nullability in C#. You'll use null-state analysis and compiler warnings to check code for null safety.
 
 ## Example scenario
 
-Suppose you're an employee of a pizza company named Contoso Pizza. Your manager has asked you to maintain an existing .NET console app that's part of the ordering system. You've decided to enforce _null safety_ in the app using nullable reference types.
+Suppose you're an employee of a pizza company named Contoso Pizza. Your manager has asked you to maintain an existing .NET console app that's part of the ordering system. You've decided to enforce *null safety* in the app using nullable reference types.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Learn how to configure the nullable context of your C# project or code.
 - Use a nullable-enabled context to perform automatic static flow analysis.

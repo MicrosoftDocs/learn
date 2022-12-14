@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-model-batch-endpoint.explore-batch-endpoints
+title: Understand and create batch endpoints
+metadata:
+  title: Understand and create batch endpoints
+  description: "Understand and create batch endpoints"
+  ms.date: 11/24/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-explore-batch-endpoints.md)]

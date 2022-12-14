@@ -6,6 +6,7 @@ metadata:
   description: Learn how to use logging, tracing, and assertions in .NET applications.
   author: alexwolfmsft
   ms.author: alexwolf
+  manager: jmartens
   ms.date: 3/16/2022
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
