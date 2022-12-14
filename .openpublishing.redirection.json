@@ -15871,6 +15871,61 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/index.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/1-introduction.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/2-authorize-api.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/3-exercise-authorize-api.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/4-manage-devices.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/5-exercise-manage-devices.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/6-control-devices.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/7-exercise-control-devices.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/8-use-jobs.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/9-exercise-use-jobs.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/10-summary.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/dotnet-maui/use-shared-resources/1-introduction.md",
       "redirect_url": "/training/modules/use-shared-resources/1-introduction",
       "redirect_document_id": true
