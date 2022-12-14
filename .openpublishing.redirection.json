@@ -19459,6 +19459,11 @@
       "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/4-exercise-create-streaming-data-input.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/8-exercise-visualize-results-power-bi.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
     }
   ]
 }
