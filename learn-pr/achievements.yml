@@ -1412,4 +1412,8 @@ achievements:
   title: Introduction to Text-to-speech
   summary: Text-to-speech converts text into human-like speech, along with the ability to create a unique, custom voice to use in your applications.
   iconUrl: /training/achievements/intro-to-text-to-speech.svg
-  
+- uid: learn.wwl.ingest-data-streams-with-azure-stream-analytics.badge
+  type: badge
+  title: Ingest data streams with Azure Stream Analytics
+  summary: Learn how to create Azure Stream Analytics jobs to process input data, transform it with a query, and return results.
+  iconUrl: /training/achievements/azure-stream-analytics-ingest-data-streams.svg

@@ -19429,6 +19429,121 @@
       "source_path": "learn-pr/wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/7-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/plan-design-integration-of-enterprise-apps-for-sso/9-knowledge-check",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-app-registration/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-app-registration/10-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-app-registration/10-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-app-registration/11-summary-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/implement-app-registration/8a-manage-monitor-application-app-governance.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-app-registration/9-manage-monitor-application-app-governance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/plan-implement-entitlement-management/8-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-entitlement-management/10-summary-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/plan-implement-entitlement-management/6a-configure-manage-connected-organizations.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-entitlement-management/7-configure-manage-connected-organizations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/plan-implement-entitlement-management/6b-review-per-user-entitlements.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-entitlement-management/8-review-per-user-entitlements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/plan-implement-entitlement-management/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-entitlement-management/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/plan-implement-privileged-access/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-privileged-access/10-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/plan-implement-privileged-access/10-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-privileged-access/11-summary-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/plan-implement-privileged-access/6a-plan-configure-privileged-access-groups.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-privileged-access/7-plan-configure-privileged-access-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/plan-implement-privileged-access/7-analyze-privileged-identity-management-audit-history-reports.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-privileged-access/8-analyze-privileged-identity-management-audit-history-reports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/plan-implement-privileged-access/8-create-manage-emergency-access-accounts.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-privileged-access/9-create-manage-emergency-access-accounts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/6-describe-windowing-functions.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/5-exercise-create-power-bi-output.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/7-exercise-create-query-using-tumbling-windows.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/4-exercise-create-streaming-data-input.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/8-exercise-visualize-results-power-bi.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/3-process-streaming-data-azure-stream-analytics.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/2-understand-stream-processing.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
     }
   ]
 }

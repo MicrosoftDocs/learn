@@ -2,7 +2,7 @@ Azure Load Balancer is best suited for applications that require ultra-low laten
 
 Because Load Balancer operates at Layer 4 like hardware devices that were used on-premises before the organization migrated to Azure, you can use Load Balancer to replicate that hardware device functionality. This includes using health probes to ensure that Load Balancer doesn't forward traffic to failed VM nodes and using session persistence to ensure that clients only communicate with a single VM during a session.
 
-You can configure public both load balancers for front-end traffic to web tiers of applications and internal load balancers to balance traffic between the web tier and the tier that performs data analysis and transformation tasks.
+You can configure both public load balancers for front-end traffic to web tiers of applications and internal load balancers to balance traffic between the web tier and the tier that performs data analysis and transformation tasks.
 
 You can configure inbound NAT rules to allow remote desktop protocol access to a VM instance to perform administrative tasks.
 
