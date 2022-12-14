@@ -33,7 +33,6 @@ units:
 - learn.wwl.ingest-data-streams-with-azure-stream-analytics.process-streaming-data
 - learn.wwl.ingest-data-streams-with-azure-stream-analytics.exercise-–-create-streaming-data-input
 - learn.wwl.ingest-data-streams-with-azure-stream-analytics.exercise-–-create-power-bi-output
-- learn.wwl.ingest-data-streams-with-azure-stream-analytics.describe-windowing-functions
 - learn.wwl.ingest-data-streams-with-azure-stream-analytics.exercise-–-create-query-using-tumbling-windows
 - learn.wwl.ingest-data-streams-with-azure-stream-analytics.exercise-–-visualize-results-power-bi
 - learn.wwl.ingest-data-streams-with-azure-stream-analytics.knowledge-check
