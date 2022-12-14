@@ -25,12 +25,7 @@ We also recommend you start at the beginning of this learning path: [Deploy appl
 
 If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
 
-- An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
-- An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
-- A [GitHub](https://github.com/join?azure-portal=true) account
-- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-- [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0?azure-portal=true)
-- [Git](https://git-scm.com/downloads?azure-portal=true)
+[!include[](../../shared/includes/prerequisites.md)]
 
 You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps, but here, to deploy to Azure resources that exist in your Azure subscription, you'll use Azure DevOps.
 
