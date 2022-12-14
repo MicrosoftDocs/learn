@@ -1,10 +1,10 @@
-As you build your health model, you define application health in the context of key business requirements by quantifying *healthy*, *degraded*, and *unhealthy* states in a layered and measurable format. Use a *traffic light* model to visually represent these health states by using green, amber, and red as follows:
+As you build your health model, you define application health in the context of key business requirements by quantifying *healthy*, *degraded*, and *unhealthy* states in a layered and measurable format. Health states should be monitored starting with user flows at the top, down to platform resources at the bottom. Use a *traffic light* model to visually represent these health states by using green, yellow, and red as follows:
 
-- Green: Healthy state. Key non-functional requirements are fully satisfied and resources are optimally utilized.
-- Amber: Degraded state. The operator's attention is required to mitigate this state.
-- Red: Unhealthy state. The effects of the impacted system are apparent to the end user.
+- **Green**: Healthy state. Key non-functional requirements are fully satisfied and resources are optimally utilized.
+- **Yellow**: Degraded state. The application is operational, but user experience might be affected. The operator's attention is required to mitigate this state.
+- **Red**: Unhealthy state. Application is percieved as "not working", i.e. performing the business purpose. The effects of the impacted system are apparent to the end user.
 
-Each layer of the health model should capture what the healthy and unhealthy states represent. It's important to distinguish between transient and non-transient failure states to qualify service degradation relative to unavailability. Metrics and metric thresholds for resources must be finely tuned in terms of what values represent healthy and unhealthy states, which are heavily influenced by encompassed application functionality and target non-functional requirements. To capture health states for an individual component, that component's distinct operational characteristics must be understood under a steady state that is reflective of production load. Performance testing is therefore a key capability to define and continually evaluate application health.
+Each layer of the health model should capture what the healthy and unhealthy states represent. Is the failure transient or permanent in nature? Will a degraded state eventually lead to unavailability? Translate metrics and metric thresholds for resources to represent what healthy and unhealthy states mean to you based on the application functionality and non-functional requirements. Define health states for components based on their distinct operational characteristics, steady states, and expected behaviors under production load. Performance testing is a key capability when evaluating application health.
 
 When calculating health scores in a health model:
 

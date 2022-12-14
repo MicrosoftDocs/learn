@@ -14,25 +14,112 @@ A *unified data sink* is required to ensure all operational data is stored and m
 
 ![Diagram showing an example of application health data collection.](../media/mission-critical-health-data-collection.png)
 
-When you use Application Insights with one of the supported SDKs, the key benefit is transparent end-to-end tracing.
+Using Application Insights with one of the supported SDKs is highly recommended. The key benefit is transparent end-to-end tracing because you'll be able to track requests from the client through all layers of the system. 
+
+*For example, when a user creates a comment in their web-browser, the operator is able to find this operation in Application Insights and see that the request went through the Catalog API to Event Hub, where it was picked up by the Background Processor and stored in Cosmos DB.*
 
 Contoso Shoes uses Azure Functions on .NET 6 for their backend services, so they can make use of the native integration.
 
 Because the backend applications already exist, the team will create only a new Application Insights resource in Azure and configure the `APPLICATIONINSIGHTS_CONNECTION_STRING` setting on both Function Apps.
 
-The Azure Functions runtime registers the Application Insights logging provider automatically. For additional custom logs, use ILogger.
+The Azure Functions runtime registers the Application Insights logging provider automatically, so telemetry should appear in Azure without additional effort. For more custom logging, they would use `ILogger`.
 
 ## Health monitoring queries
 
-Log Analytics and Application Insights, and Azure Data Explorer all use [Kusto Query Language (KQL)](/azure/data-explorer/kusto/query) for their queries. With KQL, you can build queries and use functions to fetch metrics and calculate health scores.
+Log Analytics, Application Insights, and Azure Data Explorer all use [Kusto Query Language (KQL)](/azure/data-explorer/kusto/query) for their queries. With KQL, you can build queries and use functions to fetch metrics and calculate health scores.
 
 For individual services that calculate the health status, see the following sample queries:
 
-- [Catalog API](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/CatalogServiceHealthStatus.kql)
+- [Catalog API](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/CatalogServiceHealthStatus.kql) example
 
-- [Azure Event Hubs](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/EventHubHealthStatus.kql)
+```kql
+let _maxAge = 2d; // Only include data from the last two days
+let _timespanStart = ago(_maxAge); // Start time for the timespan
+let _timespanEnd = now(-2m); // there is some ingestion lag, so we account for this by stripping the last 2m
+// For the timeframe, compare the averages to the following threshold values:
+let Thresholds=datatable(MetricName: string, YellowThreshold: double, RedThreshold: double) [
+    // Failed requests. Anything non-200. We allow a few more than 0 for user-caused errors like 404s. 
+    "failureCount", 10, 50,
+    // Average duration of the request, in ms
+    "avgProcessingTime", 150, 500
+    ];
+//
+// Calculate average processing time for each request
+let avgProcessingTime = AppRequests
+| where AppRoleName startswith "CatalogService"
+| where OperationName != "GET /health/liveness" // Since the liveness requests don't do any processing, including them would skew the results. 
+| make-series Value = avg(DurationMs) default=0 on TimeGenerated from _timespanStart to _timespanEnd step 1m
+| mv-expand TimeGenerated, Value
+| extend TimeGenerated = todatetime(TimeGenerated), Value=toreal(Value), MetricName= 'avgProcessingTime';
+// Calculate failed requests
+let failureCount = AppRequests
+| where AppRoleName startswith "CatalogService"
+| where OperationName != "GET /health/liveness" // Since the liveness requests don't do any processing, including them would skew the results. 
+| make-series Value=countif(Success != true) default=0 on TimeGenerated from _timespanStart to _timespanEnd step 1m
+| mv-expand TimeGenerated, Value
+| extend TimeGenerated = todatetime(TimeGenerated), Value=toreal(Value), MetricName= 'failureCount';
+// Union all together and join with the thresholds
+avgProcessingTime
+| union failureCount
+| lookup kind = inner Thresholds on MetricName
+| extend IsYellow = iff(todouble(Value) > YellowThreshold and todouble(Value) < RedThreshold, 1, 0)
+| extend IsRed = iff(todouble(Value) > RedThreshold, 1, 0)
+| project-reorder TimeGenerated, MetricName, Value, IsYellow, IsRed, YellowThreshold, RedThreshold
+| extend ComponentName="CatalogService"
+```
 
-- [Azure Key Vault](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/KeyvaultHealthStatus.kql)
+- [Azure Key Vault](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/KeyvaultHealthStatus.kql) example
+
+```kql
+let _maxAge = 2d; // Only include data from the last two days
+let _timespanStart = ago(_maxAge); // Start time for the timespan
+let _timespanEnd = now(-2m); // there is some ingestion lag, so we account for this by stripping the last 2m
+//
+let Thresholds = datatable(MetricName: string, YellowThreshold: double, RedThreshold: double) [
+    // Failure count on key vault requests
+    "failureCount", 3, 10
+    ];
+//
+let failureStats = AzureDiagnostics
+| where TimeGenerated > _timespanStart
+| where ResourceProvider == "MICROSOFT.KEYVAULT"
+// Ignore Authentication operations with a 401. This is normal when using Key Vault SDK, first an unauthenticated request is done then the response is used for authentication.
+| where Category=="AuditEvent" and not (OperationName == "Authentication" and httpStatusCode_d == 401)
+| where OperationName in ('SecretGet','SecretList','VaultGet') or '*' in ('SecretGet','SecretList','VaultGet')
+| where ResultSignature != "Not Found" // Exclude Not Found responses as these happen regularly during 'terraform plan' operations, when TF checks for the existence of secrets
+// Create ResultStatus with all the 'success' results bucked as 'Success'
+// Certain operations like StorageAccountAutoSyncKey have no ResultSignature, for now set to 'Success' as well
+| extend ResultStatus = case ( ResultSignature == "", "Success",
+                               ResultSignature == "OK", "Success",
+                               ResultSignature == "Accepted", "Success",
+                               ResultSignature);
+//
+//
+failureStats
+| make-series Value=countif(ResultStatus != "Success") default=0 on TimeGenerated from _timespanStart to _timespanEnd step 1m
+| mv-expand TimeGenerated, Value
+| extend TimeGenerated = todatetime(TimeGenerated), Value=toreal(Value), MetricName="failureCount", ComponentName="Keyvault"
+| lookup kind = inner Thresholds on MetricName
+| extend IsYellow = iff(todouble(Value) > YellowThreshold and todouble(Value) < RedThreshold, 1, 0)
+| extend IsRed = iff(todouble(Value) > RedThreshold, 1, 0)
+```
+
+Eventually, various health **status** queries can be tied together to calculate a health **score** of a component. Following is an example of the [Catalog Service health score](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/CatalogServiceHealthScore.kql) in the Mission-critical Online reference implementation:
+
+```kql
+CatalogServiceHealthStatus()
+| union AksClusterHealthStatus()
+| union KeyvaultHealthStatus()
+| union EventHubHealthStatus()
+| where TimeGenerated < ago(2m)
+| summarize YellowScore = max(IsYellow), RedScore = max(IsRed) by bin(TimeGenerated, 2m)
+| extend HealthScore = 1 - (YellowScore * 0.25) - (RedScore * 0.5)
+| extend ComponentName = "CatalogService", Dependencies="AKSCluster,Keyvault,EventHub" // These values are added to build the dependency visualization.
+| order by TimeGenerated desc
+```
+
+> [!TIP]
+> [More examples](https://github.com/Azure/Mission-Critical-Online/tree/feature/reactflowtest/src/infra/monitoring/queries) can be found in the Mission-critical Online GitHub repository.
 
 ## Set up query-based alerts
 
@@ -44,6 +131,10 @@ Azure Monitor provides an extensive alerting framework to detect, categorize, an
 
 ## Use dashboards for visualization
 
-Visually representing the health model with critical operational data is essential to achieve effective operations and maximize reliability. Use dashboards to provide near-real time insights into application health for DevOps teams, facilitating the swift diagnosis of deviations from steady state. A robust dashboard is essential to diagnose issues that have already occurred, and supports operational teams in detecting and responding to issues as they happen.
+You must visualize your health model and the data it continuously collects. Operators will be able to see the dependency tree and understand quickly the effect of a component outage on the whole system. The ultimate goal of a health model is to facilitate swift diagnosis by providing informed view into deviations from steady state.
+
+A common way to visualize system health information is to use dashboards as a way to combine the layered health model view with telemetry drill-down capabilities if needed.
+
+![Example health model dashboard showing layered model followed by drill-down data tables](../media/health-dashboard-example.png)
 
 Microsoft provides several data visualization technologies, including Azure Dashboards, Power BI, and Azure Managed Grafana. Azure Dashboards provides a tightly integrated out-of-the-box visualization solution for operational data within Azure Monitor. However, if you can't use Azure Dashboards to accurately represent the health model, then it's recommended to consider Grafana as an alternative visualization solution. Grafana provides market-leading capabilities and an extensive open-source plugin ecosystem.
