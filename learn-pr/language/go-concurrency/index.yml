@@ -33,7 +33,7 @@ roles:
 - developer
 - student
 products:
-- vs-code
+- azure
 units:
 - learn.language.go-concurrency.0-introduction
 - learn.language.go-concurrency.1-goroutines

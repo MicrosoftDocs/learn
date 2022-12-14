@@ -130,5 +130,5 @@ Here's a summary of the guidance:
 
 -   [**Defender for Cloud App Best Practices**](/defender-cloud-apps/best-practices)
 -   [**Threat Remediation**](/defender-cloud-apps/tutorial-flow)
--   [**Manage Multi-Cloud Environment**](/defender-cloud-apps/tutorial-cloud-platform-security)
+-   [**Manage Multicloud Environment**](/defender-cloud-apps/tutorial-cloud-platform-security)
 -   [**Ransomware Protection**](/security/compass/protect-against-ransomware)

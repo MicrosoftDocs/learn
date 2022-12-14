@@ -40,10 +40,12 @@ Outputs are destinations to which the results of stream processing are sent. Azu
 The stream processing logic is encapsulated in a query. Queries are defined using SQL statements that *SELECT* data fields *FROM* one or more inputs, filter or aggregate the data, and write the results *INTO* an output. For example, the following query filters the events from the **weather-events** input to include only data from events with a **temperature** value less than 0, and writes the results to the **cold-temps** output:
 
 ```sql
-SELECT event_time, weather_station, temperature
+SELECT observation_time, weather_station, temperature
 INTO cold-temps
-FROM weather-events TIMESTAMP BY event_time
+FROM weather-events TIMESTAMP BY observation_time
 WHERE temperature < 0
 ```
 
-When using an event hub or IoT Hub as an input, a field is automatically created to define the arrival time of the event in the queue. You can use this field to determine the timestamp of the event, or you can explicitly specify another DateTime field by using the *TIMESTAMP BY* clause, as shown in this example. The field used as a timestamp is important when aggregating data over temporal windows, which is discussed next.
+A field named **EventProcessedUtcTime** is automatically created to define the time when the event is processed by your Azure Stream Analytics query. You can use this field to determine the timestamp of the event, or you can explicitly specify another DateTime field by using the *TIMESTAMP BY* clause, as shown in this example. Depending on the input from which the streaming data is read, one or more potential timestamp fields may be created automatically; for example, when using an *Event Hubs* input, a field named **EventQueuedUtcTime** is generated to record the time when the event was received in the event hub queue.
+
+The field used as a timestamp is important when aggregating data over temporal windows, which is discussed next.

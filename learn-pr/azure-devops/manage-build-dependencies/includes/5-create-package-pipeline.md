@@ -116,6 +116,15 @@ In Visual Studio Code, your terminal window points to the root directory of the 
       * `$(System.TeamProject)` is a predefined variable that refers to your project name, for example, "Space Game - web - Dependencies".
       * "Tailspin.SpaceGame.Web.Models" is the feed name that you provided in the previous exercise.
 
+## Set permissions
+
+Before you can set up and run your pipeline, you need to give the Build service the correct permissions.
+
+1. Select **Artifacts** from the menu on the left.
+1. Select the **Settings** icon at the top of the screen, then select the **Permissions tab**.
+1. Select the **Add users/groups** button.
+1. In the **Users/Groups** field, enter **Space Game - web - Dependencies Build Service**, select the **Contributor** role, and select **Save**.
+
 ## Create the pipeline in Azure Pipelines
 
 You learned how to set up Azure Pipelines in an earlier module. If you need a refresher, head over to [Create a build pipeline with Azure Pipelines](/training/modules/create-a-build-pipeline?azure-portal=true).

@@ -1,22 +1,23 @@
-Azure Virtual Machines (VM) is one of several types of on-demand, scalable computing resources that Azure offers. Typically, you choose a VM when you need more control over the computing environment than the other choices offer.
+Azure Architects understand how to select and configure virtual machines. Azure Virtual Machines is one of several types of on-demand, scalable computing resources that Azure offers. Virtual machines are typically used when you need greater control over your computing environment.
 
-You should now be able to:
-
- -  Determine virtual machine names, locations and pricing models.
- -  Determine the correct virtual machine size.
- -  Configure virtual machine storage.
- -  Create a virtual machine in the Azure portal.
- -  Select a secure virtual machine connection method.
- -  Configure Windows and Linux virtual machine connections.
+In this module, you learned how to configure virtual machine names and locations. You examined virtual machine pricing models and discovered how to determine the correct virtual machine size. You discovered how to configure virtual machine storage, and how to create a virtual machine in the Azure portal. You reviewed how to select a secure virtual machine connection method, and how to configure Windows and Linux virtual machine connections.
 
 ## Learn more
 
-You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
+- Peruse [Azure Virtual Machines documentation](/azure/virtual-machines/).
 
- -  [Azure Virtual Machine documentation](/azure/virtual-machines/)
- -  [Linux virtual machines documentation](/azure/virtual-machines/linux/)
- -  [Learn - Introduction to Azure virtual machines (Sandbox)](/training/modules/intro-to-azure-virtual-machines/)
- -  [Learn - Choose the right disk storage for your virtual machine workload](/training/modules/choose-the-right-disk-storage-for-vm-workload/)
- -  [Learn - Create a Linux virtual machine in Azure (Sandbox)](/training/modules/create-linux-virtual-machine-in-azure/)
- -  [Learn - Create a Windows virtual machine in Azure (Sandbox)](/training/modules/create-windows-virtual-machine-in-azure/)
- -  [Learn - Connect to virtual machines through the Azure portal by using Azure Bastion](/training/modules/connect-vm-with-azure-bastion/)
+- Find [virtual machines for your configuration with the Virtual machines selector](https://azure.microsoft.com/pricing/vm-selector/).
+
+## Learn more with self-paced training
+
+- Choose [disk storage for your virtual machine workload](/training/modules/choose-the-right-disk-storage-for-vm-workload/).
+
+- Connect to [virtual machines through the Azure portal with Azure Bastion](/training/modules/connect-vm-with-azure-bastion/). _Azure subscription required_.
+
+## Learn more with optional hands-on exercises
+
+- Complete an [Introduction to Azure Virtual Machines (sandbox)](/training/modules/intro-to-azure-virtual-machines/).
+
+- Create [Linux virtual machines in Azure (sandbox)](/training/modules/create-linux-virtual-machine-in-azure/).
+
+- Create [Windows virtual machines in Azure (sandbox)](/training/modules/create-windows-virtual-machine-in-azure/).
