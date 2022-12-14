@@ -1,4 +1,4 @@
-In this exercise we'll continue with the layered health model structure that was created in the previous exercise, and quantify health states of individual components.
+In this exercise we'll continue with the layered health model structure that was created in the previous exercise, and quantify health states of individual components. This step is mostly about experience with running the system and understanding what the expected values are under regular load. It nicely demonstrates the whole purpose of health modeling - injecting this experience and knowledge into the health model for easier analysis.
 
 Begin by looking at the health model structure and proceed top-to-bottom through layers, starting with user flows.
 
@@ -34,8 +34,6 @@ Those questions should lead to defining specific and measurable thresholds for k
 ## Azure resources
 
 Azure service health states are based on a particular resource. For example, Azure Cosmos DB reports DTU utilization, Azure App Services provides information about CPU utilization, and so on.
-
-This stage is mostly about experience with running the system and understanding what the expected values are under regular load. It nicely demonstrates the whole purpose of health modeling - injecting this experience and knowledge into the health model for easier analysis.
 
 ## Health states and thresholds
 
