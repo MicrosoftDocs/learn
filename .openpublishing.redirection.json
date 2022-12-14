@@ -15871,6 +15871,61 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/index.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/1-introduction.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/2-authorize-api.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/3-exercise-authorize-api.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/4-manage-devices.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/5-exercise-manage-devices.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/6-control-devices.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/7-exercise-control-devices.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/8-use-jobs.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/9-exercise-use-jobs.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/10-summary.md",
+      "redirect_url": "/azure/iot-central/core/tutorial-use-rest-api",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/dotnet-maui/use-shared-resources/1-introduction.md",
       "redirect_url": "/training/modules/use-shared-resources/1-introduction",
       "redirect_document_id": true
@@ -19433,6 +19488,61 @@
     {
       "source_path": "learn-pr/wwl-sci/plan-implement-privileged-access/8-create-manage-emergency-access-accounts.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-privileged-access/9-create-manage-emergency-access-accounts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/6-describe-windowing-functions.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/5-exercise-create-power-bi-output.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/7-exercise-create-query-using-tumbling-windows.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/4-exercise-create-streaming-data-input.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/8-exercise-visualize-results-power-bi.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/3-process-streaming-data-azure-stream-analytics.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/2-understand-stream-processing.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
       "redirect_document_id": false
     }
   ]
