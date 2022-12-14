@@ -19479,6 +19479,11 @@
       "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/3-process-streaming-data-azure-stream-analytics.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
+      "redirect_document_id": false
     }
   ]
 }
