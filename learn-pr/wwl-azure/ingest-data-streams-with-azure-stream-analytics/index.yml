@@ -31,7 +31,6 @@ units:
 - learn.wwl.ingest-data-streams-with-azure-stream-analytics.introduction
 - learn.wwl.ingest-data-streams-with-azure-stream-analytics.understand-stream-processing
 - learn.wwl.ingest-data-streams-with-azure-stream-analytics.process-streaming-data
-- learn.wwl.ingest-data-streams-with-azure-stream-analytics.exercise-–-visualize-results-power-bi
 - learn.wwl.ingest-data-streams-with-azure-stream-analytics.knowledge-check
 - learn.wwl.ingest-data-streams-with-azure-stream-analytics.summary
 badge:
