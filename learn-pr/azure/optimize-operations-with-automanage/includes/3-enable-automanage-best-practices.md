@@ -1,3 +1,16 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<!-->
 Contoso uses SSH for their Windows machines to provide secure management, remote access to resources, and updates. They want to apply that same level of security to their Linux systems. Through SSH, Azure Arc provides Contoso with a secure, encrypted connection for managing both their Windows and Linux machines.
 
 SSH for Azure Arc provides SSH-based connections to Linux machines on Azure Arc without requiring a public IP address or additional open ports. This functionality can be used interactively, automated, or with existing SSH-based tooling, allowing existing management tools to have a greater impact. SSH access allows you to reach your Linux machines through a simple Azure CLI command or through Microsoft PowerShell. You can leverage your existing local SSH keys to connect to your Linux machines.

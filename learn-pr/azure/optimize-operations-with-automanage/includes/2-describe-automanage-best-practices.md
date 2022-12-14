@@ -16,7 +16,19 @@ After onboarding your machines to Azure Automanage, each best practice service i
 
 :::image type="content" source="../media/intelligently-onboard-services-1.png" alt-text="Diagram of intelligently onboard services.":::
 
-Your VMs will be automatically onboarded to these participating services when you use the best practices configuration profiles.
+Your VMs will be automatically onboarded to these participating services when you use the best practices configuration profiles. The list of participating services includes the following:
+
+|Service |Description |
+|--------|------------|
+|VM Insights Monitoring |Azure Monitor for VMs monitors the performance and health of your virtual machines, including their running processes and dependencies on other resources. |
+|Backup |Azure Backup provides independent and isolated backups to guard against unintended destruction of the data on your VMs. |
+|Microsoft Defender for Cloud |Microsoft Defender for Cloud is a unified infrastructure security management system that strengthens the security posture of your data centers, and provides advanced threat protection across your hybrid workloads in the cloud. |
+|Microsoft Antimalware |Microsoft Antimalware for Azure is a free real-time protection that helps identify and remove viruses, spyware, and other malicious software. It generates alerts when known malicious or unwanted software tries to install itself or run on your Azure systems. |
+|Update Management |You can use Update Management in Azure Automation to manage operating system updates for your virtual machines. You can quickly assess the status of available updates on all agent machines and manage the process of installing required updates for servers. |
+|Change Tracking & Inventory |Combines change tracking and inventory functions to allow you to track virtual machine and server infrastructure changes. |
+|Guest Configuration |Guest configuration is used to monitor the configuration and report on the compliance of the machine. |
+|Azure Automation Account |Azure Automation supports management throughout the lifecycle of your infrastructure and applications. |
+|Log Analytics Workspace |Azure Monitor stores log data in a Log Analytics workspace, which is an Azure resource and a container where data is collected, aggregated, and serves as an administrative boundary. |
 
 ## Configuration profiles
 
@@ -32,5 +44,15 @@ You can view the overall status of all your Azure Automanage machines from the *
 
 The page lists the following details for each machine listed: Name, Configuration profile, Status, Resource type, Resource group, Subscription
 
+The page lists each of your Automanage machines, along with the configuration profile assigned to it and other information. The Status column displays the current state of the machine, informing you when a machine is properly configured and running normally or if it needs attention.
 
+For example, when a machine is conformant with its assigned configuration profile, its status will read *Conformant*. When a machine drifts from the configuration profile, Automanage automatically brings it back into compliance.
 
+## Support for Linux VMs
+
+Automanage supports the following Linux distributions and versions:
+
+- CentOS 7.3+, 8
+- RHEL 7.4+, 8
+- Ubuntu 16.04, 18.04, 20.04
+- SLES 12 (SP3-SP5 only), SLES 15
