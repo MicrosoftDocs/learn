@@ -8,11 +8,11 @@ This module explains what Azure Load Balancer does, how it works, and when you s
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Learn what Azure Load Balancer is and the functionality it provides.
 - Determine whether Load Balancer meets the needs of your organization.
 
 ## Prerequisites
 
-- Understanding of basic networking concepts.
+- Understanding of basic networking concepts
