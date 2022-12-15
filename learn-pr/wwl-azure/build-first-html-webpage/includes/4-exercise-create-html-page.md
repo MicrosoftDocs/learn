@@ -74,7 +74,7 @@ Each of the elements in the HTML does specific things. The following table descr
 
 2. As you type, the page will automatically update; the final result will appear similar to the following:
 
-  :::image type="content" source="../media/html-structure.png" alt-text="Screenshot of resume structure":::
+  :::image type="content" source="../media/html-structure.png" alt-text="Screenshot of resume structure.":::
 
 ### Reviewing the code
 
