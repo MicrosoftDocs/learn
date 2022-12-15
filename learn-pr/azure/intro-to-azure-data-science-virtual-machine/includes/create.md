@@ -4,7 +4,7 @@ Use the **Activate sandbox** button in this module to activate the Learn sandbox
 
 ## Create a Data Science Virtual Machine
 
-After you've decided to use a DSVM to explore your domain, you need to decide whether you'd prefer Windows Server 2019 or Ubuntu Server 18.04 LTS as the operating system. You should also plan what hardware and network resources you'd like the DSVM to use.
+After you've decided to use a DSVM to explore your domain, you need to decide whether you'd prefer Windows Server 2019 or Ubuntu Server 20.04 LTS as the operating system. You should also plan what hardware and network resources you'd like the DSVM to use.
 
 ## Operating system choices
 

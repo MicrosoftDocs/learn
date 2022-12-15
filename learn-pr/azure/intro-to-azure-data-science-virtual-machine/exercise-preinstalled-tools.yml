@@ -10,7 +10,7 @@ metadata:
   ms.service: machine-learning
   ms.prod: learning-azure
 azureSandbox: true
-title: "Exercise: Use RStudio and other preinstalled tools"
+title: "Exercise: Use the preinstalled tools"
 durationInMinutes: 15
 content: |
   [!include[](includes/exercise-preinstalled-tools.md)]
