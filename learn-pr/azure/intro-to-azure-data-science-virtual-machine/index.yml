@@ -4,8 +4,8 @@ metadata:
   title: Create and connect to a Data Science Virtual Machine
   description: Learn how to create and connect to an Azure-based virtual machine preloaded with data science and machine learning tools.
   ms.date: 12/14/2022
-  author: samkemp
-  ms.author: samkemp
+  author: jesscioffi
+  ms.author: jcioffi
   ms.topic: tutorial
   ms.service: machine-learning 
   ms.prod: learning-azure

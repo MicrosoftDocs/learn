@@ -4,8 +4,8 @@ metadata:
   title: "Exercise: Use the preinstalled tools"
   description: Use the preinstalled tools in the Data Science Virtual Machine to perform data science.
   ms.date: 12/14/2022
-  author: samkemp
-  ms.author: samkemp
+  author: jesscioffi
+  ms.author: jcioffi
   ms.topic: interactive-tutorial
   ms.service: machine-learning
   ms.prod: learning-azure
