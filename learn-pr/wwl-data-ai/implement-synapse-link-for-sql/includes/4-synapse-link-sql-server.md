@@ -15,7 +15,7 @@ To use Azure Synapse Link for SQL Server 2022, you need to create storage for th
 
 ### Create landing zone storage
 
-You need to create an Azure Data Lake Storage Gen2 account in your Azure subscription to use as a landing zone. You can't use the default storage account for your Azure Synapse Analytics workspace.
+You need to create an Azure Data Lake Storage Gen2 account in your Azure subscription to use as a landing zone. You can't use the default storage for your Azure Synapse Analytics workspace.
 
 > [!TIP]
 > For more information about provisioning an Azure Data Lake Storage Gen2 account, see [Create a storage account to use with Azure Data Lake Storage Gen2](/azure/storage/blobs/create-data-lake-storage-account?azure-portal-true).
