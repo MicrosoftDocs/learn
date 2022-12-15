@@ -2,9 +2,9 @@ Safety and security have never been more important. Part of computer safety is k
 
 ## Authentication
 
-When you want to access a computer or a private website, the first thing you may be asked to do is sign in. A sign-in is a way computer's verify users. Many of us know the username and password pair we need to access email or our phones. This is called "authentication" or "AuthN."
+When you want to access a computer or a private website, the first thing you may be asked to do is sign in. A sign-in is a way computers verify users. Many of us know the username and password pair we need to access email or our phones. This is called "authentication" or "AuthN."
 
-![Diagram showing a username and password pair on a computer screen.](../media/username-password.png)
+![Illustration of a username and password pair on a computer screen.](../media/username-password.png)
 
 There has been a lot of discussion about how secure usernames and passwords actually are. They generally fit the bill for basic security. However, computer engineers have been working on building something stronger. Authentication can occur using fingerprints and being able to recognize faces. It's now possible to sign into a computer or website with just a smile.
 
