@@ -1,4 +1,4 @@
-:::image type="content" source="media/tutorial-serverless-static-web-app.png" alt-text="Diagram showing how Azure Web PubSub works with Azure Static Web Apps." border="false":::
+:::image type="content" source="../media/tutorial-serverless-static-web-app.png" alt-text="Diagram showing how Azure Web PubSub works with Azure Static Web Apps." border="false":::
 
 In this module, GitHub provides source control for Static Web Apps; Azure Repos could be used as an alternative. Azure monitors the repo branch you select, and every time there's a code change to the source repo, a new build of your web app is automatically run and deployed to Azure. Continuous delivery is provided by GitHub Actions (or, alternatively, Azure Pipelines). Static Web Apps detects the new build and presents it to the end user.
 
