@@ -22,7 +22,7 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
 1. Run these commands to deploy the Azure resource group and resources:
 
     ```azurecli
-       git clone https://github.com/MicrosoftDocs/ms-learn-azure-monitor-workbooks.git
+       git clone https://github.com/MicrosoftDocs/ms-learn-visualize-data-workbooks.git
        cd ms-learn-visualize-data-workbooks/Resources/
        az deployment group create --resource-group $resourceGroup --template-file deploy-resources.bicep
     ```
@@ -65,8 +65,8 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
     1.  The Azure Workbook text editor uses markdown format. Enter text into the editor. You can copy this text if you would like.
 
     ```
-        # Learn module exercise workbook
-        ## Select a subscription from the drop-down below.
+    # Learn module exercise workbook
+    ## Select a subscription from the drop-down below.
     ```
 
     1. Select **Done editing**.
