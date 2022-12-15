@@ -1,5 +1,5 @@
 
-Using workbooks, you can write queries that extract data from different types of data sources. Each data source and result set support visualizations that are most useful for that data. Although different data sources return data sets with different structures, workbooks are able to interpret the data, and create charts and visualizations to help you analyze the data. You can create composite resource views or joins across resources to gain richer data and insights that would otherwise be impossible.
+To create useful reports to help you monitor your resources, you can use Workbooks to write queries that extract data from different types of data sources. Each data source and result set support visualizations that are most useful for that data. Although different data sources return data sets with different structures, workbooks are able to interpret the data, and create charts and visualizations to help you analyze the data. You can create composite resource views or joins across resources to gain richer data and insights that would otherwise be impossible.
 
 Workbooks can extract data from these data sources:
 

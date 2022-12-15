@@ -4,7 +4,7 @@
 
 The first thing we'll do is activate the Azure sandbox and deploy an ARM template containing all the Azure resources we need for this exercise.
 
-1. Activate the Azure sandbox. When the sandbox is activated, a resource group is created for you to use.
+1. Activate the Azure sandbox. When the sandbox is activated, a resource group with the name `learn-{guid}` is created for you to use. This resource group will be visible in the Azure portal, or through CLI commands such as `az group list`.
 1. In the Azure Cloud Shell, get the name of the resource group that was generated for your sandbox.
     ```azurecli
     az group list
@@ -12,8 +12,8 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
 1. The output contains a row with the name of the resource group. The name starts with "learn-".
 
     :::image type="content" source="../media/3-cloud-shell-resourcegroup-name.png" alt-text="Screenshot of Cloud Shell displaying resource group name for sandbox.":::
-1. Copy the name of the resource group. (You may need to highlight the text and right-click on your mouse to copy the text.)
-1. Enter this command to define the resource group. (You may need to erase some extraneous characters from around the resource group name.)
+1. Copy the name of the resource group by right-clicking on the name and selecting **Copy**.
+1. Enter this command to define the resource group. (Right-click and select **Paste** to paste the resource group name.)
 
     ```azurecli
     resourceGroup="<your resource group name>"
@@ -34,11 +34,11 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
     - one upper case letter
     - one number
     - one special character, not including \ or -.
-1. The resources that you need for the module are now deployed. Wait until the process completes.
-1. Log in to the Azure portal.
-1. On the **Home** page, enter "Resource groups" into the search bar at the top.
-1. Select the resource group that we created.
-1. Look through the list of resources and select the App Service plan.
+1. Wait while the resources that you need for the module are deployed. This will take a few minutes.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. On the **Home** page, select **Resource groups**, or search for "Resource groups" in the search bar at the top of the page.
+1. Select the "learn" resource group created when the sandbox was activated.
+1. Look through the list of resources and select the App Service.
 
     :::image type="content" source="../media/3-portal-select-app-service.png" alt-text="Screenshot of selecting the App Service from the resource group.":::
 
@@ -53,8 +53,8 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
 
 ## Create a new workbook
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-1. Search for and select **Monitor**, then select **Workbooks** from the left pane.
+1. From the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) home page, search for and select **Monitor**. 
+1. Select **Workbooks** from the left pane.
 1. Select **+ New** from the top toolbar.
     :::image type="content" source="../media/3-portal-new-workbook.png" alt-text="Screenshot that shows the New workbook icon Azure Workbooks page.":::
 1. Add descriptive text to the top of the workbook:
@@ -122,5 +122,5 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
 1. Select **Done editing**.
 1. You now have a workbook that lets the user select a subscription and displays all of the resources in that subscription in a map.
     :::image type="content" source="../media/3-workbook-with-map.png" alt-text="Screenshot that shows an Azure workbook with a map displaying a subscription's resources.":::
-1. Select **Save**.
-1. Enter a name for your workbook, and select the resource group and subscription.
+1. Select **Save As**.
+1. Enter a **Name** for your workbook, select the **Subscription** and **Resource group**, and select **Apply**.
