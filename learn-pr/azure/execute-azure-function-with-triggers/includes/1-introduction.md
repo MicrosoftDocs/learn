@@ -13,11 +13,11 @@ In this module, you will:
 
 ## Supported languages
 
-This module uses the Azure portal to create and test Azure Functions triggers. The Azure portal supports the languages listed below when working with Azure Functions:
+This module uses the Azure portal to create and test your function code. Functions supports in-portal development for the following languages:
 
-- C#
+- C# Script (.csx)
 - JavaScript
 - Python
 - PowerShell
 
-Other languages such as Java, TypeScript, Go and Rust are supported by Azure functions through local development tools. You can read more about the supported languages, tools and features of Azure Functions in the [developer guide](/azure/azure-functions/functions-reference).
+Other languages such as Java, TypeScript, Go and Rust are supported by Azure Functions through local development tools. You can read more about the supported languages, tools, and features of Azure Functions in the [developer guide](/azure/azure-functions/functions-reference).
