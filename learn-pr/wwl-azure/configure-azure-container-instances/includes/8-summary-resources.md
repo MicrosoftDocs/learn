@@ -1,4 +1,4 @@
-Azure Container Instances is a great solution for any scenario that can operate in isolated containers on Windows. You can create containers for simple applications, task automation, and build jobs.
+Azure Container Instances is a great solution for any scenario that can operate in isolated containers, including simple applications, task automation, and build jobs.
 
 In this module, you learned how to identify when to use Azure Container Instances versus Azure virtual machines. You explored the features and usage cases of Azure Container Instances. You discovered how to implement Azure container groups.
 

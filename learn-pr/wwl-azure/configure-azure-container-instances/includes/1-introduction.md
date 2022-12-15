@@ -1,4 +1,4 @@
-Containers on Windows offer a standardized and repeatable way to package, deploy, and manage cloud applications. Azure Container Instances let you run a container in Azure without managing virtual machines and without a higher-level service.
+Containers in Azure offer a standardized and repeatable way to package, deploy, and manage cloud applications. Azure Container Instances let you run a container in Azure without managing virtual machines and without a higher-level service.
 
 In this module, suppose you work for an online clothing retailer that uses containers for their internal apps. The apps are hosted on-premises, in Azure, and in other cloud providers. The apps can share the hardware resources, but shouldn't access resources used by other apps. You're responsible for deploying, managing, sizing, and scaling the app containers.
 
