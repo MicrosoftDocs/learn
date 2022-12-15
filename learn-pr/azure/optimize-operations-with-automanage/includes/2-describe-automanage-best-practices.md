@@ -32,7 +32,7 @@ Your VMs will be automatically onboarded to these participating services when yo
 
 ## Configuration profiles
 
-Configuration profiles are the foundation of Azure Automanage best practices. They define which services are onboarded for your machines and, to some extend, what the configuration of those services will be.
+Configuration profiles are the foundation of Azure Automanage best practices. They define which services are onboarded for your machines and, to some extent, what the configuration of those services will be.
 
 If you want to customize the best practice services and settings, you can use the custom profile option. Custom profiles allow you to customize the services and settings that you want to apply to your machines. This is a great option if your IT requirements differ from the best practices. For instance, if you do not want to use the Microsoft Antimalware solution because your IT organization requires you to use a different antimalware solution, then you can simply toggle off Microsoft Antimalware when creating a custom profile.
 

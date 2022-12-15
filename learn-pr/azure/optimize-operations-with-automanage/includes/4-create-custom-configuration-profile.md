@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+<!-->
+
 Azure Arc provides a wide range of capabilities for managing a large number of Linux systems. For example, you can onboard your Linux machines at scale using automation tools such as Red Hat Ansible. Once your Linux systems are onboarded to Azure Arc, you'll be able to utilize tools such as Azure Policy to help enforce standards and compliance and Azure Automanage to simplify the ongoing management of your Linux VMs.
 
 ## Azure Automanage best practices
