@@ -73,7 +73,7 @@ For more in-depth host level detection and prevention capability, deploy host-ba
 - Use Microsoft Defender for Cloud Adaptive Network Hardening to recommend NSG hardening rules that further limit ports, protocols and source IPs based on threat intelligence and traffic analysis result.
 - Use Azure Firewall Manager to centralize the firewall policy and route management of the virtual network. To simplify the firewall rules and network security groups implementation, you can also use the Azure Firewall Manager ARM (Azure Resource Manager) template.
 
-### NS-8: Secure Domain Name Service (DNS)
+### NS-8: Detect and disable insecure services and protocols
 
 **Security Principle**: Detect and disable insecure services and protocols at the OS, application, or software package layer. Deploy compensating controls if disabling insecure services and protocols are not possible.
 
