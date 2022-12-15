@@ -20,4 +20,4 @@ When you've finished the exercise in GitHub, return here for:
 
 
 > [!div class="nextstepaction"]
-> [Start the learning lab on GitHub](https://lab.github.com/githubtraining/create-an-open-source-program?azure-portal=true)
+> [Start the learning lab on GitHub](https://github.com/githubtraining/oss-enterprise)
