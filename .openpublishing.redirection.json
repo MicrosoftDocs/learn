@@ -19544,6 +19544,21 @@
       "source_path": "learn-pr/wwl-azure/ingest-data-streams-with-azure-stream-analytics/2-understand-stream-processing.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/construct-kusto-query-language-statements/4-use-search-operator.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/construct-kusto-query-language-statements/3-use-search-operator",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/construct-kusto-query-language-statements/5-use-where-operator.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/construct-kusto-query-language-statements/4-use-where-operator",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/construct-kusto-query-language-statements/3-use-let-statement.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/construct-kusto-query-language-statements/5-use-let-statement",
+      "redirect_document_id": false
     }
   ]
 }
