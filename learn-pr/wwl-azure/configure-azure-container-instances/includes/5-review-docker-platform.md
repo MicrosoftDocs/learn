@@ -26,10 +26,10 @@ Before you begin using Docker and Azure Container Instances to create, build, an
 
 - **Container**: An instance of a Docker image. A container represents the execution of a single application, process, or service. It consists of the contents of a Docker image, an execution environment, and a standard set of instructions. When scaling a service, you create multiple instances of a container from the same image. A batch job can create multiple containers from the same image, and pass different parameters to each instance.
 
-- **Container image**. A package with all the dependencies and information required to create a container. The dependencies include frameworks and the deployment and execution configuration that a container runtime uses. Usually, an image derives from multiple base images that are layers stacked on top of each other to form the container's file system. An image is immutable after it's created.
+- **Container image**: A package with all the dependencies and information required to create a container. The dependencies include frameworks and the deployment and execution configuration that a container runtime uses. Usually, an image derives from multiple base images that are layers stacked on top of each other to form the container's file system. An image is immutable after it's created.
 
-- **Build**. The process of creating a container image based on the information and context provided by the Dockerfile. The build also includes any other necessary files. You build images by using the Docker `docker build` command.
+- **Build**: The process of creating a container image based on the information and context provided by the Dockerfile. The build also includes any other necessary files. You build images by using the Docker `docker build` command.
 
-- **Pull**. The process of downloading a Docker container image from a container registry.
+- **Pull**: The process of downloading a Docker container image from a container registry.
 
-- **Push**. The process of uploading a Docker container image to a container registry.
+- **Push**: The process of uploading a Docker container image to a container registry.
