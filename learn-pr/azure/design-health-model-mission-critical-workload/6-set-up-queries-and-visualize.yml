@@ -3,8 +3,8 @@ uid: learn.design-health-model-mission-critical-workload.set-up-queries-and-visu
 title: Collect, query, and visualize heath states
 metadata:
   title: Collect, query, and visualize heath states
-  description: Collect, query, and visualize heath states.
-  ms.date: 12/07/2022
+  description: Learn how to collect data, run queries, and visualize heath states in a health model.
+  ms.date: 12/12/2022
   author: PageWriter-MSFT
   ms.author: msimecek
   ms.topic: interactive-tutorial
@@ -18,34 +18,34 @@ quiz:
   questions:
   - content: "Where should system components send their telemetry?"
     choices:
-    - content: "Central data sink for logs and telemetry, which is common for global and regional resources."
+    - content: "A central data sink for logs and telemetry, which is common for global and regional resources."
       isCorrect: false
-      explanation: "Incorrect. While using central storage for all telemetry makes it easier to analyze, it creates a single point of failure, which is unacceptable in mission-critical applications."
-    - content: "Stamp-based data sink for logs and telemetry, where each stamp and global tier has its own."
+      explanation: "Although using a central storage for all telemetry makes it easier to analyze, it creates a single point of failure, which is unacceptable in mission-critical applications."
+    - content: "A stamp-based data sink for logs and telemetry, where each stamp and global tier has its own sink."
       isCorrect: true
-      explanation: "Correct. Using dedicated data sink, shared on the global and stamp levels, is a good compromise for ease of access while eliminating single point of failure."
-    - content: "Decentralized data sink, where every Azure resource and every component has its own."
+      explanation: "Using a dedicated data sink, shared on the global and stamp levels, is a good compromise for ease of access while eliminating a single point of failure."
+    - content: "A decentralized data sink, where every Azure resource and every component has its own sink."
       isCorrect: false
-      explanation: "Incorrect. Splitting data sinks per resource is inefficient and creates unnecessary overhead for analysis."
+      explanation: "Splitting data sinks by resource is inefficient and creates unnecessary overhead for analysis."
   - content: "What language is used to query Log Analytics logs and calculate health scores?"
     choices:
-    - content: "SQL"
+    - content: "SQL (Structured Query Language)"
       isCorrect: false
-      explanation: "Incorrect. SQL (Structured Query Language) is commonly used in querying relational databases. Log Analytics query format looks similar, but it's not SQL."
-    - content: "T-SQL"
+      explanation: "SQL is commonly used in querying relational databases. Although the Log Analytics query format looks similar, it has a different syntax."
+    - content: "T-SQL (Transact-SQL)"
       isCorrect: false
-      explanation: "Incorrect. T-SQL (Transact-SQL) is an extension of the SQL language and is used to interact with relational databases."
-    - content: "KQL"
+      explanation: "T-SQL is an extension of the SQL language and is used to interact with relational databases."
+    - content: "KQL (Kusto Query Language)"
       isCorrect: true
-      explanation: "Correct. KQL (Kusto Query Language) is used to query Log Analytic logs. It uses a hierarchy similar to SQL, but has different syntax."
-  - content: "What's the best dashboarding technology for health modeling?"
+      explanation: "KQL is used to query Log Analytic logs. It uses a hierarchy similar to SQL, but has a different syntax."
+  - content: "What's the best dashboard technology for health modeling?"
     choices:
-    - content: "There's no 'best' technology - it depends on the needs."
+    - content: "There's no best technology; it depends on your needs."
       isCorrect: true
-      explanation: "Azure offers multiple options when it comes to dashboarding, and each can be suitable for different purpose. The correct approach is to evaluate the visualization needs of the health model and choose appropriately."
+      explanation: "Azure offers multiple options when it comes to using dashboards, and each can be suitable for different purpose. The correct approach is to evaluate the visualization needs of the health model and choose appropriately."
     - content: "Azure Dashboards"
       isCorrect: false
-      explanation: "Azure Dashboards is suitable technology for dashboarding, but it might not fully support all necessary customizations."
+      explanation: "Azure Dashboards is a suitable technology for using dashboards, but it might not fully support all necessary customizations."
     - content: "Azure Managed Grafana"
       isCorrect: false
-      explanation: "Grafana is powerful dashboarding technology with rich customization options, but more complex to build and mange the right visualization."
+      explanation: "Grafana is powerful dashboard technology with rich customization options, but using it to build and manage the right visualization is more complex."

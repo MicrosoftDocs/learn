@@ -1,6 +1,6 @@
 As Contoso Shoes starts designing their health model, the first step is to review their employee application: its architecture, the key Azure services involved, and how they contribute to the overall end-user experience.
 
-Your task in this exercise is to design the health model structure of an internal employee application. The structure will consist of multiple layers, as explained in [layered health model](2-what-is-health-modeling.md#layered-health-model).
+Your task in this exercise is to design the health model structure of an internal employee application. The structure will consist of multiple layers, as described in [Layered health model](2-what-is-health-modeling#layered-health-model).
 
 ## Application
 
@@ -24,10 +24,10 @@ The following diagram shows the architecture of the application. Ensure you have
 The application architecture has the following components:
 
 - Front-end internal web application: The user interface of this workload, which runs on Azure Web Apps.
-  - Reads: Azure Data Catalog REST API, Azure Blob Storage
+  - Reads: Data Catalog API, Azure Blob Storage
   - Writes: End user
 
-- Azure Data Catalog REST API: The API layer the front-end web application uses to perform data operations. For example: load catalog, create item, update item, and delete item. Hosted on Azure Functions.
+- Data Catalog API: The API layer the front-end web application uses to perform data operations. For example: load catalog, create item, update item, and delete item. Hosted on Azure Functions.
   - Reads: Azure Cosmos DB
   - Writes: Azure Event Hubs
 
@@ -45,13 +45,13 @@ The application architecture has the following components:
 
 ## Layered health model structure
 
-As mentioned in the [What is health modeling?](2-what-is-health-modeling.md#layered-health-model) unit, a health model typically has a layered structure. The process of modeling health is a top-down design activity that starts with an architectural exercise to define all user flows and map dependencies between functional and logical components, thereby implicitly mapping dependencies between Azure resources. For the purposes of this exercise, our health model has three layers: user flows, application components, and Azure resources.
+As described in [Layered health modeling](2-what-is-health-modeling#layered-health-model), a health model typically has a layered structure. The process of modeling health is a top-down design activity that starts with an architectural exercise to define all user flows and map dependencies between functional and logical components, which also implicitly maps the dependencies between Azure resources. For this exercise, our health model has three layers: user flows, application components, and Azure resources.
 
 ### User flows
 
 Going from top to bottom in the layered health structure, think about what the *user flows* would be, based on what you know about the application. Try to abstract the technical details and Azure services, and look at the end-user perspective.
 
-You should end up with at least two user flows in the top layer. If you can think of more, feel free to include them in your health model too.
+You should end up with at least two user flows in the top layer. If you can think of more, feel free to include them in your health model.
 
 ### Application components
 

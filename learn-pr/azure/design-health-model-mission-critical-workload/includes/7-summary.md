@@ -15,6 +15,6 @@ Congratulations on completing this training module. You've learned how to design
 
 ## Learn more
 
-- [Challenge Project - Design a mission-critical web application - Training | Microsoft Learn](/training/modules/azure-mission-critical/)
+- [Challenge Project - Design a mission-critical web application](/training/modules/azure-mission-critical/)
 
 - For more information about architecture solutions in Azure, see the [Microsoft Azure Well-Architected Framework guide](/azure/architecture/framework) in the Azure Architecture Center.

@@ -3,8 +3,8 @@ uid: learn.design-health-model-mission-critical-workload.exercise-define-health-
 title: Exercise - Define health state, metrics and thresholds
 metadata:
   title: Exercise - Define health state, metrics and thresholds
-  description: Exercise - Define health state, metrics and thresholds.
-  ms.date: 12/07/2022
+  description: Learn how to define the health state, metrics and thresholds for a health model.
+  ms.date: 12/12/2022
   author: PageWriter-MSFT
   ms.author: prwilk
   ms.topic: interactive-tutorial

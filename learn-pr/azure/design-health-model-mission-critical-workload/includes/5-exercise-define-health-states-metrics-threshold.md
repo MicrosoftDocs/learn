@@ -1,35 +1,34 @@
-In this exercise we'll continue with the layered health model structure that was created in the previous exercise, and quantify health states of individual components. This step is mostly about experience with running the system and understanding what the expected values are under regular load. It nicely demonstrates the whole purpose of health modeling - injecting this experience and knowledge into the health model for easier analysis.
+In this exercise, we'll continue with the layered health model structure that was created in the previous exercise, and quantify health states of individual components. This step is mostly about experience with running the system and understanding what the expected values are under regular load. It demonstrates the purpose of health modeling, while injecting this experience and knowledge into the health model for easier analysis.
 
 Begin by looking at the health model structure and proceed top-to-bottom through layers, starting with user flows.
 
 ## User flows
 
-- *When is "List catalog items" healthy?*, *Can it operate in a degraded state?*
-- *When is "Add comment" healthy?*, *Can it operate in a degraded state?*
+- *When is "List catalog items" healthy? Can it operate in a degraded state?*
+- *When is "Add comment" healthy? Can it operate in a degraded state?*
 
-Based on the implementation and functional requirements, neither of the user flows can operate without its underlying services. Not even in degraded mode. So,
+Based on the implementation and functional requirements, neither of the user flows can operate without its underlying services, not even in degraded mode. The health states of the user flows are determined as follows:
 
-- The health state of **List catalog items** user flow reflects the health of the **frontend web application**, and the **Catalog API**.
-- The health state of **Add comment** user flow reflects the health of the **frontend web application**, the **Catalog API**, and **Background Processor**.
+- **List catalog items**: This user flow reflects the health state of the **front-end web application**, and the **Catalog API**.
+- **Add comment**: This user flow reflects the health state of the **front-end web application**, the **Catalog API**, and **background processor**.
 
 If any of these dependencies become unhealthy, the user flow is expected to become unhealthy.
 
 > [!NOTE]
-> Some applications can operate in a special "degraded" mode. For example, implementing local browser caching would allow creating comments, but not sending them until the Catalog API becomes healthy (which the browser can continuously check).
+> Some applications can operate in a special *degraded* mode. For example, implementing local browser caching allows creating comments, but not sending them until the Catalog API becomes healthy (which the browser can continuously check).
 
 ## Application components
 
-Health states are based on a combination of application metrics. For example, number of exceptions, response time, and service metrics. Application components can have dependencies on Azure resources and even other components). Factor in those health states too.
+Health states are based on a combination of application metrics. For example, number of exceptions, response time, and service metrics. Application components can have dependencies on Azure resources (and even other components). Factor in those health states, too.
 
 Defining metrics and thresholds for application components requires knowledge and understanding of their functionality. Ask questions like:
 
 - *What processing time in the API is acceptable to maintain good user experience?*
 - *Are there any expected errors? What is the "normal" error rate?*
-- *What the "normal" processing time? And what does it mean if it's higher?*
-- *What happens to write operations when Cosmos DB is unreachable?*
-- etc.
+- *What's the "normal" processing time? What does it mean if it's higher?*
+- *What happens to write operations when Azure Cosmos DB is unreachable?*
 
-Those questions should lead to defining specific and measurable thresholds for key metrics. The source of these values will be the application monitoring solution (such as Application Insights).
+Those questions should lead you to define specific and measurable thresholds for key metrics. The source of these values is the application monitoring solution (such as Application Insights).
 
 ## Azure resources
 
@@ -37,7 +36,7 @@ Azure service health states are based on a particular resource. For example, Azu
 
 ## Health states and thresholds
 
-In the end you should have a list of components, along with their health state definition. Your heath states representation should look similar to this example:
+Ultimately you should have a list of components and their health state definition. Your heath states representation should look similar to this example:
 
 | Component | Indicator/metric | Healthy | Degraded | Unhealthy |
 | --------- | ---------------- | ------- | -------- | --------- |
@@ -54,4 +53,4 @@ In the end you should have a list of components, along with their health state d
 | Azure Event Hubs | Processing backlog length (outgoing/incoming messages) | < 3 | 3-20 |  > 20 |
 | Azure Blob Storage | Average latency (ms) | < 100 | 100-200 | > 200 |
 
-In this example you can notice that there's a difference between the error tolerance for the front-end web application and the Catalog API. This goes back to the technical understanding of the application: all frontend errors should be handled client-side, so there's a 0 threshold. However, on the API layer we allow 10 exceptions to account for user-caused errors (such as 404 - Not Found) that don't necessarily mean a health issue.
+In this example, notice that there's a difference between the error tolerance for the front-end web application and the Catalog API. This difference relates to the technical understanding of the application: all front-end errors should be handled client-side, so there's a zero threshold. However, on the API layer we allow 10 exceptions to account for user-caused errors (such as *404 - Not Found*) that don't necessarily mean a health issue.

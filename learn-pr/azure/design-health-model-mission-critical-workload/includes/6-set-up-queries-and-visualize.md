@@ -2,35 +2,31 @@ To accurately represent a health model, various datasets must be gathered from t
 
 ## Instrumenting code and infrastructure
 
-A *unified data sink* is required to ensure all operational data is stored and made available for a single location where all data measurement is collected. Azure provides several data monitoring technologies under the umbrella of [Azure Monitor](/azure-monitor/overview#overview). Azure Monitor Log Analytics serves as the core Azure-native unified data sink to store and analyze operational data:
+A *unified data sink* is required to ensure all operational data is stored and made available for a single location where all telemetry is collected. Azure provides several data monitoring technologies under the umbrella of [Azure Monitor](/azure-monitor/overview#overview). Azure Monitor Log Analytics serves as the core Azure-native unified data sink to store and analyze operational data:
 
 - Use Application Insights as a consistent Application Performance Monitoring (APM) tool across all application components to collect application logs, metrics, and traces.
 
-- Deploy Application Insights in a workspace-based configuration to ensure each regional Log Analytics workspace contains logs and metrics from both application components and the underlying Azure resources. 
+- Deploy Application Insights in a workspace-based configuration to ensure each regional Log Analytics workspace contains logs and metrics from both application components and the underlying Azure resources.
 
-- Use a dedicated Log Analytics workspace and Application Insights instance for each stamp and globally shared resource (Azure Cosmos DB, for example), as per the [mission-critical guidance](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#unified-data-sink-for-correlated-analysis). Doing so eliminates a single point of failure, in case a region is down. All stamps are short-lived and continuously replaced with each new release. The per-stamp Log Analytics workspaces are deployed as a global resource in a separate monitoring resource group as the stamp Log Analytics resources. These resources don't share the lifecycle of a stamp.
+- Use a dedicated Log Analytics workspace and an Application Insights instance for each stamp and globally shared resource (Azure Cosmos DB, for example), as per the [mission-critical guidance](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#unified-data-sink-for-correlated-analysis). Doing so eliminates a single point of failure, in case a region is down. All stamps are short-lived and continuously replaced with each new release. The per-stamp Log Analytics workspaces are deployed as a global resource in a separate monitoring resource group as the stamp Log Analytics resources. These resources don't share the lifecycle of a stamp.
 
 - Configure every service used in the architecture to send data collection to the same Log Analytics workspace, to make analysis and health calculations easier.
 
 ![Diagram showing an example of application health data collection.](../media/mission-critical-health-data-collection.png)
 
-Using Application Insights with one of the supported SDKs is highly recommended. The key benefit is transparent end-to-end tracing because you'll be able to track requests from the client through all layers of the system. 
+It's recommended that you use Application Insights with one of the supported SDKs. The key benefit is transparent end-to-end tracing so you can track requests from the client through all layers of the system. For example, when a user creates a comment in their web-browser, the operator is able to find this operation in Application Insights and see that the request went through the Catalog API to Azure Event Hubs, where it was picked up by the background processor and stored in Azure Cosmos DB.
 
-*For example, when a user creates a comment in their web-browser, the operator is able to find this operation in Application Insights and see that the request went through the Catalog API to Event Hub, where it was picked up by the Background Processor and stored in Cosmos DB.*
-
-Contoso Shoes uses Azure Functions on .NET 6 for their backend services, so they can make use of the native integration.
-
-Because the backend applications already exist, the team will create only a new Application Insights resource in Azure and configure the `APPLICATIONINSIGHTS_CONNECTION_STRING` setting on both Function Apps.
-
-The Azure Functions runtime registers the Application Insights logging provider automatically, so telemetry should appear in Azure without additional effort. For more custom logging, they would use `ILogger`.
+Contoso Shoes uses Azure Functions on Microsoft .NET 6 for their back-end services to make use of native integration. Because the back-end applications already exist, the team creates only a new Application Insights resource in Azure and configures the `APPLICATIONINSIGHTS_CONNECTION_STRING` setting on both Function Apps. The Azure Functions runtime registers the Application Insights logging provider automatically, so that telemetry appears in Azure without additional effort. For more customized logging, they could use `ILogger`.
 
 ## Health monitoring queries
 
 Log Analytics, Application Insights, and Azure Data Explorer all use [Kusto Query Language (KQL)](/azure/data-explorer/kusto/query) for their queries. With KQL, you can build queries and use functions to fetch metrics and calculate health scores.
 
-For individual services that calculate the health status, see the following sample queries:
+For individual services that calculate the health status, see the following sample queries.
 
-- [Catalog API](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/CatalogServiceHealthStatus.kql) example
+### Catalog API
+
+The following sample demonstrates a [Catalog API query](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/CatalogServiceHealthStatus.kql):
 
 ```kql
 let _maxAge = 2d; // Only include data from the last two days
@@ -68,7 +64,9 @@ avgProcessingTime
 | extend ComponentName="CatalogService"
 ```
 
-- [Azure Key Vault](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/KeyvaultHealthStatus.kql) example
+### Azure Key Vault
+
+The following sample demonstrates an [Azure Key Vault](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/KeyvaultHealthStatus.kql) query:
 
 ```kql
 let _maxAge = 2d; // Only include data from the last two days
@@ -104,7 +102,9 @@ failureStats
 | extend IsRed = iff(todouble(Value) > RedThreshold, 1, 0)
 ```
 
-Eventually, various health **status** queries can be tied together to calculate a health **score** of a component. Following is an example of the [Catalog Service health score](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/CatalogServiceHealthScore.kql) in the Mission-critical Online reference implementation:
+### Catalog Service health score
+
+Eventually, various health **status** queries can be tied together to calculate a health **score** of a component. The following sample query shows how to calculate a [Catalog Service health score](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/CatalogServiceHealthScore.kql) in the Mission-critical Online reference implementation:
 
 ```kql
 CatalogServiceHealthStatus()
@@ -119,11 +119,12 @@ CatalogServiceHealthStatus()
 ```
 
 > [!TIP]
-> [More examples](https://github.com/Azure/Mission-Critical-Online/tree/feature/reactflowtest/src/infra/monitoring/queries) can be found in the Mission-critical Online GitHub repository.
+>
+> For more [query examples](https://github.com/Azure/Mission-Critical-Online/tree/feature/reactflowtest/src/infra/monitoring/queries), see the Mission-critical Online GitHub repository.
 
 ## Set up query-based alerts
 
-Alerts are an important part of the overall operations strategy. Proactive monitoring such as the use of dashboards should be used with alerts that raise immediate attention to issues.
+Alerts are an important part of the overall operations strategy. Use proactive monitoring, such as the use of dashboards, with alerts that raise immediate attention to issues.
 
 These alerts form an extension of the health model, by alerting the operator to a change in health state, either to a degraded/yellow state or to an unhealthy/red state. By setting the alert to the root node of the health model, the operator is immediately aware of any business-level effect to the state of the solution. The operator can then direct their attention to the health model visualization for troubleshooting.
 
@@ -137,4 +138,4 @@ A common way to visualize system health information is to use dashboards as a wa
 
 ![Example health model dashboard showing layered model followed by drill-down data tables](../media/health-dashboard-example.png)
 
-Microsoft provides several data visualization technologies, including Azure Dashboards, Power BI, and Azure Managed Grafana. Azure Dashboards provides a tightly integrated out-of-the-box visualization solution for operational data within Azure Monitor. However, if you can't use Azure Dashboards to accurately represent the health model, then it's recommended to consider Grafana as an alternative visualization solution. Grafana provides market-leading capabilities and an extensive open-source plugin ecosystem.
+Microsoft provides several data visualization technologies, including Azure Dashboards, Power BI, and Azure Managed Grafana. Azure Dashboards provides a tightly integrated out-of-the-box visualization solution for operational data within Azure Monitor. However, if you can't use Azure Dashboards to accurately represent the health model, then consider using Grafana as an alternative visualization solution. Grafana provides market-leading capabilities and an extensive open-source plugin ecosystem.

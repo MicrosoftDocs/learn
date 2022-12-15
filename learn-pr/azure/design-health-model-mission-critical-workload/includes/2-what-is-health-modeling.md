@@ -1,10 +1,10 @@
-Health modeling and observability are essential concepts to maximize reliability, which focuses on robust and contextualized instrumentation and monitoring. These concepts provide critical insight into application health, promoting the swift identification and resolution of issues.
+Health modeling allows you to maximize reliability for your application. It focuses on thorough instrumentation and monitoring, which provides critical insight into your application's health. With this insight, you can quickly identify and resolve issues.
 
 ## Problem context
 
-Most mission-critical applications are significant in terms of both scale and complexity and therefore generate high volumes of operational data, which makes it challenging to evaluate and determine optimal operational action.
+Most mission-critical applications are significant in terms of both scale and complexity, and  generate high volumes of operational data. This setup can make it challenging to evaluate the state of an application and determine the optimal action to take to correct faults.
 
-Health modeling ultimately strives to maximize observability by augmenting raw monitoring logs and metrics with key business requirements to quantify application health and drive automated evaluation of health states.
+Health modeling maximizes observability by augmenting raw data logs and metrics with key business requirements to quantify an application's health and drive automated evaluation of its health states.
 
 ## Advantages of health monitoring
 
@@ -18,8 +18,8 @@ In a layered health model:
 
 - The foundational layer should consider individual application components, such as Azure resources.
 - Foundational components are aggregated alongside key non-functional requirements to build a business-contextualized lens into the health of system flows.
-- System flows should be aggregated with appropriate weights based on business criticality to build a meaningful definition of overall application health. Financially significant or customer-facing user flows should be prioritized.
-- Each layer of the health model captures what its healthy and unhealthy states represent. The health model uses these layered health definitions to inform critical monitoring metrics across all system components and validate operational subsystem composition.
+- System flows are aggregated with appropriate weights based on business criticality to build a meaningful definition of overall application health. Financially significant or customer-facing user flows are prioritized.
+- Each layer captures what its healthy and unhealthy states represent. The health model uses these layered health definitions to inform critical monitoring metrics across all system components and validate operational subsystem composition.
 
 ![Diagram showing the architecture for a typical layered health model.](../media/layered-health-model-example.png)
 
@@ -38,4 +38,4 @@ Users with any of the following roles typically design and use a health model:
 
 ## How to get started
 
-To do the health modeling exercise, you must have a deep understanding of the system and its expected performance. Start by defining all user flows and mapping dependencies between functional and logical components. Also map out the dependencies between Azure resources.
+To do the health modeling exercise, you must have a deep understanding of the system and its expected performance. Start by defining all user flows and mapping dependencies between functional and logical components. Also, map out the dependencies between Azure resources.
