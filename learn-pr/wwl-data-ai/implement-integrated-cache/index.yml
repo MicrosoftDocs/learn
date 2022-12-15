@@ -2,8 +2,8 @@
 uid: learn.wwl.implement-integrated-cache
 metadata:
   title: Implement integrated cache in Azure Cosmos DB for NoSQL
-  description: "Implement, configure, and monitor integrated cache in Azure Cosmos DB for NoSQL."
-  ms.date: 10/18/2022
+  description: "Implement integrated cache in Azure Cosmos DB for NoSQL"
+  ms.date: 12/13/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

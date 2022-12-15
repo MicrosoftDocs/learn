@@ -24,7 +24,7 @@ levels:
 roles:
 - student
 products:
-- "vs-code"
+- azure
 units:
 - learn.student-evangelism.web-development-101-if-else.introduction
 - learn.student-evangelism.web-development-101-if-else.decisions-overview
