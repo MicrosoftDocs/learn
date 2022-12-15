@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 ### YamlMime:ModuleUnit
-uid: learn.build-chat-app-web-pubsub.5-configure-continous-delivery
+uid: learn.build-chat-app-web-pubsub.5-configure-continuous-delivery
 title: Configure continuous delivery
 metadata:
   title: Configure continuous delivery
@@ -13,4 +13,4 @@ metadata:
   ms.contributors: jixin, v-glennminch
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-configure-continous-delivery)]
+  [!include[](includes/5-configure-continuous-delivery)]
