@@ -2,19 +2,19 @@
 uid: learn.wwl.configure-azure-container-instances
 metadata:
   title: Configure Azure Container Instances
-  description: "You will learn how to configure Azure Container Instances including container groups."
-  ms.date: 10/20/2022
+  description: "Learn how to configure Azure Container Instances including container groups."
+  ms.date: 12/15/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure Azure Container Instances
-summary: You will learn how to configure Azure Container Instances including container groups.
+summary: Learn how to configure Azure Container Instances including container groups.
 abstract: |
-  After completing this module, you will be able to:
+  In this module, you learn how to:
   - Identify when to use containers versus virtual machines.
   - Identify the features and usage cases of Azure Container Instances.
-  - Implement Azure Container Groups.
+  - Implement Azure container groups.
 prerequisites: |
   None
 iconUrl: /training/achievements/azure-container-instance-configure.svg
