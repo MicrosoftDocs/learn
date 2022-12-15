@@ -1,4 +1,4 @@
-In this module we introduced you to testing, an essential part of software engineering. First, you learned about `unittest`, Python's standard library testing module and how to write tests with it. Then, you looked at some of the challenges with testing, including coverage, slow tests, and how that affects the quality of code.
+In this module we introduced you to testing, an essential part of software engineering. First, you learned about `unittest`, Python's standard library testing module and how to write tests with it. Then, you looked at some of the challenges with testing, including code coverage, slow tests, and how that affects the quality of code.
 
 Finally, you went through the different types of testing and how to apply them in a Continuous Integration system.
 
