@@ -1,6 +1,6 @@
 Some applications have so much incoming traffic that the single server hosting them becomes overwhelmed and can't respond to client requests in a timely manner. Instead of continuously adding network capacity, processors, disk resources, and RAM, you can address this traffic by implementing load balancing. Load balancing is a process in which you distribute incoming traffic equitably across multiple computers. A pool of computers that have lower levels of resources often responds to traffic more effectively than a single server with higher performance. 
 
-Azure Load Balancer is an Azure service that allows you to evenly distribute incoming network traffic across a group of Azure VMs or instances in a virtual machine scale set. Load Balancer delivers high availability and network performance in the following ways:  
+Azure Load Balancer is an Azure service that allows you to evenly distribute incoming network traffic across a group of Azure VMs or instances in a Virtual Machine Scale Set. Load Balancer delivers high availability and network performance in the following ways:  
 
 - Load-balancing rules determine how traffic is distributed to instances that comprise the back end.
 - Health probes ensure the resources in the back end are healthy and that traffic isn't directed to unhealthy back-end instances.
