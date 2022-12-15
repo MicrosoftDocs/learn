@@ -18,7 +18,7 @@ abstract: |
   - Create an Azure DevOps pipeline that builds and deploys a basic Node.js application to Azure App Service.
 prerequisites: |
   - An Azure subscription
-  - An Azure DevOps organization
+  - An Azure DevOps organization with access to parallel jobs
   - A GitHub account
 iconUrl: /training/achievements/azure-devops/deploy-nodejs.svg
 levels:
