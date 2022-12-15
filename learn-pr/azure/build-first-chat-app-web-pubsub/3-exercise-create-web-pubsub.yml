@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.build-chat-app-web-pubsub.3-exercise-create-web-pubsub
+title: Exercise - Create a Web PubSub resource
+metadata:
+  title: Exercise - Create a Web PubSub resource
+  description: Exercise - SCreate a Web PubSub resource
+  ms.date: 09/27/2022
+  author: vicancy
+  ms.author: lianwei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.contributors: jixin, v-glennminch
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-exercise-create-web-pubsub.md)]
