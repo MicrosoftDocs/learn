@@ -14,7 +14,7 @@ Resources:
 
 Error Handling Libraries:
 
-- [Polly .NET](https://dotnetfoundation.org/projects/polly)
+- [Polly .NET](https://old.dotnetfoundation.org/projects/polly)
 - [Polly.JS](https://www.npmjs.com/package/polly-js)
 - [Resilience4j](https://github.com/resilience4j/resilience4j)
 - [Transient Fault Handling Application Block](https://www.nuget.org/packages/EnterpriseLibrary.TransientFaultHandling/)
