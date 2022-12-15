@@ -19,7 +19,7 @@ At the top of this page, select the tab that represents your operating system.
 
 To determine if your Windows computer already has Python 3:
 
-1. To open the Command Prompt app, go to **Start** on the Windows Taskbar.
+1. To open the **Command Prompt** app, go to **Start** on the Windows Taskbar.
 1. Enter **cmd** in the Windows search box and select the **Command Prompt App** in the **Best match** results.
 1. Enter the following command and then press <kbd>Enter</kbd>:
 
@@ -34,7 +34,7 @@ To determine if your Windows computer already has Python 3:
     ```
 
     > [!NOTE]
-    > Running `python --version` or `py --version` may not return a value, or may return an error message stating *'python' is not recognized as an internal or external command, operable program or batch file.* This indicates Python is not installed on your Windows system.
+    > Running `python --version` or `py --version` may not return a value, or may return an error message stating *'py' is not recognized as an internal or external command, operable program or batch file.* This indicates Python is not installed on your Windows system.
 
     If you see the word `Python` with a set of numbers separated by `.` characters, some version of Python is installed. Here's an example of the output you might see:
 
