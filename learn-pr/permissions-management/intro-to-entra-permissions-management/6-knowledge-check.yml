@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'What is CIEM?'
+  - content: What does CIEM stand for?
     choices:
     - content: "Cloud Infrastructure Environments Management"
       isCorrect: false
@@ -26,8 +26,8 @@ quiz:
     - content: "Cloud Infrastructure Efficiency Management"
       isCorrect: false
       explanation: "Incorrect. CIEM does not stand for Cloud Infrastructure Efficiency Management."
-  - content: 'Permissions Management allows you to address which three use cases in securing and managing identity permissions in cloud environments?
-    choices:
+  - content: Permissions Management allows you to address which three use cases in securing and managing identity permissions in cloud environments?
+    choices: 
     - content: "discover, remediate, and monitor"
       isCorrect: true
       explanation: "Correct. Permissions Management allows you to address discovery, remediation, and monitoring."
@@ -37,7 +37,7 @@ quiz:
     - content: "detection, readiness, and monitoring"
       isCorrect: false
       explanation: "Incorrect. Detection and readiness are not key use cases that Permissions Management helps to address."
-  - content: 'At what time frame does the Permissions Management Architecture SaaS Service process raw entitlement and activity?'
+  - content: At what time frame does the Permissions Management Architecture SaaS Service process raw entitlement and activity?
     choices:
     - content: "At 90 days."
       isCorrect: true
@@ -48,3 +48,28 @@ quiz:
     - content: "At 120 days."
       isCorrect: false
       explanation: "Incorrect. The Sass Service does not process the raw entitlement and activity at a 120-day window."
+  - content: Which of the following *is not* part of the principal of least privilege access? 
+    choices:
+    - content: "Monitor and detect anomalies"
+      isCorrect: false
+      explanation: "Incorrect. Monitor and detect anomalies is part of the principal of least privilege."
+    - content: "Uncover permissions risk"
+      isCorrect: false
+      explanation: "Incorrect. Uncover permissions risk is part of the principal of least privilege."
+    - content: "Rapid identity deployment"
+      isCorrect: true
+      explanation: "Correct. Rapid identity deployment is not part of the principal of least privilege."
+  - content: Identity Governance & Administration (IGA) complements CIEM by giving organizations the ability to do the following cross services and application both on-premises and in cloud environments?
+    choices: 
+    - content: Govern the identity lifecycle, govern the identity access lifecycle, secure privileged access for Administration
+      isCorrect: true
+      explanation: Identity Governance & Administration (IGA) complements CIEM by giving organizations the ability to govern the identity lifecycle, govern the identity access lifecycle, secure privileged access for administration
+    - content: Govern the identity access lifecycle, secure the identity lifecycle, secure all identities    
+      isCorrect: false
+      explanation: Identity Governance & Administration (IGA) does not complement CIEM by giving organizations the ability to govern the identity access lifecycle, secure the identity access lifecycle, secure all identities
+    - content: Govern the identity lifecycle, secure privileged identities, govern the identity access lifecycle
+      isCorrect: false
+      explanation: Identity Governance & Administration (IGA) does not complement CIEM by giving organizations the ability to govern the identity lifecycle, secure privileged identities, govern the identity access lifecycle
+      
+    
+    
