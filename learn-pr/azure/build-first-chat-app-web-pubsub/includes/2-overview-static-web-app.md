@@ -1,6 +1,6 @@
-:::image type="content" source="media/tutorial-serverless-static-web-app/tutorial-serverless-static-web-app.png" alt-text="Diagram showing how Azure Web PubSub works with Azure Static Web Apps." border="false":::
+:::image type="content" source="media/tutorial-serverless-static-web-app.png" alt-text="Diagram showing how Azure Web PubSub works with Azure Static Web Apps." border="false":::
 
-GitHub (or Azure Repos) providessource control for Static Web Apps. Azure monitors the repo branch you select, and every time there's a code change to the source repo, a new build of your web app is automatically run and deployed to Azure. Continuous delivery is provided by GitHub Actions (or Azure Pipelines). Static Web Apps detects the new build and presents it to the end user.
+In this module, GitHub provides source control for Static Web Apps; Azure Repos is an alterntaive. Azure monitors the repo branch you select, and every time there's a code change to the source repo, a new build of your web app is automatically run and deployed to Azure. Continuous delivery is provided by GitHub Actions (or, alternatively, Azure Pipelines). Static Web Apps detects the new build and presents it to the end user.
 
 The sample chat room application provided with this module has the following workflow.
 
@@ -10,4 +10,4 @@ The sample chat room application provided with this module has the following wor
 1. The Functions `validate` API is triggered periodically for [CloudEvents Abuse Protection](https://github.com/cloudevents/spec/blob/v1.0/http-webhook.md#4-abuse-protection) when the events in Azure Web PubSub are configured with predefined parameter `{event}`, that is, https://$STATIC_WEB_APP/api/{event}.
 
 > [!NOTE]
-> The Functions APIs `connect` and `message` are triggered when Azure Web PubSub service is configured with these two events.
+> The Functions APIs `connect` and `message` are triggered when the Azure Web PubSub service is configured with these two events. 

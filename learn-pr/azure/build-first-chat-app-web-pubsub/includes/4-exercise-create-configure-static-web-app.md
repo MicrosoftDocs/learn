@@ -1,7 +1,7 @@
 This module uses a GitHub template repository to make it easy for you to get started. The template features a starter app that you will deploy to Azure Static Web Apps.
 
 1. Go to [https://github.com/Azure/awps-swa-sample/generate](https://github.com/login?return_to=/Azure/awps-swa-sample/generate) to create a new repo for this tutorial.
-1. Select yourself as **Owner** and use the default name for your repository: **awps-swa-sample**. If you choose a different name, make sure you update the repository name used in the following GitHub commands.
+1. Select yourself as **Owner** and use the default name for your repository: **awps-swa-sample**. If you choose a different name, make sure you update the repo name used in the following GitHub commands.
 1. You can create a **Public** or **Private** repo according to your preference. Either works for this module.
 1. Select **Create repository from template**.
 
@@ -12,7 +12,7 @@ Now that the repository is created, you can create a static web app from the Azu
 1. Create a variable to hold your GitHub user name.
 
     ```azurecli
-    GITHUB_USER_NAME=<YOUR_GITHUB_USER_NAME>
+    GITHUB_USER_NAME=<Your_GitHub_user_name>
     ```
 
 1. Create a new static web app from your repository. When you run this command, the CLI starts a GitHub interactive sign-in. Follow the message to complete authorization.
@@ -34,7 +34,7 @@ Now that the repository is created, you can create a static web app from the Azu
     > [!IMPORTANT]
     > The URL passed to the `--source` parameter must not include the `.git` suffix.
 
-1. Go to **https://github.com/login/device**.
+1. Go to `https://github.com/login/device`.
 
 1. Enter the user code as displayed your console's message.
 
@@ -70,7 +70,7 @@ Before you can navigate to your new static site, the deployment build must first
 
     At this point, Azure is creating the resources to support your static web app. Wait until the icon next to the running workflow turns into a check mark with green background ✅. This operation may take a few minutes to complete.
 
-    Once the operation succeeds the workflow is complete and you can return to your console window.
+    Once the operation succeeds, the workflow is complete and you can return to your console window.
 
 1. Run the following command to query for your website's URL and store the value in the `STATIC_WEB_APP` variable.
 

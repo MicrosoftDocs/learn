@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.build-first-chat-app-web-pubsub.5-configure-continous-delivery
+title: Configure continuous delivery
+metadata:
+  title: Configure continuous delivery
+  description: Configure continuous delivery of the static web app
+  ms.date: 12/14/2022
+  author: dlepow
+  ms.author: danlep
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.contributors: jixin, v-glennminch
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-configure-continous-delivery)]
