@@ -23,7 +23,7 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
 
     ```azurecli
        git clone https://github.com/MicrosoftDocs/ms-learn-azure-monitor-workbooks.git
-       cd ms-learn-azure-monitor-workbooks/Resources/
+       cd ms-learn-visualize-data-workbooks/Resources/
        az deployment group create --resource-group $resourceGroup --template-file deploy-resources.bicep
     ```
 
