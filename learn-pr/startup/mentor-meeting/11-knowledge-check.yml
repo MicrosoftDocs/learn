@@ -23,7 +23,7 @@ quiz:
       explanation: "In order to make the most valuable use of time, you should spend time researching your mentor and preparing for the meeting."
     - content: "Ask the mentor to invest in your company"
       isCorrect: false
-      explanation: "While investors often mentor, a mentor's job is to provide advice for you, not capital."
+      explanation: "While investors often mentor, a mentor's job is to provide advice for you, not financial support."
     - content: "Wait for the mentor to drive the relationship"
       isCorrect: false
       explanation: "This is your opportunity to drive the relationship with the mentor. You are in charge."
