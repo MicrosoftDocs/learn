@@ -38,7 +38,7 @@ Each service includes:
 - One or more data flow policy rules, which identify the SDFs to which the service should be applied.
 - Optionally, a set of QoS characteristics that should be applied on SDFs matching the service. The packet core instance will use these characteristics to create a QoS flow or EPS bearer to bind to matching SDFs.
 
-A SIM policy defines a set of interoperability settings that can be assigned to one or more SIMs. You'll need to assign a SIM policy to a SIM before the UE using that SIM can access the private mobile network.
+A SIM policy defines a set of interoperability settings that can be assigned to one or more SIMs.
 
 Each SIM policy includes:
 
@@ -66,7 +66,7 @@ When you first design the policy control configuration for a private mobile netw
 
 For details, see [Policy control](/azure/private-5g-core/policy-control).
 
-### Configure a service
+### Configure a service through the Azure portal
 
 Services are representations of a particular set of QoS information that you want to offer to UEs. For example, you may want to configure a service that provides higher bandwidth limits for particular traffic.
 
@@ -76,9 +76,9 @@ To create a new service, take the following steps:
 1. Open the Mobile Network resource representing the private mobile network for which you want to create the service.
 1. Select **Services** from the resource menu and then select the **Create** button.
 
-   The Create a service screen is displayed, as shown below:
+   The **Create a service** screen is displayed, as shown below:
 
-   :::image type="content" source="../media/sim-create-a-service.png" alt-text="A screenshot showing the an example service creation screen." border="true":::
+   :::image type="content" source="../media/sim-create-a-service.png" alt-text="A screenshot showing an example service creation screen." border="true":::
 
 1. Specify appropriate values for each field.
 
@@ -87,7 +87,7 @@ To create a new service, take the following steps:
 To modify or delete an existing service, take the following steps:
 
 1. Open the Mobile Network resource representing the private mobile network for which you want to modify or delete the service.
-1. Select **Services** from the resource menu
+1. Select **Services** from the resource menu.
 1. Proceed with one of the following operations:
 
    - To modify a service, select it and then select **Modify service**.
@@ -95,6 +95,40 @@ To modify or delete an existing service, take the following steps:
 
 For detailed instructions on configuring a service, see [Configure a service for Azure Private 5G Core](/azure/private-5g-core/configure-service-azure-portal).
 
-### Configure a SIM policy
+### Configure a SIM policy through the Azure portal
+
+A SIM policy defines a set of interoperability settings that can be assigned to one or more SIMs. It also defines the default QoS settings for any services that use the policy. You'll need to assign a SIM policy to a SIM before the UE using that SIM can access the private mobile network.
+
+To create a new SIM policy, take the following steps:
+
+1. Collect all the [configuration values](/azure/private-5g-core/collect-required-information-for-sim-policy) for the policy.
+1. Open the Mobile Network resource representing the private mobile network for which you want to create the service.
+1. Select **SIM policies** from the resource menu and then select the **Create** button.
+
+   The **Create a SIM policy** screen is displayed, as shown below:
+
+   :::image type="content" source="../media/sim-create-a-sim-policy.png" alt-text="A screenshot showing an example SIM policy creation screen." border="true":::
+
+1. Specify appropriate values for each field.
+
+   To configure the network scope you want to use for this policy, select the **Add a network scope** button to add a rule. SIM policies also define the default QoS settings for any services that use the policy. You can override the default SIM policy QoS settings on a per-service basis.
+
+> [!TIP]
+> At the end of the SIM policy creation process, you can optionally assign this SIM policy to one or more existing provisioned SIMs.
+
+To modify or delete an existing SIM policy, take the following steps:
+
+1. Open the Mobile Network resource representing the private mobile network for which you want to modify or delete the SIM policy.
+1. Select **SIM policies** from the resource menu.
+1. Proceed with one of the following operations:
+
+   - To modify a SIM policy, select it and then select **Modify the selected SIM policy**.
+   - To delete a SIM policy, select it and then select **Delete**.
+
+For detailed instructions on configuring a SIM policy through the Azure portal, see [Configure a SIM policy - Azure portal](/azure/private-5g-core/configure-sim-policy-azure-portal).
+
+### Configure a service and a SIM policy through an ARM template
+
+
 
 ## Manage SIMs and SIM groups

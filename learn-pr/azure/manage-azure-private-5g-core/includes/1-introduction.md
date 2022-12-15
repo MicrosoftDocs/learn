@@ -6,7 +6,9 @@ After the learning, you'll need to do some exercises in the Knowledge Check unit
 
 ## Methods for completing management tasks
 
-You can complete many management tasks by using either the Azure portal or an Azure Resource Manage template (ARM template). While the Azure portal provides intuitive graphical user interface (GUI), an ARM template can help you quickly complete repetitive steps. For example, with an ARM template, you can deploy multiple sites or provision multiple SIMs in one go. Where applicable, this module provides instructions for using both the Azure portal and an ARM template to complete a task.
+You can complete many management tasks by using either the Azure portal or an [Azure Resource Manage template](/azure/azure-resource-manager/templates/overview) (ARM template). An ARM template is a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your project.
+
+While the Azure portal provides intuitive graphical user interface (GUI), an ARM template can help you quickly complete repetitive steps. For example, with an ARM template, you can deploy multiple sites or provision multiple SIMs in one go. Where applicable, this module provides instructions for using both the Azure portal and an ARM template to complete a task.
 
 > [!NOTE]
 >
