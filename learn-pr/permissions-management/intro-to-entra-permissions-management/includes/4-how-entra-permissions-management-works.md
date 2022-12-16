@@ -1,6 +1,6 @@
 ## How does Permissions Management work? ##
 
-With Microsoft Entra Permissions Management, your organization can adopt a new, dynamic approach to managing identities and permissions in multicloud environments. 
+With Microsoft Entra Permissions Management, your organization can adopt a new, dynamic approach to managing identities and permissions in multicloud environments.
 
 :::image type="content" source="../media/manage-permissions-dynamic-approach.png" alt-text="Permissions Management dynamic approach."lightbox="../media/manage-permissions-dynamic-approach.png":::
 
@@ -13,50 +13,58 @@ Permissions Management allows you to address three key use cases in securing and
 :::image type="content" source="../media/discover-remediate-monitor.png" alt-text="Image of the Discover, Remediate, and Monitor workflow of Entra Permisssions Management."lightbox="../media/discover-remediate-monitor.png":::
 
 ### Discover & Assess ###
+
 Permissions Management gives you visibility to discover and assess permissions risk by evaluating the gap between permissions granted versus permissions used in the Permissions Management UI.
 
 - Permissions usage analytics provide a multi-dimensional view of permissions risk for all identities, actions, and resources across AWS, Azure and GCP.
-- The Permissions Creep Index (PCI) allows you to easily assess risk by evaluating the gap between permissions granted and permissions used. PCI is an aggregated metric that regularly evaluates the level of risk associated with the number of unused or excessive permissions across identities and resources. It also measures how much damage identities might cause based on which resources they have access to. 
+- The Permissions Creep Index (PCI) allows you to easily assess risk by evaluating the gap between permissions granted and permissions used. PCI is an aggregated metric that regularly evaluates the level of risk associated with the number of unused or excessive permissions across identities and resources. It also measures how much damage identities might cause based on which resources they have access to.
 
-<iframe src="https://microsoft.sharepoint.com/teams/MicrosoftEntraPermissionsManagementAssets/_layouts/15/embed.aspx?UniqueId=685902ca-9d1a-401c-a0de-cd65e429b558" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Dashboard.gif"></iframe>
+![Permissions Management dashboard](../Dashboard.gif)
 
 
 ### Remediate & Manage ###
-Permissions Management evaluates and creates right-size permissions based on usage, grants new permissions on-demand, and automates just-in-time access for cloud resources.
-- Simplify permissions right-sizing and least privilege role creation across any cloud platform; AWS, Azure, or GCP.
-- Automated deletion provides efficiency of security with automatic removal of permissions that have been unused for the past 90 days. 
-- Grant identity permissions on-demand with a self-service workflow for a limited time period or an as-needed basis. 
 
-<iframe src="https://microsoft.sharepoint.com/teams/MicrosoftEntraPermissionsManagementAssets/_layouts/15/embed.aspx?UniqueId=ff7ac8b3-8a00-486f-b499-7010f8718dc4" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Policy Creation.gif"></iframe>
+Permissions Management evaluates and creates right-size permissions based on usage, grants new permissions on-demand, and automates just-in-time access for cloud resources.
+
+- Simplify permissions right-sizing and least privilege role creation across any cloud platform; AWS, Azure, or GCP.
+- Automated deletion provides efficiency of security with automatic removal of permissions that have been unused for the past 90 days.
+- Grant identity permissions on-demand with a self-service workflow for a limited time period or an as-needed basis.
+
+![Permissions Management role policy creation](../Policy%20Creation.gif)
 
 ### Monitor & Alert ###
-Detect anomalous activities with machine language-powered (ML-powered) alerts and generate detailed forensic reports. 
+
+Detect anomalous activities with machine language-powered (ML-powered) alerts and generate detailed forensic reports.
+
 - ML-powered anomaly detections provide increased efficiency in detecting unexpected shifts in activity.
 - Context-rich forensic reports show information on identities, actions, and resources to support rapid investigation and remediation.
 - Integration of the Defender for Cloud dashboard empowers you to manage the security of all cloud resources in one interface.
 
-<iframe src="https://microsoft.sharepoint.com/teams/MicrosoftEntraPermissionsManagementAssets/_layouts/15/embed.aspx?UniqueId=3193f38b-51b9-4a41-9455-1e71d89f85d7" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Alerts.gif"></iframe>
+![Permissions Management creating alerts](../Alerts.gif)
+
 
 ### Minimize permission risks with Permissions Management ###
 
 Now see some of these concepts and features of Permissions Management in action.
-> [!VIDEO https://mslearn.cloudguides.com/guides/Minimize%20permission%20risks%20with%20Microsoft%20Entra%20Permissions%20Management]
+> [!VIDEO <https://mslearn.cloudguides.com/guides/Minimize%20permission%20risks%20with%20Microsoft%20Entra%20Permissions%20Management>]
 
 This interactive video will help you to become more familiar with what securing permissions in your multicloud environment will look like with Microsoft Entra Permissions Management. Learn how, with Permissions Management, you can get granular cross-cloud visibility, enforce principle of least privilege, and continuously monitor permissions.
 
 ### Permissions Management Architecture ###
-The Permissions Management architecture is comprised of data processing and analytics and data collection that create a SaaS structure. 
+
+The Permissions Management architecture is comprised of data processing and analytics and data collection that create a SaaS structure.
 
 :::image type="content" source="../media/epm_architecture.png" alt-text="Screen with Entra Permissions Management architecture."lightbox="../media/epm_architecture.png":::
 
 #### SaaS Service ####
+
 - Responsible for processing the raw entitlement and activity data over a 90-day window, and making it available for the application to query.
 - Receives raw files from the Collector Service containing entitlement and activity data.
 - Data processing and analytics are done on these raw files to generate the usage metrics and reports that you see in the product.
 - Cloud Object Storage stores the raw data files that the collector service uploaded.
 - Data Lake is used to help with data analytics related to alerting. Know whether an activity triggered an alert through a data lake.
 - Cloud database serves all of our pages/tabs in Entra Permissions Management.
-- Data Collector configures the collector service with the appropriate credentials to access the cloud service providers. This service collects data every hour. 
+- Data Collector configures the collector service with the appropriate credentials to access the cloud service providers. This service collects data every hour.
 
 #### Key Terminology ####
 
@@ -65,4 +73,3 @@ Below are some key terms used within the Permissions Management framework.
 :::image type="content" source="../media/epm-architecture-terminology.png" alt-text="Screen with Entra Permissions Management Architecture key terminology."lightbox="../media/epm-architecture-terminology.png":::
 
 To familiarized yourself more with terms used in the world of Entra Permissions Management and understand the role Permissions Management plays in cloud operations and security, see the [Microsoft Entra Permissions Management Glossary](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE50HaO?culture=en-us&country=UShttps://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE50HaO?culture=en-us&country=US)
-

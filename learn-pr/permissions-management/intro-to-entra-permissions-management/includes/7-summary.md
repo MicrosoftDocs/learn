@@ -14,7 +14,7 @@ Now that you've reviewed this module, you should be able to:
 
 ## Use these resources to discover more
 
-**Microsoft Learn**: [Permissions management documentation](https://learn.microsoft.com/azure/active-directory/cloud-infrastructure-entitlement-management/).
+**Microsoft Learn**: [Permissions management documentation](https://aka.ms/CIEM)
 
 **Datasheet:** <https://aka.ms/PermissionsManagementDataSheet>
 

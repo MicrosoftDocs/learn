@@ -10,7 +10,7 @@ As company workflows and system applications continue to move to the cloud envir
 
 Managing permissions with a CIEM approach in your organization allows you to prevent what's called Permissions Gap.  
 
-![Image of statistics and primary drivers for growth for CIEM](../media/permissions-gap.png)
+![Image showing the gap between Permissions Granted and Permissions Used](../media/permissions-gap.png)
 
 Permissions Gap is the space in which permissions granted go unused or unmonitored. Permissions Gap can  become a problem as it expands the attack surface in your organization's cloud infrastructure, and leaves you open to risk of a security breach from accidental or malicious permissions use. 
 
