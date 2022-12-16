@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/05/2022
+  ms.date: 12/08/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -15,25 +15,36 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following technologies typically provide an ingestion point for data streaming in an event processing solution that uses _static_ data as a source?"
+  - content: "Which definition of stream processing is correct?"
     choices:
-    - content: "Azure IoT Hub"
-      isCorrect: false
-      explanation: "That's not the correct answer. Azure IoT Hub provides an ingestion point for data streaming in an event processing solution using _streaming_ data as a source."
-    - content: "Azure Blob storage"
+    - content: "Data is processed continually as new data records arrive."
       isCorrect: true
-      explanation: "That's the correct answer. Azure Blob storage provides an ingestion point for data streaming in an event processing solution that uses _static_ data as a source."
-    - content: "Azure Event Hubs"
+      explanation: "Correct. Stream processing is used to continually process new data as it arrives."
+    - content: "Data is collected in a temporary store, and all records are processed together as a batch."
       isCorrect: false
-      explanation: "That's not the correct answer. Azure Event Hubs provides an ingestion point for data streaming in an event processing solution using _streaming_ data as a source."
-  - content: "To consume processed event streaming data in near-real-time to produce dashboards containing rich visualizations, which of the following services should you use?"
+      explanation: "Incorrect. Collecting and processing data periodically as a batch is referred to as batch processing."
+    - content: "Data that is incomplete or contains errors is redirected to separate storage for correction by a human operator."
+      isCorrect: false
+      explanation: "Incorrect. When incomplete or erroneous data is often logged, but isn't usually analyzed as a stream."
+  - content: "You need to process a stream of sensor data, aggregating values over one minute windows and storing the results in a data lake. Which service should you use?"
     choices:
+    - content: "Azure SQL Database"
+      isCorrect: false
+      explanation: "Incorrect. Azure SQL Database is a relational data store - not a stream processing engine."
     - content: "Azure Cosmos DB"
       isCorrect: false
-      explanation: "Incorrect. Azure Cosmos DB is a fully-managed NoSQL database for modern app development. It can be used to store the output of data stream processing in Azure Stream Analytics but does not provide the functionality to create dashboards or visualizations."
-    - content: "Event Hubs"
-      isCorrect: false
-      explanation: "Incorrect. Azure Event Hubs is a big data streaming platform and event ingestion service, which you can use to feed events from event producers into Azure Stream Analytics."
-    - content: "Power BI"
+      explanation: "Incorrect. Azure Cosmos DB is a data storage solution for multiple types of data, but doesn't provide stream processing functionality."
+    - content: "Azure Stream Analytics"
       isCorrect: true
-      explanation: "Correct. Power BI provides a platform for visualizing and analyzing aggregated data in near-real-time. Azure Stream Analytics can target Power BI as an output destination. Processed data is passed into Power BI to facilitate near-real-time dashboard updates."
+      explanation: "Correct. Azure Stream Analytics is a stream processing engine."
+  - content: "You want to aggregate event data by contiguous, fixed-length, non-overlapping temporal intervals. What kind of window should you use?"
+    choices:
+    - content: "Sliding"
+      isCorrect: false
+      explanation: "Incorrect. Sliding windows are not contiguous."
+    - content: "Session"
+      isCorrect: false
+      explanation: "Incorrect. Session windows only include concurrent events."
+    - content: "Tumbling"
+      isCorrect: true
+      explanation: "Correct. Tumbling windows define contiguous, fixed-length, non-overlapping windows."

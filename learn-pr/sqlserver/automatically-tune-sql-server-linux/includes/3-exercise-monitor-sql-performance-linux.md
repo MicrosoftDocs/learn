@@ -8,7 +8,7 @@ You want to use Azure Data Studio to display SQL Server performance counters and
 
 Start by creating a virtual machine, and use an image that includes SQL Server 2019:
 
-1. Use the cloud shell on the right, and Azure CLI commands to create an Ubuntu LTS SQL server.
+1. Use the Cloud Shell and Azure CLI commands to create an Ubuntu LTS SQL server.
 
     ```azurecli
     export PASSWORD=$(openssl rand -base64 32)
@@ -42,22 +42,22 @@ Now you have an Ubuntu VM, ready to install SQL Server on, you connect to it by 
     ssh ubuntuadmin@$IPADDRESS
     ```
 
-1. When asked if you're sure, type **yes**, and then press Enter.
-1. For the password, use the password from above, and then press Enter. SSH connects to the VM and shows a bash shell.
+1. When asked if you're sure, type **yes**, and then press <kbd>Enter</kbd>.
+1. For the password, use the password from above, and then press <kbd>Enter</kbd>. SSH connects to the VM and shows a bash shell.
 
 ## Configure SQL Server
 
 Before you use SQL Server, you must change the system administrator password:
 
-1. To configure SQL Server, in the Terminal window, type the following command, and then press Enter:
+1. To configure SQL Server, in the Terminal window, type the following command, and then press <kbd>Enter</kbd>:
 
     ```bash
     sudo systemctl stop mssql-server
     sudo /opt/mssql/bin/mssql-conf set-sa-password
     ```
 
-1. For the system administrator password, type **Pa$$w0rd**, and then press Enter.
-1. Confirm the password then press Enter.
+1. For the system administrator password, type **Pa$$w0rd**, and then press <kbd>Enter</kbd>.
+1. Confirm the password then press <kbd>Enter</kbd>.
 1. To restart SQL Server 2019, type this command:
 
     ```bash
@@ -165,10 +165,10 @@ Azure Data Studio will run on the Ubuntu virtual machine that you created. Howev
 
 Now that everything is installed, you'll connect to the virtual machine with RDP, so you can run Azure Data Studio.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) left menu, select **Virtual machines**, and then click your virtual machine.
-1. On the **Overview** page, click **Connect**, and then select **RDP**.
-1. Click **Download RDP File**, and open the file with your RDP client.
-1. If you're warned that the publisher can't be identified, click **Connect**. If you're warned that the identity of the remote computer can't be verified, click **Yes**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) left menu, select **Virtual machines**, and then select your virtual machine.
+1. On the **Overview** page, select **Connect**, and then select **RDP**.
+1. Select **Download RDP File**, and open the file with your RDP client.
+1. If you're warned that the publisher can't be identified, select **Connect**. If you're warned that the identity of the remote computer can't be verified, select **Yes**.
 1. Log in to the Ubuntu server with the username **ubuntuadmin** and the password that you recorded above.
 1. In the **Panel** dialog, select **Use default config**.
 1. In the top-left corner, select **Applications**, point to **Development**, and then select **Azure Data Studio**.
@@ -177,7 +177,7 @@ Now that everything is installed, you'll connect to the virtual machine with RDP
 
 Let's create a database that's used to simulate load.
 
-1. In Azure Data Studio, in the **Connection** dialog, use these values:
+1. In Azure Data Studio, in the **Connection** dialog, use the following values, and then select **Connect**.
 
     | Property | Value |
     | --- | --- |
@@ -188,7 +188,7 @@ Let's create a database that's used to simulate load.
     | Password | Pa$$w0rd |
     | | |
 
-1. To enable preview features, which include the restore functionality, click **File**, point to **Preferences**, and then click **Settings**.
+1. To enable preview features, which include the restore functionality, select **File**, point to **Preferences**, and then select **Settings**.
 1. Select **Workbench**, and then under **Enable Preview Features**, select **Enable unreleased preview features**.
 1. Switch to the **localhost** tab, and then in the **Tasks** pane, select **Restore**.
 1. On the **General** tab, use these values, and then select **Restore**:
@@ -205,35 +205,35 @@ Let's create a database that's used to simulate load.
 
 Four stored procedures are used in this module. In this section, you'll create those procedures.
 
-1. In Azure Data Studio, on the **File** menu, click **Open File** and then browse to the **~/automatically-tune-sql-server-linux/** folder.
-1. Select **setup.sql**, and then click **Open**. Examine the contents of the script, which creates four stored procedures.
-1. In the top-left of the script window, click **Run**. Azure Data Studio runs the script.
+1. In Azure Data Studio, on the **File** menu, select **Open File** and then browse to the **~/mslearn-automatically-tune-sql-server-linux/** folder.
+1. Select **setup.sql**, and then select **Open**. Examine the contents of the script, which creates four stored procedures.
+1. In the top-left of the script window, select **Run**. Azure Data Studio runs the script.
 
 ## Create a global temporary table to store the counter
 
 You'll create a global temporary table that stores the values of the **Batch Requests/sec** counter. Follow these steps:
 
-1. In Azure Data Studio, on the **File** menu, click **Open File**.
+1. In Azure Data Studio, on the **File** menu, select **Open File**.
 1. Browse to the **~/mslearn-automatically-tune-sql-server-linux/** folder.
-1. Click **batchrequests_perf_collector.sql**, and then click **Open**. Examine the contents of the script, which creates a global temporary table that stores the way a performance counter varies over time. The script continues to populate that table with measurements of the **Batch Requests/sec** counter.
-1. In the top-left of the script window, click **Run**.
+1. Select **batchrequests_perf_collector.sql**, and then select **Open**. Examine the contents of the script, which creates a global temporary table that stores the way a performance counter varies over time. The script continues to populate that table with measurements of the **Batch Requests/sec** counter.
+1. In the top-left of the script window, select **Run**.
 
 ## Simulate load on the SQL Server
 
 To store some meaningful measurements of the **Batch Requests/sec** counter, follow these steps:
 
-1. On the **File** menu, click **Open File**.
-1. Click **report.sql** and then click **Open**. Examine the contents of the script, which calls a stored procedure to simulate load on the SQL Server.
-1. In the top-left of the script window, click **Run**. Wait for about 20 seconds to store some data before the next step.
+1. On the **File** menu, select **Open File**.
+1. Select **report.sql** and then select **Open**. Examine the contents of the script, which calls a stored procedure to simulate load on the SQL Server.
+1. In the top-left of the script window, select **Run**. Wait for about 20 seconds to store some data before the next step.
 
 ## Query for and display the counter
 
 The final step is to execute a query against the temporary table that returns relevant values. You'll use a timeSeries chart to display these values in a graph:
 
-1. On the **File** menu, click **Open File**.
-1. Click **batchrequests.sql**, and then click **Open**. Examine the contents of the script, which queries the global temporary table of performance data created by the **batchrequests_perf_collector.sql** script.
-1. In the top-left of the script window, click **Run**.
-1. On the right of the **RESULTS** window, click the lower icon, which displays the **CHART** window.
+1. On the **File** menu, select **Open File**.
+1. Select **batchrequests.sql**, and then select **Open**. Examine the contents of the script, which queries the global temporary table of performance data created by the **batchrequests_perf_collector.sql** script.
+1. In the top-left of the script window, select **Run**.
+1. On the right of the **RESULTS** window, select the lower icon, which displays the **CHART** window.
 1. In the **Chart Type** drop-down list, select **timeSeries**. Azure Data Studio displays a graph that shows how the **Batch Requests/Sec** counter has varied over time.
 
     ![Screenshot of Azure Data Studio displaying query and the resulting time series chart.](../media/4-display-counter-over-time.png)

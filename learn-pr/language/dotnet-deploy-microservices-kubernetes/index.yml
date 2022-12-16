@@ -27,13 +27,16 @@ prerequisites: |
   - Docker Desktop installed.
   - Visual Studio Code installed.
 ratingEnabled: true
-iconUrl: /learn/achievements/dotnet-deploy-microservices-kubernetes.svg
+iconUrl: /training/achievements/dotnet-deploy-microservices-kubernetes.svg
 levels:
 - beginner
 roles:
 - developer
 products:
 - dotnet
+subjects:
+- container
+- custom-app-development
 units:
 - learn.languages.dotnet-deploy-microservices-kubernetes.introduction
 - learn.languages.dotnet-deploy-microservices-kubernetes.what-are-orchestrators

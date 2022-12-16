@@ -30,9 +30,6 @@ In this exercise you'll learn how to perform the following actions:
 
 1. Select **Register**.
 
-    :::image type="content" source="../media/new-app-registration-expanded.png" alt-text="Shows the screen to register a new application in the Azure portal":::
-
-
 Azure Active Directory assigns a unique application (client) ID to your app, and you're taken to your application's **Overview** page. 
 
 ## Set up the console application
@@ -103,7 +100,7 @@ In this section you will add the necessary packages and code to the project.
     ```
 
     Code | Description
-    - | -
+    | - | - |
     `.Create` | Creates a `PublicClientApplicationBuilder` from a clientID.
     `.WithAuthority` | Adds a known Authority corresponding to an ADFS server. In the code we're specifying the Public cloud, and using the tenant for the app we registered.
 

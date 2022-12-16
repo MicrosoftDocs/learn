@@ -21,8 +21,8 @@ prerequisites: |
   - [Jupyter Notebook](https://jupyter.org/install.html?azure-portal=true)
   - An Azure Quantum workspace
 
-  If you don't have these tools yet, we recommend that you follow the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) module first.
-iconUrl: /learn/achievements/quantum/solve-job-shop-optimization-azure-quantum.svg
+  If you don't have these tools yet, we recommend that you follow the [Get started with Azure Quantum](/training/modules/get-started-azure-quantum/?azure-portal=true) module first.
+iconUrl: /training/achievements/quantum/solve-job-shop-optimization-azure-quantum.svg
 ratingEnabled: true
 levels:
 - intermediate
@@ -30,6 +30,8 @@ roles:
 - developer
 products:
 - azure-quantum
+subjects:
+- cloud-computing
 units:
 - learn.quantum.solve-job-shop-optimization-azure-quantum.introduction
 - learn.quantum.solve-job-shop-optimization-azure-quantum.problem-formulation

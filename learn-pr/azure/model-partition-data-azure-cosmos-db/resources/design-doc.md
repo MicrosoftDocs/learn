@@ -226,12 +226,12 @@ Identify key access patterns for a sample e-commerce application. Define the dat
 
 To learn more about these concepts in Azure Cosmos DB, see:
 
--[Understanding the differences between NoSQL and relational databases](https://docs.microsoft.com/azure/cosmos-db/relational-nosql)
+-[Understanding the differences between NoSQL and relational databases](https://learn.microsoft.com/azure/cosmos-db/relational-nosql)
 
--[Data modeling in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/modeling-data)
+-[Data modeling in Azure Cosmos DB](https://learn.microsoft.com/azure/cosmos-db/modeling-data)
 
--[How to model and partition data on Azure Cosmos DB using a real-world example](https://docs.microsoft.com/azure/cosmos-db/how-to-model-partition-example)
+-[How to model and partition data on Azure Cosmos DB using a real-world example](https://learn.microsoft.com/azure/cosmos-db/how-to-model-partition-example)
 
--[Partitioning and horizontal scaling in Azure Cosmos DB](https://docs.microsoft.com/cosmos-db/partitioning-overview)
+-[Partitioning and horizontal scaling in Azure Cosmos DB](https://learn.microsoft.com/cosmos-db/partitioning-overview)
 
--[Partitioning strategy and provisioned throughput costs](https://docs.microsoft.com/azure/cosmos-db/optimize-cost-throughput#partitioning-strategy-and-provisioned-throughput-costs)
+-[Partitioning strategy and provisioned throughput costs](https://learn.microsoft.com/azure/cosmos-db/optimize-cost-throughput#partitioning-strategy-and-provisioned-throughput-costs)

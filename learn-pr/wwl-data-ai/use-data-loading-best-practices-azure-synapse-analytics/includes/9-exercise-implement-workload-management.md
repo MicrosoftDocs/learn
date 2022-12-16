@@ -1,7 +1,10 @@
 
 ### Create a workload classifier to add importance to certain queries
 
-Your organization has asked you if there is a way to mark queries executed by the CEO as more important than others, so they don't appear slow due to heavy data loading or other workloads in the queue. You decide to create a workload classifier and add importance to prioritize the CEO's queries.
+Your organization has asked you if there is a way to mark queries executed by the CEO as more important than others, so they don't appear slow due to heavy data loading or other workloads in the queue. You decide to create a workload classifier and add importance to prioritize the CEO's queries. Keep in mind that workload groups correspond to resources classes which are created automatically for backward compatibility and cannot be dropped. 
+    
+> [!Note] 
+> Eight (8) additional user-defined workload groups can be created in addition to the system defined workload groups and should be used sparingly and not take excessive amount of resources.
 
 1. Select the **Develop** hub. 
     > [!div class="mx-imgBorder"]  
@@ -33,7 +36,7 @@ Your organization has asked you if there is a way to mark queries executed by th
 
     ![The run button is highlighted in the query toolbar.](../media/synapse-studio-query-toolbar-run.png)
 
-    Now that we have confirmed that there are no running queries, we need to flood the system with queries and see what happens for `asa.sql.workload01` and `asa.sql.workload02`. To do this, we'll run a Azure Synapse Pipeline which triggers queries.
+    Now that we have confirmed that there are no running queries, we need to flood the system with queries and see what happens for `asa.sql.workload01` and `asa.sql.workload02`. To do this, we'll run an Azure Synapse Pipeline which triggers queries.
 
 6. Select the **Integrate** hub.
     > [!div class="mx-imgBorder"]  
@@ -127,14 +130,14 @@ Let's start by experimenting with different parameters.
     IF NOT EXISTS (SELECT * FROM sys.workload_management_workload_groups where name = 'CEODemo')
     BEGIN
         Create WORKLOAD GROUP CEODemo WITH  
-        ( MIN_PERCENTAGE_RESOURCE = 50        -- integer value
-        ,REQUEST_MIN_RESOURCE_GRANT_PERCENT = 25 --  
+        ( MIN_PERCENTAGE_RESOURCE = 10        -- integer value
+        ,REQUEST_MIN_RESOURCE_GRANT_PERCENT = 5 -- integer value
         ,CAP_PERCENTAGE_RESOURCE = 100
         )
     END
     ```
 
-    The script creates a workload group called `CEODemo` to reserve resources exclusively for the workload group. In this example, a workload group with a `MIN_PERCENTAGE_RESOURCE` set to 50% and `REQUEST_MIN_RESOURCE_GRANT_PERCENT` set to 25% is guaranteed 2 concurrency.
+    The script creates a workload group called `CEODemo` to reserve resources exclusively for the workload group. In this example, a workload group with a `MIN_PERCENTAGE_RESOURCE` set to 10% and `REQUEST_MIN_RESOURCE_GRANT_PERCENT` set to 5% is guaranteed 2 concurrency.
 
 2. Select **Run** from the toolbar menu to execute the SQL command.
 
@@ -218,7 +221,7 @@ Let's start by experimenting with different parameters.
         --- Creates a workload group 'CEODemo'.
             Create  WORKLOAD GROUP CEODemo WITH  
         (MIN_PERCENTAGE_RESOURCE = 26 -- integer value
-            ,REQUEST_MIN_RESOURCE_GRANT_PERCENT = 3.25 -- factor of 26 (guaranteed more than 8 concurrencies)
+            ,REQUEST_MIN_RESOURCE_GRANT_PERCENT = 3 -- factor of 26 (guaranteed more than 8 concurrencies)
         ,CAP_PERCENTAGE_RESOURCE = 100
         )
         --- Creates a workload Classifier 'CEODreamDemo'.

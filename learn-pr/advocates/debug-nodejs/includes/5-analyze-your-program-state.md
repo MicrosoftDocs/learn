@@ -1,4 +1,4 @@
-In addition to being able to run your code step by step, in the previous exercise, knowing about your program state is also essential. With the built-in debugger, you have some options for that end like the `exec` command, but your options are limited. Using a debugger with a more complete visual interface is useful for that purpose. It will help you a lot while you work on the Tailwind Traders application.
+In the previous exercise, you learned the importance of being able to run your code step by step. The debug `s` command helps to identify issues in your code and is essential for determining program state. The built-in debugger provides a few other features like the `exec` command, but the feature options are limited. A debugger that offers a complete visual interface can be more useful. For your work on the Tailwind Traders application, you'll need a more comprehensive debugging environment.
 
 Let's discover how you can configure the Visual Studio Code debugger to use it with Node.js.
 
@@ -14,27 +14,27 @@ If you have a Node.js project open, you have three different ways to activate th
 
     :::image source="../media/select-environment.png" alt-text="Screenshot of Node.js environment selection drop-down list in Visual Studio Code.":::
 
-- You can also choose to open a **Node.js debug terminal**. Selecting this button opens a special terminal window that you can run your program from the command line. For example, you can enter `node myscript.js`, and your app will start with the debugger enabled automatically. You won't have to use the `--inspect` option.
+- You can also choose to open a **Node.js debug terminal**. Selecting this button opens a special terminal window where you can run your program from the command line. For example, you can enter the command `node myscript.js` in the terminal, and your app will start with the debugger enabled automatically. You won't have to use the `--inspect` option.
 
     :::image source="../media/terminal.png" alt-text="Screenshot of debug terminal window in Visual Studio Code.":::
 
-- You can select **create a launch.json file** to further customize your run configuration, and share it with your coworkers. We'll see more about that option later.
+- You can select **create a launch.json file** to further customize your run configuration, and share it with your coworkers. We'll review this option later.
 
 ### Add breakpoints
 
-As opposed to the built-in Node.js command-line debugger, the Visual Studio Code debugger immediately starts executing your code. If your program ends quickly, you might not even have the chance to interact with the debugger. That's why you might want to add some breakpoints before you start it.
+Unlike the built-in Node.js command-line debugger, the Visual Studio Code debugger immediately starts executing your code. If your program ends quickly, you might not have the chance to interact with the debugger. That's why you might want to add breakpoints before you run the code.
 
-To add a breakpoint in your code, open your `.js` program, and then select the left side of the line number, on the line you want to break. You should see a red circle after the breakpoint is enabled. To remove it, select the red circle again.
+To add a breakpoint in your code, find the line of code in your JavaScript (`.js`) file where you want to add a break. Next to the line number for the code statement, click in the left margin. When the breakpoint is added, you'll see a red circle next to the line number. To remove the breakpoint, click the red circle.
 
 :::image source="../media/breakpoint.png" alt-text="Screenshot of a breakpoint added in the Visual Studio Code editor window.":::
 
-If you right-click to add a breakpoint, you can also choose **Add Conditional Breakpoint**. This is a special kind of breakpoint that allows you to enter a *condition* for breaking execution. This breakpoint will only be active when the specified condition is met.
+You can also use the right-click context menu to add a breakpoint. The content menu includes the **Add Conditional Breakpoint** option, where you enter a *condition* for breaking the code execution. A conditional breakpoint is only active when the specified condition is met.
 
 :::image source="../media/conditional-breakpoint.png" alt-text="Screenshot of setting a conditional breakpoint in Visual Studio Code.":::
 
 ## Visual Studio Code debugger overview
 
-After you've set up your breakpoints and started your app, new information panels and controls appear on the screen.
+After you set up your breakpoints and start your app, new information panels and controls appear on the screen.
 
 :::image source="../media/debugger-overview.png" alt-text="Screenshot of Visual Studio Code debugger overview.":::
 
@@ -56,8 +56,8 @@ At the top of the sidebar, you can find the launch controls:
 
 1. Start debugging.
 1. Select the active launch configuration.
-1. Edit the `launch.json` file. Create it if you need to.
-1. Open the debug terminal.
+1. Edit the `launch.json` file. Create the json file if you need to.
+1. Open the **Debug Console**, and toggle visibility of the **Variables**, **Watch**, **Call Stack**, and **Breakpoints** panels.
 
 ### View and edit your variables state
 
@@ -73,7 +73,7 @@ You can unfold scopes and variables by selecting the arrow. When you unfold obje
 
 It's possible to change the value of a variable on the fly by double-clicking the variable.
 
-By hovering a function parameter or a variable directly in the editor window, you can also peek at its value:
+By hovering over a function parameter or a variable directly in the editor window, you can also peek at its value:
 
 :::image source="../media/variable-hover.png" alt-text="Screenshot of variable hover during debugging.":::
 
@@ -91,7 +91,7 @@ Every time your program enters a function, an entry is added to the call stack. 
 
 It's useful to find the source of an exception. If you have an unexpected crash in your program, you'll often see something like this in the console:
 
-```text
+```console
 /Users/learn/nodejs/index.js:22
   return value.toFixed(2);
                ^

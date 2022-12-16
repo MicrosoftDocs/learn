@@ -18,7 +18,7 @@ abstract: |
   - Describe how IT Service Management Connector can help you implement a ticketing system.
   - Describe how to build dashboards that enable you to visualize and act on monitoring data.
 prerequisites: None
-iconUrl: /learn/achievements/azure-devops/route-system-feedback.svg
+iconUrl: /training/achievements/azure-devops/route-system-feedback.svg
 ratingEnabled: true
 levels:
 - intermediate
@@ -29,6 +29,8 @@ roles:
 - solution-architect
 products:
 - azure-devops
+subjects:
+- data-warehousing
 units:
 - learn.azdo.route-system-feedback.1-introduction
 - learn.azdo.route-system-feedback.2-continuously-monitor

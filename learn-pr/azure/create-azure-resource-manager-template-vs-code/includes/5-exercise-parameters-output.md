@@ -5,7 +5,7 @@ In this exercise, you add a parameter to define the Azure storage account name d
 Here, you make your ARM template more flexible by adding parameters that can be set at runtime. Create a parameter for the ```storageName``` value.
 
 1. In the *azuredeploy.json* file in Visual Studio Code, place your cursor inside the braces in the *parameters* attribute. ```"parameters":{},```
-1. Select <kbd>Enter</kbd>, and then enter **par**. You see a list of related snippets. Choose **arm-param**. It adds a generic parameter to the template. It will look like this:
+1. Select <kbd>Enter</kbd>, and then enter **par**. You see a list of related snippets. Choose **new-parameter**. It adds a generic parameter to the template. It will look like this:
 
     ```json
      "parameters": {
@@ -24,19 +24,19 @@ Here, you make your ARM template more flexible by adding parameters that can be 
     ```json
     "parameters": {
       "storageName": {
-          "type": "string",
-          "minLength": 3,
-          "maxLength": 24,
-          "metadata": {
-              "description": "The name of the Azure storage resource"
-          }
+        "type": "string",
+        "minLength": 3,
+        "maxLength": 24,
+        "metadata": {
+          "description": "The name of the Azure storage resource"
+        }
       }
     },
     ```
 
 1. Use the new parameter in the ```resources``` block in both the ```name``` and ```displayName``` values. The entire file will look like this:
 
-   [!code-json[](code/parameter2.json?highlight=5-12,17,21)]
+   [!code-json[](code/parameter2.json?highlight=5-12,18,22)]
 
 1. Save the file.
 
@@ -66,7 +66,7 @@ az deployment group create \
 Run the following Azure PowerShell commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed. Fill in a unique name for the ```storageName``` parameter. Remember, this name must be unique across all of Azure. You can use the unique name you created in the last unit. In that case, Azure will update the resource instead of creating a new one.
 
 ```azurepowershell
-$templateFile = "azuredeploy.json"
+$templateFile="azuredeploy.json"
 $today=Get-Date -Format "MM-dd-yyyy"
 $deploymentName="addnameparameter-"+"$today"
 New-AzResourceGroupDeployment `
@@ -91,7 +91,7 @@ Here, you use parameters to limit the values allowed for a parameter.
 
 1. Place your cursor after the closing brace for the ```storageName```parameter. Add a comma, and select <kbd>Enter</kbd>.
 
-1. Again, enter **par**, and select **arm-param**.
+1. Again, enter **par**, and select **new-parameter**.
 
 1. Change the new generic parameter to this:
 
@@ -130,7 +130,7 @@ Here, you use parameters to limit the values allowed for a parameter.
 
     The entire file will look like this:
 
-    [!code-json[](code/parameter3.json?highlight=13-26,40)]
+    [!code-json[](code/parameter3.json?highlight=13-26,41)]
 
 1. Save the file.
 
@@ -214,11 +214,11 @@ Here, you add to the ```outputs``` section of the ARM template to output the end
 
 1. In the *azuredeploy.json* file in Visual Studio Code, place your cursor inside the braces in the outputs attribute ```"outputs":{},```.
 
-1. Select <kbd>Enter</kbd>, and then enter *out*. You see a list of related snippets. Select **arm-output**. It adds a generic output to the template. It will look like this:
+1. Select <kbd>Enter</kbd>, and then enter *out*. You see a list of related snippets. Select **new-output**. It adds a generic output to the template. It will look like this:
 
     ```json
     "outputs": {
-        "output1": {
+      "output1": {
         "type": "string",
         "value": "value"
       }
@@ -228,10 +228,10 @@ Here, you add to the ```outputs``` section of the ARM template to output the end
 
     ```json
     "outputs": {
-       "storageEndpoint": {
-           "type": "object",
-           "value": "[reference(parameters('storageName')).primaryEndpoints]"
-       }
+      "storageEndpoint": {
+        "type": "object",
+        "value": "[reference(parameters('storageName')).primaryEndpoints]"
+      }
     ```
 
 1. Save the file.

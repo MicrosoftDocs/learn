@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-blob-storage.create-blob-access-tiers
-title: Create blob access tiers
+title: Assign blob access tiers
 metadata:
-  title: Create blob access tiers
-  description: "Create blob access tiers"
-  ms.date: 11/08/2021
+  title: Assign blob access tiers
+  description: "Assign blob access tiers"
+  ms.date: 10/31/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

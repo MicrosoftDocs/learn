@@ -12,7 +12,7 @@ Network security is protecting the communication of resources within and outside
 
 ## Layered approach to network security
 
-A common thread throughout this module has been taking a layered approach to security, and this approach is no different at the network layer. It's not enough to just focus on securing the network perimeter, or focusing on the network security between services inside a network. A layered approach provides multiple levels of protection so that if an attacker gets through one layer, further protections are in place to limit the attack.
+A common thread throughout this module has been taking a layered approach to security, and this approach is no different at the network layer. It's not enough to just focus on securing the network perimeter, or focusing on the network security between services inside a network. A layered approach provides multiple levels of protection, so that if an attacker gets through one layer, further protections are in place to limit the attack.
 
 Let's look at how Azure can provide the tools for a layered approach to securing your network footprint.
 
@@ -22,13 +22,13 @@ If you start on the perimeter of the network, you're focused on limiting and eli
 
 You can look for this information in Microsoft Defender for Cloud, which will identify internet-facing resources that don't have network security groups associated with them. It will also identify resources that aren't secured behind a firewall.
 
-There are a couple of ways to provide inbound protection at the perimeter. Azure Application Gateway is a Layer 7 load balancer that also includes a web application firewall (WAF) to provide advanced security for your HTTP-based services. The WAF is based on rules from the OWASP 3.0 or 2.2.9 core rule sets. It provides protection from commonly known vulnerabilities such as cross-site scripting and SQL injection.
+There are a couple of ways to provide inbound protection at the perimeter. Azure Application Gateway is a Layer 7 load balancer that also includes a web application firewall (WAF) to provide advanced security for your HTTP-based services. The WAF is based on rules from the OWASP 3.2, 3.1, 3.0, or 2.2.9 core rule sets. It provides protection from commonly known vulnerabilities such as cross-site scripting and SQL injection.
 
 In the following diagram, the WAF feature of the application gateway protects the system from malicious attacks. The load balancer distributes the legitimate requests among virtual machines.
 
 ![Illustration that shows a single application gateway filtering all external requests made to the virtual machines located at two different sites.](../media/6-app-gateway-waf.png)
 
-For protection of non-HTTP-based services or for increased customization, you can use network virtual appliances (NVAs) to secure your network resources. NVAs are similar to firewall appliances that you might find in on-premises networks, and are available from popular network security vendors. NVAs can provide greater customization of security for those applications that require it. But they increase complexity, so we recommend that you carefully consider your requirements.
+For non-HTTP-based services protection or for increased customization, you can use Azure Firewall to secure your network resources. Azure Firewall is a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability. It provides both east-west and north-south traffic inspection. It can provide greater security customization for those applications that require it. This can increase complexity, so you should carefully consider your requirements.
 
 Any resource exposed to the internet is at risk for a denial-of-service attack. These types of attacks try to overwhelm a network resource by sending so many requests that the resource becomes slow or unresponsive.
 
@@ -46,7 +46,7 @@ The following diagram shows how a network security group restricts the back end 
 
 ![An illustration showing usage of network security group to restrict back-end and middle-tier machines from communicating directly with the internet.](../media/6-azure-network-security.png)
 
-To isolate Azure services to allow communication only from virtual networks, use virtual network service endpoints. With service endpoints, you can secure Azure service resources to your virtual network.
+To isolate Azure services to allow communication only from virtual networks, you can use virtual network service endpoints. With service endpoints, you can secure Azure service resources to your virtual network.
 
 Securing service resources to a virtual network provides improved security by fully removing public internet access to resources and allowing traffic only from your virtual network. This technique:
 
@@ -66,4 +66,4 @@ With ExpressRoute, you can establish connections to Microsoft cloud services, su
 
 ![An architectural diagram that shows an ExpressRoute circuit connecting the customer network with Azure resources.](../media/6-expressroute-connection-overview.png)
 
-To easily integrate multiple virtual networks in Azure, virtual network peering establishes a direct connection between designated virtual networks. After a connection is established, you can use network security groups to provide isolation between resources in the same way that you secure resources within a virtual network. This integration gives you the ability to provide the same fundamental layer of security across any peered virtual networks. Communication is allowed only between directly connected virtual networks.
+To easily integrate multiple virtual networks in Azure, virtual network peering establishes a direct connection between designated virtual networks. After a connection is established, you can use network security groups to provide isolation between resources in the same way that you secure resources within a virtual network. This integration lets you provide the same fundamental layer of security across any peered virtual networks. Communication is allowed only between directly connected virtual networks.

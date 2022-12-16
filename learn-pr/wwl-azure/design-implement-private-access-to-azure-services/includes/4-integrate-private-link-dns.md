@@ -48,7 +48,7 @@ IP address 168.63.129.16 is a virtual public IP address that is used to facilita
 
 In a non-virtual network scenario (Classic), a private IP address is used instead of 168.63.129.16. This private IP address is dynamically discovered through DHCP. Firewall rules specific to 168.63.129.16 need to be adjusted as appropriate.
 
-## Azure services DNS zone configuration
+## Azure services Private DNS zone configuration examples
 
 Azure creates a canonical name DNS record (CNAME) on the public DNS. The CNAME record redirects the resolution to the private domain name. You can override the resolution with the private IP address of your Private Endpoints.
 

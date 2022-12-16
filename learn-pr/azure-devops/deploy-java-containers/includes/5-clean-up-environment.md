@@ -58,7 +58,7 @@ Delete your Azure DevOps project, including the build pipeline. Choose this opti
 
 To delete the project:
 
-1. In Azure DevOps, navigate to your project. This will be the name you entered when creating the project after installing the Azure Pipelines extension in GitHub.
+1. In Azure DevOps, navigate to your project.
 1. Select **Project settings** in the lower corner.
 1. In the **Project details** area, go to the bottom and select **Delete**.
 

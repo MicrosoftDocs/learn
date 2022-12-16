@@ -62,17 +62,17 @@ Then, open a browser and paste the path in the address bar. You should see the s
 
 In the upper-left corner of the app, select the **Choose File** button and find your *game_stats.csv* file. After the file uploads, a couple things should happen:
 
-* The file name should appear next to the **Choose File** button.
-* Your 15 players should be added to the bench.
+- The file name should appear next to the **Choose File** button.
+- Your 15 players should be added to the bench.
 
-> [!NOTE] 
+> [!NOTE]
 > If you select the player buttons, nothing happens yet because we haven't written the `movePlayers` function yet.
 
 :::image type="content" source="../media/first-test.png" alt-text="Screenshot that shows the first functionality test of the web app.":::
 
 ## Add PER for the first quarter to the app
 
-Finally, we add the PER values for each player for the first quarter to the app. This happens in the next unit, but we know we need to call the function that will perform this task: 
+Finally, we add the PER values for each player for the first quarter to the app. This happens in the next unit, but we know we need to call the function that will perform this task:
 
 ```javascript
     // Display cards for all players

@@ -2,6 +2,8 @@ Imagine you work for a freight company that transports goods all over the world 
 
 Some configurations were hardcoded in the app, and some sensitive values like connection strings were left as plain text. They required changes before this application could be deployed to production.
 
+[!INCLUDE [azure-optional-exercise-subscription-prerequisite](../../../includes/azure-optional-exercise-subscription-prerequisite.md)]
+
 ## Learning objectives
 
 By the end of this module, you'll be able to:
@@ -17,7 +19,7 @@ By the end of this module, you'll be able to:
 - Familiarity with [Docker](https://docker.com) and Docker images.
 - An active Azure [subscription](https://azure.microsoft.com/free/services/kubernetes-service).
 - The ability to use the [Azure CLI](/azure/aks/kubernetes-walkthrough).
-- The ability to create a Docker container. If you're new to Docker, start with the [introduction to containers](/learn/modules/intro-to-containers/).
+- The ability to create a Docker container. If you're new to Docker, start with the [introduction to containers](/training/modules/intro-to-containers/).
 
 All exercises will use [Azure Cloud Shell](/azure/cloud-shell/overview), which already has all the needed tools installed. If you prefer to run the examples in your own terminal, you'll need to have the following tools installed first:
 - [Azure CLI](/azure/aks/kubernetes-walkthrough)

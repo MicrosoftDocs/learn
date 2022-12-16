@@ -11,9 +11,9 @@ You should be able to:
 
 Microsoft Learn provides a large number of self-paced learning paths. For this lesson, we recommend the following modules. You may search and find other modules that are of interest to you.
 
- -  [Core Cloud Services - Azure compute options](/learn/modules/intro-to-azure-compute/)
- -  [Build and store container images with Azure Container Registry](/learn/modules/build-and-store-container-images/)
- -  [Build a containerized web application with Docker](/learn/modules/intro-to-containers/)
- -  [Introduction to Docker containers](/learn/modules/intro-to-docker-containers/)
- -  [Run Docker containers with Azure Container Instances](/learn/modules/run-docker-with-azure-container-instances/)
- -  [Azure Kubernetes Service Workshop](/learn/modules/aks-workshop/)
+ -  [Core Cloud Services - Azure compute options](/training/modules/intro-to-azure-compute/)
+ -  [Build and store container images with Azure Container Registry](/training/modules/build-and-store-container-images/)
+ -  [Build a containerized web application with Docker](/training/modules/intro-to-containers/)
+ -  [Introduction to Docker containers](/training/modules/intro-to-docker-containers/)
+ -  [Run Docker containers with Azure Container Instances](/training/modules/run-docker-with-azure-container-instances/)
+ -  [Introduction to Kubernetes on Azure](/training/paths/intro-to-kubernetes-on-azure/)

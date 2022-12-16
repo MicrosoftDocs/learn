@@ -3,7 +3,7 @@ You decide to automate the post-installation configuration for Windows Server se
 
 ## What are answer files?
 
-Answer files are .xml text files that contain settings that enable you to customize and automate the deployment process of Windows. Although you can use a text editor to create and edit your .xml files, this can be challenging. So, it's usually easier to download and install the [Windows Assessment and Deployment Kit](https://docs.microsoft.com/windows-hardware/get-started/adk-install?azure-portal=true), and then use the Windows SIM tool to create and edit your unattend answer files.  
+Answer files are .xml text files that contain settings that enable you to customize and automate the deployment process of Windows. Although you can use a text editor to create and edit your .xml files, this can be challenging. So, it's usually easier to download and install the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install?azure-portal=true), and then use the Windows SIM tool to create and edit your unattend answer files.  
 
 Answer files are organized into two sections, as described in the following table.
 

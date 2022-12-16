@@ -6,7 +6,7 @@ The previous unit introduced the need for considerations for responsible and eth
 
 AI systems should treat all people fairly. For example, suppose you create a machine learning model to support a loan approval application for a bank. The model should make predictions of whether or not the loan should be approved without incorporating any bias based on gender, ethnicity, or other factors that might result in an unfair advantage or disadvantage to specific groups of applicants.
 
-Fairness of machine learned systems is a highly active area of ongoing research, and some software solutions exist for evaluating, quantifying, and mitigating unfairness in machine learned models. However, tooling alone is not sufficient to ensure fairness. Consider fairness from the beginning of the application development process; carefully reviewing training data to ensure it is representative of all potentially affected subjects, and evaluating predictive performance for subsections of your user population throughout the development lifecycle.
+Fairness of machine learned systems is a highly active area of ongoing research, and some software solutions exist for evaluating, quantifying, and mitigating unfairness in machine learned models. However, tooling alone isn't sufficient to ensure fairness. Consider fairness from the beginning of the application development process; carefully reviewing training data to ensure it's representative of all potentially affected subjects, and evaluating predictive performance for subsections of your user population throughout the development lifecycle.
 
 ## Reliability and safety
 
@@ -20,7 +20,7 @@ As with any software, AI-based software application development must be subjecte
 
 ![An image of a padlock](../media/privacy-security.png)
 
-AI systems should be secure and respect privacy. The machine learning models on which AI systems are based rely on large volumes of data, which may contain personal details that must be kept private. Even after models are trained and the system is in production, they use new data to make predictions or take action that may be subject to privacy or security concerns; so appropriate safeguards to protect data and personally identifiable information must be implemented.
+AI systems should be secure and respect privacy. The machine learning models on which AI systems are based rely on large volumes of data, which may contain personal details that must be kept private. Even after models are trained and the system is in production, they use new data to make predictions or take action that may be subject to privacy or security concerns; so appropriate safeguards to protect data and customer content must be implemented.
 
 ## Inclusiveness
 
@@ -44,7 +44,9 @@ When an AI application relies on personal data, such as a facial recognition sys
 
 ![An image of a handshake](../media/accountability.png)
 
-People should be accountable for AI systems. Although many AI systems seem to operate autonomously, ultimately it is the responsibility of the developers who trained and validated the models they use, and defined the logic that bases decisions on model predictions to ensure that the overall system meets responsibility requirements. To help meet this goal, designers and developers of AI-based solution should work within a framework of governance and organizational principles that ensure the solution meets ethical and legal standards that are clearly defined.
+People should be accountable for AI systems. Although many AI systems seem to operate autonomously, ultimately it's the responsibility of the developers who trained and validated the models they use, and defined the logic that bases decisions on model predictions to ensure that the overall system meets responsibility requirements. To help meet this goal, designers and developers of AI-based solution should work within a framework of governance and organizational principles that ensure the solution meets ethical and legal standards that are clearly defined.
 
 > [!NOTE]
-> For more information about Microsoft's principles for responsible AI, visit [the Microsoft responsible AI site](https://microsoft.com/ai/responsible-ai).
+> Microsoft has released [meaningful updates](https://aka.ms/aah91ff) to the Responsible AI Standard in June 2022. As part of that, we've updated the approach to facial recognition including a new Limited Access policy for certain features as a safeguard for responsible use. You can [apply for that limited access](/azure/cognitive-services/cognitive-services-limited-access) to enable those features for your application.
+
+For more information about Microsoft's principles for responsible AI, visit [the Microsoft responsible AI site](https://microsoft.com/ai/responsible-ai).

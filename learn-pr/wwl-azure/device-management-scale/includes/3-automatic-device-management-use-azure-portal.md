@@ -104,7 +104,6 @@ To view the details of a configuration and monitor the devices running it, use t
 1.  In the Azure portal, go to your IoT hub.
 2.  Select **IoT device configuration**.
 3.  Inspect the configuration list. For each configuration, you can view the following details:
-    
      -  **ID** \- the name of the configuration.
      -  **Target condition** \- the query used to define targeted devices.
      -  **Priority** \- the priority number assigned to the configuration.
@@ -113,7 +112,6 @@ To view the details of a configuration and monitor the devices running it, use t
      -  **Custom metrics** \- metrics that have been specified by the developer as queries against device twin reported properties. Up to five custom metrics can be defined per configuration.
 4.  Select the configuration that you want to monitor.
 5.  Inspect the configuration details. You can use tabs to view specific details about the devices that received the configuration.
-    
      -  **Target Condition** \- the devices that match the target condition.
      -  **Metrics** \- a list of system metrics and custom metrics. You can view a list of devices that are counted for each metric by selecting the metric in the drop-down and then selecting **View Devices**.
      -  **Device Twin Settings** \- the device twin settings that are set by the configuration.
@@ -135,7 +133,6 @@ To modify a configuration, use the following steps:
 2.  Select **IoT device configuration**.
 3.  Select the configuration that you want to modify.
 4.  Make updates to the following fields:
-    
      -  Target condition
      -  Labels
      -  Priority

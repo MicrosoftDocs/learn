@@ -26,18 +26,18 @@ Autoscale only scales "**out**" (horizontally), which is an increase ("**out**")
 
 :::image type="content" source="../media/out-vs-up.png" alt-text="scaleup vs scale out difference" lightbox="../media/out-vs-up.png":::
 
-## Autoscale in Azure Spring Cloud
+## Autoscale in Azure Spring Apps
 
-Autoscaling in Azure Spring Cloud monitors the resource metrics of a Spring application as it runs. It detects situations where extra resources are required to handle an increasing workload, and ensures those resources are available before the system becomes overloaded. Autoscale is a built-in feature of Azure Spring Cloud that helps microservice applications do their best when demand changes.
+Autoscaling in Azure Spring Apps monitors the resource metrics of a Spring application as it runs. It detects situations where extra resources are required to handle an increasing workload, and ensures those resources are available before the system becomes overloaded. Autoscale is a built-in feature of Azure Spring Apps that helps microservice applications do their best when demand changes.
 
 ## Real-world example
 
 Raley’s grocery stores needed to modernize the code and infrastructure for their Java-powered e-commerce sites hosted on Azure. The company also needed to optimize and automate its network allocation. Everything had to be robust, always-on, and—most importantly—easy to manage.
 
-Raley’s chose Azure Spring Cloud. Azure Spring Cloud is a managed service for Spring Boot, which provides the power of Kubernetes, coupled with real-time monitoring and autoscaling. It also enabled Raley’s to adopt a true platform as a service (PaaS) architecture, seizing the benefits of the cloud more fully.
+Raley’s chose Azure Spring Apps. Azure Spring Apps is a managed service for Spring Boot, which provides the power of Kubernetes, coupled with real-time monitoring and autoscaling. It also enabled Raley’s to adopt a true platform as a service (PaaS) architecture, seizing the benefits of the cloud more fully.
 
-The service manages the infrastructure of Spring Boot microservice applications behind the scenes, so developers can focus on their code. When Java libraries or code is deployed, Spring Cloud automatically wires the apps with the Spring service runtime.
+The service manages the infrastructure of Spring Boot microservice applications behind the scenes, so developers can focus on their code. When Java libraries or code is deployed, Spring Apps automatically wires the apps with the Spring service runtime.
 
-After they’re deployed, Spring Cloud apps are fully integrated with Azure Monitor tools, like Application Insights and Log Analytics, allowing easy, fully configurable monitoring of performance and errors. These same monitoring services can also drive autoscaling, helping to ensure that resources are appropriately sized for current loads.
+After they’re deployed, Azure Spring Apps are fully integrated with Azure Monitor tools, like Application Insights and Log Analytics, allowing easy, fully configurable monitoring of performance and errors. These same monitoring services can also drive autoscaling, helping to ensure that resources are appropriately sized for current loads.
 
 :::image type="content" source="../media/autoscale-concept.png" alt-text="autoscale up scaling" lightbox="../media/autoscale-concept.png":::

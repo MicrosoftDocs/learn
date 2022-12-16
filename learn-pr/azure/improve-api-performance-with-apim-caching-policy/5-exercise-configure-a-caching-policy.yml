@@ -4,7 +4,7 @@ title: Exercise - Configure a caching policy
 metadata:
   title: Exercise - Configure a caching policy
   description: In this unit, you will create a new instance of API Management and use it to set up an API cache.
-  ms.date: 04/25/2019
+  ms.date: 05/15/2022
   author: dlepow
   ms.author: danlep
   ms.topic: interactive-tutorial

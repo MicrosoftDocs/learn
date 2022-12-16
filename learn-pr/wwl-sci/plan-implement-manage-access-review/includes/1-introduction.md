@@ -9,7 +9,7 @@ By the end of this module you should be able to:
  -  Plan for access reviews.
  -  Create access reviews for groups and apps.
  -  Monitor access review findings.
- -  Manage licenses for access reviews.
+ -  Create and manage access review programs.
  -  Automate access review management tasks.
  -  Configure recurring access reviews.
 

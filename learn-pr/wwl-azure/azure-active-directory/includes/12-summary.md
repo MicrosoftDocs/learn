@@ -1,4 +1,4 @@
-Azure AD helps you manage access to your organization's resources by providing access rights to a single user, to an entire Azure AD group, or to specific administrative units.
+Azure AD helps you give access to your organization's resources by providing access rights to a single user, to an entire Azure AD group, or to specific administrative units.
 
 You should now be able to:
 
@@ -8,10 +8,10 @@ You should now be able to:
 
 ## Learn more
 
-You can learn more by reviewing the following articles:
+You can learn more by reviewing the following:
 
- -  [Secure your identities by using Azure Active Directory](/learn/modules/intro-to-azure-ad/)
- -  [Manage users and groups in Azure Active Directory](/learn/modules/manage-users-and-groups-in-aad/)
- -  [Create Azure users and groups in Azure Active Directory](/learn/modules/create-users-and-groups-in-azure-active-directory/)
- -  [Secure Azure Active Directory users with multifactor authentication in Azure](/learn/modules/secure-aad-users-with-mfa/)
- -  [Secure your cloud resources with access control](/learn/modules/cmu-secure-cloud-resources/)
+ -  [Secure your identities by using Azure Active Directory](/training/modules/intro-to-azure-ad/)
+ -  [Manage users and groups in Azure Active Directory](/training/modules/manage-users-and-groups-in-aad/)
+ -  [Create Azure users and groups in Azure Active Directory](/training/modules/create-users-and-groups-in-azure-active-directory/)
+ -  [Secure Azure Active Directory users with multifactor authentication in Azure](/training/modules/secure-aad-users-with-mfa/)
+ -  [Secure your cloud resources with access control](/training/modules/cmu-secure-cloud-resources/)

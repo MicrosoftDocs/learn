@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-service-fabric.what-is-azure-service-fabric
+title: What is Azure Service Fabric?
+
+metadata:
+  title: What is Azure Service Fabric?
+  description: What is Azure Service Fabric?
+  ms.date: 4/11/2022
+  author: tomvcassidy
+  ms.author: tomcassidy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-is-azure-service-fabric.md)]

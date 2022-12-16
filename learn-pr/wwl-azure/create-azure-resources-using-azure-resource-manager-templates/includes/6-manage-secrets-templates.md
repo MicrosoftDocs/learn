@@ -16,7 +16,7 @@ To access the secrets inside this Key Vault from a Resource Manager deployment, 
 
 The following code snippet is an example how you can deploy a Key Vault and secret using Azure CLI:
 
-```JSON
+```PowerShell
 keyVaultName='{your-unique-vault-name}'
 resourceGroupName='{your-resource-group-name}'
 location='centralus'

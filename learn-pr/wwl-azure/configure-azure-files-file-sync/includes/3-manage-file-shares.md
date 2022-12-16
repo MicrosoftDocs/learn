@@ -1,22 +1,23 @@
-To access your files, you will need a storage account. After the storage account is created, you can create the file share. 
+To access your files, you need an Azure storage account. After you have a storage account, you can create and configure a file share by using Azure Files in the Azure portal.
 
-:::image type="content" source="../media/create-file-shares-bf2e2f1d.png" alt-text="Screenshot Add a file share page from the portal":::
+:::image type="content" source="../media/create-file-shares-bf2e2f1d.png" alt-text="Screenshot that shows how to configure a new Azure Files share in the Azure portal.":::
 
+### Things to consider when using Azure Files shares
 
-## Mapping file shares (Windows)
+There are two important settings for Azure Files that you need to be aware of when creating and configuring file shares.
 
-You can connect to your Azure file share with Windows or Windows Server. Just select **Connect** from your virtual machine page.
+- **Open port 445**. Azure Files uses the SMB protocol. SMB communicates over TCP port 445. Be sure port 445 is open. Also, make sure your firewall isn't blocking TCP port 445 from the client machine.
 
-:::image type="content" source="../media/map-file-shares-windows-a1aa8f59.png" alt-text="Screenshot of This PC page. Map a Network Drive is highlighted.":::
+- **Enable secure transfer**. The `Secure transfer required` setting enhances the security of your storage account by limiting requests to your storage account from secure connections only. Consider the scenario where you use REST APIs to access your storage account. If you attempt to connect, and secure transfer required is enabled, you must connect by using HTTPS. If you try to connect to your account by using HTTP, and secure transfer required is enabled, the connection is rejected.
 
+## Map Azure Files share on Windows
 
-> [!NOTE]
-> Ensure port 445 is open. Azure Files uses SMB protocol. SMB communicates over TCP port 445. Also, ensure your firewall is not blocking TCP ports 445 from the client machine.
+You can connect your Azure Files share with Windows or Windows Server in the Azure portal. Specify the **Drive** where you want to map the share, and choose the **Authentication method**. The system supplies you with PowerShell commands to run when you're ready to work with the file share. This video shows how to mount an Azure file share in Windows.  
 
-## Mounting file shares (Linux)
+<iframe width="854" height="480" src="https://www.youtube.com/embed/bmRZi9iGsK0" title="How to mount an Azure Files share in Windows | Azure Tips and Tricks" frameborder="0" allowfullscreen></iframe>
 
-You can also connect to your Azure file share with Linux machines. Just select **Connect** from the virtual machine page. Azure file shares can be mounted in Linux distributions using the CIFS kernel client. File mounting can be done on-demand with the mount command or on-boot (persistent) by creating an entry in /etc/fstab.
+## Mount Azure Files share on Linux
 
-## Secure transfer required
+You can also connect Azure Files shares with Linux machines. From your virtual machine page, select **Connect**. Azure Files shares can be mounted in Linux distributions by using the CIFS kernel client. File mounting can be done on-demand with the `mount` command or on-boot (persistent) by creating an entry in /etc/fstab.
 
-The secure transfer option enhances the security of your storage account by only allowing requests to the storage account by secure connection. For example, when calling REST APIs to access your storage accounts, you must connect using HTTPs. Any requests using HTTP will be rejected when *Secure transfer required* is enabled.
+:::image type="content" source="../media/map-file-shares-linux-1639a49a.png" alt-text="Screenshot that shows how to connect to an Azure Files share with Linux in the Azure portal.":::

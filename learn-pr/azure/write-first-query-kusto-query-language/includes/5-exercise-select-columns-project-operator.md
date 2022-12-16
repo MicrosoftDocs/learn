@@ -1,4 +1,5 @@
-Kusto queries can be used to filter data and return specific information.
+You can use Kusto queries to filter data and return specific information.
+
 Recall that you've looked at arbitrary rows of data to get a sense of its structure. In this unit, you'll learn how to choose specific data columns that relate to storm types, locations, and damaging effects.
 
 ## Use the `project` operator
@@ -7,7 +8,7 @@ If you remember, the meteorological data example has quite a few columns. Not al
 
 1. Run the following query. This query names the columns to return, and their order, within the `project` operator.
     
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKCjKz0pNLlEAC4RUFqTqKASXJJYAKZfE3MT01ICi/ILUopJKGN8ZyC/WUfDMyyotykwtdsksAupG8D3zUsAiQJNLErNTFQwNAObMrGFvAAAA" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKCjKz0pNLlEAC4RUFqTqKASXJJYAKZfE3MT01ICi/ILUopJKGN8ZyC/WUfDMyyotykwtdsksAupG8D3zUsAiQJNLErNTFQwNAObMrGFvAAAA" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents
@@ -23,9 +24,9 @@ If you remember, the meteorological data example has quite a few columns. Not al
 
 ## Rename and define new columns by using `project`
 
-To understand the impacts of storms in US states, you want to get the total number of injuries and the total amount of damage. With the `project` operator, you can sum integer values from different columns and return the results in a new column. You can also rename columns to make them more meaningful to your analysis. 
+To understand the impacts of storms in US states, you want to get the total number of injuries and the total amount of damage. With the `project` operator, you can sum integer values from different columns and return the results in a new column. You can also rename columns to make them more meaningful to your analysis.
 
-For example, there are other countries with states. It might be helpful to rename the state column so it's clear that the results are for US states. Let's see how to change your previous query so you get the total number of injuries and amount of damage for US states.
+For example, there are other countries/regions with states. It might be helpful to rename the state column so it's clear that the results are for US states. Let's see how to change your previous query so you get the total number of injuries and amount of damage for US states.
 
 1. Update your previous query to make a new column that shows the sum of **InjuriesDirect** and **InjuriesIndirect**:
 
@@ -45,7 +46,7 @@ For example, there are other countries with states. It might be helpful to renam
 
 1. Review your updated query and run it. The full query includes calculations for injuries, calculations for damages, and renaming the **State** column.
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKCjKz0pNLlEIDY4PLkksSbUFkzoKYAUhlQVApmdeVmlRZmqxLYzhklkE1KIN43rmpYAFdBRcEnMT01NtIZRzUX5BsTaEHQBkpxaVVAItLEnMTlUwNAAA4HKT7IYAAAA=" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKCjKz0pNLlEIDY4PLkksSbUFkzoKYAUhlQVApmdeVmlRZmqxLYzhklkE1KIN43rmpYAFdBRcEnMT01NtIZRzUX5BsTaEHQBkpxaVVAItLEnMTlUwNAAA4HKT7IYAAAA=" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents
@@ -61,11 +62,11 @@ For example, there are other countries with states. It might be helpful to renam
 
 ## Use the `project-away` operator
 
-What if you want to remove a few select columns? For this exploration, you don't have any use for the IDs assigned to each episode and event. You can remove specific columns by using the `project-away` operator, which indicates which columns to remove, while leaving all remaining columns. You can also use a wildcard, such as `| project-away *ID`, to remove all columns that end in **ID**.
+What if you want to remove a few select columns? For this exploration, you don't have any use for the IDs assigned to each episode and event. You can remove specific columns by using the `project-away` operator, which indicates which columns to remove while leaving all remaining columns. You can also use a wildcard, such as `| project-away *Id`, to remove all columns that end in **Id**.
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKCjKz0pNLtFNLE+sVHAtyCzOT0n1TNFRACvwTAGqKEnMTlUwNAAA891eCDcAAAA=" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKCjKz0pNLtFNLE+sVHAtyCzOT0n1TNFRACvwTAGqKEnMTlUwNAAA891eCDcAAAA=" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents
@@ -73,4 +74,4 @@ What if you want to remove a few select columns? For this exploration, you don't
     | take 10
     ```
 
-1. Check your results. Recall that the **EpisodeID** and **EventID** columns were between the **EndTime** and **State** columns. Which of these columns do you see in the output?
+1. Check your results. Recall that the **EpisodeId** and **EventId** columns were between the **EndTime** and **State** columns. Which of these columns do you see in the output?

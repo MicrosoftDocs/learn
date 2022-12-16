@@ -18,7 +18,7 @@ abstract: |
   - Swap slots to deploy a web app or roll back a deployment.
 prerequisites: |
   - Basic experience deploying apps to App Service
-iconUrl: /learn/achievements/stage-deploy-app-service-deployment-slots.svg
+iconUrl: /training/achievements/stage-deploy-app-service-deployment-slots.svg
 levels:
 - beginner
 roles:
@@ -28,6 +28,8 @@ products:
 - dotnet
 - aspnet-core
 - dotnet-core
+subjects:
+- cloud-computing
 units:
 - learn.azure.stage-deploy-app-service-deployment-slots.1-introduction
 - learn.azure.stage-deploy-app-service-deployment-slots.2-create-deployment-slots

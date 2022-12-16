@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-data-storage-solution-for-non-relational-data.design-for-azure-disk-solutions
-title: Design for Azure disk solutions
+title: Design for Azure managed disks
 metadata:
-  title: Design for Azure disk solutions
-  description: "Design for Azure disk solutions"
-  ms.date: 03/02/2022
+  title: Design for Azure managed disks
+  description: "Design for Azure managed disks"
+  ms.date: 11/24/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

@@ -8,13 +8,17 @@ In this unit, you'll create, build, and run a new ASP.NET Core web application o
 
 1. In the search box, enter **Web**.
 
-1. From the search results, select **ASP.NET Core Web Application**.
+1. From the search results, select **ASP.NET Core Web App**.
 
 1. Select **Next**.
 
 1. In the new project dialog, set the **Name** field to **AlpineSkiHouse**.
 
 1. Select a **Location** for your new solution.
+
+1. Select **Next**. 
+
+1. Select **.NET 6.0 (Long-term support)** in the Framework drop-down.
 
 1. Select **Create** to create your project.
 

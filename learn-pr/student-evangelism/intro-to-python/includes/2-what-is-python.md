@@ -22,12 +22,12 @@ Most of the runtime environments support two ways to execute Python code:
 
 Python is licensed under the OSI open-source license, and there are several implementations available depending on your needs. Here are a few of the options available:
 
-- **CPython, the reference implementation**: The most popular is the reference implementation (CPython), available from the [Python website](https://www.python.org). CPython is commonly used for web development, application development, and scripting. There are install packages for Windows and macOS. Linux users can install Python using built-in package managers such as **apt**, **yum**, and **Zypper**. There is also an online playground where you can try Python statements right on the website. Finally, the complete source code is available, allowing you to build your own version of the interpreter.
+- **CPython, the reference implementation**: The most popular is the reference implementation (CPython), available from the [Python website](https://www.python.org?azure-portal=true). CPython is commonly used for web development, application development, and scripting. There are install packages for Windows and macOS. Linux users can install Python using built-in package managers such as **apt**, **yum**, and **Zypper**. There is also an online playground where you can try Python statements right on the website. Finally, the complete source code is available, allowing you to build your own version of the interpreter.
 
-- **Anaconda**: Anaconda is a specialized Python distribution tailored for scientific programming tasks, such as data science and machine learning. [Check out more details on Anaconda here](https://www.anaconda.com).
+- **Anaconda**: Anaconda is a specialized Python distribution tailored for scientific programming tasks, such as data science and machine learning. [Check out more details on Anaconda here](https://www.anaconda.com?azure-portal=true).
 
-- **Iron Python**: Iron Python is an open-source implementation of Python built on the .NET runtime. [Learn more about IronPython](https://ironpython.net/).
+- **Iron Python**: Iron Python is an open-source implementation of Python built on the .NET runtime. [Learn more about IronPython](https://ironpython.net?azure-portal=true).
 
-- **Jupyter Notebook**: Jupyter Notebook is a web-based interactive programming environment that supports various programming languages, including Python. Jupyter Notebooks are widely used in research and academia for mathematical modeling, machine learning, statistical analysis, and for teaching and learning how to code. [Install Jupyter notebooks](https://jupyter.org).
+- **Jupyter Notebook**: Jupyter Notebook is a web-based interactive programming environment that supports various programming languages, including Python. Jupyter Notebooks are widely used in research and academia for mathematical modeling, machine learning, statistical analysis, and for teaching and learning how to code. [Install Jupyter notebooks](https://jupyter.org?azure-portal=true).
 
 You'll use the Azure Cloud Shell to develop with Python in this module, but the summary has links to download and install Python on your local computer once you've completed this module.

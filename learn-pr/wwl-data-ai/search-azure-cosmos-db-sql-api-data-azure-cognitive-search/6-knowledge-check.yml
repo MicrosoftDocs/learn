@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/09/2022
+  ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "To enable the ability to index changes in Azure Cosmos DB SQL API items, which field should you include in the data source's SQL query?"
+  - content: "To enable the ability to index changes in Azure Cosmos DB for NoSQL items, which field should you include in the data source's SQL query?"
     choices:
     - content: "``partitionKey``"
       isCorrect: false
@@ -25,7 +25,7 @@ quiz:
     - content: "``_ts``"
       isCorrect: true
       explanation: "Correct. The ``_ts`` field is required to enable the high watermark policy to track changes to existing items."
-  - content: "Your Azure Cosmos DB SQL API solution regularly uses a time-to-live value to automatically delete items after a set amount of time. Which strategy should you use to ensure that the deleted items are also deleted in the search index?"
+  - content: "Your Azure Cosmos DB for NoSQL solution regularly uses a time-to-live value to automatically delete items after a set amount of time. Which strategy should you use to ensure that the deleted items are also deleted in the search index?"
     choices:
     - content: "Configure a soft-delete policy with a tracked column and value"
       isCorrect: true

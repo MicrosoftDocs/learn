@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Let's consider the requirement for a `Label` with a drop shadow. Because there's already a built-in `Label`, one of our options is to customize the existing renderer. In a real app, we'd also consider using a Xamarin.Forms **Effect**, which is the best way to handle small changes to built-in controls. Customizing a renderer is the best choice when there are many changes or when the changes are such that **Effects** won't work. For now, we'll use the customized renderer option.
 
 In this unit, we'll look at how we can customize the existing `Label` renderer to add a drop-shadow feature.

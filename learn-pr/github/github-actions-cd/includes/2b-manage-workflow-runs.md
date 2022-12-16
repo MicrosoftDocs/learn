@@ -1,17 +1,17 @@
-Here, you learn how to remove workflow artifacts from GitHub and change the default retention period. Next, you learn how to create a workflow status badge and add it to your `README.md` file. Finally, you identify some important workflow environment protections and how to enable them. 
+Here, you'll learn how to remove workflow artifacts from GitHub and change the default retention period. Next, you'll learn how to create a workflow status badge and add it to your `README.md` file. Finally, you'll identify some important workflow environment protections and how to enable them. 
 
 ## Remove workflow artifacts from GitHub
 
-By default, GitHub stores any build logs and uploaded artifacts for 90 days before they are deleted. This retention period can be customized based on the type of repository and the usage limits set for your specific GitHub product. There is a lot more information regarding usage limits and artifact retention than what makes sense to cover here, so check out [Usage limits, billing, and administration](https://docs.github.com/en/actions/reference/usage-limits-billing-and-administration) for more information.
+By default, GitHub stores any build logs and uploaded artifacts for 90 days before they are deleted. You can customize this retention period based on the type of repository and the usage limits set for your specific GitHub product. There is a lot more information regarding usage limits and artifact retention than makes sense to cover here, so check out [Usage limits, billing, and administration](https://docs.github.com/en/actions/reference/usage-limits-billing-and-administration) for more information.
 
-But let's say you're reaching your organization’s storage limit for GitHub artifacts and packages and you want to remove old artifacts without increasing your usage limits and blocking your workflows. You can reclaim used GitHub Actions storage by deleting artifacts before they expire on GitHub. You can do this two ways as described in the following sections. Please note that both ways require write access to the repository.
+But let's say you're reaching your organization’s storage limit for GitHub artifacts and packages and you want to remove old artifacts without increasing your usage limits and blocking your workflows. You can reclaim used GitHub Actions storage by deleting artifacts before they expire on GitHub. You can do this two ways, as described in the following sections. Please note that both methods require write access to the repository.
 
 > [!WARNING]
 > Keep in mind that once you delete an artifact, it can not be restored.
 
 ### Manually delete artifacts from your repository
 
-To manually delete an artifact on GitHub you need to navigate to the **Actions** tab, select the workflow from the left sidebar, and then select the run you want to see.
+To manually delete an artifact on GitHub, navigate to the **Actions** tab, select the workflow from the left sidebar, and then select the run you want to see.
 
 :::image type="content" source="../media/select-workflow-run.png" alt-text="Screenshot that shows an example workflow run on GitHub.":::
 
@@ -23,11 +23,11 @@ You can also use the Artifacts REST API to delete artifacts. This API will also 
 
 ### Change the default retention period
 
-You can change the default artifact and log retention period for your repository, organization, or enterprise account. Keep in mind that changing the retention period will only apply to new artifacts and log files and does not apply to existing objects. The process to configure these settings is a bit different for a repository, organization, or enterprise. Check the summary at the end of this module for more information on configuring artifacts and log retentions.
+You can change the default artifact and log retention period for your repository, organization, or enterprise account. Keep in mind that changing the retention period will only apply to new artifacts and log files, and does not apply to existing objects. The process to configure these settings is a bit different for a repository, organization, or enterprise. Check the summary at the end of this module for more information on configuring artifacts and log retentions.
 
-In addition to configured settings across a repository, organization, or enterprise, you can define a custom retention period for individual artifacts right within the workflow file. This is good for individual use cases where you want a specific artifact's retention to be different than the default or configured setting. This can be done using `retention-days` and then a value within the step with the `upload-artifact` action.
+In addition to configured settings across a repository, organization, or enterprise, you can define a custom retention period for individual artifacts right within the workflow file. This is good for individual use cases where you want a specific artifact's retention to be different than the default or configured setting. You can do this using `retention-days` and then a value within the step with the `upload-artifact` action.
 
-The following example uploads an artifact that will persist for 10 days instead of the default 90 days.
+The following example uploads an artifact that will persist for 10 days instead of the default 90 days:
 
 ```yml
 - name: 'Upload Artifact'
@@ -40,9 +40,9 @@ The following example uploads an artifact that will persist for 10 days instead 
 
 ## Add a workflow status badge to your repository
 
-It's helpful to know the status of a workflow without having to visit the **Actions** tab to see if it successfully completed. Adding workflow status badges to your repository `README.md` file allows you to quickly see if your workflows are passing or failing. While it's common to add a status badge to a repository `README.md` file, it can also be added to any web page. By default, status badges display the workflow statuses on your default branch, but you can also display workflow status badges on other branches using the `branch` and `event` parameters.
+It's helpful to know the status of a workflow without having to visit the **Actions** tab to see if it successfully completed. Adding workflow status badges to your repository `README.md` file allows you to quickly see if your workflows are passing or failing. While it's common to add a status badge to a repository `README.md` file, you can also add it any web page. By default, status badges display the workflow statuses on your default branch, but you can also display workflow status badges on other branches using the `branch` and `event` parameters.
 
-Below is an example of what needs to be added to a file to see a workflow status badge. 
+Here's an example of what you'd need to add to a file to see a workflow status badge: 
 
 ```yml
 ![example branch parameter.](https://github.com/mona/special-octo-eureka/actions/workflows/grading.yml/badge.svg?branch=my-workflow)
@@ -60,11 +60,12 @@ You also have the ability to create a status badge using GitHub. To do this, nav
 
 Security is a big deal, so it makes sense to configure your workflow environment with protection rules and secrets. With these in place, a job won't start or access any defined secrets in the environment until all of the environment's protection rules pass. Currently, protection rules and environment secrets only apply to public repositories.
 
-There are two environment protection rules that can be applied to workflows within public repositories, **required reviewers** and **wait timer**. 
+There are two environment protection rules that you can apply to workflows within public repositories, **required reviewers** and **wait timer**.
+ 
 - **Required reviewers** allow you to set a specific person or team to approve workflow jobs that reference the job's environment. 
 - **Wait timer** can be used to delay a job for a specific amount of time after the job has been triggered. 
 
-So, for example, let's say you need to create a workflow to a production environment that a dev team needs to approve before the deployment occurs. The steps would look like the following:
+So, for example, let's say you need to create a workflow to a production environment that a dev team needs to approve before the deployment occurs. The steps would look like this:
 
 1. Create a production environment within the repository.
 2. Configure the required reviewers environment protection to require an approval from the specific dev team.

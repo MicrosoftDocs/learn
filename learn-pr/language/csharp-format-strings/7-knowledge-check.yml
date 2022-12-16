@@ -23,7 +23,7 @@ quiz:
       explanation: "Padding doesn't automatically create blank spaces if the value's length meets or exceeds the padding."
     - content: "Use composite formatting."
       isCorrect: false
-      explanation: "While composit formatting could be employed, it is not the mechanism that will add tabs into your strings."
+      explanation: "While composite formatting could be employed, it is not the mechanism that will add tabs into your strings."
     - content: "Use \\t between the values"
       isCorrect: true
       explanation: "Correct!"
@@ -48,7 +48,7 @@ quiz:
       explanation: '`$` is the correct directive!'
     - content: '@'
       isCorrect: false
-      explanation: '`@` is used to create a verbatim string literal, not perform string interpolation.'
+      explanation: '`@` is used to create a verbatim string literal, not to perform string interpolation.'
     - content: '%'
       isCorrect: false
       explanation: "`%` isn't a valid directive."

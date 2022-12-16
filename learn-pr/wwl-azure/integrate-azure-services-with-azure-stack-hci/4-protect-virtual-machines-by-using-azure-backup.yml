@@ -4,12 +4,13 @@ title: Protect Azure Stack HCI VMs by using Azure Backup
 metadata:
   title: Protect Azure Stack HCI VMs by using Azure Backup
   description: "Protect Azure Stack HCI VMs by using Azure Backup"
-  ms.date: 06/09/2021
+  ms.date: 07/29/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/4-protect-virtual-machines-by-using-azure-backup.md)]

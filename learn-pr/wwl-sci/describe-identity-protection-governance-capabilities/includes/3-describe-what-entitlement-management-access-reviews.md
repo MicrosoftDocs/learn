@@ -1,4 +1,4 @@
-Entitlement management is an identity governance feature that enables organizations to manage identity and access lifecycle at scale. Entitlement management automates access request workflows, access assignments, reviews, and expiration.
+Entitlement management is an identity governance feature that enables organizations to manage the identity and access lifecycle at scale. Entitlement management automates access request workflows, access assignments, reviews, and expiration.
 
 The following video introduces entitlement management, and looks at how access packages are used for resources.
 
@@ -12,12 +12,10 @@ As discussed in the video, enterprise organizations often face challenges when m
 
 Entitlement management includes the following capabilities to address these challenges:
 
-- Delegate the creation of access packages to nonadministrators. These access packages contain resources that users can request. The delegated access package managers then define policies that include rules such as which users can request access, who must approve their access, and when access expires.
+- Delegate the creation of access packages to non-administrators. These access packages contain resources that users can request. The delegated access package managers then define policies that include rules such as which users can request access, who must approve their access, and when access expires.
 - Managing external users. When a user who isn't yet in your directory requests access, and is approved, they're automatically invited into your directory and assigned access. When their access expires, if they have no other access package assignments, their B2B account in your directory can be automatically removed.
 
-Entitlement management is a feature of Azure AD Premium P2.
-
-As you learned in the video, entitlement management uses access packages to manage access to resources.
+Entitlement management, a feature of Azure AD Premium P2, uses access packages to manage access to resources.
 
 ## Azure AD access reviews
 
@@ -44,11 +42,10 @@ Access reviews are a feature of Azure AD Premium P2.
 
 Azure AD terms of use allow information to be presented to users, before they access data or an application. Terms of use ensure users read relevant disclaimers for legal or compliance requirements.
 
-Employees or guests can be required to accept terms of use in the following situations:
+Example use cases where employees or guests may be required to accept terms of use include:
 
 - Before they access sensitive data or an application.
 - On a recurring schedule, so they're reminded of regulations.
-- When terms of use are required in different languages.
 - Based on user attributes, such as terms applicable to certain roles.
 - Presenting terms for all users in your organization.
 

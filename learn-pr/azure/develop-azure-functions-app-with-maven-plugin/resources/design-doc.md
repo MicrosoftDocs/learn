@@ -141,9 +141,9 @@ Why would a customer use the technology; that is, what type of problem does it s
 
 ## Sample app
 
-Example steps to follow: https://docs.microsoft.com/azure/azure-functions/functions-create-first-java-maven?view=azure-java-stable
+Example steps to follow: https://learn.microsoft.com/azure/azure-functions/functions-create-first-java-maven?view=azure-java-stable
 
-Java development guide: https://docs.microsoft.com/azure/azure-functions/functions-reference-java?view=azure-java-stable
+Java development guide: https://learn.microsoft.com/azure/azure-functions/functions-reference-java?view=azure-java-stable
 
 curl -w "\n" https://maven-functions-20190909142853162.azurewebsites.net/api/HttpTrigger-Java?code=L8PY4GfQ7jaemT57yyhhkvMAmUWmGa/eE5bILOA7qJ9kMGmlaSOcPw== -d AzureFunctions
 

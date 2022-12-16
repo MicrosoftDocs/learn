@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-azure-functions.when-use-azure-functions
+title: When to use Azure Functions
+metadata:
+  title: When to use Azure Functions
+  description: In this unit, you learn when to use Azure Functions
+  ms.date: 04/27/2020
+  author: saifeemustafaq
+  ms.author: msaifee
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-when-use-azure-functions.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "When should you use Azure Functions?"
+      choices:
+        - content: "To host my Web API."
+          isCorrect: false
+          explanation: "Incorrect! Even though you could build a Web API with Azure Functions and host it, you're most likely looking for something like App Service. Azure Functions makes use of event-based triggers, and the code only runs when a condition is met."
+        - content: "To run long > 30-min batch jobs."
+          isCorrect: false
+          explanation: "Incorrect! Azure Function is meant to execute the code for a shorter period of time <10 min. Longer jobs could be split up in smaller parts and use Durable Functions but generally there are better choices than Azure Functions for this use case."
+        - content: "To run code that needs to run for a reason."
+          isCorrect: true
+          explanation: "Correct! Azure Functions is event based and the code runs for a reason, when a certain condition has been met."

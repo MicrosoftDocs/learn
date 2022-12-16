@@ -1,4 +1,4 @@
-For your toy company, you need to deploy virtual networks in each country where you're launching the teddy bear. Your developers have also asked you to give them the fully qualified domain names (FQDNs) of each of the regional Azure SQL logical servers you've deployed. 
+For your toy company, you need to deploy virtual networks in each country/region where you're launching the teddy bear. Your developers have also asked you to give them the fully qualified domain names (FQDNs) of each of the regional Azure SQL logical servers you've deployed. 
 
 In this exercise, you'll add the virtual network and its configuration to your Bicep code, and you'll output the logical server FQDNs.
 
@@ -27,7 +27,7 @@ During the process, you'll:
    ::: code language="bicep" source="code/8-template.bicep" range="47-58" :::
 
    > [!NOTE]
-   > This example uses the same address space for all the virtual networks. Ordinarily, when you create multiple virtual networks, you would give them different address spaces in the event that might need to connect them together.
+   > This example uses the same address space for all the virtual networks. Ordinarily, when you create multiple virtual networks, you would give them different address spaces in the event that you need to connect them together.
 
 1. Save the changes to the file.
 
@@ -98,7 +98,7 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 > [!CAUTION]
 > Be sure to use the same login and password that you used previously, or else the deployment won't finish successfully.
 
-You see `Running...` in the terminal. Wait for the deployment to finish.
+Wait for the deployment to finish.
 
 ## Verify the deployment
 
@@ -106,7 +106,7 @@ After the deployment is finished, you want to verify that new virtual networks a
 
 ::: zone pivot="cli"
 
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), and make sure that you're in the sandbox subscription.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure that you're in the sandbox subscription.
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
@@ -116,13 +116,13 @@ After the deployment is finished, you want to verify that new virtual networks a
 
 1. Select the virtual network named `teddybear-eastasia`.
 
-1. In the search bar enter **Subnets**. Under **Settings**, select **Subnets**.
+1. In the search bar, enter **Subnets**. Under **Settings**, select **Subnets**.
 
    :::image type="content" source="../media/8-varloop-deployment-vnet-search.png" alt-text="Screenshot of the Azure portal interface for the virtual network, showing the search field with Subnets entered." border="true":::
 
 1. Verify that the deployed subnets have the names and IP addresses that were specified in the `subnets` parameter's default value.
 
-    :::image type="content" source="../media/8-varloop-deployment.png" alt-text="Screenshot of the Azure portal for the virtual network, showing two virtual network subnets after deployment." border="true":::
+    :::image type="content" source="../media/8-varloop-deployment.png" alt-text="Screenshot of the Azure portal that shows two virtual network subnets after deployment." border="true":::
 
 1. Check the output of the deployment command. It should include the name and FQDN of all three of the logical servers that were deployed, as shown here:
 
@@ -132,7 +132,7 @@ After the deployment is finished, you want to verify that new virtual networks a
 
 ::: zone pivot="powershell"
 
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure that you're in the sandbox subscription.
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
@@ -140,11 +140,15 @@ After the deployment is finished, you want to verify that new virtual networks a
 
    :::image type="content" source="../media/8-varloop-deployment-vnets.png" alt-text="Screenshot of the Azure portal, showing a list of virtual networks after deployment." border="true":::
 
-1. Select the virtual network named `teddybear-eastasia` and then, on the left pane, under **Settings**, select **Subnets**.
+1. Select the virtual network named `teddybear-eastasia`.
+
+1. In the search bar, enter **Subnets**. Under **Settings**, select **Subnets**.
+
+   :::image type="content" source="../media/8-varloop-deployment-vnet-search.png" alt-text="Screenshot of the Azure portal interface for the virtual network, showing the search field with Subnets entered." border="true":::
 
 1. Verify that the deployed subnets have the names and IP addresses that were specified in the `subnets` parameter's default value.
 
-    :::image type="content" source="../media/8-varloop-deployment.png" alt-text="Screenshot of the Azure portal, showing two virtual network subnets after deployment." border="true":::
+    :::image type="content" source="../media/8-varloop-deployment.png" alt-text="Screenshot of the Azure portal that shows two virtual network subnets after deployment." border="true":::
 
 1. Check the output of the deployment command. It should include the name and FQDN of all three of the logical servers that were deployed, as shown here:
 

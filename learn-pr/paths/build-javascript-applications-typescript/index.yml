@@ -27,14 +27,16 @@ prerequisites: |
     - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
     - [Node.js](https://nodejs.org/?azure-portal=true)
     - TypeScript
-iconUrl: /learn/achievements/typescript/build-javascript-applications-typescript.svg
+iconUrl: /training/achievements/typescript/build-javascript-applications-typescript.svg
 levels:
 - intermediate
 roles:
 - student
 - developer
 products:
-- vs-code
+- azure
+subjects:
+- development-tools
 modules:
 - learn.language.typescript-get-started
 - learn.language.typescript-declare-variable-types

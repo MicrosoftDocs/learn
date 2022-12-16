@@ -32,6 +32,7 @@ VS Code now shows your selected Python version.
 :::image type="content" source="../media/jupyter-environment.png" alt-text="Screenshot showing setup of Python environment Python version selection.":::
 
 Next, you'll need to add Jupyter Notebooks to your path.
+
 1. Type "2+2" into the first line of the editor.
 1. Select the play button to the left of the cell. A window appears asking you to install Jupyter Notebooks.
 1. Select **Install** to start the installation. The install could take up to 5 minutes, so you may have to wait a while.
@@ -43,6 +44,7 @@ Now, Jupyter Notebooks should be installed on your computer. Before you continue
 ## Information about Jupyter Notebooks
 
 [Visual Studio Code Jupyter Notebooks](https://code.visualstudio.com/docs/python/jupyter-support?azure-portal=true) has good documentation about how to use the environment. In Jupyter notebooks, you write code in cells.
+
 - Select a plus button at the top of the file to create a new cell below the current cell. You can create a new **Code** cell or a **Markdown** cell.
 - Select the garbage can above a cell to delete the selected cell.
 - Drag the cell from the left-hand side to move the cell up or down in relation to the cells around it.

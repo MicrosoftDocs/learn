@@ -6,9 +6,11 @@ Using this knowledge, you decided that Azure Stack HCI is the most suitable solu
 
 To learn more, review the following documents:
 
-- [What is the deployment process for Azure Stack HCI?](/azure-stack/hci/deploy/deployment-overview)
+- [What is the deployment process for Azure Stack HCI?](https://microsoft-my.sharepoint-df.com/azure-stack/hci/deploy/deployment-overview)
 - [System requirements for Azure Stack HCI](/azure-stack/hci/concepts/system-requirements)
-- [Plan host networking for Azure Stack HCI](/azure-stack/hci/concepts/plan-host-networking)
+- [Physical networking requirements for Azure Stack HCI](/azure-stack/hci/concepts/physical-network-requirements)
+- [Host networking requirements for Azure Stack HCI](/azure-stack/hci/concepts/plan-host-networking)
+- [Plan a Software Defined Network infrastructure](/azure-stack/hci/concepts/plan-software-defined-networking-infrastructure)
 - [Create an Azure Stack HCI cluster using Windows Admin Center](/azure-stack/hci/deploy/create-cluster)
 - [Connect Azure Stack HCI to Azure](/azure-stack/hci/deploy/register-with-azure)
 - [Validate an Azure Stack HCI cluster](/azure-stack/hci/deploy/validate)

@@ -5,7 +5,5 @@ Using Azure AD Multi-Factor Authentication, you can ensure that when users sign 
 To learn more about some of the topics we've examined in this module, check out the following links to documentation.
 
 - [What is Azure Active Directory Identity Protection?](/azure/active-directory/active-directory-identityprotection)
-
-- [Planning a cloud-based Azure AD Multi-Factor Authentication deployment](/azure/active-directory/authentication/howto-mfa-getstarted)
-
+- [Plan a cloud-based Azure AD Multi-Factor Authentication deployment](/azure/active-directory/authentication/howto-mfa-getstarted)
 - [Deploy Azure AD self-service password reset](/azure/active-directory/authentication/howto-sspr-deployment)

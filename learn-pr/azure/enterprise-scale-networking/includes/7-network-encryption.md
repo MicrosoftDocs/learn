@@ -12,4 +12,4 @@ The following diagram illustrates the encryption flow with: (A) IPSec VPN, (B) M
 
 ## Recommendations
 
-When you're using ExpressRoute Direct, encrypt traffic by using MACSec. If you need end-to-end encryption, use IPSec tunnels on top of ExpressRoute. If MACSec is in use, there's no performance degradation on the Microsoft hardware for MACSec. But check with your hardware vendor to understand performance implications of MACSec on your devices.
+When you're using ExpressRoute Direct, encrypt traffic by using MACSec. If you need end-to-end encryption, use IPSec tunnels on top of ExpressRoute. There's no performance degradation on the Microsoft hardware when you're using MACSec, but check with your hardware vendor to understand performance implications of MACSec on your devices.

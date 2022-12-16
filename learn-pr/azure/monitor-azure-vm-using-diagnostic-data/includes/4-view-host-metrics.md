@@ -43,7 +43,7 @@ You can have greater control, with more options, by creating a custom key perfor
 - How hot is the VM or how much CPU is being used?
 - How busy is the VM or how much network traffic is the VM processing?
 
-![Screenshot of an example KPI dashboard, showing CPU maximum and network total graphs.](../media/4-kpi-dashboard.png)
+:::image type="content" source="../media/4-kpi-dashboard.png" alt-text="Screenshot of an example KPI dashboard, showing CPU maximum and network total graphs.":::
 
 You can reuse the prebuilt graph for network traffic. However, the average CPU usage isn't the most useful metric. The maximum CPU usage is a better metric to use.
 
@@ -51,6 +51,6 @@ In the **Monitor** > **Metrics** section of the VM, you'll create a new maximum 
 
 The dashboard also allows you to change the time range shown on both graphs at the same time. It has many more options than what's on the **Overview** page **Monitoring** tab.
 
-![Screenshot that shows the dashboard range options.](../media/4-dashboard-range-options.png)
+:::image type="content" source="../media/4-dashboard-range-options.png" alt-text="Screenshot that shows the dashboard range options.":::
 
 A custom dashboard is especially helpful when you have to monitor more than one VM's performance. You can add a graph for each VM, or use splitting to draw the same metric on one graph.

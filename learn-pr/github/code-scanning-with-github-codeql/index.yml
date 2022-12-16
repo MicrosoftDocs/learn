@@ -10,8 +10,8 @@ metadata:
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
 title: Code scanning with GitHub CodeQL
-summary: "Learn how to use CodeQL, a powerful static analysis tool, to implement code scanning on GitHub." # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
-abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
+summary: "Learn how to use CodeQL, a powerful static analysis tool, to implement code scanning on GitHub." # user input: introductory summary (https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main)
+abstract: | # user input: learning objectives (https://review.learn.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)
   By the end of this module, you'll be able to:
     - Understand CodeQL and how it analyzes code
     - Understand QL, a unique logic programming language
@@ -20,21 +20,23 @@ abstract: | # user input: learning objectives (https://review.docs.microsoft.com
     - Configure the language matrix in a CodeQL workflow
     - Learn how to use the CodeQL CLI to generate code scanning results and upload them to GitHub
     - Implement custom build steps
-prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
+prerequisites: | # user input: prerequisites (https://review.learn.microsoft.com/help/learn/id-guidance-prerequisites?branch=main)
   - A GitHub enterprise account with a GitHub Advanced Security license
   - Necessary permissions to administrate your repository
   - Knowledge of GitHub Advanced Security's code scanning feature
   - Knowledge of GitHub Actions
 ratingEnabled: true
-iconUrl: /learn/achievements/generic-badge.svg
-levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
+iconUrl: /training/achievements/generic-badge.svg
+levels: # user input: add levels from level taxonomy (https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level)
   - advanced
-roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
+roles: # user input: add roles from role taxonomy (https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role)
   - administrator
   - developer
   - devops-engineer
 products:
   - github
+subjects:
+- development-tools
 units:
 - learn.code-scanning-with-github-codeql.introduction
 - learn.code-scanning-with-github-codeql.what-codeql

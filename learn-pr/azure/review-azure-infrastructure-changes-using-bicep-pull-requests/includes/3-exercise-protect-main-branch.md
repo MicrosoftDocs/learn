@@ -1,8 +1,8 @@
 Your team is working on a Bicep template that already contains a website and a database. You've deployed the components to your production environment. Now, you need to update your Bicep template to add your order processing queue.
 
-In this exercise, you'll create a feature branch for your change. You'll also protect your main branch and only allow changes to be merged to the main branch after they've been reviewed. Before that, though, you need to make sure that your Azure DevOps environment is set up to complete the rest of this module.
+In this exercise, you'll create a feature branch for your change. You'll also protect your main branch and only allow changes to be merged to the main branch after they've been reviewed. Before that, though, you need to make sure that your GitHub environment is set up to complete the rest of this module.
 
-During the process, you'll: 
+During the process, you'll:
 
 ::: zone pivot="github"
 
@@ -30,7 +30,7 @@ During the process, you'll:
 
 ## Get the GitHub repository
 
-Here, you make sure that your GitHub repository is set up to complete the rest of this module. You set it up by creating a new repository based on a template repository. The template repository contains the files that you need to get started for this module. 
+Here, you make sure that your GitHub repository is set up to complete the rest of this module. You set it up by creating a new repository based on a template repository. The template repository contains the files that you need to get started for this module.
 
 ### Start from the template repository
 
@@ -41,7 +41,7 @@ Run a template that sets up your GitHub repository.
 
 On the GitHub site, follow these steps to create a repository from the template:
 
-1. Select **Use this template**. 
+1. Select **Use this template** > **Create a new repository**.
 
    :::image type="content" source="../media/3-template.png" alt-text="Screenshot of the GitHub interface that shows the template repo, with the button for using the current template highlighted.":::
 
@@ -51,7 +51,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
    When you create your own repositories, you might want to make them private. In this module, you'll work with features of GitHub that work only with public repositories and with GitHub Enterprise accounts.
 
-1. Select **Create repository from template**. 
+1. Select **Create repository from template**.
 
    :::image type="content" source="../media/3-repo-settings.png" alt-text="Screenshot of the GitHub interface that shows the repo creation page.":::
 
@@ -86,13 +86,13 @@ On the Azure DevOps Demo Generator site, follow these steps:
 
 ::: zone pivot="github"
 
-You now have a copy of the template repository in your own account. Clone this repository locally so you can start working in it. 
+You now have a copy of the template repository in your own account. Clone this repository locally so you can start working in it.
 
 1. Select **Code**, and then select the copy icon.
 
    :::image type="content" source="../media/3-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface that shows the new repository, with the repository U R L copy button highlighted.":::
 
-1. Open Visual Studio Code. 
+1. Open Visual Studio Code.
 
 1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 
@@ -118,7 +118,7 @@ You now have a copy of the template repository in your own account. Clone this r
 
 ::: zone pivot="azurerepos"
 
-You now have a project in your own account. Clone this repository locally so you can start working in it. 
+You now have a project in your own account. Clone this repository locally so you can start working in it.
 
 1. Select **Repos** > **Files**.
 
@@ -138,9 +138,9 @@ You now have a project in your own account. Clone this repository locally so you
 
 1. You're using this repository for the first time, so you're prompted to sign in.
 
-    If you're using Windows, enter the same credentials that you used to sign in to Azure DevOps earlier in this exercise.
+   * If you're using Windows, enter the same credentials that you used to sign in to Azure DevOps earlier in this exercise.
 
-    If you're using macOS, enter the Git username and password that you generated a few moments ago.
+   * If you're using macOS, enter the Git username and password that you generated a few moments ago.
 
 1. Visual Studio Code prompts you to open the repository. Select **Open**.
 
@@ -158,7 +158,7 @@ Configure your Git repository to prevent direct pushes to the main branch.
 
 1. Select **Branches**.
 
-1. Select **Add rule**.
+1. Select **Add branch protection rule**.
 
    :::image type="content" source="../media/3-github-branch-protections.png" alt-text="Screenshot of GitHub that shows the page for adding branch protection rules, with the button for adding a rule highlighted.":::
 
@@ -168,11 +168,11 @@ Configure your Git repository to prevent direct pushes to the main branch.
 
    Clear **Require approvals**. Normally, you'd select this option. But in this example, you're going to merge your own pull request, and the **Require approvals** option prevents you from doing so.
 
-1. Select **Include administrators**. By selecting this option, you enforce the rule on yourself, too.
+1. Select **Do not allow bypassing the above settings**.
 
-   Leave the other configuration options with their default values.
+   You select this setting as an example to show how `git push` to `main` fails later in this exercise. In a production environment, you might not want to restrict direct merges to `main` for administrators or repository owners.
 
-1. Near the bottom of the page, select **Create**.
+1. Near the bottom of the page, select **Save changes**.
 
    :::image type="content" source="../media/3-github-branch-protections-add.png" alt-text="Screenshot of GitHub that shows the Create button.":::
 
@@ -207,7 +207,7 @@ Configure your Git repository to prevent direct pushes to the main branch.
 
 ## Create a local feature branch
 
-1. In the Visual Studio Code terminal, run the following statement: 
+1. In the Visual Studio Code terminal, run the following statement:
 
     ```bash
     git checkout -b add-orders-queue
@@ -290,7 +290,7 @@ You've learned why it's not advisable to push directly to the main branch. Here,
 
    Notice that your push fails with an error message that looks similar to this one:
 
-   :::code language="output" source="code/3-merge-error-github.txt" highlight="3" :::
+   :::code language="plaintext" source="code/3-merge-error-github.txt" highlight="3" :::
 
    The error message tells you that pushes to the main branch aren't permitted, and that you must use a pull request to update the branch.
 
@@ -325,7 +325,7 @@ You've learned why it's not advisable to push directly to the main branch. Here,
 
    Notice that your push fails with an error message that looks similar to this one:
 
-   :::code language="output" source="code/3-merge-error-azure-repos.txt" highlight="3" :::
+   :::code language="plaintext" source="code/3-merge-error-azure-repos.txt" highlight="3" :::
 
    The error message tells you that pushes to the main branch aren't permitted, and that you must use a pull request to update the branch.
 

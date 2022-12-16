@@ -9,6 +9,10 @@ In this module, you will:
 - Redeploy the app to an instance of AKS configured to use [Azure Application Gateway](/azure/application-gateway/overview).
 - Expose a BFF API outside the Kubernetes cluster by using [Application Gateway Ingress Controller (AGIC)](/azure/application-gateway/ingress-controller-overview).
 
+[!INCLUDE[Use your own Azure subscription](../../includes/microservices/your-own-az-subscription.md)]
+
+[!INCLUDE[Dev containers](../../includes/dev-containers/required.md)]
+
 ## Learning objectives
 
 - Understand the key concepts of Application Gateway and BFF patterns.
@@ -20,3 +24,4 @@ In this module, you will:
 - Familiarity with C# and ASP.NET Core
 - Familiarity with REST API services
 - Access to an Azure subscription with owner privileges
+- Ability to run development containers in Visual Studio Code or GitHub Codespaces

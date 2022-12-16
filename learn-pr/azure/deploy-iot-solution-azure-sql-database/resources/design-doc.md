@@ -60,7 +60,7 @@ Identify the subtasks of *module title*
 
     Provide a scenario of a real-world job-task that shows how the technology is used in practice:
 
-    TODO WRITE SCENARIO https://review.docs.microsoft.com/en-us/help/learn/id-guidance-scenarios?branch=master
+    TODO WRITE SCENARIO https://review.learn.microsoft.com/help/learn/id-guidance-scenarios?branch=main
 
 1. **Analyze the solution architecture**
 

@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction
   title: Introduction to Azure ExpressRoute
   description: This module explains what Azure ExpressRoute does, how it works, and when you should choose to use Azure ExpressRoute as a solution.
-  ms.date: 02/09/2022
+  ms.date: 12/14/2022
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates
@@ -19,7 +19,7 @@ abstract: |
   - Understand the difference between Azure ExpressRoute and Azure VPNs. 
 prerequisites: |
   Understanding of basic networking concepts.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
@@ -27,6 +27,9 @@ roles:
   - solution-architect
 products:
   - azure-expressroute
+subjects:
+- cloud-computing
+- remote-hybrid-work
 units:
   - learn.azure.intro-to-azure-expressroute.introduction
   - learn.azure.intro-to-azure-expressroute.what-is-azure-expressroute

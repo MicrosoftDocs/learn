@@ -10,3 +10,4 @@ After completing this module, you'll be able to:
 - Manage an indexing policy using the CLI
 - Configure database or container throughput using the CLI
 - Initiate failovers and manage failover regions using the CLI
+

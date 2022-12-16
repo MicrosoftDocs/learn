@@ -21,14 +21,16 @@ abstract: |
  > [!TIP]
  > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
 prerequisites: None
-iconUrl: /learn/achievements/student-evangelism/introduction-rocket-launch-nasa.svg
+iconUrl: /training/achievements/student-evangelism/introduction-rocket-launch-nasa.svg
 levels:
 - beginner
 roles:
 - student
 - data-scientist
 products:
-- vs-code
+- azure
+subjects:
+- machine-learning
 units:
 - learn.student-evangelism.introduction-rocket-launch-nasa.1-introduction
 - learn.student-evangelism.introduction-rocket-launch-nasa.2-predict-weather-for-launch
@@ -43,4 +45,4 @@ units:
 - learn.student-evangelism.introduction-rocket-launch-nasa.9-knowledge-check
 - learn.student-evangelism.introduction-rocket-launch-nasa.10-summary
 badge:
-  uid: learn.student-evangelism.introduction-rocket-launch-nasa.badge 
+  uid: learn.student-evangelism.introduction-rocket-launch-nasa.badge

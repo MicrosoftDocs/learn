@@ -23,7 +23,7 @@ abstract:  |
 prerequisites: |
   - Introduction to Python for data science
   
-iconUrl: /learn/achievements/reactors/text-classification-naive-bayes.svg
+iconUrl: /training/achievements/reactors/text-classification-naive-bayes.svg
 hidden: true
 levels:
 - beginner
@@ -33,7 +33,9 @@ roles:
 - data-scientist
 products:
 - azure
-- vs-code
+subjects:
+- machine-learning
+- threat-protection
 units:
 - learn.reactors.text-classification-naive-bayes.1-introduction
 - learn.reactors.text-classification-naive-bayes.2-conditional-probability-bayes
@@ -43,4 +45,4 @@ units:
 - learn.reactors.text-classification-naive-bayes.6-train-model
 - learn.reactors.text-classification-naive-bayes.7-explore-more
 badge:
-  uid: learn.reactors.text-classification-naive-bayes.badge 
+  uid: learn.reactors.text-classification-naive-bayes.badge

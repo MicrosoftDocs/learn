@@ -6,7 +6,7 @@ metadata:
   description: Integrate data from the digital estate assessment into your cloud adoption plan.
   ms.date: 02/22/2021
   author: BrianBlanchard
-  ms.author: bblanch
+  ms.author: brblanch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 20

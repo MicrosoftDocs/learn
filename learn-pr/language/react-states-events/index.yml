@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - Knowledge of HTML, CSS, JavaScript, Git, and npm
   - Some experience with React
-iconUrl: /learn/achievements/react/react-state-events.svg
+iconUrl: /training/achievements/react/react-state-events.svg
 ratingEnabled: true
 levels:
 - beginner
@@ -29,7 +29,8 @@ roles:
 - developer
 products:
 - azure-app-service-static
-- vs-code
+subjects:
+- development-tools
 units:
 - learn.language.react-states-events.1-introduction
 - learn.language.react-states-events.2-concepts

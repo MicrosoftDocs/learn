@@ -20,7 +20,7 @@ prerequisites: |
   - Familiarity with the [Eclipse IDE](https://www.eclipse.org/ide/) to write projects in Java
   - The [Azure Toolkit for Eclipse](/azure/developer/java/toolkit-for-eclipse/)
   - The [Apache Tomcat](http://tomcat.apache.org/) server
-iconUrl: /learn/achievements/publish-azure-web-app-with-azure-toolkit-eclipse.svg
+iconUrl: /training/achievements/publish-azure-web-app-with-azure-toolkit-eclipse.svg
 levels:
 - beginner
 roles:
@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-virtual-machines
+subjects:
+- development-tools
 units:
 - learn.azure.publish-azure-web-app-with-azure-toolkit-eclipse.introduction
 - learn.azure.publish-azure-web-app-with-azure-toolkit-eclipse.create-web-app-eclipse

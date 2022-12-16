@@ -25,7 +25,7 @@ abstract:  |
 
 prerequisites: | 
   None
-iconUrl: /learn/achievements/student-evangelism/train-custom-vision-ai.svg
+iconUrl: /training/achievements/student-evangelism/train-custom-vision-ai.svg
 levels:
 - beginner
 roles:
@@ -33,6 +33,8 @@ roles:
 - student
 products:
 - azure-custom-vision
+subjects:
+- classification-analysis
 units:
 - learn.student-evangelism.train-custom-vision-ai.1-introduction
 - learn.student-evangelism.train-custom-vision-ai.2-bungee-on-the-moon

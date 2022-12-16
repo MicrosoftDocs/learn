@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.exercise-lake-database
+title: Exercise - Analyze data in a lake database
+metadata:
+  title: Exercise - Analyze data in a lake database
+  description: "Exercise - Analyze data in a lake database"
+  ms.date: 05/13/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/6-exercise-lake-database.md)]

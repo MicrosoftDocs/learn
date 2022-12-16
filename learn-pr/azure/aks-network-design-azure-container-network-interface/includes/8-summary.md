@@ -4,6 +4,8 @@ We reviewed how IP addresses get used by different components within a Kubernete
 
 The design process for a Kubernetes cluster network can be complicated. But by starting out with a good understanding of the application's requirements, you can easily create a design that will meet your application's needs. Understanding your application will also help throughout its operational lifecycle. You'll know how you expect the application to run. You'll be in a better position to detect any potential issues that could affect its smooth operation.
 
+[!include[azure-optional-exercise-subscription-cleanup](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
+
 ## Learn More
 
 Here are some links to more information about the areas we've covered in this module.

@@ -7,7 +7,7 @@ One way to simplify complex processes involves a low-code environment such as Mi
 - The flow brings in the Power BI data visualization you created based on your predictive dataset in the dedicated SQL pool. In this case, the flow brings in the ratings for the top relevant vendors. 
 - Power Automate then helps automate the decision approval process for each parts order made in your app and writes the order to your SAP system. 
 
-![Screenshot of sample Power Apps app](../media/sample-power-apps.png)
+![Sample Power Apps app that displays a prediction graph.](../media/sample-power-apps.png)
    
 ## Building a Power Apps app with Power Automate workflows
 
@@ -23,7 +23,7 @@ One of the Power Automate controls will help you connect to your SAP system. In 
 
 There are multiple ways to connect Power Platform with SAP. The following diagram shows two of the most popular connectors.
 
-![Diagram shows two of the most popular connectors used with SAP and the Power Platform. Use the SAP ERP Connector or a Custom Connector with OData to connect to SAP.](../media/sap-erp-connector-custom-connector.png)
+![Two of the most popular connectors used with SAP and the Power Platform are SAP ERP Connector or a Custom Connector with OData to connect to SAP.](../media/sap-erp-connector-custom-connector.png)
    
 In this scenario, use the SAP ERP connector for Power Apps and Power Automate. The connector allows you to integrate Power Automate flows and Power Apps applications to an SAP ERP system (either SAP ECC or SAP S/4HANA). It provides the following functionality:
 

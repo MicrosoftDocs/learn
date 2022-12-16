@@ -6,6 +6,6 @@ Your project team just completed the SAP HANA on Azure (Large Instances) migrati
 
 You will:
 
- -  Explore the high-level architecture of SAP HANA on Azure (Large Instances).
- -  Examine the architecture's components.
- -  Examine a sample functional workflow.
+- Explore the high-level architecture of SAP HANA on Azure (Large Instances).
+- Examine the architecture's components.
+- Examine a sample functional workflow.

@@ -8,7 +8,6 @@ The following steps can be used to create your Azure function:
 
 1.  Create an Azure Functions project.
 2.  Write the function code.
-    
      -  Add authentication code to the function (for accessing Azure Digital Twins).
      -  Add code that will interact with Azure Digital Twins (and other Azure resources).
 3.  Publish the function app to Azure.

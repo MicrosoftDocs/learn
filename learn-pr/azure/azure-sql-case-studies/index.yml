@@ -4,8 +4,9 @@ metadata:
   title: Putting it all together with Azure SQL
   description: Putting it all together with Azure SQL
   ms.date: 08/05/2020
-  author: amthomas46
-  ms.author: bobward
+  author: MashaMSFT
+  ms.author: mathoma
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Putting it all together with Azure SQL
@@ -19,7 +20,7 @@ abstract: |
 prerequisites: | 
   - Experience working with, maintaining, and developing with SQL Server and Azure SQL
   - Experience with Azure, such as deploying and managing resources
-iconUrl: /learn/achievements/azure-sql-case-studies.svg
+iconUrl: /training/achievements/azure-sql-case-studies.svg
 levels:
 - beginner
 - intermediate
@@ -31,6 +32,8 @@ products:
 - azure
 - azure-sql-database
 - azure-sql-managed-instance
+subjects:
+- cloud-computing
 units:
 - learn.azure-sql-case-studies.1-introduction
 - learn.azure-sql-case-studies.2-scenario-1

@@ -1,18 +1,21 @@
+> [!NOTE]
+> Microsoft 365 compliance is now called Microsoft Purview and the solutions within the compliance area have been rebranded. For more information about Microsoft Purview, see the [blog announcement](https://www.microsoft.com/security/blog/2022/04/19/the-future-of-compliance-and-data-governance-is-here-introducing-microsoft-purview/)
+
 Retention labels and policies help organizations to manage and govern information by ensuring content is kept only for a required time, and then permanently deleted.  Applying retention labels and assigning retention policies helps organizations:
 
 - **Comply proactively with industry regulations and internal policies** that require content to be kept for a minimum time.
 - **Reduce risk when there's litigation or a security breach** by permanently deleting old content that the organization is no longer required to keep.
 - **Ensure users work only with content that's current and relevant to them**.
-When content has retention settings assigned to it, that content remains in its original location. People can continue to work with their documents or mail as if nothing's changed. But if they edit or delete content that's included in the retention policy, a copy of the content is automatically kept in a secure location. The secure locations and the  content are not visible to most people. In most cases, people don't even need to know that their content is subject to retention settings.
+When content has retention settings assigned to it, that content remains in its original location. People can continue to work with their documents or mail as if nothing's changed. But if they edit or delete content that's included in the retention policy, a copy of the content is automatically kept in a secure location. The secure locations and the content are not visible to most people. In most cases, people don't even need to know that their content is subject to retention settings.
 
 Retention settings work with the following different workloads:
 
-- [SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint)
-- [Microsoft Teams](/microsoft-365/compliance/retention-policies-teams)
-- [Yammer](/microsoft-365/compliance/retention-policies-yammer)
-- [Exchange](/microsoft-365/compliance/retention-policies-exchange)
+- [SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint?view=o365-worldwide)
+- [Microsoft Teams](/microsoft-365/compliance/retention-policies-teams?view=o365-worldwide)
+- [Yammer](/microsoft-365/compliance/retention-policies-yammer?view=o365-worldwide)
+- [Exchange](/microsoft-365/compliance/retention-policies-exchange?view=o365-worldwide)
 
-When using retention policies and retention labels to assign retention settings to content, there are some points to understand about each.  Listed below are just a few of the key points. For a more complete list visit [Compare capabilities for retention policies and retention labels](https://docs.microsoft.com/microsoft-365/compliance/retention?view=o365-worldwide#compare-capabilities-for-retention-policies-and-retention-labels).
+When using retention policies and retention labels to assign retention settings to content, there are some points to understand about each.  Listed below are just a few of the key points. For a more complete list visit [Compare capabilities for retention policies and retention labels](/microsoft-365/compliance/retention?view=o365-worldwide#compare-capabilities-for-retention-policies-and-retention-labels).
 
 **Retention policies**
 

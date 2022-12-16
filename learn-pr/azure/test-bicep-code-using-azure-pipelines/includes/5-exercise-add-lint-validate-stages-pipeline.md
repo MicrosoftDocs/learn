@@ -1,8 +1,8 @@
-You've spoken to your team and have decided to further automate your deployments by using a pipeline. You want to build more confidence in what you deploy. 
+You've spoken to your team and have decided to further automate your deployments by using a pipeline. You want to build more confidence in what you deploy.
 
 In this exercise, you'll add validation stages to your pipeline. You'll then run the linter and preflight validation before each deployment.
 
-During the process, you'll: 
+During the process, you'll:
 
 > [!div class="checklist"]
 > * Update your existing pipeline to add two new stages to lint and validate your Bicep code.
@@ -11,15 +11,15 @@ During the process, you'll:
 
 ## Update your pipeline to prepare for stages
 
-First, you need to update your pipeline file to define a stage. Azure Pipelines automatically creates a single stage for you. But because you'll add more stages soon, you need to update your pipeline to explicitly define stages.
+First, you need to update your pipeline file to define a stage. Azure Pipelines automatically creates a single stage for you, but because you'll add more stages soon, you need to update your pipeline to explicitly define stages.
 
-1. In Visual Studio Code, open the *azure-pipelines.yml* file in the *deploy* folder.
+1. In Visual Studio Code, open the _azure-pipelines.yml_ file in the _deploy_ folder.
 
-1. Remove everything in the file from line 9 to the bottom of the file. Be sure to also remove the `jobs:` line.
+1. Remove everything in the file from line 14 to the bottom of the file. Be sure to also remove the `jobs:` line.
 
 1. At the bottom of the file, add the following code:
 
-   :::code language="yaml" source="code/5-pipeline.yml" range="10-11, 40-56" :::
+   :::code language="yaml" source="code/5-pipeline.yml" range="14-15, 43-57" :::
 
    > [!TIP]
    > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. In the next section, you'll see the complete YAML pipeline definition so that you can verify that your file matches.
@@ -28,29 +28,29 @@ First, you need to update your pipeline file to define a stage. Azure Pipelines 
 
 1. Below the `stages:` line, add a lint stage:
 
-   :::code language="yaml" source="code/5-pipeline.yml" range="12-20" :::
+   :::code language="yaml" source="code/5-pipeline.yml" range="16-24" :::
 
    This stage defines a single step that runs the `az bicep build` command to lint the Bicep file.
 
 1. Below the lines that you just added, add a validation stage:
 
-   :::code language="yaml" source="code/5-pipeline.yml" range="22-38" :::
+   :::code language="yaml" source="code/5-pipeline.yml" range="26-41" :::
 
-   This stage defines a single step that runs the `az deployment group validate` command. Notice that this step includes a reference to your service connection, because the preflight validation process requires communicating with Azure.
+   This stage defines a single step that runs the preflight validation. Notice that this step includes a reference to your service connection, because the preflight validation process requires communicating with Azure.
 
-   Your pipeline definition now has three stages. The first lints your Bicep file, the second performs a preflight validation, and the third performs the deployment to Azure.
+   Your pipeline definition now has three stages. The first runs the linter on your Bicep file, the second performs a preflight validation, and the third performs the deployment to Azure.
 
 1. Save the file.
 
 ## Configure the linter
 
-By default, the Bicep linter provides a warning when it detects a problem with your file. Azure Pipelines doesn't treat linter warnings as problems that should stop your pipeline. To customize this behavior, you create a *bicepconfig.json* file that reconfigures the linter.
+By default, the Bicep linter provides a warning when it detects a problem with your file. Azure Pipelines doesn't treat linter warnings as problems that should stop your pipeline. To customize this behavior, you create a _bicepconfig.json_ file that reconfigures the linter.
 
-1. Add a new file in the *deploy* folder and name it *bicepconfig.json*.
-   
+1. Add a new file in the _deploy_ folder and name it _bicepconfig.json_.
+
    :::image type="content" source="../media/5-visual-studio-code-bicep-config-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the new file shown in the deploy folder.":::
 
-1. Copy the following code into the file:    
+1. Copy the following code into the file:
 
    :::code language="json" source="code/5-bicepconfig.json" :::
 
@@ -58,7 +58,7 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 ## Verify and commit your pipeline definition
 
-1. Verify that your *azure-pipelines.yml* file looks like the following:
+1. Verify that your _azure-pipelines.yml_ file looks like the following file:
 
    :::code language="yaml" source="code/5-pipeline.yml" :::
 
@@ -106,9 +106,9 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 Now that you've identified the problem, you can fix it in your Bicep file.
 
-1. In Visual Studio Code, open the *main.bicep* file in the *deploy* folder.
+1. In Visual Studio Code, open the _main.bicep_ file in the _deploy_ folder.
 
-1. Notice that the Bicep linter has also detected that the `storageAccountNameParam` parameter isn't used. In Visual Studio Code, it indicates this by displaying a squiggly line. Normally, the line would be yellow to indicate a warning. But because you customized the *bicepconfig.json* file, the linter treats the code as an error and displays the line in red.
+1. Notice that the Bicep linter has also detected that the `storageAccountNameParam` parameter isn't used. Visual Studio Code indicates the unused parameter with a squiggly line. Normally, the line would be yellow to indicate a warning. But because you customized the _bicepconfig.json_ file, the linter treats the code as an error and displays the line in red.
 
    :::code language="bicep" source="code/5-template-1.bicep" range="15" :::
 
@@ -152,19 +152,19 @@ Now that you've identified the problem, you can fix it in your Bicep file.
 
 ## Fix the validation error
 
-You've found another problem in the Bicep file. Here, you fix the problem.
+You've found another problem in the Bicep file. Here, you'll fix the problem.
 
-1. In Visual Studio Code, open the *main.bicep* file in the *deploy* folder.
+1. In Visual Studio Code, open the _main.bicep_ file in the _deploy_ folder.
 
 1. Look at the definition of the `storageAccountName` variable:
 
-   :::code language="bicep" source="code/5-template-2.bicep" range="16-19" highlight="4" :::
+   :::code language="bicep" source="code/5-template-2.bicep" range="16-20" highlight="5" :::
 
    There seems to be a typo, and the string interpolation hasn't been configured correctly.
 
 1. Update the `storageAccountName` variable to use string interpolation correctly:
 
-   :::code language="bicep" source="code/5-template-3.bicep" range="19" :::
+   :::code language="bicep" source="code/5-template-3.bicep" range="20" :::
 
 1. Save the file.
 

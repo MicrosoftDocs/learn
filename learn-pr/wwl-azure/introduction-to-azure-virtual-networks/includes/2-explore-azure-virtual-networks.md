@@ -5,7 +5,7 @@ Azure Virtual Networks (VNets) are the fundamental building block of your privat
 Azure VNets enable resources in Azure to securely communicate with each other, the internet, and on-premises networks.
 
  -  **Communication with the internet.** All resources in a VNet can communicate outbound to the internet, by default. You can communicate inbound to a resource by assigning a public IP address or a public Load Balancer. You can also use public IP or public Load Balancer to manage your outbound connections.
- -  **Communication between Azure resources.** There are three key mechanisms through which Azure resource can communicate: VNets, VNet service endpoints and VNet peering. Virtual Networks can connect not only VMs, but other Azure Resources, such as the App Service Environment, Azure Kubernetes Service, and Azure virtual machine scale sets. You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts. When you create a VNet, your services and VMs within your VNet can communication directly and securely with each other in the cloud.
+ -  **Communication between Azure resources.** There are three key mechanisms through which Azure resource can communicate: VNets, VNet service endpoints and VNet peering. Virtual Networks can connect not only VMs, but other Azure Resources, such as the App Service Environment, Azure Kubernetes Service, and Azure Virtual Machine Scale Sets. You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts. When you create a VNet, your services and VMs within your VNet can communicate directly and securely with each other in the cloud.
  -  **Communication between on-premises resources.** Securely extend your data center. You can connect your on-premises computers and networks to a virtual network using any of the following options: Point-to-site virtual private network (VPN), Site-to-site VPN, Azure ExpressRoute.
  -  **Filtering network traffic.** You can filter network traffic between subnets using any combination of network security groups and network virtual appliances like firewalls, gateways, proxies, and Network Address Translation (NAT) services.
  -  **Routing network traffic.** Azure routes traffic between subnets, connected virtual networks, on-premises networks, and the Internet, by default. You can implement route tables or border gateway protocol (BGP) routes to override the default routes Azure creates.
@@ -34,12 +34,14 @@ In addition, you cannot add the following address ranges:
  -  169.254.0.0/16 (Link-local)
  -  168.63.129.16/32 (Internal DNS)
 
-Azure assigns resources in a virtual network a private IP address from the address space that you provision. For example, if you deploy a VM in a VNet with address space 10.0.0.0/16, the VM will be assigned a private IP like 10.0.0.4. it is important to note that Azure reserves 5 IP addresses within each subnet. These are x.x.x.0-x.x.x.3 and the last address of the subnet. x.x.x.1-x.x.x.3 is reserved in each subnet for Azure services.
+Azure assigns resources in a virtual network a private IP address from the address space that you provision. For example, if you deploy a VM in a VNet with subnet address space 192.168.1.0/24, the VM will be assigned a private IP like 192.168.1.4. Azure reserves the first four and last IP address for a total of 5 IP addresses within each subnet. These are x.x.x.0-x.x.x.3 and the last address of the subnet.
 
- -  x.x.x.0: Network address
- -  x.x.x.1: Reserved by Azure for the default gateway
- -  x.x.x.2, x.x.x.3: Reserved by Azure to map the Azure DNS IPs to the VNet space
- -  x.x.x.255: Network broadcast address
+For example, the IP address range of 192.168.1.0/24 has the following reserved addresses:
+
+- 192.168.1.0 : Network address
+- 192.168.1.1 : Reserved by Azure for the default gateway
+- 192.168.1.2, 192.168.1.3 : Reserved by Azure to map the Azure DNS IPs to the VNet space
+- 192.168.1.255 : Network broadcast address.
 
 When planning to implement virtual networks, you need to consider the following:
 
@@ -69,7 +71,7 @@ You can associate zero or one NSG to each subnet in a virtual network. You can a
 
 As part of your Azure network design, it is important to plan your naming convention for your resources. An effective naming convention composes resource names from important information about each resource. A well-chosen name helps you quickly identify the resource's type, its associated workload, its deployment environment, and the Azure region hosting it. For example, a public IP resource for a production SharePoint workload residing in the West US region might be pip-sharepoint-prod-westus-001
 
-:::image type="content" source="../media/components-azure-resource-name-e0dedd6c.png" alt-text="Azure resrouce naming example.":::
+:::image type="content" source="../media/components-azure-resource-name-e0dedd6c.png" alt-text="Azure resource naming example.":::
 
 
 All Azure resource types have a scope that defines the level that resource names must be unique. A resource must have a unique name within its scope. There are four levels you can specify a scope: [management group](/azure/governance/management-groups/overview), subscription, [resource group](/azure/azure-resource-manager/management/overview), and resource. Scopes are hierarchical, with each level of hierarchy making the scope more specific.
@@ -206,13 +208,13 @@ Within each virtual network address range, you can create one or more subnets th
 :::image type="content" source="../media/ip-addresses-vnet-configuration-50b4351d.png" alt-text="Create virtual network - IP Addresses tab.":::
 
 
-In the Create virtual network tab, you can enable security features like BastionHost, DDoS Protection Standard, and Firewall.
+In the Create virtual network tab, you can enable security features like BastionHost, DDoS Protection, and Firewall.
 
 **BastionHost**<br>‎The Azure Bastion service is a new fully platform-managed PaaS service that you provision inside your virtual network. It provides secure and seamless RDP/SSH connectivity to your virtual machines directly in the Azure portal over SSL. When you connect via Azure Bastion, your virtual machines do not need a public IP address.
 
 **Distributed Denial of Service (DDoS) protection**
 
-You can select to enable Standard DDoS protection. Standard DDoS Protection is a paid service plan that offers enhanced DDoS mitigation capabilities via adaptive tuning, attack notification, and telemetry to protect against the impacts of a DDoS attack for all protected resources within this virtual network. Basic DDoS protection is integrated into the Azure platform by default and at no additional cost.
+You can select to enable DDoS protection Standard. DDoS Protection is a paid service plan that offers enhanced DDoS mitigation capabilities via adaptive tuning, attack notification, and telemetry to protect against the impacts of a DDoS attack for all protected resources within this virtual network. Basic DDoS protection is integrated into the Azure platform by default and at no additional cost.
 
 **Firewall**
 
@@ -221,7 +223,7 @@ Azure Firewall is a managed cloud-based network security service that protects y
 :::image type="content" source="../media/vnet-security-913bb904.png" alt-text="Create virtual network - Security tab.":::
 
 
-In the **Review + create** tab, you can define tags, which can help you to organize and manage your Azure resources.
+In the **Review + create** tab, you can define Tags, which can help you to organize and manage your Azure resources.
 
 :::image type="content" source="../media/review-create-vnet-511dedf4.png" alt-text="Create virtual network - review tab.":::
 

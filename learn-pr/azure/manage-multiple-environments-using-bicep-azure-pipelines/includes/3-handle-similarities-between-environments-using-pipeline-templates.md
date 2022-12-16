@@ -72,6 +72,8 @@ Each pipeline template parameter has three properties:
 - The *type* of the parameter. Parameters support several different types of data, including *string*, *number*, and *Boolean*. You can also define more complex templates that accept structured objects.
 - The *default value* of the parameter. This is optional. If you don't specify a default value, then a value must be provided when the pipeline template is used.
 
+In the example above, the pipeline defines a string parameter named `environmentType`, which has a default value of `Test`, and a mandatory parameter named `serviceConnectionName`.
+
 In your pipeline template, you use a special syntax to refer to the value of the parameter. Use the `${{parameters.YOUR_PARAMETER_NAME}}` macro, like in this example: 
 
 :::code language="yaml" source="code/3-script-parameters.yml" range="8-10" highlight="3" :::

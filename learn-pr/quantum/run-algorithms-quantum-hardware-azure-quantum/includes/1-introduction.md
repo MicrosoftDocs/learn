@@ -22,11 +22,9 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-- [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true)
-- [Solve graph coloring problems by using Grover's search](/learn/modules/solve-graph-coloring-problems-grovers-search/?azure-portal=true)
+- [Get started with Azure Quantum](/training/modules/get-started-azure-quantum/?azure-portal=true)
+- [Solve graph coloring problems by using Grover's search](/training/modules/solve-graph-coloring-problems-grovers-search/?azure-portal=true)
 - An Azure Quantum workspace.
 
 > [!NOTE]
 > First-time users automatically get free Azure Quantum Credits for use with each participating quantum hardware provider (500 USD each) when creating your workspace. If you need more credits, you can apply to the [Azure Quantum Credits program](https://aka.ms/aq/credits).
-
-

@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Experience performing fundamental Azure administration
   - Experience working with Azure Monitor and its Log Analytics workspace
-iconUrl: /learn/achievements/deploy-azure-sentinel-and-connect-data-sources.svg
+iconUrl: /training/achievements/deploy-azure-sentinel-and-connect-data-sources.svg
 levels:
 - beginner
 roles:
@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- cloud-security
 units:
 - learn.azure.azure-sentinel-deploy-connect.1-introduction
 - learn.azure.azure-sentinel-deploy-connect.2-deployment-options

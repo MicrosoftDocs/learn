@@ -42,15 +42,15 @@ The default subscription key header name is **Ocp-Apim-Subscription-Key**, and t
 
 To test out your API calls, you can use the developer portal, or command-line tools, such as **curl**. Here's an example of a `GET` request using the developer portal, which shows the subscription key header:
 
-:::image type="content" source="../media/2-key-header-portal.png" alt-text="Call API from developer portal." loc-scope="other"::: <!-- no-loc -->
+:::image type="content" source="../media/2-key-header-portal.png" alt-text="Screenshot that shows how to Call your API from developer portal." loc-scope="other"::: <!-- no-loc -->
 
-Here's how you can pass a key in the request header using **curl**:
+Here's an example of how you would pass a key in a request header using **curl**:
 
 ```bash
 curl --header "Ocp-Apim-Subscription-Key: <key string>" https://<apim gateway>.azure-api.net/api/path
 ```
 
-Here's an example **curl** command that passes a key in the URL as a query string:
+Here's an example of how you would use a **curl** command to pass a key as a query string in a URL:
 
 ```bash
 curl https://<apim gateway>.azure-api.net/api/path?subscription-key=<key string>

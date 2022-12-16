@@ -6,14 +6,12 @@ Microsoft has developed Azure Digital Twins SDKs to cover the APIs as follows:
 The supported programming languages are:
 
  -  Control plane APIs:
-    
      -  .NET (C\#)
      -  Java
      -  JavaScript
      -  Python
      -  Go
  -  Data plane APIs
-    
      -  .NET (C\#)
      -  Java
      -  JavaScript
@@ -21,7 +19,7 @@ The supported programming languages are:
 
 The GitHub projects and Namespace documentation for the SDKs are organized by programming language. For example, the information the .NET (C\#) SDKs can be found in the following locations:
 
- -  Namespace docs: [https://docs.microsoft.com/dotnet/api/overview/azure/digitaltwins](/dotnet/api/overview/azure/digitaltwins)
+ -  Namespace docs: [Digital Twins](/dotnet/api/overview/azure/digitaltwins)
  -  GitHub: [https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/digitaltwins](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/digitaltwins)
 
 The GitHub project for .NET includes the sample projects that demonstrate the following:
@@ -160,4 +158,4 @@ foreach (string prop in twin.Contents.Keys)
 ```
 
 > [!NOTE]
-> BasicDigitalTwin uses \`\`\`System.Text.Json\`\`\` attributes. In order to use BasicDigitalTwin with your DigitalTwinsClient, you must either initialize the client with the default constructor, or, if you want to customize the serializer option, use the JsonObjectSerializer.
+> BasicDigitalTwin uses `System.Text.Json` attributes. In order to use BasicDigitalTwin with your DigitalTwinsClient, you must either initialize the client with the default constructor, or, if you want to customize the serializer option, use the JsonObjectSerializer.

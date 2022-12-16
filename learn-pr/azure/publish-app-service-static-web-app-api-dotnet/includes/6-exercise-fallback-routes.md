@@ -10,7 +10,7 @@ Pull your code changes from Git by following these steps:
 
 1. Pull the latest changes from GitHub.
 
-You can now see your workflow file in the folder _.github/workflows_ in **Windows Explorer** (the file is not part of the Visual Studio solution).
+You can now see your workflow file in the folder _.github/workflows_ in **Windows Explorer** (the file isn't part of the Visual Studio solution).
 
 ## Create a routing rule
 
@@ -57,4 +57,4 @@ Go to your repository in your browser and watch the GitHub Action's progress. Fo
 
 You can see the progress of your GitHub Action as it builds and publishes your web app and API.
 
-After it is redeployed, browse to your app. Notice the URL displays **/products**. Now, refresh the browser by pressing <kbd>F5</kbd> to test your fallback route. Your app should reload successfully thanks to your fallback route in your routing rules!
+After it's redeployed, browse to your app. Notice the URL displays **/products**. Now, refresh the browser by pressing <kbd>F5</kbd> to test your fallback route. Your app should reload successfully thanks to your fallback route in your routing rules!

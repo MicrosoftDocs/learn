@@ -18,7 +18,7 @@ abstract: |
   * Route traffic manually and automatically.
 prerequisites: |
   * Experience using the Azure portal to create and manage App Service web apps
-iconUrl: /learn/achievements/app-service-deployment-slots.svg
+iconUrl: /training/achievements/app-service-deployment-slots.svg
 levels:
 - intermediate
 roles:
@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-app-service
+subjects:
+- cloud-computing
 units:
 - learn.wwl.understand-app-service-deployment-slots.introduction
 - learn.wwl.understand-app-service-deployment-slots.explore-staging-environments

@@ -18,11 +18,11 @@ SecurityEvent
 
 ```
 
-The first table specified in the join is considered the Left table.  The table after the join keyword is the right table.  When working with columns from the tables, the `$left.Column` name and `$right.Column` name is to distinguish which tables columns are referencing.
+The first table specified in the join is considered the Left table.  The table after the join keyword is the right table. The columns from the tables are designated, the `$left.Column` and the `$right.Column` to distinguish which tables columns you're referencing.
 
-When joining tables, you use Join flavors to determine the joining behavior.  It is essential to understand the impact of records on the left and right side based on the join flavor.  The graphic below shows which records will be kept if there is or isn't a matching record in the other dataset.  The **inner join** will only show records from the left side if there is a matching record on the right side. The right side will also require a left side record.
+When joining tables, you use Join flavors to determine the joining behavior.  It's essential to understand the impact of records on the left and right side based on the join flavor.  The graphic below shows which records will be kept if there's or isn't a matching record in the other dataset.  The **inner join** will only show records from the left side if there's a matching record on the right side. The right side will also require a left side record.
 
-![Example join types](../media/kusto-query-language-m03-01.png)
+:::image type="content" source="../media/kusto-query-language-m03-01.png" alt-text="Diagram of Example join types, showing where how joins work.":::
 
 | Join Flavor| Output Records|
 | :--- | :--- |

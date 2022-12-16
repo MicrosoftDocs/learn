@@ -16,7 +16,7 @@ prerequisites: |
   - Understand the Azure compute options
 summary: |
   In this learning path, the students will learn how to create and manage data pipelines in the cloud using Azure Data Factory.
-iconUrl: /learn/achievements/data-integration-scale-azure-data-factory.svg
+iconUrl: /training/achievements/data-integration-scale-azure-data-factory.svg
 levels:
 - intermediate
 roles:
@@ -25,6 +25,8 @@ roles:
 products:
 - azure-data-factory
 - azure-synapse-analytics
+subjects:
+- data-analytics
 modules:
 - learn.wwl.integrate-data-azure-data-factory
 - learn.wwl.petabyte-scale-ingestion-azure-data-factory

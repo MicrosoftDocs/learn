@@ -1,0 +1,21 @@
+Your students want more than a diploma, they want real-world skills that make them employable from the outset. Further, employers highly value graduates who have their degree plus an industry- recognized certification. Using the resources available from Microsoft will help you feel confident to teach your students the skills they need to sit for and pass a Microsoft Certification exam.  
+
+If you are teaching the advanced role-based courses start with Microsoft Learn. Microsoft Learn provides learning paths and modules with step-by-step tutorials and interactive coding environments. If you are teaching Microsoft Fundamentals courses, utilize Microsoft Learn and Microsoft Virtual Training Days to get prepared. 
+
+Take a practice exam to help increase your chance of passing your certification exam by preparing for the real exam and building your knowledge of exam objectives.  
+
+To prepare you for delivering cutting-edge technical instruction in your classes, we suggest that all faculty members get certified in the content they will be teaching. As one of the benefits of MSLE, all faculty members receive a discounted Microsoft Certification exam voucher, the discount varies by program option. Achieving your own certification helps you understand the process your students will be going through and gives you first-hand experience with the exam that you are preparing them to take. 
+
+Supplemental Resources: 
+
+- [Microsoft Learn](https://aka.ms/learn) 
+
+- [Microsoft Learn for Educators](https://aka.ms/msle)  
+
+- [Microsoft Learn for Educators Portal](https://aka.ms/MSLEPort) 
+
+- [Certiport Authorized Testing Center Locator](https://aka.ms/certiporttest) 
+
+- [PearsonVUE](https://aka.ms/pearsonvue) 
+
+ 

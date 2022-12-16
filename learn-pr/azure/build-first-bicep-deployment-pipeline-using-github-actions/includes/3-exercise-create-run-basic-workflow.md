@@ -1,3 +1,5 @@
+[!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 You want to automate deployment of updates to your toy company's website. As a first step, you create a basic workflow in GitHub Actions.
 
 In this exercise, you'll:
@@ -11,7 +13,7 @@ In this exercise, you'll:
 
 1. In a browser, go to [GitHub](https://www.github.com?azure-portal=true). Sign in by using your GitHub account, or create a new account if you don't have one.
 
-1. Select the **+** icon in the upper right of the window, and then select **New repository**.
+1. Select the plus (**+**) icon in the upper right of the window, and then select **New repository**.
 
    :::image type="content" source="../media/3-github-new-repository-menu.png" alt-text="Screenshot of the GitHub interface that shows the menu for creating a new repository." border="true":::
 
@@ -25,6 +27,8 @@ In this exercise, you'll:
    After you're done, your repository configuration should look like the following screenshot:
 
    :::image type="content" source="../media/3-github-new-project-details.png" alt-text="Screenshot of the GitHub interface showing the configuration for the repository to create." border="true":::
+
+1. Keep a note of the **Owner** of the repository. In the screenshot above, the owner is `mygithubuser`. This is your GitHub account name, and you'll use it later in this module.
 
 1. Select **Create repository**.
 

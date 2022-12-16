@@ -4,7 +4,7 @@ Visual Studio and Azure App Service provide a powerful mechanism for creating, p
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Create an ASP.NET Core web app in Visual Studio
 - Publish a web app to Azure using Visual Studio
@@ -17,4 +17,4 @@ In this module, you will:
 - Familiarity with web app concepts
 - Basic programming knowledge
 - Basic HTML knowledge
-- A local installation of [Visual Studio 2022 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022)
+- A local installation of [Visual Studio 2022 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022)

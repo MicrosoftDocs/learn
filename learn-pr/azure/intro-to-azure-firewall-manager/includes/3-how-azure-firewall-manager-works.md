@@ -55,6 +55,8 @@ Firewall Manager enables you to:
 - Define rules for traffic filtering across multiple Azure Firewall instances in secured virtual hubs and hub virtual networks.
 - Associate an Azure Firewall policy with new or existing virtual networks. This enforces consistent firewall policies across multiple hub virtual networks.
 - Associate an Azure Firewall policy or a Security Partner Provider with new or existing virtual hubs. This enforces consistent security and routing policies across multiple hubs.
+- Associate a Web Application Firewall policy to an application delivery platform (Azure Front Door or Azure Application Gateway).
+- Associate your virtual networks with a DDoS protection plan.
 
 In the following graphic, an administrator is deploying a firewall with a firewall policy for an existing virtual network.
 

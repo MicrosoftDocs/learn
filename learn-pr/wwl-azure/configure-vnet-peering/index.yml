@@ -3,7 +3,7 @@ uid: learn.wwl.configure-vnet-peering
 metadata:
   title: Configure virtual network peering
   description: "You will learn to configure a VNet peering connection and address transit and connectivity concerns."
-  ms.date: 09/08/2021
+  ms.date: 10/24/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -16,19 +16,22 @@ abstract: |
   - Configure gateway transit, connectivity, and service chaining.
 prerequisites: |
   None
-iconUrl: /learn/achievements/vnet-configure-peering.svg
+iconUrl: /training/achievements/vnet-configure-peering.svg
 levels:
 - intermediate
 roles:
 - administrator
 products:
 - azure-virtual-network
+subjects:
+- networking
 units:
 - learn.wwl.configure-vnet-peering.introduction
 - learn.wwl.configure-vnet-peering.determine-uses
 - learn.wwl.configure-vnet-peering.determine-gateway-transit-connectivity
 - learn.wwl.configure-vnet-peering.create
 - learn.wwl.configure-vnet-peering.determine-service-chaining-uses
+- learn.wwl.configure-vnet-peering.interactive-simulation-peering
 - learn.wwl.configure-vnet-peering.knowledge-check
 - learn.wwl.configure-vnet-peering.summary-resources
 badge:

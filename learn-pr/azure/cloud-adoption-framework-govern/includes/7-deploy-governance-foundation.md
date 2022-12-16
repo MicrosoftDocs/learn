@@ -1,14 +1,14 @@
-Deploying a cloud governance foundation accelerates your ability to govern your entire Azure environment. This unit outlines the considerations and implementations that are required to deploy a foundation that can achieve resource consistency and prepare you for other governance disciplines.
+Deploying a cloud-governance foundation accelerates your ability to govern your entire Azure environment. This unit outlines the considerations and implementations that are required to deploy a foundation that can achieve resource consistency and prepare you for other governance disciplines.
 
 ## What will you configure?
 
-This unit assumes that you've already deployed assets to Azure. Now, you want to configure the environment to better organize, track, and govern those assets. When you finish this unit, you'll understand *why* and *how* to configure management groups, subscription design, resource groups, and tagging. 
+This unit assumes that you've already deployed assets to Azure. Now, you want to configure the environment to better organize, track, and govern those assets. When you finish this unit, you'll understand *why* and *how* to configure management groups, subscription design, resource groups, and tagging.
 
 ## Strategic considerations
 
 Resource organization is based on what's important to your organization. Before you define a management group or subscription design, it's important to understand the priority of these competing priorities:
 
-- **Cost transparency**: Every cloud adoption should be aligned to departments, business units, projects, or other cost allocation mechanisms for chargeback and showback accounting requirements.
+- **Cost transparency**: Every cloud adoption should be aligned to departments, business units, projects, or other cost-allocation mechanisms for chargeback and showback accounting requirements.
 - **Compliance and security**: Every cloud adoption should map to specific compliance requirements that map cloud adoption to specific risk, security, and compliance organization structures.
 - **Democratization (delegated responsibility)**: Every cloud adoption should map to teams, product groups, or projects for easier segmentation of responsibility by teams.
 
@@ -24,9 +24,9 @@ The basic foundation of all governance is consistent resource organization.
 
 The three main components of resource organization are:
 
-- *Management groups*, which reflect security, operations, and business or accounting hierarchies.
-- *Subscriptions*, which group similar resources into logical boundaries.
-- *Resource groups*, which further group applications or workloads into deployment and operations units.
+- *Management groups*, which reflect security, operations, and business or accounting hierarchies
+- *Subscriptions*, which group similar resources into logical boundaries
+- *Resource groups*, which further group applications or workloads into deployment and operations units
 
 ## Governance design consideration
 
@@ -52,10 +52,10 @@ Start with a smaller hierarchy so you can experiment and quickly overcome initia
 
 In this smaller version, attempt the following configuration steps:
 
-- **Parent node**: Define a management group for corporate IT.
-- **Child nodes**: Define child nodes for each production and nonproduction environment.
+- **Parent node**: Define a management group for corporate IT
+- **Child nodes**: Define child nodes for each production and nonproduction environment
 
-For guidance on creating these management groups, see the [quickstart guide for creating a management group in the Azure portal](/azure/governance/management-groups/create-management-group-portal?azure-portal=true).
+For guidance on creating these management groups, reference the [quickstart guide for creating a management group in the Azure portal](/azure/governance/management-groups/create-management-group-portal?azure-portal=true).
 
 ## Subscription design
 
@@ -67,7 +67,7 @@ A subscription is a logical container for all deployed assets. Subscriptions are
 
 ## Scaling with subscriptions
 
-There are several technical and non-technical reasons to scale with multiple subscriptions. See the [fundamental concepts article](/azure/cloud-adoption-framework/ready/azure-best-practices/scale-subscriptions?azure-portal=true) for an overview of common reasons to scale.
+There are several technical and non-technical reasons to scale with multiple subscriptions. Check out the [fundamental concepts article](/azure/cloud-adoption-framework/ready/azure-best-practices/scale-subscriptions?azure-portal=true) for an overview of common reasons to scale.
 
 The following questions might help illustrate reasons for you to scale your subscriptions:
 
@@ -78,7 +78,7 @@ The following questions might help illustrate reasons for you to scale your subs
   - Different customers
   - Different departments or business units
   - Different projects
-- Will you be able to spread the cost of a shared infrastructure across application owners? (Often, a dedicated subscription is used for shared infrastructure, like Azure Active Directory, monitoring, or patching tools.) 
+- Will you be able to spread the cost of a shared infrastructure across application owners? (Often, a dedicated subscription is used for shared infrastructure, like Azure Active Directory, monitoring, or patching tools.)
 - Do you need to create clearer separation of duties through shared service subscriptions for operations management, security, identity sync, connectivity, or DevOps teams?
 
 ### Exercise: Add subscriptions to your management groups
@@ -89,15 +89,15 @@ Add existing subscriptions in each of the environment nodes to create clarity be
 
 *Figure 5: Add a subscription to a management group.*
 
-For guidance on adding subscriptions to a management group, see the [how-to guide](/azure/governance/management-groups/manage#move-subscriptions?azure-portal=true).
+For guidance on adding subscriptions to a management group, reference the [how-to guide](/azure/governance/management-groups/manage#move-subscriptions?azure-portal=true).
 
 ## Tagging
 
 Management groups reflect your highest-priority organization structure. Tagging reflects various organizing principles that also are reflected in metadata. Here are suggested tags for all workloads:
 
 - Workload (and/or application)
-- Data sensitivity; see [Data classification](/azure/cloud-adoption-framework/govern/policy-compliance/data-classification?azure-portal=true) for examples
-- Mission criticality; see [Workload criticality](/azure/cloud-adoption-framework/manage/considerations/criticality?azure-portal=true)for examples
+- Data sensitivity; reference [Data classification](/azure/cloud-adoption-framework/govern/policy-compliance/data-classification?azure-portal=true) for examples
+- Mission criticality; reference [Workload criticality](/azure/cloud-adoption-framework/manage/considerations/criticality?azure-portal=true) for examples
 - Owner
 - Department (cost center)
 - Environment
@@ -110,13 +110,13 @@ You can apply Azure policies to all subscriptions in a management group. To unde
 
 *Figure 6: Assign a policy in the Azure portal.*
 
-For guidance on applying a policy, see the tutorial on [creating and managing policies](/azure/governance/policy/tutorials/create-and-manage#assign-a-policy?azure-portal=true)
+For guidance on applying a policy, check out the tutorial on [creating and managing policies](/azure/governance/policy/tutorials/create-and-manage#assign-a-policy?azure-portal=true)
 
-- Step 4 of the instructions for assigning a policy discusses scope. This is where you will select the management group to ensure that the policies are applied to all subscriptions in the management group.
-- Steps 6 and 7 discuss policy definition. From the list of **Built-in** policies, we suggest selecting one of the policies related to [tagging](/azure/governance/policy/samples/built-in-policies#tags?azure-portal=ture). Specifically the policy that requires a [tag on all resources](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F1e30110a-5ceb-460c-a204-c1c3969c6d62?azure-portal=true) will help establish a governance foundation.
+- Step 4 of the instructions for assigning a policy discusses scope. This is where you'll select the management group to ensure that the policies are applied to all subscriptions in the management group.
+- Steps 6 and 7 discuss policy definition. From the list of **Built-in** policies, we suggest selecting one of the policies related to [tagging](/azure/governance/policy/samples/built-in-policies#tags). Specifically, the policy that requires a [tag on all resources](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F1e30110a-5ceb-460c-a204-c1c3969c6d62?azure-portal=true) will help establish a governance foundation.
 
 > [!IMPORTANT]
-> Step 9 in the [tutorial](/azure/governance/policy/tutorials/create-and-manage#assign-a-policy?azure-portal=true) illustrates **Policy enforcement**. As you learn about governance, be sure to set **Policy enforcement** to **Disabled**. When this setting is disabled, you can audit your environment without making any change, and it won't prevent future deployments.
+> Step 9 in the [tutorial](/azure/governance/policy/tutorials/create-and-manage#assign-a-policy?azure-portal=true) illustrates **Policy enforcement**. As you learn about governance, be sure to set **Policy enforcement** to **Disabled**. When this setting is disabled, you can audit your environment without making any changes, and it won't prevent future deployments.
 
 ## Deployment acceleration
 
@@ -126,21 +126,21 @@ Packaging all the governance change in a blueprint accelerates deployments and c
 
 Use Azure Blueprints to package Azure Resource Manager templates, Azure policies, and role-based access control settings into a single package. The Cloud Adoption Framework for Azure (CAF) Foundation blueprint provides an example and a starting point for using blueprints in cloud governance to:
 
-- Deploy Azure Key Vault.
-- Deploy Log Analytics in Azure Monitor Logs.
-- Deploy Microsoft Defender for Cloud (standard version).
+- Deploy Azure Key Vault
+- Deploy Log Analytics in Azure Monitor Logs
+- Deploy Microsoft Defender for Cloud (standard version)
 
 The CAF Foundation blueprint also defines and deploys policies to:
 
-- Apply `cost center` tags to resource groups.
-- Append resources in resource group with the `cost center` tag.
-- Permit an Azure region for resources and resource groups.
-- Permit storage account SKUs (choose when deploying).
-- Permit Azure Virtual Machines SKUs (choose when deploying).
-- Require Azure Network Watcher to be deployed.
-- Require secure transfer encryption for Azure Storage accounts.
-- Deny resource types (choose when deploying).
-- Create an initiative to enable monitoring in Microsoft Defender for Cloud (89 policies).
+- Apply `cost center` tags to resource groups
+- Append resources in resource group with the `cost center` tag
+- Permit an Azure region for resources and resource groups
+- Permit storage account SKUs (choose when deploying)
+- Permit Azure Virtual Machines SKUs (choose when deploying)
+- Require Azure Network Watcher to be deployed
+- Require secure transfer encryption for Azure Storage accounts
+- Deny resource types (choose when deploying)
+- Create an initiative to enable monitoring in Microsoft Defender for Cloud (89 policies)
 
 Follow the prescribed steps to [publish and assign this sample blueprint to your management group](/azure/governance/blueprints/samples/caf-foundation/deploy?azure-portal=true).
 

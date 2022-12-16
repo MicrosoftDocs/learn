@@ -1,4 +1,4 @@
-The various Defender for Cloud plans detect threats in any area of your environment and generate security alerts.  When a single alert isn't interesting or relevant, you can manually dismiss it. Alternatively, use the suppression rules feature to automatically dismiss similar alerts in the future. Typically, you'd use a suppression rule to:
+The Defender for Cloud plans detect threats in any area of your environment and generate security alerts.  When a single alert isn't interesting or relevant, you can manually dismiss it. Alternatively, use the suppression rules feature to automatically dismiss similar alerts in the future. Typically, you'd use a suppression rule to:
 
 - Suppress alerts that you've identified as false positives
 
@@ -24,7 +24,7 @@ In the new suppression rule pane, enter the details of your new rule.
 
 - Your rule can dismiss the alert on specific criteria - when it relates to a specific IP address, process name, user account, Azure resource, or location.
 
-![new suppression rule pane](../media/new-suppression-rule-pane.png)
+:::image type="content" source="../media/new-suppression-rule-pane.png" alt-text="Screenshot of Defender for Cloud new alert suppression rule pane.":::
 
 Enter details of the rule:
 

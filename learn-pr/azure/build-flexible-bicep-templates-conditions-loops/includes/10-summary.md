@@ -1,4 +1,4 @@
-Your toy company wants to launch a new teddy bear toy in multiple countries. For compliance reasons, the infrastructure must be spread across all the Azure regions where the toy will be launched.
+Your toy company wants to launch a new teddy bear toy in multiple countries/regions. For compliance reasons, the infrastructure must be spread across all the Azure regions where the toy will be launched.
 
 You needed to deploy the same resources in multiple locations and a variety of environments. You wanted to create flexible Bicep templates that you can reuse, and to control resource deployments by changing the deployment parameters.
 
@@ -9,8 +9,8 @@ Without the conditions and copy loops features, you would have to maintain and u
 ## Learn more
 
 - [Conditional deployment in Bicep](/azure/azure-resource-manager/bicep/conditional-resource-deployment)
-- Bicep loops
-    - [Resource iteration in Bicep](/azure/azure-resource-manager/bicep/loop-resources)
-    - [Property iteration in Bicep](/azure/azure-resource-manager/bicep/loop-properties)
-    - [Variable iteration in Bicep](/azure/azure-resource-manager/bicep/loop-variables)
-    - [Output iteration in Bicep](/azure/azure-resource-manager/bicep/loop-outputs)
+- [Bicep loops](/azure/azure-resource-manager/bicep/loops)
+- [Resources](/azure/azure-resource-manager/bicep/resource-declaration)
+- [Modules](/azure/azure-resource-manager/bicep/modules)
+- [Variables](/azure/azure-resource-manager/bicep/variables)
+- [Outputs](/azure/azure-resource-manager/bicep/outputs)

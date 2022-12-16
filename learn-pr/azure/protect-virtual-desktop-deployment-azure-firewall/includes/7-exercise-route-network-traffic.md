@@ -12,10 +12,11 @@ After you complete those steps, all traffic will route to Azure Firewall.
 
 ### Create route table
 
-First, create a route table named *firewall-route*.
+First, you'll create a route table named *firewall-route*.
 
 1. In the [Azure portal](https://portal.azure.com?azure-portal=true), search for and select **Route tables**.
 1. Select **+ Create**.
+:::image type="content" source="../media/7-create-route-table.png" alt-text="Screenshot that shows the information to include when creating a route table.":::
 1. Use the following values:
 
     |Field |Value |
@@ -31,11 +32,11 @@ First, create a route table named *firewall-route*.
 
 ### Associate route table to the workload's subnet
 
-Now, associate *firewall-route* to the host pool's subnet.
+Now, you'll associate *firewall-route* to the host pool's subnet.
 
 1. On **firewall-route**, under **Settings**, select **Subnets**.
 :::image type="content" source="../media/7-firewall-route-subnet.png" alt-text="Screenshot that shows the subnet option under settings for the firewall route.":::
-1. Select **Associate**.
+1. Select **+ Associate**.
 1. Select the following values:
 
     |Field |Value  |
@@ -43,7 +44,7 @@ Now, associate *firewall-route* to the host pool's subnet.
     |Virtual network    |  hostVNet      |
     |Subnet |  hostSubnet      |
 
-1. Select **OK**.
+1. Select **OK** and wait until associate is added.
 
 ### Add route to route table
 
@@ -52,21 +53,24 @@ The last step is to add a route to Azure Firewall on the route table. After you 
 1. Under **Settings**, select **Routes**.
 
     :::image type="content" source="../media/7-firewall-route-routes.png" alt-text="Screenshot that shows the routes option under settings on the firewall route table.":::
-1. Select **Add**.
+1. Select **+ Add**.
+
+    :::image type="content" source="../media/7-add-route.png" alt-text="Screenshot that shows the information to include when adding a route.":::
 1. Enter the following values:
 
     |Field |Value  |
     |---------|---------|
     |Route name    |  fw-rt       |
-    |Address prefix |  0.0.0.0/0       |
+    | Address prefix source | IP Addresses |
+    |Source IP addresses/CIDR ranges |  0.0.0.0/0       |
     |Next hop type   |  Virtual appliance     |
-    |Next hop address   |  Paste in the **Firewall private IP address** from the previous exercise unit.    |
+    |Next hop address   |  Paste in the **Firewall private IP address** from the previous exercise unit. This can be found under your Firewall page, listed as Firewall private IP.    |
 
-11. Select **OK**.
+1. Select **OK**.
 
 ## Create application rule collection
 
-By default, the firewall denies access to everything. So you need to configure conditions under which traffic is allowed through the firewall.
+By default, the firewall denies access to everything, so you need to configure conditions under which traffic is allowed through the firewall.
 
 Create an application rule collection with rules to allow Azure Virtual Desktop access to several fully qualified domain names (FQDNs).
 
@@ -84,7 +88,7 @@ Create an application rule collection with rules to allow Azure Virtual Desktop 
     |Priority    |    200     |
     |Action     |  Allow       |
 1. Under **Rules**, in the **FQDNs tags** section, enter the following information:
- 
+
     |Field  |Value  |
     |---------|---------|
     |Name     |     allow-virtual-desktop    |
@@ -93,7 +97,7 @@ Create an application rule collection with rules to allow Azure Virtual Desktop 
     |FQDN tags    |  Windows Virtual Desktop       |
 
 1. Under **Rules**, in the **Target FQDNs** section, enter the following information:
- 
+
     |Field  |Value  |
     |---------|---------|
     |Name     |     allow-storage-service-bus-accounts    |
@@ -108,7 +112,7 @@ Create an application rule collection with rules to allow Azure Virtual Desktop 
 
 ## Create network rule collection
 
-Let's say our scenario uses Azure Active Directory Domain Services (Azure AD DS), so you don't need to create a network rule to allow DNS. But you do need to create a rule to allow traffic from your Azure Virtual Desktop VMs to the Windows activation service. For our network rule to allow Key Management Services (KMS), use the destination IP address of the KMS server for the Azure global cloud.
+Let's say our scenario uses Azure Active Directory Domain Services (Azure AD DS), so you don't need to create a network rule to allow DNS. However, you do need to create a rule to allow traffic from your Azure Virtual Desktop VMs to the Windows activation service. For our network rule to allow Key Management Services (KMS), use the destination IP address of the KMS server for the Azure global cloud.
 
 1. On **learn-fw** >  **Rules (classic)**, select **Network rule collection**.
 1. Select the **Network rule collection** tab, and then select **Add network  rule collection**.
@@ -120,8 +124,9 @@ Let's say our scenario uses Azure Active Directory Domain Services (Azure AD DS)
     |Name     |     net-coll01    |
     |Priority    |    200     |
     |Action     |  Allow       |
+
 1. Under **Rules**, in the **IP Addresses** section, enter the following information:
- 
+
     |Field  |Value  |
     |---------|---------|
     |Name     |     allow-kms    |
@@ -149,7 +154,7 @@ At this point, you've routed all network traffic for Azure Virtual Desktop throu
     -Property Health,TimeStamp,ClusterUrl
      ```
 
-1. You should see something like the following results, where all three component services are listed as healthy:
+1. You should get something like the following results, where all three component services are listed as healthy:
 
     ```output
     Health               TimeStamp           ClusterUrl

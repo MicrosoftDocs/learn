@@ -10,7 +10,7 @@ You must distribute incoming network traffic across a group of back-end resource
 
 ## Skills measured
 
-Configuring load-balancing is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Configuring load-balancing is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Configure and manage virtual networking (25–30%)
 
@@ -21,7 +21,7 @@ Configure load balancing
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
  -  Identify features and usage cases for Azure load balancer.
  -  Implement public and internal Azure load balancers.

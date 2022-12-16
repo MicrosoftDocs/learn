@@ -96,9 +96,13 @@ After you start to use feature branches and pull requests, your team's process m
 
 1. A team member clones your shared repository.
 1. They make local changes on a branch in their own local copy of the repository.
-1. When they're finished with their changes, they create a pull request to the shared repository.
-1. Other team members review the changes. When they're satisfied, they approve the pull request and it's merged to the shared repository's main branch.
-1. In some scenarios, the remote repository's push triggers an automated pipeline to verify, test and deploy the code. You'll learn more about pipelines in other Microsoft Learn modules.
+1. When they're finished with their changes, they push their local branch to the shared repository.
+1. Within the shared repository, they create a pull request to merge the branch to *main*.
+
+   Other team members review the changes. When they're satisfied, they approve the pull request and it's merged to the shared repository's main branch.
+1. They delete the branches in the shared repository and in their local copy of the repository.
+
+   In some scenarios, the remote repository's push triggers an automated pipeline to verify, test and deploy the code. You'll learn more about pipelines in other Microsoft Learn modules.
 
 The following diagram illustrates this revised process.
 

@@ -6,7 +6,7 @@ Group Policy settings are presented as Group Policy Objects (GPOs) in AD DS user
 | Group Policy Template| The Group Policy template stores the settings, and is a collection of files stored in the SYSVOL of each domain controller in the `%SystemRoot%\SYSVOL\Domain\Policies\GPOGUID` path, where GPOGUID is the GUID of the Group Policy container. When you make changes to the settings of a GPO, the changes are saved to the Group Policy template of the domain controller from which the GPO was opened.|
 
 > [!NOTE]
-> By default, this is the domain controller that holds the primary domain controller (PDC) emulator operations master role. 
+> By default, this is the domain controller that holds the primary domain controller (PDC) emulator operations master role. 
 ## What is Group Policy replication?
 
 Group Policy containers and Group Policy templates are both replicated between all domain controllers in a single domain in AD DS. But these two elements use different replication mechanisms:
@@ -30,7 +30,7 @@ There are a number of ways to perform an authoritative restore of SYSVOL. After 
 - Perform a system state restore using `wbadmin –authsysvol`
 
 > [!TIP]
-> If you have the option to restore a system state backup (that is, you are restoring AD DS to the same hardware and operating system instance) then using `wbadmin –authsysvol` is simpler. 
+> If you have the option to restore a system state backup (that is, you are restoring AD DS to the same hardware and operating system instance) then using `wbadmin –authsysvol` is simpler. 
 But if you need to perform a bare metal restore, then you need to edit the `msDFSR-Options` attribute.
 
 ### Perform an authoritative synchronization of DFSR-replicated SYSVOL

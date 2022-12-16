@@ -22,7 +22,7 @@ prerequisites: |
   - Git
   - npm
   - JavaScript
-iconUrl: /learn/achievements/vue-data-events.svg
+iconUrl: /training/achievements/vue-data-events.svg
 ratingEnabled: true
 levels:
 - intermediate
@@ -31,7 +31,9 @@ roles:
 - developer
 products:
 - azure-app-service-static
-- vs-code
+subjects:
+- data-management
+- development-tools
 units:
 - learn.language.vue-data-events.1-introduction
 - learn.language.vue-data-events.2-forms

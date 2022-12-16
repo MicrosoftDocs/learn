@@ -3,7 +3,7 @@ uid: learn.python-get-started-testing
 metadata:
   title: Get started with testing in Python
   description: "Use Python's standard library module to write unit tests, and then get exposed to the concepts of other types of testing and how to apply them."
-  ms.date: 1/14/2022
+  ms.date: 12/13/2022
   author: alfredodeza
   ms.author: alfredodeza
   ms.custom: team=nextgen
@@ -19,15 +19,17 @@ abstract: |
 prerequisites: |
   - Ability to write Python scripts
   - Familiarity with command-line tools and executing scripts
-  - Python 3.6 or later installed on your computer. Follow the steps in the [Install Python 3](/learn/modules/python-install-vscode/3-exercise-install-python3) module. At the top of the article, choose the instructions for your configuration: Windows, Linux, or macOS.
-iconUrl: /learn/achievements/generic-badge.svg
+  - Python 3.6 or later installed on your computer. Follow the steps in the [Install Python 3](/training/modules/python-install-vscode/3-exercise-install-python3) module. At the top of the article, choose the instructions for your configuration: Windows, Linux, or macOS.
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
   - developer
   - student
 products:
-  - vs-code
+  - azure
+subjects:
+- development-tools
 units:
 - learn.python-get-started-testing.introduction
 - learn.python-get-started-testing.python-unittest

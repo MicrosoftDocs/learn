@@ -5,8 +5,9 @@ metadata:
   title: Introduction to Visual Studio
   description: "Evaluate what Visual Studio can add to your development experience with tools like the advanced editor, debugger, code-sharing, and publishing tools"
   ms.date: 12/15/2021
-  author: kendrahavens
-  ms.author: kehavens
+  author: anandmeg
+  ms.author: meghaanand
+  manager: jmartens
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
 title: Introduction to Visual Studio
@@ -19,13 +20,15 @@ abstract: |
 prerequisites: |
   - Some experience with beginner computer skills like installing an app from the internet.
   - Beginner familiarity with programming concepts like running code, editors, and debuggers.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
   - developer
 products:
   - vs-ide
+subjects:
+- development-tools
 units:
   - learn.visual-studio.visual-studio-intro.1-introduction
   - learn.visual-studio.visual-studio-intro.2-what-is-visual-studio

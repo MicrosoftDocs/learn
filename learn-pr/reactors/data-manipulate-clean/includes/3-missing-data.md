@@ -6,7 +6,7 @@ For missing values that aren't floats, pandas uses the Python `None` object. Alt
 
 ## None: Non-float missing data
 
-Because `None` comes from Python, it can't be used in NumPy and pandas arrays that aren't of data type `object`. Remember, NumPy arrays (and the data structures in pandas) can contain only a single type of data. This is what gives them their tremendous power for large-scale data and computational work, but it also limits their flexibility. Such arrays have to upcast to the “lowest common denominator,” the data type that will encompass everything in the array. When `None` is in the array, it means you are working with Python objects.
+Because `None` comes from Python, you can't use it in NumPy and pandas arrays that aren't of data type `object`. Remember, NumPy arrays (and the data structures in pandas) can contain only a single type of data. This is what gives them their tremendous power for large-scale data and computational work, but it also limits their flexibility. Such arrays have to upcast to the “lowest common denominator,” the data type that will encompass everything in the array. When `None` is in the array, it means you are working with Python objects.
 
 To see this in action, consider the following example array (note the `dtype` for it):
 
@@ -23,7 +23,7 @@ This output is returned:
 array([2, None, 6, 8], dtype=object)
 ```
 
-The reality of upcast data types carries two side effects with it. First, operations will be carried out at the level of interpreted Python code rather than compiled NumPy code. Essentially, this means that any operations involving `Series` or `DataFrames` with `None` in them will be slower. Although you probably wouldn't notice this performance hit, for large datasets, it might become an issue.
+The reality of upcast data types carries two side effects with it. First, operations will be carried out at the level of interpreted Python code rather than compiled NumPy code. Essentially, this means that any operations involving `Series` or `DataFrames` with `None` in them will be slower. Although you probably wouldn't notice this performance hit, it might become an issue for large datasets.
 
 The second side effect stems from the first. Because `None` essentially drags `Series` or `DataFrames` back into the world of plain Python, using NumPy or pandas aggregations like `sum()` or `min()` on arrays that contain a `None` value will generally produce an error.
 
@@ -58,7 +58,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
 
 ## NaN: Missing float values
 
-In contrast to `None`, NumPy (and therefore pandas) supports NaN for its fast, vectorized operations and `ufuncs`. The bad news is that any arithmetic that is performed on NaN always results in NaN. 
+In contrast to `None`, NumPy (and therefore pandas) supports NaN for its fast, vectorized operations and `ufuncs`. The bad news is that any arithmetic that is performed on NaN always results in NaN.
 
 For example:
 
@@ -118,7 +118,7 @@ What happens if you add `np.nan` and `None` together?
 
 ## NaN and None: Null values in pandas
 
-Even though NaN and `None` can behave somewhat differently, pandas is nevertheless built to handle them interchangeably. 
+Even though NaN and `None` can behave somewhat differently, pandas is nevertheless built to handle them interchangeably.
 
 To see what we mean, consider a `Series` of integers:
 
@@ -167,10 +167,10 @@ Now, set an element of `int_series` equal to `None`.
 
 In the process of upcasting data types to establish data homogeneity in `Series` and `DataFrames`, pandas will willingly switch missing values between `None` and NaN. Because of this design feature, it can be helpful to think of `None` and NaN as two different flavors of null in pandas. Indeed, some of the core methods you'll use to deal with missing values in pandas reflect this idea in their names:
 
-- `isnull()`: Generates a Boolean mask that indicates missing values.
-- `notnull()`: Opposite of `isnull()`.
-- `dropna()`: Returns a filtered version of the data.
-- `fillna()`: Returns a copy of the data with missing values filled or imputed.
+- `isnull()`: Generates a Boolean mask that indicates missing values
+- `notnull()`: Opposite of `isnull()`
+- `dropna()`: Returns a filtered version of the data
+- `fillna()`: Returns a copy of the data with missing values filled or imputed
 
 These are important methods to master, so let's go over them each in some depth.
 
@@ -198,7 +198,7 @@ dtype: bool
 
 Look closely at the output. Does any of it surprise you? Although 0 is an arithmetic null, it's nevertheless a perfectly good integer, and pandas treats it as such. `''` is a little more subtle. Although you used it earlier to represent an empty string value, it's nevertheless a string object and not a representation of null, as far as pandas is concerned.
 
-Now, let's turn this around and use these methods in a manner more like you will use them in practice. You can use Boolean masks directly as a `Series` or `DataFrame` index, which can be useful when trying to work with isolated missing (or present) values.
+Now, let's turn this around and use these methods in a manner more like you'll use them in practice. You can use Boolean masks directly as a `Series` or `DataFrame` index, which can be useful when trying to work with isolated missing (or present) values.
 
 ### Try it yourself
 
@@ -370,7 +370,7 @@ Here, the first and last row were dropped because they contain only two non-null
 
 ## Fill null values
 
-Depending on your dataset, sometimes it makes more sense to fill null values with valid ones, rather than drop them. You might use `isnull` to do this in place, but that can be laborious, particularly if you have a lot of values to fill. Because this is such a common task in data science, pandas provides `fillna`. This returns a copy of the `Series` or `DataFrame` with the missing values replaced with one that you choose. Let's create another example `Series` to see how this works in practice.
+Depending on your dataset, sometimes it makes more sense to fill null values with valid ones rather than drop them. You might use `isnull` to do this in place, but that can be laborious, particularly if you have a lot of values to fill. Because this is such a common task in data science, pandas provides `fillna`. This returns a copy of the `Series` or `DataFrame` with the missing values replaced with one that you choose. Let's create another example `Series` to see how this works in practice.
 
 Run this code in a cell:
 

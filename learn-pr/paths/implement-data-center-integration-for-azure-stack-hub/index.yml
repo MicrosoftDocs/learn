@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   This learning path helps you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
-iconUrl: /learn/achievements/implement-data-center-integration-for-azure-stack-hub.svg
+iconUrl: /training/achievements/implement-data-center-integration-for-azure-stack-hub.svg
 levels:
 - advanced
 roles:
@@ -23,6 +23,8 @@ products:
 - azure
 - azure-stack
 - azure-stack-hub
+subjects:
+- infrastructure
 modules:
 - learn.wwl.prepare-for-azure-stack-hub-deployment
 - learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub

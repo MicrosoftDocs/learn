@@ -6,8 +6,8 @@ Your company needs you to ensure there are systems in place to quickly detect an
 
 You will:
 
- -  Explore SAP HANA on Azure (Large Instances) monitoring.
- -  Explore troubleshooting and monitoring SAP HANA on Azure (Large Instances).
- -  Explore SAP HANA alerts.
- -  Explore diagnostic tools.
- -  Learn how to raise support requests for SAP HANA on Azure (Large Instances).
+- Explore SAP HANA on Azure (Large Instances) monitoring.
+- Explore troubleshooting and monitoring SAP HANA on Azure (Large Instances).
+- Explore SAP HANA alerts.
+- Explore diagnostic tools.
+- Learn how to raise support requests for SAP HANA on Azure (Large Instances).

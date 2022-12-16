@@ -11,7 +11,7 @@ The specific details for an analytical processing system can vary between soluti
 3. Data in the data warehouse may be aggregated and loaded into an online analytical processing (OLAP) model, or *cube*. Aggregated numeric values (*measures*) from fact tables are calculated for intersections of *dimensions* from dimension tables. For example, sales revenue might be totaled by date, customer, and product.
 4. The data in the data lake, data warehouse, and analytical model can be queried to produce reports, visualizations, and dashboards.
 
-*Data lakes* are common in modern data analytical processing scenarios, where a large volume of file-based data must be collected and analyzed.
+*Data lakes* are common in large-scale data analytical processing scenarios, where a large volume of file-based data must be collected and analyzed.
 
 *Data warehouses* are an established way to store data in a relational schema that is optimized for read operations – primarily queries to support reporting and data visualization. The data warehouse schema may require some denormalization of data in an OLTP data source (introducing some duplication to make queries perform faster).
 

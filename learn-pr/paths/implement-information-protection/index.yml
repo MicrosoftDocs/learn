@@ -14,7 +14,7 @@ prerequisites: |
   - Basic knowledge of information protection concepts
 summary: |
   Organizations require information protection solutions to protect their data against theft and accidental loss. Learn how to protect your sensitive information. This learning path aligns with exam SC-400: Microsoft Information Protection Administrator.
-iconUrl: /learn/achievements/implement-information-protection.svg
+iconUrl: /training/achievements/implement-information-protection.svg
 levels:
 - intermediate
 roles:
@@ -23,6 +23,8 @@ roles:
 - risk-practitioner
 products:
 - m365-information-protection
+subjects:
+- information-protection-governance
 modules:
 - learn-m365.m365-compliance-information-governance
 - learn-m365.m365-security-data-loss

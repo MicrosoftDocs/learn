@@ -34,4 +34,4 @@ For instance, this code creates a file called *greeting.txt* with the text "Hell
 File.WriteAllText(Path.Combine(Directory.GetCurrentDirectory(), "greeting.txt"), "Hello World!");
 ```
 
-In the next exercise, you'll use your knowledge of how to create files and directories to extend the program by creating a directory that will store the total of all the individual store sales files.
+In the next exercise, you'll use your knowledge of how to create files and directories to extend the program by creating a directory that will store the total of all the individual stores' sales files.

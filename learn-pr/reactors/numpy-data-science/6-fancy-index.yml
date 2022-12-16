@@ -5,8 +5,8 @@ metadata:
   title: Fancy indexing
   description: Learn how to pass an array of indices to an array in order to access or modify multiple array elements at the same time.
   ms.date: 04/22/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen

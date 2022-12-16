@@ -9,6 +9,8 @@ The benefit of version patches and upgrades is to ensure  when software loophole
 
 Remember, these upgrades are for updating the components within the AKS cluster only. Operating system updates and node image upgrades is a separate upgrades and patches process.
 
+[!include[azure-optional-exercise-subscription-cleanup](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
+
 ## References
 
 * [Upgrade AKS cluster tutorial](/azure/aks/tutorial-kubernetes-upgrade-cluster?tabs=azure-cli)

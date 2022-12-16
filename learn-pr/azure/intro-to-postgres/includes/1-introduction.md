@@ -1,6 +1,6 @@
 PostgreSQL is the world’s most advanced open source relational database.
 
-In 1985, researchers at the University of California, Berkeley, began work on an entirely new kind of database that would fix the problems of contemporary systems. The new system proved so popular that the project was soon overwhelmed by user requests for support and new features. The software was open-sourced in 1994, and subsequent community development has given PostgreSQL - also known as Postgres - an incredibly rich feature set and extraordinary extensibility.
+In 1985, researchers at the University of California, Berkeley, began work on an entirely new database that would fix the problems of contemporary systems. The new system proved so popular that the project was soon overwhelmed by user requests for support and new features. The software was open-sourced in 1994, and subsequent community development has given PostgreSQL - also known as Postgres - an incredibly rich feature set and extraordinary extensibility.
 
 ## Flexible by design
 

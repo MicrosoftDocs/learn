@@ -61,7 +61,7 @@ Data visualization tools can take input from various data streams and combine th
 
 ## Machine learning
 
-Machine learning (ML) is one of the more exiting developments in modern computer science. It's a complex field but one that is producing significant positive results with large datasets. IoT devices produce large volumes of data. Analytic systems help engineers to model the existing data in meaningful ways. Machine learning takes this process a step further and can actually make predictions about what new data will show and provide insights that would not be possible without the machine learning algorithms.
+Machine learning (ML) is one of the more exciting developments in modern computer science. It's a complex field but one that is producing significant positive results with large datasets. IoT devices produce large volumes of data. Analytic systems help engineers to model the existing data in meaningful ways. Machine learning takes this process a step further and can actually make predictions about what new data will show and provide insights that would not be possible without the machine learning algorithms.
 
 As the name states, the technology gives computers the ability to "learn" (predict) from data by expressing trends or a direction future data will take. This technology can provide engineers with a powerful mechanism for enabling a wide variety of scenarios.
 

@@ -16,7 +16,7 @@ prerequisites: |
   *   Describe the features of IoT Hub and create an IoT hub instance using the Azure portal.
 summary: |
   You will learn about the IoT Hub service properties and limitations, the IoT device lifecycle, Azure IoT developer tools, and then you will implement communication between an IoT device and IoT Hub.
-iconUrl: /learn/achievements/iot-device-communication.svg
+iconUrl: /training/achievements/iot-device-communication.svg
 levels:
 - intermediate
 roles:
@@ -26,6 +26,8 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
+subjects:
+- iot
 modules:
 - learn.wwl.examine-iot-hub-properties
 - learn.wwl.examine-iot-device-lifecycle-concepts

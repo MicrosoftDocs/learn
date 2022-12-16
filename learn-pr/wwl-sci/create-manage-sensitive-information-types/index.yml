@@ -3,7 +3,7 @@ uid: learn.wwl.create-manage-sensitive-information-types
 metadata:
   title: Create and manage sensitive information types
   description: "Create and manage sensitive information types"
-  ms.date: 11/16/2021
+  ms.date: 06/14/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Basic understanding of the Microsoft 365 services
   - Basic understanding information protection and governance in Microsoft 365
-iconUrl: /learn/achievements/create-and-manage-sensitive-information-types.svg
+iconUrl: /training/achievements/create-and-manage-sensitive-information-types.svg
 levels:
 - intermediate
 roles:
@@ -29,6 +29,8 @@ roles:
 products:
 - m365
 - m365-information-protection
+subjects:
+- information-protection-governance
 units:
 - learn.wwl.create-manage-sensitive-information-types.introduction
 - learn.wwl.create-manage-sensitive-information-types.compare-built-versus-custom

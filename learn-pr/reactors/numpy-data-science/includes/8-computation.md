@@ -118,7 +118,7 @@ The output is:
 array([-1.  , -2.25, -4.  , -6.25])
 ```
 
-The Python operators aren't actually the ufuncs but are rather wrappers around functions built into NumPy. So the `+` operator is actually a wrapper for the `add` function:
+The Python operators aren't actually the ufuncs, but are rather wrappers around functions built into NumPy. So the `+` operator is actually a wrapper for the `add` function:
 
 ```python
 np.add(a, 2)

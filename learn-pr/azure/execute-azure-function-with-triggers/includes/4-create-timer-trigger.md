@@ -29,6 +29,10 @@ Let’s start by creating an Azure Function App in the portal.
     | Runtime stack | .NET |
     | Version | 3.1 |
     | Region | Select a location close to you. |
+    | **Operating system** |
+    | Operating System | Windows |
+    | **Plan** |
+    | Plan type | Consumption (Serverless). When using the Consumption Plan type, you're charged for each execution of your function, and resources are automatically allocated based on your app workload.|
 
 1. Select **Next : Hosting**, and enter the following values for each setting.
 
@@ -36,10 +40,6 @@ Let’s start by creating an Azure Function App in the portal.
     |---|---|
     | **Storage** |
     | Storage account |  Defaults to (New) and a unique storage account name. You can change the name if you like. |
-    | **Operating system** |
-    | Operating System | Windows |
-    | **Plan** |
-    | Plan type | Consumption (Serverless). When using the Consumption Plan type, you're charged for each execution of your function, and resources are automatically allocated based on your app workload.|
 
 1. Select **Review + create** to validate your input, and then select **Create**. Deployment progress displays the items that are created. It may take a minute or two for deployment to complete.
 
@@ -57,18 +57,18 @@ Let's create a timer trigger in your function.
 
 ## Configure the timer trigger
 
-You have created an Azure function app with logic to print a message to the log window. We're going to set the schedule of the timer to run every 20 seconds.
+You've created an Azure function app with logic to print a message to the log window. We're going to set the schedule of the timer to run every 20 seconds.
 
 1. In the **TimerTrigger1** menu, select **Integration**. The **Integration** pane for your time function appears.
 
-1. In the **Trigger** box, select the **Trigger (myTimer)** link. The **Edit Trigger** pane appears.
+1. In the **Trigger** box, select the **Timer (myTimer)** link. The **Edit Trigger** pane appears.
 
 1. Enter the following value into the **Schedule** field.
 
     ```log
     */20 * * * * *
     ```
-    
+
     The value in this parameter represents the CRON expression with six places for time precision: {second} {minute} {hour} {day} {month} {day-of-week}. The first place value represents every 20 seconds.
 
 1. In the command bar, select **Save** to configure your timer trigger.
@@ -100,6 +100,10 @@ You have created an Azure function app with logic to print a message to the log 
     | Runtime stack | PowerShell Core. |
     | Version | 7.0 (or latest version). |
     | Region | Select a location close to you. |
+    | **Operating system** |
+    | Operating System | Windows |
+    | **Plan** |
+    | Plan type | Consumption (Serverless). When using the Consumption Plan type, you're charged for each execution of your function, and resources are automatically allocated based on your app workload.|
 
 1. Select **Next : Hosting**. Enter the following values for each setting.
 
@@ -107,10 +111,6 @@ You have created an Azure function app with logic to print a message to the log 
     |---|---|
     | **Storage** |
     | Storage account |  Default is a unique storage account name. You can change the name if you like.|
-    | **Operating system** |
-    | Operating System | Windows |
-    | **Plan** |
-    | Plan type | Consumption (Serverless). When using the Consumption Plan type, you're charged for each execution of your function, and resources are automatically allocated based on your app workload.|
 
 1. Select **Review + create** to validate your settings, and then select **Create**. The deployment pane displays the resources that are being created for your function app. 
 
@@ -126,20 +126,20 @@ Let's create a timer trigger for your function.
 
 ## Configure the timer trigger
 
-You have created an Azure function app with logic to print a message to the log pane. Let's set the schedule of the timer to run every 20 seconds.
+You've created an Azure function app with logic to print a message to the log pane. Let's set the schedule of the timer to run every 20 seconds.
 
 1. In the **TimerTrigger1** menu, select **Integration**. The **Integration** pane appears.
 
-1. In the **Trigger** box, select the **Trigger (myTimer)** link. The **Edit Trigger** pane appears.
+1. In the **Trigger** box, select the **Timer (myTimer)** link. The **Edit Trigger** pane appears.
 
 1. Enter the following value into the **Schedule** box.
 
     ```log
     */20 * * * * *
     ```
- 
+
     The value in this parameter represents the CRON expression with six places for time precision: {second} {minute} {hour} {day} {month} {day-of-week}. The first value represents every 20 seconds.
-    
+
 1. In the command bar, select **Save** to configure your timer trigger.
 
 ::: zone-end

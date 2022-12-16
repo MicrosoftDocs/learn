@@ -1,12 +1,12 @@
-Every user who needs access to Azure resources needs an Azure user account. A user account contains all the information needed to authenticate the user during the sign-on process. Once authenticated, Azure AD builds an access token to authorize the user and determine what resources they can access and what they can do with those resources.
+Every user who needs access to Azure resources needs an Azure user account. A user account contains all the information needed to authenticate the user during the sign-on process. Once authenticated, Azure Active Directory (Azure AD), part of Microsoft Entra builds an access token to authorize the user and determine what resources they can access and what they can do with those resources.
 
 You use the **Azure Active Directory** dashboard in the Azure portal to work with user objects. Keep in mind that you can only work with a single directory at a time - but you can use the **Directory + Subscription** panel to switch directories. The dashboard also has a **Switch directory** button in the toolbar which makes it easy to switch to another available directory.
 
 ## View users
 
-To view the Azure AD users, select the **Users** entry under the **Manage** group - this will open the **All Users** view. Take a minute to access the portal and view your users. Notice the **USER TYPE** and **SOURCE** columns, as the following figure depicts.
+To view the Azure AD users, select the **Users** entry under the **Manage** group - this will open the **All Users** view. Take a minute to access the portal and view your users. Notice the **User Type** column to see members and guests, as the following figure depicts.
 
-:::image type="content" source="../media/azure-active-directory-users-26b4443a.png" alt-text="View all users in Azure AD.":::
+:::image type="content" source="../media/all-users-dialog-50b4e098.png" alt-text="Screenshot of the Azure A D view all users page.  It displays a list of the users in alphabetical order with basic information about each user like their full name, alias, and whether they are a member of the directory or a guest.":::
 
 
 Typically, Azure AD defines users in three ways:

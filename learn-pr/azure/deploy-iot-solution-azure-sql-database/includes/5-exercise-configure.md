@@ -10,7 +10,7 @@
 
 Optimizing the storage and retrieval of IoT data is important in maximizing ingestion rates and minimizing the time to insights.
 
-Recall in the distributor scenario you are ingesting data from thousands of trucks across the country. You want to take advantage of the Azure SQL Database capabilities. In this exercise, you will see how you can configure and monitor your database for IoT scenarios.
+Recall in the distributor scenario you're ingesting data from thousands of trucks across the country/region. You want to take advantage of the Azure SQL Database capabilities. In this exercise, you'll see how you can configure and monitor your database for IoT scenarios.
 
 ## Confirm the configurations of the database
 
@@ -67,7 +67,7 @@ For this exercise, you'll use the Query Editor in the Azure portal to query the 
     ```
 
 ## Monitor the captured events in Azure SQL Database
-In future scenarios, and also for the distribution scenario, you will want to monitor the data that is coming in. For this, you can use tools like Azure Log Analytics or Power BI. For the purposes of this exercise, you will simply query the database using the Query Editor in the Azure portal.
+In future scenarios, and also for the distribution scenario, you'll want to monitor the data that is coming in. For this, you can use tools like Azure Log Analytics or Power BI. For the purposes of this exercise, you'll query the database using the Query Editor in the Azure portal.
 
 1. Run the following T-SQL to see the number of events in the data store.
 
@@ -87,7 +87,7 @@ In future scenarios, and also for the distribution scenario, you will want to mo
     GO
     ```
 
-1. Run the following T-SQL to see a typical time series query through the view. Note that these values are not the raw data but aggregated data per time slot.
+1. Run the following T-SQL to see a typical time series query through the view. These values aren't the raw data but aggregated data per time slot.
 
     ```sql
     SELECT * 
@@ -108,4 +108,4 @@ In future scenarios, and also for the distribution scenario, you will want to mo
 You've now seen how to configure, monitor, and query Azure SQL Database in IoT scenarios like the distributor scenario.
 
 > [!TIP]
-> Want to go deeper? You can download this **[Power BI file](https://github.com/Azure-Samples/azure-sql-iot/blob/main/power_bi/IoTDashboard.pbix)** and update the connection settings so each query points to your database. Refreshing the dashboard will then give you deeper insights into latency, trends, and resource consumption.
+> Want to go deeper? You can download this **[Power BI file](https://github.com/Azure-Samples/azure-sql-iot/blob/main/power_bi/IoTDashboard.pbix)** and update the connection settings so each query points to your database.  This can be done by opening the file in the **[Power BI Desktop application](https://powerbi.microsoft.com/desktop/)** then in the **Home** settings, select  **Tranform Data** => **Data source settings** => **Change Source** and update the value of **Server** to that of your deployed Azure SQL instance in the **SQL Server database** prompt. Refreshing the dashboard will then give you deeper insights into latency, trends, and resource consumption.

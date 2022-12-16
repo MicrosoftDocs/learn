@@ -8,7 +8,8 @@ In this exercise, we'll create a new console application and connect it to the A
 
 You'll complete the remaining exercises in this module in the Cloud Shell.
 
-1. Launch the Cloud Shell in the Azure portal by selecting the Cloud Shell icon in the top menu of the portal. 
+1. Launch the Cloud Shell in the Azure portal by selecting the Cloud Shell icon in the top menu of the portal.
+1. Select the Bash environment by using the dropdown menu in Cloud Shell menu bar.  
 1. Run the following commands in the Cloud Shell to make a new directory for your app:
 
     ```bash
@@ -23,7 +24,7 @@ You'll complete the remaining exercises in this module in the Cloud Shell.
     dotnet run
     ```
 
-    If you've successfully create the console app, you should see the following printed to the console:
+    If you've successfully created the console app, you should see the following printed to the console:
 
     ```bash
     Hello World!
@@ -57,7 +58,7 @@ You'll complete the remaining exercises in this module in the Cloud Shell.
     echo 'URL='$BATCH_URL 'NAME='$BATCH_NAME 'KEY='$BATCH_KEY
     ```
 
-    Make sure you have the above values set. If you have to restart the Cloud Shell at any point, you will need to set these variables again. 
+    Make sure you have the above values set. If you have to restart the Cloud Shell at any point, you'll need to set these variables again. 
 
 1. Edit the `Program.cs` file in the editor:
 
@@ -111,9 +112,7 @@ You'll complete the remaining exercises in this module in the Cloud Shell.
 
     Read through the above code and comments. The console app imports the Microsoft.Azure.Batch client library to add Azure Batch features. Using the environment variables you stored in the previous steps, the app opens a connection to the Batch account you created in the Azure portal. The batch client can then query properties of the services in the batch. The example code iterates through the application packages, showing the details of the ffmpeg app you uploaded.
 
-1. Select the ellipses in the top-right corner of the code editor.
-
-1. Select **Close Editor**, and in the dialog select **Save**.
+1. In the code editor, right-click and select **Save**, and then select **Quit**.
 
 1. In the Cloud Shell, compile and run the app with the following command.
 
@@ -121,7 +120,7 @@ You'll complete the remaining exercises in this module in the Cloud Shell.
     dotnet run
     ```
 
-1. Running the app writes the application package them to the console. You should see:
+1. Running the app writes the application package to the console. You should see:
 
     ```bash
     Installed app: ffmpeg(3.4)

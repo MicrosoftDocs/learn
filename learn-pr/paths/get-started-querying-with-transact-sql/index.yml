@@ -13,7 +13,7 @@ prerequisites: |
   Familiarity with working with tables of data, for example in a spreadsheet.
 summary: |
   Learn how to use Transact-SQL to query data in a database.
-iconUrl: /learn/achievements/get-started-querying-with-transact-sql.svg
+iconUrl: /training/achievements/get-started-querying-with-transact-sql.svg
 levels:
 - beginner
 roles:
@@ -31,6 +31,8 @@ products:
 - azure-sql-managed-instance
 - azure-sqlserver-vm
 - azure-sql-virtual-machines
+subjects:
+- data-analytics
 modules:
 - learn.wwl.intro-to-transact-sql
 - learn.wwl.sort-and-filter-queries

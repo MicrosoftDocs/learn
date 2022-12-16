@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-your-cost-azure-blob-storage.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Interactive questions that validate whether the learner achieved the learning objectives.
+  ms.date: 03/30/2022
+  author: mpolicht
+  ms.author: nedelgad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  questions:
+  - content: 'Which Azure Blob Storage redundancy option helps provide protection against the failure of an individual datacenter at minimum cost?'
+    choices:
+    - content: 'ZRS'
+      isCorrect: true
+      explanation: 'Correct. Zone-redundant storage provides increased resiliency by replicating the content of a storage account across physical locations (availability zones) in the same Azure region.'
+    - content: 'LRS'
+      isCorrect: false
+      explanation: 'Incorrect. Locally redundant storage synchronously replicates the content of a storage account across three replicas within the same physical location.'
+    - content: 'GRS'
+      isCorrect: false
+      explanation: 'Incorrect. Geo-redundant storage implements region-level resiliency by enabling asynchronous replication of the content of a storage account across two regions. This is more expensive than ZRS.'
+  - content: 'What is the minimum period of time after which a blob assigned to the Cool tier is no longer subject to the early deletion charge?'
+    choices:
+    - content: '30 days'
+      isCorrect: true
+      explanation: 'Correct. 30 days is the minimum period of time after which a blob assigned to the Cool tier is no longer subject to the early deletion charge.'
+    - content: '90 days'
+      isCorrect: false
+      explanation: 'Incorrect. 90 days isn’t the minimum period of time after which a blob assigned to the Cool tier is no longer subject to the early deletion charge.'
+    - content: '180'
+      isCorrect: false
+      explanation: 'Incorrect. 180 days isn’t the minimum period of time after which a blob assigned to the Cool tier is no longer subject to the early deletion charge.'
+  - content: 'What’s the minimum period of time after which a blob assigned to the Archive tier is no longer subject to the early deletion charge?'
+    choices:
+    - content: '30 days'
+      isCorrect: false
+      explanation: 'Incorrect. 30 days isn’t the minimum period of time after which a blob assigned to the Archive tier is no longer subject to the early deletion charge.'
+    - content: '90 days'
+      isCorrect: false
+      explanation: 'Incorrect. 90 days isn’t the minimum period of time after which a blob assigned to the Archive tier is no longer subject to the early deletion charge.'
+    - content: '180 days'
+      isCorrect: true
+      explanation: 'Correct. 180 days is the minimum period of time after which a blob assigned to the Archive tier is no longer subject to the early deletion charge.'
+  - content: 'What’s the expected amount of time to hydrate a blob assigned to the Archive tier without raising a high priority request?'
+    choices:
+    - content: '1 hour'
+      isCorrect: false
+      explanation: 'Incorrect. The expected amount of time to hydrate a blob assigned to the Archive tier without raising a high priority request isn’t 1 hour. However, 1 hour is expected with a high priority request.'
+    - content: '5 hours'
+      isCorrect: false
+      explanation: 'Incorrect. The expected amount of time to hydrate a blob assigned to the Archive tier without raising a high priority request isn’t 5 hours.'
+    - content: '15 hours'
+      isCorrect: true
+      explanation: 'Correct. The expected amount of time to hydrate a blob assigned to the Archive tier without raising a high priority request is 15 hours. 1 hour is expected with a high priority request.'
+  - content: 'What’s the minimum size of a block in which Azure Blob Storage reservations can be purchased?'
+    choices:
+    - content: '1 TB'
+      isCorrect: false
+      explanation: 'Incorrect. The minimum size of a block in which Azure Blob Storage reservations can be purchased isn’t 1 TB.'
+    - content: '100 TB'
+      isCorrect: true
+      explanation: 'Correct. The minimum size of a block in which Azure Blob Storage reservations can be purchased is 100 TB.'
+    - content: '1 PB'
+      isCorrect: false
+      explanation: 'Incorrect. The minimum size of a block in which Azure Blob Storage reservations can be purchased isn’t 1 PB, although this size is available as well.'

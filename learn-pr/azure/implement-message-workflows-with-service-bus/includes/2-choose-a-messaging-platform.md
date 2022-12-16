@@ -44,7 +44,7 @@ A Service Bus _queue_ is a simple temporary storage location for messages. A sen
 
 Queues decouple the source and destination components to insulate destination components from high demand.
 
-During peak times, messages may come in faster than destination components can handle them. Because source components have no direct connection to the destination, the source is unaffected and the queue will grow. Destination components will remove messages from the queue as they are able to handle them. When demand drops, destination components can catch up and the queue shortens.
+During peak times, messages may come in faster than destination components can handle them. Because source components have no direct connection to the destination, the source is unaffected, and the queue will grow. Destination components will remove messages from the queue as they're able to handle them. When demand drops, destination components can catch up and the queue shortens.
 
 A queue responds to high demand without needing to add resources to the system. However, for messages that need to be handled quickly, creating additional instances of your destination component can allow them to share the load. Each message is handled by only one instance. This is an effective way to scale your entire application by only adding resources to the components that actually need it.
 
@@ -65,7 +65,7 @@ The key advantages of Service Bus queues include:
 
 * Supports larger messages sizes of 256 KB (standard tier) or 100 MB (premium tier) per message versus 64 KB for Azure Storage queue messages.
 * Supports both at-most-once and at-least-once delivery. Choose between a very small chance that a message is lost or a very small chance it's handled twice.
-* Guarantees _first-in, first-out (FIFO)_ order. Messages are handled in the same order they are added. Note that although FIFO is the normal operation of a queue, the default FIFO pattern is altered if the organization sets up sequenced or scheduled messages or during interruptions like a system crash. For more information, see [Compare Azure Storage queues and Azure Service Bus queues](/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted#additional-information).
+* Guarantees _first-in, first-out (FIFO)_ order. Messages are handled in the same order they're added. Although FIFO is the normal operation of a queue, the default FIFO pattern is altered if the organization sets up sequenced or scheduled messages or during interruptions like a system crash. For more information, see [Compare Azure Storage queues and Azure Service Bus queues](/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted#additional-information).
 * Can group multiple messages in one transaction. If one message in the transaction fails to be delivered, all messages in the transaction aren't delivered.
 * Supports role-based security.
 * Does not require destination components to continuously poll the queue.

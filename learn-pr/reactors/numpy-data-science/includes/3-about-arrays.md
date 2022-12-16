@@ -44,7 +44,7 @@ The output is:
 [bool, str, float, int]
 ```
 
-But this flexibility comes at a price. Each item in a list is really a separate Python object. (The list is an object itself. But mostly it's an object that serves as a container for the memory pointers to the constituent objects.) That means that each item in a list must contain its own type info, reference count, and other information. 
+But this flexibility comes at a price. Each item in a list is really a separate Python object. (The list is an object itself. But mostly it's an object that serves as a container for the memory pointers to the constituent objects.) That means that each item in a list must contain its own type info, reference count, and other information.
 
 All this information can become expensive in terms of memory and performance if we're dealing with hundreds of thousands or millions of items in a list. And, for many uses in data science, our arrays just store a single type of data (such as integers or floats). So all the object-related information for items in such an array is redundant. It can be much more efficient to store data in a fixed-type array.
 
@@ -73,7 +73,7 @@ The output is:
 array([1, 4, 2, 5, 3])
 ```
 
-Remember that, unlike Python lists, NumPy constrains arrays to contain a single type. So, if data types fed into a NumPy array don't match, NumPy will try to *upcast* them if possible. For example, here NumPy upcasts integers to floats:
+Remember that, unlike Python lists, NumPy constrains arrays to contain a single type. So if data types fed into a NumPy array don't match, NumPy will try to *upcast* them if possible. For example, here NumPy upcasts integers to floats:
 
 ```python
 np.array([3.14, 4, 2, 3])
@@ -171,7 +171,7 @@ The inner lists in a list of lists are treated as rows of the two-dimensional ar
 
 ### Creating NumPy arrays, method 2: Building from scratch
 
-In practice, it's often more efficient to create arrays from scratch by using functions built into NumPy, particularly for larger arrays. Here are a few examples. These examples will help introduce you to several useful NumPy functions.
+In practice, it's often more efficient to create arrays from scratch using functions built into NumPy, particularly for larger arrays. Here are a few examples. These examples will help introduce you to several useful NumPy functions.
 
 Create an integer array of length 10 that's filled with zeros:
 
@@ -215,8 +215,7 @@ array([[3.14, 3.14, 3.14, 3.14, 3.14],
        [3.14, 3.14, 3.14, 3.14, 3.14]])
 ```
 
-Create an array filled with a linear sequence.
-Start at 0, end at 20, and step by 2. (This is similar to the built-in Python `range()` function.)
+Create an array filled with a linear sequence. Start at 0, end at 20, and step by 2. (This is similar to the built-in Python `range()` function.)
 
 ```python
 np.arange(0, 20, 2).
@@ -297,8 +296,7 @@ array([[1., 0., 0.],
        [0., 0., 1.]])
 ```
 
-Create an uninitialized array of three integers.
-The values will be whatever happens to already exist at that memory location.
+Create an uninitialized array of three integers. The values will be whatever happens to already exist at that memory location.
 
 ```python
 np.empty(3)
@@ -320,18 +318,18 @@ This table lists several of the array-creation functions in NumPy:
 | `asarray` | Converts input to `ndarray` but doesn't copy if the input is already an `ndarray`. |
 | `arange` | Similar to the built-in `range()` function, but returns an `ndarray` instead of a list. |
 | `ones`, `ones_like` | `ones` produces an array of all 1s with the given shape and `dtype`. <br /> <br /> `ones_like` takes another array and produces a ones-array of the same shape and `dtype`. |
-| `zeros`, `zeros_like` | Similar to `ones` and `ones_like`, but producing arrays of 0s instead. |
-| `empty`, `empty_like` | Create new arrays by allocating new memory, but don't populate with values as `ones` and `zeros` do. |
+| `zeros`, `zeros_like` | Similar to `ones` and `ones_like`, but produces arrays of 0s instead. |
+| `empty`, `empty_like` | Creates new arrays by allocating new memory, but doesn't populate with values as `ones` and `zeros` do. |
 | `full`, `full_like` | `full` produces an array of the given shape and `dtype` with all values set to the indicated "fill value." <br /> <br /> `full_like` takes another array and produces a filled array of the same shape and `dtype`. |
-| `eye`, `identity` | Create a square *N* x *N* identity matrix (1s on the diagonal and 0s elsewhere). |
+| `eye`, `identity` | Creates a square *N* x *N* identity matrix (1s on the diagonal and 0s elsewhere). |
 
 ## NumPy data types
 
-The standard NumPy data types are listed in the following table. Note that when you construct an array, you can specify the data type by using a string:
+The standard NumPy data types are listed in the following table. Note that when you construct an array, you can specify the data type using a string:
 
 `np.zeros(8, dtype='int16')`
 
-Or you can specify the data type directly by using the NumPy object:
+Or you can specify the data type directly using the NumPy object:
 
 `np.zeros(8, dtype=np.int16)`
 

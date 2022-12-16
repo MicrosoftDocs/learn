@@ -15,7 +15,7 @@ SecurityEvent
 
 ```
 
-The following is a partial list of the most common simple aggregate functions used with the summarize operator.
+The example below is a partial list of the most common simple aggregate functions used with the summarize operator.
 
 | Function(s)| Description|
 | :--- | :--- |
@@ -55,9 +55,9 @@ SecurityEvent
 
 ## Let's take a look at a real-world example
 
-The following statement is a Microsoft Sentinel Analytical rule to detect a password spray attempt.
+The following statement is a rule to detect MFA failures across multiple applications for the same account.
 
-The first three where operators will filter the result set to failed logins to disabled accounts.  Next, the statement "summarize" a distinct count of application name and group by User and IP Address.  Finally, there is a check against a variable created (threshold) to see if the number exceeds the allowed amount.
+The where operator for ResultDescription will filter the result set for results including "MFA".  Next, the statement "summarize" produces a distinct count of application names and group by User and IP Address.  Finally, there's a check against a variable created (threshold) to see if the number exceeds the allowed amount.
 
 ```kusto
 let timeframe = 1d;
@@ -66,8 +66,7 @@ let threshold = 3;
 
 SigninLogs
 | where TimeGenerated >= ago(timeframe)
-| where ResultType == "50057"
-| where ResultDescription =~ "User account is disabled. The account has been disabled by an administrator."
+| where ResultDescription has "MFA"
 | summarize applicationCount = dcount(AppDisplayName) by UserPrincipalName, IPAddress
 | where applicationCount >= threshold
 

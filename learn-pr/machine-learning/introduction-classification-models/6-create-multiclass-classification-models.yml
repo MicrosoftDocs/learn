@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.introduction-classification-models.create-multiclass-classification-models
+title: Create multiclass classification models
+metadata:
+  title: Create multiclass classification models
+  description: In this unit, you'll learn how to create multiclass classification models.
+  ms.date: 05/11/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-create-multiclass-classification-models.md)]

@@ -4,8 +4,8 @@ metadata:
   title: 'Exercise - Data manipulation part 2 - Impute missing values for columns'
   description: Use the average value of columns to impute missing values of normally distributed data.
   ms.date: 03/10/2021
-  author: drguthals
-  ms.author: sguthals 
+  author: softchris
+  ms.author: chnoring 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

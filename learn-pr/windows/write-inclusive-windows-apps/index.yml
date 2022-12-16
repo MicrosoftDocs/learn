@@ -18,13 +18,15 @@ abstract: |
 prerequisites: |
  - The developer should be comfortable with writing C# and XAML code.
  - Familiarity with using Visual Studio as a development environment.
-iconUrl: /learn/achievements/making-inclusive-windows-app.svg
+iconUrl: /training/achievements/making-inclusive-windows-app.svg
 levels:
 - intermediate
 roles:
 - developer
 products:
 - windows
+subjects:
+- accessibility
 units:
 - learn-windows.making-inclusive-windows-app.1-introduction
 - learn-windows.making-inclusive-windows-app.2-identify-inclusivity-issues

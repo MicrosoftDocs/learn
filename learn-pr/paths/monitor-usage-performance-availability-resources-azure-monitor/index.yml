@@ -15,7 +15,7 @@ summary:  |
 prerequisites: |
   - Basic knowledge of Azure services
   - Basic knowledge of monitoring concepts, such as using metrics, logging, and alerting
-iconUrl: /learn/achievements/monitor-usage-performance-availability-resources-azure-monitor.svg
+iconUrl: /training/achievements/monitor-usage-performance-availability-resources-azure-monitor.svg
 levels:
 - beginner
 roles:
@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 - azure-monitor
+subjects:
+- it-management-monitoring
 modules:
 - learn.azure.intro-to-azure-monitor
 - learn.design-monitoring-strategy-on-azure

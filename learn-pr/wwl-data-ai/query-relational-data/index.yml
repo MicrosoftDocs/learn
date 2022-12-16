@@ -16,7 +16,7 @@ abstract: |
   * Query relational data
 prerequisites: |
   None
-iconUrl: /learn/achievements/query-relational-data-azure.svg
+iconUrl: /training/achievements/query-relational-data-azure.svg
 levels:
 - beginner
 roles:
@@ -26,6 +26,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- data-analytics
 units:
 - learn.wwl.query-relational-data-azure.introduction
 - learn.wwl.query-relational-data-azure.introduction-to-sql

@@ -5,7 +5,7 @@ In this unit, you'll learn how to create your Azure Service Bus Premium namespac
 Azure Service Bus is a fully managed enterprise message broker with message queues and publish-subscribe topics. Service Bus is used to decouple applications and services from each other, and it provides the following benefits:
 
 * Load balances work across competing workers
-* Safely routs and transfers data and controls across service and application boundaries
+* Safely routes and transfers data and controls across service and application boundaries
 * Coordinates transactional work that requires a high degree of reliability
 
 ## Messaging scenarios
@@ -19,70 +19,52 @@ Some common messaging scenarios are:
 * **Transactions**: Do several operations, all in the scope of an atomic transaction.
 * **Message sessions**: Implement high-scale coordination of workflows and multiplexed transfers that require strict message ordering or message deferral.
 
-If you're familiar with other message brokers like Apache ActiveMQ, Rabbit MQ, TIBCO EMS, and IBM MQ, Service Bus concepts are similar to what you know.
+If you're familiar with other message brokers like Apache ActiveMQ, Rabbit MQ, TIBCO EMS, and IBM MQ, then Service Bus concepts are similar to what you know.
 
-## Create your Service Bus Premium namespace by using the Azure CLI
+## Create a Service Bus namespace
 
-You can use the Azure CLI to create and manage Azure resources. The CLI allows administrators and developers to run commands by using a terminal or command-line prompt (or script) instead of a web browser.
+Start by creating the namespace. In Azure Service Bus, a namespace is a container for queues and topics. Each namespace has a unique, fully qualified domain name, with primary and secondary shared access signature (SAS) encryption keys. A sending or receiving component must provide an SAS key to gain access to objects in a namespace.
 
-To use the Azure CLI to create a Service Bus Premium namespace, use the following commands.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same credentials that you used to activate the sandbox. Open the link in a new tab or a new window, and keep it side-by-side with the Learn module content. 
 
-### Set up the Azure CLI
+1. Under **Azure services**, select **Create a resource**.
 
-You'll need the Azure CLI to create your Service Bus Premium namespace. You can check the version of your current Azure CLI installation by running the following command:
+1. In the **Create a resource** pane, enter **Service Bus** in global search. In the search results, select **Service Bus** published by Microsoft for Azure, and then select **Create**.
 
-```bash
-az --version
-```
+1. In the **Create namespace** pane, on the **Basics** tab, enter or select the following values for each setting:
 
-Ensure that the Azure CLI installation is signed in to your Azure subscription.
+    | Setting | Value | Description |
+    | ------- | --- | ---- |
+    | **Project Details** |
+    | Subscription | Concierge subscription | The subscription in which this new app is created. |
+    | Resource group | <rgn>[Sandbox resource group name]</rgn> | The name of the resource group in which to create your Service Bus namespace. In this exercise, you'll create the namespace in the resource group that was assigned when you activated the sandbox. |
+    | **Instance Details** |
+    | Namespace name | [Globally unique name] | Enter a name that is unique in Azure.<br />If you want to use the format _salesteamapp_<_Company_><_year_>, your namespace name would look like the example _salesteamappContoso2022_. |
+    | Location | Select from the dropdown | Choose from the free *sandbox regions* listed after this table. |
+    | Pricing tier | **Premium** | Support for Java Message Service (JMS) 2.0 API is only available with the Premium tier. |
 
-```bash
-az login
-az account show --output table
-```
+    [!INCLUDE[Sandbox regions](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-Ensure that your default subscription is the one you want to use for this lab. If not, set the subscription by using the following command:
+1. Select **Review + create**.
 
-```bash
-az account set --subscription SUBSCRIPTION_ID
-```
+1. When validation succeeds, select **Create** to create your Service Bus namespace.
+1. When deployment is finished, select **Go to resource**.
 
-Congratulations, the Azure CLI is now ready to create your first Service Bus Premium namespace.
+## Create a Service Bus queue
 
-### Create a Service Bus namespace
+Next, add a queue for messages about individual sales to your namespace:
 
-In this section, you'll create a Service Bus namespace by using the Azure CLI. It's possible to do exactly the same configuration by using the Azure portal. For this configuration, you'll need to set up the following three environment variables:
+1. On the **Service Bus Namespace** page, select **Queues** under **Entities** on the left menu. 
+1. Select **+ Queue** on the command bar.  
+1. In the **Create queue** pane, for **Name**, enter **test-queue-jms**, and then select **Create**.  
+  
+When the message queue has been created, **test-queue-jms** is listed under **Queues** at the bottom of the Service Bus namespace pane.
 
-* Create a resource group. To limit typing, set the variable `AZ_RESOURCE_GROUP` to the name of the resource group that you want to create.
-* Set the variable `AZ_LOCATION` to the name of the Azure region that you want to use. The default location is eastus, but you can choose a region closer to you for better performance. Use az account list-locations to list all available regions.
-* Choose a name for your Service Bus Premium namespace in the `AZ_SB_PREMIUM_NAMESPACE` variable.
+## Get connection string to the namespace
 
-> [!NOTE]
-> Be sure to substitute your own values for `AZ_RESOURCE_GROUP`, `AZ_LOCATION`, and `AZ_SB_PREMIUM_NAMESPACE` in the following example configuration.
->
+You'll use the namespace's connection string later in this training to connect to the Service Bus namespace from a JMS app.
 
-```bash
-AZ_RESOURCE_GROUP=<xxxxxxx>
-AZ_LOCATION=eastus
-AZ_SB_PREMIUM_NAMESPACE=<xxxxxxx>
-```
-
-With these variables set, you can now create your Service Bus Premium namespace.
-
-```bash
-az group create \
-    --name $AZ_RESOURCE_GROUP \
-    --location $AZ_LOCATION
-
-az servicebus namespace create \
-    --resource-group $AZ_RESOURCE_GROUP \
-    --name $AZ_SB_PREMIUM_NAMESPACE \
-    --sku Premium \
-    --capacity 1
-```
-
-This command takes a few minutes to finish. You can continue to the next unit while it finishes.
-
-> [!NOTE]
-> Make sure to delete your Service Bus Premium namespace when you're finished with it to avoid an ongoing charge to your Azure subscription. Even if you don't finish the module, follow the cleanup steps in the final Summary unit to remove the namespace and stop billing. For more information about pricing, see [Service Bus pricing](https://azure.microsoft.com/pricing/details/service-bus/).
+1. On the **Service Bus Namespace** page, select **Shared access policies** under **Settings** on the left menu. \
+1. Select **RootManageSharedAccessKey** on the **Shared access policies** page. 
+1. On the **SAS Policy** page, select the **Copy** button next to **Primary connection string** field. \
+1. Paste it and save it so that you can use it later in the training. 

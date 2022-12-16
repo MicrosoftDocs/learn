@@ -17,7 +17,7 @@ abstract: |
   - Configure self-service password reset to customize the experience.
 prerequisites: | 
   - Basic understanding of Azure Active Directory
-iconUrl: /learn/achievements/allow-users-reset-their-password.svg
+iconUrl: /training/achievements/allow-users-reset-their-password.svg
 levels:
 - beginner
 roles:
@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.azure.allow-users-to-reset-their-password.introduction
 - learn.azure.allow-users-to-reset-their-password.what-is-self-service-password-reset

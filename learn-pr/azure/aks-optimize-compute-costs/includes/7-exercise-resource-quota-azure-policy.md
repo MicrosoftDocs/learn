@@ -2,7 +2,7 @@ Azure Policy for Kubernetes helps organizations meet governance and legal requir
 
 Development teams in your company are embracing Azure Kubernetes Service (AKS) as a development platform. You realize you need to manage costs by enforcing business rules that define workload-resource limits. You want to make sure developers can deploy workloads only within specific limits for CPU and memory allocation. The system must prevent workloads that exceed those limits.
 
-In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on your AKS cluster. You'll configure a **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster** policy. Finally, you'll test that the policy denies the scheduling of workloads that exceed the policy's resource parameters.
+In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on your AKS cluster. You'll configure a **Kubernetes cluster containers CPU and memory resource limits should not exceed the specified limits** policy. Finally, you'll test that the policy denies the scheduling of workloads that exceed the policy's resource parameters.
 
 ## Enable the ContainerService and PolicyInsights resource providers
 
@@ -121,16 +121,18 @@ In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on 
     az aks show \
      --resource-group $RESOURCE_GROUP\
      --name $AKS_CLUSTER_NAME \
-     -o table --query "addonProfiles.azurepolicy.config.version"
+     -o table --query "addonProfiles.azurepolicy"
     ```
 
     ```output
-    Result
-    --------
-    v2
+    {
+        "config": null,
+        "enabled": true,
+        "identity": null
+    }
     ```
 
-    You're now ready to switch to the Azure portal to configure the policy named **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster**.
+    You're now ready to switch to the Azure portal to configure the policy named **Kubernetes cluster containers CPU and memory resource limits should not exceed the specified limits**.
 
 ## Assign a built-in policy definition
 
@@ -194,6 +196,9 @@ To configure the new Azure Policy, use the Policy service in the Azure portal.
     :::image type="content" source="../media/7-complete-remediation-tab.png" alt-text="Screenshot that shows the information captured in the Remediation tab.":::
 
 1. Select the **Review + save** tab. Review the values you've chosen, and then select **Create**.
+
+> [!IMPORTANT]
+> If you're using an existing AKS cluster, the policy assignment may take about 15 minutes to apply.
 
 ## Test resource requests
 

@@ -80,7 +80,7 @@ ID | Subtask | What part of the introduction scenario does this subtask satisfy?
 
     **Knowledge check**
 
-    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
+    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)*
 
     - What is the difference between CI and CD?
     - What are the primary gain when using CI/CD pipelines?
@@ -158,7 +158,7 @@ ID | Subtask | What part of the introduction scenario does this subtask satisfy?
 
 Other learn modules that could be linked to this one:
 
-- https://docs.microsoft.com/en-us/learn/modules/introduction-to-github/
-- https://docs.microsoft.com/en-us/learn/modules/github-actions-automate-tasks/
-- https://docs.microsoft.com/en-us/learn/modules/github-actions-ci/
-- https://docs.microsoft.com/en-us/learn/modules/github-actions-automate-tasks
+- https://learn.microsoft.com/training/modules/introduction-to-github/
+- https://learn.microsoft.com/training/modules/github-actions-automate-tasks/
+- https://learn.microsoft.com/training/modules/github-actions-ci/
+- https://learn.microsoft.com/training/modules/github-actions-automate-tasks

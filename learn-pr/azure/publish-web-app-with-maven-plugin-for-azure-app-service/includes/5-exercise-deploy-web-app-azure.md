@@ -15,10 +15,11 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
 
     | Prompt | Value |
     |---|---|
-    | **Define value for OS** | _Enter the corresponding number for **Linux**_ |
-    | **Define value for javaVersion** | _Enter the corresponding number for **Java 8**_ |
-    | **Define value for runtimeStack** | _Enter the corresponding number for **TOMCAT 8.5**_ |
-    | **Confirm (Y/N)** | _Enter **Y**_ |
+    | **Define value for OS** | *Enter the corresponding number for **Linux*** |
+    | **Define value for pricingTier** | *Enter the corresponding number for **F1*** |
+    | **Define value for javaVersion** | *Enter the corresponding number for **Java 8*** |
+    | **Define value for runtimeStack** | *Enter the corresponding number for **TOMCAT 8.5*** |
+    | **Confirm (Y/N)** | *Enter **Y*** |
 
     The plugin will add the appropriate settings that reflect your choices to your `pom.xml` file.
 
@@ -67,7 +68,7 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
 
     Copy these values for use later in this exercise.
 
-1. Use the `azure-webapp-maven-plugin` again to configure additional settings interactively to your Maven `pom.xml` file:
+1. Use the `azure-webapp-maven-plugin` again to configure more settings interactively to your Maven `pom.xml` file:
 
     ```bash
     mvn azure-webapp:config

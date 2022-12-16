@@ -1,19 +1,15 @@
-In this module, you viewed Azure Blob Storage metric information in the Azure portal. You then created custom dashboards in the Azure portal, and retrieved Azure Storage Analytics logs.
+In this module, you viewed Azure Blob Storage metric information in the Azure portal. You then created custom dashboards in the Azure portal. For a more comprehensive learn module that helps you use both metrics as storage logs to troubleshoot issues, see [monitor-diagnose-and-troubleshoot-azure-storage](../../monitor-diagnose-and-troubleshoot-azure-storage/index.yml).
 
-## More information
+## Learn more
 
-Blob storage supports Azure Data Lake Storage Gen2. For more information, see [Introduction to Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction).
-
-Transaction metrics are sent to Azure Monitor every minute, and are available both for the account and the service. For more information, see [Monitoring Azure Blob Storage](/azure/storage/common/storage-metrics-in-azure-monitor).
-
-You can also specify custom metrics. For more information, see [Custom metrics in Azure Monitor](/azure/azure-monitor/platform/metrics-custom-overview).
-
-Shared dashboards are an Azure resource, which means you can share them by using role-based access control (RBAC). RBAC enables you to apply roles to Azure user accounts or groups, which can then access a resource or resource group. You can apply different roles to different users or groups, so that some users can only view a resource but other users can manage a resource. For more information, see the following articles:
-
-- [Create and share dashboards in the Azure portal](/azure/azure-portal/azure-portal-dashboards)
-
-- [Create and share dashboards of Log Analytics data](/azure/azure-monitor/learn/tutorial-logs-dashboards)
-
-- [Share Azure dashboards by using role-based access control](/azure/azure-portal/azure-portal-dashboard-share-access)
+- [Monitoring Azure Blob Storage](/azure/storage/blobs/monitor-blob-storage)
+- [Monitoring Azure Files](/azure/storage/files/storage-files-monitoring)
+- [Monitoring Azure Queue Storage](/azure/storage/queues/monitor-queue-storage)
+- [Monitoring Azure Table storage](/azure/storage/tables/monitor-table-storage)
+- [Monitoring your storage service with Azure Monitor Storage insights](/azure/storage/common/storage-insights-overview)
+- [Best practices for monitoring Azure Blob Storage](/azure/storage/blobs/blob-storage-monitoring-scenarios)
+- [Getting started with Azure Metrics Explorer](/azure/azure-monitor/essentials/metrics-getting-started)
+- [Overview of Log Analytics in Azure Monitor](/azure/azure-monitor/logs/log-analytics-overview)
+- [Azure Monitor Metrics overview](/azure/azure-monitor/essentials/data-platform-metrics)
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]

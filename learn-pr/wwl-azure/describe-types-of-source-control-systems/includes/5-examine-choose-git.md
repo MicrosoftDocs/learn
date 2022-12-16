@@ -35,7 +35,7 @@ One of the most significant advantages of Git is its branching capabilities. Unl
 :::image type="content" source="../media/trunk-based-development-fcd6834f.png" alt-text="Trunk-based Development.":::
 
 
-Trunk-based development provides an isolated environment for every change to your codebase. When developers want to start working on something—no matter how large or small—they create a new branch. It ensures that the master branch always contains production-quality code.
+Trunk-based development provides an isolated environment for every change to your codebase. When developers want to start working on something—no matter how large or small—they create a new branch. It ensures that the main branch always contains production-quality code.
 
 Using trunk-based development is more reliable than directly-editing production code, but it also provides organizational benefits.
 

@@ -29,6 +29,7 @@ param sqlServerAdministratorLoginPassword string
 // Define the names for resources.
 var appServiceAppName = 'toy-website-${resourceNameSuffix}'
 var appServicePlanName = 'toy-website'
+var logAnalyticsWorkspaceName = 'workspace-${resourceNameSuffix}'
 var applicationInsightsName = 'toywebsite'
 var storageAccountName = 'mystorage${resourceNameSuffix}'
 var storageAccountImagesBlobContainerName = 'toyimages'
@@ -47,6 +48,11 @@ var environmentConfigurationMap = {
         capacity: 1
       }
     }
+    storageAccount: {
+      sku: {
+        name: 'Standard_LRS'
+      }
+    }
     sqlDatabase: {
       sku: {
         name: 'Standard'
@@ -60,6 +66,11 @@ var environmentConfigurationMap = {
         name: 'F1'
       }
     }
+    storageAccount: {
+      sku: {
+        name: 'Standard_GRS'
+      }
+    }
     sqlDatabase: {
       sku: {
         name: 'Standard'
@@ -69,13 +80,13 @@ var environmentConfigurationMap = {
   }
 }
 
-resource appServicePlan 'Microsoft.Web/serverfarms@2021-01-15' = {
+resource appServicePlan 'Microsoft.Web/serverfarms@2022-03-01' = {
   name: appServicePlanName
   location: location
   sku: environmentConfigurationMap[environmentType].appServicePlan.sku
 }
 
-resource appServiceApp 'Microsoft.Web/sites@2021-01-15' = {
+resource appServiceApp 'Microsoft.Web/sites@2022-03-01' = {
   name: appServiceAppName
   location: location
   properties: {
@@ -120,6 +131,11 @@ resource appServiceApp 'Microsoft.Web/sites@2021-01-15' = {
   }
 }
 
+resource logAnalyticsWorkspace 'Microsoft.OperationalInsights/workspaces@2022-10-01' = {
+  name: logAnalyticsWorkspaceName
+  location: location
+}
+
 resource applicationInsights 'Microsoft.Insights/components@2020-02-02' = {
   name: applicationInsightsName
   location: location
@@ -128,18 +144,17 @@ resource applicationInsights 'Microsoft.Insights/components@2020-02-02' = {
     Application_Type: 'web'
     Request_Source: 'rest'
     Flow_Type: 'Bluefield'
+    WorkspaceResourceId: logAnalyticsWorkspace.id
   }
 }
 
-resource storageAccount 'Microsoft.Storage/storageAccounts@2021-04-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
   name: storageAccountName
   location: location
   kind: 'StorageV2'
-  sku: {
-    name: 'Standard_LRS'
-  }
+  sku: environmentConfigurationMap[environmentType].storageAccount.sku
 
-  resource blobService 'blobServices' existing = {
+  resource blobService 'blobServices' = {
     name: 'default'
 
     resource storageAccountImagesBlobContainer 'containers' = {
@@ -152,7 +167,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2021-04-01' = {
   }
 }
 
-resource sqlServer 'Microsoft.Sql/servers@2021-02-01-preview' = {
+resource sqlServer 'Microsoft.Sql/servers@2022-05-01-preview' = {
   name: sqlServerName
   location: location
   properties: {
@@ -161,7 +176,7 @@ resource sqlServer 'Microsoft.Sql/servers@2021-02-01-preview' = {
   }
 }
 
-resource sqlServerFirewallRule 'Microsoft.Sql/servers/firewallRules@2021-02-01-preview' = {
+resource sqlServerFirewallRule 'Microsoft.Sql/servers/firewallRules@2022-05-01-preview' = {
   parent: sqlServer
   name: 'AllowAllWindowsAzureIps'
   properties: {
@@ -170,7 +185,7 @@ resource sqlServerFirewallRule 'Microsoft.Sql/servers/firewallRules@2021-02-01-p
   }
 }
 
-resource sqlDatabase 'Microsoft.Sql/servers/databases@2021-02-01-preview' = {
+resource sqlDatabase 'Microsoft.Sql/servers/databases@2022-05-01-preview' = {
   parent: sqlServer
   name: sqlDatabaseName
   location: location

@@ -13,4 +13,4 @@ Provisioning devices for the multitenant scenario across regions, as described i
 
 With this configuration in place, you will see that devices in each region are provisioned to the same tenant in the closest region.
 
-For instructions that describe how to configure and test this multitenancy scenario, see: [https://docs.microsoft.com/azure/iot-dps/how-to-provision-multitenant](/azure/iot-dps/how-to-provision-multitenant).
+For instructions that describe how to configure and test this multitenancy scenario, see: [Tutorial: Provision for geolatency](/azure/iot-dps/how-to-provision-multitenant).

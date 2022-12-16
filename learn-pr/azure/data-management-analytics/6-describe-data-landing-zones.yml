@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-management-analytics.describe-data-landing-zones
+title: Describe data landing zones
+metadata:
+  unitType: learning-content
+  title: Describe data landing zones
+  description: "Describe data landing zones."
+  ms.date: 1/28/2022
+  author: lapate
+  ms.author: lapate
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[Describe data landing zones](includes/6-describe-data-landing-zones.md)]

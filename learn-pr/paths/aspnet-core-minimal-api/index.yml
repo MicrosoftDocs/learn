@@ -14,7 +14,7 @@ summary: .NET is a free, cross-platform, open-source developer platform for buil
 prerequisites: |
   - Recommended familiarity with .NET 6.
   - Having a basic understanding what an API is.
-iconUrl: /learn/achievements/aspnet-core-minimal-api.svg
+iconUrl: /training/achievements/aspnet-core-minimal-api.svg
 levels:
   - beginner
 roles:
@@ -24,7 +24,8 @@ products:
   - vs
   - dotnet
   - aspnet-core
-  - vs-code
+subjects:
+- custom-app-development
 modules:
 - learn.aspnetcore.build-web-api-minimal-api
 - learn.aspnetcore.build-web-api-minimal-database

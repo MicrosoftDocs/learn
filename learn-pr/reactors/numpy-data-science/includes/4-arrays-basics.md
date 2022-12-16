@@ -8,7 +8,7 @@ Now that you know how to create arrays in NumPy, you need to get comfortable wit
 
 ## Array attributes
 
-First, let's look at some array attributes. We'll start by defining three arrays filled with random numbers: one one-dimensional, another two-dimensional, and the last three-dimensional. Because we'll use NumPy's random number generator, we'll set a *seed* value to ensure that you get the same random arrays each time you run this code:
+First, let's look at some array attributes. We'll start by defining three arrays filled with random numbers: one one-dimensional, another two-dimensional, and the last three-dimensional. Because we'll use NumPy's random-number generator, we'll set a *seed* value to ensure you get the same random arrays each time you run this code:
 
 ```python
 import numpy as np
@@ -582,7 +582,7 @@ array([[12,  2],
        [ 1,  7]])
 ```
 
-Finally, subarray dimensions can even be reversed together:
+Finally, you can even reverse subarray dimensions together:
 
 ```python
 a2[::-1, ::-1]

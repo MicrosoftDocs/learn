@@ -16,7 +16,7 @@ abstract: |
   - Build models that can perform classification tasks
   - Explore how to assess and improve classification models
 prerequisites: Familiarity with machine learning models
-iconUrl: /learn/achievements/machine-learning/understand-classification-machine-learning.svg
+iconUrl: /training/achievements/machine-learning/understand-classification-machine-learning.svg
 levels: 
 - beginner
 roles: 
@@ -25,6 +25,9 @@ roles:
 - student
 products: 
 - azure
+subjects:
+- machine-learning
+- classification-analysis
 units:
 - learn.machinelearning.understand-classification-machine-learning.introduction
 - learn.machinelearning.understand-classification-machine-learning.what-is-classification

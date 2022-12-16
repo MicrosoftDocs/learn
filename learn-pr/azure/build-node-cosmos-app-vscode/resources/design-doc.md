@@ -140,12 +140,12 @@ Identify the subtasks of *module title*
             - A stored procedure is transactional; if an operation in a stored procedure fails (or the stored procedure times out), all the work performed by the stored procedure is undone.
             - A stored procedure can throw an exception back to the caller if it detects an error condition. This will also cause the transaction to be undone.
             - A stored procedure runs in an environment that restricts the amount of time and resources available (a *bounded execution* environment), to prevent a rogue stored procedure from adversely affected other users.
-    - Briefly summarize the JavaScript integrated query API for Cosmos DB, used from within stored procedures (https://docs.microsoft.com/azure/cosmos-db/javascript-query-api)
+    - Briefly summarize the JavaScript integrated query API for Cosmos DB, used from within stored procedures (https://learn.microsoft.com/azure/cosmos-db/javascript-query-api)
     - Describe how to return data as a response message from a stored procedure.
     - Explain how to handle bounded execution by structuring a stored procedure to support *resume* functionality; the stored procedure runs until it is complete or runs out of time. If the stored procedure exceeds the time available, it returns state information in the form of a *continuation* token to the caller. The caller invokes the stored procedure again with the data in the continuation token, and the stored procedure continues processing from where it left off.
     - Describe how to create a stored procedure from the Azure portal.
     - Describe how to test a stored procedure using the Azure portal.
-    - Describe how to run a stored procedure from a Node application (see https://docs.microsoft.com/javascript/api/@azure/cosmos/storedprocedure?view=azure-node-latest#execute-any--any----requestoptions-).
+    - Describe how to run a stored procedure from a Node application (see https://learn.microsoft.com/javascript/api/@azure/cosmos/storedprocedure?view=azure-node-latest#execute-any--any----requestoptions-).
 
 9. **Exercise - Create and run Cosmos DB stored procedures**
 
@@ -167,8 +167,8 @@ Identify the subtasks of *module title*
 
 ## Notes
 
-- This is effectively a port of https://docs.microsoft.com/learn/modules/build-cosmos-db-app-with-vscode/, for which we are not adding a pivot for a few reasons. The content of this module should not be lifted straight from the other module, but I don't expect them to be substantially different, except around the differing concerns between Node and .NET.
+- This is effectively a port of https://learn.microsoft.com/training/modules/build-cosmos-db-app-with-vscode/, for which we are not adding a pivot for a few reasons. The content of this module should not be lifted straight from the other module, but I don't expect them to be substantially different, except around the differing concerns between Node and .NET.
   - Note that the other module was created prior to our "conceptual unit/exercise unit" structure, which should be followed for this new module.
 - This module is for rank beginners. No real Node expertise is expected of the audience, but you don't need to explain what Node is - the assumption is that they've learned enough to want to create a Node app that uses real cloud infrastructure.
 - Similar to the other module, create a console app that can be run in the cloud shell.
-- Additional information is available at https://code.visualstudio.com/docs/nodejs/nodejs-tutorial and https://docs.microsoft.com/azure/cosmos-db/sql-api-nodejs-get-started
+- Additional information is available at https://code.visualstudio.com/docs/nodejs/nodejs-tutorial and https://learn.microsoft.com/azure/cosmos-db/sql-api-nodejs-get-started

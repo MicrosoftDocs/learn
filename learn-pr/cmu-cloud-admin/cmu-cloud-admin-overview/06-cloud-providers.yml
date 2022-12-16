@@ -40,7 +40,7 @@ quiz:
       - content: "Microsoft"
         isCorrect: false
         explanation: "Incorrect. Microsoft Azure offers IaaS, PaaS, and SaaS services."
-      - content: "Google App Engine"
+      - content: "Google"
         isCorrect: false
         explanation: "Incorrect. Google Cloud Platform offers IaaS, PaaS, and SaaS services."
       - content: "None of the above"

@@ -15,7 +15,7 @@ abstract: |
 prerequisites: |
   - Knowledge of Python
   - Experience of training and deploying models using the Azure Machine Learning SDK
-iconUrl: /learn/achievements/monitor-models-with-azure-machine-learning.svg
+iconUrl: /training/achievements/monitor-models-with-azure-machine-learning.svg
 levels:
 - intermediate
 roles:
@@ -24,6 +24,8 @@ products:
 - azure
 - azure-machine-learning
 - azure-portal
+subjects:
+- machine-learning
 units:
 - learn.wwl.monitor-models-with-azure-machine-learning.introduction
 - learn.wwl.monitor-models-with-azure-machine-learning.enabling-application-insights

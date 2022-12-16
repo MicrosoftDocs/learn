@@ -19,13 +19,13 @@ quiz:
 
     - content: "Which of the following is NOT an example of cloud middleware functionality?"
       choices:
-      - content: "An API that allows users to use manage their cloud resources"
+      - content: "An API that allows users to manage their cloud resources"
         isCorrect: false
         explanation: "Incorrect. A resource-management API is an example of a cloud middleware service."
       - content: "An authentication-management system that tracks user’s roles and grants access to various resources"
         isCorrect: false
         explanation: "Incorrect. An authentication-management system is an example of a cloud middleware service."
-      - content: "A daemon that monitors a virtual machine and launches a replacement instance if the virtual machine goes down or is unreachable or unresponsive"
+      - content: "An autonomous app that monitors a virtual machine and launches a replacement instance if the virtual machine goes down or is unreachable or unresponsive"
         isCorrect: false
         explanation: "Incorrect. A service that guarantees the availability of a cloud resource is an example of a cloud middleware service."
       - content: "Enabling a connection between a web server and a database using ODBC"

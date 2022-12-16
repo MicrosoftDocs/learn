@@ -17,7 +17,7 @@ prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.
 ratingEnabled: true
-iconUrl: /learn/achievements/monitoring-fundamentals.svg
+iconUrl: /training/achievements/monitoring-fundamentals.svg
 levels:
 - beginner
 roles:
@@ -31,6 +31,9 @@ products:
 - azure-advisor
 - azure-monitor
 - azure-service-health
+subjects:
+- cloud-computing
+- it-management-monitoring
 units:
 - learn.azure.monitoring-fundamentals.introduction
 - learn.azure.monitoring-fundamentals.identify-product-options

@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In this exercise, you'll use `DynamicResource` to update the **TipCalculator** UI when resource values change.
 
 This exercise is a continuation of the previous exercise. Use your existing solution as the starting point for these steps.

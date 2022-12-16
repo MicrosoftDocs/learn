@@ -16,7 +16,7 @@ abstract: |
 prerequisites: |
   - Knowledge of Python
   - Experience of training models using the Azure Machine Learning SDK
-iconUrl: /learn/achievements/use-compute-contexts-in-aml-badge.svg
+iconUrl: /training/achievements/use-compute-contexts-in-aml-badge.svg
 levels:
 - beginner
 roles:
@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-machine-learning
+subjects:
+- machine-learning
 units:
 - learn.wwl.use-compute-contexts-in-aml.introduction
 - learn.wwl.use-compute-contexts-in-aml.environments

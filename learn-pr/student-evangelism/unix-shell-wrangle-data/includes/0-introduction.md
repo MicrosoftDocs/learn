@@ -7,10 +7,10 @@ In this module, you'll learn how to wrangle (transform) data by using the UNIX s
 In this module, you'll learn how to:
 
 - Do basic file inspection with commands such as `head`, `tail`, `wc` , `nl`, and `sort`.
-- Use `cat` to create, append, display, and concatenate files.
-- Write and use simple `regex` (regular expressions) for text pattern matching. (This introduction to regex isn't in depth.)
-- Use `grep` to search files or `stdin` for pattern matching along with `regex`.
-- Do basic text transformations on input streams by using `sed` and `regex`.
+- Use the `cat` command to create, append, display, and concatenate files.
+- Write and use simple regex (regular expressions) for text pattern matching. (This introduction to regex isn't in depth.)
+- Use the `grep` command to search files, or `stdin` content for pattern matching along with regex.
+- Do basic text transformations on input streams by using `sed` and regex.
 - Use pipes and filters for data wrangling.
 
 ## Prerequisites

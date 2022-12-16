@@ -47,8 +47,8 @@ The resource creation experience on the portal is a wizard that walks you throug
 
     | Setting | Value  |
     |---------|---------|
-    | **IPv4 address space** | Enter **10.10.0.0/16** in the text box. |
-    | Subnet name          | Select the **default** link. The **Edit subnet** pane appears. Enter the following values for each setting. |
+    | **IPv4 address space** | Replace the default address with **10.10.0.0/16** in the text box. |
+    | Subnet name          | Select **default**. The **Edit subnet** pane displays. Enter the following values for each setting. |
 
     | Setting | Value  |
     |---------|---------|
@@ -87,13 +87,13 @@ Now that you've created the third spoke, you need to configure the virtual netwo
     | Setting | Value  |
     |---------|---------|
     | **This virtual network** |
-    | Peering link name   | *gwPeering_hubVNet_HRappVnet*. This is the peering link name from HubvNet to HRappVnet. |
+    | Peering link name   | *gwPeering_hubVNet_HRappVnet*. This name is the peering link name from HubvNet to HRappVnet. |
     | Traffic to remote virtual network | Allow |
     | Traffic forwarded from remote virtual network | Block traffic that originates from outside this virtual network |
     | Virtual network gateway or Route Server | None (default) |
     | **Remote virtual network** |
-    | Peering link name | *gwPeering_HRappVnet_hubVNet*. This is the peering link name from HRappVnet to HubvNet. |
-    | Virtual network deployment model | Resource manager |
+    | Peering link name | *gwPeering_HRappVnet_hubVNet*. This name is the peering link name from HRappVnet to HubvNet. |
+    | Virtual network deployment model | **Resource manager** |
     | Subscription | Concierge Subscription |
     | Virtual network | HRappVnet |
     | Traffic to remote virtual network | Allow |
@@ -169,7 +169,8 @@ You have a security requirement to meet for the HR application to be hosted on H
     |---------|---------|
     | Source  | From the dropdown list, select *Any*  |
     | Source port ranges | *  |
-    | Destination        | From the dropdown list, select *VirtualNetwork* |
+    | Destination        | From the dropdown list, select *Service Tag* |
+    | Destination service tag | *VirtualNetwork* |
     | Service | Custom |
     | Destination port ranges |  80,443  |
     | Protocol  | Any      |

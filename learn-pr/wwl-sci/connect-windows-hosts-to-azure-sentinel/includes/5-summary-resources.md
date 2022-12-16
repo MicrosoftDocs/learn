@@ -1,4 +1,4 @@
-You should have learned how to connect Windows devices to the Microsoft Sentinel workspace using the provided data connector.  The connector offers options to control which events to collect.
+You should have learned how to connect Windows devices to the Microsoft Sentinel workspace using the provided data connectors.  The connector offers options to control which events to collect.
 
 You should now be able to:
 

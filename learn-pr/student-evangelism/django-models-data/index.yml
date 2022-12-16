@@ -30,7 +30,7 @@ prerequisites:  |
       - Package management
       - Virtual environments
       - Inheritance
-iconUrl: /learn/achievements/django-models-data.svg
+iconUrl: /training/achievements/django-models-data.svg
 levels:
 - intermediate
 roles:
@@ -38,8 +38,9 @@ roles:
 - developer
 products:
 - azure
-- vs-code
 - azure-app-service
+subjects:
+- data-visualization
 units:
 - learn.django.models-data.introduction
 - learn.django.models-data.exercise-get-starter

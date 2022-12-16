@@ -9,7 +9,7 @@ Now that you've reviewed this module, you should be able to:
 
 To learn more about TypeScript, see:
 
-- [Video of Anders Hejlsberg of Microsoft introducing TypeScript](https://www.youtube.com/watch?v=ThlMt_raWyk&azure-portal=true). The video is slightly out of date and but still provides a valuable overview of the "why" behind TypeScript from the person who developed it.
+- [Inside TypeScript with Anders Hejlsberg of Microsoft](https://www.youtube.com/watch?v=tXK50czRbdA). The creator of TypeScript discusses TypeScript 3.4.
 - [TypeScript documentation and other resources](https://www.typescriptlang.org/?azure-portal=true).
 - [TypeScript repository on GitHub](https://github.com/microsoft/TypeScript?azure-portal=true). Contribute to the TypeScript open-source community.
 - [Migrating from JavaScript tutorial](https://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html?azure-portal=true). Learn more about migrating your existing JavaScript projects to TypeScript.

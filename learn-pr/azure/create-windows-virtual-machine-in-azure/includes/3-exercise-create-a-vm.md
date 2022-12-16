@@ -8,9 +8,9 @@ You can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell
 
 1. On the Azure portal, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In *Search services and marketplace* search box, search for and select *Windows Server*, and press <kbd>Enter</kbd>. The **Windows Server** pane appears.
+1. In *Search services and marketplace* search box, search for and select *Windows Server*, and press <kbd>Enter</kbd>. Select **Windows Server** by Microsoft. The **Windows Server** pane appears.
 
-1. There are several Windows Server options to choose from to create your VM. In the **Plan** dropdown list, scroll down, and select **[smalldisk] Windows Server 2019 Datacenter - Gen 2**.
+1. There are several Windows Server options to choose from to create your VM. In the **Plan** dropdown list, scroll down, and select **[smalldisk] Windows Server 2019 Datacenter**.
 
 1. Select **Create**. The **Create a virtual machine** pane appears.
 
@@ -26,7 +26,7 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
 > As you add or change settings in the wizard, Azure validates each value and places a green check mark next to a validated field, or red error indicator below the field. You can hover over an error indicator to get more information about a validation issue.
 
 > [!NOTE]
-> It's a best practice to use a standard naming convention for resource names so you can easily identify their purpose. Windows VM names are a bit limited - they must be between 1 and 15 characters, cannot contain non-ASCII or special characters, and must be unique in the current resource group.
+> It's a best practice to use a standard naming convention for resource names so you can easily identify their purpose. Windows VM names are a bit limited; they must be between 1 and 15 characters, cannot contain non-ASCII or special characters, and must be unique in the current resource group.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -40,12 +40,13 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
     | Region | Select a region close to you from the global regions listed in the following table. |
     | Availability options | Accept default **No infrastructure redundancy required**. This option is used to ensure the VM is highly available by grouping multiple VMs together to deal with planned or unplanned maintenance events or outages. |
     | Security type | Standard |
-    | Image | Select **[smalldisk] Windows Server 2019 Datacenter - Gen1** from the dropdown list. |
-    | Azure Spot instance| Accept default (unchecked). |
-    | Size | The **Size** field is not directly editable. Select or accept the default **Standard DS1 v2**, which will give the VM 1 CPU and 3.5 GB of memory. Optionally, select the field to view recommended or recently chosen sizes; select **See all sizes** to explore filters for sizes based on vCPUs, RAM, Data disks, operations per second, and cost. Select the X in the top right of the pane to close the pane.  |
+    | Image | Select **[smalldisk] Windows Server 2019 Datacenter - Gen2** from the dropdown list. |
+    | VM architecture | Accept default (x64). |
+    | Run with Azure Spot discount| Accept default (unchecked). |
+    | Size | The **Size** field isn't directly editable. Select or accept the default **Standard DS1 v2**, which will give the VM 1 CPU and 3.5 GB of memory. Optionally, select the field to view recommended or recently chosen sizes; select **See all sizes** to explore filters for sizes based on vCPUs, RAM, Data disks, operations per second, and cost. Select the X in the top right of the pane to close the pane.  |
     | **Administrator account** |
-    | Username | Enter a username you will use to sign in to the VM. |
-    | Password | Enter a password that's at least 12 characters long and has at least three of the following four characteristics: one lower case character, one uppercase character, one number, and one special character that is not '\\' or '-'. Use something you will remember or write it down, as you will need it later. |
+    | Username | Enter a username you'll use to sign in to the VM. |
+    | Password | Enter a password that's at least 12 characters long and has at least three of the following four characteristics: one lower case character, one uppercase character, one number, and one special character that isn't '\\' or '-'. Use something you'll remember or write it down, as you'll need it later. |
     | Confirm password | Confirm your password. |
     | **Inbound port rules** |
     | Public inbound ports | Select **Allow selected ports**. We want to be able to access the desktop for this Windows VM using RDP. |
@@ -68,8 +69,10 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
     |---------|---------|
     | **Disk options** |
     | OS disk type | Accept the default **Premium SSD (locally redundant storage)**. |
+    | Delete with VM | Accept the default (checked) | 
+    | Encryption at host | Accept the default (unchecked) |     
     | Encryption type | Accept the default **(Default) Encryption at-rest with a platform-managed key**. |
-    | Enable Ultra Disk compatibility | Accept default (unchecked) |
+    | Enable Ultra Disk compatibility | Accept the default (unchecked) |
     | **Data disks** |
     | Select **Create and attach a new disk** link. The **Create a new disk** pane appears. | Accept all the default values for the following settings: *Name*; *Source type*; *Size*; *Encryption type*; and *Enable shared disk*. This is where you could use a snapshot, or Storage Blob, to create a VHD. |
 
@@ -87,7 +90,7 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
 
    In a production system, where other components are already in use, it would be important to use an _existing_ virtual network so that the VM can communicate with the other cloud services in the production solution. If no virtual network has defined in this location, create it here and configure the:
 
-    - **Subnet**: First subnet to subdivide the address space - it must fit within the defined address space. After the VNet is created, you can add more subnets.
+    - **Subnet**: First subnet to subdivide the address space; it must fit within the defined address space. After the VNet is created, you can add more subnets.
     - **Public IP**: Overall IPV4 space available to this network.
 
 1. On the **Networking** tab, let's change some of the settings. Under the input field for **Virtual network**, select **Create new**. The **Create virtual network** pane appears.
@@ -97,7 +100,7 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
     | Setting | Value |
     |---------|---------|
     | **Address space** |
-    | *Address range* | Select the checkbox in the row below the heading, and enter `172.16.0.0/16` to give the address space a full range of addresses. If another address range row exists, select it to delete it. |
+    | *Address range* | In the row below the heading, enter `172.16.0.0/16` to give the address space a full range of addresses, then check the box next to the address you just entered. If another address range row exists, select the **Delete** icon to delete it. |
     | **Subnets** |
     | *Subnet name* | Select the checkbox in the row below the heading, and enter *default* in the first input field. If another row exists, select it to delete it. |
     | *Address range* | In the empty input field, enter `172.16.1.0/24` to give the subnet 256 IP addresses of space. |

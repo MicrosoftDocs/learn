@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.build-first-html-webpage
+metadata:
+  title: Build your first HTML webpage
+  description: "Illustrates basic programming techniques using Visual Studio Code to write HTML and CSS."
+  ms.date: 12/16/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build your first HTML webpage
+summary: Illustrates basic programming techniques using Visual Studio Code to write HTML.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe the basics of HTML
+  - Use a coding tool
+  - Create a basic HTML page
+  - Make linked lists in HTML
+prerequisites: |
+  Basic knowledge of computer terminology.
+iconUrl: /training/achievements/build-first-html-webpage.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- k-12-educator
+- student
+products:
+- return-to-school
+- return-to-workplace
+subjects:
+- cloud-computing
+units:
+- learn.wwl.build-first-html-webpage.introduction
+- learn.wwl.build-first-html-webpage.understand-terminology
+- learn.wwl.build-first-html-webpage.explore-core-html
+- learn.wwl.build-first-html-webpage.exercise-create-html-page
+- learn.wwl.build-first-html-webpage.research-links-lists-images
+- learn.wwl.build-first-html-webpage.exercise-lists-links
+- learn.wwl.build-first-html-webpage.knowledge-check
+- learn.wwl.build-first-html-webpage.summary
+badge:
+  uid: learn.wwl.program-web.badge

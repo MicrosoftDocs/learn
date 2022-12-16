@@ -3,5 +3,5 @@ In our modern world, people and organizations rely on connected devices to meet 
 By the end of this module, you'll be able to:
 
 - Describe what your device knows about you.
-- Describe how devices and become cybersecurity threats.
+- Describe how devices become cybersecurity threats.
 - Describe how to mitigate against device-related threats.

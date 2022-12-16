@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Familiarity with challenges of Big Data, such as velocity, variety, and volume.
   - Basic knowledge of query language concepts such as filters and aggregates.
-iconUrl: /learn/achievements/intro-to-azure-data-explorer.svg
+iconUrl: /training/achievements/intro-to-azure-data-explorer.svg
 levels:
   - beginner
 roles:
@@ -26,6 +26,9 @@ roles:
   - data-analyst
 products:
   - azure-data-explorer
+subjects:
+- data-engineering
+- data-management
 units:
 - learn.intro-to-azure-data-explorer.introduction
 - learn.intro-to-azure-data-explorer.what-is-azure-data-explorer

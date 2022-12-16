@@ -24,7 +24,7 @@ prerequisites: |
   - Be able to run Go applications by using the terminal prompt.
   - Have knowledge of basic data types like `string`, `int`, and `boolean`.
   - Have knowledge of how to write basic data control flows like `if` and `for` statements.
-iconUrl: /learn/achievements/go/go-data-types.svg
+iconUrl: /training/achievements/go/go-data-types.svg
 levels:
 - beginner
 roles:
@@ -32,7 +32,8 @@ roles:
 - student
 products:
 - azure
-- vs-code
+subjects:
+- data-management
 units:
 - learn.language.go-data-types.0-introduction
 - learn.language.go-data-types.1-arrays

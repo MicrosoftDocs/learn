@@ -15,6 +15,6 @@ Take your interest further with:
 * [Azure Event Grid documentation](/azure/event-grid/)
 * [Azure Logic Apps documentation](/azure/logic-apps/)
   
-And look out for additional Learn modules on IoT Hub.
+And look out for more Learn modules on IoT Hub.
 
 To finish this module and earn your rewards, complete a final knowledge check.

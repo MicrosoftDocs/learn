@@ -25,7 +25,7 @@ Consider a group or organization where each individual needs the capability to c
 
 :::image type="content" source="../media/symmetric-encryption.png" alt-text="This diagram shows how a cryptographic key is needed by all recipients for the symmetric key encryption to work":::
 
-Now let’s consider an organization with only 100 employees, where each person needs to communicate securely with everyone else. In this case, 4,950 keys need to be created, and securely shared and managed. Lastly, imagine a government-based organization with 1,000 employees where each individual needs to communicate securely. The number of keys required is 450,000. This growth can be expressed with a formula: p x (p-1) /2, where p is the number of people who need to communicate.
+Now let’s consider an organization with only 100 employees, where each person needs to communicate securely with everyone else. In this case, 4,950 keys need to be created, and securely shared and managed. Lastly, imagine a government-based organization with 1,000 employees where each individual needs to communicate securely. The number of keys required is 499500. This growth can be expressed with a formula: p x (p-1) /2, where p is the number of people who need to communicate.
 
 As the number of people in the organization grows, the number of keys increases significantly. This makes the secure management and distribution of secret keys, which are used in symmetric encryption, difficult and costly.
 

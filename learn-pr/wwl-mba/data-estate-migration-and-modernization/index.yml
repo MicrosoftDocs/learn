@@ -18,13 +18,16 @@ abstract: |
   - Understand the value of cloud scale analytics.
   - Learn how to gain insights from data using modern business intelligence.
 prerequisites: "None"
-iconUrl: /learn/achievements/data-estate-migration-and-modernization.svg
+iconUrl: /training/achievements/data-estate-migration-and-modernization.svg
 levels:
 - beginner
 roles:
 - business-user
 products:
 - azure
+subjects:
+- data-management
+- migration
 units:
 - learn-wwl.data-estate-migration-and-modernization.1-introduction-to-microsoft-data-estate-migration-and-modernization
 - learn-wwl.data-estate-migration-and-modernization.2-data-modernization

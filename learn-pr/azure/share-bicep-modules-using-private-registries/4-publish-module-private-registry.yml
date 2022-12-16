@@ -6,8 +6,8 @@ metadata:
   title: Publish a module to a private registry
   description: Learn how to create and control access to a private registry, and how to publish modules to the registry.
   ms.date: 02/10/2022
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface

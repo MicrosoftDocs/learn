@@ -20,7 +20,7 @@ Use these resources to discover more.
 
 - [Troubleshooting Active Directory Replication Problems](/windows-server/identity/ad-ds/manage/troubleshoot/troubleshooting-active-directory-replication-problems)
 
-- [Repadmin commands](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/cc770963(v=ws.11))
+- [Repadmin commands](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/cc770963(v=ws.11))
 
 - [Troubleshoot object synchronization with Azure AD Connect sync](/azure/active-directory/hybrid/tshoot-connect-objectsync)
 

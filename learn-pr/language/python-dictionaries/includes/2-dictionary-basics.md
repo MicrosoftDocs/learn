@@ -5,7 +5,7 @@ name = 'Earth'
 moons = 1
 ```
 
-Although this does work for smaller amounts of data, it can become increasingly complex when you're working with related data. Imagine wanting to store information about the moons of both Earth and Jupiter.
+Although this method does work for smaller amounts of data, it can become increasingly complex when you're working with related data. Imagine wanting to store information about the moons of both Earth and Jupiter.
 
 ```python
 earth_name = 'Earth'
@@ -15,7 +15,7 @@ jupiter_name = 'Jupiter'
 jupiter_moons = 79
 ```
 
-Notice how we duplicated variables with different prefixes. This can become unwieldy. Because you will frequently find yourself working with related sets of data, like average rainfall for different months in different cities, storing those as individual values isn't a viable option. This is where Python dictionaries can help.
+Notice how we duplicated variables with different prefixes. This duplication can become unwieldy. Because you'll frequently find yourself working with related sets of data, like average rainfall for different months in different cities, storing those variables as individual values isn't a viable option. Instead, you can use Python dictionaries.
 
 Python dictionaries allow you to work with related sets of data. A *dictionary* is a collection of key/value pairs. Think of it like a group of variables inside of a container, where the key is the name of the variable, and the value is the value stored inside it.
 
@@ -32,11 +32,11 @@ planet = {
 }
 ```
 
-You have two keys, `'name'` and `'moons'`. Each of these behaves in much the same way as a variable: they have a unique name, and they store a value. However, they are contained inside of a single, larger variable, named `planet`.
+You have two keys, `'name'` and `'moons'`. Each key behaves in much the same way as a variable: they have a unique name, and they store a value. However, they're contained inside of a single, larger variable, named `planet`.
 
-Just as with regular variables, you need to ensure that you're using the correct data types. In the `moons` value of `1` in the preceding example, you didn't include quotes around the number, because you want to use an integer. If you had used `'1'`, Python would see this as a string, which would affect your ability to perform calculations.
+As with regular variables, you need to ensure that you're using the correct data types. In the `moons` value of `1` in the preceding example, you didn't include quotes around the number, because you want to use an integer. If you had used `'1'`, Python would see this variable as a string, which would affect your ability to perform calculations.
 
-Unlike regular variables, key names *don't* need to follow standard naming rules for Python. You can use this to be more descriptive in your code.
+Unlike regular variables, key names *don't* need to follow standard naming rules for Python. You can use key names to be more descriptive in your code.
 
 ## Read dictionary values
 
@@ -48,7 +48,7 @@ print(planet.get('name'))
 # Displays Earth
 ```
 
-As you might suspect, accessing values in a dictionary is a common operation. Fortunately, there's a shortcut. You can also pass the key into square bracket notation (`[ ]`). This uses less code than `get`, and most programmers use this syntax instead. You could rewrite the preceding example by using the following:
+As you might suspect, accessing values in a dictionary is a common operation. Fortunately, there's a shortcut. You can also pass the key into square bracket notation (`[ ]`). This method uses less code than `get`, and most programmers use this syntax instead. You could rewrite the preceding example by using the following:
 
 ```python
 # planet['name'] is identical to using planet.get('name')
@@ -57,7 +57,7 @@ print(planet['name'])
 # Displays Earth
 ```
 
-Although the behavior of `get` and the square brackets (`[ ]`) is generally the same for retrieving items, there is one key difference. If a key isn't available, `get` returns `None`, and `[ ]` raises a `KeyError`.
+Although the behavior of `get` and the square brackets (`[ ]`) is generally the same for retrieving items, there's one key difference. If a key isn't available, `get` returns `None`, and `[ ]` raises a `KeyError`.
 
 ```python
 wibble = planet.get('wibble') # Returns None
@@ -82,7 +82,7 @@ planet['name'] = 'Makemake'
 # name is now set to Makemake
 ```
 
-The key advantage to using `update` is the ability to modify multiple values in one operation. The next two examples are logically the same, but the syntax is different. You are free to use whichever syntax you feel is most appropriate. For updating individual values, most developers choose square brackets.
+The key advantage to using `update` is the ability to modify multiple values in one operation. The next two examples are logically the same, but the syntax is different. You're free to use whichever syntax you feel is most appropriate. Most developers choose square brackets to update individual values.
 
 The following example makes the same edits to our `planet` variable, updating the name and moons. Notice that by using `update`, you're making a single call to the function, whereas using square brackets involves two calls.
 
@@ -152,7 +152,7 @@ planet['diameter (km)'] = {
 To retrieve values in a nested dictionary, you chain together square brackets, or calls to `get`.
 
 ```python
-print(f'{planet['name']} polar diameter: {planet['diameter (km)']['polar']}')
+print(f'{planet["name"]} polar diameter: {planet["diameter (km)"]["polar"]}')
 
 # Output: Jupiter polar diameter: 133709
 ```

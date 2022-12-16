@@ -8,7 +8,7 @@ The `where` operator filters results that satisfy a certain condition. In this f
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPDSjKL0gtKqlUsFMwAEoVFOVnpSaXKASXJJak6iiAtYRUFgCZqMqBSksSs1MVDA0AnGdDg1sAAAA=" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPDSjKL0gtKqlUsFMwAEoVFOVnpSaXKASXJJak6iiAtYRUFgCZqMqBSksSs1MVDA0AnGdDg1sAAAA=" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents
@@ -25,7 +25,7 @@ The `where` operator filters results that satisfy a certain condition. In this f
 
 1. Similarly, you can filter where the time of an event occurred more than a certain number of days ago. For example, run the following query, where `365d` means 365 days:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPDSjKL0gtKqlUsFMwgEsFlyQWlYRk5qYCRRPT8zWMzUxTNIGyBUX5WanJJSD5klQdBbCBIZUFQCaqYQC5Vx5sbwAAAA==" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPDSjKL0gtKqlUsFMwgEsFlyQWlYRk5qYCRRPT8zWMzUxTNIGyBUX5WanJJSD5klQdBbCBIZUFQCaqYQC5Vx5sbwAAAA==" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents
@@ -36,13 +36,13 @@ The `where` operator filters results that satisfy a certain condition. In this f
 
 1. Notice that this query returns no results. Because the data is from 2007, there are no records from the past year.
 
-## Filter by using a string operator
+## Filter by using a string value
 
 It looks like quite a few types of storms have caused damage all over the US. Let's narrow that down to storms that happened in a certain location, like the state of Florida.
 
-1. Run the following query, which uses `"FLORIDA"` as a string:
+1. Run the following query, which uses a second `where` operator with the string value `"FLORIDA"`:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPdS7KLyhWsFMwgIsHlySWpCrY2iooufn4B3m6OCoBpQqK8rNSk0sgkjoKYKNCKguATCRjAF6MrQhmAAAA" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPdS7KLyhWsFMwgIsHlySWpCrY2iooufn4B3m6OCoBpQqK8rNSk0sgkjoKYKNCKguATCRjAF6MrQhmAAAA" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents
@@ -63,7 +63,7 @@ One of the event types in the results of the last query is called **Thunderstorm
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPDSjKL0gtKqlUsFMwgEsFlySWpCrY2iooufn4B3m6OCrBpcCGhFQWpCpkJBYrKJVn5qWAJAuK8rNSk0tAOotKQjJzU3UQKnXQrAIAa+mmro0AAAA=" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPDSjKL0gtKqlUsFMwgEsFlySWpCrY2iooufn4B3m6OCrBpcCGhFQWpCpkJBYrKJVn5qWAJAuK8rNSk0tAOotKQjJzU3UQKnXQrAIAa+mmro0AAAA=" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents
@@ -85,7 +85,7 @@ The `contains` operator is similar to `has`, but it matches on any substring. Fo
 StormEvents | where EventType contains "free"
 ```
 
-The `has` operator is more performant than the `contains` operator, so use `has` wherever you have a choice between the two.
+The `has` operator is more performant than the `contains` operator, so you should use `has` wherever you have a choice between the two.
 
 ## Filter on `datetime` values
 
@@ -99,7 +99,7 @@ The syntax for constructing this date range is as follows:
 
 1. Let's incorporate this `datetime` range into a kind of query you've already seen. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLCoJycxNVUhKLSlPTc1T0EhJLEktAYpoGBkYmOsaGAKRpp4emqgZSFQTboxLYm5iempAUX5BalFJpYKdggGyDSWpCra2CkpuPv5Bni6OSkCpgqL8rNTkEoT1Ogpgh4VUFgCZqKYBlZckZqcqmBoAABGBmQnBAAAA" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLCoJycxNVUhKLSlPTc1T0EhJLEktAYpoGBkYmOsaGAKRpp4emqgZSFQTboxLYm5iempAUX5BalFJpYKdggGyDSWpCra2CkpuPv5Bni6OSkCpgqL8rNTkEoT1Ogpgh4VUFgCZqKYBlZckZqcqmBoAABGBmQnBAAAA" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents
@@ -114,4 +114,4 @@ The syntax for constructing this date range is as follows:
 
     :::image type="content" source="../media/5-where-3.png" alt-text="Screenshot of query results for where operators that include a time range.":::
 
-1. Notice that all the dates are within the first half of the year, months 1 to 6. You might also see that even though you've selected events from the state of Florida, the state doesn't appear as an output column, because it wasn't specified in the `project` operator.
+1. Notice that all the dates are within the first half of the year, months 1 to 6. You might also notice that even though you've selected events from the state of Florida, the state doesn't appear as an output column, because it wasn't specified in the `project` operator.

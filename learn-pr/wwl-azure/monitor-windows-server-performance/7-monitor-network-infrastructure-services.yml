@@ -4,13 +4,13 @@ title: Monitor network infrastructure services
 metadata:
   title: Monitor network infrastructure services
   description: "Monitor network infrastructure services"
-  ms.date: 11/26/2021
+  ms.date: 04/06/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 6
 content: |
   [!include[](includes/7-monitor-network-infrastructure-services.md)]

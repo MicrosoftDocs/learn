@@ -6,7 +6,7 @@ In this unit, you'll deploy your web application to App Service.
 
 Let's deploy the .NET application with ZIP deploy.
 
-First, use `dotnet publish` to build the final app files and `zip` to package them into a zip file.
+First, use `dotnet publish` to build the final app files and `zip` to package them into a zip file:
 
 ```bash
 cd ~/BestBikeApp
@@ -15,7 +15,7 @@ cd pub
 zip -r site.zip *
 ```
 
-Finally, perform the deployment with `az webapp deployment source config-zip`. Replace `<your-app-name>` in the following command with the name of your Azure web app and run it.
+Finally, perform the deployment with `az webapp deployment source config-zip`. Replace `<your-app-name>` in the following command with the name of your Azure web app and run it:
 
 ```bash
 az webapp deployment source config-zip \
@@ -24,15 +24,15 @@ az webapp deployment source config-zip \
     --name <your-app-name>
 ```
 
-The deployment will take a couple minutes, during which time you'll see status output. A status code of 202 means successful. 
+The deployment will take a couple minutes, during which time you'll get status output. A status code of 202 means successful. 
 
 ## Verify the deployment
 
-Let's browse to our application to see it live. Navigate back to the open browser tab containing the placeholder page and refresh it. If the placeholder page appears again, your App Service instance hasn't fully restarted yet, so wait a moment and try again. When you refresh after your app has restarted, you'll see the splash page for a new ASP.NET Core web app.
+Let's browse to our application. Navigate back to the open browser tab containing the placeholder page and refresh it. If the placeholder page appears again, your App Service instance hasn't fully restarted yet, so wait a moment and try again. When you refresh after your app has restarted, you'll get the splash page for a new ASP.NET Core web app.
 
  :::image type="content" source="../media/7-web-app-in-browser.png" alt-text="Screenshot of welcome page.":::
- 
-You have successfully hosted your new ASP.NET Core application on App Service!
+
+You've successfully hosted your new ASP.NET Core application on App Service!
 
 ::: zone-end
 
@@ -42,11 +42,12 @@ You have successfully hosted your new ASP.NET Core application on App Service!
 
 Some App Service deployment techniques, including the one we'll use here, require a username and password that are separate from your Azure credentials. Every web app comes preconfigured with its own username and a password that can be reset to a new random value, but can't be changed to something you choose.
 
-Instead of searching for those random values for each one of your apps, you can use an App Service feature called User Deployment Credentials to create your own username and password. The values you choose will work for deployments on *all* App Service web apps that you have permissions to, including new web apps that you create in the future. The username and password you select are tied to your Azure credentials and intended only for your use, so don't share them with others. You can change both the username and password at any time.
+Instead of searching for those random values for each one of your apps, you can use an App Service feature called User Deployment Credentials to create your own username and password. The values you choose will work for deployments on *all* App Service web apps to which you have permissions, including new web apps that you create in the future. The username and password you select are tied to your Azure credentials and intended only for your use, so don't share them with others. You can change both the username and password at any time.
 
-The easiest way to create deployment credentials is from the Azure CLI. 
+The easiest way to create deployment credentials is from the Azure CLI.
 
-1. Run the following command in the Cloud Shell to set deployment credentials, substituting `<username>` and `<password>` with values you choose.
+1. Run the following command in the Cloud Shell to set deployment credentials, substituting `<username>` and `<password>` with values you choose:
+
     ```azurecli
     az webapp deployment user set --user-name <username> --password <password>
     ```
@@ -55,14 +56,14 @@ The easiest way to create deployment credentials is from the Azure CLI.
 
 Let's deploy our Java application with WAR deploy. WAR deploy is part of the Kudu REST API, an administrative service interface available on all App Service web apps, which can be accessed over HTTP. The simplest way to use WAR deploy is with the `curl` HTTP utility from the command line.
 
-Run the following commands to deploy your Java web app with WAR deploy. Replace `<username>` and `<password>` with the Deployment User username and password you created above, and replace `<your-app-name>` with the name of your web app.
+Run the following commands to deploy your Java web app with WAR deploy. Replace `<username>` and `<password>` with the Deployment User username and password you created earlier, and replace `<your-app-name>` with the name of the web app you created in the Azure portal.
 
 ```console
 cd ~/helloworld/target
-curl -v -X POST -u [username]:[password] https://<your-app-name>.scm.azurewebsites.net/api/wardeploy --data-binary @helloworld.war
+curl -v -X POST -u <username>:<password> https://<your-app-name>.scm.azurewebsites.net/api/wardeploy --data-binary @helloworld.war
 ```
 
-When the command finishes running, open a new browser tab and navigate to `https://<your-app-name>.azurewebsites.net`. You'll see the greeting message from your app &mdash; you've deployed successfully!
+When the command finishes running, open a new browser tab and go to `https://<your-app-name>.azurewebsites.net`. You'll get the greeting message from your app. You've deployed successfully!
 
 ::: zone-end
 
@@ -92,9 +93,9 @@ The deployment will take a few minutes to propagate. You'll be able to view the 
 
 ## Verify the deployment
 
-Let's browse to our application to see it live. The last line of output from `az webapp up` before the JSON code block has a link to your app. Click it to navigate there in a new browser tab. The page will take a moment to load, as App Service is initializing your app for the first time.
+Let's browse to our application. The last line of output from `az webapp up` before the JSON code block has a link to your app. Click it to navigate there in a new browser tab. The page will take a moment to load, as App Service is initializing your app for the first time.
 
-Once it loads, you'll see the greeting message from your app &mdash; you've deployed successfully!
+Once it loads, you'll get the greeting message from your app. You've deployed successfully!
 
  :::image type="content" source="../media/7-web-app-in-browser.png" alt-text="Screenshot of welcome page.":::
 
@@ -123,14 +124,14 @@ cd ~/BestBikeApp
 az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
 ```
 
-The deployment will take a couple minutes, during which time you'll see status output.
+The deployment will take a few minutes, during which time you'll get status output.
 
 ## Verify the deployment
 
-Let's browse to your application to see it live. In the output, just above the JSON code block there is a line saying "You can launch the app at..." with a URL. Select that link to open your app in a new browser tab. The page may take a moment to load because the App Service is initializing your app for the first time.
+Let's browse to your application. In the output, just above the JSON code block, there's a line with a URL. Select that link to open your app in a new browser tab. The page may take a moment to load because the App Service is initializing your app for the first time.
 
-Once your program loads, you'll see the greeting message from your app &mdash; you've deployed successfully!
+Once your program loads, you'll get the greeting message from your app. You've deployed successfully!
 
  :::image type="content" source="../media/7-python-webapp.png" alt-text="Screenshot of Python's welcome page showing Hello Best Bike App!":::
- 
+
 ::: zone-end

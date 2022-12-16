@@ -3,7 +3,7 @@ uid: learn.wwl.explore-iot-edge-gateway-configuration
 metadata:
   title: Explore IoT Edge gateway configuration
   description: "This module provides you with experience deploying IoT Edge devices, configuring IoT Edge devices as gateway and downstream child devices, and communicating child device messages to IoT Hub using the gateway device."
-  ms.date: 01/11/2022
+  ms.date: 07/14/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ prerequisites: |
   - Describe the IoT Edge runtime and modules.
   - Describe the configuration requirements for an Azure IoT Edge device deployment.
   - Describe the configuration requirements for a transparent gateway device.
-iconUrl: /learn/achievements/iot-edge-gateway-configuration.svg
+iconUrl: /training/achievements/iot-edge-gateway-configuration.svg
 levels:
 - intermediate
 roles:
@@ -35,6 +35,8 @@ products:
 - azure-iot-edge
 - azure-iot-hub
 - azure-iot-sdk
+subjects:
+- iot
 units:
 - learn.wwl.explore-iot-edge-gateway-configuration.introduction
 - learn.wwl.explore-iot-edge-gateway-configuration.configure-device

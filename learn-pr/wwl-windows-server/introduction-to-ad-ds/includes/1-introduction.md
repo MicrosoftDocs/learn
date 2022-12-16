@@ -1,5 +1,4 @@
-
-Learn about the fundamentals of Active Directory Domain Services (AD DS) in Windows Server, including forests, domains, sites, domain controllers, organizational units (OUs), users, and groups. 
+Learn about the fundamentals of Active Directory Domain Services (AD DS) in Windows Server, including forests, domains, sites, domain controllers, organizational units (OUs), users, and groups.
 
 ## Scenario
 
@@ -13,15 +12,15 @@ After completing this module, you’ll understand the fundamental AD DS structur
 
 After completing this module, you'll be able to:
 
-- Describe AD DS.
-- Describe users, groups, and computers.
-- Identify and describe AD DS forests and domains.
-- Describe OUs.
-- Manage objects and their properties in AD DS.
+ -  Describe AD DS.
+ -  Describe users, groups, and computers.
+ -  Identify and describe AD DS forests and domains.
+ -  Describe OUs.
+ -  Manage objects and their properties in AD DS.
 
 ## Prerequisites
 
 To get the best learning experience from this module, you should have knowledge and experience of:
 
-- Windows Server.
-- Core networking technologies.
+ -  Windows Server.
+ -  Core networking technologies.

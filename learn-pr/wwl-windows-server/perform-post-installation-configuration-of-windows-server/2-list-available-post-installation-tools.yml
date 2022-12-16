@@ -4,12 +4,13 @@ title: List the available post-installation configuration tools
 metadata:
   title: List the available post-installation configuration tools
   description: "List the available post-installation configuration tools"
-  ms.date: 02/26/2021
+  ms.date: 06/14/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-windows-server
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/2-list-available-post-installation-tools.md)]

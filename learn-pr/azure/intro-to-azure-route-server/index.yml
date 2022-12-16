@@ -21,7 +21,7 @@ prerequisites: |
   - Experience with Azure virtual networks.
   - Experience with routing and routing protocols.
   - The ability to navigate the Azure portal and use Azure PowerShell.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
@@ -33,6 +33,10 @@ roles:
 products:
   - azure
   - azure-virtual-network
+subjects:
+- cloud-computing
+- networking
+- virtual-machine
 units:
 - learn.azure.intro-to-azure-route-server.1-introduction
 - learn.azure.intro-to-azure-route-server.2-what-azure-route-server

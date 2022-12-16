@@ -19,7 +19,7 @@ abstract: |
   - Program your bot to offer customers a positive experience.
   - Deploy your bot to the cloud by using the Azure CLI.
   - Connect your bot to communication channels.
-iconUrl: /learn/achievements/deploy-responsible-bot.svg
+iconUrl: /training/achievements/deploy-responsible-bot.svg
 levels:
 - beginner
 roles:
@@ -39,6 +39,8 @@ prerequisites: |
     - Bot Framework Emulator, a testing environment for your bot
     - PowerShell, a cross-platform command shell for automating tasks
 
+subjects:
+- chatbot
 units:
 - learn.advocates.deploy-responsible-bot.1-introduction
 - learn.advocates.deploy-responsible-bot.2-responsible-bot-principles

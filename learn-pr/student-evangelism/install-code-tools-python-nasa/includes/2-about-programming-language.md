@@ -21,7 +21,7 @@ Errors in code are known as "bugs" and fixing them is known as "debugging". Debu
 
 Debugging is essentially following the scientific method. A developer will:
 
-- Have a hypothesis of what should have happened 
+- Have a hypothesis of what should have happened
 - Gather information by walking through the code - with a tool called a debugger or by reading the code manually
 - Analyze where the execution differs from expected behavior
 - Modify the code

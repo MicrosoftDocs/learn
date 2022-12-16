@@ -3,8 +3,8 @@ uid: learn.languages.csharp-if-elseif-else.knowledge-check
 title: Knowledge Check
 metadata:
   title: Check your knowledge
-  description: Review what you've learned
-  ms.date: 09/19/2019
+  description: Review what you've learned.
+  ms.date: 05/16/2022
   author: billwagner
   ms.author: wiwagn
   ms.topic: interactive-tutorial
@@ -13,45 +13,45 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge.
   questions:
-  - content: "Given that `int x = 5;` Which of the following boolean expressions is valid and evaluates to **true**?"
+  - content: "If `int x = 5`, which of the following Boolean expressions is valid and evaluates to *true*?"
     choices:
     - content: "`x < 5`"
       isCorrect: false
-      explanation: "`x` is not less than 5.  It is equal to 5."
+      explanation: "`x` is not less than 5. `x` is equal to 5."
     - content: "`x > 5`"
       isCorrect: false
-      explanation: "`x` is not greater than 5.  It is equal to 5."
+      explanation: "`x` is not greater than 5. `x` is equal to 5."
     - content: "`x = 5`"
       isCorrect: false
-      explanation: "`x = 5` isn't a valid boolean expression because it uses the assignment operator, not the equality operator."
+      explanation: "`x = 5` isn't a valid Boolean expression because it uses the assignment operator, not the equality operator."
     - content: "`x == 5`"
       isCorrect: true
-      explanation: "Correct!"
-  - content: "Which of the choices below is **NOT** a valid operator?"
+      explanation: "Correct! `==` is the C# equality operator."
+  - content: "Which of the choices below is *not* a valid operator?"
     choices:
     - content: "`%%`"
       isCorrect: true
       explanation: "Correct!  The double percentage-sign symbol `%%` has no meaning in C# and is not a valid operator."
     - content: "`&&`"
       isCorrect: false
-      explanation: "`&&` is the C# logical AND operator.  We learned about it in this module."
+      explanation: "`&&` is the C# logical AND operator. We learned about it in this module."
     - content: "`||`"
       isCorrect: false
-      explanation: "`||` is the C# logical OR operator.  We learned about it in this module."
+      explanation: "`||` is the C# logical OR operator. We learned about it in this module."
     - content: "`==`"
       isCorrect: false
-      explanation: "`==` is the C# equality operator.  We learned about it in this module."
-  - content: "Which of the choices below about the `if` statement is **false**?"
+      explanation: "`==` is the C# equality operator. We learned about it in this module."
+  - content: "Which of the choices below about the `if` statement is *false*?"
     choices:
-    - content: "The if statement must be followed by a boolean expression."
+    - content: "The `if` keyword must be followed by a Boolean expression."
       isCorrect: false
-      explanation: "We're looking for a false statement."
+      explanation: "We're looking for a false statement. This statement is true."
     - content: "You can add an `else` before an `else if` statement."
       isCorrect: true
       explanation: "Correct!  You found the false statement."
     - content: "The `else` statement is optional."
       isCorrect: false
-      explanation: "We're looking for a false statement."
-    - content: "You can create a compound condition by combining two or more boolean expressions."
+      explanation: "We're looking for a false statement. This statement is true."
+    - content: "You can create a compound condition by combining two or more Boolean expressions."
       isCorrect: false
-      explanation: "We're looking for a false statement."
+      explanation: "We're looking for a false statement. This statement is true."

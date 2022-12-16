@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Our goal was to help you evaluate whether App Center would be a good choice for your mobile development processes. We developed some criteria you can use to guide your decision:
 
 * Integration

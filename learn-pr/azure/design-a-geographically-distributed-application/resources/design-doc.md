@@ -64,7 +64,7 @@ Identify the subtasks of *Design a geographically distributed application*
     - Consequently, a key part of making any cloud architecture resilient and highly available is to ensure it spans more than one region and can fail over easily and reliably to a secondary region with minimal loss of data.
     - Even such a multi-regional architecture is vulnerable to data loss. No architecture can provide 100% reliability and 100% uptime, so the goal is to provide as much reliability as possible, and understand and defend any choke points with mechanisms like a queue and a retry strategy.
     - In the app from the intro scenario, with an app service, a cache, and a backend database, all of those elements need to be duplicated in another region, with mechanisms to provide for failover, and any supporting services like name resolution, authentication, and CDN not tightly coupled to deployment in a single region.
-    - Azure is designed from the ground up such that regions are paired. Some services like Azure SQL provide for fault-tolerance beyond the secondary paired region, but given our app architecture uses a number of Azure services, we will design for failover in such a way that West Europe fails over to North Europe. https://docs.microsoft.com/azure/best-practices-availability-paired-regions. 
+    - Azure is designed from the ground up such that regions are paired. Some services like Azure SQL provide for fault-tolerance beyond the secondary paired region, but given our app architecture uses a number of Azure services, we will design for failover in such a way that West Europe fails over to North Europe. https://learn.microsoft.com/azure/best-practices-availability-paired-regions. 
 
     - Proposed architecture to deal with the introductory scenario.
         - First describe how the app's networking, data, and application architecture has been designed with regard to business objectives and independently of concerns about cross-regional fault tolerance.
@@ -97,7 +97,7 @@ Identify the subtasks of *Design a geographically distributed application*
         - A DNS-layer service which routes incoming traffic
         - Supports a variety of routing policies
         - For this architecture, 'priority' routing mode is the most appropriate, consisting of a primary service endpoint for all traffic, and a backup endpoint in another region in case the primary becomes unavailable
-        - Illustrate this priority routing mode with a simplified diagram based on https://docs.microsoft.com/azure/traffic-manager/traffic-manager-routing-methods#priority-traffic-routing-method with just a single failover but clearly shown in a separate region
+        - Illustrate this priority routing mode with a simplified diagram based on https://learn.microsoft.com/azure/traffic-manager/traffic-manager-routing-methods#priority-traffic-routing-method with just a single failover but clearly shown in a separate region
         - Traffic Manager uses highly configurable endpoint monitoring. You can define the protocol, port, path, custom header settings, expected status code ranges, tolerated number of failures and so on to get a continuous idea of the overall health of all parts of your application, and you can configure the system to fail over to another region if the primary endpoint becomes unreachable.
         - In the case of a regional failure, the failed region should be manually removed from Traffic Manager's rotation until all application subsystems have been definitively restored. Otherwise partial recovery of the region could lead to Traffic Manager flip-flopping between the regions.
         
@@ -147,4 +147,4 @@ Depending on deployment time, we may be able to leverage the following artifacts
 
 Supporting documentation:
 
-https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region
+https://learn.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region

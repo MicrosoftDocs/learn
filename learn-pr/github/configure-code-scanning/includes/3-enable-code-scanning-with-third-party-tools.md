@@ -99,15 +99,15 @@ In addition to running when commits are pushed, the workflow is scheduled to run
   //The scheduled workflow runs every Thursday at 15:45 UTC.
   
   on:
-  push:
-  schedule:
-    - cron: '45 15 * * 4'
+    push:
+    schedule:
+      - cron: '45 15 * * 4'
 
   jobs:
-  build:
-    runs-on: ubuntu-latest
-    permissions:
-      security-events: write
+    build:
+      runs-on: ubuntu-latest
+      permissions:
+        security-events: write
     steps:
       # This step checks out a copy of your repository.
       - name: Checkout repository

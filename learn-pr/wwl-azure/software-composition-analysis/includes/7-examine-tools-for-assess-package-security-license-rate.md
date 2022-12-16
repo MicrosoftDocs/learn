@@ -1,4 +1,4 @@
-Several tools are available from third parties to help assess the security and license rating of software packages in use.
+Several tools are available from third parties to help assess software packages' security and license rating.
 
 As discussed in the previous section, one approach by these tools is to provide a centralized artifact repository.
 
@@ -10,7 +10,7 @@ During the build process, the tool can scan the packages by the build, giving in
 
 ## Inspect packages in the delivery pipeline
 
-There's tooling available to do security scans on packages, components, and source code while running a delivery pipeline. Often such tooling will use the build artifacts during the build process and do scans. The tooling can either work on a local artifact repository or the intermediary build output. Some examples for each are products like:
+While running a delivery pipeline, there's tooling available to do security scans on packages, components, and source code. Often such tooling will use the build artifacts during the build process and do scans. The tooling can either work on a local artifact repository or the intermediary build output. Some examples for each are products like:
 
 :::row:::
   :::column:::
@@ -38,7 +38,7 @@ There's tooling available to do security scans on packages, components, and sour
 :::row-end:::
 :::row:::
   :::column:::
-    WhiteSource (Bolt)
+    Mend (Bolt)
   :::column-end:::
   :::column:::
     Build scanning.

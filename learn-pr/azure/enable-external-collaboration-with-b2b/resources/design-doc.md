@@ -92,4 +92,4 @@ Identify the subtasks of *Enable secure external collaboration for your applicat
 
 ## Notes
 
-- MFA in B2B - https://docs.microsoft.com/azure/active-directory/b2b/conditional-access
+- MFA in B2B - https://learn.microsoft.com/azure/active-directory/b2b/conditional-access

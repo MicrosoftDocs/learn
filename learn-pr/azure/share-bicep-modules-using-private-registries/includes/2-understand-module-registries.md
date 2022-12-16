@@ -8,6 +8,11 @@ One of the benefits of using modules is that you can share them with others, and
 
 A Bicep *registry* is the place where modules are stored and shared. Anyone can create their own registry. In the future, Microsoft plans to support publishing more types of Bicep content to registries, in addition to modules.
 
+> [!TIP]
+> Microsoft maintains a public Bicep module registry. The public registry contains modules that anybody in the community can use. Over time, the public registry will contain modules to help to achieve some common scenarios in Bicep.
+>
+> This Learn module focuses on sharing your own modules by using private registries. For more information on the public registry, see the summary unit.
+
 ## How do registries compare to template specs?
 
 You can save an Azure Resource Manager template (ARM template) as a *template spec*. A template spec is a way to make your templates reusable and share them through your organization. 

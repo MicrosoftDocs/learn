@@ -3,21 +3,22 @@ uid: learn.data-ai.survey-the-azure-data-platform.summary
 title: Summary
 metadata:
   title: Summary
-  description: Summary
-  ms.date: 01/31/2019
-  author: ctesta-oneillmsft
+  description: "Summary"
+  ms.date: 11/10/2022
+  author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/11-summary.md)]
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
-
   - content: "Which data platform technology is a globally distributed, multimodel database that can perform queries in less than a second?"
-    choices: 
+    choices:
     - content: "Azure SQL Database"
       isCorrect: false
       explanation: "Azure SQL Database is a managed relational database service in Azure."
@@ -27,9 +28,8 @@ quiz:
     - content: "Azure SQL Data Warehouse"
       isCorrect: false
       explanation: "Azure SQL Data Warehouse is a cloud-based enterprise data warehouse that can process massive amounts of data."
-
   - content: "Which data store is the least expensive choice when you want to store data but don't need to query it?"
-    choices: 
+    choices:
     - content: "Azure Stream Analytics"
       isCorrect: false
       explanation: "In real time, Azure Stream Analytics ingests streaming data from applications or Internet of Things (IoT) devices and gateways into an event hub or an IoT hub. Then the event hub or IoT hub streams the data into Azure Stream Analytics for real-time analysis."
@@ -39,15 +39,14 @@ quiz:
     - content: "Azure Storage"
       isCorrect: true
       explanation: "Correct. Azure Storage offers a massively scalable object store for data objects and file system services for the cloud. If you create a Blob storage account, you can't directly query the data."
-
   - content: "Which Azure service is the best choice to store documentation about a data source?"
-    choices: 
+    choices:
     - content: "Azure Data Factory"
       isCorrect: false
       explanation: "Azure Data Factory is a cloud-integration service that orchestrates the movement of data between data stores."
     - content: "Azure Purview"
       isCorrect: true
-      explanation: "Azure Purview is a unified data governance service that helps you manage and govern your on-premises, multi-cloud and software-as-a-service (SaaS) data."
+      explanation: "Azure Purview is a unified data governance service that helps you manage and govern your on-premises, multicloud and software-as-a-service (SaaS) data."
     - content: "Azure Data Lake Storage"
       isCorrect: false
       explanation: "Azure Data Lake Storage is a Hadoop-compatible data repository that can store any size or type of data."

@@ -12,7 +12,7 @@ Your security requirements might include:
 
 In this module, you will:
 
- -  Understand how to implement compliance
+ -  Understand how to get network security recommendations with Microsoft Defender for Cloud
  -  Configure and monitor an Azure DDoS protection plan
  -  Implement and manage firewalls
  -  Implement network security groups (NSGs)
@@ -25,3 +25,4 @@ In this module, you will:
  -  You should have experience with network connectivity methods, such as VPN or WAN
  -  You should be able to navigate the Azure portal
  -  You should have experience with the Azure portal and Azure PowerShell
+ 

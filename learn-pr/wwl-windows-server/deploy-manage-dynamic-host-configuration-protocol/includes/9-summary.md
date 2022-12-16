@@ -10,4 +10,4 @@ You can learn more by reviewing the following documents.
 - [Manage Servers with Windows Admin Center](/windows-server/manage/windows-admin-center/use/manage-servers?azure-portal=true).
 - [PowerShell DhcpServer command reference](/powershell/module/dhcpserver?azure-portal=true).
 - [What's New in DHCP](/windows-server/networking/technologies/dhcp/what-s-new-in-dhcp?azure-portal=true).
-- [Understand and Deploy DHCP Failover](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn338978(v=ws.11)?azure-portal=true).
+- [Understand and Deploy DHCP Failover](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn338978(v=ws.11)?azure-portal=true).

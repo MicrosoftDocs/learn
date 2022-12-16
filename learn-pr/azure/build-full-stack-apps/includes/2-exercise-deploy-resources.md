@@ -2,18 +2,19 @@ Setting up your environment and deploying some resources to start with is an imp
 
 ## Configure your environment with Visual Studio Code
 
-In order to complete the exercises, you'll need to configure your environment. If you already have these components installed and configured, you do not need to repeat the steps.
+In order to complete the exercises, you'll need to configure your environment. If you already have these components installed and configured, you don't need to repeat the steps.
 
 1. Download and install [Visual Studio Code](https://code.visualstudio.com/Download).
 1. Download and install the [Azure Functions Core Tools](/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#install-the-azure-functions-core-tools).
 1. In Visual Studio Code, install the following extensions:
-    1. **Azure Account**: This extension allows you to authenticate to Azure.
-    1. **Azure Functions**: This extension allows you to manage Azure Functions.
-    1. **GitHub**: This extension allows you to authenticate to GitHub and manage repositories.
-    1. **Azure Resources**: This extension allows you to manage Azure resources.
-    1. **SQL Server (mssql)**: This extension includes tools for querying SQL Server and Azure SQL resources.
-    1. **Live Server**: This extension enables you to run web applications locally with ease.
-1. Sign in to GitHub in Visual Studio Code using your GitHub account. If you do not have a GitHub account, [create one here](https://github.com/join).
+    - [**Azure Account**](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account): This extension allows you to authenticate to Azure.
+    - [**Azure Functions**](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions): This extension allows you to manage Azure Functions.
+    - [**GitHub Pull Requests and Issues**](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github): This extension allows you to authenticate to GitHub and manage repositories.
+    - [**Azure Resources**](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups): This extension allows you to manage Azure resources.
+    - [**SQL Server (mssql)**](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql): This extension includes tools for querying SQL Server and Azure SQL resources.
+    - [**Live Server**](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer): This extension enables you to run web applications locally with ease.
+
+1. Sign in to GitHub in Visual Studio Code using your GitHub account. If you don't have a GitHub account, [create one here](https://github.com/join).
 1. Sign in to GitHub with your GitHub account and navigate to [this repository](https://github.com/Azure-Samples/serverless-full-stack-apps-azure-sql). In the top-right corner of your browser, select the **Fork** button.
 1. On the same page, select **Code** and copy the HTTPS Clone URL, for example, *`https://github.com/<github-username>/serverless-full-stack-apps-azure-sql.git`*.
 1. Back in Visual Studio Code, select **Source Control** > **...** > **Clone** and enter the URL copied in a previous step. Select the location you would like the repository to be copied locally.
@@ -111,7 +112,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. In a text file, notepad, or on paper, determine the connection string for your Azure SQL Database. It will be something like `Server=<your-server-name>.database.windows.net,1433;Initial Catalog=bus-db;User Id=cloudadmin;Password=<your-password>;Connection Timeout=30;`
 
-1. Go to your repository for this module on GitHub (make sure you are signed in). It will be something like `https://github.com/<your-git-username>/serverless-full-stack-apps-azure-sql`.
+1. Go to your repository for this module on GitHub (make sure you're signed in). It will be something like `https://github.com/<your-git-username>/serverless-full-stack-apps-azure-sql`.
 
 1. Select **Settings** for the repository.
 
@@ -119,7 +120,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     1. *Name*: **AZURE_SQL_CONNECTION_STRING**
     1. *Value*: **Connection string from prior step**
 
-1. Next, you must configure the yaml file. In Visual Studio Code, select **Explorer** icon on the left-hand taskbar to view the repository files. If you do not see them, select **File** > **Open folder** and go to the location where you cloned the repository.
+1. Next, you must configure the yaml file. In Visual Studio Code, select **Explorer** icon on the left-hand taskbar to view the repository files. If you don't see them, select **File** > **Open folder** and go to the location where you cloned the repository.
 
 1. Under the folder `.github\workflows`, rename **`azuresqldatabase.yml.template`** to **`azuresqldatabase.yml`**.
 

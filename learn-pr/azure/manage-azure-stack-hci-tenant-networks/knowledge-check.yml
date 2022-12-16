@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-azure-stack-hci-tenant-networks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Interactive questions that validate whether the learner achieved the learning objectives.
+  ms.date: 03/30/2022
+  author: mpolicht
+  ms.author: nedelgad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  questions:
+  - content: 'Which configuration option is available only when implementing tenant virtual networks from Windows Admin Center?'
+    choices:
+    - content: 'VLAN ID'
+      isCorrect: false
+      explanation: 'Incorrect. Tenant virtual networks don’t rely on the use of VLAN.'
+    - content: 'Address prefix'
+      isCorrect: false
+      explanation: 'Incorrect. Configuration of both tenant virtual and logical networks involves assigning an address prefix.'
+    - content: 'Peerings'
+      isCorrect: true
+      explanation: 'Correct. Virtual network configuration, unlike the configuration of logical networks, includes support for peerings.'
+  - content: 'Which configuration option is available only when implementing tenant logical networks from Windows Admin Center?'
+    choices:
+    - content: 'VLAN ID'
+      isCorrect: true
+      explanation: 'Correct. Tenant virtual networks, unlike virtual networks, rely on the use of VLAN.'
+    - content: 'Address prefix'
+      isCorrect: false
+      explanation: 'Incorrect. Configuration of both tenant virtual and logical networks involves assigning an address prefix.'
+    - content: 'Peerings'
+      isCorrect: false
+      explanation: 'Incorrect. Logical network configuration doesn’t include support for peerings.'
+  - content: 'Which additional setting is required when configuring a BGP router for a tenant virtual network?'
+    choices:
+    - content: 'Maximum allowed inbound bandwidth (KBPS)'
+      isCorrect: false
+      explanation: 'Incorrect. This setting isn’t part of the BGP router configuration.'
+    - content: 'Address prefix in CIDR notation'
+      isCorrect: false
+      explanation: 'Incorrect. This setting isn’t part of the BGP router configuration.'
+    - content: 'ASN'
+      isCorrect: true
+      explanation: 'Correct. This setting is part of the BGP router configuration.'
+  - content: 'Which RAS Gateway connection involves setting up an IKEv2 encrypted tunnel?'
+    choices:
+    - content: 'GRE'
+      isCorrect: false
+      explanation: 'Incorrect. GRE RAS Gateway connection doesn’t involve setting up an IKEv2 encrypted tunnel.'
+    - content: 'L3'
+      isCorrect: false
+      explanation: 'Incorrect. L3 RAS Gateway connection doesn’t involve setting up an IKEv2 encrypted tunnel.'
+    - content: 'S2S'
+      isCorrect: true
+      explanation: 'Correct. S2S RAS Gateway connection involves setting up an IKEv2 encrypted tunnel.'
+  - content: 'Which RAS Gateway connection involves setting up a tunnel that encapsulates other protocols without the overhead of encryption?'
+    choices:
+    - content: 'GRE'
+      isCorrect: true
+      explanation: 'Correct. A GRE RAS Gateway connection involves setting up a tunnel that encapsulates other protocols without the overhead of encryption.'
+    - content: 'L3'
+      isCorrect: false
+      explanation: 'Incorrect. An L3 RAS Gateway connection doesn’t involve setting up a tunnel that encapsulates other protocols without the overhead of encryption.'
+    - content: 'S2S'
+      isCorrect: false
+      explanation: 'Incorrect. An S2S RAS Gateway connection doesn’t involve setting up a tunnel that encapsulates other protocols without the overhead of encryption.'

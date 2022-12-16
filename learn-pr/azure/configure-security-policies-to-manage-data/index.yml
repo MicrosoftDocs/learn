@@ -3,9 +3,9 @@ uid: learn.azure-security.configure-security-policies-to-manage-data
 metadata:
   title: Configure security policies to manage data
   description: Learn how to set up policies to classify, retain, and protect your cloud-based data.
-  ms.date: 09/30/2019
-  author: adrianstevens
-  ms.author: adsteven
+  ms.date: 04/12/2022
+  author: VanMSFT
+  ms.author: vanto
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure security policies to manage data
@@ -16,13 +16,16 @@ abstract: |
   - Configure your data retention requirements
   - Explore data ownership and sovereignty
 prerequisites: None
-iconUrl: /learn/achievements/configure-security-policies-to-manage-data.svg
+iconUrl: /training/achievements/configure-security-policies-to-manage-data.svg
 levels:
 - beginner
 roles:
 - security-engineer
 products:
 - azure
+subjects:
+- cloud-security
+- data-management
 units:
 - learn.azure-security.configure-security-policies-to-manage-data.introduction
 - learn.azure-security.configure-security-policies-to-manage-data.configure-data-classification

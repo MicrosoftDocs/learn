@@ -26,7 +26,7 @@ You can get these values from the connection string.
 
     The last line in the response is the connection string, which contains the endpoint for your namespace and the shared access key. It should resemble the following example:
 
-    ```csharp
+    ```output
     Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AbCdEfGhIjKlMnOpQrStUvWxYz==
     ```
 
@@ -60,6 +60,12 @@ You can get these values from the connection string.
     ```
 
    Paste the connection string between the quotation marks.
+
+1. If you used a name different from **salesmessages** for the queue name, update the value for `QueueName` property in the code.
+
+    ```csharp
+    const string QueueName = "salesmessages";
+    ```
 
 1. To complete the component that sends messages about sales, you must add an `await` operator to suspend evaluation of the async method until the asynchronous operation completes. Find the `SendSalesMessageAsync()` method. Within that method, locate the following line of code:
 
@@ -183,15 +189,13 @@ You can get these values from the connection string.
 
 1. Save the *privatemessagesender/Program.cs* file using either the **...** icon or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
 
-1. In the upper-right corner of the editor, select **...**,  and then select **Close Editor**.
-
 ## Send a message to the queue
 
-1. To run the component that sends a message about a sale, run the following command in Cloud Shell. The first line ensures that you are in the correct path.
+1. In the Cloud Shell (bottom window of the right pane) where you see commands, run the following command to send a message about a sale. The first line ensures that you are in the correct path.
 
     ```bash
     cd ~/mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
-    dotnet run -p ./privatemessagesender
+    dotnet run --project ./privatemessagesender
     ```
 
     > [!NOTE]
@@ -199,7 +203,7 @@ You can get these values from the connection string.
 
     As the program runs, messages are printed to the console indicating that the app is sending a message:
   
-    ```command
+    ```output
     Sending a message to the Sales Messages queue...
     Sending message: $10,000 order for bicycle parts from retailer Adventure Works.
     Message was sent successfully.
@@ -221,7 +225,7 @@ You can get these values from the connection string.
 
 1. Run the following command to open the editor again:
 
-    ```command
+    ```bash
     code .
     ```
 
@@ -415,23 +419,21 @@ You can get these values from the connection string.
 
 1. Save the file either through the **&#9776;** menu or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
 
-1. In the upper-right corner of the editor, select **...**,  and then select **Close Editor**.
-
 ## Receive a message from the queue
 
 1. To run the component that receives a message about a sale, run this command in Cloud Shell:
 
     ```bash
-    dotnet run -p privatemessagereceiver
+    dotnet run --project privatemessagereceiver
     ```
 
 1. Check the notifications in Cloud Shell. In the Azure portal, go to your Service Bus namespace and check your **Messages** chart:
 
-    ```command
+    ```output
     Received: $10,000 order for bicycle parts from retailer Adventure Works.
     ```
 
-1. When you see that the messages have been received in the Cloud Shell, press <kbd>Enter</kbd> to stop the app. 
+1. When you see that the messages have been received in the Cloud Shell, press <kbd>Enter</kbd> to stop the app.
 
 ### Check the message count
 

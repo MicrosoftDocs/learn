@@ -24,7 +24,7 @@ prerequisites: |
     - Monitoring
 summary: |
   In this learning path, you’ll learn how to deploy and configure Azure IaaS Virtual Machine workloads. After completing the learning path, you’ll know how to plan, deploy, and upgrade Windows Server Azure Virtual Machines.
-iconUrl: /learn/achievements/deploy-and-configure-windows-server-iaas-vm.svg
+iconUrl: /training/achievements/deploy-and-configure-windows-server-iaas-vm.svg
 levels:
 - intermediate
 roles:
@@ -39,6 +39,9 @@ products:
 - azure-portal
 - azure-storage
 - azure-virtual-machines
+subjects:
+- virtual-machine
+- it-management-monitoring
 modules:
 - learn.wwl.plan-deploy-windows-server-iaas-vms
 - learn.wwl.customize-windows-server-iaas-vm-images

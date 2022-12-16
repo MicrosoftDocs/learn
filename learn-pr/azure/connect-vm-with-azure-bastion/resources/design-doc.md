@@ -93,7 +93,7 @@ Identify the subtasks of *Connect to virtual machines through the Azure portal b
    ***How it works***
 
    Diagram that shows the high-level architecture. Reuse: diagram from 
-https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps. Cynthia's version has numbered steps that could be simplified.
+https://learn.microsoft.com/azure/bastion/bastion-overview. Include process steps. Cynthia's version has numbered steps that could be simplified.
 
    ***NSGs***
  
@@ -105,7 +105,7 @@ https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps
       - Allow TCP access from the internet on port 443.
       - Allow outbound TCP access from the Azure Cloud on port 443. This facilitates diagnostic logging."
 
-   Reference: https://docs.microsoft.com/azure/bastion/bastion-nsg
+   Reference: https://learn.microsoft.com/azure/bastion/bastion-nsg
 
    ***How to deploy Bastion host (high-level overview)***
 
@@ -113,8 +113,8 @@ https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps
    - Create in portal - two methods:
      - Create the BastionSubnet and deploy the Bastion Host as a part of the VNet creation experience (new). Include screenshots to show how this is done and the resources you end up with. ID suggests illustration that provides overview of process.
      - Or if you have existing VNet/VM, add subnet & then deploy bastion host from VM connection. (This is what we'll show in exercise.)
-   - Create by using Azure PowerShell: show sample commands from https://docs.microsoft.com/azure/bastion/bastion-create-host-powershell
-   - CLI: https://docs.microsoft.com/azure/bastion/create-host-cli
+   - Create by using Azure PowerShell: show sample commands from https://learn.microsoft.com/azure/bastion/bastion-create-host-powershell
+   - CLI: https://learn.microsoft.com/azure/bastion/create-host-cli
    -  What gets created when you deploy (Show this in next unit exercise?)
 
 1. **Exercise – Connect to a virtual machine using the Bastion Service**
@@ -147,9 +147,9 @@ https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps
 
 1. **Monitor and manage remote sessions**
 
-   Diagnostic logs - What, why, how. Reference: https://docs.microsoft.com/azure/bastion/diagnostic-logs
+   Diagnostic logs - What, why, how. Reference: https://learn.microsoft.com/azure/bastion/diagnostic-logs
 
-   Monitor sessions - what, why, & how. Reference: https://docs.microsoft.com/azure/bastion/session-monitoring
+   Monitor sessions - what, why, & how. Reference: https://learn.microsoft.com/azure/bastion/session-monitoring
 
    Include from [FAQ](/azure/bastion/bastion-faq):
    - Limit for how many connections can be monitored. 25 per RDP connection & 50 for SSH.
@@ -158,12 +158,12 @@ https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps
 
 1. **Exercise - Enable diagnostic logs and monitor remote sessions**
    
-   Enable diagnostics: https://docs.microsoft.com/azure/bastion/diagnostic-logs
+   Enable diagnostics: https://learn.microsoft.com/azure/bastion/diagnostic-logs
    1. Enable resource log.
    1. Sign in via Bastion to get something generated? Leave connection open?
    1. View diagnostic log.
    
-   Monitor sessions: https://docs.microsoft.com/azure/bastion/session-monitoring
+   Monitor sessions: https://learn.microsoft.com/azure/bastion/session-monitoring
    1. View sessions.
    1. Sign in via Bastion and leave connection open?
    1. Force disconnect session?
@@ -181,18 +181,18 @@ https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps
 
     How did you solve the problem in the initial scenario with the knowledge learned in the module? 
     
-    *Add your summary [(Summary guidance)](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit)*
+    *Add your summary [(Summary guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit)*
 
 ## Notes
 
 Sources:
 
-- https://docs.microsoft.com/azure/bastion/bastion-overview
-- https://docs.microsoft.com/en-us/azure/bastion/quickstart-host-portal
-- https://docs.microsoft.com/azure/bastion/diagnostic-logs
-- https://docs.microsoft.com/azure/bastion/session-monitoring
+- https://learn.microsoft.com/azure/bastion/bastion-overview
+- https://learn.microsoft.com/azure/bastion/quickstart-host-portal
+- https://learn.microsoft.com/azure/bastion/diagnostic-logs
+- https://learn.microsoft.com/azure/bastion/session-monitoring
 
 Scripts to possibly leverage:
 
-- https://docs.microsoft.com/learn/modules/troubleshoot-inbound-connectivity-azure-load-balancer/4-exercise-set-up-environment 
+- https://learn.microsoft.com/training/modules/troubleshoot-inbound-connectivity-azure-load-balancer/4-exercise-set-up-environment 
 - https://github.com/MicrosoftDocs/mslearn-troubleshoot-inbound-network-connectivity-azure-load-balancer/blob/master/src/scripts/setup.sh)

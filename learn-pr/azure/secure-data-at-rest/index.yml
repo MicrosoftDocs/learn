@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Basic understanding of SSL/TLS encryption
   - Basic knowledge of Azure PaaS services
-iconUrl: /learn/achievements/secure-data-at-rest.svg
+iconUrl: /training/achievements/secure-data-at-rest.svg
 badge:
   uid: learn.secure-data-at-rest.badge
 levels: 
@@ -31,6 +31,8 @@ products:
 - azure-cosmos-db
 - azure-storage
 - azure-key-vault
+subjects:
+- security
 units:
 - learn.secure-data-at-rest.1-introduction
 - learn.secure-data-at-rest.2-classify-data

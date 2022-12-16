@@ -1,11 +1,33 @@
-There are several high-level steps for configuring File Sync.
+Before you can start synchronizing files with Azure File Sync, there are several high-level steps that need to be completed.
 
-:::image type="content" source="../media/file-sync-steps-b6fa9fd9.png" alt-text="Flowchart showing the prerequisites that need to be configured before synchronizing files using Azure File Sync.":::
+:::image type="content" source="../media/file-sync-steps-b6fa9fd9.png" alt-text="Flowchart that shows the steps to complete before you start synchronizing files with Azure File Sync." border="false":::
 
+### Step 1: Deploy the Storage Sync Service
 
-1.  **Deploy the Storage Sync Service**. The Storage Sync Service can be deployed from the Azure portal. You will need to provide Name, Subscription, Resource Group, and Location.<br>
-2.  **Prepare Windows Server to use with Azure File Sync**. For each server that you intend to use with Azure File Sync, including server nodes in a Failover Cluster, you will need to configure the server. Preparation steps include temporarily disabling Internet Explorer Enhanced Security and ensuring you have latest PowerShell version.
-3.  **Install the Azure File Sync Agent**. The Azure File Sync agent is a downloadable package that enables Windows Server to be synced with an Azure file share. The Azure File Sync agent installation package should install relatively quickly. We recommend that you keep the default installation path and that you enable Microsoft Update to keep Azure File Sync up to date.
-4.  **Register Windows Server with Storage Sync Service**. When the Azure File Sync agent installation is finished, the Server Registration UI automatically opens. Registering Windows Server with a Storage Sync Service establishes a trust relationship between your server (or cluster) and the Storage Sync Service. Registration requires your Subscription ID, Resource Group, and Storage Sync Service (created in step 1). A server (or cluster) can be registered with only one Storage Sync Service at a time.
+You can deploy the Storage Sync Service from the Azure portal. You configure the following settings:
+- The deployment name for the Storage Sync Service
+- The Azure subscription ID to use for the deployment
+- A Resource Group for the deployment
+- The deployment location
 
+### Step 2: Prepare each Windows Server to use Azure File Sync
 
+After you deploy the Storage Sync Service, you configure each Windows Server or cloud virtual machine that you intend to use with Azure File Sync, including server nodes in a Failover Cluster. 
+
+### Step 3: Install the Azure File Sync agent
+
+When the Windows Server configuration is complete, you're ready to install the Azure File Sync agent. The agent is a downloadable package that enables Windows Server to be synced with an Azure Files share. The Azure File Sync agent installation package should install relatively quickly.
+
+> [!Note]
+> For the agent installation, Microsoft recommends using the default installation path. Also enable Microsoft Update to ensure your severs are running the latest version of Azure File Sync.
+
+### Step 4: Register each Windows Server with the Storage Sync Service
+
+After the Azure File Sync agent installation completes, the **Server Registration** window opens. 
+
+By registering the Windows Server with a Storage Sync Service, you establish a trust relationship between your server (or cluster) and the Storage Sync Service. For the registration, you need your Azure subscription ID and some of the deployment settings you configured in the first step:
+- The Storage Sync Service deployment name
+- The Resource Group for the deployment
+
+> [!Note]
+> A server (or cluster) can be registered with only one Storage Sync Service resource at a time.

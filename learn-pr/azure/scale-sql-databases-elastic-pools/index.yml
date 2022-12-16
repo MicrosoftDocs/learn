@@ -3,9 +3,10 @@ uid: learn.azure-scale-azure-sql-dbs-elastic-pools
 metadata:
   title: "Scale multiple Azure SQL Databases with SQL elastic pools"
   description: Learn how to create SQL elastic pools and how to use them to manage performance and cost for a collection of SQL databases.
-  ms.date: 5/03/2019
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 02/02/2022
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Scale multiple Azure SQL Databases with SQL elastic pools"
@@ -18,7 +19,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of the Azure Portal
   - Basic knowledge of Azure SQL Server
-iconUrl: /learn/achievements/azure-scale-azure-sql-databases-elastic-pools.svg
+iconUrl: /training/achievements/azure-scale-azure-sql-databases-elastic-pools.svg
 badge:
   uid: learn.azure-scale-azure-sql-dbs-elastic-pools.badge
 levels: 
@@ -30,6 +31,8 @@ products:
 - azure
 - azure-portal
 - azure-sql-database
+subjects:
+- database
 units:
 - learn.azure-scale-azure-sql-databases-elastic-pools.introduction
 - learn.azure-scale-azure-sql-databases-elastic-pools.create-elastic-pool

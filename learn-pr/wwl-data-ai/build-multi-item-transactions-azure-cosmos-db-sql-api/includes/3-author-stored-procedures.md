@@ -9,7 +9,7 @@ Within the function, the ``getContext()`` method retrieves a context object, whi
 
 - Access the HTTP response object
 
-- Access the corresponding Azure Cosmos DB SQL API container
+- Access the corresponding Azure Cosmos DB for NoSQL container
 
 Using the context object, you can invoke the ``getResponse()`` method to access the HTTP response object to perform actions such as returning a **HTTP OK** (200) and setting the response's body to a static string.
 
@@ -21,7 +21,7 @@ function greet() {
 }
 ```
 
-Again, use the context object, you can invoke the ``getCollection()`` method to access the container using the JavaScript query API.
+Again, using the context object, you can invoke the ``getCollection()`` method to access the container using the JavaScript query API.
 
 ```javascript
 function createProduct(item) {
@@ -66,4 +66,4 @@ function createProduct(item) {
 ```
 
 > [!TIP]
-> Alternatively, you can use the ``__`` (double underline) shortcut as an equivalent to ``getContext().getCollection()``.
+> Alternatively, you can use the ``__`` (double underscore) shortcut as an equivalent to ``getContext().getCollection()``.

@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/17/2021
+  ms.date: 07/13/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
@@ -27,14 +26,14 @@ quiz:
     - content: "Categories"
       isCorrect: false
       explanation: "That's incorrect. To generate a caption, include the Description visual feature in your analysis."
-  - content: "What is the effect of the smartCropping option when using Computer Vision to generate a thumbnail?"
+  - content: "What is the effect of the `smartCropping` option when using Computer Vision to generate a thumbnail?"
     choices:
     - content: "The aspect ratio of the original image is maintained."
       isCorrect: false
-      explanation: "That's incorrect. Using smartCropping ensures that the region of interest is identified and centered in the thumbnail."
+      explanation: "That's incorrect. Using `smartCropping` ensures that the region of interest is identified and centered in the thumbnail."
     - content: "The thumbnail is skewed to fit the specified proportions."
       isCorrect: false
-      explanation: "That's incorrect. Using smartCropping ensures that the region of interest is identified and centered in the thumbnail."
+      explanation: "That's incorrect. Using `smartCropping` ensures that the region of interest is identified and centered in the thumbnail."
     - content: "The region of interest is centered in the thumbnail."
       isCorrect: true
-      explanation: "That's correct. Using smartCropping ensures that the region of interest is identified and centered in the thumbnail."
+      explanation: "That's correct. Using `smartCropping` ensures that the region of interest is identified and centered in the thumbnail."

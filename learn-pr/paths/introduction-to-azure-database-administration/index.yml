@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-to-azure-database-administration
 metadata:
   title: Introduction to Azure database administration
   description: Introduction to Azure database administration
-  ms.date: 01/17/2022
+  ms.date: 04/13/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ prerequisites: |
   * Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
 summary: |
   Microsoft Azure provides a set of seamless capabilities for SQL databases. Explore the different database offerings, and services available to help you get started.
-iconUrl: /learn/achievements/introduction-to-azure-database-administration.svg
+iconUrl: /training/achievements/introduction-to-azure-database-administration.svg
 levels:
 - intermediate
 roles:
@@ -25,6 +25,8 @@ products:
 - azure-sql-database
 - azure-sql-managed-instance
 - azure-sql-virtual-machines
+subjects:
+- database
 modules:
 - learn.wwl.prepare-to-maintain-sql-databases-azure
 trophy:

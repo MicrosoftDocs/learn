@@ -23,14 +23,14 @@ abstract: |
   > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
 prerequisites: |
   - [Visual Studio Code with Python Extension](https://aka.ms/LearnOnVSCode?azure-portal=true)
-iconUrl: /learn/achievements/python-partnership/personality-quiz-revised.svg
+iconUrl: /training/achievements/python-partnership/personality-quiz-revised.svg
 levels:
 - beginner
 roles:
 - student
 - developer
 products:
-- vs-code
+- azure
 units:
 - learn.python-partnership.personality-quiz.introduction
 - learn.python-partnership.personality-quiz.set-up-visual-studio-code

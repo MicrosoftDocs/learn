@@ -2,7 +2,7 @@ Your Power Platform integration with SAP requires multiple components and servic
 
 The figure below shows the conceptual layers, including the user experience (1); process automation (2); data and services (3); and interaction with the On-premises data gateway (4).
 
-![Diagram shows the services layers, including the user experience, process automation, and data and services and interaction with the On-premises data gateway.]( ../media/diagram-shows-services-layers.png)
+![Diagram shows the services layers, including the user experience, process automation, and data and services and interaction with the On-premises data gateway.](../media/diagram-shows-services-layers.png)
 
 ## User experience
 
@@ -22,7 +22,7 @@ Additional Azure services include IaaS and PaaS capabilities, AI, and machine le
 
 There are multiple ways to achieve connectivity and integration, but the most common are connectors, drivers, and gateways. Power Platform and SAP integration typically requires a gateway. Microsoft developed the **On-premises data gateway** (also known as the **Power BI gateway**), because organizations wanted to integrate their on-premises systems and data sources with Azure and Office 365, but without exposing data and application connections directly onto the internet.
 
-You can use the gateway to access your SAP system from the Power Platform, with the isolation you need to help protect your SAP environment. You can [install and run the gateway on-premises](https://docs.microsoft.com/data-integration/gateway/) or in an Azure virtual machine. If your SAP workload is hosted in Azure, the on-premises data gateway must run in an Azure Virtual Machine hosted in the same virtual network as the SAP instance in Azure.
+You can use the gateway to access your SAP system from the Power Platform, with the isolation you need to help protect your SAP environment. You can [install and run the gateway on-premises](/data-integration/gateway/) or in an Azure virtual machine. If your SAP workload is hosted in Azure, the on-premises data gateway must run in an Azure Virtual Machine hosted in the same virtual network as the SAP instance in Azure.
 
 The On-premises data gateway provides data transfer between an SAP data source and Azure and Office 365 cloud services. These services include Power BI, Power Apps, Power Automate, Azure Analysis Services, and Azure Logic Apps. By using the gateway, organizations can securely access data sources and databases, such as SAP HANA, and include them in Power Platform solutions.
 
@@ -36,7 +36,7 @@ The gateway has two modes:
 
 You can access SAP data sources directly from the Power BI Desktop application. However, to publish your dashboards or reports to the Power BI online service, you need the On-premises data gateway. The gateway handles authentication and connection into SAP, allowing you to integrate SAP with Power Platform cloud services.
 
-![The On-premises data gateway sits between SAP and Power Automate products to support the integration.]( ../media/on-premises-data-gateway-sits.png)
+![The On-premises data gateway sits between SAP and Power Automate products to support the integration.](../media/on-premises-data-gateway-sits.png)
 
 Power Automate and Power Apps also use the data gateway for data access and application integration.
 

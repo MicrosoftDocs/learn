@@ -10,12 +10,11 @@ A security engineer uses network security features to restrict, monitor, and man
 
 ## Skills measured
 
-Securing the Azure platform your cloud solutions run on is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
+Securing the Azure platform your cloud solutions run on is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/certifications/exams/az-500).
 
 Implement platform protection (15-20%)
 
  -  Implement advanced network security
-    
      -  Secure the connectivity of virtual networks (VPN authentication, Express Route encryption)
      -  Configure Network Security Groups (NSGs) and Application Security Groups (ASGs)
      -  Configure Azure Front Door service as an Application Gateway

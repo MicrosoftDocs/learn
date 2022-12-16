@@ -11,7 +11,7 @@ To connect your Synapse Studio workspace to your new Power BI service workspace,
 1. Select **Visualize** on the Azure Synapse Analytics home page.
 1. Complete the form and select **Create**.
 
-![Screenshot from Synapse Studio workspace showing the Visualize button that connects to your new Power BI service workspace.](../media/visualize-button.png)
+![Synapse Studio workspace screen showing the Visualize button that connects to your new Power BI service workspace.](../media/visualize-button.png)
 
 After you connect the two workspaces, you can interact with datasets and reports in the Power BI online workspace from Azure Synapse Analytics. You’re ready to get your data and reports into the Power BI workspace so they can be used by Synapse Analytics to complete the scenario.
 

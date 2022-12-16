@@ -5,8 +5,8 @@ metadata:
   title: Boolean arrays as masks
   description: Learn how to use Boolean arrays as masks.
   ms.date: 05/19/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen

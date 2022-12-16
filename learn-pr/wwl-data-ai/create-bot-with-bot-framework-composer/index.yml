@@ -18,7 +18,7 @@ abstract: |
   - Create a bot with the Bot Framework Composer
 prerequisites: |
   Before you start this module, you should be familiar with bot concepts.
-iconUrl: /learn/achievements/create-a-bot-with-the-bot-framework-composer.svg
+iconUrl: /training/achievements/create-a-bot-with-the-bot-framework-composer.svg
 levels:
 - intermediate
 roles:
@@ -28,8 +28,11 @@ roles:
 - student
 products:
 - azure-bot-service
+subjects:
+- development-tools
 units:
 - learn.wwl.create-bot-with-bot-framework-composer.introduction
+- learn.wwl.create-bot-with-bot-framework-composer.bot-authoring-methods
 - learn.wwl.create-bot-with-bot-framework-composer.bot-composer
 - learn.wwl.create-bot-with-bot-framework-composer.understand-dialogs
 - learn.wwl.create-bot-with-bot-framework-composer.adaptive-clow

@@ -21,8 +21,8 @@ Now that you have reviewed this module, you should be able to:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-* [Introduction to Kubernetes on Azure - Microsoft Learn](/learn/paths/intro-to-kubernetes-on-azure/)
-* [Candidate apps for cloud native - Microsoft Docs](/dotnet/architecture/cloud-native/candidate-apps)
+* [Introduction to Kubernetes on Azure](/training/paths/intro-to-kubernetes-on-azure/)
+* [Candidate apps for cloud native](/dotnet/architecture/cloud-native/candidate-apps)
 * [Modernize existing .NET applications with Azure cloud and Windows Containers](https://dotnet.microsoft.com/download/e-book/modernizing-existing-net-apps/pdf)
 * [Kubernetes Learning Path](https://azure.microsoft.com/resources/kubernetes-learning-path/)
 * [Azure DevOps Labs - Deploying a multi-container application to Azure Kubernetes Services](https://azuredevopslabs.com/labs/vstsextend/kubernetes/)

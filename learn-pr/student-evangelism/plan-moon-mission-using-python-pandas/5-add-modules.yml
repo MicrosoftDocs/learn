@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Add rocket weight data to the mission analysis
   description: Include the weight of the various modules within the Apollo rockets in the DataFrames for further insight.
   ms.date: 03/10/2021
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

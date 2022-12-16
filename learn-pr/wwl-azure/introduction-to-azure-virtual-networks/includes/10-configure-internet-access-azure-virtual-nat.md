@@ -46,7 +46,7 @@ NAT and compatible Standard SKU features are aware of the direction the flow was
  -  NAT is compatible with standard SKU public IP, public IP prefix, and load balancer resources. Basic resources (for example basic load balancer) and any products derived from them aren't compatible with NAT. Basic resources must be placed on a subnet not configured with NAT.
  -  IPv4 address family is supported. NAT doesn't interact with IPv6 address family. NAT can't be deployed on a subnet with an IPv6 prefix.
  -  NAT can't span multiple virtual networks.
- -  IP fragmentation is not supported.
+ -  IP fragmentation isn't supported.
 
 ## Check your knowledge
 

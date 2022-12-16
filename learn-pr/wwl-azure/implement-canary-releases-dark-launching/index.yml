@@ -18,7 +18,7 @@ abstract: |
   *   Understand dark launching
 prerequisites: |
   None
-iconUrl: /learn/achievements/6-implement-canary-releases-and-dark-launching.svg
+iconUrl: /training/achievements/6-implement-canary-releases-and-dark-launching.svg
 levels:
 - advanced
 roles:
@@ -39,6 +39,8 @@ products:
 - azure-pipelines
 - azure-repos
 - azure-test-plans
+subjects:
+- devops
 units:
 - learn.wwl.implement-canary-releases-dark-launching.introduction
 - learn.wwl.implement-canary-releases-dark-launching.explore-canary-releases

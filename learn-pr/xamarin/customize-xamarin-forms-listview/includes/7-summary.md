@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Xamarin.Forms `ListView` controls give us more than just the ability to display collections of data in predefined layouts. We can customize the structure and visual design of most elements of the `ListView`.
 
 In this module, we modified an application by using a built-in cell template. We changed the app to use custom templates and to choose the most appropriate template based on the data being represented. We then grouped our rows together to make browsing easier for users.

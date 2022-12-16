@@ -20,7 +20,7 @@ prerequisites: |
   - Introduction to Python
   - Beginners Data Science for Python Developers
 
-iconUrl: /learn/achievements/reactors/join-clean-data-deep-dive.svg
+iconUrl: /training/achievements/reactors/join-clean-data-deep-dive.svg
 hidden: true
 levels:
 - beginner
@@ -30,7 +30,8 @@ roles:
 - data-scientist
 products:
 - azure
-- vs-code
+subjects:
+- data-analytics
 units:
 - learn.reactors.join-clean-data-deep-dive.1-introduction
 - learn.reactors.join-clean-data-deep-dive.2-set-up
@@ -40,4 +41,4 @@ units:
 - learn.reactors.join-clean-data-deep-dive.6-join-dataframes
 - learn.reactors.join-clean-data-deep-dive.7-prepare-more-data
 badge:
-  uid: learn.reactors.join-clean-data-deep-dive.badge 
+  uid: learn.reactors.join-clean-data-deep-dive.badge

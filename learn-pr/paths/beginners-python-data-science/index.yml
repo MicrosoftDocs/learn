@@ -5,8 +5,8 @@ metadata:
   description: Beginners data science for Python developers
   brand: azure
   ms.date: 05/19/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
 title: Beginners data science for Python developers
@@ -24,7 +24,7 @@ summary: |
   
 prerequisites: |
     - Introduction to Python for data science
-iconUrl: /learn/achievements/reactors/beginners-python-data-science.svg
+iconUrl: /training/achievements/reactors/beginners-python-data-science.svg
 hidden: true
 levels:
 - beginner
@@ -34,7 +34,8 @@ roles:
 - data-scientist
 products:
 - azure
-- vs-code
+subjects:
+- data-management
 modules:
 # LP 2 module 1 will link to LP 1 module 4 after it goes live
 # learn.reactors.data-manipulate-clean

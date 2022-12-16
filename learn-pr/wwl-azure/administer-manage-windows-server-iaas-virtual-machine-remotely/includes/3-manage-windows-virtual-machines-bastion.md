@@ -53,7 +53,7 @@ The following table describes the features that are available after you deploy A
 To deploy an Azure Bastion host by using the Azure portal, start by creating a subnet in the appropriate VNet. This subnet must:
 
 - Be named AzureBastionSubnet
-- Have a prefix of at least /27
+- Have a prefix of at least /26
 - Be in the VNet you intend to protect with Azure Bastion
 
 1. To create the required subnet, in the Azure portal, locate and open the VNet in which you intend to deploy Azure Bastion. One way to do this is to review the properties of one of the VMs that you want to protect:

@@ -7,6 +7,7 @@ metadata:
   ms.date: 07/20/2021
   author: kendrahavens
   ms.author: chnoring
+  manager: jmartens
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
@@ -21,7 +22,7 @@ prerequisites: |
   - Ability to write C# at the beginner level, with C# concepts that include writing methods and creating projects
   - Basic familiarity with debugging an app
   - Installation of Visual Studio
-iconUrl: /learn/achievements/visual-studio/visual-studio-test-tools.svg
+iconUrl: /training/achievements/visual-studio/visual-studio-test-tools.svg
 levels: 
   - beginner
 roles: 
@@ -30,6 +31,8 @@ roles:
 products:
   - vs-ide
   - dotnet
+subjects:
+- development-tools
 units:
   - learn.visual-studio.visual-studio-test-tools.introduction
   - learn.visual-studio.visual-studio-test-tools.create-test

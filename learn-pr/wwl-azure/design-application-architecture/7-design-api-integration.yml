@@ -2,15 +2,15 @@
 uid: learn.wwl.design-application-architecture.design-api-integration
 title: Design API integration
 metadata:
-  title: Demo-Introduction
+  title: Design API integration
   description: "Design API integration"
-  ms.date: 03/29/2022
+  ms.date: 11/02/2022
   author: benjiang
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/7-design-api-integration.md)]

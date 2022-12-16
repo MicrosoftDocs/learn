@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Beginner-level Azure Functions development experience
   - Familiarity with basic command line usage
-iconUrl: /learn/achievements/develop-test-deploy-azure-functions-core-tools.svg
+iconUrl: /training/achievements/develop-test-deploy-azure-functions-core-tools.svg
 levels: 
 - beginner
 roles: 
@@ -26,6 +26,8 @@ roles:
 products: 
 - azure
 - azure-functions
+subjects:
+- development-tools
 units:
 - learn-pr.develop-test-deploy-azure-functions-core-tools.1-introduction
 - learn-pr.develop-test-deploy-azure-functions-core-tools.2-create-run-functions-locally-core-tools

@@ -18,17 +18,17 @@ summary: |
 
   :::row:::
   :::column:::
-    <img src="/learn/achievements/azure-devops/evolve-your-devops-practices.svg" width="101" height="84" alt="The trophy for the Get started with Azure DevOps learning path." role="presentation"></img>
+    <img src="/training/achievements/azure-devops/evolve-your-devops-practices.svg" width="101" height="84" alt="The trophy for the Get started with Azure DevOps learning path." role="presentation"></img>
 
     Part 1: Get started with Azure DevOps
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/azure-devops/build-applications-with-azure-devops.svg" width="101" height="84" alt="The trophy for the Build applications with Azure DevOps learning path." role="presentation"></img>
+    <img src="/training/achievements/azure-devops/build-applications-with-azure-devops.svg" width="101" height="84" alt="The trophy for the Build applications with Azure DevOps learning path." role="presentation"></img>
 
     [Part 2: Build applications with Azure DevOps](../build-applications-with-azure-devops/index.yml)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/azure-devops/deploy-applications-with-azure-devops.svg" width="91" height="84" alt="The trophy for the Deploy applications with Azure DevOps learning path." role="presentation"></img>
+    <img src="/training/achievements/azure-devops/deploy-applications-with-azure-devops.svg" width="91" height="84" alt="The trophy for the Deploy applications with Azure DevOps learning path." role="presentation"></img>
 
     [Part 3: Deploy applications with Azure DevOps](../deploy-applications-with-azure-devops/index.yml)
   :::column-end:::
@@ -40,7 +40,7 @@ summary: |
     - Learn how to plan and track work items using Azure Boards
     - Optimize sprint workloads across multiple Agile teams
 prerequisites: None
-iconUrl: /learn/achievements/azure-devops/evolve-your-devops-practices.svg
+iconUrl: /training/achievements/azure-devops/evolve-your-devops-practices.svg
 levels:
 - intermediate
 roles:
@@ -49,6 +49,8 @@ roles:
 - developer
 products:
 - azure-devops
+subjects:
+- devops
 modules:
 - learn.azdo.assess-your-development-process
 - learn.get-started-with-devops

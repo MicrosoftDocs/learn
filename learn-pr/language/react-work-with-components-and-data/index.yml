@@ -17,7 +17,7 @@ abstract: |
   - Add logic to a JSX file.
   - Use map to work with lists of items.
 prerequisites: Knowledge of HTML/CSS, JavaScript, Git, npm, and some experience with React.
-iconUrl: /learn/achievements/react/react-components-data.svg
+iconUrl: /training/achievements/react/react-components-data.svg
 ratingEnabled: true
 levels:
 - intermediate
@@ -26,7 +26,8 @@ roles:
 - developer
 products:
 - azure-app-service-static
-- vs-code
+subjects:
+- data-analytics
 units:
 - learn.language.react-work-with-components-and-data.1-introduction
 - learn.language.react-work-with-components-and-data.2-exercise-props

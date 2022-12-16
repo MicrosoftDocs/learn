@@ -19,15 +19,17 @@ abstract:  |
 prerequisites: | 
   - Have your Rust development environment already set up.
   - Know how to create, edit, and run Rust code by using Cargo or by working in the Rust playground.
-iconUrl: /learn/achievements/rust-understand-common-concepts.svg 
+iconUrl: /training/achievements/rust-understand-common-concepts.svg 
 levels:
 - beginner
 roles:
 - student
 - developer
 products:
-- vs-code
 - azure
+subjects:
+- development-tools
+- data-management
 units:
 - learn.language.rust-loop-expressions.0-introduction
 - learn.language.rust-loop-expressions.1-hash-maps

@@ -3,7 +3,7 @@ uid: learn.azure.azure-stack-hci-plan-deploy.2-workloads
 metadata:
   title: What are the use cases of Azure Stack HCI?
   description: An overview of the use cases of Azure Stack HCI.
-  ms.date: 12/09/2020
+  ms.date: 03/24/2022
   author: JasonGerend
   ms.author: jgerend
   ms.topic: interactive-tutorial
@@ -17,11 +17,11 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Which of the following does not represent an Azure Stack HCI technical use case?"
+  - content: "Which of the following doesn't represent an Azure Stack HCI technical use case?"
     choices:
     - content: "Federation services."
       isCorrect: true
-      explanation: "That's correct. This is not one of the six technical use cases of Azure Stack HCI."
+      explanation: "That's correct. This isn't one of the six technical use cases of Azure Stack HCI."
     - content: "Branch office and Edge."
       isCorrect: false
       explanation: "That's incorrect. This is one of the six technical use cases of Azure Stack HCI."
@@ -33,10 +33,10 @@ quiz:
     choices:
     - content: "Trusted enterprise virtualization."
       isCorrect: false
-      explanation: "That's incorrect. Trusted enterprise virtualization does not leverage stretched clustering."
+      explanation: "That's incorrect. Trusted enterprise virtualization doesn't leverage stretched clustering."
     - content: "Software Defined Networking."
       isCorrect: false
-      explanation: "That's incorrect. Software Defined Networking is not supported with stretched clustering."
+      explanation: "That's incorrect. Software Defined Networking isn't supported with stretched clustering."
     - content: "Disaster recovery."
       isCorrect: true
       explanation: "That's correct. Azure Stack HCI provides built-in support for disaster recovery of virtualized workloads through stretched clustering."

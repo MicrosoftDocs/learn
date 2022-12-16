@@ -22,11 +22,11 @@ public static void Run(IReadOnlyList<Document> changes)
 An input binding for a function can include either a single item or multiple items. Input bindings also support the ability to bind to a C# type.
 
 > [!NOTE]
-> The remaining examples for input/output bindings will assume that the function is triggered using a HTTP request.
+> The remaining examples for input/output bindings will assume that the function is triggered using an HTTP request.
 
 ### Point read input binding
 
-For a point read, the input binding’s parameter should be set to a simple type. In this first example, the binding is named **item** and is set to an object of type **Document**. The Document class is a special class that can represent an item in Azure Cosmos DB SQL API if you don't want to define your own type.
+For a point read, the input binding’s parameter should be set to a simple type. In this first example, the binding is named **item** and is set to an object of type **Document**. The Document class is a special class that can represent an item in Azure Cosmos DB for NoSQL if you don't want to define your own type.
 
 ```csharp
 public static void Run(HttpRequest request, Document item)
@@ -35,7 +35,7 @@ public static void Run(HttpRequest request, Document item)
 }
 ```
 
-As an alternative, you can define a type in C# to represent the data in your Azure Cosmos DB SQL API container.
+As an alternative, you can define a type in C# to represent the data in your Azure Cosmos DB for NoSQL container.
 
 ```csharp
 public class Product
@@ -85,7 +85,7 @@ Whether an output binding will update one or multiple items is made by setting t
 
 First, to write only a single item to the container, the output binding’s corresponding parameter should be configured as an **out** parameter and can be any C# type.
 
-In this example, the output binding is named **output**, and the out parameter is of type **Product**. This example also illustrates
+In this example, the output binding is named **output**, and the out parameter is of type **Product**.
 
 ```csharp
 public static void Run(HttpRequest request, out Product output)

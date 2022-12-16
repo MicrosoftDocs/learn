@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/12/2022
+  ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -14,14 +14,14 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "Which Insight report will help you identify that your requests are getting **request rate to large** exceptions and that this condition is causing a problem to the databases or containers?"
+  - content: "Which Insight report will help you identify that your requests are getting **request rate too large** exceptions and that this condition is causing a problem to the databases or containers?"
     choices:
     - content: "Request->Total Requests by Operation Type"
       isCorrect: false
       explanation: "That's incorrect. This report will return the number of CRUD type operations by type, but by itself would be useless to indicate a 429 status."
     - content: "Request->Total Requests by Status Code"
       isCorrect: true
-      explanation: "That's correct. This report will allow us to compare the number of successful requests (200) against the number of rate-limiting ones (429).  If relatively you're finding 1-5% of the request hit a 429 status, and high number of successful requests that might be normal for your application, but if we discover much then 5% of the requests are hitting 429 conditions, there might be a problem."
+      explanation: "That's correct. This report will allow us to compare the number of successful requests (200) against the number of rate-limiting ones (429).  If relatively you're finding 1-5% of the request hit a 429 status, and high number of successful requests that might be normal for your application, but if we discover more than 5% of the requests are hitting 429 conditions, there might be a problem."
     - content: "Throughput->Normalized RU Consumption By"
       isCorrect: false
       explanation: "That's incorrect. The Normalized RU Consumption metric is used to see how well saturated the partition key ranges are with respect to the traffic. While this issue could be a contributing factor for 429 conditions, the report by itself wouldn't be good enough to conclude that."

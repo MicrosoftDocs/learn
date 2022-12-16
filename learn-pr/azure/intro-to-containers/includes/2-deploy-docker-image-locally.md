@@ -188,7 +188,7 @@ You can remove an image from the local computer with the `docker image rm` comma
 docker image rm mcr.microsoft.com/dotnet/core/samples:aspnetapp
 ```
 
-Containers running the image must be terminated before the image can be removed. If the image is still in use by a container, you'll get an error message like the one that follows. In this example, the error occurs because the *youthful_hesienburg* container is still using the image.
+Containers running the image must be terminated before the image can be removed. If the image is still in use by a container, you'll get an error message like the one that follows. In this example, the error occurs because the *youthful_heisenberg* container is still using the image.
 
 ```console
 Error response from daemon: conflict: unable to delete 575d85b4a69b (cannot be forced) - image is being used by running container c13165988cfe

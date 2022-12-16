@@ -3,7 +3,7 @@ uid: learn.language.rust-generic-types-traits
 metadata:
   title: Implement generic types and traits
   description: "Understand what generic types and traits are and how to use them in Rust."
-  ms.date: 05/16/2021
+  ms.date: 12/06/2022
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ abstract:  |
   - How to implement an *Iterator* trait to iterate through collections.
 prerequisites: | 
   - A solid understanding of Rust's types, ownerships, and moves. If you have any questions about those subjects, review the module *Understand how Rust manages memory*.
-iconUrl: /learn/achievements/rust-generic-types-traits.svg 
+iconUrl: /training/achievements/rust-generic-types-traits.svg 
 levels:
 - beginner
 roles:
@@ -29,6 +29,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- development-tools
 units:
 - learn.language.rust-generic-types-traits.0-introduction
 - learn.language.rust-generic-types-traits.1-what-are-generic-data-types

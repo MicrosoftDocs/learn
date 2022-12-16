@@ -23,7 +23,7 @@ prerequisites: |
   - Window Server software-defined storage
   - Windows Server software-defined networking
   - IoT technologies
-iconUrl: /learn/achievements/intro-to-azure-stack.svg
+iconUrl: /training/achievements/intro-to-azure-stack.svg
 levels:
 - beginner
 roles:
@@ -34,6 +34,9 @@ products:
  - azure-stack
  - azure-stack-edge
  - azure-stack-hub
+subjects:
+- cloud-computing
+- architecture
 units:
 - learn.azure.intro-to-azure-stack.1-introduction
 - learn.azure.intro-to-azure-stack.2-azure-stack

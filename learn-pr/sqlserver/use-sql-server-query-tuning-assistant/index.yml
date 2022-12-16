@@ -4,8 +4,9 @@ metadata:
   title: Use the SQL Server Query Tuning Assistant 
   description: Use the SQL Server Query Tuning Assistant
   ms.date: 01/31/2019
-  author: markohot
-  ms.author: markohot
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 title: Use the SQL Server Query Tuning Assistant
@@ -20,13 +21,15 @@ prerequisites: |
   - Experience of query tuning and performance
   - Knowledge of database properties and options
   - Understanding of query plans
-iconUrl: /learn/achievements/sqlserver/using-the-sql-server-query-tuning-assistant.svg
+iconUrl: /training/achievements/sqlserver/using-the-sql-server-query-tuning-assistant.svg
 levels:
 - beginner
 roles:
 - administrator
 products: 
 - sql-server
+subjects:
+- database
 units:
 - learn-sqlserver.use-sql-server-query-tuning-assistant.1-introduction
 - learn-sqlserver.use-sql-server-query-tuning-assistant.2-decide-qta-right

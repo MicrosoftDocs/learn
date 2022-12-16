@@ -20,13 +20,15 @@ prerequisites: |
   - Basic mathematical concepts
   - Understanding of classical machine learning techniques.
   - Programming with Python
-iconUrl: /learn/achievements/train-and-evaluate-deep-learning-models.svg
+iconUrl: /training/achievements/train-and-evaluate-deep-learning-models.svg
 levels:
 - advanced
 roles:
 - data-scientist
 products:
-- vs-code
+- azure
+subjects:
+- machine-learning
 units:
 - learn.wwl.train-evaluate-deep-learn-models.introduction
 - learn.wwl.train-evaluate-deep-learn-models.deep-neural-network-concepts

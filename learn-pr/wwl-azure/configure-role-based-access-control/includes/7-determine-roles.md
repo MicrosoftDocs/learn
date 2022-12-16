@@ -1,12 +1,10 @@
-Azure includes several built-in roles that you can use. There are four fundamental built-in roles. The first three apply to all resource types.
+Azure RBAC provides over 100 pre-defined role definitions. Roles can grant access to data within an object. If a user has _read data_ access to a storage account, then they can read the blobs or messages in the storage account.
 
- -  **Owner**. Has full access to all resources including the right to delegate access to others. The Service Administrator and Co-Administrators are assigned the Owner role at the subscription scope.
- -  **Contributor**. Can create and manage all types of Azure resources but can’t grant access to others.
- -  **Reader**. Can view existing Azure resources.
- -  **User Access Administrator**. Lets you manage user access to Azure resources, rather than to managing resources.
+The following table describes four built-in Azure RBAC role definitions that are considered fundamental.
 
-## Other things to know
-
- -  There are other built-in roles. For example, the **Virtual Machine Contributor** role allows a user to create and manage virtual machines.
- -  When the built-in roles don't meet the specific needs of your organization, you can create your own custom roles.
- -  Roles can grant access to data within an object. For example, if a user has read data access to a storage account, then they can read the blobs or messages in the storage account.
+| Fundamental&nbsp;role | Description |
+| --- | --- |
+| _Owner_ | The _Owner_ role has full access to all resources, including the right to delegate access to others. The _Service Administrator_ and _Co-Administrators_ roles are assigned the _Owner_ role at the subscription scope. |
+| _Contributor_ | The _Contributor_ role can create and manage all types of Azure resources. This role can't grant access to others. | 
+| _Reader_ | The _Reader_ role can view existing Azure resources. | 
+| _User Access Administrator_ | The _User Access Administrator_ role can manage user access to Azure resources. |

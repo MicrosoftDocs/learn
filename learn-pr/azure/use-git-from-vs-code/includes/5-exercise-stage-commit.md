@@ -6,9 +6,9 @@ Having made a change to the source code in the preceding exercise, you now have 
 
 ### Step 1 - Open the Source Control view to view unstaged changes
 
-In Visual Studio Code, select the Source Control icon in the left column.  The Source Control view shows both staged and unstaged changes.  Your goal is to create a commit, which you can also do from this view.  But first you must decide which changes should be added to your commit.
+In Visual Studio Code, select the Source Control icon in the left column. The Source Control view shows both staged and unstaged changes. Your goal is to create a commit, which you can also do from this view.  But first you must decide which changes should be added to your commit.
 
-:::image type="content" source="../media/5-exercise-stage-commit-01.png" alt-text="Screenshot of the Visual Studio Code Source Control view with the file containing changes listed in the Changes section.":::
+:::image type="content" source="../media/5-visual-studio-code-source-control.png" alt-text="Screenshot of the Visual Studio Code Source Control view with the file containing changes shown in the working tree." lightbox="../media/5-visual-studio-code-source-control.png":::
 
 You can see that your *index.js* file is listed under **Changes**.  To the right of the file name are four icons:
 
@@ -23,7 +23,7 @@ Select the **plus sign** (**+**) to move the file to a new section titled **Stag
 
 ### Step 3 - Unstage the changed file, and stage it again
 
-To unstage the changed file, under **Staged Changes**, select the **minus sign** (**-**) next to the *index.js* file.  This action moves the file back to the unstaged **Changes** section. You might find this useful if you mistakenly stage a change that was intended for a different commit.
+To unstage the changed file, under **Staged Changes**, select the **minus sign** (**-**) next to the *index.js* file. This action moves the file back to the unstaged **Changes** section. You might find this action useful if you mistakenly stage a change that was intended for a different commit.
 
 To restage the change, repeat Step 2.
 
@@ -31,20 +31,16 @@ To restage the change, repeat Step 2.
 
 The Source Control pane displays several icons at the upper right. To begin committing your changes, select the **checkmark** icon.
 
-You want to add a commit message to your commit.  In the text box below the **checkmark** icon, enter the following message:
-
-```
-updated response object
-```
+You want to add a commit message to your commit. In the text box above the **Commit** button, enter **updated response object**.
 
 > [!NOTE]
 > You'll receive a warning if the subject line contains more than 50 characters, the commonly accepted limit.
 
-To complete the commit, select <kbd>Enter</kbd> or select the checkmark icon.
+To complete the commit, select <kbd>Enter</kbd> or select the **Commit** button.
 
 ### Step 5 - Push the changes to your repository
 
-In the preceding unit, we talked about the **Synchronize Changes** (two clockwise arrows) icon in the Status Bar. As shown in the following image, to the right of the icon is a down arrow with a zero (0) next to it, indicating that there are no commits to *pull*.  Next to that is an up arrow with a one (1) next to it, indicating that there is one commit to *push* to the repository.
+In the preceding unit, we talked about the **Synchronize Changes** (two clockwise arrows) icon in the Status Bar. As shown in the following image, to the right of the icon is a down arrow with a zero (0) next to it, indicating that there are no commits to *pull*.  Next to that is an up arrow with a one (1) next to it, indicating that there's one commit to *push* to the repository.
 
 ![Screenshot of the Status Bar, with an icon indicating the number of commits to be pushed to the repository.](../media/5-exercise-stage-commit-02.png)
 
@@ -70,7 +66,7 @@ Selecting this link displays all commits in this branch, and the commit you crea
 
 ## Next steps
 
-When you work on a real open-source project, you might want to create a pull request (PR) to add the commits in your fork to the project source code that's stored in the upstream repository.  For more information, see [About pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests?azure-portal=true).
+When you work on a real open-source project, you might want to create a pull request (PR) to add the commits in your fork to the project source code that's stored in the upstream repository.  For more information, see [About pull requests](https://docs.github.com/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
 ## Recap
 

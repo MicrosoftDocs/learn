@@ -1,4 +1,4 @@
-Let's look at the application you'll create in this module. The application has many components and is designed to implement a variety of features. Here’s a summary of its capabilities: 
+Let's look at the application you'll create in this module. The application has many components and is designed to implement various features. Here’s a summary of its capabilities: 
 
 - The application can request a text message alert for a location if a temperature outside a specific range is forecasted.
 - The application can request a text message that reports a location's forecasted low and high temperatures.
@@ -8,7 +8,7 @@ The following image demonstrates how the application works:
 
 :::image type="content" source="../media/twilio-text-function.png" alt-text="Image that demonstrates how the application works." border="false":::
 
-These are the resources we'll use to create the application:
+These resources are what we'll use to create the application:
 
 - An Azure Maps account
 - An Azure Storage account
@@ -20,9 +20,14 @@ We'll do the work in a Microsoft-hosted instance of Azure CLI (a *sandbox*) that
 
 When the application is deployed, it can do these things:
 
+- Request a text message
+- Convert a street address to map coordinates
+- Retrieve a daily weather forecast
+- Check the forecast every 12 hours
+
 #### Request a text message
 
-Some cell phone users might have access to only a basic phone. To support the most users around the world, the application interface uses SMS text messaging. 
+Some cell phone users might have access to only a basic phone. To support the most users around the world, the application interface uses SMS text messaging.
 
 Twilio is a third-party service that can create programmable phone numbers for sending and receiving text messages. Every time a text message is sent to your application's phone number, custom code in Azure is triggered, with the help of the Azure Functions service. The code tracks all the locations and temperature ranges a farmer might want to know about. The code keeps the information in a table in Azure Storage.
 
@@ -44,7 +49,7 @@ Azure Maps has an API called [Weather - Get Daily Forecast](/rest/api/maps/weath
 
 #### Check the forecast every 12 hours
 
-Azure Functions is an event-based service that runs code when it's triggered. A function in Azure Functions can be triggered by various actions, including web requests, timers, and items that are added to queues or databases. Your application can use a time trigger to check the weather every 12 hours.
+Azure Functions is an event-based service that runs code when it's triggered. A function in Azure Functions can be triggered by various actions, including web requests, timers, and items that are added to queues or databases. Your application can use a time trigger to check the weather forecast every 12 hours.
 
 When you send a text message to Twilio to subscribe to temperature notifications, Twilio can make a web request to another function that uses an HTTP trigger.
 

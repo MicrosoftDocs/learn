@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-microsoft-datacenters.describe-azure-networking
+title: Describe Azure networking
+metadata:
+  title: Describe Azure networking
+  description: TBD
+  ms.date: 10/01/2022
+  author: TBD
+  ms.author: v-jenhor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-describe-azure-networking.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following best describes the Microsoft global network (WAN)?"
+    choices:
+    - content: "The Microsoft global network contains over 175 thousand miles of cables and more than 190 access points."
+      isCorrect: true
+      explanation: "Correct. The Microsoft global network is one of the largest networks in the world."
+    - content: "The Microsoft global network spans the United States and Europe."
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft global network is a global implementation."
+    - content: "The Microsoft global network can be used by Microsoft but not customers."
+      isCorrect: false
+      explanation: "Incorrect. Customers can use a range of services available in the Microsoft global network."
+    - content: "The Microsoft global network is used for Azure services, not other Microsoft Cloud services."
+      isCorrect: false
+      explanation: "Incorrect. Many Microsoft Cloud services make use of the Microsoft global network."

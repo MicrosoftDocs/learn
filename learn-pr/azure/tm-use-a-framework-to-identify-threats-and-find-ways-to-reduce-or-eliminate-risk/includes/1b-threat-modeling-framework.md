@@ -1,4 +1,4 @@
-The threat modeling framework looks at each element in the data-flow diagram, including their interactions. It helps you find potential threats and ways to reduce or eliminate risk.
+The threat-modeling framework looks at each element in the data-flow diagram, including each one's interactions. It helps you find potential threats and ways to reduce or eliminate risk.
 
 ## Threat categories
 
@@ -15,7 +15,7 @@ Microsoft engineers find security design issues using the six major threat categ
 
 ## Security control categories
 
-Each threat category is associated with a security control to help you reduce or eliminate risk
+Each threat category is associated with a security control to help you reduce or eliminate risk:
 
 |Category|Security Control|Description|
 |--------|----------------|-----------|
@@ -26,4 +26,4 @@ Each threat category is associated with a security control to help you reduce or
 |Denial of service|Availability|System handles all requests appropriately|
 |Elevation of privilege|Authorization|User has appropriate permissions to carry out a request|
 
-Let's look at each threat category in the next few units.
+We'll look at each threat category in the next few units.

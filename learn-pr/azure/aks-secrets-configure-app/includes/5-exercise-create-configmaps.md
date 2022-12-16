@@ -15,10 +15,12 @@ The back-end part of the application is deployed and now you need to deploy the 
 
 ## Before we start
 
+[!INCLUDE [azure-optional-exercise-subscription-note](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 Let's assume an AKS cluster is already created and running. Before creating a new cluster, run the following commands to be sure there's no other clusters or resources already created:
 
 ```azurecli-interactive
-export RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
+export RESOURCE_GROUP=rg-ship-manager
 export CLUSTER_NAME=ship-manager-cluster
 ```
 
@@ -38,7 +40,7 @@ az aks create \
  --enable-addons http_application_routing
 ```
 
-After the previous command runs, or if the list is not empty (the cluster is already created), get the administration config:
+After the previous command runs, or if the list isn't empty (the cluster is already created), get the administration config:
 
 ```azurecli-interactive
 az aks get-credentials -n $CLUSTER_NAME -g $RESOURCE_GROUP
@@ -51,7 +53,7 @@ The complete cluster creation can take up to five minutes.
 
 ## Create a ConfigMap
 
-1. Log in to your Azure Cloud Shell. Get the DNS zone that has been made available with the HTTP application routing add-on:
+1. In your Azure Cloud Shell. Get the DNS zone that has been made available with the HTTP application routing add-on:
 
     ```azurecli-interactive
     az aks show \
@@ -135,7 +137,7 @@ The complete cluster creation can take up to five minutes.
     ---
     ```
 
-    Notice how we're mounting the ConfigMap in the Deployment object. We're not specifying any keys, which means we need to specify a `subPath` key. This is the filename inside the container.
+    Notice how we're mounting the ConfigMap in the Deployment object. We're not specifying any keys, which means we need to specify a `subPath` key. The `subpath` is the filename inside the container.
 
 1. Continue to edit the file by adding the following lines below the last three dashes (`---`):
 
@@ -153,7 +155,7 @@ The complete cluster creation can take up to five minutes.
           port: 80
           targetPort: 80
     ---
-    apiVersion: networking.k8s.io/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: contoso-ship-manager-frontend
@@ -166,9 +168,12 @@ The complete cluster creation can take up to five minutes.
           http:
             paths:
               - path: /
+                pathType: Prefix
                 backend:
-                  serviceName: contoso-ship-manager-frontend
-                  servicePort: http
+                  service:
+                    name: contoso-ship-manager-frontend
+                    port: 
+                      name: http
     ```
 
     Change the DNS zone present in the Ingress to match the DNS you copied from the first step.
@@ -178,7 +183,7 @@ The complete cluster creation can take up to five minutes.
 1. Deploy the application by running the following command:
 
     ```bash
-    kubectl apply -f frontend.yaml`.
+    kubectl apply -f frontend.yaml
     ```
 
 1. Check your work by querying the Kubernetes API:
@@ -189,4 +194,9 @@ The complete cluster creation can take up to five minutes.
 
     The DNS propagation may take up to five minutes to complete.
 
-To check your work, access the front-end URL defined in the front-end ingress configuration.
+    When the API is available, you should get an output similar to:
+
+    ```output
+    NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
+    contoso-ship-manager-frontend  1/1     1            1           18s
+    ```

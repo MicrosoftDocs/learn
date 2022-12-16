@@ -40,7 +40,7 @@ Within the **CosmosClientOptions** class, you can set the **ConnectionMode** pro
 | **Value** | **Description** |
 | --- | --- |
 | **Gateway** | All requests are routed through the Azure Cosmos DB gateway as a proxy |
-| **Direct** | The gateway is only used in initialization and to and cache addresses for direct connectivity to data nodes |
+| **Direct** | The gateway is only used in initialization and to cache addresses for direct connectivity to data nodes |
 
 The default setting is to use the **Direct** connection mode. This example configures the client to use the default settings.
 
@@ -62,7 +62,7 @@ CosmosClientOptions options = new ()
 
 ### Changing the current consistency level
 
-Every Azure Cosmos DB SQL API account has a default consistency level configured. Individual clients can configure a different consistency level for all read requests made with the client. This example illustrates a client configured to use **eventual** consistency.
+Every Azure Cosmos DB for NoSQL account has a default consistency level configured. Individual clients can configure a different consistency level for all read requests made with the client. This example illustrates a client configured to use **eventual** consistency.
 
 ```csharp
 CosmosClientOptions options = new ()
@@ -86,7 +86,7 @@ The **ConsistencyLevel** enumeration has multiple potential values including:
 
 By default, the client will use the first writable region for requests. This is typically referred to as the primary region. You can use either the **CosmosClientOptions.ApplicationRegion** or **CosmosClientOptions.ApplicationPreferredRegions** to override this behavior.
 
-The **ApplicationRegion** property sets the single preferred region that the client will connect to for operations. It the configured region is unavailable, the client will default to the fallback priority list set on the account to determine the next region to use. In this example, the preferred region is configured to **West US**.
+The **ApplicationRegion** property sets the single preferred region that the client will connect to for operations. If the configured region is unavailable, the client will default to the fallback priority list set on the account to determine the next region to use. In this example, the preferred region is configured to **West US**.
 
 ```csharp
 CosmosClientOptions options = new ()

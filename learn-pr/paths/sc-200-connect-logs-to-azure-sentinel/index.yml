@@ -14,7 +14,7 @@ prerequisites: |
   - Knowledge of Microsoft Sentinel environment configuration like you could learn from learning path SC-200: Configure your Azure Sentinel environment
 summary: |
   Connect data at cloud scale across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds to Microsoft Sentinel. This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.
-iconUrl: /learn/achievements/connect-logs-to-azure-sentinel.svg
+iconUrl: /training/achievements/connect-logs-to-azure-sentinel.svg
 levels:
 - intermediate
 roles:
@@ -23,6 +23,8 @@ products:
 - azure
 - azure-log-analytics
 - azure-sentinel
+subjects:
+- cloud-security
 modules:
 - learn.wwl.connect-data-to-azure-sentinel-with-data-connectors
 - learn.wwl.connect-microsoft-services-to-azure-sentinel

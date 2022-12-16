@@ -3,8 +3,8 @@ uid: learn.github.contribute-opensource
 metadata:
   title: Contribute to an open-source project on GitHub
   description: Learn how to contribute to an open-source project on GitHub.
-  ms.date: 11/11/2020
-  author: sinedied
+  ms.date: 05/12/2022
+  author: ttorble
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -37,8 +37,10 @@ products:
   - github
   - azure
 prerequisites: |
-  - A GitHub account
+  - A [GitHub account](https://github.com/?azure-portal=true)
   - The ability to navigate and edit files in GitHub
+subjects:
+- development-tools
 units:
   - learn.github.contribute-opensource.1-introduction
   - learn.github.contribute-opensource.2-identify
@@ -47,6 +49,6 @@ units:
   - learn.github.contribute-opensource.5-next-steps
   - learn.github.contribute-opensource.6-knowledge-check
   - learn.github.contribute-opensource.7-summary
-iconUrl: /learn/achievements/github/contribute-to-an-open-source-project-on-github.svg
+iconUrl: /training/achievements/github/contribute-to-an-open-source-project-on-github.svg
 badge:
   uid: learn.github.contribute-opensource.badge

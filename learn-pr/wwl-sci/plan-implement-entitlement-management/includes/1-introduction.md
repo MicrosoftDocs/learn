@@ -8,7 +8,9 @@ By the end of this module, you will be able to:
  -  Define access packages.
  -  Plan, implement, and manage entitlements.
  -  Implement and manage terms of use.
- -  Manage the lifecycle of external users in Azure AD Identity Governance settings.
+ -  Manage the lifecycle of external users in Azure Active Directory (Azure AD), part of Entra Identity Governance settings.
+ -  Configure and manage connected organization
+ -  Review per user entitlements
 
 ## Prerequisites
 

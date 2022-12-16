@@ -15,4 +15,4 @@ You should now be able to:
 You can learn more by reviewing the following.
 
  -  [Azure Resource Manager documentation](/azure/azure-resource-manager/management/overview)
- -  [Learn - Control and organize Azure resources with Azure Resource Manager](/learn/modules/control-and-organize-with-azure-resource-manager/)
+ -  [Learn - Control and organize Azure resources with Azure Resource Manager](/training/modules/control-and-organize-with-azure-resource-manager/)

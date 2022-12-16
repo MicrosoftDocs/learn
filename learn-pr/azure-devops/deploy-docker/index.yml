@@ -3,9 +3,10 @@ uid: learn.azdo.deploy-docker
 metadata:
   title: Automate Docker container deployments with Azure Pipelines
   description: Implement a CI/CD pipeline for Docker containers.
-  ms.date: 06/23/2021
+  ms.date: 08/04/2022
   author: ramiMSFT
   ms.author: rabououn
+  ms.custom: devdivchpfy22
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Automate Docker container deployments with Azure Pipelines
@@ -17,9 +18,9 @@ abstract: |
   - Monitor the build, release, and deployment of your project
 prerequisites: |
   - An Azure subscription
-  - An Azure DevOps organization
+  - An Azure DevOps organization with access to parallel jobs
   - A GitHub account
-iconUrl: /learn/achievements/azure-devops/deploy-docker.svg
+iconUrl: /training/achievements/azure-devops/deploy-docker.svg
 levels:
 - beginner
 roles:
@@ -30,6 +31,8 @@ roles:
 products:
 - azure
 - azure-devops
+subjects:
+- devops
 units:
 - learn.azdo.deploy-docker.1-introduction
 - learn.azdo.deploy-docker.2-why-containers

@@ -18,7 +18,7 @@ Implement and manage virtual networking
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
  -  Identify usage cases and product features of virtual network peering.
  -  Configure gateway transit, connectivity, and service chaining.

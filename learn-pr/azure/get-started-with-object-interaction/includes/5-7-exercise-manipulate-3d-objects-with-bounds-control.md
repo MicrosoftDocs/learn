@@ -50,7 +50,7 @@ The ObjectManipulator script makes an object movable, scalable, and rotatable us
 1. In the Hierarchy window, select the **RoverExplorer** object, then in the Inspector window, use the **Add Component** button to add the following components:
     * **BoundsControl** component
     * **Object Manipulator (Script)** component
-    Then **uncheck** the checkbox next to all the components to make them **disabled** by default:
+    Then **uncheck** the checkbox next to all the components to **disable** them by default:
 
     :::image type="content" source="../media/rover-explorer-object-selected.png" alt-text="Screenshot of Unity with RoverExplorer object selected and components added and disabled." lightbox="../media/rover-explorer-object-selected.png":::
 

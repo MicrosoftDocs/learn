@@ -3,7 +3,7 @@ uid: learn.design-your-migration-to-azure
 metadata:
   title: Design your migration to Azure
   description: Minimize the time and resources required to migrate your on-premises environment to Azure. Assess your current systems with Azure Migrate, and migrate them with Azure Migrate and Azure Database Migration Service.
-  ms.date: 07/30/2019
+  ms.date: 11/11/2022
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -17,13 +17,16 @@ abstract: |
 prerequisites: | 
   - Knowledge of cloud and traditional architecture concepts
   - Knowledge of networking, compute, and database systems
-iconUrl: /learn/achievements/design-your-migration-to-azure.svg
+iconUrl: /training/achievements/design-your-migration-to-azure.svg
 levels:
-- intermediate
+- beginner
 roles:
 - solution-architect
 products:
 - azure
+- azure-migrate
+subjects:
+- migration
 units:
 - learn.design-your-migration-to-azure.1-introduction
 - learn.design-your-migration-to-azure.2-plan-your-azure-migration

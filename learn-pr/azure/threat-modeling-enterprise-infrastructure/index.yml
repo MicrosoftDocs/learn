@@ -18,7 +18,7 @@ abstract: |
   - Reduce or eliminate risk with known security requirements and controls.
 prerequisites: |
   - Threat modeling security fundamentals
-iconUrl: /learn/achievements/threat-modeling-enterprise-infrastructure.svg
+iconUrl: /training/achievements/threat-modeling-enterprise-infrastructure.svg
 levels:
 - beginner
 - intermediate
@@ -34,6 +34,8 @@ products:
 - azure-security-center
 - m365-security-center
 - m365-ems-cloud-app-security
+subjects:
+- threat-protection
 units:
 - learn.azure.threat-modeling-enterprise-security.1-introduction
 - learn.azure.threat-modeling-enterprise-security.2-assessment-questions

@@ -4,9 +4,10 @@ title: Exercise - Create a pull request
 metadata:
   title: Exercise - Create a pull request
   description: Use a pull request to propose changes you'd like to make to the codebase.
-  ms.date: 05/25/2021
+  ms.date: 07/29/2022
   author: juliakm
   ms.author: jukullam
+  ms.custom: devdivchpfy22
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12

@@ -4,8 +4,8 @@ metadata:
   title: 'Machine learning: Regression, classification, and clustering'
   description: Learn how to TBD.
   ms.date: 05/15/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
   show_latex: true
@@ -25,7 +25,7 @@ summary: |
   
 prerequisites: |
   None.
-iconUrl: /learn/achievements/reactors/machine-learning-three-basic-pillars.svg
+iconUrl: /training/achievements/reactors/machine-learning-three-basic-pillars.svg
 hidden: true
 levels:
 - beginner
@@ -35,7 +35,8 @@ roles:
 - data-scientist
 products:
 - azure
-- vs-code
+subjects:
+- machine-learning
 modules:
 - learn.reactors.join-clean-data-deep-dive
 - learn.reactors.supervised-learning-regression

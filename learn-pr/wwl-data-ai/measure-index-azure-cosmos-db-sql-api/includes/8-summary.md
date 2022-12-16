@@ -1,4 +1,4 @@
-In this module, you used the .NET SDK for Azure Cosmos DB SQL API to monitor index metrics and RU charges for queries and operations.
+In this module, you used the .NET SDK for Azure Cosmos DB for NoSQL to monitor index metrics and RU charges for queries and operations.
 
 Now that you have completed this module, you can:
 
@@ -9,8 +9,8 @@ Now that you have completed this module, you can:
 
 For more information about the topics discussed in this module, see:
 
-- [Indexing in Azure Cosmos DB - Overview][docs.microsoft.com/azure/cosmos-db/index-overview]
-- [Indexing policies in Azure Cosmos DB][docs.microsoft.com/azure/cosmos-db/index-policy]
+- [Indexing in Azure Cosmos DB - Overview][/azure/cosmos-db/index-overview]
+- [Indexing policies in Azure Cosmos DB][/azure/cosmos-db/index-policy]
 
-[docs.microsoft.com/azure/cosmos-db/index-overview]: https://docs.microsoft.com/azure/cosmos-db/index-overview
-[docs.microsoft.com/azure/cosmos-db/index-policy]: https://docs.microsoft.com/azure/cosmos-db/index-policy
+[/azure/cosmos-db/index-overview]: /azure/cosmos-db/index-overview
+[/azure/cosmos-db/index-policy]: /azure/cosmos-db/index-policy

@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.introduction-infrastructure-code-using-bicep.summary
-title: Summary  
+title: Summary
 metadata:
-  unitType: summary  
+  unitType: summary
   title: Summary
   description: Summary.
-  ms.date: 03/12/2021  
-  author: joshuawaddell
-  ms.author: jowaddel
+  ms.date: 10/17/2022
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
 durationInMinutes: 1 # user input: the estimate time to complete the unit

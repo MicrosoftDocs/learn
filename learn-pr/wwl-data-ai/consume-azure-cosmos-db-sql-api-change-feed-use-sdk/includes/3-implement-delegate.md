@@ -33,7 +33,7 @@ ChangesHandler<Product> changeHandlerDelegate = async (
 
 Within the delegate, you can iterate over the list of changes and then implement any business logic that makes sense for your application. In this example, you can think of each change as a “snapshot” of the item at some point in time that is delivered at-least-once to the host client application.
 
-A foreach loop is used to iterate through the current batch of changes, and then each item is printed to the console window
+A foreach loop is used to iterate through the current batch of changes, and then each item is printed to the console window.
 
 ```csharp
 ChangesHandler<Product> changeHandlerDelegate = async (

@@ -1,4 +1,4 @@
-Transactions are deeply and natively integrated into Azure Cosmos DB SQL API’s JavaScript programming model. Inside a JavaScript function, all operations are automatically wrapped under a single transaction. If the function completes without any exception, all data changes are committed. Azure Cosmos DB’s SQL API will roll back the entire transaction if a single exception is thrown from the script.
+Transactions are deeply and natively integrated into Azure Cosmos DB for NoSQL’s JavaScript programming model. Inside a JavaScript function, all operations are automatically wrapped under a single transaction. If the function completes without any exception, all data changes are committed. Azure Cosmos DB for NoSQL will roll back the entire transaction if a single exception is thrown from the script.
 
 Effectively, the start of the JavaScript function is similar to a **BEGIN TRANSACTION** statement in a database system, with the end of the function scope being the functional equivalent of **COMMIT TRANSACTION**. If any error is thrown, that’s the functional equivalent of **ROLLBACK TRANSACTION**.
 

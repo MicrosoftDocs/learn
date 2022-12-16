@@ -3,6 +3,7 @@ A shared access signature (SAS) is a secure way to give access to clients withou
 When you added SAS functionality to your app, it highlighted the inflexibility of creating a SAS for each image, each with its own expiration and access controls. You want to update your app to use a *stored access policy* on the storage container. With the policy in place, you want to test that you can update the expiration and affect all the created SAS tokens.
 
 In this unit, you'll learn how to:
+
 - Use a stored access policy.
 - Use the C# Storage API to create SAS tokens associated with your new access policy. 
 - Test that the SAS tokens can all be changed by updating the stored access policy in the Azure portal.
@@ -94,4 +95,4 @@ BlobSasBuilder sas = new BlobSasBuilder
 };
 ```
 
-You can have up to five stored access policies for on a single blob container.
+You can have up to five stored access policies for a single blob container.

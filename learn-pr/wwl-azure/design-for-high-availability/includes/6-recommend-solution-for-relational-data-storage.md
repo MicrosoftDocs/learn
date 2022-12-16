@@ -63,7 +63,7 @@ Availability Zones are relatively new to Azure SQL, so they're currently availab
 
 Azure SQL maintains a service-level agreement (SLA) that provides financial backing to the commitment to achieve and maintain service levels. If your service level isn't achieved and maintained as described in the SLA, you might be eligible for a credit toward a portion of your monthly service fees.
 
-Currently, you can achieve the highest availability (99.995%) from an Azure SQL Database Business Critical deployment that has Availability Zones configured. The Business Critical tier is the only option in the industry that provides RPO and RTO SLAs of 5 seconds and 30 seconds, respectively. RPO stands for recovery point object. It represents the amount of data you're potentially willing to lose in a worst case scenario. RTO stands for recovery time objective. It represents how long it takes to be back up and running again if a disaster occurs.
+Currently, you can achieve the highest availability (99.995%) from an Azure SQL Database Business Critical deployment that has Availability Zones configured. The Business Critical tier is the only option in the industry that provides recovery point objective (RPO) and recovery time objective (RTO) SLAs of 5 seconds and 30 seconds, respectively.
 
 For General Purpose or single-zone Business Critical deployments of Azure SQL Database or Azure SQL Managed Instance, the SLA is 99.99%.
 
@@ -93,11 +93,13 @@ Active geo-replication is available for:
 	- Fail over to a secondary database if your primary database fails or needs to be taken offline.
 
 >[!TIP]
->You can have up to four readable secondary replicas. Cosmos DB. Cosmos DB supports geo-replication across regions. However, you also can:
->
->	- Designate one region as the writable region and all others as read-only replicas.
->
->	- Fail over by selecting another region to be the write region during an outage.
+>You can have up to four readable secondary replicas. 
+
+- Cosmos DB: Cosmos DB supports geo-replication across regions. However, you also can:
+
+	- Designate one region as the writable region and all others as read-only replicas.
+
+	- Fail over by selecting another region to be the write region during an outage.
 
 >[!NOTE]
 >Support for Azure SQL Hyperscale is in preview.
@@ -152,10 +154,7 @@ Use auto-failover groups when:
 
 - You’re implementing Azure SQL DB managed instance.
 
->[!IMPORTANT]
-> Auto-failover groups support both Azure SQL DB and Azure SQL Database. However, Active geo-replication supports only Azure SQL Database.
 
- 
 
 ## Geo-replication and auto-failover groups
 

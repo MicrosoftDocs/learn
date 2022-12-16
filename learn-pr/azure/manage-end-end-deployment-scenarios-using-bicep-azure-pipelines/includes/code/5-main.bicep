@@ -22,6 +22,7 @@ param reviewApiKey string
 // Define the names for resources.
 var appServiceAppName = 'toy-website-${resourceNameSuffix}'
 var appServicePlanName = 'toy-website'
+var logAnalyticsWorkspaceName = 'workspace-${resourceNameSuffix}'
 var applicationInsightsName = 'toywebsite'
 var storageAccountName = 'mystorage${resourceNameSuffix}'
 
@@ -34,6 +35,11 @@ var environmentConfigurationMap = {
         capacity: 1
       }
     }
+    storageAccount: {
+      sku: {
+        name: 'Standard_LRS'
+      }
+    }
   }
   Test: {
     appServicePlan: {
@@ -41,16 +47,21 @@ var environmentConfigurationMap = {
         name: 'F1'
       }
     }
+    storageAccount: {
+      sku: {
+        name: 'Standard_GRS'
+      }
+    }
   }
 }
 
-resource appServicePlan 'Microsoft.Web/serverfarms@2021-01-15' = {
+resource appServicePlan 'Microsoft.Web/serverfarms@2022-03-01' = {
   name: appServicePlanName
   location: location
   sku: environmentConfigurationMap[environmentType].appServicePlan.sku
 }
 
-resource appServiceApp 'Microsoft.Web/sites@2021-01-15' = {
+resource appServiceApp 'Microsoft.Web/sites@2022-03-01' = {
   name: appServiceAppName
   location: location
   properties: {
@@ -79,6 +90,11 @@ resource appServiceApp 'Microsoft.Web/sites@2021-01-15' = {
   }
 }
 
+resource logAnalyticsWorkspace 'Microsoft.OperationalInsights/workspaces@2022-10-01' = {
+  name: logAnalyticsWorkspaceName
+  location: location
+}
+
 resource applicationInsights 'Microsoft.Insights/components@2020-02-02' = {
   name: applicationInsightsName
   location: location
@@ -87,16 +103,15 @@ resource applicationInsights 'Microsoft.Insights/components@2020-02-02' = {
     Application_Type: 'web'
     Request_Source: 'rest'
     Flow_Type: 'Bluefield'
+    WorkspaceResourceId: logAnalyticsWorkspace.id
   }
 }
 
-resource storageAccount 'Microsoft.Storage/storageAccounts@2021-04-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
   name: storageAccountName
   location: location
   kind: 'StorageV2'
-  sku: {
-    name: 'Standard_LRS'
-  }
+  sku: environmentConfigurationMap[environmentType].storageAccount.sku
 }
 
 output appServiceAppName string = appServiceApp.name

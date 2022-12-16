@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-authentication-capabilities-of-azure-ad.describe-different-authentication-methods
+title: Describe the authentication methods available in Azure AD
+metadata:
+  title: Describe the authentication methods available in Azure AD
+  description: "Describe the authentication methods available in Azure AD"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-describe-authentication-methods.md)]

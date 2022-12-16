@@ -44,7 +44,7 @@ The inventory page provides the following tools:
 
 ## How does asset inventory work?
 
-Asset inventory utilizes Azure Resource Graph (ARG), an Azure service that provides the ability to query Defender for Cloud's security posture data across multiple subscriptions.  ARG is designed to provide efficient resource exploration with the ability to query at scale. Using the Kusto Query Language (KQL), asset inventory can quickly produce deep insights by cross-referencing ASC data with other resource properties.
+Asset inventory utilizes Azure Resource Graph (ARG), an Azure service that lets you query Defender for Cloud's security posture data across multiple subscriptions.  ARG is designed to provide efficient resource exploration with the ability to query at scale. ARG uses the Kusto Query Language (KQL). Asset inventory can quickly produce deep insights by cross-referencing ASC data with other resource properties.
 
 ## How to use asset inventory
 
@@ -56,12 +56,12 @@ Asset inventory utilizes Azure Resource Graph (ARG), an Azure service that provi
 
 - To use the Security findings contain filter, enter free text from the ID, security check, or CVE name of a vulnerability finding to filter to the affected resources:
 
-![Security Findings](../media/security-findings-contain-elements.png)
+:::image type="content" source="../media/security-findings-contain-elements.png" alt-text="Screenshot of Defender for Cloud Security Findings":::
 
 - To use the Defender for Cloud filter, select one or more options (Off, On, or Partial):
 
-  - Off - Resources that aren't protected by a Defender for Cloud plan. You can right-click on any of these and upgrade them:
+  - Off - Resources that aren't protected by a Defender for Cloud plan. You can right-click on any of these resources and upgrade them:
 
   - On - Resources that are protected by a Defender for Cloud plan
 
-  - Partial - This applies to subscriptions that have some but not all of the Defender for Cloud plans disabled.
+  - Partial - This option applies to subscriptions that have some but not all of the Defender for Cloud plans disabled.

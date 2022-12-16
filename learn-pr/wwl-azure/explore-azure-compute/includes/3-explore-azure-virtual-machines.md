@@ -4,19 +4,19 @@ Azure VMs share most of their characteristics with the Microsoft Hyper V virtual
 
 Azure VMs that you deploy are available in specific sizes. You can't specify arbitrary amounts of processing, memory, or storage resources when deploying an Azure VM. Instead, you must select one of the predefined choices. This restriction doesn't impose significant constraints, since Microsoft offers a wide range of virtual machine sizes. The sizes are grouped into several categories, including the following virtual machine sizes:
 
- -  **General purpose** (including the B, Dsv3, Dv3, DSv2, Dv2, Av2, and DC sizes) providing balanced CPU-to-memory ratio, ideal for testing and development, small to medium databases, and low to medium traffic web servers.
- -  **Compute optimized** (including the Fsv2 size) providing high CPU-to-memory ratio, good for medium traffic web servers, network appliances, batch processes, and application servers.
- -  **Memory optimized** (including the Esv3, Ev3, M, GS, G, DSv2, Dv2 sizes) providing high memory-to-CPU ratio, great for relational database servers, medium to large caches, and in-memory analytics.
- -  **Storage optimized** (including the Lsv2 and Ls sizes) providing high disk throughput and IO, ideal for Big Data, SQL, NoSQL databases, data warehousing, and large transactional databases.
- -  **GPU** (including the NV, NVv2, NC, NCv2, NCv3, ND, and NDv2 sizes) providing specialized virtual machines targeted for heavy graphic rendering and video editing, as well as model training and inferencing (ND) with deep learning, available with single, or multiple GPUs.
- -  **High performance compute** (including the H size) providing the fastest and most powerful CPU Azure VMs with optional high-throughput network interfaces (RDMA).
+- **General purpose** (including the B, Dsv3, Dv3, DSv2, Dv2, Av2, and DC sizes) providing balanced CPU-to-memory ratio, ideal for testing and development, small to medium databases, and low to medium traffic web servers.
+- **Compute optimized** (including the Fsv2 size) providing high CPU-to-memory ratio, good for medium traffic web servers, network appliances, batch processes, and application servers.
+- **Memory optimized** (including the Esv3, Ev3, M, GS, G, DSv2, Dv2 sizes) providing high memory-to-CPU ratio, great for relational database servers, medium to large caches, and in-memory analytics.
+- **Storage optimized** (including the Lsv2 and Ls sizes) providing high disk throughput and IO, ideal for Big Data, SQL, NoSQL databases, data warehousing, and large transactional databases.
+- **GPU** (including the NV, NVv2, NC, NCv2, NCv3, ND, and NDv2 sizes) providing specialized virtual machines targeted for heavy graphic rendering and video editing, as well as model training and inferencing (ND) with deep learning, available with single, or multiple GPUs.
+- **High performance compute** (including the H size) providing the fastest and most powerful CPU Azure VMs with optional high-throughput network interfaces (RDMA).
 
 Every individual VM size represents a combination of the following capacity characteristics:
 
- -  **Number of vCPUs**
- -  **Amount of memory**
- -  **Maximum number of data disks**
- -  **Maximum network and storage throughput**
+- **Number of vCPUs**
+- **Amount of memory**
+- **Maximum number of data disks**
+- **Maximum network and storage throughput**
 
 Information regarding performance characteristics (including maximum uncached disk throughput and the expected network bandwidth) are available in [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes).
 
@@ -27,13 +27,13 @@ A limit also exists on the throughput and input/output operations per second (IO
 > [!NOTE]
 > At the time of writing, any virtual disks that you intend to attach to Azure VMs must be in the .vhd format. There's also no support for Generation 2 Hyper V virtual machines in Azure. Additionally, no support exists for dynamically expanding or differencing virtual disks—they all must be fixed.
 
-## Optional demos:
+## Optional demos
 
- -  [Demonstration: Explore the Azure portal](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-explore-azure-portal.md)
- -  [Demonstration: Create a virtual machine in the portal](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-create-virtual-machine-portal.md)
- -  [Demonstration: Connect to Linux virtual machines](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-connect-linux-virtual-machines.md)
- -  [Demonstration: Create and delete resource groups](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-create-delete-resource-groups.md)
- -  [Demonstration: Experiment with the Cloud Shell](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-experiment-cloud-shell.md)
- -  [Demonstration: Work with Azure CLI locally](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-work-with-azure-cli-locally.md)
- -  [Demonstration: Work with PowerShell locally](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-work-with-powershell-locally.md)
- -  [Demonstration: Create a virtual machine with PowerShell](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-create-virtual-machine-powershell.md)
+- [Demonstration: Explore the Azure portal](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-explore-azure-portal.md)
+- [Demonstration: Create a virtual machine in the portal](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-create-virtual-machine-portal.md)
+- [Demonstration: Connect to Linux virtual machines](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-connect-linux-virtual-machines.md)
+- [Demonstration: Create and delete resource groups](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-create-delete-resource-groups.md)
+- [Demonstration: Experiment with the Cloud Shell](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-experiment-cloud-shell.md)
+- [Demonstration: Work with Azure CLI locally](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-work-with-azure-cli-locally.md)
+- [Demonstration: Work with PowerShell locally](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-work-with-powershell-locally.md)
+- [Demonstration: Create a virtual machine with PowerShell](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-create-virtual-machine-powershell.md)

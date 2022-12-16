@@ -1,5 +1,4 @@
->[!NOTE]
-> The Learn sandbox system that enables you to complete these modules without using your own subscription is currently down for maintenance. This module can still be completed using a subscription you own, but please be aware that the steps might skip some instructions necessary for you to deploy, such as logging into your subscription or cleaning up the deployment at the end of the module. Let's go!
+[!INCLUDE [azure-optional-exercise-subscription-note](../../../includes/azure-optional-exercise-subscription-note.md)]
 
 We're now going to use the information we collected in the previous modules to deploy an Azure Kubernetes Service cluster.
 
@@ -23,12 +22,24 @@ DNS service IP address | Must be in the Kubernetes service subnet, but can't be 
 
 For this exercise, we'll create a virtual network and subnet. In a real world environment, you may have a team in your IT department responsible for managing networks and they may create these resources for you.
 
+First, run the following command in Azure Cloud Shell to sign in to your Azure account:
+
+```bash
+az login
+```
+
+In Azure Cloud Shell, run the following command to create a resource group that you'll use to hold all the resources in this exercise:
+
+```bash
+az group create --location westeurope --name AKSlearn
+```
+
 In Azure Cloud Shell, run the following command to create the **AKSVirtualNetwork** virtual network:
 
 ```bash
 az network vnet create \
     --name AKSVirtualNetwork \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group AKSlearn \
     --address-prefixes 10.150.0.0/16  \
     --location westeurope
 ```
@@ -37,7 +48,7 @@ Next, in Azure Cloud Shell, run the following command to create the **AKSSubnet*
 
 ```bash
 az network vnet subnet create \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group AKSlearn \
     --vnet-name AKSVirtualNetwork \
     --name AKSSubnet \
     --address-prefixes 10.150.20.0/24
@@ -50,11 +61,11 @@ We need to create an Azure Managed Identity. The Azure Kubernetes Service uses t
 ```bash
 az identity create \
     --name AKSIdentity \
-    --resource-group <rgn>[sandbox resource group name]</rgn>
+    --resource-group AKSlearn
 
 identityId=$(az identity show \
     --name AKSIdentity \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group AKSlearn \
     --query id \
     --output tsv)
 ```
@@ -68,7 +79,7 @@ We need to know the resource ID of the subnet we created previously. We can stor
 ```bash
 subnetId=$(az network vnet subnet list \
     --vnet-name AKSVirtualNetwork \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group AKSlearn \
     --query "[?name=='AKSSubnet'].id" \
     --output tsv)
 ```
@@ -78,7 +89,7 @@ In Azure Cloud Shell, run the following command to create the **AKSCluster** Azu
 ```bash
 az aks create \
     --name AKSCluster \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group AKSlearn \
     --location westeurope \
     --network-plugin azure \
     --vnet-subnet-id $subnetId \
@@ -97,7 +108,7 @@ Command fragment | Description
 --- | ---
 az aks create | Command to create an AKS cluster instance.
 --name **AKSCluster** | The name of the cluster being created.
---resource-group **<rgn>[sandbox resource group name]</rgn>** | The resource group where the cluster should be created.
+--resource-group **AKSlearn** | The resource group where the cluster should be created.
 --location **westeurope** | The Azure region where the cluster should be created.
 --network-plugin **azure** | Tell the AKS creation process that we want to use the Azure CNI networking plug-in.
 --vnet-subnet-id **$subnetId** | The resource ID of the subnet that we created earlier. The subnet is the 10.150.20.0/24 address range that was given to us by the IT department.
@@ -116,7 +127,7 @@ Once the cluster has been deployed, we can use the following command to confirm 
 ```bash
 az aks nodepool list \
     --cluster-name AKSCluster \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group AKSlearn \
     --output table
 ```
 
@@ -137,7 +148,7 @@ Let's check how many IP addresses have been used by the cluster.
 ```bash
 az network vnet subnet list \
     --vnet-name AKSVirtualNetwork \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group AKSlearn \
     --query "[].ipConfigurations.length(@)" \
     --output table
 ```
@@ -153,7 +164,7 @@ Finally, let's scale up the cluster and add one more node to see how IP address 
 ```bash
 az aks scale \
     --name AKSCluster \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group AKSlearn \
     --node-count=4
 ```
 
@@ -162,7 +173,7 @@ Once the scale command completes, let's confirm the new details for our node poo
 ```bash
 az aks nodepool list \
     --cluster-name AKSCluster \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group AKSlearn \
     --output table
 ```
 
@@ -179,7 +190,7 @@ Now, we can rerun the command to get a count of IP addresses.
 ```bash
 az network vnet subnet list \
     --vnet-name AKSVirtualNetwork \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group AKSlearn \
     --query "[].ipConfigurations.length(@)" \
     --output table
 ```

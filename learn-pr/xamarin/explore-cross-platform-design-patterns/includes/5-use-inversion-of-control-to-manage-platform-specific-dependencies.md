@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 The typical project structure of a Xamarin.Forms application normally includes two or more platform-specific head projects and a shared code project.
 
 Let's assume you have iOS and Android head projects. Your shared code library is a .NET Standard library. The head projects will reference the shared code project because their behavior depends on the shared code. Each head project controls which objects are instantiated. For example, the project controls the instantiation of the Xamarin.Forms Application class.

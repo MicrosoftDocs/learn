@@ -1,25 +1,26 @@
 ### YamlMime:Module
 uid: learn-windows.introducing-visual-studio
 metadata:
-  title: Getting started with Visual Studio for Windows 10 app development
+  title: Start developing Windows 10 apps in Visual Studio
   description: Learn how to use Visual Studio in GitHub to create, debug, and deploy Windows 10 applications with themes, refactoring, and code snippets.
-  ms.date: 11/30/2018
+  ms.date: 08/23/2022
   author: JohnKennedy
   ms.author: jken
+  manager: jmartens
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
 title: Getting started with Visual Studio for Windows 10 app development
 summary: Visual Studio is the development tool used to create, debug, and deploy Windows 10 applications.
 abstract: |
   In this module, you will:
-  - Learn the key features of Visual Studio.
+  - Install Visual Studio and learn the key features.
   - Build a simple app by using Visual Studio.
   - Debug a Windows 10 app.
   - Use themes and other Visual Studio features.
-iconUrl: /learn/achievements/introduction-to-visual-studio-for-windows10-dev.svg
+iconUrl: /training/achievements/introduction-to-visual-studio-for-windows10-dev.svg
 prerequisites: |
  - A computer running the current release of Windows 10. To verify that you're running the latest version, go to Windows Update in Settings.
- - On the same computer, [Visual Studio 2017](/visualstudio/productinfo/vs2017-system-requirements-vs).
+ - On the same computer, [Visual Studio 2022](/visualstudio/releases/2022/system-requirements).
 levels:
 - beginner
 roles:
@@ -27,6 +28,8 @@ roles:
 products:
 - windows
 - vs-ide
+subjects:
+- custom-app-development
 units:
 - learn-windows.introducing-visual-studio.1-visual-studio-features
 - learn-windows.introducing-visual-studio.2-debugging

@@ -22,7 +22,7 @@ prerequisites: |
  - Windows 10
  - macOS 10.9 or later
  - Ubuntu, Debian, Red Hat, Fedora, or SUSE
-iconUrl: /learn/achievements/introducing-vs-code.svg
+iconUrl: /training/achievements/introducing-vs-code.svg
 levels:
 - beginner
 roles:
@@ -30,6 +30,8 @@ roles:
 products:
 - windows
 - vs-code
+subjects:
+- custom-app-development
 units:
 - learn-windows.introducing-vs-code.1-introduction
 - learn-windows.introducing-vs-code.2-installation-and-tour

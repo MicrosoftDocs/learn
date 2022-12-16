@@ -3,7 +3,7 @@ uid: learn.run-docker-containers-aci.2-run-aci
 metadata:
   title: Exercise - Run Azure Container Instances
   description: Run Azure Container Instances.
-  ms.date: 09/07/2021
+  ms.date: 04/28/2022
   author: v-tcassi
   ms.author: tomcassidy
   ms.topic: interactive-tutorial

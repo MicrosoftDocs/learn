@@ -12,7 +12,7 @@ The first step is to deploy the Azure Logic App using a combination of Azure Pow
 
 1. Make note of your GitHub repository (for example, `https://github.com/[username]/serverless-full-stack-apps-azure-sql`).
 
-1. The following script clones the repository and deploys an Azure Logic App according to an ARM template. ARM templates will not be discussed in this module, but you can think of them like a recipe for how to build an Azure service. This one is built to include the Outlook connector.
+1. The following script clones the repository and deploys an Azure Logic App according to an ARM template. ARM templates won't be discussed in this module, but you can think of them like a recipe for how to build an Azure service. This one is built to include the Outlook connector.
 
     ```powershell
     # Resource group name and resource group
@@ -47,7 +47,7 @@ The next step is to configure the Logic App to connect to your email address and
 
 1. Sign in to an Outlook account that you have access to.
 
-1. Once successfully connected, you will see the email and its contents. In the *To* field, enter the email address where you'd like to receive notifications.
+1. Once successfully connected, you'll see the email and its contents. In the *To* field, enter the email address where you'd like to receive notifications.
 
 1. Select **Save**.
 
@@ -69,7 +69,7 @@ Now that everything is updated, it's time to monitor the results (and your inbox
 
 1. Navigate to your Azure Function App in the Azure portal and select **Functions** > **GetBusData** > **Monitor**.
 
-1. The **Invocations** have ~5 minute delay, whereas the **Logs** are closer to real time. Review the **Logs**.
+1. The **Invocations** have ~5-minute delay, whereas the **Logs** are closer to real time. Review the **Logs**.
 
 1. When a bus activates a geofence, what do you see? Did you receive an email? The answers to these questions should help you understand if your application is working properly.
 

@@ -216,7 +216,7 @@ class MultivariateSample():
 
 ## Run Multivariate Anomaly Detector experiment
 
-We are now ready to run the main function that will start the multivariate Anomaly Detection experiment. It calls the other functions to create, train, detect, and export the model. Each time the train function is executed, a new **Model ID** is generated. Once you have the model that is trained, you can then use the model id to run the detect API on your test dataset. To see the results of the detection, you need the **Result ID** to get the results of the detection. Copy the result id to get the results of the detection to use in the next exercise.
+We are now ready to run the main function that will start the multivariate Anomaly Detection experiment. It calls the other functions to create, train, detect, and export the model. Each time the train function is executed, a new **Model ID** is generated. Once you have the model that is trained, you can then use the model ID to run the detect API on your test dataset. To see the results of the detection, you need the **Result ID** to get the results of the detection. Copy the result ID to get the results of the detection to use in the next exercise.
 
 ```python
 if __name__ == '__main__':
@@ -245,3 +245,5 @@ if __name__ == '__main__':
     # Export model
     sample.export_model(MODEL_ID, "energy_model.zip")
 ```
+
+Excellent! You have now trained a model and exported it to a zip file. You can now use the model to detect anomalies in your data.  In the next unit, you'll visualize the results of the detection and see root causes of the anomalies.

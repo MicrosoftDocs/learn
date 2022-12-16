@@ -62,7 +62,7 @@ You can deploy an ARM template to Azure in one of the following ways:
 
 This module focuses on deploying a local ARM template. In future Learn modules, you'll learn how to deploy more complicated infrastructure and how to integrate with Azure Pipelines.
 
-To deploy a local template, you need to have either [Azure PowerShell](/powershell/azure/install-az-ps?view=azps-4.2.0&azure-portal=true) or the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) installed locally.
+To deploy a local template, you need to have either [Azure PowerShell](/powershell/azure/install-az-ps) or the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) installed locally.
 
 First, sign in to Azure by using the Azure CLI or Azure PowerShell.
 
@@ -100,7 +100,7 @@ New-AzResourceGroup `
 
 ---
 
-To start a template deployment at the resource group, use either the Azure CLI command [az deployment group create](/cli/azure/deployment/group#az-deployment-group-create) or the Azure PowerShell command [New-AzResourceGroupDeployment](/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-4.2.0&azure-portal=true).
+To start a template deployment at the resource group, use either the Azure CLI command [az deployment group create](/cli/azure/deployment/group#az-deployment-group-create) or the Azure PowerShell command [New-AzResourceGroupDeployment](/powershell/module/az.resources/new-azresourcegroupdeployment).
 
 > [!TIP]
 > The difference between az deployment group create and az group deployment create is that az group deployment create is an old command to be deprecated and will be replaced by az deployment group create. Therefore, it is recommended to use az deployment group create to deploy resources under the resource group scope.
@@ -133,7 +133,7 @@ New-AzResourceGroupDeployment `
 
 Use linked templates to deploy complex solutions. You can break a template into many templates and deploy these templates through a main template. When you deploy the main template, it triggers the deployment of the linked template. You can store and secure the linked template by using a SAS token.
 
-A CI/CD pipeline automates the creation and deployment of development projects, which includes ARM template projects. The two most common pipelines used for template deployment are [Azure Pipelines](/learn/paths/deploy-applications-with-azure-devops/?azure-portal=true) or [GitHub Actions](/learn/paths/automate-workflow-github-actions/?azure-portal=true).
+A CI/CD pipeline automates the creation and deployment of development projects, which includes ARM template projects. The two most common pipelines used for template deployment are [Azure Pipelines](/training/paths/deploy-applications-with-azure-devops/?azure-portal=true) or [GitHub Actions](/training/paths/automate-workflow-github-actions/?azure-portal=true).
 
 More information on these two types of deployment is covered in other modules.
 
@@ -153,27 +153,27 @@ For our storage example, your template might look like this:
 
 ```json
 {
-   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-   "contentVersion": "1.0.0.1",
-   "apiProfile": "",
-   "parameters": {},
-   "variables": {},
-   "functions": [],
-   "resources": [
-      {
-          "type": "Microsoft.Storage/storageAccounts",
-          "apiVersion": "2019-06-01",
-          "name": "learntemplatestorage123",
-          "location": "westus",
-          "sku": {
-              "name": "Standard_LRS"
-          },
-          "kind": "StorageV2",
-          "properties": {
-              "supportsHttpsTrafficOnly": true
-          }
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.1",
+  "apiProfile": "",
+  "parameters": {},
+  "variables": {},
+  "functions": [],
+  "resources": [
+    {
+      "type": "Microsoft.Storage/storageAccounts",
+      "apiVersion": "2019-06-01",
+      "name": "learntemplatestorage123",
+      "location": "westus",
+      "sku": {
+        "name": "Standard_LRS"
+      },
+      "kind": "StorageV2",
+      "properties": {
+        "supportsHttpsTrafficOnly": true
       }
-   ],
-   "outputs": {}
+    }
+  ],
+  "outputs": {}
 }
 ```

@@ -15,5 +15,5 @@ With the Pub/Sub and Streams features, your team can quickly and easily implemen
 - [Azure Cache for Redis documentation](/azure/azure-cache-for-redis/)
 - [Quickstart: Create an open-source Redis cache](/azure/azure-cache-for-redis/quickstart-create-redis)
 
-- [Redis Pub/Sub](https://redis.io/topics/pubsub)
+- [Redis Pub/Sub](https://redis.io/docs/manual/pubsub/)
 - [Redis Streams](https://redis.io/topics/streams-intro)

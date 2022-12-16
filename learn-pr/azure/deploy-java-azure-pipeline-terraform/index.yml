@@ -25,7 +25,7 @@ prerequisites: |
     - [Terraform Azure Pipelines extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks)
   - Basic knowledge of software development
   - Basic knowledge of managing and provisioning Azure resources
-iconUrl: /learn/achievements/deploy-java-azure-pipeline-terraform.svg
+iconUrl: /training/achievements/deploy-java-azure-pipeline-terraform.svg
 levels:
 - intermediate
 roles:
@@ -36,6 +36,8 @@ products:
 - azure-app-service-web
 - azure-database-mysql
 - azure-pipelines
+subjects:
+- cloud-computing
 units:
 - learn.azure.deploy-java-azure-pipeline-terraform.1-introduction
 - learn.azure.deploy-java-azure-pipeline-terraform.2-terraform

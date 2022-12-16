@@ -17,7 +17,7 @@ abstract: |
   - Identify the different built-in scenarios associated with your Health Bot instance.
   - Recognize built-in scenario use cases.
   - Build a simple web page that allows users to communicate with your Health Bot instance through a Web Chat control.
-iconUrl: /learn/achievements/student-evangelism/health-bot-built-in-scenarios.svg
+iconUrl: /training/achievements/student-evangelism/health-bot-built-in-scenarios.svg
 levels:
 - beginner
 roles:
@@ -29,6 +29,9 @@ prerequisites: |
  - Introduction to Azure Health Bot
  - Basic Azure Health Bot
  - Language understanding in Azure Health Bot
+subjects:
+- artificial-intelligence
+- knowledge-management
 units:
 - learn.health-bot-built-in-scenarios.1-introduction
 - learn.health-bot-built-in-scenarios.2-what-are-built-in-scenarios

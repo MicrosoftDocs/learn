@@ -20,7 +20,7 @@ prerequisites: |
   - Ability to navigate the Azure portal
   - Familiarity with Visual Studio Code
   - Familiarity with CI/CD concepts
-iconUrl: /learn/achievements/build-full-stack-apps.svg
+iconUrl: /training/achievements/build-full-stack-apps.svg
 hidden: true
 levels:
   - intermediate
@@ -33,11 +33,12 @@ roles:
 products:  
   - azure-sql-database
   - github
-  - vs-code
   - azure-functions
   - azure-app-service-static
   - azure-web-apps
-units:  
+subjects:
+- database
+units:
 - learn.azure.build-full-stack-apps.introduction
 - learn.azure.build-full-stack-apps.exercise-deploy-resources
 - learn.azure.build-full-stack-apps.accelerate-app-development

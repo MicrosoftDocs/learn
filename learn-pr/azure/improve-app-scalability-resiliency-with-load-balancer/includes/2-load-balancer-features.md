@@ -1,8 +1,8 @@
-With Azure Load Balancer, you can spread user requests across multiple virtual machines or other services, enabling you to scale the app to larger sizes than a single virtual machine can support, and to ensure that users get service, even when a virtual machine fails.
+With Azure Load Balancer, you can spread user requests across multiple virtual machines or other services, allowing you to scale the app to larger sizes than a single virtual machine can support, and ensuring that users get service even when a virtual machine fails.
 
 In your healthcare organization, you can expect large user demand. It's vitally important that each user can book an appointment, even during peak demand or when one or more virtual machines fail. If you use multiple virtual servers for your front end and a load balancer to distribute traffic between them, you achieve a high capacity because all the virtual servers collaborate to satisfy requests. You also improve resilience because the load balancer can automatically reroute traffic when a virtual server fails.
 
-Here, you will learn how the features of Load Balancer can help you create robust app architectures.
+Here, you'll learn how the features of Load Balancer can help you create robust app architectures.
 
 ## Distribute traffic with Azure Load Balancer
 
@@ -39,7 +39,7 @@ An availability zone offers groups of one or more datacenters that have independ
 
 :::image type="content" source="../media/2-az-graphic-two.svg" alt-text="Screenshot showing an overview of availability zones in Azure." border="false":::
 
-Availability zones don't support all virtual machine sizes and aren't available in all Azure regions. Check that they are supported in your region before you use them in your architecture.
+Availability zones don't support all virtual machine sizes and aren't available in all Azure regions. Check that they're supported in your region before you use them in your architecture.
 
 ## Select the right Load Balancer product
 

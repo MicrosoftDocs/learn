@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.teach-azure-204-develop-solution-microsoft-azure-academic-programs.learn-module-best-practices
+title: Discuss Learn module best practices
+metadata:
+  title: Discuss Learn module best practices
+  description: "Discuss Learn module best practices"
+  ms.date: 11/18/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-learn-module-best-practices.md)]

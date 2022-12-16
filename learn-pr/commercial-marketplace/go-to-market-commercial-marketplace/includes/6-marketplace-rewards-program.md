@@ -10,14 +10,14 @@ Marketplace Rewards benefits are designed to help you with marketing, sales, and
 
 You can find more information about Marketplace Rewards, including a full list of available benefits, in our [documentation on your commercial marketplace benefits](/azure/marketplace/gtm-your-marketplace-benefits).
 
-### Accessing your benefits in Partner Center
+### Access your benefits in Partner Center
 
 After publishing your solution, take the following steps to access the Marketplace Rewards program in Partner Center.
 
-1. Log in to Partner Center at https://partner.microsoft.com/dashboard
-2. Select **Commercial Marketplace** on left menu
-3. Select **Marketplace Rewards**
-4. Scroll down to find the **Your Benefits** link and click **Enroll into Marketplace Rewards Program**.
+1. Sign in to Partner Center at https://partner.microsoft.com/dashboard.
+2. Select **Benefits** on left menu.
+3. Select **Marketplace Rewards**.
+4. Scroll down to find the **Your Benefits** link and select **Enroll into Marketplace Rewards Program**.
 
 After joining the program, you'll see a list of your available benefits. Before you start activating any benefits, make sure your organization's Marketplace Rewards point of contact is identified. If you publish a transact offer, you’ll be matched with a rewards engagement manager who will help you activate your benefits.
 

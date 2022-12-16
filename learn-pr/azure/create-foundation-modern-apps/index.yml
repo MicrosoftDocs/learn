@@ -5,8 +5,9 @@ metadata:
   title: Architect modern applications using Azure SQL Database
   description: Break down a scenario for an application and build a multi-service solution based on the microservices approach. Learn how to use modern database capabilities to build a foundation for applications.
   ms.date: 3/17/2021  
-  author: amthomas46
-  ms.author: antho
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure  
 title: Architect modern applications using Azure SQL Database
@@ -20,7 +21,7 @@ prerequisites: |
   - Familiarity with database concepts such as stored procedures and querying
   - Familiarity with CI/CD concepts such as GitHub Actions
   - Familiarity with available Azure services
-iconUrl: /learn/achievements/create-foundation-modern-apps.svg
+iconUrl: /training/achievements/create-foundation-modern-apps.svg
 levels:
   - intermediate
   - beginner
@@ -35,10 +36,11 @@ roles:
 products:  
   - azure-sql-database
   - github
-  - vs-code
   - azure-blob-storage
   - azure-devops
-units:  
+subjects:
+- architecture
+units:
 - learn.azure.create-foundation-modern-apps.introduction
 - learn.azure.create-foundation-modern-apps.architect-solution
 - learn.azure.create-foundation-modern-apps.exercise-configure-environment
