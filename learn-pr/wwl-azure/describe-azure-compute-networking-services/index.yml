@@ -3,7 +3,7 @@ uid: learn.wwl.describe-azure-compute-networking-services
 metadata:
   title: Describe Azure compute and networking services
   description: "Introduction to Azure compute services (virtual machines, Azure Virtual Desktop, Azure Functions) and networking services (virtual networks, ExpressRoute, DNS, etc.)."
-  ms.date: 06/30/2022
+  ms.date: 12/12/2022
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
@@ -11,16 +11,16 @@ metadata:
 title: Describe Azure compute and networking services
 summary: This module focuses on some of the computer services and networking services available within Azure.
 abstract: |
-  Upon completion of this module, you will be able to:
+  Upon completion of this module, you'll be able to:
   *   Compare compute types, including container instances, virtual machines, and functions
-  *   Describe virtual machine (VM) options, including VMs, virtual machine scale sets, availability sets, Azure Virtual Desktop
+  *   Describe virtual machine (VM) options, including VMs, Virtual Machine Scale Sets, availability sets, Azure Virtual Desktop
   *   Describe resources required for virtual machines
   *   Describe application hosting options, including Azure Web Apps, containers, and virtual machines
   *   Describe virtual networking, including the purpose of Azure Virtual Networks, Azure virtual subnets, peering, Azure DNS, VPN Gateway, and ExpressRoute
   *   Define public and private endpoints
 prerequisites: |
   * Basic familiarity with IT terms and concepts
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/describe-azure-compute-networking-services.svg
 levels:
 - beginner
 roles:

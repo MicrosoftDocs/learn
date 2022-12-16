@@ -21,7 +21,7 @@ The _Actions_ permissions show the _Contributor_ role has all action privileges.
 The _Contributor_ role also has two _DataActions_ permissions to specify how data can be affected:
 
 - `"NotDataActions": []`: No specific actions are listed. Therefore, all actions can affect the data.
-- `"AssignableScopes": ["/"]`: The role can be assigned for all scopes that affect data. The backslash `{\}` wildcard means "all."
+- `"AssignableScopes": ["/"]`: The role can be assigned for all scopes that affect data. 
 
 Here's another example of a role definition in PowerShell:
 
@@ -56,9 +56,9 @@ The following table shows how the _Actions_ or _NotActions_ permissions are used
 
 | Role&nbsp;name| Description | Actions&nbsp;permissions | NotActions&nbsp;permissions |
 | --- | --- | --- | --- |
-| _Owner_ | Allow all actions | `\*` | n/a |
-| _Contributor_ | Allow all actions, except write or delete role assignment | `\*` | - `Microsoft.Authorization/\*/Delete` <br> - `Microsoft.Authorization/\*/Write` <br> - `Microsoft.Authorization/elevateAccess/Action` |
-| _Reader_ | Allow all read actions | `\*/read` | n/a |
+| _Owner_ | Allow all actions | `*` | n/a |
+| _Contributor_ | Allow all actions, except write or delete role assignment | `*` | - `Microsoft.Authorization/*/Delete` <br> - `Microsoft.Authorization/*/Write` <br> - `Microsoft.Authorization/elevateAccess/Action` |
+| _Reader_ | Allow all read actions | `/*/read` | n/a |
 
 ### Role scopes
 

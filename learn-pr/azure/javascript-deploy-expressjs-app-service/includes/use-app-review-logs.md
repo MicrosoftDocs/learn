@@ -1,6 +1,6 @@
 Azure App Service collects the same kinds of monitoring data as other Azure resources. These metrics and logs are provided as part of Azure Monitor, which is integrated with App Service.
 
-:::image type="content" source="../media/azure-monitor-conceptual-overview.png" alt-text="A conceptual diagram displays Azure Monitor metrics and logging.":::
+:::image type="content" source="../media/azure-monitor-conceptual-overview.png" alt-text="Diagram that displays conceptual Azure Monitor metrics and logging.":::
 
 ## Monitoring
 
@@ -8,7 +8,7 @@ Azure Monitor provides several sets of data and functionality you can use to wat
 
 * **Platform metrics and activity log**: These metrics and the log are collected and stored *automatically*. You can route them to other locations by using a diagnostic setting.
 * **Resource logs**: These logs *aren't automatically collected* and stored. You must create a diagnostic setting and route them to one or more locations.
-* **Alerts**: They proactively notify you when important conditions are found in your monitoring data. You can use them to identify and address issues in your system before your customers notice them.
+* **Alerts**: Alerts proactively notify you when important conditions are found in your monitoring data. You can use them to identify and address issues in your system before your customers notice them.
   
   If you're running an application on App Service via Azure Monitor, Azure Application Insights offers more types of alerts:
 
@@ -21,7 +21,7 @@ Azure Monitor provides several sets of data and functionality you can use to wat
     | Activity log | Delete web app | When an app is deleted|
     | Activity log | Restart web app| When an app is restarted|
     | Activity log | Stop web app| When an app is stopped|
-* **Quotas**: They place limits on the resources that the app can use, such as CPU, memory, bandwidth, and file system storage. When an app exceeds its pricing tier quota, App Service returns 403 errors, stops the app temporarily, or reports other failures.
+* **Quotas**: Quotas place limits on the resources that the app can use, such as CPU, memory, bandwidth, and file system storage. When an app exceeds its pricing tier quota, App Service returns 403 errors, stops the app temporarily, or reports other failures.
 
 You can increase or remove quotas from your app by upgrading your App Service plan. To review the status of the various quotas and metrics that affect an app, review your quotas in the Azure portal for your App Service.
 
@@ -31,7 +31,7 @@ App Service stores log files helpful to resolving runtime issues:
 
 |Log type|Purpose|
 |--|--|
-| Deployment, installation, and start up| This log ends in `_docker.log` and is how you debug your deployment and container startup issues. Every app runs in a container on App Service. When you pick the runtime, a container with that runtime is provided for you.|
+| Deployment, installation, and start up| This log ends in `_docker.log`, and it's how you debug your deployment and container startup issues. Every app runs in a container on App Service. When you pick the runtime, a container with that runtime is provided for you.|
 |Running web app| This log ends in `_default_docker.log` and includes all the information your running web app provides for logging.|
 
 Your logs can grow beyond the file size limits provided. You can use a process to offload the files to a service with more space. You can also turn off logging at the host.

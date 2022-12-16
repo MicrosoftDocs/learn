@@ -16,3 +16,4 @@ _dependentPackages/
 .DS_Store
 Thumbs.db
 *.bak
+.fake

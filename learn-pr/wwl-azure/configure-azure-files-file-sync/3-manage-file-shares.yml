@@ -3,8 +3,8 @@ uid: learn.wwl.configure-azure-files-file-sync.manage-file-shares
 title: Manage Azure Files shares
 metadata:
   title: Manage Azure Files shares
-  description: "Create Azure Files shares and connect to the shares from Windows or Linux machines."
-  ms.date: 11/01/2022
+  description: "Manage Azure Files shares"
+  ms.date: 11/17/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

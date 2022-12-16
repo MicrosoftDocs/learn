@@ -7,13 +7,14 @@ metadata:
   ms.date: 02/25/2022
   author: ntrogh
   ms.author: nicktrog
+  manager: jmartens  
   ms.topic: interactive-tutorial
   ms.prod: learning-azure 
 title: Set up your first development lab by using Azure DevTest Labs
 summary: "Create a development virtual machine from a base image and pre-install required software. You will use a Remote Desktop client to access the VM."
 abstract: |
   By the end of this module, you'll be able to:
-    - Configure a DevTest lab with a curated list of images by using the Azure portal.
+    - Configure DevTest labs with a curated list of images by using the Azure portal.
     - Provision a pre-configured VM with all the required software, tools, and artifacts.
     - Claim and access a VM by using Remote Desktop client software.
 prerequisites: |

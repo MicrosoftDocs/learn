@@ -4,7 +4,7 @@ The console output from actions is available directly from within the GitHub UI.
 
 Select **Actions** on the top repository menu to see a list of executed workflows to see the output.
 
-Next, click on the name of the job to see the output of the steps.
+Next, click on the job's name to see the steps' output.
 
 :::image type="content" source="../media/console-output-from-actions-63af6157.png" alt-text="Console Output from Actions.":::
 
@@ -50,7 +50,7 @@ steps:
 
 GitHub offers several learning tools for actions.
 
-[GitHub Actions: hello-world](https://lab.github.com/githubtraining/github-actions:-hello-world)
+[GitHub Actions: hello-world](https://github.com/skills/hello-github-actions)
 
 You'll see a basic example of how to:
 

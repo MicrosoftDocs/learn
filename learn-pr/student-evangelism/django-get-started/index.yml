@@ -34,7 +34,6 @@ roles:
 - developer
 products:
 - azure
-- vs-code
 - azure-app-service
 units:
 - learn.django.get-started.introduction

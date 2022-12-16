@@ -11,7 +11,7 @@ Your organization is exploring Azure virtual networking capabilities. As the Azu
 
 ## Architecture diagram
 
-:::image type="content" source="../media/lab-08.png" alt-text="Architecture diagram as explained in the text.":::
+:::image type="content" source="../media/lab-04.png" alt-text="Architecture diagram as explained in the text.":::
 
 > [!NOTE]
 > Tasks 1 - 4 focus on IP addresses and access. 
@@ -47,5 +47,6 @@ Your organization is exploring Azure virtual networking capabilities. As the Azu
 > Click on the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
 
 [![Screenshot of the simulation page.](../media/simulation-networks-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-104%20Exam%20Guide%20-%20Microsoft%20Azure%20Administrator%20Exercise%208?azure-portal=true)
+
 
 

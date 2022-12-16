@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Set an alert in your Log Analytics workspace and view alerts
   description: Exercise - Set and view an alert in your Log Analytics workspace.
   ms.date: 04/22/2022
-  author: MarkusVi
-  ms.author: markvi
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Set an alert in your Log Analytics workspace and view alerts

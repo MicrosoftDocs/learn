@@ -40,10 +40,10 @@ quiz:
         - content: "Azure Kubernetes Service"
           isCorrect: false
           explanation: "Incorrect. Azure Kubernetes Service is a managed Kubernetes offer"
-        - content: "Azure Spring Cloud"
+        - content: "Azure Spring Apps"
           isCorrect: false
-          explanation: "Incorrect. Azure Spring Cloud is a managed service for running Spring Boot and Spring Cloud applications."
-    - content: "With a platform as a service offer such as Azure App Service or Azure Spring Cloud, who manages your Java Virtual Machine (JVM)?"
+          explanation: "Incorrect. Azure Spring Apps is a managed service for running Spring Boot and Spring Cloud applications."
+    - content: "With a platform as a service offer such as Azure App Service or Azure Spring Apps, who manages your Java Virtual Machine (JVM)?"
       choices:
         - content: "You are responsible for updating and patching your JVM."
           isCorrect: false
