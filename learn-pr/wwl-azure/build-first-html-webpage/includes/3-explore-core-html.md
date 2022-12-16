@@ -26,6 +26,10 @@ Headers are common elements that are numbered one through six, with one being th
 <h1>Resume</h1>
 ```
 
+The following video demonstrates how HTML gets transformed by browsers into formatted information.
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE5d5qK]
+
 ## Learning How to Use Tags
 
 There are many tags available for programmers to use. Knowing which ones are available and how they're used is called **syntax**. At this point, we won't get bogged down in the details. What's important is that you understand what a tag is and how it's used to make up an element.
