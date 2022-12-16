@@ -55,7 +55,4 @@ quiz:
     - content: "Basic"
       isCorrect: true
       explanation: "Correct. Basic is the cheapest tier available, but lacks some features such as geo-redundant backups."
-    - content: "Hyperscale"
-      isCorrect: false
-      explanation: "Incorrect. Hyperscale is a deployment option for Azure Database for PostgreSQL, not pricing tier."
 
