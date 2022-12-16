@@ -1,12 +1,10 @@
 Enterprises usually use its private mobile networks to host various UEs. Each UE uses a SIM or eSIM to identify itself to the network.
 
-To effectively manage the SIMs for the UEs, Azure Private 5G Core allows you to define SIM polices that'll be applied to the SIMs. SIM polices ensure that the network requirements of each UE are satisfied and the packet flows from each device are appropriately controlled.
+To effectively manage the network traffic between the UEs and the data networks (DNs), Azure Private 5G Core allows you to define SIM polices that'll be applied to the SIMs. SIM polices ensure that the network requirements of each UE are satisfied and the packet flows from each device are appropriately controlled.
 
 Azure Private 5G Core also allows you to define services, which are sets of rules for network traffic handling. With separately defined services and SIM policies, you'll have the flexibility to reuse a service in one or more SIM policies.
 
-After the deployment a private mobile network, you'll need to manage the SIMs for attached UEs on a routine basis. For example, you may need to provision a SIM for a newly attached device, or you may need to modify a SIM policy due to application requirement changes.
-
-This unit introduces you to the SIM management tasks, like SIM provisioning, SIM policy configuration, or service configuration.
+This unit introduces you to the policy control tasks, like SIM policy configuration or service configuration.
 
 > [!NOTE]
 > To be able to design and configure services and SIM policies, you need to be familiar with network traffic at the packet level.
@@ -129,6 +127,10 @@ For detailed instructions on configuring a SIM policy through the Azure portal, 
 
 ### Configure a service and a SIM policy through an ARM template
 
+If you are familiar with ARM templates, you can create an ARM template that specifies the services and SIM policies you want to create, and then use the template to create all the resources in one go.
 
+From the [Azure Private 5G Core REST API](/rest/api/mobilenetwork/) document, you can get a list of fields that you need to specify for a service or a SIM policy. Because the Resource Manager converts a template into REST API operations when you deploy the template, the parameters in the API requests are the same as the fields in the ARM template. For example, for a service, you can find information about the `servicePrecedence` field in the Azure REST API article [Services - Create Or Update](/rest/api/mobilenetwork/services/create-or-update).
 
-## Manage SIMs and SIM groups
+For details about the fields for a service, see [Services](/rest/api/mobilenetwork/services). For details about the fields for a SIM policy, see [SIM policies](/rest/api/mobilenetwork/sim-policies).
+
+The article [Configure a service and SIM policy using an ARM template](/azure/private-5g-core/configure-service-sim-policy-arm-template) provides an ARM template example, with which you can deploy a service and a SIM policy.

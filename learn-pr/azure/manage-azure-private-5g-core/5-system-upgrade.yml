@@ -11,4 +11,4 @@ metadata:
   ms.service: learning-private-5g-core
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-system-upgrade.md)]
+  [!include[](includes/5-system-upgrade.md)]

@@ -11,4 +11,4 @@ metadata:
   ms.service: learning-private-5g-core
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-sim-management.md)]
+  [!include[](includes/4-sim-management.md)]
