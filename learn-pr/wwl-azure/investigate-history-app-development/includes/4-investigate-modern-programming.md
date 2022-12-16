@@ -8,7 +8,7 @@ In the past, everything a program needed to work had to be included in or with t
 
 Here's an analogy. Suppose, in a time before mobile phones, you were on a television show where you had to answer quiz questions. You can bring any people or books you need to answer questions on five different topics that you're given ahead of time. You can't call anyone to ask questions or to look things up. In order to be able to answer questions, you'd have to bring all the experts and books with you to the show.
 
-![Diagram showing a person taking on online quiz.](../media/online-quiz.png)
+![Diagram showing a person taking on online quiz.](../media/quiz-show.jpeg)
 
 Now add a mobile phone. You don't need to bring all those things with you. If you need to ask someone a question, you call them. If you want to look something up in a book, you look it up on the internet. You only access the information, people, and books when you need them.
 
