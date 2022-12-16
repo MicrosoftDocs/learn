@@ -1,1 +1,1 @@
-Intro to the Knowledge Check gauntlet, where you're mettle will be tested in a sort of "two go in, but only one comes out" duel with the Knowledge Check questionnaire. Few applicants survive the gauntlet of knowledge-probing questions to win the coveted badge! Will *you?*
+Choose the best response for each question. Then, select **Check your answers**.

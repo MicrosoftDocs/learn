@@ -31,9 +31,20 @@ quiz:
     - content: GitHub Webhooks and Azure Pipelines
       isCorrect: false
       explanation: Incorrect. Webhooks aren't used in this application.
-    - content: Azure Devops
+    - content: Azure DevOps
       isCorrect: false
       explanation: Incorrect. A Static Web App can use Azure Repos and Azure Pipelines, but in this module we picked a different architecture.
     - content: GitHub repo with GitHub Actions
       isCorrect: true
       explanation: You're right. GitHub Actions monitors the main branch of the repo for changes, then calls a GitHub Actions workflow to build and deploy the changes.
+  -  content: Which of the following  statements is true about the Web PubSub event handler in this module?
+     choices:
+     - content: The event handler triggers GitHub Actions to update the static web app.
+       isCorrect: false
+       explanation: Incorrect. Updates to source code in the GitHub repo trigger the GitHub Actions to deliver an updated static web app.
+     - content: The event handler handles client requests to Web PubSub and maps them to APIs in the static web app. 
+       isCorrect: true
+       explanation: Correct! The event handler handles an incoming client event to Web PubSub, such as the login event, and maps it to a backend API.
+     - content: The event handler initiates the client connection to Web PubSub.
+       isCorrect: false
+       explanation: Incorrect. The client connection to Azure Web PubSub uses a WebSocket connection.
