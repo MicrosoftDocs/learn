@@ -19,4 +19,4 @@ Congratulations on completing this training module. You've learned how to design
 
 - For more information about architecture solutions in Azure, see the [Microsoft Azure Well-Architected Framework guide](/azure/architecture/framework) in the Azure Architecture Center.
 
-- Read [Mission Critical Well-Architected Review](https://learn.microsoft.com/assessments/23513bdb-e8a2-4f0b-8b6b-191ee1f52d34) to learn how to evaluate the state of your health monitoring solution in your existing mission critical workload and to take any recommended actions to improve it.
+- Read [Mission Critical Well-Architected Review](/assessments/23513bdb-e8a2-4f0b-8b6b-191ee1f52d34) to learn how to evaluate the state of your health monitoring solution in your existing mission critical workload and to take any recommended actions to improve it.
