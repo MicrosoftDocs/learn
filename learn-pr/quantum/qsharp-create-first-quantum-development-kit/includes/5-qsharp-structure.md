@@ -15,7 +15,7 @@ While a bit (binary digit) can have a value of either zero or one, a qubit is in
 
 ## What's in a Q# program?
 
-Here's the Q# program that you ran in the previous part:
+Here's the Q# program that you ran in the previous unit:
 
 ```qsharp
 namespace HelloQuantum {
@@ -65,7 +65,7 @@ namespace HelloQuantum {
 
 More commonly, you use the `open` directive to make your code more succinct and easier to read.
 
-This example does the same thing as the previous example, except this one uses the `open` directive to bring the `Microsoft.Quantum.Intrinsic` namespace into the program:
+This example does the same thing as the previous example, except it uses the `open` directive to bring the `Microsoft.Quantum.Intrinsic` namespace into the program:
 
 ```qsharp
 namespace HelloQuantum {
@@ -79,7 +79,7 @@ namespace HelloQuantum {
 }
 ```
 
-Here, you simply specify `Message` and the compiler understands which namespace it belongs to.
+Here, you just specify `Message` and the compiler understands which namespace it belongs to.
 
 The Q# documentation provides complete reference documentation for each built-in library. For more information, see [Q# libraries](/quantum/user-guide/libraries/additional-libraries?tabs=tabid-csproj).
 

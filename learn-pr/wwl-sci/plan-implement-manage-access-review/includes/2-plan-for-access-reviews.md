@@ -1,6 +1,6 @@
 ## What is an access review?
 
-An **Access Review** as the name implies, is a planned review of the access needs, rights, and history of user access. Access Reviews help users ensure that the right people have the right access to the right resources. They mitigate access risk by protecting, monitoring, and auditing access to critical assets—while ensuring employee and business partner productivity. Finally, the access review is performed in Azure AD Identity Governance. An Azure AD premium P2 license is required.
+An **Access Review** as the name implies, is a planned review of the access needs, rights, and history of user access. Access Reviews help users ensure that the right people have the right access to the right resources. They mitigate access risk by protecting, monitoring, and auditing access to critical assets—while ensuring employee and business partner productivity. Finally, the access review is performed in Azure Active Directory (Azure AD), part of Entra, Identity Governance. An Azure AD premium P2 license is required.
 
 Consider your organizational needs to determine the strategy for deploying access reviews in your environment.
 

@@ -3,7 +3,7 @@ uid: learn.determine-endpoint-management-implementation
 metadata:
   title: Determine your endpoint management implementation
   description: After completing this module, you'll have a better understanding of your endpoint management objectives, device inventory considerations, licensing needs, infrastructure objectives, and rollout plans.
-  ms.date: 07/11/2022
+  ms.date: 12/13/2022
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
@@ -11,7 +11,7 @@ metadata:
 title: Determine your endpoint management implementation
 summary: Microsoft Endpoint Manager helps you protect the devices, apps, and data that the people of your organization use to be productive. After completing this module, you'll have a better understanding of your endpoint management objectives, device inventory considerations, licensing needs, infrastructure objectives, and rollout plans. Additionally, you'll consider how to best communicate your endpoint plans with end users and prepare for questions and support.
 abstract: | 
-  In this module, you will:
+  In this module, you'll:
   - Determine your organization's endpoint management objectives.
   - Inventory your endpoint management devices.
   - Determine endpoint management licensing.
