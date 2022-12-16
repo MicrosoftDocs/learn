@@ -24,13 +24,13 @@ Let’s start by creating an Azure Function App in the portal.
     | **Instance Details** |
     | Function App name | *\<your-webapp-name\>*. Enter a globally unique name for your function app. |
     | Publish | Code |
-    | Runtime stack | .NET |
-    | Version | 3.1 |
+    | Runtime stack | Select one of the languages supported for in-portal development: **.NET**, **Node.js**, **Python**, or **PowerShell Core**.  |
+    | Version | Select an appropriate version for your language runtime. |
     | Region | Select a location close to you. |
     | **Operating system** |
     | Operating System | Windows |
     | **Plan** |
-    | Plan type | Consumption (Serverless). When using the Consumption Plan type, you're charged for each execution of your function, and resources are automatically allocated based on your app workload.|
+    | Plan type | Consumption (Serverless). When using the Consumption Plan type, you're charged for each execution of your function, and resources are automatically allocated based on your app workload. |
 
 1. Select **Next : Hosting**, and enter the following values for each setting.
 
