@@ -7,8 +7,8 @@ Python supports an interactive console experience, which allows you to type in c
 To use the REPL, type `python` in your console. You will get is a prompt similar to the below output, which then waits for you to input commands:
 
 ```output
-Python 3.9.5 (default, May 27 2021, 19:45:35)
-[GCC 9.3.0] on linux
+Python 3.9.14 (main, Oct 29 2022, 22:18:10) 
+[GCC 11.2.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
@@ -60,8 +60,8 @@ NAME
     string - A collection of string constants.
 
 MODULE REFERENCE
-    https://docs.python.org/3.5/library/string.html
-
+    https://docs.python.org/3.9/library/string
+    
     The following documentation is automatically generated from the Python
     source files.  It may be incomplete, incorrect or include features that
     are considered implementation detail and may vary between Python

@@ -1,15 +1,16 @@
 Microsoft Endpoint Manager provides the services and tools you need in one location to manage your organization's endpoints. 
 
-Modern IT provides cloud intelligence at the core. Microsoft Endpoint Manager provides this modern management. Endpoint Manager doesn't require you to make an either/or decision between on-premises and cloud management. You can do both, and modernize at your own pace, to manage risk in a smart way.
+Modern IT provides cloud intelligence at the core, and Microsoft Endpoint Manager provides this modern management. Endpoint Manager doesn't require you to make an either/or decision between on-premises and cloud management. You can do both and modernize at your own pace to manage risk in a smart way.
 
 In this module, you've learned about the following benefits of Microsoft Endpoint Manager:
+
 - Intelligent and unified endpoint security
 - Flexible and unified endpoint management
 - Data protection without device enrollment
 - Increased end-user productivity
 - Benefits of co-management
 - Beneficial return on investment
- 
+
 ## Next steps
 
 To learn more about Microsoft Endpoint Manager, continue to the next learning module:
@@ -23,7 +24,7 @@ To get expert guidance to help plan, deploy, and migrate your organization to Mi
 
 ## Learn more
 
-For more information about Microsoft Endpoint Manager, see the following resources:
+For more information about Microsoft Endpoint Manager, check out the following resources:
 
 - [Microsoft Endpoint Manager documentation](/mem/?azure-portal=true)
 - [Modern management and security principles driving our Microsoft Endpoint Manager vision](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/modern-management-and-security-principles-driving-our-microsoft/ba-p/946797?azure-portal=true)

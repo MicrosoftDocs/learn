@@ -6,6 +6,7 @@ metadata:
   ms.date: 5/10/2022
   author: alexwolfmsft
   ms.author: alexwolf
+  manager: jmartens
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
 title: Remotely debug ASP.NET Core apps hosted on Azure App Service using Visual Studio
@@ -27,8 +28,7 @@ products:
 subjects:
   - development-tools
 prerequisites: |
-  - A local installation of the [.NET SDK](https://dotnet.microsoft.com/download)
-  - [Visual Studio 2022](https://visualstudio.com) with the Azure development workload installed
+  - [Visual Studio 2022](https://visualstudio.com) with the **ASP.NET and web development** and the **Azure development** workload installed
 units:
 - learn.dotnet-debug-visual-studio-app-service.introduction
 - learn.dotnet-debug-visual-studio-app-service.remote-debugging-concepts

@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-application-configuration-data.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/13-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following roles is responsible for generating and maintaining the life cycle of configuration values?"
+    choices:
+    - content: "Configuration Custodian."
+      isCorrect: true
+      explanation: "Correct. It's the Configuration Custodian. It includes CRUD on keys, ensuring the security of secrets, regeneration of keys and tokens, defining configuration settings such as Log levels for each environment."
+    - content: "Configuration Consumer."
+      isCorrect: false
+      explanation: "Incorrect. It's the Configuration Custodian. It includes CRUD on keys, ensuring the security of secrets, regeneration of keys and tokens, defining configuration settings such as Log levels for each environment."
+    - content: "Developer."
+      isCorrect: false
+      explanation: "Incorrect. It's the Configuration Custodian. It includes CRUD on keys, ensuring the security of secrets, regeneration of keys and tokens, defining configuration settings such as Log levels for each environment."
+  - content: "Which of the following choices enables applications to have no direct access to the secrets, which helps improve the security &amp; control?"
+    choices:
+    - content: "Library."
+      isCorrect: false
+      explanation: "Incorrect. Azure Key Vault allows you to manage your organization's secrets and certificates in a centralized repository."
+    - content: "Azure Key Vault."
+      isCorrect: true
+      explanation: "Correct. Azure Key Vault allows you to manage your organization's secrets and certificates in a centralized repository."
+    - content: "Azure Pipelines."
+      isCorrect: false
+      explanation: "Incorrect. Azure Key Vault allows you to manage your organization's secrets and certificates in a centralized repository."
+  - content: "Which of the following choices isn't a benefit of Azure Key Vault?"
+    choices:
+    - content: "Code secure files."
+      isCorrect: true
+      explanation: "Correct. Azure Key Vault helps with Secrets management, Key management, Certificate management, and store secrets backed by hardware security modules."
+    - content: "Certificate management."
+      isCorrect: false
+      explanation: "Incorrect. Azure Key Vault helps with Secrets management, Key management, Certificate management, and store secrets backed by hardware security modules."
+    - content: "Secrets management."
+      isCorrect: false
+      explanation: "Incorrect. Azure Key Vault helps with Secrets management, Key management, Certificate management, and store secrets backed by hardware security modules."

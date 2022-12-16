@@ -2,8 +2,8 @@
 uid: learn.wwl.configure-storage-security
 metadata:
   title: Configure Azure Storage security
-  description: "Learn how to configure common Azure Storage security features like storage access signatures."
-  ms.date: 11/04/2022
+  description: "Configure Azure Storage security"
+  ms.date: 11/18/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

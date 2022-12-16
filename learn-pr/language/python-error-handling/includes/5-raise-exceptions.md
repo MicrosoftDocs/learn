@@ -71,7 +71,7 @@ def water_left(astronauts, water_left, days_left):
             # If argument is an int, the following operation will work
             argument / 10
         except TypeError:
-            # TypError will be raised only if it isn't the right type 
+            # TypeError will be raised only if it isn't the right type 
             # Raise the same exception but with a better error message
             raise TypeError(f"All arguments must be of type int, but received: '{argument}'")
     daily_usage = astronauts * 11

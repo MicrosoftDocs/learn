@@ -11,7 +11,7 @@ During the process, you'll:
 
 ## Update the pipeline definition to add a preview stage
 
-Here, you add a new stage to your pipeline that runs the what-if operation.
+Here, you'll add a new stage to your pipeline that runs the what-if operation.
 
 1. In Visual Studio Code, open the _azure-pipelines.yml_ file in the _deploy_ folder.
 
@@ -64,13 +64,13 @@ Here, you add a new stage to your pipeline that runs the what-if operation.
 
 ## Update the pipeline definition to require an environment and approval
 
-Here, you configure the **Deploy** stage to run against the **Website** environment that you created previously. You convert the **Deploy** stage to run a deployment job instead of a standard job, and you configure it to deploy to the environment.
+Here, you'll configure the **Deploy** stage to run against the **Website** environment that you created previously. You'll convert the **Deploy** stage to run a deployment job instead of a standard job and configure it to deploy to the environment.
 
 1. In the _azure-pipelines.yml_ file in Visual Studio Code, replace the **Deploy** stage definition with the following code:
 
    :::code language="yaml" source="code/7-pipeline.yml" range="61-82" :::
 
-   Notice that you define a new `checkout` step. Unlike normal jobs, deployment jobs need to be configured to check out (download) the files from your Git repository. If you don't do this step, the deployment job won't be able to read your Bicep file. You could instead consider using _pipeline artifacts_ to send files between pipeline stages. We link to more information about artifacts in the summary.
+   Notice that you defined a new `checkout` step. Unlike normal jobs, deployment jobs need to be configured to check out (download) the files from your Git repository. If you don't do this step, the deployment job won't be able to read your Bicep file. You could instead consider using _pipeline artifacts_ to send files between pipeline stages. We link to more information about artifacts in the summary.
 
 1. Save the file.
 
@@ -80,7 +80,7 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
    :::code language="yaml" source="code/7-pipeline.yml" highlight="43-59, 61-83" :::
 
-   If it doesn't, update it to match this example, and then save it.
+   If it doesn't, update it to match this example, then save it.
 
 1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
 

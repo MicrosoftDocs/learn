@@ -79,7 +79,7 @@ Traditional data warehouses usually aren't ideal for managing high-speed, stream
 
 By contrast, Azure Data Lake Storage was built with real-time data in mind. Azure Data Lake Storage:
 
-- Can ingest real-time data directly from an instance of Apache Storm on Azure HDInsight, Azure IoT Hub, Azure Event Hubs, or Azure Stream Analytics.
+- Can ingest real-time data directly from an instance of Azure IoT Hub, Azure Event Hubs, or Azure Stream Analytics.
 - Doesn't apply a schema during ingestion, so there's no incoming bottleneck for real-time data.
 - Works with semi-structured data.
 - Lets you ingest all your real-time data into your storage account.

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.introduction-to-data-streaming.understand-windows
+title: Understand window functions
+metadata:
+  title: Understand window functions
+  description: "Understand window functions"
+  ms.date: 12/08/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/3b-understand-windows.md)]

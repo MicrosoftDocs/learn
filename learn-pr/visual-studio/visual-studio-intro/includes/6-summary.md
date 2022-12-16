@@ -19,9 +19,6 @@ Recall the example at the beginning of this module of learning to program your f
 ## Resources
 
 * [C# testing in Visual Studio](/training/modules/visual-studio-test-tools)
-* [Visual Studio version control docs](/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp)
 * [Visual Studio installation guide](/visualstudio/install/install-visual-studio)
-* [Visual Studio documentation](/visualstudio/ide)
 * [Visual Studio Editor documentation](/visualstudio/ide/index-writing-code)
-* [Visual Studio Debugger documentation](/visualstudio/debugger/debugger-feature-tour)
 * [Visual Studio Debugger documentation](/visualstudio/debugger/debugger-feature-tour)

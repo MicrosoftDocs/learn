@@ -1,6 +1,6 @@
 The process layer of data-flow diagrams is the second layer. You should use it for most systems. Data-flow diagrams at this layer contain separate data-flow diagrams detailing each system part. 
 
-**Goal:** Represent **secondary system parts** with enough context to help you understand how they work and interact with each other.
+**Goal**: Represent **secondary system parts** with enough context to help you understand how they work and interact with each other.
 
 Similar to the system layer, data-flow diagrams in the process layer should fit in a single page and contain all processes for their respective system parts.
 
@@ -17,8 +17,8 @@ In some cases, system parts may require more granular context because of their i
 
 |Step|Guidance|
 |----|--------|
-|1|Create a process element with a clear description label, such as "Web Service Worker Name."|
-|2|Create a new file and name it exactly the same way as the description label, with a path-like structure, such as "Web Service Name - Web Service Worker Name."|
+|1|Create a process element with a clear description label, such as *Web Service Worker Name*.|
+|2|Create a new file and name it exactly the same way as the description label, with a path-like structure, such as *Web Service Name - Web Service Worker Name*.|
 |3|Focus the data-flow diagram only on the system subpart you're "zooming into."|
 
 The result will be a series of data-flow diagrams in the **subprocess layer**, known as layer 2.
