@@ -16,7 +16,7 @@ The following video demonstrates how to install CodeSwing in Visual Studio Code.
 1. Navigate to the **resume** folder you created earlier and select **Select Folder**.
 1. When prompted to **Let site view files**, select **View Files**.
 1. Select the **Extensions** button.
-    >![Extensions icon](../media/extensions.png)
+    >:::image type="content" source="../media/extensions.png" alt-text="Screenshot of Extensions icon.":::
 1. In the **Search Extensions in Marketplace** text box, type **CodeSwing**.
 1. Select **Install** to install **CodeSwing**.
 1. Open the Command Palette by selecting **Ctl-Shift-P** or **Cmd-Shift-P** on a Mac.
@@ -74,7 +74,7 @@ Each of the elements in the HTML does specific things. The following table descr
 
 2. As you type, the page will automatically update; the final result will appear similar to the following:
 
-  ![Screenshot of resume structure](../media/html-structure.png)
+  :::image type="content" source="../media/html-structure.png" alt-text="Screenshot of resume structure.":::
 
 ### Reviewing the code
 

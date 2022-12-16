@@ -1,6 +1,6 @@
 <!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
 
-    Goal: orient the learner to the area covered in this module
+    Goal: familiarize the learner with the area covered in this module
 
     Heading: none
 
