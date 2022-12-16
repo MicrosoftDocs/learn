@@ -1,8 +1,8 @@
 # What is CIEM? #
 
-In order to understand Microsoft Entra Permissions Management, it is first important to understand the product category that it belongs to.
+In order to understand Microsoft Entra Permissions Management, it's first important to understand the product category that it belongs to.
 
-Cloud infrastructure entitlement management, or CIEM (pronounced *kim*), is a SaaS approach for managing identities and permissions in cloud environments. CIEM is a newer approach that leverages cloud infrastructure and platform services (CIPS) to manage human and workload identities, entitlements, permissions, and operation details across multiple cloud environments.
+Cloud infrastructure entitlement management, or CIEM (pronounced *kim*), is a SaaS approach for managing identities and permissions in cloud environments. CIEM is a newer approach that applies cloud infrastructure and platform services (CIPS) to manage human and workload identities, entitlements, permissions, and operation details across multiple cloud environments.
 
 ## Why CIEM important?
 
@@ -12,7 +12,7 @@ Managing permissions with a CIEM approach in your organization allows you to pre
 
 ![Image showing the gap between Permissions Granted and Permissions Used](../media/permissions-gap.png)
 
-Permissions Gap is the space in which permissions granted go unused or unmonitored. Permissions Gap can  become a problem as it expands the attack surface in your organization's cloud infrastructure, and leaves you open to risk of a security breach from accidental or malicious permissions use. 
+Permissions Gap is the space in which permissions granted go unused or unmonitored. Permissions Gap can become a problem as it expands room for a cyber attack in your organization's cloud infrastructure. This can leave you open to risk of a security breach from accidental or malicious permissions use. 
 
 ## CIEM market growth & viability
 
@@ -24,7 +24,7 @@ The benefits of CIEM translate into these key areas that are driving the CIEM ma
 
 ## How CIEM helps organizations
 
-CIEM contributes to a Zero Trust security framework by continuously enforcing a least-privilege access model. Implementing a CIEM solution into a zero-trust framework allows an organization to move beyond static, assumption-based permission processes and into continuous, activity-based permissions management to helping the organization monitor, get alerts, and remediate anomalous identity behavior, unauthorized identities and roles.
+CIEM contributes to a Zero Trust security framework by continuously enforcing a least-privilege access model. Implementing a CIEM solution into a zero-trust framework allows an organization to move beyond static, assumption-based permission processes, and into continuous permissions management that helps the organization monitor, get alerts, and remediate anomalous identity behavior.
 
 - **GET GRANULAR CROSS-CLOUD VISIBILITY**
 

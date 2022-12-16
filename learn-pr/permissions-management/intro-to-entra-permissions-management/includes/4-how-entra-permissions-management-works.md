@@ -10,7 +10,7 @@ With Microsoft Entra Permissions Management, your organization can adopt a new, 
 
 Permissions Management allows you to address three key use cases in securing and managing identity permissions in cloud environments: *discover*, *remediate*, and *monitor*.
 
-:::image type="content" source="../media/discover-remediate-monitor.png" alt-text="Image of the Discover, Remediate, and Monitor workflow of Entra Permisssions Management."lightbox="../media/discover-remediate-monitor.png":::
+:::image type="content" source="../media/discover-remediate-monitor.png" alt-text="Image of the Discover, Remediate, and Monitor workflow of Entra Permissions Management."lightbox="../media/discover-remediate-monitor.png":::
 
 ### Discover & Assess ###
 
@@ -52,7 +52,7 @@ This interactive video will help you to become more familiar with what securing 
 
 ### Permissions Management Architecture ###
 
-The Permissions Management architecture is comprised of data processing and analytics and data collection that create a SaaS structure.
+The Permissions Management architecture is composed of data processing and analytics and data collection that create a SaaS structure.
 
 :::image type="content" source="../media/epm_architecture.png" alt-text="Screen with Entra Permissions Management architecture."lightbox="../media/epm_architecture.png":::
 
@@ -68,7 +68,7 @@ The Permissions Management architecture is comprised of data processing and anal
 
 #### Key Terminology ####
 
-Below are some key terms used within the Permissions Management framework.
+Here are some key terms used within the Permissions Management framework.
 
 :::image type="content" source="../media/epm-architecture-terminology.png" alt-text="Screen with Entra Permissions Management Architecture key terminology."lightbox="../media/epm-architecture-terminology.png":::
 
