@@ -5,10 +5,10 @@ metadata:
   title: Introduction
   description: Learn about the objectives of this health modeling training module.
   ms.date: 12/12/2022
-  author: PageWriter-MSFT
-  ms.author: msimecek
+  author: msimecek
+  ms.author: prwilk
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure #TBD
-durationInMinutes: 2 #TBD
+  ms.prod: learning-azure
+durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]

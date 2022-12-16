@@ -5,10 +5,10 @@ metadata:
   title: Summary
   description: In this module, you've designed a health model for a production-ready, mission-critical solution.
   ms.date: 12/07/2022
-  author: PageWriter-MSFT
-  ms.author: msimecek
+  author: msimecek
+  ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 2 #TBD
+durationInMinutes: 4
 content: |
   [!include[](includes/7-summary.md)]

@@ -5,11 +5,11 @@ metadata:
   title: What is health modeling?
   description: Learn what a health model is and why you should use it.
   ms.date: 12/12/2022
-  author: PageWriter-MSFT
-  ms.author: msimecek
+  author: msimecek
+  ms.author: prwilk
   ms.topic: interactive-tutorial 
-  ms.prod: learning-azure #TBD
-durationInMinutes: 5 #TBD
+  ms.prod: learning-azure
+durationInMinutes: 7
 content: |
   [!include[](includes/2-what-is-health-modeling.md)]
 

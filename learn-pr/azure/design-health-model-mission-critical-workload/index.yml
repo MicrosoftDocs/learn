@@ -4,10 +4,10 @@ metadata:
   title: Design a health model for your mission-critical workload
   description: Improve your observability practices by defining a health model. The model gives you the ability to quickly identify and troubleshoot issues in your system.
   ms.date: 11/21/2022
-  author: PageWriter-MSFT
-  ms.author: msimecek
+  author: msimecek
+  ms.author: prwilk
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure #TBD
+  ms.prod: learning-azure
 title: Design a health model for your mission-critical workload
 summary: A mission-critical workload needs to be continuously monitored to ensure degraded application components are caught early. A well-designed health model gives you that ability, based on metrics and thresholds that are important to you. Through optimized queries and visualization, you can identify the cascading impact of degraded components and troubleshoot issues early before they can cause an outage.
 abstract:  | 
