@@ -17,9 +17,9 @@ abstract: |
   - Estimate the quantum resources that you need to run your programs.
   - Explore algorithms that use quantum properties to outperform classical algorithms.
 prerequisites: |
-  - The latest version of [.NET](https://dotnet.microsoft.com/download?azure-portal=true)
+  - The latest version of [.NET](https://dotnet.microsoft.com/download?azure-portal=true&preserve-view=true)
   - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true&preserve-view=true)
-  - The [Quantum Development Kit](/quantum/quickstarts/install-command-line?tabs=tabid-vscode&azure-portal=true&view=qsharp-preview)
+  - The [Quantum Development Kit](/quantum/quickstarts/install-command-line?tabs=tabid-vscode&azure-portal=true&view=qsharp-preview&preserve-view=true)
   - An Azure Quantum workspace
   
   If you haven't installed these tools, we recommend that you go through the [Get started with Azure Quantum](/training/modules/get-started-azure-quantum/?azure-portal=true) and [Create your first Q# program by using the Quantum Development Kit](/training/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) modules to get set up and learn the basics.
