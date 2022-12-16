@@ -45,7 +45,7 @@ The application architecture has the following components:
 
 ## Layered health model structure
 
-As described in [Layered health modeling](/training/modules/design-health-model-mission-critical-workload/2-what-is-health-modeling#layered-health-model), a health model typically has a layered structure. The process of modeling health is a top-down design activity that starts with an architectural exercise to define all user flows and map dependencies between functional and logical components, which also implicitly map the dependencies between Azure resources. For this exercise, our health model has three layers: user flows, application components, and Azure resources.
+As described in [Layered health modeling](/training/modules/design-health-model-mission-critical-workload/2-what-is-health-modeling#layered-health-model), a health model typically has a layered structure. The process of modeling health is a top-down design activity that starts with an architectural exercise to define all user flows and map dependencies between functional and logical components, which also implicitly maps the dependencies between Azure resources. For this exercise, our health model has three layers: user flows, application components, and Azure resources.
 
 Identifying user flows and building the health model is a conceptual exercise at this stage. Use pen and paper, or a blank document to note the individual layers and draw the structure.
 
