@@ -19,7 +19,7 @@ Azure Front Door uses the anycast protocol with split TCP at layer 7 to route HT
 | Weighted         | Uses administrator-assigned weights to your backends when you want to distribute traffic across a set of backends. |
 | Session Affinity | Allows you to configure session affinity for your frontend hosts or domains. This helps ensure requests from the same end user are sent to the same backend. |
 
-Azure Front Door also provides backend health monitoring options. Azure Front Door periodically assesses the health of each of your configured backends. Responses from these backends enable Azure Front Door to determine which backend resources can your client requests be routed to.
+Azure Front Door also provides backend health monitoring options. Azure Front Door periodically assesses the health of each of your configured backends. Responses from these backends enable Azure Front Door to determine to which backend resources your client requests can be routed.
 
 > [!NOTE]
 > Azure Front Door is resilient to failures, including failures of an entire Azure region due to the many edge locations strategically placed around the world.
