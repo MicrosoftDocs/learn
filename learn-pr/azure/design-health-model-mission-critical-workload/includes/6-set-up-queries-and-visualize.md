@@ -136,6 +136,6 @@ You must visualize your health model and the data it continuously collects. Oper
 
 A common way to visualize system health information is to use dashboards as a way to combine the layered health model view with telemetry drill-down capabilities if needed.
 
-![Example health model dashboard showing layered model followed by drill-down data tables](../media/health-dashboard-example.png)
+:::image type="content" source="../media/health-dashboard-example.png" alt-text="Example health model dashboard showing a layered model followed by drill-down data tables":::
 
 Microsoft provides several data visualization technologies, including Azure Dashboards, Power BI, and Azure Managed Grafana. Azure Dashboards provides a tightly integrated out-of-the-box visualization solution for operational data within Azure Monitor. However, if you can't use Azure Dashboards to accurately represent the health model, then consider using Grafana as an alternative visualization solution. Grafana provides market-leading capabilities and an extensive open-source plugin ecosystem.

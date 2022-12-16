@@ -1,4 +1,4 @@
-As you build your health model, you define application health in the context of key business requirements by quantifying *healthy*, *degraded*, and *unhealthy* states in a layered and measurable format. Health states should be monitored starting with user flows at the top, down to platform resources at the bottom. Use a *traffic light* model to visually represent these health states by using green, yellow, and red as follows:
+As you build your health model, define application health in the context of key business requirements by quantifying *healthy*, *degraded*, and *unhealthy* states in a layered and measurable format. Health states should be monitored starting with user flows at the top, down to platform resources at the bottom. Use a *traffic light* model to visually represent these health states by using green, yellow, and red colors as follows:
 
 - **Green**: Healthy state. Key non-functional requirements are fully satisfied and resources are optimally utilized.
 - **Yellow**: Degraded state. The application is operational, but user experience might be affected. The operator's attention is required to mitigate this state.

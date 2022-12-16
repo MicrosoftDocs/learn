@@ -1,4 +1,4 @@
-Health modeling allows you to maximize reliability for your application. It focuses on thorough instrumentation and monitoring, which provides critical insight into your application's health. With this insight, you can quickly identify and resolve issues.
+Health modeling allows you to quickly identify and resolve reliability issues in your application. It focuses on thorough instrumentation and monitoring, but adds a layer of additional context, which provides critical insight into your application's health.
 
 ## Problem context
 
@@ -6,7 +6,7 @@ Most mission-critical applications are significant in terms of both scale and co
 
 Health modeling maximizes observability by augmenting raw data logs and metrics with key business requirements to quantify an application's health and drive automated evaluation of its health states.
 
-## Advantages of health monitoring
+## Advantages of health modeling
 
 To help you determine whether your environment is working as expected, it's important to monitor your application's health and the key metrics of its Azure resources. To understand these metrics and evaluate the overall health of your workload, you need a holistic understanding of all of the data monitored. A health model can assist with the evaluation of the overall health status by displaying a clear indication of the health of the workload, as opposed to raw data metrics. Representation of a health model with set indicators makes it intuitive for an operator to understand the overall health of the workload and respond quickly to any issues that might arise. Health status is typically presented as *traffic light* indicators, such as red, green, or yellow.
 
