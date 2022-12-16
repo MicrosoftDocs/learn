@@ -16,7 +16,7 @@ The following video demonstrates how to install CodeSwing in Visual Studio Code.
 1. Navigate to the **resume** folder you created earlier and select **Select Folder**.
 1. When prompted to **Let site view files**, select **View Files**.
 1. Select the **Extensions** button.
-    >:::image type="content" source="../media/extensions.png" alt-text="Extensions icon":::
+    >:::image type="content" source="../media/extensions.png" alt-text="Screenshot of Extensions icon.":::
 1. In the **Search Extensions in Marketplace** text box, type **CodeSwing**.
 1. Select **Install** to install **CodeSwing**.
 1. Open the Command Palette by selecting **Ctl-Shift-P** or **Cmd-Shift-P** on a Mac.
