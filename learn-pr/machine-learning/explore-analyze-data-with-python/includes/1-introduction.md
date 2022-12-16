@@ -12,15 +12,3 @@ Usually, a data analysis project is designed to establish insights around a part
 For example, suppose a university professor collects data from their students, including the number of lectures attended, the hours spent studying, and the final grade achieved on the end of term exam. The professor could analyze the data to determine if there is a relationship between the amount of studying a student undertakes and the final grade they achieve. The professor might use the data to test a hypothesis that only students who study for a minimum number of hours can expect to achieve a passing grade.
 
 ![Lecture and study time related to student grades](../media/student-grades.png)
-
-## Prerequisites
-
-* Knowledge of basic mathematics
-* Some experience programming in Python
-
-## Learning objectives
-
-In this module, you will:
-
-* Common data exploration and analysis tasks.
-* How to use Python packages like NumPy, Pandas, and Matplotlib to analyze data
