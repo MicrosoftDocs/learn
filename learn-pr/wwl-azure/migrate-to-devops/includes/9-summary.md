@@ -13,6 +13,6 @@ You learned how to describe the benefits and usage of:
  -  [Azure DevOps Services \| Microsoft Azure](https://azure.microsoft.com/services/devops/).
  -  [Features \| GitHub](https://github.com/features).
  -  [Pricing Calculator \| Microsoft Azure](https://azure.microsoft.com/pricing/calculator/).
- -  [Migrate data from Azure DevOps Server to Azure DevOps Services](/azure/devops/migrate/migration-overview?view=azure-devops).
+ -  [Azure DevOps Server to Services Migration overview - Azure DevOps \| Microsoft Docs](/azure/devops/migrate/migration-overview?view=azure-devops).
  -  [Azure DevOps Services Pricing \| Microsoft Azure](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
  -  [GitHub Pricing](https://github.com/pricing/).

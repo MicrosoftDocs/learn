@@ -2,7 +2,7 @@ After you've determined how to implement policies and tasks for the groups of en
 
 ## Targeted organizational groups and time frames
 
-First, determine the groups of users that must be targeted with your Endpoint Manager rollout. Second, determine the rollout time frame for each targeted group. This task typically requires a discussion between the Endpoint Manager deployment team and the targeted groups to determine the most appropriate rollout time frame for each group. Points to cover in such a discussion include:
+First, determine the groups of users you need to target with your Endpoint Manager rollout. Second, determine the rollout time frame for each targeted group. This task typically requires a discussion between the Endpoint Manager deployment team and the targeted groups to determine the most appropriate rollout time frame for each group. Points to cover in such a discussion include:
 
 * Group's willingness for change
 * Number of users and devices
@@ -13,13 +13,13 @@ First, determine the groups of users that must be targeted with your Endpoint Ma
 
 ## Rollout phases
 
-Organizations commonly choose to start the Endpoint Manager rollout with an initial pilot, targeting a small group of users in the IT department. The pilot can be expanded to include a broader set of IT users and may include participation from other organizational groups.
+Organizations commonly choose to start the Endpoint Manager rollout with an initial pilot, targeting a small group of users in the IT department. You can expand the pilot to include a broader set of IT users and may include participation from other organizational groups.
 
 The first step when determining rollout phases is to determine your goals and success metrics of each rollout phase. Make sure goals are SMART (Specific, Measurable, Attainable, Realistic, and Timely). Plan to measure against your goals at each phase so your rollout project stays on track. Make sure your rollout goals meet your overall objectives. Include these objectives in all awareness and training activities so users understand why your organization chose Microsoft Endpoint Manager.
 
 ### Pilot
 
-The first phase to roll out should be to pilot users. The pilot users should understand they are the first users in a new solution. They must be willing to provide feedback to help improve configuration, documentation, notifications, and ease the way for all other users in later rollout phases. These users should not be executives or VIPs.
+The first phase to roll out should be to pilot users. The pilot users should understand they're the first users in a new solution. They must be willing to provide feedback to help improve configuration, documentation, and notifications, as well as ease the way for all other users in later rollout phases. These users should not be executives or VIPs.
 
 ### Production rollout
 
@@ -35,4 +35,4 @@ Now that you've determined the targeted groups and time frames for your Endpoint
 
 ## Additional information
 
-For more information about determining and creating a rollout plan, see [Microsoft Intune planning guide - Create a rollout plan](/mem/intune/fundamentals/intune-planning-guide?azure-portal=true#task-5-create-a-rollout-plan).
+For more information about determining and creating a rollout plan, reference [Microsoft Intune planning guide - Create a rollout plan](/mem/intune/fundamentals/intune-planning-guide?azure-portal=true#task-5-create-a-rollout-plan).

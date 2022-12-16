@@ -20,11 +20,11 @@ VMs are usually the starting point for *lift and shift*, which is the process to
 
 One of the easiest and most straightforward deployment opportunities for Java applications on Azure is Azure App Service. It comes with autoscaling, integrated monitoring, and security.
 
-## Azure Spring Cloud
+## Azure Spring Apps
 
-Azure Spring Cloud lets you focus on building Spring Boot apps without managing infrastructure. Deploy your JARs or code, and it will automatically wire your apps with the Spring service runtime. After you deploy the apps, you can easily monitor their performance, fix errors, and make improvements.
+Azure Spring Apps lets you focus on building Spring Boot apps without managing infrastructure. Deploy your JARs or code, and it will automatically wire your apps with the Spring service runtime. After you deploy the apps, you can easily monitor their performance, fix errors, and make improvements.
 
-Azure Spring Cloud is integrated into the Azure ecosystem and is ready to tackle enterprise workloads.
+Azure Spring Apps is integrated into the Azure ecosystem and is ready to tackle enterprise workloads.
 
 ## Functions
 

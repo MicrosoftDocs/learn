@@ -1,4 +1,4 @@
-We've used a meteorological dataset to aggregation and compare the number of certain kinds of storm events in different US states for the year 2007. Here, you'll visualize these results with the aid of time-binned graphs.
+We've used a meteorological dataset to aggregate and compare the number of certain kinds of storm events in different US states for the year 2007. Here, you'll visualize these results with the aid of time-binned graphs.
 
 ## Use the `render` operator
 
@@ -25,7 +25,7 @@ In this example, you'll visualize the previous query using a bar chart.
 
     :::image type="content" source="../media/5-column-chart.png" alt-text="Screenshot of query with bar chart results." lightbox="../media/5-column-chart.png":::
 
-1. Notice the legend to the right of the bar chart. Each value in the legend represents a different column of data that has been summarized by *State* in the query. Try selecting one of the values, such as *count_*, to toggle the display of this data in the bar chart. By toggling off *count_*, you remove the total count and are left with count of events that caused damage and distinct number of events. You should get a graph that looks like the following image:
+1. Notice the legend to the right of the bar chart. Each value in the legend represents a different column of data that's been summarized by *State* in the query. Try selecting one of the values, such as *count_*, to toggle the display of this data in the bar chart. By toggling off *count_*, you remove the total count and are left with count of events that caused damage and distinct number of events. You should get a graph that looks like the following image:
 
     :::image type="content" source="../media/5-column-chart-toggle.png" alt-text="Screenshot of column chart results with count_ field toggled off." lightbox="../media/5-column-chart-toggle.png":::
 
@@ -61,7 +61,7 @@ The bin value can be a number, date, or timespan. You'll aggregate the count usi
 
 In the previous query, you looked at the number of storm events over time. Now let's take a look at the damage caused by these storms. For this, you'll use the `sum` aggregation function, because you want to see the total amount of damage caused in each time interval. The dataset you're working with has two columns related to damage: *DamageProperty* and *DamageCrops*.
 
-In the following query, you'll first create a calculated column that adds these two damage sources together. Then you'll create an aggregation of total damage binned by week. Finally, you'll render a column chart representing the weekly damage caused by all storms.
+In the following query, you'll first create a calculated column that adds these two damage sources together. Then, you'll create an aggregation of total damage binned by week. Finally, you'll render a column chart representing the weekly damage caused by all storms.
 
 1. Run the following query:
 

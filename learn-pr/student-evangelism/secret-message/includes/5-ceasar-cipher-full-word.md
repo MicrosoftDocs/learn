@@ -2,7 +2,7 @@ Now that you know how to decode one letter given a certain shift amount, you can
 
 To decipher a complete word, you need to invoke the `lasso_letter()` function for each letter in the word. Then you put all of the decoded letters together into a decoded word. 
 
-This time, you'll write a function called `lasso_word()` that has two parameters: `word` and `shift_amount`. 
+This time, you'll write a function called `lasso_word()` that has two parameters: `word` and `shift_amount`.
 
 ```python
 def lasso_word( word, shift_amount ):
@@ -10,7 +10,7 @@ def lasso_word( word, shift_amount ):
 
 ## Words as collections of letters
 
-One way to think about words is that they're really just collections of letters. For example, you can think of the word "Hello" as:
+One way to think about words is that they're just collections of letters. For example, you can think of the word "Hello" as:
 
 > 'H' - 'e' - 'l' - 'l' - 'o'
 
@@ -57,7 +57,7 @@ Remember that when you wrote the `lasso_letter()` function, the last line of cod
 return decoded_letter
 ```
 
-This is called a *return statement*. This statement sends back the value to the line that invoked the function. To capture that return value, all you have to do is use a variable:
+This code is called a *return statement*. This statement sends back the value to the line that invoked the function. To capture that return value, all you have to do is use a variable:
 
 ```python
 def lasso_word( word, shift_amount ):
@@ -70,7 +70,7 @@ Now you're invoking a function that you wrote, `lasso_letter()`, from a new func
 
 ## String letters together
 
-With the code that you just wrote, you'll have one value in the `decoded_letter` variable. When the loop runs again, the variable gets updated. 
+With the code that you just wrote, you'll have one value in the `decoded_letter` variable. When the loop runs again, the variable gets updated.
 
 You can trace the code to see how this works:
 

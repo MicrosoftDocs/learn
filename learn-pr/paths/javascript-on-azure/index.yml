@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.javascript-on-azure
+metadata:
+  title: JavaScript on Azure
+  description: Build JavaScript applications for Azure cloud services such as storage and databases.
+  brand: azure
+  ms.date: 11/28/2022
+  author: diberry
+  ms.author: diberry
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: JavaScript on Azure
+summary: |
+  Use the Azure JavaScript SDKs to build cloud-based applications.   
+prerequisites: learn.build-javascript-applications-nodejs
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+- student
+products:
+- azure
+- azure-cosmos-db
+- azure-app-service
+- azure-storage
+- azure-database-postgresql
+subjects:
+- cloud-computing
+modules:
+- learn.javascript-on-azure.deploy-expressjs-app-service
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database
+- learn.azure.build-node-cosmos-app-vscode
+- learn.azure.cna-build-basic-service
+- learn.connect-app-to-azure-storage
+trophy:
+  uid: learn.javascript-on-azure.trophy

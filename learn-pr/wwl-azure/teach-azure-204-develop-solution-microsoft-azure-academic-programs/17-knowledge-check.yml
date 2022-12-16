@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.teach-azure-204-develop-solution-microsoft-azure-academic-programs.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/18/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/17-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How often should you download content from the Learning Download Center (LDC) to ensure you have the most up-to-date course materials?"
+    choices:
+    - content: "Every three years"
+      isCorrect: false
+      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course you know you have the most up-to-date materials."
+    - content: "Quarterly"
+      isCorrect: true
+      explanation: "Correct. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials each quarter or before teaching the course you know you have the most up-to-date materials."
+    - content: "Once a year"
+      isCorrect: false
+      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course you know you have the most up-to-date materials."
+  - content: "Which tool is great for giving students a visual representation of topics?"
+    choices:
+    - content: "The Textbook"
+      isCorrect: false
+      explanation: "Incorrect. While a textbook can be used as a standard work for the study of a particular subject, the Microsoft Whiteboard can help people visualize a process and increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+    - content: "Microsoft Whiteboard"
+      isCorrect: true
+      explanation: "Correct. A Microsoft Whiteboard can help people visualize a process. Microsoft Whiteboard increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+    - content: "Flash Cards"
+      isCorrect: false
+      explanation: "Incorrect. Flash cards contain a small amount of information, held up for students to see, as an aid to learning, however the Microsoft Whiteboard can help people visualize a process and increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+  - content: "What is the recommended tool to take unique information from another security realm and bring that information forward in an Azure solution?"
+    choices:
+    - content: "Microsoft 365 Groups"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft 365 Groups is a service that works with the Microsoft 365 tools to collaborate with teammates when writing documents, creating spreadsheets, working on project plans, scheduling meetings, or sending email, whereas Microsoft Graph allows you to take unique information from another security realm and bring that information forward by querying the values, always only with the appropriate permissions."
+    - content: "GitHub"
+      isCorrect: false
+      explanation: "Incorrect: GitHub is an Internet hosting service for software development and version control using Git. It provides the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project, whereas Microsoft Graph allows you to take unique information from another security realm and bring that information forward by querying the values, always only with the appropriate permissions."
+    - content: "Microsoft Graph"
+      isCorrect: true
+      explanation: "Correct. Microsoft Graph allows you to take unique information from another security realm and bring that information forward by querying the values, always only with the appropriate permissions."
