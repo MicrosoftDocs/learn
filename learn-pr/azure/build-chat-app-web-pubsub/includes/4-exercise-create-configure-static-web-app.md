@@ -1,8 +1,13 @@
-This module uses a GitHub template repository to make it easy for you to get started. The template features a starter app that you will deploy to Azure Static Web Apps.
+This module uses a GitHub template repository to make it easy for you to get started. The template features a starter app that you'll deploy to Azure Static Web Apps.
+
+## Set up a GitHub repo
 
 1. Go to [https://github.com/Azure/awps-swa-sample/generate](https://github.com/login?return_to=/Azure/awps-swa-sample/generate) to create a new repo for this tutorial.
+
 1. Select yourself as **Owner** and use the default name for your repository: **awps-swa-sample**. If you choose a different name, make sure you update the repo name used in the following GitHub commands.
+
 1. You can create a **Public** or **Private** repo according to your preference. Either works for this module.
+
 1. Select **Create repository from template**.
 
 ## Create a static web app
@@ -34,9 +39,9 @@ Now that the repository is created, you can create a static web app from the Azu
     > [!IMPORTANT]
     > The URL passed to the `--source` parameter must not include the `.git` suffix.
 
-1. Go to `https://github.com/login/device`.
+1. Go to [https://github.com/login/device](https://github.com/login/device).
 
-1. Enter the user code as displayed your console's message.
+1. Enter the user code as displayed in your console's output.
 
 1. In the page that appears, select **Authorize AzureAppServiceCLI**.
 
@@ -96,5 +101,8 @@ You're very close to complete. The last step is to configure Web PubSub to trans
       --event-handler url-template=https://$STATIC_WEB_APP/api/{event} system-event="connect"
     ```
 
+## Try the chat app
 
-Now you're ready to play with your website **<YOUR_STATIC_WEB_APP>**. Copy the URL to a browser and select **Continue** to start chatting with your friends.
+Now you're ready to try the chap app. Copy the `STATIC_WEB_APP` URL to a browser and select **Continue** to start chatting. If you want to simulate chatting with another user, open the URL in two or more browser tabs and send messages from the different tabs.
+
+:::image type="content" source="../media/chat-app-example.png" alt-text="Screenshot showing the chat app in action.":::

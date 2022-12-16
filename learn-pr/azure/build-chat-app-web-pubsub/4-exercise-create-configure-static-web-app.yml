@@ -3,13 +3,14 @@ uid: learn.build-chat-app-web-pubsub.4-exercise-create-configure-static-web-app
 title: Exercise - Create and configure a static web app 
 metadata:
   title: Exercise - Create and configure a static web app
-  description: Exercise - Create and configure a static web app, and view the web site
+  sandbox: true
+  description: Exercise - Create and configure a static web app, configure the Web PubSub event handler, and view the web site
   ms.date: 12/14/2022
   author: dlepow
   ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.contributors: jixin, v-glennminch
+  ms.contributors: jixin
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-create-configure-static-web-app.md)]

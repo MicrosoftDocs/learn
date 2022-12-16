@@ -2,16 +2,17 @@
 
 1. Create a globally unique name for your Azure WebPubSub resource. 
 
-```azurecli
-WPS_NAME=<my-unique-name>
-```
+    ```azurecli
+    WPS_NAME=<my-unique-name>
+    ```
 
 1. Install or upgrade the *webpubsub* Azure CLI extension to the current version.
 
     ```azurecli
     az extension add --upgrade --name webpubsub
     ```
-1. Create a Web PubSub resource in the automatically created resource group in the sandbox. It can take a few minutes to create the Web PubSub resource.
+
+1. Create a Web PubSub resource in the automatically created resource group in the Sandbox. It can take a few minutes to create the Web PubSub resource.
 
     ```azurecli
     az webpubsub create \

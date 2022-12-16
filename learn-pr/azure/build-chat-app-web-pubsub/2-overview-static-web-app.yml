@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-chat-app-web-pubsub.2-overview-static-web-app
-title: Overview of Static Web Apps
+title: Overview of the chat app
 metadata:
-  title: Overview of Static Web Apps
-  description: Overview of Static Web Apps
+  title: Overview of the chat app
+  description: Overview of the real-time chat app built with Azure Web PubSub and Azure Static Web Apps
   ms.date: 12/14/2022
   author: dlepow
   ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.contributors: jixin, v-glennminch
+  ms.contributors: jixin
 durationInMinutes: 6
 content: |
   [!include[](includes/2-overview-static-web-app.md)]

@@ -3,13 +3,14 @@ uid: learn.build-chat-app-web-pubsub.3-exercise-create-web-pubsub
 title: Exercise - Create a Web PubSub resource
 metadata:
   title: Exercise - Create a Web PubSub resource
-  description: Exercise - Create a Web PubSub resource
+  sandbox: true
+  description: Exercise - Create an Azure Web PubSub resource
   ms.date: 12/14/2022
   author: dlepow
   ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.contributors: jixin, v-glennminch
+  ms.contributors: jixin
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-create-web-pubsub.md)]
