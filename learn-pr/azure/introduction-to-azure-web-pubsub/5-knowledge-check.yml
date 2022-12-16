@@ -12,6 +12,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
+  [!include[](includes/5-knowledge-check.md)]
 quiz:
   questions:
       - content: "For which application scenario would you **not** choose Azure Web PubSub?"
@@ -43,14 +44,14 @@ quiz:
             explanation:
               "Correct! Azure Web PubSub is suitable for large-scale and
               small-scale requirements."
-      - content: "Azure Web PubSub supports a wide variety of client SDKs and programming languages."
+      - content: "Azure Web PubSub supports clients using the WebSocket protocol."
         choices:
           - content: "True"
             isCorrect: true
-            explanation: "Correct! Azure Web PubSub supports a wide variety of client SDKs and programming languages"
+            explanation: "Correct! Azure Web PubSub supports the standard WebSocket connection with the publish-subscribe pattern."
           - content: "False"
             isCorrect: false
-            explanation: "Incorrect. Azure Web PubSub supports a wide variety of client SDKs and programming languages"
+            explanation: "Incorrect. Azure Web PubSub supports the standard WebSocket connection with the publish-subscribe pattern."
       - content: "Which of the following statements is true about Azure Web PubSub?"
         choices:
           - content:
@@ -69,4 +70,4 @@ quiz:
               well as server-based applications, hence infrastructure isn't a mandatory requirement. It is optional."
           - content: "You can't use REST API with Azure Web PubSub"
             isCorrect: false
-            explanation: "Incorrect. Azure Web PubSub service provides a REST API to enable applications to post messages to connected clients, in any REST-capable programming language."
+            explanation: "Incorrect. Azure Web PubSub service provides REST APIs to enable applications to post messages to connected clients or to manage the client connections, in any REST-capable programming language."
