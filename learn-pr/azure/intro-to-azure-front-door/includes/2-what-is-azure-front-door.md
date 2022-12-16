@@ -2,9 +2,9 @@ Many organizations have applications they want to make available to their custom
 
 ## What is a secure, modern cloud CDN?
 
-A secure, modern cloud CDN provides a distributed platform of servers. This helps minimize latency when users are accessing webpages. Historically, IT staff might have used a CDN and a web application firewall to control HTTP and HTTPS traffic flowing to and from target applications.  
+A secure, modern cloud CDN provides a distributed platform of servers. This helps minimize latency when users are accessing webpages. Historically, IT staff might have used a CDN and a web-application firewall to control HTTP and HTTPS traffic flowing to and from target applications.  
 
-If an organization uses Azure, they might achieve these goals by implementing the products described in the following table.
+If an organization uses Azure, they might achieve these goals by implementing the products described in the following table:
 
 | Product                        | Description                                                  |
 | ------------------------------ | ------------------------------------------------------------ |
@@ -21,9 +21,9 @@ If an organization uses Azure, they might achieve these goals by implementing th
 
 The following Azure Front door SKUs are available:
 
-- Azure Front Door, which is the entry level. Existing Azure customers often bolster these features with Azure Content Delivery Network, and Azure Web Application Firewall.
-- Azure Front Door Standard, which is optimized for virtually seamless content delivery.
-- Azure Front Door Premium, which is optimized for improved security.
+- **Azure Front Door**, which is the entry level. Existing Azure customers often bolster these features with Azure Content Delivery Network, and Azure Web Application Firewall.
+- **Azure Front Door Standard**, which is optimized for virtually seamless content delivery.
+- **Azure Front Door Premium**, which is optimized for improved security.
 
 Let's examine these last two SKUs in more detail.
 
@@ -31,21 +31,21 @@ Let's examine these last two SKUs in more detail.
 
 Azure Front Door Standard provides the capabilities of Azure Front Door (Classic), Azure Content Delivery Network, and Azure Web Application Firewall. Azure Front Door Standard includes:
 
-- Content-delivery optimization.
-- Static and dynamic content acceleration.
-- Global load balancing.
-- Secure Sockets Layer (SSL) offload.
-- Domain and certificate management.
-- Enhanced traffic analytics.
-- Basic security capabilities.
+- Content-delivery optimization
+- Static and dynamic content acceleration
+- Global load balancing
+- Secure Sockets Layer (SSL) offload
+- Domain and certificate management
+- Enhanced traffic analytics
+- Basic security capabilities
 
 ### Azure Front Door Premium
 
 Azure Front Door Premium provides the same capabilities as Azure Front Door Standard. However, it's security optimized and includes the following additional features:
 
-- Extensive security capabilities across Web Application Firewall.
-- Private link support.
-- Integration with Microsoft Threat Intelligence and security analytics.
+- Extensive security capabilities across Web Application Firewall
+- Private link support
+- Integration with Microsoft Threat Intelligence and security analytics
 
 ## How to improve your cloud app delivery
 
