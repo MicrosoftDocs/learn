@@ -4,9 +4,9 @@ An application can have several user flows, each of which can have different per
 
 ## Use Azure Load Testing to evaluate thresholds
 
-Because the expected performance of components is often not clearly known or understood, Azure Load Testing can help to identify the performance of individual components, the scale-out behavior and the thresholds to expect.
+During the development phase, the performance of components and resource requirements are often not clearly known or understood. You can use Azure Load Testing to identify the expected performance of the individual components, the scale-out behavior, and the thresholds to expect for building your baseline.
 
-The expected number of requests per second for the various components might be different or there might be different requirements for normal operations and special situations (for example during a chaos experiment or peak load) where higher error rates or lower requests per second are expected and acceptable.
+As you run your tests, there might be different requirements for special situations (such as a chaos experiment or a peak load) compared to normal operations, where higher error rates or lower requests per second are expected and acceptable.
 
 ## Set up baselines
 
@@ -18,4 +18,4 @@ To set up baselines for load tests, follow these steps:
 
 1. Use a separate baseline for chaos testing that tolerates expected spikes in error rates and temporary reduced performance.
 
-   This activity is continuous and needs to be done regularly. For example, after introducing new features, changing service SKUs, and others.
+This activity is continuous and needs to be done regularly. For example, after introducing new features, changing service SKUs, and others.

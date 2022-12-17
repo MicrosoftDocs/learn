@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Introduction.
   ms.date: 12/08/2022
-  author: PageWriter-MSFT
-  ms.author: sebader
+  author: sebader
+  ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure #TBD
 durationInMinutes: 2 #TBD

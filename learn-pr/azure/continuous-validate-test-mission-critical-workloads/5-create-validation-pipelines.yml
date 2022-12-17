@@ -5,7 +5,7 @@ metadata:
   title: Create continuous validation pipeline
   description: Create continuous validation pipeline.
   ms.date: 12/08/2022
-  author: PageWriter-MSFT
+  author: sebader
   ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure #TBD

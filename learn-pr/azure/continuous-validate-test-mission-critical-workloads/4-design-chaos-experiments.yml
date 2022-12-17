@@ -5,8 +5,8 @@ metadata:
   title: Design chaos experiments
   description: Design chaos experiments.
   ms.date: 12/09/2022
-  author: PageWriter-MSFT
-  ms.author: sebader
+  author: sebader
+  ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure #TBD
 durationInMinutes: 5 #TBD

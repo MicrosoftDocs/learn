@@ -5,8 +5,8 @@ metadata:
   title: Define load tests based on key user flows
   description: Understand what the most important user flows are and design load tests based on these user flows.
   ms.date: 12/08/2022
-  author: PageWriter-MSFT
-  ms.author: sebader
+  author: sebader
+  ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure #TBD
 durationInMinutes: 5 #TBD

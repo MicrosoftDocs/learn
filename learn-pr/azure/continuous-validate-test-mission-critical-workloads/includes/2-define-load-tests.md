@@ -2,25 +2,25 @@ In this unit, you learn about user flows, why they're important, and how to desi
 
 ## User and system flows
 
-A flow is the sum of activities and decisions a user or system will take in an application to complete a task. A user flow lets you determine how users interact with your application when they do things like sign-in or edit a profile. Although most applications have multiple and different flows, not all flows require the same components. If one component fails, it's important to understand which flows are impacted, and which aren't, so that you can design meaningful load tests.
+A flow is the sum of activities and decisions a user or system will take in an application to complete a task. A user flow lets you determine how users interact with your application when they do things like sign-in or edit a profile. Although most applications have multiple flows, not all flows require the same components, have the same requirements regarding performance, or availability. A component can appear in more than one flow. Therefore, if a component fails, it's important to understand which flows are impacted, and which aren't, so that you can design meaningful load tests.
 
-For a sample user flow, we're using the checkout process in Contoso Shoes. This particular user flow requires the backend inventory management to be available, but doesn't require a search component.
+For an example user flow, we're using the checkout process in Contoso Shoes. This user flow requires the backend inventory management to be available, and doesn't require a search component. In this example, the page needs to load fast due to the expected large number of concurrent users.
 
 ## Define a load test and its threshold values
 
 To design a load test based on a user flow requires knowledge of the application. For example:
 
 - Which API calls need to be made?
-- What is the sequence of API calls?
+- What's the sequence of API calls?
 - What test data should be used with the API calls?
 
-Follow these steps to design a load test:
+Follow these steps to design a load test, based on our checkout example:
 
 1. Starting planning by identifying key scenarios, dependencies, expected usage, availability, performance, and scalability targets.
 
 1. Define a set of measurable threshold values to quantify the expected performance of the key scenarios. The expected number of user logins, requests per second of a given API, operations per second of a background process, are applicable examples for threshold values.
 
-1. Use the threshold values to define a load test that generates realistic traffic for testing application performance, validating expected scale operations, and so on. Use the threshold values to develop a health model for the application not only for testing but also for operating the application in production.
+1. Use the threshold values to define a load test that generates realistic traffic for testing application performance, validating expected scale operations, and so on. Use these same threshold values to develop a health model for the application for both testing and production.
 
 ## Implement load test validation
 
@@ -28,6 +28,6 @@ Microsoft Azure provides these managed services for you to implement load testin
 
 - [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing): Produces synthetic user load on applications and services
 
-- [Azure Chaos Studio](/azure/chaos-studio/chaos-studio-overview): Provides the ability to perform chaos experimentation, by systematically injecting failures into application components and infrastructure
+- [Azure Chaos Studio](/azure/chaos-studio/chaos-studio-overview): Allows you to perform chaos experimentation, by systematically injecting failures into application components and infrastructure
 
 Although you can configure and deploy both Azure Chaos Studio and Azure Load Testing through the Azure portal, it's preferable to use APIs to deploy, configure and execute the tests in a programmatic and automated way. By using the tools in conjunction, you can observe how the system reacts to issues and is able to recover in response to infrastructure or application failures.

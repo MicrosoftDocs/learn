@@ -5,7 +5,7 @@ metadata:
   title: Set baselines for load tests
   description: Set baselines for load tests.
   ms.date: 11/11/2022
-  author: PageWriter-MSFT
+  author: sebader
   ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure #TBD
