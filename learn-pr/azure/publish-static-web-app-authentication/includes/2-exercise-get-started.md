@@ -203,7 +203,7 @@ It's time to see your application running locally. Each front-end application ru
 
 2. Browse to `http://localhost:4200`.
 
-   :::image type="content" source="../media/my-shopping-list-app-angular.png" alt-text="Browsing to your Angular web app.":::
+   :::image type="content" source="../media/my-shopping-list-app-angular.png" alt-text="Screenshot showing the UI of your Angular web app.":::
 
 ::: zone-end
 
@@ -211,7 +211,7 @@ It's time to see your application running locally. Each front-end application ru
 
 2. Browse to `http://localhost:3000`.
 
-   :::image type="content" source="../media/my-shopping-list-app-react.png" alt-text="Browsing to your React web app.":::
+   :::image type="content" source="../media/my-shopping-list-app-react.png" alt-text="Screenshot showing the UI of your React web app.":::
 
 ::: zone-end
 
@@ -219,7 +219,7 @@ It's time to see your application running locally. Each front-end application ru
 
 2. Browse to `http://localhost:5000`.
 
-   :::image type="content" source="../media/my-shopping-list-app-svelte.png" alt-text="Browsing to your Svelte web app.":::
+   :::image type="content" source="../media/my-shopping-list-app-svelte.png" alt-text="Screenshot showing the UI of your Svelte web app.":::
 
 ::: zone-end
 
@@ -227,7 +227,7 @@ It's time to see your application running locally. Each front-end application ru
 
 2. Browse to `http://localhost:8080`.
 
-   :::image type="content" source="../media/my-shopping-list-app-vue.png" alt-text="Browsing to your Vue web app.":::
+   :::image type="content" source="../media/my-shopping-list-app-vue.png" alt-text="Screenshot showing the UI of your Vue web app.":::
 
 ::: zone-end
 
@@ -268,7 +268,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 1. Select **Concierge Subscription**, and press <kbd>Enter</kbd>.
 
-    :::image type="content" source="../media/extension-concierge-subscription.png" alt-text="Filter by subscription.":::
+    :::image type="content" source="../media/extension-concierge-subscription.png" alt-text="Screenshot showing how to filter by subscription.":::
 
 ### Create a Static Web App with Visual Studio Code
 
@@ -276,36 +276,36 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 1. Inside Visual Studio Code, select the Azure logo in the activity bar to open the Azure extensions window.
 
-    :::image type="content" source="../media/extension-azure-logo.png" alt-text="Azure Logo.":::
+    :::image type="content" source="../media/extension-azure-logo.png" alt-text="Screenshot of the Azure Logo in VS Code.":::
 
    > [!NOTE]
    > Azure and GitHub sign-in are required. If you are not already signed in to Azure and GitHub from Visual Studio Code, the extension will prompt you to sign in to both during the creation process.
 
 1. Place your mouse over the _Static Web Apps_ label, and select **+** (plus sign).
 
-    :::image type="content" source="../media/extension-create-button.png" alt-text="Application name.":::
+    :::image type="content" source="../media/extension-create-button.png" alt-text="Screenshot showing the application name typed out.":::
 
 1. When the command palette opens at the top of the editor, select **Concierge Subscription**, and press <kbd>Enter</kbd>.
 
-    :::image type="content" source="../media/extension-concierge-subscription-select.png" alt-text="Select Subscription.":::
+    :::image type="content" source="../media/extension-concierge-subscription-select.png" alt-text="Screenshot showing how to select a subscription.":::
 
 1. Enter *my-static-web-app-authn*, and press <kbd>Enter</kbd>.
 
-    :::image type="content" source="../media/extension-create-app.png" alt-text="Create Static Web Apps.":::
+    :::image type="content" source="../media/extension-create-app.png" alt-text="Screenshot showing how to create Static Web Apps.":::
 
 1. Select the **Custom** option, and press <kbd>Enter</kbd>.
 
-    :::image type="content" source="../media/extension-custom-option.png" alt-text="Create Static Web Apps - Custom.":::
+    :::image type="content" source="../media/extension-custom-option.png" alt-text="Screenshot show the Create Static Web Apps - Custom button highlighted.":::
 
 ::: zone pivot="angular"
 
 7. Select **angular-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
-    :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Angular application code location.":::
+    :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Screenshot showing the Angular application code location.":::
 
 8. Enter *dist/angular-app* as the output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
-    :::image type="content" source="../media/extension-artifact-angular.png" alt-text="Angular app files path.":::
+    :::image type="content" source="../media/extension-artifact-angular.png" alt-text="Screenshot showing the Angular app files path.":::
 
 ::: zone-end
 
@@ -313,11 +313,11 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 7. Select **react-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
-    :::image type="content" source="../media/extension-app-location-react.png" alt-text="React application code location.":::
+    :::image type="content" source="../media/extension-app-location-react.png" alt-text="Screenshot showing the React application code location.":::
 
 8. Enter *build* as the output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
-    :::image type="content" source="../media/extension-artifact-react.png" alt-text="React app files path.":::
+    :::image type="content" source="../media/extension-artifact-react.png" alt-text="Screenshot showing the React app files path.":::
 
 ::: zone-end
 
@@ -325,11 +325,11 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 7. Select **svelte-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
-    :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Svelte application code location.":::
+    :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Screenshot showing the Svelte application code location.":::
 
 8. Enter *public* as the output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
-    :::image type="content" source="../media/extension-artifact-svelte.png" alt-text="Svelte app files path.":::
+    :::image type="content" source="../media/extension-artifact-svelte.png" alt-text="Screenshot showing the Svelte app files path.":::
 
 ::: zone-end
 
@@ -337,11 +337,11 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 7. Select **vue-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
-    :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Vue application code location.":::
+    :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Screenshot showing the Vue application code location.":::
 
 8. Enter *dist* as the output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
-    :::image type="content" source="../media/extension-artifact-vue.png" alt-text="Vue app files path.":::
+    :::image type="content" source="../media/extension-artifact-vue.png" alt-text="Screenshot showing the Vue app files path.":::
 
 ::: zone-end
 
@@ -350,21 +350,21 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 9. After the app is created, a confirmation notification appears in Visual Studio Code.
 
-    :::image type="content" source="../media/extension-confirmation.png" alt-text="Open Actions in GitHub or View/Edit Config.":::
+    :::image type="content" source="../media/extension-confirmation.png" alt-text="Screenshot showing the Open Actions in GitHub or View/Edit Config pop up window.":::
 
    As the deployment is in progress, the Visual Studio Code extension reports the build status to you.
 
-    :::image type="content" source="../media/extension-waiting-for-deployment.png" alt-text="Waiting for Deployment.":::
+    :::image type="content" source="../media/extension-waiting-for-deployment.png" alt-text="Screenshot showing the waiting for deployment button.":::
 
 10. You can view the progress of the deployment using GitHub Actions by expanding the **Actions** menu.
 
-    :::image type="content" source="../media/extension-actions.png" alt-text="GitHub Actions.":::
+    :::image type="content" source="../media/extension-actions.png" alt-text="Screenshot showing the GitHub Actions menu in VS Code.":::
 
     After the deployment is complete, you can go directly to your website.
 
 11. To view the website in the browser, right-click the project in the Static Web Apps extension, and select **Browse Site**.
 
-    :::image type="content" source="../media/extension-browse-site.png" alt-text="Browse Site.":::
+    :::image type="content" source="../media/extension-browse-site.png" alt-text="Screenshot showing the browse site button.":::
 
 Congratulations! You've deployed your app to Azure Static Web Apps!
 

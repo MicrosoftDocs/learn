@@ -1,4 +1,4 @@
-Your shopping list web app needs a way to uniquely identify its users, and provide them a personal space to store the products.
+Your shopping list web app needs a way to uniquely identify its users, and provide them with a personal space to store the products.
 
 Authentication is the way you'll verify the identity of a user that is trying to access an information system. We'll now look into authentication and how you can implement it in Azure Static Web Apps.
 
