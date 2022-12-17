@@ -1,6 +1,6 @@
 In this exercise, you'll create an Azure Static Web Apps instance including a GitHub Action that automatically builds and publishes your application.
 
-This module uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure you have activated the sandbox at the top of this page.
+This module uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure you've activated the sandbox at the top of this page.
 
 ## Create a repository
 
@@ -264,7 +264,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 1. Open Visual Studio Code, and select **File > Open** to open the repository you cloned to your computer in the editor.
 
-1. Verify that you have filtered your Azure subscriptions to include the Concierge Subscription by opening the command palette <kbd>F1</kbd>, entering `Azure: Select Subscriptions`, and pressing <kbd>Enter</kbd>.
+1. Verify that you've filtered your Azure subscriptions to include the Concierge Subscription by opening the command palette <kbd>F1</kbd>, entering `Azure: Select Subscriptions`, and pressing <kbd>Enter</kbd>.
 
 1. Select **Concierge Subscription**, and press <kbd>Enter</kbd>.
 
@@ -350,7 +350,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 9. After the app is created, a confirmation notification appears in Visual Studio Code.
 
-    :::image type="content" source="../media/extension-confirmation.png" alt-text="Screenshot showing the Open Actions in GitHub or View/Edit Config pop up window.":::
+    :::image type="content" source="../media/extension-confirmation.png" alt-text="Screenshot showing the Open Actions in GitHub or View/Edit Config pop-up window.":::
 
    As the deployment is in progress, the Visual Studio Code extension reports the build status to you.
 

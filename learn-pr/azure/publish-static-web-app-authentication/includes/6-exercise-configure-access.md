@@ -9,7 +9,7 @@ In this exercise, you'll complete the following steps:
 
 ## Disable authentication providers
 
-We'll update the routing configuration of our app to disable Azure Active Directory (Aazure AD) authentication provider.
+We'll update the routing configuration of our app to disable Azure Active Directory (Azure AD) authentication provider.
 
 1. Open the project in Visual Studio Code.
 

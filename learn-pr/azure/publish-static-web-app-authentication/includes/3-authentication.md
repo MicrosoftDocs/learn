@@ -46,7 +46,7 @@ The `/.auth/logout` route logs out users from the web app. You can add a link to
 <a href="/.auth/logout">Log out</a>
 ```
 
-Like with login, you can provide an URL to redirect to after logging out using the `post_logout_redirect_uri` query string parameter:
+Like with login, you can provide a URL to redirect to after logging out using the `post_logout_redirect_uri` query string parameter:
 
 ```html
 <a href="/.auth/logout?post_logout_redirect_uri=/home">Log out</a>
