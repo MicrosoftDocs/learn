@@ -7,8 +7,8 @@ Now we'll discuss how to determine which Azure Front Door SKU is the best choice
 
 It's also important to consider several other Azure products you could use instead of Azure Front Door, including:
 
-- Azure Traffic Manager, which provides DNS-based global routing. However, it doesn't provide for Transport Layer Security (TLS) protocol termination, or *SSL offload*, per-HTTP/HTTPS request, or application-layer processing.
-- Azure Application Gateway, which can load-balance between your servers in a region at the application layer.
+- **Azure Traffic Manager**, which provides DNS-based global routing. However, it doesn't provide for Transport Layer Security (TLS) protocol termination, or *SSL offload*, per-HTTP/HTTPS request, or application-layer processing.
+- **Azure Application Gateway**, which can load-balance between your servers in a region at the application layer.
 
 ## Decision criteria
 
@@ -22,7 +22,7 @@ The decision you make depends on whether you require the other features that Azu
 | **Criteria** | **Analysis**|
 | --- | --- |
 | **Scalability** | Does your organization scale out content? Organizations that host scalable content will benefit more from using Azure Front Door. |
-| **Pricing** | Does your organization prefer a monthly charge for each policy or hourly billing? Do you want to pay extra charges for custom rules? Review the pricing considerations in the following section. |
+| **Pricing** | Does your organization prefer a monthly charge for each policy or hourly billing? Do you want to pay extra charges for custom rules? Review the pricing considerations in the *Pricing* section later in this unit. |
 | **Content delivery** | Do you require content optimization, without extensive security capabilities? Azure Front Door Standard is a good choice in this case. |
 | **Security** | Do you have enhanced security requirements? Azure Front Door Premium is your best option. |
 
@@ -48,10 +48,10 @@ Azure Front Door billing is based on outbound data transfers, inbound data trans
 
 Azure Front Door Standard/Premium billing is based on the following criteria:
 
-- A fixed charge calculated on hourly basis.
-- Outbound data transfers.
-- Inbound data transfers.
-- Requests incoming from client to Azure Front Door points of presence.
+- A fixed charge calculated on hourly basis
+- Outbound data transfers
+- Inbound data transfers
+- Requests incoming from client to Azure Front Door points of presence
 
 ### Content delivery
 
