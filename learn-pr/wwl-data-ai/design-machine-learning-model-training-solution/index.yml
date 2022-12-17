@@ -2,8 +2,8 @@
 uid: learn.wwl.design-machine-learning-model-training-solution
 metadata:
   title: Design a machine learning model training solution
-  description: "Design a machine learning model training solution"
-  ms.date: 11/15/2022
+  description: "Azure Machine Learning Python SDK v2"
+  ms.date: 12/06/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Choose a service to train a model
   - Choose between compute options
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/design-machine-learning-model-training-solution.svg
 levels:
 - beginner
 roles:

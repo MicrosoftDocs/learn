@@ -32,6 +32,7 @@ subjects:
 - development-tools
 units:
 - learn.wwl.create-bot-with-bot-framework-composer.introduction
+- learn.wwl.create-bot-with-bot-framework-composer.bot-authoring-methods
 - learn.wwl.create-bot-with-bot-framework-composer.bot-composer
 - learn.wwl.create-bot-with-bot-framework-composer.understand-dialogs
 - learn.wwl.create-bot-with-bot-framework-composer.adaptive-clow

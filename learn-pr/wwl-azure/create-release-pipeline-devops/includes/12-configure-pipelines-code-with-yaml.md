@@ -17,7 +17,7 @@ After completing this lab, you'll be able to:
  -  This lab requires **Microsoft Edge** or an [Azure DevOps-supported browser](/azure/devops/server/compatibility).
  -  **Set up an Azure DevOps organization:** If you don't already have an Azure DevOps organization that you can use for this lab, create one by following the instructions available at [Create an organization or project collection](/azure/devops/organizations/accounts/create-organization).
  -  Identify an existing Azure subscription or create a new one.
- -  Verify that you have a Microsoft account or an Azure AD account with the Contributor or the Owner role in the Azure subscription. For details, refer to [List Azure role assignments using the Azure portal](/azure/active-directory/roles/manage-roles-portal).
+ -  Verify that you have a Microsoft or Azure AD account with the Contributor or the Owner role in the Azure subscription. For details, refer to [List Azure role assignments using the Azure portal](/azure/active-directory/roles/manage-roles-portal).
 
 ## Exercises
 
@@ -25,7 +25,8 @@ During this lab, you'll complete the following exercises:
 
  -  Exercise 0: Configure the lab prerequisites.
  -  Exercise 1: Configure CI/CD Pipelines as Code with YAML in Azure DevOps.
- -  Exercise 2: Remove the Azure lab resources.
+ -  Exercise 2: Configure Environment settings for CI/CD Pipelines as Code with YAML in Azure DevOps.
+ -  Exercise 3: Remove the Azure lab resources.
 
 [:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button, which will take you to the lab.":::
 ](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M05_L11_Configuring_Pipelines_as_Code_with_YAML.html)

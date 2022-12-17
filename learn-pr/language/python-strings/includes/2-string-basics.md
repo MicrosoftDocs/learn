@@ -4,7 +4,7 @@ Although strings in Python appear to be simple and straightforward, there's some
 
 In Python, strings are immutable. That is, they can't change. This property of the string type can be surprising, because Python doesn't give you errors when you alter strings.
 
-In our example for this module, you have a single fact about the Moon that's assigned to a variable, and you need to add another fact (sentence) to it. Using the Python interpreter, it _seems_ as though adding the second fact would alter the variable:
+In our example for this module, you have a single fact about the Moon that's assigned to a variable, and you need to add another fact (sentence) to it. It *seems* as though adding the second fact would alter the variable, as in the following example:
 
 ```python
 >>> fact = "The Moon has no atmosphere."
@@ -19,7 +19,7 @@ Although it might look as though we've modified the variable `fact`, a quick che
 'The Moon has no atmosphere.'
 ```
 
-The trick here’s that you must use a return value. When you add strings, Python doesn't modify any string, but it returns a _new_ string as the result. To keep this new result, assign it to a new variable:
+The trick is that you must use a return value. When you add strings, Python doesn't modify any string, but it returns a *new* string as the result. To keep this new result, assign it to a new variable:
 
 ```python
 >>> two_facts = fact + "No sound can be heard on the Moon."

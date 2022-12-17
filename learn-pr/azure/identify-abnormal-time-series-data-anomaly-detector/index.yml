@@ -9,6 +9,7 @@ metadata:
   ms.author: ruyakubu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  manager: nitinme
 title: Identify abnormal time-series data with Anomaly Detector
 summary: Anomaly Detection is a technique in artificial intelligence to find outliers in time series data.  You will learn how to collect real-time data from a smart device; send the telemetry data to the cloud with Azure IoT Hub; and use Azure Anomaly Detector to catch unexpected data deviations.
 # see https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main

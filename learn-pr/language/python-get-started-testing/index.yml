@@ -3,7 +3,7 @@ uid: learn.python-get-started-testing
 metadata:
   title: Get started with testing in Python
   description: "Use Python's standard library module to write unit tests, and then get exposed to the concepts of other types of testing and how to apply them."
-  ms.date: 1/14/2022
+  ms.date: 12/13/2022
   author: alfredodeza
   ms.author: alfredodeza
   ms.custom: team=nextgen
@@ -27,7 +27,7 @@ roles:
   - developer
   - student
 products:
-  - vs-code
+  - azure
 subjects:
 - development-tools
 units:

@@ -18,7 +18,7 @@ Razor directives are component markup used to add C# inline with HTML. With dire
 
 Code directives should be familiar to developers who have used Razor in MVC or Pages.
 
-You can use `@expression()` to add a C# statement inline with HTML. If you require more code, use the `@code` directive to add multiple statements, enclosed by parentheses.
+You can use `@()` to add a C# statement inline with HTML. If you require more code, use the `@code` directive to add multiple statements, enclosed by parentheses.
 
 You can also add an `@functions` section to the template for methods and properties. They're added to the top of the generated class, where the document can reference them.
 

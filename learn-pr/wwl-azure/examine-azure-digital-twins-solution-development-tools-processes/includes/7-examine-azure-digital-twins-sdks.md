@@ -158,4 +158,4 @@ foreach (string prop in twin.Contents.Keys)
 ```
 
 > [!NOTE]
-> BasicDigitalTwin uses \`\`\`System.Text.Json\`\`\` attributes. In order to use BasicDigitalTwin with your DigitalTwinsClient, you must either initialize the client with the default constructor, or, if you want to customize the serializer option, use the JsonObjectSerializer.
+> BasicDigitalTwin uses `System.Text.Json` attributes. In order to use BasicDigitalTwin with your DigitalTwinsClient, you must either initialize the client with the default constructor, or, if you want to customize the serializer option, use the JsonObjectSerializer.

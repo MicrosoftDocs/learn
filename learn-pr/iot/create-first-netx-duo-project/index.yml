@@ -6,6 +6,8 @@ metadata:
   ms.date: 07/27/2022
   author: edlamie80
   ms.author: liydu
+  ms.reviewer: liydu
+  manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create the first Azure RTOS NetX Duo project

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.multi-table-queries-with-kusto-query-language.exercise-union
-title: Exercise - Combine table results using the union operator
+title: Exercise - Combine table results by using the union operator
 metadata:
   unitType: exercise
-  title: Exercise - Combine table results using the union operator
-  description: Exercise - Combine table results using the union operator
+  title: Exercise - Combine table results by using the union operator
+  description: In this exercise, you'll use the union operator to combine sales facts that were collected from various countries.
   ms.date: 09/22/2022
   author: shsagir
   ms.author: shsagir

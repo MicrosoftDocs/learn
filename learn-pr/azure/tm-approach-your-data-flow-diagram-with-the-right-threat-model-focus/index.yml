@@ -3,7 +3,7 @@ uid: learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus
 metadata:
   title: Approach your data-flow diagram with the right threat model focus
   description: Threat modeling is an effective technique to help you identify threats and ways to reduce or eliminate risk. We start by deciding to focus on either what needs to be protected or who it needs protection from.
-  ms.date: 04/01/2022
+  ms.date: 11/23/2022
   author: rodsan
   ms.author: rodsan
   ms.topic: interactive-tutorial

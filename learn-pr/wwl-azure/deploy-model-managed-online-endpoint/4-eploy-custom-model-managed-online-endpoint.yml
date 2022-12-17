@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-model-managed-online-endpoint.eploy-custom-model-managed-online-endpoint
+title: Deploy a model to a managed online endpoint
+metadata:
+  title: Deploy a model to a managed online endpoint
+  description: "Deploy a model to a managed online endpoint"
+  ms.date: 11/17/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-eploy-custom-model-managed-online-endpoint.md)]

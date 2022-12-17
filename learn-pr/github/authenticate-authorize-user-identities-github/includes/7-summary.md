@@ -1,6 +1,6 @@
-In this module, you learned about allowing access to your users, and how the authentication systems available for your GitHub organization help keep your sensitive data secure. You also learned about auditing which users and teams have access to the repositories in your organization. The goal for you as a GitHub administrator should be to give your users access to your enterprise data with robust security restrictions that are painless to use. Securing who has access to your organization will ensure that only the users who legitimately *need* access to your organization's data will have access to it.
+In this module, you learned about allowing access to your users, and how the authentication systems available for your GitHub organization help keep your sensitive data secure. You also learned about auditing which users and teams have access to the repositories in your organization. The goal for you as a GitHub administrator should be to give your users access to your enterprise data with robust security restrictions that are painless to use. Securing who has access to your organization will ensure that only the users who legitimately *need* access to your organization's data will have it.
 
-You learned about:
+You learned:
 
 - How SAML SSO and 2FA are more secure than username/password authentication
 - Which identity providers are supported by GitHub
