@@ -8,11 +8,11 @@ The search problem is formulated as follows: you're given a function $f$ that ta
 
 > [!NOTE] 
 > Notice that you are not given any information about the structure of the function! You only have 
-> access to an "opaque box" that implements this function, this is, takes the input and returns the corresponding output.
+> access to an "opaque box" that implements this function, that is, takes the input and returns the corresponding output.
 
 ## What problems can be framed as search problems?
 
-The search problem is by design generic. Indeed, any problem that allows you to check whether a given value $x$ is a valid solution (a "yes or no problem") can be formulated in terms of the search problem, if we define $f(x)$ as "1 if, and only if, $x$ is a valid solution for our problem".
+The search problem is generic by design. Indeed, any problem that allows you to check whether a given value $x$ is a valid solution (a "yes or no problem") can be formulated in terms of the search problem. Just define $f(x)$ as "1 if, and only if, $x$ is a valid solution for our problem".
 
 Here are some examples:
 
