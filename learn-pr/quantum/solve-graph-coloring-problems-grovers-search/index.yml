@@ -3,7 +3,7 @@ uid: learn.quantum.solve-graph-coloring-problems-grovers-search
 metadata:
   title: Solve graph coloring problems by using Grover's search
   description: Learn how Grover's algorithm can help you solve search problems such as graph coloring problems.
-  ms.date: 09/19/2020
+  ms.date: 12/19/2022
   author: tcNickolas
   ms.author: mamykhai
   ms.topic: tutorial
