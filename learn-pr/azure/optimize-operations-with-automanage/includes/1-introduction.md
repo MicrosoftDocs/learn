@@ -7,11 +7,11 @@ Contoso, Ltd. is a midsize financial services company in London with a branch of
 ## Learning objectives
 
 After completing this module, you'll be able to:
-<!--
 
-- Describe the use of Azure Arc-enabled servers to manage Linux machines.
-- Describe how to use SSH with Azure Arc and Linux machines.
--->
+- Describe how Azure Automanage best practices can optimize the operations of Windows Server and Linux virtual machines.
+- Explain the different services available through Azure Automanage.
+- Create and assign a custom configuration profile for Azure Automanage machines.
+- Describe how to extend Azure Automanage capabilities to non-Azure infrastructure using Azure Arc.
 
 ## Prerequisites
 
