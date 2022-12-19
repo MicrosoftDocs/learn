@@ -15,6 +15,12 @@ You can see how these relationships overlap in the following diagram.
 
 :::image type="content" source="../media/partner-center-overview.png" alt-text="Diagram showing the relationship between different types of partners in the Microsoft partner ecosystem.":::
 
+
+## Example scenario
+
+
+
+
 ## What will we be doing?
 
 Partner Center is organized into workspaces that bring related tasks and information together. In this Training module, you will learn how to use these workspaces so that you can:
