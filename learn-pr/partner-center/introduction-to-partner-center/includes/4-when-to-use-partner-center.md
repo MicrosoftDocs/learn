@@ -53,8 +53,8 @@ Within the [Customers](/partner-center/connect-with-your-customers.md) workspace
   - Questions answered about policies regarding Microsoft Cloud Partner Program benefits.
 - [Requirements for CSP direct-bill partners](/partner-center/direct-partner-new-requirements?source=recommendations)
   - Learn how to meet the latest support and services requirements to become a direct-bill partner in the Microsoft CSP program.
-- [Enroll in the Cloud Solution Provider program](/partner-center/enrolling-in-the-csp-program?source=recommendations)
-  - Learn how to enroll in the Cloud Solution Provider (CSP) program sales model that's best for your business, such as indirect reseller or direct-bill partner.
+- [Enroll in the CSP program](/partner-center/enrolling-in-the-csp-program?source=recommendations)
+  - Learn how to enroll in the CSP program sales model that's best for your business, such as indirect reseller or direct-bill partner.
 
 ## Insights
 
