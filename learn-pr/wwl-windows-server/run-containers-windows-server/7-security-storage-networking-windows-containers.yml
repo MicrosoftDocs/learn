@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-containers-windows-server.security-storage-networking-windows-containers
+title: Security, Storage, and Networking with Windows containers
+metadata:
+  title: Security, Storage, and Networking with Windows containers
+  description: "Security, Storage, and Networking with Windows containers"
+  ms.date: 12/19/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-security-storage-networking-windows-containers.md)]
