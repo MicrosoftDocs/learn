@@ -12,10 +12,10 @@ title: Optimizing operations with Automanage for Windows Server and Linux VMs
 summary: In this module, you'll discover how to optimize the operations of Windows Server and Linux machines using Azure Automanage. 
 abstract: |
   By the end of this module, you'll be able to:
-    - Describe how Azure Automanage best practices can optimize the operations of Windows Server and Linux virtual machines.
-    - Explain the different services available through Azure Automanage.
-    - Create and assign a custom configuration profile for Azure Automanage machines.
-    - Describe how to extend Azure Automanage capabilities to non-Azure infrastructure using Azure Arc.
+  - Describe how Azure Automanage best practices can optimize the operations of Windows Server and Linux virtual machines.
+  - Explain the different services available through Azure Automanage.
+  - Create and assign a custom configuration profile for Azure Automanage machines.
+  - Describe how to extend Azure Automanage capabilities to non-Azure infrastructure using Azure Arc.
 prerequisites: |
   - Basic understanding of Azure Automanage.
   - Basic understanding of Windows Server.
