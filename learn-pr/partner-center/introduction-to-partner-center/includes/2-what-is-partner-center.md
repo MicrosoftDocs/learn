@@ -1,17 +1,17 @@
-[Partner Center](https://partner.microsoft.com/dashboard) streamlines several business processes to make it easier for Microsoft partners to manage their relationships with Microsoft and with their customers. it gives you access to the tools you need to get work done.
+[Partner Center](https://partner.microsoft.com/dashboard) streamlines several business processes so that Microsoft partners can easily manage their relationships with their customers and Microsoft. 
 
 Partner Center is a web-based, unified console that provides access to a wide range of partner-centric activities such as membership, benefits, and account settings, all through a graphical user interface. The portal uses the concept of workspaces to group related tasks and information together.
 
-Whether you're a partner in the Microsoft Cloud Partner (CSP) program or a developer selling your apps, you can use Partner Center to manage all aspects of your account. From the Partner Center dashboard, you can see and make changes to information like tenants, business locations, users and permissions, tax information, and specific programs in which your company is enrolled. You can also use Partner Center to complete tasks such as those listed below.
+Whether you're a partner in the Microsoft Cloud Partner Program or a developer selling your apps, you can use Partner Center to manage all aspects of your account. From the Partner Center dashboard, you can see and make changes to information like tenants, business locations, users and permissions, tax information, and specific programs in which your company is enrolled. You can also use Partner Center to complete tasks such as those listed below.
 
 ## Enroll in membership programs
 
-The Microsoft Cloud Partner Program (formerly called the Microsoft Partner Network) is a hub of people, resources, and offerings brought together to give you everything you need to build and deliver successful solutions for your customers.
+The Cloud Partner Program (formerly called the Microsoft Partner Network) is a hub of people, resources, and offerings brought together to give you everything you need to build and deliver successful solutions for your customers.
 
 > [!NOTE]
-> If you're new to Microsoft Cloud Partner Program and don’t have an PartnerID, you can start your enrollment by following the [enrollment instructions](https://partner.microsoft.com/dashboard/account/v3/enrollment/introduction/partnership).
+> If you're new to Microsoft Cloud Partner Program and don’t have an PartnerID, you can register by following these [enrollment instructions](https://partner.microsoft.com/dashboard/account/v3/enrollment/introduction/partnership).
 
-In Partner Center, you can purchase a Microsoft Action Pack that provides Microsoft software and tools to develop expertise, such as developing skills toward attaining competencies and earning advanced specializations. The benefits included with these programs help you build solutions and go to market. Compare different [Microsoft Cloud Partner Program membership programs](https://partner.microsoft.com/membership/compare-offers).
+In Partner Center, you can purchase a Microsoft Action Pack that provides Microsoft software and tools to develop expertise, such as attaining competencies and earning advanced specializations. The benefits included with these programs help you build solutions and go to market. Compare our different [Microsoft Cloud Partner Program offerings](https://partner.microsoft.com/membership/compare-offers) to find the best fit for your company.
 
 ## Connect with customers
 
@@ -23,7 +23,7 @@ Your solutions are listed in our online stores beside our own Microsoft solution
 
 ## Co-sell with Microsoft and other partners
 
-Co-sell is the path for partners to jointly sell with Microsoft and other partners for collaborative, better-together selling and positive customer outcomes. Co-sell lets you use the Microsoft global brand, sales teams, demand-generation capabilities, and the commercial marketplace to reach new customers worldwide. Sell with other partners and with us. Learn more at [Manage co-sell opportunities](/partner-center/manage-co-sell-opportunities.md).
+Co-sell is the path for partners to jointly sell with Microsoft and other partners for collaborative, better-together selling and positive customer outcomes. Co-sell lets you use the Microsoft global brand, sales teams, demand-generation capabilities, and the commercial marketplace to reach new customers worldwide. Learn more about selling with other partners and Microsoft  at [Manage co-sell opportunities](/partner-center/manage-co-sell-opportunities.md).
 
 ## Manage customer software needs
 
