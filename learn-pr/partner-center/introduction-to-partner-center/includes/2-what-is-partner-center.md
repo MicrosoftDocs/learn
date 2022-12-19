@@ -2,7 +2,7 @@
 
 Partner Center is a web-based, unified console that provides access to a wide range of partner-centric activities such as membership, benefits, and account settings, all through a graphical user interface. The portal uses the concept of workspaces to group related tasks and information together.
 
-Whether you're a partner in the Microsoft Cloud Partner Program or a developer selling your apps, you can use Partner Center to manage all aspects of your account. From the Partner Center dashboard, you can see and make changes to information like tenants, business locations, users and permissions, tax information, and specific programs in which your company is enrolled. You can also use Partner Center to complete tasks such as those listed below.
+Whether you're a partner in the Microsoft Cloud Partner Program or a developer selling your apps, you can use Partner Center to manage all aspects of your account. From the Partner Center dashboard, you can see and make changes to information like tenants, business locations, users and permissions, tax information, and specific programs in which your company is enrolled. You can also use Partner Center to complete tasks such as those listed here.
 
 ## Enroll in membership programs
 

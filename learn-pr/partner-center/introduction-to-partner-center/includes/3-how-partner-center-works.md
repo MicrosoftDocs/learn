@@ -38,7 +38,7 @@ Learn more about the available workspaces by selecting the links in the followin
 > [!NOTE]
 > If you're a hardware partner or app developer, you may have additional workspaces available. For more information, see [Partner Center for Windows Hardware](/windows-hardware/drivers/dashboard/) or [Partner Center for app developers](/windows/uwp/publish/partner-center-workspaces).
 
-## Find your workspaces
+### Find your workspaces
 
 Use **My access** to find your organization's workspaces that you can access.
 
@@ -49,7 +49,7 @@ Use **My access** to find your organization's workspaces that you can access.
 If a workspace you're trying to access isn’t listed, that means your organization isn’t enrolled in the corresponding program. You can explore programs offered by Partner Center in **Account Settings | Programs**.
 1. Selecting a workspace in the list displays the admin to contact to request access to a workspace, and other useful information.
 
-## Find your roles
+### Find your roles
 
 **User roles** specify permissions and, therefore, the workspaces you can access in Partner Center.
 
@@ -60,7 +60,7 @@ If a workspace you're trying to access isn’t listed, that means your organizat
 3. Select **My profile**.
 4. In **Partner Center permissions**, select **Click here to view** ***\<your sign-in name\>*** **permissions** to view your assigned roles.
 
-## Find your admins
+### Find your admins
 
 Admins assign your roles. You can find a list of admins in **Account Settings** who can assign and change roles.
 
@@ -71,4 +71,47 @@ Admins assign your roles. You can find a list of admins in **Account Settings** 
 3. Select **User management**.
 4. Select **Filter** and then select one of the admin types in the list.
 
-Next, we'll look at what Partner Center can help you do.
+The following video provides a deeper dive into the Billing, Pricing, and Customers workspaces.
+
+> [!VIDEO d19ec787-ee94-4c41-8434-46e1747696be]
+
+## Page elements
+
+This section will help you become familiar with the Partner Center experience.
+
+### Navigation pane
+
+You can access any of your workspaces by expanding the navigation pane.
+
+:::image type="content" source="../media/dashboard-flyout.png" alt-text="Screenshot showing the flyout menu for the Partner Center.":::
+
+### Breadcrumbs
+
+Every page other than the home page has breadcrumbs that help you get back to its parent or to the home page.
+
+:::image type="content" source="../media/dashboard-breadcrumb.png" alt-text="Screenshot showing the breadcrumbs in the dashboard.":::
+
+### Search bar
+
+The search bar in the dashboard provides an easy way to find Partner Center pages and documentation. Just type keywords into the bar to get suggested links in the dropdown menu.
+
+:::image type="content" source="../media/dashboard-search.png" alt-text="Screenshot showing the search bar with suggested results.":::
+
+### Notifications, help  settings, and profile
+
+More configuration and settings are available in the Partner Center menu.
+
+:::image type="content" source="../media/dashboard-menu.png" alt-text="Screenshot showing the miscellaneous icons on the dashboard menu.":::
+
+- **Notifications** provides access to the latest alerts, notifications, and announcements.
+- **Help** provides access to support ticket tracking and creation.
+- **Settings** provides access to account settings and preferences.
+- **Profile** provides access to your profile information. You can also sign in using a different account and [switch directories](#directory-switching).
+
+#### Directory switching
+
+If you have multiple directories, you can switch between them in the **Profile** menu.
+
+:::image type="content" source="../media/dashboard-directory.png" alt-text="Screenshot showing the use of the directory switcher in the profile menu.":::
+
+Now that you're familiar with what Partner Center is and how it's organized, we'll look at what Partner Center can help you do.
