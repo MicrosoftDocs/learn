@@ -154,7 +154,7 @@ In this step, you'll connect to both of your servers, and verify that only **Dat
 
 1. The response should include a `mount error` message. This connection isn't allowed, because there is no service endpoint for the storage account on the **Applications** subnet.
 
-1. To connect to your **DataServer** VM, and attempt to mount the Azure file share, run the following command in Cloud Shell:.
+1. To connect to your **DataServer** VM and attempt to mount the Azure file share, run the following command in Cloud Shell:
 
     ```bash
     ssh -t azureuser@$DATASERVERIP \
