@@ -8,7 +8,7 @@ Let's find out.
 
 ## Learning objectives ##
 
-In this module, you will:
+In this module, you'll:
 
 * Explore Cloud Infrastructure Entitlement Management (CIEM)
 * Learn more about Microsoft’s CIEM solution
