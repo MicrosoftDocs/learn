@@ -6,13 +6,13 @@ Referring to our scenario, let's say that you've decided to work on an Ubuntu DS
 
 1. Select the **Create a resource** option in the upper-left corner of the portal page. The Azure Marketplace pane opens.
 
-    ![Screenshot that shows Azure Marketplace with the option for creating a resource highlighted.](../media/create-new-resource.png)
+    :::image type="content" source="../media/azure-portal-create-resource-page.png" alt-text="Screenshot that shows Azure Marketplace Get Started page.":::
 
     As you can see, there are many selectable options. We want to create a DSVM running on Ubuntu.
 
-1. In the **Search the Marketplace** search bar, enter *Data Science*. Select the **Data Science Virtual Machine - Ubuntu 18.04** option. The **Data Science Virtual Machine - Ubuntu 18.04** pane appears.
+1. In the **Search the Marketplace** search bar, enter *Data Science*. Select the **Data Science Virtual Machine - Ubuntu 20.04** option. The **Data Science Virtual Machine - Ubuntu 20.04** pane appears.
 
-    ![Screenshot that shows a search box with Data Science Virtual Machine Ubuntu Server 18.04 highlighted.](../media/search-dsvm.png)
+    :::image type="content" source="../media/azure-portal-marketplace-ubuntu-data-science-virtual-machine.png" alt-text="Screenshot that shows the create resource page for a Data Science Virtual Machine - Ubuntu 20.04.":::
 
 1. Select **Create**. The **Create a virtual machine** pane appears. Notice the wizard-based approach that we can use to configure the VM.
 
@@ -24,19 +24,20 @@ Referring to our scenario, let's say that you've decided to work on an Ubuntu DS
     | --- | --- |
     | **Project details**| |
     | Subscription | *Concierge Subscription* |
-    | Resource group | <rgn>[sandbox resource group name]</rgn>. (This is the sandbox resource group.) |
+    | Resource group | <rgn>[sandbox resource group name]</rgn>. This group is the sandbox resource group. |
     | **Instance details**| |
     | Virtual machine name | test-ubuntu-dsvm |
-    | Region | Select a region near you. It should be the same as that of the resource group. |
+    | Region | Select a region near you. It should be the same as the resource group. |
     | Availability options | No infrastructure redundancy required |
-    | Image | Data Science Virtual Machine - Ubuntu 18.04 - Gen1 |
+    | Image | Data Science Virtual Machine - Ubuntu 20.04 - X64 Gen2 |
+    | Security type | Standard |
     | Size | Standard_DS1_v2. If that's not the selected value: Select **See all sizes** link; Enter **DS1\_** in the search box; Select the **DS1\_v2** row; Select **Select** to choose that size and return to the configuration screen. |
     | **Administrator account**| |
     | Authentication type | Password |
     | Username | Enter a string from 1 to 64 characters long. |
     | Password | Enter a strong password. |
 
-    ![Screenshot that shows the details filled out for V M configuration.](../media/create-new-resource.png)
+    :::image type="content" source="../media/azure-portal-create-virtual-machine-settings.png" alt-text="Screenshot that shows the details filled out for V M configuration.":::
 
 1. You can explore several other tabs to see the settings that you can influence during the VM creation. On the **Disks** tab, for example, you can specify your data disks. After you're finished exploring, select **Review + create** to review and validate the settings.
 
@@ -48,6 +49,6 @@ Referring to our scenario, let's say that you've decided to work on an Ubuntu DS
 
 1. You can see all the information and configuration options for your newly created DSVM. One of the pieces of information is the **Public IP address** value. Make note of this IP address, because you'll need it to connect.
 
-    ![Screenshot that shows the VM overview page with the public I P address to the V M highlighted.](../media/dsvm-summary-started-in-portal.png)
+    :::image type="content" source="../media/azure-portal-virtual-machine-overview-pane.png" alt-text="Screenshot that shows the VM overview page.":::
 
 Congratulations! By performing a few steps, you deployed a DSVM running on Linux. Now let's connect to it.

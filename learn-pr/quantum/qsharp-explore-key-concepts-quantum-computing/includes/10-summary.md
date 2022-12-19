@@ -16,8 +16,7 @@ If you're new to quantum computing, the concepts of superposition, interference,
 
 To find a series of self-paced tutorials to help you learn quantum computing and Q# programming, go to [Learn quantum computing by using the Quantum Katas](/quantum/tutorials/intro-to-katas?azure-portal=true). You can also browse [code samples](/samples/browse/?azure-portal=true&languages=qsharp).
 
-As you develop your own quantum programs, be sure to explore the [Microsoft quantum documentation](/quantum/?azure-portal=true). There, you'll find comprehensive
-reference material, including:
+As you develop your own quantum programs, be sure to explore the [Azure Quantum documentation](/quantum/?azure-portal=true). There, you'll find comprehensive reference material, including:
 
 - Fundamental concepts for quantum computing.
 - Quickstarts and tutorials.
