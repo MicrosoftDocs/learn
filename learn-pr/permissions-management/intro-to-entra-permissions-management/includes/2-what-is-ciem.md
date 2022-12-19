@@ -2,9 +2,9 @@
 
 In order to understand Microsoft Entra Permissions Management, it's first important to understand the product category that it belongs to.
 
-Cloud infrastructure entitlement management, or CIEM (pronounced *kim*), is a SaaS approach for managing identities and permissions in cloud environments. CIEM is a newer approach that applies cloud infrastructure and platform services (CIPS) to manage human and workload identities, entitlements, permissions, and operation details across multiple cloud environments.
+Cloud infrastructure entitlement management, or CIEM (pronounced *kim*), is a SaaS model for managing identities and permissions in cloud environments. CIEM is a newer approach that applies cloud infrastructure and platform services (CIPS) to manage human and workload identities, entitlements, permissions, and operation details across multiple cloud environments.
 
-## Why CIEM important?
+## Why is CIEM important?
 
 As company workflows and system applications continue to move to the cloud environments, there's an increasing need for monitoring identities and privileges in a secure environment that is dynamic. CIEM allows companies to discover, manage, and monitor identities and their permissions in real time across multiple cloud infrastructures. 
 
@@ -12,7 +12,7 @@ Managing permissions with a CIEM approach in your organization allows you to pre
 
 ![Image showing the gap between Permissions Granted and Permissions Used](../media/permissions-gap.png)
 
-Permissions Gap is the space in which permissions granted go unused or unmonitored. Permissions Gap can become a problem as it expands room for a cyber attack in your organization's cloud infrastructure. This can leave you open to risk of a security breach from accidental or malicious permissions use. 
+Permissions Gap is the space in which permissions granted go unused or unmonitored. Permissions Gap can become a problem as it expands the space for cyber attacks in your organization's cloud infrastructure. This can leave you open to risk of a security breach from accidental or malicious permissions use. 
 
 ## CIEM market growth & viability
 
