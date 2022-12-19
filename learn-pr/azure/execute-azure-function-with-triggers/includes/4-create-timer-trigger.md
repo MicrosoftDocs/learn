@@ -25,7 +25,7 @@ Let’s start by creating an Azure Function App in the portal.
     | Function App name | *\<your-webapp-name\>*. Enter a globally unique name for your function app. |
     | Publish | Code |
     | Runtime stack | Select one of the languages supported for in-portal development: **.NET**, **Node.js**, **Python**, or **PowerShell Core**.  |
-    | Version | Select an appropriate version for your language runtime. |
+    | Version | Use the suggested default version of your language runtime. |
     | Region | Select a location close to you. |
     | **Operating system** |
     | Operating System | Windows |
