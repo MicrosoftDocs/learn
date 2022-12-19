@@ -2,7 +2,7 @@
 uid: learn.build-chat-app-web-pubsub
 metadata:
   title: Build your first real-time chat app by using Azure Web PubSub and Azure Static Web Apps
-  description: Build a real-time, serverless chat app and implement continuous delivery from a GitHub repo. 
+  description: Build a real-time, serverless chat app using Azure Web PubSub and Azure Static Web Apps, and implement continuous delivery from a GitHub repo. 
   ms.date: 12/14/2022
   author: dlepow
   ms.author: danlep
@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   ms.contributors: jixin, v-glennminch
 title: Build your first real-time chat app by using Azure Web PubSub and Azure Static Web Apps
-summary: put a summary here
+summary: Use Azure Web PubSub and Azure Static Web Apps to build a real-time messaging app!
 abstract: | 
   In this module, you will:
   - Build a severless, real-time chat room messaging application using the Azure Web PubSub service and Azure Static Web Apps

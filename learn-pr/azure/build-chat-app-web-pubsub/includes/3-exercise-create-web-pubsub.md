@@ -16,7 +16,7 @@
 
     ```azurecli
     az webpubsub create \
-      --name $WPS_NAME \ 
+      --name $WPS_NAME \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --location "eastus2" \
       --sku Free_F1
@@ -26,7 +26,7 @@
 
     ```azurecli
     AWPS_ACCESS_KEY=$(az webpubsub key show \
-      --name my-awps-swa \
-      --resource-group my-awps-swa-group \
-      --query primaryConnectionString --output tsv
+      --name $WPS_NAME \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --query primaryConnectionString --output tsv)
     ```

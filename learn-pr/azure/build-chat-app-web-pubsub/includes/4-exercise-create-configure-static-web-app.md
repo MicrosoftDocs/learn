@@ -41,9 +41,9 @@ Now that the repository is created, you can create a static web app from the Azu
 
 1. Go to [https://github.com/login/device](https://github.com/login/device).
 
-1. Enter the user code as displayed in your console's output.
+1. Enter the user code as displayed in your console's output. Select **Continue**.
 
-1. In the page that appears, select **Authorize AzureAppServiceCLI**.
+1. In the page that appears, select **Authorize AzureAppServiceCLI**. If prompted, retrieve and enter a two-factor authentication code.
 
 1. Configure the static web app settings.
 
@@ -94,8 +94,8 @@ You're very close to complete. The last step is to configure Web PubSub to trans
 
     ```azurecli
     az webpubsub hub create \
-      --name "my-awps-swa" \
-      --group <rgn>[sandbox resource group name]</rgn> \
+      --name $WPS_NAME \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --hub-name "sample_swa" \
       --event-handler url-template=https://$STATIC_WEB_APP/api/{event} user-event-pattern="*" \
       --event-handler url-template=https://$STATIC_WEB_APP/api/{event} system-event="connect"
