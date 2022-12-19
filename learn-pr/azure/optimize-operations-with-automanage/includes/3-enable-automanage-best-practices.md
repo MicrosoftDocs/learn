@@ -14,11 +14,11 @@ If you don't have an Azure subscription, [create an account](https://azure.micro
 1. In the search bar, search for an select **Automanage**.
 1. In the menu, select **Automanage machines**.
 1. Select **Enable on existing machine**.
-    :::image type="content" source="../media/zero-vm-list-view.png" alt-text="machine":::
+    :::image type="content" source="../media/zero-vm-list-view.png" alt-text="Screenshot of enablement on existing VM.":::
 1. On the **Basics** tab, select your profile type: **Azure best practices: Production** or **Azure best practices: Dev/Test**:
-    :::image type="content" source="../media/existing-vm-quick-create.png" alt-text="profiles":::
+    :::image type="content" source="../media/existing-vm-quick-create.png" alt-text="Screenshot of choices for configuration profiles.":::
     The profile type you select will determine the services and settings applied to your machine(s). To view the details for the different profiles, select **View Azure best practices profiles**:
-    :::image type="content" source="../media/browse-production-profile.png" alt-text="profile":::
+    :::image type="content" source="../media/browse-production-profile.png" alt-text="Screenshot of services and settings for each profile.":::
 1. Select the **Machines** tab, then check the box for the machine(s) you want to enable for Automanage:
-    :::image type="content" source="../media/existing-vm-select-machine.png" alt-text="machines":::
+    :::image type="content" source="../media/existing-vm-select-machine.png" alt-text="Screenshot showing how to select from a list of available virtual machines.":::
 1. Select the Review + Create tab to review the machine(s) you've chose, then select the **Create** button.
