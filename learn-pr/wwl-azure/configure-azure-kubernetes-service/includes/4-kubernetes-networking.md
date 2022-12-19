@@ -20,7 +20,7 @@ The Azure platform helps to simplify virtual networking for Azure Kubernetes Ser
 
 When you create a Kubernetes load balancer, the underlying Azure Load Balancer resource is created and configured. As you open network ports to pods, the corresponding Azure network security group rules are configured. For HTTP application routing, Azure can configure an external DNS as new ingress routes are configured.
 
-### Things to know about Kubernetes services
+### Things to know about Kubernetes service types
 
 To simplify the network configuration for application workloads, Kubernetes uses services to logically group a set of pods together and provide network connectivity. There are four service types available for creating network configurations.
 

@@ -4,7 +4,7 @@ The following illustration shows the relationships in a Kubernetes pool between 
 
 :::image type="content" source="../media/kubernetes-terms-ee59aa6e.png" alt-text="Illustration that shows a Kubernetes pool with nodes, nodes with pods, and pods with containers." border="false":::
 
-### Things to know about AKS concepts and terminology
+### Things to know about AKS concepts
 
 Before you begin using Kubernetes and Azure Kubernetes Service to deploy and manage containerized applications, it's helpful to be familiar with the terminology and concepts.
 
