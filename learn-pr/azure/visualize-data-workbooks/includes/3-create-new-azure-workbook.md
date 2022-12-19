@@ -35,25 +35,16 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
     - one number
     - one special character, not including \ or -.
 1. Wait while the resources that you need for the module are deployed. This will take a few minutes.
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. You can sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to see the resources deployed in your sandbox for this learn module.
 1. On the **Home** page, select **Resource groups**, or search for "Resource groups" in the search bar at the top of the page.
 1. Select the "learn" resource group created when the sandbox was activated.
-1. Look through the list of resources and select the App Service.
+1. Look through the list of resources and see the resources created for this exercise.
 
-    :::image type="content" source="../media/3-portal-select-app-service.png" alt-text="Screenshot of selecting the App Service from the resource group.":::
-
-1. On the top toolbar, select **Browse**.
-
-    :::image type="content" source="../media/3-portal-browse-app-service.png" alt-text="Screenshot of the browser button from the App Service page.":::
-
-1. Populate the app service with some activities to generate some data for our example. On the **List of To-Do Items** page, create some items, edit them, or mark some as complete.
-
-    :::image type="content" source="../media/3-app-service-tasks.png" alt-text="Screenshot that shows tasks for the app service for workbooks learn module.":::
-1. Now, we're ready to create a workbook.
+    :::image type="content" source="../media/3-portal-resources.png" alt-text="Screenshot of the resources in a resource group.":::
 
 ## Create a new workbook
 
-1. From the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) home page, search for and select **Monitor**. 
+1. From the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) home page, search for and select **Monitor**.
 1. Select **Workbooks** from the left pane.
 1. Select **+ New** from the top toolbar.
     :::image type="content" source="../media/3-portal-new-workbook.png" alt-text="Screenshot that shows the New workbook icon Azure Workbooks page.":::

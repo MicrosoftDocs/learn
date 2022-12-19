@@ -45,7 +45,7 @@ In your workbook, select **Edit** from the top toolbar.
         - In the **Resource type** field, select **Subscription**.
         - In the **Subscriptions** field, select the **Subscription** resource parameter.
         - Enter the following query, and then select **Run Query**.
-            ```Powershell
+            ```azurecli
             resources 
             | where type == "microsoft.compute/virtualmachines" 
             | project id
