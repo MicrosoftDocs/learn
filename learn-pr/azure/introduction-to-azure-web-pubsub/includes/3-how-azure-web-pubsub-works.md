@@ -14,7 +14,7 @@ Here are a few terms that you need to familiarize yourself with:
 
 An illustration of how it works:
 
-:::image type="content" source="../media/workflow.png" alt-text="Workflow of Azure Web PubSub":::
+:::image type="content" source="../media/workflow.png" alt-text="Workflow of Azure Web PubSub.":::
 
 1. A client connects to the service `/client` endpoint using WebSocket transport. The service forwards every WebSocket frame to the configured upstream server. The WebSocket connection can connect with any custom subprotocol for the server to handle, or it can connect with the service-supported subprotocols (such as `json.webpubsub.azure.v1`) that enable the clients to do PubSub directly. Details are described in [client protocol](/azure/azure-web-pubsub/concept-service-internals#client-protocol).
 
