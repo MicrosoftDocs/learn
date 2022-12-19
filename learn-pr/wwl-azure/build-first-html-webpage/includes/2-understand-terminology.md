@@ -1,6 +1,6 @@
 You will soon be writing code to create a web page.
 
-![Image of HTML Code and the resulting webpage for an example resume.](../media/html-to-webpage.png)
+:::image type="content" source="../media/html-to-webpage.png" alt-text="Image of HTML Code and the resulting webpage for an example resume.":::
 
 When getting started with a new technology there are different terms you will need to be familiar with. While your vocabulary will expand as you continue to grow as a web developer, there are certain core concepts which will help you get started.
 

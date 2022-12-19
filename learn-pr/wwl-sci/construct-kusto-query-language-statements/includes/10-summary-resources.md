@@ -10,7 +10,7 @@ You should now be able to:
 
 You can learn more by reviewing the following.
 
-[KQL quick reference](/azure/data-explorer/kql-quick-reference?azure-portal=true)
+[KQL quick reference | Microsoft Docs](/azure/data-explorer/kql-quick-reference?azure-portal=true)
 
 [Microsoft Tech Community Security Webinars](https://techcommunity.microsoft.com/t5/microsoft-security-and/security-community-webinars/ba-p/927888?azure-portal=true)
 
