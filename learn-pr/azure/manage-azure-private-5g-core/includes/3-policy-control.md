@@ -129,7 +129,7 @@ For detailed instructions on configuring a SIM policy through the Azure portal, 
 
 If you are familiar with ARM templates, you can create an ARM template that specifies the services and SIM policies you want to create, and then use the template to create all the resources in one go.
 
-From the [Azure Private 5G Core REST API](/rest/api/mobilenetwork/) document, you can get a list of fields that you need to specify for a service or a SIM policy. Because the Resource Manager converts a template into REST API operations when you deploy the template, the parameters in the API requests are the same as the fields in the ARM template. For example, for a service, you can find information about the `servicePrecedence` field in the Azure REST API article [Services - Create Or Update](/rest/api/mobilenetwork/services/create-or-update).
+From the [Azure Private 5G Core REST API](/rest/api/mobilenetwork/) document, you can get a list of fields that you need to specify for a service or a SIM policy. Because the Resource Manager converts a template into REST API operations when you deploy the template, the parameters in the API requests are the same as the fields in the ARM template. For example, for a service, you can find information about the `servicePrecedence` field in the Azure REST API article [Services - Create or update](/rest/api/mobilenetwork/services/create-or-update).
 
 For details about the fields for a service, see [Services](/rest/api/mobilenetwork/services). For details about the fields for a SIM policy, see [SIM policies](/rest/api/mobilenetwork/sim-policies).
 

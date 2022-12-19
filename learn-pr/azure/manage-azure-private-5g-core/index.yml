@@ -38,6 +38,7 @@ subjects:
 units:
 - learn.manage-azure-private-5g-core.introduction
 - learn.manage-azure-private-5g-core.network-and-site-management
+- learn.manage-azure-private-5g-core.policy-control
 - learn.manage-azure-private-5g-core.sim-management
 - learn.manage-azure-private-5g-core.system-upgrade
 - learn.manage-azure-private-5g-core.knowledge-check
