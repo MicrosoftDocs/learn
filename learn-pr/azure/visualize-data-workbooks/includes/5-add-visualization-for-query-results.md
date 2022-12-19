@@ -15,7 +15,7 @@ Keep in mind that the data sources and visualizations in this tutorial are just 
 1. Select **Add**, and then **Add Query**.
     - In the **Data source** field, select **Azure Resource Health**.
     - In the **Resource type** field, select **Subscriptions**.
-    - In the **Subscriptions** field, select the **Subscription** resource parameter. You will see a list of all of the Azure resources in the subscription.
+    - In the **Subscriptions** field, select the **Subscription** resource parameter. You'll see a list of all of the Azure resources in the subscription.
 
         :::image type="content" source="../media/5-resource-health-query.png" alt-text="Screenshot that shows a resource health query in Azure workbooks. ":::
 
@@ -44,7 +44,7 @@ In your workbook, select **Edit** from the top toolbar.
         - In the **Data source** field, select **Azure resource graph**.
         - In the **Resource type** field, select **Subscription**.
         - In the **Subscriptions** field, select the **Subscription** resource parameter.
-        - Enter the following query , and then select **Run Query**.
+        - Enter the following query, and then select **Run Query**.
             ```Powershell
             resources 
             | where type == "microsoft.compute/virtualmachines" 
@@ -54,13 +54,13 @@ In your workbook, select **Edit** from the top toolbar.
         :::image type="content" source="../media/5-cpu-usage-query.png" alt-text="Screenshot that shows the CPU usage query in a workbook.":::
 
 1. In the **Include in the drop down** section, select **All**, and then select **Save**.
-1. Now, we will add a metric that represents the percentage of CPU usage in your resources. Select **Add**, and then **Add metric**.
+1. Now, we'll add a metric that represents the percentage of CPU usage in your resources. Select **Add**, and then **Add metric**.
 
     :::image type="content" source="../media/5-add-metric.png" alt-text="Screenshot that shows adding a metric to an Azure workbook.":::
 
     - In the **Resource type** field, select **Virtual machine**.
     - In the **Metric scope** field, select **Resource scope**.
-    - In the **Virtual machine** field, select the **virtualMachines** parameter you just created.
+    - In the **Virtual machine** field, select the **virtualMachines** parameter you created.
     - In the **Visualization** field, select **graph**.
     - Select **Add metric**.
     - In the **Metric** field, select **Percentage CPU**, and then **Save**.
@@ -99,9 +99,9 @@ In your workbook, select **Edit** from the top toolbar.
     :::image type="content" source="../media/5-graph-layout-settings.png" alt-text="Screenshot that shows the settings for the layout of a graph in a workbook.":::
 
 1. Select **Save and Close**.
-1. Select **Advanced settings**, and enter a title, such as "Virutal machine CPU performance** in the **Chart title**.
+1. Select **Advanced settings**, and enter a title, such as "Virtual machine CPU performance** in the **Chart title**.
 1. Select **Done editing**.
 
     Your workbook now has a graph that shows you all of the virtual machines in the subscription, and what percentage of the CPU each virtual machine is utilizing.
 
-:::image type="content" source="../media/5-cpu-usage-hive-cluster.png" alt-text="Screenshot that shows the a hive cluster graph in a workbook.":::
+:::image type="content" source="../media/5-cpu-usage-hive-cluster.png" alt-text="Screenshot that shows a hive cluster graph in a workbook.":::
