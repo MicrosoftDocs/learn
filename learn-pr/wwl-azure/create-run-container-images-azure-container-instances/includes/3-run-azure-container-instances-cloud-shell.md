@@ -10,7 +10,7 @@ In this exercise you'll learn how to perform the following actions:
 
 ## Login to Azure and create the resource group
 
-1. Login to the [Azure portal](https://portal.azure.com) and open the Cloud Shell.
+1. Log in to the [Azure portal](https://portal.azure.com) and open the Cloud Shell.
 
     :::image type="content" source="../media/cloud-shell-menu.png" alt-text="The location of Cloud Shell launch button.":::
 
