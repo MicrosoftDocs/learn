@@ -5,6 +5,7 @@ namespace ExploringSuperposition {
     open Microsoft.Quantum.Measurement;
     open Microsoft.Quantum.Math;
     open Microsoft.Quantum.Convert;
+    open Microsoft.Quantum.Arrays;
 
     @EntryPoint()
     operation GenerateUniformState() : Int {
@@ -12,7 +13,7 @@ namespace ExploringSuperposition {
         ApplyToEach(H, qubits);
         Message("The qubit register in a uniform superposition: ");
         DumpMachine();
-        mutable results = new Result[0];
+        mutable results = EmptyArray<Result>();
         for q in qubits {
             Message(" ");
             set results += [M(q)];
