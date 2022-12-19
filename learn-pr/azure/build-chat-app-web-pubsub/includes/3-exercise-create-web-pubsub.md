@@ -1,6 +1,6 @@
 1. Sign in to the Azure CLI by activating the Sandbox.
 
-1. Create a globally unique name for your Azure WebPubSub resource. 
+1. Create a globally unique name for your Azure Web PubSub resource. 
 
     ```azurecli
     WPS_NAME=<my-unique-name>
