@@ -101,7 +101,7 @@ You now need to configure the storage account to be accessible only from databas
         --service-endpoints Microsoft.Storage
     ```
 
-1. To deny all access to change the default action to `Deny`, run the following command in Cloud Shell. After network access is denied, the storage account is not accessible from any network.
+1. To deny all access, change the default action to `Deny` by running the following command in Cloud Shell. After network access is denied, the storage account is not accessible from any network.
 
     ```azurecli
     az storage account update \
