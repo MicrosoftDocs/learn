@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-computers.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/16/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check Your Knowledge"
+  questions:
+  - content: "What is the main difference between the CPU and the GPU?"
+    choices:
+    - content: "The CPU handles digital data."
+      isCorrect: false
+      explanation: "That's incorrect. Both the GPU and the CPU handle digital data."
+    - content: "The GPU mainly stores information."
+      isCorrect: false
+      explanation: "That's incorrect. Neither the CPU nor the GPU is used for storage."
+    - content: "The GPU is faster."
+      isCorrect: true
+      explanation: "That's correct. The GPU is different from the CPU because it can \"think\" faster."
+  - content: "Why do computers have random access memory (RAM)?"
+    choices:
+    - content: "To store information even when the computer is off"
+      isCorrect: false
+      explanation: "That's incorrect. The disk drive, not RAM, is used to store information for long periods even when the computer is off."
+    - content: "To keep the computer secure"
+      isCorrect: false
+      explanation: "That's incorrect. While RAM can prevent data from being read, its main purpose is to temporarily store data so the \"brains\" can process information."
+    - content: "To store chunks of data for the CPU to use"
+      isCorrect: true
+      explanation: "That's correct. RAM is used to store chunks of data that the CPU can grab and use when it needs it and temporarily store it when it doesn't."
+  - content: "What enables a computer to talk to other computers on a network?"
+    choices:
+    - content: "The hard disk drive"
+      isCorrect: false
+      explanation: "That's incorrect. The hard disk drive stores information for later use by the brains of the computer."
+    - content: "The central processing unit"
+      isCorrect: false
+      explanation: "That's incorrect. The central processing unit, or brains of the computer, mainly processes data."
+    - content: "The network adapter"
+      isCorrect: true
+      explanation: "That's correct. The network adapter sends data to and from other computers."
