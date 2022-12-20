@@ -25,6 +25,7 @@ roles:
 products:
 - vs-ide
 - aspnet-core
+- azure
 - azure-app-service
 subjects:
   - development-tools
