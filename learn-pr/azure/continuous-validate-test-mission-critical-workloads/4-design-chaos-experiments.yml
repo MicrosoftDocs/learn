@@ -3,50 +3,44 @@ uid: learn.continuous-validate-test-mission-critical-workloads.design-chaos-expe
 title: Design chaos experiments
 metadata:
   title: Design chaos experiments
-  description: Design chaos experiments.
-  ms.date: 11/11/2022
-  author: PageWriter-MSFT
+  description: Learn how to design chaos experiments with Azure Chaos Studio.
+  ms.date: 12/19/2022
+  author: sebader
   ms.author: prwilk
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure #TBD
-durationInMinutes: 5 #TBD
+  ms.prod: learning-azure
+durationInMinutes: 5
 content: |
   [!include[](includes/4-design-chaos-experiments.md)]
 
 quiz:
   title: Knowledge check
   questions:
-  - content: "Question 1"
+  - content: "Is it the goal of a chaos experiment to break your application?"
     choices:
-    - content: "Option 1."
+    - content: "Yes"
+      isCorrect: false
+      explanation: ""
+    - content: "No"
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-  - content: "Question 2"
+      explanation: ""
+  - content: "Which services does Azure Chaos Studio support?"
     choices:
-    - content: "Option 1."
+    - content: "Azure Virtual Machines, Azure App Service, and Azure Cache for Redis "
+      isCorrect: false
+      explanation: ""
+    - content: "Azure Virtual Machines, Azure Kubernetes Service (AKS), and Azure Cache for Redis"
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
+      explanation: ""
+    - content: "Azure Kubernetes Service (AKS) and Azure Functions"
       isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-  - content: "Question 3"
+      explanation: ""
+  - content: "Before you can run an experiment against a service from Azure Chaos Studio, what settings do you need to enable?"
     choices:
-    - content: "Option 1."
+    - content: "Target and capability"
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
+      explanation: ""
+    - content: "Availability zones"
       isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
+      explanation: ""
 

@@ -1,19 +1,30 @@
-Include the scenario and architecture that will be used for the exercises later. 
+Continuous validation is set of processes and tools, set up within a continuous integration and continuous deployment (CI/CD) pipeline and monitoring system, that you use to ensure a solution's performance at deployment time. For a mission-critical workload, using continuous validation in a test environment that emulates the production environment helps to ensure that a solution stays operational even when failures occur.
 
-Image
+In continuous validation, you:
 
-Components
+- Define tests based on expected thresholds.
+- Implement validation. Microsoft Azure provides the following services to implement load testing and chaos engineering. To validate the impact of application changes under realistic conditions at any time of the development cycle, you can run these two services simultaneously by embedding them in an Azure DevOps CI/CD pipeline:
+  - [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing). This service generates synthetic traffic to the application.
+  - [Azure Chaos Studio](/azure/chaos-studio/chaos-studio-overview). This service uses chaos engineering to systematically inject failures into key components of the application.
 
-Flow
+- Establish a baseline. Adjust the thresholds for regular runs to verify that the application continues to provide the expected performance and doesn't produce any errors. Use Azure Load Testing to specify certain criteria that a test needs to pass to implement different baselines.
 
+## Example scenario
+
+Contoso Shoes migrated its on-premises deployments to the cloud two years ago. Although they saw improvements in operations, it was challenging to keep their availability and uptime within the service level agreement (SLA). Previous product launches led to outages because the system wasn't able to meet the increase in load and they weren't able to anticipate the issues and their impact earlier in the development cycle. It resulted in significant financial loss. Based on that experience, Contoso Shoes has successfully applied the [principles of mission-critical architecture](/azure/architecture/framework/mission-critical/mission-critical-design-principles) in their main customer-facing application.
+
+Now that Contoso Shoes has applied the mission-critical design methodology to their deployments, it:
+
+- Has expanded to two regions to serve clients faster with lower latency
+- Now operates two AKS clusters in two regions with Azure Front Door for global traffic distribution.
+- Is still facing outages from time to time due to unexpected spikes in traffic and erroneous releases
+
+To prevent performance bottlenecks and to increase confidence in new releases, Contoso Shoes has decided to implement [continuous validation](/azure/architecture/guide/testing/mission-critical-deployment-testing).
 
 ## Learning objectives
 
-In this module, you will:
-- TBD
-- TBD
+By the end of this module, you'll be able to:
 
-## Prerequisites
-
-- TBD
-
+- Understand the importance of user and system flows as the foundation for defining load tests and chaos experiments for your workload.
+- Establish a baseline with expected thresholds for the system.
+- Define requirements for load testing and chaos experiments.

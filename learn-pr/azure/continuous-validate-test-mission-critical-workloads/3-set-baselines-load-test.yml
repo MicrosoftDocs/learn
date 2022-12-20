@@ -4,12 +4,12 @@ title: Set baselines for load tests
 metadata:
   title: Set baselines for load tests
   description: Set baselines for load tests.
-  ms.date: 11/11/2022
-  author: PageWriter-MSFT
+  ms.date: 12/19/2022
+  author: sebader
   ms.author: prwilk
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure #TBD
-durationInMinutes: 5 #TBD
+  ms.prod: learning-azure
+durationInMinutes: 5
 content: |
   [!include[](includes/3-set-baselines-load-test.md)]
 

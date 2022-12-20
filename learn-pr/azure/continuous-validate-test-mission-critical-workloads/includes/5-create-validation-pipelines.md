@@ -1,4 +1,1 @@
-Run test regularly as part of your development lifecycle, this should be built into a CI/CD pipeline.
-
-Both load test and Chaos Studio need to be defined as Infrastructure-as-Code (IaC). This can be done with ARM templates/Bicep or Terraform.
-
+Although you can run load tests manually (with or without Azure Chaos experiments) in a mission-critical system, it's recommended that you run these tests regularly as part of continuous validation. To do so, build them into a continuous integration and continuous deployment (CI/CD) pipeline. You can use Azure Pipelines or the CI/CD tool of your choosing. In the pipeline, define the Azure Load Test and Azure Chaos Studio services as Infrastructure-as-Code (IaC) with Azure Resource Manager templates (ARM templates), Azure Bicep, or Terraform.
