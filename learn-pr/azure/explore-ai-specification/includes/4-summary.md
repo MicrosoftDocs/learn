@@ -5,4 +5,5 @@ In this module, you learned the following:
 
 You can learn more about it from these resources:
 
-- Designing Autonomous AI, A Guide for Machine Teaching, click [here](https://www.oreilly.com/library/view/designing-autonomous-ai/9781098110741/) for more information.
+- [Designing Autonomous AI, A Guide for Machine Teaching](https://www.oreilly.com/library/view/designing-autonomous-ai/9781098110741/)
+- [Building Intelligent Control and Optimization Systems with Project Bonsai](https://www.youtube.com/watch?v=6mfUz4PDgOw&ab_channel=MicrosoftResearch)
