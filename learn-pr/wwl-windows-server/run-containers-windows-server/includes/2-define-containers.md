@@ -28,7 +28,7 @@ Each container has its own copy of the user mode system files, which are isolate
 
 The layer in which application and code changes are made sits on top of these prebuilt container base OS image layers. These base OS layers are developed and updated separately from the container layers that are used actively for application or code changes. Base layers are pulled down to the local working environment without being updated, and then work is started in container layers which run on the base layers. This allows for development environments that are smaller, more lightweight, and more portable.
 
-![An example container layer set with layers in a stack in the following order from the bottom up: Base OS layer, IIS Layer, ASP.NET Layer, and Your website layer.](../media/run-containers-on-windows-server-01.png)
+![Diagram that shows an example container layer set with layers in a stack in the following order from the bottom up: Base OS layer, IIS Layer, ASP.NET Layer, and Your website layer.](../media/run-containers-on-windows-server-01.png)
 
 When you build your own container image to host your application, you start by leveraging a container base OS image or a pre-built container image that has the dependencies you need. On top of these layers, you build your own layers with the application you want to run in a container. Each operation to create the container image builds on top of the last one. This adds to the image size, but allows you to conveniently segregate the OS, framework, dependencies, and application layers.
 

@@ -17,26 +17,26 @@ Considered the traditional isolation mode for Windows Server containers, process
 > [!Note]
 Docker is a collection of open-source tools, solutions, and cloud-based services that provide a common model for packaging (also known as containerizing) app code into a standardized unit for software development. You will learn more about Docker and container runtimes in the next unit.
 
-When you start a new container, Docker (or the default container runtime) communicates with the compute services to create a new container that's based on an image. For each container, Docker creates a Windows container. Each Windows container requires a set of system processes, which are always the same in every container. You then can use your own application process to differentiate each container. To do this, you can use an application framework such as .Net, a Windows Server component such as Internet Information Services (IIS), or a third-party framework or processes that you run in the container.
+When you start a new container, Docker (or the default container runtime) communicates with the compute services to create a new container that's based on an image. For each container, Docker creates a Windows container. Each Windows container requires a set of system processes, which are always the same in every container. You then can use your own application process to differentiate each container. To do this, you can use an application framework such as .NET, a Windows Server component such as Internet Information Services (IIS), or a third-party framework or processes that you run in the container.
 
 **Hyper-V isolation mode for Hyper-V containers**
 
 When containers share the kernel and memory, there's the possibility that, should a vulnerability be explored by an attacker, an application might break out of its sandbox environment and inadvertently do something malicious. To avoid this, Windows provides an alternative method to run containers that's more secure called Hyper-V isolation mode, sometimes referred to as Hyper-V containers.
 
-With Hyper-V isolation mode, each container runs inside a highly-optimized VM. The advantage of Hyper-V isolation mode is that each container effectively has its own kernel, which provides an enhanced level of stability and security. The VM provides an additional layer of hardware-level isolation between each container and the host computer. When deployed, a container using Hyper-V isolation mode starts in seconds, which is much faster than a VM with a full Windows OS.
+With Hyper-V isolation mode, each container runs inside a highly optimized VM. The advantage of Hyper-V isolation mode is that each container effectively has its own kernel, which provides an enhanced level of stability and security. The VM provides an additional layer of hardware-level isolation between each container and the host computer. When deployed, a container using Hyper-V isolation mode starts in seconds, which is much faster than a VM with a full Windows OS.
 
 > [!Note]
-Windows-based containers running on Windows Server default to using the process isolation mode. Windows-based containers running on Windows 10 Pro and Enterprise default to using the Hyper-V isolation mode.
+> Windows-based containers running on Windows Server default to using the process isolation mode. Windows-based containers running on Windows 10 Pro and Enterprise default to using the Hyper-V isolation mode.
 
 The following graphic compares the architectures of Windows Server and Hyper-V containers and their two isolation modes. The graphic illustrates that the host Windows kernel is shared by the host user mode and Windows Server. Running on that shared kernel is a virtual machine, inside of which is a Hyper-V container. The Hyper-V container has its own Windows kernel that's not shared.
 
-![The architecture for Windows Server and Hyper-V containers and their two isolation modes.](../media/run-containers-on-windows-server-03.png)
+![Screenshot of the architecture for Windows Server and Hyper-V containers and their two isolation modes.](../media/run-containers-on-windows-server-03.png)
 
 > [!Caution]
-Process isolation mode in Windows 10 is intended for development and test only. Starting with the Windows 10 October 2018 update, users running a Windows 10 Pro or Enterprise host can run a Windows container in process isolation mode. Users must directly request process isolation mode by using the --isolation=process parameter. Your host must be running Windows 10 build 17763+ and you must have a Docker version with Engine 18.09 or newer.
+> Process isolation mode in Windows 10 is intended for development and test only. Starting with the Windows 10 October 2018 update, users running a Windows 10 Pro or Enterprise host can run a Windows container in process isolation mode. Users must directly request process isolation mode by using the --isolation=process parameter. Your host must be running Windows 10 build 17763+ and you must have a Docker version with Engine 18.09 or newer.
 
 > [!Important]
-As Windows Server container and the host operating system, share the kernel, you must ensure that your host and container image version tags match, otherwise the container might fail to start or exhibit undefined behavior. Hyper-V containers can be used as an alternative to run older container images on newer hosts - for example: A Windows Server 2019 image on a Windows Server 2022 host only works with Hyper-V isolation.
+> As Windows Server container and the host operating system, share the kernel, you must ensure that your host and container image version tags match, otherwise the container might fail to start or exhibit undefined behavior. Hyper-V containers can be used as an alternative to run older container images on newer hosts - for example: A Windows Server 2019 image on a Windows Server 2022 host only works with Hyper-V isolation.
 
 **How to specify an isolation mode using a Docker command**
 
@@ -79,4 +79,4 @@ Some scenarios that might drive some of these decisions include:
  
 
 > [!Caution]
-Not all orchestration services, such as Kubernetes, support Hyper-V containers. When Hyper-V containers are not supported, but greater isolation is needed, you might need to recur to a full VM to run a set of containers that can run side-by-side.
+> Not all orchestration services, such as Kubernetes, support Hyper-V containers. When Hyper-V containers are not supported, but greater isolation is needed, you might need to recur to a full VM to run a set of containers that can run side-by-side.

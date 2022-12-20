@@ -24,7 +24,7 @@ The following table summarizes the similarities of and differences between featu
 
 
 > [!Note]
-It is common to provision containers within a highly optimized VM to provide enhanced isolation and security.
+> It is common to provision containers within a highly optimized VM to provide enhanced isolation and security.
 
 **Advantages of containers**
 
@@ -57,12 +57,12 @@ The following graphic provides a comparison of isolation and efficiency between 
 ![Comparison of isolation and efficiency between PCs, VMs, containers, and processes.](../media/run-containers-on-windows-server-02.png)
 
 > [!Tip]
-For persistent storage, you can use a bind mount to mount a location on the local machine. Files within the location will be available when you restart a container, or if you want to share the files with multiple containers. If you want a container to run on multiple machines with access to the same files, then a named volume or SMB mount should be used instead.
+> For persistent storage, you can use a bind mount to mount a location on the local machine. Files within the location will be available when you restart a container, or if you want to share the files with multiple containers. If you want a container to run on multiple machines with access to the same files, then a named volume or SMB mount should be used instead.
 
 Orchestrators such as Kubernetes have its own implementation of persistent storage.
 
->  [!Caution]
-Do not bind mount sensitive directories such as C:\ into an untrusted container. This would allow the untrusted container to change files on the host that it wouldn't normally have access to and could create a security breach. Furthermore, make sure your container will work properly when moving to a different environment. This means avoiding binding a container to specific drive on a specific host.
+> [!Caution]
+> Do not bind mount sensitive directories such as C:\ into an untrusted container. This would allow the untrusted container to change files on the host that it wouldn't normally have access to and could create a security breach. Furthermore, make sure your container will work properly when moving to a different environment. This means avoiding binding a container to specific drive on a specific host.
 
 **When to choose a VM**
 

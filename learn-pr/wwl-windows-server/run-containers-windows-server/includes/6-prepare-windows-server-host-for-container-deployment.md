@@ -1,5 +1,5 @@
 > [!Note]
-For the purpose of this Microsoft Learn module, all examples will be performed with the Docker CLI. These commands should work on Windows 10 and 11 with Docker Desktop, as well as on Windows Server with Moby or MCR. Environments with containerd will have other CLI options and the commands will differ.
+> For the purpose of this Microsoft Learn module, all examples will be performed with the Docker CLI. These commands should work on Windows 10 and 11 with Docker Desktop, as well as on Windows Server with Moby or MCR. Environments with containerd will have other CLI options and the commands will differ.
 
  
 
@@ -21,14 +21,14 @@ Microsoft provides the base OS images in the following table as a starting point
 
 | **Base image name**| **Details** |
 | - | - |
-| Server Core| An image that contains a subset of the Windows Server application programming interfaces (APIs) such as the full .NET framework. It also includes most server roles. This image is ideal for scenarios on which an existing application is being"containerized". |
+| Server Core| An image that contains a subset of the Windows Server application programming interfaces (APIs) such as the full .NET framework. It also includes most server roles. This image is ideal for scenarios on which an existing application is being "containerized". |
 | Nano Server| The smallest Windows Server image, with support for the .NET APIs and some server roles. This image requires the application to be written for Nano Server and is ideal for new applications that rely on Windows. |
 | Windows| Contains the full set of Windows APIs and system services; however, doesn't contain server roles. This image was replaced by the Server image starting with Windows Server 2022. |
 | Server| Similar to the Windows image, this base image contains the full set of Windows Server APIs and system services. This results in a larger container image, but higher application compatibility. This image is ideal for scenario on which an existing application is being containerized, but the Server Core image does not provide the necessary dependencies for the application. |
 
 
 > [!Note]
-The Windows host OS version must match the container OS version. To run a container based on a newer Windows build, you need to ensure that an equivalent OS version is installed on the host.
+> The Windows host OS version must match the container OS version. To run a container based on a newer Windows build, you need to ensure that an equivalent OS version is installed on the host.
 
 If your host server contains a newer OS version, you can use the Hyper-V isolation mode to run an older version of Windows containers.
 
@@ -37,7 +37,7 @@ For more information about host and container image compatibility, check out [Wi
 You can find and download base images through the Microsoft Container Registry. Use the docker pull command to download a specific base image.
 
 > [!Important]
-OS base images provide the Windows Sever OS components and its server roles. Microsoft also provides specific images for different frameworks already installed, such as IIS, .Net Framework and .Net.
+> OS base images provide the Windows Sever OS components and its server roles. Microsoft also provides specific images for different frameworks already installed, such as IIS, .Net Framework and .Net.
 
 When you enter the docker pull command, specify the version that matches the version of the host machine. For example, if you wanted to pull a Nano Server image based upon Windows Server 2022, you would use the following command:
 
@@ -65,7 +65,7 @@ You can also browse the Docker Hub or Microsoft Container Registry to access and
 - Build a container image with a dockerfile. A dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. Tools such as Visual Studio build the dockerfile natively for a new application, but you have the option to build your own dockerfile manually.
 
 > [!Note]
-There's an additional option to create container images based on a running container. This is similar to creating a Golden Image from a running VM. This method is not recommended. More details will be provided in the next section.
+> There's an additional option to create container images based on a running container. This is similar to creating a Golden Image from a running VM. This method is not recommended. More details will be provided in the next section.
 
 **Automate container image creation by using dockerfile on Windows**
 
@@ -78,7 +78,7 @@ The Docker Desktop engine and MCR include tools for automating the process of cr
 - Continuous integration between container images and the development cycle.
 
 > [!Note]
-Moby and containerd don't include a native image build solution. Alternatively, you can use a container image build service, such as Azure Container Registry (ACR) Tasks.
+> Moby and containerd don't include a native image build solution. Alternatively, you can use a container image build service, such as Azure Container Registry (ACR) Tasks.
 
 The Docker components that drive this automation are the dockerfile text file and the docker build command:
 
@@ -95,7 +95,7 @@ Use the following commands to create and manage your containers and container im
 ```docker
 docker images
 ```
-- The docker run command creates a container by using a container image. For example, the following command creates a container that's based on the Windows Server Core container image. Don't specify an isolation mode in the command, so Docker will use the default isolation mode, which is process isolation. The --name parameter is used to set a name to the container. The -it is used to have an interactive session with the container (as opposed to -d to run detached) and the powershell instruction opens a PowerShell session:
+- The docker run command creates a container by using a container image. For example, the following command creates a container that's based on the Windows Server Core container image. Don't specify an isolation mode in the command, so Docker will use the default isolation mode, which is process isolation. The --name parameter is used to set a name to the container. The -it is used to have an interactive session with the container (as opposed to -d to run detached) and the PowerShell instruction opens a PowerShell session:
 
 ```docker
 docker run --name IIS -it mcr.microsoft.com/windows/servercore:ltsc2022 powershell
