@@ -38,7 +38,7 @@ quiz:
       explanation: "Incorrect. When the tasks are executed using the same control actions, it's best to use the strategy decomposition."
     - content: "When there are different tasks that are executed using independent control actions."
       isCorrect: true
-      explanation: "Correct. When we can divide the problem into tasks that are executed by different expert operators over independent control actions (different nobs in the process), the functional decomposition is the best choice."
+      explanation: "Correct. When we can divide the problem into tasks that are executed by different expert operators over independent control actions (different knobs in the process), the functional decomposition is the best choice."
     - content: "When there's an expert operator currently performing the task."
       isCorrect: false
       explanation: "Incorrect. That means that the expert operator is doing advance perception and decision making that can't be performed by any current control method. It's a hint that Autonomous AI might outperform current methods but isn't an indication that the best brain design decomposition is functional."
