@@ -69,7 +69,7 @@ CREATE PARTITION FUNCTION PartitionByMonth (datetime2)
     FOR VALUES ('20210101', '20210201', '20210301',
       '20210401', '20210501', '20210601', '20210701',
       '20210801', '20210901', '20211001', '20211101', 
-      '20212101');
+      '20211201');
 
 -- The partition scheme below will use the partition function created above, and assign each partition to a specific filegroup.
 CREATE PARTITION SCHEME PartitionByMonthSch
