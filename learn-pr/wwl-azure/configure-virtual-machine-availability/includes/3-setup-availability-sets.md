@@ -16,13 +16,9 @@ Let's review some characteristics of availability sets.
 
    A virtual machine can only be added to an availability set when the virtual machine is created. To change the availability set for a virtual, you need to delete and then recreate the virtual machine.
 
-- You can create availability sets through the Azure portal in the **Disaster recovery** section. 
+- You can build availability sets by using the Azure portal, Azure Resource Manager (ARM) templates, scripting, or API tools.
 
-   :::image type="content" source="../media/availability-sets-4e3b2af6.png" alt-text="Screenshot that shows an availability set definition in the Azure portal.":::
-
-- You can build availability sets by using Azure Resource Manager (ARM) templates, scripting, or API tools.
-
-- Microsoft provides robust Service Level Agreements (SLAs) for Azure virtual machines and availability sets. For details, see [SLA for Azure Virtual Machines](/support/legal/sla/virtual-machines/v1_9/).
+- Microsoft provides robust Service Level Agreements (SLAs) for Azure virtual machines and availability sets. For details, see [SLA for Azure Virtual Machines](https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_9/).
 
 > [!NOTE]
 > Adding your virtual machines to an availability set won't protect your applications from operating system or application-specific failures.
