@@ -19,7 +19,6 @@ abstract: |
     - List the key features of Azure Private 5G Core.
 prerequisites: |
   - Fundamental Azure knowledge.
-    If you don't have the knowledge, consider taking relevant Azure Fundamental (AZ-900) training programs.
   - Fundamental knowledge of 5G and 4G technologies.
 iconUrl: /learn/achievements/intro-to-azure-private-5g-core.svg
 levels:
