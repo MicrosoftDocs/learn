@@ -1,4 +1,4 @@
-In this unit, you learn about user flows, why they're important, and how to design load tests based on these flows.
+In this unit, you'll learn about user flows, why they're important, and how to design load tests based on these flows.
 
 ## User and system flows
 

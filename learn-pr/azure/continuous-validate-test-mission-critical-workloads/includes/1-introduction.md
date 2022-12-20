@@ -1,13 +1,11 @@
-Continuous validation is set of processes and tools, set up within a continuous integration and continuous deployment (CI/CD) pipeline and monitoring system, that you use to ensure a solution's performance at deployment time. For a mission-critical workload, using continuous validation in an environment that closely resembles production helps to ensure that a solution stays operational even when failures occur.
+Continuous validation is set of processes and tools, set up within a continuous integration and continuous deployment (CI/CD) pipeline and monitoring system, that you use to ensure a solution's performance at deployment time. For a mission-critical workload, using continuous validation in a test environment that emulates the production environment helps to ensure that a solution stays operational even when failures occur.
 
 In continuous validation, you:
 
 - Define tests based on expected thresholds.
-- Implement validation. Microsoft Azure provides the following services to implement load testing and chaos engineering:
+- Implement validation. Microsoft Azure provides the following services to implement load testing and chaos engineering. To validate the impact of application changes under realistic conditions at any time of the development cycle, you can run these two services simultaneously by embedding them in an Azure DevOps CI/CD pipeline:
   - [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing). This service generates synthetic traffic to the application.
   - [Azure Chaos Studio](/azure/chaos-studio/chaos-studio-overview). This service uses chaos engineering to systematically inject failures into key components of the application.
-
-   In this module you learn how to plan, design and implement continuous validation by using Azure Load Testing and Azure Chaos Studio embedded into pipelines in Azure DevOps CI/CD pipelines. Having the option to run these two services simultaneously, as part of a pipeline in Azure DevOps, is key to validating the impact of application changes under realistic conditions at any time of the development cycle.
 
 - Establish a baseline. Adjust the thresholds for regular runs to verify that the application continues to provide the expected performance and doesn't produce any errors. Use Azure Load Testing to specify certain criteria that a test needs to pass to implement different baselines.
 
