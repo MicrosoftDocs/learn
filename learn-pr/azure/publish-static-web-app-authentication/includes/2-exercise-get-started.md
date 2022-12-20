@@ -293,9 +293,11 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
     :::image type="content" source="../media/extension-create-app.png" alt-text="Screenshot showing how to create Static Web Apps.":::
 
-1. Select the **Custom** option, and press <kbd>Enter</kbd>.
+1. Select the region closest to you, and press <kbd>Enter</kbd>.
 
-    :::image type="content" source="../media/extension-custom-option.png" alt-text="Screenshot show the Create Static Web Apps - Custom button highlighted.":::
+    :::image type="content" source="../media/extension-location-option.png" alt-text="Screenshot showing location selection.":::
+
+1. Select the corresponding framework option, and press <kbd>Enter</kbd>.
 
 ::: zone pivot="angular"
 
