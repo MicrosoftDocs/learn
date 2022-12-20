@@ -8,7 +8,7 @@ For an example user flow, we're using the checkout process in Contoso Shoes. Thi
 
 ## Define a load test and its threshold values
 
-To design a load test based on a user flow requires knowledge of the application. For example:
+To design a load test based on a user flow requires knowledge of the application. You should answer the following questions:
 
 - Which API calls need to be made?
 - What's the sequence of API calls?

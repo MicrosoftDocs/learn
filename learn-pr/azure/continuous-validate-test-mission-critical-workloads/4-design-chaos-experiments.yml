@@ -3,13 +3,13 @@ uid: learn.continuous-validate-test-mission-critical-workloads.design-chaos-expe
 title: Design chaos experiments
 metadata:
   title: Design chaos experiments
-  description: Design chaos experiments.
-  ms.date: 12/09/2022
+  description: Learn how to design chaos experiments with Azure Chaos Studio.
+  ms.date: 12/19/2022
   author: sebader
   ms.author: prwilk
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure #TBD
-durationInMinutes: 5 #TBD
+  ms.prod: learning-azure
+durationInMinutes: 5
 content: |
   [!include[](includes/4-design-chaos-experiments.md)]
 
