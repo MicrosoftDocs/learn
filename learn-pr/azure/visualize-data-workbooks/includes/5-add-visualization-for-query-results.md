@@ -4,8 +4,9 @@ In this exercise, we're going to query two data sources and then use visualizati
 - We're going to use **Azure Monitor Metrics** which use numeric data collected at regular intervals to measure a specific aspect of a system at a particular time. We'll create a graph that displays important metrics, such as CPU usage, failed requests, or available memory.
 
 We'll display the results using these visualizations:
- - a chart that provides a quick visual overview of the health of the infrastructure running our application
- - a color-coded honeycomb graph to show the CPU usage of your virtual machines
+
+- a chart that provides a quick visual overview of the health of the infrastructure running our application
+- a color-coded honeycomb graph to show the CPU usage of your virtual machines
 
 Keep in mind that the data sources and visualizations in this tutorial are just two examples you can include in your workbooks.
 
@@ -32,7 +33,7 @@ Keep in mind that the data sources and visualizations in this tutorial are just 
 
 ## Add a visualization that shows the CPU usage of your virtual machines
 
-In your workbook, select **Edit** from the top toolbar.
+1. In your workbook, select **Edit** from the top toolbar.
 1. Select **Add**, and then **Add parameters**.
 1. Select **Add parameter** to add a new parameter.
     - In the **Parameter name** field, enter **virtualMachines**.
@@ -45,6 +46,7 @@ In your workbook, select **Edit** from the top toolbar.
         - In the **Resource type** field, select **Subscription**.
         - In the **Subscriptions** field, select the **Subscription** resource parameter.
         - Enter the following query, and then select **Run Query**.
+
             ```azurecli
             resources 
             | where type == "microsoft.compute/virtualmachines" 
@@ -93,7 +95,7 @@ In your workbook, select **Edit** from the top toolbar.
 1. In the **Node ID** field, select **Name**.
 1. In the **Group by** field, select **Subscription**.
 1. In the **Coloring type** field, select **Heatmap**.
-1. In the **Node color field** field, select ** microsoft.compute/virtualmachines--Percentage CPU**.
+1. In the **Node color field** field, select **microsoft.compute/virtualmachines--Percentage CPU**.
 1. In the **Color Palette** field, select **Green to Red**.
 
     :::image type="content" source="../media/5-graph-layout-settings.png" alt-text="Screenshot that shows the settings for the layout of a graph in a workbook.":::
