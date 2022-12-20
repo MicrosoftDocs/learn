@@ -56,7 +56,7 @@ Visual Studio is highly customizable, allowing you to use different themes, font
 
 :::image type="content" source="../media/intro-theme.png" alt-text="Screenshot of Visual Studio with the Options dialog open to the Environment General section. The theme drop-down is expanded, with the blue theme selected. The colors of Visual Studio are now blue as opposed to dark gray.":::
 
-There are also a ton of different themes created [by the community](https://devblogs.microsoft.com/visualstudio/custom-themes/) that might mimic some of your favorite color palettes.
+There's also a ton of different themes created [by the community](https://devblogs.microsoft.com/visualstudio/custom-themes/) that might mimic some of your favorite color palettes.
 
 :::image type="content" source="../media/intro-community-themes.png" alt-text="Collage of screenshots of different Visual Studio instances with a wide range of themes in different colors. The themes range from dark blue to vibrant red to light purple themes.":::
 
