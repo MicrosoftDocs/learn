@@ -16,11 +16,14 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "Do Azure Load Testing and Azure Chaos Studio require Azure Pipelines to be automated?"
+  - content: "How can a load test and chaos experiments be executed and orchestrated?"
     choices:
-    - content: "Yes"
+    - content: "Manually via the Portal"
       isCorrect: false
-      explanation: ""
-    - content: "No"
+      explanation: "Incorrect. While this is technically correct is this not the recommended way. Continuous Validation benefits from being used frequently and therefore should the process be automated and easily accessible for all developers."
+    - content: "Embedded into a pipeline or workflow"
       isCorrect: true
-      explanation: ""
+      explanation: "Correct. This is the recommended way. Load tests and chaos experiments should be embedded into a pipeline and made accessible easily for all developers."
+    - content: "Chaos and Load testing cannot run in parallel."
+      isCorrect: false
+      explanation: "Incorrect. Chaos experiments and load tests can be executed in parallel and the process can and should be automated."

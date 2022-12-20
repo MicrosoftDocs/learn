@@ -16,14 +16,14 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "Is it the goal of a chaos experiment to break your application?"
+  - content: "Is it the goal of a chaos experiment to break your production environment?"
     choices:
     - content: "Yes"
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. The goal is to inject failures into the deployment to test how the application behaves and responds to them. The result should be used to improve the error handling and monitoring to reduce the impact when these failures occur in production environments."
     - content: "No"
       isCorrect: true
-      explanation: ""
+      explanation: "Correct! The goal is to intentionally inject faults to test the deployment. The result can be used to improve error handling and monitoring to prevent these issues and their impact in production environments."
   - content: "Which services does Azure Chaos Studio support?"
     choices:
     - content: "Azure Virtual Machines, Azure App Service, and Azure Cache for Redis "

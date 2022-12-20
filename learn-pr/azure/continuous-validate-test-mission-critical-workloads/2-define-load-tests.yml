@@ -20,23 +20,23 @@ quiz:
     choices:
     - content: "Yes"
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. Not all user and system flows are equally important. Some user and system flows, for example asynchronous ones might have lower requirements in regards to performance or availability."
     - content: "No"
       isCorrect: true
-      explanation: ""
+      explanation: "Correct! Some flows, like for example batch processing or asynchronous flows might have lower requirements in regards to performance and availability."
   - content: "Does an outage of a component always result in a service degradation?"
     choices:
     - content: "Yes"
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. Some components, for example non-user facing ones or background and batch processing, might not necessarily result in a service degradation."
     - content: "No"
       isCorrect: true
-      explanation: ""
+      explanation: "Correct. Not all components have the same requirements in regards to availability and performance. An outage that is not user facing might not necessarily result in a service degradation."
   - content: "Can a load test help to evaluate the expected performance of a user flow?"
     choices:
     - content: "Yes"
       isCorrect: true
-      explanation: ""
+      explanation: "Correct. A load test can help to identity the performance, performance limits, resource utilization and the optimal scaling behavior of components that build a user flow."
     - content: "No"
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. A load test can help to evaluate the expected performance."
