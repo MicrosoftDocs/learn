@@ -87,4 +87,4 @@ You run the Azure CLI by opening a bash shell (Linux and macOS), or from the com
 
 ::: zone-end
 
-You've set up your local machines to administer Azure resources with the Azure CLI. You can now use the Azure CLI locally to enter commands or execute scripts. The Azure CLI will forward your commands to the Azure datacenters, where they will run inside your Azure subscription.
+You've set up your local machines to administer Azure resources with the Azure CLI. You can now use the Azure CLI locally to enter commands or execute scripts. The Azure CLI will forward your commands to the Azure datacenters, where they'll run inside your Azure subscription.
