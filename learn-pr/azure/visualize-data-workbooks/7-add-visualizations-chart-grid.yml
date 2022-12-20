@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: azure-monitor
   sandbox: true
-durationInMinutes: 1
+durationInMinutes: 7
 content: |
   [!include[](includes/7-add-visualizations-chart-grid.md)]

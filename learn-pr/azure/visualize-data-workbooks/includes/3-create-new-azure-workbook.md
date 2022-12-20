@@ -27,13 +27,13 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
        az deployment group create --resource-group $resourceGroup --template-file deploy-resources.bicep
     ```
 
-1. When you're prompted for a password, enter a password that complies with the password requirements. For example, enter "Learn@123456". Write down this password, you'll need it later. The password must:
+1. When you're prompted for a password, enter a password that complies with the password requirements. For example, enter "Learn@123456". The password must:
     - Be at least 12 characters long
     - Contain at least 3 out of the following four characteristics:
-    - one lower case letter
-    - one upper case letter
-    - one number
-    - one special character, not including \ or -.
+        - one lower case letter
+        - one upper case letter
+        - one number
+        - one special character, not including \ or -.
 1. Wait while the resources that you need for the module are deployed. This will take a few minutes.
 1. You can sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to see the resources deployed in your sandbox for this learn module.
 1. On the **Home** page, select **Resource groups**, or search for "Resource groups" in the search bar at the top of the page.
@@ -60,8 +60,7 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
     ## Select a subscription from the drop-down below.
     ```
 
-    1. Select **Done editing**.
-    1. You now have a simple workbook with text.
+    1. Select **Done editing**. You now have a simple workbook with text.
 
     :::image type="content" source="../media/3-workbook-with-text.png" alt-text="Screenshot of a new Azure workbook with text.":::
 
@@ -81,8 +80,7 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
 
     :::image type="content" source="../media/3-parameter-settings.png" alt-text="Screenshot that shows the parameter settings in a workbook."::: 
     - Select **Save**, and then **Done editing**.
-1. Select **Done editing** again.
-1. You now have a workbook with a **Subscription** drop-down picker.
+1. Select **Done editing** again. You now have a workbook with a **Subscription** drop-down picker.
 
     :::image type="content" source="../media/3-workbook-with-subscription-picker.png" alt-text="Screenshot that shows an Azure workbook with a subscription picker drop-down list.":::
 
@@ -110,8 +108,9 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
 1. To show your resources in a map, in the **Visualization** field on top of the query, select **Map**.
 1. In the **Map Settings** window, keep the default map settings, and select **Save and close**.
 1. Select **Advanced settings** at the top of the query, and enter "Resource distribution per region" in the **Chart title**.
-1. Select **Done editing**.
-1. You now have a workbook that lets the user select a subscription and displays all of the resources in that subscription in a map.
+1. Select **Done editing**. You now have a workbook that lets the user select a subscription and displays all of the resources in that subscription in a map.
+
     :::image type="content" source="../media/3-workbook-with-map.png" alt-text="Screenshot that shows an Azure workbook with a map displaying a subscription's resources.":::
+
 1. Select **Save As**.
 1. Enter a **Name** for your workbook, select the **Subscription** and **Resource group**, and select **Apply**.

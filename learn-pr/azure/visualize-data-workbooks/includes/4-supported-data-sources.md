@@ -2,7 +2,7 @@ Use Workbooks to write queries that extract data from different types of data so
 
 Workbooks can extract data from these data sources:
 
- - **Logs.** Use Kusto query language (KQL) queries to query logs from Azure Monitor Logs (Application Insights resources and Log Analytics workspaces) and Resource-centric data (activity logs).
+ - **Logs.** Use Kusto query language (KQL) queries to query logs from Azure Monitor Logs (Application Insights resources and Log Analytics workspaces) and resource-centric data (activity logs).
 
     ![Screenshot that shows a workbook logs report interface.](../media/4-logs.png)
 
@@ -37,7 +37,7 @@ Workbooks can extract data from these data sources:
 
     :::image type="content" source="../media/4-resource-health.png" alt-text="Screenshot that shows an alerts query that shows the health filter lists.":::
 
-- **Azure RBAC**. The Azure role-based access control (RBAC) provider allows you to check permissions on resources. It's most commonly used in parameters to check if the correct RBACs are set up. A use case would be to create a parameter to check deployment permission and then notify the user if they don't have deployment permission.
+- **Azure RBAC**. Check permissions on resources using the Azure role-based access control (RBAC) provider. The RBAC control is commonly used in parameters to check if the correct RBACs are set up, for example, to create a parameter to check deployment permission and notify the user if they don't have permissions.
 
 - **Change Analysis (preview).** Use Change Analysis as the data source, to display changes for up to the last 14 days.
 

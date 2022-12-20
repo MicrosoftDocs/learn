@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-azure
   sandbox: true
   interactive: bash
-durationInMinutes: 7
+durationInMinutes: 8
 content: |
   [!include[](includes/3-create-new-azure-workbook.md)]
