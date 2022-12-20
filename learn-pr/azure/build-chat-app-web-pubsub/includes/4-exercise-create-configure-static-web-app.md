@@ -27,7 +27,7 @@ Now that the repository is created, you can create a static web app from the Azu
         --name my-awps-swa-app \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --source https://github.com/$GITHUB_USER_NAME/awps-swa-sample \
-        --location "eastus2" \
+        --location $LOC \
         --branch main \
         --app-location "src" \
         --api-location "api" \

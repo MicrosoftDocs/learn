@@ -1,11 +1,16 @@
 1. Sign in to the Azure CLI by activating the Sandbox.
 
-1. Create a globally unique name for your Azure Web PubSub resource. 
+1. Create a globally unique name for your Azure Web PubSub resource.  
 
     ```azurecli
     WPS_NAME=<my-unique-name>
     ```
 
+1. Set a location for your resources based on the location of the automatically created resource group.
+
+    ```azurecli
+    LOC=$(az group list --query [].location --output tsv)
+    ```
 1. Install or upgrade the *webpubsub* Azure CLI extension to the current version.
 
     ```azurecli
@@ -18,7 +23,7 @@
     az webpubsub create \
       --name $WPS_NAME \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --location "eastus2" \
+      --location $LOC \
       --sku Free_F1
     ```
 
