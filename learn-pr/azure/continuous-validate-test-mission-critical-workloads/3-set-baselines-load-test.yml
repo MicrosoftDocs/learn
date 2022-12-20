@@ -30,7 +30,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. The baseline defines what performance numbers are expected, it has no impact on the performance that is provided."
     - content: "No"
-      isCorrect: false
+      isCorrect: true
       explanation: "Correct! The baseline has no impact on the performance."
   - content: "When do baselines need to be evaluated and updated?"
     choices:
