@@ -19559,6 +19559,11 @@
       "source_path": "learn-pr/wwl-sci/construct-kusto-query-language-statements/3-use-let-statement.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/construct-kusto-query-language-statements/5-use-let-statement",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-windows-server/run-containers-windows-server/7-manage-configure-container-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/run-containers-windows-server/",
+      "redirect_document_id": false
     }
   ]
 }
