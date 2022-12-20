@@ -26,5 +26,6 @@ subjects:
 - solution-design
 modules:
 - learn.azure-mission-critical
+- learn.design-health-model-mission-critical-workload
 trophy:
   uid: learn.build-mission-critical-workloads.trophy

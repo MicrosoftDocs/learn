@@ -1,51 +1,45 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-health-model-mission-critical-workload.health-states
-title: Health states, metrics and threshold
+title: Health states, metrics, and thresholds
 metadata:
-  title: Health states, metrics and threshold
-  description: Health states, metrics and threshold.
-  ms.date: 11/11/2022
-  author: PageWriter-MSFT
+  title: Health states, metrics, and thresholds
+  description: Learn about health states, metrics, and thresholds in a health model.
+  ms.date: 12/12/2022
+  author: msimecek
   ms.author: prwilk
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure #TBD
-durationInMinutes: 5 #TBD
+  ms.prod: learning-azure
+durationInMinutes: 7
 content: |
   [!include[](includes/4-health-states.md)]
 
 quiz:
   title: Knowledge check
   questions:
-  - content: "Question 1"
+  - content: "Of these three items, which one is at the highest level in the health model hierarchy?"
     choices:
-    - content: "Option 1."
+    - content: "Azure resources"
+      isCorrect: false
+      explanation: "Azure resources are at the lowest level in the health model hierarchy."
+    - content: "User flows"
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
+      explanation: "User flows, such as 'list catalog items' and 'add comment', are at the highest level of the health model hierarchy, just below the whole website."
+    - content: "Application components"
       isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-  - content: "Question 2"
+      explanation: "Application components, such as the background processor, are located at a middle level in the health model hierarchy."
+  - content: "When selecting metrics and thresholds, you need to:"
     choices:
-    - content: "Option 1."
+    - content: "Base your decision on your experience with what a normal operation looks like for the system. Observe and refine the values over time."
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
+      explanation: "Although you should make the best decision you can with the information at hand, you can easily change the health model later if you need to."
+    - content: "Be careful and choose correctly, because these decisions are difficult to change later in the health model."
       isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-  - content: "Question 3"
+      explanation: "You can easily change the health model later if you need to."
+  - content: "Does it make sense to have both “degraded” and “unhealthy” states in your health model?"
     choices:
-    - content: "Option 1."
+    - content: "No. When a component isn't working properly, the whole application should go to the unhealthy state and wait for the problem to be addressed."
+      isCorrect: false
+      explanation: "When a component isn't working properly, it doesn't always mean that the business requirements are impacted. For example, although a slower response time means that the user will still get a response, it needs to be investigated before it causes a complete outage."
+    - content: "Yes. Not all parts of the system have the same criticality, and sometimes suboptimal performance doesn’t break the application for end users."
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
+      explanation: "Not all parts of the system are equally critical. Sometimes, suboptimal performance of certain parts is acceptable and doesn't break the application for end users."

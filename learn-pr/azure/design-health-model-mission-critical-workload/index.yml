@@ -1,22 +1,24 @@
 ### YamlMime:Module
 uid: learn.design-health-model-mission-critical-workload
 metadata:
-  title: 'Design a health model for your mission-critical workload'
-  description: Improve your observability practices by defining a health model. The model gives you the ability to quickly identify and troubleshoot issues in your system..
-  ms.date: 11/11/2022
-  author: PageWriter-MSFT
+  title: Design a health model for your mission-critical workload
+  description: Improve your observability practices by defining a health model. The model gives you the ability to quickly identify and troubleshoot issues in your system.
+  ms.date: 11/21/2022
+  author: msimecek
   ms.author: prwilk
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure #TBD
-title: 'Design a health model for your mission-critical workload'
-summary: A mission-critical workload needs to be continuously monitored to ensure degraded application components are caught early to prevent a complete outage. A well-designed health model gives you that ability based on metrics and their thresholds that are important to you. Through optimized queries and visualization, you can identify the cascading impact of degraded components and troubleshoot issues early before they can cause an outage.
+  ms.prod: learning-azure
+title: Design a health model for your mission-critical workload
+summary: A mission-critical workload needs to be continuously monitored to ensure degraded application components are caught early. A well-designed health model gives you that ability, based on metrics and thresholds that are important to you. Through optimized queries and visualization, you can identify the cascading impact of degraded components and troubleshoot issues early before they can cause an outage.
 abstract:  | 
-  In this module, you will:
+  By the end of this module, you'll be able to:
   -	Identify user flows and key application components of a given architecture
   -	Identify key metrics that will make the foundation for the health model of a given architecture
-  -	Visualize the health model in a dashboard 
+  -	Visualize the health model in a dashboard
 prerequisites: |
-  - TBD
+  - Extensive experience in designing cloud native applications that include core infrastructure technology such as data storage, compute, and networking
+  - Good understanding of the design principles and design areas of a mission-critical workload provided in the Azure Well-Architected Framework
+  - Basic understanding of health modeling
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - advanced
@@ -42,7 +44,6 @@ units:
 - learn.design-health-model-mission-critical-workload.health-states
 - learn.design-health-model-mission-critical-workload.exercise-define-health-states-metrics-threshold
 - learn.design-health-model-mission-critical-workload.set-up-queries-and-visualize
-- learn.design-health-model-mission-critical-workload.exercise-queries-visualize
 - learn.design-health-model-mission-critical-workload.summary
 badge:
   uid: learn.design-health-model-mission-critical-workload.badge 

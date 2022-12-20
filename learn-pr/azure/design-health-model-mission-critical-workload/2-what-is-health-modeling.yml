@@ -1,51 +1,42 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-health-model-mission-critical-workload.what-is-health-modeling
-title: What is health modeling
+title: What is health modeling?
 metadata:
-  title: What is health modeling
-  description: What is health modeling.
-  ms.date: 11/11/2022
-  author: PageWriter-MSFT
+  title: What is health modeling?
+  description: Learn what a health model is and why you should use it.
+  ms.date: 12/12/2022
+  author: msimecek
   ms.author: prwilk
   ms.topic: interactive-tutorial 
-  ms.prod: learning-azure #TBD
-durationInMinutes: 5 #TBD
+  ms.prod: learning-azure
+durationInMinutes: 7
 content: |
   [!include[](includes/2-what-is-health-modeling.md)]
 
 quiz:
   title: Knowledge check
   questions:
-  - content: "Question 1"
+  - content: "What is the main motivation to use health models instead of traditional dashboards?"
     choices:
-    - content: "Option 1."
+    - content: "Health models provide contextual information to raw metrics data and allow you to react faster to problems."
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
+      explanation: "Health modeling focuses on a holistic view of the application, so you don't need to focus on raw data."
+    - content: "Health models look better and allow operators to focus on the important parts."
       isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-  - content: "Question 2"
+      explanation: "While the visual aspect of a health model is important, the same also applies to traditional dashboards. The added value of a health model is in clearly displaying an indication of the overall health of the system."
+  - content: "Health modeling focuses on:"
     choices:
-    - content: "Option 1."
+    - content: "Cloud resources and health metrics."
+      isCorrect: false
+      explanation: "Although resources and metrics provide the necessary foundation of the health model, they aren't enough on their own."
+    - content: "A holistic view of the application, including, but not limited to, cloud resources."
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-  - content: "Question 3"
+      explanation: "Health modeling focuses on the overall health status of the application, rather than raw data metrics. "
+  - content: "What does it mean when an application health model is described as 'layered?'"
     choices:
-    - content: "Option 1."
+    - content: "The health model is multi-dimensional, the whole system is broken down into layers, and the operator filters for only the layer relevant to them."
+      isCorrect: false
+      explanation: "Filtering on a single layer isn't the purpose of a health model, which provides value when analyzed and observed as a whole."
+    - content: "A layered health model enables application health to be traced back to the health of its lower level dependencies, which helps to quickly find the root cause of service degradation."
       isCorrect: true
-      explanation: "Correct! Explanation."
-    - content: "Option 2."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
-    - content: "Option 3."
-      isCorrect: false
-      explanation: "Incorrect. Explanation."
+      explanation: "Each layer of the health model captures what its healthy and unhealthy states represent."
