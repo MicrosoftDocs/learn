@@ -21,19 +21,19 @@ Learn more about the available workspaces by selecting the links in the followin
 
 | Workspace | Description |
 |---|---|
-| [Account settings](/partner-center/partner-center-account-setup.md) | View and edit your account settings, including your company profile, bank information, users, and permissions |
-| [Action Center](/partner-center/action-center-overview.md) | View all Partner Center actions and notifications, and manage preferences like contact information |
-| [Benefits](/partner-center/manage-your-partner-network-benefits.md) | Access and activate your Microsoft Cloud Partner Program benefits to help you build and grow your business |
-| [Billing](/partner-center/billing.md) | Access and download your invoices and reconciliation files |
-| [Customers](/partner-center/connect-with-your-customers.md) | Connect with customers, purchase subscriptions, manage licenses, and submit support requests on their behalf |
-| [Incentives](/partner-center/incentives-get-started-intro.md) | Explore incentives programs, sign up and manage incentives, and view your programs and payouts |
-| [Insights](/partner-center/partner-center-insights.md) | View data on your customers and their purchases, and gain insights on how to grow your business |
-| [Membership](/partner-center/mpn-overview.md) | Enroll in and manage Microsoft Cloud Partner Program competencies, memberships, and programs to help you go to market |
+| [Account settings](/partner-center/partner-center-account-setup) | View and edit your account settings, including your company profile, bank information, users, and permissions |
+| [Action Center](/partner-center/action-center-overview) | View all Partner Center actions and notifications, and manage preferences like contact information |
+| [Benefits](/partner-center/manage-your-partner-network-benefits) | Access and activate your Microsoft Cloud Partner Program benefits to help you build and grow your business |
+| [Billing](/partner-center/billing) | Access and download your invoices and reconciliation files |
+| [Customers](/partner-center/connect-with-your-customers) | Connect with customers, purchase subscriptions, manage licenses, and submit support requests on their behalf |
+| [Incentives](/partner-center/incentives-get-started-intro) | Explore incentives programs, sign up and manage incentives, and view your programs and payouts |
+| [Insights](/partner-center/partner-center-insights) | View data on your customers and their purchases, and gain insights on how to grow your business |
+| [Membership](/partner-center/mpn-overview) | Enroll in and manage Microsoft Cloud Partner Program competencies, memberships, and programs to help you go to market |
 | [Marketplace offers](/azure/marketplace) | Create, publish, and manage solutions in the commercial marketplace and Office Store |
-| [Referrals](/partner-center/referrals.md) | Discover and manage leads and co-sell opportunities to set your business apart |
-| [Payouts](/partner-center/non-payment-fraud-misuse.md) | Set up your payout account, and view and manage payout statements |
-| [Pricing](/partner-center/pricing-and-offers.md) | View and download pricing information for different offers, SKUs, and product bundles |
-| [Help + support](/partner-center/support-from-microsoft.md) | Get service health updates, view support articles, contact support, schedule support appointments, and manage your support requests |
+| [Referrals](/partner-center/referrals) | Discover and manage leads and co-sell opportunities to set your business apart |
+| [Payouts](/partner-center/non-payment-fraud-misuse) | Set up your payout account, and view and manage payout statements |
+| [Pricing](/partner-center/pricing-and-offers) | View and download pricing information for different offers, SKUs, and product bundles |
+| [Help + support](/partner-center/support-from-microsoft) | Get service health updates, view support articles, contact support, schedule support appointments, and manage your support requests |
 
 > [!NOTE]
 > If you're a hardware partner or app developer, you may have additional workspaces available. For more information, see [Partner Center for Windows Hardware](/windows-hardware/drivers/dashboard/) or [Partner Center for app developers](/windows/uwp/publish/partner-center-workspaces).
