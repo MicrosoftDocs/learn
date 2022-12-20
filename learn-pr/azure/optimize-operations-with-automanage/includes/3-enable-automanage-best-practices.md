@@ -11,7 +11,7 @@ If you don't have an Azure subscription, [create an account](https://azure.micro
 > You need to have the **Contributor** role on the resource group containing your VMs to enable Automanage. If you are enabling Automanage for the first time on a subscription, you need the following permissions: **Owner** role or **Contributor** along with **User Access Administrator** roles on your subscription.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
-1. In the search bar, search for an select **Automanage**.
+1. In the search bar, search for and select **Automanage**.
 1. In the menu, select **Automanage machines**.
 1. Select **Enable on existing machine**.
     :::image type="content" source="../media/zero-vm-list-view.png" alt-text="Screenshot of enablement on existing VM.":::

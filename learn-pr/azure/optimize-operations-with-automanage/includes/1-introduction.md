@@ -1,8 +1,6 @@
-<!--
-Microsoft Azure Arc can help you manage your Linux instances in addition to your Windows resources. Azure Arc provides a set of technologies for organizations that want to simplify their complex and distributed environments. Azure Arc provides a centralized, unified, and self-service approach to managing Linux resources.
+Azure Automanage offers a unified solution to simplify IT operations. With point-and-click simplicity, Azure Automanage lets you automate management tasks and apply consistent best practices across the entire lifecycle of Windows Server and Linux servers in Azure or in hybrid environments enabled by Azure Arc.
 
-Contoso, Ltd. is a midsize financial services company in London with a branch office in New York City. Contoso has deployed and evaluated Azure Arc-enabled servers for their on-premises Windows servers. Given their positive experience with Azure Arc on their Windows estate, you've been tasked by management to learn about Azure Arc-enabled server capabilities for similarly managing Linux workloads.
--->
+Contoso, Ltd. is a midsize financial services company in London with a branch office in New York City. Contoso has deployed numerous virtual machines in Azure across both Windows Server and Linux server environments. Given their infrastructure workload, you've been tasked by management to learn about Azure Automanage to see if it can help alleviate their day-to-day operational tasks.
 
 ## Learning objectives
 

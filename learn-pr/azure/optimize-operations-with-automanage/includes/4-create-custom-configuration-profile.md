@@ -4,13 +4,13 @@ You can create a custom profile using the Azure portal or an Azure Resource Mana
 
 ## Create a custom configuration profile in the Azure portal
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. In the search bar, search for and select **Automanage**.
-1. In the table of contents, select **Configuration profiles**.
+1. In the menu, select **Configuration profiles**.
 1. The existing default configuration profiles appear on the page:
-:::image type="content" source="../../../sports-machine-learning/use-mixed-reality-toolkit/media/configuration-profile.png" alt-text="Screenshot of default configuration profiles.":::
-1. Select the **Create** button.
-1. In the Create a custom profile window, fill out the following fields:
+:::image type="content" source="../media/default-configuration-profiles.png" alt-text="Screenshot of default configuration profiles.":::
+1. Select the **+ Create** button.
+1. In the **Create a custom profile** window, fill out the following fields:
     1. *Name*
     1. *Subscription*
     1. *Resource group*
