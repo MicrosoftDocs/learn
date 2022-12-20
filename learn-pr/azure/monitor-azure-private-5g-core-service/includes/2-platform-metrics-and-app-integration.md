@@ -1,5 +1,4 @@
 <!-- Need to verify these GA feature details before official publication -->
-
 Azure Private 5G Core provides platform metrics through the Azure portal. Platform metrics are dashboards that visualize the network health and performance information.
 
 Azure Private 5G Core also allows you to use an application of your choice to monitor a private mobile network. From the applications, you can use the Azure Monitor REST API to retrieve the metrics that Azure Private 5G Core shares.
@@ -11,6 +10,9 @@ On the **Overview** page of the Mobile Network Site resource that you use to man
 The platform metrics provide the health and performance information for both the packet core instance and the RANs to which the packet core instance connects. For the packet core instance, you can check metrics like idle UEs connected or session establishment failures. For the RANs, you can check metrics like access point names and the longitude and latitude of each access point.
 
 The platform metrics are automatically created when you deploy a site. No configuration is required.
+
+> [!NOTE]
+> Currently, only one dashboard is provided for the platform metrics.
 
 For details in using the platform metrics, see the platform metrics information in the [Azure Private 5G Core documentation](/azure/private-5g-core/).
 

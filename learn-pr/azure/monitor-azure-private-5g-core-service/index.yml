@@ -18,7 +18,7 @@ abstract: |
     - Describe the tool that you can use to diagnose network issues.
     - Give examples of key metrics to monitor.
 prerequisites: |
-  - Fundamental knowledge about Azure. If you don't have the knowledge, consider taking relevant Azure Fundamental (AZ-900) training programs.
+  - Fundamental knowledge about Azure.
   - Fundamental knowledge of 5G and 4G technologies.
   - Fundamental knowledge about Azure Private 5G Core.
 iconUrl: /learn/achievements/monitor-azure-private-5g-core-service.svg
