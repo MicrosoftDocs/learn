@@ -1,17 +1,14 @@
+In this exercise, we're going to take things one step further. Instead of just having visualizations that show data from some data sources, we're going to add visuals that combine data from these sources to let you correlate the data and analyze your system.
 
-In this exercise, we are going to take things one step further.
-Instead of just having graphs or other visualizations that show data from various data sources, we are going to add visuals that combine metrics.
+We're going to create graphs to show the requests, CPU time, and request unit consumption in the web app and the Cosmos DB. The graph uses combined metrics from the web application and the database.
 
-We are going to monitor your system by creating graphs that combine metrics from the web application and the database to show the number of requests, CPU time, and request unit consumption in the web app and in the Cosmos DB.
-
-We are going to combine data using queries that get data from these sources:
+We're going to combine data using queries that get data from these sources:
 
 - the Web app
-- the CosmosDB
+- the Cosmos DB
 - the Log Analytics workspace
 
-Then we will add a metric that blah blah blah.
-
+Then we'll add a metric that monitors the application.
 
 ## Generate some data for this exercise
 
@@ -108,3 +105,4 @@ In your workbook, select **Edit** from the top toolbar.
     Your workbook now has a parameter control with four parameters. When you select the first parameter, the list in each consecutive drop down is populated based on your selection.
 
     :::image type="content" source="../media/6-multiple-parameters.png" alt-text="Screenshot that shows multiple parameters in one control in Azure workbooks.":::
+

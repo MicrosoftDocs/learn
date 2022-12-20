@@ -1,10 +1,11 @@
+In addition to creating visualizations to display data from your resources, Workbooks provides functionality to combine and correlate the data from these sources to give you greater insight into your system.
 
-You can merge or join data to provide rich insights using the merge control. 
+Merging data from different sources can enhance the insights experience. Azure Monitor has several correlatable data sources that are often critical to the triage and diagnostic workflow. You can merge or join data to provide rich insights using the merge control. 
 
-Merging data from different sources can enhance the insights experience. An example is augmenting active alert information with related metric data. Merging data allows users to see not just the effect (an active alert) but also potential causes, for example, high CPU usage. The monitoring domain has numerous such correlatable data sources that are often critical to the triage and diagnostic workflow.
+For example, you can augment active alert information with related metric data. Merging data allows you to see the effect of an active alert, and also gives you insight into potential causes, such as high CPU usage.
 
-- **Merge**. Merge or join data to provide rich insights. There are several correlatable data sources that can be important to the triage and diagnostic workflow.For example, you can augment active alert information with related metric data. Merging data lets you see the active alert and also see potential causes, for example, high CPU usage. 
 Workbooks support these merges:
+
 * Inner unique join
 * Full inner join
 * Full outer join
@@ -16,6 +17,3 @@ Workbooks support these merges:
 * Right anti-join
 * Union
 * Duplicate table
-
-
-With workbooks, you can query different data sources. Workbooks also provide simple controls that you can use to merge or join data to provide rich insights. The *merge* control is the way to achieve it.
