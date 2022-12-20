@@ -4,6 +4,15 @@ Instead of just having graphs or other visualizations that show data from variou
 
 We are going to monitor your system by creating graphs that combine metrics from the web application and the database to show the number of requests, CPU time, and request unit consumption in the web app and in the Cosmos DB.
 
+We are going to combine data using queries that get data from these sources:
+
+- the Web app
+- the CosmosDB
+- the Log Analytics workspace
+
+Then we will add a metric that blah blah blah.
+
+
 ## Generate some data for this exercise
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
@@ -22,15 +31,6 @@ We are going to monitor your system by creating graphs that combine metrics from
     :::image type="content" source="../media/6-app-service-tasks.png" alt-text="Screenshot that shows tasks for the app service for workbooks learn module.":::
 
 ## Add a graph that shows the number of requests sent to the Cosmos DB
-
-We are going to add parameters to let the user pick:
-
-- the Web app
-- the CosmosDB
-- the Log Analytics workspace
-- the time range
-
-Then we will add a metric that
 
 In your workbook, select **Edit** from the top toolbar.
 
