@@ -53,11 +53,11 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
 
         :::image type="content" source="../media/3-add-text.png" alt-text="Screenshot that shows the Add text button in an Azure workbook.":::
 
-    1.  The Azure Workbook text editor uses markdown format. Enter text into the editor. You can copy this text if you would like.
+    1. The Azure Workbook text editor uses markdown format. Enter text into the editor. You can copy this text if you would like.
 
-    ```
-    # Learn module exercise workbook
-    ## Select a subscription from the drop-down below.
+    ```azurecli
+        # Learn module exercise workbook
+        ## Select a subscription from the drop-down below.
     ```
 
     1. Select **Done editing**. You now have a simple workbook with text.
@@ -96,9 +96,9 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
 1. In the **Subscription** field, under **Resource parameters**, select the **Subscription** checkbox.
 1. Add this query to the **Subscriptions Azure Resource Graph Query** section:
 
-    ```
-    resources
-   | summarize count() by location
+    ```azurecli
+        resources
+       | summarize count() by location
     ```  
 
     :::image type="content" source="../media/3-query.png" alt-text="Screenshot that shows a query being configured in a workbook.":::
