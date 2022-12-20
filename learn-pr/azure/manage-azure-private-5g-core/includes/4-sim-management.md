@@ -43,7 +43,7 @@ If you want to use a JSON file to do add SIM details, take the following steps t
 
 To provision the SIMs, take the following steps:
 
-1. Open the Mobile Network resource representing the private mobile network in which you want to provision the SIMs.
+1. Open the **Mobile Network** resource representing the private mobile network in which you want to provision the SIMs.
 1. Select **SIMs** from the resource menu and then select the **Create** button.
 1. Select one of the following options that appear:
 
@@ -80,7 +80,7 @@ SIM policies helps you to control the network traffic between the UEs that use t
 
 To assign a SIM policy to one or more SIMs, take the following steps:
 
-1. Open the Mobile Network resource representing the private mobile network containing the SIM.
+1. Open the **Mobile Network** resource representing the private mobile network containing the SIM.
 1. Select **SIMs** from the resource menu.
 1. For each SIM policy you want to assign to one or more SIMs, select the relevant SIMs and then select the **Assign SIM policy** button.
 1. In **Assign SIM policy** on the right, select the SIM policy you want to assign and then select **Assign SIM policy**.
@@ -98,7 +98,7 @@ If you've configured static IP address allocation for your packet core instance(
 
 To assign static IP addresses to SIMs, take the following steps:
 
-1. Open the Mobile Network resource representing the private mobile network containing the SIMs.
+1. Open the **Mobile Network** resource representing the private mobile network containing the SIMs.
 1. Select **SIMs** from the resource menu and then select the SIMs to which you want to assign static IP addresses.
 
    On the right, the **Assign static IP configurations** box is displayed, as shown below:
@@ -118,13 +118,13 @@ For a SIM that has been provisioned, you can edit its device type. If you want t
 
 To modify the device type of a SIM, take the following steps:
 
-1. Open the Mobile Network resource representing the private mobile network containing the SIM.
+1. Open the **Mobile Network** resource representing the private mobile network containing the SIM.
 1. Select **SIMs** from the resource menu and then select the SIM of which you want to modify the device type.
 1. Select the **Edit device type** button and then edit the device type appropriately.
 
 To delete SIMs, take the following steps:
 
-1. Open the Mobile Network resource representing the private mobile network containing the SIM.
+1. Open the **Mobile Network** resource representing the private mobile network containing the SIM.
 1. Select **SIMs** from the resource menu and then select the SIM that you want to delete.
 1. Select the **Delete** button.
 
@@ -141,19 +141,19 @@ If you have configured CMK encryption for a SIM group, you can modify the key UR
 
 To create a SIM group, take the following steps:
 
-1. Open the Mobile Network resource representing the private mobile network in which you want to add the SIM group.
+1. Open the **Mobile Network** resource representing the private mobile network in which you want to add the SIM group.
 1. Select **SIM groups** from the resource menu and then select the **Create** button.
 1. Specify the value for each field appropriately.
 
 To edit the encryption configuration of an existing SIM group, take the following steps:
 
-1. Open the Mobile Network resource representing the private mobile network containing the SIM group.
+1. Open the **Mobile Network** resource representing the private mobile network containing the SIM group.
 1. Select **SIM groups** from the resource menu and then open the SIM group of which you want to edit the encryption configuration.
 1. Select the **Encryption** blade and then make appropriate changes.
 
 To delete a SIM group, take the following steps:
 
-1. Open the Mobile Network resource representing the private mobile network containing the SIM group.
+1. Open the **Mobile Network** resource representing the private mobile network containing the SIM group.
 1. Select **SIM groups** from the resource menu and then select the SIM group you want to delete.
 1. Select the **Delete** button.
 

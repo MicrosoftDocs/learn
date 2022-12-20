@@ -1,78 +1,82 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+To use the latest features that Azure Private 5G Core offers and to maintain the support you need for your private mobile network, consider upgrading the packet core instances in your network periodically.
 
-    Goal: briefly summarize the key skill this unit will teach
+When a new version is available, Azure Private 5G Core displays a message for the relevant **Packet Core Control Plane** resource through the Azure portal, reminding you of the upgrade. The network functions of a site won't be available when you upgrade the packet core instance of the site, so [plan your upgrade](#plan-to-upgrade-a-packet-core-instance) carefully before starting the upgrade process.
 
-    Heading: none
+A new version of the packet core may not be compatible with the version of the underlying system that you use. In that case, you'll need to [upgrade the underlying system](#upgrade-the-underlying-system) first.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+## Plan to upgrade a packet core instance
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+To minimize the impact of an upgrade to your network services, plan your upgrade process beforehand.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+Follow these guidelines when you do the planning:
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+- Set aside an upgrade window with sufficient time reserved.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+  The network functions won't be available during the upgrade and possible rollback.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+- Check if you need to [upgrade the underlying system](#upgrade-the-underlying-system) first.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+- Back up necessary deployment information.
 
-    Goal: State concisely what's covered in this unit
+  Some configuration information will be overwritten during the upgrade. The information you need to back up includes:
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+  - The account credentials for the packet core dashboards and the distributed tracing tool.
+  - The customizations you made to the packet core dashboards.
+  - The recovery steps for any UEs that can't automatically re-register.
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+- For a private mobile network that has multiple sites, upgrade the packet core instance in one site first.
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+  After the upgrade of the site, summarize what you've learned and then proceed to upgrade the packet core instances in other sites accordingly.  
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+- Create a test plan to make sure everything works as expected after the upgrade.
 
-    Heading: none
--->
-TODO: add a visual element
+  For example, you can check the network statistics through the platform metrics or the packet core dashboards.
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+## Upgrade a packet core instance
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+To upgrade a packet core instance, take the following steps:
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+1. Back up necessary deployment information.
+1. Open the **Packet Core Control Plan** resource representing the packet core instance that you want to upgrade.
+1. Select the **Upgrade version** button.
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+   The **Upgrade packet core version** box is displayed on the right, as shown below:
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+   :::image type="content" source="../media/upgrade-packet-core-version.png" alt-text="A screenshot that displays the Upgrade packet core version box." border="true":::
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+1. Select the version to which you want to upgrade and then select **Modify**.
+1. Once the upgrade is done, restore the backed-up deployment information as necessary.
+1. Follow you test plan to make sure your network works as expected after the upgrade.
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+For detailed instructions, see [Upgrade the packet core instance in a site](/azure/private-5g-core/upgrade-packet-core-azure-portal).
 
-<!-- Do not add a unit summary or references/links -->
+If you are familiar with ARM templates, you can also use an ARM template to upgrade a packet core instance. The article [Upgrade the packet core instance in a site - ARM template](/azure/private-5g-core/upgrade-packet-core-arm-template) describes an example ARM template that you can use.
+
+## Roll back a packet core instance
+
+If you encountered issues after an upgrade, you can roll back the packet core instance to a previous version.
+
+The rollback process is the same as the upgrade process. You just need to select a lower version to which you want to rollback. Similar to the upgrade process, you'll need to do similar [planning](#plan-to-upgrade-a-packet-core-instance). For example, if you made any configuration changes for the new version of the packet core, you will need to do necessary backup before the rollback.
+
+For detailed instructions, see [Upgrade the packet core instance in a site](/azure/private-5g-core/upgrade-packet-core-azure-portal).
+
+## Reinstall a packet core instance
+
+If you're experiencing issues with your deployment, reinstalling the packet core may help return it to a good state.
+
+When you reinstall a packet core instance, Azure Private 5G Core first uninstall the current instance, and install a new instance.
+
+To reinstall a packet core instance, follow the instructions for [planning](#plan-to-upgrade-a-packet-core-instance) and [performing](#upgrade-a-packet-core-instance) an upgrade. The only difference from the upgrade process is that instead of the the **Upgrade version** button, you'll need to select the **Reinstall packet core** button, as shown below:
+
+:::image type="content" source="../media/reinstall-packet-core.png" alt-text="A screenshot that shows the Reinstall packe core button." border="true":::
+
+## Upgrade the underlying system
+
+If a new version of the packet core instance to which you want to upgrade requires a new version of the underlying system, such as Azure Stack Edge (ASE), you'll need to upgrade the ASE before upgrading the packet core instance. The release notes of Azure Private 5G Core provides more information about this version dependency.
+
+When you upgrade ASE, the Azure Kubernetes services running on the ASE will be automatically upgraded.
+
+> [!NOTE]
+> Your packet core instance will be affected during the upgrade of its underlying ASE. Plan your service maintenance window as necessary.
+
+For detailed instructions about upgrading ASE, see [Update your Azure Stack Edge Pro GPU](/azure/databox-online/azure-stack-edge-gpu-install-update).

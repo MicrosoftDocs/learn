@@ -84,7 +84,7 @@ To create a new service, take the following steps:
 
 To modify or delete an existing service, take the following steps:
 
-1. Open the Mobile Network resource representing the private mobile network for which you want to modify or delete the service.
+1. Open the **Mobile Network** resource representing the private mobile network for which you want to modify or delete the service.
 1. Select **Services** from the resource menu.
 1. Proceed with one of the following operations:
 
@@ -100,7 +100,7 @@ A SIM policy defines a set of interoperability settings that can be assigned to 
 To create a new SIM policy, take the following steps:
 
 1. Collect all the [configuration values](/azure/private-5g-core/collect-required-information-for-sim-policy) for the policy.
-1. Open the Mobile Network resource representing the private mobile network for which you want to create the service.
+1. Open the **Mobile Network** resource representing the private mobile network for which you want to create the service.
 1. Select **SIM policies** from the resource menu and then select the **Create** button.
 
    The **Create a SIM policy** screen is displayed, as shown below:
@@ -116,7 +116,7 @@ To create a new SIM policy, take the following steps:
 
 To modify or delete an existing SIM policy, take the following steps:
 
-1. Open the Mobile Network resource representing the private mobile network for which you want to modify or delete the SIM policy.
+1. Open the **Mobile Network** resource representing the private mobile network for which you want to modify or delete the SIM policy.
 1. Select **SIM policies** from the resource menu.
 1. Proceed with one of the following operations:
 

@@ -19,10 +19,8 @@ abstract: |
     - Upgrade a packet core instance and its underlying Azure Stack Edge platform.
 prerequisites: |
   - Fundamental knowledge about Azure.
-    If you don't have the knowledge, consider taking relevant Azure Fundamental (AZ-900) training programs.
   - Fundamental knowledge of 5G and 4G technologies.
   - Fundamental knowledge about Azure Private 5G Core.
-    If you don't have the knowledge, consider taking the *Introduction to Azure Private 5G Core* training module first.
 iconUrl: /learn/achievements/manage-azure-private-5g-core.svg
 levels:
   - intermediate
