@@ -2,7 +2,7 @@ Let's take a step back and see how Grover's algorithm works and why we can use i
 
 In this section, we define the problem solved by Grover's search algorithm (the so-called "search problem") and take a closer look at how various real-life problems can be represented in terms of this problem.
 
-## The search problem
+## Formulate the problem
 
 The search problem is formulated as follows: you're given a function $f$ that takes an $N$-bit input and returns a 1-bit output, 0 or 1. Your goal is to find any input $x_0$ for which $f(x_0) = 1$.
 
