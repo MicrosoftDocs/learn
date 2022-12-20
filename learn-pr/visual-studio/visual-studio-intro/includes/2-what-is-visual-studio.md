@@ -7,7 +7,7 @@ Visual Studio is an integrated development environment (IDE). It's popular for .
 | Visual Studio                                                | VS Code                                     |
 |--------------------------------------------------------------|---------------------------------------------|
 | Developed over the past 25 years                            | First released in 2015                      |
-| Full-featured (major language support, debugging, editing, and test features are built-in)     | Lightweight (acquiring extensions to support different languages and platforms is up to the user)                               |
+| Full-featured (major language support, debugging, editing, and test features are built in)     | Lightweight (acquiring extensions to support different languages and platforms is up to the user)                               |
 | Closed source (with some open-source components)             | Open source                                 |
 | Free for students, open-source contributors, and individuals | Free for everyone                           |
 | Marketplace for both paid and free extensions              | Thriving extension development ecosystem with both OSS and closed-source extensions |
