@@ -28,11 +28,11 @@ On many SQL systems, the double dashes (`--`) mark the start of a comment. Every
 
 `SELECT * FROM users WHERE username='admin'`
 
-Assuming there's a user named `admin`, this command will sign in the attacker as the admin user—a serious breach!
+Assuming there's a user named `admin`, this command will sign in the attacker as the admin user; a serious breach!
 
 :::image type="content" source="../media/3-how-web-application-firewall-works.png" alt-text="Network diagram depicting two sign-in attempts, with Azure Web Application Firewall allowing the authorized sign-in and denying the unauthorized sign-in." border="false":::
 
-The previous example is an instance of an exploit called *SQL injection*. Attackers can take advantage of SQL injection and other exploits in web apps that trust all input.
+The preceding example is an instance of an exploit called *SQL injection*. Attackers can take advantage of SQL injection and other exploits in web apps that trust all input.
 
 Azure Web Application Firewall creates a barrier of non-trust between a web app and its user input. Azure Web Application Firewall assumes that all input is potentially malicious, so it *sanitizes* that input.
 
@@ -47,7 +47,7 @@ The rules that Azure Web Application Firewall uses to detect and block common vu
 Collections of related rules are gathered into a *core rule set* (CRS). These collections are based on the sets defined by the Open Web Application Security Project (OWASP). Currently there are three sets available when you deploy Azure Web Application Firewall: CRS 3.1, CRS 3.0, and CRS 2.2.9.
 
 > [!IMPORTANT]
-> The CRS 3 rule sets are a big improvement over CRS 2 because they reduce false positives by more than 90 percent and include many new exploits. Therefore, you should select a CRS 3 rule set when you deploy Azure Web Application Firewall.
+> The CRS 3 rule sets are a big improvement over CRS 2, because they reduce false positives by more than 90 percent and include many new exploits. Therefore, you should select a CRS 3 rule set when you deploy Azure Web Application Firewall.
 
 The following table lists the groups in CRS 3.1. This table should give you a sense of the depth of protection offered by Azure Web Application Firewall.
 
@@ -70,7 +70,7 @@ Each group is a collection of rules designed to detect and thwart a specific exp
 
 ## Custom rules
 
-The managed rules offered by Azure Web Application Firewall might not cover a specific threat that your web applications are experiencing. If so, you can create a custom rule. You build custom rules by creating conditions that include the following components:
+The managed rules Azure Web Application Firewall offers might not cover a specific threat that your web applications are experiencing. If this is the case, you can create a custom rule. You can build custom rules by creating conditions that include the following components:
 
 - Variables such as RequestHeader or QueryString
 - HTTP/HTTPS request methods such as POST or PUT
@@ -84,24 +84,24 @@ The managed rules offered by Azure Web Application Firewall might not cover a sp
 
 Azure Web Application Firewall can operate in one of two modes. The mode you choose depends on how you want the firewall to deal with incoming HTTP/HTTPS requests that match one of its rules:
 
-- Detection mode. Logs the request but allows the request to go through.
-- Prevention mode. Logs the request but doesn't allow the request to go through.
+- **Detection mode**: Logs the request but allows the request to go through.
+- **Prevention mode**: Logs the request but doesn't allow the request to go through.
 
 A common scenario is to run Azure Web Application Firewall in detection mode when you're testing an app. In detection mode, you can check for two types of problems:
 
-- False positives. Legitimate requests that the firewall flags as malicious.
-- False negatives. Malicious requests that the firewall allows.
+- **False positives**: Legitimate requests that the firewall flags as malicious.
+- **False negatives**: Malicious requests that the firewall allows.
 
-Once the app is ready to be deployed, you then switch to prevention mode.
+Once the app is ready to be deployed, you'll switch to prevention mode.
 
 ## Deployment options
 
-You deploy Azure Web Application Firewall as part of an Azure front-end solution for your web apps. You begin by creating an Azure Web Application Firewall policy, which includes the following settings:
+You can deploy Azure Web Application Firewall as part of an Azure front-end solution for your web apps. You'll begin by creating an Azure Web Application Firewall policy, which includes the following settings:
 
-- Which managed rule set you want to use.
-- Which rules within that rule set you want to disable.
-- Any custom rules you want to add.
-- Which mode you want to use.
+- Which managed rule set you want to use
+- Which rules within that rule set you want to disable
+- Any custom rules you want to add
+- Which mode you want to use
 
 For deployment, you can use either of the services listed in the following table.
 

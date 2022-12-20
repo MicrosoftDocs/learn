@@ -2,20 +2,12 @@ As your organization moves to Azure, you must design your network to protect res
 
 You now have the fundamental knowledge required to design and implement network security in Azure.
 
-## Summary
 
-Now that you have reviewed this module, you should be able to:
+## Learn more
 
- -  Get network security recommendations with Microsoft Defender for Cloud
- -  Configure and monitor an Azure DDoS protection plan
- -  Implement and manage firewalls
- -  Implement network security groups (NSGs)
- -  Implement a web application firewall (WAF) on Azure Front Door
-
-## Resources
-
-Use these resources to discover more.
-
-[Azure best practices for network security](/azure/security/fundamentals/network-best-practices)
-
-[Azure DDoS Protection](/azure/ddos-protection/fundamental-best-practices)
+- [Azure best practices for network security](/azure/security/fundamentals/network-best-practices)
+- [Introduction to Azure DDoS Protection](/training/modules/introduction-azure-ddos-protection/)
+- [Azure DDoS Protection best practices](/azure/ddos-protection/fundamental-best-practices)
+- [Introduction to Azure Firewall](/training/modules/introduction-azure-firewall/)
+- [Introduction to Azure Firewall Manager](/training/modules/intro-to-azure-firewall-manager/)
+- [Introduction to Azure Web Application Firewall](/training/modules/introduction-azure-web-application-firewall/)

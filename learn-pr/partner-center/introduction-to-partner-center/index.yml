@@ -1,0 +1,58 @@
+### YamlMime:Module
+uid: learn.intro-to-partner-center
+metadata:
+  moduleType: introduction
+  title: Introduction to Partner Center
+  description: "Introduction to Partner Center"             
+  ms.date: 11/14/2022
+  author: JulCsc
+  ms.author: juliacawthra
+  ms.topic: interactive-tutorial  
+  ms.service: partner-dashboard         
+
+title: Introduction to Partner Center
+
+summary: "In this module, you'll learn how Microsoft Partner Center can help you manage your business relationships."
+
+abstract: |
+  In this module, you will:
+    - Evaluate whether Microsoft Partner Center is appropriate for your business
+    - Learn about workspaces
+  
+  You will also learn how to: 
+    - Manage your Microsoft account and users
+    - Engage with customers
+    - Build relationships with other partners
+    - Enroll in incentive programs
+    - Manage customer subscriptions
+    - Bill and get paid
+    - Contact support
+    - Publish or explore offers in the Microsoft commercial marketplace
+
+prerequisites: |
+  - None
+
+iconUrl: /learn/achievements/generic-badge.svg
+
+levels:
+  - beginner
+
+roles:
+  - business-owner
+  - developer
+
+products:
+  - microsoft-partner-center
+  - azure
+  - dynamics-365
+
+units:
+- learn.intro-to-partner-center.introduction
+- learn.intro-to-partner-center.what-is-partner-center
+- learn.intro-to-partner-center.how-partner-center-works
+- learn.intro-to-partner-center.when-to-use-partner-center
+- learn.intro-to-partner-center.knowledge-check
+- learn.intro-to-partner-center.summary
+
+badge:
+  uid: learn.partner-center.badge
