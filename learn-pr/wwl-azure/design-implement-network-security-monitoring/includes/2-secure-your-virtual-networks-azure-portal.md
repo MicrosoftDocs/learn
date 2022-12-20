@@ -73,7 +73,7 @@ For more in-depth host level detection and prevention capability, deploy host-ba
 - Use Microsoft Defender for Cloud Adaptive Network Hardening to recommend NSG hardening rules that further limit ports, protocols and source IPs based on threat intelligence and traffic analysis result.
 - Use Azure Firewall Manager to centralize the firewall policy and route management of the virtual network. To simplify the firewall rules and network security groups implementation, you can also use the Azure Firewall Manager ARM (Azure Resource Manager) template.
 
-### NS-8: Secure Domain Name Service (DNS)
+### NS-8: Detect and disable insecure services and protocols
 
 **Security Principle**: Detect and disable insecure services and protocols at the OS, application, or software package layer. Deploy compensating controls if disabling insecure services and protocols are not possible.
 
@@ -114,41 +114,30 @@ Use Azure Defender for DNS for the advanced protection against the following sec
 
 You can also use Azure Defender for App Service to detect dangling DNS records if you decommission an App Service website without removing its custom domain from your DNS registrar.
 
-## Azure Security Benchmark
+## Microsoft cloud security benchmark
 
-The Azure Security Benchmark (ASB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure.
+Microsoft has found that using security benchmarks can help you quickly secure cloud deployments. A comprehensive security best practice framework from cloud service providers can give you a starting point for selecting specific security configuration settings in your cloud environment, across multiple service providers and allow you to monitor these configurations using a single pane of glass.
 
-The Azure Security Benchmark includes a collection of high-impact security recommendations you can use to help secure the services you use in Azure:
+The Microsoft cloud security benchmark (MCSB) includes a collection of high-impact security recommendations you can use to help secure your cloud services in a single or multicloud environment. MCSB recommendations include two key aspects:
 
- -  **Security controls:** These recommendations are generally applicable across your Azure tenant and Azure services. Each recommendation identifies a list of stakeholders that are typically involved in planning, approval, or implementation of the benchmark.
- -  **Service baselines:** These apply the controls to individual Azure services to provide recommendations on that service’s security configuration.
+ -  **Security controls:** These recommendations are generally applicable across your cloud workloads. Each recommendation identifies a list of stakeholders that are typically involved in planning, approval, or implementation of the benchmark.
+ -  **Service baselines:** These apply the controls to individual cloud services to provide recommendations on that specific service’s security configuration. We currently have service baselines available only for Azure.
 
-### Implement the Azure Security Benchmark
+### Implement Microsoft cloud security benchmark
 
- -  Plan your Azure Security Benchmark implementation by reviewing the documentation for the enterprise controls and service-specific baselines to plan your control framework and how it maps to guidance like CIS (Controls v7.1) and NIST (SP 800-53) framework.
- -  Monitor your compliance with Azure Security Benchmark status (and other control sets) using the regulatory compliance dashboard.
- -  Establish guardrails to automate secure configurations and enforce compliance with Azure Security Benchmark (and other requirements in your organization) with Azure Blueprints and Azure Policy.
+ -  **Plan** your MCSB implementation by reviewing the documentation for the enterprise controls and service-specific baselines to plan your control framework and how it maps to guidance like Center for Internet Security (CIS) Controls, National Institute of Standards and Technology (NIST), and the Payment Card Industry Data Security Standard (PCI-DSS) framework.
+ -  **Monitor** your compliance with MCSB status (and other control sets) using the Microsoft Defender for Cloud – Regulatory Compliance Dashboard for your multicloud environment.
+ -  **Establish** guardrails to automate secure configurations and enforce compliance with MCSB (and other requirements in your organization) using features such as Azure Blueprints, Azure Policy, or the equivalent technologies from other cloud platforms.
 
-Azure Security Benchmark v2 is aligned with Microsoft Security Best Practices so that Azure Security Benchmark provides a single consolidated view of Microsoft’s Azure security recommendations.
-
-### Common Use Cases
-
-Azure Security Benchmark is frequently used to address these common challenges for customers or service partners who are:
-
- -  New to Azure and are looking for security best practices to ensure a secure deployment.
- -  Improving security posture of existing Azure deployments to prioritize top risks and mitigations.
- -  Approving Azure services for use by technology and business use to meet specific security guidelines.
- -  Meeting regulatory requirements for customers who are from government or highly regulated industries like finance and healthcare (or service vendors who need to build systems for these customers). These customers need to ensure their configuration of Azure meets the security capabilities specified in an industry framework such as CIS, NIST, or PCI. Azure Security Benchmark provides an efficient approach with the controls already pre-mapped to these industry benchmarks.
 
 ### Terminology
 
-The terms "control", "benchmark", and "baseline" are used often in the Azure Security Benchmark documentation, and it is important to understand how Azure uses those terms.
+The terms "control", and "baseline" are used often in the Microsoft cloud security benchmark documentation, and it is important to understand how Azure uses those terms.
 
-| **Term**  |                                                                                                   **Description**                                                                                                    |                                                                   **Example**                                                                    |
-|:---------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------:|
-|  Control  |                                   A control is a high-level description of a feature or activity that needs to be addressed and is not specific to a technology or implementation.                                   | Data Protection is one of the security controls. This control contains specific actions that must be addressed to help ensure data is protected. |
-| Benchmark |                           A benchmark contains security recommendations for a specific technology, such as Azure. The recommendations are categorized by the control to which they belong.                           |                        The Azure Security Benchmark comprises the security recommendations specific to the Azure platform                        |
-| Baseline  | A baseline is the implementation of the benchmark on the individual Azure service. Each organization decides benchmark recommendation and corresponding configurations are needed in the Azure implementation scope. |   The Contoso company looks to enabling Azure SQL security features by following the configuration recommended in Azure SQL security baseline.   |
+| **Term**  |                                                                                                   **Description**                                                                                                                                             |                                                                   **Example**                                                                               |
+|:---------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|  Control  |                                   A control is a high-level description of a feature or activity that needs to be addressed and is not specific to a technology or implementation.                                                                            | Data Protection is one of the security control families. Data Protection contains specific actions that must be addressed to help ensure data is protected. |
+| Baseline  | A baseline is the implementation of the control on the individual Azure services. Each organization dictates a benchmark recommendation and corresponding configurations are needed in Azure. Note: Today we have service baselines available only for Azure. |        The Contoso company looks to enable Azure SQL security features by following the configuration recommended in the Azure SQL security baseline.       |
 
 ## Using Microsoft Defender for Cloud for regulatory compliance
 
