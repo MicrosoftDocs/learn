@@ -24,7 +24,7 @@ Factor in the following Azure components before Azure VMware Solution deployment
 | :---------- | :------------------ |
 | Subscription | Create a new subscription or reuse an existing one. |
 | Resource group | Create a new resource group or reuse an existing one. |
-| Region | Azure VMware Solution is deployable in Canada Central, East US, North Central US, West US, Australia East, West Europe, Japan East, and UK South. |
+| Region | Azure VMware Solution is available globally. |
 | Resource name | The Azure VMware Solution resource name can't be longer than 14 characters. If it's longer than that, public IP addresses cannot be created to use with Azure VMware Solution. |
 | Host size | Host instance size is AV36: 36 cores, 576 GB of RAM, 15.36 TB of raw storage capacity, and a 3.2-TB NVMe cache.
 | Node count | The minimum number of hosts is 3. <br>The maximum number of hosts is 16 per vSphere cluster. <br>The maximum number of clusters in an Azure private cloud instance is 12. <br>The maximum number of nodes in an Azure private cloud instance is 96. <br>Clusters can be extended or shrunk as needed. <br>Minimum and maximum nodes need to be factored in as the environment extends or shrinks.
