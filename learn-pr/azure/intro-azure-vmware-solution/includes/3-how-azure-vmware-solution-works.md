@@ -81,7 +81,7 @@ The following diagram shows the ExpressRoute and ExpressRoute Global Reach inter
 
 These services require you to enable specific network address ranges and firewall ports. 
 
-You can use an existing ExpressRoute gateway to connect to Azure VMware Solution, as long as it doesn't exceed the limit of four ExpressRoute circuits per virtual network. To access Azure VMware Solution from on-premises through ExpressRoute, you must have ExpressRoute Global Reach. The reason is that the ExpressRoute gateway doesn't provide transitive routing between its connected circuits. 
+You can use an existing ExpressRoute gateway to connect to Azure VMware Solution, as long as it doesn't exceed the limit of four ExpressRoute circuits per virtual network. To access Azure VMware Solution from on-premises through ExpressRoute, you must have ExpressRoute Global Reach.
 
 ExpressRoute Global Reach is used to connect private clouds to on-premises environments. The connection requires a virtual network with an ExpressRoute circuit to on-premises in your subscription.
 There are two options for interconnectivity in the private cloud for Azure VMware Solution:
