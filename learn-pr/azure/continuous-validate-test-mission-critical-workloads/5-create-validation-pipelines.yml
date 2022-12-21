@@ -27,3 +27,14 @@ quiz:
     - content: "Chaos and Load testing cannot run in parallel."
       isCorrect: false
       explanation: "Incorrect. Chaos experiments and load tests can be executed in parallel and the process can and should be automated."
+  - content: "What needs to be done after a failed load test?"
+    choices:
+    - content: "Nothing"
+      isCorrect: false
+      explanation: "Incorrect. The results of a failed load test run should be analyzed and the baseline be adjusted if needed."
+    - content: "Use a different load test tool"
+      isCorrect: false
+      explanation: "Incorrect. A failed load test is an indicator for issues introduced as part of recent changes, issues with the underlying platform or a baseline and thresholds that need to be adjusted."
+    - content: "Analyze the result and take action"
+      isCorrect: true
+      explanation: "Correct. A failed load test is an indicator for issues introduced as part of recent changes, issues with the underlying platform or a baseline and thresholds that need to be adjusted."
