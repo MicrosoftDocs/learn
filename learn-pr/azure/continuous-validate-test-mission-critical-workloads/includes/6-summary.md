@@ -1,8 +1,6 @@
-Contoso Shoes is an online shoe store that migrated their on-premises deployments to the cloud two years ago to improve operations and have successfully applied the principles of mission-critical architecture to improve the reliability of their web shop.
+To prevent performance bottlenecks and to increase confidence in new releases, Contoso Shoes has decided to implement [continuous validation](/azure/architecture/guide/testing/mission-critical-deployment-testing). This process contained the definition of relevant user and system flows, the definition of load tests for these flows to validate the expected performance and thresholds, defining baselines for normal and special scenarios like for example during chaos experiments and the implementation embedded into an automated pipeline.
 
-To prevent performance bottlenecks and to increase confidence in new releases, Contoso Shoes has decided to implement [continuous validation](/azure/architecture/guide/testing/mission-critical-deployment-testing). This process contained the definition of relevant user and system flows, the definition of load tests for these flows to identify the expected performance and thresholds, defining baselines for normal and special scenarios like for example during chaos experiments and the implementation embedded into a pipeline or workflow.
-
-The newly gained insights and the consistent and regular continuous validation process has increased the confidence into new releases and has reduced the number of issues that have occured as part of releases as well as under normal operations.
+The newly gained insights and the consistent and regular continuous validation process has increased the confidence into new releases and has reduced the number of issues that have occurred as part of releases as well as under normal operations.
 
 ## Learning objectives
 
@@ -13,7 +11,7 @@ You've learned how to design and use continuous validation and have applied this
 - You defined requirements for load testing and chaos experiments.
 - Design and use continuous validation for a production-ready, mission-critical solution.
 
-Congratulations on completing this training module.
+Congratulations on completing this training module!
 
 ## Learn more
 
