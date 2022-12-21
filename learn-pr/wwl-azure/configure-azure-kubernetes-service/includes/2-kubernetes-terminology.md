@@ -2,7 +2,7 @@ Azure Kubernetes Service (AKS) provides a simplified approach for deploying a ma
 
 The following illustration shows the relationships in a Kubernetes pool between nodes, pods, and containers.
 
-:::image type="content" source="../media/kubernetes-terms-ee59aa6e.png" alt-text="Illustration that shows a Kubernetes pool with nodes, nodes with pods, and pods with containers." border="false":::
+:::image type="content" source="../media/kubernetes-terms-ee59aa6e.png" alt-text="Illustration of a Kubernetes pool with nodes, nodes with pods, and pods with containers." border="false":::
 
 ### Things to know about AKS concepts
 
