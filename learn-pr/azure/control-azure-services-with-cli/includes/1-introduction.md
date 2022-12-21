@@ -1,4 +1,4 @@
-The Azure portal is great for performing single tasks and for seeing a quick overview of the state of your resources. But for tasks that need to be repeated daily, or even hourly, using the command line and a set of tested commands or scripts can help get your work done more quickly and avoid errors.
+The Azure portal is great for performing single tasks and for seeing a quick overview of the state of your resources. However, for tasks that need to be repeated daily, or even hourly, using the command line and a set of tested commands or scripts can help get your work done more quickly and avoid errors.
 
 Suppose you work at a company that develops Azure Web Apps. These are applications hosted in Azure, with all the benefits of automatically configured security, load balancing, management, and so on. You're currently testing a web app that generates sales forecasts based on a range of inputs from different databases and other data sources. Your developers use Windows, Linux, and Mac computers, and use a GitHub repository for daily builds of the applications.
 
@@ -10,9 +10,9 @@ In this module, you'll see how to manage Azure resources using the Azure CLI.
 
 In this module, you'll:
 
-- Install the Azure CLI on Linux, macOS, and/or Windows
-- Connect to an Azure subscription using the Azure CLI
-- Create Azure resources using the Azure CLI
+- Install the Azure CLI on Linux, macOS, and/or Windows.
+- Connect to an Azure subscription using the Azure CLI.
+- Create Azure resources using the Azure CLI.
 
 ## Prerequisites
 

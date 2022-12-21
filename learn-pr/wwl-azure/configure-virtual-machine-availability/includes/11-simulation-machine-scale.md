@@ -23,7 +23,7 @@ Your organization is deploying virtual machines in Azure. As the Azure Administr
 + **Task 3**: Scale compute and storage for Azure virtual machines. In this task, you'll scale compute for Azure virtual machines by changing their size and scale their storage by attaching and configuring their data disks.
     + Resize the virtual machine.
     + Create and attach a new disk to the virtual machine.
-    + Use Azure PowerShell to initialize and partition the new disk.
+    + [Use Azure PowerShell](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Allfiles/Labs/08/lab08diskcode.txt) to initialize and partition the new disk.
     + Customize the template to resize the virtual machine and change the disk configuration. 
 + **Task 4**: Register the Microsoft Insights and Microsoft Alerts Management resource providers.
 + **Task 5**: Deploy zone-resilient Azure Virtual Machine Scale Sets by using the Azure portal.
