@@ -44,10 +44,8 @@ Native Azure tools and services like the following ones allow you to monitor and
 
 :::image type="icon" source="../media/2-integration-overview.png" border="false" alt-text="Diagram that shows some of the integration services available for Azure VMware Solution.":::
 
-
 |Integration  |Description  |
 |---------|---------|
-
 |**Log Analytics workspace**     | A Log Analytics workspace in Azure Monitor is a unique environment to store log data. Each workspace has its own data repository and configuration. Data sources and solutions are configured to store their data in a specific workspace. After the solution is deployed into a subscription, Azure Monitor logs are generated automatically.        |
 |**Microsoft Defender for Cloud**     | Microsoft Defender for Cloud is a unified security management system for infrastructure. It strengthens the security of datacenters, and it provides advanced threat protection across hybrid workloads in the cloud or on-premises.        |
 |**Microsoft Sentinel**    |  Microsoft Sentinel is a cloud-native security information and event management (SIEM) solution. It provides security analytics, alert detection, and automated threat response across an environment.       |
