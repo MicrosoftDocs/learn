@@ -52,4 +52,7 @@ Your story should include the following components:
 - What are the limitations of the current methods?
 - How will Autonomous AI lead to groundbreaking results?
 
-Here you can find an example of a [presentation for Autonomous AI winning use cases](https://github.com/MicrosoftDocs/mslearn-machine-teaching-for-autonomous-ai/blob/main/Coffee%20Roasting%20with%20Bonsai%20presentation.pptx?raw=true).
+Here you can find examples of presentation for Autonomous AI winning use cases:
+
+- [Coffee Roasting with Project Bonsai](https://github.com/MicrosoftDocs/mslearn-machine-teaching-for-autonomous-ai/blob/main/Coffee%20Roasting%20with%20Bonsai%20presentation.pptx?raw=true)
+- [MineCo Gyratory Crusher Optimization with Project Bonsai](https://github.com/MicrosoftDocs/mslearn-machine-teaching-for-autonomous-ai/blob/main/MineCo%20Gyratory%20Crusher%20Optimization%20presentation.pptx)
