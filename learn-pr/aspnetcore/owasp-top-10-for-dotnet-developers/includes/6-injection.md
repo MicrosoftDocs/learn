@@ -2,24 +2,27 @@
 
 Happens when an application accepts data as input and processes it as instruction instead of as data​.
 
-As a golden rule ensure validation is performed whenever you' a're processing user input. Never assume any user data input as safe to process until proven otherwise.
+As a golden rule, ensure validation is performed whenever you're processing user input. Never assume any user data input is safe to process until proven otherwise.
 
 > [!IMPORTANT]
-> Neutralize or verify user input in your application
+> Neutralize or verify user input in your application.
+
 Injection can take different forms and shapes, from SQL, process to command injection.
 The canonical example of SQL injection could be the following statement, where `username` in an unsanitised query input parameter:
 
 ```sql
 string sql = ​"SELECT * FROM users WHERE name = '" + username + "';";
 ```
-Without validation of user input a malicious actor could supplement a genuine user name for a crafted part of SQL statement:
+
+Without validation of user input, a malicious actor could supplement a genuine user name for a crafted part of SQL statement:
+
 ```sql
 SELECT * FROM Users WHERE name = 'a';DROP TABLE users;--
 ```
 
 We always want to verify that input is safe, legitimate and in the correct format. Here we do client-side validation in the form with the DataAnnotationsValidator component.​
 
-Framework provides build in capabilities for data annotation and validation. The attributes from `System.ComponentModel.DataAnnotations` can decode your data model to provide the necessary validation functionality.
+Framework provides build-in capabilities for data annotation and validation. The attributes from `System.ComponentModel.DataAnnotations` can decode your data model to provide the necessary validation functionality.
 
 ```csharp
 using System.ComponentModel.DataAnnotations; ​
@@ -75,7 +78,6 @@ Input validation also includes the way we handle file upload. Following example 
     }
 }
 ```
-
 
 > [!TIP]
 > Check your web app is correctly validating user input by typing in `<iframe src="javascript:alert('HACKED')">` into a text input area.

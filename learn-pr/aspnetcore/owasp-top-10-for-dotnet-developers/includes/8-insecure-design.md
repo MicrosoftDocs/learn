@@ -8,7 +8,7 @@ An insecure design can not be fixed by a perfect implementation.​
 If we genuinely want to 'shift left' as an industry, we need more threat modeling, secure design patterns and principles, and reference architectures. ​
 :::image type="content" source="../media/enterprise-app-threats.png" alt-text="angles of attack in complex system":::
 Security should be not an afterthought  - how we protect our system’s configuration secrets, handle customers data, leak implementation details during logging and so on​.
-.Security matters not only in development and prediction but at deign as well.
+Security matters not only in development and prediction but at design as well.
 Consult with security experts to ensure appropriate requirements and design decisions are being made early on​.
 Use industry security standards and architectures, dedicated services like Azure KeyVault or Azure Web Application Firewall​.
 
@@ -27,7 +27,7 @@ Threat modeling is something that can be used to help mitigate that from the ear
 Whenever an application’s design or code is changed, you run the threat modeling process again to reflect the new state of the application and to identify any new threats that could have emerged from the changes. It’s an iterative process, performed throughout the software development lifecycle.
 
 > [!IMPORTANT]
-> Process to understand security threats to a system, determine risks from those threats, and establish appropriate mitigations.
+> Threat modeling is a process to understand security threats to a system, determine risks from those threats, and establish appropriate mitigations.
 
 :::image type="content" source="../media/tm-2.png" alt-text="Data flow diagram with basic threat model":::
 

@@ -7,9 +7,9 @@ The application might be vulnerable if the application is without a rigorous rep
 > Challenge the defaults.
 <!-- :::image type="content" source="../media/abel.png" alt-text="Don't accept the defaults - Abel Wang"::: -->
 
-Security misconfiguration can manifest itself in many places, from `web.cofnig` or `appsettings.json` settings, database account and connectivity configuration, IIS configurations to CI/CD pipeline secret handling or incorrect Azure Role Base Access Control use.
+Security misconfiguration can manifest itself in many places, from `web.config` or `appsettings.json` settings, database account and connectivity configuration, IIS configurations to CI/CD pipeline secret handling or incorrect Azure Role Base Access Control use.
 
 :::image type="content" source="../media/pipeline.png" alt-text="Azure DevOps Library linked with Azure KeyVault":::
 
-The example about demonstrates one of many native integrations between Azure DevOps and Azure Cloud where Azure DevOps Library is linked with Azure KeyVault to securely access secret pipeline parameters.
+The example above demonstrates one of many native integrations between Azure DevOps and Azure Cloud where Azure DevOps Library is linked with Azure KeyVault to securely access secret pipeline parameters.
 Secret values should never be found in codebase. The same practice applies to infrastructure as code (IaC) release workflows and CI/CD services themselves.

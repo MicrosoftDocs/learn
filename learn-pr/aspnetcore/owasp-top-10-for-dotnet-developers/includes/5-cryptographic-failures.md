@@ -12,8 +12,9 @@ Good practices would include
 - Protection data in transit and at rest and in use (Azure confidential computing) ​
 - Use strong cryptographic algorithms like AES
 
-## Encroption
-Let's explore a couple of examples of what ``System.Security.Cryptography`` has to offer.
+## Encryption
+
+Let's explore a couple of examples of what ``System.Security.Cryptography`` namespace if contained functionality has to offer.
 We'll start with Advanced Encryption Standard (AES), in the example below we create a new instance of the Aes (Strong) class. Instance is used to generate new key and initialization vector (IV).​
 The following example illustrates how to use the Advanced Encryption Standard to be used to perform encryption on any type of managed stream, then the steam is wrapped with CryptoStream.
 

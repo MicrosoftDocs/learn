@@ -1,4 +1,4 @@
-Implementing secured and high quality software  be challenging. In this module, we'll learn about  about application security from the perspective of a (.NET) developer. We’ll go through the recently updated version of OWASP TOP Ten to discover, by looking at examples, that are the most common security weaknesses and how we, app developers, can minimalize the risk of security bug infecting our systems. We’ll also introduce techniques, tools and best practices that can improve our product’s security posture.
+Implementing secured and high quality software  be challenging. In this module, we'll learn about  about application security from the perspective of a (.NET) developer. We’ll go through the recently updated version of OWASP TOP 10 to discover, by looking at examples, that are the most common security weaknesses and how we, app developers, can minimalize the risk of security bug infecting your systems. We’ll also introduce techniques, tools and best practices that can improve your product’s security posture.
 
 <!-- ![Security culture, delivery and automation cogs work better with CI, shift left and automation](../media/security-in-devops.png) -->
 # Threat landscape
@@ -9,7 +9,7 @@ No developer, whether your an independent or enterprise, sets out to write bad o
 
 Malware, exploits and many other cyber threats are on the rise. Attacks happen by exploiting vulnerabilities in an application. A vulnerability is just an unintended flaw or weakness in that application. The way data is processed or validated, how information is stored or protected, a simple misconfiguration of a external service that forms part of the application are a few examples of where vulnerability could be introduced.
 
-We, as authors of ever more complex systems, are responsible for success of our products and part of that success is providing our customers with a secure and reliable solution. Education element of the secured development lifecycle is fundamental, understanding the risk associated and discussed in OWASP Top Ten is a great start.
+We, as authors of ever more complex systems, are responsible for success of your products and part of that success is providing your customers with a secure and reliable solution. Education element of the secured development lifecycle is fundamental, understanding the risk associated and discussed in OWASP Top Ten is a great start.
 
 Not a week goes by without a news story about a company being hacked, ransomware or data being stolen and posted on dark web. According to the 2021 Identity Theft Resource Center (ITRC) Annual Data Breach Report the cost of a data breach increased by nearly 10% between 2020 and 2021. Data breaches are increasing and getting more costly.
 
@@ -19,7 +19,7 @@ Not a week goes by without a news story about a company being hacked, ransomware
 
 ## The World of Application Security
 
-Application Security, often refereed to as AppSec, is the process of finding, fixing, and preventing security vulnerabilities at the application level.
+Application Security, often referred to as AppSec, is the process of finding, fixing, and preventing security vulnerabilities at the application level.
 
 As the application complexity becomes more increases, so does the effort of making it secure. Modern applications, in contrast with single-project monolith legacy application, depend on external libraries, services for hosting, building and releasing to name a few.
 None of these services are simple plug and play affairs, developers need to understand them, and know how to configure and implement the flows and processes – the interactions - securely in their own code.
@@ -31,7 +31,7 @@ It’s important to understand there isn’t any single silver bullet or check b
 
 ### Application security in a wider security context​
 
-AppSec logically it falls under the wider context of **Information Security (InfoSec)**, term covering protection of information and systems from unauthorized access, use, disruption, or destruction etc. InfoSec also covers areas like as network security, intrusion detection, digital forensics, and governance, risk, and compliance for example.
+AppSec logically falls under the wider context of **Information Security (InfoSec)**, term covering protection of information and systems from unauthorized access, use, disruption, or destruction etc. InfoSec also covers areas like as network security, intrusion detection, digital forensics, and governance, risk, and compliance for example.
 
 **The Security Development Lifecycle (SDL)** consists of a set of practices that support security assurance and compliance requirements. The SDL helps developers build more secure software by reducing the number and severity of vulnerabilities in software.
 

@@ -11,18 +11,19 @@ metadata:
 
 title: "Introduction to OWASP Top 10 for .NET Developers" 
 
-summary: "Discover the most common software vulnerabilities according to OWASP and different techniques of writing more secure code. Learn how to prevent from security bugs creeping into your codebase following security best practices."
+summary: "Discover the most common software vulnerabilities according to OWASP and different techniques of writing more secure code. Prevent from security bugs creeping into your codebase following security best practices."
 
 abstract: |
   By the end of this module, you'll be able to:
+    - Describe what OWASP Top 10 is.
     - Evaluate security risks that come with insecure application development patterns and practices.
-    - Understand how to write more secure software.
+    - Identify potential security vulnerabilities in your software and know how to remedy them.
 
 prerequisites: |
-  - Basic knowledge of .NET and C#
-  - Basic knowledge of web development with ASP.NET
-  - Familiarity with programming concepts such as conditional logic and loops
-  - Understanding of what DevOps is and its concepts
+  - Basic knowledge of .NET and C# at the beginner level
+  - Basic knowledge of web development with ASP.NET at the beginner level
+  - Familiarity with programming concepts such as conditional logic and loops at the beginner level
+  - Understanding of what DevOps is and its concepts at the beginner level
 
 iconUrl: /learn/achievements/generic-badge.svg
 
