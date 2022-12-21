@@ -30,7 +30,7 @@ When you design a chaos experiment, the first step is what is called the **failu
 | **Risk**                   | **Impact/Mitigation/Comment**                |
 | -------------------------------------------- | ------------------------------------------------------------ |
 | **Database/collection is renamed**     | Can happen due to mismatch in configuration when deploying – Terraform would overwrite the whole database, which could result in data loss (this can be prevented by using [database/collection  level locks](https://feedback.azure.com/forums/263030-azure-cosmos-db/suggestions/35535298-enable-locks-at-database-and-collection-level-as-w)). <br />**Application will not be able to access any data**. App configuration needs to be updated and components restarted.                     |
-| **Regional outage**             | Contoso Shoes has configured their Cosmos DB account with multiple regions and automatic failover. In case the primary region encounters an outage, the service will automatically failover and we should not see any sustained issues on the application.                     |
+| **Write region outage**             | Contoso Shoes has configured their Cosmos DB account with multiple regions and automatic failover. In case the primary region ("write region") encounters an outage, the service will automatically failover and we should not see any sustained issues on the application.                     |
 | **Extensive throttling due to lack of RUs** | Depending on how we decide on how many RUs (max setting for the auto scaler), we want to deploy and what load balancing we employ on a global load balancer level, it could be that certain stamp(s) run hot on Cosmos utilization while others could still serve more requests. <br />Could be mitigated by better load distribution to more stamps – or of course more RUs. |
 
 # Design chaos experiment
@@ -41,4 +41,34 @@ Pick a few of the previously identified failures cases for a chaos experiment. Y
 
 We will use Azure Chaos Studio to inject the faults into the relevant components. Chaos Studio offers a wide selection of [faults](/azure/chaos-studio/chaos-studio-fault-library) for you to choose from. However, because it doesn't cover everything, you might need to adjust your scenario, or find additional tools to help you inject the failure.
 
-Before you can inject a fault against an Azure resource, the resource must first have corresponding **targets and capabilities** enabled. Targets and capabilities control which resources are enabled for fault injection and which faults can run against those resources. Using targets and capabilities along with other security measures you can avoid accidental or malicious fault injection with Chaos Studio.
+## Cosmos DB outage and failover
+
+For our first experiment, we pick the **Write region outage** failure scenario of Cosmos DB as described in the table above. We have stated what we call a hypothesis: A service-initiated failover should not result in any sustained impact on our application. If this proves to be true, we have validated that our taken resiliency measure (set up replication to multiple regions) does indeed have the desired positive effect on our application reliability.
+
+To simulate this fault, we use the [Azure Cosmos DB failure](/azure/chaos-studio/chaos-studio-fault-library#azure-cosmos-db-failover) from the Azure Chaos Studio fault library.
+
+The following is an example for a Cosmos DB failover that will be running for 10 minutes (`PT10M`) and will make `West US 2` as the new write region. This  assumes that West US 2 was already set up as one of the read replication regions.
+
+```json
+{
+  "name": "branchOne",
+  "actions": [
+    {
+      "type": "continuous",
+      "name": "urn:csci:microsoft:cosmosDB:failover/1.0",
+      "parameters": [
+        {
+          "key": "readRegion",
+          "value": "West US 2"
+        }
+      ],
+      "duration": "PT10M",
+      "selectorid": "myCosmosDbResource"
+    }
+  ]
+}
+```
+
+After the experiment ends, Chaos Studio switches the write region back to its original value.
+
+Before you can inject a fault against an Azure resource, our Cosmos DB resource must first have corresponding **targets and capabilities** enabled. [Targets and capabilities](/azure/chaos-studio/chaos-studio-targets-capabilities) control which resources are enabled for fault injection and which faults can run against those resources. Using targets and capabilities along with other security measures you can avoid accidental or malicious fault injection with Chaos Studio.
