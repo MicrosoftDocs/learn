@@ -26,7 +26,7 @@ Another scenario uses Azure Storage to store on-premises **SQL Server data files
 
 ### Azure Arc enabled SQL Servers
 
-Having **Azure Arc enabled SQL Servers** extends and centralizes Azure management services to SQL Server instances hosted on-premises, in your data centers, on the edge, and in multi-cloud environments. In this hybrid scenario, Azure Arc enables the inventory of all registered SQL Server deployments and assesses their configurations, usage patterns, and security to provide actions and recommendations based on best practices. By using [Azure Arc enabled SQL Servers](/sql/sql-server/azure-arc/overview), you gain the benefits of centralized server management. You also get Azure Defender real-time security alerts and vulnerability reporting on both on-premises SQL Servers and their host operating systems. In addition, Azure Sentinel can provide more security threat introspection if necessary.
+Having **Azure Arc enabled SQL Servers** extends and centralizes Azure management services to SQL Server instances hosted on-premises, in your data centers, on the edge, and in multicloud environments. In this hybrid scenario, Azure Arc enables the inventory of all registered SQL Server deployments and assesses their configurations, usage patterns, and security to provide actions and recommendations based on best practices. By using [Azure Arc enabled SQL Servers](/sql/sql-server/azure-arc/overview), you gain the benefits of centralized server management. You also get Azure Defender real-time security alerts and vulnerability reporting on both on-premises SQL Servers and their host operating systems. In addition, Azure Sentinel can provide more security threat introspection if necessary.
 
 :::image type="content" source="../media/module-22-plan-implement-final-14.png" alt-text="A diagram depicting a sample Azure Arc enabled SQL Server architecture.":::
 
@@ -40,4 +40,4 @@ The image above shows the benefit of an S2S VPN solution is that it tends to cos
 
 :::image type="content" source="../media/module-22-plan-implement-final-12.png" alt-text="A connection diagram depicting an ExpressRoute connection to Azure.":::
 
-As we can see above, while the ExpressRoute solution tends to be more costly, it also provides the best security and lowest latency as all communication flows over a direct secured channel independent of the public internet. However, common detractors for this solution include overall cost and the inability to apply ExpressRoute between cloud providers in a multi-cloud solution.
+As we can see above, while the ExpressRoute solution tends to be more costly, it also provides the best security and lowest latency as all communication flows over a direct secured channel independent of the public internet. However, common detractors for this solution include overall cost and the inability to apply ExpressRoute between cloud providers in a multicloud solution.
