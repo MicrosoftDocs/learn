@@ -16,31 +16,33 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "Is it the goal of a chaos experiment to break your production environment?"
+  - content: "What is the goal of a chaos experiment?"
     choices:
-    - content: "Yes"
+    - content: "Break your production environment"
       isCorrect: false
       explanation: "Incorrect. The goal is to inject failures into the deployment to test how the application behaves and responds to them. The result should be used to improve the error handling and monitoring to reduce the impact when these failures occur in production environments."
-    - content: "No"
+    - content: "Inject faults to test the workload and environment"
       isCorrect: true
-      explanation: "Correct! The goal is to intentionally inject faults to test the deployment. The result can be used to improve error handling and monitoring to prevent these issues and their impact in production environments."
+      explanation: "Correct! The goal is to intentionally inject faults to test the deployment and its resiliency measures."
   - content: "Which services does Azure Chaos Studio support?"
     choices:
-    - content: "Azure Virtual Machines, Azure App Service, and Azure Cache for Redis "
+    - content: "All Azure services"
       isCorrect: false
-      explanation: ""
-    - content: "Azure Virtual Machines, Azure Kubernetes Service (AKS), and Azure Cache for Redis"
+      explanation: "Incorrect. Azure Chaos Studio supports only a subset of Azure services."
+    - content: "A subset of Azure services"
       isCorrect: true
-      explanation: ""
-    - content: "Azure Kubernetes Service (AKS) and Azure Functions"
+      explanation: "Correct. Azure Chaos Studio supports only a subset of Azure services today. New services and chaos experiments will be added over time."
+    - content: "Only 3rd party services that are hosted outside of Azure"
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. Azure Chaos Studio supports a subset of Azure services."
   - content: "Before you can run an experiment against a service from Azure Chaos Studio, what settings do you need to enable?"
     choices:
-    - content: "Target and capability"
+    - content: "Targets and capabilities"
       isCorrect: true
-      explanation: ""
+      explanation: "Correct. Before you can inject a fault against an Azure resource, the resource must first have corresponding targets and capabilities enabled."
     - content: "Availability zones"
       isCorrect: false
-      explanation: ""
-
+      explanation: "Incorrect. Availability Zones are not a prerequisite to use Azure Chaos Studio."
+    - content: "Azure Backup"
+      isCorrect: false
+      explanation: "Incorrect. Azure Backup is not a prerequisite to use Azure Chaos Studio."
