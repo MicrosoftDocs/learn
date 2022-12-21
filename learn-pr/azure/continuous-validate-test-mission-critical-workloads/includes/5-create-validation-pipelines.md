@@ -4,7 +4,7 @@ Injecting failures in isolation into an empty or idle environment isn't meaningf
 
 You can use Azure Pipelines, GitHub Actions or the CI/CD tool of your choice.
 
-![Diagram showing a sample pipeline with chaos and load](../media/pipeline-with-chaos-and-load.png)
+![Diagram showing a sample pipeline with chaos and load.](../media/pipeline-with-chaos-and-load.png)
 
  In the pipeline, define the Azure Load Test and Azure Chaos Studio services as Infrastructure-as-Code (IaC) with Azure Resource Manager (ARM) templates, Bicep, Terraform or others. Azure Load Testing [provides first-party tasks](/azure/load-testing/tutorial-identify-performance-regression-with-cicd) for Azure Pipelines and GitHub Actions to interact with the load testing service, and to create and orchestrate tests.
 
