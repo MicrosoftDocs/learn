@@ -16,12 +16,12 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "Is a single baseline sufficient for different scenarios?"
+  - content: "How many different baselines are required?"
     choices:
-    - content: "Yes"
+    - content: "A single baseline is always enough."
       isCorrect: false
-      explanation: "Incorrect. The baseline what good means can differ based on the environment or stage, on the load profile as well as on the fact if Chaos Experiments were done during the test."
-    - content: "No"
+      explanation: "Incorrect. The baseline definition of what good or healthy means can differ based on the environment or stage, on the load profile as well as on the fact if Chaos Experiments were done during the test."
+    - content: "Different baselines for different scenarios."
       isCorrect: true
       explanation: "Correct! Different scenarios might require different baselines. The baseline can differ based on the expected performance in different environments or stages as well as when Chaos Experiments are executed embedded into the test."
   - content: "The baseline defines the performance the deployment can provide."
