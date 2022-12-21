@@ -12,13 +12,13 @@ title: Design a health model for your mission-critical workload
 summary: A mission-critical workload needs to be continuously monitored to ensure that degraded application components are caught early. A well-designed health model gives you that ability, based on metrics and thresholds that you define as important. Through optimized queries and visualization, you can identify the cascading impact of degraded components and troubleshoot issues early before they can cause an outage.
 abstract:  | 
   By the end of this module, you'll be able to:
-  -	Identify user flows and key application components of an application architecture.
-  -	Identify key metrics to use as the foundation for an application health model.
+  -	Identify the user flows and key application components of an application architecture.
+  -	Identify key metrics to use as the foundation of an application health model.
   - Build a layered health model for an application.
   -	Visualize the health model in a dashboard.
 prerequisites: |
   - Extensive experience designing cloud-native applications that include core infrastructure technology like data storage, compute, and networking.
-  - Good understanding of the design principles and design areas of a mission-critical workload provided in the Azure Well-Architected Framework.
+  - Good understanding of the design principles and design areas of a mission-critical workload in the Azure Well-Architected Framework.
   - Basic understanding of application or solution health modeling.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

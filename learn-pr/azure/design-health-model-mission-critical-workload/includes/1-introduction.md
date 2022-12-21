@@ -8,7 +8,7 @@ Contoso Shoes migrated its deployments from an on-premises environment to the cl
 
 To prevent further avoidable outages, Contoso Shoes successfully applied the [principles of mission-critical architecture](/azure/architecture/framework/mission-critical/mission-critical-design-principles) in its main customer-facing application, the store website.
 
-As Contoso Shoes prepares for its next high-profile product launch, the company has identified a gap in awareness of the health and availability of its internal web application. Contoso Shoes employees use this website to update the product catalog, which customers then interact with on the store website. With increased traffic on the store website during a product launch, insufficient monitoring and knowledge about the health in the internal web application might affect customers.
+As Contoso Shoes prepares for its next high-profile product launch, the company has identified a gap in awareness of the health and availability of its internal web application. Contoso Shoes employees use the internal web application to update the product catalog, which customers then interact with on the store website. With increased traffic on the store website during a product launch, insufficient monitoring and knowledge about the health in the internal web application might affect customers.
 
 The internal web application was designed according to the quality pillars of the [Microsoft Azure Well-Architected Framework](/azure/architecture/framework). The company is looking to perform health modeling on this workload and develop queries and dashboards to better observe application and component health.
 
@@ -17,7 +17,7 @@ The internal web application was designed according to the quality pillars of th
 By the end of this module, you'll be able to:
 
 - Identify the user flows and key application components in an application architecture.
-- Identify key metrics to use as the foundation for an application health model.
+- Identify key metrics to use as the foundation of an application health model.
 - Build a layered health model for an application.
 - Visualize the health model in a dashboard.
 

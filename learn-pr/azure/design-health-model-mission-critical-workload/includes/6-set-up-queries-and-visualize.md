@@ -32,7 +32,7 @@ For individual services that calculate the health status, see the following samp
 
 The following sample demonstrates a [Catalog API query](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/CatalogServiceHealthStatus.kql):
 
-```kql
+```kusto
 let _maxAge = 2d; // Include data only from the last two days.
 let _timespanStart = ago(_maxAge); // Start time for the time span.
 let _timespanEnd = now(-2m); // There's some ingestion lag. We account for this by stripping the last 2m.
@@ -70,9 +70,9 @@ avgProcessingTime
 
 ### Azure Key Vault
 
-The following sample demonstrates an [Azure Key Vault](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/KeyvaultHealthStatus.kql) query:
+The following sample demonstrates an [Azure Key Vault query](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/KeyvaultHealthStatus.kql):
 
-```kql
+```kusto
 let _maxAge = 2d; // Include data only from the last two days.
 let _timespanStart = ago(_maxAge); // Start time for the time span.
 let _timespanEnd = now(-2m); // There's some ingestion lag. We account for this by stripping the last 2m.
@@ -110,7 +110,7 @@ failureStats
 
 Eventually, you can tie together various health *status* queries to calculate a health *score* of a component. The following sample query shows how to calculate a [Catalog Service health score](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/CatalogServiceHealthScore.kql):
 
-```kql
+```kusto
 CatalogServiceHealthStatus()
 | union AksClusterHealthStatus()
 | union KeyvaultHealthStatus()

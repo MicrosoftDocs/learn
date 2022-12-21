@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-health-model-mission-critical-workload.set-up-queries-and-visualize
-title: Collect, query, and visualize heath states
+title: Collect, query, and visualize health states
 metadata:
-  title: Collect, query, and visualize heath states
-  description: Learn how to collect data, run queries, and visualize heath states in a health model.
+  title: Collect, query, and visualize health states
+  description: Learn how to collect data, run queries, and visualize health states in a health model.
   ms.date: 12/12/2022
   author: msimecek
   ms.author: prwilk

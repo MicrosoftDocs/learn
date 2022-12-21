@@ -79,7 +79,7 @@ For the final step of this exercise, put the information you gathered in a graph
 
 :::image type="content" source="../media/layered-health-model.png" border="false" alt-text="Diagram that shows the architecture for this layered health model.":::
 
-From top to bottom, the Contoso Shows web application health model has these layers:
+From top to bottom, the Contoso Shoes internal web application health model has these layers:
 
 - User flows:
 
@@ -90,12 +90,11 @@ From top to bottom, the Contoso Shows web application health model has these lay
 
   - **Front-end web application**. Dependent on Blob Storage and the Catalog API.
   - **Catalog API**. Dependent on Azure Cosmos DB, Key Vault, and Event Hubs.
-  - **Background processor**. Dependent on Azure Cosmos DB, Azure Functions, Key Vault, and Event Hubs.
+  - **Background processor**. Dependent on Azure Cosmos DB, Key Vault, and Event Hubs.
 
 - Azure resources:
 
   - **Blob Storage**
   - **Azure Cosmos DB**
-  - **Azure Functions**
   - **Key Vault**
   - **Event Hubs**
