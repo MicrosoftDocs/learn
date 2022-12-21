@@ -6,7 +6,7 @@ A **flow** is the sum of activities and decisions a user or system will take in 
 
 As an example user flow, we're using the checkout process in Contoso Shoes. This user flow requires the backend inventory management to be available, and doesn't require a search component. In this example, the page needs to load fast due to the expected large number of concurrent users.
 
-**TODO** We need system flow example, too. **TODO**
+A system flow is typically not user facing while an outage might still have an impact on the end user experience. An example system flow can be an asynchonous activity that picks up orders from a database and generates shipping labels. 
 
 ## Define a load test and its threshold values
 
