@@ -1,10 +1,10 @@
-Data scientists visualize data to understand it better. This can mean looking at the raw data, summary measures such as averages, or graphing the data. Graphs are a powerful means of viewing data, as we can discern moderately complex patterns quickly.
+Data scientists visualize data to understand it better. They may scan the raw data, examine summary measures such as averages, or graph the data. Graphs are a powerful means of visualizing data, and data scientists often use graphs to discern moderately complex patterns quickly.
 
 ## Representing data visually
 
-Representing data visually typically means graphing it. This is done to provide a fast qualitative assessment of our data, which can be useful for understanding results, finding outlier values, understanding how numbers are distributed, and so on.
+Graphing is done to provide a fast qualitative assessment of our data, which can be useful for understanding results, finding outlier values, examining how numbers are distributed, and so on.
 
-While sometimes we know ahead of time what kind of graph will be most useful, other times we use graphs in an exploratory way. To understand the power of data visualization, consider the data below: the location (x,y) of a self-driving car. In its raw form, it's hard to see any real patterns. The mean or average tells us that its path was centred around x=0.2 and y=0.3, and the range of numbers appears to be between about -2 and 2.
+While sometimes we know ahead of time what kind of graph will be most useful, other times we use graphs in an exploratory way. To understand the power of data visualization, consider the data below: the location (x,y) of a self-driving car. In the data's raw form, it's hard to see any real patterns. The mean or average tells us that the car's path was centred around x=0.2 and y=0.3, and the range of numbers appears to be between about -2 and 2.
 
 |Time|Location-X|Location-Y|
 |---|---|
@@ -34,4 +34,4 @@ If we graph X versus Y, we end up with a map of where the car has driven. It’s
 
 ![Location-X and Location-Y coordinates plotted.](../media/4-x-y-coordinates.png)
 
-Graphs aren't limited to 2D scatter plots like those above. They can be used to explore other kinds of data, for example, proportions (pie charts and stacked bar graphs) and how data are spread (histograms and box-and-whisker plots). Often, when we're trying to understand raw data or results, we may experiment with different types of graphs until we come across one that explains the data in a visually intuitive way.
+Graphs aren't limited to 2D scatter plots like those above. They can be used to explore other kinds of data, for example, proportions (pie charts and stacked bar graphs) and how the data are spread (histograms and box-and-whisker plots). Often, when we're trying to understand raw data or results, we may experiment with different types of graphs until we come across one that explains the data in a visually intuitive way.

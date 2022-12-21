@@ -2,7 +2,7 @@ In this module, you learned how to use Python to explore, visualize, and manipul
 
 Machine learning is a subset of data science that deals with predictive modeling. In other words, machine learning uses data to create predictive models in order to predict unknown values. You might use machine learning to predict how much food a supermarket needs to order or to identify plants in photographs.
 
-Machine learning works by identifying relationships between data values that describe characteristics of something (its *features*&#8212;such as the height and color of a plant) and the value we want to predict (the *label*&#8212;such as the species of plant). These relationships are built into a model through a *training* process.
+Machine learning works by identifying relationships between data values that describe the characteristics of something (its *features*&#8212;such as the height and color of a plant) and the value we want to predict (the *label*&#8212;such as the species of plant). These relationships are built into a model through a *training* process.
 
 ## Challenge: Analyze Flight Data
 
