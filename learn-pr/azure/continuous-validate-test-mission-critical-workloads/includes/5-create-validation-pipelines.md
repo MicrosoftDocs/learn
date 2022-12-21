@@ -12,4 +12,6 @@ You can use Azure Pipelines, GitHub Actions or the CI/CD tool of your choice.
 
 Ensure that the load test run and the chaos experiments overlap to produce meaningful results. The load test should start before fault is injected and continue to run for some time when the Chaos experiment is finished to properly see the impact of the injected faults.
 
+ ![Diagram showing sample test criteria.](../media/deployment-testing-test-criteria.png)
+
  Failed load test runs should be analyzed to verify if the used baseline is still accurate or if it needs to be adjusted.
