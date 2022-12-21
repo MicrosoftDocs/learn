@@ -9,11 +9,11 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-entra-permissions-management
 title: Introduction to Entra Permissions Management 
-summary: Permissions Management gives security operation administrators insight into over-privileged workload and user identities, actions, and resources across multicloud infrastructures.
+summary: Microsoft Entra Permissions Management gives security operation administrators insight into over-privileged workload and user identities, actions, and resources across multicloud infrastructures.
 abstract: |
   In this module, you will:
   - Explore Cloud Infrastructure Entitlement Management (CIEM)
-  - Learn more about MicrosoftU+2019s CIEM solution
+  - Learn more about MicrosoftU's CIEM solution
   - Define real-world scenarios and challenges that Permissions Management can solve
 
 iconUrl: /training/achievements/1-intro-to-entra-permissions-management.svg

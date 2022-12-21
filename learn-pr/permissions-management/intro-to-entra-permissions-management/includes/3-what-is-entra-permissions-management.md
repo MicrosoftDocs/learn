@@ -4,7 +4,7 @@ As part of the Microsoft Entra portfolio, Microsoft Entra Permissions Management
 
 Microsoft Entra Permissions Management is a standalone solution that is not included in existing Microsoft bundles.
 
-### What sets Entra Permissions Management apart? ###
+### Manage identities in multicloud environments ###
 
 The increase in the adoption of multicloud creates new access management challenges. Inconsistent methods to manage assets in multicloud platforms can cause security teams to struggle with lack of visibility and control in complex IT environments. The recent exponential growth of identities, machines, functions, and scripts operating in cloud infrastructures means that unmanaged permissions can expand your area of attack. 
 
@@ -13,9 +13,7 @@ According to a [*2021 State of Cloud Permissions Risks Report*](https://query.pr
 - More than 90 percent of identities are using less than 5 percent of the permissions that they are granted.
 - More than 50 percent of permissions are high-risk and can cause catastrophic damage.
 
-Entra Permissions Management provides a unified platform to manage permissions for all identities, users and workflows across all major cloud infrastructures. So how does it compare to other permissions management solutions? See below for key differentiators of Entra Permissions Management. 
-
-**New Key Differentiators image needed**
+Entra Permissions Management provides a unified platform to manage permissions for all identities, users and workflows across all major cloud infrastructures.
 
 ### A key component for zero trust frameworks ###
 
