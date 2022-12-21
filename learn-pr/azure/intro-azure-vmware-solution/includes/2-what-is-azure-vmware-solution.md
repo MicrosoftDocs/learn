@@ -1,4 +1,4 @@
-Every company is in a different place in its digital transformation journey and use of the cloud. In partnership with VMware, Microsoft has created Azure VMware Solution. It's a service that enables organizations to move VMware-based enterprise workloads from on-premises to Azure, deploy new virtual machines (VMs), and connect workloads directly to other Azure services.
+Each company is in a different place in its digital transformation journey and use of the cloud. In partnership with VMware, Microsoft has created Azure VMware Solution. It's a service that enables organizations to move VMware-based enterprise workloads from on-premises to Azure, deploy new virtual machines (VMs), and connect workloads directly to other Azure services.
 
 Azure VMware Solution combines VMware's Software-Defined Data Center (SDDC) software with the Azure global cloud service. It's a VMware-validated solution with ongoing certification and testing of enhancements and upgrades. 
 
