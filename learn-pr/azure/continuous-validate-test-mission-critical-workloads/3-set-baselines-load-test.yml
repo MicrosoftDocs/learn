@@ -23,7 +23,7 @@ quiz:
       explanation: "Incorrect. The baseline definition of what good or healthy means can differ based on the environment or stage, on the load profile as well as on the fact if Chaos Experiments were done during the test."
     - content: "Different baselines for different scenarios."
       isCorrect: true
-      explanation: "Correct! Different scenarios might require different baselines. The baseline can differ based on the expected performance in different environments or stages as well as when Chaos Experiments are executed embedded into the test."
+      explanation: "Correct! Different scenarios might require different baselines. Examples are different performance requirements and expectations in different stages and environments. Running Chaos experiments can also have an impact on the expected performance."
   - content: "The baseline defines the performance the deployment can provide."
     choices:
     - content: "Yes"
@@ -42,4 +42,4 @@ quiz:
       explanation: "Correct! Existing baselines should be evaluated with every release or major change and adjusted when needed."
     - content: "Baselines should be updated on a yearly basis."
       isCorrect: false
-      explanation: "Incorrect. Defining a specific interval is not recommended, Baselines should be evaluated on a regular basis for example as part of every release and as part of major changes."
+      explanation: "Incorrect. Defining a specific interval is not recommended. Baselines should be evaluated on a regular basis, for example, as part of every release and as part of major changes."
