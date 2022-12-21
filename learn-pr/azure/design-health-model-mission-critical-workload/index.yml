@@ -2,23 +2,24 @@
 uid: learn.design-health-model-mission-critical-workload
 metadata:
   title: Design a health model for your mission-critical workload
-  description: Improve your observability practices by defining a health model. The model gives you the ability to quickly identify and troubleshoot issues in your system.
+  description: Improve your observability practices by defining a health model for mission-critical applications. A health model helps you quickly identify and troubleshoot issues that might affect the health of your mission-critical solution.
   ms.date: 11/21/2022
   author: msimecek
   ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Design a health model for your mission-critical workload
-summary: A mission-critical workload needs to be continuously monitored to ensure degraded application components are caught early. A well-designed health model gives you that ability, based on metrics and thresholds that are important to you. Through optimized queries and visualization, you can identify the cascading impact of degraded components and troubleshoot issues early before they can cause an outage.
+summary: A mission-critical workload needs to be continuously monitored to ensure that degraded application components are caught early. A well-designed health model gives you that ability, based on metrics and thresholds that you define as important. Through optimized queries and visualization, you can identify the cascading impact of degraded components and troubleshoot issues early before they can cause an outage.
 abstract:  | 
   By the end of this module, you'll be able to:
-  -	Identify user flows and key application components of a given architecture
-  -	Identify key metrics that will make the foundation for the health model of a given architecture
-  -	Visualize the health model in a dashboard
+  -	Identify user flows and key application components of an application architecture.
+  -	Identify key metrics to use as the foundation for an application health model.
+  - Build a layered health model for an application.
+  -	Visualize the health model in a dashboard.
 prerequisites: |
-  - Extensive experience in designing cloud native applications that include core infrastructure technology such as data storage, compute, and networking
-  - Good understanding of the design principles and design areas of a mission-critical workload provided in the Azure Well-Architected Framework
-  - Basic understanding of health modeling
+  - Extensive experience designing cloud-native applications that include core infrastructure technology like data storage, compute, and networking.
+  - Good understanding of the design principles and design areas of a mission-critical workload provided in the Azure Well-Architected Framework.
+  - Basic understanding of application or solution health modeling.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - advanced

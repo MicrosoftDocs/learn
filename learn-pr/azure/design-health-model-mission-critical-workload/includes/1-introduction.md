@@ -1,19 +1,23 @@
-For a mission-critical workload, continuous monitoring of application components is essential to ensuring degradations are caught early and outages are prevented. A well-designed health model provides you that ability based on metrics and corresponding thresholds. Through optimized queries and visualizations, you can quickly identify the cascading impact of degraded system components and troubleshoot issues before an outage can occur.
+For a mission-critical workload, continuous monitoring of application components is essential to ensure that a decline in performance is caught early and to prevent outages. A well-designed health model gives you the monitoring you need by using metrics and thresholds. Through optimized queries and visualizations, you can quickly identify the cascading impact of degraded system components and troubleshoot problems before an outage can occur.
 
 ## Example scenario
 
-Contoso Shoes migrated its on-premises deployments to the cloud two years ago. Although they saw improvements in operations, it was challenging to keep their availability and uptime within the service-level agreement (SLA). Previous product launches resulted in outages because the system was unable to meet the demands from increased user load, causing significant financial loss. To prevent further avoidable outages, Contoso Shoes successfully applied the [principles of mission-critical architecture](/azure/architecture/framework/mission-critical/mission-critical-design-principles) in their main customer-facing application.
+Contoso Shoes migrated its on-premises deployments to the cloud two years ago. Although the company saw improvements in operations, the company struggled to keep its availability and uptime within its service-level agreement (SLA). Earlier product launches resulted in outages because the system couldn't meet the demands of an increased user load. The result was substantial financial loss.
 
-Going forward, Contoso Shoes needs to be ready for their next high-profile product launch, which is expected to generate a sizable spike in their website traffic. The organization has identified a gap in awareness of the health and availability of their internal web application. Contoso Shoes employees use this website to update the item catalog, which is then displayed on the main shop site. This existing application was designed according to the quality pillars of the [Microsoft Azure Well-Architected Framework](/azure/architecture/framework). The organization is looking to perform health modeling on this workload and develop queries and dashboards for better observability.
+To prevent further avoidable outages, Contoso Shoes successfully applied the [principles of mission-critical architecture](/azure/architecture/framework/mission-critical/mission-critical-design-principles) in its main customer-facing application.
+
+As Contoso Shoes prepares for its next high-profile product launch, the company has identified a gap in awareness of the health and availability of its internal web application. Contoso Shoes employees use this website to update the product catalog, which then appears on the store website. With increased traffic on the store website during a product launch, lack of monitoring and health in the internal web application might affect customers.
+
+The internal web application was designed according to the quality pillars of the [Microsoft Azure Well-Architected Framework](/azure/architecture/framework). The company is looking to perform health modeling on this workload and develop queries and dashboards to better observe application and component health.
 
 ## Learning objectives
 
 By the end of this module, you'll be able to:
 
-- Identify user flows and key application components of a given architecture
-- Build a layered health model of a given architecture
-- Identify key metrics and thresholds of the health model of a given architecture
-- Visualize the health model in a dashboard
+- Identify the user flows and key application components in an application architecture.
+- Identify key metrics to use as the foundation for an application health model.
+- Build a layered health model for an application.
+- Visualize the health model in a dashboard.
 
 ## What is the main goal?
 
@@ -21,10 +25,10 @@ By the end of this module, you'll have demonstrated your ability to design a hea
 
 ## What will you do?
 
-- Design a multi-layered health model structure for an internal employee application
-- Build a health model and visualize the observability data an operational dashboard
-- Design queries and a health endpoint in the application to check the health at the API level and its dependencies
+- Design a multi-layered health model structure for an internal web application.
+- Build a health model and visualize observability data in an operational dashboard.
+- Design queries and a health endpoint in the application to check the application's health and its dependencies at the API level.
 
 > [!IMPORTANT]
 >
-> The exercises do not cover all aspects of health modeling for mission-critical workloads. After you complete this module, you're encouraged to continue exploring health modeling principles given in [Health modeling for mission-critical workloads](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-health-modeling), so that you have a complete perspective for your own designs.
+> The exercises don't cover all aspects of health modeling for mission-critical workloads. After you complete this module, you're encouraged to continue exploring health modeling principles in [Health modeling for mission-critical workloads](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-health-modeling), so you have a complete perspective for your own health modeling designs.
