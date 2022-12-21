@@ -18,7 +18,7 @@ Keep in mind that the data sources and visualizations in this tutorial are just 
     - In the **Resource type** field, select **Subscriptions**.
     - In the **Subscriptions** field, select the **Subscription** resource parameter. You'll see a list of all of the Azure resources in the subscription.
 
-        :::image type="content" source="../media/5-resource-health-query.png" alt-text="Screenshot that shows a resource health query in Azure workbooks. ":::
+        :::image type="content" source="../media/5-resource-health-query.png" alt-text="Screenshot that shows a resource health query in Azure workbooks.":::
 
 1. To group the resources by Availability state:
     - Select **Column settings** at the top of the control.
@@ -29,7 +29,7 @@ Keep in mind that the data sources and visualizations in this tutorial are just 
 
     Your workbook now has a chart that lists all of the Azure resources in the subscription, grouped by availability.
 
-    :::image type="content" source="../media/5-resource-health-query-grouped.png" alt-text="Screenshot that shows an Azure Workbook with resources grouped by availability. "::: 
+    :::image type="content" source="../media/5-resource-health-query-grouped.png" alt-text="Screenshot that shows an Azure Workbook with resources grouped by availability."::: 
 
 ## Add a visualization that shows the CPU usage of your virtual machines
 

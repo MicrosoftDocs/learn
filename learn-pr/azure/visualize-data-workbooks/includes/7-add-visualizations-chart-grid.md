@@ -2,7 +2,7 @@ In this exercise, we're going to take things one step further. Instead of just h
 
 We're going to create graphs to show the requests, CPU time, and request unit consumption in the web app and the Cosmos DB. The graph uses combined metrics from the web application and the database.
 
-We're going to combine data using queries that get data from these sources:
+We're going to combine data using Log Analytics queries that get data from these sources:
 
 - the Web app
 - the Cosmos DB
@@ -27,9 +27,9 @@ Then we'll add a metric that monitors the application.
 
     :::image type="content" source="../media/7-app-service-tasks.png" alt-text="Screenshot that shows tasks for the app service for workbooks learn module.":::
 
-## Add two graphs that compare data
+## Add graphs to compare the volume of requests
 
-In this exercise, we are going to put two graphs side by side to compare the number of requests sent to the web app and to the Cosmos DB.
+We're going to generate two graphs to place side by side to compare the number of requests sent to the web app and to the Cosmos DB.
 
 In your workbook, select **Edit** from the top toolbar.
 
@@ -128,15 +128,11 @@ In your workbook, select **Edit** from the top toolbar.
 
         :::image type="content" source="../media/7-web-app-request-metric.png" alt-text="Screenshot that shows the metric settings for the number of requests made to a web app in Azure Workbooks.":::
 
-1. Select **Style** on the top of this window, and enter these settings:
-
-    - Select the **Make this item a custom width** checkbox.
-    - Leave the **Percent width** and **Maximum width** at their default values of 50 and 100.
-
-1. Select **Advanced settings**, and enter a name for the chart in the **Chart title** field, such as "Web app number of requests" .
+1. To make sure that the graphs display side by side, select **Style** on the top of the window, and then select the **Make this item a custom width** checkbox. Make sure that the **Percent width** is set to 50%.
+1. Select **Advanced settings**, and enter a name for the chart in the **Chart title** field, such as "Web app number of requests".
 1. Select **Done editing**. You now have a graph displaying the number of requests sent to your web app.
 
-    :::image type="content" source="../media/7-one-chart-requests.png" alt-text="Screenshot that shows one graph in an Azure Workbooks.":::
+    :::image type="content" source="../media/7-one-chart-requests.png" alt-text="Screenshot that shows one graph in an Azure Workbook.":::
 
 1. Select **Add** and **Add metric**.
 1. Enter these settings for the metric:
@@ -150,13 +146,123 @@ In your workbook, select **Edit** from the top toolbar.
     - In the Metrics field, select **Total Requests**.
     - In the Aggregation field, select **Count**.
     - Select **Save**.
-1. Select **Style** on the top of this window, and enter these settings:
-
-    - Select the **Make this item a custom width** checkbox.
-    - Leave the **Percent width** and **Maximum width** at their default values of 50 and 100.
-
-1. Select **Advanced settings**, and enter a name for the chart in the **Chart title** field, such as "Cosmos DB total requests" .
+1. To make sure that the graphs display side by side, select **Style** on the top of the window, and then select the **Make this item a custom width** checkbox. Make sure that the **Percent width** is set to 50%.
+1. Select **Advanced settings**, and enter a name for the chart in the **Chart title** field, such as "Cosmos DB total requests".
 1. Select **Done editing**. You now have two side by side graphs displaying the number of requests sent to your web app and your database.
 
-    :::image type="content" source="../media/7-two-charts-requests.png" alt-text="Screenshot that shows two graphs in an Azure Workbooks.":::
+    :::image type="content" source="../media/7-two-charts-requests.png" alt-text="Screenshot that shows two graphs in an Azure Workbook.":::
 
+## Add graphs to compare the volume of operations
+
+We're going to use Log Analytics queries to generate two graphs that we'll place side by side to compare the number and types of requests sent to the web app and to the Cosmos DB.
+
+In your workbook, select **Edit** from the top toolbar.
+
+1. Add a query for the number of requests per operation. Select **Add**, and then select **Add query**.
+
+    - In the **Data source** field, select **Logs**.
+    - In the **Resource type** field, select **Log Analytics**.
+    - In the **Log Analytics workspace** field, select the **Log Analytics** parameter.
+    - In the **Time Range** field, select the **TimeRange** parameter.
+    - Enter this Log query:
+
+        ```azurecli
+          AppRequests
+        | summarize RequestsCount=sum(ItemCount) by OperationName, _ResourceId
+        | order by RequestsCount desc
+        ```
+
+        :::image type="content" source="../media/7-operations-request-query.png" alt-text="Screenshot that shows a query in an Azure Workbooks.":::
+
+1. We're going to use the rendering settings to make the chart easy to understand visually.
+1. Select **Column settings**, and then in the **Columns** section on the left, select **Operation Name**, and then enter these settings.
+
+    - In the **Column name** field, enter (or leave the default name) "OperationName".
+    - In the **Column renderer** field, select **Thresholds**.
+    - In the **Thresholds** section, select **Colors**, and then add these thresholds:
+
+        |Operator  |Value  | Color | Text|
+        |---------|---------|---------|---------|
+        |contains    |  Create     | Orange | {0}{1}|
+        |contains    |  Delete     | Red (Bright) | {0}{1}|
+        |contains    |  Edit     | Blue (Light) | {0}{1}|
+        |Default    |       | Green | {0}{1}|
+
+        :::image type="content" source="../media/7-column-color-settings.png" alt-text="Screenshot that shows setting the colors in a grid in Azure Workbooks.":::
+
+1. In the **Columns** section on the left, select **_ResourceId**, and then in the **Column renderer** field, select **Hidden**.
+1. In the **Columns** section on the left, select **ResourceCount**, and then enter these settings:
+
+    - In the **Column name** field, enter (or leave the default name) "RequestCount".
+    - In the **Column renderer** field, select **Bar**.
+    - In the **Color palette** section, select **Blue**.**
+    - Select **Save and Close**.
+1. To make sure that the graphs display side by side, select **Style** on the top of the window, and then select the **Make this item a custom width** checkbox. Make sure that the **Percent width** is set to 50%.
+1. Select **Advanced settings**, and enter a name for the chart in the **Chart title** field, such as "Web App Operations".
+1. Select **Done editing**. Your workbook now has a color-coded graph showing the types of operations sent to your web app and the number of each type of request.
+
+    :::image type="content" source="../media/7-web-app-operations-chart.png" alt-text="Screenshot that shows a bar chart with the number of requests per operation for a web app.":::
+
+1. Now we're going to add a visualization for the number of requests for the Cosmos DB. 
+1. Select **Edit** next to the parameter control we just added, and then select **Add** and **Add metric**.
+1. Enter these settings for the metric:
+
+    - In the **Resource Type** field, select **Azure Cosmos DB account**.
+    - In the **App Service** field, select the **CosmosDB** parameter.
+    - In the **Time Range** field, select the **TimeRange** parameter.
+    - In the **Visualization** field, select **Grid**.
+1. Select **Add metric**, and enter these settings:
+
+    - In the Namespace field, select **Azure Cosmos DB account standard metrics**.
+    - In the Metrics field, select **Total Requests**.
+    - In the Aggregation field, select **Count**.
+    - In the **Split** field, select **None**.
+    - Select **Save**.
+
+        :::image type="content" source="../media/7-cosmos-db-metric-grid-settings1.png" alt-text="Screenshot that shows a query in an Azure Workbooks.":::
+
+1. Add another metric. Select **Add** and **Add metric**, and enter these settings:
+
+    - In the Namespace field, select **Azure Cosmos DB account standard metrics**.
+    - In the Metrics field, select **Total Requests**.
+    - In the Aggregation field, select **Count**.
+    - In the **Split by** field, select **OperationType**.
+    - In the **Sort by** field, select **Descending**.
+    - In the **Number of splits** field, select **5**.
+    - In the **Display Name** field, enter "Operations".
+    - Select **Save**.
+
+        :::image type="content" source="../media/7-cosmos-db-metric-grid-settings2.png" alt-text="Screenshot that shows a query in an Azure Workbooks.":::
+
+1. We're going to use the rendering settings to make the chart easy to understand visually.
+1. Select **Column settings**, and then in the **Columns** section on the left, select **microsoft.documentsdb/databaseaccounts-Requests-TotalRequests**, and then enter these settings.
+
+    - In the **Column renderer** field, select **Heatmap**.
+    - In the **Color palette** field, select **Blue**.
+    - Select **Custom formatting**.
+        - In the **Units** field, select **Count**.
+        - In the **Style** field, select **Decimal**.
+
+        :::image type="content" source="../media/7-cosmos-db-heatmap-settings.png" alt-text="Screenshot that shows setting the colors in a grid in Azure Workbooks.":::
+
+1. In the **Columns** section on the left, select **microsoft.documentsdb/databaseaccounts-Requests-TotalRequests Timeline (Hidden)**, and then enter these settings:
+
+    - In the **Column Label** field, enter (or leave the default name) "Total Requests (Count)".
+    - In the **Column renderer** field, select **Heatmap**.
+    - In the **Color palette** field, select **Blue**.
+
+1. In the **Columns** section on the left, select ***/Operations$ (Text)**, and then enter these settings:
+
+    - In the **Column Label** field, enter (or leave the default name) "Total Requests (Count)".
+    - In the **Column renderer** field, select **Heatmap**.
+    - In the **Color palette** field, select **Blue**.
+    - Select **Custom formatting**.
+        - In the **Units** field, select **Count**.
+        - In the **Style** field, select **Decimal**.
+    - Select **Save and Close**.
+
+1. To make sure that the graphs display side by side, select **Style** on the top of the window, and then select the **Make this item a custom width** checkbox. Make sure that the **Percent width** is set to 50%.
+1. Select **Advanced settings**, and enter a name for the chart in the **Chart title** field, such as "Cosmos DB Operations".
+1. Select **Done editing**. Your workbook now has two color coded graphs showing the numbers and types of requests sent to your web app and your Cosmos DB.
+
+    :::image type="content" source="../media/7-final-workbook-grids.png" alt-text="Screenshot that shows two side by side grids in Azure Workbooks.":::
