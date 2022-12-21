@@ -100,13 +100,13 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep -location westus3
 
 ::: zone-end
 
-You're prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters when you execute the deployment.
+You're prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword` parameters when you execute the deployment.
 
 > [!TIP]
 > When you enter the secure parameters, the values you choose must follow certain rules:
 > 
 > - `sqlServerAdministratorLogin` must not be an easily guessable login name such as `admin` or `root`. It can contain only alphanumeric characters and must start with a letter.
-> - `sqlServerAdministratorPassword` must be at least eight characters long and include lowercase letters, uppercase letters, numbers, and symbols. For more information about password complexity, see the [SQL Azure password policy](/sql/relational-databases/security/password-policy#password-complexity).
+> - `sqlServerAdministratorLoginPassword` must be at least eight characters long and include lowercase letters, uppercase letters, numbers, and symbols. For more information about password complexity, see the [SQL Azure password policy](/sql/relational-databases/security/password-policy#password-complexity).
 >
 > If the parameter values don't meet the requirements, Azure SQL won't deploy your logical server.
 > 
