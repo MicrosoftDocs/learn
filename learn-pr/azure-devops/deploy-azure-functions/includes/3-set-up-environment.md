@@ -61,7 +61,7 @@ The modules in this learning path form a progression as you follow the Tailspin 
 
 ## Assign a work item and move it to the Doing state
 
-Here, you'll assign a work item to yourself on Azure DevOps Boards and set the work item state to **Doing**. In practice, you and your team would create work items at the start of each *sprint*, or work iteration.
+Here, you'll assign a work item to yourself on Azure Boards and set the work item state to **Doing**. In practice, you and your team would create work items at the start of each *sprint*, or work iteration.
 
 This exercise creates a checklist from which to work. It gives other team members visibility into what you're working on and how much work is left. The work item also helps enforce work-in-progress (WIP) limits so that the team doesn't take on too much work at one time.
 
@@ -145,7 +145,7 @@ Here, you'll create Bash variables to make the setup process more convenient and
     resourceSuffix=$RANDOM
     ```
 
-1. Create three globally unique names for your App Service, Azure Function, and storage accounts. These commands use double quotes, which instructs Bash to resolve the variables using inline syntax.
+1. Create three globally unique names for your App Service, Azure Function, and storage accounts. These commands use double quotes, which instruct Bash to resolve the variables using inline syntax.
 
     ```bash
     webName="tailspin-space-game-web-${resourceSuffix}"
