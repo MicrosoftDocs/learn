@@ -1,4 +1,4 @@
-**Continuous Validation (CV)** is one of the concepts of the **Azure Mission-Critical** design methodology that helps to ensure that a mission-critical solution stays operational even when failures and exceptional situations. This is done by testing changes and releases in an environment under production-like conditions such as load and by injecting faults to test the workloads resiliency and measures to handle faults.
+**Continuous Validation (CV)** is one of the concepts of the **Azure Mission-Critical** design methodology that helps to ensure that a mission-critical solution stays operational even when failures and exceptional situations occur. This is done by testing changes and releases in a controlled environment under production-like conditions such as sustained user load and by injecting faults to test the workloads resiliency and measures to handle faults.
 
 Continuous Validation is implemented as a set of processes and tools, embedded into a pipeline or workflow to enable developers and ops teams to do CV on a regular basis for example prior to every release or major code changes and helps to ensure a solution's performance and resiliency before it gets rolled out to production.
 
@@ -8,7 +8,7 @@ In Continuous Validation, you:
 - Define tests based on user and system flows and their expected performance
 - Establish baselines for different scenarios and stages
 - Evaluate and adjust baselines and thresholds on a regular basis
-- Implement automated Continious Validation pipelines
+- Implement automated Continuous Validation pipelines
 
 Microsoft Azure provides the following services to implement load testing and chaos engineering:
 
