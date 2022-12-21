@@ -1,33 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.data-ai.implement-data-streaming-with-asa
 metadata:
-  title: Implement a Data Streaming Solution with Azure Streaming Analytics
-  description: Implement a Data Streaming Solution with Azure Streaming Analytics
-  ms.date: 01/06/2022
+  title: Implement a Data Streaming Solution with Azure Stream Analytics
+  description: Implement a Data Streaming Solution with Azure Stream Analytics
+  ms.date: 12/13/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Implement a Data Streaming Solution with Azure Streaming Analytics
+title: Implement a Data Streaming Solution with Azure Stream Analytics
 prerequisites: |
-  None
+  Before starting this learning path, you should have a fundamental understanding of cloud computing and data analytics.
 summary: |
-  Learn the concepts of event processing and streaming data and how this applies to Azure Stream Analytics. You will then set up a stream analytics job to stream data, and learn how to manage and monitor a running job.
+  Stream processing enables you to capture and analyze data in real-time. Azure Stream Analytics is a cloud-based stream processing engine that you can use to build highly scalable real-time analytics solutions.
 iconUrl: /training/achievements/data-ai/implement-data-streaming-with-asa-trophy.svg
 levels:
 - beginner
 roles:
+- data-analyst
 - data-engineer
 products:
-- azure
-- azure-portal
-- azure-storage
 - azure-stream-analytics
+- azure-synapse-analytics
+- power-bi
 subjects:
-- serverless-compute
+- data-analytics
+- data-engineering
 modules:
 - learn.data-ai.introduction-to-data-streaming
-- learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs
-- learn.wwl.ingest-data-streams-with-azure-stream-analytics
+- learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse
+- learn.wwl.visualize-real-time-data-azure-stream-analytics-power-bi
 trophy:
   uid: learn.data-ai.implement-data-streaming-with-asa.trophy

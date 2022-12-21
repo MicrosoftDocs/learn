@@ -3,7 +3,7 @@ uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db
 metadata:
   title: Implement Azure Synapse Link with Azure Cosmos DB
   description: "Implement Azure Synapse Link with Azure Cosmos DB"
-  ms.date: 10/17/2022
+  ms.date: 12/19/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ prerequisites: |
   Before starting this module, you should have a basic knowledge of Azure Cosmos DB and Azure Synapse Analytics. Consider completing the following modules first:
   - [Explore fundamentals of Azure Cosmos DB](/learn/modules/explore-non-relational-data-stores-azure?azure-portal=true)
   - [Explore fundamentals of large-scale data warehousing](/learn/modules/examine-components-of-modern-data-warehouse?azure-portal=true)
-iconUrl: /learn/achievements/configure-azure-synapse-link-with-azure-cosmos-db.svg
+iconUrl: /training/achievements/configure-azure-synapse-link-with-azure-cosmos-db.svg
 levels:
 - intermediate
 roles:

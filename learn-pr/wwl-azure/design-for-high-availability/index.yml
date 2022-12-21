@@ -3,7 +3,7 @@ uid: learn.wwl.design-for-high-availability
 metadata:
   title: Design for high availability
   description: "Design for high availability"
-  ms.date: 11/16/2022
+  ms.date: 12/16/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - Working experience with designing highly available architectures.
   - Conceptual knowledge of high availability for applications, databases, and compute resources.
-iconUrl: /learn/achievements/availability-design.svg
+iconUrl: /training/achievements/availability-design.svg
 levels:
 - advanced
 roles:

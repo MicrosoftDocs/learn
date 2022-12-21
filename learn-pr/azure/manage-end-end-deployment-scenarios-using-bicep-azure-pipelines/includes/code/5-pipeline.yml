@@ -12,7 +12,7 @@ stages:
 - stage: Build
   jobs:
   # Build the Visual Studio solution.
-  - template : pipeline-templates/build.yml
+  - template: pipeline-templates/build.yml
 
   # Lint the Bicep file.
   - template: pipeline-templates/lint.yml
