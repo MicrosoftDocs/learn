@@ -13,7 +13,6 @@ Now based on the business needs of your organization, you should be able to mana
 
 - [Azure Private 5G Core documentation](/azure/private-5g-core/)
 - [Azure Private 5G Core product information](https://azure.microsoft.com/products/private-5g-core/)
-- [Azure Monitor documentation](/azure/azure-monitor/overview)
-- [Azure Monitor REST API documentation](/rest/api/monitor/)
+- [ARM template documentation](/azure/azure-resource-manager/templates/)
 - [Introduction to 5G](https://www.linkedin.com/learning/introduction-to-5g)
 - [Introduction to 4G Mobile Communications](https://ieeexplore.ieee.org/document/9100268)
