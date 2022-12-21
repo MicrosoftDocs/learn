@@ -8,7 +8,7 @@ In Continuous Validation, you:
 - Define tests based on user and system flows and their expected performance
 - Establish baselines for different scenarios and stages
 - Evaluate and adjust baselines and thresholds on a regular basis
-- Implement automated Continious Validation pipelines
+- Implement automated Continuous Validation pipelines
 
 Microsoft Azure provides the following services to implement load testing and chaos engineering:
 
