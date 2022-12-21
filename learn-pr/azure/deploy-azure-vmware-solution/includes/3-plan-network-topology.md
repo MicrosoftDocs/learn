@@ -47,17 +47,16 @@ If you leave the virtual network blank, you'll have to create a virtual network 
 There are two types of interconnectivity for Azure VMware Solution:
 
 - **Basic interconnectivity**: Azure VMware Solution connects to an Azure virtual network by using an ExpressRoute connection that deploys with the resource. The Azure VMware Solution-provided ExpressRoute circuit establishes connectivity to and from the Azure VMware Solution private cloud for other Azure services, like Azure Monitor and Microsoft Defender for Cloud.
-- **Full interconnectivity**: This connectivity model extends the basic interconnectivity implementation to include interconnectivity between on-premises and Azure VMware Solution private clouds. This connection is configured via a customer-provided ExpressRoute circuit. You can use an existing circuit or purchase a new one.
+- **Full interconnectivity**: This connectivity model extends the basic interconnectivity implementation to include interconnectivity between on-premises and Azure VMware Solution private clouds. This connection can be configured via a customer-provided ExpressRoute circuit, among other methods. You can use an existing circuit or purchase a new one.
 
-ExpressRoute Global Reach must be enabled to route traffic to and from the on-premises environment to the Azure VMware Solution private cloud. The customer-provided ExpressRoute circuit is not a part of the Azure VMware Solution private-cloud deployment. All gateways involved with the deployment must support 4-byte autonomous system number (ASN). An ASN is a unique identifier that is globally available and allows its autonomous system to exchange routing information with other systems. All routes between the on-premises environment and Azure are advertised via the industry-standard Border Gateway Protocol (BGP).
+ExpressRoute Global Reach must be enabled to route traffic to and from the on-premises environment to the Azure VMware Solution private cloud. The customer-provided ExpressRoute circuit is not a part of the Azure VMware Solution private-cloud deployment. 
 
 ## Prerequisites for ExpressRoute Global Reach
 
 There are a few prerequisites before you configure ExpressRoute Global Reach.
 
-- The Azure VMware Solution ExpressRoute circuit needs established connectivity to and from Azure within the Azure VMware Solution private cloud.
 - A separate, customer-provided ExpressRoute circuit is required. This circuit is used to connect on-premises environments to Azure.
-- A /29 non-overlapping network-address block is required for ExpressRoute Global Reach peering.
+- If you are an AVS customer and need Global Reach, a /29 non-overlapping network-address block is required for ExpressRoute Global Reach peering.
 - All gateways, including the ExpressRoute provider's service, must support 4-byte ASN. Azure VMware Solution uses 4-byte public ASNs for advertising network routes.
 
 ## Required network ports
