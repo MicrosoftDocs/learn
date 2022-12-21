@@ -28,7 +28,7 @@ During the process, you'll:
 
    ::: code language="bicep" source="code/3-template.bicep" range="1-16, 27-29, 32-47" :::
 
-   Notice that all of the parameters include `@description` decorators, which helps to make them easier to work with. Also notice that the `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword` parameters have the `@secure` decorator applied to them. This tells Bicep that these parameter values are sensitive. Azure doesn't print sensitive values to logs.
+   Notice that all of the parameters include `@description` decorators, which help to make them easier to work with. Also notice that the `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword` parameters have the `@secure` decorator applied to them. This tells Bicep that these parameter values are sensitive. Azure doesn't print sensitive values to logs.
 
 ## Add a storage account
 
