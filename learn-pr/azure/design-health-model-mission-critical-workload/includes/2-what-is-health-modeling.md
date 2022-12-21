@@ -1,4 +1,4 @@
-You can use health modeling to quickly identify and resolve reliability issues in your application. Health modeling focuses on thorough instrumentation and monitoring, but it adds a layer of context to give you critical insight into your application's health.
+You can use health modeling to quickly identify and resolve reliability issues in your application. Health modeling focuses on thorough instrumentation and monitoring, but it also adds a layer of context to give you critical insight into your application's health.
 
 ## Problem context
 
@@ -10,7 +10,7 @@ Health modeling maximizes observability by augmenting raw data logs and metrics 
 
 To help you determine whether your environment is working as expected, it's important to monitor your application's health and the key metrics of the Azure resources it uses. To understand these metrics and evaluate the overall health of your workload, you need a holistic understanding of all monitored data. A health model can help you evaluate overall application health by displaying a clear indication of the health of the workload instead of only raw data metrics.
 
-Using set indicators to represent health status makes it intuitive for an operator to understand the overall health of the workload and to respond quickly to any issues that might arise. Health status typically is presented by using *traffic light* indicators, such as green, yellow, and red.
+Using set indicators to represent health status makes it intuitive to understand the overall health of the workload and to respond quickly to any issues that might arise. Health status typically is presented by using *traffic light* indicators, such as green, yellow, and red.
 
 ## Layered health model
 
@@ -27,7 +27,7 @@ In a layered health model:
 
 For more information about layered health models, see [Layered application health](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#layered-application-health). Also, see an [example of a layered health model](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#example---layered-health-model).
 
-## Who's responsible for health modeling?
+## Who is responsible for health modeling?
 
 Users who work in any of the following roles typically design and use a health model:
 
