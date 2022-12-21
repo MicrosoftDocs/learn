@@ -16,7 +16,7 @@ The following questions should be asked initially and reevaluated on a regular b
 
 These questions need to be translated into tests and thresholds. A "written down" baseline helps to analyze and evaluate the performance of the overall solution and its components in a consistent way and identify changes and drifts.
 
-With [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing), you can evaluate the expected thresholds. The builtin *test criteria* capability, allows you to specify certain criteria that a load test needs to pass. You can use this capability to implement different baselines.
+With [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing), you can evaluate the expected thresholds. The built-in *test criteria* capability, allows you to specify certain criteria that a load test needs to pass. You can use this capability to implement different baselines.
 
 ![Diagram showing sample test criteria.](../media/deployment-testing-test-criteria.png)
 

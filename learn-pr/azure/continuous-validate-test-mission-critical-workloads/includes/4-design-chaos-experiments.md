@@ -72,3 +72,5 @@ The following is an example for a Cosmos DB failover that will be running for 10
 After the experiment ends, Chaos Studio switches the write region back to its original value.
 
 Before you can inject a fault against an Azure resource, our Cosmos DB resource must first have corresponding **targets and capabilities** enabled. [Targets and capabilities](/azure/chaos-studio/chaos-studio-targets-capabilities) control which resources are enabled for fault injection and which faults can run against those resources. Using targets and capabilities along with other security measures you can avoid accidental or malicious fault injection with Chaos Studio.
+
+_Remember to only target a non-production environment with your experiments!_ While it is desirable to get to a state where you can confidently also inject faults into your production environment, this requires a lot of experience, rigor and planning.
