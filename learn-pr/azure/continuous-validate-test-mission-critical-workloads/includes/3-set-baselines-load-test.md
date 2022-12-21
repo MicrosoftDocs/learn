@@ -61,7 +61,7 @@ When you run your tests, there might be different requirements for special situa
 Typical scenarios are:
 
 - High load situations where scale-out is expected and required which might result in a temporary performance degradation till the scale-out operation was completed
-- Chaos experiments as part of a CV pipeline where a higher error rate can be expected till resiliency measures kick in to self-heal the application or failover to another region
+- Chaos experiments as part of a CV pipeline where a higher error rate can be expected till resiliency measures kick in to self-heal the application or fail over to another region
 
 ## Set up baselines
 

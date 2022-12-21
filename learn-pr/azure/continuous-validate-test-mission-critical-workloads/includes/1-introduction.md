@@ -32,7 +32,7 @@ Contoso Shoes management has decided that it's critical for its customers to:
 
 ## Architecture
 
-The following diagram shows the architecture of the application. Ensure you have a good understanding of the individual components and their role within the functionality of the system.
+The following diagram shows the architecture of the application. Ensure you've a good understanding of the individual components and their role within the functionality of the system.
 
 ![Diagram showing the architecture for the Contoso Shoes application.](../media/contoso-shoes-architecture.png)
 
