@@ -27,6 +27,7 @@ roles:
 - business-user
 products: 
 - azure
+- bonsai
 subjects:
 - artificial-intelligence
 units:
