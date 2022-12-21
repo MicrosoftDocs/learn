@@ -19,7 +19,7 @@ Permissions Management gives you visibility to discover and assess permissions r
 - Permissions usage analytics provide a multi-dimensional view of permissions risk for all identities, actions, and resources across AWS, Azure and GCP.
 - The Permissions Creep Index (PCI) allows you to easily assess risk by evaluating the gap between permissions granted and permissions used. PCI is an aggregated metric that regularly evaluates the level of risk associated with the number of unused or excessive permissions across identities and resources. It also measures how much damage identities might cause based on which resources they have access to.
 
-![Gif of Permissions Management dashboard](../media/uidashboard.gif)
+![Gif of Permissions Management dashboard](../media/ui-dashboard.gif)
 ### Remediate & Manage ###
 
 Permissions Management evaluates and creates right-size permissions based on usage, grants new permissions on-demand, and automates just-in-time access for cloud resources.
@@ -28,7 +28,7 @@ Permissions Management evaluates and creates right-size permissions based on usa
 - Automated deletion provides efficiency of security with automatic removal of permissions that have been unused for the past 90 days.
 - Grant identity permissions on-demand with a self-service workflow for a limited time period or an as-needed basis.
 
-![Gif of Permissions Management role policy creation](../media/uipolicy-creation.gif)
+![Gif of Permissions Management role policy creation](../media/ui-policy-creation.gif)
 ### Monitor & Alert ###
 
 Detect anomalous activities with machine language-powered (ML-powered) alerts and generate detailed forensic reports.
@@ -37,7 +37,7 @@ Detect anomalous activities with machine language-powered (ML-powered) alerts an
 - Context-rich forensic reports show information on identities, actions, and resources to support rapid investigation and remediation.
 - Integration of the Defender for Cloud dashboard empowers you to manage the security of all cloud resources in one interface.
 
-![Gif of Permissions Management creating alerts](../media/uialerts.gif)
+![Gif of Permissions Management creating alerts](../media/ui-alerts.gif)
 
 ### Minimize permission risks with Permissions Management ###
 
