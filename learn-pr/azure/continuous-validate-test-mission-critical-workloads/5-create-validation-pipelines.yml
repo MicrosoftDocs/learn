@@ -16,11 +16,25 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "Do Azure Load Testing and Azure Chaos Studio require Azure Pipelines to be automated?"
+  - content: "How can a load test and chaos experiments be executed and orchestrated?"
     choices:
-    - content: "Yes"
+    - content: "Manually via the Portal"
       isCorrect: false
-      explanation: ""
-    - content: "No"
+      explanation: "Incorrect. This is technically possible but not the recommended way. Continuous Validation benefits from being used frequently and therefore should the process be automated and easily accessible for all developers."
+    - content: "Embedded into a pipeline or workflow"
       isCorrect: true
-      explanation: ""
+      explanation: "Correct. This is the recommended way. Load tests and chaos experiments should be embedded into a pipeline and made accessible easily for all developers."
+    - content: "Chaos and Load testing cannot run in parallel."
+      isCorrect: false
+      explanation: "Incorrect. Chaos experiments and load tests can be executed in parallel and the process can and should be automated."
+  - content: "What needs to be done after a failed load test?"
+    choices:
+    - content: "Nothing"
+      isCorrect: false
+      explanation: "Incorrect. The results of a failed load test run should be analyzed and the baseline be adjusted if needed."
+    - content: "Use a different load test tool"
+      isCorrect: false
+      explanation: "Incorrect. A failed load test is an indicator for issues introduced as part of recent changes, issues with the underlying platform or a baseline and thresholds that need to be adjusted."
+    - content: "Analyze the result and take action"
+      isCorrect: true
+      explanation: "Correct. A failed load test is an indicator for issues introduced as part of recent changes, issues with the underlying platform or a baseline and thresholds that need to be adjusted."
