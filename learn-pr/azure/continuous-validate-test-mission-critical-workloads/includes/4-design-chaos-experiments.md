@@ -2,7 +2,7 @@ Chaos engineering is a methodology that can improve your service's resiliency an
 
 [Azure Chaos Studio](/azure/chaos-studio/chaos-studio-overview) is a service that uses chaos engineering to help you measure, understand, and improve your cloud application and service resilience. Chaos engineering is a methodology by which you inject real-world faults into your application to run controlled fault injection experiments.
 
-# Failure Mode Analysis
+## Failure mode analysis
 
 When you design a chaos experiment, the first step is what is called the **failure mode analysis**. It is a "paper exercise" in which you think of possible failures scenarios that each of these components could encounter.
 
