@@ -1,6 +1,6 @@
-Enterprises usually use its private mobile networks to host various UEs. Each UE uses a SIM or eSIM to identify itself to the network.
+Enterprises usually use their private mobile networks to host various UEs. Each UE uses a SIM or eSIM to identify itself to the network.
 
-To effectively manage the network traffic between the UEs and the data networks (DNs), Azure Private 5G Core allows you to define SIM polices that'll be applied to the SIMs. SIM polices ensure that the network requirements of each UE are satisfied and the packet flows from each device are appropriately controlled.
+To effectively manage the network traffic between the UEs and the data networks (DNs), Azure Private 5G Core allows you to define SIM policies that will be applied to the SIMs. SIM policies ensure that the network requirements of each UE are satisfied and the packet flows from each device are appropriately controlled.
 
 Azure Private 5G Core also allows you to define services, which are sets of rules for network traffic handling. With separately defined services and SIM policies, you'll have the flexibility to reuse a service in one or more SIM policies.
 
@@ -49,7 +49,7 @@ For more information about controlling the network traffic in a private mobile n
 
 ## Manage services and SIM policies
 
-Before starting to use UEs in your private mobile network, you'll need to define SIM polices and assign them to UEs appropriately. You can also use the [default service](/azure/private-5g-core/default-service-sim-policy) and SIM policy that you create when you first create a private mobile network.
+Before starting to use UEs in your private mobile network, you'll need to define SIM policies and assign them to UEs appropriately. You can also use the [default service](/azure/private-5g-core/default-service-sim-policy) and SIM policy that you create when you first create a private mobile network.
 
 ### Design policy control configuration
 
@@ -68,13 +68,13 @@ For details, see [Policy control](/azure/private-5g-core/policy-control).
 
 Services are representations of a particular set of QoS information that you want to offer to UEs. For example, you may want to configure a service that provides higher bandwidth limits for particular traffic.
 
-To create a new service, take the following steps:
+To create a new service, take these steps:
 
 1. Collect all the [configuration values](/azure/private-5g-core/collect-required-information-for-service) for the service.
 1. Open the Mobile Network resource representing the private mobile network for which you want to create the service.
 1. Select **Services** from the resource menu and then select the **Create** button.
 
-   The **Create a service** screen is displayed, as shown below:
+   The **Create a service** screen is displayed, as shown in the following screenshot:
 
    :::image type="content" source="../media/sim-create-a-service.png" alt-text="A screenshot showing an example service creation screen." border="true":::
 
@@ -82,7 +82,7 @@ To create a new service, take the following steps:
 
    To configure the data flow policy rules you want to use for this service, select the **Add a policy rule** button to add a rule. You can add multiple policy rules for a service.
 
-To modify or delete an existing service, take the following steps:
+To modify or delete an existing service, take these steps:
 
 1. Open the **Mobile Network** resource representing the private mobile network for which you want to modify or delete the service.
 1. Select **Services** from the resource menu.
@@ -97,13 +97,13 @@ For detailed instructions on configuring a service, see [Configure a service for
 
 A SIM policy defines a set of interoperability settings that can be assigned to one or more SIMs. It also defines the default QoS settings for any services that use the policy. You'll need to assign a SIM policy to a SIM before the UE using that SIM can access the private mobile network.
 
-To create a new SIM policy, take the following steps:
+To create a new SIM policy, take these steps:
 
 1. Collect all the [configuration values](/azure/private-5g-core/collect-required-information-for-sim-policy) for the policy.
 1. Open the **Mobile Network** resource representing the private mobile network for which you want to create the service.
 1. Select **SIM policies** from the resource menu and then select the **Create** button.
 
-   The **Create a SIM policy** screen is displayed, as shown below:
+   The **Create a SIM policy** screen is displayed, as shown in the following screenshot:
 
    :::image type="content" source="../media/sim-create-a-sim-policy.png" alt-text="A screenshot showing an example SIM policy creation screen." border="true":::
 
@@ -114,7 +114,7 @@ To create a new SIM policy, take the following steps:
 > [!TIP]
 > At the end of the SIM policy creation process, you can optionally assign this SIM policy to one or more existing provisioned SIMs.
 
-To modify or delete an existing SIM policy, take the following steps:
+To modify or delete an existing SIM policy, take these steps:
 
 1. Open the **Mobile Network** resource representing the private mobile network for which you want to modify or delete the SIM policy.
 1. Select **SIM policies** from the resource menu.
@@ -127,7 +127,7 @@ For detailed instructions on configuring a SIM policy through the Azure portal, 
 
 ### Configure a service and a SIM policy through an ARM template
 
-If you are familiar with ARM templates, you can create an ARM template that specifies the services and SIM policies you want to create, and then use the template to create all the resources in one go.
+If you're familiar with ARM templates, you can create an ARM template that specifies the services and SIM policies you want to create, and then use the template to create all the resources in one go.
 
 From the [Azure Private 5G Core REST API](/rest/api/mobilenetwork/) document, you can get a list of fields that you need to specify for a service or a SIM policy. Because the Resource Manager converts a template into REST API operations when you deploy the template, the parameters in the API requests are the same as the fields in the ARM template. For example, for a service, you can find information about the `servicePrecedence` field in the Azure REST API article [Services - Create or update](/rest/api/mobilenetwork/services/create-or-update).
 

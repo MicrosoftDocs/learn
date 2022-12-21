@@ -25,12 +25,12 @@ For each slice, you need to configure the following fields:
 
   Valid values are 0 to 16777216. For example, while two slices may both have `1` (eMBB) as the value of its service type, their slice differentiators are different, with one being `1` and the other being `2`, which identifies each slice uniquely.
 
-For more information about these fields, refer to relevant 5G standards.
+For more information about these fields, see the documentation for relevant 5G standards.
 
 To add or modify a slice for an existing private mobile network, take these steps:
 
 1. On the Azure portal, open the **Mobile Network** resource representing the private mobile network.
-1. Go to the slice details screen, as shown below:
+1. Go to the slice details screen, as shown in the following screenshot:
 
    :::image type="content" source="../media/slice-details.png" alt-text="A screenshot that shows an example slice details screen." border="true":::
 
@@ -57,7 +57,7 @@ To modify the packet core instance in a site, take these steps:
 1. Select the **Packet Core Control Plane** resource and open it.
 1. On the **Overview** screen, select **Modify packet core**.
 
-   The **Configuration** screen is displayed, as shown below:
+   The **Configuration** screen is displayed, as shown in the following screenshot:
 
    :::image type="content" source="../media/modify-packet-core-configuration.png" alt-text="A screenshot that shows an example packet core configuration screen." border="true":::
 
@@ -89,7 +89,7 @@ A typical decommission process is as follows:
       >
       > You can delete multiple sites in a mobile network in a single operation.
 
-   1. Select the **Delete** button and then confirm you deletion.
+   1. Select the **Delete** button and then confirm your deletion.
 
       When you delete a site, Azure Private 5G Core automatically detects and deletes all the dependent resources.
 

@@ -1,4 +1,4 @@
-To use the latest features that Azure Private 5G Core offers and to maintain the support you need for your private mobile network, consider upgrading the packet core instances in your network periodically.
+To use the latest features that Azure Private 5G Core offers and maintain the support you need for your private mobile network, consider upgrading the packet core instances in your network periodically.
 
 When a new version is available, Azure Private 5G Core displays a message for the relevant **Packet Core Control Plane** resource through the Azure portal, reminding you of the upgrade. The network functions of a site won't be available when you upgrade the packet core instance of the site, so [plan your upgrade](#plan-to-upgrade-a-packet-core-instance) carefully before starting the upgrade process.
 
@@ -34,29 +34,29 @@ Follow these guidelines when you do the planning:
 
 ## Upgrade a packet core instance
 
-To upgrade a packet core instance, take the following steps:
+To upgrade a packet core instance, take these steps:
 
 1. Back up necessary deployment information.
 1. Open the **Packet Core Control Plan** resource representing the packet core instance that you want to upgrade.
 1. Select the **Upgrade version** button.
 
-   The **Upgrade packet core version** box is displayed on the right, as shown below:
+   The **Upgrade packet core version** box is displayed, as shown in the following screenshot:
 
    :::image type="content" source="../media/upgrade-packet-core-version.png" alt-text="A screenshot that displays the Upgrade packet core version box." border="true":::
 
 1. Select the version to which you want to upgrade and then select **Modify**.
 1. Once the upgrade is done, restore the backed-up deployment information as necessary.
-1. Follow you test plan to make sure your network works as expected after the upgrade.
+1. Follow your test plan to make sure your network works as expected after the upgrade.
 
 For detailed instructions, see [Upgrade the packet core instance in a site](/azure/private-5g-core/upgrade-packet-core-azure-portal).
 
-If you are familiar with ARM templates, you can also use an ARM template to upgrade a packet core instance. The article [Upgrade the packet core instance in a site - ARM template](/azure/private-5g-core/upgrade-packet-core-arm-template) describes an example ARM template that you can use.
+If you're familiar with ARM templates, you can also use an ARM template to upgrade a packet core instance. The article [Upgrade the packet core instance in a site - ARM template](/azure/private-5g-core/upgrade-packet-core-arm-template) describes an example ARM template that you can use.
 
 ## Roll back a packet core instance
 
 If you encountered issues after an upgrade, you can roll back the packet core instance to a previous version.
 
-The rollback process is the same as the upgrade process. You just need to select a lower version to which you want to rollback. Similar to the upgrade process, you'll need to do similar [planning](#plan-to-upgrade-a-packet-core-instance). For example, if you made any configuration changes for the new version of the packet core, you will need to do necessary backup before the rollback.
+The rollback process is the same as the upgrade process. You just need to select a lower version to which you want to roll back. Similar to the upgrade process, you'll need to do similar [planning](#plan-to-upgrade-a-packet-core-instance). For example, if you made any configuration changes for the new version of the packet core, you'll need to do necessary backup before the rollback.
 
 For detailed instructions, see [Upgrade the packet core instance in a site](/azure/private-5g-core/upgrade-packet-core-azure-portal).
 
@@ -64,15 +64,15 @@ For detailed instructions, see [Upgrade the packet core instance in a site](/azu
 
 If you're experiencing issues with your deployment, reinstalling the packet core may help return it to a good state.
 
-When you reinstall a packet core instance, Azure Private 5G Core first uninstall the current instance, and install a new instance.
+When you reinstall a packet core instance, Azure Private 5G Core first uninstalls the current instance, and installs a new instance.
 
-To reinstall a packet core instance, follow the instructions for [planning](#plan-to-upgrade-a-packet-core-instance) and [performing](#upgrade-a-packet-core-instance) an upgrade. The only difference from the upgrade process is that instead of the the **Upgrade version** button, you'll need to select the **Reinstall packet core** button, as shown below:
+To reinstall a packet core instance, follow the instructions for [planning](#plan-to-upgrade-a-packet-core-instance) and [performing](#upgrade-a-packet-core-instance) an upgrade. The only difference from the upgrade process is that instead of the **Upgrade version** button, you'll need to select the **Reinstall packet core** button, as shown in the following screenshot:
 
-:::image type="content" source="../media/reinstall-packet-core.png" alt-text="A screenshot that shows the Reinstall packe core button." border="true":::
+:::image type="content" source="../media/reinstall-packet-core.png" alt-text="A screenshot that shows the Reinstall packet core button." border="true":::
 
 ## Upgrade the underlying system
 
-If a new version of the packet core instance to which you want to upgrade requires a new version of the underlying system, such as Azure Stack Edge (ASE), you'll need to upgrade the ASE before upgrading the packet core instance. The release notes of Azure Private 5G Core provides more information about this version dependency.
+If a new version of the packet core to which you want to upgrade requires a new version of Azure Stack Edge (ASE), you'll need to upgrade the ASE before upgrading the packet core instance. The release notes of Azure Private 5G Core provide more information about this version dependency.
 
 When you upgrade ASE, the Azure Kubernetes services running on the ASE will be automatically upgraded.
 

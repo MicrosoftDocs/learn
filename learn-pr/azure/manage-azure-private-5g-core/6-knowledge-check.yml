@@ -17,13 +17,13 @@ quiz:
     choices:
     - content: "The **Packet Core Control Plane** resource that represents the packet core instance."
       isCorrect: true
-      explanation: "Correct. To modify a packet core instance through the Azure portal, you'll need to open the relevant **Packet Core Control Plane** resource and then select **Modify packet core**."
+      explanation: "Correct. To modify a packet core instance through the Azure portal, you'll need to open the relevant **Packet Core Control Plane** resource, and then select **Modify packet core**."
     - content: "The packet core dashboards."
       isCorrect: false
       explanation: "Try again. The packet core dashboards are for monitoring a packet core instance locally, but they can't be used to modify the packet core instance."
     - content: "The platform metrics."
       isCorrect: false
-      explanation: "Try again. The platform metrics are for monitoring the a packet core instance through the Azure portal. They can't be used to modify the packet core instance."
+      explanation: "Try again. The platform metrics are for monitoring a packet core instance through the Azure portal. They can't be used to modify the packet core instance."
   - content: "How to control the network traffic for UEs attached to a private mobile network that Azure Private 5G Core powers?"
     choices:
     - content: "Define traffic control rules in ASE."
@@ -56,15 +56,15 @@ quiz:
       explanation: "Try again. SIM groups aren't used for IP address allocation. Instead, the relevant packet core instance(s) will be used."
     - content: "The SIMs must be assigned a SIM policy that has a static IP address."
       isCorrect: false
-      explanation: "Try again. SIM policies aren't assigned IP addresses. They are mainly for network traffic control."
+      explanation: "Try again. SIM policies aren't assigned IP addresses. They're mainly for network traffic control."
   - content: "How should a packet core instance be upgraded?"
     choices:
     - content: "Upgrade the ASE that hosts the packet core instance."
       isCorrect: false
-      explanation: "Try again. A new version of the packet core may require the underlying ASE to be upgraded, but a packet core instance won't be automatically upgraded if its underlying ASE is upgraded."
+      explanation: "Try again. A new version of the packet core may require the underlying ASE to be upgraded. However, a packet core instance won't be automatically upgraded if its underlying ASE is upgraded."
     - content: "Upgrade the Azure Kubernetes Service (AKS) that hosts the packet core instance."
       isCorrect: false
-      explanation: "Try again. Upgrading the AKS won't automatically upgrades the packet core instance it hosts."
+      explanation: "Try again. Upgrading the AKS won't automatically upgrade the packet core instance it hosts."
     - content: "Open the **Packet Core Control Plan** resource representing the packet core instance and then select **Upgrade version**."
       isCorrect: true
       explanation: "Correct. You can use the **Packet Core Control Plan** resource representing the packet core instance to upgrade the instance through the Azure portal."
