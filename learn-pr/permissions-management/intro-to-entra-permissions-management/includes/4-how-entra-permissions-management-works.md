@@ -50,7 +50,7 @@ This interactive video will help you to become more familiar with what securing 
 
 The Permissions Management architecture is composed of data processing and analytics and data collection that create a SaaS structure.
 
-:::image type="content" source="../media/epm_architecture.png" alt-text="Screen with Entra Permissions Management architecture."lightbox="../media/epm_architecture.png":::
+:::image type="content" source="../media/epm-architecture.png" alt-text="Screen with Entra Permissions Management architecture."lightbox="../media/epm-architecture.png":::
 
 #### SaaS Service ####
 
