@@ -18,6 +18,13 @@ When you design a chaos experiment, the first step is what is called the **failu
 | **SNAT port exhaustion**             | [Source NAT port exhaustion](/azure/app-service/troubleshoot-intermittent-outbound-connection-errors) is a common scenario on App Services when no more outbound connection can be created. The problem manifests in downstream calls failing, for instance to the database. Could for example be mitigated by the use of Private Endpoints, but as of today Contoso shoes has not implemented them for all the components.                      |
 | **Individual instance becoming unhealthy** | Due to various reasons such as memory exhaustion, bad downstream requests etc., individual App Service instances might become unhealthy. Any user traffic that gets routed to such an instance might see poor performance or fail entirely. We have already configured the App Service Health Check feature which should determine such instances automatically and replace them with new, healthy ones. |
 
+### Checkout Azure Function
+
+| **Risk**                   | **Impact/Mitigation/Comment**                |
+| -------------------------------------------- | ------------------------------------------------------------ |
+| **Slow (cold) start performance**     | Azure Functions on Consumption plan do not have performance guarantees when it comes to startup of new instances. Thus, due to high demand on the service ("noisy neighbors"), our checkout function might experience long startup duration which will impact our performance targets. Azure Functions Premium SKU would solve this issue but have not been implemented by Contoso Shoes at the moment.                    |
+| **Underlying storage outage**             | Azure Functions require an Azure Storage Account to work correctly. If that storage account becomes unavailable, we expect the Function to also not work correctly anymore.                       |
+
 ### Cosmos DB
 
 | **Risk**                   | **Impact/Mitigation/Comment**                |
