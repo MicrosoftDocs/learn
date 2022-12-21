@@ -2,7 +2,7 @@ Chaos engineering is a methodology that can improve your service's resiliency an
 
 [Azure Chaos Studio](/azure/chaos-studio/chaos-studio-overview) is a service that uses chaos engineering to help you measure, understand, and improve your cloud application and service resilience. Chaos engineering is a methodology by which you inject real-world faults into your application to run controlled fault injection experiments.
 
-# Failure Mode Analysis
+## Failure mode analysis
 
 When you design a chaos experiment, the first step is what is called the **failure mode analysis**. It is a "paper exercise" in which you think of possible failures scenarios that each of these components could encounter.
 
@@ -15,7 +15,7 @@ When you design a chaos experiment, the first step is what is called the **failu
 | **Risk**                   | **Impact/Mitigation/Comment**                |
 | -------------------------------------------- | ------------------------------------------------------------ |
 | **Availability Zone outage**     | If an Availability Zone encounters an outage, the App Service instances in that zone might become unavailable. Since we have enable zonal redundancy on the App Service plan, we expect to not see a full outage. However, we need to cater for the additional load on the remaining instances. So there should be enough head room to cater for this scenario while still achieving our performance targets.                     |
-| **SNAT port exhaustion**             | [Source NAT port exhaustion](/azure/app-service/troubleshoot-intermittent-outbound-connection-errors) is a common scenario on App Services when no more outbound connection can be created. The problem manifests in downstream calls failing, for instance to the database. Could for example be mitigated by the use of Private Endpoints, but as of today Contoso shoes has not implemented them for all the components.                      |
+| **SNAT port exhaustion**             | [Source NAT port exhaustion](/azure/app-service/troubleshoot-intermittent-outbound-connection-errors) is a common scenario on App Services when no more outbound connection can be created. The problem manifests in downstream calls failing, for instance to the database. Could for example be mitigated by the use of Private Endpoints, but as of today Contoso Shoes has not implemented them for all the components.                      |
 | **Individual instance becoming unhealthy** | Due to various reasons such as memory exhaustion, bad downstream requests etc., individual App Service instances might become unhealthy. Any user traffic that gets routed to such an instance might see poor performance or fail entirely. We have already configured the App Service Health Check feature which should determine such instances automatically and replace them with new, healthy ones. |
 
 ### Checkout Azure Function

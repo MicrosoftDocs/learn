@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "Manually via the Portal"
       isCorrect: false
-      explanation: "Incorrect. While this is technically correct is this not the recommended way. Continuous Validation benefits from being used frequently and therefore should the process be automated and easily accessible for all developers."
+      explanation: "Incorrect. This is technically possible but not the recommended way. Continuous Validation benefits from being used frequently and therefore should the process be automated and easily accessible for all developers."
     - content: "Embedded into a pipeline or workflow"
       isCorrect: true
       explanation: "Correct. This is the recommended way. Load tests and chaos experiments should be embedded into a pipeline and made accessible easily for all developers."
