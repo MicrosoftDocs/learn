@@ -62,7 +62,7 @@ The VMware software versions used in new deployments of private-cloud clusters i
 | vSAN                         |    7.0 U3c   |
 | vSAN on-disk format          |    10        |
 | HCX                          |    4.4.2     |
-| VMware NSX-T Data Center <br />**NOTE:** VMware NSX-T Data Center is the only supported version of NSX Data Center.               |      [[!INCLUDE [nsxt-version](nsxt-version.md)]](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.1/rn/VMware-NSX-T-Data-Center-312-Release-Notes.html)     |
+| VMware NSX-T Data Center <br />**NOTE:** VMware NSX-T Data Center is the only supported version of NSX Data Center.               |      3.1.2     |
 
 NSX-T is the only supported version of NSX. When new clusters are added to an existing private cloud, the currently running software version is applied. 
 
