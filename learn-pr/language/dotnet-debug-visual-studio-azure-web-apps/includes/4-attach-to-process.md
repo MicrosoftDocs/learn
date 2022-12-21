@@ -9,7 +9,7 @@ Make sure you have completed the following steps in Visual Studio before debuggi
 
 1) First, make sure you have successfully built your project at least one time. A successful build ensures the source code and any necessary compiled files are ready to go. If your application is running locally, make sure to stop the app.
 
-1) Navigate to **Debug -> Options** from the top Visual Studio menu. Make sure that "Enable Just My code** is unchecked, and then select **OK**. 
+1) Navigate to **Debug -> Options** from the top Visual Studio menu. Make sure that **Enable Just My code** is unchecked, and then select **OK**.
 
     Changing this setting allows Visual Studio to debug the optimized code that was deployed to Azure using the necessary symbol files from your local bin folder. Symbol files are used by the debugger as a bridge between compiled, executing code and the source code in Visual Studio, which is why it's important that your local source code matched the deploy app.
 
