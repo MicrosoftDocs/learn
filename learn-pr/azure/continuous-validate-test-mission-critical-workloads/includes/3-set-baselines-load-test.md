@@ -1,4 +1,4 @@
-In the previous unit we've learned what user and system flows are, that an application usually consists of several user and system flows and that not all of them have the same requirements in regards to performance and availability.
+In the previous unit we've learned what user and system flows are, that an application usually consists of several user and system flows and that not all of them have the same requirements regarding performance and availability.
 
 - For example, in the checkout user flow, the average page load duration of each checkout step should be less than 500 milliseconds, when up to 100 concurrent users are using the checkout at the same time.
 
@@ -6,7 +6,7 @@ In the previous unit we've learned what user and system flows are, that an appli
 
 During the development phase, the performance of components and resource requirements are often not clearly known or understood. Load Testing can help to identify the expected performance of the overall solution and its components. This includes the scale-out behavior, and the thresholds to expect for building your baseline.
 
-The following questions should be asked initially and reevaluated on a regular basis:
+The following questions should be asked initially and reevaluated regularly:
 
 - How long does an individual request take?
 - How many requests/operations/concurrent users per second can a component serve?
