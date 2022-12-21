@@ -24,6 +24,8 @@ Follow these steps to design a load test, based on our checkout example:
 
 1. Use the threshold values to define a load test that generates realistic traffic for testing application performance, validating expected scale operations, and so on. Use these same threshold values to develop a health model for the application for both testing and production.
 
+It is highly recommended that the load test reflects every relevant user and system flow.
+
 ## Implement load test validation
 
 Microsoft Azure provides [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing) as a managed service for you to implement load testing.
