@@ -1,6 +1,6 @@
-Contoso Shoes is an online shoe store that wants to add health modeling to its internal web application and develop queries and dashboards for better observability of potential problems. Contoso Shoes migrated its deployments from an on-premises environment to the cloud two years ago to improve operations. The company has successfully applied the principles of mission-critical architecture so that its main customer-facing application is now mission-critical.
+Contoso Shoes is an online shoe store that wants to add health modeling to its internal web application and develop queries and dashboards for better observability of potential problems. Contoso Shoes migrated its deployments from an on-premises environment to the cloud two years ago to improve operations. The company has successfully applied the principles of mission-critical architecture so that its main customer-facing web application is now mission-critical.
 
-In this module, you created the foundation of a health model for the defined architecture:
+In this module, you created the foundation of a health model for the defined architecture of an internal web application that supports the Contoso Shoes store website:
 
 - You identified two user flows for Contoso Shoes: *List catalog items* and *Add comment*.
 - You identified key application components and built a layered health model.

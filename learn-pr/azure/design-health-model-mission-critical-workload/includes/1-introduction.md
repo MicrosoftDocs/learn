@@ -6,7 +6,7 @@ A well-designed application health model uses metrics and thresholds to give you
 
 Contoso Shoes migrated its deployments from an on-premises environment to the cloud two years ago. Although the company saw improvements in operations, keeping its availability and uptime within its service-level agreement continued to be a challenge. Earlier product launches resulted in outages and financial loss because the system couldn't meet the demands of increased user load.
 
-To prevent further avoidable outages, Contoso Shoes successfully applied the [principles of mission-critical architecture](/azure/architecture/framework/mission-critical/mission-critical-design-principles) in its main customer-facing application, the store website.
+To prevent further avoidable outages, Contoso Shoes successfully applied the [design principles of a mission-critical workload](/azure/architecture/framework/mission-critical/mission-critical-design-principles) in its main customer-facing web application, the store website.
 
 As Contoso Shoes prepares for its next high-profile product launch, the company has identified a gap in awareness of the health and availability of its internal web application. Contoso Shoes employees use the internal web application to update the product catalog, which customers then interact with on the store website. With increased traffic on the store website during a product launch, insufficient monitoring and knowledge about the health in the internal web application might affect customers.
 

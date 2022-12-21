@@ -2,7 +2,7 @@ To accurately represent a health model, you must gather various datasets from th
 
 ## Instrumenting code and infrastructure
 
-A *unified data sink* is required to ensure that all operational data is stored and available in a single location where all telemetry is collected. Azure provides several data monitoring technologies in [Azure Monitor](/azure-monitor/overview#overview).
+A *unified data sink* is required to ensure that all operational data is stored and available in a single location where all telemetry is collected. Azure provides several data monitoring technologies in [Azure Monitor](/azure/azure-monitor/overview#overview).
 
 Azure Monitor Log Analytics serves as the core Azure-native unified data sink to store and analyze operational data:
 
