@@ -1,13 +1,21 @@
-Continuous validation is set of processes and tools, set up within a continuous integration and continuous deployment (CI/CD) pipeline and monitoring system, that you use to ensure a solution's performance at deployment time. For a mission-critical workload, using continuous validation in a test environment that emulates the production environment helps to ensure that a solution stays operational even when failures occur.
+**Continuous Validation (CV)** is one of the concepts of the **Azure Mission-Critical** design methodology that helps to ensure that a mission-critical solution stays operational even when failures and exceptional situations. This is done by testing changes and releases in an environment under production-like conditions such as load and by injecting faults to test the workloads resiliency and measures to handle faults.
 
-In continuous validation, you:
+Continuous Validation is implemented as a set of processes and tools, embedded into a pipeline or workflow to enable developers and ops teams to do CV on a regular basis for example prior to every release or major code changes and helps to ensure a solution's performance and resiliency before it gets rolled out to production.
 
-- Define tests based on expected thresholds.
-- Implement validation. Microsoft Azure provides the following services to implement load testing and chaos engineering. To validate the impact of application changes under realistic conditions at any time of the development cycle, you can run these two services simultaneously by embedding them in an Azure DevOps CI/CD pipeline:
-  - [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing). This service generates synthetic traffic to the application.
-  - [Azure Chaos Studio](/azure/chaos-studio/chaos-studio-overview). This service uses chaos engineering to systematically inject failures into key components of the application.
+In Continuous Validation, you:
 
-- Establish a baseline. Adjust the thresholds for regular runs to verify that the application continues to provide the expected performance and doesn't produce any errors. Use Azure Load Testing to specify certain criteria that a test needs to pass to implement different baselines.
+- Run tests under production-like conditions
+- Define tests based on user and system flows and their expected performance
+- Establish baselines for different scenarios and stages
+- Evaluate and adjust baselines and thresholds on a regular basis
+- Implement automated Continious Validation pipelines
+
+Microsoft Azure provides the following services to implement load testing and chaos engineering:
+
+- [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing) is a managed service used to generate synthetic traffic to test the application and underlying infrastructure and services.
+- [Azure Chaos Studio](/azure/chaos-studio/chaos-studio-overview) is a managed service that provides chaos engineering capabilities to systematically inject failures into key components of the application.
+
+To validate the impact of application changes under realistic conditions at any time of the development cycle, you can run these two services simultaneously by embedding them in an Azure DevOps CI/CD pipeline.
 
 ## Example scenario
 
