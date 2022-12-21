@@ -172,7 +172,7 @@ In your workbook, select **Edit** from the top toolbar.
         | order by RequestsCount desc
         ```
 
-        :::image type="content" source="../media/7-operations-request-query.png" alt-text="Screenshot that shows a query in an Azure Workbooks.":::
+        :::image type="content" source="../media/7-operations-request-query.png" alt-text="Screenshot that shows a query for the number of requests to a web app in an Azure Workbooks.":::
 
 1. We're going to use the rendering settings to make the chart easy to understand visually.
 1. Select **Column settings**, and then in the **Columns** section on the left, select **Operation Name**, and then enter these settings.
@@ -219,7 +219,7 @@ In your workbook, select **Edit** from the top toolbar.
     - In the **Split** field, select **None**.
     - Select **Save**.
 
-        :::image type="content" source="../media/7-cosmos-db-metric-grid-settings1.png" alt-text="Screenshot that shows a query in an Azure Workbooks.":::
+        :::image type="content" source="../media/7-cosmos-db-metric-grid-settings1.png" alt-text="Screenshot that shows a query for the number of requests to a database in an Azure Workbook.":::
 
 1. Add another metric. Select **Add** and **Add metric**, and enter these settings:
 
@@ -232,7 +232,7 @@ In your workbook, select **Edit** from the top toolbar.
     - In the **Display Name** field, enter "Operations".
     - Select **Save**.
 
-        :::image type="content" source="../media/7-cosmos-db-metric-grid-settings2.png" alt-text="Screenshot that shows a query in an Azure Workbooks.":::
+        :::image type="content" source="../media/7-cosmos-db-metric-grid-settings2.png" alt-text="Screenshot that shows a query with results split into columns in an Azure Workbook.":::
 
 1. We're going to use the rendering settings to make the chart easy to understand visually.
 1. Select **Column settings**, and then in the **Columns** section on the left, select **microsoft.documentsdb/databaseaccounts-Requests-TotalRequests**, and then enter these settings.
@@ -243,7 +243,7 @@ In your workbook, select **Edit** from the top toolbar.
         - In the **Units** field, select **Count**.
         - In the **Style** field, select **Decimal**.
 
-        :::image type="content" source="../media/7-cosmos-db-heatmap-settings.png" alt-text="Screenshot that shows setting the colors in a grid in Azure Workbooks.":::
+        :::image type="content" source="../media/7-cosmos-db-heatmap-settings.png" alt-text="Screenshot that shows setting the colors in a grid using the heatmap setting in Azure Workbooks.":::
 
 1. In the **Columns** section on the left, select **microsoft.documentsdb/databaseaccounts-Requests-TotalRequests Timeline (Hidden)**, and then enter these settings:
 
