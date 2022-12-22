@@ -23,7 +23,7 @@ quiz:
       explanation: "Azure resources are at the lowest level in the health model hierarchy."
     - content: "User flows"
       isCorrect: true
-      explanation: "User flows, such as *list catalog items* and *add comment*, are at the highest level of the health model hierarchy, just below the entire website."
+      explanation: "User flows, such as *List catalog items* and *Add comment*, are at the highest level of the health model hierarchy, just below the entire website."
     - content: "Application components"
       isCorrect: false
       explanation: "Application components, such as the background processor, are located at a middle level in the health model hierarchy."

@@ -56,7 +56,7 @@ Identifying user flows and building the health model is a conceptual exercise at
 
 Going from top to bottom in the layered health structure, think about what the *user flows* would be based on what you know about the application. Try to abstract the technical details and Azure services, and look at the user's perspective. What processes are critical? How do your employees use the application to achieve business goals?
 
-You should end up with at least two user flows in the top layer: *list catalog items* and *add comment*. If you can think of more, include them in your health model.
+You should end up with at least two user flows in the top layer: *List catalog items* and *Add comment*. If you can think of more, include them in your health model.
 
 ### Application components
 
