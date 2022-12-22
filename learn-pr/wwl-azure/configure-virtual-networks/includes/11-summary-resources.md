@@ -8,6 +8,8 @@ In this module, you examined Azure Virtual Network features and usage cases for 
 
 - Peruse [Azure Virtual Network documentation](/azure/virtual-network/).
 
+- Explore [Azure networking documentation](/azure/networking/).
+
 - Read about [public IP addresses for virtual networks](/azure/virtual-network/public-ip-addresses).
 
 - Read about [private IP addresses for virtual networks](/azure/virtual-network/private-ip-addresses).
