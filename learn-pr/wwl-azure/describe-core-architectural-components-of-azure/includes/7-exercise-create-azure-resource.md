@@ -26,8 +26,8 @@ In this task, you’ll create a virtual machine using the Azure portal.
 
 1. Select Review and Create.
 
-    > [!IMPORTANT]
-    > Product details will include a cost associated with creating the virtual machine. This is a system function. If you’re creating the VM in the Learn sandbox, you won’t actually incur any costs.
+> [!IMPORTANT]
+> Product details will include a cost associated with creating the virtual machine. This is a system function. If you’re creating the VM in the Learn sandbox, you won’t actually incur any costs.
 
 1. Select Create
 

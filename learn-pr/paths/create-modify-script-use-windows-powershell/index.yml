@@ -2,8 +2,8 @@
 uid: learn.wwl.create-modify-script-use-windows-powershell
 metadata:
   title: Create and modify scripts by using Windows PowerShell
-  description: Create and modify scripts by using Windows PowerShell
-  ms.date: 11/10/2022
+  description: This learning path explains how to create and modify scripts. It covers useful scripting techniques that include importing data from a file, accepting user input, and error handling.
+  ms.date: 12/21/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
