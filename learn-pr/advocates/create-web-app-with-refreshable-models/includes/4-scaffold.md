@@ -6,11 +6,11 @@ Before you begin, make sure you have the following software installed on your ma
 -   [The Vue CLI](https://cli.vuejs.org)
 
 > [!NOTE]
-> You will need Node and NPM available on your machine to work with the Vue CLI. You can also try the Vue UI, which is a GUI overlying the Vue CLI. Launch a GUI for the CLI by entering `vue ui`, and create your app in a more visual fashion.
+> You will need Node and npm available on your machine to work with the Vue CLI. You can also try the Vue UI, which is a GUI overlying the Vue CLI. Launch a GUI for the CLI by entering `vue ui`, and create your app in a more visual fashion.
 
 ## Scaffold your app
 
-After you have Node, NPM, and the Vue CLI installed, creating a new app is easy. Use `cd` to navigate to the folder where you want your code to go, open a command prompt or terminal, and enter:
+After you have Node, npm, and the Vue CLI installed, creating a new app is easy. Use `cd` to navigate to the folder where you want your code to go, open a command prompt or terminal, and enter:
 
 ```bash
     vue create this-or-that
@@ -39,7 +39,7 @@ In the Developer Tools, select **Audits**, and review the Lighthouse area of you
 
 ## Build the inference interface
 
-Now you need to build a very simple interface that will load an image against which the model can perform inference. The model will provide a score differentiating images by the level of certainty that it determines an image corresponds to a given label. In this case, we will provide some images of dalmatians and chocolate chip ice cream. You will train the model later.
+Now you need to build a very simple interface that will load an image against which the model can perform inference. The model will provide a score differentiating images by the level of certainty that it determines an image corresponds to a given label. In this case, we'll provide some images of dalmatians and chocolate chip ice cream. You'll train the model later.
 
 First, rename the file `HelloWorld.vue` in your codebase's `/src/components` folder to `DetectImage.vue`. Remove references to `HelloWorld` in `App.vue` as well. Now your `App.vue` file looks like this:
 
@@ -73,7 +73,7 @@ First, rename the file `HelloWorld.vue` in your codebase's `/src/components` fol
 </style>
 ```
 
-Create a folder in `/src/assets` called *images* to house the images you will use for inference. Extract [this zip file](https://github.com/MicrosoftDocs/mslearn-build-pwa-and-push-new-models-ad-hoc/raw/master/media/training%20images.zip) into that folder. This file includes seventeen images, including a blank one.
+Create a folder in `/src/assets` called *images* to house the images you'll use for inference. Extract [this zip file](https://github.com/MicrosoftDocs/mslearn-build-pwa-and-push-new-models-ad-hoc/raw/master/media/training%20images.zip) into that folder. This file includes seventeen images, including a blank one.
 
 These images are the ones Karen Zack used to create her dalmatians v ice cream collage.
 
@@ -163,4 +163,4 @@ h3 {
 </style>
 ```
 
-Now, you should be able to click through a gallery of 16 images, one after the other, starting with a blank one. Next, you need to build a model for use in this app.
+Now, you should be able to go through a gallery of 16 images, one after the other, starting with a blank one. Next, you need to build a model for use in this app.
