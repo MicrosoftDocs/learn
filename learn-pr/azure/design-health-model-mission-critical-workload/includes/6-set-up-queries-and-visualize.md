@@ -33,32 +33,30 @@ For individual services that calculate the health status, see the following samp
 The following sample demonstrates a [Catalog API query](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/CatalogServiceHealthStatus.kql):
 
 ```kusto
-let _maxAge = 2d; // Include data only from the last two days.
-let _timespanStart = ago(_maxAge); // Start time for the time span.
-let _timespanEnd = now(-2m); // There's some ingestion lag. We account for this by stripping the last 2m.
-// For the time frame, compare the averages to the following threshold values:
-let Thresholds=datatable(MetricName: string, YellowThreshold: double, RedThreshold: double) [
-    // Failed requests. Anything non-200. We allow a few more than 0 for user-caused errors like 404s. 
-    "failureCount", 10, 50,
-    // Average duration of the request, in ms
-    "avgProcessingTime", 150, 500
+
+let _maxAge = 2d; // Include data only from the last two days
+let _timespanStart = ago(_maxAge); // Start time for the time span
+let _timespanEnd = now(-2m); // Account for ingestion lag by stripping the last 2m
+    // For time frame, compare the averages to the following threshold values:
+let Thresholds=datatable(MetricName: string, YellowThreshold: double, RedThreshold: double) [ 
+    "failureCount", 10, 50, // Failed requests, anything non-200, allow a few more than 0 for user-caused errors like 404s
+    "avgProcessingTime", 150, 500 // Average duration of the request, in ms
     ];
-//
-// Calculate average processing time for each request.
+// Calculate average processing time for each request
 let avgProcessingTime = AppRequests
 | where AppRoleName startswith "CatalogService"
-| where OperationName != "GET /health/liveness" // Because the liveness requests don't do any processing, including them would skew the results. 
+| where OperationName != "GET /health/liveness" // Liveness requests don't do any processing, including them would skew the results
 | make-series Value = avg(DurationMs) default=0 on TimeGenerated from _timespanStart to _timespanEnd step 1m
 | mv-expand TimeGenerated, Value
 | extend TimeGenerated = todatetime(TimeGenerated), Value=toreal(Value), MetricName= 'avgProcessingTime';
 // Calculate failed requests
 let failureCount = AppRequests
-| where AppRoleName startswith "CatalogService"
-| where OperationName != "GET /health/liveness" // Because the liveness requests don't do any processing, including them would skew the results. 
+| where AppRoleName startswith "CatalogService" // Liveness requests don't do any processing, including them would skew the results
+| where OperationName != "GET /health/liveness"
 | make-series Value=countif(Success != true) default=0 on TimeGenerated from _timespanStart to _timespanEnd step 1m
 | mv-expand TimeGenerated, Value
 | extend TimeGenerated = todatetime(TimeGenerated), Value=toreal(Value), MetricName= 'failureCount';
-// Union all together and join with the thresholds.
+// Union all together and join with the thresholds
 avgProcessingTime
 | union failureCount
 | lookup kind = inner Thresholds on MetricName
@@ -73,30 +71,27 @@ avgProcessingTime
 The following sample demonstrates an [Azure Key Vault query](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/KeyvaultHealthStatus.kql):
 
 ```kusto
-let _maxAge = 2d; // Include data only from the last two days.
-let _timespanStart = ago(_maxAge); // Start time for the time span.
-let _timespanEnd = now(-2m); // There's some ingestion lag. We account for this by stripping the last 2m.
-//
+let _maxAge = 2d; // Include data only from the last two days
+let _timespanStart = ago(_maxAge); // Start time for the time span
+let _timespanEnd = now(-2m); // Account for ingestion lag by stripping the last 2m
+    // For time frame, compare the averages to the following threshold values:
 let Thresholds = datatable(MetricName: string, YellowThreshold: double, RedThreshold: double) [
-    // Failure count on key vault requests.
-    "failureCount", 3, 10
+    "failureCount", 3, 10 // Failure count on key vault requests
     ];
-//
 let failureStats = AzureDiagnostics
 | where TimeGenerated > _timespanStart
 | where ResourceProvider == "MICROSOFT.KEYVAULT"
-// Ignore authentication operations that have a 401. This is normal when using Key Vault SDK. First an unauthenticated request is made, and then the response is used for authentication.
+    // Ignore authentication operations that have a 401. This is normal when using Key Vault SDK. First an unauthenticated request is made, then the response is used for authentication:
 | where Category=="AuditEvent" and not (OperationName == "Authentication" and httpStatusCode_d == 401)
 | where OperationName in ('SecretGet','SecretList','VaultGet') or '*' in ('SecretGet','SecretList','VaultGet')
-| where ResultSignature != "Not Found" // Exclude Not Found responses because these happen regularly during 'Terraform plan' operations, when Terraform checks for the existence of secrets.
-// Create ResultStatus with all the 'success' results bucketed as 'Success'.
-// Certain operations like StorageAccountAutoSyncKey have no ResultSignature; for now, also set to 'Success'.
+    // Exclude Not Found responses because these happen regularly during 'Terraform plan' operations, when Terraform checks for the existence of secrets:
+| where ResultSignature != "Not Found"
+// Create ResultStatus with all the 'success' results bucketed as 'Success'
+// Certain operations like StorageAccountAutoSyncKey have no ResultSignature; for now, also set to 'Success'
 | extend ResultStatus = case ( ResultSignature == "", "Success",
                                ResultSignature == "OK", "Success",
                                ResultSignature == "Accepted", "Success",
                                ResultSignature);
-//
-//
 failureStats
 | make-series Value=countif(ResultStatus != "Success") default=0 on TimeGenerated from _timespanStart to _timespanEnd step 1m
 | mv-expand TimeGenerated, Value
@@ -118,7 +113,7 @@ CatalogServiceHealthStatus()
 | where TimeGenerated < ago(2m)
 | summarize YellowScore = max(IsYellow), RedScore = max(IsRed) by bin(TimeGenerated, 2m)
 | extend HealthScore = 1 - (YellowScore * 0.25) - (RedScore * 0.5)
-| extend ComponentName = "CatalogService", Dependencies="AKSCluster,Keyvault,EventHub" // These values are added to build the dependency visualization.
+| extend ComponentName = "CatalogService", Dependencies="AKSCluster,Keyvault,EventHub" // These values are added to build the dependency visualization
 | order by TimeGenerated desc
 ```
 
