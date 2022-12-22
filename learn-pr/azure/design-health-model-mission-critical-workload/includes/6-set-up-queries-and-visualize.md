@@ -37,7 +37,7 @@ The following sample demonstrates a [Catalog API query](https://github.com/Azure
 let _maxAge = 2d; // Include data only from the last two days
 let _timespanStart = ago(_maxAge); // Start time for the time span
 let _timespanEnd = now(-2m); // Account for ingestion lag by stripping the last 2m
-    // For time frame, compare the averages to the following threshold values:
+// For time frame, compare the averages to the following threshold values
 let Thresholds=datatable(MetricName: string, YellowThreshold: double, RedThreshold: double) [ 
     "failureCount", 10, 50, // Failed requests, anything non-200, allow a few more than 0 for user-caused errors like 404s
     "avgProcessingTime", 150, 500 // Average duration of the request, in ms
@@ -74,17 +74,17 @@ The following sample demonstrates an [Azure Key Vault query](https://github.com/
 let _maxAge = 2d; // Include data only from the last two days
 let _timespanStart = ago(_maxAge); // Start time for the time span
 let _timespanEnd = now(-2m); // Account for ingestion lag by stripping the last 2m
-    // For time frame, compare the averages to the following threshold values:
+// For time frame, compare the averages to the following threshold values
 let Thresholds = datatable(MetricName: string, YellowThreshold: double, RedThreshold: double) [
     "failureCount", 3, 10 // Failure count on key vault requests
     ];
 let failureStats = AzureDiagnostics
 | where TimeGenerated > _timespanStart
 | where ResourceProvider == "MICROSOFT.KEYVAULT"
-    // Ignore authentication operations that have a 401. This is normal when using Key Vault SDK. First an unauthenticated request is made, then the response is used for authentication:
+// Ignore authentication operations that have a 401. This is normal when using Key Vault SDK. First an unauthenticated request is made, then the response is used for authentication
 | where Category=="AuditEvent" and not (OperationName == "Authentication" and httpStatusCode_d == 401)
 | where OperationName in ('SecretGet','SecretList','VaultGet') or '*' in ('SecretGet','SecretList','VaultGet')
-    // Exclude Not Found responses because these happen regularly during 'Terraform plan' operations, when Terraform checks for the existence of secrets:
+// Exclude Not Found responses because these happen regularly during 'Terraform plan' operations, when Terraform checks for the existence of secrets
 | where ResultSignature != "Not Found"
 // Create ResultStatus with all the 'success' results bucketed as 'Success'
 // Certain operations like StorageAccountAutoSyncKey have no ResultSignature; for now, also set to 'Success'
