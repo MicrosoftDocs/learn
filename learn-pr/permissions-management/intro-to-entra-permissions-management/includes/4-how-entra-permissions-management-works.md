@@ -42,7 +42,7 @@ Detect anomalous activities with machine language-powered (ML-powered) alerts an
 ### Minimize permission risks with Permissions Management ###
 
 Now see some of these concepts and features of Permissions Management in action.
-> [!VIDEO <https://mslearn.cloudguides.com/guides/Minimize%20permission%20risks%20with%20Microsoft%20Entra%20Permissions%20Management>]
+> [![Video showing how to secure permissions in a multicloud environment](../media/interactive-video.png)](https://mslearn.cloudguides.com/guides/Minimize%20permission%20risks%20with%20Microsoft%20Entra%20Permissions%20Management "Permissions Management interactive video")
 
 This interactive video will help you to become more familiar with what securing permissions in your multicloud environment will look like with Microsoft Entra Permissions Management. Learn how, with Permissions Management, you can get granular cross-cloud visibility, enforce principle of least privilege, and continuously monitor permissions.
 
