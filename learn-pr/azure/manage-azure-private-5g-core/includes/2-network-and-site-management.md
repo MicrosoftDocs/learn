@@ -6,7 +6,7 @@ Azure Private 5G Core allows you to manage a private mobile network and its site
 
 An enterprise may attach different UEs to its private mobile network. Applications for different UEs may have different network requirements. For example, while video analysis applications for production line monitoring cameras may require high band-width, control applications for robot communication may require low latency.
 
-Azure Private 5G Core allows you to divide a private mobile network into multiple network slices, with each slice being a logical end-to-end network. You can configure unique [SIM policies](3-policy-control.md#using-services-and-sim-policies-for-network-traffic-control) for a slice, and then add relevant UEs to the slice. Each SIM policy specifies how the network traffic from relevant UEs should be controlled.
+Azure Private 5G Core allows you to divide a private mobile network into multiple network slices, with each slice being a logical end-to-end network. You can configure unique SIM policies for a slice, and then add relevant UEs to the slice. Each SIM policy specifies how the network traffic from relevant UEs should be controlled.
 
 You can create new slices when you set up a private mobile network or modify existing slices after the network setup.
 
