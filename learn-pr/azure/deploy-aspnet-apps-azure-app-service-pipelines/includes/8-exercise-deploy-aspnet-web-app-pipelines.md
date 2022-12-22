@@ -21,7 +21,7 @@ Now, it's time to configure the Azure Pipeline you used to provision Azure resou
 1. On the **azure-pipelines.yml** editor pane, in the **Tasks** section, in the **Search tasks** text box, enter **Download build artifacts**, and in the list of results, select the **Download build artifacts** task entry.
 1. On the **Download build artifacts** pane, in the **Artifact name**, enter **drop**, then select **Add**.
 
-   :::image type="content" source="../media/8-download-build-artifacts-task.png" alt-text="The azure-pipelines.yml editor pane including the download build artifacts task with its parameters set.":::
+   :::image type="content" source="../media/8-download-build-artifacts-task.png" alt-text="Screenshot of the azure-pipelines.yml editor pane including the download build artifacts task with its parameters set.":::
 
 1. On the **azure-pipelines.yml** editor pane, with the newly added task selected, select the **Tab** key twice to indent it.
 1. On the **azure-pipelines.yml** editor pane, replace the last line `downloadPath: '$(System.ArtifactsDirectory)'` of the newly added task with `downloadPath: '$(System.DefaultWorkingDirectory)'`
@@ -34,7 +34,7 @@ Now, it's time to configure the Azure Pipeline you used to provision Azure resou
 1. On the **Azure App Service deploy** pane, ensure that the **labAzureSubscription** appears in the **Azure subscription** drop-down list. In the **App Service name** drop-down list, enter **$(WEBAPPNAME)**, and select **Add**.
 
    > [!NOTE]
-   > This is one of the variables designating the name of the Azure App Service web app that's included in the **AzureResourcesVariableGroup** you created in the previous exercise of this module.
+   > This is one of the variables designating the name of the Azure App Service web app that's included in the **AzureResourcesVariableGroup** you created in the previous exercise.
 
 1. On the **azure-pipelines.yml** editor pane, with the newly added task selected, select the **Tab** key twice to indent it.
 1. On the **azure-pipelines.yml** editor pane, place the mouse cursor at the very end of the file and select the **Enter** key to start a new line.
@@ -52,9 +52,9 @@ Now, it's time to configure the Azure Pipeline you used to provision Azure resou
    ]
    ```
 
-   :::image type="content" source="../media/8-azure-app-service-settings-task.png" alt-text="The azure-pipelines.yml editor pane including the Azure App Service settings task with its parameters set.":::
+   :::image type="content" source="../media/8-azure-app-service-settings-task.png" alt-text="Screenshot of the azure-pipelines.yml editor pane including the Azure App Service settings task with its parameters set.":::
 
-1. On the **azure-pipelines.yml** editor pane, with the newly added task selected, select the **Tab** key twice to indent it.
+1. On the **azure-pipelines.yml** editor pane, with the newly added task selected, press the **Tab** key twice to indent it.
 
    > [!NOTE]
    > At this point, the pipeline should have content which resembles the following listing:
@@ -170,22 +170,22 @@ Now, it's time to configure the Azure Pipeline you used to provision Azure resou
 
 ## Run the Azure Pipeline to provision Azure resources
 
-With the new stage of the Azure Pipeline created, you can now invoke execution of its tasks. You can exclude the second stage, because the required Azure resources have already been provisioned in the previous exercise of this module.
+With the new stage of the Azure Pipeline created, you can now invoke execution of its tasks. You can exclude the second stage, because the required Azure resources have already been provisioned in the previous exercise.
 
 1. On the **azure-pipelines.yml** editor pane, select **Run**.
 1. On the **Run pipeline** pane, select **Stages to run**, on the **Stages to run** pane, clear the **DeployAzureResources** check box, and select **Use selected stages**.
 
-   :::image type="content" source="../media/8-stages-to-run.png" alt-text="The Stages to run pane with the deployazureresources stage check box cleared.":::
+   :::image type="content" source="../media/8-stages-to-run.png" alt-text="Screenshot of the Stages to run pane with the deployazureresources stage check box cleared.":::
 
 1. Back on the **Run pipeline** pane, select **Run**.
 1. On the pipeline run pane, note that the **DeployAzureResources** stage was skipped.
 
-   :::image type="content" source="../media/8-skipped-deployazureresources-stage.png" alt-text="The pipeline run pane with the build stage skipped.":::
+   :::image type="content" source="../media/8-skipped-deployazureresources-stage.png" alt-text="Screenshot of the pipeline run pane with the build stage skipped.":::
 
 1. On the pipeline run pane, in the **Stages** section, select the rectangle representing the **DeployASPNETApp** stage and track the progress of the pipeline execution for that stage.
 1. Verify that all tasks of the **DeployASPNETApp** stage completed successfully.
 
-:::image type="content" source="../media/8-completed-deployaspnetapp-job.png" alt-text="The Azure DevOps Pipeline job execution logs displaying a successfully completed DeployASPNETApp job.":::
+:::image type="content" source="../media/8-completed-deployaspnetapp-job.png" alt-text="Screenshot of the Azure DevOps Pipeline job execution logs displaying a successfully completed DeployASPNETApp job.":::
 
 ## Examine the outcome of the Azure Pipeline run
 
@@ -193,10 +193,10 @@ Verify that the sample ASP.NET web app has been successfully deployed to the Azu
 
 1. Switch to the web browser tab displaying the Azure portal.
 1. In the Azure portal, on the **aspdevops-rg** resource group blade, select the entry representing the App Service web app.
-1. On the App Service web app blade, select the **URL** link. This will automatically open a new web browser tab displaying the sample ASP.NET web app **Todos** interface.
-1. On the **Todos** page, select **Create New** and step through the process of creating a few **To do** entries.
+1. On the App Service web app blade, select the **URL** link. This will automatically open a new web browser tab displaying the sample ASP.NET web app **TodDos** interface.
+1. On the **ToDos** page, select **Create New** and step through the process of creating a few **To do** entries.
 
-:::image type="content" source="../media/8-todos-aspnet-app.png" alt-text="A web browser displaying the sample ASP.NET app deployed into an Azure web app.":::
+:::image type="content" source="../media/8-todos-aspnet-app.png" alt-text="Screenshot of a web browser displaying the sample ASP.NET app deployed into an Azure web app.":::
 
 ## Re-enable continuous integration
 
@@ -232,7 +232,7 @@ To conclude this exercise, you'll trigger integration and deployment by modifyin
 1. Within the web browser window displaying the Azure DevOps portal, switch to the web browser tab displaying the sample ASP.NET web app page.
 1. Refresh the web browser page and verify that the footer of the page changed according to the change you made in the GitHub repository.
 
-:::image type="content" source="../media/8-todos-azure-aspnet-app.png" alt-text="A web browser displaying the sample ASP.NET app deployed into an Azure web app following changes to the GitHub repo.":::
+:::image type="content" source="../media/8-todos-azure-aspnet-app.png" alt-text="Screenshot of a web browser displaying the sample ASP.NET app deployed into an Azure web app following changes to the GitHub repo.":::
 
 ## Results
 

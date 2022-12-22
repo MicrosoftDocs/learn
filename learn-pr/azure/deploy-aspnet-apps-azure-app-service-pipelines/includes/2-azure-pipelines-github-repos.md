@@ -2,7 +2,7 @@ DevOps has been an emerging trend in software lifecycle management over the past
 
 ## What are Azure Pipelines and GitHub repositories?
 
-To accomplish your objective, you're considering leveraging a mix of vendor-specific and open-source solutions. You've decided to focus on Azure DevOps and GitHub. Azure DevOps is a software-as-a-service (SaaS) offering from Microsoft that provides a range of different tools for developing and deploying software. Among them, Azure Pipelines drew your attention to perform software deployment in a language-, platform-, and cloud-agnostic manner. While Azure DevOps also offers Azure Repos, which provide cloud-hosted private and public code repositories, you've been a long-time GitHub user and would rather use it instead. Fortunately, Azure DevOps integrates with most common source-control products, including GitHub.
+To accomplish your objective, you're considering leveraging a mix of vendor-specific and open-source solutions. You've decided to focus on Azure DevOps and GitHub. Azure DevOps is a software-as-a-service (SaaS) offering from Microsoft that provides a range of different tools for developing and deploying software. Among them, Azure Pipelines drew your attention to perform software deployment in a language-, platform-, and cloud-agnostic manner. While Azure DevOps also offers Azure Repos, which provide cloud-hosted private and public code repositories, you've been a long-time GitHub user and would rather use that instead. Fortunately, Azure DevOps integrates with most common source-control products, including GitHub.
 
 Source control, also referred to as version control, is the practice of tracking and managing changes to code. Source-control management systems, such as GitHub, maintain a history of code updates and facilitate conflict resolution when merging changes from multiple sources. Source control is an essential tool for multi-developer projects, allowing individuals and teams to collaborate when developing software within the same code repository. At the same time, to accommodate separation between development efforts, source-control management systems allow for creation of different, independently tracked and maintained code repositories.
 
@@ -24,7 +24,7 @@ Continuous integration (CI) is the process of automating the build and testing o
 
 When authoring Azure Pipelines, you have a choice between using either the classic or the YAML-based approach:
 
-- With the classic approach, you rely on the visual designer included in the Azure DevOps web-based portal to define a build pipeline that builds your code, tests it, and publishes resulting artifacts. You also use a similar, graphical interface to define a release pipeline that consumes and deploys these artifacts to deployment targets. Neither of these pipelines resides in the code repository, but instead, they're hosted by Azure Pipelines.
+- With the classic approach, you rely on the visual designer included in the Azure DevOps web-based portal to define a build pipeline that builds your code, tests it, and publishes the resulting artifacts. You also use a similar graphical interface to define a release pipeline that consumes and deploys these artifacts to deployment targets. Neither of these pipelines resides in the code repository, but instead, they're hosted by Azure Pipelines.
 
     > [!NOTE]
     > When using the visual designer, you have the option of displaying the corresponding YAML content.
@@ -37,7 +37,7 @@ When authoring Azure Pipelines, you have a choice between using either the class
 ## What are the basic structure and components of an Azure pipeline?
 
 > [!NOTE]
-> This is not a comprehensive list of Azure Pipelines components. Its purpose is to introduce components that you'll be using throughout the exercises in this module.
+> This isn't a comprehensive list of Azure Pipelines components. Its purpose is to introduce components that you'll be using throughout the exercises in this module.
 
 Pipelines allow you to create a well-defined structure that represents the build, test, and deployment processes. At a high level, that structure consists of stages, jobs, and tasks. Each stage consists of one or more jobs, with each job including one or more tasks.
 
@@ -46,7 +46,7 @@ Pipelines allow you to create a well-defined structure that represents the build
 When you plan a pipeline, you usually begin by identifying its stages. Typically, a stage maps to an environment, but this isn't required. In the context of Azure Pipelines, an environment represents one or more deployment targets, such groups of development, testing, and production Azure App Service instances.
 
 > [!NOTE]
-> Typically, you promote changes from one stage to the next as part of your release management strategy. Within each stage, you deploy build artifacts to the environment associated with that stage.
+> Typically, you promote changes from one stage to the next as part of your release-management strategy. Within each stage, you deploy build artifacts to the environment associated with that stage.
 
 You can execute parts of the pipeline corresponding to individual stages independently. You can invoke this execution manually or configure it to take place automatically in response to a trigger. A trigger can be based on a predefined schedule or an event, such as a repository commit (in case of continuous integration) or successful completion of the build process (in case of continuous deployment).
 
