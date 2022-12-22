@@ -123,7 +123,7 @@ CatalogServiceHealthStatus()
 
 ## Set up query-based alerts
 
-Alerts are an important part of your overall operations strategy. Use proactive monitoring, like in a dashboard, with alerts that raise immediate attention to issues that reflect or affect health state. Alerts extend the health model, so you quickly become aware of a change in health state, either to a degraded (yellow) state or to an unhealthy (red) state. Set alerts at the root node of the health model to immediately become aware of any business-level change in the health state of the solution. Then, you can look at health model visualizations to get more information and to troubleshoot.
+Alerts are an important part of your overall operations strategy. Implement proactive monitoring with the use of dashboards and alerts to raise immediate attention to issues that reflect or affect health state. Alerts extend the health model, so you quickly become aware of a change in health state, either to a degraded (yellow) state or to an unhealthy (red) state. Set alerts at the root node of the health model to immediately become aware of any business-level change in the health state of the solution. Then, you can look at health model visualizations to get more information and to troubleshoot.
 
 Azure Monitor provides an extensive alerting framework to detect, categorize, and respond to operational signals through action groups. Use Azure Monitor alerts to drive automated actions in response to current or potential deviations from a healthy application state.
 
