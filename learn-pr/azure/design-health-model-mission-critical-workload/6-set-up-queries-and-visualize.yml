@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-health-model-mission-critical-workload.set-up-queries-and-visualize
-title: Collect, query, and visualize heath states
+title: Collect, query, and visualize health states
 metadata:
-  title: Collect, query, and visualize heath states
-  description: Learn how to collect data, run queries, and visualize heath states in a health model.
+  title: Collect, query, and visualize health states
+  description: Learn how to collect data, run queries, and visualize health states in a health model.
   ms.date: 12/12/2022
   author: msimecek
   ms.author: prwilk
@@ -20,32 +20,32 @@ quiz:
     choices:
     - content: "A central data sink for logs and telemetry, which is common for global and regional resources."
       isCorrect: false
-      explanation: "Although using a central storage for all telemetry makes it easier to analyze, it creates a single point of failure, which is unacceptable in mission-critical applications."
-    - content: "A stamp-based data sink for logs and telemetry, where each stamp and global tier has its own sink."
+      explanation: "Although central storage for all telemetry makes data easier to analyze, using a central data sink creates a single point of failure, which is unacceptable for mission-critical applications."
+    - content: "A unified, stamp-based data sink for logs and telemetry, in which each stamp and global tier has its own sink."
       isCorrect: true
       explanation: "Using a dedicated data sink, shared on the global and stamp levels, is a good compromise for ease of access while eliminating a single point of failure."
-    - content: "A decentralized data sink, where every Azure resource and every component has its own sink."
+    - content: "A decentralized data sink, in which every Azure resource and every component has its own sink."
       isCorrect: false
       explanation: "Splitting data sinks by resource is inefficient and creates unnecessary overhead for analysis."
   - content: "What language is used to query Log Analytics logs and calculate health scores?"
     choices:
-    - content: "SQL (Structured Query Language)"
+    - content: "Structured Query Language (SQL)"
       isCorrect: false
       explanation: "SQL is commonly used in querying relational databases. Although the Log Analytics query format looks similar, it has a different syntax."
-    - content: "T-SQL (Transact-SQL)"
+    - content: "Transact-SQL (T-SQL)"
       isCorrect: false
       explanation: "T-SQL is an extension of the SQL language and is used to interact with relational databases."
-    - content: "KQL (Kusto Query Language)"
+    - content: "Kusto Query Language (KQL)"
       isCorrect: true
-      explanation: "KQL is used to query Log Analytic logs. It uses a hierarchy similar to SQL, but has a different syntax."
+      explanation: "KQL is used to query Log Analytic logs. It uses a hierarchy that's similar to SQL, but it has a different syntax."
   - content: "What's the best dashboard technology for health modeling?"
     choices:
-    - content: "There's no best technology; it depends on your needs."
+    - content: "Dashboard technology is optimized for different purposes, so the best option for you depends on your needs."
       isCorrect: true
-      explanation: "Azure offers multiple options when it comes to using dashboards, and each can be suitable for different purpose. The correct approach is to evaluate the visualization needs of the health model and choose appropriately."
+      explanation: "Azure offers multiple options when it comes to using dashboards, and each can be suitable for a different purpose. The correct approach is to evaluate the visualization needs of the health model, and then choose a solution."
     - content: "Azure Dashboards"
       isCorrect: false
       explanation: "Azure Dashboards is a suitable technology for using dashboards, but it might not fully support all necessary customizations."
     - content: "Azure Managed Grafana"
       isCorrect: false
-      explanation: "Grafana is powerful dashboard technology with rich customization options, but using it to build and manage the right visualization is more complex."
+      explanation: "Azure Managed Grafana is a powerful dashboard technology that has rich customization options, but using it to build and manage the right visualization is more complex."
