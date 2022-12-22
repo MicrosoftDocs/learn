@@ -1,12 +1,12 @@
 A private mobile network is a local 4G or 5G network that Azure Private 5G Core powers for an enterprise. Each private mobile network can have multiple geographically dispersed sites. A site represents a physical enterprise location containing an Azure Stack Edge (ASE) device that hosts a packet core instance. The packet core instance provides the 4G and 5G network functions for the site.
 
-Azure Private 5G Core allows you to manage a private mobile network and its sites centrally through the Azure portal. Once a private mobile network is deployed, you'll need to manage it on a routine basis. For example, you may want to [reconfigure network slices](#configure-network-slices) or modify a site due to specific business needs. This unit introduces you to the network and site management tasks.
+Azure Private 5G Core allows you to manage a private mobile network and its sites centrally through the Azure portal. Once a private mobile network is deployed, you'll need to manage it on a routine basis. For example, you may want to [reconfigure network slices](#configure-network-slices) or modify a site based on specific business needs. This unit introduces you to the network and site management tasks.
 
 ## Configure network slices
 
-An enterprise may attach different UEs to its private mobile network. Applications for different UEs may have different network requirements. For example, while video analysis applications for monitoring cameras may require high band-width, control applications for robot communication may require low latency.
+An enterprise may attach different UEs to its private mobile network. Applications for different UEs may have different network requirements. For example, while video analysis applications for production line monitoring cameras may require high band-width, control applications for robot communication may require low latency.
 
-Azure Private 5G Core allows you to divide a private mobile network into multiple network slices, with each slice being a logical end-to-end network. You can configure unique SIM policies for a slice, and then add relevant UEs to the slice.
+Azure Private 5G Core allows you to divide a private mobile network into multiple network slices, with each slice being a logical end-to-end network. You can configure unique [SIM policies](3-policy-control.md#using-services-and-sim-policies-for-network-traffic-control) for a slice, and then add relevant UEs to the slice. Each SIM policy specifies how the network traffic from relevant UEs should be controlled.
 
 You can create new slices when you set up a private mobile network or modify existing slices after the network setup.
 
@@ -30,7 +30,9 @@ For more information about these fields, see the documentation for relevant 5G s
 To add or modify a slice for an existing private mobile network, take these steps:
 
 1. On the Azure portal, open the **Mobile Network** resource representing the private mobile network.
-1. Go to the slice details screen, as shown in the following screenshot:
+1. From the resource menu, select **Slices**.
+
+   The slice details screen is displayed, as shown in the following screenshot:
 
    :::image type="content" source="../media/slice-details.png" alt-text="A screenshot that shows an example slice details screen." border="true":::
 
@@ -45,11 +47,11 @@ To add or modify a slice for an existing private mobile network, take these step
 > - Network slices are only supported in 5G networks.
 > - You can't delete a slice that is currently used by other components.
 
-For detailed instructions on configuring network slices, see the relevant information in the [Azure Private 5G Core documentation](/azure/private-5g-core/).
+For detailed instructions on configuring network slices, see relevant information in the [Azure Private 5G Core documentation](/azure/private-5g-core/).
 
 ## Modify the packet core instance in a site
 
-Once a site is deployed and put into production, usually you don't need to modify the packet core instance in it. However, if your network requirements change or you get new requirements, you may need to reconfigure the packet core. For example, you may want to use a different ASE device to host the site or attach a new data network (DN) to the site.
+Once a site is deployed and put into production, usually you don't need to modify the packet core instance in it. However, if your network requirements change or you get new requirements, you may need to reconfigure the packet core instance. For example, you may want to use a different ASE device to host the site or attach a new data network (DN) to the site.
 
 To modify the packet core instance in a site, take these steps:
 

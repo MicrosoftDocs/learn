@@ -63,7 +63,7 @@ If you're familiar with ARM templates, you can create an ARM template that speci
 
 From the [Azure Private 5G Core REST API](/rest/api/mobilenetwork/) document, you can get a list of fields that you need to specify for each SIM. Because the Resource Manager converts a template into REST API operations when you deploy the template, the parameters in the API requests are the same as the fields in the ARM template. For example, for a SIM, you can find information about the `integratedCircuitCardIdentifier` field in the Azure REST API article [SIMs - Create or update](/rest/api/mobilenetwork/sims/create-or-update). For details about the fields you need to specify for a SIM, see [SIMs](/rest/api/mobilenetwork/sims).
 
-The article [Provision new SIMs for Azure Private 5G Core Preview - ARM template](/azure/private-5g-core/provision-sims-arm-template) provides an ARM template example, with which you can deploy a service and a SIM policy.
+The article [Provision new SIMs for Azure Private 5G Core Preview - ARM template](/azure/private-5g-core/provision-sims-arm-template) provides an ARM template example, with which you can deploy new SIMs.
 
 ## Manage SIMs and SIM groups
 
@@ -76,11 +76,11 @@ For easier management, you can categorize SIMs into SIM groups. Each SIM must be
 SIM policies help you to control the network traffic between the UEs that use the SIMs and relevant DNs. SIMs need an assigned SIM policy before they can use your private mobile network.
 
 > [!TIP]
-> To change the assigned SIM policy for an existing SIM, assign a new SIM policy to the SIM.
+> To change the SIM policy of a SIM, assign it a new SIM policy.
 
 To assign a SIM policy to one or more SIMs, take these steps:
 
-1. Open the **Mobile Network** resource representing the private mobile network containing the SIM.
+1. Open the **Mobile Network** resource representing the private mobile network containing the SIMs.
 1. Select **SIMs** from the resource menu.
 1. For each SIM policy you want to assign to one or more SIMs, select the relevant SIMs and then select the **Assign SIM policy** button.
 1. In **Assign SIM policy** on the right, select the SIM policy you want to assign and then select **Assign SIM policy**.
@@ -93,7 +93,7 @@ If you've configured static IP address allocation for your packet core instance(
 
 > [!NOTE]
 >
-> - Each IP address must come from the pool you assigned for static IP address allocation when creating the relevant data network.
+> - Each IP address must come from the pool you assigned for static IP address allocation when you created the relevant data network.
 > - You can assign a different static IP address for each DN to the same SIM.
 
 To assign static IP addresses to SIMs, take these steps:
@@ -137,7 +137,7 @@ SIM groups allow you to sort SIMs into categories for easier management. For exa
 If you have configured CMK encryption for a SIM group, you can modify the key URI and user-assigned identity.
 
 > [!TIP]
-> You optionally add SIMs when you create a SIM group.
+> You can optionally add SIMs when you create a SIM group.
 
 To create a SIM group, take these steps:
 

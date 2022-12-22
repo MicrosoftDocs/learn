@@ -1,6 +1,6 @@
 Enterprises usually use their private mobile networks to host various UEs. Each UE uses a SIM or eSIM to identify itself to the network.
 
-To effectively manage the network traffic between the UEs and the data networks (DNs), Azure Private 5G Core allows you to define SIM policies that will be applied to the SIMs. SIM policies ensure that the network requirements of each UE are satisfied and the packet flows from each device are appropriately controlled.
+To effectively manage the network traffic between the UEs and the data networks (DNs), Azure Private 5G Core allows you to define SIM policies that will be applied to the SIMs. SIM policies ensure that the network requirements of each UE are satisfied and the packet flows from each UE are appropriately controlled.
 
 Azure Private 5G Core also allows you to define services, which are sets of rules for network traffic handling. With separately defined services and SIM policies, you'll have the flexibility to reuse a service in one or more SIM policies.
 
@@ -11,7 +11,7 @@ This unit introduces you to the policy control tasks, like SIM policy configurat
 
 ## Network traffic control
 
-In a private mobile network, the packet core instances are responsible for handling network traffic between UEs and DNs. Azure Private 5G Core allows you to use services and SIM policies to control the network traffic at the packet level.
+In a private mobile network, packet core instances are responsible for handling the network traffic between UEs and DNs. Azure Private 5G Core allows you to use services and SIM policies to control the network traffic at the packet level.
 
 ### How a packet core instance controls network traffic
 
@@ -43,7 +43,7 @@ Each SIM policy includes:
 - Top-level settings that are applied to every SIM using the SIM policy.
 - A network scope, which defines the network slice and DN that the SIM policy applies to.
 
-  You can use the network scope to determine the services offered to SIMs on this DN and a set of QoS characteristics that will be used to form the default QoS flow for PDU sessions (or EPS bearer for PDN connections in 4G networks).
+  You can use the network scope to determine the services offered to SIMs on the DN and a set of QoS characteristics that will be used to form the default QoS flow for PDU sessions (or EPS bearer for PDN connections in 4G networks).
 
 For more information about controlling the network traffic in a private mobile network, see [Policy control](/azure/private-5g-core/policy-control).
 
@@ -53,13 +53,13 @@ Before starting to use UEs in your private mobile network, you'll need to define
 
 ### Design policy control configuration
 
-When you first design the policy control configuration for a private mobile network, we recommend taking the following approach:
+When you first design the policy control configuration for a private mobile network, we recommend that you take the following approach:
 
 1. Provision the SIMs.
 1. Identify the SDFs that the private mobile network needs to handle.
 1. Learn about each of the available options for a service and then compare these options with the requirements of the SDFs to decide on the services you'll need.
 1. Collect appropriate policy configuration values you'll need for each service.
-1. Configure each of the services.
+1. Configure each service.
 1. Categorize the SIMs according to the services they'll require. For each category, configure a SIM policy and assign it to the correct SIMs.
 
 For details, see [Policy control](/azure/private-5g-core/policy-control).
@@ -71,7 +71,7 @@ Services are representations of a particular set of QoS information that you wan
 To create a new service, take these steps:
 
 1. Collect all the [configuration values](/azure/private-5g-core/collect-required-information-for-service) for the service.
-1. Open the Mobile Network resource representing the private mobile network for which you want to create the service.
+1. Open the **Mobile Network** resource representing the private mobile network for which you want to create the service.
 1. Select **Services** from the resource menu and then select the **Create** button.
 
    The **Create a service** screen is displayed, as shown in the following screenshot:
@@ -95,12 +95,12 @@ For detailed instructions on configuring a service, see [Configure a service for
 
 ### Configure a SIM policy through the Azure portal
 
-A SIM policy defines a set of interoperability settings that can be assigned to one or more SIMs. It also defines the default QoS settings for any services that use the policy. You'll need to assign a SIM policy to a SIM before the UE using that SIM can access the private mobile network.
+A SIM policy defines a set of interoperability settings that can be assigned to one or more SIMs. It also defines the default QoS settings for any services that the policy uses. You'll need to assign a SIM policy to a SIM before the UE using that SIM can access the private mobile network.
 
 To create a new SIM policy, take these steps:
 
 1. Collect all the [configuration values](/azure/private-5g-core/collect-required-information-for-sim-policy) for the policy.
-1. Open the **Mobile Network** resource representing the private mobile network for which you want to create the service.
+1. Open the **Mobile Network** resource representing the private mobile network for which you want to create the SIM policy.
 1. Select **SIM policies** from the resource menu and then select the **Create** button.
 
    The **Create a SIM policy** screen is displayed, as shown in the following screenshot:
@@ -109,10 +109,10 @@ To create a new SIM policy, take these steps:
 
 1. Specify appropriate values for each field.
 
-   To configure the network scope you want to use for this policy, select the **Add a network scope** button to add a rule. SIM policies also define the default QoS settings for any services that use the policy. You can override the default SIM policy QoS settings on a per-service basis.
+   To configure the network scope you want to use for this policy, select the **Add a network scope** button to add a scope. SIM policies also define the default QoS settings for any services that they use. You can override the default QoS settings on a per-service basis.
 
 > [!TIP]
-> At the end of the SIM policy creation process, you can optionally assign this SIM policy to one or more existing provisioned SIMs.
+> At the end of the SIM policy creation process, you can optionally assign the SIM policy to one or more provisioned SIMs.
 
 To modify or delete an existing SIM policy, take these steps:
 
