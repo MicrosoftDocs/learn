@@ -74,8 +74,8 @@ Next, we'll create an API resource in Azure Cognitive Services Custom Vision.
 
    :::image type="content" source="../media/azure-portal-create-resource-details.png" alt-text="Screenshot that highlights the elements to select in the Azure portal to create a new Custom Vision resource.":::
 
-When the deployment finishes, select **Go to resource**.
+When the deployment finishes, select **Go to resource group**.
 
 :::image type="content" source="../media/azure-portal-deployment-finished.png" alt-text="Screenshot that shows the deployment finished page in the Azure portal, with the Go to resource button highlighted.":::
 
- You should see two resources listed in this new resource group: a _training resource_, and a _prediction resource_.
+You should see two resources listed in this new resource group: a _training resource_, and a _prediction resource_.
