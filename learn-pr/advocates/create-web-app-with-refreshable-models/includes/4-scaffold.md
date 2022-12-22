@@ -20,7 +20,10 @@ When the CLI asks whether you want to use presets or a manual scaffold, choose '
 
 ![The Vue CLI.](../media/cli.png)
 
-Make sure you choose 'Progressive Web App' in the choices on this screen of the CLI setup routine. You want to create an app that works both online and offline.
+Make sure you choose **Progressive Web App** in the choices on this screen of the CLI setup routine. You want to create an app that works both online and offline.
+
+> [!NOTE]
+> Make sure that you select Vue 2 when installing the Vue CLI.
 
 Once the basic app is built, run it by entering:
 
