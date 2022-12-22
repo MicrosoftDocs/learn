@@ -1,7 +1,7 @@
 Before you begin, make sure you have the following software installed on your machine:
 
 -   [Node.js](https://nodejs.org/download/)
--   [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+-   [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 -   [Visual Studio Code](https://code.visualstudio.com/download)
 -   [The Vue CLI](https://cli.vuejs.org)
 
