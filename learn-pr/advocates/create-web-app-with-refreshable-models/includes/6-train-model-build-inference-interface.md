@@ -49,7 +49,7 @@ The first thing to do is install a special npm package into your web app, *custo
 
 1. In the same file, also add `"raw-loader": "^4.0.0",` to the `devDependencies` list. You need this package to manage reading .txt files from your Vue app.
 
-1. In the same file, add `"webpack-cli": "^3.3.10"` to the `devDependencies` list so that the webpack CLI will be usable within the app, which is necessary for text file parsing.
+1. In the same file, add `"webpack-cli": "^3.3.10"` to the `devDependencies` list so that the Webpack CLI will be usable within the app, which is necessary for text file parsing.
 
 Stop your web app if it's running by pressing <kbd>Ctrl+C</kbd>, and run `npm i` from the root, via your terminal. This will install this package.
 
