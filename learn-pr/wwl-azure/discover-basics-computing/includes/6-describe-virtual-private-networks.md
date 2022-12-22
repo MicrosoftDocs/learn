@@ -14,7 +14,7 @@ As the name implies, a VPN is a network or a grouping of computers. However, the
 
 If you do remote work with a computer, your company may have given you the program needed for you to "tunnel" into their virtual private network. You also may notice that when you're in that network, there are certain websites you can't visit and other limitations. But you also will have access to company data that you otherwise wouldn't be able to access.
 
-![Diagram showing the idea of being at one location and being able to use resources at another location. Illustrates a VPN.](../media/vpn-tunnel.jpeg)
+![Diagram showing the idea of being at one location and being able to use resources at another location. Illustrates a VPN.](../media/virtual-private-network-tunnel.jpeg)
 
 ## How VPNs Work
 
