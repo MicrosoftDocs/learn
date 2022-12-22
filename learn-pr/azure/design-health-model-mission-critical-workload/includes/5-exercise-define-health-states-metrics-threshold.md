@@ -40,15 +40,15 @@ Ultimately, you should have a list of components and their health state definiti
 
 | Component | Indicator/metric | Healthy | Degraded | Unhealthy |
 | --------- | ---------------- | ------- | -------- | --------- |
-| List catalog items user flow | Underlying health state | Front end healthy and Catalog API healthy |
-| Add comment user flow | Underlying health state | Front end healthy, Catalog API healthy, and background processor healthy |
+| *List catalog items* user flow | Underlying health state | Front end healthy and Catalog API healthy |
+| *Add comment* user flow | Underlying health state | Front end healthy, Catalog API healthy, and background processor healthy |
 | Front-end web application | # of non-20x HTTP responses/min | 0 | 1-10 | > 10 |
 | Catalog API | # of exceptions/sec | < 10 | 10-50 | > 10 |
-|  | Avg. processing time | < 150 ms | 150-500 ms | > 500 ms |
-| Background processor | Avg. time in queue (ms) | < 200 | 200-1000 | > 1000 |
-|  | Avg. processing time (ms) | < 100 | 100-200 | > 200 |
+|  | Average processing time (ms) | < 150 | 150-500 | > 500 |
+| Background processor | Average time in queue (ms) | < 200 | 200-1,000 | > 1,000 |
+|  | Average processing time (ms) | < 100 | 100-200 | > 200 |
 |  | Failure count | < 3 | 3-10 | > 10 |
-| Azure Cosmos DB | DTU utilization | < 70% | 70-90% | > 90% |
+| Azure Cosmos DB | DTU utilization | < 70% | 70%-90% | > 90% |
 | Azure Key Vault | Failure count | < 3 | 3-10 | > 10 |
 | Azure Event Hubs | Processing backlog length (outgoing/incoming messages) | < 3 | 3-20 |  > 20 |
 | Azure Blob Storage | Average latency (ms) | < 100 | 100-200 | > 200 |
