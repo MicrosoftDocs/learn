@@ -2,7 +2,7 @@ Data scientists can use various tools and techniques to explore, visualize, and 
 
 ## What is NumPy?
 
-NumPy is a Python library that gives functionality comparable to mathematical tools such as MATLAB and R. While NumPy significantly simplifies the user experience, it also offers comprehensive mathematical functions.
+NumPy is a Python library that provides functionality comparable to mathematical tools such as MATLAB and R. While NumPy significantly simplifies the user experience, it also offers comprehensive mathematical functions.
 
 ## What is Pandas?
 
@@ -12,7 +12,7 @@ Pandas is an extremely popular Python library for data analysis and manipulation
 
 ## Explore data in a Jupyter notebook
 
-Jupyter notebooks are a popular way of running basic scripts using your web browser. Typically, these notebooks are a single webpage, broken up into text sections and code sections that are executed on the server rather than your local machine. This means you can get started quickly without needing to install Python or other tools.
+Jupyter notebooks are a popular way of running basic scripts using your web browser. Typically, these notebooks are a single webpage, broken up into text sections and code sections that are executed on the server rather than your local machine. By running code in Jupyter notebooks on a server, you can get started quickly without needing to install Python or other tools on your local computer.
 
 ## Testing hypotheses
 

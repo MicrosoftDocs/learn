@@ -34,4 +34,4 @@ If we graph X versus Y, we end up with a map of where the car has driven. It’s
 
 ![Location-X and Location-Y coordinates plotted.](../media/4-x-y-coordinates.png)
 
-Graphs aren't limited to 2D scatter plots like those above. They can be used to explore other kinds of data, for example, proportions (pie charts and stacked bar graphs) and how the data are spread (histograms and box-and-whisker plots). Often, when we're trying to understand raw data or results, we may experiment with different types of graphs until we come across one that explains the data in a visually intuitive way.
+Graphs aren't limited to 2D scatter plots like those above. They can be used to explore other aspects of your data, for example, proportions (pie charts and stacked bar graphs) and how the data are spread (histograms and box-and-whisker plots). Often, when we're trying to understand raw data or results, we may experiment with different types of graphs until we come across one that explains the data in a visually intuitive way.
