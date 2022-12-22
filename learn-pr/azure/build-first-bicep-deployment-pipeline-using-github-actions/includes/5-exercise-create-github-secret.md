@@ -89,7 +89,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
    ```azurepowershell
    $applicationRegistration = New-AzADApplication -DisplayName 'toy-website-workflow'
 
-   New-AzADAppFederatedIdentityCredential `
+   New-AzADAppFederatedCredential `
       -Name 'toy-website-workflow' `
       -ApplicationObjectId $applicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
@@ -174,7 +174,7 @@ You've created a resource group and a workload identity. Next, create some secre
 
 1. In the **Value** field, paste the GUID from the first line of the terminal output. Don't include `AZURE_CLIENT_ID`, the colon, or any spaces in the value.
 
-1. Select **Add secret**. 
+1. Select **Add secret**.
 
    :::image type="content" source="../../includes/media/github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
 
