@@ -1,6 +1,6 @@
 [!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-Before you set up your toy company's pull request workflows, you need to configure your environment. 
+Before you set up your toy company's pull request workflows, you need to configure your environment.
 
 In this unit, you make sure that your Azure and GitHub environments are set up so that you can complete the rest of this module successfully.
 
@@ -14,7 +14,7 @@ To meet these objectives, you'll:
 
 ## Get the GitHub repository
 
-In this section you set up your GitHub repository to complete the rest of this module. You do so by creating a new repository based on a template repository. The template repository contains the files you need to get started on this module. 
+In this section you set up your GitHub repository to complete the rest of this module. You do so by creating a new repository based on a template repository. The template repository contains the files you need to get started on this module.
 
 The modules in this learning path are part of a progression. For learning purposes, each module has an associated GitHub template repository.
 
@@ -30,7 +30,7 @@ Run a template that sets up your GitHub repository.
 
 On the GitHub site, create a repository from the template by doing the following:
 
-1. Select **Use this template**. 
+1. Select **Use this template**.
 
    :::image type="content" source="../media/3-template.png" alt-text="Screenshot of the GitHub interface showing the template repo, with the 'Use this template' button highlighted.":::
 
@@ -42,19 +42,19 @@ On the GitHub site, create a repository from the template by doing the following
 
    When you create your own repositories, you might want to make them private. In this module, you'll work with some features of GitHub that work only with public repositories and GitHub Enterprise accounts.
 
-1. Select **Create repository from template**. 
+1. Select **Create repository from template**.
 
    :::image type="content" source="../media/3-repo-settings.png" alt-text="Screenshot of the GitHub interface showing the repository creation page.":::
 
 ## Clone the repository
 
-You now have a copy of the template repository in your own account. Clone this repository locally so you can start to work in it. 
+You now have a copy of the template repository in your own account. Clone this repository locally so you can start to work in it.
 
 1. Select **Code**, and then select the copy icon.
 
    :::image type="content" source="../media/3-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface showing the new repository, with the repository U R L copy button highlighted.":::
 
-1. Open Visual Studio Code. 
+1. Open Visual Studio Code.
 
 1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 
@@ -149,7 +149,7 @@ Later in this Microsoft Learn module, your pull request workflow will create res
 
    ```azurepowershell
    $applicationRegistration = New-AzADApplication -DisplayName 'toy-website-auto-review'
-   New-AzADAppFederatedIdentityCredential `
+   New-AzADAppFederatedCredential `
       -Name 'toy-website-auto-review' `
       -ApplicationObjectId $applicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
@@ -230,7 +230,7 @@ You've created a workload identity, and granted it permission to deploy to the s
 
 1. In the **Value** field, paste the GUID from the first line of the terminal output. Don't include `AZURE_CLIENT_ID`, the colon, or any spaces in the value.
 
-1. Select **Add secret**. 
+1. Select **Add secret**.
 
    :::image type="content" source="../../includes/media/github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
 

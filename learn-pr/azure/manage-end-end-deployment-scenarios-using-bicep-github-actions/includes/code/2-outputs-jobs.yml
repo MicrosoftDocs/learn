@@ -9,7 +9,7 @@ jobs:
     outputs:
       appServiceAppName: ${{ steps.deploy.outputs.appServiceAppName }}
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
@@ -28,6 +28,6 @@ jobs:
   job2:
     needs: job1
     runs-on: ubuntu-latest
-    steps: 
+    steps:
     - run: |
         echo "${{needs.job1.outputs.appServiceAppName}}"
