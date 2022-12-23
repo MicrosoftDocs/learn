@@ -26,8 +26,8 @@ The following table describes the major resource types that you'll need for mana
 |Mobile Network |A private mobile network |Use this resource to manage a private mobile network. |
 |Mobile Network Site |A site in a private mobile network |Use this resource to manage a site in a private mobile network. You can open this resource from a **Mobile Network**. |
 |Packet Core Control Plane |The control plane of a packet core instance |Use this resource to manage a packet core instance. You can open it from a **Mobile Network Site**. |
-|Packet Core Data Plane |The data plane of a packet core instance |Use this resource to manage a packet core instance. You can open it from a *Mobile Network Site*. |
-|Sim Group |A SIM group |Use this resource to categorize SIMs. You can open it from a **Mobile Network**. |
-|Sim |A SIM for an attached UE |Use this resource to configure a SIM. You can open it from a **Mobile Network**. |
-|Sim Policy |A SIM policy |Use this resource to manage a SIM policy. You can open it from a **Mobile Network**.  |
+|Packet Core Data Plane |The data plane of a packet core instance |Use this resource to manage a packet core instance. You can open it from a **Mobile Network Site**. |
+|SIM Group |A SIM group |Use this resource to categorize SIMs. You can open it from a **Mobile Network**. |
+|SIM |A SIM for an attached UE |Use this resource to configure a SIM. You can open it from a **Mobile Network**. |
+|SIM Policy |A SIM policy |Use this resource to manage a SIM policy. You can open it from a **Mobile Network**.  |
 |Service |A service |Use this resource in SIM policy configuration. You can open it from a **Mobile Network**. |

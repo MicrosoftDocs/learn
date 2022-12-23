@@ -1,4 +1,4 @@
-A private mobile network is a local 4G or 5G network that Azure Private 5G Core powers for an enterprise. Each private mobile network can have multiple geographically dispersed sites. A site represents a physical enterprise location containing an Azure Stack Edge (ASE) device that hosts a packet core instance. The packet core instance provides the 4G and 5G network functions for the site.
+A private mobile network is a local 4G or 5G network that Azure Private 5G Core deploys. Each private mobile network can have multiple geographically dispersed sites. A site represents a physical enterprise location containing an Azure Stack Edge (ASE) device that hosts a packet core instance. The packet core instance provides the 4G and 5G network functions for the site.
 
 Azure Private 5G Core allows you to manage a private mobile network and its sites centrally through the Azure portal. Once a private mobile network is deployed, you'll need to manage it on a routine basis. For example, you may want to [reconfigure network slices](#configure-network-slices) or modify a site based on specific business needs. This unit introduces you to the network and site management tasks.
 
@@ -6,7 +6,7 @@ Azure Private 5G Core allows you to manage a private mobile network and its site
 
 An enterprise may attach different UEs to its private mobile network. Applications for different UEs may have different network requirements. For example, while video analysis applications for production line monitoring cameras may require high band-width, control applications for robot communication may require low latency.
 
-Azure Private 5G Core allows you to divide a private mobile network into multiple network slices, with each slice being a logical end-to-end network. You can configure unique SIM policies for a slice, and then add relevant UEs to the slice. Each SIM policy specifies how the network traffic from relevant UEs should be controlled.
+Azure Private 5G Core allows you to divide a private mobile network into multiple network slices, with each slice being a logical end-to-end network. You can configure SIM policies with different slices available. Each SIM policy specifies how the network traffic from relevant UEs should be controlled on a per slice basis.
 
 You can create new slices when you set up a private mobile network or modify existing slices after the network setup.
 
@@ -17,13 +17,16 @@ For each slice, you need to configure the following fields:
 
   In a private mobile network, slice names must be unique.
 
-- Slice service type: The service type of the slice.
+- Slice Service Type (SST): The service type of the slice.
 
   Valid values are 0 to 255, with 0-127 reserved for standards defined usages. For example, `1` is for Enhanced Mobile Broadband (eMBB) and `3` is for Massive Internet of Things (MIoT).
 
-- Slice differentiator: Optional. A differentiator that helps identify slices of the same slice service type.
+- Slice Differentiator (SD): Optional. A differentiator that helps identify slices of the same slice service type.
 
   Valid values are 0 to 16777216. For example, while two slices may both have `1` (eMBB) as the value of its service type, their slice differentiators are different, with one being `1` and the other being `2`, which identifies each slice uniquely.
+
+  > [!NOTE]
+  > The combination of Slice Service Type and Slice Differentiator must be unique across the private mobile network.
 
 For more information about these fields, see the documentation for relevant 5G standards.
 
@@ -44,7 +47,7 @@ To add or modify a slice for an existing private mobile network, take these step
 
 > [!NOTE]
 >
-> - Network slices are only supported in 5G networks.
+> - Network slices are only supported in 5G networks. For 4G networks, all UEs are assigned to the slice with an SST value of 1 and no SD.
 > - You can't delete a slice that is currently used by other components.
 
 For detailed instructions on configuring network slices, see relevant information in the [Azure Private 5G Core documentation](/azure/private-5g-core/).
@@ -73,9 +76,6 @@ To modify the packet core instance in a site, take these steps:
 
 For detailed instructions, see [Modify the packet core instance in a site](/azure/private-5g-core/modify-packet-core).
 
-> [!NOTE]
-> Power recycling an ASE device doesn't affect the packet core instance it hosts. Once the device is powered back on, all the network functions of the packet core instance should resume.
-
 ## Decommission a site
 
 When you no longer need a site in a private mobile network, you can decommission it.
@@ -98,4 +98,4 @@ A typical decommission process is as follows:
 1. Power off the ASE device that hosts the deleted site or use it for another site.
 
    > [!NOTE]
-   > When a site is deleted, Azure Private 5G Core keeps the resources for the corresponding ASE device intact. You can reuse the device for another site.
+   > When a site is deleted, the resources representing the ASE device for the site remain intact. You can reuse the device for another site.

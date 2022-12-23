@@ -1,8 +1,8 @@
-To use the latest features that Azure Private 5G Core offers and maintain the support you need for your private mobile network, consider upgrading the packet core instances in your network periodically.
+To use the latest features that Azure Private 5G Core offers and maintain the support you need for your private mobile network, plan to upgrade your packet core to new releases as they're available.
 
-When a new version is available, Azure Private 5G Core displays a message for the relevant **Packet Core Control Plane** resource through the Azure portal, reminding you to do the upgrade. The network functions of a site won't be available when you upgrade the packet core instance of the site, so [plan your upgrade](#plan-to-upgrade-a-packet-core-instance) carefully before starting the upgrade process.
+When a new version is available, Azure Private 5G Core displays a message for the relevant **Packet Core Control Plane** resource through the Azure portal, reminding you to do the upgrade. The network functions of a site won't be available while you upgrade the packet core instance of the site, so [plan your upgrade](#plan-to-upgrade-a-packet-core-instance) carefully before starting the upgrade process.
 
-A new version of the packet core may not be compatible with the version of the underlying system that you use. In that case, you'll need to [upgrade the underlying system](#upgrade-the-underlying-system) first.
+A new version of the packet core may not be compatible with the version of the underlying system that you use. In that case, you'll need to [upgrade the underlying system](#upgrade-the-underlying-system) first. The Azure portal will warn you about the incompatibility between the new version and the underlying ASE system.
 
 ## Plan to upgrade a packet core instance
 
