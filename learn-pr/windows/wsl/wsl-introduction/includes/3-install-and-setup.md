@@ -57,3 +57,15 @@ You can now find the Linux distribution that you've installed using Windows sear
 Beginning in October 2022 with Windows 11 (version 22H2), Windows Terminal is the default command line host. So when you open your Linux distribution, you will see it open as a tab inside Windows Terminal. You can learn more about how to customize your Linux distribution's command line (BASH), including it's default startup behavior, starting directory, tab title, appearance (text size, font, colors, etc), by visiting the Windows Terminal documentation. A link will be provided at the end of this module.
 
 Whenever a new WSL Linux distribution is installed, a new instance will be created for it inside the Windows Terminal that can be customized to your preferences.
+
+## Update and upgrade packages
+
+We recommend that you frequently update and upgrade the packages included with the Linux distribution once installed (and on a regular basis to ensure that you have the latest security updates). Windows does not automatically update or upgrade your Linux distribution(s). This is a task that most Linux users prefer to control themselves. Each distribution has associated package managers to handle this. For Ubuntu or Debian, the package manager included is called "apt" (for Advanced Package Tool).
+
+To update and upgrade packages for the default Ubuntu distribution using apt:
+
+1. Open Ubuntu (you can find it in the Windows search menu once it's been installed).
+2. Enter the command: `sudo apt update && upgrade`
+3. Updating and upgrading packages requires elevated "sudo" (superuser do) permissions, so you will also need to enter the password that you created for the Linux distribution.
+
+It's best to run both commands. The `update` command updates the list of available packages and their versions, but doesn't install or upgrade any packages. The `upgrade` command installs newer versions of the packages you have. It is recommended to run update first (or at the same time as in the combined command above) so that your package manager is aware of available updates for the software you have installed.

@@ -1,119 +1,70 @@
-
+The ability to use Linux distributions integrated into a device running on Windows creates lots of opportunities to use whatever developer tools, command line utilities, coding languages and frameworks that best suit your needs. However, you will need to keep in mind that you are working between two different file systems and you will achieve better performance by following a few best practices when using WSL as a part of your development environment.
 
 ## Basics of a WSL development workflow
- 
-1. Working between two file systems means paying attention to where project files are stored and where dev tools are stored.
 
-2. Dev tool recommendations for a WSL development workflow include:
+To begin, lets look at some of the standard development tools, command line utilities, code languages/frameworks, and practices involved in a WSL development workflow.
 
-- Command line (or multiple command lines)
-    Customized to suit your needs, with a specific starting directory, display set to a font and text size easy to read, colors to indicate links/warnings/etc., status that displays current directory path, Git status, etc.
-- Code editor
-    VS Code - Marketplace of helper extensions, intellisense, live reload, Remote-WSL, Git version control integration, Docker container integration, 
-- Web browser
-    Microsoft Edge - 
-- Version control and credential management
-    Git
-- Code languages and frameworks
-    NodeJS, Python, C#, C++, etc.
-- Remote containers
-    Docker
+### Developer tool recommendations
 
-3. Example app development workflow that incorporates these development tools
+Your choice of developer tools is highly dependent on what type of work you plan to use them for, but there are a few offered by Microsoft that we recommend for a WSL workflow, especially for those who may just be getting started as a developer, including:
 
-4. Professional level scenarios for working with WSL: CI/CD pipeline, parody to a production environment for testing, cautions to consider for using WSL in a production environment.
+- **Code Editor**: Visual Studio Code with the WSL extension
 
-What does a WSL development environment workflow look like that integrates both Windows and Linux tools? What unique aspects do I need to consider when working between file systems?
+    VS Code is a free, open source, code editor (sometimes also called an IDE or Integrated Development Environment) with support for debugging, syntax highlighting, intelligent code completion (IntelliSense), built-in Git commands, and an expansive marketplace of extensions that enable you to install additional support tools.
 
-let's take a look at how it works in a practical development workflow for building or maintaining an app. This is a high-level overview, step-by-step guidance is available in the WSL documentation or a later WSL training module.
+    One of the reasons for recommending VS Code is the WSL extension, which enables VS Code's user interface to run on Windows, but your commands, extensions, debugging, code autocomplete, linting, etc. will all run on Linux. Without this extension, you would run into performance and compatibility issues when working between the Windows and Linux file systems. With the extension, you can run your Linux code projects in a completely encapsulated environment, isolated from Windows, with tools, languages, compilers, and extensions running in your Linux environment where it won't modify or disrupt anything installed in your Windows environment.
 
-Typically we would start with the one-time install steps that include:
+    :::image type="content" source="../media/wsl-in-vscode.png" alt-text="Screen capture of project code stored in Ubuntu opened in VS Code with the WSL Extension.":::
 
-- Install WSL (and the Ubuntu distro by default)
-- Install Visual Studio Code and the Remote-WSL Extension
-- Install Windows Terminal
-- Install Git and the Git Credential Manager
+- **Command line and utilities**: Windows Terminal with customized Bash + PowerShell
 
-*These install steps are covered in more detail in a separate training module.*
+    Windows Terminal is now the default command line host for Windows 11, so any Linux distributions that you install will automatically have a profile created in Windows Terminal that can be customized with whatever sort of colors, text fonts, etc. that you prefer. Bash is the command line interpreter that comes with almost all Linux distributions and can be used with utility tools for things like searching files and directories, displaying system performance information, analyzing available disk space, monitoring your network interface, as well as for automating tasks via scripts. PowerShell serves the same purposes, but for Windows. One of the great things about WSL is that you can mix both Bash and PowerShell commands and scripts together, and with Windows Terminal, you can run multiple Bash and PowerShell command lines at the same time, side-by-side in tabs or window panes.
 
+    :::image type="content" source="../media/wsl-in-terminal.gif" alt-text="Screen capture of Windows Terminal with a PowerShell command line open, then adding a window pane for Ubuntu and Kali Linux.":::
+
+- **Code languages and app frameworks**: Install project code on the Linux file system using a package manager
+
+    On Windows, software has traditionally been installed using executable (.exe) files and using the Settings GUI to manage or remove software (Settings > Apps & Features). On Linux, "package managers" handle the process of installing, upgrading, configuring, and removing software. When working in Linux with WSL, you will want to use a package manager to install code languages and app framework on the Linux file system directory associated with the distribution you are using. The default WSL distribution, Ubuntu, uses the "apt" package manager (short for "Advanced Package Manager"). You should always install the languages/frameworks/tools that you'll be using on the same file system where you will create your project code.
+    Tips for working between file systems, best practices for installing tools, and advice on where to store project files for the best performance is all covered in more depth in an accompanying WSL training module.
 
 ![WSL workflow diagram showing Ubuntu, VS Code, Remote-WSL extension, and web browser.](../media/wsl-workflow.png)
 
-Types of development work:
+### A typical development workflow
 
-- Solo local development
-- Collaborative remote development using version control
-- CI/CD pipelines
+Once you have installed your tools needed for your WSL development environment, a typical workflow might look like the following:
 
-The steps for setting up a WSL development environment would typically include:
+1. Open Ubuntu (or your preferred Linux distribution) in the default Windows Terminal.
 
-- Open Ubuntu, set up your Linux user name and password, then reopen Ubuntu in Windows Terminal and customize your command prompt just how you like it.
-- Install the code project or framework that you want to work with on Linux. This might mean installing frameworks like NodeJS, NextJS, or React, cloning a GitHub repo, or downloading a Docker container image. It will also likely mean using a package manager, updating/upgrading the packages available in your distribution, and possibly installing a version manager.
-- Once your project is created or installed on your Linux file system (Ubuntu by default), you can open it in VS Code using the Remote-WSL extension. Once open, you can edit and debug your code, taking advantage of VS Code features like Intellisense code completion, linting, etc. because the remote extension handles the pathing for you between Linux (where your project code is stored) and Windows (where the VS Code app is stored).
-- You can build and run your project code on Linux (in Ubuntu) and then view your project using the Microsoft Edge web browser and debug using VS Code. There is even support for live reloading as you update your code.
+2. Install your code language, framework using the package manager for your distribution. (Something like `sudo apt install <software>`).
 
-## Two file systems
+3. You may also need to use a command line utility to download software if it's not available from the distribution's package manager. A good utility for this, which comes with many Linux distributions, is cURL (short for Client URL). It can be used for downloading software or any sort of data transfer between the command line and a server that uses URL syntax (such as user authentication, HTTP POST, SSL connections, FTP uploads, etc). It is also commonly used for automated tasks since it is design to work without user interaction.
 
-Lastly, and possibly MOST importantly, you will need to remember that because WSL utilizes both Windows and Linux, you will be working between two different file systems. The Windows file system (also known as "NTFS" or the " New Technology File System") is typically your C: drive. Any Linux distributions that you install will be listed under a "Linux" labeled drive that can be viewed in your Windows File Explorer. These file systems can work together, but there are several things to know about effectively using them that are covered in a separate training module. The main thing to know is that if you are seeking to run and test your application on Linux, it is best to store your project files on the Linux file system, as the performance will be much faster.
+4. Create a directory to store your app project in your Ubuntu command line (`mkdir app-project`). You can ensure that you're storing your project files on the Linux file system by enter the command `explorer.exe .` to view your directory in Windows File Explorer. The file path should look something like `\\wsl.localhost\Ubuntu\home\<username>\app-project`. Create or download your project code here.
 
-## GUI apps and more
+    ![Screenshot of Windows File Explorer with Ubuntu directory open](../media/windows-file-explorer-1.png)
 
-Thanks to the seamless integration that WSL provides, you can launch Linux tools and applications from PowerShell in Windows, or launch Windows tools and apps from Bash in Linux. You can also now use Linux GUI applications, which are also integrated with Windows and can be pinned and launched from the Start menu. Additionally, WSL supports more advanced tasks, like using GPU acceleration for training Machine Learning models, building custom distributions, mounting disk, connecting USB devices, accessing Linux networking apps, and configuring advanced settings and shared environment variables. These will be covered in other training modules, for now, let's move on to look at how WSL works - including the option to choose an architecture that best meets your needs.
+5. Open your project directory in Visual Studio Code using the WSL extension by entering the command: `code .`. This will start the VS Code Remote Server so that even though your project code is running on Linux and VS Code is running on Windows, you will still have access to features like Intellisense code completion, debugging, and linting, powered by the tools and compilers installed on Linux.
 
-![Screenshot of Windows File Explorer with Linux directory open](../media/windows-file-explorer.png)
+6. Once you have made updates to your code, you will also be able to run it in your Linux distribution, but view it using a web browser on Windows with a localhost address (ie. `localhost:3000`), including hot-reload support, so that rather than needing to reload your entire app when you make a change, you can just refresh the files that were changed without losing the state of the app.
 
-# Distributions
+## Common scenarios for using a WSL
 
-Another important thing to understand about WSL is that you are able to install MULTIPLE Linux distributions. Linux has a big variety of different "flavors," known as distributions or distros. Because Linux is opensource, anyone can customize their own version of the OS, with whatever associated applications, tools, and utilities needed. This software is often combined into "packages" that are available in online repositories and can be downloaded using a "package manager." The package manager is used to install that software and the different distributions often have different package managers. For example, Ubuntu is one of the most popular Linux distributions and is the default installed by WSL. Ubuntu (and it's predecessor Debian) use a package manager called "apt" or "apt-get". So the command to install an app would be `apt install <package_name>`. Another popular distribution is OpenSuse, which uses the Zypper package manager, with the command `zypper install <package_name>` to install an app. So you will need to learn a bit about whatever Linux distribution you choose to use and remember that when you see a tutorial that uses a command like `apt-get install <package_name>`, you may need to translate that to the command associated with your distribution's package manager.
+A few common situations or scenarios where a developer may want to use WSL include:
 
-## Bash
+- A beginner who wants to learn coding on both Windows and Linux environments.
+- A professional developer who wants access to Linux and Windows tools.
+- Any organization that wants to operationalize a Continuous Integration and Continuous Delivery (CICD) workflow, testing updates on a local machine before deploying code updates to the cloud.
+- Anyone who wants to use Docker for creating containers, Git for version control, GPU acceleration for Machine Learning, databases (like MySQL, PostgreSQL, MongoDB, Redis, SQLite), or have access to both Linux GUI apps and Windows at the same time.
+- A company that wants to create customized WSL images for distribution to all of their machines so that employees have secure access to both Windows and Linux.
 
-Being able to use the Bash command-line, or "Borne Again SHell", is one of the big advantages of WSL. For many developers, it makes the comparisons between Windows and Mac feel more like apples-to-apples. Many developers prefer using a command-line interface (CLI) to using a graphic-user interface (GUI) because it can be more efficient, not requiring you to navigate menus, options, and windows with a mouse. It also enables you to automate common tasks using a script. PowerShell is the Windows version of Bash, and with WSL, switching between the two is seamless. WSL even enables you to mix PowerShell and Bash commands together. For example, the command to list files and directories in    is `ls`. The same command in PowerShell is `dir`, but now thanks to WSL, you can use these commands interchangeably.
+There are also a few limitations to be aware of with WSL, including:
 
-## Linux / GNU
+- WSL is designed for development and includes some features that may make it challenging to use in production scenarios.
 
-Linux is also known as "GNU", which stands for "GNU's Not Unix." Without getting in too deep to history, Linux is the kernel (core part of the OS) and GNU is the larger opensource project that created the operating system, including the GNU C Compiler, Bash command-line shell, utilities, and the Emacs text editor. It was created as a Unix-compatible operating system made up of free software.
+- WSL uses a lightweight utility VM that starts, stops, and manages resources automatically, so if you are trying to use it as a web server, the VM could shut down to clean up it's resources because it is detecting that no users are active.
 
-## Windows Terminal
+- WSL automatically gives file access to Windows files and Windows paths are appended to your path by default, which could cause unexpected behavior for certain Linux applications compared to a traditional Linux environment.
 
-Brief
+More details on these limitations are covered in the WSL documentation FAQs.
 
-## Visual Studio Code and the Remote-WSL Extension
-
-Code editing, debugging, live-reload, intellisense, handling paths between Linux and Windows file systems.
-
-## Microsoft Edge web browser
-
-On Windows, see your web app running.
-
-## Using WSL in a Business or Enterprise setting
-
-- Brief mention that using WSL in an Enterprise setting may require firewall adjustments
-- Mention that WSL can be used to create Linux distro images to distribute within your compan
-
-Notes for this unit:
-
-WSL is designed as a tool for 
-
-Explain the unique aspects of working between two file systems and important considerations.
-
-cross-platform development of applications
-Many Linux application developers have Windows OS machines and use remote Linux servers for work by connecting through SSH (like installing PuTTY software on Windows). These Linux servers/machines are generally shared among multiple developers for their development work. However, very often developers want their own machine instance and that is when a virtual machine (VM) is used.
-Web dev, system admin, 
-On Windows OS based systems, there are VM solutions like VirtualBox or VMware, through which you can install any Linux distro (or any operating system for that matter) you like from an installer ISO. But many developers do not like this due to the performance (it’s very slow and heavy for the overall host system), compatibility issues, lack of tools and support.
-Leveraging Microsoft development tools
-As WSL is natively integrated with the Windows OS, developers can build and debug Linux applications with Windows tools like Visual Studio Code and Visual Studio. Visual Studio Code (https://code.visualstudio.com) is a free and powerful IDE, which has an extension that allows you to attach VSCode to WSL directly (refer to the document explaining this process at https://code.visualstudio.com/docs/remote/wsl). This helps developers to use the powers of the GUI IDE of Windows and command line of Linux simultaneously. There are many other extensions (code formatting, Git history, Docker, etc) in VSCode that give developers lots of flexibility.
-Linux compilers and core utilities
-because its native, linux and windows both use/share the same network-interface (opening a server-port in linux opens the same port in windows).
-Linux software that is expecting to be able to control the drivers probably won’t work (because after all WSL is running on the NT kernel, not Linux). For example WiFi sniffing apps that want to put the WiFi card in promiscuous mode probably won’t work.
-Otherwise, there don’t seem to be many disadvantages, even GUI software works normally after installing an X11 server for Windows and setting the appropriate exports in your .profile - it looks cursed, but it works:
-I have a set of quite diverse workflows, which includes,
-
-python-dev with venvs in deb wsl, using vscode / pycharm. VScode has the functionality to work seamlessly with wsl. But not quite stable, sometimes starts, sometimes waits, sometimes does not start at all. Pycharm needs ultimate edition to work with wsl.
-Docker image builds , wokrs seamlessly with wsl using host docker.
-Kubernetes using Kubernetes desktop works fine. Also, kubectl and k9s in wsl seamlessly integrate with host.
-Other than that, I open around 20–30 tabs on chrome occasional webex. Onenote, maybe some music playing in tidal / spotify. Everything works but didn’t felt stable at all. Many times app and os crash.
-High resource utilization, compare to linux on similar workloads. The windows installation was scrubbed for all bloatware after a fresh installation. I am not quoting a ~100% cpu here. But over all , it reflects in battery level. For identical conservative cpu governer. but high memory usage was directly visible (2–3X) , again for same workloads.
-The only reason to switch back to Linux was due to stability problems. Apps crash, os freezes. I didn’T dig down to find why
-
-To use a WSL deveopment environment, the main thing that you need to keep in mind is simply that you are working between two separate, but integrated, file systems and 
+To wrap-up our introduction to WSL, let's try actually using some basic Linux commands!

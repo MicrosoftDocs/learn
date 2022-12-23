@@ -28,47 +28,47 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: "WSL question 1"
+  - content: "Which statement best describes WSL 2?"
     choices:
-    - content: "WSL answer 1"
+    - content: "A lightweight virtual machine that can run Bash commands, but that isn't 'actual' Linux because it doesn't use a Linux kernel. This makes it ideal for production-level deployment."
+      isCorrect: false
+      explanation: "It is correct to say that WSL 2 uses a lightweight virtual machine to run the Linux distribution and Bash commands, but it does use an actual Linux kernel. It is also designed for development and NOT ideal for production-level deployment."
+    - content: "A translation layer between a Linux distribution (like Ubuntu) and the Windows kernel that allows Windows command line or PowerShell to run Linux commands and seamlessly access Windows or Linux files because they are all stored on the same file system."
+      isCorrect: false
+      explanation: "WSL 1 is a translation layer, whereas WSL 2 is running an actual Linux kernel. Neither WSL 1, nor WSL 2, stores files on the same file system. Windows and Linux file systems are separate and utilize different file system types (NTFS for Windows and ext4 for Linux.)"
+    - content: "A tool that enables any Linux distribution to be run on Windows using a lightweight, behind-the-scenes virtual machine. WSL utilizes both a Linux and Windows file system and enables switching seamlessly between Windows and Linux tools and GUI applications."
       isCorrect: true
-      explanation: "WSL explanation"
-    - content: "WSL answer 2"
-      isCorrect: false
-      explanation: "WSL 2 explainer"
-    - content: "WSL answer 3"
-      isCorrect: false
-      explanation: "WSL 3 explainer"
-  - content: "WSL question 2"
+      explanation: "WSL does use a lightweight virtual machine, but set up is handled automatically and requires few resources, so it's hard to even notice it's running. WSL does utilize separate Windows and Linux file systems, but enables switching seamlessly between the two to run your preferred Windows or Linux command line tools and GUI applications."
+  - content: "What aspect of a typical application development workflow is NOT supported by WSL?"
     choices:
-    - content: "Q2 answer 1"
+    - content: "Installing different versions of Python on the Windows and Linux file systems."
+      isCorrect: false
+      explanation: "Windows and each separate Linux distribution that you install each has it's own file system, with the Linux distributions running a Virtual Hard Disk (VHD) that is encapsulated and runs whatever version of Python you install independently of the version installed on Windows or a different distribution."
+    - content: "Storing a web app project on Linux, running the code for that web app on a local Linux server, while viewing the running web app in a Microsoft Edge browser on Windows, all while debugging the web app in VS Code and seeing hot reload updates."
       isCorrect: true
-      explanation: "q2 a1 explainer"
-    - content: "Q2 answer 2"
+      explanation: "WSL creates a seamless experience between running project code in Linux, but using Windows apps like Microsoft Edge to view the project while it runs. The WSL Extension enables VS Code to debug that project code even though it's running in a Linux distribution on a separate file system, similar to if you were working in a remote container."
+    - content: "Directly deploying a WSL build to a production-ready server."
       isCorrect: false
-      explanation: "q2 a2 explainer"
-    - content: "Q2 answer 3"
-      isCorrect: false
-      explanation: "q2 a3 explainer"
-  - content: "WSL question 3"
+      explanation: "WSL is designed to let you use Linux distributions for development on your local machine. It is possible to use it in production scenarios, but deploying a WSL build to a production-ready server is likely to encounter problems. You can learn more about the problems that you are likely to encounter in the WSL documentation FAQs."
+  - content: "You can run any Linux distribution on WSL, as long as:"
     choices:
-    - content: "Q3 answer 1"
+    - content: "The distribution is listed in the Microsoft Store."
+      isCorrect: false
+      explanation: "A Linux distribution doesn't have to be available in the Microsoft Store in order to install it using WSL. Any distribution can be imported with the proper packaging."
+    - content: "The distribution is widely supported by the Linux development community."
+      isCorrect: false
+      explanation: "A Linux distribution doesn't have to be supported at all in order to install and use it with WSL. You can completely build your own custom distribution to use if you prefer."
+    - content: "The distribution is packaged so that it can be imported."
       isCorrect: true
-      explanation: "q3 a1 explainer"
-    - content: "Q3 a2"
-      isCorrect: false
-      explanation: "q3 a2 explainer"
-    - content: "q3 a3"
-      isCorrect: false
-      explanation: "q3 a3 explainer"
-  - content: "q4"
-    choices:
-    - content: "q4 a1"
-      isCorrect: true
-      explanation: "explainer"
-    - content: "q4 a2"
-      isCorrect: false
-      explanation: "explainer"
-    - content: "q4 a3"
-      isCorrect: false
-      explanation: "explainer"
+      explanation: "Any Linux distribution can be imported with WSL. You can even build your own custom distribution. It just needs to be packaged in a tar file with all of the Linux binaries so that it can be imported (or side-loaded)."
+  # - content: "q4"
+  #   choices:
+  #   - content: "q4 a1"
+  #     isCorrect: true
+  #     explanation: "explainer"
+  #   - content: "q4 a2"
+  #     isCorrect: false
+  #     explanation: "explainer"
+  #   - content: "q4 a3"
+  #     isCorrect: false
+  #     explanation: "explainer"
