@@ -1,7 +1,5 @@
----
-title: Exercise - Design a deployment solution
-durationInMinutes: 10
----
+> [!Note]
+> To complete this exercise, read the case study below. At the end, you'll be asked to give advice by answering the knowledge check questions. 
 
 Welcome to Proseware! You've been hired as the *lead data scientist* to help us design a machine learning deployment solution. 
 
