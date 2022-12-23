@@ -6,28 +6,28 @@ Chaos engineering is a methodology that can improve your service's resiliency an
 
 When you design a chaos experiment, the first steps are known as *failure mode analysis*. It's a paper exercise in which you think of possible failures scenarios that each of these components could encounter:
 
-1. List all the components that are relevant for a given user flow. For example, the checkout user flow requires the front-end web application, the checkout Azure Function, and the Cosmos DB database to all be available and functional.
+1. List all the components that are relevant for a given user flow. For example, the checkout user flow requires the front-end web application, the checkout Azure Function, and the Azure Cosmos DB database to all be available and functional.
 
 1. For each of the identified components, list possible failure cases and their impact, and any potential mitigations that you've already implemented. The outcome can be a table like this:
 
-### Front-end app service
+### Front-end Azure App Service
 
-| **Risk**                   | **Impact/Mitigation/Comment**                |
+| Risk                   | Impact/Mitigation/Comments                |
 | -------------------------------------------- | ------------------------------------------------------------ |
-| **Availability zone outage**     | If an availability zone encounters an outage, the app service instances in that zone might become unavailable. Because you've enabled zonal redundancy on the app service plan, you don't expect to see a full outage. However, you should allow for the extra load on the remaining instances. Therefore, allow for enough head room for this scenario while still achieving the performance targets.                     |
-| **SNAT port exhaustion**             | [Source NAT port exhaustion](/azure/app-service/troubleshoot-intermittent-outbound-connection-errors) is a common scenario on an app service when no more outbound connection can be created. The problem occurs when downstream calls, such as calls to the database, fail. Although you could mitigate this problem by using private endpoints, Contoso Shoes hasn't yet implemented them for all the components.                      |
-| **Individual instance becoming unhealthy** | Individual app service instances can become unhealthy for various reasons, such as memory exhaustion or bad downstream requests. User traffic that gets routed to such an instance might see poor performance or even fail entirely. Because you've previously configured the App Service health check feature, any such instances will automatically be identified and replaced with new, healthy instances. |
+| **Availability zone outage**     | If an availability zone encounters an outage, the App Service instances in that zone might become unavailable. Because you've enabled zonal redundancy on the App Service plan, you don't expect to see a full outage. However, you should allow for the extra load on the remaining instances and provide enough head room for this scenario while still achieving the performance targets.                     |
+| **SNAT port exhaustion**             | [Source NAT port exhaustion](/azure/app-service/troubleshoot-intermittent-outbound-connection-errors) is a common scenario on an App Service instance when no more outbound connection can be created. The problem occurs when downstream calls, such as calls to the database, fail. Although you could mitigate this problem by using private endpoints, Contoso Shoes hasn't yet implemented them for all the components.                      |
+| **Individual instance becoming unhealthy** | Individual App Service instances can become unhealthy for various reasons, such as memory exhaustion or bad downstream requests. User traffic that gets routed to such an instance might see poor performance or even fail entirely. Because you've previously configured the App Service health check feature, any such instances will automatically be identified and replaced with new, healthy instances. |
 
 ### Checkout Azure Function
 
-| **Risk**                   | **Impact/Mitigation/Comment**                |
+| Risk                   | Impact/Mitigation/Comments                |
 | -------------------------------------------- | ------------------------------------------------------------ |
 | **Slow (cold) start performance**     | When you start new instances using the Azure Functions Consumption plan, it doesn't have performance guarantees. Therefore, due to high demand on the service (from "noisy neighbors"), the checkout function might experience a long startup duration that might impact the performance targets. Although the Azure Functions Premium plan will solve this issue, it hasn't yet been implemented by Contoso Shoes.                    |
 | **Underlying storage outage**             | For Azure Functions to work correctly, it requires an Azure Storage account. If that account becomes unavailable, the function will stop working.                       |
 
 ### Azure Cosmos DB
 
-| **Risk**                   | **Impact/Mitigation/Comment**                |
+| Risk                   | Impact/Mitigation/Comments                |
 | -------------------------------------------- | ------------------------------------------------------------ |
 | **Database/collection is renamed**     | This problem is caused by a mismatch in the configuration when you deploy. In this case, Terraform will overwrite the entire database, which could result in data loss. Prevent this situation by using [database/collection level locks](https://feedback.azure.com/forums/263030-azure-cosmos-db/suggestions/35535298-enable-locks-at-database-and-collection-level-as-w). <br />**The application won't be able to access any data**. The app configuration needs to be updated and its components restarted.                     |
 | **Write region outage**             | Contoso Shoes has configured their Azure Cosmos DB account with multiple regions and automatic failover. In case the primary region (or write region) encounters an outage, the service will automatically fail over and prevent any sustained issues in the application.                     |
@@ -41,7 +41,7 @@ The goal of the experiment isn't to break the system, but rather to validate res
 
 Use Chaos Studio to inject the faults into the relevant components. Chaos Studio offers a wide selection of [faults](/azure/chaos-studio/chaos-studio-fault-library) for you to choose from. However, because it doesn't cover everything, you might need to adjust your scenario, or find more tools to help you inject the failure.
 
-## Cosmos DB outage and failover
+## Azure Cosmos DB outage and failover
 
 For the first experiment, pick the **Write region outage** failure scenario of Azure Cosmos DB as described in the previous table. The hypothesis is: *A service-initiated failover shouldn't result in any sustained impact on our application*. If this hypothesis proves to be true, you've validated that the resiliency measure you've taken (set up replication to multiple regions) does indeed have the desired positive effect on our application reliability.
 

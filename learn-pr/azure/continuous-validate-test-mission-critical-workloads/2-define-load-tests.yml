@@ -28,7 +28,7 @@ quiz:
     choices:
     - content: "Yes. Every component outage results in a service degradation."
       isCorrect: false
-      explanation: "Some components might not cause a service degradation when they fail. For example, non-user facing or background and batch processing components might not cause a service degradation when they fail."
+      explanation: "Some components might not cause a service degradation when they fail. Examples are, non-user facing flows, background processes, and batch processing."
     - content: "No. Not all components have the same requirements regarding availability and performance."
       isCorrect: true
       explanation: "For example, an outage of a component that isn't user facing might not result in a service degradation."

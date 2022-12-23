@@ -38,29 +38,29 @@ Contoso Shoes management has decided that it's critical for its customers to:
 
 The following diagram shows the architecture of the application. Ensure you have a good understanding of the individual components and their role within the functionality of the system.
 
-![Diagram showing the architecture for the Contoso Shoes application.](../media/contoso-shoes-architecture.png)
+:::image type="content" source="../media/contoso-shoes-architecture.png" border="false" alt-text="Diagram that shows the architecture for the Contoso Shoes application.":::
 
 ### Components
 
 The application architecture has the following components:
 
-- Front-end web application: The user interface of this workload, which runs on Azure Web Apps.
-  - Reads: Catalog API and Azure Blob Storage
-  - Writes: Requests originating from end users and Catalog API
+- **Front-end web application**: The user interface of this workload, which runs on Azure Web Apps.
+  - *Reads*: Catalog API, Azure Blob Storage
+  - *Writes*: Requests originating from end users, Catalog API
 
-- Catalog API: The API layer that the front-end web application uses to perform data operations on both catalog items and comments. It doesn't do any database writes itself; instead, a message is sent to an event hub to be processed asynchronously. Hosted on Azure Functions.
-  - Reads: Azure Cosmos DB
-  - Writes: Azure Event Hubs
+- **Catalog API**: The API layer that the front-end web application uses for data operations on catalog items and comments. It doesn't do any database writes itself. Instead, a message is sent to an event hub to be processed asynchronously. This component is hosted on Azure Functions.
+  - *Reads*: Azure Cosmos DB
+  - *Writes*: Azure Event Hubs
 
-- Background processor: A component without any public endpoint, which is used for asynchronous processing of database updates. Hosted on Azure Functions.
-  - Reads: Azure Event Hubs
-  - Writes: Azure Cosmos DB
+- **Background processor**: A component that asynchronously processes database updates. The processor doesn't have a public endpoint. This component is hosted on Azure Functions.
+  - *Reads*: Azure Event Hubs
+  - *Writes*: Azure Cosmos DB
 
-- Messaging bus: The messaging bus uses Azure Event Hubs to pass messages between the Catalog API and the background processor.
+- **Messaging bus**: The messaging bus uses Azure Event Hubs to pass messages between the Catalog API and the background processor.
 
-- Database: Data is persisted in Azure Cosmos DB. The Catalog API reads from the database directly, and writes are handled by the background processor. In addition, images are stored in Azure Blob Storage.
+- **Database**: Data is persisted in Azure Cosmos DB. The Catalog API reads from the database directly, and writes are handled by the background processor. Images are stored in Azure Blob Storage.
 
-- Secrets: The application components of this workload use secrets to authorize access. Secrets are stored in Azure Key Vault. The Catalog API and background processor use connection strings to access the database and Azure Event Hubs, while the front-end web application uses an API key to call the Catalog API.
+- **Secrets**: The application components of this workload use secrets to authorize access. Secrets are stored in Azure Key Vault. The Catalog API and background processor use connection strings to access the database and Azure Event Hubs. The front-end web application uses an API key to call the Catalog API.
 
 To prevent performance bottlenecks and to increase confidence in new releases, Contoso Shoes has decided to implement [continuous validation](/azure/architecture/guide/testing/mission-critical-deployment-testing).
 

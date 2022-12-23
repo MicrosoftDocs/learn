@@ -4,7 +4,7 @@ In the previous unit, you learned about user and system flows. We also learned t
 
 ## Use Azure Load Testing to evaluate thresholds
 
-During the development phase, the performance of components and resource requirements are often not clearly known or understood. Azure Load Testing can help to identify the expected performance of the overall solution and its components. which includes the scale-out behavior, and the thresholds to expect for building your baseline.
+During the development phase, the performance of components and resource requirements are often not clearly known or understood. Any kind of load testing can help to identify the expected performance of the overall solution and its components, which include the scale-out behavior, and the thresholds to expect for building your baseline.
 
 Ask the following questions and reevaluate them regularly:
 
@@ -18,9 +18,9 @@ These questions need to be translated into tests and thresholds. After you've re
 
 With [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing), you can evaluate the expected thresholds. The built-in *test criteria* capability allows you to specify certain criteria that a load test needs to pass. You can use this capability to implement different baselines. For example:
 
-![Diagram showing sample test criteria.](../media/deployment-testing-test-criteria.png)
+:::image type="content" source="../media/deployment-testing-test-criteria.png" border="false" alt-text="Table that shows sample test criteria.":::
 
-You can specify these test criteria in JSON and use the API to input them to your load test in Azure Load Testing. Here's an example:
+You can specify these test criteria in JSON and use the API to input them to your load test. Here's an example:
 
 ```json
 [
