@@ -1,34 +1,20 @@
 ### YamlMime:ModuleUnit
-uid: learn.owasp-top-10-for-dotnet-developers.knowledge-check-3
-title: Knowledge Check
+uid: learn.owasp-top-10-for-dotnet-developers.vulnerable-outdated-components
+title: Vulnerable and Outdated Components
 metadata:
-  title: knowledge-check
-  description: "OWASP Top Ten 2021 for .NET Developers. Knowledge check - part 3."
-  ms.date: 11/14/2022
+  title: vulnerable-outdated-components
+  description: "OWASP Top Ten 2021 for .NET Developers. Vulnerable and outdated components."
+  ms.date: 01/09/2022
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: interactive-tutorial
   ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
-durationInMinutes: 2
-
+durationInMinutes: 1
 content: |
+  [!include[](includes/8-vulnerable-outdated-components.md)]
+
 quiz:
   questions:
- 
-  - content: "You plan to analyze deployed and running system. You want to focus finding security vulnerabilities in infrastructure and configuration. Which form of security testing would you benefit the most?"
-    choices:
-    - content: "Static application security testing (SAST)."
-      isCorrect: false
-      explanation: "Static analysis focuses on code prior to its deployment."
-    - content: "Software Composition Analysis (SCA)."
-      isCorrect: false
-      explanation: "Composition analysis focuses on code prior to its deployment."
-    - content: "Dynamic Application Security Testing (DAST)."
-      isCorrect: true
-      explanation: "Correct. Dynamic analysis can inspect and report on infrastructure configuration and expose its weak points."
-    - content: "Chaos testing."
-      isCorrect: false
-      explanation: "Helpful technique in reliability and disaster recovery testing but not quite."
 
   - content: "Should the DevOps team maintain and review list of third party components used in the system for security vulnerabilities? "
     choices:
@@ -41,5 +27,3 @@ quiz:
     - content: "There's no risk associated with third party purchased and OSS components."
       isCorrect: false
       explanation: "Even if your software makes the best effort in staying secure, an insecure or flowed dependency may introduce security vulnerability in your system."
-
-  

@@ -36,3 +36,11 @@ AppSec logically falls under the wider context of **Information Security (InfoSe
 **The Security Development Lifecycle (SDL)** consists of a set of practices that support security assurance and compliance requirements. The SDL helps developers build more secure software by reducing the number and severity of vulnerabilities in software.
 
 **DevSecOps** is an evolution in the way development organizations approach security by introducing a security-first mindset culture, and automating security into every phase of the software development lifecycle from design to delivery.​
+
+### Join the Team
+
+#### Scenario
+
+:::image type="content" source="../../../azure-devops/shared/media/mara.png" alt-text="Cartoon depiction of Sarah":::
+
+Sarah just joined as a developer working on a brown-field legacy software....

@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.owasp-top-10-for-dotnet-developers
 metadata:
-  title: "Introduction to OWASP Top 10 for .NET Developers"          # Do not edit: title must be "Introduction to (product)"
+  title: "Guide to Secure .NET Development with OWASP Top 10"          # Do not edit: title must be "Introduction to (product)"
   description: "Evaluate security risks that come with insecure application development patterns and practices"             # Copy your 'evaluate' Learning Objective here (see below)
   ms.date: 11/14/2022             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: obrocki      # GitHub ID of the Microsoft employee either authoring or project-managing this content
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
   ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
 
-title: "Introduction to OWASP Top 10 for .NET Developers" 
+title: "Guide to Secure .NET Development with OWASP Top 10" 
 
 summary: "Discover the most common software vulnerabilities according to OWASP and different techniques of writing more secure code. Prevent from security bugs creeping into your codebase following security best practices."
 
@@ -54,20 +54,16 @@ subjects:
 units:
 - learn.owasp-top-10-for-dotnet-developers.introduction
 - learn.owasp-top-10-for-dotnet-developers.what-is-owasp-top-10
-- learn.owasp-top-10-for-dotnet-developers.knowledge-check-1
 - learn.owasp-top-10-for-dotnet-developers.broken-access-control
 - learn.owasp-top-10-for-dotnet-developers.cryptographic-failures
 - learn.owasp-top-10-for-dotnet-developers.injection
-- learn.owasp-top-10-for-dotnet-developers.knowledge-check-2
 - learn.owasp-top-10-for-dotnet-developers.insecure-design
 - learn.owasp-top-10-for-dotnet-developers.identification-authentication-failures
 - learn.owasp-top-10-for-dotnet-developers.security-misconfiguration
-- learn.owasp-top-10-for-dotnet-developers.knowledge-check-3
 - learn.owasp-top-10-for-dotnet-developers.security-logging-monitoring
 - learn.owasp-top-10-for-dotnet-developers.server-side-request-forgery
 - learn.owasp-top-10-for-dotnet-developers.software-data-integrity-failures
 - learn.owasp-top-10-for-dotnet-developers.vulnerable-outdated-components
-- learn.owasp-top-10-for-dotnet-developers.knowledge-check-4
 - learn.owasp-top-10-for-dotnet-developers.summary
 
 badge:

@@ -1,0 +1,26 @@
+### YamlMime:ModuleUnit
+uid: learn.owasp-top-10-for-dotnet-developers.broken-access-control
+title: Broken Access Control
+metadata:
+  title: broken-access-control
+  description: "OWASP Top Ten 2021 for .NET Developers. Broken Access Control."
+  ms.date: 01/09/2022
+  author: obrocki
+  ms.author: dawidobrocki
+  ms.topic: interactive-tutorial
+  ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-broken-access-control.md)]
+
+quiz:
+  questions:
+
+  - content: "The goal of Open Web Application Security Project (OWASP) Top 10 report put together by security experts is to"  
+    choices:
+    - content: "Improve awareness and promote recommended mitigation techniques to most critical security concerns for web app security."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Create a standard for security benchmark of web applications."
+      isCorrect: false
+      explanation: "Incorrect. OWASP Top 10 is often effort to as 'awareness document' for educational purposes."

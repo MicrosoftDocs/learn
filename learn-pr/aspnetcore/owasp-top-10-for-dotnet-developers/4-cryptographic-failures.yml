@@ -1,0 +1,26 @@
+### YamlMime:ModuleUnit
+uid: learn.owasp-top-10-for-dotnet-developers.cryptographic-failures
+title: Cryptographic Failures
+metadata:
+  title: cryptographic-failures
+  description: "OWASP Top Ten 2021 for .NET Developers. Cryptographic failures."
+  ms.date: 01/09/2022
+  author: obrocki
+  ms.author: dawidobrocki
+  ms.topic: interactive-tutorial
+  ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-cryptographic-failures.md)]
+
+quiz:
+  questions: 
+
+  - content: "It's considered to be good practice to come up with your own home-grown encryption."  
+    choices:
+    - content: "Yes"
+      isCorrect: false
+      explanation: "Incorrect. Rely on industry standard encryption and hashing implementations. Review the documentation to ensure you're using strong algorithms."
+    - content: "No"
+      isCorrect: true
+      explanation: "Correct. Rely on industry standard encryption and hashing implementations. Review the documentation to ensure you're using strong algorithms."    

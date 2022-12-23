@@ -11,7 +11,7 @@ metadata:
   ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
 durationInMinutes: 4
 content: |
-  [!include[](includes/17-summary.md)]
+  [!include[](includes/13-summary.md)]
   
 # more: |
 #   [https://docs.microsoft.com/en-us/learn/modules/owasp-and-dynamic-analyzers/]
