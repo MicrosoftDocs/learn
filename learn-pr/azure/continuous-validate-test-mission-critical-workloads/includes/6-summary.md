@@ -1,17 +1,24 @@
-To prevent performance bottlenecks and to increase confidence in new releases, Contoso Shoes has decided to implement [continuous validation](/azure/architecture/guide/testing/mission-critical-deployment-testing). This process contained the definition of relevant user and system flows, the definition of load tests for these flows to validate the expected performance and thresholds, defining baselines for normal and special scenarios like for example during chaos experiments and the implementation embedded into an automated pipeline.
+To prevent performance bottlenecks and to increase confidence in new releases, Contoso Shoes has decided to implement [continuous validation](/azure/architecture/guide/testing/mission-critical-deployment-testing). 
 
-The newly gained insights and the consistent and regular continuous validation process has increased the confidence into new releases and has reduced the number of issues that have occurred as part of releases as well as under normal operations.
+To implement continuous validation, the company:
+
+- Defined relevant user and system flows
+- Defined load tests for these flows to validate the expected performance and thresholds
+- Defined baselines for normal scenarios and special scenarios that were simulated during chaos experiments.
+- Embedded the continuous validation implementation into an automated pipeline.
+
+The newly gained insights and the consistent and regular continuous validation process has increased the confidence for new releases. It's also reduced the number of issues that have occurred during new release roll-outs and normal operations.
 
 ## Learning objectives
 
 You've learned how to design and use continuous validation and have applied this knowledge through the exercises to meet an organization's needs. You should now be able to:
 
-- You understand the importance of user and system flows as the foundation for defining load tests and chaos experiments for your workload.
-- You established a baseline with expected thresholds for the system.
-- You defined requirements for load testing and chaos experiments.
+- Understand the importance of user and system flows as the foundation for defining load tests and chaos experiments for your workload.
+- Establish a baseline with expected thresholds for the system.
+- Define requirements for load testing and chaos experiments.
 - Design and use continuous validation for a production-ready, mission-critical solution.
 
-Congratulations on completing this training module!
+Congratulations on completing this training module.
 
 ## Learn more
 
@@ -21,6 +28,6 @@ Congratulations on completing this training module!
 
 - For more information about Mission-critical workloads on Azure, see [Mission-critical workloads](/azure/architecture/framework/mission-critical/mission-critical-overview).
 
-- See [Continuous Validation with Azure Load Test and Azure Chaos Studio](/azure/architecture/framework/mission-critical/mission-critical-deployment-testing#demo-video-continuous-validation-with-azure-load-test-and-azure-chaos-studio) for a video of a CV implementation.
+- See [Continuous validation with Azure Load Test and Azure Chaos Studio](/azure/architecture/framework/mission-critical/mission-critical-deployment-testing#demo-video-continuous-validation-with-azure-load-test-and-azure-chaos-studio) for a video of a CV implementation.
 
 - Start the [Mission Critical Well-Architected Review](/assessments/23513bdb-e8a2-4f0b-8b6b-191ee1f52d34) assessment to evaluate the state of your continuous validation solution in your existing mission-critical workload, and to take any recommended actions to improve it. Pay special attention to the *Mission Critical: Deployment and Testing* section.

@@ -1,25 +1,29 @@
-**Continuous Validation (CV)** is one of the concepts of the **Azure Mission-Critical** design methodology that helps to ensure that a mission-critical solution stays operational even when failures and exceptional situations occur. This is done by testing changes and releases in a controlled environment under production-like conditions such as sustained user load and by injecting faults to test the workloads resiliency and measures to handle faults.
+*Continuous validation* is one of the concepts of the *Azure mission-critical* design methodology that helps to ensure that a mission-critical solution stays operational even when failures and exceptional situations occur. This is done by testing changes and releases in a controlled environment under production-like conditions such as sustained user load and by injecting faults to test the workloads resiliency and measures to handle faults.
 
-Continuous Validation is implemented as a set of processes and tools, embedded into a pipeline or workflow to enable developers and ops teams to do CV on a regular basis for example prior to every release or major code changes and helps to ensure a solution's performance and resiliency before it gets rolled out to production.
+Continuous validation is implemented as a set of processes and tools, and embedded into a pipeline or workflow to enable developers and operations teams to do continuous validation regularly. For example, you can run continuous validation prior to every release or major code change. Continuous validation helps to ensure a solution's performance and resiliency before it enters production.
 
-In Continuous Validation, you:
+In continuous validation, you:
 
-- Run tests under production-like conditions
-- Define tests based on user and system flows and their expected performance
-- Establish baselines for different scenarios and stages
-- Evaluate and adjust baselines and thresholds on a regular basis
-- Implement automated Continuous Validation pipelines
+- Run tests under production-like conditions.
+- Define tests based on user and system flows, and their expected performance.
+- Establish baselines for different scenarios and stages.
+- Evaluate and adjust baselines and thresholds regularly.
+- Implement automated continuous validation pipelines.
 
 Microsoft Azure provides the following services to implement load testing and chaos engineering:
 
 - [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing) is a managed service used to generate synthetic traffic to test the application and underlying infrastructure and services.
 - [Azure Chaos Studio](/azure/chaos-studio/chaos-studio-overview) is a managed service that provides chaos engineering capabilities to systematically inject failures into key components of the application.
 
-To validate the impact of application changes under realistic conditions at any time of the development cycle, you can run these two services simultaneously by embedding them in an Azure DevOps CI/CD pipeline.
+To validate the impact of application changes under realistic conditions at any time of the development cycle, you can run these two services simultaneously by embedding them in an Azure DevOps continuous integration and continuous delivery (CI/CD) pipeline.
 
 ## Example scenario
 
-Contoso Shoes migrated its on-premises deployments to the cloud two years ago. Although they saw improvements in operations, it was challenging to keep their availability and uptime within the service level agreement (SLA). Previous product launches led to outages because the system wasn't able to meet the increase in load and they weren't able to anticipate the issues and their impact earlier in the development cycle. It resulted in significant financial loss. Based on that experience, Contoso Shoes has successfully applied the [principles of mission-critical architecture](/azure/architecture/framework/mission-critical/mission-critical-design-principles) in their main customer-facing application.
+Contoso Shoes migrated its deployments from an on-premises environment to the cloud two years ago. Although the company saw improvements in operations, keeping its availability and uptime within its service-level agreement continued to be a challenge. Earlier product launches resulted in outages and financial loss because the system couldn't meet the demands of increased user load.
+
+To prevent further avoidable outages, Contoso Shoes successfully applied the [Design principles of a mission-critical workload](/azure/architecture/framework/mission-critical/mission-critical-design-principles) in its main customer-facing web application, the store website.
+
+As Contoso Shoes prepares for its next high-profile product launch, the company has decided to implement continuous validation in its pre-production environment so that it can identify potential issues as early as possible in the development cycle.
 
 ## Application
 
@@ -27,8 +31,8 @@ The application works like other common e-commerce websites, including the main 
 
 Contoso Shoes management has decided that it's critical for its customers to:
 
-- Interact with the catalog by displaying a list of items and browsing items
-- Proceed through the checkout process to actually purchase items
+- Interact with the catalog by displaying a list of items and browsing items.
+- Proceed through the checkout process to actually purchase items.
 
 ## Architecture
 
@@ -42,7 +46,7 @@ The application architecture has the following components:
 
 - Front-end web application: The user interface of this workload, which runs on Azure Web Apps.
   - Reads: Catalog API, Azure Blob Storage
-  - Writes: Requests coming from end users, Catalog API
+  - Writes: Requests originating from end users, Catalog API
 
 - Catalog API: The API layer that the front-end web application uses to perform data operations on both catalog items and comments. It doesn't do any database writes itself; instead, a message is sent to an event hub to be processed asynchronously. Hosted on Azure Functions.
   - Reads: Azure Cosmos DB
