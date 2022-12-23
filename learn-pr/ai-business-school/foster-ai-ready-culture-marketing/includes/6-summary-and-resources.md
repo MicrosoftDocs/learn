@@ -1,6 +1,6 @@
 Microsoft have discovered the importance of creating an empowering and inclusive environment that enables cross-functional, multidisciplinary collaboration. This is critical when implementing AI. As you think about adopting and implementing AI, consider your AI transformation holistically.
 
-Now that you have reviewed this module, you should be able to:
+Now that you've reviewed this module, you should be able to:
 
 * Recognize the key elements of an AI-ready organizational culture in marketing.
 * Explain how Microsoft incorporated AI into our marketing processes.
