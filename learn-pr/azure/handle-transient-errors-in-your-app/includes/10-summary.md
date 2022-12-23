@@ -1,4 +1,4 @@
-In this module you have seen how to capture transient errors, and how your app can try to recover from them. You've implemented a retry policy, that is configurable and external to your app, allowing you to reuse the policy in multiple places, or other apps.
+In this module you've seen how to capture transient errors, and how your app can try to recover from them. You've implemented a retry policy, that is configurable and external to your app, allowing you to reuse the policy in multiple places, or other apps.
 
 This module has focused on the code you can write to handle transient errors, using as many native libraries provided by the language as possible. There are a number of third-party open-source libraries you can use, if you require more comprehensive fault handling.
 
