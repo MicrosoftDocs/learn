@@ -17,7 +17,7 @@ az appservice plan create \
     --name pwa-exercise-plan \
     --sku FREE \
     --location centralus \
-    --resource-group <rgn>[sandbox resource group name]</rgn>
+    --resource-group [your resource group]
 ```
 
 Next, run the following command to create the Web App that uses the App Service plan you just created.
@@ -26,7 +26,7 @@ Next, run the following command to create the Web App that uses the App Service 
 az webapp create \
     --plan pwa-exercise-plan \
     --runtime "node|10.6" \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group [your resource group] \
     --name <your-unique-app-name>
 ```
 
