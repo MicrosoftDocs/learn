@@ -8,7 +8,7 @@ We've created our dataset in Custom Vision. Now, we can train our model. You cou
 
 :::image type="content" source="../media/custom-vision-quick-train.png" alt-text="Screenshot that shows how to create a quick training iteration in the Custom Vision portal.":::
 
-During the training process, an **Iterations** pane appears on the left. A **Training…** notification in the pane indicates that training is in progress. When training finishes, information about how the model performed for the training iteration is shown.
+During the training process, an **Iterations** pane appears. A **Training…** notification in the pane indicates that training is in progress. When the training process finishes, information about how the model performed for the training iteration is shown.
 
 :::image type="content" source="../media/custom-vision-train-model-iteration-metrics.png" alt-text="Screenshot that shows graphical and numerical metrics for a training iteration of a Custom Vision project.":::
 
