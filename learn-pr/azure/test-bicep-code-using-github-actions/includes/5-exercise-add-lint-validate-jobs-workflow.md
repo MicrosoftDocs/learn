@@ -1,8 +1,8 @@
-You've spoken to your team and have decided to further automate your deployments by using a workflow. You want to build more confidence in what you deploy. 
+You've spoken to your team and have decided to further automate your deployments by using a workflow. You want to build more confidence in what you deploy.
 
 In this exercise, you'll add validation jobs to your workflow. You'll then run the linter and preflight validation before each deployment.
 
-During the process, you'll: 
+During the process, you'll:
 
 > [!div class="checklist"]
 > * Update your existing workflow to add two new jobs to lint and validate your Bicep code.
@@ -34,7 +34,7 @@ During the process, you'll:
 
    Your workflow definition now has three jobs. The first lints your Bicep file, the second performs a preflight validation, and the third performs the deployment to Azure.
 
-1. Below the `runs-on` line in the `deploy` job, add a `needs` statement: 
+1. Below the `runs-on` line in the `deploy` job, add a `needs` statement:
 
    :::code language="yaml" source="code/5-workflow.yml" range="44-48" highlight="3" :::
 
@@ -49,10 +49,10 @@ During the process, you'll:
 By default, the Bicep linter provides a warning when it detects a problem with your file. GitHub Actions doesn't treat linter warnings as problems that should stop your workflow. To customize this behavior, you create a *bicepconfig.json* file that reconfigures the linter.
 
 1. Add a new file in the *deploy* folder and name it *bicepconfig.json*.
-   
+
    :::image type="content" source="../media/5-visual-studio-code-bicep-config-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the new file shown in the deploy folder.":::
 
-1. Copy the following code into the file:    
+1. Copy the following code into the file:
 
    :::code language="json" source="code/5-bicepconfig.json" :::
 
@@ -60,7 +60,7 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 ## Configure the deploy job to work with the linter
 
-When you use custom linter configuration, Bicep writes log data that GitHub Actions interprets as an error. To disable this behavior, you configure the `arm-deploy` task to ignore the standard error (stderr) log stream.
+When you use a custom linter configuration, Bicep writes log data that GitHub Actions interprets as an error. To disable this behavior, you configure the `arm-deploy` task to ignore the standard error (stderr) log stream.
 
 1. Open the *workflow.yml* file.
 
@@ -120,11 +120,13 @@ When you use custom linter configuration, Bicep writes log data that GitHub Acti
 
    :::image type="content" source="../media/5-workflow-run-lint-job-step.png" alt-text="Screenshot of the workflow log for the Lint job, with the step for running a Bicep linter highlighted.":::
 
-   Notice that the error displayed is similar to the following one:
+   The error in the workflow log includes a linter error message:
 
-   > Error no-unused-params: Parameter "storageAccountNameParam" is declared but never used.
+   ```Output
+   Error no-unused-params: Parameter "storageAccountNameParam" is declared but never used.
+   ```
 
-   This error indicates that the linter found a rule violation in your Bicep file.
+   This error message indicates that the linter found a rule violation in your Bicep file.
 
 ## Fix the linter error
 
@@ -168,9 +170,11 @@ Now that you've identified the problem, you can fix it in your Bicep file.
 
    :::image type="content" source="../media/5-workflow-run-validate-job-step.png" alt-text="Screenshot of the workflow log for the Validate job, with the step for running preflight validation highlighted.":::
 
-   Notice that the error displayed in the log includes the following message:
+   The error displayed in the workflow log includes the following message:
 
-   > mystorageresourceNameSuffix is not a valid storage account name. Storage account name must be between 3 and 24 characters in length and use numbers and lower-case letters only.
+   ```Output
+   mystorageresourceNameSuffix is not a valid storage account name. Storage account name must be between 3 and 24 characters in length and use numbers and lower-case letters only.
+   ```
 
    This error indicates that the storage account name isn't valid.
 
@@ -182,13 +186,13 @@ You've found another problem in the Bicep file. Here, you fix the problem.
 
 1. Look at the definition of the `storageAccountName` variable:
 
-   :::code language="bicep" source="code/5-template-2.bicep" range="16-19" highlight="4" :::
+   :::code language="bicep" source="code/5-template-2.bicep" range="16-20" highlight="5" :::
 
    There seems to be a typo, and the string interpolation hasn't been configured correctly.
 
 1. Update the `storageAccountName` variable to use string interpolation correctly:
 
-   :::code language="bicep" source="code/5-template-3.bicep" range="19" :::
+   :::code language="bicep" source="code/5-template-3.bicep" range="20" :::
 
 1. Save the file.
 

@@ -1,6 +1,6 @@
 You want to add an extra job to your workflow so you can check what changes will be made to your Azure environment.
 
-During the process, you'll: 
+During the process, you'll:
 
 > [!div class="checklist"]
 > * Update the workflow YAML file to add a new preview job.
@@ -55,7 +55,7 @@ In the setup steps for this module, you already created a federated credential f
 
 ## Update the workflow definition to require an environment and reviewer
 
-Here, you configure the **deploy** job to run against the **Website** environment that you created previously. 
+Here, you configure the **deploy** job to run against the **Website** environment that you created previously.
 
 1. Open the *workflow.yml* file in Visual Studio Code.
 
@@ -103,7 +103,7 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
    :::code language="output" source="code/7-what-if-output.txt" :::
 
-   The what-if operation has detected a change to the website resource. However, the changes that it has detected are noise. They don't represent real changes to your resource. Over time, the Azure team works to reduce noise. In the meantime, for these two specific properties, you can ignore the detected changes.
+   The what-if operation has detected a change to the log analytics workspace and website resources. However, the changes that it has detected are noise. They don't represent real changes to your resource. Over time, the Azure team works to reduce noise. In the meantime, you can ignore the detected changes.
 
    You might also see an item in the what-if output for the resource type `microsoft.alertsmanagement/smartDetectorAlertRules/Failure Anomalies - toywebsite`. This is a resource that Application Insights creates automatically. The what-if command detects that no change will be made to the resource.
 
