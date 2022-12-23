@@ -1,4 +1,4 @@
-*Continuous validation* is one of the concepts of the *Azure mission-critical* design methodology that helps to ensure that a mission-critical solution stays operational even when failures and exceptional situations occur. This is done by testing changes and releases in a controlled environment under production-like conditions such as sustained user load and by injecting faults to test the workloads resiliency and measures to handle faults.
+*Continuous validation* is a concept of the *Azure mission-critical* design methodology that helps to ensure that a mission-critical solution stays operational even when failures and exceptional situations occur. It's done by testing changes and releases regularly in a controlled environment under production-like conditions. Such tests can include using a sustained user load and injecting faults to test the workload's resiliency and ability to handle faults.
 
 Continuous validation is implemented as a set of processes and tools, and embedded into a pipeline or workflow to enable developers and operations teams to do continuous validation regularly. For example, you can run continuous validation prior to every release or major code change. Continuous validation helps to ensure a solution's performance and resiliency before it enters production.
 
@@ -32,11 +32,11 @@ The application works like other common e-commerce websites, including the main 
 Contoso Shoes management has decided that it's critical for its customers to:
 
 - Interact with the catalog by displaying a list of items and browsing items.
-- Proceed through the checkout process to actually purchase items.
+- Proceed through the checkout process to purchase items.
 
 ## Architecture
 
-The following diagram shows the architecture of the application. Ensure you've a good understanding of the individual components and their role within the functionality of the system.
+The following diagram shows the architecture of the application. Ensure you have a good understanding of the individual components and their role within the functionality of the system.
 
 ![Diagram showing the architecture for the Contoso Shoes application.](../media/contoso-shoes-architecture.png)
 
@@ -45,8 +45,8 @@ The following diagram shows the architecture of the application. Ensure you've a
 The application architecture has the following components:
 
 - Front-end web application: The user interface of this workload, which runs on Azure Web Apps.
-  - Reads: Catalog API, Azure Blob Storage
-  - Writes: Requests originating from end users, Catalog API
+  - Reads: Catalog API and Azure Blob Storage
+  - Writes: Requests originating from end users and Catalog API
 
 - Catalog API: The API layer that the front-end web application uses to perform data operations on both catalog items and comments. It doesn't do any database writes itself; instead, a message is sent to an event hub to be processed asynchronously. Hosted on Azure Functions.
   - Reads: Azure Cosmos DB

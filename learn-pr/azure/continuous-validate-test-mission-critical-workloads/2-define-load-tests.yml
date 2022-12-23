@@ -18,17 +18,17 @@ quiz:
   questions:
   - content: "Are all user and system flows always equally important?"
     choices:
-    - content: "Yes. Not all user and system flows are equally important."
+    - content: "Yes. All user and system flows are equally important."
       isCorrect: false
-      explanation: "For example, asynchronous flows might have lower requirements regarding performance or availability."
+      explanation: "Some flows might be less important. For example, asynchronous flows might have lower requirements regarding performance or availability."
     - content: "No. Some flows might have lower requirements."
       isCorrect: true
       explanation: "For example, batch processing or asynchronous flows might have lower requirements regarding performance and availability."
   - content: "Does an outage of a component always result in a service degradation?"
     choices:
-    - content: "Yes. Some components might not cause a service degradation when they fail."
+    - content: "Yes. Every component outage results in a service degradation."
       isCorrect: false
-      explanation: "For example, non-user facing or background and batch processing components might not cause a service degradation when they fail."
+      explanation: "Some components might not cause a service degradation when they fail. For example, non-user facing or background and batch processing components might not cause a service degradation when they fail."
     - content: "No. Not all components have the same requirements regarding availability and performance."
       isCorrect: true
       explanation: "For example, an outage of a component that isn't user facing might not result in a service degradation."

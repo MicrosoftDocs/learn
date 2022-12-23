@@ -1,6 +1,6 @@
-In the previous unit we learned about user and system flows. We also learned that an application can consist of several user and system flows, which may not all have the same requirements regarding performance and availability.
+In the previous unit, you learned about user and system flows. We also learned that an application can consist of several user and system flows, which might not all have the same requirements regarding performance and availability.
 
-- For example, in the checkout user flow, the average page load duration of each checkout step should be less than 500 milliseconds, when up to 100 concurrent users are using the checkout at the same time.
+- For example, in the checkout user flow, the average page load duration of each checkout step should be less than 500 milliseconds when up to 100 concurrent users are using the checkout at the same time.
 
 ## Use Azure Load Testing to evaluate thresholds
 
@@ -16,11 +16,11 @@ Ask the following questions and reevaluate them regularly:
 
 These questions need to be translated into tests and thresholds. After you've recorded the details of your baseline in your notes, use this baseline to help analyze and evaluate the performance of the overall solution and its components in a consistent way, and identify changes and drifts.
 
-With [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing), you can evaluate the expected thresholds. The built-in *test criteria* capability, allows you to specify certain criteria that a load test needs to pass. You can use this capability to implement different baselines.
+With [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing), you can evaluate the expected thresholds. The built-in *test criteria* capability allows you to specify certain criteria that a load test needs to pass. You can use this capability to implement different baselines. For example:
 
 ![Diagram showing sample test criteria.](../media/deployment-testing-test-criteria.png)
 
-You can specify these test criteria in JSON and use the API to input them to Azure Load Testing when you create a load test. Here's an example:
+You can specify these test criteria in JSON and use the API to input them to your load test in Azure Load Testing. Here's an example:
 
 ```json
 [
@@ -56,7 +56,7 @@ You can specify these test criteria in JSON and use the API to input them to Azu
 ]
 ```
 
-When you run your tests, there might be different requirements for special situations, such as a faulty component or a load spike. In a special situation, as opposed to a normal operation, higher error rates or lower requests per second are expected and acceptable. The result is different baselines with adjusted thresholds for different scenarios.
+When you run your tests, there might be different requirements for special situations, such as a faulty component or a load spike. In a special situation, as opposed to a normal operation, higher error rates or lower requests per second could be expected and acceptable. The result is different baselines with adjusted thresholds for different scenarios.
 
 Typical scenarios are:
 

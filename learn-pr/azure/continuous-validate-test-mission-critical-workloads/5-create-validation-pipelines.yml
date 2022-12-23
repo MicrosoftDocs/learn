@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "How can a load test and chaos experiments be executed and orchestrated?"
+  - content: "How can a load test and chaos experiment be executed and orchestrated?"
     choices:
     - content: "Manually via the Azure portal"
       isCorrect: false
@@ -29,7 +29,7 @@ quiz:
       explanation: "Chaos experiments and load tests can be executed in parallel and the process should be automated."
   - content: "What needs to be done after a failed load test?"
     choices:
-    - content: "Nothing"
+    - content: "No action is needed."
       isCorrect: false
       explanation: "The results of a failed load test run should be analyzed and the baseline adjusted if needed."
     - content: "Use a different load test tool."
