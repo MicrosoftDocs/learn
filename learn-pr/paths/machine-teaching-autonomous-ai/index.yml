@@ -1,0 +1,46 @@
+### YamlMime:LearningPath
+uid: learn.oxford.machine-teaching-autonomous-ai
+metadata:
+  title: Machine Teaching for Autonomous AI
+  description: This learning path aims to design and implement Machine Teaching for Autonomous AI brains.
+  ms.date: 12/12/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Machine Teaching for Autonomous AI
+summary: |
+  In this path, you'll learn to design and implement a new AI paradigm called Machine Teaching for Autonomous AI. Machine Teaching uses the knowledge of subject matter experts to teach AI. Machine Teaching integrates known control methods, for stable control, Machine Learning, for advance perception, and Deep Reinforcement Learning, for learning strategies and human-like decision making. The deployment in industrial processes without disruption and providing real business value is considered from its design. Machine Teaching for Autonomous AI stores expert operators' skill set, and it helps companies achieve new levels of optimization for competitiveness, profitability, and sustainability. The hands-on development of Autonomous solutions will be taught using the Microsoft Project Bonsai Platform, a low-code platform where Machine Teaching is used to the implementation, training, and validation of Bonsai brains.
+
+  At the end of this learning path, you'll be able to:
+  - Select use cases where autonomous AI will outperform both humans and automated systems.
+  - Leverage human expertise to design and teach AI solutions.
+  - Use brain design patterns to quickly design brains for any use case.
+  - Fill up AI specification documents that accurately describe the problem and the proposed solution.
+  - Build, train, and validate Autonomous AI brains in the Project Bonsai platform using the AI specification document as starting point.
+  - Visually understanding brain performance using embedded graph interfaces.
+
+  ***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+products:
+- azure
+- bonsai
+subjects:
+- artificial-intelligence
+modules:
+- learn.oxford.explore-automated-intelligence
+- learn.oxford.explore-autonomous-intelligence
+- learn.oxford.intro-machine-teaching
+- learn.oxford.explore-design-brain-patterns
+- learn.oxford.explore-select-use-cases
+- learn.oxford.explore-ai-specification
+- learn.oxford.teach-ai-with-project-bonsai
+- learn.oxford.build-industrial-brain
+trophy:
+  uid: learn.oxford.machine-teaching-autonomous-ai.trophy

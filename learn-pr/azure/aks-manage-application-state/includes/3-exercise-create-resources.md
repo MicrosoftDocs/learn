@@ -7,7 +7,7 @@ Now that you understand the basic concepts of external states and how to deal wi
 
 1. Sign into [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your own subscription.
 
-1. Select **Resource groups** on the left.
+1. Select **Resource groups**.
 
 1. Select **Create** to open the **Create a resource group** pane.
 
@@ -201,7 +201,7 @@ You need to create three main files. Let's start by creating the *deploy.yaml* f
     kubectl apply -f backend-deploy.yaml
     ```
 
-To make this application available to everyone, you'll need to create a service and an ingress to take care of all traffic between the application and the world.
+To make this application available to everyone, you'll need to create a service and an ingress, to take care of all traffic between the application and the world.
 
 1. Create a new file called *backend-network.yaml*, and add the following .yaml notation:
 

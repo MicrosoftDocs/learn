@@ -13,76 +13,75 @@ durationInMinutes: 3
 content: |
   [!include[](includes/4-knowledge-check.md)]
 quiz:
-  title: Check your knowledge
   questions:
   - content: "Select which one of the following technologies is Autonomous Intelligence:"
     choices:
     - content: "Control Theory"
       isCorrect: false
-      explanation: "Control Theory is an example of Automated Intelligence, not Autonomous Intelligence. Mathematical models are used to hardcode the response of the control to system transients."
+      explanation: "Incorrect. Control Theory is an example of Automated Intelligence, not Autonomous Intelligence. Mathematical models are used to hardcode the response of the control to system transients."
     - content: "Expert Systems"
       isCorrect: false
-      explanation: "Expert Systems are an example of Automated Intelligence, not Autonomous Intelligence. A set of rules & constraints are hardcoded towards replicating human decision making."
+      explanation: "Incorrect. Expert Systems are an example of Automated Intelligence, not Autonomous Intelligence. A set of rules & constraints are hardcoded towards replicating human decision making."
     - content: "Deep Reinforcement Learning"
       isCorrect: true
-      explanation: "Deep Reinforcement Learning is an example of Autonomous Intelligence. The agent is allowed to experiment on the simulated environment to learn the optimal control."
+      explanation: "Correct. Deep Reinforcement Learning is an example of Autonomous Intelligence. The agent is allowed to experiment on the simulated environment to learn the optimal control."
     - content: "Optimization algorithms"
       isCorrect: false
-      explanation: "Optimization algorithms are an example of Automated intelligence, not Autonomous Intelligence. The algorithms explore the best action based on an approximation function or simulation."
+      explanation: "Incorrect. Optimization algorithms are an example of Automated intelligence, not Autonomous Intelligence. The algorithms explore the best action based on an approximation function or simulation."
   - content: "Select which one of the following technologies has the following superpower “It automatically learns strategy”:"
     choices:
     - content: "Optimization algorithms"
       isCorrect: false
-      explanation: "Optimization algorithms don't learn strategies but query the approximator function of the model to find the best action that maximizes the target goal."
+      explanation: "Incorrect. Optimization algorithms don't learn strategies but query the approximator function of the model to find the best action that maximizes the target goal."
     - content: "Expert systems"
       isCorrect: false
-      explanation: "Expert Systems include a set of predefined rules to control the environment. Strategies are hardcoded into the algorithm, not learned."
+      explanation: "Incorrect. Expert Systems include a set of predefined rules to control the environment. Strategies are hardcoded into the algorithm, not learned."
     - content: "Machine Learning"
       isCorrect: false
-      explanation: "Machine Learning doesn't find strategies. Unsupervised learning structures the data and finds patterns. Supervised learning learns to replicate human-like outputs based on labels used to train the model."
+      explanation: "Incorrect. Machine Learning doesn't find strategies. Unsupervised learning structures the data and finds patterns. Supervised learning learns to replicate human-like outputs based on labels used to train the model."
     - content: "Reinforcement Learning"
       isCorrect: true
-      explanation: "Reinforcement Learning is the only technology that can learn strategies since it looks at the impact of past actions to exploit future state-conditions."
+      explanation: "Correct. Reinforcement Learning is the only technology that can learn strategies since it looks at the impact of past actions to exploit future state-conditions."
   - content: "What is the primary strength of Machine Learning as a building block of Machine Teaching?"
     choices:
     - content: "Well established patterns of development towards integration on the industrial world."
       isCorrect: false
-      explanation: "Machine Learning is developed lately with Machine Learning Operationalization. But that isn't the primary strength why it's used in Machine Teaching."
+      explanation: "Incorrect. Machine Learning is developed lately with Machine Learning Operationalization. But that isn't the primary strength why it's used in Machine Teaching."
     - content: "Special ability to search optimally across a huge number of options."
       isCorrect: false
-      explanation: "Machine Learning isn't optimal for searching across possible options. That is what optimization algorithms do well."
+      explanation: "Incorrect. Machine Learning isn't optimal for searching across possible options. That is what optimization algorithms do well."
     - content: "Advance Perception, Prediction, and Classification."
       isCorrect: true
-      explanation: "You'll use ML in our Autonomous AI brain design when we need advanced perception (computer vision, natural language understanding) or we need to predict or classify large sets of data."
+      explanation: "Correct. You'll use ML in our Autonomous AI brain design when we need advanced perception (computer vision, natural language understanding) or we need to predict or classify large sets of data."
     - content: "Outstanding technology to learn human-like strategies."
       isCorrect: false
-      explanation: "The technology that learns strategy isn't Machine Learning, it's Reinforcement Learning."
+      explanation: "Incorrect. The technology that learns strategy isn't Machine Learning, it's Reinforcement Learning."
   - content: "What is the primary strength of Reinforcement Learning as a building block of Machine Teaching?"
     choices:
     - content: "Easy to benchmark and maintain."
       isCorrect: false
-      explanation: "Control theory is the set of technologies that are the easiest to benchmark and maintain."
+      explanation: "Incorrect. Control theory is the set of technologies that are the easiest to benchmark and maintain."
     - content: "Searches huge number of options."
       isCorrect: false
-      explanation: "Optimization algorithms do search huge amounts of options."
+      explanation: "Incorrect. Optimization algorithms do search huge amounts of options."
     - content: "Effective in dynamic environments."
       isCorrect: false
-      explanation: "Although RL is effective in dynamic environments, it isn't its primary strength. Machine Learning is good at dealing with dynamic conditions."
+      explanation: "Incorrect. Although RL is effective in dynamic environments, it isn't its primary strength. Machine Learning is good at dealing with dynamic conditions."
     - content: " Only technology that can learn strategy at human level."
       isCorrect: true
-      explanation: "RL is the only technology that can learn strategy as a human would, accounting for current actions to meet future desired environmental conditions."
+      explanation: "Correct. RL is the only technology that can learn strategy as a human would, accounting for current actions to meet future desired environmental conditions."
   - content: "What isn't a weakness of Machine Learning and Deep Reinforcement Learning?"
     choices:
     - content: "Time and resource intensive to search and prune options when embedded on a system for industrial control."
       isCorrect: true
-      explanation: "ML & RL don't search and prune for options."
+      explanation: "Correct. ML & RL don't search and prune for options."
     - content: "Requires fine-tuning of hyperparameters, especially when the conditions of the system change."
       isCorrect: false
-      explanation: "Hyperparameter tuning is a weakness of ML and RL. "
+      explanation: "Incorrect. Hyperparameter tuning is a weakness of ML and RL. "
     - content: "Difficult to train, not generalizable to complex tasks that require parallel levels of abstraction."
       isCorrect: false
-      explanation: "This is a weakness of ML and RL. That is the reason behind introducing Machine Teaching into the ML/RL realm."
+      explanation: "Incorrect. This is a weakness of ML and RL. That is the reason behind introducing Machine Teaching into the ML/RL realm."
     - content: "Black boxes with limited explainability."
       isCorrect: false
-      explanation: "Lack of explainability is a weakness of ML and RL. Yet, with the introduction of Machine Teaching, models become easier to train and to explain."
+      explanation: "Incorrect. Lack of explainability is a weakness of ML and RL. Yet, with the introduction of Machine Teaching, models become easier to train and to explain."
       

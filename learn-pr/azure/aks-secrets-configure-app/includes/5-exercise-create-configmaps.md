@@ -90,7 +90,7 @@ The complete cluster creation can take up to five minutes.
 
 1. Save and close the file.
 
-1. Apply the changes to the cluster running `kubectl apply -f configmap.yaml`.
+1. Apply the changes to the cluster by running `kubectl apply -f configmap.yaml`.
 
 1. Check your work by querying the created ConfigMap:
 

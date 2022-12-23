@@ -10,7 +10,7 @@ Let's examine the details about working with Custom Script Extensions.
 
 - Scripts can be downloaded from Azure Storage or GitHub, or provided to the Azure portal at extension run time.
 
-   :::image type="content" source="../media/custom-script-extensions-4ddc2c99.png" alt-text="Screenshot that shows how to create a Custom Script Extension. The script file is required, and other arguments are optional.":::
+    :::image type="content" source="../media/custom-script-extensions-4ddc2c99.png" alt-text="Screenshot that shows how to create a Custom Script Extension. The script file is required, and other arguments are optional.":::
 
 - You can also use the PowerShell `Set-AzVmCustomScriptExtension` command to run scripts with Custom Script Extensions. This command requires the URI for the script in the blob container.
 
@@ -22,7 +22,7 @@ Let's examine the details about working with Custom Script Extensions.
 
 Review the following considerations regarding using Custom Script Extensions with virtual machines. Take a moment to assess how Custom Script Extensions can benefit your virtual machine configuration, deployment, and management tasks.
 
-- **Consider tasks that might time out**. Keep in mind that Custom Script Extensions take 90 minutes to execute. If your deployment takes longer than 90 minutes, your task is marked as a _timeout_. Consider the time-out period when you design your scripts. Your virtual machine must be running to be able to perform the designated tasks.
+- **Consider tasks that might time out**. Keep in mind that Custom Script Extensions only have 90 minutes to execute. If your deployment takes longer than 90 minutes, your task is marked as a _timeout_. Be sure to consider the time-out period when you design your scripts. Your virtual machine must be running to be able to perform the designated tasks.
 
 - **Consider dependencies**. Identify dependencies in your virtual machine task configuration. If your Custom Script Extension requires networking or storage access, make sure the content is available.
 

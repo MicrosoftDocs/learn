@@ -19,7 +19,7 @@ In this module, the lesson will be limited to how Cosmos DB applies its monitori
 - Monitor Azure Cosmos DB Programmatically 
 
 ## Monitor data
-The Overview page in the Azure portal for each Azure Cosmos database includes a brief view including the requests and hourly billing for the database.  This summary is just a small set of the metrics being collected by the Azure Monitor.  Besides the hourly billing and request metrics that the Cosmos Database Overview page displays, Azure Monitor collects other request metrics plus request units, storage, latency, availability, and Casandra API metrics.
+The Overview page in the Azure portal for each Azure Cosmos database includes a brief view including the requests and hourly billing for the database.  This summary is just a small set of the metrics being collected by the Azure Monitor.  Besides the hourly billing and request metrics that the Cosmos Database Overview page displays, Azure Monitor collects other request metrics plus request units, storage, latency, availability, and Cassandra API metrics.
 
 ## Collection and routing
 By default Azure Monitor collects and stores Cosmos DB metrics automatically.  Azure Monitor can also route those metrics to other locations by using a diagnostic setting.  Unlike metrics, Resource Logs aren't collected and stored without first creating a diagnostic setting to route them.

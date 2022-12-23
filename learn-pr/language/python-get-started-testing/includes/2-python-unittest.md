@@ -6,7 +6,7 @@ Classes and inheritance are the basis for using `unittest` to write tests. So, i
 
 ## Write tests using unittest
 
-Writing tests with the `unittest` requires importing the module and creating at least one class that inherits from the `unittest.TestCase` class. The following is how an example test looks in a file called *test_assertions.py*:
+Writing tests with `unittest` requires importing the module and creating at least one class that inherits from the `unittest.TestCase` class. Here's how an example test looks in a file called *test_assertions.py*:
 
 ```python
 import unittest
@@ -20,7 +20,7 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
-There are several essential items in the file that are required for the test to work. From naming conventions to particular methods that combined allow a test file to get executed.
+There are several essential items in the file that are required for the test to work. From naming conventions to particular methods that, when combined, allow a test file to be executed.
 
 ### Run tests
 
@@ -54,12 +54,12 @@ OK
 
 ```
 
-> [!Note]
-> Test discovery is only possible when following naming conventions for methods, classes, and files. If the file does not start with the word *test*, it won't get executed. 
+> [!NOTE]
+> Test discovery is only possible when you follow naming conventions for methods, classes, and files. If the file does not start with the word *test*, it won't get executed. 
 
 ### Naming conventions
 
-The class and method names are following a test convention. The convention is that they need to be prefixed with `test`. Although it isn't required, test classes use camel-casing, and test methods are lower-case, and words are separate with an underscore. For example, the following is how a test for customer accounts that verify creation and deletion could look:
+The class and method names follow a test convention. The convention is that they need to be prefixed with `test`. Although it isn't required, test classes use camel-casing, and test methods are lower-case, and words are separated with an underscore. For example, here's how a test for customer accounts that verify creation and deletion could look:
 
 ```python
 class TestAccounts(unittest.TestCase):
@@ -69,32 +69,32 @@ class TestAccounts(unittest.TestCase):
 
     def test_deletion(self):
         self.assertTrue(account.delete())
-``` 
+```
 
 Test classes or methods that don't follow these conventions won't get run. Although it might seem like a problem not to run every single method in a class, it can be helpful when creating non-test code.
 
 ### Assertions and assert methods
 
-It's essential to use assert methods instead of Python's built-in `assert()` function to have rich reporting when failures happen. The *test_assertion.py* uses `self.assertEqual()`, one of the many special methods from the `unittest.TestCase` class to ensure that two values are equal:
+It's essential to use assert methods instead of Python's built-in `assert()` function to have rich reporting when failures happen. The *test_assertion.py* example uses `self.assertEqual()`, one of the many special methods from the `unittest.TestCase` class to ensure that two values are equal:
 
 ```python
 self.assertEqual("one string", "one string")
 ```
 
-In this case, both strings are equal, so the test passes. Testing equality is one of the many different assertions that the `unittest.TestCase` class offers. Although there are more than 30 assert methods, the following are most commonly used aside from `self.assertEqual()`:
+In this case, both strings are equal, so the test passes. Testing for equality is one of the many different assertions that the `unittest.TestCase` class offers. Although there are more than 30 assert methods, the following are most commonly used aside from `self.assertEqual()`:
 
 * `self.assertTrue(value)`: Ensure that `value` is true. 
 * `self.assertFalse(value)`: Ensure that `value` is false.
 * `self.assertNotEqual(a, b)`: Check that `a` and `b` aren't equal.
 
-> [!Note]
-> Python data structures like dictionaries and lists evaluate as true when they have at least one item in them and false when they are empty. Avoid evaluating data structures in this way with `assertTrue()` and `assertFalse()` to prevent unexpected items go undetected. It is preferable to be as accurate as possible when testing.
+> [!NOTE]
+> Python data structures like dictionaries and lists evaluate as true when they have at least one item in them and false when they are empty. Avoid evaluating data structures in this way with `assertTrue()` and `assertFalse()` to prevent unexpected items from going undetected. It is preferable to be as accurate as possible when testing.
 
 ### Failures and reporting
 
-Passing tests are a great way to ensure robustness. Still, understanding failure reporting is crucial to update and fix production code. 
+Passing tests are a great way to ensure robustness. Still, understanding failure reporting is crucial to update and fix production code.
 
-In the next example, I change one of the strings from `"one string"` to `"other string"`. Then, I execute the test with Python. Here's how the output looks now:
+In the next example, we change one of the strings from `"one string"` to `"other string"`. Then, we execute the test with Python. Here's how the output looks now:
 
 ```bash
 $ python test_assertions.py
