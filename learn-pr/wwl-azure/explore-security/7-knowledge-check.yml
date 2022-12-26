@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-security.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/26/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check Your Knowledge"
+  questions:
+  - content: "What is one feature of authentication?"
+    choices:
+    - content: "It tells computers what a person is allowed to do."
+      isCorrect: false
+      explanation: "This isn't correct. This is a feature of authorization."
+    - content: "It lets a person know that a computer has not been hacked."
+      isCorrect: false
+      explanation: "Try again. Authentication is mainly about the user, not the computer."
+    - content: "It tells the computer that a person is allowed to use it."
+      isCorrect: true
+      explanation: "You got it. Authentication tells a computer that the user is allowed to use it."
+  - content: "Which technology enables a user to sign in to one service and have their authentication passed through to another service?"
+    choices:
+    - content: "Two-factor authentication"
+      isCorrect: false
+      explanation: "Not correct. Two-factor authentication or 2FA provides additional verification of a user."
+    - content: "Biometric authentication"
+      isCorrect: false
+      explanation: "That's incorrect. Biometrics provide additional security but don't, by themselves, pass through authentication."
+    - content: "Single sign-on"
+      isCorrect: true
+      explanation: "That's right. Single sign-on enables a user to sign in to one service and have their authentication passed through to another."
+  - content: "Which of the following could be an example of a phishing attack?"
+    choices:
+    - content: "A computer system asks a person to verify themselves with a password and a code"
+      isCorrect: false
+      explanation: "That's not correct. This is called two-factor authentication and is a way of keeping you safer."
+    - content: "A system authenticates a person but doesn't authorize them to do something"
+      isCorrect: false
+      explanation: "This isn't right. A system can let a person in (authenticate) but restrict access (not authorize). This is a way to keep people and resources safe."
+    - content: "An email that appears to come from a trusted sender directs the user to an untrusted site"
+      isCorrect: true
+      explanation: "You got it. In general, emails from a sender will only direct to websites that are owned and operated by that sender. When this doesn't happen, it could be phishing."

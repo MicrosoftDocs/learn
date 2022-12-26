@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-security.inspect-biometrics
+title: Inspect biometrics
+metadata:
+  title: Inspect biometrics
+  description: "Inspect biometrics"
+  ms.date: 12/26/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-inspect-biometrics.md)]
