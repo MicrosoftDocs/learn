@@ -13,50 +13,49 @@ durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
-  title: Check your knowledge
   questions:
-  - content: "The goal of the Lunar Lander game is to land a spaceship in between two flags on the surface of the moon in the shortest amount of time without crashing. The landing of the spaceship must be soft and level (parallel to the ground). The spaceship sensors are: horizontal position, vertical position, horizontal velocity, vertical velocity, angle, angular velocity, left leg contact, and right leg contact. The actuators are: one main throttle under the ship and two side throttles at each side of the ship. Select the sentence that best describes the actions that you can take to control the lunar lander:"
+  - content: "Consider the image above that shows Lunar Lander game. The goal of the Lunar Lander game is to land a spaceship in between two flags on the surface of the moon in the shortest amount of time without crashing. The landing of the spaceship must be soft and level (parallel to the ground). The spaceship sensors are: horizontal position, vertical position, horizontal velocity, vertical velocity, angle, angular velocity, left leg contact, and right leg contact. The actuators are: one main throttle under the ship and two side throttles at each side of the ship. Select the sentence that best describes the actions that you can take to control the lunar lander:"
     choices:
     - content: "Pitch and roll of the spaceship."
       isCorrect: false
-      explanation: "At a high-level control, we'll be able to control the spacecraft with pitch and roll, however, these aren't the actuators we have access to."
+      explanation: "Incorrect. At a high-level control, we'll be able to control the spacecraft with pitch and roll, however, these aren't the actuators we have access to."
     - content: "Main throttle under the ship and two side throttles at each side of the ship."
       isCorrect: true
-      explanation: "These are the actuators we have access to."
+      explanation: "Correct. These are the actuators we have access to."
     - content: "Move horizontally and vertically."
       isCorrect: false
-      explanation: "These aren't control actions we have access to."
+      explanation: "Incorrect. These aren't control actions we have access to."
     - content: "Move horizontally left and right and vertically up and down."
       isCorrect: false
-      explanation: "These aren't control actions we have access to."
+      explanation: "Incorrect. These aren't control actions we have access to."
   - content: "The format of the autonomous brain has to be consistent in shape and color because:"
     choices:
     - content: "It looks more professional to be consistent."
       isCorrect: false
-      explanation: "It has to do with consistency but not because it looks more professional."
+      explanation: "Incorrect. It has to do with consistency but not because it looks more professional."
     - content: "The brain design is a tool of communication, and we use the same language (shapes and color) to understand it."
       isCorrect: true
-      explanation: "The brain design is a tool of communication with the different stakeholders (autonomous AI architects, subject matter experts, business owners, brain builders)."
-    - content: "It’s mandatory."
+      explanation: "Correct. The brain design is a tool of communication with the different stakeholders (autonomous AI architects, subject matter experts, business owners, brain builders)."
+    - content: "It's mandatory."
       isCorrect: false
-      explanation: " It isn't mandatory, it's an agreement."
+      explanation: "Incorrect. It isn't mandatory, it's an agreement."
     - content: "The shapes and colors best reflect each technology."
       isCorrect: false
-      explanation: "There's no general convention that shapes and colors are associated with each technology used in Machine Teaching."
+      explanation: "Incorrect. There's no general convention that shapes and colors are associated with each technology used in Machine Teaching."
   - content: "For the Autonomous cars example, select the sentence that is FALSE:"
     choices:
     - content: "Actions (also known as ‘actuators’): control of steering wheel, accelerator, brake."
       isCorrect: false
-      explanation: "For Autonomous cars, the actions, which correspond to the actuators in the car are steering wheel, accelerator, and brake."
+      explanation: "Incorrect. For Autonomous cars, the actions, which correspond to the actuators in the car are steering wheel, accelerator, and brake."
     - content: "Goals: arrive at destination, avoid collisions, fuel efficiency."
       isCorrect: false
-      explanation: "The main goal is to arrive at the destination, without collisions. The secondary goal is fuel efficiency."
+      explanation: "Incorrect. The main goal is to arrive at the destination, without collisions. The secondary goal is fuel efficiency."
     - content: "Skills: staying in the lane, merging onto the highway, passing a car."
       isCorrect: false
-      explanation: "Skills correspond to the different things the autonomous car will need to practice and learn to drive. Staying in the lane, merging onto the highway, and passing a car are skills it will have to learn."
+      explanation: "Incorrect. Skills correspond to the different things the autonomous car will need to practice and learn to drive. Staying in the lane, merging onto the highway, and passing a car are skills it will have to learn."
     - content: "Orchestrate skills (in order): first get into the car, then set destination, then relax and let the car drive to destination."
       isCorrect: true
-      explanation: "Orchestrate skills refers to how to organize the modules in the brain design to solve the problem at hand. Orchestration doesn't refer to the user experience of being driven in an autonomous car."
+      explanation: "Correct. Orchestrate skills refers to how to organize the modules in the brain design to solve the problem at hand. Orchestration doesn't refer to the user experience of being driven in an autonomous car."
     - content: "Scenarios (also known as regimes): driving on highway, street roads, crowded roads, turning right, turning left."
       isCorrect: false
-      explanation: "Scenarios, also called regimes in manufacturing, are the different conditions in which the autonomous car will have to practice, to learn the skills, i.e. driving on highway, street roads, crowded roads, turning right, turning left."
+      explanation: "Incorrect. Scenarios, also called regimes in manufacturing, are the different conditions in which the autonomous car will have to practice, to learn the skills, i.e. driving on highway, street roads, crowded roads, turning right, turning left."
