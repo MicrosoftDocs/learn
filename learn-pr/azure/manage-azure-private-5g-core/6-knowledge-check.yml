@@ -43,9 +43,9 @@ quiz:
     - content: "Use a JSON file that contains values for multiple SIM resources."
       isCorrect: true
       explanation: "Correct. You can define details about all the SIMs to be provisioned in a single JSON file, and then provision all of them in one go."
-    - content: "Create a SIM group and then provision it."
+    - content: "Provision all the SIMs through ASE."
       isCorrect: false
-      explanation: "Try again. You can create SIM groups and then add SIMs to each group. However, you can't provision a SIM group."
+      explanation: "Try again. SIMs must be provisioned through Azure Private 5G Core. They can't be provisioned through ASE, which is the platform that hosts Azure Private 5G Core."
   - content: "What is the condition for using static IP addresses for SIMs in a private mobile network?"
     choices:
     - content: "The relevant packet core instance(s) must have been configured with static IP address allocation."
