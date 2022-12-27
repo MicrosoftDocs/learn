@@ -46,7 +46,7 @@ Your API has routes for manipulating the products for the shopping list, but it 
 
 1. Select **Add**.
 
-:::image type="content" source="../media/new-azure-function.png" alt-text="Creating a new Azure Function.":::
+:::image type="content" source="../media/new-azure-function.png" alt-text="Screenshot showing how to create a new Azure Function.":::
 
 You just extended your Azure Functions app with a function to get your products!
 

@@ -16,7 +16,7 @@ You can now see your workflow file in the folder _.github/workflows_ in **Window
 
 Before publishing your app, you'll create routing rules that include a fallback route.
 
-### Create the file staticwebapp.config.json
+### Create the file _staticwebapp.config.json_
 
 If you don't already have a _staticwebapp.config.json_ file in your project, you can create one by following these steps:
 
