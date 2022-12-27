@@ -1,6 +1,6 @@
 Your toy company's security team has asked you to verify that your website is accessible only through HTTPS. In this exercise, you configure your workflow to run a smoke test that checks the security team's requirement.
 
-During the process, you'll:
+During the process, you'll do the following tasks:
 
 > [!div class="checklist"]
 >

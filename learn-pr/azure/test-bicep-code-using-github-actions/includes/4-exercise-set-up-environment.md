@@ -2,7 +2,7 @@
 
 Before you start to work on your toy company's website workflow, you need to configure your environment. In this section, you make sure that your Azure and GitHub environments are set up to complete the rest of this module.
 
-To meet these objectives, you'll:
+To meet these objectives, you'll do the following tasks:
 
 > [!div class="checklist"]
 >
@@ -45,7 +45,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
    :::image type="content" source="../media/4-repo-settings.png" alt-text="Screenshot of the GitHub interface showing the repo creation page.":::
 
-[!include[](../../includes/cleanup-steps.md)]
+[!INCLUDE [](../../includes/cleanup-steps.md)]
 
 ## Clone the repository
 
@@ -83,7 +83,7 @@ You now have a copy of the template repository in your own account. You'll clone
 
 To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools.
 
-[!include[](../../includes/azure-exercise-terminal-cli.md)]
+[!INCLUDE [](../../includes/azure-exercise-terminal-cli.md)]
 
 ### Sign in to Azure by using the Azure CLI
 
@@ -101,7 +101,7 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true).
 
-[!include[](../../includes/azure-exercise-terminal-powershell.md)]
+[!INCLUDE [](../../includes/azure-exercise-terminal-powershell.md)]
 
 ### Sign in to Azure by using Azure PowerShell
 
@@ -121,8 +121,7 @@ Next, create a workload identity in Azure AD for your deployment workflow.
 
 ::: zone pivot="cli"
 
-> [!TIP]
-> To create the workload identity, the Azure CLI commands use `jq` to parse data from JSON output. If you don't have `jq` installed, you can use Bash in [Azure Cloud Shell](https://shell.azure.com/) to create the workload identity, resource group and role assignment, and prepare the GitHub secrets.
+To create the workload identity, the Azure CLI commands use `jq` to parse data from JSON output. If you don't have `jq` installed, you can use Bash in [Azure Cloud Shell](https://shell.azure.com/) to create the workload identity, resource group and role assignment, and prepare the GitHub secrets.
 
 1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 

@@ -27,7 +27,7 @@ quiz:
     - content: Add a rollback job to your workflow.
       isCorrect: false
       explanation: Incorrect. You can add a rollback job to reverse the effects of a job that's failed, but it doesn't help to validate the Bicep file you submit.
-  - content: Which of these is an example of negative testing?
+  - content: Which of the following options is an example of negative testing?
     choices:
     - content: Manually approving a workflow run.
       isCorrect: false

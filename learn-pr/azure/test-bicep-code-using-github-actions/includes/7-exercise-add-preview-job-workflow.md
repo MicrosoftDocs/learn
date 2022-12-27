@@ -1,6 +1,6 @@
 You want to add an extra job to your workflow so you can check what changes will be made to your Azure environment.
 
-During the process, you'll:
+During the process, you'll do the following tasks:
 
 > [!div class="checklist"]
 >

@@ -22,7 +22,7 @@ The highlighted code is equivalent to running the deployment by using Azure CLI,
 
 The what-if operation doesn't make any changes to your environment. Instead, it describes the resources that will be created, the resource properties that will be updated, and the resources that will be deleted.
 
-What-if sometimes shows that a resource will change when actually no change will happen. This is called _noise_. We're working to reduce these problems, but we need your help. [Report what-if problems](https://aka.ms/whatifissues).
+What-if sometimes shows that a resource will change when actually no change will happen. This type of output is called _noise_. We're working to reduce these problems, but we need your help. [Report what-if problems](https://aka.ms/whatifissues).
 
 After you see the output of the what-if operation, you can determine whether to continue on to the deployment. This step typically involves a human reviewing the output from the what-if command, and then making a decision about whether the identified changes are reasonable. If a human reviewer decides that the changes are reasonable, they can manually approve the workflow run.
 
@@ -39,7 +39,7 @@ After you create an environment, you can reference it in any jobs in your workfl
 :::code language="yaml" source="code/6-environment.yml" range="19-60" highlight="28" :::
 
 > [!NOTE]
-> When your deployment workflow's workload identity interacts with Azure Resource Manager within an environment, it needs a federated credential that's configured with the name of the environment. You'll learn more about this in future modules. When you run the exercises for this module, you'll create the necessary federated credentials.
+> When your deployment workflow's workload identity interacts with Azure Resource Manager within an environment, it needs a federated credential that's configured with the name of the environment. You'll learn more about environments in future modules. When you run the exercises for this module, you'll create the necessary federated credentials.
 
 ## Environment protection rules
 
@@ -67,6 +67,6 @@ Reviewers can inspect the workflow logs, such as the changes that the what-if op
 
 The environments feature in GitHub gives you the ability to link your deployments to an environment, and then the deployment inherits the protection rules defined by the administrator of the environment. However, there's nothing to require that new workflows use environments.
 
-It's important that you and your organization establish good practices to review your workflow definitions. An example is configuring your repository to require pull request reviews on any changes to your _main_ branch by using branch protection rules. You'll learn more about this in a future module.
+It's important for an organization to establish good practices to review your workflow definitions. An example is configuring your repository to require pull request reviews on any changes to your _main_ branch by using branch protection rules. You'll learn more about this concept in a future module.
 
 You can also add _secrets_ to an environment. That way the secret can only be used in a job that also uses the environment. By combining environment protection rules and secrets, you can ensure your workflow security is maintained.

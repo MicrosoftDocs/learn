@@ -2,7 +2,7 @@ You've spoken to your team and have decided to further automate your deployments
 
 In this exercise, you'll add validation jobs to your workflow. You'll then run the linter and preflight validation before each deployment.
 
-During the process, you'll:
+During the process, you'll do the following tasks:
 
 > [!div class="checklist"]
 >
@@ -29,7 +29,7 @@ During the process, you'll:
 
 1. Below the lines that you just added, and above the deploy job, add a validation job:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="25-42" highlight="4-6, 11":::
+   :::code language="yaml" source="code/5-workflow.yml" range="25-42":::
 
    This job defines steps to check out the code, sign in to your Azure environment, and use the `azure/arm-deploy` action with the `Validate` deployment mode.
 
@@ -37,7 +37,7 @@ During the process, you'll:
 
 1. Below the `runs-on` line in the `deploy` job, add a `needs` statement:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="44-50" highlight="3, 5-7" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="44-50" highlight="3" :::
 
    The `needs` statement indicates that the deploy job depends on the lint and validate jobs completing successfully before it can run.
 
@@ -87,7 +87,7 @@ When you use a custom linter configuration, Bicep writes log data that GitHub Ac
    git push
    ```
 
-1. This is the first time you've pushed to this repository, so you might be prompted to sign in.
+1. This commit is the first time you've pushed to this repository, so you might be prompted to sign in.
 
    On Windows, type <kbd>1</kbd> to authenticate using a web browser, and select <kbd>Enter</kbd>.
 

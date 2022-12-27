@@ -1,4 +1,4 @@
-By validating and previewing your Bicep deployment, you've been able to build confidence that your Bicep files will successfully deploy. But this isn't the whole story. After the deployment finishes, it's also helpful to check that your deployment did what you expected.
+By validating and previewing your Bicep deployment, you've been able to build confidence that your Bicep files will successfully deploy. But deployment isn't the whole story. After the deployment finishes, it's also helpful to check that your deployment did what you expected.
 
 In this unit, you'll learn about tests that you can run after your deployment finishes. You'll also learn about rolling back your deployment, if things don't turn out as you expected.
 
@@ -40,7 +40,7 @@ Test results are written to the workflow log. The GitHub Marketplace also contai
 
 When you divide your workflow into multiple jobs, each with its own responsibility, you sometimes need to pass data between these jobs. For example, one job might create an Azure resource that another job needs to work with. To be able to pass data, the second job needs to know the name of the resource that was created. For example, our smoke test job that needs to access the resources that the deployment job has deployed.
 
-Your Bicep file deploys the resources, so it can access the resource properties and publish them as deployment outputs. When you run your Bicep deployment through the `arm-deploy` action, this action will store these Bicep deployment outputs in its step outputs. Next, the job holding the `arm-deploy` action can now publish these step outputs as job outputs. It does this by referencing the step's `id` property, which we set to `deploy`:
+Your Bicep file deploys the resources, so it can access the resource properties and publish them as deployment outputs. When you run your Bicep deployment through the `arm-deploy` action, this action will store these Bicep deployment outputs in its step outputs. Next, the job holding the `arm-deploy` action can now publish these step outputs as job outputs. The job references the step's `id` property, which we set to `deploy`:
 
 :::code language="yaml" source="code/8-output-variable.yml" range="67-88" highlight="5-6, 16" :::
 
@@ -54,7 +54,7 @@ You can also pass outputs from a workflow script by using a special syntax. We l
 
 _Functional tests_ and _integration tests_ are often used to validate that the deployed resources are behaving as you expect. For example, an integration test might connect to your website and submit a test transaction, and then wait to confirm that the transaction finishes successfully. By using integration tests, you can test the solution that your team builds, along with the infrastructure it's running on. In a future module, you'll see how these types of tests can be added to your workflow.
 
-It's also possible to run other types of tests from a deployment workflow, including performance tests and security penetration tests. These tests are outside the scope of this module, but they can add a lot of value to an automated deployment process.
+It's also possible to run other types of tests from a deployment workflow, including performance tests and security penetration tests. These tests are outside the scope of this module, but they can add value to an automated deployment process.
 
 ## Roll back or roll forward
 
@@ -71,7 +71,7 @@ For example, you might add a rollback job to your workflow. The rollback job run
 
 The job depends on the smoke test job. It only runs when the smoke test fails. By default, GitHub Actions stops the workflow when whenever a previous job fails. The `if` condition includes an `always()` check to override this behavior. Without the `always()` in the expression, the rollback job will be skipped whenever a prior job fails.
 
-It's often challenging to work out the steps that a rollback job should perform. Bicep deployments are generally complex, and it's not easy to roll back changes. It's especially difficult to roll back when your deployment includes other components.
+It's often challenging to work out the steps that a rollback job should perform. In general, Bicep deployments are complex, and it's not easy to roll back changes. It's especially difficult to roll back when your deployment includes other components.
 
 For example, imagine that your workflow deploys a Bicep file that defines an Azure SQL database, and then adds some data to the database. When your deployment is rolled back, should the data be deleted? Should the database be removed too? It's hard to predict how every failure and every rollback might affect your running environment.
 
