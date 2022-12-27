@@ -54,7 +54,7 @@ The packet core instance performs ciphering and integrity protection of 5G non-a
 
 ## Network slicing and multiple data networks (DNs) support
 
-Azure Private 5G Core allows you to divide a private mobile network into multiple network slices. Each slice is a logical end-to-end network. To support different requirements of different UEs in the network, you can configure unique SIM policies for each slice, and then add the UEs to relevant network slices.
+Azure Private 5G Core allows you to divide a private mobile network into multiple network slices. Each slice is a logical end-to-end network. To support different requirements of different UEs in the network, you can configure SIM policies with different slices available, and then assign the SIM policies to relevant UEs.
 
 Additionally, the packet core instance at each site can connect to multiple DNs. You can use different DNs for different applications. Each UE can connect to multiple DNs simultaneously. Both 4G and 5G network functions in Azure Private 5G Core support multiple DNs.
 
