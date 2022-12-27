@@ -1,22 +1,21 @@
-Now that you have the Anomaly Detector instance, IoT Hub and Blob storage resources created, we'll be loading data from the household smart meter device to the cloud. Since you're just monitoring one metric, which in this case is "power", you'll be using the Univariate Anomaly Detector API. Next, we'll format the data in a json file with parameters and structure needed for the Univariate Anomaly Detector API.  We are using IoT Hub in the business use case in this module, however you can use other services such as Event Hubs or Kafka for ingesting stream data to Azure Anomaly Detector.
+Now that you have the Anomaly Detector instance, IoT Hub, and Blob storage resources created, we'll be loading data from the household smart meter device to the cloud. Since you're just monitoring one metric (which in this case is "power"), you'll be using the Univariate Anomaly Detector API. Next, we'll format the data in a JSON file with the parameters and structure needed for the Univariate Anomaly Detector API. We're using IoT Hub in the business use case in this module; however, you can use other services such as Event Hubs or Kafka for ingesting stream data to Azure Anomaly Detector.
 
 ## Run simulation to send data from smart meter to IoT Hub
 
 In this exercise, you'll need Jupyter Notebook to run the code blocks to do the following:
 
-- Send the household smart meter device data for the “power” meter into IoT Hub that will automatically route the raw data into the blob storage container *learninputcontainer*. 
-- Format the raw data from the input blob storage container, then store the processed data in an output Blob storage container *learnoutputcontainer*.
+- Send the household smart meter device data for the “power” meter into the IoT Hub, which will automatically route the raw data into the blob storage container called *learninputcontainer*.
+- Format the raw data from the input blob storage container, then store the processed data in an output Blob storage container called *learnoutputcontainer*.
 
-> [!NOTE] 
-> Since we don’t have a real-life electricity smart meter to connect to IoT Hub in the cloud, we'll simulate reading data from a csv file.  See the Summary page at the end of the module on how to connect your device and the data stream directly to IoT Hub.  
-
+> [!NOTE]
+> Because we don’t have a real-life electricity smart meter to connect to IoT Hub in the cloud, we'll simulate reading data from a csv file. Reference the Summary page at the end of the module for information on how to connect your device and the data stream directly to IoT Hub.  
 
 ## Create connection to IoT Hub
 
-To send data to IoT Hub, you need to create a connection between the client device and Iot Hub. In this case, we'll be using the local machine as a client to send data to IoT Hub. A connection is created between the client device and the IoT Hub in order to send data to the IoT Hub.
+To send data to IoT Hub, you need to create a connection between the client device and Iot Hub. In this case, we'll be using the local machine as a client to send data to the IoT Hub. A connection is created between the client device and the IoT Hub in order to send data to the IoT Hub.
 
-> [!NOTE] 
-> If you need to find out how to connect a real-life device to IoT Hub, please refer to the summary section at the end of this learn module.  
+> [!NOTE]
+> If you need to learn how to connect a real-life device to IoT Hub, please refer to the Summary section at the end of this learn module.  
 
 Let's start by setting up the environment and installing some required Python packages we'll use in this module.  
 
@@ -24,7 +23,7 @@ Let's start by setting up the environment and installing some required Python pa
 pip install azure-core azure-ai-anomalydetector azure-iot-device azure-storage-blob azure-core pandas matplotlib bokeh ipywidgets
 ```
 
-Copy and replace the connection string values in the code below for _**BLOB_CONNECTION_STRING**_, and _**IOTHUB_DEVICE_CONNECTION_STRING**_ that you created from the setup exercise.
+Copy and replace the connection string values in the following code for _**BLOB_CONNECTION_STRING**_, and _**IOTHUB_DEVICE_CONNECTION_STRING**_ that you created from the setup exercise.
 
 ```python
 import os
@@ -67,7 +66,7 @@ def send_message_to_cloud(data):
 To read the simulated data from a csv file, the function below simply reads the data and calls the function to send the data to IoT Hub. It downloads the dataset that contains our sample power meter readings from the provided csv file.
 
 > [!NOTE]
-> See the Summary page at the end of the module for SDKs and how to send telemetry data from an IoT Device to Azure IoT Hub.
+> Reference the Summary page at the end of the module for SDKs and how to send telemetry data from an IoT Device to Azure IoT Hub.
 
 ```python
 from urllib.request import urlretrieve
@@ -78,7 +77,7 @@ local_file_path = "power.csv"
 filename, headers = urlretrieve(url, filename=local_file_path)
 ```
 
-Define function to simulate reading data from a data source and sending it to your Iot Hub in json format.  In this case, we will be using a csv file to simulate as the data source.
+Define function to simulate reading data from a data source and sending it to your Iot Hub in json format. In this case, we'll be using a csv file to simulate as the data source.
 
 ```python
 #simulate reading data from smart meter device to IoT Hub.  
@@ -130,16 +129,16 @@ As the data stream is sent to IoT Hub, it’s important to process the raw data 
 
 ![Diagram displaying time series data in a valid JSON format.](..\media\4-exercise-send-data-to-cloud-1.png)
 
-* **Granularity**. This is the frequency in which the data is captured. For example, “minutely”, “hourly”, “daily”, "monthly" or "yearly".
-* **Series**. This contains an array of all the time series data to be processed.
-* **Timestamp**. The timestamp needs to be in UTC format.
-* **Value**. The data metric needs to be in numeric type.  E.g.,  the numeric watts reading for power reading.
-* **CustomInterval** (optional). If the time rate has a non-standardize interval, then add the “CustomInterval” by specifying the granularity. For example, if the rate is every 8 minutes, the custominterval value needs to be set to 8. 
+- **Granularity**: This is the frequency in which the data is captured. For example, “minutely,” “hourly,” “daily,” "monthly," or "yearly".
+- **Series**: This contains an array of all the time series data to be processed.
+- **Timestamp**: The timestamp needs to be in UTC format.
+- **Value**: The data metric needs to be in numeric type; for example, the numeric watts for power reading.
+- **CustomInterval** (optional): If the time rate has a non-standardize interval, then add the `CustomInterval` by specifying the granularity. For example, if the rate is every 8 minutes, the `CustomInterval` value needs to be set to `8`.
 
 > [!NOTE]
-> The time series data needs to be captured in a sequential order and evenly distributed with no gaps or missing timestamps.
+> The time-series data needs to be captured in a sequential order and evenly distributed with no gaps or missing timestamps.
 
-Create function the adds the metadata parameters into a json file that are needed for the Univariate Anomaly Detector API.  Once the data is formatted, store the processed data to the output container for the blob storage.
+Create function then adds the metadata parameters that are needed for the Univariate Anomaly Detector API into a JSON file. Once the data is formatted, store the processed data to the output container for the blob storage.
 
 ```python         
 def format_json_data(telemetry_data):
@@ -171,7 +170,7 @@ def format_json_data(telemetry_data):
         blob_srv_client.upload_blob(data=blob_file, overwrite=True)
 ```
 
-- Create a function that downloads the raw data files from the input blob storage container *learninputcontainer*; then writes the processed data into an output blob storage container *learnoutputcontainer* after the json file is formatted.
+- Create a function that downloads the raw data files from the input blob storage container *learninputcontainer*, then writes the processed data into an output blob storage container *learnoutputcontainer* after the json file is formatted.
 
 ```python
 from azure.storage.blob import BlobServiceClient
@@ -198,10 +197,10 @@ def process_raw_data():
         format_json_data(filecontents)
 ```
 
-- Run the function to prepare and process the data in a json format that is ready to be used by the Univariate Anomaly Detector API.
+- Run the function to prepare and process the data in a JSON format that is ready to be used by the Univariate Anomaly Detector API:
 
 ```python 
 process_raw_data()
 ```
 
-Well done!  Now that you have successfully sent the data to IoT Hub and formatted the time series data, you are ready to run the Univariate Anomaly Detector API and visual the anomalies in a LIVE interactive streaming graph in the next unit.
+Well done! Now that you' ha've successfully sent the data to IoT Hub and formatted the time-series data, you're ready to run the Univariate Anomaly Detector API and visual the anomalies in a live interactive streaming graph in the next unit.
