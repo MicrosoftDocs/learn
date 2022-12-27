@@ -1,4 +1,4 @@
-Workbooks are the foundation for many of the Azure monitor insights. Workbooks provide a flexible canvas for free-form data exploration. Azure Workbooks combine text, log queries, metrics, and parameters, and include multiple kinds of visualizations and analyses. Use Workbooks to extract data from multiple data sources and combine them into an individualized report. You can share Workbooks with your team in the Azure portal, to interactively gather and share information.
+Workbooks provide a flexible canvas for free-form data exploration. Azure Workbooks combine text, log queries, metrics, and parameters, and include multiple kinds of visualizations and analyses. Use Workbooks to extract data from multiple data sources and combine them into an individualized report. You can share Workbooks with your team in the Azure portal, to interactively gather and share information.
 
 Workbooks are helpful to analyze things like:
 
@@ -8,10 +8,10 @@ Workbooks are helpful to analyze things like:
 - The effect of an outage on the usage of a resource.
 
 ## Data Sources
-Workbooks can query data from multiple Azure sources. You can combine data from multiple data sources within a single report, and transform the data to give you visual insights into the availability, performance, usage, and overall health of your resources. 
+Workbooks can query data from multiple sources. You can combine the data from multiple data sources within a single report, and transform the data to give you visual insights into the availability, performance, usage, and overall health of your resources.
 
 ## Visualizations
-Using workbooks, you can use a rich set of visualizations to customize the reports based on your needs and requirements. You can create a workbook that uses a combination of any of these visualizations:
+Workbooks provide a rich set of visualizations you can use to customize reports, including:
 
 - Text parameters
 - Charts
@@ -23,6 +23,6 @@ Using workbooks, you can use a rich set of visualizations to customize the repor
 - Maps
 - Text visualizations
 
-This screenshot shows an example of a report that combines data from multiple sources to produce visualizations that help analyze the data.
+This is an example of a report that combines data from multiple sources and uses visualizations that help analyze data.
 
 :::image type="content" source="../media/2-workbook-sample.png" alt-text="Screenshot of a sample workbook with several visualizations.":::

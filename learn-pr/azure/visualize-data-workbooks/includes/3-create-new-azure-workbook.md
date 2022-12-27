@@ -55,10 +55,10 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
 
     1. The Azure Workbook text editor uses markdown format. Enter text into the editor. You can copy this text if you would like.
 
-    ```azurecli
-        # Learn module exercise workbook
-        ## Select a subscription from the drop-down below.
-    ```
+        ```azurecli
+            # Learn module exercise workbook
+            ## Select a subscription from the drop-down below.
+        ```
 
     1. Select **Done editing**. You now have a simple workbook with text.
 

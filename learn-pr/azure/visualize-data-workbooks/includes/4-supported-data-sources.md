@@ -33,7 +33,7 @@ Workbooks can extract data from these data sources:
 
     ![Screenshot that shows an alerts query.](../media/4-workload-health.png)
 
-- **Azure resource health**. Use an Azure resource health data source to utilize the health filter dropdowns to select the subset of resource issues for your analytic needs.
+- **Azure health**. Use an Azure health data source to utilize the health filter dropdowns to select the subset of resource issues for your analytic needs.
 
     :::image type="content" source="../media/4-resource-health.png" alt-text="Screenshot that shows an alerts query that shows the health filter lists.":::
 
