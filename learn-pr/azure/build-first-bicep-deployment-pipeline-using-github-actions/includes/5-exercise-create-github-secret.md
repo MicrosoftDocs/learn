@@ -54,14 +54,14 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 ::: zone pivot="cli"
 
-1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted in the previous exercise unit.
+1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted in the previous exercise unit.
 
    ```bash
    githubOrganizationName='mygithubuser'
    githubRepositoryName='toy-website-workflow'
    ```
 
-1. Run the code below, which creates a workload identity and associates it with your GitHub repository:
+1. Run the following code, which creates a workload identity and associates it with your GitHub repository:
 
    ```bash
    applicationRegistrationDetails=$(az ad app create --display-name 'toy-website-workflow')
@@ -77,14 +77,14 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 ::: zone pivot="powershell"
 
-1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted in the previous exercise unit.
+1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted in the previous exercise unit.
 
    ```azurepowershell
    $githubOrganizationName = 'mygithubuser'
    $githubRepositoryName = 'toy-website-workflow'
    ```
 
-1. Run the code below, which creates a workload identity and associates it with your GitHub repository:
+1. Run the following code, which creates a workload identity and associates it with your GitHub repository:
 
    ```azurepowershell
    $applicationRegistration = New-AzADApplication -DisplayName 'toy-website-workflow'
@@ -140,7 +140,7 @@ Run the following code to show you the values you need to create as GitHub secre
 ::: zone pivot="cli"
 
 ```bash
-echo "AZURE_CLIENT_ID: $($applicationRegistration.AppId)"
+echo "AZURE_CLIENT_ID: $($applicationRegistrationAppId)"
 echo "AZURE_TENANT_ID: $(az account show --query tenantId --output tsv)"
 echo "AZURE_SUBSCRIPTION_ID: $(az account show --query id --output tsv)"
 ```
