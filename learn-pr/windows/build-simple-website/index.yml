@@ -3,7 +3,7 @@ uid: learn-windows.introduction-to-web-development
 metadata:
   title: Guided project - build a simple website containing a web page, a CSS file, and a JavaScript file
   description: Get started with web development using Visual Studio Code to build a website using HTML, CSS, and JavaScript, and using developer tools in the browser to check your work.
-  ms.date: 12/4/2020
+  ms.date: 3/28/2022
   author: mmpadget
   ms.author: quradic
   ms.topic: interactive-tutorial
