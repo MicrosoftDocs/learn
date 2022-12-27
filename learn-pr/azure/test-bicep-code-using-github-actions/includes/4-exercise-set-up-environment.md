@@ -5,10 +5,11 @@ Before you start to work on your toy company's website workflow, you need to con
 To meet these objectives, you'll:
 
 > [!div class="checklist"]
-> * Set up a GitHub repository for this module.
-> * Clone the repository to your computer.
-> * Create a resource group in Azure.
-> * Create a secret in GitHub.
+>
+> - Set up a GitHub repository for this module.
+> - Clone the repository to your computer.
+> - Create a resource group in Azure.
+> - Create a secret in GitHub.
 
 ## Get the GitHub repository
 
@@ -34,7 +35,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 1. Select your GitHub username from the **Owner** drop-down list.
 
-1. Enter a repository name for your new project, such as *toy-website-test*.
+1. Enter a repository name for your new project, such as _toy-website-test_.
 
 1. Select the **Public** option.
 
@@ -251,7 +252,7 @@ You've created a workload identity, and a resource group that it can deploy to. 
 
    :::image type="content" source="../../includes/media/github-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
 
-1. Name the secret *AZURE_CLIENT_ID*.
+1. Name the secret _AZURE_CLIENT_ID_.
 
 1. In the **Value** field, paste the GUID from the first line of the terminal output. Don't include `AZURE_CLIENT_ID`, the colon, or any spaces in the value.
 
@@ -259,7 +260,7 @@ You've created a workload identity, and a resource group that it can deploy to. 
 
    :::image type="content" source="../../includes/media/github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
 
-1. Repeat the process to create the secrets for *AZURE_TENANT_ID* and *AZURE_SUBSCRIPTION_ID*, copying the values from the corresponding fields in the terminal output.
+1. Repeat the process to create the secrets for _AZURE_TENANT_ID_ and _AZURE_SUBSCRIPTION_ID_, copying the values from the corresponding fields in the terminal output.
 
 1. Verify that your list of secrets now shows all three secrets.
 

@@ -5,13 +5,14 @@ In this exercise, you'll add validation jobs to your workflow. You'll then run t
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Update your existing workflow to add two new jobs to lint and validate your Bicep code.
-> * Run your workflow.
-> * Fix any issues that your workflow detects.
+>
+> - Update your existing workflow to add two new jobs to lint and validate your Bicep code.
+> - Run your workflow.
+> - Fix any issues that your workflow detects.
 
 ## Add lint and validation jobs to your workflow
 
-1. In Visual Studio Code, open the *workflow.yml* file in the *.github/workflows* folder.
+1. In Visual Studio Code, open the _workflow.yml_ file in the _.github/workflows_ folder.
 
 1. In the `env:` section, change the `AZURE_RESOURCEGROUP_NAME` variable's value to `ToyWebsiteTest`:
 
@@ -46,9 +47,9 @@ During the process, you'll:
 
 ## Configure the linter
 
-By default, the Bicep linter provides a warning when it detects a problem with your file. GitHub Actions doesn't treat linter warnings as problems that should stop your workflow. To customize this behavior, you create a *bicepconfig.json* file that reconfigures the linter.
+By default, the Bicep linter provides a warning when it detects a problem with your file. GitHub Actions doesn't treat linter warnings as problems that should stop your workflow. To customize this behavior, you create a _bicepconfig.json_ file that reconfigures the linter.
 
-1. Add a new file in the *deploy* folder and name it *bicepconfig.json*.
+1. Add a new file in the _deploy_ folder and name it _bicepconfig.json_.
 
    :::image type="content" source="../media/5-visual-studio-code-bicep-config-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the new file shown in the deploy folder.":::
 
@@ -62,9 +63,9 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 When you use a custom linter configuration, Bicep writes log data that GitHub Actions interprets as an error. To disable this behavior, you configure the `arm-deploy` task to ignore the standard error (stderr) log stream.
 
-1. Open the *workflow.yml* file.
+1. Open the _workflow.yml_ file.
 
-1. In the `deploy` job's *Deploy website* test step, set the `failOnStdErr` property to `false`:
+1. In the `deploy` job's _Deploy website_ test step, set the `failOnStdErr` property to `false`:
 
    :::code language="yaml" source="code/5-workflow.yml" range="44-62" highlight="15" :::
 
@@ -72,7 +73,7 @@ When you use a custom linter configuration, Bicep writes log data that GitHub Ac
 
 ## Verify and commit your workflow definition
 
-1. Verify that your *workflow.yml* file looks like the following:
+1. Verify that your _workflow.yml_ file looks like the following:
 
    :::code language="yaml" source="code/5-workflow.yml" highlight="14, 18-42, 46, 58" :::
 
@@ -100,7 +101,7 @@ When you use a custom linter configuration, Bicep writes log data that GitHub Ac
 
 1. In your browser, go to **Actions**.
 
-   The first run of your workflow, labeled *Initial commit*, is shown as a failure. GitHub automatically ran the workflow when you created the repository. It failed because the secrets weren't ready at that time. You can ignore this failure.
+   The first run of your workflow, labeled _Initial commit_, is shown as a failure. GitHub automatically ran the workflow when you created the repository. It failed because the secrets weren't ready at that time. You can ignore this failure.
 
 1. Select the most recent run of your workflow.
 
@@ -132,9 +133,9 @@ When you use a custom linter configuration, Bicep writes log data that GitHub Ac
 
 Now that you've identified the problem, you can fix it in your Bicep file.
 
-1. In Visual Studio Code, open the *main.bicep* file in the *deploy* folder.
+1. In Visual Studio Code, open the _main.bicep_ file in the _deploy_ folder.
 
-1. Notice that the Bicep linter has also detected that the `storageAccountNameParam` parameter isn't used. In Visual Studio Code, it indicates this by displaying a squiggly line. Normally, the line would be yellow to indicate a warning. But because you customized the *bicepconfig.json* file, the linter treats the code as an error and displays the line in red.
+1. Notice that the Bicep linter has also detected that the `storageAccountNameParam` parameter isn't used. In Visual Studio Code, it indicates this by displaying a squiggly line. Normally, the line would be yellow to indicate a warning. But because you customized the _bicepconfig.json_ file, the linter treats the code as an error and displays the line in red.
 
    :::code language="bicep" source="code/5-template-1.bicep" range="15" :::
 
@@ -182,7 +183,7 @@ Now that you've identified the problem, you can fix it in your Bicep file.
 
 You've found another problem in the Bicep file. Here, you fix the problem.
 
-1. In Visual Studio Code, open the *main.bicep* file in the *deploy* folder.
+1. In Visual Studio Code, open the _main.bicep_ file in the _deploy_ folder.
 
 1. Look at the definition of the `storageAccountName` variable:
 

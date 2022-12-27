@@ -3,17 +3,18 @@ You want to add an extra job to your workflow so you can check what changes will
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Update the workflow YAML file to add a new preview job.
-> * Add an environment to your GitHub repository.
-> * Configure the environment to require a review.
-> * Update the workflow YAML file to use the environment for the deployment job.
-> * View the what-if results and approve a workflow run.
+>
+> - Update the workflow YAML file to add a new preview job.
+> - Add an environment to your GitHub repository.
+> - Configure the environment to require a review.
+> - Update the workflow YAML file to use the environment for the deployment job.
+> - View the what-if results and approve a workflow run.
 
 ## Update the workflow definition to add a preview job
 
 Here, you add a new job to your workflow that runs the what-if operation.
 
-1. In Visual Studio Code, open the *workflow.yml* file in the *.github/workflows* folder.
+1. In Visual Studio Code, open the _workflow.yml_ file in the _.github/workflows_ folder.
 
 1. Between the **validate** and **deploy** jobs, add the following definition for the **preview** job:
 
@@ -57,7 +58,7 @@ In the setup steps for this module, you already created a federated credential f
 
 Here, you configure the **deploy** job to run against the **Website** environment that you created previously.
 
-1. Open the *workflow.yml* file in Visual Studio Code.
+1. Open the _workflow.yml_ file in Visual Studio Code.
 
 1. Add the `environment` parameter to the **deploy** job. Set the value to `Website`, to match the name of the environment you just created:
 
@@ -67,7 +68,7 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
 ## Verify and commit your workflow definition
 
-1. Verify that your *workflow.yml* file looks like the following code:
+1. Verify that your _workflow.yml_ file looks like the following code:
 
    :::code language="yaml" source="code/7-workflow.yml" highlight="44-63, 67-68" :::
 

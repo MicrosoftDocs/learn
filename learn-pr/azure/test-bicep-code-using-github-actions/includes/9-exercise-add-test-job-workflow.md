@@ -3,16 +3,17 @@ Your toy company's security team has asked you to verify that your website is ac
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Add a test script to your repository.
-> * Update your workflow definition to add a test job.
-> * Run the workflow and observe the test fail.
-> * Fix the Bicep file and observe the workflow run successfully.
+>
+> - Add a test script to your repository.
+> - Update your workflow definition to add a test job.
+> - Run the workflow and observe the test fail.
+> - Fix the Bicep file and observe the workflow run successfully.
 
 ## Add a test script
 
 Here, you add a test script to verify that the website is accessible when HTTPS is used and not accessible when the nonsecure HTTP protocol is used.
 
-1. In Visual Studio Code, create a new file in the *deploy* folder named *Website.Tests.ps1*.
+1. In Visual Studio Code, create a new file in the _deploy_ folder named _Website.Tests.ps1_.
 
    :::image type="content" source="../media/9-visual-studio-code-website-tests-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the deploy folder and the test file shown.":::
 
@@ -31,7 +32,7 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
 
 The test script that you created in the preceding steps requires a host name to test. Your Bicep file already includes an output, but before you can use it in your smoke tests, you need to publish it as a job output.
 
-1. In Visual Studio Code, open the *workflow.yml* file in the *.github/workflows* folder.
+1. In Visual Studio Code, open the _workflow.yml_ file in the _.github/workflows_ folder.
 
 1. In the **deploy** job, add an `id` to the `Deploy website` step so that you can refer to the step. Also, add a job output that copies the `appServiceAppHostName` output from the deployment step:
 
@@ -58,7 +59,7 @@ Now, you can add a smoke test job that runs your tests.
 
 ## Verify and commit your workflow definition
 
-1. Verify that your *workflow.yml* file looks like the following:
+1. Verify that your _workflow.yml_ file looks like the following:
 
    :::code language="yaml" source="code/9-workflow.yml" highlight="69-70, 80, 89-102" :::
 
@@ -100,7 +101,7 @@ Now, you can add a smoke test job that runs your tests.
 
 Now that you've identified that your Bicep definition doesn't meet your security team's requirement, you'll fix it.
 
-1. In Visual Studio Code, open the *main.bicep* file in the *deploy* folder.
+1. In Visual Studio Code, open the _main.bicep_ file in the _deploy_ folder.
 
 1. Find the definition for the Azure App Service app, and update it to include the `httpsOnly` property in its `properties` area:
 
