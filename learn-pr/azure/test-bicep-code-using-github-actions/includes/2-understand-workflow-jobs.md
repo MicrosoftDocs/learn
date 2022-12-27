@@ -18,7 +18,7 @@ Jobs run in parallel by default. You can control how and when each job runs. For
 
 ## Shifting left
 
-By using jobs, you can verify the quality of your code before you deploy it. This is sometimes called _shifting left_.
+By using jobs, you can verify the quality of your code before you deploy it. This process is sometimes called _shifting left_.
 
 Consider a timeline of the activities that you perform when you write code. The timeline starts from the planning and design phases. It then moves to the building and testing phases. Finally, you deploy and then have to support your solution.
 
@@ -35,7 +35,7 @@ You can even add validation well before your deployment begins. When you work wi
 
 ## Define a workflow job
 
-Every workflow contains at least one job, and you can define additional jobs to suit your requirements. Jobs run in parallel by default. The type of GitHub account you have determines the number of jobs you can run simultaneously when you use GitHub-hosted runners.
+Every workflow contains at least one job, and you can define more jobs to suit your requirements. Jobs run in parallel by default. The type of GitHub account you have determines the number of jobs you can run simultaneously when you use GitHub-hosted runners.
 
 Imagine that you've built a Bicep file that you need to deploy twice: once to infrastructure in the United States and once to infrastructure in Europe. You also want to validate your Bicep code in your workflow. Here's an illustration of a multi-job workflow that defines a similar process:
 
@@ -82,11 +82,11 @@ A typical Bicep deployment workflow contains several jobs. As the workflow moves
 1. **Validate**: Use the Azure Resource Manager preflight validation process to check for problems that might occur when you deploy.
 1. **Preview**: Use the what-if command to validate the list of changes that will be applied against your Azure environment. Ask a human to manually review the what-if results and approve the workflow to proceed.
 1. **Deploy**: Submit your deployment to Resource Manager and wait for it to finish.
-1. **Smoke Test**: Run basic post-deployment checks against some of the important resources that you've deployed. These are called _infrastructure smoke tests_.
+1. **Smoke Test**: Run basic post-deployment checks against some of the important resources that you've deployed. These checks are called _infrastructure smoke tests_.
 
 Your organization might have a different sequence of jobs, or you might need to integrate your Bicep deployments into a workflow that deploys other components. After you understand how the jobs work, you can design a workflow to suit your needs.
 
-Every job executes on a new runner instance. This also means that every job will start from a clean environment. So, in every job you typically need to check out the source code as your first step. You also need to sign in to your Azure environment in every job that interacts with Azure.
+Every job executes on a new runner instance that starts from a clean environment. So, in every job you typically need to check out the source code as your first step. You also need to sign in to your Azure environment in every job that interacts with Azure.
 
 Throughout this module, you'll learn more about these jobs and progressively build a workflow that includes each job. You'll also learn:
 

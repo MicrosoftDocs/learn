@@ -49,7 +49,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 ## Clone the repository
 
-You now have a copy of the template repository in your own account. You will now clone this repository locally so you can start work in it.
+You now have a copy of the template repository in your own account. You'll clone this repository locally so you can start work in it.
 
 1. Select **Code** and select the copy icon.
 
@@ -122,9 +122,9 @@ Next, create a workload identity in Azure AD for your deployment workflow.
 ::: zone pivot="cli"
 
 > [!TIP]
-> To create the workload identity, the Azure CLI commands use `jq` to parse data from JSON output. If you don't have `jq` installed, you can use Bash in [Azure Cloud Shell](https://shell.azure.com/).
+> To create the workload identity, the Azure CLI commands use `jq` to parse data from JSON output. If you don't have `jq` installed, you can use Bash in [Azure Cloud Shell](https://shell.azure.com/) to create the workload identity, resource group and role assignment, and prepare the GitHub secrets.
 
-1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
+1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 
    ```bash
    githubOrganizationName='mygithubuser'
@@ -151,7 +151,7 @@ Next, create a workload identity in Azure AD for your deployment workflow.
 
 ::: zone pivot="powershell"
 
-1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
+1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 
    ```azurepowershell
    $githubOrganizationName = 'mygithubuser'
@@ -185,33 +185,33 @@ Next, create a resource group for your website. This process also grants the wor
 
 ::: zone pivot="cli"
 
-1. Run the following Azure CLI commands in the Visual Studio Code terminal:
+Run the following Azure CLI commands in the Visual Studio Code terminal:
 
-   ```bash
-   resourceGroupResourceId=$(az group create --name ToyWebsiteTest --location eastus --query id --output tsv)
+```bash
+resourceGroupResourceId=$(az group create --name ToyWebsiteTest --location eastus --query id --output tsv)
 
-   az ad sp create --id $applicationRegistrationObjectId
-   az role assignment create \
-      --assignee $applicationRegistrationAppId \
-      --role Contributor \
-      --scope $resourceGroupResourceId
-   ```
+az ad sp create --id $applicationRegistrationObjectId
+az role assignment create \
+  --assignee $applicationRegistrationAppId \
+  --role Contributor \
+  --scope $resourceGroupResourceId
+```
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. Run the following Azure PowerShell commands in the Visual Studio Code terminal:
+Run the following Azure PowerShell commands in the Visual Studio Code terminal:
 
-   ```azurepowershell
-   $resourceGroup = New-AzResourceGroup -Name ToyWebsiteTest -Location eastus
+```azurepowershell
+$resourceGroup = New-AzResourceGroup -Name ToyWebsiteTest -Location eastus
 
-   New-AzADServicePrincipal -AppId $($applicationRegistration.AppId)
-   New-AzRoleAssignment `
-      -ApplicationId $($applicationRegistration.AppId) `
-      -RoleDefinitionName Contributor `
-      -Scope $($resourceGroup.ResourceId)
-   ```
+New-AzADServicePrincipal -AppId $($applicationRegistration.AppId)
+New-AzRoleAssignment `
+  -ApplicationId $($applicationRegistration.AppId) `
+  -RoleDefinitionName Contributor `
+  -Scope $($resourceGroup.ResourceId)
+```
 
 ::: zone-end
 

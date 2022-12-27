@@ -60,7 +60,7 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
 1. Open the _workflow.yml_ file in Visual Studio Code.
 
-1. Add the `environment` parameter to the **deploy** job. Set the value to `Website`, to match the name of the environment you just created:
+1. Add the `environment` parameter to the **deploy** job. Set the value to `Website`, to match the name of the environment you created:
 
    :::code language="yaml" source="code/7-workflow.yml" range="65-84" highlight="3" :::
 

@@ -29,7 +29,7 @@ During the process, you'll:
 
 1. Below the lines that you just added, and above the deploy job, add a validation job:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="25-42" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="25-42" highlight="4-6, 11":::
 
    This job defines steps to check out the code, sign in to your Azure environment, and use the `azure/arm-deploy` action with the `Validate` deployment mode.
 
@@ -37,11 +37,11 @@ During the process, you'll:
 
 1. Below the `runs-on` line in the `deploy` job, add a `needs` statement:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="44-48" highlight="3" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="44-50" highlight="3, 5-7" :::
 
    The `needs` statement indicates that the deploy job depends on the lint and validate jobs completing successfully before it can run.
 
-   Also notice that both the validate and deploy jobs sign into Azure, and all of the jobs check out the code from the repository. This is because each job uses a new GitHub runner.
+   Also notice that both the validate and deploy jobs sign into Azure, and all of the jobs check out the code from the repository. Those steps are necessary because each job uses a new GitHub runner.
 
 1. Save the file.
 
@@ -73,7 +73,7 @@ When you use a custom linter configuration, Bicep writes log data that GitHub Ac
 
 ## Verify and commit your workflow definition
 
-1. Verify that your _workflow.yml_ file looks like the following:
+1. Verify that your _workflow.yml_ file looks like the following code:
 
    :::code language="yaml" source="code/5-workflow.yml" highlight="14, 18-42, 46, 58" :::
 
@@ -135,7 +135,7 @@ Now that you've identified the problem, you can fix it in your Bicep file.
 
 1. In Visual Studio Code, open the _main.bicep_ file in the _deploy_ folder.
 
-1. Notice that the Bicep linter has also detected that the `storageAccountNameParam` parameter isn't used. In Visual Studio Code, it indicates this by displaying a squiggly line. Normally, the line would be yellow to indicate a warning. But because you customized the _bicepconfig.json_ file, the linter treats the code as an error and displays the line in red.
+1. Notice that the Bicep linter has also detected that the `storageAccountNameParam` parameter isn't used. In Visual Studio Code, a squiggly line is displayed under the parameter. Normally, the line would be yellow to indicate a warning. But because you customized the _bicepconfig.json_ file, the linter treats the code as an error and displays the line in red.
 
    :::code language="bicep" source="code/5-template-1.bicep" range="15" :::
 

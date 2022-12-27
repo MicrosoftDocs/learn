@@ -1,6 +1,6 @@
 When you automate your Bicep deployments by using GitHub Actions workflows, you create a consistent and reusable process for managing your Azure resources. Over time, your workflow becomes the only way that changes can be made to your Azure environment. It's important to ensure that your workflow enforces quality checks before, during, and after each deployment.
 
-In this module, you'll learn how to extend your workflow to add validation, checks, and tests. By doing this, you'll build confidence that your deployments meet your quality standards.
+In this module, you'll learn how to extend your workflow to add validation, checks, and tests. By doing verifications, you'll build confidence that your deployments meet your quality standards.
 
 ## Example scenario
 

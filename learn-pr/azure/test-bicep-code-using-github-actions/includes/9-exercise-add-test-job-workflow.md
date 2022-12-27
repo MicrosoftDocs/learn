@@ -21,7 +21,7 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
 
    :::code language="powershell" source="code/9-test.ps1" :::
 
-   This is a Pester test file. It requires a parameter named `$HostName`. It runs two tests against the host name:
+   The result is a Pester test file. It requires a parameter named `$HostName`. It runs two tests against the host name:
 
    - Try to connect to the website over HTTPS. The test passes if the server responds with an HTTP response status code between 200 and 299, which indicates a successful connection.
    - Try to connect to the website over HTTP. The test passes if the server responds with an HTTP response status code of 300 or higher.
@@ -50,7 +50,7 @@ Now, you can add a smoke test job that runs your tests.
 
    This code defines the job. The job contains a step to check out the code, and a step to run tests by using Pester.
 
-   The job definition uses the `needs` property to define a dependency on the **deploy** job. This ensures that the jobs run in the sequence you want. It also enables you to use the outputs of the **deploy** job when you run the smoke tests.
+   The job definition uses the `needs` property to define a dependency on the **deploy** job. This dependency ensures that the jobs run in the sequence you want. It also enables you to use the outputs of the **deploy** job when you run the smoke tests.
 
    > [!NOTE]
    > PowerShell and Pester are both preinstalled on GitHub-hosted runners. You don't need to do anything special to use them in a script step.
@@ -59,7 +59,7 @@ Now, you can add a smoke test job that runs your tests.
 
 ## Verify and commit your workflow definition
 
-1. Verify that your _workflow.yml_ file looks like the following:
+1. Verify that your _workflow.yml_ file looks like the following code:
 
    :::code language="yaml" source="code/9-workflow.yml" highlight="69-70, 80, 89-102" :::
 

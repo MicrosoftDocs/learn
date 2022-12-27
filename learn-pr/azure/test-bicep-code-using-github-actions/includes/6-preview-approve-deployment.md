@@ -8,21 +8,21 @@ A Bicep file describes the state that you want your Azure environment to be in a
 
 A deployment can result in new resources being deployed into your environment, or existing resources being updated. When you run a deployment in complete mode, it can even result in the deletion of existing resources.
 
-Anytime resources are created, updated, or deleted, there's a risk that things can change in a way you didn't expect. It's a good practice to add an extra step to verify what exactly will be created, updated, and deleted. This verification adds value to your automation process. When you're deploying to a production environment, it's particularly important to confirm any changes that will happen to your environment.
+Anytime resources are created, updated, or deleted, there's a risk that things can change in a way you didn't expect. It's a good practice to add an extra step to verify what exactly will be created, updated, and deleted. This verification adds value to your automation process. When you're deploying to a production environment, it's important to confirm any changes that will happen to your environment.
 
 Resource Manager provides the what-if operation, which you can run on your Bicep file within your workflow job:
 
 :::image type="content" source="../media/6-jobs-preview.png" alt-text="Diagram of a workflow that includes Lint, Validate, and Preview jobs. The Preview job executes a what-if operation against Azure." border="false":::
 
-The `arm-deploy` action supports triggering what-if operation by using the `additionalArguments` property:
+The `arm-deploy` action supports triggering the what-if operation by using the `additionalArguments` property:
 
 :::code language="yaml" source="code/6-what-if.yml" highlight="12-20" :::
 
-The code above is equivalent to running the deployment by using Azure CLI, with the `--what-if` argument included.
+The highlighted code is equivalent to running the deployment by using Azure CLI, with the `--what-if` argument included.
 
 The what-if operation doesn't make any changes to your environment. Instead, it describes the resources that will be created, the resource properties that will be updated, and the resources that will be deleted.
 
-What-if sometimes shows that a resource will change when actually no change will happen. This is called _noise_. We're working to reduce these problems, but we need your help. [Please report these problems](https://aka.ms/whatifissues).
+What-if sometimes shows that a resource will change when actually no change will happen. This is called _noise_. We're working to reduce these problems, but we need your help. [Report what-if problems](https://aka.ms/whatifissues).
 
 After you see the output of the what-if operation, you can determine whether to continue on to the deployment. This step typically involves a human reviewing the output from the what-if command, and then making a decision about whether the identified changes are reasonable. If a human reviewer decides that the changes are reasonable, they can manually approve the workflow run.
 
@@ -34,7 +34,7 @@ In GitHub Actions, an _environment_ represents the place to which your solution 
 
 You create an environment by using the GitHub web interface. You can create environments when you work with a public GitHub repository, or when you use a GitHub Enterprise account.
 
-After you create an environment you can reference it in any jobs in your workflow:
+After you create an environment, you can reference it in any jobs in your workflow:
 
 :::code language="yaml" source="code/6-environment.yml" range="19-60" highlight="28" :::
 
