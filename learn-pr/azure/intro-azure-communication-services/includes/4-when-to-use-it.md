@@ -12,7 +12,7 @@ We'll list some criteria that will help you make the right decision.
 
 ### Existing business/application/idea
 
-Azure Communication Services can't create an application or business all by itself. It works best when there's an existing application into which to integrate Azure Communication Services, or at least if an there's an idea for which it would make sense to create an application. If you don't have an existing application or idea, then a different product that fulfills your needs and requirements might be better.
+Azure Communication Services can't create an application or business all by itself. It works best when there's an existing application into which to integrate Azure Communication Services, or at least you have an idea for which it would make sense to create an application. If you don't have an existing application or idea, then a different product that fulfills your needs and requirements might be better.
 
 A good example here is that you'll need an existing form of Identity solution (log in, log out, and so on) to tie your user's identities to Azure Communication Services' identity platform. Creating calls without identities is possible, but users won't have a consistently defined identity to recognize each other with.
 
@@ -26,7 +26,7 @@ It's possible to mix and match Azure Communication Services features, as well as
 
 Azure Communication Services requires a suitable environment in which to work. An environment is the combination of the target device or browser and the programming language used.
 
-Azure Communication services supports the following environments:
+Azure Communication Services supports the following environments:
 
 * Most modern browsers (Chrome, Edge, Safari)
 * Android phones and devices
@@ -65,11 +65,11 @@ You can read additional information about regional differences in offerings of A
 
 When deciding to use Azure Communication Services, it's also important to think about which of its many features you should use for a particular scenario. There may be a temptation to go overboard and use everything, but that's often not ideal. As we explained before, you can mix and match features or choose to not use any at all. To aid in a decision, here's some guidance that may help.
 
-First, remember that not all customers are willing to jump on a video or audio call with a real person. It's important to offer them various types of communication to suit their needs and motivations. Always start with something more passive and asynchronous, like chat or email. Once there's an established business relationship with a customer, they're more likely to be willing to hop on a call, especially if they need things like support or maintenance.
+First, remember that not all customers are willing to jump on a video or audio call with a real person. It's important to offer them various types of communication to suit their needs and motivations. Always start with something more passive and asynchronous, like chat or email. Once there's an established business relationship with a customer, r're more likely to be willing to hop on a call, especially if they need things like support or maintenance.
 
 Additionally, some users may be unwilling to supply their phone number or other personal details, which might rule out some of Azure Communication Services' telephony features. Make sure you have other flows in place, such as email.
 
-If in doubt, starting with chat (and in particular, a chat experience that does not require a user to provide sign-in information) might be a good idea to communicate to your users.
+If in doubt, starting with chat (and in particular, a chat experience that doesn't require a user to provide sign-in information) might be a good idea to communicate to your users.
 
 ## Apply the criteria
 
