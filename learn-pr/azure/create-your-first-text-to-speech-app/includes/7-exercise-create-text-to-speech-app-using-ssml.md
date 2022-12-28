@@ -107,7 +107,7 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
 
 ## Update the code for your text-to-speech application for SSML
 
-1. In the Cloud Shell on the right, open the *Program.cs* file in Visual Studio Code.
+1. In the Cloud Shell on the right, open the *Program.cs* file.
 
     ```dotnetcli
     code Program.cs

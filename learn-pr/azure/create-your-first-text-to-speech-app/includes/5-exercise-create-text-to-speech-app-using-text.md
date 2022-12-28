@@ -168,7 +168,7 @@ The `SpeechConfig` class has a `SpeechSynthesisVoiceName` property that you can 
 
 To specify the voice, use the following steps.
 
-1. In the Cloud Shell on the right, open the *Program.cs* file in Visual Studio Code.
+1. In the Cloud Shell on the right, open the *Program.cs* file.
 
     ```dotnetcli
     code Program.cs
