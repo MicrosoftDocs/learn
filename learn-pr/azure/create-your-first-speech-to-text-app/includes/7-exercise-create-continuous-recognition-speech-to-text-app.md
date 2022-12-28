@@ -2,7 +2,7 @@ In this exercise, you'll create an application that uses continuous recognition 
 
 ## Modify the code for your text-to-speech application
 
-1. In the Cloud Shell on the right, open the *Program.cs* file in Visual Studio Code.
+1. In the Cloud Shell on the right, open the *Program.cs* file.
 
     ```dotnetcli
     code Program.cs
