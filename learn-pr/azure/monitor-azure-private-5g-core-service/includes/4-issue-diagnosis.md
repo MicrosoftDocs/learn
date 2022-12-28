@@ -24,9 +24,9 @@ Azure Private 5G Core provides two authentication methods for the distributed tr
 - Azure active directory (AD): The Azure AD method allows users to sign in with their Azure accounts.
 - Username and password: The username/password method allows users to sign in with a default account.
 
-Whenever possible, use the Azure AD method, as it's more secure. Only use the username and password method when you don't have a stable connection to Azure. You can choose your preferred authentication method when you deploy or modify a site.
+Whenever possible, use the Azure AD method, as it's more secure. Only use the username and password method when you don't have a stable connection to Azure. You can choose your preferred authentication method when you deploy or modify a site. For detailed instructions on configuring and using these authentication methods, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
 
-For detailed instructions on configuring and using these authentication methods, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
+Access to the distributed tracing tool is secured by HTTPS. You can use a self-signed certificate or provide your own to authenticate access to the tool. The article [Modify the local access configuration in a site](/azure/private-5g-core/modify-local-access-configuration) provides detailed instructions on checking or modifying the access certificate.
 
 ## Diagnostics details that you can check
 
@@ -38,7 +38,7 @@ To help you diagnose issues, the distributed tracing tool provides detailed info
 
 Each entry in the **Detailed Timeline** view represents an event. The entry includes the date and time at which the event occurred and the name of the component on which it occurred. You can check the details about each event. Additionally, you can filter the events by different levels. For example, the detailed events level includes the network protocol messages and more fine-grained detail of events.
 
-The **Call Flow** view uses a diagram to visually indicate the messages flowing between network functions. As shown in the example view below, the vertical lines show the network components involved in the flow. The black lines indicate packet core Network Functions that have logged sending or receiving messages for this flow. The gray lines indicate other components that don't log messages. A horizontal line shows each individual signaling message flowing between two network components. An arrow indicates the direction of flow from the sending component to the receiving component. The messages appear in the diagram in the order in which they occurred.
+The **Call Flow** view uses a diagram to visually indicate the messages flowing between network functions. As shown in the following example view, the vertical lines show the network components involved in the flow. The black lines indicate packet core Network Functions that have logged sending or receiving messages for this flow. The gray lines indicate other components that don't log messages. A horizontal line shows each individual signaling message flowing between two network components. An arrow indicates the direction of flow from the sending component to the receiving component. The messages appear in the diagram in the order in which they occurred.
 
 :::image type="content" source="../media/distributed-tracing-call-flow.png" alt-text="A screenshot showing the message flows in an example Call Flow view" border="true":::
 
