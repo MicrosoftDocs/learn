@@ -78,7 +78,7 @@ Telephony provides calling over the Publicly Switched Telephone Network (PSTN). 
 - **Phone number management**: Buy and manage real-world phone numbers to use with your telephony systems. This includes toll-free numbers.
 - **Direct routing**: Route Azure Communication Services numbers and calls to your on premises telephony systems.
 
-You can read more about telephony features in the [Azure Communication Services documentation](/azure/communication-services/), which covers them in more detail. Check out the Reference section at the end of the module for more information..
+You can read more about telephony features in the [Azure Communication Services documentation](/azure/communication-services/), which covers them in more detail. Check out the Reference section at the end of the module for more information.
 
 ### SMS features
 
@@ -90,6 +90,6 @@ Short Messaging Service (SMS) features let you interact with regular SMS messagi
 - **Bulk messaging**: Send large marketing or notification messages.
 - **Shortcodes**: Use abbreviated phone numbers for marketing and services.
 
-You can read more about SMS features in the [Azure Communication Services documentation](/azure/communication-services/), which covers them in more detail. Check out the Reference section at the end of the module for more information..
+You can read more about SMS features in the [Azure Communication Services documentation](/azure/communication-services/), which covers them in more detail. Check out the Reference section at the end of the module for more information.
 
 :::image type="content" source="../media/sms.png" alt-text="Marketing image of an example Azure Communication Services SMS.":::
