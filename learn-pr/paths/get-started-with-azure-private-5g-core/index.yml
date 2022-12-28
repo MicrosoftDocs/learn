@@ -31,7 +31,7 @@ products:
 subjects:
 - cloud-computing
 - networking
-modules:
+#modules:
 #- learn.intro-to-azur-private-5g-core
 #- learn.deploy-azure-private-5g-core
 #- learn.monitor-azure-private-5g-core-service
