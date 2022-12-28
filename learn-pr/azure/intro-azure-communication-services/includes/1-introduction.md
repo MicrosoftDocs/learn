@@ -1,12 +1,12 @@
-Communication is of ever-growing importance within our modern world. Keeping connected to your customers is vital to the success of your business. Building communication solutions that are able to keep up with this need is challenging. Azure Communication Services takes the pain out of this by providing services and products that allow you to deploy custom communication solutions easily with Azure. Additionally, with Azure Communication Services, you don't need to be an expert in the underlying technologies such as media encoding or telephony; Azure Communication Services takes care of it for you.
+Communication is of ever-growing importance within our modern world. Keeping connected to your customers is vital to the success of your business. Building communication solutions that are able to keep up with this need is challenging. Azure Communication Services takes the pain out of this scenario by providing services and products that allow you to deploy custom communication solutions easily with Azure. Additionally, with Azure Communication Services, you don't need to be an expert in the underlying technologies such as media encoding or telephony; Azure Communication Services takes care of it for you.
 
 :::image type="content" source="../media/communication-services.png" alt-text="Communication Services marketing image.":::
 
 ## Example scenario
 
-Let's start with an example scenario that'll help you understand the potential of Azure Communication Services. Imagine you work on the engineering/product team of a household appliance producer (Contoso Appliances) that offers many appliances for the household such as refrigerators, washers, and dryers. As a company, you've been struggling with contacting and communicating with your customers when it comes to support, sales, and maintenance.
+Let's start with an example scenario that'll help you understand the potential of Azure Communication Services. Imagine that you work on the engineering/product team of a household appliance producer (Contoso Appliances) that offers many appliances for the household such as refrigerators, washers, and dryers. As a company, you've been struggling with contacting and communicating with your customers when it comes to support, sales, and maintenance.
 
-This has led to a number of problems in the business, such as:
+This situation has led to several problems in the business, such as:
 
 - Missed maintenance appointments
 - Overbooked maintenance appointments
