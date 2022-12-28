@@ -53,6 +53,7 @@ In the setup steps for this module, you already created a federated credential f
    :::image type="content" source="../media/7-add-reviewers.png" alt-text="Screenshot of the GitHub interface that shows the Website environment, with the required reviewers checkbox and textbox highlighted.":::
 
 1. Select **Save protection rules**.
+1. Select **Environments** to exit the configuration.
 
 ## Update the workflow definition to require an environment and reviewer
 
@@ -90,7 +91,7 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
    Wait until the workflow completes the **lint**, **validate**, and **preview** jobs. Although GitHub automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
-1. Notice that the workflow prompts you for a review. You also receive an email informing you that the workflow needs your review.
+1. Notice that the workflow prompts you for a review. Dependent upon how you've set up your GitHub account, you'll receive an email or web notification with a request to review the workflow.
 
    :::image type="content" source="../media/7-workflow-run-review-required.png" alt-text="Screenshot of the GitHub interface that shows the workflow run, with the review requirement highlighted.":::
 
@@ -116,7 +117,7 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
 1. Select the **Review deployments** button on the review panel.
 
-1. In the **Review pending deployments** pop-up, select the **Website** environment. In the **Leave a comment** box, enter **Reviewed what-if results**.
+1. In the **Review pending deployments** pop-up, select the **Website** environment. In the **Leave a comment** box, enter _Reviewed what-if results_.
 
 1. Select **Approve and deploy**.
 

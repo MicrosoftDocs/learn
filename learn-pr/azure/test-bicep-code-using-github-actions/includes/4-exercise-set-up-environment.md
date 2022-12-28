@@ -187,7 +187,7 @@ Next, create a resource group for your website. This process also grants the wor
 Run the following Azure CLI commands in the Visual Studio Code terminal:
 
 ```bash
-resourceGroupResourceId=$(az group create --name ToyWebsiteTest --location eastus --query id --output tsv)
+resourceGroupResourceId=$(az group create --name ToyWebsiteTest --location westus3 --query id --output tsv)
 
 az ad sp create --id $applicationRegistrationObjectId
 az role assignment create \
@@ -203,7 +203,7 @@ az role assignment create \
 Run the following Azure PowerShell commands in the Visual Studio Code terminal:
 
 ```azurepowershell
-$resourceGroup = New-AzResourceGroup -Name ToyWebsiteTest -Location eastus
+$resourceGroup = New-AzResourceGroup -Name ToyWebsiteTest -Location westus3
 
 New-AzADServicePrincipal -AppId $($applicationRegistration.AppId)
 New-AzRoleAssignment `
