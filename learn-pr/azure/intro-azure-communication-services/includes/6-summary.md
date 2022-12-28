@@ -8,7 +8,7 @@ In this module, our goals were to:
   - Environment
   - Geographic Region
 
-When evaluating Azure Communication Services, we learned that the features and products within Azure Communication Services will help the fictional home-appliance company to solve its problems, introduce new features, and meet the its goals. We also applied our decision criteria. By checking through the criteria, we learned that there was a good fit for utilizing Azure Communication Services within this scenario.
+When evaluating Azure Communication Services, we learned that the features and products within Azure Communication Services will help the fictional home-appliance company to solve its problems, introduce new features, and meet its goals. We also applied our decision criteria. By checking through the criteria, we learned that there was a good fit for utilizing Azure Communication Services within this scenario.
 
 By learning about Azure Communication Services and using our decision criteria to evaluate if Azure Communication Services is right for you, we hope that you've gained valuable insight into what Azure Communication Services has to offer and how it might help you with your business needs.
 
