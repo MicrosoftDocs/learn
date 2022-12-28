@@ -31,7 +31,9 @@ products:
 subjects:
 - cloud-computing
 - networking
-#modules:
+modules:
+- learn.oxford.intro-5g-azure
+- learn.oxford.5g-business-models
 #- learn.intro-to-azur-private-5g-core
 #- learn.deploy-azure-private-5g-core
 #- learn.monitor-azure-private-5g-core-service
