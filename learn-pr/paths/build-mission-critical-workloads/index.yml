@@ -26,5 +26,6 @@ subjects:
 - solution-design
 modules:
 - learn.azure-mission-critical
+- learn.continuous-validate-test-mission-critical-workloads
 trophy:
   uid: learn.build-mission-critical-workloads.trophy
