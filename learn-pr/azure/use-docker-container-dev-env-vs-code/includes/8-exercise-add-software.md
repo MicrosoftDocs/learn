@@ -19,7 +19,7 @@ In this exercise, we'll look at how you can install a technology stack like Node
    && curl -sL https://deb.nodesource.com/setup_14.x | bash \
    && apt-get install nodejs \
    && node -v \
-   && npm -v \
+   && npm -v
    ```
 
 1. Save your project.
