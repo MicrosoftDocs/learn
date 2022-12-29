@@ -43,6 +43,7 @@ In Database-v1, run a query to get the customer entity and review the request ch
     ```sql
     SELECT * FROM c WHERE c.id = "FFD0DD37-1F0E-4E2E-8FAC-EAF45B0E9447"
    ```
+
 1. Select the **Query Stats** tab and note the request charge of 2.83.
 
     :::image type="content" source="../media/5-customer-query-v1.png" alt-text="Screenshot that shows the query stats for customer query in the database.":::
@@ -87,8 +88,8 @@ Now that we've run all of our queries, let's add up all of the Request Unit cost
 |---------|---------|
 |Customer|2.83|
 |Customer Address|2.83|
-|Customer Password|2.83|
-|**Total RU/s**|**8.49**|
+|Customer Password|2.82|
+|**Total RU/s**|**8.48**|
 
 ## Measure performance of embedded entities
 
@@ -106,7 +107,7 @@ Now we're going to query for the same information but with the entities embedded
 
     :::image type="content" source="../media/5-customer-query-v2.png" alt-text="Screenshot that shows the query results for customer in the database.":::
 
-1. Select **Query Stats**. Note the request charge of 2.83, versus the 8.49 RU/s for the three queries that you ran earlier.
+1. Select **Query Stats**. Note the request charge of 2.83, versus the 8.48 RU/s for the three queries that you ran earlier.
 
 ## Compare the performance of the two models
 
