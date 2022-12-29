@@ -1,15 +1,15 @@
-jobs: 
-  lint: 
+jobs:
+  lint:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - script: |
         az bicep build --file deploy/main.bicep
-  
-  validate: 
+
+  validate:
     runs-on: ubuntu-latest
-    steps: 
-    - uses: actions/checkout@v2
+    steps:
+    - uses: actions/checkout@v3
     - uses: azure/login@v1
       with:
         client-id: ${{ secrets.AZURE_CLIENT_ID }}
