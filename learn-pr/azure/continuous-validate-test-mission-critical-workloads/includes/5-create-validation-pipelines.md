@@ -4,7 +4,7 @@ When you inject failures in isolation into an empty or idle environment, it tend
 
 To create a CI/CD pipeline, you can use Azure Pipelines, GitHub Actions or the CI/CD tool of your choice. The following example is a visualization of the end-to-end stages of a pipeline in Azure DevOps:
 
-:::image type="content" source="../media/pipeline-with-chaos-and-load.png" border="false" alt-text="Diagram that shows a sample pipeline with chaos and load.":::
+:::image type="content" source="../media/pipeline-with-chaos-and-load.png" border="false" alt-text="Diagram that shows a sample pipeline with chaos and load." lightbox="../media/pipeline-with-chaos-and-load.png":::
 
 1. In the pipeline, define the Azure Load Test and Azure Chaos Studio services as Infrastructure-as-Code (IaC) with Azure Resource Manager (ARM) templates, Bicep, Terraform, or others. Azure Load Testing [provides first-party tasks](/azure/load-testing/tutorial-identify-performance-regression-with-cicd) for Azure Pipelines and GitHub Actions to interact with the load testing service, and to create and orchestrate tests:
 
