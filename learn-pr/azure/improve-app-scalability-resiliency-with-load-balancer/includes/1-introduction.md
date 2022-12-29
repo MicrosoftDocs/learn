@@ -4,7 +4,7 @@ Suppose you work for a healthcare organization that's launching a new portal app
 
 The new portal needs to be available around the clock to handle failures. The portal must adjust to fluctuations in load by adding and removing resources to match the load. The organization needs a solution that distributes work to virtual machines across the system as virtual machines are added. The solution should detect failures and reroute jobs to virtual machines as needed. Improved resiliency and scalability help ensure that patients can schedule appointments from any location.
 
-By the end of this module, you will be able to use Azure Load Balancer to build a resilient and scalable app architecture.
+By the end of this module, you'll be able to use Azure Load Balancer to build a resilient and scalable app architecture.
 
 ## Learning objectives
 

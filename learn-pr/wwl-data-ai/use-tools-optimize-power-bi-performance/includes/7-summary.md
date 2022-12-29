@@ -4,5 +4,5 @@ To optimize a slow report, you can run the Performance analyzer to measure how e
 
 ## Learn more
 
-- [Optimize a model for performance in Power BI](/learn/modules/optimize-model-power-bi/)
+- [Optimize a model for performance in Power BI](/training/modules/optimize-model-power-bi/)
 - [Optimization guide for Power BI](/power-bi/guidance/power-bi-optimization)

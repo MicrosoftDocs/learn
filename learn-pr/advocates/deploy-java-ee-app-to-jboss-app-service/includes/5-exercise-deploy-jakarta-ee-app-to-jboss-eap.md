@@ -428,7 +428,7 @@ $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/area/Asia 
 ....
 ```
 
-Finally, if you specify a country code after `/countries`, you can get all the cities that have population greater than 1 million within the country.
+Finally, if you specify a country code after `/countries`, you can get all the cities that have population greater than 1 million within the country/region.
 
 :::image type="content" source="../media/rest-endpoint-cities.png" alt-text="Screenshot that shows cities as the REST endpoint.":::
 

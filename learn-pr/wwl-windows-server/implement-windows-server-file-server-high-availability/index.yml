@@ -21,7 +21,7 @@ prerequisites: |
   - Windows Server 2012 or Windows Server 2016.
   - Core networking technologies.
   - Windows Server Hyper-V fundamentals.
-iconUrl: /learn/achievements/implement-windows-server-file-server-high-availability.svg
+iconUrl: /training/achievements/implement-windows-server-file-server-high-availability.svg
 levels:
 - intermediate
 roles:

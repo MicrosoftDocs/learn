@@ -20,7 +20,7 @@ It's tempting to think of a product in terms of features, but it can be more use
 
 This concept was pioneered by the late Professor Clayton Christensen from Harvard University. He studied a wide range of products and asked, "What valuable job is this doing for the customer?"
 
-A classic example: If you buy a drill, the job you're interested in getting done is creating a hole, which in turn might be because you want to mount a bookshelf on your wall. The job to be done by the drill is to create a hole, which enables you to mount your bookshelf. As a customer, you're more interested in the outcome than the tool by which you achieve it.
+A classic example: If you buy a drill, the job you're interested in getting done is creating holes, which in turn might be because you want to mount a bookshelf on your wall. The job to be done by the drill is to create holes, which enables you to mount your bookshelf. As a customer, you're more interested in the outcome than the tool by which you achieve it.
 
 The same concept can be applied to startups. If you think about your product from the customer's perspective, you can ask, "What job is it going to do for my customer?"
 

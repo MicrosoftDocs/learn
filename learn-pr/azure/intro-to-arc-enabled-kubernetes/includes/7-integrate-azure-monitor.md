@@ -4,7 +4,7 @@ Monitoring is an important aspect of operationalizing any technology. Considerin
 
 Azure Monitor is a core component of the Microsoft strategy to extend comprehensive cloud-based management functionality beyond Azure to on-premises datacenters and non-Microsoft cloud providers. Customers maintaining their on-premises infrastructure can benefit from this functionality when tracking, auditing, or troubleshooting past events, optimizing administration of their existing deployments, and forecasting and planning the capacity of future deployments.
 
-Azure Monitor supports collection and monitoring of metrics, activity and diagnostics logs, and events from Azure services, Arc-enabled resources, and computers residing in on-premises datacenters and third-party cloud providers. It provides a quick way to assess the status of your environment in the Azure portal. You can also access its data by using Azure PowerShell, Azure CLI, REST API, and .NET SDK. Additionally, Azure Monitor allows you to archive collected data for long-term analysis or compliance purposes in Azure Storage or route it to Azure Stream Analytics or non-Microsoft services by using Event Hubs. You also can store and analyze near real-time and historical data by using Log Analytics. 
+Azure Monitor supports collection and monitoring of metrics, activity and diagnostics logs, and events from Azure services, Arc-enabled resources, and computers residing in on-premises datacenters and third-party cloud providers. It provides a quick way to assess the status of your environment in the Azure portal. You can also access its data by using Azure PowerShell, Azure CLI, REST API, and .NET SDK. Additionally, Azure Monitor allows you to archive collected data for long-term analysis or compliance purposes in Azure Storage or route it to Azure Stream Analytics or non-Microsoft services by using Event Hubs. You also can store and analyze near real-time and historical data by using Log Analytics.
 
 Regardless of the resource being monitored, Azure Monitor offers a consistent interface for configuring and using its features, including:
 
@@ -43,15 +43,15 @@ Azure Monitor Container Insights relies on a containerized version of the Log An
 
 You can set up of Azure Monitor Container Insights for Azure Arc-enabled Kubernetes deployments by using either a PowerShell or Bash script. The implementation consists of the following high-level steps:
 
-1. Verify that you satisfy all the prerequisites. You'll need: 
+1. Verify that you satisfy all the prerequisites. You'll need:
 
    - An Azure Arc-enabled Kubernetes cluster
    - An Azure Log Analytics workspace that will host Kubernetes cluster metrics and logs
    - Access to the cluster with a user account that has the cluster-admin role
    - A work or school account in the Azure Active Directory (Azure AD) tenant associated with the subscription that hosts the Azure Arc-enabled Kubernetes resource. This account should have, at minimum, the Contributor role within the Log Analytics workspace and the Azure Arc-enabled Kubernetes resource.
-   - Helm 3. Consider installing its latest release. 
+   - Helm 3. Consider installing its latest release.
    - Azure Command Line Interface (CLI) version 2.12.0 or newer or PowerShell Core
-   - Outbound connectivity to Azure. For details regarding target URLs and ports, refer to Microsoft Docs.
+   - Outbound connectivity to Azure. For details regarding target URLs and ports, refer to Microsoft Learn.
    - Azure Resource ID of the Azure Arc-enabled Kubernetes cluster
 
 1. Start an Azure CLI or PowerShell Core session on a computer with connectivity to the Kubernetes cluster and to Azure.

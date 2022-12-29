@@ -21,7 +21,7 @@ prerequisites: |
  - Familiarity with managing GitHub administrative settings
  - Basic knowledge of GitHub Actions
 ratingEnabled: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:

@@ -2,9 +2,10 @@ After you have an idea of which deployment option is best for your requirements,
 
 ## Purchasing model  
 
-The Azure SQL purchasing model provides two options: 
-- Based on virtual cores (vCore-based) 
-- Based on database transaction units (DTU-based) 
+The Azure SQL purchasing model provides two options:
+
+- Based on virtual cores (vCore-based)
+- Based on database transaction units (DTU-based)
 
 The DTU model isn't available in Azure SQL Managed Instance.  
 

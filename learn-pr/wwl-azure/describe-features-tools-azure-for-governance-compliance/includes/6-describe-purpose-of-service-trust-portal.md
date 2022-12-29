@@ -12,11 +12,8 @@ You can access the Service Trust Portal at [https://servicetrust.microsoft.com/]
 The Service Trust Portal features and content are accessible from the main menu. The categories on the main menu are:
 
  -  **Service Trust Portal** provides a quick access hyperlink to return to the Service Trust Portal home page.
- -  **Trust Documents** provides a wealth of security implementation and design information. The goal of the information is to make it easier for you to meet regulatory compliance objectives by understanding how Microsoft Cloud services keep your data secure. Trust Documents has subitems including: Audit Reports, Data Protection, and Azure Stack.
- -  **Industries & Regions** provides industry and region-specific compliance information about Microsoft Cloud services.
- -  **Trust Center** links to the Microsoft Trust Center. The Trust Center provides more information about security, compliance, and privacy in the Microsoft Cloud. This includes: information about the capabilities in Microsoft Cloud services that you can use to address specific requirements of the General Data Protection Regulation; documentation helpful to your GDPR accountability; and documentation helpful to understanding the technical and organizational measures Microsoft has taken to support the GDPR.
- -  **Resources** provides access to more resources such as the Security and Compliance Center, information on Microsoft Global Datacenters, and Frequently Asked Questions.
  -  **My Library** lets you save (or pin) documents to quickly access them on your My Library page. You can also set up to receive notifications when documents in your My Library are updated.
+ -  **All Documents** is a single landing place for documents on the service trust portal. From **All Documents**, you can pin documents to have them show up in your **My Library**.
 
 > [!NOTE]
 > Service Trust Portal reports and documents are available to download for at least 12 months after publishing or until a new version of document becomes available.

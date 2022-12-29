@@ -12,7 +12,7 @@ metadata:
 title: Administer infrastructure resources in Azure
 summary: Learn how to create, manage, secure and scale virtual machine resources.
 prerequisites: None
-iconUrl: /learn/achievements/administer-infrastructure-resources-in-azure.svg
+iconUrl: /training/achievements/administer-infrastructure-resources-in-azure.svg
 levels: 
 - beginner
 roles: 

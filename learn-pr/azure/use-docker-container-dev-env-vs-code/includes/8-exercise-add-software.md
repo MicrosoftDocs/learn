@@ -19,7 +19,7 @@ In this exercise, we'll look at how you can install a technology stack like Node
    && curl -sL https://deb.nodesource.com/setup_14.x | bash \
    && apt-get install nodejs \
    && node -v \
-   && npm -v \
+   && npm -v
    ```
 
 1. Save your project.
@@ -27,7 +27,7 @@ In this exercise, we'll look at how you can install a technology stack like Node
 ## Rebuild container
 
 1. Open the Command Palette.
-1. Type **rebuild** and select **Remote-Containers: Rebuild Container**.
+1. Type **rebuild** and select **Dev Containers: Rebuild Container**.
 
 ## Check the Node version
 

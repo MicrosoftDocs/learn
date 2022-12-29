@@ -9,7 +9,7 @@ In this section, you move the work item that you previously assigned to yourself
 
 In practice, the definition of "Done" often means that working software is in the hands of your users. In this unit, for learning purposes, you mark this work as complete, because you have a private build agent working on Azure Pipelines.
 
-At the end of each sprint, or work iteration, you and your team might hold a retrospective meeting in which you share the work you completed, what went well in the sprint, and what could be improved.
+At the end of each sprint or work iteration, you and your team might hold a retrospective meeting. In the meeting, you can share the work you completed, what went well in the sprint, and what could be improved.
 
 To complete the work item:
 
@@ -22,7 +22,7 @@ To complete the work item:
 
 Each module in this learning path provides a template that you can run to create a clean environment for the duration of the module.
 
-Running multiple templates creates multiple Azure Pipelines projects, each pointing to the same GitHub repository. This action can cause multiple pipelines to run each time you push a change to your GitHub repository. This action, in turn, can cause you to run out of free build minutes on our hosted agents. Therefore, it's important to disable or delete your pipeline before you move on to the next module.
+Running multiple templates creates multiple Azure Pipelines projects, each pointing to the same GitHub repository. This action can cause multiple pipelines to run each time you push a change to your GitHub repository. This action, in turn, can cause you to run out of free build minutes on your hosted agents. Therefore, it's important to disable or delete your pipeline before you move on to the next module.
 
 Choose either of the next two options.
 
@@ -32,8 +32,8 @@ This option disables the pipeline so that it doesn't process further build reque
 
 To disable the pipeline:
 
-1. In Azure Pipelines, navigate to your pipeline.
-1. From the drop-down menu, select **Settings**:
+1. In Azure Pipelines, go to your pipeline.
+1. From the dropdown menu, select **Settings**:
 
     :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="A screenshot of Azure Pipelines showing the location of the Settings menu.":::
 1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
@@ -47,8 +47,8 @@ This option deletes your Azure DevOps project, including what's on Azure Boards 
 To delete the project:
 
 1. In Azure DevOps, go to your project. Earlier, we recommended that you name this project **Space Game - web - Agent**.
-1. Select **Project settings** in the lower corner.
-1. In the **Project details** area, scroll to the bottom, and then select **Delete**.
+1. Select **Project settings** in the **lower left** corner of the Azure DevOps page.
+1. In the **Project details** area, scroll down, and then select **Delete**.
 
     :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="A screenshot of Azure Pipelines showing the location of the Delete button.":::
 1. In the window that appears, enter the project name, and then select **Delete** a second time.

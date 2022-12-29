@@ -3,7 +3,7 @@ uid: learn.distribute-load-with-traffic-manager
 metadata:
   title: Enhance your service availability and data locality by using Azure Traffic Manager
   description: Discover how Azure Traffic Manager provides DNS load balancing for your application to improve the performance and availability of your application.
-  ms.date: 04/15/2019
+  ms.date: 10/10/2022
   author: KumudD
   ms.author: kumud
   ms.topic: interactive-tutorial
@@ -12,13 +12,13 @@ title: Enhance your service availability and data locality by using Azure Traffi
 summary: Azure Traffic Manager provides DNS load balancing to your application, so you improve your ability to distribute your application around the world. Use Traffic Manager to improve the performance and availability of your application.
 abstract:  | 
   In this module, you will:
-  - Learn how to use Traffic Manager to dynamically distribute network traffic
-  - Set up Traffic Manager for automatic failover to a secondary region
-  - Set up Traffic Manager to redirect client requests to the nearest endpoint
+  - Learn how to use Traffic Manager to dynamically distribute network traffic.
+  - Set up Traffic Manager for automatic failover to a secondary region.
+  - Set up Traffic Manager to redirect client requests to the nearest endpoint.
 prerequisites: |
   - Familiarity with Azure App Service  
   - Basic knowledge of networking and DNS
-iconUrl: /learn/achievements/distribute-load-with-traffic-manager.svg
+iconUrl: /training/achievements/distribute-load-with-traffic-manager.svg
 levels:
 - beginner
 roles:

@@ -3,8 +3,8 @@ To create an Azure Virtual Network, and then create the Kafka and Spark clusters
 1.	Open this [link](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fhdinsight-spark-kafka-structured-streaming%2Fmaster%2Fazuredeploy.json) to sign into Azure portal and open the custom deployment page in a new window.
  
     This template creates the following resources:
-    - A Kafka 1.1 cluster for HDInsight 3.6. 	
-    - A Spark 2.2.0 cluster for HDInsight 3.6.
+    - A Kafka 2.1.1 cluster for HDInsight 4.0. 	
+    - A Spark 2.4.4 cluster for HDInsight 4.0.
     - An Azure Virtual Network, which contains the HDInsight clusters.
 
 2.	Use the following information to populate the entries on the **Customized template** section:

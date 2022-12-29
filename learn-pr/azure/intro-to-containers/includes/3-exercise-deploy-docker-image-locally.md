@@ -14,7 +14,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
 2. Enter the following code to pull the **ASP.NET Sample** app image from the Docker Hub registry. This image contains a sample web app developed by Microsoft, and is based on the default ASP.NET template available in Visual Studio.
 
     ```bash
-    docker pull mcr.microsoft.com/dotnet/core/samples:aspnetapp
+    docker pull mcr.microsoft.com/dotnet/samples:aspnetapp
     ```
 
 3. Enter the following code to verify that the image has been stored locally.
@@ -23,12 +23,12 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
     docker image ls
     ```
 
-    You should see a repository named *mcr.microsoft.com/dotnet/core/samples* with a tag of *aspnetapp*.
+    You should see a repository named *mcr.microsoft.com/dotnet/samples* with a tag of *aspnetapp*.
 
 4. Enter the following code to start the sample app. The *-d* flag is to run it as a background, non-interactive app. The *-p* flag is to map port 80 in the container that's created to port 8080 locally. This setting is intended to avoid conflicts with any web apps already running on your computer. The command will respond with a lengthy hexadecimal identifier for the instance.
 
     ```bash
-    docker run -d -p 8080:80 mcr.microsoft.com/dotnet/core/samples:aspnetapp
+    docker run -d -p 8080:80 mcr.microsoft.com/dotnet/samples:aspnetapp
     ```
 
 5. Open a web browser, and enter the URL for the sample web app `http://localhost:8080`. You should see a page that looks like the screenshot below.
@@ -47,7 +47,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
 
    ```console
    CONTAINER ID   IMAGE                                             COMMAND                  CREATED          STATUS          PORTS                  NAMES
-   96c851831ade   mcr.microsoft.com/dotnet/core/samples:aspnetapp   "dotnet aspnetapp.dll"   22 minutes ago   Up 22 minutes   0.0.0.0:8080->80/tcp   eager_montalcini
+   96c851831ade   mcr.microsoft.com/dotnet/samples:aspnetapp   "dotnet aspnetapp.dll"   22 minutes ago   Up 22 minutes   0.0.0.0:8080->80/tcp   eager_montalcini
    ```
 
    The **COMMAND** field shows the container started by running the command *dotnet aspnetapp.dll*. This command invokes the .NET Core runtime to start the code in the aspnetapp.dll (the code for the sample web app). The *PORTS* field indicates that port 80 in the image was mapped to port 8080 on your computer. The *STATUS* field shows the application is still running. Make a note of the container's *NAME*.
@@ -89,7 +89,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
 1. Remove the image from the registry.
 
     ```bash
-    docker image rm mcr.microsoft.com/dotnet/core/samples:aspnetapp
+    docker image rm mcr.microsoft.com/dotnet/samples:aspnetapp
     ```
 
 1. The output should list numerous items have been untagged and deleted. Run the following command to list the images again and verify that the image for the *microsoft/dotnet-samples* web app has disappeared.

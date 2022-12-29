@@ -24,14 +24,14 @@ summary: |
   > This learning path is part of a multimodal learning experience. Start the first module to see how you can follow along!
 
 prerequisites: None
-iconUrl: /learn/achievements/introduction-python-space-exploration-nasa.svg
+iconUrl: /training/achievements/introduction-python-space-exploration-nasa.svg
 levels:
 - beginner
 roles:
 - student
 - data-scientist
 products:
-- vs-code
+- azure
 subjects:
 - development-tools
 modules:

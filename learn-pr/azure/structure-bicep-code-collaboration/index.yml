@@ -23,7 +23,7 @@ prerequisites: |
     To follow along with the exercises in the module, you'll need the following:
      - [Visual Studio Code](https://code.visualstudio.com), installed locally
      - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally
-iconUrl: /learn/achievements/bicep/structure-bicep-code-collaboration.svg
+iconUrl: /training/achievements/bicep/structure-bicep-code-collaboration.svg
 levels:
   - intermediate
 roles:

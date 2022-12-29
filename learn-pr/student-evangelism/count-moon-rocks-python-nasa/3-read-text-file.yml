@@ -12,4 +12,4 @@ metadata:
 title: Exercise - Read in Moon rock data from a text file for exploration
 durationInMinutes: 7
 sandbox: true
-notebook: https://docs.microsoft.com/learn/modules/count-moon-rocks-python-nasa/notebooks/3-read-text-file.ipynb
+notebook: /training/modules/count-moon-rocks-python-nasa/notebooks/3-read-text-file.ipynb

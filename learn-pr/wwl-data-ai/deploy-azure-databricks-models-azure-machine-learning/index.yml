@@ -18,7 +18,7 @@ abstract: |
   - Troubleshoot model deployment
 prerequisites: |
   Before starting this module, you should be familiar with using Python to train machine learning models in Azure Databricks.
-iconUrl: /learn/achievements/deploy-azure-databricks-models-in-azure-machine-learning.svg
+iconUrl: /training/achievements/deploy-azure-databricks-models-in-azure-machine-learning.svg
 levels:
 - intermediate
 roles:

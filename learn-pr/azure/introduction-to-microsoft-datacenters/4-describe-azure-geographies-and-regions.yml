@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-microsoft-datacenters.describe-azure-geographies-and-regions
+title: Describe Azure geographies and regions
+metadata:
+  title: Describe Azure geographies and regions
+  description: TBD
+  ms.date: 10/01/2022
+  author: TBD
+  ms.author: v-jenhor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-describe-azure-geographies-and-regions.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following statements is true for Azure geographies and regions?"
+    choices:
+    - content: "A geography is smaller than a region."
+      isCorrect: false
+      explanation: "Incorrect. Regions reside in geographies."
+    - content: "One or more regions can reside in a geography."
+      isCorrect: true
+      explanation: "Correct. Some geographies are countries or groups of countries, and regions reside in those geographies."
+    - content: "Geographies and regions are the same."
+      isCorrect: false
+      explanation: "Incorrect. They're different concepts."
+    - content: "A geography always includes more than one region."
+      isCorrect: false
+      explanation: "Incorrect. In some cases, a geography contains a single region."

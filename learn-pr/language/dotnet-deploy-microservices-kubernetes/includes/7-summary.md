@@ -9,6 +9,6 @@ In this module you learned how to take a .NET application that was already parti
 The following are great resources to learn more about deploying .NET microservices
 
 - [.NET Microservices: Architecture for Containerized .NET Applications](/dotnet/architecture/microservices/)
-- [Create and deploy a cloud-native ASP.NET Core microservice](/learn/modules/microservices-aspnet-core/)
+- [Create and deploy a cloud-native ASP.NET Core microservice](/training/modules/microservices-aspnet-core/)
 - [Microservice deployment tutorial](https://dotnet.microsoft.com/learn/aspnet/deploy-microservice-tutorial/intro)
-- [Introduction to Kubernetes](/learn/modules/intro-to-kubernetes/)
+- [Introduction to Kubernetes](/training/modules/intro-to-kubernetes/)

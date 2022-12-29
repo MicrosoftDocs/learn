@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-first-html-webpage.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 12/16/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check Your Knowledge on Programming Websites"
+  questions:
+  - content: "`<strong> Make me bold </strong>` is an example of which of the following?"
+    choices:
+    - content: "Tag"
+      isCorrect: false
+      explanation: "That answer is incorrect. A tag is one part of the overall string."
+    - content: "Script"
+      isCorrect: false
+      explanation: "That answer is incorrect. This is an example of an HTML element, not a script."
+    - content: "Element"
+      isCorrect: true
+      explanation: "Correct. Two tags with text in between them is an element."
+  - content: "What does a hyperlink do in HTML?"
+    choices:
+    - content: "Enables a developer to style text"
+      isCorrect: false
+      explanation: "That answer is incorrect. The style tag or a stylesheet enables styling in HTML."
+    - content: "Creates a bulleted list"
+      isCorrect: false
+      explanation: "That answer is incorrect. Bulleted lists are created by the `<ul>` tag."
+    - content: "Allows a user to navigate to other things"
+      isCorrect: true
+      explanation: "Correct. A hyperlink points to other content on your website or the internet."
+  - content: "To make a button that opens a new web page when clicked, which technology should be use?"
+    choices:
+    - content: "CSS"
+      isCorrect: false
+      explanation: "That answer is incorrect. CSS is used to style content. A script is used to respond to events."
+    - content: "An \"open\" tag"
+      isCorrect: false
+      explanation: "That answer is incorrect. An open tag is used as a part of an element when writing HTML."
+    - content: "JavaScript"
+      isCorrect: true
+      explanation: "Correct. JavaScript can be used to respond to events on a web page."

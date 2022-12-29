@@ -47,7 +47,7 @@ For example, imagine you've customer data in JSON format that is hosted external
 
 #### Create a search index
 
-Create an Azure Cognitive Search service and an index to store this information in. If you've completed the [Create an Azure Cognitive Search solution](/learn/modules/create-azure-cognitive-search-solution/) module, then you've seen how to do this. Follow the steps to create the search service but stop at the point of importing data. As pushing data into an index doesn't need you to create an indexer or skillset.
+Create an Azure Cognitive Search service and an index to store this information in. If you've completed the [Create an Azure Cognitive Search solution](/training/modules/create-azure-cognitive-search-solution/) module, then you've seen how to do this. Follow the steps to create the search service but stop at the point of importing data. As pushing data into an index doesn't need you to create an indexer or skillset.
 
 Create an index and add these fields and properties:
 

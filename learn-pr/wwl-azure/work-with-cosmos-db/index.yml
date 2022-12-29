@@ -2,8 +2,8 @@
 uid: learn.wwl.work-with-cosmos-db
 metadata:
   title: Work with Azure Cosmos DB
-  description: "Learn how to develop client and server-side programming solutions on Azure Cosmos DB."
-  ms.date: 07/13/2022
+  description: "Work with Azure Cosmos DB"
+  ms.date: 11/16/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   * You should be familiar with developer concepts and terminology.
   * Experience working with data solutions.
   * An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /learn/achievements/3-work-with-azure-cosmos-db.svg
+iconUrl: /training/achievements/3-work-with-azure-cosmos-db.svg
 levels:
 - intermediate
 roles:

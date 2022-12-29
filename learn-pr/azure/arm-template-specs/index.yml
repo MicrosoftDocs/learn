@@ -29,7 +29,7 @@ prerequisites: |
   - Either:
     - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
     - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension
-iconUrl: /learn/achievements/bicep/arm-template-specs.svg
+iconUrl: /training/achievements/bicep/arm-template-specs.svg
 levels:
   - advanced
 roles:

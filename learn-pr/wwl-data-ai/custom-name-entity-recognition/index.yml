@@ -3,7 +3,7 @@ uid: learn.wwl.custom-name-entity-recognition
 metadata:
   title: Custom named entity recognition
   description: "Custom named entity recognition"
-  ms.date: 07/15/2022
+  ms.date: 09/01/2022
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   - The Azure portal
   - General functionality of Cognitive Services
   - General programming technique
-iconUrl: /learn/achievements/2-custom-name-entity-recognition.svg
+iconUrl: /training/achievements/2-custom-name-entity-recognition.svg
 levels:
 - intermediate
 roles:

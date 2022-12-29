@@ -1,6 +1,6 @@
-You've created virtual networks and run virtual machines (VMs) within them. But the virtual networks have no connectivity, and none of these systems can communicate with each other. 
+You've created virtual networks and run virtual machines (VMs) within them. However, the virtual networks have no connectivity, and none of these systems can communicate with each other. 
 
-To enable communication, you need to create peering connections for the virtual networks. To satisfy your company's requirements, configure a hub and spoke topology, and permit virtual network access when you create the peering connections.
+To enable communication, you need to create peering connections for the virtual networks. To satisfy your company's requirements, you'll configure a hub and spoke topology and permit virtual network access when you create the peering connections.
 
 ## Create virtual network peering connections
 
@@ -30,7 +30,7 @@ Follow these steps to create connections between the virtual networks and to con
 
 Now that you have connections between Sales and Marketing, create connections between Marketing and Research.
 
-1. In Cloud Shell, run the following command to create the peering connection between the **MarketingVNet** and **ResearchVNet** virtual networks.
+1. In Cloud Shell, run the following command to create the peering connection between the **MarketingVNet** and **ResearchVNet** virtual networks:
 
     ```azurecli
     az network vnet peering create \
@@ -41,7 +41,7 @@ Now that you have connections between Sales and Marketing, create connections be
         --allow-vnet-access
     ```
 
-1. Run the following command to create the reciprocal connection between **ResearchVNet** and **MarketingVNet**.
+1. Run the following command to create the reciprocal connection between **ResearchVNet** and **MarketingVNet**:
 
     ```azurecli
     az network vnet peering create \
@@ -56,7 +56,7 @@ Now that you have connections between Sales and Marketing, create connections be
 
 Now that you've created the peering connections between the virtual networks, make sure the connections work.
 
-1. In Cloud Shell, run the following command to check the connection between **SalesVNet** and **MarketingVNet**.
+1. In Cloud Shell, run the following command to check the connection between **SalesVNet** and **MarketingVNet**:
 
     ```azurecli
     az network vnet peering list \
@@ -66,9 +66,9 @@ Now that you've created the peering connections between the virtual networks, ma
         --output table
     ```
 
-1. You've created only one connection from **SalesVNet**, so you see only one result. In the **PeeringState** column, make sure the status is **Connected**.
+1. You've created only one connection from **SalesVNet**, so you get only one result. In the **PeeringState** column, make sure the status is **Connected**.
 
-1. Run the following command to check the peering connection between the **ResearchVNet** and **MarketingVNet** virtual networks.
+1. Run the following command to check the peering connection between the **ResearchVNet** and **MarketingVNet** virtual networks:
 
     ```azurecli
     az network vnet peering list \
@@ -78,7 +78,7 @@ Now that you've created the peering connections between the virtual networks, ma
         --output table
     ```
 
-1. Again, you've created only one connection from **ResearchVNet**, so you see only one result. In the **PeeringState** column, make sure the status is **Connected**.
+1. Again, you've created only one connection from **ResearchVNet**, so you get only one result. In the **PeeringState** column, make sure the status is **Connected**.
 
 1. Run the following command to check the peering connections for the **MarketingVNet** virtual network.
 
@@ -90,17 +90,17 @@ Now that you've created the peering connections between the virtual networks, ma
         --output table
     ```
 
-    Remember that you created connections from Marketing to Sales and from Marketing to Research, so you should see two connections. In the **PeeringState** column, make sure the status of both connections is **Connected**.
+    Remember that you created connections from Marketing to Sales and from Marketing to Research, so you should get two connections. In the **PeeringState** column, make sure the status of both connections is **Connected**.
 
 Your peering connections between the virtual networks should now look like this:
 
-![The resulting virtual network peering connections.](../media/4-vnet-peering-configure-connections-result.svg)
+![Diagram of the resulting virtual network peering connections.](../media/4-vnet-peering-configure-connections-result.svg)
 
 ## Check effective routes
 
 You can further check the peering connection by looking at the routes that apply to the network interfaces of the VMs.
 
-1. Run the following command to look at the routes that apply to the **SalesVM** network interface.
+1. Run the following command to look at the routes that apply to the **SalesVM** network interface:
 
     ```azurecli
     az network nic show-effective-route-table \
@@ -109,7 +109,7 @@ You can further check the peering connection by looking at the routes that apply
         --output table
     ```
 
-    The output table shows the effective routes for the VM's network interface. For **SalesVMVMNic**, you should see a route to **10.2.0.0/16** with *Next Hop Type* of **VNetPeering**. This is the network route for the peering connection from **SalesVNet** to **MarketingVNet**.
+    The output table shows the effective routes for the VM's network interface. For **SalesVMVMNic**, you should have a route to **10.2.0.0/16** with *Next Hop Type* of **VNetPeering**. This is the network route for the peering connection from **SalesVNet** to **MarketingVNet**.
 
     ```output
     Source    State    Address Prefix    Next Hop Type    Next Hop IP
@@ -122,7 +122,7 @@ You can further check the peering connection by looking at the routes that apply
     Default   Active   192.168.0.0/16    None
     ```
 
-1. Look at the routes for **MarketingVM**.
+1. Run the following command to look at the routes for **MarketingVM**:
 
     ```azurecli
     az network nic show-effective-route-table \
@@ -131,7 +131,7 @@ You can further check the peering connection by looking at the routes that apply
         --output table
     ```
 
-    The output table shows the effective routes for the VM's network interface. For **MarketingVMVMNic**, you should see a route to **10.1.0.0/16** with a next hop type of **VNetPeering** and a route to **10.3.0.0/16** with a next hop type of **VNetGlobalPeering**. These are the network routes for the peering connection from **MarketingVNet** to **SalesVNet** and from **MarketingVNet** to **ResearchVNet**.
+    The output table shows the effective routes for the VM's network interface. For **MarketingVMVMNic**, you should have a route to **10.1.0.0/16** with a next hop type of **VNetPeering** and a route to **10.3.0.0/16** with a next hop type of **VNetGlobalPeering**. These are the network routes for the peering connection from **MarketingVNet** to **SalesVNet** and from **MarketingVNet** to **ResearchVNet**.
 
     ```output
     Source    State    Address Prefix    Next Hop Type      Next Hop IP
@@ -145,7 +145,7 @@ You can further check the peering connection by looking at the routes that apply
     Default   Active   10.3.0.0/16       VNetGlobalPeering
     ```
 
-1. Look at the routes for **ResearchVM**.
+1. Run the following command to look at the routes for **ResearchVM**:
 
     ```azurecli
     az network nic show-effective-route-table \
@@ -154,7 +154,7 @@ You can further check the peering connection by looking at the routes that apply
         --output table
     ```
 
-    The output table shows the effective routes for the VM's network interface. For **ResearchVMVMNic**, you should see a route to **10.2.0.0/16** with a next hop type of **VNetGlobalPeering**. This is the network route for the peering connection from **ResearchVNet** to **MarketingVNet**.
+    The output table shows the effective routes for the VM's network interface. For **ResearchVMVMNic**, you should have a route to **10.2.0.0/16** with a next hop type of **VNetGlobalPeering**. This is the network route for the peering connection from **ResearchVNet** to **MarketingVNet**.
 
     ```output
     Source    State    Address Prefix    Next Hop Type      Next Hop IP

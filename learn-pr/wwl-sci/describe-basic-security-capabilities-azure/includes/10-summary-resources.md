@@ -14,7 +14,7 @@ Now that you've completed this module, you should be able to:
 
 To find out more about any of the topics covered in this module, go to:
 
-- [Azure DDoS Protection Standard overview](/azure/ddos-protection/ddos-protection-overview)
+- [Azure DDoS Protection overview](/azure/ddos-protection/ddos-protection-overview)
 - [Azure DDoS Protection pricing page](https://azure.microsoft.com/pricing/details/ddos-protection/)
 - [Azure Firewall](/azure/firewall/)
 - [Web Application firewall](/azure/web-application-firewall/)
@@ -22,4 +22,4 @@ To find out more about any of the topics covered in this module, go to:
 - [Network Security Groups](/azure/virtual-network/network-security-groups-overview)
 - [Azure Bastion](/azure/bastion/)
 - [Understanding just-in-time (JIT) VM access](/azure/defender-for-cloud/just-in-time-access-overview)
-- [Encryption](/learn/modules/intro-to-security-in-azure/4-encryption)
+- [Encryption](/training/modules/intro-to-security-in-azure/4-encryption)

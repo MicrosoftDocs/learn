@@ -20,8 +20,8 @@ prerequisites: |
   - An Azure account with an active subscription. 
   - An Azure Quantum workspace with the **Microsoft QIO** provider enabled. 
 
-  If you don't have these tools yet, we recommend that you begin with the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) module.
-iconUrl: /learn/achievements/quantum/solve-quantum-inspired-optimization-problems.svg
+  If you don't have these tools yet, we recommend that you begin with the [Get started with Azure Quantum](/training/modules/get-started-azure-quantum/?azure-portal=true) module.
+iconUrl: /training/achievements/quantum/solve-quantum-inspired-optimization-problems.svg
 ratingEnabled: true
 levels:
 - intermediate

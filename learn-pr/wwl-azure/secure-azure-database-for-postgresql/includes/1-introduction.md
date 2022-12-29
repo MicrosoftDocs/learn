@@ -6,4 +6,3 @@ In this module, you will learn how to:
 - Describe built-in Azure Database for PostgreSQL server roles.
 - Grant permissions in Azure Database for PostgreSQL.
 - Understand encryption in Azure Database for PostgreSQL.
-- Configure Azure Active Directory authentication.

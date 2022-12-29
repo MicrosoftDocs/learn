@@ -36,7 +36,7 @@ Cinder is an OpenStack project to provide "block storage as a service," similar 
 
 ## Cluster provisioning and management service (Sahara)
 
-The Sahara project aims to provide users with a simple means to provision data-processing frameworks (such as Hadoop, Spark, and Storm) on OpenStack, much like Azure HDInsight. Sahara can be used to specify cluster configuration parameters such as the framework version, cluster topology, and node hardware details. Sahara uses Nova to provision individual cluster nodes using framework-specific images supplied by Glance. Sahara then runs special scripts to complete the configuration of each of the individual cluster nodes so that they are ready to execute jobs. 
+The Sahara project aims to provide users with a simple means to provision data-processing frameworks (such as Hadoop, and Spark) on OpenStack, much like Azure HDInsight. Sahara can be used to specify cluster configuration parameters such as the framework version, cluster topology, and node hardware details. Sahara uses Nova to provision individual cluster nodes using framework-specific images supplied by Glance. Sahara then runs special scripts to complete the configuration of each of the individual cluster nodes so that they are ready to execute jobs. 
 
 ## Compute service (Nova)
 

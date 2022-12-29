@@ -17,7 +17,7 @@ abstract: |
   - Configure gateway features such as routing rules.
 prerequisites: |
   None
-iconUrl: /learn/achievements/azure-application-gateway-configure.svg
+iconUrl: /training/achievements/azure-application-gateway-configure.svg
 levels:
 - intermediate
 roles:

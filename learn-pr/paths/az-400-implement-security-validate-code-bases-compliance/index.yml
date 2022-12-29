@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   This learning path explores an infrastructure and configuration strategy and appropriate toolset for a release pipeline and application infrastructure. It explains compliance and security implementation in your application infrastructure.
-iconUrl: /learn/achievements/implement-security-and-validate-code-bases-for-compliance.svg
+iconUrl: /training/achievements/implement-security-and-validate-code-bases-for-compliance.svg
 levels:
 - advanced
 roles:

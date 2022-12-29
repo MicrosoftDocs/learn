@@ -4,10 +4,10 @@ The bus-catching scenario requires Azure Functions to process and analyze bus da
 
 In the bus-catching scenario, Azure Functions can be used with a timer trigger. Since you want real-time data and results, you can set the function to run every 15 seconds. The Azure Function should then ideally perform the following tasks:
 
-1. Determine what the monitored routes are
-1. Get the latest bus data
-1. Identify buses in monitored routes and activating a geofence
-1. Send an email notification for each activated bus
+1. Determine what the monitored routes are.
+1. Get the latest bus data.
+1. Identify buses in monitored routes and activate a geofence.
+1. Send an email notification for each activated bus.
 
 ### Determine monitored routes with Azure Functions inputs
 

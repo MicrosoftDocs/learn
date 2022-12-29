@@ -19,7 +19,7 @@ summary: |
 prerequisites: |
  - The [Role of Python in space exploration](../introduction-python-space-exploration-nasa/index.yml?azure-portal=true) learning path
  - [Visual Studio Code, with the Python extension](https://aka.ms/LearnOnVSCode?azure-portal=true)
-iconUrl: /learn/achievements/classify-space-rocks-artificial-intelligence-nasa.svg
+iconUrl: /training/achievements/classify-space-rocks-artificial-intelligence-nasa.svg
 levels:
 - beginner
 roles:

@@ -19,7 +19,7 @@ prerequisites: |
   Ability to:
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
   - Configure and use the Azure portal toolbar, navigation menu, and dashboard.
-iconUrl: /learn/achievements/iot-explore-services.svg
+iconUrl: /training/achievements/iot-explore-services.svg
 levels:
 - intermediate
 roles:

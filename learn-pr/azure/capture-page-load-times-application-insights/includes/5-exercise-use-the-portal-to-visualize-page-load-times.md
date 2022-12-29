@@ -1,4 +1,4 @@
-Now that Application Insights has been enabled for your web app, you'll analyze the telemetry data that it generates. In this exercise, you'll use a custom chart to examine how long a page in your app takes to load from the user's perspective.
+Now that you've enabled Application Insights for your web app, you'll analyze the telemetry data that it generates. In this exercise, you'll use a custom chart to examine how long a page in your app takes to load from the user's perspective.
 
 > [!NOTE]
 > If you're using an ad blocker in your browser, you should disable it for this exercise. It will interfere with the client-side JavaScript used to capture Application Insights data.
@@ -57,7 +57,7 @@ Let's simulate more user activity, and view the results in the custom chart:
 
 1. Switch to the browser tab that displays the Azure portal.
 
-1. To refresh the page, select <kbd>F5</kbd>.
+1. To refresh the page, select **Refresh** at the top of the screen.
 
 1. To see the custom chart, scroll to the right of the dashboard. You should see a data point in the chart that relates to your recent requests.
 

@@ -1,12 +1,19 @@
 Now that you understand the basic concepts of external states and how to deal with them by using Kubernetes, let's create the resources that will support the application and then create the application itself.
 
-## Activate the Azure sandbox
+## Create a resource group
 
 >[!NOTE]
 > The Learn sandbox system that enables you to complete these modules without using your own subscription is currently down for maintenance. This module can still be completed using a subscription you own, but please be aware that the steps might skip some instructions necessary for you to deploy, such as logging into your subscription or cleaning up the deployment at the end of the module. Let's go!
 
-1. Start by **activating the Azure sandbox above.**
-1. Once it's activated, sign into the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account you activated the sandbox with.
+1. Sign into [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your own subscription.
+
+1. Select **Resource groups**.
+
+1. Select **Create** to open the **Create a resource group** pane.
+
+1. Enter *rg-ship-manager* for the **Resource group** name. Leave the default selections for **Subscription** and **Region**.
+  
+1. Select **Review + create**, and then **Create**.
 
 ## Create the state
 
@@ -17,10 +24,10 @@ To solve that problem, we'll externalize the state to an application that specia
 > [!NOTE]
 > Although we're creating an Azure Cosmos DB instance as part of the required resources to run the application, Azure Kubernetes Service (AKS) and Azure Cosmos DB are *not* related to one another.
 
-1. Create Bash variables to store important information like the account name and resource group name:
+1. Create Bash variables to store important information like the Azure Cosmos DB account name and the resource group name:
 
     ```bash
-    export RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
+    export RESOURCE_GROUP=rg-ship-manager
     export COSMOSDB_ACCOUNT_NAME=contoso-ship-manager-$RANDOM
     ```
 
@@ -73,9 +80,18 @@ Now you're going to deploy the AKS cluster so you can push your application imag
 
 1. Download the kubectl configuration:
 
-    ```azurecli
-    az aks get-credentials --name $AKS_CLUSTER_NAME --resource-group $RESOURCE_GROUP
-    ```
+   ```azurecli
+   az aks get-credentials --name $AKS_CLUSTER_NAME --resource-group $RESOURCE_GROUP
+   ```
+
+   If you receive any messages about existing clusters, for example:
+
+   ```output
+   A different object named ship-manager-cluster already exists in your kubeconfig file.
+    Overwrite? (y/n):
+   ```
+
+   Enter `y` to overwrite.
 
 1. Test the configuration:
 
@@ -125,12 +141,12 @@ You need to create three main files. Let's start by creating the *deploy.yaml* f
                   name: http
               env:
                 - name: DATABASE_MONGODB_URI
-                  value: "<your database connection string>"
+                  value: "{your database connection string}"
                 - name: DATABASE_MONGODB_DBNAME
-                  value: ship_manager
+                  value: contoso-ship-manager
     ```
 
-1. Replace the `<your database connection string>` tag with the actual connection string from Azure Cosmos DB. You can get this connection string through the following Azure CLI script:
+1. Replace the `{your database connection string}` placeholder with the actual connection string from Azure Cosmos DB. You can get this connection string through the following Azure CLI script:
 
     ```azurecli
     az cosmosdb keys list --type connection-strings -g $RESOURCE_GROUP -n $COSMOSDB_ACCOUNT_NAME --query "connectionStrings[0].connectionString" -o tsv
@@ -170,11 +186,12 @@ You need to create three main files. Let's start by creating the *deploy.yaml* f
                 - name: DATABASE_MONGODB_URI
                   value: "mongodb://YOURACCOUNTNAME:password@YOURACCOUNTNAME.documents.azure.com:PORT/?ssl=true&replicaSet=globaldb"
                 - name: DATABASE_MONGODB_DBNAME
-                  value: ship_manager
+                  value: contoso-ship-manager
     ```
 
     > [!NOTE]
     > Don't forget to add quotes `"` to the environment variables as the connection string sometimes presents invalid YAML characters.
+    > You may consider using [secrets](/training/modules/aks-secrets-configure-app/) as a secure way to store and retieve connection string in AKS.
 
 1. Save and close the file.
 
@@ -184,7 +201,7 @@ You need to create three main files. Let's start by creating the *deploy.yaml* f
     kubectl apply -f backend-deploy.yaml
     ```
 
-To make this application available to everyone, you'll need to create a service and an ingress to take care of all traffic between the application and the world.
+To make this application available to everyone, you'll need to create a service and an ingress, to take care of all traffic between the application and the world.
 
 1. Create a new file called *backend-network.yaml*, and add the following .yaml notation:
 
@@ -201,7 +218,7 @@ To make this application available to everyone, you'll need to create a service 
           port: 80
           targetPort: 3000
     ---
-    apiVersion: networking.k8s.io/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: ship-manager-backend
@@ -209,16 +226,19 @@ To make this application available to everyone, you'll need to create a service 
         kubernetes.io/ingress.class: addon-http-application-routing
     spec:
       rules:
-        - host: ship-manager-backend.DNS_ZONE
+        - host: ship-manager-backend.{DNS_ZONE}
           http:
             paths:
               - path: /
+                pathType: Prefix
                 backend:
-                  serviceName: ship-manager-backend
-                  servicePort: http
+                  service:
+                    name: ship-manager-backend
+                    port:
+                        number: 80
     ```
 
-1. Replace the `DNS_ZONE` placeholder with your cluster DNS zone. You can get that information by running the following AKS command:
+1. Replace the `{DNS_ZONE}` placeholder with your cluster DNS zone. You can get that information by running the following AKS command:
 
     ```azurecli
     az aks show -g $RESOURCE_GROUP -n $AKS_CLUSTER_NAME -o tsv --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
@@ -239,7 +259,7 @@ To make this application available to everyone, you'll need to create a service 
           port: 80
           targetPort: 3000
     ---
-    apiVersion: networking.k8s.io/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: ship-manager-backend
@@ -247,13 +267,16 @@ To make this application available to everyone, you'll need to create a service 
         kubernetes.io/ingress.class: addon-http-application-routing
     spec:
       rules:
-        - host: ship-manager-backend.somedns.location.aksapp.io
+        - host: ship-manager-backend.dnszone.location.aksapp.io
           http:
             paths:
               - path: /
+                pathType: Prefix
                 backend:
-                  serviceName: ship-manager-backend
-                  servicePort: http
+                  service:
+                    name: ship-manager-backend
+                    port:
+                        number: 80
     ```
 
 1. Save and close the file.
@@ -275,8 +298,8 @@ kubectl get ingress
 You'll get a result similar to this:
 
 ```output
-NAME                   CLASS    HOSTS                                     ADDRESS        PORTS   AGE
-ship-manager-backend   <none>   ship-manager-backend.dns.zone.aksapp.io   xx.xx.xx.xx    80      2m40s
+NAME                   CLASS    HOSTS                                               ADDRESS        PORTS   AGE
+ship-manager-backend   <none>   ship-manager-backend.dnszone.location.aksapp.io   xx.xx.xx.xx    80      2m40s
 ```
 
 ### Deploy the front-end interface
@@ -333,12 +356,12 @@ To create the front-end interface, you'll do a similar process:
       config.js: |
         const config = (() => {
           return {
-            'VUE_APP_BACKEND_BASE_URL': 'YOUR_BACKEND_URL',
+            'VUE_APP_BACKEND_BASE_URL': 'http://{YOUR_BACKEND_URL}',
           }
         })()
     ```
 
-    Replace the `YOUR_BACKEND_URL` placeholder with the URL of the back-end API that you just put in the ingress in the previous step, adding `http://` in front of it.
+    Replace the `{YOUR_BACKEND_URL}` placeholder with the URL of the back-end API that you just put in the ingress in the previous step.
 
 1. Save and close the file.
 
@@ -365,7 +388,7 @@ Next, you'll create the networking resources that this application needs to be o
           port: 80
           targetPort: 80
     ---
-    apiVersion: networking.k8s.io/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: ship-manager-frontend
@@ -373,16 +396,19 @@ Next, you'll create the networking resources that this application needs to be o
         kubernetes.io/ingress.class: addon-http-application-routing
     spec:
       rules:
-        - host: contoso-ship-manager.DNS_ZONE
+        - host: contoso-ship-manager.{DNS_ZONE}
           http:
             paths:
               - path: /
+                pathType: Prefix
                 backend:
-                  serviceName: ship-manager-frontend
-                  servicePort: http
+                  service:
+                    name: ship-manager-frontend
+                    port:
+                        number: 80
     ```
 
-1. Replace the `DNS_ZONE` placeholder with your cluster DNS zone. You can get that information by using the following AKS command:
+1. Replace the `{DNS_ZONE}` placeholder with your cluster DNS zone. You can get that information by using the following AKS command:
 
     ```azurecli
     az aks show -g $RESOURCE_GROUP -n $AKS_CLUSTER_NAME -o tsv --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
@@ -403,7 +429,7 @@ Next, you'll create the networking resources that this application needs to be o
           port: 80
           targetPort: 80
     ---
-    apiVersion: networking.k8s.io/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: ship-manager-frontend
@@ -411,13 +437,16 @@ Next, you'll create the networking resources that this application needs to be o
         kubernetes.io/ingress.class: addon-http-application-routing
     spec:
       rules:
-        - host: contoso-ship-manager.some-zone.eastus.aksapp.io
+        - host: contoso-ship-manager.dnszone.location.aksapp.io
           http:
             paths:
               - path: /
+                pathType: Prefix
                 backend:
-                  serviceName: ship-manager-frontend
-                  servicePort: http
+                  service:
+                    name: ship-manager-frontend
+                    port:
+                        number: 80
     ```
 
 1. Save and close the file.
@@ -439,8 +468,8 @@ kubectl get ingress
 You'll get a result similar to this:
 
 ```output
-NAME                   CLASS    HOSTS                                     ADDRESS        PORTS   AGE
-ship-manager-frontend  <none>   contoso-ship-manager.dns.zone.aksapp.io   xx.xx.xx.xx    80      2m40s
+NAME                   CLASS    HOSTS                                             ADDRESS        PORTS   AGE
+ship-manager-frontend  <none>   contoso-ship-manager.dnszone.location.aksapp.io   xx.xx.xx.xx    80      2m40s
 ```
 
 You can now access the URL from the ingress resource's host name to enter the ship manager application.

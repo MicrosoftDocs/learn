@@ -31,7 +31,7 @@ SELECT color FROM SalesLT.Product
 WHERE ProductID BETWEEN 751 and 1000;
 ```
 
-Not that the results are different, depending on the order of the queries. So the above query will return a different result set to the one below:
+Note that the results are different, depending on the order of the queries. So the above query will return a different result set to the one below:
 
 ```sql
 SELECT color FROM SalesLT.Product

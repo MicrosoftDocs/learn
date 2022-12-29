@@ -33,7 +33,7 @@ In Contoso's sales report below, we want to understand why Contoso is or isn't w
 ## Predictive analytics
 ### What will happen in the future?
 
-*Predictive analytics* helps answer questions about what will happen in the future. Predictive analytics techniques use historical data to identify trends and determine if they're likely to recur, providing insight into what may happen in the future. Techniques include statistical and machine learning techniques such as forecasting, neural networks, decision trees, and regression. Predictive analytics is often performed by data scientists. Predictive analytics is performed by data analysts and data scientists.
+*Predictive analytics* helps answer questions about what will happen in the future. Predictive analytics techniques use historical data to identify trends and determine if they're likely to recur, providing insight into what may happen in the future. Techniques include statistical and machine learning techniques such as forecasting, neural networks, decision trees, and regression. Predictive analytics is often performed by data scientists.
 
 The line chart below looks at revenue won by year and month, which shows historical decline. Forecasting predicts that revenue won will continue to decrease. Decision makers may use this forecast to change course in an effort to increase the amount of revenue won.
 

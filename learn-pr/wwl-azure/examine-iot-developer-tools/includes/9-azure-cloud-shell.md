@@ -18,20 +18,20 @@ Cloud Shell is managed by Microsoft so it comes with popular command-line tools 
 
 Cloud Shell offers an integrated graphical text editor based on the open-source Monaco Editor. Easily create and edit configuration files by running `code .` for seamless deployment through Azure CLI or Azure PowerShell.
 
-### Integrated with docs.microsoft.com
+### Integrated with Microsoft Learn
 
-You can use Cloud Shell directly from documentation hosted on [docs.microsoft.com](https://docs.microsoft.com). It is integrated in [Microsoft Learn](/learn/), [Azure PowerShell](/powershell/azure/overview), and [Azure CLI documentation](/cli/azure) \- click on the "Try It" button in a code snippet to open the immersive shell experience.
+You can use Cloud Shell directly in [Microsoft Learn](/?azure-portal=true), [Azure PowerShell](/powershell/azure/overview), and [Azure CLI documentation](/cli/azure). Click on the **Try It** button in a code snippet to open the immersive shell experience.
 
 ### Multiple access points
 
 Cloud Shell is a flexible tool that can be used from:
 
- -  [portal.azure.com](https://portal.azure.com)
- -  [shell.azure.com](https://shell.azure.com)
- -  [Azure CLI documentation](/cli/azure)
- -  [Azure PowerShell documentation](/powershell/azure/overview)
- -  [Azure mobile app](https://azure.microsoft.com/features/azure-portal/mobile-app/)
- -  Visual Studio Code Azure Account extension
+- [portal.azure.com](https://portal.azure.com)
+- [shell.azure.com](https://shell.azure.com)
+- [Azure CLI documentation](/cli/azure)
+- [Azure PowerShell documentation](/powershell/azure/overview)
+- [Azure mobile app](https://azure.microsoft.com/features/azure-portal/mobile-app/)
+- Visual Studio Code Azure Account extension
 
 ### Connect your Microsoft Azure files storage
 
@@ -42,13 +42,13 @@ Cloud Shell machines are temporary, but your files are persisted in two ways: th
 
 ## Concepts
 
- -  Cloud Shell runs on a temporary host provided on a per-session, per-user basis.
- -  Cloud Shell times out after 20 minutes without interactive activity.
- -  Cloud Shell requires an Azure file share to be mounted.
- -  Cloud Shell uses the same Azure file share for both Bash and PowerShell.
- -  Cloud Shell is assigned one machine per user account.
- -  Cloud Shell persists $HOME using a 5-GB image held in your file share.
- -  Permissions are set as a regular Linux user in Bash.
+- Cloud Shell runs on a temporary host provided on a per-session, per-user basis.
+- Cloud Shell times out after 20 minutes without interactive activity.
+- Cloud Shell requires an Azure file share to be mounted.
+- Cloud Shell uses the same Azure file share for both Bash and PowerShell.
+- Cloud Shell is assigned one machine per user account.
+- Cloud Shell persists $HOME using a 5-GB image held in your file share.
+- Permissions are set as a regular Linux user in Bash.
 
 ## Pricing
 

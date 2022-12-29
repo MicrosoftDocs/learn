@@ -208,4 +208,4 @@ Description of how the student resolved the module scenario problem.
 
 If known, add further learning reference links that will be helpful to students. Otherwise, add to the Summary unit during development.
 <!--LM: Please confirm that it's okay to use the bare link here. The alternative is to embed it in the text, which should be the heading of the linked page. In this case, "Know your data - data classification overview."-->
-- https://docs.microsoft.com/en-us/microsoft-365/compliance/data-classification-overview?view=o365-worldwide
+- https://learn.microsoft.com/microsoft-365/compliance/data-classification-overview?view=o365-worldwide

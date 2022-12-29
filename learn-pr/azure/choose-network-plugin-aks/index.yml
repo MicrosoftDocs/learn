@@ -22,12 +22,12 @@ prerequisites: |
   - "A basic understanding of Azure Kubernetes Service concepts such as the Kubernetes API, clusters, and pods"
   - "Familiarity with basic networking concepts like CIDR, IP address allocation and NAT"
   - "A Basic understanding of Azure Virtual Networks"
-iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level
+iconUrl: /training/achievements/generic-badge.svg
+levels: # see level taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - intermediate
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role
+roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
   - network-engineer
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
+products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
   - azure-kubernetes-service
 subjects:
 - device-management

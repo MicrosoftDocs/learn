@@ -14,7 +14,7 @@ Now that you've completed this module, you can [clean up your resources in Azure
 * [Introduction to Azure IoT Hub](/azure/iot-hub/about-iot-hub)
 * [Azure Resource Manager overview](/azure/azure-resource-manager/management/overview)
 * [ScriptableObject](https://docs.unity3d.com/Manual/class-ScriptableObject.html)
-* [Architect your code for efficient changes and debugging with ScriptableObjects ](https://unity.com/how-to/architect-game-code-scriptable-objects#architect-events)
+* [Architect your code for efficient changes and debugging with ScriptableObjects](https://unity.com/how-to/architect-game-code-scriptable-objects#architect-events)
 * [Addressables](https://docs.unity3d.com/Manual/com.unity.addressables.html)
 * [Getting started with Addressables](https://learn.unity.com/project/getting-started-with-addressables)
 * [Addressables: Content updates](https://learn.unity.com/tutorial/addressables-content-updates#5fea2b2bedbc2a4cc8a07edf)

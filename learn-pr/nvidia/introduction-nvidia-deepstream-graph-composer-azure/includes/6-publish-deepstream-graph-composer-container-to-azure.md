@@ -2,7 +2,7 @@ Now that you've packaged your DeepStream Graph Composer application into a conta
 
 This preparation also sets the stage for potential deployment by using [Azure IoT Edge](/azure/iot-edge/about-iot-edge), which we'll cover in more detail in the next module.
 
-1. To begin, follow instructions from Microsoft Docs to "create a container registry." The document demonstrates how to instantiate the necessary Container Registry resources in Microsoft Azure and how to sign in and push images to this service. After you finish the steps in this section, you'll publish your DeepStream Graph Composer container artifact into this registry.
+1. To begin, follow these instructions to "create a container registry." The document demonstrates how to instantiate the necessary Container Registry resources in Microsoft Azure and how to sign in and push images to this service. After you finish the steps in this section, you'll publish your DeepStream Graph Composer container artifact into this registry.
 
     Follow the steps in [Quickstart: Create an Azure container registry by using the Azure portal](/azure/container-registry/container-registry-get-started-portal). You only need to follow the steps to create a container registry. The extra steps mentioned in the documentation are optional. After you finish this task, continue with the next steps.
 

@@ -3,7 +3,7 @@ uid: learn.wwl.manage-exchange-online-use-windows-powershell
 metadata:
   title: Manage Exchange Online by using Windows PowerShell
   description: "This module covers managing mailboxes, resources, and admin roles in Exchange Online with PowerShell."
-  ms.date: 08/02/2022
+  ms.date: 10/24/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -26,7 +26,7 @@ prerequisites: |
   *   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
   *   Familiarity to administer remote computers with Windows PowerShell
   *   Familiarity to manage Azure resources with Windows PowerShell
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/manage-exchange-online-use-windows-powershell.svg
 levels:
 - intermediate
 roles:
@@ -38,7 +38,6 @@ products:
 - azure-powershell
 - azure-virtual-machines
 - m365
-- vs-code
 subjects:
 - architecture
 - development-tools

@@ -19,7 +19,7 @@ By the end of this module, you'll be able to:
 - Familiarity with [Docker](https://docker.com) and Docker images.
 - An active Azure [subscription](https://azure.microsoft.com/free/services/kubernetes-service/?azure-portal=true).
 - Ability to use the [Azure CLI](/azure/aks/kubernetes-walkthrough).
-- Ability to create a Docker container. If you're new to Docker, start with the [intro to containers](/learn/modules/intro-to-containers/).
+- Ability to create a Docker container. If you're new to Docker, start with the [intro to containers](/training/modules/intro-to-containers/).
 
 All exercises will use [Azure Cloud Shell](/azure/cloud-shell/overview), which already has all the needed tooling installed. If you prefer to run the examples in your own terminal, you'll need to have the following tooling installed first:
 - [Azure CLI](/azure/aks/kubernetes-walkthrough)

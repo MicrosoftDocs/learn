@@ -11,9 +11,9 @@ metadata:
   ms.prod: learning-azure
 title: Implement network security in Azure
 summary: |
-  Learn how to configure, protect, and isolate your networks in Azure. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/learn/certifications/azure-security-engineer).
+  Learn how to configure, protect, and isolate your networks in Azure. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer).
 prerequisites: None
-iconUrl: /learn/achievements/implement-network-security.svg
+iconUrl: /training/achievements/implement-network-security.svg
 levels:
 - beginner
 - intermediate

@@ -14,7 +14,7 @@ You have a few different options for accessing Azure Cloud Shell:
 
   :::image type="content" source="../media/access-cloud-shell-from-azure-portal.png" alt-text="A screenshot of Cloud Shell accessed from Azure portal." lightbox="../media/access-cloud-shell-from-azure-portal.png":::
 
-- From code snippets when accessing Microsoft Docs or Microsoft Learn:
+- From code snippets when accessing Microsoft Learn:
 
   :::image type="content" source="../media/access-cloud-shell-from-code-snippets.png" alt-text="A screenshot of Cloud Shell accessed from code snippets." lightbox="../media/access-cloud-shell-from-code-snippets.png":::
 

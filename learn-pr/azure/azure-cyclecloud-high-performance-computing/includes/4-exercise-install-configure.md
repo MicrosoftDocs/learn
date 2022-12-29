@@ -129,7 +129,7 @@ After you deploy the Azure CycleCloud web application to an Azure VM, you can co
 To manage resources in your Azure subscription, Azure CycleCloud requires a certain level of permissions. The simplest option to address this requirement is to assign the Contributor Role in the subscription to the Azure VM hosting the CycleCloud application. This option works if you've enabled the system assigned managed identity for that Azure VM. Because you configured this setting during the Azure VM deployment in the first task of this exercise, this is the approach you'll take.
 
 > [!NOTE]
-> CycleCloud doesn't require all permissions associated with the Contributor role. You have the option of defining a custom, more restrictive RBAC role and assigning it to the Azure VM hosting the CycleCloud application. This allows you to apply the principle of least privilege. For details, refer to Microsoft Docs.
+> CycleCloud doesn't require all permissions associated with the Contributor role. You have the option of defining a custom, more restrictive RBAC role and assigning it to the Azure VM hosting the CycleCloud application. This allows you to apply the principle of least privilege. For details, refer to Microsoft Learn.
 
 1. On your computer, switch to the web browser window displaying the Azure portal, and use the **Search resources, services, and docs** text box at the top of the portal interface to search for **Subscriptions**.
 1. On the **Subscriptions** blade, select the entry representing the Azure subscription you're using for exercises in this module.

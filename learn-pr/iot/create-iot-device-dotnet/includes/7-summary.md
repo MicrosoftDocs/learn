@@ -9,7 +9,9 @@ In this module, you learned how to:
 
 ## Next steps
 
-Learn more about IoT and .NET!
+
+
+## Learn more about IoT and .NET!
 
 - [.NET IoT Libraries documentation hub](/dotnet/iot)
 - [.NET IoT Libraries GitHub](https://github.com/dotnet/iot)

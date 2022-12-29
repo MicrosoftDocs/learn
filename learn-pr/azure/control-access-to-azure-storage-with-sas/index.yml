@@ -19,7 +19,7 @@ prerequisites: |
   - Knowledge of Azure Storage accounts
   - Familiarity with C#
   - Familiarity with jQuery and JSON
-iconUrl: /learn/achievements/control-access-to-azure-storage-with-sas.svg
+iconUrl: /training/achievements/control-access-to-azure-storage-with-sas.svg
 levels:
 - intermediate
 roles:

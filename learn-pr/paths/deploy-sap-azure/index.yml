@@ -12,7 +12,7 @@ title: Deploy SAP on Azure
 prerequisites: ""
 summary: |
   SAP professionals need to evaluate deploying SAP solutions on Azure. These modules explore the preparation for deployment of SAP solutions on Azure, including single-instance SAP HANA and SAP NetWeaver high availability AnyDB deployments.
-iconUrl: /learn/achievements/deploy-sap-on-azure.svg
+iconUrl: /training/achievements/deploy-sap-on-azure.svg
 levels:
 - advanced
 roles:

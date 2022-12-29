@@ -43,7 +43,7 @@ In a multitenant architecture, you share some or all of your resources between t
 
 There are two common models:
 
-* **Business-to-business (B2B)**. If your customers are other organizations, you are likely to consider your tenants to be those customers. However, consider whether your customers might have divisions (teams or departments), or if they have a presence in multiple countries. You may need to consider having a single customer map to multiple tenants, if there are different requirements for these subgroups. Similarly, a customer might want to maintain two instances of your service, so they can keep their development and production environments separated from each other. Generally, a single tenant will have multiple users. For example, all of your customer's employees will be users within the same tenant.
+* **Business-to-business (B2B)**. If your customers are other organizations, you are likely to consider your tenants to be those customers. However, consider whether your customers might have divisions (teams or departments), or if they have a presence in multiple countries/regions. You may need to consider having a single customer map to multiple tenants, if there are different requirements for these subgroups. Similarly, a customer might want to maintain two instances of your service, so they can keep their development and production environments separated from each other. Generally, a single tenant will have multiple users. For example, all of your customer's employees will be users within the same tenant.
 * **Business-to-consumer (B2C)**. If your customers are consumers, it's often more complicated to relate customers, tenants, and users. In some scenarios, each consumer could be their own tenant. However, consider whether your solution might be used by families, groups of friends, clubs, associations, or other groupings that might need to access and manage their data together. For example, a music-streaming service might support both individual users and families, and it might treat each of these account types differently, when it comes to separating them into tenants.
 
 ## Tenant isolation
@@ -67,7 +67,7 @@ For more information on architecture considerations for multitentant scenarios, 
 
 Today, companies struggle to control and govern increasingly complex environments that extend across data centers, multiple clouds, and edge of a network boundary. Each environment and cloud possess its own set of management tools, and new DevOps and ITOps operational models can be hard to implement across resources.
 
-Azure Arc simplifies governance and management by delivering a consistent multi-cloud and on-premises management platform.
+Azure Arc simplifies governance and management by delivering a consistent multicloud and on-premises management platform.
 
 Azure Arc provides a centralized, unified way to:
 

@@ -1,6 +1,6 @@
 Welcome to Azure Quantum!
 
-Azure Quantum is a cloud service that enables both quantum computing applications and optimization solutions, backed by the reliability and scale of Azure. On Azure Quantum, you can use the [Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit/?azure-portal=true) to:
+Azure Quantum is a cloud service that enables both quantum computing applications and optimization solutions, backed by the reliability and scale of Azure. On Azure Quantum, you can use the [Quantum Development Kit](/training/modules/qsharp-create-first-quantum-development-kit/?azure-portal=true) to:
 
 - Build Q# programs to run on quantum hardware.
 - Formulate problems for optimization solvers to run on classical hardware.
@@ -27,4 +27,4 @@ In this module, you'll:
 ## Prerequisites
 
 You need:
-- An Azure account. For more information, see [Create an Azure account](/learn/modules/create-an-azure-account/?azure-portal=true).
+- An Azure account. For more information, see [Create an Azure account](/training/modules/create-an-azure-account/?azure-portal=true).

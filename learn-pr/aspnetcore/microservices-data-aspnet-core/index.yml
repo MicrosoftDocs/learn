@@ -6,7 +6,7 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.date: 07/20/2022
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
   ms.topic: interactive-tutorial
 title: Use managed data stores in a cloud-native ASP.NET Core microservices app
 summary: Modify a cloud-native ASP.NET Core microservices app to use managed data stores in Azure.
@@ -47,6 +47,6 @@ units:
   - learn.microservices-data-aspnet-core.implement-cosmos-db
   - learn.microservices-data-aspnet-core.knowledge-check
   - learn.microservices-data-aspnet-core.summary
-iconUrl: /learn/achievements/aspnetcore/microservices-data-aspnet-core.svg
+iconUrl: /training/achievements/aspnetcore/microservices-data-aspnet-core.svg
 badge:
   uid: learn.microservices-data-aspnet-core.badge

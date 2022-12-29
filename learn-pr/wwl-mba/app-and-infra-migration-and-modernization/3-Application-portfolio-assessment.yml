@@ -4,11 +4,11 @@ title: Application portfolio assessment
 metadata:
   title: Application portfolio assessment
   description: Application portfolio assessment
-  ms.date: 01/31/2019
-  author: maargued
-  ms.author: maargued
+  ms.date: 12/04/2022
+  author: wwlpublish
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 11
 content: |
-  [!include[](includes/3-Application-portfolio-assessment.md)]
+  [!include[](includes/3-application-portfolio-assessment.md)]

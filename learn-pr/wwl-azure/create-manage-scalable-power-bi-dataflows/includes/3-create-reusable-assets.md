@@ -53,10 +53,6 @@ Here you can take ownership of a dataflow, edit the data source credentials, sch
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Power B I service dataflow settings, with the scheduled refresh toggled to on as indicated by a red box.](../media/dataflow-configure-refresh.png)
 
-### Linked entities in dataflow refreshes
-
-Dataflows that are used in subsequent dataflows are called linked entities, and 
-
 ## Connect to a dataflow
 
 Dataflows can be consumed in three ways. Report builders can:

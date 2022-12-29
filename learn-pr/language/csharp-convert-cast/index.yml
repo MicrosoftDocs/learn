@@ -3,7 +3,7 @@ uid: learn.languages.csharp-convert-cast
 metadata:
   title: 'Convert data types using casting and conversion techniques in C#'
   description: Take control of the data in your applications, knowing when to apply the correct technique to change data types as needed.
-  ms.date: 10/03/2019
+  ms.date: 08/25/2022
   author: billwagner
   ms.author: wiwagn
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ prerequisites: |
   - Experience using arrays and the `foreach` iteration statement
   - Experience using string interpolation to combine variable and literal values for output
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-convert-cast.svg
+iconUrl: /training/achievements/csharp-convert-cast.svg
 levels:
 - beginner
 roles:

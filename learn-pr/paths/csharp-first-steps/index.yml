@@ -25,7 +25,7 @@ prerequisites: None
 video:
   title: "Take your first steps with C#"
   url: https://www.microsoft.com/videoplayer/embed/RWVrB4 
-iconUrl: /learn/achievements/csharp-first-steps.svg
+iconUrl: /training/achievements/csharp-first-steps.svg
 levels:
 - beginner
 roles:

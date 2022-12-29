@@ -8,12 +8,12 @@ You also learned about several requirements to be handled before you migrate you
 
 To learn more about the tools and services available to help you migrate to Azure, see these articles:
 
-- [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
-- [Prepare Hyper-V for assessment and migration](https://docs.microsoft.com/azure/migrate/tutorial-prepare-hyper-v)
-- [Assess Hyper-V VMs for migration](https://docs.microsoft.com/azure/migrate/tutorial-assess-hyper-v)
+- [Azure Migrate](/azure/migrate/migrate-services-overview)
+- [Prepare Hyper-V for assessment and migration](/azure/migrate/tutorial-prepare-hyper-v)
+- [Assess Hyper-V VMs for migration](/azure/migrate/tutorial-assess-hyper-v)
 
 For information on the support settings and limitations for migrating Hyper-V VMs, see these articles:
 
-- [Hyper-V hosts](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-hyper-v-migration#hyper-v-hosts)
-- [Hyper-V VMs](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-hyper-v-migration#hyper-v-vms)
-- [Set up the appliance VM](https://docs.microsoft.com/azure/migrate/tutorial-assess-hyper-v#set-up-the-appliance-vm)
+- [Hyper-V hosts](/azure/migrate/migrate-support-matrix-hyper-v-migration#hyper-v-hosts)
+- [Hyper-V VMs](/azure/migrate/migrate-support-matrix-hyper-v-migration#hyper-v-vms)
+- [Set up the appliance VM](/azure/migrate/tutorial-assess-hyper-v#set-up-the-appliance-vm)

@@ -20,7 +20,7 @@ prerequisites: |
   - Foundational understanding of cloud adoption
   - Understanding of your organization’s adoption strategy and the types of efforts you need to complete
   - Basic familiarity with Azure DevOps or other tools used to manage tasks to create a plan
-iconUrl: /learn/achievements/cloud-adoption-framework-plan.svg
+iconUrl: /training/achievements/cloud-adoption-framework-plan.svg
 ratingEnabled: true
 levels:
 - beginner

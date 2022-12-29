@@ -18,9 +18,9 @@ abstract: |
   - Monitor the build, release, and deployment of your project
 prerequisites: |
   - An Azure subscription
-  - An Azure DevOps organization
+  - An Azure DevOps organization with access to parallel jobs
   - A GitHub account
-iconUrl: /learn/achievements/azure-devops/deploy-docker.svg
+iconUrl: /training/achievements/azure-devops/deploy-docker.svg
 levels:
 - beginner
 roles:

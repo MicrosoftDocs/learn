@@ -1,4 +1,4 @@
-PostgreSQL manages database access using roles. A role can be a database user, or a group of users. Roles can:
+PostgreSQL manages database access using roles. A role can be a database user or a group of users. Roles can:
 
 - Own database objects such as tables or functions.
 - Assign privileges on those objects to other roles.

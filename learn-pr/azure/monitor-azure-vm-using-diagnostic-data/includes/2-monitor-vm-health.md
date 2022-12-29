@@ -15,13 +15,13 @@ By default, you can get data like:
 - OS disk usage
 - Boot success
 
-Azure collects these metrics by default for hosted VMs without requiring you to install additional software. To capture the boot diagnostics, you need to create and associate a storage account. You associate the storage account at the time you create your VM. Or, for an existing VM, you associate one later.
+Azure collects these metrics by default for hosted VMs without requiring you to install extra software. To capture the boot diagnostics, you need to create and associate a storage account. You associate the storage account at the time you create your VM. Or, for an existing VM, you associate one later.
 
 ## View metrics
 
 You can choose multiple metrics and plot them on a graph to see how much traffic hits your web server, and how the server performs. The Azure portal offers a flexible time range for graphs from the last 30 minutes, the last four hours, or the last 30 days. Azure also lets you pin these graphs to your dashboard so you can quickly view server health.
 
-![CPU percentage usage and inbound flow chart.](../media/2-vm-metrics-screenshot.png)
+:::image type="content" source="../media/2-vm-metrics-screenshot.png" alt-text="Screenshot showing CPU percentage usage and inbound flow chart.":::
 
 By using Virtual Machine host metrics, you can:
 
@@ -31,7 +31,7 @@ By using Virtual Machine host metrics, you can:
 
 ## Get more metrics
 
-To collect Guest OS metrics, you need to install the Azure Monitor Agent and select the metrics to be collected by using Data Collection Rules. The Azure Monitor Agent  is available for Windows and Linux.
+To collect Guest OS metrics, you need to install the Azure Monitor Agent, and select the metrics to be collected by using Data Collection Rules. The Azure Monitor Agent  is available for Windows and Linux.
 
 After you've installed the Azure Monitor Agent, you can:
 
@@ -43,7 +43,7 @@ You can install the Azure Monitor Agent by using the Azure portal, or programmat
 
 ## Get boot diagnostics
 
-In addition to the metrics discussed above, you can also enable boot diagnostics to troubleshoot VMs in Azure. This helps you identify issues with your VMs during the boot process. The boot diagnostics feature needs a storage account to save the data that it collects.
+In addition to the metrics discussed above, you can also enable boot diagnostics to troubleshoot VMs in Azure. Boot diagnostics help you identify issues with your VMs during the boot process. The boot diagnostics feature needs a storage account to save the data that it collects.
 
 Once boot diagnostics is enabled, you can:
 

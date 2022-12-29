@@ -199,7 +199,7 @@ In this module, you learned about Azure shared disks and their benefits. You als
 
 ### Additional learning links
 
-- [Create an FCI with Azure shared disks - SQL Server on Azure VM | Microsoft Docs](/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-azure-shared-disks-manually-configure?tabs=windows2012)
+- [Create an FCI with Azure shared disks (SQL Server on Azure VMs)](/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-azure-shared-disks-manually-configure?tabs=windows2012)
 
 - [Cluster an SAP ASCS/SCS instance on a Windows failover cluster by using a cluster shared disk in Azure](/azure/virtual-machines/workloads/sap/sap-high-availability-guide-wsfc-shared-disk)
 

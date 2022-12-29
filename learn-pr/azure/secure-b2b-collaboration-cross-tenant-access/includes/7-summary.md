@@ -6,4 +6,4 @@ Without cross-tenant access settings, you wouldn't have this level of control ov
 
 ## References
 
-* [External Identities documentation](https://docs.microsoft.com/azure/active-directory/external-identities/)
+* [External Identities documentation](/azure/active-directory/external-identities/)

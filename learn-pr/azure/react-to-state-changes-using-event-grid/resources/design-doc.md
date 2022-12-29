@@ -113,7 +113,7 @@ Identify the subtasks of *React to state changes in your Azure services using Ev
 
     By using an Event Grid trigger in Azure Logic Apps, you can complete this task without writing any code, unless to prefer to edit your logic app's JSON definition manually. By enabling administrators to intercept and respond to events without custom code, Event Grid makes it easy to ensure compliance with regulations.
     
-    [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit)
+    [(Summary guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit)
 
 ## Notes
 

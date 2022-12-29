@@ -230,6 +230,6 @@ The tracert command checks for cumulative delays exceeding 100 ms:
 
 - When the result shows * you have hit the Azure edge.
 
-- When the DNS name includes msm you've hit the Microsoft backbone.
+- When the DNS name includes msn you've hit the Microsoft backbone.
 
 :::image type="content" source="../media/3-tracert.png" alt-text="Screenshot of the tracert screen.":::

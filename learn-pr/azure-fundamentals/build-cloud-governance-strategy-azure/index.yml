@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.
-iconUrl: /learn/achievements/describe-azure-governance-methodologies.svg
+iconUrl: /training/achievements/describe-azure-governance-methodologies.svg
 levels:
 - beginner
 roles:

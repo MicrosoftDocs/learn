@@ -17,7 +17,7 @@ abstract: |
   - Create and configure a Twilio account with a programmable phone number to send and receive text messages.
   - Deploy an existing application to a function app by using Twilio and Azure Maps to manage and send temperature alerts for specific locations.
 
-iconUrl: /learn/achievements/advocates/send-crop-weather-alerts.svg
+iconUrl: /training/achievements/advocates/send-crop-weather-alerts.svg
 levels:
 - beginner
 roles:
@@ -30,7 +30,7 @@ products:
 - azure-functions
 prerequisites: | 
   - A free Twilio account
-  - Basic familiarity with Azure Functions, similar to what's covered in [Create serverless logic with Azure Functions](/learn/modules/create-serverless-logic-with-azure-functions/).
+  - Basic familiarity with Azure Functions, similar to what's covered in [Create serverless logic with Azure Functions](/training/modules/create-serverless-logic-with-azure-functions/).
 
 subjects:
 - communication

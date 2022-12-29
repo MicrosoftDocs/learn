@@ -1,14 +1,14 @@
-Azure Monitor for SAP Solutions uses existing [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) features such as Log Analytics and [Workbooks](https://docs.microsoft.com/azure/azure-monitor/platform/workbooks-overview) to provide more monitoring capabilities. For example:
+Azure Monitor for SAP Solutions uses existing [Azure Monitor](/azure/azure-monitor/overview) features such as Log Analytics and [Workbooks](/azure/azure-monitor/platform/workbooks-overview) to provide more monitoring capabilities. For example:
 
 - Use an Azure Log Analytics workspace to:
 
-    - Create [custom visualizations](https://docs.microsoft.com/azure/azure-monitor/platform/workbooks-overview) by editing default Workbooks
+    - Create [custom visualizations](/azure/azure-monitor/platform/workbooks-overview) by editing default Workbooks
 
-    - Write [custom queries](https://docs.microsoft.com/azure/azure-monitor/log-query/log-analytics-tutorial)
+    - Write [custom queries](/azure/azure-monitor/log-query/log-analytics-tutorial)
 
-    - Creating [custom alerts](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-response)
+    - Creating [custom alerts](/azure/azure-monitor/learn/tutorial-response)
 
-- Take advantage of the [flexible retention period](https://docs.microsoft.com/azure/azure-monitor/platform/manage-cost-storage)
+- Take advantage of the [flexible retention period](/azure/azure-monitor/platform/manage-cost-storage)
 
 - Connect monitoring data with their ticketing system.
 
@@ -76,15 +76,15 @@ At a high level, the following diagram explains how Azure Monitor for SAP Soluti
 
     - The **Azure virtual machine** (also known as the *collector VM*): The main purpose of this Standard_B2ms VM is to host the *monitoring payload*. This refers to the logic of collecting telemetry from the source systems and transferring it to the monitoring framework. In the diagram above, the monitoring payload contains the logic to connect to SAP HANA database over a SQL port.
 
-    - [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/basic-concepts): Deployed to securely hold SAP HANA database credentials and to store information about [providers](https://docs.microsoft.com/azure/virtual-machines/workloads/sap/azure-monitor-providers).
+    - [Azure Key Vault](/azure/key-vault/general/basic-concepts): Deployed to securely hold SAP HANA database credentials and to store information about [providers](/azure/virtual-machines/workloads/sap/azure-monitor-providers).
 
     - **Log Analytics Workspace**: The destination where the telemetry data is stored.
 
-        - Visualization is built on top of telemetry in Log Analytics using [Azure Workbooks](https://docs.microsoft.com/azure/azure-monitor/platform/workbooks-overview). You can customize how your telemetry is displayed, and also pin your Workbooks or specific visualizations to the Azure dashboard. The visualization will autorefresh on the dashboard, with intervals as low as 30 minutes.
+        - Visualization is built on top of telemetry in Log Analytics using [Azure Workbooks](/azure/azure-monitor/platform/workbooks-overview). You can customize how your telemetry is displayed, and also pin your Workbooks or specific visualizations to the Azure dashboard. The visualization will autorefresh on the dashboard, with intervals as low as 30 minutes.
 
         - If you want to use your existing workspace within the same subscription as the SAP monitor resource, you can do so by choosing that option at the time of deployment.
 
-        - You can use Kusto Query Language (KQL) to run [queries](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) against the raw tables inside Log Analytics workspace.
+        - You can use Kusto Query Language (KQL) to run [queries](/azure/azure-monitor/log-query/log-query-overview) against the raw tables inside Log Analytics workspace.
 
 ### Architecture highlights
 

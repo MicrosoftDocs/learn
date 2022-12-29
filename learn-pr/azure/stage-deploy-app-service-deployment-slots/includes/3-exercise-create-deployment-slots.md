@@ -35,6 +35,8 @@ Start by creating a new web app resource in the Azure portal.
 
 1. Select **Next : Deployment**.
 
+1. Select **Next : Networking**.
+
 1. Select **Next : Monitoring**, and enter the following value for the setting.
 
     | Setting | Value |

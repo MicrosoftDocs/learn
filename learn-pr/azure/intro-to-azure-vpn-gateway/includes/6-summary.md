@@ -8,4 +8,4 @@ You learned about the different options that are available to you when you deplo
 - [What is VPN Gateway?](/azure/vpn-gateway/vpn-gateway-about-vpngateways?azure-portal=true)
 - [About VPN Gateway SKUs and configuration settings](/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings?azure-portal=true)
 - [Configure VPN Gateway](/azure/vpn-gateway/tutorial-site-to-site-portal?azure-portal=true)
-- [Connect your on-premises network to Azure with VPN gateway](/learn/modules/connect-on-premises-network-with-vpn-gateway/?azure-portal=true)
+- [Connect your on-premises network to Azure with VPN gateway](/training/modules/connect-on-premises-network-with-vpn-gateway/?azure-portal=true)

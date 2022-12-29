@@ -24,7 +24,7 @@ prerequisites: |
     - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
     - [Node.js](https://nodejs.org/?azure-portal=true)
     - TypeScript
-iconUrl: /learn/achievements/typescript/typescript-work-external-libraries.svg
+iconUrl: /training/achievements/typescript/typescript-work-external-libraries.svg
 levels:
 - intermediate
 roles:
@@ -32,7 +32,6 @@ roles:
 - developer
 products:
 - azure
-- vs-code
 units:
 - learn.language.typescript-work-external-libraries.1-introduction
 - learn.language.typescript-work-external-libraries.2-organize-code-with-modules

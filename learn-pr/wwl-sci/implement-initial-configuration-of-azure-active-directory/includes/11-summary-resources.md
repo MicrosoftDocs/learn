@@ -15,6 +15,7 @@ Use these resources to discover more.
  -  For information about how to use PIM, see [Privileged Identity Management](/azure/active-directory/privileged-identity-management/).
  -  The following step-by-step guides provide information on how you can use Conditional Access to configure equivalent policies to those policies enabled by security defaults:
     
+    
      -  [Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
      -  [Require MFA for Azure management](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
      -  [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)

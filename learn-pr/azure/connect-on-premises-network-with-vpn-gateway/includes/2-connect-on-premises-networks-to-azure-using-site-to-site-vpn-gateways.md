@@ -43,7 +43,7 @@ Both types of VPN gateways (route-based and policy-based) in Azure use pre-share
 
 ## VPN gateway sizes
 
-The capabilities of your VPN gateway are determined by the SKU or size that you deploy. This table shows an example gateway SKUs. These numbers do change. For the latest information, see [Gateway SKUs](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways#benchmark.md) in the Azure VPN Gateway documentation.
+The capabilities of your VPN gateway are determined by the SKU or size that you deploy. This table shows an example gateway SKUs. These numbers do change. For the latest information, see [Gateway SKUs](/azure/vpn-gateway/vpn-gateway-about-vpngateways#benchmark.md) in the Azure VPN Gateway documentation.
 
 |**VPN<br>Gateway<br>Generation** |**SKU**   | **S2S/VNet-to-VNet<br>Tunnels** |  **Aggregate<br>Throughput Benchmark** | **BGP** | **Zone-redundant** |
 |---            |---         | ---       | ---       | ---          | ---|

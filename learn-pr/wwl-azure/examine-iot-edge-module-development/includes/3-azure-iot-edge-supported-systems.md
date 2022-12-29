@@ -1,6 +1,6 @@
 It is important to understand which systems and components are supported by IoT Edge, whether officially or in preview.
 
-For the full list of IoT Edge releases and support documentation, see: [https://docs.microsoft.com/azure/iot-edge/support](/azure/iot-edge/support)
+For the full list of IoT Edge releases and support documentation, see: [Azure IoT Edge supported systems](/azure/iot-edge/support)
 
 ## Container engines
 

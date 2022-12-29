@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Basic understanding of the Microsoft 365 services
   - Basic understanding information protection and governance in Microsoft 365
-iconUrl: /learn/achievements/create-and-manage-sensitive-information-types.svg
+iconUrl: /training/achievements/create-and-manage-sensitive-information-types.svg
 levels:
 - intermediate
 roles:

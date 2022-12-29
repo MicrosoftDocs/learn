@@ -20,7 +20,7 @@ The following video shows how to create the Azure resources you'll need. Use the
    | Subscription | Select the subscription associated with your account. |
    | Resource group | Select the **Create new** link, and enter *learn-file-sync-rg*. |
    | **Instance details** |
-   | Storage account name   | Enter *extendcadfiles*. |
+   | Storage account name   | Enter *extendcadfilesXXXX*, replacing "XXXX" with random letters or numbers of your choosing. |
 
 1. Accept the defaults for the rest of the values.
 

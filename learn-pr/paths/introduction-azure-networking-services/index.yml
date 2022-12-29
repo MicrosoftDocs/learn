@@ -15,7 +15,7 @@ prerequisites: |
   - Beginner-level knowledge of cloud computing, including scalability and availability. 
 summary: |
   Learn to protect your network from cyber security attacks with Azure network security services.
-iconUrl: /learn/achievements/introduction-to-azure-networking-services.svg
+iconUrl: /training/achievements/introduction-to-azure-networking-services.svg
 levels:
 - beginner
 roles:

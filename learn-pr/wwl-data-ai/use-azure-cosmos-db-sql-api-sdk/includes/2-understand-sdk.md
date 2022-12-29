@@ -1,4 +1,4 @@
-The **Microsoft.Azure.Cosmos** library is the latest version of the .NET SDK for Azure Cosmos DB SQL API.
+The **Microsoft.Azure.Cosmos** library is the latest version of the .NET SDK for Azure Cosmos DB for NoSQL.
 
 The library is open-source and hosted online on GitHub at **azure/azure-cosmos-dotnet-v3**. The open-source project conforms to the Microsoft Open Source Code of Conduct and accepts contributions and suggestions from the community.
 

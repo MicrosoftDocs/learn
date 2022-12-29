@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-introduction-to-azure-search.exercise
-title: Exercise-Create an Azure Cognitive Search solution
+title: Exercise - Explore knowledge mining
 metadata:
-  title: Exercise-Create an Azure Cognitive Search solution
-  description: "Exercise-Create an Azure Cognitive Search solution"
-  ms.date: 06/30/2022
+  title: Exercise - Explore knowledge mining
+  description: "Exercise - Explore knowledge mining"
+  ms.date: 09/02/2022
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial

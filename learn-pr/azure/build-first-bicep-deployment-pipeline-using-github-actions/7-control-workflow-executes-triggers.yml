@@ -6,8 +6,8 @@ metadata:
   title: Use triggers to control when your workflow runs
   description: Learn how to create and use triggers and schedules to run Bicep deployment workflows.
   ms.date: 07/20/2022
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

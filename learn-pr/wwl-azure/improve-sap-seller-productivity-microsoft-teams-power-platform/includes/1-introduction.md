@@ -15,8 +15,8 @@ By the end of this module, you’ll be able to enable Teams integration with SAP
 
 For the best learning experience from this module, you should already have the following knowledge and experience:
 
-- [Get started with Power Automate - Learn | Microsoft Docs](/learn/modules/get-started-flows/)
-- [Manage Microsoft Teams - Learn | Microsoft Docs](/learn/modules/m365-teams-collab-manage-teams/)
+- [Get started with Power Automate](/training/modules/get-started-flows/)
+- [Manage Microsoft Teams](/training/modules/m365-teams-collab-manage-teams/)
 - JSON and Adaptive Card customization experience (optional)
 - Working with Microsoft Teams
  -Background in SAP Sales Cloud

@@ -23,7 +23,7 @@ prerequisites: |
   - Core networking technologies.
   - Windows client operating systems such as Windows 10.
   Windows PowerShell basics.
-iconUrl: /learn/achievements/implement-windows-server-dns.svg
+iconUrl: /training/achievements/implement-windows-server-dns.svg
 levels:
 - intermediate
 roles:

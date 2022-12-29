@@ -8,7 +8,7 @@ Data frequently exists in a non-relational format. Systems may output files in a
 
 Also, accounting departments frequently process invoices and reconcile purchase orders, so files must be stored, and their contents extracted, if required for analysis or observation.
 
-Analytical solutions integrate the data from these systems into a single source that can be used for reporting. You then create reports to inform business decisions, and enlighten stakeholders who monitor key performance indicators (KPIs).  
+Analytical solutions integrate the data from these systems into a single source that can be used for reporting. You then create reports to inform business decisions, and enlighten stakeholders who monitor key performance indicators (KPIs).
 
 In this video, you'll see how data from different areas within an organization can be processed into a central reporting data store:
 

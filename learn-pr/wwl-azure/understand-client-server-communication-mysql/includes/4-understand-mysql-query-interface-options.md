@@ -8,18 +8,19 @@ There are other query interface tools available, and your choice will depend on 
 
 ## MySQL Workbench
 
-MySQL Workbench is an open-source developer environment that allows you to connect to an Azure Database for MySQL single or flexible server. Using MySQL Workbench, you can query a database or find information about the server. MySQL Workbench can be [downloaded](https://dev.mysql.com/downloads/workbench/) and installed without a license.
+MySQL Workbench is an open-source developer environment that allows you to connect to Azure Database for MySQL. Using MySQL Workbench, you can query a database or find information about the server. MySQL Workbench can be [downloaded](https://dev.mysql.com/downloads/workbench/) and installed without a license.
 
 To access a MySQL database on Azure Database for MySQL, you'll need an administrator username and password. To connect to a database:
 
 1. Open MySQL Workbench, from the top ribbon menu select **Database**.
 1. Select **Manage Connections** and the **Manage Server Connections** dialog box is displayed.
 1. In **Connection Name**, enter a name for the connection.
-1. In **Hostname**, enter the full name of the server as it is displayed in the Azure portal's Overview page for the server, eg mysqlserver-29.mysql.database.azure.com.
+1. In **Hostname**, enter the full name of the server as it is displayed in the Azure portal's Overview page for the server, for example **mysqlserver-29.mysql.database.azure.com**.
 1. In **Port**, leave the default 3306.
 1. In **Username**, enter an administrator account username.
 1. Select **Store in Vault** and enter the administrator password then select **OK**. The password will be stored so you don't have to enter it each time.
 1. Select **Test Connection** to ensure you can connect successfully.
+
     :::image type="content" source="../media/mysql-workbench-connect.png" alt-text="Screenshot showing the MySQL Workbench Connect to Database dialog box." lightbox="../media/mysql-workbench-connect.png":::
 
 You've now created a connection to the server. If you want to connect to the same database each time, in **Default Schema** enter the name of the database.
@@ -35,12 +36,14 @@ MySQL Workbench has four main areas:
 1. **Query tabs**. The main area in the center allows you to enter statements and queries. Dashboard and other information is displayed in this central area. The results of a query or statement appear in the query tab. The results area also has further options: Result Grid, Form Editor, Field Types, Query stats, and Execution Plan.
 1. **Output**. Underneath the query tabs is the Output area, which displays information messages and error codes.
 1. **SQL Additions**. This has two tabs - Context Help and Snippets. Context Help displays help topics from the "Jump to" dropdown box at the top. The Snippets area allows you to store code snippets, allowing you to keep the Query tab clear of unnecessary code.
+
     :::image type="content" source="../media/mysql-workbench.png" alt-text="Screenshot showing the MySQL Workbench four main areas - Navigator, Query tabs, Output, and SQL Additions." lightbox="../media/mysql-workbench.png":::
 
-From the top View menu, select Panels to display which panels you want to display at any one time. Alternatively, the top right icons allow you to select and deselect which panels are visible.
+From the top View menu, select Panels to choose the panels you want to display. Alternatively, the top right icons allow you to select and deselect which panels are visible.
 
 Select the cog icon to display or edit Workbench Preferences including setting defaults for commonly used names and data types.
-:::image type="content" source="../media/cog-icon.png" alt-text="Screenshot that shows the MySQL Workbench cog icon." lightbox="../media/cog-icon.png":::
+
+:::image type="content" source="../media/cog-icon.png" alt-text="Screenshot that shows the MySQL Workbench cog icon.":::
 
 ## dbForge Studio for MySQL
 
@@ -59,7 +62,7 @@ You can migrate MySQL databases to Azure, backup and restore databases, as well 
 MySQL for Visual Studio is a third-party add-on for Microsoft Visual Studio. It can be downloaded from [MySQL Installer](https://dev.mysql.com/downloads/installer/). Both MySQL for Visual Studio 1.2.10 and Connector/NET are required.
 
 > [!NOTE]
-> There are two download options, the larger download includes all mySQL products, including the mySQL server. Choose the **web** option, which only downloads selected products:
+> There are two download options, the larger download includes all MySQL products, including the MySQL server. Choose the **web** option, which only downloads selected products:
 
 - MySQL Servers (from 5.6 onwards)
 - Applications
@@ -78,7 +81,7 @@ MySQL for Visual Studio is a third-party add-on for Microsoft Visual Studio. It 
 
 Select **MySQL for Visual Studio** and **MySQL Connectors - Connector/Net**. The **MySQL installer** installs the selected products.
 
-To connect to a MySQL database from Visual Studio, from the top menu select **Tools**, then **Connect to Database**, under **Data source** select **MySQL Database**. Enter the full **server name**, for example mysqlserver-29.mysql.database.azure.com, then the username and password. You can optionally save the password. Select **Test Connection** to check the connection works.
+To connect to an Azure Database for MySQL instance from Visual Studio, from the top menu select **Tools**, then **Connect to Database**, under **Data source** select **MySQL Database**. Enter the full **server name**, for example **mysqlserver-29.mysql.database.azure.com**, then the username and password. You can optionally save the password. Select **Test Connection** to check the connection works.
 
 > [!NOTE]
 > The first time you connect to a MySQL database after installing MySQL for Visual Studio you'll have to restart Visual Studio.

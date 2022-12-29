@@ -117,7 +117,7 @@ Identify the subtasks of *Improve the performance of an API by adding a caching 
 
 - This module uses caching as a vehicle for introducing policy more generally. The prerequistes only assume the most basic of knowledge around publishing an API in APIM.
 - Policy expressions are not covered in this module.
-- Use zipdeploy to quickly deploy to app service instead of doing the git dance. See https://docs.microsoft.com/learn/modules/instrument-web-app-code-with-application-insights/5-instrument-the-application for an example.
+- Use zipdeploy to quickly deploy to app service instead of doing the git dance. See https://learn.microsoft.com/training/modules/instrument-web-app-code-with-application-insights/5-instrument-the-application for an example.
 - The sample code should be an ASP.NET Core web api and should use Swashbuckle/Swagger to publish an OpenAPI spec that can then be consumed in APIM. At least one operation on the API should be interesting enough to showcase the capabilities of APIM caching policies (varying by param, etc.)
 
 Reference links:

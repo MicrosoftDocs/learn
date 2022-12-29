@@ -3,7 +3,7 @@ uid: learn.languages.csharp-basic-formatting
 metadata:
   title: 'Perform basic string formatting in C#'
   description: Combine literal and variable text data that are filled with special characters, formatting, and Unicode into meaningful messages for the end user.
-  ms.date: 09/17/2019
+  ms.date: 08/16/2022
   author: billwagner
   ms.author: wiwagn
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   - Beginner level experience with displaying a message to a console using the Console.WriteLine() and Console.Write() methods.
   - Beginner level experience with data types, declaring, initializing, setting, and retrieving values from variables.
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-basic-formatting.svg
+iconUrl: /training/achievements/csharp-basic-formatting.svg
 levels:
 - beginner
 roles:

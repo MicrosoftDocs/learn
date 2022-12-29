@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Introduction to migrating an ASP.NET application from on-premises to Azure, along with a supporting Azure SQL database.  
   ms.date: 01/16/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: wadepickett
+  ms.author: wpickett
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

@@ -21,7 +21,7 @@ prerequisites: |
   - Knowledge of basic networking concepts
   - Familiarity with Azure virtual machines, App services, virtual networks, private link service, and load balancer.
   - Knowledge of basic web
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:

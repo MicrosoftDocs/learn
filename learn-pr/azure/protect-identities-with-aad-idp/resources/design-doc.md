@@ -139,4 +139,4 @@ Identify the subtasks of *Protect your identities with Azure AD Identity Protect
 
 The following doc can be used to simulate risk events. We should be able to do this in sandbox, so try to create this module with an exercise.
 
-https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-simulate-risk
+https://learn.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-simulate-risk

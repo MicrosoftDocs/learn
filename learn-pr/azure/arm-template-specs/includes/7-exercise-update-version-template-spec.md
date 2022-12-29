@@ -1,4 +1,4 @@
-Your Azure Cosmos DB template spec has been used throughout your organization to provision lots of new Azure Cosmos DB accounts. All of them have been configured to use continuous backup. 
+Your Azure Cosmos DB template spec has been used throughout your organization to provision lots of new Azure Cosmos DB accounts. All of them have been configured to use continuous backup.
 
 Your security team recently reviewed the Azure Cosmos DB security capabilities. It decided that new accounts should use Azure Active Directory (Azure AD) authentication and Azure Cosmos DB role-based access control.
 
@@ -141,7 +141,7 @@ Publish the template spec by using this Azure CLI command in the Visual Studio C
 1. Your template spec version has a parameter for the user principal ID. Use the following commands to get your own user account's principal ID:
 
    ```azurecli
-   userObjectId=$(az ad signed-in-user show --query objectId --output tsv)
+   userObjectId=$(az ad signed-in-user show --query id --output tsv)
    ```
 
 1. Deploy the template spec by using this Azure CLI command in the Visual Studio Code terminal:

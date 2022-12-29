@@ -22,7 +22,7 @@ prerequisites: |
   - Basic knowledge of Kubernetes and its concepts
   - Basic knowledge of AKS and its concepts
   - Basic knowledge of Git and GitHub
-iconUrl: /learn/achievements/aks-deployment-pipeline-github-actions.svg
+iconUrl: /training/achievements/aks-deployment-pipeline-github-actions.svg
 levels:
   - beginner
 roles:

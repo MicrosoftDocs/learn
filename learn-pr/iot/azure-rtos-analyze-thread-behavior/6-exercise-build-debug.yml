@@ -5,8 +5,10 @@ metadata:
   title: 'Exercise: Build and debug in ProjectAnalyze'
   description: 'Perform a hands-on exercise: Building and debugging in ProjectAnalyze.'
   ms.date: 01/27/2022
-  author: EdLamie
-  ms.author: pacorte
+  author: timlt
+  ms.author: timlt
+  ms.reviewer: liydu
+  manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-python
 durationInMinutes: 5

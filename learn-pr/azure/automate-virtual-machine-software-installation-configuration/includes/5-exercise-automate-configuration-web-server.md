@@ -8,7 +8,7 @@ For your first task in this exercise, you'll delete the virtual machine that you
 
 ### Delete your exiting Linux virtual machine
 
-Your first step is to remove the existing virtual machine you created in the previous exercise. Using the Cloud Shell, use the following command to delete the existing virtual machine:
+Your first step is to remove the existing virtual machine you created in the previous exercise. Using the Cloud Shell, delete the existing virtual machine:
 
 ```azurecli
 az vm delete \
@@ -163,7 +163,7 @@ az vm delete \
 
 Now that you've created a cloud-init file that contains the configuration steps for your virtual machine, you can use it with the Azure CLI command to create a Linux virtual machine.
 
-Using the Cloud Shell, use the following command to create an Ubuntu virtual machine using your *cloud-init.yaml* file:
+Using the Cloud Shell, create an Ubuntu virtual machine using your *cloud-init.yaml* file:
 
 ```azurecli
 az vm create \
@@ -377,27 +377,27 @@ Now that you've created a PowerShell script that contains the configuration step
 
 1. Use the following steps to make your PowerShell script publicly accessible:
 
-    1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) in a new browser window using the same account that you used when you started the sandbox.
-   
+    1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) in a new browser window using the same account that you used when you started this module.
+
     1. In the portal menu, select **Storage accounts**.
 
-    1. Select your Cloud Shell account, then select **Storage Explorer (preview)**.
+    1. Select your Cloud Shell account, then select **Storage browser**.
 
     1. Expand **FILE SHARES**, and then select your Cloud Shell entry.
 
-    1. Right-click **setup.ps1**, then select **Get Shared Access Signature...**.
+    1. Right-click **setup.ps1**, then select **Generate SAS**.
 
-        ![Screenshot of Storage Explorer, showing a context menu.](../media/5-storage-explorer.png)
+        :::image type="content" source="../media/5-azure-storage-browser-generate-sas.png" alt-text="Screenshot that shows the Storage browser with Generate S A S selected from the context menu.":::
 
-    1. In the side panel, select **Create**.
+    1. In the side panel, select **Generate SAS token and URL**.
 
-    1. Copy the **URI** value, you'll use this in the next step to install and configure IIS. Your URI should resemble the following example:
+    1. Copy the **URL** value. You'll use this in the next step to install and configure IIS. Your URL should resemble the following example:
 
         ```output
         https://cloudshell00000000.file.core.windows.net/cloudshellfiles/setup.ps1?sp=rl&st=yyyy-mm-ddThh:mm:ssZ&se=yyyy-mm-ddThh:mm:ssZ&sv=yyyy-mm-dd&sig=AbCdEfGhIjKlMnOpQrStUvWxYz&sr=f
         ```
 
-    1. Click **Close**.
+    1. Close the **Generate SAS** side panel.
 
 1. Switch back to the Cloud Shell, and use the `az vm extension` command to run your PowerShell script:
 
@@ -407,10 +407,10 @@ Now that you've created a PowerShell script that contains the configuration step
         --publisher Microsoft.compute \
         --vm-name my-windows-vm \
         --resource-group my-resource-group-name \
-        --settings '{ "fileUris": ["SHARED_ACCESS_URI"], "commandToExecute": "powershell.exe ./setup.ps1" }'
+        --settings '{ "fileUris": ["SHARED_ACCESS_URL"], "commandToExecute": "powershell.exe ./setup.ps1" }'
     ```
 
-    Where `SHARED_ACCESS_URI` is the URI of your shared access signature from earlier in this exercise.
+    Where `SHARED_ACCESS_URL` is the URL of your shared access signature from earlier in this exercise.
 
 1. It may take Azure several minutes to install and configure IIS with PHP. When it has finished, you should see a JSON response that is similar to the following example:
 
@@ -447,4 +447,4 @@ Open a web browser, and browse to the IP address that you copied from the JSON r
 
 ![Screenshot of webpage showing the output of the phpinfo() function.](../media/5-success-page.png)
 
-Congratulations! You have installed and configuration a web server with PHP on an Azure virtual machine using the Azure CLI.
+Congratulations! You've installed and configured a web server with PHP on an Azure virtual machine using the Azure CLI.

@@ -16,7 +16,7 @@ abstract: |
     - Upload data to Azure Data Lake Storage Gen2 by using Azure Storage Explorer.
 prerequisites: |
   An Azure account or active trial
-iconUrl: /learn/achievements/data-ai/upload-data-to-azure-data-lake-storage-badge.svg
+iconUrl: /training/achievements/data-ai/upload-data-to-azure-data-lake-storage-badge.svg
 levels:
 - beginner
 roles:

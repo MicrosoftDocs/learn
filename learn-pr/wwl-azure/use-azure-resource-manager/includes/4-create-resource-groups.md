@@ -2,7 +2,7 @@ Resources can be deployed to any new or existing resource group. Deployment of r
 
 ## Considerations
 
-Resource Groups are at their simplest a logical collection of resources. There are a couple of small rules for resource groups.
+Resource Groups are at their simplest a logical collection of resources. There are a few rules for resource groups.
 
  -  Resources can only exist in one resource group.
  -  Resource Groups cannot be renamed.
@@ -16,7 +16,7 @@ There are some important factors to consider when defining your resource group:
  -  All the resources in your group should share the same lifecycle. You deploy, update, and delete them together. If one resource, such as a database server, needs to exist on a different deployment cycle it should be in another resource group.
  -  Each resource can only exist in one resource group.
  -  You can add or remove a resource to a resource group at any time.
- -  You can move a resource from one resource group to another group.
+ -  You can move a resource from one resource group to another group. Limitations do apply to [moving resources](/azure/azure-resource-manager/management/move-support-resources). 
  -  A resource group can contain resources that reside in different regions.
  -  A resource group can be used to scope access control for administrative actions.
  -  A resource can interact with resources in other resource groups. This interaction is common when the two resources are related but don't share the same lifecycle (for example, web apps connecting to a database).

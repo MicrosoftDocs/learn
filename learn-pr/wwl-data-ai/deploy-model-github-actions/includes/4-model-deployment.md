@@ -24,7 +24,7 @@ To register the model, you can point to either a job's output, or to a location 
 To deploy the model to an endpoint, you first create an endpoint and then deploy the model. An endpoint is an HTTPS endpoint that the web app can send data to and get a prediction from. You want the endpoint to remain the same, even after you deploy an updated model to the same endpoint. When the endpoint remains the same, the web app won't need to be updated every time the model is retrained.
 
 > [!Tip]
-> Learn more about [how to deploy a model with the Azure Machine Learning CLI (v2).](/learn/modules/deploy-azure-machine-learning-model-managed-endpoint-cli-v2/)
+> Learn more about [how to deploy a model with the Azure Machine Learning CLI (v2).](/training/modules/deploy-azure-machine-learning-model-managed-endpoint-cli-v2/)
 
 ## Test the model
 

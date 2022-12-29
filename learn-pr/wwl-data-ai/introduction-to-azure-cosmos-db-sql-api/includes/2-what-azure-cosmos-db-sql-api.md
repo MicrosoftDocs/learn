@@ -1,4 +1,4 @@
-Let's start with a few definitions and a quick tour through Azure Cosmos DB SQL API. This overview should help you see whether Azure Cosmos DB might be a good fit for your work.
+Let's start with a few definitions and a quick tour through Azure Cosmos DB for NoSQL. This overview should help you see whether Azure Cosmos DB might be a good fit for your work.
 
 ## What is a NoSQL database?
 
@@ -21,11 +21,11 @@ While there are many NoSQL data models, four broad data model families are commo
 
 ![Diagram showing various NoSQL models including; a key-value, document, graph, and column-family store](../media/2-nosql-db.png)
 
-Moving forward, we will focus on the document data model, the data model supported by Azure Cosmos DB SQL API
+Moving forward, we will focus on the document data model, the data model supported by Azure Cosmos DB for NoSQL
 
 ## Why use a NoSQL database with the document data model?
 
-The document data model breaks data down into individual **document** entities. A document can be any structured data type, but JSON is commonly used as the data format. The Azure Cosmos DB SQL API supports JSON natively.
+The document data model breaks data down into individual **document** entities. A document can be any structured data type, but JSON is commonly used as the data format. The Azure Cosmos DB for NoSQL supports JSON natively.
 
 ![Illustration of a hierarchical document data model that includes parent entities, child entities, and lines connecting them](../media/2-document-db.png)
 
@@ -52,32 +52,32 @@ Here is an example of a JSON document:
 
 As you can see, JSON is a relatively readable data format that clearly exposes its content. JSON is also relatively easy to parse and use in JavaScript applications.
 
-## What is Azure Cosmos DB SQL API?
+## What is Azure Cosmos DB for NoSQL?
 
-Azure Cosmos DB SQL API is a fast NoSQL database service that offers rich querying over diverse data, helps deliver configurable and reliable performance, is globally distributed, and enables rapid development.
+Azure Cosmos DB for NoSQL is a fast NoSQL database service that offers rich querying over diverse data, helps deliver configurable and reliable performance, is globally distributed, and enables rapid development.
 
 ![Illustration of a world map with four globally distributed nodes that are connected via lines](../media/2-azure-cosmos-db.png)
 
-The SQL API is the core or native API for working with documents. The SQL API supports fast, flexible development utilizing JSON documents, a query language with a familiar syntax, and client libraries for popular programming languages. Azure Cosmos DB provides other APIs, such as Mongo, Gremlin, and Cassandra, that offer compatibility with each database ecosystem while still mapping to the same underlying infrastructure of the native SQL API.
+The NoSQL API is the core or native API for working with documents. The NoSQL API supports fast, flexible development utilizing JSON documents, a query language with a familiar syntax, and client libraries for popular programming languages. Azure Cosmos DB provides other APIs, such as Mongo, Gremlin, and Cassandra, that offer compatibility with each database ecosystem while still mapping to the same underlying infrastructure of the native NoSQL API.
 
-Azure Cosmos DB SQL API has a few advantages such as:
+Azure Cosmos DB for NoSQL has a few advantages such as:
 
-- **Guaranteed speed at any scale**—even through bursts—with instant, limitless elasticity, fast reads, and multi-master writes, anywhere in the world
-- **Fast, flexible app development** with SDKs for popular languages, a native SQL API along with APIs for MongoDB, Cassandra, and Gremlin, and no-ETL (extract, transform, load) analytics
-- **Ready for mission-critical applications** with guaranteed business continuity, 99.999-percent availability, and enterprise-grade security
-- **Fully managed and cost-effective serverless database** with instant, automatic scaling that responds to application needs
+- **Guaranteed speed at any scale**—even through bursts—with instant, limitless elasticity, fast reads, and multi-master writes, anywhere in the world.
+- **Fast, flexible app development** with SDKs for popular languages, a native NoSQL API along with APIs for MongoDB, Cassandra, and Gremlin, and no-ETL (extract, transform, load) analytics.
+- **Ready for mission-critical applications** with guaranteed business continuity, 99.999-percent availability, and enterprise-grade security.
+- **Fully managed and cost-effective serverless database** with instant, automatic scaling that responds to application needs.
 
-These capabilities make Azure Cosmos DB ideally suited for modern application development. Azure Cosmos DB SQL API is especially suited for applications that:
+These capabilities make Azure Cosmos DB ideally suited for modern application development. Azure Cosmos DB for NoSQL is especially suited for applications that:
 
 - Experience unpredictable spikes and dips in traffic
 - Generate lots of data
 - Need to deliver real-time user experiences
 - Are depended upon for business continuity
 
-The Azure Cosmos DB SQL API can arbitrarily store native JSON documents with flexible schema. Data is indexed automatically and is available for query using a flavor of the SQL query language designed for JSON data. The SQL API can be accessed using SDKs for popular frameworks such as [.NET][azure/cosmos-db/sql/sql-api-sdk-dotnet-standard], [Python][azure/cosmos-db/sql/sql-api-sdk-python], [Java][/azure/cosmos-db/sql/sql-api-sdk-java-v4], and [Node.js][azure/cosmos-db/sql/sql-api-sdk-node].
+The Azure Cosmos DB for NoSQL can arbitrarily store native JSON documents with flexible schema. Data is indexed automatically and is available for query using a flavor of the SQL query language designed for JSON data. The NoSQL API can be accessed using SDKs for popular frameworks such as [.NET][/azure/cosmos-db/sql/sql-api-sdk-dotnet-standard], [Python][/azure/cosmos-db/sql/sql-api-sdk-python], [Java][/azure/cosmos-db/sql/sql-api-sdk-java-v4], and [Node.js][/azure/cosmos-db/sql/sql-api-sdk-node].
 
-[azure/cosmos-db/sql/sql-api-sdk-dotnet-standard]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-api-sdk-dotnet-standard
-[azure/cosmos-db/sql/sql-api-sdk-java-v4]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-api-sdk-java-v4
-[azure/cosmos-db/sql/sql-api-sdk-node]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-api-sdk-node
-[azure/cosmos-db/sql/sql-api-sdk-python]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-api-sdk-python
+[/azure/cosmos-db/sql/sql-api-sdk-dotnet-standard]: /azure/cosmos-db/sql/sql-api-sdk-dotnet-standard
+[/azure/cosmos-db/sql/sql-api-sdk-java-v4]: /azure/cosmos-db/sql/sql-api-sdk-java-v4
+[/azure/cosmos-db/sql/sql-api-sdk-node]: /azure/cosmos-db/sql/sql-api-sdk-node
+[/azure/cosmos-db/sql/sql-api-sdk-python]: /azure/cosmos-db/sql/sql-api-sdk-python
 [json.org]: https://www.json.org

@@ -1,53 +1,56 @@
-Over the time a user is employed by a company they may have several positions.
+An employee of a company might work in several different roles during their tenure. Each position they hold can require access to different resources or have varying levels of permissions requirements. When an employee is first hired, they need initial access to corporate resources and apps. For each position they hold, they can have specific access requirements and privileges. When the employee leaves the company, their access is removed.
 
-:::image type="content" source="../media/employee-access-lifecycle.png" alt-text="Employee hired with no access, first job, second job, employee leaves the company.":::
+:::image type="content" source="../media/employee-access-lifecycle.png" alt-text="Diagram that shows identity management for an employee from their hire date, to access for specific roles, to their access removed when they leave the company." border="false":::
 
+To ensure employees and users always have the correct access, you can perform an _access review_. An [Azure Active Directory access review](/azure/active-directory/governance/access-reviews-overview) is a planned review of the access needs, rights, and history of user access.
 
-The Tailwind Traders CTO asks,
+As the Tailwind Traders CTO, you need to determine how you're going to do access reviews for your employees. You ask yourself:
 
-- As new employees join, how do we ensure they have the access they need to be productive?
+- As new employees join, how can we ensure they have the access they need to be productive?
 
-- As users switch teams or leave the company, how do we make sure that their old access is removed?
+- As employees switch teams or leave the company, how do we make sure their existing access is removed?
 
-## Determine the purpose of the access review
+### Things to know to determine the purpose of the Azure AD access review
 
-You’re considering using [Azure Active Directory access reviews](/azure/active-directory/governance/access-reviews-overview) to address the CTO’s concerns. An access review is a planned review of the access needs, rights, and history of user access. Access reviews mitigate risk by protecting, monitoring, and auditing access to critical assets. 
+While you consider how to use Azure AD access reviews for Tailwind Traders, think about the following characteristics of an access review.
 
-Access reviews help ensure that the right people have the right access to the right resources. For example, access reviews could be used to review:
+- Access reviews mitigate risk by protecting, monitoring, and auditing access to critical assets.
+ 
+- You use access reviews to help ensure the correct users have the correct access to the correct resources.
 
-- User access to applications integrated with Azure AD for single sign-on (such as SaaS, line-of-business).
+- Confirm correct user access to apps integrated with Azure AD for single sign-on, including SaaS apps and line-of-business apps.
 
-- Group memberships (synchronized to Azure AD, or created in Azure AD or Microsoft 365, including Microsoft Teams).
+- Verify group memberships that are synchronized to Azure AD, or created in Azure AD or Microsoft 365, including Microsoft Teams.
+   
+- Check access packages that group resources (groups, apps, and sites) into a single package to manage access.
 
-- Access Packages that group resources (groups, apps, and sites) into a single package to manage access.
+- Access reviews can also be used for Azure AD roles and Azure Resource roles as defined in Privileged Identity Management (PIM).
 
-- Azure AD roles and Azure Resource roles as defined in Privileged Identity Management (PIM).
+### Determine who will conduct the access reviews
 
-## Determine who will conduct the reviews
+Access reviews are only as good as the person doing the reviewing. Selecting good reviewers is critical to your success. The creator of the access review decides who will conduct the review. This setting can't be changed after the review is started. There are three types of reviewers:
 
-Access reviews are only as good as the person doing the reviewing. Selecting good reviewers is critical to your success. The creator of the access review decides who will conduct the review. This setting can't be changed once the review is started. Reviewers are represented by three personas:
+- **Resource owners**: The business owners of a resource.
 
-- Resource Owners, who are the business owners of the resource.
+- **Delegates**: A group of individuals selected by the access reviews admin.
 
-- A set of individually selected delegates, as selected by the access reviews administrator.
+- **End user**: A user who self-attests to their need for continued access.
 
-- End users who will each self-attest to their need for continued access.
+When you create an access review, admins can choose one or more reviewers. All reviewers can start and carry out a review, and choose to grant the user continued access to a resource or remove their access.
 
-When creating an Access Review, administrators can choose one or more reviewers. All reviewers can start and carry out a review, choosing to grant users continued access to a resource or removing them.
+### Things to consider when creating an access review plan
 
-## Create an access review plan
+Before you implement access reviews for Tailwind Traders, you should plan the types of reviews that are relevant to your organization. You need to make business decisions about what you want to review and the actions to take based on those reviews.
 
-Before implementing your access reviews, you should plan the types of reviews relevant to your organization. To do so, you’ll need to make business decisions about what you want to review and the actions to take based on those reviews.
+Review the following implementation scenario of an access review plan for Microsoft Dynamics resources. 
 
-For example, here’s an access review plan for Microsoft Dynamics. 
-
-| **Component**| **Value** |
-| - | - |
-| **Resources to review**| Access to Microsoft Dynamics |
-| **Review frequency**| Monthly |
-| **Who conducts the review**| Dynamics business group program managers |
-| **Notification**| Email 24 hours prior to review to alias Dynamics-PMs  Include encouraging custom message to reviewers to secure their buy-in |
-| **Timeline**| 48 hours from notification |
-| **Automatic actions**| Remove access from any account that has no interactive sign-in within 90 days by removing the user from the security group dynamics-access. Perform actions if not reviewed within timeline. |
-| **Manual actions**| Reviewers may perform removals approval prior to automated action if desired. |
-| **Communications**| Send internal (member) users who are removed an email explaining they’re removed and how to regain access. |
+| Access review component | Implementation |
+| --- | --- |
+| **What are the resources to review** | Microsoft Dynamics resources |
+| **How often should the access review be done** | Once a month |
+| **Who are the reviewers** | Dynamics business group program managers |
+| **How will reviewers be notified** | 24 hours before the start of the review, send email to the alias `Dynamics-PMs@tailwind-traders.org`. Include an encouraging custom message to secure reviewer cooperation. |
+| **How long should the review take to complete** | At most, 24 hours, which is 48 hours after the reviewers are first notified. |
+| **Are there automatic actions for these resources** | Yes. Automatic actions include: <br>- Remove access for any user account that has had no interactive sign-in within 90 days. <br>- Remove users from the security group `dynamics-access`. <br> - Perform access review actions for any user accounts that aren't reviewed within the specified time to complete. |
+| **Are there manual actions available to the reviewers** | Yes. Reviewers can approve user account removals before the automated action is completed, as desired. |
+| **How will affected users be notified** | Send email to internal (member) users who are removed, explain their removal, and how they can regain access. 

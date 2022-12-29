@@ -106,6 +106,12 @@ Copy the connection string to the clipboard &mdash; you'll be using it in the ne
     code .
     ```
 
+1. Use the following command to create a console project that has a `Main` method.
+
+    ```bash
+    dotnet new console --use-program-main --force
+    ```
+
 1. Select the **Program.cs** source file.
 
 1. Create the following field in the `Program` class and paste in your connection string as the value.

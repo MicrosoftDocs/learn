@@ -23,7 +23,7 @@ prerequisites: |
   - .NET 6.0 SDK
   - Git
   - A GitHub account
-iconUrl: /learn/achievements/azure-devops/manage-dependencies-in-your-build-pipeline.svg
+iconUrl: /training/achievements/azure-devops/manage-dependencies-in-your-build-pipeline.svg
 ratingEnabled: true
 levels:
 - intermediate

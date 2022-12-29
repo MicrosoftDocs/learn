@@ -1,11 +1,10 @@
 [Governance](/azure/cloud-adoption-framework/govern/guides/) provides mechanisms and processes to maintain control over your applications and resources in Azure. Governance involves determining your requirements, planning your initiatives, and setting strategic priorities.
 
-To effectively apply your governance strategies, you must first create a hierarchical structure. This structure lets you apply governance strategies exactly where they’re needed. The governance strategies we’ll cover in this module are Azure policy and resource tags. 
+To effectively apply your governance strategies, you must first create a hierarchical structure for your organizational environment. This structure lets you apply governance strategies exactly where they're needed. The governance strategies we cover in this module are Azure policy and resource tags. 
 
-:::image type="content" source="../media/governance-strategies.png" alt-text="Tenant root group, management groups, subscriptions, resource groups, and resources.":::
+:::image type="content" source="../media/governance-strategies.png" alt-text="Diagram of the Azure hierarchy that shows the tenant root group, management groups, subscriptions, resource groups, and resources." border="false":::
 
-
-A typical Azure hierarchy has four levels: management groups, subscriptions, resource groups, and resources. We’ll examine each level in more detail, but here’s an overview. 
+A typical Azure hierarchy has four levels: management groups, subscriptions, resource groups, and resources. We examine the details of these levels later in this module.
 
 - **Management groups** help you manage access, policy, and compliance for multiple subscriptions.
 

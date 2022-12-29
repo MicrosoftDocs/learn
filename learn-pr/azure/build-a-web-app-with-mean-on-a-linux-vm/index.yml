@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Experience using Bash from the command-line
   - Familiarity or interest in using JavaScript to build web applications
-iconUrl: /learn/achievements/build-a-web-app-with-mean-on-a-linux-vm.svg
+iconUrl: /training/achievements/build-a-web-app-with-mean-on-a-linux-vm.svg
 levels:
 - beginner
 roles:

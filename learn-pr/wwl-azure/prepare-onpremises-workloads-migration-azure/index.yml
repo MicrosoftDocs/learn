@@ -20,7 +20,7 @@ prerequisites: |
   - Knowledge of networking, compute, and database systems
   - Familiarity with virtualization concepts such as VMs, virtual networking, and virtual hard disks
   - Ability to manage cloud identities with Azure Active Directory
-iconUrl: /learn/achievements/prepare-on-premises-workloads-for-migration-to-azure.svg
+iconUrl: /training/achievements/prepare-on-premises-workloads-for-migration-to-azure.svg
 levels:
 - intermediate
 roles:

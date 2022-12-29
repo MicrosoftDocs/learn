@@ -10,7 +10,7 @@ Azure Key Vault provides the following services:
 
 In this unit, you'll create a new Azure Key Vault service for holding your application secrets.
 
-From the Bash Git prompt, run the commands below to create an Azure Key Vault instance. The name of the service should be globally and adjusted accordingly in case the randomly generated name is already in use.
+From the Bash CLI, run the commands below to create an Azure Key Vault instance. The name of the service should be globally and adjusted accordingly in case the randomly generated name is already in use.
 
 ```Bash
 KEYVAULT_NAME=springappskv$RANDOM$RANDOM

@@ -17,7 +17,7 @@ You also need to give a name to the deployment so you can easily identify it in 
 
 For convenience, you can also create a variable that stores the path to the template file. This variable makes it easier for you to run the deployment commands because you don't have to specify the path every time you deploy.
 
-As you might have learned in the [Deploy to multiple Azure environments by using ARM template features](/learn/modules/modify-azure-resource-manager-template-reuse/) module, you can use an ARM template parameter file to hold values that will be passed in to the ARM template when the template is deployed. Or you can pass the parameters as part of the command itself as inline parameters. Inline parameters can be well suited for automated deployments as part of a scripted environment where the parameters will be programmatically generated.
+As you might have learned in the [Deploy to multiple Azure environments by using ARM template features](/training/modules/modify-azure-resource-manager-template-reuse/) module, you can use an ARM template parameter file to hold values that will be passed in to the ARM template when the template is deployed. Or you can pass the parameters as part of the command itself as inline parameters. Inline parameters can be well suited for automated deployments as part of a scripted environment where the parameters will be programmatically generated.
 
 ## Azure PowerShell
 

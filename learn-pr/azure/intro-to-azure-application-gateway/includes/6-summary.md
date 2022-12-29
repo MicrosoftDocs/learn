@@ -6,5 +6,5 @@ In this module, you learned about Azure Application Gateway, a service that allo
 - [Azure Application Gateway features](/azure/application-gateway/features?azure-portal=true)
 - [How an application gateway works](/azure/application-gateway/how-application-gateway-works?azure-portal=true)
 - [Application gateway components](/azure/application-gateway/application-gateway-components?azure-portal=true)
-- [Encrypt network traffic end to end with Azure Application Gateway](/learn/modules/end-to-end-encryption-with-app-gateway/)
-- [Load balance your web service traffic with Application Gateway](/learn/modules/load-balance-web-traffic-with-application-gateway/)
+- [Encrypt network traffic end to end with Azure Application Gateway](/training/modules/end-to-end-encryption-with-app-gateway/)
+- [Load balance your web service traffic with Application Gateway](/training/modules/load-balance-web-traffic-with-application-gateway/)

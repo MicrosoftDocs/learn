@@ -4,4 +4,4 @@ Some of the MRTK assets and prefabs require TextMesh Pro. TextMesh Pro is Unityâ
 
 ## Tooltips
 
-A tooltip is a brief description that is related to some other manipulate or object. Tooltips re used to deliver a hint or extra data upon closer inspection. Tooltips assist users in recognizing new or strange items in the physical surroundings that aren't defined directly.
+A tooltip is a brief text description that is related to an object. Tooltips are used to deliver a hint or extra data upon closer inspection. Tooltips assist users in recognizing new or strange items in the physical surroundings that aren't defined directly.

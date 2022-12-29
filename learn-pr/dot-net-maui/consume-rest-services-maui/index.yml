@@ -20,7 +20,7 @@ prerequisites: |
   - Visual Studio 2022 with the .NET MAUI workload installed
   - Familiarity with C# and .NET
   - Basic knowledge of REST
-iconUrl: /learn/achievements/consume-rest-web-services-dotnet-maui-app.svg
+iconUrl: /training/achievements/consume-rest-web-services-dotnet-maui-app.svg
 levels: 
   - beginner
 roles: 

@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   This learning path helps you understand automated release gates, secrets, and secret management in your pipeline. You will learn how to implement alerting mechanisms, report on your quality, and get notified by using service hooks.
-iconUrl: /learn/achievements/az-400-implement-a-secure-continuous-deployment-using-azure-pipelines.svg
+iconUrl: /training/achievements/az-400-implement-a-secure-continuous-deployment-using-azure-pipelines.svg
 levels:
 - advanced
 roles:

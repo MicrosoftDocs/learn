@@ -11,5 +11,5 @@ Now that you've reviewed this module, you should be able to:
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
 * [Form Recognizer documentation](/azure/applied-ai-services/form-recognizer/)
-* [Microsoft Learn - Analyze receipts with the Form Recognizer service](/learn/modules/analyze-receipts-form-recognizer/)
-* [Microsoft Learn - Implement knowledge mining with Azure Cognitive Search](/learn/paths/implement-knowledge-mining-azure-cognitive-search/)
+* [Microsoft Learn - Analyze receipts with the Form Recognizer service](/training/modules/analyze-receipts-form-recognizer/)
+* [Microsoft Learn - Implement knowledge mining with Azure Cognitive Search](/training/paths/implement-knowledge-mining-azure-cognitive-search/)

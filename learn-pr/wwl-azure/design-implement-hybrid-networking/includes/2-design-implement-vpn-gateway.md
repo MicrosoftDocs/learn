@@ -1,16 +1,19 @@
-Networks that connect on-premises resources and virtual resources are known as hybrid networks. One option for connecting an on-premises network to an Azure VNET is a VPN connection. A virtual private network (VPN) is a type of private interconnected network. VPNs use an encrypted tunnel within another network. They are typically deployed to connect two or more trusted private networks to one another over an untrusted network, usually the public Internet. Traffic is encrypted while traveling over the untrusted network to prevent eavesdropping or other attacks.
+A virtual private network (VPN) provides a secure encrypted connection across another network. VPNs typically are deployed to connect two or more trusted private networks to one another over an untrusted network such as the internet. Traffic is encrypted while traveling over the untrusted network to prevent a third party from eavesdropping on the network communication.
 
-To integrate your on-premises environment with Azure, you need the ability to create an encrypted connection. You can connect over the internet, or over a dedicated link. Here, we'll look at Azure VPN Gateway, which provides an endpoint for incoming connections from on-premises environments.
+One option for connecting an on-premises network to an Azure Virtual Network is a VPN connection.
 
-When you're working toward integrating your on-premises network with Azure, there needs to be a bridge between them. VPN Gateway is an Azure service that provides this functionality. A VPN gateway can send encrypted traffic between the two networks. VPN gateways support multiple connections, which enable them to route VPN tunnels that use any available bandwidth. Each virtual network can have only one VPN gateway. All connections to that VPN gateway share the available network bandwidth. VPN gateways can also be used for connections between virtual networks in Azure.
+Here, we'll look at Azure VPN Gateway, which provides an endpoint for incoming connections to an Azure Virtual Network. 
 
 ## Azure VPN Gateways
 
-Within each virtual network gateway there are two or more virtual machines (VMs). These VMs have been deployed to a special subnet that you specify, called the gateway subnet. They contain routing tables for connections to other networks, along with specific gateway services. These VMs and the gateway subnet are similar to a hardened network device. You don't need to configure these VMs directly and should not deploy any additional resources into the gateway subnet.
+An Azure VPN gateway is a specific type of virtual network gateway that is used to send and receive encrypted traffic between an Azure virtual network and an on-premises location over the public Internet. Azure VPN gateways can also be used to connect separate Azure virtual networks using an encrypted tunnel across the Microsoft network backbone.
+
+> [!NOTE] 
+> A virtual network gateway is composed of two or more special VMs that are deployed to a specific subnet called the gateway subnet. Virtual network gateway VMs host routing tables and run specific gateway services. These VMs that constitute the gateway are created when you create the virtual network gateway and are managed automatically by Azure and do not require administrative attention.
 
 Creating a virtual network gateway can take some time to complete, so it's vital that you plan appropriately. When you create a virtual network gateway, the provisioning process generates the gateway VMs and deploys them to the gateway subnet. These VMs will have the settings that you configure on the gateway.
 
-Now, let's look at the factors you need to consider for planning your VPN gateway.
+Now, let's look at the factors you need to consider for planning your VPN gateway deployment.
 
 ## Plan a VPN gateway
 
@@ -51,8 +54,8 @@ When you create a virtual network gateway, you need to specify the gateway SKU t
 |        Generation2         |  VpnGw5  |          Max. 30\*           |         Max. 128         |            Max. 10000             |              10 Gbps               |   Supported   |         No         |
 |        Generation2         | VpnGw2AZ |          Max. 30\*           |         Max. 128         |             Max. 500              |             1.25 Gbps              |   Supported   |        Yes         |
 |        Generation2         | VpnGw3AZ |          Max. 30\*           |         Max. 128         |             Max. 1000             |              2.5 Gbps              |   Supported   |        Yes         |
-|        Generation2         | VpnGw4AZ |          Max. 30\*           |         Max. 128         |             Max. 5000             |               5 Gbps               |   Supported   |        Yes         |
-|        Generation2         | VpnGw5AZ |          Max. 30\*           |         Max. 128         |            Max. 10000             |              10 Gbps               |   Supported   |        Yes         |
+|        Generation2         | VpnGw4AZ |          Max. 100\*          |         Max. 128         |             Max. 5000             |               5 Gbps               |   Supported   |        Yes         |
+|        Generation2         | VpnGw5AZ |          Max. 100\*          |         Max. 128         |            Max. 10000             |              10 Gbps               |   Supported   |        Yes         |
 
 (\*) Use Virtual WAN if you need more than 30 S2S VPN tunnels.
 
@@ -60,7 +63,7 @@ When you create a virtual network gateway, you need to specify the gateway SKU t
  -  These connection limits are separate. For example, you can have 128 SSTP connections and 250 IKEv2 connections on a VpnGw1 SKU.
  -  On a single tunnel a maximum of 1 Gbps throughput can be achieved. Aggregate Throughput Benchmark in the above table is based on measurements of multiple tunnels aggregated through a single gateway. The Aggregate Throughput Benchmark for a VPN Gateway is S2S + P2S combined. If you have a lot of P2S connections, it can negatively impact a S2S connection due to throughput limitations. The Aggregate Throughput Benchmark is not a guaranteed throughput due to Internet traffic conditions and your application behaviors.
 
-## VPN types
+## VPN Gateway types
 
 When you create the virtual network gateway for a VPN gateway configuration, you must specify a VPN type. The VPN type that you choose depends on the connection topology that you want to create. For example, a P2S connection requires a RouteBased VPN type. A VPN type can also depend on the hardware that you are using. S2S configurations require a VPN device. Some VPN devices only support a certain VPN type.
 
@@ -72,7 +75,7 @@ Once a virtual network gateway has been created, you can't change the VPN type. 
 
 PolicyBased VPNs were previously called static routing gateways in the classic deployment model. Policy-based VPNs encrypt and direct packets through IPsec tunnels based on the IPsec policies configured with the combinations of address prefixes between your on-premises network and the Azure VNet. The policy (or traffic selector) is usually defined as an access list in the VPN device configuration. The value for a PolicyBased VPN type is PolicyBased. When using a PolicyBased VPN, keep in mind the following limitations:
 
-PolicyBased VPNs can only be used on the Basic gateway SKU. This VPN type is not compatible with other gateway SKUs.
+Policy based VPNs which support IKEv1 protocols can be used with Basic Gateway SKUs only.
 
 You can have only 1 tunnel when using a PolicyBased VPN.
 
@@ -114,7 +117,7 @@ The VPN gateway settings that you chose are critical to creating a successful co
 
 ### Gateway subnet
 
-VPN Gateways require a gateway subnet. You can create a Gateway subnet before you create a VPN gateway, or you can create it during the creation of the VPN Gateway. The gateway subnet contains the IP addresses that the virtual network gateway VMs and services use. When you create your virtual network gateway, gateway VMs are deployed to the gateway subnet and configured with the required VPN gateway settings. Never deploy anything else (for example, additional VMs) to the gateway subnet. The gateway subnet must be named GatewaySubnet to work properly. Naming the gateway subnet GatewaySubnet tells Azure know that this is the subnet to deploy the virtual network gateway VMs and services to.
+VPN Gateways require a gateway subnet. You can create a Gateway subnet before you create a VPN gateway, or you can create it during the creation of the VPN Gateway. The gateway subnet contains the IP addresses that the virtual network gateway VMs and services use. When you create your virtual network gateway, gateway VMs are deployed to the gateway subnet and configured with the required VPN gateway settings. Never deploy anything else (for example, additional VMs) to the gateway subnet. The gateway subnet must be named GatewaySubnet to work properly. Naming the gateway subnet GatewaySubnet tells Azure that this is the subnet to deploy the virtual network gateway VMs and services to.
 
 When you create the gateway subnet, you specify the number of IP addresses that the subnet contains. The IP addresses in the gateway subnet are allocated to the gateway VMs and gateway services. Some configurations require more IP addresses than others.
 

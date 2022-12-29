@@ -18,7 +18,7 @@ abstract: |
   - Configure middleware to control how a request is handled
   - Respond to HTTP requests with different types of content like text and JSON
   - Send data to an Express endpoint
-iconUrl: /learn/achievements/build-web-api-nodejs-express.svg
+iconUrl: /training/achievements/build-web-api-nodejs-express.svg
 levels:
   - beginner
 roles:

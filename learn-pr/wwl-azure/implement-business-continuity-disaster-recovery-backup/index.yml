@@ -19,7 +19,7 @@ prerequisites: |
   Before taking this training, you should complete:
   - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
   - SAP HANA or NetWeaver training.
-iconUrl: /learn/achievements/9-implement-business-continuity-disaster-recovery-and-backup.svg
+iconUrl: /training/achievements/9-implement-business-continuity-disaster-recovery-and-backup.svg
 levels:
 - advanced
 roles:

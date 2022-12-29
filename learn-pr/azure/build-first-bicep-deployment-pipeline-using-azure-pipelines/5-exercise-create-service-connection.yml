@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Create a service connection
   description: Create a service principal and a service connection for a Bicep deployment pipeline.
   ms.date: 08/30/2021
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface

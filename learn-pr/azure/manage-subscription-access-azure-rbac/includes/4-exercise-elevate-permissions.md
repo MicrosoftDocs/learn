@@ -10,14 +10,14 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 
 1. Select **Azure Active Directory** > **Properties**.
 
-    ![The Azure AD Properties pane.](../media/4-azure-ad-properties.png)
+    ![Screenshot of the Azure AD Properties pane.](../media/4-azure-ad-properties.png)
 
 1. Under **Access management for Azure resources**, select **Yes**.
 
-    ![The "Access management for Azure resources" option](../media/4-access-management-azure-resources.png)
+    ![Screenshot of the "Access management for Azure resources" option](../media/4-access-management-azure-resources.png)
 
 1. Select **Save**.
-1. Sign out of the Azure portal, and sign in again to refresh your access.
+1. Sign out of the Azure portal and sign in again to refresh your access.
 
 ### Verify that you have the User Access Administrator role
 
@@ -50,4 +50,4 @@ Because you're using your own subscription, you might want to walk through the f
 1. In the Azure portal, select **Azure Active Directory** > **Properties**.
 1. Under **Access management for Azure resources**, select **No**.
 1. Select **Save**.
-1. Sign out of the Azure portal, and sign in again to refresh your access.
+1. Sign out of the Azure portal and sign in again to refresh your access.

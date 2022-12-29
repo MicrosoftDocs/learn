@@ -1,6 +1,6 @@
 You work as a database developer for the AdventureWorks organization. AdventureWorks has been selling bicycles and bicycle parts directly to end-consumers and distributors for over a decade. Their systems store information in a database that you have previously migrated to Azure Database for PostgreSQL.
 
-After having performed the migration, you want assurance that the system is performing well. You decide to use the Azure tools available to monitor the server. To alleviate the possibility of slow response times caused by contention and latency, you decide to implement read replication. You need to monitor the resulting system and compare the results with the single server architecture.
+After having performed the migration, you want assurance that the system is performing well. You decide to use the Azure tools available to monitor the server. To alleviate the possibility of slow response times caused by contention and latency, you decide to implement read replication. You need to monitor the resulting system and compare the results with the flexible server architecture.
 
 In this exercise, you'll perform the following tasks:
 

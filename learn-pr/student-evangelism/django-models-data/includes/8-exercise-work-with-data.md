@@ -59,7 +59,7 @@ To retrieve objects from a database, Django provides an `objects` property on al
 1. Retrieve all dogs in *Demo shelter* by running the following command:
 
     ```python
-    Shelter.dog_set.all()
+    shelter.dog_set.all()
     ```
 
     The `dog_set` part stores the list of all dogs for a particular shelter. Django will return a `QuerySet` object with the two dogs that we created.
@@ -74,10 +74,10 @@ To retrieve objects from a database, Django provides an `objects` property on al
     Dog.objects.get(pk=1)
     ```
 
-    The `get` function will return only one object. You can pass parameters into `get` to provide a query string. Here we use `pk`, which is a special keyword to indicate the primary key. The returned result will be Roscoe.
+    The `get` function will return only one object. You can pass parameters into `get` to provide a query string. Here we use `pk`, which is a special keyword to indicate the primary key. The returned result will be Sammy.
 
     ```bash
-    <Dog: Roscoe>
+    <Dog: Sammy>
     ```
 
 1. Retrieve all dogs in *Demo shelter* by using `filter` as shown in the following command:

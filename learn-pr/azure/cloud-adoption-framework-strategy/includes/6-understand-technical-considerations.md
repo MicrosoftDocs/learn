@@ -104,7 +104,7 @@ Your team's first adoption project likely will result in a production deployment
 To support the preceding criteria, this list provides an example of a first project for each motivation category:
 
 - **Critical business events**: When a critical business event is the primary motivation, implementing a tool like Azure Site Recovery might be a good first project. During migration, you would use a tool like Azure Migrate to quickly migrate a few low-impact datacenter assets. But during the first project, you might also first use Site Recovery as a disaster recovery tool. You would be reducing dependencies on disaster recovery assets within the datacenter before pragmatically planning the migration.
-- **Migration motivations**: When migration is the primary motivation, it's wise to start with the migration of a noncritical workload. The next module in this learning path, [Migrate to Azure through repeatable processes and common tools](/learn/modules/cloud-adoption-framework-migrate?azure-portal=true), teaches the team how to deliver that type of project.
+- **Migration motivations**: When migration is the primary motivation, it's wise to start with the migration of a noncritical workload. The next module in this learning path, [Migrate to Azure through repeatable processes and common tools](/training/modules/cloud-adoption-framework-migrate?azure-portal=true), teaches the team how to deliver that type of project.
 - **Innovation motivations**: When innovation is the primary motivation, the creation of a targeted dev/test environment can be a great first project.
 
 <!-- docutune:ignore "data migration services" -->
@@ -193,7 +193,7 @@ Watch this short video to get an overview of how the Azure Migration Program can
 
 ## Solution assessments
 
-Get assistance from a Microsoft Solution Assessment expert or qualified partner as part of a [Solution Assessment engagement](https://www.microsoft.com/solutionassessments/solutionassessments.aspx?rtc=2?azure-portal=true). Microsoft Solution Assessments can help customers gain a deeper understanding of the opportunities available in their environments to improve productivity, reduce costs, and optimize investments. These assessments use modern tools to collect the customers' data estate, analyze the deployed environment, and provide insights for data-driven recommendations to help customers determine actionable steps for digital transformations, cloud migrations, and process improvement.
+Get assistance from a Microsoft Solution Assessment expert or qualified partner as part of a [Solution Assessment engagement](https://www.microsoft.com/solutionassessments/). Microsoft Solution Assessments can help customers gain a deeper understanding of the opportunities available in their environments to improve productivity, reduce costs, and optimize investments. These assessments use modern tools to collect the customers' data estate, analyze the deployed environment, and provide insights for data-driven recommendations to help customers determine actionable steps for digital transformations, cloud migrations, and process improvement.
 
 ## Azure support
 

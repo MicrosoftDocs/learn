@@ -19,7 +19,7 @@ abstract: |
   - Ensure you are using the latest version of your framework, and its security features
   - Validate that your program dependencies and libraries are safe to use
 prerequisites: None
-iconUrl: /learn/achievements/top-5-security-items-to-consider.svg
+iconUrl: /training/achievements/top-5-security-items-to-consider.svg
 levels:
 - intermediate
 roles:

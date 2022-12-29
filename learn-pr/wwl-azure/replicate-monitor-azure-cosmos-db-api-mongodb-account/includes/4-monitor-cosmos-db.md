@@ -89,10 +89,10 @@ Azure Monitor allows us to filter further by specific **CollectionName**, **Data
 
 ## Observe rate-limiting events
 
-Operations running in an Azure Cosmos DB API for MongoDB, might return a **16500** *status code error*. This error code, indicates that a **Request rate too large** exception has occurred. This exception means that Azure Cosmos DB requests are being rate limited.
+Operations running in an Azure Cosmos DB for MongoDB, might return a **16500** *status code error*. This error code, indicates that a **Request rate too large** exception has occurred. This exception means that Azure Cosmos DB requests are being rate limited.
 
 > [!NOTE]
-> In a production environment we ***shouldn't*** see any 16500 errors. In a production environment ***Server Side retries*** should always be enabled by default in your Azure Cosmos DB API for MongoDB account.
+> In a production environment we ***shouldn't*** see any 16500 errors. In a production environment ***Server Side retries*** should always be enabled by default in your Azure Cosmos DB for MongoDB account.
 
 When provisioned throughput is used, the request units per second (RU/s) is set for the workload.  Operations (read, writes, queries) against the service consume request units(RUs). If in any given second the operations consume more RUs than the provisioned RU/s, Azure Cosmos DB will return a 16500 exception.
 

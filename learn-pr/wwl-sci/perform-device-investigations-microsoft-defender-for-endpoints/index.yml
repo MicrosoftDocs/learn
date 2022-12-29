@@ -17,7 +17,7 @@ abstract: |
   - Describe behavioral blocking by Microsoft Defender for Endpoint
 prerequisites: |
   Intermediate understanding of Windows 10.
-iconUrl: /learn/achievements/perform-device-investigations-microsoft-defender-endpoints.svg
+iconUrl: /training/achievements/perform-device-investigations-microsoft-defender-endpoints.svg
 levels:
 - intermediate
 roles:

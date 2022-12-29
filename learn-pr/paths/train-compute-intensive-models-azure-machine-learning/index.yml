@@ -13,7 +13,7 @@ prerequisites: |
   Before starting this learning path, you should be familiar with the Azure Machine Learning service and training compute-intensive machine-learning and deep-learning models.
 summary: |
   Large-scale machine-learning and deep-learning models require ample compute power. Learn when to choose GPU compute, and how different frameworks help you to make optimal use of GPU compute during preprocessing, model training, and deployment.
-iconUrl: /learn/achievements/train-compute-intensive-models-with-azure-machine-learning.svg
+iconUrl: /training/achievements/train-compute-intensive-models-with-azure-machine-learning.svg
 levels:
 - advanced
 roles:

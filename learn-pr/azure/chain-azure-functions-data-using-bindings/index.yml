@@ -17,7 +17,7 @@ abstract: |
   - Store data in Azure Cosmos DB using Azure Functions
   - Send messages to Azure Queue Storage using Azure Functions
 prerequisites: None
-iconUrl: /learn/achievements/chain-azure-functions-data-using-bindings.svg
+iconUrl: /training/achievements/chain-azure-functions-data-using-bindings.svg
 levels:
 - beginner
 roles:

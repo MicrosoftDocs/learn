@@ -39,7 +39,7 @@ The first step with any Azure Function project is to get your function running l
 
 7. **Save** the file.
 
-8. In Visual Studio Code, select **Terminal** > **New Terminal** and run the following to navigate to the root of the function and install the python requirements.
+8. In Visual Studio Code, select **Terminal** > **New Terminal** and run the following to navigate to the root of the function and install the node.js requirements.
 
     ```cmd
     cd azure-function\node
@@ -50,7 +50,7 @@ The first step with any Azure Function project is to get your function running l
 
 ::: zone pivot="csharp"
 
-4. Under **Explorer**, navigate and open **azure-function** > **dotnet**. Review the code, specifically in _Services/BusDataManagerService.cs_ and _GetBusDataFunction.cs_..
+4. Under **Explorer**, navigate and open **azure-function** > **dotnet**. Review the code, specifically in _Services/BusDataManagerService.cs_ and _GetBusDataFunction.cs_.
 
 5. Rename **`local.settings.json.template`** to **`local.settings.json`**.
 
@@ -58,7 +58,7 @@ The first step with any Azure Function project is to get your function running l
 
 7. **Save** the file.
 
-8. In Visual Studio Code, select **Terminal** > **New Terminal** and run the following to navigate to the root of the function and install the python requirements.
+8. In Visual Studio Code, select **Terminal** > **New Terminal** and run the following to navigate to the root of the function and install the C# requirements.
 
     ```cmd
     cd azure-function\dotnet

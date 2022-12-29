@@ -22,7 +22,7 @@ prerequisites: |
   - Experience with Azure virtual networks.
   - Experience with routing and routing protocols.
   - The ability to navigate the Azure portal and use Azure PowerShell.
-iconUrl: /learn/achievements/introduction-to-azure-cloud-shell.svg
+iconUrl: /training/achievements/introduction-to-azure-cloud-shell.svg
 levels:
 - beginner
 roles:

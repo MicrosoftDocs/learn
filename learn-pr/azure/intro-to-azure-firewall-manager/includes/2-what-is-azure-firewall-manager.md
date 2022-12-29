@@ -31,7 +31,7 @@ You apply firewall policies to firewalls. After you create policies, you can ass
 
 ## How to centrally manage your firewalls
 
-To centrally manage your firewalls, implement Firewall Manager. It provides the following features:
+To centrally manage your Azure Firewalls, deploy Firewall Manager. It provides the following features:
 
 - **Centralized deployment and configuration**. This allows you to configure multiple Azure Firewall instances. These multiple instances potentially can span Azure subscriptions and regions.
 - **Centralized route management**. This bypasses the requirement to manually create user-defined routes on spoke virtual networks.
@@ -39,9 +39,11 @@ To centrally manage your firewalls, implement Firewall Manager. It provides the 
    > [!IMPORTANT]
    > Centralized route management is only available on secured virtual hub architecture.
 
-- **Hierarchical policies**. These enable central management of Azure Firewall policies across multiple secured virtual hubs. Your IT security team then can create global firewall policies and apply them across your organization.
-- **Third-party integration**. This supports integration of third-party security as a service provider.  
+- **Hierarchical policies**<br>These enable central management of Azure Firewall policies across multiple secured virtual hubs. Your IT security team then can create global firewall policies and apply them across your organization.
+- **Third-party integration**<br>This supports integration of third-party security as a service provider.  
 - **Cross-region availability**. This allows you to create Azure Firewall policies in one region and apply them in other regions.
+- **DDoS Protection Plan**<br>You can associate your virtual networks with a DDoS protection plan within Azure Firewall Manager.
+- **Manage Web Application Firewall policies**.<br>You can centrally create and associate Web Application Firewall (WAF) policies for your application delivery platforms, including Azure Front Door and Azure Application Gateway.
 
 You can implement Firewall Manager in one of two architectures, which the following table describes.
 

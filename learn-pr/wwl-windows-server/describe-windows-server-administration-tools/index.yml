@@ -23,7 +23,7 @@ prerequisites: |
   - Basic security best practices.
   - Windows client operating systems such as Windows 10.
   - Working with command-line tools.
-iconUrl: /learn/achievements/describe-windows-server-administration-tools.svg
+iconUrl: /training/achievements/describe-windows-server-administration-tools.svg
 levels:
 - intermediate
 roles:

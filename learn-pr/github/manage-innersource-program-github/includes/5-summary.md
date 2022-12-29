@@ -11,7 +11,7 @@ You learned about:
 - Measuring the success of InnerSource within your organization
 - Distributing your InnerSource toolkit
 
-Now that you have an InnerSource program together, learn to [Create an open-source program by using GitHub best practices](/learn/modules/create-open-source-program-github/?azure-portal=true).
+Now that you have an InnerSource program together, learn to [Create an open-source program by using GitHub best practices](/training/modules/create-open-source-program-github/?azure-portal=true).
 
 ## Learn more
 

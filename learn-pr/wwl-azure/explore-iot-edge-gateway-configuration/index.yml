@@ -25,7 +25,7 @@ prerequisites: |
   - Describe the IoT Edge runtime and modules.
   - Describe the configuration requirements for an Azure IoT Edge device deployment.
   - Describe the configuration requirements for a transparent gateway device.
-iconUrl: /learn/achievements/iot-edge-gateway-configuration.svg
+iconUrl: /training/achievements/iot-edge-gateway-configuration.svg
 levels:
 - intermediate
 roles:

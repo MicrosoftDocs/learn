@@ -6,13 +6,13 @@ In this exercise, you'll declare a variable, assign it a value, retrieve its val
 
 ### Step 1: Delete all of the code in the code editor
 
-Use your mouse to highlight all of the text in the code editor, then select the backspace or `del` key to remove everything.
+Use your mouse to highlight all of the text in the code editor, then select the `backspace` or `del` key to remove everything.
 
 Later, we'll learn a different, less destructive technique for disabling the lines of code you no longer want to execute.
 
 ### Step 2: Declare a variable and assign a value to it
 
-To assign a value to a variable, you use the *assignment operator*, which is a single equals character `=`.
+To assign a value to a variable, you'll use the *assignment operator*, which is a single equals character `=`.
 
 Add the following code in the code editor:
 
@@ -21,7 +21,7 @@ string firstName;
 firstName = "Bob";
 ```
 
-Assigning a value is also referred to as "setting the variable", or simply, a "set" operation.
+Assigning a value is also referred to as "setting the variable", or simply a "set" operation.
 
 ### Step 3: Attempt to improperly assign a value to a variable
 
@@ -34,7 +34,7 @@ string firstName;
 "Bob" = firstName;
 ```
 
-Now, run the code. The first error you would see in the output console:
+Now, run the code. This is the first error you would get in the output console:
 
 ```output
 (2,1): error CS0131: The left-hand side of an assignment must be a variable, property or indexer
@@ -51,19 +51,19 @@ int firstName;
 firstName = "Bob";
 ```
 
-Now, run the code. You'll see the following error in the output console:
+Now, run the code. You'll get the following error in the output console:
 
 ```output
 (2,9): error CS0029: Cannot implicitly convert type 'string' to 'int'
 ```
 
-The error message hints at what the C# compiler tries to do behind the scenes. It tried to "implicitly convert" the string "Bob" to be an int value; however, that is impossible. In other words, you can't put a square peg into a round hole. Even so, C# tried to force the square peg to fit into the round hole, but there's no numeric equivalent for the word "Bob", so it failed.
+The error message hints at what the C# compiler tries to do behind the scenes. It tried to "implicitly convert" the string "Bob" to be an int value; however, that's impossible. In other words, you can't put a square peg into a round hole. Even so, C# tried to force the square peg to fit into the round hole, but there's no numeric equivalent for the word "Bob", so it failed.
 
 You'll learn more about implicit and explicit type conversion in other modules.
 
 ## Step 5: Retrieve a value you stored in the variable
 
-To retrieve a value from a variable, you just use the name of the variable. This example will set a variable's value, then retrieve that value and print it to the console.
+To retrieve a value from a variable, you can just use the name of the variable. This example will set a variable's value, then retrieve that value and print it to the console.
 
 Modify the code you wrote in Step 4 to match the following code:
 
@@ -73,13 +73,13 @@ firstName = "Bob";
 Console.WriteLine(firstName);
 ```
 
-Now, run the code. You'll see the following result in the output console:
+Now, run the code. You'll get the following result in the output console:
 
 ```output
 Bob
 ```
 
-Retrieving a value from a variable is also referred to as "getting the variable", or simply, a "get" operation.
+Retrieving a value from a variable is also referred to as "getting the variable", or simply a "get" operation.
 
 ### Step 6: Reassign the value of a variable
 
@@ -99,7 +99,7 @@ firstName = "Grant";
 Console.WriteLine(firstName);
 ```
 
-Now, run the code. You'll see the following result in the output console:
+Now, run the code. You'll get the following result in the output console:
 
 ```output
 Bob
@@ -119,7 +119,7 @@ string firstName;
 Console.WriteLine(firstName);
 ```
 
-Now, run the code. You'll see the following result in the output console:
+Now, run the code. You'll get the following result in the output console:
 
 ```output
 (2,19): error CS0165: Use of unassigned local variable 'firstName'
@@ -136,7 +136,7 @@ string firstName = "Bob";
 Console.WriteLine(firstName);
 ```
 
-Now, run the code. You should see the following output:
+Now, run the code. You should get the following output:
 
 ```output
 Bob
@@ -144,10 +144,10 @@ Bob
 
 ## Recap
 
-Here's the main takeaways you learned about working with variables so far:
+Here are the main takeaways you learned about working with variables so far:
 
-- You must assign (set) a value to a variable before you can retrieve (get) a value from a variable.
+- You must assign (*set*) a value to a variable before you can retrieve (*get*) a value from a variable.
 - You can initialize a variable by assigning a value to the variable at the point of declaration.
 - Assignment happens from right to left.
-- You use a single equals character as the assignment operator.
-- To retrieve the value from the variable, you merely use the variable's name.
+- You can use a single equals character as the assignment operator.
+- To retrieve the value from the variable, you can merely use the variable's name.

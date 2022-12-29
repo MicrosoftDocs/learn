@@ -1,4 +1,4 @@
-To understand the deployment process, this module provides an Express.js sample. You must fork it on GitHub and then clone it to your local computer. After the source code is on your local computer, you deploy the app to Azure App Service from Visual Studio Code.
+To understand the deployment process, this module provides an Express.js sample. You need to fork it on GitHub and then clone it to your local computer. After the source code is on your local computer, you'll deploy the app to Azure App Service from Visual Studio Code.
 
 In this exercise, you'll:
 
@@ -60,11 +60,11 @@ The local project has several folders. Each folder represents a Learn module. Th
 ## Deploy the sample from your local computer to App Service
 
 1. In Visual Studio Code, select <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd> to open the **Azure** pane on the left.
-1. In the **App Service** section, find and expand the subscription's App Service resource.
+1. In the **Resources** section, find and expand the subscription's **App Service** node.
 1. The app you created in the previous exercise, such as `jimb-rentals`, should be listed.
-   
+  
    If the app isn't listed, try the following steps:
-   
+  
    1. At the top of this Learn unit, check that you still have time for your sandbox.
    1. In Visual Studio Code, sign out of Azure. Then sign in again to make sure all subscriptions are displayed.
 1. Right-click the app and select **Deploy to Web App**.

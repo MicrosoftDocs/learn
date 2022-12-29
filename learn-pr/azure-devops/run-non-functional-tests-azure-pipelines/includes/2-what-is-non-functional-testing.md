@@ -1,4 +1,4 @@
-In [Run functional tests in Azure Pipelines](/learn/modules/run-functional-tests-azure-pipelines?azure-portal=true), you and the Tailspin team added Selenium UI tests to the pipeline. UI tests are a form of *functional testing*. In this part, you explore the kinds of *nonfunctional* tests you can run in a pipeline.
+In [Run functional tests in Azure Pipelines](/training/modules/run-functional-tests-azure-pipelines?azure-portal=true), you and the Tailspin team added Selenium UI tests to the pipeline. UI tests are a form of *functional testing*. In this part, you explore the kinds of *nonfunctional* tests you can run in a pipeline.
 
 The team first defines nonfunctional tests. They talk about some types of these tests. Then they decide on a nonfunctional test to add to their pipeline.
 
@@ -18,7 +18,7 @@ The team is having their daily standup meeting. Mara and Amita are demoing the c
 
 ## How do nonfunctional tests compare to functional tests?
 
-In [Run functional tests in Azure Pipelines](/learn/modules/run-functional-tests-azure-pipelines?azure-portal=true), we defined functional tests and nonfunctional tests.
+In [Run functional tests in Azure Pipelines](/training/modules/run-functional-tests-azure-pipelines?azure-portal=true), we defined functional tests and nonfunctional tests.
 
 In short, _functional tests_ verify that each function of the software does what it should. In other words, functional tests verify an application's functionality.
 

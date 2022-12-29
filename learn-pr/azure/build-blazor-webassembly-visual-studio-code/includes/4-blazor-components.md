@@ -16,11 +16,11 @@ At compile time, each Razor component is built into a .NET class. The class incl
 
 ## Try the Counter
 
-In the running app, navigate to the Counter page by clicking the Counter tab in the sidebar on the left. The following page should then be displayed.
+In the running app, navigate to the Counter page by clicking the Counter tab in the sidebar on the left. The following page should display:
 
 ![Counter Screenshot.](../media/counter.png)
 
-Select the **Click me** button to increment the count without a page refresh. Incrementing a counter in a webpage normally requires writing JavaScript, but with Blazor you can use C#.
+Select the **Click me** button to increment the count without a page refresh. Incrementing a counter in a webpage normally requires writing JavaScript, but with Blazor, you can use C#.
 
 You can find the implementation of the Counter component at `Pages/Counter.razor`.
 
@@ -45,7 +45,7 @@ You can find the implementation of the Counter component at `Pages/Counter.razor
 
 A request for `/counter` in the browser, as specified by the `@page` directive at the top, causes the `Counter` component to render its content.
 
-Each time the **Click me** button is selected:
+Each time you select the **Click me** button:
 
 - The onclick event is fired.
 - The IncrementCount method is called.

@@ -18,7 +18,7 @@ abstract: |
   *  Identify the Azure limitations for Azure Virtual Desktop.
   *  Describe the options for Azure Virtual Desktop pricing.
 prerequisites: ""
-iconUrl: /learn/achievements/1-azure-virtual-desktop-architecture.svg
+iconUrl: /training/achievements/1-azure-virtual-desktop-architecture.svg
 levels:
 - intermediate
 roles:

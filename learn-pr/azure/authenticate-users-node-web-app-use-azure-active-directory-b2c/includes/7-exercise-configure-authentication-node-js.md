@@ -232,7 +232,7 @@ After you make all the changes required in index.js file, it should look similar
      * By default, MSAL.js passes a randomly generated unique state parameter value in the authentication requests.
      * The state parameter can also be used to encode information of the app's state before redirect. 
      * You can pass the user's state in the app, such as the page or view they were on, as input to this parameter.
-     * For more information, visit: https://docs.microsoft.com/azure/active-directory/develop/msal-js-pass-custom-state-authentication-request
+     * For more information, visit: https://learn.microsoft.com/azure/active-directory/develop/msal-js-pass-custom-state-authentication-request
      * In this scenario, the states also serve to show the action that was requested of B2C since only one redirect URL is possible. 
      */
     

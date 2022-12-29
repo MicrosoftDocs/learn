@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.plan-microsoft-sentinel-deployment-sap
+metadata:
+  title: Plan to deploy the Microsoft Sentinel solution for SAP
+  description: "Understand the Microsoft Sentinel solution for SAP. The module covers the roles of the team members who will work together to design, deploy and implement the Microsoft Sentinel solution for SAP."
+  ms.date: 11/29/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Plan to deploy the Microsoft Sentinel solution for SAP
+summary: Understand the Microsoft Sentinel solution for SAP. The module covers the roles of the team members who will work together to design, deploy and implement the Microsoft Sentinel solution for SAP.
+abstract: |
+  After completing this module, you'll be able to:
+  - Understand the benefits of deploying the Microsoft Sentinel solution for SAP
+  - Plan to deploy the Microsoft Sentinel solution for SAP
+  - Prepare your environment for the Microsoft Sentinel solution for SAP
+  - Validate that your environment is ready to deploy the Microsoft Sentinel solution for SAP
+prerequisites: |
+  - Basic understanding of Microsoft Sentinel
+  - SAP system management
+iconUrl: /training/achievements/plan-microsoft-sentinel-deployment-sap.svg
+levels:
+- intermediate
+roles:
+- administrator
+- functional-consultant
+- security-engineer
+- solution-architect
+products:
+- azure
+- microsoft-sentinel
+subjects:
+- cloud-computing
+- security
+- threat-protection
+units:
+- learn.wwl.plan-microsoft-sentinel-deployment-sap.introduction
+- learn.wwl.plan-microsoft-sentinel-deployment-sap.describe-microsoft-sentinel-solution-for-sap
+- learn.wwl.plan-microsoft-sentinel-deployment-sap.describe-deployment-process
+- learn.wwl.plan-microsoft-sentinel-deployment-sap.clarify-roles-required-to-deploy-solution
+- learn.wwl.plan-microsoft-sentinel-deployment-sap.explore-how-to-plan-prepare-for-security-operations
+- learn.wwl.plan-microsoft-sentinel-deployment-sap.knowledge-check
+- learn.wwl.plan-microsoft-sentinel-deployment-sap.summary
+badge:
+  uid: learn.wwl.plan-microsoft-sentinel-deployment-sap.badge

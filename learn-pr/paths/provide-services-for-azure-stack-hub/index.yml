@@ -14,7 +14,7 @@ prerequisites: |
   *   Conceptual knowledge of messaging, events, code deployments, configurations, API management, and app caching.
 summary: |
   This learning path helps you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
-iconUrl: /learn/achievements/provide-services-for-azure-stack-hub.svg
+iconUrl: /training/achievements/provide-services-for-azure-stack-hub.svg
 levels:
 - advanced
 roles:

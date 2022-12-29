@@ -3,7 +3,7 @@ uid: learn.wwl.administer-remote-computers-use-windows-powershell
 metadata:
   title: Administer remote computers by using Windows PowerShell
   description: Administer remote computers by using Windows PowerShell
-  ms.date: 08/01/2022
+  ms.date: 11/10/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   *   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
 summary: |
   This learning path covers remoting mainly in its default configuration, using HTTP on port 5985\. It describes how to configure remoting to allow for—or require—encryption based on Secure Sockets Layer (SSL).
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/administer-remote-computers-use-windows-powershell.svg
 levels:
 - intermediate
 roles:
@@ -31,7 +31,6 @@ products:
 - azure-powershell
 - azure-virtual-machines
 - m365
-- vs-code
 subjects:
 - architecture
 - development-tools

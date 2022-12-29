@@ -20,7 +20,7 @@ prerequisites: |
   - Working knowledge of Azure and the Azure portal
   - Familiarity with Azure Batch
   - Experience developing .NET apps
-iconUrl: /learn/achievements/create-an-app-to-run-parallel-compute-jobs-in-azure-batch.svg
+iconUrl: /training/achievements/create-an-app-to-run-parallel-compute-jobs-in-azure-batch.svg
 levels:
 - intermediate
 roles:

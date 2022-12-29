@@ -18,9 +18,9 @@ This module explains what Azure virtual machine scale sets do, how they work, an
 
 In this module, you'll:
 
-- Learn what Azure virtual machine scale sets are and the functionality they provide
-- Determine whether Azure virtual machine scale sets meet the needs of your organization
-- Understand the difference between using virtual machine scale sets and scaling up individual instances
+- Learn what Azure virtual machine scale sets are and the functionality they provide.
+- Determine whether Azure virtual machine scale sets meet the needs of your organization.
+- Understand the difference between using virtual machine scale sets and scaling up individual instances.
 
 ## Prerequisites
 

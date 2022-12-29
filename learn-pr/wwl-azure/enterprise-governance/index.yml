@@ -17,7 +17,7 @@ abstract: |
   - Configure and deploy access to services using RBAC
 prerequisites: |
   - None
-iconUrl: /learn/achievements/enterprise-governance.svg
+iconUrl: /training/achievements/enterprise-governance.svg
 levels:
 - intermediate
 roles:

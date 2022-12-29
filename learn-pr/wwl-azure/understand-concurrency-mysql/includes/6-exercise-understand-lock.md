@@ -3,25 +3,32 @@
 
 In order to complete this exercise, you must have:
 
-- Created a resource group (see Module 1, Unit 5)
-- Created an Azure Database for MySQL Flexible Server (see Module 1, Unit 5)
-- Downloaded and installed MySQL Workbench (see Module 2, Unit 5)
-- Created a Zoo database (see Module 2, Unit 5)
+- Created a resource group (see Module 1, Unit 5).
+- Created an Azure Database for MySQL Flexible Server (see Module 1, Unit 5).
+- Downloaded and installed MySQL Workbench (see Module 2, Unit 5).
+- Created a Zoo database (see Module 2, Unit 5).
 - Downloaded the scripts for this exercise from [GitHub](https://github.com/MicrosoftLearning/mslearn-mysql/tree/main/labfiles).
+
+> [!TIP]
+> If you stopped your Azure Database for MySQL server after completing the last lab, restart it now.
 
 ## Preparation - Configure MySQL Workbench
 
 1. Open MySQL Workbench and from the top menu select **Edit** > **Preferences**.
 1. From the left navigation under **General Editors**, select **Others**.
 1. Under **Others**, check **Allow more than one instance of MySQL Workbench to run**.
-    :::image type="content" source="../media/workbench-preferences.png" alt-text="Screenshot showing the Workbench Preferences, Others settings page." lightbox="../media/workbench-preferences.png":::
+
+    :::image type="content" source="../media/workbench-preferences.png" alt-text="Screenshot showing the My SQL Workbench Preferences, Others settings page." lightbox="../media/workbench-preferences.png":::
+
 1. From the left navigation, select **SQL Editor**.
-1. Under MySQL Session, change the **DBMS connection read timeout interval (in seconds):** to 300. (The default value was 30 seconds.)
+1. Under MySQL Session, change the **DBMS connection read timeout interval (in seconds):** to 300. (The default value is 30 seconds.)
+
+    :::image type="content" source="../media/workbench-preferences-sql-editor.png" alt-text="Screenshot showing the Workbench Preferences, S Q L Editor settings page." lightbox="../media/workbench-preferences-sql-editor.png":::
+
 1. Select **OK**, and then close MySQL Workbench.
 1. Open MySQL Workbench and connect to your Azure Database for MySQL Flexible Server.
 1. Select **File**, **Open SQL Script**, and select **Lab5_repopulateAnimals.sql**.
-1. Select **Query** > **Execute (All or Selection)**. This creates the stored procedure RepopulateAnimals.
-    :::image type="content" source="../media/workbench-preferences-sql-editor.png" alt-text="Screenshot showing the Workbench Preferences, S Q L Editor settings page." lightbox="../media/workbench-preferences-sql-editor.png":::
+1. Select **Query** > **Execute (All or Selection)**. This creates the stored procedure **RepopulateAnimals**.
 
 ## Understand transactions
 
@@ -30,11 +37,10 @@ In order to complete this exercise, you must have:
 1. Highlight and run the section - **Repopulate animal table**. This makes sure you start with clean data.
 1. Highlight and run the section - **Query autocommit**. This returns 1, indicating that **autocommit** is ON.
 1. Highlight and run the section - **When autocommit is on each SQL statement is a transaction**.
-1. **Highlight and run the section -** Name has been changed to Vampire bat #1. This shows that the previous UPDATE statement has been committed.
-1. Highlight and run the section - **Explicit transaction**. An explicit transaction starts with START TRANSACTION and finishes with COMMIT; The SELECT statement returned the Name change, indicating that the change has been committed.
-1. Highlight and run the section - **A transaction is Atomic**. The SELECT statement returned the result set with the additional row. ALL columns in the statement are included because the statement is atomic - either everything is committed, or nothing is committed.
+1. Highlight and run the section - **Name has been changed to Vampire bat #1**. This shows that the previous `UPDATE` statement has been committed.
+1. Highlight and run the section - **Explicit transaction**. An explicit transaction starts with `START TRANSACTION` and finishes with `COMMIT`; The `SELECT` statement returned the Name change, indicating that the change has been committed.
+1. Highlight and run the section - **A transaction is Atomic**. The `SELECT` statement returned the result set with the additional row. All columns in the statement are included because the statement is atomic - either everything is committed, or nothing is committed.
 1. Highlight and run the section - **Rollback the transaction**.
-1. Highlight and run the section - Verify that the changes have been rolled back. This verifies that the row for Animal ID 29 was not committed - and that all columns were rolled back.
 1. Leave MySQL Workbench open, ready for the next exercise.
 
 ## Understand locking
@@ -64,6 +70,6 @@ In order to complete this exercise, you must have:
 1. Open a second instance of MySQL Workbench and connect to your Azure Database for MySQL flexible server. This instance of MySQL Workbench will be referred to as **Instance B**.
 1. In Instance A, highlight and run the sections - **Use ZooDb and avoid locks timing out**.
 1. In Instance B, highlight and run the sections - **Use ZooDb and avoid locks timing out**.
-1. In Instance A, highlight and run the section - **Repopulate Animal table, and start a transaction**. This starts a transaction but does not finish it with either COMMIT or ROLLBACK.
+1. In Instance A, highlight and run the section - **Repopulate Animal table, and start a transaction**. This starts a transaction but does not finish it with either `COMMIT` or `ROLLBACK`.
 1. In Instance B, highlight and run the section - **Two updates in the reverse order to Instance A**.
 1. In Instance A, highlight and run the section - **The server rolls back one of the two transactions**. The server automatically recognizes the deadlock and rolls back one of the two transactions. The select statement only returns the committed transactions.

@@ -20,7 +20,7 @@ abstract: |
   - Understand the basic components of the service.
 prerequisites: | 
   - Experience managing a VMware infrastructure.
-iconUrl: /learn/achievements/intro-azure-vmware-solution.svg
+iconUrl: /training/achievements/intro-azure-vmware-solution.svg
 levels:
 - beginner
 roles:

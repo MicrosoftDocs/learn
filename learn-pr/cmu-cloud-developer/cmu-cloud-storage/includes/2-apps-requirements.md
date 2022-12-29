@@ -8,7 +8,7 @@ Data can also enable a service. Almost any type of dynamic web service that resp
 
 ## Application requirements
 
-Different applications have different requirements of storage systems. Netflix, for example, needs to serve high-bandwidth video to millions of users across the countries in which it operates. Bing search, on the other hand, must analyze a query and retrieve accurate results for that query within a very short period of time. In this section, we will look briefly at the various requirements imposed by applications on storage systems:
+Different applications have different requirements of storage systems. Netflix, for example, needs to serve high-bandwidth video to millions of users across the countries/regions in which it operates. Bing search, on the other hand, must analyze a query and retrieve accurate results for that query within a very short period of time. In this section, we will look briefly at the various requirements imposed by applications on storage systems:
 
 - **Capacity**: Storage systems must be able to handle the capacity requirements for an application. A storage system should be able to handle the entire volume of data that is required by the application, and must also be scalable in some form to meet the near-term and future requirements of the application.
 - **Performance**: Storage systems should be able to handle application expectations of performance. This can be broadly broken down into the following requirements:

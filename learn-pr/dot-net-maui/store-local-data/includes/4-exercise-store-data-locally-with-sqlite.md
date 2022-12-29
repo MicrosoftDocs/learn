@@ -125,7 +125,7 @@ In this exercise, you'll use SQLite to store information locally with an applica
 
     private SQLiteConnection conn;
     ...
-    private Init()
+    private void Init()
     {
        if (conn != null)
           return;

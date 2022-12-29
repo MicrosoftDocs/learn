@@ -177,7 +177,7 @@ We're now going to build the part of our English-language teaching app that focu
                     return imageUrl;
                 }
                 else
-                    return "https://docs.microsoft.com/learn/windows/build-internet-connected-windows10-apps/media/imagenotfound.png";
+                    return "https://learn.microsoft.com/training/windows/build-internet-connected-windows10-apps/media/imagenotfound.png";
             }
     
             static SearchResult PerformBingImageSearch(string searchTerms)
@@ -237,7 +237,7 @@ We're now going to build the part of our English-language teaching app that focu
 
     ![Screen shot of the Nuget Package Manager with Newtonsoft.Json selected.](../media/wpf-image-search2.png)
 
-    For more information about NuGet, see the Microsoft Learn module [Getting started with Visual Studio for Windows 10 app development](/learn/modules/get-started-with-visual-studio-for-windows10-app-dev/) in this learning path.
+    For more information about NuGet, see the Microsoft Learn module [Getting started with Visual Studio for Windows 10 app development](/training/modules/get-started-with-visual-studio-for-windows10-app-dev/) in this learning path.
 
 4. Now we can define our UI. The UI will be simple for now, consisting of only a **TextBox** (for entering search terms) and an **Image** control (for displaying the image). You can create the UI yourself, or copy the following XAML code and paste it into `MainWindow.xaml`, replacing everything that's already there:
 
@@ -345,7 +345,7 @@ We're now going to build the part of our English-language teaching app that focu
                 }
                 else
                 {
-                    return "https://docs.microsoft.com/learn/windows/build-internet-connected-windows10-apps/media/imagenotfound.png";
+                    return "https://learn.microsoft.com/training/windows/build-internet-connected-windows10-apps/media/imagenotfound.png";
                 }
             }
     
@@ -409,7 +409,7 @@ We're now going to build the part of our English-language teaching app that focu
 
     ![Screen shot of the Nuget Package Manager with Newtonsoft.Json selected.](../media/wpf-image-search2.png)
 
-    For more information about NuGet, see the Microsoft Learn module [Getting started with Visual Studio for Windows 10 app development](/learn/modules/get-started-with-visual-studio-for-windows10-app-dev/) in this learning path.
+    For more information about NuGet, see the Microsoft Learn module [Getting started with Visual Studio for Windows 10 app development](/training/modules/get-started-with-visual-studio-for-windows10-app-dev/) in this learning path.
 
 4. Now we can define our UI. The UI will be simple for now, consisting of only a **TextBox** (for entering search terms) and a **PictureBox** control (for displaying the image). Select **Form1.cs** and drag **TextBox** and **PictureBox** controls from the Toolbox. Name the **TextBox** control **searchTerms** and the **PictureBox** control **foundImage**.
 
@@ -506,7 +506,7 @@ We're now going to build the part of our English-language teaching app that focu
                     return imageUrl;
                 }
                 else
-                    return "https://docs.microsoft.com/learn/windows/build-internet-connected-windows10-apps/media/imagenotfound.png";
+                    return "https://learn.microsoft.com/training/windows/build-internet-connected-windows10-apps/media/imagenotfound.png";
             }
     
             static SearchResult PerformBingImageSearch(string searchTerms)

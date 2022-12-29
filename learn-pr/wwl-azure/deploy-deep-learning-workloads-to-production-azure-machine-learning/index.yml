@@ -17,7 +17,7 @@ abstract: |
   - To deploy Triton as a managed online endpoint
 prerequisites: |
   Before starting this module, you should be familiar with the Azure Machine Learning service and training machine learning and deep learning models.
-iconUrl: /learn/achievements/3-deploy-deep-learning-workloads-to-production-azure.svg
+iconUrl: /training/achievements/3-deploy-deep-learning-workloads-to-production-azure.svg
 levels:
 - advanced
 roles:

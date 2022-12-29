@@ -18,7 +18,7 @@ abstract: |
   *  Configure Azure Virtual Desktop session hosts using Microsoft Bastion.
   *  Monitor communication between a virtual machine and an endpoint.
 prerequisites: ""
-iconUrl: /learn/achievements/1-implement-and-manage-networking-for-azure-virtual-desktop.svg
+iconUrl: /training/achievements/1-implement-and-manage-networking-for-azure-virtual-desktop.svg
 levels:
 - intermediate
 roles:

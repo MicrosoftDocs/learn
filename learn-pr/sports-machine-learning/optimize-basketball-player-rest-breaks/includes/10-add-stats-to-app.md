@@ -1,8 +1,8 @@
-Now that we have successfully added the players to the bench, we need to show the coach what the players' starting PER numbers are so that the coach can decide which five players should compose the starting lineup. 
+Now that we've successfully added the players to the bench, we need to show the coach what the players' starting PER numbers are so that the coach can decide which five players should compose the starting lineup. 
 
 ## Add the initial PER stats
 
-Like before, we can revisit the *index.html* file to find there is a `div` with the ID `playerCards` that we can use to show the PER stats for each player. And, like we did when we dynamically created the player buttons, we can dynamically create a `div` for each player to represent the players' PER for that quarter.
+Like before, we can revisit the *index.html* file to find out if there's a `div` with the ID `playerCards` that we can use to show the PER stats for each player. And, like we did when we dynamically created the player buttons, we can dynamically create a `div` for each player to represent the players' PER for that quarter.
 
 ```javascript
 // This function is called at the beginning of the game play to initialize

@@ -11,15 +11,15 @@ You can purchase Azure access directly from Microsoft by signing up on the [Azur
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWK1QU]
 
-For more information on how to create an Azure account, see the [Create an Azure account](/learn/modules/create-an-azure-account/?azure-portal=true) learning module.
+For more information on how to create an Azure account, see the [Create an Azure account](/training/modules/create-an-azure-account/?azure-portal=true) learning module.
 
 ## What is the Azure free account?
 
 The Azure free account includes:
 
- -  Free access to popular Azure products for 12 months.
- -  A credit to spend for the first 30 days.
- -  Access to more than 25 products that are always free.
+- Free access to popular Azure products for 12 months.
+- A credit to spend for the first 30 days.
+- Access to more than 40 products that are always free.
 
 The Azure free account is an excellent way for new users to get started and explore. To sign up, you need a phone number, a credit card, and a Microsoft or GitHub account. The credit card information is used for identity verification only. You won't be charged for any services until you upgrade to a paid subscription.
 

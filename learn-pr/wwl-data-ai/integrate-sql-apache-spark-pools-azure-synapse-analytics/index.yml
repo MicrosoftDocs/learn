@@ -27,7 +27,7 @@ prerequisites: |
   - Data Fundamentals
   - Introduction to Azure Data Factory
   - Introduction to Azure Synapse Analytics
-iconUrl: /learn/achievements/integrate-sql-and-apache-spark-pools-in-azure-synapse-analytics.svg
+iconUrl: /training/achievements/integrate-sql-and-apache-spark-pools-in-azure-synapse-analytics.svg
 levels:
 - intermediate
 roles:

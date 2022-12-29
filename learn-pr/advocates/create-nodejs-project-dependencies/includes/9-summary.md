@@ -9,5 +9,5 @@ Finally, in the last unit of the module, you learned about the package.json file
 ## Additional resources
 
 - Review the official Node.js [docs](https://nodejs.org/en/docs/)
-- Check out a great community site for [Node.js](https://nodejs.dev/learn)
+- Check out a great community site for [Node.js](https://nodejs.dev/en/learn)
 - Try [Visual Studio Code](https://code.visualstudio.com) for editing text and code files

@@ -16,7 +16,7 @@ abstract: |
   *   Choose between slowly changing dimension types
 prerequisites: |
   - Before taking this module, it is recommended that you complete Data Fundamentals.
-iconUrl: /learn/achievements/azure-synapse-analytics-pipelines.svg
+iconUrl: /training/achievements/azure-synapse-analytics-pipelines.svg
 levels:
 - intermediate
 roles:

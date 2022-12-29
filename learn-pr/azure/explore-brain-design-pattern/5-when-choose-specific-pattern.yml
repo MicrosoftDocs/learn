@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.explore-design-brain-patterns.when-choose-specific-pattern
+title: When to choose a specific pattern
+metadata:
+  title: When to choose a specific pattern
+  description: This unit goes into detail about when to choose a specific brain design pattern.
+  ms.date: 10/18/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-when-choose-specific-pattern.md)]

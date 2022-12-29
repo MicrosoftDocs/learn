@@ -1,4 +1,4 @@
-After you have published a pipeline, you can initiate it on demand through its REST endpoint, or you can have the pipeline run automatically based on a periodic schedule or in response to data updates.
+After you've published a pipeline, you can initiate it on demand through its REST endpoint, or you can have the pipeline run automatically based on a periodic schedule or in response to data updates.
 
 ## Scheduling a pipeline for periodic intervals
 

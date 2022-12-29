@@ -19,8 +19,8 @@ prerequisites: |
   Before starting this module, you should already have:
   - Familiarity with Azure and the Azure portal.
   - Experience programming with C# or Python.
-  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/learn/paths/csharp-first-steps/) or [Take your first steps with Python](/learn/paths/python-first-steps/) learning path first.
-iconUrl: /learn/achievements/azure-video-indexer-analyze-video.svg
+  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path first.
+iconUrl: /training/achievements/azure-video-indexer-analyze-video.svg
 levels:
 - intermediate
 roles:

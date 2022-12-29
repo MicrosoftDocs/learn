@@ -23,7 +23,7 @@ prerequisites: |
   - Basic knowledge of 5G technologies
   - Basic understanding of Azure private multi-access edge compute (MEC), Azure Stack Edge, Azure Arc, Azure Sphere, Azure IoT Edge, Azure IoT Hub, Azure Machine Learning, Azure Digital Twins,  Azure Time Series Insights, and Azure Data Lake Storage 
 
-iconUrl: /learn/achievements/student-evangelism/5g-business-models.svg
+iconUrl: /training/achievements/student-evangelism/5g-business-models.svg
 badge:
   uid: learn.oxford.5g-business-models.badge
 levels:

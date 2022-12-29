@@ -1,12 +1,12 @@
-When you have a Cosmos DB container with analytical store support, you can create a linked service in an Azure Synapse Analytics workspace to connect to it.
+When you have an Azure Cosmos DB container with analytical store support, you can create a linked service in an Azure Synapse Analytics workspace to connect to it.
 
-To create a linked service to a Cosmos DB analytical data store, use Azure Synapse Studio, and add a linked service on the **Data** page by selecting the **Connect to external data** option, as shown here:
+To create a linked service to an Azure Cosmos DB analytical data store, use Azure Synapse Studio, and add a linked service on the **Data** page by selecting the **Connect to external data** option, as shown here:
 
-![A screenshot of Azure Synapse Studioshowing the Connect to external data page.](../media//add-cosmos-db-link.png)
+![A screenshot of Azure Synapse Studio showing the Connect to external data page.](../media/add-cosmos-db-link.png)
 
-As you complete the steps to create your linked service, select the type of Cosmos DB account (SQL or MongoDB) and then assign your linked service a meaningful name and provide the necessary information to connect to your Cosmos DB database.
+As you complete the steps to create your linked service, select the type of Azure Cosmos DB account and then assign your linked service a meaningful name and provide the necessary information to connect to your Azure Cosmos DB database.
 
-To connect to the Cosmos DB database, you can use any of the following authentication options:
+To connect to the Azure Cosmos DB database, you can use any of the following authentication options:
 
 - **Account key**: Specify an authentication key for your Cosmos DB account.
 - **Service Principal**: Use the identity of the Azure Synapse Analytics service.
@@ -16,9 +16,9 @@ To connect to the Cosmos DB database, you can use any of the following authentic
 > [!TIP]
 > For more information about using managed identities in Azure Active Directory, see [What are managed identities for Azure resources?](/azure/active-directory/managed-identities-azure-resources/overview)
 
-After creating a linked service, the Cosmos DB database and its containers will be shown in the **Data** page of Azure Synapse Studio, as shown here:
+After creating a linked service, the Azure Cosmos DB database and its containers will be shown in the **Data** page of Azure Synapse Studio, as shown here:
 
-![A screenshot of Azure Synapse Studio showing the Data page with a Cosmos DB linked service.](../media/linked-service.png)
+![A screenshot of Azure Synapse Studio showing the Data page with an Azure Cosmos DB linked service.](../media/linked-service.png)
 
 > [!NOTE]
 >The user interface differentiates between containers with analytical store support and those without by using the following icons:

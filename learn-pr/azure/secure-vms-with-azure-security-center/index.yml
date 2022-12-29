@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Basic familiarity with Azure services, particularly Microsoft Defender for Cloud.
   - Familiarity with Azure virtual machines and virtual networking.
-iconUrl: /learn/achievements/secure-vms-with-azure-security-center.svg
+iconUrl: /training/achievements/secure-vms-with-azure-security-center.svg
 levels:
 - intermediate
 roles:

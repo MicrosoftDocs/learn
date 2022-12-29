@@ -22,7 +22,7 @@ prerequisites: |
   - Visual Studio 2022 with the .NET MAUI workload installed
   - Familiarity with C# and .NET
   - Basic knowledge of web app concepts
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:

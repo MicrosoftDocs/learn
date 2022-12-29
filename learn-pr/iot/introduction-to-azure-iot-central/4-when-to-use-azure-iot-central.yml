@@ -6,8 +6,10 @@ metadata:
   title: When to use Azure IoT Central
   description: Learn when to use Azure IoT Central.
   ms.date: 07/21/2021
-  author: whitneylampkin
-  ms.author: wlampkin
+  author: asergaz
+  ms.author: sergaz
+  ms.reviewer: adchukwu
+  manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

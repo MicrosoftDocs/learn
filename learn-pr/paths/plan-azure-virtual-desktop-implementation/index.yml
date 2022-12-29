@@ -15,7 +15,7 @@ prerequisites: |
   *  Familiarity with Microsoft Azure and cloud concepts
 summary: |
   Learn how to assess existing physical and virtual desktop environments and plan for Azure Virtual Desktop client deployments. This learning path aligns with exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop.
-iconUrl: /learn/achievements/plan-an-azure-virtual-desktop-implementation.svg
+iconUrl: /training/achievements/plan-an-azure-virtual-desktop-implementation.svg
 levels:
 - intermediate
 roles:

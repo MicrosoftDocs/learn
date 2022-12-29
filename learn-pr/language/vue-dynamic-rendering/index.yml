@@ -22,7 +22,7 @@ prerequisites: |
   - [Git](https://git-scm.com/?azure-portal=true)
   - [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true)
   - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension
-iconUrl: /learn/achievements/vue-dynamic-rendering.svg
+iconUrl: /training/achievements/vue-dynamic-rendering.svg
 ratingEnabled: true
 levels:
 - intermediate
@@ -31,7 +31,6 @@ roles:
 - developer
 products:
 - azure-app-service-static
-- vs-code
 subjects:
 - development-tools
 units:

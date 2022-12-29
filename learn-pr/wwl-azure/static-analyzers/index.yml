@@ -18,7 +18,7 @@ abstract: |
   *   Interpret alerts from scanning tools
 prerequisites: |
   None
-iconUrl: /learn/achievements/static-analyzer-introduction.svg
+iconUrl: /training/achievements/static-analyzer-introduction.svg
 levels:
 - advanced
 roles:

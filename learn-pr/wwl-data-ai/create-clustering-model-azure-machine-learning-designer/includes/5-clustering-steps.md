@@ -17,6 +17,15 @@ Azure Machine Learning designer has several pre-built components that can be use
 
 To train a clustering model, you need to apply a clustering algorithm to the data, using only the features that you have selected for clustering. You'll train the model with a subset of the data, and use the rest to test the trained model.
 
+The **K-Means Clustering** algorithm groups items into the number of clusters, or centroids, you specify - a value referred to as ***K***. 
+
+The K-Means algorithm works by:
+1. Initializing *K* coordinates as randomly selected points called *centroids* in  *n*-dimensional space (where *n* is the number of dimensions in the feature vectors).
+2. Plotting the feature vectors as points in the same space, and assigning each point to its closest centroid.
+3. Moving the centroids to the middle of the points allocated to it (based on the *mean* distance).
+4. Reassigning the points to their closest centroid after the move.
+5. Repeating steps 3 and 4 until the cluster allocations stabilize or the specified number of iterations has completed.
+
 You will use *designer*'s **Assign Data to Clusters** component to group the data into clusters. Once you connect all the components, you will want to run an experiment, which will use the data asset on the canvas to train a model.  
 
 ![Screenshot of designer components that can be connected to train a classification model.](../media/train-model-example.png)

@@ -15,7 +15,7 @@ prerequisites: |
   - Core networking technologies.
 summary: |
   Learn to implement and manage Windows Server file servers and storage. Implement Storage Spaces, data deduplication, and Windows Server Storage Replica.
-iconUrl: /learn/achievements/windows-server-file-servers-and-storage-management.svg
+iconUrl: /training/achievements/windows-server-file-servers-and-storage-management.svg
 levels:
 - intermediate
 roles:

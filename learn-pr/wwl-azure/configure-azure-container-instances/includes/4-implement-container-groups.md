@@ -1,33 +1,52 @@
-The top-level resource in Azure Container Instances is the container group. A container group is a collection of containers that get scheduled on the same host machine. The containers in a container group share a lifecycle, resources, local network, and storage volumes. It's similar in concept to a pod in Kubernetes.
+The top-level resource in Azure Container Instances is the **container group**. A container group is a collection of containers that get scheduled on the same host machine. The containers in a container group share a lifecycle, resources, local network, and storage volumes.
 
-:::image type="content" source="../media/container-groups-ea19ee6b.png" alt-text="Diagram depicts a container group that includes two containers.":::
+### Things to know about container groups
 
+Let's review some of details about container groups for Azure Container Instances.
 
-An example container group:
+- A container group is similar to a pod in Kubernetes. A pod typically has a 1:1 mapping with a container, but a pod can contain multiple containers. The containers in a multi-container pod can share related resources.
 
- -  Is scheduled on a single host machine.
- -  Is assigned a DNS name label.
- -  Exposes a single public IP address, with one exposed port.
- -  Consists of two containers. One container listens on port 80, while the other listens on port 1433.
- -  Includes two Azure file shares as volume mounts, and each container mounts one of the shares locally.
+- Azure Container Instances allocates resources to a multi-container group by adding together the resource requests of all containers in the group. Resources can include items such as CPUs, memory, and GPUs.
 
-## Deployment options
+   Consider a container group that has two containers that each require CPU resources. Each container requests one CPU. Azure Container Instances allocates two CPUs for the container group.
 
-Here are two common ways to deploy a multi-container group: use a Resource Manager template or a YAML file. A Resource Manager template is recommended when you need to deploy additional Azure service resources (for example, an Azure Files share) when you deploy the container instances. Due to the YAML format's more concise nature, a YAML file is recommended when your deployment includes only container instances.
+- There are two common ways to deploy a multi-container group: Azure Resource Manager (ARM) templates and YAML files.
+  
+   - **ARM template**. An ARM template is recommended for deploying other Azure service resources when you deploy your container instances, such as an Azure Files file share.
+  
+  - **YAML file**. Due to the concise nature of the YAML format, a YAML file is recommended when your deployment includes only container instances.
 
-## Resource allocation
+- Container groups can share an external-facing IP address, one or more ports on the IP address, and a DNS label with an FQDN.
+   
+   - **External client access**. You must expose the port on the IP address and from the container to enable external clients to reach a container in your group.
+   
+   - **Port mapping**. Port mapping isn't supported because containers in a group share a port namespace.
+   
+   - **Deleted groups**. When a container group is deleted, its IP address and FQDN are released.
 
-Azure Container Instances allocates resources such as CPUs, memory, and optionally GPUs to a multi-container group by adding the resource requests of the instances in the group. Taking CPU resources as an example, if you create a container group with two container instances, each requesting one CPU, then the container group is allocated 2 CPUs.
+#### Configuration example
 
-## Networking
+Consider the following example of a multi-container group with two containers.
 
-Container groups can share an external-facing IP address, one or more ports on that IP address, and a DNS label with a fully qualified domain name (FQDN). To enable external clients to reach a container within the group, you must expose the port on the IP address and from the container. Because containers within the group share a port namespace, port mapping isn't supported. A container group's IP address and FQDN will be released when the container group is deleted.
+:::image type="content" source="../media/container-groups-ea19ee6b.png" alt-text="Diagram that depicts an Azure Container Instances multi-container group that has two containers." border="false":::
 
-## Common scenarios
+The multi-container group has the following characteristics and configuration:
 
-Multi-container groups are useful in cases where you want to divide a single functional task into a small number of container images. These images can then be delivered by different teams and have separate resource requirements. Example usage could include:
+- The container group is scheduled on a single host machine, and is assigned a DNS name label.
+- The container group exposes a single public IP address with one exposed port.
+- One container in the group listens on port 80. The other container listens on port 1433.
+- The group includes two Azure Files file shares as volume mounts. Each container in the group mounts one of the file shares locally.
 
- -  A container serving a web application and a container pulling the latest content from source control.
- -  An application container and a logging container. The logging container collects the logs and metrics output by the main application and writes them to long-term storage.
- -  An application container and a monitoring container. The monitoring container periodically makes a request to the application to ensure that it's running and responding correctly, and raises an alert if it's not.
- -  A front-end container and a back-end container. The front end might serve a web application, with the back end running a service to retrieve data.
+### Things to consider when using container groups
+
+Multi-container groups are useful when you want to divide a single functional task into a few container images. The images can be delivered by different teams and have separate resource requirements.
+
+Consider the following scenarios for working with multi-container groups. Think about what options can support your internal apps for the online retailer.
+
+- **Consider web app updates**. Support updates to your web apps by implementing a multi-container group. One container in the group serves the web app and another container pulls the latest content from source control.
+
+- **Consider log data collection**. Use a multi-container group to capture logging and metrics data about your app. Your application container outputs logs and metrics. A logging container collects the output data and writes the data to long-term storage.
+
+- **Consider app monitoring**. Enable monitoring for your app with a multi-container group. A monitoring container periodically makes a request to your application container to ensure your app is running and responding correctly. The monitoring container raises an alert if it identifies possible issues with your app.
+
+- **Consider front-end and back-end support**. Create a multi-container group to hold your front-end container and back-end container. The front-end container can serve a web app. The back-end container can run a service to retrieve data.

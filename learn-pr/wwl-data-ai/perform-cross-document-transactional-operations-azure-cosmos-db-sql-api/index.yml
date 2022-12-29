@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.perform-cross-document-transactional-operations-azure-cosmos-db-sql-api
 metadata:
-  title: Perform cross-document transactional operations with the Azure Cosmos DB SQL API
+  title: Perform cross-document transactional operations with the Azure Cosmos DB for NoSQL
   description: "Perform operations on multiple items in single logical units of work."
-  ms.date: 12/23/2021
+  ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Perform cross-document transactional operations with the Azure Cosmos DB SQL API
+title: Perform cross-document transactional operations with the Azure Cosmos DB for NoSQL
 summary: Perform operations on multiple items in single logical units of work.
 abstract: |
   After completing this module, you'll be able to:
@@ -16,7 +16,7 @@ abstract: |
   - Implement optimistic concurrency control for an operation
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-implement-cross-document.svg
+iconUrl: /training/achievements/azure-cosmos-db-implement-cross-document.svg
 levels:
 - intermediate
 roles:

@@ -93,7 +93,7 @@ Add more units as needed for your content
 
 
 10. Knowledge check
-<!--     Guidance: https://review.docs.microsoft.com/en-us/help/learn/id-guidance-knowledge-check?branch=main  -->
+<!--     Guidance: https://review.learn.microsoft.com/help/learn/id-guidance-knowledge-check?branch=main  -->
 
 11. Summary
 
@@ -103,4 +103,4 @@ Add more units as needed for your content
 
 ## Notes
 
-+ [Add custom data to resources using extensions](https://review.docs.microsoft.com/en-us/graph/extensibility-overview?branch=pr-en-us-17209)
++ [Add custom data to resources using extensions](https://review.learn.microsoft.com/graph/extensibility-overview?branch=pr-en-us-17209)

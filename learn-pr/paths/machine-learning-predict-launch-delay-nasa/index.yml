@@ -19,14 +19,14 @@ summary: |
 prerequisites: |
  - The [Role of Python in space exploration](../introduction-python-space-exploration-nasa/index.yml?azure-portal=true) learning path
  - [Visual Studio Code, with the Python extension](https://aka.ms/LearnOnVSCode?azure-portal=true)
-iconUrl: /learn/achievements/machine-learning-predict-launch-delay-nasa.svg
+iconUrl: /training/achievements/machine-learning-predict-launch-delay-nasa.svg
 levels:
 - beginner
 roles:
 - student
 - data-scientist
 products:
-- vs-code
+- azure
 subjects:
 - machine-learning
 modules:

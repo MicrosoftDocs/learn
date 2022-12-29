@@ -34,7 +34,7 @@ Once modeled as a graph, a program can be distributed over machines in a distrib
 1. _T. H. Cormen, C. E. Leiserson, R. L. Rivest, and C. Stein (July 31, 2009). [Introduction to Algorithms](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) MIT Press, Third Edition_
 2. _B. Hendrickson and T. G. Kolda (2000). [Graph Partitioning Models for Parallel Computing](http://www.kolda.net/publication/heko00/) Parallel Computing_
 3. _M. R. Garey, D. S. Johnson, and L. Stockmeyer (1976). [Some Simplified NP-Complete Graph Problems](https://www.sciencedirect.com/science/article/pii/0304397576900591) Theoretical Computer Science_
-4. _B. Hendrickson and R. Leland (1995). [The Chaco User's Guide Version 2.0 Technical Report](https://cfwebprod.sandia.gov/cfdocs/CompResearch/docs/guide.pdf) SAND95-2344, Sandia National Laboratories_
+4. _B. Hendrickson and R. Leland (1995). [The Chaco User's Guide Version 2.0 Technical Report](https://www.researchgate.net/profile/Robert-Leland-2/publication/264824986_The_Chaco_User's_Guide_Version_20/links/53f278e70cf272810e502d74/The-Chaco-Users-Guide-Version-20.pdf) SAND95-2344, Sandia National Laboratories_
 5. _G. Karypis and V. Kumar (1998). [A Fast and High Quality Multilevel Scheme for Partitioning Irregular Graphs](https://epubs.siam.org/doi/10.1137/S1064827595287997) SIAM Journal on Scientific Computing_
 
 ***
@@ -42,5 +42,5 @@ Once modeled as a graph, a program can be distributed over machines in a distrib
 [^1]: <https://mitpress.mit.edu/books/introduction-algorithms-third-edition> "T. H. Cormen, C. E. Leiserson, R. L. Rivest, and C. Stein (July 31, 2009). [Introduction to Algorithms* MIT Press, Third Edition"
 [^2]: <http://www.kolda.net/publication/heko00/> "B. Hendrickson and T. G. Kolda (2000). *Graph Partitioning Models for Parallel Computing* Parallel Computing"
 [^3]: <https://www.sciencedirect.com/science/article/pii/0304397576900591> "M. R. Garey, D. S. Johnson, and L. Stockmeyer (1976). *Some Simplified NP-Complete Graph Problems* Theoretical Computer Science"
-[^4]: <https://cfwebprod.sandia.gov/cfdocs/CompResearch/docs/guide.pdf> "B. Hendrickson and R. Leland (1995). *The Chaco User's Guide Version 2.0 Technical Report* SAND95-2344, Sandia National Laboratories"
+[^4]: <https://www.researchgate.net/profile/Robert-Leland-2/publication/264824986_The_Chaco_User's_Guide_Version_20/links/53f278e70cf272810e502d74/The-Chaco-Users-Guide-Version-20.pdf> "B. Hendrickson and R. Leland (1995). *The Chaco User's Guide Version 2.0 Technical Report* SAND95-2344, Sandia National Laboratories"
 [^5]: <https://epubs.siam.org/doi/10.1137/S1064827595287997> "G. Karypis and V. Kumar (1998). *A Fast and High Quality Multilevel Scheme for Partitioning Irregular Graphs* SIAM Journal on Scientific Computing"

@@ -58,7 +58,7 @@ There are two types of GitHub actions: container actions and JavaScript actions.
 
 With **container actions**, the environment is part of the action's code. These actions can only be run in a Linux environment that GitHub hosts. Container actions support many different languages.
 
-**JavaScript actions** don't include the environment in the code. You'll have to specify the environment to execute these actions. You can run in a VM in the cloud or on-premises. JavaScript actions support Linux, macOS, and Windows environments.
+**JavaScript actions** don't include the environment in the code. You'll have to specify the environment to execute these actions. You can run these actions in a VM in the cloud or on-premises. JavaScript actions support Linux, macOS, and Windows environments.
 
 ### The anatomy of a GitHub action
 
@@ -97,7 +97,7 @@ branding:
 
 Notice the ```inputs``` section. Here, you're getting the value of a variable called MY_NAME. This variable will be set in the workflow that runs this action.
 
-In the ```runs``` section, notice you specify *docker* in the ```uses``` attribute. When you do this, you'll need to provide the path to the docker image file. Here, it's called *Dockerfile*. We won't get into the specifics of Docker here, but if you would like more information, check out the [Introduction to Docker Containers](/learn/modules/intro-to-docker-containers/?azure-portal=true) module.
+In the ```runs``` section, notice you specify *docker* in the ```uses``` attribute. When you do this, you'll need to provide the path to the docker image file. Here, it's called *Dockerfile*. We won't get into the specifics of Docker here, but if you would like more information, check out the [Introduction to Docker Containers](/training/modules/intro-to-docker-containers/?azure-portal=true) module.
 
 The last section, *branding*, personalizes your action in the GitHub Marketplace if you decide to publish it there.
 

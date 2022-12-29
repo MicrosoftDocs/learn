@@ -6,9 +6,9 @@ Azure Traffic Manager is a DNS-based traffic load balancer that you can use to d
 
 By the end of this module, you'll be able to:
 
-- Describe how to use Traffic Manager to dynamically distribute network traffic
-- Set up Traffic Manager for automatic failover to a secondary region
-- Set up Traffic Manager to redirect client requests to the nearest endpoint
+- Describe how to use Traffic Manager to dynamically distribute network traffic.
+- Set up Traffic Manager for automatic failover to a secondary region.
+- Set up Traffic Manager to redirect client requests to the nearest endpoint.
 
 ## Prerequisites
 
