@@ -46,7 +46,7 @@ The Azure portal provides a wizard to create a DevTest Labs resource. This wizar
 |Field  |Description  |
 |---------|---------|
 |**Subscription**     | A valid and active Azure subscription        |
-|**Resource group**     | A valid resource grou.        |
+|**Resource group**     | A valid resource group.        |
 |**Lab name**     | The name of the lab, which needs to be unique within your subscription        |
 |**Location**     |  The Azure region where your lab and the computing resources will be hosted        |
 |**Public environments**     | A public environment repository contains a list of curated Azure Resource Manager templates that let lab users create PaaS resources within labs        |
