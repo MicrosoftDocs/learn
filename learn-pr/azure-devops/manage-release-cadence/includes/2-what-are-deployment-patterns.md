@@ -49,21 +49,21 @@ In a canary release, we monitor what happens when we release the feature. If the
 
 ## Feature toggles
 
-_Feature toggles_ let us "flip a switch" at runtime. We can deploy new software without exposing any other new or changed functionality to our users.
+Use _feature toggles_ to "flip a switch" at runtime. We can deploy new software without exposing any other new or changed functionality to our users.
 
-In this deployment pattern, Mara and I build new features behind a toggle. When a release occurs, the feature is "off" so that it doesn't affect the production software. Depending on how we configure the toggle, we can flip the switch to "on" and expose the way we want.
+In this deployment pattern, Mara and I build new features behind a toggle. When a release occurs, the feature is "off" so that it doesn't affect the production software. Depending on how we configure the toggle, we can flip the switch to "on" and expose the feature how we want.
 
 :::image type="content" source="../media/2-feature-toggles.png" alt-text="Diagram of a coded if statement for an on-off feature.":::
 
-For example, we could expose the feature first to a few users to see how they react. That random sample of users sees the feature, or we could just let the feature go live to everyone.
+For example, we could expose the feature first to a few users to see how they react. That random sample of users sees the feature. Or we could just let the feature go live to everyone.
 
-But this deployment pattern might benefit Mara, and me more than anyone else. An advantage to the feature toggles pattern is that, it helps us avoid too much branching. Merging branches can be painful.
+But this deployment pattern might benefit Mara and me more than anyone else. A big advantage to the feature toggles pattern is that it helps us avoid too much branching. Merging branches can be painful.
 
 ## Dark launches
 
 A _dark launch_ is similar to a canary release or switching a feature toggle. Rather than expose a new feature to everyone, in a dark launch we release the feature to a small set of users.
 
-:::image type="content" source="../media/2-dark-launches.png" alt-text="A diagram of a load balancer sending traffic to the new feature.":::
+:::image type="content" source="../media/2-dark-launches.png" alt-text="Diagram of a load balancer sending traffic to the new feature.":::
 
 Those users don't know they're testing the feature for us. We don't even highlight the new feature to them. That's why it's called a dark launch. The software is gradually or unobtrusively released to users so we can get feedback and can test performance.
 
