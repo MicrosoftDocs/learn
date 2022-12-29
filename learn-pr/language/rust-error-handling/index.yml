@@ -19,14 +19,13 @@ abstract:  |
 prerequisites: | 
   - A Rust development environment 
   - Familiarity with creating, editing, and executing Rust code by using Cargo
-iconUrl: /learn/achievements/rust-error-handling.svg 
+iconUrl: /training/achievements/rust-error-handling.svg 
 levels:
 - beginner
 roles:
 - student
 - developer
 products:
-- vs-code
 - azure
 subjects:
 - development-tools

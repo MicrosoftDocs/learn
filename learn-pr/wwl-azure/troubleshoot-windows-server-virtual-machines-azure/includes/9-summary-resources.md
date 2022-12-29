@@ -16,7 +16,7 @@ Use these resources to discover more.
 
 - [Azure Virtual Machines troubleshooting documentation](/troubleshoot/azure/virtual-machines/welcome-virtual-machines)
 
-- [Implement scale and high availability with Windows Server VM](/learn/modules/implement-scale-high-availability-windows-server-virtual-machine)
+- [Implement scale and high availability with Windows Server VM](/training/modules/implement-scale-high-availability-windows-server-virtual-machine)
 
 - [Decrypt the encrypted OS disk](/troubleshoot/azure/virtual-machines/troubleshoot-bitlocker-boot-error)
 
@@ -26,5 +26,4 @@ Use these resources to discover more.
 
 - [Troubleshoot Remote Desktop connections to an Azure virtual machine](/troubleshoot/azure/virtual-machines/troubleshoot-rdp-connection)
 
-- [Introduction to Azure Bastion](/learn/modules/intro-to-azure-bastion)
-
+- [Introduction to Azure Bastion](/training/modules/intro-to-azure-bastion)

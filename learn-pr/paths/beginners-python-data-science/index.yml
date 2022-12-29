@@ -24,7 +24,7 @@ summary: |
   
 prerequisites: |
     - Introduction to Python for data science
-iconUrl: /learn/achievements/reactors/beginners-python-data-science.svg
+iconUrl: /training/achievements/reactors/beginners-python-data-science.svg
 hidden: true
 levels:
 - beginner
@@ -34,7 +34,6 @@ roles:
 - data-scientist
 products:
 - azure
-- vs-code
 subjects:
 - data-management
 modules:

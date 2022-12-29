@@ -2,15 +2,15 @@
 
 ## Role(s)
 
-- [developer](https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role)
+- [developer](https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role)
 
 ## Level
 
-- [beginner](https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level)
+- [beginner](https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level)
 
 ## Product(s)
 
-- [azure-cosmos-db](https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level)
+- [azure-cosmos-db](https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level)
 
 ## Prerequisites
 

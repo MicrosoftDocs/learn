@@ -8,7 +8,7 @@ In the previous exercise, we performed the following tasks using the Azure porta
 Let's practice these operations using Azure PowerShell.
 
 > [!NOTE]
-> We're going to use Azure PowerShell, but you could also use the Azure CLI, which provides similar functionality as a console-based tool. It runs on macOS, Linux, and Windows. If you are interested in learning more about the Azure CLI, check out the **Manage Virtual Machines with the Azure CLI** module.
+> We're going to use Azure PowerShell, but you could also use the Azure CLI, which provides similar functionality as a console-based tool. It runs on macOS, Linux, and Windows. If you're interested in learning more about the Azure CLI, check out the **Manage Virtual Machines with the Azure CLI** module.
 
 We're going to use the VM we created in the previous exercise. The operations in this lab assume:
 
@@ -31,13 +31,13 @@ In Azure Cloud Shell on the right, run the following PowerShell commands:
 > [!NOTE]
 > Switch your Cloud Shell session to **PowerShell** before trying these commands, if it isn't already.
 
-    ```powershell
-    $myRgName = "<rgn>[sandbox resource group name]</rgn>"
-    $myVMName = "fotoshareVM"
-    ```
+```powershell
+$myRgName = "<rgn>[sandbox resource group name]</rgn>"
+$myVMName = "fotoshareVM"
+```
 
 > [!TIP]
-> You'll have to set these variables again if your Cloud Shell session times out. So, if possible, work through this entire lab in a single session.
+> You'll have to set these variables again if your Cloud Shell session times out, so if possible, work through this entire lab in a single session.
 
 ### Get info about our VM
 
@@ -47,13 +47,13 @@ In Azure Cloud Shell on the right, run the following PowerShell commands:
     $myVM = Get-AzVM -ResourceGroupName $myRgName -VMName $myVmName
     ```
 
-1. We store the response in our `$myVM` variable. We can pipe the output into the `select-object` cmdlet to filter the display to specific properties:
+1. We'll store the response in our `$myVM` variable. We can pipe the output into the `select-object` cmdlet to filter the display to specific properties:
 
     ```powershell
     $myVM | select-object -property ResourceGroupName, Name, Type, Location
     ```
 
-    You should get something like the following.
+    You should get something like the following:
 
     ```powershell
     ResourceGroupName Name        Type                              Location
@@ -65,15 +65,15 @@ In Azure Cloud Shell on the right, run the following PowerShell commands:
 
 We can check the caching  setting through  the `StorageProfile` object by running the following command:
 
-    ```powershell
-    $myVM.StorageProfile.OsDisk.Caching
-    ```
+```powershell
+$myVM.StorageProfile.OsDisk.Caching
+```
 
-    ```output
-    ReadOnly
-    ```
+```output
+ReadOnly
+```
 
-    Let's change it back to the default for an OS disk, which is _ReadWrite_.
+Let's change it back to the default for an OS disk, which is *ReadWrite*.
 
 ### Change the cache settings of the OS disk
 
@@ -83,7 +83,7 @@ We can check the caching  setting through  the `StorageProfile` object by runnin
     $myVM.StorageProfile.OsDisk.Caching = "ReadWrite"
     ```
 
-    This command runs fast, which should tell you it's doing something locally. The command only changes the property on the `myVM` object. As the following screenshot shows, if you refresh the `$myVM` variable by reassigning it using the `Get-AzVM` cmdlet, the caching value won't have changed on the VM.
+    This command runs fast, which should tell you it's doing something locally. The command only changes the property on the `myVM` object. If you refresh the `$myVM` variable by reassigning it using the `Get-AzVM` cmdlet, the caching value won't have changed on the VM.
 
 1. To make the change on the VM itself, call `Update-AzVM` by running the following command:
 
@@ -114,19 +114,19 @@ We can check the caching  setting through  the `StorageProfile` object by runnin
 
 To see what data disks we have on our VM, run the following command:
 
-    ```powershell
-    $myVM.StorageProfile.DataDisks
-    ```
+```powershell
+$myVM.StorageProfile.DataDisks
+```
 
-    ```output
-    Name            : fotoshareVM-data
-    DiskSizeGB      : 4
-    Lun             : 0
-    Caching         : ReadOnly
-    CreateOption    : Attach
-    SourceImage     :
-    VirtualHardDisk :
-    ```
+```output
+Name            : fotoshareVM-data
+DiskSizeGB      : 4
+Lun             : 0
+Caching         : ReadOnly
+CreateOption    : Attach
+SourceImage     :
+VirtualHardDisk :
+```
 
 We have only one data disk at the moment. The `Lun` field is important. It's the unique **L**ogical **U**nit **N**umber. When we add another data disk, we'll give it a unique `Lun` value.
 
@@ -196,7 +196,7 @@ We now have two disks. Our new disk has a `Lun` of `1` and the default value for
 
 ### Change cache settings of new data disk
 
-1. We modify properties of a virtual machine data disk by running the `Set-AzVMDataDisk` command, as follows:
+1. We can modify the properties of a virtual machine data disk by running the `Set-AzVMDataDisk` command, as follows:
 
     ```powershell
     Set-AzVMDataDisk -VM $myVM -Lun "1" -Caching ReadWrite

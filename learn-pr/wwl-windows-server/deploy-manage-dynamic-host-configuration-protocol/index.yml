@@ -24,7 +24,7 @@ prerequisites: |
   - Windows Server.
   - Core networking technologies.
   - Windows client operating systems such as Windows 10.
-iconUrl: /learn/achievements/deploy-and-manage-dhcp.svg
+iconUrl: /training/achievements/deploy-and-manage-dhcp.svg
 levels:
 - intermediate
 roles:

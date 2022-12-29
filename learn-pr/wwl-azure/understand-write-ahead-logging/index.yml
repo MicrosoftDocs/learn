@@ -3,7 +3,7 @@ uid: learn.wwl.understand-write-ahead-logging
 metadata:
   title: Understand write-ahead logging
   description: "Azure Database for PostgreSQL is an ACID compliant database service. Write ahead logging ensures changes are both atomic and durable (the A and D in ACID). Changes are first written to the log before they are committed to the database. In this module you learn how Azure Database for PostgreSQL implements write ahead logging, and how the log can be used for replication and logical decoding."
-  ms.date: 06/23/2022
+  ms.date: 10/03/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Demonstrate an understanding of relational databases.
   - Demonstrate an understanding of basic SQL.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/understand-write-ahead-logging.svg
 levels:
 - intermediate
 roles:

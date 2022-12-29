@@ -70,7 +70,7 @@ The following table provides examples of common attack types and how shielded VM
 |*Compromised VM templates*|The HGS attests to the health and identity of shielded VMs to ensure that the hosts aren't modified without your knowledge. Shielded VMs can only be started on the guarded hosts in an approved fabric. This ensures that your .vhdx files for your shielded VMs can't be started (or modified) by an actor outside of your trusted environment.|
 |*Compromised VM secrets*|The PDK file provides assurances that the VM will be created according to the intend specification. For example, if the HGS administrator configures the shielding data file to contain an answer file, the fabric administrator can't access or make changes to the answer file. Similarly, the fabric administrator can't substitute a different .vhdx file when creating the shielded VM, because the shielding data file contains the signatures of the trusted disks that shielded VMs can be created from. A fabric administrator can use the shielding data file to help create a shielded VM, but cannot access the file information directly.|
 
-## Linux support in Windows Server 2019
+## Linux support in Windows Server
 
 Hyper-V includes support for provisioning Linux shielded VMs. You can provision a Linux shielded VM in a guarded fabric with System Center VMM as follows:
 
@@ -87,7 +87,7 @@ Hyper-V includes support for provisioning Linux shielded VMs. You can provision 
 The following tools are available to troubleshoot shielded VMs:
 
 - Virtual Machine Connection (VMConnect) with enhanced session mode
-- PowerShell Direct in Windows Server 2019
+- PowerShell Direct in Windows Server
 
 ### VMConnect
 

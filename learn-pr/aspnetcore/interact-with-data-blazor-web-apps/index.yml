@@ -21,7 +21,7 @@ prerequisites: |
   - Familiarity with HTML and CSS in web development
   - Ability to write C# code at a novice level
   - Ability to create a Blazor web application
-iconUrl: /learn/achievements/interact-with-data-blazor-web-apps.svg
+iconUrl: /training/achievements/interact-with-data-blazor-web-apps.svg
 levels: 
   - intermediate
 roles: 

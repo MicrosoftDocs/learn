@@ -4,60 +4,64 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/21/2022
+  ms.date: 08/23/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/11-knowledge-check.md)]
 quiz:
   title: ""
   questions:
-  - content: "How can Tailwind Traders ensure that employees at the company's retail stores can access company applications only from approved tablet devices?"
+
+  - content: "How can Tailwind Traders permit employees at their retail stores to access company apps from approved tablet devices only?"
     choices:
-    - content: "Single sign-on"
+    - content: "Single sign-on (SSO)"
       isCorrect: false
-      explanation: "That’s incorrect. SSO helps a user to remember only one ID and one password for multiple applications. SSO doesn't verify the device that's trying to access an application."
+      explanation: "Incorrect. SSO helps a user to remember only one ID and one password for multiple apps. SSO doesn't verify the device that's trying to access an app."
     - content: "Conditional access"
       isCorrect: true
-      explanation: "That’s correct. Conditional Access enables you to require users to access your applications only from approved, or managed, devices."
-    - content: "Multi-factor authentication"
+      explanation: "Correct. Conditional access lets you require users to access your apps from approved, or managed, devices only."
+    - content: "Multifactor authentication (MFA)"
       isCorrect: false
-      explanation: "That’s incorrect. Multi-factor authentication provides additional security for your identities. MFA doesn't verify the device that's trying to access the resource or application."
+      explanation: "Incorrect. MFA provides extra security for your identities. MFA doesn't verify the device that's trying to access the resource or app."
+
   - content: "What should Tailwind Traders do to ensure employees have the correct permissions for their job role?"
     choices:
     - content: "Create a conditional access policy"
       isCorrect: false
-      explanation: "That’s incorrect. Conditional access policies won't validate employee job role access."
-    - content: "Review each user’s role-based access control permissions"
+      explanation: "Incorrect. Conditional access policies won't validate employee job role access."
+    - content: "Review each user's role-based access control (RBAC) permissions"
       isCorrect: false
-      explanation: "That’s incorrect. Although this might work, it would be a long and tedious process. Also, IT personnel aren’t in the best position to determine if an employee’s access is correct."
-    - content: "Require an access review."
+      explanation: "Incorrect. Although RBAC might work, the process would be long and tedious. Also, IT personnel aren't in the best position to determine if an employee's access is correct."
+    - content: "Require an access review"
       isCorrect: true
-      explanation: "That’s correct. An access review would give managers an opportunity to validate the employee's access."
-  - content: "What should Tailwind Traders do to give access to the partner developers?"
+      explanation: "Correct. An access review will give managers an opportunity to validate the employee's access."
+
+  - content: "What should Tailwind Traders do to give access to their partner developers?"
     choices:
     - content: "Use AD Connect to bring in the developer accounts"
       isCorrect: false
-      explanation: "That’s incorrect. AD Connect is used to bring in on-premises accounts."
-    - content: "Ask the developers to sign in with a social identification. For example, Google, LinkedIn, or Facebook account."
+      explanation: "Incorrect. AD Connect is used to bring in on-premises accounts."
+    - content: "Ask the developers to sign in with a social identification like Google, LinkedIn, or Facebook."
       isCorrect: false
-      explanation: "That’s incorrect. External social accounts are used for Business to Customer applications."
-    - content: "Invite the developers as guest users to their directory."
+      explanation: "Incorrect. External social accounts are used for business-to-customer (B2C) apps."
+    - content: "Invite the developers as guest users to their directory"
       isCorrect: true
-      explanation: "That’s correct. In Business-to-Business scenarios guest user accounts are created. You can then apply the appropriate permissions."
-  - content: "What solution would be best for the user sign-in attempts requirement?"
+      explanation: "Correct. In business-to-business (B2B) scenarios, guest user accounts are created. You can then apply the appropriate permissions."
+
+  - content: "What solution would be best for user sign-in attempt requirement?"
     choices:
     - content: "Create a user risk policy"
       isCorrect: false
-      explanation: "That’s incorrect. A user risk policy represents the probability that a given identity or account is compromised. For example, the user's valid credentials have been leaked."
+      explanation: "Incorrect. A user risk policy represents the probability a given identity or account is compromised. A scenario would be where a user's valid credentials are leaked."
     - content: "Create a sign-in risk policy"
       isCorrect: true
-      explanation: "That’s correct. A sign-in risk policy can identify anonymous IP and atypical locations. Secondary multi-factor authentication can then be required."
-    - content: "Require an access review."
+      explanation: "Correct. A sign-in risk policy can identify anonymous IP and atypical locations. Secondary MFA can then be required."
+    - content: "Require an access review"
       isCorrect: false
-      explanation: "That’s incorrect. An access review provides an opportunity to validate an employee’s continued access to assets."
+      explanation: "Incorrect. An access review provides an opportunity to validate an employee's continued access to assets."

@@ -15,7 +15,7 @@ prerequisites: |
   * Demonstrate basic developer skills.
 summary: |
   Learners will become familiar with the Azure portal to the Azure resources that are available for an IoT solution. Learners will step through the process of creating IoT Hub and Device Provisioning Service resources.
-iconUrl: /learn/achievements/azure-iot-azure-portal.svg
+iconUrl: /training/achievements/azure-iot-azure-portal.svg
 levels:
 - intermediate
 roles:

@@ -7,7 +7,7 @@ Azure Cosmos DB provides language-integrated, transactional execution of JavaScr
 
 Stored procedures  can create, update, read, query, and delete items inside an Azure Cosmos container. Stored procedures are registered per collection, and can operate on any document or an attachment present in that collection.
 
-Here is a simple stored procedure that returns a "Hello World" response.
+Here's a simple stored procedure that returns a "Hello World" response.
 
 ```javascript
 var helloWorldStoredProc = {
@@ -21,33 +21,35 @@ var helloWorldStoredProc = {
 }
 ```
 
-The context object provides access to all operations that can be performed in Azure Cosmos DB, as well as access to the request and response objects. In this case, you use the response object to set the body of the response to be sent back to the client.
+The context object provides access to all operations that can be performed in Azure Cosmos DB, and access to the request and response objects. In this case, you use the response object to set the body of the response to be sent back to the client.
 
 ## Create an item using stored procedure
 
-When you create an item by using stored procedure it is inserted into the Azure Cosmos container and an ID for the newly created item is returned. Creating an item is an asynchronous operation and depends on the JavaScript callback functions. The callback function has two parameters:
+When you create an item by using stored procedure it's inserted into the Azure Cosmos container and an ID for the newly created item is returned. Creating an item is an asynchronous operation and depends on the JavaScript callback functions. The callback function has two parameters:
 
 * The error object in case the operation fails
 * A return value
 
-Inside the callback, you can either handle the exception or throw an error. In case a callback is not provided and there is an error, the Azure Cosmos DB runtime will throw an error.
+Inside the callback, you can either handle the exception or throw an error. In case a callback isn't provided and there's an error, the Azure Cosmos DB runtime will throw an error.
 
 The stored procedure also includes a parameter to set the description, it's a boolean value. When the parameter is set to true and the description is missing, the stored procedure will throw an exception. Otherwise, the rest of the stored procedure continues to run.
 
-The following example stored procedure takes an input parameter named `documentToCreate` and the parameter’s value is the body of a document to be created in the current collection. The callback throws an error if the operation fails. Otherwise, it sets the `id` of the created document as the body of the response to the client.
+This stored procedure takes as input `documentToCreate`, the body of a document to be created in the current collection. All such operations are asynchronous and depend on JavaScript function callbacks. The callback function has two parameters, one for the error object in case the operation fails, and one for the created object. Inside the callback, users can either handle the exception or throw an error. In case a callback isn't provided and there's an error, the DocumentDB runtime throws an error.
 
 ```javascript
-function createSampleDocument(documentToCreate) {
-    var context = getContext();
-    var collection = context.getCollection();
-    var accepted = collection.createDocument(
-        collection.getSelfLink(),
-        documentToCreate,
-        function (error, documentCreated) {                 
-            context.getResponse().setBody(documentCreated.id)
-        }
-    );
-    if (!accepted) return;
+var createDocumentStoredProc = {
+    id: "createMyDocument",
+    body: function createMyDocument(documentToCreate) {
+        var context = getContext();
+        var collection = context.getCollection();
+        var accepted = collection.createDocument(collection.getSelfLink(),
+              documentToCreate,
+              function (err, documentCreated) {
+                  if (err) throw new Error('Error' + err.message);
+                  context.getResponse().setBody(documentCreated.id)
+              });
+        if (!accepted) return;
+    }
 }
 ```
 

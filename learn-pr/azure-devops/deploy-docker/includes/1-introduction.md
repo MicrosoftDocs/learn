@@ -1,4 +1,4 @@
-In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you built a basic release pipeline that deploys an ASP.NET Core application to Azure App Service. Although this process covers the needs for basic applications, modern solutions often require a combination of applications, services, and other components.
+In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you built a basic release pipeline that deploys an ASP.NET Core application to Azure App Service. Although this process covers the needs for basic applications, modern solutions often require a combination of applications, services, and other components.
 
 Azure provides great support for traditional app deployments, such as to virtual machines or application services. Another option you might consider is to deploy your app by using a container. A *container* app is one that's packaged and published as a single artifact that can be deployed with all of its dependencies to run in an isolated environment.
 
@@ -21,11 +21,11 @@ The modules in this learning path form a progression. To follow the progression 
 * [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
 * [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
 
-We also recommend you start at the beginning of this learning path: [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true). This module picks up where [Create a release pipeline in Azure Pipelines](/learn/modules/create-release-pipeline/?azure-portal=true) leaves off.
+We also recommend you start at the beginning of this learning path: [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true). This module picks up where [Create a release pipeline in Azure Pipelines](/training/modules/create-release-pipeline/?azure-portal=true) leaves off.
 
 [!include[](../../shared/includes/project-details-note.md)]
 
-This module also assumes you have basic familiarity with Docker, although that knowledge isn't required to complete it. If you're new to the topic, it's recommended that you complete the [Introduction to Docker containers](/learn/modules/intro-to-docker-containers/?azure-portal=true) module first.
+This module also assumes you have basic familiarity with Docker, although that knowledge isn't required to complete it. If you're new to the topic, it's recommended that you complete the [Introduction to Docker containers](/training/modules/intro-to-docker-containers/?azure-portal=true) module first.
 
 ## Meet the team
 

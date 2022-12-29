@@ -14,15 +14,15 @@ As an experienced Windows Server administrator, you’re responsible for plannin
 
 After completing this module, you'll be able to:
 
-- Identify the purpose, types, and the process of creating trust relationships.
-- Describe the purpose and the process of implementing ESAE forests.
-- Monitor and troubleshoot AD DS replication.
-- Identify the purpose and the process of creating custom AD DS partitions.
+ -  Identify the purpose, types, and the process of creating trust relationships.
+ -  Describe the purpose and the process of implementing ESAE forests.
+ -  Monitor and troubleshoot AD DS replication.
+ -  Identify the purpose and the process of creating custom AD DS partitions.
 
 ## Prerequisites
 
 To get the best learning experience from this module, you should have knowledge and experience of the following areas:
 
-- Windows Server 2012 or Windows Server 2016.
-- Core networking technologies.
-- Implementing and managing AD DS.
+ -  Windows Server 2012 or Windows Server 2016.
+ -  Core networking technologies.
+ -  Implementing and managing AD DS.

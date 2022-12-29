@@ -23,7 +23,7 @@ abstract: |
 prerequisites: |
   - Introduction to Python for data science
 # placeholder icon
-iconUrl: /learn/achievements/reactors/numpy-data-science.svg
+iconUrl: /training/achievements/reactors/numpy-data-science.svg
 hidden: true
 levels:
 - beginner
@@ -33,7 +33,6 @@ roles:
 - data-scientist
 products:
 - azure
-- vs-code
 subjects:
 - development-tools
 units:

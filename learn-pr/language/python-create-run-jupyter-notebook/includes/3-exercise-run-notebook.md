@@ -1,10 +1,10 @@
 A *notebook* is an interactive environment where you can both write code and document it. Notebooks can also display mathematical computations and charts.
 
-Here, you will create a local *.ipynb* file and run it in Visual Studio Code. The suffix *.ipynb* is used to refer to Jupyter notebooks, which were previously called `iPython notebooks`: `ipynb`.
+Here, you'll create a local *.ipynb* file and run it in Visual Studio Code. The suffix *.ipynb* is used to refer to Jupyter notebooks, which were previously called `iPython notebooks`: `ipynb`.
 
 ## Create a notebook
 
-On your local computer, create a file called *ship-manual.ipynb*. You can create the file by using the terminal or command line: type `touch ship-manual.ipynb`. You can also create the file via the command palette in Visual Studio Code, by opening the palette and typing `Jupyter > Create New Blank Notebook`. Open this file in Visual Studio Code. The Jupyter extension should display the file as blank, with the option to add code and Markdown blocks.
+On your local computer, create a file called *ship-manual.ipynb*. You can create the file by using the terminal in Visual Studio code: type `touch ship-manual.ipynb`. You can also create the file via the command palette in Visual Studio Code, by opening the palette and typing `Create: New Jupyter Notebook`. Open this file in Visual Studio Code. The Jupyter extension should display the file as blank, with the option to add code and Markdown blocks.
 
 :::image type="content" source="../media/new-file.png" alt-text="Screenshot that shows an example of a new Visual Studio Code file.":::
 
@@ -20,7 +20,7 @@ Now you need to run your notebook. Choose a kernel from the dropdown list on the
 
 :::image type="content" source="../media/choose-kernel.png" alt-text="Screenshot that shows an example of a kernel.":::
 
-Select the checkbox, and you will find the text is rendered as an `<h1>`, or header text. You just named your notebook! To see how this Markdown file is rendered, choose **run all** from the top of the notebook, or the small arrow to the left of the Markdown box.
+Select the checkbox, and you'll find the text is rendered as an `<h1>`, or header text. You just named your notebook! To see how this Markdown file is rendered, choose **run all** from the top of the notebook, or the small arrow to the left of the Markdown box.
 
 ## Create runnable code
 

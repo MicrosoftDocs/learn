@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-azure-resources-with-rbac.5-grant-access
+title: Exercise - Grant access using Azure RBAC and the Azure portal
 metadata:
+  unitType: exercise
   title: Exercise - Grant access using Azure RBAC and the Azure portal
   description: Exercise - Grant access using Azure RBAC and the Azure portal
-  ms.date: 09/24/2018
+  ms.date: 09/30/2022
   author: rolyon
   ms.author: rolyon
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Grant access using Azure RBAC and the Azure portal
-labId: 46468
-labModal: true
 durationInMinutes: 8
 content: |
   [!include[](includes/5-grant-access.md)]

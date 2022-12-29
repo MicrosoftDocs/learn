@@ -68,7 +68,7 @@ Completing these steps is all it takes to create a chart. Now, let's configure t
 
 1. To open the editor in the current directory, run `code .` .
 
-1. Open the `Chart.yaml` file.
+1. In the left menu, expand the `kubernetes` folder, open the `contoso-website` folder,  and open the `Chart.yaml` file.
 
     `Chart.yaml` is the file that names the chart. This file is where Helm looks for information about the chart itself. You should have a file that looks like this example:
 
@@ -110,7 +110,7 @@ Completing these steps is all it takes to create a chart. Now, let's configure t
 
 ## Create a deployment
 
-1. In the left menu, go to the `kubernetes` folder. Find the `deployment.yaml` file in the templates folder.
+1. In the left menu, go to the `kubernetes` folder. Find the `deployment.yaml` file in the `templates` folder.
 
     The file should look like this example:
 
@@ -143,7 +143,7 @@ Completing these steps is all it takes to create a chart. Now, let's configure t
                   name: http
     ```
 
-    Next, we add templating for this deployment, beginning with the `namespace` and `name` keys.
+    Next, we'll add templating for this deployment, beginning with the `namespace` and `name` keys.
 
 1. In the `metadata` section, add a new key called `namespace`.  The key should have the following configuration:
 
@@ -199,7 +199,7 @@ Completing these steps is all it takes to create a chart. Now, let's configure t
             app: contoso-website
         spec:
           containers:
-            - image: {{ .Values.image.registry }}/{{ .Values.image.name }}:{{ default "latest" .Values.image.tag }}
+            - image: {{ .Values.image.registry }}.azurecr.io/{{ .Values.image.name }}:{{ default "latest" .Values.image.tag }}
               name: contoso-website
               resources:
                 requests:
@@ -219,7 +219,7 @@ Completing these steps is all it takes to create a chart. Now, let's configure t
 
 ## Create an empty YAML file
 
-1. In the root of the contoso-website directory, open the `values.yaml` file.
+1. In the root of the `contoso-website` directory, open the `values.yaml` file.
 
 1. Delete all contents in the file, so you have an empty YAML file.
 
@@ -233,9 +233,9 @@ Helm uses the `values.yaml` file to retrieve all the template values that start 
 
 This file should have the same structure of the file you use to call variables. Let's take a quick look in the `deployment.yaml` file you edited to see the structure.
 
-Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Values.image.tag` in the deployment.yaml file.
+Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Values.image.tag` in the `deployment.yaml` file.
 
-1. Create the `values.yaml` file so that it looks like this example:
+1. Edit the `values.yaml` file so that it looks like this example:
 
     ```yaml
     image:
@@ -250,7 +250,7 @@ Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Value
 
 ## Create a service
 
-1. Find and open the `service.yaml` file.
+1. Find and open the `service.yaml` file in the `templates` folder.
 
 1. In the `metadata` section of the file, add a new key called `namespace`. Use the same value that you used in the `deployment.yaml` file.
 
@@ -361,7 +361,7 @@ Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Value
 
     ```yaml
     image:
-      repository: <acr-name>
+      registry: <your-acr-name>
       name: contoso-website
       tag: latest
 

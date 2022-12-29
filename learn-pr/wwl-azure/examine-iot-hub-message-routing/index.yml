@@ -20,7 +20,7 @@ prerequisites: |
   Ability to:
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
   - Describe the features and capabilities of IoT Hub.
-iconUrl: /learn/achievements/iot-hub-message-routing.svg
+iconUrl: /training/achievements/iot-hub-message-routing.svg
 levels:
 - intermediate
 roles:

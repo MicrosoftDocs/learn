@@ -2,12 +2,11 @@
 uid: learn.wwl.monitor-data-real-time-power-bi
 metadata:
   title: Monitor data in real-time with Power BI
-  description: "Describe real-time analytics in Power BI using automatic page refresh, real-time dashboards, and auto-refresh in paginated reports."
-  ms.date: 06/30/2022
+  description: "Monitor data in real-time with Power BI"
+  ms.date: 12/20/2022
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Monitor data in real-time with Power BI
 summary: Describe real-time analytics in Power BI using automatic page refresh, real-time dashboards, and auto-refresh in paginated reports.
 abstract: |
@@ -18,7 +17,7 @@ abstract: |
   - Set up auto-refresh paginated reports.
 prerequisites: |
   - Experience developing Power BI data models and creating reports and dashboards, and familiarity with DirectQuery storage mode.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/monitor-data-real-time-power-bi.svg
 levels:
 - intermediate
 roles:

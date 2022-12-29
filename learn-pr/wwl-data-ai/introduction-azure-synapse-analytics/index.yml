@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-to-azure-synapse-analytics
 metadata:
   title: Introduction to Azure Synapse Analytics
   description: "Introduction to Azure Synapse Analytics"
-  ms.date: 08/03/2022
+  ms.date: 08/17/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   Before completing this module, you should have the following prerequisite knowledge and experience:
   - Familiarity with cloud computing concepts and Microsoft Azure.
   - Familiarity with fundamental data concepts.
-iconUrl: /learn/achievements/introduction-to-azure-synapse-analytics.svg
+iconUrl: /training/achievements/introduction-to-azure-synapse-analytics.svg
 levels:
 - beginner
 roles:

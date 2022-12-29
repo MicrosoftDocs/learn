@@ -19,7 +19,7 @@ Defender for IoT isn't suited for devices that aren't connected to a network. De
 
 ## Is Defender for IoT the right choice?
 
-Let's reconsider our smart building management company from the first unit. The key points from that scenario were:
+Let's reconsider our smart building-management company from the first unit. The key points from that scenario were:
 
 - Users include security and operations teams. Officers from both teams need access to security data.
 - Users must be able to view all equipment running on the network and communication paths between subsystems.

@@ -4,8 +4,10 @@ metadata:
   title: Azure RTOS ThreadX first project
   description: Learn how to create a Hello World project by using Azure RTOS ThreadX.
   ms.date: 01/27/2022
-  author: EdLamie
-  ms.author: pacorte
+  author: timlt
+  ms.author: timlt
+  ms.reviewer: liydu
+  manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure RTOS ThreadX first project
@@ -18,10 +20,10 @@ abstract:  |
    - Understand the fundamentals required for an Azure RTOS ThreadX real-time solution.
    - Design and debug the ThreadX solution using a hands-on approach with GitHub Codespace or Visual Studio.
 prerequisites: |
-  - [Set up your environment](/learn/modules/introduction-azure-rtos/2-set-up-environment)
+  - [Set up your environment](/training/modules/introduction-azure-rtos/2-set-up-environment)
   - Working knowledge of C or C++, GitHub and Visual Studio
-  - Previous modules in this [learning path](/learn/paths/azure-rtos-threadx)
-iconUrl: /learn/achievements/iot/create-first-threadx-project.svg
+  - Previous modules in this [learning path](/training/paths/azure-rtos-threadx)
+iconUrl: /training/achievements/iot/create-first-threadx-project.svg
 levels:
 - beginner
 roles:

@@ -11,4 +11,4 @@ In this module, you saw how to connect to the Internet from within a .NET MAUI a
 ## Learn more
 
 - [Make HTTP requests in a C# console app](/dotnet/csharp/tutorials/console-webapiclient)
-- [HTTP with .NET](/dotnet/core/extensions/http-client)
+- [HTTP with .NET](/dotnet/api/system.net.http.httpclient)

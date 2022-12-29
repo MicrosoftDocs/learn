@@ -1,4 +1,4 @@
-As you added pages to the Blazing Pizza app, you'll have noticed we've been copying the navigation HTML. Blazor has built-in support to create this kind of page scaffolding in one place. They're Blazor layouts. 
+As you added pages to the Blazing Pizza app, you'll have noticed we've been copying the navigation HTML. Blazor has built-in support to create this kind of page scaffolding in one place. They're called Blazor layouts. 
 
 We now have lots of duplicated HTML on several pages. Next, you'll create a layout for the whole app so that you can add navigation and company information in one single place.
 
@@ -6,8 +6,8 @@ In this exercise, you'll create a **MainLayout** component. You'll see how you c
 
 ## Add a MainLayout component
 
-1. In Visual Studio Code, on the menu, select **File** > **New File**.
-1. Select C# as the language.
+1. In Visual Studio Code, on the menu, select **File** > **New Text File**.
+1. Select ASP.NET Razor as the language.
 1. Create a layout component, and copy the navigation HTML from any page.
 
     ```razor

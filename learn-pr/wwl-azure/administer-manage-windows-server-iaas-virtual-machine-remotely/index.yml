@@ -2,8 +2,8 @@
 uid: learn.wwl.administer-manage-windows-server-iaas-vm-remotely
 metadata:
   title: Administer and manage Windows Server IaaS Virtual Machine remotely
-  description: "You’ll be able to select and use suitable tools and techniques to remotely manage Windows IaaS VMs, and restrict administrative connections to those VMs."
-  ms.date: 10/15/2020
+  description: "Administer and manage Windows Server IaaS Virtual Machine remotely"
+  ms.date: 09/16/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -26,7 +26,7 @@ prerequisites: |
   - Security-related technologies (firewalls, encryption, multi-factor authentication)
   - Windows PowerShell scripting
   - Automation and monitoring
-iconUrl: /learn/achievements/administer-and-manage-windows-server-iaas-vm-remotely.svg
+iconUrl: /training/achievements/administer-and-manage-windows-server-iaas-vm-remotely.svg
 levels:
 - intermediate
 roles:

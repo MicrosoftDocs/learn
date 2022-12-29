@@ -26,7 +26,7 @@ summary: |
 
   </details>
 
-  And don't forget to watch _Space Jam: A New Legacy_ coming Summer 2021!
+
 
   In this learning path you will:
   - Use Python, Pandas, and Visual Studio Code to understand basketball stats
@@ -42,9 +42,9 @@ summary: |
   © 2021 Warner Bros. Ent. All Rights Reserved.
 prerequisites: |
   - [Visual Studio Code, with the Python Extension installed](https://aka.ms/LearnOnVSCode)
-  - An [Azure account](/learn/modules/create-an-azure-account/)
-  - A [GitHub account](/learn/modules/introduction-to-github/)
-iconUrl: /learn/achievements/student-evangelism/optimize-basketball-games-with-machine-learning.svg
+  - An [Azure account](/training/modules/create-an-azure-account/)
+  - A [GitHub account](/training/modules/introduction-to-github/)
+iconUrl: /training/achievements/student-evangelism/optimize-basketball-games-with-machine-learning.svg
 levels:
 - beginner
 roles:

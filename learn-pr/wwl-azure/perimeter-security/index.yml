@@ -18,7 +18,7 @@ abstract: |
   - Explore your end-to-end perimeter security configuration based on your security posture
 prerequisites: |
   - None
-iconUrl: /learn/achievements/perimeter-security.svg
+iconUrl: /training/achievements/perimeter-security.svg
 levels:
 - intermediate
 roles:

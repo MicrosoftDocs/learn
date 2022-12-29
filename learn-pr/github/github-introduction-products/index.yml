@@ -19,7 +19,7 @@ prerequisites: |
   - Familiarity with GitHub, repositories, and the basics of managing individual accounts is required
   - A high-level familiarity with GitHub's product plans and features would be helpful, but not required
 ratingEnabled: true
-iconUrl: /learn/achievements/github-introduction-products.svg
+iconUrl: /training/achievements/github-introduction-products.svg
 levels:
 - intermediate
 roles:

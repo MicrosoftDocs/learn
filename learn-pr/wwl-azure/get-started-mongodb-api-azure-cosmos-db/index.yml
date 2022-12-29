@@ -1,23 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-mongodb-api-azure-cosmos-db
 metadata:
-  title: Get Started with the MongoDB API in Azure Cosmos DB
-  description: "Learn Azure Cosmos DB API for MongoDB basics."
-  ms.date: 06/28/2022
+  title: Get started with the MongoDB API in Azure Cosmos DB
+  description: "Get started with the MongoDB API in Azure Cosmos DB"
+  ms.date: 12/28/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Get Started with the MongoDB API in Azure Cosmos DB
-summary: This Module will introduce Azure Cosmos DB API for MongoDB accounts.  It will help you get started, create your first objects and connect to your account.
+title: Get started with the MongoDB API in Azure Cosmos DB
+summary: This Module will introduce Azure Cosmos DB for MongoDB accounts. It will help you get started, create your first objects and connect to your account.
 abstract: |
-  *   Estimate RU/s using the Azure Cosmos DB capacity planner for the Azure Cosmos DB API for MongoDB.
+  *   Estimate RU/s using the Azure Cosmos DB capacity planner for the Azure Cosmos DB for MongoDB.
   *   Learn about support for different MongoDB features.
-  *   Learn how to create accounts, databases and collections using the Azure Cosmos DB API for MongoDB.
-  *   Learn how to connect and query using the Azure Cosmos DB API for MongoDB.
+  *   Learn how to create accounts, databases and collections using the Azure Cosmos DB for MongoDB.
+  *   Learn how to connect and query using the Azure Cosmos DB for MongoDB.
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft JavaScript, Java, Python, C# or a similar programming language.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/get-started-mongodb-api-azure-cosmos-db.svg
 levels:
 - intermediate
 roles:

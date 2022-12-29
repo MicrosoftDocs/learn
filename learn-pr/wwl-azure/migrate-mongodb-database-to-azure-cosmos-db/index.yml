@@ -2,21 +2,21 @@
 uid: learn.wwl.migrate-mongodb-database-to-azure-cosmos-db
 metadata:
   title: Migrate a MongoDB database to Azure Cosmos DB
-  description: "Online and offline migration option to Azure Cosmos DB API for MongoDB."
-  ms.date: 07/08/2022
+  description: "Migrate a MongoDB database to Azure Cosmos DB"
+  ms.date: 12/28/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Migrate a MongoDB database to Azure Cosmos DB
-summary: In this module we will learn several ways to migrate existing MongoDB databases to Azure Cosmos DB API for MongoDB.
+summary: In this module we will learn several ways to migrate existing MongoDB databases to Azure Cosmos DB for MongoDB.
 abstract: |
   *   Pre-migration steps and considerations
   *   Online migrations
   *   Offline migrations
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft JavaScript, Java, Python, C# or a similar programming language.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/migrate-mongodb-database-to-azure-cosmos-db.svg
 levels:
 - intermediate
 roles:

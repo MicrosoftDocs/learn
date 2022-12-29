@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Create and run a basic workflow
   description: Create a basic workflow to run deployments.
   ms.date: 07/20/2022
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

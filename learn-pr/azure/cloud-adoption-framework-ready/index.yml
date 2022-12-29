@@ -20,7 +20,7 @@ prerequisites: |
   - Familiarity with the Azure cloud environment, including network configuration, network connectivity, and Azure Active Directory 
   - Familiarity with Azure governance tools, including Azure Policy and Azure Resource Manager templates 
   - A general understanding of the environmental requirements for proceeding with your cloud adoption plan  
-iconUrl: /learn/achievements/cloud-adoption-framework-ready.svg
+iconUrl: /training/achievements/cloud-adoption-framework-ready.svg
 ratingEnabled: true
 levels:
 - beginner

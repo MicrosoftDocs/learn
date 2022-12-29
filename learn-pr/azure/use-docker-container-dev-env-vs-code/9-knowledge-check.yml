@@ -3,7 +3,7 @@ uid: learn.use-docker-container-dev-env-vs-code.10-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: A set of questions to check the knowledge you've gained through this Learn module about Remote - Containers in Visual Studio Code.
+  description: A set of questions to check the knowledge you've gained through this Learn module about Dev Containers in Visual Studio Code.
   ms.date: 04/07/2022
   author: bamurtaugh
   ms.author: brmurtau

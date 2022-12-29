@@ -17,7 +17,7 @@ prerequisites: |
   - Basic experience with implementing and managing IaaS services in Microsoft Azure
 summary: |
   Learn how to administer Windows Server securely using the appropriate management tools. Streamline administration of Windows Server with Just Enough Administration (JEA). You'll also learn how to implement hybrid technologies in Windows Server management.
-iconUrl: /learn/achievements/manage-windows-servers-and-workloads-in-a-hybrid-environment.svg
+iconUrl: /training/achievements/manage-windows-servers-and-workloads-in-a-hybrid-environment.svg
 levels:
 - intermediate
 roles:

@@ -32,7 +32,7 @@ prerequisites: |
   - Understand memory virtualization
   - Understand I/O virtualization
   - Know about the different types of data and how they are stored
-iconUrl: /learn/achievements/cmu-cloud-developer/case-studies-distributed-file-systems.svg
+iconUrl: /training/achievements/cmu-cloud-developer/case-studies-distributed-file-systems.svg
 hidden: true
 levels:
 - beginner

@@ -99,7 +99,7 @@ az storage blob show \
   --name myBlob
 ```
 
-As with uploading a blob, the `az storage blob copy` command can overwrite an existing blob with the same name in the destination container. You can provide ETags with the `--destination-if-match` and `--destination-if-none-match` parameters to only overwrite the destination of the ETag matches (or not). Also, this command has the `--destination-if-modified-since` and `--destination-if-unmodified-since` parameters, which will only overwrite the destination blob if it has or hasn't changed since a specified date and time. There are similar parameters for validating the source blob (`--source-if-match`, `--source-if-none-match`,  `--source-if-modified-since`, and `--source-if-unmodified-since`). Use these parameters to conditionally copy a blob only if it hasn't changed recently. They're useful if you're migrating older blobs to cool storage from hot storage.
+As with uploading a blob, the `az storage blob copy` command can overwrite an existing blob with the same name in the destination container. You can provide ETags with the `--destination-if-match` and `--destination-if-none-match` parameters to only overwrite the destination if the ETag matches (or not). Also, this command has the `--destination-if-modified-since` and `--destination-if-unmodified-since` parameters, which will only overwrite the destination blob if it has or hasn't changed since a specified date and time. There are similar parameters for validating the source blob (`--source-if-match`, `--source-if-none-match`,  `--source-if-modified-since`, and `--source-if-unmodified-since`). Use these parameters to conditionally copy a blob only if it hasn't changed recently. They're useful if you're migrating older blobs to cool storage from hot storage.
 
 If you're moving a collection of blobs, run the `az storage blob copy start-batch` command. This command copies blobs from a source storage account and container to a destination storage account and container, but keeps the names of the blobs the same in both containers. you can specify a pattern for matching the names of the source blobs, but the ETag and date condition options aren't available with this command. The following example copies all blobs with names that match the pattern *\*.dat* from one storage account to another. You can also include the `--dryrun` parameter, which causes the command to display the names of the blobs to be copied, but doesn't actually copy them.
 
@@ -116,7 +116,7 @@ This command runs asynchronously. Run the `az storage blob list` command on the 
 
 ### Remove blobs from Azure storage
 
-The commands in the previous section copy blobs from a source container to a destination, leaving the source blobs intact. After you've copied a blob to a destination, you can remove it from the source container. Do this by running the `az storage blob delete` command.
+The commands in the previous section copy blobs from a source container to a destination, leaving the source blobs intact. After you've copied a blob to a destination, you can remove it from the source container by running the `az storage blob delete` command.
 
 ```azurecli
 az storage blob delete \

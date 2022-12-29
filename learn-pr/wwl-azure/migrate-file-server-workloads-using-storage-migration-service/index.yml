@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Experience performing basic Windows Server administration tasks
   - General understanding of Windows Server file servers
-iconUrl: /learn/achievements/4-migrate-file-server-workloads-using-storage-migration-service.svg
+iconUrl: /training/achievements/4-migrate-file-server-workloads-using-storage-migration-service.svg
 levels:
 - intermediate
 roles:

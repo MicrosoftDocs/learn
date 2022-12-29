@@ -8,7 +8,7 @@
 
     Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
 
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
+    [Introduction unit guidance](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
 -->
 You can improve sign-in security by helping users to set up Microsoft Authenticator whenever they sign in.
 
@@ -21,11 +21,11 @@ You can improve sign-in security by helping users to set up Microsoft Authentica
 
     Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
 
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=main#images)
+    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.learn.microsoft.com/help/contribute/markdown-reference?branch=main#images)
 
     Optional: a "scenario video" that visualizes the scenario
 
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
+    [Scenario guidance](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-scenarios)
     [Scenario video guidance](TBD)
  -->
 ## Example scenario

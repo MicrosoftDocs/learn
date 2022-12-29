@@ -20,7 +20,7 @@ abstract: |
   *   Configure Profile Containers.
   *   Manage Rule Sets and application masking.
 prerequisites: ""
-iconUrl: /learn/achievements/1-implement-and-manage-fslogix.svg
+iconUrl: /training/achievements/1-implement-and-manage-fslogix.svg
 levels:
 - intermediate
 roles:

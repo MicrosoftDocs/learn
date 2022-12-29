@@ -19,7 +19,7 @@ prerequisites: |
   - Basic familiarity with Azure SQL Database
 summary: |
   Determine a migration approach for on-premises workloads and databases and ready those resources for migration to Microsoft Azure. Migrate on-premises Hyper-V-based application workloads and relational data to the cloud using Azure Migrate.
-iconUrl: /learn/achievements/migrate-application-workloads-data-azure.svg
+iconUrl: /training/achievements/migrate-application-workloads-data-azure.svg
 levels:
 - intermediate
 roles:
@@ -36,6 +36,6 @@ modules:
 - learn.design-your-migration-to-azure
 - learn.wwl.prepare-onpremises-workloads-migration-azure
 - learn.wwl.migrate-onpremises-workloads-azure
-- learn.migrate-sql-server-relational-data
+- learn-wwl.migrate-sql-workloads-azure-sql-databases
 trophy:
   uid: learn.wwl.migrate-application-workloads-data-azure.trophy

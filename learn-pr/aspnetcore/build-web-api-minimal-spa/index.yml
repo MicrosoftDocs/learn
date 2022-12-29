@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
 title: Create a full stack application by using React and minimal API for ASP.NET Core
 summary: Learn how to create a full stack application by using React and minimal API for ASP.NET Core.
 abstract: |
@@ -16,7 +16,7 @@ abstract: |
   - Construct a front-end app by using a single-page application (SPA) framework.
   - Connect an API in ASP.NET Core to an SPA application.
   - Configure the back-end application to use cross-origin resource sharing (CORS).
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
@@ -26,7 +26,6 @@ products:
   - vs
   - dotnet
   - aspnet-core
-  - vs-code
 prerequisites: |
   - Fundamental understanding of JavaScript.
   - Node.js installed.

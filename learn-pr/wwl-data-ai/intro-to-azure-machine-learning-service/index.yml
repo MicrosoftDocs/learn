@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Knowledge of Python
   - Experience of training machine learning models using frameworks such as scikit-learn
-iconUrl: /learn/achievements/intro-to-azure-machine-learning-service-badge.svg
+iconUrl: /training/achievements/intro-to-azure-machine-learning-service-badge.svg
 levels:
 - beginner
 roles:

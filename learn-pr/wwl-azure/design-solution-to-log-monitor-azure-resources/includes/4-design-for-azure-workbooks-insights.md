@@ -1,129 +1,60 @@
-## Design for Azure workbooks
+Azure Workbooks is a feature of Azure Monitor. Workbooks provide a flexible canvas for data analysis and the creation of rich visual reports within the Azure portal. Customers use Workbooks to explore the usage of an app, to do root cause analysis, put together an operational playbook, and many other tasks.
 
-Workbooks provide a flexible canvas for data analysis and the creation of rich visual reports within the Azure portal. They allow you to tap into multiple data sources from across Azure and combine them into unified interactive experiences. Authors of workbooks can transform this data to provide insights into the availability, performance, usage, and overall health of the underlying components. For instance, analyzing performance logs from virtual machines to identify high CPU or low memory instances and displaying the results as a grid in an interactive report.
+The real power of Workbooks is the ability to combine data from disparate sources within a single report. You can create composite resource views or joins across resources enabling richer data and insights that would otherwise be impossible. 
 
-Workbooks are currently compatible with the following data sources:
+### Things to know about Azure Workbooks
 
-- [Logs](/azure/azure-monitor/visualize/workbooks-data-sources)
+Tailwind Traders would like to use Azure Workbooks in its monitoring strategy. Think about how the following characteristics of Workbooks.
 
-- [Metrics](/azure/azure-monitor/visualize/workbooks-data-sources)
+- Azure Workbooks lets you tap into multiple data sources from across Azure and combine them into unified interactive experiences. 
 
-- [Azure Resource Graph](/azure/azure-monitor/visualize/workbooks-data-sources)
+- Authors of workbooks can transform ingested data to provide insights into the availability, performance, usage, and overall health of the underlying components.
 
-- [Alerts](/azure/azure-monitor/visualize/workbooks-data-sources)
+- You can analyze performance logs from virtual machines to identify high CPU or low memory instances and display the results as a grid in an interactive report.
 
-- [Workload Health](/azure/azure-monitor/visualize/workbooks-data-sources)
+- Workbooks are currently compatible with the following data sources:
+   - [Logs](/azure/azure-monitor/visualize/workbooks-data-sources)
+   - [Metrics](/azure/azure-monitor/visualize/workbooks-data-sources)
+   - [Azure Resource Graph](/azure/azure-monitor/visualize/workbooks-data-sources)
+   - [Alerts](/azure/azure-monitor/visualize/workbooks-data-sources)
+   - [Workload Health](/azure/azure-monitor/visualize/workbooks-data-sources)
+   - [Azure Resource Health](/azure/azure-monitor/visualize/workbooks-data-sources)
+   - [Azure Data Explorer](/azure/azure-monitor/visualize/workbooks-data-sources)
 
-- [Azure Resource Health](/azure/azure-monitor/visualize/workbooks-data-sources)
+### Azure insights and Workbooks
 
-- [Azure Data Explorer](/azure/azure-monitor/visualize/workbooks-data-sources)
+The reputation of your organization depends on the performance, reliability, and security of its systems. It's critical to monitor your systems closely to identify any performance problems or attacks before they can affect users. If your payment system can't process user transactions during a high-volume holiday sales period, your customers might lose confidence in your business. 
 
- 
+For an effective monitoring solution, combine Azure insights about your resources and apps with Azure Workbooks.
 
-But the real power of workbooks is the ability to combine data from disparate sources within a single report. This allows for the creation of composite resource views or joins across resources enabling richer data and insights that would otherwise be impossible. 
+### Things to know about Azure insights
 
-Customers use workbooks in several ways—exploring the usage of an app, going through a root cause analysis, and putting together an operational playbook, for example.
+Azure insights can help you identify performance issues in the Tailwind Traders architecture. Consider these characteristics about insights:
 
-How would you leverage Azure workbooks for Tailwind Traders? What recommendations would you have based on their Azure environment and business needs? 
+- Azure insights provide a customized monitoring experience for particular applications and services.
 
-## Design for Azure Insights 
+- Azure insights collect and analyze both logs and metrics. 
 
-The reputation of your organization depends on the performance, reliability, and security of its systems. It's critical to monitor your systems closely to identify any performance problems or attacks before they can affect users. For example, if your payment system is unable to process user transactions during a high-volume holiday sales period, your customers will likely lose confidence in your business. Designing insights as a part of your overall architecture will help identify performance issues. 
+- Many insights are provided as features of Azure Monitor. Here are some examples:
 
-### Insights
+   | Insight | Description |
+   | --- | --- |
+   | [Application Insights](/azure/azure-monitor/app/app-insights-overview)| Monitor your live web application on any platform by using this extensible Application Performance Management (APM) service that's available in Azure Monitor. |
+   | [Container insights](/azure/azure-monitor/containers/container-insights-overview)| Check the performance of container workloads deployed to either Azure Container Instances or managed Kubernetes clusters hosted on Azure Kubernetes Service (AKS). |
+   | [Networks insights](/azure/azure-monitor/insights/network-insights-overview)| Obtain comprehensive information on the health and metrics for all your network resources. Use the advanced search capability to identify resource dependencies. Searching by your website name to locate resources that host your website. |
+   | [Resource group insights](/azure/azure-monitor/insights/resource-group-insights)| Triage and diagnose any problems your individual resources encounter, while offering context as to the health and performance of the resource group as a whole. |
+   | [Virtual machine insights](/azure/azure-monitor/vm/vminsights-overview)| Monitor your Azure Virtual Machines, Virtual Machine Scale Sets, and other virtual machines. Analyze the performance and health of your Windows and Linux Virtual Machines, and monitor their processes and dependencies on other resources and external processes. |   
+   | [Azure Cache for Redis insights](/azure/azure-monitor/insights/redis-cache-insights-overview)| Review a unified, interactive report of overall performance, failures, capacity, and operational health. |   
+   | [Azure Cosmos DB insights](/azure/azure-monitor/insights/cosmosdb-insights-overview)| Get information on the overall performance, failures, capacity, and operational health of all your Azure Cosmos DB resources in a unified interactive experience. |  
+   | [Azure Key Vault insights](/azure/azure-monitor/insights/key-vault-insights-overview)| Monitor your key vaults by using a unified report of your Key Vault requests, performance, failures, and latency. |    
+   | [Azure Storage insights](/azure/storage/common/storage-insights-overview?toc=/azure/azure-monitor/toc.json)| Do comprehensive monitoring of your Storage accounts via a unified report of your Storage performance, capacity, and availability. |
 
-Insights provide a customized monitoring experience for particular applications and services. They collect and analyze both logs and metrics. Here are just a few of the insights that are provided. 
+### Things to consider when using Azure insights and Workbooks 
 
-| **Insight**| **Description** |
-| - | - |
-| [Application Insights](/azure/azure-monitor/app/app-insights-overview)| Extensible Application Performance Management (APM) service to monitor your live web application on any platform. |
-| [Container insights](/azure/azure-monitor/containers/container-insights-overview)| Monitors the performance of container workloads deployed to either Azure Container Instances or managed Kubernetes clusters hosted on Azure Kubernetes Service (AKS). |
-| [Cosmos DB insights](/azure/azure-monitor/insights/cosmosdb-insights-overview)| Provides information on the overall performance, failures, capacity, and operational health of all your Azure Cosmos DB resources in a unified interactive experience. |
-| [Networks insights](/azure/azure-monitor/insights/network-insights-overview)| Provides comprehensive information on the health and metrics for all your network resource. The advanced search capability helps you identify resource dependencies, enabling scenarios like identifying resource that are hosting your website, by simply searching for your website name. |
-| [Resource Group insights](/azure/azure-monitor/insights/resource-group-insights)| Triage and diagnose any problems your individual resources encounter, while offering context as to the health and performance of the resource group as a whole. |
-| [Storage insights](/azure/storage/common/storage-insights-overview?toc=/azure/azure-monitor/toc.json)| Provides comprehensive monitoring of your Azure Storage accounts by delivering a unified report of your Azure Storage services performance, capacity, and availability. |
-| [VM insights](/azure/azure-monitor/vm/vminsights-overview)| Monitors your Azure virtual machines (VM) and virtual machine scale sets at scale. It analyzes the performance and health of your Windows and Linux VMs, and monitors their processes and dependencies on other resources and external processes. |
-| [Key Vault insights](/azure/azure-monitor/insights/key-vault-insights-overview)| Provides comprehensive monitoring of your key vaults by delivering a unified report of your Key Vault requests, performance, failures, and latency. |
-| [Azure Cache for Redis insights](/azure/azure-monitor/insights/redis-cache-insights-overview)| Provides a unified, interactive report of overall performance, failures, capacity, and operational health. |
+Tailwind Traders is interested in using Azure insights and Workbooks in their monitoring strategy. What recommendations would you suggest based on their Azure environment and business needs? Consider these points as you prepare your plan.
 
+- **Consider Azure Workbooks**. Explore how Tailwind Traders apps can be used with Azure Workbooks. Investigate the root cause analysis of incidents, and put together an operational playbook for your team.
 
- 
+- **Consider Azure insights and data analysis**. Include Azure insights for a custom monitoring experience for Tailwind Traders apps and services. Review insights about your network, VMs, and other Azure resources. Collect Logs and Metrics data from Workbooks and analyze the data. 
 
-### Use Application Insights to:
-
-- Analyze and address issues and problems that affect your application's health and performance.
-
-- Improve your application's development lifecycle.
-
-- Measure your user experience and analyze users' behavior.
-
-Application Insights is aimed at the development team, to help you understand how your app is performing and how it's being used. It monitors:
-
-- **Request rates, response times, and failure rates** - Find out which pages are most popular, at what times of day, and where your users are. Determine which pages perform best. If your response times and failure rates go high when there are more requests, then perhaps you have a resourcing problem.
-
-- **Dependency rates, response times, and failure rates** - Find out whether external services are slowing you down.
-
-- **Exceptions** - Analyze the aggregated statistics, or pick specific instances and drill into the stack trace and related requests. Both server and browser exceptions are reported.
-
-- **Page views and load performance** - reported by your users' browsers.
-
-- **AJAX calls** from web pages - rates, response times, and failure rates.
-
-- **User and session counts**.
-
-- **Performance counters** from your Windows or Linux server machines, such as CPU, memory, and network usage.
-
-- **Host diagnostics** from Docker or Azure.
-
-- **Diagnostic trace logs** from your app - so that you can correlate trace events with requests.
-
-- **Custom events and metrics** that you write yourself in the client or server code, to track business events such as items sold or games won.
-
- 
-
-### Use Azure Monitor VM insights to:
-
-- View the health and performance of your VMs
-
-- Monitor your VMs at-scale across multiple subscriptions and resource groups.
-
-- Want a topology view that shows the processes, and network connection details of your VMs and scale sets.
-
-- Insights supports Azure virtual machines and scale sets
-
-- Hybrid virtual machines connected with Azure Arc
-
-- On-premises virtual machines
-
-- Virtual machines hosted in another cloud environment
-
- 
-
-### Use Azure Monitor container insights to:
-
-- View the health and performance of your Kubernetes workloads at-scale across multiple subscriptions and resource groups.
-
-- Want visibility into memory and processor performance metrics from controllers, nodes, and containers.
-
-- Want view and store container logs for real time and historical analysis.
-
-- Identify AKS containers that are running on the node and their average processor and memory utilization. This knowledge can help you identify resource bottlenecks.
-
-- Identify processor and memory utilization of container groups and their containers hosted in Azure Container Instances.
-
-- Identify where the container resides in a controller or a pod. This knowledge can help you view the controller's or pod's overall performance.
-
-- Review the resource utilization of workloads running on the host that are unrelated to the standard processes that support the pod.
-
-- Understand the behavior of the cluster under average and heaviest loads. This knowledge can help you identify capacity needs and determine the maximum load that the cluster can sustain.
-
-- Configure alerts to proactively notify you or record it when CPU and memory utilization on nodes or containers exceed your thresholds, or when a health state change occurs in the cluster at the infrastructure or nodes health rollup.
-
-- Integrate with [Prometheus](https://prometheus.io/docs/introduction/overview/) to view application and workload metrics it collects from nodes and Kubernetes using [queries](/azure/azure-monitor/containers/container-insights-log-query) to create custom alerts, dashboards, and perform detailed analysis.
-
-- Monitor container workloads [deployed to AKS Engine](https://github.com/Azure/aks-engine) on-premises and [AKS Engine on Azure Stack](/azure-stack/user/azure-stack-kubernetes-aks-engine-overview).
-
-- Monitor container workloads [deployed to Azure Red Hat OpenShift](/azure/openshift/intro-openshift).
-
-- Monitor container workloads [deployed to Azure Arc enabled Kubernetes](/azure/azure-arc/kubernetes/overview).
-
+- **Consider combined data sources and visual reporting**. Combine data from Tailwind Traders sources in a single report. Create composite resource views for more robust data and greater insights. Prepare rich visual reports within the Azure portal.

@@ -22,7 +22,7 @@ In this exercise, you'll:
 
     :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Screenshot that shows the Get started with GitHub Actions page on the GitHub website.":::
 
-    At this point, the pipeline is just a file in the `.github/workflows` directory in your repository. GitHub provides the prebuilt components that you need to build most of the pipelines. You'll have a workflow file that looks like this example:
+    At this point, the pipeline is just a blank file in the `.github/workflows` directory in your repository. GitHub provides the prebuilt components that you need to build most of the pipelines. To get started, copy and paste this basic workflow into the **Edit new file** pane:
 
     ```yaml
     # This is a basic workflow to help you get started with Actions
@@ -76,7 +76,7 @@ In this exercise, you'll:
 
 ## Create the trigger
 
-The default file comes with two triggers:
+Our basic workflow file comes with two triggers:
 
 - Any push to the main branch.
 - Any pull request on the main branch.
@@ -103,7 +103,7 @@ Let's work on the jobs you're going to run. In this process, you address both th
 
 GitHub workflows are divided into jobs, and jobs are divided into steps. Each step can have multiple commands and use multiple actions to be executed.
 
-The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubuntu-20.04` which is the environment you want this workflow to run in.
+The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubuntu-20.04`, which is the environment you want this workflow to run in.
 
 1. Rename the `build` key `build_push_image`.
 
@@ -133,7 +133,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
     Next, add other actions to build your Docker image.
 
 1. In the right panel, search for **Docker Login**. Select the first result published by **Docker**.
-    
+  
     :::image type="content" source="../media/6-3-docker-login.png" alt-text="Screenshot showing the search results listing Docker Login.":::
 
     In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
@@ -142,6 +142,10 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     > [!NOTE]
     > Docker action prior to version 2 had the login flow built-in. However, on versions 2 and above, these actions were separated. This is why we need two actions to set the entire workflow correctly.
+
+    Paste the copied YAML below the `actions/checkout@v2` action.
+
+    Your YAML file should look like this example:
 
     ```yml
     name: Build and push the latest build to staging
@@ -159,8 +163,8 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
           - name: Docker Login
             # You may pin to the exact commit or the version.
-            # uses: docker/login-action@f3364599c6aa293cdc2b8391b1b56d0c30e45c8a
-            uses: docker/login-action@v1
+            # uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
+            uses: docker/login-action@v2.1.0
             with:
               # Server address of Docker registry. If not set then will default to Docker Hub
               registry: # optional
@@ -168,11 +172,13 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
               username: # optional
               # Password or personal access token used to log against the Docker registry
               password: # optional
+              # Specifies whether the given registry is ECR (auto, true or false)
+              ecr: # optional, default is auto
               # Log out from the Docker registry at the end of a job
               logout: # optional, default is true
     ```
 
-1. Again, in the right panel, search for **Build and push Docker images**. Select the first result published by **Docker**.
+1. Again, in the right panel, search for **Build and push Docker images** in the **Marketplace**. Select the first result published by **Docker**.
 
     :::image type="content" source="../media/6-3-docker-action.png" alt-text="Screenshot that shows the search results that list Build and push Docker images.":::
 
@@ -214,8 +220,8 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
           - name: Build and push Docker images
             # You may pin to the exact commit or the version.
-            # uses: docker/build-push-action@e1b7f96249f2e4c8e4ac1519b9608c0d48944a1f
-            uses: docker/build-push-action@v2
+            # uses: docker/build-push-action@c56af957549030174b10d6867f20e78cfd7debc5
+            uses: docker/build-push-action@v3.2.0
             with:
               # Here we'll have a list of parameters
     ```
@@ -225,21 +231,21 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     You can adjust usage for this action. For more information, see the [GitHub build-push-action documentation](https://github.com/docker/build-push-action/tree/v2?azure-portal=true).
 
-1. Rename the `name` key `Build and push staging image`.
+1. Rename the `name` key from `Build and push Docker images` to `Build and push staging images`.
 
 1. You'll use only a handful of the parameters that are available for these actions.
 
     Add the values according to the following table:
 
-    |Key name     | Used on action |Value                                           |
-    |-------------|--------|------------------------------------------------|
+    |Key name     | Used on action |Value                                         |
+    |-------------|--------|------------------------------------------------------|
+    |registry     |`docker/login`|`${{ secrets.ACR_NAME }}`                       |
     |username     |`docker/login`|`${{ secrets.ACR_LOGIN }}`                      |
     |password     |`docker/login`|`${{ secrets.ACR_PASSWORD }}`                   |
-    |registry     |`docker/login`|`${{ secrets.ACR_NAME }}`                       |
-    |repository   |`docker/build-and-push`|contoso-website                                 |
-    |tags         |`docker/build-and-push`|latest                                          |
-    |context      |`docker/build-and-push`|`.`                                             |
-    |push      |`docker/build-and-push`|`true`                                             |
+    |context      |`docker/build-and-push`|`.`                                    |
+    |push         |`docker/build-and-push`|`true`                                 |
+    |tags         |`docker/build-and-push`|${{secrets.ACR_NAME}}/contoso-website:latest     |
+
 
     You can delete all the other keys because we won't use them in this exercise.
 
@@ -274,7 +280,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
               push: true
     ```
 
-1. Before you save the file, we'll also add another action between the checkout action and the login action to set up the build engine for Docker to use. This action is called `docker/setup-buildx-action` and you'll use `v1`.
+1. Before you save the file, we'll also add another action between the checkout action and the login action, to set up the build engine for Docker to use. This action is called `docker/setup-buildx-action` and you'll use `v1`.
 
     To set this action, copy the below snippet and paste it between the checkout and the login actions.
 
@@ -313,8 +319,8 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
             uses: docker/build-push-action@v2
             with:
               context: .
-              tags: ${{secrets.ACR_NAME}}/contoso-website:latest
               push: true
+              tags: ${{secrets.ACR_NAME}}/contoso-website:latest
     ```
 
 1. To commit the changes, select the **Start commit** button. Enter a description for the commit, and then select the **Commit new file** button:
@@ -325,9 +331,9 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
 ## Set the secrets
 
-1. On the repository start page, select the **Settings** tab. In the menu, select **Secrets**.
+1. On the repository start page, select the **Settings** tab. In the menu under **Security**, select **Secrets** and choose **Actions**. The **Actions Secrets** pane opens.
 
-1. Select **New secret**.
+1. Select **New repository secret**.
 
 1. Create the `ACR_NAME` secret:
 
@@ -339,9 +345,9 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
        az acr list --query "[?contains(resourceGroup, 'mslearn-gh-pipelines')].loginServer" -o table
        ```
 
-    1. For **Value**, enter value of the secret.
+    1. For **Secret**, enter the value returned by the Cloud Shell command and select **Add secret**.
 
-1. Create the `ACR_LOGIN` secret:
+1. Select **New repository secret** and create the `ACR_LOGIN` secret:
 
     1. For **Name**, enter **ACR_LOGIN**.
 
@@ -351,9 +357,9 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
        az acr credential show --name <ACR_NAME> --query "username" -o table
        ```
 
-    1. For **Value**, enter the value of the secret.
+    1. For **Secret**, enter the value and select **Add secret**.
 
-1. Create the `ACR_PASSWORD` secret:
+1. Select **New repository secret** and create the `ACR_PASSWORD` secret:
 
     1. For **Name**, enter **ACR_PASSWORD**.
 
@@ -363,7 +369,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
        az acr credential show --name <ACR_NAME> --query "passwords[0].value" -o table
        ```
 
-    1. For **Value**, enter the value of the secret.
+    1. For **Secret**, enter the value and select **Add secret**.
 
 ## Push the image
 
@@ -371,10 +377,10 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
 1. Select the only execution in the list.
 
-1. On the right side, select **Rerun jobs**, and then select **Rerun all jobs**.
+1. On the right side, select **Re-run jobs**, and then select **Re-run all jobs**.
 
-    :::image type="content" source="../media/6-7-rerun-jobs.png" alt-text="Screenshot that shows the Rerun jobs and Rerun all jobs buttons.":::
+    :::image type="content" source="../media/6-7-rerun-jobs.png" alt-text="Screenshot that shows the Re-run jobs and Re-run all jobs buttons.":::
 
-1. In Cloud Shell, run `az acr repository list --name <ACR_NAME> -o table` to confirm that a repository named `contoso-website` appears in the results.
+1. When the build is completed, open Cloud Shell (or switch to it if it's already open), and run `az acr repository list --name <ACR_NAME> -o table` to confirm that a repository named `contoso-website` appears in the results.
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)

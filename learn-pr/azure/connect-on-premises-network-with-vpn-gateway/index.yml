@@ -17,7 +17,7 @@ abstract: |
   - Provision site-to-site VPN gateways
 prerequisites: | 
   - Familiarity with Azure virtual networking
-iconUrl: /learn/achievements/connect-on-premises-network-with-vpn-gateway.svg
+iconUrl: /training/achievements/connect-on-premises-network-with-vpn-gateway.svg
 levels:
 - beginner
 roles:

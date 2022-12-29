@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Basic familiarity with Azure services, specifically Azure SQL Database and Azure Storage.
   - Familiarity with Azure virtual machines and virtual networking.
-iconUrl: /learn/achievements/azure-defender-security-alerts.svg
+iconUrl: /training/achievements/azure-defender-security-alerts.svg
 levels:
 - intermediate
 roles:

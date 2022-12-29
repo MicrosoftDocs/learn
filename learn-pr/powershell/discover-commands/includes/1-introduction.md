@@ -17,4 +17,4 @@ To complete this module, you should:
 - Understand what PowerShell is. 
 - Know how to run a command in PowerShell.
 
-You might find the module [Introduction to PowerShell](/learn/modules/introduction-to-powershell?azure-portal=true) helpful preparation.
+You might find the module [Introduction to PowerShell](/training/modules/introduction-to-powershell?azure-portal=true) helpful preparation.

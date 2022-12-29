@@ -40,6 +40,6 @@ units:
 - learn.advocates.azure-functions-and-signalr.6-host-a-static-website-using-a-storage-account
 - learn.advocates.azure-functions-and-signalr.7-exercise-host-a-static-website-using-a-storage-account
 - learn.advocates.azure-functions-and-signalr.8-summary
-iconUrl: /learn/achievements/advocates/enable-automatic-updates-in-a-web-app-using-azure-functions-and-signalr.svg
+iconUrl: /training/achievements/advocates/enable-automatic-updates-in-a-web-app-using-azure-functions-and-signalr.svg
 badge:
   uid: learn.advocates.azure-functions-and-signalr.badge

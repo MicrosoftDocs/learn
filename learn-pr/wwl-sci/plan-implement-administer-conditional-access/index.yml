@@ -2,8 +2,8 @@
 uid: learn.wwl.plan-implement-administer-conditional-access
 metadata:
   title: Plan, implement, and administer Conditional Access
-  description: "Conditional Access gives a fine granularity of control over which users can do specific activities, access which resources, and how to ensure data and systems are safe."
-  ms.date: 07/14/2022
+  description: "Plan, implement, and administer Conditional Access"
+  ms.date: 12/07/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ abstract: |
   - Configure smart lockout thresholds.
 prerequisites: |
   None
-iconUrl: /learn/achievements/plan-implement-and-administer-conditional-access.svg
+iconUrl: /training/achievements/plan-implement-and-administer-conditional-access.svg
 levels:
 - advanced
 roles:

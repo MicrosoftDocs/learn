@@ -7,7 +7,7 @@ Before we talk through scalability, let's define what we're talking about. You'l
 If you're familiar with working with enterprise data, it may be helpful to understand that Power BI is the next generation of Analysis Services. It's the same technology under the hood of Analysis Services and Power BI datasets, the [VertiPaq engine](/analysis-services/analysis-services-overview).
 
 > [!TIP]
-> Take a look at the [Model, query, and explore data in Azure Synapse](/learn/paths/model-query-explore-data-for-azure-synapse/) learning path for more information on data analytics in Azure.
+> Take a look at the [Model, query, and explore data in Azure Synapse](/training/paths/model-query-explore-data-for-azure-synapse/) learning path for more information on data analytics in Azure.
 
 ## What is scalability and why is it important?
 Scalability in this context refers to building data models that can handle growth in the volume of data. A data model that ingests thousands of rows of data may grow to millions of rows over time, and the model must be designed to accommodate such growth. It's important to consider that your data will grow and/or change, which increases complexity. 

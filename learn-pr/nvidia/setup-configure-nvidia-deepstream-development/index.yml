@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - x86-based system running Ubuntu 18.04
   - RTX 2080, RTX 3080, T4, or A100 NVIDIA graphics card
-iconUrl: /learn/achievements/setup-configure-nvidia-deepstream-development.svg
+iconUrl: /training/achievements/setup-configure-nvidia-deepstream-development.svg
 levels:
 - intermediate
 roles:

@@ -26,7 +26,7 @@ For Linux VMs, the **VM Snapshot Linux** extension is installed, and Azure Backu
 
 Running the pre-registration script performs outbound network connectivity checks with Azure Backup servers and dependent services like Azure Active Directory and Azure Storage. It logs into your HANA system using the user key listed as part of the prerequisites. The user key is used to create a backup user (**AZUREWLBACKUPHANAUSER**) in the HANA system, and the user key can be deleted after the pre-registration script runs successfully.
 
-To find out more about prerequisites and what the pre-registration script does, see the **Prerequisites** section of [SAP HANA databases in Azure VMs](https://docs.microsoft.com/azure/backup/backup-azure-sap-hana-database).
+To find out more about prerequisites and what the pre-registration script does, see the **Prerequisites** section of [SAP HANA databases in Azure VMs](/azure/backup/backup-azure-sap-hana-database).
 
 ## 2. Create and configure a Recovery Services vault
 
@@ -87,7 +87,7 @@ There are a few principles you should keep in mind when deciding whether to chan
 
 - A parent isn't deleted until the child is active/not-expired. Every backup type has an expiration time according to the currently active policy. However, even if a parent is marked for deletion, it's not actually deleted until the child differentials or logs are expired. So, with our policy that we changed from **daily full** to **weekly full on Sundays**, all earlier daily full backups that aren't on Sundays will be marked for deletion. However, they won't actually be deleted until the logs that were taken daily earlier are expired. A full backup type is considered as parent to subsequent differentials, incrementals, and logs.
 
-See more information on Azure backup policy in [FAQ-Backup SAP HANA databases on Azure VMs](https://docs.microsoft.com/azure/backup/sap-hana-faq-backup-azure-vm).
+See more information on Azure backup policy in [FAQ-Backup SAP HANA databases on Azure VMs](/azure/backup/sap-hana-faq-backup-azure-vm).
 
 ## 5. Run an on-demand backup job
 

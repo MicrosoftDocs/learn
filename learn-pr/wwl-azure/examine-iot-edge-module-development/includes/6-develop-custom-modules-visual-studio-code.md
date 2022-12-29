@@ -12,7 +12,7 @@ At a high level, the process for developing a custom Edge module in Visual Studi
  -  Create the JSON deployment manifest and deploy your custom module.
 
 > [!TIP]
-> The createOptions parameter in the deployment manifest enables you to configure the module containers at runtime. This parameter expands your control over the modules and enables tasks like allowing or restricting the module's access to the host device's resources, or configuring networking. For detailed information on using the createOptions parameter, see: [https://docs.microsoft.com/azure/iot-edge/how-to-use-create-options](/azure/iot-edge/how-to-use-create-options).
+> The createOptions parameter in the deployment manifest enables you to configure the module containers at runtime. This parameter expands your control over the modules and enables tasks like allowing or restricting the module's access to the host device's resources, or configuring networking. For detailed information on using the createOptions parameter, see: [How to configure container create options for IoT Edge modules](/azure/iot-edge/how-to-use-create-options).
 
 ## Azure IoT Edge for Visual Studio Code
 

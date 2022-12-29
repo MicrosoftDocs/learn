@@ -16,7 +16,7 @@ abstract: |
   - Learn the basics features of audio data.
   - Learn how to transform sound signals to a visual image format by using spectrograms.
   - Build a speech classification model that can recognize sounds or spoken words by using convolutional neural networks (CNNs).
-iconUrl: /learn/achievements/pytorch-audio-data.svg
+iconUrl: /training/achievements/pytorch-audio-data.svg
 levels:
 - beginner
 roles:

@@ -25,7 +25,7 @@ prerequisites: |
   - Predict numeric values with regression
   - Predict categories with machine learning classification
   
-iconUrl: /learn/achievements/reactors/unsupervised-learning-clustering.svg
+iconUrl: /training/achievements/reactors/unsupervised-learning-clustering.svg
 hidden: true
 levels:
 - beginner
@@ -35,7 +35,6 @@ roles:
 - data-scientist
 products:
 - azure
-- vs-code
 subjects:
 - machine-learning
 units:

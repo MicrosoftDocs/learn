@@ -4,8 +4,9 @@ metadata:
   title: Provision an Azure SQL database to store application data
   description: Find out what makes Azure SQL Database a good choice for your relational database, how to create the database from the portal and connect with Azure Cloud Shell.
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure  
 title: Provision an Azure SQL database to store application data
@@ -17,7 +18,7 @@ abstract: |
   - How to create an Azure SQL database from the portal
   - How to use Azure Cloud Shell to connect to your Azure SQL database, add a table, and work with data
 prerequisites: None
-iconUrl: /learn/achievements/provision-azure-sql-db.svg
+iconUrl: /training/achievements/provision-azure-sql-db.svg
 levels: 
 - beginner
 roles:

@@ -4,8 +4,7 @@ Create the Cosmos DB API for MongoDB resource then create the database and conta
 
 1. Open Visual Studio Code.
 1. To open the **Azure** pane, select <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>.
-1. In the **Databases** section, right-click the **Concierge Subscription** subscription. 
-1. Select **Create server**. 
+1. In the **Resources > Concierge sandbox > Azure Cosmos DB** section, right-click **Azure Cosmos DB** then select **Create server**. 
 1. Use the following table to answer the creation steps:
 
     | Step | Value|
@@ -20,7 +19,7 @@ Create the Cosmos DB API for MongoDB resource then create the database and conta
 
 ## Create database and collection
 
-1. In the Azure pane, expand the **Databases** section's Learn subscription and find the resource just created. It should be the only one. 
+1. In the Azure pane, In the **Resources > Concierge sandbox > Azure Cosmos DB** section, find the resource just created. It should be the only one. 
 1. Right-click on the resource and select **Create Database**.
 1. Enter a database name, such as  `js-rentals`.
 1. Right-click on the new database name and select **Create Collection**.
@@ -30,8 +29,8 @@ Create the Cosmos DB API for MongoDB resource then create the database and conta
 
 This sample app provides JSON data to seed the collection.
 
-1. In the **Azure** pane, expand the **Databases** section's Learn subscription and find the database's collection.
-1. Right-click and select **Import Document into a Collection**. 
+1. In the **Azure** pane, in the **Resources > Concierge sandbox > Azure Cosmos DB** section, expand your database and collection.
+1. Right-click on the collection and select **Import Document into a Collection**. 
 1. From your local computer, within your cloned version of the sample app, select the `./3-Add-cosmosdb-mongodb/data/fake-rentals.json` file.
 1. Expand the collection to see the imported rental properties. 
 

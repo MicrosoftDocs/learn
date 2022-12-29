@@ -21,7 +21,7 @@ A Power BI dataset can have DirectQuery storage tables when:
 - It consumes a streaming dataflow (and uses DirectQuery storage mode).
 
 > [!NOTE]
-> For more information about DirectQuery and composite models, work through the [Choose a model framework](/learn/modules/choose-power-bi-model-framework/) module.
+> For more information about DirectQuery and composite models, work through the [Choose a model framework](/training/modules/choose-power-bi-model-framework/) module.
 
 ### Use hybrid tables
 
@@ -66,12 +66,12 @@ To set up APR, in the page settings, you enable the **Page refresh** setting.
 ![Screenshot of the Page refresh setting enabled.](../media/real-time-automatic-page-refresh-enabled.png)
 
 > [!NOTE]
-> This setting is only available when the report connects to a support dataset. It won’t be available, for example, when the report connects to a dataset that represents in import model.
+> This setting is only available when the report connects to a supported dataset. It won’t be available, for example, when the report connects to a dataset that represents in import model.
 
 Once enabled, you can set the **Refresh type** property to one of two options:
 
 - **Auto page refresh** – Updates all page visuals based on a fixed interval, which can be from every one second to multiple days.
-- **Change detection** – Updates all page visuals providing that source data has changed since the last automatic refresh. It avoids unnecessary refreshes, which can help to reduce resource consumption for the Power BI service and the data source. This option is only supported for reports stored in a workspace that has its license mode set to **Premium per user**, **Premium per user**, or **Embedded** (known as Premium workspaces).
+- **Change detection** – Updates all page visuals providing that source data has changed since the last automatic refresh. It avoids unnecessary refreshes, which can help to reduce resource consumption for the Power BI service and the data source. This option is only supported for reports stored in a workspace that has its license mode set to **Premium**, **Premium per user**, or **Embedded** (known as Premium workspaces).
 
 > [!IMPORTANT] 
 > When using a fixed interval, consider the burden it might place on the data source. Factor in that multiple users may open the report page, and that each visual on the page results in at least one query to the data source.
@@ -96,7 +96,7 @@ Once you publish an APR report to the Power BI service, Power BI may enforce res
 
 When you publish a report to a workspace that has its license mode set to **Pro**, it means the workspace resides in a shared capacity. A shared capacity is shared with other Microsoft customers. To avoid noisy neighbor situations (where a co-tenant monopolizes resources), an APR refresh has a minimum interval of 30 minutes, even if the refresh interval in your report is less than that value. Change detection measures aren’t supported in shared capacities.
 
-When you publish a report to a workspace that has its license mode set to **Premium per user**, **Premium per user**, or **Embedded** (called a dedicated capacity), APR may not be enabled or is constrained. That’s because a capacity admin can enable or disable APR, and enable or disable the use of a change detection measure for a dedicated capacity. They can also set a minimum refresh interval and a minimum execution interval for change detection measures. When your report page settings are lower than the minimum intervals, the minimum intervals will prevail.
+When you publish a report to a workspace that has its license mode set to **Premium per user**, or **Embedded** (called a dedicated capacity), APR may not be enabled or is constrained. That’s because a capacity admin can enable or disable APR, and enable or disable the use of a change detection measure for a dedicated capacity. They can also set a minimum refresh interval and a minimum execution interval for change detection measures. When your report page settings are lower than the minimum intervals, the minimum intervals will prevail.
 
 ![Screenshot of the A P R capacity settings.](../media/real-time-automatic-page-refresh-capacity-settings.png)
 

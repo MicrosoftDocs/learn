@@ -1,4 +1,4 @@
-As a reminder, we're following these steps to find the optimal date to view meteor showers in a particular capital city:
+As a reminder, we're following these steps to find the optimal date to view meteor showers in a particular capital/major city:
 1. Determine the *latitude* of the city.
 2. Use that latitude to figure out which *constellations* are visible to that city.
 3. Use the constellations to determine which *meteor showers* are visible to that city.

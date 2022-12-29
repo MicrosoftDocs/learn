@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.introduction-to-azure-files
+metadata:
+  title: Introduction to Azure Files
+  description: Learn how Azure Files and Azure File Sync can help you meet your storage needs.
+  ms.date: 08/30/2022
+  author: kendownie
+  ms.author: kendownie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Files
+summary: Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) and Network File System (NFS) protocols, and provides programmatic access via the Azure Files REST API. In this module, you'll learn how you can meet your storage needs using Azure Files and Azure File Sync.
+abstract: |
+  After completing this module, you'll be able to:
+  - Identify use cases for Azure Files with and without Azure File Sync.
+  - Understand the different types and tiers of Azure file shares, and when to use them.
+  - Choose a redundancy option for your Azure file shares.
+  - Understand the options for user access control and identity-based authentication.
+prerequisites: |
+  - Familiarity with creating an Azure subscription and storage account.
+  - Basic understanding of file shares.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.introduction-to-azure-files.introduction
+- learn.introduction-to-azure-files.what-is-azure-files
+- learn.introduction-to-azure-files.what-is-azure-file-sync
+- learn.introduction-to-azure-files.identity-and-access-control
+- learn.introduction-to-azure-files.knowledge-check
+- learn.introduction-to-azure-files.summary
+badge:
+  uid: learn.introduction-to-azure-files-badge

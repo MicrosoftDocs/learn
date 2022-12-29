@@ -4,7 +4,7 @@ Use templates to fulfill several use cases, such as:
 
 - Individual department templates, such as Finance, Sales, and so on.
 
-- Templates for different geographical regions or countries
+- Templates for different geographical countries/regions
 
 - If you want to allow emails to be revoked
 

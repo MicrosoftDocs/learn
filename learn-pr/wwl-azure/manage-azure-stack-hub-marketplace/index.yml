@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   * Conceptual knowledge of Azure compute solutions.
   * Working experience with virtual machines, containers, and app service.
-iconUrl: /learn/achievements/1-manage-azure-stack-hub-marketplace.svg
+iconUrl: /training/achievements/1-manage-azure-stack-hub-marketplace.svg
 levels:
 - advanced
 roles:

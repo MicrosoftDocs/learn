@@ -19,7 +19,7 @@ prerequisites: |
   - Understanding of the storage hierarchy for Azure NetApp Files, including NetApp accounts, capacity pools, and volumes
   - Ability to set up Azure NetApp Files and create a volume
   - Ability to mount the Azure NetApp Files volume from a virtual machine
-iconUrl: /learn/achievements/improve-azure-netapp-files-performance-hpc-eda-best-practices.svg
+iconUrl: /training/achievements/improve-azure-netapp-files-performance-hpc-eda-best-practices.svg
 levels: 
   - intermediate
 roles: 

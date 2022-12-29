@@ -1,8 +1,8 @@
-Once your policy is in place, you can use the Compliance blade to review non-compliant initiatives, non-compliant policies, and non-compliant resources.
+You have your policies defined, your initiative definition created, and your policies assigned to affected resources. The last step is to evaluate the state of compliance for your scoped resources. 
 
-:::image type="content" source="../media/determine-compliance-c198f4ba.png" alt-text="Screenshot of the Compliance blade. The Audit VM policy is selected. There are choices for non-compliant initiatives, non-compliant policies, and non-compliant resources.":::
+The following example shows how you can use the **Compliance** feature to look for non-compliant initiatives, policies, and resources.
 
+:::image type="content" source="../media/determine-compliance-c198f4ba.png" alt-text="Screenshot that shows how to use the compliance feature to look for non-compliant initiatives, policies, and resources.":::
 
-Policy conditions are evaluated against your existing resources. Although the portal doesn't show the evaluation logic, the compliance state results are shown. The compliance state result is either compliant or non-compliant.
-
+Your policy conditions are evaluated against your existing scoped resources. Although the Azure portal doesn't show the evaluation logic, the compliance state results are shown. The compliance state result is either compliant or non-compliant.
 

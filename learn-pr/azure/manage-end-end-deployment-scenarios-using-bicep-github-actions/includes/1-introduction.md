@@ -20,23 +20,3 @@ After completing this module, you'll be able to create a unified deployment work
 - Adds sample data to an Azure SQL database and an Azure Storage blob container
 
 You'll also know how to effectively use workflow artifacts, Bicep outputs, and workflow variables to coordinate the different parts of your workflow.
-
-## Prerequisites
-
-You should be familiar with using:
-
-- Bicep, including child resources, and how to deploy Bicep files to Azure.
-- Azure, including the Azure portal, subscriptions, resource groups, and resources.
-- Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
-- GitHub Actions, including jobs, environments, and secrets.
-
-To work through the exercises in the module, you'll need:
-  
-- An Azure account, with the ability to create resource groups and Azure Active Directory applications.
-- A GitHub account.
-
-To work through the exercises, you'll also need the following installed locally:
-
-- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
-- The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
-- The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps).

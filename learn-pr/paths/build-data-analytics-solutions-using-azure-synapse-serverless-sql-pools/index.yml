@@ -10,12 +10,12 @@ metadata:
   ms.prod: learning-azure
 title: Build data analytics solutions using Azure Synapse serverless SQL pools
 prerequisites: |
-  Consider completing the [Explore data analytics in Azure](/learn/paths/azure-data-fundamentals-explore-data-warehouse-analytics?azure-portal=true) and [Get started querying with Transact-SQL](/learn/paths/get-started-querying-with-transact-sql?azure-portal-true) learning paths before starting this learning path. You will need knowledge of:
+  Consider completing the [Explore data analytics in Azure](/training/paths/azure-data-fundamentals-explore-data-warehouse-analytics?azure-portal=true) and [Get started querying with Transact-SQL](/training/paths/get-started-querying-with-transact-sql?azure-portal-true) learning paths before starting this learning path. You will need knowledge of:
   - Analytical data workloads in Microsoft Azure
   - Querying data with Transact-SQL
 summary: |
   If you have large volumes of data stored as files in a data lake, you'll need a convenient way to explore and analyze the data they contain. Azure Synapse Analytics enables you to apply the SQL skills you use in a relational database to files in a data lake.
-iconUrl: /learn/achievements/build-data-analytics-solutions.svg
+iconUrl: /training/achievements/build-data-analytics-solutions.svg
 levels:
 - intermediate
 roles:

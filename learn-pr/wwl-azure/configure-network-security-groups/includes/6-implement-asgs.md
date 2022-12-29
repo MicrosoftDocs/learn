@@ -1,23 +1,32 @@
-ASGs enable you to configure network security as a natural extension of an application's structure. You then can group VMs and define network security policies based on those groups.
+[Application Security Groups (ASGs)](/azure/virtual-network/application-security-groups) ) logically group virtual machines by workload and define network security rules based on those groups. ASGs work in the same way as NSGs but provide an application-centric way of looking at your infrastructure. You join virtual machines to the ASG, and then use the ASG as a source or destination in NSG rules.
 
-You also can reuse your security policy at scale without manual maintenance of explicit IP addresses. The platform manages the complexity of explicit IP addresses and multiple rule sets, allowing you to focus on your business logic. Consider the following illustration.
+## When to use Application Security Groups
 
-:::image type="content" source="../media/asgs.png" alt-text="ASGs and NSGs combine to protect applications.":::
+Let’s consider a usage case for an online retailer. In this scenario, it's important to control the network traffic to the application virtual machines. Here are the requirements. 
 
-In the illustration, ASGs protect the Web Servers and Application Servers. Each ASG can have different access rules. An NSG wraps both ASGs to provide an additional level of security. 
+- Shoppers access the company’s product catalog hosted on Web Servers. The Web Servers must be accessible from the internet over HTTP port 80 and HTTPS port 443. 
 
-## Application security groups have the following constraints
+- Inventory information is located on Database Servers. The Database Servers must be accessible over port 1433. Only the Web Servers should have access to the Database Servers. 
 
- -  There are limits to the number of ASGs you can have in a subscription, in addition to other limits related to ASGs.
- -  You can specify one ASG as the source and destination in a security rule. You cannot specify multiple ASGs in the source or destination.
- -  All network interfaces assigned to an ASG must exist in the same virtual network that the first network interface assigned to the ASG is in. For example, if the first network interface assigned to an ASG named AsgWeb is in the virtual network named VNet1, then all subsequent network interfaces assigned to ASGWeb must exist in VNet1. You cannot add network interfaces from different virtual networks to the same ASG.
- -  If you specify an ASG as the source and destination in a security rule, the network interfaces in both ASGs must exist in the same virtual network. For example, if AsgLogic contained network interfaces from VNet1, and AsgDb contained network interfaces from VNet2, you could not assign AsgLogic as the source and AsgDb as the destination in a rule. All network interfaces for both the source and destination ASGs need to exist in the same virtual network.
+## How to use Application Security Groups
 
-## Summary
+:::image type="content" source="../media/asgs.png" alt-text="Diagram of how an A S G combines with an N S G to protect applications.":::
 
-Application Security Groups along with NSGs, have brought multiple benefits on the network security area:
+For this scenario, we would:
 
- -  **A single management experience**
- -  **Increased limits on multiple dimensions**
- -  **A great level of simplification**
- -  **A seamless integration with your architecture**
+Create an ASG (WebASG) that groups the Web Servers. Create another ASG (DBASG) that groups the Database Servers. Assign the corresponding server NICs to each ASG.
+
+Inside the NSG, create following rules:
+- Priority: 100, allow access from the internet to WebASG with port 80 and 443.
+- Priority: 110, allow access from WebASG to DBASG with port 1433.
+- Priority: 120, deny access from anywhere to DBASG with port 1433.
+
+## Advantages of using an application security group
+
+This configuration has several advantages:
+
+- The configuration doesn’t require specific IP addresses. It would be difficult to specify IP addresses because of the number of servers and because the IP addresses could change. You also don't need to arrange the servers into a specific subnet. 
+
+- This configuration doesn't require multiple rule sets. You don't need to create a separate rule for each VM. You can dynamically apply new rules to ASG. New security rules are automatically applied to all the VMs in the Application Security Group.
+
+- The configuration is easy to maintain and understand since is based on workload usage. 

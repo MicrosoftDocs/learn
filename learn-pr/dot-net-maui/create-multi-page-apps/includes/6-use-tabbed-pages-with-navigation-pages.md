@@ -2,7 +2,7 @@ Flyout and tabbed navigation are just two ways of enabling a user to navigate th
 
 You can use stack navigation in conjunction with flyouts and tabs. In this unit, you'll briefly review the differences between tab and flyout navigation and stack navigation, learn how to build apps that combine both techniques.
 
-## Review of tab navigation and stack navigation
+## Review of flyouts and tab navigation
 
 Flyouts and tab navigation provide a useful mechanism for enabling the user to select which page to view at any one time. The user navigates to a page simply by selecting the appropriate tab or flyout item. This form of navigation is useful for data items that have a *peer* relationship with each other. In the astronomy app, the Sun, Moon, and About pages are all peers; there's no direct relationship between them.
 

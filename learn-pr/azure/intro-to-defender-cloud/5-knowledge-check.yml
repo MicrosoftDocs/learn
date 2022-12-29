@@ -42,12 +42,12 @@ quiz:
       isCorrect: false
       explanation: "Your SOC team is responsible for following up on the alerts and recommendations provided by Defender for Cloud."
 
-  - content: "An online casino received an email stating that if they do not transfer $10 million dollars to a well known hacker group, that hacker group will perform a bruteforce attack against their online casino. The casino has Defender for Cloud enabled, how will Defender for Cloud let them know if such an attack occurs?"
+  - content: "An online casino received an email stating that if they do not transfer $10 million dollars to a well known hacker group, that hacker group will perform a brute force attack against their online casino. The casino has Defender for Cloud enabled, how will Defender for Cloud let them know if such an attack occurs?"
     choices:
-    - content: "Defender for cloud will use the Secure Score to alert the casino about any known attacks."
+    - content: "Defender for Cloud will use the Secure Score to alert the casino about any known attacks."
       isCorrect: false
       explanation: "Defender for Cloud uses the Secure Score to inform the Casino about any misconfigurations, threats, misuse and compliance violations across a multicloud infrastructure. "
-    - content: "Defender for cloud will use the Alerts page to inform the Casino about any known attacks."
+    - content: "Defender for Cloud will use the Alerts page to inform the Casino about any known attacks."
       isCorrect: true
       explanation: "Alerts are generated through Defender for Cloud's enhanced security features on the Alerts page in Defender for Cloud. The Alerts page informs you via alerts, about possible cyberattacks or potential malicious actions taken against your resources."
     - content: "Defender for Cloud creates workspaces whose job it is to actively investigate situations and will send text messages to the SOC team to handle any cyberattacks. "
@@ -74,6 +74,6 @@ quiz:
     - content: "Defender for Cloud will only protect Azure, AWS and GCP environments."
       isCorrect: false
       explanation: "Defender for Cloud will protect Azure, AWS and GCP environments, but it will also protect on-premises environments."
-    - content: "Defender for cloud protects Azure, AWS, GCP and on-premises environments."
+    - content: "Defender for Cloud protects Azure, AWS, GCP and on-premises environments."
       isCorrect: true
       explanation: "Defender for Cloud uses both reactive and proactive measures that will protect Azure, AWS, GCP and on-premises environments."

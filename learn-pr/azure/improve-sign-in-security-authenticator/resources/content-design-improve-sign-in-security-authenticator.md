@@ -236,6 +236,6 @@ What types of questions will test the learning objective? [(Knowledge check guid
 
 Note any additional information that may be beneficial to this content such as links, reference material, and so on.
 
-[How to run a registration campaign to set up Microsoft Authenticator](https://docs.microsoft.com/en-us/azure/active-directory/authentication/how-to-mfa-registration-campaign)
-[Authentication methods](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods)
-[Microsoft Authenticator app](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-authenticator-app)
+[How to run a registration campaign to set up Microsoft Authenticator](/azure/active-directory/authentication/how-to-mfa-registration-campaign)
+[Authentication methods](/azure/active-directory/authentication/concept-authentication-methods)
+[Microsoft Authenticator app](/azure/active-directory/authentication/concept-authentication-authenticator-app)

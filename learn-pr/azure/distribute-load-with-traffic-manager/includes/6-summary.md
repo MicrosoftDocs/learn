@@ -6,10 +6,10 @@ In this module, you learned how to use Traffic Manager as a DNS load balancer to
 - Perform maintenance or updates without any downtime.
 - Serve requests from specific geographic locations from specific deployments.
 
-You can now use Traffic manager to improve your availability and global distribution of your application, which improves customer experience.
+You can now use Traffic Manager to improve your availability and global distribution of your application, which improves customer experience.
 
 ## Learn more
 
-Visit the following links to learn more about some of the subjects we explored in this module:
+Visit the following link to learn more about some of the subjects we explored in this module:
 
 - [What is Traffic Manager?](/azure/traffic-manager/traffic-manager-overview)

@@ -48,7 +48,7 @@ quiz:
       explanation: "The `.` symbol is the member access operator."
     - content: "`{}`"
       isCorrect: false
-      explanation: "Curly braces are used to several reasons, but they never invoke a method."
+      explanation: "Curly braces are used for several reasons, but they never invoke a method."
     - content: "`()`"
       isCorrect: true
       explanation: "Correct!"

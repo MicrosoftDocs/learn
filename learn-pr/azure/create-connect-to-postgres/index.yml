@@ -4,8 +4,9 @@ metadata:
   title: Create and connect to an Azure Database for PostgreSQL
   description: Azure Database for PostgreSQL is a fully managed relational database solution. Learn how - and when - to use it. You’ll review different configurations and features, create and develop a database, and query it from an ASP.NET app.
   ms.date: 10/23/2020
-  author: tomreidnz
-  ms.author: jasdeb
+  author: markingmyname
+  ms.author: maghan
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create and connect to an Azure Database for PostgreSQL 
@@ -16,7 +17,7 @@ abstract: |
   - Develop and query the database in the Azure Cloud Shell using pgsql
   - Query the PostgreSQL database from an ASP.NET app
 prerequisites: Basic familiarity with relational databases
-iconUrl: /learn/achievements/create-connect-to-postgres.svg
+iconUrl: /training/achievements/create-connect-to-postgres.svg
 levels:
 - beginner
 roles:

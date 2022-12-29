@@ -1,4 +1,4 @@
-Alerts proactively notify you when important conditions are found in your monitoring data. They allow you to identify and address issues before the users of your system notice them. Alerts consist of alert rules, action groups, and monitor conditions.
+Alerts proactively notify you when important conditions are found in your monitoring data. They allow you to identify and address issues before the users of your system notice them. Alert rules consist of resources, action groups, and monitor conditions.
 
 :::image type="content" source="../media/create-alert-337a7110.png" alt-text="Screenshot of the create rule page with resource, condition, and action group.":::
 

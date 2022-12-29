@@ -66,5 +66,5 @@ Great job! You've added code to import all the libraries you'll need for your AI
 
 <!-- Links -->
 
-[AILibs]: /learn/modules/introduction-artificial-intelligence-nasa/7-install-ai-libraries?azure-portal=true
+[AILibs]: /training/modules/introduction-artificial-intelligence-nasa/7-install-ai-libraries?azure-portal=true
 [VSCodePython]: https://aka.ms/LearnOnVSCode?azure-portal=true

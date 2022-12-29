@@ -1,4 +1,4 @@
-For our first example, suppose you're combining two different data sources to find only the top five countries by area and the top five countries by population:
+For our first example, suppose you're combining two different data sources to find only the top five countries/regions by area and the top five countries/regions by population:
 
 ```python
 area = pd.Series({'Russia': 17075400, 'Canada':  9984670,

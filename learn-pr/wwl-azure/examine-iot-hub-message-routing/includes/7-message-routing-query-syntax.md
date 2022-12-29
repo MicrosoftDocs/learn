@@ -62,7 +62,7 @@ $contentEncoding = 'UTF-8' AND processingPath = 'hot'
 
 ```
 
-A full list of supported operators and functions is shown in Expression and conditions: [https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language](/azure/iot-hub/iot-hub-devguide-query-language).
+A full list of supported operators and functions is shown in Expression and conditions: [IoT Hub query language for device and module twins, jobs, and message routing](/azure/iot-hub/iot-hub-devguide-query-language).
 
 ## Message routing query based on message body
 

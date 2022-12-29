@@ -19,7 +19,7 @@ Our pre-migration is broken down into the following four steps or stages.
 Following these four steps will ensure a successful migration. Let's discuss these stages in more detail below.
 
 > [!NOTE]
-> The [Database Migration Assistant](https://github.com/AzureCosmosDB/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB) (DMA) will help you with the ***Discovery*** and ***Assessment*** stages of the planning.
+> The [Database Migration Assistant](https://github.com/AzureCosmosDB/Cosmos-DB-Migration-Assistant-for-API-for-mongodb) (DMA) will help you with the ***Discovery*** and ***Assessment*** stages of the planning.
 
 ## Pre-migration discovery
 
@@ -29,9 +29,9 @@ Our first step will be to create a ***data estate migration spreadsheet***.  Thi
 - Help you to plan migration from end-to-end.
 - Should be used as a tracking document throughout the migration process.
 
-While you can do a manual discovery, in this unit, we'll recommend that you use the [Database Migration Assistant](https://github.com/AzureCosmosDB/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB) (DMA) to help you with the discovery. This tool is easy to use and will do much the work for you.
+While you can do a manual discovery, in this unit, we'll recommend that you use the [Database Migration Assistant](https://github.com/AzureCosmosDB/Cosmos-DB-Migration-Assistant-for-API-for-mongodb) (DMA) to help you with the discovery. This tool is easy to use and will do much the work for you.
 
-The DMA will create the estate migration sheet programmatically. We'll use the [Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio) to easily [install and use](https://github.com/AzureCosmosDB/Cosmos-DB-Migration-Assistant-for-API-for-MongoDB#how-to-run-the-dma) the DMA tool. Just run it from any machine that has access to your source MongoDB environment.
+The DMA will create the estate migration sheet programmatically. We'll use the [Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio) to easily [install and use](https://github.com/AzureCosmosDB/Cosmos-DB-Migration-Assistant-for-API-for-mongodb#how-to-run-the-dma) the DMA tool. Just run it from any machine that has access to your source MongoDB environment.
 
 The DMA will output the following files that you can use as the data estate migration spreadsheets.
 
@@ -45,7 +45,7 @@ The spreadsheets would be similar to the one below.
 
 ## Pre-migration assessment
 
-Once you've completed your discovery, you need to find out what features your current MongoDB environment uses that might not be supported by the [current MongoDB version](/azure/cosmos-db/mongodb/feature-support-42) Azure Cosmos DB API for MongoDB supports. You also need to keep in mind the Azure Cosmos DB [limits and quotas](/azure/cosmos-db/concepts-limits#per-account-limits). Once you make this assessment, you'll be able to address those findings as needed during rest of the migration planning.
+Once you've completed your discovery, you need to find out what features your current MongoDB environment uses that might not be supported by the [current MongoDB version](/azure/cosmos-db/mongodb/feature-support-42) Azure Cosmos DB for MongoDB supports. You also need to keep in mind the Azure Cosmos DB [limits and quotas](/azure/cosmos-db/concepts-limits#per-account-limits). Once you make this assessment, you'll be able to address those findings as needed during rest of the migration planning.
 
 Again, we'll use the DMA to help us collect the data needed from this stage. The DMA will run against the resources from the source MongoDB and list the required and recommended changes needed to proceed with the migration.  This data will be written to the **assessment_result.csv** file.
 
@@ -57,8 +57,8 @@ The discovery and assessment were all about our MongoDB Source, now it's time to
 
 We can do some capacity planning by one of two ways.
 
-- **Convert vCores to RUs**. - If the only information we know is the number of servers or the number of vCores in our current MongoDB environment, we can convert those vCores to RUs.  In the previous unit, *[Convert vCores to RUs](/learn/modules/migrate-mongodb-database-to-azure-cosmos-db/2-vcore-to-rus)*, we went in more detail on how to estimate Request Units using vCores or vCPUs.
-- **Using the** ***Azure Cosmos DB capacity planner***. If we have a very good idea on how much data we have, and the number of CRUD operations we do per second, we could use the capacity calculator to estimate the number of RU/s we'll need. In the previous module, we discuss this subject in detail under the *[Capacity estimation using the Azure Cosmos DB Capacity Calculator][/learn/modules/get-started-mongodb-api-azure-cosmos-db/5-capacity-estimation-use-calculator]* unit.
+- **Convert vCores to RUs**. - If the only information we know is the number of servers or the number of vCores in our current MongoDB environment, we can convert those vCores to RUs.  In the previous unit, *[Convert vCores to RUs](/training/modules/migrate-mongodb-database-to-azure-cosmos-db/2-vcore-to-rus)*, we went in more detail on how to estimate Request Units using vCores or vCPUs.
+- **Using the** ***Azure Cosmos DB capacity planner***. If we have a very good idea on how much data we have, and the number of CRUD operations we do per second, we could use the capacity calculator to estimate the number of RU/s we'll need. In the previous module, we discuss this subject in detail under the *[Capacity estimation using the Azure Cosmos DB Capacity Calculator][/training/modules/get-started-mongodb-api-azure-cosmos-db/5-capacity-estimation-use-calculator]* unit.
 
     > [!NOTE]
     > You can also use the *[Azure Cosmos DB capacity calculator](https://cosmos.azure.com/capacitycalculator/)* to estimate the cost of ownership of your new Azure Cosmos DB resource.
@@ -73,7 +73,7 @@ Once our data is in an Azure Cosmos DB collection, we can further understand the
 db.runCommand({getLastRequestStatistics: 1})
 ```
 
-One more way we can review the performance of our queries is using Azure Monitor. We'll cover this subject in more detail in the next Module ***Replication and Monitoring an Azure Cosmos DB API for MongoDB account***.
+One more way we can review the performance of our queries is using Azure Monitor. We'll cover this subject in more detail in the next Module ***Replication and Monitoring an Azure Cosmos DB for MongoDB account***.
 
 ### Plan the Azure Cosmos DB data estate
 

@@ -66,7 +66,7 @@ Identify the subtasks of *Securing you: basics and beyond*
 
     **Knowledge check**
 
-    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
+    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)*
 
     - 3x Questions (Multiple choice, all of the above)
 
@@ -91,7 +91,7 @@ Identify the subtasks of *Securing you: basics and beyond*
 
     **Knowledge check**
 
-    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
+    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)*
 
     - 3x Questions (Multiple choice, all of the above)
 
@@ -113,7 +113,7 @@ Identify the subtasks of *Securing you: basics and beyond*
 
     **Knowledge check**
 
-    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
+    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)*
 
     - 3x Questions (Multiple choice, all of the above) 
 

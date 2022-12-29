@@ -19,7 +19,7 @@ prerequisites: |
   *   Experience creating reports using Power BI desktop.
   *   Basic understanding of Tabular Editor 2.
   *   Proficient with Data Analysis Expressions (DAX) in tabular models, at a basic level.
-iconUrl: /learn/achievements/create-calculation-groups.svg
+iconUrl: /training/achievements/create-calculation-groups.svg
 levels:
 - intermediate
 roles:

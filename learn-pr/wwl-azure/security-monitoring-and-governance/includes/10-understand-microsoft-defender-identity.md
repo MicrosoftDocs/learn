@@ -16,7 +16,7 @@ You can also use the Microsoft Defender portal to monitor, manage, and investiga
 
 You can sign into the Microsoft Defender portal at [https://securitycenter.windows.com](https://securitycenter.windows.com/).
 
-Sign in with a user account assigned to an Azure AD security group that has access to the Microsoft Defender portal.
+Sign in with a user account assigned to an Azure AD security group with access to the Microsoft Defender portal.
 
  -  Microsoft Defender sensor. Microsoft Defender sensors are installed directly on your domain controllers. The sensors monitor domain controller traffic without requiring a dedicated server or port mirroring configurations.
  -  Microsoft Defender cloud service. The Microsoft Defender cloud service runs on the Azure infrastructure and is deployed in the United States, Europe, and Asia. The Microsoft Defender cloud service is connected to the Microsoft Intelligent Security Graph.
@@ -26,7 +26,7 @@ Sign in with a user account assigned to an Azure AD security group that has acce
 
 ## Cryptocurrency mining and other-advanced attacks
 
-Azure Defender for container registries can be enabled at the subscription level.
+Azure Defender for container registries (deprecated) can be enabled at the subscription level.
 
 Once it's enabled:
 
@@ -43,6 +43,9 @@ There are three triggers for image scans:
  -  On push (a new image is pushed to the registry)
  -  Recently pulled (any image pulled in the last 30 days)
  -  On import (when an image is imported from other locations like Docker Hub)
+
+> [!IMPORTANT]
+> Microsoft Defender for container registries has been replaced with [Microsoft Defender for Containers](/azure/defender-for-cloud/defender-for-containers-introduction). If you've already enabled Defender for container registries on a subscription, you can continue to use it. However, you won't get Defender for Containers' improvements and new features.<br><br>This plan is no longer available for subscriptions where it isn't already enabled.<br><br>To upgrade to Microsoft Defender for Containers, open the Defender plans page in the portal and enable the new plan:<br><br>:::image type="content" source="../media/enable-defender-for-containers-5a259ec9.png" alt-text="Screenshot of Microsoft Defender for Containers.":::<br><br><br>Learn more about this change in [the release note](/azure/defender-for-cloud/release-notes-archive).
 
 ## Purchasing Microsoft Defender
 

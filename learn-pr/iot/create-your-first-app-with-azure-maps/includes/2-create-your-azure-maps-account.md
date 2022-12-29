@@ -14,21 +14,23 @@ In this unit, first you create an Azure Maps account. Then, navigate the Azure p
 
 1. For the **Name**, enter something appropriate, "MyAzureMaps", or similar.
 
-    [![Screenshot showing the dialog to create an app in Azure.](../media/azure-maps-create-account-2.png)](../media/azure-maps-create-account-2.png#lightbox)
+1. Select the **Region** you're closest to.
 
-1. Leave **Pricing tier** at its default value. It's free anyway! Read, and select the checkbox covering the Licence and Privacy Statement.
+    :::image type="content" source="../media/2-create-azure-maps-account.png" alt-text="Screenshot showing the dialog to create an app in Azure." lightbox="../media/2-create-azure-maps-account.png":::
 
-1. Click **Create**.
+1. Leave **Pricing tier** at its default value. It's free anyway! Read, and select the checkbox covering the License and Privacy Statement.
+
+1. Select **Review + create**.
+
+1. Verify that validation is successful, and then select **Create**.
 
 1. It might take a few seconds for the resource to be deployed. When you get the deployment message, click **Go to resource**.
 
-1. On the home page of the resource, notice the left menu. You should be on the **Overview** page.
-
-1. Look down the left menu, find **Settings**, then the **Authentication** entry.
+1. The **Overview** pane displays.
 
 ### Extract the Primary Key
 
-1. Click on **Authentication**, in the left menu.
+1. Look down the left menu, find **Settings**, and then select **Authentication**.
 
 1. You will notice some strings, including the **Primary Key**, are displayed. Use the icon to the far right of the string to copy the key to the clipboard.
 

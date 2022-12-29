@@ -10,7 +10,7 @@ In this module, you've learned about device management using Microsoft Endpoint 
 ## Next steps
 
 To learn more about Microsoft Endpoint Manager, continue to the next learning module in this series:
-- [Understand app management using Microsoft Endpoint Manager](/learn/modules/app-management-using-microsoft-endpoint-manager/)
+- [Understand app management using Microsoft Endpoint Manager](/training/modules/app-management-using-microsoft-endpoint-manager/)
 
 To evaluate Microsoft Intune and the Microsoft technologies available with Microsoft's Enterprise Mobility + Security (EMS), continue with the free trial:
 - [Get a free trial, evaluate Enterprise Mobility + Security (EMS)](https://go.microsoft.com/fwlink/?linkid=845167)

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/01/2022
+  ms.date: 09/29/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -21,24 +21,24 @@ quiz:
     choices:
     - content: "Delete the default rule."
       isCorrect: false
-      explanation: "Incorrect. The default rules cannot be deleted."
+      explanation: "Incorrect. The default rules can't be deleted."
     - content: "Create a new network security rule that allows RDP traffic and that has a higher priority than the default rule."
       isCorrect: true
       explanation: "Correct.  You can create a new rule to allow RDP that has a higher priority than the default rule"
-    - content: "There is nothing the admin can do, RDP traffic is not supported with NSGs."
+    - content: "There's nothing the admin can do, RDP traffic isn't supported with NSGs."
       isCorrect: false
       explanation: "Incorrect. NSG rules can be set allow RDP traffic"
-  - content: "The security admin wants to protect Azure resources from DDoS attacks, which Azure DDoS Protection tier will the admin use to target Azure Virtual Network resources?"
+  - content: "The security admin wants to protect Azure resources from DDoS attacks and needs logging, alerting, and telemetry capabilities. which Azure service can provide these capabilities?"
     choices:
-    - content: "Basic."
+    - content: "Default DDoS infrastructure protection."
       isCorrect: false
-      explanation: "Incorrect. The Basic service tier provides always-on traffic monitoring and real-time mitigation of common network-level attacks provide the same defenses that Microsoft’s online services use."
-    - content: "Standard."
+      explanation: "Incorrect. The default DDoS infrastructure-level protection service doesn't provide logging, alerting, or telemetry."
+    - content: "Both DDoS IP Protection and DDoS Network Protection."
       isCorrect: true
-      explanation: "Correct. The Standard service tier provides additional mitigation capabilities that are tuned specifically to Microsoft Azure Virtual Network resources."
-    - content: "Advanced."
+      explanation: "Correct. Both DDoS IP Protection and DDoS Network Protection provide advanced capabilities, including logging, alerting, and telemetry."
+    - content: "Azure Bastion."
       isCorrect: false
-      explanation: "Incorrect. Azure DDoS Protection is available in only two tiers. Advanced is not a valid tier."
+      explanation: "Incorrect. Azure Bastion is a service you deploy that lets you connect to a virtual machine using your browser and the Azure portal.  Azure Bastion doesn't provide DDoS protection."
   - content: "An organization has several virtual machines in Azure. The security admin wants to deploy Azure Bastion to get secure access to those VMs. What should the admin keep in mind?"
     choices:
     - content: "Azure Bastion is deployed per virtual network, with support for virtual network peering."
@@ -49,7 +49,7 @@ quiz:
       explanation: "Incorrect. Azure Bastion deployment isn't per subscription/account."
     - content: "Azure Bastion is deployed per virtual machine."
       isCorrect: false
-      explanation: "Incorrect. Azure Bastion deployment isn't per virtual machine. Bastion provides secure RDP and SSH connectivity to all of the VMs in the virtual network in which it is provisioned."
+      explanation: "Incorrect. Azure Bastion deployment isn't per virtual machine. Bastion provides secure RDP and SSH connectivity to all of the VMs in the virtual network in which it's provisioned."
   - content: "An organization has much of its application data in Azure. The security admin wants to use the encryption capabilities in Azure. Which service would the admin use to store the application’s secrets?"
     choices:
     - content: "Transparent data encryption."

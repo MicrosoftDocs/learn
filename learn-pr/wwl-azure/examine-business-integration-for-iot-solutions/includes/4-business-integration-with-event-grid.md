@@ -10,7 +10,7 @@ Event Grid has built-in support for events coming from Azure services such as Io
 
 You can use filters to route specific events to different endpoints, multicast to multiple endpoints, and make sure your events are reliably delivered.
 
-Azure Event Grid is deployed to maximize availability by natively spreading across multiple fault domains in every region, and across availability zones (in regions that support them). For a list of regions that are supported by Event Grid, see Products available by region [https://azure.microsoft.com/global-infrastructure/services/?products=event-grid&amp;regions=all](https://azure.microsoft.com/global-infrastructure/services/?products=event-grid&amp;regions=all).
+Azure Event Grid is deployed to maximize availability by natively spreading across multiple fault domains in every region, and across availability zones (in regions that support them). For a list of regions that are supported by Event Grid, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=event-grid&amp;regions=all).
 
 :::image type="content" source="../media/m05-l03-business-integration-event-grid-functional-model-a9936b39.png" alt-text="Diagram that shows the Event Sources and Event Handlers provided by Event Grid.":::
 

@@ -13,7 +13,7 @@ title: "Define and implement continuous integration"
 summary: |
   Create automated pipelines that continuously build, test, package, and deploy your applications.
 prerequisites: None
-iconUrl: /learn/achievements/az-400-define-implement-continuous-integration.svg
+iconUrl: /training/achievements/az-400-define-implement-continuous-integration.svg
 levels:
 - beginner
 roles:

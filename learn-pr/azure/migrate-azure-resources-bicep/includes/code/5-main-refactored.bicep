@@ -1,4 +1,4 @@
-@description('The location into which the resources should be deployed.')
+@description('The location where resources are deployed.')
 param location string = resourceGroup().location
 
 @description('The name of the size of the virtual machine to deploy.')
@@ -15,7 +15,7 @@ param virtualMachineAdminUsername string
 param virtualMachineAdminPassword string
 
 @description('The name of the SKU of the public IP address to deploy.')
-param publicIPAddressSkuName string = 'Basic'
+param publicIPAddressSkuName string = 'Standard'
 
 @description('The virtual network address range.')
 param virtualNetworkAddressPrefix string
@@ -24,25 +24,25 @@ param virtualNetworkAddressPrefix string
 param virtualNetworkDefaultSubnetAddressPrefix string
 
 var virtualNetworkName = 'ToyTruck-vnet'
-var virtualNetworkDefaultSubnetName = 'default'
 var virtualMachineName = 'ToyTruckServer'
-var virtualMachineImageReference = {
-  publisher: 'canonical'
-  offer: '0001-com-ubuntu-server-focal'
-  sku: '20_04-lts'
-  version: 'latest'
-}
-var virtualMachineOSDiskName = 'YOUR-OS-DISK-NAME'
 var networkInterfaceName = 'YOUR-NETWORK-INTERFACE-NAME'
 var publicIPAddressName = 'ToyTruckServer-ip'
 var networkSecurityGroupName = 'ToyTruckServer-nsg'
+var virtualNetworkDefaultSubnetName = 'default'
+var virtualMachineImageReference = {
+  publisher: 'canonical'
+  offer: '0001-com-ubuntu-server-focal'
+  sku: '20_04-lts-gen2'
+  version: 'latest'
+}
+var virtualMachineOSDiskName = 'YOUR-OS-DISK-NAME'
 
-resource networkSecurityGroup 'Microsoft.Network/networkSecurityGroups@2020-11-01' = {
+resource networkSecurityGroup 'Microsoft.Network/networkSecurityGroups@2022-05-01' = {
   name: networkSecurityGroupName
   location: location
 }
 
-resource publicIPAddress 'Microsoft.Network/publicIPAddresses@2020-11-01' = {
+resource publicIPAddress 'Microsoft.Network/publicIPAddresses@2022-05-01' = {
   name: publicIPAddressName
   location: location
   sku: {
@@ -51,39 +51,12 @@ resource publicIPAddress 'Microsoft.Network/publicIPAddresses@2020-11-01' = {
   }
   properties: {
     publicIPAddressVersion: 'IPv4'
-    publicIPAllocationMethod: 'Dynamic'
+    publicIPAllocationMethod: 'Static'
     idleTimeoutInMinutes: 4
   }
 }
 
-resource virtualNetwork 'Microsoft.Network/virtualNetworks@2020-11-01' = {
-  name: virtualNetworkName
-  location: location
-  properties: {
-    addressSpace: {
-      addressPrefixes: [
-        virtualNetworkAddressPrefix
-      ]
-    }
-    subnets: [
-      {
-        name: virtualNetworkDefaultSubnetName
-        properties: {
-          addressPrefix: virtualNetworkDefaultSubnetAddressPrefix
-          privateEndpointNetworkPolicies: 'Enabled'
-          privateLinkServiceNetworkPolicies: 'Enabled'
-        }
-      }
-    ]
-    enableDdosProtection: false
-  }
-
-  resource defaultSubnet 'subnets' existing = {
-    name: virtualNetworkDefaultSubnetName
-  }
-}
-
-resource virtualMachine 'Microsoft.Compute/virtualMachines@2021-03-01' = {
+resource virtualMachine 'Microsoft.Compute/virtualMachines@2022-08-01' = {
   name: virtualMachineName
   location: location
   properties: {
@@ -100,6 +73,7 @@ resource virtualMachine 'Microsoft.Compute/virtualMachines@2021-03-01' = {
         managedDisk: {
           storageAccountType: virtualMachineManagedDiskStorageAccountType
         }
+        deleteOption: 'Delete'
         diskSizeGB: 30
       }
     }
@@ -114,6 +88,7 @@ resource virtualMachine 'Microsoft.Compute/virtualMachines@2021-03-01' = {
           patchMode: 'ImageDefault'
           assessmentMode: 'ImageDefault'
         }
+        enableVMAgentPlatformUpdates: false
       }
       allowExtensionOperations: true
     }
@@ -121,6 +96,9 @@ resource virtualMachine 'Microsoft.Compute/virtualMachines@2021-03-01' = {
       networkInterfaces: [
         {
           id: networkInterface.id
+          properties: {
+            deleteOption: 'Detach'
+          }
         }
       ]
     }
@@ -132,7 +110,34 @@ resource virtualMachine 'Microsoft.Compute/virtualMachines@2021-03-01' = {
   }
 }
 
-resource networkInterface 'Microsoft.Network/networkInterfaces@2020-11-01' = {
+resource virtualNetwork 'Microsoft.Network/virtualNetworks@2022-05-01' = {
+  name: virtualNetworkName
+  location: location
+  properties: {
+    addressSpace: {
+      addressPrefixes: [
+        virtualNetworkAddressPrefix
+      ]
+    }
+    subnets: [
+      {
+        name: virtualNetworkDefaultSubnetName
+        properties: {
+          addressPrefix: virtualNetworkDefaultSubnetAddressPrefix
+          privateEndpointNetworkPolicies: 'Disabled'
+          privateLinkServiceNetworkPolicies: 'Enabled'
+        }
+      }
+    ]
+    enableDdosProtection: false
+  }
+
+  resource defaultSubnet 'subnets' existing = {
+    name: virtualNetworkDefaultSubnetName
+  }
+}
+
+resource networkInterface 'Microsoft.Network/networkInterfaces@2022-05-01' = {
   name: networkInterfaceName
   location: location
   properties: {
@@ -154,8 +159,10 @@ resource networkInterface 'Microsoft.Network/networkInterfaces@2020-11-01' = {
     ]
     enableAcceleratedNetworking: true
     enableIPForwarding: false
+    disableTcpStateTracking: false
     networkSecurityGroup: {
       id: networkSecurityGroup.id
     }
+    nicType: 'Standard'
   }
 }

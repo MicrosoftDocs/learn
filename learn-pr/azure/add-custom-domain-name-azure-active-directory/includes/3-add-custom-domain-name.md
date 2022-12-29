@@ -1,6 +1,6 @@
-You use Azure to add your organization's custom domain name and allow employees to create memorable usernames.
+You can use Azure to add your organization's custom domain name and allow employees to create memorable usernames.
 
-In this unit, you'll see how to:
+In this unit, you'll learn how to:
 
 - Associate your custom domain with an existing Azure Active Directory (Azure AD) organization.
 - Set the custom domain to be the primary domain.
@@ -14,7 +14,7 @@ The following steps walk through the process to add a custom domain name to Azur
 
 In our scenario, your company has an Azure AD organization where you can add the domain name.
 
-1. In Azure AD, under **Manage** select **Custom domain name**.
+1. In Azure AD, under **Manage**, select **Custom domain names**.
 
     ![Screenshot of the Overview page with Custom domain name highlighted.](../media/3-overview-page.png)
 
@@ -40,7 +40,7 @@ In our scenario, your company has an Azure AD organization where you can add the
 
 ## Verify your custom domain in Azure
 
-1. In Azure AD, under **Manage** select **Custom domain name**.
+1. In Azure AD, under **Manage** select **Custom domain names**.
 
 1. Select your custom domain name.
 
@@ -87,7 +87,7 @@ After you add a custom domain name and set it to be the primary domain, add user
 
 1. On the left side of the pane, under **Manage** select **Users**.
 
-1. Select **+ New user**.
+1. Select **+ New user**, then select **Create new user**.
 
    ![Screenshot of adding a new user for a custom domain.](../media/3-add-users.png)
 

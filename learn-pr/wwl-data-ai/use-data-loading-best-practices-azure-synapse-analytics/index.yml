@@ -22,7 +22,7 @@ abstract: |
   - Simplify ingestion with the Copy Activity
 prerequisites: |
   - Before taking this module, it is recommended that you complete Data Fundamentals.
-iconUrl: /learn/achievements/use-data-loading-best-practices-in-azure-synapse-analytics.svg
+iconUrl: /training/achievements/use-data-loading-best-practices-in-azure-synapse-analytics.svg
 levels:
 - intermediate
 roles:

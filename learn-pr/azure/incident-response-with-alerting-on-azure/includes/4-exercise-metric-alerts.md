@@ -40,7 +40,7 @@ You can use either the Azure portal or the CLI to create a metric alert. In this
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you used to activate the sandbox.
 
-1. On the Azure portal menu, select **More services**, then search for and select **Monitor**. The **Monitor | Overview** pane appears.
+1. On the Azure portal menu, search for and select **Monitor**. The **Monitor | Overview** pane appears.
 
 1. First, you'll set the *scope* of the resources to be monitored. In the left menu pane, select **Metrics**. The **Monitor | Metrics** pane appears with the **Select a scope** pane open on the right.
 
@@ -52,24 +52,20 @@ You can use either the Azure portal or the CLI to create a metric alert. In this
 
 1. On the command bar, select **New alert rule**. The **Condition** tab of the **Create an alert rule** pane appears.
 
-1. Next, you'll configure the conditional logic for this resource. Under **Condition name**, select the **Whenever the maximum percentage cpu is greater than </logic undefined/>** link. The **Configure signal logic** pane appears.
-
 1. Enter (or confirm) the following values for each setting.
 
     | Setting | Value |
     |---------|---------|
     | **Alert logic** |
     | Threshold | Static |
-    | Operator | Greater than |
     | Aggregation type | Maximum |
+    | Operator | Greater than |
     | Threshold value | 90 |
-    | **Evaluated based on** |
-    | Aggregation granularity (Period) | 1 minute |
-    | Frequency of evaluation | Every 1 Minute |
+    | **When to evaluate** |
+    | Check every | 1 minute |
+    | Lookback period | 1 minute |
 
     :::image type="content" source="../media/4-metric-alert-logic.png" alt-text="Screenshot that shows the settings for metric condition logic.":::
-
-1. Select **Done**.
 
 1. From the **Create an alert rule** pane, select the **Details** tab. Under the **Alert rule details** section, enter the following values for each setting.
 
@@ -135,10 +131,10 @@ In this exercise, you set up an Ubuntu VM and configured it to stress test the C
 
 1. On the Azure portal menu, select **Monitor**, and then select **Alerts** in the left menu pane.
 
-   This step presents the alert summary pane, where you can see the count of the number of alerts.
+   This step presents the alert summary pane, where you can see the count of the number of alerts. If you don't see your alerts listed, wait a few minutes and select **Refresh**.
 
    :::image type="content" source="../media/4-alert-summary-pane.png" alt-text="Screenshot that shows the alert summary pane.' pane.":::
 
 1. You configured your metric alerts with severities of 2 and 3. Select one of the alerts to view the severity level.
 
-    Selecting one of the alerts shows the details on the alert.
+   Selecting one of the alerts shows the details on the alert.

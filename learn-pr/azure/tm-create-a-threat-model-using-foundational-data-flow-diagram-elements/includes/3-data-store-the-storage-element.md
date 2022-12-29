@@ -1,4 +1,4 @@
-![Data Store Element.](../media/data-store.png)
+![Rendering of a two parallel horizontal lines representing the Data Store Element.](../media/data-store.png)
 
 Depicted by parallel lines, this element represents data stored on a temporary or permanent basis.
 
@@ -10,8 +10,8 @@ Examples include:
 ## When to use the data store element
 
 - Whenever you're storing data somewhere, like Azure DB or local cache.
-- If you're establishing communication between two data-stores, don't forget to add a process between them.
-- Data stores and external entities start the data-flow, so verify you have either one in place.
+- If you're establishing communication between two data stores, don't forget to add a process between them.
+- Data stores and external entities start the data flow, so verify you have either one in place.
 - Make sure to include any post-processing of data, such as analytics services like Azure Analytics. This process is often missed.
 
 ## Include context

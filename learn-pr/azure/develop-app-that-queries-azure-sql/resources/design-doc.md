@@ -99,9 +99,9 @@ Use the following documents as a guide for content. Use the Cloud Shell for comm
 
 Go through this document first.
 
-https://docs.microsoft.com/azure/sql-database/sql-database-design-first-database
+https://learn.microsoft.com/azure/sql-database/sql-database-design-first-database
 
 Then go through these two, first for a .NET Core console app and second for an ASP.NET web application. Will need to modify them to query data from the student info.
 
-https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-core
-https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase
+https://learn.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-core
+https://learn.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase

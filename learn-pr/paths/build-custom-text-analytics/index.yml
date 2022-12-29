@@ -16,7 +16,7 @@ prerequisites: |
   - General programming techniques
 summary: |
   Build solutions with newer text analytics services such as custom text classification and custom name entity recognition. These services allow for customizing the built-in features available in the Language service for exactly what your application needs.
-iconUrl: /learn/achievements/build-custom-text-analytics-solutions.svg
+iconUrl: /training/achievements/build-custom-text-analytics-solutions.svg
 levels:
 - intermediate
 roles:

@@ -20,7 +20,7 @@ prerequisites: |
   Before starting this module, you should have:
   - Experience of provisioning and managing Azure services in the Azure portal.
   - A knowledge of C# or Python.
-iconUrl: /learn/achievements/create-and-manage-cognitive-services.svg
+iconUrl: /training/achievements/create-and-manage-cognitive-services.svg
 levels:
 - intermediate
 roles:

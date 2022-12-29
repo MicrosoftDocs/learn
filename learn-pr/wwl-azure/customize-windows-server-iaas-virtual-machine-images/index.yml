@@ -29,7 +29,7 @@ prerequisites: |
   - Security-related technologies (firewalls, encryption, multi-factor authentication).
   - Windows PowerShell scripting.
   - Automation and monitoring.
-iconUrl: /learn/achievements/customize-windows-server-iaas-vm-images.svg
+iconUrl: /training/achievements/customize-windows-server-iaas-vm-images.svg
 levels:
 - intermediate
 roles:

@@ -11,7 +11,7 @@ In this module, you created resources by using your Azure subscription. The foll
    > [!div class="nextstepaction"]
    > [Azure portal](https://portal.azure.com?azure-portal=true)
 
-1. Select **Resource groups** on the left.
+1. Select **Resource groups** from the Azure portal menu.
 
 1. Find the resource group **rg-ship-manager**, or the resource group name that you used, and select it.
 
@@ -37,7 +37,7 @@ In this module, you created resources by using your Azure subscription. The foll
 
 To learn more about Azure Kubernetes Service, see the following articles:
 
-- [Introduction to AKS](/learn/modules/intro-to-azure-kubernetes-service/)
-- [AKS documentation on Microsoft Docs](/azure/aks/)
+- [Introduction to AKS](/training/modules/intro-to-azure-kubernetes-service/)
+- [AKS documentation](/azure/aks/)
 - [AKS production baseline](/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks)
 - [Deploy an AKS cluster](/azure/aks/tutorial-kubernetes-deploy-cluster)

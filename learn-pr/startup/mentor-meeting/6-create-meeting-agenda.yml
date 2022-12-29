@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.mentor-meeting.create-meeting-agenda
+title: Create a meeting agenda with a clear goal
+metadata:
+  title: Create a meeting agenda with a clear goal
+  description: "This content is part of the \"Make the most of a mentor meeting\" module."
+  ms.date: 11/11/2022
+  author: turoczy
+  ms.author: v-rturoczy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-create-meeting-agenda.md)]

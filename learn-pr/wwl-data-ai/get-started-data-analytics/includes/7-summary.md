@@ -10,5 +10,5 @@ By completing this module, you have learned how to:
 
 Use the following resources to discover more:
 
-- [Get started with Microsoft data analytics](/learn/paths/data-analytics-microsoft/)
-- [Create and use analytics reports with Power BI](/learn/paths/create-use-analytics-reports-power-bi/)
+- [Get started with Microsoft data analytics](/training/paths/data-analytics-microsoft/)
+- [Create and use analytics reports with Power BI](/training/paths/create-use-analytics-reports-power-bi/)

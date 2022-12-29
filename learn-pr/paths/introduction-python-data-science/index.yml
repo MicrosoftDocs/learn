@@ -25,7 +25,7 @@ summary: |
   
 prerequisites: |
   None.
-iconUrl: /learn/achievements/reactors/introduction-python-data-science.svg
+iconUrl: /training/achievements/reactors/introduction-python-data-science.svg
 hidden: true
 levels:
 - beginner
@@ -35,7 +35,6 @@ roles:
 - data-scientist
 products:
 - azure
-- vs-code
 subjects:
 - development-tools
 modules:

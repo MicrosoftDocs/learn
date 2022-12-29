@@ -12,7 +12,7 @@
 
 ## Ready to build something?
 
-- [Build mobile apps with Xamarin.Forms](https://aka.ms/LearnXamarinForms) 
+- [Build mobile apps with Xamarin.Forms](/training/modules/create-a-mobile-app-with-xamarin-forms/) 
 - [Create a web UI with ASP.NET Core](https://aka.ms/LearnASPCore)
 - [Create a web API with ASP.NET Core Controllers](https://aka.ms/LearnASPCoreapi)
 - [Build a web app with Blazor](https://aka.ms/LearnBlazorWebassembly)

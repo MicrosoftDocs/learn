@@ -23,7 +23,7 @@ summary: |
   
 prerequisites: |
  - Introduction to Python for data science
-iconUrl: /learn/achievements/reactors/machine-learning-popular-algorithms.svg
+iconUrl: /training/achievements/reactors/machine-learning-popular-algorithms.svg
 hidden: true
 levels:
 - beginner
@@ -33,7 +33,6 @@ roles:
 - data-scientist
 products:
 - azure
-- vs-code
 subjects:
 - machine-learning
 modules:

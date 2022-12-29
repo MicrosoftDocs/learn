@@ -2,8 +2,8 @@
 uid: learn.wwl.select-sort-measure-objects-use-pipeline
 metadata:
   title: Select, sort, and measure objects using the pipeline
-  description: "This module explains how to manipulate objects in the pipeline by using commands that sort, select, and measure objects."
-  ms.date: 08/01/2022
+  description: "Select, sort, and measure objects using the pipeline"
+  ms.date: 12/21/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -26,7 +26,7 @@ prerequisites: |
   *   Familiarity with Windows Server administration, maintenance, and troubleshooting.
   *   Familiarity with Windows PowerShell and its commands to perform specific tasks.
   *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/select-sort-measure-objects-use-pipeline.svg
 levels:
 - intermediate
 roles:
@@ -38,7 +38,6 @@ products:
 - azure-powershell
 - azure-virtual-machines
 - m365
-- vs-code
 subjects:
 - architecture
 - development-tools

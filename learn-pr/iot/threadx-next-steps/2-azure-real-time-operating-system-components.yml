@@ -5,8 +5,10 @@ metadata:
   title: Azure RTOS components
   description: Discussion of Azure RTOS components
   ms.date: 03/25/2022
-  author: edlamie80
-  ms.author: liydu
+  author: timlt
+  ms.author: timlt
+  ms.reviewer: liydu
+  manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

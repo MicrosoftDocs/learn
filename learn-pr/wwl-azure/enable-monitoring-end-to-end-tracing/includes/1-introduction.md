@@ -1,4 +1,4 @@
-You've created your first Spring Cloud service, installed your microservices as applications, and exposed them through the **api-gateway**. Now that everything is up and running, it would be beneficial to monitor your applications availability. Monitoring helps you determine if there are errors or exceptions within your applications.
+You've created your first Spring Apps service, installed your microservices as applications, and exposed them through the **api-gateway**. Now that everything is up and running, it would be beneficial to monitor your applications availability. Monitoring helps you determine if there are errors or exceptions within your applications.
 
 In this exercise, you'll add end-to-end monitoring to your applications.
 
@@ -20,4 +20,5 @@ After completing this module, you'll be able to:
 
 > [!NOTE]
 > The instructions provided in this exercise assume that you've successfully completed the previous exercises and are using the same lab environment, including your Git Bash session with the relevant environment variables already set.
-> To download the instructions for this module, see [Deploying and Running Java apps in Azure Spring Apps](https://github.com/MicrosoftLearning/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps) in GitHub.
+
+To download the instructions for this module, see [Deploying and Running Java apps in Azure Spring Apps](https://github.com/MicrosoftLearning/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps) in GitHub.

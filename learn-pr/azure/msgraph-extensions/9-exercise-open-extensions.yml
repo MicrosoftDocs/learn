@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.msgraph-extensions.exercise-open-extensions
-title: Exercise - Add custom data using open extensions
+title: Exercise - Add custom data by using open extensions
 metadata:
   unitType: exercise
-  title: Exercise - Add custom data using open extensions
-  description: "Add custom data to users using Microsoft Graph open extensions."
+  title: Exercise - Add custom data by using open extensions
+  description: "Add custom data to users by using Microsoft Graph open extensions."
   ms.date: 04/08/2022
   author: FaithOmbongi
   ms.author: ombongifaith

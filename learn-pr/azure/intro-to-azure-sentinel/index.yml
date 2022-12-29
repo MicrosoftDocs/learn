@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Familiarity with security operations in an organization
   - Basic experience with Azure services
-iconUrl: /learn/achievements/intro-to-azure-sentinel.svg
+iconUrl: /training/achievements/intro-to-azure-sentinel.svg
 levels:
 - beginner
 roles:

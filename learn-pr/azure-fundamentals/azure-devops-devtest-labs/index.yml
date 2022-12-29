@@ -24,7 +24,7 @@ prerequisites: |
     - Continuous deployment
     - Infrastructure as code
 ratingEnabled: true
-iconUrl: /learn/achievements/azure-devops-devtest-labs.svg
+iconUrl: /training/achievements/azure-devops-devtest-labs.svg
 levels:
 - beginner
 roles:

@@ -1,7 +1,7 @@
 ### Meet Tailwind Traders
 
 
-:::image type="content" source="../media/tailwind-traders.png" alt-text="Tailwind Traders logo.":::
+:::image type="content" source="../media/tailwind-traders.png" alt-text="Logo of Tailwind Traders company.":::
 
 
 You work for a Tailwind Traders, a home improvement retailer. Tailwind Traders currently manages on-premises data centers that host the company's retail website. These data centers also store all the data and streaming video for its applications.

@@ -20,7 +20,7 @@ prerequisites: |
   *   Familiarity with managing Active Directory Domain Services security principals
   *   Ability to edit Active Directory Group Policy settings
   *   Experience performing basic Windows Server administration tasks
-iconUrl: /learn/achievements/8-secure-windows-server-user-accounts.svg
+iconUrl: /training/achievements/8-secure-windows-server-user-accounts.svg
 levels:
 - intermediate
 roles:

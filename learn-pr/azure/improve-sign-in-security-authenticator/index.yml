@@ -2,7 +2,7 @@
 uid: learn.improve-sign-in-security-authenticator
 metadata:
   moduleType: standard
-  title: improve-sign-in-security-authenticator
+  title: Improve sign-in security with Microsoft Authenticator
   description: "Improve Azure AD sign-in security by running a registration campaign to nudge users to set up Microsoft Authenticator push notifications as their default sign-in method."
   ms.date: 7/27/2022
   author: Justinha
@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Experience using the Azure AD portal.
   - Knowledge of Azure Active Directory (Azure AD) fundamentals, including multifactor authentication (MFA).
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels: 
   - beginner
 roles: 

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search.create-indexer
-title: Create an indexer for data in Azure Cosmos DB SQL API
+title: Create an indexer for data in Azure Cosmos DB for NoSQL
 metadata:
-  title: Create an indexer for data in Azure Cosmos DB SQL API
-  description: "Create an indexer for data in Azure Cosmos DB SQL API"
-  ms.date: 03/09/2022
+  title: Create an indexer for data in Azure Cosmos DB for NoSQL
+  description: "Create an indexer for data in Azure Cosmos DB for NoSQL"
+  ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

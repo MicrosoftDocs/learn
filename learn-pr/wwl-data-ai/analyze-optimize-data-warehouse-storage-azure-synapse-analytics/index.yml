@@ -19,7 +19,7 @@ abstract: |
   *   Understand rules for minimally logged operations
 prerequisites: |
   *   It is recommended that students understand how Azure Synapse Analytics works
-iconUrl: /learn/achievements/azure-synaps-analytics-optimize-data-warehouse.svg
+iconUrl: /training/achievements/azure-synaps-analytics-optimize-data-warehouse.svg
 levels:
 - advanced
 roles:

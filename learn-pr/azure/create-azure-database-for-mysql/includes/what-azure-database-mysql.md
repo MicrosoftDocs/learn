@@ -57,7 +57,7 @@ Azure Database for MySQL Flexible Server supports the following two connectivity
 > You should use the **Allow public access from any Azure service within Azure to this server** option only in development and testing scenarios. This is because it allows connections from IP addresses allocated to any Azure resource, including connections from other customers’ subscriptions.
 
 > [!NOTE]
-> To enable private access, you must implement custom Domain Name Service (DNS) name resolution. For details regarding this implementation, refer to the [**Microsoft technical documentation**](https://docs.microsoft.com) webpage.
+> To enable private access, you must implement custom Domain Name Service (DNS) name resolution. For details regarding this implementation, refer to [Microsoft Learn](/?azure-portal=true).
 
 The server by default enforces Transport Layer Security (TLS 1.2) to help protect incoming network communication. While it's possible to allow unencrypted connections after the server is provisioned, we don’t recommend this option.
 

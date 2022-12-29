@@ -5,8 +5,8 @@ metadata:
   title: Use monitoring and analytics to gain cost insights
   description: Learn how to use monitoring and analytics to gain cost insights.
   ms.date: 05/19/2020
-  author: robbyatmicrosoft
-  ms.author: robbymillsap
+  author: martinekuan
+  ms.author: martinek
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

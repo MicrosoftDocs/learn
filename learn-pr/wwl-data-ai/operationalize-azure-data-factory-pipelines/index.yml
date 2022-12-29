@@ -25,7 +25,7 @@ prerequisites: |
   - Log into the Azure portal
   - Explain and create resource groups
   - Describe Azure Data Factory and its core components
-iconUrl: /learn/achievements/operationalize-your-azure-data-factory-pipelines.svg
+iconUrl: /training/achievements/operationalize-your-azure-data-factory-pipelines.svg
 levels:
 - intermediate
 roles:

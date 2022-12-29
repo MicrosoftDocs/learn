@@ -8,7 +8,7 @@
 
         Before the National Defense Authorization Act for fiscal year 2021 was passed, the United States Government had been working on a single, unified program for training, certification, and third party assessment of cybersecurity for the defense industrial base. 
 
-        The Defense Industrial Base, or DIB, refers to the governments assets that are used in the production of equipment for the country's armed forces.
+        The Defense Industrial Base, or DIB, refers to the governments assets that are used in the production of equipment for the country's/region's armed forces.
 
         The model, known as CMMC, is a "comprehensive framework to protect the defense industrial base from increasingly frequent and complex cyberattacks."
 

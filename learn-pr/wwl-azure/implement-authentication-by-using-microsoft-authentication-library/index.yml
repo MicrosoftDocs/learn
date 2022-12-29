@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   *   You should be familiar with developer concepts and terminology.
   *   An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /learn/achievements/authentication-library.svg
+iconUrl: /training/achievements/authentication-library.svg
 levels:
 - intermediate
 roles:

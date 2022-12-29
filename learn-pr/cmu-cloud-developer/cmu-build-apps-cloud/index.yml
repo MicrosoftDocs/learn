@@ -29,7 +29,7 @@ prerequisites: |
   - Know what datacenters are and why they exist
   - Know how datacenters are set up, powered, and provisioned
   - Understand how cloud resources are provisioned and metered
-iconUrl: /learn/achievements/cmu-cloud-developer/build-applications-on-the-cloud.svg
+iconUrl: /training/achievements/cmu-cloud-developer/build-applications-on-the-cloud.svg
 hidden: true
 levels:
 - beginner

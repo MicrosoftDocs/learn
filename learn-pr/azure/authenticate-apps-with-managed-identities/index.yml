@@ -20,7 +20,7 @@ prerequisites: |
   - Familiarity with Azure Active Directory (Azure AD) concepts
   - Familiarity with general concepts of authorization and authentication
   - Experience developing and deploying IaaS applications
-iconUrl: /learn/achievements/authenticate-apps-with-managed-identities.svg
+iconUrl: /training/achievements/authenticate-apps-with-managed-identities.svg
 levels:
 - intermediate
 roles:

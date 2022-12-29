@@ -70,7 +70,7 @@ Identify the subtasks of *module title*
 
     **Knowledge check**
 
-    What types of questions will test *Awareness of performance characteristics of a file system*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
+    What types of questions will test *Awareness of performance characteristics of a file system*? *[(Knowledge check guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)*
 
     - What are the top three performance considerations that impact file system operation?
     - How do combinations of these performance considerations impact performance?
@@ -113,7 +113,7 @@ Identify the subtasks of *module title*
     How did you solve the problem in the initial scenario with the knowledge learned in the module?
 
     - 
-    *Add your summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit)*
+    *Add your summary [(Summary guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit)*
 
 ## Notes
 

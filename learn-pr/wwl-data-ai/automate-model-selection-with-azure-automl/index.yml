@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Knowledge of Python
   - Experience of training models using the Azure Machine Learning SDK
-iconUrl: /learn/achievements/automate-model-selection-with-azure-automl-badge.svg
+iconUrl: /training/achievements/automate-model-selection-with-azure-automl-badge.svg
 levels:
 - beginner
 roles:

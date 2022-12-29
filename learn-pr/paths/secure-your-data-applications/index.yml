@@ -13,7 +13,7 @@ prerequisites: |
   - None
 summary: |
   Application running within Azure access your confidential data need to be locked down. Learn to secure your applications, storage, databases, and key vaults.
-iconUrl: /learn/achievements/security-data-applications.svg
+iconUrl: /training/achievements/security-data-applications.svg
 levels:
 - intermediate
 roles:

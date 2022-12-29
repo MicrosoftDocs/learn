@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - You should be familiar with basic cloud computing concepts and terminology.
   - You should have a general understanding of why government exists and the purpose it serves.
-iconUrl: /learn/achievements/government-describe-structure.svg
+iconUrl: /training/achievements/government-describe-structure.svg
 levels:
 - beginner
 roles:

@@ -22,7 +22,7 @@ abstract: |
 prerequisites: |
   *   Working experience with enterprise networking.
   *   Conceptual knowledge of firewall integration and hybrid connectivity.
-iconUrl: /learn/achievements/1-prepare-for-azure-stack-hub-deployment.svg
+iconUrl: /training/achievements/1-prepare-for-azure-stack-hub-deployment.svg
 levels:
 - advanced
 roles:

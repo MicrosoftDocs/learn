@@ -209,7 +209,7 @@ public static class PhonewordTranslator
 
 ## Create the event method for the **CallButton** button
 
-1. Add the `OnCall` event handling method to the end of the `MainPage` class. Note that this method will make use of asynchronous operations, so mark it as `async`:
+1. Add the `OnCall` event handling method to the end of the `MainPage` class. This method will make use of asynchronous operations, so mark it as `async`:
 
     ```csharp
     public class MainPage : ContentPage
@@ -223,7 +223,7 @@ public static class PhonewordTranslator
     }
     ```
 
-1. In the `OnCall` method, prompt the user, by using the static **Page.DisplayAlert** method, to ask if they'd like to dial the number.
+1. In the `OnCall` method, prompt the user, by using the **Page.DisplayAlert** method, to ask if they'd like to dial the number.
 
     The parameters to `DisplayAlert` are a title, a message, and two strings used for the Accept and Cancel button text. It returns a Boolean indicating whether the Accept button was pressed to dismiss the dialog box.
 
@@ -270,15 +270,12 @@ public static class PhonewordTranslator
         {
             try
             {
-                PhoneDialer.Default.Open(translatedNumber);
+                if (PhoneDialer.Default.IsSupported)
+                    PhoneDialer.Default.Open(translatedNumber);
             }
             catch (ArgumentNullException)
             {
                 await DisplayAlert("Unable to dial", "Phone number was not valid.", "OK");
-            }
-            catch (FeatureNotSupportedException)
-            {
-                await DisplayAlert("Unable to dial", "Phone dialing not supported.", "OK");
             }
             catch (Exception)
             {

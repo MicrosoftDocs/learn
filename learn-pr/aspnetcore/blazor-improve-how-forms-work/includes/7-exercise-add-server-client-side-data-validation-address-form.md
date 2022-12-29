@@ -248,7 +248,7 @@ Would a better user experience be a customer can't submit their order until they
     }    
     ```
 
-    This code also allows links an event handler to when a field is changed. In the new handler, you can check to see if the model is valid and set the `isError` appropriately.
+    This code also allows for linking an event handler to when a field is changed. In the new handler, you can check to see if the model is valid and set the `isError` appropriately.
 
     ```csharp
         private void HandleFieldChanged(object sender, FieldChangedEventArgs e)

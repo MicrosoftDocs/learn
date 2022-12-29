@@ -20,7 +20,7 @@ prerequisites: |
   Before starting this module, you should:
   - Be familiar with Azure services and the Azure portal.
   - Have experience of provisioning Azure Cognitive Services resources.
-iconUrl: /learn/achievements/monitor-cognitive-services.svg
+iconUrl: /training/achievements/monitor-cognitive-services.svg
 levels:
 - intermediate
 roles:

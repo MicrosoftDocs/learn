@@ -4,7 +4,7 @@ AZ-104: Microsoft Azure Administrator gives students the opportunity to learn a 
 
 - [Microsoft Learn](https://aka.ms/learn) 
 
-- [Microsoft Whiteboard ](https://aka.ms/whiteboard)
+- [Microsoft Whiteboard](https://aka.ms/whiteboard)
 
 - [Microsoft technical documentation](https://aka.ms/docs) 
 

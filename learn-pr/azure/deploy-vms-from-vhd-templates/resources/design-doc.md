@@ -178,8 +178,8 @@ Identify the subtasks of *Deploy Azure virtual machines from VHD templates*
 
 ## Notes
 
-Capture Windows VM to image - https://docs.microsoft.com/azure/virtual-machines/windows/capture-image-resource
+Capture Windows VM to image - https://learn.microsoft.com/azure/virtual-machines/windows/capture-image-resource
 
-Capture Linux VM to image - https://docs.microsoft.com/azure/virtual-machines/linux/capture-image
+Capture Linux VM to image - https://learn.microsoft.com/azure/virtual-machines/linux/capture-image
 
-Create Windows VM from specialized disk - https://docs.microsoft.com/azure/virtual-machines/windows/create-vm-specialized
+Create Windows VM from specialized disk - https://learn.microsoft.com/azure/virtual-machines/windows/create-vm-specialized

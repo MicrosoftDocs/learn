@@ -6,7 +6,7 @@ Now you’ve completed this module, you should be able to:
 
 - Understand the different gateways and SKUs.
 
-- Determine when it is necessary to reset VPN Gateways.
+- Determine when it's  necessary to reset VPN Gateways.
 
 - Differentiate between error types to troubleshoot connections.
 
@@ -34,7 +34,7 @@ Use these resources to discover more about the topics covered.
 
 [Reset a VPN gateway or connection to reestablish IPsec tunnels - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/reset-gateway)
 
-[Troubleshoot an Azure site-to-site VPN connection that cannot connect - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-cannot-connect)
+[Troubleshoot an Azure site-to-site VPN connection that can't connect - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-cannot-connect)
 
 [Connect a computer to a virtual network using Point-to-Site and RADIUS authentication: PowerShell - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/point-to-site-how-to-radius-ps)
 
@@ -46,7 +46,7 @@ Use these resources to discover more about the topics covered.
 
 [Monitoring Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/monitor-vpn-gateway)
 
-[Troubleshoot Point-to-Site connections: Mac OS X clients - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/vpn-gateway-troubleshoot-point-to-site-osx-ikev2)
+[Troubleshoot Point-to-Site connections: macOS X clients - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/vpn-gateway-troubleshoot-point-to-site-osx-ikev2)
 
 [Troubleshoot Point-to-Site VPN clients - Azure AD authentication - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/troubleshoot-ad-vpn-client)
 

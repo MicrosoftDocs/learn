@@ -2,7 +2,7 @@ You're a Global Administrator in Azure Active Directory (Azure AD) for a large o
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Identify the appropriate role to assign to an employee.
 - Identify scenarios where the Global Administrator for Azure Active Directory might need to temporarily elevate their access in Azure.
@@ -11,4 +11,4 @@ In this module, you will:
 ## Prerequisites
 
 - A basic understanding of Azure role-based access control (Azure RBAC)
-- (Optional) Access to an Azure subscription where you have the Global Administrator role for your account 
+- (Optional) Access to an Azure subscription where you have the Global Administrator role for your account

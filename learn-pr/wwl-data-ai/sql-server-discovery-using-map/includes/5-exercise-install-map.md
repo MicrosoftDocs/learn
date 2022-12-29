@@ -1,4 +1,4 @@
-Suppose you're a new database administrator for a law firm with branch offices across the country. You're going to use the **Microsoft Assessment and Planning (MAP)** toolkit to create an inventory of all the SQL Server instances in the organization. First, you'll install the toolkit on a test machine, and configure it to use a sample MAP database.
+Suppose you're a new database administrator for a law firm with branch offices across the country/region. You're going to use the **Microsoft Assessment and Planning (MAP)** toolkit to create an inventory of all the SQL Server instances in the organization. First, you'll install the toolkit on a test machine, and configure it to use a sample MAP database.
 
 In this exercise, you'll install the MAP toolkit on a test computer, then restore the sample backup database.
 

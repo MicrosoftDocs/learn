@@ -22,7 +22,7 @@ prerequisites: |
   - Basic knowledge of Azure PowerShell and Azure command-line interface (CLI)
   - Experience with Windows and Linux
 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - intermediate
 roles:

@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
     - Basic understanding of IoT  
     - Basic understanding of IoT Edge
-iconUrl: /learn/achievements/student-evangelism/introduction-to-azure-sphere.svg
+iconUrl: /training/achievements/student-evangelism/introduction-to-azure-sphere.svg
 badge:
   uid: learn.oxford.intro-to-azure-sphere.badge
 levels:

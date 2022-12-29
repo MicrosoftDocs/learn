@@ -12,7 +12,7 @@ You can also create and manage roles by using SQL Server Management Studio (SSMS
 
 To gain a better understanding of how RLS restricts access to data, watch the following animated image.
 
-![Animated diagram demonstrates how row-level security works for two users who each have access to specific country data.](../media/introduce-row-level-security.gif)
+![Animated diagram demonstrates how row-level security works for two users who each have access to specific country/region data.](../media/introduce-row-level-security.gif)
 
 ## Apply star schema design principals
 
@@ -29,7 +29,7 @@ This model design supports examples presented in this unit.
 Rule expressions are evaluated within row context. Row context means the expression is evaluated for each row using the column values of that row. When the expression returns TRUE, the user can “see” the row.
 
 > [!TIP]
-> To learn more about row context, work through the [Add calculated tables and columns to Power BI Desktop models](/learn/modules/dax-power-bi-add-calculated-tables/) module. While this module describes adding model calculations, it includes a unit that introduces and describes row context.
+> To learn more about row context, work through the [Add calculated tables and columns to Power BI Desktop models](/training/modules/dax-power-bi-add-calculated-tables/) module. While this module describes adding model calculations, it includes a unit that introduces and describes row context.
 
 You can define rules that are either static or dynamic.
 

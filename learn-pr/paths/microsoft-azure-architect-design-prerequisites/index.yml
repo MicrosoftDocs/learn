@@ -3,7 +3,7 @@ uid: learn.wwl.microsoft-azure-architect-design-prerequisites
 metadata:
   title: AZ-305 Microsoft Azure Architect Design Prerequisites
   description: AZ-305 Microsoft Azure Architect Design Prerequisites
-  ms.date: 08/05/2022
+  ms.date: 10/11/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ prerequisites: |
   Experience designing architecture solutions is desired, but not required.
 summary: |
   Learn the basic Azure concepts you'll need to know as an Azure infrastructure architect. This path gives you the knowledge to be successful as you begin studying for AZ-305: Designing Microsoft Azure Infrastructure Solutions.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/microsoft-azure-architect-design-prerequisites.svg
 levels:
 - intermediate
 roles:

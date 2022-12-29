@@ -23,7 +23,7 @@ prerequisites: |
   - Introduction to Azure Data Share
   - Introduction to Azure Data Factory
   - Introduction to Azure Synapse Analytics
-iconUrl: /learn/achievements/receive-data-with-azure-data-share-transform-with-azure-data-factory.svg
+iconUrl: /training/achievements/receive-data-with-azure-data-share-transform-with-azure-data-factory.svg
 levels:
 - intermediate
 roles:

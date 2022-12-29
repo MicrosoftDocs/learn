@@ -3,7 +3,7 @@ uid: introduction-azure-web-application-firewall
 metadata:
   title: "Introduction to Azure Web Application Firewall"
   description: Describe how Azure Web Application Firewall protects Azure web applications from common attacks, including its features, how it’s deployed, and its common use cases.
-  ms.date: 02/10/2021
+  ms.date: 12/19/2022
   author: vhorne
   ms.author: victorh
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   - Beginner-level knowledge of Azure, including Azure virtual networks, Azure App Service, Azure Front Door, and Azure Application Gateway. 
   - Beginner-level knowledge of networking, including IP addresses, HTTP/HTTPS request parameters, and HTTP request methods. 
   - Beginner-level knowledge of cloud computing, including availability and web applications.  
-iconUrl: /learn/achievements/introduction-to-azure-web-application-firewall.svg
+iconUrl: /training/achievements/introduction-to-azure-web-application-firewall.svg
 ratingEnabled: true
 levels:
 - beginner

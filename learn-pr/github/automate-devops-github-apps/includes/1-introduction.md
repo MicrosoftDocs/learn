@@ -22,4 +22,4 @@ By the end of this module, you'll:
 
 This module covers the automation of common GitHub tasks through GitHub Apps. To fully appreciate the benefits this module discusses, we recommend that you complete the following module first:
 
-- [Introduction to GitHub](/learn/modules/introduction-to-github)
+- [Introduction to GitHub](/training/modules/introduction-to-github)

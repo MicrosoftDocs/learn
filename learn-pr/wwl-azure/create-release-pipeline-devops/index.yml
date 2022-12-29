@@ -3,7 +3,7 @@ uid: learn.wwl.create-release-pipeline
 metadata:
   title: Create a release pipeline
   description: "Create a release pipeline"
-  ms.date: 07/27/2022
+  ms.date: 12/09/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   *   Describe what a Build and Release task is, what it can do, and some available deployment tasks
   *   Implement release jobs
 prerequisites: ""
-iconUrl: /learn/achievements/1-create-a-release-pipeline.svg
+iconUrl: /training/achievements/1-create-a-release-pipeline.svg
 levels:
 - advanced
 roles:

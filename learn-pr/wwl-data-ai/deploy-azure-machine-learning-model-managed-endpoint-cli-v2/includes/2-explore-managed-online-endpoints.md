@@ -38,4 +38,4 @@ Whenever the marketing team sends a request to the endpoint to get new real-time
 Deploying multiple models to an endpoint makes blue/green deployment possible. You can decide how much traffic should be routed to each deployed model. Using this approach, you can transition to a new version of the model without interrupting service for the client.
 
 > [!Tip]
-> Learn more about [deploying and scoring a machine learning model by using an online endpoint](https://docs.microsoft.com/azure/machine-learning/how-to-deploy-managed-online-endpoints#understand-the-scoring-script)
+> Learn more about [deploying and scoring a machine learning model by using an online endpoint](/azure/machine-learning/how-to-deploy-managed-online-endpoints#understand-the-scoring-script)

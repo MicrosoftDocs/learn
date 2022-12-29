@@ -24,7 +24,7 @@ quiz:
       explanation: "Incorrect. MSLE is a program that provides faculty members and higher education institutions with free curriculum, training, and tools for teaching technical skills."
     - content: "Free curriculum, training, and tools for teaching Microsoft technical skills"
       isCorrect: true
-      explanation: "Correct. Microsoft Learn of Educators is a program that provides faculty members and higher education institutions with free curriculum, training, and tools for teaching technical skills."
+      explanation: "Correct. Microsoft Learn for Educators is a program that provides faculty members and higher education institutions with free curriculum, training, and tools for teaching technical skills."
     - content: "A learning path to certification in technical skills"
       isCorrect: false
       explanation: "Incorrect. In addition to learning paths for certification, MSLE is a program that provides faculty members and higher education institutions with free curriculum, training, and tools for teaching technical skills."

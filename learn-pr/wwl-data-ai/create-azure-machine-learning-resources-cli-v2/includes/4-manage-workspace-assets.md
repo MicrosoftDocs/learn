@@ -92,8 +92,7 @@ The YAML file to create the environment, which will refer to the Conda environme
 $schema: https://azuremlschemas.azureedge.net/latest/environment.schema.json
 name: basic-env-scikit
 version: 1
-docker:
-  image: mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04
+image: mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04
 conda_file: file:conda-envs/basic-env-ml.yml
 ```
 

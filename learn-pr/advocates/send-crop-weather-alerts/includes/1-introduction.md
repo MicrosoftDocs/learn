@@ -27,4 +27,4 @@ In this module, you will:
 ## Prerequisites
 
 - A free Twilio account
-- Basic familiarity with Azure Functions, similar to what's covered in [Create serverless logic with Azure Functions](/learn/modules/create-serverless-logic-with-azure-functions/?azure-portal=true).
+- Basic familiarity with Azure Functions, similar to what's covered in [Create serverless logic with Azure Functions](/training/modules/create-serverless-logic-with-azure-functions/?azure-portal=true).

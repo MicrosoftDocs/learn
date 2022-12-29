@@ -18,12 +18,12 @@ abstract: |
   - Publish your builds so others can access them
   - Use templates to build multiple configurations
 prerequisites: |
-  - An Azure DevOps organization
+  - An Azure DevOps organization with access to parallel jobs
   - Visual Studio Code
   - .NET 6.0 SDK
   - Git
   - A GitHub account
-iconUrl: /learn/achievements/azure-devops/create-a-build-pipeline-azure-pipelines.svg
+iconUrl: /training/achievements/azure-devops/create-a-build-pipeline-azure-pipelines.svg
 ratingEnabled: true
 levels:
 - beginner

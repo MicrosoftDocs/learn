@@ -8,8 +8,9 @@ In this exercise, you'll get the Blazing Pizza app in a position where orders ca
 
 You're going to add a sidebar that will display all the pizzas that a customer has added to their order.
 
+1. Stop the app if it's still running.
 1. In Visual Studio Code, in the file explorer, expand **Pages** and then select **Index.razor**.
-1. Under the `@if` code block, add this code:
+1. Between the `@if` and `@code` blocks, add this code:
 
     ```razor
     <div class="sidebar">
@@ -48,7 +49,7 @@ You're going to add a sidebar that will display all the pizzas that a customer h
 
     You'll see some errors because the component doesn't know what the orders are.
 
-1. In the `@code` block under the specials declaration, add this code:
+1. In the `@code` block under `List<PizzaSpecial> specials = new();`, add this code:
 
     ```csharp
     Order order => OrderState.Order;
@@ -68,7 +69,7 @@ You might have noticed that there's no way to remove a configured pizza from the
 
 The first step is to update the `OrderState` service so that it can provide a method to remove pizzas from an order.
 
-1. In the file explorer, select **OrderState.cs**.
+1. In the file explorer, select **Services/OrderState.cs**.
 1. At the bottom of the class, add this method:
 
     ```csharp
@@ -79,7 +80,7 @@ The first step is to update the `OrderState` service so that it can provide a me
     ```
 
 1. In the file explorer, expand **Pages** and then select **Index.razor**.
-1. In `<div class="cart-item">`, add an `<a>` tag for a remove button:
+1. In `<div class="cart-item">`, add an `<a>` tag before the closing `</div>` to create a remove button:
 
     ```razor
     <a @onclick="@(() => OrderState.RemoveConfiguredPizza(configuredPizza))" class="delete-item">x</a>

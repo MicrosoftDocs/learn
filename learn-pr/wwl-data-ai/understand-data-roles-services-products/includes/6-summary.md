@@ -4,13 +4,13 @@ The Microsoft Azure cloud platform enables you to take analytics to another leve
 
 By completing this module, you have learned how to:
 
-- Describe data systems.
-- Understand the fundamentals of Azure Data Services.
-- Describe the role and purpose of a data professional.
+ -  Describe data systems.
+ -  Understand the fundamentals of Azure Data Services.
+ -  Describe the role and purpose of a data professional.
 
 ## Resources
 
 Use the following resources to discover more:
 
-- [Microsoft Azure Data Fundamentals: Explore core data concepts](/learn/paths/azure-data-fundamentals-explore-core-data-concepts/)
-- [Realize Integrated Analytical Solutions with Azure Synapse Analytics](/learn/paths/realize-integrated-analytical-solutions-with-azure-synapse-analytics/)
+- [Microsoft Azure Data Fundamentals: Explore core data concepts](/training/paths/azure-data-fundamentals-explore-core-data-concepts/)
+- [Realize Integrated Analytical Solutions with Azure Synapse Analytics](/training/paths/realize-integrated-analytical-solutions-with-azure-synapse-analytics/)

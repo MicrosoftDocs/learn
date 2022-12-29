@@ -15,7 +15,7 @@ prerequisites: |
   - Working with virtualization technologies.
 summary: |
   Learn to implement and manage Windows Server virtual machines (VMs) and container workloads using Windows Server Hyper-V.
-iconUrl: /learn/achievements/windows-server-hyper-v-and-virtualization.svg
+iconUrl: /training/achievements/windows-server-hyper-v-and-virtualization.svg
 levels:
 - intermediate
 roles:

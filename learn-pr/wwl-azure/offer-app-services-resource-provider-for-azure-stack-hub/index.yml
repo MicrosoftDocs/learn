@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   * Working experience with deploying cloud applications.
   * Conceptual knowledge of messaging, events, code deployments, configurations, API management, and app caching.
-iconUrl: /learn/achievements/2-offer-an-app-services-resource-provider-for-azure-stack-hub.svg
+iconUrl: /training/achievements/2-offer-an-app-services-resource-provider-for-azure-stack-hub.svg
 levels:
 - advanced
 roles:

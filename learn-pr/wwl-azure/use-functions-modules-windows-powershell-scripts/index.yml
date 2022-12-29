@@ -3,7 +3,7 @@ uid: learn.wwl.use-functions-modules-windows-powershell-scripts
 metadata:
   title: Use functions and modules in Windows PowerShell scripts
   description: "This module covers how to create modules and functions in Windows PowerShell scripts."
-  ms.date: 08/04/2022
+  ms.date: 11/11/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -26,7 +26,7 @@ prerequisites: |
   *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
   *   Familiarity with CIM and WMI technologies
   *   Familiarity to use variables, arrays, and hash tables in Windows PowerShell
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/use-functions-modules-windows-powershell-scripts.svg
 levels:
 - intermediate
 roles:
@@ -38,7 +38,6 @@ products:
 - azure-powershell
 - azure-virtual-machines
 - m365
-- vs-code
 subjects:
 - architecture
 - development-tools

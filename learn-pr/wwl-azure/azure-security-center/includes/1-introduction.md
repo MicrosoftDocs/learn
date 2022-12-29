@@ -15,7 +15,6 @@ Managing the secure operation of Azure is a part of [Exam AZ-500: Microsoft Azur
 Manage Security Operations (25-30%)
 
  -  Monitor security by using Microsoft Defender for Cloud
-    
      -  Evaluate vulnerability scans from Microsoft Defender for Cloud
      -  Configure Just in Time VM access by using Microsoft Defender for Cloud
      -  Configure centralized policy management by using Microsoft Defender for Cloud
@@ -35,4 +34,3 @@ In this module, you will:
 ## Prerequisites
 
 None
-

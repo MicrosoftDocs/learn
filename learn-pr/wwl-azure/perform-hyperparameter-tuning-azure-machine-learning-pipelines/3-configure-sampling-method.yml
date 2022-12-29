@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.configure-sampling-method
+title: Configure a sampling method
+metadata:
+  title: Configure a sampling method
+  description: "Configure a sampling method"
+  ms.date: 11/17/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-configure-sampling-method.md)]

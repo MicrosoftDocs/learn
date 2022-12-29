@@ -13,7 +13,7 @@ title: "Manage source control"
 summary: |
   Learn how GitHub enables you to build a modern source control strategy that fosters collaboration and enables you to automate your build and deployment processes.
 prerequisites: None
-iconUrl: /learn/achievements/az-400-manage-source-control.svg
+iconUrl: /training/achievements/az-400-manage-source-control.svg
 levels:
 - beginner
 roles:

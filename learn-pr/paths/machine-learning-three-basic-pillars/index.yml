@@ -25,7 +25,7 @@ summary: |
   
 prerequisites: |
   None.
-iconUrl: /learn/achievements/reactors/machine-learning-three-basic-pillars.svg
+iconUrl: /training/achievements/reactors/machine-learning-three-basic-pillars.svg
 hidden: true
 levels:
 - beginner
@@ -35,7 +35,6 @@ roles:
 - data-scientist
 products:
 - azure
-- vs-code
 subjects:
 - machine-learning
 modules:

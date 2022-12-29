@@ -21,14 +21,14 @@ abstract: |
 prerequisites: |
   - Basic programming knowledge, like using and assigning variables
   - Some experience with using Jupyter notebooks, including adding and modifying code
-iconUrl: /learn/achievements/python-error-handling.svg
+iconUrl: /training/achievements/python-error-handling.svg
 levels: 
   - beginner
 roles: 
   - developer
   - student
 products: 
-  - vs-code
+  - azure
 units:
 - learn.beginner-python.python-error-handling.introduction
 - learn.beginner-python.python-error-handling.tracebacks

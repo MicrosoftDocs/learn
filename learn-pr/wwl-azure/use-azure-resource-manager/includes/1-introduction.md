@@ -6,7 +6,7 @@ You need to use resource groups to organize the company's resources.
 
 ## Skills measured
 
-Managing resources is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Managing resources is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Manage Azure identities and governance (15–20%)
 

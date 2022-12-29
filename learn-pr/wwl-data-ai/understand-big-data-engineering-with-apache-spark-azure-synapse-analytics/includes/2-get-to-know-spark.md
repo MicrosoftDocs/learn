@@ -1,4 +1,4 @@
-Apache Spark is distributed data processing framework that works enables large-scale data analytics by coordinating work across multiple processing nodes in a cluster.
+Apache Spark is distributed data processing framework that enables large-scale data analytics by coordinating work across multiple processing nodes in a cluster.
 
 ## How Spark works
 

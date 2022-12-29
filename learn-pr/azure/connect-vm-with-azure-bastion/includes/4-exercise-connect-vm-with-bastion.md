@@ -2,7 +2,6 @@ In this unit, you'll create a virtual machine (VM) to act as your internal app V
 
 This exercise is optional. To complete it, you need access to an Azure subscription where you have permissions to create resources like a VM. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-
 ## Create a resource group
 
 Create a resource group to contain all the resources that you'll create for the exercises.
@@ -31,7 +30,7 @@ Create a Linux VM that's not exposed to the internet.
 
 1. In the [Azure portal](https://portal.azure.com/), search for or select **Virtual machines**.
 
-1. Select **Create**, and then select **Virtual machine** from the dropdown. The **Create a virtual machine** pane appears.
+1. Select **Create**, and then select **Azure Virtual machine** from the dropdown. The **Create a virtual machine** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -88,7 +87,7 @@ Before you can use Azure Bastion, you need to create a subnet on the virtual net
     |Field  |Name |
     |---------|---------|
     |Name    |  AzureBastionSubnet       |
-    |Subnet address range     | Enter an address space with a subnet mask that's /27 or larger, like /26, /25, and so on. An example is 10.0.1.0/24. |
+    |Subnet address range     | Enter an address space with a subnet mask that's /26 or larger, like /26, /25, and so on. An example is 10.0.1.0/24. |
 
    Use the default values for the rest of the fields.
 
@@ -102,15 +101,9 @@ Before you can use Azure Bastion, you need to create a subnet on the virtual net
 
 1. Select the virtual machine **internalappvm**.
 
-1. Select **Connect** > **Bastion** > **Use Bastion**.
+1. Select **Connect** > **Bastion** > **Create Azure Bastion using defaults**.
 
-   :::image type="content" source="../media/4-connect-bastion.png" alt-text="Screenshot of the Connect page and Bastion tab, with the Use Bastion button.":::
-
-1. Review and use the default values like the Azure Bastion resource name, subnet, and the option to create a new public IP address.
-
-   :::image type="content" source="../media/4-operations-bastion.png" alt-text="Screenshot of the Connect using Azure Bastion page with fields filled out by default, like Azure Bastion resource name, subnet, and create new public IP address.":::
-
-1. Select **Create Azure Bastion using defaults**.
+   :::image type="content" source="../media/4-connect-bastion.png" alt-text="Screenshot of the Connect page and Bastion tab, with the Create Azure Bastion using defaults button.":::
 
 Wait a few minutes for the Azure Bastion resource to be created.
 

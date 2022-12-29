@@ -3,7 +3,7 @@ To allow users access to databases hosted on your Azure Database for PostgreSQL 
 ## Create database users in Azure Database for PostgreSQL
 
 1. In Azure Data Studio (or your preferred client tool), connect to your Azure Database for PostgreSQL server with the admin sign-in credentials.
-1. With the relevant database as the current database, use CREATE ROLE with the relevant options to create a new role (user).
+1. With the relevant database as the current database, use `CREATE ROLE` with the relevant options to create a new role (user).
 1. As an example, the following query:
     1. Creates a new database named testdb.
     1. Creates a new user with a strong password.
@@ -12,7 +12,7 @@ To allow users access to databases hosted on your Azure Database for PostgreSQL 
     ```sql
     CREATE DATABASE testdb;
     CREATE ROLE <db_user> WITH LOGIN NOSUPERUSER INHERIT CREATEDB NOCREATEROLE NOREPLICATION PASSWORD '<StrongPassword!>';
-    GRANT CONNECT ON DATABASE <newdb> TO <db_user>;
+    GRANT CONNECT ON DATABASE testdb TO <db_user>;
     ```
 
     To try the query, you can replace the placeholders with your user information.
@@ -65,4 +65,4 @@ The optional parameters are:
 - **ADMIN role_name** - the ADMIN clause is like ROLE, but the named roles are added to the new role WITH ADMIN OPTION, giving them the right to grant membership in this role to others.
 
 > [!NOTE]
-> You can change attributes of a role with [ALTER ROLE](https://www.postgresql.org/docs/current/sql-alterrole.html) and remove a role with [DROP ROLE](https://www.postgresql.org/docs/current/sql-droprole.html).
+> You can change attributes of a role with [ALTER ROLE](https://www.postgresql.org/docs/current/sql-alterrole.html) and remove a role with [DROP ROLE](https://www.postgresql.org/docs/current/sql-droprole.html). 

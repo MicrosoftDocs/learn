@@ -7,11 +7,11 @@ Here you load the _Space Game_ project in Visual Studio Code, configure Git, clo
 
 ### Open the integrated terminal
 
-Visual Studio Code comes with an integrated terminal. Here you can both edit files and work from the command line.
+Visual Studio Code comes with an integrated terminal. Here you both edit files and work from the command line.
 
 1. Start Visual Studio Code.
 1. On the **View** menu, select **Terminal**.
-1. In the drop-down list, select **bash**. If you're familiar with another Unix shell that you prefer to use, such as Zsh, select that shell instead.
+1. In the dropdown list, select **bash**. If you're familiar with another Unix shell that you prefer to use, such as Zsh, select that shell instead.
 
     :::image type="content" source="../../shared/media/vscode-terminal-bash.png" alt-text="A screenshot of Visual Studio Code showing the location of the Bash shell.":::
 
@@ -21,7 +21,7 @@ Visual Studio Code comes with an integrated terminal. Here you can both edit fil
 
     [!include[](../../shared/includes/troubleshoot-code-terminal.md)]
 
-1. Run the `cd` command to navigate to the directory where you want to work. Choose your home directory (`~`) or a different directory if you want.
+1. Run the `cd` command to go to the directory where you want to work. Choose your home directory (`~`) or a different directory if you want.
 
     ```bash
     cd ~
@@ -62,7 +62,7 @@ To clone the *Space Game* web project to your computer:
 1. Go to your fork of the *Space Game* web project (**mslearn-tailspin-spacegame-web-deploy**) on [GitHub](https://github.com?azure-portal=true).
 1. Select **Code**. Then, from the **HTTPS** tab, select the button next to the URL that's shown to copy the URL to your clipboard.
 
-    :::image type="content" source="../../shared/media/github-clone-button.png" alt-text="Locating the URL and copy button from the GitHub repository.":::
+    :::image type="content" source="../../shared/media/github-clone-button.png" alt-text="Screenshot that shows how to locate the URL and copy button from the GitHub repository.":::
 1. In Visual Studio Code, go to the terminal window.
 1. In the terminal, move to the directory where you want to work. Choose your home directory (`~`) or a different directory if you want.
 
