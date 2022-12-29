@@ -18,7 +18,7 @@ abstract: |
   - Identify different C# syntax elements like operators, classes, and methods
 prerequisites: None
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-write-first.svg
+iconUrl: /training/achievements/csharp-write-first.svg
 levels:
 - beginner
 roles:

@@ -30,7 +30,7 @@ During the process, you'll:
 
    :::code language="bicep" source="code/4-app.bicep" :::
 
-   This file deploys an Azure App Service plan and an app. Notice that the module is fairly generic. It doesn't include any assumptions about the names of resources, or the SKU of the App Service plan. This makes it easy to reuse the module for different deployments.
+   This file deploys an Azure App Service plan and an app. Notice that the module is fairly generic. It doesn't include any assumptions about the names of resources, or the App Service plan's SKU. This makes it easy to reuse the module for different deployments.
 
 1. Save the changes to the file.
 
@@ -108,7 +108,7 @@ Here, you add the *app* module to your Bicep template as a starting point.
 
 ### Deploy the template to Azure
 
-Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This process can take a minute or two to finish, and then you'll see a successful deployment.
+Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This process can take a minute or two to finish, and then you'll get a successful deployment.
 
 ```azurecli
 az deployment group create --template-file main.bicep
@@ -124,7 +124,7 @@ The status `Running...` appears in the terminal.
 
 ### Deploy the template to Azure
 
-Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This can take a minute or two to finish, and then you'll see a successful deployment. 
+Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This can take a minute or two to finish, and then you'll get a successful deployment.
 
 ```azurepowershell
 New-AzResourceGroupDeployment -TemplateFile main.bicep
@@ -155,7 +155,7 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
    :::image type="content" source="../media/4-deployment-modules.png" alt-text="Screenshot of the Azure portal that shows the deployment details for the main deployment." :::
 
-1. Select the **toy-launch-cdn** and **toy-launch-app** deployments, and review the resources deployed in each. Notice that they correspond to the resources defined in the respective module.
+1. Select the **toy-launch-cdn** and **toy-launch-app** deployments and review the resources deployed in each. Notice that they correspond to the resources defined in the respective module.
 
 ## Test the website
 
@@ -179,8 +179,8 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 1. On a new browser tab, try to go to the host name that you copied in the previous step. Add `https://` to the start of the address.
 
-   CDN endpoints take a few minutes to become active. If you see a "Page not found" error, wait a few minutes and try pasting the link again. Also, ensure that you added `https://` to the start of the URL so that you're using HTTPS.
+   CDN endpoints take a few minutes to become active. If you get a "Page not found" error, wait a few minutes and try pasting the link again. Also, ensure that you added `https://` to the start of the URL so that you're using HTTPS.
 
-   When the CDN endpoint is active, you'll see the same App Service welcome page. This time, it has been served through the Azure Content Delivery Network service, which helps improve the website's performance.
+   When the CDN endpoint is active, you'll get the same App Service welcome page. This time, it has been served through the Azure Content Delivery Network service, which helps improve the website's performance.
 
    :::image type="content" source="../media/4-web-cdn.png" alt-text="Screenshot of the web app's welcome page, with the address bar showing the CDN endpoint." :::

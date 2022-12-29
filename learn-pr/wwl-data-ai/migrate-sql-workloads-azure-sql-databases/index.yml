@@ -22,7 +22,7 @@ prerequisites: |
   * Successfully log in to the Azure portal
   * Understand the Azure storage options
   * Understand the Azure compute options
-iconUrl: /learn/achievements/migrate-sql-workloads-to-azure-sql-databases.svg
+iconUrl: /training/achievements/migrate-sql-workloads-to-azure-sql-databases.svg
 levels:
 - intermediate
 roles:

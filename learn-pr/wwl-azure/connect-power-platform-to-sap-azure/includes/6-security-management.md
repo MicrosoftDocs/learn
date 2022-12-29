@@ -6,7 +6,7 @@ Policies enable you to govern connectors and the data that's transmitted through
 
 Data Loss Prevention policies enforce rules governing which connectors can be used together by classifying connectors as either **Business** or **Non-Business**. If you classify a connector as **Business**, it can be used only with other connectors from that group in any given app or flow. To block the usage of certain connectors, classify them as **Blocked**.
 
-Create DLP policies in the [Power Platform admin center](https://docs.microsoft.com/power-platform/admin/admin-documentation) to govern Power Platform canvas apps and Power Automate flows. To create a DLP policy, you need to be a [tenant admin](https://docs.microsoft.com/power-platform/admin/use-service-admin-role-manage-tenant) or have the [Environment Admin role](https://docs.microsoft.com/power-platform/admin/environments-overview).
+Create DLP policies in the [Power Platform admin center](/power-platform/admin/admin-documentation) to govern Power Platform canvas apps and Power Automate flows. To create a DLP policy, you need to be a [tenant admin](/power-platform/admin/use-service-admin-role-manage-tenant) or have the [Environment Admin role](/power-platform/admin/environments-overview).
 
 ## Control access to apps, flows, and connectors
 
@@ -20,7 +20,7 @@ In addition, you can configure Azure Active Directory to provide single sign-on 
 
 ## Monitor users and developers
 
-The Power Platform admin center provides a unified portal for administrators to [monitor and manage environments and settings](https://docs.microsoft.com/power-platform/admin/admin-documentation) for Power Apps, Power Automate, and the Data Gateway. The admin center allows you to:
+The Power Platform admin center provides a unified portal for administrators to [monitor and manage environments and settings](/power-platform/admin/admin-documentation) for Power Apps, Power Automate, and the Data Gateway. The admin center allows you to:
 
 - View, share, disable, or delete Power Automate flows, including flows using the SAP ERP connector
 

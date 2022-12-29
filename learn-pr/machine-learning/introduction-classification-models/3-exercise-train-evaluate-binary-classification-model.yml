@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 sandbox: true
-notebook: /learn/modules/introduction-classification-models/notebooks/3-exercise-train-evaluate-binary-classification-model.ipynb
+notebook: /training/modules/introduction-classification-models/notebooks/3-exercise-train-evaluate-binary-classification-model.ipynb

@@ -102,7 +102,7 @@ The same page layout defined using XAML looks like this:
         <Label Text="Password" TextColor="White" />
         <Entry IsPassword="True" />
         <Button Text="Log in" BackgroundColor="#0094FF" Clicked="LoginButton_Clicked" />
-    </StackLayout>
+    </VerticalStackLayout>
 </ContentPage>
 ```
 

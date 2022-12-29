@@ -1,18 +1,18 @@
 [!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-Before you start to work on your toy company's website pipeline, you need to configure your environment. In this section, you make sure that your Azure and Azure DevOps environments are set up to complete the rest of this module.
+Before you start to work on your toy company's website pipeline, you need to configure your environment. In this section, you'll make sure that your Azure and Azure DevOps environments are set up to complete the rest of this module.
 
 To meet these objectives, you'll:
 
 > [!div class="checklist"]
-> * Set up an Azure DevOps project for this module.
-> * Clone the project's repository to your computer.
-> * Create a resource group in Azure.
-> * Create a service connection in Azure Pipelines.
+> - Set up an Azure DevOps project for this module.
+> - Clone the project's repository to your computer.
+> - Create a resource group in Azure.
+> - Create a service connection in Azure Pipelines.
 
 ## Get the Azure DevOps project
 
-Here you make sure that your Azure DevOps organization is set up to complete the rest of this module. You set it up by running a template that creates a project in Azure DevOps.
+Here, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module. You'll set it up by running a template that creates a project in Azure DevOps.
 
 The modules in this learning path are part of a progression. For learning purposes, each module has an associated Azure DevOps project.
 
@@ -81,7 +81,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
 
 ```azurecli
-az group create --name ToyWebsiteTest --location westus
+az group create --name ToyWebsiteTest --location westus3
 ```
 
 ::: zone-end
@@ -91,7 +91,7 @@ az group create --name ToyWebsiteTest --location westus
 To create a resource group, run this Azure PowerShell command in the Visual Studio Code terminal:
 
 ```azurepowershell
-New-AzResourceGroup -Name ToyWebsiteTest -Location westus
+New-AzResourceGroup -Name ToyWebsiteTest -Location westus3
 ```
 
 ::: zone-end

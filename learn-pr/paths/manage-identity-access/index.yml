@@ -13,7 +13,7 @@ prerequisites: |
   - None
 summary: |
   Explore how identity is the starting point for all security within your company. Learn to authenticate and authorize users and apps with Azure Active Directory.
-iconUrl: /learn/achievements/management-identity-access.svg
+iconUrl: /training/achievements/management-identity-access.svg
 levels:
 - intermediate
 roles:

@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   -	Ability to navigate the Azure portal
   -	A basic understanding of web app performance would be helpful but is not required
-iconUrl: /learn/achievements/web-app-down-app-service-diagnostics.svg
+iconUrl: /training/achievements/web-app-down-app-service-diagnostics.svg
 levels:
 - beginner
 roles:

@@ -12,7 +12,7 @@ The app implements simple "light" and "dark" color schemes for the **StandardTip
 
     ```csharp
     private Color colorNavy = Colors.Navy;
-    private Color colorSilver = Color.Silver;
+    private Color colorSilver = Colors.Silver;
 
     ...
 

@@ -5,8 +5,8 @@ metadata:
   title: Plan and estimate your Azure costs
   description: Learn how to plan and estimate costs for your Azure projects.
   ms.date: 05/19/2020
-  author: robbyatmicrosoft
-  ms.author: robbymillsap
+  author: martinekuan
+  ms.author: martinek
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12
@@ -27,7 +27,7 @@ quiz:
     - content: 'Microsoft Cost Management'
       isCorrect: false
       explanation: 'Microsoft Cost Management gives you visibility into existing resource costs, and the future costs for those resources. It is not used to estimate costs for a new application.'
-    - content: 'Microsoft Pricing Calculator'
+    - content: 'Azure Pricing Calculator'
       isCorrect: true
       explanation: 'Azure Pricing Calculator can be used to estimate costs for services used for a new application on Azure.'
 
@@ -35,13 +35,13 @@ quiz:
     choices:
     - content: 'The ability for users to cancel orders.'
       isCorrect: false
-      explanation: 'This would be a business requirement for the application.'
+      explanation: 'This functionality would be a business requirement for the application.'
     - content: 'The ability for customers to upload and store image files in your application.'
       isCorrect: true
-      explanation: 'This would affect Azure costs, because you would need to account for the storage of images on an Azure service.'
+      explanation: 'This functionality would affect Azure costs, because you would need to account for the storage of images on an Azure service.'
     - content: 'Sending notifications to procurement when inventory is low.'
       isCorrect: false
-      explanation: 'This would be a business requirement for the application.'
+      explanation: 'This functionality would be a business requirement for the application.'
     - content: 'Providing a form for customers to initiate a product return.'
       isCorrect: false
-      explanation: 'This would be a business requirement for the application.'
+      explanation: 'This functionality would be a business requirement for the application.'

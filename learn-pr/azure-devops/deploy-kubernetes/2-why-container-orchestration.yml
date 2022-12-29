@@ -4,9 +4,10 @@ title: Why is container orchestration important?
 metadata:
   title: Why is container orchestration important?
   description: Understand the benefits of Kubernetes and when to use it.
-  ms.date: 06/23/2021
+  ms.date: 08/09/2022
   author: ramiMSFT
   ms.author: rabououn
+  ms.custom: devdivchpfy22
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
@@ -15,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following is not a good reason to use microservices?"
+  - content: "Which of the following isn't a good reason to use microservices?"
     choices:
     - content: "You need to deploy software to really small devices, like watches."
       isCorrect: true
@@ -28,23 +29,23 @@ quiz:
       explanation: "Microservices make it easier for projects to be maintained by autonomous teams that make the best decisions for the functionality they own."
   - content: "How are Docker and Kubernetes similar?"
     choices:
-    - content: "They are both effective at packaging applications into self-sufficient containers."
+    - content: "They're both effective at packaging applications into self-sufficient containers."
       isCorrect: false
       explanation: "Docker is a container packaging technology. Kubernetes is designed to orchestrate containers."
     - content: "They both use declarative manifests to define how their constituent components are exposed."
       isCorrect: true
       explanation: "Docker manifests define how the applications they host are exposed while Kubernetes manifests define how the containers they manage are exposed."
-    - content: "They are both designed for orchestrating deployed containers."
+    - content: "They're both designed for orchestrating deployed containers."
       isCorrect: false
       explanation: "Kubernetes is designed to orchestrate containers. Docker is a container packaging technology."
   - content: "Suppose your team has multiple .NET Core projects in a solution that produces multiple Docker containers. How much overhead does adding Kubernetes support require?"
     choices:
     - content: "A lot. Kubernetes uses its own programming languages and development framework, so applications need to be rebuilt."
       isCorrect: false
-      explanation: "Kubernetes is a container orchestration technology. It does not impact the fundamental development of the software in the containers it manages."
+      explanation: "Kubernetes is a container orchestration technology. It doesn't impact the fundamental development of the software in the containers it manages."
     - content: "Quite a bit. Containers will need to be adjusted to load Kubernetes settings and configuration data."
       isCorrect: false
-      explanation: "A Kubernetes cluster is configured based on the needs of the containers. The containers don't need to care whether they are running in a Kubernetes cluster."
+      explanation: "A Kubernetes cluster is configured based on the needs of the containers. The containers don't need to care whether they're running in a Kubernetes cluster."
     - content: "Very little. The application should require no changes and the containers can be produced as before. Only one or more Kubernetes manifest files that specify container requirements will need to be added."
       isCorrect: true
-      explanation: "The application and containers do not need to account for Kubernetes, but Kubernetes needs to account for the containers."
+      explanation: "The application and containers don't need to account for Kubernetes, but Kubernetes needs to account for the containers."

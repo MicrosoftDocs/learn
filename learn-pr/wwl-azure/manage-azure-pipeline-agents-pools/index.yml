@@ -18,7 +18,7 @@ abstract: |
   *   Make the agents and pools secure
   *   Explore communication to deploy using Azure Pipelines
 prerequisites: ""
-iconUrl: /learn/achievements/2-manage-azure-pipeline-agents-and-pools.svg
+iconUrl: /training/achievements/2-manage-azure-pipeline-agents-and-pools.svg
 levels:
 - advanced
 roles:

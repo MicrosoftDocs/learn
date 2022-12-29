@@ -4,7 +4,7 @@ In your educational institution, suppose you've migrated almost all of your syst
 
 Here, you'll learn how Azure Lab Services can address those concerns.
 
-## Computer labs 
+## Cloud-based computer labs
 
 Traditionally, if you wanted to teach classes using software, you'd need a classroom full of physical computers. Each student would use one to learn the material and run through exercises. At the end of each course, every computer must be reset to its initial state, so that another group of students can take the training. This reset is usually done by redeploying an operating system image.
 
@@ -16,15 +16,15 @@ An on-premises classroom like this can incur significant costs, such as:
 
 It's also challenging to scale up enough physical classrooms to meet high demand for a popular course.
 
-## What is Azure Lab Services?
+## Student VMs with Marketplace or custom images
 
 You can use Azure Lab Services to set up classroom environments in the cloud quickly and easily.
 
 The virtual machines are based off either a Marketplace image or a custom image from an Azure Compute Gallery. Administrators can, optionally, allow educators to further customize the image. For example, an educator can install software specifically needed for a class. Virtual machine templates can include your own software packages or complex configurations. You could also include the training materials in this template.
 
-When you've configured a classroom, you can grant users access to it, so they can complete the training. Users don't need an Azure subscription to use this service.
-
 :::image type="content" source="../media/2-lab-services-classrooms.png" alt-text="Diagram illustrating the relationship between an Azure Marketplace image and an Azure Lab Services classroom.":::
+
+When you've configured a classroom, you can grant users (students) access to it, so they can complete the training. Users don't need an Azure subscription to use this service.
 
 ## Key capabilities
 

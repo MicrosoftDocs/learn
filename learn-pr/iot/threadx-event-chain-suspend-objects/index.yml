@@ -4,8 +4,10 @@ metadata:
   title: Use event-chaining to suspend multiple objects in ThreadX
   description: Learn how to use event-chaining to suspend multiple objects in Azure RTOS ThreadX..
   ms.date: 01/27/2022
-  author: EdLamie
-  ms.author: liydu
+  author: timlt
+  ms.author: timlt
+  ms.reviewer: liydu
+  manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use event-chaining to suspend multiple objects in ThreadX
@@ -17,10 +19,10 @@ abstract:  |
   - Understand the concept of notification callback functions.
   - Design and debug the ThreadX solution using a hands-on approach with GitHub Codespace or Visual Studio. 
 prerequisites: |
-  - [Set up your environment](/learn/modules/introduction-azure-rtos/2-set-up-environment)
+  - [Set up your environment](/training/modules/introduction-azure-rtos/2-set-up-environment)
   - Working knowledge of C or C++, GitHub and Visual Studio
-  - Previous modules in this [learning path](/learn/paths/azure-rtos-threadx)
-iconUrl: /learn/achievements/iot/threadx-event-chain-suspend-objects.svg
+  - Previous modules in this [learning path](/training/paths/azure-rtos-threadx)
+iconUrl: /training/achievements/iot/threadx-event-chain-suspend-objects.svg
 levels:
 - beginner
 roles:

@@ -21,7 +21,7 @@ prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub
   - Familiarity with pull requests
-iconUrl: /learn/achievements/github/release-based-workflow-github.svg
+iconUrl: /training/achievements/github/release-based-workflow-github.svg
 ratingEnabled: true
 levels:
 - beginner

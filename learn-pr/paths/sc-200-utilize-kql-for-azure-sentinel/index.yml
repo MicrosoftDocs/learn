@@ -13,7 +13,7 @@ prerequisites: |
   Basic understanding of scripting concepts.
 summary: |
   Write Kusto Query Language (KQL) statements to query log data to perform detections, analysis, and reporting in Microsoft Sentinel. This learning path will focus on the most used operators.  The example KQL statements will showcase security related table queries.
-iconUrl: /learn/achievements/utilize-kql-for-azure-sentinel.svg
+iconUrl: /training/achievements/utilize-kql-for-azure-sentinel.svg
 levels:
 - intermediate
 roles:

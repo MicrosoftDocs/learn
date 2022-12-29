@@ -25,7 +25,7 @@ prerequisites: |
     - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
     - [Node.js](https://nodejs.org/?azure-portal=true)
     - TypeScript
-iconUrl: /learn/achievements/typescript/typescript-develop-typed-functions.svg
+iconUrl: /training/achievements/typescript/typescript-develop-typed-functions.svg
 levels:
 - intermediate
 roles:
@@ -33,7 +33,6 @@ roles:
 - student
 products:
 - azure
-- vs-code
 units:
 - learn.language.typescript-develop-typed-functions.1-introduction
 - learn.language.typescript-develop-typed-functions.2-create-functions-typescript

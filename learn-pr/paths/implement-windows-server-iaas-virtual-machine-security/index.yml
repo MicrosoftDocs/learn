@@ -24,7 +24,7 @@ prerequisites: |
     - Monitoring
 summary: |
   This learning path deals with securing your Azure resources. After completing the learning path, you’ll be able to determine if your Azure IaaS workloads have any security vulnerabilities, and remediate those potential security vulnerabilities.
-iconUrl: /learn/achievements/implement-windows-server-iaas-vm-security.svg
+iconUrl: /training/achievements/implement-windows-server-iaas-vm-security.svg
 levels:
 - intermediate
 roles:

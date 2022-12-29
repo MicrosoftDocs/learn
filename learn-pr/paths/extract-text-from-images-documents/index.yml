@@ -15,7 +15,7 @@ prerequisites: |
   - Knowledge of at least one programming language (C#, Python)
 summary: |
   Learn how to implement text extraction solutions with images and documents using form recognizer service's OCR Test Tool, pre-built models, and custom models.
-iconUrl: /learn/achievements/extract-text-documents.svg
+iconUrl: /training/achievements/extract-text-documents.svg
 levels:
 - intermediate
 roles:

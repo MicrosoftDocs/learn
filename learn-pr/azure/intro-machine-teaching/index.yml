@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.oxford.intro-machine-teaching
+metadata:
+  title: Introduction to Machine Teaching
+  description: Learn the concept of Machine Teaching and evaluate when to use it.
+  ms.date: 10/17/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Machine Teaching
+summary: In this module, you'll learn about capabilities and essential concepts of Machine Teaching, the steps to add intelligence into Autonomous Intelligence systems and the types of business problems that you can solve using Machine Teaching for Autonomous AI.
+abstract: | 
+  In this module, you'll learn how to:
+  - Describe Machine Teaching 
+  - Explain how to use Machine Teaching to outperform current industrial control systems
+  - Decide when Machine Teaching is the right choice for your business problem
+
+  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+prerequisites: | 
+  - Basic knowledge of Automated Intelligence
+  - Basic knowledge of Autonomous Intelligence
+iconUrl: /training/achievements/generic-badge.svg
+levels: 
+- beginner
+roles: 
+- business-user
+products: 
+- azure
+- bonsai
+subjects:
+- artificial-intelligence
+units:
+- learn.oxford.intro-machine-teaching.introduction
+- learn.oxford.intro-machine-teaching.what
+- learn.oxford.intro-machine-teaching.how
+- learn.oxford.intro-machine-teaching.design
+- learn.oxford.intro-machine-teaching.when
+- learn.oxford.intro-machine-teaching.knowledge-check
+- learn.oxford.intro-machine-teaching.summary
+
+badge: 
+  uid: learn.oxford.intro-machine-teaching.badge

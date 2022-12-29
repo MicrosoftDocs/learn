@@ -1,6 +1,6 @@
 You've created a Bicep file to represent the virtual machine that runs the toy truck services. Before you commit to using the file in your pipelines, you need to first verify that the file accurately represents your current Azure environment. In this module, you'll test and then deploy your Bicep file over your existing Azure resources.
 
-During the process, you'll:
+During the process, you'll do the following tasks:
 
 > [!div class="checklist"]
 >
@@ -9,10 +9,10 @@ During the process, you'll:
 
 ## Run what-if
 
-Before you deploy your new Bicep file for real, first run the what-if command. This command verifies that your Bicep file is valid, and it provides you with a list of changes that will occur in your Azure environment when you deploy the file.
+Run the what-if command before you deploy your new Bicep file. This command verifies that your Bicep file is valid. The command also provides you with a list of changes that will occur in your Azure environment when you deploy the file.
 
 > [!NOTE]
-> In a real migration, you should run the what-if command against your production and nonproduction environments, with the appropriate set of parameters for each environment. This helps you detect any differences in configuration that you might not have uncovered already. In this example, you use a single environment, so you run only the what-if operation against that one environment.
+> In a real migration, you should run the what-if command against your production and non-production environments with the appropriate set of parameters for each environment. This helps you detect any differences in configuration that you might not have uncovered already. In this example, you use a single environment, so you only run the what-if operation against that environment.
 
 > [!CAUTION]
 > The deployment mode you use for the what-if command and the subsequent template deployment might introduce risk. Complete mode deletes any resources defined in the resource group that aren't specified in your template. Often, this is a good practice because it helps you ensure that your Bicep code is complete. However, this option comes with some risk because you might have missed a resource in your migration.
@@ -24,7 +24,11 @@ Before you deploy your new Bicep file for real, first run the what-if command. T
 1. In the Visual Studio Code terminal, run the following command:
 
    ```azurecli
-   az deployment group what-if --mode Complete --resource-group ToyTruck --template-file main.bicep --parameters main.parameters.production.json
+   az deployment group what-if \
+     --mode Complete \
+     --resource-group ToyTruck \
+     --template-file main.bicep \
+     --parameters main.parameters.production.json
    ```
 
 1. When prompted, enter a secure password for the `virtualMachineAdminPassword` parameter value.
@@ -52,51 +56,38 @@ Before you deploy your new Bicep file for real, first run the what-if command. T
 
 Review the what-if output, which looks like the following example:
 
-# [Screenshot](#tab/screenshot)
-
-:::image type="content" source="../media/7-whatif-output-1.png" alt-text="Screenshot of the Visual Studio Code terminal that shows the output from the what-if operation, with three changes detected.":::
-
-# [Text](#tab/textoutput)
-
 :::code language="output" source="code/7-whatif-output-1.txt" :::
-
----
 
 The output includes three important pieces of information. Let's review each one.
 
-- The what-if command detects that the managed disk will be deleted. This output isn't accurate. Managed disks are created automatically when you create virtual machines, and even though they appear in the list of resources to be deleted, the virtual machine prevents their deletion. However, adopting a cautious approach is always advisable, so in the next steps you'll run the actual deployment in incremental mode to mitigate the risk of anything going wrong.
+- The what-if command detects that the managed disk will be deleted. This output isn't accurate. Managed disks are created automatically when you create virtual machines. Although managed disks appear in the list of resources to be deleted, the virtual machine prevents their deletion. However, adopting a cautious approach is always advisable, so in the next steps you'll run the actual deployment in incremental mode to mitigate the risk of anything going wrong.
 
-- On the `networkInterface` resource, the `vnetEncryptionSupported` property is detected to no longer be set to the value `false`. You'll resolve this issue shortly.
+- The `networkInterface` resource shows the `privateIPAddress` property is detected as removed. This result is OK, because you removed that property intentionally. The `privateIPAllocationMethod` property  is set to _Dynamic_ so removing the `privateIPAddress` property won't have any effect, even though it's a change.
 
-- Also on the `networkInterface` resource, the `privateIPAddress` property is detected as removed. This result is OK, because you removed that property intentionally. The IP address allocation mode property (`privateIPAllocationMethod`) is set to _Dynamic_, so removing the `privateIPAddress` property won't have any effect, even though it's a change.
+- The `networkInterface` shows that two properties for the `publicIPAddress` will be deleted. We'll add these properties as examples of how to fix a problem found by what-if.
 
-### Resolve the vnetEncryptionSupported property issue by updating the API version
+## Update the template
 
-1. In Visual Studio Code, open your *main.bicep* file.
+Update _main.bicep_ `networkInterface` resource to include the `publicIPAddress` properties for `deleteOption` and `sku`.
 
-1. Update the API version of the `networkInterface` resource from `2020-11-01` to `2020-07-01`:
+:::code language="bicep" source="code/7-main-final.bicep" range="140-175" highlight="12-18":::
 
-   :::code language="bicep" source="code/7-main-final.bicep" range="135-161" highlight="1" :::
-
-### Rerun the what-if command
+## Rerun the what-if command
 
 ::: zone pivot="cli"
 
 1. In the Visual Studio Code terminal, run the following command:
 
    ```azurecli
-   az deployment group what-if --resource-group ToyTruck --template-file main.bicep --parameters main.parameters.production.json
+   az deployment group what-if \
+     --mode Complete \
+     --resource-group ToyTruck \
+     --template-file main.bicep \
+     --parameters main.parameters.production.json
    ```
 
 1. When prompted, enter a secure password for the `virtualMachineAdminPassword` parameter value.
-
-1. Wait for the what-if operation to finish, and then inspect the output. The output looks like the following example:
-
-   # [Screenshot](#tab/screenshot)
-
-   :::image type="content" source="../media/7-whatif-output-2.png" alt-text="Screenshot of the Visual Studio Code terminal that shows the output from the what-if operation, with two changes detected.":::
-
-   # [Text](#tab/textoutput)
+1. After the operation is finished, review the output. The output will look like the following sample:
 
    :::code language="output" source="code/7-whatif-output-2.txt" :::
 
@@ -109,20 +100,14 @@ The output includes three important pieces of information. Let's review each one
    ```azurepowershell
    New-AzResourceGroupDeployment `
      -WhatIf `
+     -Mode Complete `
      -ResourceGroupName ToyTruck `
      -TemplateFile main.bicep `
      -TemplateParameterFile main.parameters.production.json
    ```
 
 1. When prompted, enter a secure password for the `virtualMachineAdminPassword` parameter value.
-
-1. Wait for the what-if operation to finish, and then inspect the output. The output looks like the following example:
-
-   # [Screenshot](#tab/screenshot)
-
-   :::image type="content" source="../media/7-whatif-output-2.png" alt-text="Screenshot of the Visual Studio Code terminal that shows the output from the what-if operation, with two changes detected.":::
-
-   # [Text](#tab/textoutput)
+1. After the operation is finished, review the output. The output will look like the following sample and the `deleteOption` and `sku` aren't shown in the output.
 
    :::code language="output" source="code/7-whatif-output-2.txt" :::
 
@@ -137,14 +122,19 @@ You know that your Bicep file is valid, and the what-if operation has indicated 
 1. In the Visual Studio Code terminal, run the following command:
 
    ```azurecli
-   az deployment group create --resource-group ToyTruck --template-file main.bicep --parameters main.parameters.production.json
+   az deployment group create \
+     --resource-group ToyTruck \
+     --template-file main.bicep \
+     --parameters main.parameters.production.json
    ```
+
+1. When prompted, enter a secure password for the `virtualMachineAdminPassword` parameter value.
 
    Within a few seconds, the deployment finishes successfully.
 
 1. In the Azure portal, open the resource group. Select the **2 Succeeded** link to view the list of deployments.
 
-   :::image type="content" source="../media/7-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the 2 successful deployment link highlighted.":::
+   :::image type="content" source="../media/7-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the two successful deployment links highlighted.":::
 
    The deployment succeeded:
 
@@ -163,11 +153,13 @@ You know that your Bicep file is valid, and the what-if operation has indicated 
      -TemplateParameterFile main.parameters.production.json
    ```
 
+1. When prompted, enter a secure password for the `virtualMachineAdminPassword` parameter value.
+
    Within a few seconds, the deployment finishes successfully.
 
 1. In the Azure portal, open the resource group. Select the **2 Succeeded** link to view the list of deployments.
 
-   :::image type="content" source="../media/7-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the 2 successful deployment link highlighted.":::
+   :::image type="content" source="../media/7-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the two successful deployment links highlighted.":::
 
    The deployment succeeded:
 
@@ -176,7 +168,7 @@ You know that your Bicep file is valid, and the what-if operation has indicated 
 ::: zone-end
 
 > [!TIP]
-> In a real migration, you should also run smoke tests to verify that your resources are still working correctly. This test is a final check to ensure that you didn't unintentionally change something.
+> In a real migration, you should also run _smoke tests_ to verify that your resources are still working correctly. A _smoke test_ is a final check to ensure that you didn't make unintentional changes.
 
 ## Clean up the resources
 
@@ -190,7 +182,7 @@ In the Visual Studio Code terminal, run the following command:
 az group delete --resource-group ToyTruck --yes --no-wait
 ```
 
-The resource group is deleted in the background.
+The resource group and all its resources are deleted in the background.
 
 ::: zone-end
 

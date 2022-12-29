@@ -9,9 +9,9 @@ As an administrator, you can create more organization dashboards that are associ
 
 In addition to configuring dashboards, IoT Central administrators are often responsible for configuring UI customizations and managing security considerations. Application settings that affect security include settings for users, roles, and organizations (device authentication is normally configured by the solution builder or specified by the device developer). You can find detailed information about administering your IoT Central application in the following resources:
 
- -  Customize your IoT Central application UI: [https://docs.microsoft.com/azure/iot-central/core/howto-customize-ui](/azure/iot-central/core/howto-customize-ui)
- -  Manage users and roles:[ https://docs.microsoft.com/azure/iot-central/core/howto-manage-users-roles](/azure/iot-central/core/howto-manage-users-roles)
- -  Manage organizations: [https://docs.microsoft.com/azure/iot-central/core/howto-create-organizations](/azure/iot-central/core/howto-create-organizations)
+- [Customize your IoT Central application UI](/azure/iot-central/core/howto-customize-ui)
+- [Manage users and roles](/azure/iot-central/core/howto-manage-users-roles)
+- [Manage IoT Central organizations](/azure/iot-central/core/howto-create-organizations)
 
 ## Create a dashboard
 
@@ -203,4 +203,4 @@ The following table describes the types of tiles that you can add to a dashboard
 :::row-end:::
 
 
-For more information about creating and customizing dashboards, see: [https://docs.microsoft.com/azure/iot-central/core/howto-manage-dashboards](/azure/iot-central/core/howto-manage-dashboards)
+For more information about creating and customizing dashboards, see: [Create and manage dashboards](/azure/iot-central/core/howto-manage-dashboards)

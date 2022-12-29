@@ -17,7 +17,7 @@ abstract: |
   - Specify an encryption standard for data at rest and in motion.
 prerequisites: |
   *  Experience with data security methods, including encryption for data at rest and in transit
-iconUrl: /learn/achievements/2-design-a-strategy-for-securing-data.svg
+iconUrl: /training/achievements/2-design-a-strategy-for-securing-data.svg
 levels:
 - advanced
 roles:

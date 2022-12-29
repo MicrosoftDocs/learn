@@ -1,7 +1,7 @@
 The Synapse Analytics linked service authenticates with Azure Machine Learning using a service principal. The service principal is based on an Azure Active Directory application named `Azure Synapse Analytics GA Labs` and has already been created for you by the deployment procedure. The secret associated with the service principal has also been created and saved in the Azure Key Vault instance, under the `ASA-GA-LABS` name.
 
 > [!NOTE]
-> In this example, the Azure AD application is used in a single Azure AD tenant, which means it has precisely one service principal associated with it. Consequently, we will use the terms Azure AD application and service principal interchangeably. For a detailed explanation of Azure AD applications and security principles, see [Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).
+> In this example, the Azure AD application is used in a single Azure AD tenant, which means it has precisely one service principal associated with it. Consequently, we will use the terms Azure AD application and service principal interchangeably. For a detailed explanation of Azure AD applications and security principles, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals).
 
 To view the service principal, open the Azure portal and navigate to your instance of the Azure Active directory. Select the `App registrations` **(1)** section, and you should see the `Azure Synapse Analytics GA Labs SUFFIX` **(2)** (`SUFFIX` in this example is 297032) application under the `Owned applications` tab.
 

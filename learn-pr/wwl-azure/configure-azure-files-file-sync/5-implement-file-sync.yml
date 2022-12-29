@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-files-file-sync.implement
-title: Implement file sync
+title: Implement Azure File Sync
 metadata:
-  title: Implement file sync
-  description: "Implement file sync"
-  ms.date: 07/25/2022
+  title: Implement Azure File Sync
+  description: "Implement Azure File Sync"
+  ms.date: 11/17/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

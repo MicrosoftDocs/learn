@@ -27,7 +27,7 @@ prerequisites: |
   - Security-related technologies (firewalls, encryption, multi-factor authentication).
   - Windows PowerShell scripting.
   - Automation and monitoring.
-iconUrl: /learn/achievements/implement-scale-and-high-availability-with-windows-server-vm.svg
+iconUrl: /training/achievements/implement-scale-and-high-availability-with-windows-server-vm.svg
 levels:
 - intermediate
 roles:

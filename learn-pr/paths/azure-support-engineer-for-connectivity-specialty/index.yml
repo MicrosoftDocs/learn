@@ -16,7 +16,7 @@ prerequisites: |
   - Know how to run Cloud Shell to run commands
 summary: |
   Networking is essential, particularly when you have cloud-based assets. This learning path covers the different connectivity issues that a network engineer will typically encounter, and the troubleshooting steps to resolve these issues.
-iconUrl: /learn/achievements/azure-support-engineer-connectivity-specialty.svg
+iconUrl: /training/achievements/azure-support-engineer-connectivity-specialty.svg
 levels:
 - intermediate
 roles:

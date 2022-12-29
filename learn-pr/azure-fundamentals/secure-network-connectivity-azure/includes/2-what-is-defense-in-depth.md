@@ -1,6 +1,6 @@
 Tailwind Traders currently runs its workloads on-premises, in its datacenter. Running on-premises means that the company is responsible for all aspects of security, from physical access to buildings all the way down to how data travels in and out of the network. The company wants to know how its current defense-in-depth strategy compares to running in the cloud.
 
-The objective of *defense in depth* is to protect information and prevent it from being stolen by those who aren't authorized to access it.
+The objective of *defense in depth* is to protect information and prevent it from being stolen.
 
 A defense-in-depth strategy uses a series of mechanisms to slow the advance of an attack that aims at acquiring unauthorized access to data.
 
@@ -138,7 +138,7 @@ In almost all cases, attackers are after data:
 - Stored in software as a service (SaaS) applications, such as Office 365.
 - Managed through cloud storage.
 
-Those who store and control access to data are responsible for ensuring that it's properly secured. Often, regulatory requirements dictate the controls and processes that must be in place to ensure the confidentiality, integrity, and availability of the data.
+Anyone who stores and controls access to data is responsible for ensuring that it's properly secured. Often, regulatory requirements dictate the controls and processes that must be in place to ensure the confidentiality, integrity, and availability of the data.
   :::column-end:::
 :::row-end:::
 

@@ -24,7 +24,7 @@ prerequisites: |
     - Monitoring
 summary: |
   In this learning path, you’ll learn how to implement remote administration and management in Azure. After completing this path, you’ll be able to monitor your Azure resources, and plan for scale and high-availability.
-iconUrl: /learn/achievements/monitor-and-maintain-windows-server-iaas-vm.svg
+iconUrl: /training/achievements/monitor-and-maintain-windows-server-iaas-vm.svg
 levels:
 - intermediate
 roles:

@@ -40,6 +40,6 @@ units:
   - learn.github.create-custom-github-actions.exercise-create-custom-action
   - learn.github.create-custom-github-actions.knowledge-check
   - learn.github.create-custom-github-actions.summary
-iconUrl: /learn/achievements/github/create-custom-github-actions.svg
+iconUrl: /training/achievements/github/create-custom-github-actions.svg
 badge:
   uid: learn.github.create-custom-github-actions.badge

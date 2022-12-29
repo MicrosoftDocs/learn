@@ -17,15 +17,15 @@ abstract: |
     - Apply advanced networking techniques
     - Set expectations and goals for future success
 prerequisites: | 
-#  - [Learn module on getting noticed](/learn/modules/career-get-noticed/)
-#  - [Learn module on interviewing](/learn/modules/career-interview/)
-iconUrl: /learn/achievements/student-evangelism/career-growth.svg
+#  - [Learn module on getting noticed](/training/modules/career-get-noticed/)
+#  - [Learn module on interviewing](/training/modules/career-interview/)
+iconUrl: /training/achievements/student-evangelism/career-growth.svg
 levels:
   - beginner
 roles:
   - student
 products:
-  - vs-code 
+  - azure 
 subjects:
 - modern-life
 units:

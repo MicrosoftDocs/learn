@@ -46,7 +46,7 @@ GO
 
 ### Enabling CDC on your tables
 
-Once you enabled CDC on the database, you should enable it on the tables that you want to be tracked.
+Once you've enabled CDC on the database, you should enable it on the tables that you want to be tracked.
 
 To determine whether a source table has already been enabled for CDC, check the `cdc.change_tables`. Alternatively, you can also examine the `is_tracked_by_cdc` column in the `sys.tables` catalog view.
 
@@ -64,16 +64,16 @@ EXEC sys.sp_cdc_enable_table
 
 **The following options can be specified when creating a capture instance:**
 
-By default, the change table is located in the default filegroup of the database. Database owners who want to control the placement of individual change tables can use the **@filegroup_name** parameter to specify a particular filegroup for the change table associated with the capture instance. The named filegroup must already exist. Generally, it is recommended that change tables be placed in a filegroup separate from source tables.
+By default, the change table is located in the database's default filegroup. Database owners who want to control the placement of individual change tables can use the **@filegroup_name** parameter to specify a particular filegroup for the change table associated with the capture instance. The named filegroup must already exist. Generally, we recommend that change tables be placed in a filegroup separate from source tables.
 
-If the parameter **@supports_net_changes** is set to 1, a net changes function is also generated for the capture instance. This function returns only one change for each distinct row changed in the interval specified in the call. To support net changes queries, the source table must have a primary key or unique index to uniquely identify rows. If a unique index is used, the name of the index must be specified using the @index_name parameter. The columns defined in the primary key or unique index must be included in the list of source columns to be captured.
+If the parameter **@supports_net_changes** is set to **1**, a net changes function is also generated for the capture instance. This function returns only one change for each distinct row changed in the interval specified in the call. To support net changes queries, the source table must have a primary key or unique index to uniquely identify rows. If a unique index is used, the name of the index must be specified using the @index_name parameter. The columns defined in the primary key or unique index must be included in the list of source columns to be captured.
 
-By default, all of the columns in the source table are identified as captured columns. If only a subset of columns needs to be tracked, such as for privacy or performance reasons, use the **@captured_column_list** parameter to specify the subset of columns that you want to track changes for.
+By default, all of the columns in the source table are identified as captured columns. If only a subset of columns needs to be tracked, such as for privacy or performance reasons, use the **@captured_column_list** parameter to specify the subset of columns for which you want to track changes.
 
 If you don't want to use a gating role, explicitly set the **@role_name** parameter to `NULL` (for example, `@role_name=NULL`).
 
 > [!NOTE]  
-> If CDC is enabled on a table with an existing primary key, and the @index_name parameter is not used to identify an alternative unique index, the CDC feature will use the primary key. Subsequent changes to the primary key will not be allowed without first disabling CDC for the table. This is true regardless of whether support for net changes queries was requested when CDC was configured. If there is no primary key on a table at the time it is enabled for CDC, the subsequent addition of a primary key is ignored by CDC. Because CDC will not use a primary key that is created after the table was enabled, the key and key columns can be removed without restrictions.
+> If CDC is enabled on a table with an existing primary key, and the `@index_name` parameter is not used to identify an alternative unique index, the CDC feature will use the primary key. Subsequent changes to the primary key won't be allowed without first disabling CDC for the table. This is true regardless of whether support for net changes queries was requested when CDC was configured. If there's no primary key on a table at the time it's enabled for CDC, the subsequent addition of a primary key is ignored by CDC. Because CDC won't use a primary key that's created after the table was enabled, the key and key columns can be removed without restrictions.
 
 ### Disabling CDC on your tables
 
@@ -91,7 +91,7 @@ EXEC sys.sp_cdc_disable_table
 ```
 
 > [!NOTE]
-> It is *not* necessary to disable individual tables before you disable the database.
+> It's *not* necessary to disable individual tables before you disable the database.
 
 ### Disabling CDC on your database
 
@@ -107,7 +107,7 @@ GO
 
 ## Querying the change tables for changes
 
-When a table is enabled for CDC, an associated capture instance is created to support the dissemination of the change data in the source table. The capture instance consists of a change table and up to two query functions. The requirements for the capture instance name are that it be a valid object name, and that it be unique across the database capture instances. By default, the name is 'schema name_table name' of the source table. Its associated change table is named by appending `_CT` to the capture instance name.
+When a table is enabled for CDC, an associated capture instance is created to support the dissemination of the change data in the source table. The capture instance consists of a change table and up to two query functions. The requirements for the capture instance name are that it's a valid object name, and that it's unique across the database capture instances. By default, the name is 'schema name_table name' of the source table. Its associated change table is named by appending `_CT` to the capture instance name.
 
 Functions are provided to enumerate the changes that appear in the change tables over a specified range, returning the information in the form of a filtered result set. The filtered result set is typically used by an application process to update a representation of the source in some external environment. The function that is used to query for all changes is `fn_cdc_get_all_changes_<capture_instance>`.
 If the capture instance is configured to support net changes, the net_changes query function `fn_cdc_get_net_changes_<capture_instance>` also gets created.

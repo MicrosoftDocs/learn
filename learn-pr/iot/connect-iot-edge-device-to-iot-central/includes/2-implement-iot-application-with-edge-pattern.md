@@ -32,9 +32,9 @@ Analytics drives business value in IoT solutions, but not all analytics needs to
 
 Azure IoT Edge is made up of three components:
 
-- IoT Edge modules are containers that run Azure services, third-party services, or your own code. IoT Edge modules are deployed to IoT Edge devices and execute locally on those devices. In this module, you'll use various IoT Edge modules including one that generates simulated environmental telemetry and one that runs an Azure function to filter that telemetry.
-- The IoT Edge runtime runs on each IoT Edge device and manages the modules deployed to each device.
-- A cloud-based interface enables you to remotely monitor and manage IoT Edge devices.
+- IoT Edge modules are containers that run Azure services, third-party services, or your own code. IoT Edge modules are deployed to IoT Edge devices and execute locally on those devices. In this module, you'll use various IoT Edge modules including one that generates simulated environmental telemetry and one that runs an Azure function to filter that telemetry. You use a *deployment manifest* to specify the modules to deploy to your IoT Edge device.
+- The IoT Edge runtime runs on each IoT Edge device and manages the modules deployed to each device. When an IoT Edge device connects to an IoT Central application, the IoT Edge runtime downloads the deployment manifest to determine which modules it should install and run on the device.
+- A cloud-based interface enables you to remotely monitor and manage IoT Edge devices. In this module you use IoT Central as the cloud-based interface.
 
 ## What is a device template?
 
@@ -53,8 +53,6 @@ You create and manage device templates using the IoT Central web UI or the REST 
 - Browse the Azure IoT device catalog, and import device templates for certified devices.
 - Import a JSON file that contains a device capability model and interface definitions.
 
-A device template for an IoT Edge device also includes a deployment manifest. When an IoT Edge device connects to an IoT Central application, the IoT Edge runtime downloads the deployment manifest to determine which modules it should install and run on the device.
-
 ## Views
 
 An IoT Central device template also includes view definitions. These views let you define a custom UI for your devices that includes visualizations for telemetry, forms to manage device properties, and forms that let operators call commands on a device.
@@ -67,4 +65,4 @@ Before a real device can connect to your IoT Central application, you must publi
 
 ## Add a device based on the device template
 
-Before you can connect an IoT Edge device to an IoT Central application, you add a device on the **Devices** page. On the **Devices** page, you choose the device template to use and then specify a unique device ID and a friendly name for the device. You can also use the Azure CLI to add a device to your application.
+Before you can connect an IoT Edge device to an IoT Central application, you add a device on the **Devices** page. On the **Devices** page, you choose the deployment manifest to use, the optional device template to use, a unique device ID, and a friendly name for the device. You can also use the Azure CLI to add a device to your application.

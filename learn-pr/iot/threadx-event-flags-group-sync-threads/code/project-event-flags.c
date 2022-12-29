@@ -131,7 +131,7 @@ void    Routine_thread_entry(ULONG thread_input)
     while (1)
     {
         /* Wait for sync_flags to appear in the event flags group
-           using TX_AND_CLEAR, then sleep 12 timer ticks */
+           using TX_AND, then sleep 12 timer ticks */
 
         tx_event_flags_get(&Synchronize, sync_flags, TX_AND,
             &actual_events, TX_WAIT_FOREVER);

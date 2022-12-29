@@ -15,7 +15,7 @@ abstract: |
   - Describe what Orleans is and the core benefits it provides
   - Understand the basics of how to implement Orleans in your application
   - Understand the types of scenarios and projects that can benefit from Orleans
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
 roles:

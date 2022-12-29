@@ -3,6 +3,7 @@ Your company is looking at ways to deploy your cloud-based video rendering servi
 Before we discuss the Kubernetes way of deployment, let's review some of the steps you'd take to deploy a similar application to a non-Kubernetes environment.
 
 Assume you're using an Azure virtual machine (VM) as your target platform. The first step is to prepare the server software to host the application. You will:
+
 - Install the operating system.
 - Make sure to update the OS to the latest security and software patches.
 - Install and configure the web server software.
@@ -30,9 +31,9 @@ Kubernetes only allows you to deploy images hosted in a container registry. Crea
 
 ## What is a Kubernetes pod?
 
-A Kubernetes *pod* groups containers and applications into logical structure. These pods have no intelligence and are composed of one or more application containers. Each one has an IP address, network rules, and exposed ports.
+A Kubernetes *pod* groups containers and applications into a logical structure. These pods have no intelligence and are composed of one or more application containers. Each one has an IP address, network rules, and exposed ports.
 
-For example, if you wanted to search all workloads related to the `contoso-website`, you'll query the cluster for pods with the label `app` and the value `contoso-website`.
+For example, if you wanted to search all workloads related to the `contoso-website`, you'd query the cluster for pods with the label `app` and the value `contoso-website`.
 
 ## What is Kubernetes deployment?
 

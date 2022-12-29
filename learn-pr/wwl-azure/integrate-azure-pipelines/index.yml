@@ -3,7 +3,7 @@ uid: learn.wwl.integrate-azure-pipelines
 metadata:
   title: Integrate with Azure Pipelines
   description: "Integrate with Azure Pipelines"
-  ms.date: 06/14/2022
+  ms.date: 11/16/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   *   Detail templates and YAML resources
   *   Implement and use multiple repositories
 prerequisites: ""
-iconUrl: /learn/achievements/6-integrate-with-azure-pipelines.svg
+iconUrl: /training/achievements/6-integrate-with-azure-pipelines.svg
 levels:
 - advanced
 roles:

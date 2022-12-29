@@ -16,7 +16,7 @@ summary: |
   - Learn about the main features in the Visual Studio IDE that help you debug, edit, collaborate, and publish your apps.
   - Explore software testing concepts.
   - Author tests for your product code and use the test explorer in Visual Studio to manage test suites.
-iconUrl: /learn/achievements/visual-studio/visual-studio-test.svg
+iconUrl: /training/achievements/visual-studio/visual-studio-test.svg
 levels:
 - beginner
 roles:
@@ -32,5 +32,6 @@ modules:
 #- learn.visual-studio-github-push
 - learn.visual-studio-test-concepts
 - learn.visual-studio.visual-studio-test-tools
+- learn.dotnet-debug-visual-studio
 trophy:
   uid: learn.visual-studio.visual-studio-test.trophy

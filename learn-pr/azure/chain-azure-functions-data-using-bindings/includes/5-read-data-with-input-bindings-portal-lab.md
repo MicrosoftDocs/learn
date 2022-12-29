@@ -21,7 +21,7 @@ A database account is a container for managing one or more databases. Before we 
 
 1. In the **Create a resource** menu, select **Databases**, and then search for and select **Azure Cosmos DB**. The **Select API option** pane appears. 
 
-1. In the **Core (SQL) - Recommended** option, select **Create** so that we can create a Cosmos DB trigger and input/output bindings. The **Create Azure Cosmos DB Account - Core (SQL)** pane appears.
+1. In the **Azure Cosmos DB for NoSQL** option, select **Create** so that we can create a Cosmos DB trigger and input/output bindings. The **Create Azure Cosmos DB Account - Azure Cosmos DB for NoSQL** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -90,7 +90,7 @@ You want to add data to your **Bookmarks** container. You'll use Data Explorer t
      ```json
      {
          "id": "docs",
-         "url": "https://docs.microsoft.com/azure"
+         "url": "https://learn.microsoft.com/azure"
      }
      ```
 
@@ -118,7 +118,7 @@ You want to add data to your **Bookmarks** container. You'll use Data Explorer t
     ```json
     {
         "id": "learn",
-        "url": "https://docs.microsoft.com/learn"
+        "url": "https://learn.microsoft.com/training"
     }
     ```
 
@@ -140,7 +140,7 @@ You want to add data to your **Bookmarks** container. You'll use Data Explorer t
 
     :::image type="content" source="../media/5-db-bookmark-collection-small.png" alt-text="Screenshot of SQL API data showing collection of items in bookmarks container of the func-io-learn-db." lightbox="../media/5-db-bookmark-collection.png":::
 
-Your **Bookmarks** container has five items. In this scenario, if a request arrives with "id=docs", it will look up that ID in your Bookmarks container, and return the URL `https://docs.microsoft.com/azure`. Let's make an Azure function that looks up values in your Bookmarks container.
+Your **Bookmarks** container has five items. In this scenario, if a request arrives with "id=docs", it will look up that ID in your Bookmarks container, and return the URL `https://learn.microsoft.com/azure`. Let's make an Azure function that looks up values in your Bookmarks container.
 
 ## Create your function
 
@@ -246,7 +246,7 @@ Now that your binding is defined, we can use it in your function. You need to ma
     };
     ```
 
-1. In the command bar, select **Save**. The **Logs** pane appears, showing you have `Connected!`
+1. In the command bar, select **Save**. Select **Filesystem Logs** in the drop-down at the top center of the logs pane (which displays **App Insights Logs** by default). The **Logs** pane appears, showing you have `Connected!`
 
 Let's examine what this code is doing.
 
@@ -328,7 +328,7 @@ Let's examine what this code is doing.
     })
     ```
 
-1. In the command bar, select **Save**. The **Logs** pane appears, showing you have `Connected!`
+1. In the command bar, select **Save**. Select **Filesystem Logs** in the drop-down at the top center of the logs pane (which displays **App Insights Logs** by default). The **Logs** pane appears, showing you have `Connected!`
 
 Let's examine what this code is doing.
 
@@ -398,7 +398,7 @@ Let's examine what this code is doing.
 
     ```json
     {
-      "url": "https://docs.microsoft.com/azure"
+      "url": "https://learn.microsoft.com/azure"
     }
     ```
 

@@ -17,7 +17,7 @@ abstract: |
   *   Use Microsoft Purview in Azure Synapse Studio.
 prerequisites: |
   - Experience using the Azure data ecosystem.
-iconUrl: /learn/achievements/2-discover-data-artifacts-azure-by-using-azure-purview.svg
+iconUrl: /training/achievements/2-discover-data-artifacts-azure-by-using-azure-purview.svg
 levels:
 - beginner
 roles:

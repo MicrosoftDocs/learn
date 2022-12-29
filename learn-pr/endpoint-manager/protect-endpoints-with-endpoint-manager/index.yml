@@ -15,7 +15,7 @@ abstract: |
   - Learn about managing and protecting your organization's devices, apps and data.
   - Understand key endpoint management considerations involving the endpoint environment and available platforms.
 prerequisites: None
-iconUrl: /learn/achievements/protect-endpoints-with-endpoint-manager.svg
+iconUrl: /training/achievements/protect-endpoints-with-endpoint-manager.svg
 ratingEnabled: true
 levels:
 - beginner

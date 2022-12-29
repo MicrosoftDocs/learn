@@ -11,7 +11,7 @@ The Anomaly Detector service accepts data in JSON format. You can use any numeri
     "granularity": "hourly",
     "series": [
       {
-        "timestamp": "2021-03-01T01:00:00Z",
+        "timestamp": "2021-03-02T01:00:00Z",
         "value": -10.56
       },
       {

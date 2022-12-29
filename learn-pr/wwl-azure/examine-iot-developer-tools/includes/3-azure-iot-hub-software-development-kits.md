@@ -24,6 +24,6 @@ Microsoft provides SDK support in the following ways:
 > [!NOTE]
 > Microsoft also provides guidance on how to develop for mobile platforms such as iOS and Android.
 
-You can read more about the Azure IoT Hub service SDKs here: [https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-sdks](/azure/iot-hub/iot-hub-devguide-sdks).
+You can read more about the Azure IoT Hub service SDKs here: [Azure IoT Hub SDKs](/azure/iot-hub/iot-hub-devguide-sdks).
 
-You can read more about device development and the Azure IoT device SDKs here: [https://docs.microsoft.com/azure/iot-develop/about-iot-sdks](/azure/iot-develop/about-iot-sdks).
+You can read more about device development and the Azure IoT device SDKs here: [Overview of Azure IoT Device SDKs](/azure/iot-develop/about-iot-sdks).

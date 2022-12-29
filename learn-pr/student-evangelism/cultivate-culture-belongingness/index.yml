@@ -22,7 +22,7 @@ abstract:  |
 prerequisites: |
   - To get the best learning experience from this module, you should have an open mind and a willingness to learn about the expectations and responsibilities of mentorship in a technology workspace.
   
-iconUrl: /learn/achievements/tech-resilience/culture-belonging.svg
+iconUrl: /training/achievements/tech-resilience/culture-belonging.svg
 levels:
 - beginner
 roles:
@@ -30,7 +30,6 @@ roles:
 - student
 products:
 - azure
-- vs-code
 subjects:
 - communication
 - communication

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-microsoft-sentinel-deployment-sap.clarify-roles-required-to-deploy-solution
+title: Clarify the roles required to deploy the solution
+metadata:
+  title: Clarify the roles required to deploy the solution
+  description: "Clarify the roles required to deploy the solution"
+  ms.date: 11/29/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-clarify-roles-required-to-deploy-solution.md)]

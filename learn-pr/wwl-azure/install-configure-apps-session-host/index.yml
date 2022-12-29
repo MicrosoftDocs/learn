@@ -19,7 +19,7 @@ abstract: |
   *  Use Microsoft Teams on Azure Virtual Desktop.
   *  Publish built-in apps in Azure Virtual Desktop.
 prerequisites: ""
-iconUrl: /learn/achievements/3-install-and-configure-apps-on-a-session-host.svg
+iconUrl: /training/achievements/3-install-and-configure-apps-on-a-session-host.svg
 levels:
 - intermediate
 roles:

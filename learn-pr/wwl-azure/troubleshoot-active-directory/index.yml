@@ -19,7 +19,7 @@ prerequisites: |
   *   Working knowledge of common Windows Server management tools
   *   Some experience of typical Windows Server workloads
   *   Basic knowledge of Windows PowerShell
-iconUrl: /learn/achievements/9-troubleshoot-active-directory.svg
+iconUrl: /training/achievements/9-troubleshoot-active-directory.svg
 levels:
 - intermediate
 roles:

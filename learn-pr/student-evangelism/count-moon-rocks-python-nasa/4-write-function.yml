@@ -12,4 +12,4 @@ metadata:
 title: Exercise - Create a function to count types of Moon rocks found
 durationInMinutes: 6
 sandbox: true
-notebook: https://docs.microsoft.com/learn/modules/count-moon-rocks-python-nasa/notebooks/4-write-function.ipynb
+notebook: /training/modules/count-moon-rocks-python-nasa/notebooks/4-write-function.ipynb

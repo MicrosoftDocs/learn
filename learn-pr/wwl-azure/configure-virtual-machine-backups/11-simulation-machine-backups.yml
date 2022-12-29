@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-virtual-machine-backups.lab-simulation-backup
+title: Interactive lab simulation
+metadata:
+  title: Interactive lab simulation
+  description: "Interactive lab simulation"
+  ms.date: 11/01/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/11-simulation-machine-backups.md)]

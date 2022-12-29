@@ -8,6 +8,6 @@ In this module you learned about Azure DNS, a cloud hosted service that allows y
 
 * [Azure DNS FAQ](/azure/dns/dns-faq)
 
-* [Host your domain on Azure DNS](/learn/modules/host-domain-azure-dns/)
+* [Host your domain on Azure DNS](/training/modules/host-domain-azure-dns/)
 
-* [Configure Azure DNS](/learn/modules/configure-azure-dns/)
+* [Configure Azure DNS](/training/modules/configure-azure-dns/)

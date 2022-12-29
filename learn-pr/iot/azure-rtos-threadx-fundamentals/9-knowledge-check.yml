@@ -5,8 +5,10 @@ metadata:
   title: Knowledge check
   description: Interactive questions that validate whether the learner achieved the learning objectives.
   ms.date: 01/27/2022
-  author: EdLamie
-  ms.author: pacorte
+  author: timlt
+  ms.author: timlt
+  ms.reviewer: liydu
+  manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-python
 durationInMinutes: 2

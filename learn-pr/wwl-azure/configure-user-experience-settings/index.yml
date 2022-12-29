@@ -19,7 +19,7 @@ abstract: |
   *  Configure Universal Print.
   *  Troubleshoot user profile issues.
 prerequisites: ""
-iconUrl: /learn/achievements/2-configure-user-experience-settings.svg
+iconUrl: /training/achievements/2-configure-user-experience-settings.svg
 levels:
 - intermediate
 roles:

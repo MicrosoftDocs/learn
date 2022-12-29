@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.build-industrial-brain.define-problem
+title: Define Machine Teaching problem
+metadata:
+  title: Define Machine Teaching problem
+  description: In this unit, we'll explain the problem and what we are trying to solve.
+  ms.date: 11/30/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-define-machine-teaching-problem.md)] 

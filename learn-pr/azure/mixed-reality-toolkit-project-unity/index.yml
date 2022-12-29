@@ -21,7 +21,7 @@ abstract: |
   - Add MRTK to a Unity scene
   - Compare and contrast the three primary MRTK interaction models
   - Manipulate holograms using ObjectManipulator
-iconUrl: /learn/achievements/mixed-reality-toolkit-project-unity.svg
+iconUrl: /training/achievements/mixed-reality-toolkit-project-unity.svg
 levels:
 - beginner
 roles:

@@ -17,7 +17,7 @@ abstract: |
   - Give guest users access in Azure Active Directory business to business (B2B).
 prerequisites: | 
   - None
-iconUrl: /learn/achievements/create-users-and-groups-in-azure-active-directory.svg
+iconUrl: /training/achievements/create-users-and-groups-in-azure-active-directory.svg
 levels:
 - beginner
 roles:

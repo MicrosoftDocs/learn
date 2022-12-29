@@ -8,7 +8,7 @@ Port 80 is open on the NSG applied to the subnet. But port 80 is blocked by the 
 
 1. In the left menu pane, under **Settings**, select **Networking**.
 
-1. You should see the NSG rules for the subnet in the top section, and the NSG rules for the network interface in the bottom section of the same tab. In the bottom section, for the NSG rules for the network interface, select **Add inbound port rule**.
+1. You should have the NSG rules for the subnet in the top section, and the NSG rules for the network interface in the bottom section of the same tab. In the bottom section, for the NSG rules for the network interface, select **Add inbound port rule**.
 
     ![Screenshot that shows the "Add inbound port rule" button in the network security group > network interface section.](../media/8-add-rule-network-interface.png)
 
@@ -35,4 +35,4 @@ To make an HTTP request, copy and paste the **NIC Public IP** address of the ser
 
 ## One more consideration
 
-Always make sure to lock down ports used for administrative access. An even better approach is to create a VPN to link the virtual network to your private network, and only allow RDP or SSH requests from that address range. You can also change the port used by SSH to be something other than the default. Keep in mind that changing ports is not sufficient to stop attacks. It simply makes it a little harder to discover.
+Always make sure to lock down ports used for administrative access. An even better approach is to create a VPN to link the virtual network to your private network, and only allow RDP or SSH requests from that address range. You can also change the port used by SSH to be something other than the default. Keep in mind that changing ports isn't sufficient to stop attacks. It simply makes it a little harder to discover.

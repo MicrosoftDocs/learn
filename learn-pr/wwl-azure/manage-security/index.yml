@@ -18,7 +18,7 @@ abstract: |
   *  Manage security by using Azure Security Center.
   *  Understand Microsoft Defender Antivirus for session hosts.
 prerequisites: ""
-iconUrl: /learn/achievements/2-manage-security.svg
+iconUrl: /training/achievements/2-manage-security.svg
 levels:
 - intermediate
 roles:

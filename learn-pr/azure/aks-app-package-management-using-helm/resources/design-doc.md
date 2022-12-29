@@ -249,4 +249,4 @@ Identify the subtasks of *Application and package management using Helm*
 
         [Sprig template library](https://masterminds.github.io/sprig/)
 
-    *Add your summary [(Summary guidance)](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit)*
+    *Add your summary [(Summary guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit)*

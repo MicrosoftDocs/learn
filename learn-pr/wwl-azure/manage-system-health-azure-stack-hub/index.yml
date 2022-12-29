@@ -24,7 +24,7 @@ abstract: |
 prerequisites: |
   Working experience with monitoring and logging cloud environments.
   Conceptual knowledge of monitoring and logging.
-iconUrl: /learn/achievements/1-manage-system-health-on-azure-stack-hub.svg
+iconUrl: /training/achievements/1-manage-system-health-on-azure-stack-hub.svg
 levels:
 - advanced
 roles:

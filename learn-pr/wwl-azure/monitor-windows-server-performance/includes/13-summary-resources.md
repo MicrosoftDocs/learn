@@ -10,9 +10,8 @@ Now that you have reviewed this module, you should be able to:
 
 Use these resources to discover more.
 
-- Install Windows Admin Center: https://docs.microsoft.com/windows-server/manage/windows-admin-center/deploy/install
+- [Install Windows Admin Center](/windows-server/manage/windows-admin-center/deploy/install)
 
-- Managing capabilities: https://docs.microsoft.com/windows-server/manage/system-insights/managing-capabilities
+- [Managing capabilities](/windows-server/manage/system-insights/managing-capabilities)
 
-- Performance Tuning Guidelines for Windows Server 2022: https://docs.microsoft.com/windows-server/administration/performance-tuning
-
+- Performance Tuning Guidelines for Windows Server 2022:  [Performance Tuning Guidelines for Windows Server 2022](/windows-server/administration/performance-tuning)

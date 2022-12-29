@@ -3,7 +3,7 @@ uid: learn.wwl.manage-windows-server-settings-use-powershell-cmdlets
 metadata:
   title: Manage Windows Server settings using PowerShell cmdlets
   description: "This module covers cmdlets that are used to configure settings related to Group Policy, Server Manager, Hyper-V, and Internet Information Services (IIS)."
-  ms.date: 08/04/2022
+  ms.date: 10/20/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   *   Familiarity with Windows networking technologies and implementation
   *   Familiarity with Windows Server administration, maintenance, and troubleshooting
   *   Familiarity with Windows PowerShell and its commands to perform specific tasks
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/manage-windows-server-settings-use-powershell-cmdlets.svg
 levels:
 - intermediate
 roles:
@@ -32,7 +32,6 @@ products:
 - azure-powershell
 - azure-virtual-machines
 - m365
-- vs-code
 subjects:
 - architecture
 - development-tools

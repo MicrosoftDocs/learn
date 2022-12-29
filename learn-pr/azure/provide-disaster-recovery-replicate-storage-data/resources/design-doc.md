@@ -105,7 +105,7 @@ Identify the subtasks of *module title*
   - What are they
   - When to use what
   - How they're configured
-  - See module/reuse content in: [Make your application storage highly available with read-access geo-redundant storage](/learn/modules/ha-application-storage-with-grs/)
+  - See module/reuse content in: [Make your application storage highly available with read-access geo-redundant storage](/training/modules/ha-application-storage-with-grs/)
   - Cover new options (currently in preview): GZRS and RA-GZRS 
 - Exercise: Set up storage account and change replication mode
   - Create storage account pick ZRS
@@ -128,7 +128,7 @@ Identify the subtasks of *module title*
 
 ## Resources
 
-- [Make your application storage highly available with read-access geo-redundant storage](/learn/modules/ha-application-storage-with-grs/)
+- [Make your application storage highly available with read-access geo-redundant storage](/training/modules/ha-application-storage-with-grs/)
 - [Azure Storage redundancy](/azure/storage/common/storage-redundancy)  
 - [Build highly available Azure Storage applications with geo-zone-redundant storage (GZRS)](/azure/storage/common/storage-redundancy-gzrs?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
 - [Disaster recovery and storage account failover (preview) in Azure Storage](/azure/storage/common/storage-disaster-recovery-guidance?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)  

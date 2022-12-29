@@ -12,7 +12,7 @@ title: Explore SAP HANA on Azure (Large Instances)
 prerequisites: ""
 summary: |
   SAP HANA on Azure (Large Instances) represent many of the largest SAP workloads. These modules explore the unique requirements for architecture, planning, migration, and run, monitor, and support of HANA Large Instances.
-iconUrl: /learn/achievements/sap-hana-explore.svg
+iconUrl: /training/achievements/sap-hana-explore.svg
 levels:
 - advanced
 roles:

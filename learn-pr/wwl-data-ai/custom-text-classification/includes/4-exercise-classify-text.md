@@ -65,14 +65,14 @@ After configuration is complete, create a custom text classification project. Th
     - **Description**: Custom text lab
     - **Text primary language**: English (US)
     - **Blob store container**: articles
-    - **Are your files tagged**: No, I need to tag my files as part of this project
+    - **Are your files labeled with classes?**: No, I need to label my files as part of this project
 
-## Tag your data
+## Label your data
 
-Now that your project is created, you need to tag your data to train your model how to classify text.
+Now that your project is created, you need to label, or tag, your data to train your model how to classify text.
 
-1. On the left, click on **Tag data**. You'll see a list of the files you uploaded to your storage account.
-2. On the right side, in the **Tagging** pane, click on **Add class**. The articles in this lab fall into four classes you'll need to create: Classifieds, Sports, News, and Entertainment.
+1. On the left, click on **Data labeling**. You'll see a list of the files you uploaded to your storage account.
+2. On the right side, in the **Labeling** pane, click on **Add class**. The articles in this lab fall into four classes you'll need to create: Classifieds, Sports, News, and Entertainment.
 
     ![Screenshot showing the tag data page and the add class button.](../media/tag-data-add-class.png#lightbox)
 
@@ -96,15 +96,15 @@ Now that your project is created, you need to tag your data to train your model 
     | Article 9 | Entertainment | Training |
 
     > [!NOTE]
-    > Files in Language Studio are listed alphabetically, which is why the above list is not in sequential order. Make sure you visit both pages of documents when tagging your articles.
+    > Files in Language Studio are listed alphabetically, which is why the above list is not in sequential order. Make sure you visit both pages of documents when label your articles.
 
-5. Click **Save tags**
+5. Click **Save labels**
 
 ## Train your model
 
-Once you've tagged your data, you need to train your model.
+Once you've labeled your data, you need to train your model.
 
-1. Select **Train model** on the left side menu
+1. Select **Training jobs** on the left side menu
 2. Click **Start a training job**
 3. Name your model `ClassifyArticles`
 4. Choose **Use a manual split of training and testing data**
@@ -121,14 +121,14 @@ Once you've tagged your data, you need to train your model.
 
 In real world applications of text classification, it's important to evaluate and improve your model to verify it's performing as you expect. Two pages on the left show you the details of your trained model, and any testing that failed.
 
-1. Select **View model details**, and select your *ClassifyArticles* model. There you can see the scoring of your model, performance metrics, and when it was trained. You'll notice the score of your model isn't 100%, meaning one of the articles used for testing didn't evaluate to what it was tagged. These failures help you understand where to improve.
+1. Select **Model performance**, and select your *ClassifyArticles* model. There you can see the scoring of your model, performance metrics, and when it was trained. You'll notice the score of your model might not be 100%, meaning one of the articles used for testing didn't evaluate to what it was labeled. These failures help you understand where to improve.
 2. Select **Improve model**. Your model is already selected in the drop-down, and it defaults to show incorrect predictions only. Toggle that selection to see the articles you indicated for testing and what they predicted as.
 
 ## Deploy your model
 
 Once you're satisfied with the training of your model, it's time to deploy it, which allows you to start classifying text through the API.
 
-1. On the left panel, select **Deploy model**
+1. On the left panel, select **Deploying model**
 2. Select **Add deployment**, then enter `articles` and select *ClassifyArticles* to select your trained model
 3. Click **Submit** to deploy your model
 4. Once your model is deployed, leave that page open since you'll need your project and deployment name in the next step
@@ -169,7 +169,7 @@ Now that you have a custom model, you can run a client application that uses the
 2. The files are downloaded to a folder named **ai-language**. Now we want to see all of the files in your Cloud Shell storage and work with them. Navigate to the `Text Classification` folder and type the following command into the shell:
 
     ```powershell
-    cd text-classification
+    cd ai-language/text-classification
     ```
 
     ```powershell

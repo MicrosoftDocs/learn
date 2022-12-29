@@ -11,7 +11,7 @@ You should now be able to:
 You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
 
  -  [What is Azure Application Gateway](/azure/application-gateway/overview)
- -  [Learn - Introduction to Azure Application Gateway](/learn/modules/intro-to-azure-application-gateway/)
- -  [Learn - Load balance HTTP(S) traffic in Azure (Sandbox)](/learn/modules/load-balancing-https-traffic-azure/)
- -  [Learn - Load balance your web service traffic with Application Gateway (Sandbox)](/learn/modules/load-balance-web-traffic-with-application-gateway/)
- -  [Learn - Encrypt network traffic end to end with Azure Application Gateway (Sandbox)](/learn/modules/end-to-end-encryption-with-app-gateway/)
+ -  [Introduction to Azure Application Gateway](/training/modules/intro-to-azure-application-gateway/)
+ -  [Load balance HTTP(S) traffic in Azure (Sandbox)](/training/modules/load-balancing-https-traffic-azure/)
+ -  [Load balance your web service traffic with Application Gateway (Sandbox)](/training/modules/load-balance-web-traffic-with-application-gateway/)
+ -  [Encrypt network traffic end to end with Azure Application Gateway (Sandbox)](/training/modules/end-to-end-encryption-with-app-gateway/)

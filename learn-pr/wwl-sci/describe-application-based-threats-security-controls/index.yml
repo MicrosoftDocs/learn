@@ -15,7 +15,7 @@ abstract: |
   -	Describe the threat landscape of applications
   -	Describe how to protect your applications
 prerequisites: ""
-iconUrl: /learn/achievements/6-describe-application-based-threats-security-controls.svg
+iconUrl: /training/achievements/6-describe-application-based-threats-security-controls.svg
 levels:
 - beginner
 roles:

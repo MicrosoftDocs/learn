@@ -21,7 +21,7 @@ prerequisites: |
   Before starting this module, you will need
   - Familiarity with Microsoft Azure and the Azure portal.
   - Experience programming with C# or Python.
-iconUrl: /learn/achievements/extract-insights-from-text-with-the-text-analytics-service.svg
+iconUrl: /training/achievements/extract-insights-from-text-with-the-text-analytics-service.svg
 levels:
 - intermediate
 roles:

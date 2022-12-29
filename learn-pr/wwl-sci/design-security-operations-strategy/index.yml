@@ -3,8 +3,8 @@ uid: learn.wwl.design-security-operations-strategy
 metadata:
   title: Design a security operations strategy
   description: "Learn how to design a cybersecurity strategy for security operations (SecOps)."
-  ms.date: 06/08/2022
-  author: hrasheed-msft
+  ms.date: 10/11/2022
+  author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -13,7 +13,7 @@ summary: Learn how to design a cybersecurity strategy for security operations (S
 abstract: |
   Upon completion of this module, the learner will be able to:
   - Design a logging and auditing security strategy.
-  - Develop security operations for hybrid and multi-cloud environments.
+  - Develop security operations for hybrid and multicloud environments.
   - Design a  strategy for Security Information and Event Management (SIEM) and Security Orchestration, Automation, and Response (SOAR).
   - Evaluate security workflows.
   - Review security strategies for incident management.
@@ -22,7 +22,7 @@ abstract: |
 prerequisites: |
   - Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments.
   - Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/design-security-operations-strategy.svg
 levels:
 - advanced
 roles:
@@ -30,6 +30,9 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- architecture
+- security
 units:
 - learn.wwl.design-security-operations-strategy.introduction
 - learn.wwl.design-security-operations-strategy.understand-frameworks-processes-procedures
@@ -45,6 +48,3 @@ units:
 - learn.wwl.design-security-operations-strategy.summary
 badge:
   uid: learn.wwl.design-security-operations-strategy.badge
-subjects:
-- security
-- architecture

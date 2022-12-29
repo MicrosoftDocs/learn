@@ -16,7 +16,7 @@ abstract: |
   - Choose the right reserved instance, buy one, and then manage it.
   - Monitor and improve your reservations.
   - Perform basic reservation reporting.
-iconUrl: /learn/achievements/save-money-with-azure-reservations.svg
+iconUrl: /training/achievements/save-money-with-azure-reservations.svg
 levels: 
 - beginner
 roles: 

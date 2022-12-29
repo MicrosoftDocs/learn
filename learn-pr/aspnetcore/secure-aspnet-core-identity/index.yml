@@ -7,7 +7,7 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
 title: Secure a .NET web app with the ASP.NET Core Identity framework
 summary: Add authentication and authorization to a web app using ASP.NET Core Identity&mdash;ASP.NET Core's native security framework.
 abstract: | 
@@ -24,7 +24,7 @@ prerequisites: |
   - Familiarity with Entity Framework (EF) Core migrations
   - Ability to write Razor at the beginner level
   - Familiarity with a time-based one-time password (TOTP) authenticator app, such as Microsoft Authenticator (available in the [Google Play Store](https://play.google.com/store/apps/details?id=com.azure.authenticator) or the [Apple App Store](https://apps.apple.com/app/microsoft-authenticator/id983156458))
-iconUrl: /learn/achievements/aspnetcore/secure-aspnet-core-identity.svg
+iconUrl: /training/achievements/aspnetcore/secure-aspnet-core-identity.svg
 levels:
 - intermediate
 roles:

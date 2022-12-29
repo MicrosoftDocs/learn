@@ -16,7 +16,7 @@ abstract: |
   - Learn how to connect a health bot to a database. 
   - Build a database by using Azure SQL Database.  
   - Integrate the bot with the database by using Azure Logic Apps.
-iconUrl: /learn/achievements/student-evangelism/health-bot-integrated-bot.svg
+iconUrl: /training/achievements/student-evangelism/health-bot-integrated-bot.svg
 levels:
   - beginner
 roles:

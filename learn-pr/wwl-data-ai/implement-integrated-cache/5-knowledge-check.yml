@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/09/2022
+  ms.date: 12/13/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "In the .NET SDK for Azure Cosmos DB SQL API, how should you configure the **CosmosClientOptions.ConnectionMode** property so that your application can use the integrated cache?"
+  - content: "In the .NET SDK for Azure Cosmos DB for NoSQL, how should you configure the **CosmosClientOptions.ConnectionMode** property so that your application can use the integrated cache?"
     choices:
     - content: "Configure the connectivity mode to ``ConnectionMode.Direct``"
       isCorrect: false
@@ -29,10 +29,10 @@ quiz:
     choices:
     - content: "``SessionToken``"
       isCorrect: false
-      explanation: "That's incorrect. Getting the session token will not influence the time items remain in the cache."
+      explanation: "That's incorrect. Getting the session token won't influence the time items remain in the cache."
     - content: "``ConsistencyLevel``"
       isCorrect: false
-      explanation: "That's incorrect. Setting the consistency level correctly is a part of enabling the integrated cache, but it does not influence the time items remain in the cache."
+      explanation: "That's incorrect. Setting the consistency level correctly is a part of enabling the integrated cache, but it doesn't influence the time items remain in the cache."
     - content: "``DedicatedGatewayRequestOptions.MaxIntegratedCacheStaleness``"
       isCorrect: true
       explanation: "That's correct. The ``MaxIntegratedCacheStaleness`` property will configure a **TimeSpan** that is used to determine how long items will remain in the cache."

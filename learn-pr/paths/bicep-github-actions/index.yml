@@ -28,7 +28,7 @@ summary: |
   [!include[](../../includes/bicep-paths.md)]
 prerequisites: |
   This learning path assumes you have familiarity with deploying infrastructure using Bicep.
-iconUrl: /learn/achievements/bicep/bicep-github-actions.svg
+iconUrl: /training/achievements/bicep/bicep-github-actions.svg
 levels:
 - intermediate
 roles:

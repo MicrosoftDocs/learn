@@ -18,7 +18,7 @@ abstract: |
   - Execute an inference workload on NVIDIA Triton Inference Server
 prerequisites: |
   - [Azure Free Trial Account](https://azure.microsoft.com/free/)
-iconUrl: /learn/achievements/introduction-nvidia-deepstream-graph-composer-azure.svg
+iconUrl: /training/achievements/introduction-nvidia-deepstream-graph-composer-azure.svg
 levels:
 - intermediate
 roles:

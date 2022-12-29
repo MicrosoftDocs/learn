@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/20/2022
+  ms.date: 12/28/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -17,36 +17,36 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Which compute option is best to support the company’s real-time inventory tracking requirement?"
+  - content: "Which compute option best supports the real-time inventory tracking requirement?"
     choices:
     - content: "Azure Logic Apps"
       isCorrect: false
-      explanation: "Incorrect. It's possible to implement the same logic in Azure Logic Apps. However, because the team has already invested time in building the service in C#, it can use the same code in an Azure function."
+      explanation: "Incorrect. It's possible to implement the same logic in Azure Logic Apps. However, because the team has already invested time in building the service in C#, they can use the same code in an Azure function."
     - content: "Azure Functions"
       isCorrect: true
-      explanation: "Correct. The Tailwind Traders developers’ team has already written the logic in C#. It would make sense to copy the relevant C# code from the Windows service and port it to an Azure function. The developers would bind the function to trigger each time a new message appears on a specific queue."
-    - content: "Azure virtual machines"
+      explanation: "Correct. The Tailwind Traders development team has already written the logic in C#. It makes sense to copy the relevant C# code from the Windows service and port it to an Azure function. The developers can bind the function to trigger each time a new message appears on a specific queue."
+    - content: "Azure Virtual Machines"
       isCorrect: false
-      explanation: "Incorrect. Deploying virtual machines would not be the best solution."
-  - content: "Which type of virtual machine is best for the data center migration requirement?"
+      explanation: "Incorrect. Deploying virtual machines isn't the best solution in this scenario."
+  - content: "What type of virtual machine is best for the datacenter migration requirement?"
     choices:
-    - content: "General purpose"
+    - content: "General purpose VM"
       isCorrect: false
-      explanation: "Incorrect. General-purpose VMs are designed to have a balanced CPU-to-memory ratio. Ideal for testing and development, small to medium databases, and low to medium traffic web servers."
-    - content: "Compute optimized"
+      explanation: "Incorrect. General purpose VMs are designed to have a balanced CPU-to-memory ratio. General-purpose VMs are ideal for testing and development, small to medium databases, and low to medium traffic web servers."
+    - content: "Compute-optimized VM"
       isCorrect: false
-      explanation: "Incorrect. Compute optimized VMs are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, network appliances, batch processes, and application servers."
-    - content: "Memory optimized"
+      explanation: "Incorrect. Compute-optimized VMs are designed to have a high CPU-to-memory ratio. Compute-optimized VMs are suitable for medium traffic web servers, network appliances, batch processes, and application servers."
+    - content: "Memory-optimized VM"
       isCorrect: true
-      explanation: "Correct. Memory optimized VMs are designed to have a high memory-to-CPU ratio. Great for relational database servers, medium to large caches, and in-memory analytics."
-  - content: "What compute solution is best for hosting the company’s data processing app?"
+      explanation: "Correct. Memory-optimized VMs are designed to have a high memory-to-CPU ratio. Memory-optimized VMs are great for relational database servers, medium to large caches, and in-memory analytics."
+  - content: "What compute solution is best for hosting the company's data processing application?"
     choices:
     - content: "Azure Container Instances"
       isCorrect: true
-      explanation: "Correct. This is an ideal use for containers. The company will achieve significant cost saving through per-second billing."
-    - content: "Azure virtual machines"
+      explanation: "Correct. Azure Container Instances is an ideal compute solution for containers. The company can achieve significant cost savings by using per-second billing."
+    - content: "Azure Virtual Machines"
       isCorrect: false
-      explanation: "Incorrect. Provisioning virtual machines would be more expensive and underutilized."
-    - content: "Azure web apps."
+      explanation: "Incorrect. Provisioning virtual machines can be more expensive and underutilized."
+    - content: "Web Apps (supported by Azure App Service)"
       isCorrect: false
-      explanation: "Incorrect. Web apps are better for hosted web applications."
+      explanation: "Incorrect. The Web Apps feature is a better option for hosted web applications."

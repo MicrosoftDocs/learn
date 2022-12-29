@@ -20,7 +20,7 @@ Take your interest further with:
 
 Azure Maps are an integral part of other Learn modules. Check out:
 
-- [Create your first Azure IoT Central app](/learn/modules/create-your-first-iot-central-app/)
-- [Set up rules and take action on telemetry data in Azure IoT Central](/learn/modules/set-up-rules-take-actions-telemetry-data-azure-iot-central/)
+- [Create your first Azure IoT Central app](/training/modules/create-your-first-iot-central-app/)
+- [Set up rules and take action on telemetry data in Azure IoT Central](/training/modules/set-up-rules-take-actions-telemetry-data-azure-iot-central/)
 
 Finally, to end your journey in this module, complete, and pass the knowledge check.

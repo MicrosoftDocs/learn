@@ -17,7 +17,7 @@ abstract: |
   *  Create an Azure Automation Run As account.
   *  Create the Azure Logic App and execution schedule.
 prerequisites: ""
-iconUrl: /learn/achievements/2-automate-azure-virtual-desktop-management-tasks.svg
+iconUrl: /training/achievements/2-automate-azure-virtual-desktop-management-tasks.svg
 levels:
 - intermediate
 roles:

@@ -3,7 +3,7 @@ uid: learn.wwl.work-environments-github-actions
 metadata:
   title: Work with environments in GitHub Actions
   description: "machine learning operations, MLOps, environments"
-  ms.date: 07/11/2022
+  ms.date: 09/26/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   - Programming experience with Python or R
   - Experience developing and training machine learning models
   - Familiarity with basic Azure Machine Learning concepts
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/work-environments-github-actions.svg
 levels:
 - intermediate
 roles:

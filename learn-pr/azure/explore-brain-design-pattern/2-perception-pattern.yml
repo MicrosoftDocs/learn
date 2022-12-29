@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.explore-design-brain-patterns.perception-pattern
+title: Perception Pattern
+metadata:
+  title: Perception Pattern
+  description: An introduction to the perception pattern.
+  ms.date: 10/18/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-perception-pattern.md)] 

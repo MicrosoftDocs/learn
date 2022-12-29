@@ -1,12 +1,21 @@
-:::image type="content" source="../media/implement-azure-policy-b4a4a47c.png" alt-text="Diagram of implementing Azure policies. From left to right shows creating an Initiative Definition to group policy definitions which are then applied against resources for compliance purposes.":::
+Azure Administrators use Azure Policy to create policies that define conventions for resources. A _policy definition_ describes the compliance conditions for a resource, and the actions to complete when the conditions are met. One or more policy definitions are grouped into an _initiative definition_, to control the scope of your policies and evaluate the compliance of your resources.
 
+:::image type="content" source="../media/implement-azure-policy-b4a4a47c.png" alt-text="Diagram that shows an initiative definition for a group of policy definitions that are applied to resources." border="false":::
 
-To implement Azure Policies, you can follow these steps.
+There are four basic steps to create and work with policy definitions in Azure Policy.
 
-1.  **Browse Policy Definitions**. A Policy Definition expresses what to evaluate and what actions to take. Every policy definition has conditions under which it is enforced. And, it has an accompanying effect that takes place if the conditions are met. For example, you could prevent VMs from being deployed if they are exposed to a public IP address.
-2.  **Create Initiative Definitions**. An initiative definition is a set of Policy Definitions to help track your compliance state for a larger goal. For example, ensuring a branch office is compliant.
-3.  **Scope the Initiative Definition**. You can limit the scope of the Initiative Definition to Management Groups, Subscriptions, or Resource Groups.
-4.  **View Policy Evaluation results**. Once an Initiative Definition is assigned, you can evaluate the state of compliance for all your resources. Individual resources, resource groups, and subscriptions within a scope can be exempted from having policy rules affect it. Exclusions are handled individually for each assignment.
+### Step 1: Create policy definitions
 
-> [!NOTE]
-> Even if you have only a few Policy Definitions, we recommend creating an Initiative Definition.
+A policy definition expresses a condition to evaluate and the actions to perform when the condition is met. You can create your own policy definitions, or choose from built-in definitions in Azure Policy. You can create a policy definition to prevent VMs in your organization from being deployed, if they're exposed to a public IP address.
+
+### Step 2: Create an initiative definition
+
+An initiative definition is a set of policy definitions that help you track your resource compliance state to meet a larger goal. You can create your own initiative definitions, or use built-in definitions in Azure Policy. You can use an initiative definition to ensure resources are compliant with security regulations.
+
+### Step 3: Scope the initiative definition
+
+Azure Policy lets you control how your initiative definitions are applied to resources in your organization. You can limit the scope of an initiative definition to specific management groups, subscriptions, or resource groups.
+
+### Step 4: Determine compliance
+
+After you assign an initiative definition, you can evaluate the state of compliance for all your resources. Individual resources, resource groups, and subscriptions within a scope can be exempted from having the policy rules affect it. Exclusions are handled individually for each assignment.

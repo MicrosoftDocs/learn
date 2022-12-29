@@ -20,7 +20,7 @@ abstract: |
 prerequisites: | 
   - Foundational understanding of cloud adoption.
   - Willingness to pursue more learning about the business and financial terminology you'll be introduced to in this module.  
-iconUrl: /learn/achievements/cloud-adoption-framework-strategy.svg
+iconUrl: /training/achievements/cloud-adoption-framework-strategy.svg
 ratingEnabled: true
 levels:
 - intermediate

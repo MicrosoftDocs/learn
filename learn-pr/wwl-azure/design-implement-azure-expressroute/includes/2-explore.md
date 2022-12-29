@@ -47,7 +47,7 @@ You can connect directly into the Microsoft's global network at a peering locati
 
 ## Design considerations for ExpressRoute deployments
 
-When planning an ExpressRoute deployment, there many decisions to make. This section discusses a few key areas that you must consider as you design your deployment.
+When planning an ExpressRoute deployment, there are many decisions to make. This section discusses a few key areas that you must consider as you design your deployment.
 
 ### Choose between provider and direct model (ExpressRoute Direct)
 

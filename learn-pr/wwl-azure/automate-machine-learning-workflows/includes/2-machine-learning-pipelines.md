@@ -90,6 +90,6 @@ az ml job create --file pipeline-job.yml
 Once the pipeline has finished executing, you can review the pipeline and its executed steps in the Azure Machine Learning workspace. 
 
 > [!Tip]
-> Learn [how to create a pipeline in Azure Machine Learning with the CLI (v2)](/learn/modules/run-component-based-pipelines-azure-machine-learning-cli-v2/)
+> Learn [how to create a pipeline in Azure Machine Learning with the CLI (v2)](/training/modules/run-component-based-pipelines-azure-machine-learning-cli-v2/)
 
 When you convert your machine learning workloads to Python scripts and group tasks within a pipeline, your model will be ready for production. Defining the pipeline in a YAML file allows you to automate training and retraining by triggering the pipeline run with CLI (v2). You can run a CLI command, referring to the pipeline YAML file, from Azure (DevOps) Pipelines or GitHub Actions.

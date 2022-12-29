@@ -1,6 +1,6 @@
 In these lab exercises you will compare two different MySQL storage engines:
 
-- InnoDb
+- InnoDB
 - Memory
 
 > [!IMPORTANT]
@@ -8,10 +8,13 @@ In these lab exercises you will compare two different MySQL storage engines:
 
 To complete these exercises, you must have:
 
-- Created a resource group (see Module 1, Unit 5)
-- Created an Azure Database for MySQL Flexible Server (see Module 1, Unit 5)
-- Downloaded and installed MySQL Workbench (see Module 2, Unit 5)
+- Created a resource group (see Module 1, Unit 5).
+- Created an Azure Database for MySQL Flexible Server (see Module 1, Unit 5).
+- Downloaded and installed MySQL Workbench (see Module 2, Unit 5).
 - Downloaded the scripts for this exercise from [GitHub](https://github.com/MicrosoftLearning/mslearn-mysql/tree/main/labfiles).
+
+> [!TIP]
+> If you stopped your Azure Database for MySQL server after completing the last lab, restart it now.
 
 ## Create a database
 
@@ -31,8 +34,8 @@ To complete these exercises, you must have:
 
 1. Highlight and run the section - **Create a Memory table**. This creates a new table called CatM.
 1. Highlight and run the section - **Insert and display three rows**. This inserts three rows into the Cat table and returns the three rows.
-1. Highlight and run the section - **Insert a row within a transaction**. The transaction was committed, so there should be four rows. This appears to work, but the Memory storage engine does not support transactions, so it ignores the presence of a transaction.
-1. Highlight and run the section - **Insert a row and rollback the transaction**. There should still be four rows because we rolled back the transaction. Note the warning in the Output window for ROLLBACK. There are now five rows. The Memory storage engine does not support transactions and ROLLBACK had no effect.
+1. Highlight and run the section - **Insert a row within a transaction**. The transaction was committed, so there should be four rows. This appears to work, but the Memory storage engine doesn't support transactions, so it ignores the presence of a transaction.
+1. Highlight and run the section - **Insert a row and rollback the transaction**. There should still be four rows because we rolled back the transaction. Note the warning in the Output window for ROLLBACK. There are now five rows. The Memory storage engine doesn't support transactions and ROLLBACK had no effect.
 
 ## Understand the memory storage engine
 

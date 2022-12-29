@@ -6,6 +6,7 @@ metadata:
   ms.date: 03/18/2022
   author: ggailey777
   ms.author: glenga
+  manager: jmartens
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Develop, test, and deploy an Azure Function with Visual Studio
@@ -19,7 +20,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of Azure Functions
   - Experience developing solutions in Visual Studio or a similar integrated development environment
-iconUrl: /learn/achievements/develop-test-deploy-azure-functions-with-visual-studio.svg
+iconUrl: /training/achievements/develop-test-deploy-azure-functions-with-visual-studio.svg
 levels:
 - beginner
 roles:

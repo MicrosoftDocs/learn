@@ -15,7 +15,7 @@ prerequisites: |
   - Experience creating and configuring resources using the Azure portal
 summary: |
   Scripting repetitive tasks in Azure SQL for regular maintenance jobs and multi-instance administration. Automation of error and resource alerts. Configuration of notifications for failures.
-iconUrl: /learn/achievements/automate-tasks-in-sql-server.svg
+iconUrl: /training/achievements/automate-tasks-in-sql-server.svg
 levels:
 - intermediate
 roles:

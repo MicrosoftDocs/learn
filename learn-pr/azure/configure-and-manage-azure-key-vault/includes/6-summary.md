@@ -9,7 +9,7 @@ In this module, you've learned about several security benefits of AKV:
 
 ## Further reading
 
-Continue learning about Azure Key Vault in the Microsoft Learn module [Manage secrets in your server apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
+Continue learning about Azure Key Vault in the Microsoft Learn module [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/).
 
 Read Azure Key Vault documentation about topics we covered in this module.
 

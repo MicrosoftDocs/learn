@@ -16,7 +16,7 @@ abstract: |
   - Use Vue CLI
   - Create components
 prerequisites: HTML/CSS, Git, npm, JavaScript, and some knowledge of Vue.js
-iconUrl: /learn/achievements/vue-cli-components.svg
+iconUrl: /training/achievements/vue-cli-components.svg
 ratingEnabled: true
 levels:
 - intermediate
@@ -25,7 +25,6 @@ roles:
 - developer
 products:
 - azure-app-service-static
-- vs-code
 subjects:
 - development-tools
 units:

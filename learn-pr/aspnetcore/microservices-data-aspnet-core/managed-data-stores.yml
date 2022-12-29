@@ -6,7 +6,7 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.date: 05/12/2021
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
   ms.topic: interactive-tutorial
 title: Review managed data stores in Azure
 durationInMinutes: 10

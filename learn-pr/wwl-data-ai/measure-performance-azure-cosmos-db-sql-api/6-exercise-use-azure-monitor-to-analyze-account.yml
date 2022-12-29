@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.measure-performance-azure-cosmos-db-sql-api.exercise-use-azure-monitor-to-analyze-account
-title: 'Exercise: Use Azure Monitor to analyze an Azure Cosmos DB SQL API account'
+title: 'Exercise: Use Azure Monitor to analyze an Azure Cosmos DB for NoSQL account'
 metadata:
-  title: 'Exercise: Use Azure Monitor to analyze an Azure Cosmos DB SQL API account'
-  description: "Exercise: Use Azure Monitor to analyze an Azure Cosmos DB SQL API account"
-  ms.date: 06/22/2022
+  title: 'Exercise: Use Azure Monitor to analyze an Azure Cosmos DB for NoSQL account'
+  description: "Exercise: Use Azure Monitor to analyze an Azure Cosmos DB for NoSQL account"
+  ms.date: 12/21/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

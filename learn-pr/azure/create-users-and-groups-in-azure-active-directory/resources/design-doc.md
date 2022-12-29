@@ -65,7 +65,7 @@ Create users in Azure Active Directory. Understand different types of groups. Cr
 
     Highlight that the ability to invite guests can be turned off by the User Administrator. (By default it's enabled.)
 
-    (Note to developer: See link on redemption process - there is an update coming to this article: <https://docs.microsoft.com/en-us/azure/active-directory/b2b/redemption-experience> (look for update date June 2019))
+    (Note to developer: See link on redemption process - there is an update coming to this article: <https://learn.microsoft.com/azure/active-directory/b2b/redemption-experience> (look for update date June 2019))
 
     **Admin roles**
 

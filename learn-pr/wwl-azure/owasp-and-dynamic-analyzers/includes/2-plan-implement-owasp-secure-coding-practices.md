@@ -31,9 +31,9 @@ In 2002, Microsoft underwent a company-wide re-education and review phase to pro
 
 The book, [Writing Secure Code by David LeBlanc, Michael Howard](https://www.booktopia.com.au/ebooks/writing-secure-code-david-leblanc/prod2370006179962.html), was written by two people involved and provided detailed advice on writing secure code.
 
-For more information, you can see:
+For more information, you can see the following:
 
  -  [The OWASP Foundation](http://owasp.org).
  -  [OWASP Secure Coding Practices Quick Reference Guide](https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf).
- -  [OWASP Code Review Guide](https://owasp.org/www-pdf-archive/OWASP_Code_Review_Guide-V1_1.pdf).
+ -  [OWASP Code Review Guide](https://owasp.org/www-project-code-review-guide/assets/OWASP_Code_Review_Guide_v2.pdf).
  -  [OWASP Top 10](https://owasp.org/www-project-top-ten/).

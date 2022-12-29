@@ -40,4 +40,4 @@ In this module, you'll:
 - Python extension for Visual Studio Code installed
 
 > [!TIP]
-> If you want to learn how to set up and configure Visual Studio Code for Python development, complete [Set up your Python beginner development environment with Visual Studio Code](/learn/languages/python-install-vscode/?azure-portal=true).
+> If you want to learn how to set up and configure Visual Studio Code for Python development, complete [Set up your Python beginner development environment with Visual Studio Code](/training/languages/python-install-vscode/?azure-portal=true).

@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of operational concepts such as monitoring, logging, and alerting
   - Basic knowledge of Linux
-iconUrl: /learn/achievements/connect-common-event-format-logs-azure-sentinel.svg
+iconUrl: /training/achievements/connect-common-event-format-logs-azure-sentinel.svg
 levels:
 - intermediate
 roles:

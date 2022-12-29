@@ -5,8 +5,8 @@ metadata:
   title: Automate Azure infrastructure change reviews by using Bicep and GitHub
   description: Build an automated pull request workflow for Bicep code. Lint code automatically during every pull request, and deploy temporary ephemeral environments by using GitHub and GitHub Actions.
   ms.date: 03/30/2022
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Automate Azure infrastructure change reviews by using Bicep and GitHub
@@ -35,7 +35,7 @@ prerequisites: |
     - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps) version
     - [Git](https://git-scm.com/download?azure-portal=true)
 
-iconUrl: /learn/achievements/bicep/automate-azure-infrastructure-change-reviews-using-bicep-github.svg
+iconUrl: /training/achievements/bicep/automate-azure-infrastructure-change-reviews-using-bicep-github.svg
 levels:
   - advanced
 roles:

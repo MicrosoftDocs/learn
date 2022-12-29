@@ -4,8 +4,9 @@ metadata:
   title: SQL Server Discovery using the Microsoft Assessment and Planning (MAP) toolkit 
   description: SQL Server Discovery using MAP
   ms.date: 01/31/2019
-  author: markohot
-  ms.author: markohot
+  author: rwestmsft
+  ms.author: randolphwest
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 title: SQL Server Discovery using the Microsoft Assessment and Planning (MAP) toolkit
@@ -20,7 +21,7 @@ prerequisites: |
   - Experience administering SQL Server databases
   - Knowledge of SQL Server editions and versions
   - Understanding of SQL Server configuration settings
-iconUrl: /learn/achievements/sqlserver/sql-server-discovery-using-map.svg
+iconUrl: /training/achievements/sqlserver/sql-server-discovery-using-map.svg
 levels:
 - beginner
 roles:

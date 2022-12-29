@@ -19,7 +19,7 @@ In the rest of this unit, you'll learn about some of the approaches that you can
 
 Consider how you'll grant access to your Azure DevOps organization or GitHub repository. Think about who has access and what they can do.
 
-It's a good practice to use your organization's Azure Active Directory (Azure AD) instance as your pipeline's identity provider. Then, you can ensure that whenever somebody joins or leaves your organization, access to your pipeline is automatically granted or revoked. By using Azure AD, you can also easily implement protections like conditional access and multifactor authentication.
+It's a good practice to use your organization's Azure Active Directory (Azure AD) instance as your pipeline's identity provider. That way, you can ensure that whenever somebody joins or leaves your organization, access to your pipeline is automatically granted or revoked. By using Azure AD, you can also easily implement protections like conditional access and multifactor authentication.
 
 > [!NOTE]
 > To use Azure AD integration with GitHub, your organization needs a GitHub Enterprise license.
@@ -27,7 +27,7 @@ It's a good practice to use your organization's Azure Active Directory (Azure AD
 You can also create *teams* (in GitHub) or *groups* (in Azure DevOps), which represent sets of users who can be granted permissions together. That way, you don't need to assign permissions individually. It's easy to change the permissions of users by adding them to and removing them from a team or group.
 
 > [!TIP]
-> Azure DevOps uses a *least privilege* permission model, which is different from the model that Azure uses. In Azure DevOps, *deny* permissions override *allow* permissions. So if you're assigned to multiple groups with different sets of permissions, you'll be allowed to do only the actions permitted by all groups.
+> Azure DevOps uses a *least privilege* permission model, which is different from the model that Azure uses. In Azure DevOps, *deny* permissions override *allow* permissions. This means if you're assigned to multiple groups with different sets of permissions, you'll be allowed to do only the actions permitted by all groups.
 >
 > Ensure that you understand how permissions are assigned, especially to groups.
 
@@ -41,7 +41,7 @@ Consider using *branch protection rules* (in GitHub) or *branch policies* (in Az
 
 Make sure your team understands your expectations for reviewing and testing all code, including your infrastructure definitions.
 
-Your pipeline definitions are YAML files, so they're a form of code. Changes to your pipeline definitions need to be reviewed and evaluated. Otherwise, somebody might accidentally or maliciously create a pipeline step that leaks your service principal's credentials or makes a dangerous change to your Azure estate. 
+Your pipeline definitions are YAML files, so they're a form of code. Changes to your pipeline definitions need to be reviewed and evaluated. Otherwise, somebody might accidentally or maliciously create a pipeline step that leaks your service principal's credentials or makes a dangerous change to your Azure estate.
 
 Any changes to pipeline definition files need to be thoroughly reviewed. Make sure that everybody on your team understands that pipelines are highly privileged and need special attention.
 
@@ -49,7 +49,7 @@ Any changes to pipeline definition files need to be thoroughly reviewed. Make su
 
 Your pipeline runs on *agents* (for Azure Pipelines) or *runners* (for GitHub Actions). You can think of agents and runners as virtual machines. Your pipeline definition controls those virtual machines by running the tasks and scripts that you've provided.
 
-Both Azure Pipelines and GitHub Actions provide *hosted* agents and runners, which Microsoft or GitHub configures and maintains. The platform owner configures the machines to be compliant with recommended security practices. The platform owner's responsibilities include patching operating system vulnerabilities. 
+Both Azure Pipelines and GitHub Actions provide *hosted* agents and runners, which Microsoft or GitHub configures and maintains. The platform owner configures the machines to be compliant with recommended security practices. The platform owner's responsibilities include patching operating system vulnerabilities.
 
 You can instead choose to use your own physical or virtual machines for your agents and runners. These are called *self-hosted* agents and runners. If you do this, you're responsible for ensuring that the machines are configured correctly and protected against threats.
 
@@ -92,7 +92,7 @@ A *service connection* (in Azure Pipelines) or *secret* (in GitHub) contains the
 
 In Azure DevOps, when you create a service connection, you can configure it to require your approval before a new pipeline or environment can use it.
 
-Azure DevOps also enables you to associate *checks* with specific service connections. Checks add a further layer of protection. For example, you can configure a check on a production service connection to verify that it's used only on code from your repository's *main* branch. This check helps prevent unauthorized code from being deployed to your production environment.
+Azure DevOps also allows you to associate *checks* with specific service connections. Checks add a further layer of protection. For example, you can configure a check on a production service connection to verify that it's used only on code from your repository's *main* branch. This check helps prevent unauthorized code from being deployed to your production environment.
 
 In GitHub, you can configure environment-specific secrets. GitHub Actions provides only the secret value when the workflow is working with that environment. By using environment-specific secrets and environment controls like approvals, you can reduce the risk that a non-production deployment is used to deploy to your production environment. You can also use workload identities to avoid using any credentials in your GitHub Actions workflows and eliminate the possibility that credentials might be exposed.
 
@@ -111,7 +111,7 @@ Azure DevOps provides *audit logs* to help you understand who has made changes t
 
 ## Protect your repository and pipeline
 
-Now that you understand important controls that you can apply to your repository and pipeline, let's consider which ones you might use to protect each of the elements from earlier in this unit: 
+Now that you understand important controls that you can apply to your repository and pipeline, let's consider which ones you might use to protect each of the elements from earlier in this unit:
 
 | Element to protect | Controls to apply |
 |-|-|

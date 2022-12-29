@@ -13,7 +13,7 @@ prerequisites: |
   - None
 summary: |
   Once you have deployed and secured your Azure environment, learn to monitor, operate, and continuously improve the security of your solutions.
-iconUrl: /learn/achievements/operation-manage-security.svg
+iconUrl: /training/achievements/operation-manage-security.svg
 levels:
 - intermediate
 roles:

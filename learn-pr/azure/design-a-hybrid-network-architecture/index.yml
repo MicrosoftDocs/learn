@@ -19,7 +19,7 @@ abstract: |
 prerequisites: | 
   - Knowledge of networking fundamentals
   - Familiarity with Azure virtual networking
-iconUrl: /learn/achievements/design-a-hybrid-network-architecture.svg
+iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
 levels:
 - beginner
 roles:

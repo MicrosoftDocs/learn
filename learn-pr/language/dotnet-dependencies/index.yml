@@ -15,7 +15,7 @@ abstract: |
   - Initialize .NET projects
   - Add packages to and remove packages from a .NET project
   - Manage your package dependencies and update them in a predictable way
-iconUrl: /learn/achievements/dotnet-dependencies.svg
+iconUrl: /training/achievements/dotnet-dependencies.svg
 levels:
 - beginner
 roles:

@@ -6,7 +6,7 @@
 
     Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
+    [Learning-unit introduction guidance](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
 -->
 After administrators enable a registration campaign for Microsoft Authenticator, they'll want to validate the new sign-in experience works as expected before running the campaign production. 
 
@@ -50,7 +50,7 @@ You'll create a new user account in Azure AD and enable it for Microsoft Authent
         2. 1-3 paragraphs of text
         3. Visual like an image, table, list, code sample, or blockquote.
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
+    [Learning-unit structural guidance](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
 -->
 
 <!-- Pattern for simple chunks (repeat as needed) -->

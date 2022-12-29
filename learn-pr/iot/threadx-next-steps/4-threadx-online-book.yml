@@ -5,8 +5,10 @@ metadata:
   title: Online ThreadX book
   description: Overview of ThreadX online book
   ms.date: 01/28/2022
-  author: edlamie80
-  ms.author: liydu
+  author: timlt
+  ms.author: timlt
+  ms.reviewer: liydu
+  manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

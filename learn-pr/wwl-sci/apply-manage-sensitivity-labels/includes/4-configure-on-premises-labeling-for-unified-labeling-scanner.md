@@ -130,6 +130,6 @@ The Unified labeling scanner can be used for different operational scenarios, so
 
 ## Learn more
 
-[Install and configure the Azure Information Protection (AIP) unified labeling scanner | Microsoft Docs](/azure/information-protection/deploy-aip-scanner-configure-install?azure-portal=true)
+[Install and configure the Azure Information Protection (AIP) unified labeling scanner](/azure/information-protection/deploy-aip-scanner-configure-install?azure-portal=true)
 
 

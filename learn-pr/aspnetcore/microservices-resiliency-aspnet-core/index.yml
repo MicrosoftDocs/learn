@@ -6,7 +6,7 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.date: 07/12/2020
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
   ms.topic: interactive-tutorial
 title: Implement resiliency in a cloud-native ASP.NET Core microservice
 summary: Learn how to make your cloud-native ASP.NET Core microservices app fault-tolerant with minimal impact on the user.
@@ -45,6 +45,6 @@ units:
   - learn.microservices-resiliency-aspnet-core.6-implement-linkerd-resiliency
   - learn.microservices-resiliency-aspnet-core.7-knowledge-check
   - learn.microservices-resiliency-aspnet-core.8-summary
-iconUrl: /learn/achievements/aspnetcore/microservices-resiliency-aspnet-core.svg
+iconUrl: /training/achievements/aspnetcore/microservices-resiliency-aspnet-core.svg
 badge:
   uid: learn.microservices-resiliency-aspnet-core.badge

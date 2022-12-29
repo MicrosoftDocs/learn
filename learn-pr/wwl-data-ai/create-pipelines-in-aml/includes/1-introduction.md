@@ -5,7 +5,7 @@ In Azure Machine learning, you run workloads as experiments that leverage data a
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
 - Create an Azure Machine Learning pipeline.
 - Publish an Azure Machine Learning pipeline.

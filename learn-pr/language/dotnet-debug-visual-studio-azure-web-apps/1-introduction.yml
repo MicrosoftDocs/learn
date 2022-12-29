@@ -4,9 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: Learn how to use Visual Studio to debug web applications hosted in Azure App Service.
-  ms.date: 5/15/2022
+  ms.date: 12/08/2022
   author: alexwolfmsft
   ms.author: alexwolf
+  manager: jmartens
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
 durationInMinutes: 2

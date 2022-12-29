@@ -50,7 +50,7 @@ Student organizations provide some of the best opportunities for networking. The
 
 Participating and collaborating in student organizations will help you develop incredibly valuable life skills, such as communication, time management, and teamwork, through service projects, excursions, hackathons, and other events.
 
-### Join the Microsoft LEARN student ambassador program
+### Join the Microsoft Learn student ambassador program
 
 The Student Ambassadors are a global community of like minded students that share a passion for technology and making an impact. You’ll find a diverse and inclusive group that is focused on socially significant issues and technologies, Microsoft experts and mentors who can offer guidance, and resources to help you learn the skills that will help you land your dream job and create opportunities for others.
 
@@ -106,7 +106,7 @@ So why is a Hackathon worth your time?
 
 ### Participate in Microsoft Imagine Cup
 
-Microsoft Imagine Cup is a global technology competition just for students. Over the twenty-year history, over 2 million students from more than 160 countries have participated to create innovative and life changing solutions. Some have even turned their projects into a business.
+Microsoft Imagine Cup is a global technology competition just for students. Over the twenty-year history, over 2 million students from more than 160 countries/regions have participated to create innovative and life changing solutions. Some have even turned their projects into a business.
 
 :::image type="content" source="../media/imagine-cup.png" alt-text="Dream it, build it, live it, Imagine Cup":::
 
@@ -130,4 +130,3 @@ You could win:
 *Learn more about 2021 years winner [team Reweba](https://imaginecup.microsoft.com/en-us/Team/6a97eb39-e9d5-4b3f-8c78-14d372c70f17) - this could be you.*
 
 Register for [Imagine cup 2022](https://imaginecup.microsoft.com/category/register/22) 
-

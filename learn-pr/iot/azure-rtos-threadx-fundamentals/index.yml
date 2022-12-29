@@ -4,8 +4,10 @@ metadata:
   title: Azure RTOS ThreadX fundamentals
   description: Learn the fundamentals of Azure RTOS ThreadX.
   ms.date: 01/27/2022
-  author: EdLamie
-  ms.author: pacorte
+  author: timlt
+  ms.author: timlt
+  ms.reviewer: liydu
+  manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure RTOS ThreadX fundamentals
@@ -17,8 +19,8 @@ abstract:  |
   - Learn about context switches.
 prerequisites: |
   - Working knowledge of C or C++
-  - Previous modules in this [learning path](/learn/paths/azure-rtos-threadx)
-iconUrl: /learn/achievements/iot/azure-rtos-threadx-fundamentals.svg
+  - Previous modules in this [learning path](/training/paths/azure-rtos-threadx)
+iconUrl: /training/achievements/iot/azure-rtos-threadx-fundamentals.svg
 levels:
 - beginner
 roles:

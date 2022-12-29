@@ -20,7 +20,7 @@ prerequisites: |
   - Introduction to Python
   - Beginners Data Science for Python Developers
 
-iconUrl: /learn/achievements/reactors/join-clean-data-deep-dive.svg
+iconUrl: /training/achievements/reactors/join-clean-data-deep-dive.svg
 hidden: true
 levels:
 - beginner
@@ -30,7 +30,6 @@ roles:
 - data-scientist
 products:
 - azure
-- vs-code
 subjects:
 - data-analytics
 units:

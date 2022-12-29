@@ -5,7 +5,7 @@ Node.js and Express are incredibly powerful and often used for serving API endpo
 Ultimately, with Azure Functions you focus on the code, not the servers.
 
 > [!NOTE]
-> If you want to deploy the Azure Functions app to the cloud, you can [deploy it by following this tutorial](https://code.visualstudio.com/tutorials/functions-extension/getting-started). All you need is an [Azure account](https://azure.microsoft.com/free/) and then use the [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) for Visual Studio Code to deploy it.
+> If you want to deploy the Azure Functions app to the cloud, you can [deploy it by following this tutorial](/azure/developer/javascript/how-to/with-web-app/azure-function-resource-group-management/deploy-azure-function-with-visual-studio-code). All you need is an [Azure account](https://azure.microsoft.com/free/) and then use the [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) for Visual Studio Code to deploy it.
 
 The solution for the [sample project is on GitHub in the _solution_ branch](https://github.com/MicrosoftDocs/mslearn-module-shifting-nodejs-express-apis-to-serverless/tree/solution). The instructions on how to get started appear in the README file. You can explore running the Express app or the Azure Functions app to get a sense of the differences. Then try to apply this same shift to your code.
 
@@ -22,7 +22,7 @@ Here are several resources where you can learn more about the Azure Functions, V
 ### Azure Functions
 
 - Learn about the Azure Functions [local.settings.json](/azure/azure-functions/functions-run-local#local-settings-file) file
-- Learn how to [Deploy to Azure Using Azure Functions](https://code.visualstudio.com/tutorials/functions-extension/getting-started)
+- Learn how to [Deploy to Azure Using Azure Functions](/azure/developer/javascript/how-to/with-web-app/azure-function-resource-group-management/deploy-azure-function-with-visual-studio-code)
 - Learn about [Azure Functions TypeScript Support](https://azure.microsoft.com/blog/improving-the-typescript-support-in-azure-functions/)
 - Sign up for a [Free Trial of Azure](https://azure.microsoft.com/free/)
 

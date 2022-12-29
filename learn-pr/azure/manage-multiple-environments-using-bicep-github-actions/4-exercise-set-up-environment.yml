@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Set up your environment
   description: Configure your environment to add multiple deployment environments to your Bicep deployment workflow.
   ms.date: 11/08/2021
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface

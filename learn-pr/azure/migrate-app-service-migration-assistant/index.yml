@@ -20,7 +20,7 @@ prerequisites: |
   - A basic understanding of how IIS works, what its extensibility points are, and how it hosts ASP.NET applications
   - A Remote Desktop Protocol (RDP) client (included with all versions of Windows)
 ratingEnabled: true
-iconUrl: /learn/achievements/migrate-app-service-migration-assistant.svg
+iconUrl: /training/achievements/migrate-app-service-migration-assistant.svg
 levels:
 - beginner
 roles:

@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   * Conceptual knowledge of governance policies, resource organization, and subscription management.
   * Working experience with organizing resources, applying governance policies, and enforcing compliance requirements.
-iconUrl: /learn/achievements/5-manage-usage-and-billing-for-azure-stack-hub.svg
+iconUrl: /training/achievements/5-manage-usage-and-billing-for-azure-stack-hub.svg
 levels:
 - advanced
 roles:

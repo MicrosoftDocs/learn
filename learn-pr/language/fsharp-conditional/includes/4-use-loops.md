@@ -1,4 +1,4 @@
-You've come to a point in your program where you need to carry out a group of statements more than one time. The reason is that you're either dealing with a list type structure or you have a general need to repeat something until a certain condition is met. In this scenario, you can use loops.
+You've come to a point in your program where you need to carry out a group of statements more than one time. You may be working with a list type structure that you need to iterate over. Or, you have a general need to repeat an operation until a certain condition is met. In theses scenarios, you can use loops.
 
 ## Loops
 
@@ -6,7 +6,7 @@ A loop iterates over a range of values. For each value, the code does something,
 
 - **`for...in`**: The `for...in` construct assumes that you have an enumerable collection you can iterate over. It iterates over each value in a collection.
 - **`for...to`**: The `for...to` loop starts and ends where this loop iterates. It iterates until it reaches the value of a loop variable.
-- **`while...do`**: The `while...do` loop isn't centered on an enumerable collection like two first constructs, but instead loops until a condition is met.
+- **`while...do`**: The `while...do` loop isn't centered on an enumerable collection like the first two constructs. Instead, it loops until a condition is met.
 
 ### Use a for...in loop for every value in a collection
 
@@ -27,7 +27,7 @@ It's important to understand some keywords:
      printf "%d " i
    ```
 
-- **Enumerable-expression**: The enumerable expression is what you are iterating through. It might be a list or a  sequence.
+- **Enumerable-expression**: The enumerable expression is what you are iterating through. It might be a list or a sequence.
 - **Body-expression**: The body expression is where you carry out the task you mean to do, like printing or performing a calculation.
 
 ### Use a for...to loop until a looping variable occurs
@@ -51,7 +51,7 @@ for i = 1 to 10 do
   printfn "%i " i  // prints 1 2 3 4 5 6 7 8 9 10
 ```
 
-This loop prints all values between 1 and 10, including 10. Let's look at an example that also uses the `downto` construct. This construct works similar to `to`, but in reverse. The following code shows how you can instead print numbers 10 to 1:
+This loop prints all values between 1 and 10, including 10. Let's also look at an example that uses the `for...downto` construct. This construct works similar to `for...to`, but in reverse. The following code shows how you can print the values from 10 down to 1, including 1:
 
 ```fsharp
 for i = 10 downto 1 do
@@ -60,7 +60,7 @@ for i = 10 downto 1 do
 
 ### Use a while...do loop until a condition is met
 
-The `while...do` construct is different from `for...in` and `for...to` constructs. `while...do` doesn't iterate on a collection. Instead, use a `while...do` loop if you have logic that needs to loop until a condition is met. An example is accepting command-line arguments until a user enters **quit**.
+The `while...do` construct is different from the `for...in` and `for...to` constructs. `while...do` doesn't iterate on a collection. Instead, use a `while...do` loop if you have logic that needs to loop until a condition is met. An example is accepting command-line arguments until a user enters **quit**.
 
 This code shows the syntax of a `while...do` construct:
 
@@ -72,17 +72,19 @@ while <test-expression> do
 A guessing game is an example of using a `while...do` construct:
 
 ```fsharp
-  let mutable quit = false
-  let no = 11
-  while not quit do
-    printf "Guess a number: "
-    let guess = Console.ReadLine() 
-    let guessNo = int guess
-    if guessNo = no then
+open System
+
+let mutable quit = false
+let no = 11
+while not quit do
+   printf "Guess a number: "
+   let guess = Console.ReadLine() 
+   let guessNo = int guess
+   if guessNo = no then
       quit <- true
       printfn "You guessed correctly %i is the secret number" no
-    else
-      printfn "%i is incorrect" guessNo 
+   else
+      printfn "%i is incorrect" guessNo
 ```
 
 The code carries out a set of statements until the variable `quit` has the value `true`. By setting the value for `quit` to `true`, when a user guesses correctly, the loop ends.

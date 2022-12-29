@@ -21,7 +21,7 @@ prerequisites: |
   - Git
   - npm
   - JavaScript
-iconUrl: /learn/achievements/vue-get-started.svg
+iconUrl: /training/achievements/vue-get-started.svg
 ratingEnabled: true
 levels:
 - intermediate
@@ -30,7 +30,6 @@ roles:
 - developer
 products:
 - azure-app-service-static
-- vs-code
 units:
 - learn.language.vue-get-started.1-introduction
 - learn.language.vue-get-started.2-create-app

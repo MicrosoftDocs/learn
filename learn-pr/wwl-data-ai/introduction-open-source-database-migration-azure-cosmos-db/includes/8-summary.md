@@ -14,5 +14,5 @@ In this module you learned how to:
   
 ## Learn more
 
-- [Welcome to Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction)
-- [Options to migrate your on-premises or cloud data to Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/cosmosdb-migrationchoices)
+- [Welcome to Azure Cosmos DB](/azure/cosmos-db/introduction)
+- [Options to migrate your on-premises or cloud data to Azure Cosmos DB](/azure/cosmos-db/cosmosdb-migrationchoices)

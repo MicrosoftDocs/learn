@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Experience using the Azure portal to create and manage App Service web apps
   - Basic familiarity with manually scaling an App Service
-iconUrl: /learn/achievements/app-service-autoscale-rules.svg
+iconUrl: /training/achievements/app-service-autoscale-rules.svg
 levels:
 - beginner
 roles:

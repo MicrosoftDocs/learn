@@ -16,7 +16,7 @@ abstract: |
   - Write queries that specify multiple groups with GROUPING SET, CUBE, and ROLLUP.
 prerequisites: |
   Before starting this module, you should have experience of using Transact-SQL queries to retrieve and filter data from a table in a database.
-iconUrl: /learn/achievements/transform-data-implement-pivot-rollup.svg
+iconUrl: /training/achievements/transform-data-implement-pivot-rollup.svg
 levels:
 - advanced
 roles:

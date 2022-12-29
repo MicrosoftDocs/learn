@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/03/2021
+  ms.date: 09/26/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 2
 quiz:
   questions:
@@ -17,7 +18,7 @@ quiz:
     choices:
     - content: "Set the `start-ip-address` parameter to 0.0.0.0, and the `end-ip-address` parameter to 255.255.255.255."
       isCorrect: false
-      explanation: "That's incorrect. Setting the `start-ip-address` parameter to 0.0.0.0, and the `end-ip-address` parameter to 255.255.255.255 will work, but is dangerous as it permits traffic from all IP addresses. There is a better answer."
+      explanation: "That's incorrect. Setting the `start-ip-address` parameter to 0.0.0.0, and the `end-ip-address` parameter to 255.255.255.255 will work, but is dangerous as it permits traffic from all IP addresses. There's a better answer."
     - content: "Set the `start-ip-address` and `end-ip-address` parameters to 0.0.0.0."
       isCorrect: true
       explanation: "That's correct. Set the `start-ip-address` and `end-ip-address` parameters to 0.0.0.0. , effectively disabling the firewall."

@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of operational concepts such as monitoring, logging, and alerting
   - Basic knowledge of Linux
-iconUrl: /learn/achievements/connect-syslog-data-sources-to-azure-sentinel.svg
+iconUrl: /training/achievements/connect-syslog-data-sources-to-azure-sentinel.svg
 levels:
 - intermediate
 roles:

@@ -6,9 +6,6 @@ You want to deploy the model to a real-time endpoint. The marketing team will ca
 
 After this module, you'll be able to deploy a model to an online endpoint managed by Azure Machine Learning with the CLI (v2).
 
-> [!Important]
-> Managed online endpoints are currently in public preview. Preview versions are provided without a service-level agreement, and it's not recommended for production workloads. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
-
 ## Learning objectives
 
 In this module, you'll learn how to:

@@ -22,7 +22,7 @@ prerequisites: |
   - Demonstrate an understanding of Azure CLI
   - Demonstrate an understanding of PowerShell
   - Know how to run Cloud Shell to run commands
-iconUrl: /learn/achievements/connectivity-cloud-hybrid.svg
+iconUrl: /training/achievements/connectivity-cloud-hybrid.svg
 levels:
 - intermediate
 roles:

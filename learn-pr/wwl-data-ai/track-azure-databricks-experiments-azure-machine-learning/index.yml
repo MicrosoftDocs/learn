@@ -18,7 +18,7 @@ abstract: |
   - Run Azure Machine Learning pipelines on Azure Databricks compute
 prerequisites: |
   Before starting this module, you should be familiar with using Python to train machine learning models in Azure Databricks.
-iconUrl: /learn/achievements/track-azure-databricks-experiments-in-azure-machine-learning.svg
+iconUrl: /training/achievements/track-azure-databricks-experiments-in-azure-machine-learning.svg
 levels:
 - intermediate
 roles:

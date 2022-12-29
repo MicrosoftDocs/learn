@@ -17,7 +17,7 @@ abstract: |
   - Express why reliability is crucial to your success
   - Describe modern operations practices that offer tools you can use to work on your reliability challenges
   - Explain the Dickerson hierarchy of reliability and the map it provides for approaching reliability challenges
-iconUrl: /learn/achievements/improve-reliability-introduction.svg
+iconUrl: /training/achievements/improve-reliability-introduction.svg
 levels:
 - beginner
 roles:

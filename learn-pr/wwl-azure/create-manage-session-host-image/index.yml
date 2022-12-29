@@ -18,7 +18,7 @@ abstract: |
   *  Create and use a Shared Image Gallery (SIG) for Azure Virtual Desktop.
   *  Install language packs in Azure Virtual Desktop.
 prerequisites: ""
-iconUrl: /learn/achievements/4-create-and-manage-session-host-image.svg
+iconUrl: /training/achievements/4-create-and-manage-session-host-image.svg
 levels:
 - intermediate
 roles:

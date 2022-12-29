@@ -8,7 +8,7 @@ You learned about:
 - How to add a `.gitignore` file to a repository
 - Advanced security features such as code scanning and secret scanning
 
-Now that you're familiar with security best practices, learn to [Automate DevOps processes by using GitHub Apps](/learn/modules/automate-devops-github-apps/).
+Now that you're familiar with security best practices, learn to [Automate DevOps processes by using GitHub Apps](/training/modules/automate-devops-github-apps/).
 
 ## Learn more
 

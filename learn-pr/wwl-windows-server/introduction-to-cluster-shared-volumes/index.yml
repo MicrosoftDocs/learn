@@ -20,7 +20,7 @@ prerequisites: |
   - Windows Server 2012 or Windows Server 2016.
   - Core networking technologies.
   - Fundamental knowledge of Windows Server Failover Clustering.
-iconUrl: /learn/achievements/introduction-to-cluster-shared-volumes.svg
+iconUrl: /training/achievements/introduction-to-cluster-shared-volumes.svg
 levels:
 - beginner
 roles:

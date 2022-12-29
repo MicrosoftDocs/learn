@@ -24,7 +24,7 @@ prerequisites: |
   - Visual Studio 2019 or later
   - A free Twilio account 
   - [!include[](../../includes/azure-subscription-prerequisite.md)]
-iconUrl: /learn/achievements/send-location-over-sms-from-mobile-using-azure-functions-twilio.svg
+iconUrl: /training/achievements/send-location-over-sms-from-mobile-using-azure-functions-twilio.svg
 levels:
 - intermediate
 roles:

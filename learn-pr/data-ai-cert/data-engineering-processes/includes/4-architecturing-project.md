@@ -1,10 +1,11 @@
 Here's an example of how to holistically design a data engineering project by following the five phases: source, ingest, prepare, analyze, and consume.
 
 Contoso Health Network recently deployed IoT devices to its intensive care unit (ICU). Here are the goals of the project:
-* Capture data on patient biometric monitoring in real time to help physicians treat their patients.  
-* Store the biometric data so that Contoso's research center can further analyze it in the future. 
-* Use Azure Machine Learning to understand which treatments improve the quality of care and reduce the likelihood that a patient will be readmitted to the hospital. 
-* Create a visualization of the data's history for Contoso's chief medical officer.
+
+- Capture data on patient biometric monitoring in real time to help physicians treat their patients.  
+- Store the biometric data so that Contoso's research center can further analyze it in the future. 
+- Use Azure Machine Learning to understand which treatments improve the quality of care and reduce the likelihood that a patient will be readmitted to the hospital. 
+- Create a visualization of the data's history for Contoso's chief medical officer.
 
 After reviewing the business case, Contoso's technical architect proposes the following technologies:
 

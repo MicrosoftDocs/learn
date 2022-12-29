@@ -7,7 +7,7 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
 title: Deploy a cloud-native ASP.NET Core microservice with GitHub Actions
 summary: Implement GitHub Actions to build a container image and deploy to Azure Kubernetes Service.
 abstract: |
@@ -49,6 +49,6 @@ units:
   - learn.microservices-devops-aspnet-core.5-deploy-github-action
   - learn.microservices-devops-aspnet-core.6-knowledge-check
   - learn.microservices-devops-aspnet-core.7-summary
-iconUrl: /learn/achievements/aspnetcore/microservices-devops-aspnet-core.svg
+iconUrl: /training/achievements/aspnetcore/microservices-devops-aspnet-core.svg
 badge:
   uid: learn.microservices-devops-aspnet-core.badge

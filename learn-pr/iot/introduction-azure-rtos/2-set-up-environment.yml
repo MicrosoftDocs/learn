@@ -5,8 +5,10 @@ metadata:
   title: Set up your environment
   description: Instructions on how to set up your environment so that you can complete the exercises in this module.
   ms.date: 01/27/2022
-  author: EdLamie
-  ms.author: pacorte
+  author: timlt
+  ms.author: timlt
+  ms.reviewer: liydu
+  manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-python
 durationInMinutes: 2

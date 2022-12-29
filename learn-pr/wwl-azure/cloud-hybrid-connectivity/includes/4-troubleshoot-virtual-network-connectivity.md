@@ -180,7 +180,7 @@ Do the following:
 
 ## Troubleshoot service chaining
 
-Service chaining is the ability to send traffic from one virtual network to an NVA in a peered network via user-defined routes. In peered virtual networks, you configure user-defined routes that point to virtual machines as the next hop IP address. You will need to set up a route table and associate it to a subnet. For step-by-step instructions for routing network traffic, see: [Route network traffic - tutorial - Azure portal | Microsoft Docs](/azure/virtual-network/tutorial-create-route-table-portal)
+Service chaining is the ability to send traffic from one virtual network to an NVA in a peered network via user-defined routes. In peered virtual networks, you configure user-defined routes that point to virtual machines as the next hop IP address. You will need to set up a route table and associate it to a subnet. For step-by-step instructions for routing network traffic, see [Tutorial: Route network traffic with a route table using the Azure portal](/azure/virtual-network/tutorial-create-route-table-portal).
 
 Using PowerShell, you can test the routing of network traffic using tracert:
 

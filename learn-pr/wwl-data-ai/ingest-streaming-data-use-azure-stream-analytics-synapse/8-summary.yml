@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 12/08/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: stream-analytics
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-summary.md)]

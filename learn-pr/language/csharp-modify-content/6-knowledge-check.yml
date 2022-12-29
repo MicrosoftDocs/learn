@@ -34,10 +34,10 @@ quiz:
       explanation: "A constant might be used to replace a magic string or number, but they aren't the same thing."
     - content: "A variable whose name must match its value."
       isCorrect: false
-      explanation: "A constant's value is not constrained by its name."
+      explanation: "A constant's value isn't constrained by its name."
     - content: "A variable that can only be used in the scope of the method."
       isCorrect: false
       explanation: "While a constant's scope is the same as any local variable, that isn't the purpose of a constant."
-    - content: "A value that once initialized can never be changed."
+    - content: "A value that, once initialized, can never be changed."
       isCorrect: true
       explanation: "Correct!"

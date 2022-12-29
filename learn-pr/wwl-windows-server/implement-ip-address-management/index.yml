@@ -25,7 +25,7 @@ prerequisites: |
   - Windows Server.
   - Core networking technologies such as IP addressing, name resolution, and Dynamic Host Configuration Protocol (DHCP).
   - Windows PowerShell basics.
-iconUrl: /learn/achievements/implement-ip-address-management.svg
+iconUrl: /training/achievements/implement-ip-address-management.svg
 levels:
 - intermediate
 roles:

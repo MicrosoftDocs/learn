@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-model-batch-endpoint.deploy-custom-model-batch-endpoint
+title: Deploy a custom model to a batch endpoint
+metadata:
+  title: Deploy a custom model to a batch endpoint
+  description: "Deploy a custom model to a batch endpoint"
+  ms.date: 11/24/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-deploy-custom-model-batch-endpoint.md)]

@@ -55,10 +55,6 @@ The system uses pay-as-you-go pricing so you only pay for what you use.
 
 You can choose from two deployment options:
 
-#### Azure Database for MySQL - Single Server
-
-Azure Database for MySQL Single Server provides a database system that scales up to large databases without the need to manage hardware, network components, virtual servers, software patches, and other underlying components.
-
 #### Azure Database for MySQL - Flexible Server
 
 Azure Database for MySQL - Flexible Server provides greater availability by replicating your databases to multiple availability zones. It also enables you to start and stop your database service quickly to optimize costs.
@@ -90,20 +86,9 @@ If you prefer PostgreSQL, you can choose Azure Database for PostgreSQL to get a 
 
 You can choose from three deployment options:
 
-#### Azure Database for PostgreSQL Single Server
-
-The Single Server deployment option for PostgreSQL provides similar benefits as Azure Database for MySQL. You choose from three pricing tiers: Basic, General Purpose, and Memory Optimized. Each tier supports different numbers of CPUs, memory, and storage sizes—you select one based on the load you expect to support.
-
 #### Azure Database for PostgreSQL - Flexible Server
 
 Azure Database for PostgreSQL - Flexible Server provides similar benefits as MySQL Flexible Server. You can use it to provide the greatest levels of availability and convenient restarts.
-
-> [!NOTE]
-> At the time of writing, the Azure Database for PostgreSQL Flexible Server deployment option is in GA. It's a fully functional service, but doesn't yet offer a service-level agreement (SLA).
-
-#### Azure Database for PostgreSQL Hyperscale (Citus)
-
-Hyperscale (Citus) is a deployment option that scales queries across multiple server nodes to support large database loads. Your database is split across nodes. Different data is split into chunks based on the value of a partition key or sharding key. Consider using this deployment option for the largest database PostgreSQL deployments in the Azure Cloud.
 
 ## IaaS options for running MySQL, MariaDB, and PostgreSQL in Azure
 

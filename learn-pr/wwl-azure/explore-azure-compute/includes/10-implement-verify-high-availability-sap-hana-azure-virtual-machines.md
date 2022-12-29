@@ -346,7 +346,10 @@ The steps in this section use the following prefixes: **\[A\]**: The step applie
     meta is-managed="true" clone-node-max="1" target-role="Started" interleave="true"
     ```
 
-2. Next, create the HANA resources:
+2. Next, create the HANA resources.
+
+   > [!NOTE]
+   > This article contains references to the term *slave*, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.
 
     ```
     # Replace the bold string with your instance number, HANA system ID, and the front-end IP address of the Azure load balancer.

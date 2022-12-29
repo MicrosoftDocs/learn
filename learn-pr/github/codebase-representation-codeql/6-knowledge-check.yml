@@ -13,7 +13,7 @@ metadata:
 durationInMinutes: 1 # user input: the estimate time to complete the unit
 ###########################################################################
 ###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
 ###  - Questions are complete sentences ending with a question mark
 ###  - No true/false questions
 ###  - 3 answers per question

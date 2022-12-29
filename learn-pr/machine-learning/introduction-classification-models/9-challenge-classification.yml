@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 sandbox: true
-notebook: /learn/modules/introduction-classification-models/notebooks/9-challenge-classification.ipynb
+notebook: /training/modules/introduction-classification-models/notebooks/9-challenge-classification.ipynb

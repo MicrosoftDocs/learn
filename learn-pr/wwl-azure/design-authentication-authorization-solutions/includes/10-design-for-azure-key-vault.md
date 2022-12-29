@@ -1,39 +1,50 @@
-Storing and handling secrets, encryption keys, and certificates directly is risky, and every usage introduces the possibility of unintentional data exposure. Azure Key Vault provides a secure storage area for managing all your app secrets so you can properly encrypt your data in transit or while it's being stored.
+Direct storage and handling of secrets, encryption keys, and certificates is risky. Every usage introduces the possibility of unintentional data exposure. Azure Key Vault provides a secure storage area so you can manage all your app secrets and properly encrypt your data in transit or while it's being stored. 
 
-Azure Key Vault helps solve the following problems:
+Azure Key Vault can help you solve security problems for Tailwind Traders:
 
-- Secrets Management - Azure Key Vault can be used to Securely store and tightly control access to tokens, passwords, certificates, API keys, and other secrets
-- Key Management - Azure Key Vault can also be used as a Key Management solution. Azure Key Vault makes it easy to create and control the encryption keys used to encrypt your data.
-- Certificate Management - Azure Key Vault is also a service that lets you easily enroll, manage, and deploy public and private Transport Layer Security/Secure Sockets Layer (TLS/SSL) certificates for use with Azure and your internal connected resources.
+- **Manage secrets**. You can securely store and tightly control access to tokens, passwords, certificates, API keys, and other secrets.
 
-Azure Key Vault has two service tiers: Standard, which encrypts with a software key, and a Premium tier, which includes hardware security module(HSM)-protected keys.
+- **Manage keys**. Key Vault is a key management solution that lets you easily create and control encryption keys to encrypt corporate data.
 
-## Why use Azure Key Vault?
-- Separation of sensitive app information from other configuration and code, reducing the risk of accidental leaks.
-- Restricted secret access with access policies tailored to the apps and individuals that need them.
-- Centralized secret storage, allowing required changes to happen in only one place.
-- Access logging and monitoring to help you understand how and when secrets are accessed.
+- **Manage certificates**. Key Vault is also a service that makes it easy to enroll, manage, and deploy public and private Transport Layer Security/Secure Sockets Layer (TLS/SSL) certificates for use with Azure and internal connected resources.
 
-Key Vault allows you to securely access sensitive information from within your applications:
-- Keys, secrets, and certificates are protected without having to write the code yourself and you're easily able to use them from your applications.
-- You allow customers to own and manage their own keys, secrets, and certificates so you can concentrate on providing the core software features. In this way, your applications will not own the responsibility or potential liability for your customers' tenant keys, secrets, and certificates.
-- Your application can use keys for signing and encryption yet keeps the key management external from your application. 
-- You can manage credentials like passwords, access keys, and sas tokens by storing them in Key Vault as secrets.
-- Manage certificates. 
+### Things to know about Azure Key Vault
 
-## Design a solution using Keys and SAS tokens 
-A shared access signature (SAS) provides secure delegated access to resources in your storage account. With a SAS, you have granular control over how a client can access your data. For example:
-- What resources the client may access.
-- What permissions they have to those resources.
-- How long the SAS is valid. 
+As CTO for Tailwind Traders, you'd like to know how Azure Key Vault can enhance your current strategy. Consider these characteristics of Key Vault:
 
-### When to use a shared access signature
+- Key Vault is available in two service tiers:
+   - **Standard tier** lets you encrypt your data with a software key.
+   - **Premium tier** offers hardware security module (HSM)-protected keys.
 
-Use a SAS to give secure access to resources in your storage account to any client who does not otherwise have permissions to those resources.
+- You can build access policies with restricted secret access that are tailored to the apps and individuals that need them.
 
-A common scenario where a SAS is useful is a service where users read and write their own data to your storage account. In a scenario where a storage account stores user data, there are two typical design patterns:
-- Clients upload and download data via a front-end proxy service, which performs authentication. This front-end proxy service allows the validation of business rules. But for large amounts of data, or high-volume transactions, creating a service that can scale to match demand may be expensive or difficult.
-- A lightweight service authenticates the client as needed and then generates a SAS. Once the client application receives the SAS, it can access storage account resources directly. Access permissions are defined by the SAS and for the interval allowed by the SAS. The SAS mitigates the need for routing all data through the front-end proxy service.
+- Sensitive app information can be separated from other configuration and code, which reduces the risk of accidental leaks.
 
-Many real-world services may use a hybrid of these two approaches. For example, some data might be processed and validated via the front-end proxy. Other data is saved and/or read directly using SAS.
+- Centralized secret storage allows required changes to happen in only one place.
 
+- Logging and monitoring in Key Vault helps you understand how and when secrets are accessed.
+
+- Key Vault provides secure access to sensitive information from within your apps:
+   - Keys, secrets, and certificates are protected without writing extra code, and you can use these assets from your apps.
+   - Customers can own and manage their own keys, secrets, and certificates. Your apps don't own the responsibility or potential liability for customer assets. You can concentrate on providing the core software features for Tailwind Traders apps. 
+   - Your app can use keys for signing and encryption while keeping key management external from the app. 
+   - You can manage credentials like passwords, access keys, and shared access signature tokens by storing them in Key Vault as secrets. 
+
+### Things to consider when using Azure Key Vault
+
+You're on your last step in planning how to implement authentication and authorization for Tailwind Traders. Consider how Azure Key Vault can be used to manage user passwords, certificates, API keys, and other secrets.
+
+- **Consider shared access signatures for clients**. Implement shared access signatures to provide secure delegated access to resources in your Tailwind Traders storage account. With Key Vault shared access signatures, you have granular control over how clients can access your data:
+   - Determine which resources the client can access.
+   - Define the client's permissions for those resources.
+   - Specify how long the client's shared access signature is valid. 
+
+- **Consider clients who don't have permissions to your resources**. Use shared access signatures to give secure access to resources in your storage account to any Tailwind Traders client who doesn't otherwise have permissions to those resources.
+
+- **Consider user read and write access to your storage account**. Enable users to read and write their own data to your Tailwind Traders storage account by using shared access signatures in Key Vault. In a scenario where a storage account stores user data, there are two typical design patterns:
+
+   - Clients upload and download data via a front-end proxy service that performs authentication. The front-end proxy service allows the validation of business rules. For large amounts of data, or high-volume transactions, creating a service that can scale to match demand might be expensive or difficult.
+
+   - A lightweight service authenticates the client as needed and then generates a shared access signature. After the client app receives the signature, the client can access storage account resources directly. Access permissions are defined by the signature and for the interval allowed by the signature. The signature mitigates the need to route all data through the front-end proxy service.
+
+- **Consider a hybrid approach**. Many real-world services can benefit from a hybrid approach for secure access. Some data might be processed and validated via the front-end proxy. Other data might be saved and read directly by using shared access signatures. Review your options to see if a hybrid approach is the best fit for Tailwind Traders.

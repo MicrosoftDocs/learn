@@ -44,4 +44,4 @@ Azure Stream Analytics is a fully managed serverless (PaaS) offering on Azure. Y
 Azure Stream Analytics can run in the cloud, for large-scale analytics, or run on IoT Edge for ultra-low latency analytics. Azure Stream Analytics uses the same query language on both cloud and the edge, enabling developers to build truly hybrid architectures for stream processing.
 
 > [!NOTE]
-> Additional service characteristics (such as cost, reliability, and performance) can be found here: [https://docs.microsoft.com/azure/stream-analytics/stream-analytics-introduction](/azure/stream-analytics/stream-analytics-introduction)
+> Additional service characteristics (such as cost, reliability, and performance) can be found here: [Welcome to Azure Stream Analytics](/azure/stream-analytics/stream-analytics-introduction)

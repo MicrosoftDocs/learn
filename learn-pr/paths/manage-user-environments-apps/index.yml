@@ -15,7 +15,7 @@ prerequisites: |
   *  Familiarity with Microsoft Azure and cloud concepts
 summary: |
   Learn how to plan for FSLogix, configure Cloud Cache, and implement OneDrive for Business for a multi-session environment. This learning path aligns with exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop.
-iconUrl: /learn/achievements/manage-user-environments-and-apps.svg
+iconUrl: /training/achievements/manage-user-environments-and-apps.svg
 levels:
 - intermediate
 roles:

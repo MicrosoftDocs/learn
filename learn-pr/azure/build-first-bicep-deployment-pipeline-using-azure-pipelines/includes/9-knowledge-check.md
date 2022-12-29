@@ -19,7 +19,7 @@ steps:
   - task: AzureResourceManagerTemplateDeployment@3
     inputs:
       connectedServiceName: ResearchSubscription
-      location: westus
+      location: westus3
       resourceGroupName: ResearchDevelopment
       csmFile: deploy/main.bicep
       overrideParameters: >

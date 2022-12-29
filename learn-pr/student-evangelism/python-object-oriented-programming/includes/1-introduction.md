@@ -20,4 +20,4 @@ After you complete this module, you'll be able to:
 - Python keywords
 - Knowing how to raise exceptions in Python
 
-You can use the learning path [Python for beginners](/learn/paths/beginner-python?azure-portal=true) to learn the basics of Python.
+You can use the learning path [Python for beginners](/training/paths/beginner-python?azure-portal=true) to learn the basics of Python.

@@ -16,11 +16,11 @@ Listeners also handle SSL certificates for securing your application between the
 
 A *routing rule* binds a listener to the back-end pools. A rule specifies how to interpret the hostname and path elements in the URL of a request, and direct the request to the appropriate back-end pool. A routing rule also has an associated set of HTTP settings. These settings indicate whether (and how) traffic is encrypted between Application Gateway and the back-end servers, and other configuration information such as:
 
-- Protocol (HTTP or HTTPS).
-- Session stickiness, to pass all requests in a client session to the same web server rather than distributing them across servers with load balancing.
-- Connection draining, to enable the graceful removal of servers from a back-end pool.
-- Request timeout period, in seconds.
-- Health probes, specifying a probe URL, time out periods, and other parameters used to determine whether a server in the back-end pool is available.
+- Protocol (HTTP or HTTPS)
+- Session stickiness, to pass all requests in a client session to the same web server rather than distributing them across servers with load balancing
+- Connection draining, to enable the graceful removal of servers from a back-end pool
+- Request timeout period, in seconds
+- Health probes, specifying a probe URL, time out periods, and other parameters used to determine whether a server in the back-end pool is available
 
 ### Back-end pools
 
@@ -51,7 +51,7 @@ If you don't configure a health probe, Application Gateway creates a default pro
 
 ## Application Gateway network requirements
 
-Application Gateway requires a virtual network in which to operate. You must create this virtual network and a dedicated subnet before setting up Application Gateway. Application Gateway uses a number of private addresses for internal use and for communicating with each instance if the gateway scales out. For example, If you plan on scaling out to four instances, create a /28 size subnet. If you're likely to scale to more instances, then create a bigger subnet. 
+Application Gateway requires a virtual network in which to operate. You must create this virtual network and a dedicated subnet before setting up Application Gateway. Application Gateway uses a number of private addresses for internal use and for communicating with each instance if the gateway scales out. For example, if you plan on scaling out to four instances, create a /28 size subnet. If you're likely to scale to more instances, then create a bigger subnet.
 
 You can expose the Application Gateway through a public IP address, or you can keep it private by only giving it a private IP inside virtual network. This is useful if you have internal sites that you would like to use Application Gateway to provide load balancing.
 

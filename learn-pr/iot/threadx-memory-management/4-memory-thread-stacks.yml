@@ -5,8 +5,10 @@ metadata:
   title: Memory thread stacks
   description: Memory thread stacks.
   ms.date: 01/27/2022
-  author: EdLamie
-  ms.author: liydu
+  author: timlt
+  ms.author: timlt
+  ms.reviewer: liydu
+  manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

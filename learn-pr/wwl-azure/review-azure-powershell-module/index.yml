@@ -3,7 +3,7 @@ uid: learn.wwl.review-azure-powershell-module
 metadata:
   title: Review Azure PowerShell module
   description: "This module explains the Azure PowerShell environment and the Az module for Windows PowerShell. It also explains how to manage Azure Active Directory (Azure AD) by using PowerShell modules."
-  ms.date: 07/29/2022
+  ms.date: 10/19/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -26,7 +26,7 @@ prerequisites: |
   *   Familiarity with CIM and WMI technologies.
   *   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell.
   *   Familiarity to administer remote computers with Windows PowerShell.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/review-azure-powershell-module.svg
 levels:
 - intermediate
 roles:
@@ -38,7 +38,6 @@ products:
 - azure-powershell
 - azure-virtual-machines
 - m365
-- vs-code
 subjects:
 - architecture
 - development-tools

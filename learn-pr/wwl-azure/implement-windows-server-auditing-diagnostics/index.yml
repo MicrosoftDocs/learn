@@ -18,7 +18,7 @@ prerequisites: |
   *   Working knowledge of common Windows Server management tools
   *   Some experience of typical Windows Server workloads
   *   Basic knowledge of Windows PowerShell
-iconUrl: /learn/achievements/6-implement-windows-server-auditing-and-diagnostics.svg
+iconUrl: /training/achievements/6-implement-windows-server-auditing-and-diagnostics.svg
 levels:
 - intermediate
 roles:

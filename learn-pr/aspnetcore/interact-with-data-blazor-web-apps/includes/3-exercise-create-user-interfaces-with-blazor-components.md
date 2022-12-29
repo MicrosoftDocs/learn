@@ -74,7 +74,7 @@ You'll now clone your teams' existing Blazor app project files from the [GitHub 
 
 ## Make some pizzas
 
-The **index.razor** component lets customers select and configure the pizzas they want to order. The component responds to the root URL of the app.
+The **Pages/Index.razor** component lets customers select and configure the pizzas they want to order. The component responds to the root URL of the app.
 
 The team has also created classes to represent the models in the app. Review the current `PizzaSpecial` model.
 
@@ -142,7 +142,7 @@ The team has also created classes to represent the models in the app. Review the
     The app should compile and run, and you'll see that nothing has changed. The code isn't being used by anything in the client-side HTML. Let's fix that.
 
 1. Select <kbd>Shift</kbd> + <kbd>F5</kbd> or select **Stop Debugging**.
-1. In **index.razor**, replace all the code in the `<h1>` tag with this code:
+1. In **Index.razor**, replace `<h1>Blazing Pizzas</h1>` with this code:
 
     ```razor
     <div class="main">

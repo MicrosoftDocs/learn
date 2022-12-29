@@ -50,7 +50,7 @@ In this exercise, you'll enrich the documentation a developer sees about your AP
                 {
                     Name = "Your name",
                     Email = string.Empty,
-                    Url = new Uri("https://www.microsoft.com/learn")
+                    Url = new Uri("https://learn.microsoft.com/training")
                 }
             });
     

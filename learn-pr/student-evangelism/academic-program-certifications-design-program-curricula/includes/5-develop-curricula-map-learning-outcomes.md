@@ -32,7 +32,7 @@ The course’s academic (conceptual and practical) learning outcomes are to:
 - Design and deploy core components of a cloud data storage solution (a practical outcome).
 - Critically evaluate and discuss cloud-based transactional, batch, and streaming data processing approaches (a conceptual outcome).
 
-These academic learning outcomes map broadly to the certification outcomes for the [DP-900 Microsoft Azure Data Fundamentals](/learn/certifications/exams/dp-900?azure-portal=true) course, shown in the next section. Mapping outcomes implements the DP-900 course learning materials as part of the academic course, and it provides coverage for embedding the DP-900 certification exam for academic credit. The course offers the certification exam for academic credit, and students have an opportunity to study both academic concepts and industry technologies as part of their learning experience.
+These academic learning outcomes map broadly to the certification outcomes for the [DP-900 Microsoft Azure Data Fundamentals](/certifications/exams/dp-900?azure-portal=true) course, shown in the next section. Mapping outcomes implements the DP-900 course learning materials as part of the academic course, and it provides coverage for embedding the DP-900 certification exam for academic credit. The course offers the certification exam for academic credit, and students have an opportunity to study both academic concepts and industry technologies as part of their learning experience.
 
 ### Curriculum mapping for certification outcomes
 

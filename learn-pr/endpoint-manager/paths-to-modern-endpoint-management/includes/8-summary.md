@@ -11,7 +11,7 @@ In this module, you learned how to:
 
 To learn more about Microsoft Endpoint Manager, continue to the next learning module in this series:
 
-- [Determine your endpoint management implementation](/learn/modules/determine-endpoint-implementation/)
+- [Determine your endpoint management implementation](/training/modules/determine-endpoint-implementation/)
 
 To evaluate Microsoft Intune and the Microsoft technologies available with Microsoft's Enterprise Mobility + Security (EMS), continue with the free trial:
 
@@ -26,6 +26,6 @@ To get expert guidance to help plan, deploy, and migrate your organization to Mi
 For additional information about Microsoft Endpoint Manager, see the following resources:
 
 - [Microsoft Endpoint Manager documentation](/mem/?azure-portal=true)
-- [Understand Microsoft Intune](/learn/modules/intro-to-endpoint-manager/3-intune/?azure-portal=true)
-- [Understand Microsoft Endpoint Configuration Manager](/learn/modules/intro-to-endpoint-manager/4-endpoint-configuration-manager/?azure-portal=true)
+- [Understand Microsoft Intune](/training/modules/intro-to-endpoint-manager/3-intune/?azure-portal=true)
+- [Understand Microsoft Endpoint Configuration Manager](/training/modules/intro-to-endpoint-manager/4-endpoint-configuration-manager/?azure-portal=true)
 - [Microsoft Intune fundamentals](/mem/intune/fundamentals/)

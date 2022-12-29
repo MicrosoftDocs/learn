@@ -5,8 +5,10 @@ metadata:
   title: The Hello World scenario
   description: Introduce the basics of Azure RTOS ThreadX system development.
   ms.date: 01/27/2022
-  author: EdLamie
-  ms.author: pacorte
+  author: timlt
+  ms.author: timlt
+  ms.reviewer: liydu
+  manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

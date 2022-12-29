@@ -1,4 +1,4 @@
-Software as a service (SaaS) providers, like the fitness company, often need to provision a SQL database for each customer; in our case, for each location. As a service provider, you'll need to react to unpredictable workloads, especially when storing customer data. You may not have visibility as to how quickly each client will grow, or when demand will spike.
+Software as a Service (SaaS) providers, like the fitness company, often need to provision a SQL database for each customer; in our case, for each location. As a service provider, you'll need to react to unpredictable workloads, especially when storing customer data. You may not have visibility as to how quickly each client will grow, or when demand will spike.
 
 ## How are database resources traditionally provisioned?
 

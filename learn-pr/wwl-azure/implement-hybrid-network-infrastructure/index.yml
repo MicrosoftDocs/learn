@@ -30,7 +30,7 @@ prerequisites: |
   - Security-related technologies (firewalls, encryption, multi-factor authentication)
   - Windows PowerShell scripting
   - Automation and monitoring
-iconUrl: /learn/achievements/implement-hybrid-network-infrastructure.svg
+iconUrl: /training/achievements/implement-hybrid-network-infrastructure.svg
 levels:
 - intermediate
 roles:

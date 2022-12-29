@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.explore-select-use-cases.when-use-autonomous-ai
+title: When to use an Autonomous AI solution
+metadata:
+  title: When to use an Autonomous AI solution
+  description: We explain which situations are good candidate to use Machine TEaching for Autonomous AI.
+  ms.date: 10/18/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-when-use-autonomous-ai.md)]

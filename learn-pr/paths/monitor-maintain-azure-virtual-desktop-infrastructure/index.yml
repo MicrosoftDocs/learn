@@ -15,7 +15,7 @@ prerequisites: |
   *  Knowledge of Microsoft Azure and cloud concepts
 summary: |
   Learn how to plan and implement a disaster recovery plan, configure automation, and optimize session host capacity for Azure Virtual Desktop. This learning path aligns with exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop.
-iconUrl: /learn/achievements/monitor-and-maintain-an-azure-virtual-desktop-infrastructure.svg
+iconUrl: /training/achievements/monitor-and-maintain-an-azure-virtual-desktop-infrastructure.svg
 levels:
 - intermediate
 roles:

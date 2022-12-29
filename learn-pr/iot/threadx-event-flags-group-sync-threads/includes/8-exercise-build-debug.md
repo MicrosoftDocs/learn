@@ -3,7 +3,7 @@
 This project contains two threads that are synchronized with an event flags group, and you get to observe the result of adding a third thread to be synchronized. We'll use Visual Studio, and you have a C project named `ProjectEventFlags.c` to modify.
 
 > [!TIP]
-> Refer to [Set up your environment](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) before getting started on the exercises in this module.
+> Refer to [Set up your environment](/training/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) before getting started on the exercises in this module.
 
 ## Use GitHub Codespaces
 
@@ -44,12 +44,12 @@ The attributes of Urgent thread and Routine thread remain the same.
 
 The building blocks unit has modifications you need to make; here's a summary:
 
-- [Declarations](https://review.docs.microsoft.com/learn/modules/threadx-event-flags-group-sync-threads/7-building-blocks#declarations):
+- [Declarations](/training/modules/threadx-event-flags-group-sync-threads/7-building-blocks#declarations):
   - Define the Important thread.
   - Add another counter, thread performance variables, and a prototype.
-- [Application definitions](https://review.docs.microsoft.com/learn/modules/threadx-event-flags-group-sync-threads/7-building-blocks#application-definitions): Create the Important thread.
-- [Important thread entry function](https://review.docs.microsoft.com/learn/modules/threadx-event-flags-group-sync-threads/7-building-blocks#important-thread-entry): Add the thread entry function for the Important thread.
-- [print_stats application timer function](https://review.docs.microsoft.com/learn/modules/threadx-event-flags-group-sync-threads/7-building-blocks#print-stats): Add a performance info get for the Important thread, and add three printf statements to display performance information for the Important thread
+- [Application definitions](/training/modules/threadx-event-flags-group-sync-threads/7-building-blocks#application-definitions): Create the Important thread.
+- [Important thread entry function](/training/modules/threadx-event-flags-group-sync-threads/7-building-blocks#important-thread-entry): Add the thread entry function for the Important thread.
+- [print_stats application timer function](/training/modules/threadx-event-flags-group-sync-threads/7-building-blocks#print-stats): Add a performance info get for the Important thread, and add three printf statements to display performance information for the Important thread
 
 After you've made your modifications, build and debug *ProjectEventFlags* project to produce output similar to this example:
 

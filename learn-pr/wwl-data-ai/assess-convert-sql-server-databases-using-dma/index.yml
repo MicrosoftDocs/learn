@@ -20,7 +20,7 @@ prerequisites: |
   - Experience administering SQL Server databases
   - Knowledge of SQL Server editions and versions
   - Understanding of upgrading SQL Server databases
-iconUrl: /learn/achievements/sqlserver/assess-and-convert-sql-server-databases-using-dma.svg
+iconUrl: /training/achievements/sqlserver/assess-and-convert-sql-server-databases-using-dma.svg
 levels:
 - beginner
 roles:

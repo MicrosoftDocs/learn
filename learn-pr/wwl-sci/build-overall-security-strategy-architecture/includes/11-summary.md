@@ -21,26 +21,23 @@ able to:
 
 ## Learn more with Azure documentation
 
--   [Microsoft Cybersecurity Reference Architectures - Security
-    documentation](https://docs.microsoft.com/security/cybersecurity-reference-architecture/mcra)
+-   [Microsoft Cybersecurity Reference Architectures - Security documentation](/security/cybersecurity-reference-architecture/mcra)
 
--   [Governance in the Microsoft Cloud Adoption Framework for Azure -
-    Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/)
+-   [Governance in the Microsoft Cloud Adoption Framework for Azure - Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/)
 
 -   [Balance competing priorities - Cloud Adoption Framework](/azure/cloud-adoption-framework/strategy/balance-competing-priorities)
 
 -   [Resiliency and continuity - Microsoft Service Assurance](/compliance/assurance/assurance-resiliency-and-continuity)
 
--   [Organize and manage multiple Azure subscriptions - Cloud Adoption
-    Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/organize-subscriptions)
+-   [Organize and manage multiple Azure subscriptions - Cloud Adoption Framework](/azure/cloud-adoption-framework/ready/azure-best-practices/organize-subscriptions)
 
 -   [Recommended policies for Azure services - Azure Policy](/azure/governance/policy/concepts/recommended-policies)
 
 
 ## Learn more with self-paced training
 
--   [Build a cloud governance strategy on Azure - Learn](/learn/modules/build-cloud-governance-strategy-azure/)
+-   [Build a cloud governance strategy on Azure](/training/modules/build-cloud-governance-strategy-azure/)
 
--   [Describe core Azure architectural components - Learn](/learn/modules/azure-architecture-fundamentals/)
+-   [Describe core Azure architectural components](/training/modules/azure-architecture-fundamentals/)
 
--   [Microsoft Cloud Adoption Framework for Azure - Learn](/learn/modules/microsoft-cloud-adoption-framework-for-azure/)
+-   [Microsoft Cloud Adoption Framework for Azure](/training/modules/microsoft-cloud-adoption-framework-for-azure/)

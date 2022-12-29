@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.explore-computers
+metadata:
+  title: Explore computers
+  description: "Explore computers"
+  ms.date: 12/16/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore computers
+summary: Describes the fundamentals of computers and how they work on both a small and large scale.
+abstract: |
+  After completing this module, you'll be able to:
+  - Identify the parts of a computer
+  - Explain how the parts of a computer work together
+  - Analyze small and large networks
+  - Describe the differences between authentication and authorization
+prerequisites: |
+  General knowledge of computer terminology.
+iconUrl: /learn/achievements/explore-computers.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- k-12-educator
+- student
+products:
+- return-to-school
+- return-to-workplace
+subjects:
+- cloud-computing
+units:
+- learn.wwl.explore-computers.introduction
+- learn.wwl.explore-computers.explore-what-personal-computer
+- learn.wwl.explore-computers.investigate-processor
+- learn.wwl.explore-computers.examine-random-access-memory
+- learn.wwl.explore-computers.understand-storage
+- learn.wwl.explore-computers.describe-networking
+- learn.wwl.explore-computers.research-data-centers-cloud-computing
+- learn.wwl.explore-computers.inspect-directories-authorization
+- learn.wwl.explore-computers.knowledge-check
+- learn.wwl.explore-computers.summary
+badge:
+  uid: learn.wwl.explore-computers.badge

@@ -15,7 +15,7 @@ abstract: |
   - Learn what endpoints are and what Microsoft Endpoint Manager can do for you and your organization.
   - Learn about the different products, services, and capabilities that encompass Microsoft Endpoint Manager.
 prerequisites: None
-iconUrl: /learn/achievements/intro-to-endpoint-manager.svg
+iconUrl: /training/achievements/intro-to-endpoint-manager.svg
 ratingEnabled: true
 levels:
 - beginner

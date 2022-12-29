@@ -242,7 +242,7 @@ Now you can view the contents of the `world` database.
    | CHN  | China                |
    | CYP  | Cyprus               |
    | GEO  | Georgia              |
-   | HKG  | Hong Kong            |
+   | HKG  | Hong Kong SAR        |
    | IDN  | Indonesia            |
    | IND  | India                |
    | IRN  | Iran                 |

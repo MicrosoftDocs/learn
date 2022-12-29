@@ -19,7 +19,7 @@ abstract: |
   - Create alerts that fire when errors occur.
 prerequisites: |
   Before starting this module, you should have experience of programming with Transact-SQL.
-iconUrl: /learn/achievements/transact-sql-error-handling.svg
+iconUrl: /training/achievements/transact-sql-error-handling.svg
 levels:
 - advanced
 roles:

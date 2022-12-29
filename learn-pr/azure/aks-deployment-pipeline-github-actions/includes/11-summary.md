@@ -2,7 +2,7 @@ Your company was experiencing a huge delay in simple day-to-day operations like 
 
 By using these concepts, you were able to automate image building and application deployment. First, you created a workflow that triggers when a developer on your team pushes a code change to the main branch. The workflow builds and pushes the application image to the company's Azure Container Registry instance. Then, when someone on your team creates a release out of that push, a new pipeline triggers and deploys the application to the AKS cluster without manual effort.
 
-Without this solution, your team would be losing time by manually building and deploying application images for every new feature on the website. In the long run, you've saved the company thousands of dollars in time.
+Without this solution, your team would be losing time by manually building and deploying application images for every new feature on the website. In the end, you've saved the company thousands of dollars in time.
 
 ## Clean up resources
 
@@ -29,25 +29,25 @@ In this module, you created resources by using your Azure subscription. The foll
 
 1. Scroll down and select the red **Delete this repository** button. To confirm the deletion, enter the full name of the repository.
 
-1. To delete the PAT created previously, select your profile photo, then click **Settings**.
+1. To delete the PAT created previously, select your profile photo, then select **Settings**.
 
 1. Select **Developer settings**.
 
 1. Select **Personal access tokens**.
 
-1. Select **Delete**. When the pop-up window appears, select **I understand, delete this token**
+1. Select **Delete**. When the pop-up window appears, select **I understand, delete this token**.
 
 ## Learn more
 
 To learn more about Azure Kubernetes Service and GitHub Actions, see the following articles and Microsoft Learn modules:
 
-- [AKS documentation on Microsoft Docs](/azure/aks/?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
-- [Introduction to AKS](/learn/modules/intro-to-azure-kubernetes-service/?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
+- [AKS documentation](/azure/aks/?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
+- [Introduction to AKS](/training/modules/intro-to-azure-kubernetes-service/?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
 - [Integrate Azure Container Registry with AKS](/azure/aks/cluster-container-registry-integration?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
 - [Deploy an AKS cluster](/azure/aks/tutorial-kubernetes-deploy-cluster?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
-- [Introduction to GitHub](/learn/modules/introduction-to-github/)
-- [Automating tasks by using GitHub Actions](/learn/modules/github-actions-automate-tasks/)
-- [CI with GitHub Actions](/learn/modules/github-actions-ci/)
+- [Introduction to GitHub](/training/modules/introduction-to-github/)
+- [Automating tasks by using GitHub Actions](/training/modules/github-actions-automate-tasks/)
+- [CI with GitHub Actions](/training/modules/github-actions-ci/)
 - [What is a Docker image](https://docs.docker.com/storage/storagedriver/#images-and-layers)
 - [Helm official website](https://helm.sh)
 - [Helm official docs to create charts](https://helm.sh/docs/chart_template_guide/getting_started/)

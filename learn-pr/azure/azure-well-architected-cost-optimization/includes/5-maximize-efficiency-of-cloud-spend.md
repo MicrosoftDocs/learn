@@ -16,13 +16,13 @@ The following illustration shows why an on-premises infrastructure can't handle 
 
 ![An illustration that shows disadvantages of using on-premises infrastructure.](../media/5-cloud-computing-patterns.png)
 
-In an efficient architecture, resources are provisioned to match the demand. If a virtual machine is less than 10 percent utilized the majority of the time, you're wasting resources, both in compute and cost. Conversely, a virtual machine that is running 90 percent utilized is using the majority of the available resources, and is an efficient use of money.
+In an efficient architecture, resources are provisioned to match the demand. If a virtual machine is less than 10 percent utilized the majority of the time, you're wasting resources both in compute and cost. Conversely, a virtual machine that's running 90 percent utilized is using the majority of the available resources, and is an efficient use of money.
 
 Running a system at 100 percent utilization runs the risk of introducing performance issues. It's important to ensure that maximizing efficiency doesn't negatively affect the performance of your system. Demand is rarely constant, so adjusting resources when possible to match demand is important to ensure efficiency.
 
 ## Optimize IaaS costs
 
-When you're using infrastructure as a service (IaaS) resources such as virtual machines as part of your solution, the cost associated with VMs is often the biggest portion of your spending. The compute costs are typically your largest expense, followed by storage costs. Taking time to optimize pay-for-what-you-use resources can have a large impact on the size of your monthly bill.
+When you're using infrastructure as a service (IaaS) resources (such as virtual machines) as part of your solution, the cost associated with VMs is often the biggest portion of your spending. The compute costs are typically your largest expense, followed by storage costs. Taking time to optimize pay-for-what-you-use resources can have a large impact on the size of your monthly bill.
 
 Let's take a look at best practices to reduce your compute and storage costs.
 
@@ -60,9 +60,9 @@ You should always use the Azure controls to stop your VMs. Shutting down the OS 
 
 Azure Hybrid Benefit offers an additional way to optimize the costs of your Windows Server and SQL Server instances. It lets you use your licenses for your on-premises computers running Windows Server or SQL Server with Software Assurance as a discount toward the compute cost of these VMs. You can then reduce or eliminate the costs for Windows Server and SQL Server on enabled instances.
 
-Some virtual machines need to be up and running all the time. Perhaps you have a web application server farm for a production workload. Or maybe you have a domain controller that supports various servers on a virtual network. If you know with certainty that these virtual machines will run continuously throughout the coming year or longer, you can reduce your costs even more by purchasing a reserved instance.
+Some virtual machines need to be up and running all the time. Perhaps you have a web-application server farm for a production workload. Or maybe you have a domain controller that supports various servers on a virtual network. If you know with certainty that these virtual machines will run continuously throughout the coming year or longer, you can reduce your costs even more by purchasing a reserved instance.
 
-Azure Reserved Virtual Machine Instances (Azure RI) lets you purchase compute capacity for a one-year or three-year commitment. It offers you significant savings &mdash; up to 72 percent &mdash; when compared to pay-as-you-go compute resources.
+Azure Reserved Virtual Machine Instances (Azure RI) lets you purchase compute capacity for a one-year or three-year commitment. It offers you significant savings; up to 72 percent when compared to pay-as-you-go compute resources.
 
 The following illustration shows savings achieved when you combine your on-premises licenses with Azure Hybrid Benefit. It also shows savings achieved when you combine your on-premises licenses with both Azure Reserved Virtual Machine Instances and Azure Hybrid Benefit.
 
@@ -70,7 +70,7 @@ The following illustration shows savings achieved when you combine your on-premi
 
 ### Cost optimization for VM disk storage
 
-For workloads that don't require high reliability and performance disks, you can use the reduced-cost standard storage. For example, you might choose to use standard storage for your development and test environments that are not required to be an identical match for your production workloads.
+For workloads that don't require high reliability and performance disks, you can use the reduced-cost standard storage. For example, you might choose to use standard storage for your development and test environments that aren't required to be an identical match for your production workloads.
 
 Disks that aren't associated with a VM still incur storage costs, so you should make sure you don't have any orphaned disks remaining in your environment. If you've removed a VM but not its associated disks, you can reduce your storage costs by identifying and removing these orphaned disks from your environment.
 
@@ -78,7 +78,7 @@ You should also make sure that you don't have any orphaned snapshots remaining i
 
 ## Optimize PaaS costs
 
-Platform as a service (PaaS) services are typically optimized for costs over IaaS services. But there are opportunities to identify waste and optimize for minimal costs in your PaaS services as well. Let's look at ways to reduce Azure SQL Database and Azure Blob storage costs.
+Platform as a service (PaaS) services are typically optimized for costs over IaaS services, but there are opportunities to identify waste and optimize for minimal costs in your PaaS services as well. Let's look at ways to reduce Azure SQL Database and Azure Blob storage costs.
 
 ### Optimize Azure SQL Database costs
 
@@ -86,7 +86,7 @@ When creating an Azure SQL database, you have to select a server and decide on a
 
 For steady database loads, it's easy to optimize by selecting the appropriate tier size for the performance needs. But what if your database has unpredictable bursts or spikes in activity? When you're dealing with unpredictable workloads, elastic pools can help you reduce your costs.
 
-SQL Database elastic pools are a simple, cost-effective solution for managing and scaling several databases that have varying and unpredictable usage demands. The databases in an elastic pool are on a single Azure SQL Database server, and share a set number of resources at a set price. Pools are well suited for a large number of databases with specific utilization patterns. For a given database, this pattern is characterized by low average utilization with relatively infrequent utilization spikes.
+SQL Database elastic pools are a simple, cost-effective solution for managing and scaling several databases that have varying and unpredictable usage demands. The databases in an elastic pool are on a single Azure SQL Database server and share a set number of resources at a set price. Pools are well suited for a large number of databases with specific utilization patterns. For a given database, this pattern is characterized by low average utilization with relatively infrequent utilization spikes.
 
 The more databases you can add to a pool, the greater your savings become. The following illustration shows the capabilities of the three types of elastic database pools:
 
@@ -104,7 +104,7 @@ Blob Storage is a cost-effective way to store data, but as the amount of data gr
 
 Azure Storage offers three tiers for blob object storage:
 
-- **Hot access tier**: Highest storage costs but lowest access costs. This tier is optimized for storing data that's accessed often.
+- **Hot access tier**: Highest storage costs, but lowest access costs. This tier is optimized for storing data that's accessed often.
 
 - **Cool access tier**: Lower storage costs and higher access costs compared to hot storage. This tier is optimized for storing data that's infrequently accessed and stored for at least 30 days.
 

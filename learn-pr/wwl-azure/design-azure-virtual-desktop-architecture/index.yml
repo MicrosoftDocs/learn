@@ -19,7 +19,7 @@ abstract: |
   *   Recommendation subscriptions and management groups for Azure Virtual Desktop.
   *   Recommend a configuration for performance requirements.
 prerequisites: ""
-iconUrl: /learn/achievements/2-design-the-azure-virtual-desktop-architecture.svg
+iconUrl: /training/achievements/2-design-the-azure-virtual-desktop-architecture.svg
 levels:
 - intermediate
 roles:

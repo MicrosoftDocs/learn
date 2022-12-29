@@ -18,7 +18,7 @@ abstract: |
   - Call an API to test the applied policies
 prerequisites: | 
   - Familiarity with basic concepts of web APIs, such as operations and endpoints
-iconUrl: /learn/achievements/protect-apis-on-api-management.svg
+iconUrl: /training/achievements/protect-apis-on-api-management.svg
 levels:
 - beginner
 roles:

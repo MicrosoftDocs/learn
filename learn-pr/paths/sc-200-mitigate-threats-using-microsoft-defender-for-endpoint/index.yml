@@ -15,7 +15,7 @@ prerequisites: |
   - Understanding of Microsoft Defender like you could learn from learning path SC-200: Mitigate threats using Microsoft Defender
 summary: |
   Implement the Microsoft Defender for Endpoint platform to detect, investigate, and respond to advanced threats.  This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.
-iconUrl: /learn/achievements/mitigate-threats-using-microsoft-defender-for-endpoint.svg
+iconUrl: /training/achievements/mitigate-threats-using-microsoft-defender-for-endpoint.svg
 levels:
 - intermediate
 roles:

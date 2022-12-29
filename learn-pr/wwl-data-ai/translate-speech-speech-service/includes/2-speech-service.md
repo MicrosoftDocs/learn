@@ -14,5 +14,5 @@ You can view of these values on the **Keys and Endpoint** page for your resource
 >
 > See the following resources for more information:
 >
-> - [Migrate from Bing Speech](https://docs.microsoft.com/azure/cognitive-services/speech-service/how-to-migrate-from-bing-speech)
-> - [Migrate from Translator Speech API](https://docs.microsoft.com/azure/cognitive-services/speech-service/how-to-migrate-from-translator-speech-api)
+> - [Migrate from Bing Speech](/azure/cognitive-services/speech-service/how-to-migrate-from-bing-speech)
+> - [Migrate from Translator Speech API](/azure/cognitive-services/speech-service/how-to-migrate-from-translator-speech-api)

@@ -17,7 +17,7 @@ abstract: |
     - Publish the app and its API to Azure Static Web Apps
     - Integrate user authentication in an existing web app
     - Block unauthenticated users and allow only specific authentication providers
-iconUrl: /learn/achievements/publish-static-web-app-authentication.svg
+iconUrl: /training/achievements/publish-static-web-app-authentication.svg
 levels:
   - beginner
 roles:

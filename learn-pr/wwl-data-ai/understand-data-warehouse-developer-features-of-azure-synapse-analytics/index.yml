@@ -20,7 +20,7 @@ abstract: |
   - Encapsulate Transact-SQL logic with stored procedures
 prerequisites: |
   - Before taking this module, it is recommended that you complete Data Fundamentals.
-iconUrl: /learn/achievements/understand-data-warehouse-developer-features-of-azure-synapse-analytics.svg
+iconUrl: /training/achievements/understand-data-warehouse-developer-features-of-azure-synapse-analytics.svg
 levels:
 - intermediate
 roles:

@@ -8,7 +8,7 @@ Recall in the catching the bus sample, you'll use resources, including Azure SQL
 > [!NOTE]
 > If you completed the previous module of this learning path, you built the foundation of the architecture with Azure SQL Database, and you're redeploying that here. If you did not complete the previous module, everything you need will be completed during this exercise.
 
-You'll then deploy an empty Azure Function app and configure its yaml file and GitHub secrets for CI/CD. Setting up CI/CD with GitHub will automate the build process as you make changes in future exercises. Later in the module, you'll complete, publish, and monitor the Azure Function in action.
+You'll then deploy an empty Azure Function app and configure its yaml file and GitHub secrets for continuous integration and continuous delivery (CI/CD). Setting up CI/CD with GitHub will automate the build process as you make changes in future exercises. Later in the module, you'll complete, publish, and monitor the Azure Function in action.
 
 ## Configure your environment for development using Visual Studio Code
 
@@ -48,7 +48,7 @@ In order to complete the exercises, you'll need to configure your environment. I
 
 ## Deploy and configure Azure SQL Database using PowerShell
 
-In order to set up the database for the bus-catching scenario, you'll first need to deploy a database to work with. To deploy a database, you'll use the Azure Cloud Shell, which opened on the right side of this page when you activated the sandbox. The Azure Cloud Shell is also available through the Azure portal, and allows you to create and manage Azure resources. Azure Cloud Shell comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll use Azure PowerShell, but you can accomplish the same tasks with the Azure CLI. In one of the scripts, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
+In order to set up the database for the bus-catching scenario, you'll first need to deploy a database to work with. To deploy a database, you'll use the Azure Cloud Shell that's open on the right side of this page. The Azure Cloud Shell is also available through the Azure portal, and allows you to create and manage Azure resources. Azure Cloud Shell comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll use Azure PowerShell, but you can accomplish the same tasks with the Azure CLI. In one of the scripts, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
 
 These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, and region, because they won't be shown again.
 
@@ -61,7 +61,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     > [!TIP]
     > If you're not on a Windows device, you need to locate your IP address with another method. In your terminal, you can run `curl ifconfig.co`.
 
-1. Run the following code in Cloud Shell. 
+1. Run the following code in Cloud Shell.
 
     ```powershell
     # Collect password 
@@ -71,7 +71,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     $ipAddress = Read-Host "Please enter your IP address (include periods)"
     ```
 
-    1. When prompted, enter a **complex password** and press <kbd>Enter</kbd>. You'll be prompted to enter an IP address. Enter the IP address that you obtained in the preceding step and press <kbd>Enter</kbd>.
+1. When prompted, enter a **complex password** and press <kbd>Enter</kbd>. You'll be prompted to enter an IP address. Enter the IP address that you obtained in the preceding step and press <kbd>Enter</kbd>.
 
     > [!Note]
     > A **complex password** must consist of:
@@ -139,14 +139,14 @@ These scripts should take three to five minutes to complete. Be sure to note you
     > [!TIP]
     > If you want to learn more about the Serverless database that you are deploying and the various commands, you can review the first module in the associated learning path, which goes into the details of building the foundation of modern applications with Azure SQL Database.
 
-    If you have any issues or want to confirm the resources were deployed, you can review in the Azure portal.
+    If you have any issues or want to confirm the resources were deployed, you can review them in the Azure portal.
 
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
 1. In a text file, notepad, or on paper, determine the connection string for your Azure SQL Database. It will be something like `Server=<server-name>.database.windows.net,1433;Initial Catalog=bus-db;User Id=cloudadmin;Password=<your-password>;Connection Timeout=30;`
 
-1. In a browser, navigate to your forked repository for this module on GitHub (make sure you're signed in). It will be something like `https://github.com/<your-git-username>/serverless-full-stack-apps-azure-sql`.
+1. In a browser, navigate to your forked repository in GitHub for this module. Make sure that you're signed in to GitHub. It will be something like `https://github.com/<your-git-username>/serverless-full-stack-apps-azure-sql`.
 
 1. In the repository toolbar, select **Settings**.
 
@@ -215,8 +215,9 @@ These scripts should take three to five minutes to complete. Be sure to note you
     INSERT INTO dbo.[GeoFences] 
         ([Name], [GeoFence]) 
     VALUES
-        ('Crossroads', 0xE6100000010407000000B4A78EA822CF4740E8D7539530895EC03837D51CEACE4740E80BFBE630895EC0ECD7DF53EACE4740E81B2C50F0885EC020389F0D03CF4740E99BD2A1F0885EC00CB8BEB203CF4740E9DB04FC23895EC068C132B920CF4740E9DB04FC23895EC0B4A78EA822CF4740E8D7539530895EC001000000020000000001000000FFFFFFFF0000000003);
+        ('Crossroads', 'POLYGON ((-122.14797019958493 47.6330073774962,-122.1187877655029 47.63289169873832,-122.11861610412595 47.61518983198667,-122.14891433715819 47.61542126760543,-122.14797019958493 47.6330073774962))');
     INSERT INTO dbo.[MonitoredRoutes] (RouteId) VALUES (100113);
+    INSERT INTO dbo.[MonitoredRoutes] (RouteId) VALUES (100136);
     GO
     ```
 
@@ -265,7 +266,7 @@ Now that your database and GitHub repository are configured, it's time to deploy
     ```powershell
     $functionApp = New-AzFunctionApp -Name $azureFunctionName `
         -ResourceGroupName $resourceGroupName -StorageAccount $storageAccountName `
-        -FunctionsVersion 4 -RuntimeVersion 3.8 -Runtime python -Location $location
+        -FunctionsVersion 4 -RuntimeVersion 3.9 -Runtime python -Location $location
     ```
 
     ::: zone-end

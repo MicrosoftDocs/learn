@@ -1,4 +1,4 @@
-When you consider a move to the cloud, it's essential in your role as an Azure developer, solution architect, or administrator to know the fundamentals of how your network works. The next step in understanding the composition of a network is to take a detailed look at the interoperability of your network. This knowledge applies whether it's your organization's network or more extensive networks like the web. All networks are built on the same principles. 
+When you consider a move to the cloud, it's essential in your role as an Azure developer, solution architect, or administrator to know the fundamentals of how your network works. The next step in understanding the composition of a network is to take a detailed look at the interoperability of your network. This knowledge applies whether it's your organization's network, or more extensive networks like the web. All networks are built on the same principles. 
 
 In this unit, you'll learn about the main aspects of network communications and why networks are built by using the Transmission Control Protocol/Internet Protocol (TCP/IP). You'll understand the differences between Internet Protocol address standards. Finally, you'll explore subnetting, the Domain Name System (DNS), ports, and the use and role of private IP addresses.
 
@@ -35,7 +35,7 @@ Today, there are two Internet Protocol versions that work within networks.
 
 ### IPv4
 
-Internet Protocol version 4 was released in 1983 and is the standard for all packet-switch-based networks in use today. IPv4 uses a 32-bit address space that gives an upper limit of 4,294,967,296 (4.3 billion) unique logical IP addresses. A large number of these available IP addresses are reserved for a specific purpose, for example, private networks, local hosts, internet relays, documentation, and subnets.
+Internet Protocol version 4 was released in 1983, and is the standard for all packet-switch-based networks in use today. IPv4 uses a 32-bit address space that gives an upper limit of 4,294,967,296 (4.3 billion) unique logical IP addresses. A large number of these available IP addresses are reserved for a specific purpose; for example, private networks, local hosts, internet relays, documentation, and subnets.
 
 ### Structure of an IPv4 address
 
@@ -61,11 +61,11 @@ The Internet Protocol's local address space is split into five logical classes o
 | D | 224.0.0.0 | 239.255.255.255 | - | - | 268,435,456 | - |
 | E | 240.0.0.0 | 255.255.255.255 | - | - | 268,435,456 | - |
 
-For classes A, B, and C, the start and end IP addresses are reserved and shouldn't be used. Class D is reserved for multicast traffic only. Class E is reserved and can't be used on public networks, like the internet.
+For classes A, B, and C, the start and end IP addresses are reserved and shouldn't be used. Class D is reserved for multicast traffic only. Class E is reserved and can't be used on public networks like the internet.
 
-In the previous table, the last column is marked as a subnet mask. The subnet mask uses the same format of the IP address. But its purpose is to identify valid IP addresses in an IP range.
+In the previous table, the last column is marked as a subnet mask. The subnet mask uses the same format of the IP address, but its purpose is to identify valid IP addresses in an IP range.
 
-For example, assume you have an IP address range that starts at `192.168.0.1`, and you have a subnet of `255.255.255.0`.You'll apply the subnet mask in the following way. For each address segment value specified as 255 in the mask, the corresponding address segment is static. When you want to pick an IP address, you have to pick an address that matches `192.168.0`. Where the segment has a value of `0`, you're allowed to use any value between 0 to 255. A subnet mask of `255.255.255.0` gives an IP address range of `192.168.0.0` to `192.168.0.255`, which are valid values to select.
+For example, assume you have an IP address range that starts at `192.168.0.1`, and you have a subnet of `255.255.255.0`. You'll apply the subnet mask in the following way. For each address segment value specified as 255 in the mask, the corresponding address segment is static. When you want to pick an IP address, you have to pick an address that matches `192.168.0`. Where the segment has a value of `0`, you're allowed to use any value between 0 to 255. A subnet mask of `255.255.255.0` gives an IP address range of `192.168.0.0` to `192.168.0.255`, which are valid values to select.
 
 ### What is a subnet?
 

@@ -8,4 +8,4 @@ Check out these articles to learn more about Azure Cloud Shell.
 
 [Azure Cloud Shell Overview](/azure/cloud-shell/overview)
 
-[Azure Cloud Shell – Browser-Based Command Line | Microsoft Azure](https://azure.microsoft.com/features/cloud-shell/)
+[Azure Cloud Shell – Browser-Based Command Line](https://azure.microsoft.com/features/cloud-shell/)

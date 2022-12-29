@@ -4,8 +4,10 @@ metadata:
   title: Use Wait Abort to break thread suspension
   description: Learn how to use Wait Abort to break thread suspension in Azure RTOS ThreadX.
   ms.date: 01/27/2022
-  author: EdLamie
-  ms.author: liydu
+  author: timlt
+  ms.author: timlt
+  ms.reviewer: liydu
+  manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use Wait Abort to break thread suspension
@@ -18,10 +20,10 @@ abstract:  |
   - Use an application timer to compute and display the total number of cycles each thread completed, the average time for each cycle, and selected values provided by the thread_performance_info_get service.
   - Design and debug the ThreadX solution using a hands-on approach with GitHub Codespace or Visual Studio.
 prerequisites: |
-  - [Set up your environment](/learn/modules/introduction-azure-rtos/2-set-up-environment)
+  - [Set up your environment](/training/modules/introduction-azure-rtos/2-set-up-environment)
   - Working knowledge of C or C++, GitHub and Visual Studio
-  - Previous modules in this [learning path](/learn/paths/azure-rtos-threadx)
-iconUrl: /learn/achievements/iot/threadx-break-thread-suspension.svg
+  - Previous modules in this [learning path](/training/paths/azure-rtos-threadx)
+iconUrl: /training/achievements/iot/threadx-break-thread-suspension.svg
 levels:
 - beginner
 roles:

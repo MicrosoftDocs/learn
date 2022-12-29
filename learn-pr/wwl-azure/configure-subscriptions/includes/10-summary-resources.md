@@ -1,20 +1,17 @@
-Obtaining and managing Azure subscriptions is a common Administrator task. Effectively identifying and managing costs is also important.
+Azure Administrators commonly obtain and manage Azure subscriptions. Azure subscriptions help you effectively identify and manage costs for your organization, so you can provide services and resources for specific scenarios.
 
-You should now be able to:
+In this module, you learned about supported Azure regions, and how to locate Azure services. You reviewed the features and use cases for Azure subscriptions, and how to obtain subscriptions. You explored features and billing for different types of Azure subscriptions, and how to apply resource tagging. You discovered how Microsoft Cost Management can be used for cost analysis, and learned how to identify ways you can reduce your billing costs.
 
- -  Determine the correct region to locate Azure services.
- -  Identify features and usage cases for Azure subscriptions.
- -  Identify how to obtain an Azure subscription.
- -  Understand billing and features for different Azure subscriptions.
- -  Use the Cost Management product for cost analysis.
- -  Determine when to use resource tagging.
- -  Identify ways to reduce costs.
+## Learn more with Azure documentation
 
-## Learn more
+- Read more about [Microsoft Cost Management](/azure/cost-management-billing/cost-management-billing-overview) and billing for Azure.
 
-You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise.
+- Explore how to [create an additional Azure subscription](/azure/cost-management-billing/manage/create-subscription).
 
- -  [What is Cost Management+ Billing?](/azure/cost-management-billing/cost-management-billing-overview)
- -  [Create an additional Azure subscription](/azure/cost-management-billing/manage/create-subscription)
- -  [Learn - Plan and manage your Azure costs (Sandbox)](/learn/modules/plan-manage-azure-costs/)
- -  [Learn - Introduction to analyzing costs and creating budgets with Microsoft Cost Management](/learn/modules/analyze-costs-create-budgets-azure-cost-management/)
+## Learn more with self-paced training
+
+- Practice using [Microsoft Cost Management to analyze costs and create budgets](/training/modules/analyze-costs-create-budgets-azure-cost-management/).
+
+## Learn more with optional hands-on exercises
+
+- Plan and manage [your Azure costs (sandbox)](/training/modules/plan-manage-azure-costs/).

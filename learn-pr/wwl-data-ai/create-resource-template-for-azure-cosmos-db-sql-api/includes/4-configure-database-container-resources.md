@@ -29,7 +29,7 @@ resource Account 'Microsoft.DocumentDB/databaseAccounts@2021-05-15' = {
 
 ## Database resource
 
-This example of a **Microsoft.DocumentDB/databaseAccounts/sqlDatabases** resource configures a database resource, a slight difference then the JSON template reviewed in a previous unit.
+This example of a **Microsoft.DocumentDB/databaseAccounts/sqlDatabases** resource configures a database resource, a slight difference from the JSON template reviewed in a previous unit.
 
 Bicep also requires resources to define a **parent** property defining relationships as opposed to the verbose **dependsOn** property.
 

@@ -4,5 +4,5 @@ This module includes configuration files that define a [development container](h
 
 The dev container runs in one of two environments:
 
-* [Visual Studio Code and a supported Docker environment on your local machine](/learn/modules/use-docker-container-dev-env-vs-code/).
+* [Visual Studio Code and a supported Docker environment on your local machine](/training/modules/use-docker-container-dev-env-vs-code/).
 * [GitHub Codespaces](https://github.com/features/codespaces) (costs may apply).

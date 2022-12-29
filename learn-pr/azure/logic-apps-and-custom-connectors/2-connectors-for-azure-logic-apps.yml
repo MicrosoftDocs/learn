@@ -3,7 +3,7 @@ uid: learn.azure.logic-apps-and-custom-connectors.2-connectors-for-azure-logic-a
 title: Connectors for Azure Logic Apps
 metadata:
   title: Connectors for Azure Logic Apps
-  description: In this unit, you will learn about connectors and how they help you to orchestrate systems in a workflow.
+  description: In this unit, you'll learn about connectors and how they help you orchestrate data between services and systems in a workflow.
   ms.date: 04/11/2019
   author: ecfan
   ms.author: estfan

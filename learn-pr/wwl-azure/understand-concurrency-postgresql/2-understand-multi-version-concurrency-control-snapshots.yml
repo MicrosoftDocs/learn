@@ -4,7 +4,7 @@ title: Understand multi-version concurrency control (MVCC) and snapshots
 metadata:
   title: Understand multi-version concurrency control (MVCC) and snapshots
   description: "Understand multi-version concurrency control (MVCC) and snapshots"
-  ms.date: 06/22/2022
+  ms.date: 09/16/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial

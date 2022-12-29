@@ -41,7 +41,7 @@ Open **MainPage.xaml** and add a `WebView` control to the page:
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <WebView Source="https://docs.microsoft.com/learn/"/>
+        <WebView Source="https://learn.microsoft.com/training/"/>
     </Grid>
 </Page>
 ```
@@ -110,7 +110,7 @@ namespace UsingHtml.Uwp
         private void UseUrlButton_OnClick(object sender, RoutedEventArgs e)
         {
             // For HTML content hosted on the internet, you can simply use the URL.
-            WebView1.Navigate(new Uri("https://docs.microsoft.com/learn/"));
+            WebView1.Navigate(new Uri("https://learn.microsoft.com/training/"));
         }
     }
 }
@@ -197,7 +197,7 @@ namespace UsingHtml.Uwp
         private void UseUrlButton_OnClick(object sender, RoutedEventArgs e)
         {
             // For HTML content hosted on the internet, you can simply use the URL.
-            WebView1.Navigate(new Uri("https://docs.microsoft.com/learn/"));
+            WebView1.Navigate(new Uri("https://learn.microsoft.com/training/"));
         }
 
         private void BackButton_OnClick(object sender, RoutedEventArgs e)
@@ -353,7 +353,7 @@ namespace UsingHtml.Uwp
         private void UseUrlButton_OnClick(object sender, RoutedEventArgs e)
         {
             // For HTML content hosted on the internet, you can simply use the URL.
-            WebView1.Navigate(new Uri("https://docs.microsoft.com/learn/"));
+            WebView1.Navigate(new Uri("https://learn.microsoft.com/training/"));
         }
 
         private void BackButton_OnClick(object sender, RoutedEventArgs e)
@@ -447,7 +447,7 @@ Open **MainWindow.xaml** and add a `WebBrowser` control to the page:
         Height="450"
         Width="800">
     <Grid>
-        <WebBrowser Source="https://docs.microsoft.com/learn/" />
+        <WebBrowser Source="https://learn.microsoft.com/training/" />
     </Grid>
 </Window>
 ```
@@ -515,7 +515,7 @@ namespace UsingHtml.Wpf
         private void UseUrlButton_OnClick(object sender, RoutedEventArgs e)
         {
             // For HTML content hosted on the internet, use an absolute URI.
-            WebBrowser1.Navigate(new Uri("https://docs.microsoft.com/learn/", UriKind.Absolute));
+            WebBrowser1.Navigate(new Uri("https://learn.microsoft.com/training/", UriKind.Absolute));
         }
     }
 }
@@ -602,7 +602,7 @@ namespace UsingHtml.Wpf
         private void UseUrlButton_OnClick(object sender, RoutedEventArgs e)
         {
             // For HTML content hosted on the internet, use an absolute URI.
-            WebBrowser1.Navigate(new Uri("https://docs.microsoft.com/learn/", UriKind.Absolute));
+            WebBrowser1.Navigate(new Uri("https://learn.microsoft.com/training/", UriKind.Absolute));
         }
 
         private void BackButton_OnClick(object sender, RoutedEventArgs e)
@@ -759,7 +759,7 @@ namespace UsingHtml.Wpf
         private void UseUrlButton_OnClick(object sender, RoutedEventArgs e)
         {
             // For HTML content hosted on the internet, use an absolute URI.
-            WebBrowser1.Navigate(new Uri("https://docs.microsoft.com/learn/", UriKind.Absolute));
+            WebBrowser1.Navigate(new Uri("https://learn.microsoft.com/training/", UriKind.Absolute));
         }
 
         private void BackButton_OnClick(object sender, RoutedEventArgs e)
@@ -837,4 +837,3 @@ That brings us to the end of this introduction to using HTML in a WPF Windows ap
 ### Summary
 
 In this unit, you learned how to use HTML in a desktop application. You can either move on to the next unit or try the same thing by using the UI technology that you haven't tried. You'll find that UWP and WPF share a lot of features, including the same markup and coding languages, so you can reuse most of what you've learned and see which technology you prefer.
-

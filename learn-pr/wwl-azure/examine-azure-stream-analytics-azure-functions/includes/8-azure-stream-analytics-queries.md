@@ -523,4 +523,4 @@ In this example, the input stream includes the make of a car and the time when t
 
 The INTO clause tells Stream Analytics the outputs to write the data to from this statement. The first query is a pass-through of the data received to an output named ArchiveOutput. The second query does some simple aggregation and filtering, and it sends the results to a downstream alerting system, AlertOutput.
 
-The full Stream Analytics query language reference guide can be found here: [https://docs.microsoft.com/stream-analytics-query/stream-analytics-query-language-reference](/stream-analytics-query/stream-analytics-query-language-reference).
+The full Stream Analytics query language reference guide can be found here: [Stream Analytics Query Language Reference](/stream-analytics-query/stream-analytics-query-language-reference).

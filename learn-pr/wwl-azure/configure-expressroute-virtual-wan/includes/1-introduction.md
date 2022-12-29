@@ -6,7 +6,7 @@ You need to evaluate using ExpressRoute and Virtual WAN to provide these connect
 
 ## Skills measured
 
-ExpressRoute and Virtual WAN are part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+ExpressRoute and Virtual WAN are part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Configure and manage virtual networking (25–30%)
 

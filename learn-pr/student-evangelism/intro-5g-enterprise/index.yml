@@ -25,7 +25,7 @@ prerequisites: |
   - Azure Stack hardware and services (Azure Stack Edge, Azure Stack HCI)
   - Application services (Azure IoT Edge Runtime, Azure IoT Hub, Azure IoT Central, Azure Digital Twins)
 
-iconUrl: /learn/achievements/student-evangelism/introduction-5g-services-on-azure.svg
+iconUrl: /training/achievements/student-evangelism/introduction-5g-services-on-azure.svg
 
 badge:
   uid: learn.oxford.introduction-5g-services-on-azure.badge

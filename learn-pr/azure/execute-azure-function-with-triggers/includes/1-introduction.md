@@ -10,3 +10,14 @@ In this module, you will:
 - Create a timer trigger to invoke a function on a consistent schedule.
 - Create an HTTP trigger to invoke a function when an HTTP request is received.
 - Create a blob trigger to invoke a function when a blob is created or updated in Azure Storage.
+
+## Supported languages
+
+This module uses the Azure portal to create and test your function code. Functions supports in-portal development for the following languages:
+
+- C# Script (.csx)
+- JavaScript
+- Python
+- PowerShell
+
+Other languages such as Java, TypeScript, Go and Rust are supported by Azure Functions through local development tools. You can read more about the supported languages, tools, and features of Azure Functions in the [developer guide](/azure/azure-functions/functions-reference).

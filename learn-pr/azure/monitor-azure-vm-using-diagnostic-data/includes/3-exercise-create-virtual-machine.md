@@ -1,4 +1,4 @@
-When you run your virtual machine (VM) on Azure, you can view basic metrics without installing any additional software. You can quickly create a VM by using the Azure portal, the Azure CLI, or PowerShell. You can connect boot diagnostics when you create the VM.
+When you run your virtual machine (VM) on Azure, you can view basic metrics without installing any extra software. You can quickly create a VM by using the Azure portal, the Azure CLI, or PowerShell. You can connect boot diagnostics when you create the VM.
 
 You want to move to a new version of Ubuntu, so you deploy a new VM. You need to monitor only the basic metrics. So you're going to create only a VM and a storage account.
 
@@ -66,7 +66,7 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
 
 1. In the upper right, select the **Local Time: Last 24 hours (Automatic - 5 minutes)** setting, and under **Time Range**, change to **Last 30 minutes**, and select **Apply**.
 
-    You should now have a graph that looks something like the following:
+    You should now have a graph that looks something like the following screenshot:
 
     :::image type="content" source="../media/3-metric-graph.png" alt-text=" Screenshot that shows a graph of CPU usage and inbound traffic.":::
 
@@ -74,13 +74,13 @@ Azure collects this data without requiring you to install anything extra on Ubun
 
 ## Task 3: View boot diagnostics
 
-1. In the middle menu pane, under **Support + troubleshooting**, select **Boot diagnostics**.
+1. In the middle menu pane, under **Help**, select **Boot diagnostics**.
 
 1. In the upper menu bar, select **Settings**. The **Boot diagnostics** pane appears.
 
-1. Select **Settings**, select **Enable with managed storage account (recommended)**, and in the top menu bar, select **Save**.
+1. Under **Status**, select **Enable with managed storage account (recommended)**. In the top menu bar, select **Save**.
 
-1. After boot diagnostics successfully deploys, scroll to your left, and on the **Boot diagnostics** pane for your virtual machine, review the screenshot to verify that your virtual machine started correctly. You may need to select **Refresh** in the top menu bar for verification.
+1. After you receive the notification **Successfully updated boot diagnostic settings**, return to the **Boot diagnostics** pane for your virtual machine. Select **Refresh** in the top menu bar, and review the screenshot to verify that your virtual machine has started correctly.
 
     :::image type="content" source="../media/3-boot-diagnostics.png" alt-text=" Screenshot that shows the boot diagnostic image captured.":::
 

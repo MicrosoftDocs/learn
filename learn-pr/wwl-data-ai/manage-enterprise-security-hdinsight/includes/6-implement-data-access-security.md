@@ -21,7 +21,7 @@ POSIX level Access control for ADLS Gen2 file and folders can hence granted to H
 
 ## Azure storage firewalls
 
-Azure storage firewall uses the networking policy of “deny-all, permit-by-exception” to ensure only the whitelisted entities can gain access to the storage account. Storage firewalls can be configured to enable account access from a fixed trusted IP address or a predetermined trusted IP range. Ensure that the storage account can be accessed by trusted Microsoft services to enable capabilities like logging. You can enable Azure Firewall on your storage account from the Firewalls and virtual networks blade as depicted below. 
+Azure storage firewall uses the networking policy of “deny-all, permit-by-exception” to ensure only the allow listed entities can gain access to the storage account. Storage firewalls can be configured to enable account access from a fixed trusted IP address or a predetermined trusted IP range. Ensure that the storage account can be accessed by trusted Microsoft services to enable capabilities like logging. You can enable Azure Firewall on your storage account from the Firewalls and virtual networks blade as depicted below. 
 
 ![Azure Storage Firewalls](../media/20-azure-storage-firewalls.png)
 

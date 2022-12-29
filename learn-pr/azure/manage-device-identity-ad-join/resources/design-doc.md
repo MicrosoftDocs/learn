@@ -176,7 +176,7 @@ Conceptual content to include:
 - For scenario, solution is to use AD joined for Windows 10 machines. They can have on-premises AD with SSO & AD Connect set up. But that doesn't require the "Hybrid Azure AD joined" setup. They can bypass that and just join to Azure AD and not on-premises AD. It's easier to do it that way. Employees could still BYOD as long as they're Windows 10 devices and they want to sign in using their organizational account (and want to enroll/join the organization).
 
 - What is enterprise state roaming and why you'd set it up
-- What's Conditional Access and why you'd use this? There is some coverage as it relates to users  in module: [Secure your Azure resources with Conditional Access](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-conditional-access/)
+- What's Conditional Access and why you'd use this? There is some coverage as it relates to users  in module: [Secure your Azure resources with Conditional Access](https://learn.microsoft.com/training/modules/secure-azure-resources-with-conditional-access/)
 - End-user experience to join and then to sign in.
 
 

@@ -6,7 +6,7 @@ You must configure backup and restore policies that meet your company's regulato
 
 ## Skills measured
 
-Backup and recovery are part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Backup and recovery are part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Monitor and back up Azure resources (10–15%)
 
