@@ -8,7 +8,7 @@ To create a public IP address, configure the following settings:
 
 - **IP Version**: Select to create an **IPv4** or **IPv6** address, or **Both** addresses. The **Both** option creates two public IP addresses: an IPv4 address and an IPv6 address.
 
-- **SKU**: Select the SKU for the public IP address. The value must match the SKU of the Azure load balancer with which the address is used.
+- **SKU**: Select the SKU for the public IP address, including **Basic** or **Standard**. The value must match the SKU of the Azure load balancer with which the address is used.
 
 - **Name**: Enter a name to identify the IP address. The name must be unique within the resource group you select.
 
