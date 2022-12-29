@@ -16,4 +16,6 @@ To create a CI/CD pipeline, you can use Azure Pipelines, GitHub Actions or the C
 
 1. Analyze the failed load test runs to verify if the used baseline is still accurate or whether it needs to be adjusted.
 
-For a video that shows how to integrate Azure Load Testing and Azure Chaos Studio in your Azure CI/CD pipelines, see [Continuous validation with Azure Load Test and Azure Chaos Studio](/azure/architecture/framework/mission-critical/mission-critical-deployment-testing#demo-video-continuous-validation-with-azure-load-test-and-azure-chaos-studio).
+The following video shows how to integrate Azure Load Testing and Azure Chaos Studio in an Azure CI/CD pipeline.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Y50k]
