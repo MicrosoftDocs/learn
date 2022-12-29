@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.continuous-validate-test-mission-critical-workloads.create-validation-pipelines
-title: Create continuous validation pipeline
+title: Create a continuous validation pipeline
 metadata:
   title: Create a continuous validation pipeline
   description: Learn how to create a continuous validation pipeline.
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "How can a load test and chaos experiment be executed and orchestrated?"
+  - content: "How should a load test and chaos experiment be executed and orchestrated?"
     choices:
     - content: "Manually via the Azure portal"
       isCorrect: false

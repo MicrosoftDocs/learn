@@ -8,11 +8,11 @@ In continuous validation, you:
 - Define tests based on user and system flows, and their expected performance.
 - Establish baselines for different scenarios and stages.
 - Evaluate and adjust baselines and thresholds regularly.
-- Implement automated continuous validation pipelines.
+- Implement Azure services in automated pipelines.
 
 Microsoft Azure provides the following services to implement load testing and chaos engineering:
 
-- [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing) is a managed service used to generate synthetic traffic to test the application and underlying infrastructure and services.
+- [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing) is a managed service used to generate synthetic, real-world traffic to test the application and underlying infrastructure and services.
 - [Azure Chaos Studio](/azure/chaos-studio/chaos-studio-overview) is a managed service that provides chaos engineering capabilities to systematically inject failures into key components of the application.
 
 To validate the impact of application changes under realistic conditions at any time of the development cycle, you can run these two services simultaneously by embedding them in an Azure DevOps continuous integration and continuous delivery (CI/CD) pipeline.
@@ -21,7 +21,7 @@ To validate the impact of application changes under realistic conditions at any 
 
 Contoso Shoes migrated its deployments from an on-premises environment to the cloud two years ago. Although the company saw improvements in operations, keeping its availability and uptime within its service-level agreement continued to be a challenge. Earlier product launches resulted in outages and financial loss because the system couldn't meet the demands of increased user load.
 
-To prevent further avoidable outages, Contoso Shoes successfully applied the [Design principles of a mission-critical workload](/azure/architecture/framework/mission-critical/mission-critical-design-principles) in its main customer-facing web application, the store website.
+To prevent further avoidable outages, Contoso Shoes successfully applied the [design principles of a mission-critical workload](/azure/architecture/framework/mission-critical/mission-critical-design-principles) in its main customer-facing web application, the store website.
 
 As Contoso Shoes prepares for its next high-profile product launch, the company has decided to implement continuous validation in its pre-production environment so that it can identify potential issues as early as possible in the development cycle.
 

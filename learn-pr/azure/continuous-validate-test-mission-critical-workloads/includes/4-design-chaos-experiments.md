@@ -1,10 +1,10 @@
-Chaos engineering is a methodology that can improve your service's resiliency and its ability to react to failures. With chaos engineering, you conduct experiments in a controlled environment to identify issues that are likely to arise during development and deployment. To introduce chaos into a system, you deliberately inject real-world faults that cause system components to fail, and then observe what happens. Afterwards, you'll be able to respond quickly if this failure occurs under adverse conditions during production.
+In this unit, you'll learn about chaos engineering and how to use it to introduce faults to your system. *Chaos engineering* is a methodology that can improve your service's resiliency and its ability to react to failures. With chaos engineering, you conduct experiments in a controlled environment to identify issues that are likely to arise during development and deployment. To introduce chaos into a system, you deliberately inject real-world faults that cause system components to fail, and then observe what happens. Afterwards, you'll be able to respond quickly if this failure occurs under adverse conditions during production.
 
 [Azure Chaos Studio](/azure/chaos-studio/chaos-studio-overview) is a service that uses chaos engineering to help you measure, understand, and improve your cloud application and service resilience.
 
 ## Failure mode analysis
 
-When you design a chaos experiment, the first steps are known as *failure mode analysis*. It's a paper exercise in which you think of possible failures scenarios that each of these components could encounter:
+When you design a chaos experiment, the first step is to conduct a [*failure mode analysis (FMA)*](/azure/architecture/resiliency/failure-mode-analysis) of the application components. FMA will help you identify any possible failure scenarios that each of these components could encounter. To start:
 
 1. List all the components that are relevant for a given user flow. For example, the checkout user flow requires the front-end web application, the checkout Azure Function, and the Azure Cosmos DB database to all be available and functional.
 
@@ -29,19 +29,19 @@ When you design a chaos experiment, the first steps are known as *failure mode a
 
 | Risk                   | Impact/Mitigation/Comments                |
 | -------------------------------------------- | ------------------------------------------------------------ |
-| **Database/collection is renamed**     | This problem is caused by a mismatch in the configuration when you deploy. In this case, Terraform will overwrite the entire database, which could result in data loss. Prevent this situation by using [database/collection level locks](https://feedback.azure.com/forums/263030-azure-cosmos-db/suggestions/35535298-enable-locks-at-database-and-collection-level-as-w). <br />**The application won't be able to access any data**. The app configuration needs to be updated and its components restarted.                     |
+| **Database/collection is renamed**     | This problem is caused by a mismatch in the configuration when you deploy. In this case, Terraform will overwrite the entire database, which could result in data loss. Prevent this situation by using [database/collection level locks](https://feedback.azure.com/forums/263030-azure-cosmos-db/suggestions/35535298-enable-locks-at-database-and-collection-level-as-w). <br />During this time, the application won't be able to access any data until the app configuration is updated and its components restarted.                     |
 | **Write region outage**             | Contoso Shoes has configured their Azure Cosmos DB account with multiple regions and automatic failover. In case the primary region (or write region) encounters an outage, the service will automatically fail over and prevent any sustained issues in the application.                     |
-| **Extensive throttling due to lack of RUs** | Depending on how many RUs (the maximum setting for the auto scaler) you want to deploy and what load balancing to use on a global load balancer level, certain stamps might run hot on an Azure Cosmos DB utilization while others can still serve more requests. <br />Mitigate this error by using better load distribution to more stamps or add more RUs. |
+| **Extensive throttling due to lack of request units (RUs)** | Depending on how many RUs (the maximum setting for the auto scaler) you want to deploy and what load balancing to use on a global load balancer level, certain stamps might run hot on an Azure Cosmos DB utilization while others can still serve more requests. <br />Mitigate this error by using better load distribution to more stamps or add more RUs.  |
 
 ## Design a chaos experiment
 
 To design a chaos experiment, pick a few of the previously identified failures cases. You could pick a case based on the likelihood of it happening, or its possible impact.
 
-The goal of the experiment isn't to break the system, but rather to validate resiliency measures that you've implemented in your application. For an example hypothesis, run your app on App Service with zonal redundancy enabled. If all the underlying instances in a zone go down, you expect your app to still be running.
+The goal of the experiment isn't to break the system, but rather to validate resiliency measures that you've implemented in your application. For an example hypothesis, suppose you run your app on App Service with zonal redundancy enabled. If all the underlying instances in a zone were to go down, you'd expect your app to still be running.
 
 Use Chaos Studio to inject the faults into the relevant components. Chaos Studio offers a wide selection of [faults](/azure/chaos-studio/chaos-studio-fault-library) for you to choose from. However, because it doesn't cover everything, you might need to adjust your scenario, or find more tools to help you inject the failure.
 
-## Azure Cosmos DB outage and failover
+## Example: Azure Cosmos DB outage and failover
 
 For the first experiment, pick the **Write region outage** failure scenario of Azure Cosmos DB as described in the previous table. The hypothesis is: *A service-initiated failover shouldn't result in any sustained impact on our application*. If this hypothesis proves to be true, you've validated that the resiliency measure you've taken (set up replication to multiple regions) does indeed have the desired positive effect on our application reliability.
 
@@ -71,6 +71,8 @@ The following example is for an Azure Cosmos DB failover that runs for 10 minute
 
 After the experiment ends, Chaos Studio switches the write region back to its original value.
 
-Before you can inject a fault against an Azure resource, the Azure Cosmos DB resource must first have the corresponding **targets and capabilities** enabled. The [Targets and capabilities](/azure/chaos-studio/chaos-studio-targets-capabilities) setting controls which resources are enabled for fault injection and which faults can run against those resources. When you use targets and capabilities, and other security measures, you can avoid accidental or malicious fault injection with Chaos Studio.
+Before you can inject a fault against an Azure resource, the Azure Cosmos DB resource must first have its corresponding [targets and capabilities](/azure/chaos-studio/chaos-studio-targets-capabilities) setting enabled. This setting controls which faults can run against those resources that are enabled for fault injection. When you use targets and capabilities, and other security measures, you can avoid accidental or malicious fault injection with Chaos Studio.
 
-*Remember to target only a non-production environment with your experiments*. Although it's desirable to be able to skillfully inject faults into your production environment, doing so can be risky and requires experience and planning.
+> [!NOTE]
+>
+> Remember to target only a non-production environment with your experiments. Although it's desirable to be able to skillfully inject faults into your production environment, doing so can be risky and requires experience and planning.

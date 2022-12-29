@@ -2,7 +2,7 @@ To prevent performance bottlenecks and to increase confidence in new releases, C
 
 To implement continuous validation, the company:
 
-- Defined relevant user and system flows
+- Identified relevant user and system flows
 - Defined load tests for these flows to validate the expected performance and thresholds
 - Defined baselines for normal scenarios and special scenarios that were simulated during chaos experiments.
 - Embedded the continuous validation implementation into an automated pipeline.
@@ -27,7 +27,5 @@ Congratulations on completing this training module.
 - For more information about architecture solutions in Azure, see the [Microsoft Azure Well-Architected Framework guide](/azure/architecture/framework) in the Azure Architecture Center.
 
 - For more information about Mission-critical workloads on Azure, see [Mission-critical workloads](/azure/architecture/framework/mission-critical/mission-critical-overview).
-
-- See [Continuous validation with Azure Load Test and Azure Chaos Studio](/azure/architecture/framework/mission-critical/mission-critical-deployment-testing#demo-video-continuous-validation-with-azure-load-test-and-azure-chaos-studio) for a video of a CV implementation.
 
 - Start the [Mission Critical Well-Architected Review](/assessments/23513bdb-e8a2-4f0b-8b6b-191ee1f52d34) assessment to evaluate the state of your continuous validation solution in your existing mission-critical workload, and to take any recommended actions to improve it. Pay special attention to the *Mission Critical: Deployment and Testing* section.
