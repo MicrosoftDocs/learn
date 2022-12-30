@@ -4,7 +4,7 @@ When you're working on founding an early-stage startup, you might wonder:
 - How to manage your time and energy.
 - When to transition to building your business full time.
 
-This module will expand on these concepts and cover practical tips for building a high-performing startup team. It'll also discuss steps that you can take to more easily manage your team as it grows and to set up your company for success.
+This module will expand on these concepts and cover practical tips for building a high-performing startup team. It will also discuss steps that you can take to more easily manage your team as it grows and to set up your company for success.
 
 ## Learning objectives
 
