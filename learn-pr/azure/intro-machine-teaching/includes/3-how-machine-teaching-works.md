@@ -8,7 +8,7 @@ These are the three steps you follow to design a brain using the new AI paradigm
 2. **Orchestrate** how your skills/modules work together
 3. **Select** the best technology to implement each skill/module
 
-### 1. How to decompose a task into skills or modules
+### Step 1. How to decompose a task into skills or modules
 
 The building blocks of Autonomous AI are skills. Skills are the individual abilities you'll be asking your AI brain to learn.
 
@@ -36,7 +36,7 @@ There are three types of skills that you'll use in the visual language of brain 
 - **Action skills** that make real-time human-like decisions. They can be implemented with any of the Automated Intelligence set of technologies (control theory, optimization algorithms, expert systems, expert rules) when these technologies are the simplest that solve the task. And it can also be implemented using Deep Reinforcement Learning when the strategy has to be automatically learned.
 - **Selector skills** that act as supervisors deciding what action skill is best fit for each particular scenario. If the decision is straightforward, the selector is programmable (implemented with regular if-then lines of code). If the decision is fuzzy and difficult to make, it has to be learned and it will be implemented with Deep Reinforcement Learning.
 
-### 2. How to orchestrate skills/modules
+### Step 2. How to orchestrate skills/modules
 
 After identifying the skills to teach, we need to put them together in the brain design, by defining how the skills relate to each other.
 
@@ -57,7 +57,7 @@ The oval yellow shapes represent input and output to the brain. The leftmost ova
 
 During the learning/training phase, the actions take place in a simulator and generate feedback that is observed by the sensors as the environment state at the input node. When the brain is deployed into production, the actions take place in the real environment.
 
-Autonomous AI is a feedback controller. Hidden in every brain design is the feedback that comes back from the simulator or the real process (the input) that shows the consequences of the decisions the AI brain just made (the output) according to a goal or objective. 
+Autonomous AI is a feedback controller. Hidden in every brain design is the feedback that comes back from the simulator or the real process (the input) that shows the consequences of the decisions the AI brain just made (the output) according to a goal or objective.
 
 Here are the possible shapes of the modules that you can find in a brain design:
 
@@ -66,7 +66,7 @@ Here are the possible shapes of the modules that you can find in a brain design:
 - Diamonds represent selectors.
 - The lines in the brain diagram represent information that is passed from one module of the brain to the next.
 
-### 3. How to select the technology to implement each skill/module
+### Step 3. How to select the technology to implement each skill/module
 
 This is the phase of Machine Teaching where you map the skills in your brain to the best technology (the simplest) to solve that particular skill or task. The technologies that we can select include, first, those reviewed in the module of Automated Intelligence:
 
@@ -93,6 +93,8 @@ In the visual language of brain design, you'll color each module of your brain a
 - Orange: Math or control theory
 - Purple: Menus or optimization algorithms
 - Red: Manuals or expert systems and expert rules
+
+The following image shows the shape and color coding for the brain design modules.
 
 ![The screenshot shows color of the each module in brain design.](../media/module-brain-design.png)
 

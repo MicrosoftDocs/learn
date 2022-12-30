@@ -58,7 +58,7 @@ There are two types of GitHub actions: container actions and JavaScript actions.
 
 With **container actions**, the environment is part of the action's code. These actions can only be run in a Linux environment that GitHub hosts. Container actions support many different languages.
 
-**JavaScript actions** don't include the environment in the code. You'll have to specify the environment to execute these actions. You can run in a VM in the cloud or on-premises. JavaScript actions support Linux, macOS, and Windows environments.
+**JavaScript actions** don't include the environment in the code. You'll have to specify the environment to execute these actions. You can run these actions in a VM in the cloud or on-premises. JavaScript actions support Linux, macOS, and Windows environments.
 
 ### The anatomy of a GitHub action
 

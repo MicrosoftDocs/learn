@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.build-industrial-brain.knowledge-check-setup-account
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: A knowledge check for the discover machine teaching problem.
+  ms.date: 12/12/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-knowledge-check.md)] 
+quiz:
+  questions:
+  - content: "How many sensors or environment states the CSTR sample has?"
+    choices:
+    - content: "One"
+      isCorrect: false
+      explanation: "Incorrect. The CSTR sample doesn’t have one environment state or sensor."
+    - content: "Three"
+      isCorrect: false
+      explanation: "Incorrect. The CSTR sample doesn’t have three environment states or sensors."
+    - content: "Four"
+      isCorrect: false
+      explanation: "Incorrect. The CSTR sample doesn’t have four environment states or sensors."
+    - content: "Five"
+      isCorrect: true
+      explanation: "Correct. The CSTR sample has five environment states or sensors (Cr, Tr, Cref, Tref, Tc)."
+  - content: "What are the control actions of the CSTR sample?"
+    choices:
+    - content: "Cr"
+      isCorrect: false
+      explanation: "Incorrect. Cr is an environment state or sensor for the CSTR sample."
+    - content: "Delta Tc(dTc)"
+      isCorrect: true
+      explanation: "Correct. Delta Tc(dTc) is a control action of CSTR."
+    - content: "Cref"
+      isCorrect: false
+      explanation: "Incorrect. Cref is an environment state or sensor for the CSTR sample."
+    - content: "Tc"
+      isCorrect: false
+      explanation: "Incorrect. Tc is an environment state or sensor for the CSTR sample."
+  - content: "Select the strategies of the CSTR sample?"
+    choices:
+    - content: "Select Strategy"
+      isCorrect: false
+      explanation: "Incorrect. This is a selector module that chooses what strategy is best for each scenario."
+    - content: "Cr, Tr, Cref, Tref, Tc"
+      isCorrect: false
+      explanation: "Incorrect. These are environment states or sensors."
+    - content: "Steady state and modify concentration"
+      isCorrect: true
+      explanation: "Correct. Steady state and modify concentration are the two strategies of the CSTR sample."
+    - content: "Delta Tc(dTc)"
+      isCorrect: false
+      explanation: "Incorrect. Delta Tc(dTc) is the control action."

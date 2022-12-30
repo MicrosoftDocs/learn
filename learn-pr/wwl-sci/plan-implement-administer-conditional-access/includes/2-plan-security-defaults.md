@@ -1,6 +1,6 @@
 Managing security can be difficult with common identity-related attacks like password spray, replay, and phishing becoming more and more popular. Security defaults provide secure default settings that Microsoft manages on behalf of organizations to keep customers safe until organizations are ready to manage their own identity security story. Security defaults provide preconfigured security settings, such as:
 
- -  Requiring all users to register for Azure Active Directory Multi-Factor Authentication.
+ -  Requiring all users to register for Azure Active Directory Multifactor Authentication.
  -  Requiring administrators to perform multi-factor authentication.
  -  Blocking legacy authentication protocols.
  -  Requiring users to perform multi-factor authentication when necessary.
@@ -25,7 +25,7 @@ Microsoft security defaults are available to everyone. The goal is to ensure tha
 
 ### Unified multifactor authentication registration
 
-All users in your tenant must register for multifactor authentication (MFA) in the form of the Azure Active Directory (Azure AD) Multi-Factor Authentication. Users have 14 days to register for Azure AD Multi-Factor Authentication by using the Microsoft Authenticator app. After the 14 days have passed, the user won't be able to sign in until registration is completed. A user's 14-day period begins after their first successful interactive sign-in after enabling security defaults.
+All users in your tenant must register for multifactor authentication (MFA) in the form of the Azure Active Directory (Azure AD) Multifactor Authentication. Users have 14 days to register for multifactor authentication within Azure Active Directory (Azure AD), part of Microsoft Entra by using the Microsoft Authenticator app. After the 14 days have passed, the user won't be able to sign in until registration is completed. A user's 14-day period begins after their first successful interactive sign-in after enabling security defaults.
 
 ### Protecting administrators
 

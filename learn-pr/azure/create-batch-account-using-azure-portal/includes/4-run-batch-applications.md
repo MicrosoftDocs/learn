@@ -16,9 +16,9 @@ When you create a pool, you specify how many task slots are available per node b
 
 For example, if a pool's `taskSlotsPerNode` property is set to 16, the tasks running concurrently on a node will never require more than 16 slots. This setting means that, for example:
 
-- 2 tasks that require 8 slots can run at the same time because the number of slots equals 16 (2 * 8 = 16)
-- 3 tasks that require 5 slots can run at the same time because the number of slots is less than 16 (3 * 5 = 15)
-- 5 tasks that require 4 slots can't run at the same time because the number of slots is more than 16 (5 * 4 = 20)
+- Two tasks that require eight slots can run at the same time because the number of slots equals 16 (2 * 8 = 16)
+- Three tasks that require five slots can run at the same time because the number of slots is less than 16 (3 * 5 = 15)
+- Five tasks that require four slots can't run at the same time because the number of slots is more than 16 (5 * 4 = 20)
 
 At maximum, the `taskSlotsPerNode` property can be up to four times the number of vCPUs that a node has. To figure out how many vCPUs are available on a node, see [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes).
 

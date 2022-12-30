@@ -4,7 +4,7 @@
 
 ## Scenario
 
-In this lab, you'll use **Mend Bolt with Azure DevOps** to automatically detect vulnerable open source components, outdated libraries, and license compliance issues in your code. You'll use WebGoat, an intentionally insecure web application maintained by OWASP designed to illustrate common web application security issues.
+In this lab, you'll use **Mend Bolt (formerly WhiteSource) with Azure DevOps** to automatically detect vulnerable open source components, outdated libraries, and license compliance issues in your code. You'll use WebGoat, an intentionally insecure web application maintained by OWASP designed to illustrate common web application security issues.
 
 [Mend](https://www.mend.io/) is the leader in continuous open source software security and compliance management. Mend integrates into your build process, irrespective of your programming languages, build tools, or development environments. It works automatically, continuously, and silently in the background, checking your open source components' security, licensing, and quality against Mend constantly updated definitive database of open source repositories.
 
@@ -19,7 +19,7 @@ Azure DevOps integration with Mend Bolt will enable you to:
 
  -  Detect and remedy vulnerable open source components.
  -  Generate comprehensive open source inventory reports per project or build.
- -  Enforce open source license compliance, including dependencies’ licenses.
+ -  Enforce open source license compliance, including dependencies' licenses.
  -  Identify outdated open source libraries with recommendations to update.
 
 ## Objectives
@@ -39,7 +39,7 @@ After completing this lab, you'll be able to:
 During this lab, you'll complete the following exercises:
 
  -  Exercise 0: Configure the lab prerequisites.
- -  Exercise 1: Implement Security and Compliance in an Azure Pipeline using Mend Bolt.
+ -  Exercise 1: Implement Security and Compliance in an Azure DevOps pipeline using Mend Bolt.
 
 [:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button which will take you to the lab.":::
-](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M07_L15_Implement_Security_and_Compliance_in_an_Azure_Pipeline.html)
+](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M07_L16_Implement_Security_and_Compliance_in_an_Azure_Pipeline.html)
