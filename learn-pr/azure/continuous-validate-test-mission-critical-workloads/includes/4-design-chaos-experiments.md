@@ -1,8 +1,8 @@
-In this unit, you'll learn about chaos engineering and how to use it to introduce faults to your system. 
+In this unit, you'll learn about chaos engineering and how to use it to introduce faults in your system. 
 
 Chaos engineering is a methodology that can improve your service's resiliency and its ability to react to failures. With chaos engineering, you conduct experiments in a controlled environment to identify problems that are likely to arise during development and deployment. 
 
-To introduce chaos into a system, you deliberately inject real-world faults that cause system components to fail and then observe what happens. Afterward, you'll be able to respond quickly if this failure occurs under adverse conditions during production.
+To introduce chaos into a system, you deliberately inject real-world faults that cause system components to fail and then observe what happens. Afterward, you'll be able to respond quickly if this failure occurs under adverse conditions in production.
 
 [Azure Chaos Studio](/azure/chaos-studio/chaos-studio-overview) is a service that uses chaos engineering to help you measure, understand, and improve your cloud application and service resiliency.
 
@@ -35,13 +35,13 @@ The outcome of FMA can be tables like the following.
 
 | Risk                   | Impact/Mitigation/Comments                |
 | -------------------------------------------- | ------------------------------------------------------------ |
-| **Renaming of a database or collection**     | If a database or collection is renamed, there will be a mismatch in the configuration when you deploy. Terraform will then overwrite the entire database, which could result in data loss. The application won't be able to access any data until the app configuration is updated and its components are restarted. <br><br>Prevent this situation by using [database and collection-level locks](https://feedback.azure.com/forums/263030-azure-cosmos-db/suggestions/35535298-enable-locks-at-database-and-collection-level-as-w).                     |
+| **Renaming a database or collection**     | If a database or collection is renamed, there will be a mismatch in the configuration when you deploy. Terraform will then overwrite the entire database, which could result in data loss. The application won't be able to access any data until the app configuration is updated and its components are restarted. <br><br>Prevent this situation by using [database and collection-level locks](https://feedback.azure.com/forums/263030-azure-cosmos-db/suggestions/35535298-enable-locks-at-database-and-collection-level-as-w).                     |
 | **Write region outage**             | Contoso Shoes has configured its Azure Cosmos DB account with multiple regions and automatic failover. If the primary region (or write region) encounters an outage, the service will automatically fail over and prevent any sustained problems in the application.                     |
 | **Extensive throttling due to lack of request units (RUs)** | Depending on how many RUs (the maximum setting for the autoscaler) you want to deploy and what load balancing you want to use on a global load-balancer level, certain stamps might run hot on an Azure Cosmos DB utilization while others can still serve requests. <br><br>Mitigate this problem by using better load distribution to more stamps, or add more RUs.  |
 
 ## Design a chaos experiment
 
-To design a chaos experiment, pick a few of the previously identified failures cases. You could pick a case based on the likelihood that it will happen or its possible impact.
+To design a chaos experiment, pick a few of the previously identified failure cases. You could pick a case based on the likelihood that it will happen or its possible impact.
 
 The goal of the experiment is to validate resiliency measures that you've implemented in your application. For an example hypothesis, suppose you run your app on App Service with zone redundancy enabled. If all the underlying instances in a zone go down, you expect your app to still be running.
 

@@ -4,7 +4,7 @@ In this unit, you'll learn about user and system flows, why they're important, a
 
 A flow is the sum of activities and decisions that a user or system takes in an application to complete a task. 
 
-A *user flow* lets you determine how users interact with your application when they do things like sign in or edit a profile. For an example of user flow, we're using the checkout process for Contoso Shoes. This user flow requires the back-end inventory management to be available, and it doesn't require a search component. In this example, the page needs to load quickly because the company expects a large number of concurrent users.
+A *user flow* lets you determine how users interact with your application when they do things like sign in or edit a profile. This module uses the checkout process for Contoso Shoes as an example of a user flow. This user flow requires the back-end inventory management to be available, and it doesn't require a search component. In this example, the page needs to load quickly because the company expects a large number of concurrent users.
 
 A *system flow* is typically not user facing, but an outage or degradation of system flow components could have an impact on the user experience. For an example of system flow, consider an asynchronous activity that picks up orders from a database and generates shipping labels.
 
@@ -20,7 +20,7 @@ A load test can help identify the performance, performance limits, resource util
 - What's the sequence of API calls?
 - What test data should be used with the API calls?
 
-Follow these steps to design a load test, based on our checkout example:
+Follow these steps to design a load test, based on the checkout example:
 
 1. Start planning by identifying key scenarios, dependencies, expected usage, availability, performance, and scalability targets.
 
@@ -28,7 +28,7 @@ Follow these steps to design a load test, based on our checkout example:
 
    For example, in the checkout user flow, you could define that the average page load duration of each checkout step should be less than 500 milliseconds when up to 100 concurrent users are using the checkout at the same time.
 
-1. Use the threshold values to define a load test that generates realistic traffic for testing application performance, validating expected scale operations, and related activities. Use these same threshold values to develop a health model for the application for both testing and production.
+1. Use the threshold values to define a load test that generates realistic traffic for testing application performance, validating expected scale operations, and related activities. Use these same threshold values to develop a health model for the application that covers both testing and production.
 
 Ensure that the load test reflects every relevant user flow and system flow.
 

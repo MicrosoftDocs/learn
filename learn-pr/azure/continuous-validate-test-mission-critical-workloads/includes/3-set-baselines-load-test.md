@@ -2,7 +2,7 @@ In this unit, you'll learn about load tests and thresholds, and how to use them 
 
 ## Use Azure Load Testing to evaluate thresholds
 
-During the development phase, the performance of components and resource requirements are often not clearly known or understood. Load tests can help you identify the expected performance of the overall solution and its components, which include the scale-out behavior. They can also help you identify the thresholds to expect for building your baseline.
+During the development phase, the performance of components and resource requirements are often not clearly known or understood. Load tests can help you identify the expected performance of the overall solution and its components, including the scale-out behavior. They can also help you identify the thresholds to expect for building your baseline.
 
 Ask the following questions and reevaluate them regularly:
 

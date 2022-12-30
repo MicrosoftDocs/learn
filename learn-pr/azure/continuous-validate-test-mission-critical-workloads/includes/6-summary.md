@@ -1,13 +1,11 @@
-To prevent performance bottlenecks and to increase confidence in new releases, Contoso Shoes has decided to implement [continuous validation](/azure/architecture/guide/testing/mission-critical-deployment-testing). 
-
-To implement continuous validation, the company:
+To prevent performance bottlenecks and to increase confidence in new releases, Contoso Shoes decided to implement [continuous validation](/azure/architecture/guide/testing/mission-critical-deployment-testing). To accomplish that, the company:
 
 - Identified relevant user and system flows.
-- Defined load tests for these flows to validate the expected performance and thresholds.
+- Defined load tests for the flows to validate the expected performance and thresholds.
 - Defined baselines for normal scenarios and special scenarios that were simulated in chaos experiments.
 - Embedded the continuous validation process into an automated pipeline.
 
-The insights from a consistent and regular continuous validation process have increased confidence in new releases. They've also reduced the number of issues that have occurred during new release rollouts and normal operations.
+The newly gained insights from a consistent and regular continuous validation process have increased the company's confidence in new releases. Those insights have also reduced the number of problems in release rollouts and normal operations.
 
 ## Learning objectives
 

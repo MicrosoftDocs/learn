@@ -16,7 +16,7 @@ To create a CI/CD pipeline, you can use Azure Pipelines, GitHub Actions, or the 
 
    :::image type="content" source="../media/pipeline-with-chaos-and-load-zoom-in.png" border="false" alt-text="Diagram that shows a sample pipeline with chaos and load (zoomed in).":::
 
-1. To produce meaningful results, ensure that the load test runs and the chaos experiments overlap. To properly view the impact of the injected faults, ensure that the load test starts before the fault is injected. Continue to run the test for a while after the chaos experiment is finished.
+1. To produce meaningful results, ensure that the load test runs and the chaos experiments overlap. To properly view the impact of the injected faults, ensure that the load test starts before the faults are injected. Continue to run the test for a while after the chaos experiment is finished.
 
    :::image type="content" source="../media/deployment-testing-test-criteria.png" border="false" alt-text="Table that shows sample test criteria.":::
 

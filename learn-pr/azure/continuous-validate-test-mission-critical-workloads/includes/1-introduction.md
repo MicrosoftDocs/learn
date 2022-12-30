@@ -1,12 +1,12 @@
 *Continuous validation* is a concept of the *Azure mission-critical* design methodology. It helps ensure that a mission-critical solution stays operational, even when failures and exceptional situations happen. It involves testing changes and releases regularly in a controlled environment. Such tests can include using a sustained user load and injecting faults to test the workload's resiliency and ability to handle faults.
 
-Continuous validation is implemented as a set of processes and tools. It's embedded into a pipeline or workflow to enable developers and operations teams to run the validation regularly. For example, you can run continuous validation before every release or major code change. Continuous validation helps to ensure a solution's performance and resiliency before it enters production.
+Continuous validation is implemented as a set of processes and tools. It's embedded into a pipeline or workflow to enable developers and operations teams to run the validation regularly. For example, you can run continuous validation before every release or major code change. Continuous validation helps you ensure a solution's performance and resiliency before it enters production.
 
 In continuous validation, you:
 
 - Run tests under production-like conditions.
 - Define tests based on user and system flows, and their expected performance.
-- Establish baselines for different scenarios and stages.
+- Establish baselines for various scenarios and stages.
 - Evaluate and adjust baselines and thresholds regularly.
 - Implement Azure services in automated pipelines.
 

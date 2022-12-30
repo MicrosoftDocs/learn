@@ -34,7 +34,7 @@ quiz:
       explanation: "It's important to analyze the results of a failed load test and adjust the baseline if needed."
     - content: "Use a different load test tool."
       isCorrect: false
-      explanation: "A failed load test can indicate problems introduced as part of a recent change, problems with the underlying platform, or the need to adjust a baseline and a threshold."
+      explanation: "A failed load test can indicate problems introduced as part of a recent change, problems with the underlying platform, or the need to adjust a baseline or a threshold."
     - content: "Analyze the result and take action."
       isCorrect: true
-      explanation: "A failed load test can indicate problems introduced as part of a recent change, problems with the underlying platform, or the need to adjust a baseline and a threshold."
+      explanation: "A failed load test can indicate problems introduced as part of a recent change, problems with the underlying platform, or the need to adjust a baseline or a threshold."

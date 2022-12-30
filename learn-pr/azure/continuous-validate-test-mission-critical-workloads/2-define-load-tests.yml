@@ -32,11 +32,11 @@ quiz:
     - content: "No. Not all components have the same requirements for availability and performance."
       isCorrect: true
       explanation: "For example, an outage of a component that isn't user facing might not result in a service degradation."
-  - content: "Can a load test help to evaluate the expected performance of a user flow?"
+  - content: "Can a load test help you evaluate the expected performance of a user flow?"
     choices:
-    - content: "Yes. A load test can help to identify the performance of a user flow."
+    - content: "Yes. A load test can help identify the performance of a user flow."
       isCorrect: true
-      explanation: "A load test can help to identify the performance, performance limits, resource utilization, and optimal scaling behavior of components that build a user flow."
-    - content: "No. A load test can't help to identify the performance of a user flow."
+      explanation: "A load test can help identify the performance, performance limits, resource utilization, and optimal scaling behavior of components that build a user flow."
+    - content: "No. A load test can't help identify the performance of a user flow."
       isCorrect: false
-      explanation: "A load test can help to evaluate the expected performance of a user flow."
+      explanation: "A load test can help you evaluate the expected performance of a user flow."
