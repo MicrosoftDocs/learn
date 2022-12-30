@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/10/2022
+  ms.date: 12/30/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -16,7 +16,6 @@ content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: ""
-
   questions:
   - content: "Which storage solution replicates data to a secondary region, maintains six copies of the data, and is the default replication option?"
     choices:
@@ -29,7 +28,6 @@ quiz:
     - content: "Zone-redundant storage"
       isCorrect: false
       explanation: "Incorrect. Zone-redundant storage replicates Azure Storage data synchronously across three Azure availability zones in the primary region."
-
   - content: "The admin team needs to know the requirements for storage account names. To what extent does a storage account name need to be unique?"
     choices:
     - content: "The name must be unique within the containing resource group."
@@ -41,7 +39,6 @@ quiz:
     - content: "The name must be globally unique."
       isCorrect: true
       explanation: "Correct. The storage account name is used as part of the URI for API access, so it must be globally unique."
-
   - content: "What's the best storage account solution to support the requirements of the manufacturing division?"
     choices:
     - content: "Locally redundant storage"
