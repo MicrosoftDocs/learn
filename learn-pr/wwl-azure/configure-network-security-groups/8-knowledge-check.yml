@@ -32,21 +32,21 @@ quiz:
 
   - content: "How would you define a default inbound security rule?"
     choices:
-    - content: "Allow inbound coming from any virtual machine to any other virtual machine within the virtual network."
-      isCorrect: true
-      explanation: "Correct. By default, inbound security rules allow traffic from any virtual machine to any other virtual machine within the virtual network."
     - content: "Allow inbound coming from a virtual machine in another virtual network."
       isCorrect: false
       explanation: "Incorrect. This rule isn't a default inbound security rule."
     - content: "Allow traffic from any external source to any of the virtual machines."
       isCorrect: false
       explanation: "Incorrect. This rule isn't a default inbound security rule."
+    - content: "Allow inbound coming from any virtual machine to any other virtual machine within the virtual network."
+      isCorrect: true
+      explanation: "Correct. By default, inbound security rules allow traffic from any virtual machine to any other virtual machine within the virtual network."
 
   - content: "What's a valid service tag for network security group rules?"
     choices:
     - content: "`VirtualNetwork`"
       isCorrect: true
-      explanation: "Correct. `VirtualNetwork`` is a valid service tag. Service tags represent a group of IP addresses. Other service tags are `Internet`, `SQL, `Storage`, `AzureLoadBalancer`, and `AzureTrafficManager`."
+      explanation: "Correct. `VirtualNetwork` is a valid service tag. Service tags represent a group of IP addresses. Other service tags are `Internet`, `SQL`, `Storage`, `AzureLoadBalancer`, and `AzureTrafficManager`."
     - content: "`VPN Gateway`"
       isCorrect: false
       explanation: "Incorrect. `VPN Gateway` isn't a valid service tag."
