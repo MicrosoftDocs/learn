@@ -23,7 +23,7 @@ As a guide, you should aim to have no more than three syllables and no more than
 
 One of the best ways to make your company name memorable is to invent a word.
 
-It's generally best not to use a generic or descriptive term (such as travel, finance, photo, family, pet, store, groceries, or movie) because a lot of other company names are probably using the same term. Using generic terms can make it hard for you to stand out. It can also affect your search engine ranking.
+It's generally best not to use a generic or descriptive term (such as travel, finance, photo, family, pet, store, groceries, or movie) because many other company names are probably using the same term. Using generic terms can make it hard for you to stand out. It can also affect your search engine ranking.
 
 The best invented-word names tend to hint at what the company does without trying to describe it in literal terms.
 
@@ -81,7 +81,7 @@ Think about all the adjacent markets you might ultimately focus on. Does your pr
 
 If you wanted to start a company called Microsoft today, you wouldn't be able to have the domain microsoft.com (for obvious reasons). Maybe you could use a *domain hack* and try to register microsoft.io, microso.ft, getmicrosoft.com, hellomicrosoft.com, microsoft-app.com, or some other variant. However, most people would agree that this isn't a good strategy.
 
-A lot of startup founders compromise the strength of their brand from the outset by choosing a name for which the domain *\<their-company-name\>.com* isn't available, either because someone has registered it and is sitting on it, or (even worse) because an existing business is using that domain. Instead, they settle for an inferior domain such as *\<their-company-name\>.io* or *.biz*, or they use domain hacks like the examples cited earlier.
+Many startup founders compromise the strength of their brand from the outset by choosing a name for which the domain *\<their-company-name\>.com* isn't available, either because someone has registered it and is sitting on it, or (even worse) because an existing business is using that domain. Instead, they settle for an inferior domain such as *\<their-company-name\>.io* or *.biz*, or they use domain hacks like the examples cited earlier.
 
 Apart from causing confusion among users and making it harder for them to find your company, this brand compromise signals weakness. As pointed out by Y Combinator co-founder Paul Graham, [startups that choose a marginal domain are often viewed as marginal companies](http://paulgraham.com/name.html?azure-portal=true).
 
