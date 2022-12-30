@@ -2,13 +2,13 @@ In this unit, you'll learn about user and system flows, why they're important, a
 
 ## User and system flows
 
-A flow is the sum of activities and decisions that a user or system will take in an application to complete a task. A *user flow* lets you determine how users interact with your application when they do things like sign in or edit a profile.
+A flow is the sum of activities and decisions that a user or system takes in an application to complete a task. 
 
-As an example of user flow, we're using the checkout process for Contoso Shoes. This user flow requires the back-end inventory management to be available, and it doesn't require a search component. In this example, the page needs to load quickly because the company expects a large number of concurrent users.
+A *user flow* lets you determine how users interact with your application when they do things like sign in or edit a profile. For an example of user flow, we're using the checkout process for Contoso Shoes. This user flow requires the back-end inventory management to be available, and it doesn't require a search component. In this example, the page needs to load quickly because the company expects a large number of concurrent users.
 
-A *system flow* is typically not user facing, but an outage or degradation of system flow components could have an impact on the user experience. As an example of system flow, consider an asynchronous activity that picks up orders from a database and generates shipping labels.
+A *system flow* is typically not user facing, but an outage or degradation of system flow components could have an impact on the user experience. For an example of system flow, consider an asynchronous activity that picks up orders from a database and generates shipping labels.
 
-Most applications have multiple flows. Each flow consists of various components. Because a component can appear in more than one flow, it's important to understand which flows are affected when component failures occur so that you can design meaningful load tests.
+Most applications have multiple flows. Each flow consists of various components. Because a component can appear in more than one flow, it's important to understand which flows are affected when component failures happen so that you can design meaningful load tests.
 
 ## Define a load test and its threshold values
 
@@ -30,7 +30,7 @@ Follow these steps to design a load test, based on our checkout example:
 
 1. Use the threshold values to define a load test that generates realistic traffic for testing application performance, validating expected scale operations, and related activities. Use these same threshold values to develop a health model for the application for both testing and production.
 
-Ensure that the load test reflects every relevant user and system flow.
+Ensure that the load test reflects every relevant user flow and system flow.
 
 ## Implement load testing
 
