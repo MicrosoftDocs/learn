@@ -13,4 +13,4 @@ metadata:
   ms.contributors: antoniomanug
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-aca.md)]
+  [!include[](includes/5-exercise-rg-postgres.md)]

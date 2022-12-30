@@ -17,11 +17,11 @@ quiz:
   - content: "Which service allows developers to scaffold the structure of a Quarkus application?"
     choices:
     - content: "Maven"
-      isCorrect: false
-      explanation: "Maven is a build tool that allows you to configure dependencies and deploy applications."
-    - content: "Spring Initializr"
       isCorrect: true
-      explanation: "Correct. Spring Initializr is a web application that generates a Quarkus project structure for you."
+      explanation: "Maven is a build tool that allows you to configure dependencies and deploy applications."
+    - content: "Code Quarkus"
+      isCorrect: true
+      explanation: "Code Quarkus is a web application that generates a Quarkus project structure for you."
     - content: "The Azure CLI"
       isCorrect: false
       explanation: "The Azure CLI is a command-line interface that you can use to create and manage Azure resources."

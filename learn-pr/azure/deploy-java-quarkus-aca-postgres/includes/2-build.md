@@ -1,4 +1,4 @@
-In this unit, you'll learn how to create a Spring application, connect it to a PostgreSQL database, and run everything locally.
+In this unit, you'll learn how to create a Quarkus application, connect it to a PostgreSQL database, and run everything locally. Later on
 
 ## Introduction to Azure Container Apps
 
@@ -36,4 +36,6 @@ az account show
 In this module, you use the Azure CLI to spin up the Azure Container Apps and the Azure Database for PostgreSQL instance. Access the Azure CLI from a terminal or through Visual Studio Code. Or you can access it from [Azure Cloud Shell](https://azure.microsoft.com/get-started/azure-portal/cloud-shell). This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
 
 You'll use the Maven package manager to bootstrap your project and pull in dependencies. Maven also provides the tools you need to configure and deploy your project to Azure Container Apps by using the Azure Web Apps plug-in.
+
+You will use Docker to run and test the application locally with a PostgreSQL database.
 
