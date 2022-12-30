@@ -2,7 +2,7 @@ Choosing a great name for your startup is hard. It can seem like all the good na
 
 When you're a startup founder, the name of your company is one of the few things you're 100 percent in control of, so you might as well get it as close to right as possible.
 
-Unfortunately, a lot of founders pick a suboptimal name for their company. This introduces friction for customers who are trying to find and talk about the company. A suboptimal name makes it harder for the company to build a strong brand. In many cases, it causes the company to spend time and money later to change its name by rebranding.
+Unfortunately, many founders pick a suboptimal name for their company. This introduces friction for customers who are trying to find and talk about the company. A suboptimal name makes it harder for the company to build a strong brand. In many cases, it causes the company to spend time and money later to change its name by rebranding.
 
 In this module, we'll cover how to choose a great name from the beginning. That information includes the importance of tying your brand to a strong web presence in the form of a .com domain and relevant social handles.
 
