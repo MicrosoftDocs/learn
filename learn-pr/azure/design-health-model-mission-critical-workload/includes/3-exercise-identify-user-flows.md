@@ -1,81 +1,85 @@
-As Contoso Shoes begins to design its health model, its first step is to review the internal web application that company employees use. Contoso Shoes needs to understand the web application's  architecture, the key Azure services the application uses, and how the Azure services contribute to the overall user experience.
+In this exercise, your task is to design a layered health model for an example application. Start by reviewing the application architecture, the key Azure services the application uses, and how the Azure services contribute to the overall user experience.
 
-Your task in this exercise is to design the health model structure of an internal web application for Contoso Shoes. The structure consists of multiple layers, as described in [Layered health model](/training/modules/design-health-model-mission-critical-workload/2-what-is-health-modeling#layered-health-model).
+## Example application
 
-## Application
+The example for this exercise is the internal web application used by Contoso Shoes. The application allows employees to browse a catalog of products, update individual items in the catalog, and interact with other users by creating comments in the application.
 
-The internal web application that company employees use works like other common e-commerce websites, including the Contoso Shoes store website. In the internal web application, employees can browse a catalog of products, update individual items in the catalog, and interact with other users by creating comments in the application.
-
-The operations team at Contoso Shoes identifies two critical business requirements for the internal web application. Employees who use the internal web application must be able to:
+The operations team at Contoso Shoes has identified two critical business requirements for this application. Employees must be able to:
 
 - Interact with the catalog by displaying lists of items and by browsing items.
 - Create comments for individual items for other users to see.
 
-The health model should include these two critical operations, at a minimum.
+The health model should at least include those two critical operation.
 
 ## Architecture
-
-The following diagram shows the architecture of the Contoso Shoes internal web application. When you design your application architecture, ensure that you have a good understanding of the individual components and of their roles in how the system works.
 
 :::image type="content" source="../media/contoso-shoes-architecture.png" border="false" alt-text="Diagram that shows the architecture for the Contoso Shoes application.":::
 
 ### Components
 
-The Contoso Shoes internal web application architecture has the following components:
-
-- **Front-end internal web application**: The user interface of this workload, which runs on Azure Web Apps.
+- **Front-end internal web application**: The user interface of this workload, which runs on **Azure Web Apps**.
 
   - *Reads*: Catalog API, Azure Blob Storage
   - *Writes*: Requests coming from users, Catalog API
 
-- **Catalog API**: The API layer that the front-end web application uses for data operations on catalog items and comments. It doesn't do any database writes itself. Instead, a message is sent to an event hub to be processed asynchronously. This component is hosted on Azure Functions.
+- **Catalog API**: The API layer that the front-end web application uses for data operations on catalog items and comments. It doesn't do any database writes itself. Instead, a message is sent to an event hub to be processed asynchronously. This component is hosted on **Azure Functions**.
 
   - *Reads*: Azure Cosmos DB
   - *Writes*: Azure Event Hubs
 
-- **Background processor**: A component that asynchronously processes database updates. The processor doesn't have a public endpoint. This component is hosted on Azure Functions.
+- **Background processor**: A component that asynchronously processes database updates. The processor doesn't have a public endpoint. This component is hosted on **Azure Functions**.
 
   - *Reads*: Azure Event Hubs
   - *Writes*: Azure Cosmos DB
 
-- **Messaging bus**: The messaging bus uses Azure Event Hubs to pass messages between the Catalog API and the background processor.
+- **Messaging broker**: The messaging bus uses **Azure Event Hubs** to pass messages between the Catalog API and the background processor.
 
-- **Database**: Data is persisted in Azure Cosmos DB. The Catalog API reads from the database directly. Writes are handled by the background processor. Images are stored in Azure Blob Storage.
+- **Database**: Data is persisted in **Azure Cosmos DB**. The Catalog API reads from the database directly. Writes are handled by the background processor. Images are stored in Azure Blob Storage.
 
-- **Secrets**: The application components of this workload use secrets to authorize access. Secrets are stored in Azure Key Vault. The Catalog API and background processor use connection strings to access the database and Azure Event Hubs. The front-end web application uses an API key to call the Catalog API.
+- **Secrets**: The application components of this workload use secrets to authorize access. Secrets are stored in **Azure Key Vault**. The Catalog API and background processor use connection strings to access the database and Azure Event Hubs. The front-end web application uses an API key to call the Catalog API.
 
-- **Monitoring**: Application components send all data measurements to Application Insights, backed with a Log Analytics workspace. The same workspace is used to collect other logs and metrics for this workload. (For this exercise, consider this deployment to be single-stamp.)
+- **Monitoring**: Application components send all data measurements to **Application Insights**, backed with a **Log Analytics workspace**. The same workspace is used to collect other logs and metrics for this workload. (For this exercise, consider this deployment to be single-stamp.)
 
-## Layered health model structure
+## Divide the architecture in layers
 
-As described in [Layered health modeling](/training/modules/design-health-model-mission-critical-workload/2-what-is-health-modeling#layered-health-model), a health model usually has a layered structure. The process of modeling health is a top-down design activity that starts with an architectural exercise to define all user flows and to map dependencies between functional and logical components. The mapping process also implicitly maps the dependencies between Azure resources. For this exercise, our health model has three layers: user flows, application components, and Azure resources.
+As described in previous unit, a health model should be a layered structure. The process of modeling health is an architectural exercise to define all user flows, map dependencies between functional and logical components, and also dependencies between Azure resources. 
 
 Identifying user flows and building the health model is a conceptual exercise at this stage. Use pen and paper or a blank document to note the individual layers and to draw the structure.
 
+For this exercise, our health model has three layers: user flows, application components, and Azure resources.
+
 ### User flows
 
-Going from top to bottom in the layered health structure, think about what the *user flows* would be based on what you know about the application. Try to abstract the technical details and Azure services, and look at the user's perspective. What processes are critical? How do your employees use the application to achieve business goals?
+Starting at the top of the architecture, think about the possible *user flows* based on the expected functionality of the application. Try to abstract the technical details and Azure services, and look at the user's perspective. 
+- *What processes are critical?*
+- *How do your employees use the application to achieve business goals?*
 
-You should end up with at least two user flows in the top layer: *List catalog items* and *Add comment*. If you can think of more, include them in your health model.
+Based on the requirements identified by the operations team, you should have at least two user flows in the top layer: **List catalog items** and **Add comment**.
+
+If you can think of more, include them in your health model.
 
 ### Application components
 
-After you identify the user flows to include, move down to the middle layer in the health model. Begin by asking questions like, *"Which part of my application makes this flow work?"*, *"Which microservices or components contribute to fulfilling requests in this flow?"*, and *"Will this flow still work if this part fails?*"
+Move down to the middle layer that has the application components. Begin by asking questions, such as:
 
-The aim is to identify application components on a technical level that contribute to each user flow. These components can be APIs, background workers, microservices, and so on.
+- *"Which part of my application makes this flow work?"*
+- *"Which microservices or components contribute to fulfilling requests in this flow?"*
+- *"Will this flow still work if this part fails?*"
 
-This workload has at least three application components that contribute to the two user flows: a front end, a Catalog API, and a background processor.
+The aim is to identify application components at a technical level that contribute to each user flow. These components can be APIs, background workers, microservices, and so on.
+
+This workload has at least three application components that contribute to the two user flows: **front end**,  **Catalog API**, and a **background processor**.
 
 ### Azure resources
 
-The final and bottom layer of the health model contains the Azure resources that the individual application components use. If you look at the architecture diagram and read the component description, it should be clear what those resources are.
+The bottom layer contains the Azure resources used by  the individual application components. For this exercise, the components and resources are described in the [Components](#components) section. If you look at the architecture diagram and read the component description, it should be clear what those resources are.
 
 > [!NOTE]
 > A real-world scenario probably will have more services and have more complicated relationships between them. A key to building a successful health model is to identify which parts are critical and how each component contributes to the overall health of the system.
 
-## Final health model structure
+## Draw the final health model structure
 
-For the final step of this exercise, put the information you gathered in a graphical representation of the health model structure. It should look similar to the following diagram:
+Put the information you've gathered in a graphical representation of the health model structure. It should look similar to this diagram:
 
 :::image type="content" source="../media/layered-health-model.png" border="false" alt-text="Diagram that shows the architecture for this layered health model.":::
 
@@ -98,3 +102,4 @@ From top to bottom, the Contoso Shoes internal web application health model has 
   - **Azure Cosmos DB**
   - **Key Vault**
   - **Event Hubs**
+
