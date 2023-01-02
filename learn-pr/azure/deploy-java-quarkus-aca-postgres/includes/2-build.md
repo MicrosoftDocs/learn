@@ -1,4 +1,4 @@
-In this unit, you'll learn how to create a Quarkus application, connect it to a PostgreSQL database, and run everything locally. Later on
+In this unit, you'll learn how to create a Quarkus application, connect it to a PostgreSQL database, and run everything locally. Later on you will create an Azure Container Apps environment and deploy the application remotely.
 
 ## Introduction to Azure Container Apps
 
@@ -8,7 +8,7 @@ You want to create a Quarkus application that hosts its logic in Azure Container
 
 ### Introduction to Azure Database for PostgreSQL
 
-[Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/) is a relational database service based on the open-source Postgres database engine. It's a fully managed database-as-a-service that can handle mission-critical workloads with predictable performance, security, high availability, and dynamic scalability.
+[Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql) is a relational database service based on the open-source Postgres database engine. It's a fully managed database-as-a-service that can handle mission-critical workloads with predictable performance, security, high availability, and dynamic scalability.
 
 ## Introduction to Quarkus
 
@@ -25,7 +25,7 @@ You've decided to use Quarkus. This framework is self-hosted, and it provides su
 ## Create your resources by using the Azure CLI and Maven
 
 You can use the Azure CLI to create and manage Azure resources.
-It runs on Linux, macOS, and Windows. The CLI allows administrators and developers to run commands by using a terminal or command-line prompt (or script) instead of a web browser. 
+It runs on Linux, macOS, and Windows. The CLI allows administrators and developers to run commands by using a terminal or command-line prompt (or script) instead of a web browser.
 
 For example, to get the details of a subscription, you can use the following command:
 
@@ -38,4 +38,3 @@ In this module, you use the Azure CLI to spin up the Azure Container Apps and th
 You'll use the Maven package manager to bootstrap your project and pull in dependencies. Maven also provides the Quarkus and Dev Services dependencies to develop and easily test your Quarkus application.
 
 You will use Docker to run and test the application locally with a PostgreSQL database.
-

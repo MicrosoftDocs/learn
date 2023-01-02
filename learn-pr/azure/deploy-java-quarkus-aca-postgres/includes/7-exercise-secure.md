@@ -18,7 +18,7 @@ You should be able to see the content of the database. That means the database i
 
 ## Change the access of the PostgreSQL server
 
-Azure Database for PostgreSQL is secured by default. Its firewall usually do not allow incoming connections. But when we previously created the PostgreSQL server, we specified the `--public all` parameter to enable external access. This means that the firewall is open to the public. 
+Azure Database for PostgreSQL is secured by default. Its firewall usually do not allow incoming connections. But when we previously created the PostgreSQL server, we specified the `--public all` parameter to enable external access. This means that the firewall is open to the public.
 
 You can list the existing firewall rules with the following command:
 
@@ -66,4 +66,4 @@ To make sure the Quarkus application still has access to the database, retrieve 
 curl https://<value of $AZ_APP_URL>/api/todos
 ```
 
-This command returns the list of all to-do items from the database. The PostgreSQL server is still accessible from the Quarkus application but not from the outside. 
+This command returns the list of all to-do items from the database. The PostgreSQL server is still accessible from the Quarkus application but not from the outside.

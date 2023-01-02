@@ -6,7 +6,7 @@ Your company wanted to learn how to migrate its existing Quarkus applications to
 
 1. Create a PostgreSQL database, connect your Quarkus web application, and test it locally.
 
-1. Verify that your application works successfully. 
+1. Verify that your application works successfully.
 
 1. Add Maven Plugin for Azure Container Apps to your project, and then configure it interactively.
 

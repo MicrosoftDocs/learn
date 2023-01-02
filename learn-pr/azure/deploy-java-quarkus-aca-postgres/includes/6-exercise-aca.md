@@ -1,6 +1,6 @@
-In this unit, you'll create the Azure Container Apps environment using the Azure CLI. Then, you will containerise the Quarkus application into a Docker image, push it to Azure Registry and deploy the image to Azure Container Apps.
+In this unit, you'll create the Azure Container Apps environment using the Azure CLI. Then, you will containerize the Quarkus application into a Docker image, push it to Azure Registry and deploy the image to Azure Container Apps.
 
-## Set up the Dockerfile for the Quarkus application 
+## Set up the Dockerfile for the Quarkus application
 
 Azure Container Apps is for deploying containerized applications. So, the first thing we need to do is containerize the Quarkus application into a Docker image. This is quite easy to do as the Quarkus Maven plugin has already generated some Docker files under `src/main/docker`.
 Let's take one of these Docker file (`Dockerfile.jvm`), rename it to `Dockerfile` and move it to the root folder.
@@ -141,7 +141,7 @@ This command returns the list of all to-do items from the database:
 [{"id":1,"description":"configuration","details":"congratulations, you have set up your Quarkus application correctly!","done":true}]
 ```
 
-While you create new to-dos, you can stream the logs for your container with: 
+While you create new to-dos, you can stream the logs for your container with:
 
 ```bash
 az containerapp logs show \
@@ -150,7 +150,7 @@ az containerapp logs show \
     --follow
 ```
 
-Execute more curl commands, and you should see the logs scrolling in the terminal. 
+Execute more curl commands, and you should see the logs scrolling in the terminal.
 
 ```bash
 curl https://<value of $AZ_APP_URL>/api/todos

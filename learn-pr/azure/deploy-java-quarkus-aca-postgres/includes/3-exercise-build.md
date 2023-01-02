@@ -1,4 +1,4 @@
-In this unit, you'll create a basic Quarkus application. You'll use Maven to bootstrap the application and an integrated development environment (IDE) of your choice to edit the code. Use a terminal of your choice to run the code. You will use Docker to start a local PostgreSQL database so you can run and test your to-do application locally. 
+In this unit, you'll create a basic Quarkus application. You'll use Maven to bootstrap the application and an integrated development environment (IDE) of your choice to edit the code. Use a terminal of your choice to run the code. You will use Docker to start a local PostgreSQL database so you can run and test your to-do application locally.
 
 ## Generate the Quarkus application using Maven
 
@@ -7,10 +7,10 @@ There are different ways to generates a Quarkus project structure for you. You c
 You'll generate your application scaffold with several dependencies:
 
 * You will use the `resteasy` dependency to expose a REST endpoint,
-* the `jackson` dependency to serialize and deserialize JSON, 
-* the `hibernate` dependency to interact with the database, 
-* the `postgresql` dependency to connect to the PostgreSQL database, 
-* and the `docker` dependency to build a Docker image. 
+* the `jackson` dependency to serialize and deserialize JSON,
+* the `hibernate` dependency to interact with the database,
+* the `postgresql` dependency to connect to the PostgreSQL database,
+* and the `docker` dependency to build a Docker image.
 
 You don't need to specify Azure dependencies because you'll run your application locally first, and then deploy a containerized version of the application to Azure Container Apps.
 
@@ -165,7 +165,7 @@ public class TodoResource {
 
 ## Execute the application
 
-To execute the application in development mode, you need Docker to be up and running. That's because Quarkus detects that you need a PostgreSQL database (thanks to the PostgreSQL dependency `quarkus-jdbc-postgresql` in the `pom.xml`), downloads the PostgreSQL Docker image, and starts a container with the database. Then, it automatically creates the `Todo` table in the database. 
+To execute the application in development mode, you need Docker to be up and running. That's because Quarkus detects that you need a PostgreSQL database (thanks to the PostgreSQL dependency `quarkus-jdbc-postgresql` in the `pom.xml`), downloads the PostgreSQL Docker image, and starts a container with the database. Then, it automatically creates the `Todo` table in the database.
 
 Start the application by using the following command:
 
