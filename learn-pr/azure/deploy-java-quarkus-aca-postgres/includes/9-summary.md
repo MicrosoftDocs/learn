@@ -1,4 +1,4 @@
-Congratulations! You've deployed a Quarkus web application to Azure Container Apps.
+Congratulations! You've deployed a Quarkus application to Azure Container Apps.
 
 Your company wanted to learn how to migrate its existing Quarkus applications to Azure Container Apps. You followed these steps:
 

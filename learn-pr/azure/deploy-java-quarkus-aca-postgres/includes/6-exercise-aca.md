@@ -1,4 +1,4 @@
-In this unit, you'll create the Azure Container Apps environment using the Azure CLI. Then, you will containerise the Quarkus application into a Docker image and deploy it.
+In this unit, you'll create the Azure Container Apps environment using the Azure CLI. Then, you will containerise the Quarkus application into a Docker image, push it to Azure Registry and deploy the image to Azure Container Apps.
 
 ## Set up the Dockerfile for the Quarkus application 
 
@@ -59,6 +59,9 @@ This `az containerapp up` does several things:
 * It creates a new Azure Registry if it doesn't exist
 * It creates a new Log Analytics workspace if it doesn't exist
 * It builds the Docker image and pushes it to the Azure Registry
+* It deploys the Docker image to the Azure Container App environment
+
+The `az containerapp up` command takes a bit of time to execute, and you should see a similar output:
 
 ```bash
 Using resource group 'rg-azure-deploy-quarkus'
@@ -76,7 +79,7 @@ Your container app ca-azure-deploy-quarkus has been created and deployed! Congra
 
 ## Check the deployment
 
-You chan check the deployment has succeeded in several ways. The most obvious way is to check the Azure Portal. You should see the following:
+You chan check the deployment has succeeded in several ways. The most obvious way is to check the [Azure Portal](http://portal.azure.com). You should see the following:
 
 ![Screenshot showing the deployed application.](../media/azure-portal.png)
 
@@ -89,7 +92,7 @@ az resource list \
     --output table
 ```
 
-You should see the following output:
+You should see a similar output:
 
 ```bash
 Name                                ResourceGroup            Location    Type                                      
@@ -101,9 +104,9 @@ ca0ad52sfde7acr                     rg-azure-deploy-quarkus  eastus      Microso
 ca-azure-deploy-quarkus             rg-azure-deploy-quarkus  eastus      Microsoft.App/containerApps
 ```
 
-## Execute the Azure Container Apps application
+## Execute the deployed Quarkus application
 
-You can now execute the Azure Container Apps application. First, you need to get the URL of the application. You can get it by executing the following command:
+You can now execute the deployed Quarkus application. First, you need to get the URL of the application. You can get it by executing the following command:
 
 ```bash
 AZ_APP_URL=$(
@@ -117,7 +120,7 @@ AZ_APP_URL=$(
 echo "AZ_APP_URL=$AZ_APP_URL"
 ```
 
-When the deployment finishes, your application is ready at `https://<appName>.azurecontainerapps.io/`. Notice the `https` protocol. This is because the application is deployed with a TLS certificate. To test the application, you can use `cURL`.
+Your application is ready at `https://<appName>.azurecontainerapps.io/`. Notice the `https` protocol. This is because the application is deployed with a TLS certificate. To test the application, you can use `cURL`.
 
 ```bash
 curl --header "Content-Type: application/json" \
@@ -138,7 +141,7 @@ This command returns the list of all to-do items from the database:
 [{"id":1,"description":"configuration","details":"congratulations, you have set up your Quarkus application correctly!","done":true}]
 ```
 
-While you create new TODOs, you can stream the logs for your container with: 
+While you create new to-dos, you can stream the logs for your container with: 
 
 ```bash
 az containerapp logs show \

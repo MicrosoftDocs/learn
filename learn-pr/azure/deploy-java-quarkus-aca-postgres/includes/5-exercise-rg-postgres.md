@@ -1,8 +1,8 @@
-In this unit, you'll create the Azure resource group that will contain all our resources and set up the PostgreSQL database using the Azure CLI. Then, you will configure the Quarkus application to access the remote PostgreSQL database. Use a terminal of your choice to run the commands.
+In this unit, you'll create the Azure Resource Group that will contain all our resources, and set up the PostgreSQL database using the Azure CLI. Then, you will configure the Quarkus application to access the remote PostgreSQL database. Use a terminal of your choice to run the commands.
 
 ## Prepare the working environment
 
-Set up some environment variables by using the following commands:
+We need to set up some environment variables:
 
 ```bash
 AZ_PROJECT="azure-deploy-quarkus"
@@ -17,13 +17,7 @@ AZ_POSTGRES_SERVER_NAME="psql<unique-identifier>"
 ```
 
 > [!NOTE]
-> You can name your Azure resources the way you want, but we recommend to check [this documentation](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) that gives you abbreviation for many of the resources in Azure (eg. `rg` for resource group, `ca` for Azure Container Apps, etc.). 
-> You can name your Azure resources the way you want, but we recommend to check [this documentation](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) that gives you abbreviation for many of the resources in Azure (eg. `rg` for resource group, `ca` for Azure Container Apps, etc.). 
-
-
-TODO - to remove
-AZ_POSTGRES_SERVER_NAME="psqlazuredeployquarkus"
-
+> You can name your Azure resources the way you want, but we recommend to check [this documentation](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) that gives you abbreviation for many of the resources in Azure (eg. `rg` for Resource Groups, `ca` for Azure Container Apps, etc.).
 
 In your code, replace the placeholders with the values in the following table. These values are used throughout this module.
 
@@ -34,10 +28,10 @@ In your code, replace the placeholders with the values in the following table. T
 | `AZ_LOCATION` | The Azure region you'll use. We recommend that you use a region close to where you live. To see the full list of available regions, enter `az account list-locations` |
 | `AZ_CONTAINERAPP` | The name of the Azure Container Apps holding all the containers |
 | `AZ_CONTAINERAPP_ENV` | The name of the Azure Container Apps environment |
-| `AZ_POSTGRES_SERVER_NAME` | The name of your PostgreSQL server (nonalphanumeric characters are not allowed (-, _, !, $, #, %, etc.)). It **should be unique across Azure**. |
+| `AZ_POSTGRES_SERVER_NAME` | The name of your PostgreSQL server (nonalphanumeric characters are not allowed (-, _, !, $, #, %, etc.)). It **should be unique across Azure make sure to use a <unique-identifier>**. |
 | `AZ_POSTGRES_DB_NAME` | The name of the default PostgreSQL database is `postgres`. |
-| <YOUR_POSTGRES_USERNAME> | The username of your PostgreSQL database server. The username should have a minimum of eight characters. The characters should be from three of the following categories: English uppercase letters, English lowercase letters, numbers 0 through 9, and nonalphanumeric characters (!, $, #, %, and so on). |
-| <YOUR_POSTGRES_PASSWORD> | The password of your PostgreSQL database server. The password should have a minimum of eight characters. The characters should be from three of the following categories: English uppercase letters, English lowercase letters, numbers 0 through 9, and nonalphanumeric characters (!, $, #, %, and so on). |
+| `<YOUR_POSTGRES_USERNAME>` | The username of your PostgreSQL database server. The username should have a minimum of eight characters. The characters should be from three of the following categories: English uppercase letters, English lowercase letters, numbers 0 through 9, and nonalphanumeric characters (!, $, #, %, and so on). |
+| `<YOUR_POSTGRES_PASSWORD>` | The password of your PostgreSQL database server. The password should have a minimum of eight characters. The characters should be from three of the following categories: English uppercase letters, English lowercase letters, numbers 0 through 9, and nonalphanumeric characters (!, $, #, %, and so on). |
 
 Next, create a resource group:
 
@@ -49,7 +43,7 @@ az group create \
 
 ## Create an instance of Azure Database for PostgreSQL
 
-Now you'll create a managed PostgreSQL server. Run the following script to create a small instance of Azure Database for PostgreSQL.
+Now you'll create a managed PostgreSQL server. Run the following command to create a small instance of Azure Database for PostgreSQL.
 
 ```bash
 az postgres flexible-server create \
@@ -86,13 +80,11 @@ az postgres flexible-server show-connection-string \
 echo "POSTGRES_CONNECTION_STRING=$POSTGRES_CONNECTION_STRING"
 ```
 
-Then, you need to update the `application.properties` file in the `src/main/resources` folder of the project to configure the connection String to the PostgreSQL database. 
-
-For that, set the `quarkus.datasource.jdbc.url` property with the value of the `$POSTGRES_CONNECTION_STRING` and append `&ssl=true&sslmode=require` to the end of the connection string to force the driver to use ssl. This is required for Azure Database for PostgreSQL.
+Then, you need to update the `application.properties` file in the `src/main/resources` folder of the project to configure the connection String to the PostgreSQL database. For that, set the `quarkus.datasource.jdbc.url` property with the value of the `$POSTGRES_CONNECTION_STRING` and append `&ssl=true&sslmode=require` to the end of the connection string to force the driver to use ssl. This is required for Azure Database for PostgreSQL.
 
 ```properties
 quarkus.hibernate-orm.database.generation=update
-quarkus.datasource.jdbc.url=<the value of the POSTGRES_CONNECTION_STRING appended with ssl=true&sslmode=require>
+quarkus.datasource.jdbc.url=<the value of the POSTGRES_CONNECTION_STRING appended with &ssl=true&sslmode=require>
 ```
 
 ## Execute the Quarkus application locally to test the remote database connection
@@ -101,8 +93,7 @@ quarkus.datasource.jdbc.url=<the value of the POSTGRES_CONNECTION_STRING appende
 ./mvnv clean quarkus:dev
 ```
 
-Once Quarkus is up and running, create a few Todos with the following `cURL` commands:
-
+Once Quarkus is up and running, create a few to-dos with the following `cURL` commands:
 
 ```bash
 curl --header "Content-Type: application/json" \
@@ -116,7 +107,7 @@ curl --header "Content-Type: application/json" \
     http://127.0.0.1:8080/api/todos
 ```
 
-Now check that the Todos are in the database with the following Azure CLI command:
+Now check that the to-dos are in the database with the following Azure CLI command:
 
 ```bash
 az postgres flexible-server execute \

@@ -1,14 +1,20 @@
-In this unit, you'll create a basic Quarkus application. You'll use Maven to bootstrap the application and an integrated development environment (IDE) of your choice to edit the code. Use a terminal of your choice to run the code. You will use Docker to start a local PostgreSQL database so you can run and test your TODO application locally. 
+In this unit, you'll create a basic Quarkus application. You'll use Maven to bootstrap the application and an integrated development environment (IDE) of your choice to edit the code. Use a terminal of your choice to run the code. You will use Docker to start a local PostgreSQL database so you can run and test your to-do application locally. 
 
 ## Generate the Quarkus application using Maven
 
 There are different ways to generates a Quarkus project structure for you. You can use the [Quarkus web interface](https://code.quarkus.io), an IDE plugin, or the Quarkus Maven plugin. Let's use the Maven plugin to generate the project structure.
 
-You'll generate your application scaffold with several dependencies: `resteasy`, `jackson`, `hibernate`, `postgresql`, and `docker`.
-You will use the `resteasy` dependency to expose a REST endpoint, the `jackson` dependency to serialize and deserialize JSON, the `hibernate` dependency to interact with the database, the `postgresql` dependency to connect to the PostgreSQL database, and the `docker` dependency to build a Docker image. 
+You'll generate your application scaffold with several dependencies:
+
+* You will use the `resteasy` dependency to expose a REST endpoint,
+* the `jackson` dependency to serialize and deserialize JSON, 
+* the `hibernate` dependency to interact with the database, 
+* the `postgresql` dependency to connect to the PostgreSQL database, 
+* and the `docker` dependency to build a Docker image. 
+
 You don't need to specify Azure dependencies because you'll run your application locally first, and then deploy a containerized version of the application to Azure Container Apps.
 
-At a command prompt, generate the TODO application:
+At a command prompt, generate the to-do application:
 
 ```bash
 mvn -U io.quarkus:quarkus-maven-plugin:2.15.1.Final:create \
@@ -24,7 +30,7 @@ mvn -U io.quarkus:quarkus-maven-plugin:2.15.1.Final:create \
 > [!NOTE]
 > By default the project is generated using Java 17. We use the `javaVersion` parameter to override the default value and use Java 11.
 
-This command creates a new Quarkus project. Despite generating a Maven directory structure (`src/main/java` for code source and `src/test/java` for tests), it has created some Java classes and some tests. It has also generated a `pom.xml` file with all the needed dependencies (Hibernate, RestEasy, Jackson, PostgreSQL and Docker).  
+This command creates a new Quarkus project. Despite generating a Maven directory structure (`src/main/java` for code source and `src/test/java` for tests), it has created some Java classes, some tests and some Dockerfiles. It has also generated a `pom.xml` file with all the needed dependencies (Hibernate, RestEasy, Jackson, PostgreSQL and Docker).  
 
 ```xml
   <dependencies>
@@ -190,7 +196,6 @@ Tests paused
 Press [r] to resume testing, [o] Toggle test output, [:] for the terminal, [h] for more options>
 ```
 
-
 To test the application, you can use `cURL`.
 
 First, create a new to-do item in the database with the following command (you should see the log in the Quarkus console):
@@ -208,7 +213,7 @@ This command should return the created item (with an identifier):
 {"id":1,"description":"Take Quarkus MS Learn","details":"Take the MS Learn on deploying Quarkus to Azure Container Apps","done":true,"createdAt":"2022-12-30T15:17:20.280203Z"}
 ```
 
-Create a second Todo with the following `cURL` command:
+Create a second to-do with the following `cURL` command:
 
 ```bash
 curl --header "Content-Type: application/json" \
@@ -278,7 +283,7 @@ To test the application, you also need Docker Desktop to be up and running becau
 ./mvnw clean test
 ```
 
-You shoud have the following output:
+You should have the following output:
 
 ```shell
 [INFO] -------------------------------------------------------

@@ -12,7 +12,7 @@ By the end of this module, you'll be able to incorporate Quarkus applications in
 
 You'll use your own Azure subscription to deploy the resources in this module. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/java/?azure-portal=true&WT.mc_id=java-10785-ropreddy) before you begin.
 > [!IMPORTANT]
-> To avoid unnecessary charges in your Azure subscription, remember to deprovision your Azure resources when you finish this module.
+> To avoid unnecessary charges in your Azure subscription, remember to de-provision your Azure resources when you finish this module.
 
 ## Learning objectives
 

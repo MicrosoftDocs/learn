@@ -3,7 +3,7 @@ uid: learn.azure.deploy-java-quarkus-aca-postgres
 metadata:
   title: Deploy a Quarkus application to Azure Container Apps
   description: Create a Quarkus application, connect it to a PostgreSQL database, and then deploy to Azure Container Apps.
-  ms.date: 12/16/2022
+  ms.date: 01/02/2023
   author: agoncal
   ms.author: antoniomanug
   ms.topic: interactive-tutorial
@@ -36,10 +36,11 @@ units:
 - learn.azure.deploy-java-quarkus-aca-postgres.2-build
 - learn.azure.deploy-java-quarkus-aca-postgres.3-exercise-build
 - learn.azure.deploy-java-quarkus-aca-postgres.4-aca
-- learn.azure.deploy-java-quarkus-aca-postgres.5-exercise-aca
-- learn.azure.deploy-java-quarkus-aca-postgres.6-deploy
-- learn.azure.deploy-java-quarkus-aca-postgres.7-exercise-deploy
-- learn.azure.deploy-java-quarkus-aca-postgres.8-knowledge-check
+- learn.azure.deploy-java-quarkus-aca-postgres.5-exercise-rg-postgres
+- learn.azure.deploy-java-quarkus-aca-postgres.6-exercise-aca
+- learn.azure.deploy-java-quarkus-aca-postgres.7-secure
+- learn.azure.deploy-java-quarkus-aca-postgres.8-exercise-secure
+- learn.azure.deploy-java-quarkus-aca-postgres.9-knowledge-check
 - learn.azure.deploy-java-quarkus-aca-postgres.9-summary
 badge:
   uid: learn.azure.deploy-java-quarkus-aca-postgres.badge

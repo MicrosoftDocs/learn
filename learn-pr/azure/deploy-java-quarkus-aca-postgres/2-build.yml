@@ -4,13 +4,13 @@ title: Build a Quarkus application
 metadata:
   title: Build a Quarkus application
   description: Build a Quarkus application, test it, and execute it locally.
-  ms.date: 12/16/2022
+  ms.date: 01/02/2023
   author: agoncal
   ms.author: antoniomanug
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=devdiv
   ms.contributors: antoniomanug
-durationInMinutes: 2
+durationInMinutes: 5
 content: |
   [!include[](includes/2-build.md)]

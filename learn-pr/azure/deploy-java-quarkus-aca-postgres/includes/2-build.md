@@ -18,7 +18,7 @@ From a developer's point of view, Quarkus proposes a nice developer experience: 
 
 ## Develop your Quarkus application
 
-Quarkus is a great framework to execute your applications. You just wire certain Quarkus extensions and the runtime does everything for you.
+Quarkus is a great framework to execute your applications. You just wire certain Quarkus extensions and the runtime does everything for you. Thanks to [Dev Services](https://quarkus.io/guides/dev-services), you don't need to install a PostgreSQL database locally on your machine. Dev Services will use Docker to download a PostgreSQL database, configure it and start it.
 
 You've decided to use Quarkus. This framework is self-hosted, and it provides support services to run your application.
 
@@ -35,7 +35,7 @@ az account show
 
 In this module, you use the Azure CLI to spin up the Azure Container Apps and the Azure Database for PostgreSQL instance. Access the Azure CLI from a terminal or through Visual Studio Code. Or you can access it from [Azure Cloud Shell](https://azure.microsoft.com/get-started/azure-portal/cloud-shell). This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
 
-You'll use the Maven package manager to bootstrap your project and pull in dependencies. Maven also provides the tools you need to configure and deploy your project to Azure Container Apps by using the Azure Web Apps plug-in.
+You'll use the Maven package manager to bootstrap your project and pull in dependencies. Maven also provides the Quarkus and Dev Services dependencies to develop and easily test your Quarkus application.
 
 You will use Docker to run and test the application locally with a PostgreSQL database.
 
