@@ -22,7 +22,9 @@ You can assign network security groups to a subnet and create a protected screen
 
 - Use the network security group to restrict traffic flow to all machines that reside within the subnet.
 
-- Each subnet can have zero, or one, associated network security groups.
+- Each subnet can have a maximum of one associated network security group.
+
+- A subnet can have no associated network security group.
 
 #### Network security groups and network interfaces
 
