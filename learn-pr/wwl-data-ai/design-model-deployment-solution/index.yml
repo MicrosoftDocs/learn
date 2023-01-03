@@ -3,7 +3,7 @@ uid: learn.wwl.design-model-deployment-solution
 metadata:
   title: Design a model deployment solution
   description: "Azure Machine Learning Python SDK v2"
-  ms.date: 11/30/2022
+  ms.date: 01/03/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ abstract: |
   - Understand how a model will be consumed.
   - Decide whether to deploy your model to a real-time or batch endpoint.
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/design-model-deployment-solution.svg
 levels:
 - beginner
 roles:
@@ -29,7 +29,6 @@ units:
 - learn.wwl.design-model-deployment-solution.introduction
 - learn.wwl.design-model-deployment-solution.understand-how-model-consumed
 - learn.wwl.design-model-deployment-solution.decide-real-time-batch-deployment
-- learn.wwl.design-model-deployment-solution.exercise
 - learn.wwl.design-model-deployment-solution.knowledge-check
 - learn.wwl.design-model-deployment-solution.summary
 badge:
