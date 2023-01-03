@@ -18,12 +18,12 @@ In this virtual network configuration, there are three subnets. Subnet 1 contain
 
 Azure evaluates each NSG configuration to determine the effective security rules:
 
-| Evaluation | Inbound rules | Outbound rules | 
-| --- | --- | --- |
-| **VM 1** in Subnet 1 (NSG 1), VM 1 has NIC (NSG 2) | NSG 1 subnet rules take precedence over NSG 2 NIC rules | NSG 2 NIC rules take precedence over NSG 1 subnet rules |
-| **VM 2** in Subnet 1 (NSG 1), VM 2 has NIC | NSG 1 subnet rules apply to both subnet and NIC | Azure default rules apply to NIC, NSG 1 subnet rules apply to subnet only |
-| **VM 3** in Subnet 2, VM 3 has NIC (NSG 2) | Azure default rules apply to subnet, NSG 2 rules apply to NIC | NSG 2 NIC rules apply to NIC and subnet |
-| **VM 4** in Subnet 3, VM 4 has NIC | Azure default rules apply to both subnet and NIC, all inbound traffic allowed | Azure default rules apply to both subnet and NIC, all outbound traffic allowed |
+| Evaluation | Subnet / NIC | NSG | Inbound rules | Outbound rules | 
+| --- | --- | --- | --- | --- |
+| **VM 1** | Subnet 1 <br> NIC | NSG 1 <br> NSG 2 | NSG 1 subnet rules take precedence over NSG 2 NIC rules | NSG 2 NIC rules take precedence over NSG 1 subnet rules |
+| **VM 2** | Subnet 1 <br> NIC | NSG 1 <br> _none_ | NSG 1 subnet rules apply to both subnet and NIC | Azure default rules apply to NIC <br> NSG 1 subnet rules apply to subnet only |
+| **VM 3** | Subnet 2 <br> NIC | _none_ <br> NSG 2 | Azure default rules apply to subnet <br> NSG 2 rules apply to NIC | NSG 2 NIC rules apply to NIC and subnet |
+| **VM 4** | Subnet 3 <br> NIC | _none_ <br> _none_ | Azure default rules apply to both subnet and NIC <br> All inbound traffic allowed | Azure default rules apply to both subnet and NIC <br> All outbound traffic allowed |
 
 #### Inbound traffic effective rules
 

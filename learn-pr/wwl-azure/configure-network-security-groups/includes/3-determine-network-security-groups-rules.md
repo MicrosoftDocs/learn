@@ -17,7 +17,7 @@ Let's review the characteristics of security rules in network security groups.
    - **Destination** (Any, IP addresses, Virtual network)
    - **Action** (Allow or Deny)
 
-- Each security rule is assigned a priority value. All security rules for a network security group are processed in priority order. When a rule has a low priority value, the rule has a higher priority or precedence in terms of order processing.
+- Each security rule is assigned a Priority value. All security rules for a network security group are processed in priority order. When a rule has a low Priority value, the rule has a higher priority or precedence in terms of order processing.
 
 - You can't remove the default security rules.
 
