@@ -1,4 +1,4 @@
-In this section, you follow  Tim and Mara as they explore load testing and add load tests to the pipeline. The load tests use Apache JMeter to simulate a large number of users who access the web app simultaneously. The tests fetch the web content from the app that runs on Azure App Service, in the _Staging_ environment.
+In this section, you follow  Tim and Mara as they explore load testing and add load tests to the pipeline. The load tests use Apache JMeter to simulate multiple users who access the web app simultaneously. The tests fetch the web content from the app that runs on Azure App Service in the _Staging_ environment.
 
 Tim starts by bringing up the Apache JMeter user interface on a laptop. He runs a basic test plan. Then Tim and Mara export the test plan to a file that can be run from the command line. Finally, they add tasks to Azure Pipelines to run the load tests during _Staging_.
 
@@ -17,7 +17,7 @@ Mara drops in to see Tim.
 
 **Tim:** I use Apache JMeter. It's an open-source load-testing tool that analyzes and measures performance. The report it generates is an XML file. I normally use the JMeter graphical user interface, and I'm hoping we can integrate it into the pipeline.
 
-**Mara:** I think we can. If the report is in a format that Azure Pipelines understands, it'll display a graph. I don't think we need any special hardware to run the tests, so we'll use a Microsoft-hosted agent to run them. _Staging_ seems like the right place to run the tests because that's the phase that most closely resembles production.
+**Mara:** I think we can. If the report is in a format that Azure Pipelines understands, it will display a graph. I don't think we need any special hardware to run the tests, so we'll use a Microsoft-hosted agent to run them. _Staging_ seems like the right place to run the tests because that's the phase that most closely resembles production.
 
 It's a great idea to start with tools and tests that you're familiar with. Do you normally use any kind of script for load testing? Perhaps we could convert it to an automated test.
 
@@ -27,19 +27,19 @@ It's a great idea to start with tools and tests that you're familiar with. Do yo
 
 Tim brings up Apache JMeter on a laptop that runs Linux. Here's what it looks like.
 
-:::image type="content" source="../media/4-apache-jmeter-new.png" alt-text="The Apache JMeter user interface.":::
+:::image type="content" source="../media/4-apache-jmeter-new.png" alt-text="Screenshot of the Apache JMeter user interface.":::
 
-Tim then creates a new test plan file, named *LoadTest.jmx*. To the file, he adds a **Thread Group**. Each simulated user runs on its own thread. A thread group controls the number of users and the number of each user's requests.
+Tim then creates a new test plan file named *LoadTest.jmx*. To the file, he adds a **Thread Group**. Each simulated user runs on its own thread. A thread group controls the number of users and the number of each user's requests.
 
 The following example shows 10 simulated users (threads). Each user makes 10 requests. So the system gets a total of 100 requests.
 
-:::image type="content" source="../media/4-apache-jmeter-thread-group.png" alt-text="Specifying the thread group in Apache JMeter.":::
+:::image type="content" source="../media/4-apache-jmeter-thread-group.png" alt-text="Screenshot of specifying the thread group in Apache JMeter.":::
 
 A _sampler_ is a single request made by JMeter. JMeter can query servers over HTTP, FTP, TCP, and several other protocols. Samplers generate the results that are added to the report.
 
-Next, Tim adds **Http Request Defaults** and an **Http Request** sampler to the thread group. He provides the host name of the _Space Game_ website that runs in the **staging** environment on Azure App Service.
+Next, Tim adds **Http Request Defaults** and an **Http Request** sampler to the thread group. He provides the hostname of the _Space Game_ website that runs in the **staging** environment on Azure App Service.
 
-:::image type="content" source="../media/4-apache-jmeter-http-request.png" alt-text="Specifying the HTTP request in Apache JMeter.":::
+:::image type="content" source="../media/4-apache-jmeter-http-request.png" alt-text="Screen shot that shows specifying the HTTP request in Apache JMeter.":::
 
 > [!TIP]
 > For reference, Microsoft hosts a version of the [Space Game website](http://tailspin-spacegame-web.azurewebsites.net?azure-portal=true). Go there if you want to follow along with Tim's load tests.
@@ -146,7 +146,7 @@ Given these variables, the XSLT file provides the total number of tests and the 
 
 The results of the XSLT match the JUnit format, which Azure Pipelines understands. Mara and Tim name their XSLT file *JMeter2JUnit.xsl*.
 
-**Mara:** Next we need an XSLT processor. Let's use **xsltproc**.
+**Mara:** Next, we need an XSLT processor. Let's use **xsltproc**.
 
 Tim installs **xsltproc**:
 
