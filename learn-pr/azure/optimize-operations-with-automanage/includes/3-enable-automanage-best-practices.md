@@ -85,7 +85,7 @@ You can enable Automanage for multiple VMs using a built-in Azure policy.
 1. Under the **Basics** tab, fill out **Scope** by setting the *Subscription* and *Resource Group*.
     > [!NOTE]
     > The Scope lets you define which VMs this policy applies to. Policies can be applied at the subscription level or the resource group level. If you set a resource group, all VMs that are currently in that resource group or any future VMs added to it will have Automanage automatically enabled.
-1. Select the **Parameters** tab, uncheck the *Only show parameters that need input or review* option (if necessary), and then set the **Configuration Profile** and desired **Effect**.
+1. Select the **Parameters** tab, uncheck the box for *Only show parameters that need input or review* (if necessary), and then set the **Configuration Profile** and desired **Effect**.
 1. Under the **Review + create** tab, review the settings.
 1. Apply the assignment by selecting **Create**.
 1. View your assignments in the **Assignments** tab next to **Definition**.

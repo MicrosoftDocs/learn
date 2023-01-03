@@ -5,8 +5,8 @@ Arc-enabled servers onboarded with Automanage enjoy the same benefits and servic
 - Assign Azure Policy guest configurations using the same process you use when assigning policies to your Azure VMs.
 - Monitor your connected machines' guest operating system performance.
 - Use Azure Monitor for VMs to:
-- Discover application components.
-- Monitor these applications' processes and dependencies.
+    - Discover application components.
+    - Monitor these applications' processes and dependencies.
 - Support resource-context log access for log data collected and stored in a Log Analytics workspace.
 - Simplify deployment with other Azure services. For example, implement Azure Automation State Configuration and Azure Monitor Log Analytics workspace. This includes using the Custom Script Extension to:
     - Perform post-deployment configuration.

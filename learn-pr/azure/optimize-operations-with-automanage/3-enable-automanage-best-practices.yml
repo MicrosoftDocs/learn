@@ -9,6 +9,6 @@ metadata:
   ms.author: johnmarc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 15
 content: |
   [!include[](includes/3-enable-automanage-best-practices.md)]
