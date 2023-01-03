@@ -4,7 +4,7 @@ Security rules in network security groups enable you to filter network traffic. 
 
 Let's review the characteristics of security rules in network security groups.
 
-- Azure creates several default security rules within each network security group, including inbound traffic and outbound traffic.
+- Azure creates several default security rules within each network security group, including inbound traffic and outbound traffic. Examples of default rules include `DenyAllInbound` traffic and `AllowInternetOutbound` traffic.
 
 - Azure creates the default security rules in each network security group that you create.
 
@@ -16,6 +16,8 @@ Let's review the characteristics of security rules in network security groups.
    - **Source** (Any, IP addresses, Service tag)
    - **Destination** (Any, IP addresses, Virtual network)
    - **Action** (Allow or Deny)
+
+- Each security rule is assigned a priority value. All security rules for a network security group are processed in priority order. When a rule has a low priority value, the rule has a higher priority or precedence in terms of order processing.
 
 - You can't remove the default security rules.
 
