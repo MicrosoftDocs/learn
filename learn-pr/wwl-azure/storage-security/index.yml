@@ -2,8 +2,8 @@
 uid: learn.wwl.storage-security
 metadata:
   title: Implement storage security
-  description: "Ensure your data is stored, transferred, and accessed in a secure way using Azure storage and file security features."
-  ms.date: 09/06/2022
+  description: "Implement storage security"
+  ms.date: 01/03/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Apply rules for data retention
 prerequisites: |
   - None
-iconUrl: /training/achievements/storage-security.svg
+iconUrl: /learn/achievements/storage-security.svg
 levels:
 - intermediate
 roles:
