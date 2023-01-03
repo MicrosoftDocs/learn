@@ -5,22 +5,17 @@ Welcome to Proseware! You've been hired as the *lead data scientist* to help us 
 
 ## Understand the problem
 
-:::row:::
-    :::column span="":::
-        :::image type="content" source="../media/mock-up-app.png" alt-text="Show the mobile application." lightbox="../media/mock-up-app.png":::
-    :::column-end:::    
-    :::column span="2":::
-        At Proseware, we're developing a **mobile application** that will help doctors diagnose diseases in patients faster. A doctor can enter the patient's medical data into the app to get a diagnosis on the patient.
+:::image type="content" source="../media/mock-up-app.png" alt-text="Show the mobile application." lightbox="../media/mock-up-app.png":::
 
-        Our first planned feature is that the app will tell the doctor *whether the patient should be further screened or treated for diabetes*.
+At Proseware, we're developing a **mobile application** that will help doctors diagnose diseases in patients faster. A doctor can enter the patient's medical data into the app to get a diagnosis on the patient. 
 
-        We have already collected data that correlates with diabetes, such as the number of pregnancies, age, and body mass index (BMI). We also have a team of data scientists working on training a model that can classify whether a patient is likely to have diabetes. 
+Our first planned feature is that the app will tell the doctor *whether the patient should be further screened or treated for diabetes*.
 
-        We need your help deciding how to deploy the model to integrate it with our mobile application.
+We have already collected data that correlates with diabetes, such as the number of pregnancies, age, and body mass index (BMI). We also have a team of data scientists working on training a model that can classify whether a patient is likely to have diabetes. 
 
-        We're looking forward to your advice on **how to design the model's deployment solution**!
-    :::column-end:::
-:::row-end:::
+We need your help deciding how to deploy the model to integrate it with our mobile application.
+
+We're looking forward to your advice on **how to design the model's deployment solution**!
 
 ## Consider the requirements
 
