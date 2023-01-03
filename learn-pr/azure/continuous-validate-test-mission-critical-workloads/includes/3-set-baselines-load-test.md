@@ -81,4 +81,4 @@ To set up baselines for load tests, follow these steps:
 
 1. Use a separate baseline for chaos testing that tolerates expected spikes in error rates and temporarily reduced performance.
 
-This activity is continuous and needs to be done regularly. For example, you need to set up baselines after you introduce new features or change service SKUs.
+This activity is continuous and needs to be done regularly. For example, you need to review baselines after you introduce new features or change service SKUs.
