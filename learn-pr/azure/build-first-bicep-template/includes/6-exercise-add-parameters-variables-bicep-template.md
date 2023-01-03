@@ -54,6 +54,14 @@ During the process, you'll:
 
 1. Save the changes to the file.
 
+## Verify your Bicep file
+
+After you've completed all of the preceding changes, your _main.bicep_ file should look like this example:
+
+:::code language="bicep" source="code/6-template-2.bicep" :::
+
+If your file doesn't match, copy the example, or adjust your file to match the example.
+
 ### Deploy the updated Bicep template
 
 ::: zone pivot="cli"

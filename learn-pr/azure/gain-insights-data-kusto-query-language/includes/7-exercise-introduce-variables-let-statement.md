@@ -1,20 +1,20 @@
 We've used a meteorological dataset to aggregation and visualize data. Here, you'll learn how to use `let` statements to introduce variables and organize complex queries.
 
-`let` statements are useful for breaking up a complex expression into multiple parts, defining constants outside of the query body for readability, or defining a variable once and using it multiple times within a query. `let` statements can be used to create well-organized complex queries. You can use multiple let statements; each statement must be followed by a semicolon (`;`).
+`let` statements are useful for breaking up a complex expression into multiple parts, defining constants outside of the query body for readability, or defining a variable once and using it multiple times within a query. You can use `let` statements to create well-organized complex queries. You can use multiple `let` statements; each statement must be followed by a semicolon (`;`).
 
-`let` statements can be used in different kinds of situations. On the simplest level, you can define scalar values that will later be referenced in a query, such as an int, string, date/time, or any other value. You can create a tabular filtered view of a table that will be used as the tabular input for the query. You can also create a function using a `let` statement.
+You can use `let` statements in different kinds of situations. On the simplest level, you can define scalar values that will later be referenced in a query, such as an int, string, date/time, or any other value. You can create a tabular filtered view of a table that will be used as the tabular input for the query. You can also create a function using a `let` statement.
 
 ## Define a scalar with a `let` statement
 
 Recall that previous queries filtered on locations or minimum damage. Let's define these boundary values using a `let` statement at the beginning of the query.
 
-The following query uses two `let` statements to define scalar values that will later be used as input parameters in the query. The first defined value is a number and the second is a string. The `let` statements end with a semicolon.
+The following query uses two `let` statements to define scalar values that'll later be used as input parameters in the query. The first defined value is a number and the second is a string. The `let` statements end with a semicolon.
 
 Notice the commented-out portions of the query that begin with double forward slashes (`//`). Double forward slashes indicate a beginning of a comment until the end of the line. These are comments that are ignored when running queries.
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA12OzQrCMBCE74W+w9JTSw/Fs0Qo6kHwD+vJW9RQA01SNttKxYc3bZSqx9mZ+XYqQbCResEVLwUwmEwhy0BqCoPKWctWaFqbCydptLOj/LA67bZ5NMQsodRlGBRkUA1RGwZPuN8ECiiIkyOyX8bo+5dzNLWF9K32TgmkDmZsXNVXbKMUR/n41BiaRl9j3pbxXzP9BicJnDs/4NjVnmSQ+qNPvQAUhSpF/wAAAA==" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA12OzQrCMBCE74W+w9JTSw/Fs0Qo6kHwD+vJW9RQA01SNttKxYc3bZSqx9mZ+XYqQbCResEVLwUwmEwhy0BqCoPKWctWaFqbCydptLOj/LA67bZ5NMQsodRlGBRkUA1RGwZPuN8ECiiIkyOyX8bo+5dzNLWF9K32TgmkDmZsXNVXbKMUR/n41BiaRl9j3pbxXzP9BicJnDs/4NjVnmSQ+qNPvQAUhSpF/wAAAA==" target="_blank">Run the query</a>
 
     ```kusto
     let MinDamage = 1; // int
@@ -38,7 +38,7 @@ Next, let's look at a count of the most frequent event type as a function of tim
 
 Before starting to construct the `let` statement, run the query to find out what this event actually is. This allows you to verify that your query is producing the expected results.
 
-<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5uWqUSguzc1NLMqsSlVIzi/NK9HQVEiqVABLh1QWpIJUlOQXKBiCRMEK4kFCBUX5WanJJQh1AGSi72VVAAAA" target="_blank">Click to run query</a>
+<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5uWqUSguzc1NLMqsSlVIzi/NK9HQVEiqVABLh1QWpIJUlOQXKBiCRMEK4kFCBUX5WanJJQh1AGSi72VVAAAA" target="_blank">Run the query</a>
 
 ```Kusto
 StormEvents
@@ -63,7 +63,7 @@ let MostFrequentEventType = toscalar(
     | project EventType);
 ```
 
-Notice that this statement by itself isn't a valid query, because a valid query must contain at least one statement that's not a `let` statement. You can, however, use this stored scalar value in a query. Recall that you want to look at a count of the most frequent event time as a function of time. You'll filter on *MostFrequentEventType*, and then summarize the count by a certain time bin.
+Notice that this statement by itself isn't a valid query, because a valid query must contain at least one statement that's not a `let` statement. You can, however, use this stored scalar value in a query. Recall that you want to look at a count of the most frequent event time as a function of time. You'll filter on *MostFrequentEventType*, then summarize the count by a certain time bin.
 
 In this case, let's look at the results per month. You'll use the `startofmonth()` function, which returns a datetime representing the start of the month for the given date value. In this query, you'll use the *StartTime* column as the input for the `startofmonth()` function.
 
@@ -71,7 +71,7 @@ Finally, render the results as a column chart to get a histogram of the count of
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA22OvQ7CMAyE90p9B4/tyIw6wsbU7igEoxYlcXAcUFEfnqSo/Ej1YMl3n3xnUOBAQfaMt4hOdve0utEjNCAUtDKKq7KANK0Q29kPb2GCEK1VPDwRNEUnVQ2nET4vFkrIwyY7M3RcZM90RS1fvt6WxV/IBI8eGeGnVLPeNrOrZYIoFrpYctJXbT66wWKdeUZ3Rk6widbpPlkvHT0NTA0BAAA=" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA22OvQ7CMAyE90p9B4/tyIw6wsbU7igEoxYlcXAcUFEfnqSo/Ej1YMl3n3xnUOBAQfaMt4hOdve0utEjNCAUtDKKq7KANK0Q29kPb2GCEK1VPDwRNEUnVQ2nET4vFkrIwyY7M3RcZM90RS1fvt6WxV/IBI8eGeGnVLPeNrOrZYIoFrpYctJXbT66wWKdeUZ3Rk6widbpPlkvHT0NTA0BAAA=" target="_blank">Run the query</a>
 
     ```kusto
     let MostFrequentEventType = toscalar(
@@ -106,7 +106,7 @@ The previous examples created a stored scalar value to be used as an input param
 
 1. Then, you can use some of the aggregation functions you've learned in previous units. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA32OsQ6DMAxEd77CI6gM3at0okPVEX4gBUukCgmyTSsqPr4hQYipnnyn8/NZFHgYa5Fq8TQwqAzCRHF7oxOOeoFPj4RQoZaeK0PYCpw2eXddMq5w3tIj+dfq1KIFS4ikZh7Dmk7UX9AlO1bKFuBpGDSZbyhgWIxrJQV2Lquu9ZOTfHeKEhov2m7/AiFPawHPOfVawZ5k1YfoD7eQKN4SAQAA" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA32OsQ6DMAxEd77CI6gM3at0okPVEX4gBUukCgmyTSsqPr4hQYipnnyn8/NZFHgYa5Fq8TQwqAzCRHF7oxOOeoFPj4RQoZaeK0PYCpw2eXddMq5w3tIj+dfq1KIFS4ikZh7Dmk7UX9AlO1bKFuBpGDSZbyhgWIxrJQV2Lquu9ZOTfHeKEhov2m7/AiFPawHPOfVawZ5k1YfoD7eQKN4SAQAA" target="_blank">Run the query</a>
 
     ```kusto
     let KillerStorms =
@@ -151,7 +151,7 @@ let Pcent = (portion:real, total:real){round(100 * portion / total, 2)};
 
 1. Use this `let` statement in the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA4VQy6rCMBDdC/7DWSbXgNWloht1X9AfiHWuVNqkTEexPv7dtCmocOHucmbOY3IKEqQZOcECqvIsuXczMNnCQLzYIgKNO9if3UFNkgQ/6JkYR5LBVOM5Hw624rncXIJfPRw8QFchd8DalvZIISE+VuyrGqMepQERS9Py63NZWs5vhF1rG42CLgvRorSJ406Xu+P3Ov9Vfc4Sica+QbffNRW11hX7E2XyHv5pZj6DDVLitpt4fFeT+k+ku3+Eer4ugK2zFx10e+xrAQAA" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA4VQy6rCMBDdC/7DWSbXgNWloht1X9AfiHWuVNqkTEexPv7dtCmocOHucmbOY3IKEqQZOcECqvIsuXczMNnCQLzYIgKNO9if3UFNkgQ/6JkYR5LBVOM5Hw624rncXIJfPRw8QFchd8DalvZIISE+VuyrGqMepQERS9Py63NZWs5vhF1rG42CLgvRorSJ406Xu+P3Ov9Vfc4Sica+QbffNRW11hX7E2XyHv5pZj6DDVLitpt4fFeT+k+ku3+Eer4ugK2zFx10e+xrAQAA" target="_blank">Run the query</a>
 
     ```kusto
     let Pcent = (portion: real, total: real) { round(100 * portion / total, 2) };

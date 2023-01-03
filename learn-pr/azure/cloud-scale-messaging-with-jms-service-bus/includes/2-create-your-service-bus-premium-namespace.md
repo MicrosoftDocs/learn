@@ -19,7 +19,7 @@ Some common messaging scenarios are:
 * **Transactions**: Do several operations, all in the scope of an atomic transaction.
 * **Message sessions**: Implement high-scale coordination of workflows and multiplexed transfers that require strict message ordering or message deferral.
 
-If you're familiar with other message brokers like Apache ActiveMQ, Rabbit MQ, TIBCO EMS, and IBM MQ, Service Bus concepts are similar to what you know.
+If you're familiar with other message brokers like Apache ActiveMQ, Rabbit MQ, TIBCO EMS, and IBM MQ, then Service Bus concepts are similar to what you know.
 
 ## Create a Service Bus namespace
 
@@ -55,7 +55,7 @@ Start by creating the namespace. In Azure Service Bus, a namespace is a containe
 Next, add a queue for messages about individual sales to your namespace:
 
 1. On the **Service Bus Namespace** page, select **Queues** under **Entities** on the left menu. 
-2. Select **+ Queue** on the command bar.  
+1. Select **+ Queue** on the command bar.  
 1. In the **Create queue** pane, for **Name**, enter **test-queue-jms**, and then select **Create**.  
   
 When the message queue has been created, **test-queue-jms** is listed under **Queues** at the bottom of the Service Bus namespace pane.
@@ -64,7 +64,7 @@ When the message queue has been created, **test-queue-jms** is listed under **Qu
 
 You'll use the namespace's connection string later in this training to connect to the Service Bus namespace from a JMS app.
 
-1. On the **Service Bus Namespace** page, select **Shared access policies** under **Settings** on the left menu. 
+1. On the **Service Bus Namespace** page, select **Shared access policies** under **Settings** on the left menu. \
 1. Select **RootManageSharedAccessKey** on the **Shared access policies** page. 
-1. On the **SAS Policy** page, select the copy button next to **Primary connection string** field. 
+1. On the **SAS Policy** page, select the **Copy** button next to **Primary connection string** field. \
 1. Paste it and save it so that you can use it later in the training. 

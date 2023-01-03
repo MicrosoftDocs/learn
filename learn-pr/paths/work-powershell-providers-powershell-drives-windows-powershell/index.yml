@@ -2,8 +2,8 @@
 uid: learn.wwl.work-powershell-providers-powershell-drives-windows-powershell
 metadata:
   title: Work with PowerShell providers and PowerShell drives in Windows PowerShell
-  description: Work with PowerShell providers and PowerShell drives in Windows PowerShell
-  ms.date: 07/29/2022
+  description: 'This learning path explains two technologies: PowerShell providers and PowerShell drives, which let you work with many forms of storage by using the commands and techniques that you use to manage the file system.'
+  ms.date: 12/21/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ prerequisites: |
   - Familiarity with Windows PowerShell pipeline.
 summary: |
   This learning path explains two technologies: PowerShell providers and PowerShell drives, which let you work with many forms of storage by using the commands and techniques that you use to manage the file system.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/work-powershell-providers-powershell-drives-windows-powershell.svg
 levels:
 - intermediate
 roles:
@@ -29,7 +29,6 @@ products:
 - azure-powershell
 - azure-virtual-machines
 - m365
-- vs-code
 subjects:
 - architecture
 - development-tools

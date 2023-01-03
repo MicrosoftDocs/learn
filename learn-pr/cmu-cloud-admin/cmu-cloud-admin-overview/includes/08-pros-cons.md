@@ -12,7 +12,7 @@ The popularity of cloud computing is driven by its numerous benefits, including 
 
 - **Improved utilization**: Resource utilization is significantly improved with cloud computing because physical resources are shared across users (multitenancy). Through virtualization, servers are now consolidated as operating system images that are sharing the same system resources. Hence, utilization is improved, which leads to overall savings in power and cooling and reduces the carbon footprint.
 
-- **Rapid and Global Deployment**: By employing the services of cloud service providers that also have a global data center presence, startups can compete with established players by rapidly rolling out applications and services across a global audience. This is particularly important of social media startups which may see viral growth trends as services become popular across multiple countries.
+- **Rapid and Global Deployment**: By employing the services of cloud service providers that also have a global data center presence, startups can compete with established players by rapidly rolling out applications and services across a global audience. This is particularly important of social media startups which may see viral growth trends as services become popular across multiple countries/regions.
 
 # Risks of Cloud Computing
 

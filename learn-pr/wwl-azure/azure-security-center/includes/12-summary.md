@@ -12,8 +12,8 @@ You should be able to:
 
 Microsoft Learn provides a large number of self-paced learning paths. For this lesson, we recommend the following modules. You may search and find other modules that are of interest to you.
 
- -  [Identify security threats with Microsoft Defender for Cloud](/training/modules/identify-threats-with-azure-security-center/)
- -  [Resolve security threats with Microsoft Defender for Cloud](/training/modules/resolve-threats-with-azure-security-center)
- -  [Protect your servers and VMs from brute-force and malware attacks with Microsoft Defender for Cloud](/training/modules/secure-vms-with-azure-security-center/)
- -  [Create security baselines](/training/modules/create-security-baselines/)
- -  [Top 5 security items to consider before pushing to production](/training/modules/top-5-security-items-to-consider/)
+ -  [Identify security threats with Microsoft Defender for Cloud](/learn/modules/identify-threats-with-azure-security-center/)
+ -  [Resolve security threats with Microsoft Defender for Cloud](/learn/modules/resolve-threats-with-azure-security-center)
+ -  [Protect your servers and VMs from brute-force and malware attacks with Microsoft Defender for Cloud](/learn/modules/secure-vms-with-azure-security-center/)
+ -  [Create security baselines](/learn/modules/create-security-baselines/)
+ -  [Top 5 security items to consider before pushing to production](/learn/modules/top-5-security-items-to-consider/)

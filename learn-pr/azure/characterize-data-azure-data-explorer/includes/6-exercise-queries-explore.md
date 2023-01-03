@@ -8,7 +8,7 @@ The most basic query you'll be using counts the number of rows in the table.
 
 Run the following query.
 
-<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA9PXd84vzStRKMlIVcgrzU1KLVLIT1NIzSspykwt5gouyS/KdS0Dcou5ahSSQSoBCrLn1DEAAAA=" target="_blank">Click to run query</a>
+<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA9PXd84vzStRKMlIVcgrzU1KLVLIT1NIzSspykwt5gouyS/KdS0Dcou5ahSSQSoBCrLn1DEAAAA=" target="_blank">Run the query</a>
 
 ```kusto
 StormEvents
@@ -23,7 +23,7 @@ You should get results that look like the following image:
 
 It will be useful to know what ranges of values exist in the dataset. For example, you saw in the last unit that there are timestamps for each event. Run the following query to see the minimum and maximum values of the start time column:
 
-<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVcjNzNMILkksKgnJzE3V1FHITaxA4gMAZ2iu0TYAAAA=" target="_blank">Click to run query</a>
+<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVcjNzNMILkksKgnJzE3V1FHITaxA4gMAZ2iu0TYAAAA=" target="_blank">Run the query</a>
 
 ```
 StormEvents
@@ -40,7 +40,7 @@ Recall in the last unit that you looked at several rows of data to infer the dat
 
 1. Run the following query.
     
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSE8tKU7OSM1NBADhHoKkFwAAAA==" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSE8tKU7OSM1NBADhHoKkFwAAAA==" target="_blank">Run the query</a>
     
     ```kusto
     StormEvents

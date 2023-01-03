@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.multi-table-queries-with-kusto-query-language.exercise-join-types
+title: Exercise - Combine table results by using the join operator
+metadata:
+  unitType: exercise
+  title: Exercise - Combine table results by using the join operator
+  description: In this exercise, you'll learn how to combine table results by using the join operator.
+  ms.date: 09/22/2022
+  author: shsagir
+  ms.author: shsagir
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-exercise-join-types.md)]

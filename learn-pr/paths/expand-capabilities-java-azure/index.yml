@@ -4,8 +4,8 @@ metadata:
   title: Expand the capabilities for Java apps on Azure
   description: Start here and learn how you can get the full power of Azure with your Java apps - use idiomatic libraries to connect and interact with your preferred cloud services, including Azure SQL and NoSQL databases, messaging and eventing systems, Redis cache, storage and directory services. As always, use tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
   ms.date: 11/29/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: bmitchell287
+  ms.author: brendm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Expand the capabilities for Java apps on Azure

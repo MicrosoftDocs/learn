@@ -9,7 +9,6 @@ metadata:
   ms.author: sergaz
   ms.reviewer: adchukwu
   manager: lizross
-  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 summary: Learn how to create an Azure IoT Central application to monitor and manage an IoT device.

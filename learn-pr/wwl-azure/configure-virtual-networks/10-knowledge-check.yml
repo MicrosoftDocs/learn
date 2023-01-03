@@ -1,0 +1,55 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-virtual-networks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/29/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: ""
+
+  questions:
+  - content: "For the Sale department subnet range, which IP address can be dynamically assigned?"
+    choices:
+    - content: "10.3.0.2"
+      isCorrect: false
+      explanation: "Incorrect. Azure reserves the first four addresses in each subnet address range. These four addresses can't be assigned to resources: 10.3.0.0-10.3.0.3."
+    - content: "10.3.255.255"
+      isCorrect: false
+      explanation: "Incorrect. The subnet broadcast address can't be assigned."
+    - content: "10.3.255.254"
+      isCorrect: true
+      explanation: "Correct. Any address in the range 10.3.0.4 through 10.3.255.254 is available for assignment."
+
+  - content: "What feature can support the denial of traffic based on the IP address range?"
+    choices:
+    - content: "Statically assigned IP addresses"
+      isCorrect: true
+      explanation: "Correct. In this situation, use statically assigned IP addresses to avoid having to change the firewall rules."    
+    - content: "Dynamically assigned IP addresses"
+      isCorrect: false
+      explanation: "Incorrect. Dynamically assigned IP addresses require firewall rules to be changed."
+    - content: "IP addresses in the reserved range"
+      isCorrect: false
+      explanation: "Incorrect. IP addresses in the reserved range can't be used."
+
+  - content: "Which of the following statements about Azure Virtual Network is correct?"
+    choices:
+    - content: "Outbound communication with the internet must be configured for each resource on the virtual network."
+      isCorrect: false
+      explanation: "Incorrect. All resources in a virtual network can communicate outbound to the internet, by default."
+    - content: "Azure Virtual Network enables communication between Azure resources."
+      isCorrect: true
+      explanation: "Correct. Azure Virtual Network connects Azure resources including virtual machines, the Azure App Service Environment, Azure Kubernetes Service (AKS), and Azure Virtual Machine Scale Sets. You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts."
+    - content: "Azure virtual networks can't be configured to communicate with on-premises resources."
+      isCorrect: false
+      explanation: "Incorrect. You can connect your on-premises computers and networks to a virtual network by using a Point-to-site virtual private network (VPN), Site-to-site VPN, or Azure ExpressRoute."

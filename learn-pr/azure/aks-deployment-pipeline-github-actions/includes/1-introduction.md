@@ -17,7 +17,7 @@ By the end of this module, you'll be able to:
 ## Prerequisites
 
 - Familiarity with Kubernetes concepts (if you're new to Kubernetes, start with the [basics of Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes/?azure-portal=true&WT.mc_id=akspipeline_intro-learn-ludossan))
-- Familiarity with [Git](/contribute/git-github-fundamentals?WT.mc_id=akspipeline_intro-learn-ludossan) and [GitHub](https://lab.github.com/githubtraining/introduction-to-github)
-- Familiarity with [GitHub Actions](https://lab.github.com/githubtraining/github-actions:-hello-world)
-- An active [Azure subscription](https://azure.microsoft.com/free/services/kubernetes-service/?azure-portal=true&WT.mc_id=akspipeline_intro-learn-ludossan)
+- Familiarity with [Git](/contribute/git-github-fundamentals?WT.mc_id=akspipeline_intro-learn-ludossan) and [GitHub](https://github.com/skills/introduction-to-github)
+- Familiarity with [GitHub Actions](https://github.com/skills/hello-github-actions)
+- An active [Azure subscription](https://azure.microsoft.com/free/services/kubernetes-service/?azure-portal=true&WT.mc_id=akspipeline_intro-learn-ludossan) on which you can create resources
 - Ability to use the [Azure CLI](/azure/aks/kubernetes-walkthrough?WT.mc_id=akspipeline_intro-learn-ludossan)

@@ -44,11 +44,9 @@ When you plan for role-based access, use custom RBAC role definitions within the
     "Description": "Used for platform-wide global connectivity management of network resources.",
     "Actions": [
       "*/read",
-      "Microsoft.Authorization/*/write",
-      "Microsoft.Network/vpnGateways/*",
-      "Microsoft.Network/expressRouteCircuits/*",
-      "Microsoft.Network/routeTables/write",
-      "Microsoft.Network/vpnSites/*"
+      "Microsoft.Network/*",
+      "Microsoft.Resources/deployments/*",
+      "Microsoft.Support/*",
     ],
     "NotActions": [],
     "DataActions": [],
@@ -87,14 +85,14 @@ When you plan for role-based access, use custom RBAC role definitions within the
   }
   ```
 
-- **Subscription owner**: A delegated role for subscription owner derived from subscription owner role.
+- **Subscription owner**: A delegated role for subscription owner derived from the Owner role.
 
   ```json
   {
     "Name": "Subscription owner",
     "Id": "88888888-8888-8888-8888-888888888888",
     "IsCustom": true,
-    "Description": "A delegated role for subscription owner derived from subscription owner role.",
+    "Description": "A delegated role for subscription owner derived from the Owner role.",
     "Actions": [
       "*"
     ],

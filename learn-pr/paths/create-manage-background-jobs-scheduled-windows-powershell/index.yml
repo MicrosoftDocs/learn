@@ -3,7 +3,7 @@ uid: learn.wwl.create-manage-background-jobs-scheduled-windows-powershell
 metadata:
   title: Create and manage background jobs and scheduled jobs in Windows PowerShell
   description: Create and manage background jobs and scheduled jobs in Windows PowerShell
-  ms.date: 08/02/2022
+  ms.date: 11/10/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ prerequisites: |
   *   Familiarity to manage Azure resources and Microsoft 365 services with Windows PowerShell
 summary: |
   This learning path explains the jobs feature of Windows PowerShell. Jobs are an extension point in Windows PowerShell, and there are several types of jobs. Each type works slightly differently and has distinct capabilities.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/create-manage-background-jobs-scheduled-windows-powershell.svg
 levels:
 - intermediate
 roles:
@@ -33,7 +33,6 @@ products:
 - azure-powershell
 - azure-virtual-machines
 - m365
-- vs-code
 subjects:
 - architecture
 - development-tools

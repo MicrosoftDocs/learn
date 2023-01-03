@@ -4,12 +4,11 @@ title: Implement the IoT application with IoT Edge pattern
 metadata:
   title: Implement the IoT application with IoT Edge pattern
   description: Implement the IoT application with IoT Edge pattern
-  ms.date: 01/15/2021
+  ms.date: 10/03/2022
   author: dominicbetts
   ms.author: dobett
   ms.reviewer: rangv
   manager: lizross
-  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
@@ -25,7 +24,7 @@ quiz:
       explanation: "Correct. The IoT Edge runtime runs on each IoT Edge device and manages the modules deployed to each device."
     - content: "In an Azure service"
       isCorrect: false
-      explanation: "No. The IoT Edge runtime runs on a device an interacts with Azure services such as IoT Hub."
+      explanation: "No. The IoT Edge runtime runs on a device and interacts with Azure services such as IoT Hub."
     - content: "In your IoT Central application"
       isCorrect: false
       explanation: "No. The IoT Central UI lets you manage IoT Edge device by communicating with the IoT Edge runtime on the device."

@@ -2,8 +2,8 @@
 uid: learn.wwl.design-for-high-availability
 metadata:
   title: Design for high availability
-  description: "Azure Architects design and recommend highly available solutions."
-  ms.date: 06/20/2022
+  description: "Design for high availability"
+  ms.date: 12/16/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial

@@ -2,7 +2,7 @@ The Azure Maps web SDK has a wide variety of tools you can use to visualize spat
 
 ## Render a map
 
-The Azure Maps web SDK has an interactive JavaScript map control that you can add to a webpage. Maps are drawn (*rendered*) by using the *Spherical Mercator projection coordinate system*, a standard for web-based mapping applications. This system stretches the map at both the North Pole and the South Pole to create a square map that can be drawn on-screen. A result of the stretching is that the further away from the equator you move, the more stretched the map appears. On the map, a country like Greenland appears substantially larger than it actually is.
+The Azure Maps web SDK has an interactive JavaScript map control that you can add to a webpage. Maps are drawn (*rendered*) by using the *Spherical Mercator projection coordinate system*, a standard for web-based mapping applications. This system stretches the map at both the North Pole and the South Pole to create a square map that can be drawn on-screen. A result of the stretching is that the further away from the equator you move, the more stretched the map appears. On the map, a country or region, like Greenland, for example, appears substantially larger than it actually is.
 
 Maps can be rendered in different styles. These styles include:
 

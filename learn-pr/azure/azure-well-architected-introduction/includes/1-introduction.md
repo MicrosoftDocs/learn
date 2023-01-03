@@ -8,8 +8,8 @@ The concepts discussed in this module are not all-inclusive. They represent some
 
 By the end of this module, you'll be able to:
 
-- Describe the pillars of the Azure Well-Architected Framework
-- Identify key principles for creating a solid architectural foundation
+- Describe the pillars of the Azure Well-Architected Framework.
+- Identify key principles for creating a solid architectural foundation.
 
 ## Prerequisites
 

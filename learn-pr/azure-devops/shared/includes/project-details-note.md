@@ -1,4 +1,2 @@
 > [!NOTE]
-> Keep in mind that you can use Azure DevOps to build and deploy almost any kind of application written in any language. In this module, you'll be working with a .NET application written in C#.
-> 
-> You don't need to be an expert in .NET or C# to complete this module. You can apply the patterns you learn here to your own projects that use your favorite programming languages and frameworks.
+> Azure Pipelines support a vast array of [languages and application types](/azure/devops/pipelines/get-started/what-is-azure-pipelines). In this module, you'll be working with a .NET application but you can apply the patterns you learn here to your own projects that use your favorite programming languages and frameworks.

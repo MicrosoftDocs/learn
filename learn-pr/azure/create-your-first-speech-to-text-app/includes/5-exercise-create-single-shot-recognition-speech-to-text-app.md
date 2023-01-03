@@ -2,7 +2,7 @@ In this exercise, you'll create an application that uses single-shot recognition
 
 ## Create your speech-to-text application
 
-1. In the Cloud Shell on the right, create a directory for your application, then switch folders to your new folder.
+1. In the Cloud Shell on the right, create a directory for your application, then change to your new directory.
 
     ```bash
     mkdir speech-to-text
@@ -37,7 +37,7 @@ You'll use this WAVE file for the application in this exercise, and the applicat
 
 ## Add the code for your text-to-speech application
 
-1. In the Cloud Shell on the right, open the *Program.cs* file in Visual Studio Code.
+1. In the Cloud Shell on the right, open the *Program.cs* file.
 
     ```dotnetcli
     code Program.cs
@@ -46,52 +46,40 @@ You'll use this WAVE file for the application in this exercise, and the applicat
 1. Remove all the existing code and add the following `using` statements, which will enable the Azure Cognitive Services Speech APIs for your application.
 
     ```csharp
-    using System;
-    using System.IO;
     using System.Text;
-    using System.Threading.Tasks;
     using Microsoft.CognitiveServices.Speech;
     using Microsoft.CognitiveServices.Speech.Audio;
     ```
 
-1. Add a class and `Main()` function with the following code, which will use Azure Cognitive Services Speech APIs to convert the contents of the text file that you created earlier to create a WAVE file with the synthesized voice.
+1. Add the following code, which will use Azure Cognitive Services Speech APIs to convert the contents of the text file that you created earlier to create a WAVE file with the synthesized voice.
 
     ```csharp
-    namespace speech_to_text
-    {
-        class Program
-        {
-            static async Task Main(string[] args)
-            {
-                string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
-                string azureLocation = "ENTER YOUR LOCATION FROM THE FIRST EXERCISE";
-                string textFile = "Shakespeare.txt";
-                string waveFile = "Shakespeare.wav";
+    string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
+    string azureLocation = "ENTER YOUR LOCATION FROM THE FIRST EXERCISE";
+    string textFile = "Shakespeare.txt";
+    string waveFile = "Shakespeare.wav";
     
-                try
-                {
-                    FileInfo fileInfo = new FileInfo(waveFile);
-                    if (fileInfo.Exists)
-                    {
-                        Console.WriteLine("Speech recognition started.");
-                        var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);
-                        using var audioConfig = AudioConfig.FromWavFileInput(fileInfo.FullName);
-                        using var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
-                        var result = await speechRecognizer.RecognizeOnceAsync();
+    try
+    {
+        FileInfo fileInfo = new FileInfo(waveFile);
+        if (fileInfo.Exists)
+        {
+            Console.WriteLine("Speech recognition started.");
+            var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);
+            using var audioConfig = AudioConfig.FromWavFileInput(fileInfo.FullName);
+            using var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
+            var result = await speechRecognizer.RecognizeOnceAsync();
                         
-                        FileStream fileStream = File.OpenWrite(textFile);
-                        StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
-                        streamWriter.WriteLine(result.Text);
-                        streamWriter.Close();
-                        Console.WriteLine("Speech recognition stopped.");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
+            FileStream fileStream = File.OpenWrite(textFile);
+            StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
+            streamWriter.WriteLine(result.Text);
+            streamWriter.Close();
+            Console.WriteLine("Speech recognition stopped.");
         }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message);
     }
     ```
 
@@ -100,49 +88,37 @@ You'll use this WAVE file for the application in this exercise, and the applicat
 1. When you have finished adding all of the code, your file should resemble the following example.
 
     ```csharp
-
-    using System;
-    using System.IO;
     using System.Text;
     using System.Threading.Tasks;
     using Microsoft.CognitiveServices.Speech;
     using Microsoft.CognitiveServices.Speech.Audio;
     
-    namespace speech_to_text
-    {
-        class Program
-        {
-            static async Task Main(string[] args)
-            {
-                string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
-                string azureLocation = "ENTER YOUR LOCATION FROM THE FIRST EXERCISE";
-                string textFile = "Shakespeare.txt";
-                string waveFile = "Shakespeare.wav";
+    string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
+    string azureLocation = "ENTER YOUR LOCATION FROM THE FIRST EXERCISE";
+    string textFile = "Shakespeare.txt";
+    string waveFile = "Shakespeare.wav";
     
-                try
-                {
-                    FileInfo fileInfo = new FileInfo(waveFile);
-                    if (fileInfo.Exists)
-                    {
-                        Console.WriteLine("Speech recognition started.");
-                        var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);
-                        using var audioConfig = AudioConfig.FromWavFileInput(fileInfo.FullName);
-                        using var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
-                        var result = await speechRecognizer.RecognizeOnceAsync();
+    try
+    {
+        FileInfo fileInfo = new FileInfo(waveFile);
+        if (fileInfo.Exists)
+        {
+            Console.WriteLine("Speech recognition started.");
+            var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);
+            using var audioConfig = AudioConfig.FromWavFileInput(fileInfo.FullName);
+            using var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
+            var result = await speechRecognizer.RecognizeOnceAsync();
                         
-                        FileStream fileStream = File.OpenWrite(textFile);
-                        StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
-                        streamWriter.WriteLine(result.Text);
-                        streamWriter.Close();
-                        Console.WriteLine("Speech recognition stopped.");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
+            FileStream fileStream = File.OpenWrite(textFile);
+            StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
+            streamWriter.WriteLine(result.Text);
+            streamWriter.Close();
+            Console.WriteLine("Speech recognition stopped.");
         }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message);
     }
     ```
 
@@ -158,13 +134,20 @@ You'll use this WAVE file for the application in this exercise, and the applicat
     dotnet run
     ```
 
-1. If you don't see any errors, your application has run successfully. To verify, run the following command to get a list of files in the directory.
+1. If you don't see any errors, your application has run successfully, and you should see the following responses displayed.
+
+    ```text
+    Speech recognition started.
+    Speech recognition stopped.
+    ```
+
+1. Run the following command to get a list of files in the directory.
 
     ```bash
     ls -l
     ```
 
-    You should see a response like the following example, and you should see the _Shakespeare.txt_ in the list of files.
+    You should see a response like the following example, and you should see the *Shakespeare.txt* in the list of files.
 
     ```bash
     drwxr-xr-x 3 user   user     4096 Oct  1 11:11 bin
@@ -175,9 +158,9 @@ You'll use this WAVE file for the application in this exercise, and the applicat
     -rw-r--r-- 1 user   user      348 Oct  1 11:11 speech-to-text.csproj
     ```
 
-    You'll notice that the size of the text file is small; in this example, it is only 98 bytes.
+    You'll notice that the size of the text file is small; in this example, it's only 98 bytes.
 
-1. To view the contents of the _Shakespeare.txt_ file, use the following command.
+1. To view the contents of the *Shakespeare.txt* file, use the following command.
 
     ```bash
     cat Shakespeare.txt

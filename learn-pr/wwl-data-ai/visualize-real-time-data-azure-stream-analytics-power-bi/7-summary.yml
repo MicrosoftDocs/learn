@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.visualize-real-time-data-azure-stream-analytics-power-bi.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 12/30/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: stream-analytics
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

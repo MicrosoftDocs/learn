@@ -2,8 +2,8 @@
 uid: learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals
 metadata:
   title: Get tips and tricks for teaching AI-900 Microsoft Azure AI Fundamentals
-  description: "Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
-  ms.date: 08/25/2022
+  description: "Get tips and tricks for teaching AI-900 Microsoft Azure AI Fundamentals"
+  ms.date: 11/21/2022
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
@@ -36,12 +36,12 @@ products:
 - azure
 units:
 - learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.introduction
+- learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.objective-domains
 - learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.learn-module-best-practices
 - learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.explore-best-practices-for-module-1
 - learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.explore-best-practices-for-module-2
 - learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.explore-best-practices-for-module-3
 - learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.explore-best-practices-for-module-4
-- learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.explore-best-practices-for-module-5
 - learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.bring-it-together
 - learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.knowledge-check
 - learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.summary

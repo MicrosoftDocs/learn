@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.visualize-real-time-data-azure-stream-analytics-power-bi.exercise-create-real-time-data-visualization
+title: Exercise - Create a real-time data visualization
+metadata:
+  title: Exercise - Create a real-time data visualization
+  description: "Exercise - Create a real-time data visualization"
+  ms.date: 12/30/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: stream-analytics
+durationInMinutes: 45
+content: |
+  [!include[](includes/5-exercise-create-real-time-data-visualization.md)]

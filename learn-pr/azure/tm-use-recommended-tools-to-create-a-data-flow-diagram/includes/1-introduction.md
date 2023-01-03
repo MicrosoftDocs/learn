@@ -16,8 +16,8 @@ To help you get there, we recommend a few tools along the way.
 
 In this module, you'll:
 
-- Learn more about the Threat Modeling Tool
-- Learn more about Visio
+- Learn more about the Threat Modeling Tool.
+- Learn more about Visio.
 
 ## Prerequisites
 

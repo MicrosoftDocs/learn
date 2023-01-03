@@ -13,7 +13,7 @@ As an administrator, you can set some security policies individually at each lev
 Documentation and security settings serve three broad purposes.
 
 - Standardization: security policies ensure that everyone on your project responds in the same way to common issues, making it easier to know what is happening and why.
-- Compliance: the countries where you plan to develop and publish your projects may require that you follow industry-standard practices in coding and recording security events.
+- Compliance: the countries/regions where you plan to develop and publish your projects may require that you follow industry-standard practices in coding and recording security events.
 - Prevention of critical failure: most importantly, solid policies defend against events that threaten continued development, like publishing trade secrets or intellectual property.
 
 ## Documentation

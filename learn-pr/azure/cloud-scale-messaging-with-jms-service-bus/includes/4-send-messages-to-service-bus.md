@@ -1,4 +1,4 @@
-You'll now create a Spring Boot application that will send messages to an Azure Service Bus queue.
+You'll now create a Spring Boot application that will send messages to an Azure Service Bus queue. You'll complete the following steps locally.
 
 ## Create a Spring Boot project
 
@@ -32,6 +32,7 @@ In the `pom.xml` file in your `spring-sender-application`, add the following com
     spring.jms.servicebus.connection-string=<xxxxx>
     spring.jms.servicebus.idle-timeout=20000
     ```
+
 2. Set the `spring.jms.servicebus.connection-string` property to the connection string to your Service Bus namespace, which you saved earlier.
 
 ### Add code to send messages to Service Bus

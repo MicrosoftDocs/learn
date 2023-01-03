@@ -11,7 +11,7 @@ metadata:
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
 quiz:
   questions:
@@ -48,14 +48,14 @@ quiz:
     - content: "Because you can't raise another exception"
       isCorrect: false
       explanation: "It's possible to raise another exception in this scenario."
-  - content: "When can it be useful to use `as error` in an `except` block?"
+  - content: "When can it be useful to use `as err` in an `except` block?"
     choices:
     - content: "When you want to raise another exception"
       isCorrect: false
-      explanation: "It's possible to raise another exception without using `as error`."
+      explanation: "It's possible to raise another exception without using `as err`."
     - content: "When you want to reuse or inspect an exception"
       isCorrect: true
-      explanation: "Correct! When a raised exception will be reused or inspected, the `as error` statement can help."
+      explanation: "Correct! When a raised exception will be reused or inspected, the `as err` statement can help."
     - content: "When you want to avoid having a traceback in the output"
       isCorrect: false
       explanation: "Using `as error` is not a requirement to prevent having a traceback in the output."

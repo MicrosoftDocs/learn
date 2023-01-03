@@ -4,9 +4,11 @@ In this module you learned about three ways to connect your on premises data cen
 
 You now have the fundamental knowledge required to design and implement hybrid networking in Azure.
 
-Now that you have reviewed this module, you should be able to:
 
- -  Design and implement a site-to-site VPN connection
- -  Design and implement a point-to-site VPN connection
- -  Design and implement authentication for point-to-site VPN connections
- -  Design and implement Azure Virtual WAN
+## Learn more
+
+ -  [Introduction to Azure VPN Gateway](/training/modules/intro-to-azure-vpn-gateway/)
+ -  [VPN Gateway documentation](/azure/vpn-gateway/)
+ -  [Introduction to Azure Virtual WAN](/training/modules/introduction-azure-virtual-wan/)
+ -  [Virtual WAN documentation](/azure/virtual-wan/)
+
