@@ -1,6 +1,6 @@
 In this unit, you'll learn how to use continuous integration and continuous delivery (CI/CD) pipelines to automate your continuous validation process. 
 
-Although you can run load tests manually, with or without Azure Chaos experiments in parallel, we recommend that you use an automated continuous validation process that can run regularly in a consistent way. To do so, you embed load testing and chaos experiments into your CI/CD pipelines and compare the results against predefined baselines. 
+Although you can run load tests manually, with or without Azure Chaos experiments in parallel, we recommend that you use an automated continuous validation process that can run regularly in a consistent way. To do so, you embed load testing and chaos experiments into your CI/CD pipelines and automatically compare the results against predefined baselines. 
 
 This technique lowers the entry barrier and effort associated with this activity. Developers and operations personnel can use it as part of each release or major change, which improves quality.
 
