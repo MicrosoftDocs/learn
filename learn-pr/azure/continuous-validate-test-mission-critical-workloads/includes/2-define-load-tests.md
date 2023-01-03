@@ -30,7 +30,7 @@ Follow these steps to design a load test, based on the checkout example:
 
 1. Use the threshold values to define a load test that generates realistic traffic for testing application performance, validating expected scale operations, and related activities. Use these same threshold values to develop a health model for the application that covers both testing and production.
 
-Ensure that the load test reflects every relevant user flow and system flow.
+Ensure that your load tests reflect every relevant user flow and system flow.
 
 ## Implement load testing
 
