@@ -10,7 +10,7 @@ Next you'll build the application and also configure it to connect to the Postgr
 
 By the end of this module, you'll be able to incorporate Quarkus applications into Azure Container Apps and integrate with a relational database.
 
-You'll use your own Azure subscription to deploy the resources in this module. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/java/?azure-portal=true&WT.mc_id=java-10785-ropreddy) before you begin.
+You'll use your own Azure subscription to deploy the resources in this module. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/java/?azure-portal=true) before you begin.
 > [!IMPORTANT]
 > To avoid unnecessary charges in your Azure subscription, remember to de-provision your Azure resources when you finish this module.
 

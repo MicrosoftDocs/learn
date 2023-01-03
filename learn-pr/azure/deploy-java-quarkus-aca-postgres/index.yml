@@ -15,8 +15,9 @@ summary: Create a Quarkus application, connect it to a PostgreSQL database, and 
 abstract: |
   In this module, you will:
   - Develop a Quarkus application.
-  - Connect your application to a PostgreSQL database.
+  - Connect your application to an Azure for PostgreSQL database.
   - Deploy the application to Azure Container Apps.
+  - Configure the database firewall so only internal IP addresses can access it.
 prerequisites: | 
   - An Azure subscription
   - Local installations of Java JDK (11 or later), Maven (3.8 or later), Docker Desktop, and the Azure CLI (2.40 or later)
@@ -27,6 +28,7 @@ roles:
 - developer
 products:
 - azure
+- quarkus
 - azure-container-apps
 - azure-database-postgresql
 subjects:
@@ -38,9 +40,8 @@ units:
 - learn.azure.deploy-java-quarkus-aca-postgres.4-aca
 - learn.azure.deploy-java-quarkus-aca-postgres.5-exercise-rg-postgres
 - learn.azure.deploy-java-quarkus-aca-postgres.6-exercise-aca
-- learn.azure.deploy-java-quarkus-aca-postgres.7-secure
-- learn.azure.deploy-java-quarkus-aca-postgres.8-exercise-secure
-- learn.azure.deploy-java-quarkus-aca-postgres.9-knowledge-check
+- learn.azure.deploy-java-quarkus-aca-postgres.7-exercise-secure
+- learn.azure.deploy-java-quarkus-aca-postgres.8-knowledge-check
 - learn.azure.deploy-java-quarkus-aca-postgres.9-summary
 badge:
   uid: learn.azure.deploy-java-quarkus-aca-postgres.badge

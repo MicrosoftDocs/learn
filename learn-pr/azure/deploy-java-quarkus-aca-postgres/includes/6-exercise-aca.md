@@ -125,7 +125,7 @@ Your application is ready at `https://<appName>.azurecontainerapps.io/`. Notice 
 ```bash
 curl --header "Content-Type: application/json" \
     --request POST \
-    --data '{"description":"configuration","details":"congratulations, you have set up your Quarkus application correctly!","done": "true"}' \
+    --data '{"description":"Configuration","details":"Congratulations, you have set up your Quarkus application correctly!","done": "true"}' \
     https://<value of $AZ_APP_URL>/api/todos
 ```
 
@@ -138,7 +138,7 @@ curl https://<value of $AZ_APP_URL>/api/todos
 This command returns the list of all to-do items from the database:
 
 ```json
-[{"id":1,"description":"configuration","details":"congratulations, you have set up your Quarkus application correctly!","done":true}]
+[{"id":1,"description":"Configuration","details":"Congratulations, you have set up your Quarkus application correctly!","done":true}]
 ```
 
 While you create new to-dos, you can stream the logs for your container with:

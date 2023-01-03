@@ -167,7 +167,7 @@ public class TodoResource {
 
 To execute the application in development mode, you need Docker to be up and running. That's because Quarkus detects that you need a PostgreSQL database (thanks to the PostgreSQL dependency `quarkus-jdbc-postgresql` in the `pom.xml`), downloads the PostgreSQL Docker image, and starts a container with the database. Then, it automatically creates the `Todo` table in the database.
 
-Start the application by using the following command:
+Make sure Docker is running locally on your machine and execute the to-do application by using the following command:
 
 ```bash
 ./mvnw quarkus:dev
@@ -231,7 +231,8 @@ curl http://127.0.0.1:8080/api/todos
 This command returns the list of to-do items, including the items you just created:
 
 ```json
-[ {"id":1,"description":"Take Quarkus MS Learn","details":"Take the MS Learn on deploying Quarkus to Azure Container Apps","done":true},
+[ 
+  {"id":1,"description":"Take Quarkus MS Learn","details":"Take the MS Learn on deploying Quarkus to Azure Container Apps","done":true},
   {"id":2,"description":"Take Azure Container Apps MS Learn","details":"Take the ACA Learn module","done":false}
 ]
 ```
@@ -250,7 +251,7 @@ import static io.restassured.RestAssured.given;
 import static javax.ws.rs.core.HttpHeaders.CONTENT_TYPE;
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 
-@QuarkusTest
+@QuarkusTest[3-exercise-build.md](3-exercise-build.md)
 class TodoResourceTest {
 
     @Test

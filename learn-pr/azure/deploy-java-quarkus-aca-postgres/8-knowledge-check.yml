@@ -14,36 +14,36 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which service allows developers to scaffold the structure of a Quarkus application?"
-    choices:
-    - content: "Maven"
-      isCorrect: true
-      explanation: "Maven is a build tool that allows you to configure dependencies and deploy applications."
-    - content: "Code Quarkus"
-      isCorrect: true
-      explanation: "Code Quarkus is a web application that generates a Quarkus project structure for you."
-    - content: "The Azure CLI"
-      isCorrect: false
-      explanation: "The Azure CLI is a command-line interface that you can use to create and manage Azure resources."
   - content: 'Which of the following Java class types provides generic CRUD methods to manage JPA objects?'
     choices:
-    - content: Repository
+    - content: PanacheEntity
       isCorrect: true
-      explanation: "Correct. By extending `JpaRepository`, you get a bunch of generic CRUD methods that allow you to manage JPA objects."
-    - content: Controller
+      explanation: "Correct. By extending `PanacheEntity`, you get a bunch of generic CRUD methods that allow you to manage JPA objects."
+    - content: Resource
       isCorrect: false
-      explanation: "A `Controller` publishes REST interfaces to store and retrieve data through HTTP."
+      explanation: "A Resource publishes REST interfaces to store and retrieve data through HTTP."
     - content: Entity
       isCorrect: false
       explanation: "A JPA entity object maps Java classes to database tables."
-  - content: "Which Maven command will create your Azure Container Apps instance in Azure?"
+  - content: "Which Azure CLI command will create an Azure Container Apps environment, an Azure registry, build a Docker image and deploy it to Azure?"
     choices:
-    - content: "config"
+    - content: "az containerapp create"
       isCorrect: false
-      explanation: "This command sets up your project with a subscription, Java version, and operating system you specify."
-    - content: "deploy"
+      explanation: "This command only create the Azure Container Apps environment."
+    - content: "az containerapp up"
       isCorrect: true
-      explanation: "Correct. This command creates your instance. It copies your application and starts it."
-    - content: "package"
+      explanation: "Correct. This command creates the Azure Container Apps environment, the Azure Registry, the Log Analytics workspace, builds the Docker image, pushes it to the registry and deploys it"
+    - content: "az containerapp deploy"
       isCorrect: false
-      explanation: "This command bundles your application into an executable JAR file."
+      explanation: "This command does not exist."
+  - content: "Which range of IP address a firewall has to specify to only allow Azure internal-IP addresses only?"
+    choices:
+    - content: "From 0.0.0.0 to 255.255.255.255"
+      isCorrect: false
+      explanation: "This range allows all external and internal IP addresses."
+    - content: "From 0.0.0.0 to 0.0.0.0"
+      isCorrect: true
+      explanation: "Correct. This range only allows internal IP addresses."
+    - content: "From 255.255.255.255 to 255.255.255.255"
+      isCorrect: false
+      explanation: "This range is invalid."
