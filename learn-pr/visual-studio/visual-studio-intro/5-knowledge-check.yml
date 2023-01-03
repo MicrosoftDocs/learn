@@ -24,12 +24,12 @@ quiz:
         - content: Visual Studio Code predates Visual Studio.
           isCorrect: false
           explanation: Incorrect. Visual Studio predates Visual Studio Code by several years.
-        - content: Visual Studio is over 20 years old while Visual Studio Code was first released in 2015.
+        - content: Visual Studio is more than 20 years old, while Visual Studio Code was first released in 2015.
           isCorrect: true
           explanation: Correct. Visual Studio Code is the latest addition to the Visual Studio family that started over 20 years ago.
-        - content: Visual Studio Code is an integrated development environment while Visual Studio is a light-weight source code editor. 
+        - content: Visual Studio Code is an integrated development environment, while Visual Studio is a lightweight source-code editor. 
           isCorrect: false
-          explanation: Incorrect. The reverse is true. Visual Studio is an IDE and VS Code is the light-weight editor.
+          explanation: Incorrect. The reverse is true. Visual Studio is an IDE, and VS Code is the lightweight editor.
     - content: What is one tool that enables me to pair program in Visual Studio?
       choices:
         - content: IntelliCode
