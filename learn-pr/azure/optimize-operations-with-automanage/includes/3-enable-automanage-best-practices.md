@@ -1,6 +1,6 @@
 Azure Automanage can be enabled on existing or new virtual machines using the Azure portal, Azure Resource Manager (ARM), or Azure Policy.
 
-## Enable Azure Automanage on a VM using the Azure portal
+## Enable Azure Automanage using the Azure portal
 
 If you don't have an Azure subscription, [create an account](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/) before you begin.
 
@@ -22,3 +22,70 @@ If you don't have an Azure subscription, [create an account](https://azure.micro
 1. Select the **Machines** tab, then check the box for the machine(s) you want to enable for Automanage:
     :::image type="content" source="../media/existing-vm-select-machine.png" alt-text="Screenshot showing how to select from a list of available virtual machines.":::
 1. Select the Review + Create tab to review the machine(s) you've chose, then select the **Create** button.
+
+## Enable Azure Automanage using Azure Resource Manager (ARM) templates
+
+You can onboard a VM to Automanage using an ARM template using the following template. This ARM template will create a configuration profile assignment for your specified Azure Arc-enabled machine:
+
+```json
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "machineName": {
+            "type": "String"
+        },
+        "configurationProfile": {
+            "type": "String"
+        }
+    },
+    "resources": [
+        {
+            "type": "Microsoft.HybridCompute/machines/providers/configurationProfileAssignments",
+            "apiVersion": "2022-05-04",
+            "name": "[concat(parameters('machineName'), '/Microsoft.Automanage/default')]",
+            "properties": {
+                "configurationProfile": "[parameters('configurationProfile')]"
+            }
+        }
+    ]
+}
+```
+
+The `configurationProfile` value can be one of the following values:
+
+- `"/providers/Microsoft.Automanage/bestPractices/AzureBestPracticesProduction"`
+- `"/providers/Microsoft.Automanage/bestPractices/AzureBestPracticesDevTest"`
+- `"/subscriptions/[sub ID]/resourceGroups/resourceGroupName/providers/Microsoft.Automanage/configurationProfiles/customProfileName (for custom profiles)`
+
+To deploy the templates, follow these steps:
+
+1. Save this ARM template as `azuredeploy.json`.
+1. Run this ARM template deployment with `az deployment group create --resource-group myResourceGroup --template-file azuredeploy.json`.
+1. Provide the values for `machineName` and `configurationProfileAssignment` when prompted.
+1. You're ready to deploy.
+
+As with any ARM template, it's possible to factor out the parameters into a separate azuredeploy.parameters.json file and use that as an argument when deploying.
+
+## Enable Azure Automanage using Azure Policy
+
+You can enable Automanage for multiple VMs using a built-in Azure policy.
+
+1. Sign in to the [Azure portal](https://portal.azure.com/).
+1. In the search bar, search for and select **Policy**.
+1. In the menu, select **Definitions**.
+1. In the **Categories** drop-down, select **Automanage**.
+    The list of policies will update to include the following:
+    - Configure virtual machines to be onboarded to Azure Automanage 
+    - Configure virtual machines to be onboarded to Azure Automanage with Custom Configuration Profile
+1. Select the applicable policy. You wil then be able to view its **Definition** tab.
+    > [!NOTE]
+    > The Azure Policy definition is used to set Automanage parameters like the configuration profile. It also sets filters that ensure the policy applies only to the correct VMs.
+1. Select the **Assign** button to create an assignment.
+1. Under the **Basics** tab, fill out **Scope** by setting the *Subscription* and *Resource Group*.
+    > [!NOTE]
+    > The Scope lets you define which VMs this policy applies to. Policies can be applied at the subscription level or the resource group level. If you set a resource group, all VMs that are currently in that resource group or any future VMs added to it will have Automanage automatically enabled.
+1. Select the **Parameters** tab, uncheck the *Only show parameters that need input or review* option (if necessary), and then set the **Configuration Profile** and desired **Effect**.
+1. Under the **Review + create** tab, review the settings.
+1. Apply the assignment by selecting **Create**.
+1. View your assignments in the **Assignments** tab next to **Definition**.
