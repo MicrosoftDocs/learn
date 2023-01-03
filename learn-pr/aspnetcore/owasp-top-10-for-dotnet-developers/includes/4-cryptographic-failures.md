@@ -1,10 +1,11 @@
-<!-- ## A02: Cryptographic Failures -->
+This category refers to failures related to cryptography that often leads to sensitive data exposure or system compromise.
 
-Failures related to cryptography that often leads to sensitive data exposure or system compromise.
-.NET provides us with all the tools we need, encryption, hashing and random number generation out of the box
+To begin, let's distinguish between encoding, encryption and hashing.
+Encoding a value provides no security, it helps transmit data in a channel (e.g. base 64 encoding over HTTP), it changes the format of a value, obstructs but not protects the value.
+Encryption is a reversible operation that translates text into what may seem a random and meaningless cypher. To decrypt the the value an encryption *key* is needed.
+Hashing is a one-way operation, there is no way to de-hash a value.
 
-> [!CAUTION]
-> Avoid writing your own cryptographic libraries.
+.NET provides us with all the tools you need, encryption, hashing and random number generation out of the box.
 
 Good practices would include
 
@@ -12,10 +13,13 @@ Good practices would include
 - Protection data in transit and at rest and in use (Azure confidential computing) ​
 - Use strong cryptographic algorithms like AES
 
+> [!CAUTION]
+> Avoid writing your own cryptographic algorithms. Favor platform's build-in capabilities.
+
 ## Encryption
 
 Let's explore a couple of examples of what ``System.Security.Cryptography`` namespace if contained functionality has to offer.
-We'll start with Advanced Encryption Standard (AES), in the example below we create a new instance of the Aes (Strong) class. Instance is used to generate new key and initialization vector (IV).​
+We'll start with Advanced Encryption Standard (AES), in the example below you create a new instance of the Aes (Strong) class. Instance is used to generate new key and initialization vector (IV).​
 The following example illustrates how to use the Advanced Encryption Standard to be used to perform encryption on any type of managed stream, then the steam is wrapped with CryptoStream.
 
  ```csharp

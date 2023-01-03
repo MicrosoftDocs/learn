@@ -3,13 +3,13 @@ Implementing secured and high quality software  be challenging. In this module, 
 <!-- ![Security culture, delivery and automation cogs work better with CI, shift left and automation](../media/security-in-devops.png) -->
 # Threat landscape
 
-No developer, whether your an independent or enterprise, sets out to write bad or insecure code, yet year after year we’re still seeing the same vulnerabilities - the same types of vulnerabilities, pop up in applications. Developers write code to the best of their ability – but what you don’t know what you don’t know, which means the foundation of any AppSec programme has to be education.
+No developer, whether you're an independent or enterprise, sets out to write bad or insecure code. However, year after year same types of vulnerabilities are reported by the security researchers. Developers write code to the best of their ability and knowledge, which is why the foundation of any AppSec programme has to be education.
 
 ![Application Security](../media/appsec.png)
 
 Malware, exploits and many other cyber threats are on the rise. Attacks happen by exploiting vulnerabilities in an application. A vulnerability is just an unintended flaw or weakness in that application. The way data is processed or validated, how information is stored or protected, a simple misconfiguration of a external service that forms part of the application are a few examples of where vulnerability could be introduced.
 
-We, as authors of ever more complex systems, are responsible for success of your products and part of that success is providing your customers with a secure and reliable solution. Education element of the secured development lifecycle is fundamental, understanding the risk associated and discussed in OWASP Top Ten is a great start.
+We, as authors of ever more complex systems, are responsible for success of your products and part of that success is providing your customers with a secure and reliable solution. Education element of the secured development lifecycle is fundamental, understanding the risk associated and discussed in OWASP Top 10 is a great start.
 
 Not a week goes by without a news story about a company being hacked, ransomware or data being stolen and posted on dark web. According to the 2021 Identity Theft Resource Center (ITRC) Annual Data Breach Report the cost of a data breach increased by nearly 10% between 2020 and 2021. Data breaches are increasing and getting more costly.
 
@@ -37,10 +37,25 @@ AppSec logically falls under the wider context of **Information Security (InfoSe
 
 **DevSecOps** is an evolution in the way development organizations approach security by introducing a security-first mindset culture, and automating security into every phase of the software development lifecycle from design to delivery.​
 
-### Join the Team
+### Meet the Team
 
-#### Scenario
+Suppose you're joining a new IT company with an established team working on a legacy software. Team's main focus is maintaining, supporting and developing new features of a rich web application used by customer all around the world. Website and it's underlying infrastructure has only just recently been migrated to Microsoft Azure cloud.
+The team you're part of has a mix of talent, including early in career and seasoned enterprise developers.
 
-:::image type="content" source="../../../azure-devops/shared/media/mara.png" alt-text="Cartoon depiction of Sarah":::
+:::row:::
+    :::column:::
+        :::image  type="content" source="../../../azure-devops/shared/media/mara.png" alt-text="Cartoon depiction of your teammate Sarah":::
+    :::column-end:::
+    :::column:::
+        :::image  type="content" source="../../../azure-devops/shared/media/irwin.png" alt-text="Cartoon depiction of your teammate, Irwin":::
+    :::column-end:::
+    :::column:::
+        :::image  type="content" source="../../../azure-devops/shared/media/tim.png" alt-text="Cartoon depiction of your teammate Tim":::
+    :::column-end:::
+    :::column:::
+        :::image  type="content" source="../../../azure-devops/shared/media/andy.png" alt-text="Cartoon depiction of your teammate Andy":::
+    :::column-end:::
+:::row-end:::
 
-Sarah just joined as a developer working on a brown-field legacy software....
+Team for long has been slowed down by manual release process that proofed to be unreliable, error prone and heavy on manual interaction. As part of migration to the cloud team is looking into adopting modern CI/CD automation.
+The company hasn't fully grasped the concepts behind secure DevOps practices. Security of the digital estate has long been neglected by the business. With the new hire the company is looking to spread the security best practices not only within the team but the company as a whole.

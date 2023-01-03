@@ -20,7 +20,7 @@ Without validation of user input, a malicious actor could supplement a genuine u
 SELECT * FROM Users WHERE name = 'a';DROP TABLE users;--
 ```
 
-We always want to verify that input is safe, legitimate and in the correct format. Here we do client-side validation in the form with the DataAnnotationsValidator component.​
+Always verify that input is safe, legitimate and in the correct format. In following example the client-side validation in the form with the DataAnnotationsValidator component.​
 
 Framework provides build-in capabilities for data annotation and validation. The attributes from `System.ComponentModel.DataAnnotations` can decode your data model to provide the necessary validation functionality.
 
@@ -44,7 +44,7 @@ Additionally, if validation passes on the server, process the form and send back
 
 Be extra careful when it comes to uploading a file.
 
-Input validation also includes the way we handle file upload. Following example (ASP.NET Blazor component) attempts to validate correctness of file before uploading it to Azure Blob Storage, including check for expected extension, max file size and overriding supplied filename with a random name.
+Input validation also includes the way you handle file upload. Following example (ASP.NET Blazor component) attempts to validate correctness of file before uploading it to Azure Blob Storage, including check for expected extension, max file size and overriding supplied filename with a random name.
 
 ```csharp actor
 <InputFile OnChange = "@LoadFile" />

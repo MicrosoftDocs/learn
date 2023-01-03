@@ -5,9 +5,9 @@ Addresses design level flaw, others focus more on code-level issues​. An examp
 Insecure Design is a new entry on the OWASP Top 10 in 2021. It's different from insecure implementation in that it has more to do with risks related to design and architectural flaws. A secure implementation might have an insecure design, which still renders an application vulnerable to attacks and exploits.​
 An insecure design can not be fixed by a perfect implementation.​
 
-If we genuinely want to 'shift left' as an industry, we need more threat modeling, secure design patterns and principles, and reference architectures. ​
+If you genuinely want to 'shift left' as an industry, you need more threat modeling, secure design patterns and principles, and reference architectures. ​
 :::image type="content" source="../media/enterprise-app-threats.png" alt-text="angles of attack in complex system":::
-Security should be not an afterthought  - how we protect our system’s configuration secrets, handle customers data, leak implementation details during logging and so on​.
+Security should be not an afterthought  - how you protect your system’s configuration secrets, handle customers data, leak implementation details during logging and so on​.
 Security matters not only in development and prediction but at design as well.
 Consult with security experts to ensure appropriate requirements and design decisions are being made early on​.
 Use industry security standards and architectures, dedicated services like Azure KeyVault or Azure Web Application Firewall​.

@@ -3,7 +3,7 @@ uid: learn.owasp-top-10-for-dotnet-developers.cryptographic-failures
 title: Cryptographic Failures
 metadata:
   title: cryptographic-failures
-  description: "OWASP Top Ten 2021 for .NET Developers. Cryptographic failures."
+  description: "OWASP Top 10 for .NET Developers. Cryptographic failures."
   ms.date: 01/09/2022
   author: obrocki
   ms.author: dawidobrocki

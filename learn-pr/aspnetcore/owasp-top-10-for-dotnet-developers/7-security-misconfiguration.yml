@@ -3,7 +3,7 @@ uid: learn.owasp-top-10-for-dotnet-developers.security-misconfiguration
 title: Security Misconfiguration
 metadata:
   title: security-misconfiguration
-  description: "OWASP Top Ten 2021 for .NET Developers. Security misconfiguration."
+  description: "OWASP Top 10 for .NET Developers. Security misconfiguration."
   ms.date: 01/09/2022
   author: obrocki
   ms.author: dawidobrocki

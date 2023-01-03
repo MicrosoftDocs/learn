@@ -16,8 +16,7 @@ Let's consider a ASP.NET Core controller
 
 :::row:::
     :::column:::
-        No authorization attributes
-
+        Controller with no authorization attributes.
 ```csharp
 
 public class AccountController : Controller​
@@ -35,8 +34,7 @@ public class AccountController : Controller​
 
 :::column-end:::
     :::column:::
-        With Attributes
-
+        Controller with authorization attributes, based on policy or role.
 ```csharp
 [Authorize(Policy="", Roles=""]​
 public class AccountController : Controller​

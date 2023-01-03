@@ -18,7 +18,7 @@ Logging and monitoring allow teams to stop the attack before more damage can be 
 
 Make sure you have answers to the following questions:
 
-* What can we log?
+* Is any logging configured and what can be logged?
 * Who has viewed or downloaded a specific file?
 * Have any incorrect authentication attempts occurred?
 * Who has logged in recently?

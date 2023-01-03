@@ -3,7 +3,7 @@ uid: learn.owasp-top-10-for-dotnet-developers.insecure-design
 title: Insecure Design
 metadata:
   title: insecure-design
-  description: "OWASP Top Ten 2021 for .NET Developers. Insecure design."
+  description: "OWASP Top 10 for .NET Developers. Insecure design."
   ms.date: 01/09/2022
   author: obrocki
   ms.author: dawidobrocki

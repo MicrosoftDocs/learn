@@ -32,7 +32,7 @@ The developers shouldn't only be focusing on just their own code. Single codebas
     :::column-end:::
 :::row-end:::
 
-Shift left security. Don't treat security as an afterthought. The sooner we start addressing security considerations the easier and cheeper it is to implement them.
+Shift left security. Don't treat security as an afterthought. The sooner you start addressing security considerations the easier and cheeper it is to implement them.
 Remember the Zero Trust principles and apply them in your apps in systems:
 
 -**Verify explicitly.** Always authenticate and authorize based on all available data points, including user, application and device identity, location etc.
@@ -41,7 +41,7 @@ Remember the Zero Trust principles and apply them in your apps in systems:
 
 -**Assume breach.** Mentality help minimize the blast radius for breaches and prevent lateral movement. Enable swift replacement and rotation of credentials. Keep sessions, network access, and data encrypted end to end. Build and test durable and repeatable backup and restore processes. Avoid insecure legacy authentication and authorization protocols.
 
-We already broke out of silo-ed approach with bringing developers and operations together with DevOps. It's about time to make security experts and champions part of your team to ensure best security practices.
+You already broke out of silo-ed approach with bringing developers and operations together with DevOps. It's about time to make security experts and champions part of your team to ensure best security practices.
 
 Security code reviews, automation of security checks with SAST, DAST and SCA, and threat modeling can identify most of the OWASP Top 10 items.
 
