@@ -1,6 +1,6 @@
 Congratulations! You've deployed a Quarkus application to Azure Container Apps.
 
-Your company wanted to learn how to deploy a Quarkus applications to the Cloud. You followed these steps:
+Your company wanted to learn how to deploy a Quarkus application to the Cloud. You followed these steps:
 
 1. Create a sample Quarkus application, execute and test it locally.
 
@@ -10,7 +10,7 @@ Your company wanted to learn how to deploy a Quarkus applications to the Cloud. 
 
 1. Create an Azure Container Apps environment, deploy the Quarkus application container and test it in the cloud.
 
-1. Updade the firewall rules to disable external calls to the database and only allow the Quarkus application to access it.
+1. Update the firewall rules to disable external calls to the database and only allow the Quarkus application to access it.
 
 You're now confident that you can recommend executing your Quarkus application to Azure Container Apps.
 

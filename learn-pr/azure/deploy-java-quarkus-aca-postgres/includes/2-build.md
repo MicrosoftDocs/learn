@@ -1,4 +1,4 @@
-In this unit, you'll learn how to create a Quarkus application, connect it to a PostgreSQL database, and run everything locally. Later on you will create an Azure Container Apps environment and deploy the application remotely.
+In this unit, you'll learn how to create a Quarkus application, connect it to a PostgreSQL database, and run everything locally. Later on you'll create an Azure Container Apps environment and deploy the application remotely.
 
 ## Introduction to Azure Container Apps
 
@@ -8,13 +8,13 @@ You want to create a Quarkus application that hosts its logic in Azure Container
 
 ### Introduction to Azure Database for PostgreSQL
 
-[Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql) is a relational database service based on the open-source Postgres database engine. It's a fully managed database-as-a-service that can handle mission-critical workloads with predictable performance, security, high availability, and dynamic scalability.
+[Azure Database for PostgreSQL](https://learn.microsoft.com/azure/postgresql) is a relational database service based on the open-source Postgres database engine. It's a fully managed database-as-a-service that can handle mission-critical workloads with predictable performance, security, high availability, and dynamic scalability.
 
 ## Introduction to Quarkus
 
-[Quarkus](https://quarkus.io) is A Kubernetes Native Java stack tailored for OpenJDK HotSpot & GraalVM, crafted from the best of breed Java libraries and standards. In practice, Quarkus is an Open Source stack for writing Java applications, specifically back end applications. So Quarkus is not limited to microservices, even though it is highly suited for it.
+[Quarkus](https://quarkus.io) is A Kubernetes Native Java stack tailored for OpenJDK HotSpot & GraalVM, crafted from the best of breed Java libraries and standards. In practice, Quarkus is an Open Source stack for writing Java applications, specifically back end applications. So Quarkus isn't limited to microservices, even though it's highly suited for it.
 
-From a developer's point of view, Quarkus proposes a nice developer experience: it gives you fast live reload, unified configuration and hides the complexity of GraalVM, allowing you to easily generate native executables. All this without reinventing the wheel by proposing a new programming model, Quarkus leverages your experience in standard libraries that you already know (e.g. CDI, JPA, Bean Validation, JAX-RS, etc.) as well as many popular frameworks (e.g. Eclipse Vert.x, Apache Camel, etc.).
+From a developer's point of view, Quarkus proposes a nice developer experience: it gives you fast live reload, unified configuration and hides the complexity of GraalVM, allowing you to easily generate native executables. All this without reinventing the wheel by proposing a new programming model. Quarkus leverages your experience in standard libraries that you already know (for example, CDI, JPA, Bean Validation or JAX-RS) as well as many popular frameworks (such as Eclipse Vert.x or Apache Camel).
 
 ## Develop your Quarkus application
 

@@ -1,8 +1,8 @@
-In this unit, you'll create a basic Quarkus application. You'll use Maven to bootstrap the application and an integrated development environment (IDE) of your choice to edit the code. Use a terminal of your choice to run the code. You will use Docker to start a local PostgreSQL database so you can run and test your to-do application locally.
+In this unit, you'll create a basic Quarkus application. You'll use Maven to bootstrap the application and an integrated development environment (IDE) of your choice to edit the code. Use a terminal of your choice to run the code. You'll use Docker to start a local PostgreSQL database so you can run and test your to-do application locally.
 
 ## Generate the Quarkus application using Maven
 
-There are different ways to generates a Quarkus project structure for you. You can use the [Quarkus web interface](https://code.quarkus.io), an IDE plugin, or the Quarkus Maven plugin. Let's use the Maven plugin to generate the project structure.
+There are different ways to generate a Quarkus project structure for you. You can use the [Quarkus web interface](https://code.quarkus.io), an IDE plugin, or the Quarkus Maven plugin. Let's use the Maven plugin to generate the project structure.
 
 You'll generate your application scaffold with several dependencies:
 
@@ -228,7 +228,7 @@ Next, retrieve the data by using a new `cURL` request:
 curl http://127.0.0.1:8080/api/todos
 ```
 
-This command returns the list of to-do items, including the items you just created:
+This command returns the list of to-do items, including the items you created:
 
 ```json
 [ 

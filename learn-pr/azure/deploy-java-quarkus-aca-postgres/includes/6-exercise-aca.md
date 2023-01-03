@@ -1,4 +1,4 @@
-In this unit, you'll create the Azure Container Apps environment using the Azure CLI. Then, you will containerize the Quarkus application into a Docker image, push it to Azure Registry and deploy the image to Azure Container Apps.
+In this unit, you'll create the Azure Container Apps environment using the Azure CLI. Then, you'll containerize the Quarkus application into a Docker image, push it to Azure Registry and deploy the image to Azure Container Apps.
 
 ## Set up the Dockerfile for the Quarkus application
 
@@ -30,7 +30,7 @@ ENV JAVA_OPTS="-Dquarkus.http.host=0.0.0.0 -Djava.util.logging.manager=org.jboss
 ENV JAVA_APP_JAR="/deployments/quarkus-run.jar"
 ```
 
-This Dockerfile expects the Quarkus application to be packaged as a `quarkus-run.jar` file. This is the default name for the Quarkus application when it is packaged as a `jar` file. So, we need to make sure that the Quarkus application is packaged as a `jar` file. To do this, we need to execute the following Maven command:
+This Dockerfile expects the Quarkus application to be packaged as a `quarkus-run.jar` file. This is the default name for the Quarkus application when it's packaged as a `jar` file. So, we need to make sure that the Quarkus application is packaged as a `jar` file. To do this, we need to execute the following Maven command:
 
 ```bash
 ./mvnw package
@@ -40,7 +40,7 @@ This command will package the Quarkus application into a `jar` file and generate
 
 ## Create the Azure Container App Environment and Deploy the container
 
-Now that we have the Dockerfile at the right location, we can create the Azure Container App environment and deploy the container in a single Azure CLI command. Execute the following command at the root of the project:
+Now that we've the Dockerfile at the right location, we can create the Azure Container App environment and deploy the container in a single Azure CLI command. Execute the following command at the root of the project:
 
 ```bash
 az containerapp up \
@@ -79,7 +79,7 @@ Your container app ca-azure-deploy-quarkus has been created and deployed! Congra
 
 ## Check the deployment
 
-You chan check the deployment has succeeded in several ways. The most obvious way is to check the [Azure Portal](http://portal.azure.com). You should see the following:
+You can check the deployment has succeeded in several ways. The most obvious way is to check the [Azure portal](https://portal.azure.com). You should see the following:
 
 ![Screenshot showing the deployed application.](../media/azure-portal.png)
 

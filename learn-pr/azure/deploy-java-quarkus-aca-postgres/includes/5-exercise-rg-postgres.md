@@ -1,4 +1,4 @@
-In this unit, you'll create the Azure Resource Group that will contain all our resources, and set up the PostgreSQL database using the Azure CLI. Then, you will configure the Quarkus application to access the remote PostgreSQL database. Use a terminal of your choice to run the commands.
+In this unit, you'll create the Azure Resource Group that will contain all our resources, and set up the PostgreSQL database using the Azure CLI. Then, you'll configure the Quarkus application to access the remote PostgreSQL database. Use a terminal of your choice to run the commands.
 
 ## Prepare the working environment
 
@@ -17,7 +17,7 @@ AZ_POSTGRES_SERVER_NAME="psql<unique-identifier>"
 ```
 
 > [!NOTE]
-> You can name your Azure resources the way you want, but we recommend to check [this documentation](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) that gives you abbreviation for many of the resources in Azure (eg. `rg` for Resource Groups, `ca` for Azure Container Apps, etc.).
+> You can name your Azure resources the way you want, but we recommend to check [this documentation](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) that gives you abbreviation for many of the resources in Azure (for example, `rg` for Resource Groups or `ca` for Azure Container Apps).
 
 Make sure to replace the placeholders when needed. These environment variables are used throughout this module.
 
@@ -28,7 +28,7 @@ Make sure to replace the placeholders when needed. These environment variables a
 | `AZ_LOCATION` | The Azure region you'll use. We recommend that you use a region close to where you live. To see the full list of available regions, enter `az account list-locations` |
 | `AZ_CONTAINERAPP` | The name of the Azure Container Apps holding all the containers |
 | `AZ_CONTAINERAPP_ENV` | The name of the Azure Container Apps environment |
-| `AZ_POSTGRES_SERVER_NAME` | The name of your PostgreSQL server (nonalphanumeric characters are not allowed (-, _, !, $, #, %, etc.)). It **should be unique across Azure make sure to use a <unique-identifier>** |
+| `AZ_POSTGRES_SERVER_NAME` | The name of your PostgreSQL server (nonalphanumeric characters are not allowed (-, _, !, $, #, %)). It **should be unique across Azure make sure to use a <unique-identifier>** |
 | `AZ_POSTGRES_DB_NAME` | The name of the default PostgreSQL database is `postgres` |
 | `AZ_POSTGRES_USERNAME` | The default username of your PostgreSQL database server |
 | `AZ_POSTGRES_PASSWORD` | The default password of your PostgreSQL database server |
@@ -128,4 +128,4 @@ Createdat                   Description                         Details         
 2022-12-30T16:51:08.789207  Take Azure Container Apps MS Learn  Take the ACA Learn module                                       False
 ```
 
-If you have the following output, then you have successfully executed the Quarkus application and connected to the remote PostgreSQL database.
+If you have the following output, then you've successfully executed the Quarkus application and connected to the remote PostgreSQL database.

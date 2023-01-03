@@ -1,4 +1,4 @@
-In this unit, you'll make sure the PostgreSQL database can only be access by the Quarkus application, not other external client. At the moment, we can access the database from any client (using Azure CLI and running Quarkus locally), which is not secure. So we will add a firewall rule to only allow IP addresses within the Azure Container Apps environment to access the database server.
+In this unit, you'll make sure the PostgreSQL database can only be access by the Quarkus application, not other external client. At the moment, we can access the database from any client (using Azure CLI and running Quarkus locally), which is not secure. So we'll add a firewall rule to only allow IP addresses within the Azure Container Apps environment to access the database server.
 
 ## Access the PostgreSQL server from the CLI
 
@@ -18,7 +18,7 @@ You should be able to see the content of the database. That means the database i
 
 ## Remove the Permissive Firewall Rule
 
-Azure Database for PostgreSQL is secured by default. Its firewall usually do not allow incoming connections. But when we previously created the PostgreSQL server, we specified the `--public all` parameter to enable external access. This means that the firewall is open to the public.
+Azure Database for PostgreSQL is secured by default. Its firewall usually doesn't allow incoming connections. But when we previously created the PostgreSQL server, we specified the `--public all` parameter to enable external access. This means that the firewall is open to the public.
 
 You can list the existing firewall rules with the following command:
 
@@ -66,7 +66,7 @@ After a period of time, the call times out, and you should see:
 Unable to connect to flexible server: connection to server failed: Operation timed out
 ```
 
-Because we have removed all the firewall rules, even the Quarkus application has no access to the database now. If you try to retrieve the to-dos from the database, it will fail. Execute the following `cURL` request:
+Because we've removed all the firewall rules, even the Quarkus application has no access to the database now. If you try to retrieve the to-dos from the database, it will fail. Execute the following `cURL` request:
 
 ```bash
 curl https://<value of $AZ_APP_URL>/api/todos

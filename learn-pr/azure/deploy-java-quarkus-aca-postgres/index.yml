@@ -28,7 +28,6 @@ roles:
 - developer
 products:
 - azure
-- quarkus
 - azure-container-apps
 - azure-database-postgresql
 subjects:

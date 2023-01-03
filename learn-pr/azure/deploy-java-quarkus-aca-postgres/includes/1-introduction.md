@@ -24,7 +24,7 @@ By the end of this module, you'll be able to:
 
 ## Prerequisites
 
-As a Java developer, you're already familiar with Java applications. Quarkus will be explained as you follow along. As you complete the exercises in this module, you'll use a personal Azure account. Make sure that you have the following resources:
+As a Java developer, you're already familiar with Java applications. Quarkus will be explained as you follow along. As you complete the exercises in this module, you'll use a personal Azure account. Make sure that you've the following resources:
   
 - An Azure subscription
 - Local installations of Java JDK (11 or later), Maven (3.8 or later), and the Azure CLI (2.43 or later)
