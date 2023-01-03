@@ -93,7 +93,7 @@ Here, you use parameters to limit the values allowed for a parameter.
 
 1. Again, enter **par**, and select **new-parameter**.
 
-1. Change the new generic parameter to this:
+1. Change the new generic parameter to the following:
 
     ```json
     "storageSKU": {
@@ -271,7 +271,8 @@ Here, you deploy the template and see the endpoints output as JSON. You need to 
     New-AzResourceGroupDeployment `
       -Name $deploymentName `
       -TemplateFile $templateFile `
-      -storageName {your-unique-name}
+      -storageName {your-unique-name} `
+      -storageSKU Standard_LRS
     ```
 
     Notice the output.
