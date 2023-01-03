@@ -4,9 +4,10 @@ title: What is functional testing?
 metadata:
   title: What is functional testing?
   description: Define functional tests and identify some popular kinds of tests you can run.
-  ms.date: 06/23/2021
+  ms.date: 08/04/2022
   author: steved0x
   ms.author: sdanie
+  ms.custom: devdivchpfy22
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
@@ -37,7 +38,7 @@ quiz:
     - content: "Unit testing"
       isCorrect: false
       explanation: "Although unit testing can verify that your application's business logic produces the correct result given certain inputs, it doesn't verify that the result functions as expected for the user."
-  - content: "Which kind of functional testing is typically performed by humans, rather than through automation?"
+  - content: "Which kind of functional testing is typically performed by humans rather than through automation?"
     choices:
     - content: "Unit testing"
       isCorrect: false
