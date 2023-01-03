@@ -10,7 +10,7 @@ In continuous validation, you:
 - Evaluate and adjust baselines and thresholds regularly.
 - Implement Azure services in automated pipelines.
 
-Microsoft Azure provides the following services to help with continuous validation:
+Microsoft Azure provides the following services to implement load testing and chaos engineering:
 
 - [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing) is a managed service for generating synthetic, real-world traffic to test the application and underlying infrastructure and services.
 - [Azure Chaos Studio](/azure/chaos-studio/chaos-studio-overview) is a managed service that provides chaos engineering capabilities to systematically inject failures into key components of the application.
