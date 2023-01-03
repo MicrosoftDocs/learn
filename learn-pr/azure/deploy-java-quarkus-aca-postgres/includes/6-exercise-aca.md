@@ -2,7 +2,7 @@ In this unit, you'll create the Azure Container Apps environment using the Azure
 
 ## Set up the Dockerfile for the Quarkus application
 
-Azure Container Apps is for deploying containerized applications. So, the first thing we need to do is containerize the Quarkus application into a Docker image. This is quite easy to do as the Quarkus Maven plugin has already generated some Docker files under `src/main/docker`.
+Azure Container Apps is for deploying containerized applications. So, the first thing we need to do is containerize the Quarkus application into a Docker image. This is easy to do as the Quarkus Maven plugin has already generated some Docker files under `src/main/docker`.
 Let's take one of these Docker file (`Dockerfile.jvm`), rename it to `Dockerfile` and move it to the root folder.
 
 ```bash

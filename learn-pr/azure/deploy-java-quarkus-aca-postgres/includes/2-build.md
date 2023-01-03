@@ -2,7 +2,7 @@ In this unit, you'll learn how to create a Quarkus application, connect it to a 
 
 ## Introduction to Azure Container Apps
 
-[Azure Container Apps](https://azure.microsoft.com/products/container-apps) is a fully managed serverless container service on Azure. It allows you to run containerized applications without worrying about orchestration or managing complex infrastructure such as Kubernetes. You write code using your preferred programming language or framework (here it's Java and Quarkus, but it can be anything), and build microservices with full support for Distributed Application Runtime ([Dapr](https://dapr.io)). Then, your containers will scale dynamically based on HTTP traffic or events powered by Kubernetes Event-Driven Autoscaling ([KEDA](https://keda.sh)).
+[Azure Container Apps](https://azure.microsoft.com/products/container-apps) is a fully managed serverless container service on Azure. It allows you to run containerized applications without worrying about orchestration or managing complex infrastructure such as Kubernetes. You write code using your preferred programming language or framework (here it's Java and Quarkus, but it can be anything). And you can build microservices with full support for Distributed Application Runtime ([Dapr](https://dapr.io)). Then, your containers will scale dynamically based on HTTP traffic or events powered by Kubernetes Event-Driven Autoscaling ([KEDA](https://keda.sh)).
 
 You want to create a Quarkus application that hosts its logic in Azure Container Apps and hosts its database in an Azure PostgreSQL database.
 
@@ -12,9 +12,9 @@ You want to create a Quarkus application that hosts its logic in Azure Container
 
 ## Introduction to Quarkus
 
-[Quarkus](https://quarkus.io) is A Kubernetes Native Java stack tailored for OpenJDK HotSpot & GraalVM, crafted from the best of breed Java libraries and standards. In practice, Quarkus is an Open Source stack for writing Java applications, specifically back end applications. So Quarkus isn't limited to microservices, even though it's highly suited for it.
+[Quarkus](https://quarkus.io) is A Kubernetes Native Java stack tailored for OpenJDK HotSpot & GraalVM, crafted from the best of breed Java libraries and standards. In practice, Quarkus is an Open Source stack for writing Java applications. So Quarkus isn't limited to microservices, even though it's highly suited for it.
 
-From a developer's point of view, Quarkus proposes a nice developer experience: it gives you fast live reload, unified configuration and hides the complexity of GraalVM, allowing you to easily generate native executables. All this without reinventing the wheel by proposing a new programming model. Quarkus leverages your experience in standard libraries that you already know (for example, CDI, JPA, Bean Validation or JAX-RS) as well as many popular frameworks (such as Eclipse Vert.x or Apache Camel).
+From a developer's point of view, Quarkus proposes a nice developer experience: it gives you fast live reload, unified configuration and hides the complexity of GraalVM, allowing you to easily generate native executables. All this without reinventing the wheel by proposing a new programming model. Quarkus uses your experience in standard libraries that you already know (for example, CDI, JPA, Bean Validation or JAX-RS) and many popular frameworks (such as Eclipse Vert.x or Apache Camel).
 
 ## Develop your Quarkus application
 
@@ -37,4 +37,4 @@ In this module, you use the Azure CLI to spin up the Azure Container Apps and th
 
 You'll use the Maven package manager to bootstrap your project and pull in dependencies. Maven also provides the Quarkus and Dev Services dependencies to develop and easily test your Quarkus application.
 
-You will use Docker to run and test the application locally with a PostgreSQL database.
+You'll use Docker to run and test the application locally with a PostgreSQL database.

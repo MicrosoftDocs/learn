@@ -6,7 +6,7 @@ There are different ways to generate a Quarkus project structure for you. You ca
 
 You'll generate your application scaffold with several dependencies:
 
-* You will use the `resteasy` dependency to expose a REST endpoint,
+* You'll use the `resteasy` dependency to expose a REST endpoint,
 * the `jackson` dependency to serialize and deserialize JSON,
 * the `hibernate` dependency to interact with the database,
 * the `postgresql` dependency to connect to the PostgreSQL database,

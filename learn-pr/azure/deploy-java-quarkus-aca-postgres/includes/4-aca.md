@@ -13,7 +13,7 @@ Azure Container Apps has the following features:
 * _Revisions_: automatic versioning that helps to manage the application lifecycle of your container apps
 * _Traffic control_: split incoming HTTP traffic across multiple revisions for Blue/Green deployments and A/B testing
 * _Ingress_: simple HTTPS ingress configuration, without the need to worry about DNS and certificates
-* _Autoscaling_: leverage all KEDA-supported scale triggers (to scale your app based on external metrics)
+* _Autoscaling_: use all KEDA-supported scale triggers (to scale your app based on external metrics)
 * _Secrets_: deploy secrets that are securely shared between containers, scale rules and Dapr sidecars
 * _Monitoring_: the standard output and error streams are automatically written to Log Analytics
 * _Dapr_: through a simple flag, you can enable native Dapr integration for your Container Apps

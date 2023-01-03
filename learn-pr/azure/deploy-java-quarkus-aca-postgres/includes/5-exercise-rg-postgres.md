@@ -17,7 +17,7 @@ AZ_POSTGRES_SERVER_NAME="psql<unique-identifier>"
 ```
 
 > [!NOTE]
-> You can name your Azure resources the way you want, but we recommend to check [this documentation](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) that gives you abbreviation for many of the resources in Azure (for example, `rg` for Resource Groups or `ca` for Azure Container Apps).
+> You can name your Azure resources the way you want, but we recommend to check [this documentation](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) that gives you abbreviations for many Azure resources (for example, `rg` for Resource Groups or `ca` for Azure Container Apps).
 
 Make sure to replace the placeholders when needed. These environment variables are used throughout this module.
 
@@ -28,7 +28,7 @@ Make sure to replace the placeholders when needed. These environment variables a
 | `AZ_LOCATION` | The Azure region you'll use. We recommend that you use a region close to where you live. To see the full list of available regions, enter `az account list-locations` |
 | `AZ_CONTAINERAPP` | The name of the Azure Container Apps holding all the containers |
 | `AZ_CONTAINERAPP_ENV` | The name of the Azure Container Apps environment |
-| `AZ_POSTGRES_SERVER_NAME` | The name of your PostgreSQL server (nonalphanumeric characters are not allowed (-, _, !, $, #, %)). It **should be unique across Azure make sure to use a <unique-identifier>** |
+| `AZ_POSTGRES_SERVER_NAME` | The name of your PostgreSQL server (nonalphanumeric characters aren't allowed (-, _, !, $, #, %)). It **should be unique across Azure make sure to use a <unique-identifier>** |
 | `AZ_POSTGRES_DB_NAME` | The name of the default PostgreSQL database is `postgres` |
 | `AZ_POSTGRES_USERNAME` | The default username of your PostgreSQL database server |
 | `AZ_POSTGRES_PASSWORD` | The default password of your PostgreSQL database server |
