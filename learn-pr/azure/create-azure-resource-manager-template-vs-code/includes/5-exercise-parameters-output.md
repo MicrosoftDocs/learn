@@ -271,8 +271,7 @@ Here, you deploy the template and see the endpoints output as JSON. You need to 
     New-AzResourceGroupDeployment `
       -Name $deploymentName `
       -TemplateFile $templateFile `
-      -storageName {your-unique-name} `
-      -storageSKU Standard_LRS
+      -storageName {your-unique-name}
     ```
 
     Notice the output.
