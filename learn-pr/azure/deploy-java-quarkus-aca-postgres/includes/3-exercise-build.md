@@ -251,7 +251,7 @@ import static io.restassured.RestAssured.given;
 import static javax.ws.rs.core.HttpHeaders.CONTENT_TYPE;
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 
-@QuarkusTest[3-exercise-build.md](3-exercise-build.md)
+@QuarkusTest
 class TodoResourceTest {
 
     @Test
