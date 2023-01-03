@@ -21,7 +21,7 @@ namespace RazorPagesPizza.Pages
 
 ## Update the HTTP Get page handler to display the list of Pizzas
 
-Currently, the `PizzaModel` class handles the HTTP GET request with an empty `OnGet` page handler. Let's update this to display a list of pizzas from the `PizzaService`.
+Currently, the `PizzaModel` class handles the HTTP GET request with an empty `OnGet` page handler. Let's update the handler to display a list of pizzas from the `PizzaService`.
 
 ### Update the `OnGet` page handler
 
@@ -80,7 +80,7 @@ The `PizzaModel` class now has an asynchronous `OnPost` page handler. `OnPost` e
 
 The `OnPost` page handler needs to perform the following tasks for this app:
 
-* Verify the user-submitted data posted to the `PageModel` is valid.
+* Verify that the user-submitted data posted to the `PageModel` is valid.
 * If the attempted `PageModel` changes are invalid, the *Pizza* page is presented again to the user. A message is displayed clarifying the input requirements.
 * If the `PageModel` update is valid, then data changes are passed to a service called `PizzaService`. `PizzaService` will handle the concern of HTTP requests and responses to the web API.
 
@@ -168,11 +168,11 @@ The preceding highlighted code uses an Anchor Tag Helper. The Tag Helper:
 * Directs the user to the *Pages/Pizzas/Create.cshtml* Razor page, located in the same directory as the *Index* page.
 * Enhances the standard HTML anchor (`<a>`) tag by adding custom HTML attributes, such as `asp-page-handler`.
 
-The `asp-page-handler` attribute is used to route to a specific page handler for the Razor page defined in the `asp-page` attribute. The `asp-page` attribute is used set an anchor tag's `href` attribute value to a specific Razor page.
+The `asp-page-handler` attribute is used to route the Razor page defined in the `asp-page` attribute to a specific page handler. The `asp-page` attribute is used to set an anchor tag's `href` attribute value to a specific Razor page.
 
 ## Test the app
 
-That's it! You've completely implemented the Pizza List page. Let's test it with the following steps:
+That's it! You've implemented the Pizza List page completely. Let's test it with the following steps:
 
 1. Ensure you've saved all your changes, and then run the following .NET CLI command in the terminal:
 
@@ -180,14 +180,16 @@ That's it! You've completely implemented the Pizza List page. Let's test it with
     dotnet run
     ```
 
-    The app builds and runs. If there are any build errors, resolve them and then attempt to run again.
+    The app builds and runs. If there are any build errors, resolve them, and then attempt to run again.
 
 1. Open the app in your browser by browsing to the HTTPS URL.
 
-1. Navigate to the new *Pizza* page by clicking on the `Pizza List` link in the navigation bar.
+1. Navigate to the new *Pizza* page by selecting the `Pizza List` link in the navigation bar.
 
-1. Fill in the form to create a new pizza and click the `Add` button. You should see your new pizza appear in the list of pizzas.
+1. Fill in the form to create a new pizza and select the `Add` button. Your new pizza should appear in the list of pizzas.
 
 1. Test the validation by entering an invalid pizza information, such as a blank pizza name or a price of 10000 or greater. You should see the validation error message displayed.
 
-1. Delete a pizza from the list by clicking the `Delete` button. You should see the pizza disappear from the list.
+1. Delete a pizza from the list by selecting the `Delete` button. The pizza should disappear from the list.
+
+1. When you're done testing the app, stop the application by pressing the **Ctrl+C** key combination (**Command+C** on Mac) in the terminal window.
