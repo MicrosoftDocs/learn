@@ -11,6 +11,7 @@ In this module, you learn how to:
 - Determine when to use network security groups.
 - Implement network security group rules.
 - Evaluate network security group effective rules.
+- Examine advantages of application security groups.
 
 ## Skills measured
 
