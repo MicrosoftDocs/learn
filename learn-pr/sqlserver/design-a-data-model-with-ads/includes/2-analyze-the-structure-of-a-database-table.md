@@ -6,7 +6,7 @@ In this unit, you'll learn the basics of database tables in Azure SQL, how they'
 
 ![Picture of a database with pointers to separate tables showing Azure SQL holds tables.](../media/create-table-1.png)
 
-## Relational Databases and Data Models
+## Relational databases and data models
 
 A relational database is a type of database that stores data in rows and columns that combine to create structures called tables, similar to entering data into an Excel spreadsheet. Tables in a database can be related by unique key values. For example, a product ID in a products table being referenced in an order table. You can also have key values related in a hierarchy with a one to many or a parent child relationship. A data model is a representation of the tables in a relational database and how they connect to or reference each other.
 
@@ -53,7 +53,7 @@ Some of the common data types used in Azure SQL are:
 * **Decimal**: Numbers with specific precision use the decimal data type. This data type must be defined by two variables. First, the precision (p), or maximum total number of decimal digits to be stored. And second, the scale(s), the number of decimal digits that are stored to the right of the decimal point.
 * **Integers**: When storing exact numbers that don't need to carry decimal values, you can use integer types. Most use cases fall into using the init data type but there are other integer types for special cases. For small values, tinyint and smallint can be used where for large numbers, biginit is best. The money data type can be used to store currency.
 * **Bit**: The bit data type can only contain a 0 or 1 making it perfect for boolean or true/false data.
-* **Date and Time**: Similar to the number data types, you can store dates and time in the database with various precision. The date data type stores the data in the database in the YYYY-MM-DD format. If more accuracy is needed, the datatime2 data type can be used storing the date in the YYYY-MM-DD hh:mm:ss[.nnnnnnn] format. If just the time is needed, then the time data type can be used which uses the hh:mm:ss[.nnnnnnn] format. If you're creating an application with globalization in mind, the datetimeoffset data type, which contains time zone information.
+* **Date and Time**: Similar to the number data types, you can store dates and time in the database with various levels of precision. The date data type stores the data in the database in the YYYY-MM-DD format. If more accuracy is needed, the datatime2 data type can be used storing the date in the YYYY-MM-DD hh:mm:ss[.nnnnnnn] format. If just the time is needed, then the time data type can be used which uses the hh:mm:ss[.nnnnnnn] format. If you're creating an application with globalization in mind, the datetimeoffset data type, which contains time zone information.
 * **Binary**: If you need to store data such as images or files, the binary and varbinary data types can be used. The binary data type is used for fixed-length binary data while varbinary is used for variable-length binary data.
 * **Spatial**: Azure SQL has two spatial data types; geometry and geography. The geometry type represents data in a Euclidean (flat) coordinate system while the geography type represents data in a round-earth coordinate system. Once the data is stored in the database using these types, spatial operations can be performed with SQL such as Nearest Neighbor queries (where is the closest pizza restaurant to my location) or locations of points in a geometrical space (where x, y, and z intersect on a graph).
 

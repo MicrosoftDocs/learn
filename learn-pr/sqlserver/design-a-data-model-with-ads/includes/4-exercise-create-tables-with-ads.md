@@ -35,7 +35,7 @@ The following table outline is a summary of what was discussed in the previous p
 
 ### Cards
 
-| Column Name | Data Type |
+| Column name | Data type |
 |---|---|
 | card_id | int  |
 | card_name | nvarchar(100) |
@@ -149,7 +149,7 @@ With the translation rules in mind, here's how you can create the translations t
 
 ### Card_translations
 
-| Column Name | Data Type |
+| Column name | Data type |
 |---|---|
 | translation_id | int |
 | card_id | int |
@@ -215,7 +215,7 @@ Here's what the sets table looks like:
 
 ### Sets
 
-| Column Name | Data Type |
+| Column name | Data type |
 |---|---|
 | set_id | int |
 | set_name | nvarchar(50) |
@@ -273,7 +273,7 @@ The set_lists table will look like the following table outline:
 
 ### Set_lists
 
-| Column Name | Data Type |
+| Column name | Data type |
 |---|---|
 | set_list_id | int |
 | card_id | int |

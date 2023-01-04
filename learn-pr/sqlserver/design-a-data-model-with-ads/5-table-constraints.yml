@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-a-data-model-with-ads.table-constraints
-title: Table Constraints
+title: Table constraints
 metadata:
-  title: Table Constraints
+  title: Table constraints
   description: "Use primary keys, foreign keys, and table constraints on relational database tables for identity, default values, and restrict data values"
   ms.date: 12/29/2022
   author: JetterMcTedder
   ms.author: bspendolini
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 15
 content: |
   [!include[](includes/5-table-constraints.md)]
 quiz:

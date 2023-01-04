@@ -7,11 +7,11 @@ In this exercise, you'll run sql commands to see how the tables are related in t
 
 1. To start working with SQL in the Azure SQL Database, you need to open a new query sheet. In **Azure Data Studio**, the **connections pane** on the left of the application, right click the cards database server and **select New Query**.
 
-![A screenshot showing how to select New Query for a query sheet.](../media/query-1.png)
+    ![A screenshot showing how to select New Query for a query sheet.](../media/query-1.png)
 
 1. Once the new query sheet is open, ensure that you're **connected** to the carddatabase Azure SQL Database using the **connection dropdown**.
 
-![A screenshot showing how to ensure that you are connected to the carddatabase Azure SQL Database using the connection dropdown.](../media/query-2.png)
+    ![A screenshot showing how to ensure that you are connected to the carddatabase Azure SQL Database using the connection dropdown.](../media/query-2.png)
 
 ## Working with data
 

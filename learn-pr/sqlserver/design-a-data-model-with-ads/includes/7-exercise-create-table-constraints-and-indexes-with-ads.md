@@ -29,7 +29,7 @@ You can update your table with what is known from the previous units and scenari
 
 ### Cards
 
-| Column Name | Data Type | Null? | Default Values | Notes |
+| Column name | Data type | Null? | Default values | Notes |
 |---|---|---|---|---|
 | card_id | int  | no |  | IDENTITY and Primary Key|
 | card_name | nvarchar(100) | no |  |  |
@@ -111,7 +111,7 @@ With the identity column and foreign key in mind, here's how you can add to your
 
 ### Card_translations
 
-| Column Name | Data Type | Null? | Default Values | Notes |
+| Column name | Data type | Null? | Default values | Notes |
 |---|---|---|---|---|
 | translation_id | int | no |  | IDENTITY and Primary Key |
 | card_id | int | no |  | Foreign key back to the Cards table |
@@ -174,7 +174,7 @@ The update on the sets table is minor and will be the addition a primary key tha
 
 ### Sets
 
-| Column Name | Data Type | Null? | Default Values | Notes |
+| Column name | Data type | Null? | Default values | Notes |
 |---|---|---|---|---|
 | set_id | int | no |  | IDENTITY and Primary Key |
 | set_name | nvarchar(50) | no |  |  |
@@ -221,7 +221,7 @@ The set_lists table will look like the following with the modifications:
 
 ### Set_lists
 
-| Column Name | Data Type | Null? | Default Values | Notes |
+| Column name | Data type | Null? | Default values | Notes |
 |---|---|---|---|---|
 | set_list_id | int | no |  | IDENTITY and Primary Key |
 | card_id | int | no |  | Foreign key back to the Cards table |

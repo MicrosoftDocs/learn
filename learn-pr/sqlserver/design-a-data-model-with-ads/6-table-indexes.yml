@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-a-data-model-with-ads.table-indexes
-title: Table Indexes
+title: Table indexes
 metadata:
-  title: Table Indexes
+  title: Table indexes
   description: "Learn about index types in Azure SQL Database. Learn about clustered indexes, columnstore indexes and full text indexes."
   ms.date: 12/29/2022
   author: JetterMcTedder
   ms.author: bspendolini
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 15
 content: |
   [!include[](includes/6-table-indexes.md)]
 quiz:
