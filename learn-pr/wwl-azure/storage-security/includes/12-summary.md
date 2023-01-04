@@ -11,8 +11,8 @@ You should be able to:
 
 Microsoft Learn provides a large number of self-paced learning paths. For this lesson, we recommend the following modules. You may search and find other modules that are of interest to you.
 
- -  [Core Cloud Services - Azure data storage options](/training/modules/intro-to-data-in-azure/)
- -  [Create an Azure Storage account](/training/modules/create-azure-storage-account/)
- -  [Store and share files in your application with Azure Files](/training/modules/store-and-share-with-azure-files/)
- -  [Secure your Azure Storage accounts](/training/modules/secure-azure-storage-account/)
- -  [Control access to Azure Storage with shared access signatures](/training/modules/control-access-to-azure-storage-with-sas/)
+ -  [Core Cloud Services - Azure data storage options](/learn/modules/intro-to-data-in-azure/)
+ -  [Create an Azure Storage account](/learn/modules/create-azure-storage-account/)
+ -  [Store and share files in your application with Azure Files](/learn/modules/store-and-share-with-azure-files/)
+ -  [Secure your Azure Storage accounts](/learn/modules/secure-azure-storage-account/)
+ -  [Control access to Azure Storage with shared access signatures](/learn/modules/control-access-to-azure-storage-with-sas/)

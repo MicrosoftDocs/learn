@@ -61,7 +61,7 @@ In this task, we will create a blob storage access policy.
 1. Create a policy based on the time-based retention.
 1. Be sure to **Save** your changes.
 1. In Storage Explorer, right-click your container and select **Get shared access signature**.
-1. Notice the **Access Policy** drop-down lets you create a the SAS based on a pre-defined configuration.
+1. The **Access Policy** drop-down enables you to create a SAS based on a pre-defined configuration.
 1. As you have time, show how Storage Explorer can be used to perform security tasks.
 
 ## Task 4: Azure AD User Account Authentication
