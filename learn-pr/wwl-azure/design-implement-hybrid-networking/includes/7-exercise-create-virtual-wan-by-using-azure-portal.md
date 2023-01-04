@@ -36,7 +36,7 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
 1.  Locate the Virtual WAN that you created.
 2.  On the Virtual WAN page, under **Connectivity**, select **Hubs**.
 3.  On the Hubs page, select **+New Hub** to open the Create virtual hub page. 
-:::image type="content" source="../media/create-vwan-hub-fcc2ec0d.png" alt-text="Create Virtual Hub, Basics tab.":::
+:::image type="content" source="../media/create-vwan-hub.png" alt-text="Create Virtual Hub, Basics tab.":::
     
 4.  On the Create virtual hub page **Basics** tab, complete the following fields:
     
