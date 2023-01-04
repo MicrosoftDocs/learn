@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: datatime2
       isCorrect: false
-      explanation: While datatime2 provides the ability to store a date to the fraction of a second, it doesn't contain timezone information.
+      explanation: While datatime2 is a data type gives the database the ability to store a date to the fraction of a second, it doesn't contain timezone information.
     - content: datetimeoffset
       isCorrect: true
-      explanation: The datetimeoffset data type does provide the ability to store timezone information in the format YYYY-MM-DD hh:mm:ss[.nnnnnnn] [+|-]hh:mm
+      explanation: The datetimeoffset data type does give the Azure SQL Database the ability to store timezone information in the format YYYY-MM-DD hh:mm:ss[.nnnnnnn] [+|-]hh:mm
     - content: nvarchar
       isCorrect: false
       explanation: While you could store timezone information in a nvarchar data type, you would have to create functions to convert dates to strings and strings to date and isn't the best choice.
