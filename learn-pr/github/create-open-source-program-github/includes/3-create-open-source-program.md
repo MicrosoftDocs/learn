@@ -20,4 +20,4 @@ When you've finished the exercise in GitHub, return here for:
 
 
 > [!div class="nextstepaction"]
-> [Start the learning lab on GitHub](https://github.com/githubtraining/oss-enterprise)
+> [Navigate to the open source guide](https://opensource.guide/starting-a-project/#launching-your-own-open-source-project)

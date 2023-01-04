@@ -20,4 +20,4 @@ When you've finished the exercise in GitHub, return here for:
 
 
 > [!div class="nextstepaction"]
-> [Start the learning lab on GitHub](https://github.com/githubtraining/innersource)
+> [Navigate to GitHub's InnerSource guide](https://github.com/githubtraining/innersource)
