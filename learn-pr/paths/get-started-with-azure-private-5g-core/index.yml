@@ -3,10 +3,10 @@ uid: learn.get-started-with-azure-private-5g-core
 hidden: true
 title: Get started with Azure Private 5G Core
 summary: |
-  Azure Private 5G Core is an Azure service with which you can deploy and manage an on-premises private mobile network.
-  The network functions provided by the service connect with standard radio access networks (RANs) to provide high performance, low latency, and secure connectivity for Internet of Things (IoT) devices.
+  Azure Private 5G Core offers simple, scalable, and secure deployment of private 5G core networks on an Azure Arc-managed edge platform within the Azure private multi-access edge compute solution.
+  The network functions provided by the service connect with standard radio access networks to provide high performance, low latency, and secure connectivity for Internet of Things devices.
   
-  From the modules in this learning path, you can learn about Azure Private 5G Core basics, as well as ways to deploy, monitor, and manage a private mobile network with Azure Private 5G Core.
+  From the modules in this learning path, you can learn about Azure Private 5G Core basics, as well as ways to deploy, monitor, and manage a private mobile network.
 metadata:
   title: Get started with Azure Private 5G Core
   description: Learn about Azure Private 5G Core and ways to deploy, monitor, and manage the Azure Private 5G Core service.
