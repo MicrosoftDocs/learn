@@ -10,6 +10,8 @@ In the layered health model, start defining states with user flows at the top an
 
 Each layer should use metrics and metric thresholds for components to represent healthy and unhealthy states based on the application functionality and non-functional requirements. Define health states for components based on their distinct operational characteristics, steady states, and expected behaviors in a production workload. 
 
+For example, metrics might include the number of exceptions, response time, and service metrics. Application components can have dependencies on Azure resources, and even on other components. You need to factor in those health states.
+
 Here are some best practices to follow when you calculate health scores:
 
 - Represent health states of a user flow by aggregrating granular health scores for components that participate in the flow. It should include the application component and all the mapped dependencies. Consider key non-functional requirements as coefficients.
@@ -21,3 +23,4 @@ Performance testing is a key in establishing those states. The granular health s
 
 :::image type="content" source="../media/mission-critical-example-health-definitions.png" border="false" alt-text="Diagram of a table that shows health states for a layered health model.":::
 
+In the next exercise, we'll quantify health states for the example application. The exercise will help you understand the expected values for a standard production workload. 

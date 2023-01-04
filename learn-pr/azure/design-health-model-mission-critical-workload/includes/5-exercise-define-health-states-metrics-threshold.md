@@ -1,36 +1,46 @@
-In this exercise, continue with the layered health model structure you created in the last exercise. You'll quantify health states of individual components. This step is mostly about getting experience running the system and understanding what the expected values are for a standard production workload. It demonstrates the purpose of health modeling, while injecting this experience and knowledge into the health model for easier analysis.
+In this exercise, we'll continue with the health model structure you created previously for the example application. Your task is to quantify health states of individual components. 
 
 Begin by looking at the health model structure and proceed top-to-bottom through layers, starting with user flows.
 
-## User flows
+## User flow health state
 
-- *When is "List catalog items" healthy? Can it operate in a degraded state?*
-- *When is "Add comment" healthy? Can it operate in a degraded state?*
+So far, we have identified two user flows: **List catalog items** and **Add comment**. To determine the health states for each flow, ask questions such as:
 
-Based on the implementation and functional requirements, neither of these user flows can operate without its underlying services, not even in degraded mode. Associate the health states of the user flows with the application components:
+- *When is the user flow considered healthy?*
+- *Can it operate in a degraded state?*
 
-- **List catalog items**: This user flow reflects the health state of the *front-end web application* and the *Catalog API*.
-- **Add comment**: This user flow reflects the health state of the *front-end web application*, the *Catalog API*, and the *background processor*.
+Based on the implementation and functional requirements, identify the application components that participate in the user flow. The components are described in [Example architecture components](3-exercise-identify-user-flows.md#components).
 
-If any of these dependencies become unhealthy, the user flow is expected to become unhealthy.
+|User flow|Components|
+|---|---|
+|**List catalog items**|Front-end internal web application, Catalog API|
+|**Add comment**|Front-end internal web application, Catalog API, Background processor|
+
+If any of those components become unhealthy, the user flow is expected to become unhealthy.
 
 > [!NOTE]
 > Some applications can operate in a special *degraded* mode. For example, if Contoso Shoes implements local browser caching, employees who are using the internal web application can create comments, but comments can't be sent and the customer view isn't updated until the Catalog API becomes healthy (which the browser can continuously check).
 
-## Application components
+## Application component health state
 
-Health states are based on a combination of application metrics. For example, metrics might include the number of exceptions, response time, and service metrics. Application components can have dependencies on Azure resources, and even on other components. You need to factor in those health states.
-
-Defining metrics and thresholds for application components requires knowledge and understanding of their functionality. Ask questions like:
+Determine the metrics that contributes to the component's health state. For this step, you'll need to know the functionality of the component.  Ask questions like:
 
 - *What processing time in the API is acceptable to maintain a good user experience?*
 - *Are there any expected errors? What's the "normal" error rate?*
 - *What's the "normal" processing time? What does it mean if processing time is higher than normal?*
 - *What happens to write operations if Azure Cosmos DB is unreachable?*
 
-These questions should lead you to define specific and measurable thresholds for key metrics. The source of these values is an application monitoring solution, like Application Insights.
+These questions should lead you to specific and measurable thresholds for key metrics. For example, threshold values for Catalog API might be similar to these values:
 
-## Azure resources
+|Metrics and threshold|Health state|
+|---|---|
+|Response Time < 150 ms</br> Failed request count < 10 | Healthy |
+|Response Time < 300 ms</br> Failed request count < 50 | Degraded|
+|Response Time > 300 ms</br> Failed request count > 50 | Unhealthy|
+
+You can get the values from an application monitoring solution, like Application Insights.
+
+## Azure resource health state
 
 Azure service health states are based on specific resources. For example, Azure Cosmos DB reports DTU utilization, and Azure App Services provides information about CPU utilization.
 
