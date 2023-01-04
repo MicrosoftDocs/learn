@@ -20,7 +20,7 @@ on:
 
 Often, you only want to run a workflow if some condition is true. 
 
-GitHub workflows provide the *if* conditional for this scenario. The conditional uses an [expression](https://help.github.com/actions/reference/context-and-expression-syntax-for-github-actions?azure-portal=true) that will be evaluated at runtime. For example, we want to run this workflow if a *stage* label is added to the pull request.
+GitHub workflows provide the *if* conditional for this scenario. The conditional uses an [expression](https://docs.github.com/actions/learn-github-actions/expressions) that will be evaluated at runtime. For example, we want to run this workflow if a *stage* label is added to the pull request.
 
 ```yml
 if: contains(github.event.pull_request.labels.*.name, 'stage')
