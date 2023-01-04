@@ -3,7 +3,7 @@ uid: learn.wwl.storage-security
 metadata:
   title: Implement storage security
   description: "Implement storage security"
-  ms.date: 01/03/2023
+  ms.date: 01/04/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Apply rules for data retention
 prerequisites: |
   - None
-iconUrl: /learn/achievements/storage-security.svg
+iconUrl: /training/achievements/storage-security.svg
 levels:
 - intermediate
 roles:
