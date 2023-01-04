@@ -1,19 +1,51 @@
-The Dockerfile is the best tool for adding new software to your container. You might remember that you were asked to install Node.js while adding your container configuration files at the beginning of this process. You didn't choose that option, but now you want to include Node.js as part of your dev container.
+Dev Container Features and a Dockerfile are excellent tool for adding new software to your container. You might find during a project that you want to include additional software in your dev container over time, like Node.js.
 
 In this exercise, we'll look at how you can install a technology stack like Node in your container at any point.
 
-## Open the Dockerfile
+## Option 1: Dev container Feature
 
 1. Press <kbd>F1</kbd> to open the Command Palette.
 1. Type **explorer** and select **View: Show Explorer**.
 1. Open the ".devcontainer" folder.
-1. Locate and open the Dockerfile.
+1. Locate and open the devcontainer.json.
+1. Add the following code to install Node.js via a Feature.
 
-## Add code to the Dockerfile
+```json
+"features": {
+		"ghcr.io/devcontainers/features/python:1": {}
+	}
+```
 
-1. Add the following code to install Node.js.
+1. Save your project.
+1. Open the Command Palette.
+1. Type **rebuild** and select **Dev Containers: Rebuild Container**.
+
+## Option 2: Dockerfile
+
+### Create a Dockerfile
+
+1. Press <kbd>F1</kbd> to open the Command Palette.
+1. Type **explorer** and select **View: Show Explorer**.
+1. Open the ".devcontainer" folder.
+1. Create a new file in the folder titled "Dockerfile."
+1. Open your devcontainer.json and replace the `"image":` property with the below.
+
+```json
+{
+    "build": {
+        // Path is relataive to the devcontainer.json file.
+        "dockerfile": "Dockerfile"
+    }
+}
+```
+
+### Add code to the Dockerfile
+
+1. Add the following code to create a Python-based Dockerfile and install Node.js.
 
    ```yml
+   FROM mcr.microsoft.com/devcontainers/python:0-3.11
+   
    RUN apt-get update \
    && apt-get install -y curl ca-certificates \
    && curl -sL https://deb.nodesource.com/setup_14.x | bash \
@@ -24,12 +56,14 @@ In this exercise, we'll look at how you can install a technology stack like Node
 
 1. Save your project.
 
-## Rebuild container
+### Rebuild container
 
 1. Open the Command Palette.
 1. Type **rebuild** and select **Dev Containers: Rebuild Container**.
 
 ## Check the Node version
+
+Regardless of how you added Node (via a Feature or Dockerfile), let's check to make sure it installed correctly.
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the integrated terminal in Visual Studio Code.
 1. Enter the following code to check your version of Node.
