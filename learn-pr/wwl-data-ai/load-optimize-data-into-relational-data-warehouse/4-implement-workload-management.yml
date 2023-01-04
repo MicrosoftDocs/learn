@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.implement-workload-management
+title: Implement workload management
+metadata:
+  title: Implement workload management
+  description: "Implement workload management"
+  ms.date: 01/04/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-implement-workload-management.md)]

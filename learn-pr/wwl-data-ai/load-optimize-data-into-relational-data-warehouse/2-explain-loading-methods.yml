@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.explain-loading-methods
+title: Explain loading methods
+metadata:
+  title: Explain loading methods
+  description: "Explain loading methods"
+  ms.date: 01/04/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-explain-loading-methods.md)]

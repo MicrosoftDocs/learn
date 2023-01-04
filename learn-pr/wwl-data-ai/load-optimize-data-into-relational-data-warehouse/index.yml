@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.load-optimize-data-into-relational-data-warehouse
+metadata:
+  title: Load and optimize data into a relational data warehouse
+  description: "Load and optimize data into a relational data warehouse"
+  ms.date: 01/04/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Load and optimize data into a relational data warehouse
+summary: Learn how to optimize querying performance on Azure Synapse Analytics SQL Pools for use in analytical workloads.
+abstract: |
+  In this module you will:
+  -	Understand Performance Issues Related to Tables
+  -	Exercise - Understand Performance Issues Related to Tables
+  -	Understand Table Distribution Design
+  -	Use Indexes to Improve Query Performance
+  -   Understand Query Plans
+  -	Exercise - Use Table Distribution and Indexes to Improve Performance
+  -	Create Statistics to Improve Query Performance
+  -	Improve Query Performance with Materialized Views
+  -	Use Read Committed Snapshot for Data Consistency
+  -	Optimize Common Queries with Result-Set Caching
+  -	Exercise - Optimize Common Queries with Result-Set Caching
+prerequisites: |
+  Before taking this module, it is recommended that the student can:
+  -	Log into the Azure portal
+  -	Create a Synapse Analytics Workspace
+  -	Create and connect to an Azure Synapse Analytics SQL Pool
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+units:
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.introduction
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.explain-loading-methods
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.manage-source-data-files
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.implement-workload-management
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.exercise-load
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.understand-table-distribution-design
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.understand-indexes-query-plans
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.other-optimization-considerations
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.exercise-see-how-statistic-affects-query-plan
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.knowledge-check
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.summary
+badge:
+  uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.badge

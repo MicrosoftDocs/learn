@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.other-optimization-considerations
+title: Other optimization considerations
+metadata:
+  title: Other optimization considerations
+  description: "Other optimization considerations"
+  ms.date: 01/04/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/8-other-optimization-considerations.md)]
