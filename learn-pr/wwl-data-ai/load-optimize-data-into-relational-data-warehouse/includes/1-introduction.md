@@ -1,5 +1,5 @@
 
-Learn about data loading techniques for Azure Synapse Analytics SQL Pools for use in analytical workloads.
+Loading and optimizing queries for cleansing, matching, and refinement are some of the most important tasks a data engineer can learn. In this section those elements will be discussed in context of Azure Synapse Analytics and the impact of good design in a distributed architecture.
 
 In this module, you will:
 -	Understand data loading design goals

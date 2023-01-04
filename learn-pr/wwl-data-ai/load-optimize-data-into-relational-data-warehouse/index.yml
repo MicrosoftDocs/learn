@@ -12,17 +12,15 @@ title: Load and optimize data into a relational data warehouse
 summary: Learn how to optimize querying performance on Azure Synapse Analytics SQL Pools for use in analytical workloads.
 abstract: |
   In this module you will:
-  -	Understand Performance Issues Related to Tables
-  -	Exercise - Understand Performance Issues Related to Tables
-  -	Understand Table Distribution Design
-  -	Use Indexes to Improve Query Performance
-  -   Understand Query Plans
-  -	Exercise - Use Table Distribution and Indexes to Improve Performance
-  -	Create Statistics to Improve Query Performance
-  -	Improve Query Performance with Materialized Views
-  -	Use Read Committed Snapshot for Data Consistency
-  -	Optimize Common Queries with Result-Set Caching
-  -	Exercise - Optimize Common Queries with Result-Set Caching
+  	Explain loading methods
+  	Manage source data files
+  	Implement workload management
+  	Exercise: Load data into a relational data warehouse
+  	Understand table distribution design
+  	Understand Indexes and query plans
+  	Other optimization considerations
+  	Exercise: See how statistic affects query plan
+  	Knowledge check
 prerequisites: |
   Before taking this module, it is recommended that the student can:
   -	Log into the Azure portal
