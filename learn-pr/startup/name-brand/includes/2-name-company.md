@@ -102,7 +102,7 @@ Consider registering several other domains at the same time, primarily to preven
 - Any common domain extensions that are available, such as *\<your-company-name\>.com*, *.biz*, and *.io*
 - Any potential misspellings of your company name
 - Any likely domain hacks, such as get-*\<your-company-name\>.com*
-- The relevant country-/region-specific domain if you're located outside the United States
+- The relevant country/region-specific domain if you're located outside the United States
 
 Last, if your company will heavily rely on one or more social networks to reach users, you should check the availability of social handles. It could be highly undesirable to pick a company name and realize later that existing social media accounts are using that name.
 
