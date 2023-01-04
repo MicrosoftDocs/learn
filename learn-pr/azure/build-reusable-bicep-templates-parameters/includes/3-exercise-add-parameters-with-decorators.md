@@ -53,7 +53,7 @@ During the process, you'll:
 
 ### Limit input values
 
-Your toy company will deploy the HR application to three environments: dev, test, and prod. Let's limit the `environmentName` parameter to these three values.
+Your toy company will deploy the HR application to three environments: dev, test, and prod. You'll limit the `environmentName` parameter to only allow those three values.
 
 1. In the _main.bicep_ file in Visual Studio Code, find the `environmentName` parameter. Insert an `@allowed` decorator underneath its `@description` decorator. After you're finished, the parameter should look like this example:
 
