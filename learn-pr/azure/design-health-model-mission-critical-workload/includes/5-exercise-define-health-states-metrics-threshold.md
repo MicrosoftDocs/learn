@@ -1,10 +1,10 @@
-In this exercise, we'll continue with the health model structure you created previously for the example application. Your task is to quantify health states of individual components. 
+In this exercise, we'll continue with the health model structure you created previously. Your task is to quantify health states of individual components for the example application. 
 
-Begin by looking at the health model structure and proceed top-to-bottom through layers, starting with user flows.
+In the health model structure, start by evaluating the layers starting at the top with user flows and proceed to the lower layers.
 
 ## User flow health state
 
-So far, we have identified two user flows: **List catalog items** and **Add comment**. To determine the health states for each flow, ask questions such as:
+So far, we have identified two user flows: **List catalog items** and **Add comment**. To determine health states for each flow, ask questions such as:
 
 - *When is the user flow considered healthy?*
 - *Can it operate in a degraded state?*
@@ -23,14 +23,14 @@ If any of those components become unhealthy, the user flow is expected to become
 
 ## Application component health state
 
-Determine the metrics that contributes to the component's health state. For this step, you'll need to know the functionality of the component.  Ask questions like:
+Determine the metrics that contribute to the component's health state. For this step, you'll need to know the functionality of the component. Ask questions like:
 
 - *What processing time in the API is acceptable to maintain a good user experience?*
 - *Are there any expected errors? What's the "normal" error rate?*
 - *What's the "normal" processing time? What does it mean if processing time is higher than normal?*
 - *What happens to write operations if Azure Cosmos DB is unreachable?*
 
-These questions should lead you to specific and measurable thresholds for key metrics. For example, threshold values for Catalog API might be similar to these values:
+These questions should lead you to specific and measurable thresholds for key metrics. For example, you might consider these threshold values for Catalog API.
 
 |Metrics and threshold|Health state|
 |---|---|
@@ -44,9 +44,11 @@ You can get the values from an application monitoring solution, like Application
 
 Azure service health states are based on specific resources. For example, Azure Cosmos DB reports DTU utilization, and Azure App Services provides information about CPU utilization.
 
+For information about metrics by resource type, see [Supported metrics with Azure Monitor](/azure/azure-monitor/essentials/metrics-supported). 
+
 ## Health states and thresholds
 
-Ultimately, you should have a list of components and their health state definitions that looks similar to this example for Contoso Shoes:
+After you have evaluated all layers of the application, you should have a list of components and their health state definitions that looks similar to this example.
 
 | Component | Indicator/metric | Healthy | Degraded | Unhealthy |
 | --------- | ---------------- | ------- | -------- | --------- |
@@ -63,4 +65,4 @@ Ultimately, you should have a list of components and their health state definiti
 | Azure Event Hubs | Processing backlog length (outgoing/incoming messages) | < 3 | 3-20 |  > 20 |
 | Azure Blob Storage | Average latency (ms) | < 100 | 100-200 | > 200 |
 
-In this example, the error tolerance for the front-end web application and the Catalog API is different. This difference relates to the technical understanding of the application. All front-end errors should be handled client-side, so there's a zero threshold. However, on the API layer, we allow 10 exceptions to account for user-caused errors (such as *404 - Not Found*) that don't necessarily indicate a health issue.
+In this example, the error tolerance for the front-end web application and the Catalog API is different. This difference relates to the technical understanding of the application. All front-end errors should be handled client-side, so there's a zero threshold. However, on the API layer, 10 exceptions are allowedto account for user-caused errors (such as *404 - Not Found*) that don't necessarily indicate a health issue.
