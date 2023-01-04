@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: datatime2
       isCorrect: false
-      explanation: While datatime2 is a data type gives the database the ability to store a date to the fraction of a second, it doesn't contain timezone information.
+      explanation: While datatime2 is a data type that gives the database the ability to store a date to the fraction of a second, it doesn't contain timezone information.
     - content: datetimeoffset
       isCorrect: true
       explanation: The datetimeoffset data type does give the Azure SQL Database the ability to store timezone information in the format YYYY-MM-DD hh:mm:ss[.nnnnnnn] [+|-]hh:mm
