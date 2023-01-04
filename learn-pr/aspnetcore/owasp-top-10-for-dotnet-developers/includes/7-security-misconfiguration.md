@@ -1,11 +1,10 @@
 <!-- ## A05: Security Misconfiguration -->
 
-With more shifts into highly configurable software, it's not surprising to see this category move up.
-The application might be vulnerable if the application is without a rigorous repeatable application security configuration process.
+Highly configurable and distributed software, along with supporting services and tooling, introduces complexity. Example of an eterprise application with supporting DevOps process can be seen on the image below. Here, security misconfiguration can apply to how you protect developer workstations, handle app secrets in your application, protect the CI/CD process etc.
 
-> [!TIP]
-> Challenge the defaults.
-<!-- :::image type="content" source="../media/abel.png" alt-text="Don't accept the defaults - Abel Wang"::: -->
+:::image type="content" source="../media/enterprise-app-threats.png" alt-text="angles of attack in complex system":::
+
+The application might be vulnerable if the application is without a rigorous repeatable application security configuration process.
 
 Security misconfiguration can manifest itself in many places, from `web.config` or `appsettings.json` settings, database account and connectivity configuration, IIS configurations to CI/CD pipeline secret handling or incorrect Azure Role Base Access Control use.
 

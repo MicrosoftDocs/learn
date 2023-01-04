@@ -18,9 +18,8 @@ Good practices would include
 
 ## Encryption
 
-Let's explore a couple of examples of what ``System.Security.Cryptography`` namespace if contained functionality has to offer.
-We'll start with Advanced Encryption Standard (AES), in the example below you create a new instance of the Aes (Strong) class. Instance is used to generate new key and initialization vector (IV).​
-The following example illustrates how to use the Advanced Encryption Standard to be used to perform encryption on any type of managed stream, then the steam is wrapped with CryptoStream.
+Let's explore a couple of examples of what ``System.Security.Cryptography`` namespace and it's contained functionality has to offer.
+We'll start with Advanced Encryption Standard (AES). In the example below a new instance of the AES class is created and used it to generate new key and initialization vector (IV).​ This illustrates how to use the Advanced Encryption Standard to be used to perform encryption on any type of managed stream, then the stream is wrapped with CryptoStream.
 
  ```csharp
 Aes aes = Aes.Create();​
@@ -31,8 +30,7 @@ CryptoStream cryptStream = new CryptoStream(fileStream,
 
 ## Hashing
 
-Hashing is a one way
-When using a hashing function to hash non-unique inputs such as passwords, use a salt value added to the original value before hashing.
+Hashing is a one way operation. When using a hashing function to hash non-unique inputs such as passwords, use a *salt value* added to the original value before hashing.
 
 ```csharp
 public static byte[] HashPassword256(string password)​
@@ -45,11 +43,11 @@ public static byte[] HashPassword256(string password)​
 
 ## Random numbers
 
-System.Random isn't a random number generator, it's a deterministic pseudo-random sequence generator, docs explicitly says it shouldn't be used for generating passwords. It’s predictable and seeded only from the system clock. To generate a cryptographically secure random number, such as one that's suitable for creating a random password.
+System.Random isn't a random number generator, it's a deterministic pseudo-random sequence generator. Microsoft Learn documentation explicitly states it shouldn't be used for generating passwords. It’s predictable and seeded only from the system clock. To generate a cryptographically secure random number, such as one that's suitable for creating a random password.
 
 ```csharp
 var randomNumberGenerator = System.Security.Cryptography.RandomNumberGenerator.Create();​
 ```
 
 > [!TIP]
-> Make sure you know when to use System.Random versus System.Security Cryptography.RandomNumberGenerator as your choice can lead to security vulnerability
+> Make sure you know when to use `System.Random` versus `System.Security Cryptography.RandomNumberGenerator` as your choice can lead to security vulnerability being introduces in your codebase.

@@ -25,6 +25,6 @@ quiz:
     - content: "Using parameterized queries"
       isCorrect: false
       explanation: "Use parameterized queries where a direct SQL query must be used."
-    - content: "Any of the above"
+    - content: "Any of the options are correct"
       isCorrect: true
-      explanation: "With username validation as a minimum, any of the methods above can be used."
+      explanation: "With username validation as a minimum, any of the methods can be used."

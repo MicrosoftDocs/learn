@@ -16,7 +16,7 @@ content: |
 quiz:
   questions:  
 
-  - content: "Which of the statements below would you consider secure logging best practices?"
+  - content: "Which of the statements would you consider secure logging best practices?"
     choices:
     - content: "Log all events occurring in the system and store the logs in an easily accessible public location."
       isCorrect: false

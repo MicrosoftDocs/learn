@@ -1,11 +1,6 @@
-<!-- ## A10: Server-Side Request Forgery -->
+This category describes situations whenever a web application is fetching a remote resource without validating the user-supplied URL. It allows an attacker to coerce the application to send a crafted request to an unexpected destination
 
-The third and final new entry into the Top 10 in 2021 compared with 2017 edition.
-
-Occurs whenever a web application is fetching a remote resource without validating the user-supplied URL. It allows an attacker to coerce the application to send a crafted request to an unexpected destination
-
-Consider a crafted or modified URL supplied by the attacker. The server code will read or submit data included in the URL.
-
+Let's consider a crafted or modified URL supplied by the attacker. The server code will read or submit data included in the URL.
 With carefully formulated URL, the attacker may be able to
 
 - read server configuration such as metadata,

@@ -1,11 +1,9 @@
-<!-- ## A03: Injection -->
+Let's consider how your application handles input data. The injection category is attributed to an application accepting data as input and processing it as instruction instead of as data​.
 
-Happens when an application accepts data as input and processes it as instruction instead of as data​.
-
-As a golden rule, ensure validation is performed whenever you're processing user input. Never assume any user data input is safe to process until proven otherwise.
+As a golden rule, ensure validation is performed whenever you're processing user input. Never assume any user data input as safe to process until proven otherwise.
 
 > [!IMPORTANT]
-> Neutralize or verify user input in your application.
+> Neutralize or verify user input in your application. Always verify that input is safe, legitimate and in the correct format.
 
 Injection can take different forms and shapes, from SQL, process to command injection.
 The canonical example of SQL injection could be the following statement, where `username` in an unsanitised query input parameter:
@@ -20,9 +18,7 @@ Without validation of user input, a malicious actor could supplement a genuine u
 SELECT * FROM Users WHERE name = 'a';DROP TABLE users;--
 ```
 
-Always verify that input is safe, legitimate and in the correct format. In following example the client-side validation in the form with the DataAnnotationsValidator component.​
-
-Framework provides build-in capabilities for data annotation and validation. The attributes from `System.ComponentModel.DataAnnotations` can decode your data model to provide the necessary validation functionality.
+.NET provides build-in capabilities for data annotation and validation. The attributes from `System.ComponentModel.DataAnnotations` namespace can decode your data model to provide the necessary validation functionality. Email, phone, credit card or date validators are only a few examples of the build-in validators that can spare you the effort of writing and maintaining custom code.
 
 ```csharp
 using System.ComponentModel.DataAnnotations; ​
@@ -39,12 +35,10 @@ public class ExampleModel ​
 }​
 ```
 
-In client-server scenarios make sure input is validated on both client and server side.
-Additionally, if validation passes on the server, process the form and send back a success status code (200 - OK). ​However, if validation fails, return a failure status code (400 - Bad Request) and the field validation errors, don't bubble up validation details from server to the client as it may give the malicious actor more insights on how your app logic works.
+In client-server scenarios, make sure the input is validated on both client and server side.
+Additionally, if validation passes on the server, process the form and send back a success status code (200 - OK). ​However, if validation fails, return a failure status code (400 - Bad Request) and the field validation errors.Validation details from server may give the malicious actor more insights on how your app logic works if displayed on the client side.
 
-Be extra careful when it comes to uploading a file.
-
-Input validation also includes the way you handle file upload. Following example (ASP.NET Blazor component) attempts to validate correctness of file before uploading it to Azure Blob Storage, including check for expected extension, max file size and overriding supplied filename with a random name.
+Input validation also includes the way you handle file upload. Following example (from ASP.NET Blazor component) attempts to validate correctness of file before uploading it to Azure Blob Storage, including check for expected extension, max file size and overriding supplied filename with a random name.
 
 ```csharp actor
 <InputFile OnChange = "@LoadFile" />
@@ -53,7 +47,6 @@ Input validation also includes the way you handle file upload. Following example
 
     private string[] permittedExtensions = { ".txt", ".pdf" };
     private long maxFileSize = 1024 * 15;
-
 
     private async void LoadFile(InputFileChangeEventArgs e)
     {
@@ -79,5 +72,5 @@ Input validation also includes the way you handle file upload. Following example
 }
 ```
 
-> [!TIP]
+> [!NOTE]
 > Check your web app is correctly validating user input by typing in `<iframe src="javascript:alert('HACKED')">` into a text input area.

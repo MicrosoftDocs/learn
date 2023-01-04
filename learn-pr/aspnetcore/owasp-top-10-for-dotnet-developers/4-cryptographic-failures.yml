@@ -16,7 +16,7 @@ content: |
 quiz:
   questions: 
 
-  - content: "It's considered to be good practice to come up with your own home-grown encryption."  
+  - content: "It's considered to be good practice to come up with your own, home-grown encryption algorithm?"  
     choices:
     - content: "Yes"
       isCorrect: false

@@ -1,25 +1,18 @@
-<!-- ## A04: Insecure Design -->
+Insecure design is a new entry on the OWASP Top 10 in 2021.
+It's different from insecure implementation in that it has more to do with risks related to design and architectural flaws. A secure implementation might have an insecure design, which still renders an application vulnerable to attacks and exploits.​
+Security should be not an afterthought - how you protect your system’s configuration secrets, handle customers data, leak implementation details during logging and so on​. An insecure design can not be fixed by a perfect implementation.​
 
-Addresses design level flaw, others focus more on code-level issues​. An example could be an error including the exact location of a configuration file​ or a password stored as a plain text – intentional design decision​​.
-
-Insecure Design is a new entry on the OWASP Top 10 in 2021. It's different from insecure implementation in that it has more to do with risks related to design and architectural flaws. A secure implementation might have an insecure design, which still renders an application vulnerable to attacks and exploits.​
-An insecure design can not be fixed by a perfect implementation.​
-
-If you genuinely want to 'shift left' as an industry, you need more threat modeling, secure design patterns and principles, and reference architectures. ​
-:::image type="content" source="../media/enterprise-app-threats.png" alt-text="angles of attack in complex system":::
-Security should be not an afterthought  - how you protect your system’s configuration secrets, handle customers data, leak implementation details during logging and so on​.
-Security matters not only in development and prediction but at design as well.
-Consult with security experts to ensure appropriate requirements and design decisions are being made early on​.
-Use industry security standards and architectures, dedicated services like Azure KeyVault or Azure Web Application Firewall​.
+You might be familiar with the term *'shift-left'*. It's often referred to testing your application early on during the application lifecycle to ensure hight quality (left being analysis and requirements phase, right being release and support phase). Shift-left also applies to security, even before we write the first line of code. A few activities could include threat modeling, following secure design patterns and principles, leveraging reference architectures and conducting security code reviews. ​
 
 A few techniques that can address insecure design are:
-    - Least privilege​ principle
-    - Attack surface reduction​
-    - Zero Trust​ principle
-    - Defense in Depth​
-    - Threat Modeling​
 
-Threat modeling is an essential part of DevSecOps because it informs your security design process and helps find vulnerabilities in your application. While it does fall under DevSecOps, it also sits neatly under education too.
+- Least privilege​ principle - granting just enough permissions to a user or service to successfully perform an operation.
+- Attack surface reduction​ - limit and control what's visible to external users
+- Zero Trust​ principle - never trust, always verify
+- Defense in Depth​ - layered and tiered security approach
+- Threat Modeling​
+
+Let's discuss the latest in more detail. Threat modeling is an essential part of DevSecOps because it informs your security design process and helps find vulnerabilities in your application. While it does fall under DevSecOps, it also sits neatly under education too.
 
 :::image type="content" source="../media/tm-1.png" alt-text="Application logical components":::
 
