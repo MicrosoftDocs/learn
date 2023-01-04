@@ -18,7 +18,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What is the format of the Kubernetes manifest files supported by Arc?"
+  - content: "What is the format of the Kubernetes manifest files supported by Azure Arc?"
     choices:
     - content: "XML"
       isCorrect: false
