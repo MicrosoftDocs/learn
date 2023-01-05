@@ -8,7 +8,7 @@ In this module, you will use the Gatsby command-line tools to create a new web a
 
 By the end of the module, you will be able to create web apps with Gatsby and publish them to the web.
 
-## Learning Objectives
+## Learning objectives
 
 In this module, you will:
 

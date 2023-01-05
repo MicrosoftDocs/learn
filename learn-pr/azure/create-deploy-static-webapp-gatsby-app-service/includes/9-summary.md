@@ -1,6 +1,6 @@
 You started with a challenge of addressing common problems in the web development space including SEO, page load speed and also ensuring you had a reliable architecture building out your app.
 
-You evaluated the command-line tool Gatsby to address the above problems. Gatsby's approach is to produce a set of static pages that loads fast and is easy for a search engine to index effectively.
+You evaluated the command-line tool Gatsby to address the above problems. Gatsby's approach is to produce a set of static pages that loads quickly and is easy for a search engine to index effectively.
 
 Gatsby relies on React.js, GraphQL, and its in-memory data graph. Using JSON data from the in-memory graph, you can produce pages using React.js components with data and content from many sources.
 

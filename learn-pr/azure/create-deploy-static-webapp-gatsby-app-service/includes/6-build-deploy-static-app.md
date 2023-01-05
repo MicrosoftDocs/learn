@@ -3,7 +3,7 @@ Up to this point, we have focused on authoring our Gatsby app using React, Graph
 
 ## Build your app
 
-Gatsby's command-line tool provides a command to *build* your project to create something that you can deploy anywhere you like. The *build* consists of HTML, JavaScript, CSS, and any additional assets you've included.
+Gatsby's command-line tool provides a command to build your project to create something that you can deploy anywhere you like. The *build* consists of HTML, JavaScript, CSS, and any additional assets you've included.
 
 ### Create the build
 
