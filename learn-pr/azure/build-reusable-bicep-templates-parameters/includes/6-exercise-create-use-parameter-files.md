@@ -105,7 +105,7 @@ The deployment might take a couple of minutes to finish.
 
 Your toy company already has a key vault with the secrets it needs for its deployments. To simulate this scenario, you'll create a new key vault and add some secrets to use.
 
-In the terminal, execute the following commands to create the key vault and secrets. Update the variable values before you execute these commands. Key vault names must be a unique string of 3 to 24 characters that can contain only numbers, uppercase and lowercase letters, and hyphens (`-`).
+In the terminal, execute the following commands to create the key vault and secrets. Update the variable values before you execute these commands. Key vault names must be a globally unique string of 3 to 24 characters that can contain only uppercase and lowercase letters, hyphens (`-`), and numbers. For example, _demo-kv-1234567abcdefg_.
 
 > [!CAUTION]
 > Make sure you use the same login and password that you used in the previous step. If you don't, the next deployment won't complete successfully.
@@ -118,12 +118,12 @@ The `login` and `password` variables aren't secure and their values can be displ
 
 The `az keyvault secret set` output in your terminal includes the values of the `login` and `password` variables. To suppress that output, the parameter `--output none` is used.
 
+To create the `keyVaultName`, `login`, and `password` variables, run each command separately. Then you can run the block of commands to create the key vault and secrets.
+
 ```azurecli
 keyVaultName='YOUR-KEY-VAULT-NAME'
-echo "Enter the login name: "
-read -s login
-echo "Enter the password: "
-read -s password
+read -s -p "Enter the login name: " login
+read -s -p "Enter the password: " password
 
 az keyvault create --name $keyVaultName --location westus3 --enabled-for-template-deployment true
 az keyvault secret set --vault-name $keyVaultName --name "sqlServerAdministratorLogin" --value $login --output none
@@ -140,6 +140,8 @@ az keyvault secret set --vault-name $keyVaultName --name "sqlServerAdministrator
 ::: zone pivot="powershell"
 
 For the `keyVaultName` replace `YOUR-KEY-VAULT-NAME` with a name for your key vault. The `Read-Host` commands for the `login` and `password` variables will prompt you for values. As you type, the values aren't displayed in the terminal and aren't saved in your command history. The values are stored as a secure string.
+
+To create the `keyVaultName`, `login`, and `password` variables, run each command separately. Then you can run the block of commands to create the key vault and secrets.
 
 ```azurepowershell
 $keyVaultName = 'YOUR-KEY-VAULT-NAME'
