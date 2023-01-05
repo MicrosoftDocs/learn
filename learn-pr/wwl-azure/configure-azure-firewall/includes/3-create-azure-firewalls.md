@@ -4,7 +4,7 @@ The **hub** is a virtual network in Azure that acts as a central point of connec
 
 **Spokes** are virtual networks that peer with the hub, and can be used to isolate workloads.
 
-Traffic flows between an on-premises datacenter and the hub network through an Azure ExpressRoute or Azure VPN Gateway connection.
+Traffic flows between an on-premises datacenter and the hub network through an Azure connection, such as Azure ExpressRoute, Azure VPN Gateway, or Azure Bastion.
 
 :::image type="content" source="../media/firewall-tasks-7b6dbe0f.png" alt-text="Diagram that shows traffic flowing between an on-premises network to a hub-spoke network with subnets." border="false":::
 
