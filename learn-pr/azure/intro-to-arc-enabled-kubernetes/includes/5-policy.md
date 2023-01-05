@@ -37,7 +37,7 @@ To implement Azure Policy for Kubernetes, you need to install an Azure Policy ad
 
 1. Verify that you satisfy all the prerequisites. You'll need:
 
-   - An Azure Arc-enabled Kubernetes cluster. You'll need to know the Azure Resource ID for this cluster.
+   - An Azure Arc-enabled Kubernetes cluster. You'll need to know its Azure Resource ID.
    - Access to the cluster with a user account that has the cluster-admin role.
    - A work or school account in the Azure Active Directory (Azure AD) tenant associated with the subscription that hosts the Azure Arc-enabled Kubernetes resource. Because you'll need to register a provider, this account should be the subscription owner. It should also have permissions to create service principals in the Azure AD tenant.
    - Helm 3. Consider installing its latest release.
