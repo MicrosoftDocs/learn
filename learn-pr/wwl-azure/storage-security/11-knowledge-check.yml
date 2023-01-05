@@ -28,7 +28,7 @@ quiz:
     - content: "Share the container entity tag (Etag) with the contingent staff member."
       isCorrect: false
       explanation: "An access token is required in the scenario, not an Etag."
-  - content: "A company has both a development and production environment. The development environment needs time-limited access to storage. The production environment needs unrestricted access to storage resources. To configure storage access to meet the requirements, What configuration choices should be done?"
+  - content: "A company has both a development and production environment. The development environment needs time-limited access to storage. The production environment needs unrestricted access to storage resources. To configure storage access to meet the requirements, what configuration choices should be done?"
     choices:
     - content: "Use shared access signatures for the development apps. And use access keys for the production apps."
       isCorrect: true
@@ -41,7 +41,7 @@ quiz:
       explanation: "Cross Origin Resource Sharing does not help with restricting the time limit of the development apps."
   - content: "A company is being audited. It is not known how long the audit will take, but during that time files must not be changed or removed. It is okay to read or create new files. What should be done to set this up?"
     choices:
-    - content: "Add a time-based retention policy to the blob container. And create an tag to identify items being protected."
+    - content: "Add a time-based retention policy to the blob container. And create a tag to identify items being protected."
       isCorrect: false
       explanation: "Using a tag to identify items is a good idea, but a time-based retention policy does not work in this situation."
     - content: "Add legal hold retention policy to the blob container. Also, identify a tag for the items that are being protected."

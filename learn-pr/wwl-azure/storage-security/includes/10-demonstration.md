@@ -1,4 +1,4 @@
-Use this Try-This exercises to gain some hands-on experience with Azure.
+Use this Try-This exercise to gain some hands-on experience with Azure.
 
 In this demonstration, we'll explore storage security configurations.
 
