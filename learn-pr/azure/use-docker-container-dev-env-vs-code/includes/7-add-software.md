@@ -15,7 +15,7 @@ You can install software via the integrated terminal. Most container images are 
 
 But if you make changes to your '.devcontainer' folder and need to rebuild your container, you'll have to reinstall anything you've installed manually. To avoid this problem, you can use the `postCreateCommand` property in devcontainer.json, as mentioned in the previous unit.
 
-The most efficient practice that persists your changes even after rebuilding is to install software through a Feature or your Dockerfile.
+The most efficient practice that persists your changes even after rebuilding is to install software through a Feature.
 
 ## Software installation via Features
 
@@ -38,24 +38,5 @@ The VS Code **Dev Containers: Configure Container Features** command allows you 
 The Features sourced in VS Code UI now come from a central index, which you can [explore and even contribute to](https://containers.dev/features).
 
 You can review more information about [how Features work](https://containers.dev/implementors/features/) and their [distribution](https://containers.dev/implementors/features-distribution/).
-
-## Software installation via Dockerfile
-
-As an alternative or addition to using Features to install more software, you can add a Dockerfile to your `.devcontainer` folder to install more software.
-
-You can read more about using images and Dockerfiles in [this guide](https://containers.dev/guide/dockerfile). A look at installing software via the Dockerfile is as follows:
-
-```Dockerfile
-ARG VARIANT=3
-FROM mcr.microsoft.com/vscode/devcontainers/python:${VARIANT}
-RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get install -y traceroute
-```
-
-- The `RUN` command creates a new *layer*. Layers are how the container knows what has changed and what in the container needs to be updated when you rebuild it. You should try to keep related logic together in the same `RUN` command so that you don't create unnecessary layers.
-- The `\` denotes a line break at the end of a line. You need it for multiple-line commands.
-- The `&&` is how you add a command to the `RUN` line.
-- The `DEBIAN_FRONTEND` export avoids warnings when you go on to work with your container. When you're adding other software, you might instead use other flags or parameters, such as `-y`.
-- The `-y` ensures that `apt-get` doesn't prompt you to confirm that you want to finish the installation. These prompts would cause the container build to fail because nobody would be there to select `Y` or `N`.
 
 In the next exercise, you'll install Node.js. You'll then verify that Node.js is available in the running container.
