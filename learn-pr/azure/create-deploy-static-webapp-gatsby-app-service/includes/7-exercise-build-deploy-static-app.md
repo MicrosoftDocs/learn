@@ -30,7 +30,7 @@ You should now see the following content rendered:
 
 You've built your site and taken it from being a Gatsby app to a set of static pages containing nothing but HTML, CSS, and JavaScript!
 
-Going into your `public/` directory now locate your rendered `about` component at `public/about/index.html`. Because of an optimization process, all whitespace have been removed and the page is represented as one long line. However you should be able to locate the rendered title and description and it should look like this:
+Going into your `public/` directory now locate your rendered `about` component at `public/about/index.html`. Because of an optimization process, all whitespace has been removed and the page is represented as one long line. However you should be able to locate the rendered title and description and it should look like this:
 
 ```html
 // excerpt from about/index.html
@@ -60,7 +60,7 @@ git commit -m "adding About page to site"
 
 2. Now click the `new` button as indicated below:
 
-   :::image type="content" source="../media/create-github-repo.png" alt-text="Screenshot of the create new GitHub repo button.":::
+   :::image type="content" source="../media/create-github-repo.png" alt-text="Screenshot of the create a new GitHub repo button.":::
 
 3. Name your repository `gatsby-app` and click `Create repository` as indicated below:
 
@@ -73,7 +73,7 @@ git commit -m "adding About page to site"
    git push -u origin main
    ```
 
-You are now ready to deploy to Azure Static Web Apps!
+You're now ready to deploy to Azure Static Web Apps!
 
 ## Create a Static Web App
 

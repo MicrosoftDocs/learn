@@ -1,4 +1,4 @@
-Gatsby has a system of plugins that *scans* various data sources and places the resulting data in an in-memory object, the data graph. It does all this at build time, so when you are crafting a new page you can assume the data from that graph is available.
+Gatsby has a system of plugins that *scans* various data sources and places the resulting data in an in-memory object, the data graph. It does all this at build time, so when you're crafting a new page you can assume the data from that graph is available.
 
 ## Tools
 
@@ -10,11 +10,11 @@ GraphiQL allows you to do the following:
 
 - **Navigate**: Drill down into the data graph and its content by expanding nodes to find just the data you need.
 - **Construct queries**: As you drill down into the graph, the tool will craft a query for you. You can also edit the query text as you see fit to see the results.
-- **Browse results**: Run the query you construct to see it rendered in the tool. You will know exactly what response a query renders before venturing on to include it in a component.
+- **Browse results**: Run the query you construct to see it rendered in the tool. You'll know exactly what response a query renders before venturing on to include it in a component.
 
 ## Use data in a page component
 
-When you create a page component that wants to use data from the above mentioned graph, there are three things you will do:
+When you create a page component that wants to use data from the above mentioned graph, there are three things you'll do:
 
 1. **Define a query**. Craft a query in the GraphQL query language that asks for a resource and some columns on that resource.
 1. **Write the code to Execute the query**. In your page's `.js` file, call the `graphql()` function with your query as an input and store the result in a variable named `query`. Here's an example:
@@ -46,5 +46,5 @@ So how do we use information on images that we configured via the `gatsby-source
 
 Any additional plugins you add to Gatsby follow this pattern:
 
-1. Download the plugins via NPM.
+1. Download the plugins via npm.
 2. Configure the plugin via the `gatsby-config.js` file.
