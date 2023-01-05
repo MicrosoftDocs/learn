@@ -4,8 +4,8 @@ metadata:
   title: Introduction to Azure Arc-enabled Kubernetes
   description: Introduction to Azure Arc-enabled Kubernetes
   ms.date: 05/24/2022
-  author: micrum
-  ms.author: micrum
+  author: JnHs
+  ms.author: jenhayes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom:

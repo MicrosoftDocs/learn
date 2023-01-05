@@ -4,8 +4,8 @@ metadata:
   title: What are Kubernetes and Azure Arc?
   description: In this unit you'll learn about Kubernetes and Azure Arc, and the key benefits that they provide.
   ms.date: 01/05/2022
-  author: micrum
-  ms.author: micrum
+  author: JnHs
+  ms.author: jenhayes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom:
