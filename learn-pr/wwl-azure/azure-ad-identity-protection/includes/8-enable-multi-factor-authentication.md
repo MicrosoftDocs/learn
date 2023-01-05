@@ -13,4 +13,4 @@ All users start out Disabled. When you enroll users in per-user Azure AD Multi-F
 Azure AD Multi-Factor Authentication is included free of charge for global administrator security. Enabling MFA for global administrators provides an added level of security when managing and creating Azure resources like virtual machines, managing storage, or using other Azure services. Secondary authentication includes phone call, text message, and the authenticator app.
 
 > [!IMPORTANT]
-> Remember you can only enable MFA for organizational accounts stored in Active Directory. These are also called work or school accounts.
+> Remember, you can only enable MFA for organizational accounts stored in Azure Active Directory. These are also called work or school accounts.
