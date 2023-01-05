@@ -1,7 +1,8 @@
 
 A data lake is a repository of data that's stored in its natural format, usually as blobs or files. [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake/) Storage is a comprehensive, scalable, and cost-effective data lake solution for big data analytics built into Azure. Azure Data Lake Storage combines a file system with a storage platform to help you quickly identify insights into your data. The solution builds on Azure Blob Storage capabilities to provide optimizations for analytics workloads. This integration enables analytics performance, high-availability, security, and durability capabilities of Azure Storage.
 
-> [!Note] The current implementation of the service is Azure Data Lake Storage Gen2.
+> [!Note] 
+> The current implementation of the service is Azure Data Lake Storage Gen2.
 
 ### Things to know about Azure Data Lake Storage
 
