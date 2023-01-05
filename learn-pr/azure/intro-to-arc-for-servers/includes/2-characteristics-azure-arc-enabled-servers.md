@@ -1,8 +1,8 @@
-Business technology landscape continuously evolves and becomes increasingly complex with multiple applications running on different hardware across on-premises datacenters, multiple public and private clouds, and the edge. Managing these disparate environments at scale, enhancing security across an entire organization, and enabling developer agility and innovation are critical for businesses to succeed and thrive. Microsoft Azure provides tools and solutions that help customers like Contoso to innovate their hybrid environments in the secure manner and with a minimized management overhead. Azure Arc is an example of such solution. While it offers support for a range of different scenarios, most on-premises workloads still rely on physical or virtual servers running either Windows or Linux, so our focus will be on Azure Arc enabled servers. 
+Business technology landscape continuously evolves and becomes increasingly complex with multiple applications running on different hardware across on-premises datacenters, multiple public and private clouds, and the edge. Managing these disparate environments at scale, enhancing security across an entire organization, and enabling developer agility and innovation are critical for businesses to succeed and thrive. Microsoft Azure provides tools and solutions that help customers like Contoso to innovate their hybrid environments in the secure manner and with a minimized management overhead. Azure Arc is an example of such solution. While it offers support for a range of different scenarios, most on-premises workloads still rely on physical or virtual servers running either Windows or Linux, so our focus will be on Azure Arc-enabled servers. 
 
 Azure Arc consists of a set of technologies that simplify administration of complex, distributed, hybrid environments, such as the one you deal with as the IT Engineering team lead of Contoso. It provides a centralized, multi-cloud, and on-premises governance and management platform. It facilitates adoption of automation, single-pane-of-glass monitoring and comprehensive security, and promotes the cloud-first strategy, regardless of where your resources are located. At the same time, Azure Arc still allows you to continue using traditional ITOps tools and practices, as you transition to the DevOps model to fully benefit from cloud native architectural and operational patterns.
 
-In this unit, you'll learn about the characteristics of Azure Arc enabled servers and how to enable Azure Arc.
+In this unit, you'll learn about the characteristics of Azure Arc-enabled servers and how to enable Azure Arc.
 
 ## What are Azure Arc-enabled servers?
 
@@ -10,7 +10,7 @@ Azure Arc relies on the Azure Arc Connected Machine agent, a locally installed a
 
 By connecting your machines to Azure with Azure Arc-enabled servers, you can use Azure Resource Manager to manage and monitor its configuration and operations. This facilitates a range of other scenarios that use Azure services to optimize security, monitoring, and governance.
 
-![A screenshot of the Azure portal displaying the entry representing an Azure Arc enabled Windows server.](../media/2-azure-arc-enabled-vm-portal.png)
+![A screenshot of the Azure portal displaying the entry representing an Azure Arc-enabled Windows server.](../media/2-azure-arc-enabled-vm-portal.png)
 
 ## What is the Connected Machine agent?
 
