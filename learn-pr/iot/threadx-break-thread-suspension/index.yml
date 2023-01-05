@@ -3,17 +3,16 @@ uid: learn.iot.threadx-break-thread-suspension
 metadata:
   title: Use Wait Abort to break thread suspension
   description: Learn how to use Wait Abort to break thread suspension in Azure RTOS ThreadX.
-  ms.date: 01/27/2022
+  ms.date: 04/19/2022
   author: timlt
   ms.author: timlt
   ms.reviewer: liydu
   manager: lizross
-  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use Wait Abort to break thread suspension
 summary: Learn how to use Wait Abort to break thread suspension in Azure RTOS ThreadX.
-abstract:  | 
+abstract: |
   In this module, you will:
   - Explore the features and uses of counting semaphores and the TX_WAIT_ABORT service.
   - Understand the purpose of a monitor thread.
@@ -26,24 +25,24 @@ prerequisites: |
   - Previous modules in this [learning path](/training/paths/azure-rtos-threadx)
 iconUrl: /training/achievements/iot/threadx-break-thread-suspension.svg
 levels:
-- beginner
+  - beginner
 roles:
-- developer
+  - developer
 products:
-- azure
-- azure-iot
-- azure-rtos
+  - azure
+  - azure-iot
+  - azure-rtos
 subjects:
-- iot
+  - iot
 units:
-- learn.iot.threadx-break-thread-suspension.introduction
-- learn.iot.threadx-break-thread-suspension.overview
-- learn.iot.threadx-break-thread-suspension.activities
-- learn.iot.threadx-break-thread-suspension.counting-semaphores
-- learn.iot.threadx-break-thread-suspension.design-considerations
-- learn.iot.threadx-break-thread-suspension.building-blocks
-- learn.iot.threadx-break-thread-suspension.exercise-build-debug
-- learn.iot.threadx-break-thread-suspension.knowledge-check
-- learn.iot.threadx-break-thread-suspension.summary
+  - learn.iot.threadx-break-thread-suspension.introduction
+  - learn.iot.threadx-break-thread-suspension.overview
+  - learn.iot.threadx-break-thread-suspension.activities
+  - learn.iot.threadx-break-thread-suspension.counting-semaphores
+  - learn.iot.threadx-break-thread-suspension.design-considerations
+  - learn.iot.threadx-break-thread-suspension.building-blocks
+  - learn.iot.threadx-break-thread-suspension.exercise-build-debug
+  - learn.iot.threadx-break-thread-suspension.knowledge-check
+  - learn.iot.threadx-break-thread-suspension.summary
 badge:
   uid: learn.iot.threadx-break-thread-suspension.badge

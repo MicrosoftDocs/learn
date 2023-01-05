@@ -1,12 +1,12 @@
-Now that you've successfully trained a model, ran the detect API using your train model, it’s time to view the results.   We’ll observe the behavior correlation between all the smart meter readings as well as the key contributors of any anomaly found.
+Now that you've successfully trained a model, ran the detect API using your train model, it’s time to view the results. We’ll observe the behavior correlation between all the smart meter readings as well as the key contributors of any anomaly found.
 
-In this exercise, you'll need Jupyter Notebook to run the code blocks below.
+You'll need Jupyter Notebook to run the code blocks in this exercise. In this unit. we'll:
 
-- We'll get results from running the detect API with your trained model
-- Next, we'll plot the test dataset from the smart meter readings on the graph
-- Finally, we'll plot the results of the multivariate anomaly detector on the graph
+- Get results from running the detect API with your trained model.
+- Plot the test dataset from the smart meter readings on the graph.
+- Plot the results of the multivariate anomaly detector on the graph.
 
-Before we view the results, let's start by setting up the environment.  Copy and replace the values in the code below for _**ANOMALY_DETECTOR_NAME**_ and _**API_KEY_ANOMALY DETECTOR**_ that you created from the setup exercise. You'll also need the **_RESULT_ID_** from the previous exercise.
+Before we view the results, let's start by setting up the environment. Copy and replace the values in the code below for _**ANOMALY_DETECTOR_NAME**_ and _**API_KEY_ANOMALY DETECTOR**_ that you created from the setup exercise. You'll also need the **_RESULT_ID_** from the previous exercise.
 
 ```python
 from bokeh.io import output_file, show, output_notebook, save
@@ -47,7 +47,7 @@ BLOB_SOURCE = ''
 
 ## Get the results from the detection  
 
-To query and retrieve the results, we'll need to create a function the call the API_RESULT url defined above which returns a JSON file containing the results.  It requires the result_id as a parameter.
+To query and retrieve the results, we'll need to create a function to call the `API_RESULT` url defined above, which returns a JSON file containing the results. It requires the `result_id` as a parameter.
   
 ```python
 #get results from running the detect API on the trained model
@@ -62,9 +62,9 @@ def get_results(result_id):
         return
  ```
 
-Run the following function with the RESULT_ID to get the results from the detect inference using your train model.
+Run the following function with the `result_id` to get the results from the detect inference using your train model.
 
-```python    
+```python   
 raw_result = get_results(result_id)
  ```
 
@@ -108,7 +108,7 @@ def load_data(local_data_path, start, end):
 
 ## Configure the graph settings
 
-Create a constructor function to create a graph and interactive tool settings
+Create a constructor function to create a graph and interactive tool settings:
 
 ```python
 def plot_lines_multi(x, y, p, color, name, t_str="hover,save,pan,box_zoom,reset,wheel_zoom", t_loc='above'):
@@ -121,15 +121,16 @@ def plot_lines_multi(x, y, p, color, name, t_str="hover,save,pan,box_zoom,reset,
 
 Loop through the time-series testing data and plot the household smart meter readings for power, voltage, kitchen, and laundry room.
 
-Parsing the anomaly results:
+### Parse the anomaly results
 
 We'll loop through the list of results and extract the following information at each timestamp:
-- **isAnomaly**: True or False. True if the timestamp has an anomaly.
-- **score**: A number that the model calculates for each timestamp to determine whether it's an anomaly. The model considers whether a data point is anomalous from both global and local perspective. If score at a timestamp is higher than a certain threshold, then the timestamp is marked as an anomaly. If score is lower than the threshold but is relatively higher in a segment, it's also marked as an anomaly.
-- **sensitivity**: Controls the margin between the expected value.  If the actual value falls outside the margin, then it's anomalous. The higher the sensitivity, the lower the margin. The higher the sensitivity, the more anomalies will be found.
 
-Appending the detected anomaly results on the graph:
-    
+- **isAnomaly**: True or False. True if the timestamp has an anomaly.
+- **score**: A number that the model calculates for each timestamp to determine whether it's an anomaly. The model considers whether a data point is anomalous from both global and local perspective. If the score at a timestamp is higher than a certain threshold, then the timestamp is marked as an anomaly. If the score is lower than the threshold but is relatively higher in a segment, it's also marked as an anomaly.
+- **sensitivity**: Controls the margin between the expected value. If the actual value falls outside the margin, then it's anomalous. The higher the sensitivity, the lower the margin. The higher the sensitivity, the more anomalies will be found.
+
+### Append the detected anomaly results on the graph
+
 We'll loop through the results and plot values for isAnomaly, score, and severity for each timestamp on the graph.
 
 ```python
@@ -209,9 +210,9 @@ def draw(data_source, local_data_path, result_id, sensitivity, start, end):
     return series, raw_result, top_anomaly
    ```
 
-## Display graph with household smart meter anomalies 
+## Display graph with household smart-meter anomalies
 
-Now we'll run the application to display the graph showing the energy use behavior for a household and the anomalies found.
+Now, we'll run the application to display the graph showing the energy use behavior for a household and the anomalies found.
 
 ```python
 severity = 0.9
@@ -221,11 +222,12 @@ test_end_date = "2006-12-19 20:26:00"
 
 series, raw_result, top_anomaly = draw(BLOB_SOURCE, local_data_path, result_id, severity, test_start_date, test_end_date)
 ```
-[ ![Diagram displaying graph showing anomalies.](..\media\7-exercise-evaluate-and-visualize-anomaly-contributors-1.png) ](..\media\7-exercise-evaluate-and-visualize-anomaly-contributors-1.png#lightbox)
+
+![Diagram displaying graph showing anomalies.](..\media\7-exercise-evaluate-and-visualize-anomaly-contributors-1.png) ](..\media\7-exercise-evaluate-and-visualize-anomaly-contributors-1.png#lightbox)
 
 ## Find contributors of an anomaly
 
-We'll define a function to display the JSON results at a timestamp where an anomaly was found. It will show the anomaly contributors at that timestamp. This will give you an idea of the root cause.
+We'll define a function to display the JSON results at a timestamp where an anomaly was found. It'll show the anomaly contributors at that timestamp. This will give you an idea of the root cause.
 
 ```python
 import json
@@ -237,12 +239,13 @@ def show_contribution(raw_result, anomaly_timestamp):
     print(formatted_str)
 ```
 
-When an anomaly is detected at a given timestamp, the multivariate Result API will return a list of contributors for that timestamp. The culprits of the anomaly are ranked by the contributorScore. The variable with the highest contributorScore will be the main problem. In this case, the anomaly at timestamp _2006-12-19T08:42:00Z_ came from the _Kitchen sub meter_.
+When an anomaly is detected at a given timestamp, the multivariate Result API will return a list of contributors for that timestamp. The culprits of the anomaly are ranked by the `contributorScore`. The variable with the highest `contributorScore` will be the main problem. In this case, the anomaly at timestamp _2006-12-19T08:42:00Z_ came from the _Kitchen sub meter_.
 
 ```python
 print("Top anomaly timestamp: ", top_anomaly)
 show_contribution(raw_result, top_anomaly)
 ```
-[ ![Diagram displaying contributors of an anomaly.](..\media\7-exercise-evaluate-and-visualize-anomaly-contributors-2.png) ](..\media\7-exercise-evaluate-and-visualize-anomaly-contributors-2.png#lightbox)
 
-Congratulations, you have completed the exercises in this module!  See the summary to see how you can apply the techniques you have learned in your applications.
+![Diagram displaying contributors of an anomaly.](..\media\7-exercise-evaluate-and-visualize-anomaly-contributors-2.png) ](..\media\7-exercise-evaluate-and-visualize-anomaly-contributors-2.png#lightbox)
+
+Congratulations, you've completed the exercises in this module! Continue to the Summary to see how you can apply the techniques you've learned in your applications.

@@ -12,7 +12,7 @@ Here's a summary of common errors you're likely to encounter as you begin to lea
 
 ## Wrong uppercase
 
-Entering uppercase letters, like capitalizing `c` in `cout` or `r` in `return`, causes an error. Using incorrect casing results in a compilation error.
+Uppercase letters, like capitalizing `c` in `cout` or `r` in `return`, causes an error. Using incorrect casing results in a compilation error.
 
 ```cpp
 Return 0;  // incorrect

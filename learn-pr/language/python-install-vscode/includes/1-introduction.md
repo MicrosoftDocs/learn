@@ -9,13 +9,13 @@ By the end of this module, you'll have installed the tools required to move forw
 
 By the end of this module, you'll be able to:
 
-- Install Python 3 if needed.
+- Install Python 3.
 - Install and configure Visual Studio Code and extensions on your computer.
 - Create a Python file.
 - Write and run Python code in Visual Studio Code.
 
 ## Prerequisites
 
-- Able to install programs locally
-- Knowledge of how to open and run commands from a command or terminal window
-- Basic understanding of programming
+- Able to install programs locally.
+- Knowledge of how to open and run commands from a command or terminal window.
+- Basic understanding of programming.

@@ -90,7 +90,7 @@ az cognitiveservices account keys list \
 ```
 
 You should see a JSON response like the following example.
-    
+
 ```json
 {
    "key1": "0123456789abcdef0123456789abcdef",

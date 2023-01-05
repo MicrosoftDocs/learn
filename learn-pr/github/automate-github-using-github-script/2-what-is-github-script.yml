@@ -5,8 +5,8 @@ metadata:
   title: What is GitHub Script?
   description: Learn to interact with the GitHub API from GitHub Actions using GitHub Script.
   ms.date: 06/26/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8
