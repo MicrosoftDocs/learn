@@ -52,7 +52,7 @@ Azure Arc supports Azure integration for different types of resources residing o
 - Azure Arc-enabled Kubernetes - a wide range of Kubernetes distributions.
 - Azure Stack HCI - physical clusters with virtualized workloads and containerized workloads.
 - Azure Kubernetes Service on Azure Stack HCI - Azure Kubernetes Service (AKS) running on Azure Stack HCI clusters.
-- Azure Arc-enabled data services - Azure SQL Managed Instance and PostgreSQL Hyperscale services running on Azure Arc-enabled Kubernetes or Azure Kubernetes Service on Azure Stack HCI.
+- Azure Arc enabled data services - Azure SQL Managed Instance running on Azure Arc enabled Kubernetes or Azure Kubernetes Service on Azure Stack HCI
 
 > [!NOTE]
 > For production environments, verify that the Azure Arc features you intend to use are generally available.
