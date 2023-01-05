@@ -1,6 +1,5 @@
 
-Loading and optimizing queries for cleansing, matching, and refinement are some of the most important tasks a data engineer can learn. In this section those elements will be discussed in context of Azure Synapse Analytics and the impact of good design in a distributed architecture.
-
+A data engineer is one of the primary roles responsible for loading and optimizing queries for cleansing, matching, and refinement of data. In this section those elements will be discussed in context of Azure Synapse Analytics and the impact of good design in a distributed architecture.
 In this module, you will:
 -	Understand data loading design goals
 -	Explain loading methods into Azure Synapse Analytics
@@ -8,15 +7,14 @@ In this module, you will:
 -	Implement Workload Management
 -	Exercise - Load Data into a relational data warehouse
 -	Understand Table Distribution Design
--	Understand Idexes and Query Plans
--	Other optimaization considerations
+-	Understand Indexes and Query Plans
+-	Other optimization considerations
 -   Exercise - See how statistics affect a query plan
 
 
 ## Prerequisites
 
-Before taking this module, it is recommended that the student is able to:
+Before taking this module, it's recommended that the student is able to:
 -	Log into the Azure portal
 -	Create a Synapse Analytics Workspace
 -	Create an Azure Synapse Analytics SQL Pool
----
