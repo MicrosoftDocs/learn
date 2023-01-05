@@ -26,7 +26,7 @@ prerequisites: |
 
   To follow along with the exercises in the module, you'll need the following software installed locally:
   - [Visual Studio Code](https://code.visualstudio.com) and the [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
-  - [Bicep CLI](/azure/azure-resource-manager/bicep/install#install-manually) for your computing platform.
+  - [Bicep CLI](/azure/azure-resource-manager/bicep/install) for your computing platform.
   - One of these command-line shells:
     - The latest [Azure CLI](/cli/azure/install-azure-cli).
     - The latest [Azure PowerShell](/powershell/azure/install-az-ps).

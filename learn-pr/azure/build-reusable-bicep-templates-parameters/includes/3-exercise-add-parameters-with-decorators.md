@@ -2,7 +2,7 @@
 
 As part of the HR application migration, you're creating a Bicep template to deploy Azure resources. In this exercise, you'll create an Azure App Service plan and App Service app. You'll apply decorators to each parameter to ensure that they'll always contain the values you expect.
 
-During the process, you'll:
+During the process, you'll do the following tasks:
 
 > [!div class="checklist"]
 >

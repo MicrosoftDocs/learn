@@ -1,6 +1,6 @@
 In this exercise, you'll create a parameter file that provides values for the Bicep file that you previously created. In the same parameter file, you'll also add Azure Key Vault references to securely provide sensitive information.
 
-During the process, you'll:
+During the process, you'll do the following tasks:
 
 > [!div class="checklist"]
 >
@@ -105,21 +105,29 @@ The deployment might take a couple of minutes to finish.
 
 Your toy company already has a key vault with the secrets it needs for its deployments. To simulate this scenario, you'll create a new key vault and add some secrets to use.
 
-In the terminal, execute the following commands to create the key vault and secrets. Update the variable values before you execute these commands.
+In the terminal, execute the following commands to create the key vault and secrets. Update the variable values before you execute these commands. Key vault names must be a unique string of 3 to 24 characters that can contain only numbers, uppercase and lowercase letters, and hyphens (`-`).
 
 > [!CAUTION]
 > Make sure you use the same login and password that you used in the previous step. If you don't, the next deployment won't complete successfully.
 
 ::: zone pivot="cli"
 
+For the `keyVaultName` replace `YOUR-KEY-VAULT-NAME` with a name for your key vault. The `read` commands for the `login` and `password` variables will prompt you for values. As you type, the values aren't displayed in the terminal and aren't saved in your command history.
+
+The `login` and `password` variables aren't secure and their values can be displayed with the `echo` command. After your vault secrets are created, you can rerun the `read` commands without inputting a value to remove each variable's existing value.
+
+The `az keyvault secret set` output in your terminal includes the values of the `login` and `password` variables. To suppress that output, the parameter `--output none` is used.
+
 ```azurecli
-keyVaultName='YOUR-KEY-VAULT-NAME' # A unique name for the key vault.
-login='YOUR-LOGIN' # The login that you used in the previous step.
-password='YOUR-PASSWORD' # The password that you used in the previous step.
+keyVaultName='YOUR-KEY-VAULT-NAME'
+echo "Enter the login name: "
+read -s login
+echo "Enter the password: "
+read -s password
 
 az keyvault create --name $keyVaultName --location westus3 --enabled-for-template-deployment true
-az keyvault secret set --vault-name $keyVaultName --name "sqlServerAdministratorLogin" --value $login
-az keyvault secret set --vault-name $keyVaultName --name "sqlServerAdministratorPassword" --value $password
+az keyvault secret set --vault-name $keyVaultName --name "sqlServerAdministratorLogin" --value $login --output none
+az keyvault secret set --vault-name $keyVaultName --name "sqlServerAdministratorPassword" --value $password --output none
 ```
 
 > [!NOTE]
@@ -131,17 +139,16 @@ az keyvault secret set --vault-name $keyVaultName --name "sqlServerAdministrator
 
 ::: zone pivot="powershell"
 
-```azurepowershell
-$keyVaultName = 'YOUR-KEY-VAULT-NAME' # A unique name for the key vault.
-$login = 'YOUR-LOGIN' # The login that you used in the previous step.
-$password = 'YOUR-PASSWORD' # The password that you used in the previous step.
+For the `keyVaultName` replace `YOUR-KEY-VAULT-NAME` with a name for your key vault. The `Read-Host` commands for the `login` and `password` variables will prompt you for values. As you type, the values aren't displayed in the terminal and aren't saved in your command history. The values are stored as a secure string.
 
-$sqlServerAdministratorLogin = ConvertTo-SecureString $login -AsPlainText -Force
-$sqlServerAdministratorPassword = ConvertTo-SecureString $password -AsPlainText -Force
+```azurepowershell
+$keyVaultName = 'YOUR-KEY-VAULT-NAME'
+$login = Read-Host "Enter the login name" -AsSecureString
+$password = Read-Host "Enter the password" -AsSecureString
 
 New-AzKeyVault -VaultName $keyVaultName -Location westus3 -EnabledForTemplateDeployment
-Set-AzKeyVaultSecret -VaultName $keyVaultName -Name 'sqlServerAdministratorLogin' -SecretValue $sqlServerAdministratorLogin
-Set-AzKeyVaultSecret -VaultName $keyVaultName -Name 'sqlServerAdministratorPassword' -SecretValue $sqlServerAdministratorPassword
+Set-AzKeyVaultSecret -VaultName $keyVaultName -Name 'sqlServerAdministratorLogin' -SecretValue $login
+Set-AzKeyVaultSecret -VaultName $keyVaultName -Name 'sqlServerAdministratorPassword' -SecretValue $password
 ```
 
 > [!NOTE]
@@ -173,7 +180,7 @@ az keyvault show --name $keyVaultName --query id --output tsv
 
 The resource ID will look something like this example:
 
-```json
+```Output
 /subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/PlatformResources/providers/Microsoft.KeyVault/vaults/toysecrets
 ```
 
