@@ -4,7 +4,7 @@ title: Illustrative Azure RTOS ThreadX project
 metadata:
   title: Illustrative Azure RTOS ThreadX project
   description: Walkthrough of a simple ThreadX system.
-  ms.date: 01/27/2022
+  ms.date: 04/19/2022
   author: timlt
   ms.author: timlt
   ms.reviewer: liydu
