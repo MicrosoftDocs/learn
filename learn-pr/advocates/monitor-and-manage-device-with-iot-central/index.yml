@@ -14,14 +14,12 @@ metadata:
   ms.prod: learning-azure
 summary: Learn how to create an Azure IoT Central application to monitor and manage an IoT device.
 abstract: |
-  In this module, you will:
+  Upon completion of this module, you will be able to:
   - Create an Azure IoT Central custom application
-  - Create and define your device template
   - Connect a coffee machine simulator to your application in Azure IoT Central
-  - Validate your connection and data flow
   - Configure rules for maintenance notifications
 prerequisites: |
-  Ability to navigate the Azure portal
+  - Basic familiarity with IT terms and concepts
 iconUrl: /training/achievements/monitor-and-manage-device-with-iot-central.svg
 levels: 
 - beginner
