@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-machine-learning-workspace-resources-assets.provision
+title: Create an Azure Machine Learning workspace
+metadata:
+  title: Create an Azure Machine Learning workspace
+  description: "Create an Azure Machine Learning workspace"
+  ms.date: 01/05/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-provision.md)]

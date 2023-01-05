@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/06/2022
+  ms.date: 01/05/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -28,7 +28,7 @@ quiz:
     - content: "Share the container entity tag (Etag) with the contingent staff member."
       isCorrect: false
       explanation: "An access token is required in the scenario, not an Etag."
-  - content: "A company has both a development and production environment. The development environment needs time-limited access to storage. The production environment needs unrestricted access to storage resources. To configure storage access to meet the requirements, What configuration choices should be done?"
+  - content: "A company has both a development and production environment. The development environment needs time-limited access to storage. The production environment needs unrestricted access to storage resources. To configure storage access to meet the requirements, what configuration choices should be done?"
     choices:
     - content: "Use shared access signatures for the development apps. And use access keys for the production apps."
       isCorrect: true
@@ -41,16 +41,16 @@ quiz:
       explanation: "Cross Origin Resource Sharing does not help with restricting the time limit of the development apps."
   - content: "A company is being audited. It is not known how long the audit will take, but during that time files must not be changed or removed. It is okay to read or create new files. What should be done to set this up?"
     choices:
-    - content: "Add a time-based retention policy to the blob container. And create an tag to identify items being protected."
+    - content: "Add a time-based retention policy to the blob container. And create a tag to identify items being protected."
       isCorrect: false
       explanation: "Using a tag to identify items is a good idea, but a time-based retention policy does not work in this situation."
     - content: "Add legal hold retention policy to the blob container. Also, identify a tag for the items that are being protected."
       isCorrect: true
       explanation: "Add legal hold retention policy to the blob container. Identify a tag for the items that are being protected. If the retention interval is not known, users can set legal holds to store immutable data until the legal hold is cleared. When a legal hold policy is set, blobs can be created and read, but not modified or deleted. Each legal hold is associated with a user-defined alphanumeric tag (such as a case ID, event name, etc.) that is used as an identifier string."
-    - content: "Configure a retention time period of 2 weeks with an option to renew. Then, add a time-based retention policy to the blob container."
+    - content: "Configure a retention time period of two weeks with an option to renew. Then, add a time-based retention policy to the blob container."
       isCorrect: false
       explanation: "A retention policy would only ensure files are not deleted, they could still be modified."
-  - content: "When configuring an Azure File share for the business group, which of the following is true?"
+  - content: "Which statements are factual when configuring an Azure file share for a business group?"
     choices:
     - content: "Azure Files can authenticate to Azure Active Directory Domain Services."
       isCorrect: true
@@ -61,7 +61,7 @@ quiz:
     - content: "Azure Files can use RBAC for share-level or directory/file permissions."
       isCorrect: false
       explanation: "Azure Files cannot use RBAC for share-level or directory/file permissions. Only share-level permissions can use RBAC. Directory or file level permissions can use Windows DACLs, or not."
-  - content: "When configuring Secure transfer required, the Compliance office wants to understand how connections are secured when REST API operational calls are made to an Azure Storage account. What information below would be provided?"
+  - content: "When configuring Secure transfer, the Compliance office wants to understand how connections are secured when REST API operational calls are made to an Azure Storage account. What information would be provided?"
     choices:
     - content: "Requests to storage can be HTTPS or HTTP."
       isCorrect: false
