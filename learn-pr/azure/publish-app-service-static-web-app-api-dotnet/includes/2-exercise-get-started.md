@@ -24,7 +24,11 @@ You just created a GitHub repository named **my-static-blazor-app** in your GitH
 
 1. Open the solution file, _ShoppingList.sln_.
 
+   :::image type="content" source="../media/open-solution.png" alt-text="Screenshot showing where to open the shopping list solution.":::
+
 1. Finally, run the front-end client application by selecting **Client** as the start-up project and launching the debugger.
+
+   :::image type="content" source="../media/select-start-project.png" alt-text="Screenshot showing the client project selected.":::
 
 ## Browse to your app
 

@@ -10,6 +10,8 @@ Pull your code changes from Git by following these steps:
 
 1. Pull the latest changes from GitHub.
 
+   :::image type="content" source="../media/pull-latest-changes.png" alt-text="Screenshot showing where to pull changes from GitHub.":::
+
 You can now see your workflow file in the folder _.github/workflows_ in **Windows Explorer** (the file isn't part of the Visual Studio solution).
 
 ## Create a routing rule
