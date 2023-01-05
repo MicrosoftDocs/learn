@@ -1,4 +1,4 @@
-resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
+resource appServicePlan 'Microsoft.Web/serverfarms@2022-03-01' = {
   name: appServicePlanName
   location: location
   sku: {
