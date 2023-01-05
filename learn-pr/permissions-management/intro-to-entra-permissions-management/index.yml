@@ -23,6 +23,8 @@ roles:
 - identity-access-admin 
 products:
 - azure-active-directory
+- entra
+- entra-permissions-management
 subjects:
 - classification-analysis
 units:
