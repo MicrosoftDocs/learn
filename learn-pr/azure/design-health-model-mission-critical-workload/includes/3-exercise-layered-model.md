@@ -91,13 +91,13 @@ From top to bottom, the Contoso Shoes internal web application health model has 
   - **List catalog items**. Dependent on the front-end web application and the Catalog API.
   - **Add comment**. Dependent on the front-end web application, Catalog API, and background processor.
 
-##### Application components:
+##### Application components
 
   - **Front-end web application**. Dependent on Blob Storage and the Catalog API.
   - **Catalog API**. Dependent on Azure Cosmos DB, Key Vault, and Event Hubs.
   - **Background processor**. Dependent on Azure Cosmos DB, Key Vault, and Event Hubs.
 
-##### Azure resources:
+##### Azure resources
 
   - **Blob Storage**
   - **Azure Cosmos DB**
