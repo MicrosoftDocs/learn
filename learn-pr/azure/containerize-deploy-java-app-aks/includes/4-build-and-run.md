@@ -5,16 +5,15 @@ In this unit, you'll build and run the container image. As mentioned earlier, a 
 Now that you've successfully constructed a Dockerfile, you can instruct Docker to build a container image for you.
 
 > [!NOTE]
-> Ensure your Docker runtime is configured to build Linux containers. This is important as the Dockerfile being used references container images (JDK/JRE) for the Linux architecture.
+> Ensure your Docker runtime is configured to build Linux containers. This is important because the Dockerfile being used references container images (JDK/JRE) for the Linux architecture.
 
-
-```docker build``` is the command used to build container images. The ```-t``` argument will be used to specify a container label and the ```.``` is the location for Docker to find the Dockerfile. Run the following command in your CLI:
+```docker build``` is the command used to build container images. The ```-t``` argument will be used to specify a container label, and the ```.``` is the location for Docker to find the Dockerfile. Run the following command in your CLI:
 
 ```bash
 docker build -t flightbookingsystemsample .
 ```
 
-You’ll see something similar:
+You’ll get output similar to the following:
 
 ```bash
 docker build -t flightbookingsystemsample .
@@ -94,7 +93,7 @@ Successfully built a0b73d3f3f91
 Successfully tagged flightbookingsystemsample:latest
 ```
 
-As you saw previously, Docker has executed the instructions from the lines that you’ve previously written in the prior unit. Each instruction is a step in sequential order. Rerun the ```docker build``` command again, notice the differences in the steps, you'll notice ```---> Using cache``` for layers that haven’t changed. If your not making app changes (before rerunning the ```docker build``` command), then you’ll notice all cached layers as the binaries are untouched and can be sourced from Docker cache). This is an important takeaway when optimizing your container images and the associated compute costs with time spent building them.
+As you noticed previously, Docker executed the instructions from the lines that you wrote in the prior unit. Each instruction is a step in sequential order. Rerun the ```docker build``` command again, notice the differences in the steps. You'll notice ```---> Using cache``` for layers that haven’t changed. If you're not making app changes before rerunning the ```docker build``` command, then you’ll notice all cached layers as the binaries are untouched and can be sourced from the Docker cache. This is an important takeaway when optimizing your container images and the associated compute costs with time spent building them.
 
 Docker can also display the available images that are resident. This is helpful for viewing what's available to run. Run the following command in your CLI:
 
@@ -102,7 +101,7 @@ Docker can also display the available images that are resident. This is helpful 
 docker image ls
 ```
 
-You’ll see something similar:
+You’ll get output similar to the following:
 
 ```bash
 docker image ls
@@ -112,15 +111,15 @@ flightbookingsystemsample                         latest              cda4f5b459
 
 ## Run a container image
 
-Now that you have successfully built a container image, you can run it.
+Now that you've successfully built a container image, you can run it.
 
-```docker run``` is the command used to run a container image. The ```-p ####:####``` argument will be used to forward localhost HTTP (the first port before the colon) traffic to the container at runtime (the second port after the colon). Remember from the Dockerfile that the Tomcat app server is listening for HTTP traffic on port 8080 hence that is the container port that needs to be exposed. Lastly the image tag ```flightbookingsystemsample``` is needed to instruct Docker of what image to run. Run the following command in your CLI:
+```docker run``` is the command used to run a container image. The ```-p ####:####``` argument will  forward localhost HTTP (the first port before the colon) traffic to the container at runtime (the second port after the colon). Remember from the Dockerfile that the Tomcat app server is listening for HTTP traffic on port 8080; hence, that's the container port that needs to be exposed. Lastly the image tag ```flightbookingsystemsample``` is needed to instruct Docker of what image to run. Run the following command in your CLI:
 
 ```bash
 docker run -p 8080:8080 flightbookingsystemsample
 ```
 
-You’ll see something similar:
+You’ll get output similar to the following:
 
 ```bash
 docker run -p 8080:8080 flightbookingsystemsample
@@ -169,12 +168,12 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 02-Aug-2021 20:50:32.768 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [8990] milliseconds
 ```
 
-Open up a browser and visit the Flight Booking System for Airline Reservations landing page at `http://localhost:8080/FlightBookingSystemSample`
+Open a browser window and visit the Flight Booking System for Airline Reservations landing page at `http://localhost:8080/FlightBookingSystemSample`.
 
-You should see the following
+You should see the following:
 
 ![Screenshot showing the running app.](../media/build-and-run.png)
 
-You can optionally sign in with any user from tomcat-users.xml for example someuser@azure.com: password
+You can optionally sign in with any user from tomcat-users.xml; for example `someuser@azure.com: password`.
 
-To stop the container hold ctrl + c inside the CLI.
+To stop the container, press <kbd>CTRL</kbd> + <kbd>c</kbd> inside the CLI.
