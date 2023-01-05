@@ -32,7 +32,8 @@ quiz:
     - content: "namespace"
       isCorrect: false
       explanation: "A namespace is not capable of running an agent."
-  - content: "Which of the following is NOT a capability of Azure Policy for Kubernetes?
+  - content: "Which of the following is NOT a capability of Azure Policy for Kubernetes?"
+    choices:
     - content: "Reporting auditing and compliance data."
       isCorrect: false
       explanation: "Azure Policy for Kubernetes reports this data to Azure Policy, allowing you to review status via the Azure portal."
