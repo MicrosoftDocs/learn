@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-arc-enabled-kubernetes.4-connect-kubernetes-arc
 metadata:
   title: Connect Kubernetes clusters to Azure Arc
   description: In this unit, you'll learn how to connect an Azure Arc-enabled Kubernetes cluster.
-  ms.date: 01/05/2022
+  ms.date: 01/05/2023
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial
@@ -43,6 +43,6 @@ quiz:
     - content: "Outbound connectivity from the Kubernetes cluster"
       isCorrect: false
       explanation: "To connect a Kubernetes cluster to Azure Arc, the cluster must be able to connect to Azure and to the Microsoft container registry."
-    - content: "The latest version of Helm 3"
+    - content: "Helm 3"
       isCorrect: false
-      explanation: "The latest version of Helm 3 must be installed on the management computer in order to connect a Kubernetes cluster to Azure Arc.."
+      explanation: "Helm 3 must be installed on the management computer in order to connect a Kubernetes cluster to Azure Arc.."
