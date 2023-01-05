@@ -41,7 +41,7 @@ subjects:
 units:
 - learn.design-health-model-mission-critical-workload.introduction
 - learn.design-health-model-mission-critical-workload.what-is-health-modeling
-- learn.design-health-model-mission-critical-workload.exercise-identify-user-flows
+- learn.design-health-model-mission-critical-workload.exercise-layered-model
 - learn.design-health-model-mission-critical-workload.health-states
 - learn.design-health-model-mission-critical-workload.exercise-define-health-states-metrics-threshold
 - learn.design-health-model-mission-critical-workload.set-up-queries-and-visualize

@@ -2,25 +2,19 @@ To accurately represent a health model, you must gather various datasets from th
 
 ## Instrumenting code and infrastructure
 
-A *unified data sink* is required to ensure that all operational data is stored and available in a single location where all telemetry is collected. Azure provides several data monitoring technologies in [Azure Monitor](/azure/azure-monitor/overview#overview).
+A *unified data sink* is required to ensure that all operational data is stored and available in a single location where all telemetry is collected. For example, when an employee creates a comment in their web browser, you can track this operation and see that the request went through the Catalog API to Azure Event Hubs. From there, the comment was picked up by the background processor and stored in Azure Cosmos DB.
 
 Azure Monitor Log Analytics serves as the core Azure-native unified data sink to store and analyze operational data:
 
-- Use Application Insights as a consistent Application Performance Monitoring (APM) tool across all application components to collect application logs, metrics, and traces.
+- Application Insights is the recommended Application Performance Monitoring (APM) tool across all application components to collect application logs, metrics, and traces. Application Insights is deployed in a workspace-based configuration in each region.
 
-- Deploy Application Insights in a workspace-based configuration to ensure that each regional Log Analytics workspace contains logs and metrics from application components and the underlying Azure resources.
+    In the example application, Azure Functions is used on Microsoft .NET 6 for its back-end services for native integration. Because the back-end applications already exist, Contoso Shoes creates only a new Application Insights resource in Azure and configures the `APPLICATIONINSIGHTS_CONNECTION_STRING` setting on both function apps. The Azure Functions runtime registers the Application Insights logging provider automatically, so telemetry appears in Azure without additional effort. For more customized logging, you can use the ILogger interface.
 
-- Use a dedicated Log Analytics workspace and an Application Insights instance for each stamp and globally shared resource (Azure Cosmos DB, for example) per [mission-critical guidance](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#unified-data-sink-for-correlated-analysis). By using this structure, you eliminate a single point of failure if a region is down. All stamps are short-lived and are continuously replaced with each new release. The per-stamp Log Analytics workspaces are deployed as a global resource in a separate monitoring resource group as the stamp Log Analytics resources. These resources don't share the lifecycle of a stamp.
+- Centralized dataset is an antipattern for mission-critical workloads. Each region must have its dedicated Log Analytics workspace and an Application Insights instance. For global resources a separate instances are recommended.  To see the core architecture pattern, see [Architecture pattern for mission-critical workloads on Azure](/azure/architecture/framework/mission-critical/mission-critical-architecture-pattern). 
 
-- Set up every service that's used in the architecture to send data collection to the same Log Analytics workspace, to make analysis and health calculations easier.
+- Each layer should send data to the same Log Analytics workspace, to make analysis and health calculations easier.
 
 :::image type="content" source="../media/mission-critical-health-data-collection.png" border="false" alt-text="Diagram that shows an example of application health data collection.":::
-
-We recommend that you use Application Insights with one of the supported SDKs. The key benefit is transparent, end-to-end tracing so that you can track requests from the client through all layers of the system.
-
-For example, when an employee creates a comment in their web browser, you can find this operation in Application Insights and see that the request went through the Catalog API to Azure Event Hubs. From there, the comment was picked up by the background processor and stored in Azure Cosmos DB.
-
-Contoso Shoes uses Azure Functions on Microsoft .NET 6 for its back-end services for native integration. Because the back-end applications already exist, Contoso Shoes creates only a new Application Insights resource in Azure and configures the `APPLICATIONINSIGHTS_CONNECTION_STRING` setting on both function apps. The Azure Functions runtime registers the Application Insights logging provider automatically, so telemetry appears in Azure without additional effort. For more customized logging, you can use the ILogger interface.
 
 ## Health monitoring queries
 
@@ -123,16 +117,16 @@ CatalogServiceHealthStatus()
 
 ## Set up query-based alerts
 
-Alerts are an important part of your overall operations strategy. Implement proactive monitoring with the use of dashboards and alerts to raise immediate attention to issues that reflect or affect health state. Alerts extend the health model, so you quickly become aware of a change in health state, either to a degraded (yellow) state or to an unhealthy (red) state. Set alerts at the root node of the health model to immediately become aware of any business-level change in the health state of the solution. Then, you can look at health model visualizations to get more information and to troubleshoot.
+Alerts are an important to raise immediate attention to issues that reflect or affect health state. Whenever there is a change in health state, either to a degraded (yellow) state or to an unhealthy (red) state, notifications should be sent to accountable team. Set alerts at the root node of the health model to immediately become aware of any business-level change in the health state of the solution. Then, you can look at health model visualizations to get more information and to troubleshoot.
 
-Azure Monitor provides an extensive alerting framework to detect, categorize, and respond to operational signals through action groups. Use Azure Monitor alerts to drive automated actions in response to current or potential deviations from a healthy application state.
+The example uses Azure Monitor alerts to drive automated actions in response to changes in application health state.
 
 ## Use dashboards for visualization
 
-It's important to visualize your health model and the data that it continuously collects. You can see the dependency tree and quickly understand the effect of a component outage on the whole system. The ultimate goal of a health model is to facilitate swift diagnosis by providing informed view into deviations from steady state.
+It's important to visualize your health model so that you can quickly understand the effect of a component outage on the whole system. The ultimate goal of a health model is to facilitate swift diagnosis by providing informed view into deviations from steady state.
 
 A common way to visualize system health information is to combine a layered health model view with telemetry drill-down capabilities in a dashboard.
 
 :::image type="content" source="../media/health-dashboard-example.png" alt-text="Screenshot that shows an example health model dashboard of a layered model above drill-down data tables.":::
 
-Microsoft provides several data visualization technologies, including Azure Dashboards, Power BI, and Azure Managed Grafana. Azure Dashboards provides a tightly integrated, out-of-the-box visualization solution for operational data in Azure Monitor. However, if you can't use Azure Dashboards to accurately represent the health model, consider using Azure Managed Grafana as an alternative visualization solution. Azure Managed Grafana provides market-leading capabilities and an extensive open-source add-in ecosystem.
+The dashboard technology should be able to represent the health model. Popular options include Azure Dashboards, Power BI, and Azure Managed Grafana. 

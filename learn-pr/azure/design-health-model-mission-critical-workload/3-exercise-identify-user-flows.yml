@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-health-model-mission-critical-workload.exercise-identify-user-flows
-title: Exercise - Identify user flows and key application components
+uid: learn.design-health-model-mission-critical-workload.exercise-layered-model
+title: Exercise - Build a layered health structure
 metadata:
-  title: Exercise - Identify user flows and key application components
-  description: Learn about user flows and the key application components in a health model.
+  title: Exercise - Build a layered health structure
+  description: Apply best practices to evaluate user flows and the key application components in a health model.
   ms.date: 12/12/2022
   author: msimecek
   ms.author: prwilk
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 11
 content: |
-  [!include[](includes/3-exercise-identify-user-flows.md)]
+  [!include[](includes/3-exercise-layered-model.md)]

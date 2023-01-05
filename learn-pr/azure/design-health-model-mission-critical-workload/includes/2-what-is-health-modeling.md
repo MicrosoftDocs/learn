@@ -13,18 +13,21 @@ Health model **uses set indicators to represent health status**, which makes it 
 
 ## How to get started
 
-To do the health modeling exercise, you must have a deep understanding of the system and its expected performance. You will build a _layered model_ to reflect the health of the application. The layers represent the hierarchical application structure and its dependencies. 
+To do the health modeling exercise, you must have a deep understanding of the system and its expected performance. A _layered model_ is recommended to  reflect the health of the application holistically and at a granular level. The layers represent the hierarchical workload structure that includes the application and its dependencies. 
 
-The process of modeling health is a top-down design activity that starts by defining all user flows, mapping dependencies, and quantifying heath states to the flows. 
+- At the top layer, health represents user interaction or flows with the application. Think about which flows are on the critical path and the ones that aren't. 
+- At lower layers, health of the individual application components must be defined in the keeping in mind the key non-functional requirements. **Map the dependencies** between functional and logical components. Also, map the dependencies between Azure resources that application components use.
+- At the foundational layer, health of the Azure resources must be considered.
 
-Here are the high-level steps:
+The process of modeling health is a top-down design activity that starts by defining all user flows, mapping dependencies, and quantifying heath states to the flows.
 
-1. Think about how the user will interact with the application. **Identify the components** of user flows, which has the individual application components, such as Azure resources. **Map the dependencies** between functional and logical components. Also, map the dependencies between Azure resources.
-1. Combine the components with key non-functional requirements to **define business-contextualized flows**. 
-1. **Quantify health state**s for each component by using performance metrics in the context of key business requirements.
-1. **Apply appropriate weights** to each flow based on business criticality to build a meaningful definition of overall flow health. Financially significant flows and customer-facing user flows are more important than others. 
+Here are the recommended steps for the approach:
 
-    You can trace application health indicators to lower-level dependencies to quickly find the root cause of service degradation.
+1. **Quantify health states for each component** so that each each component indicates a health score. The health score can be an aggregate of various  performance metrics taking into consideration the key business requirements.
+1. **Quantify health states for each flow** by combining the health score of individual components to indicate health of the flow. Factor in the non-functional requirements to set context in terms of criticality.
+1. Based on business criticality, **apply appropriate weights** at all layers to build a meaningful definition of overall health. For example, at the top layer, financially significant flows and customer-facing user flows are more important than others. 
+
+You can trace application health scores throughout the layers to quickly find the root cause of service degradation.
 
 This image shows an example outcome of the preceding approach. The health model uses these layered health definitions to inform critical monitoring metrics across all system components and to validate operational subsystem composition.
 

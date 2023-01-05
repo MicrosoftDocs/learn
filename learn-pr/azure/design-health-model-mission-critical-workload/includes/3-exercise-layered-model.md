@@ -19,26 +19,26 @@ The health model should at least include those two critical operation.
 
 - **Front-end internal web application**: The user interface of this workload, which runs on **Azure Web Apps**.
 
-  - *Reads*: Catalog API, Azure Blob Storage
-  - *Writes*: Requests coming from users, Catalog API
+  - *Reads from*: Catalog API, Azure Blob Storage
+  - *Writes to*: Requests coming from users, Catalog API
 
-- **Catalog API**: The API layer that the front-end web application uses for data operations on catalog items and comments. It doesn't do any database writes itself. Instead, a message is sent to an event hub to be processed asynchronously. This component is hosted on **Azure Functions**.
+- **Catalog API**: The API layer that the front-end web application uses for data operations on catalog items and comments. It doesn't write to the database. Instead, a message is sent to an event hub to be processed asynchronously. This component is hosted on **Azure Functions**.
 
-  - *Reads*: Azure Cosmos DB
-  - *Writes*: Azure Event Hubs
+  - *Reads from*: Azure Cosmos DB
+  - *Writes to*: Azure Event Hubs
 
-- **Background processor**: A component that asynchronously processes database updates. The processor doesn't have a public endpoint. This component is hosted on **Azure Functions**.
+- **Background Processor**: A component that asynchronously processes database updates. The processor doesn't have a public endpoint. This component is hosted on **Azure Functions**.
 
-  - *Reads*: Azure Event Hubs
-  - *Writes*: Azure Cosmos DB
+  - *Reads from*: Azure Event Hubs
+  - *Writes to*: Azure Cosmos DB
 
-- **Messaging broker**: The messaging bus uses **Azure Event Hubs** to pass messages between the Catalog API and the background processor.
+- **Message broker**: The messaging processor uses **Azure Event Hubs** to pass messages between the Catalog API and the Background Processor.
 
-- **Database**: Data is persisted in **Azure Cosmos DB**. The Catalog API reads from the database directly. Writes are handled by the background processor. Images are stored in Azure Blob Storage.
+- **Database**: Data is persisted in **Azure Cosmos DB**. The Catalog API reads from the database directly. Writes are handled by the Background Processor. Images are stored in Azure Blob Storage.
 
-- **Secrets**: The application components of this workload use secrets to authorize access. Secrets are stored in **Azure Key Vault**. The Catalog API and background processor use connection strings to access the database and Azure Event Hubs. The front-end web application uses an API key to call the Catalog API.
+- **Secrets**: The application components of this workload use secrets to authorize access. Secrets are stored in **Azure Key Vault**. The Catalog API and Background Processor use connection strings to access the database and Azure Event Hubs. The front-end web application uses an API key to call the Catalog API.
 
-- **Monitoring**: Application components send all data measurements to **Application Insights**, backed with a **Log Analytics workspace**. The same workspace is used to collect other logs and metrics for this workload. (For this exercise, consider this deployment to be single-stamp.)
+- **Monitoring**: Application components send all data measurements to **Application Insights**, backed with a **Log Analytics workspace**. The same workspace is used to collect other logs and metrics for this workload. 
 
 ## Divide the architecture in layers
 
@@ -50,7 +50,8 @@ For this exercise, our health model has three layers: user flows, application co
 
 ### User flows
 
-Starting at the top of the architecture, think about the possible *user flows* based on the expected functionality of the application. Try to abstract the technical details and Azure services, and look at the user's perspective. 
+Starting at the top of the architecture, think about the possible *user flows* based on the expected functionality of the application. Try to abstract the technical details and Azure services, and evaluate the flows from a user's perspective. 
+
 - *What processes are critical?*
 - *How do your employees use the application to achieve business goals?*
 
@@ -60,7 +61,7 @@ If you can think of more, include them in your health model.
 
 ### Application components
 
-Move down to the middle layer that has the application components. Begin by asking questions, such as:
+Move down a layer and evaluate the application components. Begin by asking questions, such as:
 
 - *"Which part of my application makes this flow work?"*
 - *"Which microservices or components contribute to fulfilling requests in this flow?"*
@@ -68,7 +69,7 @@ Move down to the middle layer that has the application components. Begin by aski
 
 The aim is to identify application components at a technical level that contribute to each user flow. These components can be APIs, background workers, microservices, and so on.
 
-This workload has at least three application components that contribute to the two user flows: **front end**,  **Catalog API**, and a **background processor**.
+This workload has at least three application components that contribute to the two user flows: **Front-end**,  **Catalog API**, and a **Background Processor**.
 
 ### Azure resources
 
