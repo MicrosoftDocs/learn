@@ -29,7 +29,7 @@ Azure Policy offers built-in definitions for Azure Arc-enabled Kubernetes. A few
 |Kubernetes cluster containers should only use allowed capabilities|Restricts capabilities to reduce the attack surface of containers.|
 |Kubernetes cluster pods should only use approved host network and port range|Restricts pod access to the host network and the allowable host port range in a cluster.|
 
-To view additional policy definitions, start the Azure Policy service in the Azure portal, select **Definitions**, then select **Kubernetes** in the **Category** dropdown list.
+There are many more built-in policy definitions available. To view all policy definitions, start the Azure Policy service in the Azure portal, select **Definitions**, then select **Kubernetes** in the **Category** dropdown list.
 
 ## How to implement Azure Policy for Kubernetes on connected clusters
 

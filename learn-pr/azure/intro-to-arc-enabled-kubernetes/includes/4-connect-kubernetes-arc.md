@@ -27,7 +27,7 @@ After you deploy the agent on a cluster, you can use Azure Arc-enabled Kubernete
 - Monitor status of the cluster and its workloads by using Azure Monitor.
 - Implement governance and validate compliance of the cluster and its pods by using Azure Policy.
 
-## How to securely connect to clusters from anywhere
+## Connecting to clusters from anywhere
 
 Azure Arc-enabled Kubernetes provides a *cluster connect* feature, which lets you access Arc-enabled Kubernetes clusters from anywhere, allowing for interactive development and debugging. This feature lets you securely connect to your clusters without requiring any inbound port to be enabled on the firewall. A reverse proxy agent running on the cluster can securely start a session with the Azure Arc service in an outbound manner.
 
