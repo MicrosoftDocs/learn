@@ -22,7 +22,7 @@ levels:
 roles:
 - identity-access-admin 
 products:
-- azure-active-directory
+- active-directory
 subjects:
 - classification-analysis
 units:
