@@ -1,18 +1,19 @@
 ### YamlMime:ModuleUnit
-uid: learn.monitor-manage-device-with-iotcentral.3-connect-your-application-to-simulator
+uid: learn.monitor-manage-device-with-iotcentral.4-connect-your-application-to-simulator
 title: Connect your simulated coffee machine to the application
 metadata:
   title: Connect your simulated coffee machine to the application
-  description: Connect your simulated coffee machine to the application
-  ms.date: 09/24/2018
+  description: This content is a part of Monitor and manage your coffee machine with Azure IoT Central
+  ms.date: 01/13/2023
   author: asergaz
   ms.author: sergaz
   ms.reviewer: adchukwu
   manager: lizross
+  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash
 azureSandbox: true
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-connect-your-application-to-simulator.md)]
+  [!include[](includes/4-connect-your-application-to-simulator.md)]

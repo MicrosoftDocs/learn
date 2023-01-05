@@ -1,19 +1,20 @@
 ### YamlMime:ModuleUnit
-uid: learn.monitor-manage-device-with-iotcentral.6-knowledge-check
+uid: learn.monitor-manage-device-with-iotcentral.7-knowledge-check
 title: Knowledge check 
 metadata:
   title: Knowledge check 
-  description: Knowledge check
-  ms.date: 09/24/2018
+  description: This content is a part of Monitor and manage your coffee machine with Azure IoT Central
+  ms.date: 01/13/2023
   author: asergaz
   ms.author: sergaz
   ms.reviewer: adchukwu
   manager: lizross
+  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 11
 content: |
-  [!include[](includes/6-knowledge-check.md)]
+  [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
