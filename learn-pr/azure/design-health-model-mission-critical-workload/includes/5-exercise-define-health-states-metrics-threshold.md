@@ -9,7 +9,7 @@ So far, we have identified two user flows: **List catalog items** and **Add comm
 - *When is the user flow considered healthy?*
 - *Can it operate in a degraded state?*
 
-Based on the implementation and functional requirements, identify the application components that participate in the user flow. The components are described in [Example architecture components](./3-exercise-identify-layered-model.md#components).
+Based on the implementation and functional requirements, identify the application components that participate in the user flow. The components are described in [Example architecture components](./3-exercise-layered-model.md#components).
 
 |User flow|Components|
 |---|---|

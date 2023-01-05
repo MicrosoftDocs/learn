@@ -48,7 +48,7 @@ Identifying user flows and building the health model is a conceptual exercise at
 
 For this exercise, our health model has three layers: user flows, application components, and Azure resources.
 
-### User flows
+##### User flows
 
 Starting at the top of the architecture, think about the possible *user flows* based on the expected functionality of the application. Try to abstract the technical details and Azure services, and evaluate the flows from a user's perspective. 
 
@@ -59,7 +59,7 @@ Based on the requirements identified by the operations team, you should have at 
 
 If you can think of more, include them in your health model.
 
-### Application components
+##### Application components
 
 Move down a layer and evaluate the application components. Begin by asking questions, such as:
 
@@ -71,7 +71,7 @@ The aim is to identify application components at a technical level that contribu
 
 This workload has at least three application components that contribute to the two user flows: **Front-end**,  **Catalog API**, and a **Background Processor**.
 
-### Azure resources
+##### Azure resources
 
 The bottom layer contains the Azure resources used by  the individual application components. For this exercise, the components and resources are described in the [Components](#components) section. If you look at the architecture diagram and read the component description, it should be clear what those resources are.
 
@@ -86,18 +86,18 @@ Put the information you've gathered in a graphical representation of the health 
 
 From top to bottom, the Contoso Shoes internal web application health model has these layers:
 
-- User flows:
+##### User flows
 
   - **List catalog items**. Dependent on the front-end web application and the Catalog API.
   - **Add comment**. Dependent on the front-end web application, Catalog API, and background processor.
 
-- Application components:
+##### Application components:
 
   - **Front-end web application**. Dependent on Blob Storage and the Catalog API.
   - **Catalog API**. Dependent on Azure Cosmos DB, Key Vault, and Event Hubs.
   - **Background processor**. Dependent on Azure Cosmos DB, Key Vault, and Event Hubs.
 
-- Azure resources:
+##### Azure resources:
 
   - **Blob Storage**
   - **Azure Cosmos DB**
