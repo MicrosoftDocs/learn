@@ -1,6 +1,6 @@
 In this unit, you'll deploy a container image to Azure Kubernetes Service.
 
-With Azure Kubernetes Service, you’ll be configuring your Kubernetes Cluster to run in a desired state via a Deployment, which is the process of providing declarative updates to Pods and ReplicaSets. This declaration of state is administered in the manifest (YAML) file, and the Kubernetes controller will change the current state to the declared state when instructed. You’ll create this ```deployment.yml``` manifest file in the following unit and instruct your Azure Kubernetes Service to run in a desired state with pods configured to pull/run the ```flightbookingsystemsample``` container image that resides in Azure Container Registry (that we pushed in the previous unit). Without this deployment.yml, you'd manually have to create, update, and delete pods instead of letting the Kubernetes orchestrate the process.
+With Azure Kubernetes Service, you’ll be configuring your Kubernetes Cluster to run in a desired state via a Deployment, which is the process of providing declarative updates to Pods and ReplicaSets. This declaration of state is administered in the manifest (YAML) file, and the Kubernetes controller will change the current state to the declared state when instructed. You’ll create this ```deployment.yml``` manifest file in the following unit and instruct your Azure Kubernetes Service to run in a desired state with pods configured to pull/run the ```flightbookingsystemsample``` container image that resides in Azure Container Registry (that we pushed in the previous unit). Without this deployment.yml, you'd have to manually create, update, and delete pods instead of letting the Kubernetes orchestrate the process.
 
 > [!NOTE]
 > If your session has idled out, your doing this step at another point in time and/or from another CLI you may have to re initialize your environment variables and re authenticate with the following CLI commands.
@@ -88,7 +88,7 @@ You'll want to configure your Azure CLI to access your Azure Kubernetes Cluster 
 az aks install-cli
 ```
 
-Configure kubectl to connect to your Kubernetes cluster using the az aks get-credentials command. Run the following command in your CLI:
+Configure kubectl to connect to your Kubernetes cluster using the `az aks get-credentials` command. Run the following command in your CLI:
 
 ```bash
 az aks get-credentials --resource-group $AZ_RESOURCE_GROUP --name $AZ_KUBERNETES_CLUSTER
