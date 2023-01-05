@@ -24,7 +24,7 @@ quiz:
     - content: "The platform metrics."
       isCorrect: false
       explanation: "Try again. The platform metrics are for monitoring a packet core instance through the Azure portal. They can't be used to modify the packet core instance."
-  - content: "How to control the network traffic for UEs attached to a private mobile network that Azure Private 5G Core powers?"
+  - content: "How should the network traffic for UEs attached to a private mobile network be controlled?"
     choices:
     - content: "Define traffic control rules in ASE."
       isCorrect: false
@@ -35,14 +35,14 @@ quiz:
     - content: "Use SIM policies to control the network traffic for different UEs."
       isCorrect: true
       explanation: "Correct. Azure Private 5G Core allows you to define SIM policies and assign them to the SIMs representing UEs. In each policy, you can define network traffic control details."
-  - content: "What is the best way to provision a large number of SIMs in one go?"
+  - content: "What is the best way to provision a large number of SIMs at once?"
     choices:
     - content: "For each SIM, manually enter each provisioning value into fields in the Azure portal."
       isCorrect: false
       explanation: "Try again. If you need to provision only a few SIMs, you can manually enter each provisioning value. However, this manual method isn't efficient for provisioning a large number of SIMs."
     - content: "Use a JSON file that contains values for multiple SIM resources."
       isCorrect: true
-      explanation: "Correct. You can define details about all the SIMs to be provisioned in a single JSON file, and then provision all of them in one go."
+      explanation: "Correct. You can define details about all the SIMs to be provisioned in a single JSON file, and then provision all of them simultaneously."
     - content: "Provision all the SIMs through ASE."
       isCorrect: false
       explanation: "Try again. SIMs must be provisioned through Azure Private 5G Core. They can't be provisioned through ASE, which is the platform that hosts Azure Private 5G Core."

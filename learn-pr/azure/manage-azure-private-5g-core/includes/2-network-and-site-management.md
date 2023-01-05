@@ -4,7 +4,7 @@ Azure Private 5G Core allows you to manage a private mobile network and its site
 
 ## Configure network slices
 
-An enterprise may attach different UEs to its private mobile network. Applications for different UEs may have different network requirements. For example, while video analysis applications for production line monitoring cameras may require high band-width, control applications for robot communication may require low latency.
+An enterprise may attach different UEs to its private mobile network. Applications for different UEs may have different network requirements. For example, video analysis applications for production line monitoring cameras may require high band-width, while control applications for robot communication may require low latency.
 
 Azure Private 5G Core allows you to divide a private mobile network into multiple network slices, with each slice being a logical end-to-end network. You can configure SIM policies with different slices available. Each SIM policy specifies how the network traffic from relevant UEs should be controlled on a per slice basis.
 
@@ -26,7 +26,7 @@ For each slice, you need to configure the following fields:
   Valid values are 0 to 16777216. For example, while two slices may both have `1` (eMBB) as the value of its service type, their slice differentiators are different, with one being `1` and the other being `2`, which identifies each slice uniquely.
 
   > [!NOTE]
-  > The combination of Slice Service Type and Slice Differentiator must be unique across the private mobile network.
+  > The combination of SST and SD must be unique across the private mobile network.
 
 For more information about these fields, see the documentation for relevant 5G standards.
 
@@ -41,9 +41,9 @@ To add or modify a slice for an existing private mobile network, take these step
 
 1. Proceed with one of the following options:
 
-   - To create a new slice, select **Create** and then specify appropriate slice information.
-   - To modify a slice, select the slice that you want to modify and then select **Modify the selected slice**.
-   - To delete a slice, select the slice that you want to delete and then select **Delete**.
+   - To create a new slice, select **Create**, and then specify appropriate slice information.
+   - To modify a slice, select the slice that you want to modify, and then select **Modify the selected slice**.
+   - To delete a slice, select the slice that you want to delete, and then select **Delete**.
 
 > [!NOTE]
 >
@@ -54,7 +54,7 @@ For detailed instructions on configuring network slices, see relevant informatio
 
 ## Modify the packet core instance in a site
 
-Once a site is deployed and put into production, usually you don't need to modify the packet core instance in it. However, if your network requirements change or you get new requirements, you may need to reconfigure the packet core instance. For example, you may want to use a different ASE device to host the site or attach a new data network (DN) to the site.
+Once a site is deployed and put into production, you usually don't need to modify the packet core instance in it. However, if your network requirements change or you get new requirements, you may need to reconfigure the packet core instance. For example, you may want to use a different ASE device to host the site or attach a new data network (DN) to the site.
 
 To modify the packet core instance in a site, take these steps:
 
@@ -70,7 +70,7 @@ To modify the packet core instance in a site, take these steps:
 
    - In the packet core section, you can change the connected ASE device or the custom ARC location.
    - In the access network section, you can change the network interface information.
-   - In the data networks section, you can edit attached DNs, define and attach a new DN, or delete a DN.
+   - In the data networks section, you can edit attached data networks (DNs), define and attach a new DN, or delete a DN.
 
    The [Collect the required information for a site](/azure/private-5g-core/collect-required-information-for-a-site) article provides detailed information about each field.
 
@@ -85,13 +85,13 @@ A typical decommission process is as follows:
 1. Through the Azure portal, delete the **Mobile Network Site** resource that represents the site.
 
    1. Open the **Mobile Network** resource that contains the site you want to delete.
-   1. Select **Sites** from the menu and then select the site.
+   1. Select **Sites** from the menu, and then select the site.
 
       > [!TIP]
       >
       > You can delete multiple sites in a mobile network in a single operation.
 
-   1. Select the **Delete** button and then confirm your deletion.
+   1. Select the **Delete** button, and then confirm your deletion.
 
       When you delete a site, Azure Private 5G Core automatically detects and deletes all the dependent resources.
 

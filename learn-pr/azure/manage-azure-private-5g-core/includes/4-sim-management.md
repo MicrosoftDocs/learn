@@ -1,6 +1,6 @@
 After the deployment of a private mobile network, you'll need to manage the SIMs for attached UEs on a routine basis. For example, you may need to provision a SIM for a newly attached UE, or you may need to adjust [SIM groups](#manage-sims-and-sim-groups) due to application requirement changes.
 
-This unit introduces you to the SIM management tasks, like SIM provisioning or SIM group management.
+This unit introduces you to the SIM management tasks, such as SIM provisioning and SIM group management.
 
 ## Provision new SIMs
 
@@ -44,14 +44,14 @@ If you want to use a JSON file to add SIM details, take these steps to create th
 To provision the SIMs, take these steps:
 
 1. Open the **Mobile Network** resource representing the private mobile network in which you want to provision the SIMs.
-1. Select **SIMs** from the resource menu and then select the **Create** button.
-1. Select one of the following options that appear:
+1. Select **SIMs** from the resource menu, and then select the **Create** button.
+1. Select one of the following options:
 
-   - If you want to manually enter each provisioning value of the SIM, select **Add manually** and then add the SIM field values in **Add SIMs** on the right, as shown in the following screenshot:
+   - If you want to manually enter each provisioning value of the SIM, select **Add manually**, and then add the SIM field values in **Add SIMs** on the right, as shown in the following screenshot:
 
      :::image type="content" source="../media/add-sim-manually.png" alt-text="A screenshot that shows the Add SIMs dialogue box with the fields for SIM values." border="true":::
 
-   - If you want to use a JSON file, select **Upload JSON from file** and then upload the JSON file in **Add SIMs** on the right, as shown in the following screenshot:
+   - If you want to use a JSON file, select **Upload JSON from file**, and then upload the JSON file in **Add SIMs** on the right, as shown in the following screenshot:
 
      :::image type="content" source="../media/add-sim-with-json-file.png" alt-text="A screenshot that shows the Add SIMs dialogue box with the fields for using a JSON file." border="true":::
 
@@ -59,7 +59,7 @@ For detailed instructions on provisioning new SIMs through the Azure portal, see
 
 ### Provision new SIMs through an ARM template
 
-If you're familiar with ARM templates, you can create an ARM template that specifies the SIMs you want to provision, and then use the template to create all the SIMs in one go.
+If you're familiar with ARM templates, you can create an ARM template that specifies the SIMs you want to provision, and then use the template to create all the SIMs at once.
 
 From the [Azure Private 5G Core REST API](/rest/api/mobilenetwork/) document, you can get a list of fields that you need to specify for each SIM. Because the Resource Manager converts a template into REST API operations when you deploy the template, the parameters in the API requests are the same as the fields in the ARM template. For example, for a SIM, you can find information about the `integratedCircuitCardIdentifier` field in the Azure REST API article [SIMs - Create or update](/rest/api/mobilenetwork/sims/create-or-update). For details about the fields you need to specify for a SIM, see [SIMs](/rest/api/mobilenetwork/sims).
 
@@ -82,8 +82,8 @@ To assign a SIM policy to one or more SIMs, take these steps:
 
 1. Open the **Mobile Network** resource representing the private mobile network containing the SIMs.
 1. Select **SIMs** from the resource menu.
-1. For each SIM policy you want to assign to one or more SIMs, select the relevant SIMs and then select the **Assign SIM policy** button.
-1. In **Assign SIM policy** on the right, select the SIM policy you want to assign and then select **Assign SIM policy**.
+1. For each SIM policy you want to assign to one or more SIMs, select the relevant SIMs, and then select the **Assign SIM policy** button.
+1. In **Assign SIM policy** on the right, select the SIM policy you want to assign, and then select **Assign SIM policy**.
 
 For detailed instructions, see [Manage existing SIMs](/azure/private-5g-core/manage-existing-sims).
 
@@ -99,7 +99,7 @@ If you've configured static IP address allocation for your packet core instance(
 To assign static IP addresses to SIMs, take these steps:
 
 1. Open the **Mobile Network** resource representing the private mobile network containing the SIMs.
-1. Select **SIMs** from the resource menu and then select the SIMs to which you want to assign static IP addresses.
+1. Select **SIMs** from the resource menu, and then select the SIMs to which you want to assign static IP addresses.
 
    On the right, the **Assign static IP configurations** box is displayed, as shown in the following screenshot:
 
@@ -114,18 +114,18 @@ For detailed instructions, see [Manage existing SIMs](/azure/private-5g-core/man
 
 ### Modify SIMs
 
-For a SIM that has been provisioned, you can edit its device type. If you want to modify other properties of the SIM, delete the SIM and then provision it again.
+For a SIM that has been provisioned, you can edit its device type. If you want to modify other properties of the SIM, delete the SIM, and then provision it again.
 
 To modify the device type of a SIM, take these steps:
 
 1. Open the **Mobile Network** resource representing the private mobile network containing the SIM.
-1. Select **SIMs** from the resource menu and then select the SIM of which you want to modify the device type.
-1. Select the **Edit device type** button and then edit the device type appropriately.
+1. Select **SIMs** from the resource menu, and then select the SIM of which you want to modify the device type.
+1. Select the **Edit device type** button, and then edit the device type appropriately.
 
 To delete SIMs, take these steps:
 
 1. Open the **Mobile Network** resource representing the private mobile network containing the SIM.
-1. Select **SIMs** from the resource menu and then select the SIM that you want to delete.
+1. Select **SIMs** from the resource menu, and then select the SIM that you want to delete.
 1. Select the **Delete** button.
 
 For detailed instructions, see [Manage existing SIMs](/azure/private-5g-core/manage-existing-sims).
@@ -134,7 +134,7 @@ For detailed instructions, see [Manage existing SIMs](/azure/private-5g-core/man
 
 SIM groups allow you to sort SIMs into categories for easier management. For example, you may want to categorize the SIMs by their purpose or by their on-site location.
 
-If you have configured CMK encryption for a SIM group, you can modify the key URI and user-assigned identity.
+If you've configured the customer-managed keys (CMK) encryption for a SIM group, you can modify the key URI and user-assigned identity.
 
 > [!TIP]
 > You can optionally add SIMs when you create a SIM group.
@@ -142,19 +142,19 @@ If you have configured CMK encryption for a SIM group, you can modify the key UR
 To create a SIM group, take these steps:
 
 1. Open the **Mobile Network** resource representing the private mobile network in which you want to add the SIM group.
-1. Select **SIM groups** from the resource menu and then select the **Create** button.
+1. Select **SIM groups** from the resource menu, and then select the **Create** button.
 1. Specify the value for each field appropriately.
 
 To edit the encryption configuration of an existing SIM group, take these steps:
 
 1. Open the **Mobile Network** resource representing the private mobile network containing the SIM group.
-1. Select **SIM groups** from the resource menu and then open the SIM group of which you want to edit the encryption configuration.
-1. Select **Encryption** from the resource menu and then make appropriate changes.
+1. Select **SIM groups** from the resource menu, and then open the SIM group of which you want to edit the encryption configuration.
+1. Select **Encryption** from the resource menu, and then make appropriate changes.
 
 To delete a SIM group, take these steps:
 
 1. Open the **Mobile Network** resource representing the private mobile network containing the SIM group.
-1. Select **SIM groups** from the resource menu and then select the SIM group you want to delete.
+1. Select **SIM groups** from the resource menu, and then select the SIM group you want to delete.
 1. Select the **Delete** button.
 
 For detailed instructions on managing SIM groups, see [Manage SIM groups](/azure/private-5g-core/manage-sim-groups).

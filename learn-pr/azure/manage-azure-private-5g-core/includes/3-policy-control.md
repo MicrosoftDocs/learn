@@ -7,7 +7,7 @@ Azure Private 5G Core also allows you to define services, which are sets of rule
 This unit introduces you to the policy control tasks, like SIM policy configuration or service configuration.
 
 > [!NOTE]
-> To be able to design and configure services and SIM policies, you need to be familiar with network traffic at the packet level.
+> To design and configure services and SIM policies, you need to be familiar with network traffic at the packet level.
 
 ## Network traffic control
 
@@ -25,15 +25,17 @@ To ensure the correct QoS characteristics are applied, each SDF is bound to a Qo
 
 In 4G networks, the packet core instance helps to establish packet data network (PDN) connections to transport user plane traffic. PDN connections also contain one or more SDFs. The SDFs are bound to Evolved Packet System (EPS) bearers. EPS bearers are also assigned a QoS profile. Each EPS bearer is assigned an EPS bearer ID (EBI), which is used by network elements to map SDFs to EPS bearers.
 
+For more information about these concepts, see relevant 4G or 5G documentation.
+
 ### Using services and SIM policies for network traffic control
 
 Azure Private 5G Core provides configuration to allow you to determine the QoS flows or EPS bearers the packet core instance will create and bind to SDFs when establishing PDU sessions or PDN connections. You can configure two primary resource types - services and SIM policies.
 
-A service is a representation of a set of QoS characteristics that you want to apply to SDFs that match particular properties, such as their destination, or the protocol used. You can also use services to limit or block particular SDFs based on these properties.
+A service is a representation of a set of QoS characteristics you apply to SDFs that match specific properties, such as their destination or the protocol used. You can also use services to limit or block SDFs based on these properties.
 
 Each service includes:
 
-- One or more data flow policy rules, which identify the SDFs to which the service should be applied.
+- One or more data flow policy rules identifying the SDFs to which the service should be applied.
 - Optionally, a set of QoS characteristics that should be applied on SDFs matching the service. The packet core instance will use these characteristics to create a QoS flow or EPS bearer to bind to matching SDFs.
 
 A SIM policy defines a set of interoperability settings that can be assigned to one or more SIMs.
@@ -41,15 +43,15 @@ A SIM policy defines a set of interoperability settings that can be assigned to 
 Each SIM policy includes:
 
 - Top-level settings that are applied to every SIM using the SIM policy.
-- A network scope, which defines the network slice and DN that the SIM policy applies to.
+- A network scope defining the network slice and DN to which the SIM policy applies.
 
-  You can use the network scope to determine the services offered to SIMs on the DN and a set of QoS characteristics that will be used to form the default QoS flow for PDU sessions (or EPS bearer for PDN connections in 4G networks).
+  You can use the network scope to determine the services offered to SIMs on the DN and the set of QoS characteristics that will be used to form the default QoS flow for PDU sessions (or EPS bearer for PDN connections in 4G networks).
 
 For more information about controlling the network traffic in a private mobile network, see [Policy control](/azure/private-5g-core/policy-control).
 
 ## Manage services and SIM policies
 
-Before starting to use UEs in your private mobile network, you'll need to define SIM policies and assign them to UEs appropriately. You can also use the [default service](/azure/private-5g-core/default-service-sim-policy) and SIM policy that you create when you first create a private mobile network.
+Before using UEs in your private mobile network, you'll need to define SIM policies and assign them to UEs appropriately. You can also use the [default service](/azure/private-5g-core/default-service-sim-policy) and SIM policy that you create when you first create a private mobile network.
 
 ### Design policy control configuration
 
@@ -57,7 +59,7 @@ When you first design the policy control configuration for a private mobile netw
 
 1. Provision the SIMs.
 1. Identify the SDFs that the private mobile network needs to handle.
-1. Learn about each of the available options for a service and then compare these options with the requirements of the SDFs to decide on the services you'll need.
+1. Learn about each of the available options for a service, and then compare these options with the requirements of the SDFs to decide on the services you'll need.
 1. Collect appropriate policy configuration values you'll need for each service.
 1. Configure each service.
 1. Categorize the SIMs according to the services they'll require. For each category, configure a SIM policy and assign it to the correct SIMs.
@@ -72,7 +74,7 @@ To create a new service, take these steps:
 
 1. Collect all the [configuration values](/azure/private-5g-core/collect-required-information-for-service) for the service.
 1. Open the **Mobile Network** resource representing the private mobile network for which you want to create the service.
-1. Select **Services** from the resource menu and then select the **Create** button.
+1. Select **Services** from the resource menu, and then select the **Create** button.
 
    The **Create a service** screen is displayed, as shown in the following screenshot:
 
@@ -80,7 +82,7 @@ To create a new service, take these steps:
 
 1. Specify appropriate values for each field.
 
-   To configure the data flow policy rules you want to use for this service, select the **Add a policy rule** button to add a rule. You can add multiple policy rules for a service.
+   To configure the data flow policy rules you want to use for this service, select the **Add a policy rule** button. You can add multiple policy rules for a service.
 
 To modify or delete an existing service, take these steps:
 
@@ -88,8 +90,8 @@ To modify or delete an existing service, take these steps:
 1. Select **Services** from the resource menu.
 1. Proceed with one of the following operations:
 
-   - To modify a service, select it and then select **Modify service**.
-   - To delete a service, select it and then select **Delete**.
+   - To modify a service, select it, and then select **Modify service**.
+   - To delete a service, select it, and then select **Delete**.
 
 For detailed instructions on configuring a service, see [Configure a service for Azure Private 5G Core](/azure/private-5g-core/configure-service-azure-portal).
 
@@ -101,7 +103,7 @@ To create a new SIM policy, take these steps:
 
 1. Collect all the [configuration values](/azure/private-5g-core/collect-required-information-for-sim-policy) for the policy.
 1. Open the **Mobile Network** resource representing the private mobile network for which you want to create the SIM policy.
-1. Select **SIM policies** from the resource menu and then select the **Create** button.
+1. Select **SIM policies** from the resource menu, and then select the **Create** button.
 
    The **Create a SIM policy** screen is displayed, as shown in the following screenshot:
 
@@ -109,7 +111,7 @@ To create a new SIM policy, take these steps:
 
 1. Specify appropriate values for each field.
 
-   To configure the network scope you want to use for this policy, select the **Add a network scope** button to add a scope. SIM policies also define the default QoS settings for any services that they use. You can override the default QoS settings on a per-service basis.
+   To configure the network scope you want to use for this policy, select the **Add a network scope** button. SIM policies also define the default QoS settings for any services that they use. You can override the default QoS settings on a per-service basis.
 
 > [!TIP]
 > At the end of the SIM policy creation process, you can optionally assign the SIM policy to one or more provisioned SIMs.
@@ -120,8 +122,8 @@ To modify or delete an existing SIM policy, take these steps:
 1. Select **SIM policies** from the resource menu.
 1. Proceed with one of the following operations:
 
-   - To modify a SIM policy, select it and then select **Modify the selected SIM policy**.
-   - To delete a SIM policy, select it and then select **Delete**.
+   - To modify a SIM policy, select it, and then select **Modify the selected SIM policy**.
+   - To delete a SIM policy, select it, and then select **Delete**.
 
 For detailed instructions on configuring a SIM policy through the Azure portal, see [Configure a SIM policy - Azure portal](/azure/private-5g-core/configure-sim-policy-azure-portal).
 

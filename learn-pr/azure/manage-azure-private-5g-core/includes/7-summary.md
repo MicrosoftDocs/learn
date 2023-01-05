@@ -7,7 +7,7 @@ From this unit, you learned the tools and methods for the following major manage
 - Manage the SIMs for UEs attached in a private mobile network.
 - Upgrade the packet core instance for each site in a private mobile network.
 
-Now, based on the business needs of your organization, you should be able to manage different aspects of its private mobile network on a daily basis. For example, you should be able to configure new SIM policies for a new IoT application or upgrade the packet core instance for a site to a new version.
+Now, based on the business needs of your organization, you should be able to manage its private mobile network on a daily basis. For example, you should be able to configure new SIM policies for a new IoT application or upgrade the packet core instance for a site to a new version.
 
 ## References
 

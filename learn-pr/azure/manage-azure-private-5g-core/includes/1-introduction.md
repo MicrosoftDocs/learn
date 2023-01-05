@@ -17,7 +17,7 @@ While the Azure portal provides intuitive graphical user interface (GUI), an ARM
 
 ## Azure resources used by management tasks
 
-With either the Azure portal GUI or the ARM templates, you'll' need to use different resources to manage different components in a private mobile network. For example, to provision SIMs, you'll need to use the **Mobile Network** resource.
+With either the Azure portal GUI or the ARM templates, you'll need to use different resources to manage the components in a private mobile network. For example, to provision SIMs, you'll need to use the **Mobile Network** resource.
 
 The following table describes the major resource types that you'll need for managing a private mobile network:
 
