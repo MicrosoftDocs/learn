@@ -38,4 +38,4 @@ quiz:
       explanation: "Incorrect, Connections dynamically propagate routes to a specified route table."
     - content: "Associating a connection to a route table allows users to be authenticated."
       isCorrect: false
-      explanation: "Incorrect, Users are not authenticated using route tables."
+      explanation: "Incorrect, Users aren't authenticated using route tables."
