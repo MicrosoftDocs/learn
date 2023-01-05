@@ -22,9 +22,7 @@ levels:
 roles:
 - identity-access-admin 
 products:
-- azure-active-directory
-- entra
-- entra-permissions-management
+- active-directory
 subjects:
 - classification-analysis
 units:
