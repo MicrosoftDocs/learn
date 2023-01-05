@@ -38,6 +38,8 @@ Your API has routes for manipulating the products for the shopping list, but it 
 
 1. In the **Add New Item** dialog, select **Azure Function**.
 
+   :::image type="content" source="../media/new-item-type.png" alt-text="A screenshot showing the Azure function item selected.":::
+
 1. Enter *ProductsGet.cs* as the name of the function file.
 
 1. Select **Http trigger** as the function type.
@@ -45,8 +47,6 @@ Your API has routes for manipulating the products for the shopping list, but it 
 1. Select **Anonymous** from the dropdown list in the **Authorization level** field.
 
 1. Select **Add**.
-
-:::image type="content" source="../media/new-azure-function.png" alt-text="Screenshot showing how to create a new Azure Function.":::
 
 You just extended your Azure Functions app with a function to get your products!
 
