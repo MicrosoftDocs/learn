@@ -31,7 +31,7 @@ gatsby develop
 You should now have two routes up and running:
 
 - `http://localhost:8000/`, where your app is rendered
-- `http://localhost:8000/___graphql`, where the built-in data graph is displayed with GraphiQL
+- `http://localhost:8000/___graphql`, where the built-in data graph is displayed with GraphQL
 
 ### Construct a query
 
@@ -90,4 +90,4 @@ Save the file and browse to `http://localhost:8000/about` and you'll see the fol
 
 :::image type="content" source="../media/component-with-data.png" alt-text="Screenshot showing the page component with data.":::
 
-You've added data to your component with a GraphQL query! You also got to use the GraphiQL querying tool and Gatsby development server in the process.
+You've added data to your component with a GraphQL query! You also got to use the GraphQL querying tool and Gatsby development server in the process.

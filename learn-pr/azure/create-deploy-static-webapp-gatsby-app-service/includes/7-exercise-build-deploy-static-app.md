@@ -12,17 +12,17 @@ Run the following command from your project directory:
 gatsby build
 ```
 
-This command will create a *production build*. All your files will end up in a sub directory `public/`.
+This command will create a *production build*. All your files will end up in a sub-directory `public/`.
 
 Once the process finishes building, you can go to your `public/` directory and open up the files in a browser. You can explore your build as it would be hosted in the web with `http-server`, a command-line tool that serves up local files over HTTP so you can see them in a browser.  
 
-Now you'll serve up the whole application from a local web server. `cd` your terminal to the `public/` directory and type the following command:
+Now you'll host the whole application from a local web server. `cd` in your terminal to the `public/` directory and type the following command:
 
 ```bash
 npx http-server -p 5000
 ```
 
-Go to the browser on `http://localhost:5000`.
+Browse to `http://localhost:5000`.
 
 You should now see the following content rendered:
 
@@ -30,7 +30,7 @@ You should now see the following content rendered:
 
 You've built your site and taken it from being a Gatsby app to a set of static pages containing nothing but HTML, CSS, and JavaScript!
 
-Going into your `public/` directory now locate your rendered `about` component at `public/about/index.html`. Because of an optimization process, all whitespace has been removed and the page is represented as one long line. However you should be able to locate the rendered title and description and it should look like this:
+Going into your `public/` directory, locate your rendered `about` component at `public/about/index.html`. Because of the optimization process, all whitespace has been removed and the page is represented as one long line. However, you should be able to locate the rendered title and description and it should look like this:
 
 ```html
 // excerpt from about/index.html
@@ -42,12 +42,12 @@ Going into your `public/` directory now locate your rendered `about` component a
 
 To prepare the app for deployment, we need to take the following steps:
 
-1. Initialize a Git repository
-2. Create a GitHub repository and push to the local Git repository to it
+1. Initialize a Git repository.
+2. Create a GitHub repository and push the local Git repository to it.
 
 ### Add the About page
 
-In the console, navigate to root of your project, then add the code to the repository index and commit it.
+In the terminal, navigate to the root of your project, then add the code to the repository index and commit it.
 
 ```bash
 git add .
@@ -140,7 +140,7 @@ Continue to create the application.
 
 ### Review the GitHub Action
 
-At this stage, your Static Web Apps instance is created in Azure, but your app not yet deployed. The GitHub Action that Azure creates in your repository will run automatically to perform the first build and deployment of your app, but it takes a couple minutes to finish.
+At this stage, your Static Web Apps instance is created in Azure, but your app is not yet deployed. The GitHub Action that Azure creates in your repository will run automatically to perform the first build and deployment of your app, but it takes a couple minutes to finish.
 
 You can check the status of your build and deploy action by clicking the link shown below:
 

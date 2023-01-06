@@ -50,7 +50,7 @@ If you see the above, you successfully created your first Gatsby app. Congrats!
 
 ## Add a page component
 
-Now you'll create a component that you can navigate to in the browser: a *page component*.
+Now you'll create a component that you can navigate to in the browser: a **page component**.
 
 Open the "myApp" project folder in your text editor. Find the `pages/` directory and create a file and name it *about.js*. Give the file the following content:
 
@@ -66,9 +66,9 @@ export default () => (
 )
 ```
 
-The code above creates a *presentation component* that is only able to show data. This component simply renders the text "About page" and a link that point to the root of the application.
+The code above creates a *presentation component* that is only able to show data. This component simply renders the text "About page" and a link that points to the root of the application.
 
-Once you've pasted in the code above and saved it in the file `about.js`, the development server will recompile the application automatically. If you now visit `http://localhost:8000/about` you should see the following content rendered:
+Once you've pasted in the code and saved it in the file `about.js`, the development server will recompile the application automatically. If you now visit `http://localhost:8000/about` you should see the following content rendered:
 
 :::image type="content" source="../media/page-component.png" alt-text="Screenshot showing the loaded page component.":::
 

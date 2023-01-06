@@ -15,7 +15,7 @@ There are many technologies and services capable of hosting static apps. After a
 
 ### Azure Static Web Apps
 
-Static Web Apps is an Azure service that allows you to take some static files and serve them from the cloud. What you deploy isn't a deployment package, but just a set of static files. This is a good fit for Gatsby as what Gatsby ends up producing from a build is static files.
+Static Web Apps is an Azure service that allows you to take some static files and serve them from the cloud. What you deploy isn't a deployment package, but a set of static files. This is a good fit for Gatsby as what Gatsby ends up producing from a build is static files.
 
 Speaking of build, the service actually does the build step for you so there's no need to build anything up front. It accomplishes this by locating the `build` command in the `package.json` of the Gatsby project. All you need to do is put your project in a GitHub repository.
 
