@@ -15,7 +15,7 @@ Currently the tool supports the following .NET Framework app types:
 
 When run on a solution in order to upgrade, the tool will:
 
-- Determine which projects need upgraded and recommend the order the in which projects should be upgraded.
+- Determine which projects need upgraded and recommend the order in which projects should be upgraded.
 - Update the project file to be an SDK-style project.
 - Remove transitive NuGet package dependencies that may have been present in packages.config.
 - Re-target project to .NET current, [Long Term Support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core), or preview.
