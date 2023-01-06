@@ -11,7 +11,7 @@ Replace the `// POST action` comment in *:::no-loc text="Controllers/PizzaContro
 public IActionResult Create(Pizza pizza)
 {            
     PizzaService.Add(pizza);
-    return CreatedAtAction(nameof(Create), new { id = pizza.Id }, pizza);
+    return CreatedAtAction(nameof(Get), new { id = pizza.Id }, pizza);
 }
 ```
 
