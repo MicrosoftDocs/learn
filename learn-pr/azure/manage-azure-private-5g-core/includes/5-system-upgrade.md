@@ -4,6 +4,9 @@ When a new version is available, Azure Private 5G Core displays a message for th
 
 A new version of the packet core may not be compatible with the version of the underlying system that you use. In that case, you'll need to [upgrade the underlying system](#upgrade-the-underlying-system) first. The Azure portal will warn you about the incompatibility between the new version and the underlying ASE system.
 
+> [!TIP]
+> You can check the current version of a packet core instance and list all the available packet core versions with the [Azure Private 5G Core REST API](/rest/api/mobilenetwork/).
+
 ## Plan to upgrade a packet core instance
 
 To minimize the impact of an upgrade to your network services, plan your upgrade process beforehand.
@@ -12,7 +15,7 @@ Follow these guidelines as you plan:
 
 - Set aside an upgrade window with sufficient time reserved.
 
-  The network functions won't be available during the upgrade and possible rollback.
+  Based on your network configuration, the upgrade windows can be up to a few hours. The network functions won't be available during the upgrade and possible rollback.
 
 - Check if you need to [upgrade the underlying system](#upgrade-the-underlying-system) first.
 
@@ -76,7 +79,7 @@ To reinstall a packet core instance, follow the instructions for [planning](#pla
 
 If the version of the packet core to which you want to upgrade requires a new version of Azure Stack Edge (ASE), you'll need to upgrade the ASE before upgrading the packet core instance. The article [Packet core and ASE compatibility](/azure/private-5g-core/azure-stack-edge-packet-core-compatibility) provides more information about this version dependency.
 
-When you upgrade ASE, the Azure Kubernetes services running on the ASE will be automatically upgraded.
+When you upgrade the ASE, the Azure Kubernetes services running on it will be automatically upgraded.
 
 > [!NOTE]
 > Your packet core instance will be affected during the upgrade of its underlying ASE. Plan your service maintenance window as necessary.
