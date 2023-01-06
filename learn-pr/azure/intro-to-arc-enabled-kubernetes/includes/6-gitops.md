@@ -43,7 +43,7 @@ Alternatively, you can use Azure Policy to automate this process, allowing you t
 1. Create a policy assignment by specifying the following settings:
 
    - Set the scope to the management group, subscription, or resource group where the policy assignment will apply.
-   - Optionally, specify exclusions to designate any sub-scopes of resources where the policy shouldn't apply.
+   - Optionally, specify exclusions to designate any subscopes of resources where the policy shouldn't apply.
    - Enable policy enforcement.
    - Set values of the `sourceControlConfiguration` parameter, representing the association between Git repositories and configuration of the corresponding components of the Azure Arc-enabled Kubernetes cluster.
    - Create a remediation task and enable the **Create a managed identity** option. Make sure that the identity has the **Contributor** role.

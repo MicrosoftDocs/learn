@@ -32,7 +32,7 @@ quiz:
     - content: "TXT"
       isCorrect: false
       explanation: "Kubernetes doesn't recognize TXT format for manifest files."
-  - content: "Which technology makes it possible to deploy Azure Kubernetes Service (AKS) in on-premises data centers?"
+  - content: "Which technology makes it possible to deploy Azure Kubernetes Service (AKS) in on-premises datacenters?"
     choices:
     - content: "GKS"
       isCorrect: false
@@ -42,7 +42,7 @@ quiz:
       explanation: "EKS is a third-party platform that doesn't support AKS."
     - content: "Azure Stack HCI"
       isCorrect: true
-      explanation: "AKS clusters can be deployed on Azure Stack HCI in an on-premises data center ."
+      explanation: "AKS clusters can be deployed on Azure Stack HCI in an on-premises datacenter."
     - content: "OpenShift"
       isCorrect: false
       explanation: "OpenShift is a third-party containerization platform that doesn't support AKS."
