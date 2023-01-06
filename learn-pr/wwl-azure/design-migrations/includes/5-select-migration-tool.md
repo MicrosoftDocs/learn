@@ -4,7 +4,7 @@ After you assess Tailwind Traders on-premises workloads, you can begin to consid
 
 As we reviewed in the previous unit, Azure Migrate is a set of features located in a centralized hub that you can use to assess and migrate different workloads to Azure. You can use Azure Migrate to perform the migration of workloads, including applications and virtual machines. Workloads that can be migrated to Microsoft Azure include on-premises servers, infrastructure, applications, and data.
 
-:::image type="content" source="../media/discover-assess.png" alt-text="Screenshot that shows Azure Migrate: Discovery and assessment tools." border="false":::
+:::image type="content" source="../media/discover-assess.png" alt-text="Screenshot that shows Azure Migrate: Discovery and assessment tools.":::
 
 ### Things to know about Azure Migrate and migration
 
@@ -88,7 +88,6 @@ Azure Resource Mover is a tool that helps move your Azure resources between subs
 You can use Azure Resource Mover in two ways:
 
 - **Before you migrate**, to organize your resources.
-
 - **After you migrate**, to optimize your resource organization. 
 
 > [!Tip]
