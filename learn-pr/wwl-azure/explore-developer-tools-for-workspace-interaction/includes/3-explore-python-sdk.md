@@ -65,8 +65,8 @@ returned_job = ml_client.create_or_update(job)
 
 To efficiently work with the Python SDK, you'll need to use the reference documentation. In the reference documentation, you'll find all possible classes, methods, and parameters available within the Python SDK.
 
-[The reference documentation on the `MLClient` class](/python/api/azure-ai-ml/azure.ai.ml.mlclient?view=azure-python?azure-portal=true) includes the methods you can use to connect and interact with the workspace. Moreover, it also links to the possible operations for the various entities like how to list the existing datastores in your workspace.|
+[The reference documentation on the `MLClient` class](/python/api/azure-ai-ml/azure.ai.ml.mlclient?azure-portal=true) includes the methods you can use to connect and interact with the workspace. Moreover, it also links to the possible operations for the various entities like how to list the existing datastores in your workspace.|
  
-[The reference documentation also includes a list of the classes for all entities](/python/api/azure-ai-ml/azure.ai.ml.entities?view=azure-python?azure-portal=true) you can interact with. For example, separate classes exist when you want to create a datastore that links to an Azure Blob Storage, or to an Azure Data Lake Gen 2. 
+[The reference documentation also includes a list of the classes for all entities](/python/api/azure-ai-ml/azure.ai.ml.entities?azure-portal=true) you can interact with. For example, separate classes exist when you want to create a datastore that links to an Azure Blob Storage, or to an Azure Data Lake Gen 2. 
 
-By selecting a specific class like `AmlCompute` from the list of entities, you can find [a more detailed page on how to use the class and what parameters it accepts](/python/api/azure-ai-ml/azure.ai.ml.entities.amlcompute?view=azure-python?azure-portal=true). 
+By selecting a specific class like `AmlCompute` from the list of entities, you can find [a more detailed page on how to use the class and what parameters it accepts](/python/api/azure-ai-ml/azure.ai.ml.entities.amlcompute?azure-portal=true). 

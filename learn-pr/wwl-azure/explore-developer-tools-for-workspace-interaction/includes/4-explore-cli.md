@@ -39,7 +39,7 @@ az ml -h
 
 ## Work with the Azure CLI
 
-To use the Azure CLI to interact with the Azure Machine Learning workspace, you'll use **commands**. Each command is prefixed with `az ml`. You can find the [list of commands in the reference documentation of the CLI](/cli/azure/ml?view=azure-cli-latest?azure-portal=true).
+To use the Azure CLI to interact with the Azure Machine Learning workspace, you'll use **commands**. Each command is prefixed with `az ml`. You can find the [list of commands in the reference documentation of the CLI](/cli/azure/ml?azure-portal=true).
 
 For example, to create a compute target, you can use the following command:
 
@@ -47,7 +47,7 @@ For example, to create a compute target, you can use the following command:
 az ml compute create --name aml-cluster --size STANDARD_DS3_v2 --min-instances 0 --max-instances 5 --type AmlCompute --resource-group my-resource-group --workspace-name my-workspace
 ```
 
-To explore all possible parameters that you can use with a command, you can [review the reference documentation for the specific command](/cli/azure/ml/compute?view=azure-cli-latest#az-ml-compute-create?azure-portal=true).
+To explore all possible parameters that you can use with a command, you can [review the reference documentation for the specific command](/cli/azure/ml/compute?azure-portal=true).
 
 As you define the parameters for an asset or resource you want to create, you may prefer using YAML files to define the configuration instead. When you store all parameter values in a YAML file, it becomes easier to organize and automate tasks. 
 

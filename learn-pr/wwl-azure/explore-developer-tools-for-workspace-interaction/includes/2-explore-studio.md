@@ -8,8 +8,8 @@ The Azure Machine Learning studio is a web portal, which provides an overview of
 
 After you've created an Azure Machine Learning workspace, there are two common ways to access the Azure Machine Learning studio:
 
-1. Launch the studio from the **Overview** page of the Azure Machine Learning workspace resource in the Azure portal. 
-1. Navigate to the studio directly by signing in at [https://ml.azure.com](https://ml.azure.com?azure-portal=true) using the credentials associated with your Azure subscription.
+- Launch the studio from the **Overview** page of the Azure Machine Learning workspace resource in the Azure portal. 
+- Navigate to the studio directly by signing in at [https://ml.azure.com](https://ml.azure.com?azure-portal=true) using the credentials associated with your Azure subscription.
 
 When you've opened your workspace in the Azure Machine Learning studio, a menu will appear in the sidebar. 
 
