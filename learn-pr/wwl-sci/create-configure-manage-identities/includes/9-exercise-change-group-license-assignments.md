@@ -49,7 +49,7 @@ The following sections give descriptions of each potential problem and the way t
 
 To see how many licenses are available, go to **Azure Active Directory**, then **Licenses**, then **All products**.
 
-To see which users and groups are consuming licenses, select a product. Under **Licensed users**, you see a list of all users who have had licenses assigned directly or via one or more groups. Under **Licensed groups**, you see all groups that have that products assigned.
+To see which users and groups are consuming licenses, select a product. Under **Licensed users**, you see a list of all users who have had licenses assigned directly or via one or more groups. Under **Licensed groups**, you see all groups with product licenses assigned.
 
 **PowerShell**: PowerShell cmdlets report this error as *CountViolation*.
 
