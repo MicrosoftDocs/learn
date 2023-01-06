@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-data-engineering-azure.common-tooling-azure-data-engineering
+title: Common tooling in Azure data engineering
+metadata:
+  title: Common tooling in Azure data engineering
+  description: "Common tooling in Azure data engineering"
+  ms.date: 01/06/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3

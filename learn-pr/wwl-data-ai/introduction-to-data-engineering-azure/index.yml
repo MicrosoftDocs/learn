@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-data-engineering-azure
+metadata:
+  title: Introduction to Data Engineering on Azure
+  description: "Introduction to Data Engineering on Azure"
+  ms.date: 01/06/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Data Engineering on Azure
+summary: In most organizations, a data engineer is the primary role responsible for integrating, transforming, and consolidating data from various structured and unstructured data systems into structures that are suitable for building analytics solutions. An Azure data engineer also helps ensure that data pipelines and data stores are high-performing, efficient, organized, and reliable, given a specific set of business requirements and constraints.
+abstract: |
+  In this module you will:
+  - Learn what data engineering looks like on Azure
+  - How data engineering is dfferent in Microsoft Azure
+  - Common patterns for Azure data engineering
+  - Common tooling used in Azure data engineering
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-engineer
+products:
+- azure
+units:
+- learn.wwl.introduction-data-engineering-azure.introduction
+- learn.wwl.introduction-data-engineering-azure.what-is-data-engineering
+- learn.wwl.introduction-data-engineering-azure.how-data-engineering-is-different-microsoft-azure
+- learn.wwl.introduction-data-engineering-azure.common-patterns-azure-data-engineering
+- learn.wwl.introduction-data-engineering-azure.common-tooling-azure-data-engineering
+- learn.wwl.introduction-data-engineering-azure.knowledge-check
+- learn.wwl.introduction-data-engineering-azure.summary
+badge:
+  uid: learn.wwl.introduction-data-engineering-azure.badge
