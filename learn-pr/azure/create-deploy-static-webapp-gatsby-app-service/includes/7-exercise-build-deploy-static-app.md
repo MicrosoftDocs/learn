@@ -26,7 +26,7 @@ Browse to `http://localhost:5000`.
 
 You should now see the following content rendered:
 
-:::image type="content" source="../media/built-site.png" alt-text="Screenshot showing your built app.":::
+:::image type="content" source="../media/welcome-page-gatsby.png" alt-text="Screenshot showing your built app.":::
 
 You've built your site and taken it from being a Gatsby app to a set of static pages containing nothing but HTML, CSS, and JavaScript!
 

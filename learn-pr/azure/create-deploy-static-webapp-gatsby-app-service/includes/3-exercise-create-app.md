@@ -44,7 +44,7 @@ View GraphiQL, an in-browser IDE, to explore your site's data and schema
 
 Now open up a browser and navigate to `http://localhost:8000`.
 
-:::image type="content" source="../media/browser.png" alt-text="Screenshot of the Gatsby app.":::
+:::image type="content" source="../media/welcome-page-gatsby.png" alt-text="Screenshot of the Gatsby app.":::
 
 If you see the above, you successfully created your first Gatsby app. Congrats!
 
