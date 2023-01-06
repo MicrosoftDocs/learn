@@ -52,7 +52,7 @@ If you see the above, you successfully created your first Gatsby app. Congrats!
 
 Now you'll create a component that you can navigate to in the browser: a **page component**.
 
-1. Open the "myApp" project folder in your Visual Studio Code. Find the `pages/` directory.
+1. Open the "myApp" project folder in Visual Studio Code. Find the `pages/` directory.
 
    :::image type="content" source="../media/add-page-component.png" alt-text="Screenshot of the pages folder in VS Code.":::
 

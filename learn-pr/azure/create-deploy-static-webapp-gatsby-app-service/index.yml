@@ -27,7 +27,7 @@ products:
 - azure-app-service-static
 prerequisites: |
   - [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/) installed on your computer
-  - Familiarity with editing text and code files in any text editor
+  - [Visual Studio Code](https://code.visualstudio.com)
   - Beginner-level experience building applications with Gatsby
   - Experience using the command line, including Git operations
   - A GitHub account

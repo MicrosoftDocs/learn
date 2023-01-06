@@ -58,15 +58,15 @@ git commit -m "adding About page to site"
 
 1. Go to GitHub and log in.
 
-1. Navigate to the "repositories" page.
+1. Navigate to the repositories page.
 
    :::image type="content" source="../media/repositories.png" alt-text="Screenshot of the repository button in GitHub.":::
 
-1. Now click the `new` button as indicated below:
+1. Now click the **new** button as indicated below:
 
    :::image type="content" source="../media/create-github-repo.png" alt-text="Screenshot of the create a new GitHub repo button.":::
 
-1. Name your repository `gatsby-app` and click `Create repository` as indicated below:
+1. Name your repository **gatsby-app** and click create repository as indicated below:
 
    :::image type="content" source="../media/github-naming.png" alt-text="Screenshot showing how to name GitHub repository.":::
 
@@ -148,7 +148,7 @@ At this stage, your Static Web Apps instance is created in Azure, but your app i
 
 You can check the status of your build and deploy action by clicking the link shown below:
 
-:::image type="content" source="../media/static-app-portal.png" alt-text="Screenshot showing how to browse to see the progress of the GitHub Action.":::
+:::image type="content" source="../media/static-app-portal.png" alt-text="Screenshot showing how to browse to see the progress of the GitHub Action." lightbox="../media/static-app-portal.png":::
 
 ### View website
 
@@ -156,7 +156,7 @@ Once your GitHub Action finishes building and publishing your web app, you can b
 
 Click on the _URL_ link in the Azure portal to visit your app in the browser.
 
-:::image type="content" source="../media/static-app-portal-finished.png" alt-text="Screenshot that shows the Azure portal with a link to the URL for the app.":::
+:::image type="content" source="../media/static-app-portal-finished.png" alt-text="Screenshot that shows the Azure portal with a link to the URL for the app." lightbox="../media/static-app-portal-finished.png":::
 
 > [!NOTE]
 > Don't worry if you see a web page that says the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web Apps is created. So if you see the splash page, the app is still being deployed.
