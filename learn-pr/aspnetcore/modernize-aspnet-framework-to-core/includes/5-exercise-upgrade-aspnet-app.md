@@ -48,7 +48,7 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
 
    As each step is completed, the tool provides a set of commands allowing the user to apply or skip the next step, see more details, configure logging, or exit the process. If the tool detects that a step will perform no actions, it automatically skips that step and continues to the next step until it reaches one that has actions to do. Pressing <kbd>Enter</kbd> will start the next step if no other selection is made.
 
-1. In this example, you will choose the the apply step each time. The first step is to back up the project. Type **1** and press the <kbd>Enter</kbd> key to continue.
+1. In this example, you will choose the apply step each time. The first step is to back up the project. Type **1** and press the <kbd>Enter</kbd> key to continue.
 
    ```dos
    Upgrade Steps
@@ -676,7 +676,7 @@ As you upgrade your existing projects, you'll need to decide how you adapt to so
 
 1. Attempt to build the project. You'll get multiple build errors in `BundleConfig.cs`, `FilterConfig.cs`, `RouteConfig.cs`, `HomeController,cs`, and `Global.asax.cs`.
 
-   In a production application, you'd need to review all of these files and manually migrate any custom code. Since this is a default project without any customizations, we can simply delete all of these files files with the exception of `HomeController.cs`.
+   In a production application, you'd need to review all of these files and manually migrate any custom code. Since this is a default project without any customizations, we can simply delete all of these files with the exception of `HomeController.cs`.
 
 1. Delete the `App_Start` directory.
 1. Delete `Global.asax.cs`.
