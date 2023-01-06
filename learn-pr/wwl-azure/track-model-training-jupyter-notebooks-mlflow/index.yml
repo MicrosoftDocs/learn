@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.wwl.track-model-training-jupyter-notebooks-mlflow
+metadata:
+  title: Track model training in Jupyter notebooks with MLflow
+  description: "Track model training in Jupyter notebooks with MLflow"
+  ms.date: 01/06/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Track model training in Jupyter notebooks with MLflow
+summary: Learn how to use MLflow for model tracking when experimenting in notebooks.
+abstract: |
+  In this module, you'll learn how to:
+  - Configure to use MLflow in notebooks
+  - Use MLflow for model tracking in notebooks
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure-machine-learning
+subjects:
+- machine-learning
+units:
+- learn.wwl.track-model-training-jupyter-notebooks-mlflow.introduction
+- learn.wwl.track-model-training-jupyter-notebooks-mlflow.use-mlflow-model-tracking
+- learn.wwl.track-model-training-jupyter-notebooks-mlflow.train-models-notebooks
+- learn.wwl.track-model-training-jupyter-notebooks-mlflow.exercise-track-model-training
+- learn.wwl.track-model-training-jupyter-notebooks-mlflow.knowledge-check
+- learn.wwl.track-model-training-jupyter-notebooks-mlflow.summary
+badge:
+  uid: learn.wwl.track-model-training-jupyter-notebooks-mlflow.badge
