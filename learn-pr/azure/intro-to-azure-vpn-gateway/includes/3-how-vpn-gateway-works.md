@@ -55,7 +55,7 @@ When you create a virtual network gateway, you need to specify a gateway SKU. Yo
 | VpnGw2/Az | 30 | 1 Gbps | Supported |
 | VpnGw3/Az  | 30 | 1.25 Gbps | Supported |
 
-This table shows Generation1 SKUs. When working with Generation1 SKUs, you can migrate between the VpnGw1, VpnGw2, and VpnGw3 SKUs as necessary. You cannot migrate from the Basic SKU without removing and redeploying the VPN gateway. You can also create VPN gateways using Generation 2 SKUs. For the latest information about SKUs, throughput, and supported features, reference the links in teh Summary section of this module.
+This table shows Generation1 SKUs. When working with Generation1 SKUs, you can migrate between the VpnGw1, VpnGw2, and VpnGw3 SKUs as necessary. You cannot migrate from the Basic SKU without removing and redeploying the VPN gateway. You can also create VPN gateways using Generation 2 SKUs. For the latest information about SKUs, throughput, and supported features, reference the links in the Summary section of this module.
 
 ## VPN gateway requirements
 
@@ -77,7 +77,7 @@ You can configure multiple connections, up to the limit defined by the SKU, for 
 
 Even though you only see one VPN gateway resource in Azure, VPN gateways are deployed as two instances of managed virtual machines in an active/standby configuration. When planned maintenance or unplanned disruption affects the active instance, the standby instance automatically assumes responsibility for connections without any user or administrator intervention. Connections are interrupted during this failover, but they're typically restored within a few seconds for planned maintenance and within 90 seconds for unplanned disruptions.
 
-Azure VPN gateways support the BGP routing protocol, which allows you to also deploy VPN gateways in an active/active configuration. In this configuration, you assign a unique public IP address to each instance. You then create separate tunnels from the on-premises device to each IP address. You can extend the high availability by deploying an more VPN device on-premises.
+Azure VPN gateways support the BGP routing protocol, which allows you to also deploy VPN gateways in an active/active configuration. In this configuration, you assign a unique public IP address to each instance. You then create separate tunnels from the on-premises device to each IP address. You can extend the high availability by deploying another VPN device on-premises.
 
 > [!NOTE]
 > Many organizations that have ExpressRoute connections also have deployed site-to-site VPN connections for an additional layer of redundancy.
