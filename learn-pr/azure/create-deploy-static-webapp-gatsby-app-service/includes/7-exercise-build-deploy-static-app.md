@@ -156,9 +156,7 @@ Click on the _URL_ link in the Azure portal to visit your app in the browser.
 
 :::image type="content" source="../media/published.png" alt-text="Screenshot that shows the published app in the browser.":::
 
-Congratulations! You've deployed your first app to Azure Static Web Apps!
-
 > [!NOTE]
 > Don't worry if you see a web page that says the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web Apps is created. So if you see the splash page, the app is still being deployed.
 
-You did it! You've deployed your Gatsby app to the cloud.
+Congratulations! You've deployed your first Gatsby app to the cloud using Azure Static Web Apps.
