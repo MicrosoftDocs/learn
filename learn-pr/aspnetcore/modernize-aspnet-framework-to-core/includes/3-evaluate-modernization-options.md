@@ -18,7 +18,7 @@ Upgrading to ASP.NET Core provides you some new opportunities to host and deploy
 
 ## Migrate to the cloud
 
-ASP.NET Core is optimized for cloud hosting, and you may consider migrating all or portions of your applications to the cloud either as part of or as a followup to your upgrade to ASP.NET Core. You can simplify the migration of your .NET Framework web apps to the cloud with minimal or no code changes with the [Azure App Service Migration Assistant](https://azure.microsoft.com/services/app-service/migration-assistant/), a free and simple path to automatically migrate web applications from on-premises to the cloud.
+ASP.NET Core is optimized for cloud hosting, and you may consider migrating all or portions of your applications to the cloud either as part of or as a follow-up to your upgrade to ASP.NET Core. You can simplify the migration of your .NET Framework web apps to the cloud with minimal or no code changes with the [Azure App Service Migration Assistant](https://azure.microsoft.com/services/app-service/migration-assistant/), a free and simple path to automatically migrate web applications from on-premises to the cloud.
 
 ## Update to container-based deployment
 
