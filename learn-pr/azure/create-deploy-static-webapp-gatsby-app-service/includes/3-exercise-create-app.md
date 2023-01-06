@@ -38,7 +38,7 @@ You should see the following output in the terminal:
 ```output
 You can now view gatsby-starter-default in the browser.
   http://localhost:8000.
-View GraphiQL, an in-browser IDE, to explore your site's data and schema
+View GraphQL, an in-browser IDE, to explore your site's data and schema
   http://localhost:8000/___graphql
 ```
 
@@ -52,19 +52,23 @@ If you see the above, you successfully created your first Gatsby app. Congrats!
 
 Now you'll create a component that you can navigate to in the browser: a **page component**.
 
-Open the "myApp" project folder in your text editor. Find the `pages/` directory and create a file and name it *about.js*. Give the file the following content:
+1. Open the "myApp" project folder in your Visual Studio Code. Find the `pages/` directory.
 
-```jsx
-import React from 'react';
-import { Link } from 'gatsby';
+   :::image type="content" source="../media/add-page-component.png" alt-text="Screenshot of the pages folder in VS Code.":::
 
-export default () => (
-  <React.Fragment>
-    <div>About page</div>
-    <Link to="/">Back to home</Link>
-  </React.Fragment>
-)
-```
+1. Create a file and name it **about.js**. Give the file the following content:
+
+   ```jsx
+   import React from 'react';
+   import { Link } from 'gatsby';
+   
+   export default () => (
+     <React.Fragment>
+       <div>About page</div>
+       <Link to="/">Back to home</Link>
+     </React.Fragment>
+   )
+   ```
 
 The code above creates a *presentation component* that is only able to show data. This component simply renders the text "About page" and a link that points to the root of the application.
 

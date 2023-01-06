@@ -2,9 +2,9 @@ Gatsby has a system of plugins that *scans* various data sources and places the 
 
 ## Tools
 
-The data graph is something you can interact with. Once you start up the development server, the data graph will be available on `http://localhost:8000/___graphql`. This will render the data graph in a tool called GraphiQL.
+The data graph is something you can interact with. Once you start up the development server, the data graph will be available on `http://localhost:8000/___graphql`. This will render the data graph in a tool called GraphQL.
 
-GraphiQL allows you to do the following:
+GraphQL allows you to do the following:
 
 - **Navigate**: Drill down into the data graph and its content by expanding nodes to find just the data you need.
 - **Construct queries**: As you drill down into the graph, the tool will craft a query for you. You can also edit the query text as you see fit to see the results.

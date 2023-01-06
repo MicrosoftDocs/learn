@@ -39,7 +39,7 @@ Go to `http://localhost:8000/___graphql` in your browser so you can get help cre
 
 :::image type="content" source="../media/graphql-explorer.png" alt-text="Screenshot showing how to navigate to the Gatsby query.":::
 
-In the above image, you can see the Explorer section on the left labeled number one. You can use the Explorer to drill down into our Graph until you find the data you need. In the middle section, labeled number 2, you can see how the query is written for you as you perform selections on the left. On the right, labeled number 3, you see the result of running the query. You can run the query by clicking the *play* button in the middle section.
+In the above image, you can see the Explorer section in the left pane. You can use the Explorer to drill down into our Graph until you find the data you need. In the middle pane you can see how the query is written for you as you perform selections on the left. On the right you see the result of running the query. You can run the query by clicking the *play* button in the middle section.
 
 Select the following constructed query from the middle section:
 
@@ -55,7 +55,7 @@ site {
 
 Copy it to the clip board.
 
-Return back to the editor and locate the file `about.js` in the `pages/` directory. Change its content to the following code:
+Return back to the VS Code editor and locate the file `about.js` in the `pages/` directory. Change its content to the following code:
 
 ```jsx
 import React from 'react';

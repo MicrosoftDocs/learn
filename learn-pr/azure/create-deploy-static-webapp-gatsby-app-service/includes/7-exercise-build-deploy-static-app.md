@@ -56,21 +56,25 @@ git commit -m "adding About page to site"
 
 ### Create a GitHub repo and push the code
 
-1. Go to GitHub and log on. You should now be on a URL like so `https://github.com/<your username>?tab=repositories`
+1. Go to GitHub and log in. 
 
-2. Now click the `new` button as indicated below:
+1. Navigate to the "repositories" page. 
+
+   :::image type="content" source="../media/repositories.png" alt-text="Screenshot of the repository button in GitHub.":::
+
+1. Now click the `new` button as indicated below:
 
    :::image type="content" source="../media/create-github-repo.png" alt-text="Screenshot of the create a new GitHub repo button.":::
 
-3. Name your repository `gatsby-app` and click `Create repository` as indicated below:
+1. Name your repository `gatsby-app` and click `Create repository` as indicated below:
 
    :::image type="content" source="../media/github-naming.png" alt-text="Screenshot showing how to name GitHub repository.":::
 
-4. Finally, add your GitHub repository as a remote and push. Type the following commands to accomplish that (Replace the `<user>` part with your GitHub user name):
+1. Finally, add your GitHub repository as a remote and push. Type the following commands to accomplish that (Replace the `<user>` part with your GitHub user name):
 
    ```bash
    git remote add origin https://github.com/<user>/gatsby-app.git
-   git push -u origin main
+   git push -u origin master
    ```
 
 You're now ready to deploy to Azure Static Web Apps!
@@ -105,14 +109,14 @@ Next, configure your new app and link it to your GitHub repository.
    | _Region_ | Select Region closest to you                                                  |
    | _SKU_    | **Free**                                                                      |
 
-1. Click the **Sign-in with GitHub** button and authenticate with GitHub
+1. If prompted, click the **Sign-in with GitHub** button and authenticate with GitHub
 1. Enter the **Deployment Details**
 
    | Setting        | Value                                                    |
    | -------------- | -------------------------------------------------------- |
    | _Organization_ | Select the Organization where you created the repository |
    | _Repository_   | **gatsby-app**                              |
-   | _Branch_       | **main**                                               |
+   | _Branch_       | **main or master**                                               |
 
 1. Use the **Build Details** drop down list to select **Gatsby** to populate the build information.
 
@@ -124,7 +128,7 @@ Next, configure your new app and link it to your GitHub repository.
 
 1. Click the **Review + create** button
 
-:::image type="content" source="../media/review-create-button.png" alt-text="Screenshot showing the review and create button.":::
+   :::image type="content" source="../media/review-create-button.png" alt-text="Screenshot showing the review and create button.":::
 
 ### Review + create
 
@@ -153,8 +157,6 @@ Once your GitHub Action finishes building and publishing your web app, you can b
 Click on the _URL_ link in the Azure portal to visit your app in the browser.
 
 :::image type="content" source="../media/static-app-portal-finished.png" alt-text="Screenshot that shows the Azure portal with a link to the URL for the app.":::
-
-:::image type="content" source="../media/published.png" alt-text="Screenshot that shows the published app in the browser.":::
 
 > [!NOTE]
 > Don't worry if you see a web page that says the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web Apps is created. So if you see the splash page, the app is still being deployed.
