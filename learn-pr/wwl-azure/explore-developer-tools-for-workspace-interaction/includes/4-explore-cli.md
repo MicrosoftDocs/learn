@@ -70,4 +70,8 @@ When you saved the YAML file as `compute.yml`, you can create the compute target
 az ml compute create --file compute.yml --resource-group my-resource-group --workspace-name my-workspace
 ```
 
-You can find [an overview of all the YAML schemas in the reference documentation](/azure/machine-learning/reference-yaml-overview?azure-portal=true). Select
+You can find [an overview of all the YAML schemas in the reference documentation](/azure/machine-learning/reference-yaml-overview?azure-portal=true). 
+
+> [!Tip]
+> Learn more about [how to use the CLI (v2) with Azure Machine Learning to train models](/training/paths/train-models-azure-machine-learning-cli-v2/?azure-portal=true). 
+
