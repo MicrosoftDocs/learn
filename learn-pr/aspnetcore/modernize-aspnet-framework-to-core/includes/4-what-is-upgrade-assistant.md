@@ -15,15 +15,15 @@ Currently the tool supports the following .NET Framework app types:
 
 When run on a solution in order to upgrade, the tool will:
 
-- Determine which projects need upgraded and recommend the order the projects should be upgraded in
-- Update the project file to be an SDK-style project
-- Remove transitive NuGet package dependencies that may have been present in packages.config
-- Re-target project to .NET current, [Long Term Support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core), or preview
-- Update NuGet package dependencies to versions that are compatible with .NET current, LTS, or preview
-- Make simple updates in C# source code to replace patterns that worked in .NET Framework with current, LTS, or preview equivalents
-- For some app models (like ASP.NET apps), add common template files (like startup.cs) and make simple updates based on recognized web.config or app.config values
-- For projects targeting Windows, add a reference to the Microsoft.Windows.Compatibility package
-- Add references to analyzers that help with upgrade, such as the Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers package
+- Determine which projects need upgraded and recommend the order in which projects should be upgraded.
+- Update the project file to be an SDK-style project.
+- Remove transitive NuGet package dependencies that may have been present in packages.config.
+- Re-target project to .NET current, [Long Term Support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core), or preview.
+- Update NuGet package dependencies to versions that are compatible with .NET current, LTS, or preview.
+- Make simple updates in C# source code to replace patterns that worked in .NET Framework with current, LTS, or preview equivalents.
+- For some app models (like ASP.NET apps), add common template files (like startup.cs) and make simple updates based on recognized web.config or app.config values.
+- For projects targeting Windows, add a reference to the Microsoft.Windows.Compatibility package.
+- Add references to analyzers that help with upgrade, such as the Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers package.
 
 After running this tool on a solution to upgrade, the solution will likely not build until the upgrade is completed manually. Analyzers added to the solution will highlight some of the remaining changes needed after the tool runs.
 
@@ -31,10 +31,10 @@ After running this tool on a solution to upgrade, the solution will likely not b
 
 When run on a solution in order to analyze dependencies prior to upgrade, the tool will provide an analysis report for each of the projects in the solution containing details on:
 
-- Package dependencies that need to be removed / added / upgraded in order to upgrade the project to chosen target framework (current, LTS, or preview)
-- References that need to be removed / added / upgraded in order to upgrade the project to chosen target framework (current, LTS, or preview)
-- Framework References that need to be removed / added / upgraded in order to upgrade the project to chosen target framework (current, LTS, or preview)
-- Call out if there is a package upgrade across major versions that could lead towards having breaking changes.
+- Package dependencies that need to be removed/added/upgraded in order to upgrade the project to chosen target framework (current, LTS, or preview).
+- References that need to be removed/added/upgraded in order to upgrade the project to chosen target framework (current, LTS, or preview).
+- Framework References that need to be removed/added/upgraded in order to upgrade the project to chosen target framework (current, LTS, or preview).
+- Call out if there's a package upgrade across major versions that could lead towards having breaking changes.
 - Unsupported API for the chosen target framework (current, LTS, or preview) used in the projects with pointers to recommended path forward if one is available.
 
 > [!NOTE]
