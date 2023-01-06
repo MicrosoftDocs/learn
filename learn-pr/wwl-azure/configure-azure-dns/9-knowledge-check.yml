@@ -23,12 +23,12 @@ quiz:
     - content: "Azure DNS manages the security and access to your website."
       isCorrect: false
       explanation: "Incorrect. In general, this statement is true, but it doesn't describe the primary purpose."
-    - content: "Azure DNS registers new domain names, so there's no need to use a domain registrar."
-      isCorrect: false
-      explanation: "Incorrect. Azure DNS isn't a domain registrar. The service hosts the domain and allows administrators to manage DNS zone records."
     - content: "Azure DNS manages and hosts the registered domain for a website and its associated records."
       isCorrect: true
       explanation: "Correct. Azure DNS hosts the registered domains. Administrators can control and configure domain records like `A`, `CNAME`, and `MX`, and set up alias records."
+    - content: "Azure DNS registers new domain names, so there's no need to use a domain registrar."
+      isCorrect: false
+      explanation: "Incorrect. Azure DNS isn't a domain registrar. The service hosts the domain and allows administrators to manage DNS zone records."
 
   - content: "What type of DNS record can map one or more IP addresses against a single domain?"
     choices:

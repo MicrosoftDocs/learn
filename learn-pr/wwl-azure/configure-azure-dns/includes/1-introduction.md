@@ -1,4 +1,4 @@
-Azure DNS enables you to host your DNS records for your domains on Azure infrastructure. With Azure DNS, you can use the same credentials, APIs, tools, and billing as your other Azure services.
+Azure DNS is a service that lets you host the DNS records for your domains on Azure infrastructure. By implementing Azure DNS, you can use the same credentials, APIs, tools, and billing as your other Azure services.
 
 In this module, suppose your company obtains a custom domain name for a new website. You're responsible for implementing Azure DNS to manage the custom domain. You need to understand how to implement various features of Azure DNS, including DNS zones, DNS delegation, and DNS records.
 
