@@ -3,7 +3,7 @@ uid: learn.wwl.visualize-real-time-data-azure-stream-analytics-power-bi
 metadata:
   title: Visualize real-time data with Azure Stream Analytics and Power BI
   description: "By combining the stream processing capabilities of Azure Stream Analytics and the data visualization capabilities of Microsoft Power BI, you can create real-time data dashboards."
-  ms.date: 12/09/2022
+  ms.date: 12/30/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   Before starting this module, you should be familiar with Azure Stream Analytics and Microsoft Power BI. Consider completing the following modules first:
   - [Explore fundamentals of data visualization](/training/modules/explore-fundamentals-data-visualization?azure-portal=true).
   - [Get started with Azure Stream Analytics](/training/modules/introduction-to-data-streaming?azure-portal=true).
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/visualize-real-time-data-azure-stream-analytics-power-bi.svg
 levels:
 - intermediate
 roles:

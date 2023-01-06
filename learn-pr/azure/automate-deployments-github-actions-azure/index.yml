@@ -33,7 +33,6 @@ roles:
 products:  
   - azure-sql-database
   - github
-  - vs-code
   - azure-functions
   - azure-logic-apps
   - azure-app-service-static

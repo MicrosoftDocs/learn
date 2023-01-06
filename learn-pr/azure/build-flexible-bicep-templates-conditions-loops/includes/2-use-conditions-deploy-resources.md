@@ -24,7 +24,7 @@ In Bicep, conditions can also include expressions. In the following example, the
 
 It's usually a good idea to create a variable for the expression that you're using as a condition. That way, your template is easier to understand and read. Here's an example:
 
-::: code language="bicep" source="code/2-conditional-expression-variable.bicep" range="1-5, 8-9, 20-24, 28-29" highlight="1, 9" :::
+::: code language="bicep" source="code/2-conditional-expression-variable.bicep" range="1-5, 8-9, 20-24, 28-29" highlight="7, 9" :::
 
 ## Depend on conditionally deployed resources
 

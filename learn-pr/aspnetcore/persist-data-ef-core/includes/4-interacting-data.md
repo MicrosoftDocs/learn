@@ -144,8 +144,7 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
     In the preceding code:
 
     - References to an existing `Pizza` and `Topping` are created using `Find`.
-    - The `Topping` is added to the `Pizza.Toppings` collection. A new collection is created if it doesn't exist.
-    - The `Update` method flags the `pizzaToUpdate` entity as updated in EF Core's object graph.
+    - The `Topping` is added to the `Pizza.Toppings` collection with the `.Add` method. A new collection is created if it doesn't exist.
     - The `SaveChanges` method instructs EF Core to persist the object changes to the database.
 
 1. Replace the `DeleteById` method with the following code:

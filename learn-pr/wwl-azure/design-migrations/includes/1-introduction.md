@@ -12,30 +12,29 @@ The IT department is currently responsible for all management tasks for the comp
 
 In this module, you learn how to:
 
-- Evaluate migration with the Microsoft Cloud Adoption Framework for Azure
+- Evaluate migration with the Microsoft Cloud Adoption Framework for Azure.
 
-- Describe the Azure Migration and Modernization Program (Azure Migration Framework)
+- Describe the Azure Migration and Modernization Program (Azure Migration Framework).
 
-- Assess your on-premises workloads
+- Assess your on-premises workloads.
 
-- Select a migration tool
+- Select a migration tool.
 
-- Migrate your databases
+- Migrate your databases.
 
-- Select an online storage migration tool
+- Select an online storage migration tool.
 
-- Migrate offline data
+- Migrate offline data.
 
 ## Skills measured 
 
 The content in the module helps you prepare for Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions. The module concepts are covered in:
 
-Design infrastructure solutions
-
-- Design migrations
+- Design infrastructure solutions.
+- Design migrations.
 
 ## Prerequisites
 
-- Conceptual knowledge of migrating compute, database, and storage workloads
+- Conceptual knowledge of migrating compute, database, and storage workloads.
 
-- Working experience with planning migrations, assessing workloads, determining migration requirements, and deploying workloads
+- Working experience with planning migrations, assessing workloads, determining migration requirements, and deploying workloads.
