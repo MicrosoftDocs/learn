@@ -18,6 +18,7 @@ abstract:  |
   - Create a blob trigger to invoke a function when a blob is created or updated in Azure Storage
 prerequisites: None
 iconUrl: /training/achievements/execute-azure-function-with-triggers.svg
+hidden:true
 levels: 
 - beginner
 roles: 
