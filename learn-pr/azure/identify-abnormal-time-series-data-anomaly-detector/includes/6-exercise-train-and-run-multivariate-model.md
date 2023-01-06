@@ -1,14 +1,14 @@
 
-At this point, you've learned how to send the power meter readings to the cloud and use the Anomaly Detector univariate API to find issues the time-series data that only has one variable. This also helps the electricity company to be alerted quickly when a power outage occurs.  However, they now want to drill down into the issue and pinpoint what factors are causing the high energy consumption.
+At this point, you've learned how to send the power-meter readings to the cloud and use the Anomaly Detector univariate API to find issues with the time-series data that only has one variable. This also helps to alert the electricity company quickly when a power outage occurs. However, they now want to drill down into the issue and pinpoint what factors are causing high energy consumption.
 
-In this exercise, you'll need Jupyter Notebook to run the code blocks below.
+You'll need Jupyter Notebook to run the code blocks in this exercise. In this unit, we'll:
 
-- We'll train a model using a dataset with multiple metrics.  
-- We'll use the trained model to run the detect model inference to get results with holistic view of all the different smart meter metrics and pinpoint root causes of failures found.  
+- Train a model using a dataset with multiple metrics.  
+- Use the trained model to run the detect model inference to get results with a holistic view of all the different smart-meter metrics and pinpoint the root causes of failures found.  
 
 ## Input data structure for multivariate Anomaly Detector API
 
-All time-series data used to train and generate the model with the Multivariate Anomaly Detector API must be zipped into one single file. Each time-series will be as follows: the first column is **_timestamp_** and the second column is **_value_** (all in lowercase) as the header row. The name of the csv file needs to be the name of the metric to monitor (for example, power.csv, voltage.csv, kitchen.csv, laundryroom.csv). Finally, the zip file should have a SAS URI link to an externally accessible source like an Azure Blob Storage container.
+All time-series data used to train and generate the model with the Multivariate Anomaly Detector API must be zipped into a single file. Each time-series will be as follows: the first column is **_timestamp_** and the second column is **_value_** (all in lowercase) as the header row. The name of the csv file needs to be the name of the metric to monitor (for example: power.csv, voltage.csv, kitchen.csv, laundryroom.csv). Finally, the zip file should have a SAS URI link to an externally accessible source like an Azure Blob Storage container.
 
 ![Diagram displaying csv input file structure.](..\media\6-exercise-train-and-run-multivariate-model-1.png)
 
@@ -45,12 +45,13 @@ RESULT_ID = ''
 
 ## Get sample household smart meter dataset
 
-We'll be using the _Individual household electric power consumption Data Set_ curtesy of University of California, Irvine.  This dataset contains the power consumption of a single household for a year.  The dataset is available at [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption).  The dataset contains some of the following features:
+We'll be using the _Individual household electric power consumption Data Set_ courtesy of the University of California, Irvine. This dataset contains the power consumption of a single household for a year. The dataset is available at [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption). The dataset contains some of the following features:
+
 - **Date and time**: dd/mm/yyyy hh:mm:ss
-- **Power**: household minute-averaged power (in kilowatt)
-- **Voltage**: minute-averaged voltage (in volt)
-- **Kitchen submeter**: energy submetering containing mainly a dishwasher, an oven and a microwave (in watt)
-- **Laundry submeter**: energy submetering containing mainly a washing-machine, a tumble-drier, a refrigerator and a light.
+- **Power**: household minute-averaged power (in kilowatts)
+- **Voltage**: minute-averaged voltage (in volts)
+- **Kitchen submeter**: energy submetering containing mainly a dishwasher, an oven, and a microwave (in watts)
+- **Laundry submeter**: energy submetering containing mainly a washing-machine, a tumble-drier, a refrigerator, and a light.
 
 ```python
 from urllib.request import urlretrieve
@@ -63,7 +64,7 @@ filename, headers = urlretrieve(url, filename=DATASET_FILENAME)
 
 ## Upload dataset to Azure Blob Storage
 
-The Multivariate Anomaly Detector API reads input from an externally accessible Azure storage Uri (preferably a Shared Access Signature Uri). So, the zipped file containing the csv dataset need to be loaded to an Azure Blob Storage container.
+The Multivariate Anomaly Detector API reads input from an externally accessible Azure storage URI (preferably a Shared Access Signature URI), so the zipped file containing the csv dataset needs to be loaded to an Azure Blob Storage container.
 
 ```python
 from azure.storage.blob import BlobServiceClient
@@ -106,9 +107,10 @@ sas_token = generate_blob_sas(
 #append the blob url to the SAS token
 BLOB_SOURCE = blob_srv_client.url + '?' + sas_token
 ```
+
 ## Set training and testing data timestamp range
 
-We need to specify the timestamp ranges to be used for the training data and testing data.  The dataset for training needs to be a large size to get better accuracy. Also, make sure the timestamp range you give for testing data doesn't overlap with the training data.
+We need to specify the timestamp ranges to be used for the training data and testing data. The dataset for training needs to be a large size to get better accuracy. Also, make sure the timestamp range you give for testing data doesn't overlap with the training data.
 
 ```python
 #Timestamp range to use for training
@@ -124,14 +126,14 @@ test_end_date = "2006-12-19 20:26:00"
 
 We'll create a class that uses the anomaly detector SDK to call the different APIs in the Multivariate Anomaly Detector service.
 
-- The **init** initializes the function with the client connection to your Multivariate Anomaly Detection service and sets the location of the Blob.
-- The **train** function uses the _train_ method of the Multivariate Anomaly Detector APIs to train the model with your data that is stored in the Azure Blob. You also need to specify the start and end timestamp of the training dataset. 
+- The **init** function initializes the function with the client connection to your Multivariate Anomaly Detection service and sets the location of the Blob.
+- The **train** function uses the _train_ method of the Multivariate Anomaly Detector APIs to train the model with your data that is stored in the Azure Blob. You also need to specify the start and end timestamp of the training dataset.
 
    > [!NOTE]
-   > You need a large training dataset (e.g. 1000 rows of data) for better model accuracy. The function's output is the unique trained model_id.
+   > You need a large training dataset (e.g. 1000 rows of data) for better model accuracy. The function's output is the unique trained _model_id_.
 
-- The **detect** function uses the _detect_ method of the Multivariate Anomaly Detector APIs to detect the anomalies in the data in the Azure Blob. The output is the result_id from the results of the API for all the input time-series data points.
-- The **export** function uses the _export_ method of the Multivariate Anomaly Detector APIs to export the trained model to a file destination (e.g. local directory). 
+- The **detect** function uses the _detect_ method of the Multivariate Anomaly Detector APIs to detect the anomalies in the data in the Azure Blob. The output is the _result_id_ from the results of the API for all the input time-series data points.
+- The **export** function uses the _export_ method of the Multivariate Anomaly Detector APIs to export the trained model to a file destination (e.g. local directory).
 
    > [!NOTE]
    > You can take the model zip file to other environments or your application for inference.
@@ -214,9 +216,9 @@ class MultivariateSample():
                     raise e         
 ```
 
-## Run Multivariate Anomaly Detector experiment
+## Run the Multivariate Anomaly Detector experiment
 
-We are now ready to run the main function that will start the multivariate Anomaly Detection experiment. It calls the other functions to create, train, detect, and export the model. Each time the train function is executed, a new **Model ID** is generated. Once you have the model that is trained, you can then use the model ID to run the detect API on your test dataset. To see the results of the detection, you need the **Result ID** to get the results of the detection. Copy the result ID to get the results of the detection to use in the next exercise.
+We're now ready to run the main function that will start the multivariate Anomaly Detection experiment. It calls the other functions to create, train, detect, and export the model. Each time the train function is executed, a new **Model ID** is generated. Once you have the model that is trained, you can then use the model ID to run the detect API on your test dataset. To see the results of the detection, you need the **Result ID** to get the results of the detection. Copy the result ID to get the results of the detection to use in the next exercise.
 
 ```python
 if __name__ == '__main__':
@@ -246,4 +248,4 @@ if __name__ == '__main__':
     sample.export_model(MODEL_ID, "energy_model.zip")
 ```
 
-Excellent! You have now trained a model and exported it to a zip file. You can now use the model to detect anomalies in your data.  In the next unit, you'll visualize the results of the detection and see root causes of the anomalies.
+Excellent! You've now trained a model and exported it to a zip file. You can now use the model to detect anomalies in your data. In the next unit, you'll visualize the results of the detection and see the root causes of the anomalies.

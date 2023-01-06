@@ -71,7 +71,7 @@ Now you use the service you defined by calling it in a Blazor component and obta
 ```razor
 @page "/pizzas"
 
-<h1>Choose your pizza</a>
+<h1>Choose your pizza</h1>
 
 <p>We have all these delicious recipes:</p>
 ```

@@ -29,7 +29,6 @@ roles:
 - developer
 - student
 products:
-- vs-code
 - windows-mixed-reality
 subjects:
 - mixed-reality

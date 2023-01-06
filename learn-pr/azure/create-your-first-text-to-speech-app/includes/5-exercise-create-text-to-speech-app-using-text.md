@@ -27,51 +27,45 @@ In this exercise, you'll create a text file that you'll use to create an audio f
 
 ## Add the code for your text-to-speech application
 
-1. In the Cloud Shell on the right, open the *Program.cs* file in Visual Studio Code.
+1. In the Cloud Shell on the right, open the *Program.cs* file.
 
     ```dotnetcli
     code Program.cs
     ```
 
-1. Replace the existing `using` statements with the following statements, which will enable the Azure Cognitive Services Speech APIs for your application.
+1. Replace the existing code with the following `using` statements, which will enable the Azure Cognitive Services Speech APIs for your application.
 
     ```csharp
-    using System;
-    using System.IO;
     using System.Text;
-    using System.Threading.Tasks;
     using Microsoft.CognitiveServices.Speech;
     using Microsoft.CognitiveServices.Speech.Audio;
     ```
 
-1. Replace the existing `Main()` function with the following code, which will use Azure Cognitive Services Speech APIs to convert the contents of the text file that you created earlier to create a WAVE file with the synthesized voice.
+1. Below the `using` statements, add the following code, which will use Azure Cognitive Services Speech APIs to convert the contents of the text file that you created earlier to create a WAVE file with the synthesized voice.
 
     ```csharp
-    static async Task Main(string[] args)
-    {
-        string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
-        string azureLocation = "ENTER YOUR LOCATION FROM THE FIRST EXERCISE";
-        string textFile = "Shakespeare.txt";
-        string waveFile = "Shakespeare.wav";
+    string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
+    string azureLocation = "ENTER YOUR LOCATION FROM THE FIRST EXERCISE";
+    string textFile = "Shakespeare.txt";
+    string waveFile = "Shakespeare.wav";
 
-        try
+    try
+    {
+        FileInfo fileInfo = new FileInfo(textFile);
+        if (fileInfo.Exists)
         {
-            FileInfo fileInfo = new FileInfo(textFile);
-            if (fileInfo.Exists)
-            {
-                string textContent = File.ReadAllText(fileInfo.FullName);
-                var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);
-                using var speechSynthesizer = new SpeechSynthesizer(speechConfig, null);
-                var speechResult = await speechSynthesizer.SpeakTextAsync(textContent);
-                using var audioDataStream = AudioDataStream.FromResult(speechResult);
-                await audioDataStream.SaveToWaveFileAsync(waveFile);       
-            }
+            string textContent = File.ReadAllText(fileInfo.FullName);
+            var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);
+            using var speechSynthesizer = new SpeechSynthesizer(speechConfig, null);
+            var speechResult = await speechSynthesizer.SpeakTextAsync(textContent);
+            using var audioDataStream = AudioDataStream.FromResult(speechResult);
+            await audioDataStream.SaveToWaveFileAsync(waveFile);       
         }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex.Message);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message);
          
-        }
     }
     ```
 
@@ -80,45 +74,31 @@ In this exercise, you'll create a text file that you'll use to create an audio f
 1. When you've finished adding all of the code, your file should resemble the following example.
 
     ```csharp
-    using System;
-    using System.IO;
     using System.Text;
-    using System.Threading.Tasks;
     using Microsoft.CognitiveServices.Speech;
     using Microsoft.CognitiveServices.Speech.Audio;
     
-    namespace text_to_speech
+    string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
+    string azureLocation = "ENTER YOUR LOCATION FROM THE FIRST EXERCISE";
+    string textFile = "Shakespeare.txt";
+    string waveFile = "Shakespeare.wav";
+        
+    try
     {
-        class Program
+        FileInfo fileInfo = new FileInfo(textFile);
+        if (fileInfo.Exists)
         {
-            static async Task Main(string[] args)
-            {
-    
-                string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
-                string azureLocation = "ENTER YOUR LOCATION FROM THE FIRST EXERCISE";
-                string textFile = "Shakespeare.txt";
-                string waveFile = "Shakespeare.wav";
-    
-                try
-                {
-                    FileInfo fileInfo = new FileInfo(textFile);
-                    if (fileInfo.Exists)
-                    {
-                        string textContent = File.ReadAllText(fileInfo.FullName);
-                        var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);
-                        using var speechSynthesizer = new SpeechSynthesizer(speechConfig, null);
-                        var speechResult = await speechSynthesizer.SpeakTextAsync(textContent);
-                        using var audioDataStream = AudioDataStream.FromResult(speechResult);
-                        await audioDataStream.SaveToWaveFileAsync(waveFile);       
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                 
-                }
-            }
+            string textContent = File.ReadAllText(fileInfo.FullName);
+            var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);
+            using var speechSynthesizer = new SpeechSynthesizer(speechConfig, null);
+            var speechResult = await speechSynthesizer.SpeakTextAsync(textContent);
+            using var audioDataStream = AudioDataStream.FromResult(speechResult);
+            await audioDataStream.SaveToWaveFileAsync(waveFile);       
         }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message);                
     }
     ```
 
@@ -188,7 +168,7 @@ The `SpeechConfig` class has a `SpeechSynthesisVoiceName` property that you can 
 
 To specify the voice, use the following steps.
 
-1. In the Cloud Shell on the right, open the *Program.cs* file in Visual Studio Code.
+1. In the Cloud Shell on the right, open the *Program.cs* file.
 
     ```dotnetcli
     code Program.cs

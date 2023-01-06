@@ -48,7 +48,7 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
 
    As each step is completed, the tool provides a set of commands allowing the user to apply or skip the next step, see more details, configure logging, or exit the process. If the tool detects that a step will perform no actions, it automatically skips that step and continues to the next step until it reaches one that has actions to do. Pressing <kbd>Enter</kbd> will start the next step if no other selection is made.
 
-1. In this example, you will choose the the apply step each time. The first step is to back up the project. Type **1** and press the <kbd>Enter</kbd> key to continue.
+1. In this example, you will choose the apply step each time. The first step is to back up the project. Type **1** and press the <kbd>Enter</kbd> key to continue.
 
    ```dos
    Upgrade Steps
@@ -649,18 +649,18 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
 
 ## Complete manual upgrade steps
 
-After completing the steps in the Upgrade Assistant, you will need complete some manual steps to complete the upgrade.
+After completing the steps in the Upgrade Assistant, you'll need complete some manual steps to complete the upgrade.
 
 > [!NOTE]
 > Since both NuGet packages and the Upgrade Assistant are regularly updated, you may not hit the issues listed below, or you may encounter different issues. Troubleshooting steps are provided in the [Upgrade Assistant documentation](/dotnet/core/porting/upgrade-assistant-aspnetmvc).
 
 ### Remove unneeded NuGet packages
 
-The Upgrade Assistant will attempt remove any packages that are no longer needed, but in some cases, the tool cannot determine if a package is no longer needed. These packages will need to be reviewed removed manually.
+The Upgrade Assistant will attempt remove any packages that are no longer needed, but in some cases, the tool can't determine if a package is no longer needed. These packages will need to be reviewed removed manually.
 
-As you upgrade your existing projects, you will need to decide how you adapt to some architectural and stylistic changes. In this walkthrough, we will be removing a NuGet reference to `Newtonsoft.Json` since a newer version already included in the `Microsoft.AspNetCore.Mvc.NewtonsoftJson` package. Additionally, we will be removing NuGet packages which are used to include static JavaScript and CSS libraries.
+As you upgrade your existing projects, you'll need to decide how you adapt to some architectural and stylistic changes. In this walkthrough, we'll be removing a NuGet reference to `Newtonsoft.Json` because a newer version already included in the `Microsoft.AspNetCore.Mvc.NewtonsoftJson` package. Additionally, we'll be removing NuGet packages which are used to include static JavaScript and CSS libraries.
 
-1. Open the project file in Visual Studio and reload the project if it is unloaded (by right-clicking it in the solution explorer and choosing "Reload project").
+1. Open the project file in Visual Studio and reload the project if it's unloaded (by right-clicking it in the solution explorer and choosing "Reload project").
 1. Delete the **PackageReference** elements for the following packages:
 
    - `bootstrap`
@@ -674,9 +674,9 @@ As you upgrade your existing projects, you will need to decide how you adapt to 
 
 ### Delete unused source files
 
-1. Attempt to build the project. You will see multiple build errors in `BundleConfig.cs`, `FilterConfig.cs`, `RouteConfig.cs`, `HomeController,cs`, and `Global.asax.cs`.
+1. Attempt to build the project. You'll get multiple build errors in `BundleConfig.cs`, `FilterConfig.cs`, `RouteConfig.cs`, `HomeController,cs`, and `Global.asax.cs`.
 
-   In a production application, you would need to review all of these files and manually migrate any custom code. Since this is a default project without any customizations, we can simply delete all of these files files with the exception of `HomeController.cs`.
+   In a production application, you'd need to review all of these files and manually migrate any custom code. Since this is a default project without any customizations, we can simply delete all of these files with the exception of `HomeController.cs`.
 
 1. Delete the `App_Start` directory.
 1. Delete `Global.asax.cs`.
@@ -692,7 +692,7 @@ The `HomeController` has an error due to a `using` directive that references `Sy
 
 Static files that should be served by the web server should be moved to an appropriate folder within a root level folder named `wwwroot`. See [Static files in ASP.NET Core](/aspnet/core/fundamentals/static-files) for details.
 
-For this upgrade, we are going to follow the structure in a new ASP.NET Core 6 project, but you are free to structure the static files in `wwwroot` however you like.
+For this upgrade, we're going to follow the structure in a new ASP.NET Core 6 project, but you're free to structure the static files in `wwwroot` however you like.
 
 1. Create a new `wwwroot` directory in the root of the project.
 1. Drag the `Scripts` directory into the `wwwroot` directory.
@@ -747,4 +747,4 @@ At this point, the application should build and run successfully. Congratulation
 
 ## Summary
 
-In this section, you completed an upgrade for a simple, specific test scenario: a default ASP.NET MVC 5 app with no authentication, data access, additional NuGet packages, or custom code. In a more complex scenario, you will need to complete additional migration steps as detailed in the [ASP.NET Core Migration Guide](/aspnet/core/migration/index).
+In this section, you completed an upgrade for a simple, specific test scenario: a default ASP.NET MVC 5 app with no authentication, data access, additional NuGet packages, or custom code. In a more complex scenario, you'll need to complete additional migration steps as detailed in the [ASP.NET Core Migration Guide](/aspnet/core/migration/index).
