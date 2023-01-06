@@ -22,7 +22,7 @@ quiz:
       explanation: "Incorrect. You'll have to manually log any parameters, metrics, or artifacts."
     - content: "A combination of autologging and custom logging."
       isCorrect: false
-      explanation: "Incorrect. Though many metrics are automatically logged, you'll also have to manually log any parameters, metrics, or artifacts.."
+      explanation: "Incorrect. Custom logging will not minimize the effort."
   - content: "When you use MLflow tracking when training a model in a notebook running on Azure Machine Learning compute, on which tab in the studio can you view the model's results?"
     choices:
     - content: "Data"
@@ -30,7 +30,7 @@ quiz:
       explanation: "Incorrect. Data shows the registered data assets and data stores."
     - content: "Models"
       isCorrect: false
-      explanation: "Incorrect. Models shows the registered models."
+      explanation: "Incorrect. The Models tab shows the registered models."
     - content: "Jobs"
       isCorrect: true
       explanation: "Correct. Jobs will show the MLflow experiment runs including all metadata and logged parameters, metrics, and artifacts."
