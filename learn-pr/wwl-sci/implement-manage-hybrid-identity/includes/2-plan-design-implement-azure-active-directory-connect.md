@@ -1,4 +1,4 @@
-Azure AD Connect is a solution that bridges an organizations on-premises Active Directory with your cloud-based Azure Active Directory (Azure AD), part of Microsoft Entra. IT can synchronize identities from on-premises into Azure and ensures a consistent identity across both platforms. This connection enables services like password hash synchronization, pass-through authentication, and Seamless Single Sign-On (SSO).
+Azure AD Connect is a solution that bridges an organizations on-premises Active Directory with your cloud-based Azure Active Directory (Azure AD), part of Microsoft Entra. IT can synchronize identities from on-premises into Azure and ensures a consistent identity across both platforms. This connection enables services like password hash synchronization, pass-through authentication, and seamless single sign-on (SSO).
 
 Azure AD Connect is the Microsoft tool designed to meet and accomplish your hybrid identity goals. It provides the following capabilities:
 
@@ -18,7 +18,7 @@ Identity is the new control plane of IT security, so authentication is an organi
 
 ### Cloud authentication
 
-When you choose this authentication method, Azure AD handles users' sign-in process. When you couple with seamless Single Sign-On (SSO), users can sign into cloud apps without having to reenter their credentials. With cloud authentication, you can choose from two options:
+When you choose this authentication method, Azure AD handles users' sign-in process. When you couple with seamless single sign-on (SSO), users can sign into cloud apps without having to reenter their credentials. With cloud authentication, you can choose from two options:
 
 **Azure AD password hash synchronization (PHS)**. The simplest way to enable authentication for on-premises directory objects in Azure AD. Users can use the same username and password that they use on-premises without having to deploy any more infrastructure.
 
