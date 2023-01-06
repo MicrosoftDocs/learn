@@ -43,7 +43,7 @@ When you prefer working in notebooks on a local device, you can also make use of
 1. Select **View all properties in Azure portal**. A new tab will open to take you to the Azure Machine Learning service in the Azure portal.
 1. Copy the value of the **MLflow tracking URI**.
 
-:::image type="content" source="../media/workspace-overview.png" alt-text="Screenshot of overview page in Azure portal showing the MLflow tracking URI.":::
+:::image type="content" source="../media/workspace-overview.png" alt-text="Screenshot of overview page in Azure portal showing the MLflow tracking URI." lightbox="../media/workspace-overview.png":::
 
 6. Use the following code in your local notebook to configure MLflow to point to the Azure Machine Learning workspace, and set it to the workspace tracking URI.
 

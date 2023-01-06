@@ -48,7 +48,7 @@ As soon as `mlflow.xgboost.autolog()` is called, MLflow will start a run within 
 
 When the job has completed, you can review all logged metrics in the studio.
 
-:::image type="content" source="../media/autolog-results.png" alt-text="Screenshot of overview page of MLflow experiment with autologging in Azure Machine Learning studio.":::
+:::image type="content" source="../media/autolog-results.png" alt-text="Screenshot of overview page of MLflow experiment with autologging in Azure Machine Learning studio." lightbox="../media/autolog-results.png":::
 
 ### Use custom logging
 
@@ -86,4 +86,4 @@ Custom logging gives you more flexibility, but also creates more work as you'll 
 
 When the job has completed, you can review all logged metrics in the studio.
 
-:::image type="content" source="../media/custom-logging.png" alt-text="Screenshot overview page of MLflow experiment run with only custom logging in Azure Machine Learning studio.":::
+:::image type="content" source="../media/custom-logging.png" alt-text="Screenshot overview page of MLflow experiment run with only custom logging in Azure Machine Learning studio." lightbox="../media/custom-logging.png":::
