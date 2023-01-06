@@ -1,4 +1,4 @@
-Monitoring is an important aspect of operationalizing any technology. Considering the complexity of Kubernetes deployments, with multiple layers of abstraction hiding its implementation details and hundreds or thousands of containers hosting workloads, being able to gain a comprehensive insight into the state of the Kubernetes environment is essential for operational stability and business continuity. To accomplish this goal, companies like Contoso can use Azure Monitor. In this unit, you'll learn about Azure Monitor Container Insights and how to implement it.
+Kubernetes deployments such as Contoso's can be very complex, with multiple layers of abstraction hiding implementation details, and hundreds or thousands of containers hosting workloads. Comprehensive insight into the state of the Kubernetes environment is essential for operational stability and business continuity. Azure Monitor can be used to meet this goal. In this unit, you'll learn about Azure Monitor Container Insights and how to implement it.
 
 ## What is Azure Monitor?
 
@@ -16,7 +16,7 @@ You set up and use alerts to:
 
 - Trigger notifications via text message or email.
 - Trigger a remediation action.
-- Raise an incident and work items by taking advantage of the integration between Monitor and your internal IT Service Management platform.
+- Raise an incident and create work items by taking advantage of the integration between Monitor and your internal IT Service Management platform.
 
 ## What is Azure Monitor Container Insights?
 
@@ -47,7 +47,7 @@ You can set up Azure Monitor Container Insights for Azure Arc-enabled Kubernetes
    - An Azure Arc-enabled Kubernetes cluster. You'll need to know its Azure Resource ID.
    - An Azure Log Analytics workspace that will host the Kubernetes cluster metrics and logs.
    - Access to the cluster with a user account that has the cluster-admin role.
-   - A work or school account in the Azure Active Directory (Azure AD) tenant associated with the subscription that hosts the Azure Arc-enabled Kubernetes resource. This account should have, at minimum, the Contributor role within the Log Analytics workspace and the Azure Arc-enabled Kubernetes resource.
+   - A work or school account in the Azure Active Directory (Azure AD) tenant associated with the subscription that hosts the Azure Arc-enabled Kubernetes resource. This account should have, at minimum, the **Contributor** Azure RBAC built-in role within the Log Analytics workspace and the Azure Arc-enabled Kubernetes resource.
    - Helm 3. Consider installing its latest release.
    - The latest version of Azure Command Line Interface (CLI) or PowerShell Core.
    - Outbound connectivity to Azure. For details regarding target URLs and ports, refer to the product documentation.

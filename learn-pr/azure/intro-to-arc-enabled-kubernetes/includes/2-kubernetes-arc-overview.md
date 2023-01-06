@@ -1,4 +1,4 @@
-Before we focus on how Azure Arc optimizes management of Kubernetes clusters and their workloads, it's important to understand more about these technologies. In this unit, you'll learn about Kubernetes and Azure Arc and the key benefits that they provide. 
+Before we focus on how Azure Arc optimizes management of Kubernetes clusters and their workloads, it's important to understand more about these technologies. In this unit, you'll learn about Kubernetes and Azure Arc and the key benefits that they provide.
 
 ## What is Kubernetes?
 
@@ -21,7 +21,7 @@ In addition, the control plane delivers benefits such as:
 - Self-healing of pods.
 - Autoscaling of pods and, in virtualized scenarios, cluster nodes.
 - Automatic rolling updates and rollbacks of pod deployments.
-- Autodiscovery of new pod deployments.
+- Automatic discovery of new pod deployments.
 - Load balancing across pods running the same workloads.
 
 Effectively, Kubernetes allows you to treat your datacenter as a unified compute resource. You don't have to worry about how and where you deploy your containers, only about deploying and scaling your apps as needed.
@@ -45,14 +45,14 @@ Azure Arc is one of these solutions. It provides a set of technologies that you 
 
 ### What types of resources work with Azure Arc?
 
-Azure Arc supports Azure integration for different types of resources residing outside of Azure:
+Azure Arc supports Azure integration for different types of resources residing outside of Azure, including:
 
 - Azure Arc-enabled servers - physical and virtual machines (VMs) running Windows or Linux operating system.
 - SQL Server on Azure Arc-enabled servers - SQL Server instances running on Azure Arc-enabled servers.
 - Azure Arc-enabled Kubernetes - a wide range of Kubernetes distributions.
 - Azure Stack HCI - physical clusters with virtualized workloads and containerized workloads.
 - Azure Kubernetes Service on Azure Stack HCI - Azure Kubernetes Service (AKS) running on Azure Stack HCI clusters.
-- Azure Arc enabled data services - Azure SQL Managed Instance running on Azure Arc enabled Kubernetes or Azure Kubernetes Service on Azure Stack HCI
+- Azure Arc-enabled data services - Azure SQL Managed Instance running on Azure Arc-enabled Kubernetes or AKS on Azure Stack HCI
 
 > [!NOTE]
 > For production environments, verify that the Azure Arc features you intend to use are generally available.

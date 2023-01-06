@@ -22,17 +22,17 @@ quiz:
     choices:
     - content: "Azure Arc Kubernetes Viewer"
       isCorrect: false
-      explanation: "This role lets you view resources in a cluster/namespace, but does not allow you to connect a Kubernetes cluster to Azure Arc."
+      explanation: "This role lets you view resources in a cluster/namespace, but doesn't allow you to connect a Kubernetes cluster to Azure Arc."
     - content: "Azure Connected Machine Onboarding"
       isCorrect: false
-      explanation: "This role lets you onboard a physical server or virtual machine to Azure Arc-enabled servers, but does not allow you to connect a Kubernetes cluster to Azure Arc"
-    - content: "Kubernetes Cluster - Azure Arc Onboarding**"
+      explanation: "This role lets you onboard a physical server or virtual machine to Azure Arc-enabled servers, but doesn't allow you to connect a Kubernetes cluster to Azure Arc"
+    - content: "Kubernetes Cluster - Azure Arc Onboarding"
       isCorrect: true
-      explanation: "This role allow you to connect a Kubernetes cluster to Azure Arc."
+      explanation: "This role lets you to connect a Kubernetes cluster to Azure Arc."
     - content: "Azure Kubernetes Service Contributor Role"
       isCorrect: false
-      explanation: "This role allows read and write access to Azure Kubernetes Service (AKS) clusters, but does not allow you to connect a Kubernetes cluster to Azure Arc"
-  - content: "Which of the following is *not* required to connect a Kubernetes cluster to Azure Arc?"
+      explanation: "This role allows read and write access to Azure Kubernetes Service (AKS) clusters, but doesn't allow you to connect a Kubernetes cluster to Azure Arc"
+  - content: "Which of the following is NOT required to connect a Kubernetes cluster to Azure Arc?"
     choices:
     - content: "Multiple Azure subscriptions"
       isCorrect: true
@@ -45,4 +45,4 @@ quiz:
       explanation: "To connect a Kubernetes cluster to Azure Arc, the cluster must be able to connect to Azure and to the Microsoft container registry."
     - content: "Helm 3"
       isCorrect: false
-      explanation: "Helm 3 must be installed on the management computer in order to connect a Kubernetes cluster to Azure Arc.."
+      explanation: "Helm 3 must be installed on the management computer in order to connect a Kubernetes cluster to Azure Arc."

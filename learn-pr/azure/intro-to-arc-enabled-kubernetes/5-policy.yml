@@ -31,7 +31,7 @@ quiz:
       explanation: "An ingress controller provides inbound connectivity, which isn't applicable in this case."
     - content: "namespace"
       isCorrect: false
-      explanation: "A namespace is not capable of running an agent."
+      explanation: "A namespace isn't capable of running an agent."
   - content: "Which of the following is NOT a capability of Azure Policy for Kubernetes?"
     choices:
     - content: "Reporting auditing and compliance data."
@@ -43,6 +43,6 @@ quiz:
     - content: "Deploying policy definitions into the cluster as custom resources."
       isCorrect: false
       explanation: "Azure Policy for Kubernetes does deploy policy definitions into the cluster as custom resources that apply constraints."
-    - content: "Allowing secure connections to clusters from anywhere."
+    - content: "Allowing secure connections to Arc-enabled Kubernetes clusters from anywhere."
       isCorrect: true
-      explanation: "This is not a capability of Azure Policy for Kubernetes.."
+      explanation: "This isn't a capability of Azure Policy for Kubernetes."

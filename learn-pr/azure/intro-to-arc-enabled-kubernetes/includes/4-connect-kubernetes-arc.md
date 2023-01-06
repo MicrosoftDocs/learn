@@ -1,6 +1,6 @@
-Azure Arc extends the scope of Azure management plane to resources located on-premises and in other clouds. This, however, requires that you first establish an outbound connection from these resources to Azure. In this unit, you'll learn how to connect a Kubernetes cluster to Azure Arc.
+Azure Arc extends the scope of Azure management plane to resources located on-premises and in other clouds. To enable this, you must establish an outbound connection from these resources to Azure. In this unit, you'll learn how to connect a Kubernetes cluster to Azure Arc.
 
-## How to connect Kubernetes cluster to Azure Arc
+## How to connect Kubernetes clusters to Azure Arc
 
 To connect a Kubernetes cluster to Azure Arc, you deploy the Azure Arc agents for Kubernetes into the `azure-arc` namespace on the cluster. This process consists of the following high-level steps:
 

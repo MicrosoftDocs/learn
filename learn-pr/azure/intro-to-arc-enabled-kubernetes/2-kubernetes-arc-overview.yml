@@ -42,7 +42,7 @@ quiz:
       explanation: "EKS is a third-party platform that doesn't support AKS."
     - content: "Azure Stack HCI"
       isCorrect: true
-      explanation: "The only solution that allows running AKS in an on-premises data center is Azure Stack HCI."
+      explanation: "AKS clusters can be deployed on Azure Stack HCI in an on-premises data center ."
     - content: "OpenShift"
       isCorrect: false
       explanation: "OpenShift is a third-party containerization platform that doesn't support AKS."
