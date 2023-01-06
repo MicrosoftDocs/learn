@@ -12,8 +12,10 @@ In this exercise, we'll look at how you can install a technology stack like Node
 
 ```json
 "features": {
-		"ghcr.io/devcontainers/features/python:1": {}
+	"ghcr.io/devcontainers/features/node:1": {
+		"version": "18"
 	}
+}
 ```
 
 1. Save your project.
