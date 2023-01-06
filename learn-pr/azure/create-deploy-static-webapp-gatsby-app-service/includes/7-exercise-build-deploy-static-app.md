@@ -30,7 +30,7 @@ You should now see the following content rendered:
 
 You've built your site and taken it from being a Gatsby app to a set of static pages containing nothing but HTML, CSS, and JavaScript!
 
-Going into your `public/` directory, locate your rendered `about` component at `public/about/index.html`. Because of the optimization process, all whitespace has been removed and the page is represented as one long line. However, you should be able to locate the rendered title and description and it should look like this:
+From VS Code, navigate into your `public/` directory, locate your rendered `about` component at `public/about/index.html`. Because of the optimization process, all whitespace has been removed and the page is represented as one long line. However, you should be able to locate the rendered title and description and it should look like this:
 
 ```html
 // excerpt from about/index.html
@@ -56,9 +56,9 @@ git commit -m "adding About page to site"
 
 ### Create a GitHub repo and push the code
 
-1. Go to GitHub and log in. 
+1. Go to GitHub and log in.
 
-1. Navigate to the "repositories" page. 
+1. Navigate to the "repositories" page.
 
    :::image type="content" source="../media/repositories.png" alt-text="Screenshot of the repository button in GitHub.":::
 
