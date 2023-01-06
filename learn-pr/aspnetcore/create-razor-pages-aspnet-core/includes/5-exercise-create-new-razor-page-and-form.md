@@ -286,4 +286,4 @@ The following HTML is rendered by the Validation Summary Tag Helper:
 
 The `type`, `data-val-range-min`, `data-val-range-max`, and error response are dynamically set by the model's data annotations for the model's `Product.Price` property.
 
-The product creation Razor page has been created. In order to process form interactions, you'll need to modify the `PageModel` class to handle the form's HTTP POST request. Let's explore `PageModel` interactions next.
+In this unit, you built most of the product creation Razor page, but it's not done yet. In order to process form interactions, you'll need to modify the `PageModel` class to handle the form's HTTP POST request. Let's explore `PageModel` interactions next.
