@@ -4,7 +4,7 @@ Before you begin using Azure DNS to host DNS records for your domains, there a f
 
 ### Things to know about domain names in Azure
 
-Let's examine the basic characteristics for how Azure assigns and resolves your domain names. Two terms that are frequently discussed when working with domains are the _initial domain name_ and _custom domain names_.
+Let's examine how an _initial domain name_ and _custom domain names_ are implemented in Azure.
 
 - When you create an Azure subscription, Azure automatically creates an Azure Active Directory (Azure AD) domain for your subscription.
 
@@ -19,14 +19,14 @@ Let's examine the basic characteristics for how Azure assigns and resolves your 
 
    Organizations commonly implement custom domain names to enable users to access their domain by using credentials they're familiar with. 
    
-   Consider an example website for Azure Administrator Incorporated. Azure creates the initial domain name as `azureadminincorg.onmicrosoft.com`. A custom domain name for this site could be `azureadmininc.org`.
+   Consider the Azure Administrator Incorporated Azure AD domain. Azure creates the initial domain name for the Azure AD instance as `azureadminincorg.onmicrosoft.com`. A custom domain name for the instance could be `azureadmininc.org`.
 
-   :::image type="content" source="../media/custom-domain-names-8dae9b45.png" alt-text="Screenshot that shows how to create a custom domain name for a directory in the Azure portal." border="false":::
+   :::image type="content" source="../media/custom-domain-names-8dae9b45.png" alt-text="Screenshot that shows how to create a custom domain name for an Azure AD instance in the Azure portal." border="false":::
  
-- The initial domain name is intended to be used until your custom domain name is verified.
+- The initial domain name is intended to be used until your custom domain name is _verified_.
+
+- Before a custom domain name can be used by Azure AD, the custom domain name must be added to your directory and verified.
 
 - The initial domain name can't be changed or deleted, but you can add a routable custom domain name that you control.
 
 - In Azure AD, **domain names must be globally unique**. When one Azure AD directory has verified a specific domain name, other Azure AD directories can't use that same domain name.
- 
-- Before a custom domain name can be used by Azure AD, the custom domain name must be added to your directory and verified.
