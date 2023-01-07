@@ -1,4 +1,4 @@
-In this lab, you'll write the JavaScript in each of the exercises below in TypeScript, strongly typing each of the variables.
+In this lab, you'll write the JavaScript in each of the following exercises in TypeScript, strongly typing each of the variables.
 
 ### Exercise 1: Modify existing JavaScript code to have strongly typed variables
 
@@ -125,4 +125,4 @@ cd ../m02-end
 code .
 ```
 
-Open the file **module02.ts** to see the solution to this lab. See the **Lab setup** section above for more information about setting up your development environment to run the solution.
+Open the file **module02.ts** to see the solution to this lab.
