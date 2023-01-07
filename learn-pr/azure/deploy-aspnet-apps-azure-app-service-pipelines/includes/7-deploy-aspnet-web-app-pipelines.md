@@ -4,9 +4,9 @@ You've built and published the artifacts into Azure Pipelines and the required A
 
 Use the following process to deploy ASP.NET app build artifacts:
 
-1. Download the build artifacts
-1. Deploy the build artifacts into the Azure App Service web app
-1. Configure the Azure App Service web app data store settings
+1. Download the build artifacts.
+1. Deploy the build artifacts into the Azure App Service web app.
+1. Configure the Azure App Service web app data store settings.
 
 To implement these steps, use the following Azure Pipelines tasks:
 

@@ -40,7 +40,7 @@ Throughput can suffer from hot partitions when most or all of the requests go to
 
 It's important to understand the access patterns for your application to ensure that requests are spread as evenly as possible across partition key values. When throughput is provisioned in Azure Cosmos DB, it's allocated evenly across all the physical (and thus logical) partitions within a container.
 
-As an example, if you have a container with 30,000 RU/s, this workload is spread across the three physical partitions for the same three tenants mentioned earlier. So each tenant gets 10,000 RU/s. If tenant C consumes all of its 10,000 RU/s, it will be rate limited because it can't consume the throughput allocated to the other partitions. This results in poor performance for tenant C and unused compute capacity for the other tenants. Ultimately, this partition key results in a database design that can't scale.
+As an example, if you have a container with 30,000 RU/s, this workload is spread across the three physical partitions for the same three tenants mentioned earlier. So each tenant gets 10,000 RU/s. If tenant C consumes all of its 10,000 RU/s, it will be rate limited because it can't consume the throughput allocated to the other partitions. This design results in poor performance for tenant C and unused compute capacity for the other tenants. Ultimately, this partition key results in a database design that can't scale.
 
 :::image type="content" source="../media/6-hot-partition-throughput.png" alt-text="Diagram that shows a throughput hot partition." border="false":::
 
@@ -50,7 +50,7 @@ When data and requests are spread evenly, the database can grow in a way that fu
 
 ## Consider reads versus writes
 
-When you're choosing a partition key, you also need to consider whether the data is read heavy or write heavy. You should seek to distribute write-heavy data with a partition key that has high cardinality. For read-heavy workloads, ensure that queries are answered with one or a bounded number of partitions. In scenarios where the data is both write heavy and read heavy, there is a solution. We'll explore that in the next module.
+When you're choosing a partition key, you also need to consider whether the data is read heavy or write heavy. You should seek to distribute write-heavy data with a partition key that has high cardinality. For read-heavy workloads, ensure that queries are answered with one or a bounded number of partitions. In scenarios where the data is both write heavy and read heavy, there's a solution. We'll explore that in the next module.
 
 In a read-heavy workload, the way to ensure that you read data from a single partition is to use the partition key property in an equality filter on the `WHERE` clause for your queries. The following illustration shows a container that's partitioned by username. This query will hit only a single logical partition, so its performance will always be good.
 

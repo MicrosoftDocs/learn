@@ -70,7 +70,10 @@ You've now connected Storage Explorer to your Azure subscription. Leave Storage 
 
     ![Screenshot that shows the expansion of Concierge Subscription.](../media/3-storage-explorer-create-blob-1.png)
 
-1. Locate and expand the storage account that you created earlier. It should be named something similar to **mslearn12345** and ends with a different set of numbers. It has four virtual folders: **Blob Containers**, **File Shares**, **Queues**, and **Tables**.
+1. Locate and expand the storage account that you created earlier. It should be named something similar to **mslearn12345** and ends with a different set of numbers.  It has four virtual folders: **Blob Containers**, **File Shares**, **Queues**, and **Tables**.
+
+    > [!NOTE]
+    > If the storage account you created earlier isn't listed, wait a few moments and select **Refresh All** again; it can take a couple of minutes for the account to appear.
 
 1. Right-click the **Blob Containers** virtual folder to access the shortcut menu, and then select **Create Blob Container**.
 

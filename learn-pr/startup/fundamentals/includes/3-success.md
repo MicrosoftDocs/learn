@@ -1,10 +1,10 @@
-Successful startups share a number of important attributes. In this unit, you learn about some of the most common shared attributes of successful startups, and you can score your startup against them.
+Successful startups share a number of important attributes. In this unit, you'll learn about some of the most common shared attributes of successful startups, and you can score your startup against them.
 
 By understanding what makes startups succeed, you'll be able to bake some of these attributes into your startup from the very beginning.
 
 ## Non-obvious idea
 
-Every startup needs to be based on a good idea. Unfortunately for a lot of founders, the idea they decide to work on is self-evidently good. This means that a lot of other people are likely to have had the same idea, and the company will therefore most likely be competing with other startups, or even large enterprises, doing something similar.
+Every startup needs to be based on a good idea. Unfortunately for many founders, the idea they decide to work on is self-evidently good. This means that many other people are likely to have had the same idea, and the company will therefore most likely be competing with other startups, or even large enterprises, doing something similar.
 
 Some of the best startup ideas sound wild at first but are actually a good idea. This makes them a *great* startup idea, because not many people are working on the same thing.
 
@@ -18,17 +18,17 @@ The green set on the right represents all ideas that are in fact a good idea (th
 
 Not many people start off with ideas that sound absurd and are *in fact* absurd (the blue set on the left, excluding the intersect). That's good news, because the world doesn't need any more perpetual-motion-machine inventors.
 
-However, a lot of people tend to come up with ideas that are perfectly good, but are very obvious (the green set on the right, excluding the intersect). There's a good chance that many startups are working on a similar idea.
+However, many people tend to come up with ideas that are perfectly good, but are very obvious (the green set on the right, excluding the intersect). There's a good chance that many startups are working on a similar idea.
 
-Keep in mind that it's fine to have some competitors, because this validates that the opportunity exists and that there are customers who are looking for this solution. However, having a lot of direct competitors is a tough starting point for any startup, particularly if those competitors are further along in their product development, and have significant capital to maintain their market lead.
+Keep in mind that it's fine to have some competitors, because this validates that the opportunity exists and that there are customers who are looking for this solution. However, having many direct competitors is a tough starting point for any startup, particularly if those competitors are further along in their product development and have significant capital to maintain their market lead.
 
-Some of the best startup ideas exist in the intersect between these two sets. They're both a good idea (the green set) and non-obvious (the blue set). These startup ideas are counterintuitive to most people. Generally, these ideas are only visible to those with deep insights into the problem space, often acquired over long periods of time.
+Some of the best startup ideas exist in the intersection between these two sets. They're both a good idea (the green set) and non-obvious (the blue set). These startup ideas are counterintuitive to most people. Generally, these ideas are only visible to those with deep insights into the problem space, often acquired over long periods of time.
 
 If most people think your startup idea won't work, but you have some unique insight that convinces you that they're wrong and you're right, then you could be onto something.
 
 ### Case study: Airbnb
 
-When Airbnb started, a lot of smart people looked at the idea and said: "There's no way people will give their house keys to a stranger and let them stay in their house just to make a few extra bucks. It won't work, at least not at scale."
+When Airbnb started, many smart people looked at the idea and said: "There's no way people will give their house keys to a stranger and let them stay in their house just to make a few extra bucks. It won't work, at least not at scale."
 
 Of course, today we know that Airbnb is a wildly successful tech company. The unique insights of the founders gave them the ability to see past this objection and pursue a business model that most people thought wouldn't be viable.
 
@@ -36,7 +36,7 @@ Of course, today we know that Airbnb is a wildly successful tech company. The un
 
 Imagine you're trying to raise money from a venture capital fund, and you send them your pitch deck. One of the first things they'll do is consider the competitive landscape and make an assessment as to whether your startup is doing anything new, or at least different than existing competitors.
 
-Now put yourself in the shoes of the analyst at that fund. Spend half an hour doing some online research on your company's problem space, and see how many competitors you can find. Don't just look for direct competitors that are doing the same thing, but also indirect competitors that might provide an alternative solution to the same problem.
+Now put yourself in the shoes of the analyst at that fund. Spend half an hour doing some online research on your company's problem space and see how many competitors you can find. Don't just look for direct competitors that are doing the same thing, but also indirect competitors that might provide an alternative solution to the same problem.
 
 Does your startup stand out as doing something new and innovative, or does it appear to be one of a large number of undifferentiated competitors?
 
@@ -44,9 +44,9 @@ Does your startup stand out as doing something new and innovative, or does it ap
 
 It's fine to be a sole founder at the outset, but before long most founders realize that having a team is critical to the success of their company.
 
-The amount of [work needed to build and launch a startup is massive](https://www.alexanderjarvis.com/sole-founders-are-bad-you-cant-build-a-billion-dollar-despicable-me-startup/?azure-portal=true), and it has been shown that [sole founders struggle to cope with the workload](https://www.entrepreneur.com/article/245132?azure-portal=true).
+The amount of [work needed to build and launch a startup is massive](https://www.alexanderjarvis.com/sole-founders-are-bad-you-cant-build-a-billion-dollar-despicable-me-startup/?azure-portal=true), and it's been shown that [sole founders struggle to cope with the workload](https://www.entrepreneur.com/article/245132?azure-portal=true).
 
-More than this, startups also need a range of skill sets and perspectives, and just about every founder benefits from the moral support of being part of a team. Having people you trust as thought leadership partners within the team can help you to weather the inevitable emotional ups and downs of establishing a startup. The team helps you build the resiliency necessary to get through the most challenging periods. Moreover, these individuals can provide different approaches to problem-solving that will ultimately contribute to faster progress.
+Furthermore, startups also need a range of skill sets and perspectives, and just about every founder benefits from the moral support of being part of a team. Having people you trust as thought-leadership partners within the team can help you to weather the inevitable emotional ups and downs of establishing a startup. The team helps you build the resiliency necessary to get through the most challenging periods. Moreover, these individuals can provide different approaches to problem-solving that will ultimately contribute to faster progress.
 
 ## Task: Complete a startup skills checklist
 
@@ -75,11 +75,11 @@ If you're looking at a number of customer pain points that you could address, tr
 
 ## Scalable business model
 
-Successful startups tend to be highly scalable, meaning that they can grow rapidly. Scalable startups are able to become increasingly efficient in terms of resource requirements, as they deliver their product to an expanding customer base.
+Successful startups tend to be highly scalable, meaning that they can grow rapidly. Scalable startups can become increasingly efficient in terms of resource requirements as they deliver their product to an expanding customer base.
 
 If your business model relies on having to perform repetitive, non-scalable tasks (even doing in-person sales calls), you might face major barriers to scalability and growth. That's because these constraints might place an upper limit on the number of customers you can serve.
 
-The following simple graph illustrates a non-scalable company that's delivering services to customers. Let's say it's a graphic design business. As the company gets more customers, it does more graphic design work and generates more revenue. But at the same time, it needs to employ more graphic designers, so its costs increase proportionally. At some point, it stops growing and its revenues and costs plateau. As long as revenues exceed costs the business is making a profit, which is of course a good thing. But this isn't what scalability looks like.
+The following simple graph illustrates a non-scalable company that's delivering services to customers. Let's say it's a graphic-design business. As the company gets more customers, it does more graphic design work and generates more revenue. But at the same time, it needs to employ more graphic designers, so its costs increase proportionally. At some point, it stops growing and its revenues and costs plateau. As long as revenues exceed costs the business is making a profit, which is of course a good thing. However, this isn't what scalability looks like.
 
 :::image type="content" source="../media/learning-path-not-scalable.png" alt-text="Line chart that shows revenues exceeding costs when both reach a plateau.":::
 
@@ -87,15 +87,15 @@ Now let's look at a scalable business model.
 
 :::image type="content" source="../media/learning-path-scalable.png" alt-text="Line chart that shows revenues exceeding costs and sharply increasing.":::
 
-In a scalable company, at some point revenues become decoupled from costs. For a lot of companies, this is because they're taking advantage of the inherent scalability of the internet.
+In a scalable company, at some point revenues become decoupled from costs. For many companies, this is because they're taking advantage of the inherent scalability of the internet.
 
-If your product is software, or something that can be achieved through software, after your product is built, the incremental cost of digitally delivering your product to each additional customer is very close to zero.
+If your product is software or something that can be achieved through software, after your product is built, the incremental cost of digitally delivering your product to each additional customer is very close to zero.
 
 After you've built the product and invested in developing and launching it, a scalable business model will enable your company to grow rapidly.
 
 ## Large opportunity
 
-The success of a startup is a function of volume and value – *volume* being the number of customers it can serve, and *value* represented by what those customers are willing to pay for the startup's product or service. Volume and value in turn dictate the economic rent the company is able to capture, and the overarching size of the market the startup could potentially address.
+The success of a startup is a function of volume and value; *volume* being the number of customers it can serve, and *value* represented by what those customers are willing to pay for the startup's product or service. Volume and value in turn dictate the economic rent the company is able to capture, and the overarching size of the market the startup could potentially address.
 
 Startup founders should aim to serve as large a market as possible and ensure that their product creates meaningful value for customers.
 
@@ -120,7 +120,7 @@ Make a note of any factors you can think of that affect the timing of your compa
 
 ## Tailwinds
 
-On a related note, the best ideas often benefit from *tailwinds* that help push them along. These are shifts in technology, consumer behavior, or regulations that make it easier to get your startup started (or that make it possible, if it would previously have been impossible).
+On a related note, the best ideas often benefit from *tailwinds* that help push them along. These are shifts in technology, consumer behavior, or regulations that make it easier to get your startup started (or that make it possible, if it would've previously been impossible).
 
 Uber benefited from tailwinds when it launched in 2009. The founders had identified a growing acceptance of the sharing economy by consumers, as well as the emergence of ubiquitous GPS and high-quality maps on smartphones (noting that the first iPhone was released in 2007).
 
@@ -136,11 +136,11 @@ The cheapest way to acquire a new customer is by having an existing customer ref
 
 A large proportion of successful startups deliberately built features that make it easy for users to share their product, and this shareability contributed to their massive growth.
 
-Hotmail is a great example. The company started in 1996 and at that time was just about the first browser-based email service. Browser-based email is ubiquitous and free today, but in 1996, in the early days of the internet, nearly everyone's email address was tied to their ISP. That was inconvenient because if you changed your ISP, then you had to change your email address.
+Hotmail is a great example. The company started in 1996, and at that time was just about the first browser-based email service. Browser-based email is ubiquitous and free today, but in 1996, in the early days of the internet, nearly everyone's email address was tied to their ISP. That was inconvenient because if you changed your ISP, you had to change your email address.
 
-Hotmail decided to make their product shareable by putting a footer at the bottom of every email that read "Sent from Hotmail. Get your free email here." The result of this shareability was that a lot of people got a Hotmail address.
+Hotmail decided to make their product shareable by putting a footer at the bottom of every email that read "Sent from Hotmail. Get your free email here." The result of this shareability was that many people got a Hotmail address.
 
-Over the course of a year and a half after launching, Hotmail grew from zero users to 9 million users, and was subsequently acquired in late 1997 by Microsoft for a reported $450 million. (For more information, see [Microsoft Acquires Hotmail](https://news.microsoft.com/1997/12/31/microsoft-acquires-hotmail/?azure-portal=true), [List of mergers and acquisitions by Microsoft](https://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Microsoft?azure-portal=true), and [How Hotmail changed Microsoft (and email) forever](https://arstechnica.com/information-technology/2017/12/how-hotmail-changed-microsoft-and-email-forever/?azure-portal=true).) Today, 9 million users doesn't seem like much, because there are billions of people on the internet. But in 1997, [this represented around one out of every eight internet users](https://www.internetworldstats.com/emarketing.htm?azure-portal=true)!
+Over the course of a year and a half after launching, Hotmail grew from zero users to 9 million users, and was subsequently acquired in late 1997 by Microsoft for a reported $450 million. (For more information, check out [Microsoft Acquires Hotmail](https://news.microsoft.com/1997/12/31/microsoft-acquires-hotmail/?azure-portal=true), [List of mergers and acquisitions by Microsoft](https://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Microsoft?azure-portal=true), and [How Hotmail changed Microsoft (and email) forever](https://arstechnica.com/information-technology/2017/12/how-hotmail-changed-microsoft-and-email-forever/?azure-portal=true).) Today, 9 million users doesn't seem like much, because there are billions of people on the internet, but in 1997, [this represented around one out of every eight internet users](https://www.internetworldstats.com/emarketing.htm?azure-portal=true)!
 
 ## Task: Find ways to share your product
 
@@ -165,7 +165,7 @@ Recurring revenues are highly attractive because:
 
 ## Task: Find ways to make revenue recurring
 
-Open your smartphone or your laptop. Make a note of all the products that you've subscribed to and that you're continuing to pay for on an ongoing basis.
+Open your smartphone or your laptop. Make a note of all the products to which you've subscribed and that you're continuing to pay for on an ongoing basis.
 
 > [!TIP]
 > Ask yourself: Why do I continue to pay for this product? Look at the communications you've received from the company to see what they've done to ensure they retain you as a paying customer.
