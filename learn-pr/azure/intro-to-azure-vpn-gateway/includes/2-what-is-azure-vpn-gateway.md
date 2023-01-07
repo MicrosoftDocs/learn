@@ -4,8 +4,8 @@ An Azure VPN gateway is a specific type of virtual network gateway that is used 
 
 Azure VPN Gateway supports both point-to-site and site-to-site connections:
 
-- **Point-to-site VPN connection**. A point-to-site VPN connection can be used to connect a single computer to an Azure virtual network. A P2S connection is established by starting it from the client computer. This type of VPN connection is commonly used by remote workers with portable computers.
-- **Site-to-site VPN connection**. A site-to-site VPN connection allows you to connect one network to another network with traffic between the two networks passing across an encrypted VPN tunnel. This type of VPN connection is commonly used to connect on-premises sites to Azure or Azure virtual networks to each other.
+- **Point-to-site VPN connection**: A point-to-site VPN connection can be used to connect a single computer to an Azure virtual network. A P2S connection is established by starting it from the client computer. This type of VPN connection is commonly used by remote workers with portable computers.
+- **Site-to-site VPN connection**: A site-to-site VPN connection allows you to connect one network to another network with traffic between the two networks passing across an encrypted VPN tunnel. This type of VPN connection is commonly used to connect on-premises sites to Azure or Azure virtual networks to each other.
 
 :::image type="content" source="../images/vpn-connection-types.png" alt-text="Diagram that depicts the types of connections Azure V P N Gateway supports.":::
 
