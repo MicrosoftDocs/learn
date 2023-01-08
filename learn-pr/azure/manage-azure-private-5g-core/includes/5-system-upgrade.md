@@ -11,7 +11,7 @@ A new version of the packet core may not be compatible with the version of the u
 
 To minimize the impact of an upgrade to your network services, plan your upgrade process beforehand.
 
-Follow these guidelines as you plan:
+Follow these guidelines while you plan:
 
 - Set aside an upgrade window with sufficient time reserved.
 
@@ -40,7 +40,10 @@ Follow these guidelines as you plan:
 To upgrade a packet core instance, take these steps:
 
 1. Back up necessary deployment information.
-1. Open the **Packet Core Control Plan** resource representing the packet core instance that you want to upgrade.
+1. Open the **Packet Core Control Plan** resource representing the packet core instance that you want to upgrade, as shown in the following screenshot:
+
+   :::image type="content" source="../media/packet-core-control-plane.png" alt-text="A screenshot that shows the upper part of the Packet Core Control Plane page." border="true":::
+
 1. Select the **Upgrade version** button.
 
    The **Upgrade packet core version** box is displayed, as shown in the following screenshot:
@@ -57,7 +60,7 @@ If you're familiar with ARM templates, you can also use an ARM template to upgra
 
 ## Roll back a packet core instance
 
-If you encounter issues after an upgrade, you can roll back the packet core instance to a previous version.
+If you encounter issues after an upgrade, you can roll back the packet core instance to the previous version.
 
 The rollback process is almost the same as the upgrade process. The only difference is that you'll select a lower version to which to roll back.
 

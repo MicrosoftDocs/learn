@@ -43,7 +43,7 @@ A SIM policy defines a set of interoperability settings that can be assigned to 
 Each SIM policy includes:
 
 - Top-level settings that are applied to every SIM using the SIM policy.
-- A network scope defining the network slice and DN to which the SIM policy applies.
+- A network scope that defines the network slice and DN to which the SIM policy applies.
 
   You can use the network scope to determine the services offered to SIMs on the DN and the set of QoS characteristics that will be used to form the default QoS flow for PDU sessions (or EPS bearer for PDN connections in 4G networks).
 
@@ -68,7 +68,7 @@ For details, see [Policy control](/azure/private-5g-core/policy-control).
 
 ### Configure a service through the Azure portal
 
-Services are representations of a particular set of QoS information that you want to offer to UEs. For example, you may want to configure a service that provides higher bandwidth limits for particular traffic.
+Services are representations of a particular set of QoS information that you want to offer to the UEs. For example, you may want to configure a service that provides higher bandwidth limits for particular traffic.
 
 To create a new service, take these steps:
 
