@@ -43,7 +43,7 @@ quiz:
     choices:
     - content: "Installing different versions of Python on the Windows and Linux file systems."
       isCorrect: false
-      explanation: "Windows and each separate Linux distribution that you install each has it's own file system, with the Linux distributions running a Virtual Hard Disk (VHD) that is encapsulated and runs whatever version of Python you install independently of the version installed on Windows or a different distribution."
+      explanation: "Windows and each separate Linux distribution that you install each has its own file system, with the Linux distributions running a Virtual Hard Disk (VHD) that is encapsulated and runs whatever version of Python you install independently of the version installed on Windows or a different distribution."
     - content: "Storing a web app project on Linux, running the code for that web app on a local Linux server, while viewing the running web app in a Microsoft Edge browser on Windows, all while debugging the web app in VS Code and seeing hot reload updates."
       isCorrect: true
       explanation: "WSL creates a seamless experience between running project code in Linux, but using Windows apps like Microsoft Edge to view the project while it runs. The WSL Extension enables VS Code to debug that project code even though it's running in a Linux distribution on a separate file system, similar to if you were working in a remote container."

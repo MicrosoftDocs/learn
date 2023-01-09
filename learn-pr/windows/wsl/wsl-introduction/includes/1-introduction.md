@@ -1,6 +1,6 @@
 Experience the best of both Windows and Linux with Windows Subsystem for Linux (WSL).
 
-:::image type="content" source="../media/wsl-intro.png" alt-text="Windows 11 logo with the Linux penguin in the lower-right square.":::
+:::image type="content" source="../media/wsl-intro.png" alt-text="Illustration of a laptop running Windows with the Linux penguin sitting next to it.":::
 
 ## Learning objectives
 
