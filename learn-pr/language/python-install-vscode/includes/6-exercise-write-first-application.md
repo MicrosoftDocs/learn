@@ -72,10 +72,10 @@ Many projects start with an empty folder, which is how you'll start yours.
 
     ::: zone-end
 
-       > [!TIP]
-       > Open the command prompt or terminal as administrator to run `code .`
+    > [!TIP]
+    > Open the command prompt or terminal as administrator to run `code .`
 
-       Alternatively, you can run VS Code through the operating system UI, then use File > Open Folder to open the project folder.
+    Alternatively, you can run VS Code through the operating system UI, then use File > Open Folder to open the project folder.
 
 ## Step 2 - Create a new Python file and add code
 
