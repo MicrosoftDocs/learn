@@ -1417,3 +1417,8 @@ achievements:
   title: Ingest data streams with Azure Stream Analytics
   summary: Learn how to create Azure Stream Analytics jobs to process input data, transform it with a query, and return results.
   iconUrl: /training/achievements/azure-stream-analytics-ingest-data-streams.svg
+- uid: learn.iot.trigger-azure-event-grid-workflow-iot-device.badge
+  type: badge
+  title: Trigger an Azure Event Grid workflow from an IoT device
+  summary: Learn the basics of integrating Azure IoT Hub with Azure Event Grid to trigger a workflow when a new IoT device is added to a solution.
+  iconUrl: /training/achievements/trigger-azure-event-grid-workflow-iot-device.svg
