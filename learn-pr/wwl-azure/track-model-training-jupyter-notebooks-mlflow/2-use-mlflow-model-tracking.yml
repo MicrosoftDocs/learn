@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.track-model-training-jupyter-notebooks-mlflow.use-mlflow-model-tracking
+title: Configure MLflow for model tracking in notebooks
+metadata:
+  title: Configure MLflow for model tracking in notebooks
+  description: "Configure MLflow for model tracking in notebooks"
+  ms.date: 01/06/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-use-mlflow-model-tracking.md)]

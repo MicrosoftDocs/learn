@@ -6,12 +6,12 @@ metadata:
   unitType: exercise
   title: Exercise - Add parameters and variables to your Bicep template
   description: Learn how to build reusable templates by using parameters to accept input, and variables to store and reuse values within the template.
-  ms.date: 10/10/2022
+  ms.date: 01/06/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/6-exercise-add-parameters-variables-bicep-template.md)]

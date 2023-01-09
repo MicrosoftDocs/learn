@@ -3,9 +3,9 @@ uid: learn.azure.intro-to-arc-enabled-kubernetes.3-architecture-components
 metadata:
   title: What are the architecture, components, and characteristics of Azure Arc-enabled Kubernetes?
   description: In this unit, you'll learn about the architecture of Azure Arc-enabled Kubernetes and its benefits.
-  ms.date: 05/24/2022
-  author: micrum
-  ms.author: micrum
+  ms.date: 01/05/2023
+  author: JnHs
+  ms.author: jenhayes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom:

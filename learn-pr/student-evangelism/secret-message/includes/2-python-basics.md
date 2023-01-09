@@ -29,7 +29,7 @@ For this command, you use the assignment equal sign (`=`) operator. Anytime afte
 town = "Contosoville"
 ```
 
-Try it out! Replace the following commands in your <b>decrypt.py</b> file. (If you're wondering what the plus sign (`+`) is for: it "glues together" phrases into a longer phrase.)
+Try it out! Add the following commands to your <b>decrypt.py</b> file. (If you're wondering what the plus sign (`+`) is for: it "glues together" phrases into a longer phrase.)
 
 ```python
 

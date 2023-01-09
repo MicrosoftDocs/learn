@@ -57,6 +57,7 @@ public ActionResult<List<Pizza>> GetAll() =>
 The preceding action:
 
 * Responds only to the HTTP `GET` verb, as denoted by the `[HttpGet]` attribute.
+* Returns an `ActionResult` instance of type `List<Pizza>`. The `ActionResult` type is the base class for all action results in ASP.NET Core.
 * Queries the service for all pizza and automatically returns data with a `Content-Type` value of `application/json`.
 
 ## Retrieve a single pizza

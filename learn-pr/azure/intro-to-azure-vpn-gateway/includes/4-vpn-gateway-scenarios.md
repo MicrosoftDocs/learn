@@ -1,8 +1,8 @@
 Azure VPN gateways allow you to set up the following connections:
 
-- Connect on-premises datacenters to Azure virtual networks through a site-to-site connection.
-- Connect individual devices to Azure virtual networks through a point-to-site connection.
-- Connect Azure virtual networks to other Azure virtual networks through a network-to-network connection.
+- Connect on-premises datacenters to Azure virtual networks through a site-to-site connection
+- Connect individual devices to Azure virtual networks through a point-to-site connection
+- Connect Azure virtual networks to other Azure virtual networks through a network-to-network connection
 
 Azure VPN gateways are suitable for Adatum for the following reasons:
 

@@ -18,6 +18,7 @@ abstract:  |
   - Monitor and test your Azure Function from the Azure portal
 prerequisites: None
 iconUrl: /training/achievements/create-serverless-logic-with-azure-functions.svg
+hidden: true
 levels:
 - beginner
 roles:
