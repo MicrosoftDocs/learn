@@ -8,14 +8,21 @@ Many projects start with an empty folder, which is how you'll start yours.
 
     ::: zone pivot="windows"
 
-    ```bash
-    # Create a new folder called hello-world
-    md hello-world
-    
-    # Navigate to the hello-world folder
-    cd hello-world
+    Create a new folder called hello-world:
 
-    # Open Visual Studio Code in that folder
+    ```bash
+    md hello-world
+    ```
+
+    Navigate to the hello-world folder:
+
+    ```bash
+    cd hello-world
+    ```
+
+    Open Visual Studio Code in that folder:
+
+    ```bash
     code .
     ```
 
@@ -23,14 +30,21 @@ Many projects start with an empty folder, which is how you'll start yours.
 
     ::: zone pivot="linux"
 
+    Create a new folder called hello-world:
+
     ```bash
-    # Create a new folder called hello-world
     mkdir hello-world
+    ```
 
-    # Navigate to the hello-world folder
+    Navigate to the hello-world folder:
+
+    ```bash
     cd hello-world
+    ```
 
-    # Open Visual Studio Code in that folder
+    Open Visual Studio Code in that folder:
+
+    ```bash
     code .
     ```
 
@@ -38,20 +52,30 @@ Many projects start with an empty folder, which is how you'll start yours.
 
     ::: zone pivot="macos"
 
+    Create a new folder called hello-world:
+
     ```bash
-    # Create a new folder called hello-world
     mkdir hello-world
+    ```
 
-    # Navigate to the hello-world folder
+    Navigate to the hello-world folder:
+
+    ```bash
     cd hello-world
+    ```
 
-    # Open Visual Studio Code in that folder
+    Open Visual Studio Code in that folder:
+
+    ```bash
     code .
     ```
 
     ::: zone-end
 
-Alternately, you can run VS Code through the operating system UI, then use File > Open Folder to open the project folder.
+Alternatively, you can run VS Code through the operating system UI, then use File > Open Folder to open the project folder.
+
+> [!TIP]
+> Open the command prompt or terminal as administrator to run `code .`:
 
 ## Step 2 - Create a new Python file and add code
 
@@ -73,7 +97,7 @@ With Visual Studio Code open to your empty folder, you'll now create a Python fi
     print('Hello, World!')
     ```
 
-1. Save the file by selecting **File** and **Save** <kbd>**Ctrl**+**S**</kbd>.
+1. Save the file by selecting **File** and **Save** (or <kbd>**Ctrl**+**S**</kbd>).
 
     :::image type="content" source="../media/visual-studio-code-save-file.png" alt-text="Screenshot of file menu with Save highlighted.":::
 
