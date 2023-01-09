@@ -8,74 +8,74 @@ Many projects start with an empty folder, which is how you'll start yours.
 
     ::: zone pivot="windows"
 
-    Create a new folder called hello-world:
+    1. Create a new folder called hello-world:
 
-    ```bash
-    md hello-world
-    ```
+       ```bash
+       md hello-world
+       ```
 
-    Navigate to the hello-world folder:
+    1. Navigate to the hello-world folder:
 
-    ```bash
-    cd hello-world
-    ```
+       ```bash
+       cd hello-world
+       ```
 
-    Open Visual Studio Code in that folder:
+    1. Open Visual Studio Code in that folder:
 
-    ```bash
-    code .
-    ```
+       ```bash
+       code .
+       ```
 
     ::: zone-end
 
     ::: zone pivot="linux"
 
-    Create a new folder called hello-world:
+    1. Create a new folder called hello-world:
 
-    ```bash
-    mkdir hello-world
-    ```
+       ```bash
+       mkdir hello-world
+       ```
 
-    Navigate to the hello-world folder:
+    1. Navigate to the hello-world folder:
 
-    ```bash
-    cd hello-world
-    ```
+       ```bash
+       cd hello-world
+       ```
 
-    Open Visual Studio Code in that folder:
+    1. Open Visual Studio Code in that folder:
 
-    ```bash
-    code .
-    ```
+       ```bash
+       code .
+       ```
 
     ::: zone-end
 
     ::: zone pivot="macos"
 
-    Create a new folder called hello-world:
+    1. Create a new folder called hello-world:
 
-    ```bash
-    mkdir hello-world
-    ```
+       ```bash
+       mkdir hello-world
+       ```
 
-    Navigate to the hello-world folder:
+    1. Navigate to the hello-world folder:
 
-    ```bash
-    cd hello-world
-    ```
+       ```bash
+       cd hello-world
+       ```
 
-    Open Visual Studio Code in that folder:
+    1. Open Visual Studio Code in that folder:
 
-    ```bash
-    code .
-    ```
+       ```bash
+       code .
+       ```
 
     ::: zone-end
 
-Alternatively, you can run VS Code through the operating system UI, then use File > Open Folder to open the project folder.
+    > [!TIP]
+    > Open the command prompt or terminal as administrator to run `code .`
 
-> [!TIP]
-> Open the command prompt or terminal as administrator to run `code .`:
+    Alternatively, you can run VS Code through the operating system UI, then use File > Open Folder to open the project folder.
 
 ## Step 2 - Create a new Python file and add code
 

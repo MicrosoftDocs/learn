@@ -2,7 +2,7 @@ When Visual Studio Code is installed, you can install the Python extension, and,
 
 ## Install the Python extension for Visual Studio Code
 
-Visual Studio Code is a powerful code editor and a lightweight general-purpose [Integrated Development Environment](https://wikipedia.org/wiki/Integrated_development_environment?azure-portal=true) (IDE) with a wide range of extensions available to provide functionality in various programming languages. The Python extension for Visual Studio Code provides visual cues, such as color coding and autocomplete, and debugging tools to help you write better Python code, and to write code faster. This exercise installs the Python extension to your existing VS Code application.
+Visual Studio Code is a powerful code editor and a lightweight general-purpose [integrated development environment](https://wikipedia.org/wiki/Integrated_development_environment?azure-portal=true) (IDE) with a wide range of extensions available to provide functionality in various programming languages. The Python extension for Visual Studio Code provides visual cues, such as color coding and autocomplete, and debugging tools to help you write better Python code, and to write code faster. This exercise installs the Python extension to your existing VS Code application.
 
 1. In Visual Studio Code, select **View** > **Extensions** to open the Extensions view.
 
