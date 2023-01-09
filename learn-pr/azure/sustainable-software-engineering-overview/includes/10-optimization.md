@@ -18,7 +18,7 @@ The same application measured at different times will result in different amount
 
 ## Energy
 
-The your application consumes may vary every time it runs; this change may be something you want to take as an optimization signal, or it may be something you want to control.
+The energy your application consumes may vary every time it runs; this change may be something you want to take as an optimization signal, or it may be something you want to control.
 
 The same application run on different hardware may result in different amounts of energy consumed because of the differences in energy efficiency between the hardware components.
 
