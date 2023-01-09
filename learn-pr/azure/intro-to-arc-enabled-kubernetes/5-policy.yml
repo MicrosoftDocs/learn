@@ -3,9 +3,9 @@ uid: learn.azure.intro-to-arc-enabled-kubernetes.5-policy
 metadata:
   title: Integrate an Azure Arc-enabled Kubernetes cluster with Azure Policy for Kubernetes
   description: In this unit, you'll learn about Azure Policy for Kubernetes and how to implement it.
-  ms.date: 05/24/2022
-  author: micrum
-  ms.author: micrum
+  ms.date: 01/05/2023
+  author: JnHs
+  ms.author: jenhayes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom:
@@ -31,18 +31,18 @@ quiz:
       explanation: "An ingress controller provides inbound connectivity, which isn't applicable in this case."
     - content: "namespace"
       isCorrect: false
-      explanation: "A namespace is not capable of running an agent."
-  - content: "Which of the following types of Kubernetes environments is NOT directly supported by Azure Policy for Kubernetes?"
+      explanation: "A namespace isn't capable of running an agent."
+  - content: "Which of the following is NOT a capability of Azure Policy for Kubernetes?"
     choices:
-    - content: "Azure Kubernetes Service running on Azure Stack HCI"
+    - content: "Reporting auditing and compliance data."
       isCorrect: false
-      explanation: "This type of Kubernetes environment is supported."
-    - content: "Azure Arc-enabled Kubernetes"
+      explanation: "Azure Policy for Kubernetes reports this data to Azure Policy, allowing you to review status via the Azure portal."
+    - content: "Checking periodically for Azure Policy assignments"
       isCorrect: false
-      explanation: "This type of Kubernetes environment is supported."
-    - content: "AKS Engine"
+      explanation: "Azure Policy for Kubernetes checks regularly for assignments targeting the Kubernetes cluster."
+    - content: "Deploying policy definitions into the cluster as custom resources."
       isCorrect: false
-      explanation: "This type of Kubernetes environment is supported."
-    - content: "OpenShift"
+      explanation: "Azure Policy for Kubernetes does deploy policy definitions into the cluster as custom resources that apply constraints."
+    - content: "Allowing secure connections to Arc-enabled Kubernetes clusters from anywhere."
       isCorrect: true
-      explanation: "This type of Kubernetes environment isn't directly supported, although it may be supported if the cluster has the Azure Arc-enabled Kubernetes agent installed."
+      explanation: "This isn't a capability of Azure Policy for Kubernetes."

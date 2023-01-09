@@ -4,7 +4,7 @@ title: Exercise - Decode a full word with a Caesar cipher
 metadata:
   title: Exercise - Decode a full word with a Caesar cipher
   description: Create a function to loop through all letters in a word and decipher the entire word by using a Caesar cipher.
-  ms.date: 04/14/2021
+  ms.date: 12/02/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
