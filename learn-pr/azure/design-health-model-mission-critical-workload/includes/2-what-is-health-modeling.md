@@ -15,8 +15,8 @@ Health model **uses set indicators to represent health status**, which makes it 
 
 To do the health modeling exercise, you must have a deep understanding of the system and its expected performance. A _layered model_ is recommended to  reflect the health of the application holistically and at a granular level. The layers represent the hierarchical workload structure that includes the application and its dependencies. 
 
-- At the top layer, health represents user interaction or flows with the application. Think about which flows are on the critical path and the ones that aren't. 
-- At lower layers, health of the individual application components must be defined in the keeping in mind the key non-functional requirements. **Map the dependencies** between functional and logical components. Also, map the dependencies between Azure resources that application components use.
+- At the top layer, health represents user interaction or flows within the application. Think about which flows are on the critical path and the ones that aren't. 
+- At lower layers, health of the individual application components must be defined keeping in mind the key non-functional requirements. **Map the dependencies** between functional and logical components. Also, map the dependencies between Azure resources that application components use.
 - At the foundational layer, health of the Azure resources, which are used by the application, must be considered.
 
 The process of modeling health is a top-down design activity that starts by defining all user flows, mapping dependencies, and quantifying heath states to the flows.

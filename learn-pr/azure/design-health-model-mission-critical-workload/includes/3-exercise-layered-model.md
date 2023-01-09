@@ -2,14 +2,14 @@ In this exercise, your task is to design a layered health model for an example a
 
 ## Example application
 
-The example for this exercise is the internal web application used by Contoso Shoes. The application allows employees to browse a catalog of products, update individual items in the catalog, and interact with other users by creating comments in the application.
+The example for this exercise is a web application used by Contoso Shoes. The application allows employees to browse a catalog of products, update individual items in the catalog, and interact with other users by creating comments in the application.
 
 The operations team at Contoso Shoes has identified two critical business requirements for this application. Employees must be able to:
 
 - Interact with the catalog by displaying lists of items and by browsing items.
 - Create comments for individual items for other users to see.
 
-The health model should at least include those two critical operation.
+The health model should at least include those two critical operations.
 
 ## Architecture
 
@@ -17,10 +17,10 @@ The health model should at least include those two critical operation.
 
 ### Components
 
-- **Front-end internal web application**: The user interface of this workload, which runs on **Azure Web Apps**.
+- **Front-end web application**: The user interface of this workload, which runs on **Azure Web Apps**.
 
   - *Reads from*: Catalog API, Azure Blob Storage
-  - *Writes to*: Requests coming from users, Catalog API
+  - *Writes to*: Catalog API
 
 - **Catalog API**: The API layer that the front-end web application uses for data operations on catalog items and comments. It doesn't write to the database. Instead, a message is sent to an event hub to be processed asynchronously. This component is hosted on **Azure Functions**.
 
@@ -84,7 +84,7 @@ Put the information you've gathered in a graphical representation of the health 
 
 :::image type="content" source="../media/layered-health-model.png" border="false" alt-text="Diagram that shows the architecture for this layered health model.":::
 
-From top to bottom, the Contoso Shoes internal web application health model has these layers:
+From top to bottom, the web application health model has these layers:
 
 ##### User flows
 
