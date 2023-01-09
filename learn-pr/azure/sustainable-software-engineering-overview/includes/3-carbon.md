@@ -1,6 +1,6 @@
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJFI]
 
-Being *green* means different things to different people, and that's a challenge when it comes to communication and deciding fow what to optimize. For Sustainable Software Engineering, our focus is carbon, and that's why the first principle of Sustainable Software Engineering is to build applications that are carbon efficient.
+Being *green* means different things to different people, and that's a challenge when it comes to communication and deciding for what to optimize. For Sustainable Software Engineering, our focus is carbon, and that's why the first principle of Sustainable Software Engineering is to build applications that are carbon efficient.
 
 ## What's carbon?
 
