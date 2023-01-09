@@ -2,7 +2,7 @@ It's important to understand the difference between **DNS record sets** and indi
 
 You define record sets in the Azure portal. The configuration settings depend on the record type for the set to create.
 
-Suppose you choose to create a set of `A` records (or _Address record_) to identify IP addresses associated with your domain. To create the `A` records, you need specify the TTL (time to live) and the IP addresses. The TTL value specifies how long each record is cached by clients.
+Suppose you choose to create a set of `A` records (or _Address record_) to identify IP addresses associated with your domain. To create the `A` records, you need to provide the TTL (time to live) and the IP addresses. The TTL value specifies how long each record is cached by clients.
 
 :::image type="content" source="../media/add-record-sets-e5e85778.png" alt-text="Screenshot that shows how to add a DNS record set in the Azure portal.":::
 
@@ -27,4 +27,4 @@ Let's examine some characteristics of DNS record sets.
 
 - You can create a record set that doesn't have any records. This set is called an _empty record set_.
 
-- If you have an empty record set for your domain, this set doesn't appear on the Azure DNS name servers.
+- If you have an empty record set for your domain, this set doesn't appear on your Azure DNS name servers.
