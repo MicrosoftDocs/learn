@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction
   title: Introduction to Azure Content Delivery Network (CDN)
   description: Learn what Azure Content Delivery Network (CDN) does, how it works, and when you should choose to use Azure CDN as a solution to meet your organization's needs.
-  ms.date: 02/16/2022
+  ms.date: 12/22/2022
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates

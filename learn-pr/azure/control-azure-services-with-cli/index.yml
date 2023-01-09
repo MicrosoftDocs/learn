@@ -3,7 +3,7 @@ uid: learn.control-azure-services-with-cli
 metadata:
   title: Control Azure services with the CLI
   description: Learn the steps to install the Azure CLI locally, create a website, and manage Azure resources using the CLI.
-  ms.date: 07/20/2022
+  ms.date: 12/20/2022
   author: dbradish-microsoft
   ms.author: dbradish
   ms.topic: interactive-tutorial
@@ -11,10 +11,10 @@ metadata:
 title: Control Azure services with the CLI
 summary: Install the Azure CLI locally and use it to manage Azure resources.
 abstract: | 
-  In this module, you will:
-  - Install the Azure CLI on Linux, macOS, and/or Windows
-  - Connect to an Azure subscription using the Azure CLI
-  - Create Azure resources using the Azure CLI
+  In this module, you'll:
+  - Install the Azure CLI on Linux, macOS, and/or Windows.
+  - Connect to an Azure subscription using the Azure CLI.
+  - Create Azure resources using the Azure CLI.
 prerequisites: |
   - Experience with a command-line interface, such as PowerShell or Bash
   - Knowledge of basic Azure concepts, such as resource groups

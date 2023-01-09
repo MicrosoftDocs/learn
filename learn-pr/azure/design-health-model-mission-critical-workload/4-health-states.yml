@@ -42,4 +42,4 @@ quiz:
       explanation: "When a component isn't working properly, it doesn't always mean that the business requirements are affected. For example, although a slower response time means that the user will still get a response, it needs to be investigated before it causes a complete outage."
     - content: "Yes. Not all parts of the system have the same criticality. Sometimes, suboptimal performance doesn't break the application for its users."
       isCorrect: true
-      explanation: "Not all parts of the system are equally critical. Sometimes, suboptimal performance of certain parts is acceptable and doesn't break the application for its users."
+      explanation: "It's important to distinguish between non-healthy states that will break the application for its users and states that can potentially break the user experience."

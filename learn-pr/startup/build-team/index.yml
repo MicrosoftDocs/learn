@@ -3,7 +3,7 @@ uid: learn.startups.build-team
 metadata:
   title: Build your team
   description: Find out how to build your startup team and find cofounders. Learn how to benefit from diversity in teams, mentors, and risk management measures.
-  ms.date: 02/11/2022
+  ms.date: 12/30/2022
   author: ryanmesches
   ms.author: ryanmesches
   ms.topic: interactive-tutorial
@@ -14,9 +14,9 @@ summary: >
 abstract: | 
   In this module, you'll:
   - Learn about personal attributes that are valued in startup team members.
-  - See how to bring in a cofounder.
+  - See how to bring in a co-founder.
   - Understand the functional roles that need to be filled in your startup.
-  - Find out about the advantages of cofounder agreements and founder investing.
+  - Find out about the advantages of co-founder agreements and founder investing.
 prerequisites: None
 iconUrl: /training/achievements/generic-badge.svg
 ratingEnabled: false

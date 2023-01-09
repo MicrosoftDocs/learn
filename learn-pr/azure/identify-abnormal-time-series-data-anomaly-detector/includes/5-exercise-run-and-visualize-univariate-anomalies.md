@@ -1,12 +1,12 @@
 With the raw data processed and formatted, you're now ready to run the Univariate Anomaly Detector API to find anomalies that may be present in the power meter dataset.
 
-In this exercise, you'll need Jupyter Notebook to run the code blocks below to do the following:
+In this exercise, you'll need Jupyter Notebook to run the code blocks below to:
 
 - Run the Univariate Anomaly Detector API on data from the power meter reading from the smart meter.  
 - Plot the output results on a graph.  
 - Adjust the sensitivity levels to control how fine-tuned the threshold of classifying whether or not a data point is anomalous.
 
-Let's start by setting up the environment.  Copy and replace the values in the code below for _**BLOB_CONNECTION_STRING**_, _**ANOMALY_DETECTOR_NAME**_ and _**API_KEY_ANOMALY DETECTOR**_ that you created from the setup exercise.
+Let's start by setting up the environment. Copy and replace the values in the code below for _**BLOB_CONNECTION_STRING**_, _**ANOMALY_DETECTOR_NAME**_ and _**API_KEY_ANOMALY DETECTOR**_ that you created from the setup exercise.
 
 ```python
 import time
@@ -49,7 +49,7 @@ BLOB_DATASET = ''
 
 ## Load the dataset from Blob Storage
 
-We need to load the dataset we processed in the previous exercise from the Blob Storage.  We'll be using it as input to run the Anomaly Detector API.
+We need to load the dataset we processed in the previous exercise from the Blob Storage. We'll be using it as input to run the Anomaly Detector API.
 
 ```python
 from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
@@ -70,7 +70,7 @@ for blob in blob_list:
 
 ## Create function to run Anomaly Detector API
 
-The _"**…/timeseries/last/detect**”_ url endpoint from the Univariate Anomaly Detector APIs that is used for real-time streaming data scenarios. We'll be using this API, since we're simulating a scenario where the power meter reading is continuously sending data from the smart meter device to the cloud to detect anomalies as they occur.
+The _"**…/timeseries/last/detect**”_ URL endpoint from the Univariate Anomaly Detector APIs is used for real-time streaming data scenarios. We'll be using this API, because we're simulating a scenario where the power meter reading is continuously sending data from the smart meter device to the cloud to detect anomalies as they occur.
 
 ```python
 def detect(endpoint, apikey, request_data):
@@ -82,26 +82,29 @@ def detect(endpoint, apikey, request_data):
         print(response.status_code)
         raise Exception(response.text)
 ```
+
 ## Understanding properties for finding anomalies
 
-The smart meter device reading is being ingested in a continuous manner.  As a result, the data needs to be partition to segments and send to the Anomaly Detector API using a sliding window technique. This is because the API evaluates whether the latest data points it receives in the segment to select the best model that will fit the data pattern. As the API is evaluating the data points, its algorithm is able to predict what the expected next data point will be, based on previous values in a segment.  The API uses the predicted expected value at a timestamp to determine the upper and lower margin should be from the value. These margins are boundaries that determine whether a data point is anomalies. An anomaly is found when a data point fall outside the upper and lower margin.
+The smart meter device reading is being ingested in a continuous manner. As a result, the data needs to be partitioned into segments and sent to the Anomaly Detector API using a sliding-window technique. This is because the API evaluates the latest data points it receives in the segment to select the best model that will fit the data pattern. While the API is evaluating the data points, its algorithm is able to predict what the expected next data point will be based on previous values in a segment. The API uses the predicted expected value at a timestamp to determine the upper and lower margin from the value. These margins are boundaries that determine whether a data point is anomalous. An anomaly is found when a data point falls outside the upper and lower margin.
 
 We'll use the following input parameters for the Anomaly Detector API:
-- **sensitivity**: controls how large or small the upper and lower margin should be. The higher the sensitivity level, the lower the margin. The possible values are between 0-99.
-- **granularity**: the time interval between each timestamp. The time interval must be fixed for all the data points in the time series. For example, if the power meter reading is captured every 1 minute, then the granularity is set to minutely. The possible granularity values are _minutely_, _hourly_, _daily_, _weekly_, _monthly_, _yearly_.  
-- **maxAnomalyRatio** (optional): establishes the maximum number of anomalies the API can return based on the total number of data points given. For example, if the maximum anomaly ratio is set to 0.1, then the API will only return up to 10% of the total data points as anomalies.  
+
+- **sensitivity**: Controls how large or small the upper and lower margin should be. The higher the sensitivity level, the lower the margin. The possible values are between 0-99.
+- **granularity**: The time interval between each timestamp. The time interval must be fixed for all the data points in the time series. For example, if the power meter reading is captured every minute, then the granularity is set to _minutely_. The possible granularity values are _minutely_, _hourly_, _daily_, _weekly_, _monthly_, _yearly_.  
+- **maxAnomalyRatio** (optional): Establishes the maximum number of anomalies the API can return based on the total number of data points given. For example, if the maximum anomaly ratio is set to 0.1, then the API will only return up to 10% of the total data points as anomalies.  
 
 Here are some of the output fields we'll be using from the Anomaly Detector API results:
-- **isAnomaly**.  Indicates whether an anomaly was detected in a data point
-- **ExpectedValue**.  Based on the data point patterns, the API predicts what should be the next expected value
-- **Upper margin** used to calculate upper boundary, which equals to expectedValue + (100 - marginScale)*upperMargin.  Based on the predicted expected balance, the API provides an accepted maximum boundary range the data points should fall within.
-- **Lower margin** used to calculate lower boundary, which equals to expectedValue - (100 - marginScale)*lowerMargin.  Based on the predicted expected balance, the API provides an accepted minimum boundary range the data points should fall within.
-- **isPositiveAnomaly** indicates if the actual data point is greater than the predicted expected value
-- **isNegativeAnomaly** indicates if the actual data point is lesser than the predicted expected value
+
+- **isAnomaly**: Indicates whether an anomaly was detected in a data point
+- **ExpectedValue**: Based on the data point patterns, the API predicts what should be the next expected value
+- **Upper margin**: Used to calculate upper boundary, which equals to expectedValue + (100 - marginScale)*upperMargin. Based on the predicted expected balance, the API provides an accepted maximum boundary range the data points should fall within.
+- **Lower margin**: Used to calculate lower boundary, which equals to expectedValue - (100 - marginScale)*lowerMargin. Based on the predicted expected balance, the API provides an accepted minimum boundary range the data points should fall within.
+- **isPositiveAnomaly**: Indicates if the actual data point is greater than the predicted expected value
+- **isNegativeAnomaly**: Indicates if the actual data point is lesser than the predicted expected value
 
 ## Create function to specify input & output results for Anomaly Detector API
 
-This function specifies the input data and output information needed for results from the Anomaly Detector API.  It also specifies the size of data points to be sent to the Anomaly Detector API as it's reading the real-time streaming data in a sliding window technique.
+This function specifies the input data and output information needed for results from the Anomaly Detector API. It also specifies the size of data points to be sent to the Anomaly Detector API while it's reading the real-time streaming data in a sliding window technique.
 
 ```python
 def detect_anomaly(sensitivity):
@@ -250,10 +253,11 @@ def build_figure(result, sample_data, sensitivity):
 
 ## Visualize and Evaluate Sensitivity impact to anomalies found
 
-To fully understand the role the sensitivity level plays in detecting anomalies: 
-- We'll compare the difference between the sensitivity level set at 95 vs 70. 
-- We'll see how it impacts the upper and lower margins. 
-- Finally, we'll observe the expected values vs actual data points; as well as the number of anomalies found.
+To fully understand the role the sensitivity level plays in detecting anomalies:
+
+- We'll compare the difference between the sensitivity level set at 95 vs 70.
+- We'll see how it impacts the upper and lower margins.
+- Finally, we'll observe the expected values vs actual data points, as well as the number of anomalies found.
 
 Here's an example of how setting a high severity level will show more data points with anomalies. In addition, the upper and lower margins (shown in the yellow overlay on the graph) are thinner with a higher sensitivity level.
 
@@ -262,16 +266,16 @@ Here's an example of how setting a high severity level will show more data point
 result, sensitivity = detect_anomaly(95)
 build_figure(result, BLOB_DATASET, sensitivity)
 ```
-[ ![Diagram displaying anomaly sensitivity level at 95](..\media\5-exercise-run-and-visualize-univariate-anomalies-1.png) ](..\media\5-exercise-run-and-visualize-univariate-anomalies-1.png#lightbox)
+![Diagram displaying anomaly sensitivity level at 95.](..\media\5-exercise-run-and-visualize-univariate-anomalies-1.png) ](..\media\5-exercise-run-and-visualize-univariate-anomalies-1.png#lightbox)
 
-
-Now, we'll change the sensitivity level and see the difference in the number of anomalies found.  Here's an example of how lowering the severity shows lesser anomaly data points.  Also, you can see that the upper and lower margins (shown in the yellow overlay on the graph) are thicker with a lower sensitivity level.
+Now, we'll change the sensitivity level and see the difference in the number of anomalies found.  Here's an example of how lowering the severity shows lesser anomaly data points. Also, you can see that the upper and lower margins (shown in the yellow overlay on the graph) are thicker with a lower sensitivity level.
 
 ```python
 # 70 sensitvity
 result, sensitivity = detect_anomaly(70)
 build_figure(result, BLOB_DATASET, sensitivity)
 ```
-[ ![Image alt text.](..\media\5-exercise-run-and-visualize-univariate-anomalies-2.png) ](..\media\5-exercise-run-and-visualize-univariate-anomalies-2.png#lightbox)
 
-Now that you've learned how to use the pre-trained Univariate Anomaly Detector API and adjust the sensitivity level to control boundaries of normal data patterns, you are ready to train your own custom model. In the next unit, you'll learn how easy it is to train your own anomaly detector model using your own unique data and many metrics using the Multivariate Anomaly Detector API.
+![Diagram displaying anomaly sensitivity level at 70.](..\media\5-exercise-run-and-visualize-univariate-anomalies-2.png) ](..\media\5-exercise-run-and-visualize-univariate-anomalies-2.png#lightbox)
+
+Now that you've learned how to use the pre-trained Univariate Anomaly Detector API and adjust the sensitivity level to control boundaries of normal data patterns, you're ready to train your own custom model. In the next unit, you'll learn how easy it is to train your own anomaly detector model using your unique data and many metrics using the Multivariate Anomaly Detector API.
