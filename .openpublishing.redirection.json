@@ -19624,11 +19624,8 @@
       "source_path": "learn-pr/iot/identify-abnormal-time-series-data-anomaly-detector/8-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-anomaly-detector/",
       "redirect_document_id": false
-  }
-  
-  
-    },
-    {
+  },
+  {
       "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/index.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
       "redirect_document_id": false
