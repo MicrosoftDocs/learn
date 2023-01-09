@@ -19627,5 +19627,54 @@
   }
   
   
+    },
+    {
+      "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/2-business-integration-event-grid.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/3-exercise-create-iot-hub.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/4-exercise-http-web-hook-logic-app-email.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/5-event-grid-iot-hub.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/6-exercise-configure-iot-hub-event-subscription.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/7-exercise-test-logic-app.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
+      "redirect_document_id": false
+  }
+
+
+    
   ]
 }
