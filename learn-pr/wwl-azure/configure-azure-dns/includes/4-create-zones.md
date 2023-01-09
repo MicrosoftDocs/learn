@@ -6,7 +6,7 @@ An Azure **DNS zone** hosts the DNS records for a domain. To begin hosting your 
 
 You can add a DNS zone in the Azure portal, as shown in the following image. Several configuration settings are required to create a DNS zone. In the portal, you specify the DNS zone name, number of records, resource group, zone location, associated subscription, and DNS name servers.
 
-:::image type="content" source="../media/create-zones-5c62cee1.png" alt-text="Screenshot that shows how to add a DNS zone in the Azure portal." border="false":::
+:::image type="content" source="../media/create-zones-5c62cee1.png" alt-text="Screenshot that shows how to add a DNS zone in the Azure portal.":::
 
 Take a moment to review some important characteristics about DNS zones.
 

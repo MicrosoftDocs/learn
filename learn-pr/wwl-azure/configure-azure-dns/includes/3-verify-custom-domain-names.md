@@ -8,7 +8,7 @@ After you add a custom domain name for your Azure AD instance in the Azure porta
 
 You initiate the verification process by adding a **DNS record** for your custom domain name. The DNS record type can be `MX` or `TXT`, as shown in the following image:
 
-:::image type="content" source="../media/verify-custom-domain-2a02fdb3.png" alt-text="Screenshot that shows how to add a DNS record in the Azure portal to enable verification of a new custom domain name." border="false":::
+:::image type="content" source="../media/verify-custom-domain-2a02fdb3.png" alt-text="Screenshot that shows how to add a DNS record in the Azure portal to enable verification of a new custom domain name.":::
 
 The `MX` (or _Mail exchange_) record lists mail exchange servers that accept email for your domain. The `TXT` (or _Text_) record indicates human-readable text or machine-readable data about your domain. These record types are defined in [RFC 1035](https://datatracker.ietf.org/doc/html/rfc1035#page-12).
 
