@@ -14,7 +14,7 @@ In this module, you'll:
  -  Manage Azure AD Connect
  -  Implement and manage password hash synchronization (PHS)
  -  Implement and manage pass-through authentication (PTA)
- -  Implement and manage seamless single sign-on (seamless SSO)
+ -  Implement and manage Seamless Single Sign-On (Seamless SSO)
  -  Implement and manage federation excluding manual AD FS deployments
  -  Troubleshoot synchronization errors
  -  Implement and manage Azure AD Connect Health
