@@ -21,10 +21,10 @@ quiz:
     - content: "A central data sink for logs and telemetry, which is common for global and regional resources."
       isCorrect: false
       explanation: "Although central storage for all telemetry makes data easier to analyze, using a central data sink creates a single point of failure, which is unacceptable for mission-critical applications."
-    - content: "A unified, stamp-based data sink for logs and telemetry, in which each stamp and global tier has its own sink."
+    - content: "A unified, stamp-based data store for logs and telemetry, in which each stamp and global tier has its own sink."
       isCorrect: true
       explanation: "A dedicated data sink that is shared on the global and stamp levels, is a good compromise for ease of access while eliminating a single point of failure."
-    - content: "A decentralized data sink, in which every Azure resource and every component has its own sink."
+    - content: "A decentralized data store, in which every Azure resource and every component has its own sink."
       isCorrect: false
       explanation: "Splitting data sinks by resource is inefficient and creates unnecessary overhead for analysis."
   - content: "What language is used to query Log Analytics logs and calculate health scores?"
