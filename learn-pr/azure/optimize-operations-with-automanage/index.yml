@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.optimize-operations-with-automanage
 metadata:
-  title: Optimize IT operations and management with Azure Automanage
+  title: Optimizing IT operations and management with Azure Automanage
   description: Learn how to use Azure Automanage to optimize IT operations and management.
   ms.date: 01/10/2023
   author: johnmarco
   ms.author: johnmarc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Optimize IT operations and management with Azure Automanage
+title: Optimizing IT operations and management with Azure Automanage
 summary: In this module, you'll discover how to optimize IT operations and management with Azure Automanage. 
 abstract: |
   By the end of this module, you'll be able to:
