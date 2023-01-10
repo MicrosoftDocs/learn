@@ -10,12 +10,12 @@ There are many benefits to implementing Azure Private DNS for your domain.
 
 | Benefit | Description | 
 | --- | --- |
-| **Custom DNS solution not required** | Previously, many customers created custom DNS solutions to manage DNS zones in their virtual network. You can now perform DNS zone management by using the native Azure infrastructure. Azure Private DNS removes the burden of creating and managing custom DNS solutions. |
-| **Support all common DNS records types** | Azure Private DNS supports all common DNS record types, including `A`, `AAAA`, `CNAME`, `MX`, `PTR`, `SOA`, `SRV`, and `TXT`. |
+| **No custom DNS solution required** | Previously, many customers created custom DNS solutions to manage DNS zones in their virtual network. You can now perform DNS zone management by using the native Azure infrastructure. Azure Private DNS removes the burden of creating and managing custom DNS solutions. |
+| **Support for common DNS records types** | Azure Private DNS supports all common DNS record types, including `A`, `AAAA`, `CNAME`, `MX`, `PTR`, `SOA`, `SRV`, and `TXT`. |
 | **Automatic hostname record management** | Along with hosting your custom DNS records, Azure Private DNS automatically maintains hostname records for the virtual machines in the specified virtual networks. In this scenario, you can optimize the domain names you use without needing to create custom DNS solutions or modify applications. |
 | **Hostname resolution between virtual networks** | Unlike Azure-provided host names, Azure Private DNS zones can be shared between virtual networks. This capability simplifies cross-network and service-discovery scenarios, such as virtual network peering. |
 | **Familiar tools and user experience** | To reduce the learning curve, Azure Private DNS uses well-established Azure DNS tools, including PowerShell, Azure Resource Manager (ARM) templates, and the REST API. |
 | **Split-horizon DNS support** | With Azure Private DNS, you can create zones with the same name that resolve to different answers from within a virtual network and from the public internet. A typical scenario for a split-horizon DNS is to provide a dedicated version of a service for use inside your virtual network. |
-| **Available in all Azure regions** | Azure Private DNS zones are available in all Azure regions in the Azure public cloud. |
+| **Azure region support** | Azure Private DNS zones are available in all Azure regions in the Azure public cloud. |
 
 In the next section, we'll review some common implementation scenarios for Azure Private DNS.
