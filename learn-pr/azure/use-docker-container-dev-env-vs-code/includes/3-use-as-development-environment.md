@@ -4,7 +4,7 @@ Ideally, each project is contained in its own preconfigured, containerized envir
 
 ## The Dev Containers extension
 
-The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for Visual Studio Code lets you use a Docker container as a full-featured development environment. You can use this extension to open any folder or repository in a container and take advantage of the full feature set of Visual Studio Code, like IntelliSense (completions), code navigation, and debugging.
+The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for Visual Studio Code lets you use a container as a full-featured development environment. You can use this extension to open any folder or repository in a container and take advantage of the full feature set of Visual Studio Code, like IntelliSense (completions), code navigation, and debugging.
 
 ## How the extension works
 
