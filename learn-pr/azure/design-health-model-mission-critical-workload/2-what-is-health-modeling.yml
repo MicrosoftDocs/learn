@@ -20,23 +20,23 @@ quiz:
     choices:
     - content: "Health models add contextual information to raw metrics data, so you can react more quickly to problems."
       isCorrect: true
-      explanation: "Health modeling focuses on a holistic view of the application, so you don't need to focus on raw data."
+      explanation: "Correct. Health modeling focuses on a holistic view of the application, so you don't need to focus on raw data."
     - content: "Health models look better and allow an organization to focus on the important parts."
       isCorrect: false
-      explanation: "Although the visual aspect of a health model is important, the same applies to traditional dashboards. The added value of a health model is in clearly displaying an indication of the overall health of the system."
+      explanation: "Incorrect. Although the visual aspect of a health model is important, the same applies to traditional dashboards. The added value of a health model is in clearly displaying an indication of the overall health of the system."
   - content: "Health modeling focuses on:"
     choices:
     - content: "Cloud resources and health metrics."
       isCorrect: false
-      explanation: "Although resources and metrics provide the necessary foundation of the health model, they aren't enough on their own."
+      explanation: "Incorrect. Although resources and metrics provide the necessary foundation of the health model, they aren't enough on their own."
     - content: "A holistic view of the application, including, but not limited to, cloud resources."
       isCorrect: true
-      explanation: "Health modeling focuses on the overall health status of the application rather than on raw data metrics. "
+      explanation: "Correct. Health modeling focuses on the overall health status of the application rather than on raw data metrics. "
   - content: "What does it mean when an application health model is described as *layered*?"
     choices:
-    - content: "The health model is multidimensional, the entire system is separated into layers, and you filter only for the layer that's relevant to you."
+    - content: "Incorrect. The health model is multidimensional, the entire system is separated into layers, and you filter only for the layer that's relevant to you."
       isCorrect: false
       explanation: "Filtering on a single layer isn't the purpose of a health model. A health model provides value when it's analyzed and observed as a whole."
-    - content: "A layered health model enables application health to be traced back to the health of its lower-level dependencies, which helps to quickly find the root cause of service degradation."
+    - content: "Correct. A layered health model enables application health to be traced back to the health of its lower-level dependencies, which helps to quickly find the root cause of service degradation."
       isCorrect: true
       explanation: "Each layer of the health model captures what its healthy and unhealthy states represent."
