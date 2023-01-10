@@ -1,6 +1,6 @@
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxjVW]
 
-Sustainability isn't one optimization, it's thousands. One piece of advice is to look end-to-end and take it step by step. Often putting in the effort to understand the full stack, from user experience to data center design or electricity grids, yields simple solutions that significantly improve carbon efficiency.
+Sustainability isn't one optimization, it's thousands. One piece of advice is to look end to end and take it step by step. Often putting in the effort to understand the full stack, from user experience to data center design or electricity grids, yields simple solutions that significantly improve carbon efficiency.
 
 Weigh up the effort required to decarbonize vs. the potential rewards. Just like the broader global sustainability movement, some sectors will be harder to decarbonize than others. In computing, some application domains will be harder to decarbonize than others. Some parts of your application architecture will be harder to decarbonize than others.
 
@@ -18,7 +18,7 @@ The same application measured at different times will result in different amount
 
 ## Energy
 
-The energy consumed by your application may vary every time it runs; this change may be something you want to take as an optimization signal, or it may be something you want to control.
+The energy your application consumes may vary every time it runs; this change may be something you want to take as an optimization signal, or it may be something you want to control.
 
 The same application run on different hardware may result in different amounts of energy consumed because of the differences in energy efficiency between the hardware components.
 
@@ -36,7 +36,7 @@ At some point, the cost of electricity and hardware is factored into most servic
 
 ## Networking
 
-The carbon-cost of networking is often not considered. Networking consumes electricity and requires hardware, so it's a proxy for carbon.
+The carbon-cost of networking isn't often considered. Networking consumes electricity and requires hardware, so it's a proxy for carbon.
 
 Measuring and then reducing the amount and distance your data must travel is a good proxy for reducing carbon.
 

@@ -12,7 +12,7 @@ var appServicePlanName = 'toy-product-launch-plan'
 var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
 var appServicePlanSkuName = (environmentType == 'prod') ? 'P2v3' : 'F1'
 
-resource storageAccount 'Microsoft.Storage/storageAccounts@2022-05-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
   name: storageAccountName
   location: location
   sku: {
