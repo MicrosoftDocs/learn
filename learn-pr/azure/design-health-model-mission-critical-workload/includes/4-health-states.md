@@ -12,7 +12,7 @@ Each layer should use metrics and metric thresholds for components to represent 
 
 For example, metrics might include the number of exceptions, response time, and service metrics. Application components can have dependencies on Azure resources, and even on other components. You need to factor in those health states.
 
-Here are some best practices to follow when you calculate health scores:
+Here are some best practices for calculating health scores:
 
 - Represent health states of a user flow by aggregrating granular health scores for components that participate in the flow. It should include the application component and all the mapped dependencies. Consider key non-functional requirements as coefficients.
 - Represent the health score for a user flow by using the lowest score across all mapped components. Factor in relative attainment against non-functional requirements for the user flow.

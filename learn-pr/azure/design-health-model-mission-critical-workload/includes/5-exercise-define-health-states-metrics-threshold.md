@@ -19,18 +19,18 @@ Based on the implementation and functional requirements, identify the applicatio
 If any of those components become unhealthy, the user flow is expected to become unhealthy.
 
 > [!NOTE]
-> Some applications can operate in a special *degraded* mode. For example, if Contoso Shoes implements local browser caching, employees who are using the internal web application can create comments, but comments can't be sent and the customer view isn't updated until the Catalog API becomes healthy (which the browser can continuously check).
+> Some applications can operate in a special *degraded* mode. For example, if Contoso Shoes implements local browser caching, employees who are using the web application can create comments, but comments can't be sent and the customer view isn't updated until the Catalog API becomes healthy, which the browser can continuously check.
 
 ## Application component health state
 
-Determine the metrics that contribute to the component's health state. For this step, you'll need to know the functionality of the component. Ask questions like:
+Determine metrics that contribute to the component's health state. For this step, you'll need to know the functionality of the component. Ask questions like:
 
 - *What processing time in the API is acceptable to maintain a good user experience?*
 - *Are there any expected errors? What's the "normal" error rate?*
 - *What's the "normal" processing time? What does it mean if processing time is higher than normal?*
 - *What happens to write operations if Azure Cosmos DB is unreachable?*
 
-These questions should lead you to specific and measurable thresholds for key metrics. For example, you might consider these threshold values for Catalog API.
+These questions should lead you to specific and measurable thresholds for key metrics. For example, you might consider these threshold values for the Catalog API component.
 
 |Metrics and threshold|Health state|
 |---|---|
@@ -38,7 +38,7 @@ These questions should lead you to specific and measurable thresholds for key me
 |Response Time < 300 ms</br> Failed request count < 50 | Degraded|
 |Response Time > 300 ms</br> Failed request count > 50 | Unhealthy|
 
-You can get the values from an application monitoring solution, like Application Insights.
+You can get the values from an application monitoring solution, such as Application Insights.
 
 ## Azure resource health state
 
@@ -65,4 +65,4 @@ After you have evaluated all layers of the application, you should have a list o
 | Azure Event Hubs | Processing backlog length (outgoing/incoming messages) | < 3 | 3-20 |  > 20 |
 | Azure Blob Storage | Average latency (ms) | < 100 | 100-200 | > 200 |
 
-In this example, the error tolerance for the front-end web application and the Catalog API is different. This difference relates to the technical understanding of the application. All front-end errors should be handled client-side, so there's a zero threshold. However, on the API layer, 10 exceptions are allowedto account for user-caused errors (such as *404 - Not Found*) that don't necessarily indicate a health issue.
+In this example, the error tolerance for the front-end web application and the Catalog API is different. This difference relates to the technical understanding of the application. All front-end errors should be handled client-side, so there's a zero threshold. However, on the API layer, 10 exceptions are allowed to account for user-caused errors (such as *404 - Not Found*) that don't necessarily indicate a health issue.

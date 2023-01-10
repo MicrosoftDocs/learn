@@ -117,7 +117,7 @@ CatalogServiceHealthStatus()
 
 ## Set up query-based alerts
 
-Alerts are an important to raise immediate attention to issues that reflect or affect health state. Whenever there is a change in health state, either to a degraded (yellow) state or to an unhealthy (red) state, notifications should be sent to accountable team. Set alerts at the root node of the health model to immediately become aware of any business-level change in the health state of the solution. Then, you can look at health model visualizations to get more information and to troubleshoot.
+Alerts raise immediate attention to issues that reflect or affect health state. Whenever there is a change in health state, either to a degraded (yellow) state or to an unhealthy (red) state, notifications should be sent to accountable team. Set alerts at the root node of the health model to immediately become aware of any business-level change in the health state of the solution. Then, you can look at health model visualizations to get more information and to troubleshoot.
 
 The example uses Azure Monitor alerts to drive automated actions in response to changes in application health state.
 

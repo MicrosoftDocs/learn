@@ -53,7 +53,7 @@ For this exercise, our health model has three layers: user flows, application co
 Starting at the top of the architecture, think about the possible *user flows* based on the expected functionality of the application. Try to abstract the technical details and Azure services, and evaluate the flows from a user's perspective. 
 
 - *What processes are critical?*
-- *How do your employees use the application to achieve business goals?*
+- *How do the employees use the application to achieve business goals?*
 
 Based on the requirements identified by the operations team, you should have at least two user flows in the top layer: **List catalog items** and **Add comment**.
 
@@ -64,16 +64,16 @@ If you can think of more, include them in your health model.
 Move down a layer and evaluate the application components. Begin by asking questions, such as:
 
 - *"Which part of my application makes this flow work?"*
-- *"Which microservices or components contribute to fulfilling requests in this flow?"*
+- *"Which microservices or components participate in this flow?"*
 - *"Will this flow still work if this part fails?*"
 
 The aim is to identify application components at a technical level that contribute to each user flow. These components can be APIs, background workers, microservices, and so on.
 
-This workload has at least three application components that contribute to the two user flows: **Front-end**,  **Catalog API**, and a **Background Processor**.
+This workload has at least three application components that participate in the two identified user flows: **Front-end**,  **Catalog API**, and a **Background Processor**.
 
 ##### Azure resources
 
-The bottom layer contains the Azure resources used by  the individual application components. For this exercise, the components and resources are described in the [Components](#components) section. If you look at the architecture diagram and read the component description, it should be clear what those resources are.
+The bottom layer contains the Azure resources used by the individual application components. For this exercise, the components and resources are described in the [Components](#components) section. 
 
 > [!NOTE]
 > A real-world scenario probably will have more services and have more complicated relationships between them. A key to building a successful health model is to identify which parts are critical and how each component contributes to the overall health of the system.
