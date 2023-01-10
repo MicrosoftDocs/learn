@@ -8,14 +8,14 @@ Azure Monitor Metrics is a feature of Azure Monitor that collects numeric data f
 
 Use Metrics Explorer to interactively analyze the data in your metric database and chart the values of multiple metrics over time. You can pin the charts to a dashboard to view them with other visualizations. You can also retrieve metrics by using the Azure monitoring REST API.
 
-:::image type="content" source="../media/azure-metrics-navigation-example-a13fde6f.png" alt-text="azure-metrics-navigation-example.":::
+:::image type="content" source="../media/azure-metrics-navigation-example-a13fde6f.png" alt-text="Screenshot of Azure metrics navigation example.":::
  Behind the scene, log-based metrics translate into log queries. Their retention matches the retention of events in underlying logs. For Application Insights resources, logs are stored for 90 days.
 
 ## Types of metrics
 
 There are multiple types of metrics supported by Azure Monitor Metrics:
 
-:::image type="content" source="../media/azure-monitor-metrics-example-23e23235.png" alt-text="azure-monitor-metrics-example":::
+:::image type="content" source="../media/azure-monitor-metrics-example-23e23235.png" alt-text="Screenshot of Azure monitor metrics example.":::
 
 
  -  **Native metrics** use tools in Azure Monitor for analysis and alerting.
@@ -61,7 +61,8 @@ You can create dashboards instantaneously by importing existing charts directly 
 
 Azure Monitor collects metrics from the following sources.
 
-:::image type="content" source="../media/metrics-data-collection-overview-60fc0104.png" alt-text="Screenshot showing different sources for metrics."::: <br>
+:::image type="content" source="../media/metrics-data-collection-overview-60fc0104.png" alt-text="Screenshot showing different sources for metrics.":::
+
 
 A common type of log entry is an event, which is collected sporadically. Events are created by an application or service and typically include enough information to provide complete context on their own. For example, an event can indicate that a particular resource was created or modified, a new host started in response to increased traffic, or an error was detected in an application.<br>
 
