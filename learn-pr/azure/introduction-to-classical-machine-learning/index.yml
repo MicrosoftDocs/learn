@@ -6,6 +6,7 @@ metadata:
   ms.date: 05/25/2021
   author: TomReidNZ
   ms.author: jasdeb
+  manager: scottpolly
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build classical machine learning models with supervised learning
@@ -26,6 +27,7 @@ roles:
 - student
 products: 
 - azure
+- azure-machine-learning
 subjects:
 - machine-learning
 units:
