@@ -64,7 +64,7 @@ Azure Monitor collects metrics from the following sources.
 :::image type="content" source="../media/metrics-data-collection-overview-60fc0104.png" alt-text="Screenshot showing different sources for metrics.":::
 
 
-A common type of log entry is an event, which is collected sporadically. Events are created by an application or service and typically include enough information to provide complete context on their own. For example, an event can indicate that a particular resource was created or modified, a new host started in response to increased traffic, or an error was detected in an application.<br>
+A common type of log entry is an event, which is collected sporadically. Events are created by an application or service and typically include enough information to provide complete context on their own. For example, an event can indicate that a particular resource was created or modified, a new host started in response to increased traffic, or an error was detected in an application.
 
 Because the format of the data can vary, applications can create custom logs by using the structure that they need. Metric data can even be stored in Logs to combine them with other monitoring data for trending and other data analysis.
 
