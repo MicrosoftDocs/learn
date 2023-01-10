@@ -9,7 +9,7 @@ Now that you have reviewed this module, you should be able to:
 
 ## Resources
 
-To learn more about some of the topics we've examined in this module, check out the following links to documentation.
+To learn more about some of the idea we've examined in this module, check out the following links to documentation.
 
  -  [Enable combined security information registration in Azure Active Directory](/azure/active-directory/authentication/howto-registration-mfa-sspr-combined)
  -  [Create a resilient access control management strategy in Azure AD](/azure/active-directory/authentication/concept-resilient-controls)
@@ -22,5 +22,5 @@ To learn more about some of the topics we've examined in this module, check out 
  -  [Authentication methods in Azure Active Directory - phone options](/azure/active-directory/authentication/concept-authentication-phone-options)
  -  [Conceptual overview of Azure AD Password Protection](/azure/active-directory/authentication/concept-password-ban-bad-on-premises)
  -  [Enable on-premises Azure Active Directory Password Protection](/azure/active-directory/authentication/howto-password-ban-bad-on-premises-operations)
- -  [Step-By-Step: Implementing Azure AD Password Protection On-Premises](https://techcommunity.microsoft.com/t5/itops-talk-blog/step-by-step-implementing-azure-ad-password-protection-on/ba-p/563342)
+ -  [Step-By-Step: Implementing Azure AD Password Protection on-premises](https://techcommunity.microsoft.com/t5/itops-talk-blog/step-by-step-implementing-azure-ad-password-protection-on/ba-p/563342)
  -  [Single sign-on using Kerberos for Application Proxy applications](/azure/active-directory/app-proxy/application-proxy-configure-single-sign-on-with-kcd)
