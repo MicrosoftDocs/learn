@@ -42,6 +42,6 @@ Here are the details of this configuration:
 
 - Reverse DNS queries are scoped to the same virtual network.
 
-   - A reverse DNS (PTR) query from a virtual machine in Virtual network 2 (resolution) for a virtual machine in Virtual network 1 (registration) receives an Azure DNS response containing the NXDOMAIN of the virtual machine.
+   - A reverse DNS (PTR) query from a virtual machine in Virtual network 2 (resolution) for a virtual machine in Virtual network 1 (registration) receives an Azure DNS response containing the `NXDOMAIN` of the virtual machine. `NXDOMAIN` is an error message that indicates the queried domain doesn't exist.
    
    - A reverse DNS (PTR) query from a virtual machine in Virtual network 1 (registration) for a virtual machine also in Virtual network 1 receives the FQDN for the virtual machine.
