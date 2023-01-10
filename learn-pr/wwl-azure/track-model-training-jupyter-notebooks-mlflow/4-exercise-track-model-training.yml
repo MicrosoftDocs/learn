@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.track-model-training-jupyter-notebooks-mlflow.exercise-track-model-training
+title: Exercise - Track model training
+metadata:
+  title: Exercise - Track model training
+  description: "Exercise - Track model training"
+  ms.date: 01/06/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-track-model-training.md)]

@@ -19579,6 +19579,99 @@
       "source_path": "learn-pr/wwl-data-ai/design-model-deployment-solution/6-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/design-model-deployment-solution/5-summary",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "learn-pr/iot/identify-abnormal-time-series-data-anomaly-detector/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-anomaly-detector/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/identify-abnormal-time-series-data-anomaly-detector/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-anomaly-detector/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/identify-abnormal-time-series-data-anomaly-detector/2-what-is-anomaly-detection.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-anomaly-detector/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/identify-abnormal-time-series-data-anomaly-detector/3-exercise-setup-azure-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-anomaly-detector/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/identify-abnormal-time-series-data-anomaly-detector/4-exercise-send-data-to-cloud.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-anomaly-detector/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/identify-abnormal-time-series-data-anomaly-detector/5-exercise-run-and-visualize-univariate-anomalies.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-anomaly-detector/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/identify-abnormal-time-series-data-anomaly-detector/6-exercise-train-and-run-multivariate-model.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-anomaly-detector/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/identify-abnormal-time-series-data-anomaly-detector/7-exercise-evaluate-and-visualize-anomaly-contributors.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-anomaly-detector/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/identify-abnormal-time-series-data-anomaly-detector/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-anomaly-detector/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/2-business-integration-event-grid.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/3-exercise-create-iot-hub.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/4-exercise-http-web-hook-logic-app-email.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/5-event-grid-iot-hub.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/6-exercise-configure-iot-hub-event-subscription.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/7-exercise-test-logic-app.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
+      "redirect_document_id": false
+  }
+
+
+    
   ]
 }
