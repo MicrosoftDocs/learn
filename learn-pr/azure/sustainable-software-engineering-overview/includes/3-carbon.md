@@ -1,8 +1,8 @@
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJFI]
 
-Being _green_ means different things to different people, and that's a challenge when it comes to communication and deciding what to optimize for. For Sustainable Software Engineering, our focus is carbon, and that's why the first principle of Sustainable Software Engineering is to build applications that are carbon efficient.
+Being *green* means different things to different people, and that's a challenge when it comes to communication and deciding for what to optimize. For Sustainable Software Engineering, our focus is carbon, and that's why the first principle of Sustainable Software Engineering is to build applications that are carbon efficient.
 
-## What is carbon?
+## What's carbon?
 
 Greenhouse gases (GHG) act as a blanket that increases the Earth's temperature, which is a natural phenomenon. However, due to human activities, the global climate is changing much faster than animals and plants can adapt. How human society will adapt is still an open question.
 
@@ -20,7 +20,7 @@ To achieve this, we need to start immediately reducing our carbon emissions to a
 
 ## Don't waste carbon
 
-We will always emit carbon through our activities; our goal is that for each gram of carbon we emit into the atmosphere, we make sure we extract the most value from it as possible.
+We'll always emit carbon through our activities; our goal is that for each gram of carbon we emit into the atmosphere, we make sure we extract the most value from it as possible.
 
 To be *carbon-efficient* is to minimize the amount of carbon emitted per unit of work.
 
