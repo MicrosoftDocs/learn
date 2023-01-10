@@ -4,7 +4,7 @@ title: Enable Azure Automanage best practices
 metadata:
   title: Enable Azure Automanage best practices
   description: Describe how to deploy Azure Automanage best practices through the Azure portal, Azure Policy, and ARM.
-  ms.date: 12/09/2022
+  ms.date: 01/10/2023
   author: johnmarco
   ms.author: johnmarc
   ms.topic: interactive-tutorial

@@ -6,7 +6,7 @@ Contoso, Ltd. is a midsize financial services company in London with a branch of
 
 After completing this module, you'll be able to:
 
-- Describe how Azure Automanage best practices can optimize the operations of Windows Server and Linux virtual machines.
+- Describe how Azure Automanage best practices can optimize the operations and management of Windows Server and Linux virtual machines.
 - Explain the different services available through Azure Automanage.
 - Create and assign a custom configuration profile for Azure Automanage machines.
 - Describe how to extend Azure Automanage capabilities to non-Azure infrastructure using Azure Arc.
