@@ -11,7 +11,8 @@ metadata:
 title: Modernize .NET and Java apps
 prerequisites: |
   * Have a basic understanding of Azure, cloud concepts, and services.
-summary: ""
+summary: |
+  Migrate app workloads to the cloud by learning how to assess your migration and move your app and data to the cloud. Learn how to monitor the health and performance of your app.
 iconUrl: /training/achievements/modernize-net-java.svg
 levels:
 - intermediate
