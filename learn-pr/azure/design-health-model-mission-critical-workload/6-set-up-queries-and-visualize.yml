@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.design-health-model-mission-critical-workload.set-up-queries-and-visualize
+title: Collect, query, and visualize health states
+metadata:
+  title: Collect, query, and visualize health states
+  description: Learn how to collect data, run queries, and visualize health states in a health model.
+  ms.date: 01/12/2022
+  author: msimecek
+  ms.author: prwilk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-set-up-queries-and-visualize.md)]
+
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "Where should system components send their telemetry?"
+    choices:
+    - content: "A central data sink for logs and telemetry, which is common for global and regional resources."
+      isCorrect: false
+      explanation: "Incorrect. Although central storage for all telemetry makes data easier to analyze, using a central data sink creates a single point of failure, which is unacceptable for mission-critical applications."
+    - content: "A unified, stamp-based data store for logs and telemetry, in which each stamp and global tier has its own sink."
+      isCorrect: true
+      explanation: "Correct. A dedicated data sink that is shared on the global and stamp levels, is a good compromise for ease of access while eliminating a single point of failure."
+    - content: "A decentralized data store, in which every Azure resource and every component has its own sink."
+      isCorrect: false
+      explanation: "Incorrect. Splitting data sinks by resource is inefficient and creates unnecessary overhead for analysis."
+  - content: "What language is used to query Log Analytics logs and calculate health scores?"
+    choices:
+    - content: "Structured Query Language (SQL)"
+      isCorrect: false
+      explanation: "Incorrect. SQL is commonly used in querying relational databases. Although the Log Analytics query format looks similar, it has a different syntax."
+    - content: "Transact-SQL (T-SQL)"
+      isCorrect: false
+      explanation: "Incorrect. T-SQL is an extension of the SQL language and is used to interact with relational databases."
+    - content: "Kusto Query Language (KQL)"
+      isCorrect: true
+      explanation: "Correct. KQL is used to query Log Analytic logs. It uses a hierarchy that's similar to SQL, but it has a different syntax."
+  - content: "What's the best dashboard technology for health modeling?"
+    choices:
+    - content: "Dashboard technology is optimized for different purposes, so the best option for you depends on your needs."
+      isCorrect: true
+      explanation: "Correct. Azure offers multiple options when it comes to using dashboards, and each can be suitable for a different purpose. The correct approach is to evaluate the visualization needs of the health model, and then choose a solution."
+    - content: "Azure Dashboards"
+      isCorrect: false
+      explanation: "Incorrect. Azure Dashboards is a suitable technology for using dashboards, but it might not fully support all necessary customizations."
+    - content: "Azure Managed Grafana"
+      isCorrect: false
+      explanation: "Incorrect. Azure Managed Grafana is a powerful dashboard technology that has rich customization options, but using it to build and manage the right visualization is more complex."
