@@ -4,7 +4,7 @@ In the health model structure, start by evaluating the layers starting at the to
 
 ## User flow health state
 
-So far, we have identified two user flows: **List catalog items** and **Add comment**. To determine health states for each flow, ask questions such as:
+So far, we've identified two user flows: **List catalog items** and **Add comment**. To determine health states for each flow, ask questions such as:
 
 - *When is the user flow considered healthy?*
 - *Can it operate in a degraded state?*
@@ -48,7 +48,7 @@ For information about metrics by resource type, see [Supported metrics with Azur
 
 ## Health states and thresholds
 
-After you have evaluated all layers of the application, you should have a list of components and their health state definitions that looks similar to this example.
+After you've evaluated all layers of the application, you should have a list of components and their health state definitions that look similar to this example.
 
 | Component | Indicator/metric | Healthy | Degraded | Unhealthy |
 | --------- | ---------------- | ------- | -------- | --------- |
@@ -65,4 +65,4 @@ After you have evaluated all layers of the application, you should have a list o
 | Azure Event Hubs | Processing backlog length (outgoing/incoming messages) | < 3 | 3-20 |  > 20 |
 | Azure Blob Storage | Average latency (ms) | < 100 | 100-200 | > 200 |
 
-In this example, the error tolerance for the front-end web application and the Catalog API is different. This difference relates to the technical understanding of the application. All front-end errors should be handled client-side, so there's a zero threshold. However, on the API layer, 10 exceptions are allowed to account for user-caused errors (such as *404 - Not Found*) that don't necessarily indicate a health issue.
+In this example, the error tolerance for the front-end web application and the Catalog API is different. This difference relates to the technical understanding of the application. All front-end errors should be handled client-side, so there's a zero threshold. However, on the API layer, 10 exceptions are allowed to account for user-caused errors. For example, errors such as *404 - Not Found* don't necessarily indicate a health issue.

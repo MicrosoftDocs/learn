@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "Of these three items, which is at the highest level in the health model hierarchy?"
+  - content: "Which layer is at the highest level in the health model hierarchy?"
     choices:
     - content: "Azure resources"
       isCorrect: false

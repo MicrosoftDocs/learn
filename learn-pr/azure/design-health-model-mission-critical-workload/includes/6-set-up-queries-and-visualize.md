@@ -8,9 +8,9 @@ Azure Monitor Log Analytics serves as the core Azure-native unified data sink to
 
 - Application Insights is the recommended Application Performance Monitoring (APM) tool across all application components to collect application logs, metrics, and traces. Application Insights is deployed in a workspace-based configuration in each region.
 
-    In the example application, Azure Functions is used on Microsoft .NET 6 for its back-end services for native integration. Because the back-end applications already exist, Contoso Shoes creates only a new Application Insights resource in Azure and configures the `APPLICATIONINSIGHTS_CONNECTION_STRING` setting on both function apps. The Azure Functions runtime registers the Application Insights logging provider automatically, so telemetry appears in Azure without additional effort. For more customized logging, you can use the ILogger interface.
+    In the example application, Azure Functions is used on Microsoft .NET 6 for its back-end services for native integration. Because the back-end applications already exist, Contoso Shoes creates only a new Application Insights resource in Azure and configures the `APPLICATIONINSIGHTS_CONNECTION_STRING` setting on both function apps. The Azure Functions runtime registers the Application Insights logging provider automatically, so telemetry appears in Azure without extra effort. For more customized logging, you can use the ILogger interface.
 
-- Centralized dataset is an antipattern for mission-critical workloads. Each region must have its dedicated Log Analytics workspace and an Application Insights instance. For global resources a separate instances are recommended.  To see the core architecture pattern, see [Architecture pattern for mission-critical workloads on Azure](/azure/architecture/framework/mission-critical/mission-critical-architecture-pattern). 
+- Centralized dataset is an antipattern for mission-critical workloads. Each region must have its dedicated Log Analytics workspace and an Application Insights instance. For global resources, separate instances are recommended.  To see the core architecture pattern, see [Architecture pattern for mission-critical workloads on Azure](/azure/architecture/framework/mission-critical/mission-critical-architecture-pattern). 
 
 - Each layer should send data to the same Log Analytics workspace, to make analysis and health calculations easier.
 
@@ -117,7 +117,7 @@ CatalogServiceHealthStatus()
 
 ## Set up query-based alerts
 
-Alerts raise immediate attention to issues that reflect or affect health state. Whenever there is a change in health state, either to a degraded (yellow) state or to an unhealthy (red) state, notifications should be sent to accountable team. Set alerts at the root node of the health model to immediately become aware of any business-level change in the health state of the solution. Then, you can look at health model visualizations to get more information and to troubleshoot.
+Alerts raise immediate attention to issues that reflect or affect health state. Whenever there's a change in health state, either to a degraded (yellow) state or to an unhealthy (red) state, notifications should be sent to accountable team. Set alerts at the root node of the health model to immediately become aware of any business-level change in the health state of the solution. Then, you can look at health model visualizations to get more information and to troubleshoot.
 
 The example uses Azure Monitor alerts to drive automated actions in response to changes in application health state.
 
