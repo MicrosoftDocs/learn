@@ -135,7 +135,7 @@ az iot hub device-identity create -n {iothub name} -d {device ID} --pd {gateway 
 
 For X.509 certificate authority (CA) signed authentication, you need a root CA certificate registered in IoT Hub that you use to sign certificates for your IoT device. Any device using a certificate that was issues by the root CA certificate or any of its intermediate certificates will be permitted to authenticate.
 
-1.  Follow the instructions in the Register X.509 CA certificates to your IoT hub section of Set up X.509 security in your Azure IoT hub [Tutorial: Using Microsoft-supplied scripts to create test certificates](/azure/iot-hub/iot-hub-security-x509-get-started). In that section, you perform the following steps:
+1.  Follow the instructions in the Register X.509 CA certificates to your IoT hub section of Set up X.509 security in your Azure IoT hub [https://docs.microsoft.com/azure/iot-hub/iot-hub-security-x509-get-started](/azure/iot-hub/iot-hub-security-x509-get-started). In that section, you perform the following steps:
      -  Upload a root CA certificate. If you're using the certificates that you created in the transparent gateway article, upload &lt;WRKDIR&gt;/certs/azure-iot-test-only.root.ca.cert.pem as the root certificate file.
      -  Verify that you own that root CA certificate. You can verify possession with the cert tools in &lt;WRKDIR&gt;.PowerShell
     
@@ -193,13 +193,13 @@ Each Azure IoT SDK handles X.509 authentication a little differently. However, t
 > [!IMPORTANT]
 > The following code sample demonstrates how the IoT Hub SDKs use certificates to authenticate devices. In a production deployment, you should store all secrets like private or SAS keys in a hardware secure module (HSM).
 
-For an example of a C# program authenticating to IoT Hub with X.509 certificates, see [Tutorial: Using Microsoft-supplied scripts to create test certificates](/azure/iot-hub/iot-hub-security-x509-get-started). Some of the key lines of that sample are included here to demonstrate the authentication process.
+For an example of a C\# program authenticating to IoT Hub with X.509 certificates, see Set up X.509 security in your Azure IoT hub [https://docs.microsoft.com/azure/iot-hub/iot-hub-security-x509-get-started](/azure/iot-hub/iot-hub-security-x509-get-started). Some of the key lines of that sample are included here to demonstrate the authentication process.
 
 When declaring the hostname for your DeviceClient instance, use the IoT Edge gateway device's hostname. The hostname can be found in the gateway device's config.yaml file.
 
 If you're using the test certificates provided by the IoT Edge git repository, the key to the certificates is **1234**.
 
-```csharp
+```
 try
 {
     var cert = new X509Certificate2(@"<absolute-path-to-your-device-pfx-file>", "1234");
@@ -244,7 +244,7 @@ Code samples for other coding languages are available as follows:
   :::column-end:::
   :::column:::
     iotedge\_downstream\_device\_sample
-[https://github.com/Azure/azure-iot-sdk-c/tree/master/iothub\_client/samples/iotedge\_downstream\_device\_sample](https://github.com/Azure/azure-iot-sdk-c/tree/master/iothub_client/samples/iotedge_downstream_device_sample)
+[https://github.com/Azure/azure-iot-sdk-c/tree/main/iothub\_client/samples/iotedge\_downstream\_device\_sample](https://github.com/Azure/azure-iot-sdk-c/tree/main/iothub_client/samples/iotedge_downstream_device_sample)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -262,7 +262,7 @@ https://github.com/Azure/azure-iot-sdk-node/blob/main/device/samples/javascript/
   :::column-end:::
   :::column:::
     send\_message\_x509.py
-[https://github.com/Azure/azure-iot-sdk-python/blob/master/azure-iot-device/samples/async-hub-scenarios/send\_message\_x509.py](https://github.com/Azure/azure-iot-sdk-python/blob/master/azure-iot-device/samples/async-hub-scenarios/send_message_x509.py)
+[https://github.com/Azure/azure-iot-sdk-python/blob/main/samples/async-hub-scenarios/send\_message\_x509.py](https://github.com/Azure/azure-iot-sdk-python/blob/main/samples/async-hub-scenarios/send_message_x509.py)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -271,6 +271,6 @@ https://github.com/Azure/azure-iot-sdk-node/blob/main/device/samples/javascript/
   :::column-end:::
   :::column:::
     SendEventX509.java
-[https://github.com/Azure/azure-iot-sdk-java/tree/master/device/iot-device-samples/send-event-x509](https://github.com/Azure/azure-iot-sdk-java/tree/master/device/iot-device-samples/send-event-x509)
+[https://github.com/Azure/azure-iot-sdk-java/tree/main/device/iot-device-samples/send-event-x509](https://github.com/Azure/azure-iot-sdk-java/tree/main/device/iot-device-samples/send-event-x509)
   :::column-end:::
 :::row-end:::
