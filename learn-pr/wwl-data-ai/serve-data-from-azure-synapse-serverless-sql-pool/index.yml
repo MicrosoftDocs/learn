@@ -29,7 +29,6 @@ subjects:
 - data-analytics
 units:
 - learn.wwl.serve-data-from-azure-synapse-serverless-sql-pool.use-synapse-studio-to-analyze-visualize-data-via
-- learn.wwl.serve-data-from-azure-synapse-serverless-sql-pool.use-pools-as-data-source-synapse-pipelines
 - learn.wwl.serve-data-from-azure-synapse-serverless-sql-pool.use-power-bi-to-visualize
 badge:
   uid: learn.wwl.serve-data-from-azure-synapse-serverless-sql-pool.badge
