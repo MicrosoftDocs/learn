@@ -19699,6 +19699,11 @@
       "source_path": "learn-pr/wwl-data-ai/serve-data-from-azure-synapse-serverless-sql-pool/3-use-pools-data-source-synapse-pipelines.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/serve-data-from-azure-synapse-serverless-sql-pool/4-use-power-bi-visualize.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
     }
   ]
 }
