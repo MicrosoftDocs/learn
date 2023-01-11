@@ -2,12 +2,11 @@
 uid: learn.wwl.create-manage-power-bi-assets
 metadata:
   title: Create and manage Power BI assets
-  description: "Creating shared data assets for your analytics environment provides structure and consistency. Maintaining those assets is as important, and XMLA endpoint provides additional administrative capabilities."
-  ms.date: 10/20/2022
+  description: "Create and manage Power BI assets"
+  ms.date: 01/11/2023
   author: wwlpublish
-  ms.author: anrudduc
+  ms.author: shlindsay
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Create and manage Power BI assets
 summary: Creating shared data assets for your analytics environment provides structure and consistency. Maintaining those assets is as important, and XMLA endpoint provides additional administrative capabilities.
 abstract: |
