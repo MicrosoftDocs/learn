@@ -6,7 +6,7 @@ Similarly to how methods are added under a `methods` field, computed properties 
 
 You can use computed properties to combine `firstName` and `lastName` into a `fullName` property, do lookups in an array to return the correct value, or do other dynamic tasks.
 
-Further, a computed property is _reactive_. If any values in the computed property change, the computed property is updated to reflect the change.
+Further, a computed property is *reactive*. If any values in the computed property change, the computed property is updated to reflect the change.
 
 The following example creates a `fullName`.
 
