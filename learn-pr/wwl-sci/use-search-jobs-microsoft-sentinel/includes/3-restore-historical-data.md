@@ -2,7 +2,6 @@ When you need to do a full investigation on data stored in archived logs, restor
 
 A restored log table is available in a new table that has a ***_RST** suffix. The restored data is available as long as the underlying source data is available. But you can delete restored tables at any time without deleting the underlying source data. To save costs, we recommend you delete the restored table when you no longer need it.
 
-
 ## Limitations of log restore
 Before you start to restore an archived log table, be aware of the following limitations:
 
@@ -12,7 +11,6 @@ Before you start to restore an archived log table, be aware of the following lim
 - Restore is limited to one active restore per table.
 - Restore up to four archived tables per workspace per week.
 - Limited to two concurrent restore jobs per workspace.
- 
 
 ## Restore archived log data
 
@@ -24,8 +22,9 @@ You can restore archived data directly from the Search  page or from a saved sea
 1. Under General, select Search.
 1. Restore log data in one of two ways:
 
-    - At the top of Search page, select Restore.
+    - At the top of Search page, select Restore, or
     - Select the Saved Searches tab and Restore on the appropriate search.
+
 1. Select the table you want to restore.
 1. Select the time range of the data that you want restore.
 1. Select Restore.
@@ -52,6 +51,6 @@ To save costs, we recommend you delete the restored table when you no longer nee
 
 1. Identify the table you want to delete.
 
-1. Select Delete for that table row.
+1. Select Delete for that table  row. 
 
 

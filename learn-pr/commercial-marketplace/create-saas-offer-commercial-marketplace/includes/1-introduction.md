@@ -6,7 +6,7 @@ Software as a Service (SaaS) is cloud-based software that’s centrally hosted a
 
 With SaaS apps, customers don’t need to worry about managing technical infrastructure, app software, or data-management responsibilities. Instead, customers just pay to use the software, allowing them to focus on the value they get from using the application.
 
-Users connect to SaaS apps on the web, which means that they can access the applications from any internet-connected computer or mobile device. This ability to access SaaS apps makes it easier for customers to mobilize their workforces since their employees can use these applications to work from anywhere. Customers don’t need to invest to make applications run on different types of devices or manage security, because the software provider takes those responsibilities.
+Users connect to SaaS apps on the web, which means that they can access the applications from any internet-connected computer or mobile device. This ability to access SaaS apps makes it easier for customers to mobilize their workforces, because their employees can use these applications to work from anywhere. Customers don’t need to invest to make applications run on different types of devices or manage security, because the software provider takes those responsibilities.
 
 ## SaaS benefits for software providers
 

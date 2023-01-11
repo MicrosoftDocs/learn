@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse
+metadata:
+  title: Ingest streaming data using Azure Stream Analytics and Azure Synapse Analytic
+  description: "Azure Stream Analytics provides a real-time data processing engine that you can use to ingest streaming event data into Azure Synapse Analytics for further analysis and reporting."
+  ms.date: 12/08/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: stream-analytics
+title: Ingest streaming data using Azure Stream Analytics and Azure Synapse Analytics
+summary: Azure Stream Analytics provides a real-time data processing engine that you can use to ingest streaming event data into Azure Synapse Analytics for further analysis and reporting.
+abstract: |
+  After completing this module, you'll be able to:
+  *   Describe common stream ingestion scenarios for Azure Synapse Analytics.
+  *   Configure inputs and outputs for an Azure Stream Analytics job.
+  *   Define a query to ingest real-time data into Azure Synapse Analytics.
+  *   Run a job to ingest real-time data, and consume that data in Azure Synapse Analytics.
+prerequisites: |
+  Before starting this module, you should be familiar with Azure Stream Analytics and Azure Synapse Analytics. Consider completing the following modules first:
+  - [Get started with Azure Stream Analytics](/training/modules/introduction-to-data-streaming)
+  - [Introduction to Azure Synapse Analytics](/training/modules/introduction-azure-synapse-analytics)
+iconUrl: /training/achievements/azure-stream-analytics-ingest-data-streams.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-stream-analytics
+- azure-synapse-analytics
+subjects:
+- data-analytics
+- data-engineering
+units:
+- learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.introduction
+- learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.stream-ingestion-scenarios
+- learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.configure-inputs-outputs
+- learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.define-query
+- learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.run-job-ingest
+- learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.exercise-ingest-streaming-data
+- learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.knowledge-check
+- learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.summary
+badge:
+  uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.badge

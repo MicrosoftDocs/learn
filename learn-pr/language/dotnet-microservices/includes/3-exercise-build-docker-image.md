@@ -1,4 +1,4 @@
-In this exercise, you will learn to create a microservice endpoint and containerize it using docker.
+In this exercise, you'll learn to create a microservice endpoint and containerize it using docker.
 
 > [!IMPORTANT]
 > To complete this exercise, please download and install both the [.NET SDK](https://dotnet.microsoft.com/download) and [Docker](https://www.docker.com/products/docker-desktop). You will also need a text editor, such as [Visual Studio Code](https://code.visualstudio.com/).
@@ -38,7 +38,7 @@ Now that the code is downloaded, we'll be deploying our back-end and front-end m
     RUN dotnet publish -c release -o /app
     ```
 
-    This will perform the following steps sequentially when invoked:
+    This code will perform the following steps sequentially when invoked:
 
     - Pull the `mcr.microsoft.com/dotnet/sdk:6.0` image and name the image `build`
     - Set the working directory within the image to `/src`
@@ -58,7 +58,7 @@ Now that the code is downloaded, we'll be deploying our back-end and front-end m
     ENTRYPOINT ["dotnet", "backend.dll"]
     ```
 
-    This will perform the following steps sequentially when invoked:
+    This code will perform the following steps sequentially when invoked:
 
     - Pull the `mcr.microsoft.com/dotnet/aspnet:6.0` image
     - Set the working directory within the image to `/app`
@@ -77,7 +77,7 @@ Now that the code is downloaded, we'll be deploying our back-end and front-end m
     This runs the commands in the `Dockerfile` in the current directory and applies the tag `pizzabackend` to the resulting image.
 
     > [!TIP]
-    > If you are getting errors from Docker, it may not have be installed correctly. Run the following command to verify:
+    > If you are getting errors from Docker, it may not have been installed correctly. Run the following command to verify:
     > `docker run hello-world`
     > If you do _not_ see "Hello from Docker!" amongst the output, follow this [Docker installation tutorial](https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/install-docker).
 

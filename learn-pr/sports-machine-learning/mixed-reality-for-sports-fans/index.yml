@@ -28,7 +28,7 @@ roles:
 - developer
 - student
 products:
-- vs-code
+- azure
 subjects:
 - mixed-reality
 - machine-learning

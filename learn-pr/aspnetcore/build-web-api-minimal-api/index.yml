@@ -3,12 +3,12 @@ uid: learn.aspnetcore.build-web-api-minimal-api
 metadata:
   title: Build a web API with minimal API, ASP.NET Core, and .NET 6
   description: Learn how to build a web API by using .NET 6. You'll also learn how to set up different routes to handle both reading and writing.
-  ms.date: 10/26/2021
+  ms.date: 12/22/2022
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
 title: Build a web API with minimal API, ASP.NET Core, and .NET 6
 summary: Learn how to build a web API with minimal API and .NET 6.
 abstract: |
@@ -25,7 +25,6 @@ roles:
 products:
   - vs
   - dotnet
-  - vs-code
   - aspnet-core
 prerequisites: |
   - Local installations of the [.NET SDK](https://dotnet.microsoft.com/download).

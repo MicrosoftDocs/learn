@@ -134,7 +134,7 @@ With all the code added, let's test the page!
 1. Go to `http://localhost:8080` and refresh the page.
 1. Select a cabin from the drop-down list and select the button.
 
-   Your new booking is displayed on the right.
+   Your new booking displays.
 
    ![Screenshot of the final application with the form shown on the left and list on the right.](../media/list-component.png)
 

@@ -12,7 +12,7 @@ Try adding the following code to your <b>decrypt.py</b> file:
 
 Select the **Run** button, and you should see the same behavior as before.
 
-:::image type="content" source="../media/comment-demo.png" alt-text="Screenshot that shows that comments in Python do not change code execution.":::
+:::image type="content" source="../media/comment-demo.png" alt-text="Screenshot that shows that comments in Python don't change code execution.":::
  
 ## Variables
 
@@ -22,14 +22,14 @@ In Python, we have *variables*, which are like containers that have a name and s
 
 The following command tells Python to associate the code name or variable `town` with the name of a town called "Contosoville."
 
-To do this, you use the assignment equal sign (`=`) operator. Anytime after this command, when Python sees the variable `town`, it will substitute the value "Contosoville"! Contosoville just might be the mystery location you are looking for.
+For this command, you use the assignment equal sign (`=`) operator. Anytime after this command, when Python sees the variable `town`, it will substitute the value "Contosoville"! Contosoville just might be the mystery location you're looking for.
 
 ```python
 # Associate variable town with the value "Contosoville"
 town = "Contosoville"
 ```
 
-Try it out! Replace the following commands in your <b>decrypt.py</b> file. (If you're wondering what the plus sign (`+`) is for: it "glues together" phrases into a longer phrase.)
+Try it out! Add the following commands to your <b>decrypt.py</b> file. (If you're wondering what the plus sign (`+`) is for: it "glues together" phrases into a longer phrase.)
 
 ```python
 
@@ -56,7 +56,7 @@ def chant( phrase ):
     print( phrase + phrase + phrase )
 ```
 
-In this code, the function is called `chant`. The parameter is a variable called `phrase`. The code within the function invokes another function that you didn't write, but which is available to you as part of the Python language `print()` capability. If you invoke this function, the value you pass in as the parameter is printed to the console three times.
+In this code, the function is called `chant`. The parameter is a variable called `phrase`. The code within the function invokes another function that you didn't write, but it's available to you as part of the Python language `print()` capability. If you invoke this function, the value you pass in as the parameter is printed to the console three times.
 
 Try it out! Update the commands in your <b>decrypt.py</b> file to call the power to chant.
 

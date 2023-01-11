@@ -6,9 +6,9 @@ Select all of the code in the .NET Editor, and press <kbd>Delete</kbd> or <kbd>B
 
 ### Step 2: Write code in the .NET Editor to display two messages
 
-Use the two different techniques to print the two lines of the output. In other words, you learned how to display a message in just one line of code, and you learned how to display a message using multiple lines of code. Use both techniques for this challenge. It doesn't matter which technique you apply to which line, and it doesn't matter how many ways you split one of the messages into multiple lines of code. That's your choice.
+Use the two different techniques you learned to print the two lines of the output. In other words, you learned how to display a message in just one line of code, and you learned how to display a message using multiple lines of code. Use both techniques for this challenge. It doesn't matter which technique you apply to which line, and it doesn't matter how many ways you split one of the messages into multiple lines of code. That's your choice.
 
-No matter how you do it, your code should produce the following output.
+No matter how you do it, your code should produce the following output:
 
 ```output
 This is the first line.

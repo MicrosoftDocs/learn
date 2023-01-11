@@ -14,7 +14,7 @@ Here are some examples of where C++ is used:
 
 - **Games**. A wide variety of animation and games require C++ for modeling, 3D animation, rendering, and simulations. Game engines that developers use to create games frequently are built by using C++.
 
-- **Medical engineering**. Developers who work in medical engineering are creating more applications by using C++. C++ is widely used in machines that use scanning technology, like MRI. C++ also is used in various embedded systems.
+- **Medical engineering**. Developers who work in medical engineering are creating more applications by using C++. C++ is widely used in machines that use scanning technology, like MRI. C++ is also used in various embedded systems.
 
 - **Robotics**. A robotics developer often will use C++ to program the microcontroller, to improve performance and productivity. Numerous hardware libraries are written in C++ for interactions with low-level hardware.
 

@@ -6,12 +6,12 @@ metadata:
   unitType: exercise
   title: Exercise - Refactor your template to use modules
   description: Learn how to create self-contained, reusable modules for your Bicep code.
-  ms.date: 10/10/2022
+  ms.date: 01/06/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
-durationInMinutes: 7
+durationInMinutes: 8
 content: |
   [!include[](includes/8-exercise-refactor-template-modules.md)]

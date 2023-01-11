@@ -5,8 +5,8 @@ metadata:
   title: Introduction to Azure Remote Rendering
   description: Azure Remote Rendering enables you to render high-quality, interactive 3D content in the cloud. You can stream this content in real time to devices, such as the HoloLens 2.
   ms.date: 06/15/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: DrewLonMS
+  ms.author: oliverlondon
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Remote Rendering

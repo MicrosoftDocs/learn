@@ -2,7 +2,7 @@
 author: davidsmatlak
 ms.prod: learning-azure
 ms.topic: include
-ms.date: 10/10/2022
+ms.date: 01/03/2023
 ms.author: davidsmatlak
 ---
 

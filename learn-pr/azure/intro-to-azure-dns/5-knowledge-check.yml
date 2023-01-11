@@ -15,14 +15,14 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "Rather than use the Azure provided names, you want to use a custom domain for the names of virtual machines on three virtual networks in your subscription. The fully qualified domain names (FQDN) associated with these virtual machines should not be publicly resolvable by hosts using third party DNS serves on the internet. Which of the following solutions should you implement?"
+  - content: "Rather than use the Azure provided names, you want to use a custom domain for the names of virtual machines on three virtual networks in your subscription. The fully qualified domain names (FQDN) associated with these virtual machines shouldn't be publicly resolvable by hosts using third party DNS serves on the internet. Which of the following solutions should you implement?"
     choices:
     - content: "Azure DNS alias record."
       isCorrect: false
-      explanation: "Incorrect. Alias records, also named CNAME records, allow you to point one FQDN at another FQDN. It does not provide selectively resolvable automatically assigned FQDNs to virtual machine hosts on select virtual networks."
+      explanation: "Incorrect. Alias records, also named CNAME records, allow you to point one FQDN at another FQDN. It doesn't provide selectively resolvable automatically assigned FQDNs to virtual machine hosts on select virtual networks."
     - content: "Reverse DNS records."
       isCorrect: false
-      explanation: "Incorrect. Reverse DNS allows you to determine the FQDN associated with a specific IP address. It does not provide selectively resolvable automatically assigned FQDNs to virtual machine hosts on select virtual networks."
+      explanation: "Incorrect. Reverse DNS allows you to determine the FQDN associated with a specific IP address. It doesn't provide selectively resolvable automatically assigned FQDNs to virtual machine hosts on select virtual networks."
     - content: "Azure DNS Private zone."
       isCorrect: true
       explanation: "Correct. Azure DNS private zones allow you to configure automatically assigned selectively resolvable FQDNs to virtual machines on select Azure virtual networks."
@@ -30,13 +30,13 @@ quiz:
     choices:
     - content: "You need to secure DNS records using DNSSEC."
       isCorrect: false
-      explanation: "Incorrect. Azure DNS does not support DNSSEC."
+      explanation: "Incorrect. Azure DNS doesn't support DNSSEC."
     - content: "You need to manage and update MX, TXT and CNAME IPv6 records for a DNS zone."
       isCorrect: true
       explanation: "Correct. Azure DNS supports hosting MX, TXT and CNAME records."
     - content: "You need to provide an Active Directory Integrated DNS zone for IaaS VM hosts."
       isCorrect: false
-      explanation: "Incorrect. Azure DNS does not support Active Directory Integrated DNS zones."
+      explanation: "Incorrect. Azure DNS doesn't support Active Directory Integrated DNS zones."
   - content: "Which of the following tools can you use to manage Azure DNS zone records?"
     choices:
     - content: "Azure CLI."
@@ -44,7 +44,7 @@ quiz:
       explanation: "Correct. You can manage Azure DNS zone records using Azure CLI"
     - content: "Windows Admin Center."
       isCorrect: false
-      explanation: "Incorrect. You cannot manage Azure DNS records using Windows Admin Center. You can use Windows Admin Center to manage Windows Server DNS server records"
+      explanation: "Incorrect. You can't manage Azure DNS records using Windows Admin Center. You can use Windows Admin Center to manage Windows Server DNS server records"
     - content: "Dnscmd.exe utility."
       isCorrect: false
-      explanation: "Incorrect. You cannot use dnscmd.exe to manage Azure DNS records. You can use dnscmd.exe to manage Windows Server DNS server records"
+      explanation: "Incorrect. You can't use dnscmd.exe to manage Azure DNS records. You can use dnscmd.exe to manage Windows Server DNS server records"

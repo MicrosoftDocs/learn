@@ -3,11 +3,11 @@ uid: learn.create-razor-pages-aspnet-core
 metadata:
   title: Create a web UI with ASP.NET Core
   description: "In this module, you'll learn how to create web pages using Razor with ASP.NET Core."
-  ms.date: 02/12/2021
+  ms.date: 12/30/2022
   author: jongalloway
   ms.author: jogallow
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
 title: Create a web UI with ASP.NET Core
 summary: ASP.NET Core supports creating webpages using a native templating engine called Razor. In this module, you'll learn how to create web pages using Razor with ASP.NET Core.
 abstract: | 

@@ -7,7 +7,7 @@ To start the scalability process, you'll need to create a HorizontalPorAutoscale
 As all Kubernetes resources, you can create a new HPA by writing a YAML file called `hpa.yaml`.
 
 ```yml
-apiVersion: autoscaling/v2beta2
+apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: contoso-website
@@ -16,7 +16,7 @@ metadata:
 Now you'll define the target to be scaled. Since you're scaling the deployment website, you'll define a `scaleTargetRef` key pointing to that resource:
 
 ```yml
-apiVersion: autoscaling/v2beta2
+apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: contoso-website
@@ -32,7 +32,7 @@ It's important to point out that the `scaleTargetRef` keys need to be the same a
 Now it's time to define what metrics this HPA will listen to and how many replicas you want it to have. To do that you'll define a new key:
 
 ```yml
-apiVersion: autoscaling/v2beta2
+apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: contoso-website
@@ -63,7 +63,7 @@ desiredReplicas = ceil[currentReplicas * ( currentMetricValue / desiredMetricVal
 Since the application is a website, it's a good practice to monitor the memory usage of the deployment. To calculate these metrics, you'll need to add another item to the `metrics` array:
 
 ```yml
-apiVersion: autoscaling/v2beta2
+apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: contoso-website

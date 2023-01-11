@@ -34,7 +34,6 @@ roles: # TBC
 - student
 products: 
 - azure
-- vs-code
 subjects:
 - development-tools
 units:

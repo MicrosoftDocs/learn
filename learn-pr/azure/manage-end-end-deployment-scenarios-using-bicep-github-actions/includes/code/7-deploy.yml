@@ -34,14 +34,14 @@ permissions:
 jobs:
   validate:
      runs-on: ubuntu-latest
-     steps: 
-     - uses: actions/checkout@v2
+     steps:
+     - uses: actions/checkout@v3
      - uses: azure/login@v1
        name: Sign in to Azure
        with:
-        client-id: ${{ secrets.AZURE_CLIENT_ID }}
-        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+         client-id: ${{ secrets.AZURE_CLIENT_ID }}
+         tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+         subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
      - if: inputs.environmentType != 'Production'
        uses: azure/arm-deploy@v1
        name: Run preflight validation
@@ -70,7 +70,7 @@ jobs:
            sqlServerAdministratorLogin=${{ inputs.sqlServerAdministratorLogin }}
            sqlServerAdministratorLoginPassword=${{ secrets.sqlServerAdministratorLoginPassword }}
          additionalArguments: --what-if
- 
+
   deploy:
     needs: validate
     environment: ${{ inputs.environmentType }}
@@ -83,7 +83,7 @@ jobs:
       sqlServerFullyQualifiedDomainName: ${{ steps.deploy.outputs.sqlServerFullyQualifiedDomainName }}
       sqlDatabaseName: ${{ steps.deploy.outputs.sqlDatabaseName }}
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
@@ -110,7 +110,7 @@ jobs:
     environment: ${{ inputs.environmentType }}
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v3
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
@@ -128,7 +128,7 @@ jobs:
     environment: ${{ inputs.environmentType }}
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v3
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
@@ -149,7 +149,7 @@ jobs:
     environment: ${{ inputs.environmentType }}
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
@@ -169,7 +169,7 @@ jobs:
     environment: ${{ inputs.environmentType }}
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
@@ -177,7 +177,7 @@ jobs:
         tenant-id: ${{ secrets.AZURE_TENANT_ID }}
         subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
     - if: inputs.environmentType != 'Production'
-      uses: Azure/cli@v1
+      uses: azure/CLI@v1
       name: Upload sample images
       with:
         inlineScript: |
@@ -194,8 +194,8 @@ jobs:
     - deploy-database
     - seed-database
     - seed-storage-account
-    steps: 
-    - uses: actions/checkout@v2
+    steps:
+    - uses: actions/checkout@v3
     - run: |
         $container = New-PesterContainer `
           -Path 'deploy/Website.Tests.ps1' `

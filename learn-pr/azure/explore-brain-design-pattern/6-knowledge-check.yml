@@ -13,48 +13,47 @@ durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)] 
 quiz:
-  title: Check your knowledge
   questions:
   - content: "When is best to use the perception brain design pattern?"
     choices:
     - content: "When we need to classify images."
       isCorrect: false
-      explanation: "Classification is a task for Machine Learning. If we need only classification, we don’t need an Autonomous AI brain design pattern."
+      explanation: "Incorrect. Classification is a task for Machine Learning. If we need only classification, we don’t need an Autonomous AI brain design pattern."
     - content: "When there's an expert operator who currently decides on control strategies based on advance perception."
       isCorrect: true
-      explanation: "The perception brain design pattern will automate human-like decision making based on advance perception, like vision or sound."
+      explanation: "Correct. The perception brain design pattern will automate human-like decision making based on advance perception, like vision or sound."
     - content: "When we need to predict product demand."
       isCorrect: false
-      explanation: "Prediction is a task for Machine Learning. If we only need prediction, we don't need an Autonomous AI brain design pattern."
+      explanation: "Incorrect. Prediction is a task for Machine Learning. If we only need prediction, we don't need an Autonomous AI brain design pattern."
     - content: "When we need to identify sounds."
       isCorrect: false
-      explanation: "Classification of sounds is a task for Machine Learning. If we need only classification, we don’t need an Autonomous AI brain design pattern."
+      explanation: "Incorrect. Classification of sounds is a task for Machine Learning. If we need only classification, we don’t need an Autonomous AI brain design pattern."
   - content: "When is best to use the functional brain design pattern?"
     choices:
     - content: "When there are different tasks that can only be controlled by one expert operator at a time."
       isCorrect: false
-      explanation: "When there are different tasks that can only be controlled by an expert operator at a time is a hint that you need a strategy brain design decomposition."
+      explanation: "Incorrect. When there are different tasks that can only be controlled by an expert operator at a time is a hint that you need a strategy brain design decomposition."
     - content: "When there are different tasks that are executed using the same control actions."
       isCorrect: false
-      explanation: "When the tasks are executed using the same control actions, it's best to use the strategy decomposition."
+      explanation: "Incorrect. When the tasks are executed using the same control actions, it's best to use the strategy decomposition."
     - content: "When there are different tasks that are executed using independent control actions."
       isCorrect: true
-      explanation: "When we can divide the problem into tasks that are executed by different expert operators over independent control actions (different nobs in the process), the functional decomposition is the best choice."
+      explanation: "Correct. When we can divide the problem into tasks that are executed by different expert operators over independent control actions (different knobs in the process), the functional decomposition is the best choice."
     - content: "When there's an expert operator currently performing the task."
       isCorrect: false
-      explanation: "That means that the expert operator is doing advance perception and decision making that can't be performed by any current control method. It's a hint that Autonomous AI might outperform current methods but isn't an indication that the best brain design decomposition is functional."
+      explanation: "Incorrect. That means that the expert operator is doing advance perception and decision making that can't be performed by any current control method. It's a hint that Autonomous AI might outperform current methods but isn't an indication that the best brain design decomposition is functional."
   - content: "When is best to use the strategy brain design pattern?"
     choices:
     - content: "When we identify strategies that are controlled using independent control actions."
       isCorrect: false
-      explanation: "When the strategies control independent control actions, it's best to use the functional decomposition."
+      explanation: "Incorrect. When the strategies control independent control actions, it's best to use the functional decomposition."
     - content: "When there are different tasks that are controlled by different expert operators independently."
       isCorrect: false
-      explanation: "When you can divide the work by operators to control a system, it's a hint that you can use a functional brain design decomposition."
+      explanation: "Incorrect. When you can divide the work by operators to control a system, it's a hint that you can use a functional brain design decomposition."
     - content: "When there's an expert operator currently performing the task."
       isCorrect: false
-      explanation: "That means that the expert operator is doing advance perception and decision making that can't be performed by any current control method. It's a hint that Autonomous AI might outperform current methods but isn't an indication that the best brain design decomposition is strategy."
+      explanation: "Incorrect. That means that the expert operator is doing advance perception and decision making that can't be performed by any current control method. It's a hint that Autonomous AI might outperform current methods but isn't an indication that the best brain design decomposition is strategy."
     - content: "When we identify strategies that are controlled using the same control actions."
       isCorrect: true
-      explanation: "We identify strategies using the three-column exercise, and each strategy requires to control all control actions in different ways depending on the scenario."
+      explanation: "Correct. We identify strategies using the three-column exercise, and each strategy requires to control all control actions in different ways depending on the scenario."
   

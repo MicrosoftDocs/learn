@@ -1,4 +1,4 @@
-With the build artifacts successfully generated and published into Azure Pipelines, you're ready to proceed to the next step. This step isn't dependent on the build; instead, it involves provisioning of the Azure resources, into which you will deploy artifacts. Starting with the predefined **ASP.NET** templates simplifies generation of the YAML pipeline you'll now modify as your first set of deployment steps. This deployment follows the concept of *Infrastructure as Code*.
+With the build artifacts successfully generated and published into Azure Pipelines, you're ready to proceed to the next step. This step isn't dependent on the build; instead, it involves provisioning the Azure resources into which you will deploy artifacts. Starting with the predefined **ASP.NET** templates simplifies generation of the YAML pipeline you'll now modify as your first set of deployment steps. This deployment follows the concept of *Infrastructure as Code*.
 
 ## What is Infrastructure as Code?
 
@@ -24,7 +24,7 @@ Idempotency is a term that's used in mathematics and computer science. An idempo
 az group create -name apdevops-rg -location eastus
 ```
 
-When you first run this command, its execution will create a resource group with the matching name and location (if such group doesn't already exist) and generate output that provides its JSON representation. Every subsequent execution will result in the same outcome, without affecting the resource group state or generating an error message. This effectively means that this Azure CLI command is idempotent.
+When you first run this command, its execution will create a resource group with the matching name and location (if such group doesn't already exist) and generate output that provides its JSON representation. Every subsequent execution will result in the same outcome, without affecting the resource-group state or generating an error message. This effectively means that this Azure CLI command is idempotent.
 
 Idempotency is a critical component of IaC. In scenarios more complex than the one involving creating a resource group, you could use IaC to restore the original configuration of an Azure resource and ensure consistency of your environment.
 
@@ -34,7 +34,7 @@ Because IaC tasks provision infrastructure separately from artifacts that are de
 
 ## Target environment
 
-Another important decision you need to make when migrating ASP.NET apps to Azure is the choice of the target service that will host deployed artifacts. To maximize performance, scalability, and cost savings benefits, you choose Azure App Service and Azure SQL Database as the web and database platform, respectively.
+Another important decision you need to make when migrating ASP.NET apps to Azure is the choice of the target service that will host deployed artifacts. To maximize performance, scalability, and cost-savings benefits, you choose Azure App Service and Azure SQL Database as the web and database platform, respectively.
 
 Azure App Service is a platform-as-a-service (PaaS) Azure offering that you can use to host web and API apps. This service provides such benefits as:
 
@@ -42,11 +42,11 @@ Azure App Service is a platform-as-a-service (PaaS) Azure offering that you can 
 - High availability that protects your apps from localized hardware and software failures.
 - Integration with Azure Pipelines and GitHub repositories.
 
-Azure App Service simplifies deployment and configuration of web and API apps, including ASP.NET apps, providing an intuitive, Azure portal-based interface for managing their settings, such as, for example, database connection strings.
+Azure App Service simplifies deployment and configuration of web and API apps, including ASP.NET apps, providing an intuitive, Azure portal-based interface for managing their settings; for example, database connection strings.
 
 Azure SQL Database is a PaaS relational database offering. It provides a highly available, fully managed SQL database service that includes automatic patching and backups.
 
-:::image type="content" source="../media/5-web-app-azure.png" alt-text="An Azure data-driven web app architecture with a resource group containing an App Service plan, App Service web app, Azure SQL logical server and an Azure SQL database.":::
+:::image type="content" source="../media/5-web-app-azure.png" alt-text="Diagram of an Azure data-driven web app architecture with a resource group containing an App Service plan, App Service web app, Azure SQL logical server and an Azure SQL database.":::
 
 ### Authenticating to the target environment
 
@@ -65,7 +65,7 @@ The second of these two points is important, because to deploy an Azure logical 
 
 ### Connectivity to the target environment
 
-Both Azure App Service and Azure SQL Database implement public endpoints. For your solution to work, there's one more consideration. The logical Azure SQL server includes a built-in firewall, which, by default, blocks all incoming traffic. To allow Azure App Service web apps to access any of its databases, you need to add a firewall rule that allows traffic originating from Azure.
+Both Azure App Service and Azure SQL Database implement public endpoints. For your solution to work, there's one more consideration. The logical Azure SQL server includes a built-in firewall, which blocks all incoming traffic by default. To allow Azure App Service web apps to access any of its databases, you need to add a firewall rule that allows traffic originating from Azure.
 
 ## Azure Pipelines agents for deployment of Azure resources
 
