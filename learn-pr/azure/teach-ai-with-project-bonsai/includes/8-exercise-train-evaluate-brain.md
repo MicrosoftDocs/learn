@@ -13,7 +13,7 @@ When you begin training, a few things happen automatically:
 - The training performance chart begins populating with training data. Depending on the simulation running time, it might take time to display the initial performance. Don't worry if your training graph is blank for some time. For Moab, the starting time can take up to 5-10 minutes.
 - Automatic assessments begin populating the Assessments list. Assessments are found under the Brain graph. Automatic assessments will be accessible for each champion found throughout training. Champions are represented by the checkpoints displayed on the Training performance chart, and they signify evaluation points where the new brain policy was found to beat all previous policies.
 
-![The screenshot shows the training performance chart, brain graph,  simulator and assessment list.](../media/brain-performance.png)
+![The screenshot shows the training performance chart, brain graph,  simulator and assessment list.](../media/chart-brain-simulator.png)
 
 ### The brain graph
 

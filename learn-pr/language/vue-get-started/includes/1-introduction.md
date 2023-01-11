@@ -1,4 +1,4 @@
-*Vue.js* (also called *Vue*) was created by Evan You and first released in February 2014. His objective for Vue was to create a progressive, lightweight version of JavaScript. 
+*Vue.js* (also called *Vue*) was created by Evan You and was first released in February 2014. His objective for Vue was to create a progressive, lightweight version of JavaScript.
 
 Vue was designed to allow developers to create a user interface by adding a set of custom HTML attributes that connect software components with data. To accomplish this task, Vue.js interprets the HTML attributes as *directives* that bind input or output parts of the page to a model. The model is represented by standard JavaScript variables. 
 

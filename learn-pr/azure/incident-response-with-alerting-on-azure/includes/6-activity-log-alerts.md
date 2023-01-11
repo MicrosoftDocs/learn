@@ -25,14 +25,14 @@ Activity log alerts are based on events. The best approach for defining them is 
 
 Like the previous alerts, activity log alerts have their own attributes:
 
-- **Category**: Administrative, service health, autoscale, policy, or recommendation.
-- **Scope**: Resource level, resource group level, or subscription level.
-- **Resource group**: Where the alert rule is saved.
-- **Resource type**: Namespace for the target of the alert.
-- **Operation name**: Operation name.
-- **Level**: Verbose, informational, warning, error, or critical.
-- **Status**: Started, failed, or succeeded.
-- **Event initiated by**: Email address or Azure Active Directory identifier (known as the "caller") for the user.
+- **Category**: Administrative, service health, autoscale, policy, or recommendation
+- **Scope**: Resource level, resource group level, or subscription level
+- **Resource group**: Where the alert rule is saved
+- **Resource type**: Namespace for the target of the alert
+- **Operation name**: Operation name
+- **Level**: Verbose, informational, warning, error, or critical
+- **Status**: Started, failed, or succeeded
+- **Event initiated by**: Email address or Azure Active Directory identifier (known as the "caller") for the user
 
 ### Create a resource-specific log alert
 
@@ -44,11 +44,11 @@ Changing the monitor service will enable you to reduce the list of options. Sele
 
 ### Create a service health alert
 
-Service health alerts aren't like all the other alert types you've seen so far in this module. To create a new alert, on the Azure portal, search for and select **Service Health**. Next, select **Health alerts**. After you select **Create service health alert**, the steps to create the alert are similar to the steps you've seen to create other alerts.
+Service health alerts aren't like all the other alert types you've seen so far in this module. To create a new alert, search for and select **Service Health** in the Azure portal. Next, select **Health alerts**. After you select **Create service health alert**, the steps to create the alert are similar to the steps you've seen to create other alerts.
 
 :::image type="content" source="../media/6-service-health-alerts.png" alt-text="Screenshot that shows how to create a new service health alert.":::
 
-The only difference is that you no longer need to select a resource, because the alert is for a whole region in Azure. What you can select is the kind of health event on which you want to be alerted. It's possible to select service issues, planned maintenance, or health advisories, or to choose all of the events. The remaining steps of performing actions and naming the alerts are the same.
+The only difference is that you no longer need to select a resource, because the alert is for a whole region in Azure. What you can select is the kind of health event on which you want to be alerted. You can select service issues, planned maintenance, health advisories, or choose all of the events. The remaining steps of performing actions and naming the alerts are the same.
 
 ## Perform actions when an alert happens
 
