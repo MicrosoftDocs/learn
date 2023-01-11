@@ -1,4 +1,4 @@
-You started by learning how to install dependencies that your app can use. Using dependencies in your application helps you create the application faster because the code is already written. Also, it's a good idea to rely on tried and tested libraries rather than writing something yourself. Using these libraries is an especially good idea when you're adding authentication and authorization to your app.
+You started by learning how to install dependencies that your app can use. Using dependencies in your application helps you create the application faster, because the code is already written. Also, it's a good idea to rely on tried and tested libraries rather than writing something yourself. Using these libraries is an especially good idea when you're adding authentication and authorization to your app.
 
 This module then showed you how to use the .NET CLI to install dependencies locally.
 
