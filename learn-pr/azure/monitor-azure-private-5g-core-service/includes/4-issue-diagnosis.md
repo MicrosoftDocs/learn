@@ -95,7 +95,7 @@ You can use one of the following methods to collect the diagnostics information:
 
 > [!NOTE]
 >
-> - The trace file or the diagnostics package may contain your system data, such as information about a UE. Share these files at your discretion.
+> - The trace file or the diagnostics package contains your system data, which may include personal data. If you choose to share the trace file or diagnostics package with Microsoft, you are required by law to have obtained the necessary consents or authorization to transfer any personal data to Microsoft.
 > - You can use a [support ticket](/azure/databox-online/azure-stack-edge-contact-microsoft-support) to share the trace file or the diagnostics package.
 
 ### Export and share a trace
