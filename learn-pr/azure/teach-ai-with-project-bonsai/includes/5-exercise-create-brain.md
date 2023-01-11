@@ -152,7 +152,7 @@ goal (State: ObservableState) {
                     in Goal.Sphere([0, 0], CloseEnough)
 ```
 
-Available [goal objectives](https://learn.microsoft.com/en-gb/bonsai/inkling/keywords/goal/objectives) in Inkling include:
+Available [goal objectives](https://learn.microsoft.com/bonsai/inkling/keywords/goal/objectives) in Inkling include:
 
 - **Avoid**: Avoid a defined region.
 - **Drive**: Get to a target as quickly as possible and stay inside the target.
