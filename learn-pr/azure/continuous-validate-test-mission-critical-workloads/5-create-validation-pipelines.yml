@@ -3,7 +3,7 @@ uid: learn.continuous-validate-test-mission-critical-workloads.create-validation
 title: Create a continuous validation pipeline
 metadata:
   title: Create a continuous validation pipeline
-  description: Learn how to create a continuous validation pipeline.
+  description: Learn how to create a pipeline for continuous validation.
   ms.date: 12/19/2022
   author: sebader
   ms.author: prwilk
@@ -16,25 +16,25 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "How should a load test and chaos experiment be executed and orchestrated?"
+  - content: "How should a load test and a chaos experiment be run and orchestrated?"
     choices:
-    - content: "Manually via the Azure portal"
+    - content: "They should be run and orchestrated manually via the Azure portal."
       isCorrect: false
-      explanation: "Although it's technically possible to use the Azure portal, it isn't recommended. Because continuous validation benefits from being used frequently, the process should be automated so that it's easily accessible for all developers."
-    - content: "Embedded into a pipeline or workflow"
+      explanation: "Although it's technically possible to use the Azure portal, we don't recommend it. Because continuous validation benefits from frequent use, the process should be automated so that it's easily accessible to all developers."
+    - content: "They should be embedded into a pipeline or workflow."
       isCorrect: true
-      explanation: "Load tests and chaos experiments should be embedded into a pipeline or workflow and made easily accessible for all developers."
-    - content: "Chaos and load testing can't run in parallel."
+      explanation: "Load tests and chaos experiments should be embedded into a pipeline or workflow and made easily accessible to all developers."
+    - content: "Load tests and chaos experiments can't be run in parallel."
       isCorrect: false
-      explanation: "Chaos experiments and load tests can be executed in parallel and the process should be automated."
+      explanation: "Load tests and chaos experiments can be run in parallel, and the process should be automated."
   - content: "What needs to be done after a failed load test?"
     choices:
     - content: "No action is needed."
       isCorrect: false
-      explanation: "The results of a failed load test run should be analyzed and the baseline adjusted if needed."
+      explanation: "It's important to analyze the results of a failed load test and adjust the baseline if needed."
     - content: "Use a different load test tool."
       isCorrect: false
-      explanation: "A failed load test is an indicator of issues introduced as part of a recent change, issues with the underlying platform, or a baseline and threshold that needs to be adjusted."
+      explanation: "A failed load test can indicate problems introduced as part of a recent change, problems with the underlying platform, or the need to adjust a baseline or a threshold."
     - content: "Analyze the result and take action."
       isCorrect: true
-      explanation: "A failed load test is an indicator of issues introduced as part of a recent change, issues with the underlying platform, or a baseline and threshold that needs to be adjusted."
+      explanation: "A failed load test can indicate problems introduced as part of a recent change, problems with the underlying platform, or the need to adjust a baseline or a threshold."
