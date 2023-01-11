@@ -28,7 +28,7 @@ const App = Vue.createApp({
 
 ## Add data
 
-Now that you've created your app, you can add properties that give your app more functionality. An important method that most apps have is `data()`. Vue.js uses this method to access any information you need to make available to your application.
+Now that you've created your app, you can add properties that give your app more functionality. An important method that most apps use is `data()`. Vue.js uses this method to access any information you need to make available to your application.
 
 > [!NOTE]
 > You'll use the `data()` method throughout this module.

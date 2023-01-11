@@ -19669,9 +19669,46 @@
       "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/8-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
       "redirect_document_id": false
-  }
-
-
-    
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/serve-data-from-azure-synapse-serverless-sql-pool/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/serve-data-from-azure-synapse-serverless-sql-pool/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/serve-data-from-azure-synapse-serverless-sql-pool/5-issue-queries-programmatically.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/serve-data-from-azure-synapse-serverless-sql-pool/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/serve-data-from-azure-synapse-serverless-sql-pool/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/serve-data-from-azure-synapse-serverless-sql-pool/3-use-pools-data-source-synapse-pipelines.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/serve-data-from-azure-synapse-serverless-sql-pool/4-use-power-bi-visualize.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/serve-data-from-azure-synapse-serverless-sql-pool/2-use-synapse-studio-analyze-visualize-data-via.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
+    }
   ]
 }

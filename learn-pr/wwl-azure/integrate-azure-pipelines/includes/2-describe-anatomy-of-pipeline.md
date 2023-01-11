@@ -25,7 +25,7 @@ trigger:
 #    - main
 
 variables:
-  name: martin
+  name: John
 
 pool:
   vmImage: ubuntu-latest
@@ -34,7 +34,7 @@ jobs:
 
 - job: helloworld
   steps:
-
+    - checkout: self
     - script: echo "Hello, $(name)"
 
 ```
@@ -141,7 +141,7 @@ You can define dependencies between jobs using the `dependsOn` property. It lets
 
 A sequential dependency is implied if you don't explicitly define a dependency.
 
-If you want jobs to run parallel, you need to specify `dependsOn: none`.
+If you want jobs to run parallel, you need to specify `dependsOn: []`.
 
 Let's look at a few examples. Consider this pipeline:
 
@@ -161,7 +161,7 @@ jobs:
 
 Because no dependsOn was specified, the jobs will run sequentially: first A and then B.
 
-To have both jobs run in parallel, we add dependsOn: none to job B:
+To have both jobs run in parallel, we add dependsOn: \[\] to job B:
 
 ```YAML
 jobs:
@@ -172,7 +172,7 @@ jobs:
 
 
 - job: B
-  dependsOn: none
+  dependsOn: [] # this removes the implicit dependency on previous stage and causes this to run in parallel
   steps:
   # steps omitted for brevity
 
@@ -285,11 +285,11 @@ To dereference a variable, wrap the key in $(). Let's consider this example:
 
 ```YAML
 variables:
-  name: martin
+  name: John
 steps:
 
 - script: echo "Hello, $(name)!"
 
 ```
 
-It will write Hello, martin! To the log.
+It will write Hello, John! To the log.
