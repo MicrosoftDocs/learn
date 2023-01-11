@@ -28,6 +28,5 @@ products:
 subjects:
 - data-analytics
 units:
-- learn.wwl.serve-data-from-azure-synapse-serverless-sql-pool.use-synapse-studio-to-analyze-visualize-data-via
 badge:
   uid: learn.wwl.serve-data-from-azure-synapse-serverless-sql-pool.badge
