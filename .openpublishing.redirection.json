@@ -19669,9 +19669,11 @@
       "source_path": "learn-pr/iot/trigger-azure-event-grid-workflow-iot-device/8-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/react-to-state-changes-using-event-grid/",
       "redirect_document_id": false
-  }
-
-
-    
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/serve-data-from-azure-synapse-serverless-sql-pool/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools/",
+      "redirect_document_id": false
+    }
   ]
 }
