@@ -1,6 +1,6 @@
 Now that you've created a basic workflow, you're ready to set up the workflow to deploy your Bicep files. In this unit, you'll learn how to deploy Bicep code from a workflow and how to set up the deployment steps.
 
-[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+[!INCLUDE [Note - don't run commands](../../../includes/dont-run-commands.md)]
 
 ## Check out your code
 
@@ -48,7 +48,7 @@ After this action has executed, your runner will be authenticated and able to ru
 
 After your workflow signs in to Azure, it can use the workload identity to run the Bicep deployment. In GitHub Actions, you use the `azure/arm-deploy` action to initiate a Bicep deployment.
 
-> [!NOTE] 
+> [!NOTE]
 > There are other ways you can deploy Bicep files from GitHub Actions. For example, you can use the `azure/CLI` action and then provide Azure CLI commands to run your deployments. However, since the `azure/arm-deploy` task is specifically designed for deployments, you'll use that in this module.
 
 Here's an example of how you can configure a step to use the `azure/arm-deploy` action:
@@ -100,9 +100,9 @@ GitHub Actions also uses *default environment variables*. Default environment va
 
 Sometimes, you need to store secret information for your workflow to use, like a database password or API key. You use GitHub *secrets* to securely store information that contains credentials or sensitive information. Your workflow can access the secret's value.
 
-Secrets are created in your GitHub repository settings. A secret is available to all of the workflows in the repository. In a later module, you'll learn about _environments_, which enable you to restrict the use of secrets to deployments to a specific environment. 
+Secrets are created in your GitHub repository settings. A secret is available to all of the workflows in the repository. In a later module, you'll learn about _environments_, which enable you to restrict the use of secrets to deployments to a specific environment.
 
-[!include[Best-effort protection for secrets](../../includes/github-actions-secret-best-effort.md)]
+[!INCLUDE [Best-effort protection for secrets](../../includes/github-actions-secret-best-effort.md)]
 
 You create secrets by using the GitHub web interface. To refer to a secret value in your workflow, use the following syntax:
 

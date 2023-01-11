@@ -5,9 +5,10 @@ In this exercise, you'll update the workflow you created to run automatically wh
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Update your workflow, so it triggers automatically whenever a file changes in the *deploy* folder on the *main* branch.
-> * Make a change to your Bicep file.
-> * Verify that the workflow runs automatically.
+>
+> - Update your workflow, so it triggers automatically whenever a file changes in the *deploy* folder on the *main* branch.
+> - Make a change to your Bicep file.
+> - Verify that the workflow runs automatically.
 
 ## Update the trigger to be branch-based
 

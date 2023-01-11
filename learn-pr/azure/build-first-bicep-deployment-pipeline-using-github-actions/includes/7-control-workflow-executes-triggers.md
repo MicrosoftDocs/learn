@@ -1,6 +1,6 @@
 You now have a working workflow that deploys your Bicep file to your Azure environment. However, whenever you change your file, you must manually run your workflow. In this unit, you'll learn how to trigger your workflow to run automatically whenever your Bicep code changes.
 
-[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+[!INCLUDE [Note - don't run commands](../../../includes/dont-run-commands.md)]
 
 ## What is a workflow trigger?
 
@@ -28,7 +28,7 @@ You can set up triggers to run your workflow on a specific branch or on sets of 
 ```yaml
 on:
   push:
-    branches:    
+    branches:
       - main
       - 'release/**'
 ```
@@ -44,11 +44,11 @@ on:
 
 > [!NOTE]
 > You can exclude certain branches by using the `!` character. Suppose you want to trigger your workflow for your main branch and all release branches, except for the alpha releases. You can use the `!` character to express this:
-> 
+>
 > ```yaml
 > on:
 >   push:
->     branches:    
+>     branches:
 >       - main
 >       - 'release/**'
 >       - '!release/**-alpha'

@@ -3,11 +3,12 @@ You've created a basic workflow, and you've configured your Azure and GitHub env
 In this exercise, you'll:
 
 > [!div class="checklist"]
-> * Add a Bicep file to your repository.
-> * Add a workflow step to download your repository source code to the runner's file system.
-> * Add a workflow step to sign in to Azure.
-> * Add a workflow step to deploy your Bicep file.
-> * Run your workflow again and verify that it successfully deployed your website.
+>
+> - Add a Bicep file to your repository.
+> - Add a workflow step to download your repository source code to the runner's file system.
+> - Add a workflow step to sign in to Azure.
+> - Add a workflow step to deploy your Bicep file.
+> - Run your workflow again and verify that it successfully deployed your website.
 
 ## Add your website's Bicep file to the GitHub repository
 
@@ -70,7 +71,7 @@ Next, update your workflow definition to deploy your Bicep file to Azure.
 
    Notice that this task uses environment variables for the resource group name, and for the parameter that the Bicep file includes. It also uses the `github.run_number` default environment variable to name the deployment in Azure.
 
-1. Add these variables and their values at the top of your workflow file, below the `on: [workflow_dispatch]` trigger and above the `jobs`: 
+1. Add these variables and their values at the top of your workflow file, below the `on: [workflow_dispatch]` trigger and above the `jobs`:
 
    :::code language="yaml" source="code/6-workflow.yml" range="1-13" highlight="9-11" :::
 
@@ -90,7 +91,7 @@ Next, update your workflow definition to deploy your Bicep file to Azure.
 
 Now, you're ready to run your workflow!
 
-1. In your browser, open the workflow by selecting **Actions** > **deploy-toy-website**. 
+1. In your browser, open the workflow by selecting **Actions** > **deploy-toy-website**.
 
 1. Select **Run workflow** > **Run workflow**.
 
@@ -106,7 +107,7 @@ Now, you're ready to run your workflow!
 
 1. Select **Run azure/arm-deploy@v1**. This displays the task details.
 
-1. Select **Run azure/arm-deploy@v1** in the task details. 
+1. Select **Run azure/arm-deploy@v1** in the task details.
 
    :::image type="content" source="../media/6-log-variables.png" alt-text="Screenshot of the GitHub interface showing the workflow log, with the 'environment variables' highlighted." border="true":::
 
@@ -118,7 +119,7 @@ Now, you're ready to run your workflow!
 
 ## Verify the deployment
 
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. Go to the [Azure portal](https://portal.azure.com).
 
 1. In the left menu, select **Resource groups**.
 

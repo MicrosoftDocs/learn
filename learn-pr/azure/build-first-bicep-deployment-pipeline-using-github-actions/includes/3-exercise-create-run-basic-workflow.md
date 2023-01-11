@@ -5,13 +5,14 @@ You want to automate deployment of updates to your toy company's website. As a f
 In this exercise, you'll:
 
 > [!div class="checklist"]
-> * Create a GitHub account and repository.
-> * Create a basic workflow.
-> * Execute your basic workflow.
+>
+> - Create a GitHub account and repository.
+> - Create a basic workflow.
+> - Execute your basic workflow.
 
 ## Create a repository in GitHub
 
-1. In a browser, go to [GitHub](https://www.github.com?azure-portal=true). Sign in by using your GitHub account, or create a new account if you don't have one.
+1. In a browser, go to [GitHub](https://www.github.com). Sign in by using your GitHub account, or create a new account if you don't have one.
 
 1. Select the plus (**+**) icon in the upper right of the window, and then select **New repository**.
 
@@ -40,7 +41,7 @@ In Visual Studio Code, clone your repository.
 
    :::image type="content" source="../media/3-github-repository-new-clipboard.png" alt-text="Screenshot of the GitHub interface showing the new empty repository, with the repository URL copy button highlighted." border="true":::
 
-1. Open Visual Studio Code. 
+1. Open Visual Studio Code.
 
 1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 
@@ -56,7 +57,9 @@ In Visual Studio Code, clone your repository.
    git clone https://github.com/mygithubuser/toy-website-workflow
    ```
 
-1. This is the first time you've used this repository, so you are prompted to sign in.
+   A warning is displayed that you cloned an empty repository. You can ignore the message.
+
+1. This is the first time you've used this repository, so you might be prompted to sign in.
 
    On Windows, type <kbd>1</kbd> to authenticate using a web browser, and select <kbd>Enter</kbd>.
 
@@ -79,7 +82,8 @@ Now that you've created and cloned your repository, you're ready to create a bas
 
 1. In Visual Studio Code, open the Explorer.
 
-1. At the root of your current folder structure, create a new folder named *.github*.
+1. At the root of your _toy-website-workflow_ folder structure, create a new folder named _.github_.
+
    > [!NOTE]
    > Make sure you include the period at the start of the folder name. This indicates that this is a hidden folder, and GitHub requires the period for GitHub Actions to detect the workflow definition.
 
@@ -89,7 +93,7 @@ Now that you've created and cloned your repository, you're ready to create a bas
 
    :::image type="content" source="../media/3-visual-studio-code-workflow-file.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the .github/workflows folder and the workflow.yml file shown." border="true":::
 
-1. Copy the following workflow definition into the file: 
+1. Copy the following workflow definition into the file:
 
    :::code language="yaml" source="code/3-workflow.yml" :::
 
@@ -114,9 +118,9 @@ You have created a workflow definition. GitHub Actions automatically detects you
 
    :::image type="content" source="../media/3-actions-tab.png" alt-text="Screenshot of the GitHub interface showing the repository page, and the Actions tab highlighted." border="true":::
 
-1. Select the **toy-website-deployment** workflow.
+1. Select the **deploy-toy-website** workflow.
 
-   :::image type="content" source="../media/3-workflow-select.png" alt-text="Screenshot of the GitHub interface showing the Actions tab, with the toy-website-deployment workflow selected." border="true":::
+   :::image type="content" source="../media/3-workflow-select.png" alt-text="Screenshot of the GitHub interface showing the Actions tab, with the deploy-toy-website workflow selected." border="true":::
 
 1. Select the **Run workflow** dropdown and click the **Run workflow** button.
 
@@ -132,9 +136,9 @@ You have created a workflow definition. GitHub Actions automatically detects you
 
 ## Verify the workflow run
 
-1. Once the workflow run starts, select the run to view the run's details. Refresh the page until the job status displays **Success**.
+1. When the workflow run starts, select **deploy-toy-website** to view the run's details. Refresh the page until the job status displays **Success**.
 
-   :::image type="content" source="../media/3-workflow-run-details.png" alt-text="Screenshot of the GitHub interface showing the details of the run, with the status and commit identifier highlighted." border="true":::
+   :::image type="content" source="../media/3-workflow-run-details.png" alt-text="Screenshot of the GitHub interface showing the details of the workflow run, with the status and commit identifier highlighted." border="true":::
 
    Also, notice the page includes an identifier for the Git commit that the run used. This indicates the version of your repository's content that the workflow used.
 
@@ -142,11 +146,11 @@ You have created a workflow definition. GitHub Actions automatically detects you
 
    :::image type="content" source="../media/3-workflow-run-job-list.png" alt-text="Screenshot of the GitHub interface showing the run details menu, with the say-hello job highlighted." border="true":::
 
-1. The job information page is displayed, which shows the log of the steps that the workflow ran for you. Notice that your **Placeholder step** is included.
+1. The job information page is displayed, which shows the log of the steps that the workflow ran for you. Notice that your **placeholder step** is included.
 
-   :::image type="content" source="../media/3-workflow-job-summary.png" alt-text="Screenshot of the GitHub interface showing the workflow run log, with 'Placeholder step' highlighted." border="true":::
+   :::image type="content" source="../media/3-workflow-job-summary.png" alt-text="Screenshot of the GitHub interface showing the workflow run log, with the placeholder step highlighted." border="true":::
 
-   Notice the list includes steps that you didn't specify. These are created automatically by GitHub Actions. 
+   Notice the list includes steps that you didn't specify. These are created automatically by GitHub Actions.
 
 1. Select the **Placeholder step** step.
 
