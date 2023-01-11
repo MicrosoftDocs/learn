@@ -17,8 +17,8 @@ In this exercise, we'll use the Azure Migrate: App Containerization tool to disc
 Select **Sign in** to log in to your Azure account.
 
 1. You'll need a device code to authenticate with Azure. Selecting **Sign in** will open a modal with the device code.
-2. Select **Copy code & sign in** to copy the device code and open an Azure sign-in prompt in a new browser tab. If it doesn't appear, make sure you've disabled the pop-up blocker your the browser.
-3. On the new tab, paste the device code and complete sign in using your Azure account credentials. You can close the browser tab after sign in is complete to return to the App Containerization tool's web interface.
+2. Select **Copy code & sign in** to copy the device code and open an Azure sign-in prompt in a new browser tab. If it doesn't appear, make sure you've disabled the pop-up blocker in your browser.
+3. On the new tab, paste the device code and finish signing in using your Azure account credentials. You can close the browser tab after sign-in is complete to return to the App Containerization tool's web interface.
 4. Select the **Azure tenant** that you want to use.
 5. Specify the **Azure subscription** that you want to use.
 
