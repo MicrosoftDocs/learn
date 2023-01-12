@@ -32,7 +32,7 @@ Analytics drives business value in IoT solutions, but not all analytics needs to
 
 Azure IoT Edge is made up of three components:
 
-- IoT Edge modules are containers that run Azure services, third-party services, or your own code. IoT Edge modules are deployed to IoT Edge devices and execute locally on those devices. In this module, you'll use various IoT Edge modules including one that generates simulated environmental telemetry and one that runs an Azure function to filter that telemetry. You use a *deployment manifest* to specify the modules to deploy to your IoT Edge device.
+- IoT Edge modules are containers that run Azure services, third-party services, or your own code. IoT Edge modules are deployed to IoT Edge devices and execute locally on those devices. In this module, you'll use various IoT Edge modules including one that generates simulated environmental telemetry and one that runs an Azure function to filter that telemetry. You use a *deployment manifest* to specify the modules to deploy to your IoT Edge device. You can use IoT Central to manage the deployment manifests in your solution.
 - The IoT Edge runtime runs on each IoT Edge device and manages the modules deployed to each device. When an IoT Edge device connects to an IoT Central application, the IoT Edge runtime downloads the deployment manifest to determine which modules it should install and run on the device.
 - A cloud-based interface enables you to remotely monitor and manage IoT Edge devices. In this module you use IoT Central as the cloud-based interface.
 
