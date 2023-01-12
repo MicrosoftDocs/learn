@@ -2,7 +2,7 @@ Virtual network peering is nontransitive. The communication capabilities in a pe
 
 Suppose you have three virtual networks: A, B, and C. You establish virtual network peering between networks A and B, and also between networks B and C. You don't set up peering between networks A and C. The virtual network peering capabilities that you set up between networks B and C don't automatically enable peering communication capabilities between networks A and C. If you don't want to establish virtual network peering between networks A and C, you need to use another mechanism to support communication between these networks.
 
-### Things to know about extending peering capabilities
+### Things to know about extending peering
 
 There are a few ways to extend the capabilities of your peering for resources and virtual networks outside your peering network:
 - Hub and spoke networks

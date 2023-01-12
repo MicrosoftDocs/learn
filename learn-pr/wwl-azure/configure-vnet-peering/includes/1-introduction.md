@@ -9,7 +9,8 @@ You're responsible for implementing an Azure Virtual Network peering solution an
 In this module, you learn how to:
 
 - Identify usage cases and product features of Azure Virtual Network peering.
-- Configure gateway transit, connectivity, and service chaining.
+- Configure your network to implement Azure VPN Gateway for transit connectivity.
+- Extend peering by using a hub and spoke network with user-defined routes and service chaining.
 
 ## Skills measured
 
