@@ -5,11 +5,15 @@ Azure Private 5G Core also allows you to use an application of your choice to mo
 
 ## Platform metrics
 
-On the **Overview** page of the Mobile Network Site resource that you use to manage a site, Azure Private 5G Core displays the platform metrics on the **Monitoring** tab.
+On the **Overview** page of the **Mobile Network Site** resource that you use to manage a site, Azure Private 5G Core displays the platform metrics on the **Monitoring** tab, as shown in the following screenshot:
 
-The platform metrics provide the health and performance information for both the packet core instance and the RANs to which the packet core instance connects. For the packet core instance, you can check metrics like idle UEs connected or session establishment failures. For the RANs, you can check metrics like access point names and the longitude and latitude of each access point.
+:::image type="content" source="../media/platform-metrics.png" alt-text="A screenshot that shows the platform metrics charts." border="true":::
 
-The platform metrics are automatically created when you deploy a site. No configuration is required.
+The platform metrics provide the health and performance information for the packet core instance. You can check metrics like user plane packets received or user plane packets dropped.
+
+The platform metrics are automatically created when you deploy a site.
+
+With the metrics data, you can configure alerts through the **Packet Core Control Plane** resource and get notified once an alert is triggered.
 
 > [!NOTE]
 > Currently, only one dashboard is provided for the platform metrics.
