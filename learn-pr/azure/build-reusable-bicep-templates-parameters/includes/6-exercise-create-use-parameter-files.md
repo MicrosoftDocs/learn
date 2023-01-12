@@ -114,9 +114,10 @@ In the terminal, execute the following commands to create the key vault and secr
 
 For the `keyVaultName` replace `YOUR-KEY-VAULT-NAME` with a name for your key vault. The `read` commands for the `login` and `password` variables will prompt you for values. As you type, the values aren't displayed in the terminal and aren't saved in your command history.
 
-The `login` and `password` variables aren't secure and their values can be displayed with the `echo` command. After your vault secrets are created, you can rerun the `read` commands without inputting a value to remove each variable's existing value.
+To protect the variable values in your Bash terminal session, be aware of the following items:
 
-The `az keyvault secret set` output in your terminal includes the values of the `login` and `password` variables. To suppress that output, the parameter `--output none` is used.
+- Variable values aren't stored as a secure string and can be displayed by entering a command like `$yourVariableName` on the command line or with the `echo` command. In this exercise, after your vault secrets are created, you can remove each variable's existing value by running the `read` commands without inputting a value.
+- The `az keyvault secret set` uses the `--value` parameter to create a secret's value. The command's output displays a property named `value` that contains the secret's value. You can suppress the command's entire output with the parameter `--output none` as shown in the example.
 
 To create the `keyVaultName`, `login`, and `password` variables, run each command separately. Then you can run the block of commands to create the key vault and secrets.
 

@@ -58,7 +58,7 @@ The trained Bonsai brain for Moab should be able to adjust the plate pitch and r
 
 To achieve this, we first define the concept, “**Move to center**" which can be found in the extract of the AI specification document shown below.
 
-    ![The screenshot shows concept in AI Specification document.](../media/ai-specification.png)
+![The screenshot shows concept in AI Specification document.](../media/ai-specification.png)
 
 ### Environment state
 
@@ -68,16 +68,31 @@ The environment state is obtained with the sensors placed in the environment or 
 
 To define the valid state ranges in Inkling, we'll rely on three global parameters defined at the top of the Inkling file:
 
-- **MaxDistanceStep**: The expected distance a ball with maximum valid speed could traverse for an iteration step. This parameter is set to XXX meters.
-- **RadiusOfPlate**: The distance from the center to the edge of the plate. This parameter is set to XXX meters.
-- **MaxVelocity**: Maximum expected speed in between iterations. This parameter is set to XXX meters.
+- **RadiusOfPlate**: The distance from the center to the edge of the plate. This parameter is set to 0.1125 in meters.
+- **MaxVelocity**: Maximum expected speed in between iterations. This parameter is set to 6.0 in meters per second.
+- **DefaultTimeDelta**: Default time delta between simulation steps (s). This parameter is set to 0.045.
+- **MaxDistancePerStep**: The expected distance a ball with maximum valid speed could traverse for an iteration step. MaxDistancePerStep is multiple of DefaultTimeDelta and MaxVelocity. DefaultTimeDelta is set to 0.045. MaxVelocity is set to 6.0 in meters per second.
 
 Using the above parameters, the environment state is then defined in Visual Authoring as shown below.
+
+![The screenshot shows the observable states in the brain design diagram.](../media/observable-states.png)
 
 The Inkling associated with this is:
 
 - **ball_x, ball_y**: the (x, y) ball position
 - **ball_vel_x, ball_vel_y**: the x and y ball velocity components
+
+```
+{
+    # Ball X,Y position
+    ball_x: number<-MaxDistancePerStep - RadiusOfPlate .. RadiusOfPlate + MaxDistancePerStep>,
+    ball_y: number<-MaxDistancePerStep - RadiusOfPlate .. RadiusOfPlate + MaxDistancePerStep>,
+
+    # Ball X,Y velocity
+    ball_vel_x: number<-MaxVelocity .. MaxVelocity>,
+    ball_vel_y: number<-MaxVelocity .. MaxVelocity>,
+}
+```
 
 ### Control actions
 
@@ -98,24 +113,46 @@ In the Moab simulation, the available control actions are captured by the follow
     - **-1** means "tilt all the way to the left"
     - **+1** means "tilt all the way to the right"
 
+```
+{
+    # Range -1 to 1 is a scaled value that represents
+    # the full plate rotation range supported by the hardware.
+    input_pitch: number<-1 .. 1>, # rotate about x-axis
+    input_roll: number<-1 .. 1>, # rotate about y-axis
+}
+```
+
 ### Goals
 
 Goals are a high-level specification of what the Brain should learn, and from the Moab AI solution specification.
 
-    [The screenshot shows the goal in AI Specification document.](../media/goal-reward.PNG)
+![The screenshot shows the goal in AI Specification document.](../media/goal-reward.PNG)
 
 As shown below, to achieve this, the goal is expressed with two goals:
-	1.	Do not let the ball fall off the plate.
-	2.	Drive the ball to the center of the plate.
+  
+  1. Do not let the ball fall off the plate.
+  2. Drive the ball to the center of the plate.
 
 To define the goals, we'll rely on two global parameters defined at the top of the Inkling file:
 
-- **RadiusOfPlate**: The distance from the center to the edge of the plate. This parameter is set to XXX meters.
-- **CloseEnough**: The max target distance allowed from center for the episode to be considered a success. This parameter is set to XXX meters.
+- **RadiusOfPlate**: The distance from the center to the edge of the plate. This parameter is set to 0.1125 in meters.
+- **CloseEnough**: The max target distance allowed from center for the episode to be considered a success. This parameter is set to 0.02 in meters.
 
 ![The screenshot shows the goal in the brain graph.](../media/goal.png)
 
-Available Goal objectives in Inkling include:
+The inkling code associated with this is:
+
+```
+goal (State: ObservableState) {
+                avoid `Fall Off Plate`:
+                    Math.Hypot(State.ball_x, State.ball_y)
+                    in Goal.RangeAbove(RadiusOfPlate * 0.8)
+                drive `Center Of Plate`:
+                    [State.ball_x, State.ball_y]
+                    in Goal.Sphere([0, 0], CloseEnough)
+```
+
+Available [goal objectives](/bonsai/inkling/keywords/goal/objectives) in Inkling include:
 
 - **Avoid**: Avoid a defined region.
 - **Drive**: Get to a target as quickly as possible and stay inside the target.
@@ -135,7 +172,30 @@ When restarting an episode, the simulation should take configuration parameters 
 
 The simulator configuration can be accessed by clicking on the simulation box in Visual Authoring as shown below:
 
-![The screenshot shows the configuration in brain graph.](../media/chart-brain-simulator.png)
+![The screenshot shows the configuration in brain graph.](../media/sim-configuration.png)
+
+This is defined in Inkling as:
+
+```
+{
+    # Model initial ball conditions
+    initial_x: number<-RadiusOfPlate .. RadiusOfPlate>, # in (m)
+    initial_y: number<-RadiusOfPlate .. RadiusOfPlate>,
+
+    # Model initial ball velocity conditions
+    initial_vel_x: number<-MaxInitialVelocity .. MaxInitialVelocity>, # in (m/s)
+    initial_vel_y: number<-MaxInitialVelocity .. MaxInitialVelocity>,
+
+    # Range -1 to 1 is a scaled value that represents
+    # the full plate rotation range supported by the hardware.
+    initial_pitch: number<-1 .. 1>,
+    initial_roll: number<-1 .. 1>,
+
+    # Starting height of the Moab plate in meters (m) 
+    height_z: number<0.1 .. 0.2>
+
+}
+```
 
 Note that Bonsai can't verify if config values are taken and applied by the simulation. Simulation engineers are the ones to inform brain trainers about the valid config parameters (and their ranges) that the simulation accepts during episode restart.
 
