@@ -31,7 +31,7 @@ Follow these guidelines while you plan:
 
   After the upgrade of the site, summarize what you've learned and then proceed to upgrade the packet core instances in other sites accordingly.  
 
-- Create a test plan to make sure everything works as expected after the upgrade.
+- Check local alarms, dashboard activities, and test UE devices, to make sure everything works as expected after the upgrade. If UE devices aren't attached, use the local distributed tracing tool or the integrated diagnostic capture tool for further investigation.
 
   For example, you can check the network statistics through the platform metrics or the packet core dashboards.
 

@@ -1,4 +1,4 @@
-Enterprises usually use their private mobile networks to host various UEs. Each UE uses a SIM or eSIM to identify itself to the network.
+Enterprises use their private mobile networks to attach various UE devices. Each UE uses a SIM or eSIM to identify and authenticate itself to the network.
 
 To effectively manage the network traffic between the UEs and the data networks (DNs), Azure Private 5G Core allows you to define SIM policies that will be applied to the SIMs. SIM policies ensure that the network requirements of each UE are satisfied and the packet flows from each UE are appropriately controlled.
 
