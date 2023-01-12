@@ -18,17 +18,15 @@ Visual Studio Code is a powerful code editor and a lightweight general-purpose [
 
 1. In either the Extensions panel, or in the main panel, select **Install**.
 
-    ::: zone pivot="windows"
-
     :::image type="content" source="../media/visual-studio-code-extensions-install.png" alt-text="Screenshot of the search results in the Extensions panel for Windows with Python Install highlighted.":::
 
 1. When the installation is complete, the **Install** button changes to a **Settings ⚙️** icon in the Extensions view and buttons, **Disable** and **Uninstall** in the main panel. This message lets you know that you've successfully installed the Python extension for Windows.
 
     :::image type="content" source="../media/visual-studio-code-python-extensions-installed.png" alt-text="Screenshot of the Python extension installed.":::
 
-    ::: zone-end
+::: zone-end
 
-    ::: zone pivot="linux"
+::: zone pivot="linux"
 
 1. In Visual Studio Code, select **View** > **Extensions** to open the Extensions view.
 
@@ -48,7 +46,7 @@ Visual Studio Code is a powerful code editor and a lightweight general-purpose [
 
     :::image type="content" source="../media/visual-studio-code-python-extensions-installed.png" alt-text="Screenshot of the Python extension installed.":::
 
-    ::: zone-end
+::: zone-end
 
     ::: zone pivot="macos"
 
@@ -73,7 +71,7 @@ Visual Studio Code is a powerful code editor and a lightweight general-purpose [
     > [!IMPORTANT]
     > After you install the Python extension, you may see a dialog box that asks you whether you want to install the command line developer tools. You should select **Install**. You'll need to agree to the Command Line Tools License Agreement. The installation process could take as long as 20 minutes or more, depending on your internet connection. After the install is complete, a dialog box appears stating that the software is installed. Select **Done** to proceed.
 
-    ::: zone-end
+::: zone-end
 
 ## Summary
 
