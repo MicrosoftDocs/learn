@@ -69,9 +69,9 @@ Next, update your workflow definition to deploy your Bicep file to Azure.
 
    :::code language="yaml" source="code/6-workflow.yml" range="13-28" highlight="11-16" :::
 
-   Notice that this task uses environment variables for the resource group name, and for the parameter that the Bicep file includes. It also uses the `github.run_number` default environment variable to name the deployment in Azure.
+   Notice that this task uses the `github.run_number` default environment variable to name the deployment in Azure. It also uses environment variables for the resource group name and for the `environmentType` parameter in the Bicep file.
 
-1. Add these variables and their values at the top of your workflow file, below the `on: [workflow_dispatch]` trigger and above the `jobs`:
+1. Add these variables and their values at the top of your workflow file, between `permissions` and `jobs`:
 
    :::code language="yaml" source="code/6-workflow.yml" range="1-13" highlight="9-11" :::
 
@@ -129,14 +129,12 @@ Now, you're ready to run your workflow!
 
    :::image type="content" source="../media/6-portal-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group with one successful deployment.":::
 
-   Notice that the name of the deployment matches the workflow's run number in GitHub Actions, because you used the `github.run_number` environment variable to name your deployment.
-
 1. Select **1 Succeeded** to see the details of the deployment.
 
    :::image type="content" source="../media/6-portal-deployment-list.png" alt-text="Screenshot of the Azure portal that shows the resource group deployment history, with the deployment highlighted.":::
 
-   The deployment name is the same as the name of the workflow run.
+   Notice that the name of the deployment matches the workflow's run number in GitHub Actions, because you used the `github.run_number` environment variable to name your deployment.
 
-1. To see what resources were deployed, select the deployment. To expand the deployment to see more details, select **Deployment details**. In this case, there's a storage account, an Azure App Service plan, and an app.
+1. To see which resources were deployed, select the deployment. To expand the deployment and see more details, select **Deployment details**. In this case, there's a storage account, an Azure App Service plan, and an app.
 
    :::image type="content" source="../media/6-portal-deployment-details.png" alt-text="Screenshot of the Azure portal that shows the resource group deployment details, with the App Service resources highlighted.":::
