@@ -18,7 +18,7 @@ abstract: |
   - Publish your builds so others can access them
   - Use templates to build multiple configurations
 prerequisites: |
-  - An Azure DevOps organization with access to parallel jobs. See the following [Introduction](1-introduction.md) for how to check for parallel jobs in your organization and how to request a free grant if you don't.
+  - An Azure DevOps organization with access to parallel jobs. See the following [Introduction](1-introduction.yml) for how to check for parallel jobs in your organization and how to request a free grant if you don't.
   - Visual Studio Code
   - .NET 6.0 SDK
   - Git
