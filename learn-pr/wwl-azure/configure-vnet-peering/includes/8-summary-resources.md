@@ -12,6 +12,8 @@ In this module, you examined usage cases and product features of Azure Virtual N
 
 - Configure [Azure VPN Gateway transit for virtual network peering](/azure/vpn-gateway/vpn-gateway-peering-gateway-transit).
 
+- Create [peering for virtual networks in different deployment models](/azure/virtual-network/create-peering-different-deployment-models).
+
 - Explore [hub-spoke network topology in Azure and virtual network peering](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke?tabs=cli#virtual-network-peering).
 
 - Troubleshoot [virtual network peering issues](/azure/virtual-network/virtual-network-troubleshoot-peering-issues).

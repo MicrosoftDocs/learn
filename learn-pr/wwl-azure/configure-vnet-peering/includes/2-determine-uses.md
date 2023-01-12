@@ -18,6 +18,8 @@ Let's examine some prominent characteristics of Azure Virtual Network peering.
 
 - Global peering of virtual networks in different Azure Government cloud regions isn't permitted.
 
+- After you create a peering between virtual networks, the individual virtual networks are still managed as separate resources.
+
 ### Things to consider when using Azure Virtual Network peering
 
 Consider the following benefits of using Azure Virtual Network peering.
