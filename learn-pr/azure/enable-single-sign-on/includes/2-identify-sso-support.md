@@ -1,6 +1,6 @@
-A team asked the administrator of the retail company to add a new application to help with company promotion. The administrator searches for the application in the Azure AD application gallery and identifies single sign-on support for it. 
+A team asked the administrator of the retail company to add a new application to help with company promotion. The administrator searches for the application in the Azure Active Directory (Azure AD) application gallery and identifies single sign-on support for it. 
 
-Employees in the retail company likely already have an account in the tenant for the organization. But, for testing single sign-on for the application, the administrator should create a test user account. The administrator makes the application available to employees after successfully testing it with single sign-on configured.
+Employees in the retail company likely already have an account in the tenant for the organization, but for testing single sign-on for the application, the administrator should create a test user account. The administrator makes the application available to employees after successfully testing it with single sign-on configured.
 
 ## Azure AD application gallery
 
@@ -10,11 +10,11 @@ Azure AD has a gallery that contains thousands of pre-integrated applications. M
 - Users are assigned access
 - Single sign-on is set up so that the users can sign in with their Azure AD credentials
 
-The following filters can be used when searching for the application in the gallery:
+You can use the following filters when searching for the application in the gallery:
 
-- **Single sign-on options** – Search for applications that support these SSO types: SAML, OpenID Connect (OIDC), Password, or Linked. Listed as **Single Sign-on Mode** on the overview pane for an application in the gallery.
-- **User account management** – The only option available is automated provisioning.
-- **Categories** – When an application is added to the gallery it can be classified in a specific category. Many categories are available such as Business management, Collaboration, or Education.
+- **Single sign-on options**: Search for applications that support these SSO types: SAML, OpenID Connect (OIDC), Password, or Linked. Listed as **Single Sign-on Mode** on the overview pane for an application in the gallery.
+- **User account management**: The only option available is automated provisioning.
+- **Categories**: When an application is added to the gallery, it can be classified in a specific category. Many categories are available, such as Business management, Collaboration, or Education.
 
 Make sure to understand the single sign-on types and the flows that the application supports. Single sign-on types define the protocol that can be used for single sign-on with the application. An application may support one or more of the available types. Single sign-on flows represent the way that single sign-on is processed between the identity provider and the service provider.
 
