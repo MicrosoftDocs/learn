@@ -6,7 +6,7 @@ There are two recommended authentication methods you can implement when authenti
 
 ## Authentication with SAML SSO
 
-SAML authentication is a process used to verify user identity and credentials against a known identify provider. Nowadays, your company may likely already be using this form of authentication. If so, you can link your existing IdP to GitHub for user sign-in management. The following is a high-level overview of the process that occurs with enabled SAML SSO within your GitHub Enterprise:
+SAML authentication is a process used to verify user identity and credentials against a known identity provider. Nowadays, your company may likely already be using this form of authentication. If so, you can link your existing IdP to GitHub for user sign-in management. The following is a high-level overview of the process that occurs with enabled SAML SSO within your GitHub Enterprise:
 
 - Before enabling SAML SSO with your GitHub Enterprise, an Administrator needs to connect the GitHub organization to a supported IdP.
 - Next, when a member accesses resources within an organization that uses SAML SSO, GitHub redirects the member to the IdP to authenticate.

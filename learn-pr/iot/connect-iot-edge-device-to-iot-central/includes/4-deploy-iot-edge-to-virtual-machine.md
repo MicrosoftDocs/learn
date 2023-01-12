@@ -16,24 +16,24 @@ The Azure IoT Edge runtime enables custom and cloud logic on IoT Edge devices. T
 
 ## What are IoT Edge modules?
 
-IoT Edge modules are units of execution, implemented as Docker compatible containers, that run your business logic at the edge. Multiple modules can be configured to communicate with each other, creating a data processing pipeline. You can develop custom modules or package certain Azure services into modules that provide insights offline and at the edge. Because the modules run in Docker containers, they behave in the same way whether they're installed on a VM or on a real device.
+IoT Edge modules are units of execution that run your business logic at the edge. Modules are implemented as Docker compatible containers. Multiple modules can be configured to communicate with each other, creating a data processing pipeline. You can develop custom modules or package certain Azure services into modules that provide insights offline and at the edge. Because the modules run in Docker containers, they behave in the same way whether they're installed on a VM or on a real device.
 
 In the next unit, you'll install the IoT Edge runtime and deploy a custom module that collects environmental data to send to IoT Central. An IoT Central operator can then monitor the environmental conditions in your stores by viewing the telemetry on dashboards in the application.
 
 ## How does an IoT Edge device connect to IoT Central?
 
-IoT Edge devices, like other devices, use the Device Provisioning Service (DPS) to connect to your IoT Central application. In the previous unit, when you added a device to your IoT Central application, you made a note of the scope ID, device ID, and device key. You add these values to the IoT Edge configuration file on the IoT Edge device. The relevant section of this JSON file looks like the following. The `registration_id` is the device ID:
+IoT Edge devices, like other devices, use the Device Provisioning Service (DPS) to connect to your IoT Central application. In the previous unit, when you added a device to your IoT Central application, you made a note of the scope ID, device ID, and device key. You add these values to the IoT Edge configuration file on the IoT Edge device. The relevant section of this TOML file looks like the following. The `registration_id` is the device ID:
 
-```json
-# DPS symmetric key provisioning configuration
-provisioning:
-   source: "dps"
-   global_endpoint: "https://global.azure-devices-provisioning.net"
-   scope_id: "<SCOPE_ID>"
-   attestation:
-      method: "symmetric_key"
-      registration_id: "<REGISTRATION_ID>"
-      symmetric_key: "<SYMMETRIC_KEY>"
+```toml
+[provisioning]
+source = "dps"
+global_endpoint = "https://global.azure-devices-provisioning.net"
+id_scope = "YOUR_ID_SCOPE"
+
+[provisioning.attestation]
+method = "symmetric_key"
+registration_id = "YOUR_DEVICE_ID"
+symmetric_key = { value = "YOUR_DEVICE_KEY" }
 ```
 
 In the next unit, the deployment script you use for the IoT Edge device edits the configuration file for you.
@@ -62,7 +62,7 @@ The deployment manifest you used installs the two required system modules, `edge
           "edgeAgent": {
             "type": "docker",
             "settings": {
-              "image": "mcr.microsoft.com/azureiotedge-agent:1.0.9",
+              "image": "mcr.microsoft.com/azureiotedge-agent:1.4",
               "createOptions": "{}"
             }
           },
@@ -71,7 +71,7 @@ The deployment manifest you used installs the two required system modules, `edge
             "status": "running",
             "restartPolicy": "always",
             "settings": {
-              "image": "mcr.microsoft.com/azureiotedge-hub:1.0.9",
+              "image": "mcr.microsoft.com/azureiotedge-hub:1.4",
               "createOptions": "{}"
             }
           }
@@ -83,7 +83,7 @@ The deployment manifest you used installs the two required system modules, `edge
             "status": "running",
             "restartPolicy": "always",
             "settings": {
-              "image": "mcr.microsoft.com/azureiotedge-simulated-temperature-sensor:1.0",
+              "image": "mcr.microsoft.com/azureiotedge-simulated-temperature-sensor:1.4.6",
               "createOptions": "{}"
             }
           }
