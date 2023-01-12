@@ -3,7 +3,7 @@ uid: learn.language.vue-data-events
 metadata:
   title: Work with data and events in Vue.js
   description: Allowing users to interact with data is one of the core goals of Vue.js. In this module, you'll build a Vue app in JavaScript and you'll see how to respond to user events. You'll also see how to manage state and data in response. 
-  ms.date: 03/01/2021
+  ms.date: 01/11/2023
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: interactive-tutorial
