@@ -1396,7 +1396,7 @@ achievements:
   type: badge
   title: Manage IoT Central applications with the REST API
   summary: The IoT Central REST API lets you manage applications programmatically. For example, you can add device templates, create devices, set device properties, send commands to devices, and manage data exports.
-  iconUrl: /training/achievements/learn.iot.manage-iot-central-apps-with-rest-api.svg
+  iconUrl: /training/achievements/manage-iot-central-apps-with-rest-api.svg
 - uid: learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.badge
   type: badge
   title: Create a speech translator application with Unity and Azure Cognitive Services.
