@@ -29,7 +29,7 @@ For more information about these concepts, see relevant 4G or 5G documentation.
 
 ### Using services and SIM policies for network traffic control
 
-Azure Private 5G Core provides configuration to allow you to determine the QoS flows or EPS bearers the packet core instance will create and bind to SDFs when establishing PDU sessions or PDN connections. You can configure two primary resource types - services and SIM policies.
+Azure Private 5G Core provides configuration to allow you to define the QoS flows that the packet core instance will create and bind to SDFs when establishing PDU sessions or PDN connections. You can configure two primary resource types - services and SIM policies.
 
 A service is a representation of a set of QoS characteristics you apply to SDFs that match specific properties, such as their destination or the protocol used. You can also use services to limit or block SDFs based on these properties.
 

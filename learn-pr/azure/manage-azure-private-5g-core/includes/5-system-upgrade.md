@@ -24,7 +24,7 @@ Follow these guidelines while you plan:
   Some configuration information will be overwritten during the upgrade. The information you need to back up includes:
 
   - The account credentials for the packet core dashboards and the distributed tracing tool.
-  - The customizations you made to the packet core dashboards.
+  - The customizations you made to the packet core dashboards. See the Grafana documentation for instructions in saving a backed-up copy of your dashboards.
   - The recovery steps for any UEs that can't automatically re-register.
 
 - For a private mobile network that has multiple sites, upgrade the packet core instance in one site first.
