@@ -19,7 +19,7 @@ When this module was written, Python 3.11 was the latest version available, so i
 
 1. Select the most recent version of Python.
 
-    :::image type="content" source="../media/windows-install-python-search.png" alt-text="Screenshot of search results screen from Microsoft Store for Python, highlighting Python 3.10.":::
+    :::image type="content" source="../media/windows-install-python-search.png" alt-text="Screenshot of search results screen from Microsoft Store for Python, highlighting Python 3.11.":::
 
 1. On the Home tab, select *Get or Install*.
 

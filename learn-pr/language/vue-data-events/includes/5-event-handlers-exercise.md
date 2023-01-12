@@ -5,7 +5,7 @@ Now update your application to add an event handler for a newly created button o
 Start by adding to the Vue application:
 
 1. In Visual Studio Code, open the *index.js* file.
-1. Below the `TODO: Add methods` comment, add the following code to create the `bookCabin` function. This function is the event handler.
+1. On the line after the `TODO: Add methods` comment, add the following code to create the `bookCabin` function. This function is the event handler.
 
     ```javascript
     // TODO: Add methods
@@ -23,7 +23,7 @@ Start by adding to the Vue application:
 Now add the button to your form:
 
 1. In Visual Studio Code, open the *index.html* file.
-1. Below the `TODO: Add button later` comment, add the following HTML to create your button.
+1. On the line after the `TODO: Add button later` comment, add the following HTML to create your button.
 
     ```html
     <!--TODO: Add button later -->
