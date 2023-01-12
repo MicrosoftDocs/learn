@@ -12,8 +12,6 @@ Where:
  -  RRRRR is the repository name.
  -  WWWWW is the workflow name.
 
-Example: https://github.com/AAAAA/RRRRR/actions/workflows/WWWWW/badge.svg
-
 :::image type="content" source="../media/badge-failing-12fd7192.png" alt-text="Screenshot of the Badge failing in a color to represent an error.":::
 
 
