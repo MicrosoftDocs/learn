@@ -1,8 +1,8 @@
-Azure Monitor is a powerful reporting and analytics tool. Use it for insights into the behavior and running of your environment and applications. You can then respond proactively to faults in your system.
+Azure Monitor is a powerful reporting and analytics tool. You can use it for insights into the behavior and running of your environment and applications. You can then respond proactively to faults in your system.
 
 After the downtime that your customers faced, you set up monitoring on your key resources in Azure. With the monitoring in place, you want to make sure the right people are being alerted at the right level.
 
-In this unit, you'll see how Azure Monitor receives resource data, what makes up an alert, and how and when to use an alert. Finally, you'll learn how to create and manage your own alerts.
+In this unit, you'll learn how Azure Monitor receives resource data, what makes up an alert, and how and when to use an alert. Finally, you'll learn how to create and manage your own alerts.
 
 ## Data types in Azure Monitor
 
@@ -21,7 +21,7 @@ You'll learn about the three signal types that you can use to monitor your envir
 
 ## Composition of an alert rule
 
-Every alert or notification available in Azure Monitor is the product of a rule. Some of these rules are built into the Azure platform. You use alert rules to create custom alerts and notifications. No matter which target resource or data source you use, the composition of an alert rule remains the same.
+Every alert or notification available in Azure Monitor is the product of a rule. Some of these rules are built into the Azure platform. You can use alert rules to create custom alerts and notifications. No matter which target resource or data source you use, the composition of an alert rule remains the same.
 
 - **RESOURCE**
   - The *target resource* to be used for the alert rule. It's possible to assign multiple target resources to a single alert rule. The type of resource will define the available signal types.
@@ -40,7 +40,7 @@ Every alert or notification available in Azure Monitor is the product of a rule.
     - **3**: Informational
     - **4**: Verbose
 
-![Screenshot of the "Create rule" page for Azure Monitor in the portal.](../media/2-creating-an-alert.png)  
+![Screenshot of the "Create rule" page for Azure Monitor in the Azure portal.](../media/2-creating-an-alert.png)  
 
 ## Scope of alert rules
 
@@ -54,12 +54,11 @@ You can get monitoring data from across most of the Azure services, and report o
 
 The following alert capabilities aren't yet available for the generation of monitoring data:
 
-- Service health alerts based on activity logs
 - Web availability tests through Application Insights
 
 ## Manage alert rules
 
-Not every alert rule that you create needs to run forever. With Azure Monitor, you can specify one or more alert rules, and enable or disable them, as needed.
+Not every alert rule that you create needs to run forever. With Azure Monitor, you can specify one or more alert rules and enable or disable them, as needed.
 
 As an Azure solution architect, you'd use Azure Monitor to enable tightly focused and specific alerts before any application change. You'd then disable the alerts after a successful deployment.
 

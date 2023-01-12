@@ -4,7 +4,7 @@ In this exercise, you'll create a Linux virtual machine (VM). This VM will run a
 
 ## Create the VM
 
-This VM will run a specific configuration that stresses the CPU, and generates the metric monitoring data needed to trigger an alert.
+This VM will run a specific configuration that stresses the CPU and generates the metric monitoring data needed to trigger an alert.
 
 1. Start by creating the configuration script. To create the `cloud-init.txt` file with the configuration for the VM, run the following command in Azure Cloud Shell:
 
@@ -34,7 +34,7 @@ This VM will run a specific configuration that stresses the CPU, and generates t
 ## Create the metric alert through the Azure portal
 
 > [!NOTE]
-> Wait until the VM is successfully created before proceeding with the exercise. The VM creation process is complete when you see the completed JSON output in the Azure Cloud Shell window.
+> Wait until the VM is successfully created before proceeding with the exercise. The VM creation process is complete when you get the completed JSON output in the Azure Cloud Shell window.
 
 You can use either the Azure portal or the CLI to create a metric alert. In this exercise we'll cover both, starting with the Azure portal.
 
@@ -71,7 +71,7 @@ You can use either the Azure portal or the CLI to create a metric alert. In this
 
     | Setting | Value |
     |---------|---------|
-    | Severity | Sev 2 - Warning |
+    | Severity | 2 - Warning |
     | Alert rule name | Cpu90PercentAlert |
     | Description | Virtual machine is running at or greater than 90% CPU utilization |
 
@@ -96,7 +96,7 @@ You can set up metric alerts by using the CLI. This process can be quicker than 
 
 Let's create a new metric alert similar to the one you set up in the Azure portal.
 
-1. Run the following command in Cloud Shell to obtain the resource ID of the virtual machine previously created.
+1. Run the following command in Cloud Shell to obtain the resource ID of the virtual machine you previously created:
 
     ```bash
     VMID=$(az vm show \
@@ -131,7 +131,7 @@ In this exercise, you set up an Ubuntu VM and configured it to stress test the C
 
 1. On the Azure portal menu, select **Monitor**, and then select **Alerts** in the left menu pane.
 
-   This step presents the alert summary pane, where you can see the count of the number of alerts. If you don't see your alerts listed, wait a few minutes and select **Refresh**.
+   This step presents the Alert summary pane, where you can see the count of the number of alerts. If you don't see your alerts listed, wait a few minutes and select **Refresh**.
 
    :::image type="content" source="../media/4-alert-summary-pane.png" alt-text="Screenshot that shows the alert summary pane.' pane.":::
 
