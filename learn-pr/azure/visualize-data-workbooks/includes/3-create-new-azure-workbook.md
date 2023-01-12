@@ -13,7 +13,7 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
 
     :::image type="content" source="../media/3-cloud-shell-resourcegroup-name.png" alt-text="Screenshot of Cloud Shell displaying resource group name for sandbox.":::
 1. Copy the name of the resource group by right-clicking on the name and selecting **Copy**.
-1. Enter this command to define the resource group. (Right-click and select **Paste** to paste the resource group name.)
+1. Enter this command to define the resource group. (Right-click and select **Paste** to paste the resource group name. You may have to remove any extra characters around the resource group name.)
 
     ```azurecli
     resourceGroup="<your resource group name>"
@@ -22,8 +22,8 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
 1. Run these commands to deploy the Azure resource group and resources:
 
     ```azurecli
-       git clone https://github.com/MicrosoftDocs/ms-learn-visualize-data-workbooks.git
-       cd ms-learn-visualize-data-workbooks/Resources/
+       git clone https://github.com/MicrosoftDocs/ms-learn-azure-monitor-workbooks.git 
+       cd ms-learn-azure-monitor-workbooks/Resources/
        az deployment group create --resource-group $resourceGroup --template-file deploy-resources.bicep
     ```
 
@@ -57,7 +57,7 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
 
         ```azurecli
             # Learn module exercise workbook
-            ## Select a subscription from the drop-down below.
+            **Select a subscription from the drop-down below.**
         ```
 
     1. Select **Done editing**. You now have a simple workbook with text.
