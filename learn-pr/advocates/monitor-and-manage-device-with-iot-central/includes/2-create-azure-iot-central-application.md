@@ -12,9 +12,7 @@ In this unit, you sign in to Azure IoT Central and create a new custom applicati
 
 1. Once it's activated, sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account with which you activated the sandbox.
 
-1. Type `IOT` into the search box and select <kbd>Enter</kbd>.
-
-1. Select **IoT Central Applications**, then select **+ Create**.
+1. Type `IOT` into the search box and select **IoT Central Applications**, then select **+ Create**.
 
 1. On the **Basics** tab, enter the following information:
 
