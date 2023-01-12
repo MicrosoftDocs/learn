@@ -1,4 +1,4 @@
-You're deploying a template that a colleague has written. They give you a Bicep template named *main.bicep* with these parameter definitions:
+You're deploying a template that a colleague has written. They give you a Bicep template named _main.bicep_ with these parameter definitions:
 
 ```bicep
 @maxLength(5)
@@ -8,7 +8,7 @@ param projectName string = 'dog'
 param apiKey string
 ```
 
-They also give you the following parameter file named *main.parameters.production.json*:
+They also give you the following parameter file named _main.parameters.production.json_:
 
 ```json
 {

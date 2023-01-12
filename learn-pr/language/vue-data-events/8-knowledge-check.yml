@@ -51,9 +51,9 @@ quiz:
     - content: "`checkbox`"
       isCorrect: true
       explanation: "Correct. The `checkbox` control is designed for Boolean values."
-    - content: "`input type=''text''`"
+    - content: "`input type=\"text\"`"
       isCorrect: false
-      explanation: "Incorrect. The `input type=''text''` control is designed for smaller amounts of text."
-    - content: "`input type=''email''`"
+      explanation: "Incorrect. The `input type=\"text\"` control is designed for smaller amounts of text."
+    - content: "`input type=\"email\"`"
       isCorrect: false
-      explanation: "Incorrect. The `input type=''email''` control is designed for email addresses."
+      explanation: "Incorrect. The `input type=\"email\"` control is designed for email addresses."
