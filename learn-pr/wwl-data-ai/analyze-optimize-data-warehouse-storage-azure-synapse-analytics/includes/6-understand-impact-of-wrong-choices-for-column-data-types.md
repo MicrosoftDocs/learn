@@ -4,7 +4,7 @@ Dedicated SQL pools support the most commonly used data types. With that, it is 
 - Avoid using NVARCHAR when you only need VARCHAR to support non-unicode data.
 - When possible, use NVARCHAR(4000) or VARCHAR(8000) instead of NVARCHAR(MAX) or VARCHAR(MAX).
 - Focus on using the minimal data type as possible. Use the minor data type that can reliably contain all possible values you have. For example, use `tinyint` instead of `smallint` or `int` for exact-numbers between 0-255. `tinyint` would be sufficient for a person's age because no one lives to be more than 255 years old.
-- Use DATETIME instead of storing data values in different formats such as string or numeric values. When it comes to querying your data based on date, an additional conversion will put a massive overhead on your queries.
+- Use DATETIME instead of storing date values in different formats such as string or numeric values. When it comes to querying your data based on date, an additional conversion will put a massive overhead on your queries.
 - If you only need to store a date and not the time make sure you use DATE instead of DATETIME. There is a 4 bytes difference between the two.
 
 >[!Note]
