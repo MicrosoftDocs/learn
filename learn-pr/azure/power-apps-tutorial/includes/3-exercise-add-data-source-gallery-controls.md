@@ -85,7 +85,7 @@ Once the list is created, it's time to add the data. Here, "data" means the deta
     > [!Note]
     > After you create a **SharePoint** list, a default **Title** column gets created that you can rename as **Name**.
 
-2. Once we add the columns, we have to add the actual data under these columns. Start adding data to columns by downloading the custom folder that includes all the product details for all four lists.
+2. Once we add the columns, we have to add the actual data under these columns. Start adding data to columns by downloading the custom folder that includes all the product details for all four lists. To access the data, select the link below and select download. 
 
     [Power Apps custom folder](https://github.com/MicrosoftDocs/mslearn-developer-tools-power-platform/blob/master/custom-folder/PowerAppsFiles.zip)
 
