@@ -39,6 +39,8 @@ This environment lets you complete the exercises in this and future modules. You
 
 [!include[](../../shared/includes/project-details-note.md)]
 
+[!include[](../../shared/includes/check-parallel-jobs.md)]
+
 ## Meet the team
 
 You met the *Space Game* web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module:
