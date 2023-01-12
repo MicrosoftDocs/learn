@@ -22,8 +22,8 @@ The first thing we'll do is activate the Azure sandbox and deploy an ARM templat
 1. Run these commands to deploy the Azure resource group and resources:
 
     ```azurecli
-       git clone https://github.com/MicrosoftDocs/mslearn-visualize-data-with-workbooks.git 
-       cd mslearn-visualize-data-with-workbooks/Resources/
+       git clone https://github.com/MicrosoftDocs/ms-learn-azure-monitor-workbooks.git 
+       cd ms-learn-azure-monitor-workbooks/Resources/
        az deployment group create --resource-group $resourceGroup --template-file deploy-resources.bicep
     ```
 

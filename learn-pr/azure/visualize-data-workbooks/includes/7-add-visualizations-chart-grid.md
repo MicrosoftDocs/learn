@@ -36,16 +36,16 @@ In your workbook, select **Edit** from the top toolbar.
 1. Select **Add**, and then select **Add parameters**.
 1. Select **Add parameter** to add a new parameter.
 
-    - In the **Parameter name** field, enter **WebApps**.
-    - In the **Parameter type** field, select **Resource picker**.
-    - Select the **Required** checkbox.
-    - In the **Get data from** section, select **Query**.
-    - In the **Subscriptions Log query** section:
+    1. In the **Parameter name** field, enter **WebApps**.
+    1. In the **Parameter type** field, select **Resource picker**.
+    1. Select the **Required** checkbox.
+    1. In the **Get data from** section, select **Query**.
+    1. In the **Subscriptions Log query** section:
 
-        - In the **Data source** field, select **Azure resource graph**.
-        - In the **Resource type** field, select **Subscription**.
-        - In the **Subscriptions** field, select the **Subscription** resource parameter.
-        - Enter the following query, and then select **Run Query**.
+        1. In the **Data source** field, select **Azure resource graph**.
+        1. In the **Resource type** field, select **Subscription**.
+        1. In the **Subscriptions** field, select the **Subscription** resource parameter.
+        1. Enter the following query, and then select **Run Query**.
 
             ```azurecli
             resources 
@@ -60,11 +60,11 @@ In your workbook, select **Edit** from the top toolbar.
 
     :::image type="content" source="../media/7-add-additional-parameter.png" alt-text="Screenshot that shows adding a second parameter to an existing parameter control in Azure workbooks.":::
 
-    - In the **Parameter name** field, enter **CosmosDB**.
-    - In the **Parameter type** field, select **Resource picker**.
-    - Select the **Required** checkbox.
-    - In the **Get data from** section, select **Query**.
-    - In the **Subscriptions Log query** section:
+    1. In the **Parameter name** field, enter **CosmosDB**.
+    1. In the **Parameter type** field, select **Resource picker**.
+    1. Select the **Required** checkbox.
+    1. In the **Get data from** section, select **Query**.
+    1. In the **Subscriptions Log query** section:
 
         - In the **Data source** field, select **Azure resource graph**.
         - In the **Resource type** field, select **Subscription**.
@@ -81,11 +81,11 @@ In your workbook, select **Edit** from the top toolbar.
 
 1. In the same **Add parameter** section, select **Add parameter** again.
 
-    - In the **Parameter name** field, enter **LogAnalytics**.
-    - In the **Parameter type** field, select **Resource picker**.
-    - Select the **Required** checkbox.
-    - In the **Get data from** section, select **Query**.
-    - In the **Subscriptions Log query** section:
+    1. In the **Parameter name** field, enter **LogAnalytics**.
+    1. In the **Parameter type** field, select **Resource picker**.
+    1. Select the **Required** checkbox.
+    1. In the **Get data from** section, select **Query**.
+    1. In the **Subscriptions Log query** section:
 
         - In the **Data source** field, select **Azure resource graph**.
         - In the **Resource type** field, select **Subscription**.
@@ -101,11 +101,11 @@ In your workbook, select **Edit** from the top toolbar.
     - Select **Save**.
 1. In the same **Add parameter** section, select **Add parameter** again.
 
-    - In the **Parameter name** field, enter **TimeRange**.
-    - In the **Parameter type** field, select **Time range picker**.
-    - Select the **Required** checkbox.
-    - In the **Available time ranges** field, make sure all the values are selected.
-    - Select **Save**.
+    1. In the **Parameter name** field, enter **TimeRange**.
+    1. In the **Parameter type** field, select **Time range picker**.
+    1. Select the **Required** checkbox.
+    1. In the **Available time ranges** field, make sure all the values are selected.
+    1. Select **Save**.
 1. Select **Done editing**. Your workbook now has a parameter control with four parameters. When you select the first parameter, the list in each consecutive drop down is populated based on your selection.
 
     :::image type="content" source="../media/7-multiple-parameters.png" alt-text="Screenshot that shows multiple parameters in one control in Azure workbooks.":::
@@ -113,18 +113,18 @@ In your workbook, select **Edit** from the top toolbar.
 1. Select **Edit** next to the parameter control we just added, and then select **Add** and **Add metric**.
 1. Enter these settings for the metric:
 
-    - In the **Resource Type** field, select **App Service**.
-    - In the **App Service** field, select the **WebApp** parameter.
-    - In the **Time Range** field, select the **TimeRange** parameter.
+    1. In the **Resource Type** field, select **App Service**.
+    1. In the **App Service** field, select the **WebApp** parameter.
+    1. In the **Time Range** field, select the **TimeRange** parameter.
 
         :::image type="content" source="../media/7-web-app-metric-settings.png" alt-text="Screenshot that shows the metric settings for a web app in Azure Workbooks.":::
 
 1. Select **Add metric**, and enter these settings:
 
-    - In the Namespace field, select **App Service standard metrics**.
-    - In the Metrics field, select **Requests**.
-    - In the Aggregation field, select **Count**.
-    - Select **Save**.
+    1. In the Namespace field, select **App Service standard metrics**.
+    1. In the Metrics field, select **Requests**.
+    1. In the Aggregation field, select **Count**.
+    1. Select **Save**.
 
         :::image type="content" source="../media/7-web-app-request-metric.png" alt-text="Screenshot that shows the metric settings for the number of requests made to a web app in Azure Workbooks.":::
 
@@ -137,15 +137,15 @@ In your workbook, select **Edit** from the top toolbar.
 1. Select **Add** and **Add metric**.
 1. Enter these settings for the metric:
 
-    - In the **Resource Type** field, select **Azure Cosmos DB account**.
-    - In the **App Service** field, select the **CosmosDB** parameter.
-    - In the **Time Range** field, select the **TimeRange** parameter.
+    1. In the **Resource Type** field, select **Azure Cosmos DB account**.
+    1. In the **App Service** field, select the **CosmosDB** parameter.
+    1. In the **Time Range** field, select the **TimeRange** parameter.
 1. Select **Add metric**, and enter these settings:
 
-    - In the Namespace field, select **Azure Cosmos DB account standard metrics**.
-    - In the Metrics field, select **Total Requests**.
-    - In the Aggregation field, select **Count**.
-    - Select **Save**.
+    1. In the Namespace field, select **Azure Cosmos DB account standard metrics**.
+    1. In the Metrics field, select **Total Requests**.
+    1. In the Aggregation field, select **Count**.
+    1. Select **Save**.
 1. To make sure that the graphs display side by side, select **Style** on the top of the window, and then select the **Make this item a custom width** checkbox. Make sure that the **Percent width** is set to 50%.
 1. Select **Advanced settings**, and enter a name for the chart in the **Chart title** field, such as "Cosmos DB total requests".
 1. Select **Done editing**. You now have two side by side graphs displaying the number of requests sent to your web app and your database.
@@ -160,11 +160,11 @@ In your workbook, select **Edit** from the top toolbar.
 
 1. Add a query for the number of requests per operation. Select **Add**, and then select **Add query**.
 
-    - In the **Data source** field, select **Logs**.
-    - In the **Resource type** field, select **Log Analytics**.
-    - In the **Log Analytics workspace** field, select the **Log Analytics** parameter.
-    - In the **Time Range** field, select the **TimeRange** parameter.
-    - Enter this Log query:
+    1. In the **Data source** field, select **Logs**.
+    1. In the **Resource type** field, select **Log Analytics**.
+    1. In the **Log Analytics workspace** field, select the **Log Analytics** parameter.
+    1. In the **Time Range** field, select the **TimeRange** parameter.
+    1. Enter this Log query:
 
         ```azurecli
           AppRequests
@@ -177,9 +177,9 @@ In your workbook, select **Edit** from the top toolbar.
 1. We're going to use the rendering settings to make the chart easy to understand visually.
 1. Select **Column settings**, and then in the **Columns** section on the left, select **Operation Name**, and then enter these settings.
 
-    - In the **Column name** field, enter (or leave the default name) "OperationName".
-    - In the **Column renderer** field, select **Thresholds**.
-    - In the **Thresholds** section, select **Colors**, and then add these thresholds:
+    1. In the **Column name** field, enter (or leave the default name) "OperationName".
+    1. In the **Column renderer** field, select **Thresholds**.
+    1. In the **Thresholds** section, select **Colors**, and then add these thresholds:
 
         |Operator  |Value  | Color | Text|
         |---------|---------|---------|---------|
@@ -193,10 +193,10 @@ In your workbook, select **Edit** from the top toolbar.
 1. In the **Columns** section on the left, select **_ResourceId**, and then in the **Column renderer** field, select **Hidden**.
 1. In the **Columns** section on the left, select **ResourceCount**, and then enter these settings:
 
-    - In the **Column name** field, enter (or leave the default name) "RequestCount".
-    - In the **Column renderer** field, select **Bar**.
-    - In the **Color palette** section, select **Blue**.**
-    - Select **Save and Close**.
+    1. In the **Column name** field, enter (or leave the default name) "RequestCount".
+    1. In the **Column renderer** field, select **Bar**.
+    1. In the **Color palette** section, select **Blue**.**
+    1. Select **Save and Close**.
 1. To make sure that the graphs display side by side, select **Style** on the top of the window, and then select the **Make this item a custom width** checkbox. Make sure that the **Percent width** is set to 50%.
 1. Select **Advanced settings**, and enter a name for the chart in the **Chart title** field, such as "Web App Operations".
 1. Select **Done editing**. Your workbook now has a color-coded graph showing the types of operations sent to your web app and the number of each type of request.
@@ -207,39 +207,39 @@ In your workbook, select **Edit** from the top toolbar.
 1. Select **Edit** next to the parameter control we just added, and then select **Add** and **Add metric**.
 1. Enter these settings for the metric:
 
-    - In the **Resource Type** field, select **Azure Cosmos DB account**.
-    - In the **App Service** field, select the **CosmosDB** parameter.
-    - In the **Time Range** field, select the **TimeRange** parameter.
-    - In the **Visualization** field, select **Grid**.
+    1. In the **Resource Type** field, select **Azure Cosmos DB account**.
+    1. In the **App Service** field, select the **CosmosDB** parameter.
+    1. In the **Time Range** field, select the **TimeRange** parameter.
+    1. In the **Visualization** field, select **Grid**.
 1. Select **Add metric**, and enter these settings:
 
-    - In the Namespace field, select **Azure Cosmos DB account standard metrics**.
-    - In the Metrics field, select **Total Requests**.
-    - In the Aggregation field, select **Count**.
-    - In the **Split** field, select **None**.
-    - Select **Save**.
+    1. In the Namespace field, select **Azure Cosmos DB account standard metrics**.
+    1. In the Metrics field, select **Total Requests**.
+    1. In the Aggregation field, select **Count**.
+    1. In the **Split** field, select **None**.
+    1. Select **Save**.
 
         :::image type="content" source="../media/7-cosmos-db-metric-grid-settings1.png" alt-text="Screenshot that shows a query for the number of requests to a database in an Azure Workbook.":::
 
 1. Add another metric. Select **Add** and **Add metric**, and enter these settings:
 
-    - In the Namespace field, select **Azure Cosmos DB account standard metrics**.
-    - In the Metrics field, select **Total Requests**.
-    - In the Aggregation field, select **Count**.
-    - In the **Split by** field, select **OperationType**.
-    - In the **Sort by** field, select **Descending**.
-    - In the **Number of splits** field, select **5**.
-    - In the **Display Name** field, enter "Operations".
-    - Select **Save**.
+    1. In the Namespace field, select **Azure Cosmos DB account standard metrics**.
+    1. In the Metrics field, select **Total Requests**.
+    1. In the Aggregation field, select **Count**.
+    1. In the **Split by** field, select **OperationType**.
+    1. In the **Sort by** field, select **Descending**.
+    1. In the **Number of splits** field, select **5**.
+    1. In the **Display Name** field, enter "Operations".
+    1. Select **Save**.
 
         :::image type="content" source="../media/7-cosmos-db-metric-grid-settings2.png" alt-text="Screenshot that shows a query with results split into columns in an Azure Workbook.":::
 
 1. We're going to use the rendering settings to make the chart easy to understand visually.
 1. Select **Column settings**, and then in the **Columns** section on the left, select **microsoft.documentsdb/databaseaccounts-Requests-TotalRequests**, and then enter these settings.
 
-    - In the **Column renderer** field, select **Heatmap**.
-    - In the **Color palette** field, select **Blue**.
-    - Select **Custom formatting**.
+    1. In the **Column renderer** field, select **Heatmap**.
+    1. In the **Color palette** field, select **Blue**.
+    1. Select **Custom formatting**.
         - In the **Units** field, select **Count**.
         - In the **Style** field, select **Decimal**.
 
@@ -247,19 +247,19 @@ In your workbook, select **Edit** from the top toolbar.
 
 1. In the **Columns** section on the left, select **microsoft.documentsdb/databaseaccounts-Requests-TotalRequests Timeline (Hidden)**, and then enter these settings:
 
-    - In the **Column Label** field, enter (or leave the default name) "Total Requests (Count)".
-    - In the **Column renderer** field, select **Heatmap**.
-    - In the **Color palette** field, select **Blue**.
+    1. In the **Column Label** field, enter (or leave the default name) "Total Requests (Count)".
+    1. In the **Column renderer** field, select **Heatmap**.
+    1. In the **Color palette** field, select **Blue**.
 
 1. In the **Columns** section on the left, select ***/Operations$ (Text)**, and then enter these settings:
 
-    - In the **Column Label** field, enter (or leave the default name) "Total Requests (Count)".
-    - In the **Column renderer** field, select **Heatmap**.
-    - In the **Color palette** field, select **Blue**.
-    - Select **Custom formatting**.
+    1. In the **Column Label** field, enter (or leave the default name) "Total Requests (Count)".
+    1. In the **Column renderer** field, select **Heatmap**.
+    1. In the **Color palette** field, select **Blue**.
+    1. Select **Custom formatting**.
         - In the **Units** field, select **Count**.
         - In the **Style** field, select **Decimal**.
-    - Select **Save and Close**.
+    1. Select **Save and Close**.
 
 1. To make sure that the graphs display side by side, select **Style** on the top of the window, and then select the **Make this item a custom width** checkbox. Make sure that the **Percent width** is set to 50%.
 1. Select **Advanced settings**, and enter a name for the chart in the **Chart title** field, such as "Cosmos DB Operations".

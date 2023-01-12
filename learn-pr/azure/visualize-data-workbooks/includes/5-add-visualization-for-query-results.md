@@ -14,18 +14,18 @@ Keep in mind that the data sources and visualizations in this tutorial are just 
 
 1. In your workbook, select **Edit** from the top toolbar.
 1. Select **Add**, and then **Add Query**.
-    - In the **Data source** field, select **Azure Resource Health**.
-    - In the **Resource type** field, select **Subscriptions**.
-    - In the **Subscriptions** field, select the **Subscription** resource parameter. You'll see a list of all of the Azure resources in the subscription.
+    1. In the **Data source** field, select **Azure Resource Health**.
+    1. In the **Resource type** field, select **Subscriptions**.
+    1. In the **Subscriptions** field, select the **Subscription** resource parameter. You'll see a list of all of the Azure resources in the subscription.
 
         :::image type="content" source="../media/5-resource-health-query.png" alt-text="Screenshot that shows a resource health query in Azure workbooks.":::
 
 1. To group the resources by Availability state:
-    - Select **Column settings** at the top of the control.
-    - In the **Tree/Group by** section, select **Group by**, and then select **Availability state**.
-    - Select **Save and Close**.
-    - In **Advanced Settings**, enter a name for the chart, such as "Resource Health" in the **Chart title**.
-    - Select **Done editing**.
+    1. Select **Column settings** at the top of the control.
+    1. In the **Tree/Group by** section, select **Group by**, and then select **Availability state**.
+    1. Select **Save and Close**.
+    1. In **Advanced Settings**, enter a name for the chart, such as "Resource Health" in the **Chart title**.
+    1. Select **Done editing**.
 
     Your workbook now has a chart that lists all of the Azure resources in the subscription, grouped by availability.
 
@@ -36,12 +36,12 @@ Keep in mind that the data sources and visualizations in this tutorial are just 
 1. In your workbook, select **Edit** from the top toolbar.
 1. Select **Add**, and then **Add parameters**.
 1. Select **Add parameter** to add a new parameter.
-    - In the **Parameter name** field, enter **virtualMachines**.
-    - In the **Parameter type** field, select **Resource picker**.
-    - Select the **Required** checkbox.
-    - Select the **Allow multiple selections** checkbox.
-    - In the **Get data from** section, select **Query**.
-    - In the **Subscriptions Log query** section:
+    1. In the **Parameter name** field, enter **virtualMachines**.
+    1. In the **Parameter type** field, select **Resource picker**.
+    1. Select the **Required** checkbox.
+    1. Select the **Allow multiple selections** checkbox.
+    1. In the **Get data from** section, select **Query**.
+    1. In the **Subscriptions Log query** section:
         - In the **Data source** field, select **Azure resource graph**.
         - In the **Resource type** field, select **Subscription**.
         - In the **Subscriptions** field, select the **Subscription** resource parameter.
@@ -60,34 +60,33 @@ Keep in mind that the data sources and visualizations in this tutorial are just 
 
     :::image type="content" source="../media/5-add-metric.png" alt-text="Screenshot that shows adding a metric to an Azure workbook.":::
 
-    - In the **Resource type** field, select **Virtual machine**.
-    - In the **Metric scope** field, select **Resource scope**.
-    - In the **Virtual machine** field, select the **virtualMachines** parameter you created.
-    - In the **Visualization** field, select **graph**.
-    - Select **Add metric**.
-    - In the **Metric** field, select **Percentage CPU**, and then **Save**.
+    1. In the **Resource type** field, select **Virtual machine**.
+    1. In the **Metric scope** field, select **Resource scope**.
+    1. In the **Virtual machine** field, select the **virtualMachines** parameter you created.
+    1. In the **Visualization** field, select **graph**.
+    1. Select **Add metric**.
+    1. In the **Metric** field, select **Percentage CPU**, and then **Save**.
 
     :::image type="content" source="../media/5-percentage-cpu-metric.png" alt-text="Screenshot that shows the percentage CPU metric setting in a Workbook.":::
 
-    - Select **Run Metrics**.
+    1. Select **Run Metrics**.
 1. In the **Graph settings** window, select **Top Content** from the left side.
-    - In the **Use column** field, select **Name**.
-    - In the **Column renderer** field, select **Resource**.
-    - Leave the **Show the resource type** box unselected.
-    - Select **Make this item a link**
-    - In the **Link value comes from** field, select **Cell**.
-    - Select **Open link in Context pane**.
+    1. In the **Use column** field, select **Name**.
+    1. In the **Column renderer** field, select **Resource**.
+    1. Leave the **Show the resource type** box unselected.
+    1. Select **Make this item a link**
+    1. In the **Link value comes from** field, select **Cell**.
+    1. Select **Open link in Context pane**.
 
     :::image type="content" source="../media/5-graph-top-content-settings.png" alt-text="Screenshot that shows the settings for the top content of a graph in a workbook.":::
 
 1. Select **Center content** from the top left side of the window.
-    - In the **Use column** field, select **microsoft.compute/virtualmachines--Percentage CPU**.
-    - In the **Column renderer** field, select **Big number**.
-    - Select **Custom formatting**.
-    - In the **Units** field, select **Percentage**.
-    - In the **Style** field, select **Decimal**.
-    - In the **Maximum fractional digits** field, enter "1".
-
+    1. In the **Use column** field, select **microsoft.compute/virtualmachines--Percentage CPU**.
+    1. In the **Column renderer** field, select **Big number**.
+    1. Select **Custom formatting**.
+    1. In the **Units** field, select **Percentage**.
+    1. In the **Style** field, select **Decimal**.
+    1. In the **Maximum fractional digits** field, enter "1".
 
     :::image type="content" source="../media/5-graph-center-content-settings.png" alt-text="Screenshot that shows the settings for the center content of a graph in a workbook.":::
 
