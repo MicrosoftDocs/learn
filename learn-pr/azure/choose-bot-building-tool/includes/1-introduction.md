@@ -1,4 +1,4 @@
-A bot provides a conversational interface in websites and applications. Different bot-creation methods work better in specific scenarios. You must examine the differences between the various bot-building tools that Microsoft provides.
+A bot provides a conversational interface in websites and applications. Different bot-creation methods work better in specific scenarios. To choose a bot-building tool for your company's scenario, you'll examine the differences between the various bot-building tools that Microsoft provides.
 
 Imagine you work for a financial services company. They're considering using a bot to help with customer-support inquiries and advising customers about new services. You'll host the bot on your company website. The company's customer-support team wants to help build a test bot. However, they don't have experience developing bots from scratch using software development kits (SDKs) and code-based development tools. You've been tasked with researching the best tool to use to build the test bot.
 

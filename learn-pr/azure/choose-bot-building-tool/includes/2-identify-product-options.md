@@ -2,11 +2,11 @@ You must choose a bot-building tool that meets your company's technical requirem
 
 ## What is a bot?
 
-A *bot* provides a conversational interface in websites and applications. Use one to shift simple, repetitive tasks to automated systems that don't require human interaction. For instance, a bot could make travel arrangements or gather user information. At its core, a bot is a web application with a conversational interface. A user connects to a bot through a channel such as Microsoft Teams. The bot receives user input and performs relevant tasks based on internal reasoning logic. Examples of tasks it can perform include asking users for additional information or accessing services for users.
+A *bot* provides a conversational interface in websites and applications. They are used to shift simple, repetitive tasks to automated systems that don't require human interaction. For instance, a bot could make travel arrangements or gather user information. At its core, a bot is a web application with a conversational interface. A user connects to a bot through a channel such as Microsoft Teams. The bot receives user input and performs relevant tasks based on internal reasoning logic. Examples of tasks it can perform include asking users for additional information or accessing services for users.
 
 ### Conversing with a bot
 
-Bots often are able to understand natural language. This ability allows them to interpret a user's input to  recognize what a user is asking for or saying. The bot responds to a user and communicates what it's doing or has done. Bots typically support many configurations and publishing channels, including Teams, telephony, and voice assistants.
+Bots often are able to understand natural language. This ability allows them to interpret a user's input and recognize what a user is asking for or saying. The bot responds to a user and communicates what it's doing or has done. Bots typically support many configurations and publishing channels, including Teams, telephony, and voice assistants.
 
 > [!NOTE]
 > Depending on the bot's configuration, you can converse with it by using text, interactive cards, speech, or a combination of these. Bots can have quick question-and-answer interactions and guided conversation flows. They also can conduct sophisticated conversations that integrate with external capabilities and AI systems.
