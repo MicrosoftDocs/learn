@@ -12,7 +12,7 @@ Each dashboard contains the following user interface components:
 
 - Rows: Rows are for organizing panels. Each dashboard has a minimum of one row.
 
-The following example dashboard contains both *graph* and *single stat* panels that are arranged into three rows:
+The following example dashboard contains both *graph* and *single stat* panels that are arranged into four rows:
 
 :::image type="content" source="../media/packet-core-uplink-downlink-stats-dashboard.png" alt-text="An example dashboard that shows the graph panels and single stat panels arranged into three rows" border="true":::
 
