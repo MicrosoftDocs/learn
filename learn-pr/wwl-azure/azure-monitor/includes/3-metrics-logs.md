@@ -21,7 +21,7 @@ There are multiple types of metrics supported by Azure Monitor Metrics:
  -  **Native metrics** use tools in Azure Monitor for analysis and alerting.
      -  Platform metrics are collected from Azure resources. They require no configuration and have no cost.
      -  Custom metrics are collected from different sources that you configure, including applications and agents running on virtual machines.
- -  **Prometheus metrics** (preview) are collected from Kubernetes clusters, including Azure Kubernetes service (AKS), and use industry-standard tools for analyzing and alerting, such as PromQL and Grafana.
+ -  **Prometheus metrics** (preview) are collected from Kubernetes clusters, including Azure Kubernetes Service (AKS), and use industry-standard tools for analyzing and alerting, such as PromQL and Grafana.
 
 **Additional Background and Information**
 
@@ -37,7 +37,7 @@ There are multiple types of metrics supported by Azure Monitor Metrics:
 
 **What is Azure Managed Grafana?**
 
-Azure Managed Grafana is a data visualization platform built on top of the Grafana software by Grafana Labs. It's built as a fully managed Azure service operated and supported by Microsoft. Grafana helps you combine metrics, logs, and traces into a single user interface. With its extensive support for data sources and graphing capabilities, you can view and analyze your application and infrastructure telemetry data in real time.
+Azure Managed Grafana is a data visualization platform built on top of the Grafana software by Grafana Labs. It's built as a fully managed Azure service operated and supported by Microsoft. Grafana helps you combine metrics, logs, and traces into a single user interface. With its extensive support for data sources and graphing capabilities, you can view and analyze your application and infrastructure telemetry data in real-time.
 
 **Azure Managed Grafana** is optimized for the Azure environment. It works seamlessly with many Azure services. Specifically, for the current preview, it provides with the following integration features:
 
@@ -51,18 +51,168 @@ Azure Managed Grafana is a data visualization platform built on top of the Grafa
 
 As a fully managed service, Azure Managed Grafana lets you deploy Grafana without having to deal with setup. The service provides high availability, service level agreement (SLA) guarantees, and automatic software updates.
 
-You can share Grafana dashboards with people inside and outside of your organization and allow others to join in for monitoring or troubleshooting.
+You can share Grafana dashboards with people inside and outside your organization and allow others to join in for monitoring or troubleshooting.
 
 Managed Grafana uses **Azure Active Directory (Azure AD)’s centralized identity management**, which allows you to control which users can use a Grafana instance, and you can use managed identities to access Azure data stores, such as Azure Monitor.
 
 You can create dashboards instantaneously by importing existing charts directly from the Azure portal or by using prebuilt dashboards.
 
-## Metrics - Data collection
+The differences between each of the metrics are summarized in the following table.
 
-Azure Monitor collects metrics from the following sources.
+:::row:::
+  :::column:::
+    **Category**
+  :::column-end:::
+  :::column:::
+    **Native platform metrics**
+  :::column-end:::
+  :::column:::
+    **Native custom metrics**
+  :::column-end:::
+  :::column:::
+    **Prometheus metrics** (preview)
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Sources
+  :::column-end:::
+  :::column:::
+    Azure resources
+  :::column-end:::
+  :::column:::
+    Azure Monitor agent
+Application Insights
+Representational State Transfer (REST) Application Programming Interface (API)
+  :::column-end:::
+  :::column:::
+    Azure Kubernetes Service (AKS) cluster
+Any Kubernetes cluster through remote-write
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Configuration
+  :::column-end:::
+  :::column:::
+    None
+  :::column-end:::
+  :::column:::
+    Varies by source
+  :::column-end:::
+  :::column:::
+    Enable Azure Monitor managed service for Prometheus
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Stored
+  :::column-end:::
+  :::column:::
+    Subscription
+  :::column-end:::
+  :::column:::
+    Subscription
+  :::column-end:::
+  :::column:::
+    Azure Monitor workspace
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Cost
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes (free during preview)
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Aggregation
+  :::column-end:::
+  :::column:::
+    pre-aggregated
+  :::column-end:::
+  :::column:::
+    pre-aggregated
+  :::column-end:::
+  :::column:::
+    raw data
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Analyze
+  :::column-end:::
+  :::column:::
+    Metrics Explorer
+  :::column-end:::
+  :::column:::
+    Metrics Explorer
+  :::column-end:::
+  :::column:::
+    Prometheus Querying (PromQL) LanguageGrafana dashboards
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Alert
+  :::column-end:::
+  :::column:::
+    metrics alert rule
+  :::column-end:::
+  :::column:::
+    metrics alert rule
+  :::column-end:::
+  :::column:::
+    Prometheus alert rule
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Visualize
+  :::column-end:::
+  :::column:::
+    WorkbooksAzure dashboardGrafana
+  :::column-end:::
+  :::column:::
+    WorkbooksAzure dashboardGrafana
+  :::column-end:::
+  :::column:::
+    Grafana
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Retrieve
+  :::column-end:::
+  :::column:::
+    Azure Command-Line Interface (CLI)Azure PowerShell cmdletsRepresentational State Transfer (REST) Application Programming Interface (API) or client library.NETGoJavaJavaScriptPython
+  :::column-end:::
+  :::column:::
+    Azure Command-Line Interface (CLI)Azure PowerShell cmdletsRepresentational State Transfer (REST) Application Programming Interface (API) or client library.NETGoJavaJavaScriptPython
+  :::column-end:::
+  :::column:::
+    Grafana
+  :::column-end:::
+:::row-end:::
 
-:::image type="content" source="../media/metrics-data-collection-overview-60fc0104.png" alt-text="Screenshot showing different sources for metrics.":::
 
+## Data collection
+
+Azure Monitor collects metrics from the following sources. After these metrics are collected in the Azure Monitor metric database, they can be evaluated together regardless of their source:
+
+ -  **Azure resources:** Platform metrics are created by Azure resources and give you visibility into their health and performance. Each type of resource creates a distinct set of metrics without any configuration required. Platform metrics are collected from Azure resources at a one-minute frequency unless specified otherwise in the metric's definition.
+ -  **Applications:** Application Insights creates metrics for your monitored applications to help you detect performance issues and track trends in how your application is used. Values include Server response time and Browser exceptions.
+ -  **Virtual machine agents:** Metrics are collected from the guest operating system of a virtual machine. You can enable guest operating system (OS) metrics for Windows virtual machines using the Windows diagnostic extension and Linux virtual machines by using the InfluxData Telegraf agent.
+ -  **Custom metrics:** You can define metrics in addition to the standard metrics that are automatically available. You can define custom metrics in your application that are monitored by Application Insights. You can also create custom metrics for an Azure service by using the custom metrics Application Programming Interface (API).
+ -  **Kubernetes clusters:** Kubernetes clusters typically send metric data to a local Prometheus server that you must maintain. Azure Monitor managed service for Prometheus provides a managed service that collects metrics from Kubernetes clusters and stores them in Azure Monitor Metrics.
 
 A common type of log entry is an event, which is collected sporadically. Events are created by an application or service and typically include enough information to provide complete context on their own. For example, an event can indicate that a particular resource was created or modified, a new host started in response to increased traffic, or an error was detected in an application.
 
@@ -73,7 +223,7 @@ The following is a list of the different ways that you can use Logs in Azure Mon
  -  **Analyze** \- Use Log Analytics in the Azure portal to write log queries and interactively analyze log data using the powerful Data Explorer analysis engine. Use the Application Insights analytics console in the Azure portal to write log queries and interactively analyze log data from Application Insights.
  -  **Visualize** \- Pin query results rendered as tables or charts to an Azure dashboard. Create a workbook to combine with multiple sets of data in an interactive report. Export the results of a query to Power BI to use different visualizations and share with users outside of Azure. Export the results of a query to Grafana to use its dashboarding and combine with other data sources.
  -  **Alert** \- Configure a log alert rule that sends a notification or takes automated action when the results of the query match a particular result. Configure a metric alert rule on certain log data logs extracted as metrics.
- -  **Retrieve** \- Access log query results from a command line using Azure CLI. Access log query results from a command line using PowerShell cmdlets. Access log query results from a custom application using REST API.
+ -  **Retrieve** \- Access log query results from a command line using Azure command-line interface (CLI). Access log query results from a command line using PowerShell cmdlets. Access log query results from a custom application using Representational State Transfer (REST) Application Programming Interface (API).
  -  **Export** \- Build a workflow to retrieve log data and copy it to an external location using Logic Apps.
 
 ### Log queries
