@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-health-model-mission-critical-workload.exercise-layered-model
+title: Exercise - Build a layered health structure
+metadata:
+  title: Exercise - Build a layered health structure
+  description: Apply best practices to evaluate user flows and the key application components in a health model.
+  ms.date: 01/12/2022
+  author: msimecek
+  ms.author: prwilk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 11
+content: |
+  [!include[](includes/3-exercise-layered-model.md)]

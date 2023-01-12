@@ -31,7 +31,6 @@ modules:
 - learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools
 - learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools
 - learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake
-- learn.wwl.serve-data-from-azure-synapse-serverless-sql-pool
 - learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools
 trophy:
   uid: learn.wwl.build-data-analytics-solutions.trophy

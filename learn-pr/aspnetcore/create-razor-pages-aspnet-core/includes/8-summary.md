@@ -1,4 +1,4 @@
-In this module, you examined the Razor Pages architecture in an ASP.NET Core app. This app provided a UI for updating and deleting product listings exposed through a web API endpoint. You added a product creation form, taking advantage of Razor Tag Helpers. With Tag Helpers, you quickly added client-side and server-side validation. You also gained cross-site antiforgery validation. You coded its `PageModel` class that provided a separation of concern for the page's logic operations and data properties.
+In this module, you examined the Razor Pages architecture in an ASP.NET Core app. The app provided a UI for updating and deleting product listings exposed through a web API endpoint. You added a product creation form, taking advantage of Razor Tag Helpers. With Tag Helpers, you quickly added client-side and server-side validation. You also gained cross-site antiforgery validation. You coded its `PageModel` class that provided a separation of concern for the page's logic operations and data properties.
 
 ## Next steps
 

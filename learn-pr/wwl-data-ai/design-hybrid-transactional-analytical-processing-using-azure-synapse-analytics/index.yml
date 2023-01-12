@@ -3,7 +3,7 @@ uid: learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-syn
 metadata:
   title: Plan hybrid transactional and analytical processing using Azure Synapse Analytics
   description: "Plan hybrid transactional and analytical processing using Azure Synapse Analytics"
-  ms.date: 10/12/2022
+  ms.date: 01/11/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Identify Azure Synapse Link services for HTAP.
 prerequisites: |
   Before starting this module, you should have a basic knowledge of data analytics and Azure services for data. Consider completing the [Azure Data Fundamentals](/learn/certifications/azure-data-fundamentals/?azure-portal=true) certification first.
-iconUrl: /learn/achievements/design-a-hybrid-transactional-and-analytical-processing.svg
+iconUrl: /training/achievements/design-a-hybrid-transactional-and-analytical-processing.svg
 levels:
 - intermediate
 roles:

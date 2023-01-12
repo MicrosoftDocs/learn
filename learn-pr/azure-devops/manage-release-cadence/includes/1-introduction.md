@@ -1,14 +1,14 @@
 In this learning path, you've been helping the Tailspin Toys team set up an automated release pipeline. The pipeline includes multiple stages and both functional and nonfunctional tests. 
 
-In this module, you help the team solve another problem. How do they implement a deployment pattern that lets them release to production in a way that's best both for the company and for their users? You'll help them evaluate the possibilities and then implement the one that they choose.
+In this module, you help the team solve another problem, which is to implement a deployment pattern to release to production in a way that's best for the company and their users. You'll help them evaluate the possibilities and then implement the one they choose.
 
 ## Learning objectives
 
 After completing this module, you'll be able to:
 
-- Explain why deployment patterns matter
-- Compare different deployment patterns so that you can choose the one that best suits your needs
-- Apply the blue-green deployment pattern in your pipeline
+- Explain why deployment patterns matter.
+- Compare different deployment patterns so that you can choose the one that best suits your needs.
+- Apply the blue-green deployment pattern in your pipeline.
 
 ## Prerequisites
 

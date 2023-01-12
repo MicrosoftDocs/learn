@@ -26,7 +26,6 @@ roles:
 - student
 - developer
 products:
-- vs-code
 - azure
 subjects:
 - devops

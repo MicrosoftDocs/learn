@@ -4,7 +4,7 @@ In this unit, we'll explore the principles of pitching. We'll look at the purpos
 
 Every time you deliver a pitch, you should have a clear purpose in mind.
 
-It's common for company founders to view investor pitches as an opportunity to get an immediate commitment for funding, as you might see on shows such as Shark Tank.
+It's common for company founders to view investor pitches as an opportunity to get an immediate commitment for funding, as you might see on shows like Shark Tank.
 
 But this scenario rarely plays out. Most of the time, a pitch is just the start of a conversation. By getting people interested in what you're doing, you're encouraging them to connect with you afterward to find out more.
 
@@ -16,7 +16,7 @@ If you're pitching an investor such as an angel group or a venture capital fund,
 
 The most impactful pitches are delivered at just the right level for the audience. By understanding your audience's objectives and their current level of knowledge about your company and sector, you'll be able to deliver a pitch that's informative without being condescendingly simple or overloading them with unfamiliar terminology.
 
-Most people tend to underestimate the gap between their own knowledge and that of their audience. This gap can result in the audience missing out on key points because they don't understand the industry, the technology, market dynamics, or terminology.
+Most people tend to underestimate the gap between their own knowledge and that of their audience. This gap can result in the audience missing out on key points, because they don't understand the industry, the technology, market dynamics, or terminology.
 
 If you lose your audience early in your pitch, it's likely that they'll switch off and you'll struggle to keep their attention for the remainder of your presentation.
 
@@ -33,9 +33,9 @@ Startup founders need to be familiar with several pitch formats. Let's review so
 
 An elevator pitch is a short, pithy description of your company that you can use in casual conversation.
 
-Let's say you're at a networking event, you meet an investor, and they ask you, "What does your company do?" What do you say? Try it right now. Can you in one or two sentences give a clear and compelling explanation of what your company does? Do you think your elevator pitch would get a potential investor interested to know more?
+Let's say you're at a networking event. You meet an investor, and they ask you, "What does your company do?" What do you say? Try it right now. Can you, in one or two sentences, give a clear and compelling explanation of what your company does? Do you think your elevator pitch would get a potential investor interested to know more?
 
-Unless you've had a lot of practice at this, it's likely your elevator pitch needs work. Many startup founders find it helpful to script their elevator pitch and memorize it, rather than attempt to come up with something on the fly.
+Unless you've had significant practice at this, it's likely your elevator pitch needs work. Many startup founders find it helpful to script their elevator pitch and memorize it rather than attempt to come up with something on the fly.
 
 One format that has proven to be a good starting point is the Gaddie Pitch, named after marketing expert Anthony Gaddie. It comprises three sentences:
 
@@ -100,10 +100,10 @@ A typical investor meeting might run for 30 to 60 minutes, and it's common for t
 
 To prepare for an investor meeting, it's essential to know:
 
-- Whom you'll be presenting to, so that you can research the backgrounds and roles of key individuals.
+- To whom you'll be presenting, so that you can research the backgrounds and roles of key individuals.
 - The length of the meeting and how long they expect your presentation to run.
 - For online meetings: The video platform to be used, to ensure that you're familiar with it and the audio and video are set up for good quality.
-- For in-person meetings: The exact location, so you can plan your route and parking arrangements, and be there on time.
+- For in-person meetings: The exact location, so you can plan your route and parking arrangements and be there on time.
 - What AV facilities are available. If you'll be using your own laptop, you might need to bring adapters. If you'll be using their equipment, you might need to send the presentation in advance.
 
 ## Types of pitch decks
@@ -130,14 +130,14 @@ It's useful to write a one-page executive summary that complements your pitch de
 
 The executive summary is an excellent way to follow up with a potential investor whom you've met at a networking event or demo day. It presents a brief, high-level overview of your company and can include the following information:
 
-* Company overview, a brief description of what your company or your product does
-* Current status, including any recent notable milestones
-* Key metrics, including traction, revenue, conversion rate, growth rate, churn
-* Ideal target customer
-* Total addressable market (size of opportunity)
-* Leadership team, including names, LinkedIn profiles, and skill sets
-* Previous funding amount (if any)
-* Current funding round: how much you're raising, what you'll use it for, any funds already committed, terms
+- Company overview, a brief description of what your company or your product does
+- Current status, including any recent notable milestones
+- Key metrics, including traction, revenue, conversion rate, growth rate, churn
+- Ideal target customer
+- Total addressable market (size of opportunity)
+- Leadership team, including names, LinkedIn profiles, and skill sets
+- Previous funding amount (if any)
+- Current funding round: how much you're raising, what you'll use it for, any funds already committed, terms
 
 > [!TIP]
-> Save the executive summary as a PDF file to a share location, such as OneDrive, and have a link to it readily available on your phone. When you meet a potential investor, you can quickly send them the link.
+> Save the executive summary as a PDF file to a shared location such as OneDrive, and have a link to it readily available on your phone. When you meet a potential investor, you can quickly send them the link.

@@ -5,6 +5,7 @@ You'll also set up a TypeScript development environment to prepare yourself for 
 ## Learning objectives
 
 In this module, you'll:
+
 - Learn how TypeScript is an improvement over JavaScript for web development.
 - Select a TypeScript editor.
 - Install TypeScript.

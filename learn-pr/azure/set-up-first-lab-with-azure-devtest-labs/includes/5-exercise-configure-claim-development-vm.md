@@ -67,7 +67,7 @@ A claimable VM in Azure DevTest Labs is a VM that has no owner assigned to it. Y
 
 ## Create the lab VM
 
-1. Return to the **Basic Settings** tab and then select **Create**.
+1. Return to the **Basic Settings** tab and select **Create**.
 
     :::image type="content" source="../media/add-lab-vm-create.png" alt-text="Screenshot that shows the basic settings screen when adding a new lab VM to a lab.":::
 
@@ -83,7 +83,7 @@ By claiming a VM, you take its ownership and you can customize, restart, stop, o
 
 1. On the **DevTest Labs** page, under **My Lab**, select **Claimable virtual machines**.
 
-    You should see the two claimable VMs, with the **Available** status, that you created earlier.
+    You should see the two claimable VMs with the **Available** status that you created earlier.
 
 1. Select the ellipsis (**...**) next to one of the VMs in the list, and then select the **Claim machine** menu item.
 
@@ -115,7 +115,7 @@ By claiming a VM, you take its ownership and you can customize, restart, stop, o
 
 1. Inside the lab VM remote desktop session, start **Windows PowerShell**.
 
-1. Verify that the Azure PowerShell module is available on the lab VM, by entering the following command:
+1. Verify that the Azure PowerShell module is available on the lab VM by entering the following command:
 
     ```powershell
     Get-InstalledModule -Name Azure
