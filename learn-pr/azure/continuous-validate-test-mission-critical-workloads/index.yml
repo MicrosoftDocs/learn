@@ -2,17 +2,17 @@
 uid: learn.continuous-validate-test-mission-critical-workloads
 metadata:
   title: Continuously validate and test mission-critical workloads
-  description: Before you deploy a mission-critical workload to production, validate and test it continuously through automated pipelines to be aware of potential problems. 
+  description: Learn how to automate Azure Load Testing and Azure Chaos Studio simultaneously as part of your CI/CD pipelines.
   ms.date: 12/22/2022
   author: sebader
   ms.author: prwilk
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure #TBD
+  ms.prod: learning-azure 
 title: Continuously validate and test mission-critical workloads
-summary: A mission-critical workload needs to stay operational, even when failures occur. Before you deploy a workload to production, you want to evaluate the impact of changes, along with the system's ability to handle loads and failures. In this module, you'll learn how to achieve these goals by using Azure Load Testing and Azure Chaos Studio simultaneously as part of a CI/CD pipeline.
+summary: You want to be aware of potential problems and ready to respond to make sure that the workload stays operational even when failures occur. Learn how to set up automated tests using Azure Load Testing and Azure Chaos Studio simultaneously as part of your continuous integration/continuous deployment (CI/CD) pipelines.
 abstract:  | 
   By the end of this module, you'll be able to:
-  - Explain the importance of user flows and system flows as the foundation for defining load tests and chaos experiments.
+  - Identify user flows and system flows as the foundation for defining load tests and chaos experiments.
   - Establish baselines for load tests with expected thresholds for system components, individual user flows, and the overall solution.
   -	Identify potential failure scenarios for system components as a guide for designing chaos experiments.
   - Implement an automated process for continuous validation in your CI/CD pipeline.
@@ -33,7 +33,7 @@ roles:
 products:
 -	azure-devops
 -	azure-load-testing
-# TBD azure-chaos-studio
+- azure-chaos-studio
 subjects:
 -	high-availability-system
 -	architecture

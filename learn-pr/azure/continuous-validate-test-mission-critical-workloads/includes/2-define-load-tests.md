@@ -1,12 +1,16 @@
-In this unit, you'll learn about user and system flows, why they're important, and how to design load tests based on these flows.
+As part of continuous validation, you need to design based on the user and system flows.
 
 ## User and system flows
 
-A flow is the sum of activities and decisions that a user or system takes in an application to complete a task. 
+A flow is composed of interactions of an entity with an application to complete a task. That entity can be a user or other system components.
 
-A *user flow* lets you determine how users interact with your application when they do things like sign in or edit a profile. This module uses the checkout process for Contoso Shoes as an example of a user flow. This user flow requires the back-end inventory management to be available, and it doesn't require a search component. In this example, the page needs to load quickly because the company expects a large number of concurrent users.
+- **User flow** 
 
-A *system flow* is typically not user facing, but an outage or degradation of system flow components could have an impact on the user experience. For an example of system flow, consider an asynchronous activity that picks up orders from a database and generates shipping labels.
+   Lets you determine how users interact with your application when they do functional tasks. In the Contoso Shoes scenario, the checkout process for purchasing items is an example of a user flow. The flow includes interaction with backend components responsible for inventory management. From a mission-critical perspective, those components need to be highly available and resilient to failures. The front-end web page load quickly because the organization expects a large number of concurrent users.
+
+- **System flow** 
+
+   These flows aren't typically user facing, but an outage or degradation of system flow components could have an impact on the user experience. For example, an asynchronous activity that picks up orders from a database and generates shipping labels.
 
 Most applications have multiple flows. Each flow consists of various components. Because a component can appear in more than one flow, it's important to understand which flows are affected when component failures happen so that you can design meaningful load tests.
 
