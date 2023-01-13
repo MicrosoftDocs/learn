@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-data-pipeline-azure-synapse-analytics.exercise-build-data-pipeline-azure-synapse-analytics
+title: Exercise - Build a data pipeline in Azure Synapse Analytics
+metadata:
+  title: Exercise - Build a data pipeline in Azure Synapse Analytics
+  description: "Exercise - Build a data pipeline in Azure Synapse Analytics"
+  ms.date: 01/13/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-exercise-build-data-pipeline-azure-synapse-analytics.md)]

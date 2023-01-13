@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-data-pipeline-azure-synapse-analytics.explain-data-pipeline-process-azure-synapse-analytics
+title: Explain the data pipeline process in Azure Synapse Analytics
+metadata:
+  title: Explain the data pipeline process in Azure Synapse Analytics
+  description: "Explain the data pipeline process in Azure Synapse Analytics"
+  ms.date: 01/13/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-explain-data-pipeline-process-azure-synapse-analytics.md)]

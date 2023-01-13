@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.build-data-pipeline-azure-synapse-analytics
+metadata:
+  title: Build a data pipeline in Azure Synapse Analytics
+  description: "Build a data pipeline in Azure Synapse Analytics"
+  ms.date: 01/13/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build a data pipeline in Azure Synapse Analytics
+summary: In this module we address the similarities between Azure Data Factory and Azure Synapse Pipelines and a lab using Synapse Pipelines. We also see that tools such as purview and how the use of Azure Data Lake can help us reduce costs as it is accessible from downstream tooling. Finally, we see that with orchestration and integration with Purview, that Azure provides full data lineage which is instrumental to ensuring complete control over your data and providing a single version of the truth.
+abstract: |
+  At the end of this module, you should:
+  - understand Azure Synapse Analytics Pipelines from a high level.
+  - be able to explain the Azure Synapse Analytics pipeline process(es).
+  - understand the major components which make up Azure Synapse Analytics Pipelines which are directly relatable to Azure Data Factory.
+  - have been able to execute a complete Azure Synapse Analytics pipeline.
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-data-factory
+- azure-data-lake
+- azure-synapse-analytics
+units:
+- learn.wwl.build-data-pipeline-azure-synapse-analytics.introduction
+- learn.wwl.build-data-pipeline-azure-synapse-analytics.understand-pipelines-azure-synapse-analytics
+- learn.wwl.build-data-pipeline-azure-synapse-analytics.explain-data-pipeline-process-azure-synapse-analytics
+- learn.wwl.build-data-pipeline-azure-synapse-analytics.understand-data-pipeline-components-azure-synapse-analytics
+- learn.wwl.build-data-pipeline-azure-synapse-analytics.exercise-build-data-pipeline-azure-synapse-analytics
+- learn.wwl.build-data-pipeline-azure-synapse-analytics.knowledge-check
+- learn.wwl.build-data-pipeline-azure-synapse-analytics.summary
+badge:
+  uid: learn.wwl.build-data-pipeline-azure-synapse-analytics.badge
