@@ -7,8 +7,8 @@ Recall the criteria for creating the bot that should inform your decision-making
 - The initial development of a test bot should be in a low-code designer.
 - The test bot should include an existing LUIS app for language understanding. You should train the bot to recognize financial industry terms and phrases.
 - You should host the bot on your company website.
-- After testing the bot, your team must integrate it into several C# libraries to extend its functionality.
-- After testing, you must integrate the bot with a preexisting REST-enabled FAQ application.
+- After your team tests the bot, they need to integrate several C# libraries into it, to extend its functionality.
+- After your testing is complete, you need to integrate the bot with a pre-existing REST-enabled FAQ application.
 
 ## Consider the Bot Framework Composer service
 
@@ -37,4 +37,4 @@ You can extend all bots that you create with Composer by using the Bot Framework
 
 ## Why Bot Framework Composer is a good choice
 
-Bot Framework Composer fulfills all your company's requirements as analyzed through our decision criteria. That's why it's the best choice for your company's needs.
+Bot Framework Composer fulfills all your company's requirements as analyzed through our decision criteria, making it the best choice for your company's needs.
