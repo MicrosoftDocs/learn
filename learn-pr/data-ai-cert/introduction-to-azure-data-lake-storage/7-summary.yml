@@ -17,17 +17,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Mike is creating an Azure Data Lake Storage Gen2 account. He must configure this account to be able to process analytical data workloads for best performance. Which option should he configure when creating the storage account?"
+  - content: "Your creating an Azure Data Lake Storage Gen2 account. You must configure this account to be able to process analytical data workloads for best performance. Which option should you configure when creating the storage account?"
     choices:
     - content: "On the **Basic** tab, set the **Performance** option to **Standard**."
       isCorrect: false
       explanation: "The **Performance** option determines the types of physical storage that the storage account will use."
     - content: "On the **Basic** Tab, set the **Performance** option to **ON**."
       isCorrect: false
-      explanation: "The **Performance** option set to **ON** is not a valid configuration."
-    - content: "On the **Advanced** tab, set the **Hierarchical Namespace** to **Enabled**."
+      explanation: "The **Performance** option set to **ON** isn't a valid configuration."
+    - content: "On the **Advanced** tab, check (enable) the **Enable hierarchical namespace** setting."
       isCorrect: true
-      explanation: "Correct! If you want to enable the best performance for analytical workloads in Data Lake Storage Gen2, then on the **Advanced** tab of the Storage Account creation set the **Hierarchical Namespace** to **Enabled**."
+      explanation: "Correct! If you want to enable the best performance for analytical workloads in Data Lake Storage Gen2, then on the **Advanced** tab of the Storage Account creation check (enable) the **Enable hierarchical namespace** setting."
   - content: "In which phase of big data processing is Azure Data Lake Storage located?"
     choices:
     - content: "Ingestion"
