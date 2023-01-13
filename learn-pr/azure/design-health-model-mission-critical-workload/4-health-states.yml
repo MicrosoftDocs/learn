@@ -37,9 +37,9 @@ quiz:
       explanation: "Incorrect. You can easily change the health model later if you need to."
   - content: "Does it make sense to have both *degraded* and *unhealthy* states in your health model?"
     choices:
-    - content: "Incorrect. When a component isn't working properly, the entire application should enter the *unhealthy* state and wait for the problem to be addressed."
+    - content: "When a component isn't working properly, the entire application should enter the *unhealthy* state and wait for the problem to be addressed."
       isCorrect: false
-      explanation: "When a component isn't working properly, it doesn't always mean that the business requirements are affected. For example, although a slower response time means that the user will still get a response, it needs to be investigated before it causes a complete outage."
-    - content: "Correct. Not all parts of the system have the same criticality. Sometimes, suboptimal performance doesn't break the application for its users."
+      explanation: "Incorrect. When a component isn't working properly, it doesn't always mean that the business requirements are affected. For example, although a slower response time means that the user will still get a response, it needs to be investigated before it causes a complete outage."
+    - content: "Not all parts of the system have the same criticality. Sometimes, suboptimal performance doesn't break the application for its users."
       isCorrect: true
-      explanation: "It's important to distinguish between non-healthy states that will break the application for its users and states that can potentially break the user experience."
+      explanation: "Correct. It's important to distinguish between non-healthy states that will break the application for its users and states that can potentially break the user experience."
