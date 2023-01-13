@@ -1,18 +1,18 @@
 A colleague asks you to turn on the App Service Always On feature on the company website, so the website app is always running.
 
-In this exercise, you'll update the workflow you created to run automatically whenever a file changes on your *main* branch. You'll use the updated workflow to deploy the requested configuration change to the website.
+In this exercise, you'll update the workflow you created to run automatically whenever a file changes on your _main_ branch. You'll use the updated workflow to deploy the requested configuration change to the website.
 
 During the process, you'll:
 
 > [!div class="checklist"]
 >
-> - Update your workflow, so it triggers automatically whenever a file changes in the *deploy* folder on the *main* branch.
+> - Update your workflow, so it triggers automatically whenever a file changes in the _deploy_ folder on the _main_ branch.
 > - Make a change to your Bicep file.
 > - Verify that the workflow runs automatically.
 
 ## Update the trigger to be branch-based
 
-1. In Visual Studio Code, open the *.github/workflows/workflow.yml* file.
+1. In Visual Studio Code, open the _.github/workflows/workflow.yml_ file.
 
 1. Near the top of the file, under the line that reads `name: deploy-toy-website`, add the following code to prevent multiple simultaneous workflows runs:
 
@@ -35,7 +35,7 @@ During the process, you'll:
 
 ## Update your Bicep file
 
-1. In Visual Studio Code, open the *main.bicep* file.
+1. In Visual Studio Code, open the _main.bicep_ file.
 
 1. In the `appServiceApp` resource definition's `siteConfig` property, add the `alwaysOn` property, with a value of `true`:
 
@@ -61,9 +61,13 @@ During the process, you'll:
 
    The workflow shows a failed deployment.
 
-1. To diagnose the failure, select the **deploy** job, and select the failed **arm-deploy** task. Notice that it includes the following text:
+1. To diagnose the failure, select the **deploy** job, and select the failed **arm-deploy** task.
 
-   `There was a conflict. AlwaysOn cannot be set for this site as the plan does not allow it. For more information on pricing and features, please see: https://aka.ms/appservicepricingdetails`
+   Notice that it includes the following text:
+
+   ```Output
+   There was a conflict. AlwaysOn cannot be set for this site as the plan does not allow it. For more information on pricing and features, please see: https://aka.ms/appservicepricingdetails
+   ```
 
    This error message indicates that the deployment failed because the App Service app was deployed by using the F1 free tier, which doesn't support the Always On feature.
 

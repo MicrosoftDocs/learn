@@ -16,13 +16,13 @@ You've already prepared your website's Bicep file, which can be used to deploy d
 
 1. Open the Visual Studio Code Explorer.
 
-1. At the root of your repository, create a *deploy* folder.
+1. At the root of your repository, create a _deploy_ folder.
 
-1. In the *deploy* folder, create a new file named *main.bicep*. Make sure you create the file inside the *deploy* folder:
+1. In the _deploy_ folder, create a new file named _main.bicep_. Make sure you create the file inside the _deploy_ folder:
 
    :::image type="content" source="../media/6-visual-studio-code-main-bicep.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the main dot bicep file highlighted and located in the deploy folder.":::
 
-1. Copy the following code into the *main.bicep* file:
+1. Copy the following code into the _main.bicep_ file:
 
    :::code language="bicep" source="code/6-main.bicep":::
 
@@ -40,7 +40,7 @@ You've already prepared your website's Bicep file, which can be used to deploy d
 
 Next, update your workflow definition to deploy your Bicep file to Azure.
 
-1. In Visual Studio Code, open the *.github/workflows/workflow.yml* file.
+1. In Visual Studio Code, open the _.github/workflows/workflow.yml_ file.
 
 1. At the top of the file, above the `jobs:` line, add a `permissions` section:
 
@@ -54,7 +54,7 @@ Next, update your workflow definition to deploy your Bicep file to Azure.
 
 1. To remove the `placeholder` step from the workflow definition, delete the bottom two lines of the file.
 
-1. As a first step you will add a task to check out the code to the runner's file system. Add a new step at the bottom of the file:
+1. As a first step you'll add a task to check out the code to the runner's file system. Add a new step at the bottom of the file:
 
    :::code language="yaml" source="code/6-workflow.yml" range="13-17" highlight="5" :::
 

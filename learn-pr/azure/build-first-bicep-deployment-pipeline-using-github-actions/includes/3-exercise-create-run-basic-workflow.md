@@ -29,7 +29,7 @@ In this exercise, you'll:
 
    :::image type="content" source="../media/3-github-new-project-details.png" alt-text="Screenshot of the GitHub interface showing the configuration for the repository to create." border="true":::
 
-1. Keep a note of the **Owner** of the repository. In the screenshot above, the owner is `mygithubuser`. This is your GitHub account name, and you'll use it later in this module.
+1. Keep a note of the **Owner** of the repository. In the screenshot, `mygithubuser` is the repository owner's GitHub account name. You'll use your account name later in this module.
 
 1. Select **Create repository**.
 
@@ -87,9 +87,9 @@ Now that you've created and cloned your repository, you're ready to create a bas
    > [!NOTE]
    > Make sure you include the period at the start of the folder name. This indicates that this is a hidden folder, and GitHub requires the period for GitHub Actions to detect the workflow definition.
 
-1. In the *.github* folder, create another folder named *workflows*.
+1. In the _.github_ folder, create another folder named _workflows_.
 
-1. In the *workflows* folder, create a new file named *workflow.yml*.
+1. In the _workflows_ folder, create a new file named _workflow.yml_.
 
    :::image type="content" source="../media/3-visual-studio-code-workflow-file.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the .github/workflows folder and the workflow.yml file shown." border="true":::
 
@@ -110,7 +110,7 @@ Now that you've created and cloned your repository, you're ready to create a bas
 
 ## Run the workflow
 
-You have created a workflow definition. GitHub Actions automatically detects your workflow file because it's located in the *.github/workflows* directory.
+You've created a workflow definition. GitHub Actions automatically detects your workflow file because it's located in the _.github/workflows_ directory.
 
 1. In your browser, navigate to your repository. You might need to refresh the page to see your changes.
 
@@ -122,17 +122,17 @@ You have created a workflow definition. GitHub Actions automatically detects you
 
    :::image type="content" source="../media/3-workflow-select.png" alt-text="Screenshot of the GitHub interface showing the Actions tab, with the deploy-toy-website workflow selected." border="true":::
 
-1. Select the **Run workflow** dropdown and click the **Run workflow** button.
+1. Select the **Run workflow** dropdown and then select the **Run workflow** button.
 
    :::image type="content" source="../media/3-run-workflow.png" alt-text="Screenshot of the GitHub interface showing the Actions tab, with the Run workflow dropdown and button selected." border="true":::
 
-1. This will start a new run of your workflow. It might take a few moments, but the page will automatically refresh and show you a queued or running or even already finished workflow run.
+1. The workflow begins to run. It might take a few moments, but the page will automatically refresh and show you a queued or running or even already finished workflow run.
 
    :::image type="content" source="../media/3-workflow-running.png" alt-text="Screenshot of the GitHub interface showing the Actions tab, with one workflow running." border="true":::
 
    Notice the run status initially is displayed as **Queued**. It can take some time for your workflow to start. Your job is added to a queue for a runner, and once a runner is available, GitHub Actions assigns the runner and starts the job. The job status then becomes **Executing**.
 
-   Each workflow run includes an identifier. You can use this when you need to refer to the workflow run, and to help find a specific workflow run.
+   Each workflow run includes an identifier. You can use this identifier when you need to refer to the workflow run, and to help find a specific workflow run.
 
 ## Verify the workflow run
 
@@ -140,7 +140,7 @@ You have created a workflow definition. GitHub Actions automatically detects you
 
    :::image type="content" source="../media/3-workflow-run-details.png" alt-text="Screenshot of the GitHub interface showing the details of the workflow run, with the status and commit identifier highlighted." border="true":::
 
-   Also, notice the page includes an identifier for the Git commit that the run used. This indicates the version of your repository's content that the workflow used.
+   Also, notice the page includes an identifier for the Git commit that the run used. The commit's identifier indicates the version of your repository's content that the workflow used.
 
 1. In the list of jobs, select **say-hello**.
 
@@ -150,7 +150,7 @@ You have created a workflow definition. GitHub Actions automatically detects you
 
    :::image type="content" source="../media/3-workflow-job-summary.png" alt-text="Screenshot of the GitHub interface showing the workflow run log, with the placeholder step highlighted." border="true":::
 
-   Notice the list includes steps that you didn't specify. These are created automatically by GitHub Actions.
+   Notice the list includes steps that you didn't specify. These steps are created automatically by GitHub Actions.
 
 1. Select the **Placeholder step** step.
 
