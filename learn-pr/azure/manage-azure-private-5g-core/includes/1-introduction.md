@@ -30,3 +30,13 @@ The following table describes the major resource types that you'll need for mana
 |SIM |A SIM for an attached UE |Use this resource to configure a SIM. You can open it from a **Mobile Network**. |
 |SIM Policy |A SIM policy |Use this resource to manage a SIM policy. You can open it from a **Mobile Network**.  |
 |Service |A service |Use this resource in SIM policy configuration. You can open it from a **Mobile Network**. |
+
+These resources are interrelated. Take the SIM related resources as an example. You can categorize SIMs into SIM groups, and assign [SIM policies](3-policy-control.md#using-services-and-sim-policies-for-network-traffic-control) to the SIMs. Each SIM policy can have multiple network scopes, and in each scope, one or more services can be used.
+
+The following diagram shows an example of two SIM policies assigned to SIMs in two different SIM groups:
+
+:::image type="content" source="../media/sim-policy-relationship.png" alt-text="A diagram that shows two SIM policies and their related SIMs, SIM groups, and services." border="true":::
+
+As shown in the diagram, SIM group 1 contains three SIMs, while SIM group 2 contains two SIMs. SIM policy 1 and SIM policy 2 are respectively assigned to the SIMs in SIM group 1 and SIM group 2.
+
+The private mobile network has two DNs and four [slices](2-network-and-site-management.md#configure-network-slices). SIM policy 1 has two network scopes, through which [service](3-policy-control.md#using-services-and-sim-policies-for-network-traffic-control) 1 and service 2 are respectively used. SIM policy 2 also has two network scopes, through which service 2 is used. Each network scope is restricted by the combination of a slice and a DN.

@@ -59,12 +59,12 @@ quiz:
       explanation: "Try again. SIM policies aren't assigned IP addresses. They're mainly for network traffic control."
   - content: "How should a packet core instance be upgraded?"
     choices:
-    - content: "Upgrade the ASE that hosts the packet core instance."
+    - content: "Upgrade the ASE, which will automatically upgrade the packet core."
       isCorrect: false
       explanation: "Try again. A new version of the packet core may require the underlying ASE to be upgraded. However, a packet core instance won't be automatically upgraded if its underlying ASE is upgraded."
-    - content: "Upgrade the Azure Kubernetes Service (AKS) that hosts the packet core instance."
+    - content: "Upgrade the Azure Kubernetes Service (AKS), which will automatically upgrade both the ASE and the packet core."
       isCorrect: false
-      explanation: "Try again. Upgrading the AKS won't automatically upgrade the packet core instance it hosts."
-    - content: "Open the **Packet Core Control Plan** resource representing the packet core instance and then select **Upgrade version**."
+      explanation: "Try again. Upgrading the AKS won't automatically upgrade the packet core or the ASE."
+    - content: "Upgrade the ASE if necessary, and then upgrade the packet core through the **Mobile Network Site** resource."
       isCorrect: true
-      explanation: "Correct. You can use the **Packet Core Control Plan** resource representing the packet core instance to upgrade the instance through the Azure portal."
+      explanation: "Correct. You can use the **Mobile Network Site** resource representing the packet core instance to upgrade the instance through the Azure portal."

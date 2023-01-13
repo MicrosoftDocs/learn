@@ -2,18 +2,6 @@ After the deployment of a private mobile network, you'll need to manage the SIMs
 
 This unit introduces you to the SIM management tasks, such as SIM provisioning and SIM group management.
 
-## Relationship of SIMs, SIM groups, SIM policies, and services
-
-You can categorize SIMs into [SIM groups](#manage-sims-and-sim-groups), and assign SIM policies to the SIMs. Each SIM policy can have multiple network scopes, and in each scope, one or more services can be used.
-
-The following diagram shows an example of two SIM policies assigned to SIMs in two different SIM groups:
-
-:::image type="content" source="../media/sim-policy-relationship.png" alt-text="A diagram that shows two SIM policies and their related SIMs, SIM groups, and services." border="true":::
-
-As shown in the diagram, SIM group 1 contains three SIMs, while SIM group 2 contains two SIMs. SIM policy 1 and SIM policy 2 are respectively assigned to the SIMs in SIM group 1 and SIM group 2.
-
-The private mobile network has two DNs and four slices. SIM policy 1 has two network scopes, through which service 1 and service 2 are respectively used. SIM policy 2 also has two network scopes, through which service 2 is used. Each network scope is restricted by the combination of a slice and a DN.
-
 ## Provision new SIMs
 
 Azure Private 5G Core uses SIM resources to represent the physical SIMs or eSIMs that the UEs in a private mobile network use. For the UEs to communicate with the DNs through the packet core instances, you need to provision their SIMs with the SIM resources.

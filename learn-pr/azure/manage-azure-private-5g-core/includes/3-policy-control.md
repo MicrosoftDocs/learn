@@ -53,11 +53,11 @@ Each SIM policy includes:
 
   You can use the network scope to determine the services offered to SIMs on the DN and the set of QoS characteristics that will be used to form the default QoS flow for PDU sessions (or EPS bearer for PDN connections in 4G networks).
 
-In each SIM policy, you can specify how the network traffic from relevant UEs should be controlled on a per slice basis. The following diagram shows how the network traffic is controlled with different slices and DNs.
+In each SIM policy, you can specify how the network traffic from relevant UEs should be controlled on a per slice and DN basis. The following diagram shows how the network traffic is controlled with different slices and DNs.
 
 :::image type="content" source="../media/policy-slice-dn.png" alt-text="A diagram that shows two UEs connecting to two DNs using two different slices." border="true":::
 
-As shown in the diagram, UE 1 uses slice 1 to connect to DN 1, while UE 2 uses slice 2 to connect to DN 2. The SIM policies used by UE 1 and UE 2 respectively specify the slices to be used.
+As shown in the diagram, UE 1 uses slice 1 and DN 2, while UE 2 uses slice 2 and DN 1. The SIM policies used by UE 1 and UE 2 respectively specify the slices and DNs to be used.
 
 For more information about controlling the network traffic in a private mobile network, see [Policy control](/azure/private-5g-core/policy-control).
 
