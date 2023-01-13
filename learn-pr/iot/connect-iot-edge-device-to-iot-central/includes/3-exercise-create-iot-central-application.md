@@ -44,7 +44,7 @@ The following steps create an IoT Central application and generate an API token 
 
     :::image type="content" source="../media/3-deployment-manifests.png" alt-text="Screenshot showing the deployment manifests page where you manage the IoT Edge deployment manifests in your IoT Central application.":::
 
-1. Select **Create an edge manifest**, enter the name **Environmental Sensor**, select **Upload a file**, and then browse to select the *EnvironmentalSensorManifest-1-4.json* file you downloaded previously.
+1. Select **Create an edge manifest**, enter the name *Environmental Sensor*, select **Upload a file**, and then browse to select the *EnvironmentalSensorManifest-1-4.json* file you downloaded previously.
 
 1. Select **Next** and then **Create** to upload the manifest. The manifest configures three IoT Edge modules: **edgeAgent**, **edgeHub**, and **SimulatedTemperatureSensor**.
 

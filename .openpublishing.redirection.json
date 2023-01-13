@@ -19711,6 +19711,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/az-900-describe-cloud-concepts/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/0-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/monitor-and-manage-device-with-iot-central/1-introduction",
       "redirect_document_id": true
