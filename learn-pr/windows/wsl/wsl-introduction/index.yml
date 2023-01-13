@@ -30,11 +30,11 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - digital-application-innovation
 units:
-- learn.wsl-introduction.introduction-to-wsl
+- learn.wsl-introduction.introduction
 - learn.wsl-introduction.what-is-wsl
-- learn.wsl-introduction.install-and-setup-wsl
-- learn.wsl-introduction.understanding-wsl-workflow
-- learn.wsl-introduction.run-basic-wsl-commands
+- learn.wsl-introduction.install-and-setup
+- learn.wsl-introduction.understanding-workflow
+- learn.wsl-introduction.run-basic-commands
 - learn.wsl-introduction.knowledge-check
 - learn.wsl-introduction.summary
 badge:
