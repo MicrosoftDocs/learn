@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-compute-resources-azure-machine-learning.create-use-compute-cluster
+title: Create and use a compute cluster
+metadata:
+  title: Create and use a compute cluster
+  description: "Create and use a compute cluster"
+  ms.date: 01/13/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-create-use-compute-cluster.md)]
