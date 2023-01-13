@@ -111,7 +111,7 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
    Alternatively, run the following command at any time while `HttpRepl` is running:
 
    ```dotnetcli
-   (Disconnected)> connect https://localhost:{PORT}
+   connect https://localhost:{PORT}
    ```
 
 1. To see the newly available `Pizza` endpoint, run the following command:
@@ -122,7 +122,7 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
 
    The preceding command detects all APIs available on the connected endpoint. It should display the following code:
 
-   ```dotnetcli
+   ```output
     https://localhost:{PORT}/> ls
     .                 []
     Pizza             [GET]
@@ -137,7 +137,7 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
 
    The preceding command shows an output of available APIs for the `Pizza` endpoint:
 
-   ```dotnetcli
+   ```output
    https://localhost:{PORT}/> cd Pizza
    /Pizza    [GET]
    ```
@@ -148,9 +148,9 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
    get
    ```
 
-   The preceding command returns a list of all pizzas in `json`:
+   The preceding command returns a list of all pizzas in JSON:
 
-   ```dotnetcli
+   ```output
      HTTP/1.1 200 OK
      Content-Type: application/json; charset=utf-8
      Date: Fri, 02 Apr 2021 21:55:53 GMT
@@ -179,7 +179,7 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
 
     The preceding command returns `Classic Italian` with the following output:
 
-    ```dotnetcli
+    ```output
     HTTP/1.1 200 OK
     Content-Type: application/json; charset=utf-8
     Date: Fri, 02 Apr 2021 21:57:57 GMT
@@ -201,7 +201,7 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
 
     The preceding command returns a `404 Not Found` error with the following output:
 
-    ```dotnetcli
+    ```output
     HTTP/1.1 404 Not Found
     Content-Type: application/problem+json; charset=utf-8
     Date: Fri, 02 Apr 2021 22:03:06 GMT
