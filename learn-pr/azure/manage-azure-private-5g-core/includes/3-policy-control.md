@@ -23,6 +23,12 @@ Each SDF may require a different set of quality of service (QoS) characteristics
 
 To ensure the correct QoS characteristics are applied, each SDF is bound to a QoS flow. Each QoS flow has a unique QoS profile, which identifies the QoS characteristics that should be applied to any SDFs bound to the QoS flow. Multiple SDFs with the same QoS requirements can be bound to the same QoS flow.
 
+The following diagram shows an example PDU session:
+
+:::image type="content" source="../media/pdu-qos-example.png" alt-text="An diagram that shows an example PDU session." border="true":::
+
+As shown in the example, IP flow 1 and IP flow 2 are for different services, so they're respectively assigned to SDF 1 and SDF 2. However, SDF 1 and SDF 2 require the same QoS characteristics, so they're bound to the same QoS flow, QoS flow1. QoS profile 1 defines the QoS characteristics of QoS flow 1.
+
 In 4G networks, the packet core instance helps to establish packet data network (PDN) connections to transport user plane traffic. PDN connections also contain one or more SDFs. The SDFs are bound to Evolved Packet System (EPS) bearers. EPS bearers are also assigned a QoS profile. Each EPS bearer is assigned an EPS bearer ID (EBI), which is used by network elements to map SDFs to EPS bearers.
 
 For more information about these concepts, see relevant 4G or 5G documentation.
@@ -46,6 +52,12 @@ Each SIM policy includes:
 - A network scope that defines the network slice and DN to which the SIM policy applies.
 
   You can use the network scope to determine the services offered to SIMs on the DN and the set of QoS characteristics that will be used to form the default QoS flow for PDU sessions (or EPS bearer for PDN connections in 4G networks).
+
+In each SIM policy, you can specify how the network traffic from relevant UEs should be controlled on a per slice basis. The following diagram shows how the network traffic is controlled with different slices and DNs.
+
+:::image type="content" source="../media/policy-slice-dn.png" alt-text="A diagram that shows two UEs connecting to two DNs using two different slices." border="true":::
+
+As shown in the diagram, UE 1 uses slice 1 to connect to DN 1, while UE 2 uses slice 2 to connect to DN 2. The SIM policies used by UE 1 and UE 2 respectively specify the slices to be used.
 
 For more information about controlling the network traffic in a private mobile network, see [Policy control](/azure/private-5g-core/policy-control).
 
