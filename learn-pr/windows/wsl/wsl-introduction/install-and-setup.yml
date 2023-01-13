@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wsl-introduction.3-install-and-setup
+uid: learn.wsl-introduction.install-and-setup
 title: Install and set up Linux on Windows with WSL
 metadata:
   unitType: exercise
