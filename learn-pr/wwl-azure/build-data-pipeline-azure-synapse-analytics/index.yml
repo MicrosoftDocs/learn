@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build a data pipeline in Azure Synapse Analytics
-summary: In this module we address the similarities between Azure Data Factory and Azure Synapse Pipelines and a lab using Synapse Pipelines. We also see that tools such as purview and how the use of Azure Data Lake can help us reduce costs as it is accessible from downstream tooling. Finally, we see that with orchestration and integration with Purview, that Azure provides full data lineage which is instrumental to ensuring complete control over your data and providing a single version of the truth.
+summary: In this module we look to define not only what an Azure Synapse Pipeline and its capabilities are, but to show its similarities to Azure Data Factory which many are already familiar with.
 abstract: |
   At the end of this module, you should:
   - understand Azure Synapse Analytics Pipelines from a high level.
