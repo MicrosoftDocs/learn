@@ -4,89 +4,88 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Interactive questions that validate whether the learner achieved the learning objectives.
-  ms.date: 01/27/2022
+  ms.date: 04/19/2022
   author: timlt
   ms.author: timlt
   ms.reviewer: liydu
   manager: lizross
-  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-python
 durationInMinutes: 2
 content: |
 quiz:
   questions:
-  - content: "Which of the following statements is most correct for ThreadX RTOS scheduling?"
-    choices:
-        - content: "It uses a priority-based preemptive scheduling approach."
+    - content: 'Which of the following statements is most correct for ThreadX RTOS scheduling?'
+      choices:
+        - content: 'It uses a priority-based preemptive scheduling approach.'
           isCorrect: false
-          explanation: "This is true, but note the other statements are also correct."
-        - content: "It quickly responds to important events because it does not have to wait for any polling."
+          explanation: 'This is true, but note the other statements are also correct.'
+        - content: 'It quickly responds to important events because it does not have to wait for any polling.'
           isCorrect: false
-          explanation: "This is true, but note the other statements are also correct."
-        - content: "It schedules the ready thread with the highest priority that has been waiting for the processor the longest."
+          explanation: 'This is true, but note the other statements are also correct.'
+        - content: 'It schedules the ready thread with the highest priority that has been waiting for the processor the longest.'
           isCorrect: false
-          explanation: "This is true, but note the other statements are also correct."
-        - content: "All of the above."
+          explanation: 'This is true, but note the other statements are also correct.'
+        - content: 'All of the above.'
           isCorrect: true
-          explanation: "All these statements are correct."
+          explanation: 'All these statements are correct.'
 
-  - content: "Which of the following statements is most correct for threads?"
-    choices:
-        - content: "It is possible for a thread to be in a ready state and a suspended state at the same time."
+    - content: 'Which of the following statements is most correct for threads?'
+      choices:
+        - content: 'It is possible for a thread to be in a ready state and a suspended state at the same time.'
           isCorrect: false
-          explanation: "A thread cannot be both in a ready state and a suspended state at the same time."
-        - content: "Under certain circumstances, a suspended thread can be executed."
+          explanation: 'A thread cannot be both in a ready state and a suspended state at the same time.'
+        - content: 'Under certain circumstances, a suspended thread can be executed.'
           isCorrect: false
-          explanation: "A suspended thread would have to become ready before being executed."
-        - content: "Each thread must have its own stack."
+          explanation: 'A suspended thread would have to become ready before being executed.'
+        - content: 'Each thread must have its own stack.'
           isCorrect: true
-          explanation: "Correct."
-        - content: "All thread stacks must be the same size."
+          explanation: 'Correct.'
+        - content: 'All thread stacks must be the same size.'
           isCorrect: false
-          explanation: "A stack can be any size, but it must be large enough for successful thread operation."
+          explanation: 'A stack can be any size, but it must be large enough for successful thread operation.'
 
-  - content: "Which of the following statements is most correct for thread suspension?"
-    choices:
-        - content: "There is only one way for a thread to become suspended."
+    - content: 'Which of the following statements is most correct for thread suspension?'
+      choices:
+        - content: 'There is only one way for a thread to become suspended.'
           isCorrect: false
-          explanation: "There are many ways for a thread to become suspended."
-        - content: "A thread can be suspended because it needs a resource that is unavailable."
+          explanation: 'There are many ways for a thread to become suspended.'
+        - content: 'A thread can be suspended because it needs a resource that is unavailable.'
           isCorrect: true
-          explanation: "Correct."
-        - content: "The length of time for a thread to be suspended depends on its priority."
+          explanation: 'Correct.'
+        - content: 'The length of time for a thread to be suspended depends on its priority.'
           isCorrect: false
-          explanation: "Suspension time has nothing to do with priority."
-        - content: "When a thread is removed from the suspended state, it is immediately terminated."
+          explanation: 'Suspension time has nothing to do with priority.'
+        - content: 'When a thread is removed from the suspended state, it is immediately terminated.'
           isCorrect: false
-          explanation: "In most cases, a suspended thread enters the ready state."
- 
-  - content: "Which of the following statements is most correct?"
-    choices:
-        - content: "The Thread Control Block schedules all the threads."
-          isCorrect: false
-          explanation: "The Thread Control Block contains essential thread information and does no scheduling."
-        - content: "The thread entry function stores the priority of a thread."
-          isCorrect: false
-          explanation: "The thread entry function stores executable code."
-        - content: "The thread stack size is not important, so it can be assigned any value."
-          isCorrect: false
-          explanation: "Stack size is crucial and must be assigned a value large enough for successful thread operation."
-        - content: "There is no explicit limit on how many threads can be created."
-          isCorrect: true
-          explanation: "Correct."
+          explanation: 'In most cases, a suspended thread enters the ready state.'
 
-  - content: "Which of the following statements is most correct?"
-    choices:
-        - content: "The context of a thread refers to the contents of the Thread Control Block."
+    - content: 'Which of the following statements is most correct?'
+      choices:
+        - content: 'The Thread Control Block schedules all the threads.'
           isCorrect: false
-          explanation: "Thread context usually consists of register contents, program counter, and stack pointer."
+          explanation: 'The Thread Control Block contains essential thread information and does no scheduling.'
+        - content: 'The thread entry function stores the priority of a thread.'
+          isCorrect: false
+          explanation: 'The thread entry function stores executable code.'
+        - content: 'The thread stack size is not important, so it can be assigned any value.'
+          isCorrect: false
+          explanation: 'Stack size is crucial and must be assigned a value large enough for successful thread operation.'
+        - content: 'There is no explicit limit on how many threads can be created.'
+          isCorrect: true
+          explanation: 'Correct.'
+
+    - content: 'Which of the following statements is most correct?'
+      choices:
+        - content: 'The context of a thread refers to the contents of the Thread Control Block.'
+          isCorrect: false
+          explanation: 'Thread context usually consists of register contents, program counter, and stack pointer.'
         - content: "When a thread's context has been restored, its priority is decreased by 1."
           isCorrect: false
-          explanation: "There is no connection between priority and thread context."
-        - content: "When a thread is preempted, its context must be saved."
+          explanation: 'There is no connection between priority and thread context.'
+        - content: 'When a thread is preempted, its context must be saved.'
           isCorrect: true
-          explanation: "Correct."
+          explanation: 'Correct.'
         - content: "A thread's context contains the number of times that thread has been preempted."
           isCorrect: false
-          explanation: "Thread context usually consists of register contents, program counter, and stack pointer."
+          explanation: 'Thread context usually consists of register contents, program counter, and stack pointer.'

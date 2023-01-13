@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.visualize-real-time-data-azure-stream-analytics-power-bi.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/30/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: stream-analytics
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which type of Azure Stream Analytics output should you use to support real-time visualizations in Microsoft Power BI?"
+    choices:
+    - content: "Azure Synapse Analytics"
+      isCorrect: false
+      explanation: "Incorrect. An Azure Synapse Analytics output writes data to a table in an Azure Synapse Analytics dedicated SQL pool."
+    - content: "Azure Event Hubs"
+      isCorrect: false
+      explanation: "Incorrect. An Azure Event Hubs output writes data to an event hub for downstream processing."
+    - content: "Power BI"
+      isCorrect: true
+      explanation: "Correct. A Power BI output creates a dataset with a table of streaming data in a Power BI workspace."
+  - content: "You want to use an output to write the results of a Stream Analytics query to a table named **device-events** in a dataset named **realtime-data** in a Power BI workspace named **analytics workspace**. What should you do?"
+    choices:
+    - content: "Create only the workspace. The dataset and table will be created automatically."
+      isCorrect: true
+      explanation: "Correct. The dataset and table will be created dynamically by the output."
+    - content: "Create the workspace and dataset. The table will be created automatically."
+      isCorrect: false
+      explanation: "Incorrect. The dataset and table will be created dynamically by the output."
+    - content: "Create the workspace, dataset, and table before creating the output."
+      isCorrect: false
+      explanation: "Incorrect. The dataset and table will be created dynamically by the output."
+  - content: "You want to create a visualization that updates dynamically based on a table in a streaming dataset in Power BI. What should you do?"
+    choices:
+    - content: "Create a report from the dataset."
+      isCorrect: false
+      explanation: "incorrect. A visualization in a report does not update dynamically."
+    - content: "Create a dashboard with a tile based on the streaming dataset."
+      isCorrect: true
+      explanation: "Correct. A dashboard with a tile based on a streaming dataset updates dynamically as new data arrives."
+    - content: "Export the streaming dataset to Excel and create a report from the Excel workbook."
+      isCorrect: false
+      explanation: "Incorrect. A report based on an Excel workbook does not update dynamically."

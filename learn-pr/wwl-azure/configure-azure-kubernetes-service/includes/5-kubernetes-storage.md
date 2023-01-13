@@ -1,47 +1,69 @@
-Applications that run in Azure Kubernetes Service (AKS) may need to store and retrieve data. For some application workloads, this data storage can use local, fast storage on the node that is no longer needed when the pods are deleted. Other application workloads may require storage that persists on more regular data volumes within the Azure platform. Multiple pods may need to share the same data volumes, or reattach data volumes if the pod is rescheduled on a different node. Finally, you may need to inject sensitive data or application configuration information into pods.
+There are different scenarios where applications in an Azure Kubernetes Service cluster might need to store and retrieve data. Consider the following examples:
 
-:::image type="content" source="../media/kubernetes-storage-b14b0f2d.png" alt-text="Storage options for applications in an Azure Kubernetes Services cluster.":::
+- Your application workload uses local, fast data storage on a node that's no not needed after the pods are deleted.
+- Your application workload requires storage that persists on more regular data volumes within the Azure platform.
+- Multiple pods share the same data volumes, or reattach data volumes if the pod is rescheduled on a different node.
+- You need to inject sensitive data or application configuration information into pods.
 
+The following illustration highlights storage options for applications in an AKS cluster.
 
-This section introduces the core concepts that provide storage to your applications in AKS:
+:::image type="content" source="../media/kubernetes-storage-b14b0f2d.png" alt-text="Illustration that shows storage options for applications in an Azure Kubernetes Services cluster." border="false":::
 
- -  Volumes
- -  Persistent volumes
- -  Storage classes
- -  Persistent volume claims
+Let's examine four core concepts about providing storage for your applications in AKS: storage volumes, persistent volumes, storage classes, and volume claims.
 
-## Volumes
+### Things to know about storage volumes
 
-Applications often need to be able to store and retrieve data. As Kubernetes typically treats individual pods as ephemeral, disposable resources, different approaches are available for applications use and persist data as necessary. A *volume* represents a way to store, retrieve, and persist data across pods and through the application lifecycle.
+Applications often need to store and retrieve data. Because Kubernetes typically treats individual pods as ephemeral, disposable resources, different approaches are available for applications to use and persist data as necessary. Storage volumes represent a way to store, retrieve, and persist data across pods and through the application lifecycle.
 
-Traditional volumes to store and retrieve data are created as Kubernetes resources backed by Azure Storage. You can manually create these data volumes to be assigned to pods directly, or have Kubernetes automatically create them. These data volumes can use Azure Disks or Azure Files:
+- Traditional storage volumes that store and retrieve data are created as Kubernetes resources backed by Azure Storage.
 
- -  *Azure Disks* can be used to create a Kubernetes *DataDisk* resource. Disks can use Azure Premium storage, backed by high-performance SSDs, or Azure Standard storage, backed by regular HDDs. For most production and development workloads, use Premium storage. Azure Disks are mounted as *ReadWriteOnce*, so are only available to a single node. For storage volumes that can be accessed by multiple nodes simultaneously, use Azure Files.
- -  *Azure Files* can be used to mount an SMB 3.0 share backed by an Azure Storage account to pods. Files let you share data across multiple nodes and pods. Files can use Azure Standard storage backed by regular HDDs, or Azure Premium storage, backed by high-performance SSDs.
+- You can manually create storage volumes to be assigned to pods directly, or have Kubernetes automatically create them.
 
-## Persistent volumes
+- Storage volumes can use Azure Disks or Azure Files:
 
-Volumes are defined and created as part of the pod lifecycle only exist until the pod is deleted. Pods often expect their storage to remain if a pod is rescheduled on a different host during a maintenance event, especially in StatefulSets. A *persistent volume* (PV) is a storage resource created and managed by the Kubernetes API that can exist beyond the lifetime of an individual pod.
+   - Use **Azure Disks** to create a Kubernetes *DataDisk* resource. Disks can use Azure Premium storage, backed by high-performance SSDs, or Azure Standard storage, backed by regular HDDs. For most production and development workloads, use Premium storage. Azure Disks are mounted with *ReadWriteOnce* permissions, so they're available to a single node only. For storage volumes that can be accessed by multiple nodes simultaneously, use Azure Files.
+ 
+   - Use **Azure Files** to mount an SMB 3.0 share backed by an Azure storage account to pods. Azure Files let you share data across multiple nodes and pods. Files can use Azure Standard storage backed by regular HDDs, or Azure Premium storage, backed by high-performance SSDs.
 
-Azure Disks or Files are used to provide the PersistentVolume. As noted in the previous section on Volumes, the choice of Disks or Files is often determined by the need for concurrent access to the data or the performance tier.
+### Things to know about persistent volumes
 
-A PersistentVolume can be *statically* created by a cluster administrator, or dynamically created by the Kubernetes API server. If a pod is scheduled and requests storage that is not currently available, Kubernetes can create the underlying Azure Disk or Files storage and attach it to the pod. Dynamic provisioning uses a *StorageClass* to identify what type of Azure storage needs to be created.
+Volumes are defined and created as part of the pod lifecycle and exist only until the pod is deleted. Pods often expect their storage to remain if a pod is rescheduled on a different host during a maintenance event, especially in `StatefulSets` configurations. A persistent volume (`PersistentVolume`) is a storage resource that's created and managed by the Kubernetes API that can exist beyond the lifetime of an individual pod.
 
-## Storage classes
+- You can use Azure Disks or Azure Files to provide a persistent volume. The choice of whether to use Azure Disks or Azure Files is often determined by the need for concurrent access to the data or the performance tier.
 
-To define different tiers of storage, such as Premium and Standard, you can create a *StorageClass*. The StorageClass also defines the *reclaimPolicy*. This reclaimPolicy controls the behavior of the underlying Azure storage resource when the pod is deleted and the persistent volume may no longer be required. The underlying storage resource can be deleted, or retained for use with a future pod.
+- A persistent volume can be statically created by a cluster administrator, or dynamically created by the Kubernetes API server.
 
-In AKS, four initial StorageClasses are created for cluster using the in-tree storage plugins:
+- If a pod is scheduled, and requests Storage that's not currently available, Kubernetes can create the underlying Azure Disks or Azure Files storage. Kubernetes also attaches the storage volume to the pod.
 
- -  default - Uses Azure StandardSSD storage to create a Managed Disk. The reclaim policy ensures that the underlying Azure Disk is deleted when the persistent volume that used it is deleted.
- -  managed-premium - Uses Azure Premium storage to create a Managed Disk. The reclaim policy again ensures that the underlying Azure Disk is deleted when the persistent volume that used it is deleted.
- -  azurefile - Uses Azure Standard storage to create an Azure File Share. The reclaim policy ensures that the underlying Azure File Share is deleted when the persistent volume that used it is deleted.
- -  azurefile-premium - Uses Azure Premium storage to create an Azure File Share. The reclaim policy ensures that the underlying Azure File Share is deleted when the persistent volume that used it is deleted.
+- Dynamic provisioning uses a `StorageClass` type to identify what kind of Azure Storage needs to be created.
 
-If no StorageClass is specified for a persistent volume, the default StorageClass is used. Take care when requesting persistent volumes so that they use the appropriate storage you need. You can create a StorageClass for additional needs using `kubectl`.
+### Things to know about storage classes
 
-## Persistent volume claims
+To define different tiers of storage, such as Premium and Standard, you can configure a `StorageClass` type. The `StorageClass` type also defines the `reclaimPolicy` actions for the storage. The `reclaimPolicy` definition controls the behavior of the underlying Azure Storage resource when the pod is deleted and the persistent volume might no longer be required. The underlying Storage resource can be deleted, or retained for use with a future pod.
 
-A PersistentVolumeClaim requests either Disk or File storage of a particular StorageClass, access mode, and size. The Kubernetes API server can dynamically provision the underlying storage resource in Azure if there is no existing resource to fulfill the claim based on the defined StorageClass. The pod definition includes the volume mount once the volume has been connected to the pod.
+In Azure Kubernetes Service, four initial `StorageClasses` types are created for a cluster by using in-tree storage plugins:
 
-A PersistentVolume is *bound* to a PersistentVolumeClaim once an available storage resource has been assigned to the pod requesting it. There is a 1:1 mapping of persistent volumes to claims.
+| StorageClass type | Description | reclaimPolicy action |
+| --- | --- | --- |
+| `default` | Use Azure StandardSSD storage to create an Azure managed disk. | Ensures the underlying Azure disk is deleted when the persistent volume that used the disk is deleted. |
+| `managed-premium` | Use Azure Premium storage to create an Azure managed disk. | Ensures the underlying Azure disk is deleted when the persistent volume that used the disk is deleted. |
+| `azurefile` | Use Azure Standard storage to create an Azures Files file share. | Ensures the underlying Azure Files file share is deleted when the persistent volume that used the file share is deleted. |
+| `azurefile-premium` | Use Azure Premium storage to create an Azures Files file share. | Ensures the underlying Azure Files file share is deleted when the persistent volume that used the file share is deleted. |
+
+If no `StorageClass` type is specified for a persistent volume, the `default` type is used.
+
+> [!Important]
+> Take care when requesting persistent volumes, and ensure your volumes use the storage you require.
+> You can create a `StorageClass` type to satisfy subsequent requirements by using the Azure CLI `kubectl` tool.
+
+### Things to know about persistent volume claims
+
+A persistent volume claim (`PersistentVolumeClaim`) requests either Azure Disks or Azure Files storage of a particular `StorageClass`, access mode, and size. 
+
+- The Kubernetes API server can dynamically provision the underlying storage resource in Azure, if there's no existing resource to fulfill the claim based on the defined `StorageClass` type.
+
+- The pod definition includes the volume mount after the volume has been connected to the pod.
+
+- A persistent volume is *bound* to a persistent volume claim after an available Storage resource is assigned to the pod that requests the volume.
+
+- There's a 1:1 mapping of persistent volumes to claims.

@@ -1,4 +1,4 @@
-The C# programming language is similar to any human written or spoken language, inasmuch that you can choose different ways to express the same idea. Some words and phrases are more descriptive, accurate, or succinct than others. There are several ways to add branching logic in your application, and depending on the context, some are more expressive and succinct than others.
+The C# programming language is similar to any human written or spoken language, in that you can choose different ways to express the same idea. Some words and phrases are more descriptive, accurate, or succinct than others. There are several ways to add branching logic in your application, and depending on the context, some are more expressive and succinct than others.
 
 Suppose we wanted to add a feature to our application that displayed an employee's title at the company next to their name. However, since the title names change occasionally, we only store the employee's level, which is a numeric equivalent of their title.
 

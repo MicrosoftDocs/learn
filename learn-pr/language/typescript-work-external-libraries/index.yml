@@ -32,7 +32,6 @@ roles:
 - developer
 products:
 - azure
-- vs-code
 units:
 - learn.language.typescript-work-external-libraries.1-introduction
 - learn.language.typescript-work-external-libraries.2-organize-code-with-modules

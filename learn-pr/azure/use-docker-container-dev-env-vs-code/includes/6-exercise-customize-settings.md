@@ -4,23 +4,14 @@ In this exercise, you'll use the devcontainer.json file to smooth these edges an
 
 ## Install Visual Studio Code extensions
 
-The container comes with the Microsoft Python extension. The Python extension enables snippets, linting, and IntelliSense in Python files. But the index.html file in the templates folder is a Jinja template, and you need to install a different extension to get syntax highlighting in that file.
+The container comes with the Microsoft Python extension ([as you can see in its base image](https://github.com/devcontainers/images/blob/main/src/python/.devcontainer/devcontainer.json#L42)). The Python extension enables snippets, linting, and IntelliSense in Python files. But the index.html file in the templates folder is a Jinja template, and you need to install a different extension to get syntax highlighting in that file.
 
 1. Press <kbd>F1</kbd> to open the Command Palette.
 1. Type **extension** and select **Extensions: Install Extensions**.
 1. In the extension explorer on the right, search for **jinja**.
 1. Select **Install**.
 1. Right-click the **Jinja** extension from **wholroyd** and select **Copy extension ID**.
-1. Add the extension ID to the `extensions` option.
-
-    ```json
-    // Add the IDs of extensions you want installed when the container is created.
-    "extensions": [
-        "ms-python.python",
-        "wholroyd.jinja"
-    ],
-    ```
-
+1. Add the extension ID to the `extensions` option in your devcontainer.json.
 1. Return to the devcontainer.json file and notice that the Jinja extension has been added to the `extensions` section.
 1. Save the devcontainer.json file.
 
@@ -68,4 +59,4 @@ The container will be rebuilt with the changes you've specified in the devcontai
 
 The container is now customized and automated for your agency. Any developer who opens this project by using Dev Containers can immediately run it and get to work writing code.
 
-In the next unit, you'll learn how to install software in the dev container.
+In the next unit, you'll learn how to install additional software in the dev container.

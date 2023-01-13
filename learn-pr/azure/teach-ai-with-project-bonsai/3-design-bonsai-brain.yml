@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.teach-ai-with-project-bonsai.design-bonsai-brain
+title: Design a brain
+metadata:
+  title: Design a brain
+  description: We explain how to design a brain using Project Bonsai.
+  ms.date: 11/8/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-design-bonsai-brain.md)] 

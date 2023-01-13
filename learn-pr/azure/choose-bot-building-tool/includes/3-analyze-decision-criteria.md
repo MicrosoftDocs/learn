@@ -1,4 +1,4 @@
-You must analyze your company's criteria. This will help you choose the bot-building option with the best fit for your company.
+To choose the bot-building option with the best fit for your company, you must first analyze your company's criteria.
 
 ## Compare bot-building options based on your requirements
 
@@ -10,7 +10,7 @@ If you prefer a low-code design interface, compare the three options:
 
 - Power Virtual Agents has a low-code, visual designer. The designer is hosted in a web app that you can use to design your bot. You can use the designer to create your bot and create and edit topics to govern conversation flow. You can also extend the bot with built-in AI capabilities, entities, variables, and Bot Framework skills.
 
-- QnA Maker has a portal interface you use to create a bot. You do this after you've created and designed your QnA Maker knowledge base.
+- QnA Maker has a portal interface you use to create a bot, after you've created and designed your QnA Maker knowledge base.
 
      > [!NOTE]
      > The QnA Maker portal doesn't offer bot-modification options. If you must modify your bot to meet test requirements, you'd have to edit the bot's source code.

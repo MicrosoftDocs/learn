@@ -58,13 +58,13 @@ For brevity, here you commit the changes to your branch, push your branch to Git
 
     You see that the deployed website shows the color and text changes.
 
-    :::image type="content" source="../media/5-app-service-staging.png" alt-text="A browser showing the Space Game website with color and text changes.":::
+    :::image type="content" source="../media/5-app-service-staging.png" alt-text="Screenshot of a browser that shows the Space Game website with color and text changes.":::
 
 1. Go to the URL that corresponds to the *swap* slot for your _Staging_ environment. The URL includes "-swap.azurewebsites.net" in its name.
 
     You see the previous version of the website, without the color and text changes.
 
-    :::image type="content" source="../media/5-app-service-staging-swap.png" alt-text="A browser showing the normal Space Game website.":::
+    :::image type="content" source="../media/5-app-service-staging-swap.png" alt-text="Screenshot of a browser that shows the normal Space Game website.":::
 
     You see no changes because you swapped the *production* slot and the *swap* slot. In other words, here you always deploy to the *swap* slot, and then you swap the *production* slot and *swap* slot. The swap process ensures that the *production* slot points to the more recent deployment.
 
@@ -130,11 +130,11 @@ Here you push your reverted change through the pipeline and see the results.
 
     The *production* slot now points to your reverted change, which is the original website.
 
-    :::image type="content" source="../media/5-app-service-staging-revert.png" alt-text="A browser showing the original Space Game website after reverting the changes. The website does not include the color and text changes.":::
+    :::image type="content" source="../media/5-app-service-staging-revert.png" alt-text="Screenshot of a browser that shows the original Space Game website after reverting the changes. The website doesn't include the color and text changes.":::
 
     The *swap* slot now points to the previous change.
 
-    :::image type="content" source="../media/5-app-service-staging-swap-revert.png" alt-text="A browser showing the Space Game website after reverting the change. The website shows the color and text changes.":::
+    :::image type="content" source="../media/5-app-service-staging-swap-revert.png" alt-text="Screenshot of a browser that shows the Space Game website after reverting the change. The website shows the color and text changes.":::
 
 Great work! The team now has a way to automate the releases. They can get new features to their users without incurring downtime.
 

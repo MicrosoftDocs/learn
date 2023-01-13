@@ -41,7 +41,7 @@ Every Azure resource that has a public endpoint requires a globally unique name.
 
 Next, configure Azure Pipeline variables that you'll use subsequently when provisioning Azure resources.
 
-1. Within the web browser window displaying the Azure portal, switch to the web browser tab displaying the DevOps project. In the vertical menu bar along the left edge of the project page, in the **Pipelines** section, select **Library**.
+1. Switch to the web browser tab displaying the DevOps project. In the vertical menu bar along the left edge of the project page, in the **Pipelines** section, select **Library**.
 1. On the **Library** page, select **+ Variable group**.
 1. On the properties page of the variable group, in the **Variable group name** textbox, enter **AzureResourcesVariableGroup**, ensure that the **Allow access to all pipelines** switch is selected, and, in the **Variables** section, use the **+ Add** link to add the following variables with the corresponding values (replace the `<Azure_region>` placeholder with the name of the Azure region into which you want to deploy Azure resources):
 
@@ -65,7 +65,7 @@ Next, configure Azure Pipeline variables that you'll use subsequently when provi
    > [!NOTE]
    > The last two variables are locked to designate them as secrets.
 
-    :::image type="content" source="../media/6-sample-variable-group.png" alt-text="The Library pane including the list of variables within the AzureResourcesVariableGroup variable group.":::
+    :::image type="content" source="../media/6-sample-variable-group.png" alt-text="Screenshot of the Library pane including the list of variables within the AzureResourcesVariableGroup variable group.":::
 
 1. On the properties page of the variable group, after you've added all variables, select **Save** in the toolbar.
 
@@ -136,7 +136,7 @@ Now, it's time to configure the Azure Pipeline you created in the previous exerc
        steps:
    ```
 
-1. On the **azure-pipelines.yml** editor pane, place the mouse cursor at the very end of the file and select the **Enter** key to start a new line.
+1. On the **azure-pipelines.yml** editor pane, place the mouse cursor at the very end of the file and press the **Enter** key to start a new line.
 1. On the **azure-pipelines.yml** editor pane, in the **Tasks** section, in the **Search tasks** text box, enter **Azure CLI**, and in the list of results, select the **Azure CLI** task entry.
 1. Select the newly added **Azure CLI** task. On the **Azure CLI** pane, in the **Azure Resource Manager connection** drop-down list, select the entry representing the **labAzureSubscription** service connection you created earlier in this exercise.
 1. On the **azure-pipelines.yml** editor pane, on the **Tasks** tab, on the **Azure CLI** pane, in the **Script type** drop-down list, select **Shell**. In the **Script Location** drop-down list, select **Inline script**, and in the **Inline script** enter the following script and select **Add**:
@@ -155,7 +155,7 @@ Now, it's time to configure the Azure Pipeline you created in the previous exerc
    az webapp create -g $RESOURCEGROUPNAME -p $SVCPLANNAME -n $WEBAPPNAME
    ```
 
-   :::image type="content" source="../media/6-azure-cli-pipeline-task.png" alt-text="The azure-pipelines.yml editor pane including the Azure CLI task with its parameters set.":::
+   :::image type="content" source="../media/6-azure-cli-pipeline-task.png" alt-text="Screenshot of the azure-pipelines.yml editor pane including the Azure CLI task with its parameters set.":::
 
 1. On the **azure-pipelines.yml** editor pane, select the newly added task, and select the **Tab** key twice to indent it within the **DeployAzureResources** stage and job section.
 
@@ -241,17 +241,17 @@ With the new stage of the Azure Pipeline created, you can now invoke execution o
 1. On the **azure-pipelines.yml** editor pane, select **Run**.
 1. On the **Run pipeline** pane, select **Stages to run**. On the **Stages to run** pane, clear the **Build** check box, and select **Use select stages**.
 
-   :::image type="content" source="../media/6-stages-to-run.png" alt-text="The Stages to run pane with the build stage check box cleared.":::
+   :::image type="content" source="../media/6-stages-to-run.png" alt-text="Screenshot of the Stages to run pane with the build stage check box cleared.":::
 
 1. Back on the **Run pipeline** pane, select **Run**.
 1. On the **Run pipeline** pane, note that the **Build** stage was skipped.
 
-   :::image type="content" source="../media/6-skipped-build-stage.png" alt-text="The pipeline run with the build stage skipped.":::
+   :::image type="content" source="../media/6-skipped-build-stage.png" alt-text="Screenshot of the pipeline run with the build stage skipped.":::
 
 1. On the **Run pipeline** pane, in the **Stages** section, select the rectangle representing the **DeployAzureResources** stage and track the progress of the pipeline execution for that stage.
 1. Verify that the **Azure CLI** task completed successfully.
 
-:::image type="content" source="../media/6-completed-deployazureresources-job.png" alt-text="The Azure DevOps Pipeline job execution logs displaying a successfully completed DeployAzureResources job.":::
+:::image type="content" source="../media/6-completed-deployazureresources-job.png" alt-text="Screenshot of the Azure DevOps Pipeline job execution logs displaying a successfully completed DeployAzureResources job.":::
 
 ## Examine the outcome of the Azure Pipeline run
 
@@ -261,7 +261,7 @@ To conclude this exercise, let's examine the outcome of the execution of the Azu
 1. In the Azure portal, use the **Search resources, services, and docs** textbox in the toolbar to search for and navigate to the **aspdevops-rg** resource group blade.
 1. On the **aspdevops-rg** resource group blade, review the list of its resources and verify that it contains a SQL server, SQL database, App Service plan, and App Service.
 
-:::image type="content" source="../media/6-azure-resources.png" alt-text="The Azure portal displaying the list of Azure resources deployed by the pipeline.":::
+:::image type="content" source="../media/6-azure-resources.png" alt-text="Screenshot of the Azure portal displaying the list of Azure resources deployed by the pipeline.":::
 
 ## Results
 

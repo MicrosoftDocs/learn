@@ -3,7 +3,7 @@ uid: learn.language.rust-error-handling
 metadata:
   title: Handle errors in Rust
   description: In this module, you'll learn about ways to handle errors in Rust.
-  ms.date: 6/7/2021
+  ms.date: 01/05/2023
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -26,7 +26,6 @@ roles:
 - student
 - developer
 products:
-- vs-code
 - azure
 subjects:
 - development-tools

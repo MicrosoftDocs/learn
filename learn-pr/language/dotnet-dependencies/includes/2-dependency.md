@@ -10,17 +10,17 @@ We'll focus on package dependencies. A .NET project can have other types of depe
 
 How do you know if you need a package for your project? That's a complicated question that involves a few factors:
 
-- **Getting better code**. Ask yourself if you're dealing with a task like security, for example, and are trying to implement authentication and authorization. It's a task that you need to *get right* to protect your data and your customers' data. There are standard patterns out there and libraries that many developers use. These libraries implement features that you'll probably always need, and issues are patched as they arise. You should use such libraries instead of creating your own. You're not likely to write the code as well yourself because there are so many edge cases that you'd need to consider.  
-- **Saving time**. You can probably build most things yourself, like utility or UI component libraries. But it takes time. Even if the result is comparable to what's available, it's not a good use of your time to replicate the work of writing this code if you don't have to.
-- **Maintenance**. All libraries and apps need maintenance sooner or later. Maintenance involves adding new features and correcting bugs. Is it a good use of your time or your team's time to maintain a library? Or is it better to let an open-source software team handle it?
+- **Getting better code**: Ask yourself if you're dealing with a task like security, for example, and are trying to implement authentication and authorization. It's a task that you need to *get right* to protect your data and your customers' data. There are standard patterns out there and libraries that many developers use. These libraries implement features that you'll probably always need, and issues are patched as they arise. You should use such libraries instead of creating your own. You're not likely to write the code as well yourself, because there are so many edge cases that you'd need to consider.  
+- **Saving time**: You can probably build most things yourself, like utility or UI component libraries, but it takes time. Even if the result is comparable to what's available, it's not a good use of your time to replicate the work of writing this code if you don't have to.
+- **Maintenance**: All libraries and apps need maintenance sooner or later. Maintenance involves adding new features and correcting bugs. Is it a good use of your time or your team's time to maintain a library? Or is it better to let an open-source software team handle it?
 
 ## Evaluate a package
 
 Before you install a library, you might want to inspect the dependencies on which it relies. These dependencies may encourage you to use the package, or they may deter you. Here are some factors to consider when you select a dependency for your project:
 
-- **Size**. The number of dependencies might create a large footprint. If you're on a limited bandwidth or have other hardware limitations, this factor might be a concern.
-- **Licensing**. You need to ensure that the license granted for the library covers your intended use, whether that use is commercial, personal, or academic.
-- **Active maintenance**. If your package relies on a dependency that's deprecated or hasn't been updated for a long time, that might be a problem.
+- **Size**: The number of dependencies might create a large footprint. If you're on a limited bandwidth or have other hardware limitations, this factor might be a concern.
+- **Licensing**: You need to ensure that the license granted for the library covers your intended use, whether that use is commercial, personal, or academic.
+- **Active maintenance**: If your package relies on a dependency that's deprecated or hasn't been updated for a long time, that might be a problem.
 
 You can learn more about a package before installing it by going to `https://www.nuget.org/packages/<package name>`. This URL will take you to a detailed page for the package. Select the **Dependencies** drop-down list to see on which packages it relies to function.
 
@@ -49,8 +49,8 @@ Individual developers might use the global registry at NuGet.org to find and dow
 
 Packages might be located in many different places. Some of these sources might be publicly available, and some might be restricted and available only to employees of a specific company. Here are some places where packages might reside:
 
-- **Registries**. An example might be a global registry, like the NuGet.org registry. You can host your own registries that can be either private or public. Services such as GitHub and Azure DevOps make private registries available.
-- **Files**. You can install a package from a local folder. Installation from a package is common when you're trying to develop your own .NET libraries and want to test the package locally, or for some reason don't want to use a registry.
+- **Registries**: An example might be a global registry, like the NuGet.org registry. You can host your own registries that can be either private or public. Services such as GitHub and Azure DevOps make private registries available.
+- **Files**: You can install a package from a local folder. Installation from a package is common when you're trying to develop your own .NET libraries and want to test the package locally, or for some reason don't want to use a registry.
 
 :::image source="../media/nuget-roles.png" alt-text="Diagram that illustrates the relationship between package creators, package hosts, and package consumers.":::
   
@@ -66,15 +66,15 @@ On these sites, you can learn more about where the source code resides. You can 
 
 ### .NET commands
 
-So far, you've learned how you can install dependencies by using the .NET Core CLI. But this tool can do a lot more. 
+So far, you've learned how you can install dependencies by using the .NET Core CLI. But this tool can do a lot more.
 
 The .NET Core CLI has quite a few commands. The commands help you with tasks like installing packages, authoring packages, and initializing .NET projects. You don't need to know all the commands in detail. When you start out with .NET, you're likely to use only a subset of the commands. As you expand your use of .NET, you might use more and more commands from a variety of categories.
 
 To help you remember what the commands do, it helps to think of them as belonging to categories:
 
-- **Manage dependencies**. Commands in this category cover installation, removal, cleanup after package installations, and package updates.
-- **Run programs**. The .NET Core tool can help you manage flows in your application development. Examples of application flows are running tests, building code, and running migrate commands to upgrade projects.
-- **Author and publish packages**. Several commands can help you with tasks like creating a compressed package and pushing the package to a registry.
+- **Manage dependencies**: Commands in this category cover installation, removal, cleanup after package installations, and package updates.
+- **Run programs**: The .NET Core tool can help you manage flows in your application development. Examples of application flows are running tests, building code, and running migrate commands to upgrade projects.
+- **Author and publish packages**: Several commands can help you with tasks like creating a compressed package and pushing the package to a registry.
 
 If you want a detailed list of all commands, enter `dotnet --help` in the terminal.
 
@@ -102,7 +102,7 @@ This command lists only the top-level packages, and not dependencies of those pa
 dotnet list package --include-transitive
 ```
 
-Including transitives will allow you to see dependencies along with all the packages you've installed. If you run `dotnet list package --include-transitive`, you might see this output:
+Including transitives will allow you to see dependencies along with all the packages you've installed. If you run `dotnet list package --include-transitive`, you might get this output:
 
 ```output
 Project 'DotNetDependencies' has the following package references
@@ -126,6 +126,6 @@ When you create or clone a project, the included dependencies are not downloaded
 
 ## Clean up dependencies
 
-Sooner or later, you're likely to realize that you no longer need a package. Or you might realize that the package you installed isn't the one you need. Maybe you've found one that will accomplish a task better. Whatever the reason, you should remove dependencies that you aren't using. Doing so keeps things clean. Also, dependencies take up space.
+Sooner or later, you're likely to realize that you no longer need a package, or you might realize that the package you installed isn't the one you need. Maybe you've found one that will accomplish a task better. Whatever the reason, you should remove dependencies that you aren't using. Doing so keeps things clean. Also, dependencies take up space.
 
-To remove a package from your project, you use the `remove` command like so: `dotnet remove package <name of dependency>`. This command will remove the package from your project's .csproj file.
+To remove a package from your project, use the `remove` command like so: `dotnet remove package <name of dependency>`. This command will remove the package from your project's .csproj file.

@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Build your first Bicep template
   description: Learn how to create Bicep templates and create reusable infrastructure as code.
-  ms.date: 10/10/2022
+  ms.date: 01/06/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ prerequisites: |
   - Infrastructure as code and its benefits.
   - Azure, including the Azure portal, subscriptions, resource groups, and resources.
 
-  To follow along with the exercises in the module, you'll need the following installed locally:
+  To follow along with the exercises in the module, you'll need the following software installed locally:
   - [Visual Studio Code](https://code.visualstudio.com).
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
   - Either the latest [Azure CLI](/cli/azure/install-azure-cli) tools, or the latest version of [Azure PowerShell](/powershell/azure/install-az-ps).

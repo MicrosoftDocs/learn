@@ -23,7 +23,7 @@ As a guide, you should aim to have no more than three syllables and no more than
 
 One of the best ways to make your company name memorable is to invent a word.
 
-It's generally best not to use a generic or descriptive term (such as travel, finance, photo, family, pet, store, groceries, movie) because a lot of other company names are probably using the same term. Using generic terms can make it hard for you to stand out. It can also affect your search engine ranking.
+It's generally best not to use a generic or descriptive term (such as travel, finance, photo, family, pet, store, groceries, or movie) because many other company names are probably using the same term. Using generic terms can make it hard for you to stand out. It can also affect your search engine ranking.
 
 The best invented-word names tend to hint at what the company does without trying to describe it in literal terms.
 
@@ -43,19 +43,19 @@ If people have to guess the spelling of your company name, you're introducing un
 
 This is an attribute that you can test objectively with another person. Say the name of your company and ask the person to write it down or enter it into a search engine. Do this with 10 people and see how many of them correctly spell your company name the first time.
 
-You should expect 9 or (preferably) 10 out of 10 to get it right the first time. Any less than this, and you should consider finding another name.
+You should expect nine or (preferably) 10 out of 10 people to get it right the first time. Any less than this, and you should consider finding another name.
 
 ## Easy to say
 
-You should choose a company name that's easy to say. There are two parts to this test: 
+You should choose a company name that's easy to say. There are two parts to this test:
 
-- **Can people pronounce it correctly?** 
+- **Can people pronounce it correctly?**
 
   The correct pronunciation of your company name should be obvious. You want people to talk about your company. If they're unsure how to pronounce the name, they're less likely to say it for fear of sounding ignorant.
 
-  You can test this attribute objectively. Show 10 people the name of your company written down and ask each one to read out the name. You want 9 or (preferably) 10 to get it right the first time. You should also ask whether they had any doubt about how to pronounce it. If you find that some people are unsure how to pronounce your company name, you should probably change it.
+  You can test this attribute objectively. Show 10 people the name of your company written down and ask each one to read out the name. You want nine or (preferably) 10 out of 10 people to get it right the first time. You should also ask whether they had any doubt about how to pronounce it. If you find that some people are unsure how to pronounce your company name, you should probably change it.
 
-- **Does saying it feel good?** 
+- **Does saying it feel good?**
 
   The name of your company should seem like a fit for the kind of business that you want to build. Over the life of your company, you're going to say the name many thousands of times, so it needs to feel right to you.
 
@@ -79,19 +79,19 @@ Think about all the adjacent markets you might ultimately focus on. Does your pr
 
 ## Available as a .com domain
 
-If you wanted to start a company called Microsoft today, you wouldn't be able to have the domain microsoft.com (for obvious reasons). Maybe you could use a *domain hack* and try to register microsoft.io, microso.ft, getmicrosoft.com, hellomicrosoft.com, microsoft-app.com, or some other variant. But most people would agree that this isn't a good strategy.
+If you wanted to start a company called Microsoft today, you wouldn't be able to have the domain microsoft.com (for obvious reasons). Maybe you could use a *domain hack* and try to register microsoft.io, microso.ft, getmicrosoft.com, hellomicrosoft.com, microsoft-app.com, or some other variant. However, most people would agree that this isn't a good strategy.
 
-A lot of startup founders compromise the strength of their brand from the outset by choosing a name for which the domain *\<their-company-name\>.com* isn't available, either because someone has registered it and is sitting on it, or (even worse) because an existing business is using that domain. Instead, they settle for an inferior domain such as *\<their-company-name\>.io* or *.biz*. Or they use domain hacks like the examples cited earlier.
+Many startup founders compromise the strength of their brand from the outset by choosing a name for which the domain *\<their-company-name\>.com* isn't available, either because someone has registered it and is sitting on it, or (even worse) because an existing business is using that domain. Instead, they settle for an inferior domain such as *\<their-company-name\>.io* or *.biz*, or they use domain hacks like the examples cited earlier.
 
-Apart from causing confusion among users and making it harder for them to find your company, this brand compromise signals weakness. As pointed out by Y Combinator cofounder Paul Graham, [startups that choose a marginal domain are often viewed as marginal companies](http://paulgraham.com/name.html?azure-portal=true).
+Apart from causing confusion among users and making it harder for them to find your company, this brand compromise signals weakness. As pointed out by Y Combinator co-founder Paul Graham, [startups that choose a marginal domain are often viewed as marginal companies](http://paulgraham.com/name.html?azure-portal=true).
 
 If you're going to be a successful global company, you should have the domain *\<your-company-name\>.com*.
 
-This might seem like an inflexible view. But experience suggests that a small investment of time up front will pay off by allowing your company to start with a strong brand, rather than starting with a suboptimal brand and forcing you to change it later.
+This might seem like an inflexible view, but experience suggests that a small investment of time up front will pay off by allowing your company to start with a strong brand, rather than starting with a suboptimal brand and forcing you to change it later.
 
 Not having *\<your-company-name\>.com* is unlikely to kill your company, but it does add friction by forcing potential customers to take extra time to find you online. As your company matures beyond the startup phase, not having the domain *\<your-company-name\>.com* can start to look highly conspicuous.
 
-Perhaps more important, the domain *\<your-company-name\>.com* should arguably be one of the key intellectual property assets of your business. The more successful your company becomes, the greater the risk you're taking by not owning this asset. While you're a small startup, whoever owns that domain will mostly likely be happy to sit on it. Maybe they'd accept a modest offer to sell it to you.
+Perhaps more importantly, the domain *\<your-company-name\>.com* should arguably be one of the key intellectual property assets of your business. The more successful your company becomes, the greater the risk you're taking by not owning this asset. While you're a small startup, whoever owns that domain will mostly likely be happy to sit on it. Maybe they'd accept a modest offer to sell it to you.
 
 But let's say in a couple of years your company is growing fast, you raise a large funding round, and you get some great media coverage. At that point, you're exposed to the possibility that whoever owns *\<your-company-name\>.com* will try to take advantage of the situation and get you to buy it from them at a high price.
 
@@ -99,16 +99,16 @@ So, before you commit to a name for your company, make sure you can have *\<your
 
 Consider registering several other domains at the same time, primarily to prevent opportunists from snapping them up. The main categories are:
 
-- Any common domain extensions that are available, such as *\<your-company-name\>.com*, *.biz*, and *.io*.
-- Any potential misspellings of your company name.
-- Any likely domain hacks such as get-*\<your-company-name\>.com*.
-- The relevant country-/region-specific domain if you're located outside the United States.
+- Any common domain extensions that are available, such as *\<your-company-name\>.com*, *.biz*, and *.io*
+- Any potential misspellings of your company name
+- Any likely domain hacks, such as get-*\<your-company-name\>.com*
+- The relevant country/region-specific domain if you're located outside the United States
 
 Last, if your company will heavily rely on one or more social networks to reach users, you should check the availability of social handles. It could be highly undesirable to pick a company name and realize later that existing social media accounts are using that name.
 
 ## Free of infringements on existing trademarks
 
-A final step before you lock in a name for your company is to do a trademark search. A basic [search of US trademarks is free](https://www.uspto.gov/trademarks/search?azure-portal=true). It gives you some confidence that you're not choosing a name that will lead you to an expensive lawsuit in the future.
+A final step before you lock in a name for your company is to do a trademark search. A basic [search of US trademarks is free](https://www.uspto.gov/trademarks/search?azure-portal=true). It gives you some confidence that you're not choosing a name that will lead to an expensive lawsuit in the future.
 
 It's often a good idea to consult with a trademark attorney who can do a more robust search and advise you on any trademark issues.
 

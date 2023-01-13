@@ -1,10 +1,26 @@
-Imagine you're a data scientist, and you've been asked to train a machine learning model. You'll want to **define the problem** the model will solve by understanding:
+Imagine you're a data scientist and have been asked to train a machine learning model. 
+
+You aim to go through the following six steps to plan, train, deploy, and monitor the model:
+
+:::image type="content" source="../media/machine-learning-process.png" alt-text="Diagram showing the six steps of the machine learning process.":::
+
+1. **Define the problem**: Decide on what the model should predict and when it's successful. 
+1. **Get the data**: Find data sources and get access. 
+1. **Prepare the data**: Explore the data. CLean and transform the data based on the model's requirements.
+1. **Train the model**: Choose an algorithm and hyperparameter values based on trial and error.
+1. **Integrate the model**: Deploy the model to an endpoint to generate predictions.
+1. **Monitor the model**: Track the model's performance.
+
+> [!Note]
+> The diagram is a simplified representation of the machine learning process. Typically, the process is iterative and continuous. For example, when monitoring the model you may decide to go back and retrain the model.
+
+Starting with the first step, you want to **define the problem** the model will solve by understanding:
 
 - What the model’s output should be.
 - What type of machine learning task you’ll use.
 - What criteria makes a model successful.
 
-Depending on the data you have and the expected output of the model, you can identify the machine learning task. The task will determine which types of algorithms you can use to train the model. 
+Depending on the data you have and the expected output of the model, you can identify the machine learning task. The task will determine which types of algorithms you can use to **train the model**. 
 
 Some common machine learning tasks are:
 

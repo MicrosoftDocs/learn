@@ -2,13 +2,13 @@ In JavaScript, function definitions don't specify data types for parameters, per
 
 TypeScript simplifies the development of functions and makes them easier to troubleshoot by enabling you to type parameters and return values. TypeScript also adds new options for parameters. For example, while all parameters are optional in JavaScript functions, you can choose to make parameters required or optional in TypeScript.
 
-Adding types to functions help prevent you from passing values that you shouldn't pass to your functions. This is especially important when you're working with larger code bases or functions developed by others. While adding types is a simple difference, it offers the benefit of type checking the values that you pass to the function and what is returned. Instead of having to add all the logic to the function to verify the correct value type has been passed to it and the return value is correct, TypeScript helps ensure the correct value types as you develop your code. In addition, when creating the function logic you'll have full autocomplete support, as your editor will know the datatype of the parameters - something JavaScript is typically unable to detect. This is especially helpful when you're using functions developed by others because TypeScript clarifies the required input and output types.
+Adding types to functions helps prevent you from passing values that you shouldn't pass to your functions. Typed functions are especially important when you're working with larger code bases or functions developed by others. While adding types is a simple difference, it offers the benefit of type checking the values that you pass to the function and what is returned. Instead of having to add all the logic to the function to verify the correct value type has been passed to it and the return value is correct, TypeScript helps ensure the correct value types as you develop your code. In addition, when creating the function logic you'll have full autocomplete support, as your editor will know the datatype of the parameters - something JavaScript is typically unable to detect. Autocomplete is especially helpful when you're using functions developed by others because TypeScript clarifies the required input and output types.
 
 As in JavaScript, you can define functions in TypeScript several different ways. Let's look at how these functions differ with the addition of types in TypeScript.
 
 ## Named functions
 
-A named function is a function declaration written with the `function` keyword and provided with a distinct name within the current scope. Named function declarations load into the execution context before any code runs. This is known as hoisting, meaning you can use the function before you declare it.
+A named function is a function declaration written with the `function` keyword and provided with a distinct name within the current scope. Named function declarations are loaded into the execution context before any code runs. This process is known as hoisting, and it means that you can use the function before you declare it.
 
 The syntax for declaring a named function in TypeScript is the same as defining one in JavaScript. The only difference with TypeScript is that you can provide a type annotation for the function's parameters and return value.
 
@@ -23,7 +23,7 @@ addNumbers(1, 2);
 
 ## Anonymous functions
 
-A **function expression** (or **anonymous function**) is a function that isn't pre-loaded into the execution context, and only runs when the code encounters it. Function expressions are created at runtime and must be declared before they can be called. (This means that they aren't hoisted, unlike named function declarations that are hoisted as soon as program execution begins and can be called before its declaration.)
+A **function expression** (or **anonymous function**) is a function that isn't pre-loaded into the execution context, and only runs when the code encounters it. Function expressions are created at runtime and must be declared before they can be called. They aren't hoisted, unlike named function declarations that are hoisted as soon as program execution begins and can be called before their declaration.
 
 Function expressions represent values so they're usually assigned to a variable or passed to other functions, and can be anonymous, meaning the function has no name.
 
@@ -36,10 +36,10 @@ let addNumbers = function (x: number, y: number): number {
 addNumbers(1, 2);
 ```
 
-This shows what the named function `sum` looks like when written as an anonymous function. Notice that the name `add` has been replaced with function and the function has been implemented as an expression in a variable declaration.
+The following example shows what the named function `sum` looks like when written as an anonymous function. Notice that the name `sum` has been replaced with the keyword `function` and the function has been implemented as an expression in a variable declaration.
 
 ```typescript
-let total = function (input: number[]): number {
+let sum = function (input: number[]): number {
     let total: number =  0;
     for(let i = 0; i < input.length; i++) {
         if(isNaN(input[i])) {
@@ -50,10 +50,10 @@ let total = function (input: number[]): number {
     return total;
 }
 
-console.log(total([1, 2, 3]));
+console.log(sum([1, 2, 3]));
 ```
 
-As before, you'll get type checking and Intellisense when you use anonymous functions. You'll also notice in this example that the variable `total` isn't typed, but TypeScript is able to determine its type through something called "contextual typing", a form of type inference. This can reduce the amount of effort required to keep your program typed.
+As before, you'll get type checking and Intellisense when you use anonymous functions. You'll also notice in this example that the variable `sum` isn't typed, but TypeScript is able to determine its type through something called "contextual typing", a form of type inference. Contextual typing can reduce the amount of effort required to keep your program typed.
 
 ## Arrow functions
 

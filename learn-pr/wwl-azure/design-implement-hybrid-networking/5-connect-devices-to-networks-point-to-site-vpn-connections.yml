@@ -4,7 +4,7 @@ title: Connect devices to networks with Point-to-site VPN connections
 metadata:
   title: Connect devices to networks with Point-to-site VPN connections
   description: "Connect devices to networks with Point-to-site VPN connections"
-  ms.date: 11/09/2022
+  ms.date: 01/05/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -21,13 +21,13 @@ quiz:
     choices:
     - content: "A site-to-site VPN Gateway connection securely connects two networks."
       isCorrect: true
-      explanation: "Correct, A site-to-site (S2S)VPN gateway connection lets you create a secure connection to your virtual network from another virtual network or a physical network."
+      explanation: "Correct, A site-to-site (S2S) VPN gateway connection lets you create a secure connection to your virtual network from another virtual network or a physical network."
     - content: "A site-to-site VPN Gateway connection securely connects an individual client computer to a network."
       isCorrect: false
       explanation: "Incorrect, A **point-to-site** (P2S) VPN gateway connection lets you create a secure connection to your virtual network from an individual client computer."
     - content: "A site-to-site VPN Gateway connection securely connects two individual computers."
       isCorrect: false
-      explanation: "Incorrect, A site-to-site (S2S)VPN gateway connection does not connect two individual computers."
+      explanation: "Incorrect, A site-to-site (S2S) VPN gateway connection doesn't connect two individual computers."
   - content: "To authenticate a user connecting through a point-to-site connection using Active Directory Domain Server, what type of server is required?"
     choices:
     - content: "RADIUS"
@@ -35,7 +35,7 @@ quiz:
       explanation: "Correct, AD Domain authentication allows users to connect to Azure using their organization domain credentials. It requires a RADIUS server that integrates with the AD server."
     - content: "Active Directory Domain Controller only"
       isCorrect: false
-      explanation: "Incorrect, An Active Directory Domain Controller alone is not sufficient. Another type of server is required."
+      explanation: "Incorrect, An Active Directory Domain Controller alone isn't sufficient. Another type of server is required."
     - content: "DNS server"
       isCorrect: false
-      explanation: "Incorrect, A DNS server may be required for name resolution, but it is not sufficient for authentication."
+      explanation: "Incorrect, A DNS server may be required for name resolution, but it isn't sufficient for authentication."

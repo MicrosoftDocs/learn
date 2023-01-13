@@ -4,7 +4,7 @@ metadata:
   type: standard  
   title: Model and partition your data in Azure Cosmos DB
   description: Learn how to identify access patterns. By using those patterns, you can learn to apply modeling and partition strategies to ensure an efficient and scalable deployment of your Azure Cosmos DB instance.
-  ms.date: 6/14/2021 
+  ms.date: 12/29/2022 
   author: seesharprun  
   ms.author: sidandrews
   manager: jroth  

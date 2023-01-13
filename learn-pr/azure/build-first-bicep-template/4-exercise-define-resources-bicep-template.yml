@@ -6,12 +6,12 @@ metadata:
   unitType: exercise
   title: Exercise - Define resources in a Bicep template
   description: Learn how to define resources in Bicep and understand how Bicep treats dependencies between resources.
-  ms.date: 10/10/2022
+  ms.date: 01/06/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
-durationInMinutes: 8
+durationInMinutes: 12
 content: |
   [!include[](includes/4-exercise-define-resources-bicep-template.md)]

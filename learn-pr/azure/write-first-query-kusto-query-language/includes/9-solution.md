@@ -6,10 +6,10 @@ This solution provides one possible way to construct a query that answers the qu
 
 ## Solution process
 
-1. Filter out as much information as possible: 
+1. Filter out as much information as possible:
     * The time window should be between April 1 and April 30, 2007. Use the `where` operator to create this filter.
     * You want to return results from only the state of Virginia. Use the `where` operator to create this filter.
-1. Create a column that sums damage from **DamageProperty** and **DamageCrops** by using the `project` operator. 
+1. Create a column that sums damage from **DamageProperty** and **DamageCrops** by using the `project` operator.
 1. To figure out which kind of storm caused this damage, you need to return the **EventType** column. Use the `project` operator.
 1. You want to see the top five most damaging events. You can use the `sort` operator, whose default mode is descending. Alternatively, and more efficiently, you can use the `top` operator.
 
