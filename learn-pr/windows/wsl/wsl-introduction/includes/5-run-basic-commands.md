@@ -24,6 +24,8 @@ Open a PowerShell command line and let's try a few basic WSL management tasks us
 
 6. Open your Bash command line (from the Linux distribution set as your default) to the home directory of your WSL file system by entering the command: `wsl ~` from inside PowerShell. You'll see that you remain within the same PowerShell command line window, but your prompt will change to Bash, looking something like: `<user>@<CPU-name>:~$`. Enter the command `pwd` to confirm that the directory path is now something like `/home/<username>`. Enter the command: `explorer.exe .` to open the directory in Windows File Explorer (be sure to include the period, which indicates to open the current directory path). Once open, you can confirm that the file path looks something like: `\\wsl.localhost\Ubuntu\home\<username>`.
 
+:::image type="content" source="../media/wsl-home-command.png" alt-text="Screen capture of PowerShell terminal with wsl ~ command entered showing path.":::
+
 7. Exit out of the Bash command line back to PowerShell using: `exit`. Use the command `pwd` again to see the path you're on now, it should be something like `C:\Users\<username>\...`. So you can see that you have switched between the Windows file system (C:\ drive) and the Linux file system (`\\wsl.localhost\<distro name>` network drive). Next let's try opening the current Windows file system directory in Bash by using the command: `wsl` without the `~` (which indicates to open Bash in the Linux home directory). You'll see that the directory path is now something like `/mnt/c/Users/<username>/...` because Bash is pointing to your Windows file system path on the mounted C-drive. The C-drive directory is mounted because you're now viewing it from inside the Linux file system. More about working between the Windows file system and Linux file system in WSL is covered in a separate training linked in the summary at the end of this module.
 
 For a full list of commands, run `wsl --help`.
@@ -43,6 +45,8 @@ Let's try a few basic Bash commands (that will work in both Bash and PowerShell)
 5. `cp`: Copy a file or directory. For example, `cp file.txt` or `cp folder-1`. Creating a copy named the same as an existing file will silently replace that file, so it's recommended to use the `-i` interactive flag, which will warn you before deleting/replacing an existing file. For example, `cp -i file.txt`.
 6. `rm`: Remove a file or directory. For example, `rm file.txt`. To remove a directory in Bash, you must add the `-r` flag. For example, `rm -r folder-1`. Like the `cp` command, it's recommended to use the `-i` flag to provide prompts confirming what you intend to delete/remove. The `-f` flag forces removal, suppressing any prompts. It's generally recommended to avoid using the `-f` flag unless you're confident in what you're doing.
 7. `clear`: Clear the terminal screen.
+
+:::image type="content" source="../media/wsl-bash-commands.png" alt-text="Screen capture of Ubuntu terminal showing basic Bash commands.":::
 
 There are a few shortcuts that work in both PowerShell and Bash as well, such as using the up-arrow to recall the most recent commands that were entered.
 

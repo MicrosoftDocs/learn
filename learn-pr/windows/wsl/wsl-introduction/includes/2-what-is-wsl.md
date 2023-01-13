@@ -1,6 +1,10 @@
 Whether you’re a seasoned developer or a student just beginning to learn code, one of the most important choices you need to make is the type of hardware, environment, and tools to invest in using.
 
-As a developer, you will need to access specific coding tools, languages, and frameworks. You may want to install Python and a web development framework like Django, work with JavaScript on a NodeJS backend, or install a cross-platform project that uses React. Generally speaking, these programming languages will work on all operating systems. However, there are many scenarios that may prefer one operating system to another. Building Windows native desktop apps works best using Windows, but building a web app that will be deployed to a custom Linux server or production-ready virtual machine (VM) may be best to build and test using Linux and Bash command line tools.
+:::image type="content" source="../media/wsl-tools-decision.png" alt-text="Illustration of a screen with multiple types of software applications running and a person making a decision.":::
+
+As a developer, you will need to access specific coding tools, languages, and frameworks. You may want to install Python and a web development framework like Django, work with JavaScript on a NodeJS backend, or install a cross-platform project that uses React. Generally speaking, these programming languages will work on all operating systems. However, there are many scenarios that may prefer one operating system to another. Building Windows native desktop apps works best using Windows. Building a web app that will be deployed to a custom Linux server or production-ready Linux Virtual Machine (VM) works best using a Linux environment. We call this having parity between your local development environment and production deployment environment.
+
+:::image type="content" source="../media/wsl-juggling-tools.png" alt-text="Illustration of a person juggling 7 different software applications.":::
 
 As the employee of a company, or a student in a school, access to productivity tools is also essential to consider. Throughout the day many of us need to use email and calendar scheduling tools (like Outlook), create Word docs, Excel spreadsheets, and PowerPoint presentations, and then need to jump on an online call or chat (using a tool like Microsoft Teams).
 
@@ -18,15 +22,19 @@ Virtual Machines (VM) are one way to address the pains of dual-booting two diffe
 
 WSL addresses these issues by integrating Windows and Linux with a much smaller resource footprint, requiring fewer resources (CPU, memory, storage) compared to traditional Virtual Machines.
 
-## How WSL works - WSL 1 and WSL 2 architecture
+:::image type="content" source="../media/windows-linux.png" alt-text="Illustration of a laptop with puzzle pieces representing Windows and Linux fitting together.":::
+
+## How it works - WSL architecture
 
 When WSL was initially launched in August 2016 (Windows 10 version 1607), using what is now referred to as the "WSL 1" architecture. WSL 1 runs as a translation layer, using a Linux kernel interface on top of the Windows kernel. Basically a compatibility layer that handles system call emulation for running Linux binaries in the Windows environment.
 
-In May 2019, WSL 2 was announced, introducing important changes to the WSL architecture, such as using a real Linux kernel run through a subset of Hyper-V features. The WSL 2 architecture significantly improved performance speed, enabling a more immediate reaction to system calls, with fewer limitations, and now included by default in Windows installations.
+In May 2019, WSL 2 was announced, introducing important changes to the WSL architecture, such as using a real Linux kernel run through a subset of Hyper-V features. The WSL 2 architecture significantly improved performance speed, enabling a more immediate reaction to system calls, with fewer limitations.
 
-The first version of the WSL architecture, WSL 1, has been maintained because it works better for a few very specific use-cases, such as instances where files for a Linux project must be stored in the Windows file system or projects that require cross-compilation using both Windows and Linux tools on the same files. These instances are minimal, however, and the development team is working to improve version 2 of the architecture so that version 1 support can be concluded.
+:::image type="content" source="../media/wsl1-wsl2.png" alt-text="Screenshot of Ubuntu running on a WSL 1 architecture next to the same instance running on WSL 2.":::
 
-WSL 2 is the recommended architecture for the majority of use-cases and is the default setting when installing a Linux distribution with WSL. WSL does enable you to switch between the version 1 and version 2 architecture as needed.
+The current WSL architecture uses a custom-built Linux kernel. This custom Linux kernel includes a small init script in the startup process that forms the connections between Windows and Linux. The kernel is open-source and invites users to report bugs or request features.
+
+The WSL architecture enables any Linux distribution to be run on your Windows machine and supports running GUI apps (not just command line tools) if you follow the tutorial in the documentation to add the necessary drivers. The WSL architecture also now supports "SystemD", a Linux system and service manager that was missing from previous versions of WSL. Making WSL even more similar to running Linux distributions on a bare metal machine (without the Windows operating system).
 
 ## When to use WSL?
 

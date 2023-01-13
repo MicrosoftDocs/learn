@@ -11,9 +11,11 @@ There are a few things to know about what this command accomplishes and the opti
 
 You must make sure that you're running Windows 11 or Windows 10 version 2004+ (Build 19041 and higher) to run the WSL install command. [Check for updates](ms-settings:windowsupdate). If you're running an earlier build of Windows and can't update, see the docs linked at the end of this training on how to manually enable WSL and install a Linux distribution.
 
+:::image type="content" source="../media/wsl-install.png" alt-text="Screenshot of PowerShell with wsl install command entered.":::
+
 The `wsl --install` command performs the following actions:
 
-- Enables WSL and Virtual Machine Platform components that are included by default with Windows.
+- Enables WSL and Virtual Machine Platform components that are included by default with Windows operating system.
 - Downloads the WSL package from the Microsoft Store, enabling updates and security fixes to be pushed as they become available.
 - Downloads and installs the latest Linux kernel, setting WSL 2 as the default architecture.
 - Downloads and installs the Ubuntu distribution of Linux.
@@ -32,20 +34,30 @@ The `wsl --install` command installs the Ubuntu distribution of Linux by default
 
 To see what distributions are currently available via the store, enter the command: `wsl --list --online`
 
+:::image type="content" source="../media/wsl-list.png" alt-text="Screenshot of PowerShell with wsl list online command display of Linux distributions available in the Microsoft Store.":::
+
 To select an alternative to the default Ubuntu distribution, or to install additional distributions from the store, use the command: `wsl --install --distribution <Distribution Name>`
 
 If a Linux distribution that you want to install isn't available via the Microsoft Store, you can still install it by importing using a `.tar` file or `.appx` file. You can also build your own custom distribution. You can find a link at the end of this training to documentation on how to import or build a custom Linux distribution. For beginners, we recommend starting with the default Ubuntu distribution, which will also make it easier to follow along with the training.
 
 > [!NOTE]
-> For advanced-level WSL users, there are some additional options that can be set using flags on the `wsl --install` command. For business or enterprise users, there are options for creating a custom WSL image for distribution in your company. There is also the option to install WSL from a CDN rather than the Microsoft Store package if, for example, access to the store is blocked. As well as the option to enable the older WSL 1 architecture if you have a specific scenario that requires it. The `wsl --install` command is also supported on Windows Server 2019 (version 1709) or later, with options not to automatically launch the distribution after install or to enable WSL components without installing any distribution at all. See the documentation linked at the end of the module.
+> For advanced-level WSL users, there are some additional options that can be set using flags on the `wsl --install` command. See the WSL documentation linked at the end of this training to learn more.
+> - If access to the Microsoft Store is blocked, WSL can be installed from a CDN instead.
+> - The `wsl --install` command is supported on Windows Server with options not to automatically launch the distribution after install or to enable WSL components without installing any distribution at all. . *(Only on Windows 2019 version 1709 or newer).*
+> - Linux distributions can be installed with WSL 1 architecture if you have a specific scenario that requires it.
+> - Business or enterprise users, can create a custom WSL image for distribution in your company.
 
 ## Set up your Linux username and password
 
-Once you've used WSL to install a Linux distribution and restarted your machine, the distribution will open and you'll be asked to "Enter a new UNIX username", along with a password. There are a few things to note here:
+Once you've used WSL to install a Linux distribution and restarted your machine, the distribution will open and you'll be asked to "Enter a new UNIX username", along with a password.
 
-- This username and password will be considered the Linux administrator, with the ability to run sudo (Super User Do) administrative commands.
-- This user account is specific to each separate Linux distribution that you install and has no bearing on your Windows username. If you install more than one Linux distribution, each will have its own separate Linux user accounts and passwords. You'll have to configure a new username and password every time you add a distribution, reinstall, or reset.
-- The username and password will accept almost anything as valid, but some characters may cause trouble in various contexts. Punctuation like underscores is generally okay, but periods, slashes, or colons, such as `/:.` may cause trouble and you should definitely not begin your username with the `-` hyphen/minus character. We generally recommend to strip out unusual punctuation. You should also note that while entering the password, nothing will appear on the screen (this is normal and called "blind typing").
+:::image type="content" source="../media/wsl-username.png" alt-text="Screenshot of PowerShell with wsl installing the OpenSUSE distribution of Linux then asking for a username and password.":::
+
+There are a few things to note here:
+
+- The username and password created here will be considered the Linux administrator, with the ability to run sudo (Super User Do) administrative commands.
+- Each user account is specific to each separate Linux distribution that you install and has no bearing on your Windows username. If you install more than one Linux distribution, each will have its own separate Linux user accounts and passwords. You'll have to configure a new username and password every time you add a distribution, reinstall, or reset.
+- The username and password will accept almost anything as valid, but some characters may cause trouble in various contexts. Punctuation like underscores is generally okay, but periods, slashes, or colons, such as `/:.` may cause trouble and you should definitely not begin your username with the `-` hyphen/minus character. We generally recommend striping out unusual punctuation. You should also note that while entering the password, nothing will appear on the screen (this is normal and called "blind typing").
 - If you need to change or reset your password, or if you forget the password for a Linux distribution that you've installed, see the WSL documentation linked at the end of this module.
 
 Once you've entered a username and password, you can confirm the Linux distribution you've installed and the version number using the command: `cat /etc/os-release`.

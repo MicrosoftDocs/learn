@@ -57,11 +57,13 @@ A few common situations or scenarios where a developer may want to use WSL inclu
 - Anyone who wants to use Docker for creating containers, Git for version control, GPU acceleration for Machine Learning, databases (like MySQL, PostgreSQL, MongoDB, Redis, SQLite), or have access to both Linux GUI apps and Windows at the same time.
 - A company that wants to create customized WSL images for distribution to all of their machines so that employees have secure access to both Windows and Linux.
 
+:::image type="content" source="../media/wsl-cicd.png" alt-text="Diagram of a CICD workflow using WSL, GitHub, and a Linux VM.":::
+
 There are also a few limitations to be aware of with WSL, including:
 
 - WSL is designed for development and includes some features that may make it challenging to use in production scenarios.
 
-- WSL uses a lightweight utility VM that starts, stops, and manages resources automatically. If you're trying to use it as a web server, the VM could shut down to clean up resources because it's detecting that no users are active.
+- WSL uses a lightweight utility VM that starts, stops, and manages resources automatically. If you're trying to use it as a web server, the VM could shut down to clean up resources because it's detecting that no users are active. It is generally recommended to use a Linux distribution more specifically designed to be a web server for deployment scenarios.
 
 - WSL automatically gives file access to Windows files and Windows paths. This access is appended to your path by default, which could cause unexpected behavior for certain Linux applications compared to a traditional Linux environment.
 
