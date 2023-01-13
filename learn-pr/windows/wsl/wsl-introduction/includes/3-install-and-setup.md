@@ -66,7 +66,7 @@ Once you've entered a username and password, you can confirm the Linux distribut
 
 You can now find the Linux distribution that you've installed using Windows search. It will be listed according to the distribution name--Ubuntu (for example).
 
-Beginning October 2022 in Windows 11 (version 22H2), Windows Terminal is the default command line host. So when you open your Linux distribution, you'll see it open as a tab inside Windows Terminal. You can learn more about how to customize your Linux distribution's command line (BASH), including the default startup behavior, starting directory, tab title, appearance (text size, font, colors, etc), by visiting the Windows Terminal documentation. A link will be provided at the end of this training.
+Beginning October 2022 in Windows 11 (version 22H2), Windows Terminal is the default command line host. So when you open your Linux distribution, you'll see it open as a tab inside Windows Terminal. You can learn more about how to customize your Linux distribution's command line (BASH), including the default startup behavior, starting directory, tab title, appearance (text size, font, colors, etc.), by visiting the Windows Terminal documentation. A link will be provided at the end of this training.
 
 Whenever a new WSL Linux distribution is installed, a new instance will be created for it inside the Windows Terminal that can be customized to your preferences.
 
