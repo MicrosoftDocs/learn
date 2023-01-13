@@ -22,7 +22,7 @@ First, use Cloud Shell to create a self-signed certificate, which you'll then us
     openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout privateKey.key -out selfsigncert.crt -subj /CN=localhost
     ```
 
-    To make this example easy to follow, the commands above include the password used to secure the private key. Whenever you generate a private key for your own use, make sure you generate a secure password and control access to it appropriately.
+    To make this example easy to follow, the preceding commands include the password used to secure the private key. Whenever you generate a private key for your own use, make sure you generate a secure password and control access to it appropriately.
 
 1. Now, convert the certificate to PEM format, which the `curl` tool can use, by running these commands:
 
@@ -41,7 +41,7 @@ Because you're using the Consumption tier for API Management, you must configure
 
 1. In the left menu pane, under **Deployment and infrastructure**, select **Custom domains**. The **Custom domains** pane for your API Management service appears.
 
-1. For **Request client certificates**, select **Yes**, and on the top menu bar, select **Save**.
+1. For **Request client certificate*, select **Yes**, and on the top menu bar, select **Save**.
 
     ![Configure the gateway to request certificates.](../media/5-config-request-certificates.png)
 

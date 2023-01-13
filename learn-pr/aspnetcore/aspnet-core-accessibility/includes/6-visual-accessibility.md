@@ -8,7 +8,7 @@ Fortunately, contrast ratios can be checked programmatically. Accessibility Insi
 
 ## Color
 
-Color is an important part of web design, but keep in mind that everyone sees color a little differently. For some, it results in color-blindness. About 1 in 12 men is color-blind. There are several different kinds of color-blindness, such as red-green and blue-yellow.
+Color is an important part of web design, but keep in mind that everyone sees color a little differently. For some, it results in color-blindness. About 1 in 12 men are color-blind. There are several different kinds of color-blindness, such as red-green and blue-yellow.
 
 Additionally, your users might use a color to minimize eye fatigue, use a display that has poor color fidelity, or work in lighting that makes color perception difficult.
 

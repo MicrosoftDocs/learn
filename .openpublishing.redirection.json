@@ -19709,6 +19709,11 @@
       "source_path": "learn-pr/wwl-data-ai/serve-data-from-azure-synapse-serverless-sql-pool/2-use-synapse-studio-analyze-visualize-data-via.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/az-900-describe-cloud-concepts/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
     }
   ]
 }
