@@ -63,7 +63,7 @@ To set up a .NET project to work with the web API, we'll use Visual Studio Code.
 
     A port from 5000 to 5300 will be selected for HTTP, and from 7000 to 7300 for HTTPS, when the project is created. You can easily change the ports that you use during development by editing the project's *launchSettings.json* file. This module uses the secure `localhost` URL that begins with `https`.
 
-    A you'll get a output similar to the following, which indicates your app is running:
+    A you'll get output similar to the following, which indicates your app is running:
 
     ```console
     Building...
