@@ -33,7 +33,7 @@ roles:
 products:
 -	azure-devops
 -	azure-load-testing
-- azure-chaos-studio
+- chaos-studio
 subjects:
 -	high-availability-system
 -	architecture
