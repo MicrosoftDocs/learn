@@ -25,9 +25,9 @@ quiz:
     - content: "On the **Basic** Tab, set the **Performance** option to **ON**."
       isCorrect: false
       explanation: "The **Performance** option set to **ON** isn't a valid configuration."
-    - content: "On the **Advanced** tab, check (enable) the **Enable hierarchical namespace** setting."
+    - content: "On the **Advanced** tab, check (enable) the **Enable hierarchical namespace** option."
       isCorrect: true
-      explanation: "Correct! If you want to enable the best performance for analytical workloads in Data Lake Storage Gen2, then on the **Advanced** tab of the Storage Account creation check (enable) the **Enable hierarchical namespace** setting."
+      explanation: "Correct! If you want to enable the best performance for analytical workloads in Data Lake Storage Gen2, then on the **Advanced** tab of the Storage Account creation enable the **Enable hierarchical namespace** option."
   - content: "In which phase of big data processing is Azure Data Lake Storage located?"
     choices:
     - content: "Ingestion"
