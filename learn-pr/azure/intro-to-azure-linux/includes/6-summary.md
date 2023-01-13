@@ -6,9 +6,7 @@ Alternatively, you can use Linux-based service platforms (PaaS) like Azure App S
 
 Regardless of your choice, Azure provides many services, features, and tools you can integrate with your applications. These can help you reduce your maintenance burden, accelerate development, and improve your visibility into your workloads.
 
-## Additional reading
 
-[Azure Fundamentals part 1: Describe core Azure concepts](../../../paths/az-900-describe-cloud-concepts/index.yml) provides a comprehensive overview of cloud concepts and Azure services.
 
 ### Linux on Azure
 
