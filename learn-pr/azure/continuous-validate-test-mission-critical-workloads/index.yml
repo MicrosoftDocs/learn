@@ -17,10 +17,10 @@ abstract:  |
   -	Identify potential failure scenarios for system components as a guide for designing chaos experiments.
   - Implement an automated process for continuous validation in your CI/CD pipeline.
 prerequisites: |
-  - Extensive experience in designing cloud-native applications that include core infrastructure technology like data storage, compute, and networking
-  - A good understanding of the design principles and design areas of a mission-critical workload in the Azure Well-Architected Framework
-  -	An Azure subscription 
-  -	An Azure DevOps organization and project
+  - You should've completed the previous module about health modeling. 
+  - You have a good understanding of the design principles and design areas of a mission-critical workload in the Azure Well-Architected Framework.
+  -	You should have an Azure subscription. 
+  -	You should have an Azure DevOps organization and project.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - advanced
@@ -33,7 +33,7 @@ roles:
 products:
 -	azure-devops
 -	azure-load-testing
-- chaos-studio
+# - chaos-studio
 subjects:
 -	high-availability-system
 -	architecture

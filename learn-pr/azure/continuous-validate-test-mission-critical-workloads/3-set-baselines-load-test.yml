@@ -20,26 +20,26 @@ quiz:
     choices:
     - content: "A single baseline is always enough."
       isCorrect: false
-      explanation: "The baseline definition of *good* or *healthy* can differ based on the environment or stage, the load profile, or whether the test included Azure Chaos experiments."
+      explanation: "Incorrect. The baseline definition of *good* or *healthy* can differ based on the environment or stage, the load profile, or whether the test included Azure Chaos experiments."
     - content: "The number of required baselines depends on how the scenarios are defined."
       isCorrect: true
-      explanation: "Different scenarios might require different baselines. For example, performance requirements and expectations can vary across stages and environments. Azure Chaos experiments can also affect the expected performance."
+      explanation: "Correct. Different scenarios might require different baselines. For example, performance requirements and expectations can vary across stages and environments. Azure Chaos experiments can also affect the expected performance."
   - content: "Does a baseline define the performance that the deployment can provide?"
     choices:
     - content: "Yes. The baseline defines the deployment performance."
       isCorrect: false
-      explanation: "Although the baseline defines expected performance numbers, it has no impact on the performance that's provided during deployment."
+      explanation: "Incorrect. Although the baseline defines expected performance numbers, it has no impact on the performance that's provided during deployment."
     - content: "No. The baseline has no impact on the deployment performance."
       isCorrect: true
-      explanation: "Although the baseline defines expected performance numbers, it has no impact on the performance that's provided during deployment."
+      explanation: "Correct. Although the baseline defines expected performance numbers, it has no impact on the performance that's provided during deployment."
   - content: "When do baselines need to be evaluated and updated?"
     choices:
-    - content: "Baselines never need to be updated."
+    - content: "Establishing baselines is a one-time activity."
       isCorrect: false
-      explanation: "Baselines need to be evaluated regularly and need to be updated to reflect application or infrastructure changes that affect performance."
+      explanation: "Incorrect. Baselines need to be evaluated regularly and need to be updated to reflect application or infrastructure changes that affect performance."
     - content: "Baselines should be evaluated as part of every release or major change."
       isCorrect: true
-      explanation: "You should evaluate existing baselines with every release or major change and adjust them when needed."
+      explanation: "Correct. You should evaluate existing baselines with every release or major change and adjust them when needed."
     - content: "Baselines should be updated on a yearly basis."
       isCorrect: false
-      explanation: "Evaluating baselines only after a specific interval isn't a good practice. Baselines should be evaluated regularly--for example, as part of every release or major change."
+      explanation: "Incorrect. Evaluating baselines only after a specific interval isn't a good practice. Baselines should be evaluated regularly--for example, as part of every release or major change."

@@ -1,4 +1,4 @@
-As part of continuous validation, you need to design based on the application flows.
+As part of continuous validation, you need to design based on the application flows. In this unit, you'll learn about user and system flows, why they're important, and how to design load tests based on these flows.
 
 ## What are application flows?
 
