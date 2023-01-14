@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Your creating an Azure Data Lake Storage Gen2 account. You must configure this account to be able to process analytical data workloads for best performance. Which option should you configure when creating the storage account?"
+  - content: "You're creating an Azure Data Lake Storage Gen2 account. You must configure this account to be able to process analytical data workloads for best performance. Which option should you configure when creating the storage account?"
     choices:
     - content: "On the **Basic** tab, set the **Performance** option to **Standard**."
       isCorrect: false
