@@ -3,42 +3,123 @@
 
 An Azure subscription might have one or more Azure Data Factory instances (or data factories). Azure Data Factory is composed of below key components.
 
-- Pipelines
-- Activities
-- Datasets
-- Linked services
-- Data Flows
-- Integration Runtimes
-These components work together to provide the platform on which you can compose data-driven workflows with steps to move and transform data.
+In Azure Data Factory, data movement refers to the process of moving data from one location to another, and it is a key component of data integration. There are several concepts that are important to understand when working with data movement in Azure Data Factory:
+
+1. **Data Movement Activities**: These are the building blocks of data pipelines in Azure Data Factory. Data movement activities are used to extract data from various sources, transform data, and load data into various destinations. Some examples of data movement activities include: 
+   
+- Copy activity: This activity is used to copy data from one location to another.
+- HDInsightHive activity: This activity is used to run Hive queries on HDInsight clusters.
+- Lookup activity: This activity is used to look up data in a specified dataset.
+- Web activity: This activity is used to make HTTP requests to external web services.
+
+1. **Data Flows**: Data flows are a new feature in Azure Data Factory that allows data engineers to create and manage data transformation tasks using a visual, code-free interface. Data flows are built using a set of pre-built transformations and can be used to perform complex data transformation tasks such as filtering, pivoting, and aggregating data.
+
+2. **Data Integration Runtime**: The Data Integration Runtime (IR) is a component of Azure Data Factory that is responsible for executing data movement activities and data flows. There are two types of IR:
+
+- Azure-SSIS IR: This is a fully-managed cloud-based version of the SQL Server Integration Services (SSIS) runtime that allows data engineers to execute SSIS packages in the cloud.
+- Self-hosted IR: This is an on-premises version of the IR that allows data engineers to execute data movement activities and data flows on an on-premises machine.
+
+1. **Connections**: Connections are used to connect to various data sources and destinations in Azure Data Factory. Connection strings are used to authenticate with these data sources and destinations.
+
+2. **Data Stitching**: Data stitching is a new feature in Azure Data Factory that allows data engineers to create, schedule, and manage data pipelines that move data between different regions, accounts, and subscriptions. This enables organizations to move data across different environments and geographies, enabling them to perform analytics and reporting on a global scale.
+
+3. **Data Integration Patterns**: Azure Data Factory supports several data integration patterns, such as:
+
+- Simple data movement: This pattern is used to move data from one location to another with minimal transformation.
+- ELT (Extract, Load, Transform): This pattern is used to move data from various sources into a central location and perform data transformation tasks in the destination.
+- ELT with Staging: This pattern is used to move data from various sources into a staging area, perform data transformation tasks in the staging area, and then move the transformed data to a final destination.
+
+1. **Data Management**: Azure Data Factory provides several features to help manage data, such as data lineage, data catalog, data audit, and data compliance. Data lineage helps to track the flow of data from source to destination, data catalog helps to discover, understand and govern data and data audit and compliance helps to meet regulatory and compliance requirements.
+
+By understanding these concepts, data engineers can effectively use Azure Data Factory to move data between different locations and perform complex data transformation tasks.
+
 
 ![Code free ETL swim lanes overview.](../media/4-code-free-etl-swimlanes.png)
 ### Pipeline
 
-A pipeline is a logical grouping of activities that performs a unit of work. Together, the activities in a pipeline perform a task. For example, a pipeline can contain a group of activities that ingests data from an Azure blob, and then runs a notebook on a synapse serverless compute cluster to partition the data.
+Azure Synapse Pipelines and data factory pipeline are a logical grouping of activities that together perform a specific task in Synapse Pipelines or Azure Data Factory. Pipelines are used to move data from various sources to various destinations and perform data transformation tasks. Pipelines are the building blocks of data integration in Azure Data Factory and are used to create, schedule, and manage data movement and data transformation tasks.
 
-The benefit of this is that the pipeline allows you to manage the activities as a set instead of managing each one individually. The activities in a pipeline can be chained together to operate sequentially, or they can operate independently in parallel.
+A pipeline is composed of one or more activities, which are the building blocks of data integration. Each activity performs a specific task, such as copying data, running a Hive query, or performing a data transformation. Pipelines can be triggered on a schedule, on demand, or by an event.
+
+Data engineers can use the visual interface to create, schedule and manage data pipelines, or use the Synapse Pipeline and Azure Data Factory SDKs to create, schedule and manage pipelines programmatically.
+
+Pipelines are used to automate data movement and data transformation tasks, which is critical for data integration. Data engineers can use pipelines to create a series of activities that move data from various sources to various destinations, and perform data transformation tasks, such as filtering, pivoting, and aggregating data. Pipelines are also used to schedule and automate data pipelines, which enables organizations to perform data integration tasks on a regular schedule.
 
 ### Mapping data flows
 
-Create and manage graphs of data transformation logic that you can use to transform any-sized data. You can build-up a reusable library of data transformation routines and execute those processes in a scaled-out manner from your Synapse pipelines. Synapse or ADF will execute your logic on a Spark cluster that spins-up and spins-down when you need it. You won't ever have to manage or maintain clusters.
+Azure Synapse Mapping Data Flows are a feature of Azure Synapse Analytics (formerly known as Azure Data Factory) that allow data engineers to create and manage data transformation tasks using a visual, code-free interface. Mapping Data Flows are built using a set of pre-built transformations and can be used to perform complex data transformation tasks such as filtering, pivoting, and aggregating data, with a focus on big data transformation.
+
+Mapping Data Flows allow data engineers to visually create, test and debug data transformation tasks, and then publish them as executable data flows. Data engineers can also use code to create custom data flows using various languages such as C#, Python, and SQL.
+
+Mapping Data Flows use a feature called "schema-on-read" which allows data engineers to define the schema of the data after it is read, this allows data engineers to process data in a more flexible way, and also allows them to handle semi-structured and unstructured data.
+
+Mapping Data Flows are built on top of the Apache Spark engine, which allows for big data processing and analytics, and can handle large volumes of data and perform complex data transformations in a distributed and parallel way, this makes it suitable for big data scenarios.
+
+Azure Synapse Mapping Data Flows also enables data engineers to easily integrate with other Azure services such as Azure Machine Learning, Azure Stream Analytics, and Power BI, making it a powerful tool for big data integration and analytics in the Azure ecosystem.
+
 
 ### Activity
 
-Activities represent a processing step within a pipeline. For example, you might use a copy activity to copy data from one data store to another data store. Similarly, you might use a Hive activity, which runs a Hive query on an Azure HDInsight cluster, to transform or analyze your data. Synapse and ADF both support three types of activities: data movement activities, data transformation activities, and control activities.
+An Azure Synapse Pipeline activity is a building block of a pipeline in Azure Synapse Analytics. It represents a specific task that is executed as part of a pipeline. Activities are linked together in a pipeline to create a series of tasks that move data from various sources to various destinations and perform data transformation tasks.
+
+There are several types of activities available in Azure Synapse Analytics such as:
+
+1. **Data Movement Activities**: These activities are used to move data from various sources to various destinations. Examples of data movement activities include:
+
+- Copy activity: This activity is used to copy data from one location to another.
+- HDInsightHive activity: This activity is used to run Hive queries on HDInsight clusters.
+- Web activity: This activity is used to make HTTP requests to external web services.
+
+1. **Data Transformation Activities**: These activities are used to perform data transformation tasks such as filtering, pivoting, and aggregating data. Examples of data transformation activities include:
+
+- Lookup activity: This activity is used to look up data in a specified dataset.
+- Mapping data flow activity: This activity is used to perform data transformation tasks using a visual, code-free interface.
+- Execute SSIS package activity: This activity is used to execute SQL Server Integration Services (SSIS) packages.
+
+1. **Control Flow Activities**: These activities are used to control the flow of execution within a pipeline. Examples of control flow activities include:
+
+- ForEach activity: This activity is used to iterate through a collection of items.
+- If-else activity: This activity is used to branch the pipeline execution based on a condition.
+
+1. **Data Management Activities**: These activities are used to manage data such as data lineage, data catalog, data audit, and data compliance. Examples of data management activities include:
+
+- Dataflow activity: This activity is used to create, schedule, and manage dataflow, which helps to track the flow of data from source to destination.
+- Data management activity: This activity is used to discover, understand and govern data and data audit and compliance helps to meet regulatory and compliance requirements.
 
 ### Datasets
 
-Datasets represent data structures within the data stores, These simply point to or reference the data you want to use in your activities as inputs or outputs.
+Azure Synapse Pipeline and Azure Data Factory datasets are used to represent the data that is used as input or output in an Azure Synapse Analytics (formerly known as Azure Data Factory) pipeline. 
+
+**Azure Synapse Pipeline and Azure Data Factory Datasets** are used to represent the data that is used as input or output in an Azure Synapse Pipeline. They define the structure of the data and the location of the data. Azure Synapse Pipeline Datasets can be used to represent data stored in various sources such as Azure Blob storage, Azure Data Lake Storage, Azure SQL Database, and more.
+
+Both Azure Synapse Pipeline and Azure Data Factory datasets are used by activities in a pipeline to determine the data that will be used as input or output. Data engineers can use the Azure Data Factory visual interface or the Azure Data Factory SDKs to create, schedule, and manage datasets programmatically.
+
+Datasets are used to automate data movement and data transformation tasks, which is critical for data integration. Data engineers can use datasets to create a series of activities that move data from various sources to various destinations, and perform data transformation tasks, such as filtering, pivoting, and aggregating data. Datasets are also used to schedule and automate data pipelines, which enables organizations to perform data integration tasks on a regular schedule.
 
 ### Linked services
 
-Linked services are much like connection strings, which define the connection information that's needed for Synapse or ADF to connect to external resources.  Linked services are used for two purposes in Data Factory:
+Azure Synapse Pipeline Linked Services are used in Azure Synapse Analytics to connect to different types of data stores or services. A linked service defines the connection information required for a pipeline to connect to a specific data store or service. 
 
-To represent a data store that includes, but isn't limited to, a SQL Server database, Oracle database, file share, or an Azure Data Lake, amongst others. For a list of supported data stores, see the copy activity article.
+Linked services are used by activities in a pipeline to determine the data that will be used as input or output. Data engineers can use the Azure Data Factory visual interface or the Azure Data Factory SDKs to create, schedule, and manage linked services programmatically.
 
-### Integration Runtime
+There are several types of linked services available in Azure Synapse Analytics such as:
 
-In Data Factory, an activity defines the action to be performed. A linked service defines a target data store or a compute service. An integration runtime provides the bridge between the activity and linked Services. It's referenced by the linked service or activity, and provides the compute environment where the activity either runs on or gets dispatched from. This way, the activity can be performed in the region closest possible to the target data store or compute service in the most performant way while meeting security and compliance needs.
+1. **Azure Blob Storage linked service**: This linked service is used to connect to an Azure Blob storage account.
+
+2. **Azure Data Lake Storage linked service**: This linked service is used to connect to an Azure Data Lake Storage account.
+
+3. **Azure SQL Database linked service**: This linked service is used to connect to an Azure SQL Database.
+
+4. **Azure Cosmos DB linked service**: This linked service is used to connect to an Azure Cosmos DB account.
+
+5. **Azure Event Hubs linked service**: This linked service is used to connect to an Azure Event Hubs namespace.
+
+6. **Azure Data Factory linked service**: This linked service is used to connect to an Azure Data Factory.
+
+7. **Power BI linked service**: This linked service is used to connect to Power BI for data visualization.
+
+Linked services are used to automate data movement and data transformation tasks, which is critical for data integration. Data engineers can use linked services to create a series of activities that move data from various sources to various destinations, and perform data transformation tasks, such as filtering, pivoting, and aggregating data. Linked services are also used to schedule and automate data pipelines, which enables organizations to perform data integration tasks on a regular schedule.
+
 
 ### Triggers
 

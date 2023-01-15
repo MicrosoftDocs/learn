@@ -4,11 +4,11 @@ title: Understand data pipeline components in Azure Synapse Analytics
 metadata:
   title: Understand data pipeline components in Azure Synapse Analytics
   description: "Understand data pipeline components in Azure Synapse Analytics"
-  ms.date: 01/13/2023
+  ms.date: 01/15/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 20
 content: |
   [!include[](includes/4-understand-data-pipeline-components-azure-synapse-analytics.md)]

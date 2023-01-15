@@ -21,8 +21,12 @@ You can gain an idea of the level of integration with Microsoft Purview with the
 
 Depending upon several factors, such as data size, target (sink) resources, compute power, and network connectivity which may go through the public internet or securely over an ExpressRoute connection, will determine your approach to data loading and data transformation. Ideally, with Azure and other cloud providers, the goal is to move the data into the cloud provider's environment first, and then use distributed compute such as Synapse Analytics to perform the heavy lifting of data transformation from your Azure Data Lake.
 
-![Microsoft Azure ELT Conceptual overaview](../media/2-elt-conceptual.png)
+![Microsoft Azure ELT Conceptual overview](../media/2-elt-conceptual.png)
 
 As we can see in the basic concept of ELT, Instead of using a separate transformation engine, the processing capabilities of the target data store, such as Azure Synapse Analytics are used to transform data. This simplifies the architecture by removing a transformation engine from the pipeline. Another benefit to this approach is that scaling the target data store also scales the ELT pipeline performance. However, ELT only works well when the target system is powerful enough to transform the data efficiently.
 
 In practice, the target data store or sink is a data warehouse using either a Hadoop cluster (using Hive or Spark) or SQL dedicated pools on Azure Synapse Analytics. In general, a schema is overlaid on the flat file data at query time and stored as a table, enabling the data to be queried like any other table in the data store. These are referred to as external tables because the data does not reside in storage managed by the data store itself, but on some external scalable storage such as Azure data lake store. This allows the downstream services to connect to these highly compressed and columnar storage files to connect and use the data fully without having to keep the expensive hardware running at full scale which will significantly increase flexibility while reducing costs.
+
+Below we can see the traditional approach to ETL with the transformation engine. This is still available in Synapse Pipelines and Azure Data Factory to allow you to leverage your SSIS packages already developed. Details on this topic will be covered in a later lesson.
+
+![Microsoft Azure ELT Conceptual overview](../media/2-etl-traditional-conceptual.png)
