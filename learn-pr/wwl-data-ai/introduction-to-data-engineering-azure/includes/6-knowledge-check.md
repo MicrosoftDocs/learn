@@ -9,3 +9,40 @@ Which approach is the preferred method of getting data into a cloud destination 
 
 () Transform, Extract, and Load (TEL) {{Incorrect. This approach leaves the heavy lifting of data on-premises and still requires hardware and personnel to support the hardware and software on-premises.}}
 
+What is the most popular language used by data engineers in Azure to extract and transform data?
+
+(x) SQL {{Correct. SQL is still the most popular language used for extraction and transformation due to its large user base across open-source and commercial software }}
+
+() Python {{Incorrect. Although Python is growing in popularity in the data engineering world, SQL is still the most predominant language to extract and transform data }}
+
+() Scala {{Incorrect. Scala is a very popular language among data engineers on the open source side and its adoption is increasing in commerical software but it is still not as widely adopted as SQL}}
+
+() .NET {{Incorrect. Although .NET can be used for extract and transform, it is typically relegated to more complex operations involving integration with external systems}}
+
+Which Azure service allows data engineers to perform complex data processing and analytics tasks on data streams?
+
+() Azure Data Factory
+
+(x) Azure Stream Analytics {{Correct. }}
+
+() Azure Databricks
+
+() Azure Synapse Analytics
+
+3. Which Azure service allows data engineers to create, schedule, and manage data pipelines?
+a) Azure Data Factory (correct answer)
+b) Azure Stream Analytics (correct answer)
+c) Azure Databricks
+d) Both a and b (correct answer)
+
+4. Which Azure service allows data engineers to process large amounts of data in parallel using Spark?
+a) Azure Data Factory
+b) Azure Stream Analytics
+c) Azure Databricks (correct answer)
+d) Azure Synapse Analytics
+
+5. Which Azure service allows data engineers to discover, understand, and govern data across various data sources?
+a) Azure Data Factory
+b) Azure Stream Analytics
+c) Azure Databricks
+d) Azure Purview (correct answer)
