@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use Spark Notebooks in an Azure Synapse Pipeline
-summary: While the use of Spark Notebooks isn't the only external component available to you as a data engineer, it is potentially one of the more valuable ones in your arsenal in order to collaborate and develop best-of-breed solutions with your colleagues on other teams. It also allows the reuse of other external components which can save time and simplify complex transformations.
+summary: Spark notebooks integrated in pipelines is a valuable tool in order to collaborate and develop best-of-breed solutions with other teams. It allows the reuse of other external components to save time and simplify complex transformations.
 abstract: |
   At the end of this module, you should:
   - understand the external components to analytics pipelines.
