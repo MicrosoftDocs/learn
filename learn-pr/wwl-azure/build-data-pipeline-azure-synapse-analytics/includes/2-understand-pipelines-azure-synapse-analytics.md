@@ -1,5 +1,5 @@
 
-## Understand Azure Synapse Analytics Pipelines
+
 
 Most data movement activities require several things in order to be successful which include consistency of source and destination file formats, a standard refresh schedule for batch processing, and data lineage in order to track down errors to the source system for correction by their owner(s). Azure Synapse pipelines, like it’s counterpart Azure Data Factory (ADF) is the service that can be used to fulfill these requirements. Azure Synapse Pipelines provide a cloud-based data integration service that orchestrates the movement and transformation of data between various data stores and compute resources to Azure Synapse Analytics as part of the Synapse Service offering.
 
