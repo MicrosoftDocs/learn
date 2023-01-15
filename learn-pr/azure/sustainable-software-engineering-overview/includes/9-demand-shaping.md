@@ -4,7 +4,7 @@
 
 Demand shaping is a similar strategy, but instead of moving demand to a different region or time, we shape our demand to match the existing supply.
 
-![Resource supply and demands over time.](../media/9-demand-shaping-1.svg)
+![Diagram of resource supply and demands over time.](../media/9-demand-shaping-1.svg)
 
 If the supply of renewable energy is high, increase the demand (do more in your applications); if the supply is low, decrease demand (do less in your applications).
 
@@ -28,9 +28,9 @@ Eco-modes are often used in life; for instance, in cars or washing machines. Whe
 
 Software applications can also have eco-modes, which when engaged change application behavior in potentially two ways:
 
-- **Intelligence**. Giving users information so they can make informed decisions.
+- **Intelligence**: Giving users information so they can make informed decisions.
 
-- **Automatic**. The application automatically makes more aggressive decisions to reduce carbon emissions.
+- **Automatic**: The application automatically makes more aggressive decisions to reduce carbon emissions.
 
 ## Summary
 

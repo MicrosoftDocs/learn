@@ -12,15 +12,15 @@ If your computer was plugged directly into a hydroelectric plant, then the elect
 
 Carbon intensity changes by location since some regions have an energy mix containing more clean energy sources than other regions.
 
-Carbon intensity also changes over time due to the variable nature of renewable energy. For example, when it's cloudy or the wind isn't blowing, carbon intensity increases since more of the electricity in your mix comes from sources that emit carbon.
+Carbon intensity also changes over time due to the variable nature of renewable energy. For example, when it's cloudy or the wind isn't blowing, carbon intensity increases because more of the electricity in your mix comes from sources that emit carbon.
 
-![Illustration showing carbon intensity in renewable engergy versus fossil fuels.](../media/5-carbon-intensity-1.svg)
+![Illustration showing carbon intensity in renewable energy versus fossil fuels.](../media/5-carbon-intensity-1.svg)
 
 Electricity demand varies during the day, and supply needs to meet that demand. Some of that supply can easily control the power it produces; for example, a coal power plant can burn less coal. Some of that supply can't easily control the power it produces; for example, a wind farm can't control how much the wind blows, it can only throw away (curtail) electricity that was made essentially for free.
 
 ![Illustration showing reduced energy demands.](../media/5-carbon-intensity-2.svg)
 
-As a byproduct of the way energy markets work as demand for electricity goes down, ordinarily the high emitting fossil fuel sources of power are scaled back first, with renewables scaled back last.
+As a byproduct of the way energy markets work, as demand for electricity goes down, ordinarily the high emitting fossil fuel sources of power are scaled back first, with renewables scaled back last.
 
 Reducing the amount of electricity consumed in your applications can decrease the carbon intensity of the local grid's energy mix.
 
@@ -28,7 +28,7 @@ Reducing the amount of electricity consumed in your applications can decrease th
 
 If you choose to consume more energy, that energy comes from the marginal power plant. That power plant is one that can control the energy it outputs. Renewables cannot control the sun or the wind, so marginal power plants are often powered by fossil fuels.
 
-The marginal plant emits carbon, and at any moment we have the carbon intensity of the energy mix in the grid but also the carbon intensity of the energy that would have to be brought online to meet new demand. That's called the marginal carbon intensity.
+The marginal plant emits carbon, and at any moment we have the carbon intensity of the energy mix in the grid, but also the carbon intensity of the energy that would have to be brought online to meet new demand. That's called the marginal carbon intensity.
 
 Fossil-fueled power plants rarely scale down to zero; they have a minimum functioning threshold. Some don't scale at all, and they are considered consistent always-on base load. Because of this, we can sometimes reach the perverse scenario where we throw away (curtail) renewable energy that was created for free to consume energy from fossil-fuel power plants made with a fuel that costs money.
 
@@ -46,7 +46,7 @@ If you can be flexible with when and where you run workloads, you can then choos
 
 Studies such as *[Putting a CO2 figure on a piece of computation](https://ieeexplore.ieee.org/document/6128960)* have shown that these actions can result in a carbon reduction of as much as 45% to 99%, depending on the number of renewables powering the grid.
 
-Look at your application end-to-end, identify opportunities for being flexible regarding workloads, and use the carbon intensity of electricity to signal when or if to run those workloads.
+Look at your application end to end, identify opportunities for being flexible regarding workloads, and use the carbon intensity of electricity to signal when or if to run those workloads.
 
 ![Illustration showing carbon intensity over time.](../media/5-carbon-intensity-4.svg)
 

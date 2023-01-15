@@ -4,7 +4,7 @@
 
 Most people think electricity is clean. When we plug something into a wall, our hands don't become dirty, and our laptops don't need exhaust pipes. However, the truth is that most electricity is produced through burning fossil fuel ([usually coal](https://ourworldindata.org/grapher/world-electricity-by-source)) and energy supply is the [single most significant](https://www.eea.europa.eu/data-and-maps/daviz/change-of-co2-eq-emissions-2#tab-chart_4) cause of carbon emission.
 
-Since we can draw a direct line from electricity to carbon emissions, we can consider electricity one of the proxies for carbon.
+Because we can draw a direct line from electricity to carbon emissions, we can consider electricity one of the proxies for carbon.
 
 From the applications running on your smartphone to training machine-learning models running in data centers, all software consumes electricity in its execution. One of the best ways to reduce electricity consumption and the subsequent emissions of carbon pollution made by our software is to make our applications more energy-efficient.
 
@@ -14,7 +14,7 @@ As sustainable engineers, we need to understand electricity. Our journey doesn't
 
 ## Energy vs. power
 
-Energy is a measure of an amount of electricity used, the standard unit for Energy is Joules or J. However, another common way of referring to energy consumption is in Kilowatt-hours, or kWh.
+Energy is a measure of an amount of electricity used; the standard unit for Energy is Joules or J. However, another common way of referring to energy consumption is in Kilowatt-hours, or kWh.
 
 Electricity is often reported as either Power or Energy, which are two different concepts:
 

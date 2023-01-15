@@ -1,4 +1,4 @@
-Two crucial areas from the Secure DevOps pipeline are Package management and Open-Source Software OSS components.
+Two crucial areas of the Secure DevOps pipeline are Package management and Open-Source Software OSS components.
 
 ## Package management
 
@@ -6,7 +6,7 @@ Just as teams use version control as a single source of truth for source code, S
 
 Using binary package management, a development team can create a local cache of approved components and a trusted feed for the Continuous Integration (CI) pipeline.
 
-In Azure DevOps, *Azure Artifacts* is an integral part of the component workflow for organizing and sharing access to your packages. Azure Artifacts allows you to:
+In Azure DevOps, **Azure Artifacts** is an integral part of the component workflow for organizing and sharing access to your packages. Azure Artifacts allows you to:
 
  -  Keep your artifacts organized. Share code easily by storing Apache Maven, npm, and NuGet packages together. You can store packages using Universal Packages, eliminating keeping binaries in Git.
  -  Protect your packages. Keep every public source package you use (including packages from npmjs and NuGet .org) safe in your feed where only you can delete it and where it's backed by the enterprise-grade Azure Service Level Agreement (SLA).

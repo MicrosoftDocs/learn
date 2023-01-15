@@ -3,22 +3,22 @@ uid: learn.azure.intro-to-arc-enabled-kubernetes
 metadata:
   title: Introduction to Azure Arc-enabled Kubernetes
   description: Introduction to Azure Arc-enabled Kubernetes
-  ms.date: 05/24/2022
-  author: micrum
-  ms.author: micrum
+  ms.date: 01/05/2023
+  author: JnHs
+  ms.author: jenhayes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom:
   - e2e-hybrid
   - event-tier1-build-2022
 title: Introduction to Azure Arc-enabled Kubernetes
-summary: In this module, you learned how Azure Arc-enabled Kubernetes clusters can help customers like Contoso to optimize and simplify their operations.
+summary: In this module, you'll learn how Azure Arc-enabled Kubernetes clusters can help customers like Contoso to optimize and simplify their operations.
 abstract: |
   In this module you will:
   - Describe Kubernetes, Azure Arc, and Azure Arc-enabled Kubernetes.
   - Connect Kubernetes clusters to Azure Arc.
-  - Manage Azure Arc-enabled Kubernetes clusters by using GitOps.
-  - Integrate Azure Arc-enabled Kubernetes cluster with Azure services like Azure Monitor and Azure Policy.
+  - Manage Azure Arc-enabled Kubernetes cluster configurations by using GitOps.
+  - Integrate Azure Arc-enabled Kubernetes clusters with Azure services such as Azure Monitor and Azure Policy.
 prerequisites: |
   - Containerization and its concepts
   - Kubernetes architecture and its concepts
