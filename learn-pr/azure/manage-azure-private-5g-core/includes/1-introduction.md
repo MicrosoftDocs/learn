@@ -31,7 +31,7 @@ The following table describes the major resource types that you'll need for mana
 |SIM Policy |A SIM policy |Use this resource to manage a SIM policy. You can open it from a **Mobile Network**.  |
 |Service |A service |Use this resource in SIM policy configuration. You can open it from a **Mobile Network**. |
 
-These resources are interrelated. Take the SIM related resources as an example. You can categorize SIMs into SIM groups, and assign SIM policies to the SIMs. Each SIM policy can have multiple network scopes, and in each scope, one or more services can be used.
+These resources are interrelated. Take SIM related resources as an example. You can categorize SIMs into SIM groups and assign SIM policies to the SIMs. Each SIM policy can have multiple network scopes, and in each scope, one or more services can be used.
 
 The following diagram shows an example of two SIM policies assigned to SIMs in two different SIM groups:
 

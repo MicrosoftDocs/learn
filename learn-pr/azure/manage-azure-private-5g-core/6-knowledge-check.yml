@@ -15,7 +15,7 @@ quiz:
   questions:
   - content: "To modify a packet core instance through the Azure portal, which of the following tools is the correct one to use?"
     choices:
-    - content: "The **Packet Core Control Plane** resource that represents the packet core instance."
+    - content: "The **Packet Core Control Plane** resource for the packet core instance."
       isCorrect: true
       explanation: "Correct. To modify a packet core instance through the Azure portal, you'll need to open the relevant **Packet Core Control Plane** resource, and then select **Modify packet core**."
     - content: "The packet core dashboards."
@@ -65,6 +65,6 @@ quiz:
     - content: "Upgrade the Azure Kubernetes Service (AKS), which will automatically upgrade both the ASE and the packet core."
       isCorrect: false
       explanation: "Try again. Upgrading the AKS won't automatically upgrade the packet core or the ASE."
-    - content: "Upgrade the ASE if necessary, and then upgrade the packet core through the **Mobile Network Site** resource."
+    - content: "Upgrade the ASE if necessary, and then upgrade the packet core through the **Packet Core Control Plane** resource."
       isCorrect: true
-      explanation: "Correct. You can use the **Mobile Network Site** resource representing the packet core instance to upgrade the instance through the Azure portal."
+      explanation: "Correct. You can use the **Packet Core Control Plane** resource to upgrade the relevant packet core instance."

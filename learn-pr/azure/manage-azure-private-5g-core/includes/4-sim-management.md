@@ -83,7 +83,7 @@ To assign a SIM policy to one or more SIMs, take these steps:
 1. Open the **Mobile Network** resource representing the private mobile network containing the SIMs.
 1. Select **SIMs** from the resource menu.
 1. For each SIM policy you want to assign to one or more SIMs, select the relevant SIMs, and then select the **Assign SIM policy** button.
-1. In **Assign SIM policy** on the right, select the SIM policy you want to assign, and then select **Assign SIM policy**.
+1. On the **Assign SIM policy** pane, select the SIM policy you want to assign, and then select **Assign SIM policy**.
 
 For detailed instructions, see [Manage existing SIMs](/azure/private-5g-core/manage-existing-sims).
 
