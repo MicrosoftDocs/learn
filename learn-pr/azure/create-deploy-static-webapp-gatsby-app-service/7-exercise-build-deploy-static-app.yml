@@ -6,7 +6,7 @@ metadata:
   description: This exercise takes us through initializing a Git repo to pushing it to GitHub to finally deploy the repo to the Cloud.
   author: acomfort248
   ms.author: chnoring
-  ms.date: 04/22/2022
+  ms.date: 01/13/2023
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
