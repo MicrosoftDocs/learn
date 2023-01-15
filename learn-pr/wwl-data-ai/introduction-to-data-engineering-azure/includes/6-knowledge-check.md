@@ -1,5 +1,6 @@
 
 quiz title: Knowledge check
+
 Multiple Choice
 Which approach is the preferred method of getting data into a cloud destination for consumption by users?
 

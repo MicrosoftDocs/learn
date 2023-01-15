@@ -1,5 +1,5 @@
 
-### Common tools used by Data Engineers on Microsoft Azure
+
 Data engineers in Microsoft Azure typically use a variety of programming languages and tools to build and manage data pipelines. Some of the most popular programming languages used in Azure are:
 
 1. **SQL:** SQL is a popular language used to extract and transform data from various sources such as databases, data lakes, and cloud services. SQL is used to write queries to extract data and perform data cleaning and transformation tasks.
