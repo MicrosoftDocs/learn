@@ -35,7 +35,11 @@ Which Azure service allows data engineers to perform complex data processing and
 
 ## Multiple Choice
 Which Azure service allows data engineers to create, schedule, and manage data pipelines?
+
 ( ) Azure Data Factory (correct answer)
+
 ( ) Azure Stream Analytics (correct answer)
+
 ( ) Azure Databricks
-(x) Both a and b (correct answer)
+
+(x) Both a and b (correct answer) {{Correct. }}
