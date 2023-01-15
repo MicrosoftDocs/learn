@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-spark-notebooks-azure-synapse-pipeline.exercise-use-spark-notebooks-azure-synapse-pipeline
+title: Exercise - Use Spark Notebooks in an Azure Synapse Pipeline
+metadata:
+  title: Exercise - Use Spark Notebooks in an Azure Synapse Pipeline
+  description: "Exercise - Use Spark Notebooks in an Azure Synapse Pipeline"
+  ms.date: 01/15/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-use-spark-notebooks-azure-synapse-pipeline.md)]

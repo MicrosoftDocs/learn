@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-spark-notebooks-azure-synapse-pipeline.understand-external-components-to-analytics-pipelines
+title: Understand external components to Azure Synapse Analytics Pipelines
+metadata:
+  title: Understand external components to Azure Synapse Analytics Pipelines
+  description: "Understand external components to Azure Synapse Analytics Pipelines"
+  ms.date: 01/15/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-understand-external-components-to-analytics-pipelines.md)]
