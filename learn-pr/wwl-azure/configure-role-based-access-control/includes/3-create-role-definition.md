@@ -50,7 +50,7 @@ Review the following characteristics of role definitions:
 
 ### Role permissions
 
-Use the _Actions_ and _NotActions_ permissions together to grant and deny the exact privileges for each role. The _Actions_ permissions can provide the breadth of access and the _NotActons_ permissions can narrow the access. 
+Use the _Actions_ and _NotActions_ permissions together to grant and deny the exact privileges for each role. The _Actions_ permissions can provide the breadth of access and the _NotActions_ permissions can narrow the access. 
 
 The following table shows how the _Actions_ or _NotActions_ permissions are used in the definitions for three built-in roles: _Owner_, _Contributor_, and _Reader_. The permissions are narrowed from the _Owner_ role to the _Contributor_ and _Reader_ roles to limit access.
 
