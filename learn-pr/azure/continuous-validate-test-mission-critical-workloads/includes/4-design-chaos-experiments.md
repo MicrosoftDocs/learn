@@ -18,7 +18,7 @@ Let's see the outcome of FMA on the components of the checkout flow example.
 |---|---|---|
 |**Availability zone outage**| Instances in that zone might become unavailable. <br>Full outage isn't expected because zone redundancy is enabled on the App Service plan.<br>| Allow for the extra load on the remaining instances and provide enough head room for this scenario while still achieving the performance targets.|
 |[**SNAT port exhaustion**](/azure/app-service/troubleshoot-intermittent-outbound-connection-errors)| Outbound connections can't be created. As a result, downstream calls, such as calls to the database, fail.|Use private endpoints for connecting to the downstream components.  
-|**Individual instance becoming unhealthy** | User traffic routed to an uhealthy instance might see poor performance or even fail entirely.|The App Service health check feature will cause unhealthy instances to be automatically identified and replaced with new, healthy instances. |
+|**Individual instance becoming unhealthy** | User traffic routed to an unhealthy instance might see poor performance or even fail entirely.|The App Service health check feature will cause unhealthy instances to be automatically identified and replaced with new, healthy instances. |
 
 ##### Azure Functions for checkout logic
 
@@ -32,7 +32,7 @@ Let's see the outcome of FMA on the components of the checkout flow example.
 |Risk|Impact|Possible mitigation|
 |---|---|---|
 | **Renaming a database or collection**| Because of a mismatch in the configuration, there could be data loss. The application won't be able to access any data until the app configuration is updated and its components are restarted. <br><br>Prevent this situation by using [database and collection-level locks](/azure/cosmos-db/resource-locks).|
-| **Write region outage**|If the primary region (or write region) encounters an outage, TBD: add impact.|Configure the database account with multiple regions and automatic failover. In case of a failure, the service will automatically fail over and prevent any sustained problems in the application.|
+| **Write region outage**|If the primary region (or write region) encounters an outage, TBD: add impact.|Configure the database account with multiple regions and automatic failover. If there's a failure, the service will automatically fail over and prevent any sustained problems in the application.|
 | **Extensive throttling due to lack of request units (RUs)** | Certain stamps might run hot on Azure Cosmos DB utilization while others can still serve requests. |Use better load distribution to more stamps, or add more RUs.|
 
 ## Design a chaos experiment

@@ -18,23 +18,23 @@ quiz:
   questions:
   - content: "How should a load test and a chaos experiment be run and orchestrated?"
     choices:
-    - content: "They should be run and orchestrated manually via the Azure portal."
+    - content: "They should be run and orchestrated manually using the Azure portal."
       isCorrect: false
-      explanation: "Although it's technically possible to use the Azure portal, we don't recommend it. Because continuous validation benefits from frequent use, the process should be automated so that it's easily accessible to all developers."
+      explanation: "Incorrect. Although it's technically possible to use the Azure portal, we don't recommend it. Because continuous validation benefits from frequent use, the process should be automated so that it's easily accessible to all developers."
     - content: "They should be embedded into a pipeline or workflow."
       isCorrect: true
-      explanation: "Load tests and chaos experiments should be embedded into a pipeline or workflow and made easily accessible to all developers."
+      explanation: "Correct. Load tests and chaos experiments should be embedded into a pipeline or workflow and made easily accessible to all developers."
     - content: "Load tests and chaos experiments can't be run in parallel."
       isCorrect: false
-      explanation: "Load tests and chaos experiments can be run in parallel, and the process should be automated."
+      explanation: "Incorrect. Load tests and chaos experiments can be run in parallel, and the process should be automated."
   - content: "What needs to be done after a failed load test?"
     choices:
     - content: "No action is needed."
       isCorrect: false
-      explanation: "It's important to analyze the results of a failed load test and adjust the baseline if needed."
+      explanation: "Incorrect. It's important to analyze the results of a failed load test and adjust the baseline if needed."
     - content: "Use a different load test tool."
       isCorrect: false
-      explanation: "A failed load test can indicate problems introduced as part of a recent change, problems with the underlying platform, or the need to adjust a baseline or a threshold."
+      explanation: "Incorrect. A failed load test can indicate problems introduced as part of a recent change, problems with the underlying platform, or the need to adjust a baseline or a threshold."
     - content: "Analyze the result and take action."
       isCorrect: true
-      explanation: "A failed load test can indicate problems introduced as part of a recent change, problems with the underlying platform, or the need to adjust a baseline or a threshold."
+      explanation: "Correct. A failed load test can indicate problems introduced as part of a recent change, problems with the underlying platform, or the need to adjust a baseline or a threshold."
