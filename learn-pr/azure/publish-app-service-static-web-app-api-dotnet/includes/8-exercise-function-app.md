@@ -36,7 +36,11 @@ Your API has routes for manipulating the products for the shopping list, but it 
 
 1. In Visual Studio, right-click the **Api** project, and then select **Add** > **New Item**.
 
+   :::image type="content" source="../media/add-function.png" alt-text="A screenshot showing how to create the Azure function item.":::
+
 1. In the **Add New Item** dialog, select **Azure Function**.
+
+   :::image type="content" source="../media/new-item-type.png" alt-text="A screenshot showing the Azure function item selected.":::
 
 1. Enter *ProductsGet.cs* as the name of the function file.
 
@@ -44,9 +48,9 @@ Your API has routes for manipulating the products for the shopping list, but it 
 
 1. Select **Anonymous** from the dropdown list in the **Authorization level** field.
 
-1. Select **Add**.
+   :::image type="content" source="../media/http-trigger.png" alt-text="A screenshot showing the HTTP trigger selected.":::
 
-:::image type="content" source="../media/new-azure-function.png" alt-text="Creating a new Azure Function.":::
+1. Select **Add**.
 
 You just extended your Azure Functions app with a function to get your products!
 
@@ -130,7 +134,7 @@ Now, prompt Azure Functions to allow your web app to make HTTP requests to the A
     ```
 
 > [!NOTE]
-> This file is used to control how Visual Studio will launch the Azure Functions tooling. If you want to use the Azure Functions command line tool, you need a *local.settings.json* file described in the [Azure Functions Core Tools docs](/azure/azure-functions/functions-run-local?tabs=windows%2ccsharp%2cbash#local-settings-file). The *local.settings.json* file is listed in the *.gitignore* file, which prevents this file from being pushed to GitHub. This is because you could store secrets in this file that you would not want in GitHub. Also, this is why you had to create the file when you created your repo from the template.
+> This file is used to control how Visual Studio will launch the Azure Functions tooling. If you want to use the Azure Functions command line tool, you will also need a *local.settings.json* file described in the [Azure Functions Core Tools docs](/azure/azure-functions/functions-run-local?tabs=windows%2ccsharp%2cbash#local-settings-file). The *local.settings.json* file is listed in the *.gitignore* file, which prevents this file from being pushed to GitHub. This is because you could store secrets in this file that you would not want in GitHub. Also, this is why you had to create the file when you created your repo from the template.
 
 ### Run the API and web app
 
