@@ -3,7 +3,7 @@ uid: learn.build-web-api-net-core
 metadata:
   title: Create a web API with ASP.NET Core controllers
   description: Create a RESTful service with ASP.NET Core controllers that supports create, read, update, delete (CRUD) operations.
-  ms.date: 08/11/2022
+  ms.date: 01/13/2023
   author: jongalloway
   ms.author: jogallow
   ms.topic: interactive-tutorial
@@ -11,7 +11,7 @@ metadata:
 title: Create a web API with ASP.NET Core controllers
 summary: Create a RESTful service with ASP.NET Core controllers that supports create, read, update, delete (CRUD) operations.
 abstract: | 
-  In this module, you will:
+  In this module, you'll:
   - Create a web API project with ASP.NET Core controllers.
   - Create an in-memory database for persisting products.
   - Add support for CRUD operations.
