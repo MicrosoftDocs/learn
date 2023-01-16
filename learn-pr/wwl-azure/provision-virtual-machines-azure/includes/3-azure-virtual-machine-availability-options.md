@@ -13,7 +13,7 @@ Build high-availability into your application architecture by co-locating your c
 
 ## Availability sets
 
-An [availability set](/azure/virtual-machines/availability-set-overview) is a logical grouping of VMs that allows Azure to understand how your application is built to provide for redundancy and availability. An availability set is composed of two additional groupings that protect against hardware failures and allow updates to safely be applied - fault domains (FDs) and update domains (UDs).
+An [availability set](/azure/virtual-machines/availability-set-overview) is a logical grouping of VMs that allows Azure to understand how your application is built to provide for redundancy and availability. An availability set is composed of two additional groupings that protect against hardware failures and allow updates to be safely applied - fault domains (FDs) and update domains (UDs).
 
 ### Fault domains
 
