@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-azure-private-5g-core.prerequisites-of-deployment
+title: Prerequisites of deployment
+metadata:
+  title: Deployment methods
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 28/11/2022
+  author: ArchanaUpadhyaya
+  ms.author: archanau@microsoft.com
+  ms.topic: interactive-tutorial
+  ms.service: learning-azure-private-5g-core
+
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-prerequisites-of-deployment.md)]

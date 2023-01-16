@@ -1,0 +1,86 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-azure-private-5g-core.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 28/11/2022
+  author: ArchanaUpadhyaya
+  ms.author: archanau@microsoft.com
+  ms.topic: interactive-tutorial
+  ms.service: learning-azure-private-5g-core
+durationInMinutes: 1
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: Which of the following is a prerequisite for creating a private mobile network?
+    choices:
+    - content: Provisioning SIMs
+      isCorrect: false
+      explanation: Try Again. Provisioning SIMs is one of the steps in creating a private mobile network. This is not a prerequisite.
+    - content: Creating a site
+      isCorrect: false
+      explanation: Try Again. Creating a site is performed after the mobile network creation. This is not a prerequisite.
+    - content: Order the ASE device
+      isCorrect: true
+      explanation: Correct. We need to order the ASE device prior to deploying a private mobile network.
+    - content: Packet core configuration
+      isCorrect: false
+      explanation: Try Again. Packet core configuration is performed automatically during site creation. This is not a prerequisite for creating a mobile network.
+  - content: Which of the following is not the method of SIM provisioning during the deployment of a private mobile network?
+    choices:
+    - content: Add manually
+      isCorrect: false
+      explanation: Try Again. This is one way of SIM provisioning.
+    - content: Add SIMs later
+      isCorrect: false
+      explanation: Try Again. This is one way of SIM provisioning.
+    - content: Upload JSON file
+      isCorrect: false
+      explanation: Try Again. This is one way of SIM provisioning.
+    - content: On demand UE provisioning
+      isCorrect: true
+      explanation: Correct. This is not a SIM provisioning method.
+  - content: Which component is automatically deployed as part of site deployment?
+    choices:
+    - content: Packet core
+      isCorrect: true
+      explanation: Correct. The packet core is automatically deployed as part of site deployment.
+    - content: Mobile network
+      isCorrect: false
+      explanation: Try Again. The mobile network is created before site deployment.
+    - content: SIMs
+      isCorrect: false
+      explanation: Try Again. SIM provisioning is performed during or after the creation of a private mobile network.
+    - content: SIM policies
+      isCorrect: false
+      explanation: Try Again. SIM policies are configured after the creation of a mobile network.
+  - content: "If a customer prefers to provide their own key for encryption, they must select:"
+    choices:
+    - content: Customer-managed keys
+      isCorrect: true
+      explanation: Correct. Customer-managed keys will be used to encrypt all the SIM secrets that get added to the corresponding SIM group.
+    - content: Microsoft-managed keys
+      isCorrect: false
+      explanation: Try Again. On selecting **Microsoft Managed Key** option, SIM group and SIM workflow will remain the same as existing. No additional encryption will be applied on the SIM secrets. This is the default option.
+    - content: Encryption keys
+      isCorrect: false
+      explanation: Try Again. Not the right answer.
+    - content: Customer-defined keys
+      isCorrect: false
+    - content: Try Again. Not the right answer.
+      isCorrect: false

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-azure-private-5g-core.deploy-private-mobile-network
+title: Deploy private mobile network using Azure portal
+metadata:
+  title: learning-content
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 28/11/2022
+  author: ArchanaUpadhyaya
+  ms.author: archanau@microsoft.com
+  ms.topic: interactive-tutorial
+  ms.service: learning-azure-private-5g-core
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-deploy-private-mobile-network.md)]
