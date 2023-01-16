@@ -4,20 +4,18 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/24/2022
+  ms.date: 01/16/2023
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 6
+durationInMinutes: 1
 content: |
-  [!include[](includes/10-knowledge-check.md)]
+  [!include[](includes/11-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "How often should you download content from the [Learning Download Center](https://aka.ms/ldc) (LDC) to ensure you have the most up-to-date course materials?"
+  - content: "How often should you download content from the Learning Download Center (LDC) to ensure you have the most up-to-date course materials?"
     choices:
     - content: "Every three years"
       isCorrect: false
@@ -32,7 +30,7 @@ quiz:
     choices:
     - content: "The Textbook"
       isCorrect: false
-      explanation: "Incorrect. While a textbook can be used as a standard work for the study of a particular subject, the Microsoft Whiteboard can help people visualize a process and increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+      explanation: "Incorrect. While a textbook is standard for the study of a particular subject, the Microsoft Whiteboard can help people visualize a process and increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
     - content: "Microsoft Whiteboard"
       isCorrect: true
       explanation: "Correct. A Microsoft Whiteboard can help people visualize a process. Microsoft Whiteboard increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
@@ -43,10 +41,10 @@ quiz:
     choices:
     - content: "Labs connect real world experiences to course content."
       isCorrect: false
-      explanation: "Incorrect. While labs are an important part of student learning, as the instructor you'll want to be familiar with each step in the lab process. By completing the labs before demonstration in front of students, you'll **ensure you can navigate the UI with ease.**"
+      explanation: "Incorrect. While labs are an important part of student learning, as the instructor you'll want to be familiar with each step in the lab process. By completing the labs before demonstration in front of students, you'll ensure you can navigate the UI with ease."
     - content: "To ensure you can navigate the UI with ease."
       isCorrect: true
       explanation: "Correct. By completing the labs before demonstration in front of students you'll be sure to know the UI, with authority, and be familiar with each step in the lab process."
-    - content: "It is not necessary to complete the labs since they aren't included in the certification."
+    - content: "It isn't necessary to complete the labs since they aren't included in the certification."
       isCorrect: false
-      explanation: "Incorrect. While labs aren't included in the certification, they're an important part of student learning. As the instructor, you'll want to be familiar with each step in the lab process, by completing the labs before demonstration in front of students you'll **ensure you can navigate the UI with ease.**"
+      explanation: "Incorrect. While labs aren't included in the certification, they're an important part of student learning. As the instructor, you'll want to be familiar with each step in the lab process. By completing the labs before demonstration in front of students you'll ensure you can navigate the UI with ease."
