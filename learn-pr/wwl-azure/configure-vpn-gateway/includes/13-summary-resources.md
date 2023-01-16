@@ -1,6 +1,6 @@
 Azure VPN Gateway is a specific type of virtual network gateway that's used to send encrypted traffic between an Azure virtual network and an on-premises location over the public internet. You can also use an Azure VPN gateway to send encrypted traffic between Azure virtual networks over the Microsoft network.
 
-In this module, you identified the features and usage cases for Azure VPN Gateway. You reviewed design implementation options, including site-to-site (S2S), point-to-site (P2S), and virtual network to virtual network (VNet-to-VNet). You explored the active/standby and active/active high availability scenarios and implementation considerations. You discovered how to configure S2S VPN connections by using a VPN gateway.
+In this module, you identified the features and usage cases for Azure VPN Gateway. You reviewed design implementation options, including site-to-site (S2S), point-to-site (P2S), and virtual network to virtual network (VNet-to-VNet). You explored the active-standby and active-active high availability scenarios and implementation considerations. You discovered how to configure S2S VPN connections by using a VPN gateway.
 
 ## Learn more
 
@@ -14,7 +14,11 @@ In this module, you identified the features and usage cases for Azure VPN Gatewa
 
 - Explore [VPN Gateway design options: S2S, P2S, VNet-to-VNet, and high availability](/azure/vpn-gateway/design).
 
-- Review [validated VPN devices and IPsec/IKE parameters for S2S VPN Gateway connections](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+- Review [highly available cross-premises and VNet-to-VNet connectivity](/azure/vpn-gateway/vpn-gateway-highlyavailable).
+
+- Find [validated VPN devices and IPsec/IKE parameters for S2S VPN Gateway connections](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+
+- Plan your [Azure VPN Gateway solution](/azure/vpn-gateway/vpn-gateway-about-vpngateways#planningtable).
 
 ## Learn more with self-paced training
 
