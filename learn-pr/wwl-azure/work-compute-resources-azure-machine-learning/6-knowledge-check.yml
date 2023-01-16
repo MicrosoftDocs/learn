@@ -30,7 +30,7 @@ quiz:
       explanation: "Incorrect. You shouldn't change the compute size when you want the compute cluster to remain available in between pipeline job runs."
     - content: "Idle time before scale down"
       isCorrect: true
-      explanation: "Incorrect. By increasing the idle time before scale down, you can run multiple pipelines consecutively without the compute cluster resizing to zero nodes in between jobs."
+      explanation: "Correct. By increasing the idle time before scale down, you can run multiple pipelines consecutively without the compute cluster resizing to zero nodes in between jobs."
     - content: "Maximum number of instances"
       isCorrect: false
-      explanation: "Correct. You shouldn't change the maximum number of instances when you want the compute cluster to remain available in between pipeline job runs."
+      explanation: "Incorrect. You shouldn't change the maximum number of instances when you want the compute cluster to remain available in between pipeline job runs."
