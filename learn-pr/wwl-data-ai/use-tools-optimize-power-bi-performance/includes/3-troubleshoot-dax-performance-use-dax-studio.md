@@ -67,7 +67,7 @@ To view model metrics, launch DAX Studio from the external tools tab of the Powe
 
 ![Screenshot of Advanced tab in DAX Studio with cursor over View Metrics button.](../media/view-model-metrics.png)
 
-VertiPaq analyzer displays a number of important metrics about your model. We're going to focus specifically on memory consumption and cardinality. For a complete list of what each of these columns mean, consult the [DAX Studio documentation](https://daxstudio.org/documentation/).
+VertiPaq analyzer displays a number of important metrics about your model. We're going to focus specifically on memory consumption and cardinality. For a complete list of what each of these columns mean, consult the [DAX Studio documentation](https://daxstudio.org/docs/intro/).
 
 Viewing metrics in DAX Studio helps you immediately find and fix problems. In this case, you can see that the problem is a column with high cardinality. You can then fix that issue back in Power BI, refresh the metrics, and immediately see the effects of your changes on the model.
 
