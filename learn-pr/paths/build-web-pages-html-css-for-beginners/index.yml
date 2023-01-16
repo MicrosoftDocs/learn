@@ -3,7 +3,7 @@ uid: learn.wwl.build-web-pages-html-css-for-beginners
 metadata:
   title: Build web pages with HTML and CSS for beginners
   description: Write HTML and CSS code to create an accessible webpage using the browser-based version of Visual Studio code.
-  ms.date: 12/07/2022
+  ms.date: 01/16/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   Write HTML and CSS code to create an accessible webpage using the browser-based version of Visual Studio Code.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/build-web-pages-html-css-for-beginners.svg
 levels:
 - beginner
 roles:
