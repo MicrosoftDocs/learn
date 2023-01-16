@@ -1,8 +1,8 @@
-Azure mission-critical design methodology requires *continuous validation* to make sure the workload stays operational, even when failures and exceptional situations happen. It involves testing changes and releases regularly in a controlled environment. Such tests can include using a sustained user load and injecting faults. The goal is to test the workload's resiliency and ability to handle faults before it's deployed to production.
+Azure mission-critical design methodology requires *continuous validation* to make sure the workload stays operational, even when failures and unexpected situations happen. It involves testing changes and releases regularly in a controlled environment. Such tests can include sustained user load and injecting faults. The goal is to test the workload's resiliency and its ability to handle faults before deploying to production.
 
 Continuous validation is implemented as a set of processes and tools. It's integrated into a pipeline or workflow to enable developers and operations teams to run the validation regularly. For example, you can run continuous validation before every release or major code change. 
 
-In continuous validation, you:
+As part of continuous validation, you'll do these tasks:
 
 - Run tests under production-like conditions.
 - Define tests based on user and system flows, and their expected performance.
@@ -10,7 +10,7 @@ In continuous validation, you:
 - Evaluate and adjust baselines and thresholds regularly.
 - Implement Azure services in automated pipelines.
 
-Microsoft Azure provides the following services to implement load testing and chaos engineering:
+Microsoft Azure provides these services to implement load testing and chaos engineering:
 
 - [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing) is a managed service for generating synthetic, real-world traffic to test the application and underlying infrastructure and services.
 - [Azure Chaos Studio](/azure/chaos-studio/chaos-studio-overview) is a managed service that provides chaos engineering capabilities to systematically inject failures into key components of the application.

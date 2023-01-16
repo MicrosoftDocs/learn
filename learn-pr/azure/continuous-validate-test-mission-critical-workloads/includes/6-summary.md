@@ -1,13 +1,11 @@
-In this module, you've added continuous validation to prevent performance bottlenecks and to increase confidence in new releases. 
+In this module, you've added continuous validation to prevent performance bottlenecks. You've learned to: 
 
-- Identified relevant user and system flows.
-- Defined load tests for the flows to validate the expected performance and thresholds.
-- Defined baselines for normal scenarios and special scenarios that were simulated in chaos experiments.
-- Embedded the continuous validation process into an automated pipeline.
+- Identify relevant user and system flows.
+- Define load tests for the flows to validate the expected performance and thresholds.
+- Define baselines for normal scenarios and special scenarios that were simulated in chaos experiments.
+- Integrate the continuous validation process into an automated pipeline.
 
-The newly gained insights from a consistent and regular continuous validation process have increased the company's confidence in new releases. Those insights have also reduced the number of problems in release rollouts and normal operations.
-
-Congratulations on completing this training module. You've learned how to design and use continuous validation to meet an organization's needs.
+Congratulations on completing this training module. You've learned how to design and use continuous validation and are now ready to meet an organization's needs. Apply the insights to increase the organization's confidence in deploying new releases reduce the issues from release rollouts and normal operations.
 
 ## Learn more
 

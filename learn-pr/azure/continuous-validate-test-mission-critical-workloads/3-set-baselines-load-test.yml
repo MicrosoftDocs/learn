@@ -4,7 +4,7 @@ title: Set baselines for load tests
 metadata:
   title: Set baselines for load tests
   description: Learn how to set baselines for load tests.
-  ms.date: 12/19/2022
+  ms.date: 01/19/2023
   author: sebader
   ms.author: prwilk
   ms.topic: interactive-tutorial
@@ -26,10 +26,10 @@ quiz:
       explanation: "Correct. Different scenarios might require different baselines. For example, performance requirements and expectations can vary across stages and environments. Azure Chaos experiments can also affect the expected performance."
   - content: "Does a baseline define the performance that the deployment can provide?"
     choices:
-    - content: "Yes. The baseline defines the deployment performance."
+    - content: "The baseline defines the deployment performance."
       isCorrect: false
       explanation: "Incorrect. Although the baseline defines expected performance numbers, it has no impact on the performance that's provided during deployment."
-    - content: "No. The baseline has no impact on the deployment performance."
+    - content: "The baseline has no impact on the deployment performance."
       isCorrect: true
       explanation: "Correct. Although the baseline defines expected performance numbers, it has no impact on the performance that's provided during deployment."
   - content: "When do baselines need to be evaluated and updated?"

@@ -12,7 +12,7 @@ To set up baselines for load tests, follow these steps:
 
 1. Adjust the thresholds for regular runs to verify that the application continues to provide the expected performance and doesn't produce any errors.
 
-1. Use a separate baseline for chaos testing that tolerates expected spikes in error rates and temporarily reduced performance.
+1. Use a separate baseline for chaos testing that tolerates the expected spikes in error rates and temporarily reduced performance.
 
 This activity is continuous and needs to be done regularly. For example, you need to review baselines after you introduce new features or change service SKUs.
 
@@ -33,11 +33,9 @@ The answers will lead to tests and thresholds. The requests per second, response
 
 After you've noted the details, use values to analyze and evaluate the performance of the overall solution and its components in a consistent way. Also use the baseline to identify changes and drifts. TBD: From what?
 
-When you run your tests, you might have different requirements for special situations, such as a faulty component or a load spike. In those cases, higher error rates or lower requests per second might be expected and acceptable. The result is different baselines with adjusted thresholds for certain scenarios.
+When you run your tests, you might have different requirements for special situations, such as a faulty component or a load spike. In those cases, higher error rates or lower requests per second might be expected and acceptable. You can have a separate baseline with adjusted thresholds to accomodate those situations. For example:
 
-Typical scenarios are:
-
-- High-load situations where a scale-out operation is expected and required. These situations might result in a temporary performance degradation until the operation is completed.
+- High-load scenarios where a scale-out operation is expected and required. There might be temporary performance degradation until the operation is completed.
 - Chaos experiments, as part of a continuous validation pipeline. A higher error rate can be expected until resiliency measures start to self-heal the application or fail over to another region.
 
 Use [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing) to evaluate how your system performs against defined thresholds. The service has a built-in [test criteria](/azure/load-testing/how-to-define-test-criteria?tabs=pipelines) capability. That is, you can specify criteria that a load test needs to pass. 
@@ -46,7 +44,7 @@ You can use test criteria to implement different baselines. For example:
 
 :::image type="content" source="../media/deployment-testing-test-criteria.png" border="false" alt-text="Table that shows sample test criteria.":::
 
-You can specify these test criteria in JSON and use the API (TBD) to add them to your load test. Here's an example:
+You can specify these test criteria in JSON and use the API to add them to your load test. Here's an example:
 
 ```json
 [
