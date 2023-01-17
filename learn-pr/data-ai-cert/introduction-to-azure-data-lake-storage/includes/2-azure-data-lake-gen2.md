@@ -2,13 +2,13 @@ A data lake is a repository of data that is stored in its natural format, usuall
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LK5Z]
 
-Azure Data Lake Storage combines a file system with a storage platform to help you quickly identify insights into your data. Data Lake Storage Gen2 builds on Azure Blob storage capabilities to optimize it specifically for analytics workloads. This integration enables analytics performance, the tiering and data lifecycle management capabilities of Blob storage, and the high-availability, security, and durability capabilities of Azure Storage.
+Azure Data Lake Storage combines a file system with a storage platform to help you quickly identify insights into your data. Data Lake Storage Gen2 builds on Azure Blob storage capabilities to optimize it specifically for analytics workloads. This integration combines the tiering and data lifecycle management capabilities of Blob storage, with the high-availability, security, and durability of Azure Storage.
 
 The variety and volume of data that is generated and analyzed today is increasing. Companies have multiple sources of data, from websites to Point of Sale (POS) systems, and more recently from social media sites to Internet of Things (IoT) devices. Each source provides an essential aspect of data that needs to be collected, analyzed, and potentially acted upon.
 
 ## Benefits
 
-Data Lake Storage Gen2 is designed to deal with this variety and volume of data at exabyte scale while securely handling hundreds of gigabytes of throughput. With this, you can use Data Lake Storage Gen2 as the basis for both real-time and batch solutions. Here is a list of additional benefits that Data Lake Storage Gen2 brings:
+Data Lake Storage Gen2 is designed to deal with this variety and volume of data at exabyte scale while securely handling hundreds of gigabytes of throughput. Making it possible to use Data Lake Storage Gen2 as the basis for both real-time and batch solutions. Here's a list of other benefits that Data Lake Storage Gen2 brings:
 
 ### Hadoop compatible access
 

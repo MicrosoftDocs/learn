@@ -6,7 +6,7 @@ Admin collections are managed through the Azure portal. For example, if you assi
 
 1. Open the Azure portal and sign in as an admin.
 1. Go to **Azure Active Directory** then select **Enterprise Applications**.
-1. Under **Manage**, select **Collections**.
+1. Under **Manage**, select **App Launchers**.
 1. Select **New collection**.
     
     

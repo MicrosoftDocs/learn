@@ -14,7 +14,7 @@ You can also check what resources your search solution is using on the **Usage**
 
 This basic information is a good start to monitoring, but you can go further with some more configuration. If you're familiar with supporting other resources on the Azure platform, you'll know that Azure Monitor can be used for all your Azure resources.
 
-In fact, you've already seen how to enable Azure Monitor in the [optimize performance](/training/modules/maintain-azure-cognitive-search-solution/03-optimize-performance-of) unit. Follow those steps to allow Azure Monitor to use data captured in Log Analytics to see a full set of diagnostic data.
+In fact, you've already seen how to enable Azure Monitor in the [optimize performance](/training/modules/maintain-azure-cognitive-search-solution/03-optimize-performance-of-azure-cognitive-search-solution) unit. Follow those steps to allow Azure Monitor to use data captured in Log Analytics to see a full set of diagnostic data.
 
 Once you have started using Log Analytics, you get access to performance and diagnostic data in these log tables:
 

@@ -5,7 +5,7 @@ metadata:
   description: "Examine Azure's AI services, and choose the right one for your company. Prepare for AZ-900."
   ms.date: 05/13/2021
   author: wwlpublish
-  ms.author: rknapp
+  ms.author: robbarefoot
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Choose the best AI service for your needs

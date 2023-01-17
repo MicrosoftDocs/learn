@@ -30,13 +30,13 @@ With ASP.NET, you can use the same framework and patterns to build both webpages
 
 - **Routing alongside your code**: ASP.NET lets you define routes and verbs inline with your code by using attributes. Data from the request path, query string, and request body are automatically bound to method parameters.
 
-- **HTTPS by default**: HTTPS is an important part of modern, professional web APIs. It relies on end-to-end encryption to provide privacy, and to help ensure that your API calls aren't intercepted and altered between client and server.
+- **HTTPS by default**: HTTPS is an important part of modern, professional web APIs. It relies on end-to-end encryption to provide privacy and to help ensure that your API calls aren't intercepted and altered between client and server.
 
   ASP.NET provides support for HTTPS out of the box. It automatically generates a test certificate and easily imports it to enable local HTTPS, so you can run and debug your applications securely before you publish them.
 
 ### Share code and knowledge with .NET apps
 
-Use your .NET skills and ecosystem to share logic from your web API to other apps built with .NET, including mobile, web, desktop, and services.
+You can use your .NET skills and ecosystem to share logic from your web API to other apps built with .NET, including mobile, web, desktop, and services.
 
 ## Testing web APIs by using the .NET HTTP REPL
 

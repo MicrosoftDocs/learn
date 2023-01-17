@@ -5,11 +5,11 @@ The Azure migration framework can help you develop your plan and work through yo
 ### Stage 1: Assess your on-premises environment
 
 In the first stage, you assess the current on-premises environment:
-- Identify your apps, and their related servers, services, and data, that's within scope for migration
-- Start to involve stakeholders, such as the IT department and relevant business groups
-- Create a full inventory and dependency map of your servers, services, and apps that you're planning to migrate
-- Estimate your cost savings by using the Azure Total Cost of Ownership Calculator (TCO)
-- Identify appropriate tools and services you can use to perform the four stages
+- Identify your apps, and their related servers, services, and data, that's within scope for migration.
+- Start to involve stakeholders, such as the IT department and relevant business groups.
+- Create a full inventory and dependency map of your servers, services, and apps that you're planning to migrate.
+- Estimate your cost savings by using the Azure Total Cost of Ownership Calculator (TCO).
+- Identify appropriate tools and services you can use to perform the four stages.
 
 #### Migration strategy patterns
 
@@ -33,18 +33,18 @@ The following table lists scenarios for working with the four patterns.
 
 After you complete the assessment, you can begin the process of migrating your targeted apps and their related services and data. The migration stage typically consists of the following efforts:
 
-- **Deploy cloud infrastructure targets**. Before you can migrate Tailwind Traders workloads, you need to create the required cloud infrastructure targets. Depending on the tools you use to perform the migration, you might need to create the required Azure resources before you begin the migration. Some tools, such as Azure Migrate and Azure Database Migration Service can create the target Azure resources for you.
+- **Deploy cloud infrastructure targets** - Before you can migrate Tailwind Traders workloads, you need to create the required cloud infrastructure targets. Depending on the tools you use to perform the migration, you might need to create the required Azure resources before you begin the migration. Some tools, such as Azure Migrate and Azure Database Migration Service can create the target Azure resources for you.
 
-- **Migrate workloads**. It's a good idea to pilot your workload migration, and to choose a non-critical app for the pilot. This approach enables you to become familiar with tools, gain experience with processes and procedures, and reduce risk when migrating large or complex workloads.
+- **Migrate workloads** - It's a good idea to pilot your workload migration, and to choose a non-critical app for the pilot. This approach enables you to become familiar with tools, gain experience with processes and procedures, and reduce risk when migrating large or complex workloads.
 
-- **Decommission on-premises infrastructure**: After you're satisfied that your source apps and databases are migrated successfully, you need to decommission the source workloads. Consider retaining the source workload backups and archived data. This data might prove useful as it provides a historical archive. You can store these backups and archives in Azure Blob Storage.
+- **Decommission on-premises infrastructure** - After you're satisfied that your source apps and databases are migrated successfully, you need to decommission the source workloads. Consider retaining the source workload backups and archived data. This data might prove useful as it provides a historical archive. You can store these backups and archives in Azure Blob Storage.
 
 ### Stage 3: Optimize your migrated workloads
 
 For the optimization stage, there are three main efforts to focus on for your planning:
-- Analyze migration costs for your workloads
-- Review recommendations for reducing your costs
-- Identify options for improving your workload performance
+- Analyze migration costs for your workloads.
+- Review recommendations for reducing your costs.
+- Identify options for improving your workload performance.
 
 You can use Microsoft Cost Management (formerly known as Azure Cost Management and Billing) in the Azure portal to analyze your workload costs. This tool is available for the Azure resource group that contains your migrated workloads. You'll find the tool in the **Costs analysis** > **Cost Management** section. The following screenshot shows cost analysis for the last billable period for the `ContosoResourceGroup` resource group. The results display the costs according to service name, region, and resource. You can customize the display results to meet your needs.
 

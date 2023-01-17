@@ -33,6 +33,9 @@ If you want to start with this learning path, you need to set up a development e
 
 [!include[](../../shared/includes/prerequisites.md)]
 
+> [!IMPORTANT]
+> This module uses a Microsoft-hosted agent and requires a parallel job. [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
+
 If your company's policy doesn't allow you to create an Azure DevOps organization, you can create your own personal account. You can get started with Azure DevOps for free.
 
 This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.

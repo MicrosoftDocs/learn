@@ -11,7 +11,7 @@ In this unit, you'll learn how to define a resource in a Bicep template, how res
 The main thing you'll do with Bicep templates is define your Azure resources. Here's an example of what a typical resource definition looks like in Bicep. This example creates a storage account named `toylaunchstorage`.
 
 ```bicep
-resource storageAccount 'Microsoft.Storage/storageAccounts@2022-05-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
   name: 'toylaunchstorage'
   location: 'westus3'
   sku: {
@@ -28,7 +28,7 @@ Let's look closely at some key parts of this resource definition:
 
 - The `resource` keyword at the start tells Bicep that you're about to define a resource.
 - Next, you give the resource a _symbolic name_. In the example, the resource's symbolic name is `storageAccount`. Symbolic names are used within Bicep to refer to the resource, but they won't ever show up in Azure.
-- `Microsoft.Storage/storageAccounts@2022-05-01` is the _resource type_ and _API version_ of the resource. `Microsoft.Storage/storageAccounts` tells Bicep that you're declaring an Azure storage account. The date `2022-05-01` is the version of the Azure Storage API that Bicep uses when it creates the resource.
+- `Microsoft.Storage/storageAccounts@2022-09-01` is the _resource type_ and _API version_ of the resource. `Microsoft.Storage/storageAccounts` tells Bicep that you're declaring an Azure storage account. The date `2022-09-01` is the version of the Azure Storage API that Bicep uses when it creates the resource.
 
   > [!TIP]
   > The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) helps you find the resource types and API versions for the resources you create. If you're familiar with ARM templates, note that the API version matches the version you'd use there too.
