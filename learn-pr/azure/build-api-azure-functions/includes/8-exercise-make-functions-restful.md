@@ -44,7 +44,7 @@ The Products Manager API is about to get serious style upgrade courtesy of you -
 
 ## Make the CreateProduct function RESTful
 
-1. Open the `api/CreatProduct/function.json` file.
+1. Open the `api/CreateProduct/function.json` file.
 
 1. Restrict the allowed "methods" to just "post".
 
