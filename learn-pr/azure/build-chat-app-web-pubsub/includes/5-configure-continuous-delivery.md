@@ -4,4 +4,4 @@ In this module, GitHub provides source control for the Static Web Apps applicati
 - Depending on updates to functionality of the static web app, you might need to update or reconfigure event handlers in the Web PubSub instance.
 
 > [!NOTE]
-> This module uses a GitHub repo and GitHub Actions to implement continous delivery of the static web app. You could configure similar functionality using Azure Repos and Azure Pipelines.
+> This module uses a GitHub repo and GitHub Actions to implement continous delivery of the static web app. You could configure similar functionality using [Azure Repos](/azure/devops/repos/) and [Azure Pipelines](/azure/devops/pipelines/).
