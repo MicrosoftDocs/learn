@@ -3,12 +3,13 @@ uid: learn.deploy-azure-private-5g-core.summary
 title: Summary
 metadata:
   title: summary
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: Summarizes what you have learned about the deployment capabilities of Azure Private 5G Core.
   ms.date: 28/11/2022
   author: ArchanaUpadhyaya
   ms.author: archanau@microsoft.com
   ms.topic: interactive-tutorial
-  ms.service: learning-azure-private-5g-core
+  ms.service: learning-private-5g-core
+
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]

@@ -3,13 +3,13 @@ uid: learn.deploy-azure-private-5g-core.deployment-methods
 title: Deployment methods
 metadata:
   title: Deployment methods
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: Provides you details on the various deployment methods.
   ms.date: 28/11/2022
   author: ArchanaUpadhyaya
   ms.author: archanau@microsoft.com
   ms.topic: interactive-tutorial
-  ms.service: learning-azure-private-5g-core
+  ms.service: learning-private-5g-core
 
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/2-deployment-methods.md)]

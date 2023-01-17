@@ -3,14 +3,14 @@ uid: learn.deploy-azure-private-5g-core
 hidden: true
 metadata:
   title: Deploy an Azure Private 5G Core service
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  description: "Describes Azure Private 5G Core deployment tasks, including prerequisites, deployment methods, and creating mobile network and site."
   ms.date: 28/11/2022
   author: ArchanaUpadhyaya
   ms.author: archanau@microsoft.com
   ms.topic: interactive-tutorial
   ms.service: learning-private-5g-core
 title: Deploy an Azure Private 5G Core service
-summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+summary: "Describes Azure Private 5G Core deployment tasks, including prerequisites, deployment methods, and creating mobile network and site."
 abstract: |
   After completing this module, you'll be able to: 
   - Describe the Azure Private 5G Core deployment prerequisites. 
@@ -22,13 +22,16 @@ prerequisites: |
   - Fundamental knowledge of Azure Private 5G Core. 
 iconUrl: /learn/achievements/deploy-azure-private-5g-core.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
-  - beginner
+  - intermediate
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
-  - developer
+  - service-adoption-specialist
+  - solution-architect
+  - technology-manager
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
 - azure
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - cloud-computing
+  - networking
 units:
 - learn.deploy-azure-private-5g-core.introduction
 - learn.deploy-azure-private-5g-core.deployment-methods
