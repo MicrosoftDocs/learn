@@ -20,16 +20,14 @@ In this exercise, you'll:
 
 1. Enter the details of your new repository:
 
+   - **Owner**: Select your GitHub user name from the drop-down menu. In the screenshot, `mygithubuser` is the repository owner's GitHub account name. You'll use your account name later in this module.
    - **Repository name**: Enter a meaningful but short name. For this module, use `toy-website-workflow`.
-   - **Description**: Include a description to help others understand what the repository is for.
+   - **Description**: Include a description to help others understand the repository's purpose.
    - **Private**: You can use GitHub to create public and private repositories. Create a private repository, because only people inside your organization should access your toy website's files. You can grant access to others later.
-   - Leave the repository initialization checkboxes cleared.
 
    After you're done, your repository configuration should look like the following screenshot:
 
    :::image type="content" source="../media/3-github-new-project-details.png" alt-text="Screenshot of the GitHub interface showing the configuration for the repository to create." border="true":::
-
-1. Keep a note of the **Owner** of the repository. In the screenshot, `mygithubuser` is the repository owner's GitHub account name. You'll use your account name later in this module.
 
 1. Select **Create repository**.
 
@@ -97,7 +95,9 @@ Now that you've created and cloned your repository, you're ready to create a bas
 
    :::code language="yaml" source="code/3-workflow.yml" :::
 
-1. Commit and push the file to your Git repository by using the following commands:
+1. Save the file.
+
+1. Commit and push the file to your GitHub repository with the following commands:
 
    ```bash
    git add .
@@ -126,7 +126,7 @@ You've created a workflow definition. GitHub Actions automatically detects your 
 
    :::image type="content" source="../media/3-run-workflow.png" alt-text="Screenshot of the GitHub interface showing the Actions tab, with the Run workflow dropdown and button selected." border="true":::
 
-1. The workflow begins to run. It might take a few moments, but the page will automatically refresh and show you a queued or running or even already finished workflow run.
+1. The workflow begins to run. It might take a few moments, you can refresh the page, but it should automatically refresh and show you a queued or running or even already finished workflow run.
 
    :::image type="content" source="../media/3-workflow-running.png" alt-text="Screenshot of the GitHub interface showing the Actions tab, with one workflow running." border="true":::
 
@@ -152,7 +152,7 @@ You've created a workflow definition. GitHub Actions automatically detects your 
 
    Notice the list includes steps that you didn't specify. These steps are created automatically by GitHub Actions.
 
-1. Select the **Placeholder step** step.
+1. Select **placeholder step**.
 
    :::image type="content" source="../media/3-workflow-run-placeholder-log.png" alt-text="Screenshot of the GitHub interface showing the workflow run log, with the placeholder step log shown." border="true":::
 

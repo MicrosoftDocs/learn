@@ -42,7 +42,7 @@ Next, update your workflow definition to deploy your Bicep file to Azure.
 
 1. In Visual Studio Code, open the _.github/workflows/workflow.yml_ file.
 
-1. At the top of the file, above the `jobs:` line, add a `permissions` section:
+1. At the top of the file, between `on:` and `jobs:` add a `permissions:` section.
 
    :::code language="yaml" source="code/6-workflow.yml" range="1-8, 13" highlight="5-7" :::
 
@@ -50,7 +50,7 @@ Next, update your workflow definition to deploy your Bicep file to Azure.
 
 1. Rename the `say-hello` job to `deploy`:
 
-   :::code language="yaml" source="code/6-workflow.yml" range="13-14" highlight="2" :::
+   :::code language="yaml" source="code/6-workflow.yml" range="13-16" highlight="2" :::
 
 1. To remove the `placeholder` step from the workflow definition, delete the bottom two lines of the file.
 
@@ -71,7 +71,7 @@ Next, update your workflow definition to deploy your Bicep file to Azure.
 
    Notice that this task uses the `github.run_number` default environment variable to name the deployment in Azure. It also uses environment variables for the resource group name and for the `environmentType` parameter in the Bicep file.
 
-1. Add these variables and their values at the top of your workflow file, between `permissions` and `jobs`:
+1. Add these variables and their values at the top of your workflow file, between `permissions:` and `jobs`:
 
    :::code language="yaml" source="code/6-workflow.yml" range="1-13" highlight="9-11" :::
 

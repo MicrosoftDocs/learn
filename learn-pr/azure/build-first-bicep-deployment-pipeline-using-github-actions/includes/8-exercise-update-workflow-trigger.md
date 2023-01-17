@@ -14,7 +14,7 @@ During the process, you'll:
 
 1. In Visual Studio Code, open the _.github/workflows/workflow.yml_ file.
 
-1. Near the top of the file, under the line that reads `name: deploy-toy-website`, add the following code to prevent multiple simultaneous workflows runs:
+1. After the line `name: deploy-toy-website` add the following code to prevent multiple simultaneous workflows runs:
 
    :::code language="yaml" source="code/8-workflow.yml" range="1-2" highlight="2" :::
 
@@ -55,7 +55,7 @@ During the process, you'll:
 
 1. In your browser, select GitHub's **Actions** menu, and select your workflow.
 
-1. Select the most recent run to see that the workflow ran automatically. The workflow ran because you pushed your changes to a branch monitored by the push trigger. If the workflow is still running, wait a minute, and then refresh the page.
+1. Select the most recent workflow run to see that the workflow ran automatically. The workflow ran because you pushed your changes to a branch monitored by the push trigger. If the workflow is still running, wait a minute, and then refresh the page.
 
    :::image type="content" source="../media/8-failed.png" alt-text="Screenshot of the GitHub interface showing the failed workflow run." border="true":::
 
@@ -66,7 +66,8 @@ During the process, you'll:
    Notice that it includes the following text:
 
    ```Output
-   There was a conflict. AlwaysOn cannot be set for this site as the plan does not allow it. For more information on pricing and features, please see: https://aka.ms/appservicepricingdetails
+   There was a conflict. AlwaysOn cannot be set for this site as the plan does not allow it.
+   For more information on pricing and features, please see: https://aka.ms/appservicepricingdetails
    ```
 
    This error message indicates that the deployment failed because the App Service app was deployed by using the F1 free tier, which doesn't support the Always On feature.
