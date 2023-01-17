@@ -19709,6 +19709,61 @@
       "source_path": "learn-pr/wwl-data-ai/serve-data-from-azure-synapse-serverless-sql-pool/2-use-synapse-studio-analyze-visualize-data-via.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/az-900-describe-cloud-concepts/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/9-bring-it-together.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/10-bring-it-all-together",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/10-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/11-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/11-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/12-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/2-learn-module-best-practices.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/3-learn-module-best-practices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/3-explore-best-practices-for-module-1.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/4-explore-best-practices-for-module-2.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/5-explore-best-practices-for-module-3.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/6-explore-best-practices-for-module-4.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/7-explore-best-practices-for-module-5.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/8-explore-best-practices-for-module-6.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/",
+      "redirect_document_id": false
     }
   ]
 }
