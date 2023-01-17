@@ -9,18 +9,18 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure 
 title: Continuously validate and test mission-critical workloads
-summary: You want to be aware of potential problems and be ready to respond to make sure that the workload stays operational even when failures occur. Learn how to set up automated tests using Azure Load Testing and Azure Chaos Studio simultaneously as part of your continuous integration/continuous deployment (CI/CD) pipelines.
+summary: You want to be aware of potential problems and be ready to respond so that the workload stays operational even when failures occur. Learn how to set up automated tests using Azure Load Testing and Azure Chaos Studio simultaneously as part of your continuous integration/continuous deployment (CI/CD) pipelines.
 abstract:  | 
   By the end of this module, you'll be able to:
-  - Identify user flows and system flows as the foundation for defining load tests and chaos experiments.
+  - Identify user flows and system flows of an application, as the foundation for defining load tests and chaos experiments.
   - Establish baselines for load tests with expected thresholds for system components, individual user flows, and the overall solution.
   -	Identify potential failure scenarios for system components as a guide for designing chaos experiments.
-  - Implement an automated process for continuous validation in your CI/CD pipeline.
+  - Design an automated process for continuous validation in your CI/CD pipeline.
 prerequisites: |
-  - You should have completed the previous module about health modeling. 
+  - You have completed the previous module about health modeling. 
   - You have a good understanding of the design principles and design areas of a mission-critical workload in the Azure Well-Architected Framework.
-  -	You should have an Azure subscription. 
-  -	You should have an Azure DevOps organization and project.
+  -	You have an Azure subscription. 
+  -	You have an Azure DevOps organization and project.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - advanced

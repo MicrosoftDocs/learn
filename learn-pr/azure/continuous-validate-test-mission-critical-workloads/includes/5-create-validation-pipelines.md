@@ -4,7 +4,7 @@ In this unit, you'll learn how to use CI/CD pipelines to automate your continuou
 
 ## Advantages of automating validation tests
 
-This technique lowers the entry barrier and effort associated with this activity (TBD: What does this mean). Developers and operations personnel can use it as part of each release or major change, which **improves quality** and **test runs are consistent**.
+This technique lowers the entry barrier and effort associated with this activity. Developers and operations personnel can use it as part of each release or major change, which **improves quality** and **test runs are consistent**.
 
 Running load test and chaos experiments simultaneously will help you **observe system behavior in an environment that simulates real-world traffic**. The purpose is to predict failures and not break the system. 
 

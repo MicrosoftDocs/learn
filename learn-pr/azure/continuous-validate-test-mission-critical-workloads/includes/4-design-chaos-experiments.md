@@ -2,7 +2,7 @@ Your mission-critical application needs to be resilient and be ready to respond 
 
 In this unit, we'll use [Azure Chaos Studio](/azure/chaos-studio/chaos-studio-overview). The service will help you measure, understand, and improve your cloud application and service resiliency. You'll be prepared to respond quickly if this failure occurs under adverse conditions in production.
 
-## Failure mode analysis
+## Conduct failure mode analysis
 
 When you design a chaos experiment, the first step is to conduct [failure mode analysis (FMA)](/azure/architecture/resiliency/failure-mode-analysis) of the application components to identify potential failure scenarios.
 
@@ -25,19 +25,19 @@ Let's see the outcome of FMA done for the components of the checkout flow exampl
 |Risk|Impact|Possible mitigation|
 |---|---|---|
 | **Slow (cold) start performance**| Because Azure Functions Consumption plan is used, new instances won't have performance guarantees. </br> High demand on the service (from "noisy neighbors") might cause the checkout function to experience a long startup duration that affects performance targets.|Upgrade to the Azure Functions Premium plan.|
-| **Underlying storage outage**| If the underlying storage account becomes unavailable, the function will stop working.|TBD: At least one mitigation.|
+| **Underlying storage outage**| If the underlying storage account becomes unavailable, the function will stop working.|Use [Load balanced compute with regional storage](/azure/azure-functions/durable/durable-functions-disaster-recovery-geo-distribution#scenario-2---load-balanced-compute-with-regional-storage) or [Load balanced compute with GRS shared storage](/azure/azure-functions/durable/durable-functions-disaster-recovery-geo-distribution#scenario-3---load-balanced-compute-with-grs-shared-storage).|
 
 ##### Azure Cosmos DB database
 
 |Risk|Impact|Possible mitigation|
 |---|---|---|
 | **Renaming a database or collection**| Because of mismatch in configuration, there could be data loss. The application won't be able to access any data until the configuration is updated and its components are restarted.| Prevent this situation by using [database and collection-level locks](/azure/cosmos-db/resource-locks).|
-| **Write region outage**|If the primary region (or write region) encounters an outage, TBD: add impact.|Configure the database account with multiple regions and automatic failover. If there's a failure, the service will automatically fail over and prevent any sustained problems in the application.|
+| **Write region outage**|If the primary region (or write region) encounters an outage, the Azure Cosmos DB account will automatically promote a secondary region to be the new primary write region when automatic (service-managed) failover is configured on the Azure Cosmos DB account. The failover will occur to another region in the order of region priority you've specified.|Configure the database account with multiple regions and automatic failover. If there's a failure, the service will automatically fail over and prevent any sustained problems in the application.|
 | **Extensive throttling due to lack of request units (RUs)** | Certain stamps might run hot on Azure Cosmos DB utilization while others can still serve requests. |Use better load distribution to more stamps, or add more RUs.|
 
 ## Design a chaos experiment
 
-To design a chaos experiment, pick a few failure cases. The choice can be based on the likelihood that it will happen or its possible impact.
+To design a chaos experiment, pick a few failure cases. The choice can be based on the likelihood that it will happen or the possible impact.
 
 The goal of the experiment is to validate resiliency measures that you've implemented in your application. For an example hypothesis, suppose you run your application on App Service with zone redundancy enabled. If all the underlying instances in a zone go down, you expect your application to be still running.
 
@@ -78,4 +78,4 @@ After the experiment ends, Chaos Studio switches the write region back to its or
 
 Before you can inject a fault against an Azure resource, you must enable the corresponding [targets and capabilities](/azure/chaos-studio/chaos-studio-targets-capabilities) setting for that resource. This setting controls the faults that can run against the resources enabled for fault injection. When you use targets and capabilities with other security measures, you can avoid accidental or malicious fault injection.
 
-
+Now that you've designed both load tests and chaos experiments, you need to automate them into your pipelines so that they run consistently and regularly. In the next unit, you'll learn about adding the tests your CI/CD pipelines. 

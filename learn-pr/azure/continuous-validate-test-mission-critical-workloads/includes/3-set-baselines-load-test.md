@@ -6,7 +6,7 @@ A baseline is a **set of criteria for metrics** that you use to evaluate whether
 - Error rate
 - Maximum response time
 
-To set up baselines for load tests, follow these steps:
+To set up baselines for load tests, you'll need to:
 
 1. Define the baselines and test criteria for individual user flows and the overall solution.
 
@@ -23,7 +23,7 @@ During the development phase, the performance of components and resource require
 
 Ask the following questions and reevaluate regularly:
 
-- *How long does an individual request take?* TBD: to do what?
+- *How long does an individual operation, user flow, or API call take to complete?* 
 - *How many requests, operations, and concurrent users can a component serve per second?*
 - *How many resources are consumed?*
 - *How do 10, 50, and 100 concurrent users affect the underlying infrastructure and back-end service?*
@@ -31,9 +31,9 @@ Ask the following questions and reevaluate regularly:
 
 The answers will lead to tests and thresholds. The requests per second, response time, and error percentage are all applicable examples for threshold values. 
 
-After you've noted the details, use values to analyze and evaluate the performance of the overall solution and its components in a consistent way. Also use the baseline to identify changes and drifts. TBD: From what?
+After you've noted the details, use values to analyze and evaluate the performance of the overall solution and its components in a consistent way. Also use the baseline to identify the impact of changes and drifts from the expected perfomance.
 
-When you run your tests, you might have different requirements for special situations, such as a faulty component or a load spike. In those cases, higher error rates or lower requests per second might be expected and acceptable. You can have a separate baseline with adjusted thresholds to accomodate those situations. For example:
+When you run the tests, you might have different requirements for special use cases, such as a faulty component or a load spike. For those cases, higher error rates or lower requests per second might be expected and acceptable. You can have a separate baseline with adjusted thresholds to accomodate those situations. For example:
 
 - High-load scenarios where a scale-out operation is expected and required. There might be temporary performance degradation until the operation is completed.
 - Chaos experiments, as part of a continuous validation pipeline. A higher error rate can be expected until resiliency measures start to self-heal the application or fail over to another region.
@@ -80,3 +80,4 @@ You can specify these test criteria in JSON and use the API to add them to your 
 ]
 ```
 
+Another important aspect of continuous validation is injecting tests that simulate real-world issues. In the next unit, you'll learn about adding chaos experiments to your validation process. 
