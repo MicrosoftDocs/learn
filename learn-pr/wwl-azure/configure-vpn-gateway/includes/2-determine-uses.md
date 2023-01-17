@@ -32,9 +32,6 @@ A virtual network gateway is composed of two or more virtual machines that are d
 
 - You can't directly configure the virtual machines that are part of a virtual network gateway.
 
-> [!NOTE]
-> Creating a virtual network gateway can take up to 45 minutes to complete.
-
 ### Things to consider when using VPN gateways
 
 VPN gateway connections are available in different configurations. In this module, we explore how to configure a site-to-site connection. As you develop your VPN gateway strategy, review your options and choose the configuration that best supports your business needs. Microsoft provides a [planning table](/azure/vpn-gateway/vpn-gateway-about-vpngateways#planningtable) to help your planning.
