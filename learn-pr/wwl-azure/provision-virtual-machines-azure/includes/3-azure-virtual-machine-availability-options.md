@@ -2,7 +2,7 @@ Azure offers several options for ensuring the availability of the virtual machin
 
 ## Availability zones
 
-[Availability zones](/azure/availability-zones/az-overview?context=/azure/virtual-machines/context/context) expands the level of control you have to maintain the availability of the applications and data on your VMs. An Availability Zone is a physically separate zone, within an Azure region. There are three Availability Zones per supported Azure region.
+[Availability zones](/azure/availability-zones/az-overview?context=/azure/virtual-machines/context/context) expand the level of control you have to maintain the availability of the applications and data on your VMs. An Availability Zone is a physically separate zone, within an Azure region. There are three Availability Zones per supported Azure region.
 
 An Availability Zone in an Azure region is a combination of a fault domain and an update domain. For example, if you create three or more VMs across three zones in an Azure region, your VMs are effectively distributed across three Fault domain and three update domains. The Azure platform recognizes this distribution across update domains to make sure that VMs in different zones are not scheduled to be updated at the same time.
 
