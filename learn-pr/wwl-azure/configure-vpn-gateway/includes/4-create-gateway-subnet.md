@@ -16,7 +16,7 @@ Take a few minutes to review the following important details about the gateway s
 
 When you create the gateway subnet in the Azure portal, there are several configuration parameters. There are a few items to consider when planning your parameter values.
 
-:::image type="content" source="../media/create-gateway-subnet-c668ade2.png" alt-text="Screenshot that shows how to configure the gateway subnet for a virtual networking in the Azure portal.":::
+:::image type="content" source="../media/create-gateway-subnet-c668ade2.png" alt-text="Screenshot that shows how to configure the gateway subnet for a virtual network in the Azure portal.":::
 
 - **Consider gateway subnet size**. Some configurations require a larger gateway subnet than others. For the recommended sizes, refer to the documentation for the configuration that you're planning to create. If possible, it's best to create a gateway subnet by using a classless inter-domain routing (CIDR) block of /28 or /27. This approach should provide enough IP addresses to accommodate future configuration requirements.
 
