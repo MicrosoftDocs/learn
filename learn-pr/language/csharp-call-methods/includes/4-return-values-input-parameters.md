@@ -44,7 +44,7 @@ Many methods in the .NET Class Library have *overloaded* method signatures.
 
 An **overloaded method** is defined with multiple method signatures. Overloaded methods provide different ways to call the method or provide different types of data.
 
-In some cases, overloaded versions of a given method allow send values of different data types into the method. For example, the `Console.WriteLine()` method has 19 different overloaded versions. Most of those overloads allow sending of different types of data to be printed to the console. Consider the following code:
+In some cases, overloaded versions of a given method allow you to send values of different data types into the method. For example, the `Console.WriteLine()` method has 19 different overloaded versions. Most of those overloads allow sending of different types of data to be printed to the console. Consider the following code:
 
 ```csharp-interactive
 int number = 7;
@@ -93,14 +93,14 @@ For example, as you enter the word `dice` slowly, Intellisense will show all C# 
 
 To experiment with Intellisense, enter the letters `d`, `i` then `c`. When Intellisense pops up, the identifier `dice` should appear. Select the `tab` key on the keyboard, and the entire word will be completed. You can also use the up and down arrow keys to change the selection.
 
-> [!Note]
+> [!NOTE]
 > If the Intellisense window disappears, you can select it by using the `backspace` key on the keyboard, then re-entering the last symbol to re-open Intellisense.
 
 Next, enter the member access operator. The Intellisense popup reappears and shows all of the methods (and other members of the class) that are available. If you enter the letter `N`, the list will be filtered, and the word `Next` should be the top selection. Again, select the `tab` key on the keyboard to autocomplete the entire word.
 
 Next, enter the *opening* parenthesis. The closing parenthesis is automatically added.
 
-More importantly, two areas appear in the Intellisense popup. On the right, you should see `int Random.Next()`. The `int` is the return type. In other words, when executed this version of the method, it will return a value of type `int`.
+More importantly, two areas appear in the Intellisense popup. On the right, you should see `int Random.Next()`. The `int` is the return type. In other words, when executed, this version of the method will return a value of type `int`.
 
 On the left of the Intellisense popup, it displays `1/3`, indicating you're looking at the first version of the `Next()` method, which accepts no input parameters. There's also a tiny arrow above and below the `1/3`. Select the keyboard's up and down arrow keys to navigate to the second and third overloaded versions of the method. When you do, you'll see `2/3` and `3/3` appear on the left side of Intellisense, respectively.
 
