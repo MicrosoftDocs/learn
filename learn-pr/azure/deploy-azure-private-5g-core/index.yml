@@ -14,7 +14,7 @@ summary: "Describes Azure Private 5G Core deployment tasks, including prerequisi
 abstract: |
   After completing this module, you'll be able to: 
   - Describe the Azure Private 5G Core deployment prerequisites. 
-  - Describe the Azure Private 5G Core deployment procedure using Azure Portal and ARM templates. 
+  - Describe the Azure Private 5G Core deployment procedure using Azure portal and ARM templates. 
   - Deploy a private mobile network and configure a packet core site. 
 prerequisites: |
   - Fundamental knowledge about Azure. 
