@@ -53,7 +53,8 @@ In your workbook, select **Edit** from the top toolbar.
             | project id
             ```
 
-     :::image type="content" source="../media/7-web-app-parameter.png" alt-text="Screenshot that shows the web app parameter in a workbook.":::
+         :::image type="content" source="../media/7-web-app-parameter.png" alt-text="Screenshot that shows the web app parameter in a workbook.":::
+
     1. Select **Save**.
 1. In the same **Add parameter** section, select **Add parameter** again.
 
@@ -171,8 +172,7 @@ In your workbook, select **Edit** from the top toolbar.
 
         :::image type="content" source="../media/7-operations-request-query.png" alt-text="Screenshot that shows a query for the number of requests to a web app in an Azure Workbooks.":::
 
-1. We're going to use the rendering settings to make the chart easy to understand visually.
-1. Select **Column settings**, and then in the **Columns** section on the left, select **Operation Name**, and then enter these settings.
+1. Now, we're going to use the rendering settings to make the chart easy to understand visually. Select **Column settings**, and then in the **Columns** section on the left, select **Operation Name**, and then enter these settings.
 
     1. In the **Column name** field, enter (or leave the default name) "OperationName".
     1. In the **Column renderer** field, select **Thresholds**.
@@ -237,8 +237,8 @@ In your workbook, select **Edit** from the top toolbar.
     1. In the **Column renderer** field, select **Heatmap**.
     1. In the **Color palette** field, select **Blue**.
     1. Select **Custom formatting**.
-        - In the **Units** field, select **Count**.
-        - In the **Style** field, select **Decimal**.
+        1. In the **Units** field, select **Count**.
+        1. In the **Style** field, select **Decimal**.
 
         :::image type="content" source="../media/7-cosmos-db-heatmap-settings.png" alt-text="Screenshot that shows setting the colors in a grid using the heatmap setting in Azure Workbooks.":::
 
