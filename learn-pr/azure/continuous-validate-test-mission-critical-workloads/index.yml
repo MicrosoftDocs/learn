@@ -17,7 +17,7 @@ abstract:  |
   -	Identify potential failure scenarios for system components as a guide for designing chaos experiments.
   - Design an automated process for continuous validation in your CI/CD pipeline.
 prerequisites: |
-  - You have completed the previous module about health modeling. 
+  - You've completed the previous module about health modeling. 
   - You have a good understanding of the design principles and design areas of a mission-critical workload in the Azure Well-Architected Framework.
   -	You have an Azure subscription. 
   -	You have an Azure DevOps organization and project.

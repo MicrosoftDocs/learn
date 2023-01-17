@@ -31,9 +31,9 @@ Ask the following questions and reevaluate regularly:
 
 The answers will lead to tests and thresholds. The requests per second, response time, and error percentage are all applicable examples for threshold values. 
 
-After you've noted the details, use values to analyze and evaluate the performance of the overall solution and its components in a consistent way. Also use the baseline to identify the impact of changes and drifts from the expected perfomance.
+After you've noted the details, use values to analyze and evaluate the performance of the overall solution and its components in a consistent way. Also use the baseline to identify the impact of changes and drifts from the expected performance.
 
-When you run the tests, you might have different requirements for special use cases, such as a faulty component or a load spike. For those cases, higher error rates or lower requests per second might be expected and acceptable. You can have a separate baseline with adjusted thresholds to accomodate those situations. For example:
+When you run the tests, you might have different requirements for special use cases, such as a faulty component or a load spike. For those cases, higher error rates or lower requests per second might be expected and acceptable. You can have a separate baseline with adjusted thresholds to accommodate those situations. For example:
 
 - High-load scenarios where a scale-out operation is expected and required. There might be temporary performance degradation until the operation is completed.
 - Chaos experiments, as part of a continuous validation pipeline. A higher error rate can be expected until resiliency measures start to self-heal the application or fail over to another region.

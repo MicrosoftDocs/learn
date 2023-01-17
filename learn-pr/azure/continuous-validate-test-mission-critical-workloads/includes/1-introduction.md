@@ -2,7 +2,7 @@ Azure mission-critical design methodology requires *continuous validation* to ma
 
 Continuous validation is implemented as a set of processes and tools. It should be integrated into a workflow to enable developers and operations teams to run the validation consistently and regularly, for instance before every release or major code change. The validation processes should be run under production-like conditions.
 
-To set up continuous validation, you'll need do these tasks:
+Here are the high-level tasks for designing continuous validation:
 
 - Define tests based on user and system flows, and their expected performance.
 - Establish baselines for various scenarios and stages.
