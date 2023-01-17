@@ -6,7 +6,7 @@ A flow is composed of application interactions required to complete a task.
 
 - **User flow** 
 
-   Indicates how users interact with your application. In the Contoso Shoes scenario, the checkout process for purchasing items is an example of a user flow. It has these components that participate in inventory management:
+   These flows indicate how users interact with your application. In the Contoso Shoes scenario, the checkout process for purchasing items is an example of a user flow. It has these components that participate in inventory management:
    
    - Front-end web application
    - Checkout logic in Azure Functions
@@ -19,7 +19,7 @@ A flow is composed of application interactions required to complete a task.
    These flows aren't typically user facing, but an outage or degradation of system flow components can have an impact on the user experience. For example, an asynchronous activity that picks up orders from a database and generates shipping labels.
 
 > [!NOTE]
-> Most applications have multiple flows. Each flow can touch various components of the architecture. Also a component can appear in more than one flow. It's important to understand which flows are affected when a component fails.
+> Most applications have multiple flows. Each flow can touch various components of the architecture. Also, a component can appear in more than one flow. It's important to understand which flows are affected when a component fails.
 
 ## Define a load test and its threshold values
 

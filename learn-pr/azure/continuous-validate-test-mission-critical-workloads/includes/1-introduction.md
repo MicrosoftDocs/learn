@@ -1,4 +1,4 @@
-Azure mission-critical design methodology requires *continuous validation* to make sure the workload stays operational, even when failures and unexpected situations happen. It involves testing changes and releases regularly in a controlled environment. Such tests can include sustained user load and injecting faults. The goal is to test the workload's resiliency and its ability to handle faults before deploying to production.
+Azure mission-critical design methodology requires *continuous validation* to make sure your workload stays operational, even when failures and unexpected situations happen. It involves testing changes and releases regularly in a controlled environment. Such tests can include sustained user load and injecting faults. The goal is to test the workload's resiliency and its ability to handle faults before deploying to production.
 
 Continuous validation is implemented as a set of processes and tools. It should be integrated into a workflow to enable developers and operations teams to run the validation consistently and regularly, for instance before every release or major code change. The validation processes should be run under production-like conditions.
 
@@ -21,5 +21,5 @@ You can run the two services simultaneously by embedding them in an Azure DevOps
 This module incorporates continuous validation to an example introduced as part of the learning path. We recommend that you familiarize yourself with that example, especially these aspects.
 
 - [About Contoso Shoes' mission-critical goals](/training/modules/azure-mission-critical/1-introduction#example-scenario)
-- [Architecture](/training/modules/design-health-model-mission-critical-workload/3-exercise-layered-model#example-architecture)
+- [Contoso Shoes' application architecture](/training/modules/design-health-model-mission-critical-workload/3-exercise-layered-model#example-architecture)
 

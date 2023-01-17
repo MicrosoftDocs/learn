@@ -10,7 +10,7 @@ When you design a chaos experiment, the first step is to conduct [failure mode a
 
 1. For each component, list possible failure cases, their impact, and any potential mitigations. 
 
-Let's see the outcome of FMA done for the components of the checkout flow example. 
+Let's see the outcome of FMA done for the components of the Contoso Shoes checkout user flow example. 
 
 ##### Azure App Service for hosting the front end application
 
@@ -37,7 +37,7 @@ Let's see the outcome of FMA done for the components of the checkout flow exampl
 
 ## Design a chaos experiment
 
-To design a chaos experiment, pick a few failure cases. The choice can be based on the likelihood that it will happen or the possible impact.
+To design a chaos experiment, pick a few failure cases. The choice can be based on the likelihood that the failure will happen or the possible impact.
 
 The goal of the experiment is to validate resiliency measures that you've implemented in your application. For an example hypothesis, suppose you run your application on App Service with zone redundancy enabled. If all the underlying instances in a zone go down, you expect your application to be still running.
 

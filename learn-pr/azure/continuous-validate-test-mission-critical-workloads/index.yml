@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure 
 title: Continuously validate and test mission-critical workloads
-summary: You want to be aware of potential problems and be ready to respond so that the workload stays operational even when failures occur. Learn how to set up automated tests using Azure Load Testing and Azure Chaos Studio simultaneously as part of your continuous integration/continuous deployment (CI/CD) pipelines.
+summary: You want to be aware of potential problems and be ready to respond so that your workload stays operational even when failures occur. Learn how to set up automated tests using Azure Load Testing and Azure Chaos Studio simultaneously as part of your continuous integration/continuous deployment (CI/CD) pipelines.
 abstract:  | 
   By the end of this module, you'll be able to:
   - Identify user flows and system flows of an application, as the foundation for defining load tests and chaos experiments.

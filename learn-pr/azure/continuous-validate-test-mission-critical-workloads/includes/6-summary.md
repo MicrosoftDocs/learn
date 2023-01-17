@@ -1,6 +1,6 @@
 In this module, you've added continuous validation to prevent performance bottlenecks and completed these tasks: 
 
-- Identify relevant user and system flows.
+- Identify relevant user flows and system flows.
 - Define load tests for the flows to validate the expected performance and thresholds.
 - Define baselines for normal scenarios and special scenarios that were simulated in chaos experiments.
 - Integrate the continuous validation process into an automated workflow.
