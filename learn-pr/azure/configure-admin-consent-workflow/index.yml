@@ -6,15 +6,15 @@ metadata:
 
   description: Configure the admin consent workflow to enable users to request admin consent right from the screen. Designated reviewers view and respond to the requests through the Azure portal.
 
-  ms.date: 01/16/2023
+  ms.date: 01/17/2023
   author: omondiatieno
   ms.author: jomondi
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage consent requests to apps through admin consent workflow in Azure Active Directory
 
-summary: " Admin consent workflow streamlines the process by which admins evaluate and respond to consent requests in Azure Active directory (Azure AD). Learn how to configure admin consent workflow to enable users of applications to request admin consent from the consent prompt. Learn how to properly evaluate consent requests and respond to them through the Azure portal.
-abstract:
+summary: "Admin consent workflow streamlines the process by which admins evaluate and respond to consent requests in Azure Active directory (Azure AD). Learn how to configure admin consent workflow to enable users of applications to request admin consent from the consent prompt. Learn how to properly evaluate consent requests and respond to them through the Azure portal."
+abstract: |
   By the end of this module, you'll be able to:
     - Identify possible user and administrator consent configurations.
     - Enable admin consent workflow through the Azure portal.
@@ -45,3 +45,4 @@ units:
 - learn.configure-admin-consent-workflow.summary
 badge:
   uid: learn.configure-admin-consent-workflow.badge
+ 
