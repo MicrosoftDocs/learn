@@ -54,7 +54,6 @@ In your workbook, select **Edit** from the top toolbar.
             ```
 
      :::image type="content" source="../media/7-web-app-parameter.png" alt-text="Screenshot that shows the web app parameter in a workbook.":::
-
     1. Select **Save**.
 1. In the same **Add parameter** section, select **Add parameter** again.
 
@@ -76,7 +75,6 @@ In your workbook, select **Edit** from the top toolbar.
             | where type == "microsoft.documentdb/databaseaccounts" 
             | project id
             ```
-
     1. Select **Save**.
 
 1. In the same **Add parameter** section, select **Add parameter** again.
@@ -97,7 +95,6 @@ In your workbook, select **Edit** from the top toolbar.
             | where type == "microsoft.operationalinsights/workspaces"
             | project id
             ```
-
     1. Select **Save**.
 1. In the same **Add parameter** section, select **Add parameter** again.
 
