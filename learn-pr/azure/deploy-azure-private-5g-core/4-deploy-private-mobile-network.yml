@@ -11,4 +11,4 @@ metadata:
   ms.service: learning-private-5g-core
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-deploy-private-mobile-network.md)]
+  [!include[](includes/4-deploy-private-mobile-network.md)]

@@ -30,11 +30,17 @@ Depending on your requirements, you have the following options for configuring a
 
 To ensure successful connectivity of all the ASE and AP5GC infrastructure to Azure services, we recommend configuring a firewall to allow all the outbound traffic.
 
-In the case where you do not want to allow all the outbound traffic, they will have to configure the firewall with Azure services specific IP addresses and the URLs. Please contact Microsoft Support to obtain the list of Azure services specific IP address and URL details. 
+In the case where you do not want to allow all the outbound traffic, they will have to configure the firewall with Azure services specific IP addresses and the URLs. Please contact Microsoft Support to obtain the list of Azure services specific IP address and URL details.
 
-You should set these up in addition to the [ports required for Azure Stack Edge (ASE)](/azure/databox-online/azure-stack-edge-gpu-system-requirements). 
+You should set these up in addition to the [ports required for Azure Stack Edge (ASE)](/azure/databox-online/azure-stack-edge-gpu-system-requirements).
 
 In addition to the 5G core software, you'll need to purchase the following to complete your solution: 
 
 - SIMs and RANs: The ecosystem of trusted Private 5G Core partners can provide you with these components. 
-- Azure Stack Edge Pro SKU: You'll need to purchase this Microsoft hardware through Azure. 
+- Azure Stack Edge Pro SKU: You'll need to purchase this Microsoft hardware through Azure.
+
+Once you are ready for the deployment, you can use the Azure portal for the following deployment tasks:
+
+1. Create a private mobile network.
+1. Create a site.
+1. Configure service and SIM policy.

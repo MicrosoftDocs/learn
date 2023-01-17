@@ -21,22 +21,21 @@ prerequisites: |
   - Fundamental knowledge of 5G and 4G technologies. 
   - Fundamental knowledge of Azure Private 5G Core. 
 iconUrl: /learn/achievements/deploy-azure-private-5g-core.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+levels: 
   - intermediate
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+roles: 
   - service-adoption-specialist
   - solution-architect
   - technology-manager
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+products: 
 - azure
-subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+subjects:
   - cloud-computing
   - networking
 units:
 - learn.deploy-azure-private-5g-core.introduction
 - learn.deploy-azure-private-5g-core.deployment-methods
 - learn.deploy-azure-private-5g-core.prerequisites-of-deployment
-- learn.deploy-azure-private-5g-core.deploy-using-azure-portal
 - learn.deploy-azure-private-5g-core.deploy-private-mobile-network
 - learn.deploy-azure-private-5g-core.deploy-site
 - learn.deploy-azure-private-5g-core.deploy-using-arm-templates

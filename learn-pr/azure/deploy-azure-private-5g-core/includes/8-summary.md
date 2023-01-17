@@ -6,10 +6,7 @@ If you want to learn about service and SIM policy configuration, check the [Mana
 
 ## References
 
-[Azure Private 5G Core documentation](/azure/private-5g-core/)
-
-[Azure private 5G Core product information](https://azure.microsoft.com/products/private-5g-core/)
-
-[Azure private multi-access edge compute (MEC) solution information](https://azure.microsoft.com/solutions/private-multi-access-edge-compute-mec/)
-
-[Deploy private 5G networks on Azure](/azure/architecture/industries/telecommunications/deploy-private-mobile-network)
+- [Azure Private 5G Core documentation](/azure/private-5g-core/)
+- [Azure private 5G Core product information](https://azure.microsoft.com/products/private-5g-core/)
+- [Azure private multi-access edge compute (MEC) solution information](https://azure.microsoft.com/solutions/private-multi-access-edge-compute-mec/)
+- [Deploy private 5G networks on Azure](/azure/architecture/industries/telecommunications/deploy-private-mobile-network)

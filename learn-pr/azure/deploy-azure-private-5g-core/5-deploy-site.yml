@@ -11,4 +11,4 @@ metadata:
   ms.service: learning-private-5g-core
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-deploy-site.md)]
+  [!include[](includes/5-deploy-site.md)]
