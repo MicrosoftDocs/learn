@@ -33,7 +33,7 @@ Azure Private 5G Core offers a default service and SIM policy that allow all tra
 
 #### **Configure custom location for AKS cluster:**
 
-To configure ASE and to create AKS cluster on the ASE using Azure Portal, refer to [Azure Stack Edge documentation](/azure/databox-online/).
+To configure ASE and to create AKS cluster on the ASE using Azure portal, refer to [Azure Stack Edge documentation](/azure/databox-online/).
 
 For more information on each of the prerequisites, refer [Prepare to deploy a private mobile network - Azure Private 5G Core Preview](/azure/private-5g-core/complete-private-mobile-network-prerequisites).
 
@@ -48,12 +48,12 @@ This section helps you to create the mobile networks resource representing your 
 1. Use the information you collected in [Collect private mobile network resource values](/azure/private-5g-core/collect-required-information-for-private-mobile-network) to fill out the fields on the **Basics** configuration tab. Once you've done this, select **Next : SIMs >**.
    :::image type="content" source="../media/basics-configuration-tab1.png" alt-text="basics-configuration-tab":::
 1. On the SIMs configuration tab, select your chosen input method by selecting the appropriate option next to **How would you like to input the SIMs information?** You can then input the information you collected in [Collect SIM and SIM Group values](/azure/private-5g-core/collect-required-information-for-private-mobile-network).
-   - If you decide not to provision any SIMs at this point, select **Add SIMs later**. By this you can choose to add SIMs later while managing mobile networks. For more information, refer to [Management module](/training/modules/manage-azure-private-5g-core/?branch=pr-en-us-31182).
+   - If you decide not to provision any SIMs at this point, select **Add SIMs later**. By this you can choose to add SIMs later while managing mobile networks. For more information, see [Management module](/training/modules/manage-azure-private-5g-core/?branch=pr-en-us-31182).
      :::image type="content" source="../media/sim-configuration-tab1.png" alt-text="SIM-configuration-tab":::
    - If you select **Add manually**, a new **Add SIM** button appears under Enter SIM profile configurations. Select it, fill out the fields with the correct settings for the first SIM you want to provision, and select **Add** **SIM**. Repeat this process for each additional SIM you want to provision.
      :::image type="content" source="../media/add-manually-sim.png" alt-text="add-sim-manually":::
    - If you select **Upload JSON file**, the Upload SIM profile configurations field appears. Use this field to upload your chosen JSON file.
-     Here is the **sample JSON file**:
+     Here's the **sample JSON file**:
 
     ```json
 
@@ -93,11 +93,11 @@ This section helps you to create the mobile networks resource representing your 
 
 1. If you're provisioning SIMs at this point, perform the following additional steps:
     - If you want to use the default service and SIM policy, set **Do you wish to create a basic, default SIM policy and assign it to these SIMs?** to **Yes**, and then enter the name of the data network into the **Data network name** field that appears.
-    - If you do not want to use the default service and SIM policy, set **Do you wish to create a basic, default SIM    policy and assign it to these SIMs?** to **No**.
+    - If you don't want to use the default service and SIM policy, set **Do you wish to create a basic, default SIM    policy and assign it to these SIMs?** to **No**.
 
 1. Under Enter SIM group information, set SIM group name to your chosen name for the SIM group to which your SIMs will be added.
 
-Under Enter encryption details for SIM group, set Encryption type to your chosen encryption type. Once the SIM group is created, you cannot change the encryption type:
+Under Enter encryption details for SIM group, set Encryption type to your chosen encryption type. Once the SIM group is created, you can't change the encryption type:
 
 - On SIM group creation, customers can either select **Customer Managed Key** option and provide the identity and encryption key details or can select **Microsoft Managed Key (None)** which is a default one.
 

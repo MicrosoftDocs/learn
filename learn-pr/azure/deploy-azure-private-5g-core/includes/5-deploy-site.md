@@ -9,8 +9,8 @@ Before creating a site, perform the following prerequisites:
 
 1. To begin with collect the required information for a site. Refer to [Collect information for a site - Azure Private 5G Core Preview](/azure/private-5g-core/collect-required-information-for-a-site).
 1. Refer to the release notes for the current version of packet core, and whether it's supported by the version your Azure Stack Edge (ASE) is currently running. If your ASE version is incompatible with the latest packet core, [update your Azure Stack Edge Pro GPU](/azure/databox-online/azure-stack-edge-gpu-install-update).
-1. User must be able to login to Azure Portal using their account which can access to the active subscription you used to create your private mobile network. This account must have the built-in Contributor or Owner role at the subscription scope.
-1. Configure custom location for AKSE cluster: To configure ASE and to create AKS cluster on the ASE using Azure Portal, refer to [Azure Stack Edge documentation](/azure/databox-online/).
+1. User must be able to log in to Azure portal using their account, which can access to the active subscription you used to create your private mobile network. This account must have the built-in Contributor or Owner role at the subscription scope.
+1. Configure custom location for AKSE cluster: To configure ASE and to create AKS cluster on the ASE using Azure portal, refer to [Azure Stack Edge documentation](/azure/databox-online/).
 1. Sign in to the  [Azure portal](https://portal.azure.com/) to create the mobile network site resource representing the physical enterprise location of your Azure Stack Edge device, which will host the packet core instance.
 
 ## Deployment Procedure for creating a site
@@ -72,8 +72,8 @@ You can also use services to block specific traffic types or traffic from specif
 
 For instructions on configuring a service and SIM policies, refer to [Management module](/training/modules/manage-azure-private-5g-core/?branch=pr-en-us-31182).
 
-To get instructions on how to configure SIM policies using Azure Portal, refer [Configure a SIM policy - Azure Private 5G Core](/azure/private-5g-core/configure-sim-policy-azure-portal).
+To get instructions on how to configure SIM policies using Azure portal, refer [Configure a SIM policy - Azure Private 5G Core](/azure/private-5g-core/configure-sim-policy-azure-portal).
 
 > [!NOTE]
 > Provisioning SIM and SIM policies can be done as part of deployment, but preferred way is select ‘’No’’ to do these tasks as part of Managing the Azure Private 5G Core networks.
-> See [Management module](/training/modules/manage-azure-private-5g-core/?branch=pr-en-us-31182) for more information.
+> For more information, see [Management module](/training/modules/manage-azure-private-5g-core/?branch=pr-en-us-31182).

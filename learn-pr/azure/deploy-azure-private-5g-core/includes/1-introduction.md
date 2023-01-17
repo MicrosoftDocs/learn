@@ -1,4 +1,4 @@
-This section describes how to use the Azure Portal and ARM templates to design and deploy an Azure Private 5G Core (AP5GC) network as part of a private-multi-access edge compute (MEC) solution on an enterprise edge. 
+This section describes how to use the Azure portal and ARM templates to design and deploy an Azure Private 5G Core (AP5GC) network as part of a private-multi-access edge compute (MEC) solution on an enterprise edge. 
 
 Deploying a private mobile network using Azure Private 5G Core at the enterprise edge ensures complete ownership of all data by the enterprise. It also positions the packet core instance as close as possible to the devices it serves, removing any reliance on cloud connectivity. This allows it to deliver low latency levels through local data processing when combined with application logic in the same location.
 
