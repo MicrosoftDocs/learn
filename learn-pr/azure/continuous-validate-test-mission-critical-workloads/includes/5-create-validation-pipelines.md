@@ -14,11 +14,11 @@ As you run your load tests, consider adjusting your baselines for certain situat
 
 To create a CI/CD pipeline, you can use Azure Pipelines, GitHub Actions, or the CI/CD tool of your choice. This image shows the end-to-end stages of a pipeline in Azure DevOps:
 
-:::image type="content" source="../media/pipeline-with-chaos-and-load.png" border="false" alt-text="Diagram that shows a sample pipeline with chaos and load." lightbox="../media/pipeline-with-chaos-and-load.png":::
+:::image type="content" source="../media/pipeline-with-chaos-and-load.png" border="false" alt-text="Diagram that shows a sample pipeline." lightbox="../media/pipeline-with-chaos-and-load.png":::
 
 1. In the pipeline, define the Azure Load Testing and Azure Chaos Studio services as infrastructure as code (IaC) by using a tool like Azure Resource Manager templates, Bicep, or Terraform. Azure Load Testing [provides first-party tasks](/azure/load-testing/tutorial-identify-performance-regression-with-cicd) for Azure Pipelines and GitHub Actions to interact with the load-testing service, and to create and orchestrate tests.
 
-   :::image type="content" source="../media/pipeline-with-chaos-and-load-zoom-in.png" border="false" alt-text="Diagram that shows a sample pipeline with chaos and load.":::
+   :::image type="content" source="../media/pipeline-with-chaos-and-load-zoom-in.png" border="false" alt-text="Diagram that shows the pipeline with integrated chaos and load testing.":::
 
 1. To properly view the impact of the injected faults, ensure that the load test starts before the faults are injected. Continue to run the test for a while after the chaos experiment is finished.
 
