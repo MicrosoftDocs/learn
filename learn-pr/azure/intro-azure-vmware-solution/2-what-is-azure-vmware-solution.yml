@@ -38,5 +38,5 @@ quiz:
       explanation: "Azure Monitor can be integrated to monitor VMs on Azure and on Azure VMware Solution."
     - content: "Azure NetApp Files"
       isCorrect: true
-      explanation: "You can mount files from VMs using SMB or NFS."
+      explanation: "Azure NetApp Files supports mounting volumes using SMB or NFS on VMs."
   
