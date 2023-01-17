@@ -55,7 +55,7 @@ In your workbook, select **Edit** from the top toolbar.
 
      :::image type="content" source="../media/7-web-app-parameter.png" alt-text="Screenshot that shows the web app parameter in a workbook.":::
 
-    - Select **Save**.
+    1. Select **Save**.
 1. In the same **Add parameter** section, select **Add parameter** again.
 
     :::image type="content" source="../media/7-add-additional-parameter.png" alt-text="Screenshot that shows adding a second parameter to an existing parameter control in Azure workbooks.":::
@@ -66,10 +66,10 @@ In your workbook, select **Edit** from the top toolbar.
     1. In the **Get data from** section, select **Query**.
     1. In the **Subscriptions Log query** section:
 
-        - In the **Data source** field, select **Azure resource graph**.
-        - In the **Resource type** field, select **Subscription**.
-        - In the **Subscriptions** field, select the **Subscription** resource parameter.
-        - Enter the following query, and then select **Run Query**.
+        1. In the **Data source** field, select **Azure resource graph**.
+        1. In the **Resource type** field, select **Subscription**.
+        1. In the **Subscriptions** field, select the **Subscription** resource parameter.
+        1. Enter the following query, and then select **Run Query**.
 
             ```azurecli
             resources 
@@ -77,7 +77,7 @@ In your workbook, select **Edit** from the top toolbar.
             | project id
             ```
 
-    - Select **Save**.
+    1. Select **Save**.
 
 1. In the same **Add parameter** section, select **Add parameter** again.
 
@@ -87,10 +87,10 @@ In your workbook, select **Edit** from the top toolbar.
     1. In the **Get data from** section, select **Query**.
     1. In the **Subscriptions Log query** section:
 
-        - In the **Data source** field, select **Azure resource graph**.
-        - In the **Resource type** field, select **Subscription**.
-        - In the **Subscriptions** field, select the **Subscription** resource parameter.
-        - Enter the following query, and then select **Run Query**.
+        1. In the **Data source** field, select **Azure resource graph**.
+        1. In the **Resource type** field, select **Subscription**.
+        1. In the **Subscriptions** field, select the **Subscription** resource parameter.
+        1. Enter the following query, and then select **Run Query**.
 
             ```azurecli
             resources 
@@ -98,7 +98,7 @@ In your workbook, select **Edit** from the top toolbar.
             | project id
             ```
 
-    - Select **Save**.
+    1. Select **Save**.
 1. In the same **Add parameter** section, select **Add parameter** again.
 
     1. In the **Parameter name** field, enter **TimeRange**.
@@ -257,8 +257,8 @@ In your workbook, select **Edit** from the top toolbar.
     1. In the **Column renderer** field, select **Heatmap**.
     1. In the **Color palette** field, select **Blue**.
     1. Select **Custom formatting**.
-        - In the **Units** field, select **Count**.
-        - In the **Style** field, select **Decimal**.
+        1. In the **Units** field, select **Count**.
+        1. In the **Style** field, select **Decimal**.
     1. Select **Save and Close**.
 
 1. To make sure that the graphs display side by side, select **Style** on the top of the window, and then select the **Make this item a custom width** checkbox. Make sure that the **Percent width** is set to 50%.
