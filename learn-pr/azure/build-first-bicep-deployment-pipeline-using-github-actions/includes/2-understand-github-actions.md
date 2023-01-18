@@ -4,7 +4,7 @@ GitHub Actions is a feature of GitHub. GitHub also hosts the Git repositories yo
 
 ## What is a workflow?
 
-A workflow is a configurable repeatable process that is defined in a file, which is used to test and deploy your code. A workflow consists of all the steps, in proper order, that you need to execute.
+A workflow is a configurable repeatable process that's defined in a file, which is used to test and deploy your code. A workflow consists of all the steps, in proper order, that you need to execute.
 
 When you work with GitHub Actions, you define your workflow configuration in a YAML file. Because a workflow YAML file is a code file, the file is stored with your Bicep code in your Git repository in a folder named `.github/workflows`. A YAML file is a structured text file, similar to a Bicep structured text file. You can create and edit a YAML file with any text editor. In this module, you'll use Visual Studio Code as the editor. The GitHub web interface provides tools that you can use to view and edit your workflow YAML file, to collaborate on your workflow definition, and to manage different versions of your workflow file by using commits and branches.
 

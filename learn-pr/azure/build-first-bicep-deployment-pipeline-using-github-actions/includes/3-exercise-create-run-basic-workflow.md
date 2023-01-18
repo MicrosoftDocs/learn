@@ -126,7 +126,7 @@ You've created a workflow definition. GitHub Actions automatically detects your 
 
    :::image type="content" source="../media/3-run-workflow.png" alt-text="Screenshot of the GitHub interface showing the Actions tab, with the Run workflow dropdown and button selected." border="true":::
 
-1. The workflow begins to run. It might take a few moments, you can refresh the page, but it should automatically refresh and show you a queued or running or even already finished workflow run.
+1. The workflow begins to run. It might take a few moments and you can refresh the page, but it should automatically refresh and show you a queued or running or even already finished workflow run.
 
    :::image type="content" source="../media/3-workflow-running.png" alt-text="Screenshot of the GitHub interface showing the Actions tab, with one workflow running." border="true":::
 

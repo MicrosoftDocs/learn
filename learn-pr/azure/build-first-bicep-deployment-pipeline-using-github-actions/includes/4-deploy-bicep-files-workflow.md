@@ -57,7 +57,7 @@ Here's an example of how you can configure a step to use the `azure/arm-deploy` 
 
 The `azure/arm-deploy` action accepts several parameters, including:
 
-- `resourceGroupName`. The name of the resource group that you want to deploy the Bicep file to.
+- `resourceGroupName`. The name of the resource group where you want to deploy the resources that are defined in the Bicep file.
 - `template`. The path to the Bicep file in your repository. The path is relative to the repository's root.
 - `parameters`. Indicates any parameter values you provide at deployment time. In this example, we provide a value for the _environmentType_ parameter.
 
@@ -113,6 +113,6 @@ ${{ secrets.NAME_OF_THE_SECRET }}
 When your workflow starts, the runner that's running your deployment steps has access to the decrypted GitHub secret value. GitHub Actions is designed to not reveal secret values in your workflow logs.
 
 > [!TIP]
-> Just like Bicep parameters, you don't need to create variables for everything. It's a good idea to create variables for anything that might change between environments, and GitHub secrets for anything that is secret. Because the workflow will always use the same Bicep file, you don't need to create a variable for the path.
+> Just like Bicep parameters, you don't need to create variables for everything. It's a good idea to create variables for anything that might change between environments, and GitHub secrets for anything that's secret. Because the workflow will always use the same Bicep file, you don't need to create a variable for the path.
 
 In this module, you'll use GitHub secrets to store the information the `azure/login` task needs to sign in to Azure: your Azure AD subscription and tenant ID, and the workload identity's application registration ID.
