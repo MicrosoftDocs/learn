@@ -6,10 +6,10 @@
     WPS_NAME=<my-unique-name>
     ```
 
-1. Set a location for your resources based on the location of the automatically created resource group.
+1. Set a location for this module's Web PubSub and Static Web Apps resources. Examples: westus, eastus2, westeurope, eastasia.
 
     ```azurecli
-    LOC=$(az group list --query [].location --output tsv)
+    LOC=<region-name>
     ```
 1. Install or upgrade the *webpubsub* Azure CLI extension to the current version.
 
