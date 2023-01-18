@@ -19764,6 +19764,46 @@
       "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/8-explore-best-practices-for-module-6.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/2-enable-and-install.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/3-integration-between-linux-and-windows.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/4-create-website-with-node.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/5-vscode-integration.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/6-debug-express-app-with-vscode.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/7-manage-multiple-distributions.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
+      "redirect_document_id": true
     }
   ]
 }
