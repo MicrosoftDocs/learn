@@ -12,7 +12,7 @@ let greeting_reference = &greeting; // We borrow `greeting` but the string data 
 println!("Greeting: {}", greeting); // We can still use `greeting`
 ```
 
-In the above code, `greeting` was borrowed using the `&`. `greeting_reference` was of type `&String`. Since we only borrowed `greeting` and didn't move ownership, `greeting` could still be used after we created `greeting_reference`.
+In the previous code, `greeting` was borrowed by using the reference symbol (`&`). The variable `greeting_reference` was of type string reference (`&String`). Since we only borrowed `greeting` and didn't move ownership, `greeting` could still be used after we created `greeting_reference`.
 
 ## References in functions
 
@@ -72,18 +72,18 @@ fn change(text: &mut String) {
 }
 ```
 
-With `&` borrows, known as "immutable borrows," we can read the data but we can't change it. With `&mut` borrows, known as "mutable borrows," we can both read and write the data.
+With `&` borrows, known as "immutable borrows," we can read the data but we can't change it. With `&mut` borrows, known as "mutable borrows," we can both read and change the data.
 
 ## Borrowing and mutable references
 
-Now we get to the real core of Rust's memory management story. Immutable and mutable references differ in one other way that has radical effects on how we build our Rust programs. When borrowing a value of any type `T`, the following rules apply:
+Now we get to the real core of Rust's memory management story. Immutable and mutable references differ in one other way that has radical effects on how we build our Rust programs. When we borrow a value of any type `T`, the following rules apply:
 
 Your code must implement *either* of the following definitions, but **not both at the same time**:
 
 - One or more immutable references (`&T`)
 - Exactly one mutable reference (`&mut T`)
 
-The following code doesn't have allowed definitions, so the compilation fails:
+The following code doesn't have the allowed definitions, so the compilation fails:
 
 ```rust
 fn main() {
