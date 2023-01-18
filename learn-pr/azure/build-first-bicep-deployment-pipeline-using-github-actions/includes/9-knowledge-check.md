@@ -26,8 +26,8 @@ jobs:
         parameters: environmentType=${{ env.ENVIRONMENT }}
 ```
 
-When you execute your workflow you get the following error message:
+When you execute your workflow, you get the following error message:
 
-```
+```Output
 ERROR: An error occurred reading file. Could not find a part of the path '/home/runner/work/myrepo/myrepo/deploy/main.bicep'.
 ```
