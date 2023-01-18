@@ -3,6 +3,7 @@ uid: learn.dotnet-debug-visual-studio-app-service
 metadata:
   title: Remotely debug ASP.NET Core apps hosted on Azure App Service using Visual Studio
   description: 'Learn how to remotely debug your ASP.NET Core apps on Azure App Service directly using Visual Studio 2022.'
+  ms.custom: engagement-fy23
   ms.date: 12/20/2022
   author: alexwolfmsft
   ms.author: alexwolf
