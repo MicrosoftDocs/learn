@@ -14,15 +14,15 @@ During the process, you'll:
 
 1. In Visual Studio Code, open the _.github/workflows/workflow.yml_ file.
 
-1. After the line `name: deploy-toy-website` add the following code to prevent multiple simultaneous workflows runs:
+1. At the top of the file, after the line `name: deploy-toy-website` add the following code to prevent multiple simultaneous workflows runs:
 
    :::code language="yaml" source="code/8-workflow.yml" range="1-2" highlight="2" :::
 
 1. Remove the manual trigger, which is the line that currently reads `on: [workflow_dispatch]`.
 
-1. Add the following trigger definition in its place:
+1. Between `concurrency:` and `permissions:` add the following trigger definition:
 
-   :::code language="yaml" source="code/8-workflow.yml" range="4-9" :::
+   :::code language="yaml" source="code/8-workflow.yml" range="2-11" highlight="3-8":::
 
 1. Save your changes to the file.
 
