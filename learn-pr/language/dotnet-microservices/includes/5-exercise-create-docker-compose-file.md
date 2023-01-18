@@ -51,7 +51,7 @@ In this exercise, you'll create a Docker Compose YAML file, then use the Docker 
     docker-compose up
     ```
 
-1. After a bit of output, the website and web API will be running. You should see something similar to the output below:
+1. After a bit of output, the website and web API will be running. You should see something similar to the following output:
 
     ```bash
     Attaching to docker-aspnet-pizza_backend_1, docker-aspnet-pizza_frontend_1
