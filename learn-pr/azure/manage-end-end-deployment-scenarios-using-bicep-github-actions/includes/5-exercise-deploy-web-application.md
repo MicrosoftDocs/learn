@@ -34,15 +34,15 @@ Here, you add a new job definition that contains the steps required to build the
 
 1. Below the _jobs:_ line, before the _lint_ job, add a new job named _build_ that uses the reusable workflow you just defined:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="1-18" highlight="12-14" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="1-22" highlight="16-18" :::
 
 1. Update the _deploy-test_ job to depend on the new _build_ job:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="20-30" highlight="4" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="24-36" highlight="4" :::
 
 1. Update the _deploy-production_ job to also depend on the _build_ and _lint_ jobs.
 
-   :::code language="yaml" source="code/5-workflow.yml" range="34-41" highlight="4-7" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="38-53" highlight="4-7" :::
 
    Because the production deployment depends on the test deployment, you don't strictly need to specify the dependencies. But, it's a good practice to be explicit, to avoid your workflow running incorrectly if you reorder or remove your jobs or environments.
 
