@@ -82,7 +82,7 @@ Now, you need to update your _deploy_ job to take the value of the output from t
 
 1. In the _deploy_ job's definition, add a new output for the `appServiceAppName`:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="65-72" highlight="6" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="61-68" highlight="6" :::
 
    > [!NOTE]
    > When you start to work with your YAML file in Visual Studio Code, you might see some red squiggly lines telling you there's a problem. This is because the Visual Studio Code extension for YAML files sometimes incorrectly guesses the file's schema.
@@ -97,7 +97,7 @@ Now, you need to update your _deploy_ job to take the value of the output from t
 
 1. Below the _deploy_ job definition, and above the _smoke-test_ job definition, define a new job to deploy the website to App Service:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="93-109" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="89-105" :::
 
    > [!NOTE]
    > Be careful with the indentation of the YAML file, ensuring that the new job is indented at the same level as the `deploy` job. If you're not sure, copy the whole _deploy.yml_ file contents from the example in the next step.
@@ -112,7 +112,7 @@ Now, you need to update your _deploy_ job to take the value of the output from t
 
 1. Verify that your _deploy.yml_ file looks like the following example:
 
-   :::code language="yaml" source="code/5-deploy.yml" highlight="70, 93-109" :::
+   :::code language="yaml" source="code/5-deploy.yml" highlight="66, 89-105" :::
 
 1. Save your changes to the file.
 
