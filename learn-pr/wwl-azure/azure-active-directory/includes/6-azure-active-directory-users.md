@@ -1,6 +1,7 @@
 Add new users or delete existing users from your Azure Active Directory (Azure AD) tenant. To **add** or **delete** users, you must be a **User Administrator** or **Global Administrator**.
 
-\| **Note:** For information about **viewing** or **deleting** personal data, please review Microsoft's guidance on the Windows data subject requests for the **General Data Protection Regulation** (**GDPR**) site. For general information about GDPR, see the **GDPR section** of **the Microsoft Trust Center** and the **GDPR section of the Service Trust portal**.
+> [!NOTE]
+> For information about **viewing** or **deleting** personal data, please review Microsoft's guidance on the Windows data subject requests for the **General Data Protection Regulation** (**GDPR**) site. For general information about GDPR, see the **GDPR section** of **the Microsoft Trust Center** and the **GDPR section of the Service Trust portal**.
 
 ## Add a new user
 
@@ -9,10 +10,9 @@ You can create a new user for your organization or invite an external user from 
 1. Sign in to the **Azure portal** in the User Administrator role.
 1. Navigate to **Azure Active Directory** &gt; **Users**.
 1. Select either **Create new user** or **Invite external user** from the menu.
-
-:::image type="content" source="../media/azure-active-directory-users-page-8859e1b1.png" alt-text="Screenshot showing the Azure Active Directory Users Page.":::
-<br>
-
+    
+    :::image type="content" source="../media/azure-active-directory-users-page-8859e1b1.png" alt-text="Screenshot showing the Azure Active Directory Users Page.":::
+    
 1. On the **New User** page, provide the new user's information:
     
     
@@ -48,10 +48,12 @@ You can delete an existing user using the Azure Active Directory portal.
 1. Search for and select the user you want to delete from your Azure AD tenant.
 1. Select **Delete user**.
 
-## :::image type="content" source="../media/azure-active-directory-delete-a-user-page-55025973.png" alt-text="Screenshot showing azure active directory delete a user page."::: 
+:::image type="content" source="../media/azure-active-directory-delete-a-user-page-55025973.png" alt-text="Screenshot showing azure active directory delete a user page.":::
+
 
 The user is deleted and no longer appears on the **Users** \- **All users** page. The user can be seen on the **Deleted users** page for the next **30 days** and can be restored during that time.
 
 When a user is deleted, any licenses consumed by the user are made available for other users.
 
-\| **Note:** To update the identity, contact information, or job information for users whose source of authority is Windows Server Active Directory, you must use Windows Server Active Directory. After you complete the update, you must wait for the next synchronization cycle to complete before you see the changes.
+> [!NOTE]
+> To update the identity, contact information, or job information for users whose source of authority is Windows Server Active Directory, you must use Windows Server Active Directory. After you complete the update, you must wait for the next synchronization cycle to complete before you see the changes.
