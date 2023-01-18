@@ -5,7 +5,7 @@ metadata:
   description: "Learn about the database services that are available on Microsoft Azure, such as Azure Cosmos DB, Azure SQL Database, Azure SQL Managed Instance, Azure Database for MySQL, Azure Database for PostgreSQL, as well as big data and analytics. (AZ-900)"
   ms.date: 05/10/2022
   author: wwlpublish
-  ms.author: rknapp
+  ms.author: robbarefoot
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore Azure database and analytics services
