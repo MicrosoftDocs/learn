@@ -34,7 +34,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
    This file will represent all of the deployment activities that run for each of your environments.
 
-1. Paste the following workflow name, trigger, permissions, inputs, and secrets into the file:
+1. Paste the following workflow name, trigger, inputs, and secrets into the file:
 
    :::code language="yaml" source="code/5-deploy.yml" range="1-18" :::
 
@@ -49,7 +49,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. Below the secrets, paste the definition of the validation job:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="21-50" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="20-50" :::
 
    Notice that a condition is applied to the jobs. The preflight validation runs only for non-production environments. The what-if operation runs only for the production environment. In the previous module in the learning path, you used separate jobs for these operations, but here you combine them to simplify the workflow.
 
@@ -73,8 +73,6 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 ## Update the workflow definition to use the templates
 
 1. Open the *workflow.yml* file in the *.github/workflows* folder.
-
-1. Remove the `permissions` section. Your *deploy.yml* file declares the permissions your workflow needs now.
 
 1. Remove the contents of the `env:` section, including the two environment variables. You'll replace these with environment-specific variables soon.
 

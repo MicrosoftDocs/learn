@@ -44,7 +44,7 @@ You decide to store the API keys in GitHub secrets, to ensure they're protected 
 
 1. Update the `deploy` job to include the new deployment parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="64-86" highlight="25-26" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="61-86" highlight="25-26" :::
 
 1. Save your changes to the file.
 
