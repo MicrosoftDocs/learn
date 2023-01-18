@@ -33,10 +33,15 @@ subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribu
   - cloud-computing
 units:
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.introduction
-- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.prepare
-- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise
-- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise
-- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise
+- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.roles-and-responsibilities
+- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-deploy-configure-environment
+- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-fix-duplicate-records
+- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-incrementally-increase-readiness
+- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-interact-with-cluedin-data
+- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-simulate-a-change
+- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-simulate-production-environment
+- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-streaming-data
+- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-validate-microsoft-purview-scan
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.knowledge-check
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.summary
 badge:

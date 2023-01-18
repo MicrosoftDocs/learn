@@ -1,62 +1,17 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Microsoft Azure provides us with the ability to compose many difference native Azure Services into an end to end data estate. As part of this, we need to provide technical solutions to the different pillars of data management that allow us to provide our businesses and customers with easy to access, high quality, compliant data that is ready for insight. 
 
-    Goal: orient the learner to the area covered in this module
+We have great existing services within the Azure ecosystem for storing, processing and generating insights from a large amount and high velocity of data. A critical part of this pipeline of data is that we are serving up data to the business and our customers with a high level of operational usability and readiness. This requires that we make this data discoverable, easy to access - but also we have made the data easy to work with and at a level of quailty and governance that makes the end users feel more than comfortable in utilising this data for their downstream insights and innovation. 
 
-    Heading: none
+Suppose you work for a large B2B consumer goods company and you are wanting to provide your own employees with a self-service way to utilse, discover and build insights out of the data that is scattered across the different operational systems in your business. By now you have probably amassed a lot of legacy systems, but the data inside of it is still rich with opportunity. Our job it to make sure we are surfacing this data, and the data from all non-legacy systems in a way that abstracts away the complexity and promotes the open and creative use of this data to solve day to day, but long-term strategic pieces of the company goals and KPI's. 
 
-    Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
+Throughout this module and the associated learning path, you'll follow a scenario and be provided with a hands-on sandbox as to simulate the aforementioned technology stack. There's a complete learning path dedicated to exploring each piece of the architecture below. In this module, you'll create and deploy a data technology stack where we will be able to share high quality data, with the required services around it, to drive downstream systems with data that will be ready to generate insights in an accelerate fashion. 
 
-    Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
+You will have the option to use your language of choice (.net, Python, Node.js) as well as work with the following technology stack:
 
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
--->
-TODO: add your topic sentences(s)
-TODO: add a visual element
+ - ADLSv2
+ - Microsoft Purview
+ - Azure Event Hub
+ - Azure Functions
+ - CluedIn
 
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
-
-    Goal: describe the real-world scenario this module will use to illustrate the concepts
-
-    Heading: "## Example scenario"
-
-    Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
-
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=main#images)
-
-    Optional: a "scenario video" that visualizes the scenario
-
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-    [Scenario video guidance](TBD)
- -->
-## Example scenario
-TODO: add your scenario
-TODO: add a visual element
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
-
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
-
-    Heading: "## What will we be doing?"
-
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
-
- -->
-## What will we be doing?
-TODO: add your activities
-
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
-
-    Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
-
-    Heading: "## What is the main goal?"
-
-    Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
-
- -->
-## What is the main goal?
-By the end of this session, you'll be able to (TODO)
-
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+By the end of this module, you'll be able to build a recommended data management landing zone, as described in the Azure Common Fundamentals Framework that encapsulates Data Governance, Master Data Management, Data Quality and Data Integration.
