@@ -7,7 +7,6 @@ Let statements allow for the creation of variables to be used in later statement
 ```kusto
 let timeOffset = 7d;
 let discardEventId = 4688;
-
 SecurityEvent
 | where TimeGenerated > ago(timeOffset*2) and TimeGenerated < ago(timeOffset)
 | where EventID != discardEventId
