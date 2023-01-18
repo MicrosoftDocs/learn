@@ -125,4 +125,4 @@ Cloud: You can write Conditional Access policies for any Azure AD integrated app
 
 On-premises: This is not possible without device writeback. If the application is integrated with ADFS (2012 or higher) then you can write claim rules to check for the device status and then provide access only if the "is managed " claim is present. In order to issue this claim, ADFS will check for the device object in the "Registered Devices" container and then issue the claim accordingly.
 
-Windows Hello For Business (WHFB) requires device writeback to in Hybrid- Federated scenarios.
+Windows Hello For Business (WHFB) requires device writeback to function in Hybrid and Federated scenarios.
