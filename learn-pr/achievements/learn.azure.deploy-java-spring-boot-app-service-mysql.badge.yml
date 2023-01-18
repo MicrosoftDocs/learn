@@ -1,5 +1,7 @@
 ### YamlMime:AchievementDetail
 achievementUid: learn.azure.deploy-java-spring-boot-app-service-mysql.badge
 metadata:
-  title: 'Microsoft Badge: Deploy a Spring Boot app to Azure was issued by Microsoft'
+  title: >-
+    Microsoft Badge: Deploy a Spring Boot app to Azure App Service was issued by
+    Microsoft
 socialImageUrl: /training/achievements/deploy-java-spring-boot-app-service-mysql-social.png

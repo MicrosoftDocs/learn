@@ -1,7 +1,5 @@
 ### YamlMime:AchievementDetail
 achievementUid: learn.javascript-on-azure.deploy-expressjs-app-service.badge
 metadata:
-  title: >-
-    Microsoft Badge: Deploy Express.js to Azure App Service was issued by
-    Microsoft
-socialImageUrl: /training/achievements/generic-badge-social.png
+  title: 'Microsoft Badge: Deploy Node.js to Azure App Service was issued by Microsoft'
+socialImageUrl: /training/achievements/js-data-web-app-to-azure-app-service-social.png

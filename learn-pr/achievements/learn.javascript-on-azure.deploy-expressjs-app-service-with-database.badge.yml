@@ -2,6 +2,6 @@
 achievementUid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.badge
 metadata:
   title: >-
-    Microsoft Badge: Deploy Express.js web app with MongoDB database to Azure
-    App Service was issued by Microsoft
+    Microsoft Badge: Deploy Node.js server with MongoDB database to Azure App
+    Service was issued by Microsoft
 socialImageUrl: /training/achievements/generic-badge-social.png

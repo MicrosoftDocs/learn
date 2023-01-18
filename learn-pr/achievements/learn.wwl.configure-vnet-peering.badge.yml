@@ -1,5 +1,7 @@
 ### YamlMime:AchievementDetail
 achievementUid: learn.wwl.configure-vnet-peering.badge
 metadata:
-  title: 'Microsoft Badge: Configure virtual network peering was issued by Microsoft'
+  title: >-
+    Microsoft Badge: Configure Azure Virtual Network peering was issued by
+    Microsoft
 socialImageUrl: /training/achievements/vnet-configure-peering-social.png
