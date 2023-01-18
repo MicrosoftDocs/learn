@@ -4,9 +4,9 @@ hidden: true
 metadata:
   title: Deploy an Azure Private 5G Core service
   description: "Describes Azure Private 5G Core deployment tasks, including prerequisites, deployment methods, and creating mobile network and site."
-  ms.date: 28/11/2022
+  ms.date: 01/18/2023
   author: ArchanaUpadhyaya
-  ms.author: archanau@microsoft.com
+  ms.author: archanau
   ms.topic: interactive-tutorial
   ms.service: learning-private-5g-core
 title: Deploy an Azure Private 5G Core service

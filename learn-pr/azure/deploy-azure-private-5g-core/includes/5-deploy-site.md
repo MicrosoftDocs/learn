@@ -37,19 +37,19 @@ When you deploy a site, the following are deployed automatically:
      - Ensure **AKS-HCI** is selected in the **Platform** field.
      - Use the information you [collected in Collect access network values](/azure/private-5g-core/collect-required-information-for-a-site) to fill out the fields in the **Access network** section. 
   1. In the **Attached data networks** section, select **Attach data network**. Select whether you want to use an existing data network or create a new one, then use the information you collected in [Collect data network values](/azure/private-5g-core/collect-required-information-for-a-site) to fill out the fields. Once you've finished filling out the fields, select **Attach**.
-     :::image type="content" source="../media/attach-data-networks.png" alt-text="attach-data-networks":::
+     :::image type="content" source="../media/attach-data-networks.png" alt-text="This screen displays the attach data networks section in the site creation page.":::
   1. Repeat the previous step for each additional data network you want to configure. 
   1. If you decided, you want to provide a custom HTTPS certificate in [Collect local monitoring values](/azure/private-5g-core/collect-required-information-for-a-site), select **Next : Local access >**. If you decided not to provide a custom HTTPS certificate at this stage, you can skip this step. Under **Provide custom HTTPS** **certificate?** select **Yes**.
      Use the information you collected in [Collect local monitoring values](/azure/private-5g-core/collect-required-information-for-a-site) to select a certificate.
 
      Access to the distributed tracing and packet core dashboards is secured by HTTPS. You can use a self-signed certificate or provide your own to authenticate access to your local diagnostics tools. We recommend providing a certificate signed by a globally known and trusted certificate authority (CA) for additional security in your deployment.
-     :::image type="content" source="../media/local-access.png" alt-text="local-access":::
+     :::image type="content" source="../media/local-access.png" alt-text="This screen displays the local access section in the site creation page.":::
   1. Select Submit.
   1. Select **Review + create**.
   1. Azure will now validate the configuration values you've entered. You should see a message indicating that your values have passed validation.
-     :::image type="content" source="../media/validation-site.png" alt-text="validation-site":::
+     :::image type="content" source="../media/validation-site.png" alt-text="This screen displays the site validation complete message.":::
   1. Once your configuration has been validated, you can select **Create** to create the site. The Azure portal displays the following confirmation screen when the site is created.  This process may take a few minutes based on factors such as the region selected, the edge location, and the internet access speed.
-     :::image type="content" source="../media/site-deployment-complete.png" alt-text="site-deployment-complete":::
+     :::image type="content" source="../media/site-deployment-complete.png" alt-text="This image provides the details on the successful site deployment.":::
 
 **Select Go to resource group**, and confirm that it contains the following new resources:
 

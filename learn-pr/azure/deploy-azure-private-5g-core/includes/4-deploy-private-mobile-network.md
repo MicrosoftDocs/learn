@@ -114,7 +114,7 @@ Under Enter encryption details for SIM group, set Encryption type to your chosen
 
 1. Once the configuration has been validated, select **Create** to create the mobile networks resource and any SIM resources.
 1. The Azure portal deploys the resources into your selected resource group. You'll see the following confirmation screen when your deployment is complete:
-   :::image type="content" source="../media/deployment-complete.png" alt-text="Deployment-complete":::
+   :::image type="content" source="../media/deployment-complete.png" alt-text="A screen that indicates the creation of the mobile network is complete.":::
 
    > [!NOTE]
    > Every deployment, success or failure, will have a correlation id.  The correlation id is an id for the log which will help the support team analyse the reason for failure.
@@ -126,4 +126,4 @@ You can now validate the mobile network created:
 - A **SIM group** resource (if you provisioned SIMs).
 
 - **Service**, **SIM Policy**, **Data Network**, and **Slice** resources (if you decided to use the default service and SIM policy).
-   :::image type="content" source="../media/validate-resources.png" alt-text="validate-resources":::
+   :::image type="content" source="../media/validate-resources.png" alt-text="A screen that provides information about the resource validation.":::
