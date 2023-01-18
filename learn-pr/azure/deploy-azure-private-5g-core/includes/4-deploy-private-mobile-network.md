@@ -1,9 +1,9 @@
 ## Create a private mobile network
 
-In this section, lets learn:
+In this section, let's learn:
 
-- the prerequisites for creating a mobile network.
-- deployment procedure for creating a mobile network.
+- The prerequisites for creating a mobile network.
+- Deployment procedure for creating a mobile network.
 
 ### Prerequisites for creating a mobile network using Azure portal
 
