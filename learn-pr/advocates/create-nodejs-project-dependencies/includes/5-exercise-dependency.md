@@ -59,7 +59,7 @@ You're given some code that parses an address from a string. Your task should be
 
 1. In the terminal, create a new folder named **\_\_tests\_\_**.
     > [!NOTE]
-    > Make sure that you use double underscores when you create the *tests* folder.
+    > Make sure that you use double underscores when you create the *\_\_tests\_\_* folder.
 
 1. In the \_\_tests\_\_ folder, create a file named **address-parser.js**, and then add the following content to the file:
 
