@@ -1,92 +1,19 @@
-<!-- 1. Scenario sub-task --------------------------------------------------------------------------------
+Exercise - Incrementally increase the readiness of the data. 
 
-    Goal: Describe the part of the scenario covered in this exercise.
+We are off to a good start where the data is merging and linking. We still have quite a way to go before this data is of better quality, but the downstream consumers can already start. 
 
-    Heading: none
+CluedIn was designed that you can decided to improve the data in any order that you want. For example, we could either enrich data first and deduplicate the data afterwards or we could clean the data first and then deduplicate the data and then enrich the data afterwards. Once again, this speaks to the agility of the platform that we do not have to run things in a classic waterfall approach where one part of the story must be done before we can start the next. 
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+The first step in knowing what to do, is probably to get some idea of what is wrong in the first place. Click on the Data Quality menu option in which you will discover CluedIn's inbuilt Data Quality metrics scoring the data across 17 different dimenions. This is a great place to start. You can see that overall, the completes of all the data in CluedIn is not great. This would tell us that we have many records that are missing values. Although not required, this is a place to start. 
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+For this, there are a couple of tools I can use to fix this incompleteness:
 
-<!-- 2. Task performed in the exercise ---------------------------------------------------------------------
+ - I could expose the data to a 3rd party tool like Azure Functions, Azure Databricks and they can take an engineering approach to it. 
+ - I could use the inbuilt enrichers of CluedIn that may be able to use 3rd party data brokers to complete the data. 
+ - I can use the Data Stewarding Tools in CluedIn, and manually complete the data or use sophisticated techniques to have completes of data suggested to me. 
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+ As always, the good news, is that there is no required option above, you could do one approach or all approaches and in any order that you want. However it is worth mentioning that based off the data, in practice, to minimise the amount of manual analysis and work, it does pay off to do one process before the other. For example, we may have a record that is missing it's twitter and linkedin profile and it is because there is a data quality issue with the website url we have in the data. We could either manually enter the linkedIn and Twitter profile in the stewarding tool, or if we just fixed the website url issue, then the enrichers in CluedIn would be able to automatically enrich those values for me. In saying that, if we found that we were missing the LinkedIn and Twitter profiles, but we did have a VAT Number, then chances are that external services would not only provide us with the LinkedIn and Twitter profile, but would automatically correct our website url issue.
 
-    Heading: a separate heading is optional; you can combine this with the scenario sub-task into a single paragraph
+ What is most important is that no matter how I apply or make these changes, the ADLSv2 will be automatically updated in real time with these changes as well. 
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
-
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
-
-<!-- 3. Chunked steps -------------------------------------------------------------------------------------
-
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 4. Validation -------------------------------------------------------------------------------------------
-
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. This feedback is critical for learning.
-
-    Structure:
-        1. H2 of "Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
-
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+ NOTE: If the idea of automatic, downstream changes seems scary to you, do know that filters can be setup on the streams to only allow data to leave the platform if it meets certain requirements. 

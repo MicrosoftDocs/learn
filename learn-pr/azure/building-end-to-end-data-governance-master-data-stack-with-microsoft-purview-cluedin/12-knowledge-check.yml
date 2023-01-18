@@ -22,6 +22,43 @@ durationInMinutes: 1
 ###  - No "Not" or "Except" in questions
 ###  - No second person ("you") in the questions or answers
 ###  - Provide a meaningful explanation for both correct and incorrect answers
+### Knowledge check
+### 
+### 1. What is the main value proposition of Purview?
+### 
+### Option 1
+### Option 2
+### Option 3
+### Option 4
+### 
+### 2. What is being done in CluedIn that couldn't just be done in Azure Data Factory?
+### 
+### Option 1
+### Option 2
+### Option 3
+### Option 4
+### 
+### 3. Why would I want my downstream consumers to be thinking in Domains instead of Assets?
+### 
+### Option 1
+### Option 2
+### Option 3
+### Option 4
+### 
+### 4. Why would I not just join this data together in Azure Data Factory?
+### 
+### Option 1
+### Option 2
+### Option 3
+### Option 4
+### 
+### 
+### 5. Why would I not just use Azure Synapse, Azure Databricks and Notebooks to standardise, merge and link this data?
+### 
+### Option 1
+### Option 2
+### Option 3
+### Option 4
 ###
 ###########################################################################
 content: |

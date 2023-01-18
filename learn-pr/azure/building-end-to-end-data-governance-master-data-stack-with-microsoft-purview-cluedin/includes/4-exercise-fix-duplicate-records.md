@@ -1,92 +1,9 @@
-<!-- 1. Scenario sub-task --------------------------------------------------------------------------------
+Exercise - Fixing Duplicate Records
 
-    Goal: Describe the part of the scenario covered in this exercise.
+One of the values of a system like CluedIn is that it builds golden records. Golden records are essentially an amalugumation of many records from across one or more sources that are essentially the same semantic entity. For example, if you have ever heard the term "Single View of Customer" then essentially you could imagine that all the information you have on a particular Customer would be pieced together from different systems and in many cases, each system might have a representation of the same value - sometimes it might be the same, sometimes it will not be. It is the role of CluedIn to interrogate this and automatically blend this data together so instead of having the "Microsoft" customer record in Dynamics CRM and the "Microsoft Corporate" record from Office 365, that we just have one record merged together, with a lineage of what values came from Dynamics CRM and which values came from Office 365. In addition to this, it is the responsiblity of CluedIn to manage the merge conflicts when Dynamics CRM is saying that the company website is https://www.microsoft.com and Office 365 is saying http://microsoft.com. Essentially both values are correct, but we need to choose which one we want to represent the final composed record that we will send to the downstream systems. Despite this, CluedIn will always maintain a history of all values and this can also be made available to the downstream consumers as well.  
 
-    Heading: none
+With mainy Domains of data, there is more available and public experience in determining why two "Companies" might be the same company when they do not have a unique way to overlap or merge them. The same cannot also be said for non-common domains or even propritery domains. Hence there is a need to essentially influence the platform on what properties should play a role on a Domain, in determining if records are a duplicate or not. 
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+Deduplication in CluedIn is an iterative and cyclical process, in that if you have cleaner and more enriched data, then typically the deduplication can be more confident in its mergers. So the advice here is that you should only merge records with high confidence and it is ok and sometimes even recommended that you wait to have more data or cleaner data before committing to a merge. In saying that you can always undo merges if you find later on that they were done incorrectly. 
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
-
-<!-- 2. Task performed in the exercise ---------------------------------------------------------------------
-
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
-
-    Heading: a separate heading is optional; you can combine this with the scenario sub-task into a single paragraph
-
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
-
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
-
-<!-- 3. Chunked steps -------------------------------------------------------------------------------------
-
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 4. Validation -------------------------------------------------------------------------------------------
-
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. This feedback is critical for learning.
-
-    Structure:
-        1. H2 of "Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
-
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+The process of detecting duplicates is about first of all getting a list of possible duplicates and then going through a process of merging and survirorship. The surviroship in CLuedIn can either be automated or manual. When the Auto-Select is chosen, it will fall back to using the default Golden Record Evaluator. If not selected then you can manually choose which properties from which records will make its way to the Golden Record. Once again, you can always undo this at a later point if necessary. 

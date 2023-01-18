@@ -1,92 +1,35 @@
-<!-- 1. Scenario sub-task --------------------------------------------------------------------------------
+Exercise - Deploy and Configure the environment. 
 
-    Goal: Describe the part of the scenario covered in this exercise.
+This module requires a sandbox to complete. A sandbox gives you access to free resources. Your personal subscription will not be charged. The sandbox may only be used to complete training on Microsoft Learn. Use for any other reason is prohibited, and may result in permanent loss of access to the sandbox.
 
-    Heading: none
+Microsoft provides this lab experience and related content for educational purposes. All presented information is owned by Microsoft and intended solely for learning about the covered products and services in this Microsoft Learn module. 
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+Setting up your environment and deploying some resources to start with is an important step in building full stack applications. For providing an end to end data technology stack we will be creating many resources and integrating them together as to provide a steady and robust flow of high quality data. In this exercise you will deploy some foundational services that you'll use in the future exercises. This exercise includes setting up your ADLSv2 instance and your Microsoft Purview instance. 
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+Configure your environment with Visual Studio Code
+In order to complete the exercises, you'll need to configure your environment. If you already have these components installed and configured, you don't need to repeat the steps.
 
-<!-- 2. Task performed in the exercise ---------------------------------------------------------------------
+Download and install Visual Studio Code.
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+Download and install the Azure Functions Core Tools.
 
-    Heading: a separate heading is optional; you can combine this with the scenario sub-task into a single paragraph
+In Visual Studio Code, install the following extensions:
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+Azure Account: This extension allows you to authenticate to Azure.
+Azure Functions: This extension allows you to manage Azure Functions.
+GitHub Pull Requests and Issues: This extension allows you to authenticate to GitHub and manage repositories.
+Azure Resources: This extension allows you to manage Azure resources.
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+Sign in to GitHub with your GitHub account and navigate to this repository. In the top-right corner of your browser, select the Fork button.
 
-<!-- 3. Chunked steps -------------------------------------------------------------------------------------
+On the same page, select Code and copy the HTTPS Clone URL, for example, https://github.com/<github-username>/serverless-full-stack-apps-azure-sql.git.
 
-    Goal: List the steps they'll do to complete the exercise.
+Back in Visual Studio Code, select Source Control > ... > Clone and enter the URL copied in a previous step. Select the location you would like the repository to be copied locally.
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+In Visual Studio Code, select File > Open folder and navigate to the location where you cloned the repository. This step will open the folder in your Visual Studio Code session.
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+Select the Explorer blade from the left-hand taskbar. Confirm that you see the repository files.
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+Deploy Azure components with Powershell
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 4. Validation -------------------------------------------------------------------------------------------
-
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. This feedback is critical for learning.
-
-    Structure:
-        1. H2 of "Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
-
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+It is possible to do this all through the user interace of the Azure Portal as all of the required resources can be installed directly from the Azure Marketplace or as a first class citizen of Azure. 

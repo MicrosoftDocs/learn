@@ -40,6 +40,7 @@ units:
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-interact-with-cluedin-data
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-simulate-a-change
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-simulate-production-environment
+- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.integrating-deployed-technologies
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-streaming-data
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-validate-microsoft-purview-scan
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.knowledge-check

@@ -1,3 +1,22 @@
+Building an end to end Data Governance and Master Data stack with Microsoft Purview and CluedIn. 
+
+In the language of your choice, deploy a data technology stack that provides Data Governance, Data Quality, Data Lineage, Data Enrichment and Data Standardisation layers to your Azure ecosystem. Combining the power of Microsoft Purview, Azure Data Factory and CluedIn into a powerhouse of Data Governance and Data Quality. This data pipeline will surface high quality and ready-for-insight data to downstream systems such as Azure Synapse, Power BI, Azure Databricks and more. 
+
+Learning Objectives
+
+By the end of this module, you will be able to:
+
+ - Setup automated scans on an ADLS2 Data Lake into Microsoft Purview. 
+ - Setup automted data piplines from Azure Data Factory to CluedIn through assets registers in Microsoft Purview. 
+ - Stream data from CluedIn to ADLS2.
+ - Standardise, Clean, Deduplicate and Enrich your Data in CluedIn. 
+
+ Prerequisites
+
+  - Ability to navigate the Azure Portal
+  - Familiarity with Azure Data Factory
+  - Familiarity with high-level concepts of Microsoft Purview
+
 Microsoft Azure provides us with the ability to compose many difference native Azure Services into an end to end data estate. As part of this, we need to provide technical solutions to the different pillars of data management that allow us to provide our businesses and customers with easy to access, high quality, compliant data that is ready for insight. 
 
 We have great existing services within the Azure ecosystem for storing, processing and generating insights from a large amount and high velocity of data. A critical part of this pipeline of data is that we are serving up data to the business and our customers with a high level of operational usability and readiness. This requires that we make this data discoverable, easy to access - but also we have made the data easy to work with and at a level of quailty and governance that makes the end users feel more than comfortable in utilising this data for their downstream insights and innovation. 
