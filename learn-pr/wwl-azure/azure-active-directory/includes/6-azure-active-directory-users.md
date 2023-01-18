@@ -48,7 +48,7 @@ You can delete an existing user using the Azure Active Directory portal.
 1. Search for and select the user you want to delete from your Azure AD tenant.
 1. Select **Delete user**.
 
-:::image type="content" source="../media/azure-active-directory-delete-a-user-page-55025973.png" alt-text="Screenshot showing azure active directory delete a user page.":::
+:::image type="content" source="../media/azure-active-directory-delete-a-user-page-55025973.png" alt-text="Screenshot showing Azure active directory delete a user page.":::
 
 
 The user is deleted and no longer appears on the **Users** \- **All users** page. The user can be seen on the **Deleted users** page for the next **30 days** and can be restored during that time.
