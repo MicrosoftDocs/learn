@@ -1,6 +1,6 @@
 When you create a virtual network gateway, you need to specify the gateway SKU to use. Select a SKU that meets your business requirements. Consider criteria such as the types of workloads you need to support, your expected throughputs, the necessary features, and your desired SLAs.
 
-The following tables provide sample gateway SKUs that are available for implementation. Because the Basic SKU is considered a legacy SKU, samples aren't shown for this option. The tables identify the following information for each SKU type:
+The following tables provide sample gateway SKUs that are available for implementation. Because the Basic SKU is considered a legacy SKU, samples aren't shown for this option. The tables identify the following information for each SKU type and generation:
 
 - **Tunnels**: The maximum number of site-to-site (S2S) and Net-to-VNet tunnels that can be created for the SKU. 
 
@@ -10,7 +10,7 @@ The following tables provide sample gateway SKUs that are available for implemen
 
 For the most current SKU information, consult the [Azure VPN Gateway documentation](/azure/vpn-gateway/vpn-gateway-about-vpngateways). 
 
-## Generation 1
+### Generation1
 
 | SKU | Tunnels | Connections | Benchmark | 
 | --- | --- | --- | --- |
@@ -18,7 +18,7 @@ For the most current SKU information, consult the [Azure VPN Gateway documentati
 | VpnGw2/Az | Max. 30 | Max. 500 | 1.0 Gbps |
 | VPNGw3/Az | Max. 30 | Max. 1000 | 1.25 Gbps |
 
-## Generation 2
+### Generation2
 
 | SKU | Tunnels | Connections | Benchmark | 
 | --- | --- | --- | --- |
