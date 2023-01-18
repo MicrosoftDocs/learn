@@ -67,11 +67,11 @@ Over time, if you realize you need more compute power to keep up with demand, yo
 
 1. From **Home**, or in **Azure Services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. Under **Categories**, select **Databases** and in the results, select **SQL Database**. The **Create SQL Database** pane appears.
+1. Under **Categories**, select **Databases** and in the results, select **SQL Database**.
 
    :::image type="content" source="../media/3-create-db.png" alt-text="Screenshot showing Create a resource pane with Databases in menu and SQL Database resource service highlighted.":::
 
-1. On the **Basics** tab, enter the following values for each setting.
+1. The **Create SQL Database** pane appears. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
