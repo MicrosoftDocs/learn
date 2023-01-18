@@ -40,11 +40,11 @@ You decide to store the API keys in GitHub secrets, to ensure they're protected 
 
 1. In the `validate` job, update the steps to include the new deployment parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="29-63" highlight="21-22, 33-34" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="25-59" highlight="21-22, 33-34" :::
 
 1. Update the `deploy` job to include the new deployment parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="65-90" highlight="25-26" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="61-86" highlight="25-26" :::
 
 1. Save your changes to the file.
 
@@ -54,7 +54,7 @@ You decide to store the API keys in GitHub secrets, to ensure they're protected 
 
 1. Add the `reviewApiUrl` inputs, and the `reviewApiKey` secrets, for each environment:
 
-   :::code language="yaml" source="code/7-workflow.yml" highlight="23, 28, 37, 42" :::
+   :::code language="yaml" source="code/7-workflow.yml" highlight="27, 32, 41, 46" :::
 
 1. Save your changes to the file.
 
