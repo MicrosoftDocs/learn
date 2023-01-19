@@ -1,6 +1,6 @@
 Your company is implementing Azure ExpressRoute and Azure Virtual WAN to provide their connection services. You're working on the configuration to enable private and secure connections between on-premises locations and Azure. For other locations, you need to support a global transit network architecture. A few teams have submitted configuration requirements and questions for your consideration:
 
-- The infrastructure team has requested a detailed overview of how Azure ExpressRoute enables different types of connections. 
+- The infrastructure team needs an overview of how Azure ExpressRoute enables different connections. 
 
 - The website admins want to simplify their complex hub-and-spoke virtual network WAN deployment.
 

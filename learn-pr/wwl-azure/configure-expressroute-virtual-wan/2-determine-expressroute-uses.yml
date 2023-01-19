@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-expressroute-virtual-wan.determine-expressroute-uses
-title: Determine ExpressRoute uses
+title: Determine Azure ExpressRoute uses
 metadata:
-  title: Determine ExpressRoute uses
-  description: "Determine ExpressRoute uses"
-  ms.date: 03/29/2022
+  title: Determine Azure ExpressRoute uses
+  description: "Explore the features and usage cases for Azure ExpressRoute."
+  ms.date: 01/23/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
