@@ -10,6 +10,8 @@ In this module, you identified features and usage cases for ExpressRoute. You di
 
 - Peruse [Azure Virtual WAN documentation](/azure/virtual-wan/).
 
+- Find [partners that support connectivity automation with Azure Virtual WAN VPN](/azure/virtual-wan/virtual-wan-locations-partners).
+
 ## Learn more with self-paced training
 
 - Complete an [introduction to Azure ExpressRoute](/training/modules/intro-to-azure-expressroute/).
