@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/05/2023
+  ms.date: 01/19/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "It tells computers what a person is allowed to do."
       isCorrect: false
-      explanation: "This isn't correct. This is a feature of authorization."
+      explanation: "Providing permissions for the user is authoization, not authentication."
     - content: "It lets a person know that a computer has not been hacked."
       isCorrect: false
-      explanation: "Try again. Authentication is mainly about the user, not the computer."
+      explanation: "Authentication is mainly about the user, not the computer."
     - content: "It tells the computer that a person is allowed to use it."
       isCorrect: true
-      explanation: "You got it. Authentication tells a computer that the user is allowed to use it."
+      explanation: "Authentication tells a computer that the user is allowed to use it."
   - content: "Which technology enables a user to sign in to one service and have their authentication passed through to another service?"
     choices:
     - content: "Two-factor authentication"
       isCorrect: false
-      explanation: "Not correct. Two-factor authentication or 2FA provides additional verification of a user."
+      explanation: "Two-factor authentication (2FA) provides more secure verification of a user using multiple factors."
     - content: "Biometric authentication"
       isCorrect: false
-      explanation: "That's incorrect. Biometrics provide additional security but don't, by themselves, pass through authentication."
+      explanation: "Biometrics provide additional security but don't pass through authentication to another service."
     - content: "Single sign-on"
       isCorrect: true
-      explanation: "That's right. Single sign-on enables a user to sign in to one service and have their authentication passed through to another."
+      explanation: "Single sign-on enables a user to sign in to one service and have their authentication passed through to another."
   - content: "Which of the following could be an example of a phishing attack?"
     choices:
     - content: "A computer system asks a person to verify themselves with a password and a code"
       isCorrect: false
-      explanation: "That's not correct. This is called two-factor authentication and is a way of keeping you safer."
+      explanation: "This is called two-factor authentication and is a way of keeping you safer."
     - content: "A system authenticates a person but doesn't authorize them to do something"
       isCorrect: false
-      explanation: "This isn't right. A system can let a person in (authenticate) but restrict access (not authorize). This is a way to keep people and resources safe."
+      explanation: "A system can let a person in (authenticate) but restrict access (not authorize). This is a way to keep people and resources safe."
     - content: "An email that appears to come from a trusted sender directs the user to an untrusted site"
       isCorrect: true
-      explanation: "You got it. In general, emails from a sender will only direct to websites that are owned and operated by that sender. When this doesn't happen, it could be phishing."
+      explanation: "In general, emails from a sender will only direct to websites that are owned and operated by that sender. When this doesn't happen, it could be phishing."

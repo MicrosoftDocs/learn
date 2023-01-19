@@ -1,6 +1,6 @@
-Passwords have been used for decades. The big problem is that they're only as secure as the password themselves. A password like `123abc` is not secure at all. It's easy to guess (and easy to remember, which is why people use it). People also use birthdays and favorite colors for passwords. These aren't very safe. So passwords have gotten a lot of criticism.
+Passwords have been used for decades. With passwords, the information and systems the password protects is only as secure as the actual password. A password like `123abc` is easy to remember (which is why people use it), but it's also easy to guess. Easy to guess or crack passwords are insecure. People also use birthdays and favorite colors for passwords. These aren't secure passwords either. So passwords have gotten a lot of criticism.
 
-Using fingerprints and faces to authenticate a user is a lot more secure. These methods are being used more. But another way has gotten very popular.
+Using fingerprints and faces to authenticate a user is a lot more secure. These methods are being used more. And there's another way getting more popular.
 
 ## The Phone in Your Pocket
 
@@ -15,7 +15,7 @@ Computer scientists realized there's another thing many people carry around that
 
 When you set up an account at a streaming service or a bank, you may be asked to provide your mobile phone number. The bank may then send you a text message with a code. You'll be asked to enter that code on a form to verify you own the phone. Once you do, the bank can then use that same number in the future to make sure that the person who set up the account is the one accessing it.
 
-The bank may send you a code each time you sign in. They'll ask for the new code in addition to your password. You now have two items of information to give them. This is called two-factor authentication (or 2FA) since there are two things you need to do.
+The bank may send you a code each time you sign in. They'll ask for the new code in addition to your password. You now have two items of information to give them. When you provide to pieces of information, it's called two-factor authentication (or 2FA).
 
 ## Other 2FA Options
 
@@ -23,6 +23,6 @@ Using a mobile phone is just one way of validating you. A bank could also call a
 
 ![Illustration of an email being received.](../media/receive-email.png)
 
-There are also apps called "authenticators" that either generate a code or ask you to pick a number from a list to verify your identity. The app works similarly to the text message in that you have to first show that the phone that is using the app is yours. Once you verify this, some authenticators ask if you want to approve the sign-in with a simple yes or no.
+There are also apps called "authenticators" that either generate a code or ask you to pick a number from a list to verify your identity. The app works similarly to the text message in that you have to first show that the phone that is using the app is yours. Once you verify it's your phone, some authenticators ask if you want to approve the sign-in with a simple yes or no.
 
-Of course, passwords can be combined with any other method of verification (like a fingerprint). Any combination of verification methods counts as 2FA. These days though, the mobile device seems to be the most popular way. Using a code in a text message or an authenticator is very common and gives a level of security that goes well beyond passwords alone.
+Passwords can be combined with any other method of verification (like a fingerprint). Any combination of verification methods counts as 2FA. These days though, the mobile device seems to be the most popular way. Using a code in a text message or an authenticator is very common and gives a level of security that goes well beyond passwords alone.
