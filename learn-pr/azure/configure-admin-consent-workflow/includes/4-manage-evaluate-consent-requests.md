@@ -6,34 +6,23 @@ Once the request is submitted, a designated reviewer receives a notification of 
 
 Email notifications alert reviewers about active and expired admin consent requests. If configured, all reviewers will receive email notifications when:
 
-- A new request has been created
-- A request has expired
-- A request is nearing the expiration date.
-
-Requestors will receive email notifications when:
-
-- They submit a new request for access
-- Their request has expired
-- Their request has been denied or blocked
-- Their request has been approved
+:::image type="content" source="../media/4-requesters-reviewers-notification.png" alt-text="Screenshot of requesters and reviewers notification details.":::
 
 ## Evaluate admin consent requests
 
-Granting tenant-wide admin consent is a sensitive operation. Permissions will be granted on behalf of the entire organization, and they can include permissions to attempt highly privileged operations. Examples of such operations are role management, full access to all mailboxes or all sites, and full user impersonation.
+Granting tenant-wide admin consent is a sensitive operation. Permissions will be granted on behalf of the entire organization, and they can include permissions to attempt highly privileged operations. Examples of such operations are role management, full access to all mailboxes or all sites, and full user impersonation. Therefore, you should evaluate the contents of the consent request before granting access.
 
-Before you grant tenant-wide admin consent, it's important to ensure that you trust the application, and the application publisher for the level of access you're granting. If you aren't confident that you understand who controls the application and why the application is requesting the permissions, don't grant consent.
+Check out the following example of a consent request prompt. We'll review the most important aspects of the prompt that you should look at when evaluating a consent request.
 
-When you're evaluating a request to grant admin consent, here are some recommendations to consider:
+:::image type="content" source="../media/4-consent-request-prompt-example.png" alt-text="Screenshot of admin consent request prompt components.":::
 
-- **Understand the permissions and consent framework in the Microsoft identity platform**.
+| No | Component | Description |
+|--|--|--|
+| 1 | Application information | Understand which application is requesting permissions and who published the application. This component shows you whether the application was published by Microsoft or not. If the application was published by another organization that's verified by Microsoft, you'll see a blue "verified" badge next to the publisher name. Some malicious applications may try to look like other applications.  If you doubt the legitimacy of an application or its publisher, don't grant consent. Instead, seek confirmation (for example, directly from the application publisher). |
+| 2 | Permissions title and description | Understand the permissions that are being requested. Expanding the permission title displays the permission’s description. Permissions for the Microsoft Graph API are described in Microsoft Graph Permissions Reference. Refer to the documentation for other APIs to understand the permissions they expose. If you don't understand a permission that's being requested, don't grant consent. |
+| 3 | Report it here | Use this link if you find the app to be suspicious, if you believe the app is impersonating another app, if you believe the app will misuse your data, or for some other reason.
 
-- **Understand the difference between delegated permissions and application permissions** - Application permissions allow the application to access the data for the entire organization, without any user interaction. Delegated permissions allow the application to act on behalf of a user who was signed into the application at some point.
-
-- **Understand the permissions that are being requested** - The permissions requested by the application are listed in the consent prompt. Expanding the permission title displays the permission’s description. Permissions for the Microsoft Graph API are described in Microsoft Graph Permissions Reference. Refer to the documentation for other APIs to understand the permissions they expose. If you don't understand a permission that's being requested, don't grant consent.
-
-- **Understand which application is requesting permissions and who published the application** - Be wary of malicious applications that try to look like other applications. If you doubt the legitimacy of an application or its publisher, don't grant consent. Instead, seek confirmation (for example, directly from the application publisher).
-
-- **Ensure that the requested permissions are aligned with the features you expect from the application** - For example, an application that offers SharePoint site management might require delegated access to read all site collections, but it wouldn't necessarily need full access to all mailboxes, or full impersonation privileges in the directory. If you suspect that the application is requesting more permissions than it needs, don't grant consent. Contact the application publisher to obtain more details.
+After reviewing the application details and the permissions requested, ensure that the permissions are aligned with the features you expect from the application. For example, an application that offers SharePoint site management might require delegated access to read all site collections. It wouldn't necessarily need full access to all mailboxes, or full impersonation privileges in the directory. If you suspect that the application is requesting more permissions than it needs, don't grant consent. Contact the application publisher to obtain more details.
 
 ## How reviewers respond to the requests
 
