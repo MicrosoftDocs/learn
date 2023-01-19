@@ -1,4 +1,4 @@
-Python is one of the most popular programming languages in the world. Created in the early 1990s, it enjoys a wide range of uses, from automating repetitive tasks and writing web apps to building machine learning models and implementing neural networks. Researchers, mathematicians, and data scientists in particular like Python because of its rich and easy to understand syntax and the wide range of open-source packages available. *Packages* are commonly used, shared code libraries that are freely available for anyone to use.
+Python is one of the most popular programming languages in the world. Created in the early 1990s, it enjoys a wide range of uses, from automating repetitive tasks and writing web apps to building machine learning models and implementing neural networks. Researchers, mathematicians, and data scientists in particular like Python because of its rich and easy to understand syntax and the wide range of open-source packages available. **Packages** are shared code libraries that are freely available for anyone to use.
 
 Python has a simple, easy to learn syntax, which emphasizes readability. Applications written in Python can run on almost any computer, including those running Windows, macOS, and popular distributions of Linux. Furthermore, the ecosystem contains a rich set of development tools for writing, debugging, and publishing Python applications.
 
@@ -10,8 +10,8 @@ Python is an *interpreted* language, which reduces the edit-test-debug cycle bec
 
 Most of the runtime environments support two ways to execute Python code:
 
-- **Interactive mode:** in this mode, each command you type is interpreted and executed immediately, and you see the results each time you press <kbd>ENTER</kbd>. The interactive mode is the default mode if you don't pass a filename to the interpreter.
-- **Script mode:** in script mode, you put a set of Python statements into a text file with a **.py** extension. You then run the `python` interpreter and point it at the file. The program is executed line by line, and the output is displayed. There is no compilation step, as shown in the following diagram:
+- **Interactive mode:** In this mode, each command you type is interpreted and executed immediately, and you see the results each time you press <kbd>ENTER</kbd>. The interactive mode is the default mode if you don't pass a filename to the interpreter.
+- **Script mode:** In script mode, you put a set of Python statements into a text file with a **.py** extension. You then run the `python` interpreter and point it at the file. The program is executed line by line, and the output is displayed. There is no compilation step, as shown in the following diagram:
 
 :::image type="content" source="../media/2-python-steps.png" alt-text="Diagram showing the execution of a .py file through the Python interpreter.":::
 
