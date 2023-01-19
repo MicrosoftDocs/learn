@@ -5,10 +5,10 @@ So far, you've learned various constructs of the Python programming language. Yo
 When you start a program by using `python3`, you give it the name of the file to start. You can also give it a set of arguments: data that the program will have access to when running. Here's how that can look:
 
 ```bash
-python3 backup.py 2022-01-01
+python3 backup.py 2023-01-01
 ```
 
-In the preceding code, the string "2022-01-01" can be used as instruction to the program to start a backup from that date. What you gain by using command-line arguments is flexibility. The program can behave differently depending on its outside input.
+In the preceding code, the string "2023-01-01" can be used as instruction to the program *backup.py* to start a backup from that date. What you gain by using command-line arguments is flexibility. The program can behave differently depending on its outside input.
 
 ### Command-line arguments
 
