@@ -40,7 +40,7 @@ Azure VMware Solution provides private clouds that contain vSphere clusters. Tho
 
 Each private cloud can have multiple clusters managed by the same vCenter server and NSX-T Manager. Private clouds are installed and managed from within an Azure subscription. The number of private clouds within a subscription is scalable. Initially, there's a limit of one private cloud per subscription.
 
-For each private cloud created, there is one vSphere cluster by default. You can add, delete, and scale clusters by using the Azure portal or by using the API. Microsoft offers node configurations based on core, memory, and storage requirements. You can choose the type of node that best fits the needs of your organization.
+For each private cloud created, there is one vSphere cluster by default. You can add, delete, and scale clusters by using the Azure portal or by using the API. Microsoft offers node configurations based on core, memory, and storage requirements. Choose the type of node that's appropriate for your region; the most common choice is AV36. 
 
 Minimum and maximum node configurations are:
 
@@ -55,13 +55,14 @@ You use vSphere and NSX-T Manager to manage most aspects of cluster configuratio
 
 The VMware software versions used in new deployments of private-cloud clusters in Azure VMware Solution are:
 
-| Software | Version |
-| :------- | :------ |
-| VCSA/vSphere/vCenter | 6.7 Update 3 |
-| ESXi | 6.7 Update 3 |
-| vSAN | 6.7 Update 3 |
-| NSX-T | 3.1.2 |
-| HCX | 4.1 |
+| Software                     |    Version   |
+| :---                         |     :---:    |
+| VMware vCenter Server        |    7.0 U3c   |
+| ESXi                         |    7.0 U3c   |
+| vSAN                         |    7.0 U3c   |
+| vSAN on-disk format          |    10        |
+| HCX                          |    4.4.2     |
+| VMware NSX-T Data Center <br />**NOTE:** VMware NSX-T Data Center is the only supported version of NSX Data Center.               |      3.1.2     |
 
 NSX-T is the only supported version of NSX. When new clusters are added to an existing private cloud, the currently running software version is applied. 
 
@@ -81,7 +82,7 @@ The following diagram shows the ExpressRoute and ExpressRoute Global Reach inter
 
 These services require you to enable specific network address ranges and firewall ports. 
 
-You can use an existing ExpressRoute gateway to connect to Azure VMware Solution, as long as it doesn't exceed the limit of four ExpressRoute circuits per virtual network. To access Azure VMware Solution from on-premises through ExpressRoute, you must have ExpressRoute Global Reach. The reason is that the ExpressRoute gateway doesn't provide transitive routing between its connected circuits. 
+You can use an existing ExpressRoute gateway to connect to Azure VMware Solution, as long as it doesn't exceed the limit of four ExpressRoute circuits per virtual network. To access Azure VMware Solution from on-premises through ExpressRoute, you must have ExpressRoute Global Reach.
 
 ExpressRoute Global Reach is used to connect private clouds to on-premises environments. The connection requires a virtual network with an ExpressRoute circuit to on-premises in your subscription.
 There are two options for interconnectivity in the private cloud for Azure VMware Solution:
@@ -105,7 +106,7 @@ You can use Azure storage services in workloads that are running in your private
 :::image type="icon" source="../media/3-storage-overview.png" border="false" alt-text="Diagram that shows Azure VMware Solution and the available Azure Storage services, including Azure Blob Storage, Azure Files, Azure File Sync, and Azure NetApp Files.":::
 
 ## Security and compliance
-Azure VMware Solution private clouds use vSphere role-based access control for access and security. You can integrate vSphere SSO LDAP capabilities with Azure Active Directory (Azure AD). 
+Azure VMware Solution private clouds use vSphere role-based access control for access and security. You can configure Users and Groups in Active Directory with the CLoudAdmin Role using LDAP or LDAPS 
 
 In Azure VMware Solution, vCenter has a built-in local user called cloudadmin that's assigned to the cloudAdmin role. The cloudAdmin role has vCenter privileges that differ from the privileges in other VMware cloud solutions:
 

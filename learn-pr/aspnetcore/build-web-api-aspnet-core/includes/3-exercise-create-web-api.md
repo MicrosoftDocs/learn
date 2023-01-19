@@ -25,7 +25,7 @@ To set up a .NET project to work with the web API, we'll use Visual Studio Code.
 
     The command uses an ASP.NET Core project template, aliased as *:::no-loc text="webapi":::*, to scaffold a C#-based web API project. A *:::no-loc text="ContosoPizza":::* directory is created. This directory contains an ASP.NET Core project running on .NET. The project name matches the *:::no-loc text="ContosoPizza":::* directory name.
 
-    You should now have access to these files:
+    You should now have access to these files and directories:
 
     ```bash
     -| Controllers
@@ -63,7 +63,7 @@ To set up a .NET project to work with the web API, we'll use Visual Studio Code.
 
     A port from 5000 to 5300 will be selected for HTTP, and from 7000 to 7300 for HTTPS, when the project is created. You can easily change the ports that you use during development by editing the project's *launchSettings.json* file. This module uses the secure `localhost` URL that begins with `https`.
 
-    A variation of the following output appears to indicate that your app is running:
+    A you'll get output similar to the following, which indicates your app is running:
 
     ```console
     Building...
@@ -88,7 +88,7 @@ To set up a .NET project to work with the web API, we'll use Visual Studio Code.
     https://localhost:{PORT}/weatherforecast
     ```
 
-    The following output represents an excerpt of the JSON that's returned:
+    You should see JSON output similar to the following:
 
     ```json
     [
@@ -108,7 +108,7 @@ To set up a .NET project to work with the web API, we'll use Visual Studio Code.
     ]
     ```
 
-1. Open a new integrated terminal from Visual Studio Code by selecting **Terminal** > **New Terminal** from the main menu. Then run the following command:
+1. Open a new integrated terminal from Visual Studio Code by selecting **Terminal** > **New Terminal** from the main menu, then run the following command:
 
     ```dotnetcli
     dotnet tool install -g Microsoft.dotnet-httprepl
@@ -125,7 +125,7 @@ To set up a .NET project to work with the web API, we'll use Visual Studio Code.
     Alternatively, run the following command at any time while `HttpRepl` is running:
 
     ```dotnetcli
-    (Disconnected)> connect https://localhost:{PORT}
+    connect https://localhost:{PORT}
     ```
 
     > [!TIP]
@@ -139,7 +139,7 @@ To set up a .NET project to work with the web API, we'll use Visual Studio Code.
 
     The preceding command detects all APIs available on the connected endpoint. It should display the following:
 
-    ```dotnetcli
+    ```output
     https://localhost:{PORT}/> ls
     .                 []
     WeatherForecast   [GET] 
@@ -153,7 +153,7 @@ To set up a .NET project to work with the web API, we'll use Visual Studio Code.
 
     The preceding command shows an output of available APIs for the `WeatherForecast` endpoint:
 
-    ```dotnetcli
+    ```output
     https://localhost:{PORT}/> cd WeatherForecast
     /WeatherForecast    [GET]
     ```
@@ -166,7 +166,7 @@ To set up a .NET project to work with the web API, we'll use Visual Studio Code.
 
     The preceding command makes a `GET` request similar to going to the endpoint in the browser:
 
-    ```dotnetcli
+    ```output
     HTTP/1.1 200 OK
     Content-Type: application/json; charset=utf-8
     Date: Fri, 02 Apr 2021 17:31:43 GMT
