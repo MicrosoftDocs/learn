@@ -22,9 +22,6 @@ Azure Private 5G Core provides the following key benefits:
 
 ## Usage scenarios
 
-<!-- The following videos introduce several private MEC application scenarios, in which Azure Private 5G Core plays a key role:
-
-TBD: A video that introduces several private MEC application scenarios -->
 The low latency levels, combined with the security and high bandwidth offered by private 5G networks, put Azure Private 5G Core in the optimal position to support Industry 4.0 use cases, such as the following applications:
 
 - **Automation** - Production-line analytics and warehouse automation with robots.
