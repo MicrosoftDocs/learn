@@ -37,7 +37,7 @@ In this case, you can choose to use the platform metrics to monitor the sites re
 
 The following diagram illustrates this monitoring structure:
 
-:::image type="content" source="../media/ap5gc-monitoring-structure.png" alt-text="A diagram that illustrates the monitoring structure of the warehouse private mobile network" border="true":::
+:::image type="content" source="../media/ap5gc-monitoring-structure.png" alt-text="A diagram that illustrates the monitoring structure of the warehouse private mobile network." border="true":::
 
 > [!TIP]
 > Based on the business needs of the logistics company, you may need to choose other monitoring tools. For example, the company may want to use a third-party application to do the monitoring. In that case, consider using the Azure Monitor REST API to do application integration.

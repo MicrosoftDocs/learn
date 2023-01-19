@@ -14,7 +14,7 @@ Each dashboard contains the following user interface components:
 
 The following example dashboard contains both *graph* and *single stat* panels that are arranged into four rows:
 
-:::image type="content" source="../media/packet-core-uplink-downlink-stats-dashboard.png" alt-text="An example dashboard that shows the graph panels and single stat panels arranged into three rows" border="true":::
+:::image type="content" source="../media/packet-core-uplink-downlink-stats-dashboard.png" alt-text="An example dashboard that shows the graph panels and single stat panels arranged into three rows." border="true":::
 
 By default, Azure Private 5G Core provides the following packet core dashboards:
 
@@ -55,4 +55,4 @@ You can use the **Time picker**, which is in the top right-hand corner of each p
 
 The following screenshot shows the time picker:
 
-:::image type="content" source="../media/packet-core-dashboard-time-picker.png" alt-text="A screenshot that shows the time picker" border="true":::
+:::image type="content" source="../media/packet-core-dashboard-time-picker.png" alt-text="A screenshot that shows the time picker." border="true":::

@@ -40,7 +40,7 @@ Each entry in the **Detailed Timeline** view represents an event. The entry incl
 
 The **Call Flow** view uses a diagram to visually indicate the messages flowing between network functions. As shown in the following example view, the vertical lines show the network components involved in the flow. The black lines indicate packet core Network Functions that have logged sending or receiving messages for this flow. The gray lines indicate other components that don't log messages. A horizontal line shows each individual signaling message flowing between two network components. An arrow indicates the direction of flow from the sending component to the receiving component. The messages appear in the diagram in the order in which they occurred.
 
-:::image type="content" source="../media/distributed-tracing-call-flow.png" alt-text="A screenshot showing the message flows in an example Call Flow view" border="true":::
+:::image type="content" source="../media/distributed-tracing-call-flow.png" alt-text="A screenshot showing the message flows in an example Call Flow view." border="true":::
 
 For detailed instructions on using these views, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
 
@@ -75,7 +75,7 @@ To find the root cause of this communication issue, you can take the following s
 
    As the AUSF network function is responsible for authentication, you can check the messages to and from AUSF. For example, the message displayed in the following screen indicates the authentication failed because the authentication key from the UE doesn't match the authentication key in the provisioned UE.
 
-   :::image type="content" source="../media/authentication-rejected.png" alt-text="A screenshot with a message indicating the reason for authentication failure" border="true":::
+   :::image type="content" source="../media/authentication-rejected.png" alt-text="A screenshot with a message indicating the reason for authentication failure." border="true":::
 
 1. After figuring out that the root cause for the issue is the wrong authentication key in the provisioned UE, you can remove the UE through the Azure portal, and then provision it again with the correct authentication key.
 
