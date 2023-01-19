@@ -5,7 +5,7 @@ In this unit, You'll create a Node.js single page application (SPA). You'll then
 To create the single page application, you'll create a Node.js web server to serve the HTML page from a web server running on your workstation as http://localhost:3007.
 
 >[!NOTE]
->The instructions below assume you are using v2.14.2 of the Microsoft Authentication Library for JavaScript 2.0.
+>The instructions i this section assume you are using v2.14.2 of the Microsoft Authentication Library for JavaScript 2.0.
 
 Before you proceed, ensure you have the latest version of Node.js v16.14.2, or later installed and you've set the environment path variables for the application to run.
 
@@ -35,7 +35,7 @@ The single page application you created will submit a request to Microsoft Graph
   :::image type="content" source="../media/3-new-app-reg-details.png" alt-text="Screenshot showing new app registration details.":::
 1. Select **Manage > Authentication** in the left-hand navigation.
 
-1. On the **Authentication** page, select **Add a platform**. When the **Configure platforms** panel appears, select **Single-page application**.
+1. On the **Authentication** page, select **Add a platform**. On the **Configure platforms** panel, select **Single-page application**.
 
 1. In the **Configure single-page application** panel, add **http://localhost:3007** under **Redirect URIs**, and select **Configure**.
 
@@ -52,9 +52,10 @@ Locate the `var msalConfig = {}` code in the **index.html** file. The `auth` obj
 1. Search for and select **Azure Active Directory**.
 1. Select **Enterprise applications**.
 1. Under **Manage**, select **User settings**.
-Under **Admin consent requests**,  select **Yes** for **Users can request admin consent to apps they are unable to consent to**.
+1. Under **Security**, select **Consent and permissions**, then select **Admin consent settings**.
+1. On the **Admin consent settings** panel, select **Yes** for **Users can request admin consent to apps they are unable to consent to**.
 
-   :::image type="content" source="../media/3-enable-admin-consent-workflow.png" alt-text="Screenshot of configure admin consent workflow settings blade.":::
+   :::image type="content" source="../media/3-enable-admin-consent-workflow.png" alt-text="Screenshot of configure admin consent workflow settings panel.":::
 
 1. Configure the following settings:
 
@@ -67,15 +68,15 @@ Under **Admin consent requests**,  select **Yes** for **Users can request admin 
 > [!NOTE]
 > You can add or remove reviewers for this workflow by modifying the **Select admin consent requests reviewers** list. A current limitation of this feature is that a reviewer can retain the ability to review requests that were made while they were designated as a reviewer.
 
-To see how admin consent workflow works for this single page application, you'll need to disable user consent so that users aren't able to consent to the application.
+To see how the workflow with the single page application, disable user consent so that users aren't able to consent to the application.
 
 ### Turn off user consent
 
 1. Search for and select **Azure Active Directory**.
 1. Select **Enterprise applications**.
-1. Under **Security**, select **Consent and permissions**
+1. Under **Security**, select **Consent and permissions**. The **User consent settings** appears.
 1. Under **User consent for applications**, select **Do not allow user consent**.
-1. Select **Save** to save your settings.
+1. Select **Save**.
 
 ## Test admin consent workflow
 
