@@ -1,4 +1,4 @@
-Entity Framework Core is an **object-relational mapper**. ORMs provide a layer between the domain model you implement in code and the database. EF Core is a data access API that allows you to interact with the database using .NET POCOs (**P**lain **O**ld **C**LR **O**bjects) and strongly-typed LINQ. This allows you to spend less time translating requests to and from the database and writing SQL, giving you more time to focus on important business logic.
+Entity Framework Core is an **object-relational mapper**. ORMs provide a layer between the domain model you implement in code and the database. EF Core is a data access API that allows you to interact with the database using .NET POCOs (**P**lain **O**ld **C**LR **O**bjects) and strongly typed LINQ. This allows you to spend less time translating requests to and from the database and writing SQL, giving you more time to focus on important business logic.
 
 With EF Core, the database is abstracted behind .NET POCOs. As a result, you can focus on your code, and EF Core handles direct interaction with the underlying database.
 
