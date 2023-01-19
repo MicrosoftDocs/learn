@@ -1,6 +1,6 @@
 # Concepts covered
 
-IIn this module, you built and ran **ProjectUDPEchoClient**. You used a considerable number of services and concepts. Following is a summary.
+In this module, you built and ran **ProjectUDPEchoClient**. You used a considerable number of services and concepts. Following is a summary.
 
 | **Service or Concept**                   | **Service or Concept**       |
 |------------------------------------------|-------------------------------|

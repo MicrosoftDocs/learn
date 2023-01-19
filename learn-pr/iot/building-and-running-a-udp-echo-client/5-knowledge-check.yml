@@ -7,13 +7,14 @@ metadata:
   ms.date: 01/30/2023
   author: edlamie80
   ms.author: liydu
+  manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8
 content: |
 quiz:
   questions:
-    - content: 'Which of the following is an advantage of the User Datagram Protocol (UDP)?'
+    - content: 'Which of the following statements is an advantage of the User Datagram Protocol (UDP)?'
       choices:
         - content: 'It doesn’t need to use data packets.'
           isCorrect: false
@@ -51,7 +52,7 @@ quiz:
         - content: 'The ABCs were displayed 20 times and then stopped.'
           isCorrect: false
           explanation: 'Incorrect, the ABCs were displayed repeatedly.'
-        - content: "The message “'his is a test' was displayed repeatedly."
+        - content: "The message 'This is a test' was displayed repeatedly."
           isCorrect: false
           explanation: 'Incorrect, the ABCs were displayed repeatedly.'
         - content: "The message 'This is a test' was displayed 15 times and then stopped."

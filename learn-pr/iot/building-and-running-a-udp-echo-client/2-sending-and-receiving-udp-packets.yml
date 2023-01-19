@@ -6,7 +6,8 @@ metadata:
   description: Sending and receiving UDP packets.
   ms.date: 01/30/2023
   author: edlamie80
-  ms.author: liydu
+  ms.author: 
+  manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

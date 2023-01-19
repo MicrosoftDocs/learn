@@ -1,8 +1,8 @@
 # Discussion
 
-Congratulations on making it this far! Now we need to reflect on what we've done and understand how the concepts in this project will help you in the future.
+Congratulations on making it to this section! Now we need to reflect on what we've done and understand how the concepts in this project will help you in the future.
 
-1. To keep the minimal code size, the transport layer protocols are not enabled automatically in NetX. We need to call **nx_udp_enable** to enable UDP functionalities.
+1. To keep the minimal code size, the transport layer protocols aren't enabled automatically in NetX. We need to call **nx_udp_enable** to enable UDP functionalities.
 1. Each UDP socket must bind to a port. In this project, the UDP socket is bound to any port and NetX will pick a random port.
 1. Data are filled into **NX_PACKET**, which ensures zero copy in NetX. In each round, a new packet is allocated and filled with data.
 1. After a packet is sent by **nxd_udp_socket_send**, the ownership of this packet is transferred to NetX. The user application must not reference this packet again.

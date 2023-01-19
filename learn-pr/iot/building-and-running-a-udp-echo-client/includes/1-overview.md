@@ -28,15 +28,15 @@ Before starting with this module, we'll need to study the following concepts:
 - UDP packet send
 - UDP packet receive
 
-The UDP echo client is similar to the ping application in the Hello World module. The main difference is with the transport layer. In this project, UDP is used rather than ICMP. For UDP, you'll need to create a UDP socket, and bind it to a unique port in the system. Then it can start to send and receive data. For the typical UDP client, the local port is not important because it will send packets to the server first. But for the typical UDP server, it should bind to a port and let the client know. A UDP socket can send data to multiple servers, and a UDP server can also receive data from multiple clients. A UDP client is not bound to a server, which is one of the main differences from TCP. Note that when we use the word client, we are typically referring to an end user device.
+The UDP echo client is similar to the ping application in the Hello World module. The main difference is with the transport layer. In this project, UDP is used rather than ICMP. For UDP, you'll need to create a UDP socket, and bind it to a unique port in the system. Then it can start to send and receive data. For the typical UDP client, the local port isn't important because it will send packets to the server first. But for the typical UDP server, it should bind to a port and let the client know. A UDP socket can send data to multiple servers, and a UDP server can also receive data from multiple clients. A UDP client isn't bound to a server, which is one of the main differences from TCP. When we use the word client, we're typically referring to an end user device.
 
 ## User datagram protocol (UDP)
 
-The User Datagram Protocol (UDP) provides the simplest form of data transfer between network devices. UDP data packets are sent from one network device to another in a best effort fashion, namely, there is no built-in mechanism for acknowledgement by the packet recipient. In addition, sending a UDP packet does not require any connection to be established in advance. Because of this, UDP packet transmission is very efficient.
+The User Datagram Protocol (UDP) provides the simplest form of data transfer between network devices. UDP data packets are sent from one network device to another in a best effort fashion, namely, there's no built-in mechanism for acknowledgment by the packet recipient. In addition, sending a UDP packet doesn't require any connection to be established in advance. Because of this, UDP packet transmission is very efficient.
 
 ## UDP services used
 
-We'll use a variety of UDP services in this project. Here is a summary of these services and brief definitions.
+We'll use a variety of UDP services in this project. Here's a summary of these services and brief definitions.
 
 | **Service** | **Description** |
 |---|---|

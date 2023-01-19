@@ -2,7 +2,7 @@
 
 ## Overview
 
-The logic of the UDP echo client is similar to the Hello World project except for the transport layer. After building and running **ProjectUPDEchoClient**, the following actions occur.
+The logic of the UDP echo client is similar to the Hello World project except for the transport layer. After we build and run **ProjectUPDEchoClient**, the following actions occur.
 
 1. Create an IP instance and enable UDP from NetX.
 1. Create a UDP socket and bind it to any port.
@@ -16,7 +16,7 @@ The following sequence diagram illustrates the main features of **ProjectUDPEcho
 
    ![Diagram showing the main features of ProjectUDPEchoClient.](../../building-udp-echo-client/media/00-sequence-diagram-for-project-echo-client.svg)
 
-Now we'll study the code to determine how the above actions occur. When you are reviewing the code, look for this define:
+Now we'll study the code to determine how the above actions occur. When you're reviewing the code, look for the following define:
 
 ```c
 #define ECHO_DATA "ABCDEFGHIJKLMNOPQRSTUVWXYZ "
@@ -317,7 +317,7 @@ Now we loop forever to send data to the echo server, allocate a packet, write AB
     }
 ```
 
-Finally, we cleanup the UDP socket.
+Finally, we clean up the UDP socket.
 
 ```c
     /* Cleanup the UDP socket.  */
