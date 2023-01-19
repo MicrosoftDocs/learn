@@ -68,5 +68,5 @@ quiz:
       explanation: Try Again. Not the right answer.
     - content: Customer-defined keys
       isCorrect: false
-    - content: Try Again. Not the right answer.
-      isCorrect: false
+      explanation: Try Again. Not the right answer.
+      
