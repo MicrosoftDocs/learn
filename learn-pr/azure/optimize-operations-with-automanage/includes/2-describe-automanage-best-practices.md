@@ -26,7 +26,7 @@ Your VMs will be automatically onboarded to these participating services when yo
 |Microsoft Antimalware |Microsoft Antimalware for Azure is a free real-time protection that helps identify and remove viruses, spyware, and other malicious software. It generates alerts when known malicious or unwanted software tries to install itself or run on your Azure systems. |
 |Update Management |You can use Update Management in Azure Automation to manage operating system updates for your virtual machines. You can quickly assess the status of available updates on all agent machines and manage the process of installing required updates for servers. |
 |Change Tracking & Inventory |Combines change tracking and inventory functions to allow you to track virtual machine and server infrastructure changes. |
-|Guest Configuration |Guest configuration is used to monitor the configuration and report on the compliance of the machine. |
+|Azure Automanage Machine Configuration |Azure Automanage Machine Configuration is used to monitor the configuration and report on the compliance of the machine. |
 |Azure Automation Account |Azure Automation supports management throughout the lifecycle of your infrastructure and applications. |
 |Log Analytics Workspace |Azure Monitor stores log data in a Log Analytics workspace, which is an Azure resource and a container where data is collected, aggregated, and serves as an administrative boundary. |
 
