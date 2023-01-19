@@ -19,4 +19,4 @@ In this module, you'll learn how to:
 
 - Prepare your data to use AutoML for classification.
 - Configure and run an AutoML experiment.
-- Evaluate and compare models.
+- Evaluate and compare models. 
