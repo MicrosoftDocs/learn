@@ -49,17 +49,7 @@ Some features of Azure Communication Services are only available in certain coun
 
 Of particular mention in this area are telephony and SMS features. As telephone networks in different countries/regions vary in terms of structure and regulatory/legal matters, it's very important to ensure that Azure Communication Services supports your target location. Additionally, your billing location also affects this. For example, to make calls or send SMS messages to a UK number, you'll need a billing address in the UK.
 
-SMS and Telephony are currently only available in the following locations:
-
-* UK
-* USA
-* Ireland
-* Denmark
-* Canada
-* Italy
-* Sweden
-
-You can read additional information about regional differences in offerings of Azure Communication Services features in the [Azure Communication Services documentation](/azure/communication-services/).
+SMS and Telephony are available in number of locations. You can find all the supported regions, number types and available capabilities in the [Azure Communication Services documentation](https://aka.ms/CountryAvailability)
 
 ### Suitability
 

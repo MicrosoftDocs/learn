@@ -43,4 +43,3 @@ To reduce the potential risks of using a SAS, Microsoft provides some guidance:
 * Apply the rule of minimum-required privileges. Only grant the access that's required. For example, in your app, read-only access is sufficient.
 * There are some situations where a SAS isn't the correct solution. When there's an unacceptable risk of using a SAS, create a middle-tier service to manage users and their access to storage.
 
-The most flexible and secure way to use a service or account SAS is to associate the SAS tokens with a stored access policy.
