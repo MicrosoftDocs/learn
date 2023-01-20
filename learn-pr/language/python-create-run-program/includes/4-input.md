@@ -80,14 +80,14 @@ second_number = input("second number: ")
 print(first_number + second_number)
 ```
 
-Running this program invites you to input the first number, let's say *3*:
+Running this program invites you to input the first number, let's say `3`:
 
 ```output
 calculator program
 first number: 3
 ```
 
-After you press **Enter**, you can enter the second number, let's say *4*:
+After you press **Enter**, you can enter the second number, let's say `4`:
 
 ```output
 calculator program
