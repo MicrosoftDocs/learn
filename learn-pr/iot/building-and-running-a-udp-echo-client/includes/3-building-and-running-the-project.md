@@ -32,7 +32,7 @@ You'll then observe the building process. When it finishes, go to the next step 
 Run your project by following the steps in the illustration as a guide.
 ![Screenshot showing steps required to run the project.](../media/04-run-project.png)
 
-We'll use several networking utilities in this project to display output. The **ncat** utility keeps listening on UDP port 7 and does the receiving. For each incoming packet, **/bin/cat** will execute it. The **cat** command will output the received content. We'll use the **sudo** command to execute **ncat** and **/bin/cat**.
+We'll use several networking utilities in this project to display output. The **ncat** utility keeps listening on UDP port 7 and does the receiving. For each incoming packet, **/bin/cat** will execute it. The **cat** command outputs the received content. We'll use the **sudo** command to execute **ncat** and **/bin/cat**.
 
 Open a new terminal by selecting the “**+**”on the right side. Then enter the following command:
 **sudo ncat -e /bin/cat -k -u -l 7**

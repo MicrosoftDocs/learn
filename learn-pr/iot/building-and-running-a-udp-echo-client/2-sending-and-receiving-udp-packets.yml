@@ -4,9 +4,9 @@ title: Sending and receiving UDP packets
 metadata:
   title: Sending and receiving UDP packets
   description: Sending and receiving UDP packets.
-  ms.date: 01/30/2023
+  ms.date: 01/20/2023
   author: edlamie80
-  ms.author: 
+  ms.author: liydu
   manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
