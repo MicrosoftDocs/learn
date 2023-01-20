@@ -5,7 +5,7 @@ metadata:
   description: "Learn about the different services that are available in Azure compute Prepare for AZ-900."
   ms.date: 07/02/2021
   author: wwlpublish
-  ms.author: rknapp
+  ms.author: robbarefoot
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore Azure compute services

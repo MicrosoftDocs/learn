@@ -30,7 +30,7 @@ The following command creates a Linux VM, installs the IoT Edge runtime, and edi
 az deployment group create \
   --name edgeModuleVM \
   --resource-group <rgn>[sandbox resource group name]</rgn> \
-  --template-uri https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/edge-vm-deploy/edgeModuleVMDeploy.json \
+  --template-uri https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/edge-vm-deploy-1-4/edgeModuleVMDeploy.json \
   --parameters dnsLabelPrefix="$APP_NAME" \
   --parameters adminUsername="AzureUser" \
   --parameters adminPassword="$VM_PASSWORD" \
