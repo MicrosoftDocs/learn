@@ -32,7 +32,7 @@ The UDP echo client is similar to the ping application in the Hello World module
 
 ## User datagram protocol (UDP)
 
-The User Datagram Protocol (UDP) provides the simplest form of data transfer between network devices. UDP data packets are sent from one network device to another in a best effort fashion, namely, there's no built-in mechanism for acknowledgment by the packet recipient. In addition, sending a UDP packet doesn't require any connection to be established in advance. Because of this, UDP packet transmission is very efficient.
+The User Datagram Protocol (UDP) provides the simplest form of data transfer between network devices. UDP data packets are sent from one network device to another in a best effort fashion, namely, there's no built-in mechanism for acknowledgment by the packet recipient. In addition, sending a UDP packet doesn't require any connection to be established in advance. Because of this, UDP packet transmission is efficient.
 
 ## UDP services used
 
