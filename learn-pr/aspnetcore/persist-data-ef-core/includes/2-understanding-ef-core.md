@@ -1,6 +1,6 @@
-Entity Framework Core is an **object-relational mapper**. ORMs provide a layer between the domain model you implement in code and the database. EF Core is a data access API that allows you to interact with the database using .NET POCOs (**P**lain **O**ld **C**LR **O**bjects) and strongly-typed LINQ. This allows you to spend less time translating requests to and from the database and writing SQL, giving you more time to focus on important business logic.
+Entity Framework Core is an **object-relational mapper**. ORMs provide a layer between the domain model you implement in code and the database. EF Core is a data access API that allows you to interact with the database using .NET POCOs (**P**lain **O**ld **C**LR **O**bjects) and strongly typed LINQ. This allows you to spend less time translating requests to and from the database and writing SQL, giving you more time to focus on important business logic.
 
-With EF Core, the database is abstracted behind .NET POCOs . As a result, you can focus on your code and EF Core handles direct interaction with the underlying database.
+With EF Core, the database is abstracted behind .NET POCOs. As a result, you can focus on your code, and EF Core handles direct interaction with the underlying database.
 
 With EF Core, you can:
 
@@ -12,13 +12,13 @@ With EF Core, you can:
 - Access [multiple databases](/ef/core/providers/) including SQL Server, SQLite, Azure Cosmos DB, PostgreSQL, MySQL, and more.
 - Build your domain model from an existing database.
 - Manage your database schema based on your domain model.
-- Commit changes to complex, deep and/or wide object graphs of related entities with a single method call.
+- Commit changes to complex, deep, and/or wide object graphs of related entities with a single method call.
 
 ## Review EF Core architecture
 
 The following diagram depicts the architecture behind EF Core.
 
-![EF Core Architecture.](../media/ef-core-architecture.png)
+![Diagram of EF Core Architecture.](../media/ef-core-architecture.png)
 
 The [DbContext](/ef/core/dbcontext-configuration) is a special class that represents a unit of work and provides methods to configure options, connection strings, logging, and the model used to map your domain to the database. Classes deriving from `DbContext`:
 
