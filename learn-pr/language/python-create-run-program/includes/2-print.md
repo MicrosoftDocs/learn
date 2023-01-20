@@ -38,13 +38,13 @@ print("show this in the console")
 
 Running the program now would show the following result on the console:
 
-```console
+```output
 show this in the console
 ```
 
 Note how the command calls `print()` by using parentheses. That's how you execute a function. If you used square brackets (`[]`) instead of parentheses, it wouldn't work, as you'll notice if you run the program again with this code:
 
-```console
+```python
 print["show this in the console"]
 ```
 
@@ -204,6 +204,6 @@ print("Today's date is: " + str(date.today()))
 
 The output looks like this:
 
-```console
+```output
 Today's date is: <date>
 ```
