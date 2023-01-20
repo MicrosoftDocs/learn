@@ -33,7 +33,7 @@ subjects:
 prerequisites: |
   - [Visual Studio 2022](https://visualstudio.com) with the **ASP.NET and web development** and the **Azure development** workload installed
   - Experience using the Visual Studio debugger at the beginner level
-  - Ability to create a simple .NET Core Razor pages application from a template
+  - Ability to create a simple .NET Core Razor Pages application from a template
   - Knowledge of Azure App Service's capability for hosting web applications at the beginner level
 units:
 - learn.dotnet-debug-visual-studio-app-service.introduction
