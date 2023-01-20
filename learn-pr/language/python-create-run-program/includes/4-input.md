@@ -58,10 +58,10 @@ Running the program invites you to enter your name, for example:
 
 ```output
 Welcome to the greeter program
-Enter your name: Picard
+Enter your name: 
 ```
 
-After you press **Enter**, the greeting is returned:
+After you enter a value and press **Enter**, the greeting is returned:
 
 ```output
 Welcome to the greeter program
