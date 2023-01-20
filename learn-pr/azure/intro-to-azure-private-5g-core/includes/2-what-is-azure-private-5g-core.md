@@ -14,7 +14,7 @@ As shown in the diagram, the packet core instance runs on a Kubernetes cluster d
 
 The following video introduces Azure Private 5G Core and its role in private MEC solutions:
 
-TBD: A video that introduces Azure Private 5G Core and its role in private MEC solutions
+[!VIDEO 1b3c42e2-d0b1-4a45-885a-31b7502c9230]
 
 ## Key components of a private MEC solution
 
