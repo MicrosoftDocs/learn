@@ -14,6 +14,8 @@ You can apply these criteria to your own real-world scenarios and see if Visual 
 
 ## References
 
+[Set up Visual Studio Code](https://code.visualstudio.com/learn/get-started/basics)
+
 [Visual Studio Code](https://code.visualstudio.com/)
 
 [Visual Studio](https://visualstudio.microsoft.com/)
