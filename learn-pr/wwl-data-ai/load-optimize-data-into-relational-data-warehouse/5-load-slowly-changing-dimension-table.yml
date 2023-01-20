@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.load-slowly-changing-dimension-table
+title: Load a slowly changing dimension table
+metadata:
+  title: Load a slowly changing dimension table
+  description: "Load a slowly changing dimension table"
+  ms.date: 01/20/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-load-slowly-changing-dimension-table.md)]

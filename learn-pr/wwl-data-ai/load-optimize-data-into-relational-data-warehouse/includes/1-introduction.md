@@ -1,5 +1,5 @@
 
-A data engineer is one of the primary roles responsible for loading and optimizing queries for cleansing, matching, and refinement of data. In this section those elements will be discussed in context of Azure Synapse Analytics and the impact of good design in a distributed architecture.
+A data engineer is one of the primary roles responsible for loading and optimizing queries for cleansing, matching, and refinement of data. In this section, those elements will be discussed in context of Azure Synapse Analytics and the impact of good design in a distributed architecture.
 In this module, you will:
 -	Understand data loading design goals
 -	Explain loading methods into Azure Synapse Analytics
@@ -15,6 +15,6 @@ In this module, you will:
 ## Prerequisites
 
 Before taking this module, it's recommended that the student is able to:
--	Log into the Azure portal
+-	Log in to the Azure portal
 -	Create a Synapse Analytics Workspace
 -	Create an Azure Synapse Analytics SQL Pool

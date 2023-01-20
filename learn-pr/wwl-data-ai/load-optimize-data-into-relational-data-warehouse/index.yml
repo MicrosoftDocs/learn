@@ -3,7 +3,7 @@ uid: learn.wwl.load-optimize-data-into-relational-data-warehouse
 metadata:
   title: Load and optimize data into a relational data warehouse
   description: "Load and optimize data into a relational data warehouse"
-  ms.date: 01/05/2023
+  ms.date: 01/20/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -35,14 +35,12 @@ products:
 - azure-synapse-analytics
 units:
 - learn.wwl.load-optimize-data-into-relational-data-warehouse.introduction
-- learn.wwl.load-optimize-data-into-relational-data-warehouse.explain-loading-methods
-- learn.wwl.load-optimize-data-into-relational-data-warehouse.manage-source-data-files
-- learn.wwl.load-optimize-data-into-relational-data-warehouse.implement-workload-management
-- learn.wwl.load-optimize-data-into-relational-data-warehouse.exercise-load
-- learn.wwl.load-optimize-data-into-relational-data-warehouse.understand-table-distribution-design
-- learn.wwl.load-optimize-data-into-relational-data-warehouse.understand-indexes-query-plans
-- learn.wwl.load-optimize-data-into-relational-data-warehouse.other-optimization-considerations
-- learn.wwl.load-optimize-data-into-relational-data-warehouse.exercise-see-how-statistic-affects-query-plan
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.understand-considerations-for-loading-data-warehouse
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.load-data-with-copy-statement
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.create-load-new-tables-with-ctas-statement
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.load-slowly-changing-dimension-table
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.perform-post-load-optimization
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.exercise-load-data-into-relational-data-warehouse
 - learn.wwl.load-optimize-data-into-relational-data-warehouse.knowledge-check
 - learn.wwl.load-optimize-data-into-relational-data-warehouse.summary
 badge:

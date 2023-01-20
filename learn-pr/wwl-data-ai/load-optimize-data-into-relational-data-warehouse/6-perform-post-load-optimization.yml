@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.perform-post-load-optimization
+title: Perform post load optimization
+metadata:
+  title: Perform post load optimization
+  description: "Perform post load optimization"
+  ms.date: 01/20/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-perform-post-load-optimization.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.load-data-with-copy-statement
+title: Load data with the COPY statement
+metadata:
+  title: Load data with the COPY statement
+  description: "Load data with the COPY statement"
+  ms.date: 01/20/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-load-data-with-copy-statement.md)]

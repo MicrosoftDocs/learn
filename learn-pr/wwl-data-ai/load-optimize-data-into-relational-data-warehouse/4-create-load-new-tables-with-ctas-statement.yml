@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.create-load-new-tables-with-ctas-statement
+title: Create and load new tables with the CTAS statement
+metadata:
+  title: Create and load new tables with the CTAS statement
+  description: "Create and load new tables with the CTAS statement"
+  ms.date: 01/20/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-create-load-new-tables-with-ctas-statement.md)]
