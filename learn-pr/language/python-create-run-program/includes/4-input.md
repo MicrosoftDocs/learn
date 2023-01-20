@@ -22,18 +22,18 @@ print(sys.argv[0]) # program name
 print(sys.argv[1]) # first arg
 ```
 
-`sys.argv` is an array or a data structure that contains many items. The first position, denoted as `0` in the array, contains the program name. The second position, `1`, contains your first argument. Assume that the program *cli.py* contains the sample code and you run it like this:
+`sys.argv` is an array or a data structure that contains many items. The first position, denoted as `0` in the array, contains the program name. The second position, `1`, contains your first argument. Assume that the program *backup.py* contains the sample code and you run it like this:
 
 ```console
-python3 cli.py Jupiter
+python3 backup.py 2023-01-01
 ```
 
 The program then yields the following result:
 
 ```output
-['cli.py', 'Jupiter'] 
-cli.py
-Jupiter
+['backup.py', '2023-01-01'] 
+backup.py
+2023-01-01
 ```
 
 ## User input
