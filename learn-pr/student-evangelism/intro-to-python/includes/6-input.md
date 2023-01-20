@@ -1,4 +1,4 @@
-Many programs are interactive. Supporting interactivity means you have a program that runs differently depending on the input. The one inputting data to a program is usually a user, but it can be another program. There are many ways to send input to a program; two common ways are via a graphical interface or a console. 
+Many programs are interactive. Supporting interactivity means you have a program that runs differently depending on the input. The person inputting data to a program is usually a user, but it can be another program. There are many ways to send input to a program; two common ways are via a graphical interface or a console. 
 
 ## User input
 
