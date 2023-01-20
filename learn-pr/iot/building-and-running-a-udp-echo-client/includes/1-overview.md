@@ -36,7 +36,7 @@ The User Datagram Protocol (UDP) provides the simplest form of data transfer bet
 
 ## UDP services used
 
-We'll use a variety of UDP services in this project. Here's a summary of these services and brief definitions.
+We'll use various UDP services in this project. Here's a summary of these services and brief definitions.
 
 | **Service** | **Description** |
 |---|---|
