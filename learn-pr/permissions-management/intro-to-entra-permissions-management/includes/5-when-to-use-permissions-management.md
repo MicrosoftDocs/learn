@@ -12,7 +12,7 @@ Privileged Access, or Identity, Management is a service in Azure Active Director
 
 ### Identity Governance & Administration ###
 
-Identity Governance and Administration (IGA) allows you to balance the need for security and the need for productivity with the right processes and visibility. IGA provides you with the capabilities to ensure that the right people have access to the right resources. IGA complements CIEM by giving organizations the ability to do the following cross services and application both on-premises and in cloud environments:
+Identity Governance and Administration (IGA) allows you to balance the need for security and the need for productivity with the right processes and visibility. IGA gives you with the capabilities to ensure that the right people have access to the right resources. IGA complements CIEM by giving organizations the ability to do the following cross services and application both on-premises and in cloud environments:
 
 - Govern the identity lifecycle
 - Govern the identity access lifecycle
