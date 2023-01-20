@@ -65,8 +65,8 @@ quiz:
       explanation: Try Again. On selecting **Microsoft Managed Key** option, SIM group and SIM workflow will remain the same as existing. No additional encryption will be applied on the SIM secrets. This is the default option.
     - content: Encryption keys
       isCorrect: false
-      explanation: Try Again. Not the right answer.
+      explanation: Try Again. Encryption keys don't exist.
     - content: Customer-defined keys
       isCorrect: false
-      explanation: Try Again. Not the right answer.
+      explanation: Try Again. Customer-defined keys don't exist.
       

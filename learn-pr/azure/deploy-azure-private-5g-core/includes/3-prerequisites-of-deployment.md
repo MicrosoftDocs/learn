@@ -1,4 +1,4 @@
-Before you create a private mobile network, complete following:
+Before you create a private mobile network, complete the following tasks:
 
 - **Order and set up your Azure Stack Edge Pro device(s):** Follow the [checklist](/azure/databox-online/azure-stack-edge-gpu-deploy-checklist?pivots=single-node) to order and register your ASE device in the Azure cloud.
 For ASE configuration, see [Prepare to deploy a private mobile network - Azure Private 5G Core Preview | Microsoft Learn](/azure/private-5g-core/complete-private-mobile-network-prerequisites).
@@ -31,7 +31,7 @@ Depending on your requirements, you have the following options for configuring a
 
 To ensure successful connectivity of all the ASE and AP5GC infrastructure to Azure services, we recommend configuring a firewall to allow all outbound traffic.
 
-If you do not want to allow all outbound traffic, you'll have to configure the firewall with Azure services specific IP addresses and the URLs. Contact Microsoft Support to obtain the list of Azure services specific IP address and URL details.
+If you don't want to allow all outbound traffic, you'll have to configure the firewall with Azure services specific IP addresses and the URLs. Contact Microsoft Support to obtain the list of Azure services specific IP address and URL details.
 
 You should set these up in addition to the [ports required for Azure Stack Edge (ASE)](/azure/databox-online/azure-stack-edge-gpu-system-requirements).
 
