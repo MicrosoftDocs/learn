@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: "It tells computers what a person is allowed to do."
       isCorrect: false
-      explanation: "Providing permissions for the user is authoization, not authentication."
+      explanation: "Providing permissions for the user is authorization, not authentication."
     - content: "It lets a person know that a computer has not been hacked."
       isCorrect: false
       explanation: "Authentication is mainly about the user, not the computer."
@@ -35,15 +35,15 @@ quiz:
       explanation: "Two-factor authentication (2FA) provides more secure verification of a user using multiple factors."
     - content: "Biometric authentication"
       isCorrect: false
-      explanation: "Biometrics provide additional security but don't pass through authentication to another service."
+      explanation: "Biometrics provide extra security, but don't pass through authentication to another service."
     - content: "Single sign-on"
       isCorrect: true
       explanation: "Single sign-on enables a user to sign in to one service and have their authentication passed through to another."
-  - content: "Which of the following could be an example of a phishing attack?"
+  - content: "Which is an example of a phishing attack?"
     choices:
     - content: "A computer system asks a person to verify themselves with a password and a code"
       isCorrect: false
-      explanation: "This is called two-factor authentication and is a way of keeping you safer."
+      explanation: "Using a password and a code is two-factor authentication, and is a way of keeping you safer."
     - content: "A system authenticates a person but doesn't authorize them to do something"
       isCorrect: false
       explanation: "A system can let a person in (authenticate) but restrict access (not authorize). This is a way to keep people and resources safe."
