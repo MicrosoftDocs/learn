@@ -18,7 +18,8 @@ abstract: |
   - Use the Python interpreter to execute statements and scripts
   - Learn how to declare variables
   - Build a simple Python app that takes input and produces output
-prerequisites: None
+prerequisites: |
+ - An Azure account. Learn how to create a free account in [Create an Azure account](https://learn.microsoft.com/en-us/training/modules/create-an-azure-account/).
 iconUrl: /training/achievements/intro-to-python.svg
 levels:
   - beginner
