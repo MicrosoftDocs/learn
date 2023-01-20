@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Test your knowledge on how to use automated machine learning to find the best classification model in Azure Machine Learning."
-  ms.date: 01/19/2023
+  ms.date: 01/20/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -12,18 +12,18 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "You want to use automated machine learning to find the model with the best AUC_weighted metric. Which parameter of the classification function should you set?"
+  - content: "A data scientist wants to use automated machine learning to find the model with the best AUC_weighted metric. Which parameter of the classification function should be configured?"
     choices:
     - content: "`task='AUC_weighted'`"
       isCorrect: false
-      explanation: "Incorrect. Task is used to specify whether you're training a classification, regression, or forecasting model.."
+      explanation: "Incorrect. Task is used to specify whether you're training a classification, regression, or forecasting model."
     - content: "`target_column_name='AUC_weighted'`"
       isCorrect: false
       explanation: "Incorrect. The target is the column you want to predict."
     - content: "`primary_metric='AUC_weighted'`"
       isCorrect: true
       explanation: "Correct. Set the primary metric to the performance score for which you want to optimize the model."
-  - content: "You've preprocessed the training data and want to use automated machine learning to quickly iterate through various algorithms. You don't want the data to be changed. What should be the featurization model to train a model without letting automated machine learning make changes to the data?"
+  - content: "A data scientist has preprocessed the training data and wants to use automated machine learning to quickly iterate through various algorithms. The data shouldn't be changed. What should be the featurization mode to train a model without letting automated machine learning make changes to the data?"
     choices:
     - content: "`auto`"
       isCorrect: false

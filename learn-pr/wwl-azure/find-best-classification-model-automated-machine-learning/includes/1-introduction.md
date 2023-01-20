@@ -4,7 +4,7 @@ Going through trial and error to find the best performing model can be time-cons
 
 AutoML allows you to try multiple preprocessing transformations and algorithms with your data to find the best machine learning model.
 
-![Diagram illustrating how multiple models are trained and evaluated, after the model with the best performing metrics is selected.](../media/automated-ml.jpg)
+![Diagram illustrating how multiple models are trained and evaluated, after the model with the best performing metrics is selected.](../media/automated-machine-learning.jpg)
 
 Imagine you want to find the best performing **classification** model. You can create an AutoML experiment using the visual interface of Azure Machine Learning studio, the Azure command-line interface (CLI), or the Python software development kit (SDK). 
 

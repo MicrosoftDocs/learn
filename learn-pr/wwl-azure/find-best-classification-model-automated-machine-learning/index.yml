@@ -3,7 +3,7 @@ uid: learn.wwl.find-best-classification-model-automated-machine-learning
 metadata:
   title: Find the best classification model with Automated Machine Learning
   description: "Find the best classification model with Automated Machine Learning"
-  ms.date: 01/19/2023
+  ms.date: 01/20/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -15,7 +15,8 @@ abstract: |
   - Prepare your data to use AutoML for classification.
   - Configure and run an AutoML experiment.
   - Evaluate and compare models.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
