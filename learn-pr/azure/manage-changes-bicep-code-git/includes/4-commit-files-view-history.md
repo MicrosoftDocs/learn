@@ -54,7 +54,7 @@ A _commit_ represents a set of changes to one or more files in your repository. 
 Here's an example that shows how you commit the staged changes shown earlier:
 
 ```bash
-git commit --message "Add Cosmos DB account definition."
+git commit --message "Add Cosmos DB account definition"
 ```
 
 > [!NOTE]
