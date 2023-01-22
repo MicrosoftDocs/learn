@@ -39,5 +39,5 @@ Using Azure Arc, organizations can connect Kubernetes clusters located anywhere 
 SQL Server on Azure Arc-enabled servers extends Azure services to existing SQL Server instances hosted outside of Azure in the customer’s datacenter, on the edge, or in a multi-cloud environment.
 
 ### Azure Arc-enabled data services
-Azure Arc-enabled data services make it possible to run Azure data services such as Azure Arc-enabled-SQL Managed Instance and Azure Arc enabled PostgreSQL Hyperscale. You can run these systems on-premises, at the edge, in Azure and in other public clouds. 
+Azure Arc-enabled data services make it possible to run Azure data services such as Azure Arc-enabled-SQL Managed Instance. You can run these systems on-premises, at the edge, in Azure and in other public clouds. 
 Using Kubernetes allows you to use the infrastructure of your choice. You get an always-current, elastically scaled, self-provisioning deployment. You also get a unified command-line and graphical management and monitoring system. Azure Arc-enabled data services have both direct and indirect connected modes. Azure Arc-enabled data services also provide deep security and compliance monitoring.

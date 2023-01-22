@@ -981,6 +981,136 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/deploy-configure-azure-arc-enabled-sql-managed-instance/1-introduction.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-enabled-sql-managed-instance/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-azure-arc-enabled-sql-managed-instance/2-compare-azure-arc-sql-mi-to-other-sql-products-services.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-enabled-sql-managed-instance/2-what-is-azure-arc-enabled-sql-mi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-azure-arc-enabled-sql-managed-instance/3-deploy-azure-arc-enabled-sql-mi.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-enabled-sql-managed-instance/3-deploy-azure-arc-enabled-sql-mi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-azure-arc-enabled-sql-managed-instance/4-exercise-deploy-azure-arc-enabled-sql-mi.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-enabled-sql-managed-instance/3-deploy-azure-arc-enabled-sql-mi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-azure-arc-enabled-sql-managed-instance/5-exercise-restore-adventureworks2019-azure-arc-enabled-sql-mi.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-enabled-sql-managed-instance/6-exercise-restore-azure-arc-enabled-sql-mi-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-azure-arc-enabled-sql-managed-instance/6-use-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-enabled-sql-managed-instance/7-exercise-manage-azure-arc-enabled-sql-mi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-azure-arc-enabled-sql-managed-instance/7-exercise-using-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-enabled-sql-managed-instance/7-exercise-manage-azure-arc-enabled-sql-mi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-azure-arc-enabled-sql-managed-instance/8-knowledge-check.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-enabled-sql-managed-instance/8-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-azure-arc-enabled-sql-managed-instance/9-summary.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-enabled-sql-managed-instance/9-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-azure-arc-enabled-sql-managed-instance/index.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-enabled-sql-managed-instance/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-data-services/5-postgresql-hyperscale.yml",
+      "redirect_url": "/training/modules/intro-to-arc-enabled-data-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "earn-pr/azure/intro-to-arc-enabled-data-services/includes/5-postgresql-hyperscale.md",
+      "redirect_url": "/training/modules/intro-to-arc-enabled-data-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-explore-azure-arc-enabled-data-services/10-summary.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-data-controller/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-explore-azure-arc-enabled-data-services/1-introduction.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-data-controller/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-explore-azure-arc-enabled-data-services/2-prepare-for-arc-enabled-data-services.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-data-controller/2-prepare-for-arc-enabled-data-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-explore-azure-arc-enabled-data-services/3-evaluate-connectivity-modes.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-data-controller/2-prepare-for-arc-enabled-data-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-explore-azure-arc-enabled-data-services/4-deploy-azure-arc-data-controller.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-data-controller/3-deploy-azure-arc-data-controller",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-explore-azure-arc-enabled-data-services/6-introduction-to-az-arcdata.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-data-controller/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-explore-azure-arc-enabled-data-services/7-exercise-using-az-arcdata.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-data-controller/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-explore-azure-arc-enabled-data-services/8-explore-azure-arc-enabled-data-services.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-data-controller/5-manage-azure-arc-data-controller",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-explore-azure-arc-enabled-data-services/9-knowledge-check.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-data-controller/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/2-establish-high-availability-disaster-recovery-for-azure-arc-enabled-sql-mi.yml",
+      "redirect_url": "/training/modules/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/3-azure-arc-enabled-sql-mi-disaster-recovery-options.yml",
+      "redirect_url": "/training/modules/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/3-explore-disaster-recovery-azure-arc-enabled-sql-mi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/4-exercise-configure-and-explore-high-availability-disaster-recovery.yml",
+      "redirect_url": "/training/modules/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/3-explore-disaster-recovery-azure-arc-enabled-sql-mi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-explore-azure-arc-enabled-data-services/5-exercise-deploy-azure-arc-data-controller.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-data-controller/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-explore-azure-arc-enabled-data-services/index.yml",
+      "redirect_url": "/training/modules/deploy-manage-azure-arc-data-controller/index",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/data-ai-cert/intro-to-azure-machine-learning-service/5-create-pipeline.md",
       "redirect_url": "/training/modules/intro-to-azure-machine-learning-service",
       "redirect_document_id": false
