@@ -3,9 +3,10 @@ uid: learn.iot.building-and-running-a-udp-echo-server
 metadata:
   title: Building and running a UDP echo server
   description: Building and running a UDP echo server
-  ms.date: 01/30/2023
+  ms.date: 01/20/2023
   author: edlamie80
   ms.author: liydu
+  manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Building and running a UDP echo server

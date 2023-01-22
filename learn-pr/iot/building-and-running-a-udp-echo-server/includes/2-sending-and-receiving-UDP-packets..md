@@ -1,9 +1,9 @@
 # Getting started
 
-This project will build on the UDP echo client module and will introduce you to additional concepts of UDP. The logic of the UDP echo server for this project is straightforward and the following is an overview.
+This project will build on the UDP echo client module and will introduce you to more concepts of UDP. The logic of the UDP echo server for this project is straightforward and the following procedure is an overview.
 
  1. Create a UDP socket.
- 1. Bind to a port. In this project, we choose UDP port 7 because this is a well-known port.
+ 1. Bind to a port. In this project, we choose UDP port 7 because it's a well-known port.
  1. Loop to receive a UDP packet.
  1. Retrieve the IP address and port from the packet.
  1. Send the UDP packet.
@@ -12,7 +12,7 @@ The following diagram illustrates the main features of ProjectUDPEchoServer.
 
    ![Sequence diagram showing the main features of ProjectUDPEchoServer.](../../building-and-running-a-udp-echo-server/media/00-sequence-diagram-for-project-echo-server.svg)
 
-To get started, let’s look at the code in the UDP echo server project, and understand the purpose of each section. We will investigate the code based on the general NetX template discussed previously.
+To get started, let’s look at the code in the UDP echo server project, and understand the purpose of each section. We'll investigate the code based on the general NetX template discussed previously.
 
 ## Section 1—include directives and definitions
 
@@ -174,7 +174,7 @@ UINT    status;
 
 ## Section 4—Thread entry function
 
-This is the function for the thread called **server_thread_entry** that performs the operations of the echo server.
+The following function for the thread called **server_thread_entry** performs the operations of the echo server.
 
 > [!NOTE]
 > Here we define the variable **status** that we’ll use to check the results of various service calls. We also define the server address and the packet pointer for transmitting and receiving.

@@ -1,7 +1,7 @@
 # Building and running the project
 
-We will use codespace to build and run the UDP echo server project, and future projects in this learning path. There are four steps required to build and run this project, and these steps are described below.
-
+We'll use codespace to build and run the UDP echo server project, and future projects in this learning path. There are four steps required to build and run this project, and the following procedure describes
+these steps.
 ## Step 1—Go to codespace
 
 1. Launch your browser and go to the forked samples repository, which you've done in a previous module. The link should look like this: https://github.com/lyour_githubJdl/azure-rtos-learn-samples
@@ -15,23 +15,23 @@ We will use codespace to build and run the UDP echo server project, and future p
 The path to the UDP echo server project in codespace is:
 **courses –> netxduo –> ProjectUDPEchoServer -> main.c**
 
-Navigate to main.c under **ProjectEchoServer** as illustrated below.
+Navigate to main.c under **ProjectEchoServer** as illustrated in the following diagram.
 
 ![Screenshot showing main.c.](../media/02-main-appears.png)
 
 ## Step 3—Build project UDP echo server
 
-Build your project by following the steps in the illustration below as a guide.
+Build your project by performing the steps in the following illustration.
 
 ![Screenshot showing the steps to build your project.](../media/03-build-project.png)
 
 ## Step 4—Run project UDP echo server
 
-Run your project by following the steps in the illustration below as a guide.
+Run your project by following the steps in the following illustration.
 
 ![Screenshot showing the steps to run your project.](../media/04-run-project.png)
 
-After running your project, you will get a confirmation that NetX is running, as illustrated in the following image.
+After running your project, you'll get a confirmation that NetX is running, as illustrated in the following image.
 
 ![Screenshot showing that NetX is running.](../media/05-run-project-udp-echo-erver.png)
 

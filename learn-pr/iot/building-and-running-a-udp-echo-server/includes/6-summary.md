@@ -1,6 +1,6 @@
 # Summary
 
-In this module, you built and ran **ProjectUDPEchoServer**. You used a considerable number of services and concepts. Following is a summary the services and concepts that you have used.
+In this module, you built and ran **ProjectUDPEchoServer**. You used a considerable number of services and concepts. Following is a summary the services and concepts that you've used.
 
 | **Service or Concept**                   | **Service or Concept**    |
 |------------------------------------------|----------------------------|
