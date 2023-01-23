@@ -2,13 +2,13 @@ Integrating the different technologies just deployed.
 
 At this point, you should have all resources running and operational. Although the integration between CluedIn and Purview is already operational, we do need to setup some of the other integrations in their respetice user interfaces. 
 
-In your previous exercise you may have noticed that when installing the ADLSv2 instance, we also prepopulated the instance with the data necessary for the exercise. Therefore, right now, there is nothing we need to setup in the ADLSv2 instance. 
+In your previous exercise you may have noticed that when installing the ADLS Gen2 instance, we also prepopulated the instance with the data necessary for the exercise. Therefore, right now, there is nothing we need to setup in the ADLS Gen2 instance. 
 
 Let's login to Microsoft Purview. You can do this by choosing the Purview Account in your resource group and then clicking the Open Purview Studio link. This will open Purview in a new tab. You can close the Purview Account in the Azure Portal as we will not need this for the rest of the exercise. 
 
-Click on your Data Map on the left hand side menu and click Register. Choose ADLSv2 from the selection and in the drop down, select the instance called Data Governance that was created in the previous step. 
+Click on your Data Map on the left hand side menu and click Register. Choose ADLS Gen2 from the selection and in the drop down, select the instance called Data Governance that was created in the previous step. 
 
-Next, setup a scan to scan the files every 1 hour and then trigger an initial scan. This will typically take many minutes to scan the files in the ADLSv2 instance. 
+Next, setup a scan to scan the files every 1 hour and then trigger an initial scan. This will typically take many minutes to scan the files in the ADLS Gen2 instance. 
 
 After the scan is complete, you should validate that everything was success by making sure that there are 10 assets in your Purview instance. 
 
@@ -36,7 +36,7 @@ Repeat the steps above for bringing in the other assets from Purview.
 
 You will notice that CluedIn is not asking you to map files to files, but rather Domains to Domains. The value of this is that we do not have to manually wire and ETL files together, but rather have the CluedIn do this in an automated way by simply flagging foreign keys and primary keys. This is only made possible due to the schemaless nature of CluedIn. 
 
-This is also why you can add these assets from Purview (ADLSv2) in any order that you want - it will all end up in the same state. 
+This is also why you can add these assets from Purview (ADLS Gen2) in any order that you want - it will all end up in the same state. 
 
 
 If all steps were followed, you should end up with the result that you have 1000 Organizations, 1000 Person and 300 PowerPoint Domains. 

@@ -4,7 +4,7 @@ This module requires a sandbox to complete. A sandbox gives you access to free r
 
 Microsoft provides this lab experience and related content for educational purposes. All presented information is owned by Microsoft and intended solely for learning about the covered products and services in this Microsoft Learn module. 
 
-Setting up your environment and deploying some resources to start with is an important step in building full stack applications. For providing an end to end data technology stack we will be creating many resources and integrating them together as to provide a steady and robust flow of high quality data. In this exercise you will deploy some foundational services that you'll use in the future exercises. This exercise includes setting up your ADLSv2 instance and your Microsoft Purview instance. 
+Setting up your environment and deploying some resources to start with is an important step in building full stack applications. For providing an end to end data technology stack we will be creating many resources and integrating them together as to provide a steady and robust flow of high quality data. In this exercise you will deploy some foundational services that you'll use in the future exercises. This exercise includes setting up your ADLS Gen2 instance and your Microsoft Purview instance. 
 
 Configure your environment with Visual Studio Code
 In order to complete the exercises, you'll need to configure your environment. If you already have these components installed and configured, you don't need to repeat the steps.
