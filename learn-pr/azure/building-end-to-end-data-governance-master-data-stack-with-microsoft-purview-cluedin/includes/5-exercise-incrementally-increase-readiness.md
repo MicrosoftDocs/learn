@@ -4,7 +4,7 @@ We are off to a good start where the data is merging and linking. We still have 
 
 CluedIn was designed that you can decided to improve the data in any order that you want. For example, we could either enrich data first and deduplicate the data afterwards or we could clean the data first and then deduplicate the data and then enrich the data afterwards. Once again, this speaks to the agility of the platform that we do not have to run things in a classic waterfall approach where one part of the story must be done before we can start the next. 
 
-The first step in knowing what to do, is probably to get some idea of what is wrong in the first place. Click on the Data Quality menu option in which you will discover CluedIn's inbuilt Data Quality metrics scoring the data across 17 different dimenions. This is a great place to start. You can see that overall, the completes of all the data in CluedIn is not great. This would tell us that we have many records that are missing values. Although not required, this is a place to start. 
+The first step in knowing what to do, is probably to get some idea of what is wrong in the first place. Select the Data Quality menu option in which you will discover CluedIn's inbuilt Data Quality metrics scoring the data across 17 different dimenions. This is a great place to start. You can see that overall, the completes of all the data in CluedIn is not great. This would tell us that we have many records that are missing values. Although not required, this is a place to start. 
 
 For this, there are a couple of tools I can use to fix this incompleteness:
 

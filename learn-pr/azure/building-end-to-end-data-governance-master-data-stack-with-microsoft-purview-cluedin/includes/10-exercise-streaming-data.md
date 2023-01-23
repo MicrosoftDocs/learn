@@ -2,11 +2,11 @@ Exercise - Streaming Data out from CluedIn to ADLS Gen2
 
 It may sound odd that we are going to stream data out into ADLS Gen2 in a folder called mastered, when there are still so many problems with the data that need to be addressed. At the same time, we need to realise that agility and time to value is of upmost importance in todays modern technology stack. This speaks to CluedIn's agility, in that we can, within moments, have a pipeline setup that is delivering some value very quickly - not locking up the data until we have fixed every single possible data issue. Let's be honest, the data is already in a better level od usability and we have not even done anything but map the data so far. 
 
-Navigate to your Export Targets and click "Add Export Target". 
+Navigate to your Export Targets and select "Add Export Target". 
 
 Choose Azure ADLS Gen2 and choose the ADLS Gen2 from the drop down. 
 
-Click on "Streams" in the Left-Hand Menu and Create a New Stream. 
+Select "Streams" in the Left-Hand Menu and Create a New Stream. 
 
 A Stream in CluedIn will allow an end user to setup a Push-based delivery of data to a target. In this case, it will deliver it to one or more Export Targets. 
 
