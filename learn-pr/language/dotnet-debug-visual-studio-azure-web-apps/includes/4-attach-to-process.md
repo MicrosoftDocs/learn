@@ -47,11 +47,17 @@ Once your symbols have loaded, you can debug the Azure hosted app just like you 
 
 1) Open the `appsettings.json` file to investigate further. Inside of this file there are a few configuration settings around logging - but no `GitHubUrl` value to be found.
 
-    When you set up the sample project you updated the configuration settings in the `appsettings.Development.json`. This file contains configurations that will only be applied while running during development - not when deployed to Azure. Forgetting to set configurations for the production version of your hosted application in Azure is a common source of bugs.
+1) Open the `appsettings.Development.json` file.
 
-    :::image type="content" source="../media/visual-studio-remote-debug-github-url.png" alt-text="A screenshot of the application settings.":::
+    When you set up the sample project you updated the configuration settings in `appsettings.Development.json`. This file contains configurations that will only be applied while running during development - not when deployed to Azure. Forgetting to set configurations for the production version of your hosted application in Azure is a common source of bugs.
 
-1) Copy the `GitHubUrl` key-value pair and paste it into the top level `appsettings.json` file so that the two files match. The new configuration value will travel with it in the `appsettings.json` file when the app is deployed to Azure again.
+    :::image type="content" source="../media/visual-studio-remote-debug-github-url.png" alt-text="A screenshot of the application development settings.":::
+
+1) Copy the `GitHubUrl` key-value pair from `appsettings.Development.json` and paste it into the top level `appsettings.json` file so that the two files match. The new configuration value will travel with it in the `appsettings.json` file when the app is deployed to Azure again.
+
+    The `appsettings.json` file should look something like this.
+
+    :::image type="content" source="../media/visual-studio-remote-debug-github-url-copied.png" alt-text="A screenshot of the application settings.":::
 
 1) Detach the debugger from the App Service by pressing the stop button at the top of Visual Studio, just like a local debugging session.
 
