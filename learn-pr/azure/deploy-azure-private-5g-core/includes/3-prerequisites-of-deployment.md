@@ -27,9 +27,9 @@ Depending on your requirements, you have the following options for configuring a
 
 - If you need the UEs connected to this data network to resolve domain names, you must configure one or more DNS servers. You must use a private DNS server if you need DNS resolution of internal hostnames. If you're only providing internet access to public DNS names, you can use a public or private DNS server.
 - If you don't need the UEs to perform DNS resolution, or if all UEs in the network will use their own locally configured DNS servers (instead of the DNS servers signaled to them by the packet core), you can omit this configuration.
-- **Set up the ports required for local access**: Set up the ports required to open for Azure Private 5G Core local access. This includes local management access and control plane signaling. Make sure to open the following ports to allow the inbound traffic from the remote access VM to the ASE local UI, AP5GC AKS cluster and Grafana dashboard.
+- **Set up the ports required for local access**: Set up the ports required to open for Azure Private 5G Core local access. This includes local management access and control plane signaling. Make sure to open the relevant ports to allow the inbound traffic from the remote access VM to the ASE local UI, Azure Kubernetes Service (AKS) cluster, and Grafana dashboard.
 
-To ensure successful connectivity of all the ASE and AP5GC infrastructure to Azure services, we recommend configuring a firewall to allow all outbound traffic.
+To ensure successful connectivity of all the ASE and Azure Private 5G Core infrastructure to Azure services, we recommend configuring a firewall to allow all outbound traffic.
 
 If you don't want to allow all outbound traffic, you'll have to configure the firewall with Azure services specific IP addresses and the URLs. Contact Microsoft Support to obtain the list of Azure services specific IP address and URL details.
 

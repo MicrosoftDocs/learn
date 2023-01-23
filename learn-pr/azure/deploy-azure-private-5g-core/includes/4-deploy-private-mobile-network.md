@@ -25,9 +25,9 @@ As part of creating your private mobile network, you can provision one or more S
 > [!NOTE]
 > If you decide not to provision SIMs at this point, you can do so after deploying your private mobile network. Likewise, if you need more than one SIM group, you can create additional SIM groups after you've deployed your private mobile network.
 
-#### **Decide whether you want to use the default service and SIM policy**
+#### **Decide whether you want to create a default service and SIM policy**
 
-Azure Private 5G Core offers a default service and SIM policy that allow all traffic in both directions for all the SIMs you provision. They're designed to allow you to quickly deploy a private mobile network and bring SIMs into service automatically, without the need to design your own policy control configuration.
+If you want, you can choose to create a default service and SIM policy that can be used later. They're designed to allow you to quickly deploy a private mobile network and bring SIMs into service automatically, without the need to design your own policy control configuration.
 
 #### **Configure custom location for AKS cluster**
 
@@ -50,7 +50,7 @@ This section helps you to create the mobile networks resource representing your 
    :::image type="content" source="../media/basics-configuration-tab1.png" alt-text="This screen displays the basics configuration tab.":::
 
 1. On the **SIMs** configuration tab, select your chosen input method by selecting the appropriate option next to **How would you like to input the SIMs information?** You can then input the information you collected in [Collect SIM and SIM Group values](/azure/private-5g-core/collect-required-information-for-private-mobile-network).
-   - If you decide not to provision any SIMs at this point, select **Add SIMs later**. By selecting this, you can add SIMS later while managing your mobile networks. For more information, see [Management module](/training/modules/manage-azure-private-5g-core/?branch=pr-en-us-31182).
+   - If you decide not to provision any SIMs at this point, select **Add SIMs later**. By selecting this, you can add SIMS later while managing your mobile networks. For more information, see the [Management](/training/modules/manage-azure-private-5g-core/) module.
 
      :::image type="content" source="../media/sim-configuration-tab1.png" alt-text="This screen displays the SIM configuration tab.":::
 
@@ -88,7 +88,7 @@ This section helps you to create the mobile networks resource representing your 
 
    Under **Enter encryption details for SIM group**, set **Encryption type** to your chosen encryption type. Once the SIM group is created, you can't change the encryption type:
 
-    - On SIM group creation, customers can either select **Customer Managed Key** option and provide the identity and encryption key details or can select **Microsoft Managed Key (None)** which is a default one.
+    - On SIM group creation, customers can either select **Customer Managed Key** option and provide the identity and encryption key details or can select **Microsoft Managed Key (None)**, which is a default one.
 
     - On selecting **Microsoft Managed Key** option, SIM group and SIM workflow will remain the same as existing. No additional encryption will be applied on the SIM secrets (Ki and OPC).
 
@@ -117,6 +117,6 @@ You can now validate the mobile network created:
 
 - A **SIM group** resource (if you provisioned SIMs).
 
-- **Service**, **SIM Policy**, **Data Network**, and **Slice** resources (if you decided to use the default service and SIM policy).
+- **Service**, **SIM Policy**, **Data Network**, and **Slice** resources (if you decided to create a default service and SIM policy).
 
    :::image type="content" source="../media/validate-resources.png" alt-text="A screen that provides information about the resource validation.":::

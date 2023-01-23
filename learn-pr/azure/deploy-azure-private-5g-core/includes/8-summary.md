@@ -2,7 +2,7 @@ In this module, we introduced the perquisites, methods, and procedures for deplo
 
 Once you've learned to deploy a private mobile network through the Azure portal, you may want to learn more about how to deploy using the ARM template deployment method. ARM templates can make your deployment more efficient.  
 
-If you want to learn about service and SIM policy configuration, check the [Management training module](/training/modules/manage-azure-private-5g-core/?branch=pr-en-us-31182).
+If you want to learn about service and SIM policy configuration, check the [Management](/training/modules/manage-azure-private-5g-core/) module.
 
 ## References
 

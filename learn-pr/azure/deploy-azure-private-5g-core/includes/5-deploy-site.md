@@ -7,21 +7,19 @@ This section includes:
 
 Before creating a site, perform the following tasks:
 
-1. To begin with, collect the required information for a site. Refer to [Collect information for a site - Azure Private 5G Core Preview](/azure/private-5g-core/collect-required-information-for-a-site).
+1. To begin with, collect the required information for a site. For more information, see [Collect information for a site - Azure Private 5G Core Preview](/azure/private-5g-core/collect-required-information-for-a-site).
 1. Refer to the release notes for the current version of packet core, and whether it's supported by the version your Azure Stack Edge (ASE) is currently running. If your ASE version is incompatible with the latest packet core, [update your Azure Stack Edge Pro GPU](/azure/databox-online/azure-stack-edge-gpu-install-update).
 1. Sign in to the Azure portal using your account to access the active subscription you used to create your private mobile network. This account must have the built-in contributor or owner role at the subscription level.
-1. Configure custom location for AKS cluster: To configure ASE and to create an AKS cluster on the ASE using Azure portal, refer to [Azure Stack Edge documentation](/azure/databox-online/).
+1. Configure custom location for AKS cluster: To configure ASE and to create an AKS cluster on the ASE using Azure portal, see [Azure Stack Edge documentation](/azure/databox-online/).
 1. Sign in to the  [Azure portal](https://portal.azure.com/) to create the mobile network site resource representing the physical enterprise location of your Azure Stack Edge device, which will host the packet core instance.
 
 ## Create a site for deployment
 
-You can add a new site to an existing mobile network then configure ASE later.
-
-If you have ASE pre-configured, it takes a few hours to deploy a site.
+You can add a new site to an existing mobile network and then configure ASE later.
 
 When you deploy a site, the following are deployed automatically:
 
-- **Packet Core** - Each site contains an instance of a 5G packet core (5GC), which connects your 4G or 5G devices to the upstream network and manages the traffic flows between them.
+- **Packet Core** - Each site contains an instance of a packet core, which connects your 4G or 5G devices to the upstream network and manages the traffic flows between them.
 - **Troubleshooting tools (distributed tracing and local monitoring** **tool)**  - Each site deployment includes powerful tools to help local administrators monitor and diagnose the system in their site.
   1. Search for and select the **Mobile** **Network resource** representing the private mobile network to which you want to add a site.
 
@@ -60,7 +58,7 @@ When you deploy a site, the following are deployed automatically:
 
      :::image type="content" source="../media/validation-site.png" alt-text="This screen displays the site validation complete message.":::
 
-  1. Once your configuration has been validated, you can select **Create** to create the site. The Azure portal displays the following confirmation screen when the site is created.  This process may take a few minutes based on factors such as the region selected, the edge location, and the internet access speed.
+  1. Once your configuration has been validated, you can select **Create** to create the site. The Azure portal displays the following confirmation screen when the site is created.  This process may take up to an hour based on factors such as the region selected, the edge location, and the internet access speed.
 
      :::image type="content" source="../media/site-deployment-complete.png" alt-text="This image provides the details on the successful site deployment.":::
 
@@ -74,8 +72,8 @@ Select **Go to resource group**, and confirm that the resource group contains th
 
 If you have not yet set the **Custom location** field, set it now. From the resource group overview, select **the Packet Core Control Plane resource** and **select Configure a custom location**. Use the information you collected in [Collect packet core configuration values](/azure/private-5g-core/collect-required-information-for-a-site) to fill out the **Custom location** field and select **Modify**.
 
-If you wish to delete one or more sites created, refer to [Delete sites - Azure Private 5G Core](/azure/private-5g-core/delete-a-site).
-To modify or upgrade a packet core instance, refer to [Modify a packet core instance - Azure Private 5G Core](/azure/private-5g-core/modify-packet-core).
+For instructions to delete one or more sites created, see [Delete sites - Azure Private 5G Core](/azure/private-5g-core/delete-a-site).
+For instructions to modify or upgrade a packet core instance, see [Modify a packet core instance - Azure Private 5G Core](/azure/private-5g-core/modify-packet-core).
 
 ## **Configure a service and SIM policies using Azure portal**
 
@@ -83,10 +81,10 @@ Services are representations of a particular set of QoS information that you wan
 
 You can also use services to block specific traffic types or traffic from specific sources. For more information, see [Policy control](/azure/private-5g-core/policy-control).
 
-For instructions on configuring a service and SIM policies, refer to [Management module](/training/modules/manage-azure-private-5g-core/?branch=pr-en-us-31182).
+For instructions on configuring a service and SIM policies, see the [Management](/training/modules/manage-azure-private-5g-core/) module.
 
-To get instructions on how to configure SIM policies using Azure portal, refer to [Configure a SIM policy - Azure Private 5G Core](/azure/private-5g-core/configure-sim-policy-azure-portal).
+To get instructions on how to configure SIM policies using Azure portal, see [Configure a SIM policy - Azure Private 5G Core](/azure/private-5g-core/configure-sim-policy-azure-portal).
 
 > [!NOTE]
-> Provisioning SIM and SIM policies can be done as part of deployment, however, the preferred way is to select **No** and complete these tasks as part of Managing the Azure Private 5G Core networks.
-> For more information, see [Management module](/training/modules/manage-azure-private-5g-core/?branch=pr-en-us-31182).
+> Provisioning SIM and creating SIM policies can be done as part of deployment. However, if you want to provision SIMs and creating SIM policies later, select **No** to complete these tasks as part of managing the Azure Private 5G Core networks.
+> For more information, see the [Management](/training/modules/manage-azure-private-5g-core/) module.
