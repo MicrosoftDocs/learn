@@ -3,7 +3,7 @@ uid: learn.wwl.build-data-analytics-solutions-using-azure-synapse-serverless-sql
 metadata:
   title: Build data analytics solutions using Azure Synapse serverless SQL pools
   description: Build data analytics solutions using Azure Synapse serverless SQL pools
-  ms.date: 05/24/2022
+  ms.date: 01/23/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -11,8 +11,8 @@ metadata:
 title: Build data analytics solutions using Azure Synapse serverless SQL pools
 prerequisites: |
   Consider completing the [Explore data analytics in Azure](/training/paths/azure-data-fundamentals-explore-data-warehouse-analytics?azure-portal=true) and [Get started querying with Transact-SQL](/training/paths/get-started-querying-with-transact-sql?azure-portal-true) learning paths before starting this learning path. You will need knowledge of:
-  - Analytical data workloads in Microsoft Azure
-  - Querying data with Transact-SQL
+  *   Analytical data workloads in Microsoft Azure
+  *   Querying data with Transact-SQL
 summary: |
   If you have large volumes of data stored as files in a data lake, you'll need a convenient way to explore and analyze the data they contain. Azure Synapse Analytics enables you to apply the SQL skills you use in a relational database to files in a data lake.
 iconUrl: /training/achievements/build-data-analytics-solutions.svg
@@ -29,8 +29,8 @@ subjects:
 - serverless-compute
 modules:
 - learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools
-- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools
 - learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake
+- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools
 - learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools
 trophy:
   uid: learn.wwl.build-data-analytics-solutions.trophy
