@@ -14,7 +14,7 @@ The logic of the UDP echo client is similar to the Hello World project except fo
 
 The following sequence diagram illustrates the main features of **ProjectUDPEchoClient**.
 
-   ![Diagram showing the main features of ProjectUDPEchoClient.](../../building-udp-echo-client/media/00-sequence-diagram-for-project-echo-client.svg)
+![Diagram showing the main features of ProjectUDPEchoClient.](../media/building-udp-echo-client/media/00-sequence-diagram-for-project-echo-client.svg)
 
 Now we'll study the code to determine how the above actions occur. When you're reviewing the code, look for the following define:
 
