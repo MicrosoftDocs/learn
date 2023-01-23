@@ -75,7 +75,7 @@ During the process, you'll:
 When you work with Azure Repos from Visual Studio Code on macOS, you need to use a special password that's different from the password that you use to sign in.
 
 > [!NOTE]
-> If you're using Windows, skip to the next section, "Configure your local Git repository."
+> If you're using Windows, skip to the next section, _Configure your local Git repository_.
 
 1. Select the **Generate Git credentials** button.
 
@@ -111,10 +111,23 @@ Keep your browser open. You'll check on the repository again later in this exerc
 
    The output will look like the example.
 
-   ```Output
+::: zone pivot="github"
+
+   ```output
    origin  https://github.com/mygithubuser/toy-website.git (fetch)
    origin  https://github.com/mygithubuser/toy-website.git (push)
    ```
+
+::: zone-end
+
+::: zone pivot="azurerepos"
+
+   ```output
+   origin https://myuser@dev.azure.com/myuser/toy-website/_git/toy-website (fetch)
+   origin https://myuser@dev.azure.com/myuser/toy-website/_git/toy-website (push)
+   ```
+
+::: zone-end
 
 ## Push your changes by using the Git CLI
 
@@ -198,7 +211,7 @@ Now that your colleagues will use your repository, it's important to create a _R
 
 1. Copy the following text into the file:
 
-   ```markdown
+   ```Markdown
    # Toy company's website
 
    This repository contains the website for our toy company.

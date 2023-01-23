@@ -78,7 +78,7 @@ After you review the file differences, stage and commit your changes. You can ch
 
    The output will look like the following example.
 
-   ```Output
+   ```output
    On branch add-database
     Changes not staged for commit:
       (use "git add <file>..." to update what will be committed)
@@ -103,13 +103,13 @@ After you review the file differences, stage and commit your changes. You can ch
 1. Commit the changes.
 
    ```bash
-   git commit --message "Update main and add Cosmos DB module"
+   git commit --message "Add Cosmos DB module"
    ```
 
    The output will look like the following example.
 
-   ```Output
-   [add-database 513f700] Update main and add Cosmos DB module
+   ```output
+   [add-database 513f700] Add Cosmos DB module
      2 files changed, 71 insertions(+)
      create mode 100644 deploy/modules/cosmos-db.bicep
    ```
