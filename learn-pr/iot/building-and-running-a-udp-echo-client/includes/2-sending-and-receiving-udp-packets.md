@@ -14,7 +14,7 @@ The logic of the UDP echo client is similar to the Hello World project except fo
 
 The following sequence diagram illustrates the main features of **ProjectUDPEchoClient**.
 
-![Diagram showing the main features of ProjectUDPEchoClient.](../media/building-udp-echo-client/media/00-sequence-diagram-for-project-echo-client.svg)
+![Diagram showing the main features of ProjectUDPEchoClient.](../media/00-sequence-diagram-for-project-echo-client.svg)
 
 Now we'll study the code to determine how the above actions occur. When you're reviewing the code, look for the following define:
 
@@ -64,7 +64,7 @@ As you may recall from the NetX general template, the first section comprises in
 /* Define packet pool.  */
 #define PACKET_SIZE                     1536
 #define PACKET_COUNT                    30
-#define PACKET_POOL_SIZE                ((PACKET_SIZE 
+#define PACKET_POOL_SIZE                ((PACKET_SIZE
                                         + sizeof(NX_PACKET)) * PACKET_COUNT)
 
 /* Define IP stack size.   */
@@ -256,7 +256,7 @@ Now we loop forever to send data to the echo server, allocate a packet, write AB
     /* Loop to send data to echo server.  */
     for (;;)
     {
-        
+
         /* Allocate a packet.  */
         status =  nx_packet_allocate(&default_pool, &packet_ptr,
                                      NX_UDP_PACKET, NX_WAIT_FOREVER);
@@ -284,7 +284,7 @@ Now we loop forever to send data to the echo server, allocate a packet, write AB
         status =  nxd_udp_socket_send(&udp_client, packet_ptr,
                                       &echo_server_address,
                                       ECHO_SERVER_PORT);
-        
+
         /* Check status.  */
         if (status != NX_SUCCESS)
         {

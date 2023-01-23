@@ -4,7 +4,11 @@ title: Overview
 metadata:
   title: Overview
   description: Building and running a UDP echo client.
+<<<<<<< HEAD
   ms.date: 01/20/2023
+=======
+  ms.date: 01/23/2023
+>>>>>>> b7b63c5357 (Fix errors)
   author: edlamie80
   ms.author: liydu
   manager: lizross
