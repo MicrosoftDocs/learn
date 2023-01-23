@@ -59,6 +59,46 @@ FROM dbo.StageCustomers
 > [!NOTE]
 > Assuming the **DimCustomer** dimension table is defined with an `IDENTITY` **CustomerKey** column for the surrogate key (as described in the previous unit), the key will be generated automatically and the remaining columns will be populated using the values retrieved from the staging table by the `SELECT` query.
 
+Another way to load a combination of new and updated data into a dimension table is to use a CREATE TABLE AS (CTAS) statement to create a new table that contains the existing rows from the dimension table and the new and updated records from the staging table. After creating the new table, you can delete or rename the current dimension table, and rename the new table to replace it.
+
+```sql
+
+Copy
+CREATE TABLE dbo.DimProductUpsert
+WITH
+(
+    DISTRIBUTION = REPLICATE,
+    CLUSTERED COLUMNSTORE INDEX
+)
+AS
+-- New or updated rows
+SELECT  stg.ProductID AS ProductBusinessKey,
+        stg.ProductName,
+        stg.ProductCategory,
+        stg.Color,
+        stg.Size,
+        stg.ListPrice,
+        stg.Discontinued
+FROM    dbo.StageProduct AS stg
+UNION ALL  
+-- Existing rows
+SELECT  dim.ProductBusinessKey,
+        dim.ProductName,
+        dim.ProductCategory,
+        dim.Color,
+        dim.Size,
+        dim.ListPrice,
+        dim.Discontinued
+FROM    dbo.DimProduct AS dim
+WHERE NOT EXISTS
+(   SELECT  *
+    FROM dbo.StageProduct AS stg
+    WHERE stg.ProductId = dim.ProductBusinessKey
+);
+
+RENAME OBJECT dbo.DimProduct TO DimProductArchive;
+RENAME OBJECT dbo.DimProductUpsert TO DimProduct;
+```
 ### Loading *time* dimension tables
 
 Time dimension tables store a record for each time interval based on the grain of the table. For example, a time dimension table at the *date* grain contains a record for each date between the earliest and latest dates referenced by the data in related fact tables.

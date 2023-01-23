@@ -1,4 +1,16 @@
 
+## Updating dimension tables
+So far we've explored how to Insert new dimension data. However, in many data warehouses you need to handle updates to dimension data and support what are commonly referred to as slowly changing dimensions (SCDs).
+
+There are multiple kinds of slowly changing dimension, of which three are commonly implemented:
+
+- Type 0: Dimension data cannot be changed. Any attempted changes fail.
+- Type 1: A change made to an existing dimension row applies to all previously loaded facts related to the dimension.
+- Type 2: A change to a dimension results in a new dimension row. Existing rows for previous versions of the dimension are retained for historical fact analysis and the new row is applied to future fact table entries.
+  
+Let's take a look at an example of a Type 1 change. Suppose a store changes its name from "High Street Store" to "Town Center Store". In this case, the change should be reflected for all new sales and also all existing historical sales - so any queries that aggregate sales by store name should include all previous sales in the total for the store, regardless of the name change. To handle this change, the load process must identify the existence of any current rows for the affected store in the dimension table based on the alternate key, and update them to change the store name.
+
+Now let's consider an example of a Type 2 change. Suppose a customer changes their address because they move to a new city. In this case, you would want all existing historical sales to still be counted under the city where the customer lived when the sale was made, and all future sales after they moved to be counted under their new city. To handle this change, the load process must create a new row for the customer with a new surrogate key (but the same alternate key) to reflect the new address. Optionally, the table could include a Boolean column to indicate which record for this alternate key is the currently active record, or a DateTime column to indicate the point in time from which the new record applies (otherwise you can rely on an incrementing surrogate key and use the MAX function to find the most recently inserted row for a given alternate key.).
 
 ### Loading *time* dimension tables
 
