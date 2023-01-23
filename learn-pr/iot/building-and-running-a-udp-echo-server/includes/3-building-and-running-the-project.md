@@ -33,7 +33,7 @@ Run your project by following the steps in the following illustration.
 
 After running your project, you'll get a confirmation that NetX is running, as illustrated in the following image.
 
-![Screenshot showing that NetX is running.](../media/05-run-project-udp-echo-erver.png)
+![Screenshot showing that NetX is running.](../media/05-run-project-udp-echo-server.png)
 
 Open a new terminal by pressing the “**+**” sign and entering following **ncat** command.
 
