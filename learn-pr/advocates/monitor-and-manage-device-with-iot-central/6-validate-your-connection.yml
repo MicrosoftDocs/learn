@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.monitor-manage-device-with-iotcentral.8-summary
-title: Summary
+uid: learn.monitor-manage-device-with-iotcentral.validate-your-connection
+title: Validate your connection and data flow
 metadata:
-  title: Summary
+  title: Validate your connection and data flow
   description: This content is a part of Monitor and manage your coffee machine with Azure IoT Central
   ms.date: 01/13/2023
   author: asergaz
@@ -12,6 +12,8 @@ metadata:
   ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 2
+interactive: bash
+azureSandbox: true
+durationInMinutes: 12
 content: |
-  [!include[](includes/8-summary.md)]
+  [!include[](includes/6-validate-your-connection.md)] 

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.monitor-manage-device-with-iotcentral.4-connect-your-application-to-simulator
+uid: learn.monitor-manage-device-with-iotcentral.connect-your-application-to-simulator
 title: Connect your simulated coffee machine to the application
 metadata:
   title: Connect your simulated coffee machine to the application
@@ -16,4 +16,4 @@ interactive: bash
 azureSandbox: true
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-connect-your-application-to-simulator.md)]
+  [!include[](includes/5-connect-your-application-to-simulator.md)]

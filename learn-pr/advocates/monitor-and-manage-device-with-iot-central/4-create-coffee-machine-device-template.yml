@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.monitor-manage-device-with-iotcentral.create-azure-iot-central-application
-title: Exercise - Create an Azure IoT Central application
+uid: learn.monitor-manage-device-with-iotcentral.create-coffee-machine-device-template
+title: Create the coffee machine device template
 metadata:
-  title: Exercise - Create an Azure IoT Central application
+  title: Define the coffee machine device template
   description: This content is a part of Monitor and manage your coffee machine with Azure IoT Central
   ms.date: 01/13/2023
   author: asergaz
@@ -14,4 +14,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-create-azure-iot-central-application.md)]
+  [!include[](includes/4-create-coffee-machine-device-template.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.monitor-manage-device-with-iotcentral.7-knowledge-check
+uid: learn.monitor-manage-device-with-iotcentral.knowledge-check
 title: Knowledge check 
 metadata:
   title: Knowledge check 
@@ -14,7 +14,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 11
 content: |
-  [!include[](includes/7-knowledge-check.md)]
+  [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
