@@ -1,6 +1,6 @@
 Previously, we used the `string.Format()` method to perform composite formatting. It may have seemed a bit strange that a keyword that represents a data type has methods you can call in the same way that you call methods on the `Console` class. The fact is that there are many similar methods on the `string` data type, as well as any literal string or variable of type string.
 
-Here's a brief list of categories of these built-in methods so you can get an idea of what's possible.
+Here's a brief list of categories of these built-in methods, so you can get an idea of what's possible:
 
 - Methods that either add blank spaces for formatting purposes: (`PadLeft()`, `PadRight()`)
 
@@ -12,7 +12,7 @@ Here's a brief list of categories of these built-in methods so you can get an id
 
 - Methods that turn a string into an array of strings or characters: (`Split()`, `ToCharArray()`)
 
-We'll use these methods in other modules as we find a use for their functionality.
+We'll use these methods in other modules as we find uses for their functionalities.
 
 ## Format strings by adding whitespace before or after
 
@@ -23,7 +23,7 @@ string input = "Pad this";
 Console.WriteLine(input.PadLeft(12));
 ```
 
-When you run the code, you'll notice that four characters are prefixed to the left of the string so that it's 12 characters long.
+When you run the code, you'll notice that four characters are prefixed to the left of the string so that it's 12 characters long:
 
 ```output
     Pad this
@@ -48,7 +48,7 @@ Console.WriteLine(input.PadLeft(12, '-'));
 Console.WriteLine(input.PadRight(12, '-'));
 ```
 
-When you run the code, you'll notice four dashes prefixing the left of the string, which is 12 characters long.
+When you run the code, you'll notice four dashes prefixing the left of the string, which is 12 characters long:
 
 ```output
 ----Pad this
