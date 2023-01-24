@@ -1,36 +1,154 @@
 
 
-When loading data into Azure Synapse Analytics on a scheduled basis, it’s important to try to reduce the time taken to perform the data load, and minimize the resources needed as much as possible to maintain good performance cost-effectively. One quick and easy approach is with the use of the `COPY` command in SQL.
+After staging dimension data, you can load it into dimension tables using SQL.
 
-## Loading data into tables
+### Using a CREATE TABLE AS (CTAS) statement
 
-If you use *external* tables for staging, there's no need to load the data into them because they already reference the data files in the data lake. However, if you use "regular" relational tables, you can use the `COPY` statement to load data from the data lake, as shown in the following example:
+One of the simplest ways to load data into a new dimension table is to use a `CREATE TABLE AS` (*CTAS*) expression. This statement creates a new table based on the results of a SELECT statement.
+
+> [!NOTE]
+> For more information, see [CREATE TABLE AS SELECT (CTAS)](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-ctas) in the Azure Synapse Analytics documentation.
+
+For example, the following code creates a new **DimProduct** table based on the results of a query that retrieves data from the **StageProduct** table:
 
 ```sql
-COPY INTO dbo.StageProducts
-    (ProductID, ProductName, ProductCategory, Color, Size, ListPrice, Discontinued)
-FROM 'https://mydatalake.blob.core.windows.net/data/stagedfiles/products/*.parquet'
+CREATE TABLE dbo.DimProduct
 WITH
 (
-    FILE_TYPE = 'PARQUET',
-    MAXERRORS = 0,
-    IDENTITY_INSERT = 'OFF'
-);
+    DISTRIBUTION = REPLICATE,
+    CLUSTERED COLUMNSTORE INDEX
+)
+AS
+SELECT ROW_NUMBER() OVER(ORDER BY ProductID) AS ProductKey,
+       ProductID AS ProductAltKey,
+       ProductName,
+       ProductCategory,
+       Color,
+       Size,
+       ListPrice,
+       Discontinued
+FROM dbo.StageProduct;
 ```
-The COPY statement provides the most flexibility for high-throughput data ingestion into Azure Synapse Analytics. Use COPY for the following capabilities:
 
-- Use lower privileged users to load without needing strict CONTROL permissions on the data warehouse
-- Execute a single T-SQL statement without having to create any additional database objects
-- Properly parse and load CSV files where delimiters (string, field, row) are escaped within string delimited columns
-- Specify a finer permission model without exposing storage account keys using Share Access Signatures (SAS)
-- Use a different storage account for the ERRORFILE location (REJECTED_ROW_LOCATION)
-- Customize default values for each target column and specify source data fields to load into specific target columns
-- Specify a custom row terminator for CSV files
-- Leverage SQL Server Date formats for CSV files
-- Specify wildcards and multiple files in the storage location path
-- Automatic schema discovery simplifies the process of defining and mapping source data into target tables
-- The automatic table creation process automatically creates the tables and works alongside with automatic schema discovery
+> [!NOTE]
+> You can't use `IDENTITY` to generate a unique integer value for the surrogate key when using a CTAS statement, so  this example uses the `ROW_NUMBER` function to generate an incrementing row number for each row in the results ordered by the **ProductID** business key in the staged data.
 
-### File Splitting
+### Using an INSERT statement
 
-There are recommendations for splitting CSV files when loading using the `COPY` command; which is determined by the number of compute nodes multiplied by the number of distributions (60). There is no need to split Parquet and ORC files because the `COPY` command will automatically split files. Parquet and ORC files in the Azure storage account should be 256 MB or larger for best performance.
+When you need to load staged data into an existing dimension table, you can use an `INSERT` statement. This approach works if the staged data contains only records for new dimension entities (not updates to existing entities).
+
+```sql
+INSERT INTO dbo.DimCustomer
+SELECT CustomerNo AS CustomerAltKey,
+       CustomerName,
+       EmailAddress,
+       Phone,
+       StreetAddress,
+       City,
+       PostalCode,
+       CountryRegion
+FROM dbo.StageCustomers
+```
+
+> [!NOTE]
+> Assuming the **DimCustomer** dimension table is defined with an `IDENTITY` **CustomerKey** column for the surrogate key (as described in the previous unit), the key will be generated automatically and the remaining columns will be populated using the values retrieved from the staging table by the `SELECT` query.
+
+Another way to load a combination of new and updated data into a dimension table is to use a CREATE TABLE AS (CTAS) statement to create a new table that contains the existing rows from the dimension table and the new and updated records from the staging table. After creating the new table, you can delete or rename the current dimension table, and rename the new table to replace it.
+
+```sql
+
+Copy
+CREATE TABLE dbo.DimProductUpsert
+WITH
+(
+    DISTRIBUTION = REPLICATE,
+    CLUSTERED COLUMNSTORE INDEX
+)
+AS
+-- New or updated rows
+SELECT  stg.ProductID AS ProductBusinessKey,
+        stg.ProductName,
+        stg.ProductCategory,
+        stg.Color,
+        stg.Size,
+        stg.ListPrice,
+        stg.Discontinued
+FROM    dbo.StageProduct AS stg
+UNION ALL  
+-- Existing rows
+SELECT  dim.ProductBusinessKey,
+        dim.ProductName,
+        dim.ProductCategory,
+        dim.Color,
+        dim.Size,
+        dim.ListPrice,
+        dim.Discontinued
+FROM    dbo.DimProduct AS dim
+WHERE NOT EXISTS
+(   SELECT  *
+    FROM dbo.StageProduct AS stg
+    WHERE stg.ProductId = dim.ProductBusinessKey
+);
+
+RENAME OBJECT dbo.DimProduct TO DimProductArchive;
+RENAME OBJECT dbo.DimProductUpsert TO DimProduct;
+```
+### Loading *time* dimension tables
+
+Time dimension tables store a record for each time interval based on the grain of the table. For example, a time dimension table at the *date* grain contains a record for each date between the earliest and latest dates referenced by the data in related fact tables.
+
+One way to populate a time dimension table is to use a loop that generates the required attributes for each date incrementally. For example, you could use the following SQL code to populate a **DimDate** table:
+
+```sql
+-- Create a temporary table for the dates we need
+CREATE TABLE #TmpStageDate (DateVal DATE NOT NULL)
+
+-- Populate the temp table with a range of dates
+DECLARE @StartDate DATE
+DECLARE @EndDate DATE
+SET @StartDate = '2019-01-01'
+SET @EndDate = '2022-12-31' 
+DECLARE @LoopDate DATE
+SET @LoopDate = @StartDate
+WHILE @LoopDate <= @EndDate
+BEGIN
+    INSERT INTO #TmpStageDate VALUES
+    (
+        @LoopDate
+    ) 
+    SET @LoopDate = DATEADD(dd, 1, @LoopDate)
+END
+
+-- Insert the dates and calculated attributes into the dimension table
+INSERT INTO dbo.DimDate 
+SELECT  CAST(CONVERT(VARCHAR(8), DateVal, 112) AS int) , -- date key
+        DateVal, -- date alt key
+        Day(DateVal),  -- day number of month
+        datepart(dw, DateVal), -- day number of week
+        datename(dw, DateVal), -- day name of week
+        Month(DateVal), -- month number of year
+        datename(mm, DateVal), -- month name
+        datepart(qq, DateVal), -- calendar quarter
+        Year(DateVal), -- calendar year
+        CASE
+            WHEN Month(DateVal) IN (1, 2, 3) THEN 3
+            WHEN Month(DateVal) IN (4, 5, 6) THEN 4
+            WHEN Month(DateVal) IN (7, 8, 9) THEN 1
+            WHEN Month(DateVal) IN (10, 11, 12) THEN 2
+        END, -- fiscal quarter (fiscal year runs from Jul to June)
+        CASE
+            WHEN Month(DateVal) < 7 THEN Year(DateVal)
+            ELSE Year(DateVal) + 1
+        END -- Fiscal year 
+FROM #TmpStageDate
+GO
+```
+
+> [!NOTE]
+> As the data warehouse is populated in the future with new fact data, you periodically need to extend the range of dates in the **DimDate** table.
+
+While the scripted loop approach can be an effective way to populate a time dimension table, it may take some time to run on an MPP system. In some cases, it may be more efficient to generate a sequence of date attributes using an external tool (such as Microsoft Excel) in a file, and using the `COPY` command to load the date data.
+
+Azure Synapse Analytics allows you to create, control, and manage resource availability when workloads are competing. This allows you to manage the relative importance of each workload when waiting for available resources.
+
+To facilitate faster load times, you can create a workload classifier for the load user with the “importance” set to above_normal or High. Workload importance ensures that the load takes precedence over other waiting tasks of a lower importance rating. Use this with your own workload group definitions for workload isolation to manage minimum and maximum resource allocations during peak and quiet periods.

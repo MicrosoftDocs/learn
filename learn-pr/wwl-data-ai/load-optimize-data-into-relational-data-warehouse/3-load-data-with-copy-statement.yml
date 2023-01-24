@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.load-data-with-copy-statement
-title: Load data with the COPY statement
+title: Loading Dimension Tables
 metadata:
-  title: Load data with the COPY statement
-  description: "Load data with the COPY statement"
+  title: Loading Dimension Tables
+  description: "Loading Dimension Tables"
   ms.date: 01/24/2023
   author: wwlpublish
   ms.author: jamesh

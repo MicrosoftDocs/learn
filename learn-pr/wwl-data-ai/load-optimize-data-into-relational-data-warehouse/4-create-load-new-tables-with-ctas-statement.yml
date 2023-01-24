@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.create-load-new-tables-with-ctas-statement
-title: Create and load new tables with the CTAS statement
+title: Slowly Changing Dimensions
 metadata:
-  title: Create and load new tables with the CTAS statement
-  description: "Create and load new tables with the CTAS statement"
+  title: Slowly Changing Dimensions
+  description: "Slowly Changing Dimensions"
   ms.date: 01/24/2023
   author: wwlpublish
   ms.author: jamesh

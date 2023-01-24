@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.load-slowly-changing-dimension-table
-title: Load a slowly changing dimension table
+title: Loading Fact Tables
 metadata:
-  title: Load a slowly changing dimension table
-  description: "Load a slowly changing dimension table"
+  title: Loading Fact Tables
+  description: "Loading Fact Tables"
   ms.date: 01/24/2023
   author: wwlpublish
   ms.author: jamesh
