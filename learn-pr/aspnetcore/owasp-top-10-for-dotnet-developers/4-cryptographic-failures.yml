@@ -14,8 +14,8 @@ content: |
   [!include[](includes/4-cryptographic-failures.md)]
 
 quiz:
-  questions: 
-
+  title: Knowledge Check
+  questions:   
   - content: "It's considered to be good practice to come up with your own, home-grown encryption algorithm?"  
     choices:
     - content: "Yes"

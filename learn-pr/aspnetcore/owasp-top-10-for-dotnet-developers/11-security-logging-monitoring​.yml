@@ -14,8 +14,8 @@ content: |
   [!include[](includes/11-security-logging-monitoring.md)]
 
 quiz:
+  title: Knowledge Check
   questions:  
-
   - content: "Which of the statements would you consider secure logging best practices?"
     choices:
     - content: "Log all events occurring in the system and store the logs in an easily accessible public location."

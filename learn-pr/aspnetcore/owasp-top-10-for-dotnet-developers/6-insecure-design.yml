@@ -14,8 +14,8 @@ content: |
   [!include[](includes/6-insecure-design.md)]
 
 quiz:
+  title: Knowledge Check
   questions: 
-
   - content: "What are the objectives of threat modeling exercise?"
     choices:
     - content: "It's a guided process to help with manual security testing."

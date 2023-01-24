@@ -14,8 +14,8 @@ content: |
   [!include[](includes/7-security-misconfiguration.md)]
 
 quiz:
+  title: Knowledge Check
   questions:
-  
   - content: "In context of Secure DevOps, what does SDL stand for?"
     choices:
     - content: "Schema Definition Language"

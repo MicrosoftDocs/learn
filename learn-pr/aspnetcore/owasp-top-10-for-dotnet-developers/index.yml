@@ -21,7 +21,7 @@ abstract: |
 
 prerequisites: |
   - Basic knowledge of .NET and C# at the beginner level
-  - Basic knowledge of web development with ASP.NET at the beginner level
+  - Basic knowledge of web development with ASP.NET at the beginner level, including controllers and razor syntax
   - Familiarity with programming concepts such as conditional logic and loops at the beginner level
   - Familiarity whit what DevOps, DevSecOps is and its concepts at the beginner level
   - Basic concepts and terminology of cloud hosting and security tooling, including automation and release process.

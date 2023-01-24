@@ -13,7 +13,7 @@ No matter if you are designing a brand new green field application or contributi
         :::image type="content" source="../media/devops-metrics.png" alt-text="Microsoft Defender for DevOps":::
     :::column-end:::
     :::column:::
-        The Microsoft Defender product family can bring best-in-class security features to your product. Defender for DevOps provides unified DevOps security management. The team can gain full visibility into the security posture of pre-production application code, resource configurations across GitHub, Azure DevOps, across multi-cloud and multiple-pipeline environments. You can track threat actor activity and patterns with Microsoft Defender Threat Intelligence. Defender External Attack Surface Management can help discover unmanaged resources that could be potential entry points for an attacker
+        The Microsoft Defender product family can bring best-in-class security features to your product. Defender for DevOps provides unified DevOps security management. You can gain full visibility into the security posture of pre-production application code, resource configurations, multi-cloud and multiple-pipeline environments. You can track threat actor activity and patterns with Microsoft Defender Threat Intelligence. Defender External Attack Surface Management can help discover unmanaged resources that could be potential entry points for an attacker
     :::column-end:::
 :::row-end:::
 
@@ -47,7 +47,7 @@ Security code reviews, automation of security checks with SAST, DAST and SCA, an
 
 Be on a look out for unverified user input.
 
-Security is a journey, not a destination. With the right mindset, you can improve the quality and security standpoint of an application before you’ve even written a single line of code. Try thinking about the design; what files you include in the project; the choices you make about libraries you use; how you handle security and authorization; where you store and build your code; how you deploy the application.
+Security is a journey, not a destination. With the right mindset, you can improve the quality and security standpoint of an application before you’ve even written a single line of code. Try thinking about the design. What files you include in the project? What choices do you make about libraries you reference in your code? How do you handle security and authorization? Where do you store and build your code? How you deploy the application?
 
 ## Learn more
 

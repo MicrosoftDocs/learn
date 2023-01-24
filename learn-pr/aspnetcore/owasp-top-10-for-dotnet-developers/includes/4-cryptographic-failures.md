@@ -1,20 +1,14 @@
 This category refers to failures related to cryptography that often leads to sensitive data exposure or system compromise.
 
 To begin, let's distinguish between encoding, encryption and hashing.
-Encoding a value provides no security, it helps transmit data in a channel (e.g. base 64 encoding over HTTP), it changes the format of a value, obstructs but not protects the value.
-Encryption is a reversible operation that translates text into what may seem a random and meaningless cypher. To decrypt the the value an encryption *key* is needed.
-Hashing is a one-way operation, there is no way to de-hash a value.
+Encoding a value provides no security, it helps transmit data in a channel (for example base 64 encoding over HTTP), it changes the format of a value, obstructs but not protects the value.
+Encryption is a reversible operation that translates text into what may seem a random and meaningless cypher. To decrypt the value an encryption *key* is needed.
+Hashing is a one-way operation, there's no way to de-hash a value.
 
 .NET provides us with all the tools you need, encryption, hashing and random number generation out of the box.
 
-Good practices would include
-
-- Classify the data​
-- Protection data in transit and at rest and in use (Azure confidential computing) ​
-- Use strong cryptographic algorithms like AES
-
-> [!CAUTION]
-> Avoid writing your own cryptographic algorithms. Favor platform's build-in capabilities.
+> [!WARNING]
+> Avoid writing your own cryptographic algorithms. Use strong cryptographic algorithms provided by .NET.
 
 ## Encryption
 
@@ -43,7 +37,7 @@ public static byte[] HashPassword256(string password)​
 
 ## Random numbers
 
-System.Random isn't a random number generator, it's a deterministic pseudo-random sequence generator. Microsoft Learn documentation explicitly states it shouldn't be used for generating passwords. It’s predictable and seeded only from the system clock. To generate a cryptographically secure random number, such as one that's suitable for creating a random password.
+System.Random isn't a random number generator. It's a deterministic pseudo-random sequence generator. Microsoft Learn documentation explicitly states it shouldn't be used for generating passwords. It’s predictable and seeded only from the system clock. To generate a cryptographically secure random number, such as one that's suitable for creating a random password.
 
 ```csharp
 var randomNumberGenerator = System.Security.Cryptography.RandomNumberGenerator.Create();​

@@ -14,8 +14,8 @@ content: |
   [!include[](includes/8-vulnerable-outdated-components.md)]
 
 quiz:
+  title: Knowledge Check
   questions:
-
   - content: "Should the DevOps team maintain and review list of third party components used in the system for security vulnerabilities? "
     choices:
     - content: "An Excel spreadsheet with Software Bill of Materials should be part of the design phase and any new green field project."

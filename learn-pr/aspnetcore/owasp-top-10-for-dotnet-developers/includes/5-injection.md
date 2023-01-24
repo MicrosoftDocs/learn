@@ -5,19 +5,6 @@ As a golden rule, ensure validation is performed whenever you're processing user
 > [!IMPORTANT]
 > Neutralize or verify user input in your application. Always verify that input is safe, legitimate and in the correct format.
 
-Injection can take different forms and shapes, from SQL, process to command injection.
-The canonical example of SQL injection could be the following statement, where `username` in an unsanitised query input parameter:
-
-```sql
-string sql = ​"SELECT * FROM users WHERE name = '" + username + "';";
-```
-
-Without validation of user input, a malicious actor could supplement a genuine user name for a crafted part of SQL statement:
-
-```sql
-SELECT * FROM Users WHERE name = 'a';DROP TABLE users;--
-```
-
 .NET provides build-in capabilities for data annotation and validation. The attributes from `System.ComponentModel.DataAnnotations` namespace can decode your data model to provide the necessary validation functionality. Email, phone, credit card or date validators are only a few examples of the build-in validators that can spare you the effort of writing and maintaining custom code.
 
 ```csharp
@@ -34,6 +21,24 @@ public class ExampleModel ​
     public bool IsValidatedDesign { get; set; }​
 }​
 ```
+
+## SQL Injection
+
+Injection can take different forms and shapes, from SQL, process to command injection.
+The canonical example of SQL injection could be the following statement, where `username` in an unsanitised query input parameter:
+
+```sql
+string sql = ​"SELECT * FROM users WHERE name = '" + username + "';";
+```
+
+Without validation of user input, a malicious actor could supplement a genuine user name for a crafted part of SQL statement:
+
+```sql
+SELECT * FROM Users WHERE name = 'a';DROP TABLE users;--
+```
+
+
+## File Input Validation
 
 In client-server scenarios, make sure the input is validated on both client and server side.
 Additionally, if validation passes on the server, process the form and send back a success status code (200 - OK). ​However, if validation fails, return a failure status code (400 - Bad Request) and the field validation errors.Validation details from server may give the malicious actor more insights on how your app logic works if displayed on the client side.
@@ -72,5 +77,4 @@ Input validation also includes the way you handle file upload. Following example
 }
 ```
 
-> [!NOTE]
-> Check your web app is correctly validating user input by typing in `<iframe src="javascript:alert('HACKED')">` into a text input area.
+As an exercise check if your web app is correctly validating user input by typing in `<iframe src="javascript:alert('HACKED')">` into a text input area. If a browser displays an alert there might be a room for improvement in your validation logic.

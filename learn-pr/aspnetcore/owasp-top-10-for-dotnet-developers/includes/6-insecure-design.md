@@ -8,9 +8,11 @@ A few techniques that can address insecure design are:
 
 - Least privilege​ principle - granting just enough permissions to a user or service to successfully perform an operation.
 - Attack surface reduction​ - limit and control what's visible to external users
-- Zero Trust​ principle - never trust, always verify
+- Zero Trust​ principle - never trust, always verify explicitly
 - Defense in Depth​ - layered and tiered security approach
 - Threat Modeling​
+
+Exercise ***assume breach*** mentality - minimize blast radius for breaches and prevent lateral movement by segmenting access by network, user, devices, and application awareness. Verify all sessions are encrypted end to end. Use analytics to get visibility, drive threat detection, and improve defenses. Always authenticate and authorize based on all available data points, including user identity, location, device health, service or workload, data classification, and anomalies.
 
 Let's discuss the latest in more detail. Threat modeling is an essential part of DevSecOps because it informs your security design process and helps find vulnerabilities in your application. While it does fall under DevSecOps, it also sits neatly under education too.
 

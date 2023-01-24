@@ -15,8 +15,8 @@ content: |
   [!include[](includes/10-software-data-integrity-failures.md)]
 
 quiz:
-  questions:
- 
+  title: Knowledge Check
+  questions: 
   - content: "You plan to analyze deployed and running system. You want to focus finding security vulnerabilities in infrastructure and configuration. Which form of security testing would you benefit the most?"
     choices:
     - content: "Static application security testing (SAST)."
