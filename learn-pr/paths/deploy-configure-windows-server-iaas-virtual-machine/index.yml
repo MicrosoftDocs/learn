@@ -39,7 +39,7 @@ products:
 - azure-portal
 - azure-storage
 - azure-virtual-machines
--azure-automanage
+- azure-automanage
 subjects:
 - virtual-machine
 - it-management-monitoring
