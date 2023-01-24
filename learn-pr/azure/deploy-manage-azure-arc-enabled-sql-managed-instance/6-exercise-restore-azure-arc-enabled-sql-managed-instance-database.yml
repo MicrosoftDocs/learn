@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.exercise-restore-azure-arc-enabled-sql-mi-database
+uid: learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.exercise-restore-azure-arc-enabled-sql-managed-instance-database
 title: Exercise - Restore AdventureWorks2019 database in Azure Arc-enabled SQL Managed Instance
 metadata:
   title: learning-content
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/exercise-restore-azure-arc-enabled-sql-mi-database.md)]
+  [!include[](includes/exercise-restore-azure-arc-enabled-sql-managed-instance-database.md)]

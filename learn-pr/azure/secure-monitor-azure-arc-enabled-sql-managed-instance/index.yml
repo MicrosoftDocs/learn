@@ -39,9 +39,9 @@ subjects:
   - cloud-computing
 units:
 - learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.introduction
-- learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.explore-security-azure-arc-enabled-sql-mi
-- learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.monitor-azure-arc-enabled-sql-mi
-- learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.exercise-monitor-azure-arc-enabled-sql-mi
+- learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.explore-security-azure-arc-enabled-sql-managed-instance
+- learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.monitor-azure-arc-enabled-sql-managed-instance
+- learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.exercise-monitor-azure-arc-enabled-sql-managed-instance
 - learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.knowledge-check
 - learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.summary
 badge:

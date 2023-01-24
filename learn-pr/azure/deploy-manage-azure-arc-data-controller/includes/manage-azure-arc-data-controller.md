@@ -12,7 +12,7 @@ As a component of Azure Arc data services, the data controller is subject to aut
 
 If you want to review the endpoints of a data controller including log search and metrics dashboards, run the **az arcdata dc endpoint list** command and review its output. 
 
-## Enable auto-upload of metrics and logs.
+## Enable auto-upload of metrics and logs
 
 If you change your mind following the deployment of the data controller and you decide to either enable or disable auto-upload of metrics and logs in the directly connected mode, consider using the **az arcdata dc update** command with the *--auto-upload-metrics* parameter set to either true or false. 
 

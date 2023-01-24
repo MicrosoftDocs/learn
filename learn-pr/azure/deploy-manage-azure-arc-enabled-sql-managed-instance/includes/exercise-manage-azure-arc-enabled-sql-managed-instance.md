@@ -1,6 +1,6 @@
 ## Exercise 1: Scale up/down your SQL Managed Instance resources
 
-The number of resources required for your operational Arc-enabled SQL Managed Instance will be dependent on the tier chosen and the number of available resources available on your Kubernetes cluster. To scale up or down the resources (CPU/memory), we can use Azure Data Studio or [`az sql mi-arc update`](/cli/azure/sql/mi-arc?view=azure-cli-latest&preserve-view=true#az-sql-mi-arc-update) commands for our directly connected or indirectly connected mode Arc-enabled SQL Managed Instance environments. We can use the Azure portal, Azure Data Studio, or the `az sql mi-arc update` command in directly connected mode.
+The number of resources required for your operational Arc-enabled SQL Managed Instance will be dependent on the tier chosen and the number of available resources available on your Kubernetes cluster. To scale up or down the resources (CPU/memory), we can use Azure Data Studio or [`az sql mi-arc update`](/cli/azure/sql/mi-arc?view=azure-cli-latest&preserve-view=true#az-sql-managed-instance-arc-update) commands for our directly connected or indirectly connected mode Arc-enabled SQL Managed Instance environments. We can use the Azure portal, Azure Data Studio, or the `az sql mi-arc update` command in directly connected mode.
 
 ## Option 1 - Azure Data Studio GUI deployment
 
@@ -10,12 +10,12 @@ This option is available with environments configured in either the directly con
 2. Right-click on your Arc-enabled SQL Managed Instance and select **Manage**.
 3. Select **Compute + Storage**.
 
-    ![Screenshot of Azure Arc-enabled SQL Managed Instance increase cpu](../media/Core-increase-1.png)
+    ![Screenshot of Azure Arc-enabled SQL Managed Instance increase cpu.](../media/Core-increase-1.png)
 
 4. Increase your CPU request value from 2 to 4
 5. Click **Save**.
 
-    ![Screenshot of Azure Arc-enabled SQL Managed Instance increase cpu - zoom in](../media/Core-increase-2.png)
+    ![Screenshot of Azure Arc-enabled SQL Managed Instance increase cpu - zoom in.](../media/Core-increase-2.png)
 
 ## Option 2 - Azure Data Studio CLI deployment
 
@@ -44,7 +44,7 @@ This option is available with environments configured in either the directly con
        --use-k8s
     ```
 
-    ![PowerShell scale up resources](../media/Core-increase-3.png)
+    ![PowerShell scale up resources.](../media/Core-increase-3.png)
 
 3. Execute the following command and search for the results as shown below:
 
@@ -52,7 +52,7 @@ This option is available with environments configured in either the directly con
     az sql mi-arc show -n $Env:sql-managed-instanceName --k8s-namespace $Env:MyNamespace --use-k8s
     ```
 
-    ![Screenshot of Azure Arc-enabled SQL Managed Instance increase cpu - yaml focus](../media/Core-increase-4.png)
+    ![Screenshot of Azure Arc-enabled SQL Managed Instance increase cpu - yaml focus.](../media/Core-increase-4.png)
 
 ## Exercise 2: Enable SQL Agent
 
@@ -136,7 +136,7 @@ The maintenance window setting on the Arc data controller is essential to allow 
     kubectl describe datacontroller -n <your resource group>
     ```
 
-    ![Screenshot of Azure Arc-enabled data controller maintenance window](../media/maint-window-15.png)
+    ![Screenshot of Azure Arc-enabled data controller maintenance window.](../media/maint-window-15.png)
 
 4. Execute the following command to set the desired-version allowing for automatic patching:
     
@@ -166,11 +166,11 @@ The maintenance window setting on the Arc data controller is essential to allow 
 1. Open Azure Data Studio. Navigate to your Arc Data Controller.
 2. Right-click on your Arc data controller and select **Manage**. Click **Upgrade Management**
 
-    ![Screenshot of Azure Arc-enabled data controller Upgrade Management](../media/azure-data-studio-upgrade-management-16.png)
+    ![Screenshot of Azure Arc-enabled data controller Upgrade Management.](../media/azure-data-studio-upgrade-management-16.png)
 
 3. Choose the version you would like to upgrade to and select **Upgrade**.
 
-    ![Screenshot of Azure Arc-enabled data controller Upgrade](../media/azure-data-studio-upgrade-17.png)
+    ![Screenshot of Azure Arc-enabled data controller Upgrade.](../media/azure-data-studio-upgrade-17.png)
 
 4. In the terminal window, execute the following to track the status of the upgrade:
 
@@ -182,7 +182,7 @@ The maintenance window setting on the Arc data controller is essential to allow 
 
 5. The upgrade process upgrades the data controller first and then upgrades the monitoring stack. The status of the upgrade changes as follows:
 
-    ![Screenshot of Azure Arc-enabled data controller Upgraded](../media/azure-data-studio-upgraded-19.png)   
+    ![Screenshot of Azure Arc-enabled data controller Upgraded.](../media/azure-data-studio-upgraded-19.png)   
 
 You've successfully upgraded the data controller to the latest version.
 
@@ -220,7 +220,7 @@ All statements have been executed in the Azure Data Studio Terminal window for t
     $Env:MyScope = "/subscriptions/$Env:MySuscriptionID/resourceGroups/$Env:MyResourceGroup"
     ```
 
-   ![Screenshot of Service Principal creation parameters](../media/service-principal-parameters-1.png)  
+   ![Screenshot of Service Principal creation parameters.](../media/service-principal-parameters-1.png)  
 
 3. Execute the following command:
 
@@ -230,7 +230,7 @@ All statements have been executed in the Azure Data Studio Terminal window for t
         --scopes $Env:MyScope
     ```
 
-    ![Screenshot of Service Principal creation](../media/service-principal-creation-2.png)  
+    ![Screenshot of Service Principal creation.](../media/service-principal-creation-2.png)  
 
 4. Take the appId from the create command results in the previous step. Execute the following commands:
 
@@ -241,7 +241,7 @@ All statements have been executed in the Azure Data Studio Terminal window for t
         --scope $Env:MyScope
     ```
 
-    ![Screenshot of Service Principal role assignment](../media/service-principal-role-assignment-3.png)  
+    ![Screenshot of Service Principal role assignment.](../media/service-principal-role-assignment-3.png)  
 
 5. Verify the Service Principal role with the following command:
 

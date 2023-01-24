@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.exercise-monitor-azure-arc-enabled-sql-mi
+uid: learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.exercise-monitor-azure-arc-enabled-sql-managed-instance
 title: Exercise - Monitor performance of Azure Arc-enabled SQL Managed Instance
 metadata:
   title: Exercise - Monitor performance of Azure Arc-enabled SQL Managed Instance
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/exercise-monitor-azure-arc-enabled-sql-mi.md)]
+  [!include[](includes/exercise-monitor-azure-arc-enabled-sql-managed-instance.md)]

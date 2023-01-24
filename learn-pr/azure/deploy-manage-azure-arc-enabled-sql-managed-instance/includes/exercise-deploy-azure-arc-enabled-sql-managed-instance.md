@@ -52,14 +52,15 @@ This option is only available with environments configured in the directly conne
 
 24. Set the admin username for the Arc-enabled SQL Managed Instance.
 25. Set the admin user password for the Arc-enabled SQL Managed Instance. 
-26. Select **Next: Tags**.
 
     ![Screenshot of Azure Arc-enabled SQL Managed Instance - Azure Arc Admin Account details](../media/admin-account-7.png) 
 
-27. Add your appropriate tags.
-28. Select Next: Review + Create
+26. Select **Next: Tags**.
 
     ![Screenshot of Azure Arc-enabled SQL Managed Instance - Azure Arc Tags](../media/tags-8.png) 
+
+27. Add your appropriate tags.
+28. Select Next: Review + Create
 
 29. Review your configurations and select Create.
 
@@ -113,7 +114,7 @@ This option is available with environments configured in either the directly or 
 21. Set the memory limit in gigabytes.
 22. Click **Deploy**.
 
-   ![Screenshot of Azure Arc-enabled SQL Managed Instance - Azure Data Studio Azure Arc create resource details](../media/azure-data-studio-details-4.png)
+   ![Screenshot of Azure Arc-enabled SQL Managed Instance - Azure Data Studio Azure Arc create resource details.](../media/azure-data-studio-details-4.png)
 
   The deployment opens up a notebook called deploy.sql.existing.arc, which will automatically start executing each of the cells. Once the deployment has completed, refresh the Arc data controller dashboard window.
 

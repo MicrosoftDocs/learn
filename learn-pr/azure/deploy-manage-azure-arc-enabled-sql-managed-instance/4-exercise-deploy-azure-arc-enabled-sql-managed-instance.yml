@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.exercise-deploy-azure-arc-enabled-sql-mi
+uid: learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.exercise-deploy-azure-arc-enabled-sql-managed-instance
 title: Exercise - Deploy Azure Arc-enabled SQL Managed Instance
 metadata:
   title: exercise
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 20
 content: |
-  [!include[](includes/exercise-deploy-azure-arc-enabled-sql-mi.md)]
+  [!include[](includes/exercise-deploy-azure-arc-enabled-sql-managed-instance.md)]

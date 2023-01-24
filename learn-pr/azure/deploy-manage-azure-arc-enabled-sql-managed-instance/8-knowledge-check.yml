@@ -45,5 +45,5 @@ quiz:
       explanation: 'Incorrect. Development use is not suitable for a production environment.'
     - content: 'Deploying the Business Critical tier and selecting the **I already have a SQL Server License** option'
       isCorrect: true
-      explanation: 'Correct. Leveraging an existing SQL Server License can provide a discount when configuring Azure Arc-enabled SQL MI to use readable secondaries.'
+      explanation: 'Correct. Leveraging an existing SQL Server License can provide a discount when configuring Azure Arc-enabled SQL Managed Instance to use readable secondaries.'
       

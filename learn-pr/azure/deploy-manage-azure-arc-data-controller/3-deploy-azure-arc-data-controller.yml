@@ -3,7 +3,7 @@ uid: learn.azure.deploy-manage-azure-arc-data-controller.deploy-azure-arc-data-c
 title: Deploy the Azure Arc data controller
 metadata:
   title: Deploy Azure Arc data controller
-  description: Deploy Azure Arc data controller.
+  description: Demonstrates how to deploy Azure Arc data controller.
   ms.date: 12/19/2022
   author: tchristiani
   ms.author: terrychr

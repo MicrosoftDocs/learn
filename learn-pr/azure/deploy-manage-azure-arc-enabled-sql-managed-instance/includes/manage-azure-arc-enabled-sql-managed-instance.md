@@ -52,7 +52,7 @@ With the Business Critical service tier, you can optimize the level of resilienc
 
 ### Adjust the time zone
 
-Coordinated Universal Time (UTC) is the recommended time zone for the data tier of new cloud and hybrid solutions because it eliminates ambiguity. However, Azure Arc-enabled SQL MI, similar to its cloud counterpart, supports selecting any time zone to accommodate the needs of existing applications that store date and time values and call date and time functions with an implicit context of a specific time zone. However, while you can configure the time zone of Azure SQL Managed Instance only during instance creation, with Azure Arc-enabled SQL Managed Instance, you can set the intended time zone post-deployment by running the `az sql mi-arc update` command with the `--time-zone` parameter.
+Coordinated Universal Time (UTC) is the recommended time zone for the data tier of new cloud and hybrid solutions because it eliminates ambiguity. However, Azure Arc-enabled SQL Managed Instance, similar to its cloud counterpart, supports selecting any time zone to accommodate the needs of existing applications that store date and time values and call date and time functions with an implicit context of a specific time zone. However, while you can configure the time zone of Azure SQL Managed Instance only during instance creation, with Azure Arc-enabled SQL Managed Instance, you can set the intended time zone post-deployment by running the `az sql mi-arc update` command with the `--time-zone` parameter.
 
 ### Enable trace flags
 

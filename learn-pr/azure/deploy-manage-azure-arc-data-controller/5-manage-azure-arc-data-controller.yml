@@ -3,7 +3,7 @@ uid: learn.azure.deploy-manage-azure-arc-data-controller.manage-azure-arc-data-c
 title: Manage an Azure Arc data controller
 metadata:
   title: Manage an Azure Arc data controller
-  description: Manage an Azure Arc data controller.
+  description: Demonstrates how to manage an Azure Arc data controller.
   ms.date: 12/19/2022
   author: tchristiani
   ms.author: terrychr

@@ -36,12 +36,12 @@ subjects:
   - cloud-computing
 units:
 - learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.introduction
-- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.what-is-azure-arc-enabled-sql-mi
-- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.deploy-azure-arc-enabled-sql-mi
-- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.exercise-deploy-azure-arc-enabled-sql-mi
-- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.manage-azure-arc-enabled-sql-mi
-- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.exercise-restore-azure-arc-enabled-sql-mi-database
-- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.exercise-manage-azure-arc-enabled-sql-mi
+- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.what-is-azure-arc-enabled-sql-managed-instance
+- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.deploy-azure-arc-enabled-sql-managed-instance
+- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.exercise-deploy-azure-arc-enabled-sql-managed-instance
+- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.manage-azure-arc-enabled-sql-managed-instance
+- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.exercise-restore-azure-arc-enabled-sql-managed-instance-database
+- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.exercise-manage-azure-arc-enabled-sql-managed-instance
 - learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.knowledge-check
 - learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.summary
 badge:

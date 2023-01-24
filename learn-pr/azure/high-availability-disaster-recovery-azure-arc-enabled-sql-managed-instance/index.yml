@@ -39,9 +39,9 @@ subjects:
   - cloud-computing
 units:
 - learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.introduction
-- learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.explore-high-availability-azure-arc-enabled-sql-mi
-- learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.explore-disaster-recovery-azure-arc-enabled-sql-mi
-- learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.exercise-implement-high-availability-disaster-recovery-azure-arc-enabled-sql-mi
+- learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.explore-high-availability-azure-arc-enabled-sql-managed-instance
+- learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.explore-disaster-recovery-azure-arc-enabled-sql-managed-instance
+- learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.exercise-implement-high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance
 - learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.knowledge-check
 - learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.summary
 badge:

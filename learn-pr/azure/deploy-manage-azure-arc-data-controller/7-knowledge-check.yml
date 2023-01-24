@@ -45,7 +45,7 @@ quiz:
       explanation: 'Correct. Indirectly connected mode deployments only support CLI commands.'
     - content: 'SQL Server Management Studio'
       isCorrect: false
-      explanation: 'Incorrect. Indirectly connected mode deployments supports Azure Data Studio, but not SQL Server Management Studio.'
+      explanation: 'Incorrect. Indirectly connected mode deployments support Azure Data Studio, but not SQL Server Management Studio.'
   - content: 'Which services does the Azure Arc data controller not perform?'
     choices:
     - content: 'Backup'

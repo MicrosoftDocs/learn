@@ -1036,7 +1036,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "earn-pr/azure/intro-to-arc-enabled-data-services/includes/5-postgresql-hyperscale.md",
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-data-services/includes/5-postgresql-hyperscale.md",
       "redirect_url": "/training/modules/intro-to-arc-enabled-data-services",
       "redirect_document_id": false
     },
