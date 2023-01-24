@@ -36,6 +36,14 @@ Configuration profiles are the foundation of Azure Automanage best practices. Th
 
 If you want to customize the best practice services and settings, you can use the custom profile option. Custom profiles allow you to customize the services and settings that you want to apply to your machines. This is a great option if your IT requirements differ from the best practices. For instance, if you do not want to use the Microsoft Antimalware solution because your IT organization requires you to use a different antimalware solution, then you can simply toggle off Microsoft Antimalware when creating a custom profile.
 
+## Automanage Machine Configuration
+
+Automanage Machine Configuration provides native capability to audit or configure operating system settings as code, both for machines running in Azure and hybrid Arc-enabled machines. The feature can be used directly per-machine, or at-scale orchestrated by Azure Policy. Just as Automanage Machine Best Practices lets customers describe desired state for management services, Machine Configuration provides the same functionality within the actual resources.
+
+When creating an Automanage Best Practices configuration profile, enable Machine Configuration either through creating a built-in profile or a custom profile.
+
+:::image type="content" source="../media/create-custom-profile.png" alt-text="Screen shot of the create custom profile window.":::
+
 ## Automanage machine statuses
 
 You can view the overall status of all your Azure Automanage machines from the **Automanage machine best practices** page in the Azure portal:
