@@ -17,7 +17,7 @@ By using Microsoft Graph extensions, the organization takes advantage of an exis
 
 Apart from the *user* resource, other Microsoft Graph resource types might support some of the extensions. For example, the *device* resource type supports all the extension options, and the *group* resource type supports schema, directory, and open extensions. 
 
-To learn more, including considerations and limitations for each extension type, see the following resources.
+To learn more about these extension properties, including considerations and limitations for each type, see the following resources.
 
 ## References
 

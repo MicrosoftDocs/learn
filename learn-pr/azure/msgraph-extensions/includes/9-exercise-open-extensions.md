@@ -42,9 +42,10 @@ Content-type: application/json
 
 ## Update and delete user data
 
-Suppose user "Adele" has crossed the 1,000,000 *gamerscore* mark and, to show off the milestone, she has changed her Xbox *gamertag* from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the gamertag in her app profile so that her colleagues can discover it.
+Suppose Adele has crossed the 1,000,000 *gamerscore* mark and, to show off the milestone, has changed her Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the value in the internal profile as well. Adele also no longer uses the Skype app and now uses Teams instead. The app calls Microsoft Graph to set the value of the **skypeId** property to `null`.
 
-Adele also no longer uses the Skype app and now uses Teams instead. The app calls Microsoft Graph to set the value of **skypeId** to `null`.
+To update any property in the open extension object, you must specify *all* properties in the request body; otherwise, Microsoft Graph will delete the unspecified properties.
+
 
 ### Request
 
@@ -69,9 +70,3 @@ HTTP/1.1 204 No Content
 ### Other Azure AD scenarios for custom data
 
 Open extensions and the data that the extensions store aren't supported by any other Azure AD scenarios. However, you can use the extensions and their data to support other custom app-specific scenarios for your organization.
-
-## Conclusion
-
-You've used Microsoft Graph open extension properties to store three custom values. You've seen how to retrieve, update, or remove any values from the open extension properties.
-
-For each type of operation, you should implement the appropriate logic in the team-bonding app to translate successful HTTP response codes to user-friendly response messages in the user interface.
