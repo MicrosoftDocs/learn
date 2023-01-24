@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.transform-data-spark-azure-synapse-analytics.use-sparksql-transform-data-creating-tables
+title: Using SparkSQL to transform data by creating tables
+metadata:
+  title: Using SparkSQL to transform data by creating tables
+  description: "Using SparkSQL to transform data by creating tables"
+  ms.date: 01/24/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-use-sparksql-transform-data-creating-tables.md)]

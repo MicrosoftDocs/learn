@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.transform-data-spark-azure-synapse-analytics.load-data-into-dataframe
+title: Loading data into a dataframe
+metadata:
+  title: Loading data into a dataframe
+  description: "Loading data into a dataframe"
+  ms.date: 01/24/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-load-data-into-dataframe.md)]

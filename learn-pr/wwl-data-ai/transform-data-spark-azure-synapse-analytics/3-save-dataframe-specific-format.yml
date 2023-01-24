@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.transform-data-spark-azure-synapse-analytics.save-dataframe-specific-format
+title: Saving a dataframe in a specific format
+metadata:
+  title: Saving a dataframe in a specific format
+  description: "Saving a dataframe in a specific format"
+  ms.date: 01/24/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-save-dataframe-specific-format.md)]
