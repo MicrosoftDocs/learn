@@ -68,7 +68,7 @@ We don't discuss merge conflicts in depth in this module, but it's important to 
 
 In this module, you learn about only the basics of branches. However, branches are powerful and give you flexibility in how you work. For example, you can create branches off other branches, and merge a branch with any other branch. You can use branches to create all sorts of different _workflows_ that support the way you and your team like to work.
 
-In this module, we're using a simple workflow called _trunk-based development_. In this workflow, you have a single _trunk_ branch. (We've been using _main_.) That branch represents the known-good version of your code. You create branches off this trunk when you make changes or do any work.
+In this module, we're using a simple workflow called _trunk-based development_. In this workflow, you have a single _trunk_ branch. For example, we use _main_ in this article's examples. That branch represents the known-good version of your code. You create branches off this trunk when you make changes or do any work.
 
 Trunk-based development discourages making changes directly on the trunk branch. You try to keep other branches around for only a short amount of time, which helps to minimize merge conflicts. Then you merge and delete those branches as you complete pieces of work.
 

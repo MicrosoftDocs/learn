@@ -10,7 +10,7 @@ If you're building Bicep code to deploy an application or another solution, it's
 
 Planning your folder structure also makes it easier to deploy your solution from a pipeline. You'll learn about pipelines in a future module.
 
-Different teams have different conventions for how they set up their repository folders and files. Even if you aren't working with a team, it's still a good idea to decide on a convention to follow. This file and folder structure will help anyone who has to work with your code in future.
+Different teams have different conventions for how they set up their repository folders and files. Even if you aren't working with a team, it's still a good idea to decide on a convention to follow. A good file and folder structure will help anyone who has to work with your code in future.
 
 If your team doesn't already have a preference, here's a suggestion for how you might do it:
 
@@ -33,7 +33,7 @@ After you make changes to a file or files, you need to _stage_ them. Staging tel
 To stage a file, you use the `git add` command and specify the file name or folder name that you want to stage. After you stage a file, Git knows that you might want to commit the changes. When you query the repository status by using `git status`, you see the staged changes.
 
 > [!IMPORTANT]
-> After you stage a file, if you make any further changes to it before you commit, Git won't record those changes. You need to stage the file again for Git to catch the most recent changes.
+> After you stage a file, if you make any further changes to it before you commit, Git won't record those changes. You need to stage the file again for Git to include the most recent changes.
 
 For example, imagine you've created a Bicep module to define an Azure Cosmos DB account. It's named _cosmos-db.bicep_, and you saved it in the _deploy/modules_ folder. Here's how you could stage the file:
 
