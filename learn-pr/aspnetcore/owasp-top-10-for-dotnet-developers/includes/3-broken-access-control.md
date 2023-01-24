@@ -17,13 +17,13 @@ Let's consider a ASP.NET Core controller (example below). Controller without any
 
 public class AccountController : Controller​
 {​
-    public ActionResult Login()​
-    {
-    }
-           
-    public ActionResult Logout()​
-    {
-    }
+        public ActionResult Login()​
+        {
+        }
+               
+        public ActionResult Logout()​
+        {
+        }
 }
 
 ```
@@ -35,14 +35,14 @@ public class AccountController : Controller​
 [Authorize(Policy="", Roles=""]​
 public class AccountController : Controller​
 {​
-    [AllowAnonymous]​
-    public ActionResult Login()​            
-    {
-    }
-                        
-    public ActionResult Logout()​            
-    {
-    }
+        [AllowAnonymous]​
+        public ActionResult Login()​            
+        {
+        }
+                            
+        public ActionResult Logout()​            
+        {
+        }
 }​
 ```
 
