@@ -20,16 +20,16 @@ quiz:
     choices:
     - content: "`banktests.go`"
       isCorrect: false
-      explanation: "Incorrect. This file name would not be recognized as a test file."
+      explanation: "Incorrect. This file name wouldn't be recognized as a test file."
     - content: "`bank_test.go`"
       isCorrect: true
-      explanation: "Correct! Files whose names end with `_test.go` are not built by the `go build` command and run the tests with the `go tests` command."
+      explanation: "Correct! Files whose names end with `_test.go` aren't built by the `go build` command and run the tests with the `go tests` command."
     - content: "`test.go`"
       isCorrect: false
-      explanation: "Incorrect. This file name would not be recognized as a test file."
+      explanation: "Incorrect. This file name wouldn't be recognized as a test file."
     - content: "`test_bank.go`"
       isCorrect: false
-      explanation: "Incorrect. This file name would not be recognized as a test file."
+      explanation: "Incorrect. This file name wouldn't be recognized as a test file."
   - content: "What's the command to run tests in verbose mode?"
     choices:
     - content: "`go test -v`"

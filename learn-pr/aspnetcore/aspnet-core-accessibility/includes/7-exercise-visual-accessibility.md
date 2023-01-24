@@ -46,4 +46,7 @@ use Accessibility Insights for Web find and fix visual accessibility issues.
 
 1. Run the application and FastPass again to verify that the color contrast issues have been cleared.
 
+      > [!NOTE]
+      > If a single color contrast issue remains for the *Click here* link text, you can ignore it. The issue is not related to this module.
+
 In the next unit, we'll look into making content accessible to screen readers.

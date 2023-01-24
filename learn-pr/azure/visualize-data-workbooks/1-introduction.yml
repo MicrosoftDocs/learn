@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.visualize-data-workbooks.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Use Azure Workbooks to query data from multiple data sources and use visualizations such as graphs, charts, and grids to build visual reports for data analysis and reporting.
+  ms.date: 10/27/2022
+  author: AbbyMSFT
+  ms.author: abbyweisberg
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

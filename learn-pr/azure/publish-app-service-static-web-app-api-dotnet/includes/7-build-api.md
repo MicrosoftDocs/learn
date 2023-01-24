@@ -2,9 +2,7 @@ Now the time has come for you to create an API for your shopping list app.
 
 ## Azure Functions
 
-One of the greatest benefits of Azure Static Web Apps is that it hosts your web app and an API built with Azure Functions together! Azure Static Web Apps globally distributes your web app's static assets and hosts your API in Azure Functions. With this setup, you gain the availability and speed that comes with global distribution of your web app assets.
-
-What you don't get is also important.
+One of the greatest benefits of Azure Static Web Apps is that it hosts your web app and an API built with Azure Functions together! Azure Static Web Apps globally distributes your web app's static assets and hosts your API in Azure Functions. With this setup, you gain the availability and speed that comes with global distribution of your web app assets. What you don't get is also important.
 
 You don't need to configure and maintain a full server for your front-end or back-end. This is the sweet spot for Azure Static Web Apps: you get the ease of publishing your app and API with minimal configuration and maintenance.
 

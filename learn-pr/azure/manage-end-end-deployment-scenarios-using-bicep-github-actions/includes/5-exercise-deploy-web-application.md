@@ -34,15 +34,15 @@ Here, you add a new job definition that contains the steps required to build the
 
 1. Below the _jobs:_ line, before the _lint_ job, add a new job named _build_ that uses the reusable workflow you just defined:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="1-18" highlight="12-14" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="1-22" highlight="16-18" :::
 
 1. Update the _deploy-test_ job to depend on the new _build_ job:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="20-30" highlight="4" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="24-36" highlight="4" :::
 
 1. Update the _deploy-production_ job to also depend on the _build_ and _lint_ jobs.
 
-   :::code language="yaml" source="code/5-workflow.yml" range="34-41" highlight="4-7" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="38-53" highlight="4-7" :::
 
    Because the production deployment depends on the test deployment, you don't strictly need to specify the dependencies. But, it's a good practice to be explicit, to avoid your workflow running incorrectly if you reorder or remove your jobs or environments.
 
@@ -82,7 +82,7 @@ Now, you need to update your _deploy_ job to take the value of the output from t
 
 1. In the _deploy_ job's definition, add a new output for the `appServiceAppName`:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="65-72" highlight="6" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="61-68" highlight="6" :::
 
    > [!NOTE]
    > When you start to work with your YAML file in Visual Studio Code, you might see some red squiggly lines telling you there's a problem. This is because the Visual Studio Code extension for YAML files sometimes incorrectly guesses the file's schema.
@@ -97,7 +97,7 @@ Now, you need to update your _deploy_ job to take the value of the output from t
 
 1. Below the _deploy_ job definition, and above the _smoke-test_ job definition, define a new job to deploy the website to App Service:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="93-109" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="89-105" :::
 
    > [!NOTE]
    > Be careful with the indentation of the YAML file, ensuring that the new job is indented at the same level as the `deploy` job. If you're not sure, copy the whole _deploy.yml_ file contents from the example in the next step.
@@ -112,7 +112,7 @@ Now, you need to update your _deploy_ job to take the value of the output from t
 
 1. Verify that your _deploy.yml_ file looks like the following example:
 
-   :::code language="yaml" source="code/5-deploy.yml" highlight="70, 93-109" :::
+   :::code language="yaml" source="code/5-deploy.yml" highlight="66, 89-105" :::
 
 1. Save your changes to the file.
 

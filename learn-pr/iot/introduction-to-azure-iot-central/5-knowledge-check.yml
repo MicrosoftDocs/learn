@@ -38,7 +38,7 @@ quiz:
     - content: "Manages IoT devices connected to Azure IoT Central"
       isCorrect: true
       explanation: "Correct. The Operator is responsible for managing IoT devices connected to Azure IoT Central."
-  - content: "A small tech startup has plans to develop a line of tracking devices. Due to budget limitations, they are not able to hire experienced IoT professionals. The startup wants an IoT solution that allows them to quickly provision their devices with little to no code. One of their senior developers doesn't believe Azure IoT Central will work. Is this senior developer correct?"
+  - content: "A small tech startup has plans to develop a line of tracking devices. Due to budget limitations, they aren't able to hire experienced IoT professionals. The startup wants an IoT solution that allows them to quickly provision their devices with little to no code. One of their senior developers doesn't believe Azure IoT Central will work. Is this senior developer correct?"
     choices:
     - content: "Yes. All Azure IoT Central solutions require code to be written both in the cloud and on the devices."
       isCorrect: false
@@ -53,21 +53,21 @@ quiz:
     choices:
     - content: "Big Data Management"
       isCorrect: false
-      explanation: "Incorrect. Big Data Management refers to how the IoT application will handle its data but does not adequately secure the data it handles."
+      explanation: "Incorrect. Big Data Management refers to how the IoT application will handle its data but doesn't adequately secure the data it handles."
     - content: "Device Management"
       isCorrect: false
       explanation: "Incorrect. Device Management refers to the systematic pattern used to handle devices themselves; not their security."
     - content: "Security & Compliance"
       isCorrect: true
       explanation: "Correct. Azure IoT Central's Security & Compliance features allow builders to create a secure IoT solution, including secure communication between devices and the cloud."
-  - content: "An online retail company is planning for their biggest annual sale. They have built an IoT solution using Azure IoT Central that will help them monitor inventory in each of their warehouses to ensure product availability during the sale. A tropical storm warning has been issued for the region where their Azure resources have been deployed. The IT department isn't worried at all. Why are they confident that their site will not experience any interruptions if a regional datacenter outage occurs?"
+  - content: "An online retail company is planning for their biggest annual sale. They have built an IoT solution using Azure IoT Central that will help them monitor inventory in each of their warehouses to ensure product availability during the sale. A tropical storm warning has been issued for the region where their Azure resources have been deployed. The IT department isn't worried at all. Why are they confident that their site won't experience any interruptions if a regional datacenter outage occurs?"
     choices:
     - content: "Azure IoT Central's high availability & disaster recovery benefits will ensure their application continues to function in the event of a regional outage."
       isCorrect: true
       explanation: "Correct. High availability & disaster recovery are benefits of using Azure cloud services. SLAs guarantee an uptime of close to 100% and application backups can be used for restorations, if needed."
-    - content: "Azure DevOps will allow the company to re-deploy their application to datacenters affected by outages and immediately restore services."
+    - content: "Azure DevOps will allow the company to redeploy their application to datacenters affected by outages and immediately restore services."
       isCorrect: false
-      explanation: "Incorrect. Azure DevOps can be used to deploy code; however, if a datacenter is experiencing an outage, a deployment to that datacenter will not guarantee availability of the deployed code."
+      explanation: "Incorrect. Azure DevOps can be used to deploy code; however, if a datacenter is experiencing an outage, a deployment to that datacenter won't guarantee availability of the deployed code."
     - content: "Scaling gives the company enough compute power to overcome the outage."
       isCorrect: false
       explanation: "Incorrect. Scaling refers to adding additional resources or power for cloud services but can't ensure availability of cloud services."

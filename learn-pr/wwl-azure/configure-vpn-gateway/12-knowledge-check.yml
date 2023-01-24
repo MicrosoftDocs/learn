@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/25/2022
+  ms.date: 01/18/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -16,37 +16,40 @@ content: |
   [!include[](includes/12-knowledge-check.md)]
 quiz:
   title: ""
+
   questions:
-  - content: "The company's VPN gateway must work with ExpressRoute. Which VPN type should be used?"
+  - content: "How can you enable the VPN gateway to work with Azure ExpressRoute?"
     choices:
-    - content: "Policy-based"
+    - content: "Implement a policy-based VPN gateway."
       isCorrect: false
-      explanation: "Incorrect. Policy-based gateways have limited capabilities and should not be used for ExpressRoute."
-    - content: "Route-based"
+      explanation: "Incorrect. Policy-based gateways have limited capabilities and shouldn't be used for AzureExpressRoute."
+    - content: "Implement a route-based VPN gateway."
       isCorrect: true
-      explanation: "Correct. Typical route-based gateway scenarios include point-to-site, inter-virtual network, or multiple site-to-site connections. Route-based is also selected to coexist with an ExpressRoute gateway or when the IKEv2 protocol is used."
-    - content: "Path-based"
+      explanation: "Correct. Typical route-based gateway scenarios include point-to-site (P2S), inter-virtual network (VNet-to-VNet), or multiple site-to-site (S2S) connections. A route-based VPN is also selected to coexist with an ExpressRoute gateway or when the IKEv2 protocol is used."
+    - content: "Implement a path-based VPN gateway."
       isCorrect: false
-      explanation: "Incorrect. Path-based isn't a VPN type."
-  - content: "The infrastructure team is connecting two virtual networks. Performance is a key concern. Which of the following selections will most influence performance?"
+      explanation: "Incorrect. _Path-based_ isn't a valid type of VPN gateway."
+
+  - content: "Which implementation decision most influences VPN gateway performance?"
     choices:
-    - content: "Selecting a route-based VPN."
+    - content: "A route-based VPN gateway."
       isCorrect: false
-      explanation: "Incorrect. Although routing can affect performance, another choice will have more influence."
-    - content: "Selecting an appropriate Gateway SKU"
+      explanation: "Incorrect. Although a route-based VPN approach can affect performance, there's another choice that can have greater influence."
+    - content: "A policy-based VPN gateway."
+      isCorrect: false
+      explanation: "Incorrect. Although a policy-based VPN approach can affect performance, there's another choice that can have greater influence."
+    - content: "The appropriate Azure VPN Gateway SKU."
       isCorrect: true
-      explanation: "Correct. Aggregate Throughput Benchmarks are provided for each Gateway SKU."
-    - content: "Selecting a policy-based VPN."
-      isCorrect: false
-      explanation: "Incorrect. Although routing can affect performance, another choice will have more influence."
-  - content: "The infrastructure team needs to configure a site-to-site VPN connection between the on-premises network and the Azure network. The on-premises network uses a Cisco ASA VPN device. What key piece of information will you need to set up the on-premises VPN gateway?"
+      explanation: "Correct. The most significant implementation decision for your VPN gateway performance is selecting the appropriate SKU for your configuration. Performance is measured through **Aggregate Throughput Benchmarks** provided for each Azure VPN Gateway SKU."
+
+  - content: "What key piece of information do you need to set up the on-premises VPN gateway?"
     choices:
-    - content: "The shared access signature key for the recovery services vault."
+    - content: "The shared key provided when the site-to-site (S2S) VPN connection was created."
+      isCorrect: true
+      explanation: "Correct. The shared key is required to set up the on-premises VPN gateway."    
+    - content: "The shared access signature (SAS) key for the recovery services vault."
       isCorrect: false
-      explanation: "Incorrect. The recovery service vault isn't needed."
+      explanation: "Incorrect. The SAS key and recovery service vault aren't needed."
     - content: "The private IP address of the virtual network gateway."
       isCorrect: false
-      explanation: "Incorrect. The public IP address of the virtual network gateway isn't required."
-    - content: "The shared key provided when the site-to-site VPN connection was created."
-      isCorrect: true
-      explanation: "Correct. The shared key is required."
+      explanation: "Incorrect. The private IP address of the virtual network gateway isn't required."
