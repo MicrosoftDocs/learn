@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Demonstrate your knowledge of Azure Arc-enabled SQL Managed Instance.
+  ms.date: 12/23/2022
+  author: tchristiani
+  ms.author: terrychr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: 'Which authentication method does Azure Arc-enabled SQL Managed Instance support?'
+    choices:
+    - content: 'Azure Active Directory'
+      isCorrect: false
+      explanation: 'Incorrect. Azure Arc-enabled SQL Managed Instance does not currently support Azure Active Directory.'
+    - content: 'Active Directory'
+      isCorrect: true
+      explanation: 'Correct. Azure Arc-enabled SQL Managed Instance supports using the integrated Active Directory authentication method .'
+    - content: 'Basic'
+      isCorrect: false
+      explanation: 'Incorrect. SQL Server-based services does not use Basic authentication.'
+  - content: 'Which tool can be used to monitor the real-time performance of an Azure Arc-enabled SQL Managed Instance deployed to an indirectly connected Azure Arc data controller?'
+    choices:
+    - content: 'Azure Monitor'
+      isCorrect: false
+      explanation: 'Incorrect. You ca not use Azure Monitor for real-time monitoring of an Azure Arc-enabled SQL Managed Instance in an indirectly connected mode deployment.'
+    - content: 'Grafana Dashboards'
+      isCorrect: true
+      explanation: 'Correct. Grafana provides local, out-of-the-box dashboards to help you monitor real-time performance of Azure Arc-enabled SQL Managed Instance.'
+    - content: 'SQL Insights'
+      isCorrect: false
+      explanation: 'Incorrect. SQL Insights does not support monitoring of Azure Arc-enabled SQL Managed Instance.'
+  - content: 'Where can Kibana and Grafana endpoints for viewing the logs and metrics of an Azure Arc-enabled SQL Managed Instance be identified?'
+    choices:
+    - content: 'Azure portal'
+      isCorrect: false
+      explanation: 'Incorrect. The Azure portal does not provide the information about the Kibana and Grafana endpoints.'
+    - content: 'SQL Server Management Studio'
+      isCorrect: false
+      explanation: 'Incorrect. SQL Server Management Studio does not provide the information about the Kibana and Grafana endpoints.'
+    - content: 'Azure Data Studio'
+      isCorrect: true
+      explanation: 'Correct. The information about the Kibana and Grafana endpoints is available from the Azure Data Studio interface.'
+      
