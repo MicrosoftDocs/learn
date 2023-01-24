@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-private-5g-core.structure-components
+title: Structure and components
+metadata:
+  title: Structure and components
+  description: "Explains how Azure Private 5G Core works by describing its structure and listing its key components."
+  ms.date: 10/10/2022
+  author: michael-weizhong-shan
+  ms.author: michaelshan
+  ms.topic: interactive-tutorial
+  ms.service: learning-private-5g-core
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-structure-components.md)]
