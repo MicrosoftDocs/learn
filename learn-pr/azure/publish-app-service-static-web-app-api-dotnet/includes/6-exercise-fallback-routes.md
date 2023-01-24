@@ -10,13 +10,15 @@ Pull your code changes from Git by following these steps:
 
 1. Pull the latest changes from GitHub.
 
+   :::image type="content" source="../media/pull-latest-changes.png" alt-text="Screenshot showing where to pull changes from GitHub.":::
+
 You can now see your workflow file in the folder _.github/workflows_ in **Windows Explorer** (the file isn't part of the Visual Studio solution).
 
 ## Create a routing rule
 
 Before publishing your app, you'll create routing rules that include a fallback route.
 
-### Create the file staticwebapp.config.json
+### Create the file _staticwebapp.config.json_
 
 If you don't already have a _staticwebapp.config.json_ file in your project, you can create one by following these steps:
 

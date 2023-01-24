@@ -13,4 +13,3 @@ In this module, you have:
 - [Deploy AD with System Managed Keytab](/azure/azure-arc/data/deploy-system-managed-keytab-active-directory-connector)
 - [Deploy AD with Customer Managed Keytab](/azure/azure-arc/data/deploy-customer-managed-keytab-active-directory-connector)
 - [Automating Indirectly connected mode Log and Metric data uploads](/azure/azure-arc/data/upload-logs?tabs=windows#automating-uploads-optional)
-- 

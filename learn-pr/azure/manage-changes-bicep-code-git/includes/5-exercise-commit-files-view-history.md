@@ -3,10 +3,11 @@ In the previous exercise, you initialized a Git repository for your toy company'
 In this exercise, you'll:
 
 > [!div class="checklist"]
-> * Commit the file that you created in the previous exercise.
-> * Add a new Bicep module, and compare the differences in your Bicep code by using Git.
-> * Commit the updated Bicep code.
-> * View the commit history and the main Bicep file's history.
+>
+> - Commit the file that you created in the previous exercise.
+> - Add a new Bicep module, and compare the differences in your Bicep code by using Git.
+> - Commit the updated Bicep code.
+> - View the commit history and the main Bicep file's history.
 
 The process of making more changes to your Bicep code will show you how Git and Visual Studio Code help you track and manage changes.
 
@@ -21,7 +22,7 @@ The process of making more changes to your Bicep code will show you how Git and 
 1. Run the following command to commit the staged changes and provide a commit message:
 
    ```bash
-   git commit --message "Add first version of Bicep template."
+   git commit --message "Add first version of Bicep template"
    ```
 
 ## Add a Bicep module
@@ -50,7 +51,7 @@ Here you add a Bicep module and reference it from your _main.bicep_ file.
 
 ## Compare the differences
 
-Now that you've made a change to the _main.bicep_ file, let's inspect the differences. It's a good idea to review the differences in each file you're about to stage and commit, to ensure you don't accidentally commit any changes you don't want.
+Now that you've made a change to the _main.bicep_ file, let's inspect the differences. It's a good idea to review the differences in each file you're about to stage and commit. You do the review to verify that your changes are correct.
 
 1. In Visual Studio Code, select **View** > **Source Control**, or select <kbd>Ctrl+Shift+G</kbd> on the keyboard.
 
@@ -60,7 +61,7 @@ Now that you've made a change to the _main.bicep_ file, let's inspect the differ
 
    :::image type="content" source="../media/5-vscode-diff.png" alt-text="Screenshot of Visual Studio Code that shows the differences between the current main.bicep file and the modified version." border="true":::
 
-   Notice that Visual Studio Code shows you the changes you've made. The original file is on the left, and the changed file is on the right. Additions to the file are displayed in green. Anything you've removed from the file is displayed in red.
+   Notice that Visual Studio Code shows you the changes you've made. The original file is on the left, and the changed file is on the right. Additions to the file are displayed in green. When you edit a file and remove content, the deletions are displayed in red.
 
 1. Open the differences for the _app-service.bicep_ file.
 
@@ -83,10 +84,10 @@ Now that you've reviewed the changes and are satisfied with it, you commit the u
 1. At the top of **Source Control**, enter a descriptive commit message, like:
 
    ```plaintext
-   Add App Service module.
+   Add App Service module
    ```
 
-1. Select the check-mark icon above the text box for the commit message.
+1. Select the check-mark icon above the text box for the commit message. Or you can select **Commit**.
 
    :::image type="content" source="../media/5-vscode-commit.png" alt-text="Screenshot of Visual Studio Code that shows Source Control, with the commit icon highlighted." border="true":::
 
@@ -100,11 +101,11 @@ Now that you've reviewed the changes and are satisfied with it, you commit the u
    git log --pretty=oneline
    ```
 
-   The output looks similar to the following:
+   The output looks similar to the following example:
 
    ```output
-   238b0867f533e14bcaabbade31b9d9e1bda6123b (HEAD -> main) Add App Service module.
-   9e41f816bf0f5c590cee88590aacc977f1361124 Add first version of Bicep template.
+   238b0867f533e14bcaabbade31b9d9e1bda6123b (HEAD -> main) Add App Service module
+   9e41f816bf0f5c590cee88590aacc977f1361124 Add first version of Bicep template
    ```
 
 1. Inspect the output. Notice that both of your commits appear in the commit history.

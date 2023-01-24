@@ -2,24 +2,24 @@
 uid: learn.configure-admin-consent-workflow
 metadata:
   moduleType: standard
-  title: Configure admin consent workflow using Azure Active Directory
+  title: Manage consent requests to apps through admin consent workflow in Azure Active Directory
 
   description: Configure the admin consent workflow to enable users to request admin consent right from the screen. Designated reviewers view and respond to the requests through the Azure portal.
 
-  ms.date: 6/09/2022
+  ms.date: 01/17/2023
   author: omondiatieno
   ms.author: jomondi
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Configure admin consent workflow using Azure Active Directory
+title: Manage consent requests to apps through admin consent workflow in Azure Active Directory
 
-summary: "To enable admin consent workflow, you'll create or add a new Azure AD application. When the user attempts to sign in to the application, they request admin consent by submitting a request to the designated reviewer via the consent screen. The reviewer receives an email notification, acts on the request via the Azure portal, then the user is notified of the reviewer's action."
+summary: "Admin consent workflow streamlines the process by which admins evaluate and respond to consent requests in Azure Active directory (Azure AD). Learn how to configure admin consent workflow to enable users of applications to request admin consent from the consent prompt. Learn how to properly evaluate consent requests and respond to them through the Azure portal."
 abstract: |
   By the end of this module, you'll be able to:
-    - Identify possible user and administrator consent configurations
-    - Configure the admin consent workflow to enable users to submit requests to access applications.
+    - Identify possible user and administrator consent configurations.
+    - Enable admin consent workflow through the Azure portal.
     - Test the admin consent workflow feature by using test user accounts.
-    - Manage, evaluate, and act on admin consent requests
+    - Evaluate and respond to admin consent requests.
 
 prerequisites: |
   - An Azure account with an [active subscription](https://azure.microsoft.com/free/).
@@ -45,3 +45,4 @@ units:
 - learn.configure-admin-consent-workflow.summary
 badge:
   uid: learn.configure-admin-consent-workflow.badge
+ 

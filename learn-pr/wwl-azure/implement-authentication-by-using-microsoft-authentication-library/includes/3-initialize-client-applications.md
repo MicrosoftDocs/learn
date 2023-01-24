@@ -49,7 +49,7 @@ In the code snippets using application builders, a number of `.With` methods can
 
 ## Modifiers common to public and confidential client applications
 
-The table below lists some of the modifiers you can set on a public, or client confidential client.
+The table below lists some of the modifiers you can set on a public, or confidential client.
 
 | Modifier | Description |
 |--|--|

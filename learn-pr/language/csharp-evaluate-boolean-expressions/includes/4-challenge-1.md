@@ -9,7 +9,7 @@ In this challenge, you'll flip a coin to display either `heads` or `tails`. This
 
 ### Step 1 - Delete all of the code in the .NET Editor from the earlier exercise
 
-Select all of the code in the .NET Editor then select the `del` or `backspace` key to delete it.
+Select all of the code in the .NET Editor, then select the `del` or `backspace` key to delete it.
 
 ### Step 2 - Write code in the .NET Editor to display the result of a coin flip
 

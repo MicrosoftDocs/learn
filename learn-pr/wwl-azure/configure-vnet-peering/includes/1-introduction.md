@@ -1,27 +1,25 @@
-## Scenario
+Azure Virtual Network peering lets you connect virtual networks in the same or different regions, so resources in both networks can communicate with each other.
 
-Your engineering company has been migrating services into Azure. The company has deployed services into separate virtual networks. It hasn't configured private connectivity between the virtual networks.
+In this module, suppose your engineering company is migrating services to Azure. The company has deployed services into separate Azure virtual networks. Private connectivity between the virtual networks isn't yet configured. Several business units have identified services in the virtual networks that need to communicate with each other. 
 
-Several business units have identified services in these virtual networks that need to communicate with each other. You need to enable this connectivity, but you don't want to expose these services to the internet. You also want to keep the integration as simple as possible.
-
-You need to implement a virtual network peering solution. This solution should address transit and connectivity concerns.
-
-## Skills measured
-
-Configuring virtual network peering is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
-
-Configure and manage virtual networking (25–30%)
-
-Implement and manage virtual networking
-
- -  Create and configure virtual networks, including peering.
+You're responsible for implementing an Azure Virtual Network peering solution and enabling connectivity between the virtual networks. Two of your strategy goals include preventing exposure of the services to the internet, and keeping the integration as simple as possible. Your solution should address transit and connectivity concerns.
 
 ## Learning objectives
 
-In this module, you'll learn how to:
+In this module, you learn how to:
 
- -  Identify usage cases and product features of virtual network peering.
- -  Configure gateway transit, connectivity, and service chaining.
+- Identify usage cases and product features of Azure Virtual Network peering.
+- Configure your network to implement Azure VPN Gateway for transit connectivity.
+- Extend peering by using a hub and spoke network with user-defined routes and service chaining.
+
+## Skills measured
+
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). The module concepts are covered in:
+
+Configure and manage virtual networking (25–30%)
+
+- Implement and manage virtual networking
+   - Create and configure virtual networks, including peering.
 
 ## Prerequisites
 

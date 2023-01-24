@@ -148,7 +148,7 @@ The final port used by the SWA CLI is different than the one you've seen before,
 - The authentication and authorization emulator
 - The API hosted by the Functions runtime
 
-:::image type="content" source="../media/static-web-apps-cli-architecture.png" alt-text="Static Web Apps CLI architecture.":::
+:::image type="content" source="../media/static-web-apps-cli-architecture.png" alt-text="Screenshot of the Static Web Apps CLI architecture.":::
 
 Let the application remain running while you modify the code.
 
@@ -351,7 +351,7 @@ The user information will be `undefined` if they're not logged in, so the change
 
 You should now see this webpage in your browser.
 
-:::image type="content" source="../media/my-shopping-list-app-auth-angular.png" alt-text="Angular web app with login buttons.":::
+:::image type="content" source="../media/my-shopping-list-app-auth-angular.png" alt-text="Screenshot of the Angular web app with login buttons.":::
 
 ::: zone-end
 
@@ -392,7 +392,7 @@ You should now see this webpage in your browser.
 
 You should now see this webpage in your browser.
 
-:::image type="content" source="../media/my-shopping-list-app-auth-react.png" alt-text="React web app with login buttons.":::
+:::image type="content" source="../media/my-shopping-list-app-auth-react.png" alt-text="Screenshot of the React web app with login buttons.":::
 
 ::: zone-end
 
@@ -438,7 +438,7 @@ You should now see this webpage in your browser.
 
 You should now see this webpage in your browser.
 
-:::image type="content" source="../media/my-shopping-list-app-auth-svelte.png" alt-text="Svelte web app with login buttons.":::
+:::image type="content" source="../media/my-shopping-list-app-auth-svelte.png" alt-text="Screenshot of the Svelte web app with login buttons.":::
 
 ::: zone-end
 
@@ -480,7 +480,7 @@ You should now see this webpage in your browser.
 
 You should now see this webpage in your browser.
 
-:::image type="content" source="../media/my-shopping-list-app-auth-vue.png" alt-text="Vue web app with login buttons.":::
+:::image type="content" source="../media/my-shopping-list-app-auth-vue.png" alt-text="Screenshot of the Vue web app with login buttons.":::
 
 ::: zone-end
 
