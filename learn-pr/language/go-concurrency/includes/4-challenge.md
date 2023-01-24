@@ -1,4 +1,4 @@
-For this challenge, you need to improve an existing program by making it run faster. Try to write the programs on your own, even if you have to go back and check the examples that you used to practice. Then, compare your solution with the one we have in the next section. 
+For this challenge, you need to improve an existing program by making it run faster. Try to write the programs on your own, even if you have to go back and check the examples that you used to practice. Then, compare your solution with the one we have in the next unit. 
 
 Concurrency in Go is a complex problem that you'll understand better when you practice. This challenge is just one idea of what you can do to practice.
 
