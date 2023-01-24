@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.understand-considerations-for-loading-data-warehouse
-title: Understand considerations for loading a data warehouse
+title: Loading Staging Data
 metadata:
-  title: Understand considerations for loading a data warehouse
-  description: "Understand considerations for loading a data warehouse"
+  title: Loading Staging Data
+  description: "Loading Staging Data"
   ms.date: 01/24/2023
   author: wwlpublish
   ms.author: jamesh
