@@ -32,9 +32,9 @@ subjects:
 - cloud-computing
 - networking
 modules:
-#- learn.intro-to-azur-private-5g-core
+- learn.intro-to-azur-private-5g-core
 #- learn.deploy-azure-private-5g-core
-#- learn.monitor-azure-private-5g-core-service
+- learn.monitor-azure-private-5g-core-service
 - learn.manage-azure-private-5g-core
 trophy:
   uid: learn.get-started-with-azure-private-5g-core.trophy
