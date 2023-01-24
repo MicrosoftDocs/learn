@@ -5,5 +5,5 @@ By reviewing and assessing deployment modes and successfully completing your dep
 
 - [Azure Arc-enabled data services](/azure/azure-arc/data/)
 - [What are Azure Arc-enabled data services?](/azure/azure-arc/data/overview)
-- [Optimize administration of SQL Server instances in on-premises and multi-cloud environments by using Azure Arc](/azure/architecture/hybrid/azure-arc-sql-server)
+- [Optimize administration of SQL Server instances in on-premises and multicloud environments by using Azure Arc](/azure/architecture/hybrid/azure-arc-sql-server)
 - [Plan an Azure Arc-enabled data services deployment](/azure/azure-arc/data/plan-azure-arc-data-services)
