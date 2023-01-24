@@ -56,9 +56,9 @@ When you run the code this time, you'll get the following output:
 (inside the parentheses
 ```
 
-The `Substring()` method needs the starting position and the number of characters, or length, to retrieve. So, you calculated the length in a temporary variable called `length`, and passed it with the `openingPosition` value to retrieve the string inside of the parenthesis.
+The `Substring()` method needs the starting position and the number of characters (or length) to retrieve. So, you calculated the length in a temporary variable called `length`, and passed it with the `openingPosition` value to retrieve the string inside of the parenthesis.
 
-The result is close; however, the output includes the opening parenthesis. In this particular situation, this is not the desired result. To fix this, we'll have to update our code to skip the index of the parenthesis itself.
+The result is close; however, the output includes the opening parenthesis. In this particular situation, this isn't the desired result. To fix the result, we'll have to update our code to skip the index of the parenthesis itself.
 
 ### Step 3 - Update the code to modify the starting position of the sub string
 
@@ -84,7 +84,7 @@ inside the parentheses
 
 By increasing the `openingPosition` by `1`, you skip over the opening parenthesis character.
 
-The reason we're using the value `1` is because that is the length of the character. If we were attempting to locate a value starting after a longer string, for example, `<div>` or `---`, we'd use the length of that string instead.
+We're using the value `1` is because that's the length of the character. If we were attempting to locate a value starting after a longer string, for example, `<div>` or `---`, we'd use the length of that string instead.
 
 The following snippet of code shows how to find the value inside an opening and closing `<span>` tag.
 
@@ -105,9 +105,9 @@ In this case, we're adding `6` to the `openingPosition` as the offset to calcula
 
 Hardcoded strings like `"<span>"` in the previous code listing are known as "magic strings", and hardcoded numeric values like `6` are known as "magic numbers". These "magic" values are undesirable for a number of reasons, and you should try to avoid them if possible.
 
-In this specific case, consider how your code might break if you hardcoded the string `"<span>"` multiple times in your code, but misspelled one instance of it as `"<sapn>"`. The compiler won't catch this at compile time, because the value is in a string. The misspelling will likely cause problems at run time, and depending on the complexity of your code, it might be difficult to track down. Furthermore, if you change the string `"<span>"` to `"<div>"`, but forget to change the number `6`, then your code will produce undesirable results.
+In this specific case, consider how your code might break if you hardcoded the string `"<span>"` multiple times in your code, but misspelled one instance of it as `"<sapn>"`. The compiler won't catch this at compile time, because the value is in a string. The misspelling will likely cause problems at runtime, and depending on the complexity of your code, it might be difficult to track down. Furthermore, if you change the string `"<span>"` to `"<div>"`, but forget to change the number `6`, then your code will produce undesirable results.
 
-Instead, you should use a constant with the `const` keyword. A constant allows you to define and initialize a variable whose value can never be changed. You'd then use that constant in the rest of the code whenever you needed that value. This ensures that the value is only defined once, and misspelling the `const` variable will be caught by the compiler.
+Instead, you should use a constant with the `const` keyword. A constant allows you to define and initialize a variable whose value can never be changed. You'd then use that constant in the rest of the code whenever you needed that value. This ensures that the value is only defined once, and the compiler will catch misspelling the `const` variable.
 
 The following code listing is a much safer way to write the same code:
 
@@ -183,13 +183,13 @@ more than
 set of parentheses
 ```
 
-The key to understanding this technique is the last line of code inside the `while` loop.
+The key to understanding this technique is the last line of code inside the `while` loop:
 
 ```csharp
 message = message.Substring(closingPosition + 1);
 ```
 
-When you use `Substring()` without specifying a length input parameter, it will return every character after the starting position you specify. We can use this to our advantage, removing the first set of parentheses from the value of `message`. What remains is then processed in the next iteration of the `while` loop.
+When you use `Substring()` without specifying a length input parameter, it'll return every character after the starting position you specify. We can use this to our advantage, removing the first set of parentheses from the value of `message`. What remains is then processed in the next iteration of the `while` loop.
 
 What happens during the final iteration when all that's left is the final `?` character?
 
@@ -206,7 +206,7 @@ Let's consider an even more advanced example. This time, we'll search for severa
 
 ### Step 6 - Update the code example to work with different types of symbol sets
 
-This time, we'll update the `message` string, adding different types of symbols like square brackets and curly braces. We'll rely on `IndexOfAny()` to provide an array of characters representing the opening symbols. `IndexOfAny()` will return us the first match it finds in the string.
+This time, we'll update the `message` string, adding different types of symbols like square brackets and curly braces. We'll rely on `IndexOfAny()` to provide an array of characters representing the opening symbols. `IndexOfAny()` will return the first match it finds in the string.
 
 Once we find a symbol, we'll need to find its matching closing symbol. When we've done that, the rest should look similar. We'll use a different tactic instead of modifying the original value of `message`. This time, we'll use the closing position of the previous iteration as the opening position of the current iteration.
 
