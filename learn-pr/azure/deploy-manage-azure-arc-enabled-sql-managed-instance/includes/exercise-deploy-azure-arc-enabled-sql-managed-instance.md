@@ -57,7 +57,7 @@ This option is only available with environments configured in the directly conne
 
 26. Select **Next: Tags**.
 
-    ![Screenshot of Azure Arc-enabled SQL Managed Instance - Azure Arc Tags](../media/tags-8.png) 
+    ![Screenshot of Azure Arc-enabled SQL Managed Instance - Azure Arc Tags](../media/add-tags-8.png) 
 
 27. Add your appropriate tags.
 28. Select Next: Review + Create
