@@ -1,6 +1,6 @@
 Azure Virtual WAN (wide-area network) is a networking service that provides optimized and automated branch connectivity to, and through, Azure. Azure regions serve as hubs that you can choose to connect your branches to. You use the Azure backbone to connect branches and enjoy branch-to-virtual network connectivity. 
 
-The following illustration shows several connections through Azure Virtual WAN to access Azure virtual networks. A connection is made from the on-premises location using Azure ExpressRoute. Several branches connect through a site-to-site configuration. Remote users connect through a point-to-site (User VPN) connection.
+The following illustration shows inter-site connections through Azure Virtual WAN to access Azure virtual networks. A connection is made from the on-premises location by using Azure ExpressRoute. Several branches connect through a site-to-site configuration, and remote users connect through a point-to-site (User VPN) connection.
 
 :::image type="content" source="../media/virtual-wide-area-networks-2e1efc3e.png" alt-text="Illustration of connections with Azure Virtual WAN as described in the text." border="false":::
 
