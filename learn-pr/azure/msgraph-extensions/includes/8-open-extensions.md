@@ -14,6 +14,7 @@ The **id** property is the only required property in an extension property. You 
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/me/extensions
+Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.openTypeExtension",

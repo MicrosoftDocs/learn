@@ -20,7 +20,7 @@ GET https://graph.microsoft.com/v1.0/users?$select=id,displayName,userPrincipalN
 
 ### Response
 
-The following is a sample response. The response object has been shortened for readability to show only one user object.
+The following object is a sample response. The response object has been shortened for readability to show only one user object.
 
 ```http
 HTTP/1.1 200 OK
@@ -63,6 +63,7 @@ In this exercise, you store the LinkedIn profile URL, Skype ID, and Xbox gamerta
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
+Content-type: application/json
 
 {
     "onPremisesExtensionAttributes": {
@@ -130,12 +131,15 @@ Microsoft Graph doesn't support retrieving a subset of the 15 extension attribut
 
 ## Update and delete user data
 
-Suppose Adele has crossed the 1,000,000 *gamerscore* mark and, to show off the milestone, has changed her Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the value in the internal profile as well. Adele also no longer uses the Skype app and now uses Teams instead. The app calls Microsoft Graph to set the value of **extensionAttribute14** to `null`.
+Suppose Adele has crossed the 1,000,000 *gamerscore* mark and, to show off the milestone, has changed her Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the value in the internal profile as well.
+
+Adele also no longer uses the Skype app and now uses Teams instead. The app calls Microsoft Graph to set the value of **extensionAttribute14** to `null`.
 
 ### Request
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
+Content-type: application/json
 
 {
     "onPremisesExtensionAttributes": {
@@ -153,12 +157,13 @@ HTTP/1.1 204 No Content
 
 ## Dynamically add users to groups based on their extension data
 
-In this exercise, you create a Microsoft 365 group and specify that has dynamic membership where only users with Xbox gamertags can be members of the group. You also specify a Teams team to be provisioned when you create the group.
+In this exercise, you create a Microsoft 365 group and specify that it has dynamic membership where only users with Xbox gamertags can be members of the group. You also specify a Teams team to be provisioned when you create the group.
 
 ### Request
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/groups
+Content-type: application/json
 
 {
     "description": "Xbox gamers group - Have fun, compete, grow, build connections!",

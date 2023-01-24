@@ -14,12 +14,13 @@ In the team-bonding app, employees will sign in with their Azure AD profile and 
 
 ## Create schema extension definitions
 
-The request in this section specifies the **owner** property. If you're using Graph Explorer, you must specify in the **owner** property an **appId** for an app that you own. In this example, you own the app that's identified by **appId** `5bfc8fda-cfc9-43a9-a6de-214ea9d15fdb`. If you're running this exercise while you're signed in from an app that you own, you don't need to specify the **owner** property.
+The request in this section specifies the **owner** property. If you're using Graph Explorer, you must specify in the **owner** property an **appId** for an app that you own. In this example, you own the app that's identified by **appId** `5bfc8fda-cfc9-43a9-a6de-214ea9d15fdb`. If you're running this exercise while you're signed in to an app that you own, you don't need to specify the **owner** property.
 
 ### Request
 
 ```msgraph-interactive
-POST ttps://graph.microsoft.com/v1.0/schemaExtensions
+POST https://graph.microsoft.com/v1.0/schemaExtensions
+Content-type: application/json
 
 {
     "id": "contoso_teamBondingApp",
@@ -84,6 +85,7 @@ In this step, you store the LinkedIn profile URL, Skype ID, and Xbox gamertag fo
 ### Request
 ```http
 PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
+Content-type: application/json
 
 {
     "contoso_teamBondingApp": {
@@ -145,6 +147,7 @@ Suppose Adele has crossed the 1,000,000 *gamerscore* mark and, to show off the m
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
+Content-type: application/json
 
 {
     "contoso_teamBondingApp": {

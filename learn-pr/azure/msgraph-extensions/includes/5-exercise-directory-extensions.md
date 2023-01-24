@@ -10,7 +10,7 @@ In the team-bonding app, employees will sign in with their Azure AD profile and 
 
 ## Identify the owner app
 
-For an app that has a service principal in your tenant, retrieve its **id** and **appId**. You'll define the directory extension on this app.
+Retrieve the **id** and **appId** for an app that has a service principal in your tenant. You'll define the directory extension on this app.
 
 The object shown here has been shortened for readability.
 
@@ -44,6 +44,7 @@ The following request creates a directory extension definition named **linkedInP
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/applications/da489504-01b0-4754-bf9d-8ed05422ba2f/extensionProperties
+Content-type: application/json
 
 {
     "name": "linkedInProfile",
@@ -89,6 +90,7 @@ In this step, you store the LinkedIn profile URL, Skype ID, and Xbox gamertag fo
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
+Content-type: application/json
 
 {
     "extension_5bfc8fdacfc943a9a6de214ea9d15fdb_linkedInProfile": "www.linkedin.com/in/adelevanceonlinkedIn",
@@ -143,6 +145,7 @@ Suppose Adele has crossed the 1,000,000 *gamerscore* mark and, to show off the m
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
+Content-type: application/json
 
 {
     "extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag": "AwesomeAdele",
@@ -158,12 +161,13 @@ HTTP/1.1 204 No Content
 
 ## Dynamically add users to groups based on their extension data
 
-Assume that you created the dynamic *xBoxers* group in the preceding exercise. In this exercise, you update the group **membershipRule** setting to configure the rule so that only users with Xbox gamer tags can be members of the group.
+Assume that you created the dynamic *xBoxers* group in the preceding exercise. In this step, you update the group **membershipRule** setting to configure the rule so that only users with Xbox gamer tags can be members of the group.
 
 ### Request
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/groups/d61efd38-0b40-488a-8e4d-ed7508504b27
+Content-type: application/json
 
 {
     "membershipRule": "(user.extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag -ne null)"

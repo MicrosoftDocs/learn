@@ -14,7 +14,9 @@ GET https://graph.microsoft.com/v1.0/applications/{applicationId}/extensionPrope
 GET https://graph.microsoft.com/v1.0/applications/{applicationId}?$expand=extensionProperties
 ```
 
-When you create a directory extension definition, Microsoft Graph transforms the extension name you provided by adding a prefix to create a new extension name. This extension name becomes the name of the directory extension property on the target objects. The directory extension properties are named following the naming convention *extension_{appId-without-hyphens}_{extensionProperty-name}*, where `{appId-without-hyphens}` is the stripped version of the owner app's *appId*, which contains only letters (`a`-`z`) and numbers (`0`-`9`).
+When you create a directory extension definition, Microsoft Graph transforms the extension name you provided by adding a prefix to create a new extension name. This name becomes the name of the directory extension property on the target objects.
+
+The directory extension properties are named following the naming convention *extension_{appId-without-hyphens}_{extensionProperty-name}*, where `{appId-without-hyphens}` is the stripped version of the owner app's *appId*, which contains only letters (`a`-`z`) and numbers (`0`-`9`).
 
 For example, when you specify `linkedInProfile` as an extension name in the request body, and your app's appId is `5bfc8fda-cfc9-43a9-a6de-214ea9d15fdb`, the new extension name can be `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_linkedInProfile`. This is one way that directory extensions are closely linked to the owner app.
 
@@ -27,8 +29,6 @@ After you create the directory extension definition, it's available for use afte
 After you define the directory extension, it's available for use on user profiles. You manage the directory extension properties for users through the same HTTP methods that you use to manage users.
 
 ### Supported query capabilities
-
-Both directory extension definitions and the properties support query capabilities.
 
 Directory extension definitions support the `$select` and `$filter` (`eq` operator) OData query parameters to customize the responses.
 

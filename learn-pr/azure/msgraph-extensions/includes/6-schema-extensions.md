@@ -30,7 +30,7 @@ You can define the properties of the extension in a Create or Update operation. 
 
 A schema extension definition has a lifecycle that affects how the property can be used. This lifecycle is managed through the **status** property and can be one of the following states: 
 
-- `InDevelopment` - Initial state after creation.
+- `InDevelopment` - Initial state after creation. For a multi-tenant owner app, the ability to manage the schema extension properties is limited in other tenants.
 - `Available` - If the owner app is a multi-tenant app, the schema extension is available for use by all apps in any tenant.
 - `Deprecated` - The schema extension definition can no longer be read or modified.
 
