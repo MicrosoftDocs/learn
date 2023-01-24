@@ -12,10 +12,11 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/5-injection.md)]
+
 quiz:
-  title: Knowledge Check
+  title: Check your knowledge
   questions: 
-  - content: "In modern day .NET, how can the code fragment \"string sql='SELECT * FROM users WHERE name = '\" + username + \"'` be written more securely?"
+  - content: "In modern day .NET, how can the code fragment `\"string sql='SELECT * FROM users WHERE name = '\" + username + \"'` be written more securely?"
     choices:
     - content: "Using an object relational mapper (ORM)."
       isCorrect: false

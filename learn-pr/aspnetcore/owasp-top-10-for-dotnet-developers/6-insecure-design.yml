@@ -14,7 +14,7 @@ content: |
   [!include[](includes/6-insecure-design.md)]
 
 quiz:
-  title: Knowledge Check
+  title: Check your knowledge
   questions: 
   - content: "What are the objectives of threat modeling exercise?"
     choices:

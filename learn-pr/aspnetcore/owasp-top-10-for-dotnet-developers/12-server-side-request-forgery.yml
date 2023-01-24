@@ -14,7 +14,7 @@ content: |
   [!include[](includes/12-server-side-request-forgery.md)]
 
 quiz:
-  title: Knowledge Check
+  title: Check your knowledge
   questions:   
   - content: "Performing input validation on client side only is considered to be best practice?"
     choices:

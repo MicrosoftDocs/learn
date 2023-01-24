@@ -14,7 +14,7 @@ content: |
   [!include[](includes/11-security-logging-monitoring.md)]
 
 quiz:
-  title: Knowledge Check
+  title: Check your knowledge
   questions:  
   - content: "Which of the statements would you consider secure logging best practices?"
     choices:

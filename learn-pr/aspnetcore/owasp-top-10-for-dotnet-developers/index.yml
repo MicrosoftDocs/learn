@@ -59,12 +59,12 @@ units:
 - learn.owasp-top-10-for-dotnet-developers.cryptographic-failures
 - learn.owasp-top-10-for-dotnet-developers.injection
 - learn.owasp-top-10-for-dotnet-developers.insecure-design
-- learn.owasp-top-10-for-dotnet-developers.identification-authentication-failures
 - learn.owasp-top-10-for-dotnet-developers.security-misconfiguration
+- learn.owasp-top-10-for-dotnet-developers.vulnerable-outdated-components
+- learn.owasp-top-10-for-dotnet-developers.identification-authentication-failures
+- learn.owasp-top-10-for-dotnet-developers.software-data-integrity-failures
 - learn.owasp-top-10-for-dotnet-developers.security-logging-monitoring
 - learn.owasp-top-10-for-dotnet-developers.server-side-request-forgery
-- learn.owasp-top-10-for-dotnet-developers.software-data-integrity-failures
-- learn.owasp-top-10-for-dotnet-developers.vulnerable-outdated-components
 - learn.owasp-top-10-for-dotnet-developers.summary
 
 badge:

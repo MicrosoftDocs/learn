@@ -14,7 +14,7 @@ content: |
   [!include[](includes/9-identification-authentication-failures.md)]
 
 quiz:
-  title: Knowledge Check
+  title: Check your knowledge
   questions:        
   - content: "You support a legacy web app hosted in Azure. When browsing the codebase, you stumbled upon a hardcoded database connection string with username and password to a production environment database. What would be the correct course of action?"
     choices:
