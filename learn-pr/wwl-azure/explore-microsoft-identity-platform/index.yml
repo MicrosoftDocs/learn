@@ -2,8 +2,8 @@
 uid: learn.wwl.explore-microsoft-identity-platform
 metadata:
   title: Explore the Microsoft identity platform
-  description: "Learn the core features and functionality of the Microsoft identity platform which includes authentication service, open-source libraries, and application management tools to enable and control access to resources."
-  ms.date: 10/17/2022
+  description: "Explore the Microsoft identity platform"
+  ms.date: 01/24/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
