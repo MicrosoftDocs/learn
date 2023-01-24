@@ -2,7 +2,7 @@
 
 When loading data into Azure Synapse Analytics on a scheduled basis, it’s important to try to reduce the time taken to perform the data load, and minimize the resources needed as much as possible to maintain good performance cost-effectively. One quick and easy approach is with the use of the `COPY` command in SQL.
 
-## Loading data into staging tables
+## Loading data into tables
 
 If you use *external* tables for staging, there's no need to load the data into them because they already reference the data files in the data lake. However, if you use "regular" relational tables, you can use the `COPY` statement to load data from the data lake, as shown in the following example:
 

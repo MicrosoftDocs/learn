@@ -55,9 +55,9 @@ GO
 
 While the scripted loop approach can be an effective way to populate a time dimension table, it may take some time to run on an MPP system. In some cases, it may be more efficient to generate a sequence of date attributes using an external tool (such as Microsoft Excel) in a file, and using the `COPY` command to load the date data.
 
-### Updating dimension tables
 
-So far we've explored how to Insert new dimension data. However, in many data warehouses you need to handle updates to dimension data and support what are commonly referred to as *slowly changing dimensions* (SCDs).
+
+In many data warehouses you need to handle updates to dimension data and support what are commonly referred to as *slowly changing dimensions* (SCDs).
 
 There are multiple kinds of slowly changing dimension, of which three are commonly implemented:
 
