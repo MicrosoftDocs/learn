@@ -1,18 +1,19 @@
 At the toy company, the website's developers have offered to help you write the Bicep template. You told them you've been keeping the Bicep code in a repository, and they've asked you to publish the repository. In this exercise, you'll publish your Git repository so that so your colleagues can view the files and collaborate with you.
 
-During the process, you'll: 
+During the process, you'll:
 
 > [!div class="checklist"]
-> * Create a new remote repository.
-> * Configure your local Git repository to integrate with the remote repository.
-> * Push your changes from your local repository to the remote repository.
-> * Verify that the changes appear in the remote repository.
+>
+> - Create a new remote repository.
+> - Configure your local Git repository to integrate with the remote repository.
+> - Push your changes from your local repository to the remote repository.
+> - Verify that the changes appear in the remote repository.
 
 ::: zone pivot="github"
 
 ## Create a repository in GitHub
 
-1. In a browser, go to [GitHub](https://www.github.com?azure-portal=true). Sign in by using your GitHub account, or create a new account if you don't have one.
+1. In a browser, go to [GitHub](https://www.github.com). Sign in with your GitHub account, or create a new account if you don't have one.
 
 1. Select the plus (**+**) icon in the upper right of the window, and then select **New repository**.
 
@@ -20,10 +21,10 @@ During the process, you'll:
 
 1. Enter the details of your new repository:
 
-   - **Repository name**: Enter a meaningful but short name. For this module, use `toy-website`.
-   - **Description**: Include a description to help others understand what the repository is for.
+   - **Owner**: Select your GitHub user name from the drop-down menu. In the screenshot, `mygithubuser` is the repository owner's GitHub account name. You'll use your account name later in this module.
+   - **Repository name**: Enter a meaningful but short name. For this module, use `toy-website-workflow`.
+   - **Description**: Include a description to help others understand the repository's purpose.
    - **Private**: You can use GitHub to create public and private repositories. Create a private repository, because only people inside your organization should access your toy website's files. You can grant access to others later.
-   - Leave the repository initialization checkboxes cleared.
 
    After you're done, your repository configuration should look like the following screenshot:
 
@@ -31,7 +32,7 @@ During the process, you'll:
 
 1. Select **Create repository**.
 
-1. On the confirmation page that appears, make a note of the repository's URL. You'll use it shortly.
+1. On the confirmation page that appears, make a note of the repository's URL. You can use the copy button to copy the URL. You'll use it shortly.
 
    :::image type="content" source="../media/9-github-new-repository-confirmation.png" alt-text="Screenshot of the GitHub interface that shows the new repository's details, with the repository's URL highlighted." border="true":::
 
@@ -41,7 +42,7 @@ During the process, you'll:
 
 ## Create a repository in Azure Repos
 
-1. In a browser, go to [Azure DevOps](https://dev.azure.com?azure-portal=true). Sign in or create a new account.
+1. In a browser, go to [Azure DevOps](https://dev.azure.com). Sign in or create a new account.
 
 1. If you're creating a new account, follow the prompts to create an Azure DevOps organization. Azure DevOps then asks you to create a new project. Continue to the next step.
 
@@ -52,19 +53,20 @@ During the process, you'll:
 1. Enter the details of your new project:
 
    - **Project name**: Enter a meaningful but short name. For this module, use `toy-website`.
+   - **Description**: Include a description to help others understand the repository's purpose.
    - **Visibility**: You can use Azure DevOps to create public and private repositories. Create a private repository, because only people inside your organization should access your website's files. You can grant access to others later.
 
    After you're done, your project configuration should look like the following screenshot:
 
    :::image type="content" source="../media/9-azure-devops-new-project-details.png" alt-text="Screenshot of the Azure DevOps interface that shows the configuration for the project to create." border="true":::
 
-1. Select **Create project**.
+1. Select **Create**.
 
 1. On the project page that appears, select the **Repos** menu item.
 
    :::image type="content" source="../media/9-azure-devops-repos-menu.png" alt-text="Screenshot of the Azure DevOps interface that shows the menu on the project page, with the Repos item highlighted." border="true":::
 
-1. Make a note of the repository's URL. You'll use it shortly.
+1. Make a note of the repository's URL. You can use the copy button to copy the URL. You'll use it shortly.
 
    :::image type="content" source="../media/9-azure-devops-repo-details.png" alt-text="Screenshot of the Azure Repos interface that shows the repository's details, with the repository's U R L highlighted." border="true":::
 
@@ -73,7 +75,7 @@ During the process, you'll:
 When you work with Azure Repos from Visual Studio Code on macOS, you need to use a special password that's different from the password that you use to sign in.
 
 > [!NOTE]
-> If you're using Windows, skip to the next section, "Configure your local Git repository."
+> If you're using Windows, skip to the next section, _Configure your local Git repository_.
 
 1. Select the **Generate Git credentials** button.
 
@@ -87,19 +89,45 @@ Keep your browser open. You'll check on the repository again later in this exerc
 
 ## Configure your local Git repository
 
-1. Ensure you're on the *main* branch by entering the following command in the Visual Studio Code terminal:
+1. Ensure you're on the _main_ branch by entering the following command in the Visual Studio Code terminal:
 
    ```bash
    git checkout main
    ```
 
-1. Enter the following command to integrate your local repository with the remote repository that you just created. Replace `YOUR_REPOSITORY_URL` with the URL that you saved earlier.
+1. Enter the following command to integrate your local repository with the remote repository that you created. Replace `YOUR_REPOSITORY_URL` with the URL that you saved earlier.
 
    ```bash
    git remote add origin YOUR_REPOSITORY_URL
    ```
 
    Notice that you're using the command `git remote add` to create a new reference to a remote repository. You name the reference `origin`, which is the standard name.
+
+1. Verify the remote was created.
+
+   ```bash
+   git remote -v
+   ```
+
+   The output will look like the example.
+
+   ::: zone pivot="github"
+
+   ```output
+   origin  https://github.com/mygithubuser/toy-website.git (fetch)
+   origin  https://github.com/mygithubuser/toy-website.git (push)
+   ```
+
+   ::: zone-end
+
+   ::: zone pivot="azurerepos"
+
+   ```output
+   origin https://myuser@dev.azure.com/myuser/toy-website/_git/toy-website (fetch)
+   origin https://myuser@dev.azure.com/myuser/toy-website/_git/toy-website (push)
+   ```
+
+   ::: zone-end
 
 ## Push your changes by using the Git CLI
 
@@ -111,13 +139,13 @@ Keep your browser open. You'll check on the repository again later in this exerc
    git push -u origin main
    ```
 
-   Because your current local branch is *main*, this command tells Git that your local *main* branch _tracks_ the *main* branch in your remote repository. It also _pushes_ the commits from your local repository to the remote repository.
+   Because your current local branch is _main_, this command tells Git that your local _main_ branch _tracks_ the _main_ branch in your remote repository. It also _pushes_ the commits from your local repository to the remote repository.
 
 1. This is the first time you've used this remote repository, so the terminal prompts you to select how to authenticate. Choose the option to use the browser.
 
 1. Follow the instructions in the browser to sign in and authorize Visual Studio Code to access your GitHub repository.
 
-1. In your terminal window, Git displays output similar to the following:
+1. In your terminal window, Git displays output similar to the following example:
 
    ```output
    Enumerating objects: 16, done.
@@ -144,7 +172,7 @@ Keep your browser open. You'll check on the repository again later in this exerc
    git push -u origin main
    ```
 
-   Because your current local branch is *main*, this command tells Git that your local *main* branch _tracks_ the *main* branch in your remote repository. It also _pushes_ the commits from your local repository to the remote.
+   Because your current local branch is _main_, this command tells Git that your local _main_ branch _tracks_ the _main_ branch in your remote repository. It also _pushes_ the commits from your local repository to the remote.
 
 1. This is the first time you've used this repository, so you're prompted to sign in.
 
@@ -152,7 +180,7 @@ Keep your browser open. You'll check on the repository again later in this exerc
 
    If you're using macOS, paste the password that you generated earlier in this exercise.
 
-1. In your terminal window, Git displays output similar to the following:
+1. In your terminal window, Git displays output similar to the following example:
 
    ```output
    Enumerating objects: 16, done.
@@ -189,10 +217,10 @@ Now that your colleagues will use your repository, it's important to create a _R
    This repository contains the website for our toy company.
 
    ## How to use
-   
-   The Azure infrastructure is defined using [Bicep](/azure/azure-resource-manager/bicep/).
 
-   To deploy the website's Azure resources, use the *deploy/main.bicep* file.
+   The Azure infrastructure is defined using [Bicep](https://learn.microsoft.com/azure/azure-resource-manager/bicep).
+
+   To deploy the website's Azure resources, use the _deploy/main.bicep_ file.
    ```
 
    > [!TIP]

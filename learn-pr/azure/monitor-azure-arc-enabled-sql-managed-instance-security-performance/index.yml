@@ -34,7 +34,7 @@ units:
 - learn.monitor-azure-arc-enabled-sql-managed-instance-security-performance.introduction
 - learn.monitor-azure-arc-enabled-sql-managed-instance-security-performance.secure-azure-arc-enabled-sql-managed-instance
 - learn.monitor-azure-arc-enabled-sql-managed-instance-security-performance.monitor-your-azure-arc-enabled-sql-managed-instance
-- learn.monitor-azure-arc-enabled-sql-managed-instance-security-performance.exercise-using-grafana-performance-monitor-azure-arc-enabled-sql-mi
+- learn.monitor-azure-arc-enabled-sql-managed-instance-security-performance.exercise-using-grafana-performance-monitor-azure-arc-enabled-sql-managed-instance
 - learn.monitor-azure-arc-enabled-sql-managed-instance-security-performance.knowledge-check
 - learn.monitor-azure-arc-enabled-sql-managed-instance-security-performance.summary
 badge:
