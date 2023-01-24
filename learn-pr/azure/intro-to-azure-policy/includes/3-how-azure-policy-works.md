@@ -34,7 +34,8 @@ If you're using Azure Policy on **Azure Resources**, there are **no costs** asso
 
 > [!NOTE]
 >Azure Arc is a service that allows you to manage some resource types hosted outisde of Azure. Today, the following resource types are supported:
+>
 >* Physical and Virtual Windows or Linux Servers
 >* Kubernetes clusters
->* Azure data services such as Azure SQL Managed Instance and PostgreSQL Hyperscale services
+>* Azure data services such as Azure SQL Managed Instance
 >* SQL Server

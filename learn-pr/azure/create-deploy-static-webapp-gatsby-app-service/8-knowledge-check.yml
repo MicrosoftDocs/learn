@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Four multiple-choice questions
-  ms.date: 04/22/2022
+  ms.date: 01/13/2023
   author: acomfort248
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -38,7 +38,7 @@ quiz:
         - content: "Set up the route by implementing the Gatsby API in the file `gatsby-node.js`."
           isCorrect: false
           explanation: "Incorrect. This is the correct place to set up additional routes, but Gatsby sets up page component routes for you so there's no need to do this."
-        - content: "Create an App.js entry component and within it a Route component and resolver component for each route."
+        - content: "Create an App.js entry component and, within it, a Route component and resolver component for each route."
           isCorrect: false
           explanation: "Incorrect. You don't need to create those components. Gatsby sets up page component routes for you."
         - content: "Create a React component in the `pages` directory and call the `registerRoute()` method, passing the route as a string together with the component."

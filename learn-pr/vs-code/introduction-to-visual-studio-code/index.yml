@@ -2,7 +2,7 @@
 uid: learn.introduction-to-visual-studio-code
 metadata:
   title: Introduction to Visual Studio Code          
-  description: "Evaluate whether Visual Studio Code is appropriate for your development work."             
+  description: "In this module, you'll learn how to assess whether Visual Studio Code is the right source code editor for you. We'll explore how Visual Studio Code can be used in different development situations, for example, web, C++, and data science. We'll also examine Visual Studio Code's features such as the editor, debugger, and source control. Finally, we'll walk you through decision criteria you can use to choose a code editor."             
   ms.date: 10/20/2022            
   author: kjo-msft      
   ms.author: karinjohnson          
@@ -11,7 +11,10 @@ metadata:
 
 title: Introduction to Visual Studio Code
 
-summary: "Evaluate development scenarios in which you could choose Visual Studio Code as your source code editor. Examine the features of Visual Studio Code such as the editor, debugger, and source control."
+summary: |
+  In this module, you'll learn how to assess whether Visual Studio Code is the right source code editor for you. We'll explore how Visual Studio Code can be used in different development situations, for example, web, C++, and data science. We'll also examine Visual Studio Code's features such as the editor, debugger, and source control. Finally, we'll walk you through decision criteria you can use to choose a code editor.
+  > [!NOTE]
+  > This module doesn't contain coding exercises. So, if you already know Visual Studio Code is the code editor you want to use, you may prefer to skip this module and instead check out [Set up Visual Studio Code](https://code.visualstudio.com/learn/get-started/basics), where we'll guide you through the steps to download, customize, and start using Visual Studio Code.
 
 abstract: |
   By the end of this module, you'll be able to:

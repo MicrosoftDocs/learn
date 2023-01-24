@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.visualize-data-workbooks.create-new-azure-workbook
+title: Create a workbook that queries your resources
+metadata:
+  title: Create a new Azure workbook
+  description: Use Azure Workbooks to query data from multiple data sources and use visualizations such as graphs, charts, and grids to build visual reports for data analysis and reporting.
+  ms.date: 10/27/2022
+  author: AbbyMSFT
+  ms.author: abbyweisberg
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  sandbox: true
+  interactive: bash
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-create-new-azure-workbook.md)]

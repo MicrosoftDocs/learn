@@ -11,13 +11,12 @@ metadata:
   ms.prod: learning-azure
   ms.custom: e2e-hybrid
 title: Introduction to Azure Arc-enabled data services
-summary: In this module, you'll learn the fundamentals of hybrid computing and Azure Arc. You will also learn the basics of Azure Arc-enabled data services including the overall architecture. Then you will learn the capabilities of Azure Arc-enabled SQL Managed Instance and PostgreSQL Hyperscale.
+summary: In this module, you'll learn the fundamentals of hybrid computing and Azure Arc. You will also learn the basics of Azure Arc-enabled data services including the overall architecture. Then you will learn the capabilities of Azure Arc-enabled SQL Managed Instance.
 abstract: |
   By the end of this module, you'll be able to:
   - Describe why hybrid computing is an important technology strategy for many users and businesses.
   - Describe what is Azure Arc-enabled data services and why it can be an important part of any hybrid compute and data strategy.
   - Describe the managed capabilities and benefits of using Azure Arc-enabled SQL Managed Instance for SQL Server workloads.
-  - Describe the managed capabilities and benefits of using Azure Arc-enabled PostgreSQL Hyperscale for applications wanting to use the PostgreSQL engine.
 prerequisites: |
   - Basic knowledge of Azure
   - Working knowledge of deployment options for Azure SQL
@@ -47,7 +46,6 @@ units:
 - learn.azure.intro-to-arc-enabled-data-services.2-hybrid-computing
 - learn.azure.intro-to-arc-enabled-data-services.3-fundamentals
 - learn.azure.intro-to-arc-enabled-data-services.4-sql-managed-instance
-- learn.azure.intro-to-arc-enabled-data-services.5-postgresql-hyperscale
 - learn.azure.intro-to-arc-enabled-data-services.6-summary
 badge:
   uid: learn.azure.intro-to-arc-enabled-data-services.badge
