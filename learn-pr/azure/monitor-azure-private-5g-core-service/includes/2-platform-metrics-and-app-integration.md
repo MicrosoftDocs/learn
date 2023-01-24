@@ -7,7 +7,7 @@ Azure Private 5G Core also allows you to use an application of your choice to mo
 
 On the **Overview** page of the **Mobile Network Site** resource that you use to manage a site, Azure Private 5G Core displays the platform metrics on the **Monitoring** tab, as shown in the following screenshot:
 
-:::image type="content" source="../media/platform-metrics.png" alt-text="A screenshot that shows the platform metrics charts." border="true":::
+:::image type="content" source="../media/platform-metrics.png" alt-text="A screenshot that shows the platform metrics charts." lightbox="../media/platform-metrics.png":::
 
 The platform metrics provide the health and performance information for the packet core instance. You can check metrics like user plane packets received or user plane packets dropped.
 
