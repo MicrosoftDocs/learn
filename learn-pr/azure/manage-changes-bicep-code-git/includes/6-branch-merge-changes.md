@@ -21,7 +21,7 @@ Creating a branch is quick and easy in Git. There are a few ways to do it, but t
 git checkout -b my-experimental-changes
 ```
 
-This command actually does two things: it creates the _my-experimental-changes_ branch, and it checks out the newly created branch. A _checkout_ means that the copy of the files you see in your folder will reflect what's in the branch. If you have two branches with completely different sets of changes, checking out one branch and then the other allows you to flip between the two sets of changes.
+This command actually does two things: it creates the _my-experimental-changes_ branch, and it checks out the newly created branch. A _checkout_ means that the copy of the files you see in your folder will reflect what's in the branch. If you have two branches with different sets of changes, checking out one branch and then the other allows you to flip between the two sets of changes.
 
 You can switch to an existing branch by using the `git checkout` command too. In this example, you check out the _main_ branch:
 
@@ -62,14 +62,14 @@ git branch -d my-experimental-changes
 
 When Git merges changes from one branch into another, it looks at the files that have been modified and it tries to merge the changes together. Sometimes, you might have made changes to the same lines of code on two different branches. In these situations, Git can't choose which is the correct version of the code, so it will instead create a _merge conflict_.
 
-We don't discuss merge conflicts in depth in this module, but it's important to know that this can happen. And it's even more common when you collaborate with other people. In the summary for this module, we provide a link to more information about how Git and Visual Studio Code help you to resolve merge conflicts.
+We don't discuss merge conflicts in depth in this module, but it's important to know that merge conflicts can happen. And it's more common when you collaborate with other people. In the summary for this module, we provide a link to more information about how Git and Visual Studio Code help you to resolve merge conflicts.
 
 ## Git workflows
 
-In this module, you learn about only the basics of branches. However, branches are powerful and give you a lot of flexibility in how you work. For example, you can create branches off other branches, and merge a branch with any other branch. You can use branches to create all sorts of different _workflows_ that support the way you and your team like to work.
+In this module, you learn about only the basics of branches. However, branches are powerful and give you flexibility in how you work. For example, you can create branches off other branches, and merge a branch with any other branch. You can use branches to create all sorts of different _workflows_ that support the way you and your team like to work.
 
 In this module, we're using a simple workflow called _trunk-based development_. In this workflow, you have a single _trunk_ branch. (We've been using _main_.) That branch represents the known-good version of your code. You create branches off this trunk when you make changes or do any work.
 
 Trunk-based development discourages making changes directly on the trunk branch. You try to keep other branches around for only a short amount of time, which helps to minimize merge conflicts. Then you merge and delete those branches as you complete pieces of work.
 
-There are other workflows too. These are common in team environments where you might want to control how often you release your changes. In the summary for this module, we provide links to more information about Git workflows.
+There are other workflows that are common in team environments where you might want to control how often you release your changes. In the summary for this module, we provide links to more information about Git workflows.

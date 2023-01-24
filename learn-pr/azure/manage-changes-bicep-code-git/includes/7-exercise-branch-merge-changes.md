@@ -23,7 +23,7 @@ In this exercise, you'll add a new Bicep module on a branch of your repository. 
    git status
    ```
 
-   The output looks similar to the following:
+   The output looks similar to the following example:
 
    ```output
    On branch add-database
@@ -32,7 +32,7 @@ In this exercise, you'll add a new Bicep module on a branch of your repository. 
 
    The first line of the output tells you that Git is on the _add-database_ branch.
 
-1. In Visual Studio Code, look at the status bar at the bottom of the window. Notice that the branch name on the left has changed to _add-database_.
+1. In Visual Studio Code, look at the status bar at the bottom, left side of the window. Notice that the branch name changed to _add-database_.
 
    As with the other Git commands you've run, Visual Studio Code stays up to date with the changes in your Git repository, including when you check out a branch.
 

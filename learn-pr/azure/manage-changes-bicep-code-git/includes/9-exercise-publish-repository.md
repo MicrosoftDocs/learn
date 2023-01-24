@@ -111,23 +111,23 @@ Keep your browser open. You'll check on the repository again later in this exerc
 
    The output will look like the example.
 
-::: zone pivot="github"
+   ::: zone pivot="github"
 
    ```output
    origin  https://github.com/mygithubuser/toy-website.git (fetch)
    origin  https://github.com/mygithubuser/toy-website.git (push)
    ```
 
-::: zone-end
+   ::: zone-end
 
-::: zone pivot="azurerepos"
+   ::: zone pivot="azurerepos"
 
    ```output
    origin https://myuser@dev.azure.com/myuser/toy-website/_git/toy-website (fetch)
    origin https://myuser@dev.azure.com/myuser/toy-website/_git/toy-website (push)
    ```
 
-::: zone-end
+   ::: zone-end
 
 ## Push your changes by using the Git CLI
 
@@ -211,7 +211,7 @@ Now that your colleagues will use your repository, it's important to create a _R
 
 1. Copy the following text into the file:
 
-   ```Markdown
+   ```markdown
    # Toy company's website
 
    This repository contains the website for our toy company.

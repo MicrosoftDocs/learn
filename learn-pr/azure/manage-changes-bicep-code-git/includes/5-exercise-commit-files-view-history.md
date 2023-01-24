@@ -51,7 +51,7 @@ Here you add a Bicep module and reference it from your _main.bicep_ file.
 
 ## Compare the differences
 
-Now that you've made a change to the _main.bicep_ file, let's inspect the differences. It's a good idea to review the differences in each file you're about to stage and commit, to ensure you don't accidentally commit any changes you don't want.
+Now that you've made a change to the _main.bicep_ file, let's inspect the differences. It's a good idea to review the differences in each file you're about to stage and commit. You do the review to verify that your changes are correct.
 
 1. In Visual Studio Code, select **View** > **Source Control**, or select <kbd>Ctrl+Shift+G</kbd> on the keyboard.
 
@@ -101,7 +101,7 @@ Now that you've reviewed the changes and are satisfied with it, you commit the u
    git log --pretty=oneline
    ```
 
-   The output looks similar to the following:
+   The output looks similar to the following example:
 
    ```output
    238b0867f533e14bcaabbade31b9d9e1bda6123b (HEAD -> main) Add App Service module

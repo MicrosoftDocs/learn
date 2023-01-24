@@ -22,7 +22,7 @@ In a future module, you'll learn about deploying your Bicep code through an auto
 
 When you work with repositories hosted in GitHub or Azure DevOps, you configure your local Git repository to know about the remote repository. An online repository has a URL that Git can use to access it from your computer. Conventionally, the term _origin_ refers to the remote repository that your local repository synchronizes with.
 
-You also need to set up _tracking branches_, which tell Git that a branch from your local repository represents the same branch as in your online repository. This is especially important for your _main_ branch, because you want to keep that synchronized across all of your repositories. You can enable tracking on other branches too.
+You also need to set up _tracking branches_ that tell Git a branch from your local repository represents the same branch as in your online repository. This tracking is especially important for your _main_ branch, because you want to keep that synchronized across all of your repositories. You can enable tracking on other branches too.
 
 > [!NOTE]
 > Your team might have already created a repository that you want to view or modify. You can quickly get a copy of the repository by _cloning_ the online repository through the `git clone` command.
@@ -34,11 +34,11 @@ After you've configured your local repository and tracking branch, you can _push
 
 ## Authentication
 
-When you start working with online repositories, security becomes very important. Source code for your infrastructure and applications is valuable, and it needs to be protected.
+When you start working with online repositories, security becomes important. Source code for your infrastructure and applications is valuable, and it needs to be protected.
 
 GitHub and Azure DevOps have comprehensive security processes. They both require that you authenticate before you start working with remote repositories hosted on their platforms.
 
-The first time you try to work with a remote repository, you're prompted to sign in to GitHub or Azure DevOps. Some organizations protect their Git repositories with additional security checks like multifactor authentication. After you sign in, Git uses a component called Git Credential Manager to maintain your access so you don't need to sign in every time.
+The first time you try to work with a remote repository, you're prompted to sign in to GitHub or Azure DevOps. Some organizations protect their Git repositories with extra security checks like multifactor authentication. After you sign in, Git uses a component called Git Credential Manager to maintain your access so you don't need to sign in every time.
 
 ## Collaboration with others
 
