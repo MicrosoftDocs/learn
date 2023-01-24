@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.explore-security-azure-arc-enabled-sql-managed-instance
+title: Describe security features of Azure Arc-enabled SQL Managed Instance
+metadata:
+  title: Describe security features of Azure Arc-enabled SQL Managed Instance
+  description: Learn how to enhance security of Azure Arc-enabled SQL Managed Instance.
+  ms.date: 12/23/2022
+  author: tchristiani
+  ms.author: terrychr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/explore-security-azure-arc-enabled-sql-managed-instance.md)]

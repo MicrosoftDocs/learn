@@ -19,7 +19,7 @@ Azure Arc supports Azure integration in several distinct scenarios for different
 - Azure Arc enabled Kubernetes - a wide range of Kubernetes distributions
 - Azure Stack HCI - physical clusters with virtualized workloads and containerized workloads
 - Azure Kubernetes Service on Azure Stack HCI - Azure Kubernetes Service (AKS) running on Azure Stack HCI clusters
-- Azure Arc enabled data services - Azure SQL Managed Instance and Azure Database for PostgreSQL Hyperscale services running on Azure Arc enabled Kubernetes or Azure Kubernetes Service on Azure Stack HCI
+- Azure Arc enabled data services - Azure SQL Managed Instance running on Azure Arc enabled Kubernetes or Azure Kubernetes Service on Azure Stack HCI
 
 > [!NOTE]
 > Verify that the Azure Arc features you intend to use in your production environment are generally available.
@@ -79,7 +79,7 @@ You can learn more by visiting the following webpages:
 - [Azure Arc overview](/azure/azure-arc/overview/?azure-portal=true)
 - [What is Azure Arc enabled servers?](/azure/azure-arc/servers/overview/?azure-portal=true)
 - [Connect Azure Stack HCI to Azure](/azure-stack/hci/deploy/register-with-azure/?azure-portal=true)
-- [Azure Arc enabled SQL Server (preview)](/sql/sql-server/azure-arc/overview?view=sql-server-ver15&azure-portal=true)
+- [Azure Arc enabled SQL Server (preview)](/sql/sql-server/azure-arc/overview?azure-portal=true)
 - [What is Azure Arc enabled Kubernetes?](/azure/azure-arc/kubernetes/overview/?azure-portal=true)
 - [What is Azure Kubernetes Service on Azure Stack HCI?](/azure-stack/aks-hci/overview/?azure-portal=true)
 - [What are Azure Arc enabled data services (preview)?](/azure/azure-arc/data/overview/?azure-portal=true)

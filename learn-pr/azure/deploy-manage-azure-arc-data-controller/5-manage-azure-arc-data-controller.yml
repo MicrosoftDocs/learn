@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-manage-azure-arc-data-controller.manage-azure-arc-data-controller
+title: Manage an Azure Arc data controller
+metadata:
+  title: Manage an Azure Arc data controller
+  description: Demonstrates how to manage an Azure Arc data controller.
+  ms.date: 12/19/2022
+  author: tchristiani
+  ms.author: terrychr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 2
+content: |
+  [!include[](includes/manage-azure-arc-data-controller.md)]
