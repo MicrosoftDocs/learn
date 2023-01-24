@@ -1,4 +1,4 @@
-[Artemis](https://www.nasa.gov/specials/artemis/?azure-portal=true) is NASA's new lunar exploration program. It's all lunar activities and includes a mission to land the first woman and the next man on the Moon by 2024. The goal of the program is to begin to understand what infrastructure and preparation are needed to eventually send an astronaut to set foot on Mars.
+[Artemis](https://www.nasa.gov/specials/artemis/?azure-portal=true) is NASA's new lunar exploration program. It's all lunar activities and includes a mission to land the first woman and the next man on the Moon by 2025. The goal of the program is to begin to understand what infrastructure and preparation are needed to eventually send an astronaut to set foot on Mars.
 
 ## How do we learn?
 
