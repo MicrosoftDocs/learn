@@ -8,7 +8,7 @@ metadata:
   ms.author: sonialopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 
+title: Estimate physical resources for quantum algorithms using the Azure Quantum Resource Estimator
 summary: Learn why resource estimation is crucial in the development of quantum computing, and how to use the Azure Quantum Resource Estimator. 
 abstract: |
   In this module, you will:
