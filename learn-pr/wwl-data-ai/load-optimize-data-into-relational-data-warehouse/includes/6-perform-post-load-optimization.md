@@ -1,6 +1,6 @@
 
 
-After loading new data into the data warehouse, it's a good idea to rebuild the table columnstore indexes and update statistics on commonly queried columns.
+After loading new data into the data warehouse, it's a good idea to rebuild the table clustered columnstore indexes and update statistics on commonly queried columns.
 
 The following example rebuilds all indexes on the **DimProduct** table.
 

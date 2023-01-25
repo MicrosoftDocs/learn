@@ -37,3 +37,14 @@ quiz:
     - content: "COPY Command 3"
       isCorrect: false
       explanation: "That's incorrect. Although the COPY command is a recommend path for loading data, it requires the table to already exist."
+  - content: "What step should you take after loading data into your Synapse Analytics Tables ?[ ] Drop and rebuild indexes on the database  [ ] Create another clustered columnstore index[x] Rebuild the index on the particular table  [explanation]  The Create Table as Select (CTAS) is the simplest way to load data into a new table in Synapse Analytics.[explanation]"
+    choices:
+    - content: "Drop and rebuild indexes on the database 1"
+      isCorrect: false
+      explanation: "That's incorrect. It is only necessary to rebuild the indexes on the affected tables."
+    - content: "Create another clustered columnstore index 2"
+      isCorrect: false
+      explanation: "That's incorrect. There can only be on clustered columnstore index on a table )"
+    - content: "Rebuild the index on the particular table 3"
+      isCorrect: true
+      explanation: "That's correct. You should always rebuild indexes which will also update statistics to ensure you achieve the best performance on your freshly loaded data."
