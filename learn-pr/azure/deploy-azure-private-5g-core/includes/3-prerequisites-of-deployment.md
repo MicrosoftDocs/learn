@@ -40,8 +40,8 @@ In addition to the 5G core software, you'll need to purchase the following to co
 - **SIMs and RANs**: The ecosystem of trusted Private 5G Core partners can provide you with these components.
 - **Azure Stack Edge Pro SKU**: You'll need to purchase this Microsoft hardware through Azure.
 
-Once you're ready for the deployment, you can use the Azure portal for the following deployment tasks:
+Once you're ready for the deployment, you can use the Azure portal to complete the following deployment tasks:
 
-1. Create a private mobile network.
+1. Create a mobile network.
 1. Create a site.
-1. Configure service and SIM policy.
+1. Configure services and SIM policies.

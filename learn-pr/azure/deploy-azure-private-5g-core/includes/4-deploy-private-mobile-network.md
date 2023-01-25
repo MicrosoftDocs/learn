@@ -42,17 +42,17 @@ This section helps you to create the mobile networks resource representing your 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. In the Search bar, type mobile networks. Select the **Mobile Networks** from the drop-down menu.
 
-   :::image type="content" source="../media/create-mobile-network1.png" alt-text="This screen shows how to select the mobile network.":::
+   :::image type="content" source="../media/create-mobile-network.png" alt-text="This screen shows how to select the mobile network.":::
 
 1. On the **Mobile Networks** page, select **Create**.
 1. Use the information you collected in [Collect private mobile network resource values](/azure/private-5g-core/collect-required-information-for-private-mobile-network) to fill out the fields on the **Basics** configuration tab. Once you've done this, select **Next : SIMs >**.
 
-   :::image type="content" source="../media/basics-configuration-tab1.png" alt-text="This screen displays the basics configuration tab.":::
+   :::image type="content" source="../media/basics-configuration-tab.png" alt-text="This screen displays the basics configuration tab.":::
 
 1. On the **SIMs** configuration tab, select your chosen input method by selecting the appropriate option next to **How would you like to input the SIMs information?** You can then input the information you collected in [Collect SIM and SIM Group values](/azure/private-5g-core/collect-required-information-for-private-mobile-network).
    - If you decide not to provision any SIMs at this point, select **Add SIMs later**. By selecting this, you can add SIMS later while managing your mobile networks. For more information, see the [Management](/training/modules/manage-azure-private-5g-core/) module.
 
-     :::image type="content" source="../media/sim-configuration-tab1.png" alt-text="This screen displays the SIM configuration tab.":::
+     :::image type="content" source="../media/sim-configuration-tab.png" alt-text="This screen displays the SIM configuration tab.":::
 
    - If you select **Add manually**, a new **Add SIM** button appears under **Enter SIM profile configurations**. Select it, fill out the fields with the correct settings for the first SIM you want to provision, and select **Add** **SIM**. Repeat this process for each additional SIM you want to provision.
 
