@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.resource-estimator.3-azure-quantum-resource-estimator
-title: Azure Quantum Resource Estimator
+uid: learn.quantum.estimate-resources-quantum-algorithms.3-azure-quantum-resource-estimator
+title: The Azure Quantum Resource Estimator
 metadata:
-  title: Azure Quantum Resource Estimator
+  title: The Azure Quantum Resource Estimator
   description: Learn how to use the Azure Quantum Resource Estimator
   ms.date: 01/24/2023
   author: SoniaLopezBravo
