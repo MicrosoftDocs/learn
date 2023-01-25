@@ -16,7 +16,7 @@ In this module, you'll:
 ## Prerequisites
 
 - A Go environment that's ready to create applications. Ideally, you should have Go locally installed and configured and also have the Visual Studio Code Go extension installed. Alternatively, you can use the Go Playground.
-- Know how to create and modify *.go* files.
+- Know how to create and modify `.go` files.
 - Know how run Go applications by using the terminal prompt.
 - Know how to declare and initialize variables.
 - Know how to create functions.
