@@ -11,7 +11,9 @@ Let's take a closer look at how Azure implements system routes.
 
 - A route table contains a set of rules (called _routes_) that specifies how packets should be routed in a virtual network.
 
-- Routing tables are associated to subnets, and each packet leaving a subnet is handled based on the associated route table.
+- Route tables record information about the system routes, where the tables are associated to subnets.
+
+- Each packet leaving a subnet is handled based on the associated route table.
 
 - Packets are matched to routes by using the destination. The destination can be an IP address, a virtual network gateway, a virtual appliance, or the internet.
 
@@ -19,6 +21,6 @@ Let's take a closer look at how Azure implements system routes.
 
 #### Business scenario
 
-Consider a scenario where you have a virtual network with two subnets. You can use Azure system routes to control communication between the subnets and between specified subnets and the internet. The front-end subnet uses a system route to access the internet. The back-end subnet uses a system route to access the front-end subnet. Both subnets access a route table. The following illustration highlights this scenario:
+Consider a configuration consisting of a virtual network with two subnets. In this scenario, you can use Azure system routes to control communication between the subnets and between subnets and the internet. The front-end subnet can use a system route to access the internet. The back-end subnet can use a system route to access the front-end subnet. Both subnets access a route table. The following illustration highlights this scenario:
 
 :::image type="content" source="../media/system-routes-08992506.png" alt-text="Diagram that shows two subnets that use system routes as described in the text." border="false":::
