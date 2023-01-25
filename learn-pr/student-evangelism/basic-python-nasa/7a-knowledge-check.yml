@@ -20,7 +20,7 @@ quiz:
     - content: "Integer (`int`)"
       isCorrect: false
       explanation: "An `int` is a variable that stores numbers."
-    - content: "Float (`float`0"
+    - content: "Float (`float`)"
       isCorrect: false
       explanation: "A `float` is a variable that functions as a decimal."
     - content: "String (`str`)"
