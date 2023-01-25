@@ -26,7 +26,7 @@ quiz:
     - content: "Replicated"
       isCorrect: false
       explanation: "That's incorrect. Replicated tables would require the definition to be defined in the DDL."
-  - content: "What is the simplest way to create a new Fact table in Synapse Analytics ?[ ] Create External Table as Select (CETAS)  [x] Create Table as Select (CTAS)  [ ] COPY Command  [explanation]  The Create Table as Select (CTAS) is the simplest way to load data into a new table in Synapse Analytics.[explanation]"
+  - content: "What is the simplest way to create a new Fact table in Synapse Analytics ?"
     choices:
     - content: "Slowly changing dimension (SCD)"
       isCorrect: true
@@ -37,7 +37,7 @@ quiz:
     - content: "COPY Command"
       isCorrect: false
       explanation: "That's incorrect. Although the COPY command is a recommend path for loading data, it requires the table to already exist."
-  - content: "What step should you take after loading data into your Synapse Analytics Tables ?[ ] Drop and rebuild indexes on the database  [ ] Create another clustered columnstore index  [x] Rebuild the index on the particular table[explanation]  The Create Table as Select (CTAS) is the simplest way to load data into a new table in Synapse Analytics.[explanation]"
+  - content: "What step should you take after loading data into your Synapse Analytics Tables ?"
     choices:
     - content: "Drop and rebuild indexes on the database"
       isCorrect: false
