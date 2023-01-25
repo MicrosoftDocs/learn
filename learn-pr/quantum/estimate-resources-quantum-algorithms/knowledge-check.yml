@@ -48,7 +48,7 @@ quiz:
       explanation: "The Resource Estimator doesn't estimate how much an algorithm would cost to run."
     - content: "The Resource Estimator outputs the number of physical qubits and the runtime of a quantum algorithm for each of the quantum hardware providers available in Azure Quantum."
       isCorrect: false
-      explanation: 'The Resource Estimator doesn't compare quantum hardware providers.'
+      explanation: "The Resource Estimator doesn't compare quantum hardware providers."
     - content: "The Resource Estimator outputs physical and logical estimates, such as number of rotation gates, quantum error correction estimates, T factory parameters, and total physical qubits and runtime."
       isCorrect: true
       explanation: "Correct. The Resource Estimator computes pre- and post-layout logical and physical estimation for a given quantum technology and an error correction scheme."
