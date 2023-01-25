@@ -12,7 +12,7 @@ Estimating the resources required for Shor’s algorithm is important for assess
 
 ## Estimate the resources with Azure Quantum
 
-You'll calculate the resource estimates for the factoring of a 2048-bit integer. As tolerated error budget, you choose $\\epsilon = 1/3$. 
+You'll calculate the resource estimates for the factoring of a 2048-bit integer. As tolerated error budget, you choose $\epsilon = 1/3$. 
 
 ### Getting started
 
@@ -227,7 +227,8 @@ dashboard(experiment_results)
 ```
 
 **Summary**
-|Qubit model|	Logical qubits|	Logical depth|	T states|	Code distance |	T factories	| T factory fraction| Physical qubits |	Physical runtime|
+
+|Qubit model|Logical qubits|	Logical depth|	T states|	Code distance |	T factories	| T factory fraction| Physical qubits |	Physical runtime|
 |---|---|---|---|---|---|---|---|---|
 |Gate-based µs, 10⁻³|	25481|	1.2e+10|	1.5e+10	|27|	13|	0.6%|	37.38M|	6 years|
 |Gate-based µs, 10⁻⁴|	25481|	1.2e+10|	1.5e+10	|13|	14|	0.8%|	8.68M|	3 years|
