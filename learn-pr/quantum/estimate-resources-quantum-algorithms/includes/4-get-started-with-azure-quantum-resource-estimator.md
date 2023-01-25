@@ -46,7 +46,7 @@ operation EstimateMultiplication(bitwidth : Int) : Unit {
 }
 ```
 > [!NOTE]
-> The *%%qsharp* magic command allows you to enter Q# code directly into a Jupyter  Notebook when using the *Python 3 (ipykernel)*. For more information, see [%%qsharp magic command](xref:microsoft.quantum.how-to.python-local#the-qsharp-magic-command).
+> The *%%qsharp* magic command allows you to enter Q# code directly into a Jupyter  Notebook when using the *Python 3 (ipykernel)*. For more information, see [%%qsharp magic command](/azure/quantum/how-to-python-qdk-local#the-qsharp-magic-command).
 
 
 ## Estimating the algorithm
