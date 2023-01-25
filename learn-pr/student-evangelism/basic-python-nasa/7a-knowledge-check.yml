@@ -39,15 +39,15 @@ quiz:
       explanation: "Correct! Lists can store all types of data."
   - content: "Which of the following lines of code is the correct way to print the value of a variable called `variable` and text?"
     choices:
-    - content: "`print(\"This is a variable\"; variable)`"
+    - content: "`print(\"The variable's value is\"; variable)`"
       isCorrect: false
       explanation: "The semicolon (;) should be a comma."
-    - content: "`print(\"This is a variable\", variable)`"
+    - content: "`print(\"The variable's value is\", variable)`"
       isCorrect: true
       explanation: "Correct! This is how to correctly print a variable and text."
-    - content: "`print(\"This is a variable\": variable)`"
+    - content: "`print(\"The variable's value is\": variable)`"
       isCorrect: false
       explanation: "The colon (:) should be a comma."
-    - content: "`print(\"This is a variable\"~ variable)`"
+    - content: "`print(\"The variable's value is\"~ variable)`"
       isCorrect: false
       explanation: "The tilde (~) should be a comma."
