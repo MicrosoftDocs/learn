@@ -21,6 +21,6 @@ Let's take a closer look at how Azure implements system routes.
 
 #### Business scenario
 
-Consider a configuration consisting of a virtual network with two subnets. In this scenario, you can use Azure system routes to control communication between the subnets and between subnets and the internet. The front-end subnet can use a system route to access the internet. The back-end subnet can use a system route to access the front-end subnet. Both subnets access a route table. The following illustration highlights this scenario:
+Suppose you have a virtual network with two subnets. In this configuration, you can use Azure system routes to control communication between the subnets and between subnets and the internet. A front-end subnet can use a system route to access the internet. A back-end subnet can use a system route to access the front-end subnet. Both subnets access a route table. The following illustration highlights this scenario:
 
 :::image type="content" source="../media/system-routes-08992506.png" alt-text="Diagram that shows two subnets that use system routes as described in the text." border="false":::

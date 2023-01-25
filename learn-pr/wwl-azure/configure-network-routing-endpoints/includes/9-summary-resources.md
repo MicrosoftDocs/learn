@@ -18,6 +18,8 @@ In this module, you learned how to implement system routes and user-defined rout
 
 - Determine [the next hop type between a virtual machine and a destination IP address](/azure/network-watcher/diagnose-vm-network-routing-problem#use-next-hop).
 
+- Explore [user-defined routes and forced-tunneling in Azure Firewall](/azure/firewall/forced-tunneling).
+
 ## Learn more with self-paced training
 
 - Manage and control [traffic flow in your Azure deployment with routes (sandbox)](/training/modules/control-network-traffic-flow-with-routes/).
