@@ -23,13 +23,24 @@ You create a virtual environment by calling the `venv` module. The module expect
 Take the following steps:
 
 1. Go to the directory where you want to keep your project.
-1. Use the following command to call the `venv` module. The command differs slightly depending on your operating system.
+1. Use the following command to call the `venv` module. 
 
-   ```bash
+   ```console
    python -m venv env
    ```
 
-   At this point, some directories are created for you:
+   At this point, some directories are created for you. The directory names differ slightly depending on your operating system. 
+
+   The directories look like this in Windows:
+
+   ```output
+   /env
+     /include
+     /lib
+     /Scripts
+   ```
+
+   The directories look like this in Linux and macOS:
 
    ```output
    /env
@@ -38,7 +49,7 @@ Take the following steps:
      /lib
    ```
 
-   Your environment needs the `env` directory to keep track of details like which version of Python and which libraries you're using. Don't put your program files in the `env` directory. We suggest that you put your files in the `src` directory or something similar. The project structure might then look like this:
+   Your environment needs the `env` directory to keep track of details like which version of Python and which libraries you're using. Don't put your program files in the `env` directory. We suggest that you put your files in a directory called `src` or something similar. The project structure might then look like this:
 
    ```output
    /env
@@ -48,13 +59,17 @@ Take the following steps:
 
 ### Activate the virtual environment
 
-At this point, you have a virtual environment, but you haven't started using it. To use it, you need to activate it by calling an `activate` script in your `env` directory. Here's how the activation can look on Windows, Linux, and macOS:
+At this point, you have a virtual environment, but you haven't started using it. To use it, you need to activate it by calling an `activate` script. 
+
+Here's how the activation looks on Windows:
+
+```console
+c:\ .. \env\Scripts\activate
+```
+
+Here's how the activation looks on Linux and macOS:
 
 ```bash
-# Windows
-source env/Scripts/activate
-
-# Linux, WSL or macOS
 source env/bin/activate
 ```
 
@@ -74,9 +89,9 @@ One of the main advantages of using external libraries is to speed up the develo
 
 You install a package by using `pip`. The `pip` command uses the Python Package Index, or PyPi for short, to know where to get the packages. You can visit the [PyPi website](https://pypi.org/) to see what packages are available.
 
-To install a package, run `pip install`, like in this example:
+To install a package, run `pip install` from the `env` directory, like in this example:
 
-```bash
+```console
 pip install python-dateutil
 ```
 
@@ -100,13 +115,13 @@ six==1.16.0
 
 To ensure that these packages exist only in your virtual environment, try stepping out of that environment by calling `deactivate`:
 
-```bash
+```console
 deactivate
 ```
 
 Notice how the terminal prompt changes. It's no longer preceded by `(env)` and has reverted to this appearance:
 
-```bash
+```console
 path/to/project
 ```
 
