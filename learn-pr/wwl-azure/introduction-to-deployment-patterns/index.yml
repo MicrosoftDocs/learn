@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-to-deployment-patterns
 metadata:
   title: Introduction to deployment patterns
   description: "Introduction to deployment patterns"
-  ms.date: 03/02/2022
+  ms.date: 01/25/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Understand classical and modern deployment patterns
   - Plan and design your architecture
 prerequisites: ""
-iconUrl: /training/achievements/4-introduction-to-deployment-patterns.svg
+iconUrl: /learn/achievements/4-introduction-to-deployment-patterns.svg
 levels:
 - advanced
 roles:
