@@ -24,7 +24,7 @@ The idea is that data on objects can be altered by calling functions on the obje
 
 ## Benefits of OOP
 
-So why use OOP? Why not use some other paradigm? To be clear, OOP isn't better or worse than any other paradigm. There are pros and cons to everything. OOP does have some nice benefits, and here are some of those benefits:
+So why use OOP? Why not use some other paradigm? To be clear, OOP isn't better or worse than any other paradigm. There are pros and cons to everything. OOP does have some nice benefits, for example:
 
 - **Data encapsulation**: Data encapsulation is about hiding data away from the rest of the system and only allowing access to parts of it. The reason is data holds *state*, and that state can be made up of one or more variables. If these variables need to be changed at the same time, you need to protect them and only allow access via public methods so that changes are made in a predictable way. OOP has mechanisms like access levels, where data that's on an object can only be accessed by the object itself or can be made publicly available.
 - **Simplicity**: Building large systems is a complex task, with many problems to solve. Being able to break down the complexity into smaller problems, to objects, means you can *simplify* the overall task.
