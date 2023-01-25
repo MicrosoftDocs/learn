@@ -1146,11 +1146,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/monitor-azure-arc-enabled-sql-managed-instance-security-performance/4-exercise-using-grafana-performance-monitor-azure-arc-enabled-sql-mi.yml",
-      "redirect_url": "/training/modules/secure-monitor-azure-arc-enabled-sql-managed-instance",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/data-ai-cert/intro-to-azure-machine-learning-service/5-create-pipeline.md",
       "redirect_url": "/training/modules/intro-to-azure-machine-learning-service",
       "redirect_document_id": false
