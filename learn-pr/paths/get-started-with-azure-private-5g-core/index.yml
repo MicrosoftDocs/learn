@@ -33,7 +33,7 @@ subjects:
 - networking
 modules:
 - learn.intro-to-azur-private-5g-core
-#- learn.deploy-azure-private-5g-core
+- learn.deploy-azure-private-5g-core
 - learn.monitor-azure-private-5g-core-service
 - learn.manage-azure-private-5g-core
 trophy:
