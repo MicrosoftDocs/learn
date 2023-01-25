@@ -17,7 +17,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Why is the estimation of the physical resources required to run a quantum algorithm important?'
+  - content: 'Why is it important to estimate the resources required to run a quantum algorithm?'
     choices:
     - content: 'Quantum computers can only run a limited number of algorithms at a time, so we need to discard those algorithms that require many resources.'
       isCorrect: false
@@ -31,7 +31,7 @@ quiz:
 
   - content: 'The Azure Quantum Resource Estimator takes a physical qubit model, `"qubitParams"`, as input parameter. Which of the following statements is true?'
     choices:
-    - content: 'You can pick from six pre-defined qubit models, and each of their values can be updated, making the qubit model for the Resource Estimator fully customizable.'
+    - content: 'You can pick from six pre-defined qubit models, and each of their values can be updated, meaning that you can modify the existing models and create new ones.'
       isCorrect: true
       explanation: 'Correct. The Resource Estimator provides four gate-based and two Majorana-based qubit models, and they can be customized by specifying the name of the qubit model and updating any of the values.'
     - content: 'You can pick from two pre-defined qubit models, that are the Surface code and the Floquet code.'
@@ -51,4 +51,4 @@ quiz:
       explanation: 'The Resource Estimator doesn't compare quantum hardware providers.'
     - content: "The Resource Estimator outputs physical and logical estimates, such as number of rotation gates, quantum error correction estimates, T factory parameters, and total physical qubits and runtime."
       isCorrect: true
-      explanation: "Correct. The Resource Estimator computes pre- and post-layout logical estimation for a given quantum technology and an error correction scheme."
+      explanation: "Correct. The Resource Estimator computes pre- and post-layout logical and physical estimation for a given quantum technology and an error correction scheme."
