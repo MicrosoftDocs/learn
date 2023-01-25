@@ -6,7 +6,7 @@ In this unit, you'll learn how to create template components, and how you can in
 
 ## Understand the RenderFragment type
 
-A template component supplies the layout and logic for one or more fragments of HTML markup. This HTML is rendered using the context provided by the template component. A template component uses a *RenderFragement* object as a placeholder into which the markup is inserted at runtime. The following code illustrates a basic component named *HeadingComponent.razor*. The component contains a single *RenderFragment* object. The markup for the *RenderFragment* object is supplied as a parameter, and in this example, the object is given the name *ChildContent*. The layout provided by the template renders the markup with a fixed heading and a copyright message:
+A template component supplies the layout and logic for one or more fragments of HTML markup. This HTML is rendered using the context provided by the template component. A template component uses a `RenderFragment` object as a placeholder into which the markup is inserted at runtime. The following code illustrates a basic component named *HeadingComponent.razor*. The component contains a single `RenderFragment` object. The markup for the `RenderFragment` object is supplied as a parameter, and in this example, the object is given the name *ChildContent*. The layout provided by the template renders the markup with a fixed heading and a copyright message:
 
 ```razor
 <h1>Contoso Ltd</h1>
@@ -25,7 +25,7 @@ A template component supplies the layout and logic for one or more fragments of 
 > [!NOTE]
 > A template is just an ordinary Razor component.
 
-To use this template, a Razor page creates a \<HeadingComponent\> element and specifies the markup to be displayed by the template as the body of the element. This markup will be passed to the template component in the *ChildContent* parameter. The example below shows a page named *testpage*:
+To use this template, a Razor page creates a `<HeadingComponent>` element and specifies the markup to be displayed by the template as the body of the element. This markup will be passed to the template component in the *ChildContent* parameter. The example below shows a page named *testpage*:
 
 ```razor
 @page "/testpage"
@@ -46,7 +46,7 @@ The *testpage* page looks like this when it's rendered:
 
 :::image type="content" source="../media/6-simple-testpage.png" alt-text="The *testpage* page rendered by using the template component.":::
 
-The name *ChildContent* is the default name for a *RenderFragment* parameter. You can give the parameter a different name, but you must specify this name when the test page applies the template. As an example, the template below uses the name *BodyContent*:
+The `ChildContent` is the default name for a `RenderFragment` parameter. You can give the parameter a different name, but you must specify this name when the test page applies the template. As an example, the template below uses the name `BodyContent`:
 
 ```razor
 <h1>Contoso Ltd</h1>
@@ -62,7 +62,7 @@ The name *ChildContent* is the default name for a *RenderFragment* parameter. Yo
 }
 ```
 
-A page utilizing this template must specify that the content to be rendered should be passed to the *BodyContent* parameter:
+A page utilizing this template must specify that the content to be rendered should be passed to the `BodyContent` parameter:
 
 ```razor
 @page "/testpage"
@@ -81,7 +81,7 @@ A page utilizing this template must specify that the content to be rendered shou
 </HeadingComponent>
 ```
 
-This approach enables a template component to format more than one *RenderFragment* object. Suppose you also wanted to provide the markup for the heading as a parameter. You can add a second parameter, like this:
+This approach enables a template component to format more than one `RenderFragment` object. Suppose you also wanted to provide the markup for the heading as a parameter. You can add a second parameter, like this:
 
 ```razor
 <h1>Contoso Ltd</h1>
@@ -92,11 +92,11 @@ This approach enables a template component to format more than one *RenderFragme
 <p style="font-style:italic; color:red;">(c) 2021</p>
 
 @code {
-  [Parameter]
-  public RenderFragment HeaderContent { get; set; }
+    [Parameter]
+    public RenderFragment HeaderContent { get; set; }
 
-  [Parameter]
-  public RenderFragment BodyContent { get; set; }
+    [Parameter]
+    public RenderFragment BodyContent { get; set; }
 }
 ```
 
@@ -124,7 +124,7 @@ The *testpage* page can now specify markup for the heading and the body:
 
 ### Understand generic RenderFragment parameters
 
-By default, the *RenderFragment* class acts as a placeholder for a block of HTML markup. However, you can use it to render other types of content by using a type parameter, then providing the logic to handle the specified type in the template component. For example, suppose you want to create a template that displays the items in a collection. You might use a C# `foreach` loop to iterate through the collection and display the items found. However, the collection might contain data of any type, so you need a generic way of rendering each item. The following template component, named *ObjectDataList.razor*, shows how you can achieve this aim:
+By default, the `RenderFragment` class acts as a placeholder for a block of HTML markup. However, you can use it to render other types of content by using a type parameter, then providing the logic to handle the specified type in the template component. For example, suppose you want to create a template that displays the items in a collection. You might use a C# `foreach` loop to iterate through the collection and display the items found. However, the collection might contain data of any type, so you need a generic way of rendering each item. The following template component, named *ObjectDataList.razor*, shows how you can achieve this aim:
 
 ```razor
 @typeparam TItem
@@ -133,41 +133,39 @@ By default, the *RenderFragment* class acts as a placeholder for a block of HTML
     <p>@ChildContent(item)</p>
 }
 
-
 @code {
-  [Parameter]
-  public IEnumerable<TItem> Data { get; set; }
+    [Parameter]
+    public IEnumerable<TItem> Data { get; set; }
 
-  [Parameter]
-  public RenderFragment<TItem> ChildContent { get; set; }
+    [Parameter]
+    public RenderFragment<TItem> ChildContent { get; set; }
 }
 ```
 
 The important points to note in this template are:
 
-- The type parameter, *TItem*, is introduced using the *@typeparam* directive. A template component can have multiple type parameters if necessary.
+- The type parameter, `TItem`, is introduced using the `@typeparam` directive. A template component can have multiple type parameters if necessary.
 - The template expects a parameter containing an enumerable collection of objects of the type specified by the type parameter.
-- The template also defines a *ChildContent* parameter based on the generic *RenderFragment* type that takes the same type parameter.
+- The template also defines a *ChildContent* parameter based on the generic `RenderFragment` type that takes the same type parameter.
 - The `foreach` loop iterates through the enumerable collection, rendering each item found.
 
-The page below shows how an application can use this template. This example is based on the data retrieved using the *WeatherForecastService* service created as part of the sample code generated by the Blazor Server App template. Remember that the *WeatherForecast* type looks like this:
+The page below shows how an application can use this template. This example is based on the data retrieved using the `WeatherForecastService` service created as part of the sample code generated by the Blazor Server App template. Remember that the `WeatherForecast` type looks like this:
 
 ```csharp
 using System;
 
-namespace WebApplication.Data
+namespace WebApplication.Data;
+
+public class WeatherForecast
 {
-    public class WeatherForecast
-    {
-        public DateTime Date { get; set; }
-        public int TemperatureC { get; set; }
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-        public string Summary { get; set; }
-    }
+    public DateTime Date { get; set; }
+    public int TemperatureC { get; set; }
+    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    public string Summary { get; set; }
 }
 ```
 
-The Razor page connects to the Weather Service and populates the *forecasts* array, as described in earlier examples in this module. The page provides the *forecasts* variable as the *Data* parameter to the *ObjectDataList* component, and then supplies the markup that's used to render each item in the array. This markup is passed as the *ChildContent* parameter to the template. The template makes the fields in each item available through the *context* variable. This variable is created automatically, based on the type parameter for the template component. In the *ObjectDataList* template component, the parameter *RenderFragment\<TItem\>* is actually a *RenderFragment\<WeatherForecast\>*, so the fields available in the *context* variable are those defined in the *WeatherForecast* class.
+The Razor page connects to the Weather Service and populates the `forecasts` array, as described in earlier examples in this module. The page provides the `forecasts` variable as the `Data` parameter to the `ObjectDataList` component, and then supplies the markup that's used to render each item in the array. This markup is passed as the `ChildContent` parameter to the template. The template makes the fields in each item available through the `context` variable. This variable is created automatically, based on the type parameter for the template component. In the `ObjectDataList` template component, the parameter `RenderFragment<TItem>` is actually a `RenderFragment<WeatherForecast>`, so the fields available in the `context` variable are those defined in the `WeatherForecast` class.
 
 ```razor
 @page "/testpage"
@@ -202,10 +200,10 @@ Many web apps make use of nested elements, such as list items within lists. In a
 
 Suppose you want to create a template that emulates a collection of tab pages, with vertical tabs down the left side. The user selects a tab to display the corresponding page in the body of the component. The simplest way to implement this feature is to define two templates:
 
-- A *VerticalTab* template that acts as a container for the vertical tabs and the current page being displayed.
-- A *TabPage* template that renders a page within the *VerticalTab* template.
+- A `VerticalTab` template that acts as a container for the vertical tabs and the current page being displayed.
+- A `TabPage` template that renders a page within the `VerticalTab` template.
 
-Starting with the *VerticalTab* template, the markup looks like this:
+Starting with the `VerticalTab` template, the markup looks like this:
 
 ```html
 <CascadingValue Value="this">
@@ -227,9 +225,9 @@ Starting with the *VerticalTab* template, the markup looks like this:
 
 In this markup:
 
-- The value of *this* (the current instance of the template), is configured as a cascading value that will be passed as a cascading parameter to each instance of the *TabPage* template referenced by the markup. This reference provides a way for each *TabPage* instance to query and obtain information from the *VerticalTab* template that acts as the container for each page.
-- The first \<div\> element creates a vertically aligned collection of buttons. These buttons will simulate tab controls. Each button will display the title of a *TabPage* control (you'll see the *TabPage* template shortly). The *onclick* event runs the *ActivateItem* method of the template, which you'll see next.
-- The second \<div\> element displays the page content for the currently selected tab. This page is displayed using the CSS *card-body* style.
+- The value of *this* (the current instance of the template), is configured as a cascading value that will be passed as a cascading parameter to each instance of the `TabPage` template referenced by the markup. This reference provides a way for each `TabPage` instance to query and obtain information from the `VerticalTab` template that acts as the container for each page.
+- The first `<div>` element creates a vertically aligned collection of buttons. These buttons will simulate tab controls. Each button will display the title of a `TabPage` control (you'll see the `TabPage` template shortly). The `onclick` event runs the `ActivateItem` method of the template, which you'll see next.
+- The second `<div>` element displays the page content for the currently selected tab. This page is displayed using the CSS `card-body` style.
 
 The code section for the template defines the parameters, properties, and methods:
 
@@ -239,29 +237,30 @@ The code section for the template defines the parameters, properties, and method
     public RenderFragment ChildContent { get; set; }
     
     public TabPage CurrentItem { get; set; }
-    private List<TabPage> Items = new List<TabPage>();
+    private List<TabPage> Items = new();
 
     internal void AddItem(TabPage tabPage)
     {
         Items.Add(tabPage);
-        if (Items.Count == 1)
+        if (Items.Count is 1)
         {
             CurrentItem = tabPage;
         }
         StateHasChanged();
     }
 
-    string GetButtonClass(TabPage tabPage) => tabPage == CurrentItem ? "btn-primary" : "btn-secondary";
+    string GetButtonClass(TabPage tabPage) =>
+        tabPage == CurrentItem ? "btn-primary" : "btn-secondary";
 
     void ActivateItem(TabPage tabPage) => CurrentItem = tabPage;
 }
 ```
 
-The *CurrentItem* property references the page currently being displayed. The pages are all stored in the *Items* list. The *AddItem* method adds a new page to the *Items* collection and calls *StateHasChanged* to update the display. The *ActivateItem* method sets the specified page as the current item.
+The `CurrentItem` property references the page currently being displayed. The pages are all stored in the `Items` list. The `AddItem` method adds a new page to the `Items` collection and calls `StateHasChanged` to update the display. The `ActivateItem` method sets the specified page as the current item.
 
-The *GetButtonClass* is used to determine how the button that represents the page in the vertical tab \<div\> element is displayed. If the button is for the currently selected page, it's assigned the *btn-primary* CSS class, which causes the button to be highlighted. When you'd prefer the button target a different page, it's assigned the *btn-secondary* CSS class, which displays the button as deselected.
+The `GetButtonClass` is used to determine how the button that represents the page in the vertical tab `<div>` element is displayed. If the button is for the currently selected page, it's assigned the `btn-primary` CSS class, which causes the button to be highlighted. When you'd prefer the button target a different page, it's assigned the `btn-secondary` CSS class, which displays the button as deselected.
 
-The *TabPage* template is simpler:
+The `TabPage` template is simpler:
 
 ```razor
 @if (Container.CurrentItem == this)
@@ -281,23 +280,21 @@ The *TabPage* template is simpler:
   
     protected override void OnInitialized()
     {
-        if (Container is null)
-        {
-            throw new ArgumentNullException(nameof(Container), "Cannot create a tab page without a vertical tab container");
-        }
         base.OnInitialized();
+
+        ArgumentNullException.ThrowIfNull(Container);
         Container.AddItem(this);
     }
 }
 ```
 
-The *Container* cascading parameter is a reference to the *VerticalTab* instance that displays the pages. The markup on this page determines whether the page represented by the container is the current page. If it is, the content for the page is displayed.
+The `Container` cascading parameter is a reference to the `VerticalTab` instance that displays the pages. The markup on this page determines whether the page represented by the container is the current page. If it is, the content for the page is displayed.
 
-The *TabPage* template provides the *Title* parameter. The text for this parameter is used as the label on the button that acts as the tab in the *VerticalTab* object.
+The `TabPage` template provides the *Title* parameter. The text for this parameter is used as the label on the button that acts as the tab in the `VerticalTab` object.
 
-The *OnInitialized* event is used to add the page to the container, using the *AddItem* method of the container. This event also checks to ensure that the template is being used with the *VerticalTab* template. If there's no *VerticalTab* object referenced by the *Container* parameter, the code throws an exception.
+The `OnInitialized` event is used to add the page to the container, using the `AddItem` method of the container. This event also checks to ensure that the template is being used with the `VerticalTab` template. If there's no `VerticalTab` object referenced by the `Container` parameter, the code throws an exception.
 
-To use these templates on a Razor page, add a \<VerticalTab\> element that contains one or more \<TabPage\> elements. For each \<TabPage\> element, you provide a title and markup that will be rendered on the page:
+To use these templates on a Razor page, add a `<VerticalTab>` element that contains one or more `<TabPage>` elements. For each `<TabPage>` element, you provide a title and markup that will be rendered on the page:
 
 ```razor
 @page "/testpage"
@@ -358,4 +355,4 @@ You can utilize these templates with the *ObjectDataList* template you saw earli
 }
 ```
 
-:::image type="content" source="../media/6-weather-forecast-tabs.png" alt-text="Thw weather forecast data displayed using the vertical tab template.":::
+:::image type="content" source="../media/6-weather-forecast-tabs.png" alt-text="The weather forecast data displayed using the vertical tab template.":::
