@@ -31,7 +31,7 @@ Azure Static Web Apps can be deployed using Visual Studio Code, the Azure portal
 
 If you use Visual Studio Code to deploy initially, the Azure Static Web Apps extension for Visual Studio Code makes it easy to configure, connect to GitHub and Azure, and deploy. You can also use the Azure portal, which will take you through a similar process. You'll sign in to GitHub and authorize Azure Static Web Apps to contribute to the repository. If you use the Azure CLI it's a similar process, except you use a GitHub personal access token to authorize Azure Static Web Apps. Authorization is required because the deployment process creates a YAML file that specifies the GitHub workflow for CI/CD with GitHub Actions. The GitHub workflow YAML file essentially contains the information on how to build and deploy your application as changes are pushed.
 
-A typical generated workflow file could look similar to below. The workflow basically tells GitHub how to build your application. The main things that may differ among applications is where in the repository the application and function files are located, denoted by `app_location` and `api_location`.
+A typical generated workflow file could look similar to the following file. The workflow basically tells GitHub how to build your application. The main things that may differ among applications is where in the repository the application and function files are located, denoted by `app_location` and `api_location`.
 
 ```yml
 name: Azure Static Web Apps CI/CD
@@ -81,4 +81,4 @@ jobs:
           action: "close"
 ```
 
-During deployment, not only is the GitHub workflow file created, but also the secrets you see above are added to your repository's secrets. GitHub secrets are a way to securely store sensitive information that is needed by the application.
+During deployment, not only is the GitHub workflow file created, the secrets you see in the file are also added to your repository's secrets. GitHub secrets are a way to securely store sensitive information that is needed by the application.

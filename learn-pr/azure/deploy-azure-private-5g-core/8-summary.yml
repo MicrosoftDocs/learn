@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-azure-private-5g-core.summary
+title: Summary
+metadata:
+  title: summary
+  description: Summarizes what you have learned about the deployment capabilities of Azure Private 5G Core.
+  ms.date: 01/18/2023
+  author: ArchanaUpadhyaya
+  ms.author: archanau
+  ms.topic: interactive-tutorial
+  ms.service: learning-private-5g-core
+
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-summary.md)]

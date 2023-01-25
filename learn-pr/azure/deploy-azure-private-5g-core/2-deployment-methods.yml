@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-azure-private-5g-core.deployment-methods
+title: Deployment methods
+metadata:
+  title: Deployment methods
+  description: Provides you details on the various deployment methods.
+  ms.date: 01/18/2023
+  author: ArchanaUpadhyaya
+  ms.author: archanau
+  ms.topic: interactive-tutorial
+  ms.service: learning-private-5g-core
+
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-deployment-methods.md)]
