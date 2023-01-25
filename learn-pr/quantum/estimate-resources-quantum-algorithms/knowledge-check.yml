@@ -37,7 +37,7 @@ quiz:
     - content: 'You can pick from two pre-defined qubit models, that are the Surface code and the Floquet code.'
       isCorrect: false
       explanation: 'The Resource Estimator provides four gate-based and two Majorana-based qubit models. Surface and Floquet code are quantum error correction codes.'
-    - content: 'You can pick from six pre-defined qubit models, but they don't allow customization of their parameters.'
+    - content: "You can pick from six pre-defined qubit models, but they don't allow customization of their parameters."
       isCorrect: false
       explanation: 'The pre-defined qubit models can be customized by specifying the name of the qubit model and then updating any of the values.'
       
