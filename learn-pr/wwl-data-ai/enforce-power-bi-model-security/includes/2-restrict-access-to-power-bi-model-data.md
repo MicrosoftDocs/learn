@@ -4,7 +4,7 @@ As a data modeler, you set up RLS by creating one or more roles. A role has a un
 > By default, a data model has no roles. A data model without roles means that users (who have permission to query the data model) have access to all model data.
 
 > [!TIP]
-> It’s possible to define a role that has includes no rules. In this case, the role provides access to all rows of all model tables. This role set up would be suitable for an admin user who is allowed to view all data.
+> It's possible to define a role that includes no rules. In this case, the role provides access to all rows of all model tables. This role set up would be suitable for an admin user who is allowed to view all data.
 
 You can create, validate, and manage roles in Power BI Desktop. For Azure Analysis Services or SQL Server Analysis Services models, you can create, validate, and manage roles by using SQL Server Data Tools (SSDT).
 
@@ -12,7 +12,7 @@ You can also create and manage roles by using SQL Server Management Studio (SSMS
 
 To gain a better understanding of how RLS restricts access to data, watch the following animated image.
 
-![Animated diagram demonstrates how row-level security works for two users who each have access to specific country/region data.](../media/introduce-row-level-security.gif)
+![Animated diagram demonstrates how row-level security works for two users who each have access to specific country data.](../media/introduce-row-level-security.gif)
 
 ## Apply star schema design principals
 
