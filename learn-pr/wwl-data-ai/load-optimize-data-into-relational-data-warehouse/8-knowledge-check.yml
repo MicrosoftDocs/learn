@@ -12,3 +12,42 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the default table structure within Azure Synapse Analytics if the data engineer doesn't define it within the Data Definition?"
+    choices:
+    - content: "Round-Robin"
+      isCorrect: true
+      explanation: "That's correct. ADD FEEDBACK HERE."
+    - content: "Distributed"
+      isCorrect: false
+      explanation: "That's incorrect. ADD FEEDBACK HERE."
+    - content: "Replicated"
+      isCorrect: false
+      explanation: "That's incorrect. ADD FEEDBACK HERE."
+    - content: "Hash"
+      isCorrect: false
+      explanation: "That's incorrect. ADD FEEDBACK HERE."
+  - content: "WWhat type of slowly changing dimension over-writes existing data where no history is stored?"
+    choices:
+    - content: "Slowly changing dimension (SCD) 1"
+      isCorrect: true
+      explanation: "That's correct. The SCD 1 will simply over-write the existing data and stores no history of the change as it was deemed as having no impact on historical reports."
+    - content: "Slowly changing dimension (SCD) 2"
+      isCorrect: false
+      explanation: "That's incorrect. ADD FEEDBACK HERE."
+    - content: "Slowly changing dimension (SCD) 3"
+      isCorrect: false
+      explanation: "That's incorrect. ADD FEEDBACK HERE."
+  - content: "What is the simplest way to create a new Fact table in Synapse Analytics?"
+    choices:
+    - content: "Create External Table as Select (CETAS)"
+      isCorrect: false
+      explanation: "That's incorrect. ADD FEEDBACK HERE."
+    - content: "Create Table as Select (CTAS)"
+      isCorrect: true
+      explanation: "That's correct.The Create Table as Select (CTAS) is the simplest way to load data into a new table in Synapse Analytics."
+    - content: "Copy command"
+      isCorrect: false
+      explanation: "That's incorrect. ADD FEEDBACK HERE."
