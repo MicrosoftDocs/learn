@@ -1,5 +1,5 @@
 
-The Azure Quantum Resource Estimator is a very useful tool that allows a wide variety of customizations. Before starting the task you've been entrusted with, you'll first need to practice and get familiar with the tool. As a running example, you'll estimate the physical resources of a multiplier, which implements the multipication of integer $a$ by integer $b$.
+The Azure Quantum Resource Estimator is a useful tool that allows a wide variety of customizations. Before starting the task you've been entrusted with, you'll first need to practice and get familiar with the tool. As a running example, you'll estimate the physical resources of a multiplier, which implements the multiplication of integer $a$ by integer $b$.
 
 ## Enabling the Azure Quantum Resource Estimator 
 
@@ -28,7 +28,7 @@ qsharp.packages.add("Microsoft.Quantum.Numerics") #Import Microsoft.Quantum.Nume
 qsharp.azure.target("microsoft.estimator") # Select the Azure Quantum Resource Estimator as target
 ```
 
-As we said, as a running example you're creating a multiplier using the [MultiplyI](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyi) operation.  You can configure the size of the multiplier with a bitwidth parameter. The operation have two input registers with that bitwidth, `factor1` and `factor2`, and one output register with the size of twice the bitwidth, `product`.
+As we said, as a running example you're creating a multiplier using the [MultiplyI](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyi) operation.  You can configure the size of the multiplier with a bit width parameter. The operation have two input registers with that bit width, `factor1` and `factor2`, and one output register with the size of twice the bit width, `product`.
 
 
 ```python
@@ -46,12 +46,12 @@ operation EstimateMultiplication(bitwidth : Int) : Unit {
 }
 ```
 > [!NOTE]
-> The *%%qsharp* magic command allows you to enter Q# code directly into a Jupyter  Notebook when using the **Python 3 (ipykernel)*. For more information, see [%%qsharp magic command](xref:microsoft.quantum.how-to.python-local#the-qsharp-magic-command).
+> The *%%qsharp* magic command allows you to enter Q# code directly into a Jupyter  Notebook when using the *Python 3 (ipykernel)*. For more information, see [%%qsharp magic command](xref:microsoft.quantum.how-to.python-local#the-qsharp-magic-command).
 
 
 ## Estimating the algorithm
 
-In order to estimate an operation using the Azure Quantum Resource Estimator target, it cannot take any input arguments and must have a `Unit` return value. We can simply create a new instance for a specific bitwidth, for example 8 in this case.
+In order to estimate an operation using the Azure Quantum Resource Estimator target, it cannot take any input arguments and must have a `Unit` return value. We can simply create a new instance for a specific bit width, for example 8 in this case.
 
 ```python
 %%qsharp
@@ -63,7 +63,7 @@ operation EstimateMultiplication8() : Unit {
 > [!IMPORTANT]
 > To submit a Q# operation to the Azure Quantum Resource Estimator target, it can't take any input arguments and must have a `Unit` return value. 
 
-Let's now estimate the physical resources for this operation using the default assumptions. We can submit the operation to the resource estimation target using the qsharp.azure.execute function. This will output a table with the overall physical resource counts. You can further inspect more details about the resource estimates by collapsing various groups which have more information.
+Let's now estimate the physical resources for this operation using the default assumptions. We can submit the operation to the resource estimation target using the qsharp.azure.execute function. This will output a table with the overall physical resource counts. You can further inspect more details about the resource estimates by collapsing various groups, which have more information.
 
 ```python
 
@@ -75,7 +75,7 @@ For example, if you collapse the *Logical qubit parameters* group, you can see t
 
 ## Customizing input parameters
 
-Let's re-run resource estimation for our running example on the Majorana-based qubit parameters `"qubit_maj_ns_e6"`.
+Let's rerun resource estimation for our running example on the Majorana-based qubit parameters `"qubit_maj_ns_e6"`.
 
 ```python
 
@@ -89,7 +89,7 @@ result
 You can inspect the result and compare both qubit technologies. For example, notice that now the quantum error correction (QEC) code distance is 5, and the number of physical qubits has decreased from 173592 to 8160. On the opposite, the runtime is 6 ms, compared to 3 ms in previoulsy technology. 
 
 
-We can update the error correction code too. Let's re-run the resource estimation job on the Majorana-based qubit parameters with a Floquet code.
+We can update the error correction code too. Let's rerun the resource estimation job on the Majorana-based qubit parameters with a Floquet code.
 
 ```python
 result_maj_floquet = qsharp.azure.execute(EstimateMultiplication8,
