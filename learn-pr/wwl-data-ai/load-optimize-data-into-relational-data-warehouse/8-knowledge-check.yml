@@ -15,21 +15,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the default table structure within Azure Synapse Analytics if the data engineer doesn't define it within the Data Definition?"
-    choices:
-    - content: "Round-Robin"
-      isCorrect: true
-      explanation: "That's correct. ADD FEEDBACK HERE."
-    - content: "Distributed"
-      isCorrect: false
-      explanation: "That's incorrect. ADD FEEDBACK HERE."
-    - content: "Replicated"
-      isCorrect: false
-      explanation: "That's incorrect. ADD FEEDBACK HERE."
-    - content: "Hash"
-      isCorrect: false
-      explanation: "That's incorrect. ADD FEEDBACK HERE."
-  - content: "WWhat type of slowly changing dimension over-writes existing data where no history is stored?"
+  - content: "What is the default table structure within Azure Synapse Analytics if the data engineer doesn't define it within the Data Definition?[x] Round-Robin  [ ] Distributed  [ ] Replicated  [explanation]  Round-Robin is the defualt table type when loading data into Synapse Analytics unless otherwise defined by the data engineer or DBA?[explanation]"
     choices:
     - content: "Slowly changing dimension (SCD) 1"
       isCorrect: true
@@ -40,14 +26,14 @@ quiz:
     - content: "Slowly changing dimension (SCD) 3"
       isCorrect: false
       explanation: "That's incorrect. ADD FEEDBACK HERE."
-  - content: "What is the simplest way to create a new Fact table in Synapse Analytics?"
+  - content: "What is the simplest way to create a new Fact table in Synapse Analytics ?[ ] Create External Table as Select (CETAS)  [x] Create Table as Select (CTAS)  [ ] COPY Command  [explanation]  The Create Table as Select (CTAS) is the simplest way to load data into a new table in Synapse Analytics.[explanation]"
     choices:
-    - content: "Create External Table as Select (CETAS)"
-      isCorrect: false
-      explanation: "That's incorrect. ADD FEEDBACK HERE."
-    - content: "Create Table as Select (CTAS)"
+    - content: "Slowly changing dimension (SCD) 1"
       isCorrect: true
-      explanation: "That's correct.The Create Table as Select (CTAS) is the simplest way to load data into a new table in Synapse Analytics."
-    - content: "Copy command"
+      explanation: "That's incorrect. The Create External table doesn't physically copy any data to Synapse Analytics, it's more like a view to existing datalake or blob storage data with a defined schema."
+    - content: "Create Table as Select (CTAS) 2"
       isCorrect: false
-      explanation: "That's incorrect. ADD FEEDBACK HERE."
+      explanation: "That's Correct. The Create Table as Select (CTAS is the create and populate a new table in Synapse Analytics)"
+    - content: "COPY Command 3"
+      isCorrect: false
+      explanation: "That's incorrect. Although the COPY command is a recommend path for loading data, it requires the table to already exist."

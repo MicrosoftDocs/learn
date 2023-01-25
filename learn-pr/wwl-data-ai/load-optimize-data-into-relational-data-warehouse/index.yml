@@ -37,6 +37,7 @@ units:
 - learn.wwl.load-optimize-data-into-relational-data-warehouse.introduction
 - learn.wwl.load-optimize-data-into-relational-data-warehouse.understand-considerations-for-loading-data-warehouse
 - learn.wwl.load-optimize-data-into-relational-data-warehouse.load-data-with-copy-statement
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.3a-Load-time-dimension-tables
 - learn.wwl.load-optimize-data-into-relational-data-warehouse.create-load-new-tables-with-ctas-statement
 - learn.wwl.load-optimize-data-into-relational-data-warehouse.load-slowly-changing-dimension-table
 - learn.wwl.load-optimize-data-into-relational-data-warehouse.perform-post-load-optimization
