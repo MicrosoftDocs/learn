@@ -28,3 +28,6 @@ SELECT  (SELECT MAX(DateKey)
         SalesAmount
 FROM dbo.StageSales AS stg
 ```
+
+> [!NOTE]
+> As noted in the previous lesson, Querying Type 2 slowly changing dimension (SCD) has some caveats. remember in the case of the changing customer address, the load process will create a new row for the customer with a new surrogate key (but the same alternate key) to reflect the new address. Optionally, the table could include a Boolean column to indicate which record for this alternate key is the currently active record, or a DateTime column to indicate the point in time from which the new record applies (otherwise you can rely on an incrementing surrogate key and use the `MAX` function to find the most recently inserted row for a given alternate key.). Keep this in mind when querying your fact table data to ensure you have included the proper indicator of the active data.

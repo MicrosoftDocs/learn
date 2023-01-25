@@ -15,6 +15,8 @@ Now let's consider an example of a *Type 2* change. Suppose a customer changes t
 
 Logic to implement Type 1 and Type 2 updates can be complex, and there are various techniques you can use. For example, you could use a combination of `UPDATE` and `INSERT` statements as shown in the following code example:
 
+### Combining `INSERT` and `UPDATE` Statements
+
 ```sql
 -- Insert new customers
 INSERT INTO dbo.DimCustomer
@@ -56,6 +58,8 @@ AND stg.StreetAddress <> dim.StreetAddress;
 > In the previous example, it is assumed that an incrementing surrogate key based on an `IDENTITY` column identifies each row, and that the highest value surrogate key for a given alternate key indicates the most recent or "current" instance of the dimension entity associated with that alternate key. In practice, many data warehouse designers include a Boolean column to indicate the current active instance of a changing dimension or use DateTime fields to indicate the active time periods for each version of the dimension instance. With these approaches, the logic for a type 2 change must include an `INSERT` of the new dimension row *and* an `UPDATE` to mark the current row as inactive.
 
 As an alternative to using multiple `INSERT` and `UPDATE` statement, you can use a single `MERGE` statement to perform an "*upsert*" operation to insert new records and update existing ones, as shown in the following example, which loads new product records and applies type 1 updates to existing products:
+
+### Using a `MERGE` Statement
 
 ```sql
 MERGE dbo.DimProduct AS tgt

@@ -7,4 +7,4 @@ Now it's your chance to explore Delta Lake for yourself. In this exercise, you'l
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/https://aka.ms/mslearn-load-data-into-warehouse)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-load-data-into-warehouse?azure-portal=true)
