@@ -1111,7 +1111,42 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/monitor-azure-arc-enabled-sql-managed-instance-security-performance/1-introduction.yml",
+      "redirect_url": "/training/modules/secure-monitor-azure-arc-enabled-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-arc-enabled-sql-managed-instance-security-performance/2-secure-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "/training/modules/secure-monitor-azure-arc-enabled-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-arc-enabled-sql-managed-instance-security-performance/3-monitor-your-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "/training/modules/secure-monitor-azure-arc-enabled-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/monitor-azure-arc-enabled-sql-managed-instance-security-performance/4-exercise-using-grafana-performance-monitor-azure-arc-enabled-sql-mi.yml",
+      "redirect_url": "/training/modules/secure-monitor-azure-arc-enabled-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-arc-enabled-sql-managed-instance-security-performance/4-exercise-using-grafana-performance-monitor-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "/training/modules/secure-monitor-azure-arc-enabled-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-arc-enabled-sql-managed-instance-security-performance/5-knowledge-check.yml",
+      "redirect_url": "/training/modules/secure-monitor-azure-arc-enabled-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-arc-enabled-sql-managed-instance-security-performance/6-summary.yml",
+      "redirect_url": "/training/modules/secure-monitor-azure-arc-enabled-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-arc-enabled-sql-managed-instance-security-performance/index.yml",
       "redirect_url": "/training/modules/secure-monitor-azure-arc-enabled-sql-managed-instance",
       "redirect_document_id": false
     },

@@ -3,7 +3,7 @@ uid: learn.develop-app-that-queries-azure-sql.2-create-tables-bulk-import-query-
 metadata:
   title: Create tables, bulk import, and query data
   description: Create tables, bulk import, and query data
-  ms.date: 06/28/2019
+  ms.date: 01/24/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
