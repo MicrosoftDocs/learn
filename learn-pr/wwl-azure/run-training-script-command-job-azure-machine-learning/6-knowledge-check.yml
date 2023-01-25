@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/24/2023
+  ms.date: 01/25/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -31,6 +31,6 @@ quiz:
     - content: "Convert the code to one function in a script that reads the data and trains the model."
       isCorrect: false
       explanation: "Incorrect. A script will be easier to test and maintain by others when it exists of multiple functions."
-    - content: "Conver the code to multiple functions in a script that read the data and train the model."
+    - content: "Convert the code to multiple functions in a script that read the data and train the model."
       isCorrect: true
       explanation: "Correct. A script consisting of multiple functions is best to use for production workloads."
