@@ -18,7 +18,7 @@ During the modeling phase, you look at a description of a domain and try to anal
 
 After you identify actors, you look at *what* they do, which is their behavior. Then you look at descriptions of the actors and any data that's needed to carry out the action. Actors are made into objects, the traits are encoded as data on the objects, and the behaviors are functions that also get added to the object.
 
-:::image type="content" source="../media/printer.png" alt-text="Illustration visualizing a printer printing." border="false":::
+:::image type="content" source="../media/printer.png" alt-text="Diagram visualizing a printer printing." border="false":::
 
 The idea is that data on objects can be altered by calling functions on the objects themselves. There's also the notion that objects *interact* with one another to achieve a tangible result.
 
