@@ -15,7 +15,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the default table structure within Azure Synapse Analytics if the data engineer doesn't define it within the Data Definition?[x] Round-Robin  [ ] Distributed  [ ] Replicated  [explanation]  Round-Robin is the default table type when loading data into Synapse Analytics unless otherwise defined by the data engineer or DBA?[explanation]"
+  - content: "What is the default table structure within Azure Synapse Analytics if the data engineer doesn't define it within the Data Definition?"
     choices:
     - content: "Round-Robin"
       isCorrect: true
