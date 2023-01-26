@@ -11,7 +11,7 @@ Imagine that you want to collaborate on a project with other developers. A good 
 
 ### Share a project
 
-To share your project so that others can work on it, take the following steps:
+To share your project in GitHub so that others can work on it, you would take the following steps:
 
 1. Call `pip freeze > requirements.txt`. This command creates a _requirements.txt_ file with all the packages that the program needs.
 1. Create a _.gitignore_ file, and check in your application code and _requirements.txt_.
@@ -19,7 +19,7 @@ To share your project so that others can work on it, take the following steps:
 
 ### Consume a project
 
-To consume a project as a contributor (a fellow developer), take the following steps:
+To consume a project as a contributor (a fellow developer), you would take the following steps:
 
 1. Fetch the project from GitHub.
 1. Create a virtual environment and place yourself in it.
@@ -47,7 +47,7 @@ You can check for the latest available version of a package and install that as 
 
 To install a specific version, use `===` between the package name and the version number. Here's an example command:
 
-```bash
+```console
 pip install python-dateutil===1.4
 ```
 
@@ -56,7 +56,7 @@ The preceding command would install version 1.4, if it's available.
 
 There are many ways to find out what versions are available. One way is to specify a version that you know *doesn't* exist. The resulting error will tell you what version does exist. Here's an example command that uses the nonsense string `randomwords`:
 
-```bash
+```console
 pip install python-dateutil===randomwords
 ```
 
@@ -81,7 +81,7 @@ The preceding example shows that version 2.8.2 is installed. If you want to chan
 
 Packages change over time, as previously stated. You can upgrade to the latest package without specifying what the exact version number is. Use this command:
 
-```bash
+```console
 pip install <name of package> --upgrade
 ```
 
@@ -99,7 +99,7 @@ Packages use something called *semantic versioning*. This means that if you look
 
 Why does all this matter for upgrading your package? It has to do with how careful you need to be. Sometimes, you're in a situation where you can't (or aren't allowed to) change the major and minor values, but you welcome bug fixes. You can specify this as part of the upgrade command:
 
-```bash
+```console
 pip install "python-dateutil==2.7.*" --upgrade
 ```
 
@@ -109,7 +109,7 @@ In the preceding example, you specify that you want to upgrade only if there are
 
 Sometimes, you might realize that you no longer need a certain Python package and you want to remove it. For such a case, you can use `pip uninstall`:
 
-```bash
+```console
 pip uninstall python-dateutil
 ```
 
@@ -125,7 +125,7 @@ pip uninstall -r requirements.txt -y
 
 A better approach is to use the `autoremove` command:
 
-```bash
+```console
 pip install pip-autoremove
 pip-autoremove python-dateutil -y
 ```

@@ -64,7 +64,7 @@ At this point, you have a virtual environment, but you haven't started using it.
 Here's how the activation looks on Windows:
 
 ```console
-c:\ .. \env\Scripts\activate
+C:\ .. \env\Scripts\activate
 ```
 
 Here's how the activation looks on Linux and macOS:

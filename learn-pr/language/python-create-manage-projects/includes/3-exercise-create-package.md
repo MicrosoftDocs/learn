@@ -4,9 +4,9 @@ In this exercise, you'll learn how to use virtual environments as a way to not a
 
 Create a virtual environment by using `venv`.
 
-1. Open a new Bash window and run the following command:
+1. Open a new console window and run the following command:
 
-   ```bash
+   ```console
    python -m venv env
    ```
 
@@ -14,9 +14,9 @@ Create a virtual environment by using `venv`.
 
 1. To activate the virtual environment, run the following command on Windows:
 
-   ```bash  
+   ```console
     # Windows
-    source env/Scripts/activate
+    C:\ .. \env\Scripts\activate
    ```
 
    Or, this command on Linux, WSL or macOS:
@@ -34,7 +34,7 @@ Now that you're inside your virtual environment, you can install a library and k
 
 1. Run `pip freeze` to see installed libraries in your environment:
 
-   ```bash
+   ```console
    pip freeze
    ```
 
@@ -42,7 +42,7 @@ Now that you're inside your virtual environment, you can install a library and k
 
 1. Run `pip install` to install a library:
 
-   ```bash
+   ```console
    pip install python-dateutil
    ```
 
@@ -54,7 +54,7 @@ Now that you're inside your virtual environment, you can install a library and k
 
 1. Rerun `pip freeze` to see how your list of libraries has changed:
 
-   ```bash
+   ```console
    pip freeze
    ```
 
@@ -71,7 +71,7 @@ So far, you've created a virtual environment and added a package to it. However,
 
 Run the `deactivate` command:
 
-```bash
+```console
 deactivate
 ```
 

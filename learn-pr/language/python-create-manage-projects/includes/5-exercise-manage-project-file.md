@@ -6,7 +6,7 @@ Before you start, create a virtual environment and place yourself in it. By doin
 
 1. Run `venv env`, to create a virtual environment called *env*:
 
-   ```bash
+   ```console
    python -m venv env
    ```
 
@@ -14,9 +14,9 @@ Before you start, create a virtual environment and place yourself in it. By doin
 
 1. To activate the virtual environment, run the following command on Windows:
 
-   ```bash  
+   ```console 
     # Windows
-    source env/Scripts/activate
+    C:\ .. \env\Scripts\activate
    ```
 
    Or, this command on Linux, WSL or macOS:
@@ -32,7 +32,18 @@ Before you start, create a virtual environment and place yourself in it. By doin
 
 You have access to some source code and a _requirements.txt_ file. The .txt file contains libraries that you want to download. You need to download these libraries so your program will function as intended.
 
-1. Create the needed files from the terminal:
+1. Create the needed files from the terminal.
+
+   Run the following command on Windows:
+
+   ```console
+   md src
+   cd src
+   type nul > app.py
+   type nul > requirements.txt
+   ```
+
+   Or, this command on Linux, WSL or macOS:
 
     ```bash
     mkdir src
@@ -71,7 +82,7 @@ You have access to some source code and a _requirements.txt_ file. The .txt file
 
 1. Run `pip install` to install libraries specified in _requirements.txt_:
 
-   ```bash
+   ```console
    pip install -r requirements.txt
    ```
 
@@ -94,7 +105,7 @@ Let's first simulate being on an earlier version of `python-dateutil`.
 
 1. Run `pip install`:
 
-   ```bash
+   ```console
    pip install python-dateutil===2.7.4
    ```
 
@@ -102,7 +113,7 @@ Let's first simulate being on an earlier version of `python-dateutil`.
 
 1. Run `pip install --upgrade`:
 
-   ```bash
+   ```console
    pip install "python-dateutil==2.7.*" --upgrade
    ```
 
