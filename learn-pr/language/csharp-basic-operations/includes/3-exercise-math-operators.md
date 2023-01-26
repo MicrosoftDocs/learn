@@ -1,8 +1,8 @@
-Now that we understand the basics of addition and more importantly, implicit type conversion between numeric and string data types, let's look at several other common mathematical operations on numeric data.
+Now that we understand the basics of addition and, more importantly, implicit type conversion between numeric and string data types, let's look at several other common mathematical operations on numeric data.
 
 ## Perform Basic Math Operations
 
-### Step 1 - Write code to perform addition, subtraction, multiplication, and division with ints.
+### Step 1 - Write code to perform addition, subtraction, multiplication, and division with ints
 
 Type the following code into the code editor:
 
@@ -34,20 +34,20 @@ As you can see:
 - `*` is the multiplication operator
 - `/` is the division operator
 
-However, the resulting quotient of our division example may not be what you expected. The values after the decimal are truncated from `quotient` since it is defined as an `int`, and `int` cannot contain values after the decimal.
+However, the resulting quotient of our division example may not be what you expected. The values after the decimal are truncated from `quotient` because it's defined as an `int`, and `int` cannot contain values after the decimal.
 
-### Step 2 - Add code to perform division using literal decimal data.
+### Step 2 - Add code to perform division using literal decimal data
 
 To see division working properly, we need to use a data type that supports fractional digits after the decimal point, like `decimal`.
 
-Add the following line of code:
+Add the following lines of code:
 
 ```csharp-interactive
 decimal decimalQuotient = 7.0m / 5;
 Console.WriteLine("Decimal quotient: " + decimalQuotient);
 ```
 
-If you run the code, you will get the following output:
+If you run the code, you'll get the following output:
 
 ```output
 Decimal quotient: 1.4
@@ -92,12 +92,14 @@ If you run the code, you'll get the following output:
 1.4
 ```
 
-> [!Note]
+> [!NOTE]
 > We've seen three uses, or overloads, for the parenthesis operator: method invocation, order of operations, and casting.
 
 ### Step 4 - Write code to determine the remainder after int division
 
 The remainder operator `%` tells you the remainder of `int` division. What you really learn from this operator is whether one number is divisible by another. This can be useful during long processing operations when you're looping through hundreds or thousands of data records and you want to provide feedback to the end user after every 100 data records have been processed.
+
+Modify the code in the .NET Editor to the following code:
 
 ```csharp-interactive
 Console.WriteLine("Modulus of 200 / 5 : " + (200 % 5));
@@ -115,7 +117,7 @@ When the modulus is 0, that means the dividend is divisible by the divisor.
 
 ## Order of Operations
 
-As we learned in the previous exercise, we can use the `()` symbols as the *order of operations* operators.  However, this isn't the only way the order of operations is determined.
+As we learned in the previous exercise, we can use the `()` symbols as the *order of operations* operators. However, this isn't the only way the order of operations is determined.
 
 In math, PEMDAS is an acronym that helps students remember the order in which multiple operations are performed.  The order is:
 
