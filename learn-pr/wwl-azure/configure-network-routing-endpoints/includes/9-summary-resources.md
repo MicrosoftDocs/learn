@@ -22,6 +22,8 @@ In this module, you learned how to implement system routes and user-defined rout
 
 ## Learn more with self-paced training
 
-- Manage and control [traffic flow in your Azure deployment with routes (sandbox)](/training/modules/control-network-traffic-flow-with-routes/).
-
 - Complete an [introduction to Azure Private Link](/training/modules/introduction-azure-private-link/).
+
+## Learn more with optional hands-on exercises
+
+- Manage and control [traffic flow in your Azure deployment with routes (sandbox)](/training/modules/control-network-traffic-flow-with-routes/).
