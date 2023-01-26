@@ -1,19 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.query-data-sentinel.4-query-data
+title: Query data using Kusto Query Language
 metadata:
   title: Query data using Kusto Query Language
-  description: Query data using Kusto Query Language.
-  ms.date: 12/17/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  description: "Query data using Kusto Query Language."
+  ms.date: 01/26/2023
+  author: wwlpublish
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Query data using Kusto Query Language
 durationInMinutes: 5
 content: |
   [!include[](includes/4-query-data.md)]
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
   - content: "Which one of the following tools can an administrator use to query data in Microsoft Sentinel?"
     choices:
@@ -30,8 +30,8 @@ quiz:
     choices:
     - content: "Pipe (|)"
       isCorrect: true
-      explanation: "You can use the pipe (|) character to separate commands. "
-    - content: "Hyphen (-)"  
+      explanation: "You can use the pipe (|) character to separate commands."
+    - content: "Hyphen (-)"
       isCorrect: false
       explanation: "You can use the pipe (|) character to separate commands."
     - content: "Underscore (_)"
