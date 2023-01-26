@@ -11,7 +11,7 @@ In which order should you load tables in the data warehouse?
 () Dimension tables, then staging tables, then fact tables {{That's incorrect. This would put changes to dimensions behind and cause potential corruption.}}
 
 ## Multiple Choice
-WWhich command should you use to load a staging table with data from files in the data lake?
+Which command should you use to load a staging table with data from files in the data lake?
 
 (x)COPY {{That's Correct. With existing tables, the copy command is the most efficient way to populate the warehouse from the data lake.}}  
 ()LOAD {{That's inorrect. Load is not a valid operation in this context}}  
