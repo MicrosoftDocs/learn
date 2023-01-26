@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.load-data-with-copy-statement
-title: Load Dimension Tables
+title: Load dimension tables
 metadata:
-  title: Load Dimension Tables
-  description: "Load Dimension Tables"
-  ms.date: 01/25/2023
+  title: Load dimension tables
+  description: "Load dimension tables"
+  ms.date: 01/26/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.introduction
-title: Introduction to Azure Data Engineering
+title: Introduction
 metadata:
-  title: Introduction to Azure Data Engineering
-  description: "Introduction to Azure Data Engineering"
-  ms.date: 01/25/2023
+  title: Introduction
+  description: "Introduction"
+  ms.date: 01/26/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial

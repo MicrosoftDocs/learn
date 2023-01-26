@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.understand-considerations-for-loading-data-warehouse
-title: Loading Staging tables
+title: Loading staging tables
 metadata:
-  title: Loading Staging tables
-  description: "Loading Staging tables"
-  ms.date: 01/25/2023
+  title: Loading staging tables
+  description: "Loading staging tables"
+  ms.date: 01/26/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial

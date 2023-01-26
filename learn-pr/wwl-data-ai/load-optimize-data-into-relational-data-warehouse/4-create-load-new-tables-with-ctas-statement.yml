@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.create-load-new-tables-with-ctas-statement
-title: Load Slowly Changing Dimensions
+title: Load slowly changing dimensions
 metadata:
-  title: Load Slowly Changing Dimensions
-  description: "Load Slowly Changing Dimensions"
-  ms.date: 01/25/2023
+  title: Load slowly changing dimensions
+  description: "Load slowly changing dimensions"
+  ms.date: 01/26/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial

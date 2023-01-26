@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.3a-load-time-dimension-tables
-title: Loading Time Dimension Tables
+title: Loading time dimension tables
 metadata:
-  title: Loading Time Dimension Tables
-  description: "Loading Time Dimension Tables"
-  ms.date: 01/25/2023
+  title: Loading time dimension tables
+  description: "Loading time dimension tables"
+  ms.date: 01/26/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial

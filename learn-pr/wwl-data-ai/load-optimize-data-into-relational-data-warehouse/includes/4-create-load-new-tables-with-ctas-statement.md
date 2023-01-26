@@ -15,7 +15,7 @@ Now let's consider an example of a *Type 2* change. Suppose a customer changes t
 
 Logic to implement Type 1 and Type 2 updates can be complex, and there are various techniques you can use. For example, you could use a combination of `UPDATE` and `INSERT` statements as shown in the following code example:
 
-### Combining `INSERT` and `UPDATE` Statements
+### Combining INSERT and UPDATE statements
 
 ```sql
 -- Insert new customers
@@ -59,7 +59,7 @@ AND stg.StreetAddress <> dim.StreetAddress;
 
 As an alternative to using multiple `INSERT` and `UPDATE` statement, you can use a single `MERGE` statement to perform an "*upsert*" operation to insert new records and update existing ones, as shown in the following example, which loads new product records and applies type 1 updates to existing products:
 
-### Using a `MERGE` Statement
+### Using a MERGE tatement
 
 ```sql
 MERGE dbo.DimProduct AS tgt

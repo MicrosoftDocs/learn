@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/25/2023
+  ms.date: 01/26/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -12,39 +12,3 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/8-knowledge-check.md)]
-quiz:
-  title: "Check your knowledge"
-  questions:
-  - content: "What is the default table structure within Azure Synapse Analytics if the data engineer doesn't define it within the Data Definition?"
-    choices:
-    - content: "Round-Robin"
-      isCorrect: true
-      explanation: "That's correct. The default table structure if not defined during the DDL is round-robin"
-    - content: "Distributed"
-      isCorrect: false
-      explanation: "That's incorrect. Distributed tables would require the definition and its hash key in the DDL."
-    - content: "Replicated"
-      isCorrect: false
-      explanation: "That's incorrect. Replicated tables would require the definition to be defined in the DDL."
-  - content: "What is the simplest way to create a new Fact table in Synapse Analytics ?"
-    choices:
-    - content: "Slowly changing dimension (SCD)"
-      isCorrect: true
-      explanation: "That's incorrect. The Create External table doesn't physically copy any data to Synapse Analytics, it's more like a view to existing datalake or blob storage data with a defined schema."
-    - content: "Create Table as Select (CTAS)"
-      isCorrect: false
-      explanation: "That's Correct. The Create Table as Select (CTAS is the create and populate a new table in Synapse Analytics)"
-    - content: "COPY Command"
-      isCorrect: false
-      explanation: "That's incorrect. Although the COPY command is a recommend path for loading data, it requires the table to already exist."
-  - content: "What step should you take after loading data into your Synapse Analytics Tables ?"
-    choices:
-    - content: "Drop and rebuild indexes on the database"
-      isCorrect: false
-      explanation: "That's incorrect. It is only necessary to rebuild the indexes on the affected tables."
-    - content: "Create another clustered columnstore index"
-      isCorrect: false
-      explanation: "That's incorrect. There can only be on clustered columnstore index on a table )"
-    - content: "Rebuild the index on the particular table"
-      isCorrect: true
-      explanation: "That's correct. You should always rebuild indexes which will also update statistics to ensure you achieve the best performance on your freshly loaded data."

@@ -69,7 +69,7 @@ GO
 
 ```
 
-### `COPY` Command 
+### `COPY` command 
 
 If you use external tables for staging, there's no need to load the data into them because they already reference the data files in the data lake. However, if you use "regular" relational tables, you can use the COPY statement to load data from the data lake, as shown in the following example:
 

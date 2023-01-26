@@ -1,9 +1,7 @@
 
 
-In this module, you have learned the techniques to optimize performance when loading data into Azure Synapse Analytics including:
+You've now been introduced to the Azure data ecosystem and some of the techniques to load data into Synapse Analytics 
 
-- Understood data loading design goals
-- Explained loading methods into Azure Synapse Analytics
-- Simplified ingestion with the Copy Activity
-- understood Slowly changing dimensions (SCD)
-- when to use CETAS or CTAS operations
+As a data engineer, this should extend your existing knowledge and allow you to apply it in Azure.
+
+For some additional insight, you can review common [data warehouse industry architectures](/azure/architecture/example-scenario/data/data-warehouse) and prepare for your [organization's migration and data processing](/azure/architecture/reference-architectures/data/enterprise-bi-adf).
