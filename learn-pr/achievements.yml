@@ -1392,6 +1392,11 @@ achievements:
   title: Introduction to Custom Commands
   summary: Custom Commands makes it easy to build voice commanding apps optimized for voice-first interaction experiences. It provides a straightforward authoring and hosting experience on a single interface, helping you to focus on building the best solution for your voice-commanding scenarios.
   iconUrl: /training/achievements/intro-to-custom-commands.svg
+- uid: learn.azure.model-partition-data-azure-cosmos-db
+  type: badge
+  title: Model and partition your data in Azure Cosmos DB  
+  summary: Identify key access patterns for a sample e-commerce application. Define the data model for each of the entities, along with containers to store the data with a partition key that will result in an efficient and scalable data store for this e-commerce application.
+  iconUrl: /training/achievements/model-partition-data-azure-cosmos-db.svg
 - uid: learn.iot.manage-iot-central-apps-with-rest-api.badge
   type: badge
   title: Manage IoT Central applications with the REST API
