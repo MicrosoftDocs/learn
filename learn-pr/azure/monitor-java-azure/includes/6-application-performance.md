@@ -21,8 +21,4 @@ You can instrument your applications with Azure Application Insights to generate
 ## Enable the Java in-process monitoring agent with Azure Spring Apps
 
 In this module, you'll use APM with Azure Spring Apps as it offers in-depth performance monitoring without requiring code changes, recompiling, retesting, or redeployment.
-We've already, activated APM on creation of our Azure Spring Apps instance with the `--enable-java-agent` CLI option.
-
-> [!TIP]
-> In the future, we will advance the Application Insights + Azure Spring Apps integration to general
-> availability. Then, by default without any activation, Application Insights monitoring will be enabled by default.
+It is activated by default on creation of our Azure Spring Apps instance.
