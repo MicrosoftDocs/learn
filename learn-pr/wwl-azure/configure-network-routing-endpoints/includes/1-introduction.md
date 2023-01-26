@@ -9,7 +9,7 @@ In this module, you learn how to:
 - Implement system routes and user-defined routes.
 - Configure a custom route.
 - Implement service endpoints.
-- Identify features and usage cases for private links and endpoint services.
+- Identify features and usage cases for Azure Private Link and endpoint services.
 
 ## Skills measured
 
