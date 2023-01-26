@@ -39,7 +39,7 @@ The second line of code calls the `dice` object's `Next()` method passing in two
 
 The third line of code calls the `WriteLine()` method to print the value of `roll` to the console.
 
-In this code example, we're calling a method of the Random class and the Console class. However, the *way* we're calling these methods is different. The reason they're called using a different techniques is because some methods are stateful and others are stateless.
+In this code example, we're calling a method of the Random class and the Console class. However, the *way* we're calling these methods is different. The reason they're called using different techniques is because some methods are stateful and others are stateless.
 
 ### Stateful versus stateless methods
 
