@@ -2,7 +2,7 @@
 uid: learn.build-interactive-components-blazor-web-apps.exercise-improve-app-interactivity-lifecycle-events
 title: Exercise - Improve app interactivity with lifecycle events
 metadata:
-  unitType: learning-content 
+  unitType: learning-content
   title: "Exercise - Improve app interactivity with lifecycle events"
   description: "Use lifecycle events to enhance the user interaction of a Blazor app"
   ms.date: 01/25/2023

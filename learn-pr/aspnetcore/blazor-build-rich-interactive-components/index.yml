@@ -23,25 +23,25 @@ prerequisites: |
   - Ability to create a Blazor web application.
   - Ability to create Blazor components, forms, and layouts.
 iconUrl: /training/achievements/build-interactive-components-blazor-web-apps.svg
-levels: 
+levels:
   - intermediate
-roles: 
+roles:
   - developer
   - solution-architect
-products: 
+products:
   - blazor
-  - dotnet-core
-  - aspnet
+  - dotnet
+  - aspnet-core
 subjects:
-- cloud-computing
+  - cloud-computing
 units:
-- learn.build-interactive-components-blazor-web-apps.introduction
-- learn.build-interactive-components-blazor-web-apps.use-javascript-libraries-blazor-apps
-- learn.build-interactive-components-blazor-web-apps.exercise-use-javascript-libraries-blazor-apps
-- learn.build-interactive-components-blazor-web-apps.improve-app-interactivity-lifecycle-events
-- learn.build-interactive-components-blazor-web-apps.exercise-improve-app-interactivity-lifecycle-events
-- learn.build-interactive-components-blazor-web-apps.reuse-components-creating-templates
-- learn.build-interactive-components-blazor-web-apps.exercise-reuse-components-creating-templates
-- learn.build-interactive-components-blazor-web-apps.summary
+  - learn.build-interactive-components-blazor-web-apps.introduction
+  - learn.build-interactive-components-blazor-web-apps.use-javascript-libraries-blazor-apps
+  - learn.build-interactive-components-blazor-web-apps.exercise-use-javascript-libraries-blazor-apps
+  - learn.build-interactive-components-blazor-web-apps.improve-app-interactivity-lifecycle-events
+  - learn.build-interactive-components-blazor-web-apps.exercise-improve-app-interactivity-lifecycle-events
+  - learn.build-interactive-components-blazor-web-apps.reuse-components-creating-templates
+  - learn.build-interactive-components-blazor-web-apps.exercise-reuse-components-creating-templates
+  - learn.build-interactive-components-blazor-web-apps.summary
 badge:
   uid: learn.build-interactive-components-blazor-web-apps.badge
