@@ -18,7 +18,7 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
         --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
 
-1. Run the following command to generate the key pair for an Azure VM.
+1. Run the following command to generate the ssh key pair for an Azure VM.
 
     ```bash
     ssh-keygen -m PEM -t rsa -b 4096
