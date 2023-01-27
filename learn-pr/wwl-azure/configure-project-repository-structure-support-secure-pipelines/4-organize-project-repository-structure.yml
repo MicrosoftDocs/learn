@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-project-repository-structure-support-secure-pipelines.organize-project-repository-structure
+title: Organize project and repository structure
+metadata:
+  title: organize-project-repository-structure
+  description: "Organize project and repository structure."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-organize-project-repository-structure.md)]

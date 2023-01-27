@@ -1,0 +1,57 @@
+### YamlMime:Module
+uid: learn.wwl.configure-project-repository-structure-support-secure-pipelines
+metadata:
+  title: configure-project-repository-structure-support-secure-pipelines
+  description: "Configure a project and repository structure to support secure pipelines."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure a project and repository structure to support secure pipelines
+summary: "This module is designed to help learners understand the importance of configuring a secure project and repository structure to support pipelines in Azure DevOps. The module covers fundamental concepts and best practices for organizing the project and repository structure and moving the security repository away from the application project."
+abstract: |
+  By the end of this module, you'll be able to:
+    - "Separate secure files between projects"
+    - "Move the security repository away from the application project"
+    - "Organize the project and repository structure in Azure DevOps"
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
+levels:
+  - intermediate
+roles:
+  - administrator
+  - developer
+  - devops-engineer
+  - security-engineer
+  - security-operations-analyst
+  - solution-architect
+  - student
+  - support-engineer
+products:
+  - azure
+  - azure-artifacts
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+subjects:
+  - devops
+  - cloud-computing
+  - cloud-security
+  - key-management
+  - information-protection-governance
+  - identity-access
+  - compliance
+units:
+- learn.wwl.configure-project-repository-structure-support-secure-pipelines.introduction
+- learn.wwl.configure-project-repository-structure-support-secure-pipelines.configure-secure-projects-repositories
+- learn.wwl.configure-project-repository-structure-support-secure-pipelines.exercise-move-security-repository-away-from-application-project
+- learn.wwl.configure-project-repository-structure-support-secure-pipelines.organize-project-repository-structure
+- learn.wwl.configure-project-repository-structure-support-secure-pipelines.learning-lab-configure-project-repository-structure-support-secure-pipelines
+- learn.wwl.configure-project-repository-structure-support-secure-pipelines.knowledge-check
+- learn.wwl.configure-project-repository-structure-support-secure-pipelines.summary
+badge:
+  uid: learn.wwl.configure-project-repository-structure-support-secure-pipelines.badge
