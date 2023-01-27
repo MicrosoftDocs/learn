@@ -19,20 +19,29 @@ By selecting one of the rules on the **Rule Templates** tab, you can observe the
 
 
 
-- **Severity level.** This indicates the importance of the alert. There are four severity levels:
- - High - Medium - Low - Informational
+**Severity level.** This indicates the importance of the alert. There are four severity levels:
 
-- **Name of the rule.** This provides a meaningful name for the alert rule.
+- High
+- Medium
+- Low
+- Informational
 
-- **Rule type.** This defines the type of the rule, which can be one of the following types:
- - Anomaly - Fusion - Microsoft Security - ML Behavior Analytics - Scheduled
+**Name of the rule.** This provides a meaningful name for the alert rule.
 
-- **Data Source.** This specifies the data source connector that generated the alert.
+**Rule type.** This defines the type of the rule, which can be one of the following types:
 
-- **Tactics.** This specifies methodologies in MITRE ATT&amp;CK model used by different kinds of malware.
+- Anomaly
+- Fusion
+- Microsoft Security
+- ML Behavior Analytics
+- Scheduled
 
+**Data Source.** This specifies the data source connector that generated the alert.
 
- > [!NOTE] > MITRE ATT&amp;CK is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&amp;CK knowledge base provides a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.
+**Tactics.** This specifies methodologies in MITRE ATT&amp;CK model used by different kinds of malware.
+
+> [!NOTE]
+> MITRE ATT&amp;CK is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&amp;CK knowledge base provides a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.
 
 
 
