@@ -6,4 +6,4 @@ The API can be integrated into your applications by using REST calls or by incor
 
 ## Learn more
 
-To learn more about Anomaly Detector, consider reviewing the [Identify abnormal time-series data with Anomaly Detector](/training/modules/identify-abnormal-time-series-data-anomaly-detector/) module on Microsoft Learn.
+To learn more about Anomaly Detector, consider reviewing the [Identify abnormal time-series data with Anomaly Detector](/learn/modules/identify-abnormal-time-series-data-anomaly-detector/) module on Microsoft Learn.
