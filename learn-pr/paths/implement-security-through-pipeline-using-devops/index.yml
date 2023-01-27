@@ -1,0 +1,52 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-security-through-pipeline-using-devops
+metadata:
+  title: implement-security-through-pipeline-using-devops
+  description: 'Implement security through a pipeline using DevOps'
+  ms.date: 01/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Implement security through a pipeline using DevOps'
+summary: "This learning path helps you prepare for the Implement security through a pipeline using DevOps in Azure certification. You will learn how to configure and secure Azure Pipelines. You will also get opportunities to practice hands-on skills. These skills include configuring secure access to pipeline resources, configuring, and validating permissions, configuring a project and repository structure, extending a pipeline, configuring pipelines to use variables and parameters securely, and managing identity for projects, pipelines, and agents."
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
+levels:
+  - intermediate
+roles:
+  - administrator
+  - developer
+  - devops-engineer
+  - security-engineer
+  - security-operations-analyst
+  - solution-architect
+  - student
+  - support-engineer
+products:
+  - azure
+  - azure-artifacts
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+subjects:
+  - devops
+  - cloud-computing
+  - cloud-security
+  - key-management
+  - information-protection-governance
+  - identity-access
+  - compliance
+modules:
+  - learn.wwl.configure-secure-access-pipeline-resources
+  - learn.wwl.configure-secure-access-azure-repos-from-pipelines
+  - learn.wwl.configure-validate-permissions
+  - learn.wwl.configure-project-repository-structure-support-secure-pipelines
+  - learn.wwl.extend-pipeline-use-multiple-templates
+  - learn.wwl.configure-pipelines-securely-use-variables-parameters
+  - learn.wwl.manage-identity-projects-pipelines-agents
+trophy:
+  uid: learn.wwl.implement-security-through-pipeline-using-devops.trophy
