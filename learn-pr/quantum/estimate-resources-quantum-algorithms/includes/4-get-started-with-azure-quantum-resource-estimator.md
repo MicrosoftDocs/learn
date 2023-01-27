@@ -128,4 +128,5 @@ result_maj_floquet_e1
 Using this qubit technology and architecture, with an error budget of 10% we would need 4620 physical qubits.
 
 
-In the next part, you'll create a quantum algorithm for factoring large number, and you'll estimate the resources required to run it on a fault-tolerant quantum computer. 
+In the next part, you'll create a quantum algorithm for factoring a large number, and you'll estimate the resources required to run it on a fault-tolerant quantum computer. 
+
