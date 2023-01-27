@@ -147,7 +147,7 @@ pip uninstall -r requirements.txt -y
 > Found existing installation: six 1.16.0
 > Uninstalling six-1.16.0:
 >   Successfully uninstalled six-1.16.0
-  ```
+> ```
 
 A better approach is to use the `autoremove` command. First you'll need to install `autoremove`:
 
