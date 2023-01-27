@@ -44,9 +44,9 @@ quiz:
     - content: "cd /mnt/c/Users"
       isCorrect: false
       explanation: "The cd command is correct to 'change directory' and `/mnt/c` is the correct path for accessing the mounted C:/ drive on the Windows file system from a Bash command line. (Note that Bash uses forward slashes in the path.) However, the other command option and path is correct as well, so the answer is All of the Above!" 
-    - content: "cd &lt;&lt;wsl.localhost&lt;Ubuntu"
+    - content: "cd \\\\wsl.localhost\\Ubuntu"
       isCorrect: false
-      explanation: "The cd command is correct to 'change directory' and &lt;&lt;wsl.localhost&lt;Ubuntu is the correct path for accessing the Linux file system from a PowerShell command line. (Note that PowerShell uses back slashes in the path.) However, the other command option and path is correct as well, so the answer is All of the Above!"
+      explanation: "The cd command is correct to 'change directory' and \\\\wsl.localhost\\Ubuntu is the correct path for accessing the Linux file system from a PowerShell command line. (Note that PowerShell uses back slashes in the path.) However, the other command option and path is correct as well, so the answer is All of the Above!"
     - content: "All of the above."
       isCorrect: true
       explanation:  "Great job! Both commands and paths are correct. The mnt path can be used with forward slashes to access the Windows file system from a Bash command line and the wsl.localhost (or \\wsl$) can be used to access the Linux file system from PowerShell."
