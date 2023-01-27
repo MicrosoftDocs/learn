@@ -133,20 +133,20 @@ You can also use the following commands to install a package:
 
 - Have a set of files on your machine and install from that source:
 
-   ```bash
+   ```console
    cd <to where the package is on your machine>
    python3 -m pip install .
    ```
 
 - Install from a GitHub repository that provides version control:
 
-   ```bash
+   ```console
    git+https://github.com/your-repo.git
    ```
 
 - Install from a compressed archive file:
 
-   ```bash
+   ```console
    python3 -m pip install package.tar.gz
    ```
 

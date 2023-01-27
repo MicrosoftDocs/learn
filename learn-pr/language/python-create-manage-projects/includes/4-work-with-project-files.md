@@ -67,10 +67,15 @@ ERROR: Could not find a version that satisfies the requirement python-dateutil==
 ERROR: No matching distribution found for python-dateutil===randomwords
 ```
 
-Another way is to call `pip freeze`. The output shows what specific versions it already installed for us, when we gave it only the package name as argument:
+Another way is to call `pip freeze`: 
+
+``` console
+pip freeze python-dateutil
+```
+
+The output shows what specific versions it already installed for us, when we gave it only the package name as argument:
 
 ```output
-pip-autoremove==0.10.0
 python-dateutil==2.8.2
 six==1.16.0
 ```
@@ -113,20 +118,50 @@ Sometimes, you might realize that you no longer need a certain Python package an
 pip uninstall python-dateutil
 ```
 
-However, if you run `pip freeze`, you see how the preceding command removed only the `python-dateutil` library. This can be problematic, because your project now might contain many unused libraries that take up space. To clear out everything that this package depended on, you can use both commands like this:
+However, if you run `pip freeze`, you see how the preceding command removed only the `python-dateutil` library. 
 
-```python
+```output
+six==1.16.0
+```
+
+
+This can be problematic, because your project now might contain many unused libraries that take up space. To clear out everything that this package depended on, you can write all installed packages to a *requirements.txt* list, like this:
+
+```console
 pip freeze > requirements.txt
+```
+
+Then remove all the packages in that list, like this:
+
+```console
 pip uninstall -r requirements.txt -y
 ```
 
 > [!WARNING]
-> The preceding commands would remove all installed packages, by first writing them to a _requirements.txt_ list and then removing all packages in that list.
+> The preceding commands would remove all installed packages, by first writing them to a _requirements.txt_ list and then removing all packages in that list. The output would look like this:
+> 
+> ```output
+> Found existing installation: python-dateutil==2.8.2
+> Uninstalling python-dateutil==2.8.2:
+>   Successfully uninstalled python-dateutil==2.8.2
+> Found existing installation: six 1.16.0
+> Uninstalling six-1.16.0:
+>   Successfully uninstalled six-1.16.0
+  ```
 
-A better approach is to use the `autoremove` command:
+A better approach is to use the `autoremove` command. First you'll need to install `autoremove`:
 
 ```console
 pip install pip-autoremove
+```
+
+```output
+Successfully installed pip-autoremove-0.10.0
+```
+
+The run the following command:
+
+```console
 pip-autoremove python-dateutil -y
 ```
 
