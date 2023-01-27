@@ -18,6 +18,14 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
         --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
 
+1. Run the following command to generate the key pair for an Azure VM.
+
+    ```bash
+    ssh-keygen -m PEM -t rsa -b 4096
+    ```
+1. Press <kbd>Enter</kbd> to accept the default location. The command creates two files: `id_rsa` and `id_rsa.pub` in the `~/.ssh` directory. The files are overwritten if they exist.
+
+1. Enter a passphrase that you'll remember. You'll need this passphrase when you use the SSH key to access the VM.
 1. Run the following command to create your VM with boot diagnostics enabled.
 
     ```azurecli
@@ -28,8 +36,7 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
         --location eastus2 \
         --admin-username azureuser \
         --boot-diagnostics-storage $STORAGE \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --generate-ssh-keys
+        --resource-group <rgn>[sandbox resource group name]</rgn> 
     ```
 
    Creating the VM might take a couple of minutes.
