@@ -126,7 +126,7 @@ Let's see this decorator in action:
 ```python
 class Square:
     def __init__(self, w, h):
-        self.height = h
+        self.__height = h
         self.__width = w
   
     def set_side(self, new_side):
