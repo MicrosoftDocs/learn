@@ -86,7 +86,8 @@ result = qsharp.azure.execute(EstimateMultiplication8,
                 }})
 result
 ```
-You can inspect the result and compare both qubit technologies. For example, notice that now the quantum error correction (QEC) code distance is 5, and the number of physical qubits has decreased from 173592 to 8160. On the opposite, the runtime is 6 ms, compared to 3 ms in previoulsy technology. 
+You can inspect the result and compare both qubit technologies. For example, notice that now the quantum error correction (QEC) code distance is 5, and the number of physical qubits has decreased from 173592 to 8160. Conversely, the runtime is 6 ms, compared to 3 ms using the previous approach. 
+
 
 
 We can update the error correction code too. Let's rerun the resource estimation job on the Majorana-based qubit parameters with a Floquet code.
