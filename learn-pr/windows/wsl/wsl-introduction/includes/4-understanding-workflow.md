@@ -2,7 +2,7 @@ The ability to use both Linux and Windows on a single device means you can use y
 
 ## Basics of a WSL development workflow
 
-To begin, lets look at some of the standard development tools, command line utilities, code languages/frameworks, and practices involved in a WSL development workflow.
+To begin, let's look at some of the standard development tools, command line utilities, code languages/frameworks, and practices involved in a WSL development workflow.
 
 ### Developer tool recommendations
 
