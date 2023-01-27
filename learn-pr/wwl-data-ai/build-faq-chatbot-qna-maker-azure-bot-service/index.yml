@@ -3,9 +3,9 @@ uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service
 metadata:
   title: Build a bot with the Language Service and Azure Bot Service
   description: "Build a bot with the Language Service and Azure Bot Service"
-  ms.date: 09/02/2022
+  ms.date: 01/27/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build a bot with the Language Service and Azure Bot Service
@@ -14,7 +14,7 @@ abstract: |
   After completing this module, you'll be able to create a knowledge base with an Azure Bot Service bot.
 prerequisites: |
   Ability to navigate the Azure portal
-iconUrl: /training/achievements/build-faq-chatbot-qna-maker-azure-bot-service.svg
+iconUrl: /learn/achievements/build-faq-chatbot-qna-maker-azure-bot-service.svg
 levels:
 - beginner
 roles:
