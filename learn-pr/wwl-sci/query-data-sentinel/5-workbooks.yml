@@ -1,21 +1,21 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.query-data-sentinel.5-workbooks
+title: Use default Microsoft Sentinel Workbooks
 metadata:
   title: Use default Microsoft Sentinel Workbooks
-  description: Use default Microsoft Sentinel Workbooks.
-  ms.date: 12/17/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  description: "Use default Microsoft Sentinel Workbooks."
+  ms.date: 01/26/2023
+  author: wwlpublish
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Use default Microsoft Sentinel Workbooks
 durationInMinutes: 5
 content: |
   [!include[](includes/5-workbooks.md)]
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
-  - content: "Which one of the following elements cannot be part of the workbook?"
+  - content: "Which one of the following elements can't be part of the workbook?"
     choices:
     - content: "Charts"
       isCorrect: false
