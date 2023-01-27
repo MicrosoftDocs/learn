@@ -23,39 +23,11 @@ No matter your goals, Azure Fundamentals has something for you. You should take 
 
 The Azure Fundamentals learning path series can help you prepare for Exam AZ-900: Microsoft Azure Fundamentals. This exam includes three knowledge domain areas:
 
-:::row:::
-  :::column:::
-    **AZ-900 Domain Area**
-  :::column-end:::
-  :::column:::
-    **Weight**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Describe cloud concepts
-  :::column-end:::
-  :::column:::
-    25-30%
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Describe Azure architecture and services
-  :::column-end:::
-  :::column:::
-    35-40%
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Describe Azure management and governance
-  :::column-end:::
-  :::column:::
-    30-35%
-  :::column-end:::
-:::row-end:::
-
+| **AZ-900 Domain Area**                   | **Weight** |
+| ---------------------------------------- | ---------- |
+| Describe cloud concepts                  | 25-30%     |
+| Describe Azure architecture and services | 35-40%     |
+| Describe Azure management and governance | 30-35%     |
 
 Each domain area maps to a learning path in Azure Fundamentals. The percentages shown indicate the relative weight of each area on the exam. The higher the percentage, the more questions that part of the exam will contain. Be sure to read the exam page for specifics about what skills are covered in each area.
 

@@ -5,11 +5,11 @@ metadata:
   unitType: exercise
   title: Exercise - Add custom data by using extension attributes
   description: "Add custom data to users by using Microsoft Graph extension attributes."
-  ms.date: 04/08/2022
+  ms.date: 01/24/2023
   author: FaithOmbongi
   ms.author: ombongifaith
   ms.topic: interactive-tutorial
   ms.prod: learning-graph
-durationInMinutes: 7
+durationInMinutes: 4
 content: |
   [!include[](includes/3-exercise-onpremises-extension-attributes.md)]

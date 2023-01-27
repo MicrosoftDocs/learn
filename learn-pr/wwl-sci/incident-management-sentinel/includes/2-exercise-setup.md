@@ -1,3 +1,4 @@
+
 To complete this optional exercise, you need access to an Azure subscription to create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 > [!NOTE]
@@ -59,3 +60,4 @@ In this task, you'll deploy Microsoft Sentinel connectors to Azure Activity.
 
 > [!NOTE]
 > The connector for Azure Activity might take 15-30 minutes until it displays a status of **Connected**.
+

@@ -1,3 +1,4 @@
+
 Microsoft Sentinel uses various sources of security information to create incidents. As lead system engineer at Contoso, you'll need to understand these sources to best utilize incident management in Microsoft Sentinel.
 
 ## Incident evidence

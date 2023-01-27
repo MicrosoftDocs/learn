@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-manage-azure-arc-data-controller.exercise-manage-azure-arc-data-controller
+title: Exercise - Using az arcdata
+metadata:
+  title: Exercise - Manage an Azure Arc data controller
+  description: Complete this exercise to perform common management tasks on an Azure Arc data controller.
+  ms.date: 12/19/2022
+  author: tchristiani
+  ms.author: terrychr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 10
+content: |
+  [!include[](includes/exercise-manage-azure-arc-data-controller.md)]
