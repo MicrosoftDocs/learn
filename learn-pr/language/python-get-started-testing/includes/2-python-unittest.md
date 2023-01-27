@@ -55,7 +55,7 @@ OK
 ```
 
 > [!NOTE]
-> Test discovery is only possible when you follow naming conventions for methods, classes, and files. If the file does not start with the word *test*, it won't get executed. 
+> Test discovery is only possible when you follow naming conventions for methods, classes, and files. If the file does not start with the word *test*, it won't get executed.
 
 ### Naming conventions
 
