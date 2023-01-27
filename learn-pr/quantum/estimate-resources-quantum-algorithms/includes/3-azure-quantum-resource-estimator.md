@@ -69,7 +69,8 @@ The total error budget sets the overall allowed error for the algorithm, i.e., t
 
 ## What is the result of a resource estimation job?
 
-The Azure Quantum Resource Estimator takes the optional job parameters `{qubitParams, qecScheme, errorBudget}` and a QIR algorithm, and computes pre- and post-layout estimation of the logical resources required to run such algorithm in such computational scenario. 
+The Azure Quantum Resource Estimator takes the optional job parameters `{qubitParams, qecScheme, errorBudget}` and a QIR algorithm, and computes pre- and post-layout estimation of the logical resources required to run such an algorithm in such a computational scenario. 
+
 
 The Resource Estimator computes logical and physical estimation of the algorithm. It calculates the QEC code distance, and from it, the number of physical qubits needed to encode one logical qubit. It calculates the number of logical qubits, T gates, rotation gates, control gates, measurements, T factory physical values, and total runtime, among others. 
 
