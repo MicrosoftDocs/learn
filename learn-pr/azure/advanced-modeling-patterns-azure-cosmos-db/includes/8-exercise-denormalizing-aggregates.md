@@ -33,9 +33,7 @@ Go to the code that you'll use in this unit.
 
 ## Complete the code to update total sales orders
 
-1. Go to the function that creates a new sales order.
-
-1. Select Ctrl+G, and then type **488** to go to that line in the file.
+1. Select Ctrl+G, and then type **488** to go to the function that creates a new sales order.
 
 1. You should now see the following code:
 
