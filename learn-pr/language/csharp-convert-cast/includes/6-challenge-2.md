@@ -6,7 +6,7 @@ The following challenge will force you to understand the implications of casting
 
 ### Step 1: Delete all of the code in the .NET Editor from the earlier exercise
 
-Select all of the code in the .NET Editor then select the `del` or `backspace` key to delete it.
+Select all of the code in the .NET Editor, then select the <kbd>Del</kbd> or <kbd>Backspace</kbd> key to delete it.
 
 ### Step 2: Write code in the .NET Editor to produce the desired output
 
