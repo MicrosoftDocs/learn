@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-identity-projects-pipelines-agents.learning-lab-manage-identity-for-projects-pipelines-agents
+title: Learning Lab - Manage identity for projects, pipelines, and agents
+metadata:
+  title: learning-lab-manage-identity-for-projects-pipelines-agents
+  description: "Learning Lab - Manage identity for projects, pipelines, and agents."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-learning-lab-manage-identity-for-projects-pipelines-agents.md)]

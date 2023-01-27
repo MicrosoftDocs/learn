@@ -1,0 +1,61 @@
+### YamlMime:Module
+uid: learn.wwl.manage-identity-projects-pipelines-agents
+metadata:
+  title: manage-identity-projects-pipelines-agents
+  description: "Manage identity for projects, pipelines, and agents."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage identity for projects, pipelines, and agents
+summary: "This module is designed to help learners understand the importance of managing identity for projects, pipelines, and agents in Azure DevOps. The module covers fundamental concepts and best practices for configuring a Microsoft-hosted pool, configuring agents for projects, configuring agent identities, configuring the scope of a service connection, and converting to a managed identity."
+abstract: |
+  By the end of this module, you'll be able to:
+    - "Configure a Microsoft-hosted pool"
+    - "Configure agents for projects"
+    - "Configure agent identities"
+    - "Configure the scope of a service connection"
+    - "Convert to a managed identity in Azure DevOps"
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
+levels:
+  - intermediate
+roles:
+  - administrator
+  - developer
+  - devops-engineer
+  - security-engineer
+  - security-operations-analyst
+  - solution-architect
+  - student
+  - support-engineer
+products:
+  - azure
+  - azure-artifacts
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+subjects:
+  - devops
+  - cloud-computing
+  - cloud-security
+  - key-management
+  - information-protection-governance
+  - identity-access
+  - compliance
+units:
+- learn.wwl.manage-identity-projects-pipelines-agents.introduction
+- learn.wwl.manage-identity-projects-pipelines-agents.configure-microsoft-hosted-pool
+- learn.wwl.manage-identity-projects-pipelines-agents.configure-agents-for-projects
+- learn.wwl.manage-identity-projects-pipelines-agents.configure-agent-identities
+- learn.wwl.manage-identity-projects-pipelines-agents.configure-scope-service-connection
+- learn.wwl.manage-identity-projects-pipelines-agents.understand-convert-managed-identity
+- learn.wwl.manage-identity-projects-pipelines-agents.learning-lab-manage-identity-for-projects-pipelines-agents
+- learn.wwl.manage-identity-projects-pipelines-agents.knowledge-check
+- learn.wwl.manage-identity-projects-pipelines-agents.summary
+badge:
+  uid: learn.wwl.manage-identity-projects-pipelines-agents.badge
