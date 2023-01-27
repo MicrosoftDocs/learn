@@ -90,7 +90,8 @@ You can inspect the result and compare both qubit technologies. For example, not
 
 
 
-We can update the error correction code too. Let's rerun the resource estimation job on the Majorana-based qubit parameters with a Floquet code.
+We can update the error correction code too. Let's rerun the resource estimation job on the Majorana-based qubit parameters using Floquet code as the error correction scheme.
+
 
 ```python
 result_maj_floquet = qsharp.azure.execute(EstimateMultiplication8,
