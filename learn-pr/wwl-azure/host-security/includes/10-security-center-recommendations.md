@@ -11,7 +11,7 @@ Microsoft Defender for Cloud helps you prevent, detect, and respond to threats w
 
 You need to enable data collection so that Microsoft Defender for Cloud can gather the information it needs to provide recommendations and alerts based on the security policy you configure. In the following figure, data collection has been turned on.
 
-:::image type="content" source="../media/az500-host-recommendations-1-5d8e05d6-b7fef0bc.png" alt-text="Screenshot of the Security policy controls and Prevention policy recommendations controls in Visual Studio Ultimate with Microsoft Developer Network.":::
+:::image type="content" source="../media/az500-host-recommendations-1-5d8e05d6-b7fef0bc.png" alt-text="Sceenshot of the Security policy controls and Prevention policy recommendations controls in Visual Studio Ultimate with Microsoft Developer Network.":::
 
 
 A security policy defines the set of controls recommended for resources within the specified subscription or resource group. Before enabling a security policy, you need to enable data collection. Microsoft Defender for Cloud collects data from your VMs to assess their security state, provide security recommendations, and alert you to threats. In Microsoft Defender for Cloud, you define policies for your Azure subscriptions or resource groups according to your company’s security needs and the types of applications or sensitivity of data in each subscription.
@@ -22,7 +22,7 @@ After setting a security policy, Microsoft Defender for Cloud analyzes the secur
 
 Microsoft Defender for Cloud also monitors and analyzes the enabled security policies to identify potential vulnerabilities. On the **Resource group** blade, you can check the security state of a resource along with any issues.
 
-:::image type="content" source="../media/msft-defender-for-cloud-recommendations-1b-b9248b63.jpg" alt-text="Screenshot of the Microsoft Defender for Cloud Security Recommendations for a Virtual Machine.":::
+:::image type="content" source="../media/msft-defender-for-cloud-recommendations-1b-b9248b63.jpg" alt-text="Screenhot of the Microsoft Defender for Cloud Security Recommendations for a Virtual Machine.":::
 
 
 Microsoft Defender for Cloud threat detection works by automatically collecting security information from your Azure resources, the network, and connected partner solutions. It analyzes this information, often correlating information from multiple sources, to identify threats. Microsoft Defender for Cloud prioritizes alerts along with recommendations on how to remediate the threats.
