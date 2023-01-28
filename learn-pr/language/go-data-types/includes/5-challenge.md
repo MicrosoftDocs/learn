@@ -2,7 +2,7 @@ To put into practice everything you've learned in this module, we have some codi
 
 ## Write a program to calculate the Fibonacci sequence
 
-In this first challenge, you'll write a program to calculate the Fibonacci sequence from a number. This is a typical programming exercise to code as you're learning a new language. You'll write a function that returns a slice with all the numbers in a Fibonacci sequence that results from doing the calculation from a number that users input greater than two. Let's assume that numbers lower than `2` will result in an error and return a nil slice.
+In this first challenge, you'll write a program to calculate the Fibonacci sequence from a number. You'll write a function that returns a slice with all the numbers in a Fibonacci sequence. The sequence results from doing the calculation based on a number that is input by the user. The input number must be greater than two. Let's assume that numbers lower than `2` will result in an error and return a nil slice.
 
 Remember, the Fibonacci sequence is a list of numbers where each number is the sum of the previous two Fibonacci numbers. For instance, the sequence of numbers for `6` is `1,1,2,3,5,8`, for `7` is `1,1,2,3,5,8,13`, for `8` is `1,1,2,3,5,8,13,21`, and so on.
 

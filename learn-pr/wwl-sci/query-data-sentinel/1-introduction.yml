@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.query-data-sentinel.1-introduction
+title: Introduction
 metadata:
   title: Introduction
-  description: Provide an introduction to querying, visualizing, and monitoring data with Microsoft Sentinel.
-  ms.date: 12/17/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  description: "Provide an introduction to querying, visualizing, and monitoring data with Microsoft Sentinel."
+  ms.date: 01/26/2023
+  author: wwlpublish
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction
 durationInMinutes: 5
 content: |
   [!include[](includes/1-introduction.md)]

@@ -2,11 +2,11 @@ Code challenges throughout these modules will reinforce what you've learned and 
 
 In this exercise, you'll use either Intellisense or Microsoft Learn documentation to find and call a method that returns the larger of two numbers.
 
-### Step 1: Delete all of the code in the .NET Editor from the earlier exercise.
+### Step 1: Delete all of the code in the .NET Editor from the earlier exercise
 
-Select all of the code in the .NET Editor, then select the `del` or `backspace` key to delete it.
+Select all of the code in the .NET Editor, then select the <kbd>Del</kbd> or <kbd>Backspace</kbd> key to delete it.
 
-### Step 2: Use a method of the System.Math class to determine which of two numbers is larger.
+### Step 2: Use a method of the System.Math class to determine which of two numbers is larger
 
 Use the following code as the starting point for your code:
 

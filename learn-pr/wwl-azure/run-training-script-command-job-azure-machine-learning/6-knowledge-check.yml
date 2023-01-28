@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-training-script-command-job-azure-machine-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/25/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "A data scientist wants to run a script as a command job to train a PyTorch model, setting the batch size and learning rate hyperparameters to specified values each time the job runs. What should be done by the data scientist?"
+    choices:
+    - content: "Create multiple script files – one for each batch size and learning rate combination you want to use."
+      isCorrect: false
+      explanation: "Incorrect. To use different values each time, define arguments in the script and pass them using the arguments parameter of the command job."
+    - content: "Set the batch size and learning rate properties of the command job before submitting the job."
+      isCorrect: false
+      explanation: "Incorrect. To use different values each time, define arguments in the script and pass them using the arguments parameter of the command job."
+    - content: "Add arguments for batch size and learning rate to the script, and set them in the command property of the command job."
+      isCorrect: true
+      explanation: "Correct. To use different values each time, define arguments in the script and pass them using the arguments parameter of the command job."
+  - content: "A data scientist has trained a model in a notebook. The model should be retrained every week on new data. What should the data scientist do to make the code production-ready?"
+    choices:
+    - content: "Copy and paste the code from each cell to a script."
+      isCorrect: false
+      explanation: "Incorrect. The code in a notebook is likely to contain nonessential exploratory code that should be omitted in a script."
+    - content: "Convert the code to one function in a script that reads the data and trains the model."
+      isCorrect: false
+      explanation: "Incorrect. A script will be easier to test and maintain by others when it exists of multiple functions."
+    - content: "Convert the code to multiple functions in a script that read the data and train the model."
+      isCorrect: true
+      explanation: "Correct. A script consisting of multiple functions is best to use for production workloads."
