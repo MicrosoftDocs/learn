@@ -2,8 +2,8 @@
 uid: learn.azure.intro-to-anomaly-detector
 metadata:
   title: Introduction to Anomaly Detector
-  description: "Introduction to Anomaly Detector"
-  ms.date: 01/27/2023
+  description: "Discover the Anomaly Detector service that is part of the Azure Decision services offerings."
+  ms.date: 01/28/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
