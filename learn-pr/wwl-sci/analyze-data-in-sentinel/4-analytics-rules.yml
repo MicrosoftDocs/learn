@@ -1,19 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.analyze-data-in-sentinel.4-analytics-rules
+title: Types of analytics rules
 metadata:
   title: Types of analytics rules
-  description: Identify different template rules to create analytic rules.
-  ms.date: 12/15/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  description: "Identify different template rules to create analytic rules."
+  ms.date: 01/27/2023
+  author: wwlpublish
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Types of analytics rules
 durationInMinutes: 5
 content: |
   [!include[](includes/4-analytics-rules.md)]
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
   - content: "Which one of the analytics rules can you customize with your own query rules?"
     choices:
