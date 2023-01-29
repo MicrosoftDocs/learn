@@ -1,8 +1,8 @@
-The C# compiler affords many conveniences as you write your code. It can infer your variable's data type by its initialized value. In this unit, you'll learn about this feature, called implicitly typed local variables.
+The C# compiler affords many conveniences as you write your code. It can infer your variable's data type by its initialized value. In this unit, you'll learn about this feature, called *implicitly typed local variables*.
 
 ## What are implicitly typed local variables?
 
-An implicitly typed local variable is created using the `var` keyword, which instructs the C# compiler to infer the type. After the type is inferred, it's the same as if the actual data type had been used to declare the variable.
+An implicitly typed local variable is created using the `var` keyword, which instructs the C# compiler to infer the type. After the type is inferred, it's the same as if you'd used the actual data type to declare the variable.
 
 In the following example, we'll declare a variable using the `var` keyword instead of the `string` keyword.
 

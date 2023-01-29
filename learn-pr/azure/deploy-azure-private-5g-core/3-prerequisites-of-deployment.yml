@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-azure-private-5g-core.prerequisites-of-deployment
+title: Prerequisites of deployment
+metadata:
+  title: Prerequisites of deployment
+  description: Provides you the prerequisites for Azure private 5G core deployment.
+  ms.date: 01/18/2023
+  author: ArchanaUpadhyaya
+  ms.author: archanau
+  ms.topic: interactive-tutorial
+  ms.service: learning-private-5g-core
+
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-prerequisites-of-deployment.md)]

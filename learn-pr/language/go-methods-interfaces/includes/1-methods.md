@@ -1,4 +1,4 @@
-A method in Go is a special type of function with a simple difference: you have to include an extra parameter before the function name. This additional parameter is known as the *receiver*. 
+A method in Go is a special type of function with a simple difference: you have to include an extra parameter before the function name. This extra parameter is known as the *receiver*. 
 
 Methods are useful when you want to group functions and tie them to a custom type. This approach in Go is similar to creating a class in other programming languages, because it allows you to implement certain features from the object-oriented programming (OOP) model, such as embedding, overloading, and encapsulation.
 
@@ -28,7 +28,7 @@ func (t triangle) perimeter() int {
 }
 ```
 
-The struct looks like a normal one, but the `perimeter()` function has an extra parameter of type `triangle` before the function name. This means that when you use the struct, you can call the function like this:
+The struct looks like a normal one, but the `perimeter()` function has an extra parameter of type `triangle` before the function name. This receiver means that when you use the struct, you can call the function like this:
 
 ```go
 func main() {
@@ -37,7 +37,7 @@ func main() {
 }
 ```
 
-If you try to call the `perimeter()` function as you ordinarily would, it won't work because the function's signature says that it needs a receiver. That's why the only way to call that method is to declare a struct first, which gives you access to the method. This means that you could even have the same name for a method as long as it belongs to a different struct. For instance, you could declare a `square` struct with a `perimeter()` function, like this:
+If you try to call the `perimeter()` function as you ordinarily would, it won't work because the function's signature says that it needs a receiver. The only way to call that method is to declare a struct first, which gives you access to the method. You could even have the same name for a method as long as it belongs to a different struct. For instance, you could declare a `square` struct with a `perimeter()` function, like this:
 
 ```go
 package main
@@ -75,11 +75,11 @@ Perimeter (triangle): 9
 Perimeter (square): 16
 ```
 
-From the two calls to the `perimeter()` function, the compiler determines which function to call based on the receiver type. This helps keep consistency and short names in functions among packages and avoids including the package name as a prefix. We'll talk about why this might be important when we cover interfaces in the next unit.
+From the two calls to the `perimeter()` function, the compiler determines which function to call based on the receiver type. This behavior helps keep consistency and short names in functions among packages and avoids including the package name as a prefix. We'll talk about why this behavior might be important when we cover interfaces in the next unit.
 
 ## Pointers in methods
 
-There will be times when a method needs to update a variable or, if the argument is too big, you might want to avoid copying it. In these instances, you need to use pointers to pass the address of a variable. In a previous module, when we discussed pointers, we said that every time you call a function in Go, Go makes a copy of each argument value to use it.
+There will be times when a method needs to update a variable. Or, if the argument to the method is too large, you might want to avoid copying it. In these instances, you need to use pointers to pass the address of a variable. In a previous module, when we discussed pointers, we said that every time you call a function in Go, Go makes a copy of each argument value to use it.
 
 The same behavior is present when you need to update the receiver variable in a method. For instance, let's say you want to create a new method to double the triangle size. You need to use a pointer in the receiver variable, like this:
 
@@ -107,7 +107,7 @@ Size: 6
 Perimeter: 18
 ```
 
-You don't need a pointer in the receiver variable when the method is merely accessing the receiver's information. However, Go convention dictates that if any method of a struct has a pointer receiver, all methods of that struct must have a pointer receiver, even if a method doesn't need it.
+You don't need a pointer in the receiver variable when the method is merely accessing the receiver's information. However, Go convention dictates that if any method of a struct has a pointer receiver, all methods of that struct must have a pointer receiver. Even if a method of the struct doesn't need it.
 
 ## Declare methods for other types
 
@@ -187,9 +187,9 @@ Notice that the receiver is `coloredTriangle`, which calls the `perimeter()` met
 
 ## Overload methods
 
-Let's return to the `triangle` example that we discussed earlier. What happens if you want to change the implementation of the `perimeter()` method in the `coloredTriangle` struct? You can't have two functions with the same name. However, because methods need an extra parameter (the receiver), you're allowed to have a method with the same name as long as it's specific to the receiver you want to use. That's how you overload methods.
+Let's return to the `triangle` example that we discussed earlier. What happens if you want to change the implementation of the `perimeter()` method in the `coloredTriangle` struct? You can't have two functions with the same name. However, because methods need an extra parameter (the receiver), you're allowed to have a method with the same name as long as it's specific to the receiver you want to use. Making use of this distinction is how you overload methods.
 
-In other words, you could write the wrapper method we've just discussed if you want to change its behavior. If the perimeter of a colored triangle is twice the perimeter of a normal triangle, the code would be something like this:
+In other words, you could write the wrapper method we discussed if you want to change its behavior. If the perimeter of a colored triangle is twice the perimeter of a normal triangle, the code would be something like this:
 
 ```go
 func (t coloredTriangle) perimeter() int {
@@ -239,7 +239,7 @@ As you might have noticed, in Go, you can *override* a method and still access t
 
 Encapsulation means that a method is inaccessible to the caller (client) of an object. Usually, in other programming languages, you place the `private` or `public` keywords before the method name. In Go, you need to use only a capitalized identifier to make a method public and an uncapitalized identifier to make a method private.
 
-Encapsulation in Go takes effect only between packages. In other words, you can hide only implementation details from another package, not the package itself.
+Encapsulation in Go takes effect only between packages. In other words, you can only hide implementation details from another package, not the package itself.
 
 To give it a try, create a new package `geometry` and move the triangle struct there, like this:
 

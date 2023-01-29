@@ -1,0 +1,28 @@
+
+## Resolution of module problem
+
+Contoso SecOps wanted to improve their response time to security incidents and prevent future incidents. Contoso decides to use Microsoft Sentinel playbooks, which are based on Logic Apps with a Microsoft Sentinel connector to provide near real-time responses.
+In this module, you learned how to create Sentinel playbooks that can respond in real time on a security thread. You also learned how to start a playbook on demand as response to investigation on a security alert.
+
+## Learn more
+
+You can learn more by reviewing the following documents.
+
+### Getting started
+
+- [Microsoft Sentinel documentation](/azure/sentinel?azure-portal=true)
+- [Quickstart: On-board Microsoft Sentinel](/azure/sentinel/quickstart-onboard?azure-portal=true)
+- [Microsoft Sentinel pricing](https://azure.microsoft.com/pricing/details/azure-sentinel?azure-portal=true)
+- [Permissions in Microsoft Sentinel](/azure/sentinel/roles?azure-portal=true)
+- [Tutorial: Visualize and monitor your data](/azure/sentinel/tutorial-monitor-your-data?azure-portal=true)
+- [Quickstart: Get started with Microsoft Sentinel](/azure/sentinel/quickstart-get-visibility?azure-portal=true)
+- [What is Azure Lighthouse?](/azure/lighthouse/overview?azure-portal=true)
+- [Extend Microsoft Sentinel across workspaces and tenants](/azure/sentinel/extend-sentinel-across-workspaces-tenants#cross-workspace-monitoring?azure-portal=true)
+- [What is Azure Resource Manager?](/azure/azure-resource-manager/management/overview?azure-portal=true)
+- [Azure Foundation 4-Week Implementation](https://azuremarketplace.microsoft.com/marketplace/consulting-services/servent.servent-azure-foundation?azure-portal=true)
+
+### Microsoft Sentinel agent
+
+- [Tutorial: Detect threats out-of-the-box](/azure/sentinel/tutorial-detect-threats-built-in?azure-portal=true)
+- [Connect data sources](/azure/sentinel/connect-data-sources?azure-portal=true)
+

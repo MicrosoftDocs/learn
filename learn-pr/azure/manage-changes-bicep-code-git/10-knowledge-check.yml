@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
-  ms.date: 07/29/2022
+  ms.date: 01/23/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: Which of these is a benefit of using version control?
+  - content: Which of these statements is a benefit of using version control?
     choices:
     - content: You can manage multiple environments with a single template by using branches.
       isCorrect: false
@@ -24,7 +24,7 @@ quiz:
       explanation: Correct. Version control enables you to track the changes to files and even roll back to a previous version.
     - content: You can create smaller reusable Bicep files.
       isCorrect: false
-      explanation: Incorrect. Bicep modules provide a way to create small, reusable Bicep files for specific purposes. You can then store these in a version control system like Git.
+      explanation: Incorrect. Bicep modules provide a way to create small, reusable Bicep files for specific purposes. You can then store these files in a version control system like Git.
   - content: You've been asked to try out a new Azure service. You're going to temporarily add it to a Bicep file that you've already created and added to your Git repository. What should you do?
     choices:
     - content: Create a new branch in your existing repository and make your changes on the branch.
@@ -55,6 +55,6 @@ quiz:
     - content: "`git pull`"
       isCorrect: false
       explanation: Incorrect. The `git pull` command retrieves the changes from a remote repository, but you have to set up your local repository first.
-    - content: "`git remote upstream add`"
+    - content: "`git remote add upstream`"
       isCorrect: false
       explanation: Incorrect. Because you're making a copy of a repository that's already on GitHub, you should use the `git clone` command.

@@ -29,7 +29,7 @@ $.getJSON(apiUrl, function (data) {
         }
 ```
 
-Once the data is returned in Well-Known Text (WKT) format, the function `plotWKT` simply gathers `data.geoFence` and `data.busData` and plots them accordingly. Part of that function is shown below.
+Once the data is returned in Well-Known Text (WKT) format, the function `plotWKT` simply gathers `data.geoFence` and `data.busData` and plots them accordingly. Part of that function is shown in the following code.
 
 ```html
 function plotWKT(data) {

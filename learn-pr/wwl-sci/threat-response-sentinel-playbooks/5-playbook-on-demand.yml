@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.threat-response-sentinel-playbooks.5-playbook-on-demand
+title: Run playbooks on demand
+metadata:
+  title: Run playbooks on demand
+  description: "Run playbooks to respond to existing incidents."
+  ms.date: 01/25/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-playbook-on-demand.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An administrator wants to attach a playbook to an existing incident and starts to investigate the incident. Which option should the administrator select to attach the playbook?"
+    choices:
+    - content: "New"
+      isCorrect: false
+      explanation: "No. The New option changes the status of the incident."
+    - content: "Unassigned"
+      isCorrect: false
+      explanation: "No. The Unassigned option assigns the incident to a user from your organization."
+    - content: "Name of the incident"
+      isCorrect: true
+      explanation: "Yes. When you select the name of the incident, you can start the process to run a playbook on demand in response to an existing incident."
+  - content: "You want to search for a suitable threat detection query or a workbook that you can use for your requirements. Where can you search for such items?"
+    choices:
+    - content: "Azure Architecture Center"
+      isCorrect: false
+      explanation: "The Azure Architecture Center provides best practices for running your workloads on Azure."
+    - content: "Microsoft Learn"
+      isCorrect: false
+      explanation: "Microsoft Learn is where everyone comes to learn and build new skills based on Microsoft technologies and products."
+    - content: "Microsoft Sentinel repository on GitHub"
+      isCorrect: true
+      explanation: "Microsoft Sentinel repository on GitHub contains out of the box detections, exploration queries, hunting queries, workbooks, and playbooks that will help you to secure your environment and hunt for threats."
