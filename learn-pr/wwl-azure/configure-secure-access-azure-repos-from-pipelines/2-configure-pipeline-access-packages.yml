@@ -2,7 +2,7 @@
 uid: learn.wwl.configure-secure-access-azure-repos-from-pipelines.configure-pipeline-access-packages
 title: Configure pipeline access to packages
 metadata:
-  title: configure-pipeline-access-packages
+  title: Configure pipeline access to packages
   description: "Configure pipeline access to packages."
   ms.date: 1/25/2023
   author: LuizMacedo

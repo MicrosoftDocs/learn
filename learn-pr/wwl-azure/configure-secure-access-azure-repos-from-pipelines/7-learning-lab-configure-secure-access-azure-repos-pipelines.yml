@@ -2,7 +2,7 @@
 uid: learn.wwl.configure-secure-access-azure-repos-from-pipelines.learning-lab-configure-secure-access-azure-repos-pipelines
 title: Learning Lab - Configure secure access to Azure Repos from pipelines
 metadata:
-  title: learning-lab-configure-secure-access-azure-repos-pipelines
+  title: Learning Lab - Configure secure access to Azure Repos from pipelines
   description: "Learning Lab - Configure secure access to Azure Repos from pipelines."
   ms.date: 1/25/2023
   author: LuizMacedo

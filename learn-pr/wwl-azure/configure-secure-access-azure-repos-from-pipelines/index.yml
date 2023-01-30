@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-secure-access-azure-repos-from-pipelines
 metadata:
-  title: configure-secure-access-azure-repos-from-pipelines
+  title: Configure secure access to Azure Repos from pipelines
   description: "Configure secure access to Azure Repos from pipelines."
   ms.date: 1/25/2023
   author: LuizMacedo
