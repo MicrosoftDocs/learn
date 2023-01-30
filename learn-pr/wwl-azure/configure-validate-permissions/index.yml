@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-validate-permissions
 metadata:
-  title: configure-validate-permissions
+  title: Configure and validate permissions
   description: "Configure and validate permissions."
   ms.date: 1/25/2023
   author: LuizMacedo
