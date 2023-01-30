@@ -12,6 +12,10 @@ In this module, you explored the features and usage cases for Azure Load Balance
 
 - Create an [internal load balancer for virtual machines in the Azure portal](/azure/load-balancer/quickstart-load-balancer-standard-internal-portal).
 
+- Compare [Azure Load Balancer SKUs](/azure/load-balancer/skus).
+
+- Explore the [Gateway Load Balancer](/azure/load-balancer/gateway-overview).
+
 ## Learn more with self-paced training
 
 - Complete an [introduction to Azure Load Balancer](/training/modules/intro-to-azure-load-balancer/).

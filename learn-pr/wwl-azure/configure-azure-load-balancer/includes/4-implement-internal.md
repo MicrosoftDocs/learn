@@ -10,12 +10,12 @@ Suppose you have an Azure SQL Database tier subnet with several virtual machines
 
 You can implement an internal load balancer to achieve several types of load balancing.
 
-- **Within a virtual network**: Establish load balancing from your virtual machines in the virtual network to a set of virtual machines that reside within the same virtual network.
+- **Within virtual network**: Establish load balancing from your virtual machines in the virtual network to a set of virtual machines that reside within the same virtual network.
 
-- **For a cross-premises virtual network**. Apply load balancing from your on-premises computers to a set of virtual machines that reside within the same virtual network.
+- **For cross-premises virtual network**: Apply load balancing from your on-premises computers to a set of virtual machines that reside within the same virtual network.
 
 - **For multi-tier applications**: Implement load balancing for your internet-facing multi-tier applications when the back-end tiers aren't internet-facing. The back-end tiers require traffic load-balancing from the internet-facing tier.
 
 - **For line-of-business applications**: Add load balancing for your line-of-business applications hosted in Azure without having to add other load balancer hardware or software. This scenario includes on-premises servers that are in the set of computers whose traffic is load-balanced.
 
-- **Combine with public load balancer**: Configure a public load balancer in front of your internal load balancer to create a multi-tier application.
+- **With public load balancer**: Configure a public load balancer in front of your internal load balancer to create a multi-tier application.
