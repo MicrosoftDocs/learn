@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-secure-access-pipeline-resources
 metadata:
-  title: configure-secure-access-pipeline-resources
+  title: Configure secure access to pipeline resources
   description: "Configure secure access to pipeline resources."
   ms.date: 1/25/2023
   author: LuizMacedo
