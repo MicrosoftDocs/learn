@@ -1,6 +1,9 @@
 
 Azure Quantum has a resource estimation tool that computes and outputs the resources required for a quantum algorithm, assuming it is executed on a fault-tolerant error-corrected quantum computer. The Azure Quantum Resource Estimator allows you to assess architectural decisions, compare qubit technologies, and determine the resources needed to execute a given quantum algorithm. You can see the total number of physical qubits, wall clock time, the computational resources required, and the details of the formulas and values used for each estimate. 
 
+> [!NOTE]
+> To date, available quantum computers aren't fault-tolerant, error-correcting quantum computers. The current state of quantum computers is defined as noisy intermediate-scale quantum computers, or NISQ. The Azure Quantum Resource Estimator assumes execution on a fault-tolerant quantum computer, thus it doesn't work on NISQ machines.
+
 The Azure Quantum Resource Estimator takes a [Quantum Intermediate Representation (QIR)](/azure/quantum/concepts-qir) program as input, so it supports any language that translates to QIR, such as Q# and Qiskit.
 
 ## How does the Azure Quantum Resource Estimator work? 
@@ -15,7 +18,7 @@ The Azure Quantum Resource Estimator takes a set of three inputs, with pre-defin
 
 The parameter `qubitParams` is used to specify qubit parameters. When modeling the physical qubit assumptions, there exist two different physical instruction sets that are used to operate the qubits. The physical instruction set can be either *gate-based* or *Majorana*. A gate-based instruction set provides single-qubit measurement, single-qubit gates (incl. T gates), and two-qubit gates. A Majorana instruction set provides a physical T gate, single-qubit measurement and two-qubit joint measurement operations.
 
-You can choose from six pre-defined qubit parameters, four of which have gate-based instruction sets and two with a Majorana instruction set. These qubit models cover a range of operation times and error rates, enabling sufficient exploration of the resource costs needed to enable practical quantum applications.
+You can choose from six pre-defined qubit parameters, four of which have gate-based instruction sets and two with a Majorana instruction set. These pre-defined qubit parameters represent different qubit architectures defined in published research articles, such as ions or superconductors. These qubit models cover a range of operation times and error rates, enabling sufficient exploration of the resource costs needed to enable practical quantum applications.
 
 | Pre-defined qubit parameters | Instruction set | References                                                                                                 |
 |------------------------------|-----------------|------------------------------------------------------------------------------------------------------------|
@@ -36,6 +39,7 @@ Pre-defined qubit parameters can be selected by specifying the `name` field in t
     }
 }
 ```
+For more information, see [Qubit parameters of the Azure Quantum Resource Estimator](/azure/quantum/overview-resources-estimator#physical-qubit-parameters).
 
 ### Quantum error correction schemes
 
@@ -52,20 +56,26 @@ The Azure Quantum Resource Estimator provides three pre-defined QEC schemes, two
 | `surface_code` | Majorana        | [arXiv:1909.03002](https://arxiv.org/abs/1909.03002), [arXiv:2007.00307](https://arxiv.org/abs/2007.00307) |
 | `floquet_code` | Majorana        | [arXiv:2202.11829](https://arxiv.org/abs/2202.11829)                                                       |
 
-Pre-defined QEC schemes can be selected by specifying the `name` field in the `qecScheme`. Pre-defined QEC schemes can also be customized by specifying the name and then updating any of the other values. For example, to increase the crossing pre-factor in the floquet code, write:
+Pre-defined QEC schemes can be selected by specifying the `name` field in the `qecScheme`. Pre-defined QEC schemes can also be customized by specifying the name and then updating any of the other values. For example, you can update the time to execute a single logical operation, which depends on the code distance and the physical operation time assumptions of the underlying physical qubits. To update `"logicalCycleTime"`, write:
+
+to increase the crossing pre-factor in the floquet code, write:
 
 ```JSON
 {
     "qecScheme": {
         "name": "floquet_code",
-        "crossingPrefactor": 0.08
+        "logicalCycleTime": "18 * oneQubitMeasurementTime * codeDistance"
     }
 }
 ```
 
+For more information, see [QEC in the Azure Quantum Resource Estimator](/azure/quantum/overview-resources-estimator#quantum-error-correction-schemes).
+
 ### Error budget 
 
 The total error budget sets the overall allowed error for the algorithm, i.e., the number of times it is allowed to fail. Its value must be between 0 and 1 and the default value is 0.001, which corresponds to 0.1%, and means that the algorithm is allowed to fail once in 1000 executions. This parameter is highly application specific. For example, if one is running Shor’s algorithm for factoring integers, a large value for the error budget may be tolerated as one can check that the output are indeed the prime factors of the input. On the other hand, a much smaller error budget may be needed for an algorithm solving a problem with a solution which cannot be efficiently verified. 
+
+For more information, see [Error budget in the Azure Quantum Resource Estimator](/azure/quantum/overview-resources-estimator#error-budget).
 
 ## What is the result of a resource estimation job?
 
