@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-project-repository-structure-support-secure-pipelines
 metadata:
-  title: configure-project-repository-structure-support-secure-pipelines
+  title: Configure a project and repository structure to support secure pipelines
   description: "Configure a project and repository structure to support secure pipelines."
   ms.date: 1/25/2023
   author: LuizMacedo

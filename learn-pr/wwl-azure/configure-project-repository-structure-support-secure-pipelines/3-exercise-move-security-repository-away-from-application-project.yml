@@ -2,7 +2,7 @@
 uid: learn.wwl.configure-project-repository-structure-support-secure-pipelines.exercise-move-security-repository-away-from-application-project
 title: Exercise - Move the security repository away from the application project
 metadata:
-  title: exercise-move-security-repository-away-from-application-project
+  title: Exercise - Move the security repository away from the application project
   description: "Exercise - Move the security repository away from the application project."
   ms.date: 1/25/2023
   author: LuizMacedo
