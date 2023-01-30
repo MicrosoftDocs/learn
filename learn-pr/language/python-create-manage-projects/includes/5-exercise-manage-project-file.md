@@ -118,6 +118,7 @@ Let's first simulate being on an earlier version of `python-dateutil`.
        Uninstalling python-dateutil-2.8.2:
          Successfully uninstalled python-dateutil-2.8.2
    Successfully installed python-dateutil-2.7.4
+   ```
 
    Now, you should be on version 2.7.4. Next, you want to try to upgrade to the latest patch version.
 

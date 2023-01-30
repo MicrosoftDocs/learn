@@ -15,15 +15,13 @@ Create a virtual environment by using `venv`.
 1. To activate the virtual environment, run the following command on Windows:
 
    ```console
-    # Windows
-    C:\ .. \env\Scripts\activate
+   C:\ .. \env\Scripts\activate
    ```
 
    Or, this command on Linux, WSL or macOS:
   
    ```bash
-    # Linux, WSL or macOS
-    source env/bin/activate
+   source env/bin/activate
    ```
 
    You now see `(env)` in your terminal. That means you've activated your virtual environment and isolated yourself from the rest of your machine.
