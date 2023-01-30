@@ -4,7 +4,7 @@ At this point, you know about virtual environments and how to install a package.
 
 You've seen how to use the command `pip freeze` to list the packages that are installed in your virtual environment. This command has more than one use, though. 
 
-Imagine that you want to collaborate on a project with other developers. A good way to collaborate is to, for example, use GitHub. You don't want to check in all the files you have, but only the application code and a list of packages that you depend on for the program to function. Why check in only a list of packages and not the packages themselves? A list takes a lot less space than checking in the packages. 
+Imagine that you want to collaborate on a project with other developers. A good way to collaborate is to, for example, use [GitHub](https://github.com/about?azure-portal=true). You don't want to check in all the files you have, but only the application code and a list of packages that you depend on for the program to function. Why check in only a list of packages and not the packages themselves? A list takes a lot less space than checking in the packages. 
 
 > [!NOTE]
 > Thanks to `pip`, all you need is a list.

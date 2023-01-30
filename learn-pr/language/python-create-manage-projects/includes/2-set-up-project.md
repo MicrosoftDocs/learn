@@ -154,7 +154,7 @@ You can also use the following commands to install a package:
 
 You now have a package installed. How do you use it in code? 
 
-Ensure that you have a directory for your files. We suggest that you call the directory *src* and add an entry-point Python file called *app.py*. Now add some code to call `pipdate`:
+Ensure that you have a directory for your files. We suggest that you call the directory *src* and add an entry-point Python file called *app.py*. Now add some code to call `dateutil`:
 
 ```python
 from datetime import *
@@ -165,4 +165,17 @@ print(now)
 now = now + relativedelta(months=1, weeks=1, hour=10)
 
 print(now)
+```
+
+Run the app:
+
+```console
+python newapp.py
+```
+
+The output should look something like this:
+
+```output
+2023-01-30 17:04:24.799976
+2023-03-07 10:04:24.799976
 ```
