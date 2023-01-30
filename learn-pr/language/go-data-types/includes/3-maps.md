@@ -24,7 +24,7 @@ When you run the preceding code, you see the following output:
 map[bob:31 john:32]
 ```
 
-If you don't want to initialize a map with items, you can use the built-in `make()` function to create a slice in the previous section. You could use the following code to create an empty map:
+If you don't want to initialize a map with items, you can use the built-in `make()` function to create the map in the previous section. You could use the following code to create an empty map:
 
 ```go
 studentsAge := make(map[string]int)
@@ -125,7 +125,7 @@ Christy's age is 0
 
 In many cases, it's fair that Go doesn't return an error when you access an item that doesn't exist in a map. But there are times where you need to know if an item exists or not. In Go, the subscript notation for a map can yield two values. The first one is the value of an item. The second one is a Boolean flag that indicates if the key exists or not.
 
-To fix the problem with the last code snippet, you could do the following:
+To fix the problem with the last code snippet, you could use the following code:
 
 ```go
 package main

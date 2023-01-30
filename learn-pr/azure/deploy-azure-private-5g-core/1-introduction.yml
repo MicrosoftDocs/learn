@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-azure-private-5g-core.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduces you to the Azure private 5G core network deployment.
+  ms.date: 01/18/2023
+  author: ArchanaUpadhyaya
+  ms.author: archanau
+  ms.topic: interactive-tutorial
+  ms.service: learning-private-5g-core
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

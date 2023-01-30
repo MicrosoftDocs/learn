@@ -22,10 +22,6 @@ on:
       reviewApiKey:
         required: true
 
-permissions:
-  id-token: write
-  contents: read
-
 jobs:
   validate:
      runs-on: ubuntu-latest

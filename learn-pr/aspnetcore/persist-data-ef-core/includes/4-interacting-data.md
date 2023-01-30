@@ -285,7 +285,7 @@ You've coded the CRUD operations for `PizzaService`, but it will be easier to te
     - [EnsureCreated](/ef/core/managing-schemas/ensure-created#ensurecreated) ensures the database exists.
 
         > [!IMPORTANT]
-        > `EnsureCreated` creates a new database if one doesn't exist. The new database is not configured for migrations, so use this with caution.
+        > `EnsureCreated` creates a new database if one doesn't exist. The new database isn't configured for migrations, so use this with caution.
 
     - The `DbIntializer.Initialize` method is called, passing the `PizzaContext` as a parameter.
 

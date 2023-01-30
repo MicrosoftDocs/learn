@@ -1,4 +1,4 @@
-Here, we'll discuss how you can decide if Microsoft Purview is the right choice for your data-governance and discovery needs. We'll list some criteria that indicate whether Microsoft Purview will meet your requirements.
+Here, we'll discuss how you can decide if Microsoft Purview is the right choice for your data-governance and discovery needs. Here are the criteria that indicate whether Microsoft Purview will meet your requirements:
 
 * Discovery
 * Governance
@@ -21,7 +21,7 @@ As the data in your organization grows, the task of discovering, protecting, and
 
 Compliance with company security policies, government regulations, and customer needs are critical considerations for data governance. Understanding which data sources contain sensitive information is key to knowing where protections are needed and how to guard against access to this sensitive data.
 
-:::image type="content" source="../media/classifications.png" alt-text="Screenshot depicting a small snippet of the System-provided classifications for metadata. You can find this list in the Management pane of the Microsoft Purview governance portal. Some items displayed are the ABA Routing Number, Age of individual, and Argentina National Identity (DNI) Number.":::
+:::image type="content" source="../media/classifications.png" alt-text="Screenshot depicting a small snippet of the system-provided classifications for metadata. You can find this list in the Management pane of the Microsoft Purview governance portal. Some items displayed are the ABA Routing Number, Age of individual, and Argentina National Identity (DNI) Number.":::
 
 ## Apply the criteria
 
@@ -31,7 +31,7 @@ Let's take a look at how Microsoft Purview can address the criteria mentioned.
 
 Do you require a solution or centralized location to register data sources? For the most part, users might be unaware of a data source unless they come into contact with it as part of another process. Microsoft Purview can help to provide a solution.
 
-Once you've registered data sources in the Microsoft Purview governance portal and displayed them in the data map, you can set up scanning of those data sources. The metadata returned helps the catalog the data found in those sources, making it easier for users to discover what the data sources contain. The metadata is also indexed to make each data source easily discoverable via search and understandable to the users who discover it.
+Once you've registered data sources in the Microsoft Purview governance portal and displayed them in the data map, you can set up scanning of those data sources. The metadata returned helps catalog the data found in those sources, making it easier for users to discover what the data sources contain. The metadata is also indexed to make each data source easily discoverable via search and understandable to the users who discover it.
 
 At the same time, users can contribute to the catalog by tagging, documenting, and annotating data sources that have already been registered. They can also register new data sources, which are then discovered, understood, and consumed by the community of catalog users.
 

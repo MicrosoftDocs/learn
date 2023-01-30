@@ -3,7 +3,7 @@ uid: learn.languages.csharp-basic-operations
 metadata:
   title: 'Perform basic operations on numbers in C#'
   description: Learn the operators and techniques used to perform basic math operations on numeric data.
-  ms.date: 08/24/2022
+  ms.date: 01/26/2023
   author: billwagner
   ms.author: wiwagn
   ms.topic: interactive-tutorial
@@ -11,10 +11,10 @@ metadata:
 title: Perform basic operations on numbers in C#
 summary: Learn the operators and techniques used to perform basic math operations on numeric data.
 abstract: |
-  In this module, you will:
-  - Perform mathematical operations on numeric values
-  - Observe implicit type conversion between strings and numeric values
-  - Temporarily convert one data type into another
+  In this module, you'll:
+  - Perform mathematical operations on numeric values.
+  - Observe implicit type conversion between strings and numeric values.
+  - Temporarily convert one data type into another.
 prerequisites: |
   - Beginner level experience with basic C# syntax rules
   - Beginner level experience with displaying a message to a console using the Console.WriteLine() and Console.Write() methods

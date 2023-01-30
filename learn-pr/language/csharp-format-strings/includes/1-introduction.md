@@ -6,7 +6,7 @@ From a high-level perspective, software developers are concerned with:
 
 In this module, we'll focus on that last concern. We'll work with string data, formatting it with alignment and spacing. We'll format data for presentation as currency and other numbers. By the end of this module, we'll have new tools we can use to output data to our users that conveys and clarifies its meaning.
 
-Suppose we work for a marketing department that will send thousands of personalized letters to our company's existing clients, who are institutional investors. Our team's job is to promote new financial products to the customer. Each letter we send will merge personalized information about the customer. It will compare the returns of their current portfolios with projected returns using our newest products. How will we merge and format the data correctly?
+Suppose we work for a marketing department that will send thousands of personalized letters to our company's existing clients, who are institutional investors. Our team's job is to promote new financial products to the customer. Each letter we send will merge personalized information about the customer. It'll compare the returns of their current portfolios with projected returns using our newest products. How will we merge and format the data correctly?
 
 In this module, you'll learn how to work with string and numeric data to solve real-world business problems in C#. You'll create a mockup of a receipt issued for products sold, and you'll merge data to send a personalized marketing message to customers.
 

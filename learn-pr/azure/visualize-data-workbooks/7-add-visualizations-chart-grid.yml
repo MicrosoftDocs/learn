@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.visualize-data-workbooks.add-visualizations-chart-grid
+title: Add visualizations to compare and analyze the data
+metadata:
+  title: Add visualizations to compare and analyze the data
+  description: Use Azure Workbooks to query data from multiple data sources and use visualizations such as graphs, charts, and grids to build visual reports for data analysis and reporting.
+  ms.date: 10/27/2022
+  author: AbbyMSFT
+  ms.author: abbyweisberg
+  ms.topic: interactive-tutorial
+  ms.prod: azure-monitor
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-add-visualizations-chart-grid.md)]
