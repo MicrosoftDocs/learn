@@ -37,7 +37,7 @@ The Microsoft global wide area network (WAN) plays an essential part in deliveri
 
 Azure traffic between our datacenters stays on our network and doesn't flow over the Internet. This includes all traffic between Microsoft services anywhere in the world. For example, within Azure, traffic between virtual machines, storage, and SQL communication traverses only the Microsoft network, regardless of the source and destination region. Intra-region VNet-to-VNet traffic, and cross-region VNet-to-VNet traffic, stay on the Microsoft network, giving us more control.
 
-![A picture of the world with the Azure network shown with connections under the ocean.](../media/network.png)
+![An image of the world with the Azure network shown with connections under the ocean.](../media/network.png)
 
 ### Availability Zones
 
