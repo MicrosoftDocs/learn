@@ -24,4 +24,4 @@ The following table provides a brief comparison of how features are implemented 
 | **Health probes** | HTTP, TCP | HTTPS, HTTP, TCP |
 | **Availability zones** | Not available | Zone-redundant and zonal frontends for inbound and outbound traffic |
 | **Multiple frontends** | Inbound only | Inbound and outbound |
-| **Security** | - Open by default <br><br> - (Optional) Control through network security groups (NSGs) | - Closed to inbound flows unless allowed by an NSG <br><br> - Internal traffic from the virtual network to the internal load balancer is allowed |
+| **Security** | - Open by default <br> - (Optional) Control through network security groups (NSGs) | - Closed to inbound flows unless allowed by an NSG <br> - Internal traffic from the virtual network to the internal load balancer is allowed |

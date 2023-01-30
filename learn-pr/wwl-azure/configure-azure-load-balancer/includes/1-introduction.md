@@ -12,7 +12,8 @@ In this module, you learn how to:
 
 - Identify features and usage cases for Azure Load Balancer.
 - Implement public and internal Azure load balancers.
-- Configure load balancer SKUs, back-end pools, session persistence, and health probes.
+- Compare features of load balancer SKUs and configuration differences.
+- Configure back-end pools, load-balancing rules, session persistence, and health probes.
 
 ## Skills measured
 
