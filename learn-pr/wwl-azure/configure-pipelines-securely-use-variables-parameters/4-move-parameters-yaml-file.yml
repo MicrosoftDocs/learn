@@ -2,7 +2,7 @@
 uid: learn.wwl.configure-pipelines-securely-use-variables-parameters.move-parameters-yaml-file
 title: Move parameters into a YAML file
 metadata:
-  title: move-parameters-yaml-file
+  title: Move parameters into a YAML file
   description: "Move parameters into a YAML file."
   ms.date: 1/25/2023
   author: LuizMacedo

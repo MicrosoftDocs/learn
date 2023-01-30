@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-pipelines-securely-use-variables-parameters
 metadata:
-  title: configure-pipelines-securely-use-variables-parameters
+  title: Configure pipelines to securely use variables and parameters
   description: "Configure pipelines to securely use variables and parameters."
   ms.date: 1/25/2023
   author: LuizMacedo
