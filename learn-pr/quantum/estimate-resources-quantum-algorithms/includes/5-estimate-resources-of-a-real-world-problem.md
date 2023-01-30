@@ -17,6 +17,13 @@ You'll calculate the resource estimates for the factoring of a 2048-bit integer.
 
 ### Getting started
 
+Create a new Notebook in your workspace as you did in the previous step. 
+
+1. In the left blade, select **Notebooks**.
+1. Click **My Notebooks** and click **Add New**.
+1. In **Kernel Type**, select **IPython**.
+1. Type a name for the file, for example *factoringResourceEstimator.ipynb*, and click **Create file**.
+
 First, we need to import several Python classes and functions from `azure.quantum` and `qiskit`. Note that we are not using Qiskit to build quantum circuits, however, we are leveraging `AzureQuantumJob` and `job_monitor` which are built on top of the Qiskit ecosystem.
 
 ```python
