@@ -43,7 +43,7 @@ Azure traffic between our datacenters stays on our network and doesn't flow over
 
 An [Availability Zone](/azure/availability-zones/az-overview?azure-portal=true) is a high-availability offering that protects your applications and data from data center failures. Availability Zones are unique physical locations within an Azure region. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking.
 
-To ensure resiliency, there's a minimum of three separate zones in all enabled regions. The physical separation of Availability Zones within a region protects applications and data from datacenter failures. Zone-redundant services replicate your applications and data across Availability Zones to protect from single-points-of-failure. With Availability Zones, Azure offers an industry best 99.99% VM uptime SLA. The complete [Azure SLA](https://azure.microsoft.com/support/legal/sla/?azure-portal=true) explains the guaranteed availability of Azure as a whole.
+To ensure resiliency, there's a minimum of three separate zones in all enabled regions. The physical separation of Availability Zones within a region protects applications and data from datacenter failures. Zone-redundant services replicate your applications and data across Availability Zones to protect from single-points-of-failure. With Availability Zones, Azure offers an industry best 99.99% VM uptime. The complete [Azure SLA](https://azure.microsoft.com/support/legal/sla/?azure-portal=true) explains the guaranteed availability of Azure as a whole.
 
 ![Diagram showing a web application and SQL servers in three availability zones.](../media/zones.png)
 

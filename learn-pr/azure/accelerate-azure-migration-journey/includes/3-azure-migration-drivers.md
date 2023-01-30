@@ -119,7 +119,7 @@ Moving to the cloud increases your agility with an infrastructure that scales to
 
 Several industries such as healthcare, insurance, and banking are experiencing considerable growth, but many organizations within these verticals are finding it difficult to keep pace with significant surges in demand.
 
-By moving to managed services in the cloud, organizations can modernize their business-critical applications and take advantage of managed services such as [Azure App Service](https://azure.microsoft.com/services/app-service/?azure-portal=true) and [Azure SQL Database Managed Instances](https://azure.microsoft.com/services/azure-sql/sql-managed-instance/?azure-portal=true) to reduce operational tasks and focus scarce resources on higher value work.
+By moving to managed services in the cloud, organizations can modernize their business-critical applications and take advantage of managed services such as [Azure App Service](https://azure.microsoft.com/services/app-service/?azure-portal=true) and [Azure SQL Managed Instances](https://azure.microsoft.com/services/azure-sql/sql-managed-instance/?azure-portal=true) to reduce operational tasks and focus scarce resources on higher value work.
 
 ### Application innovation
 
