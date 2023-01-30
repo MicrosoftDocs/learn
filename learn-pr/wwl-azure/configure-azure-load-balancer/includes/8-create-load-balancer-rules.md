@@ -8,7 +8,7 @@ Let's take a closer look at how to configure load-balancing rules for your back-
 
 - To configure a load-balancing rule, you need to have a frontend, backend, and health probe for your load balancer.
 
-- You define a rule in the Azure portal by configuring several settings, including:
+- To define a rule in the Azure portal, you configure several settings:
    - **IP version** (IPv4 or IPv6)
    - **Front-end IP address**, **Port*, and **Protocol** (TCP or UDP)
    - **Back-end pool** and **Back-end port**
@@ -27,7 +27,7 @@ Let's take a closer look at how to configure load-balancing rules for your back-
    - **Client IP and protocol**: Successive requests from the same client IP address and protocol combination are handled by the same virtual machine.
 
    > [!NOTE]
-   > Maintaingin session persistence information is important for applications that implement a shopping cart. Can you think of other applications that might benefit from session persistence?
+   > Maintaining session persistence information is important for applications that implement a shopping cart. Can you think of other applications that might benefit from session persistence?
 
 - Load-balancing rules can be used in combination with NAT rules.
 

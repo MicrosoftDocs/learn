@@ -12,7 +12,7 @@ There are two main ways to configure a custom health probe: **HTTP** and **TCP**
 
 - A **TCP probe** relies on establishing a successful TCP session to a defined probe port. If the specified listener on the virtual machine exists, the probe succeeds. If the connection is refused, the probe fails.
 
-- To configure a probe, specify values for the following settings:
+- To configure a probe, you specify values for the following settings:
    - **Port**: Back-end port
    - **URI**: URI for requesting the health status from the backend
    - **Interval**: Amount of time between probe attempts (default is 15 seconds)
