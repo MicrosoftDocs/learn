@@ -17,11 +17,10 @@ abstract: |
     - Handle events in the lifecycle of Blazor components.
     - Create reusable components that can be incorporated into Blazor Server apps using templates
 prerequisites: |
-  - Familiarity with HTML and CSS in web development.
-  - Familiarity with JavaScript syntax.
+  - Familiarity with HTML, CSS, and JavaScript web development.
   - Ability to write C# code at a novice level.
-  - Ability to create a Blazor web application.
-  - Ability to create Blazor components, forms, and layouts.
+  - [.NET SDK](https://dotnet.microsoft.com/download/dotnet/7.0).
+  - IDE of choice (shown with [VS Code](https://code.visualstudio.com)).
 iconUrl: /training/achievements/build-interactive-components-blazor-web-apps.svg
 levels:
   - intermediate
@@ -34,7 +33,6 @@ products:
   - aspnet-core
 subjects:
   - cloud-computing
-  - deftones
 units:
   - learn.build-interactive-components-blazor-web-apps.introduction
   - learn.build-interactive-components-blazor-web-apps.use-javascript-libraries-blazor-apps
