@@ -249,4 +249,4 @@ We see that in the worst scenario, a hacker using gate-based µs qubits, that is
 
 If we use a different qubit technology, for example gate-based ns ion qubits and the same surface code, the number of qubits doens't change much but the runtime became 2 days in the worst case and 18 hours in the optimistic case. If we change the qubit technology and the QEC code, for example, with Majorana-based qubits, factoring a 2048-bit integer using Shor’s algorithm could be done in hours with an array of 6.25 millions of qubits in the best case scenario. 
 
-We can conclude that using Majorana qubits and a Floquet QEC code is the best choice to execute Shor's algorithm and factor a 2048-bit integer password. The space fleet should prepare for future quantum hackers, or work and be ready to hack our space enemies. 
+We can conclude that using Majorana qubits and a Floquet QEC code is the best choice to execute Shor's algorithm and factor a 2048-bit integer password. The space fleet should prepare for future quantum hackers, and even better, be ready to hack our space enemies ourselves!  
