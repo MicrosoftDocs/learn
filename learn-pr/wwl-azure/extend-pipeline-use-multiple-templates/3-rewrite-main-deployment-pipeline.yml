@@ -2,7 +2,7 @@
 uid: learn.wwl.extend-pipeline-use-multiple-templates.rewrite-main-deployment-pipeline
 title: Rewrite the main deployment pipeline
 metadata:
-  title: rewrite-main-deployment-pipeline
+  title: Rewrite the main deployment pipeline
   description: "Rewrite the main deployment pipeline."
   ms.date: 1/25/2023
   author: LuizMacedo
