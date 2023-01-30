@@ -11,7 +11,7 @@ The cloud delivers fundamental technology benefits that can help your enterprise
 
 ## Optimize costs
 
-Datacenters are expensive. The costs of real estate, power, servers, storage, networks, and operations staff affect a company's bottom line. When customers migrate to modernize workloads in Azure, they convert upfront capital expenditures to operating expenditures that can be paid over time. Your cash flow is improved by only paying for what you need. You can also achieve cost savings and efficiency.
+Data centers are expensive. The costs of real estate, power, servers, storage, networks, and operations staff affect a company's bottom line. When customers migrate to modernize workloads in Azure, they convert upfront capital expenditures to operating expenditures that can be paid over time. Your cash flow is improved by only paying for what you need. You can also achieve cost savings and efficiency.
 
 ![Graph showing the difference between Pay as you go Azure resources and Reserved Instance pricing.](../media/optimize-it-spend.png)
 
