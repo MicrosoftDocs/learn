@@ -20,7 +20,6 @@ abstract: |
 prerequisites: |
   - None
 iconUrl: /training/achievements/generic-trophy.svg
-hidden: true
 levels:
   - intermediate
 roles:
