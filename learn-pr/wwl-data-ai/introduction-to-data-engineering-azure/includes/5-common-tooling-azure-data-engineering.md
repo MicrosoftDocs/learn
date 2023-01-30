@@ -18,7 +18,7 @@ In addition to programming languages, data engineers in Azure also use a variety
 
 ### Data Pipeline Tools
 
-- **Azure Data Factory:** A fully-managed data integration service that allows data engineers to create, schedule, and manage data pipelines.
+- **Azure Data Factory:** A fully managed data integration service that allows data engineers to create, schedule, and manage data pipelines.
 
 - **Azure Stream Analytics:** A real-time data stream processing service that allows data engineers to perform complex data processing and analytics tasks on data streams.
 
@@ -28,14 +28,14 @@ In addition to programming languages, data engineers in Azure also use a variety
 
 - **Azure Synapse Analytics:** A cloud-based data integration, analytics, and data warehousing service that allows data engineers to create, schedule, and manage data pipelines.
 
-### Data Governanace
+### Data governanace
 
 - **Azure Purview:** A data governance solution that allows data engineers to discover, understand, and govern data across various data sources.
 
 ### Storage
 
 - **Azure Data Lake** Still referred to as Gen 2, but has hierarchical support that provides support for analytical data stored in a file based format, can include CSV, Avro, Parquet, and others.
-- Is a distributed file system built upon webHDFS for massive scalability.
+- Azure data lake is a distributed file system built upon the hadoop data file system (HDFS).
 
 ### Streaming Data
 
