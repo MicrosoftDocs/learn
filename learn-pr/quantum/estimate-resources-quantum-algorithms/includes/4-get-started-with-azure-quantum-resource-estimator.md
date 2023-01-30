@@ -76,7 +76,7 @@ operation EstimateMultiplication(bitwidth : Int) : Unit {
 
 ## Estimating the algorithm
 
-In order to estimate an operation using the Azure Quantum Resource Estimator target, it cannot take any input arguments and must have a `Unit` return value. We can simply create a new instance for a specific bit width, for example 8 in this case.
+In order to estimate an operation using the Azure Quantum Resource Estimator target, it must have a `Unit` return value. We can simply create a new instance for a specific bit width, for example 8 in this case.
 
 ```python
 %%qsharp
@@ -86,7 +86,7 @@ operation EstimateMultiplication8() : Unit {
 }
 ```
 > [!IMPORTANT]
-> To submit a Q# operation to the Azure Quantum Resource Estimator target, it can't take any input arguments and must have a `Unit` return value. 
+> To submit a Q# operation to the Azure Quantum Resource Estimator target, it must have a `Unit` return value. 
 
 Let's now estimate the physical resources for this operation using the default assumptions. We can submit the operation to the resource estimation target using the `qsharp.azure.execute` function. This will output a table with the overall physical resource counts. You can further inspect more details about the resource estimates by collapsing various groups, which have more information.
 
