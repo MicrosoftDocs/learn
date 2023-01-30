@@ -3,7 +3,7 @@ In quantum computing, resource estimation is the ability to understand the resou
 
 ## Why is resource estimation important in the development of quantum computing?
 
-Quantum computers promise to solve some scientifically and commercially valuable problems, and accomplishing this will require a large-scale, fault-tolerant quantum computer. That is, a quantum computer capable of allowing a large number of qubits, in superposition, and with a physical error rate below a certain threshold such that through the application of quantum error correction (QEC) schemes, protect quantum information from errors due to decoherence and other quantum noise.
+Quantum computers promise *quantum advantage* to solve some scientifically and commercially valuable problems outperforming any classical computer. Accomplishing this quantum advantage will require a large-scale, fault-tolerant quantum computer. That is, a quantum computer capable of allowing a large number of qubits, in superposition, and with a physical error rate below a certain threshold such that through the application of quantum error correction (QEC) schemes, protect quantum information from errors due to decoherence and other quantum noise.
 
 Quantum operations at the physical level are noisy, and so the long computations required for practical quantum advantage necessarily require error correction to achieve fault tolerance. Quantum error correction is both time and space intensive, requiring increased execution time for an algorithm-level, or logical-level, operation and an additional number of physical qubits to store and compute information at the logical level.
 
