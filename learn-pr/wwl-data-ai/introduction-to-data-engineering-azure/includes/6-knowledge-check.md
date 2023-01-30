@@ -1,45 +1,20 @@
 
-quiz title: Knowledge check
+
+Choose the best response for each of the questions, then select **Check your answers**.
 
 ## Multiple Choice
-Which approach is the preferred method of getting data into a cloud destination for consumption by users?
 
-( ) Extract, Transform, and Load (ETL) {{Incorrect. Although this approach will work, the primary goal is to first get the on-premises data into the cloud and then use the power of distributed architectures to perform the heavy lifting.}}
+Azure Data Lake Storage Gen2 stores data in…
 
-(x) Extract, Load, and Transform (ELT) {{Correct. The major hurdle most organizations have is the compute power for transforming large amounts of data. By loading the data into the cloud first, the organization can leverage different compute architectures that best meets their needs.}}
-
-( ) Transform, Extract, and Load (TEL) {{Incorrect. This approach leaves the heavy lifting of data on-premises and still requires hardware and personnel to support the hardware and software on-premises.}}
-
-## Multiple Choice
-What is the most popular language used by data engineers in Azure to extract and transform data?
-
-(x) SQL {{Correct. SQL is still the most popular language used for extraction and transformation due to its large user base across open-source and commercial software }}
-
-( ) Python {{Incorrect. Although Python is growing in popularity in the data engineering world, SQL is still the most predominant language to extract and transform data }}
-
-( ) Scala {{Incorrect. Scala is a very popular language among data engineers on the open source side and its adoption is increasing in commerical software but it is still not as widely adopted as SQL}}
-
-( ) .NET {{Incorrect. Although .NET can be used for extract and transform, it is typically relegated to more complex operations involving integration with external systems}}
-
+() A document database hosted in Azure Cosmos DB {{That's incorrect. CosmsosDB is a globally distributed NoSQL document store.}}  
+(x) An HDFS-compatible file system hosted in Azure Storage {{That's correct. This is typically going to be your best storage mechanism and can store any type of data. It is supports all of Azure's services.}}  
+() A relational data warehouse hosted in Azure Synapse Analytics {{That's incorrect. This would 
+not be an optimal mechanism for housing data for many systems, such as IaaS instances.}}
 
 ## Multiple Choice
-Which Azure service allows data engineers to perform complex data processing and analytics tasks on data streams?
 
-( ) Azure Data Factory
+What option must you enable to use Azure Data Lake Storage Gen2?
 
-(x) Azure Stream Analytics {{Correct. }}
-
-( ) Azure Databricks
-
-( ) Azure Synapse Analytics
-
-## Multiple Choice
-Which Azure service allows data engineers to create, schedule, and manage data pipelines?
-
-( ) Azure Data Factory (correct answer)
-
-( ) Azure Stream Analytics (correct answer)
-
-( ) Azure Databricks
-
-(x) Both a and b (correct answer) {{Correct. }}
+() Global replication {{That's incorrect. Global replication will not enable the storage service to be built as a data lake.}}  
+()Data encryption {{That's incorrect. setting data encryption will not enable the storage service to be built as a data lake}}  
+(x)Hierarchical namespace {{That's correct. This option is provided in the advanced settings of the storage account setup.}}
