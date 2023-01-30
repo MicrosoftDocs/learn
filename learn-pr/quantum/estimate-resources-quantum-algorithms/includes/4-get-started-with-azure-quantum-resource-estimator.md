@@ -5,20 +5,40 @@ The Azure Quantum Resource Estimator is a useful tool that allows a wide variety
 
 First, you need to enable the Azure Quantum Resource Estimator tool in your Azure Quantum workspace.
 
-1. Log in to the [Azure portal](https://portal.azure.com/) and select the workspace you created in the previous step.
+1. Log in to the [Azure portal](https://portal.azure.com/) and select your Azure Quantum workspace.
 1. On the left panel, under **Operations**, select **Providers**.
 1. Select **+ Add a provider**.
 1. Select **+ Add** for **Microsoft Quantum Computing**.
 1. Select **Learn & Develop** and select **Add**.
 
+## Create a new Notebook in your workspace
+
+1. Sign in to the [Azure portal](https://portal.azure.com) and select your Azure Quantum workspace.
+1. Select **Notebooks**.
+1. Select **My notebooks** and click **Add new** to create a new Jupyter notebook.
+1. In **Kernel Type**, select **IPython**.
+1. Type a name for the file, for example *quickstartResourceEstimator.ipynb*, and click **Create file**.
+
+When your new Notebook opens, it automatically creates the code for the first cell, based on your subscription and workspace information.
+
+```python
+from azure.quantum import Workspace
+workspace = Workspace (
+    subscription_id = <your subscription ID>, 
+    resource_group = <your resource group>,   
+    name = <your workspace name>,          
+    location = <your location>        
+    )
+```
 
 ## Getting started 
 
-Let's connect to the Azure Quantum workspace and select the Azure Quantum Resource Estimator as target. We are also importing the `Microsoft.Quantum.Numerics` package that we will require for our example algorithm.
+First, we connect to the Azure Quantum workspace and select the Azure Quantum Resource Estimator as target. We are also importing the `Microsoft.Quantum.Numerics` package that we will require for our example algorithm. 
+
+Click **+ Code** to add a new cell, then add and run the following code: 
 
 ```python
 import qsharp
-
 import qsharp.azure  # Connect to your Azure Quantum workspace
 targets = qsharp.azure.connect(
    resourceId="", # The resourceID of your workspace
@@ -28,8 +48,13 @@ qsharp.packages.add("Microsoft.Quantum.Numerics") #Import Microsoft.Quantum.Nume
 qsharp.azure.target("microsoft.estimator") # Select the Azure Quantum Resource Estimator as target
 ```
 
-As we said, as a running example you're creating a multiplier using the [MultiplyI](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyi) operation.  You can configure the size of the multiplier with a bit width parameter. The operation have two input registers with that bit width, `factor1` and `factor2`, and one output register with the size of twice the bit width, `product`.
+> [!NOTE]
+> The location and resource ID of your workspcae can be found in the **Overview** tab of your Azure Quantum workspace. 
+>  :::image type="content" source="../media/azure-quantum-resource-id.png" alt-text="Screenshot of the overview blade of a workspace in Azure portal. Location and resource ID are marked inside a red rectangle.":::
 
+As we said, as a running example you're creating a multiplier using the [MultiplyI](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyi) operation. You can configure the size of the multiplier with a bit width parameter. The operation have two input registers with that bit width, `factor1` and `factor2`, and one output register with the size of twice the bit width, `product`.
+
+Click **+ Code** to add a new cell.
 
 ```python
 
@@ -126,7 +151,7 @@ result_maj_floquet_e1 = qsharp.azure.execute(EstimateMultiplication8,
 result_maj_floquet_e1
 ```
 
-Using this qubit technology and architecture, with an error budget of 10% we would need 4620 physical qubits.
+Using this qubit technology and architecture, with an error budget of 10% we would need 4620 physical qubits. This shows that fewer physical qubits are needed, if a higher error rate is acceptable, but if accuracy is important, then more physical qubits are needed to account for error correction.
 
 
 In the next part, you'll create a quantum algorithm for factoring a large number, and you'll estimate the resources required to run it on a fault-tolerant quantum computer. 
