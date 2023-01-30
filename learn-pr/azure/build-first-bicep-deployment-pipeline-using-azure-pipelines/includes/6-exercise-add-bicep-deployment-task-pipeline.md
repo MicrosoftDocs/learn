@@ -109,7 +109,7 @@ Next, update your pipeline definition to deploy your Bicep file to Azure by usin
    | _ResourceGroupName_ | _ToyWebsite_ |
    | _EnvironmentType_   | _nonprod_    |
 
-1. Complete the steps one more time to create a variable named _DeployToyManualsStorageAccount_, with a value of _true_. For this variable, select the **Let users override this value when running this pipeline** checkbox.
+1. Complete the steps again to create a variable named _DeployToyManualsStorageAccount_, with a value of _true_. For this variable, select the **Let users override this value when running this pipeline** checkbox.
 
    :::image type="content" source="../media/6-edit-pipeline-variable-deploytoymanualsstorageaccount.png" alt-text="Screenshot of Azure DevOps that shows the pipeline variable editor.":::
 

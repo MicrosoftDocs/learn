@@ -22,8 +22,8 @@ In this exercise, you'll:
 
 1. In the **Create a project to get started** pane, enter the following details for your new project:
 
-    - **Project name**: Use a meaningful but short name. For this exercise, enter **toy-website**.
-    - **Description**: Enter a description of the project's purpose.
+    - **Project name**: Use a meaningful but short name. For this exercise, enter _toy-website_.
+    - **Description**: Enter a description of the project's purpose. For this exercise, enter _Toy company website.
     - **Visibility**: You can use Azure DevOps to create public and private repositories. In this case, the repository should be private because your company website files should be accessed only by people within your organization. You can grant access to other users later.
 
     Your project configuration should look like this example:
@@ -46,7 +46,9 @@ In this exercise, you'll:
 
 1. If a dialog box appears, prompting you to allow an extension to open the repository URI, select **Open**.
 
-1. Create a folder on your local device to use for this repository, and then select **Select Repository Location**.
+1. Create a folder on your local device to use for this repository, and then select **Select as Repository Location**.
+
+   A folder named _toy-website_ is created in the location you selected.
 
 1. If you're using this repository for the first time, you're prompted to sign in.
 
@@ -55,6 +57,8 @@ In this exercise, you'll:
     For macOS, enter the Git username and password that you generated a few moments ago.
 
 1. Visual Studio Code prompts you to open the repository. Select **Open**.
+
+   The _toy-website_ folder is opened in Visual Studio Code.
 
     :::image type="content" source="../../includes/media/open-cloned-repo.png" alt-text="Screenshot of Visual Studio Code dialog box to open the cloned repository, with the Open button highlighted.":::
 
