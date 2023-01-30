@@ -2,42 +2,51 @@
 
 Data engineers in Microsoft Azure typically use a variety of programming languages and tools to build and manage data pipelines. Some of the most popular programming languages used in Azure are:
 
-1. **SQL:** SQL is a popular language used to extract and transform data from various sources such as databases, data lakes, and cloud services. SQL is used to write queries to extract data and perform data cleaning and transformation tasks.
+### Common scripting languages
 
-2. **Python:** Python is a popular language for data engineers in Azure due to its large ecosystem of libraries and frameworks for data processing and machine learning. Popular libraries and frameworks used in Azure include Pandas, NumPy, and PySpark.
+- **SQL:** SQL is a popular language used to extract and transform data from various sources such as databases, data lakes, and cloud services. SQL is used to write queries to extract data and perform data cleaning and transformation tasks.
 
-3. **Scala:** Scala is a popular language used in Azure Databricks, which is a powerful big data analytics platform that allows data engineers to process large amounts of data in parallel.
+- **Python:** Python is a popular language for data engineers in Azure due to its large ecosystem of libraries and frameworks for data processing and machine learning. Popular libraries and frameworks used in Azure include Pandas, NumPy, and PySpark.
 
-4. **.NET:** .Net is a popular language used by data engineers in Azure to build and manage data pipelines using Azure Data Factory, and also to write custom code in the pipelines using the .NET SDK.
+- **Scala:** Scala is a popular language used in Azure Databricks, which is a powerful big data analytics platform that allows data engineers to process large amounts of data in parallel.
 
-5. **Java:** Java is a popular language used by data engineers in Azure to build and manage data pipelines using Azure Data Factory, and also to write custom code in the pipelines using the Java SDK.
+- **.NET:** .Net is a popular language used by data engineers in Azure to build and manage data pipelines using Azure Data Factory, and also to write custom code in the pipelines using the .NET SDK.
+
+- **Java:** Java is a popular language used by data engineers in Azure to build and manage data pipelines using Azure Data Factory, and also to write custom code in the pipelines using the Java SDK.
 
 In addition to programming languages, data engineers in Azure also use a variety of tools and services to build and manage data pipelines, such as:
 
-1. **Azure Data Factory:** A fully-managed data integration service that allows data engineers to create, schedule, and manage data pipelines.
+### Data Pipeline Tools
 
-2. **Azure Stream Analytics:** A real-time data stream processing service that allows data engineers to perform complex data processing and analytics tasks on data streams.
+- **Azure Data Factory:** A fully-managed data integration service that allows data engineers to create, schedule, and manage data pipelines.
 
-3. **Azure Databricks:** A powerful big data analytics platform that allows data engineers to process large amounts of data in parallel using Spark.
+- **Azure Stream Analytics:** A real-time data stream processing service that allows data engineers to perform complex data processing and analytics tasks on data streams.
 
-4. **Azure Synapse Analytics:** A cloud-based data integration, analytics, and data warehousing service that allows data engineers to create, schedule, and manage data pipelines.
+### Data Collaboration tools
 
-5. **Azure Purview:** A data governance solution that allows data engineers to discover, understand, and govern data across various data sources.
+- **Azure Databricks:** A powerful big data analytics platform that allows data engineers to process large amounts of data in parallel using Spark.
 
-### More about Azure Synapse Analytics and Pipelines
-Azure Synapse Analytics (formerly known as SQL Data Warehouse) is a cloud-based data integration, analytics, and data warehousing service provided by Microsoft Azure. One of the key features of Azure Synapse Analytics is the ability to create data pipelines.
+- **Azure Synapse Analytics:** A cloud-based data integration, analytics, and data warehousing service that allows data engineers to create, schedule, and manage data pipelines.
 
-Azure Synapse Analytics Pipelines is a feature that allows data engineers to create, schedule, and manage data integration and data flow tasks. These pipelines can be used to move, transform, and integrate data from various sources such as databases, data lakes, and cloud services.
+### Data Governanace
 
-The pipelines are built using a drag-and-drop interface and it also supports code-first development using SQL or .Net language. The pipeline can be easily integrated with other Azure services like Azure Data Factory, Azure Stream Analytics, and Azure Databricks for more advanced data processing and analytics tasks.
+- **Azure Purview:** A data governance solution that allows data engineers to discover, understand, and govern data across various data sources.
 
-These pipelines can be easily scheduled and managed, with the ability to monitor and troubleshoot the pipeline runs, and also the ability to trigger pipeline runs based on events or on a schedule.
+### Storage
 
-Azure Synapse Analytics Pipelines can be used to build a wide range of data integration and data flow tasks such as:
-- Extracting data from various sources such as databases, data lakes, and cloud services.
-- Transforming and cleaning data using SQL or .Net code.
-- Loading data into target data stores such as Azure Data Lake Storage, Azure SQL Database, and Azure Cosmos DB.
-- Enabling data integration and data flow tasks between various systems and services.
-- Creating data pipelines that can handle large volumes of data with high performance and scalability.
+- **Azure Data Lake** Still referred to as Gen 2, but has hierarchical support that provides support for analytical data stored in a file based format, can include CSV, Avro, Parquet, and others.
+- Is a distributed file system built upon webHDFS for massive scalability.
 
-By using Azure Synapse Analytics Pipelines, data engineers can easily create and manage data integration and data flow tasks, and can also easily schedule and monitor the pipelines. This allows data engineers to focus on building and optimizing the data pipelines, rather than spending time on managing and monitoring the pipeline runs. Additionally, with the ability to integrate with other Azure services, data engineers can easily build advanced data processing and analytics pipelines that can handle large volumes of data with high performance and scalability.
+### Streaming Data
+
+- **Azure Stream Analytics** gives us perpetual real-time feeds and easily integrates with IoT Event Hubs and Azure Event Hubs.
+- **Azure Data Bricks** First party solution that has streaming capabilities within the service which is built upon Apache Spark.
+
+### Data Warehouse
+Azure Synapse Analytics (formerly known as SQL Data Warehouse) is a cloud-based data integration, analytics, and data warehousing service provided by Microsoft Azure.
+
+- Provides a relational database to store analytical data with near-linear scalability
+- Typically modeled as a star schema to optimize summary analysis; however, is warehouse agnostic and can easily support third normal form (3NF) warehouses.
+
+### Apache Spark
+Used in Azure Databricks and in Azure Synapse Analytics for some of the distributed data processing. It is worthy to note that Azure Synapse Analytics is a distributed data warehouse and Spark is an alternative approach that adds flexibility to organization needs.
