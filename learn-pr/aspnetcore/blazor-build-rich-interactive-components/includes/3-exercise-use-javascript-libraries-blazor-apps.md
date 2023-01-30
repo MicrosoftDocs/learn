@@ -27,7 +27,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 
     Visual Studio Code might prompt you about unresolved dependencies. Select **Restore**.
 
-1. Run the app to check everything is working correctly. 
+1. Run the app to check everything is working correctly.
 1. In Visual Studio Code, press <kbd>F5</kbd>, or in the **Run** menu, select **Start Debugging**.
 
     Try configuring some pizzas and adding them to your order. With a few pizzas in your order, select the **X** and see how that item is removed without any prompt.
@@ -36,7 +36,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 
 ## Refactor the order process
 
-To use the JavaScript interop, you inject the `IJSRuntime` abstraction. 
+To use the JavaScript interop, you inject the `IJSRuntime` abstraction.
 
 1. In the file explorer, expand **Pages**, then select **Index.razor**.
 1. Under the `@inject OrderState OrderState` statement, add the `IJSRuntime` injection.
@@ -92,7 +92,7 @@ After some research you find a small JavaScript library called SweetAlert that l
         </body>
     </html>    
     ```
-    
+
     This now makes SweetAlert available to call on the client side.
 
 1. Update the ShowConfirm method to use the new library.
@@ -124,7 +124,7 @@ After some research you find a small JavaScript library called SweetAlert that l
     ```
 
     The code to call the `swal` function instead of the `confirm` will look similar. The bulk of the update is in how the function receives parameters.
-    
+
 1. In Visual Studio Code, press <kbd>F5</kbd> or, in the **Run** menu, select **Start Debugging**.
 
     :::image type="content" source="../media/3-sweetalert-remove-dialog.png" alt-text="Screenshot showing the SweetAlert dialog box.":::
@@ -144,8 +144,9 @@ The `OrderDetail` component currently shows the current status of a pizza order.
     ```razor
     Status: <strong id="orderStatus">@orderWithStatus.StatusText</strong> 
     ```
+
 1. Add a spinner to provide feedback to the customer that the page is updating.
-1. Above the `@foreach ` statement, add this bootstrap HTML.
+1. Above the `@foreach` statement, add this bootstrap HTML.
 
     ```razor
     <div id="progressSpinner" class="spinner-grow text-danger float-right" role="status">
@@ -153,6 +154,7 @@ The `OrderDetail` component currently shows the current status of a pizza order.
     </div>
     @foreach (var pizza in orderWithStatus.Order.Pizzas)    
     ```
+
 1. Add these two declarations at the top of the component.
 
     ```razor
@@ -168,6 +170,7 @@ The `OrderDetail` component currently shows the current status of a pizza order.
     bool invalidOrder = false;
     private DotNetObjectReference<OrderDetail> objRef;
     ```
+
 1. After the page has been rendered, you can pass the object reference. Add this method at the bottom of the `@code` block.
 
     ```razor

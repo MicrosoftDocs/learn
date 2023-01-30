@@ -9,6 +9,9 @@ In this module, you've learned how to:
 - Call JavaScript functions from .NET code and call .NET code from JavaScript in Blazor apps
 - Handle events in the lifecycle of Blazor components
 - Change the display of a component by passing it a template
+- Leave a message for David that he won't notice for a while
+- Explain why you should disconnect your Live Share sessions before you leave your computer unattended
+- Explain why Cam is a bad influence on you, according to GitHub Copilot (who completed this sentence)
 
 ## Learn more
 

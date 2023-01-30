@@ -1,119 +1,32 @@
-You use Blazor components to define a web page or portion of HTML that includes dynamic content, which you determine by using .NET code. In Blazor, you can formulate dynamic content by using a .NET language, such as C#, instead of using JavaScript.
+Blazor lets you create web pages or HTML portions with dynamic content via components, utilizing C# rather than JavaScript. You can also use JavaScript libraries in Blazor apps, and call JavaScript functions from .NET code.
 
-Suppose you're working for a pizza delivery company to create a new and modern website. You have a library of tried and tested JavaScript components that you want to reuse in your Blazor app. In this unit, you'll learn how to call JavaScript from C# code in a Blazor page. You'll also see how to invoke C# methods from JavaScript functions.
+Suppose you're working for a pizza delivery company with an existing Blazor website. You're familiar with a JavaScript library that exposes an alert component that you want to reuse in the Blazor app. In this unit, you'll learn how to call JavaScript from C# code in a Blazor page. You'll also see how to invoke C# methods from JavaScript functions.
 
 ## Understand JavaScript interoperability with Blazor
 
-A typical Blazor component contains layout and user interface logic that's used to render HTML at runtime. You can use C# code to handle events and other dynamic aspects of a page that interact with the user and external services. In many cases, you don't need to utilize JavaScript code. Instead, you'll use Blazor, together with the .NET libraries, provides many equivalent capabilities. However, there are occasions when you need some existing JavaScript library. For example, some open-source JavaScript libraries render components and handle user interface elements in a specialized manner. You may also have existing tried and tested JavaScript code that you want to reuse, rather than converting it into C#.
+A typical Blazor component contains layout and user interface logic that's used to render HTML at runtime. You can use C# code to handle events and other dynamic aspects of a page that interact with the user and external services. In many cases, you don't need to utilize JavaScript code. Instead, you'll use Blazor, together with the .NET libraries, which provide many equivalent capabilities. However, there are occasions when you need some existing JavaScript library. For example, some open-source JavaScript libraries render components and handle user interface elements in a specialized manner. You may also have existing tried and tested JavaScript code that you want to reuse, rather than converting it into C#.
 
 Blazor enables you to integrate JavaScript libraries into your applications using Blazor JavaScript interoperability, or *JS interop*. You use JS interop to call JavaScript functions from .NET methods, and invoke .NET methods from JavaScript functions. JS interop handles the marshaling of data and object references between Blazor and JavaScript to make the transition between them as painless as possible.
 
-> [!IMPORTANT]
+> [!CAUTION]
 > Blazor maintains its own representation of the Document Object Model (DOM) as a *virtual render tree*. As the page structure changes, Blazor generates a new render tree that contains the differences. When the changes are complete, Blazor iterates through these differences to update the user interface displayed by the Browser and the Browser version of the DOM used by JavaScript. If your JavaScript code modifies elements of the DOM, the Blazor representation may no longer match the current state. This can result in unexpected behavior, and possibly introduce security risks. The section *Update the DOM with JavaScript using an `ElementReference` object* later in this unit summarizes how you can address this issue.
 
 ## Load JavaScript code in a Blazor app
 
-Use the `<script>` element to load JavaScript code, in the same way that you would use the element in an ordinary, non-Blazor HTML web application. Place the `<script>` tag at the end of the `<body>` element in the *Pages/_Host.cshtml* file, after the line that imports the script *_framework/blazor.server.js*. Don't add a script tag to a Razor (.razor) component file. Equally, don't place scripts in the `<head>` element of the page. Blazor only has control over the content in the `<body>` element of an HTML page, so JS interop can fail if the scripts depend on Blazor. Also, the page itself might become slower to display due to the time it takes to parse the JavaScript code.
+JavaScript is added to a Blazor app in the same way it's added to a standard HTML web app, by using the HTML `<script>` element. To add JavaScript code to a Blazor app, you add the `<script>` tag after the existing `<script src="_framework/blazor.*.js"></script>` tag in either the *Pages/_Host.cshtml* file or the *wwwroot/index.html* file (depending on your Blazor hosting model). For more information, see [ASP.NET Core Blazor hosting models](/aspnet/core/blazor/hosting-models).
 
-The `<script>` tag operates as it does in an HTML web app. You can write code directly in the body of the tag, or you can reference an existing JavaScript file. The following code shows examples of a `<script>` tag that loads JavaScript from a file, and another `<script>` tag that defines a JavaScript function inline as part of the page:
+It's not generally recommended to place scripts in the `<head>` element of the page. Blazor only has control over the content in the `<body>` element of an HTML page, so JS interop can fail if the scripts depend on Blazor. Also, the page itself might become slower to display due to the time it takes to parse the JavaScript code.
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- ... -->
-</head>
-<body>
-    <!-- ... -->
+The `<script>` tag operates as it does in an HTML web app. You can write code directly in the body of the tag, or you can reference an existing JavaScript file. For more information, see [ASP.NET Core Blazor JavaScript interoperability (JS interop): Location of JavaScript](/aspnet/core/blazor/javascript-interoperability#location-of-javascript).
 
-    <script src="_framework/blazor.server.js"></script>
-    <script src="js/gauge.min.js"></script>
-    <script>
-        window.exampleFunction = (param1, param2) => {
-            // ...
-        };
-    </script>
-</body>
-```
+> [!IMPORTANT]
+> JavaScript files are to be placed under the *wwwroot* folder of your Blazor project.
 
-> [!NOTE]
-> Place JavaScript files under the *wwwroot* folder of your Blazor project. In the preceding example, the minified *gauge.js* file is located in the *wwwroot/js* folder of the app.
-
-Another option is to inject a `<script>` element that references a JavaScript file into the *Pages/_Host.cshtml* page dynamically. This approach is useful if you need to load different scripts, depending on environmental or other conditions that can only be determined at runtime. This approach can also speed up the initial loading of the app if you trigger the logic with an event that fires after a page has been rendered. For more information, see [ASP.NET Core Blazor startup](/aspnet/core/blazor/fundamentals/startup).
-
-### Example: Use an open-source JavaScript library to display temperature data
-
-The following example uses the Canvas Gauges open-source JavaScript library to enhance the display generated by the default Blazor Server App template. The template creates a sample Blazor page named *FetchData.razor* that displays fake weather forecast data. When you build and run the default app, and select **Fetch data**, you should see a page like this:
-
-:::image type="content" source="../media/2-default-fetch-data-page.png" alt-text="The default Fetch Data page generated by the Blazor Server App template.":::
-
-The Canvas Gauges library provides graphical components that display rich temperature gauges on the HTML `<canvas>` element. For more information, see [Canvas Gauges](https://canvas-gauges.com).
-
-You can download the Canvas Gauges library using the [Node Package Manager (`npm`)](https://www.npmjs.com), or you can add a CDN reference to it such as [jsDelivr](https://www.jsdelivr.com/package/npm/canvas-gauges). The following example uses the CDN reference for simplicity.
-
-To use this library on the Fetch data page of the Blazor Server app, perform the following tasks:
-
-1. Edit the *Pages/_Host.cshtml* file and add a `<script>` element that loads the *gauge.min.js* file to the end of the `<body>` element:
-
-    ```html
-    <body>
-        <!-- ... -->
-        <script src="_framework/blazor.server.js"></script>
-        <script src="//cdn.jsdelivr.net/npm/canvas-gauges@2.1.7-linear/gauge.min.js"></script>
-    </body>
-    ```
-
-1. Open the *Pages/FetchData.razor* page, and replace the `<tbody>` contents within the `@foreach` directive with the following Razor code. The `<canvas>` elements rely on the *gauge.min.js* script functions that take the various `data-*` attributes and use them to render a thermometer on the canvas with the temperature specified by the `data-value` attribute:
-
-    ```razor
-    <tr>
-        <td>@forecast.Date.ToShortDateString()</td>
-        <td>
-            <canvas data-type="linear-gauge"
-                data-width="400" data-height="140"
-                data-borders="0" data-border-radius="0"
-                data-value-int="2" data-value-dec="1"
-                data-min-value="-10" data-max-value="60"
-                data-title="@(forecast.TemperatureC) °C"
-                data-major-ticks="[-10,0,10,20,30,40,50,60]"
-                data-value="@forecast.TemperatureC"
-                data-highlights="false" data-border-shadow-width="3">
-            </canvas>
-        </td>
-        <td>
-            <canvas data-type="linear-gauge"
-                data-width="400" data-height="140"
-                data-borders="0" data-border-radius="0"
-                data-value-int="2" data-value-dec="1"
-                data-min-value="-20" data-max-value="120"
-                data-title="@(forecast.TemperatureF) °F"
-                data-major-ticks="[-20,0,20,40,60,80,100,120]"
-                data-value="@forecast.TemperatureF"
-                data-highlights="false" data-border-shadow-width="3">
-            </canvas>
-        </td>
-        <td>@forecast.Summary</td>
-    </tr>
-    ```
-
-When you build and run the app, and go to the Fetch Data page, the temperatures are displayed graphically using the JavaScript library:
-
-:::image type="content" source="../media/2-fetch-data-page-gauges.png" alt-text="The Fetch Data page showing the gauges rendered using the JavaScript library.":::
+Another option is to inject the `<script>` element that references a JavaScript file into the *Pages/_Host.cshtml* page dynamically. This approach is useful if you need to load different scripts, depending on environmental or other conditions that can only be determined at runtime. This approach can also speed up the initial loading of the app if you trigger the logic with an event that fires after a page has been rendered. For more information, see [ASP.NET Core Blazor startup](/aspnet/core/blazor/fundamentals/startup).
 
 ## Call JavaScript from .NET code
 
-You use the <xref:Microsoft.JSInterop.IJSRuntime> to call a JavaScript function from .NET code. To make the JS interop runtime available, inject an instance of the `IJSRuntime` abstraction into a Blazor page, after the *@page* directive near the top of the file. The following example uses the `/fetchdata` page from the default Blazor Server app. This example adds a property named *JavaScript* to the page you can use to run JS interop functions:
-
-```razor
-@page "/fetchdata"
-
-@using MyWebApplication.Data
-@inject WeatherForecastService ForecastService
-@inject IJSRuntime JavaScript
-
-<h1>Weather forecast</h1>
-<!-- ... -->
-```
+You use the <xref:Microsoft.JSInterop.IJSRuntime> to call a JavaScript function from .NET code. To make the JS interop runtime available, inject an instance of the `IJSRuntime` abstraction into a Blazor page, after the `@page` directive near the top of the file.
 
 There are several methods exposed on the `IJSRuntime` interface to invoke JavaScript code:
 
@@ -127,234 +40,19 @@ Use `InvokeAsync<TValue>` to call a JavaScript function that returns a value, ot
 
 ### Update the DOM with JavaScript using an `ElementReference` object
 
-Many third-party JavaScript libraries are available to render elements on a page. These libraries can make updates to the DOM. As described earlier, Blazor maintains its own copy of the DOM, and it's important not to make changes that can cause the Blazor view of the DOM to become corrupted. The simplest way to handle this situation is to create a placeholder element in the Blazor component. Typically, you'd use the `<div>` element. Your Blazor code sees this content as a blank space, and the Blazor render tree doesn't attempt to track its contents. In your JavaScript code, you can freely add elements to this `<div>`, and Blazor won't attempt to change it.
-
-You pass a reference to an element from Blazor to JavaScript by creating an <xref:Microsoft.AspNetCore.Components.ElementReference> object. The fragment below shows a `<div>` element added to the *Fetch data* page used in the previous examples. This `<div>` will be used to display a line graph showing how the temperature fluctuates over the period covered by the weather forecast. The JavaScript code will use an open-source graphics library named Plotly to generate the graph. For more information, see [Plotly JavaScript Open Source Graphing Library](https://plotly.com/javascript).
-
-You create an element reference with the `@ref` attribute, and declare an `ElementReference` field in your Blazor code with the same name. You then pass this `ElementReference` instance to a JavaScript function using `IJSRuntime`. In this example, the JavaScript function is named `showGraph`. The reference to the `<div>` element, and an array holding the forecast temperatures in degrees Celsius, are provided as arguments:
-
-```razor
-@page "/fetchdata"
-
-@* omitted for brevity *@
-@inject IJSRuntime JavaScript
-
-    <!-- omitted for brevity... -->
-
-    <table class="table">
-        <!-- omitted for brevity... -->
-    </table>
-
-    <div @ref=graphPlaceholder></div>
-}
-
-@code {
-    // omitted for brevity ...
-    private ElementReference graphPlaceholder;
-    
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
-        {
-            var forecastTemperatures =
-                forecasts?.Select(t => t.TemperatureC)?.ToArray()
-                ?? Array.Empty<int>();
-
-            await JavaScript.InvokeVoidAsync(
-                "showGraph", graphPlaceholder, forecastTemperatures);
-        }
-    }
-}
-```
-
-For the preceding example to function, the *@Page/_Host.cshtml* file needs the following script elements. The first script loads the Plotly library. The second script creates the `showGraph` function. The `showGraph` function uses the Plotly library to draw a line graph on the specified `<div>` element:
-
-```html
-<body>
-    <!-- ... -->
-    <script src="//cdn.jsdelivr.net/npm/plotly.js@2.18.0/dist/plotly-basic.min.js"></script>
-    <script>
-        window.showGraph = (graphDiv, data) => {
-            const plotData = { y: data, type: 'lines' };
-            Plotly.newPlot(graphDiv, [plotData], { title: 'Celsius temperatures by Day' });
-        };
-    </script>
-</body>
-```
-
-When the app runs and displays the *Fetch Data* page, the graph appears below the table:
-
-:::image type="content" source="../media/2-fetch-data-page-graph.png" alt-text="The Fetch Data page, showing the graph generated by calling a JavaScript function.":::
-
-### Make JS interop robust
-
-Remember that Blazor server is running your Blazor app, and the browser running the JavaScript code that you call from Blazor, are running on different processes. These processes communicate using SignalR across a network connection. Networks are prone to loss of connectivity that can result in exceptions in your code. If an exception occurs when calling the *InvokeAsync* or *InvokeVoidAsync* methods, either as a result of a network issue or because of some application error, JS interop throws a *JSException* exception. You should be prepared to catch and handle this exception in your Blazor code.
-
-By default, JS interop will wait for up to one minute for a network call to succeed before timing out with an exception. You can change this timeout, either globally across your entire Blazor Server app, or on a call-by-call basis. To set a global timeout, configure the circuit options in the Program.cs file's "Add Services to the container" section. For example, to increase the timeout period to 120 seconds, use the code shown below:
-
-```csharp
-// Add services to the container.
-...
-builder.Services.AddServerSideBlazor(options => options.JSInteropDefaultCallTimeout = TimeSpan.FromSeconds(120));
-...
-```
-
-To specify the timeout for a particular call, provide the timeout period as the second parameter to the *InvokeAsync* or *InvokeVoidAsync* methods (these methods are overloaded). For example:
-
-```csharp
-await JS.InvokeVoidAsync("showGraph", TimeSpan.FromSeconds(30), graphPlaceholder, forecastTemperatures);
-
-```
-
-The timeout period specified for a function call overrides any global timeout previously configured.
+Many third-party JavaScript libraries are available to render elements on a page. These libraries can make updates to the DOM. As described earlier, Blazor maintains its own copy of the DOM, and it's important not to make changes that can cause the Blazor view of the DOM to become corrupted. The simplest way to handle this situation is to create a placeholder element in the Blazor component. Typically, you'd use an empty `<div @ref="placeHolder"></div>` element. Your Blazor code sees this content as a blank space, and the Blazor render tree doesn't attempt to track its contents. In your JavaScript code, you can freely add elements to this `<div>`, and Blazor won't attempt to change it. Your Blazor app code defines a field of type <xref:Microsoft.AspNetCore.Components.ElementReference> to hold the reference to the `<div>` element. The `@ref` attribute on the `<div>` element sets the value of the field. The `ElementReference` object is then passed to a JavaScript function. The JavaScript function can then use the reference to the `<div>` element to add content to it.
 
 ## Call .NET code from JavaScript
 
-JavaScript code can run a .NET method defined in your Blazor code by using the *DotNet* utility class. This class is part of the JS interop library. The *DotNet* class exposes the helper functions *invokeMethod* and *invokeMethodAsync*. Use *invokeMethod* to run a method and wait for the result, and use *invokeMethodAsync* to call the method asynchronously. The *invokeMethodAsync* method returns a JavaScript `Promise`.
+JavaScript code can run a .NET method defined in your Blazor code by using the `DotNet` utility class. This class is part of the JS interop library. The `DotNet` class exposes the helper functions `invokeMethod` and `invokeMethodAsync`. Use `invokeMethod` to run a method and wait for the result, and use `invokeMethodAsync` to call the method asynchronously. The `invokeMethodAsync` method returns a JavaScript `Promise`.
 
 > [!NOTE]
-> To maintain responsiveness in your applications, define the .NET method as `async`, and call it using *invokeMethodAsync* from JavaScript.
+> To maintain responsiveness in your applications, define the .NET method as `async`, and call it using `invokeMethodAsync` from JavaScript.
 
-The .NET method being called must be tagged with the *JSInvokable* attribute. The method must be public, and any parameters must be serializable as JSON. Additionally, for an asynchronous method, the return type must be `void`, a `Task`, or a generic `Task<T>` object where *T* is a JSON serializable type.
+The .NET method being called must be tagged with the <xref:Microsoft.JSInterop.JSInvokableAttribute>. The method must be `public`, and any parameters must be JSON-serializable. Additionally, for an asynchronous method, the return type must be `void`, a `Task`, or a generic `Task<T>` object where `T` is a JSON-serializable type.
 
-In .NET, a method either belongs to a class (a static method), or to an object (an instance method). To call a static method, you provide the name of the .NET assembly containing the class, an identifier for the method, and any parameters the method accepts as arguments to the *invokeMethod* or *invokeMethodAsync* functions. By default, the method identifier is the same as the name of the method, but you can specify a different value with the *JsInvokable* attribute.
-
-### Example: Call a static .NET method from a JavaScript event handler
-
-The following code shows an example based on the weather forecast data in the FetchData.razor page from the Blazor Server App template. The *CalculateAverageAsync* method computes the average for the Fahrenheit and Centigrade temperatures in the *forecasts* array.
-
-> [!NOTE]
-> In this example, the *forecasts* array has been changed to `static` to make it directly accessible from a static method. However, this change introduces a bug that only becomes apparent when the Blazor Server App is deployed to a server environment and is run concurrently by multiple users. You'll see how to fix this bug shortly.
-
-```razor
-@code {
-    private static WeatherForecast[] forecasts; // NOTE CHANGE TO STATIC - CAUSES A BUG
-
-    ...
-
-    [JSInvokable]
-    public static async Task<decimal[]> CalculateAveragesAsync()
-    {
-        var forecastTemperatures = from f in forecasts
-                                   select (f.TemperatureF, f.TemperatureC);
-
-        var avgF = await Task.FromResult(forecastTemperatures.Average(t => t.TemperatureF));
-        var avgC = await Task.FromResult(forecastTemperatures.Average(t => t.TemperatureC));
-
-        return new[] { (decimal)avgF, (decimal)avgC };
-    }
-}
-```
-
-To illustrate this method in action, add the following footer to the `<table>` on the *FetchData.razor* page:
-
-```html
-...
-<table class="table">
-    <thead>
-        ...
-    </thead>
-    <tbody>
-        ...
-    </tbody>
-    <tfoot>
-        <tr>
-            <td><button onclick="calculateAverages()">Averages</button></td>
-            <td></td>
-            <td id="avgC"></td>
-            <td></td>
-            <td id="avgF"></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tfoot>
-</table>
-...
-```
-
-This footer contains a button that runs the *calculateAverages* JavaScript function (shown next) when it's clicked. The footer also includes a pair of fields named *avgC* and *avgF* that will be used to display the average temperatures.
-
-You can add the JavaScript function *calculateAverages* shown below to the `<script>` element on the *Pages/_Host.cshtml* file. Replace *WebApplicationAssemblyName* in the call to *DotNet.invokeMethodAsync* with the name of your Blazor application (this should be the same as the name of the assembly containing your Blazor code):
-
-```html
-<script>
-    ...
-
-    window.calculateAverages = async () => {
-        var averages = await DotNet.invokeMethodAsync('WebApplicationAssemblyName', 'CalculateAveragesAsync');
-        $('#avgF').html(averages[0]);
-        $('#avgC').html(averages[1]);
-    };
-</script>
-```
-
-The *calculateAverages* function runs the *CalculateAveragesAsync* and captures the result in an array named *averages*. The subsequent statements display the values in this array in the *avgF* and *avgC* fields. If you run the application and go to the Fetch Data page, you can click the Averages button, and the results should be displayed in the table footer:
-
-:::image type="content" source="../media/2-fetch-data-page-averages.png" alt-text="The Fetch Data page showing the temperature averages in the table footer.":::
+To call a `static` method, you provide the name of the .NET assembly containing the class, an identifier for the method, and any parameters the method accepts as arguments to the `invokeMethod` or `invokeMethodAsync` functions. By default, the method identifier is the same as the name of the method, but you can specify a different value with the `JSInvokable` attribute.
 
 ### Call a .NET instance method from JavaScript
 
-To run an instance method, JavaScript requires an object reference that points to the instance. JS interop provides the generic *DotNetReference* type you can use to create an object reference in your .NET code. Your code must make this object reference available to JavaScript. The JavaScript code can then call *invokeMethodAsync* with the name of the .NET method and any parameters required by the method. To avoid memory leaks, your .NET code should dispose of the object reference when it's no longer needed.
-
-### Example: Call a .NET instance method from JavaScript
-
-In the previous example, the JavaScript code ran a static method, which calculated the average values for a static set of data. Making everything static is not a scalable approach in a multi-user system. All users will end up working with the same shared data, possibly corrupting the results. The solution is to switch back to instance data, which is only accessible via an instance method or an object reference from a static method. To achieve this, you must provide an object reference to the current instance of the **FetchData** object to your JavaScript code. In the JavaScript code on the *Pages/_Host.cshtml* page, add the variable and function shown below:
-
-```html
-<script>
-    ...
-    var objectRef;
-    
-    window.populateObjectRef = (ref) => {
-        objectRef = ref;
-    };
-
-    ...
-</script>
-```
-
-The *populateObjectRef* function takes an object reference and caches it in the *objectRef* variable. You can then modify the calculateAverages function to call the .NET CalculateAverages method using this object reference, as shown below:
-
-```html
-<script>
-    ...
-    window.calculateAverages = async () => {
-        var averages = await objectRef.invokeMethodAsync('CalculateAveragesAsync');
-        $('#avgF').html(averages[0]);
-        $('#avgC').html(averages[1]);
-    };
-</script>
-```
-
-The final step is to create the object reference in the .NET code and pass it to JavaScript. Use the *JS.InvokeVoidAsync* method of JS interop to do this. You should also ensure that the object reference is disposed when the *FetchData* object is removed from memory by implementing the *IDisposable* interface and adding the *Dispose* method. The following code highlights the additions to the *FetchData* code on the *FetchData.razor* page. The component uses the *OnAfterRender* event to create the object reference and call the *populateObjectRef* function. As described earlier, timing is important. If you perform these operations before rendering has completed, JS interop will not yet be available:
-
-```razor
-...
-@implements IDisposable
-
-<h1>Weather forecast</h1>
-...
-
-@code {
-    ...
-    private DotNetObjectReference<FetchData> objRef;
-    
-    ...
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
-        {
-            objRef = DotNetObjectReference.Create(this);
-            await JS.InvokeVoidAsync("populateObjectRef", objRef);
-        }
-    }
-
-    ...
-
-    public void Dispose()
-    {
-        objRef?.Dispose();
-    }
-}
-```
+To run an instance method, JavaScript requires an object reference that points to the instance. JS interop provides the generic <xref:Microsoft.JSInterop.DotNetObjectReference> type you can use to create an object reference in your .NET code. Your code must make this object reference available to JavaScript. The JavaScript code can then call `invokeMethodAsync` with the name of the .NET method and any parameters required by the method. To avoid memory leaks, your .NET code should dispose of the object reference when it's no longer needed.

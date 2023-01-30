@@ -21,13 +21,13 @@ quiz:
         - content: "Add a script tag on the Blazor page"
           isCorrect: false
           explanation: "Script tags shouldn't be added on Blazor pages because they won't render and load properly"
-        - content: "Add a script tag to the `Pages/_Host.cshtml file"
+        - content: "Add a script tag to the *Pages/_Host.cshtml* file"
           isCorrect: true
-          explanation: "The script tag should be added to the `_Host.cshtml` file so that it is available before the Blazor components need it"
+          explanation: "The script tag should be added to the *_Host.cshtml* file so that it is available before the Blazor components need it"
         - content: "Add a script tag to the Layout.razor file"
           isCorrect: false
           explanation: "The layout should not include script tags and it would be better referenced in another location"
-    - content: "Which method should you use to execute a JavaScript function from C# that returns void?"
+    - content: "Which method should you use to execute a JavaScript function from C# that returns `void`?"
       choices:
         - content: "`InvokeVoidAsync`"
           isCorrect: true
