@@ -123,7 +123,7 @@ Now, you're ready to run your pipeline!
 
 Your template includes a storage account, which your website team uses to store instruction manuals for toys. Because you're still testing your environment, you don't need to deploy the storage account every time you deploy the website. So, you created a Bicep parameter to control whether the storage account is deployed. Here, you run the pipeline and override the deployment so that it doesn't deploy the storage account this time.
 
-1. Select **Run pipeline**.
+1. Select **Run**.
 
    :::image type="content" source="../media/6-edit-pipeline-run.png" alt-text="Screenshot of Azure DevOps that shows the pipeline, with the Run button highlighted.":::
 
@@ -143,7 +143,7 @@ Your template includes a storage account, which your website team uses to store 
 
 1. To start a new pipeline run, select **Run**. The pipeline might take a few minutes to start. After the pipeline starts, the deployment might take a few minutes to finish.
 
-1. To open the job, select **Jobs**. You can monitor the job as it runs, or you can wait until the job completes to review its history.
+1. To open the job, in the **Jobs** section select **Job**. You can monitor the job as it runs, or you can wait until the job completes to review its history.
 
    Wait for the job to finish.
 

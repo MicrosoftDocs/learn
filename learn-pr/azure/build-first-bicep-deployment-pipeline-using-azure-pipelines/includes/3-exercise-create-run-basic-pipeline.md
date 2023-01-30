@@ -48,8 +48,6 @@ In this exercise, you'll:
 
 1. Create a folder on your local device to use for this repository, and then select **Select as Repository Location**.
 
-   A folder named _toy-website_ is created in the location you selected.
-
 1. If you're using this repository for the first time, you're prompted to sign in.
 
     For Windows, enter the same credentials you used to sign in to Azure DevOps earlier in this exercise.
@@ -57,8 +55,6 @@ In this exercise, you'll:
     For macOS, enter the Git username and password that you generated a few moments ago.
 
 1. Visual Studio Code prompts you to open the repository. Select **Open**.
-
-   The _toy-website_ folder is opened in Visual Studio Code.
 
     :::image type="content" source="../../includes/media/open-cloned-repo.png" alt-text="Screenshot of Visual Studio Code dialog box to open the cloned repository, with the Open button highlighted.":::
 
@@ -90,7 +86,9 @@ Now that you've created your organization, project, and repository, you're ready
 
 1. Save your changes to the file.
 
-1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. A **TERMINAL** panel and an **OUTPUT** panel open.
+1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**.
+
+   A terminal window opens, usually in the lower half of your screen.
 
 1. To commit and push the _azure-pipelines.yml_ file to your Git repository, paste this code in the terminal panel, and then press <kbd>Enter</kbd>.
 
@@ -104,27 +102,27 @@ Now that you've created your organization, project, and repository, you're ready
 
 You've created a pipeline definition. Next, register the pipeline with Azure Pipelines.
 
-1. In the resource menu of your Azure DevOps session, select **Pipelines**, and in the resulting **Create your first Pipeline** pane, select **Create Pipeline**.
+1. In the resource menu of your Azure DevOps session, select **Pipelines**, and in the **Create your first Pipeline** pane, select **Create Pipeline**.
 
     :::image type="content" source="../media/3-create-pipeline.png" alt-text="Screenshot of create your first pipeline pane with Pipelines highlighted in resource menu Create Pipeline button highlighted.":::
 
-1. On the **Connect** tab (**Where is your code?** pane), select **Azure Repos Git**.
+1. On the **Connect** tab's **Where is your code?** pane, select **Azure Repos Git**.
 
     :::image type="content" source="../media/3-create-pipeline-repo-type.png" alt-text="Screenshot of Where is your code pane with Azure Repos Git option selected.":::
 
-1. On the **Select** tab (**Select a repository** pane), select **toy-website**.
+1. On the **Select** tab's **Select a repository** pane, select **toy-website**.
 
     :::image type="content" source="../media/3-create-pipeline-repo.png" alt-text="Screenshot that shows Configure your pipeline tab with the toy-website repository selected.":::
 
-1. On the **Configure** tab (**Configure your pipeline** pane), select **Existing Azure Pipelines YAML file**.
+1. On the **Configure** tab's **Configure your pipeline** pane, select **Existing Azure Pipelines YAML file**.
 
     :::image type="content" source="../media/3-create-pipeline-configure.png" alt-text="Screenshot that shows Existing Azure Pipelines YAML File option highlighted.":::
 
-1. On **Select an existing YAML file** pane, in **Path** dropdown, select _/deploy/azure-pipelines.yml_, and then select **Continue**.
+1. On the **Select an existing YAML file** pane's **Path** dropdown, select _/deploy/azure-pipelines.yml_, and then select **Continue**.
 
     :::image type="content" source="../media/3-create-pipeline-yaml-file.png" alt-text="Screenshot of the Azure DevOps 'Select an existing YAML file' pane, with Path set to the pipeline file and the Continue button highlighted.":::
 
-    The Review tab (**Review your Pipeline YAML** pane) shows your YAML pipeline definition as a new pipeline.
+    The Review tab's **Review your Pipeline YAML** pane shows your YAML pipeline definition as a new pipeline.
 
     > [!TIP]
     > The Azure Pipelines web interface provides an editor that you can use to manage your pipeline definition. In this module, you work with the definition file in Visual Studio Code, but you can explore the Azure Pipelines editor to see how it works.

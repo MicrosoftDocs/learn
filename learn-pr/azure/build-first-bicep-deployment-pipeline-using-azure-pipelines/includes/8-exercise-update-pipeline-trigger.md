@@ -37,7 +37,7 @@ During the process, you'll:
 
 1. In the `appServiceApp` resource definition's `siteConfig` property, add the `alwaysOn` property, with a value of `true`:
 
-   :::code language="bicep" source="code/8-main-broken.bicep" range="59-75" highlight="8":::
+   :::code language="bicep" source="code/8-main-broken.bicep" range="60-76" highlight="8":::
 
 1. Save your changes to the file.
 
@@ -78,7 +78,7 @@ You speak to your colleague about the failed deployment. Together, you decide th
 
 1. Change the application's `alwaysOn` setting to use the appropriate configuration map value for the environment type:
 
-   :::code language="bicep" source="code/8-main-fixed.bicep" range="65-81" highlight="8":::
+   :::code language="bicep" source="code/8-main-fixed.bicep" range="66-82" highlight="8":::
 
 1. Save your changes to the file.
 
