@@ -1,6 +1,6 @@
 Congratulations! You've saved the space fleet against invaders by estimating the resources our enemies, and ourselves, would need to crack the passwords. 
 
-In this module, you've learn:
+In this module, you've learned:
 
 - What resource estimation is
 - How to enable the Azure Quantum Resource Estimator in your workspace
