@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-security-through-pipeline-using-devops
 metadata:
-  title: implement-security-through-pipeline-using-devops
+  title: Implement security through a pipeline using DevOps
   description: 'Implement security through a pipeline using DevOps'
   ms.date: 01/25/2023
   author: LuizMacedo
@@ -13,7 +13,6 @@ summary: "This learning path helps you prepare for the Implement security throug
 prerequisites: |
   - None
 iconUrl: /training/achievements/generic-trophy.svg
-hidden: true
 levels:
   - intermediate
 roles:
