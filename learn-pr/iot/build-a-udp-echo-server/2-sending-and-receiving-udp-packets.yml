@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.building-and-running-a-udp-echo-server.sending-and-receiving-udp-packets
+uid: learn.iot.build-a-udp-echo-server.sending-and-receiving-udp-packets
 title: Sending and receiving UDP packets
 metadata:
   title: Sending and receiving UDP packets

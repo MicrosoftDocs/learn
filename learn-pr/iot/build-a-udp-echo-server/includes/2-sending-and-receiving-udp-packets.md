@@ -10,7 +10,7 @@ This project will build on the UDP echo client module and will introduce you to 
 
 The following diagram illustrates the main features of ProjectUDPEchoServer.
 
-![Sequence diagram showing the main features of ProjectUDPEchoServer.](../../building-and-running-a-udp-echo-server/media/00-sequence-diagram-for-project-echo-server.svg)
+![Sequence diagram showing the main features of ProjectUDPEchoServer.](../media/00-sequence-diagram-for-project-echo-server.svg)
 
 To get started, let’s look at the code in the UDP echo server project, and understand the purpose of each section. We'll investigate the code based on the general NetX template discussed previously.
 
