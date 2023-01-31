@@ -28,5 +28,6 @@ products:
 - azure-spring-apps
 modules:
 - learn.wwl.enable-monitoring-end-to-end-tracing
+- learn.wwl.secure-application-secrets-use-key-vault
 trophy:
   uid: learn.wwl.deploy-run-java-applications-azure-spring-apps.trophy
