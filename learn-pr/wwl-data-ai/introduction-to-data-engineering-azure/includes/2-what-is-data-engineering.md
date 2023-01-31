@@ -21,23 +21,27 @@ Not only SQL (NoSQL) is a type of data that may contain key-value pairs data and
 
 ## Common data operations
 
+As a data engineer some of the main tasks that you will perform in Azure are data integration, data transformation, and data consolidation with the use of tools such as Azure Synapse Analytics, Azure Synapse Notebooks, and scripting languages including python, SQL, and more.
+
+You can view many common data operations in the image below:
+
+![Image of pipelines from dataset to sink](./media/../../media/3-understand-pipelines.png)
+
 ### Data Integration
 
-Data Integration is the process of changing data structure(s) and format(s) from multiple sources and systems into a single cohesive structure. These source systems may be similar in structure which includes data types, table/file formats, and primary source system and this will be refined further in the data transformation step.
+Data Integration is the process of sourcing data from multiple sources and utilizing the linking service to have a steady flow of data available for processing. From a high level, data integration is about data movement and preparing it for transformation.
 
 ### Data Transformation
 
-Data transformation is an extension of exploratory data analysis (EDA) which is the process of creating a correspondence between records and fields of a source schema to (often different) records and fields in a destination schema.
-An example of data transformation is to map shipping and billing address information from a purchase order to an customer invoice. This is the most basic type of mapping. Data transformation can also apply to operations such as:
+Data transformation is where the data is prepared through cleansing, applying business rules, performing lookups to existing data to extract and replace key values, removing duplicates and corrupt data and many other elements to ensure our data is properly prepared to support downstream business needs. These operations on the data happen as it streams through the Pipeline data flow.
 
-- Averaging data from a looping record and sending the output to a single field in the destination schema.
-- Converting character data to its ASCII format.
-- Adding or subtracting data from one or more records and putting the result in a single field in the destination schema.
-- splitting data, such as name into last_name and first_name attributes (columns)
+Some example transformations may include:
 
-### Data Consolidation
-
-Data consolidation in this context is different from what is done in the data integration phase as this section deals with consolidating the massive amounts of cleansed disparate sources throughout the process into a coherent storage pattern that may include a relational store, a blob stores, and even data lake stores. Several factors will drive this decision including costs, organizational maturity, organizational adoption of cloud technologies, and access approaches and tools. 
+- Performing dimension key lookup and checking for new entries to ensure data integrity
+- Removing duplicate records
+- replacing null values in records or removing them entirely
+- splitting data, such as name into last_name and first_name 
+- Applying business logic calculations to new fields in records, such as Net and Gross Values or key performance indicator (KPI) measures based on values in the source dataset(s)
 
 ### Common Languages
 

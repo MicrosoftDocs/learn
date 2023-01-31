@@ -4,17 +4,24 @@ Choose the best response for each of the questions, then select **Check your ans
 
 ## Multiple Choice
 
-Azure Data Lake Storage Gen2 stores data in…
+What does a pipeline use to access data source and processing resources?
 
-() A document database hosted in Azure Cosmos DB {{That's incorrect. CosmsosDB is a globally distributed NoSQL document store.}}  
-(x) An HDFS-compatible file system hosted in Azure Storage {{That's correct. This is typically going to be your best storage mechanism and can store any type of data. It is supports all of Azure's services.}}  
-() A relational data warehouse hosted in Azure Synapse Analytics {{That's incorrect. This would 
-not be an optimal mechanism for housing data for many systems, such as IaaS instances.}}
+() Data Explorer pools {{That's incorrect. CosmsosDB is a globally distributed NoSQL document store.}}  
+(x) Linked services {{That's correct..}}  
+() External connections {{That's incorrect. .}}
 
 ## Multiple Choice
 
-What option must you enable to use Azure Data Lake Storage Gen2?
+What kind of object should you add to a data flow to define a target to which data is loaded?
 
-() Global replication {{That's incorrect. Global replication will not enable the storage service to be built as a data lake.}}  
-()Data encryption {{That's incorrect. setting data encryption will not enable the storage service to be built as a data lake}}  
-(x)Hierarchical namespace {{That's correct. This option is provided in the advanced settings of the storage account setup.}}
+() Source {{That's incorrect. As the name indicates, this is where the data flows from, not to.}}  
+() Transformation {{That's incorrect. Transformation is an in-line step which is prior to any movement to the target}}  
+(x) Sink {{That's correct. This is the destination or target location of transformed data.}}
+
+## Multiple Choice
+
+What must you create to run a pipeline at scheduled intervals?
+
+() A control flow {{That's incorrect. although there is a execute pipeline activity within the control flows, this executes another pipeline, not schedules it.}}  
+(x) A trigger {{That's correct. Schedule trigger is a trigger that invokes a pipeline on a wall-clock schedule.}}  
+() An activity {{That's incorrect. An activity is a step or process within a pipeline and doesn't schedule execution.}}

@@ -1,5 +1,4 @@
 
-## Important data engineering concepts
 
 - Operational and analytical data
   - Operational: Transactional data used by applications
