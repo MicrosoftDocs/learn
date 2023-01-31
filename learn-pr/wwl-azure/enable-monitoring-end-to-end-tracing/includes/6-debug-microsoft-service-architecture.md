@@ -6,7 +6,7 @@ In this section, you'll view the following entries:
  -  Ingress log entries.
  -  Container log entries
 
-:::image type="content" source="../media/service-logs-a667bb5c.png" alt-text="Displays a screenshot of the Service instande logs.":::
+:::image type="content" source="../media/service-logs-a667bb5c.png" alt-text="Displays a screenshot of the Service instance logs.":::
 
 
 To view the log entries, do the following procedures.
