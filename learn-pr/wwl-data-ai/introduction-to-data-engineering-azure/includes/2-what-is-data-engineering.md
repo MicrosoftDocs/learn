@@ -1,8 +1,7 @@
 
 
-A data engineer is focused and has expertise in working with multiple types of data to perform various operations. This work might include integrating, transforming, and consolidating data from multiple structured, semi-structured, and unstructured data systems into data consumable by downstream analysts or systems.
+The data engineer will often work with multiple types of data to perform many operations using a number of scripting or coding languages that are appropriate to their individual organization. In this section you will find some of the more common types and patterns you will be addressing as a data engineer.
 
-The data engineer will often work with multiple types of data to perform a number of operations using a number of scripting or coding languages that are appropriate to their individual organization. This may include Python, SQL, Scala, R, and more.
 
 ## Types of Data
 
@@ -12,13 +11,13 @@ There are three primary types of data that a data engineer will interact with on
 
 ![Structured data type](../media/2-structured-data.png)
 
-Structured data primarily comes from source systems that are table based, such as a database server which can be through a direct connection or direct query or from a flat file such as a comma separated (csv) file. The primary elements of a structured file is that the rows and columns are aligned consistently throughout the file.
+Structured data primarily comes from source systems that are table based, such as a database server, which can be through a direct connection or direct query or from a flat file such as a comma separated (CSV) file.. The primary elements of a structured file is that the rows and columns are aligned consistently throughout the file.
 
 ### Semi-structured Data
 
 ![Semi-structured data type](../media/2-semi-structured-data.png)
 
-Semi-structured data, as the name implies is data, such as java script object notation (json) files which may require flattening prior to loading into your source system. This data when flattened doesn't have to fit neatly into a table structure and when forced into a relational structure can contain many null values. This doesn't mean it has no value, in fact, many times it provides key insights that just need to be handled in a different manner than relational or structured data.
+Semi-structured data, as the name implies is data, such as java script object notation (json) files, which may require flattening prior to loading into your source system. This data when flattened doesn't have to fit neatly into a table structure and when forced into a relational structure can contain many null values. This doesn't mean it has no value, in fact, many times it provides key insights that just need to be handled in a different manner than relational or structured data.
 
 ### Unstructured Data
 

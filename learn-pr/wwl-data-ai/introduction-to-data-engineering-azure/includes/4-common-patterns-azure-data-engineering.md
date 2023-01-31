@@ -48,6 +48,7 @@ Some characteristics of a data warehouse include:
 ### Apache Spark
 
 ![Apache spark](../media/4-apache-spark.png)
+
 Spark is a parallel processing framework that takes advantage of in-memory processing and a distributed file architecture, such as data lake. It is a common open-source software (oss) tool for big data scenarios and has support for many of what we reviewed above including:
 
 - Extract, Transform, and Load (ETL)
