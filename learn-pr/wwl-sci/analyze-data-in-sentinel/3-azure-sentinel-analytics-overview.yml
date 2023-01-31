@@ -1,21 +1,21 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.analyze-data-in-sentinel.3-azure-sentinel-analytics-overview
+title: What is Microsoft Sentinel Analytics?
 metadata:
   title: What is Microsoft Sentinel Analytics?
-  description: Explain what is Microsoft Sentinel Analytics.
-  ms.date: 12/15/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  description: "Explain what is Microsoft Sentinel Analytics."
+  ms.date: 01/27/2023
+  author: wwlpublish
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: What is Microsoft Sentinel Analytics?
 durationInMinutes: 5
 content: |
   [!include[](includes/3-azure-sentinel-analytics-overview.md)]
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
-  - content: "Which of the following are not common use cases of analytics rules?"
+  - content: "Which of the following aren't common use cases of analytics rules?"
     choices:
     - content: "Identifying compromised accounts."
       isCorrect: false
@@ -37,4 +37,3 @@ quiz:
     - content: "Rules and templates section"
       isCorrect: false
       explanation: "Contains all the rule templates that Microsoft has pre-loaded from Microsoft Sentinel's GitHub repository."
- 
