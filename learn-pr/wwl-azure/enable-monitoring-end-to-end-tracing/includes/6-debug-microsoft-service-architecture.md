@@ -1,4 +1,4 @@
-Now that you've been collecting log data from your Spring Cloud Service, your next step will be to query the log data.
+Now that you've been collecting log data from your Spring Apps Service, your next step will be to query the log data.
 
 In this section, you'll view the following entries:
 
