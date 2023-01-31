@@ -65,7 +65,7 @@ To install the latest Azure Az PowerShell module, run the following commands:
 
 This installs the module for your current user (controlled by the `Scope` parameter).
 
-The command relies on NuGet to retrieve components, so depending on the version you've installed, you might be prompted to download and install the latest version of NuGet.
+The command relies on NuGet to retrieve components. So depending on the version you've installed, you might be prompted to download and install the latest version of NuGet.
 
 ```Output
 NuGet provider is required to continue
@@ -115,7 +115,7 @@ Both behaviors typically indicate that the execution policy is "Restricted", mea
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
     ```
 
-    This will prompt you for permission:
+    You'll be prompted for permission:
 
     ```Output
     The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose
@@ -128,7 +128,7 @@ Both behaviors typically indicate that the execution policy is "Restricted", mea
 
 1. At the command prompt, use the up arrow on your keyboard and rerun the `Install-Module` command for Azure.
 
-You should be able to see the Az module loading. After it completes, you'll be able to use `Import-Module` to load the cmdlets.
+You should be able to see the Az PowerShell module loading. After it completes, you'll be able to use `Import-Module` to load the cmdlets.
 
 :::zone-end
 
@@ -154,7 +154,7 @@ Installing Azure PowerShell on Linux or macOS uses the same commands.
 
 ### Update a PowerShell module
 
-If you get a warning or error message indicating that a version of the Azure PowerShell module is already installed, you can update to the *latest* version by issuing the following command:
+If you get a warning or error message indicating that a version of the Azure PowerShell module is already installed, you can issue the following command to update to the *latest* version:
 
 ```powershell
 Update-Module -Name Az
@@ -244,7 +244,7 @@ New-AzResourceGroup -Name <name> -Location <location>
 ```
 
 > [!NOTE]
-> Remember, we will be working in an active Azure sandbox, which creates the Resource Group for you. Use the command above if you prefer to work in your own subscription.
+> Remember, we will be working in an active Azure sandbox, which creates the Resource Group for you. Use the previous command if you prefer to work in your own subscription.
 
 ### Verify the resources
 
@@ -287,7 +287,7 @@ Azure PowerShell provides the `New-AzVm` cmdlet to create a virtual machine. The
        -Image <image name>
 ```
 
-You can supply these parameters directly to the cmdlet as shown above. Alternatively, you can use other cmdlets to configure the virtual machine, such as `Set-AzVMOperatingSystem`, `Set-AzVMSourceImage`, `Add-AzVMNetworkInterface`, and `Set-AzVMOSDisk`.
+You can supply these parameters directly to the cmdlet as shown in the previous example. Alternatively, you can use other cmdlets to configure the virtual machine, such as `Set-AzVMOperatingSystem`, `Set-AzVMSourceImage`, `Add-AzVMNetworkInterface`, and `Set-AzVMOSDisk`.
 
 Here's an example that strings the `Get-Credential` cmdlet together with the `-Credential` parameter:
 
