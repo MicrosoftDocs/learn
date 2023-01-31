@@ -1,10 +1,6 @@
-When a customer adds a pizza to their order, they can select a **X** to remove it without confirmation. The company thinks customers might have been accidentally clicking this and removing items from their order. You'll add a feature that prompts the user to make sure they do want to remove the pizza.
+When a customer adds a pizza to their order, they can select a **X** to remove it without confirmation. The company thinks customers might have been accidentally clicking this and removing items from their order. You'll add a feature that prompts the user to make sure they do want to remove the pizza. The pizza company wants to be able to show customers the live status of their orders. You'll update the order detail page to query the order status in real-time.
 
-<!--
-The pizza company wants to be able to show customers the live status of their order. You'll update the order detail page to query the order status in real time.
--->
-
-In this exercise, you'll extend an existing app created for the pizza delivery company. You'll use JS interop to call JavaScript on the client side from a Blazor component. You'll then see how to integrate with a third-party JavaScript library to improve the popup. <!-- In the final steps of the exercise, you'll call a Blazor method from JavaScript to get the real-time status of a customer order. -->
+In this exercise, you'll extend an existing app created for the pizza delivery company. You'll use JS interop to call JavaScript on the client side from a Blazor component. You'll then see how to integrate with a third-party JavaScript library to improve the popup. In the final steps of the exercise, you'll call a Blazor method from JavaScript to get the real-time status of a customer order.
 
 ## Clone your team's existing app
 
@@ -13,7 +9,7 @@ In this exercise, you'll extend an existing app created for the pizza delivery c
 
 If you haven't created a Blazor app before, follow the [setup instructions for Blazor](https://aka.ms/blazor-getting-started) to install the correct version of .NET and check your machine is set up correctly. Stop at the **Create your app** step.
 
-[!include[](../../../includes/dotnet6-sdk-version.md)]
+[!include[](../../../includes/dotnet7-sdk-version.md)]
 
 1. Open **Visual Studio Code**.
 1. Open the integrated terminal from Visual Studio Code by selecting **View**, then select **Terminal** from the main menu.
@@ -48,13 +44,13 @@ To use the JavaScript interop, you inject the `IJSRuntime` abstraction.
     @inject IJSRuntime JavaScript
     ```
 
-1. Currently, the `onclick` event for the remove click calls the `OrderState.RemoveConfiguredPizza(configuredPizza))` method directly. Replace the entire `a` element with the following:
+1. Currently, the `onclick` event for the remove pizza functionality calls the `OrderState.RemoveConfiguredPizza(configuredPizza))` method directly. Replace the entire `<a >...</a>` element with the following markup:
 
    ```razor
-   <a @onclick="@(async () => await RemovePizzaConfirmation(configuredPizza))" 
-      class="delete-item">
-      ❌
-   </a>
+   <button type="button" class="close text-danger" aria-label="Close"
+        @onclick="@(async () => await RemovePizzaConfirmation(configuredPizza))">
+        <span aria-hidden="true">&times;</span>
+    </button>
    ```
 
 1. Add a new method to call the native JavaScript `confirm` function. If the customer selects **OK** from this prompt, then call the `RemoveConfiguredPizza`, otherwise leave the pizza in the order.
@@ -71,9 +67,7 @@ To use the JavaScript interop, you inject the `IJSRuntime` abstraction.
     }
     ```
 
-    This method takes the selected pizza as a parameter. The server then uses the <xref:Microsoft.JSInterop.IJSRuntime.InvokeAsync%2A?displayProperty=nameWithType> method to call the `confirm` function on the client side. The response from the call returns a `bool` response.
-
-    The response is evaluated, and when it's `true` the pizza is removed from the order.
+    The server uses the <xref:Microsoft.JSInterop.IJSRuntime.InvokeAsync%2A?displayProperty=nameWithType> method to call the `confirm` function on the client side. The response from the call returns a `bool` value. When it's `true` the pizza is removed from the order.
 
 1. In Visual Studio Code, press <kbd>F5</kbd>, or in the **Run** menu, select **Start Debugging**.
 
@@ -103,9 +97,9 @@ After some research you find a small JavaScript library called SweetAlert that l
 
     This now makes SweetAlert available to call on the client side.
 
-1. Update the `RemovePizzaConfirmation` method to use the new library.
+1. Back in the Update the `RemovePizzaConfirmation` method to use the new library.
 
-    ```razor
+    ```csharp
     private async Task RemovePizzaConfirmation(Pizza removePizza)
     {
         var messageParams = new
@@ -221,7 +215,7 @@ The `OrderDetail` component shows the current status of a pizza order. Customers
 
 1. In Visual Studio Code, press <kbd>F5</kbd> or, in the **Run** menu, select **Start Debugging**.
 
-    :::image type="content" source="../media/3-order-status-updated-realtime.gif" alt-text="Animated gig showing the order status changing in real-time.":::
+    :::image type="content" source="../media/3-order-status-updated-realtime.gif" alt-text="Animation showing the order status changing in real-time.":::
 
     Start the app and order a pizza. When the customer gets to the order detail screen the status updates and the spinner is removed when the pizza is delivered.
 
