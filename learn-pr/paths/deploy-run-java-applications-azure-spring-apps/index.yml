@@ -27,6 +27,6 @@ products:
 - github
 - azure-spring-apps
 modules:
-- learn.wwl.configure-azure-event-hubs-azure-spring-apps
+- learn.wwl.protect-endpoints-use-web-application-firewall
 trophy:
   uid: learn.wwl.deploy-run-java-applications-azure-spring-apps.trophy
