@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-azure-private-5g-core.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summarizes what you have learned about the management capabilities of Azure Private 5G Core.
+  ms.date: 11/29/2022
+  author: michael-weizhong-shan
+  ms.author: michaelshan
+  ms.topic: interactive-tutorial
+  ms.service: learning-private-5g-core
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]
