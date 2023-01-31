@@ -1,5 +1,3 @@
-# Discussion
-
 Congratulations on making it to this section! Now we need to reflect on what we have done and understand how the concepts in this project will help you in the future.
 
 1. The UDP server socket must be bound to a port that is known by the client.

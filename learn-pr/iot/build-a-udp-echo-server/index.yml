@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.iot.building-and-running-a-udp-echo-server
+uid: learn.iot.build-a-udp-echo-server
 metadata:
   title: Building and running a UDP echo server
   description: Building and running a UDP echo server
@@ -20,7 +20,7 @@ abstract: |
 
 prerequisites: |
   - Completion of the ThreadX learning path, a working knowledge of C/C++ and GitHub will be most helpful.
-iconUrl: /learn/achievements/iot/building-and-running-a-udp-echo-server.svg
+iconUrl: /training/achievements/iot/netx-duo-build-a-udp-echo-server.svg
 levels:
   - beginner
 roles:
@@ -30,11 +30,11 @@ products:
   - azure-iot
   - azure-iot-hub
 units:
-  - learn.iot.building-and-running-a-udp-echo-server.overview
-  - learn.iot.building-and-running-a-udp-echo-server.sending-and-receiving-udp-packets
-  - learn.iot.building-and-running-a-udp-echo-server.building-and-running-the-project
-  - learn.iot.building-and-running-a-udp-echo-server.discussion
-  - learn.iot.building-and-running-a-udp-echo-server.knowledge-check
-  - learn.iot.building-and-running-a-udp-echo-server.summary
+  - learn.iot.build-a-udp-echo-server.overview
+  - learn.iot.build-a-udp-echo-server.sending-and-receiving-udp-packets
+  - learn.iot.build-a-udp-echo-server.building-and-running-the-project
+  - learn.iot.build-a-udp-echo-server.discussion
+  - learn.iot.build-a-udp-echo-server.knowledge-check
+  - learn.iot.build-a-udp-echo-server.summary
 badge:
-  uid: learn.iot.building-and-running-a-udp-echo-server.badge
+  uid: learn.iot.build-a-udp-echo-server.badge

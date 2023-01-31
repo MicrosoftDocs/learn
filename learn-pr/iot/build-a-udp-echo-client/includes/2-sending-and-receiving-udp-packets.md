@@ -1,5 +1,3 @@
-# Sending and receiving UDP packets
-
 ## Overview
 
 The logic of the UDP echo client is similar to the Hello World project except for the transport layer. After we build and run **ProjectUPDEchoClient**, the following actions occur.
@@ -40,7 +38,7 @@ This statement is in a loop and is used to send the packet to the echo server.
 
 To get started, let’s look at the code in the UDP echo client project, and understand the purpose of each section. We'll investigate the code based on the general template discussed previously.
 
-## Section 1—Include directives and definitions
+## Section 1: Include directives and definitions
 
 As you may recall from the NetX general template, the first section comprises include directives and definitions. The required C header files for ThreadX and NetX that contain system equates, data structures, and service prototypes are specified here.
 
@@ -112,7 +110,7 @@ extern  VOID _nx_linux_network_driver(NX_IP_DRIVER*);
 void client_thread_entry(ULONG thread_input);
 ```
 
-## Section 2—main
+## Section 2: main
 
 The second part of the general template is the **main**, which is often the same in most projects.
 
@@ -127,7 +125,7 @@ int main()
 
 Any code following `tx_kernel_enter()` is unreachable.
 
-## Section 3—`tx_application_define`
+## Section 3: `tx_application_define`
 
 The tx_application_define is devoted to NetX initialization, creating packet pools, creating IP instances, enabling ARP and ICMP, and displaying output information.
 
@@ -205,7 +203,7 @@ UINT    status;
 }
 ```
 
-## Section 4—Thread entry function
+## Section 4: Thread entry function
 
 This is the function for the thread called client_thread_entry that performs the operations of the echo client.
 

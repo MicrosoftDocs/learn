@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.iot.building-and-running-a-udp-echo-client
+uid: learn.iot.build-a-udp-echo-client
 metadata:
   title: Building and running a UDP echo client
   description: Building and running a UDP echo client
@@ -20,7 +20,7 @@ abstract: |
 
 prerequisites: |
   - Completion of the ThreadX learning path, a working knowledge of C/C++ and GitHub will be most helpful.
-iconUrl: /learn/achievements/iot/building-and-running-a-udp-echo-client.svg
+iconUrl: /training/achievements/iot/netx-duo-build-a-udp-echo-client.svg
 levels:
   - beginner
 roles:
@@ -30,11 +30,11 @@ products:
   - azure-iot
   - azure-iot-hub
 units:
-  - learn.iot.building-and-running-a-udp-echo-client.overview
-  - learn.iot.building-and-running-a-udp-echo-client.sending-and-receiving-udp-packets
-  - learn.iot.building-and-running-a-udp-echo-client.building-and-running-the-project
-  - learn.iot.building-and-running-a-udp-echo-client.discussion
-  - learn.iot.building-and-running-a-udp-echo-client.knowledge-check
-  - learn.iot.building-and-running-a-udp-echo-client.summary
+  - learn.iot.build-a-udp-echo-client.overview
+  - learn.iot.build-a-udp-echo-client.sending-and-receiving-udp-packets
+  - learn.iot.build-a-udp-echo-client.building-and-running-the-project
+  - learn.iot.build-a-udp-echo-client.discussion
+  - learn.iot.build-a-udp-echo-client.knowledge-check
+  - learn.iot.build-a-udp-echo-client.summary
 badge:
-  uid: learn.iot.building-and-running-a-udp-echo-client.badge
+  uid: learn.iot.build-a-udp-echo-client.badge

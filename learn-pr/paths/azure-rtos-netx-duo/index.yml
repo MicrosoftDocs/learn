@@ -29,7 +29,7 @@ modules:
   - learn.iot.introduction-azure-rtos-netx-duo
   - learn.iot.azure-rtos-netx-duo-fundamentals
   - learn.iot.create-first-netx-duo-project
-  - learn.iot.building-and-running-a-udp-echo-client
-  - learn.iot.building-and-running-a-udp-echo-server
+  - learn.iot.build-a-udp-echo-client
+  - learn.iot.build-a-udp-echo-server
 trophy:
   uid: learn.iot.azure-rtos-netx-duo.trophy

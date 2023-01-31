@@ -1,5 +1,3 @@
-# Discussion
-
 Congratulations on making it to this section! Now we need to reflect on what we've done and understand how the concepts in this project will help you in the future.
 
 1. To keep the minimal code size, the transport layer protocols aren't enabled automatically in NetX. We need to call **nx_udp_enable** to enable UDP functionalities.

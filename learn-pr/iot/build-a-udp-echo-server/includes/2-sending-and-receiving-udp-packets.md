@@ -1,20 +1,20 @@
-# Getting started
+## Overview
 
 This project will build on the UDP echo client module and will introduce you to more concepts of UDP. The logic of the UDP echo server for this project is straightforward and the following procedure is an overview.
 
- 1. Create a UDP socket.
- 1. Bind to a port. In this project, we choose UDP port 7 because it's a well-known port.
- 1. Loop to receive a UDP packet.
- 1. Retrieve the IP address and port from the packet.
- 1. Send the UDP packet.
+1.  Create a UDP socket.
+1.  Bind to a port. In this project, we choose UDP port 7 because it's a well-known port.
+1.  Loop to receive a UDP packet.
+1.  Retrieve the IP address and port from the packet.
+1.  Send the UDP packet.
 
 The following diagram illustrates the main features of ProjectUDPEchoServer.
 
-   ![Sequence diagram showing the main features of ProjectUDPEchoServer.](../../building-and-running-a-udp-echo-server/media/00-sequence-diagram-for-project-echo-server.svg)
+![Sequence diagram showing the main features of ProjectUDPEchoServer.](../../building-and-running-a-udp-echo-server/media/00-sequence-diagram-for-project-echo-server.svg)
 
 To get started, let’s look at the code in the UDP echo server project, and understand the purpose of each section. We'll investigate the code based on the general NetX template discussed previously.
 
-## Section 1—include directives and definitions
+## Section 1: include directives and definitions
 
 As you may recall from the NetX general template, the first section comprises include directives and definitions. The required C header files for ThreadX and NetX that contain system equates, data structures, and service prototypes are specified here.
 
@@ -81,10 +81,9 @@ extern  VOID _nx_linux_network_driver(NX_IP_DRIVER*);
 void server_thread_entry(ULONG thread_input);
 ```
 
-## Section 2—main
+## Section 2: main
 
-> [!NOTE]
-> The second part of the general template is the main, which is often the same in most projects.
+The second part of the general template is the main, which is often the same in most projects.
 
 ```c
 /* Define main entry point.  */
@@ -95,10 +94,9 @@ int main()
 }
 ```
 
-## Section 3—tx_application_define
+## Section 3: `tx_application_define`
 
-> [!NOTE]
-> The **tx_application_define** is dedicated to NetX initialization, creating packet pools, creating IP instances, enabling ARP and ICMP, and displaying output information.
+The **tx_application_define** is dedicated to NetX initialization, creating packet pools, creating IP instances, enabling ARP and ICMP, and displaying output information.
 
 ```c
 /* Define what the initial system looks like.  */
@@ -172,7 +170,7 @@ UINT    status;
 }
 ```
 
-## Section 4—Thread entry function
+## Section 4: Thread entry function
 
 The following function for the thread called **server_thread_entry** performs the operations of the echo server.
 
@@ -214,7 +212,7 @@ UINT         echo_client_port;
     /* Loop to echo data from client.  */
     for (;;)
     {
-        
+
         /* Receive a packet.  */
         status =  nx_udp_socket_receive(&udp_server, &packet_ptr, NX_WAIT_FOREVER);
 
@@ -230,7 +228,7 @@ UINT         echo_client_port;
 
         /* Echo data to client.  */
         status =  nxd_udp_socket_send(&udp_server, packet_ptr, &echo_client_address, echo_client_port);
-        
+
         /* Check status.  */
         if (status != NX_SUCCESS)
         {

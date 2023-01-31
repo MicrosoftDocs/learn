@@ -1,8 +1,4 @@
-# Getting started
-
 ## Learning objectives
-
-20 minutes
 
 In this module, you will learn about building and running a UDP echo server. You will build on the UDP echo client in the previous module, and you will again use Codespaces to build and run your project.
 

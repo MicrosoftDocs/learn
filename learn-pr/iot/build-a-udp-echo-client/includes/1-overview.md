@@ -1,8 +1,4 @@
-# Building a UDP echo client
-
 ## Learning objectives
-
-20 minutes
 
 In this module, you'll learn about building and running a UDP echo client. You'll learn about the user datagram protocol (UDP), ports, sockets, and packet transmission. You'll also use codespace to build and run your project.
 
@@ -38,15 +34,15 @@ The User Datagram Protocol (UDP) provides the simplest form of data transfer bet
 
 We'll use various UDP services in this project. Here's a summary of these services and brief definitions.
 
-| **Service** | **Description** |
-|---|---|
-| nx_udp_enable | Enable UDP component of NetX  |
-| nx_udp_socket_bind | Bind UDP socket to UDP port  |
-| nx_udp_socket_create | Create UDP socket  |
-| nx_udp_socket_delete | Delete UDP socket  |
-| nx_udp_socket_receive | Receive datagram from UDP socket  |
-| nx_udp_socket_send | Send a UDP Datagram  |
-| nx_udp_socket_unbind | Unbind UDP socket from UDP port |
+| **Service**           | **Description**                  |
+| --------------------- | -------------------------------- |
+| nx_udp_enable         | Enable UDP component of NetX     |
+| nx_udp_socket_bind    | Bind UDP socket to UDP port      |
+| nx_udp_socket_create  | Create UDP socket                |
+| nx_udp_socket_delete  | Delete UDP socket                |
+| nx_udp_socket_receive | Receive datagram from UDP socket |
+| nx_udp_socket_send    | Send a UDP Datagram              |
+| nx_udp_socket_unbind  | Unbind UDP socket from UDP port  |
 
 ## UDP client
 
