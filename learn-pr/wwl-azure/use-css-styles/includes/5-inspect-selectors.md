@@ -5,7 +5,7 @@ There are three core types of selectors:
 - Classes
 - IDs
 
-By using these selectors, you can apply styles to a lot of elements or a very few.
+By using these selectors, you can apply styles to many elements or a few.
 
 ## Element Selectors
 
@@ -37,7 +37,7 @@ When creating a resume, you'll likely have sections for your education and emplo
 </div>
 ```
 
-In the example above, you would likely want the formatting for each `div` to be the same as they're displaying similar types of information. By marking the two `div` elements with the same class, you can apply the same CSS style to each.
+In the previous example, you would likely want the formatting for each `div` to be the same as they're displaying similar types of information. By marking the two `div` elements with the same class, you can apply the same CSS style to each.
 
 To identify a class in CSS, you prefix a `.` in front of the name. In our example, you would use `.history`.
 
@@ -47,7 +47,7 @@ To identify a class in CSS, you prefix a `.` in front of the name. In our exampl
 }
 ```
 
-If you were using a CSS file, you would write the class style definition in the CSS file. The class attribute in HTML references the definition from the CSS file.
+If using a CSS file, you would write the class style definition in the CSS file. The class attribute in HTML references the definition from the CSS file.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE5amMK]
 ### Pseudo-classes
@@ -64,7 +64,7 @@ a:hover {
 }
 ```
 
-Some of the most common pseudo-classes are listed below:
+Some of the most common pseudo-classes are listed in the following table:
 
 | Pseudo-class  | Description                                          |
 | ------------- | ---------------------------------------------------- |
@@ -79,7 +79,7 @@ Some of the most common pseudo-classes are listed below:
 
 ## ID Selectors
 
-Similar to classes, an ID allows you to apply a style to an element. The key difference is while a class can be applied to multiple elements, an ID must be unique and refer to only one element.
+Similar to classes, an ID allows you to apply a style to an element. But, while a class can be applied to multiple elements, an ID must be unique and refer to only one element.
 
 On a resume, you might have a section for social media, such as Twitter, GitHub, or your blog. If you wanted a custom style for that section, you could set an ID:
 

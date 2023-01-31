@@ -3,7 +3,7 @@ uid: learn.student-evangelism.basic-python-nasa.7a-knowledge-check
 metadata:
   title: Knowledge check
   description: Interactive questions that validate whether the learner achieved the learning objectives.
-  ms.date: 05/05/2021
+  ms.date: 01/25/2023
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -17,18 +17,18 @@ quiz:
   questions:
   - content: "Which of the following terms is not a variable type?"
     choices:
-    - content: "Integer"
+    - content: "Integer (`int`)"
       isCorrect: false
-      explanation: "Integers are variables that store numbers."
-    - content: "Float"
+      explanation: "An `int` is a variable that stores numbers."
+    - content: "Float (`float`)"
       isCorrect: false
-      explanation: "Floats are variables that function as decimals."
-    - content: "String"
+      explanation: "A `float` is a variable that functions as a decimal."
+    - content: "String (`str`)"
       isCorrect: false
-      explanation: "String is actually a variable that stores words."
-    - content: "Word"
+      explanation: "A `str` is actually a variable that stores words."
+    - content: "Word (`word`)"
       isCorrect: true
-      explanation: "Correct! Words are called String."
+      explanation: "Correct! A `word` is not a variable type. Use string (`str`) instead for text."
   - content: "Which statement is correct?"
     choices:
     - content: "Lists can store only one type of data."
@@ -37,17 +37,17 @@ quiz:
     - content: "Lists can store all types of data."
       isCorrect: true
       explanation: "Correct! Lists can store all types of data."
-  - content: "Which of the following is the correct way to print the value of a variable and text?"
+  - content: "Which of the following lines of code is the correct way to print the value of a variable called `variable` and text?"
     choices:
-    - content: "print(\"This is a variable\"; variable)"
+    - content: "`print(\"The variable's value is\"; variable)`"
       isCorrect: false
       explanation: "The semicolon (;) should be a comma."
-    - content: "print(\"This is a variable\", variable)"
+    - content: "`print(\"The variable's value is\", variable)`"
       isCorrect: true
       explanation: "Correct! This is how to correctly print a variable and text."
-    - content: "print(\"This is a variable\": variable)"
+    - content: "`print(\"The variable's value is\": variable)`"
       isCorrect: false
       explanation: "The colon (:) should be a comma."
-    - content: "print(\"This is a variable\"~ variable)"
+    - content: "`print(\"The variable's value is\"~ variable)`"
       isCorrect: false
       explanation: "The tilde (~) should be a comma."
