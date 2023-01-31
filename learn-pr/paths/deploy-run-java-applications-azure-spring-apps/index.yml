@@ -27,7 +27,6 @@ products:
 - github
 - azure-spring-apps
 modules:
-- learn.wwl.plan-java-application-migration-azure-spring-apps
-- learn.wwl.migrate-spring-cloud-application-to-azure
+- learn.wwl.enable-monitoring-end-to-end-tracing
 trophy:
   uid: learn.wwl.deploy-run-java-applications-azure-spring-apps.trophy
