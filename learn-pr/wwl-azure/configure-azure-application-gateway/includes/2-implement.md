@@ -1,12 +1,14 @@
 Administrators use Azure Application Gateway to manage requests from client applications to their web apps.
 
-In the following image, internet client applications request access to resources in a load-balanced back-end pool. The requests are managed by Azure Application Gateway, which is listening for HTTP/HTTPS messages. Messages are handled by load-balancing rules that direct client request traffic to appropriate resources.
+#### Business scenario
+
+Consider a scenario where internet client applications request access to resources in a load-balanced back-end pool. The requests can be managed by implementing Azure Application Gateway to listen for HTTP(S) messages. Messages can be handled by load-balancing rules to direct client request traffic to the appropriate resources in the pool. The following diagram illustrates this scenario:
 
 :::image type="content" source="../media/application-gateway-cb3392f4.png" alt-text="Diagram that illustrates how Azure Application Gateway manages requests from client applications to resources in a back-end pool, as described in the text." border="false":::
 
 ### Things to know about Azure Application Gateway
 
-Examine the following benefits of working with Azure Application Gateway.
+Let's examine some of the benefits of using Azure Application Gateway to manage internet traffic to your web applications.
 
 | Benefit | Description |
 | --- | --- |
@@ -15,5 +17,5 @@ Examine the following benefits of working with Azure Application Gateway.
 | **Session stickiness** | Apply session stickiness to your application gateway to ensure client requests in the same session are routed to the same back-end server. |
 | **Supported protocols** | Build an application gateway to support the HTTP, HTTPS, HTTP/2, or WebSocket protocols. |
 | **Firewall protection** | Implement a web application firewall to protect against web application vulnerabilities. |
-| **Encryption** | Support end-to-end request encryption. |
+| **Encryption** | Support end-to-end request encryption for your web applications. |
 | **Load autoscaling** | Dynamically adjust capacity as your web traffic load changes. |

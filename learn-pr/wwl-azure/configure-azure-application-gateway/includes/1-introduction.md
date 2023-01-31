@@ -10,7 +10,7 @@ In this module, you learn how to:
 
 - Identify features and usage cases for Azure Application Gateway.
 - Implement an Azure application gateway, including selecting a routing method.
-- Configure gateway features like routing rules.
+- Configure gateway components, such as listeners, firewalls, health probes, and routing rules.
 
 ## Skills measured
 
