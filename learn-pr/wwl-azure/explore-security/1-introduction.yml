@@ -3,8 +3,8 @@ uid: learn.wwl.explore-security.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction"
-  ms.date: 01/27/2023
+  description: "Introduction unit that introduces the content in the overall security module. This unit comes before any content units."
+  ms.date: 01/31/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
