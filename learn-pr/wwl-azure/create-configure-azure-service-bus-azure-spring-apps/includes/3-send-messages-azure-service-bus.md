@@ -24,7 +24,7 @@ Do the following procedure to test and send messages to an Azure Service Bus.
     ```azurecli
     <module>spring-petclinic-messaging-emulator</module>
     ```
-2.  Update the compiled version of the microservices available by running an another build.
+2.  Update the compiled version of the microservices available by running another build.
     
     ```azurecli
     cd ~/projects/spring-petclinic-microservices
