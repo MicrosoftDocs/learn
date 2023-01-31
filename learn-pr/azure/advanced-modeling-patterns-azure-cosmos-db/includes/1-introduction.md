@@ -19,4 +19,4 @@ In this module, you'll complete the redesign of the NoSQL database for your e-co
 
 ## What is the main goal?
 
-After you've finished this module and its companion module "Model and partition your data in Azure Cosmos DB," you'll have the knowledge and skills necessary to properly model and partition data for a NoSQL database, such as Azure Cosmos DB.
+After you've finished this module and its companion module [Model and partition your data in Azure Cosmos DB](../../model-partition-data-azure-cosmos-db\1-introduction.yml), you'll have the knowledge and skills necessary to properly model and partition data for a NoSQL database, such as Azure Cosmos DB.

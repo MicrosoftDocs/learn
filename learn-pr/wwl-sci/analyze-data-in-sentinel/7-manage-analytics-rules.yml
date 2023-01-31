@@ -1,19 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.analyze-data-in-sentinel.7-manage-analytics-rules
+title: Manage analytics rules
 metadata:
   title: Manage analytics rules
-  description: Describes how to manage and modify analytics rules.
-  ms.date: 12/15/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  description: "Describes how to manage and modify analytics rules."
+  ms.date: 01/27/2023
+  author: wwlpublish
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Manage analytics rules
 durationInMinutes: 4
 content: |
   [!include[](includes/7-manage-analytics-rules.md)]
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
   - content: "Due to ongoing maintenance activity, you need to stop receiving alerts from analytic rules temporarily. Which action should you enable on the rule to achieve that configuration?"
     choices:
@@ -37,4 +37,3 @@ quiz:
     - content: "Create a new rule."
       isCorrect: false
       explanation: "Creation of the new analytic rule will require you to provide more inputs to achieve the required customization, instead of simply duplicating the rule."
-   

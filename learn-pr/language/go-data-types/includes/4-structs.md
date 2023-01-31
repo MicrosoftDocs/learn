@@ -6,7 +6,7 @@ In this section, we'll explore why structs are essential and how to use them.
 
 ## Declare and initialize a struct
 
-To declare a struct, you need to use the `struct` keyword, along with the list of fields and their type that you want your new data type to have. For instance, to define an employee struct, you could use the following code:
+To declare a struct, you need to use the `struct` keyword, along with the list of fields and their types that you want your new data type to have. For instance, to define an employee struct, you could use the following code:
 
 ```go
 type Employee struct {
@@ -105,7 +105,7 @@ var employee Employee
 employee.Information.FirstName = "John"
 ```
 
-If you're refactoring code like we're doing, that would break our code. Alternatively, you can simply include a new field with the same name of the struct you're embedding, like this example:
+If you're refactoring code like we're doing, that would break our code. Alternatively, you can include a new field with the same name of the struct you're embedding, like this example:
 
 ```go
 type Employee struct {

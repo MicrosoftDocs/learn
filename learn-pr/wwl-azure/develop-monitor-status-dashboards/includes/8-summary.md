@@ -9,7 +9,7 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Create a dashboard in the Azure portal](/azure/azure-portal/azure-portal-dashboards).
- -  [Create custom views by using View Designer in Azure Monitor](/azure/azure-monitor/visualize/view-designer).
- -  [Transition from View Designer to Workbooks](/azure/azure-monitor/visualize/view-designer-conversion-overview).<br>
- -  [Log Analytics integration with Power BI](/azure/azure-monitor/logs/log-powerbi).
+ -  [Create a dashboard in the Azure portal - Azure portal \| Microsoft Docs](/azure/azure-portal/azure-portal-dashboards).
+ -  [Create views to analyze log data in Azure Monitor - Azure Monitor \| Microsoft Docs](/azure/azure-monitor/visualize/view-designer).
+ -  [Azure Monitor view designer to workbooks transition guide - Azure Monitor \| Microsoft Docs](/azure/azure-monitor/visualize/view-designer-conversion-overview).<br>
+ -  [Log Analytics integration with Power BI and Excel - Azure Monitor \| Microsoft Docs](/azure/azure-monitor/logs/log-powerbi).
