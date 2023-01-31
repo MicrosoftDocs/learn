@@ -19,7 +19,7 @@ A database account is a container for managing one or more databases. Before we 
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) resource menu, or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the **Create a resource** menu, select **Databases**, and then search for and select **Azure Cosmos DB**. The **Select API option** pane appears. 
+1. In the **Create a resource** menu, select **Databases**, and then search for and select **Azure Cosmos DB**. The **Which API best suits your workload?** pane appears.
 
 1. In the **Azure Cosmos DB for NoSQL** option, select **Create** so that we can create a Cosmos DB trigger and input/output bindings. The **Create Azure Cosmos DB Account - Azure Cosmos DB for NoSQL** pane appears.
 
