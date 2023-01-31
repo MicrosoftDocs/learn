@@ -1,19 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.threat-response-sentinel-playbooks.5-playbook-on-demand
+title: Run playbooks on demand
 metadata:
   title: Run playbooks on demand
-  description: Run playbooks to respond to existing incidents.
-  ms.date: 12/17/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  description: "Run playbooks to respond to existing incidents."
+  ms.date: 01/25/2023
+  author: wwlpublish
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Run playbooks on demand
 durationInMinutes: 8
 content: |
   [!include[](includes/5-playbook-on-demand.md)]
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
   - content: "An administrator wants to attach a playbook to an existing incident and starts to investigate the incident. Which option should the administrator select to attach the playbook?"
     choices:
@@ -37,4 +37,3 @@ quiz:
     - content: "Microsoft Sentinel repository on GitHub"
       isCorrect: true
       explanation: "Microsoft Sentinel repository on GitHub contains out of the box detections, exploration queries, hunting queries, workbooks, and playbooks that will help you to secure your environment and hunt for threats."
- 
