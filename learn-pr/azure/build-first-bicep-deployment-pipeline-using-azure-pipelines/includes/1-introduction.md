@@ -1,7 +1,7 @@
 You can use Azure Pipelines to automate Bicep deployments. Azure Pipelines provides a flexible and reusable process to propagate changes to your Azure environment. A pipeline enforces the process that you set to ensure the quality of your deployments and of your Azure environment. A deployment pipeline also ensures that everyone who collaborates on your Bicep files uses the same process. In this module, you'll learn how to define a pipeline in Azure Pipelines and how to deploy your Bicep code by using the pipeline.
 
 > [!NOTE]
-> If you're interested in using GitHub Actions instead of Azure Pipelines to deploy infrastructure to Azure, see [Build your first Bicep deployment workflow by using GitHub Actions](/training/modules/build-first-bicep-deployment-pipeline-using-github-actions/). If you need help deciding, see [Compare and contrast GitHub Actions and Azure Pipelines](/dotnet/architecture/devops-for-aspnet-developers/actions-vs-pipelines?azure-portal=true).
+> If you're interested in using GitHub Actions instead of Azure Pipelines to deploy infrastructure to Azure, see [Build your first Bicep deployment workflow by using GitHub Actions](/training/modules/build-first-bicep-deployment-pipeline-using-github-actions/). If you need help deciding, see [Compare and contrast GitHub Actions and Azure Pipelines](/dotnet/architecture/devops-for-aspnet-developers/actions-vs-pipelines).
 
 ## Example scenario
 
@@ -18,20 +18,3 @@ In this module, you'll learn how to automate the deployment of Bicep templates b
 ## What is the main goal?
 
 After completing this module, you'll be able to use Azure Pipelines to create a pipeline that deploys a basic Bicep file to an Azure resource group.
-
-## Prerequisites
-
-You should be familiar with using:
-
-- Bicep, including creating and deploying basic Bicep files.
-- Azure, including the Azure portal, subscriptions, resource groups, and resources.
-- Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
-
-To work through the exercises in the module, you'll need an Azure account that can create resource groups, Azure Active Directory (Azure AD) applications, and service principals.
-
-You'll also need the following tools installed locally:
-
-- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
-- The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
-- The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps).
-- [Git](https://git-scm.com/download?azure-portal=true).
