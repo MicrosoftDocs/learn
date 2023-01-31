@@ -75,7 +75,7 @@ source env/bin/activate
 
 Calling `activate` changes your prompt. It's now preceded with `(env)` and looks something like this example:
 
-```bash
+```output
 (env) -> path/to/project
 ```
 
@@ -121,7 +121,7 @@ deactivate
 
 Notice how the terminal prompt changes. It's no longer preceded by `(env)` and has reverted to this appearance:
 
-```console
+```output
 path/to/project
 ```
 

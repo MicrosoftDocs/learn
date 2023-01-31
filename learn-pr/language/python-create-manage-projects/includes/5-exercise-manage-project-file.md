@@ -41,7 +41,7 @@ You have access to some source code and a _requirements.txt_ file. The .txt file
    type nul > requirements.txt
    ```
 
-   Or, this command on Linux, WSL or macOS, one line at a time:
+   Or, these commands on Linux, WSL or macOS, one line at a time:
 
     ```bash
     mkdir src

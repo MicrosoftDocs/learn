@@ -138,35 +138,5 @@ pip uninstall -r requirements.txt -y
 ```
 
 > [!WARNING]
-> The preceding commands would remove all installed packages, by first writing them to a _requirements.txt_ list and then removing all packages in that list. The output would look like this:
-> 
-> ```output
-> Found existing installation: python-dateutil==2.8.2
-> Uninstalling python-dateutil==2.8.2:
->   Successfully uninstalled python-dateutil==2.8.2
-> Found existing installation: six 1.16.0
-> Uninstalling six-1.16.0:
->   Successfully uninstalled six-1.16.0
-> ```
+> The preceding commands would remove all installed packages, by first writing them to a _requirements.txt_ list and then removing all packages in that list. 
 
-A better approach is to use the `autoremove` command. First you'll need to install `autoremove`:
-
-```console
-pip install pip-autoremove
-```
-
-```output
-Successfully installed pip-autoremove-0.10.0
-```
-
-The run the following command:
-
-```console
-pip-autoremove python-dateutil -y
-```
-
-Now if you run `pip freeze`, you see that it contains only the following output:
-
-```output
-pip-autoremove==0.10.0
-```
