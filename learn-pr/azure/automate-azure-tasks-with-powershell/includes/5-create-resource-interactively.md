@@ -1,4 +1,4 @@
-PowerShell lets you write commands and execute them immediately. This is known as **interactive mode**.
+Ins **interactive mode**, PowerShell lets you write commands and execute them immediately.
 
 Recall that the overall goal in the Customer Relationship Management (CRM) example is to create three test environments containing Virtual Machines. You'll use resource groups to ensure the VMs are organized into separate environments: one for unit testing, one for integration testing, and one for acceptance testing. You only need to create the resource groups once, so using the PowerShell interactive mode in this use case is a good choice.
 
@@ -40,7 +40,7 @@ Script     2.0.0      PSReadline                          {Get-PSReadLineKeyHand
 
 ## What is the Az PowerShell module?
 
-**Az** is the formal name for the Azure PowerShell module, which contains cmdlets to work with Azure features. It contains hundreds of cmdlets that let you control nearly every aspect of every Azure resource. You can work with resource groups, storage, virtual machines, Azure Active Directory, containers, machine learning, and so on. This module is an open-source component [available on GitHub](https://github.com/Azure/azure-powershell).
+**Az** is the formal name for the Azure PowerShell module, which contains cmdlets to work with Azure features. It contains hundreds of cmdlets that let you control nearly every aspect of every Azure resource. You can work with resource groups, storage, virtual machines, Azure Active Directory, containers, machine learning, and so on. The **Az** module is an open-source component [available on GitHub](https://github.com/Azure/azure-powershell).
 
 > [!NOTE]
 > You might have seen or used Azure PowerShell commands that used a `-AzureRM` format. Because Az PowerShell modules now have all the capabilities of AzureRM PowerShell modules and more, we'll retire AzureRM PowerShell modules on 29 February 2024. To avoid service interruptions, [update your scripts](https://aka.ms/azpsmigrate) that use AzureRM PowerShell modules to use Az PowerShell modules by 29 February 2024. To automatically update your scripts, follow the [quickstart guide](/powershell/azure/quickstart-migrate-azurerm-to-az-automatically).
@@ -63,9 +63,9 @@ To install the latest Azure Az PowerShell module, run the following commands:
     Install-Module -Name Az -Scope CurrentUser -Repository PSGallery
     ```
 
-This installs the module for your current user (controlled by the `Scope` parameter).
+The previous command installs the module for your current user (controlled by the `Scope` parameter).
 
-The command relies on NuGet to retrieve components, so depending on the version you've installed, you might be prompted to download and install the latest version of NuGet.
+The command relies on NuGet to retrieve components. So depending on the version you've installed, you might be prompted to download and install the latest version of NuGet.
 
 ```Output
 NuGet provider is required to continue
@@ -107,7 +107,7 @@ At line:1 char:1
 
 It might also fail by not responding at all. In this case, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the program.
 
-Both behaviors typically indicate that the execution policy is "Restricted", meaning you can't run  modules that you download from an external source, including the PowerShell Gallery. You can check this by running the cmdlet `Get-ExecutionPolicy`. If it returns "Restricted", then do the following:
+Both behaviors typically indicate that the execution policy is "Restricted", meaning you can't run  modules that you download from an external source, including the PowerShell Gallery. You can check by running the cmdlet `Get-ExecutionPolicy`. If it returns "Restricted", then:
 
 1. Use the `Set-ExecutionPolicy` cmdlet to change the policy to "RemoteSigned":
 
@@ -115,7 +115,7 @@ Both behaviors typically indicate that the execution policy is "Restricted", mea
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
     ```
 
-    This will prompt you for permission:
+    You'll be prompted for permission:
 
     ```Output
     The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose
@@ -128,7 +128,7 @@ Both behaviors typically indicate that the execution policy is "Restricted", mea
 
 1. At the command prompt, use the up arrow on your keyboard and rerun the `Install-Module` command for Azure.
 
-You should be able to see the Az module loading. After it completes, you'll be able to use `Import-Module` to load the cmdlets.
+You should be able to see the Az PowerShell module loading. After it completes, you'll be able to use `Import-Module` to load the cmdlets.
 
 :::zone-end
 
@@ -154,7 +154,7 @@ Installing Azure PowerShell on Linux or macOS uses the same commands.
 
 ### Update a PowerShell module
 
-If you get a warning or error message indicating that a version of the Azure PowerShell module is already installed, you can update to the *latest* version by issuing the following command:
+You may get a warning or error message that indicates a version of the Azure PowerShell module is already installed. If so, you can issue the following command to update to the *latest* version.
 
 ```powershell
 Update-Module -Name Az
@@ -244,7 +244,7 @@ New-AzResourceGroup -Name <name> -Location <location>
 ```
 
 > [!NOTE]
-> Remember, we will be working in an active Azure sandbox, which creates the Resource Group for you. Use the command above if you prefer to work in your own subscription.
+> Remember, we will be working in an active Azure sandbox, which creates the Resource Group for you. Use the previous command if you prefer to work in your own subscription.
 
 ### Verify the resources
 
@@ -287,7 +287,7 @@ Azure PowerShell provides the `New-AzVm` cmdlet to create a virtual machine. The
        -Image <image name>
 ```
 
-You can supply these parameters directly to the cmdlet as shown above. Alternatively, you can use other cmdlets to configure the virtual machine, such as `Set-AzVMOperatingSystem`, `Set-AzVMSourceImage`, `Add-AzVMNetworkInterface`, and `Set-AzVMOSDisk`.
+You can supply these parameters directly to the cmdlet as shown in the previous example. Alternatively, you can use other cmdlets to configure the virtual machine, such as `Set-AzVMOperatingSystem`, `Set-AzVMSourceImage`, `Add-AzVMNetworkInterface`, and `Set-AzVMOSDisk`.
 
 Here's an example that strings the `Get-Credential` cmdlet together with the `-Credential` parameter:
 
