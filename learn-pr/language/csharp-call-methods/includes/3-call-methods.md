@@ -4,20 +4,20 @@ We've been calling methods since our first lines of code when using the `Console
 
 From your previous experience with the `Console.WriteLine()` method, you should already know the basics:
 
-- Start by typing the class name, `Console`
-- Add the member access operator, the `.` symbol
-- Add the method's name, `WriteLine`
-- Add the method invocation operator, which is a set of parentheses `()`
-- Finally, add the value you want the `Console.WriteLine()` method to print as an input parameter between the opening and closing parentheses (for example, `"Hello World!"`)
+- Start by typing the class name, `Console`.
+- Add the member access operator, the `.` symbol.
+- Add the method's name, `WriteLine`.
+- Add the method invocation operator, which is a set of parentheses `()`.
+- Finally, add the value you want the `Console.WriteLine()` method to print as an input parameter between the opening and closing parentheses (for example, `"Hello World!"`).
 
 Optionally, depending on how the developers designed and implemented the given method, you may also need to:
 
-- Pass additional values as input parameters
-- Accept a return value
+- Pass additional values as input parameters.
+- Accept a return value.
 
 We'll cover input parameters and return values in the next unit.
 
-While some methods can be called the same way we called `Console.WriteLine()`, there are other methods in the .NET Class Library that require a different approach.
+While we can call some methods the same way we called `Console.WriteLine()`, there are other methods in the .NET Class Library that require a different approach.
 
 ## Calling different kinds of methods in the .NET Class Library
 
@@ -29,7 +29,7 @@ int roll = dice.Next(1, 7);
 Console.WriteLine(roll);
 ```
 
-If you run the code multiple times, numbers from 1 to 6 are displayed in the console output.
+If you run the code multiple times, different numbers from 1 to 6 are displayed in the console output.
 
 First, let's walk through what each line of code accomplishes, then we'll ask some important questions and make some observations about working with classes and methods in the .NET Class Library.
 
@@ -39,7 +39,7 @@ The second line of code calls the `dice` object's `Next()` method passing in two
 
 The third line of code calls the `WriteLine()` method to print the value of `roll` to the console.
 
-In this code example, we're calling a method of the Random class and the Console class. However, the *way* we're calling these methods is different. The reason they're called using a different technique is because some methods are stateful and others are stateless.
+In this code example, we're calling a method of the Random class and the Console class. However, the *way* we're calling these methods is different. The reason they're called using different techniques is because some methods are stateful and others are stateless.
 
 ### Stateful versus stateless methods
 
@@ -75,7 +75,7 @@ From that point on, when the `dice` variable is referenced, the .NET Runtime per
 
 You might be wondering why the `Next()` method was implemented as a stateful method? Couldn't the .NET Class Library designers figure out a way to generate a random number without requiring state? And what exactly is being stored or referenced by the `Next()` method?
 
-These are fair questions. At a high level, computers are good at following specific instructions to create a reliable and repeatable outcome. To create the illusion of randomness, the developers of the `Next()` method decided to capture the date and time down to the fraction of a millisecond and use that to seed an algorithm that produces a different number each time. While not entirely random, it suffices for most applications. The state that is captured and maintained through the life time of the `dice` object is the seed value. Each subsequent call to the `Next()` method is rerunning the algorithm, but ensures that the seed changes so that the same value isn't (necessarily) returned.
+These are fair questions. At a high level, computers are good at following specific instructions to create a reliable and repeatable outcome. To create the illusion of randomness, the developers of the `Next()` method decided to capture the date and time down to the fraction of a millisecond and use that to seed an algorithm that produces a different number each time. While not entirely random, it suffices for most applications. The state that's captured and maintained through the life time of the `dice` object is the seed value. Each subsequent call to the `Next()` method is rerunning the algorithm, but ensures that the seed changes so that the same value isn't (necessarily) returned.
 
 To use the `Random.Next()` method, however, you don't have to understand *how* it works. The important thing to know is that some methods require you to create an instance of a class before you call them, while others don't.
 
@@ -84,7 +84,7 @@ To use the `Random.Next()` method, however, you don't have to understand *how* i
 One way to learn how to call the method is to consult the documentation. You'll find examples that show whether the method must be called from the object instance or directly from the class.
 
 > [!NOTE]
-> One of the most useful parts of the documentation is the code examples that demonstrate how to use the method you're researching. Sometimes you'll need to scroll down on the page to find the code examples.
+> One of the most useful parts of the documentation is the code examples, which demonstrate how to use the method you're researching. Sometimes you'll need to scroll down on the page to find the code examples.
 
 Alternatively, you can attempt to access the method directly from the class itself. The worst that can happen is that you'll get a compilation error.
 
@@ -103,7 +103,7 @@ A red squiggly line will appear, which indicates you have a compilation error. H
 
 ## Recap
 
-- To call methods of a class in the .NET Class Library, you'll use the format `ClassName.MethodName()`, where the `.` symbol is the member access operator to access a method defined on the class, and the `()` symbols are the method invocation operators.
+- To call methods of a class in the .NET Class Library, you'll use the format `ClassName.MethodName()`, where the `.` symbol is the member access operator to access a method defined on the class and the `()` symbols are the method invocation operators.
 - When calling a stateless method, you don't need to create a new instance of its class first.
 - When calling a stateful method, you need to create an instance of the class and access the method on the object.
 - Use the `new` operator to create a new instance of a class.
