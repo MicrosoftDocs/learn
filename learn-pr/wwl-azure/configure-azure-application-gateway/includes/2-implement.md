@@ -1,4 +1,4 @@
-Administrators use Azure Application Gateway to manage requests from client applications to their web apps.
+Administrators use Azure Application Gateway to manage requests from client applications to their web apps. An application gateway listens for incoming traffic to web apps and checks for messages sent via protocols like HTTP. Gateway rules direct the traffic to resources in a back-end pool.
 
 #### Business scenario
 

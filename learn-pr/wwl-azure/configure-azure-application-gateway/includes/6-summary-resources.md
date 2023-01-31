@@ -6,11 +6,17 @@ In this module, you identified features and usage cases for Azure Application Ga
 
 - Read about [Azure Application Gateway](/azure/application-gateway/overview).
 
-- Discover [how an application gateway works](/azure/application-gateway/how-application-gateway-works).
+- Examine [Application Gateway components](/azure/application-gateway/application-gateway-components).
 
-- Explore [Application Gateway components](/azure/application-gateway/application-gateway-components).
+- Discover [Application Gateway features](/azure/application-gateway/features).
 
-- Review [Application Gateway features](/azure/application-gateway/features).
+- Read about [Azure Web Application Firewall on Application Gateway](/azure/web-application-firewall/ag/ag-overview).
+
+- Explore [Application Gateway redirection routing](/azure/application-gateway/redirect-overview).
+
+- Configure an [application gateway to host multiple web sites](/azure/application-gateway/create-multiple-sites-portal).
+
+- Rewrite [HTTP headers and URL with Application Gateway](/azure/application-gateway/rewrite-http-headers-url).
 
 ## Learn more with self-paced training
 
