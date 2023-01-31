@@ -13,7 +13,7 @@ In this section, you'll see how to write and execute an Azure PowerShell script 
 
 A PowerShell script is a text file containing commands and control constructs. The commands are invocations of cmdlets. The control constructs are programming features like loops, variables, parameters, comments, etc., supplied by PowerShell.
 
-PowerShell script files have a **.ps1** file extension. You can create and save these files with any text editor.
+PowerShell script files have a `.ps1` file extension. You can create and save these files with any text editor.
 
 > [!TIP]
 > If you’re writing PowerShell scripts under Windows, you can use the Windows PowerShell Integrated Scripting Environment (ISE). This editor provides features such as syntax coloring and a list of available cmdlets.
@@ -34,7 +34,7 @@ PowerShell has many features found in typical programming languages. You can def
 
 ### Variables
 
-As you saw in the last unit, PowerShell supports variables. Use **$** to declare a variable and **=** to assign a value. For example:
+In the last unit, you saw that PowerShell supports variables. Use `$` to declare a variable and `=` to assign a value. For example:
 
 ```powershell
 $loc = "East US"
@@ -47,7 +47,7 @@ Variables can hold objects. For example, the following definition sets the **adm
 $adminCredential = Get-Credential
 ```
 
-To obtain the value stored in a variable, use the **$** prefix and its name, as in the following:
+To obtain the value stored in a variable, use the `$` prefix and its name, as in the following:
 
 ```powershell
 $loc = "East US"
@@ -56,9 +56,9 @@ New-AzResourceGroup -Name "MyResourceGroup" -Location $loc
 
 ### Loops
 
-PowerShell has several loop structures: **For**, **Do...While**, **For...Each**, and others. The **For** loop is the best match for our needs because we'll execute a cmdlet a fixed number of times.
+PowerShell has several loop structures, including `For`, `Do...While`, and `For...Each`. The `For` loop is the best match for our needs because we'll execute a cmdlet a fixed number of times.
 
-The following example shows the core syntax. The example runs for two iterations and prints the value of **i** each time. The comparison operators are written **-lt** for "less than", **-le** for "less than or equal", **-eq** for "equal", **-ne** for "not equal", etc.
+The following example shows the core syntax. The example runs for two iterations and prints the value of **i** each time. The comparison operators are written `-lt` for "less than", `-le` for "less than or equal", `-eq` for "equal", `-ne` for "not equal", etc.
 
 ```powershell
 For ($i = 1; $i -lt 3; $i++)
@@ -95,4 +95,4 @@ param([int]$size, [string]$location)
 
 We could take these parameters as input and use a loop to create a set of VMs from the given parameters. We'll try that next.
 
-The combination of PowerShell and Azure PowerShell gives you all the tools you need to automate Azure. In our CRM example, we'll be able to create multiple Linux VMs using a parameter to keep the script generic and a loop to avoid repeated code. This means that we can execute a formerly complex operation in a single step.
+The combination of PowerShell and Azure PowerShell gives you all the tools you need to automate Azure. In our CRM example, we'll be able to create multiple Linux VMs using a parameter to keep the script generic and a loop to avoid repeated code. This script allows us to execute a formerly complex operation in a single step.

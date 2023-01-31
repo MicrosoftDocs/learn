@@ -22,7 +22,7 @@ The portal doesn't provide any way to automate repetitive tasks. For example, to
 
 ## What is the Azure CLI?
 
-The Azure CLI is a cross-platform command-line program to connect to Azure and execute administrative commands on Azure resources. For example, to create a VM, you would use a command like the following:
+The Azure CLI is a cross-platform command-line program to connect to Azure and execute administrative commands on Azure resources. For example, to create a VM, you could use the following command:
 
 ```azurecli
 az vm create \
@@ -38,7 +38,7 @@ The Azure CLI is available two ways: inside a browser via the Azure Cloud Shell,
 
 Azure PowerShell is a module you add to PowerShell to let you connect to your Azure subscription and manage resources. Azure PowerShell requires PowerShell to function. PowerShell provides services like the shell window, command parsing, and so on. The Azure Az PowerShell module adds Azure-specific commands.
 
-For example, Azure PowerShell provides the **New-AzVM** command, which creates a virtual machine for you in your Azure subscription. To use it, you would launch the PowerShell application, then issue a command like the following:
+For example, Azure PowerShell provides the **New-AzVM** command, which creates a virtual machine for you in your Azure subscription. To use it, you would launch the PowerShell application, then issue the following command:
 
 ```azurepowershell
 New-AzVm `
