@@ -3,8 +3,8 @@ uid: learn.azure.intro-to-anomaly-detector.4-when-to-use-anomaly-detector
 title: When to use Anomaly Detector
 metadata:
   title: When to use Anomaly Detector
-  description: "Learn about example scenarios where anomaly detector can be used."
-  ms.date: 01/28/2023
+  description: "The Anomaly Detector service supports batch processing of time series data and last-point anomaly detection for real-time data. Read about example scenarios where anomaly detector can be used with batch and real-time data."
+  ms.date: 02/01/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial

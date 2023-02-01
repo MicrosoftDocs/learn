@@ -3,8 +3,8 @@ uid: learn.azure.intro-to-anomaly-detector.3-how-anomaly-detector-works
 title: How Anomaly Detector works
 metadata:
   title: How Anomaly Detector works
-  description: "Learn the basics of anomaly detector functionality"
-  ms.date: 01/28/2023
+  description: "The Anomaly Detector service identifies anomalies that exist outside the scope of a boundary. The boundary is set using a sensitivity value. Learn the basics of accepted data and data consistency recommendations."
+  ms.date: 02/01/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
