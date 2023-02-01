@@ -16,17 +16,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "If you are going to include a JavaScript file on a Blazor page, what is the recommended way to reference it?"
+    - content: "If you are going to include a JavaScript file in Blazor, what is the recommended way to reference it?"
       choices:
-        - content: "Add a script tag on the Blazor page"
+        - content: "Add a `script` tag on the Blazor page"
           isCorrect: false
           explanation: "Script tags shouldn't be added on Blazor pages because they won't render and load properly"
-        - content: "Add a script tag to the *Pages/_Host.cshtml* file"
+        - content: "Add a `script` tag to the *Pages/_Host.cshtml* file"
           isCorrect: true
-          explanation: "The script tag should be added to the *_Host.cshtml* file so that it is available before the Blazor components need it"
-        - content: "Add a script tag to the Layout.razor file"
+          explanation: "The `script` tag should be added to the *Pages/_Host.cshtml* file so that it is available before the Blazor components need it"
+        - content: "Add a `script` tag to the *Shared/MainLayout.razor* file"
           isCorrect: false
-          explanation: "The layout should not include script tags and it would be better referenced in another location"
+          explanation: "The layout should not include `script` tags and it would be better referenced in another location"
     - content: "Which method should you use to execute a JavaScript function from C# that returns `void`?"
       choices:
         - content: "`InvokeVoidAsync`"

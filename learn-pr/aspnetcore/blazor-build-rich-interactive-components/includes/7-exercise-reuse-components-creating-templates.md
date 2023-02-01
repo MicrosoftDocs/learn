@@ -1,10 +1,10 @@
 A template could help improve how a customer's past orders are displayed on the Blazing Pizza app.
 
-The pizza company has asked that the **My Orders** page show more details to a customer about their past orders. They'd like this area to be enhanced so that a customer can see all the pizzas in an order, and what time they made their order.
+The pizza company has asked that the **My Orders** page show more details to a customer about their past orders. They'd like this area to be enhanced so that a customer can see all the pizzas in the order, and what time they made their order.
 
 In this exercise, you'll use Blazor templates to create a pagination component and improve the order history page.
 
-## Create a container for tabs
+## Create the pagination template component
 
 1. In Visual Studio Code, in the file explorer, create a new folder named **Components**, then create a **New File**.
 1. Use **PaginationComponent.razor** for the filename.

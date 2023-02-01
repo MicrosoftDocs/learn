@@ -8,8 +8,8 @@ A typical Blazor component contains layout and user interface logic that's used 
 
 Blazor enables you to integrate JavaScript libraries into your applications using Blazor JavaScript interoperability, or *JS interop*. You use JS interop to call JavaScript functions from .NET methods, and invoke .NET methods from JavaScript functions. JS interop handles the marshaling of data and object references between Blazor and JavaScript to make the transition between them as painless as possible.
 
-> [!CAUTION]
-> Blazor maintains its own representation of the Document Object Model (DOM) as a *virtual render tree*. As the page structure changes, Blazor generates a new render tree that contains the differences. When the changes are complete, Blazor iterates through these differences to update the user interface displayed by the Browser and the Browser version of the DOM used by JavaScript. If your JavaScript code modifies elements of the DOM, the Blazor representation may no longer match the current state. This can result in unexpected behavior, and possibly introduce security risks. The section *Update the DOM with JavaScript using an `ElementReference` object* later in this unit summarizes how you can address this issue.
+> [!WARNING]
+> Blazor maintains its own representation of the Document Object Model (DOM) as a *virtual render tree*. As the page structure changes, Blazor generates a new render tree that contains the differences. When the changes are complete, Blazor iterates through these differences to update the user interface displayed by the Browser and the Browser version of the DOM used by JavaScript. If your JavaScript code modifies elements of the DOM, the Blazor representation may no longer match the current state. This can result in unexpected behavior, and possibly introduce security risks.
 
 ## Load JavaScript code in a Blazor app
 
@@ -30,7 +30,7 @@ You use the <xref:Microsoft.JSInterop.IJSRuntime> to call a JavaScript function 
 
 There are several methods exposed on the `IJSRuntime` interface to invoke JavaScript code:
 
-- <xref:Microsoft.JSInterop.IJSRuntime.InvokeAsync%2A?displayProperty=nameWithType>
+- <xref:Microsoft.JSInterop.IJSRuntime.InvokeAsync%2A>
 - <xref:Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync%2A>
 
 Use `InvokeAsync<TValue>` to call a JavaScript function that returns a value, otherwise, call `InvokeVoidAsync`. As the names suggest, both methods are asynchronous, so use the C# `await` operator to capture any results. The parameters to the `InvokeAsync` and `InvokeVoidAsync` methods are the name of the JavaScript function to invoke, followed by any arguments required by the function. The JavaScript function must be part of the `window` scope or a sub-scope of `window`. Arguments must be JSON-serializable.

@@ -20,14 +20,14 @@ quiz:
       choices:
         - content: "`OnInitializedAsync`"
           isCorrect: false
-          explanation: "OnInitializedAsync is the first event that triggers in the lifecycle"
+          explanation: "`OnInitialized` (or `OnInitializedAsync`) is the first event that triggers in the lifecycle"
         - content: "`OnPageLoad`"
           isCorrect: true
-          explanation: "OnPageLoad sounds similar to another event in ASP.NET, but is not present in the Blazor component lifecycle"
+          explanation: "`OnPageLoad` sounds similar to another event in ASP.NET, but is not present in the Blazor component lifecycle"
         - content: "`OnAfterRenderAsync`"
           isCorrect: false
-          explanation: "OnAfterRender is the last event that triggers in the lifecycle and may be triggered multiple times"
-    - content: "Which of these events **doesn't** trigger the `ParametersSetAsync`` event?"
+          explanation: "`OnAfterRender` (or `OnAfterRenderAsync`) is the last event that triggers in the lifecycle and may be triggered multiple times"
+    - content: "Which of these events **doesn't** trigger the `ParametersSetAsync` event?"
       choices:
         - content: "Route parameters are set"
           isCorrect: false

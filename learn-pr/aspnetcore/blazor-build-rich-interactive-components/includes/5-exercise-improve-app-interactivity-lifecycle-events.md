@@ -32,7 +32,7 @@ In this exercise, you'll make changes to the pizza database to add the new famil
     {
         Id = 9,
         Name = "Margherita Family Size",
-        Description = """24" of pure tomatoes and basil""",
+        Description = "24\" of pure tomatoes and basil",
         BasePrice = 14.99m,
         ImageUrl = "img/pizzas/margherita.jpg",
         FixedSize = 24
@@ -47,7 +47,7 @@ In this exercise, you'll make changes to the pizza database to add the new famil
 
 1. In Visual Studio Code, press <kbd>F5</kbd>or, in the **Run** menu, select **Start Debugging**.
 
-    :::image type="content" source="../media/5-new-family-pizza.png" alt-text="Screenshot of the new family size pizza.":::
+    :::image type="content" source="../media/5-new-family-pizza.png" lightbox="../media/5-new-family-pizza.png" alt-text="Screenshot of the new family size pizza.":::
 
     Add the pizza to your order and you'll see you can change the size.
 
@@ -92,6 +92,6 @@ The `ConfigurePizzaDialog` component uses an HTML `range` element to allow the c
 
     If you try to add the family-size pizza, the size slider should be disabled as it's omitted from rendering. Select any other pizza and this slider should still work.
 
-    :::image type="content" source="../media/5-not-sizeable.png" alt-text="Screenshot of the new family size pizza with the size range omitted from rendering.":::
+    :::image type="content" source="../media/5-not-sizeable.png" lightbox="../media/5-not-sizeable.png" alt-text="Screenshot of the new family size pizza with the size range omitted from rendering.":::
 
 1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app from running.
