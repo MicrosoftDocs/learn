@@ -10,9 +10,7 @@
 
 ![streaming data](../media/4-streaming-data.png)
 
-Azure Stream Analytics is a fully managed stream processing engine that is designed to analyze and process large volumes of streaming data with sub-millisecond latencies with no impact upon the event hubs that are responsible for the data movement.
-
-
+Azure Stream Analytics is a fully managed stream processing engine. It's designed to analyze and process large volumes of streaming data with sub-millisecond latencies, with no impact on the event hubs that are responsible for the data movement.
 
 ### Data pipeline
 
@@ -33,7 +31,7 @@ The idea with a data lake is to store everything in its original, untransformed 
 - Distributed storage for massive scalability
 - hierarchical and highly secure in design
 
-### Data Warehouse
+### Data warehouse
 
 ![Data Warehouse](../media/4-data-warehouse.png)
 
@@ -49,7 +47,7 @@ Some characteristics of a data warehouse include:
 
 ![Apache spark](../media/4-apache-spark.png)
 
-Spark is a parallel processing framework that takes advantage of in-memory processing and a distributed file architecture, such as data lake. It is a common open-source software (oss) tool for big data scenarios and has support for many of what we reviewed above including:
+Apache Spark is a parallel processing framework that takes advantage of in-memory processing and a distributed file architecture, such as data lake. It is a common open-source software (OSS) tool for big data scenarios, and supports the following and more:
 
 - Extract, Transform, and Load (ETL)
 - Real-time data stream processing

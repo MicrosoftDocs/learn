@@ -6,4 +6,4 @@ The core technologies covered in the Azure data engineer course are in the Data 
 
 Although we’ll briefly touch on Power BI in the course, enterprise-level data modeling and visualization is covered in more depth in course DP-500: Designing and Implementing Enterprise-Scale Analytics Solutions Using Microsoft Azure and Microsoft Power BI.
 
-![Data engineering in Azure](../media/3-data-engineering-in-azure.png)
+![A graphic of the flow of a typical enterprise data analytics solution.](../media/3-data-engineering-in-azure.png)

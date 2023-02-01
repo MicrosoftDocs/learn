@@ -7,8 +7,8 @@ Choose the best response for each of the questions, then select **Check your ans
 What does a pipeline use to access data source and processing resources?
 
 () Data Explorer pools {{That's incorrect. CosmsosDB is a globally distributed NoSQL document store.}}  
-(x) Linked services {{That's correct..}}  
-() External connections {{That's incorrect. .}}
+(x) Linked services {{That's correct.This is a built-in service from different products to support a replication-like synchronization of data.}}  
+() External connections {{That's incorrect. This doesn't allow for processing resources.}}
 
 ## Multiple Choice
 
