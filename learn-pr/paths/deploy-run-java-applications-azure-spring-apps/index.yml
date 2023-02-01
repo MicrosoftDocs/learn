@@ -27,6 +27,7 @@ products:
 - github
 - azure-spring-apps
 modules:
+- learn.wwl.protect-endpoints-use-web-application-firewall
 - learn.wwl.secure-mysql-database-key-vault-use-private-endpoint
 trophy:
   uid: learn.wwl.deploy-run-java-applications-azure-spring-apps.trophy
