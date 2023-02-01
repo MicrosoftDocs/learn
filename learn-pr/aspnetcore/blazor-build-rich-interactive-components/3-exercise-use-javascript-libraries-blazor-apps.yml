@@ -6,8 +6,8 @@ metadata:
   title: "Exercise - Use JavaScript libraries in Blazor apps"
   description: "Load a JavaScript library and call JavaScript functions in a Blazor app"
   ms.date: 01/25/2023
-  author: csharpfritz
-  ms.author: jefritz
+  author: IEvangelist
+  ms.author: dapine
   ms.topic: interactive-tutorial
   ms.prod: learning-blazor
 durationInMinutes: 10

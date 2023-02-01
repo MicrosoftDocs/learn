@@ -6,8 +6,8 @@ metadata:
   title: "Exercise - Reuse components by creating templates"
   description: "Create a template and use it to build a new order history page"
   ms.date: 01/25/2023
-  author: csharpfritz
-  ms.author: jefritz
+  author: IEvangelist
+  ms.author: dapine
   ms.topic: interactive-tutorial
   ms.prod: learning-blazor
 durationInMinutes: 4

@@ -6,8 +6,8 @@ metadata:
   title: "Exercise - Improve app interactivity with lifecycle events"
   description: "Use lifecycle events to enhance the user interaction of a Blazor app"
   ms.date: 01/25/2023
-  author: csharpfritz
-  ms.author: jefritz
+  author: IEvangelist
+  ms.author: dapine
   ms.topic: interactive-tutorial
   ms.prod: learning-blazor
 durationInMinutes: 6

@@ -6,8 +6,8 @@ metadata:
   title: Create a user interface with Blazor components
   description: "Learn how to use JavaScript libraries in Blazor apps."
   ms.date: 01/25/2023
-  author: csharpfritz
-  ms.author: jefritz
+  author: IEvangelist
+  ms.author: dapine
   ms.topic: interactive-tutorial
   ms.prod: learning-blazor
 durationInMinutes: 5

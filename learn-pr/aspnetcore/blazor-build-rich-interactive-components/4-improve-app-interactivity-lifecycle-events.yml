@@ -6,8 +6,8 @@ metadata:
   title: "Improve app interactivity with lifecycle events"
   description: "Learn how to use lifecycle events to improve the response time in a Blazor app"
   ms.date: 01/25/2023
-  author: csharpfritz
-  ms.author: jefritz
+  author: IEvangelist
+  ms.author: dapine
   ms.topic: interactive-tutorial
   ms.prod: learning-blazor
 durationInMinutes: 10

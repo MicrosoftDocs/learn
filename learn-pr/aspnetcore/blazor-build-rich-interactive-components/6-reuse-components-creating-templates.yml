@@ -6,8 +6,8 @@ metadata:
   title: "Reuse components by creating templates"
   description: "Learn how to create templated components that can be easily reused throughout applications"
   ms.date: 01/25/2023
-  author: csharpfritz
-  ms.author: jefritz
+  author: IEvangelist
+  ms.author: dapine
   ms.topic: interactive-tutorial
   ms.prod: learning-blazor
 durationInMinutes: 10

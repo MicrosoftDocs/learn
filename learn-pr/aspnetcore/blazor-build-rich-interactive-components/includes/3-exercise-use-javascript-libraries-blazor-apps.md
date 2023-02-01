@@ -175,7 +175,7 @@ The `OrderDetail` component shows the current status of a pizza order. Customers
 
     This code now calls the `GetLatestOrderStatusUpdatesAsync` method to update the order status.
 
-1. Next, you the following additional methods after the updated `OnParametersSetAsync` method.
+1. Next, add the following methods after the updated `OnParametersSetAsync` method.
 
     ```csharp
     protected override Task OnAfterRenderAsync(bool firstRender) =>
