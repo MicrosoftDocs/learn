@@ -1,14 +1,11 @@
-In the module [Create your first Q# program by using the Quantum Development Kit](/training/modules/qsharp-create-first-quantum-development-kit/3-random-bit-generator), you learned that classical security protocols don't produce truly random numbers, but rather pseudorandom numbers and thus a hacker can find out the sequence of random numbers used to generate a classical password. To avoid this, your first task as a member of the space fleet was to create secure passwords using a quantum random number generator. 
+In [Create your first Q# program by using the Quantum Development Kit](/training/modules/qsharp-create-first-quantum-development-kit/3-random-bit-generator) module, you learned that classical security protocols don't produce truly random numbers, but rather pseudorandom numbers and thus a hacker can find out the sequence of random numbers used to generate a classical password. To avoid this, your first task as a member of the space fleet was to create secure passwords using a quantum random number generator. 
+
+However, there are more ways to create secure passwords and conceal confidential information. Cryptography is the technique by using physical or mathematical means, such as using a computational difficulty of solving a particular task. A popular cryptographic protocol is the [Rivest–Shamir–Adleman (RSA) scheme](https://wikipedia.org/wiki/RSA_(cryptosystem)?azure-portal=true), which is based on the practical difficulty of factoring prime numbers by using a classical computer.
 
 
+One quantum algorithm with superquadratic speedup and for which the cost of error correction is well studied is Shor’s factoring algorithm. In [Explore the key concepts of quantum computing by using Q#](/training/modules/qsharp-explore-key-concepts-quantum-computing/8-introduction-quantum-algorithms/?azure-portal=true) module, you can find an overview of Shor's algorithm application in cryptography.
 
-However, there are more ways to create secure passwords and conceal confidential information. Cryptography is the technique by using physical or mathematical means, such as using a computational difficulty of solving a particular task. A very popular cryptographic protocol is the [Rivest–Shamir–Adleman (RSA) scheme](https://wikipedia.org/wiki/RSA_(cryptosystem)?azure-portal=true), which is based on the practical difficulty of factoring prime numbers by using a classical computer.
-
-
-One quantum algorithm with superquadratic speedup and for which the cost of error correction is well studied is Shor’s factoring algorithm. In the module [Explore the key concepts of quantum computing by using Q#](/training/modules/qsharp-explore-key-concepts-quantum-computing/8-introduction-quantum-algorithms/?azure-portal=true), you can find an overview of Shor's algorithm application in cryptography.
-
-
-Estimating the resources required for Shor’s algorithm is important for assessing the vulnerability of some of today’s classical cryptographic schemes that are based on assumptions of the difficulty of factoring large numbers. 
+Some of today’s classical cryptographic schemes that are based on assumptions of the difficulty of factoring large numbers. Estimating the resources required for Shor’s algorithm is important for assessing the vulnerability of such cryptographic schmes. 
 
 
 ## Estimate the resources with Azure Quantum
@@ -24,7 +21,7 @@ Create a new Notebook in your workspace as you did in the previous step.
 1. In **Kernel Type**, select **IPython**.
 1. Type a name for the file, for example *factoringResourceEstimator.ipynb*, and click **Create file**.
 
-First, we need to import several Python classes and functions from `azure.quantum` and `qiskit`. Note that we are not using Qiskit to build quantum circuits, however, we are leveraging `AzureQuantumJob` and `job_monitor` which are built on top of the Qiskit ecosystem.
+First, we need to import several Python classes and functions from `azure.quantum` and `qiskit`. We are not using Qiskit to build quantum circuits, however, we are using `AzureQuantumJob` and `job_monitor`, which are built on top of the Qiskit ecosystem.
 
 ```python
 from azure.quantum.qiskit import AzureQuantumProvider
@@ -122,7 +119,7 @@ def resource_estimation_job_from_logical_counts(
 
 ### Running experiments
 
-As configurations for the experiment we use all six pre-defined qubit parameters. As pre-defined QEC scheme we are using `surface_code` with gate-based qubit parameters, and `floquet_code` with Majorana based qubit parameters. For all experiments we assume an error budget of 1/3.
+As configurations for the experiment we use all six pre-defined qubit parameters. As pre-defined QEC scheme we are using `surface_code` with gate-based qubit parameters, and `floquet_code` with Majorana based qubit parameters. For all experiments, we assume an error budget of 1/3.
 
 ```python
 experiments = [
@@ -168,7 +165,7 @@ for idx, (name, params) in enumerate(experiments):
 
 ### Understanding the results
 
-Finally, we are presenting the experimental results using built-in resource estimation tables as well as a custom summary table. For this purpose we are creating a reusable `dashboard` function that is creating an HTML display from a pandas data frame and the resource estimation tables.
+Finally, we are presenting the experimental results using built-in resource estimation tables as well as a custom summary table. For this purpose, we are creating a reusable `dashboard` function that is creating an HTML display from a pandas data frame and the resource estimation tables.
 
 ```python
 def dashboard(experiment_results):
@@ -245,8 +242,8 @@ dashboard(experiment_results)
 |Majorana ns, 10⁻⁴	|   25481|	1.2e+10	|1.5e+10	|15	|15|	1.3%|	26.11M|	15 hours|
 |Majorana ns, 10⁻⁶	|   25481|	1.2e+10	|1.5e+10	|7	|13	|0.5%|	6.25M|	7 hours|
 
-We see that in the worst scenario, a hacker using gate-based µs qubits, that is, qubits that have operation times in the nanosecond regime such as superconducting qubits, and a surface QEC code would need 6 years and 37.38 millions of qubits to factor a 2048-bit integer with Shor's algorithm.
+We see that in the worst scenario, a hacker using gate-based µs qubits (qubits that have operation times in the nanosecond regime such as superconducting qubits) and a surface QEC code would need six years and 37.38 millions of qubits to factor a 2048-bit integer with Shor's algorithm.
 
-If we use a different qubit technology, for example gate-based ns ion qubits and the same surface code, the number of qubits doens't change much but the runtime became 2 days in the worst case and 18 hours in the optimistic case. If we change the qubit technology and the QEC code, for example, with Majorana-based qubits, factoring a 2048-bit integer using Shor’s algorithm could be done in hours with an array of 6.25 millions of qubits in the best case scenario. 
+If we use a different qubit technology, for example gate-based ns ion qubits and the same surface code, the number of qubits doens't change much, but the runtime became two days in the worst case and 18 hours in the optimistic case. If we change the qubit technology and the QEC code, for example, with Majorana-based qubits, factoring a 2048-bit integer using Shor’s algorithm could be done in hours with an array of 6.25 millions of qubits in the best case scenario. 
 
 We can conclude that using Majorana qubits and a Floquet QEC code is the best choice to execute Shor's algorithm and factor a 2048-bit integer password. The space fleet should prepare for future quantum hackers, and even better, be ready to hack our space enemies ourselves!  
