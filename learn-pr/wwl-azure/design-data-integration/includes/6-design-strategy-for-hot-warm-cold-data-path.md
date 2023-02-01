@@ -5,7 +5,7 @@ Traditionally, data was stored on-premises. No consideration was made about how 
 
 A warm data path supports analyzing data as it flows through the system. The data stream is processed in near real time. The data is saved to the warm storage, and pushed to the analytics clients.
 
-- The Azure platform provides many options for processing the events, and [Azure Stream Analytics](https://github.com/GitHubber17/learn-pr/blob/update-az-305-data-integration-1/azure/stream-analytics/stream-analytics-introduction) is a popular choice.
+- The Azure platform provides many options for processing the events, and [Azure Stream Analytics](/azure/stream-analytics/stream-analytics-introduction) is a popular choice.
 - Stream Analytics can execute complex analysis at scale for tumbling, sliding, and hopping windows. The service supports running stream aggregations and joining external data sources. For complex processing, performance can be extended by cascading multiple instances of Azure Event Hubs, Stream Analytics jobs, and Azure functions.
 - Warm storage can be implemented with various services on the Azure platform, such as Azure SQL Database and Azure Cosmos DB.
 
