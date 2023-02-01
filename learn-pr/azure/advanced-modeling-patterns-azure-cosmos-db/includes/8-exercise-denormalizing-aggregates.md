@@ -2,7 +2,7 @@ In this unit, you'll see how to denormalize an aggregate to write the top 10 cus
 
 For this exercise, you'll complete the following steps:
 
-- Start Azure Cloud Shell and open Visual Studio Code.
+- Start Azure Cloud Shell and open the code editor.
 - View the code to create a new sales order.
 - Complete the C# code to increment *salesOrderCount* for the customer.
 - Complete the C# code to implement the transaction to insert the new sales order and update the customer record by using *transactional batch*.
@@ -11,9 +11,9 @@ For this exercise, you'll complete the following steps:
 - Run your top 10 customers query to see what the results currently are.
 - Show how you can use transactional batch when a customer cancels an order.
 
-## Start Azure Cloud Shell and open Visual Studio Code
+## Start Azure Cloud Shell and open the code editor
 
-To get to the code that you'll use in this unit, do the following:
+Go to the code that you'll use in this unit.
 
 1. In Cloud Shell, if necessary, change the current directory to the location of the project.
 
@@ -21,7 +21,7 @@ To get to the code that you'll use in this unit, do the following:
     cd mslearn-model-partition-data-azure-cosmos-db/modeling
     ```
 
-1. Start Visual Studio Code, and go to the *Program.cs* file.
+1. Open the *Program.cs* file in the code editor.
 
     ```bash
     code Program.cs
@@ -29,13 +29,11 @@ To get to the code that you'll use in this unit, do the following:
 
 1. You should now see the following code in Cloud Shell.
 
-    :::image type="content" source="../media/5-cloud-shell-vs-code.png" lightbox="../media/5-cloud-shell-vs-code.png" alt-text="Screenshot of Cloud Shell with Visual Studio Code, displaying a list of 'using' statements, the app namespace, and the start of the Program class.":::
+    :::image type="content" source="../media/5-cloud-shell-vs-code.png" lightbox="../media/5-cloud-shell-vs-code.png" alt-text="Screenshot of Cloud Shell with the code editor open, displaying a list of 'using' statements, the app namespace, and the start of the Program class.":::
 
 ## Complete the code to update total sales orders
 
-1. Go to the function that creates a new sales order.
-
-1. Select Ctrl+G, and then type **488** to go to that line in the file.
+1. Select Ctrl+G, and then type **488** to go to the function that creates a new sales order.
 
 1. You should now see the following code:
 
@@ -64,11 +62,11 @@ To get to the code that you'll use in this unit, do the following:
 
     The sales order header has `orderId`, `customerId`, `orderDate`, and `shipDate`, which you'll leave blank.
 
-    Because your customer container contains both customer and sales order entities, your sales order object also contains your discriminator property, `type`, with the value of `salesOrder`. This helps you distinguish a sales order from a customer object in your customer container.
+    Because your customer container contains both customer and sales order entities, your sales order object also contains your discriminator property, `type`, with the value of `salesOrder`. This value helps you distinguish a sales order from a customer object in your customer container.
 
     Farther down, you can also see the two products for the order that make up the details section in your sales order.
 
-1. Scroll a little farther to another `//To-Do:` comment. Here, you need to add code that inserts a new sales order and updates the customer record by using transactional batch. 
+1. Scroll a little farther to another `//To-Do:` comment. Here, you need to add code that inserts a new sales order and updates the customer record by using transactional batch.
 
 1. Copy the following code snippet, and then paste it on the line below the `//To-Do:` comment.
 
@@ -87,7 +85,7 @@ To get to the code that you'll use in this unit, do the following:
 
     Finally, check to see whether the transaction was successful by looking at the response object.
 
-    Your screen should now look like the following:
+    Your screen should now look like the following screenshot:
 
     :::image type="content" source="../media/8-create-order-transactional-batch.png" lightbox="../media/8-create-order-transactional-batch.png" alt-text="Screenshot of Cloud Shell, showing that the transactional batch code is now implemented in your function.":::
 
@@ -116,7 +114,7 @@ Because you designed your database to store both the customer and all their sale
 
    Note that the `salesOrderCount` property shows two sales orders.
 
-   Your screen should look like the following:
+   Your screen should look like the following screenshot:
 
     :::image type="content" source="../media/8-query-customer-and-orders-initial.png" lightbox="../media/8-query-customer-and-orders-initial.png" alt-text="Screenshot of Cloud Shell, showing the output of the query customer and orders query with a customer record and two sales orders.":::
 
@@ -135,7 +133,7 @@ Create a new sales order for the same customer, and update the total sales order
 
    Note that the `salesOrderCount` property shows three sales orders.
 
-1. Your screen should look like the following:
+1. Your screen should look like the following screenshot:
 
     :::image type="content" source="../media/8-query-customer-and-orders-next.png" lightbox="../media/8-query-customer-and-orders-next.png" alt-text="Screenshot of Cloud Shell, with an updated customer record showing a value of 3 for the sales order count and three sales orders below it.":::
 
@@ -150,7 +148,7 @@ As with any e-commerce application, customers also cancel orders. You can do the
 1. Press any key to return to the main menu.
 1. Select **c** to run the same query again to confirm that the customer record is updated.
 
-   Note that the new order is no longer returned. If you scroll up, you can see that `salesOrderCount` value has returned to `2`.
+   The new order is no longer returned. If you scroll up, you can see that `salesOrderCount` value has returned to `2`.
 
 ## View the code that deletes a sales order
 
@@ -189,7 +187,7 @@ Let's look at the query for your top 10 customers.
 
     Also notice the discriminator property of `type` with a value of `customer`, so you return only back customers because your customer container has both customers and sales orders within it.
 
-1. Select CTRL+Q to close Visual Studio Code.
+1. Select CTRL+Q to close the code editor.
 1. To start the application again, run the following command:
 
     ```bash

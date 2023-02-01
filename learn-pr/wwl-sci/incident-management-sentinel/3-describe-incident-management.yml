@@ -1,19 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.incident-management-sentinel.3-describe-incident-management
+title: Describe incident management
 metadata:
   title: Describe incident management
-  description: Describe incident management in Microsoft Sentinel
-  ms.date: 12/15/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  description: "Describe incident management in Microsoft Sentinel"
+  ms.date: 01/26/2023
+  author: wwlpublish
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Describe incident management
 durationInMinutes: 5
 content: |
   [!include[](includes/3-describe-incident-management.md)]
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
   - content: "Which Microsoft Sentinel component is used to generate alerts?"
     choices:
@@ -43,4 +43,3 @@ quiz:
     - content: "Manage security roles in your environment."
       isCorrect: false
       explanation: "You can't directly manage security roles with incident management."
-      

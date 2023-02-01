@@ -2,7 +2,7 @@ Let's explore more ways that CSS can make managing your content easier and your 
 
 ## Comments
 
-As with any computer language, CSS supports comments. To comment in a section of CSS you would use `/* comment */`. The `/*` identifies the start of the comment, and `*/` marks the end. A CSS comment can cover multiple lines of text. Comments are a great way to leave notes for yourself or other developers or to take notes while learning the language.
+As with any computer language, CSS supports comments. To comment in a section of CSS, you would use `/* comment */`. The `/*` identifies the start of the comment, and `*/` marks the end. A CSS comment can cover multiple lines of text. Comments are a great way to leave notes for yourself or other developers or to take notes while learning the language.
 
 > [!IMPORTANT]
 > CSS comments are public, and accessible by both the browser and users of your website. **Do not** store sensitive information in comments.
@@ -25,7 +25,7 @@ You can also use other options, such as the style, weight, and decoration. `font
 | `font-style: italic;`         | *Demo*      |
 | `text-decoration: line-through;` | ~~Demo~~ |
 
-`text-decoration` can feel different from the other options used to modify a font's display. The key difference is that `text-decoration` is used to apply style around or on the text but does not modify the actual font itself. Bold and italics are modifying the font.
+`text-decoration` can feel different from the other options used to modify a font's display. The key difference is that `text-decoration` is used to apply style around or on the text but doesn't modify the actual font itself. Bold and italics are modifying the font.
 
 > [!NOTE]
 > Using underline on a webpage should typically be avoided because the text may appear to be a hyperlink.
@@ -60,7 +60,7 @@ div {
 }
 ```
 
-In the case of the `div` element, `1em` would be 14 pixels because the parent is `div` and set to `14px`, while `1rem` would be 18 pixels because the `html` root is set to `18px`.
+If the `div` element, `1em` would be 14 pixels because the parent is `div` and set to `14px`, while `1rem` would be 18 pixels because the `html` root is set to `18px`.
 
 `1.5em` for the `div` element would be 21 pixels (**14 * 1.5 = 21**), and `1.5rem` would be 27 pixels (**18 * 1.5 = 27**). You can use `em` and `rem` to ensure the rest of the page scales as you update the parent or root sizes.
 
@@ -90,6 +90,6 @@ h2 {
 > [!IMPORTANT]
 > Color selection should always consider those who have a color vision deficiency. You can use tools such as [Color Safe](http://colorsafe.co) to aid in the selection of contrasting colors to ensure your site is accessible to all users.
 
-As you might suspect, there are dozens of available named colors, and RGB values offer an infinite set of options. Editors such as [vscode.dev](https://vscode.dev) or [Visual Studio Code](https://code.visualstudio.com) can assist in the available color values. Both editors will show a color swatch preview in your CSS. If you mouse over the swatch you are presented with a color selector you can use to set the color you desire.
+As you might suspect, there are dozens of available named colors, and RGB values offer an infinite set of options. Editors such as [vscode.dev](https://vscode.dev) or [Visual Studio Code](https://code.visualstudio.com) can help identify the available color values. Both editors will show a color swatch preview in your CSS. If you mouse over the swatch you're presented with a color selector you can use to set the color you desire.
 
 :::image type="content" source="../media/color-selector.png" alt-text="Screenshot of color selector from Visual Studio Code":::
