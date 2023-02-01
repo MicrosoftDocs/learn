@@ -50,7 +50,7 @@ First, you need to create a project. You've installed .NET 6 and you're ready to
 
    :::code language="csharp" source="../code/ef-core-setup.cs" highlight="1, 5-12, 15-19":::
 
-   You might receive a prompt from Visual Studio Code to add assets to debug the project. Click `Yes` in the dialog.
+   You might receive a prompt from Visual Studio Code to add assets to debug the project. Select `Yes` in the dialog.
 
 ## Add EF Core to the project
 
@@ -69,7 +69,7 @@ To store the items in the to-do list, install the `EntityFrameworkCore.InMemory`
       - Expose your `Pizzas` property from your list of `Pizza` in the database.
       - Use `UseInMemoryDatabase` to wire the in-memory database storage. Your data is stored here as long as the app is running.
 
-1. To set up your in-memory database, add the following code to the bottom of the _Pizza.cs_ file (above the final `}`). You will have two class definitions within the `PizzaStore.Models` namespace.
+1. To set up your in-memory database, add the following code to the bottom of the _Pizza.cs_ file (above the final `}`). You'll have two class definitions within the `PizzaStore.Models` namespace.
 
    ```csharp
    class PizzaDb : DbContext
@@ -147,7 +147,7 @@ Make sure you've saved all your changes and run the app again. Go back to the Sw
 
 1. Select **POST /pizza**.
 1. Select **Try it out**.
-1. Replace the request body with the following:
+1. Replace the request body with the following JSON:
 
    ```json
    {
@@ -188,7 +188,7 @@ app.MapGet("/pizza/{id}", async (PizzaDb db, int id) => await db.Pizzas.FindAsyn
 
 ### Test GET by ID
 
-To check this out, you can either go to *https://localhost:{PORT}/pizza/1* or use the Swagger UI. Since you're using an in-memory database, the pizza you previously created won't be listed if you've restarted the application, so you'll need to enter it again.
+To test this operation, you can either go to *https://localhost:{PORT}/pizza/1* or use the Swagger UI. Since you're using an in-memory database, the pizza you previously created won't be listed if you've restarted the application. So, you'll need to use your POST operation to add it again.
 
 ## Update an item
 
