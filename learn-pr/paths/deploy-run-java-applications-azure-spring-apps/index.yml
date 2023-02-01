@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-run-java-applications-azure-spring-apps
 metadata:
   title: Deploying and running Java applications in Azure Spring Apps
   description: Deploying and running Java applications in Azure Spring Apps
-  ms.date: 01/31/2023
+  ms.date: 02/01/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -27,6 +27,6 @@ products:
 - github
 - azure-spring-apps
 modules:
-- learn.wwl.protect-endpoints-use-web-application-firewall
+- learn.wwl.secure-mysql-database-key-vault-use-private-endpoint
 trophy:
   uid: learn.wwl.deploy-run-java-applications-azure-spring-apps.trophy
