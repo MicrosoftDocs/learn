@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.msgraph-extensions.directory-extensions
-title: Examine directory extensions for Microsoft Graph data
+title: Examine directory extensions for Microsoft Graph custom data
 metadata:
   unitType: learning-content
-  title: Examine directory extensions for Microsoft Graph data
+  title: Examine directory extensions for Microsoft Graph custom data
   description: "Use Microsoft Graph directory extensions to add custom data to users."
-  ms.date: 04/08/2022
+  ms.date: 01/24/2023
   author: FaithOmbongi
   ms.author: ombongifaith
   ms.topic: interactive-tutorial
   ms.prod: learning-graph
-durationInMinutes: 8
+durationInMinutes: 3
 content: |
   [!include[](includes/4-directory-extensions.md)]

@@ -26,7 +26,11 @@ roles:
 - business-user
 - student
 products:
-- m365-threat-protection
+- microsoft-defender
+- defender-office365
+- mdatp
+- defender-for-cloud-apps
+- defender-identity
 subjects:
 - threat-protection
 units:

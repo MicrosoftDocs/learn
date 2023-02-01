@@ -1111,7 +1111,42 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/monitor-azure-arc-enabled-sql-managed-instance-security-performance/1-introduction.yml",
+      "redirect_url": "/training/modules/secure-monitor-azure-arc-enabled-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-arc-enabled-sql-managed-instance-security-performance/2-secure-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "/training/modules/secure-monitor-azure-arc-enabled-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-arc-enabled-sql-managed-instance-security-performance/3-monitor-your-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "/training/modules/secure-monitor-azure-arc-enabled-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/monitor-azure-arc-enabled-sql-managed-instance-security-performance/4-exercise-using-grafana-performance-monitor-azure-arc-enabled-sql-mi.yml",
+      "redirect_url": "/training/modules/secure-monitor-azure-arc-enabled-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-arc-enabled-sql-managed-instance-security-performance/4-exercise-using-grafana-performance-monitor-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "/training/modules/secure-monitor-azure-arc-enabled-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-arc-enabled-sql-managed-instance-security-performance/5-knowledge-check.yml",
+      "redirect_url": "/training/modules/secure-monitor-azure-arc-enabled-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-arc-enabled-sql-managed-instance-security-performance/6-summary.yml",
+      "redirect_url": "/training/modules/secure-monitor-azure-arc-enabled-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-arc-enabled-sql-managed-instance-security-performance/index.yml",
       "redirect_url": "/training/modules/secure-monitor-azure-arc-enabled-sql-managed-instance",
       "redirect_document_id": false
     },
@@ -19943,6 +19978,16 @@
     {
       "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/8-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
+      "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/8-create-health-probes.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-load-balancer/7-create-health-probes",
+      "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/7-create-rules.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-load-balancer/8-create-load-balancer-rules",
       "redirect_document_id": false
     }
   ]
