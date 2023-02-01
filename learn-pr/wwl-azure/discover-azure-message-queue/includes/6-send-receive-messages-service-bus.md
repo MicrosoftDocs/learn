@@ -154,7 +154,7 @@ In this section you will open your terminal and create some variables that will 
 1. Login in to the Azure portal and navigate to your Service Bus namespace. Select the **Service Bus Explorer** in the Service Bus Queue navigation pane.
 1. Select **Peek from start** and the three messages that were sent will appear.
 
-    :::image type="content" source="../media/peekmessages.png" alt-text="":::
+    :::image type="content" source="../media/peekmessages.png" alt-text="Decorative":::
 
 
 ## Update project to receive messages to the queue
