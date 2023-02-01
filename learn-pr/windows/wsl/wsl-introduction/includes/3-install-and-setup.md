@@ -1,4 +1,4 @@
-Windows Subsystem for Linux is included by default with Windows, but must be enabled before installing a Linux distribution. This unit will cover how you can enable WSL, install Linux distributions, and set up a Linux username and password.
+Windows Subsystem for Linux (WSL) must be enabled and a distribution of Linux must be installed before you can run Linux commands and access tools like Bash. This unit will cover how you can enable WSL, install Linux distributions, and set up a Linux username and password.
 
 > [!IMPORTANT]
 > You must make sure that you're running Windows 11 or Windows 10 version 2004+ (Build 19041 and higher) to run the WSL install command.
