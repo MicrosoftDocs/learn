@@ -56,7 +56,7 @@ To use the JavaScript interop, you inject the `IJSRuntime` abstraction.
 1. Add a new method to call the native JavaScript `confirm` function. If the customer selects **OK** from this prompt, then call the `RemoveConfiguredPizza`, otherwise leave the pizza in the order.
 
     ```razor
-    private async Task RemovePizzaConfirmation(Pizza removePizza)
+    async Task RemovePizzaConfirmation(Pizza removePizza)
     {
         if (await JavaScript.InvokeAsync<bool>(
             "confirm",
@@ -100,7 +100,7 @@ After some research you find a small JavaScript library called SweetAlert that l
 1. Back in the Update the `RemovePizzaConfirmation` method to use the new library.
 
     ```csharp
-    private async Task RemovePizzaConfirmation(Pizza removePizza)
+    async Task RemovePizzaConfirmation(Pizza removePizza)
     {
         var messageParams = new
         {
@@ -181,7 +181,7 @@ The `OrderDetail` component shows the current status of a pizza order. Customers
     protected override Task OnAfterRenderAsync(bool firstRender) =>
         firstRender ? StartPollingTimerAsync() : Task.CompletedTask;
 
-    private async Task GetLatestOrderStatusUpdatesAsync()
+    async Task GetLatestOrderStatusUpdatesAsync()
     {
         try
         {
@@ -195,7 +195,7 @@ The `OrderDetail` component shows the current status of a pizza order. Customers
         }
     }
 
-    private async Task StartPollingTimerAsync()
+    async Task StartPollingTimerAsync()
     {
         while (IsOrderIncomplete && await timer.WaitForNextTickAsync())
         {
@@ -207,7 +207,7 @@ The `OrderDetail` component shows the current status of a pizza order. Customers
     public void Dispose() => timer.Dispose();
     ```
 
-    The `OrderDetail` component starts polling after the page has rendered.
+    The `OrderDetail` component starts polling after the page has been rendered.
 
     The `StartPollingTimerAsync` function uses a <xref:System.Threading.PeriodicTimer> to asynchronously wait for the next tick, while the order status is incomplete.
 
