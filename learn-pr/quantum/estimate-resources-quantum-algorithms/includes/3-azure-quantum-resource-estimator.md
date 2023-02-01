@@ -45,9 +45,9 @@ For more information, see [Qubit parameters of the Azure Quantum Resource Estima
 
 Quantum Error Correction (QEC) is crucial for any quantum computing platform to achieve truly scalable quantum computation. The set of operations permitted by a particular quantum computing platform are limited by physical constraints and may not match the operations prescribed in the algorithm. Moreover, even if the operations offered by the quantum computer match the operations in the algorithm, the accuracy to which the quantum computer can perform each operation is likely to be limited. Fault-tolerant quantum computation bridges the accuracy gap by encoding many physical qubits into a smaller number of logical qubits. To guarantee accuracy, logical qubits must be always encoded. Operations of the quantum algorithm must be performed on the logical qubits while they are encoded. Each logical operation must both preserve the code structure and carefully limit the spread of errors. 
 
-The error correction code distance (ECC distance) is a parameter that controls the error rate of logical qubits and the number of physical qubits required to encode them. The higher the ECC distance, the better the accuracy, but also the higher the amount of physical qubits. The goal is to find the minimum ECC distance that can achieve the required error rate set for a particular application.
+The error correction code distance (ECC distance) is a parameter that controls the error rate of logical qubits and the number of physical qubits required to encode them. The higher the ECC distance, the better the accuracy, but also the higher the number of physical qubits. The goal is to find the minimum ECC distance that can achieve the required error rate set for a particular application.
 
-The Azure Quantum Resource Estimator provides three pre-defined QEC schemes, two *surface code* protocols for gate-based and Majorana physical instruction sets, and the *floquet code* protocol that can only be used with a Majorana physical instruction set. 
+The Azure Quantum Resource Estimator provides three pre-defined QEC schemes: two *surface code* protocols for gate-based and Majorana physical instruction sets, and the *floquet code* protocol that can only be used with a Majorana physical instruction set. 
 
 
 | QEC scheme     | Instruction set | References                                                                                                 |
@@ -73,7 +73,7 @@ For more information, see [QEC in the Azure Quantum Resource Estimator](/azure/q
 
 ### Error budget 
 
-The total error budget sets the overall allowed error for the algorithm, i.e., the number of times it is allowed to fail. Its value must be between 0 and 1 and the default value is 0.001, which corresponds to 0.1%, and means that the algorithm is allowed to fail once in 1000 executions. This parameter is highly application specific. For example, if one is running Shor’s algorithm for factoring integers, a large value for the error budget may be tolerated as one can check that the output are indeed the prime factors of the input. On the other hand, a much smaller error budget may be needed for an algorithm solving a problem with a solution which cannot be efficiently verified. 
+The total error budget sets the overall allowed error for the algorithm, that is, the number of times it is allowed to fail. Its value must be between 0 and 1 and the default value is 0.001, which corresponds to 0.1%, and means that the algorithm is allowed to fail once in 1000 executions. This parameter is highly application specific. For example, if one is running Shor’s algorithm for factoring integers, a large value for the error budget may be tolerated as one can check that the output are indeed the prime factors of the input. On the other hand, a smaller error budget may be needed for an algorithm solving a problem with a solution, which cannot be efficiently verified. 
 
 For more information, see [Error budget in the Azure Quantum Resource Estimator](/azure/quantum/overview-resources-estimator#error-budget).
 
