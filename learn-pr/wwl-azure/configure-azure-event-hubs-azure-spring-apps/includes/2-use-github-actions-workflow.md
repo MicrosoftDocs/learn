@@ -126,7 +126,8 @@ Event Hubs represents the "front door" for an event pipeline, often called an *e
         config:
             activate:
                 on-profile: mysql
-        jms:
+        sql.init.mode: always
+        sql.init.platform: mysql    jms:
             servicebus:
                 connection-string: ${spring.jms.servicebus.connectionstring}
                 idle-timeout: 60000

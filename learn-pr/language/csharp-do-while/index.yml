@@ -3,7 +3,7 @@ uid: learn.languages.csharp-do-while
 metadata:
   title: 'Add looping logic to your code using the do-while and while statements in C#'
   description: Use the `do-while` and `while` statements to iterate as long as a Boolean expression evaluates to true.
-  ms.date: 08/29/2022
+  ms.date: 01/31/2023
   author: billwagner
   ms.author: wiwagn
   ms.topic: interactive-tutorial
@@ -11,7 +11,7 @@ metadata:
 title: Add looping logic to your code using the do-while and while statements in C#
 summary: Use the `do-while` and `while` statements to iterate as long as a Boolean expression evaluates to true.
 abstract: |
-  In this module, you will:
+  In this module, you'll:
   - Write code that uses the `do-while` statement to iterate through a code block.
   - Write code that uses the `while` statement to iterate through a code block.
   - Use the `continue` statement to step directly to the Boolean evaluation.
