@@ -1,4 +1,3 @@
-
 To use PIM, you need one of the following paid or trial licenses: Azure AD Premium P2, Enterprise Mobility + Security (EMS) E5, or Microsoft 365 M5.
 
 **PIM Access**

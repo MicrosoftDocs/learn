@@ -1,4 +1,3 @@
-
 :::image type="content" source="../media/az500-privileged-identity-management-settings-80da94b5.png" alt-text="Screenshot of the activation, assignment, and notification settings.":::
 
 
