@@ -10,7 +10,7 @@ To declare a variable, you need to use the `var` keyword:
 var firstName string
 ```
 
-The previous statement declares a variable named `firstName` of type `string`. (We'll talk about data types in the upcoming section.) This example shows the most basic way to declare a variable. If you want to declare another variable, you simply add a similar statement to the previous one. But you can declare more than one variable in a single line if they're the same type:
+The previous statement declares a variable named `firstName` of type `string`. (We'll talk about data types in the upcoming section.) This example shows the most basic way to declare a variable. If you want to declare another variable, just add a similar statement to the previous one. You can declare more than one variable in a single line if they're the same type:
 
 ```go
 var firstName, lastName string
@@ -114,11 +114,11 @@ const (
 > [!NOTE]
 > Go has an interesting concept related to constants that's called *iota*, which we're not covering in this module. But you can learn more about it by looking at the [Go wiki on GitHub](https://github.com/golang/go/wiki/Iota?azure-portal=true). Just keep in mind that `iota` is a keyword that Go uses to simplify constant definitions when the values are sequential.
 
-Although there are similarities between constants and variables, there are some key differences. For example, you can declare constants without using them. You won't get an error message. And you can't use the colon equal sign to declare constants. Go will complain if you do.
+Although there are similarities between constants and variables, there are some key differences. For example, you can declare constants without using them and you won't get an error message. You can't use the colon equal sign to declare constants. Go will complain if you do.
 
 ## Go throws an error if you declare variables and don't use them
 
-Something fundamental you need to keep in mind in Go is that when you declare a variable and don't use it, Go throws an error, not a warning as in some other programming languages.
+There's something fundamental you need to keep in mind in Go. When you declare a variable and don't use it, Go throws an error, not a warning as in some other programming languages.
 
 For example, let's go back to one of our previous examples and remove the `fmt.Println` call:
 

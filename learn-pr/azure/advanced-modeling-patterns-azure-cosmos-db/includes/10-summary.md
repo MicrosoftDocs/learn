@@ -7,7 +7,7 @@ The concepts you learned about in this module include:
 * **Combining entities**: You learned when it makes sense to store different entities in the same container.
 * **Denormalizing aggregates**: You learned a technique that improves performance on high concurrency queries that involve aggregate values on data. You applied it to scenarios that require a subquery to first do a *group by and aggregate*, then do an outer query with an *order by* on the results. You also learned about transactions in Azure Cosmos DB and an SDK feature called transactional batch.
 
-Applying these concepts, techniques, and technologies help ensure that your final database design is efficient in terms of compute. This means that it can scale out as either the size of the database grows or the amount of throughput is increased to handle a higher volume of operations.
+When you apply these concepts, techniques, and technologies, you help ensure that your final database design is efficient in terms of compute. This compute efficiency means that it can scale out as either the size of the database grows or the amount of throughput is increased to handle a higher volume of operations.
 
 ## Learn more
 

@@ -6,7 +6,7 @@ The applications you'll build in C# will require that you operate on literal and
 - Incrementing or decrementing a value
 - and so on
 
-Suppose you want to perform a calculation that converts a value from one unit of measure to another.  For example, what if you needed to convert the current temperature from Fahrenheit to Celsius? Once you've calculated the temperature in degrees Celsius, you need to display that information in a formatted message to the user. To accomplish this, you'll need to learn use operators to act on operands like literal and variable values.
+Suppose you want to perform a calculation that converts a value from one unit of measure to another. For example, what if you needed to convert the current temperature from Fahrenheit to Celsius? Once you've calculated the temperature in degrees Celsius, you need to display that information to the user in a formatted message. To accomplish this, you'll need to learn use operators to act on operands like literal and variable values.
 
 In this module, you'll perform basic string and numeric operations on your data. As you'll learn, the compiler will perform different tasks depending on the data types of the values around the given operator. More importantly, you'll come to understand how operators perform actions on operands. Learning how to work with operators and operands correctly will help you formulate meaningful instructions in your code.
 

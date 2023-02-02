@@ -5,10 +5,10 @@ So far, you've learned various constructs of the Python programming language. Yo
 When you start a program by using `python3`, you give it the name of the file to start. You can also give it a set of arguments: data that the program will have access to when running. Here's how that can look:
 
 ```bash
-python3 backup.py 2022-01-01
+python3 backup.py 2023-01-01
 ```
 
-In the preceding code, the string "2022-01-01" can be used as instruction to the program to start a backup from that date. What you gain by using command-line arguments is flexibility. The program can behave differently depending on its outside input.
+In the preceding code, the string "2023-01-01" can be used as instruction to the program *backup.py* to start a backup from that date. What you gain by using command-line arguments is flexibility. The program can behave differently depending on its outside input.
 
 ### Command-line arguments
 
@@ -22,18 +22,18 @@ print(sys.argv[0]) # program name
 print(sys.argv[1]) # first arg
 ```
 
-`sys.argv` is an array or a data structure that contains many items. The first position, denoted as `0` in the array, contains the program name. The second position, `1`, contains your first argument. Assume that you run the program like this:
+`sys.argv` is an array or a data structure that contains many items. The first position, denoted as `0` in the array, contains the program name. The second position, `1`, contains your first argument. Assume that the program *backup.py* contains the sample code and you run it like this:
 
 ```console
-python3 cli.py Jupiter
+python3 backup.py 2023-01-01
 ```
 
 The program then yields the following result:
 
 ```output
-['cli.py', 'Jupiter'] 
-cli.py
-Jupiter
+['backup.py', '2023-01-01'] 
+backup.py
+2023-01-01
 ```
 
 ## User input
@@ -44,16 +44,29 @@ To capture information from the user, you'll use the `input()` function. Here's 
 
 ```python
 print("Welcome to the greeter program")
-name = input("Enter your name ")
-print("Greetings: " + name)
+name = input("Enter your name: ")
+print("Greetings " + name)
 ```
 
-Running the program by using `python3 input.py` gives you the following result:
+Assume that the program *input.py* contains the sample code and you run it like this:
+
+```console
+python3 input.py
+```
+
+Running the program invites you to enter your name, for example:
 
 ```output
 Welcome to the greeter program
-Enter your name Picard
-Greetings: Picard
+Enter your name: 
+```
+
+After you enter a value and press **Enter**, the greeting is returned:
+
+```output
+Welcome to the greeter program
+Enter your name: Picard
+Greetings Picard
 ```
 
 ### Working with numbers
@@ -67,7 +80,22 @@ second_number = input("second number: ")
 print(first_number + second_number)
 ```
 
-Running this program using `python3 calc.py` gives you the following result:
+Running this program invites you to input the first number, let's say `3`:
+
+```output
+calculator program
+first number: 3
+```
+
+After you press **Enter**, you can enter the second number, let's say `4`:
+
+```output
+calculator program
+first number: 3
+second number: 4
+```
+
+Pressing **Enter** give you the following result:
 
 ```output
 calculator program
@@ -84,4 +112,11 @@ The explanation is that `first_number` and `second_number` are strings. For the 
 print(int(first_number) + int(second_number))
 ```
 
-Rerunning the program now returns `7` as the response.
+Rerunning the program with the same values now returns `7` as the response:
+
+```output
+calculator program
+first number: 3
+second number: 4
+7
+```
