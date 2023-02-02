@@ -3,7 +3,7 @@ uid: learn.languages.csharp-readable-code
 metadata:
   title: 'Create readable code with conventions, whitespace, and comments in C#'
   description: Write code that is easier to read, update and support using naming conventions, comments and whitespace.
-  ms.date: 08/30/2022
+  ms.date: 02/01/2023
   author: billwagner
   ms.author: wiwagn
   ms.topic: interactive-tutorial
@@ -11,7 +11,7 @@ metadata:
 title: Create readable code with conventions, whitespace, and comments in C#
 summary: Write code that is easier to read, update and support using naming conventions, comments and whitespace.
 abstract: |
-  In this module, you will:
+  In this module, you'll:
   - Choose a descriptive name for variables that describe their purpose and intent.
   - Use code comments to temporarily instruct the compiler to ignore lines of code.
   - Use code comments to describe higher-level requirements or purpose for a passage of code.
