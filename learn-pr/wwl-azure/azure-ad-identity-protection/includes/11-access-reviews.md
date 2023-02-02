@@ -1,3 +1,4 @@
+
 Azure Active Directory (Azure AD) access reviews enable organizations to efficiently manage group memberships, access to enterprise applications, and role assignments. User's access can be reviewed on a regular basis to make sure only the right people have continued access.
 
 ## Why are access reviews important?
