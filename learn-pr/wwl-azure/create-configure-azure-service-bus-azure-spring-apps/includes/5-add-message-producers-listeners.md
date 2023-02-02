@@ -1,3 +1,8 @@
+---
+interactive:bash
+zone_pivot_groups:azure-interface
+title:Adding producers and listeners
+---
 In this unit, you'll send and receive messages to the **visits** service.
 
 Below is the activity flow.
@@ -99,7 +104,6 @@ Below is the activity flow.
     
     ```
     package org.springframework.samples.petclinic.visits.config;
-    
     import java.util.HashMap;
     import java.util.Map;
     import org.springframework.beans.factory.annotation.Value;
@@ -154,9 +158,7 @@ Below is the activity flow.
     
     ```
     package org.springframework.samples.petclinic.visits.service;
-    
     import java.util.Date;
-    
     import org.springframework.beans.factory.annotation.Value;
     import org.springframework.context.annotation.Bean;
     import org.springframework.jms.annotation.JmsListener;
@@ -166,7 +168,6 @@ Below is the activity flow.
     import org.springframework.samples.petclinic.visits.model.Visit;
     import org.springframework.samples.petclinic.visits.model.VisitRepository;
     import org.springframework.stereotype.Component;
-    
     import lombok.RequiredArgsConstructor;
     import lombok.extern.slf4j.Slf4j;
     
@@ -175,9 +176,7 @@ Below is the activity flow.
     @RequiredArgsConstructor
     public class VisitsReceiver {
         private final VisitRepository visitsRepository;
-    
         private final JmsTemplate jmsTemplate;
-    
         @JmsListener(destination = "visits-requests")
         void receiveVisitRequests(VisitRequest visitRequest) {
             log.info("Received message: {}", visitRequest.getMessage());
@@ -213,7 +212,7 @@ Below is the activity flow.
         --resource-group $RESOURCE_GROUP \
         --name visits-service \
         --no-wait \
-        --artifact-path spring-petclinic-visits-service/target/spring-petclinic-visits-service-2.6.1.jar \
+        --artifact-path spring-petclinic-visits-service/target/spring-petclinic-visits-service-$VERSION.jar \
         --env SPRING_PROFILES_ACTIVE=mysql
     ```
 

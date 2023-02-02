@@ -1,25 +1,37 @@
-Clients send requests to your web apps to the IP address or DNS name of the gateway. The gateway routes requests to a selected web server in the back-end pool, using a set of rules configured for the gateway to determine where the request should go.
+Clients send requests to your web apps by specifying the IP address or DNS name of your application gateway. Your gateway directs the requests to a selected web server in your back-end pool according to a set of rules. You define the rules for your gateway to identify the allowable routes for the request traffic.
 
-There are two primary methods of routing traffic, path-based routing and multiple site routing.
+### Things to know about traffic routing
 
-## Path-based routing
+Let's take a closer look at your routing options for Azure Application Gateway.
 
-Path-based routing sends requests with different URL paths to different pools of back-end servers. For example, you could direct requests with the path /video/\* to a back-end pool containing servers that are optimized to handle video streaming, and direct /images/\* requests to a pool of servers that handle image retrieval.
+- Azure Application Gateway offers two primary methods for routing traffic:
 
-:::image type="content" source="../media/path-based-routing-15bcef5f.png" alt-text="Diagram of path-based routing.":::
+   - **Path-based routing** sends requests with different URL paths to different pools of back-end servers. 
 
+   - **Multi-site routing** configures more than one web application on the same application gateway instance. 
 
-## Multiple site routing
+- You can configure your application gateway to **redirect** traffic.
 
-Multiple site routing configures more than one web application on the same application gateway instance. In a multi-site configuration, you register multiple DNS names (CNAMEs) for the IP address of the Application Gateway, specifying the name of each site. Application Gateway uses separate listeners to wait for requests for each site. Each listener passes the request to a different rule, which can route the requests to servers in a different back-end pool. For example, you could direct all requests for http://contoso.com to servers in one back-end pool, and requests for http://fabrikam.com to another back-end pool. The following diagram shows this configuration.
+   Application Gateway can redirect traffic received at one listener to another listener, or to an external site. This approach is commonly used by web apps to automatically redirect HTTP requests to communicate via HTTPS. The redirection ensures all communication between your web app and clients occurs over an encrypted path. 
 
-:::image type="content" source="../media/site-based-routing-e686b605.png" alt-text="Diagram of multiple site routing.":::
+- You can implement Application Gateway to **rewrite HTTP headers**.
 
+   HTTP headers allow the client and server to pass parameter information with the request or the response. In this scenario, you can translate URLs or query string parameters, and modify request and response headers. Add conditions to ensure URLs or headers are rewritten only for certain conditions.
 
-Multi-site configurations are useful for supporting multi-tenant applications, where each tenant has its own set of virtual machines or other resources hosting a web application.
+- Application Gateway allows you to create custom error pages instead of displaying default error pages. You can use your own branding and layout by using a custom error page.
 
-## Other features
+#### Path-based routing
 
- -  **Redirection**. Redirection can be used to another site, or from HTTP to HTTPS.
- -  **Rewrite HTTP headers**. HTTP headers allow the client and server to pass parameter information with the request or the response.
- -  **Custom error pages**. Application Gateway allows you to create custom error pages instead of displaying default error pages. You can use your own branding and layout using a custom error page.
+You can implement path-based routing to direct requests for specific URL paths to the appropriate back-end pool. Consider a scenario where your web app receives requests for videos or images. You can use path-based routing to direct requests for the `/video/\*` path to a back-end pool of servers that are optimized to handle video streaming. Image requests for the `/images/\*` path can be directed to a pool of servers that handle image retrieval. The following illustration demonstrates this routing method:
+
+:::image type="content" source="../media/path-based-routing-15bcef5f.png" alt-text="Diagram that shows a path-based routing approach." border="false":::
+
+#### Multi-site routing
+
+When you need to support multiple web apps on the same application gateway instance, multi-site routing is the best option. Multi-site configurations are useful for supporting multi-tenant applications, where each tenant has its own set of virtual machines or other resources hosting a web application.
+
+In this configuration, you register multiple DNS names (CNAMEs) for the IP address of your application gateway and specify the name of each site. Application Gateway uses separate listeners to wait for requests for each site. Each listener passes the request to a different rule, which can route the requests to servers in a different back-end pool. 
+
+Consider a scenario where you need to support traffic to two sites on the same gateway. You can direct all requests for the `http://contoso.com` site to servers in one back-end pool, and requests for the `http://fabrikam.com` site to another back-end pool. The following illustration demonstrates this routing method.
+
+:::image type="content" source="../media/site-based-routing-e686b605.png" alt-text="Diagram that shows a multiple site routing approach." border="false":::
