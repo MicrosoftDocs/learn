@@ -1,10 +1,10 @@
 Whether you’re a seasoned developer or a student just beginning to learn code, one of the most important choices you need to make is the type of hardware, environment, and tools to invest in using.
 
-:::image type="content" source="../media/wsl-tools-decision.png" alt-text="Illustration of a screen with multiple types of software applications running and a person making a decision.":::
+:::image type="content" source="../media/wsl-juggling-tools.png" alt-text="Illustration of a person juggling 7 different software applications.":::
 
 As a developer, you will need to access specific coding tools, languages, and frameworks. You may want to install Python and a web development framework like Django, work with JavaScript on a NodeJS backend, or install a cross-platform project that uses React. Generally speaking, these programming languages will work on all operating systems. However, there are many scenarios that may prefer one operating system to another. Building Windows native desktop apps works best using Windows. Building a web app that will be deployed to a custom Linux server or production-ready Linux Virtual Machine (VM) works best using a Linux environment. We call this having parity between your local development environment and production deployment environment.
 
-:::image type="content" source="../media/wsl-juggling-tools.png" alt-text="Illustration of a person juggling 7 different software applications.":::
+:::image type="content" source="../media/wsl-tools-decision.png" alt-text="Illustration of a screen with multiple types of software applications running and a person making a decision.":::
 
 As the employee of a company, or a student in a school, access to productivity tools is also essential to consider. Throughout the day many of us need to use email and calendar scheduling tools (like Outlook), create Word docs, Excel spreadsheets, and PowerPoint presentations, and then need to jump on an online call or chat (using a tool like Microsoft Teams).
 
