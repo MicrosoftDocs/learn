@@ -4,9 +4,9 @@ metadata:
   title: Quantum computing foundations
   description: Intrigued by quantum computing but don't know where to start? This learning path helps prepare you for this exciting next generation of computing.
   brand: azure
-  ms.date: 09/20/2020
-  author: dphansen
-  ms.author: davidph
+  ms.date: 02/02/2023
+  author: SoniaLopezBravo
+  ms.author: sonialopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Quantum computing foundations
@@ -27,6 +27,7 @@ summary: |
   - Build basic quantum programs by using the Quantum Development Kit and Q#.
   - Interact with the Azure Quantum cloud service.
   - Adapt and create Q# applications to run them on actual hardware.
+  - Estimate physical resources for quantum algorithms using Azure Quantum 
   - Apply quantum-inspired optimization to a combinatorial optimization problem.
   - Solve a job shop scheduling optimization problem.
 
@@ -47,6 +48,7 @@ modules:
 - learn.quantum.qsharp-create-first-quantum-development-kit
 - learn.quantum.qsharp-explore-key-concepts-quantum-computing
 - learn.quantum.solve-graph-coloring-problems-grovers-search
+- learn.quantum.estimate-resources-quantum-algorithms
 - learn.quantum.use-qsharp-libraries
 - learn.quantum.run-quantum-algorithms-hardware
 - learn.quantum.solve-quantum-inspired-optimization-problems
