@@ -71,7 +71,7 @@ To use the JavaScript interop, you inject the `IJSRuntime` abstraction.
 
 1. In Visual Studio Code, press <kbd>F5</kbd>, or in the **Run** menu, select **Start Debugging**.
 
-    :::image type="content" source="../media/3-confirm-remove-dialog.png" alt-text="Screenshot of the default JavaScript confirm dialog.":::
+    :::image type="content" source="../media/3-confirm-remove-dialog.png" lightbox="../media/3-confirm-remove-dialog.png" alt-text="Screenshot of the default JavaScript confirm dialog.":::
 
     Try configuring some pizzas and adding them to your order. With a few pizzas in your order, select the **X**. A standard JavaScript confirm dialog lets you select **Cancel** or **OK**.
 
@@ -126,7 +126,7 @@ After some research you find a small JavaScript library called SweetAlert that l
 
 1. In Visual Studio Code, press <kbd>F5</kbd> or, in the **Run** menu, select **Start Debugging**.
 
-    :::image type="content" source="../media/3-sweetalert-remove-dialog.png" alt-text="Screenshot showing the SweetAlert dialog box.":::
+    :::image type="content" source="../media/3-sweetalert-remove-dialog.png" lightbox="../media/3-sweetalert-remove-dialog.png" alt-text="Screenshot showing the SweetAlert dialog box.":::
 
     SweetAlert can accept a JSON object that includes all the settings it needs. The `confirm` dialog will now have two buttons that say **No, leave it in my order** and **Yes, remove pizza**.
 
@@ -216,7 +216,7 @@ The `OrderDetail` component shows the current status of a pizza order. Customers
 
 1. In Visual Studio Code, press <kbd>F5</kbd> or, in the **Run** menu, select **Start Debugging**.
 
-    :::image type="content" source="../media/3-order-status-updated-realtime.gif" alt-text="Animation showing the order status changing in real-time.":::
+    :::image type="content" source="../media/3-order-status-updated-realtime.gif" lightbox="../media/3-order-status-updated-realtime.gif" alt-text="Animation showing the order status changing in real-time.":::
 
     Start the app and order a pizza. When the customer gets to the order detail screen the status updates and the spinner is removed when the pizza is delivered.
 
