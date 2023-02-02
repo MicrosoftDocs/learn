@@ -57,7 +57,7 @@ You'll provide the networking resources for your Spring Apps service and your Ap
 3.  Assign the **Owner** role-based access control (RBAC) role to the Azure Service Provider for Spring Apps access in the scope of the newly created virtual network. The assignment allows the resource provider to create resources in the service-runtime-subnet and apps-subnet subnets. The GUID used in the second command is the service provider ID for Azure Spring Apps.
     
     > [!NOTE]
-    > The export **`MSYS_NO_PATHCONV=`**1 must be included to address an issue with implementing role assignment when using Azure CLI in Git Bash shell, as documented on [GitHub](https://github.com/Azure/azure-cli/issues/16317).
+    > The export `MSYS_NO_PATHCONV=1` must be included to address an issue with implementing role assignment when using Azure CLI in Git Bash shell, as documented on [GitHub](https://github.com/Azure/azure-cli/issues/16317).
     
     ```Bash
     VIRTUAL_NETWORK_RESOURCE_ID=`az network vnet show \
