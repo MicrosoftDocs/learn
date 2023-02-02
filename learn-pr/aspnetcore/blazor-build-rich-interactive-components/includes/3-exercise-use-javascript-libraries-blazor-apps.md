@@ -158,11 +158,12 @@ The `OrderDetail` component shows the current status of a pizza order. Customers
     @foreach (var pizza in orderWithStatus.Order.Pizzas)
     ```
 
-1. Under the `OrderId` property declaration, add the following property and field declarations.
+1. Under the `OrderId` property declaration, add the following members.
 
     ```razor
     bool IsOrderIncomplete =>
         orderWithStatus is null || orderWithStatus.IsDelivered == false;
+
     PeriodicTimer timer = new(TimeSpan.FromSeconds(3));
     ```
 
@@ -207,7 +208,7 @@ The `OrderDetail` component shows the current status of a pizza order. Customers
     public void Dispose() => timer.Dispose();
     ```
 
-    The `OrderDetail` component starts polling after the page has been rendered.
+    The `OrderDetail` component starts polling after the page has been rendered, and stops when the order is delivered.
 
     The `StartPollingTimerAsync` function uses a <xref:System.Threading.PeriodicTimer> to asynchronously wait for the next tick, while the order status is incomplete.
 

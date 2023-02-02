@@ -5,12 +5,12 @@ metadata:
   unitType: learning-content
   title: "Improve app interactivity with lifecycle events"
   description: "Learn how to use lifecycle events to improve the response time in a Blazor app"
-  ms.date: 01/25/2023
+  ms.date: 02/02/2023
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial
   ms.prod: learning-blazor
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/4-improve-app-interactivity-lifecycle-events.md)]
 quiz:

@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Build rich interactive components with Blazor web apps
   description: In this Blazor module, you'll learn how to interoperate with JavaScript code, use templated components, and handle component lifecycle events.
-  ms.date: 01/25/2023
+  ms.date: 02/02/2023
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial
