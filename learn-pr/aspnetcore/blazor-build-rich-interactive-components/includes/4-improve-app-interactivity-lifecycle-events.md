@@ -53,11 +53,11 @@ Any dependencies used by the Blazor component are injected when the instance has
 > [!IMPORTANT]
 > Blazor components don't support constructor dependency injection. Instead, use either the `@inject` directive in the component markup or the <xref:Microsoft.AspNetCore.Components.InjectAttribute> on the property declaration.
 
-During the prerender phase, code in a Blazor Server component cannot perform actions that require a connection to the browser, such as calling JavaScript code. Place logic that depends on a connection with the browser in the `OnAfterRender` or `OnAfterRenderAsync` methods described in the section below.
+During the prerender phase, code in a Blazor Server component cannot perform actions that require a connection to the browser, such as calling JavaScript code. Place logic that depends on a connection with the browser in the `OnAfterRender` or `OnAfterRenderAsync` methods described in the following section.
 
 ## Understand the `OnParametersSet` and `OnParametersSetAsync` methods
 
-TThe `OnParametersSet` and `OnParametersSetAsync` methods run either after the `OnInitialized` or `OnInitializedAsync` methods if this is the first time the component is being rendered, or after the `SetParametersAsync` method if not. Like `SetParametersAsync`, these methods are always called, even if the component has no parameters.
+The `OnParametersSet` and `OnParametersSetAsync` methods run either after the `OnInitialized` or `OnInitializedAsync` methods if this is the first time the component is being rendered, or after the `SetParametersAsync` method if not. Like `SetParametersAsync`, these methods are always called, even if the component has no parameters.
 
 Use this method to complete initialization tasks that depend on the component parameter values, such as calculating values for computed properties. Don't perform long-running operations such as these in a constructor; constructors are synchronous, and waiting for long-running operations to complete will affect the responsiveness of the page that contains the component.
 

@@ -36,7 +36,7 @@ There are several methods exposed on the `IJSRuntime` interface to invoke JavaSc
 Use `InvokeAsync<TValue>` to call a JavaScript function that returns a value, otherwise, call `InvokeVoidAsync`. As the names suggest, both methods are asynchronous, so use the C# `await` operator to capture any results. The parameters to the `InvokeAsync` and `InvokeVoidAsync` methods are the name of the JavaScript function to invoke, followed by any arguments required by the function. The JavaScript function must be part of the `window` scope or a sub-scope of `window`. Arguments must be JSON-serializable.
 
 > [!NOTE]
-> JS interop is only available when the Blazor Server app has established a SignalR connection with the browser. You can't make interop calls until rendering is complete. To detect whether rendering has finished, use the <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender%2A> (or <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync%2A>) event in your Blazor code. The unit *Improve app interactivity with lifecycle events* later in this module describes this event in more detail.
+> JS interop is only available when the Blazor Server app has established a SignalR connection with the browser. You can't make interop calls until rendering is complete. To detect whether rendering has finished, use the <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender%2A> (or <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync%2A>) event in your Blazor code.
 
 ### Update the DOM with JavaScript using an `ElementReference` object
 

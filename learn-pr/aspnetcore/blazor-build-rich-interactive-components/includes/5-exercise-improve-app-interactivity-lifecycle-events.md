@@ -55,7 +55,7 @@ In this exercise, you'll make changes to the pizza database to add the new famil
 
 ## Omit the size slider
 
-The `ConfigurePizzaDialog` component uses an HTML `range` element to allow the customer to select the size of the pizza.
+One way to disable user input is to conditionally omit the rendering of the user control all together. The `ConfigurePizzaDialog` component uses an HTML `range` element to allow the customer to select the size of the pizza.
 
 1. In the file explorer, expand **Shared**, then select *ConfigurePizzaDialog.razor*.
 1. In the `@code` directive, under the existing properties, add the following members:
@@ -73,7 +73,7 @@ The `ConfigurePizzaDialog` component uses an HTML `range` element to allow the c
     }
     ```
 
-    The `supportsSizing` field defaults to `true`, but if the pizza has a fixed size, it will be set to `false`. The `OnInitialized` lifecycle method override will set the pizza size to the fixed size and disable sizing support.
+    The `supportSizing` field defaults to `true`, but if the pizza has a fixed size, it will be set to `false`. The `OnInitialized` lifecycle method override will set the pizza size to the fixed size and disable sizing support.
 
 1. In the markup, replace the existing `label` and `input` with the following markup:
 
