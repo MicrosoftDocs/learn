@@ -8,7 +8,7 @@ As a developer, you will need to access specific coding tools, languages, and fr
 
 As the employee of a company, or a student in a school, access to productivity tools is also essential to consider. Throughout the day many of us need to use email and calendar scheduling tools (like Outlook), create Word docs, Excel spreadsheets, and PowerPoint presentations, and then need to jump on an online call or chat (using a tool like Microsoft Teams).
 
-Rather than using separate machines to handle these needs, some developers choose to dual-boot or run virtual machines (VMs). Microsoft now offers a better solution with the Windows Subsystem for Linux (WSL). With WSL, you can fun all of your favorite developer tools and productivity tools in one place, running Linux and Windows side-by-side!
+Rather than using separate machines to handle these needs, some developers choose to dual-boot or run virtual machines (VMs). Microsoft now offers a better solution with the Windows Subsystem for Linux (WSL). With WSL, you can run all of your favorite developer tools and productivity tools in one place, running Linux and Windows side-by-side!
 
 ## What is WSL?
 
