@@ -1,10 +1,10 @@
-Blazor components have a well-defined lifecycle. It starts when they're first created and ends when they're destroyed. The component lifecycle is governed by a set of events that occur in response to specific triggers, such as the component being initialized, the user interacting with the component, or the page on which the component resides being closed.
+Blazor components have a well-defined lifecycle. It starts when they're first created and ends when they're destroyed. The component lifecycle is governed by a set of events that occur in response to specific triggers, such as the component being initialized, user interactions, or the page where the component resides being closed.
 
 In this unit, you'll learn about the events that occur during the lifecycle of a Blazor component. You'll see how to handle these events to optimize the work performed and increase the responsiveness of a Blazor page.
 
 ## Understand the Blazor component lifecycle
 
-Blazor components form the views in Blazor apps, defining the layout and UI logic. They generate HTML markup when the app runs. User interaction events can trigger custom code, and components can be updated to re-render the display. Upon page closure, Blazor removes the component and any resources should be cleaned up. New instances are created when the user returns to the page.
+Blazor components represent the views in Blazor apps, defining the layout and UI logic. They generate HTML markup when the app runs. User interaction events can trigger custom code, and components can be updated to re-render the display. Upon page closure, Blazor removes the component and any resources should be cleaned up. New instances are created when the user returns to the page.
 
 The following diagram illustrates the events that occur during the lifetime of a component, and the methods you can use to handle these events. Except for `SetParametersAsync`, Blazor provides synchronous and asynchronous versions of each method. All Blazor components descend from the <xref:Microsoft.AspNetCore.Components.ComponentBase> class (or the <xref:Microsoft.AspNetCore.Components.IComponent>) that defines the methods shown and provides default behavior. You handle an event by overriding the corresponding method.
 
@@ -25,11 +25,11 @@ Each component lifecycle method has a specific purpose, and you can override the
 | **5** | <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender%2A> / <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync%2A> | Occurs after the component has been rendered |
 | **6** | `Dispose` / `DisposeAsync` | If component implements either <xref:System.IDisposable> or <xref:System.IAsyncDisposable>, appropriate disposable occurs as part of destroying the component. |
 
-When <xref:Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged%2A> is called, either from an external event or a UI trigger, the component will conditionally re-render. The following list details the order of method invocations when this occurs:
+When <xref:Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged%2A> is called, either from an external event or a UI trigger, the component will conditionally re-render. The following list details the order of method invocations including and following `StateHasChanged`:
 
-1. <xref:Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged%2A>: The component is marked as needing to re-render.
-1. <xref:Microsoft.AspNetCore.Components.ComponentBase.ShouldRender%2A>: Returns a flag indicating whether the component should render.
-1. <xref:Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree%2A>: Renders the component.
+- <xref:Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged%2A>: The component is marked as needing to re-render.
+- <xref:Microsoft.AspNetCore.Components.ComponentBase.ShouldRender%2A>: Returns a flag indicating whether the component should render.
+- <xref:Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree%2A>: Renders the component.
 
 ## Understand the `SetParametersAsync` method
 
@@ -44,7 +44,7 @@ Alternatively, if you need to handle the parameters differently, this is the pla
 
 The `OnInitialized` and `OnInitializedAsync` methods can be overridden to include custom functionality. They run after the `SetParametersAsync` method has populated the component's parameter-based properties (properties attributed with either <xref:Microsoft.AspNetCore.Components.ParameterAttribute> or <xref:Microsoft.AspNetCore.Components.CascadingParameterAttribute>). You run initialization logic in these methods.
 
-If the `render-mode` property of the application is set to `Server*, the *OnInitialized` and `OnInitializedAsync` methods only run once for a component instance. If a parent of the component modifies the component parameters, the `SetParametersAsync` method will run again, but these methods will not. If you need to reinitialize a component should the parameters change, use the `SetParametersAsync` method. If you want to do initialization once, use these methods.
+If the `render-mode` property of the application is set to `Server*, the *OnInitialized` and `OnInitializedAsync` methods only run once for a component instance. If a parent of the component modifies the component parameters, the `SetParametersAsync` method will run again, but these methods won't. If you need to reinitialize a component should the parameters change, use the `SetParametersAsync` method. If you want to do initialization once, use these methods.
 
 If the `render-mode` property is set to <xref:Microsoft.AspNetCore.Mvc.Rendering.RenderMode.ServerPrerendered>, the `OnInitialized` and `OnInitializedAsync` methods run twice; once during the prerender phase that generates the static output of the page, and again when the server has established a SignalR connection with the browser. If you do expensive initialization tasks such as retrieving data from a web service that you use to set the state of the Blazor component in these methods, cache the state information during the first execution, and reuse this saved state during the second execution.
 
@@ -53,13 +53,13 @@ Any dependencies used by the Blazor component are injected when the instance has
 > [!IMPORTANT]
 > Blazor components don't support constructor dependency injection. Instead, use either the `@inject` directive in the component markup or the <xref:Microsoft.AspNetCore.Components.InjectAttribute> on the property declaration.
 
-During the prerender phase, code in a Blazor Server component cannot perform actions that require a connection to the browser, such as calling JavaScript code. Place logic that depends on a connection with the browser in the `OnAfterRender` or `OnAfterRenderAsync` methods described in the following section.
+During the prerender phase, code in a Blazor Server component can't perform actions that require a connection to the browser, such as calling JavaScript code. Place logic that depends on a connection with the browser in the `OnAfterRender` or `OnAfterRenderAsync` methods described in the following section.
 
 ## Understand the `OnParametersSet` and `OnParametersSetAsync` methods
 
 The `OnParametersSet` and `OnParametersSetAsync` methods run either after the `OnInitialized` or `OnInitializedAsync` methods if this is the first time the component is being rendered, or after the `SetParametersAsync` method if not. Like `SetParametersAsync`, these methods are always called, even if the component has no parameters.
 
-Use this method to complete initialization tasks that depend on the component parameter values, such as calculating values for computed properties. Don't perform long-running operations such as these in a constructor; constructors are synchronous, and waiting for long-running operations to complete will affect the responsiveness of the page that contains the component.
+Use either `OnParametersSet{Async}` method to complete initialization tasks that depend on the component parameter values, such as calculating values for computed properties. Don't perform long-running operations such as these in a constructor; constructors are synchronous, and waiting for long-running operations to complete will affect the responsiveness of the page that contains the component.
 
 ## Understand the `OnAfterRender`and `OnAfterRenderAsync` methods
 
@@ -82,4 +82,4 @@ Like any .NET class, a Blazor component can use managed and unmanaged resources.
 
 ## Handle exceptions in lifecycle methods
 
-If a lifecycle method for a Blazor component fails, it closes the SignalR connection to the browser which in turn will cause the Blazor app to stop functioning. Ensure that you've prepared to handle exceptions as part of the logic for the lifecycle methods to prevent this situation from arising. For more information, see [Handle errors in ASP.NET Core Blazor apps](/aspnet/core/blazor/fundamentals/handle-errors).
+If a lifecycle method for a Blazor component fails, it closes the SignalR connection to the browser that in turn will cause the Blazor app to stop functioning. Ensure that you've prepared to handle exceptions as part of the logic for the lifecycle methods to prevent this situation from arising. For more information, see [Handle errors in ASP.NET Core Blazor apps](/aspnet/core/blazor/fundamentals/handle-errors).

@@ -39,7 +39,7 @@ In this exercise, you'll make changes to the pizza database to add the new famil
     }
     ```
 
-    This class is used to pre-populate the pizza database with special pizzas. You'll need to delete the existing database for this new special to be created.
+    The `SeedData` class is used to pre-populate the pizza database with special pizzas. You'll need to delete the existing database for the new `PizzaSpecial` to be created.
 
 1. In the file explorer, select and delete the *pizza.db*, *pizza.db-shm*, and *pizza.db-wal* files.
 
@@ -86,7 +86,7 @@ One way to disable user input is to conditionally omit the rendering of the user
     }
     ```
 
-    If you're code needed to rely on JavaScript interop, using the `OnInitialized` method wouldn't have worked. Instead, you would have needed to use the `OnAfterRenderAsync` method to ensure the JavaScript interop was available.
+    If your code needed to rely on JavaScript interop, using the `OnInitialized` method wouldn't have worked. Instead, you would have needed to use the `OnAfterRenderAsync` method to ensure the JavaScript interop was available.
 
 1. In Visual Studio Code, press <kbd>F5</kbd> or, in the **Run** menu, select **Start Debugging**.
 

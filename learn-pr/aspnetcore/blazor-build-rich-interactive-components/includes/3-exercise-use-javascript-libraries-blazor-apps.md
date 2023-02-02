@@ -67,7 +67,7 @@ To use the JavaScript interop, you inject the `IJSRuntime` abstraction.
     }
     ```
 
-    The server uses the <xref:Microsoft.JSInterop.IJSRuntime.InvokeAsync%2A?displayProperty=nameWithType> method to call the `confirm` function on the client side. The response from the call returns a `bool` value. When it's `true` the pizza is removed from the order.
+    The server uses the <xref:Microsoft.JSInterop.IJSRuntime.InvokeAsync%2A?displayProperty=nameWithType> method to call the `confirm` function on the client side. The response from the call returns a `bool` value. If the result of the confirm dialog is `true` the pizza is removed from the order.
 
 1. In Visual Studio Code, press <kbd>F5</kbd>, or in the **Run** menu, select **Start Debugging**.
 
@@ -81,7 +81,7 @@ To use the JavaScript interop, you inject the `IJSRuntime` abstraction.
 
 The pizza company feels that their customers could be confused by the word *cancel* in the popup. They'd like the text on the buttons to be clearer. Also, they don't like how their existing branding and styling aren't used.
 
-After some research you find a small JavaScript library called SweetAlert that looks like a good replacement.
+After some research, you find a small JavaScript library called SweetAlert that looks like a good replacement.
 
 1. In the file explorer, expand **Pages**, then select **_Host.cshtml**.
 
@@ -95,7 +95,7 @@ After some research you find a small JavaScript library called SweetAlert that l
     </html>
     ```
 
-    This now makes SweetAlert available to call on the client side.
+    With the `<script>` tag added, the SweetAlert is available to call on the client side.
 
 1. Back in the Update the `RemovePizzaConfirmation` method to use the new library.
 

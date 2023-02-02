@@ -1,6 +1,6 @@
 A template could help improve how a customer's past orders are displayed on the Blazing Pizza app.
 
-The pizza company has asked that the **My Orders** page show more details to a customer about their past orders. They'd like this area to be enhanced so that a customer can see all the pizzas in the order, and what time they made their order.
+The pizza company has asked that the **My Orders** page shows more details to a customer about their past orders. They'd like this area to be enhanced so that a customer can see all the pizzas in the order, and what time they made their order.
 
 In this exercise, you'll use Blazor templates to create a pagination component and improve the order history page.
 
@@ -81,7 +81,7 @@ In this exercise, you'll use Blazor templates to create a pagination component a
 ## Update the `MyOrder` component
 
 1. In the file explorer, expand **Pages**, then select *MyOrders.razor*.
-1. Under the last `@inject` directive, add the following:
+1. Under the last `@inject` directive, add the `@using` directive:
 
     ```razor
     @using BlazingPizza.Components
@@ -89,7 +89,7 @@ In this exercise, you'll use Blazor templates to create a pagination component a
 
     This enables the newly created component template to be visible to the `MyOrder` component.
 
-1. Within the `<div class="main">` markup, there is an `if / else if / else` logical block, replace the existing `else` branch with the following code:
+1. Within the `<div class="main">` markup, there's an `if / else if / else` logical block, replace the existing `else` branch with the following code:
 
     ```razor
     else
@@ -134,6 +134,6 @@ In this exercise, you'll use Blazor templates to create a pagination component a
 
     :::image type="content" source="../media/7-new-order-history-page.png" lightbox="../media/7-new-order-history-page.png" alt-text="Screenshot of the new order history page.":::
 
-    Run your updated app and select **My Orders**. You'll see a list of any past orders you've made. Select the date on the left to load the order details tab component.
+    Run your updated app and select **My Orders**. You'll see a list of any past orders you've made. Select the date from the pagination controls to load the order details.
 
 1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app from running.
