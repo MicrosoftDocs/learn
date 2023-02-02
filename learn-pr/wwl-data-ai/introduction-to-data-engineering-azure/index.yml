@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-data-engineering-azure
 metadata:
   title: Introduction to data engineering on Azure
   description: "Introduction to data engineering on Azure"
-  ms.date: 02/01/2023
+  ms.date: 02/02/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -13,11 +13,12 @@ summary: This module describes some of the major advantages of data engineering 
 abstract: |
   In this module you will:
   - Learn what data engineering looks like on Azure
-  - How data engineering is dfferent in Microsoft Azure
+  - How data engineering is different in Microsoft Azure
   - Common patterns for Azure data engineering
   - Common tooling used in Azure data engineering
-prerequisites: ""
-iconUrl: /training/achievements/generic-badge.svg
+prerequisites: |
+  None
+iconUrl: /training/achievements/data-ai/data-engineering-processes-badge.svg
 levels:
 - beginner
 roles:
@@ -32,4 +33,4 @@ units:
 - learn.wwl.introduction-data-engineering-azure.knowledge-check
 - learn.wwl.introduction-data-engineering-azure.summary
 badge:
-  uid: learn.wwl.introduction-data-engineering-azure.badge
+  uid: learn.data-ai.data-engineering-processes.badge

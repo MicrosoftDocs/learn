@@ -1,5 +1,6 @@
 
 
-Data engineering is a well established industry role and doesn't drastically change within Azure. In fact, it's similar to an approach an organization with Big Data in-house would take. This approach allows for the leveraging of both commercial and open source software (OSS) which allows the customer to use the best tool to fit their needs offering scalability and flexibility in a manner that doesn't require extended lead times for new hardware or software.
+Data engineering is a well established industry role that is supported by multiple services in Microsoft Azure. Data engineers can use these services to work with different types of data, building integration, transformation, and consolidation solutions to support enterprise analytics.
 
-[Learn more about Azure architecture solutions for data analytics](/azure/architecture/solution-ideas/articles/analytics-start-here)
+> [!TIP]
+> To learn more about Azure architecture solutions for data analytics, see [Analytics architecture design](/azure/architecture/solution-ideas/articles/analytics-start-here).
