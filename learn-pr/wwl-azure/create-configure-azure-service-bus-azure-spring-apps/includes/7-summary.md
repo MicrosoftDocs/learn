@@ -1,3 +1,8 @@
+---
+interactive:bash
+zone_pivot_groups:azure-interface
+title:Summary
+---
 In this module, you learned how to:
 
  -  Create an Azure Service Bus.

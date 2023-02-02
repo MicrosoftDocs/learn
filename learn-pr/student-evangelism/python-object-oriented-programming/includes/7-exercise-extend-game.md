@@ -4,7 +4,7 @@ Your company is pleased with your object-oriented programming (OOP) implementati
 
 Adding two more choices like lizard and Spock might sound like there's a lot to change. Thanks to the way you implemented the rules, the changes you need are minor.
 
-What are the rules for lizard and Spock though?
+What are the rules for lizard and Spock?
 
 *Scissors decapitate lizard, scissors cut paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitate lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors.*
 

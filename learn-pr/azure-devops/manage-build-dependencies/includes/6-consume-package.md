@@ -65,7 +65,7 @@ This branch contains the _Space Game_ project you worked with in the previous mo
 1. Save the file.
 
     > [!NOTE]
-    > When you save the file, Visual Studio Code might ask you to restore dependencies. We're not going to run this locally, so there is no need to restore the dependencies.
+    > When you save the file, Visual Studio Code might ask you to restore dependencies. Select the **Restore** button to restore the dependencies.
 
 ## Modify the pipeline configuration
 
