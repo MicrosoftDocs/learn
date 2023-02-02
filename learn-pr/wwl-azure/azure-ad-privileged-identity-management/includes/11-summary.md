@@ -1,3 +1,10 @@
+---
+uid:summary
+durationInMinutes:false
+interactive:none
+zone_pivot_groups:None
+title:Summary
+---
 You have learned how PIM (privileged identity management) will protect your resources, roles, and data from risk by controlling, managing, and monitoring access to privileged resources.
 
 You should be able to:
@@ -10,5 +17,5 @@ You should be able to:
 
 Microsoft Learn provides a large number of self-paced learning paths. For this lesson, we recommend the following modules. You may search and find other modules that are of interest to you.
 
- -  [Protect identity and access with Microsoft 365](/training/paths/m365-identity/)
+ -  [Protect identity and access with Microsoft 365](/learn/paths/m365-identity/)
  -  [PIM Documentation](/azure/active-directory/privileged-identity-management/)

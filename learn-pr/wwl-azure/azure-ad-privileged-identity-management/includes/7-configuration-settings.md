@@ -1,3 +1,10 @@
+---
+uid:configuration-settings
+durationInMinutes:false
+interactive:none
+zone_pivot_groups:None
+title:Explore privileged identity management configuration settings
+---
 :::image type="content" source="../media/az500-privileged-identity-management-settings-80da94b5.png" alt-text="Screenshot of the activation, assignment, and notification settings.":::
 
 

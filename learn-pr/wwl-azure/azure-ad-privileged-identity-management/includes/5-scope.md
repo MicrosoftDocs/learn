@@ -1,3 +1,10 @@
+---
+uid:scope
+durationInMinutes:false
+interactive:none
+zone_pivot_groups:None
+title:Configure privileged identity management scope
+---
 :::image type="content" source="../media/az500-privileged-identity-management-scope-741f45a3.png" alt-text="Screenshot of the PIM blade showing Azure AD roles and Resource roles.":::
 
 
