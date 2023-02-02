@@ -1,4 +1,3 @@
-
 :::image type="content" source="../media/az500-multifactor-authentication-settings-07f56cf7.png" alt-text="MFA Authentication options blade.":::
 
 

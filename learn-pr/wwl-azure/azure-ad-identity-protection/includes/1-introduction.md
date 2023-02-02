@@ -1,4 +1,3 @@
-
 Identity Protection is a tool that allows organizations to automate the detection and remediation of identity-based risks, investigate risks using data in the portal, and export risk detection data to third-party utilities for further analysis.
 
 ## Scenario

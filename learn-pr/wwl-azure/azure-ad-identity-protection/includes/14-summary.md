@@ -1,4 +1,3 @@
-
 Azure AD Identity Protections help to keep your users safe by completing access reviews, monitoring and reporting how each identity access resource on your Azure site, and implementing conditional access to control access to resources.
 
 You should be able to:

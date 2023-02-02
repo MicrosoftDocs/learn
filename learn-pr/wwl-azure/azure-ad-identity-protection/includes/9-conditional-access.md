@@ -1,4 +1,3 @@
-
 The old world of security behind a corporate firewall, having your secure network perimeter just doesn’t work anymore, not with people wanting to work from anywhere, being able to connect to all sorts of cloud applications.
 
 For an interactive overview of how to Configure Conditional Access in Azure AD, click the start button in the image below.

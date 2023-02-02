@@ -1,4 +1,3 @@
-
 In this set of exercises, you will test conditional access.
 
 ## Task 1 - Configure conditional access (require MFA)

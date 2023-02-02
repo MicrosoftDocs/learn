@@ -1,4 +1,3 @@
-
 Identity Protection can calculate what it believes is normal for a user's behavior and use that to base decisions for their risk. User risk is a calculation of probability that an identity has been compromised. Administrators can decide based on this risk score signal to enforce organizational requirements. Administrators can choose to block access, allow access, or allow access but require a password change using Azure AD self-service password reset.
 
 :::image type="content" source="../media/az500-user-risk-policy-41559c0a.png" alt-text="A user risk policy shows different risk levels and the ability to block access.":::
