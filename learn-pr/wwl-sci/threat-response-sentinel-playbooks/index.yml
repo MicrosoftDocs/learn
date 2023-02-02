@@ -2,10 +2,10 @@
 uid: learn.azure.threat-response-sentinel-playbooks
 metadata:
   title: Threat response with Microsoft Sentinel playbooks
-  description: Provide an introduction to implementing threat response with Microsoft Sentinel playbooks.
-  ms.date: 12/17/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  description: "Provide an introduction to implementing threat response with Microsoft Sentinel playbooks."
+  ms.date: 01/25/2023
+  author: wwlpublish
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Threat response with Microsoft Sentinel playbooks
@@ -22,11 +22,13 @@ prerequisites: |
   - Azure Logic Apps
 iconUrl: /training/achievements/threat-response-sentinel-playbooks.svg
 levels:
-- beginner
+- intermediate
 roles:
-- solution-architect
+- security-operations-analyst
 products:
 - azure
+- azure-log-analytics
+- azure-logic-apps
 - azure-sentinel
 subjects:
 - threat-protection

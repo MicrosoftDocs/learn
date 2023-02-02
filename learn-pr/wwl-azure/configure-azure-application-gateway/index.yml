@@ -2,19 +2,19 @@
 uid: learn.wwl.configure-azure-application-gateway
 metadata:
   title: Configure Azure Application Gateway
-  description: "You will learn how to configure an Azure Application Gateway."
-  ms.date: 06/02/2022
+  description: "Learn how to configure Azure Application Gateway."
+  ms.date: 02/01/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure Azure Application Gateway
-summary: You will learn how to configure an Azure Application Gateway.
+summary: Learn how to configure Azure Application Gateway.
 abstract: |
-  After completing this module, you will be able to:
+  In this module, you learn how to:
   - Identify features and usage cases for Azure Application Gateway.
-  - Implement Azure Application Gateway, including selecting a routing method.
-  - Configure gateway features such as routing rules.
+  - Implement an Azure application gateway, including selecting a routing method.
+  - Configure gateway components, such as listeners, health probes, and routing rules.
 prerequisites: |
   None
 iconUrl: /training/achievements/azure-application-gateway-configure.svg
