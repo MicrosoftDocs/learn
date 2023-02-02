@@ -26,15 +26,15 @@ WSL addresses these issues by integrating Windows and Linux with a much smaller 
 
 ## How it works - WSL architecture
 
-When WSL was initially launched in August 2016 (Windows 10 version 1607), using what is now referred to as the "WSL 1" architecture. WSL 1 runs as a translation layer, using a Linux kernel interface on top of the Windows kernel. Basically a compatibility layer that handles system call emulation for running Linux binaries in the Windows environment.
+WSL was initially launched in August 2016 (Windows 10 version 1607), using what is now referred to as the "WSL 1" architecture. WSL 1 runs as a translation layer, using a Linux kernel interface on top of the Windows kernel. You could think of WSL 1 as a compatibility layer that handles system call emulation for running Linux binaries in the Windows environment.
 
-In May 2019, WSL 2 was announced, introducing important changes to the WSL architecture, such as using a real Linux kernel run through a subset of Hyper-V features. The WSL 2 architecture significantly improved performance speed, enabling a more immediate reaction to system calls, with fewer limitations.
+In May 2019, WSL 2 was announced, introducing important changes to the WSL architecture, such as using a real Linux kernel run through a subset of Hyper-V features. The WSL 2 architecture significantly improved performance speed, enabling a more immediate reaction to system calls, with fewer limitations. WSL 2 is now the default architecture used when installing a Linux distribution.
 
 :::image type="content" source="../media/wsl1-wsl2.png" alt-text="Screenshot of Ubuntu running on a WSL 1 architecture next to the same instance running on WSL 2.":::
 
 The current WSL architecture uses a custom-built Linux kernel. This custom Linux kernel includes a small init script in the startup process that forms the connections between Windows and Linux. The kernel is open-source and invites users to report bugs or request features.
 
-The WSL architecture enables any Linux distribution to be run on your Windows machine and supports running GUI apps (not just command line tools) if you follow the tutorial in the documentation to add the necessary drivers. The WSL architecture also now supports "SystemD", a Linux system and service manager that was missing from previous versions of WSL. Making WSL even more similar to running Linux distributions on a bare metal machine (without the Windows operating system).
+The WSL architecture enables any Linux distribution to run on your Windows machine and supports running GUI apps (not just command line tools) if you follow the tutorial in the documentation to add the necessary drivers. The WSL architecture also now supports "SystemD", a Linux system and service manager that was missing from previous versions of WSL. Recent updates make WSL even more similar to running Linux distributions on a bare metal machine (without the Windows operating system).
 
 ## When to use WSL?
 

@@ -19,20 +19,10 @@ You now have everything in place to start using the identities from Key Vault an
                         credential.managed-identity-enabled: true
     ```
 
-3.  From the Git Bash window, in the config repository you cloned locally, using a text editor to open **application.yml** and append the following lines:
-    
-    ```YAML
-    Azure:
-        keyvault:
-            enabled: true
-                uri: https://<yourkeyvaultname>.vault.azure.net/
-    
-    ```
-
-4.  Commit and push these changes to your remote config repository.
+3.  Commit and push these changes to your remote config repository.
     
     ```Bash
-    cd ~/projects/spring-petclinic-microservices-configgit add .
+    cd ~/projects/spring-petclinic-microservices-config
     git add .
     git commit -m 'added key vault'
     git push
@@ -52,8 +42,6 @@ You now have everything in place to start using the identities from Key Vault an
 2.  Add a dependency to `com.azure.spring` to the parent **pom.xml** file between the **elements**. Enter the elements within the *&lt;dependencyManagement&gt;&lt;dependencies&gt;&lt;/dependencies&gt;&lt;/dependencyManagement&gt;* section.
     
     ```
-    
-    
     <dependencyManagement>
         <dependencies>
             //... existing dependencies
@@ -70,14 +58,14 @@ You now have everything in place to start using the identities from Key Vault an
     </dependencyManagement>
     ```
 
-3.  In the same file, add a property for `version.spring.cloud.azure`. Enter the elements within the *&lt;properties&gt;&lt;/properties&gt;* section.
+2.  In the same file, add a property for `version.spring.cloud.azure`. Enter the elements within the *&lt;properties&gt;&lt;/properties&gt;* section.
     
     ```
-    <version.spring.cloud.azure>4.2.0</version.spring.cloud.azure>
+    <version.spring.cloud.azure>4.4.1</version.spring.cloud.azure>
     ```
 
-4.  Save the changes to the **pom.xml** file and close it.
-5.  Rebuild each of the services. Make sure you are in the root directory for the Spring Petclinic application.
+3.  Save the changes to the **pom.xml** file and close it.
+4.  Rebuild each of the services. Make sure you are in the root directory for the Spring Petclinic application.
     
     ```Bash
     cd ~/projects/spring-petclinic-microservices/
@@ -112,27 +100,24 @@ You now have everything in place to start using the identities from Key Vault an
         --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name customers-service \
-        --runtime-version Java_11 \
         --no-wait \
-        --artifact-path spring-petclinic-customers-service/target/spring-petclinic-customers-service-2.6.3.jar \
+        --artifact-path spring-petclinic-customers-service/target/spring-petclinic-customers-service-$VERSION.jar \
         --env SPRING_PROFILES_ACTIVE=mysql
     
     az spring app deploy \
         --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name visits-service \
-        --runtime-version Java_11 \
         --no-wait \
-        --artifact-path spring-petclinic-visits-service/target/spring-petclinic-visits-service-2.6.3.jar \
+        --artifact-path spring-petclinic-customers-service/target/spring-petclinic-customers-service-$VERSION.jar \
         --env SPRING_PROFILES_ACTIVE=mysql
     
     az spring app deploy \
         --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name vets-service \
-        --runtime-version Java_11 \
         --no-wait \
-        --artifact-path spring-petclinic-vets-service/target/spring-petclinic-vets-service-2.6.3.jar \
+        --artifact-path spring-petclinic-customers-service/target/spring-petclinic-customers-service-$VERSION.jar \
         --env SPRING_PROFILES_ACTIVE=mysql
     ```
 8.  Retest your application through its public endpoint. Ensure that the application is functional, while the connection string secrets are retrieved from Azure Key Vault.
