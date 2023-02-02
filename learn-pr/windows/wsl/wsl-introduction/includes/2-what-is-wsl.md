@@ -20,7 +20,7 @@ In the past, running both Windows and Linux on one machine required you to insta
 
 Virtual Machines (VM) are one way to address the pains of dual-booting two different operating systems. VMs enable you to run a virtualized instance of Linux on a device running Windows. The problem with VMs often relates to slower performance due to the amount of resources that need to be allocated to running the virtual instance, as well as a lack of integration between the two operating systems -- you're still running isolated separate systems.
 
-WSL addresses these issues by integrating Windows and Linux with a much smaller resource footprint, requiring fewer resources (CPU, memory, storage) compared to traditional Virtual Machines. Run your favorite Windows office apps, dev tools, games, etc. right alongside your Linux development environment with incredibly fast and effecient performance speed.
+WSL addresses these issues by integrating Windows and Linux with a much smaller resource footprint, requiring fewer resources (CPU, memory, storage) compared to traditional Virtual Machines. Run your favorite Windows office apps, dev tools, games, etc. right alongside your Linux development environment with incredibly fast and efficient performance speed.
 
 :::image type="content" source="../media/windows-linux.png" alt-text="Illustration of a laptop with puzzle pieces representing Windows and Linux fitting together.":::
 
