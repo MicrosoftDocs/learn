@@ -2,8 +2,8 @@
 uid: learn.wsl-introduction
 metadata:
   moduleType: standard
-  title: wsl-introduction
-  description: "Get started with Windows Subsystem for Linux (WSL)."
+  title: Get started with Windows Subsystem for Linux (WSL).
+  description: An overview of Windows Subsystem for Linux (WSL) ability to install Linux distributions on your Windows computer, instructions to install and set up, a high-level look at a typical WSL developer workflow, and an exercise to run some basic BASH and PowerShell commands.
   ms.date: 01/09/2023
   author: mattwojo
   ms.author: mattwoj
@@ -19,7 +19,8 @@ abstract: |
     - "Describe the features WSL offers for utilizing both Windows and Linux command line tools and GUI applications."
     - "Run basic WSL, BASH, and PowerShell commands."
 prerequisites: |
-  - "None"
+  - "A computer running Windows 11 or Windows 10"
+  - "Ability to run PowerShell or Windows Command Prompt as an Administrator"
 iconUrl: /learn/achievements/wsl-path.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - beginner
