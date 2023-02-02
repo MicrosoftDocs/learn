@@ -1,67 +1,42 @@
-Gone are the days when security focused on a strong perimeter defense to keep malicious hackers out.
+Cloud-based services and mobile computing have changed the technology landscape for the modern enterprise. Today’s workforce often requires access to applications and resources outside traditional corporate network boundaries, rendering security architectures that rely on firewalls and virtual private networks (VPNs) insufficient. Changes brought about by cloud migration and a more mobile workforce has led to the development of an access architecture called Zero Trust.
 
-Anything outside the perimeter was treated as hostile, whereas inside the wall, an organization’s systems were trusted. Today's security posture is to assume breach and use the Zero Trust model. Security professionals no longer focus on perimeter defense. Modern organizations have to support access to data and services evenly from both inside and outside the corporate firewall.
+## The Zero Trust model
 
-This course will serve as your roadmap as you create and move applications and data to Microsoft Azure. Understanding the security services offered by Azure is key in implementing security-enhanced services.
+Based on the principle of “never trust, always verify,” Zero Trust helps secure corporate resources by eliminating unknown and unmanaged devices and limiting lateral movement. Implementing a true Zero Trust model requires that all components—user identity, device, network, and applications—be validated and proven trustworthy. Zero Trust verifies identity and device health prior to granting access to corporate resources. When access is granted, applying the principle of least privilege limits user access to only those resources that are explicitly authorized for each user, thus reducing the risk of lateral movement within the environment. In an ideal Zero Trust environment, the following four elements are necessary:
 
-## What does Zero Trust Mean
+ -  Strong identity authentication everywhere (user verification via authentication)
+ -  Devices are enrolled in device management, and their health is validated
+ -  Least-privilege user rights (access is limited to only what is needed)
+ -  The health of services is verified (future goal)
 
-The analyst Zero Trust model, states that you should never assume trust but instead continually validate trust. When users, devices, and data all resided inside the organization’s firewall, they were assumed to be trusted. This assumed trust allowed for easy lateral movement after a malicious hacker compromised an endpoint device.
+For Microsoft, Zero Trust establishes a strict boundary around corporate and customer data. For end users, Zero Trust delivers a simplified user experience that allows them to easily manage and find their content. And for customers, Zero Trust creates a unified access platform that they can use to enhance the overall security of their entire ecosystem.
 
-Instead of assuming everything behind the corporate firewall is safe, the **Zero Trust model assumes breach and verifies each request as though it originates from an open network**. Regardless of where the request originates or what resource it accesses, Zero Trust teaches us to **never trust, always verify**. Every access request is fully authenticated, authorized, and encrypted before granting access. Microsegmentation and least privileged access principles are applied to minimize lateral movement. Rich intelligence and analytics are utilized to detect and respond to anomalies in real time. With most users now accessing applications and data from the internet, most of the components of the transactions—that is, the users, network, and devices—are no longer under organizational control.
+## Zero Trust architecture
 
-The Zero Trust model relies on verifiable user and device trust claims to grant access to organizational resources. No longer is trust assumed based on the location inside an organization's perimeter.
+A Zero Trust approach extends throughout the entire digital estate and serves as an integrated security philosophy and end-to-end strategy.
 
-The following figure depicts the basic components of the Zero Trust model.
+The illustration below provides a representation of the primary elements that contribute to Zero Trust.
 
-:::image type="content" source="../media/az500-trust-determination-7da9df0c.png" alt-text="Cloud trust determination controls access to resources.":::
-
-
-Notice the trust determination components:
-
- -  **Identity provider**. Establishes a user’s identity and related information.
- -  **Device directory**. Validates a device and the device integrity.
- -  **Policy evaluation service**. Determines whether the user and device conform to security policies.
- -  **Access proxy**. Determines which organizational resources can be accessed.
-
-## Implementing a Zero Trust Security model
-
-Migrating to a Zero Trust security model provides for a simultaneously improvement of security over conventional network-based approaches, and to better enable users where they need access. A Zero Trust model requires **signals** to inform decisions, **policies** to make access decisions, and **enforcement capabilities** to implement those decisions effectively.
-
-:::image type="content" source="../media/az500-zero-trust-model-8f562931.png" alt-text="Signals are evaluated to determine access to resources.":::
+:::image type="content" source="../media/zero-architecture-example-1a-4d3e0059.png" alt-text="The illustration below provides a representation of the primary elements that contribute to Zero Trust.":::
 
 
-:::row:::
-  :::column:::
-    **Signal** \- to make an informed decision.
-  :::column-end:::
-  :::column:::
-    **Decision** \- based on organizational policy.
-  :::column-end:::
-  :::column:::
-    **Enforcement** \- of the policy across resources.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Zero Trust consider many signal sources - from identity systems to device management and device security tools - to create context-rich insights that help make informed decisions.
-  :::column-end:::
-  :::column:::
-    The access request and signal are analyzed to deliver a decision based on finely-tuned access policies, delivering granular, organization-centric access control.
-  :::column-end:::
-  :::column:::
-    Decisions are then enforced across the entire digital estate - such as read-only access to SaaS app or remediating compromised passwords with a self-service password reset.
-  :::column-end:::
-:::row-end:::
+In the illustration above:
 
+Security policy enforcement is at the center of a Zero Trust architecture. This includes Multi-Factor authentication with conditional access that takes into account user account risk, device status, and other criteria and policies that you set.
 
-The user is the common denominator of these components. As previously discussed, that is why a user’s identity and how that identity is managed is now called the **control plane**. If you can’t determine who the user is, you can’t establish a trust relationship for other transactions.
+Identities, devices (also called endpoints), data, applications, network, and other infrastructure components are all configured with appropriate security. Policies that are configured for each of these components are coordinated with your overall Zero Trust strategy. For example, device policies determine the criteria for healthy devices and conditional access policies require healthy devices for access to specific apps and data.
+
+Threat protection and intelligence monitors the environment, surfaces current risks, and takes automated action to remediate attacks.
 
 ## Guiding principles of Zero Trust
 
- -  **Verify explicitly**. Always authenticate and authorize based on all available data points, including user identity, location, device health, service or workload, data classification, and anomalies.
- -  **Use least privileged access**. Limit user access with **Just In Time** and **Just Enough Access (JIT/JEA)**, risk based adaptive polices, and data protection to protect both data and productivity.
- -  **Assume breach**. Minimize blast radius for breaches and prevent lateral movement by segmenting access by network, user, devices, and application awareness. Verify all sessions are encrypted end to end. Use analytics to get visibility, drive threat detection, and improve defenses.
+Today, organizations need a new security model that effectively adapts to the complexity of the modern environment, embraces the mobile workforce, and protects people, devices, applications, and data wherever they are located.
+
+To address this new world of computing, Microsoft highly recommends the Zero Trust security model, which is based on these guiding principles:
+
+ -  **Verify explicitly** \- Always authenticate and authorize based on all available data points.
+ -  **Use least privilege access** \- Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
+ -  **Assume breach** \- Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.
 
 ## Microsoft's Zero Trust architecture
 
