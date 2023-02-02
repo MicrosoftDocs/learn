@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-application-gateway.setup-components
-title: Application Gateway component set up
+title: Configure Azure Application Gateway components
 metadata:
-  title: Application Gateway component set up
-  description: "Application Gateway component set up"
-  ms.date: 06/02/2022
+  title: Configure Azure Application Gateway components
+  description: "Configure Azure Application Gateway components"
+  ms.date: 02/01/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/4-app-gateway-components.md)]
