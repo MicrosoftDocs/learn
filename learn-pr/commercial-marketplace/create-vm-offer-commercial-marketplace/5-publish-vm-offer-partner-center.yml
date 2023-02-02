@@ -8,7 +8,7 @@ metadata:
   author: marleva
   ms.author: maevan
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: marketplace
 durationInMinutes: 6
 content: |
   [!include[](includes/5-publish-vm-offer-partner-center.md)]
