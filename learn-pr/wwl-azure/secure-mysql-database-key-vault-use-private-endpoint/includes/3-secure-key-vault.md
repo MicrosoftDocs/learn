@@ -1,6 +1,6 @@
 Now that you've locked down the internet access to the MySQL database, you'll perform a similar setup to protect the Key Vault content.
 
-you've enabled a private endpoint, now you can block public access to your database.
+You've enabled a private endpoint, now you can block public access to your database.
 
 1.  To start, you'll need to disable private endpoint network policies in the subnet you'll use to create the private endpoints.
     

@@ -37,7 +37,7 @@ Once you've enabled a private endpoint, you can block public access to your data
         --private-dns-zone $MYSQL_DNS
     ```
 
-4.  Recreate the `petclinic`database.
+4.  Recreate the `petclinic` database.
     
     ```Bash
     az mysql flexible-server db create \
@@ -60,7 +60,7 @@ Once you've enabled a private endpoint, you can block public access to your data
     url: jdbc:mysql://<your-vnet-integrated-server-name>.mysql.database.azure.com:3306/petclinic?useSSL=true
     ```
 
-7.  Restart the spring apps that use the backend database to make sure they use of the new connection string information.
+7.  Restart the spring apps that use the backend database to use the new connection string information.
     
     ```azurecli
     az spring app restart \
@@ -85,4 +85,4 @@ Once you've enabled a private endpoint, you can block public access to your data
 
 8.  You should be able to browse the spring petclinic app and see the data.
 
-9.  In the Azure Portal, navigate to your newly created MySQL Flexible Server and select the **Networking** menu. You'll notice you can no longer lock down the server firewall. The server however only allows incoming calls through the virtual network.
+9.  In the Azure portal, navigate to your newly created MySQL Flexible Server and select the **Networking** menu. You'll notice you can no longer lock down the server firewall. The server however only allows incoming calls through the virtual network.
