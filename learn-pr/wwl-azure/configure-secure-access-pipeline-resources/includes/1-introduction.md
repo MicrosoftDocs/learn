@@ -1,62 +1,77 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+# Introduction to Implement security through a pipeline using DevOps
 
-    Goal: orient the learner to the area covered in this module
+While a DevOps culture enables development and operations teams to deploy applications faster, going faster over a cliff doesn't help.
 
-    Heading: none
+Security is a crucial part of DevOps. DevSecOps is a continuous and ongoing effort that requires the attention of everyone.
 
-    Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
+Cloud environments brought unprecedented infrastructure and scale to DevOps teams. They can be approached by some of the most nefarious actors on the internet, as they risk the security of their business with every application deployment.
 
-    Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
+How do you ensure your applications are secure and stay secure with continuous integration and delivery? How can you find and fix security issues early in the process?
 
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
--->
-TODO: add your topic sentences(s)
-TODO: add a visual element
+DevSecOps incorporates the security team and their capabilities into your DevOps practices making security the responsibility of everyone on the team.
 
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
+Securing applications is a continuous process encompassing secure infrastructure, designing architecture with layered security, continuous security validation, and monitoring attacks.
 
-    Goal: describe the real-world scenario this module will use to illustrate the concepts
+You'll learn best practices for securing pipelines in Azure DevOps, how to configure secure access to pipeline resources, secure access to Azure Repos from pipelines, manage permissions, structure projects and repositories for security, extend pipelines with multiple templates, secure variables, and parameters, and manage identity for projects, pipelines, and agents.
 
-    Heading: "## Example scenario"
+This modules series is designed for developers, administrators and IT professionals who are responsible for managing and securing pipelines in Azure DevOps. By the end of this journey, you will have the skills to make your pipelines secure.
 
-    Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
+The course is divided into several modules, each covering a specific topic related to securing pipelines in Azure DevOps. Each module includes a mix of lectures, hands-on activities, quizzes, and challenges to help you apply your knowledge and practice what you have learned. At the end of each module, you will take a final assessment to evaluate your understanding of the subject.
 
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=main#images)
+## Why should I take the Implement security through a pipeline using DevOps learning path?
 
-    Optional: a "scenario video" that visualizes the scenario
+People in these modules are interested in designing and implementing DevOps processes. Also, they're preparing for the [Implement security through a pipeline using DevOps](about:blank) credential.
 
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-    [Scenario video guidance](TBD)
- -->
-## Example scenario
-TODO: add your scenario
-TODO: add a visual element
+### Learning objectives
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
+After completing this module, students and professionals can:
 
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
+- Configure pipeline access to specific agent pools
+- Configure agents for projects and agent identities
+- Configure pipeline access to packages
+- Manage secret variables and variable groups
+- Configure service connections
+- Manage environments
+- Secure repositories
+- Ensure that the secrets are in the Azure Key Vault
+- Configure and validate user and pipeline permissions
+- Configure and validate approval and branch checks
+- Manage and audit permissions in Azure DevOps
+- Separate secure files between projects
+- Create nested templates
+- Limit variables that can be set at queue time
+- Convert to a managed identity in Azure DevOps
 
-    Heading: "## What will we be doing?"
+### Prerequisites
 
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
+To get the most out of this course, we recommend that you have a basic understanding of Azure DevOps and pipeline management. If you don't have this experience, we recommend that you first complete a module or course on Azure DevOps and pipeline management:
 
- -->
-## What will we be doing?
-TODO: add your activities
+- Free online:
+  - [Choose the DevOps tools](https://learn.microsoft.com/training/modules/migrate-to-devops/)
+  - [Explore Azure Pipelines](https://learn.microsoft.com/training/modules/explore-azure-pipelines/)
+  - [Integrate with Azure Pipelines](https://learn.microsoft.com/training/modules/integrate-azure-pipelines/)
 
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
+- Instructor-led course: [AZ-400: Designing and Implementing Microsoft DevOps solutions](https://learn.microsoft.com/training/courses/az-400t00).
 
-    Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
+If you're new to Azure and cloud computing, consider one of the following resources:
 
-    Heading: "## What is the main goal?"
+- Free online: [Azure Fundamentals](https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/).
+- Instructor-led course: [AZ-900: Azure Fundamentals](https://learn.microsoft.com/training/courses/az-900t00).
 
-    Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
+If you're new to Azure Administration, consider taking the:
 
- -->
-## What is the main goal?
-By the end of this session, you'll be able to (TODO)
+- Free online: [Prerequisites for Azure Administrators](https://docs.microsoft.com/learn/paths/az-104-administrator-prerequisites/).
+- Instructor-led courses: [AZ-104: Microsoft Azure Administrator](https://docs.microsoft.com/learn/certifications/courses/az-104t00).
 
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+If you're new to Azure Developer, consider taking the:
+
+- Free online: [Create serverless applications](https://docs.microsoft.com/learn/paths/create-serverless-applications/).
+- Instructor-led courses: [AZ-204: Developing Solutions for Microsoft Azure](https://docs.microsoft.com/learn/certifications/courses/az-204t00).
+
+You must create an Azure DevOps Organization and a Team Project for some exercises. If you don't have it yet, see the following:
+
+- [Create an organization - Azure DevOps](https://docs.microsoft.com/azure/devops/organizations/accounts/create-organization).
+
+Please make sure you have all the necessary resources and access to Azure DevOps before starting the course.
+
+Let's begin!
