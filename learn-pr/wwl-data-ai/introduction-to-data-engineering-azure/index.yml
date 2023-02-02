@@ -18,7 +18,7 @@ abstract: |
   - Identify Azure services for data engineering
 prerequisites: |
   Before starting this module, you should have completed the [Microsoft Azure Data Fundamentals certification](/certifications/azure-data-fundamentals/) or have equivalent knowledge and experience.
-iconUrl: /training/achievements/data-ai/data-engineering-processes-badge.svg
+iconUrl: /training/achievements/data-ai/intro-data-engineering-badge.svg
 levels:
 - intermediate
 roles:
@@ -35,4 +35,4 @@ units:
 - learn.wwl.introduction-data-engineering-azure.knowledge-check
 - learn.wwl.introduction-data-engineering-azure.summary
 badge:
-  uid: learn.data-ai.data-engineering-processes.badge
+  uid: learn.data-ai.intro-data-engineering.badge
