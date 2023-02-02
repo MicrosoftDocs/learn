@@ -26,6 +26,7 @@ roles:
 - student
 products:
 - m365
+- microsoft-purview
 subjects:
 - compliance
 units:
