@@ -1,10 +1,4 @@
----
-uid:demonstrations
-durationInMinutes:false
-interactive:none
-zone_pivot_groups:None
-title:Explore Try-This exercises
----
+
 These are a few try-this exercise to configure Privileged Identity Management (PIM)
 
 ## Task 1: Azure AD PIM for roles

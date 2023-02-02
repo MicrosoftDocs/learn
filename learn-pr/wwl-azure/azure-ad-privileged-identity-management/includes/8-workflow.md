@@ -1,10 +1,4 @@
----
-uid:workflow
-durationInMinutes:false
-interactive:none
-zone_pivot_groups:None
-title:Implement a privileged identity management workflow
----
+
 By configuring Azure AD PIM to manage our elevated access roles in Azure AD, we now have JIT access for more than 28 configurable privileged roles. We can also monitor access, audit account elevations, and receive additional alerts through a management dashboard in the Azure portal.
 
 Elevated access includes job roles that need greater access, including support, resource administrators, resource owners, service administrators, and global administrators. We manage role-based access at the resource level. Because elevated access accounts could be misused if they’re compromised, we rationalize new requests for elevated access and perform regular re-attestation for elevated roles.

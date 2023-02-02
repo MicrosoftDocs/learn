@@ -1,10 +1,3 @@
----
-uid:microsofts-zero-trust-model
-durationInMinutes:false
-interactive:none
-zone_pivot_groups:None
-title:Explore the zero trust model
----
 Cloud-based services and mobile computing have changed the technology landscape for the modern enterprise. Today’s workforce often requires access to applications and resources outside traditional corporate network boundaries, rendering security architectures that rely on firewalls and virtual private networks (VPNs) insufficient. Changes brought about by cloud migration and a more mobile workforce has led to the development of an access architecture called Zero Trust.
 
 ## The Zero Trust model
