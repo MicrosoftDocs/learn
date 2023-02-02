@@ -26,7 +26,7 @@ roles:
 - business-user
 - student
 products:
-- azure
+- defender-for-cloud
 subjects:
 - security
 units:

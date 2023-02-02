@@ -3,7 +3,7 @@ uid: learn.student-evangelism.count-moon-rocks-python-nasa.6a-knowledge-check
 metadata:
   title: Knowledge check
   description: Interactive questions that validate whether the learner achieved the learning objectives.
-  ms.date: 05/05/2021
+  ms.date: 01/27/2023
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -24,32 +24,32 @@ quiz:
     - content: "We made them global variables."
       isCorrect: true
       explanation: "Correct! This is how we modified our variables in the function."
-  - content: "How did we call the countMoonRocks function?"
+  - content: "How did we call the `countMoonRocks` function?"
     choices:
     - content: |
-        for rock in rockList:<br /> &nbsp; &nbsp; &nbsp; countMoonRocks(rock)
+        `for rock in rockList:`<br /> &nbsp; &nbsp; &nbsp; `countMoonRocks(rock)`
       isCorrect: true
-      explanation: "Correct! This is how we called the function."
+      explanation: "Correct! This code is how we called the function."
     - content: |
-        for rockList in rock:<br /> &nbsp; &nbsp; &nbsp; countMoonRocks(rockList)
+        `for rockList in rock:`<br /> &nbsp; &nbsp; &nbsp; `countMoonRocks(rockList)`
       isCorrect: false
-      explanation: "We called the function with rock not rockList."
+      explanation: "Incorrect. We called the function with `rock`` not `rockList`."
     - content: |
-        while rock:<br /> &nbsp; &nbsp; &nbsp; countMoonRocks(rock)
+        `while rock:`<br /> &nbsp; &nbsp; &nbsp; `countMoonRocks(rock)`
       isCorrect: false
-      explanation: "We used a for loop, not a while loop."
+      explanation: "Incorrect. We used a `for` loop, not a `while` loop."
     - content: |
-        while rockList:<br /> &nbsp; &nbsp; &nbsp; countMoonRocks(rock)
+       `while rockList:`<br /> &nbsp; &nbsp; &nbsp; `countMoonRocks(rock)`
       isCorrect: false
-      explanation: "We used a for loop, not a while loop."
-  - content: "What code did we call after we finished reading data from the rocks.txt file?"
+      explanation: "Incorrect. We used a `for` loop, not a `while` loop."
+  - content: "What code did we call after we finished reading data from the `rocks.txt` file?"
     choices:
     - content: "`.finish()`"
       isCorrect: false
       explanation: "Close, but not correct."
     - content: "`.close()`"
       isCorrect: true
-      explanation: "Correct! This is what we called to close the file after we read data from it."
+      explanation: "Correct! This function is what we called to close the file after we read data from it."
     - content: "`.end`"
       isCorrect: false
       explanation: "Close, but not correct."

@@ -6,11 +6,11 @@ In most role playing games, the player's character battles non-player characters
 
 In this challenge, we'll boil down that interaction to its essence. A hero and a monster start with the same health score. During the hero's turn, they'll generate a random value that will be subtracted from the monster's health. If the monster's health is greater than zero, they'll take their turn and attack the hero. As long as both the hero and the monster have health greater than zero, the battle will resume.
 
-### Step 1 - Delete all of the code in the .NET Editor from the earlier exercise.
+### Step 1 - Delete all of the code in the .NET Editor from the earlier exercise
 
-Select all of the code in the .NET Editor, then select the `del` or `backspace` key to delete it.
+Select all of the code in the .NET Editor, then select the <kbd>Del</kbd> or <kbd>Backspace</kbd> key to delete it.
 
-### Step 2 - Write code in the .NET Editor to implement the game rules.
+### Step 2 - Write code in the .NET Editor to implement the game rules
 
 Implement the following rules for the game:
 
@@ -29,7 +29,7 @@ Implement the following rules for the game:
 
 - You must use either the `do-while` statement, or the `while` statement.
 
-No matter how you do it, your code should produce a similar output:
+No matter how you do it, your code should produce output similar to the following:
 
 ```output
 Monster was damaged and lost 1 health and now has 9 health.
@@ -40,6 +40,6 @@ Monster was damaged and lost 9 health and now has -7 health.
 Hero wins!
 ```
 
-Obviously, because of the random nature of the code, the outcome will be different each time, so your results will definitely be different that the output displayed above. However, you can use this as an example of the output your code should generate.
+Obviously, because of the random nature of the code, the outcome will be different each time, so your results will definitely be different that the output displayed here. However, you can use this as an example of the output your code should generate.
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.

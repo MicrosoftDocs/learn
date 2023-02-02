@@ -2,22 +2,6 @@ Object-oriented programming (OOP) is a programming paradigm you can use to model
 
 As part of a development team, you'll write code that solves small problems along with large and more intricate problems. OOP is one programming paradigm out of many, but it does have some interesting constructs and principles that will help frame your thinking.
 
-You decide to evaluate OOP by applying it on a small and defined problem &mdash; a game of rock, paper, scissors &mdash; to see if it's a fit for you and your team.
-
-## Learning objectives
-
-After you complete this module, you'll be able to:
-
-- Model problems by using OOP concepts
-- Describe the basic concepts involved in OOP
-- Distinguish classes from objects
-
-## Prerequisites
-
-- Basic knowledge of Python - syntax, writing and invoking functions, creating variables, reading inputs, and generating outputs from the Python console
-- Familiarity with using a text editor or IDE  
-- Knowledge on how to execute a Python program
-- Python keywords
-- Knowing how to raise exceptions in Python
+In this module, you will evaluate OOP by applying it on a small and defined problem &mdash; a game of rock, paper, scissors &mdash; to see if it's a fit for you and your team.
 
 You can use the learning path [Python for beginners](/training/paths/beginner-python?azure-portal=true) to learn the basics of Python.
