@@ -16,4 +16,4 @@ Microsoft Learn provides a large number of self-paced learning paths. For this l
  -  [Build a containerized web application with Docker](/training/modules/intro-to-containers/)
  -  [Introduction to Docker containers](/training/modules/intro-to-docker-containers/)
  -  [Run Docker containers with Azure Container Instances](/training/modules/run-docker-with-azure-container-instances/)
- -  [Introduction to Kubernetes on Azure](/training/paths/intro-to-kubernetes-on-azure/)
+ -  [Azure Kubernetes Service Workshop](/training/modules/aks-workshop/)
