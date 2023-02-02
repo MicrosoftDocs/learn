@@ -1,3 +1,4 @@
+
 You can use the Kusto Query Language (KQL) in Microsoft Sentinel to search and filter collected data.
 
 ## Kusto Query Language
@@ -72,17 +73,17 @@ You can also use [Azure Data explorer tutorial](/azure/data-explorer/kusto/query
 ## Microsoft Sentinel repository on GitHub
 
 You can also use the [Microsoft Sentinel repository](https://github.com/Azure/Azure-Sentinel) on GitHub to search for specialized queries and workbooks to help secure your environment and hunt for threats.
-For example, the following query from Microsoft Sentinel GitHub repository displays suspicious delegation of permissions to user accounts. The query analyzes the IP address from where the administrator grants access to other users to Azure resources. If an operation is not from a valid IP address, the query signals suspicious activity, which you can further investigate.
+For example, the following query from Microsoft Sentinel GitHub repository displays suspicious delegation of permissions to user accounts. The query analyzes the IP address from where the administrator grants access to other users to Azure resources. If an operation isn't from a valid IP address, the query signals suspicious activity, which you can further investigate.
 
 ```kusto
-  let timeframe = 7d;
-  AzureActivity
-  | where TimeGenerated >= ago(timeframe)
-  | where OperationName == "Create role assignment"
-  | where ActivityStatus == "Succeeded"
-  | project Caller, CallerIpAddress
-  | evaluate basket()
-  | extend AccountCustomEntity = Caller, IPCustomEntity = CallerIpAddress
+let timeframe = 7d;
+AzureActivity
+| where TimeGenerated >= ago(timeframe)
+| where OperationName == "Create role assignment"
+| where ActivityStatus == "Succeeded"
+| project Caller, CallerIpAddress
+| evaluate basket()
+| extend AccountCustomEntity = Caller, IPCustomEntity = CallerIpAddress
 ```
 
 If you want to try some examples, use [the demonstration environment on the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade).
