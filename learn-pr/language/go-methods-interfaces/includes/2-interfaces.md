@@ -1,12 +1,12 @@
 Interfaces in Go are a type of data that's used to represent the behavior of other types. An interface is like a blueprint or a contract that an object should satisfy. When you use interfaces, your code base becomes more flexible and adaptable, because you're writing code that isn't tied to a particular implementation. Therefore, you can extend the functionality of a program quickly. You'll understand why in this module.
 
-Unlike interfaces in other programming languages, interfaces in Go are satisfied implicitly. Go doesn't offer keywords to implement an interface, so if you've worked with interfaces in other programming languages but are new to Go, this idea might be confusing.
+Unlike interfaces in other programming languages, interfaces in Go are satisfied implicitly. Go doesn't offer keywords to implement an interface. So, if you've worked with interfaces in other programming languages but are new to Go, this idea might be confusing.
 
 In this module, we'll work with multiple examples to explore interfaces in Go and demonstrate how to make the most of them.
 
 ## Declare an interface
 
-An interface in Go is an abstract type that includes only the methods that a concrete type must possess or implement. That's why we say that an interface is like a blueprint.
+An interface in Go is like a blueprint. An abstract type that includes only the methods that a concrete type must possess or implement.
 
 Let's say that you want to create an interface in your geometry package that indicates what methods a shape must implement. You could define an interface like this:
 
@@ -40,7 +40,7 @@ func (s Square) Perimeter() float64 {
 
 Notice how the method's signature of the `Square` struct matches the signature of the `Shape` interface. However, another interface might have a different name but the same methods. How or when does Go know which interface a concrete type is implementing? Go knows it when you're using it, at runtime.
 
-To demonstrate how interfaces are used, you could write the following:
+To demonstrate how interfaces are used, you could write the following code:
 
 ```go
 func main() {
@@ -75,7 +75,7 @@ func (c Circle) Perimeter() float64 {
 }
 ```
 
-Now let's refactor the `main()` function and create a function to print out the type of the object it receives, along with its area and perimeter, like this:
+Now let's refactor the `main()` function and create a function to print the type of the object it receives, along with its area and perimeter, like this:
 
 ```go
 func printInformation(s Shape) {
@@ -86,7 +86,7 @@ func printInformation(s Shape) {
 }
 ```
 
-Notice how the `printInformation` function has `Shape` as a parameter. This means that you could send to this function a `Square` or a `Circle` object, and it will work, although the output will be different. Your `main()` function now looks like this:
+Notice how the `printInformation` function has `Shape` as a parameter. You could send to this function a `Square` or a `Circle` object, and it will work, although the output will be different. Your `main()` function now looks like this:
 
 ```go
 func main() {
@@ -114,7 +114,7 @@ Perimeter: 37.69911184307752
 
 Notice how you don't get an error, and the output varies depending on the object type it receives. You can also see that the object type in the output doesn't say anything about the `Shape` interface.
 
-The beauty of using interfaces is that, for every new type or implementation of `Shape`, the `printInformation` function doesn't have to change. This is why we said earlier that your code becomes more flexible and easier to extend when you use interfaces.
+The beauty of using interfaces is that, for every new type or implementation of `Shape`, the `printInformation` function doesn't have to change. As we said earlier, your code becomes more flexible and easier to extend when you use interfaces.
 
 ## Implement a Stringer interface
 
@@ -126,7 +126,7 @@ type Stringer interface {
 }
 ```
 
-The `fmt.Printf` function uses this interface to print out values, which means that you can write your custom `String()` method to print a custom string, like this:
+The `fmt.Printf` function uses this interface to print values, which means that you can write your custom `String()` method to print a custom string, like this:
 
 ```go
 package main
@@ -154,7 +154,7 @@ John Doe is from USA
 Mark Collins is from United Kingdom
 ```
 
-As you can see, you've used a custom type (a struct) to write a custom version of the `String()` method. This is a common way of implementing an interface in Go, and you'll find examples of this in many programs, as we're about to explore.
+As you can see, you've used a custom type (a struct) to write a custom version of the `String()` method. This technique is a common way of implementing an interface in Go, and you'll find examples of it in many programs, as we're about to explore.
 
 ## Extend an existing implementation
 
@@ -190,7 +190,7 @@ When you run the preceding code, you get something like the following output (sh
 ....
 ```
 
-Notice that the `io.Copy(os.Stdout, resp.Body)` call is the one that prints to the terminal the content you've obtained from the call to the GitHub API. Let's say that you want to write your own implementation to shorten the content you see in the terminal. When you look at the [source of the `io.Copy` function](https://golang.org/pkg/io/?azure-portal=true#Copy), you see the following:
+Notice that the `io.Copy(os.Stdout, resp.Body)` call is the one that prints to the terminal the content you've obtained from the call to the GitHub API. Let's say that you want to write your own implementation to shorten the content you see in the terminal. When you look at the [source of the `io.Copy` function](https://golang.org/pkg/io/?azure-portal=true#Copy), you see:
 
 ```go
 func Copy(dst Writer, src Reader) (written int64, err error)
@@ -204,9 +204,9 @@ type Writer interface {
 }
 ```
 
-You can continue exploring the `io` package's source code until you find where [`Copy` calls the `Write` method](https://golang.org/src/io/io.go?s=12980:13040#L411?azure-portal=true). We'll leave this alone for now.
+You can continue exploring the `io` package's source code until you find where [`Copy` calls the `Write` method](https://golang.org/src/io/io.go?s=12980:13040#L411?azure-portal=true), but we'll leave this exploration alone for now.
 
-Because `Writer` is an interface and it's an object that the `Copy` function is expecting, you could write your custom implementation of the `Write` method. Therefore, you can customize the content that you print to the terminal. 
+Because `Writer` is an interface and it's an object that the `Copy` function is expecting, you could write your custom implementation of the `Write` method. Therefore, you can customize the content that you print to the terminal.
 
 The first thing you need to implement an interface is to create a custom type. In this case, you can create an empty struct, because you simply need to write your custom `Write` method, like this:
 
@@ -372,7 +372,7 @@ func (d dollars) String() string {
 }
 ```
 
-We then wrote the implementation of the `ServeHTTP` method that the `http.Handler` could use. Notice how we created a custom type again, but this time it's a map, not a struct. Next, we wrote the `ServeHTTP` method by using the `database` type as the receiver. This method's implementation uses the data from the receiver, loops through it, and prints out each item.
+We then wrote the implementation of the `ServeHTTP` method that the `http.Handler` could use. Notice how we created a custom type again, but this time it's a map, not a struct. Next, we wrote the `ServeHTTP` method by using the `database` type as the receiver. This method's implementation uses the data from the receiver, loops through it, and prints each item.
 
 ```go
 type database map[string]dollars
@@ -384,7 +384,7 @@ func (db database) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 }
 ```
 
-Finally, in the `main()` function, we instantiated a `database` type and initialized it with some values. We started the HTTP server by using the `http.ListenAndServe` function, where we defined the server address, including the port to use and the `db` object that implements a custom version of the `ServerHTTP` method. That's why, when you run the program, Go uses your implementation of that method, and that's how you use and implement an interface in a server API.
+Finally, in the `main()` function, we instantiated a `database` type and initialized it with some values. We started the HTTP server by using the `http.ListenAndServe` function, where we defined the server address, including the port to use and the `db` object that implements a custom version of the `ServeHTTP` method. Wen you run the program, Go uses your implementation of that method, and that's how you use and implement an interface in a server API.
 
 ```go
 func main() {

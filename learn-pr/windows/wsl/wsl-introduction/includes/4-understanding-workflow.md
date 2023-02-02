@@ -2,7 +2,7 @@ The ability to use both Linux and Windows on a single device means you can use y
 
 ## Basics of a WSL development workflow
 
-To begin, lets look at some of the standard development tools, command line utilities, code languages/frameworks, and practices involved in a WSL development workflow.
+To begin, let's look at some of the standard development tools, command line utilities, code languages/frameworks, and practices involved in a WSL development workflow.
 
 ### Developer tool recommendations
 
@@ -39,7 +39,7 @@ Once you've installed the tools you need for your WSL development environment, a
 
 3. You may also need to use a command line utility to download software if it's not available from the distribution's package manager. A useful utility, which comes with many Linux distributions, is cURL (short for Client URL). It can be used for downloading software or any sort of data transfer between the command line and a server that uses URL syntax. It's also commonly used for automated tasks, since it is designed to work without user interaction.
 
-4. Create a directory to store your app project in your Ubuntu command line (`mkdir app-project`). You can ensure that you're storing your project files on the Linux file system by entering the command `explorer.exe .` to view your directory in Windows File Explorer. The file path should look something like `\\wsl.localhost\Ubuntu\home\<username>\app-project`. Create or download your project code here.
+4. Create a directory to store your app project in your Ubuntu command line (`mkdir app-project`). Store project files that you will be running in Linux on your Linux file system (not on the Windows file system) for better performance. Enter the command `pwd` to show your directory path. If you're using Bash and the path contains `/mnt/c/`, it means that you're currently in the Windows file system (mounted C drive). Enter `cd ~` to change directories to the home directory of your Linux file system. If you're using PowerShell and the path contains `\\wsl.localhost\Ubuntu\home\<username>\app-project`, this is pointing to the Ubuntu distribution directory on the Linux file system hosted by WSL. (You can also use the command: `explorer.exe .` to view your files from either file system in Windows File Explorer.)
 
     ![Screenshot of Windows File Explorer with Ubuntu directory open](../media/windows-file-explorer-1.png)
 

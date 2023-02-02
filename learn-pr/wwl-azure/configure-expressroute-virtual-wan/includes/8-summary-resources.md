@@ -18,4 +18,6 @@ In this module, you identified features and usage cases for ExpressRoute. You di
 
 - Complete an [introduction to Azure Virtual WAN](/training/modules/introduction-azure-virtual-wan/).
 
+## Learn more with optional hands-on exercises
+
 - Design and implement [Azure ExpressRoute](/training/modules/design-implement-azure-expressroute/). _Azure subscription required_.

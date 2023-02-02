@@ -3,8 +3,8 @@ uid: learn.azure.authenticate-azure-deployment-workflow-workload-identities
 metadata:
   moduleType: standard
   title: Authenticate your Azure deployment workflow by using workload identities
-  description: Learn how to create, manage, and grant permissions to workload identities, which enable your deployment workflows to securely authenticate to Azure. 
-  ms.date: 07/27/2022
+  description: Learn how to create, manage, and grant permissions to workload identities, which enable your deployment workflows to securely authenticate to Azure.
+  ms.date: 01/31/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ abstract: |
   - Configure the appropriate authorization for a workload identity to deploy Azure resources
 prerequisites: |
   You should be familiar with:
-  - Creating and deploying basic Bicep templates.
+  - Creating and deploying basic Bicep files, including modules.
   - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
   - Basic GitHub Actions workflows.
 iconUrl: /training/achievements/bicep/authenticate-azure-deployment-workflow-workload-identities.svg
