@@ -12,4 +12,4 @@ You should now be able to:
 
 You can learn more by reviewing the following:
 
- -  [Understand hybrid connectivity](/training/modules/m365-teams-upgrade-hybrid/)
+ -  [Understand hybrid connectivity](/learn/modules/m365-teams-upgrade-hybrid/)
