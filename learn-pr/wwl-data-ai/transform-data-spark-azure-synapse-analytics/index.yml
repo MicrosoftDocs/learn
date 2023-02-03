@@ -3,7 +3,7 @@ uid: learn.wwl.transform-data-spark-azure-synapse-analytics
 metadata:
   title: Transform Data with Spark in Azure Synapse Analytics
   description: "Transform Data with Spark in Azure Synapse Analytics"
-  ms.date: 01/25/2023
+  ms.date: 02/03/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -36,7 +36,6 @@ units:
 - learn.wwl.transform-data-spark-azure-synapse-analytics.load-data-into-dataframe
 - learn.wwl.transform-data-spark-azure-synapse-analytics.save-dataframe-specific-format
 - learn.wwl.transform-data-spark-azure-synapse-analytics.save-dataframe-partitioned-file
-- learn.wwl.transform-data-spark-azure-synapse-analytics.use-sparksql-transform-data-creating-tables
 - learn.wwl.transform-data-spark-azure-synapse-analytics.exercise-transform-data-spark-azure-synapse-analytics
 - learn.wwl.transform-data-spark-azure-synapse-analytics.knowledge-check
 - learn.wwl.transform-data-spark-azure-synapse-analytics.summary

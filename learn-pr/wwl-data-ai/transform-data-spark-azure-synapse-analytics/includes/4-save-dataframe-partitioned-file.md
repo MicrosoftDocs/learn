@@ -1,48 +1,62 @@
 
 
-Another way to authenticate is using SQL Authentication, instead of Azure Active Directory (Azure AD) with the Azure Synapse Apache Spark Pool to Synapse SQL connector.
+The Spark library which provides the dataframe structure also allows you the ability to use SQL as a way of working with data. With this approach, You can query and transform data in dataframes by using SQL queries, and persist the results as tables. 
 
-Currently, the Azure Synapse Apache Spark Pool to Synapse SQL connector does not support a token-based authentication to a dedicated SQL pool that is outside of the workspace of Synapse Analytics. In order to establish and transfer data to a dedicated SQL pool that is outside of the workspace without Azure AD, you would have to use SQL Authentication.
+>[!Note] the persisted tables are metadata abstractions over physical files.
 
-To read data from a dedicated SQL pool outside your workspace without Azure AD, you use the Read API. The Read API works for Internal tables (Managed Tables) and External Tables in the dedicated SQL pool. 
+### Define the tables and views
 
-The Read API looks as follows when using SQL Authentication:
+The metastore enables you to write SQL queries as an internal view that return a dataframe. You can then write this view as an external table. External tables are relational tables in the metastore that reference files in a data lake location that you specify. You can access this data by querying the table or by reading the files directly from the data lake.
 
-```scala
-val df = spark.read.
-option(Constants.SERVER, "samplews.database.windows.net").
-option(Constants.USER, <SQLServer Login UserName>).
-option(Constants.PASSWORD, <SQLServer Login Password>).
-sqlanalytics("<DBName>.<Schema>.<TableName>")
-```
-The parameters it takes in are:
-- **Constants.Server**: specify the URL of the server
-- **Constants.USER**: SQLServer Login UserName
-- **Constants.PASSWORD**: SQLServer Login Password
-- **DBName**: the name of the database.
-- **Schema**: the schema definition such as dbo. 
-- **TableName**: the name of the table you want to read data from.
+>[!Note] external tables are 'loosely bound' to the underlying files and deleting the table *does not* delete the files. This allows you to use Spark to do the heavy lifting of transformation then persist the data in the lake. Once this is done you can drop the table and downstream processes can access these optimized structures.
 
-In order to write data to a dedicated SQL Pool, you use the Write API. The Write API creates the table in the dedicated SQL pool, and then uses Polybase to load the data into the table that was created.
+The following code to save the original sales orders data (loaded from CSV files) as a table. Technically, this is an external table because the path parameter is used to specify where the data files for the table are stored (an internal table is stored in the system storage for the Spark metastore and managed automatically).
 
-The Write API using SQL Auth looks as follows:
+```python
 
-```scala
-df.write.
-option(Constants.SERVER, "samplews.database.windows.net").
-option(Constants.USER, <SQLServer Login UserName>).
-option(Constants.PASSWORD, <SQLServer Login Password>).
-sqlanalytics("<DBName>.<Schema>.<TableName>", <TableType>)
+order_details.write.saveAsTable('sales_orders', format='parquet', mode='overwrite', path='/sales_orders_table')
+
 ```
 
-The parameters it takes in are:
-- **Constants.Server**: specify the URL of the server
-- **Constants.USER**: SQLServer Login UserName
-- **Constants.PASSWORD**: SQLServer Login Password
-- **DBName**: the name of the database.
-- **Schema**: the schema definition such as dbo. 
-- **TableName**: the name of the table you want to read data from.
-- **TableType**: specification of the type of table, which can have two values.
-   - **Constants.INTERNAL** - Managed table in dedicated SQL pool
-   - **Constants.EXTERNAL** - External table in dedicated SQL pool
+After running this code, you would find a new folder named **sales_orders_table** which would contain parquet files for the table data.
 
+### Use SQL to query and transform the data
+
+We can now use SQL to transform the table. The following code creates two new derived columns named **Year** and **Month** and then creates a new table *transformed_orders* with the new derived columns added.
+
+```python
+
+sql_transform = spark.sql("SELECT *, YEAR(OrderDate) AS Year, MONTH(OrderDate) AS Month FROM sales_orders")
+display(sql_transform.limit(5))
+sql_transform.write.partitionBy("Year","Month").saveAsTable('transformed_orders', format='parquet', mode='overwrite', path='/transformed_orders_table')
+     
+```
+
+When looking at these files in the directory folder */transformed_orders_table* you'll note that you have performed the same data transformation as before by creating a hierarchy in the folders with the format of **Year=\*NNNN\* / Month=\*N\***, with each folder containing a .parquet file for the corresponding orders by year and month.
+
+### Query the metastore
+
+Since this new table was created in the metastore and is loosely connected to the files, we can use SQL to query it directly with the *%%sql* magic key in the first line to indicate that the SQL syntax will be used as shown in the example below:
+
+```python
+
+%%sql
+
+SELECT * FROM transformed_orders
+WHERE Year = 2021
+    AND Month = 1
+
+```
+
+Again, these are *external* tables and we can drop them from the metastore without it deleting the files from our data lake making it available to downstream data analysis and ingestion processes. We do this again, using the magic key.
+
+```python
+
+
+%%sql
+
+DROP TABLE transformed_orders;
+DROP TABLE sales_orders;
+
+```
+In the module section you can perform all of these steps in your own subscription.
