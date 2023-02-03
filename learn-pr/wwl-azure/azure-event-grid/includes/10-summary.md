@@ -1,9 +1,4 @@
----
-uid: learn.wwl.azure-event-grid.summary
-title: Summary
-description: Summary
-durationInMinutes: 3
----
+
 In this module, you learned how to:
 
 * Describe how Event Grid operates and how it connects to services and event handlers.
