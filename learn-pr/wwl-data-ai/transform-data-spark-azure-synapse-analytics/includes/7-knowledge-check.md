@@ -1,7 +1,5 @@
 
 
-Choose the best response for each of the questions, then select **Check your answers**.
-
 ## Multiple Choice
 
 Which method of the Dataframe object is used to save a Dataframe as a file?
