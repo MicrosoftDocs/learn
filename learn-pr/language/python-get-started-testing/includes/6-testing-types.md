@@ -1,6 +1,6 @@
 When you're developing a testing strategy, the different types of testing can cause some confusion. Knowing what these types of testing are and how they're different from each other is a solid way to implement a robust testing strategy.
 
-> [!NOTE] 
+> [!NOTE]
 > The difference between unit, integration, and functional testing can be controversial. These descriptions are meant as guidelines. The most important thing is to be consistent with the project and other developers.
 
 ## Unit testing
