@@ -1,3 +1,4 @@
+
 :::image type="content" source="../media/control-plane.png" alt-text="Diagram of identity and access management working as a controller for access to all resource.":::
 
 First, we should probably answer the question - what is a control plane?  A **control plane** is a term that has been used for years within networks.  It is the part of a network that routes network traffic around the network architecture.  So, a control plane is a tool or service that directs access to resources based on specific criteria.  When it comes to solutions in today's world, the user identity is the right place to check for access.  This sets up identity as the control plane. 
