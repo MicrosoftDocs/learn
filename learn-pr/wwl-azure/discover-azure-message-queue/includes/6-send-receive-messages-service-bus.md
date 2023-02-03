@@ -1,4 +1,4 @@
-In this exercise you will learn how to:
+In this exercise you'll learn how to:
 
 * Create a Service Bus namespace, and queue, using the Azure CLI.
 * Create a .NET console application to send and receive messages from the queue.
@@ -10,9 +10,9 @@ In this exercise you will learn how to:
 * The [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
 * [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0) is the target framework for the steps below.
 
-## Login to Azure
+## Log in to Azure
 
-In this section you will open your terminal and create some variables that will be used throughout the rest of the exercise to make command entry, and unique resource name creation, a bit easier.
+In this section you'll open your terminal and create some variables that will be used throughout the rest of the exercise to make command entry, and unique resource name creation, a bit easier.
 
 1. Launch the [Azure Cloud Shell](https://shell.azure.com) and select **Bash** and the environment.
 
@@ -25,7 +25,7 @@ In this section you will open your terminal and create some variables that will 
 
 ## Create Azure resources
 
-1. Create a resource group to hold the Azure resources you will be creating.
+1. Create a resource group to hold the Azure resources you'll be creating.
 
     ```bash
     az group create --name az204-svcbus-rg --location $myLocation
@@ -235,7 +235,7 @@ In this section you'll update the program to receive messages from the queue.
     > [!NOTE]
     > Since the application sent two batches of messages before retrieving them, you should see two batches of three messages represented in the output.
 
-1. Return to the portal and select **Peek from start** again. Notice that no messages appear in the queue since we have retrieved them all. 
+1. Return to the portal and select **Peek from start** again. Notice that no messages appear in the queue since we've retrieved them all. 
 
 ## Clean up resources
 
