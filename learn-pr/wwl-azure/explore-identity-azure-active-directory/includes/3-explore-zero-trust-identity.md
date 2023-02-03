@@ -1,3 +1,4 @@
+
 Organizations need a new security model that adapts to the complexity of the hybrid and multi-cloud environments. Support is required for the cloud environment, embracing the mobile workforce, and protects people, devices, applications, and data wherever they're located. Zero Trust is the core strategy. Instead of believing everything behind the corporate firewall is safe, the Zero Trust model assumes breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to "never trust, always verify."
 
 ### Zero Trust principles - guidance for architecture design
