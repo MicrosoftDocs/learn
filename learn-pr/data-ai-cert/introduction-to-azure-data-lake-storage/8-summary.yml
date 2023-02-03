@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.data-ai-introduction-to-azure-data-lake-storage.introduction
-title: Introduction
+uid: learn.data-ai-introduction-to-azure-data-lake-storage.summary
+title: Summary
 metadata:
-  title: Introduction
-  description: "Introduction"
+  title: Summary
+  description: "Summary"
   ms.date: 02/03/2023
   author: wwlpublish
   ms.author: jamesh
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/8-summary.md)]
