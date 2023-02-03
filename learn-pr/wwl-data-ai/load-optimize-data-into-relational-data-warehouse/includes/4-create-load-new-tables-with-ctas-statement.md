@@ -4,6 +4,7 @@
 In many data warehouses, you need to handle updates to dimension data and support what are commonly referred to as *slowly changing dimensions* (SCDs).
 
 There are multiple kinds of slowly changing dimension, of which three are commonly implemented:
+
 |Type 0|
 | -- |
 |Dimension data can't be changed. Any attempted changes fail.|

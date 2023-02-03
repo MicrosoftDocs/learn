@@ -16,7 +16,7 @@ Which command should you use to load a staging table with data from files in the
 
 (x)COPY {{That's Correct. With existing tables, the copy command is the most efficient way to populate the warehouse from the data lake.}}  
 ()LOAD {{That's incorrect. Load is not a valid operation in this context}}  
-()INSERT {{That's incorrect. Although INSERT is an option, it is not as performant as the COPY command.}}
+()INSERT {{That's incorrect. Although INSERT is an option, it doesn't perform as well as the COPY command.}}
 
 ## Multiple Choice
 

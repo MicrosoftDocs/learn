@@ -6,5 +6,4 @@ As the data warehouse is populated in the future with new fact data, you periodi
 
 ![Create a temporary table and use to update existing time dimension](../media/3a-create-temp-and-update-time-dimension.png)
 
->[!TIP]
-Scripting this in SQL may be time-consuming in a dedicated SQL pool – it may be more efficient to prepare the data in Microsoft Excel or an external script and import it using the COPY statement
+>[!TIP] Scripting this in SQL may be time-consuming in a dedicated SQL pool – it may be more efficient to prepare the data in Microsoft Excel or an external script and import it using the COPY statement
