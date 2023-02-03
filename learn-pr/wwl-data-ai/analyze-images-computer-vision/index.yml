@@ -3,9 +3,9 @@ uid: learn.wwl.analyze-images-computer-vision
 metadata:
   title: Analyze images with the Computer Vision service
   description: "Analyze images with the Computer Vision service"
-  ms.date: 09/05/2022
+  ms.date: 01/25/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Analyze images with the Computer Vision service

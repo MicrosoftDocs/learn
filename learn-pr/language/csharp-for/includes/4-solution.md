@@ -20,9 +20,9 @@ The `for` statement is important because it allows you to iterate through the co
 
 The `if-elseif-else` allows you to check for the divisors of 3 and 5.
 
-The `%`, the mod operator, allows you to determine if 3 or 5 divide into another number without a remainder.
+The `%`, or mod operator, allows you to determine if 3 or 5 divide into another number without a remainder.
 
-And the `&&` operator ensures that a number can be divided into both 3 and 5 for the `FizzBuzz` condition.
+The `&&` operator ensures that a number can be divided into both 3 and 5 for the `FizzBuzz` condition.
 
 The code should produce the following output from 1 to 100.
 
@@ -132,4 +132,4 @@ The code should produce the following output from 1 to 100.
 If you were successful, congratulations! Continue on to the knowledge check in the next unit.
 
 > [!IMPORTANT]
-> If you had trouble completing this challenge,  you should review the previous units before you continue on. All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.
+> If you had trouble completing this challenge, you should review the previous units before you continue on. All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.

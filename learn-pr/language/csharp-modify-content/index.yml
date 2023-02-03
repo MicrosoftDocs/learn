@@ -3,7 +3,7 @@ uid: learn.languages.csharp-modify-content
 metadata:
   title: 'Modify the content of strings using built-in string data type methods in C#'
   description: Use built in methods to extract, remove, or replace data in strings.
-  ms.date: 08/23/2022
+  ms.date: 01/24/2023
   author: billwagner
   ms.author: wiwagn
   ms.topic: interactive-tutorial
@@ -11,11 +11,11 @@ metadata:
 title: Modify the content of strings using built-in string data type methods in C#
 summary: Use built in methods to extract, remove, or replace data in strings.
 abstract: |
-  In this module, you will:
-  - Identify the position of a character or string inside of another string
-  - Extract portions of strings
-  - Remove portions of strings
-  - Replace values in strings with different values
+  In this module, you'll:
+  - Identify the position of a character or string inside of another string.
+  - Extract portions of strings.
+  - Remove portions of strings.
+  - Replace values in strings with different values.
 prerequisites: |
   - Beginner level experience with string helper methods
   - Beginner level experience with the `while` iteration statement

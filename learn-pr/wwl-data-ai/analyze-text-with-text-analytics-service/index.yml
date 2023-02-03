@@ -3,9 +3,9 @@ uid: learn.wwl.analyze-text-with-text-analytics-service
 metadata:
   title: Analyze text with the Language service
   description: "Analyze text with the Language service"
-  ms.date: 09/08/2022
+  ms.date: 01/27/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Analyze text with the Language service
@@ -14,7 +14,7 @@ abstract: |
   Learn how to use the Language service for text analysis
 prerequisites: |
   Ability to navigate the Azure portal
-iconUrl: /training/achievements/analyze-text-with-text-analytics-service.svg
+iconUrl: /learn/achievements/analyze-text-with-text-analytics-service.svg
 levels:
 - beginner
 roles:

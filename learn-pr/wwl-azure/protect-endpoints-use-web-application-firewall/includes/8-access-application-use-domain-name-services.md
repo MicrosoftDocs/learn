@@ -11,10 +11,10 @@ In this unit, you'll access an application using Domain Name Services.
     ```
     
     > [!NOTE]
-    > The output of this command should return the Healthy value of the health property of the backendHttpSettingsCollection element. If so, your setup is valid. If you see any other value than healthy, review the previous steps.
+    > The output of this command should return the Healthy value of the health property of the `backendHttpSettingsCollection` element. If so, your setup is valid. If you see any other value than healthy, review the previous steps.
     
     > [!NOTE]
-    > There might be a delay before the Application Gateway reports the Healthy status of backendHttpSettingsCollection, so if you encounter any issues, wait a few minutes and rerun the previous command before you start troubleshooting.
+    > There might be a delay before the Application Gateway reports the Healthy status of `backendHttpSettingsCollection`, so if you encounter any issues, wait a few minutes and rerun the previous command before you start troubleshooting.
 
 2.  Next, identify the public IP address of the Application Gateway by running the following command from the Git Bash shell.
     

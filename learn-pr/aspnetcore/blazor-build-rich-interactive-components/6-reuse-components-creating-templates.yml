@@ -2,40 +2,39 @@
 uid: learn.build-interactive-components-blazor-web-apps.reuse-components-creating-templates
 title: Reuse components by creating templates
 metadata:
-  unitType: learning-content 
+  unitType: learning-content
   title: "Reuse components by creating templates"
   description: "Learn how to create templated components that can be easily reused throughout applications"
-  ms.date: 08/18/2021
-  author: csharpfritz
-  ms.author: jefritz
+  ms.date: 02/02/2023
+  author: IEvangelist
+  ms.author: dapine
   ms.topic: interactive-tutorial
   ms.prod: learning-blazor
-durationInMinutes: 10
+durationInMinutes: 4
 content: |
   [!include[](includes/6-reuse-components-creating-templates.md)]
 quiz:
-    title: Check your knowledge
-    questions:
+  title: Check your knowledge
+  questions:
     - content: "What parameter object type should you configure on a Blazor component in order to share a fragment of HTML?"
       choices:
-      - content: "string"
-        isCorrect: false
-        explanation: "While HTML is a string, there is a better type that should be configured"
-      - content: "StringBuilder"
-        isCorrect: false
-        explanation: "A StringBuilder is not going to receive and render HTML content in the Blazor component"
-      - content: "RenderFragment"
-        isCorrect: true
-        explanation: "RenderFragment is a section of code that can contain Razor markup and HTML to be rendered in a Blazor component"
+        - content: "`MarkupString`"
+          isCorrect: false
+          explanation: "While HTML is a string, there is a better type that should be configured"
+        - content: "`StringBuilder`"
+          isCorrect: false
+          explanation: "A `StringBuilder` isn't going to receive and render HTML content in the Blazor component"
+        - content: "`RenderFragment`"
+          isCorrect: true
+          explanation: "RenderFragment is a section of code that can contain Razor markup and HTML to be rendered in a Blazor component"
     - content: "What is the name of the parameter that captures all markup inside of a component without requiring an additional tag to be created?"
       choices:
-      - content: "RenderFragment"
-        isCorrect: false
-        explanation: "RenderFragment is the type of the parameter, but what is the name of that parameter"
-      - content: "ChildContent"
-        isCorrect: true
-        explanation: "ChildContent is the default name of the parameter, with a return type of RenderFragment"
-      - content: "BodyContent"
-        isCorrect: false
-        explanation: "BodyContent was a parameter name used in the sample, but is not the default parameter name"
-        
+        - content: "`RenderFragment`"
+          isCorrect: false
+          explanation: "`RenderFragment` is the type of the parameter, but what is the name of that parameter"
+        - content: "`ChildContent`"
+          isCorrect: true
+          explanation: "`ChildContent` is the default name of the parameter, with a return type of `RenderFragment`"
+        - content: "`BodyContent`"
+          isCorrect: false
+          explanation: "`BodyContent` was a parameter name used in the sample, but is not the default parameter name"

@@ -4,7 +4,7 @@ When we need to work with data from outside of our code, we'll declare a variabl
 
 ## What is a variable?
 
-A **variable** is a data item that may change its value during its lifetime. You can use variables to temporarily store values that you intend to use later in your code. A variable is a friendly label that we can assign to a computer memory address. When we want to temporarily store a value in that memory address, or whenever we want to retrieve the value that is stored in the memory address, we just use the variable name we created.
+A **variable** is a data item that may change its value during its lifetime. You can use variables to temporarily store values that you intend to use later in your code. A variable is a friendly label that we can assign to a computer memory address. When we want to temporarily store a value in that memory address, or whenever we want to retrieve the value that is stored in the memory address, we'll just use the variable name we created.
 
 ### Declaring a variable
 
@@ -26,9 +26,9 @@ Here's a few important considerations about variable names:
 
 - Variable names can contain alphanumeric characters and the underscore character. Special characters like the hash symbol `#` (also known as the number symbol or pound symbol) or dollar symbol `$` are not allowed.
 - Variable names must begin with an alphabetical letter or an underscore, not a number. Developers use the underscore for a special purpose, so try to not use that for now.
-- Variable names must **not** be a C# keyword. For example, you cannot use the following variable declarations: `decimal decimal;` or `string string;`.
+- Variable names must **not** be a C# keyword. For example, you can't use the following variable declarations: `decimal decimal;` or `string string;`.
 - Variable names are case-sensitive, meaning that `string Value;` and `string value;` are two different variables.
-- Variable names should use **camel case**, which is a style of writing that uses a lower-case letter at the beginning of the first word and an upper-case letter at the beginning of each subsequent word. For example, `string thisIsCamelCase;`.
+- Variable names should use **camel case**, which is a style of writing that uses a lower-case letter at the beginning of the first word and an upper-case letter at the beginning of each subsequent word. For example: `string thisIsCamelCase;`.
 - Variable names should be descriptive and meaningful in your application. Choose a name for your variable that represents the kind of data it will hold.
 - Variable names should be one or more entire words appended together. Don't use contractions, because the name of the variable (and therefore, its purpose) may be unclear to others who are reading your code.
 - Variable names shouldn't include the data type of the variable. You might see some advice to use a style like `string strValue;`. That advice is no longer current.

@@ -36,7 +36,7 @@ Here's a table of some examples of classes and their resulting objects:
 
 The way you go about creating an object from a class is similar to how you would create a car from a blueprint. When you create an object, your program asks the operating system for resources, namely memory, to be able to construct the object. Conversely, when a car is made from a blueprint, the factory asks for resources like metal, rubber, and glass to be able to assemble the car.
 
-:::image type="content" source="../media/car-assembly.png" alt-text="Illustration showing the resource inputs required to assemble a car from a blueprint." border="false":::	
+:::image type="content" source="../media/car-assembly.png" alt-text="Illustration showing the resource inputs required to assemble a car from a blueprint." border="false":::
 
 ## Create a class
 

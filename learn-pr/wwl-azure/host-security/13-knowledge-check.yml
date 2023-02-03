@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/02/2022
+  ms.date: 02/02/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -39,7 +39,7 @@ quiz:
     - content: "FileVault"
       isCorrect: false
       explanation: "FireVault is for encrypting Mac machines."
-  - content: "A company, with both Azure and on-premises virtual machines, needs to ensure your virtual machines are kept up to date with security patches. Update Management is the Azure tool they will use, hopefully at limited cost. Will Update management monitor their virtual machines for updates?"
+  - content: "A company with both Azure and on-premises virtual machines needs to ensure virtual machines are up to date with security patches. Update Management is the Azure tool they will use. Which of the following would enable the company to assess the status of available updates and manage the installation of required updates on virtual machines?"
     choices:
     - content: "The Microsoft Monitoring Agent must be installed for both Windows and Linux virtual machines on-premises."
       isCorrect: false
@@ -61,7 +61,7 @@ quiz:
     - content: "System updates should be installed on your machines."
       isCorrect: false
       explanation: "System updates are a high-severity warning."
-  - content: "Which attacks will using a Privileged access workstations protects companies from?"
+  - content: "Which attacks will using a Privileged access workstations protect companies from?"
     choices:
     - content: "Protects against attackers who have gained administrative access."
       isCorrect: false

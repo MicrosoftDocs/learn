@@ -17,10 +17,6 @@ on:
       AZURE_SUBSCRIPTION_ID:
         required: true
 
-permissions:
-  id-token: write
-  contents: read
-
 jobs:
   validate:
      runs-on: ubuntu-latest
