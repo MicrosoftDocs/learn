@@ -40,3 +40,5 @@ Let's issue a GET request for the URL to see if we get a response.
 1. Add a query parameter called *name* with your name to the URL; for example, `https://<your-webapp-name>.azurewebsites.net/api/HttpTrigger1?name=Jesse`
 
 1. Press <kbd>Enter</kbd> to submit the request.
+
+1. The message, **Hello, Jesse. This HTTP triggered function executed successfully.** displays.

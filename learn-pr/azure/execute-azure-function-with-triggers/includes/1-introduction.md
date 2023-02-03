@@ -13,7 +13,7 @@ In this module, you will:
 
 ## Supported languages
 
-This module uses the Azure portal to create and test your function code. Functions supports in-portal development for the following languages:
+This module uses the Azure portal to create and test your function code. Functions support in-portal development for the following languages:
 
 - C# Script (.csx)
 - JavaScript
