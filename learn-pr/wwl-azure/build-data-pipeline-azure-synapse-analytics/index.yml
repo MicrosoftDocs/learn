@@ -19,7 +19,7 @@ abstract: |
   - Initiate and monitor pipeline runs.
 prerequisites: |
   Before starting this module, you should be familiar with Azure Synapse Analytics and data analytics solutions in general. Consider completing the [Introduction to Azure Synapse Analytics](/training/modules/introduction-azure-synapse-analytics/) module first.
-iconUrl: /training/build-data-pipeline-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
