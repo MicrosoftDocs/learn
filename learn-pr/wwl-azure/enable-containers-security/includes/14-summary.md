@@ -1,4 +1,4 @@
-Keep you containers secure to protect the applications running on them using the Azure Container Registry to supply your containers and Azure Container Instances and Azure Kubernete Service to run and manage them.
+Keep your containers secure to protect the applications running on them using the Azure Container Registry to supply your containers and Azure Container Instances and Azure Kubernete Service to run and manage them.
 
 You should be able to:
 
