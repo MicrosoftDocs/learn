@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-data-pipeline-azure-synapse-analytics.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 02/03/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: synapse-analytics
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
