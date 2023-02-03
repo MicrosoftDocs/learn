@@ -21,5 +21,5 @@ Which method is used to split the data across folders when saving a Dataframe?
 What happens if you drop an external table that is based on existing files?
 
 () An error – you must delete the files first {{That's incorrect. The files and table are loosely-coupled, deleting the files does not remove the table from the metastore.}}
-(x)The table is dropped from the metastore but the files remain unaffected {{That's correct. The tables are loosely coupled from the files allowing the table to be dropped while the files remain.}}
+(x) The table is dropped from the metastore but the files remain unaffected {{That's correct. The tables are loosely coupled from the files allowing the table to be dropped while the files remain.}}
 () The table is dropped from the metastore and the files are deleted{{That's incorrect. The files are loosely-coupled and dropping the table has no impact on the existing files.}}
