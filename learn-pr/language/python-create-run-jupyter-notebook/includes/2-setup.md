@@ -22,6 +22,6 @@ When these two installations are complete, you'll then need to install a Visual 
 
 In Visual Studio Code, from extensions panel on the left, search for *Jupyter* by Microsoft. To install this extension, select **Install**.
 
-:::image type="content" source="../media/jupyter-extension.png" alt-text="Screenshot that shows the Jupyter extension in Visual Studio Code." lightbox="../media/jupyter-extension.png":::
+:::image type="content" source="../media/jupyter-extension.png" alt-text="Screenshot that shows the Jupyter extension in Visual Studio Code.":::
 
 Now that you have the three elements of your workspace set up, you can start working with Jupyter notebooks in Visual Studio Code.
