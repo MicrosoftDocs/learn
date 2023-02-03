@@ -6,7 +6,7 @@ Your organization has decided to use Azure Backup and Azure Recovery Services. A
 
 ## Architecture diagram
 
-:::image type="content" source="../media/lab-10.png" alt-text="Architecture diagram as explained in the text." order="false":::
+:::image type="content" source="../media/lab-10.png" alt-text="Architecture diagram as explained in the text." border="false":::
 
 ## Objectives
 
