@@ -79,7 +79,7 @@ Next, you want to show the time that your ship needs to take to get up to a good
 
 1. Run the code block to determine how long it will take to reach your desired velocity.
 
-   :::image type="content" source="../media/3.	velocity-code-output-jupyter-notebook.png" alt-text="Screenshot that shows the output of the code in the notebook."::: 
+   :::image type="content" source="../media/velocity-code-output-jupyter-notebook.png" alt-text="Screenshot that shows the output of the code in the notebook."::: 
 
 1. Tweak the start and end velocity values, or the acceleration, to determine how your spaceship will perform.
 

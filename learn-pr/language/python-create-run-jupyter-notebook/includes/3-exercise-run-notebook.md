@@ -22,7 +22,7 @@ Now you need to run your notebook. Choose a kernel from the dropdown list on the
 
 You might have one or several kernels to choose from, so make sure to choose a Python 3 kernel.
 
-:::image type="content" source="../media/kernel-choices-python-visual-studio-code.png" alt-text="Screenshot that shows a selection of Python kernels.":::
+:::image type="content" source="../media/kernel-choices-python-visual-studio-code.png" alt-text="Screenshot that shows a selection of Python kernels." lightbox="../media/kernel-choices-python-visual-studio-code.png":::
 
 Select the tick to complete the Markdown field, and you'll find the text is rendered as an `<h1>`, or header text. You just named your notebook! To see how this Markdown file is rendered, choose **run all** from the top of the notebook.
 
