@@ -1,78 +1,45 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+It is crucial to control and manage access to your pipelines and the resources they use, such as agent pools.
 
-    Goal: briefly summarize the key skill this unit will teach
+This unit will teach you how to configure pipeline access to specific agent pools in Azure DevOps. By controlling access to agent pools, you can ensure the execution of your pipeline on the right set of agents and grant the right level of permissions to the pipelines.
 
-    Heading: none
+## Prerequisites
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+* A project in Azure DevOps
+* Access to the project settings
+* Agent pools created and configured in Azure DevOps.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+> [!NOTE]
+> For more details about Agent Pools, see: [Create and manage agent pools](https://learn.microsoft.com/azure/devops/pipelines/agents/pools-queues)
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+## Pipeline permissions
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+Pipeline permissions control which YAML pipelines are authorized to use an agent pool. Pipeline permissions do not restrict access from Classic pipelines.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+You can choose from the following options:
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+* Open access for all pipelines to use the agent pool from the more options at the top-right corner of the Pipeline permissions section in the security tab of an agent pool.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+* Lock down the agent pool and only allow selected YAML pipelines to use it. If any other YAML pipeline refers to the agent pool, an authorization request gets raised, which must be approved by an agent pool Administrator. This does not limit access from Classic pipelines.
 
-    Goal: State concisely what's covered in this unit
+Pipeline permissions for the Azure Pipelines agent pool cannot be configured, as the pool is accessible, by default, to all pipelines.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+The **Security** action in the Agent pools tab is used to control the security of all project agent pools in a project. Role memberships for individual project agent pools are automatically inherited from what you define here. By default, the following groups are added to the Administrator role of 'All agent pools': Build Administrators, Release Administrators, Project Administrators.
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+### Steps to configure pipeline access to agent pools
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+By configuring pipeline access to agent pools, you can ensure that your pipelines are executed on the right set of agents and that the right level of permissions is granted to the pipelines. You can restrict access to specific pipelines or allow all pipelines to use a specific agent pool.
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+1. Log in to your Azure DevOps account
+2. Navigate to the project for which you want to configure pipeline access to agent pools
+3. Go to Project Settings, then click on Agent Pools under Pipelines
+4. Choose the agent pool that you want to grant access to your pipeline
+5. Go to the Security tab
+6. Click on the + button (Add pipeline) to add a new pipeline
+7. (Optional) Search for the pipeline name
+8. Select the name of your pipeline that you want to grant access to the current agent
 
-    Heading: none
--->
-TODO: add a visual element
+    ![Screen recording of Azure DevOps project settings showing the steps to add the pipeline eShopOnWeb to the Pipeline permissions.](../media/add-pipeline.gif)
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+Your pipeline is ready to run from the agent you select.
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+For more information, see: [Manage Azure Pipeline agents and pools](https://learn.microsoft.com/en-us/training/modules/manage-azure-pipeline-agents-pools/)

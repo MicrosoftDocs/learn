@@ -14,9 +14,9 @@ Securing applications is a continuous process encompassing secure infrastructure
 
 You'll learn best practices for securing pipelines in Azure DevOps, how to configure secure access to pipeline resources, secure access to Azure Repos from pipelines, manage permissions, structure projects and repositories for security, extend pipelines with multiple templates, secure variables, and parameters, and manage identity for projects, pipelines, and agents.
 
-This modules series is designed for developers, administrators and IT professionals who are responsible for managing and securing pipelines in Azure DevOps. By the end of this journey, you will have the skills to make your pipelines secure.
+This module series is designed for developers, administrators, and IT professionals responsible for managing and securing pipelines in Azure DevOps. By the end of this journey, you will have the skills to secure your pipelines.
 
-The course is divided into several modules, each covering a specific topic related to securing pipelines in Azure DevOps. Each module includes a mix of lectures, hands-on activities, quizzes, and challenges to help you apply your knowledge and practice what you have learned. At the end of each module, you will take a final assessment to evaluate your understanding of the subject.
+The course is divided into several modules, each covering a specific topic related to securing pipelines in Azure DevOps. Each module includes lectures, hands-on activities, quizzes, and challenges to help you apply your knowledge and practice what you have learned. At the end of each module, you will take a final assessment to evaluate your understanding of the subject.
 
 ## Why should I take the Implement security through a pipeline using DevOps learning path?
 
@@ -44,7 +44,12 @@ After completing this module, students and professionals can:
 
 ### Prerequisites
 
-To get the most out of this course, we recommend that you have a basic understanding of Azure DevOps and pipeline management. If you don't have this experience, we recommend that you first complete a module or course on Azure DevOps and pipeline management:
+You must create an Azure DevOps Organization and a Team Project for some exercises. If you don't have it yet, see the following:
+
+- [Create an organization - Azure DevOps](https://docs.microsoft.com/azure/devops/organizations/accounts/create-organization).
+- [Create a project in Azure DevOps](https://learn.microsoft.com/azure/devops/organizations/projects/create-project).
+
+To get the most out of this course, we recommend that you understand Azure DevOps and pipeline management. If you don't have this experience, we recommend that you first complete a module or course on Azure DevOps and pipeline management:
 
 - Free online:
   - [Choose the DevOps tools](https://learn.microsoft.com/training/modules/migrate-to-devops/)
@@ -68,10 +73,6 @@ If you're new to Azure Developer, consider taking the:
 - Free online: [Create serverless applications](https://docs.microsoft.com/learn/paths/create-serverless-applications/).
 - Instructor-led courses: [AZ-204: Developing Solutions for Microsoft Azure](https://docs.microsoft.com/learn/certifications/courses/az-204t00).
 
-You must create an Azure DevOps Organization and a Team Project for some exercises. If you don't have it yet, see the following:
-
-- [Create an organization - Azure DevOps](https://docs.microsoft.com/azure/devops/organizations/accounts/create-organization).
-
-Please make sure you have all the necessary resources and access to Azure DevOps before starting the course.
+Please ensure you have all the necessary resources and access to Azure DevOps before starting the course.
 
 Let's begin!
