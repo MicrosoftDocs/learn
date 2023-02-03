@@ -15,8 +15,8 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
    | Setting     | Value |
    |---------|---------|
    |Rule Name    |   MyPerformanceMetrics |
-   |Subscription  |   Concierge Subscription  |
-   |Resource group   |  <rgn>[sandbox resource group name]</rgn>     |
+   |Subscription  |   Your subscription  |
+   |Resource group   |  Resource group that contains the VM    |
    |Region  | Region where the VM is located     |
    |Platform Type  | Linux     |
 

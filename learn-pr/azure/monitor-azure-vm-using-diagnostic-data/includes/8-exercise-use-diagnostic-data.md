@@ -64,8 +64,8 @@ To set a different resource, you would choose **Select scope** and make the sett
     | Setting  |Value  |
     |---|---|
     | **Project details** |
-    | Subscription  | Concierge Subscription |
-    | Resource group  | <rgn>[sandbox resource group name]</rgn> |
+    | Subscription  | Your subscription |
+    | Resource group  | Resource group that contains the VM |
     | Region  | Global |
     | **Instance details** |
     | Action group name | *Email alerts* |
