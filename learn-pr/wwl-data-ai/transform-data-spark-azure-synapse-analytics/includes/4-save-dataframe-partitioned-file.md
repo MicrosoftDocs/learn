@@ -1,16 +1,16 @@
 
 
-The Spark library which provides the dataframe structure also allows you the ability to use SQL as a way of working with data. With this approach, You can query and transform data in dataframes by using SQL queries, and persist the results as tables. 
+The Spark library, which provides the DataFrame structure also allows you the ability to use SQL as a way of working with data. With this approach, You can query and transform data in DataFrames by using SQL queries, and persist the results as tables. 
 
 >[!Note] the persisted tables are metadata abstractions over physical files.
 
 ### Define the tables and views
 
-The metastore enables you to write SQL queries as an internal view that return a dataframe. You can then write this view as an external table. External tables are relational tables in the metastore that reference files in a data lake location that you specify. You can access this data by querying the table or by reading the files directly from the data lake.
+The metastore enables you to write SQL queries as an internal view that return a DataFrame. You can then write this view as an external table. External tables are relational tables in the metastore that reference files in a data lake location that you specify. You can access this data by querying the table or by reading the files directly from the data lake.
 
 >[!Note] external tables are 'loosely bound' to the underlying files and deleting the table *does not* delete the files. This allows you to use Spark to do the heavy lifting of transformation then persist the data in the lake. Once this is done you can drop the table and downstream processes can access these optimized structures.
 
-The following code to save the original sales orders data (loaded from CSV files) as a table. Technically, this is an external table because the path parameter is used to specify where the data files for the table are stored (an internal table is stored in the system storage for the Spark metastore and managed automatically).
+The following code to save the original sales orders data (loaded from CSV files) as a table. 
 
 ```python
 
@@ -19,6 +19,8 @@ order_details.write.saveAsTable('sales_orders', format='parquet', mode='overwrit
 ```
 
 After running this code, you would find a new folder named **sales_orders_table** which would contain parquet files for the table data.
+
+Technically, *sales_orders* is an external table because the path parameter, which is */sales_orders_table* is used to specify where the data files for the table are stored. An internal table would be stored in the system storage for the Spark metastore and managed automatically.
 
 ### Use SQL to query and transform the data
 
@@ -36,7 +38,7 @@ When looking at these files in the directory folder */transformed_orders_table* 
 
 ### Query the metastore
 
-Since this new table was created in the metastore and is loosely connected to the files, we can use SQL to query it directly with the *%%sql* magic key in the first line to indicate that the SQL syntax will be used as shown in the example below:
+Since this new table was created in the metastore and is loosely connected to the files, we can use SQL to query it directly with the *%%sql* magic key in the first line to indicate that the SQL syntax will be used as shown in the following script:
 
 ```python
 
@@ -48,10 +50,9 @@ WHERE Year = 2021
 
 ```
 
-Again, these are *external* tables and we can drop them from the metastore without it deleting the files from our data lake making it available to downstream data analysis and ingestion processes. We do this again, using the magic key.
+Again, these structures are *external* tables and we can **drop** them from the metastore without the command deleting the files from our data lake making it available to downstream data analysis and ingestion processes. Again, we accomplish this using the magic key.
 
 ```python
-
 
 %%sql
 
@@ -59,4 +60,5 @@ DROP TABLE transformed_orders;
 DROP TABLE sales_orders;
 
 ```
-In the module section you can perform all of these steps in your own subscription.
+
+In the exercise module section, you can perform all of these steps in your own subscription.

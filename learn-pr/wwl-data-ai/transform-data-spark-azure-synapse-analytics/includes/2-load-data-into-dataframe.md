@@ -12,9 +12,9 @@ When you initially create a notebook with Azure Synapse Analytics, simply select
 
 ### Load source data
 
-Let's Start by populating a dataframe in your notebook. 
+Let's Start by populating a DataFrame in your notebook. 
 
-In the below example we're reading historical sales order data from our **data** directory into a dataframe (df). .
+In the below example we're reading historical sales order data from our **data** directory into a DataFrame (df). .
 
 ```python
 
@@ -25,7 +25,7 @@ display(order_details.limit(5))
 ```
 ### Transform the data structure
 
-We'll now want to transform some of the data, in this case we'll want to *split* the **CustomerName** field into two new fields **FirstName** and **LastName**. We'll then *drop* the **CustomerName** field from the dataframe and show the new headers and five records in the results.
+We'll now want to transform some of the data, in this case we'll want to *split* the **CustomerName** field into two new fields **FirstName** and **LastName**. We'll then *drop* the **CustomerName** field from the DataFrame and show the new headers and five records in the results.
 
 ```python
 from pyspark.sql.functions import split, col
@@ -43,9 +43,9 @@ You can use the full power of the Spark SQL library to transform the data by fil
 
 ### Save the transformed data
 
-Once your dataframe is in the structure you like, you can save the results to a supported format in your data lake.
+Once your DataFrame is in the structure you like, you can save the results to a supported format in your data lake.
 
-In the following code, you'll be saving your dataframe into a parquet file. 
+In the following code, you'll be saving your DataFrame into a parquet file. 
 
 >[!Warning] the code below will overwrite the *orders.parquet* if it already exists in the **transformed_data** folder.
 
