@@ -3,7 +3,7 @@ uid: learn.wwl.train-compute-azure-machine-learning
 metadata:
   title: Train compute-intensive models with Azure Machine Learning
   description: "Train compute-intensive models with Azure Machine Learning"
-  ms.date: 06/02/2022
+  ms.date: 02/03/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
