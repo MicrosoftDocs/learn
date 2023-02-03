@@ -11,7 +11,7 @@ In Blackjack, the goal of the game is to win over the bank. You win by holding a
    code .
    ```
 
-1. Press <kbd>Ctrl</kbd> + <kbd>s</kbd> to save the file. Name the file *blackjack.js*.
+1. Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save the file. Name the file *blackjack.js*.
 
 1. Give it the following starter code:
 
@@ -35,7 +35,7 @@ In Blackjack, the goal of the game is to win over the bank. You win by holding a
    console.log(`You have ${sum} points`);
    ```
 
-1. Save your changes, press <kbd>Ctrl</kbd> + <kbd>q</kbd> to close the file, and then run the code.
+1. Save your changes, press <kbd>Ctrl</kbd> + <kbd>Q</kbd> to close the file, and then run the code.
 
    ```bash
    node blackjack.js
