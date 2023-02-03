@@ -2,7 +2,7 @@ The Azure Virtual Desktop service scales to more than 10,000 session hosts per w
 
 Numbers in the following sections are approximate. The following numbers are based on various large customer deployments, and they might change over time.
 
- -  You **can't create more than 200 application groups** per single Azure Active Directory tenant.
+ -  You **can't create more than 500 application groups** per single Azure Active Directory tenant.
  -  We recommend that you **don't publish more than 50 applications** per application group.
  -  We recommend deploying **not more than 5,000 virtual machines per Azure subscription per region**, this recommendation applies to both personal and pooled host pools based on Windows 10 Enterprise single and multi-session. Most customers use Windows 10 Enterprise multi-session, which allows multiple users to log on to each VM. You can increase the resources of individual session host VMs to accommodate more user sessions.
  -  For **automated session host-scaling tools, the limits are around 2,500 virtual machines per Azure subscription per region**, because VM status interaction consumes more resources.

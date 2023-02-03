@@ -26,6 +26,7 @@ roles:
 - solution-architect
 products:
 - microsoft-defender
+- mdatp
 subjects:
 - cloud-security
 - security

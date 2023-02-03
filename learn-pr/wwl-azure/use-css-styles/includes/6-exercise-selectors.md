@@ -1,13 +1,13 @@
-In the prior exercise, you applied style to elements such as `html` and `h1`. You will frequently need to be a little narrower in applying style.
+In the prior exercise, you applied style to elements such as `html` and `h1`. You'll frequently need to be a little narrower in applying style.
 
-In this exercise, you will set the style for the social media and experience sections and links on the page.
+In this exercise, you'll set the style for the social media and experience sections and links on the page.
 
 ## Applying Style to Classes and IDs
 
-You will start by setting the style for the social media and experience sections.
+You'll start by setting the style for the social media and experience sections.
 
 1. Return to the vscode.dev window you used in the previous exercise.
-1. Inside **index.html**, notice the `section` element with the ID of **social-media** at line 13; you will apply style to this section to set the color to blue.
+1. Inside **index.html**, notice the `section` element with the ID of **social-media** at line 10; you'll apply style to this section to set the color to blue.
 1. At the end of **style.css**, add the following CSS to set the color for the **social-media** element:
 
     ```css
@@ -17,12 +17,12 @@ You will start by setting the style for the social media and experience sections
     ```
 
 1. The page will update, setting the content in the social media section to blue.
-1. Inside **index.html**, notice the two sections at lines 33 and 37 with the class **experience**; you will apply style to these sections to italicize the font.
+1. Inside **index.html**, notice the two sections at lines 28 and 32 with the class **experience**; you'll apply style to these sections to italicize the font.
 1. At the end of **style.css**, add the following CSS to modify the font for the elements with the **experience** class:
 
     ```css
-    #social-media {
-        color: blue;
+    .experience {
+        font-style: italic;
     }
     ```
 
@@ -30,7 +30,7 @@ You will start by setting the style for the social media and experience sections
 
 ## Using Pseudo-classes to Set Link Style
 
-Many web developers change the color and style of hyperlinks on a page. You will set the color for links to be green and highlight links when a user hovers over them.
+Many web developers change the color and style of hyperlinks on a page. You'll set the color for links to be green and highlight links when a user hovers over them.
 
 1. At the end of **style.css**, add the following CSS to set links to always be green:
 
@@ -45,7 +45,7 @@ Many web developers change the color and style of hyperlinks on a page. You will
     ```
 
 1. The page updates to show links as green.
-1. Add the following CSS to the end of **style.css** to highlight links as they are being hovered over:
+1. Add the following CSS to the end of **style.css** to highlight links as they're being hovered over:
 
     ```css
     a:hover {
@@ -59,4 +59,4 @@ Many web developers change the color and style of hyperlinks on a page. You will
 
 The following screenshot shows the results of the CSS you applied. You used classes, IDs, and pseudo-classes to apply styles to specific elements and logical groups of elements.
 
-:::image type="content" source="../media/selectors-final.png" alt-text="Screenshot of browser render of the C S S appled to the H T M L code.":::
+:::image type="content" source="../media/selectors-final.png" alt-text="Screenshot of browser render of the C S S applied to the H T M L code.":::

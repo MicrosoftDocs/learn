@@ -26,8 +26,8 @@ roles:
 - business-user
 - student
 products:
-- azure
 - m365
+- microsoft-purview
 subjects:
 - compliance
 - networking
