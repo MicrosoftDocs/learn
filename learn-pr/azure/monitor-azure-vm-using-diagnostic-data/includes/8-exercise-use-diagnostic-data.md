@@ -8,7 +8,7 @@ In this unit, you'll add an alert for your virtual machine (VM). Next, you'll ca
 
 If CPU usage goes above 90 percent for one minute, you'd like to get a notification.
 
-1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and sign in with the account that you used to enable the sandbox.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
 1. On the Azure portal menu, or from the **Home** page, select **Virtual machines**.
 
