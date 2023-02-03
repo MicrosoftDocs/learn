@@ -14,7 +14,7 @@ Suppose you work for a national package delivery service. Your organization has 
 
 In the past, these business units would maintain separate data stores, resulting in data *silos* that can't be easily used or analyzed together.
 
-:::image type="content" source="../media/1-introduction-before.png" alt-text="A variety of data types are stored in separate locations and can't easily connect with each other. This creates data silos." lightbox="../media/1-introduction-before.png":::
+:::image type="content" source="../media/1-introduction-before.png" alt-text="Various data types are stored in separate locations and can't easily connect with each other, creating data silos." lightbox="../media/1-introduction-before.png":::
 
 However, with Azure Data Lake Storage, you eliminate data silos by bringing these disparate data stores into a single location. From here, they can be readily combined and analyzed.
 
