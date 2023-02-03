@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-data-engineering-azure
 metadata:
   title: Introduction to data engineering on Azure
   description: "Introduction to data engineering on Azure"
-  ms.date: 02/02/2023
+  ms.date: 02/03/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -29,7 +29,7 @@ subjects:
 - data-engineering
 units:
 - learn.wwl.introduction-data-engineering-azure.introduction
-- learn.wwl.introduction-data-engineering-azure.what-is-data-engineering
+- learn.wwl.introduction-data-engineering-azure.what-data-engineering
 - learn.wwl.introduction-data-engineering-azure.common-patterns-azure-data-engineering
 - learn.wwl.introduction-data-engineering-azure.common-tooling-azure-data-engineering
 - learn.wwl.introduction-data-engineering-azure.knowledge-check

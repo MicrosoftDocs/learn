@@ -4,7 +4,7 @@ There are some core concepts with which data engineers should be familiar. These
 
 ## Operational and analytical data
 
-![Diagram representing operational and analytical data.](../media/4-operational-and-analytical-data.png)
+![Diagram representing operational and analytical data.](../media/4-operational-analytical-data.png)
 
 *Operational* data is usually transactional data that is generated and stored by applications, often in a relational or non-relational database. *Analytical* data is data that has been optimized for analysis and reporting, often in a data warehouse.
 
@@ -12,7 +12,7 @@ One of the core responsibilities of a data engineer is to design, implement, and
 
 ## Streaming data
 
-![Diagram representing streaming data.](../media/4-streaming-data.png)
+![Diagram representing streaming data.](../media/4-stream-data.png)
 
 Streaming data refers to perpetual sources of data that generate data values in real-time, often relating to specific events. Common sources of streaming data include internet-of-things (IoT) devices and social media feeds.
 
