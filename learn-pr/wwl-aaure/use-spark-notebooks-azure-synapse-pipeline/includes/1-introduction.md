@@ -1,10 +1,5 @@
 
 
-While the use of Spark Notebooks isn't the only external component available to you as a data engineer, it is potentially one of the more valuable ones in your arsenal in order to collaborate and develop best-of-breed solutions with your colleagues on other teams. It also allows the reuse of other external components which can save time and simplify complex transformations.
+With Azure Synapse Analytics pipelines, you can orchestrate data transfer and transformation activities and build data integration solutions across multiple systems. When working with analytical data in a data lake, Apache Spark provides a scalable, distributed processing platform that you can use to process huge volumes of data efficiently.
 
-At the end of this module, you should:
-
-- understand the external components to analytics pipelines.
-- be able to explain the Azure Synapse Analytics pipeline process(es).
-- understand the major components which make up Azure Synapse Analytics Pipelines which are directly relatable to Azure Data Factory.
-- have been able to execute a complete Azure Synapse Analytics pipeline.
+The **Synapse Notebook** activity enables you to run data processing code in Spark notebooks as a task in a pipeline. This makes it possible to automate big data processing and integrate it into *extract, transform, and load* (ETL) workloads.
