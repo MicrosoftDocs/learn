@@ -8,24 +8,27 @@ metadata:
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: synapse-analytics
 title: Build a data pipeline in Azure Synapse Analytics
-summary: In this module we look to define not only what an Azure Synapse Pipeline and its capabilities are, but to show its similarities to Azure Data Factory which many are already familiar with.
+summary: Pipelines are the lifeblood of a data analytics solution. Learn how to use Azure Synapse Analytics pipelines to build integrated data solutions that extract, transform, and load data across diverse systems.
 abstract: |
-  At the end of this module, you should:
-  - understand Azure Synapse Analytics Pipelines from a high level.
-  - be able to explain the Azure Synapse Analytics pipeline process(es).
-  - understand the major components which make up Azure Synapse Analytics Pipelines which are directly relatable to Azure Data Factory.
-  - have been able to execute a complete Azure Synapse Analytics pipeline.
-prerequisites: ""
-iconUrl: /training/achievements/generic-badge.svg
+  In this module, you will learn how to:
+  - Describe core concepts for Azure Synapse Analytics pipelines.
+  - Create a pipeline in Azure Synapse Studio.
+  - Implement a data flow activity in a pipeline.
+  - Initiate and monitor pipeline runs.
+prerequisites: |
+  Before starting this module, you should be familiar with Azure Synapse Analytics and data analytics solutions in general. Consider completing the [Introduction to Azure Synapse Analytics](/training/modules/introduction-azure-synapse-analytics/) module first.
+iconUrl: /training/build-data-pipeline-badge.svg
 levels:
 - intermediate
 roles:
 - data-engineer
 products:
 - azure-data-factory
-- azure-data-lake
 - azure-synapse-analytics
+subjects:
+- data-engineering
 units:
 - learn.wwl.build-data-pipeline-azure-synapse-analytics.introduction
 - learn.wwl.build-data-pipeline-azure-synapse-analytics.understand-pipelines-azure-synapse-analytics
