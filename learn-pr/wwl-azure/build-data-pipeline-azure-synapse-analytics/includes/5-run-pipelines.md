@@ -13,5 +13,5 @@ You can monitor each individual run of a pipeline in the **Monitor** page in Azu
 
 The ability to monitor past and ongoing pipeline runs is useful for troubleshooting purposes. Additionally, when combined with the ability to integrate Azure Synapse Analytics and Microsoft Purview, you can use pipeline run history to track data lineage data flows.
 
-> [TIP]
+> [!TIP]
 > To learn more about integration between Azure Synapse Analytics and Microsoft Purview, consider completing the [Integrate Microsoft Purview and Azure Synapse Analytics](/training/modules/integrate-microsoft-purview-azure-synapse-analytics?azure-portal=true) module.
