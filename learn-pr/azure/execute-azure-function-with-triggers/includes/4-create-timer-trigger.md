@@ -70,13 +70,12 @@ Now that we've configured the timer, it will invoke the function on the interval
     > [!NOTE]
     > Azure automatically provides a default name for a new trigger that you create. **TimerTrigger1** is default value that you can change when you create a new trigger.
 
-1. In the command bar, select **Test/Run**. In the **Input**  **Output** pane, select **Run**. The **Logs** session pane opens at the bottom of the page.
+1. The **Logs** session pane opens at the bottom of the page. Select the **App Insight Logs** drop-down, and then select **Filesystem Logs**. Select **OK** when the **Switching to filesystem based logs...** message displays.
+
+    :::image type="content" source="../media/4-azure-function-logs.png" alt-text="Screenshot that shows the function Code + Test pane with the Filesystem Log displayed.":::
 
 1. Observe that a new message arrives every 20 seconds in the log pane.
 
-    > [!NOTE]
-    > If you don't see messages in the log pane, select the **App Insight Logs** drop-down, and then select **Filesystem Logs**.
-
-1. To stop the function, close the *Input/Output* pane, and then in the command bar of the *Logs* pane, select **Stop**.
+1. To stop the function, select **Stop** in the command bar of the *Logs* pane.
 
 1. To disable the function, in the **TimerTrigger1** menu, select **Overview**, and then in the command bar, select **Disable**.

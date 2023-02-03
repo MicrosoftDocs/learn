@@ -63,7 +63,9 @@ Now that we've created our container to monitor, let's run our function so we ca
 
 1. Select your blob trigger. In the left menu pane, under **Developer**, select **Code + Test**.
 
-1. Expand the **Logs** tab at the bottom of the screen.
+1. Expand the **Logs** tab at the bottom of the screen if necessary.
+
+1. Select the **App Insight Logs** drop-down, and then select **Filesystem Logs**. Select **OK** when the **Switching to filesystem based logs...** message displays.
 
 ## Create a blob
 
@@ -80,6 +82,3 @@ Our blob trigger is now up and listening for activity. Let's create a blob to se
 1. Select **Upload**.
 
 1. Switch back to the Azure Function tab and check the output logs for a message that displays which file was uploaded. Your blob trigger should automatically execute. If you select **Test/Run** from the top menu bar, and then select **Run** in the function pane, it might result in an error due to the default value that is specified in the **Test** request body. You'll need to change the path from the *Input* tab in the request **Body** pane to a valid file for the test to run successfully.
-
-    > [!NOTE]
-    > If you don't see messages in the log pane, select the **App Insight Logs** drop-down, select **Filesystem Logs**, and upload another file.
