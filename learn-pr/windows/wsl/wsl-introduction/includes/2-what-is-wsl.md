@@ -1,14 +1,14 @@
 Whether you’re a seasoned developer or a student just beginning to learn code, one of the most important choices you need to make is the type of hardware, environment, and tools to invest in using.
 
-:::image type="content" source="../media/wsl-tools-decision.png" alt-text="Illustration of a screen with multiple types of software applications running and a person making a decision.":::
+:::image type="content" source="../media/wsl-juggling-tools.png" alt-text="Illustration of a person juggling 7 different software applications.":::
 
 As a developer, you will need to access specific coding tools, languages, and frameworks. You may want to install Python and a web development framework like Django, work with JavaScript on a NodeJS backend, or install a cross-platform project that uses React. Generally speaking, these programming languages will work on all operating systems. However, there are many scenarios that may prefer one operating system to another. Building Windows native desktop apps works best using Windows. Building a web app that will be deployed to a custom Linux server or production-ready Linux Virtual Machine (VM) works best using a Linux environment. We call this having parity between your local development environment and production deployment environment.
 
-:::image type="content" source="../media/wsl-juggling-tools.png" alt-text="Illustration of a person juggling 7 different software applications.":::
+:::image type="content" source="../media/wsl-tools-decision.png" alt-text="Illustration of a screen with multiple types of software applications running and a person making a decision.":::
 
 As the employee of a company, or a student in a school, access to productivity tools is also essential to consider. Throughout the day many of us need to use email and calendar scheduling tools (like Outlook), create Word docs, Excel spreadsheets, and PowerPoint presentations, and then need to jump on an online call or chat (using a tool like Microsoft Teams).
 
-Rather than using separate machines to handle these needs, some developers choose to dual-boot or run virtual machines (VMs). Microsoft now offers a better solution with the Windows Subsystem for Linux (WSL).
+Rather than using separate machines to handle these needs, some developers choose to dual-boot or run virtual machines (VMs). Microsoft now offers a better solution with the Windows Subsystem for Linux (WSL). With WSL, you can run all of your favorite developer tools and productivity tools in one place, running Linux and Windows side-by-side!
 
 ## What is WSL?
 
@@ -20,7 +20,7 @@ In the past, running both Windows and Linux on one machine required you to insta
 
 Virtual Machines (VM) are one way to address the pains of dual-booting two different operating systems. VMs enable you to run a virtualized instance of Linux on a device running Windows. The problem with VMs often relates to slower performance due to the amount of resources that need to be allocated to running the virtual instance, as well as a lack of integration between the two operating systems -- you're still running isolated separate systems.
 
-WSL addresses these issues by integrating Windows and Linux with a much smaller resource footprint, requiring fewer resources (CPU, memory, storage) compared to traditional Virtual Machines.
+WSL addresses these issues by integrating Windows and Linux with a much smaller resource footprint, requiring fewer resources (CPU, memory, storage) compared to traditional Virtual Machines. Run your favorite Windows office apps, dev tools, games, etc. right alongside your Linux development environment with incredibly fast and efficient performance speed.
 
 :::image type="content" source="../media/windows-linux.png" alt-text="Illustration of a laptop with puzzle pieces representing Windows and Linux fitting together.":::
 
