@@ -15,7 +15,7 @@ The identifier and version of certificates is similar to that of keys and secret
 
 When a Key Vault certificate is created, it can be retrieved from the addressable secret with the private key in either PFX or PEM format. However, the policy used to create the certificate must indicate that the key is exportable. If the policy indicates non-exportable, then the private key isn't a part of the value when retrieved as a secret.
 
-The addressable key becomes more relevant with non-exportable Key Vault certificates. The addressable Key Vault key’s operations are mapped from the `keyusage` field of the Key Vault certificate policy used to create the Key Vault certificate. If a Key Vault certificate expires, it’s addressable key and secret become inoperable.
+The addressable key becomes more relevant with non-exportable Key Vault certificates. The addressable Key Vault key’s operations are mapped from the `keyusage` field of the Key Vault certificate policy used to create the Key Vault certificate. If a Key Vault certificate expires, its addressable key and secret become inoperable.
 
 Two types of key are supported – RSA or RSA HSM with certificates. Exportable is only allowed with RSA, and is not supported by RSA HSM.
 
@@ -31,7 +31,6 @@ At a high level, a certificate policy contains the following information:
  -  Key Properties. Contains key type, key length, exportable, and reuse key fields. These fields instruct key vault on how to generate a key.
  -  Secret properties. Contains secret properties such as content type of addressable secret to generate the secret value, for retrieving certificate as a secret.
  -  Lifetime Actions. Contains lifetime actions for the Key Vault certificate. Each lifetime action contains:
-    
      -  Trigger, which specifies via days before expiry or lifetime span percentage.
      -  Action, which specifies the action type: emailContacts, or autoRenew.
  -  Issuer: Contains the parameters about the certificate issuer to use to issue x509 certificates.
@@ -41,11 +40,9 @@ At a high level, a certificate policy contains the following information:
 
 Before you can create a certificate issuer in a Key Vault, the following two prerequisite steps must be completed successfully:
 
-1.  Onboard to CA providers:
-    
+1. Onboard to CA providers:
      -  An organization administrator must onboard their company with at least one CA provider.
-2.  Admin creates requester credentials for Key Vault to enroll (and renew) SSL certificates:
-    
+1. Admin creates requester credentials for Key Vault to enroll (and renew) SSL certificates:
      -  Provides the configuration to be used to create an issuer object of the provider in the key vault.
 
 ## Certificate contacts
@@ -65,7 +62,6 @@ The Key Vault that contains certificates manages access control for those same c
 The following permissions closely mirror the operations allowed on a secret object, and can be used on a per-principal basis in the secrets access control entry on a key vault:
 
  -  Permissions for certificate management operations:
-    
      -  get: Get the current certificate version, or any version of a certificate.
      -  list: List the current certificates, or versions of a certificate.
      -  update: Update a certificate.
@@ -82,5 +78,4 @@ The following permissions closely mirror the operations allowed on a secret obje
      -  `setissuers`: Create or update a Key Vault certificate's authorities/issuers.
      -  `deleteissuers`: Delete a Key Vault certificate's authorities/issuers.
  -  Permissions for privileged operations:
-    
      -  purge: Purge (permanently delete) a deleted certificate.

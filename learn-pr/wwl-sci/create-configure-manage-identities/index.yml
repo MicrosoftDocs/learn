@@ -3,7 +3,7 @@ uid: learn.wwl.create-configure-manage-identities
 metadata:
   title: Create, configure, and manage identities
   description: "Access to cloud-based workloads needs to be controlled centrally by providing a definitive identity for each user and resource. You can ensure employees and vendors have just enough access to do their job."
-  ms.date: 01/19/2023
+  ms.date: 02/03/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+- azure-active-directory-domain
+- entra-workload-identities
 subjects:
 - identity-access
 units:
