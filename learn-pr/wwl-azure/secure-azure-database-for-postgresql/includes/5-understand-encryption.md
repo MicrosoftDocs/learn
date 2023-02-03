@@ -4,9 +4,6 @@ Azure Database for PostgreSQL automatically encrypts data both in transit, and a
 
 Azure Database for PostgreSQL flexible server supports encryption for data at rest by using Azure storage encryption. Encryption's always on and uses Microsoft's managed keys. The encryption uses FIPS 140-2 validated cryptographic module and an AES 256-bit cipher.
 
-> [!NOTE]
-> Azure Database for PostgreSQL doesn't support customer managed encryption keys on flexible server.
-
 ## Data in transit
 
 Azure Database for PostgreSQL secures data in transit with Transport Layer Security (TLS) and SSL by default.
