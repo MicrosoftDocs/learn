@@ -1,3 +1,9 @@
+---
+uid: learn.wwl.azure-event-grid.filter-events
+title: Filter events
+description: Filter events
+durationInMinutes: 3
+---
 When creating an event subscription, you have three options for filtering:
 
 * Event types

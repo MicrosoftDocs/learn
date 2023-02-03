@@ -1,3 +1,9 @@
+---
+uid: learn.wwl.azure-event-grid.exercise-route-custom-events-to-web-endpoint-by-using-azure-cli
+title: Exercise: Route custom events to web endpoint by using Azure CLI
+description: Exercise: Route custom events to web endpoint by using Azure CLI
+durationInMinutes: 3
+---
 In this exercise you will learn how to:
 
 * Enable an Event Grid resource provider
