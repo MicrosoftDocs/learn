@@ -4,11 +4,11 @@ title: Exercise - Build a data pipeline in Azure Synapse Analytics
 metadata:
   title: Exercise - Build a data pipeline in Azure Synapse Analytics
   description: "Exercise - Build a data pipeline in Azure Synapse Analytics"
-  ms.date: 01/17/2023
+  ms.date: 02/03/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 45
 content: |
-  [!include[](includes/5-exercise-build-data-pipeline-azure-synapse-analytics.md)]
+  [!include[](includes/6-exercise-build-data-pipeline-azure-synapse-analytics.md)]

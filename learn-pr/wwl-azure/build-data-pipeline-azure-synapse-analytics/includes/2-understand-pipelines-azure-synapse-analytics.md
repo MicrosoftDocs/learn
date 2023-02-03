@@ -1,32 +1,33 @@
 
 
+Pipelines in Azure Synapse Analytics encapsulate a sequence of *activities* that perform data movement and processing tasks. You can use a pipeline to define data transfer and transformation activities, and orchestrate these activities through control flow activities that manage branching, looping, and other typical processing logic. The graphical design tools in Azure Synapse Studio enable you to build complex pipelines with minimal or no coding required.
 
-Most data movement activities require several things in order to be successful which include consistency of source and destination file formats, a standard refresh schedule for batch processing, and data lineage in order to track down errors to the source system for correction by their owner(s). Azure Synapse pipelines, like it’s counterpart Azure Data Factory (ADF) is the service that can be used to fulfill these requirements. Azure Synapse Pipelines provide a cloud-based data integration service that orchestrates the movement and transformation of data between various data stores and compute resources to Azure Synapse Analytics as part of the Synapse Service offering.
+## Core pipeline concepts
 
-Azure Synapse Analytics is a cloud-based ETL and data integration service that allows you to create data-driven workflows for orchestrating data movement and transforming data at scale which is integrated within the Azure Synapse Platform. If you are already familiar with Azure Data Factory, then the learning curve is minimal. Using Azure Synapse Pipelines, you can create and schedule data-driven workflows (called pipelines) that can ingest data from disparate data stores. You can build complex ETL or ELT processes that transform data visually with data flows or by using the compute services such as Azure Synapse Analytics to perform the heavy lifting operation of transformation.
+Before building pipelines in Azure Synapse Analytics, you should understand a few core concepts.
 
-The pipelines within Azure Synapse Analytics allow for an integrated approach to all of the businesses analytical needs, allowing data engineers to integrate the pipelines between components such as Dedicated SQL Pools, Spark Pool, and even SQL Serverless pools. As noted before, this functionality is similar to Azure Data Factory, although ADF is focused on external integration between heterogeneous source systems and destinations such as Azure Databricks, HDInsight, and other data destinations.
+![A diagram showing a pipeline with datasets, an integration runtime, linked services, and datasets.](../media/pipeline-concepts.png)
 
-## ETL and ELT
+### Activities
 
-The term extract, transform, and load (ETL) is part of every data engineer's vernacular and on the Microsoft platform of SQL Server was really introduced with SQL Server 7.0 with the introduction of Data Transformation Services (DTS). In SQL server 2000, we introduced SQL Server Integration Services (SSIS), and this is still supported in Pipeline components as you'll see in other lessons. One thing that has always lacked in SSIS and DTS was the ability to have data lineage which was usually expensive to implement and required third party vendors and software to properly achieve. This functionality is now an integral part of Synapse Pipelines and ADF with the use of Microsoft Purview. Microsoft Purview captures runtime lineage from the following Pipeline activities:
+Activities are the executable tasks in a pipeline. You can define a flow of activities by connecting them in a sequence. The outcome of a particular activity (success, failure, or completion) can be used to direct the flow to the next activity in the sequence.
 
-- Copy activity
-- Data Flow activity
-- Execute SSIS Package activity
+Activities can encapsulate data transfer operations, including simple data copy operations that extract data from a source and load it to a target (or *sink*), as well as more complex data flows that apply transformations to the data as part of an *extract, transfer, and load* (ETL) operation. Additionally, there are activities that encapsulate processing tasks on specific systems, such as running a Spark notebook or calling an Azure function. Finally, there are *control flow* activities that you can use to implement loops, conditional branching, or manage variable and parameter values.
 
-You can gain an idea of the level of integration with Microsoft Purview with the image below:
+### Integration runtime
 
-![Microsoft Purview Overview and touch points image](../media/2-purview-overview.png)
+The pipeline requires compute resources and an execution context in which to run. The pipeline's *integration runtime* provides this context, and is used to initiate and coordinate the activities in the pipeline.
 
-Depending upon several factors, such as data size, target (sink) resources, compute power, and network connectivity which may go through the public internet or securely over an ExpressRoute connection, will determine your approach to data loading and data transformation. Ideally, with Azure and other cloud providers, the goal is to move the data into the cloud provider's environment first, and then use distributed compute such as Synapse Analytics to perform the heavy lifting of data transformation from your Azure Data Lake.
+### Linked services
 
-![Microsoft Azure ELT Conceptual overview](../media/2-elt-conceptual.png)
+While many of the activities are run directly in the integration runtime for the pipeline, some activities depend on external services. For example, a pipeline might include an activity to run a notebook in Azure Databricks or to call a stored procedure in Azure SQL Database. To enable secure connections to the external services used by your pipelines, you must define *linked services* for them.
 
-As we can see in the basic concept of ELT, Instead of using a separate transformation engine, the processing capabilities of the target data store, such as Azure Synapse Analytics are used to transform data. This simplifies the architecture by removing a transformation engine from the pipeline. Another benefit to this approach is that scaling the target data store also scales the ELT pipeline performance. However, ELT only works well when the target system is powerful enough to transform the data efficiently.
+> [!NOTE]
+> Linked services are defined at the Azure Synapse Analytics workspace level, and can be shared across multiple pipelines.
 
-In practice, the target data store or sink is a data warehouse using either a Hadoop cluster (using Hive or Spark) or SQL dedicated pools on Azure Synapse Analytics. In general, a schema is overlaid on the flat file data at query time and stored as a table, enabling the data to be queried like any other table in the data store. These are referred to as external tables because the data does not reside in storage managed by the data store itself, but on some external scalable storage such as Azure data lake store. This allows the downstream services to connect to these highly compressed and columnar storage files to connect and use the data fully without having to keep the expensive hardware running at full scale which will significantly increase flexibility while reducing costs.
+### Datasets
 
-Below we can see the traditional approach to ETL with the transformation engine. This is still available in Synapse Pipelines and Azure Data Factory to allow you to leverage your SSIS packages already developed. Details on this topic will be covered in a later lesson.
+Most pipelines process data, and the specific data that is consumed and produced by activities in a pipeline is defined using *datasets*. A dataset defines the schema for each data object that will be used in the pipeline, and has an associated linked service to connect to its source. Activities can have datasets as inputs or outputs.
 
-![Microsoft Azure ELT Conceptual overview](../media/2-etl-traditional-conceptual.png)
+> [!NOTE]
+> Similarly to linked services, datasets are defined at the Azure Synapse Analytics workspace level, and can be shared across multiple pipelines.

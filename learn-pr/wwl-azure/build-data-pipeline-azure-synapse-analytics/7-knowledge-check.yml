@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/17/2023
+  ms.date: 02/03/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-knowledge-check.md)]
+  [!include[](includes/7-knowledge-check.md)]
