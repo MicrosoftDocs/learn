@@ -32,11 +32,11 @@ quiz:
     - content: "A holistic view of the application, including, but not limited to, cloud resources."
       isCorrect: true
       explanation: "Correct. Health modeling focuses on the overall health status of the application rather than on raw data metrics. "
-  - content: "What does it mean when an application health model is described as *layered*?"
+  - content: "What does it mean when an application health model is *layered*?"
     choices:
     - content: "The health model is multidimensional, the entire system is separated into layers, and you filter only for the layer that's relevant to you."
       isCorrect: false
-      explanation: "Incorrect. Filtering on a single layer isn't the purpose of a health model. A health model provides value when it's analyzed and observed as a whole."
-    - content: "A layered health model enables application health to be traced back to the health of its lower-level dependencies, which helps to quickly find the root cause of service degradation."
+      explanation: "Incorrect. While a layered health model is multidimensional and it separates the system into layers, filtering on a single layer isn't the purpose of a health model. A health model provides value when it's analyzed and observed as a whole."
+    - content: "The health model is multidimensional, the entire system is separated into layers, and you observe the system as a whole."
       isCorrect: true
-      explanation: "Correct. Each layer of the health model captures what its healthy and unhealthy states represent."
+      explanation: "Correct. A layered health model provides value when it's analyzed and observed as whole. Each layer of the health model captures what its healthy and unhealthy states represent. Health status of lower-level dependencies helps to quickly find the cause of service degradation."

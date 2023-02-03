@@ -3,7 +3,7 @@ uid: learn.languages.csharp-convert-cast
 metadata:
   title: 'Convert data types using casting and conversion techniques in C#'
   description: Take control of the data in your applications, knowing when to apply the correct technique to change data types as needed.
-  ms.date: 08/25/2022
+  ms.date: 01/27/2023
   author: billwagner
   ms.author: wiwagn
   ms.topic: interactive-tutorial
@@ -11,7 +11,7 @@ metadata:
 title: Convert data types using casting and conversion techniques in C#
 summary: Take control of the data in your applications, knowing when to apply the correct technique to change data types as needed.
 abstract: |
-  In this module, you will:
+  In this module, you'll:
   - Use the casting operator to cast a value into a different data type.
   - Use conversion methods to convert a value into a different data type.
   - Guard against the loss of data when performing a cast or conversion operation.

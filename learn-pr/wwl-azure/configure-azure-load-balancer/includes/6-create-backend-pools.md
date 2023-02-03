@@ -1,33 +1,15 @@
-To distribute traffic, a back-end address pool contains the IP addresses of the virtual NICs that are connected to the load balancer. How you configure the backend pool depends on whether you are using the Standard or Basic SKU.
+Each load balancer has one or more back-end pools that are used for distributing traffic. The back-end pools contain the IP addresses of the virtual NICs that are connected to your load balancer. You configure these pool settings in the Azure portal.
 
-:::row:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    **Standard SKU**
-  :::column-end:::
-  :::column:::
-    **Basic SKU**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Backend pool endpoints
-  :::column-end:::
-  :::column:::
-    Any virtual machine in a single virtual network. This includes a blend of virtual machines, availability sets, and virtual machine scale sets.
-  :::column-end:::
-  :::column:::
-    Virtual machines in a single availability set or virtual machine scale set.
-  :::column-end:::
-:::row-end:::
+:::image type="content" source="../media/backend-pools-1984adb4.png" alt-text="Screenshot that shows how to configure back-end pools in the Azure portal.":::
 
+### Things to know about back-end pools
 
-Backend pools are configured from the Backend Pool blade. For the Standard SKU you can connect to an Availability set, single virtual machine, or a virtual machine scale set.
+The SKU type that you select determines which endpoint configurations are supported for the pool along with the number of pool instances allowed.
 
-:::image type="content" source="../media/backend-pools-1984adb4.png" alt-text="Screenshot of the Settings for Backend pools shows the list of options available for configuring the backend pool.":::
+- The Basic SKU allows up to 300 pools, and the Standard SKU allows up to 1,000 pools.
 
+- When you configure the back-end pools, you can connect to availability sets, virtual machines, or Azure Virtual Machine Scale Sets.
 
-> [!NOTE]
-> In the Standard SKU, you can have up to 1000 instances in the backend pool. In the Basic SKU, you can have up to 300 instances.
+- For the Basic SKU, you can select virtual machines in a single availability set or virtual machines in an instance of Azure Virtual Machine Scale Sets.
+
+- For the Standard SKU, you can select virtual machines or Virtual Machine Scale Sets in a single virtual network. Your configuration can include a combination of virtual machines, availability sets, and Virtual Machine Scale Sets.
