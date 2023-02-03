@@ -2,46 +2,45 @@
 uid: learn.build-interactive-components-blazor-web-apps
 metadata:
   moduleType: standard
-  title: Build rich interactive components for your Blazor web apps
-  description: Learn to use advanced features of Blazor in web apps. You'll learn how to interoperate with JavaScript code, use templated components, and handle events in the lifecycle of components.
-  ms.date: 08/18/2021
-  author: csharpfritz
-  ms.author: jefritz
+  title: Build rich interactive components with Blazor web apps
+  description: In this Blazor module, you'll learn how to interoperate with JavaScript code, use templated components, and handle component lifecycle events.
+  ms.date: 02/02/2023
+  author: IEvangelist
+  ms.author: dapine
   ms.topic: interactive-tutorial
   ms.prod: learning-blazor
-title: Build rich interactive components for your Blazor web apps
-summary: Learn to use advanced features of Blazor in web apps. You'll learn how to interoperate with JavaScript code, use templated components, and handle events in the lifecycle of components.
+title: Build rich interactive components with Blazor web apps
+summary: In this Blazor module, you'll learn how to interoperate with JavaScript code, use templated components, and handle component lifecycle events.
 abstract: |
   By the end of this module, you'll be able to:
     - Call JavaScript functions from .NET code and call .NET code from JavaScript in Blazor apps
     - Handle events in the lifecycle of Blazor components.
     - Create reusable components that can be incorporated into Blazor Server apps using templates
 prerequisites: |
-  - Familiarity with HTML and CSS in web development.
-  - Familiarity with JavaScript syntax.
+  - Familiarity with HTML, CSS, and JavaScript web development.
   - Ability to write C# code at a novice level.
-  - Ability to create a Blazor web application.
-  - Ability to create Blazor components, forms, and layouts.
+  - [.NET SDK](https://dotnet.microsoft.com/download/dotnet/7.0).
+  - IDE of choice (shown with [VS Code](https://code.visualstudio.com)).
 iconUrl: /training/achievements/build-interactive-components-blazor-web-apps.svg
-levels: 
+levels:
   - intermediate
-roles: 
+roles:
   - developer
   - solution-architect
-products: 
+products:
   - blazor
-  - dotnet-core
-  - aspnet
+  - dotnet
+  - aspnet-core
 subjects:
-- cloud-computing
+  - cloud-computing
 units:
-- learn.build-interactive-components-blazor-web-apps.introduction
-- learn.build-interactive-components-blazor-web-apps.use-javascript-libraries-blazor-apps
-- learn.build-interactive-components-blazor-web-apps.exercise-use-javascript-libraries-blazor-apps
-- learn.build-interactive-components-blazor-web-apps.improve-app-interactivity-lifecycle-events
-- learn.build-interactive-components-blazor-web-apps.exercise-improve-app-interactivity-lifecycle-events
-- learn.build-interactive-components-blazor-web-apps.reuse-components-creating-templates
-- learn.build-interactive-components-blazor-web-apps.exercise-reuse-components-creating-templates
-- learn.build-interactive-components-blazor-web-apps.summary
+  - learn.build-interactive-components-blazor-web-apps.introduction
+  - learn.build-interactive-components-blazor-web-apps.use-javascript-libraries-blazor-apps
+  - learn.build-interactive-components-blazor-web-apps.exercise-use-javascript-libraries-blazor-apps
+  - learn.build-interactive-components-blazor-web-apps.improve-app-interactivity-lifecycle-events
+  - learn.build-interactive-components-blazor-web-apps.exercise-improve-app-interactivity-lifecycle-events
+  - learn.build-interactive-components-blazor-web-apps.reuse-components-creating-templates
+  - learn.build-interactive-components-blazor-web-apps.exercise-reuse-components-creating-templates
+  - learn.build-interactive-components-blazor-web-apps.summary
 badge:
   uid: learn.build-interactive-components-blazor-web-apps.badge

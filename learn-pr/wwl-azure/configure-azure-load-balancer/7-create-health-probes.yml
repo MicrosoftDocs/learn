@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-load-balancer.create-health-probes
+title: Create health probes
+metadata:
+  title: Create health probes
+  description: "Create health probes"
+  ms.date: 01/31/2023
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-create-health-probes.md)]

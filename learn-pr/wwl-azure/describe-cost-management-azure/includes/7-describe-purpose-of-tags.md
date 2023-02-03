@@ -1,3 +1,8 @@
+---
+interactive:bash
+zone_pivot_groups:azure-interface
+title:Describe the purpose of tags
+---
 As your cloud usage grows, it's increasingly important to stay organized. A good organization strategy helps you understand your cloud usage and can help you manage costs.
 
 One way to organize related resources is to place them in their own subscriptions. You can also use resource groups to manage related resources. Resource tags are another way to organize resources. Tags provide extra information, or metadata, about your resources. This metadata is useful for:
@@ -13,18 +18,60 @@ One way to organize related resources is to place them in their own subscription
 
 You can add, modify, or delete resource tags through Windows PowerShell, the Azure CLI, Azure Resource Manager templates, the REST API, or the Azure portal.
 
-You can use Azure Policy to enforce tagging rules and conventions. For example, you can require that certain tags be added to new resources as they're provisioned. You can also define rules that reapply tags that have been removed. Tags aren’t inherited, meaning that you can apply tags one level and not have those tags automatically show up at a different level, allowing you to create custom tagging schemas that change depending on the level (resource, resource group, subscription, and so on).
+You can use Azure Policy to enforce tagging rules and conventions. For example, you can require that certain tags be added to new resources as they're provisioned. You can also define rules that reapply tags that have been removed. Resources don't inherit tags from subscriptions and resource groups, meaning that you can apply tags at one level and not have those tags automatically show up at a different level, allowing you to create custom tagging schemas that change depending on the level (resource, resource group, subscription, and so on).
 
 ### An example tagging structure
 
 A resource tag consists of a name and a value. You can assign one or more tags to each Azure resource.
 
-| **Name**    | **Value**                                                                                                         |
-| ----------- | ----------------------------------------------------------------------------------------------------------------- |
-| AppName     | The name of the application that the resource is part of.                                                         |
-| CostCenter  | The internal cost center code.                                                                                    |
-| Owner       | The name of the business owner who's responsible for the resource.                                                |
-| Environment | An environment name, such as "Prod," "Dev," or "Test."                                                            |
-| Impact      | How important the resource is to business operations, such as "Mission-critical," "High-impact," or "Low-impact." |
+:::row:::
+  :::column:::
+    **Name**
+  :::column-end:::
+  :::column:::
+    **Value**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    AppName
+  :::column-end:::
+  :::column:::
+    The name of the application that the resource is part of.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    CostCenter
+  :::column-end:::
+  :::column:::
+    The internal cost center code.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Owner
+  :::column-end:::
+  :::column:::
+    The name of the business owner who's responsible for the resource.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Environment
+  :::column-end:::
+  :::column:::
+    An environment name, such as "Prod," "Dev," or "Test."
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Impact
+  :::column-end:::
+  :::column:::
+    How important the resource is to business operations, such as "Mission-critical," "High-impact," or "Low-impact."
+  :::column-end:::
+:::row-end:::
+
 
 Keep in mind that you don't need to enforce that a specific tag is present on all of your resources. For example, you might decide that only mission-critical resources have the Impact tag. All non-tagged resources would then not be considered as mission-critical.
