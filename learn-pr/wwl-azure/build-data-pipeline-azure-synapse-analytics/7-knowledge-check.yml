@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-data-pipeline-azure-synapse-analytics.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/03/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: synapse-analytics
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What does a pipeline use to access external data source and processing resources?"
+    choices:
+    - content: "Data Explorer pools"
+      isCorrect: false
+      explanation: "Incorrect. Data Explorer pools are used to run Kusto queries."
+    - content: "Linked services"
+      isCorrect: true
+      explanation: "Correct. Linked services encapsulate connections to external services."
+    - content: "External tables"
+      isCorrect: false
+      explanation: "Incorrect. External tables are used to define SQL tables for file-based data."
+  - content: "What kind of object should you add to a data flow to define a target to which data is loaded?"
+    choices:
+    - content: "Source"
+      isCorrect: false
+      explanation: "Incorrect. A source provides the input data for a data flow."
+    - content: "Transformation"
+      isCorrect: false
+      explanation: "Incorrect. You can use various transformations to modify data in a data flow."
+    - content: "Sink"
+      isCorrect: true
+      explanation: "Correct. A sink represents a target in a data flow."
+  - content: "What must you create to run a pipeline at scheduled intervals?"
+    choices:
+    - content: "A control flow"
+      isCorrect: false
+      explanation: "Incorrect. Control flow activities implement processing logic."
+    - content: "A trigger"
+      isCorrect: true
+      explanation: "Correct. A trigger is used to initiate a pipeline run."
+    - content: "An activity"
+      isCorrect: false
+      explanation: "Incorrect. Activities are the tasks within a pipeline."
