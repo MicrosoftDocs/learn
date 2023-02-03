@@ -6,5 +6,5 @@ After completing this module, you'll be able to:
 
 * Identify scenarios for which autoscaling is an appropriate solution
 * Create autoscaling rules for a web app
-* Monitor the effects of autoscaling
+* monitor the effects of autoscaling
 
