@@ -20,7 +20,7 @@ RUN apt -y update &&  apt install -y wget nginx software-properties-common apt-t
 	&& apt -y update \
 	&& apt install -y dotnet-sdk-3.0
 
-# Step 3: Configure Nginx environment
+# Step 3: Start Nginx environment
 CMD service nginx start
 
 # Step 4: Configure Nginx environment

@@ -1,10 +1,10 @@
-Sometimes you want to try out a piece of a code without having to go through creating a file for it first. For those occasions, it's a good idea to use a built-in program called a REPL, which lets you type shorter statements and have those statements evaluated.
+Sometimes you want to try out a piece of a code without having to create a file for it first. For those occasions, it's a good idea to use a built-in program called a REPL, which lets you type shorter statements and have those statements evaluated.
 
 ## The Python REPL
 
 Python supports an interactive console experience, which allows you to type in commands and see the results immediately. This experience is sometimes referred to as a "Read-Eval-Print-Loop", or **REPL**.
 
-To use the REPL, type `python` in your console. You will get is a prompt similar to the below output, which then waits for you to input commands:
+To use the REPL, type `python` in your console. You'll get a prompt similar to the below output, which then waits for you to input commands:
 
 ```output
 Python 3.9.14 (main, Oct 29 2022, 22:18:10) 
@@ -13,7 +13,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-### What can it do
+### What can it do?
 
 With the REPL, you can do most things you would be able to do in a code file. For example:
 
@@ -51,7 +51,7 @@ If you don't pass an argument to the help function, Python will start an interac
 
 You enter the interactive help console by typing `help()`. This command will list some basic instructions on how to use the help system.
 
-From here, you can just type in the element you're interested in. By, for example, typing `string` will display information about the topic `string`, which looks something like this:
+From here, you can just type in the element you're interested in. For example, by typing `string` you'll get information about the topic `string`, which looks something like this:
 
 ```output
 Help on module string:
@@ -71,4 +71,4 @@ MODULE REFERENCE
 
 When there is more than one page of output, you can press <kbd>Enter</kbd> to display line-by-line, or <kbd>Space</kbd> to go page-by-page.
 
-At the end of the help screen, you can type `q` to exit the page. You will be returned to the interactive help prompt.
+At the end of the help screen, you can type `q` to exit the page. You'll be returned to the interactive help prompt.

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-expressroute-virtual-wan.coexist-site-to-site-expressroute
-title: Coexist site-to-site and ExpressRoute
+title: Coexist site-to-site and Azure ExpressRoute
 metadata:
-  title: Coexist site-to-site and ExpressRoute
-  description: "Coexist site-to-site and ExpressRoute"
-  ms.date: 03/29/2022
+  title: Coexist site-to-site and Azure ExpressRoute
+  description: "Coexist site-to-site and Azure ExpressRoute"
+  ms.date: 01/24/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

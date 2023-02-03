@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-load-balancer.create-rules
+title: Create load balancer rules
+metadata:
+  title: Create load balancer rules
+  description: "Create load balancer rules"
+  ms.date: 01/31/2023
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-create-load-balancer-rules.md)]

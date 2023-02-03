@@ -25,7 +25,6 @@ roles:
 - business-user
 - student
 products:
-- azure
 - azure-active-directory
 subjects:
 - identity-access

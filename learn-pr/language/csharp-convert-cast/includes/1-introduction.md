@@ -1,8 +1,8 @@
 When working with data, you'll frequently need to change a value from one data type into another. There are many reasons why you might need to do this.
 
-A simple example is any mathematical operation you want to perform with string data. You'd first need to change the value into a numeric data type, like `int`, and then you could manipulate the operation. Alternatively, you may want to format and output a numeric value using string interpolation. Whether you're explicitly instructing the runtime to perform this change, or are relying on the runtime to implicitly change a value's data type, it's important to understand what is happening and why.
+A simple example is any mathematical operation you want to perform with string data. You'd first need to change the value into a numeric data type, like `int`, and then you could manipulate the operation. Alternatively, you may want to format and output a numeric value using string interpolation. Whether you're explicitly instructing the runtime to perform this change or relying on the runtime to implicitly change a value's data type, it's important to understand what's happening and why.
 
-In this module, you'll use different techniques to change a data type when necessary. You'll learn when to use one technique over another, and when a given technique might risk the loss of data.
+In this module, you'll use different techniques to change a data type when necessary. You'll learn when to use one technique over another, and when a given technique might risk data loss.
 
 By the end of this module, you'll be able to take control of the data in your applications, knowing when to apply the correct technique to change data types as needed.
 

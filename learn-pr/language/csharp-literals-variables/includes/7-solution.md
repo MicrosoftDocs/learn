@@ -1,4 +1,4 @@
-The following code is one possible solution for the challenge from the previous unit.
+The following code is one possible solution for the challenge from the previous unit:
 
 ```csharp-interactive
 string name = "Bob";
@@ -14,9 +14,9 @@ Console.Write(temperature);
 Console.Write(" celsius.");
 ```
 
-This code is merely *one possible solution* because we didn't specify exactly how to create the output. For example, it's possible you could have used more `Console.Write()` statements; however, you should have initialized three variables to store the three values per the instructions in the challenge.
+This code is merely *one possible solution* because we didn't specify exactly how to create the output. For example, it's possible you could have used more `Console.Write()` statements; however, you should've initialized three variables to store the three values per the instructions in the challenge.
 
-Furthermore, you should have used:
+Furthermore, you should've used:
 
 - a variable of type `string` to hold the name `"Bob"`.
 - a variable of type `int` to store the number of messages.

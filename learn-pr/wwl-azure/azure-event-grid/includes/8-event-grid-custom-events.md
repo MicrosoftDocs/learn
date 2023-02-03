@@ -1,3 +1,4 @@
+
 In this exercise you will learn how to:
 
 * Enable an Event Grid resource provider
@@ -125,7 +126,7 @@ Trigger an event to see how Event Grid distributes the message to your endpoint.
     curl -X POST -H "aeg-sas-key: $key" -d "$event" $topicEndpoint
     ```
 
-1. View your web app to see the event you just sent. Select the eye icon to expand the event data. Event Grid sends the validation event so the endpoint can verify that it wants to receive event data. The web app includes code to validate the subscription.
+1. View your web app to see the event you just sent. Select the eye icon to expand the event data. The web app includes code to validate the subscription.
 
     ```json
     {

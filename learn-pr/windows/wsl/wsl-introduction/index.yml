@@ -2,24 +2,25 @@
 uid: learn.wsl-introduction
 metadata:
   moduleType: standard
-  title: wsl-introduction
-  description: "Get started with Windows Subsystem for Linux (WSL)."
+  title: Get started with Windows Subsystem for Linux (WSL).
+  description: An overview of Windows Subsystem for Linux (WSL) ability to install Linux distributions on your Windows computer, instructions to install and set up, a high-level look at a typical WSL developer workflow, and an exercise to run some basic BASH and PowerShell commands.
   ms.date: 01/09/2023
   author: mattwojo
   ms.author: mattwoj
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
 title: Get started with Windows Subsystem for Linux (WSL)
-summary: "Get started with WSL by installing a Linux distribution, setting up a development environment, exploring recommended tools and workflows, learning what WSL can and can't do, trying some basic commands, and assessing whether WSL is the right fit for your needs."
+summary: Get started with WSL by installing a Linux distribution, setting up a development environment, exploring recommended tools and workflows, learning what WSL can and can't do, trying some basic commands, and assessing whether WSL is the right fit for your needs.
 abstract: |
   By the end of this module, you'll be able to:
-    - "Describe the Windows + Linux development environment that Windows Subsystem for Linux (WSL) enables, as well as its advantages over a traditional VM or dual-booting."
-    - "Install and run a Linux distribution or multiple distributions running side-by-side."
-    - "Explain a typical development workflow that utilizes WSL."
-    - "Describe the features WSL offers for utilizing both Windows and Linux command line tools and GUI applications."
-    - "Run basic WSL, BASH, and PowerShell commands."
+    - Describe the Windows + Linux development environment that Windows Subsystem for Linux (WSL) enables, as well as its advantages over a traditional VM or dual-booting.
+    - Install and run a Linux distribution or multiple distributions running side-by-side.
+    - Explain a typical development workflow that utilizes WSL.
+    - Describe the features WSL offers for utilizing both Windows and Linux command line tools and GUI applications.
+    - Run basic WSL, BASH, and PowerShell commands.
 prerequisites: |
-  - "None"
+  - A computer running Windows 11 or Windows 10.
+  - Ability to run PowerShell or Windows Command Prompt as an Administrator.
 iconUrl: /learn/achievements/wsl-path.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - beginner

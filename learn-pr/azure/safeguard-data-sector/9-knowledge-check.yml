@@ -34,10 +34,10 @@ quiz:
     - content: "All data is encrypted using customer-managed encryption keys."
       isCorrect: false
       explanation: "Incorrect. Data is encrypted with the option for customer-managed encryption keys."
-    - content: "Microsoft engineers and support personnel are granted long term access to the data for customers specifically assigned the them, and cannot access data from other customers."
+    - content: "Microsoft engineers and support personnel are granted long-term access to the data for customers specifically assigned to them, and cannot access data from other customers."
       isCorrect: false
       explanation: "Incorrect. Microsoft engineers can be granted access to customer data using temporary credentials via Just-in-Time (JIT) access."
-    - content: "Customer Lockbox keeps customer data secure until Microsoft engineers or support personnel determine that it’s needed for a support or troubleshooting scenario."
+    - content: "Customer Lockbox keeps customer data secure until Microsoft engineers or support personnel determine that it's needed for a support or troubleshooting scenario."
       isCorrect: false
       explanation: "Incorrect. Customer Lockbox puts customers in charge of approving insider access in support and troubleshooting scenarios."
     - content: "Customers can monitor external access to their provisioned Azure resources."
