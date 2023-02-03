@@ -1,4 +1,5 @@
-The deployment slot functionality in App service is a powerful tool that enables you to preview, manage, test, and deploy your different development environments. 
+
+The deployment slot functionality in App Service is a powerful tool that enables you to preview, manage, test, and deploy your different development environments. 
 
 ## Learning objectives
 

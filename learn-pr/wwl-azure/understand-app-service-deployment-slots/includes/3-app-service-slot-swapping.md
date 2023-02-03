@@ -1,3 +1,4 @@
+
 When you swap slots (for example, from a staging slot to the production slot), App Service does the following to ensure that the target slot doesn't experience downtime:
 
 1. Apply the following settings from the target slot (for example, the production slot) to all instances of the source slot:
